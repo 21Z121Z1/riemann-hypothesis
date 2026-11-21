@@ -6,6 +6,7 @@ import gzip
 import hashlib
 import importlib.util
 import io
+import errno
 import json
 import os
 from pathlib import Path
@@ -41,6 +42,64 @@ def resource_tests(ci):
             override = workspace / "explicit-new-scratch"
             assert ci.choose_work_directory(workspace / "staging", override) == override.resolve()
             assert override.is_dir()
+        staging = workspace / "staging"
+        staging.mkdir()
+        try:
+            with ci.DurableBuildWork(workspace / "persistent", staging, {"candidate_head": "a" * 40}) as retained:
+                (retained.path / "finished.olean").write_bytes(b"completed raw output without LTAR")
+                raise KeyboardInterrupt()
+        except KeyboardInterrupt:
+            pass
+        assert (retained.path / "finished.olean").exists()
+        assert json.loads((retained.path / "checkpoint.json").read_text())["state"] == "interrupted"
+        old_checkpoint = (retained.path / "checkpoint.json").read_bytes()
+        try:
+            ci.DurableBuildWork(retained.path.parent, staging, {"candidate_head": "b" * 40}, adopt=retained.path)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError("adoption relabeled an existing checkpoint identity")
+        assert (retained.path / "checkpoint.json").read_bytes() == old_checkpoint
+        try:
+            ci.release_uploaded_work(retained.path / "checkpoint.json", 123, "a" * 64)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError("unrecovered interrupted raw work was released")
+        with ci.DurableBuildWork(workspace / "persistent", staging, {"candidate_head": "b" * 40}) as uploaded:
+            (uploaded.path / "finished.olean").write_bytes(b"successful completed proof")
+            uploaded.checkpoint("staged", 0)
+        assert uploaded.path.exists(), "success must survive until upload acknowledgement"
+        ci.release_uploaded_work(uploaded.path / "checkpoint.json", 456, "c" * 64)
+        assert not uploaded.path.exists()
+        assert (uploaded.path.parent / (uploaded.path.name + ".uploaded.json")).exists()
+        primary, visible = workspace / "durable.log", workspace / "visible.log"
+        primary.write_bytes(b"first")
+        with patch.object(ci.os, "link", side_effect=OSError(errno.EXDEV, "separate filesystems")):
+            ci.build_log_link(primary, visible)
+        with primary.open("ab") as log:
+            log.write(b" second"); log.flush()
+            ci.sync_visible_log(log, visible)
+        assert primary.read_bytes() == visible.read_bytes() == b"first second"
+    with tempfile.TemporaryDirectory(prefix="rh-ci-proc-") as temporary:
+        proc = Path(temporary)
+        (proc / "99/task/99").mkdir(parents=True)
+        (proc / "99/task/100").mkdir()
+        (proc / "99/cmdline").write_bytes(b"python3\0ci-build.py\0")
+        (proc / "99/status").write_text("State:\tT (stopped)\n")
+        for thread in ("99", "100"):
+            (proc / f"99/task/{thread}/children").write_text("")
+        (proc / "99/task/99/status").write_text("State:\tT (stopped)\n")
+        for state in ("R", "D"):
+            (proc / "99/task/100/status").write_text(f"State:\t{state}\n")
+            try:
+                ci.verify_quiesced_controller(99, proc)
+            except ValueError:
+                pass
+            else:
+                raise AssertionError("a stopped leader concealed an active/uninterruptible thread")
+        (proc / "99/task/100/status").write_text("State:\tT (stopped)\n")
+        assert ci.verify_quiesced_controller(99, proc) == [99]
     with tempfile.TemporaryDirectory(prefix="rh-ci-root-link-") as directory:
         directory = Path(directory)
         (directory / "outside/lib").mkdir(parents=True)
@@ -231,7 +290,8 @@ roots = ["Base", "Stable", "Main"]
         invocation = [sys.executable, str(here.parent / "ci-build.py"), "--candidate", str(root), "--packages", str(packages),
                       "--dependency-manifest-sha256", ci.sha256(root / "lake-manifest.json"),
                       "--baseline-manifest", str(baseline), "--baseline-manifest-sha256", ci.sha256(baseline),
-                      "--baseline-map", str(base_map), "--baseline-cache", str(cache), "--jobs", "2"]
+                      "--baseline-map", str(base_map), "--baseline-cache", str(cache), "--jobs", "2",
+                      "--work-dir", str(temporary / "durable-work")]
         host_env = {**os.environ, "CI_HOST_SECRET": "not-for-candidate", "AWS_SECRET_ACCESS_KEY": "not-for-candidate"}
 
         def build(label, extra=(), succeeds=True):

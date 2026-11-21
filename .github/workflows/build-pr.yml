@@ -150,6 +150,7 @@ jobs:
           overwrite: true
           retention-days: 7
       - name: Upload completed modules, including partial failed builds
+        id: cache_upload
         if: ${{ always() && hashFiles('staging/receipt.json') != '' }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
@@ -163,6 +164,19 @@ jobs:
           if-no-files-found: error
           overwrite: true
           retention-days: 7
+      - name: Release successful raw work after durable upload
+        if: ${{ always() && steps.cache_upload.outcome == 'success' && steps.build.outputs.exit_code == '0' }}
+        env:
+          CACHE_ARTIFACT_ID: ${{ steps.cache_upload.outputs.artifact-id }}
+          CACHE_ARTIFACT_DIGEST: ${{ steps.cache_upload.outputs.artifact-digest }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          checkpoint = json.load(open('staging/work-checkpoint.json'))['checkpoint']
+          subprocess.run(['python3', 'trusted/scripts/ci-build.py', '--release-work', checkpoint,
+                          '--uploaded-artifact-id', os.environ['CACHE_ARTIFACT_ID'],
+                          '--uploaded-artifact-digest', os.environ['CACHE_ARTIFACT_DIGEST']], check=True)
+          PY
       - name: Remove disposable build outputs
         if: ${{ always() }}
         run: rm -rf -- staging identity rh-ci-build-*

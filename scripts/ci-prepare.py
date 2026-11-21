@@ -199,6 +199,53 @@ def downloads(cache, entries, sha256s):
             os.replace(path, artifacts / name)
 
 
+def previous_cache_revisions(candidate, request):
+    head, merge = request["pr_head"], request["expected"]["candidate_head"]
+    if not HEX.fullmatch(head) or not HEX.fullmatch(merge):
+        raise ValueError("Invalid immutable cache discovery revision")
+    def git(*arguments):
+        return subprocess.check_output(["git", "-C", str(candidate), *arguments], text=True).splitlines()
+    if git("rev-parse", "HEAD") != [merge]:
+        raise ValueError("Cache discovery checkout differs from the resolved candidate")
+    if head == merge:
+        # Operator prewarm/probe requests can name a direct commit rather than
+        # a proposed PR merge. Preserve their ordinary ancestry discovery.
+        return git("log", "-50", "--format=%H", merge)
+    parents = git("rev-list", "--parents", "-n", "1", merge)[0].split()
+    if len(parents) != 3 or parents[0] != merge or head not in parents[1:]:
+        raise ValueError("Cache discovery requires the resolved PR merge parents")
+    base = next(parent for parent in parents[1:] if parent != head)
+    # Search the PR's own history before date-ordered merge history. Exclude
+    # base ancestors so an old shared baseline cannot shadow a newer fallback.
+    branch = git("log", "--first-parent", "-50", "--format=%H", head, "--not", base)
+    fallback = git("log", "-50", "--format=%H", merge)
+    return list(dict.fromkeys([head, *branch, *fallback]))
+
+
+def restore_previous_cache(candidate, request, cache):
+    for revision in previous_cache_revisions(candidate, request):
+        record_data = get(f"{BASE}/ci/revisions/{revision}.json", missing=True, maximum=2_000_000)
+        if record_data is None:
+            continue
+        record = json.loads(record_data)
+        validate_record(record)
+        if record["toolchain"] != TOOLCHAIN:
+            raise ValueError("Published CI cache uses a different toolchain")
+        map_key, manifest_key = record["map_key"], record["module_manifest_key"]
+        data = get(BASE + "/" + map_key)
+        module_data = get(BASE + "/" + manifest_key)
+        if digest(data) != record["map_sha256"] or digest(module_data) != record["module_manifest_sha256"]:
+            raise ValueError("Published CI cache integrity mismatch")
+        latest = mapping(data)
+        extra_hashes = manifest_hashes(module_data, latest, data, record)
+        downloads(cache, latest, extra_hashes)
+        selected = cache / "latest.jsonl"
+        selected.write_bytes(data)
+        print(f"Reusing previous CI cache {revision}", flush=True)
+        return selected
+    return None
+
+
 def prepare(args):
     trusted = Path(args.trusted).resolve()
     state = Path(args.state).expanduser().resolve()
@@ -230,26 +277,7 @@ def prepare(args):
         hashes = manifest_hashes(manifest, entries, map_data)
         downloads(cache, entries, hashes)
         request = json.loads(Path(args.request).read_text())
-        candidates = subprocess.check_output(["git", "-C", args.candidate, "log", "-50", "--format=%H"], text=True).splitlines()
-        selected = None
-        for revision in candidates:
-            record_data = get(f"{BASE}/ci/revisions/{revision}.json", missing=True, maximum=2_000_000)
-            if record_data is None:
-                continue
-            record = json.loads(record_data)
-            validate_record(record)
-            map_key, manifest_key = record.get("map_key", ""), record.get("module_manifest_key", "")
-            data = get(BASE + "/" + map_key)
-            module_data = get(BASE + "/" + manifest_key)
-            if digest(data) != record["map_sha256"] or digest(module_data) != record["module_manifest_sha256"]:
-                raise ValueError("Published CI cache integrity mismatch")
-            latest = mapping(data)
-            extra_hashes = manifest_hashes(module_data, latest, data, record)
-            downloads(cache, latest, extra_hashes)
-            selected = cache / "latest.jsonl"
-            selected.write_bytes(data)
-            print(f"Reusing previous CI cache {revision}", flush=True)
-            break
+        selected = restore_previous_cache(args.candidate, request, cache)
         paths = {"packages": str(deps / ".lake/packages"), "baseline_cache": str(cache),
                  "baseline_manifest": str(cache / "modules.jsonl.gz"), "baseline_map": str(cache / "outputs.jsonl"),
                  "latest_map": str(selected) if selected else ""}

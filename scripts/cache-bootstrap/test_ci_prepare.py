@@ -2,13 +2,14 @@
 """No-network tests for trusted CI resolution and cache preparation metadata."""
 import argparse
 import base64
-from contextlib import redirect_stdout
+from contextlib import contextmanager, redirect_stdout
 import gzip
 import importlib.util
 import io
 import json
 import os
 from pathlib import Path
+import subprocess
 import tempfile
 from types import SimpleNamespace
 import unittest
@@ -36,6 +37,102 @@ def record(identity):
 
 
 class PreparationTests(unittest.TestCase):
+    @contextmanager
+    def cache_history(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            def git(*args, **kwargs):
+                return subprocess.check_output(["git", "-C", str(root), *args], text=True, **kwargs).strip()
+            def commit(name, date):
+                (root / name).write_text(name)
+                git("add", name)
+                env = {**os.environ, "GIT_AUTHOR_DATE": date, "GIT_COMMITTER_DATE": date}
+                git("-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid",
+                    "-c", "commit.gpgsign=false", "commit", "-qm", name, env=env)
+                return git("rev-parse", "HEAD")
+            git("init", "-q", "-b", "main")
+            base = commit("base", "2026-01-01T00:00:00Z")
+            git("checkout", "-qb", "pr")
+            ancestor = commit("partial", "2026-01-01T01:00:00Z")
+            head = commit("head", "2026-01-01T02:00:00Z")
+            git("checkout", "-q", "main")
+            main = commit("new-main", "2026-01-01T03:00:00Z")
+            git("-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid",
+                "-c", "commit.gpgsign=false", "merge", "--no-ff", "-qm", "candidate", "pr")
+            merge = git("rev-parse", "HEAD")
+            # Reproduce the regression: ordinary Git history sees main first.
+            dated = git("log", "--format=%H").splitlines()
+            self.assertLess(dated.index(main), dated.index(head))
+            yield root, {"pr_head": head, "expected": {"candidate_head": merge}}, {
+                "head": head, "ancestor": ancestor, "main": main, "base": base}
+
+    def published_cache(self, revision, module, digit, exit_code=0):
+        identity = sample_identity(revision)
+        data = (json.dumps(prep.publication.transport.SCHEMA) + "\n" +
+                json.dumps([digit * 16, digit * 16 + ".ltar"]) + "\n").encode()
+        header = {key: identity[key] for key in prep.publication.FINGERPRINT}
+        header.update(schema=1, modules=1, map_sha256=prep.digest(data),
+                      input_fingerprint=identity["input_fingerprint"])
+        row = [module, digit * 16, digit * 16 + ".ltar", "a" * 64]
+        manifest = gzip.compress((json.dumps(header) + "\n" + json.dumps(row) + "\n").encode(), mtime=0)
+        published = {**record(identity), "build_exit_code": exit_code,
+                     "map_sha256": prep.digest(data), "map_key": "ci/maps/" + prep.digest(data) + ".jsonl",
+                     "module_manifest_sha256": prep.digest(manifest),
+                     "module_manifest_key": "ci/module-manifests/" + prep.digest(manifest) + ".jsonl.gz"}
+        return {prep.BASE + "/ci/revisions/" + revision + ".json": json.dumps(published).encode(),
+                prep.BASE + "/" + published["map_key"]: data,
+                prep.BASE + "/" + published["module_manifest_key"]: manifest}, data
+
+    def test_pr_partial_cache_precedes_newer_main_and_missing_branch_falls_back(self):
+        for preferred in ("head", "ancestor", "main"):
+            with self.subTest(preferred=preferred), self.cache_history() as (root, request, commits):
+                responses, expected = self.published_cache(commits["main"], "MainBaseline", "1")
+                # A shared old baseline must not precede the normal main fallback.
+                old, _ = self.published_cache(commits["base"], "OldBaseline", "2")
+                responses.update(old)
+                if preferred != "main":
+                    branch, expected = self.published_cache(commits[preferred], "BranchCompleted", "3", 137)
+                    responses.update(branch)
+                if preferred == "head":
+                    earlier, _ = self.published_cache(commits["ancestor"], "EarlierPartial", "4", 130)
+                    responses.update(earlier)
+                cache = root / "cache"
+                cache.mkdir()
+                with patch.object(prep, "get", side_effect=lambda url, **kwargs: responses.get(url)), \
+                        patch.object(prep, "downloads") as downloads, redirect_stdout(io.StringIO()):
+                    selected = prep.restore_previous_cache(root, request, cache)
+                self.assertEqual(selected.read_bytes(), expected)
+                self.assertEqual(downloads.call_args.args[1], prep.mapping(expected))
+
+    def test_invalid_preferred_partial_fails_closed_before_download_or_fallback(self):
+        with self.cache_history() as (root, request, commits):
+            responses, _ = self.published_cache(commits["head"], "BranchCompleted", "3", 137)
+            valid, _ = self.published_cache(commits["main"], "MainBaseline", "1")
+            responses.update(valid)
+            record_url = prep.BASE + "/ci/revisions/" + commits["head"] + ".json"
+            published = json.loads(responses[record_url])
+            responses[prep.BASE + "/" + published["map_key"]] += b"corrupt"
+            with patch.object(prep, "get", side_effect=lambda url, **kwargs: responses.get(url)), \
+                    patch.object(prep, "downloads") as downloads:
+                with self.assertRaisesRegex(ValueError, "integrity mismatch"):
+                    prep.restore_previous_cache(root, request, root / "cache")
+                downloads.assert_not_called()
+
+    def test_direct_commit_operator_request_keeps_ancestry_discovery_and_checks_checkout(self):
+        with self.cache_history() as (root, _, commits):
+            request = {"pr_head": commits["main"], "expected": {"candidate_head": commits["main"]}}
+            # A request must not silently select caches for a different checkout.
+            with self.assertRaisesRegex(ValueError, "checkout differs"):
+                prep.previous_cache_revisions(root, request)
+            subprocess.run(["git", "-C", str(root), "checkout", "-q", "--detach", commits["main"]], check=True)
+            responses, expected = self.published_cache(commits["base"], "OperatorBaseline", "2")
+            cache = root / "cache"
+            cache.mkdir()
+            with patch.object(prep, "get", side_effect=lambda url, **kwargs: responses.get(url)), \
+                    patch.object(prep, "downloads"), redirect_stdout(io.StringIO()):
+                selected = prep.restore_previous_cache(root, request, cache)
+            self.assertEqual(selected.read_bytes(), expected)
+
     def test_identity_uses_git_blobs_and_ignores_documentation_tree(self):
         files = {"lakefile.toml": b"config", "lake-manifest.json": b"manifest",
                  "lean-toolchain": prep.TOOLCHAIN.encode()}
