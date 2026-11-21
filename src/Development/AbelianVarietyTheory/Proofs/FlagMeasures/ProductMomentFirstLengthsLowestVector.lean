@@ -71,7 +71,7 @@ theorem product_moment_first_gap : GlobalTheory.GapIn.Hyp → ∀ (k r : ℕ) (W
       n1 ν' ≤ q0 → (R ν').IsE Q E' ∧ Formalism.REAL.GlRel E' := by
     intro ν'
     by_cases h' : n1 ν' ≤ q0
-    · obtain ⟨E', h1, h2⟩ := _root_.Gp91.GlobalTheory.smooth_gl_module hKS k r _ _ (R ν') (hDS ν' h') Q hQu
+    · obtain ⟨E', h1, h2⟩ := _root_.GlobalTheory.smooth_gl_module hKS k r _ _ (R ν') (hDS ν' h') Q hQu
       exact ⟨E', fun _ => ⟨h1, h2⟩⟩
     · exact ⟨fun _ _ => 0, fun h'' => absurd h'' h'⟩
   choose E hE using hEx
