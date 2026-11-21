@@ -94,17 +94,18 @@ def resolve(args):
             raise ValueError("PR has no available merge result")
         revision = pr.get("merge_commit_sha")
         if revision and (pr.get("mergeable") is True or pr.get("merged") is True):
-            break
+            if not isinstance(revision, str) or not HEX.fullmatch(revision):
+                raise ValueError("Invalid candidate merge revision")
+            commit = api("git/commits/" + revision)
+            parents = {parent["sha"] for parent in commit["parents"]}
+            # GitHub can report mergeable=true while merge_commit_sha still
+            # names the previous head/base combination. Wait for both parents.
+            if selected_head in parents and (pr.get("merged") or pr["base"]["sha"] in parents):
+                break
         if attempt == 4:
             raise ValueError("GitHub has not finished computing the PR merge result; retry this job")
         time.sleep(2 * (attempt + 1))
-    if not HEX.fullmatch(revision):
-        raise ValueError("Invalid candidate merge revision")
     result = identity(revision)
-    commit = api("git/commits/" + revision)
-    parents = {parent["sha"] for parent in commit["parents"]}
-    if pr["head"]["sha"] not in parents or (not pr.get("merged") and pr["base"]["sha"] not in parents):
-        raise ValueError("Candidate is not the expected PR merge result")
     request = {"repository": REPO, "run_id": int(os.environ.get("GITHUB_RUN_ID", "0")),
                "pr_number": args.pr, "pr_head": pr["head"]["sha"], "expected": result}
     reused = get(f"{BASE}/ci/inputs/{result['input_fingerprint']}.json", missing=True, maximum=2_000_000)

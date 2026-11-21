@@ -95,6 +95,41 @@ class PreparationTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "head changed"):
                 prep.resolve(args)
 
+    def test_resolve_retries_stale_head_and_base_merge_parents(self):
+        head, base, stale, fresh = "a" * 40, "b" * 40, "c" * 40, "d" * 40
+        for old_parents in ([base, "e" * 40], [head, "e" * 40]):
+            with self.subTest(old_parents=old_parents), tempfile.TemporaryDirectory() as directory:
+                pr = {"head": {"sha": head}, "base": {"sha": base}, "mergeable": True, "merge_commit_sha": stale}
+                responses = [pr, {"parents": [{"sha": parent} for parent in old_parents]},
+                             {**pr, "merge_commit_sha": fresh}, {"parents": [{"sha": head}, {"sha": base}]}]
+                with patch.object(prep, "api", side_effect=responses) as api, \
+                        patch.object(prep, "identity", return_value=sample_identity(fresh)) as identity, \
+                        patch.object(prep, "get", return_value=None), patch.object(prep.time, "sleep") as sleep, \
+                        redirect_stdout(io.StringIO()):
+                    output = Path(directory) / "request.json"
+                    prep.resolve(SimpleNamespace(pr=12, head=head, output=output))
+                    self.assertEqual(json.loads(output.read_text())["expected"]["candidate_head"], fresh)
+                    identity.assert_called_once_with(fresh)
+                    sleep.assert_called_once_with(2)
+                    self.assertEqual(api.call_count, 4)
+
+    def test_stale_merge_retry_stops_on_changed_head_and_remains_bounded(self):
+        head, base, stale = "a" * 40, "b" * 40, "c" * 40
+        pr = {"head": {"sha": head}, "base": {"sha": base}, "mergeable": True, "merge_commit_sha": stale}
+        wrong = {"parents": [{"sha": base}, {"sha": "e" * 40}]}
+        args = SimpleNamespace(pr=12, head=head, output="unused")
+        with patch.object(prep, "api", side_effect=[pr, wrong, {**pr, "head": {"sha": "f" * 40}}]) as api, \
+                patch.object(prep.time, "sleep") as sleep:
+            with self.assertRaisesRegex(ValueError, "head changed"):
+                prep.resolve(args)
+            self.assertEqual(api.call_count, 3)
+            sleep.assert_called_once_with(2)
+        with patch.object(prep, "api", side_effect=[pr, wrong] * 5) as api, patch.object(prep.time, "sleep") as sleep:
+            with self.assertRaisesRegex(ValueError, "retry this job"):
+                prep.resolve(args)
+            self.assertEqual(api.call_count, 10)
+            self.assertEqual([call.args for call in sleep.call_args_list], [(2,), (4,), (6,), (8,)])
+
     def test_manual_resolve_accepts_merged_pr_but_still_checks_head_parent(self):
         head, merge = "a" * 40, "c" * 40
         merged = {"head": {"sha": head}, "base": {"sha": merge}, "mergeable": None,
