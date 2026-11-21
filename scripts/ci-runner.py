@@ -207,7 +207,12 @@ def systemd_quote(value):
 
 def unit(args):
     directory = runner_directory(args.directory)
-    path = systemd_quote(str(directory))
+    # WorkingDirectory is one literal path, unlike ExecStart's word parser.
+    # Quoting it makes the quote part of the path and fails validation.
+    path = str(directory)
+    if "\\" in path or any(ord(char) < 32 or ord(char) == 127 for char in path):
+        raise ValueError("unsupported control character or backslash in service working directory")
+    path = path.replace("%", "%%")
     run = systemd_quote(str(directory / "run.sh"))
     print(f"""[Unit]
 Description=Riemann hypothesis trusted build runner

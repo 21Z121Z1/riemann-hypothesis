@@ -5,6 +5,7 @@ import os
 import json
 from pathlib import Path
 import subprocess
+import shutil
 import sys
 import tempfile
 import unittest
@@ -79,6 +80,23 @@ class RunnerChecks(unittest.TestCase):
             runner.systemd_quote("/runner\nExecStart=malicious")
         self.assertEqual(runner.systemd_quote('/runner/%h/"quoted"'),
                          '"/runner/%%h/\\"quoted\\""')
+
+
+    @unittest.skipUnless(shutil.which("systemd-analyze"), "systemd-analyze is not installed")
+    def test_generated_unit_passes_real_systemd_parser(self):
+        with tempfile.TemporaryDirectory() as name:
+            directory = Path(name) / 'runner with spaces'
+            directory.mkdir(mode=0o700)
+            executable = directory / "run.sh"
+            executable.write_text("#!/bin/sh\nexit 0\n")
+            executable.chmod(0o700)
+            contents = subprocess.check_output(
+                [sys.executable, str(SCRIPT), "systemd-unit", "--directory", str(directory)], text=True)
+            service = Path(name) / "rh-runner-test.service"
+            service.write_text(contents)
+            result = subprocess.run(["systemd-analyze", "--user", "verify", str(service)],
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
 
 
 if __name__ == "__main__":
