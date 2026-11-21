@@ -1,9 +1,12 @@
+-- shake: keep-all (pre-minimization imports restored: this file fails to elaborate under the minimized set)
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
+import Mathlib
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.HeightAddRingKrullDimQuotientMvPolynomialField
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRingKrullDimQuotientMvPolynomialEqNat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeadingCoeffNonnegOfEventuallyEvalNat
-import Mathlib.RingTheory.IntegralClosure.GoingDown
+import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain
+import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.RingKrullDimQuotientOfMemAssociatedPrimes
 
 open Polynomial Filter Module
 

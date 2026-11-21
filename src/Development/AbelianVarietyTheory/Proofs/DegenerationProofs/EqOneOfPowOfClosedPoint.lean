@@ -1,8 +1,17 @@
+-- shake: keep-all (pre-minimization imports restored: this file fails to elaborate under the minimized set)
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
+import Mathlib
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
+import Development.AbelianVarietyTheory.Definitions.Degenerations.PlOrdSomeOfAssociated
+import Development.AbelianVarietyTheory.Statements.SemistableTorsion.SemistableFin
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FormallyUnramifiedOfTangentMapInjective
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.BijectiveRestrictPointsOfEtaleOfHenselian
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Imports
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.CubicalStructures.Imports
 
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry
 open scoped CategoryTheory.Obj

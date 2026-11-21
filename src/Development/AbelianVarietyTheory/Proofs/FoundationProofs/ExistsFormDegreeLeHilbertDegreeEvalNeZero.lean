@@ -1,13 +1,13 @@
+-- shake: keep-all (pre-minimization imports restored: this file fails to elaborate under the minimized set)
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
+import Mathlib
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.MonomialCountAndBinomialEstimates
+import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.XSmulMemWeightedHomogeneousSubmodule
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LeadingCoeffNonnegOfEventuallyEvalNat
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.IntegralStatementPfA
-import Mathlib.RingTheory.Etale.Weakly
-import Mathlib.RingTheory.KrullDimension.Polynomial
-import Mathlib.RingTheory.Polynomial.HilbertPoly
-import Mathlib.RingTheory.TotallySplit
+import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain
 
 open Filter Module
 

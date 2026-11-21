@@ -1,10 +1,27 @@
+-- shake: keep-all (pre-minimization imports restored: this file fails to elaborate under the minimized set)
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
+import Mathlib
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleRanksRankComplement
-import Mathlib.Algebra.Order.PUnit
-import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
-import Mathlib.RingTheory.Etale.Weakly
+import Formalism.TameInertiaTowers.FinalGroup
+import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.RealCyclotomicSubfield
+import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia
+import Formalism.FrobeniusOrbits.RealSubfieldLeCompositum
+import Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic
+import Formalism.FrobeniusOrbits.HostOrbitCountSg
+import Formalism.HarderNarasimhan.StatementFrame
+import Formalism.LatticeLocalGlobal.LatticeLocalGlobalOfGlobal
+import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LRowdivLemmas
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylLeDual
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylDominanceOf
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaTallZero
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+import Formalism.GradedWeylDivisibility.FinalB
+import Formalism.GradedWeylDivisibility.FinalC
+import Formalism.SubspaceCounting.TopsChoiceSecondBound
+import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham
 
 noncomputable section
 
