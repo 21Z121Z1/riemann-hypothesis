@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Credential and process-boundary checks; no GitHub/AWS calls or registration."""
 import importlib.util
+import base64
 import os
 import json
 from pathlib import Path
@@ -9,6 +10,8 @@ import shutil
 import sys
 import tempfile
 import unittest
+from types import SimpleNamespace
+from unittest.mock import patch
 
 SCRIPT = Path(__file__).with_name("ci-runner.py")
 spec = importlib.util.spec_from_file_location("ci_runner", SCRIPT)
@@ -17,6 +20,80 @@ spec.loader.exec_module(runner)
 
 
 class RunnerChecks(unittest.TestCase):
+    def identity_fixture(self, root):
+        installed, source = root / "installed", root / "identity"
+        installed.mkdir(mode=0o700); source.mkdir(mode=0o700)
+        for name in ("config.sh", "run.sh", "bin/Runner.Listener"):
+            path = installed / name; path.parent.mkdir(exist_ok=True)
+            path.write_text("must never execute")
+        policy = root / "policy.json"
+        policy.write_text(json.dumps({"id": 5, "name": runner.GROUP, "visibility": "selected",
+                                     "allows_public_repositories": True, "restricted_to_workflows": True,
+                                     "selected_workflows": [f"{runner.WORKFLOW}@{runner.MAIN_REF}"]}))
+        policy.chmod(0o600)
+        settings = dict(agentId=123456, agentName="volunteer-host", poolId=5, poolName=runner.GROUP,
+                        serverUrl="https://pipelines.actions.githubusercontent.com/example/", gitHubUrl=runner.ORGANIZATION,
+                        workFolder="_work", useV2Flow=True,
+                        serverUrlV2="https://broker.actions.githubusercontent.com/")
+        credential = {"scheme": "OAuth", "data": {"clientId": "11111111-2222-4333-8444-555555555555",
+                      "authorizationUrl": "https://tokenghub.actions.githubusercontent.com/example/one/two/three", "requireFipsCryptography": "True"}}
+        rsa = {key: base64.b64encode(b"x" * (256 if key in ("d", "modulus") else 3 if key == "exponent" else 128)).decode()
+               for key in ("d", "dp", "dq", "exponent", "inverseQ", "modulus", "p", "q")}
+        for name, value in zip(runner.IDENTITY_FILES, (settings, credential, rsa)):
+            # Official runner 2.338.2 on the live AWS host writes UTF-8 BOM JSON.
+            path = source / name; path.write_text(json.dumps(value), encoding="utf-8-sig"); path.chmod(0o600)
+        return SimpleNamespace(directory=installed, identity_directory=source, policy_file=policy,
+                               name="volunteer-host", runner_id=123456)
+
+    @unittest.skipIf(os.getuid() == 0, "adoption correctly refuses root")
+    def test_adopt_copies_only_one_identity_without_process_or_enrollment_token(self):
+        with tempfile.TemporaryDirectory() as name:
+            args = self.identity_fixture(Path(name))
+            with patch.object(runner.subprocess, "run", side_effect=AssertionError("adoption must not execute bundle data")):
+                runner.adopt_identity(args)
+            for filename in runner.IDENTITY_FILES:
+                actual = args.directory / filename
+                self.assertEqual(actual.stat().st_mode & 0o777, 0o600)
+                self.assertEqual(json.loads(actual.read_text()), json.loads((args.identity_directory / filename).read_text(encoding="utf-8-sig")))
+            with self.assertRaisesRegex(ValueError, "already has identity"):
+                runner.adopt_identity(args)
+
+    @unittest.skipIf(os.getuid() == 0, "adoption correctly refuses root")
+    def test_adopt_rejects_other_group_endpoints_paths_and_unexpected_files(self):
+        mutations = [(".runner", "poolId", 1), (".runner", "agentId", 999),
+                     (".runner", "workFolder", "/outside"), (".runner", "gitHubUrl", "https://github.com/other-org"),
+                     (".runner", "serverUrl", "https://evil.example/"), (".credentials", "scheme", "OAuthAccessToken")]
+        for filename, key, value in mutations:
+            with self.subTest(key=key), tempfile.TemporaryDirectory() as name:
+                args = self.identity_fixture(Path(name)); path = args.identity_directory / filename
+                obj = json.loads(path.read_text(encoding="utf-8-sig")); obj[key] = value; path.write_text(json.dumps(obj))
+                with self.assertRaises(ValueError):
+                    runner.adopt_identity(args)
+                self.assertFalse((args.directory / ".runner").exists())
+        with tempfile.TemporaryDirectory() as name:
+            args = self.identity_fixture(Path(name)); path = args.identity_directory / ".credentials"
+            obj = json.loads(path.read_text(encoding="utf-8-sig")); obj["data"]["authorizationUrl"] = "https://evil.example/"
+            path.write_text(json.dumps(obj))
+            with self.assertRaisesRegex(ValueError, "OAuth endpoint"):
+                runner.adopt_identity(args)
+        with tempfile.TemporaryDirectory() as name:
+            args = self.identity_fixture(Path(name)); (args.identity_directory / "registration-token").write_text("not allowed")
+            with self.assertRaisesRegex(ValueError, "exactly the three"):
+                runner.adopt_identity(args)
+
+    @unittest.skipIf(os.getuid() == 0, "adoption correctly refuses root")
+    def test_adopt_rejects_public_files_and_symlinks(self):
+        for symlink in (False, True):
+            with self.subTest(symlink=symlink), tempfile.TemporaryDirectory() as name:
+                args = self.identity_fixture(Path(name)); path = args.identity_directory / ".credentials"
+                if symlink:
+                    path.rename(args.identity_directory.parent / "outside")
+                    path.symlink_to(args.identity_directory.parent / "outside")
+                else:
+                    path.chmod(0o644)
+                with self.assertRaises((ValueError, OSError)):
+                    runner.adopt_identity(args)
+
     def test_private_credentials_reject_public_files_and_symlinks(self):
         with tempfile.TemporaryDirectory() as name:
             path = Path(name) / "credential"
