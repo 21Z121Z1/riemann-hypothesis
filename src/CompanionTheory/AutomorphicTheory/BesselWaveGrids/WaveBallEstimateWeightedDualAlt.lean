@@ -561,7 +561,7 @@ theorem product_moment : HypsG → ∀ (k r : ℕ) (Wp : Type) [NormedAddCommGro
   have hw1' : ‖(w : (R ν).H)‖ = 1 := hw1
   have hwsm : (w : (R ν).H) ∈ (R ν).sm := w.2
   refine ⟨(w : (R ν).H), hwsm, hw1', ?_⟩
-  obtain ⟨hG, -, hlen, hmeas⟩ := _root_.GlobalTheory.quotMeas_ae_mem_and_measurable hK k r _ _ (R ν) Wp z π u μW μN μG νq hDS hSide
+  obtain ⟨hG, -, hlen, hmeas⟩ := _root_.Gp91.GlobalTheory.quotMeas_ae_mem_and_measurable hK k r _ _ (R ν) Wp z π u μW μN μG νq hDS hSide
   obtain ⟨hBeL, hdg, -⟩ := hSF ν hν0
   have hT : 0 < Formalism.QuantumDeterminants.Tz k r z := hSide.2.1
   obtain ⟨⟨hb1, hb2, -, -, -⟩, -⟩ := GlobalTheory.NumFam.num_fam k r lam u b bv ga h q0 hNum
@@ -672,7 +672,7 @@ theorem kappa_bound : HypsG → ∀ (k r : ℕ) (Wp : Type) [NormedAddCommGroup 
         rw [if_neg hJ, this]
         simp)
     I ((hmass _ (hνJ0 I)).2 hnzI).1 w hw
-  have hae := (_root_.GlobalTheory.quotMeas_ae_mem_and_measurable hyp.1.2.2.1 k r _ _ (R ν) Wp z π u μW μN μG νq hDS hG).1
+  have hae := (_root_.Gp91.GlobalTheory.quotMeas_ae_mem_and_measurable hyp.1.2.2.1 k r _ _ (R ν) Wp z π u μW μN μG νq hDS hG).1
   rw [if_pos hnzI, hκI I rfl, hw1] at h8
   have h9 := h8.trans (le_trans (le_of_eq (lintegral_congr_ae ?_)) hint)
   · have hH : 0 ≤ Hsq r (Formalism.QuantumDeterminants.Tz k r z) b ^ (r + 1) := by

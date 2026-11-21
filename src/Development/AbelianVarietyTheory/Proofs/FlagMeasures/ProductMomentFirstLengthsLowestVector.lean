@@ -105,7 +105,7 @@ theorem product_moment_first_gap : GlobalTheory.GapIn.Hyp → ∀ (k r : ℕ) (W
     rw [h1]
     have h2 : ‖(w : (R ν).H)‖ = 1 := hw1
     rw [h2, one_pow, ENNReal.ofReal_one]
-  obtain ⟨hae, -, hlenM, hbesM⟩ := _root_.Gp91.GlobalTheory.quotMeas_ae_mem_and_measurable hKS k r _ _ (R ν) Wp z π u μW μN μG νq (hDS ν hν0) hSd
+  obtain ⟨hae, -, hlenM, hbesM⟩ := _root_.GlobalTheory.quotMeas_ae_mem_and_measurable hKS k r _ _ (R ν) Wp z π u μW μN μG νq (hDS ν hν0) hSd
   obtain ⟨hIsBes, -⟩ := (hSF ν hν0).1
   have hPhM : AEMeasurable (fun x : Formalism.QuantumDeterminants.Mt k r => dg ν * ‖lb ν ((R ν).σ (Matrix.of x) w)‖ ^ 2) νq :=
     ((hbesM (lb ν) hIsBes (w : (R ν).H) w.2).norm.aemeasurable.pow_const 2).const_mul (dg ν)
