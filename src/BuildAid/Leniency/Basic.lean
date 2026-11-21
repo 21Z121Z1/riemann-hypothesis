@@ -1,8 +1,8 @@
 import Lean.Linter.Init
 
 /-!
-Options for the warnings of the lenient elaborators (`BuildAid.LenientOpen`,
-`BuildAid.LenientExample`, `BuildAid.LenientVariable`).
+Options for the warnings of the lenient elaborators (`BuildAid.Leniency.Open`,
+`BuildAid.Leniency.Example`, `BuildAid.Leniency.Variable`).
 
 Each warning has its own option, and `linter.leniency` controls them all. An option's value is
 resolved in this order:

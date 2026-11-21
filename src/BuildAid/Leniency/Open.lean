@@ -2,15 +2,15 @@ import Lean.Elab.Command
 import Lean.Elab.Open
 import Lean.Elab.Tactic.BuiltinTactic
 import Batteries.Tactic.OpenPrivate
-import BuildAid.Leniency
+import BuildAid.Leniency.Basic
 
 /-!
 Allows `open` commands to succeed, with a warning, if they cannot find the relevant namespace or
 name: whatever does not resolve is skipped, and a warning says that a necessary import may have
-been removed. The warnings are governed by `linter.leniency.open` (see `BuildAid.Leniency`).
+been removed. The warnings are governed by `linter.leniency.open` (see `BuildAid.Leniency.Basic`).
 -/
 
-namespace BuildAid.LenientOpen
+namespace BuildAid.Leniency.Open
 
 open Lean Elab OpenDecl
 
@@ -117,4 +117,4 @@ def elabOpenPrivate : CommandElab
         warnSkipped id ex
   | _ => throwUnsupportedSyntax
 
-end BuildAid.LenientOpen
+end BuildAid.Leniency.Open

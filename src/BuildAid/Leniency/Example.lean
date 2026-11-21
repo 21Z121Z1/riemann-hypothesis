@@ -1,5 +1,5 @@
 import Lean.Elab.Declaration
-import BuildAid.Leniency
+import BuildAid.Leniency.Basic
 
 /-!
 `example` that warns instead of failing.
@@ -13,11 +13,11 @@ declarations go to the builtin elaborator unchanged). It runs the builtin `elabD
 synchronously and without incrementality, so that every message ends up in the command's message
 log rather than in an asynchronous snapshot task. If that produces errors, they are reported as
 warnings, together with a warning that a necessary import may have been removed. The warnings
-are governed by `linter.leniency.example` (see `BuildAid.Leniency`); when it is off, the errors are
+are governed by `linter.leniency.example` (see `BuildAid.Leniency.Basic`); when it is off, the errors are
 dropped.
 -/
 
-namespace BuildAid.LenientExample
+namespace BuildAid.Leniency.Example
 
 open Lean Elab Command
 
@@ -43,4 +43,4 @@ def elabExample : CommandElab := fun stx => do
   else
     modify fun s => { s with messages := saved ++ new }
 
-end BuildAid.LenientExample
+end BuildAid.Leniency.Example

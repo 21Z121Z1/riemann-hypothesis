@@ -1,5 +1,5 @@
 import Lean.Elab.BuiltinCommand
-import BuildAid.Leniency
+import BuildAid.Leniency.Basic
 
 /-!
 `variable` and `omit` that skip what fails, with a warning.
@@ -22,11 +22,11 @@ elaborators store anyway: the binder syntax, one by one, which each declaration 
 (`runTermElabM`). Splitting changes only the check `variable` makes when it runs, which elaborates
 the command's binders together. An item that fails is undone: the scope is restored, its errors are
 reported as warnings, and a warning says that a necessary import may have been removed. The
-warnings are governed by `linter.leniency.variable` (see `BuildAid.Leniency`); when it is off, the
+warnings are governed by `linter.leniency.variable` (see `BuildAid.Leniency.Basic`); when it is off, the
 errors are dropped.
 -/
 
-namespace BuildAid.LenientVariable
+namespace BuildAid.Leniency.Variable
 
 open Lean Elab Command
 
@@ -77,4 +77,4 @@ def elabOmit : CommandElab
         Lean.Elab.Command.elabOmit (← `(Lean.Parser.Command.omit| omit $o))
   | _ => throwUnsupportedSyntax
 
-end BuildAid.LenientVariable
+end BuildAid.Leniency.Variable
