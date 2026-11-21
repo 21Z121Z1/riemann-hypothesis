@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.CardToMultisetEqDegree
 import Mathlib.RingTheory.SimpleRing.Principal
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.TangentEqLcZero

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.EnergyBoundPolynomialWeightPowCapelliEigenStatement
 open Formalism.FourierDecayAlt Formalism.REAL Formalism.QuantumDeterminants Finset
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CompPowTate
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelObjectPullbackExistsAndPrincipal
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsIffOfIsGrpPullbackComm

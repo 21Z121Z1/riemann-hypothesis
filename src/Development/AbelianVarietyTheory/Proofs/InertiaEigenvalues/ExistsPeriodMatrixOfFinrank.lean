@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineFormalismOfRegular
 import Mathlib.RingTheory.Etale.Weakly
 open TensorProduct Module

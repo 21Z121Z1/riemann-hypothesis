@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaAtMove
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TupleMatch
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridFramesDoublingPolynomialExistsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumRefine
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ReduceModChar

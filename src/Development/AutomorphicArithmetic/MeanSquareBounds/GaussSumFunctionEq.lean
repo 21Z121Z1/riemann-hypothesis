@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.PairGood
 import Development.AutomorphicArithmetic.MeanSquareBounds.Thin
 import Development.AutomorphicArithmetic.MeanSquareBounds.realCond

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealizationCupProductStatement
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.GaloisCupProducts.CupZnApply
 

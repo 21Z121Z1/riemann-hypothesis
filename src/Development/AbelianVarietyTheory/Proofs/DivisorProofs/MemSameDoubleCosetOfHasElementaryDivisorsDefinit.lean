@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStableComplBot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorIndicatorMemHecke
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryDoubleCosetOfGLintDoubleCoset

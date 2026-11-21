@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.FormalDegree.FormalDegreeHilbert.HlamStable
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Unique

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemConjSub
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalFieldUniformizerNormProperties
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.IsArtinianRingKummerAdjoinRootQuotientRoot

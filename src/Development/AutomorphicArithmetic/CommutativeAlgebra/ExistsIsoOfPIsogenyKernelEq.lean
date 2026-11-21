@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RangeSubsetOfGeom
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AbelianSchemeIdPowFiniteEtaleSurjective

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftFormLvlOp
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFrameUnitaryDivisorSplit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrivOutsideListProd

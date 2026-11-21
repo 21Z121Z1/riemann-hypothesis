@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GoodPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EtaleOfSemilocalDedekindOfBirational
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrimeToPartLevelExistsUniqueMono

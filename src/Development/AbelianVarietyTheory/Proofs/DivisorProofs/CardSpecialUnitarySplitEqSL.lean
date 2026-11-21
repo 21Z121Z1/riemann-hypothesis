@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntLocConjIntLocConj
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DefiniteBound
 

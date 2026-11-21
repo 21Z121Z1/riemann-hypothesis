@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteH1H2Local
 open Formalism.GaloisCohomology ReciprocityTheory.Gal
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerThetaReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaStabilizerExists
 open scoped TensorProduct NNReal Matrix

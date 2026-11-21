@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.CountingDefinitions.VoronoiMeans.VorFunEvalEqFineMean
 
 set_option autoImplicit false

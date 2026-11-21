@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPrechartGroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDenominatorFiniteAlgebra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteOfLocallyFiniteFreeLocalizationsStatement

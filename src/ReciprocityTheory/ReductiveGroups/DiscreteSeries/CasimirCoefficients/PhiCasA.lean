@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.IsClosedKset
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.Order.CompletePartialOrder

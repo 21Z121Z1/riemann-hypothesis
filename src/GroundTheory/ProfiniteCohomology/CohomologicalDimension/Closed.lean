@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ClassFormationDefs
 import GroundTheory.ProfiniteCohomology.Colimit
 import GroundTheory.ProfiniteCohomology.IsProPGroupSubgroupIffIsPGroupMap

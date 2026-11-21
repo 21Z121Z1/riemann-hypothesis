@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.GamMixedOf
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorExistsChars
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BijectiveOfSplit

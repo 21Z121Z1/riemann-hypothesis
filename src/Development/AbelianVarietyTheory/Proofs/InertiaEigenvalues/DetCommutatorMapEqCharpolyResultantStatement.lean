@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCommutatorMapEqCharpolyResultant
 open GlobalTheory.UnitLemma GlobalTheory.StableLatCount Polynomial
 set_option maxHeartbeats 1000000 in

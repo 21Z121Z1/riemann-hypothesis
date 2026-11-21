@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlatVectorEqUnitMulCentralTranslateLiftVectorStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlatVecExistsUnique
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsClassSystem

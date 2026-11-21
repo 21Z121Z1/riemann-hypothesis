@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliWordProductDecayBoundUniformStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliFoldAddSmul
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.WStmtxx
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTorusEigenformOfCompactTorusEigenvector
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqTheta

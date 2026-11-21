@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumFCompEquiv
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkInjectiveClosed
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

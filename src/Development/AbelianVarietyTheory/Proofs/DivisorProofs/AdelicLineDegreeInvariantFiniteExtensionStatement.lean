@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineDegreeInvariantFiniteExtension
 open NumberField IsDedekindDomain Module GlobalTheory.FlatLine
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA
 import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds

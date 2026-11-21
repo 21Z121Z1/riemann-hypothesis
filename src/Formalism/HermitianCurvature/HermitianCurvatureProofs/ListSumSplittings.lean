@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExponentWordRecursion
 
 open Matrix Filter Topology

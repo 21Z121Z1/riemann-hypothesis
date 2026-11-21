@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitEqOfGermsPinchingSquareStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitOfPinchingSquareGluedUnitsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatioUnitOfLineBundleGeneratorsOnOpensStatement

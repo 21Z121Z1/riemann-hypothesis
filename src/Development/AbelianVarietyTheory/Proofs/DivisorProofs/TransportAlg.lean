@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Batteries.Data.Nat.Gcd
 import Mathlib.Tactic.Polynomial.Basic

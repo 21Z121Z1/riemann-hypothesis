@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.EigenbasisLifts.DimLeOfInt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoQuot
 

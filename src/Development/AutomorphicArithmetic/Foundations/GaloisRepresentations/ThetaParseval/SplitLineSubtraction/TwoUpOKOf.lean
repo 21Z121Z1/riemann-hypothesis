@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.AllCoreOf
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.CartanIdeles.SpacesExOf
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.GoodLifts.OfIsGood

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ShortGenIndepConnection
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCoeffDeltaOKOfCover
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSpecialPrimeLevelCoverOfFieldConditionsStatement

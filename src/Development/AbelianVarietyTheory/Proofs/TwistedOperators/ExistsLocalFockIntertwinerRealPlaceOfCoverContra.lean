@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChosenSeries
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.BarMatrix

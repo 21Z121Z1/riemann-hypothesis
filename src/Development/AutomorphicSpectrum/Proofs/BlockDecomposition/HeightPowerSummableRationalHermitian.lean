@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SiegelEisensteinConvergent
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialConstantTermBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionLeftInvariantRationalParabolic

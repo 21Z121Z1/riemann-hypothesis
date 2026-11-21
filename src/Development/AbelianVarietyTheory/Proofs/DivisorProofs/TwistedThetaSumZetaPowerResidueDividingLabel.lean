@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistWeightWellDefinedOnLatticeClassStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorStalkEvaluationLinearMapFamilyStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

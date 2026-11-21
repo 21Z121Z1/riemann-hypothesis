@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PiHBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CochainExt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ElementsBijectiveOfBijectiveAppStatement

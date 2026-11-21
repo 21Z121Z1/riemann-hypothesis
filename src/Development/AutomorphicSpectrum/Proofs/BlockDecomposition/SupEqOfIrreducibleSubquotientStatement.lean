@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SupEqOfIrreducibleSubquotient
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL GlobalTheory.RgGu
 open scoped TensorProduct

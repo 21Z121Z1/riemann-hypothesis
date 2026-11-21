@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeightTwoFormalGroupUnramifiedMultiplier
 open PowerSeries GlobalTheory.Honda Formalism.L2.Th1.CM
 set_option maxHeartbeats 1000000 in

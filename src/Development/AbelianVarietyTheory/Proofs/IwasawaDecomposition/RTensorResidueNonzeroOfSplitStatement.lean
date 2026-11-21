@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RTensorResidueNonzeroOfSplit
 open scoped TensorProduct NumberField
 open GlobalTheory.EigenSplit

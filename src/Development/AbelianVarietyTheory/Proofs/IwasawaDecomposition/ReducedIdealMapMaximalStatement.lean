@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReducedIdealMapMaximal
 open IsLocalRing
 set_option maxHeartbeats 1000000 in

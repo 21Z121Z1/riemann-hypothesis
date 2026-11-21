@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange

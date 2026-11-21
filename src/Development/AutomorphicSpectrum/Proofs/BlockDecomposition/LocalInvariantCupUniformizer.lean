@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsAlgHomMulEquivDec
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohCmp
 import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.TransportA

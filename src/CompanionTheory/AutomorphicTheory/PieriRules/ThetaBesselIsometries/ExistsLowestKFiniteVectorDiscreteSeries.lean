@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.CayleyExistsAndAny
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DominantRootSums
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.KStableFiniteDimSmoothCompactRootStableStatement

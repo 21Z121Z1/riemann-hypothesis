@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackStatementHolds
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicConjugatePullback
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Pullback

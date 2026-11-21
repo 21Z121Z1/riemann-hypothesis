@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.PlaceSplit
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.GramBlock
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep

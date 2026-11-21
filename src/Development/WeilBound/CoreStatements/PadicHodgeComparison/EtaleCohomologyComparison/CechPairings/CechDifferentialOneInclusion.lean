@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.FaceMapCompSuccAboveCastSucc
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.CechDesc
 set_option backward.isDefEq.respectTransparency false

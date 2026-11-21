@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.EquivSigLamOfIsDS
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

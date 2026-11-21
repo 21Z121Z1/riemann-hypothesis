@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsTopDensityChart
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PExtension
 import Mathlib.Algebra.Module.StablyFree.Basic

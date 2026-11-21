@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTriSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDivisorClassEqOfLocalStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoGenResMapSmulHom

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnifTrait
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolAV
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne

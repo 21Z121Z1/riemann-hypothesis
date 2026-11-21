@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFourierBoundSeminormStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SeminormCompUnitaryLeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormWhittakerGL2LeIntegralStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GradedChartDegrees.LmLeStd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatBaseChangeCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.FaceMapCompSuccAboveCastSucc

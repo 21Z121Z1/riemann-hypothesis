@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormDegreeStepZero
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeLeRankMulSlopeStatement
 

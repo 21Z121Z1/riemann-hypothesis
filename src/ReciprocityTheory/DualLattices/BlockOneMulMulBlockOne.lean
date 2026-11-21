@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.UpSmith
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Std.Tactic.BVDecide.Normalize.Prop

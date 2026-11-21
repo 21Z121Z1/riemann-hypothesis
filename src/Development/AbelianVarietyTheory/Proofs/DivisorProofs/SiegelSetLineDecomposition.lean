@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviLinesSmoothFunctionSpanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSignatureBasisMaxCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviLineEigenvectorAdelicPointStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasCompactSupportDescend
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantIntegralUnipotentCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmallOpenCompactNormalStatement

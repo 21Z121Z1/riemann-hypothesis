@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RepresentationIndependence.IsFixedConvMap
 import Formalism.PeriodIntegrals.RepsIndep
 

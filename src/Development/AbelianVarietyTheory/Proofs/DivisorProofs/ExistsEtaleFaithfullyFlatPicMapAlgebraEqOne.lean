@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PicPiIsOfFinOrder
 import Mathlib.RingTheory.Etale.Pi
 import Mathlib.RingTheory.Etale.Weakly

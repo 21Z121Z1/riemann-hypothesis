@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ConeBall
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsZeroLocusDimH
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChowFormDim

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DominatedConvergenceExhaustionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TailLogBoundLocalIntegrableStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularChartDataPropertiesStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.SmoothRegular
 import Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.PrincipalizationConstruction
 universe u

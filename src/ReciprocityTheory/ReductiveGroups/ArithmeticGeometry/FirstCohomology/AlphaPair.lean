@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.OneCHyp
 import Mathlib.Data.Int.Star
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.SesquilinearFractions.NIdeal
 import Development.WeilBound.CoreStatements.SesquilinearFractions.RatProductFormula
 open NumberField Matrix GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl

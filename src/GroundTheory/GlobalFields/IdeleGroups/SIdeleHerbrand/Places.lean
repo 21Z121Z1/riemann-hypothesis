@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand.Product
 import GroundTheory.GlobalFields.IdeleGroups.LocalHerbrandInfinite
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.InfinitePlaces

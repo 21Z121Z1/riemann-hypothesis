@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContDiffOnInvConjDet
 
 open Matrix Filter Topology

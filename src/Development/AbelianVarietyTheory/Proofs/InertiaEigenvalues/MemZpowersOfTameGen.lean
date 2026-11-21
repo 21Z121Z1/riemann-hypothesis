@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRhoPtOfSplitting
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FixedOfPowFixed
 

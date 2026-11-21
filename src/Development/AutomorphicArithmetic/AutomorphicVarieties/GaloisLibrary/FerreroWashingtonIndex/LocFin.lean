@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.LocalNormsEverywhere
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.FerreroWashingtonIndex.CycRepApply
 

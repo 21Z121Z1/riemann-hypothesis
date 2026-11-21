@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormPosOfIsUnit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarBallGrowthUnitaryJStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulOfSublevelGrowthStatement

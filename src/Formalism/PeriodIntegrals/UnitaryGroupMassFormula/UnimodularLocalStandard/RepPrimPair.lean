@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnimodularLocalStandard.RepArith
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

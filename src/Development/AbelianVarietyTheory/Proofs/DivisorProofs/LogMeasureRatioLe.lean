@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneLeDimAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainMeasureNeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainMeasureNeTopStatement

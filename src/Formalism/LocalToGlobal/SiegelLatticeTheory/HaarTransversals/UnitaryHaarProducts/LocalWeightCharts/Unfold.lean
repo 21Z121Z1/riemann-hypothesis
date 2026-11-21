@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.LocalWeightCharts.WavePacketL1L2
 
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousRs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameTransport.InstIsModTopTens

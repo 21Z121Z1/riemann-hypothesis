@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HypothesesX
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUniqueVec
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RallisConvOfHypotheses

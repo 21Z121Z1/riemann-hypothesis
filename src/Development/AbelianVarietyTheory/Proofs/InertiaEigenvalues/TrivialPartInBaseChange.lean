@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedMuPartInBaseChange

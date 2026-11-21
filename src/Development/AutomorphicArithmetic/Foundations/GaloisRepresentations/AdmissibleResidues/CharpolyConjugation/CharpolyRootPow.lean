@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.IsAutomorphicOverImagQuad
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatakeMatchBaseChange

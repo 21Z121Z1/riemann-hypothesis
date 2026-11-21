@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFourierSchwartzBruhatPlaneStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilWhittakerLowerLeftNonzeroStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilWhittakerUpperTriangularCaseStatement

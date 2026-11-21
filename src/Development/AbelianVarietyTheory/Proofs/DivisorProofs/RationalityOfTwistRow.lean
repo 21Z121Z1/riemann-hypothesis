@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LevelOfOfSameBut
 open GlobalTheory.BigTop GlobalTheory.BigOn GlobalTheory.BigOn.Exp
 

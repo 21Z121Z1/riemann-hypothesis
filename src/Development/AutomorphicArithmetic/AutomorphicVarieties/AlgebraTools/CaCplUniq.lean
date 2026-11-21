@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCplLift
 
 open IsLocalRing UpperTheory.V.AlgebraTools

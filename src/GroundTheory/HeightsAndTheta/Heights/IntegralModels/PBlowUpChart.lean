@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Statements
 import Mathlib.RingTheory.Valuation.LocalSubring
 set_option maxSynthPendingDepth 1

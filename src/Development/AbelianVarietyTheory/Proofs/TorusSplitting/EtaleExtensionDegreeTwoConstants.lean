@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.HostSize
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsCuspFormFourClausesExplicitConstantStatement
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.LogCardComponentsLeOfRowsBoundStatement

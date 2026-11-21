@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverFP
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.HeckeStdStatement
 

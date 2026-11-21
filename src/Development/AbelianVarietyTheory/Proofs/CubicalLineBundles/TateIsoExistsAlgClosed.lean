@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUnitOfPowEqOne
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsTorsionFieldExtStatement
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf

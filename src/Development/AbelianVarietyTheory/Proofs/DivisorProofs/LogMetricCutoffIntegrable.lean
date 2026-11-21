@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogBallBoundLocalChartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartPotentialRepresentationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerChartLogMeanBoundStatement

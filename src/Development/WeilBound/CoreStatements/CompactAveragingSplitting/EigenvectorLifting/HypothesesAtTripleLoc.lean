@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.HypothesesAtTripleAlg
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.VaceigenDual
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SemiAbelianDvrExtensionsIsoCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralFramesDifferByUnitStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ValVEqOneIntegralGeneratorsStatement

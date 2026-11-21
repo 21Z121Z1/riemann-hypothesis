@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLineDegreeDual
 import Mathlib.RingTheory.PicardGroup
 set_option maxSynthPendingDepth 1

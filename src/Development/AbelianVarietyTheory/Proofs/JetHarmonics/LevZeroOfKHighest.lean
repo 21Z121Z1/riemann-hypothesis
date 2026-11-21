@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactCasimirHighestWeight
 import Mathlib.Tactic.Monotonicity.Lemmas

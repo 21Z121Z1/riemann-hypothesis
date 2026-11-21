@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeBase
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Mathlib.RingTheory.PiTensorProduct

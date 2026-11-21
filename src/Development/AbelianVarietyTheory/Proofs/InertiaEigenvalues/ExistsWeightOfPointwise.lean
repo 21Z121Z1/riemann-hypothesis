@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFormsFiniteDimensionalOf
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemHolSubIff
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold

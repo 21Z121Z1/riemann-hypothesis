@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.SpecializesIff
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IsProjPrimeOfRelComps
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.ResGAppLE

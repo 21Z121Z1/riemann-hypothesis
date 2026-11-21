@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesJetEqCalculus
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

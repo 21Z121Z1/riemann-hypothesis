@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.AutCFixed
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBase
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

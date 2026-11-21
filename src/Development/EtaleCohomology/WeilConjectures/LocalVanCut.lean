@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.WeilConjectures.GysinSeqCut
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 

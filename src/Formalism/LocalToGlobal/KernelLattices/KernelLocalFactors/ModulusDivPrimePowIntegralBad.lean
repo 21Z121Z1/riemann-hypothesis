@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivFr
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivGen

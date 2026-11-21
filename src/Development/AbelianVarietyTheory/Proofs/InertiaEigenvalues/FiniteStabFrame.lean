@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameEquivApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteStabMono
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DoubleCosetMassEqRelIndexMulMass

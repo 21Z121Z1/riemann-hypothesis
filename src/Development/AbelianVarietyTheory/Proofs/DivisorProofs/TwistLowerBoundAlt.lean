@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesRatOfSeriesRatS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealizationEmbeddingCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoefficientLatticeSpanStatement

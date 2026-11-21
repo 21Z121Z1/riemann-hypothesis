@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.LatDefs
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.OmegaInjectiveHolds
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementG

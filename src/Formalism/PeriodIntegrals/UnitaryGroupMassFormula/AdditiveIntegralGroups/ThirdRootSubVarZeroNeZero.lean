@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.CoeffWSeriesVarZero
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdditiveIntegralGroups.SubstMem
 import Mathlib.Order.CompletePartialOrder

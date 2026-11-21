@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.NearSplit
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CoefSup
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsValuationExtensionIntegral

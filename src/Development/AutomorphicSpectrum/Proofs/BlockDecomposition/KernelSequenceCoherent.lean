@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KerSCShortExact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformVanishing
 

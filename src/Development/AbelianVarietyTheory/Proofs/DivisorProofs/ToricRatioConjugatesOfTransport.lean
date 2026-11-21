@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedTransport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricSumEqHeckeLValueMulAuxiliaryFactors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLNeZeroNat

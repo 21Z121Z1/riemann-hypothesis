@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformVanishing
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalIdealMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe

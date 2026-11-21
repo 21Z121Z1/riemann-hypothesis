@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocSubSup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActsExistsBis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HoweDualityForLocOps

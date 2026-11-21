@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.SmoothDesignExistence.SumOverPrimesHypotheses
 
 noncomputable section

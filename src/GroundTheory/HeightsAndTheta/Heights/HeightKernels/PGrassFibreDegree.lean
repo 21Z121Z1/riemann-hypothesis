@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassFibreDegree
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PGrassLinesProj
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ConservationDegreeFormOfExistence

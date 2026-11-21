@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilAdditiveCharacterHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitAdditiveCharacterHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedThetaSpherical

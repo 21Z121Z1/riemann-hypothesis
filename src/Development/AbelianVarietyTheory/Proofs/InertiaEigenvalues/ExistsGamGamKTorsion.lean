@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormPowSubOneOfNotDvd
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

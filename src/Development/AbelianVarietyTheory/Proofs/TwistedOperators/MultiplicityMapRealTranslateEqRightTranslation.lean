@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepMemSm
 import Formalism.LocalToGlobal.IndefiniteReal.SchurOrthogonality
 import Formalism.LocalToGlobal.IndefiniteReal.TopMult

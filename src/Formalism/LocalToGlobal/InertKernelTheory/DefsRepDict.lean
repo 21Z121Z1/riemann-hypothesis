@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRep
 import Formalism.LocalToGlobal.InertKernelTheory.DefsBeCob
 

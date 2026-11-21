@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.PointDegree.PowSum
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
 import Mathlib.Tactic.Polynomial.Basic

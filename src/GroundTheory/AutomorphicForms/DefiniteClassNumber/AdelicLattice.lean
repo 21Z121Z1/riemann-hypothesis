@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.DefiniteClassNumber.Places
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.LatticeCompact
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense

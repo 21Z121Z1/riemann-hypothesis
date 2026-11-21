@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.HodgeTateFromSandwich
 import Development.WeilBound.ThetaLifts.LatticeBasics.RealInvL
 import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj

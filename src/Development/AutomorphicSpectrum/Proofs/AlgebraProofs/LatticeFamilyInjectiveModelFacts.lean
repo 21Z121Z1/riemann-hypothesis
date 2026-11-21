@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeFiniteProjectiveBaseChange
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AffineGenerators

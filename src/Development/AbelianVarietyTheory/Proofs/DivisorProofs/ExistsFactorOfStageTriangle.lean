@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageTriangleKernelIntegrableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageTriangleIntegralVanishingStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.FamCol
 import Formalism.LocalToGlobal.GlobalTheory.ArithP
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDominantToUnitLeft
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueScalar
 

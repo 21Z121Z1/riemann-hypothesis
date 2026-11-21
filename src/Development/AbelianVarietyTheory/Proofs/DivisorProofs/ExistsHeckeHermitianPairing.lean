@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnFundamentalDomain
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 

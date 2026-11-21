@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsSpreadHom
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsSpreadNbhd
 set_option maxSynthPendingDepth 1

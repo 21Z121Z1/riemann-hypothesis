@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoMulInvOf
 import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 import Mathlib.RingTheory.PicardGroup

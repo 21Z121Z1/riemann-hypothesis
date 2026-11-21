@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneLeProdReal
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardSublatticesBoundedDetLeSum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormPowLeCardFlagQuotientStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLiftIndependence.Statement
 
 namespace Formalism.ThetaLiftIndependence

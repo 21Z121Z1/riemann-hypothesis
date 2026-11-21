@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.SubsingletonCohomologyOneGalUnitsSubgroupOf
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.KummerOpen
 import GroundTheory.ProfiniteCohomology.PoincareDuality.Torsion

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.SegmentJacquetSubquotients.HasFiniteLengthJacSub
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalPairSubGeneric
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothIterPhi

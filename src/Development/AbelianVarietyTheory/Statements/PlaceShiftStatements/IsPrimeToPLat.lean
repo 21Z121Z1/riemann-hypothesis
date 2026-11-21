@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TwoNeZeroClosure
 import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup

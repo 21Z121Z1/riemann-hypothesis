@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.GaussJetProofs.PureCrossTermWeight
 import Formalism.GaussJetBounds.StatementA
 import Mathlib.Tactic.ENatToNat

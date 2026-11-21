@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.LocalFourierHaar
 open GroundTheory.LocalField GroundTheory.Automorphic GroundTheory.Automorphic.Spherical GroundTheory.Automorphic.Iwasawa GroundTheory.Automorphic.GLnLocal
 open scoped ValuativeRel

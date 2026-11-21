@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.PageFix
 import Formalism.SharpRestriction.Divisibility.SmallFirstModulusBelowScale
 import Formalism.SharpRestriction.GlobalSchurBounds.WeightVectorSmallSharesEight

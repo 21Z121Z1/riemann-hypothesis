@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftDiagonalTypePreservedStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeParabolicThetaSecond
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftLowerTowerVanishing

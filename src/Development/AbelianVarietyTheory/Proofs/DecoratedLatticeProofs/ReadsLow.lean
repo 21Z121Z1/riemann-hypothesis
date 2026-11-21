@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Live
 
 set_option genSizeOfSpec false

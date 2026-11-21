@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.LocalNormGroups
 import Mathlib.RingTheory.DedekindDomain.Different
 

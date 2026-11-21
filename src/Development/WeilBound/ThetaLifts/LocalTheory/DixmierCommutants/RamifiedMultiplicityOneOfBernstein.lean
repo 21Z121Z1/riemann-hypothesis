@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.AtSingle
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.LocalMultiplicityOneIrreducibleGL

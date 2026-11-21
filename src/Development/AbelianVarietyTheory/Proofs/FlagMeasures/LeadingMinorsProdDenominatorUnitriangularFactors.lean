@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl

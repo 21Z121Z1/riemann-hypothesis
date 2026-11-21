@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AutRepDefiniteUnitarySpannedBySplitComponentStatement
 import GroundTheory.AutomorphicForms.SmoothRep
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolyApproxZeroPadic

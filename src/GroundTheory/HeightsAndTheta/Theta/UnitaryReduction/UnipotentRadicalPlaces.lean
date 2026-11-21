@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Theta.UnitaryReduction.UnipotentRadical
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import Mathlib.RingTheory.DedekindDomain.Different

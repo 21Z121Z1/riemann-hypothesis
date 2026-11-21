@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BaseOneSide.PsiSide
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CountingFormula
 

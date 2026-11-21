@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsBeta
 import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.G2HaarMeasure.PhiEqZeroIff
 import Development.WeilBound.ThetaLifts.LatticeBasics.Hypotheses2
 

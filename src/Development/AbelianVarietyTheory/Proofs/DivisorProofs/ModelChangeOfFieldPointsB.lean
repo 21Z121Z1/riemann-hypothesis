@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelBaseChangeNormalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelFibreProductNormalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelGenericFibreIsoStatement

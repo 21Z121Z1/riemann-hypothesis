@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheafCore
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.IsQuasicoherentTensorOfInvertible
 set_option maxSynthPendingDepth 1

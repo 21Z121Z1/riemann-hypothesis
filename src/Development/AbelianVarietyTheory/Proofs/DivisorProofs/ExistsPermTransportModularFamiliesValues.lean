@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportPowerSumsModularFamiliesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPermOfSumMonomialEqStatement
 

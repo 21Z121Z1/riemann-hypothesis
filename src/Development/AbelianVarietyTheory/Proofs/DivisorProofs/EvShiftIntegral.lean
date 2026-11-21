@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacterNontrivialAtPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeBTripleSecondFormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeBTripleThirdFormStatement

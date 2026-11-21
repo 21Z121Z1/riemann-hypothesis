@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 import Mathlib.NumberTheory.LSeries.Nonvanishing
 import Mathlib.NumberTheory.MulChar.Duality

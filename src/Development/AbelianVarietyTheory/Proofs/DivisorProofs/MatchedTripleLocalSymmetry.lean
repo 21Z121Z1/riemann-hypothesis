@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOrbitSmoothVectorFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeLevelCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeLevelOpenNbhdStatement

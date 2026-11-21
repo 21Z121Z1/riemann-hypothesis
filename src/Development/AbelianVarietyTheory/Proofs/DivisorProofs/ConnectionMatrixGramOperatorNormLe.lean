@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LeTwoMulOfForallScale
 import Mathlib.Topology.Sheaves.Presheaf
 open Matrix Complex Filter Topology

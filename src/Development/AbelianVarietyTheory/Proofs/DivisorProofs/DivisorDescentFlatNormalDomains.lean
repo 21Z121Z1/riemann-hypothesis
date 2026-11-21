@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlatMapColonIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemSubmonoidDvdMulOfForallHeightEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightOnePrimeAssociate

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Group.Pi.Units
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.MvPolynomial.Funext

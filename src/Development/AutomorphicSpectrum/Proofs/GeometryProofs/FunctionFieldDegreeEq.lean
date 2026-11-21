@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LengthFormulaSumValuationsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingEssFiniteTypeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricNumberZeroFinrankStatement

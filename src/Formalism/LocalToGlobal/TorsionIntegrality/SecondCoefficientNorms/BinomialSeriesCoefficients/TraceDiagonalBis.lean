@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.GramFormula
 import Formalism.LocalToGlobal.TorsionIntegrality.SecondCoefficientNorms.BinomialSeriesCoefficients.UnitaryInverseIdentity
 import Formalism.GL3MeanSquares.HookFormulaTorsion.SquareEqDiagOfQuadraticEven

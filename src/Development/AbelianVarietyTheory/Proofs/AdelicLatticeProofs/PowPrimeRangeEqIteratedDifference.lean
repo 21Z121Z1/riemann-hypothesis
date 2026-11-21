@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.MemPowSub
 import Mathlib.RingTheory.Polynomial.Eisenstein.IsIntegral
 import Std.Tactic.BVDecide.Normalize.Prop

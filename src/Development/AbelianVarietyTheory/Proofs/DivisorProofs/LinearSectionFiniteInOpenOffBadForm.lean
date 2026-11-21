@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChowFormZeroSetExtensionFieldIffCommonConeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubsetOfForallPtMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqIsoSpecComp

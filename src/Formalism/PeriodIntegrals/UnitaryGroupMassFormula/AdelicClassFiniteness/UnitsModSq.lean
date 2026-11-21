@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicClassFiniteness.HformSelfStar
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Henselian

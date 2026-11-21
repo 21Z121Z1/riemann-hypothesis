@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerBF
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExtensionHermitianFrames
 import Formalism.LocalToGlobal.ProjectiveLattices.HalfOneAddSqrtNegIsIntegral

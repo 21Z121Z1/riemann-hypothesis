@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsLocalApproximateIdentity
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsCovolOne
 

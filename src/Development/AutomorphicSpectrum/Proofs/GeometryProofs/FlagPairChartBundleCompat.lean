@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualLatticeFlagFrameStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartBundleFinitelyGeneratedStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartBundleLatticeGeneratorsStatement

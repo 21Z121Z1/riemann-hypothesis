@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.ShortVectorEveryPlace
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Data.Rat.Star

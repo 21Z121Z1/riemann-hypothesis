@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.QuadraticAbelian.WeilRepQuadratic
 import GroundTheory.LocalFields.LocalFourierSchwartz
 open MeasureTheory Matrix GroundTheory.LocalField GroundTheory.Automorphic Ad3 Ad3.K.GL2LocalData

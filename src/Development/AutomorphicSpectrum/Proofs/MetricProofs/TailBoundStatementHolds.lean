@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.LeviForms.TailBound
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CompChartEventuallyEq
 import ReciprocityTheory.AnalyticForms.LeviForms.TailBoundB

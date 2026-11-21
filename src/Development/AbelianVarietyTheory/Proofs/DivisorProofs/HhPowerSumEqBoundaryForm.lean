@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarFlagZ
 open MvPolynomial GlobalTheory.FlagPoly GlobalTheory.FlagForm GlobalTheory.Published Formalism.DegreeFormula
 

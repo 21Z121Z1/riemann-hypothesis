@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.ClosedEmbedding.StrictTransformClosedImmersion
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrongResolution.DetachedLocus
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrongResolution.StrictTransformTower

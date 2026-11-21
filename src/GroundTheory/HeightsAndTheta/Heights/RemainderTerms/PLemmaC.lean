@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.AltFrob
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Statements
 set_option maxSynthPendingDepth 1

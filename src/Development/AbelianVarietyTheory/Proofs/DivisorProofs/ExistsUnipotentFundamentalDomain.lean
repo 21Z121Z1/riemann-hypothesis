@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CocompactLatticeUnitCovolumeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiscreteRationalPointsSubgroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalClosedNonzeroStatement

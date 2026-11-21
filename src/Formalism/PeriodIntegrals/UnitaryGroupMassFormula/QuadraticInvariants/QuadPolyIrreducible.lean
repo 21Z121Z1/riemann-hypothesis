@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.ClassNumImQ
 import Mathlib.Algebra.Polynomial.SpecificDegree
 import Mathlib.Data.Rat.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsMulOfApprox
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent

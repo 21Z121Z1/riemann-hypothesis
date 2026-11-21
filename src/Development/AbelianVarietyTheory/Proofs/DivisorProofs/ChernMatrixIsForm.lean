@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalEqCurve
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.AApproxE
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory Matrix

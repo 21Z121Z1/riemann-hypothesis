@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhiBoundPartsOfRadicalParametrisation
 
 open Matrix MeasureTheory Filter Topology

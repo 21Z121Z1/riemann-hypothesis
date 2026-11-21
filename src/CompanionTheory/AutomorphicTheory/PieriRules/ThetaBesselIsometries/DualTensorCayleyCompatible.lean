@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.DualTensorCapelliIntertwineStatement
 

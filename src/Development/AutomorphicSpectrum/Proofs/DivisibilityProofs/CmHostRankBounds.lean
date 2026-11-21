@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TowerOrigin
 import Mathlib.NumberTheory.NumberField.Discriminant.Different
 import Mathlib.RingTheory.PicardGroup

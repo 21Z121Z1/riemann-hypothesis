@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OddHarmZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenericPointAsIdeal
 

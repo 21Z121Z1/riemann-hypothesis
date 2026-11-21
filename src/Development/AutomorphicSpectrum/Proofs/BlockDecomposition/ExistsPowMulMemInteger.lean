@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.FormQuasiInvariantMirabolic
 open PositivityTheory.JacquetShalikaLocal MeasureTheory
 open scoped ValuativeRel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsKerPowDvd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalPeriodRingsDataUnramifiedLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExt

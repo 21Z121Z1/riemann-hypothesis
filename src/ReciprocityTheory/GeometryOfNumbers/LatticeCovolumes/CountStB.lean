@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ArakelovDegreeEqDegreeOfFamily
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountStA
 import Mathlib.Analysis.CStarAlgebra.Classes

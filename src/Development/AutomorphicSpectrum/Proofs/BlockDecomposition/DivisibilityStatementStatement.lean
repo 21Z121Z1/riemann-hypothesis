@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DivisibilityStatement
 open ResidueKilled.Tr
 set_option maxHeartbeats 1000000 in

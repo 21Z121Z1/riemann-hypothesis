@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NabBaseChange
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FinPartDetAtInvInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignFirst

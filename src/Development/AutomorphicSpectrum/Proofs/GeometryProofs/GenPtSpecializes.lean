@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCptGen
 import Mathlib.AlgebraicGeometry.FunctionField
 

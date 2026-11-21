@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.RealDisplaySplitting.StatementA
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.InChiSplit
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.PropLocBK

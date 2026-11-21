@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.Algebra.MvPolynomial.Division

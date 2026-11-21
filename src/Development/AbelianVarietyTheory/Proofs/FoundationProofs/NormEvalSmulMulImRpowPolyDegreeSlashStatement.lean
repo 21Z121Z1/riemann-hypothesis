@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormEvalSmulMulImRpowPolyDegreeSlash
 open GlobalTheory.HeckeFamilyMatrices Polynomial UpperHalfPlane
 open scoped MatrixGroups ModularForm

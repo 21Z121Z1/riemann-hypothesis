@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Gramdet
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Rypos
 import Mathlib.Data.Int.Star

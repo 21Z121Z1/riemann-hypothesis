@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLFunctionBottomPairStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomPairNormNeZeroStatement
 

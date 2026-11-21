@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticModelFlagHeightSecond
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlagOfInvertibleMatrixStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagMatrixStepIsomorphismStatement

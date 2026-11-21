@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundOfConditionsWithErrorForFrames
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.DescentConstants
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal

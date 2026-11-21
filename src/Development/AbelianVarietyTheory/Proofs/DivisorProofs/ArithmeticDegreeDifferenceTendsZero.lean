@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeAndArithmeticCompatibilityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoZeroOfOpenSetLinearRootsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopDegreeDifferenceTelescopingStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths.IntegralJointTypeSum
 import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
 

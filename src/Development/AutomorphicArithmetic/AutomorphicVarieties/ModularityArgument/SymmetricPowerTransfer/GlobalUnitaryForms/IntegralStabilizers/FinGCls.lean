@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.HodgeTateFromSandwich
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UJClassFin
 import Mathlib.RingTheory.Valuation.LocalSubring

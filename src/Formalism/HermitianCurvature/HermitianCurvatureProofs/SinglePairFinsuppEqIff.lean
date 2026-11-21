@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapRWordsOfParts
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt NumberField Matrix

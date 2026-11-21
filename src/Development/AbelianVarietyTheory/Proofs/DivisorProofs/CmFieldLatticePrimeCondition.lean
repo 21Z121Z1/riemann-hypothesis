@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceRingFractionEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeConjugateInFieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeAboveValuationEqStatement

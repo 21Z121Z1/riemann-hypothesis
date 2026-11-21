@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneZeroInsertionLinearApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendByZeroMemSchA
 open scoped TensorProduct Matrix

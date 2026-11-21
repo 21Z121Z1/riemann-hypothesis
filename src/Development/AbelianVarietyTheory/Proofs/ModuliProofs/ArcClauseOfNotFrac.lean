@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FractionLevelCorrespondence
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionIsoIffAt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenRelNeZero

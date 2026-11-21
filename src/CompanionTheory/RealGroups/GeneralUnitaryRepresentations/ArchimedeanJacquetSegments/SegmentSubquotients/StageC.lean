@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.SegmentSubquotients.SegRepOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeCuspidalPairLength
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdMapInjective

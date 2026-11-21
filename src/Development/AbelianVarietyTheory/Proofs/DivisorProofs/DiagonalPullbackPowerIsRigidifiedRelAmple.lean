@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomProdPow
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymplecticFormBasisChange
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj

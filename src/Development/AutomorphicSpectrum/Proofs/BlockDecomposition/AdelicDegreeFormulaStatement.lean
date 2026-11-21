@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicDegreeFormula
 open Matrix PositivityTheory.Rg.BcB PositivityTheory.Rg.BcB.D1
 set_option maxHeartbeats 1000000 in

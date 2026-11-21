@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.CoordinateSubscheme
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

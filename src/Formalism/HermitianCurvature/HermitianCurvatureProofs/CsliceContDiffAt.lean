@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HsRealSmulRight
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MeasurableOfContinuousOnZero
 import Mathlib.Analysis.Calculus.FDeriv.Pi

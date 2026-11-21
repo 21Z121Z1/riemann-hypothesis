@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.HeckeCharacterParameters
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.CartanCoshPower
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGrpDataMapHaar

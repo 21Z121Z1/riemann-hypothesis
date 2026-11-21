@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CoSeriesThreeStep
 import Mathlib.Algebra.Order.Star.Real

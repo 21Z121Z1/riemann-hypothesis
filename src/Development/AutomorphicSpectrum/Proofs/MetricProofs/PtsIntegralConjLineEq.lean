@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsHorizontalTwist
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArIntConj
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSheet

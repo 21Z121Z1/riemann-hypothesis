@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 open AlgebraicGeometry CategoryTheory Limits ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R ReciprocityTheory.ChartRestriction.G.Geo.ResK
 

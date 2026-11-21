@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupLiftTangentPhiLinearStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupLiftTangentPhiAdditiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionDualNumberPointEqConstantCharZeroStatement

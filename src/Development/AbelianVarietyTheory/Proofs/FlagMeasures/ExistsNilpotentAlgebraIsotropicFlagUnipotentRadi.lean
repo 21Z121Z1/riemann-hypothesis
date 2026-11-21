@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SqSumEqSumSqAddTwoMulSumLt
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum
 import Mathlib.Algebra.Module.StablyFree.Basic

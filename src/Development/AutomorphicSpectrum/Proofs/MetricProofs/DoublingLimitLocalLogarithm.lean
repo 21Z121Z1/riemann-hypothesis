@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IterDifferentiableOn
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Tactic.Polynomial.Basic

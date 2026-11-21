@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetHeckeCompatHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusTrivialOnLeviCompactStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetHeckeConditionHoldsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumRealEmbeddingsEqTraceTotallyRealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinValueLinearChangeStatement
 open NumberField UpperHalfPlane GlobalTheory.HilbFam GlobalTheory.QFam

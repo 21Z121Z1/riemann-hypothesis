@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExponentialUnipotentStabilizer
 open NumberField Module Matrix Formalism.MainNotions.S GlobalTheory.LoopV
 open scoped ENNReal Classical

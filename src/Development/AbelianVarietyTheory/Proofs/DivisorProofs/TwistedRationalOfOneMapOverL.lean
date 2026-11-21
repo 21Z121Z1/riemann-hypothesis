@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotOntoOfCharAlone
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneMapOfOfPtIdent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IpMSelfEqZero

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThickFrames.MarkedLowBounds
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Tactic.ENatToNat

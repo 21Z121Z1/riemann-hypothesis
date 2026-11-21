@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProdProofA
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
 import Mathlib.Order.CompletePartialOrder

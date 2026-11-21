@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MixInvariantPlaneDecomposition
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MixSignTwist
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ResidualCharactersPsiNe

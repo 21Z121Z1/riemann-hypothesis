@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTransformRationalTranslateQuasiInvariant
 import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 open scoped TensorProduct Matrix

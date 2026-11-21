@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnCosSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StereographicMeasureChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MobiusChangeOfVariables

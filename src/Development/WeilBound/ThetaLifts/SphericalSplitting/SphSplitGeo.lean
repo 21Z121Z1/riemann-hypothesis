@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SphericalLattices.SphSplitOf
 import Development.WeilBound.ThetaLifts.SphericalLattices.BelowIffRows
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinNarrowness.BernsteinClosure.RamifiedMultiplicityOne

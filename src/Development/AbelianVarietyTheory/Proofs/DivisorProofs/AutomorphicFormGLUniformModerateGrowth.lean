@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormEqOwnRealLieSmoothingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothingGrowthExponentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordEqSmoothingOfReproducedStatement

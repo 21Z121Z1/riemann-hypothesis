@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
 import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

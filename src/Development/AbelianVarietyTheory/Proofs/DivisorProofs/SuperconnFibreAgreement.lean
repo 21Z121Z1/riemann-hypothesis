@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnSuperconnOfPeriodStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnectionBaseFunctionLeibnizStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnectionWedgeAnticommuteStatement

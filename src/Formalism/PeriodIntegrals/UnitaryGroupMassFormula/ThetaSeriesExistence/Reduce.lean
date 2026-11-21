@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesExistence.ThetaDerivNe
 import Mathlib.NumberTheory.Modular
 import Mathlib.RingTheory.WittVector.IsPoly

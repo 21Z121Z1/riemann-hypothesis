@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFrameRatio
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsBasisB
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

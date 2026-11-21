@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.WeilPolarization.IsSelfDualAtLatticeAtStd
 import GroundTheory.GlobalFields.Adele.Approximation
 set_option maxSynthPendingDepth 1

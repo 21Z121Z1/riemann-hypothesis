@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.OffSmall
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TypePrimeBadPrimesLevelsHypothesesProof
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice

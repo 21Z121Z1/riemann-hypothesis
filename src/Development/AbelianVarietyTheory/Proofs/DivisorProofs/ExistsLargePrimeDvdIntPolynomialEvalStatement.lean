@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLargePrimeDvdIntPolynomialEval
 open scoped TensorProduct Polynomial
 set_option maxHeartbeats 1000000 in

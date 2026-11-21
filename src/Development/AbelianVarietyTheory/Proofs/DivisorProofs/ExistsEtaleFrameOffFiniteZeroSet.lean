@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionsCoordsAndNonvanishingAtFinsetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsJacobianSectionCanonicalWeightStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtaleCoordinatesSectionQuotientsStatement

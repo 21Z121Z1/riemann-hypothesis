@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCentralAdaptedElementStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CentralAdaptedElementValueStatement
 

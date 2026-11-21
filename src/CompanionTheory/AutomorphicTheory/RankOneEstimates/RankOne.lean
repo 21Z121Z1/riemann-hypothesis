@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.RankOneEstimates.DecSender
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.ThmMOfXi
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.FrameBlockWMem

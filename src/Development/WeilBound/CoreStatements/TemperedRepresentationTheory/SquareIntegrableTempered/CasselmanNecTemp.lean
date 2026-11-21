@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff
 

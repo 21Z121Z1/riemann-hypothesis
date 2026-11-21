@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrictTransformCharts.ExceptionalDivisorChart
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.SmoothCenterChart
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.PowerContainmentAndOrderLocus

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.Statement
 import Lemmata.NearbyExistence.ExistsNear
 import Mathlib.Algebra.AffineMonoid.Basic

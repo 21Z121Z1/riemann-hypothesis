@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsFinTyp
 import Mathlib.Algebra.Module.StablyFree.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralEqEuclideanIntegralOfSupportInChart
 open Set MeasureTheory
 open ReciprocityTheory.L2DbarEstimates (V)

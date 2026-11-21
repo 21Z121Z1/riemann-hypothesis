@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsWeightedHomogeneousOfMemOrbitSpan
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.Order.CompletePartialOrder

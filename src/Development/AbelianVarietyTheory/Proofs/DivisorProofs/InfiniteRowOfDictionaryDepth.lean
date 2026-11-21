@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DictionaryDepthPairStandardStatement
 
 open GlobalTheory.SumSize GlobalTheory.RowClaim GlobalTheory.SumSize.OppConj

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlternatingCofaceComplexOfFunctorDZeroOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosimplicialSesExactAtSucc
 import Mathlib.Algebra.Category.Grp.Zero

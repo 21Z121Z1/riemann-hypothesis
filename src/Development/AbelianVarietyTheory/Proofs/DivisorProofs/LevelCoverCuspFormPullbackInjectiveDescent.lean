@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinearIndependentRulBC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NvalNonnegIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormIffLevelCoverPullbackStatement

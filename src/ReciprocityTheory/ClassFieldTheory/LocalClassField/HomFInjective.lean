@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.CurriedCoboundaryEq
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField.Deg2

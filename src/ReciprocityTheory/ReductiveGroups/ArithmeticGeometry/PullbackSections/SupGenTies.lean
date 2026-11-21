@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicCoefficientSplitting
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.ModelLat
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.TorusPin

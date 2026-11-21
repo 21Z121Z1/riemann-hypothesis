@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HermitianForms.DefsSym
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetSym
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.JoinForms

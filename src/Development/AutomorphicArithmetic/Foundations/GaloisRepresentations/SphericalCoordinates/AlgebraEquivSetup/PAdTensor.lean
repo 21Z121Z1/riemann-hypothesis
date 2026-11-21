@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.AlgebraEquivSetup.ApartOfNotMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixExtPLoc
 import GroundTheory.GlobalFields.CompletionAtPlace.Integers

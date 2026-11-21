@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOneP
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IndOfNot
 import Mathlib.Algebra.Ring.IsFormallyReal

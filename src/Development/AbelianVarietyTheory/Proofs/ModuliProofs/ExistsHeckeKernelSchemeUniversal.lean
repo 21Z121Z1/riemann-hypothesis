@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EtSetOfLists
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHeckeKernelListsModuloPermutationsStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HeckeSetDescends

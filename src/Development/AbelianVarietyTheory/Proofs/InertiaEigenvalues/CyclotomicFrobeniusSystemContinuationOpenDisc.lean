@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GeomSumOneAddPrime
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvariantBasis
 

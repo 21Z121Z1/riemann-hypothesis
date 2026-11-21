@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemConeOfMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsOfInduces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec

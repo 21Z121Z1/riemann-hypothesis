@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CxRootsInjective
 import Mathlib.LinearAlgebra.Lagrange
 open MeasureTheory Set Filter Polynomial NumberField IsDedekindDomain

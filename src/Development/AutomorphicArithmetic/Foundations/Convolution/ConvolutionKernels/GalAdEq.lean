@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.AdUnique
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.SelmerRankBounds.IsNormAlong

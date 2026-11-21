@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.FrameEstimates.CoefSumB
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaDistributionHeisenbergInvariant
 

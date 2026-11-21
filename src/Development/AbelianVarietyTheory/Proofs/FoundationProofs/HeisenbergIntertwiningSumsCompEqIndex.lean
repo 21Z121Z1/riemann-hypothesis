@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PerfectPairingQuotients
 open Classical GlobalTheory.FinWeil
 open scoped BigOperators

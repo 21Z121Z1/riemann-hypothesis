@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StDualIndexFinite
 import Mathlib.GroupTheory.FiniteAbelian.Basic
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadsGaussianSmulConstUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOperatorNormalisingVectorNeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfIsFiniteAdelicPointSameStatement

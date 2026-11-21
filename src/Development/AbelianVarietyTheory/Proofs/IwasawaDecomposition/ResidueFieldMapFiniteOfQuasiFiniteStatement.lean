@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite
 open AlgebraicGeometry CategoryTheory
 set_option maxHeartbeats 1000000 in

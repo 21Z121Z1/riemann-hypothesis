@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridLocalTensorPlacesOverSplitPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem
 import Development.AbelianVarietyTheory.Definitions.Foundations.NonemptyAlgHomOfNotIsField

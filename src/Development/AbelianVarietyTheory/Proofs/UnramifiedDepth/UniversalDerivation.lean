@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FstHomCompSqzOfLeibniz
 import Mathlib.Tactic.ENatToNat
 import ReciprocityTheory.DualLattices.TowerZeroSurjective

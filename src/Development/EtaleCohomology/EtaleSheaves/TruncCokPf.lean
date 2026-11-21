@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.LocalDescent.DescLocOf
 
 noncomputable section

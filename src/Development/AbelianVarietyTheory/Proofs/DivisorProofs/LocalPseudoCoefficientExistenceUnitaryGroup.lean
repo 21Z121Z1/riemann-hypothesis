@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfConstOfTendsto
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MuPowLambdaProductCoeffMuVariablePencilEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StProfileHolds

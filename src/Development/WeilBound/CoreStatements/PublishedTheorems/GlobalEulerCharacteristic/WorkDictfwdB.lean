@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.DefsForms
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CohomologicalDimensionTopologicalIso
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GaloisUnramifiedOutsideCohomologyStatement

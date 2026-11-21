@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBoxGenOfSection
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.CubBoxVal
 import Development.AbelianVarietyTheory.Definitions.Uniformization.IsCPPullback

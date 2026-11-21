@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpanSectionsAllAffinesOfCover
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 set_option maxHeartbeats 1000000 in

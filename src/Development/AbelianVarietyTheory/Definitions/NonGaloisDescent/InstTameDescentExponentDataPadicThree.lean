@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConnPhiExtensionGeneratorEqZeta
 import Mathlib.GroupTheory.SemidirectProduct
 import Mathlib.RepresentationTheory.Invariants

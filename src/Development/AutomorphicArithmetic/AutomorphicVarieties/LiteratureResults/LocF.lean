@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.DiscreteGL2
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
 

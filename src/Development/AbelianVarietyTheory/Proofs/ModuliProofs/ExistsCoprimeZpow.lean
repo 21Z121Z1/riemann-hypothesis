@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsObjTwistBySimilitude
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TateIsoDifferBySimilitude
 

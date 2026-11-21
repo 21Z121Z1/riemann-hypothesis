@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CupProducts.Functoriality
 import GroundTheory.ProfiniteCohomology.ColimitDefs
 import GroundTheory.TateCohomology.CupProduct

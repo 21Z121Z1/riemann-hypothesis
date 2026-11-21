@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.SimpleRing.Principal

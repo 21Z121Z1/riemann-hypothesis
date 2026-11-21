@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PlaceData
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PowSubMem
 

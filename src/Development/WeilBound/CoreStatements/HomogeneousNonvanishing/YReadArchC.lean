@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YReadArchA
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YReadArchB
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompactificationCompEquivStatement

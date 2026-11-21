@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IntegrandEqOnPiece
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemIntegralGLIffIntegralUnitDet
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeneralLinearUnimodularHaar

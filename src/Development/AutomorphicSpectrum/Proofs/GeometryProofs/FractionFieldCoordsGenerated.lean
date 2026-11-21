@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BirationalOfTranscendenceDegree
 
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar

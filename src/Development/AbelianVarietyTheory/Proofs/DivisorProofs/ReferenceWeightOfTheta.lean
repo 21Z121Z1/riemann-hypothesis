@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvdOfMemBadPrimes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LengthUnitSizeBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReferenceExponentPrimeBoundStatement

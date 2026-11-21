@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChowFormDim
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.LeafExcRingPf
 import Mathlib.RingTheory.RegularLocalRing.Defs
 

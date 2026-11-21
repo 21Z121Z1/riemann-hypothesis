@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.StripEntire
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.WittVector.IsPoly

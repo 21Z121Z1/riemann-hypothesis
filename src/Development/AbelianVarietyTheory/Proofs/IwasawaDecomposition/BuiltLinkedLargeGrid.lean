@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GKeyFin
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RowRatW
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricParameterUniformStatement

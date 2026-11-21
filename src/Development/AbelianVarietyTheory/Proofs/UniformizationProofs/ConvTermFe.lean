@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.WCompat
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TranslationUnitMul
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.KurDefs
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.NormEqOfNormSubLt
 import Mathlib.Tactic.Polynomial.Basic

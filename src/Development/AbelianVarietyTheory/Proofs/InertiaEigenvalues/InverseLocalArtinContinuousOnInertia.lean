@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GlobalArtinLocalIdeleInjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaLebUnique
 
 open Formalism.BasicNotions MeasureTheory Filter Topology Matrix

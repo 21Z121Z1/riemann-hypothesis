@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.ConcTop
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassItems

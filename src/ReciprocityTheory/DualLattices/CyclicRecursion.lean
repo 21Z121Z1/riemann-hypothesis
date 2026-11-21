@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.CyclicRecursionStatement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.AffineMonoid.UniqueSums

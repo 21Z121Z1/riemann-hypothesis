@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.LinearAlgebra.BilinearForm.Orthogonal
 import Mathlib.RingTheory.Henselian

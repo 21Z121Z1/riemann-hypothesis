@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MonotoneTwoBlockIndicator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffEqMapDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTameCharactersSeriesIdempotentsTameLabelleStatement

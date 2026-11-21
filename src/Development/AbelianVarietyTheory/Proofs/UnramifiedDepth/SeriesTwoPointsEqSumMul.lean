@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.MvPowerSeriesEvalOfPowMem
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import Mathlib.RingTheory.SimpleRing.Principal

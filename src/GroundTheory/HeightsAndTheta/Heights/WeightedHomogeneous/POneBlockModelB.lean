@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.POneBlockModelA
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThickAverageLoss.PartnersToFactorsAt
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.Polynomial.Basic

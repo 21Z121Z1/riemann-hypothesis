@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFrameDetNeZero
 open GlobalTheory.WholeFlag GlobalTheory.WholeFlag.Glue
 open scoped Matrix

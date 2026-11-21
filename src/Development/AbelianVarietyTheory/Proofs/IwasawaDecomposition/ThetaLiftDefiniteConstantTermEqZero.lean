@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConstantTermHeisOAlongStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefiniteUnitaryCocompact
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKOContinuousAndRatInvariant

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieMetricHermitianBundleStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OrthogonalMetricFlagDegreeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineHeightInvariantScalingStatement

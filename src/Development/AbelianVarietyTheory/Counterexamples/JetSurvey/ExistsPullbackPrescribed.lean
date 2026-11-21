@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubicalSymmetryTransport
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsRigidifiedIso
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsSymmetricIffExistsGen

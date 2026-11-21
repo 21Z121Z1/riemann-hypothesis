@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualStabiliserIndex
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeIndex
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPreChain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoRestrictPushforwardUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusLiftPullback

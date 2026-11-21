@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ComplexRootOfUnityMemRangeOfIsPrimitiveRoot
 import Formalism.LocalToGlobal.HermitianForms.PsiZeroNontrivialCharacter
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PiTensorProduct

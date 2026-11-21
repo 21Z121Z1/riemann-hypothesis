@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FinrankFamOfExpBij
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.NonemptyLinearEquivOfRel

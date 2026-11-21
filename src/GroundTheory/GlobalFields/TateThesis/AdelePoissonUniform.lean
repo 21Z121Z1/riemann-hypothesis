@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.AdelePoisson
 
 namespace GroundTheory.Global

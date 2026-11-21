@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareConstantProportionalRegularStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealMatchingTiedRegularizationConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageFactorNonvanishingScalarsStatement

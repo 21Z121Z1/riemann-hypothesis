@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSubquotientExtTensorRight
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ProperLeftVariablesDomain
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutHBPts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LettersPassPartialBessel

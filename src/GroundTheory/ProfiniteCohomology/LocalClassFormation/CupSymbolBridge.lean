@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CupProducts.Cocycles
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.IntScalars
 set_option maxSynthPendingDepth 1

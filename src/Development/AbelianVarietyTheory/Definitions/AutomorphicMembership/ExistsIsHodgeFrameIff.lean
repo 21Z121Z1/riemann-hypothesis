@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToroidalCompactificationData
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MSmoothOfWeightIffIsCInf
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HodgeGramEqRiemann

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftAlongRealLineBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftPolynomialGrowthBoundStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemisimpleEquivariantProjectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemisimpleAnnihilatorSpanEndomorphismsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypeVectorMatrixCoefficientsStatement

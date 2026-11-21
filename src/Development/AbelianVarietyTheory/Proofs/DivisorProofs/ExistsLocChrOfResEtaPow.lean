@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLiftV
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapLiftEEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLocalNormsOfLiftUFEq

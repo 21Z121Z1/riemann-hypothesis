@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousSingleAt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousTraceMul
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdditiveCharConductorExists

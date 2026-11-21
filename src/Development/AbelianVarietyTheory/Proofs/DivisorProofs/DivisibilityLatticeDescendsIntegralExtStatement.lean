@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisibilityLatticeDescendsIntegralExt
 open GlobalTheory.RingChain GlobalTheory.PerfdLat
 open scoped TensorProduct Pointwise

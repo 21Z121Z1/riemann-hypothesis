@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Topology.Algebra.MvPolynomial

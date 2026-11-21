@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.TraceAlgebra.IsoOfTrace
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.PicardGroup

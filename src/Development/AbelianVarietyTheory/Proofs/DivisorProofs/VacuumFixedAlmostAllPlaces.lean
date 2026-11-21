@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CofinitePlacesInertOrSplitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiUnramifiedAlmostAllPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeAtPlaceIntegralAlmostAllStatement

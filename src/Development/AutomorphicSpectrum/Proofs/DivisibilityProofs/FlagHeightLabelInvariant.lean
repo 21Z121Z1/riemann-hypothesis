@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.ExistsWord
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PBlockRatioAlg
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed

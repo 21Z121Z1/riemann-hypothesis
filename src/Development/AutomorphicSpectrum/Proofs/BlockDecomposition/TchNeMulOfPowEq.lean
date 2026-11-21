@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AinfMapSurjective
 noncomputable section

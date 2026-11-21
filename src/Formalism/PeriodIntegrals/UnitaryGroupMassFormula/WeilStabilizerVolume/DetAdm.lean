@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.DetAdmC
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.NuInvSt
 import Mathlib.MeasureTheory.Integral.RieszMarkovKakutani.Real

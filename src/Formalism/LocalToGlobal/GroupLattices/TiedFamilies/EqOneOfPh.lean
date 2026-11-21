@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.FramesTr
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CastGLSymmApply
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ValUniqOf

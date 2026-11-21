@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FiniteRankZero
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.NotIsTemperedGLDetRepTwo
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.AffineGLForms.GenSpace

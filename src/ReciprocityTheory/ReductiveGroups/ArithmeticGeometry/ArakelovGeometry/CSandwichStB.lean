@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.CSandwichStA
 import Mathlib.Analysis.Matrix.Hermitian
 import ReciprocityTheory.GeometryOfNumbers.SphericalMonomials.SupStMonoNormSqPos

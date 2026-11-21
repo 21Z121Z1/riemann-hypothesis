@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundarySmoothBoundPotentialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpperSemicontinuousLimsupExtStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPshOfLocallyIsPshStatement

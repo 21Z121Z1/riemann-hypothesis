@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.KerPow
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemSpanVariable
 

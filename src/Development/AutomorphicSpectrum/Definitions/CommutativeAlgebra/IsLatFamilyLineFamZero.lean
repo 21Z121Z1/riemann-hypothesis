@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TrivFlagMod
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Henselian

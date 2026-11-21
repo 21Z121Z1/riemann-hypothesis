@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalFunctions
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenRestrictionFunctionsCompatibleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineRestrictionFunctionsNaturalityStatement

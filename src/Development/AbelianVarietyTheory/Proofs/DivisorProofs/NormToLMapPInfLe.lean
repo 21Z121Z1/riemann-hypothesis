@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj
 open NumberField MeasureTheory GlobalTheory.CuspRep GlobalTheory.HCF Topology

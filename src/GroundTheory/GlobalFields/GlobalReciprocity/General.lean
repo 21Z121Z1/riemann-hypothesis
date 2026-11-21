@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.GlobalReciprocity.RangeDiagonalLeKerIdeleSymbol
 
 namespace GroundTheory.Global

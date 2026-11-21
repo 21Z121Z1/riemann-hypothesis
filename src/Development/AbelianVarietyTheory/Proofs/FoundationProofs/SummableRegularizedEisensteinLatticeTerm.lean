@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.PetIPSmulRight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SecondDifferenceInvPowBoundStatement
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.Summable

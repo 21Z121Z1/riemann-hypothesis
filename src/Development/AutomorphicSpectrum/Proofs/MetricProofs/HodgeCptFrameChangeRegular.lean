@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsComponentInChartRegularStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalFrameOfTwistGenerationStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorRatioRegularOfMatrixIdentityStatement

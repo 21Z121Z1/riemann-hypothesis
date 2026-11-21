@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.UncurryLinearCombination
 import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroFirstThenZero
 import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroDoubleMultiplicationPair

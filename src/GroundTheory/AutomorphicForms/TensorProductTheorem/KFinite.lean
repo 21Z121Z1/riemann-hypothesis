@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.CompactRep
 import GroundTheory.AutomorphicForms.TensorProductTheorem.MatrixCoeff
 import Mathlib.RingTheory.SimpleModule.Isotypic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DividedPowersValuationsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClearsIdempotentConductorIffStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClearsIdempotentOfExponentBoundStatement

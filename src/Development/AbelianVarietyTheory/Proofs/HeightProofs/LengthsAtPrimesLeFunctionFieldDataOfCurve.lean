@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.HtXfer
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.RangeMulStep
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.RealisationValuesEqValuedPointOrdersStatement

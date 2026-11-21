@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfFiniteTypeOfComapEqBot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightLeHeightComapFiniteTypeStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoGenResMapSmulHom

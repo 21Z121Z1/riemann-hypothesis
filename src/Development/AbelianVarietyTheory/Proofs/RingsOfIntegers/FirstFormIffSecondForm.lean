@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HarmonicValueSplitOfExtension
 import Development.AbelianVarietyTheory.BlockTheory.GoodPlaces.ThetaValueRamifiedExtension
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2

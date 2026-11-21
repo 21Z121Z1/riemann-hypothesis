@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialSupportHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalOrderBoundaryFormEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedUniformisationPolarisedTripleStatement

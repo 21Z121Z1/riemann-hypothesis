@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.MeasureTheory.Integral.BoundedContinuousFunction
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.WeightedL1OfL2

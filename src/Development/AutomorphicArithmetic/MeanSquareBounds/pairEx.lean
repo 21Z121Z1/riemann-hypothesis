@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.PairGood
 import Development.AutomorphicArithmetic.MeanSquareBounds.PairExists
 import Development.AutomorphicArithmetic.MeanSquareBounds.Kappa4Loglog

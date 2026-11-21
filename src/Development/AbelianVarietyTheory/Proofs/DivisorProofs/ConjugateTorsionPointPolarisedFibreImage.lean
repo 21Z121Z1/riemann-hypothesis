@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackBaseChangeWithSquareStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisedAbelianPartFibreConjugateIsoMumfordStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBase

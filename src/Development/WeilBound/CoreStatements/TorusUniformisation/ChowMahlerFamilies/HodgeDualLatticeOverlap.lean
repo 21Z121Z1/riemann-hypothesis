@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
 import Mathlib.RingTheory.PiTensorProduct
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle

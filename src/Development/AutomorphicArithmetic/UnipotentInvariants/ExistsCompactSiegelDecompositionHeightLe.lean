@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GJGlobalLattice
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ArchimedeanCompact.InfEmbGrpEq
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.ThetaBounds.UnfoldedThetaIntegralConvergesSimilitudeOne

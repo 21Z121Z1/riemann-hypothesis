@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

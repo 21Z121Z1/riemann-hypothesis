@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith
 import Formalism.RankGapBounds.RankGapProofs.WeightedMeanData
 

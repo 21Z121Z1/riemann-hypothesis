@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FDecompR
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.ExistsCovByRelJacD
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FRedTimesZ

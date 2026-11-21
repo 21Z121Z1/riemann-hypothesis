@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDdcClosedFormZero
 open Set Matrix MeasureTheory
 open GlobalTheory.HermFrame

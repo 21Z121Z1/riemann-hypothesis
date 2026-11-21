@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.XiStd
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntIffUpMemStdHom
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EventuallyIntIn

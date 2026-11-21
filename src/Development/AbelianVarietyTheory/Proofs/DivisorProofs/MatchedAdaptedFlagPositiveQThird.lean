@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameDualGram
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneComplementCartanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsoPlaneEisensteinStrip

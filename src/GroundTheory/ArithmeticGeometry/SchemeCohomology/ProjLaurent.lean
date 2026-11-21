@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjSpace
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwistAway
 set_option maxSynthPendingDepth 1

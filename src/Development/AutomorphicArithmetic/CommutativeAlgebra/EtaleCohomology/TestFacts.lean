@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.ZeroPull
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.SplitRules
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.GaloisTwistIdentitySection

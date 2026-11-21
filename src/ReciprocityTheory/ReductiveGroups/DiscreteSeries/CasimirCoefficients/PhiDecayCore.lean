@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.DecPos
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.DecSum
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.ToMKMulInv

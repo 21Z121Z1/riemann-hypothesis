@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetsMemSubalgebraOfFiniteTypeAlgebra
 open Polynomial
 set_option maxHeartbeats 1000000 in

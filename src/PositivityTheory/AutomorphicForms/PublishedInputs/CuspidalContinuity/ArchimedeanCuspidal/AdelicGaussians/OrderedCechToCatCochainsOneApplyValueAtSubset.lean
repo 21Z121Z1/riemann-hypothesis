@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.ExistsIntOfMemIntegralFiniteAdeles
 import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableLatticeWeightThreeStatement

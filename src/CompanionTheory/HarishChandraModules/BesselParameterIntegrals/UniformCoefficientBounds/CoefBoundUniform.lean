@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.IntegralMemOfIsClosed
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 

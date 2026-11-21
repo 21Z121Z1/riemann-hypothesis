@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MulSelfEqOneIffOfLinearOrderedCommGroupWithZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittFreeTuplesFin

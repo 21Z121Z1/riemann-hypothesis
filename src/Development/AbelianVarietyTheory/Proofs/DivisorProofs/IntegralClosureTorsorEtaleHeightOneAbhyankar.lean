@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightOnePrimeOverConstantIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightOneContractionOfEtalePrime

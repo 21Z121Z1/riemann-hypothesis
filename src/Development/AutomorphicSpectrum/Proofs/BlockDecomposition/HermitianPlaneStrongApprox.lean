@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PlaneSupports.PlaneSupp
 import Mathlib.Algebra.Quaternion
 import Mathlib.Topology.Connected.Separation

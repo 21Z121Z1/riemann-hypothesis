@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIntegralSmoothAlongRealLinesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIntegralPolynomialGrowthStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.ThetaValC
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TorusAtPf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSubgroupIndexTwo
 import Mathlib.Algebra.QuadraticAlgebra.Basic
 import Mathlib.RingTheory.PicardGroup

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StDiagRatioBasis
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StYYRatioBasis
 set_option maxSynthPendingDepth 1

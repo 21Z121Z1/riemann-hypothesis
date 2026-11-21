@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.BalancedHermitianSpace
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralIdempotentPropertiesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SquarefreeDimensionFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MackeyFormulaAllStatement

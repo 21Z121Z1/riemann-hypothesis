@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 open CategoryTheory Limits AlgebraicGeometry NumberField IsDedekindDomain

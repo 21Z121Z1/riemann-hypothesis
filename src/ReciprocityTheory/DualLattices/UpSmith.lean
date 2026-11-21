@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.CotangentSurjective
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.ENatToNat

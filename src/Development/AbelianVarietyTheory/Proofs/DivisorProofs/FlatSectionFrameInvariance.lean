@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExOfFlatWtSome
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedSectionExponentShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightInvariantGLOfUpperTriangularRightInvariantStatement

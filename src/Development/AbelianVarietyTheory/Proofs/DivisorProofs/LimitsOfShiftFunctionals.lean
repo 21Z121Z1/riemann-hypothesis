@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftFunctionalPowerSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClassDegreeOneStatement
 import Mathlib.Algebra.Order.Ring.Star

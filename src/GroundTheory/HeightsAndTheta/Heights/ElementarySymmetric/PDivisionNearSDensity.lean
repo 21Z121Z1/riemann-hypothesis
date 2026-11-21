@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PDivisionNearSChart
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PDivisionNearSLocal
 set_option maxSynthPendingDepth 1

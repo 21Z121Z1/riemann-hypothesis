@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TiltUntiltAddEstimateLeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIndependentModPrimeOfPowLeCardStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeparatedRootsAdditivePolyStatement

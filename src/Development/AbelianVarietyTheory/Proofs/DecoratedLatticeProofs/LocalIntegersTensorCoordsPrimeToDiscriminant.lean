@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SigV
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EqIdOfIsUnramifiedAt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat

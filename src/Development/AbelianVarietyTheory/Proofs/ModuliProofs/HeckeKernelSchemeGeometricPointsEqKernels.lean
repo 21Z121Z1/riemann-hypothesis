@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsNsmulOfDvd
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsClopenLocusTorsionSectionsHeckeKernelStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EtSetOfLists

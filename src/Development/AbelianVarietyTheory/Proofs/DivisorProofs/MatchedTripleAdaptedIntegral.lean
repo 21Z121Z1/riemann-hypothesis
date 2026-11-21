@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleAdaptedScalarStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleAdaptedFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMultilinearFactorizationStatement

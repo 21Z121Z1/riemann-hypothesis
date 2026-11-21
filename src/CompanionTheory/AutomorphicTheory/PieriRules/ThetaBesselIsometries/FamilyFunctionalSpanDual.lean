@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselSettingUniformConstantStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqBigCellNormSqStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheaf
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsQuasicoherentEigenQuot
 

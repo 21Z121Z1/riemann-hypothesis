@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFlagBasisAtStalkStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFrameSpansGenericStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelBaseChangeStatement

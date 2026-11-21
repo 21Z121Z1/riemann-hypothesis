@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.TnIdem
 import Mathlib.Algebra.Module.StablyFree.Basic
 

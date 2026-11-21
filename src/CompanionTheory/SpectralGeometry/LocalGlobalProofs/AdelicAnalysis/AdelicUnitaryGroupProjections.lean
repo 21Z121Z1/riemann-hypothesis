@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicTupleProjectionsStatement
 import Mathlib.Algebra.Order.Ring.Star
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology

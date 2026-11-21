@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
 import Development.AutomorphicArithmetic.MeanSquareBounds.IndUnique
 import Development.AutomorphicArithmetic.MeanSquareBounds.TwistPrim

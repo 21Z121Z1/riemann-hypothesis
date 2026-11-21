@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiAMemRange
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntUOfOneOffOrdA
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeTuplePointDetNormOneOrderEqNegLengthStatement

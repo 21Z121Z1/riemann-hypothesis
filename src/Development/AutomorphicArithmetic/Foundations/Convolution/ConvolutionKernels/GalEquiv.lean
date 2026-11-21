@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.AdNormOne
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.AutOrder
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.CuspDecayHeights.HeightLe

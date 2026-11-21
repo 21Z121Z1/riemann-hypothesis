@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IsCplAtSelf
 import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
 import Mathlib.RingTheory.AdicCompletion.Noetherian

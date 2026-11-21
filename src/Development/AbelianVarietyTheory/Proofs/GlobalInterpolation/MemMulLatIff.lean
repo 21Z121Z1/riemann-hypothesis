@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.IndexExponentDegree
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsNatMulIntegral
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RelIndexEqProdLocP

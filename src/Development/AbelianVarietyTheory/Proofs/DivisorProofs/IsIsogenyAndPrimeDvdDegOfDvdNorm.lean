@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyEqMinpolyPow
 
 open CategoryTheory GlobalTheory.AV GlobalTheory.AV.AbVar NumberField Polynomial

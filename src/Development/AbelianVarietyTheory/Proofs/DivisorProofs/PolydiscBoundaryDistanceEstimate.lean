@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalSectionSmoothPolydiscStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothBoundedGradientOnHalfBallStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogNormSqGradientIdentityStatement

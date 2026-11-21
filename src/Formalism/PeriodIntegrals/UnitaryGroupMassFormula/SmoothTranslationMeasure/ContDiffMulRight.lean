@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.PhMeasCore
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.RingTheory.SimpleRing.Principal

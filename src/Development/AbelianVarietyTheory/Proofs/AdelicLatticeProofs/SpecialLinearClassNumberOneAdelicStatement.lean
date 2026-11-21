@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SpecialLinearClassNumberOneAdelic
 open Matrix GlobalTheory.ClassFin
 open scoped Kronecker ComplexOrder TensorProduct

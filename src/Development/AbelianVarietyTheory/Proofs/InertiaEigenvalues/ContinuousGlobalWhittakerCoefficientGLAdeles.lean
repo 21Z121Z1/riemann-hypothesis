@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
 open NumberField IsDedekindDomain MeasureTheory GlobalTheory.CuspRep
 open scoped ENNReal ComplexConjugate nonZeroDivisors

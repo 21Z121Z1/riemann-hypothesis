@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticesComplete
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClsDivPullEqVPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackPreservesLineBundleFlag

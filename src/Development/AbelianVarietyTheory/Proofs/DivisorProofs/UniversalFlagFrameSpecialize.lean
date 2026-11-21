@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StalkStepMono
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPointInSomeCell
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMulApplyEqZeroOfMinor

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZModTorsorIff
 import Mathlib.Algebra.Category.Ring.FilteredColimits
 open CategoryTheory Limits TensorProduct

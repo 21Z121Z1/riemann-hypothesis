@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinPartMulIncAMem
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemOrth
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSplit

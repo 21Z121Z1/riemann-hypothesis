@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ChSumSubCMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SeriesEqZeroOfValsTendstoZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormPowSubPowLtOneOfUltra

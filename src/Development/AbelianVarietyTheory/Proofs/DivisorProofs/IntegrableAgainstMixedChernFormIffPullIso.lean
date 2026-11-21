@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormDensityPullbackMatchingCharts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClosedNullSetCharts
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory

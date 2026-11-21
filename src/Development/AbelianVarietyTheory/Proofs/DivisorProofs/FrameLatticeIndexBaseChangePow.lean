@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeSqSubLeSlopeSqSpan
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorusExt
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange

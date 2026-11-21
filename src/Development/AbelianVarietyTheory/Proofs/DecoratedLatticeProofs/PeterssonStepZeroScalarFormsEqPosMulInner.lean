@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitOfUnitary
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegralDefiniteQuotientEqClassSumStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousFinGL

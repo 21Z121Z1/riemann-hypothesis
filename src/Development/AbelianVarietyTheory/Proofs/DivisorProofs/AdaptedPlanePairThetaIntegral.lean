@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPairOfPairStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPairConverseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPlaneLocalStatement

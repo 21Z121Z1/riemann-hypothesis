@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFunctionalIntegralCommStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerRepSchwartzPolynomialBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerOrthogonalityRelationStatement

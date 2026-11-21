@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CohomologyKernelModPrimePowerKilledByFixedPowStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoboundaryInertiaIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemIntegersOfNormLeOneStatement

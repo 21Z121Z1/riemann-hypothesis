@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.IsPolarisationOfRelAmple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NearIsIsoOfIsProperOfFinitePresentation
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfFibres

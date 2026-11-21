@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadsZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DeterminantSectionRule
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompactificationOpenOfClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TruePack
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MainTheoremFromPublishedResultsStatement
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.MiS GlobalTheory.Fam GlobalTheory.MiTop

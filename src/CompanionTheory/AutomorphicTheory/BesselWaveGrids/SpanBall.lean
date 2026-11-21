@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Letter
 import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.Assemble
 

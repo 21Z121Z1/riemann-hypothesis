@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.StatementA
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 

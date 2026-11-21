@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsAbLift
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyFamilyUnifIffUnifAt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 
 namespace GlobalTheory.ProjectiveRetraction

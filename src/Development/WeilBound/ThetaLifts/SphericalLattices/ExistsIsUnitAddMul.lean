@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SphericalLattices.LatDefs
 import Mathlib.NumberTheory.LocalField.Basic
 import Mathlib.RingTheory.Etale.Weakly

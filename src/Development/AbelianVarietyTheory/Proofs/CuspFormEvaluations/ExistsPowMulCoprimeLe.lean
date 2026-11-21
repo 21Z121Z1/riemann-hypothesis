@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
 import Mathlib.RingTheory.RegularLocalRing.Defs
 

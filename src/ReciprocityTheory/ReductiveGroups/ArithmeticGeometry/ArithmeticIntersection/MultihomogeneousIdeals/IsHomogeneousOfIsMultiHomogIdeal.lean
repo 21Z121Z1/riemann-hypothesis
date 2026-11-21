@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Data.Finsupp.Interval
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.IsIntersectionFamily
 

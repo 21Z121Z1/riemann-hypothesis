@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaNormCommutation.IsTransl
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcDefs
 

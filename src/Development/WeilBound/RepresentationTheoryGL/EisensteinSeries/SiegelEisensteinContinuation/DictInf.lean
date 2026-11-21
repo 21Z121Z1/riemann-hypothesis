@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.IsEpCont
 import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
 import GroundTheory.IdeleRoots.TorusPowers.HeckeTensor

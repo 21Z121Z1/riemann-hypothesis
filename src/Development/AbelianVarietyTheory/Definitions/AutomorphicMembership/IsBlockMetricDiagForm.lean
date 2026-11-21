@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecondCountableTopologyOfIsProjOver
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorsUniversalBasis

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagRigid
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagTMemIwGL
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriOrbitalSupport

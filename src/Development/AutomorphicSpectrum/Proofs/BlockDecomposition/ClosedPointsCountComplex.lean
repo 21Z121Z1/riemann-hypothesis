@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyAndIsPreconnected
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemRiemannRochSpaceIffRegularAtEverywhere
 open CategoryTheory AlgebraicGeometry TopologicalSpace MeasureTheory

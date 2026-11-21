@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.UniformTorsionIsomorphism
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.TateUniformizationInput
 import Mathlib.RingTheory.AdicCompletion.Topology

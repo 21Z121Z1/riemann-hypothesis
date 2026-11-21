@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PhaseApply
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedModelParsevalThetaInnerProductStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws

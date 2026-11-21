@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticSpaceNonempty
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentArithVarietyFirstStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphic

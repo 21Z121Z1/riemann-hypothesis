@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 
 open Module NumberField

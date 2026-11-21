@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.ChartHypothesisOfCharacters
 import Formalism.LocalToGlobal.CharacterGerms.CharacteristicFromRanks
 

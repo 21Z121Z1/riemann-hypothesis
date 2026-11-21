@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.JInvariant
 import Mathlib.AlgebraicGeometry.EllipticCurve.IsomOfJ
 import Mathlib.Analysis.Complex.OpenMapping

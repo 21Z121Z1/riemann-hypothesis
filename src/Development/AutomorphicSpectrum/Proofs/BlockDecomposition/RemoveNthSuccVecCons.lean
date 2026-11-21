@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.KugaAbsoluteValues.KSumApply
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ENatToNat

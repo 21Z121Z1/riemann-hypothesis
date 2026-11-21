@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.BlockPolyLevelMove
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.BlockProductLattices
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIndexIdeal

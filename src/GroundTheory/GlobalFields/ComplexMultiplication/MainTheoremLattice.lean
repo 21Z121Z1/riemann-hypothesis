@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimes
 import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismPoints
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.TateCharpoly

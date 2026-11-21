@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NefPolarizationStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptBirationalArithVarStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTensorPowerDegreeStatement

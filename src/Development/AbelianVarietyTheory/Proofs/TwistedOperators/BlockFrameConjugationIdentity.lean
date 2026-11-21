@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.IsMultMapUnivZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.InstCMHostS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodFixedVectorOfTypeOccurringInRows

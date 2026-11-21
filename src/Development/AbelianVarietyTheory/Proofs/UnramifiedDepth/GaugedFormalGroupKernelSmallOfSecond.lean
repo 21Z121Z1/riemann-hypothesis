@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.CharacteristicFromRanks
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsSaturatedGoodVectorsSmallCorankStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GoodCurvesPairingMemMaxIdealStatement

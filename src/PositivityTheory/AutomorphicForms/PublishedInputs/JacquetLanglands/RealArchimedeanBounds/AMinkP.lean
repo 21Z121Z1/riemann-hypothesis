@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.ATrans
 
 open NumberField MeasureTheory Module Finset

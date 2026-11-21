@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArithmeticVarietyDimZeroFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitLogarithmSpanningStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegralLogUnitVanishesStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryTorusElementExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameTorusLatticeActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairFunctionalNonvanishingStatement

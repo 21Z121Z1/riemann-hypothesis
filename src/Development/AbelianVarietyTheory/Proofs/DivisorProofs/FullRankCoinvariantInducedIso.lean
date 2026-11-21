@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankZetaSurjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankZetaKernelStatement
 

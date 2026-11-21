@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocallyFreeTestPointMembershipStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocFreeMapMkQIff
 

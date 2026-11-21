@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovol
 import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic

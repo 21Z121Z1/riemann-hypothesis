@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDescentMapNonzeroOfSmallFieldFormStatement
 import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant

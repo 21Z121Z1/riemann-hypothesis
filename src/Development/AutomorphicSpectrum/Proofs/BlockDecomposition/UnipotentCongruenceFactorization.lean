@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulMemBall
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicCellStructureData
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCIndValue

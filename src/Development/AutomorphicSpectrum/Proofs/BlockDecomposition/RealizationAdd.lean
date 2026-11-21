@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.OneSTr
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.WittVector.IsPoly

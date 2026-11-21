@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedIntegralBoundScaledPotentials
 open ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M
 set_option maxHeartbeats 1000000 in

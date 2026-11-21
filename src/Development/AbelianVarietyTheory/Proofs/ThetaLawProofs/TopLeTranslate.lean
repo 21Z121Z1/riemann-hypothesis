@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SignSwap
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.IsSquareDeterminantComparison
 import Mathlib.AlgebraicGeometry.Sites.Fpqc

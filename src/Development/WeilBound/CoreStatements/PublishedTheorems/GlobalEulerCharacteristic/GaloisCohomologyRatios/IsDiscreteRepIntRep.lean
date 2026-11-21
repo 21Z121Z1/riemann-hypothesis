@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Scalars
 
 open CategoryTheory GroundTheory.ProfCoh

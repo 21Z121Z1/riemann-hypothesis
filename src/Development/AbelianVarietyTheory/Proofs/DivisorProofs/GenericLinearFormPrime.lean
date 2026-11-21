@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsWeaklyRegularMapCAppendMapLinForm
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Etale.Weakly

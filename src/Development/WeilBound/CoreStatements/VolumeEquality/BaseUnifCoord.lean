@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifDefsB
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues

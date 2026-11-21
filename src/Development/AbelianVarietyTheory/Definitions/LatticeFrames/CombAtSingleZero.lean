@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValLast
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValueDoubleExact
 

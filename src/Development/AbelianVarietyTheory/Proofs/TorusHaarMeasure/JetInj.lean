@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.UpperBounds.CountAt
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.LintegralNormLtTop
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.Imports

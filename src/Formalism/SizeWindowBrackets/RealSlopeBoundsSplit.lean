@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Data.Real.Basic
 import Mathlib.Algebra.Order.BigOperators.Ring.Finset
 

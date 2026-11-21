@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.Tactic.ENatToNat

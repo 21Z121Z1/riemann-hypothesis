@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.CocharacterLieDivisors.MeetsOpenCosets
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FiniteDimensionalWdSpace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

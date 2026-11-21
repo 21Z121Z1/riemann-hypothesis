@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
 open GlobalTheory.CompanionTheory.Ar.Num
 

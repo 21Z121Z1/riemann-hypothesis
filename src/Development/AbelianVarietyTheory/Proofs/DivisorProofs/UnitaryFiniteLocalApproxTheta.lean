@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumFixedAlmostAllPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyMemMaximalCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairIntegralCompactInvariantStatement

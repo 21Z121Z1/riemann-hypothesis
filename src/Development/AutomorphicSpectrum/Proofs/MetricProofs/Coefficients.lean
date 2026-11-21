@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealisationHeightIndependenceStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GapEqWeightSubNextStatement

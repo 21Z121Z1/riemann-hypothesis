@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FrobOrderSpec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvalRepsSurjective
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.DuCount

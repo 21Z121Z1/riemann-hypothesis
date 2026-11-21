@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.IntegralAlmostAllPlaces
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSquareOfValuedSubOneLt
 import Mathlib.RingTheory.Henselian

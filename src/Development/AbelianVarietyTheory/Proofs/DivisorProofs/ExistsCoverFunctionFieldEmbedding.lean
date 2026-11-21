@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KrullDimOneOfFiniteGeneric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericPointMorphismFactorizationStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf

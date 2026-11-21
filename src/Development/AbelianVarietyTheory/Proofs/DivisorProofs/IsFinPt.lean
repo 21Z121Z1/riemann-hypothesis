@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsSplitOfIsInertAt
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs

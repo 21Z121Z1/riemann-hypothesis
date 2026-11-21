@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsEqTransposeMulMapOfIdempotent
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Star.Real

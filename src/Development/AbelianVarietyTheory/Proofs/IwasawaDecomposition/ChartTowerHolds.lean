@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartEmbeddingHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartRootsHoldsStatement
 

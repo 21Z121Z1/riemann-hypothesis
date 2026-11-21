@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.AdelicScalarSectionLift
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HookProductDictionary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCentralIdempotentOfGoodSeriesIdempotent

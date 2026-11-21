@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernCurvatureLowerTriangularPositiveDiagonalStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
 

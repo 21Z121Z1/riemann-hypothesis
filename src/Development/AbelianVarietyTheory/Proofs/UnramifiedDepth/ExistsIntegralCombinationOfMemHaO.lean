@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralBasisLinearCoordinates
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MemHHaOfCoeffFunctional
 open scoped BigOperators

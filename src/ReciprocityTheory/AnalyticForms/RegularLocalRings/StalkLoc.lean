@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLocA
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLocB

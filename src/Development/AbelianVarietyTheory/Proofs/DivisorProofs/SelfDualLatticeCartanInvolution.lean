@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInverseDifferentLocalUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualLatticeLocalisedByDifferentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualLatticeDetNeZeroStatement

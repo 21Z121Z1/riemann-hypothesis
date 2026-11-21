@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsStokesGeo
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPtsBddConv
 set_option maxSynthPendingDepth 1

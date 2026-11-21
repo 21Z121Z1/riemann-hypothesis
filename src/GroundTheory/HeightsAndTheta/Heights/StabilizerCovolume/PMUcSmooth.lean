@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StMUcSmooth
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PNbarSmooth
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorSmooth

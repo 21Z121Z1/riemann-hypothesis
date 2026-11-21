@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupStalkNoetherianNormalFractionRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LbIsoPullComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeEquivOfSameCentre

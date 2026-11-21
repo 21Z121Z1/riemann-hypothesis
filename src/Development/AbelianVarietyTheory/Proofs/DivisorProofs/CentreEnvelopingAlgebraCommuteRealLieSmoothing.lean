@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CapCommuteRtInfGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FderivIntegralMulKernelApplyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSecond
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsScalarLevelCoverAnalyticFibreStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties

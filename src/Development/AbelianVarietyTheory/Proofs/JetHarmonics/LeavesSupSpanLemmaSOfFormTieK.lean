@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SupLatticeIsLatInStable
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaSpansIsLatIn
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ScaledSpanClauses

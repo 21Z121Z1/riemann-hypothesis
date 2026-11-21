@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPowSmulMemRangeOfSurjectiveBaseChange
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
 

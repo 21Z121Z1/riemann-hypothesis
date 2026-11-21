@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.SelmerOrderCounts.TwoLe
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.NumberField.ClassNumber

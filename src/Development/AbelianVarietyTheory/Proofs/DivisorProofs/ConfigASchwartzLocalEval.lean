@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeASchwartzTripleIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeASchwartzTripleSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeASchwartzTripleThirdStatement

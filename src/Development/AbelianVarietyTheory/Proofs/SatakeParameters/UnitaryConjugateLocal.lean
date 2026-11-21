@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LandherrCSA
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.WittVector.IsPoly

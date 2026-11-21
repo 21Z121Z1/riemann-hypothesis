@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoissonIntegralSmoothOffAxesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PluriharmonicLogGrowthExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviFormZeroExtensionStatement

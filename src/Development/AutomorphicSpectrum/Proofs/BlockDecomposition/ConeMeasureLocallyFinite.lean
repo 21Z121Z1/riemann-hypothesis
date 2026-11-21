@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeMeas
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceSingleMulSingle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeIsOpenStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CongrFunHeq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassSumEq
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFormalDegreeEqOfSchurOrthogonalityStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselInnerIntegralEqFormStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableBesselCoefficientSmulEquivariantStatement

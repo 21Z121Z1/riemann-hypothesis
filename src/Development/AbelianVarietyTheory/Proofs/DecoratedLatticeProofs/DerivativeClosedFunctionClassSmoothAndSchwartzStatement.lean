@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DerivativeClosedFunctionClassSmoothAndSchwartz
 open MeasureTheory Filter Topology
 open scoped ContDiff ComplexConjugate ENNReal

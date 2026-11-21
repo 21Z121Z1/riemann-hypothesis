@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.IsConst
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.ExistsFunctionalNeZeroProjective
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.RootGlue

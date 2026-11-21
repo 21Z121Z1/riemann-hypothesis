@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreCosineExplicitFormula
 open MeasureTheory
 open scoped ComplexOrder ENNReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalDegree
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesCech
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.CechFamily

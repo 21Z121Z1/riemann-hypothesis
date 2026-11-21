@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.QuotientVanishing.LocalQuotientIntegrals.ClassVanish
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiscreteTopologyProdMap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsQuotNormaliserIndicator

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DoubleCosetMeasures.StatementV
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.NumberTheory.LocalField.Basic

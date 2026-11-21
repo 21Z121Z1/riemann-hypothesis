@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.NarrowAsc
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.NarrowSpeh
 

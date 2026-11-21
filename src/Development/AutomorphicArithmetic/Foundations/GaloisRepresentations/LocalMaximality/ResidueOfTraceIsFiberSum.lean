@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.DualForm
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TcoMem
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.LiftFactorization

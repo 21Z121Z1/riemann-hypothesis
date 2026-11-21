@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.FinrankRangePowConvex
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CommuteOfMemAdjoin

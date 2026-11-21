@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivSplitCentre
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.NotIsTemperedGLDetRepTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist

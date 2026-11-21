@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisCohomology.LocalTateDualityK
 import GroundTheory.ProfiniteCohomology.CupProducts
 import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply

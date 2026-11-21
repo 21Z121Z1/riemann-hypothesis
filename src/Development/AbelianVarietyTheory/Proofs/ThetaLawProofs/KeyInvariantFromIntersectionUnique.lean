@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.TopLeTranslate
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KosBlockMulKosD
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsSquareDetComparisonEqMulDetPowOfBasisChange

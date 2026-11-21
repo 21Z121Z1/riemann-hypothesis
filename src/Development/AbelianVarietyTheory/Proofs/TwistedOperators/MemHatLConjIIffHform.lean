@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HformZeroRight
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.FirstCoordinateAdmissible
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FinTensMemLatO

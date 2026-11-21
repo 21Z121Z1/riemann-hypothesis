@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PtRescaleGood
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.NsmulCoprimeBijectiveCurves

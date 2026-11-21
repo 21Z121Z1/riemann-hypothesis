@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtWords
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtShl
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.JuxtSwap

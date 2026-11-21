@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericDegreePullbackFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionPowScales
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

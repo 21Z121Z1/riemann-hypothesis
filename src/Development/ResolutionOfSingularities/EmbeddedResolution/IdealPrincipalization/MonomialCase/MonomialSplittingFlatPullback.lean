@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData
 import Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.MonomialCase.MonomialSplitting
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth

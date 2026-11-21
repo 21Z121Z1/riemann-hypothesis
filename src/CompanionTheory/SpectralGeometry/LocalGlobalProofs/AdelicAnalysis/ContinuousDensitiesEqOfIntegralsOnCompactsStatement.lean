@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompacts
 open MeasureTheory Topology Matrix
 open scoped ENNReal NNReal

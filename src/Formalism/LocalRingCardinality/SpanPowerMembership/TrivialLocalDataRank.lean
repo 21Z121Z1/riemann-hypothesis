@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.TrivialColumnsRamifiedTop
 import Formalism.LocalRingCardinality.SpanPowerMembership.GPlacesExampleNatAct
 

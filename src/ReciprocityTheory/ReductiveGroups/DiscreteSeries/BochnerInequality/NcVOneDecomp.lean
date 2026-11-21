@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.CrossOpEigGap
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Numerics
 

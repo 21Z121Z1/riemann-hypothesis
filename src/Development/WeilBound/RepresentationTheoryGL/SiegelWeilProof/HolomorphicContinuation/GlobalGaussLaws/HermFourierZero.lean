@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OfHermEBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart

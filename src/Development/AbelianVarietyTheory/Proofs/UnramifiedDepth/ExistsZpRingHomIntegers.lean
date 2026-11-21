@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Clauses
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Henselian

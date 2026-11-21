@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
 import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldC
 

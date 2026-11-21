@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.Complementary
 import GroundTheory.AutomorphicForms.IwahoriFactorization
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIrreducibleSecondFactorOfIrreducibleProduct

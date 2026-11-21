@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
 import ReciprocityTheory.DualLattices.TensorSpan
 import Mathlib.RingTheory.Etale.Weakly

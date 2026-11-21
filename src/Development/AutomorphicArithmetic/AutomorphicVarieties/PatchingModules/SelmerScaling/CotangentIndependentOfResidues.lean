@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SelmerScaling.Ired
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoEvLow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoSurj

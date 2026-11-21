@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BaseLatticeSelfDualOfLocalEq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSDLatLatK
 

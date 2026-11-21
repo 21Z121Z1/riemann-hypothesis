@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PaddedWittNormSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOfUnitCoord
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsMulOfApprox

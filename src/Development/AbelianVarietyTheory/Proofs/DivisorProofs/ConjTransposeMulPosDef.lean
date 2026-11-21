@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Mathlib.LinearAlgebra.Matrix.PosDef
 import Mathlib.NumberTheory.NumberField.CMField

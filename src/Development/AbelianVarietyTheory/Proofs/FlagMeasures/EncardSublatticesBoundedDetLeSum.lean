@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsSquareIdxNOfCovBy
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsSquareCardOfInvolution

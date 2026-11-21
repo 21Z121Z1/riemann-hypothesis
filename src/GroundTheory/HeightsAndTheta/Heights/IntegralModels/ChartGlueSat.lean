@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle
 import Mathlib.Topology.Sheaves.Presheaf
 set_option maxSynthPendingDepth 1

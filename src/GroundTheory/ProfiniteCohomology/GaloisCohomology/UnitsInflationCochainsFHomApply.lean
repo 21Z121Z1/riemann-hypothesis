@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ContinuousCochains
 import GroundTheory.ProfiniteCohomology.GaloisModules.Discrete
 import Mathlib.CategoryTheory.Monoidal.Mon

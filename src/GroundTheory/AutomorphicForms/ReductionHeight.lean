@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicGLn
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms
 import Mathlib.Tactic.Monotonicity.Lemmas

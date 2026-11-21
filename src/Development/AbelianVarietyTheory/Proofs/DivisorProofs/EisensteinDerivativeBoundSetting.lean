@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreConcl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyUniformModerateGrowth
 import Mathlib.Analysis.Complex.AbsMax

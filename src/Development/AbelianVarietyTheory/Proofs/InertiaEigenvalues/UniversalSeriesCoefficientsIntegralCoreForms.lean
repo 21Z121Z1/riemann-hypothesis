@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntFormDescentBelow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContainsRayFieldOfRayIn

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsZarhinData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsZarhinSymplecticTransferStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZarhinBundleRigidifiedSymmetricStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsPresOfRealD
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LatticeMembershipByPowerSeries
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GmultTransport

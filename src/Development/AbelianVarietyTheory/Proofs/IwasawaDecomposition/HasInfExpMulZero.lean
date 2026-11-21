@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsStdIsVacVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EquivariantOfWave
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TendstoInfMulProd

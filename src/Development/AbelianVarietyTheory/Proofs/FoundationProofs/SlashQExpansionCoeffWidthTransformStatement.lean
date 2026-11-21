@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlashQExpansionCoeffWidthTransform
 open UpperHalfPlane Filter GlobalTheory.OddFrame
 open ModularForm (E₄ E₆)

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataLevel
 import Mathlib.NumberTheory.NumberField.AdeleRing
 import Mathlib.RingTheory.Etale.Field

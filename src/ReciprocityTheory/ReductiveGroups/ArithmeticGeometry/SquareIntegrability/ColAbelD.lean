@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TranslationZeroModeLift
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Real.Pi.Bounds

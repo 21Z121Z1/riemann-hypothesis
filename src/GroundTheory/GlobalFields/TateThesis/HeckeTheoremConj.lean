@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.EulerFactors
 
 open NumberField InfinitePlace IsDedekindDomain MeasureTheory Complex Topology Filter Set

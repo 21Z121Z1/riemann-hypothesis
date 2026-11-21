@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.BrSpanG
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.BrBase
 import Mathlib.Data.Finset.Slice

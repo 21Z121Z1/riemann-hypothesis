@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsChartOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationOpenImmersionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDivisorPullback

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStable
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.InfSplit
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.BumpEx

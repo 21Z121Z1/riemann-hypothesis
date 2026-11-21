@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerRightTranslation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerNonvanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerVanishingAtZero

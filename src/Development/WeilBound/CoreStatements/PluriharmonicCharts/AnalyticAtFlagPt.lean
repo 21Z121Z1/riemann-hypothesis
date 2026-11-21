@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.ExistsHoloOnOfGerm
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameLUMinorValue
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockLUFactorizationStatement

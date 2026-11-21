@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.YonedaAddNaturalityLeft
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsGrothendieckAbelianPresheaf
 import Mathlib.CategoryTheory.Monoidal.Braided.Reflection

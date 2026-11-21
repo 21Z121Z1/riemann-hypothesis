@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelMapCompatibility
 
 set_option autoImplicit false

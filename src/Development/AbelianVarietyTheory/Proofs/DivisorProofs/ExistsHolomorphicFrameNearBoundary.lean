@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramChangeBlockDiagonalFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicFrameInChartTargetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicFrameCurvatureLimitStatement

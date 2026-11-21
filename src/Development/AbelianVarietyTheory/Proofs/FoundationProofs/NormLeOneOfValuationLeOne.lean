@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PairingDivisors.StatementH
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne

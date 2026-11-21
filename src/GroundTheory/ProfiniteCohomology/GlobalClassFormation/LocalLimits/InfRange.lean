@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.ApplyCompletionEmbeddingOfLocalDecompHomEqOne
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.InfDefs
 set_option maxSynthPendingDepth 1

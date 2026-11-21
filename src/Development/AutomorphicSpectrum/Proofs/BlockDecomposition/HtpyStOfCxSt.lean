@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
 import Mathlib.AlgebraicTopology.SimplexCategory.Basic
 import Std.Tactic.BVDecide.Normalize.BitVec

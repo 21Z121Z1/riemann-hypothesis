@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.KummerFinite
 import Mathlib.FieldTheory.KummerExtension
 

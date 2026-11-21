@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFramePointStalk
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSectionIntegralFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwSecOfConst

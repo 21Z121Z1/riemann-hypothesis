@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightTranslateIsometry
 
 open scoped Classical InnerProductSpace ComplexConjugate

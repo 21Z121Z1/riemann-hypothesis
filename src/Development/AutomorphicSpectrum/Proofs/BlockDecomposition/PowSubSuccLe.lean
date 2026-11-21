@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalIdeal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Support
 import Mathlib.AlgebraicGeometry.Morphisms.Proper

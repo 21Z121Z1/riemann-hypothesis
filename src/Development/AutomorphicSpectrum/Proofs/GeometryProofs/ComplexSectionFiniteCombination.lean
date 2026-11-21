@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsResidueEval
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LinIndepDescent
 

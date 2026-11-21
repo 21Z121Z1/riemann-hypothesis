@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DetAddOnesField
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PosPartUnitaryMul
 open scoped InnerProductSpace

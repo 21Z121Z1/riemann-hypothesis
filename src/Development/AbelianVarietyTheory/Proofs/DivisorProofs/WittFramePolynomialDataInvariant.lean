@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameThetaIntegralBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameThetaIntegralDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittRankLeSignatureSumStatement

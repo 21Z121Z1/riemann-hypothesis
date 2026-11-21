@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
 import Mathlib.Order.Interval.Finset.Box
 set_option maxSynthPendingDepth 1

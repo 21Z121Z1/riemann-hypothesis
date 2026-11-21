@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WeightedFejerPositivity
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology
 set_option maxHeartbeats 1000000 in

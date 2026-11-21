@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutLat
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.HermitianFormRealCoordinateMatrixHermitianDetNeZ
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianPoincareSeriesThetaVacuum

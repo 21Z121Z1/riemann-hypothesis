@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.StablyFree.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.AlgFiltSt
 import Mathlib.RingTheory.GradedAlgebra.Radical
 import Mathlib.Tactic.Polynomial.Basic

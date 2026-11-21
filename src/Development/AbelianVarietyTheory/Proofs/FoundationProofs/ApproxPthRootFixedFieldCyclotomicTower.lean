@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrobeniusSurjectiveModPrimeCyclotomicKummerTowerStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemAdjoinDivOfFixedStatement

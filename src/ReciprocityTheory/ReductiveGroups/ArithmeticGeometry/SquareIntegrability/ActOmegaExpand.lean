@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.ExistsMinNorm
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

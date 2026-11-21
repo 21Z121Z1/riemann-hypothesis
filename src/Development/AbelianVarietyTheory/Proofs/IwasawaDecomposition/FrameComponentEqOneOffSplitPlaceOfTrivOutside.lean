@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatSelfDualOfUnimod

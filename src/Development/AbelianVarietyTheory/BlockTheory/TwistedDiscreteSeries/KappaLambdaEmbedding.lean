@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 
 noncomputable section

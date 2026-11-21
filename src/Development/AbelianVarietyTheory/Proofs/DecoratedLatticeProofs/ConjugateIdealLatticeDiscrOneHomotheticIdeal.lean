@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UniformizationHolds
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormalizedAreaClassInvariant
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConjugateCurveDatumLatticeIsCurveLattice

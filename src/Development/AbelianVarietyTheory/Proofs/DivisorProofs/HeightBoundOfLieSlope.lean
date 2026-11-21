@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieSlopePointBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatHeightStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointBoundStatementStatement

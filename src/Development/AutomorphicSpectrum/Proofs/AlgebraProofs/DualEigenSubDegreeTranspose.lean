@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.EigFrob
 
 open GlobalTheory.CompanionTheory.Ar.Crv

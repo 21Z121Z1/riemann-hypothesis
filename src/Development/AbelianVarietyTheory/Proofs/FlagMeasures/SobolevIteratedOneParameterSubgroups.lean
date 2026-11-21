@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SqIntervalIntegralLeMulIntervalIntegralSq
 import Mathlib.Topology.Separation.CompletelyRegular
 import Mathlib.Topology.Sheaves.Presheaf

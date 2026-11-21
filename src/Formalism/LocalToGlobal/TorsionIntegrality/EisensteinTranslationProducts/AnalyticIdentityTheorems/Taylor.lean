@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EndoZInstance
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 

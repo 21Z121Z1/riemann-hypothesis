@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.IndexExponentDegree
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.MovementLaw
 

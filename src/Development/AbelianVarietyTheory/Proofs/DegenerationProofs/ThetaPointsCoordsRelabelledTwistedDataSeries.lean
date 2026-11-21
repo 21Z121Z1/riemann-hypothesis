@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.WithISelf
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsCoordPtFibre
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomTransport

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HTChartExistsHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyPrimeTorsionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelActionSubalgebraStatement

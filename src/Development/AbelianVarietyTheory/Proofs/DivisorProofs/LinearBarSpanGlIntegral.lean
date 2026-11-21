@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalSchwartzMembershipCriterion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearBarModelUnitaryAction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterSmoothUnitary

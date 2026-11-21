@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFormsMulClosed
 import ReciprocityTheory.SemistableReduction.ShareDetA
 open Set Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.MaIntEmpty
 
 namespace ReciprocityTheory.AnForm.M

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsLocRingIntClosure
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StLocRingChartLoc
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StIntClosureLocFinite

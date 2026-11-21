@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.GoodCharIsLocallyConstant
 
 noncomputable section

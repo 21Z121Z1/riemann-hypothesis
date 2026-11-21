@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateSymplecticCharacterExists
 open NumberField IsDedekindDomain GlobalTheory.CuspRep
 set_option maxHeartbeats 1000000 in

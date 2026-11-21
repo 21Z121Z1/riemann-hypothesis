@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.CompositeFormulaOfDensities
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HsInnerAddSmulRight
 import Mathlib.CategoryTheory.Countable

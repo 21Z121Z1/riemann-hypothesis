@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SigmaFiniteOfRealSmul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LinearIndependentSkew
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ValNorm
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ValUFD
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HNormA

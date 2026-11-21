@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubNRatioTwist
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ComparisonTorusInvariant
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CubWeilOfInjective

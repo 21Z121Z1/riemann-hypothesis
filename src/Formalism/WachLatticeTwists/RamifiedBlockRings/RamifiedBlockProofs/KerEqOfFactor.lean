@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.RamifiedBlockRings.LemmaFiveThreeAnyResidueField
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
 import Mathlib.RingTheory.PicardGroup

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChart
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsOrd
 set_option maxSynthPendingDepth 1

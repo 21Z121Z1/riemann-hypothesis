@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FourierCoeffMulCharConvAndHasDerivAt
 import Mathlib.Analysis.CStarAlgebra.ContinuousMap
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj
 import Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLiftMemLiftSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSBZero

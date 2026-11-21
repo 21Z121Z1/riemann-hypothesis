@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjEmbeddingRt
 import Mathlib.Algebra.AffineMonoid.Basic
 

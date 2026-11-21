@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeckeMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeSubFiniteFree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAbelianSchemeQuotientByFiniteTranslations

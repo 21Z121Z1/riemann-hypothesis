@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.IsMultiHomogOfIsChowForm
 import Mathlib.Order.CompletePartialOrder
 set_option maxSynthPendingDepth 1

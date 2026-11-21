@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.HomApplyHomApplyEqOfCompEq
 import Mathlib.Algebra.Homology.HomologicalComplexAbelian
 import Mathlib.Tactic.ENatToNat

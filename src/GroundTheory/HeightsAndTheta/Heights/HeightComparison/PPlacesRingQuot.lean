@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightPlacesRingQuot
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Ring.IsFormallyReal

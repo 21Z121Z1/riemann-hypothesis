@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffDeRhamPlusActionMulOne
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.InclLEisensteinPowPhiInvEqSingle
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.CrisComparisonTransferBasisCoordinates

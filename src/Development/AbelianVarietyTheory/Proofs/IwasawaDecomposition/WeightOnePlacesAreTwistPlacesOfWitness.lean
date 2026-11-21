@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.IsLinked
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealPins3RealTOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ForcedContentEqClosedContentNumericalDatum

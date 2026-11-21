@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.WeilBound.ThetaLifts.ConeHypotheses.IsLocallyConstantFinprodEvalV
 import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts

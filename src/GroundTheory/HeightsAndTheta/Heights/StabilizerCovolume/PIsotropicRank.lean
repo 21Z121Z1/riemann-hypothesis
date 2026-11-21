@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StIsotropicRank
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ShortIsotropic
 import Mathlib.RingTheory.PicardGroup

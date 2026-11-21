@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFiniteLocalApproxTheta
 
 open scoped TensorProduct NNReal Matrix

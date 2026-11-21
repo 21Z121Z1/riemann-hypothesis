@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeftMulMatrixTransfer
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Univ

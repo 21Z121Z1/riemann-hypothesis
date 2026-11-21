@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
 import Development.AbelianVarietyTheory.Definitions.Foundations.AbsCharNotUnitary
 import Mathlib.NumberTheory.Padics.HeightOneSpectrum

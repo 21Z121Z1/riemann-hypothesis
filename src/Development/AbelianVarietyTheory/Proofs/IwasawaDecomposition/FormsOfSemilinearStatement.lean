@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsOfSemilinear
 open Module NumberField Formalism.L2.DIV Formalism.DivisionValues
 open scoped Matrix

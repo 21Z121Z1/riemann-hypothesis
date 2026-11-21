@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.EpsMulSub
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.ArtTangent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdemKernel

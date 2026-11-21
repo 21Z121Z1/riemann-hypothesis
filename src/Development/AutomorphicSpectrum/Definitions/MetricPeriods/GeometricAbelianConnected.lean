@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 
 noncomputable section

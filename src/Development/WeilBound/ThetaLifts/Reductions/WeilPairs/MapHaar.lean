@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
 import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 open scoped TensorProduct Matrix

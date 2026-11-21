@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueTorusCompat
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsNilpotentOfRd
 

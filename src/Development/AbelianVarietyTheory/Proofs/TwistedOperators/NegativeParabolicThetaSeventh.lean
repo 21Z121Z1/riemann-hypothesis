@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeParabolicThetaSixth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunOfMemCusp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftUniformFiniteBoundStatement

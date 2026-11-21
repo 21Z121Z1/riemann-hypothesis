@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataTheta
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible GlobalTheory.FockAlg MvPolynomial

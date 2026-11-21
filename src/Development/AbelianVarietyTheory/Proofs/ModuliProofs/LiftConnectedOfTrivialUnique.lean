@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.LocalTrivialization.ConnectedSpaceTorus
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.WeightBundle
 import Development.AbelianVarietyTheory.Definitions.Uniformization.NotExistsEvenTwistSymOne

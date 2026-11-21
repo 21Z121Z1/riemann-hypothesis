@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootLinesWeightBoundOfFreeStatement
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 

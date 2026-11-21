@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusOrbits.HostThickExists
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
 import Mathlib.LinearAlgebra.Charpoly.Basic

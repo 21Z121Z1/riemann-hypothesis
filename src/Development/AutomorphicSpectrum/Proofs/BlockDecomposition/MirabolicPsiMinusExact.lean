@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicFiltrationExhaustiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetExactSmoothStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SphericalZero
 open scoped ComplexConjugate Matrix NNReal

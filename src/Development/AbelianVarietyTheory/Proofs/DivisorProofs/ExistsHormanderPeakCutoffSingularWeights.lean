@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramChartSubFormEntryLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartBallWeightPotentialDensityBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpperTriangularNearUnitDiagonalOfTwistedGramNearStatement

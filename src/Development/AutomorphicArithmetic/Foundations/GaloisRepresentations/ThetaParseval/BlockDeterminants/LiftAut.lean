@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.FrameEstimates.CuspRapid
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.TendstoIndMul
 import Development.AutomorphicArithmetic.AdelicQuotients.WeilRepresentationSmoothVectors

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.SandwichH1Classes.SandwichH1Proofs.SandwichCompositeOnH1
 
 noncomputable section

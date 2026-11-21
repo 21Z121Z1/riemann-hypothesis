@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasPeriods
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InstCommRingBcris
 import GroundTheory.PAdicHodge.BdRAlgCl

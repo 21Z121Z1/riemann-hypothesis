@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeVariant
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGenericFibreRadicalAway
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Mathlib.Tactic.ReduceModChar

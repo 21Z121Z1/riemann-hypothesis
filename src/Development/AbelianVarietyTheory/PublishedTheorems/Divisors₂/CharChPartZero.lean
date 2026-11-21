@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ConstantOneMemNonvanishing
 import Mathlib.NumberTheory.Bernoulli
 import Mathlib.NumberTheory.LSeries.RiemannZeta

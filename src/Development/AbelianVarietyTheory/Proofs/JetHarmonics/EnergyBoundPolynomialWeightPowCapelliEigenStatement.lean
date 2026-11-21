@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.EnergyBoundPolynomialWeightPowCapelliEigen
 open Formalism.FourierDecayAlt Formalism.REAL Formalism.QuantumDeterminants Finset
 set_option maxHeartbeats 1000000 in

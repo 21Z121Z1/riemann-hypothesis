@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingTrRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DblESymmToLinearMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationGoodModelsIntertwine

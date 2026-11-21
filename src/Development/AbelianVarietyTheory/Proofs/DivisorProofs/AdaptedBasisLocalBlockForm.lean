@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviBlockSizesSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalUnipotentEmbeddingActionStatement

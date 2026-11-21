@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularCoverOverIntegersExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularCoverPullbackThetaDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantAbelianSchemeThetaDegreeZeroStatement

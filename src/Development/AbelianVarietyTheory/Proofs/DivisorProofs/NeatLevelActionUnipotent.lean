@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelAutomorphismIntegralMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionFibreInjectsLevelModuleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreActionTrivialOfFixedPointResidueFieldStatement

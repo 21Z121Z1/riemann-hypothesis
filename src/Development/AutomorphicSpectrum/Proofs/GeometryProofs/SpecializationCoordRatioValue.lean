@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 import Formalism.LocalRingCardinality.DataHost

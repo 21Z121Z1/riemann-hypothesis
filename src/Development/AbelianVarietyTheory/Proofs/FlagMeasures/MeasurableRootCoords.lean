@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsRootHaar
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselRootMeasureIndependentOfChoicesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BlockProjectionBessel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemZalgCommuteLieAction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartLeftInvariantLaplacianOpPowEqIterateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEllipticReproducingTestFunctionLaplacianStatement

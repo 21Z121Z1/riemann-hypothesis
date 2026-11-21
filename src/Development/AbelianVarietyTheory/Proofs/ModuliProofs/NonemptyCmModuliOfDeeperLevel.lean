@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyLevelQuotStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelQuotientRepresentsReducedStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelQuotientUnramifiedDualNumberPointsStatement

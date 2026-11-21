@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OriginIdeal
 import Mathlib.RingTheory.TensorProduct.IncludeLeftSubRight
 import Mathlib.RingTheory.WittVector.IsPoly

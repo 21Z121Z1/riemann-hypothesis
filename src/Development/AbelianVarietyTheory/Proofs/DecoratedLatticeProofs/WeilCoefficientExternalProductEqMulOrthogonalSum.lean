@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaTensorRuleTargetOrthogonalSum
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 open scoped ComplexConjugate Matrix NNReal

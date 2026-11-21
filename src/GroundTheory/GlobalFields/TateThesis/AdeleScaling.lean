@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.FiniteAdeleScaling
 import Mathlib.Algebra.Order.Positive.Field
 import Mathlib.RingTheory.Complex

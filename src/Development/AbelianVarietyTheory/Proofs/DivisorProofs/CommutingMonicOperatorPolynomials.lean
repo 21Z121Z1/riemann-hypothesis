@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteModuleGradedQuantumDet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonicFactorFiniteMod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonicFactorFinite

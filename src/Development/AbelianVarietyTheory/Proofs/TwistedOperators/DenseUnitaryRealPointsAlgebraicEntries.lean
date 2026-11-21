@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosureUnitary
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicSplit
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators

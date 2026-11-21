@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLengthEqAndCardEqPowOfIsFiniteLength
 import Mathlib.NumberTheory.Padics.RingHoms
 import Mathlib.Tactic.Monotonicity.Lemmas

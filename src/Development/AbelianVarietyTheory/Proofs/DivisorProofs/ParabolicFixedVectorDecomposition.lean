@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviLiftOfAdaptedPlane
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicComplementNondegenerate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicComplementHermitian

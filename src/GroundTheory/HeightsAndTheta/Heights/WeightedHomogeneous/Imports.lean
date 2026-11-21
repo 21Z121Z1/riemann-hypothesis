@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Statements
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.StatementsFibreCompDimZ
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.GeoNum

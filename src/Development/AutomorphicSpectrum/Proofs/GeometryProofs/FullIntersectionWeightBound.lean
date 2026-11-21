@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.WeightThresholdLimitCoefficientsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HermitianLineShiftPropertiesStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ShiftHEqTensorConstLine

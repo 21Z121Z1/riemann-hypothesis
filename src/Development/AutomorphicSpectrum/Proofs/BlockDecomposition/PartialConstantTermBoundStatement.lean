@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialConstantTermBound
 open PositivityTheory.Rg.Rsw
 set_option maxHeartbeats 1000000 in

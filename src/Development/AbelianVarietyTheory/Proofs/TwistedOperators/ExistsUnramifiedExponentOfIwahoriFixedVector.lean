@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BorelCasselmanHolds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JhMultSubAddQuot
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsCharacterEigenvectorOfCommutingRepresentat

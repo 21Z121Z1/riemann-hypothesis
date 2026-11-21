@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IrrelevantLeMapScaleGraded
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.EqOfIsLieComb
 import Mathlib.NumberTheory.Zsqrtd.GaussianInt

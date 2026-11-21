@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialSum
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OverAffineJLineComapSlGalStatement
 import Mathlib.Topology.Sheaves.Presheaf
 open scoped MatrixGroups TensorProduct

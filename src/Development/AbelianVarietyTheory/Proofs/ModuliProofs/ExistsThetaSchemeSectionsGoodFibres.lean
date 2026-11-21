@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SpMapCompRingHomComp
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFlatProjectiveThroughPointsGoodFibresStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothAndGeomConnectedOfVeryDense

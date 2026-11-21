@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeFrameConjugationDecomposition
 open ValuativeRel Matrix
 set_option maxHeartbeats 1000000 in

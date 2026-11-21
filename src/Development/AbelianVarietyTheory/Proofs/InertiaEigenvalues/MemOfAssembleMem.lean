@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicExistsIff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZpowSmulMem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompOneAddPowMul

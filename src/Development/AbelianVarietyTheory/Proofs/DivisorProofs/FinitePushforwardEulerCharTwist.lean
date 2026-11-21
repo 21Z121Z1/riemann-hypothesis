@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GenericFiniteMaps
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteCohOfForallModification
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits Filter

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncPts
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSncModelOfPatchesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordOverIntOfFiniteOrder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ImaginaryPeriodLowerBoundLog
 open GlobalTheory.ShFam.Hor
 open scoped Topology

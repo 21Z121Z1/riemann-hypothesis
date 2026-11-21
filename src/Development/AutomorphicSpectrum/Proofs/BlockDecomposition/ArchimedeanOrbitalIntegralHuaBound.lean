@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TupCoordApply
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousSeminormDiffSLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DetConjUnitary

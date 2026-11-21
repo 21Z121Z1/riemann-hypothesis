@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
 
 set_option autoImplicit false

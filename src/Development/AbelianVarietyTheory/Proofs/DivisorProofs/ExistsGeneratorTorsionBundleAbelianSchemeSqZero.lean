@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompEqOneOfTransl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfSqZeroBaseChange
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.TrivBasicOpenOfTrivFibre

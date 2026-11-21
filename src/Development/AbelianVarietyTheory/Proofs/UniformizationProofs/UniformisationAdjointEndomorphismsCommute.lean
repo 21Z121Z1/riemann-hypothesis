@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsAddInjective
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsNsmulAndNeg
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdicBaseEmbedsValuationAlgebraicClosure

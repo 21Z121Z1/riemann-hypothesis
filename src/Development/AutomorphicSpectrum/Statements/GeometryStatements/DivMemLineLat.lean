@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CompactConjugacyDomainLocal
 
 noncomputable section

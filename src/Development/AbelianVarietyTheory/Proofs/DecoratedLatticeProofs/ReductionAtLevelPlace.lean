@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsEtaConj
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ReducedChainLocalIdentity
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.WeightTraceProducts.MemHomogeneousExponentsOneBlock
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 import Mathlib.RingTheory.PicardGroup

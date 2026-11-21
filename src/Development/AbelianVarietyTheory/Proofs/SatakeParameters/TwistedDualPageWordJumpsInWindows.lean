@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedDualOrbitPageWordBoxStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedDualJumpsMemWindowsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JumpsMemBoxNegMHStatement

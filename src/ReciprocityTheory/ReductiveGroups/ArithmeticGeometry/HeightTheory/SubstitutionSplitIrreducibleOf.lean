@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.PowFirstVarDvdSubstitution
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.EvalOneBilinearSubstitution
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.CoeffPsiPNeZero

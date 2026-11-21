@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpOverFstComp
 set_option autoImplicit false
 noncomputable section

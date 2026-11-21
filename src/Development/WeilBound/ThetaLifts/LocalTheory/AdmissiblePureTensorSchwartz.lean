@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.Cross
 import Development.WeilBound.ThetaLifts.LocalTheory.SplitInv2
 import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts

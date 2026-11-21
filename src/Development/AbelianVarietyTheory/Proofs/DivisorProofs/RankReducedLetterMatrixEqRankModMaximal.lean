@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOfMulEqOne
 import Formalism.PieriBlockIdeals.PieriColumnMinors.HeckeLFunctionIdealEulerProduct
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormLeOneOfMemOL

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfTensEqOfNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive

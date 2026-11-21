@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Mathlib.RepresentationTheory.Rep.Basic
 import Mathlib.RingTheory.TotallySplit

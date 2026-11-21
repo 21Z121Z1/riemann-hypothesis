@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsNeSame
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivMapLattice

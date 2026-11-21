@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.SplittingOfRoots
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsIsotropicGroupLatticeClassRepresentatives
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InZhGeoInjStable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GammaIntegralAlternatingSumStatement
 open MeasureTheory Finset GlobalTheory.Chamber
 open scoped InnerProductSpace

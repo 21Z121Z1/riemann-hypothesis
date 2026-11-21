@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.PenultimateKernelDiamondInvariant
 import Formalism.LocalToGlobal.Columns.ReductionExistsInLatticeStabilizerHolds
 

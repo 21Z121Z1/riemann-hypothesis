@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.AddIntG
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Henselian

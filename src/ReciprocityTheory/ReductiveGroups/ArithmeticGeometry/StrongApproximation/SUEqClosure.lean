@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.HfDecompSelf
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.SubProjOrth
 

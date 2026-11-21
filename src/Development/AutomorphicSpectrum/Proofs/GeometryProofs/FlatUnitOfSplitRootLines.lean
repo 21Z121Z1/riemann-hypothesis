@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsVerticalBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsClopenIrreducibleCptStatement

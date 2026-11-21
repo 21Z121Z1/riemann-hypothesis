@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CellFunctorNonscalarOffdiag
 open GlobalTheory.PRep GlobalTheory.SmGL
 open scoped TensorProduct

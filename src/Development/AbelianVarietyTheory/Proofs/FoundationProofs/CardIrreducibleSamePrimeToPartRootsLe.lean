@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SamePartIffOfNeZero
 import Mathlib.Data.Int.Star
 import Mathlib.FieldTheory.Minpoly.IsConjRoot

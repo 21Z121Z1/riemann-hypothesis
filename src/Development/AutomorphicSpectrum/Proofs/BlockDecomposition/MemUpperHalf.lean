@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.FrameConj
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousRxSymm
 import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldB

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ClassMassEqSumOfBijective
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlgebraMapApply
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitaryTranspose

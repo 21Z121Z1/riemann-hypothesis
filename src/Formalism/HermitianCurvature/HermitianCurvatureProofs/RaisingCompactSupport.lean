@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadAATopOfParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliWordSumExpansion
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPIntegralOfPlaces

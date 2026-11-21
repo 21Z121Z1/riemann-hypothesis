@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.StatementTM
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Order.Star.Real

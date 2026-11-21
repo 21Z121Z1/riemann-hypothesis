@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartLocalNormalForm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrincipalNearBoundaryStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianBoundConjugateStatement

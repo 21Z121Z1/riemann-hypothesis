@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitAtOfMulRight
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsUnitIffUnitAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharZeroCentreOfComplex

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.ChebBd
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.CuspTrBand
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClass

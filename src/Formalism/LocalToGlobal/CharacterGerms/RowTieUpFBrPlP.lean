@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.NatCastMulTmul
 import Formalism.LocalToGlobal.CharacterGerms.CompleteOfBasis
 import Formalism.LocalToGlobal.CharacterGerms.DetNeZeroOfChars

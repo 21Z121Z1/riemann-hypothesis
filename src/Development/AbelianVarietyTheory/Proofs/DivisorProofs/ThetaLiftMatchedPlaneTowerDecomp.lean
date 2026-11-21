@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsLeSup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfTwoLaws
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentQuotientUnitVolumeStatement

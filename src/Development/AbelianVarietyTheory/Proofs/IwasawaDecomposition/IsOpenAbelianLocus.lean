@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsProperOfSubsingleton
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabDescentOfFieldExtension
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt

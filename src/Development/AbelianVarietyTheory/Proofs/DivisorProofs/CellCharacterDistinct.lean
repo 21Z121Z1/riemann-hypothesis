@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmoothDetPair
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver

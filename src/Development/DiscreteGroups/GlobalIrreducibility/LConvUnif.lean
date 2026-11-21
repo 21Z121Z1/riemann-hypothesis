@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.LConvUnifB
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup
 import Development.DiscreteGroups.GlobalIrreducibility.LConvCut

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.GermIntegrals.StepSt
 import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalizedAbsCharacterization

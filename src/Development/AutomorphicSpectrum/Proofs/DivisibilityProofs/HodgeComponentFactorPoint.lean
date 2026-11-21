@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Mathlib.AlgebraicGeometry.QuasiAffine

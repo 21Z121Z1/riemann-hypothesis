@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MapToUniversalObjectUnique
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleSurjectiveLevelMap
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSubgroupOfFinite

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsUniformDenominator
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SerIntAtOfSeriesRat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExtLinearIndependent

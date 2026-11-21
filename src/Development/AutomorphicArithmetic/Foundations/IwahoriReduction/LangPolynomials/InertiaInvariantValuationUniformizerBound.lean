@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FixedIntegersIsUnitOfNotMemPrimeSpan
 import CompanionTheory.AutomorphicTheory.PlaceSeparation.ArtinA
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Ramification

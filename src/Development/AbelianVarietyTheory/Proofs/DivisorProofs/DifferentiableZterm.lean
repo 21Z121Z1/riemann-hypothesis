@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasSumZeroOfTwoLe
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedEqOneOfLe
 import Mathlib.Topology.UniformSpace.Uniformizable

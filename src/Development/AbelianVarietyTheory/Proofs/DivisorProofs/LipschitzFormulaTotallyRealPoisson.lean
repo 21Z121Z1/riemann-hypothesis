@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeTheta.ThetaShiftInversion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiscreteTopologyFractionalIdealRealLatticeImageStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZLatticeFractionalIdealRealLatticeImageStatement

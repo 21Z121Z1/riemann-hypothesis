@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelEigenvectorsActionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmImageUniqueLatticeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelWithCmActionStatement

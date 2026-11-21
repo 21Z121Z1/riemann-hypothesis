@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelSt
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LeviNonnegOfIsPshExt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CombSmoothCurv

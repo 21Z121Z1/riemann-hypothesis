@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.MonomialRepresentations.HenselDiag
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.MapRepApply
 import Mathlib.LinearAlgebra.Matrix.IsDiag

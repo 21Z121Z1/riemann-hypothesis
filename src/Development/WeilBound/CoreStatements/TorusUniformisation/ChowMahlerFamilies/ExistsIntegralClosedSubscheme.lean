@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.AlgebraicGeometry.Noetherian
 import Mathlib.RingTheory.Henselian

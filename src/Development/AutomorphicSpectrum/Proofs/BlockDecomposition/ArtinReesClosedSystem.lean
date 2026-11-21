@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeIffAffineSections
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuasicoherentSupSections
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecsMapArrow

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.SubalgebraEqBotOfIsIntegralOfIsIntegrallyClosed
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import Mathlib.FieldTheory.PurelyInseparable.Exponent

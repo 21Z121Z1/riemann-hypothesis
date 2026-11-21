@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GaloisCohomologyRatios.ModuleFiniteHomRep
 
 open NumberField IsDedekindDomain CategoryTheory GroundTheory.ProfCoh GroundTheory.Global

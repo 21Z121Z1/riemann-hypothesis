@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CastRealAll
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmLiftOfMultilinearTprod
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeftCast

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ParahoricSubgroupCompactOpenMeasure
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ParahoricCharacterModulusPropertiesStatement
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL

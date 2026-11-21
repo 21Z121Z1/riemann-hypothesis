@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.Imports
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComponentsMeetNull
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartImageNull
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsSmoothMetricOfIsSmoothHerm

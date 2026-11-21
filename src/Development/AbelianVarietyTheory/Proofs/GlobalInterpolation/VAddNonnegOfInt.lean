@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LowerTieTwAt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ClassPairingIntegralFormRowIsIntegralStatement
 import Formalism.SharpRestriction.Divisibility.StatementFT.PeriodPointConditions

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.CuspLift
 import Development.WeilBound.ThetaLifts.LatticeBasics.ConvOfCpt
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.SigThConst

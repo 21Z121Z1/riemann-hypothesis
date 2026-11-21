@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PinsCardIndexRanks
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivOfRangeEq
 import Formalism.LocalToGlobal.IndefiniteReal.PrincipalLevelLattice

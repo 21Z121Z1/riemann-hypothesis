@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LawLoc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelIndexMatrixLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmEqSumLattice

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassEquivIdeleClassMapOfComm
 import GroundTheory.ProfiniteCohomology.DiscreteModules
 set_option maxSynthPendingDepth 1

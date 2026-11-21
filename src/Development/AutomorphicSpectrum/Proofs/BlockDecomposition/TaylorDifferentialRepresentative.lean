@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RepUnique
 import Mathlib.Data.Int.Star
 set_option backward.isDefEq.respectTransparency false

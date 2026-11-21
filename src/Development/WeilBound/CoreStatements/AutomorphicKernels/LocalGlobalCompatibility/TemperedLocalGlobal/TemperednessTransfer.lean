@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalGlobalCompatibility.TemperedLocalGlobal.LocalGlobalOfIwahori
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalGlobalCompatibility.NormVEqPowResF
 

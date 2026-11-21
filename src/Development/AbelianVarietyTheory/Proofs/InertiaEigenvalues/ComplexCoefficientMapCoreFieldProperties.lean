@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TwistSeries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefMapNormEquivariantBasis
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalGlobalCompatibility.TemperedLocalGlobal.WeilGroupRestriction.IwahoriCompatibilityOfChains
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobPolyOfRecTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSatakeOfIsLocComp

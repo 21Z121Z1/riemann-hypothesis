@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OpBasics
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.FixLev
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.RrTens

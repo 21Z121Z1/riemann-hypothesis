@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsFourierExpansionHolomorphicTube
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsSystem
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Qf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightVectorExplicitFormula
 

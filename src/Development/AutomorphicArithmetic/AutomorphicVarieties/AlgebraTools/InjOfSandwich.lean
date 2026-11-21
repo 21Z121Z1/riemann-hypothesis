@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.GrSpan
 
 open Filter UpperTheory.V.AlgebraTools

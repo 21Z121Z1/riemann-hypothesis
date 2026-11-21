@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPrimeMapRationalFunctionsGenericLinearFormNotM
 open MvPolynomial GlobalTheory.ChowHt GlobalTheory.CompHt Filter
 open scoped ENNReal

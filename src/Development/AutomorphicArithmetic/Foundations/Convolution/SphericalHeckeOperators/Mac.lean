@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DcoVol
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DcoShape
 import GroundTheory.AutomorphicForms.MacdonaldFormula

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.InclEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FilVSymVKer
 open CategoryTheory AlgebraicGeometry NumberField

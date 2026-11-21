@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedEmbeddingCompatibilityRows
 open GlobalTheory.BigTop GlobalTheory.BigOn GlobalTheory.BigOn.Exp
 open NumberField IsDedekindDomain

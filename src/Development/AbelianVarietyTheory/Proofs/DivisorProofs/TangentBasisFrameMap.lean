@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisFrameMapImports
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateMapPowEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateMapOpenImmersionStatement

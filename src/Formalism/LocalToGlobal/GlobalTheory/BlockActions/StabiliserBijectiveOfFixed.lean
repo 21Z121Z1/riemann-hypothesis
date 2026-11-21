@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.StabRestrict
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClassInjectiveOfDegree
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.StabiliserBijectiveOfInjection

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParabolicInductionInStagesProductOfProducts
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FProdStart
 

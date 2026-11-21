@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.IndexSt
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.Henselian

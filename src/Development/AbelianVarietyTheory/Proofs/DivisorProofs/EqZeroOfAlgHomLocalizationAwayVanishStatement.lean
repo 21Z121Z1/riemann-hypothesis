@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfAlgHomLocalizationAwayVanish
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

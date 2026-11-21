@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AdelicQuotients.RieszRepresentationSesquilinear
 import Development.AutomorphicArithmetic.AdelicQuotients.MeasurableOfSeparatingFunctionals
 import Development.AutomorphicArithmetic.AdelicQuotients.InnerProductIntegralFundamentalDomainOfCompact

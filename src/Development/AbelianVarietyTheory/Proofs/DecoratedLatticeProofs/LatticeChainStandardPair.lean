@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepComb
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanRangeEmb4EqTop
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDiscriminantTwelfthRootOfIdeal

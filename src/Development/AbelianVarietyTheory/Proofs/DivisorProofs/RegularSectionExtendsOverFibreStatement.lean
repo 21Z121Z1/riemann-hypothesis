@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularSectionExtendsOverFibre
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Opposite

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsToJetEq

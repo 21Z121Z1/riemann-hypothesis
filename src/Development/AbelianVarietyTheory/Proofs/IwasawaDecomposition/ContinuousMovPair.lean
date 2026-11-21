@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralCompactLe
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul
 

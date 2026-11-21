@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.ChartGeoGlue
 import Development.EtaleCohomology.EtaleSheaves.LeafChartAffPf
 import Mathlib.Tactic.Monotonicity.Lemmas

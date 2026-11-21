@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocalRingTrivSqZeroExt
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
 import Mathlib.Analysis.SpecialFunctions.Log.ERealExp

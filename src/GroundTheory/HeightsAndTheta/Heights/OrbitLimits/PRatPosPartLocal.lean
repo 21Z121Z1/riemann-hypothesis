@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StRatPosPartLocal
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPosPartLocal
 set_option maxSynthPendingDepth 1

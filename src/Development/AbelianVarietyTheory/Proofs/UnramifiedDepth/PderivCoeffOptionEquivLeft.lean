@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.MvPowerSeries.Equiv
 import Mathlib.Tactic.ENatToNat
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleRightZeroThd

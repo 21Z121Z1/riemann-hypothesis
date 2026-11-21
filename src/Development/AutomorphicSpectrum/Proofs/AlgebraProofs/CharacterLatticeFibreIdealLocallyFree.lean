@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LocFreeMapMkQIff
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SmulMemSpanOver
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeGoodBaseChangeStatement

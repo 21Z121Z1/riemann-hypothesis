@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.Transport
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifRiem
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsometryPreservesHermitianAndAction

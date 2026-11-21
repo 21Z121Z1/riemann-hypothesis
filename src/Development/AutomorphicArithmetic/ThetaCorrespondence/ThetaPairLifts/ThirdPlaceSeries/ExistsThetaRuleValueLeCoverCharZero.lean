@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.DivisorHalfGenerationOfCover
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LiftGaps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReflectionSumJetNumber

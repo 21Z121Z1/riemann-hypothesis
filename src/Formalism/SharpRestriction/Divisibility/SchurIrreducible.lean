@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataTheta
 import Mathlib.Algebra.Lie.UniversalEnveloping
 

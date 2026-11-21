@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommaDescentInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommaDescentRestrictionEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLocOAff

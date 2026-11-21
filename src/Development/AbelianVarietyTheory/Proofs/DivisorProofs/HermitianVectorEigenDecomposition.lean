@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 open scoped Matrix
 open GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels GlobalTheory.RealLift Formalism.BasicNotions.TH Matrix

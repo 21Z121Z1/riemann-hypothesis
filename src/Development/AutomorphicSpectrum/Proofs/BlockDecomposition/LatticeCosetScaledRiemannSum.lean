@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetOff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticePointCountScalingStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanFundamentalDomainIntegersStatement

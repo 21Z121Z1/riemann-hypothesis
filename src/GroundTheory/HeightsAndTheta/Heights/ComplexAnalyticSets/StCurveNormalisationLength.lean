@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceObjects
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 import Mathlib.RingTheory.OrderOfVanishing.Basic

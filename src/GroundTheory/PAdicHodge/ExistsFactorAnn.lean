@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.PtEvalPtProdEqZeroOfMem
 set_option maxSynthPendingDepth 1
 

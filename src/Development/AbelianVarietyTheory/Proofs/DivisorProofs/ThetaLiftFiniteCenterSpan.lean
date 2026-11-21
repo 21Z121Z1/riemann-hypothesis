@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZfinOfThetaSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaVanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaLatticeSum

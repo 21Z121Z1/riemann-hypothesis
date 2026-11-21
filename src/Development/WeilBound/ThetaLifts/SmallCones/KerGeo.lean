@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomogeneousRatioIsUnitStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HomogeneousRatioCocycleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalRestrictSectionStatement

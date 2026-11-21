@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ThetaPsi
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExtTwistedPlaces
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThirdLevelOfGoodTwists

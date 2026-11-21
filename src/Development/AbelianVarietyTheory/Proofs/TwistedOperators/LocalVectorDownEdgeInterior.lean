@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatIntegrandFlippedTensorLocallyConstantCompact
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaAtExtDat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSBHalfGivenFnDown

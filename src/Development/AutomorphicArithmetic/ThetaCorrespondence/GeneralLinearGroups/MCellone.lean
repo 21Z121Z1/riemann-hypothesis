@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.CasselmanSuffTemp
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSubquotientCompMulSingle
 import GroundTheory.LocalFields.PadicLogSeries

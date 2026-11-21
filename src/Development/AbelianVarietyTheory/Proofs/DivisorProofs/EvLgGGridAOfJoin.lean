@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricRatioConjugatesOfTransport
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BaseExOf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TwoLeMOf

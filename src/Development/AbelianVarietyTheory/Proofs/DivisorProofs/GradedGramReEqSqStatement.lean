@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedGramReEqSq
 open Matrix
 open scoped ComplexOrder

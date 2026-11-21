@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.NumberTheory.NumberField.CanonicalEmbedding.FundamentalCone

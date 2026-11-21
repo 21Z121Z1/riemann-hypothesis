@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
 import Mathlib.LinearAlgebra.Dimension.Torsion.Finite
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.SolCnt
 import Mathlib.RingTheory.AdicCompletion.Completeness
 import Mathlib.RingTheory.SimpleRing.Principal

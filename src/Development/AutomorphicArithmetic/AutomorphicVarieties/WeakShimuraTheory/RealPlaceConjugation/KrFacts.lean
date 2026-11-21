@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RbUVal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcSpKer
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LMemMax

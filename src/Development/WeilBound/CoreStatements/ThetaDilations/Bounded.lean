@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.ThetaDilations.OrbitAdelic
 import Development.WeilBound.CoreStatements.ThetaDilations.ProdRho
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ReductionToSiegelDomainStatement

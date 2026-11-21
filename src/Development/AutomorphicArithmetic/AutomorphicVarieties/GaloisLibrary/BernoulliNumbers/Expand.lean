@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.BernoulliNumbers.MapGenBChar
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.WittVector.IsPoly

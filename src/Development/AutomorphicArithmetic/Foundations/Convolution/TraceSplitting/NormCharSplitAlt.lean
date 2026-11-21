@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplit
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedAtValueHeckeCharCompIdeleNorm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits

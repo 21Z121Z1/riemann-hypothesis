@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsUnitarisableOfCharOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupportCharFn
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsNatSmulCoeffIsIntegral
 import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule
 import Mathlib.RingTheory.Etale.Weakly

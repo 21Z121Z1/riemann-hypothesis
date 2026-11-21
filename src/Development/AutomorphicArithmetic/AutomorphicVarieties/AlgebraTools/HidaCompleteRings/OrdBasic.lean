@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.IsOrdProjZeroOfIsNilpotent
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

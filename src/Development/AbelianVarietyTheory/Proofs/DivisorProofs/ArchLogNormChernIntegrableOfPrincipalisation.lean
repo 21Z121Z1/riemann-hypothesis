@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchIntegrable
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory

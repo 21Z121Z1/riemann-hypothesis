@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.KerGeo
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MCSpan
 import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg

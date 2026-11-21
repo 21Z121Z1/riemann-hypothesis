@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLineMatrixKroneckerRightFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueJointTop
 

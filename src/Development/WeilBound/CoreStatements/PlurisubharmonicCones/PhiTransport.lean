@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomialStatement
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.LinearAlgebra.Matrix.Hermitian

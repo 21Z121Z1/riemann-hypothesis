@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Glues
 import Mathlib.Order.CompletePartialOrder
 open CategoryTheory AlgebraicGeometry TopologicalSpace

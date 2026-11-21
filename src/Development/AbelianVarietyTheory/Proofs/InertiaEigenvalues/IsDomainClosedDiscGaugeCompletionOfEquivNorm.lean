@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemBallOfGaugeLt
 import Mathlib.Algebra.Order.Star.Real
 

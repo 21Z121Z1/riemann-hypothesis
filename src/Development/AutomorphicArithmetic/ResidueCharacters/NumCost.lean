@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ResidueCharacters.NumParameters
 import Development.AutomorphicArithmetic.ResidueCharacters.NumBounds
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsoQuotientsSameKernelReducedBaseStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjRigidClosed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel

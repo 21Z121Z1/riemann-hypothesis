@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActOfMemGfC
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BaseOfOfPin
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsScaleOfChar

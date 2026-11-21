@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeFamilyFiniteLocallyFreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalChainsGlueRootOfPStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalChainsGlueQuasicoherentStatement

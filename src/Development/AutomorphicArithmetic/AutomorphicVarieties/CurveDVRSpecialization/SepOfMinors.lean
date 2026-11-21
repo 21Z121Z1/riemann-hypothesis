@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.IsUnitOrIsUnitOfAddOne
 import Mathlib.Algebra.Module.Submodule.Union
 import Mathlib.Algebra.Order.Ring.Star

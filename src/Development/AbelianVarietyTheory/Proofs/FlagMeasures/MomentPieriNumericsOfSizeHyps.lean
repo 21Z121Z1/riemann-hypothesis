@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DegVand
 

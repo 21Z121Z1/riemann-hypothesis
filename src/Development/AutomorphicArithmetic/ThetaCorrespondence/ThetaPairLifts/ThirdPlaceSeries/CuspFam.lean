@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsRep
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CGTrueT
 

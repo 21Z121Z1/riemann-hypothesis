@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsOrthonormalEigenbasis
 open Complex MeasureTheory GlobalTheory.UnitaryTheta
 open scoped BigOperators ComplexConjugate Real Classical

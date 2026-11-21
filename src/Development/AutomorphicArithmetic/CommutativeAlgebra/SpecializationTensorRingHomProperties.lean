@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.IsChart
 open GroundTheory.FunctionField UpperTheory.Et.Sel
 open scoped TensorProduct

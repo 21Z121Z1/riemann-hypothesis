@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SplitHeightSummableExpNegAbs
 import Mathlib.Analysis.CStarAlgebra.Classes
 open scoped InnerProductSpace

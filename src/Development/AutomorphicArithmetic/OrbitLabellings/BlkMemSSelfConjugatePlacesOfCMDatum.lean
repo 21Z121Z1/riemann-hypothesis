@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCHarm
 import Formalism.LocalToGlobal.CharacterGerms.SelfConjugateRowData

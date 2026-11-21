@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FunKit
 

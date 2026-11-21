@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.UnipotentBlockMatrices.UnipotentBlockPairs
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.Summand
 import Development.AutomorphicArithmetic.Foundations.Convolution.TensFun

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.TotW
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsGaloisCover
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConjMemOfMemHeckeLevel

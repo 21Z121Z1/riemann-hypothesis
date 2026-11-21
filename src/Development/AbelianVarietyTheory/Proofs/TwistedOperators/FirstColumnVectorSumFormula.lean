@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowShift0Model
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstRowVertexWeilValueStatement
 

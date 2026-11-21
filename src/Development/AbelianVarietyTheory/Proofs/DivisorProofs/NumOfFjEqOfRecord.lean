@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.NumbersLemmas
 import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAlternatingForm
 open NumberField IsDedekindDomain Module

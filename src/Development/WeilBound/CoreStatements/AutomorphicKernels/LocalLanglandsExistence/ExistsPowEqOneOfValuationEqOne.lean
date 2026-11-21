@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.KernelCondGlob
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.HasExponentMulOfIsUnram
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.KernelCondTwCircleOfRootsOfUnity

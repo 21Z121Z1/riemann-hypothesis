@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsRootNear
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousCharacterFiniteOrderIntegralUnits

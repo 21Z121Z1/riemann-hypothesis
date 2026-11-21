@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TraceRMulPowEqZero
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WeilDeligneParamMonodromyEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

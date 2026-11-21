@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InjectiveOfSpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffEqOfApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMatrixFrobenius

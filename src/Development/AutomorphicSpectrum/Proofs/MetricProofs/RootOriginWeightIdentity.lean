@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueLatOfChartBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCoordField
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IntegralSectionLatticeMultipleStatement

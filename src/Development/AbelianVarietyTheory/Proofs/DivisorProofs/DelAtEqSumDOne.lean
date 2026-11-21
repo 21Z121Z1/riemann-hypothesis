@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
 
 open Set Matrix MeasureTheory Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerDivisor
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerFrob
 set_option maxSynthPendingDepth 1

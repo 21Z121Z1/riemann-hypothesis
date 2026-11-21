@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects
 

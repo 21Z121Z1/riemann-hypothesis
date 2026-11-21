@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GeometricLemmaCellOneBlockSwapEquiv
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix GlobalTheory.SplitWeil
 set_option synthInstance.maxHeartbeats 400000

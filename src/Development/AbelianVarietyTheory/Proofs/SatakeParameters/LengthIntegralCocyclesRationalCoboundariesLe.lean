@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Mathlib.RepresentationTheory.Invariants
 open Formalism Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N Module

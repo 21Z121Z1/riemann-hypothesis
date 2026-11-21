@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ClsChartedLabAt
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.CompInjLocJ
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocTiesOf

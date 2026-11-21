@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Mathlib.Analysis.CStarAlgebra.Classes

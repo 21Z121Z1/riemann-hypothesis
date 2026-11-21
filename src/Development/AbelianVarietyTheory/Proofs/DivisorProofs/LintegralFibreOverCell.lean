@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticDensityPushforwardIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralDensityChartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellChartBaseProjectionStatement

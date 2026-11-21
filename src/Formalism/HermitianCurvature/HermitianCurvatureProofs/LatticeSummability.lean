@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LatticeHerglotzBound
 import Mathlib.MeasureTheory.Integral.Pi
 import Mathlib.RingTheory.WittVector.IsPoly

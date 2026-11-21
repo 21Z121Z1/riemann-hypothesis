@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsOverIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotIsConstAlongConeZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBase

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcDatumSectionValueCoeffEqFourierJacobi
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.EqZeroOfSumSq
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArchBoundFlow

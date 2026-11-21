@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivativeGaussianBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeanValueHolomorphicEllipsoidStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeHermitianEllipsoidStatement

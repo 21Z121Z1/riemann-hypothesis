@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TZero
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Ring.IsFormallyReal

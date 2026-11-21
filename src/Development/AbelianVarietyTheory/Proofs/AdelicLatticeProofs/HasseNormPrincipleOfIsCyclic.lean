@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.NpOfOddPrimeDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.NpOfFinrankTwoStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormPrincipleOfCyclicTowerStatement

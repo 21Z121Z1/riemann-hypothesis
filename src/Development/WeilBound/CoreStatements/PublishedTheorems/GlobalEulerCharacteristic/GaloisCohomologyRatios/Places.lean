@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.StabilizersFinite
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.AdditiveDefs
 

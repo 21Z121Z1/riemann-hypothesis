@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.StrictTransform
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrictTransformCharts.BlowupChart
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.ChartRing

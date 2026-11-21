@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.DegreeEqCardToMultiset
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagM3PadicGlobalStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PowerSumsVanishAtPlacesStatement

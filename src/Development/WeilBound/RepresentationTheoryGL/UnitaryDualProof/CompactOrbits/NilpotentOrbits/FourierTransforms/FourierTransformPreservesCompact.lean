@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.NilpotentOrbits.FourierTransforms.CharacteristicFunctionIntegralApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.NilpotentOrbits.FourierTransforms.DistribHaarCharAdU

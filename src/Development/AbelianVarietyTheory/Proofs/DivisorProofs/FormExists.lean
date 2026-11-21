@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockInvariantSubspaceEquivariantProjectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousComponentInRangeEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveRankEmbeddingStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalSeriesSubstPointsStandardThree
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.CanonGaugeOfSteps

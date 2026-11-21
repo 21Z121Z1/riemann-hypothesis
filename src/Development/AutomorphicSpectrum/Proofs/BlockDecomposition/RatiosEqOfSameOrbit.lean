@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothHermCombLine
 import Development.AbelianVarietyTheory.Definitions.Divisors.AnalyticOnNhdFinChartIff
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes

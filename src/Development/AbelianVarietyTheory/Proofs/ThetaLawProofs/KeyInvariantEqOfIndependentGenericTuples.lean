@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.GenericSectionsMeetTransversally
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LinearMapCompEqOnSmulOfEq
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MemNonzeroLocusOfVia

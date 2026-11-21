@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceTubeBandAbsEnergy
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceBandEnergy
 set_option maxSynthPendingDepth 1

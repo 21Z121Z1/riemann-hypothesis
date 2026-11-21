@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowMulIntegral
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Order.CompletePartialOrder

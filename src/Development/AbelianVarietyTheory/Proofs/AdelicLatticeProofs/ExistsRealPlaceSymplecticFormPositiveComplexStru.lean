@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ComplexEmbeddingHermitianQuadrupleSum
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.StarTraceHerm
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.BigRep
 import Std.Tactic.BVDecide.Normalize.Prop
 

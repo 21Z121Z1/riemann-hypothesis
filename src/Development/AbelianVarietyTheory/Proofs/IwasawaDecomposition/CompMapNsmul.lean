@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HomSquareZeroAdditiveStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSquareZeroLiftLocalStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SquareZeroInclusionHomExtStatement

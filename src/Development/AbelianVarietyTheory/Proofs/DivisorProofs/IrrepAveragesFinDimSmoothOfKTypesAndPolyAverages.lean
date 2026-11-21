@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinDimStableIsSumOfKTypes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolyAveragesFiniteWeightStableSubspace
 import Development.AbelianVarietyTheory.Definitions.Divisors.VdmSplit

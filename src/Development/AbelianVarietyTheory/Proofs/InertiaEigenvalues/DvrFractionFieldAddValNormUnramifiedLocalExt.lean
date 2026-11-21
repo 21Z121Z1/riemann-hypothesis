@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIntegralIntegersUnramifiedInvolutionExt
 import Mathlib.Data.Int.Star
 open GlobalTheory.UnitLemma GlobalTheory.UnitLemma.Unr Polynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisAdaptedToCartanInvolution
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
 

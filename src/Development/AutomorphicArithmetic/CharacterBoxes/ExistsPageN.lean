@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisCohomology.Statement
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition
 import Mathlib.Algebra.Order.Star.Real

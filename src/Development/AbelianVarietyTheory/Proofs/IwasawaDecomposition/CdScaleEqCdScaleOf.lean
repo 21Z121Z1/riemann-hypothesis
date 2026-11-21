@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.PairVal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CdScaleIsTrueScale
 

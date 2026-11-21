@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Lemmata.IntegerMulIntegral.IntMulIntegral
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut

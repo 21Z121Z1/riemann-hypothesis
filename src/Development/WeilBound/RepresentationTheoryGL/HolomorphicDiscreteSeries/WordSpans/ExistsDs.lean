@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WordSpans.LowWeightDensity
 
 noncomputable section

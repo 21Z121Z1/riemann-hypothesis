@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenericallyRegularQuotientDominatingPrimeStatement
 import Mathlib.Tactic.ENatToNat
 open IsLocalRing TensorProduct

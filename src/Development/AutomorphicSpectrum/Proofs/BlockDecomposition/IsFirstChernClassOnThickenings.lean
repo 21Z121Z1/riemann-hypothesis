@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.KatzMessingTheorem.BaseChange
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NegOnePowBoundaryTermsCancel
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistable

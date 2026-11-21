@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassZeroOfGeometricPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentCohomologyInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescentEqualizerDegreeZero

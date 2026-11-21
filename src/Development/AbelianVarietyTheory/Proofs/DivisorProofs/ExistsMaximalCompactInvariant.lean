@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftInvariantRationalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenSubgroupInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftBoundedDerivativesStatement

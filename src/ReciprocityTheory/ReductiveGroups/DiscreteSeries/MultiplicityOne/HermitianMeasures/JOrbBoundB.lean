@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalDegreeBessel.StatementRP
 import Mathlib.Tactic.ENatToNat
 import Std.Tactic.BVDecide.Normalize.Prop

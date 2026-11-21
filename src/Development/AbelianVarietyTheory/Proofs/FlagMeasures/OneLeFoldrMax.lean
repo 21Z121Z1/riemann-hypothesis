@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeAbsolutelyConvergentOperatorNormLeStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantMomentBoundBothSidesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootMeasureEqNormalFormRootMeasureStatement

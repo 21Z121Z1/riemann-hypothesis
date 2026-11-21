@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GrNormPush
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameComposeRingHomBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TransitionUniqueAndPointsStatement

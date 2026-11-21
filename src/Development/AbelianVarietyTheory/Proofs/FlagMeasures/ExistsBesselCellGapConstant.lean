@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
 open MeasureTheory Matrix
 open scoped InnerProductSpace ENNReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorusCoordinateSumDifferenceAdditionFactor
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecFinsum
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RepSymInv

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.TotallySplit

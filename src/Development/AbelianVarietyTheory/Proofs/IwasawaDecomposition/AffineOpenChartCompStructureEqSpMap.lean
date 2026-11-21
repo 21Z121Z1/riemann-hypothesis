@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsTrans
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameBaseChangeRingHom
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueSubMemInitSpan

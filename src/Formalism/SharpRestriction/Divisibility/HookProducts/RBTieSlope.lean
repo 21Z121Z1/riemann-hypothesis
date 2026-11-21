@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize
 
 open Module

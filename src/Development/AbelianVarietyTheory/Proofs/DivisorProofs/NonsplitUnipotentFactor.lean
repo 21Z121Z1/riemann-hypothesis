@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaNonsplitIsotropicLineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParabolicEigenlineLocalSplitStatement
 open scoped TensorProduct NNReal Matrix

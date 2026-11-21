@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.SliceLine
 import Development.WeilBound.ThetaLifts.FrameEstimates.GrpTop
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsMaximalCompactInfinite

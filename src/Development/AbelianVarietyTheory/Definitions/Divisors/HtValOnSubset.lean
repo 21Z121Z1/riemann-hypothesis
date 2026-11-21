@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFormsFiniteDimensionalOf
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLatBasisHtLatIffSpanEq

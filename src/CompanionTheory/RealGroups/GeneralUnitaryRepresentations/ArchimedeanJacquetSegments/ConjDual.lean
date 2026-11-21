@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.GeneralUnitaryRepresentations.ArchimedeanJacquetSegments.Complementary
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNeg
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness

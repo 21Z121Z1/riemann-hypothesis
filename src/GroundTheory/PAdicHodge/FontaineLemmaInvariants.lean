@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.FontaineLemma
 import GroundTheory.PAdicHodge.BCrisRegular
 set_option maxSynthPendingDepth 1

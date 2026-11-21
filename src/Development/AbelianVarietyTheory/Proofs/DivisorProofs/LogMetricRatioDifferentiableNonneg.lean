@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMetricDerivativeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.L2DbarLocalChartEstimateStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.Statement
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Mathlib.Tactic.Monotonicity.Lemmas

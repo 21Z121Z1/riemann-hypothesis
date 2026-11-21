@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
 import Mathlib.Algebra.Order.Ring.Star
 

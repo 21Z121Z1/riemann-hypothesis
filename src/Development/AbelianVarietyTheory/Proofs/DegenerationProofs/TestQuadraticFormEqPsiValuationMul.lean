@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormLtOneOfIrreducible
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsBasisB
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

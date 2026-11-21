@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsFiniteExtAllModelsUniformised
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TypingsAgree

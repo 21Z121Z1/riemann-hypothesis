@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CMTypeGalois.StatementGroup
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ReduceModChar

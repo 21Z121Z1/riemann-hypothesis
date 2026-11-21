@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormSubLtOneOfFix
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.Cyc

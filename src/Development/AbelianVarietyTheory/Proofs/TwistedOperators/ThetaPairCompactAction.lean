@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParameterInUnitaryArchimedeanMaxCompactStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaPairPolynomialCompactStatement
 

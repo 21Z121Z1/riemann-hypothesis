@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBumpB
 import Development.AutomorphicArithmetic.DivisorFrames.HaarIntegralUnitsScaling
 open scoped TensorProduct NNReal Matrix

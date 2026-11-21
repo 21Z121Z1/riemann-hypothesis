@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZAEqAlgebraMapPt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemFilPIffEvPt
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential

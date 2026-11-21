@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LiftChart
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.SpLiftL
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.OnCompSelf

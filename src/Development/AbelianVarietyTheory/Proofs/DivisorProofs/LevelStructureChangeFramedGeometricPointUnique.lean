@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
 import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrTanPf

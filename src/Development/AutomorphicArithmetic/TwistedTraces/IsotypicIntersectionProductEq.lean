@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.TwistedTraces.IsotypicComponentProductOfSmoothReps
 import Development.AutomorphicArithmetic.TwistedTraces.IsotypicSubmoduleProductDecomposition
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsScalarOfTwistedIntertwinerCommutingAlgebra

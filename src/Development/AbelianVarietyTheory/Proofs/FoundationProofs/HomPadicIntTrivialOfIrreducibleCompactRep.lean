@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormNatCastLeOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeightCommutatorInvariance
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAugmentationCombinationEqIdTracelessIrreduStatement

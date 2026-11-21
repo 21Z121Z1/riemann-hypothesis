@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.StatementB
 
 open Finset

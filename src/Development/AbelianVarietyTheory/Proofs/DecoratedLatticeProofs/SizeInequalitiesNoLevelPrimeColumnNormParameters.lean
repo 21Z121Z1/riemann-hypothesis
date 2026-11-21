@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogLeLOfLeCond
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FockPartitionRowsNumericDatumMemIccStatement
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ColHeightSharpWith

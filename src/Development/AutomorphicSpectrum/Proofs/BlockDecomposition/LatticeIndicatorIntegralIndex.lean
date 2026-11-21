@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsIntZero
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutOfLe
 

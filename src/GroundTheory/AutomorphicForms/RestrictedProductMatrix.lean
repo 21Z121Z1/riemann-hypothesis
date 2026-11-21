@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.Restricted
 
 namespace GroundTheory.Automorphic

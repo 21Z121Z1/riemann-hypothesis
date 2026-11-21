@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.MatrixCoefficientDecay.InfinitesimalCharacterPaths.TensDecomp
 import GroundTheory.IdeleRoots.ConstantFrames.GaugeExistence.QdetSub
 

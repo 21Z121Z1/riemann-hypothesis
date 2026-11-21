@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FunKit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitThetaGridIsAdmissibleFlipTensor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstVertexWeilOrbitValueStatement

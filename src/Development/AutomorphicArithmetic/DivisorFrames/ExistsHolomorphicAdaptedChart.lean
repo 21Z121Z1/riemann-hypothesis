@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHolAdapted
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelChartFlag
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelSt

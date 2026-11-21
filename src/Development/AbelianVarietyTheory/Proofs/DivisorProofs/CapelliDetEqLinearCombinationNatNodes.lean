@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QdetPolyMapMonic
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
 import Mathlib.LinearAlgebra.Lagrange

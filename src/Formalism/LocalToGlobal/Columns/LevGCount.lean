@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar

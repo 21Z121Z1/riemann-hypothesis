@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.HookProducts.CardLiftsEq
 
 noncomputable section

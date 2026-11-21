@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalFractionField
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.GenMapEqOfFactor
 

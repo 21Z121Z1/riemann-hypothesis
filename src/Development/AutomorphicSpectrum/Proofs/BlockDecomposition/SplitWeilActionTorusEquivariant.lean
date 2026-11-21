@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableCharMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormUnitPair
 

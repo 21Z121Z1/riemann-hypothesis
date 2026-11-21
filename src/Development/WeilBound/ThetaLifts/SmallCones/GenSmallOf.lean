@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.IsoActFree
 import Development.WeilBound.ThetaLifts.SmallCones.ConeAB
 import Development.WeilBound.ThetaLifts.SmallCones.GenAnisoOf

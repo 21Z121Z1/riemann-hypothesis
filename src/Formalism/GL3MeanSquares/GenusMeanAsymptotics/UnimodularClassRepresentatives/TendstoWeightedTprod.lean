@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.SummableSqGeom
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Normed.Group.Tannery

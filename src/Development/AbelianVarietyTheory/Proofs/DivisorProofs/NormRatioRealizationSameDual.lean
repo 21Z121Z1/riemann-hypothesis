@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentialAlgebraicityFromReciprocityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealDatumRationalNormalizationStatement
 

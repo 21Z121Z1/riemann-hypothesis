@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsFibreChartIff
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverTwoFramesComparison
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints

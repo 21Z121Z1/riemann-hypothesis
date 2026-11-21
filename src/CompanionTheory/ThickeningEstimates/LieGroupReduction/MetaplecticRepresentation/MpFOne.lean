@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.MetaplecticRepresentation.ContinuousOm
 import Mathlib.Analysis.Convex.Contractible
 import Mathlib.Topology.Homotopy.Lifting

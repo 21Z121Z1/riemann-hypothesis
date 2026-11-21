@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.WittVector.IsPoly

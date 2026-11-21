@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveLocInst
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FiniteReducedSection
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveInj

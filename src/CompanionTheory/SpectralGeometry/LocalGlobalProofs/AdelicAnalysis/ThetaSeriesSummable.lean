@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SummableGaussianCoset
 import ReciprocityTheory.ThetaSummability.TailSumEstimates.LatSumPi

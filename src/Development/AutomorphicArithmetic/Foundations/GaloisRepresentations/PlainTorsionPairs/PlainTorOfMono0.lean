@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.PlainTorsionPairs.TypePlain
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.AbConv
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSegmentPolynomialOfHasSupport

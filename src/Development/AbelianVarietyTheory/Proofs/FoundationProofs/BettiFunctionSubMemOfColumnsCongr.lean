@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
 import Mathlib.Tactic.ReduceModChar
 open scoped MatrixGroups TensorProduct

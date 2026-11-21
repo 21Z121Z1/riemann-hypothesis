@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 import GroundTheory.AutomorphicForms.FiniteBruhat
 import GroundTheory.AutomorphicForms.InductionParabolicGroups

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.BtHopf
 open CategoryTheory Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct
 open GlobalTheory.CompanionTheory.Ar.BT GroundTheory.PAdicHodge

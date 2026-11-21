@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.HasVal
 import Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
 import Mathlib.RingTheory.Henselian

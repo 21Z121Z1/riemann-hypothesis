@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 import Mathlib.NumberTheory.Padics.Complex
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback

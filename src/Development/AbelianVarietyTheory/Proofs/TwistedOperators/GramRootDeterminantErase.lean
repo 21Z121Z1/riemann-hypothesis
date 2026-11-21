@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootDecomposeOrthogonalStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GramDetOptionFormulaStatement
 open GlobalTheory.Chamber

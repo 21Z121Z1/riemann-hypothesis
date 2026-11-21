@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIntegralRationalFrameExpansionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericSubquotientPrincipalSeriesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedPrincipalSeriesIrreducibleStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PushSubMemGlueFilIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberHodgeSummandEqGraphCoordinatesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentsMemOfSumMemDistinctEigencharactersModStatement

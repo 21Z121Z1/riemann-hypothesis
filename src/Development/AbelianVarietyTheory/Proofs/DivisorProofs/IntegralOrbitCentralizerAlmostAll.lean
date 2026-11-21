@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCyclotomicExtensionQI
 import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable
 open Matrix NumberField IsDedekindDomain GlobalTheory.LKTrip GlobalTheory.LKMid GlobalTheory.OrbFinAf

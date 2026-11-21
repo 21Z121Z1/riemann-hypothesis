@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeightTieTrueCols
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnNormParametersEqNatStepGapStatement
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr

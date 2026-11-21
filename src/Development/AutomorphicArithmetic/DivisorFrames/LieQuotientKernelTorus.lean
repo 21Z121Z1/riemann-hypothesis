@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKerTorusExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonoPullbackOfIsOpenImmersion

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgSubOfPer
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgIntervalIntegralSwap
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HoweDualityFiniteOfUnitary
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsGlobalSumStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsLocalSumStatement

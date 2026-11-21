@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityContinuousStatement
 open MeasureTheory Topology Matrix

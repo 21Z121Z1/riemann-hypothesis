@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.ResolutionCharZero.SupportStrictTransformUnion
 import Development.ResolutionOfSingularities.HasSimpleNormalCrossingsOfInStrictNormalCrossing
 import Development.WeilBound.CoreStatements.ResolutionCharZero.ExistsFinsetComapProdIdealEqSpanProdCoord

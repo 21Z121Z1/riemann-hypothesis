@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeightRegularOfExt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

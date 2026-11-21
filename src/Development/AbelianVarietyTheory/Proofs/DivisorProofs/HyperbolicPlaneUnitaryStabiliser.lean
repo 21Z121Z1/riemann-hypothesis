@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenIsCompactStab
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EisensteinMaximalParabolicIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMajorantFrameCompactSubgroupLe

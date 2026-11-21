@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLineAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableTwistedOrbitalProduct
 import Mathlib.GroupTheory.IsPerfect

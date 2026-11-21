@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianAmplitudeMassProductStructureStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GenericIffZeroDefectGroupCoordinatesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DoubleCosetTermEqIffStabiliserOrbitStatement

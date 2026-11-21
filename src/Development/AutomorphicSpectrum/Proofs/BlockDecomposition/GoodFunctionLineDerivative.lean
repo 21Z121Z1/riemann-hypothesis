@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodConstOfAniso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicConstantTermParabolic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOfIsSm

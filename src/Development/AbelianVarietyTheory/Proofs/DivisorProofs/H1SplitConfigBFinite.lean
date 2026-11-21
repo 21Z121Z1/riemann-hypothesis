@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBThetaIntegrabilityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLineLeviEigenvalueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBThetaUnfoldingStatement

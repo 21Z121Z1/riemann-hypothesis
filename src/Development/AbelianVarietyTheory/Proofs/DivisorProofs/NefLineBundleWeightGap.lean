@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommonRestrIsoTens
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnectedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadWeightLineNefStatement

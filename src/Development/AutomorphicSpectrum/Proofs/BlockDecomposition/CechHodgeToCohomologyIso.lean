@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechDoubleComplexMapStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleComplexDegenerateColumnIsoStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleComplexMapLeadCompatStatement

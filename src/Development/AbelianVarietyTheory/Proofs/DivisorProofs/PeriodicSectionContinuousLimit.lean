@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonvanishingSectionQuotientLimitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogOfExpContinuityStatement
 import Mathlib.Algebra.Order.Star.Real

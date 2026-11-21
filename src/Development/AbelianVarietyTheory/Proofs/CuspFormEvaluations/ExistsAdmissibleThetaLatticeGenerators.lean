@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageTwoLeLAndSigns
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageRowsOfLe

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PhiTopAgree
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs

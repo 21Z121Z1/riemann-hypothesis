@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
 import Formalism.LocalToGlobal.GlobalTheory.GL6.AdelicFunctionRightTranslateDiamond
 

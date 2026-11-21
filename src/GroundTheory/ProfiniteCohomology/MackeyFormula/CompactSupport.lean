@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.MackeyFormula.Homotopy
 import GroundTheory.ProfiniteCohomology.MackeyFormula.ConeHomotopy
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.HomologyMapPiLiftPiHomologyIsoHom

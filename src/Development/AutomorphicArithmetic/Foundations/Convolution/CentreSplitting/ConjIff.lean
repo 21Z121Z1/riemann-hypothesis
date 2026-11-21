@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ConjCarries
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.IsoEq
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp

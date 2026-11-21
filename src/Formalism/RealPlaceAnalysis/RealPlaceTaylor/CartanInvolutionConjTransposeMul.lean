@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.SmoothOnG
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.MemUnitaryGroupIffMulConjTranspose
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DetFacChange
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsValueAtOfTorus
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackPullback

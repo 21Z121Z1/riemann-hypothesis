@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsModelHolomorphicIntegralExtremalWeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPsiOfOverK
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TwistedLevelValues

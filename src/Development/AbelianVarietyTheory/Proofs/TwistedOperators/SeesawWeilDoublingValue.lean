@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilTripleNormStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLineOperatorPolynomial
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictionLineOperatorSumStatement

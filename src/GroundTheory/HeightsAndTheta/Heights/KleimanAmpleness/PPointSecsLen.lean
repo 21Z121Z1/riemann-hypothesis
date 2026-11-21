@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PointSecsLenSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RingKrullDimRangeCompAddOneLe
 import Mathlib.RingTheory.PiTensorProduct

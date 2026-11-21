@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterAlgRes
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionCompactEmbeddedStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionTransitionPolynomialStatement

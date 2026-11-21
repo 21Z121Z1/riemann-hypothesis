@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowAndImp
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowEtaBounds
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowEtaLeW

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.LinkedRig
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.GaloisRepresentationTypes.NiceSmall
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.GoodPtOf

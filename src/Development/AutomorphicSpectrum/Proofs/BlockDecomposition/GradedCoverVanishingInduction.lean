@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeZigzagCompat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NegOneSmulCancel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Mk2EqZeroIffMemS

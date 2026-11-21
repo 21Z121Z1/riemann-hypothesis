@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvertibleEndInnerProductRootPowerSumEqTorusSum
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI
 set_option maxHeartbeats 1000000 in

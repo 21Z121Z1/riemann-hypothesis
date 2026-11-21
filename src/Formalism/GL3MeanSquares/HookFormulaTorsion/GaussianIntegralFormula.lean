@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform

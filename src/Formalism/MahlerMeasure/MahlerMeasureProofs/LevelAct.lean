@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.LevelSum
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.RingTheory.PiTensorProduct

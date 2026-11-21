@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkDdSpec
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DeEqDet
 import Mathlib.Algebra.AffineMonoid.UniqueSums

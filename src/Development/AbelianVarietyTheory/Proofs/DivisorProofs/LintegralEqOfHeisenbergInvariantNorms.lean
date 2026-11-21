@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTopologicalRingAE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalMatricesDiscreteCocompactAdelicMatrixSpa
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralEqOfNorms

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyTransferEquiv
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GaussBinomMulProd
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CycOfPrime

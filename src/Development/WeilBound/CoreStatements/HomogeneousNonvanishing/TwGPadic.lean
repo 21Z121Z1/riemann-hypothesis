@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RealOfFixedByConjugations
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGFree
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGLam

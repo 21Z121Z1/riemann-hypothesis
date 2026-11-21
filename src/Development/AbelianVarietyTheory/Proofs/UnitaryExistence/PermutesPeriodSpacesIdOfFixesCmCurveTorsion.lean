@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPermPeriodSpacesComplexAut
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsSplitPeriod
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MarkingConj

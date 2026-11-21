@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.TraceSquareAndDiagBounds
 import Formalism.SizeWindowBrackets.SlopeExcessBoundExponentZero
 import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces

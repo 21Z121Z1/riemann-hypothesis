@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsIntMulMem
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.WittVector.IsPoly

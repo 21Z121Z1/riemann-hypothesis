@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HilbertRowConditions.IsHilbertCF
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEqOfIsAlgebraic
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NatCastMemDifferentIdeal

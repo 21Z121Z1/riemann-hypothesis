@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBRing
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsSquareDeterminantComparisonIsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.BasisBaseChangeRelativeBasisPulledBackSectionsStatement

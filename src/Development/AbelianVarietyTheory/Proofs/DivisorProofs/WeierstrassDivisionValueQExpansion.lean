@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointRowsSumEqDivisorSeriesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowSumsTwoThreeClosedFormRealNonIntegerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.G2AddWeierstrassPRowSumStatement

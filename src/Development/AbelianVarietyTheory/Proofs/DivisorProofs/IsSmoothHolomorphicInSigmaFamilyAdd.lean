@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
 open NumberField Complex
 open scoped nonZeroDivisors ContDiff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelsFinExtEmb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicKb
 

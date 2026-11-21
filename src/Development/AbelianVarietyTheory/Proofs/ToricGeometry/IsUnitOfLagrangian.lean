@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DualRestrictSurjectiveOfIsTorsionFreeQuotient
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Analysis.CStarAlgebra.Classes

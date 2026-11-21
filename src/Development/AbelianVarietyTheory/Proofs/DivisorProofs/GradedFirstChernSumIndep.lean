@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoGradedDeterminantIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernTensorAddStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernIsometricEqStatement

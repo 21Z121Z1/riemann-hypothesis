@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodTorusFlatCoordsInverseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormSmoothOnCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormClosedOnCoverStatement

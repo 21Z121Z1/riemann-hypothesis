@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsInvOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntAtNatCast
 

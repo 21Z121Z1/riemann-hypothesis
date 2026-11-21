@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChartZero
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
 

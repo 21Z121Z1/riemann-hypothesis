@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.FlagCarriesEigenframe
 import Development.AutomorphicArithmetic.DivisorFrames.LevelFlagCompactPoint
 import Development.AutomorphicArithmetic.DivisorFrames.AbelianSchemeMapsValuation

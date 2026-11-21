@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.KerFontaineThetaCompFrobeniusEquivSymmPow
 import GroundTheory.PAdicHodge.TiltValuation
 import Mathlib.Topology.Algebra.Nonarchimedean.AdicTopology

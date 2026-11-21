@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryApproximation.WeakApproxF
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.ENatToNat

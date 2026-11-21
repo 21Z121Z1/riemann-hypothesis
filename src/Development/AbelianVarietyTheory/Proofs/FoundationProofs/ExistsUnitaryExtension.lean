@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 import Development.AutomorphicArithmetic.WeightCongruences.IsRootOfIntegral

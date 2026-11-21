@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.UnitDualParts
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqTopOfSpanImage
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IoEquivariant

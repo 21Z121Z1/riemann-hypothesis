@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutDef
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutSubstA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFdPosFin

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniTrait
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDegenerationDataPullbackInjectiveLocalHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullDegUniqueAndComp

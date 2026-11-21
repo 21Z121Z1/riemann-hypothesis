@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Assembly
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.OfMoriwakiHS
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase

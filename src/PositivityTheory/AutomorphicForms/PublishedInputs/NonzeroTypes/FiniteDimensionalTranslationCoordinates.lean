@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.KIface
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.CIface
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.ScalarOnInertiaProp

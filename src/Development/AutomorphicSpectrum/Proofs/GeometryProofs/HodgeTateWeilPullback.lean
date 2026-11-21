@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateWeilLocalStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullTorsionPullbackPointsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilPairingTransportRelationStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BundleIsomorphismLocalToGlobalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationLocalFactorSystemStatement
 open Matrix MeasureTheory GlobalTheory.IndefiniteRowSideFullHecke.SiegelReframe

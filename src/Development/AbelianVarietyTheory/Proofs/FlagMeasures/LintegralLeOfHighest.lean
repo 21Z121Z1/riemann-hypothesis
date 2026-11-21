@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CayleyExistsAndAny
 import Mathlib.MeasureTheory.Function.L2Space
 

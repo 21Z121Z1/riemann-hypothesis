@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentApproximation.AddDense
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Ring.Star

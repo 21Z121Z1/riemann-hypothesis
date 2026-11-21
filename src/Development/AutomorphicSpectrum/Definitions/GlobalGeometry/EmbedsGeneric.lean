@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TowerOrigin
 

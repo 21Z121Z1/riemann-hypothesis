@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.LocalFieldAtPlace
 import GroundTheory.AutomorphicForms.MacdonaldHecke
 set_option maxSynthPendingDepth 1

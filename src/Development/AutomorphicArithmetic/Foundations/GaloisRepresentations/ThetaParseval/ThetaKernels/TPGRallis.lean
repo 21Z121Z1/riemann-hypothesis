@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.NormZeta
 import Development.WeilBound.ThetaLifts.LatticeBasics.BotAsm
 import GroundTheory.AutomorphicForms.GL2.InnerProductParamHolo

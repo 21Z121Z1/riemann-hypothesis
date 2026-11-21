@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogFirstBlockSmallOfFrobeniusStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallModMaximalOfFrobeniusImageSmallStatement
 open MvPowerSeries GlobalTheory GlobalTheory.Katz GlobalTheory.QLog GlobalTheory.PDivGroup GlobalTheory.Sandwich GlobalTheory.IndefiniteRowSideFullHecke.EpsilonPairingZeta GlobalTheory.PDivLat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassDecomp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DoubleCosetsMassLevel
 open NumberField MeasureTheory Formalism.BasicNotions Formalism.MainNotions.StandardLattice Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.GlobalTheoryTheory.GenusMassVolumes

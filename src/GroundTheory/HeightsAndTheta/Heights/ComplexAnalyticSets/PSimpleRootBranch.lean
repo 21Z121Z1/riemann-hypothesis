@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSimpleRootBranch
 import Mathlib.Analysis.Analytic.Polynomial
 import Mathlib.Analysis.Calculus.ImplicitContDiff

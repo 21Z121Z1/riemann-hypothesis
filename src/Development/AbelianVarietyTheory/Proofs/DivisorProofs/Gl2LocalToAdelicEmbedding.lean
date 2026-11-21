@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.CuspInfChar
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsSplitOfIsInertAt
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsConstAlongSingleton

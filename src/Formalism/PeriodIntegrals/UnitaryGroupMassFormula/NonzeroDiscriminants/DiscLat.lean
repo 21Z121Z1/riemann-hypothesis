@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.LatDefs
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.Defs
 import Mathlib.RingTheory.SimpleRing.Principal

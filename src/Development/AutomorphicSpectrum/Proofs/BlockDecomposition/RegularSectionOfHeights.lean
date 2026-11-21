@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinFamilyHeightBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightRightTranslateCompactBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzHeightMajorantIntegrableStatement

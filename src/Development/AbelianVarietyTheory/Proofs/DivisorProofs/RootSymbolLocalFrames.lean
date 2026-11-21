@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateKernelAtPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverRefinementExistsStatement

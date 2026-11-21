@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteCohOfForallModification
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EulerCharHomAdditiveShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PushforwardTwistHomDualIso

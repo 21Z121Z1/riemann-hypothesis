@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsParamImageNull
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Topology.Separation.CompletelyRegular

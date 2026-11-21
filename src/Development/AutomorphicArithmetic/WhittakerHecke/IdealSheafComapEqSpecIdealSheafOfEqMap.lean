@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupChartPreimages
 
 open CategoryTheory Limits AlgebraicGeometry TensorProduct

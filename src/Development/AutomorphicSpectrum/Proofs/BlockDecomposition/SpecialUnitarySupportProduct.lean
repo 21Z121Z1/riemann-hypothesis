@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousSingleV
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PlaneStrongApproxProduct
 

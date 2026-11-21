@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateMapPowEqOne
 
 set_option autoImplicit false

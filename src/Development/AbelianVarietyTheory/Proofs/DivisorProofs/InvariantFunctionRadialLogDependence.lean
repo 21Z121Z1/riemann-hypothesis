@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypeFunctionCharacterExpansionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateFiniteDimMatrixCoefficientStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentMatrixCoefficientsMemStatement

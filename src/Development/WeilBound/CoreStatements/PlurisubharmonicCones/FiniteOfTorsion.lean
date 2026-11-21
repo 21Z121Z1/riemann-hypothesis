@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.EmbEquivSymmApply
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.GroupTheory.FiniteAbelian.Basic

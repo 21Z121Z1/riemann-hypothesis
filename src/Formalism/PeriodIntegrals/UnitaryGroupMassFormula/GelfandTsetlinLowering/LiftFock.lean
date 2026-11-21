@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinLowering.LiftDefs
 import Formalism.GradedWeylDivisibility.StatementE
 import Formalism.PeriodIntegrals.HwIrred

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.EqZeroOfTraceLattice
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolArcNilpotent
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FramePeriodsAlongIsotropicFlowAndBlockChange

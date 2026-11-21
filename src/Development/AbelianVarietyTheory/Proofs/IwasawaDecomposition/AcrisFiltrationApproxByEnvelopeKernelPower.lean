@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsCrisP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Acris0TorsionFree
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface

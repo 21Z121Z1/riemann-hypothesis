@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjLinApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenInjectiveExtends
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenSurjectiveExtends

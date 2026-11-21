@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.IdCell
 import Mathlib.RingTheory.RootsOfUnity.Lemmas
 

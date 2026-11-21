@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Statements
 import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityGalois
 import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityDescent

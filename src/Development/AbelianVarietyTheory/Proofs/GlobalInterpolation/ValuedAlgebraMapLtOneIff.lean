@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SplittingProjection
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.OverPlaceIntegralForm
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGlobalUniformizerResidueRepresentatives

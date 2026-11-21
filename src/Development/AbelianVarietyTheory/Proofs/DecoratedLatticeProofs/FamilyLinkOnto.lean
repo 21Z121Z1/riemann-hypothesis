@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseChainCommutationValidStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseChainStageYValidStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseChainStageXValidStatement

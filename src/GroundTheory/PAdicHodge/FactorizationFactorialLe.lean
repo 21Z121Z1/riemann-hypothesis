@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.ThetaPlus
 import GroundTheory.PAdicHodge.KerFontaineThetaCompFrobeniusEquivSymmPow
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

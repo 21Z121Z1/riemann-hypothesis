@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.PartnersFactorsOfKernelSmith
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.SmithPairing
 import Mathlib.RingTheory.Etale.Weakly

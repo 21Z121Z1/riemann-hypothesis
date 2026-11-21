@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelNeg
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IoOfLeOneIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder

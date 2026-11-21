@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfHasSig
 
 open scoped TensorProduct NNReal Matrix

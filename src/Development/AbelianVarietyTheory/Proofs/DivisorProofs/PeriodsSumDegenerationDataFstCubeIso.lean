@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastExtra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValPsiZeroMulRigK
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialSumInsertKilledCoordinateComp

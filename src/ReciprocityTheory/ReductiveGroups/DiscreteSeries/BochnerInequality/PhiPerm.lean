@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.LayerBasic

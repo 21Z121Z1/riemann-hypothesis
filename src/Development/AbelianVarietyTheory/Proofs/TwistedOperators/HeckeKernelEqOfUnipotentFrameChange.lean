@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSimilitudeTriangularPeriodsOfHeckePoint
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermFormEqOfImEqOnSpanningLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqOfFlagOfHermFormPreservingStatement

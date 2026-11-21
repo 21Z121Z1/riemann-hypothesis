@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.FormallyUnramifiedOfTangentMapInjective
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 

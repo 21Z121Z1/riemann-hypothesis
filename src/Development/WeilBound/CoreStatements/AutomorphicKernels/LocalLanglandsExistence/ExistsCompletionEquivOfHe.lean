@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.WeilEquivOfLocalDegreeOne
 import GroundTheory.GlobalFields.CompletionAtPlace.Degree
 import GroundTheory.LocalFields.PadicLogSeries

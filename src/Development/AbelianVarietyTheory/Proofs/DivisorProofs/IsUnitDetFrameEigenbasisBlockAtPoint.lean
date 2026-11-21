@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAffineEigenframeNearImage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBaseFrame
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

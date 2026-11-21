@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.Fourier.Inversion
 import Mathlib.Analysis.Fourier.FourierTransformDeriv
 

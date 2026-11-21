@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.GeNatCast
 import Mathlib.Tactic.Polynomial.Basic
 

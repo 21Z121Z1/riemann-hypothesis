@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDerivationCotangentIndependent
 import Mathlib.Tactic.Polynomial.Basic
 set_option maxSynthPendingDepth 1

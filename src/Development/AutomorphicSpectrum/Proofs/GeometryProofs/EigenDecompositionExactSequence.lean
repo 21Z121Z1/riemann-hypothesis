@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmTypeEigenMultiplicityOfDensePrimes
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 

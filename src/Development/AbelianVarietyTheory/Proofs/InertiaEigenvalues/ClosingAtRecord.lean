@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultVTwistedDual
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PotDRLOfTied
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateTwistMultiplicationIntertwines

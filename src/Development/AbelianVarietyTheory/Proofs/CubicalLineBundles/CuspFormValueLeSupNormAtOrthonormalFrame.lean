@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LinkFD
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PointwiseNormSectionEqFlagDomainNorm
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MetricDataUniqueStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FracIdExistsTotPos
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.VeryAmpleByPw
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsAffineOfQuasiAffine

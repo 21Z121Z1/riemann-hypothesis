@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicGLn
 import GroundTheory.AutomorphicForms.StrongApproximationSLElementary
 import GroundTheory.GlobalFields.TateThesis.AdelicCharDual

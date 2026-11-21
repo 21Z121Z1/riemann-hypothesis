@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsColumnVector
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BlockConjugation
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

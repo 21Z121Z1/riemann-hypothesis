@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
 
 open NumberField NumberField.mixedEmbedding NumberField.InfinitePlace Matrix

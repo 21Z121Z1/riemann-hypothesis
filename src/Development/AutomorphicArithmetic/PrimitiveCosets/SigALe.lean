@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PrimitiveCosets.PrimRead
 import Development.AutomorphicArithmetic.PrimitiveCosets.CardPsiA
 

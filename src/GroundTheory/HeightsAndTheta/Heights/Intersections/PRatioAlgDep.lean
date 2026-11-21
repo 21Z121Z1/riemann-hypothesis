@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StRatioAlgDep
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIntDomainDim

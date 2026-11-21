@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.MixedDifference
 import Mathlib.LinearAlgebra.Eigenspace.Zero

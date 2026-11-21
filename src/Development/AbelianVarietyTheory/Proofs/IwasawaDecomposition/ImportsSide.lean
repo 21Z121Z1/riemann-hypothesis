@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGoodMapLevelCoverWeightZeroStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGoodMapLevelDividesStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGoodMapSideCoverStatement

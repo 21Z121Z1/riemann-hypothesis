@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevChiEqOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasInfExpIffHasInfQ
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAfMemIntUIff

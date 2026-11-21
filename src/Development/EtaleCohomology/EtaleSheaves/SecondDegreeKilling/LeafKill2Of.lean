@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.SecondDegreeKilling
 import Development.EtaleCohomology.EtaleSheaves.SecondDegreeKilling.HkpullComp
 import Std.Tactic.BVDecide.Normalize.Prop

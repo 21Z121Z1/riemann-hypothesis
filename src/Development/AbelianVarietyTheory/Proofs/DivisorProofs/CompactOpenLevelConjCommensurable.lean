@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfCompactOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCyclotomicExtensionQI
 import Mathlib.GroupTheory.Commensurable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL6.Statement
 import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
 

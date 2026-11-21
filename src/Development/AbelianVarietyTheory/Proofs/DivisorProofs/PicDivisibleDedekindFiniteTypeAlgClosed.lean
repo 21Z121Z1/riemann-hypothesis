@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompletionEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeCountGenerates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassGroupNthPowerOfCodimOneMod

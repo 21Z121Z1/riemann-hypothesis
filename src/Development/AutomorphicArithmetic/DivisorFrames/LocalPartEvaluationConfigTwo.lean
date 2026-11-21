@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.LocalThetaPartitionTripleAlt
 import Development.AutomorphicArithmetic.DivisorFrames.UnitaryStabilizerLiftsToSmallerSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalEigenTriple

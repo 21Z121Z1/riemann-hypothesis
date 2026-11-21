@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.CompletionAtPlace.Galois
 import GroundTheory.LocalFields.Ramification
 import Mathlib.NumberTheory.NumberField.Ideal.Basic

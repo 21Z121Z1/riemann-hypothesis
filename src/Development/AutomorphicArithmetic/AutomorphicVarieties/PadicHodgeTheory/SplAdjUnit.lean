@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsFirstOrderDeformationOfRZero
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.OrdFlag
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.LMemMax

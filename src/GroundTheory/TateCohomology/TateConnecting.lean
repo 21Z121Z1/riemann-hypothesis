@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.CupConnecting
 import Mathlib.CategoryTheory.Monoidal.Mon
 import Mathlib.RepresentationTheory.Homological.TateCohomology.Basic

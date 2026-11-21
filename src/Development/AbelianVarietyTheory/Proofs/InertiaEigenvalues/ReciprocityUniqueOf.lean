@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTheRecOfIsRec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BrauerDegreeZero

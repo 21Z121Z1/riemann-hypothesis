@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder

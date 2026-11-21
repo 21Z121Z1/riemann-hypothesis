@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianUnipotentGeneratorMapIsometry
 open Formalism.HermitianLatticeCounting.S6
 set_option maxHeartbeats 1000000 in

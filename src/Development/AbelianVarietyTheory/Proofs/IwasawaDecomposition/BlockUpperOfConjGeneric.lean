@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockUpperOfGenericCharacter
 import Std.Tactic.BVDecide.Normalize.Prop
 

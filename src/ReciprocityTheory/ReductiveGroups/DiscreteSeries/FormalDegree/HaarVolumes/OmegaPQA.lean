@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.DensOn
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.CategoryTheory.Countable

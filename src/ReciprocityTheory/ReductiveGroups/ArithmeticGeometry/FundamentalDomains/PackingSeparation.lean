@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IntegralTraceNormBounds
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Order.CompletePartialOrder

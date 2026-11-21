@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOfIsSm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSpanCommutant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLineMemInfPointsStatement

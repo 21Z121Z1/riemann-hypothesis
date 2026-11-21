@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.LemmaN
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.GramJoint
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.DiamondFree

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RallisConvOfSteps
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SwSection
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralNeTopOfBounds

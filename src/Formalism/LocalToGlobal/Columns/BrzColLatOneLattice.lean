@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.SummandSlopeAtDecoratedLattice
 import Formalism.LocalToGlobal.Columns.ToHLatLemmas
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CreAnnApply
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BracketLeviModuleBoundaryPart
 

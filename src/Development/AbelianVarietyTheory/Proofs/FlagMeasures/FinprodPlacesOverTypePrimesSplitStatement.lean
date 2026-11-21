@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FinprodPlacesOverTypePrimesSplit
 open Formalism.BasicNotions Formalism.MainNotions NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
 import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAlternatingForm
 import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair

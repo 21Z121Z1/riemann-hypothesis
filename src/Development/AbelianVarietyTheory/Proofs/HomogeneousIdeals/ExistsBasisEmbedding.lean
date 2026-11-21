@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsIsKroneckerCharOfDiscr
 import Mathlib.Analysis.SpecialFunctions.Elliptic.Weierstrass
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistAtOfNe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NrmCoeffProdLinearStatement
 import Mathlib.Topology.Compactification.OnePoint.ProjectiveLine

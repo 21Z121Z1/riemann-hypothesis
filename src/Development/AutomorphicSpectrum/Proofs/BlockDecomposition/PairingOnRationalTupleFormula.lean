@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatTuple
 import Formalism.LocalRingCardinality.DataHost

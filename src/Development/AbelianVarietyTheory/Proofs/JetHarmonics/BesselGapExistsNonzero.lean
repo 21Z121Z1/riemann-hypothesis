@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselFunctionalSideGrowth
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapIntegrabilityStatement
 

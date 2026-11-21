@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.GramMatrixMulRight
 import Formalism.LocalToGlobal.CharacterGerms.SelfConjugateRowData
 import Formalism.LocalToGlobal.CharacterGerms.ValBlocksCChart

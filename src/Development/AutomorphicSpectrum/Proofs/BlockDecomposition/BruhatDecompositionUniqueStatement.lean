@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BruhatDecompositionUnique
 open ReciprocityTheory.Ty.Fin
 set_option maxHeartbeats 1000000 in

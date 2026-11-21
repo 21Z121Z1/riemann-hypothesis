@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHyperspecialIffGIntOfSuppAtSplit
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNonzeroMoveConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MoveSplitSupportInvariantStatement

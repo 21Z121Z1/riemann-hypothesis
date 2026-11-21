@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationFormExistsFreeDeRhamStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationFormRingActionSymmetricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeSeparatesEmbeddingsAltBis

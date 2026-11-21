@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOneP
 import Mathlib.Analysis.InnerProductSpace.Spectrum
 import Mathlib.Topology.Sheaves.Presheaf

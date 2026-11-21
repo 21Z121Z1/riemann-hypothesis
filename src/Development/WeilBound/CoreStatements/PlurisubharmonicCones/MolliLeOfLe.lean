@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.LevelFree
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsomorphicLinesPotentialDifference
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PTruncTransfer

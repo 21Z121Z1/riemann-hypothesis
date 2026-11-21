@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.ClPullApply
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
 

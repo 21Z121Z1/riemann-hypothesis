@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPeriodChartDualRiemannStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicLogOnConvex
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.NormFderivLeOfClosedBallSubset

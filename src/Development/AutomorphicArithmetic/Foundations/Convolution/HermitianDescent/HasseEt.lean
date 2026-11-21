@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormAlmostAll
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsRealEmbeddingEqHom
 import Development.AutomorphicArithmetic.Splittings.ExistsCyclicGaloisTensorAlgEquivPi

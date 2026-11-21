@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMetricExplicitMatrixFormStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogBlockMetricOffBoundaryStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsPermOfRange

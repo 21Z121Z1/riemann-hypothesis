@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzInfinitePlaceApprox
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLineDerivativeSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairThetaUniformBoundFamilyStatement

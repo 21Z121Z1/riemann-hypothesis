@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CircleHomEqZpow
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

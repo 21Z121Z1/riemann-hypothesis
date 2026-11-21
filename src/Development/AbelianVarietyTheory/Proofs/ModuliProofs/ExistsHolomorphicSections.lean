@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.Imports
 import Mathlib.RingTheory.RingHom.Etale

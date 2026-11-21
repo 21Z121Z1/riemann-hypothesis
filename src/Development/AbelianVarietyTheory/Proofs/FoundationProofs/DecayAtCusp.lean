@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormEvalSmulMulImRpowPolyDegreeSlashStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFormSlashHoloDecayStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerPeriodPolynomialLimitAtCuspStatement

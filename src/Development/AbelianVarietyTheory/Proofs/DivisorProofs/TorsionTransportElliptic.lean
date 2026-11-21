@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDetGen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionTransportCmPeriodsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodTransportGaloisConjugateStatement

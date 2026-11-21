@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BlockResolutionMetricObjects
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanObjects
 set_option maxSynthPendingDepth 1

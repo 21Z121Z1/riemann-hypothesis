@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQExpansionOfLevelLinearOperations
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators
 open GlobalTheory.QFam

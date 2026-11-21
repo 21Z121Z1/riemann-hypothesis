@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.GeomIntSelf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSiegelForm
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsHolUnifReparam

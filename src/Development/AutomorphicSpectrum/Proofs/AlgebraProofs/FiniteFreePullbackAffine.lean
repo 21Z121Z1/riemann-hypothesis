@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FiniteFreeHom
 import Mathlib.AlgebraicGeometry.Morphisms.RingHomProperties
 import Mathlib.Combinatorics.Quiver.ReflQuiver

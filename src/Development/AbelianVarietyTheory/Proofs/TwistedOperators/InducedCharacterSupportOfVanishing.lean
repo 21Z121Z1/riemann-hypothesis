@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.WeylIntegrationSum
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.InducedCharacterVanishing
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.InducedAdmissibleFiniteLength

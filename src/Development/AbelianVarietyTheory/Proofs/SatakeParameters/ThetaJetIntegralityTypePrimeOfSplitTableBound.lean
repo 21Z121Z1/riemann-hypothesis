@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JetSplitAmb
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemRatIdxOfJetsRatDeg
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JetLossOfFamilyFacts

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanNormWittColumnTranslateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameFirstColumnNonzeroOrthogonalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeHeightUniformLowerBoundStatement

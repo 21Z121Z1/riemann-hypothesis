@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CoeffRingsHaveRootsOfUnity
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsLabOfOrder
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlocksUnique

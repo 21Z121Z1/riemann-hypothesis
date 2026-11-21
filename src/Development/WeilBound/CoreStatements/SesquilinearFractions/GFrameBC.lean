@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GBridge
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GModel
 import Development.WeilBound.CoreStatements.SesquilinearFractions.FrameBCLin

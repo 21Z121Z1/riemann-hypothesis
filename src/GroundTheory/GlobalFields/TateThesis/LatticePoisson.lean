@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.LatticePoissonBasic
 import Mathlib.Algebra.Module.ZLattice.Covolume
 import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier

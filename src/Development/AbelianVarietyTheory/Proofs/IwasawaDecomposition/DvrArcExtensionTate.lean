@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsGrpPullbackOfCommute
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPushEquiv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelReps

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.BocksteinBaseChange.BocksteinSheafHomotopy.BocksteinLemmas
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 import Mathlib.RingTheory.SimpleRing.Principal

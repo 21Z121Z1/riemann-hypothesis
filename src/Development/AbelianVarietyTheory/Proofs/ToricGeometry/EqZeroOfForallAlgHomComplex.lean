@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.FieldTheory.PurelyInseparable.Exponent
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

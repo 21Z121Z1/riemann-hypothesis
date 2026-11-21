@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsSmoothVec
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IwasawaMeasureExistence.NormExpSubOneSubLe
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.MirabolicInduction.HsInnerSelfEqSumSq

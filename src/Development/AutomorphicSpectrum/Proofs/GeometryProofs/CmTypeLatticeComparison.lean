@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPullWedge
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelConstantsExtension
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain MvPolynomial

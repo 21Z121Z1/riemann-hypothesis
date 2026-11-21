@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFormOneAddMulSmulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelDbarAdditiveComplexLinearOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DelDbarLeibnizEvenFormMulStatement

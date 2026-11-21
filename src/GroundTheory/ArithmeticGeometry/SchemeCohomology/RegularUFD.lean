@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularUFDLocalization
 import Mathlib.LinearAlgebra.Alternating.Uncurry.Fin
 import Mathlib.LinearAlgebra.ExteriorPower.Basis

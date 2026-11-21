@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HeckeAlgebraLevel
 import Mathlib.RepresentationTheory.Irreducible
 

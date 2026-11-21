@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerRestrictionCharacter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedEvaluationCompatibleLevi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedEvaluationSeesaw

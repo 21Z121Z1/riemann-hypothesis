@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.TangentCombinationTransitivity
 import Development.AutomorphicArithmetic.DivisorFrames.CutLatticeNormBound
 import Development.AutomorphicArithmetic.DivisorFrames.TangentBasisChangeTorsionCharacter

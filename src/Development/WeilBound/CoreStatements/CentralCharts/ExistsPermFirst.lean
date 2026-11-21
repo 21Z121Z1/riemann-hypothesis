@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CentralCharts.PshAt0
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsSncAdaptedChartAtPointStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncAdaptedChartSectionFormStatement

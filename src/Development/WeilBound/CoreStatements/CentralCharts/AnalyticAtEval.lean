@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSegreChartFrames
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 

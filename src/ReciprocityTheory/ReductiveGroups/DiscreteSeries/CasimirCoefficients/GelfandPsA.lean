@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.SimpleRing.Principal
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsOfFormula
 

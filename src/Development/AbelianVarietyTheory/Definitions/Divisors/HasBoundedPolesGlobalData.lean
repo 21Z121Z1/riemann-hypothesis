@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq
 import Development.AbelianVarietyTheory.Definitions.Divisors.LinearIndependentPullChart
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf

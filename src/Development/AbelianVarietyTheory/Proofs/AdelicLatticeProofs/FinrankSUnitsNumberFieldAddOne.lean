@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SUnitsNumberFieldFg
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.NumberField.ClassNumber

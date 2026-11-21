@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsBasisSpanEqOfDiscrete
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.PrincipalTorusEqZeroOfImLattice
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsShortIndependentIsU

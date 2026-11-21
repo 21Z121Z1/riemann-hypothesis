@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LinearDescent
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

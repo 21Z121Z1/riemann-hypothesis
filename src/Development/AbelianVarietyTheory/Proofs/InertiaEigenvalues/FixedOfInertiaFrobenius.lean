@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AxSenTateComplexPadicFixedClosure
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResEqIff
 import Mathlib.Topology.Connected.Separation

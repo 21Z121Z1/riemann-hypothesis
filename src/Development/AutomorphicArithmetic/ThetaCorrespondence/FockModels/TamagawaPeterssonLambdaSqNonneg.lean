@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.ConstantSupremum.SupremumConstantLogBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntitoneWeightLogBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeMaxSquaredBound

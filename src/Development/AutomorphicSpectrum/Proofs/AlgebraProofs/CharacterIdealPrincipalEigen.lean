@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Henselian

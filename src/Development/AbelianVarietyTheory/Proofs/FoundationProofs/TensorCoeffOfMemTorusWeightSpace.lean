@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLeftCoactionIffIsCoactionComm
 import Mathlib.RingTheory.Bialgebra.MonoidAlgebra
 import Mathlib.RingTheory.HopfAlgebra.Basic

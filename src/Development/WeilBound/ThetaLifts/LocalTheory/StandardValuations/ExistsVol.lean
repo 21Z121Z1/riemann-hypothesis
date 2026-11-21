@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.ConeVal
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.SmallFSing
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical

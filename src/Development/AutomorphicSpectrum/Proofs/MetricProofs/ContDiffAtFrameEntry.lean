@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Mathlib.Analysis.Matrix.PosDef

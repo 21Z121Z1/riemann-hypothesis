@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantOrdersPropertyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeadMulUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AinfElementThetaCompatibleStatement

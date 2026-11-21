@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelIndexEqCard
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermMultiplicative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmVecTranslate

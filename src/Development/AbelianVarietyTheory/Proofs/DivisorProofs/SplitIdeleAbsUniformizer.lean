@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviBlockSizesSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalFieldNormValuation
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceTensorProductFiniteExtension

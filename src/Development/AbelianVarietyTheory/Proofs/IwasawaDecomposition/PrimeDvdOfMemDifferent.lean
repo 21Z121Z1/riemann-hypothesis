@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.FieldSizeAdjoinKthRoot
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TypeNormOfKummer
 

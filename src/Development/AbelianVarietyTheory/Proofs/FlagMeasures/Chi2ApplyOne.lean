@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DEqFinrankHHX
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FEqAndRdEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolFormalDegreeEq

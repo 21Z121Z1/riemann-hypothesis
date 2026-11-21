@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.TrBase
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.ExistsEqEllMul
 import Mathlib.Algebra.AffineMonoid.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModDepthGETwoOfRegularQuotientNoSocle
 open IsLocalRing TensorProduct Pointwise
 set_option maxHeartbeats 1000000 in

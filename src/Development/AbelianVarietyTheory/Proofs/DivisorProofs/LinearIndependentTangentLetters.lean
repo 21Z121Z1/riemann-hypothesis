@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBlockMetricDiagForm
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 open AlgebraicGeometry CategoryTheory NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsStepThreeOnWLift
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PClaimVanish
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSurjectiveClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableComplementInSocleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxThetaVanishingLocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxThetaVanishingGlobalStatement

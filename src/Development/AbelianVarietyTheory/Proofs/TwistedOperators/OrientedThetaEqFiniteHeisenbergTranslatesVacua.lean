@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisAvgInvariant
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymplOInvSmulNsmul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymplOSmulAddSmulAdd

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltGraded
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTateIsoGenericAbelianOfUniformisationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateIsoEvEqAtLcmLevelStatement

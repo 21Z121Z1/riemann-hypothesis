@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClassicalPointLiftingResiduePoint
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyThetaExtensionTestStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPairAvoidingSmallSets

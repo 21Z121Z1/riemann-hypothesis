@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.Statement
 import Formalism.GaussJetBounds.StatementH
 import Mathlib.Analysis.Normed.Field.Instances

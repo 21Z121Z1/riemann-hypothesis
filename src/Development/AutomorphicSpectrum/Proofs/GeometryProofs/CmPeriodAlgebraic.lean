@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCMFrame
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyPurePeriodsSpanStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodsSpanPureDecompositionStatement

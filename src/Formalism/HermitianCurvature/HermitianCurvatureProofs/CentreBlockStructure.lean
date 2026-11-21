@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.MemParahoricTimesPrincipalCongruenceIff
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 import Mathlib.RingTheory.PiTensorProduct

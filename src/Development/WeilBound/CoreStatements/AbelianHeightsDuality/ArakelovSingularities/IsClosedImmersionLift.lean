@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowSegre
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.TopologicalKrullDimOfPolyCovered
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint

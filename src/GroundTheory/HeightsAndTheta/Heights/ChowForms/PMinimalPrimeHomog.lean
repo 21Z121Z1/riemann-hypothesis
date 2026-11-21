@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Statements
 import Mathlib.RingTheory.GradedAlgebra.Radical
 import Mathlib.Topology.Sheaves.Presheaf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineOfExtensionLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameTypeOfExtensionLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineExtensionOfJumpsStatement

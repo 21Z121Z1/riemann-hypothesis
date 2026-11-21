@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InCell
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfComps
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct Topology

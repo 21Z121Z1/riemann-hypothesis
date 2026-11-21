@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CubicThreeRootsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivWeierstrassPAddHalfPeriodStatement
 import Mathlib.RingTheory.PiTensorProduct

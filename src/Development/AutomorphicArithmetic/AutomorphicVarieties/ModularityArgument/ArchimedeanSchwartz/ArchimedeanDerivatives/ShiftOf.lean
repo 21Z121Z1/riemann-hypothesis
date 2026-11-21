@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ShiftOf
 
 open NumberField MeasureTheory Matrix Polynomial GlobalTheory.CuspRep

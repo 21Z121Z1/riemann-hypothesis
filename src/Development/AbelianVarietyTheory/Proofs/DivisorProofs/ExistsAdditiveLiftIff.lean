@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftLeftFst
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.BiadditiveOfTrivAxes

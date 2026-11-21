@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmQuadraticCharacterEqProdRealSigns
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutDef

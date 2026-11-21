@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.SpanMemOfImage
 import Formalism.SharpRestriction.CuspSpanNormBounds.StarVecMulDM
 import Mathlib.Algebra.Ring.IsFormallyReal

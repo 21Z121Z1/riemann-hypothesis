@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableRangeOneDetUnitElementary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarMeasureAdditiveAutomorphismScale

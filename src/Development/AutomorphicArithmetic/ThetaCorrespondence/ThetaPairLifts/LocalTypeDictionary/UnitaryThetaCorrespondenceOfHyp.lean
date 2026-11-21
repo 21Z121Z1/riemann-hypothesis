@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllTraceOfMiddleX
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDSComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPseudoCoefficientExistenceUnitaryGroupStatement

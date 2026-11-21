@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAdmOnOfFiniteDimensional
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsClosedMatrixGroupImage
 open Matrix Topology Filter

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptySabMapOfCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDivisorPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KeepsRegularCompatibleMapStatement

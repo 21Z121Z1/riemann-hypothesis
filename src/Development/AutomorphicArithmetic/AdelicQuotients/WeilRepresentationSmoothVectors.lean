@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.FrameEstimates.CoefBd
 import Development.WeilBound.ThetaLifts.FrameEstimates.CoefEq
 import Development.WeilBound.ThetaLifts.FrameEstimates.CoefReal

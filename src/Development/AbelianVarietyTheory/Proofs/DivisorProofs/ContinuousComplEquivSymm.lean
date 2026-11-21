@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSplitChartSplitChart
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocIsoRefl

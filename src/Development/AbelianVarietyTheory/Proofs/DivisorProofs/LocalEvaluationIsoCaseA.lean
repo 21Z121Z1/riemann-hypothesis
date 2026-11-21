@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzValuedIntegralLinearStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleSchwartzSeminormBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAGoodModelEvaluationFirstStatement

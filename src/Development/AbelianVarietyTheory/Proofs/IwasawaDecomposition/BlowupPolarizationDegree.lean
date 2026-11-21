@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MonomialLevelFormDvrPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDivisorBaseChangeBlowupStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AlgHomExtOfIsHausdorff

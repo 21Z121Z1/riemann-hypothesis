@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HaarSK
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplitBasisCompl

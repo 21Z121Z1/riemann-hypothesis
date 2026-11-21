@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthQuotSmulRangeFree
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 

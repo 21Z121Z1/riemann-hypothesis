@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixActionGeneratedAdditive
 set_option synthInstance.maxHeartbeats 400000
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField

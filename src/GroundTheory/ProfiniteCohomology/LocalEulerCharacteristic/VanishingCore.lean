@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Descent
 import GroundTheory.ProfiniteCohomology.InflationRestriction
 set_option maxSynthPendingDepth 1

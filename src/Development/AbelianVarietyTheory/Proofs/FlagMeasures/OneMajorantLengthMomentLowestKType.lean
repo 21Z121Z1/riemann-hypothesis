@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.UniqGapOfUniq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassBoundLowTypesSum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FamiliesHaveLargeGapOfNumericalHypothesesStatement

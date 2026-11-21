@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.VertCmp
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPullback
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusCardBoundsAndMul
 import Mathlib.FieldTheory.Finite.Extension
 import Mathlib.Tactic.ENatToNat

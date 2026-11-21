@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RedOmHTBc
 open Module NumberField GlobalTheory.CompanionTheory.Ar.HT TensorProduct
 

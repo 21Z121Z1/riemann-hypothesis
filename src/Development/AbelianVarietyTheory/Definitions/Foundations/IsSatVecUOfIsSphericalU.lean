@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormEulerPolySubOneLe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinsumDosetIndSmul

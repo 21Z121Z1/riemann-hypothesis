@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.OfInfProjInfMulOfFinProjFin
 import Mathlib.RingTheory.Complex
 open scoped TensorProduct NNReal Matrix

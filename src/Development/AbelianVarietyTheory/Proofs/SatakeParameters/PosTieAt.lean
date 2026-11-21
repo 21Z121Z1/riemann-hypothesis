@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosBridge
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JointCmpEmbeddingY
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Realises

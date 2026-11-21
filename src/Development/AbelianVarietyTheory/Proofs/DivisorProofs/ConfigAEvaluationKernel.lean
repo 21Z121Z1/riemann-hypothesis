@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableIdelesPowerDecay
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeAArchimedeanEvaluationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeAArchimedeanSecondStatement

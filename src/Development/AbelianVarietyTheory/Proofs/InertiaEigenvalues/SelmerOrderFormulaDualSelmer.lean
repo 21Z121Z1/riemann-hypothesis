@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalConditionOrderAboveLFiniteModulesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GreenbergWilesPairStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalDualityPerfectPairFiniteModulesStatement

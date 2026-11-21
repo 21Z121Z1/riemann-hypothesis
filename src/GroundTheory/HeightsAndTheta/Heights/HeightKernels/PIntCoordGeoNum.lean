@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordGeoNum
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.GeoNum
 set_option maxSynthPendingDepth 1

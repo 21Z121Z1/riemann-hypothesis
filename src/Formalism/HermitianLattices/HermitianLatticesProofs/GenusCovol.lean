@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound
 import Mathlib.Tactic.ENatToNat
 

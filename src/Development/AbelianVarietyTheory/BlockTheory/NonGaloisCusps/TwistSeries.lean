@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IntFormsSubset
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RayFieldTheta

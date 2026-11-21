@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationCompactSetBound
 
 open scoped TensorProduct NNReal Matrix

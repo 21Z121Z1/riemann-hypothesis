@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupCommon.CoeffSingleLg
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CubicExponentialFactor.NormAddLeOne
 import Mathlib.Tactic.Monotonicity.Lemmas

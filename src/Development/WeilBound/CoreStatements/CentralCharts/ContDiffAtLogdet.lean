@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CentralCharts.TraceMulReNonneg
 import Development.WeilBound.CoreStatements.CentralCharts.ContDiffAtLogNorm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodGramSmoothPuncturedStatement

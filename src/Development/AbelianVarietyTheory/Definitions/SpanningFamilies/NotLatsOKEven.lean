@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.DatEqZero
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.StandardLatticeGoodPlace
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.PowSqEqOneOfKilledBy

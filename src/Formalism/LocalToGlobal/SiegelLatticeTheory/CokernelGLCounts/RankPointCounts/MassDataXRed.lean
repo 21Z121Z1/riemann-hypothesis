@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.MassDataIndices
 
 namespace Formalism.L2.SG.Pf.MassDataX

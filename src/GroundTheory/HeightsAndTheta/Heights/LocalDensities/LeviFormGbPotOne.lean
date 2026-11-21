@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.AMassStA
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension

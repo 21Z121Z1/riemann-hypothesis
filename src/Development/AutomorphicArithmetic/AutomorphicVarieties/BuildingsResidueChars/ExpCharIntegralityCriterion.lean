@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.ContinuousResP
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CoefSup
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EcField

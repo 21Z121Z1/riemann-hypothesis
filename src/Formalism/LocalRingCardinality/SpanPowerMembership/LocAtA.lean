@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.Adelic
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.LocalField.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelsFinExt
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

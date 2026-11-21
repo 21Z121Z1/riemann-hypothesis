@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIsCombAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SingleMemIdAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt

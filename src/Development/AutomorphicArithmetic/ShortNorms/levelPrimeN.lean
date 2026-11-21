@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ShortNorms.ShortNorm
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Data.Int.Star

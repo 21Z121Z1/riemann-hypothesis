@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ContinuousMatrixEntryAbsSum
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CdScaleIsTrueScale
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold

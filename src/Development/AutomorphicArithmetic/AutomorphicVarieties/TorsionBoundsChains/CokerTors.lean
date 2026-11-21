@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.MaxIndep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.FullEnum
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.IndexLe

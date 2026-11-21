@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieScalar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenuineSplittingAdelicSchwartzPlaceSignatuStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSplittingsDifferByCharacterStatement

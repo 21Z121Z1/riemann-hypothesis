@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagInduces
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackIdFlagPieceIsoStatement

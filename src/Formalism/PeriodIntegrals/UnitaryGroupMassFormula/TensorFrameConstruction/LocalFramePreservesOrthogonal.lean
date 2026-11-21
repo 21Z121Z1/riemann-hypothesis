@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.ScPiExists
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.Monotonicity.Lemmas

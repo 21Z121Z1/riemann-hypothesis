@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageDegreePositiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefShiftedFubiniStudyOfShortGeneratorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionsHeightLowerBoundStatement

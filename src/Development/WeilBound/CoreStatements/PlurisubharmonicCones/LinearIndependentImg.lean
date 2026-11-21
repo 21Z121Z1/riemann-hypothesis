@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsSmulMemEig
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogIndexOfOrthogonalFamily
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PLocalChange

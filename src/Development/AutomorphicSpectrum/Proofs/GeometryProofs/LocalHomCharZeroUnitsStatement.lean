@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalHomCharZeroUnits
 open AlgebraicGeometry CategoryTheory
 set_option maxHeartbeats 1000000 in

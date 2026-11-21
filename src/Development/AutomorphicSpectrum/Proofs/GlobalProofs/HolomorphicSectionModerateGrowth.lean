@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousSectionPolynomialGrowth
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CompactSpaceCxPtsOfIsProper
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RegularFunctionPolynomialGrowthStatement

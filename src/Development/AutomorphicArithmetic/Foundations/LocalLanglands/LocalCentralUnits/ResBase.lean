@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.TameRecAll
 import Development.DiscreteGroups.GlobalIrreducibility.DzGalRes

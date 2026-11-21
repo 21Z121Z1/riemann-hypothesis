@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsAdaptedAt
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LinPart
 

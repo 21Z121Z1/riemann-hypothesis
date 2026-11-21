@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.FiniteBruhat
 import GroundTheory.AutomorphicForms.Iwasawa
 import Mathlib.LinearAlgebra.Matrix.Rank

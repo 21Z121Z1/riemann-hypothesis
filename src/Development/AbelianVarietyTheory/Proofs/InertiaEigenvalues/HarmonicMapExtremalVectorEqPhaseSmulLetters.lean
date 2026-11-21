@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValRingLocRing
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarmVecEqPhaseLetters
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsInertTop

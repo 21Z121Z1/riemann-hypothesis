@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HopfPointMem
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NilpotentChartBaseChangeFormalGroupStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsHodgeTateDatumFormalGroupCharactersStatement

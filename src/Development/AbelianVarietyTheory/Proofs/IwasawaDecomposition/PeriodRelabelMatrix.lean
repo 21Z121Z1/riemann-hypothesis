@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HorizontalCoordinateLatticeIsometryDetOne
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 

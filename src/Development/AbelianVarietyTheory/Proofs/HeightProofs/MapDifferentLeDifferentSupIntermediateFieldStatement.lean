@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MapDifferentLeDifferentSupIntermediateField
 open NumberField IsDedekindDomain GlobalTheory.FieldSize
 open scoped IntermediateField nonZeroDivisors

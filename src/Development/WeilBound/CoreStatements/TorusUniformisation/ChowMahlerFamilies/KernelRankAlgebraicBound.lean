@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.JordanBasisNilpotent
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.LinearAlgebra.Charpoly.BaseChange

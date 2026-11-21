@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CyclicCupProf
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.BrauerInflation
 set_option maxSynthPendingDepth 1

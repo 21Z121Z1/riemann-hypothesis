@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.EulerFactors
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsFourierInfinite
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsFourierFinite

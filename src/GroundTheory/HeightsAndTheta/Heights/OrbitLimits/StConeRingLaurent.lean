@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ChartConeObjects
 set_option maxSynthPendingDepth 1
 

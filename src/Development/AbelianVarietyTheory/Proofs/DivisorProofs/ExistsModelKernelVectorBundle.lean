@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonoOfInjectiveCodimOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationExtensionClosed
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField

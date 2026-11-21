@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPolyDerivationsDetectSquare
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPerfectFieldExtensionFormallySmooth
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPolyKaehlerFree

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafClCut
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.RegularLocalRing.Defs

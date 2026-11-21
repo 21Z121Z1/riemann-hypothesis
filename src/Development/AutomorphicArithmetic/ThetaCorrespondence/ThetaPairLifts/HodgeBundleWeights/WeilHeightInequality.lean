@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.VolumeLeSelfIntersection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelOf
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.MulEqOneOfComb

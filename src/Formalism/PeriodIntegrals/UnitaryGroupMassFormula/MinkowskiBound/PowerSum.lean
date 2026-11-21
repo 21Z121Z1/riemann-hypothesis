@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiBound.PowerSumStep
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousRhoApply
 open scoped Matrix
 open MeasureTheory GlobalTheory.RealWeil

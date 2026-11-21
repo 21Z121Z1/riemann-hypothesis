@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionFreeSurjZmod
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneFormHermitianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedDiffsHermitianTwistStatement
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HermSysHypOneLeLambdaZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqIsoSpecComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPtOfMemConeOfIsAlgClosed

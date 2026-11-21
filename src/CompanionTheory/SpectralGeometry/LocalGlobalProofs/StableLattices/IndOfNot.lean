@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.CapelliDeterminantBlockProduct
 import Mathlib.Data.Fin.Tuple.Sort
 import Mathlib.Tactic.ENatToNat

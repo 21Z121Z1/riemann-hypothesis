@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ToOneSucc
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ValLastX

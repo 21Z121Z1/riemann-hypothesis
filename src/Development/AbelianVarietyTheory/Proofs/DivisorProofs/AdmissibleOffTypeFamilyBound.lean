@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UBoundOffTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VAddNonnegOfIsIntegral

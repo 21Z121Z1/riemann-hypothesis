@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonoOfNoEmbOfInjectiveGenSpecial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelGenericSpecialDvrStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelFrobeniusNoEmbedding

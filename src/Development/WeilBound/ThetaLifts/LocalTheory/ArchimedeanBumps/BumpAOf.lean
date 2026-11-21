@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.FormYx
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
 import Development.WeilBound.ThetaLifts.FrameEstimates.GrpTop

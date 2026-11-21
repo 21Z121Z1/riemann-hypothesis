@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TaylorCompChain
 open Filter Topology
 set_option maxHeartbeats 1000000 in

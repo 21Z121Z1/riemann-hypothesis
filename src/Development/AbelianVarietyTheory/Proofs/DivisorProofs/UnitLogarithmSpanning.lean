@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitLogSpanTraceZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitPowerInOrderStatement
 import Mathlib.Analysis.CStarAlgebra.Classes

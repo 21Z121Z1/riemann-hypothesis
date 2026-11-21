@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjMaxRank
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjFullRankDense
 set_option maxSynthPendingDepth 1

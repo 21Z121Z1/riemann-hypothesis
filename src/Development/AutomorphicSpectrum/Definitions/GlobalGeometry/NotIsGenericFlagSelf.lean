@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import Mathlib.FieldTheory.RatFunc.IntermediateField
 import Mathlib.RingTheory.WittVector.IsPoly

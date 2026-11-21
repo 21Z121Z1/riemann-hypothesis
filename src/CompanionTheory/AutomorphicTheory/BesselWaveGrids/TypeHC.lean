@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SupExistsOfInterlaced
 import CompanionTheory.HarishChandraModules.NonemptyRepresentations.TypeHW
 import CompanionTheory.HarishChandraModules.NonemptyRepresentations.IsData

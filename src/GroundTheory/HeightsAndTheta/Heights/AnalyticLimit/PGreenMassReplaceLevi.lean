@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 import Mathlib.Analysis.InnerProductSpace.Calculus
 set_option maxSynthPendingDepth 1

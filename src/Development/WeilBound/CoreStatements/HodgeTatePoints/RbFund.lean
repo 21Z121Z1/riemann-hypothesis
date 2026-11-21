@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TeichmullerCharacterOrderGenerates
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.Valuation.Integral

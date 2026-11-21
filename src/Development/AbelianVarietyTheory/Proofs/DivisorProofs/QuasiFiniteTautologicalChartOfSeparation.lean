@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.MinSt5OfMinSt4
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGensOfDataFrom
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueFieldMapFiniteOfQuasiFinite

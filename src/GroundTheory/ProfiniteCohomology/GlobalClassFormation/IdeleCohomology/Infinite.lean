@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.InfinitePlaces
 import GroundTheory.GlobalFields.IdeleGroups.LocalHerbrandInfinite
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Finite

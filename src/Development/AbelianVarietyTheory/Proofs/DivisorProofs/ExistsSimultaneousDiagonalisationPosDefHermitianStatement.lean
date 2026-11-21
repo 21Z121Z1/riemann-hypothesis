@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSimultaneousDiagonalisationPosDefHermitian
 open Filter Topology MeasureTheory GlobalTheory.HSAmp
 open scoped ComplexOrder Matrix

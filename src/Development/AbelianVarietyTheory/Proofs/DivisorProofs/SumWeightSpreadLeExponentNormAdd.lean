@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SumExtendByZeroLeSum
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart

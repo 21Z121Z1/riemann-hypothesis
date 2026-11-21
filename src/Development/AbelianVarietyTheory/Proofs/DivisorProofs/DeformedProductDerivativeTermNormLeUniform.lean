@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DTermOrigin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdNormSq
 

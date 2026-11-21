@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ReLtOneOfZero
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NeOneOfIsPrimitive
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InRegionMono

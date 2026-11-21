@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
 import Mathlib.Order.CompletePartialOrder
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.FiniteDimensionalHcSpace
 import Mathlib.RepresentationTheory.Character
 import Mathlib.Tactic.ENatToNat

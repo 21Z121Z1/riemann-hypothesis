@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.CoeToRepresentationApply
 import GroundTheory.AutomorphicForms.TensorProductTheorem.KProjApplyEqSelfIff
 import GroundTheory.AutomorphicForms.TensorProductTheorem.TwoFactor

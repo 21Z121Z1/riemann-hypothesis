@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTendstoOfPointwiseUniformBounds
 open SchwartzMap Filter Topology
 open scoped Nat

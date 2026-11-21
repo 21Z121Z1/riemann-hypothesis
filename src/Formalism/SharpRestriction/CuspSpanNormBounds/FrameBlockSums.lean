@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPtRepTrDat
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrameFactorGe
 import Formalism.SharpRestriction.CuspSpanNormBounds.TheoremBConstants

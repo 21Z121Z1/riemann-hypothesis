@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IsGlobalCharDetPow
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HarishChandraPermute
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HarishChandraParameterDescent

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.SlopeRobbaDegree
 import Mathlib.Data.Rat.Star
 set_option maxSynthPendingDepth 1

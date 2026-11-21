@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisTorsionCharsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisChangeTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantPerturbationBoundStatement

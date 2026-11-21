@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnGramDeterminantUnitLowerThreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagGramDensityInequalityComplexStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralUpdateSubShearStatement

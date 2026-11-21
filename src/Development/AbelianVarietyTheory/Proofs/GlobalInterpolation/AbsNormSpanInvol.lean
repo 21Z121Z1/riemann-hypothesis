@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.BaseLemmas
 
 open NumberField IsDedekindDomain Formalism.L2.Col

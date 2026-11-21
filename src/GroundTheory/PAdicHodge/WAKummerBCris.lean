@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.FundamentalSeqBCris
 import GroundTheory.PAdicHodge.WAKummerLog
 set_option maxSynthPendingDepth 1

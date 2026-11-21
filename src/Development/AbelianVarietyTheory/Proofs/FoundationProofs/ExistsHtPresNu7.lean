@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IwSys2
 import Development.AbelianVarietyTheory.Definitions.Foundations.KumValUnique
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.TorusInvariantK0RegCusp
 import Mathlib.Data.Finsupp.Interval
 set_option maxSynthPendingDepth 1

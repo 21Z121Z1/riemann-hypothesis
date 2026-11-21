@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Kernel
 import Formalism.LocalRingCardinality.AdicCompletionLocal.InstIsAdicCompleteOCSpanSingletonSetCast
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc

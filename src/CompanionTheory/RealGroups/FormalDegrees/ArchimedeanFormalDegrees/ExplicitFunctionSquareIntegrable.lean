@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.NormIndOfSteps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormInductionOfEstimates
 import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.FormalDegreeFormula.CoefPow

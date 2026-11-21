@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GramDetOptionFormula
 open GlobalTheory.Chamber
 open scoped InnerProductSpace ContDiff Classical

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LemmaBStatement
 
 set_option autoImplicit false

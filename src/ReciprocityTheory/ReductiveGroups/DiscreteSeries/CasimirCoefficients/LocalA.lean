@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.Tactic.Polynomial.Basic
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.PolarJmConjTranspose

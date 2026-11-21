@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryIntegralConjInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CompactUnitaryCoordFunMulEqSumStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasDerivAtMatrixExpEntryRealStatement

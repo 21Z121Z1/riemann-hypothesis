@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Weight
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 

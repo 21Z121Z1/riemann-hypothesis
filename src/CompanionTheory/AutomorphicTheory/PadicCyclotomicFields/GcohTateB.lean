@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohTateA
 import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohDefs
 import GroundTheory.ProfiniteCohomology.CyclicCupProf

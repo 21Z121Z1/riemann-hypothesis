@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.EquivariantActionEqOfAgreeOnGenerators
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExOfHodgeWt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreActionTrivialOfFixedPointResidueFieldStatement

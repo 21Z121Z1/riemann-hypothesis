@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Levels
 import GroundTheory.ProfiniteCohomology.Factor
 import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne

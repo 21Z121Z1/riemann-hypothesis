@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormDbarFormSubLogMetricLeStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

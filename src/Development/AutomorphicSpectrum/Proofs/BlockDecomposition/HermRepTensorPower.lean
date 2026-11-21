@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.A3oneOfFactSplitOfCountCont
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSmoothHermConstLine

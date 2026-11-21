@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CyclotomicNorms.DiscardKernel
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PowerSeries.Inverse

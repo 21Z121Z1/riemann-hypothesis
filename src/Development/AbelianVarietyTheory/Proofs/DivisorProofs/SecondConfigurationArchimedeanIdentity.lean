@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleConfigBThetaUnfoldingStatement
 
 open scoped TensorProduct NNReal Matrix

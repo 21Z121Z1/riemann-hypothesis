@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BottomExistsIntegrable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConstSmul
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.KerDiag

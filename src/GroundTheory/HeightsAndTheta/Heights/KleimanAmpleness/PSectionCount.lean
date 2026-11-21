@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.SectionCountTopSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.SectionCountDropSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GenericPointSectionHypotheses

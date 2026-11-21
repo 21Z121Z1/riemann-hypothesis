@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BelowFiniteNonempty
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StandardRankOneLatticeOfLocal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDivLatticeQuotient

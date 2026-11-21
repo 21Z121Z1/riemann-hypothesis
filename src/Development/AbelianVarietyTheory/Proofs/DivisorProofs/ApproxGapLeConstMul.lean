@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfSqNormEqExpGap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorRelationIntegralScaling
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPotentialOfMetricExists

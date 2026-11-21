@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsBisExtra
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InclEIntMem

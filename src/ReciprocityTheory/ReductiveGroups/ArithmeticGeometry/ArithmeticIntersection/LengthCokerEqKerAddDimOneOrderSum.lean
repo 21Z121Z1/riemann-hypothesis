@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.LengthEqRangeAddRange
 import Mathlib.Algebra.Module.LocalizedModule.Exact
 import Mathlib.RingTheory.KrullDimension.Field

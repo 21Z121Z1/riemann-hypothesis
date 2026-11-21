@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.SpreadingOutQuasiFiniteness
 import Development.EtaleCohomology.EtaleSheaves.LeafSpreadSmoothAffSmPf
 import Mathlib.RingTheory.Etale.Descent

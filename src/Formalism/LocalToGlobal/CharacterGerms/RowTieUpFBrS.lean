@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrI
 
 set_option autoImplicit false

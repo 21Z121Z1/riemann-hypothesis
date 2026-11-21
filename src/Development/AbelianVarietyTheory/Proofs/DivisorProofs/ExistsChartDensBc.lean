@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ContinuousBcPt
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory

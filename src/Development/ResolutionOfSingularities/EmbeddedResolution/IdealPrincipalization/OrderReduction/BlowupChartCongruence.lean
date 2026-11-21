@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupChartPreimages
 import Mathlib.AlgebraicGeometry.QuasiAffine
 open CategoryTheory AlgebraicGeometry TopologicalSpace

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCocompact.IsReducedInfiniteAdeleRing
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.EqZeroOfForallLTensorEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspW

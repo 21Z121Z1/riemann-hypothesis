@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MemChartComponents
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChartA
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.SegreChartObjects

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.RepAlg
 import Mathlib.RingTheory.Ideal.Quotient.Index
 import Mathlib.RingTheory.TwoSidedIdeal.Instances

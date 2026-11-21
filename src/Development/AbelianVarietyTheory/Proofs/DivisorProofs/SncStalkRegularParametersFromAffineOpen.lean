@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.DivSheafA
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

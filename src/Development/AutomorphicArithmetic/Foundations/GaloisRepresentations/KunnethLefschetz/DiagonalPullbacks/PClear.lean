@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.DiagonalPullbacks.ProjectiveBundleFormulaTorsion
 import Development.EtaleCohomology.EtaleTrace.LRingPf
 import Development.EtaleCohomology.EtaleTrace.H0LimitCoherence

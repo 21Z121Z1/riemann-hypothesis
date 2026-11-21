@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.LatAll
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicCombinations
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.QuadraticCoefficientForms

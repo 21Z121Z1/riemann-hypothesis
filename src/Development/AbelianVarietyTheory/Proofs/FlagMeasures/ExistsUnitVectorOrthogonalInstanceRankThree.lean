@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GaugeUnfold
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LamXEquivariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFrameOfHasSignature

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.Tactic.Polynomial.Basic

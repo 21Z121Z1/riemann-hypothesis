@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsUniqueFixedPoint
 import Mathlib.RingTheory.MvPowerSeries.Substitution
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilSiegelFormula
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HypsSatisfiable
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ShiftedAdditiveCharacterArchimedeanParameters

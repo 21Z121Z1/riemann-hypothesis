@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsPerfectOfIsDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamPairingPerfectOrthogonalOfKernelsZeroStatement
 open CategoryTheory AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct

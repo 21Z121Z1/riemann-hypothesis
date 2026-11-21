@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmatEqLowMat
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegrableMonomialMulConjComplexGaussian
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LintegralFintypeProdEqProd

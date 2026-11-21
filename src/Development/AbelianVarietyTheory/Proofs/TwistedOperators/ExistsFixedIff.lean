@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeltaHalfMulUnrTorus
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Cartan
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBlocksSubOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalMomentMatrixTransform
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticFormEqZeroOfLagrangianAtPlace

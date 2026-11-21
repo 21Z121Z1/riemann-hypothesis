@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IndexSmulCocycleEqCoboundary
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOrbitOfEventually
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TensorQuotientTorsionFreeComplete

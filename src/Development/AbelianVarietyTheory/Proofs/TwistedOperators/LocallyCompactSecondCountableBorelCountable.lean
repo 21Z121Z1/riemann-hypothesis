@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocallyCompactSecondCountableT2
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiscreteCountableGQ
 

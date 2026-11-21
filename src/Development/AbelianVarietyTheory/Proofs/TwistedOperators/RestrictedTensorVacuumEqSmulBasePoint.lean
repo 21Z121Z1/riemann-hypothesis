@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RestrictedTensorBasePointNormSq
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ApplyAddInfRat
 

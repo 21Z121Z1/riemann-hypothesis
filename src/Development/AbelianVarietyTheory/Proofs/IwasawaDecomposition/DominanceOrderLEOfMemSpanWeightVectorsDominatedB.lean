@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
 import Mathlib.LinearAlgebra.Eigenspace.Pi
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormAdditiveCharacterTypePrimeEqOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToLePerp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemPerpSpan

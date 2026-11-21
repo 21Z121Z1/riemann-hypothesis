@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.OmegaPQB
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Algebra.Ring.IsFormallyReal

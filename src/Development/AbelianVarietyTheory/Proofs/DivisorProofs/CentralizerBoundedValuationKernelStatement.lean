@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerBoundedValuationKernel
 open Matrix
 open scoped Classical

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FormalGroupLawLogarithm
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NonemptyClosedValuedExtensionOfCDVR

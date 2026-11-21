@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.LocalBesselUniquenessHolds
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameDegreeZeroFormsSelf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowDictGoodOpNonempty

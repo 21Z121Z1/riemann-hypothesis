@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.KummerGalois
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Hilbert90

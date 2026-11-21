@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.realCond
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic
 

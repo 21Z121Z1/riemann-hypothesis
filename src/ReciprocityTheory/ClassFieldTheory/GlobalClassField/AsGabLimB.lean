@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.GlobalClassField.AsGabLim
 
 namespace ReciprocityTheory.DiscreteGroups.GlobalClassField

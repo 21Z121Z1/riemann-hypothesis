@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MIntEqOfLeviEq
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
 

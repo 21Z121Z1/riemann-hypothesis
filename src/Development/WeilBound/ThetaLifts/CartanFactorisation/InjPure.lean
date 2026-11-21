@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.Factor
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.KCoinvOfDict

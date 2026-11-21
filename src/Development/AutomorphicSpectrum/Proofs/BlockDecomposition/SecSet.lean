@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.PadicLogSeries
 import Mathlib.Analysis.Complex.Circle
 open NumberField IsDedekindDomain MeasureTheory Topology GroundTheory.Global GroundTheory.LocalField GroundTheory.Automorphic GroundTheory.Automorphic.AutomorphicForm Ad3 Ad3.K Ad3.K.QuadraticBaseChangeGL3

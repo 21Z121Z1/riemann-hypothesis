@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.SplitS
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.LocalL
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.InertR

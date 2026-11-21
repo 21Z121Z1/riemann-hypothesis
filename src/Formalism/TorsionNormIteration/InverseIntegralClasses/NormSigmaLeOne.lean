@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.TorsionNormIteration.InvIntegralOfClass
 import Mathlib.RingTheory.PowerSeries.Expand
 import Mathlib.RingTheory.WittVector.IsPoly

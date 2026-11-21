@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousAdelicUnitaryEmbedding
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ActEEqOfConjRelated
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemMinimalPrimesOfMemSupport
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.DifferentiableOnSheet
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqGenericPoint

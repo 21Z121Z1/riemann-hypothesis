@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSquareIntegrable
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AeZeroOfSmall
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HalfLinearCocycle

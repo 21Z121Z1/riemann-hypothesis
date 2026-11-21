@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafExcFormalPf
 import Mathlib.CategoryTheory.Limits.Types.Pushouts
 

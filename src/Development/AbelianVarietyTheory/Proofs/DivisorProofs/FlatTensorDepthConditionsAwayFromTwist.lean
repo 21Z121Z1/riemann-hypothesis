@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsExpansionIff
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAtOfSubsingleton
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneCosetOfIsTensor

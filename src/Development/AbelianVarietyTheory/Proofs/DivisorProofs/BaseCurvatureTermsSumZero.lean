@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicConnectionAddSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WedgeWedgeAnticomm
 import Mathlib.Order.CompletePartialOrder

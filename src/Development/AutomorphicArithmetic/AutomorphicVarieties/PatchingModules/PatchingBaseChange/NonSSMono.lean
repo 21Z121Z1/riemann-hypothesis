@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.PairedDualFirstOrderDualMatrixSpace
 import Mathlib.RingTheory.Congruence.Hom
 open IsLocalRing UpperTheory.V.Alg UpperTheory.V.W UpperTheory.V.Pa

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.MemPrimitiveTensorsIffIsPrimitiveElem
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrobeniusStableSubspaceElementStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SubspaceContainsUnitStatement

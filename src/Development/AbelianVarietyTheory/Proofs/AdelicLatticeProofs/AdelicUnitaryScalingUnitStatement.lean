@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AdelicUnitaryScalingUnit
 open NumberField IsDedekindDomain GlobalTheory.AdLat GlobalTheory.UnRep
 open scoped TensorProduct Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.LeftEqIffLieVecSmul
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SumEmbeddingDualInt
 open NumberField

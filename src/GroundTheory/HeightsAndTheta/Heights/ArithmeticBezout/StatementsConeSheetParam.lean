@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ComplexFibreIdealBot
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.GaussNormEqCoeffGaussNorm
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeFibre

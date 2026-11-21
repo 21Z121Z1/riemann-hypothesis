@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.OrthogonalFrameDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImEmbHermSelf
 import Std.Tactic.BVDecide.Normalize.Prop

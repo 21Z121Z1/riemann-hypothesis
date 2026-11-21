@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHostCongruencePrimes
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem
 open scoped TensorProduct

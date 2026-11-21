@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FgOfSmulLe
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ShortThetaValueComplexPointEqClassicalThetaStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AnFibLiftStatement

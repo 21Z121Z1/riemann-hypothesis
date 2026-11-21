@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Coordinates
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PDiscInt
 

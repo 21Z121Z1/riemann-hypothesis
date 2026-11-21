@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.ExCusp
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SInfIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed

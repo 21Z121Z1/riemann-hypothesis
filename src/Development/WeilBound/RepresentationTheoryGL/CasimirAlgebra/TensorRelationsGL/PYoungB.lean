@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.PYoungA
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

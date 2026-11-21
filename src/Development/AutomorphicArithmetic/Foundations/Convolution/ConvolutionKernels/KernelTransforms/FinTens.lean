@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.NormIntLe
 import Development.AutomorphicArithmetic.LocalTestFunctions.ExistsCompactOpenBiinvariantOfTest
 import Development.AutomorphicArithmetic.LocalTestFunctions.LocalOperatorCompRhoLEqOfRightInvariant

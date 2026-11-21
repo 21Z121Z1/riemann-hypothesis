@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.StandardFiveNontrivial
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqBotOrEqOfStarProjectionEqSmul
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemL2OfAutomorphicEmbedding
 open MeasureTheory Set Filter NumberField IsDedekindDomain

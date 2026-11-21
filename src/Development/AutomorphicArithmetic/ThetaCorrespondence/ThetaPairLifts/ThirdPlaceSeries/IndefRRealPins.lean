@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.IndefRRealT
 import Formalism.LocalToGlobal.IndefiniteReal.BridgeSeed
 import Formalism.LocalToGlobal.IndefiniteReal.IsFDiagIffDiagonal

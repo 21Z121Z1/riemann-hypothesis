@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstTwoPointsPowerSeriesZeroOfVanishFirstAxis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffDpolyNEqDerivAt0
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralUnitMatrixGauge

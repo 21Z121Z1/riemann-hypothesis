@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.OsgoodA
 import Mathlib.Analysis.CStarAlgebra.ContinuousMap
 import Mathlib.RingTheory.PiTensorProduct

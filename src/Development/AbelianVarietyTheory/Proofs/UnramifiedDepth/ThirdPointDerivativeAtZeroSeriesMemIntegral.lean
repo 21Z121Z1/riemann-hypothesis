@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CanonGaugeDmonOfHLIntegral
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.CoeffSingleLawAdd
 

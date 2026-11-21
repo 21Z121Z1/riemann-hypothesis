@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MemHalfCosetSelf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfDefinite

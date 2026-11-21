@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianHomLieExtendsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelStatement

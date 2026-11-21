@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralPointClosurePullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightEqOneIffClosureDimProjectiveStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.RelAmpleOfLocallyOnBase
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.DualWeylModuleStable
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal
 

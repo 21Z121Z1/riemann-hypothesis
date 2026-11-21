@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TranslationInvariantSchwartzBruhatMapFactorsInte
 
 open MeasureTheory ValuativeRel GlobalTheory.SplitWeil GlobalTheory.SplitWeil.HaarFactor

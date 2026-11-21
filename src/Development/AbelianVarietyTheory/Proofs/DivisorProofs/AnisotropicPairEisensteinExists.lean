@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockDiagUnitaryHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChiDetProps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHtLeTwoMulQht

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsRegularOfSupportDimQuotientAddLengthLe
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.CategoryTheory.Monoidal.Mon

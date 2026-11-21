@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SymmetricFlagBasisVectorsApplyCentre
 open Formalism.HermitianLatticeCounting.S6 GlobalTheory.HermLat GlobalTheory.SA
 

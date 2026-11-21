@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SquareNuHeckeCharacterNotUnramifiedAtChosenPlace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff

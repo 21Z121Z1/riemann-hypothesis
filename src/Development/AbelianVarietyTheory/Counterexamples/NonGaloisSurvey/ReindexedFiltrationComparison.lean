@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.DualExactSequence
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SelmerWindowSums
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalKsOfFinExt

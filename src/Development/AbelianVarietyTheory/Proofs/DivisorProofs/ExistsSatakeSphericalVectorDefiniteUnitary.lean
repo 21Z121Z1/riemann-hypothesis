@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocCompSplit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableComplementSecondPolynomial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalCoefficientElementarySymm

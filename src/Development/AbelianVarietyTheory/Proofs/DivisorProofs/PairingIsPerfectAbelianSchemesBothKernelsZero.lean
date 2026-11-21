@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftLeftFst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamPolarizationPerfectPairingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPerfectPairOfGeometricFibresStatement

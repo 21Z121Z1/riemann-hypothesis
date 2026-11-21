@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsionFreePDThickeningFrameValuationIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstEqAddOfCob1EqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapSumSmul

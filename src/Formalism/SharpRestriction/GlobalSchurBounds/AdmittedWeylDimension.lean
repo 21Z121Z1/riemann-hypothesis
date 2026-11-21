@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice

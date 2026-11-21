@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.ShiftInvariance
 
 open Formalism.HN Formalism.HermitianLatticesTheory Matrix NumberField Finset

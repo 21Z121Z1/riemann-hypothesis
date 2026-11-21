@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TopRankPowers
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.L2ExtensionLogCanonical
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.KawamataViehweg

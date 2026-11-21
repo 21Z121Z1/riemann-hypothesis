@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.WeightedUniformRotatedOfExpansion
 import Formalism.SharpRestriction.CuspSpanNormBounds.TheoremBConstants
 

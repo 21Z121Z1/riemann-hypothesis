@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.FdegScale
 import Formalism.PeriodIntegrals.HCFdeg
 import Mathlib.RingTheory.WittVector.IsPoly

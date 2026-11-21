@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstFunctionalIntegralSmoothCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaplacePolynomialKernelDerivativeWordsFamilyStatement
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.LeftTranslate

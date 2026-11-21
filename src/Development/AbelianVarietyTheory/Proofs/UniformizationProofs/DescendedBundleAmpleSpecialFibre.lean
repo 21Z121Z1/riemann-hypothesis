@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubWeilOfGen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecPullNeZero
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PairingNondegenerate

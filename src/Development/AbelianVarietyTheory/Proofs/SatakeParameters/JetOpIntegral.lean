@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.FourierColumnIndicator
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SourceLatticeInvariance
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.CharacterValuation

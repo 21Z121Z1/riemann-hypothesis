@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFTopFormTDM
 
 namespace Formalism.FourierDecayAlt.P.CutBP.TDM

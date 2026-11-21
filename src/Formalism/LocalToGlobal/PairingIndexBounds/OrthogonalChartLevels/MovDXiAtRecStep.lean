@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FrecAt
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjFiniteUnipotentMemOpenSubgroup
 open NumberField MeasureTheory GlobalTheory.CuspRep GlobalTheory.HCF Topology
 open scoped NumberField.AdeleRing

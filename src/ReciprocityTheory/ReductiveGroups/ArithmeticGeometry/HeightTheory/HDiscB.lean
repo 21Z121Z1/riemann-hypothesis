@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.OmPoly
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.DiscProduct
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.DiscHadamard

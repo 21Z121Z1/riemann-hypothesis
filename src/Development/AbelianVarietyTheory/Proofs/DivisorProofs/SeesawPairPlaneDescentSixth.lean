@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerComposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationTriplePeriodCaseASecond
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneDecomposition

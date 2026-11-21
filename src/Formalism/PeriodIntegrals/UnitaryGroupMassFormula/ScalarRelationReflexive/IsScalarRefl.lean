@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ScalarRelationReflexive.MapMemSupThree
 import Formalism.PeriodIntegrals.ScalRelRepFree
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniREqUni
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CokernelSubbundleIsVB
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing

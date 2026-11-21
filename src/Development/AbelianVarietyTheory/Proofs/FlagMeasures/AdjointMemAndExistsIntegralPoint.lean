@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointLatticeIntersectionSelfDualProperties
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox

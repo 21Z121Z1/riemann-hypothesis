@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.TwistAtEach
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumIOfSumFMul
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsIntegrallyClosedOverring

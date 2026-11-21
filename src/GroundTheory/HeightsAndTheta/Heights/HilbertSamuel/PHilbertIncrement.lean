@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ColonSpanSingletonEqOfNotMem
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

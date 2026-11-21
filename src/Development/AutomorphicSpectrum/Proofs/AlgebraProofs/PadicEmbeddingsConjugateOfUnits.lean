@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Tactic.Monotonicity.Lemmas

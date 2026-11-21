@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelSt
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.HadStA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemistableLatticeRankStatement

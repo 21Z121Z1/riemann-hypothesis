@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentationInputsAllPartsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalizedPartOfClassSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowsOfAllPartPropertiesStatement

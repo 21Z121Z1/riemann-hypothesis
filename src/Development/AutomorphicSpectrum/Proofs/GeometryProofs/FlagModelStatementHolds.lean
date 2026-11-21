@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlagModelStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagModelCommonRefinementStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeFlagVectorBundleStatement

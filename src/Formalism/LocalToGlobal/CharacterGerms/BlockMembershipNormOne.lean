@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.BlockMembershipSelfConjugate
 import Formalism.LocalToGlobal.CharacterGerms.RowTieVal
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.LowCyc
 import Formalism.PeriodIntegrals.KFinSmooth
 import Mathlib.Topology.Sheaves.Presheaf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainPointsReadLie
 open GlobalTheory GlobalTheory.ChainPts
 set_option maxHeartbeats 1000000 in

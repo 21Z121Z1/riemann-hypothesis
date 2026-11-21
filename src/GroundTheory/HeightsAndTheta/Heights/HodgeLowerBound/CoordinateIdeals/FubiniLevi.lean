@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.InnerProductSpace.Calculus

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreProduct
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagPull
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagR

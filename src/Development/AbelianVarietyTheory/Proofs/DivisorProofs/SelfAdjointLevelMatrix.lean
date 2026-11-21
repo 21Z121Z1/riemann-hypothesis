@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarProd
 import Development.AbelianVarietyTheory.Counterexamples.AdelicSplittingExamples.TwoPrimesOfSplitPl
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU

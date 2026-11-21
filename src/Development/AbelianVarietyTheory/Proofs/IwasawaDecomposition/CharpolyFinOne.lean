@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalInvariantsMatchSemisimple
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotMemPlacesOverOfNe
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LatticeConditions

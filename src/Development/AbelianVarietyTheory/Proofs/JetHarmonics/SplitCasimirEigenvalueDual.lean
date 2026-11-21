@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LastComatrixRowInvertsDual
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorDualStandardRel
 import Mathlib.RingTheory.SimpleRing.Principal

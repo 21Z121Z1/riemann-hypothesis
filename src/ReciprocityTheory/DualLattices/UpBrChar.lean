@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.HasLenCokerDet
 import Std.Tactic.BVDecide.Normalize.Prop
 

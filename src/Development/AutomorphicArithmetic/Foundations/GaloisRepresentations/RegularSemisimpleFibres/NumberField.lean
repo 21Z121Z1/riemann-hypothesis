@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.OrthSubrepresentation
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport

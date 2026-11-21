@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ExistsRecordDat
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OffOfNotMem

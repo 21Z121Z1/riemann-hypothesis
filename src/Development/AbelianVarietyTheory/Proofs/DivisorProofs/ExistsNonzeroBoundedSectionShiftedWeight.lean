@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.InterpWeight
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FirstMinimumInvariantContinuousPosOnFrames
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CurvAndMarginClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PushExLeft
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDerivAt0OfCart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrPtOfEigFrame

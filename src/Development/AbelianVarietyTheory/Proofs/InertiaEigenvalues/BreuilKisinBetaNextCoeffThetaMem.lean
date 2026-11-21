@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TrivIsCr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDvdBound
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinEvWIsUnitInjectiveDvd

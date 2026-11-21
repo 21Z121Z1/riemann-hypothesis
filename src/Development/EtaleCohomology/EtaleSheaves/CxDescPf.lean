@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.DescentInduction
 import Mathlib.Algebra.Homology.Embedding.StupidTrunc
 

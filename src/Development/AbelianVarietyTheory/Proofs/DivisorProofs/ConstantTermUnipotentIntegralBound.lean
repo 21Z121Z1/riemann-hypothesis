@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogAbsEEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentCocompactInArithmeticStatement
 open scoped TensorProduct NNReal Matrix

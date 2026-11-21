@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HermitianSpaces
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume

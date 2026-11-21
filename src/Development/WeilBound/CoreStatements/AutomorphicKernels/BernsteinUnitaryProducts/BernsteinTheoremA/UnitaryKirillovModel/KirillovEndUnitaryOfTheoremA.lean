@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.SmoothRepSchur
 import GroundTheory.AutomorphicForms.LocallyConstantCompact
 import GroundTheory.AutomorphicForms.GLnLocal

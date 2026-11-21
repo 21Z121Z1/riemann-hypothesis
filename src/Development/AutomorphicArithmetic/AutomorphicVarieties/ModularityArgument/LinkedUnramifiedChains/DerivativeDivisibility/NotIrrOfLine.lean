@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.LinkedUnlOf
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegral
 

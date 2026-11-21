@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UniformBesselConstant
 open MeasureTheory Matrix
 open scoped InnerProductSpace ENNReal

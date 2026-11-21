@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountSt
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange
 import Mathlib.RingTheory.Etale.Weakly

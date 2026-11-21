@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedDualOrbitPageWordThickIffThickEmbeddingStatement
 open GlobalTheory.HTW Formalism.BasicNotions Formalism.FrobeniusOrbits
 

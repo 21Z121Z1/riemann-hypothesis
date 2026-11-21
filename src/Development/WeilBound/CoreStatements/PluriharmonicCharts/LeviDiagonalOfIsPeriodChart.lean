@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogDetComparableGramBoundStatement

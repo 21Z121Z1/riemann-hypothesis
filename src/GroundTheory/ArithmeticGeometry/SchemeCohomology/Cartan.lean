@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ConsCompSuccAboveZero
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.ReduceModChar

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfRingHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiabelianIsoOfExtensionIsoStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelFamilyProperExtension

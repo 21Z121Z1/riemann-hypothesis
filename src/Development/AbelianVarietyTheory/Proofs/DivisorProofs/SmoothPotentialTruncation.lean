@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChgEqChgWith
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialSmoothOffBoundary
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenMetricSmoothOfHodge

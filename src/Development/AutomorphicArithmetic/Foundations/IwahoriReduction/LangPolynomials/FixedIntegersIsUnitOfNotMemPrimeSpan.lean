@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FrobeniusCompatInclusion
 
 noncomputable section

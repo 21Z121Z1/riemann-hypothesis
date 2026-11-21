@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PAdicLatticeApproximation.ScaledFormDenEqOneOnLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntAfIntCast
 open NumberField

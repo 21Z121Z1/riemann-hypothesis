@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnimodularQuotientIntegralFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewPlaneModularCharacterStatement
 open scoped TensorProduct NNReal Matrix ComplexConjugate

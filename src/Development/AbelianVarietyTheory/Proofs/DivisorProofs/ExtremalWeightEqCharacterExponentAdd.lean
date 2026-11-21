@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanCharacterDetPower
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightLabelAtUnfolding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicShapeIntegralWeightGoodEmbedding

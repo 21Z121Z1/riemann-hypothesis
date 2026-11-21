@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Development.DiscreteGroups.GlobalIrreducibility.LConvIrrPre
 import Mathlib.Order.CompletePartialOrder

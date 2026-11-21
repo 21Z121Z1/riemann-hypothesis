@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Slopes
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.Tactic.Monotonicity.Lemmas

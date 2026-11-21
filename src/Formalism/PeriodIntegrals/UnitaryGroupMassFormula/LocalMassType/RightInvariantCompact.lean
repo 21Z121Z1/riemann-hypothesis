@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.RightKDef
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IsClosedCongruenceSubgroup
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassOrder.NonDeg

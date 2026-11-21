@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsUnitsInvHaar
 import Mathlib.RingTheory.Complex
 import Mathlib.RingTheory.SimpleRing.Principal

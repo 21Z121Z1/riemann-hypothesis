@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationPolarisationsAgreeAtLevel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqTopOfClosedFibre
 import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton

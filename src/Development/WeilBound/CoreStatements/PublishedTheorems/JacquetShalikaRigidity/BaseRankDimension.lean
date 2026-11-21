@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ColumnConjugationMeasure
 import GroundTheory.IdeleRoots.TorusPowers.SatakeBoundAdic
 import Mathlib.Algebra.Order.Positive.Field

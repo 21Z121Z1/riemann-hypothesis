@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DiagHermitian
 

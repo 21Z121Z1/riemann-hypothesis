@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsQuasicoherentOfForallExistsAffine
 import Mathlib.AlgebraicGeometry.Morphisms.QuasiCompact
 import Mathlib.Order.CompletePartialOrder

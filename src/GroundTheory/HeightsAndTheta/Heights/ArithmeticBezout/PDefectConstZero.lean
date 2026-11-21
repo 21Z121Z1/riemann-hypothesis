@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsMahler
 import Mathlib.Algebra.Ring.IsFormallyReal
 set_option maxSynthPendingDepth 1

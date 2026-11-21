@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsAffineOfIsAffinePullbackQuotientOfIsNilpotent
 import Mathlib.Algebra.DualNumber
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntegralAngMeas
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.CStarAlgebra.Classes

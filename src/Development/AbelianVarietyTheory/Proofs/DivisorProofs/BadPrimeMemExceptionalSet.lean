@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToRatHyp0
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondLinkOfWeightRowsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VStdOfOrthonormalSpan

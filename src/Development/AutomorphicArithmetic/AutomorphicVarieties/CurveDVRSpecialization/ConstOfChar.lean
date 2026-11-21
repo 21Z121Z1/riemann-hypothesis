@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.ConstOfAlg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.NotIrrOfChar
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.ExistsCoordOfNotMatIrr

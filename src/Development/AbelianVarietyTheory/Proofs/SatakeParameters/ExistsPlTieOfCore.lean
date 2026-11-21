@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GlobSpecOfExists
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDvrFrobeniusLiftStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDvrExtensionEmbeddingStatement

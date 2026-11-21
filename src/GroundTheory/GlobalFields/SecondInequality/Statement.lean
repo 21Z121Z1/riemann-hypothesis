@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange
 import Mathlib.RingTheory.RootsOfUnity.EnoughRootsOfUnity
 import Mathlib.Topology.Sheaves.Presheaf

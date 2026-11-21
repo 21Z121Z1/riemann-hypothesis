@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.SpecialFunctions.Pow.Integral
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Monotonicity.Lemmas

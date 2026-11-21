@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLeviDecompositionExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalStabilizerLeviDecompositionStatement
 open scoped TensorProduct NNReal Matrix

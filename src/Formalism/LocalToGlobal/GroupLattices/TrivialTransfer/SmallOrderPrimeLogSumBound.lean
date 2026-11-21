@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.GramTotallyDefinite
 import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.ProGTransfer
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice

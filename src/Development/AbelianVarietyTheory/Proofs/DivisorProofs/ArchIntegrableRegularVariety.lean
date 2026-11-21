@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPartOverProperClosedEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtLevi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMatrixIsForm

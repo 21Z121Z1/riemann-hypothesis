@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowCharEqOfIsReducedFiniteStatement
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.WittVector.IsPoly

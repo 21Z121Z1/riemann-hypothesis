@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InputsJumpsAtMem
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FullConclusionOfInputsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BuiltLaws

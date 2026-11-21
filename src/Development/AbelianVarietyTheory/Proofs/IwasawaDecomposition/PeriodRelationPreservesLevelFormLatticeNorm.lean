@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReadPk
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivFormsTie
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsUniqueIsCrd

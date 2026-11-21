@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LiftGenericPointOverIsoOpen
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits TopologicalSpace Opposite MvPolynomial
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor (Sp spMap PSpace valR)

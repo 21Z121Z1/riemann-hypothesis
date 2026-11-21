@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.CountSt
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.CountA
 import Formalism.GL3MeanSquares.HookFormulaTorsion.TwistIsPrimitiveCharacter

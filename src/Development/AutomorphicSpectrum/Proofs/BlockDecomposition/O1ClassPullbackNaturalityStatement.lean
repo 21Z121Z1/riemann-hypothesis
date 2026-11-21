@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.O1ClassPullbackNaturality
 set_option autoImplicit false
 noncomputable section

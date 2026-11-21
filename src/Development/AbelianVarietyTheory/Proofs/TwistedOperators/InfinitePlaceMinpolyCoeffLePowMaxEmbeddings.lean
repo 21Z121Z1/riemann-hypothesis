@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyNormFinLeOne
 
 open NumberField IsDedekindDomain GlobalTheory.AdelicU

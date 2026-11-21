@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationConstantOfPowerEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatSecUnitGenericFibreStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSchemeSpecialFibreNonemptyStatement

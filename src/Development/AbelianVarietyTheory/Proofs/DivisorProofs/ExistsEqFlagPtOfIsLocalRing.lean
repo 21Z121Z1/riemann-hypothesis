@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellOpenImmersionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPointInSomeCellStatement
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Matrix

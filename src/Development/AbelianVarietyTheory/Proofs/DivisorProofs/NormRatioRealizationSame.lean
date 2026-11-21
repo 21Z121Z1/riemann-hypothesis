@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormRatioRealizationSameDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoordOfIndep

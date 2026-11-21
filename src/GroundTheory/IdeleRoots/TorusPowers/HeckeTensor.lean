@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.ThmBInHecke
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange
 import GroundTheory.GlobalFields.Adele.Approximation

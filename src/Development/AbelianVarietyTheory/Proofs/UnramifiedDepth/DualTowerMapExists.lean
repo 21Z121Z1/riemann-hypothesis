@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.IsFibreSq
 import ReciprocityTheory.DualLattices.DualPairInh
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

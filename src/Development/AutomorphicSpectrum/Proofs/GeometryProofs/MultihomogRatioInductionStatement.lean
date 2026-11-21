@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MultihomogRatioInduction
 open MvPolynomial
 set_option maxHeartbeats 1000000 in

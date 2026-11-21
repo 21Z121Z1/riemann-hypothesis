@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleDieudonneBaseByCartierDuality
 open CategoryTheory GlobalTheory.PDiv GlobalTheory.PDivGroup
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OmegaOpCommLiB
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStructure

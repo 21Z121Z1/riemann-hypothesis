@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PieriBlockIdeals.PieriColumnMinors.RecursionInclusionExceptional
 
 open Formalism.CohomologicalDescent Formalism.CohomologicalDescent.LogSmallConstantBounds Formalism.CohomologicalDescent.ShortWeightBounds

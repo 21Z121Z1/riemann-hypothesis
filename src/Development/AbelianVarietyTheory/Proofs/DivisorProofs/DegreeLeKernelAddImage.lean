@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFrameMapOfAppendStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexAppendLeMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogDetGramAppendLeStatement

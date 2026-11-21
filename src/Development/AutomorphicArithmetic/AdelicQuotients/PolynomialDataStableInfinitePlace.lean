@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ArchimedeanEvaluationVector
 import Development.WeilBound.ThetaLifts.LatticeBasics.PairsB
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriHeckeInjectivity.IdempotentTraces.SwapAt
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.FamSat
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.AtInj

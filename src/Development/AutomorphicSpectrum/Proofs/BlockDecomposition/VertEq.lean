@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CoheightEqOneOfDimClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedSubschemeModLProjective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DimOfIsArithVar

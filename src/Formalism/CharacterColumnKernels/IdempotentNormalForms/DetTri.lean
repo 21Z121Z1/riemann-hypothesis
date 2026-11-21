@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.Statement
 import Std.Tactic.BVDecide.Normalize.Prop
 

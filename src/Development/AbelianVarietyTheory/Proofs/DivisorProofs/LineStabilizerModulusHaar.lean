@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLineStab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerHaarLocalFactorCaseB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSignatureDropsByPlane

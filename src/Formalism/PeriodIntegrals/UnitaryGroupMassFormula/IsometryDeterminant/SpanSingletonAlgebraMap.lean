@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IsometryDeterminant.AlgebraMapMemCI
 import Mathlib.Order.Interval.Finset.Box
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsUnitOfComm
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteDimensionalOfSlices
 

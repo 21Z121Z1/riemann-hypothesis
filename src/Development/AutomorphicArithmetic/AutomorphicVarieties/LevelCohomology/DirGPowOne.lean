@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CongrFacts
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcOmDir
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcDirData

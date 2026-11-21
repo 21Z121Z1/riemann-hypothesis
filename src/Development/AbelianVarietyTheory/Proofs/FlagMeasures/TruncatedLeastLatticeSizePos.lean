@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NearTrivialPointwise
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FgOfHtNeZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PackingGeometricMeanSeparated

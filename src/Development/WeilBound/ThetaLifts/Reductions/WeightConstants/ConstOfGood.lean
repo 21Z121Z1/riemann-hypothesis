@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.ExistsIsHeckeLOfCompleted
 import Development.WeilBound.ThetaLifts.LatticeBasics.ConstOfGood
 import Development.WeilBound.ThetaLifts.Reductions.WeightConstants.Bridge

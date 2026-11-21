@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerIdentityAtCutoffStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerHeightIdentityExpansionStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CutoffCoefficientsBoundStatement

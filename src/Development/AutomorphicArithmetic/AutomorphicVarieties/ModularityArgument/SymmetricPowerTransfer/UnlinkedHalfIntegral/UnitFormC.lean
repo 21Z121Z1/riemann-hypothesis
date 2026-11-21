@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.RW
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange

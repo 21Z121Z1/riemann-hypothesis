@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnitaryActions.ContinuousAdelicGL2OfContinuousEntries
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.ConjInv
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter

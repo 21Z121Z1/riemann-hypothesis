@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.AlgebraicGeometry.Morphisms.Proper
 import Mathlib.RingTheory.Extension.Presentation.Core

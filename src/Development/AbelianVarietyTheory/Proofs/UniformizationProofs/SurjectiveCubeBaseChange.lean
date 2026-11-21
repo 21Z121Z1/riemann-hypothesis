@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.SameB
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CompatAlongOfSquare
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ComparisonTorusInvariant

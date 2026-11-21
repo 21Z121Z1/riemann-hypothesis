@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviSectionIsotropicFrame
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsConstAlongSingleton
 open scoped TensorProduct NNReal ENNReal Matrix

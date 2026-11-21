@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsFrameCm
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RelIndexConjLevelVL
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff

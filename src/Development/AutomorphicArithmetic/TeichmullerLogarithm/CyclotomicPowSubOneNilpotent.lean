@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.CrisTheta
 
 open Ideal Reformulated.AutPerF

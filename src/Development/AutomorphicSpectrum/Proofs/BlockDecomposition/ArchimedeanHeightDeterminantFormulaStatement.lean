@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanHeightDeterminantFormula
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockTranslateSchwartzMajorant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceConjTransposeMulSelf
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HypsSatisfiable

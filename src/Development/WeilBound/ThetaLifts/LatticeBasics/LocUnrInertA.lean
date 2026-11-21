@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocalThetaKernels.LocpairAlg
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd
 import Development.WeilBound.ThetaLifts.LatticeBasics.Hypotheses2

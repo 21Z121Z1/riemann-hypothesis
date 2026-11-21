@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliDeterminantFirstRowsMemBmW
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SplitLastBlockActX
 

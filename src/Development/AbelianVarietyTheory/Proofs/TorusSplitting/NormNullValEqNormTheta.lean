@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.NormGenEqConstMul
 

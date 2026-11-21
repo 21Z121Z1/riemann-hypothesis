@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.AnalyticTorusPointBaseEqHolUnifEx
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorusTorsionPointsCorrespondValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValuesCorrespond

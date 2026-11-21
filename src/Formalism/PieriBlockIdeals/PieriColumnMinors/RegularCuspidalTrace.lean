@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PieriBlockIdeals.LemmaWAssembled
 import Formalism.PieriBlockIdeals.PieriColumnMinors.MinorValuationBoundHolds
 import Formalism.PieriBlockIdeals.PieriColumnMinors.WeightExchangeChainHolds

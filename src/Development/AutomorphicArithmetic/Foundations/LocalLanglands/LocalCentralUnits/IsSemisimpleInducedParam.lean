@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 import Mathlib.Order.Interval.Finset.Box
 

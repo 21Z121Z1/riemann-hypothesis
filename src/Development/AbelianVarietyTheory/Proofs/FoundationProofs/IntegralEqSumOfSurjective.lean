@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IntegralFundamentalDomainEqSumDoubleCoset
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasureToRealEqMass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIntegrandIntegrable

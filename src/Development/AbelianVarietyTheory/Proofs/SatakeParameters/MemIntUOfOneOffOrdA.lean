@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SameOffRefl
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LocSpBot

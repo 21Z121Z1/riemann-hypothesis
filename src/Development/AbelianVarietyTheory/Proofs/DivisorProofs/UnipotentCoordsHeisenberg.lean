@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordsPreserveGramMatrixStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisMulHeisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordsMultiplicativeConjugationStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.BcFrob
 import Development.WeilBound.CoreStatements.PeriodRingComparison.AinfInverseMaps.AinfInvMapGOC
 import Development.WeilBound.CoreStatements.PeriodRingComparison.RationalRingEquivalences.IsLogCore

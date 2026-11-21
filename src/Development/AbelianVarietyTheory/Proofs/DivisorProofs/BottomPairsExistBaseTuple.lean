@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FunKit
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsBottomOfIsCoprime

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevChiEqOne
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBase
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnFramesRdApply

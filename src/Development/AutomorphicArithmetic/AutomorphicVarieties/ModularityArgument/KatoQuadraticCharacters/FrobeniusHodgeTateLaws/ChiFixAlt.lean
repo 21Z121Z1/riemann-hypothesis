@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ChiK
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsLocallyConstantCycMod
 import Development.AbelianVarietyTheory.Definitions.Foundations.IwSys2

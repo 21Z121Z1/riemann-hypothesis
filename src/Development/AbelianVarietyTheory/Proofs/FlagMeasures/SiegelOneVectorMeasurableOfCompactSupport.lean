@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SiegelMeanCc
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ContDensityOnEqFibreIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFibreMeasuresLocalHermitianFormStatement

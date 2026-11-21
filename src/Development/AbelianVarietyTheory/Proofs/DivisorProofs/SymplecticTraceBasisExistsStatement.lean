@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticTraceBasisExists
 
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RhoIsCoc
 import Mathlib.Tactic.Monotonicity.Lemmas
 open AlgebraicGeometry CategoryTheory Limits NumberField

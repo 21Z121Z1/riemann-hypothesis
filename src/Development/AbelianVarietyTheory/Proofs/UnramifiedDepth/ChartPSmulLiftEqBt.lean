@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import ReciprocityTheory.DualLattices.TowerZeroSurjective
 

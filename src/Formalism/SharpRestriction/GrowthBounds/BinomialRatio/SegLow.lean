@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.KeptFin
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.ChainDim
 import Mathlib.Order.Interval.Finset.Box

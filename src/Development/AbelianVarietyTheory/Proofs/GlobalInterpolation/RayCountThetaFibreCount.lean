@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QFormCountStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ThetaQFormStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RayClassIdealCountEqNcardShiftedBinaryFormStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticFifth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticEighth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TransPtBase

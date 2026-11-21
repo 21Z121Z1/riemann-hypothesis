@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CenterLocalUnitaryGroupFinitePlaceScalarStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacedBesselPairLatticeStatement
 open scoped InnerProductSpace TensorProduct

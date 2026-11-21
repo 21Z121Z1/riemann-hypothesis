@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InducedVanishOfVanishOnIntegral
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.PfDict
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitCharacterFacts

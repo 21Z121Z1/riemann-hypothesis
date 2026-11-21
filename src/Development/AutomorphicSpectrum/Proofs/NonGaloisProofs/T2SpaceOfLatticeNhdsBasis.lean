@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.NonGaloisLines.TopLine
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.LatticeOpenCompactNhdsBasisStatement
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FgZ1T

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DoublingNormDetSplitPlaceLatticeIntersection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormEqInv
 import Formalism.UnipotentAdelicQuotients.SWXSDefs

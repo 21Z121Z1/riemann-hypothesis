@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralConjugateSL2IntLaws
 open GlobalTheory.KZ GlobalTheory.KZ.H3 Matrix
 open scoped MatrixGroups TensorProduct

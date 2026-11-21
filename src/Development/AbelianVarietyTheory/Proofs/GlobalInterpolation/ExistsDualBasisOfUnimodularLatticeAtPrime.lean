@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.DeterminantCokernelCount.CokernelIndexFactors.StatementB
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.RingTheory.PiTensorProduct

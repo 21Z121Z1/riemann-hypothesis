@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ConstantsMonomialApproximation
 import Development.WeilBound.CoreStatements.IdealCycleValues.LengthLocQuot
 import Mathlib.Tactic.Monotonicity.Lemmas

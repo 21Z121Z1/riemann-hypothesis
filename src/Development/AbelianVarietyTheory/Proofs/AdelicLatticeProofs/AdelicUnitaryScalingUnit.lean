@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.NormOneInfinite
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
 import Mathlib.RingTheory.Etale.Weakly

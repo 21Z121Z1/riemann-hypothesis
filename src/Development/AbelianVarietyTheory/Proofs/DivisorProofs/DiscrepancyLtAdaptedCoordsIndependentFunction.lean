@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameFormsResidueIndependence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncChartKltCriterion
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter

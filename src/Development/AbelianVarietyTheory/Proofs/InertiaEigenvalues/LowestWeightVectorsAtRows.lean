@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorFockVacuum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorNeZero

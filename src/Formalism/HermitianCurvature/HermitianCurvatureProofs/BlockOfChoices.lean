@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBGWave
 
 namespace Formalism.FourierDecayAlt.P.PBL

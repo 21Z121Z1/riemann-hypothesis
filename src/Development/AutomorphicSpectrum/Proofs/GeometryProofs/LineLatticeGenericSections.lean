@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularEverywhereIsIntegralStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import Mathlib.RingTheory.WittVector.IsPoly

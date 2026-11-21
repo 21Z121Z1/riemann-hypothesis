@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantCompactSpan
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactCasimirHighestWeight
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivedModuleCoefficientsAndStableFlowsStatement

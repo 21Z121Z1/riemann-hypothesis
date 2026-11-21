@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PsiNegBetaL
 
 namespace Formalism.FourierDecayAlt.P.GermFibreKernels

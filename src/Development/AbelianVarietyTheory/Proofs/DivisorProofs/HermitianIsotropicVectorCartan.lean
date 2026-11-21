@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaIsotropicColumnsRingIsoComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MajorantFrameCommutesCartan
 open scoped TensorProduct NNReal Matrix

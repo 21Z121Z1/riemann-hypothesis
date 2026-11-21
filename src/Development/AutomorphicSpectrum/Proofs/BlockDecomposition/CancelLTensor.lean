@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodBaseChange
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectTensorProduct
 

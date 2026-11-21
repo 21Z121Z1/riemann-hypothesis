@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteHeightFractionRepr
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscA
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HHINDC

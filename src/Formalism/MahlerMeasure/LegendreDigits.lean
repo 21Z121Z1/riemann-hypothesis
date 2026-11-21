@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.MahlerMeasureProofs.DeterminantBlockLeadingTerm
 
 namespace Formalism.GM.Top

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanPointPureTensorKeepsFiniteFactorStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelCmExtensionStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamiliesGlueToBundle
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemSpanOverOfMem
 import Mathlib.RingTheory.Henselian

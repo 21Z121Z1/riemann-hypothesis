@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.RootFlatOnHodgeOf
 import Development.WeilBound.CoreStatements.FlagImmersions.CptEx
 import Development.WeilBound.CoreStatements.FlagImmersions.HostRd

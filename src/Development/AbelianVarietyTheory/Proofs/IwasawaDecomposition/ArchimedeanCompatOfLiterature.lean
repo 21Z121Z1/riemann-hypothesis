@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
 import Development.AutomorphicArithmetic.BlochKatoExtensions.PhtCmp
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnTwistedArgsFirst

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolySubComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixEqAevalOfCommute
 open Matrix GlobalTheory.LKRes GlobalTheory.LKMid

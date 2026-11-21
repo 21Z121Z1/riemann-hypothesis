@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.RingTheory.DividedPowers.Padic

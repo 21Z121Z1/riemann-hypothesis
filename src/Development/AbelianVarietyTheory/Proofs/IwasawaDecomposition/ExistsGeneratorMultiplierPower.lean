@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralCharts
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FamilyFunctionalEquationFieldChange
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGoodIntegral

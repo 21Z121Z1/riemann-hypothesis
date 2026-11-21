@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurAndTensorSubmodule
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DeterminantRepresentations.GenEval
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Mathlib.Tactic.Polynomial.Basic

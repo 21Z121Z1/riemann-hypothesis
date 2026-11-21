@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.AdelicCompactOpens.IntAdelesCompactOpen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

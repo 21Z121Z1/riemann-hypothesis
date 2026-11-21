@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUnitValEqMul
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PsiInIffScalarMem
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PsiScalarsRelationsUpToBaseUnitsStatement

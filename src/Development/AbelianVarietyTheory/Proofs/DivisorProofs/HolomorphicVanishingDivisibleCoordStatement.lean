@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicVanishingDivisibleCoord
 open scoped ContDiff Topology
 open Filter

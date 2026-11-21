@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusBaseCase.StatementFix
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.SecondWayHolds
 

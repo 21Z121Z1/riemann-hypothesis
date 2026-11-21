@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegerUnitSplitPlaceConjugatePrime

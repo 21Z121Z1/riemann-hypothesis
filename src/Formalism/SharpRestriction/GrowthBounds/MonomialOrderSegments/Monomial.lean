@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.CollapseExponent
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.Tactic.ENatToNat

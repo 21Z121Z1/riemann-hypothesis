@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArMonoReline
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsometricVerticalIntersectionEqStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.MassFormulaConjugationAction

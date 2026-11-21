@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Places
 import GroundTheory.GlobalFields.IdeleGroups.StandardOpenEquiv
 

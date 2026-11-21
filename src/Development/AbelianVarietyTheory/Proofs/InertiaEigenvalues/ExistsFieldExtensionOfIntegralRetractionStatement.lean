@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFieldExtensionOfIntegralRetraction
 open Formalism.MainNotions.N Formalism.BasicNotions.Loc GlobalTheory.UseLoc
 set_option maxHeartbeats 1000000 in

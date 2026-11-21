@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBumpB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceCharacterAnnihilatorCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrablePowerNormCompact

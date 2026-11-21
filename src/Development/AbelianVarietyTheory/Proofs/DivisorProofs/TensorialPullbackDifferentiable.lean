@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTorsionFormPoint
 import Mathlib.RingTheory.SimpleRing.Principal

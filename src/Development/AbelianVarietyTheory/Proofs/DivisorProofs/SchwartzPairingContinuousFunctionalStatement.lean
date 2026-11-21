@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzPairingContinuousFunctional
 open MeasureTheory Filter Topology
 open scoped SchwartzMap

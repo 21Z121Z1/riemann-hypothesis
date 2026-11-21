@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.NumberField.Discriminant.Different
 import Mathlib.RingTheory.Henselian

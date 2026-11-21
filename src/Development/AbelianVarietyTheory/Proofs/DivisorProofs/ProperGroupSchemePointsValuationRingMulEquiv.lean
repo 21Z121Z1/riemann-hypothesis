@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.ValuativeCriterion
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens

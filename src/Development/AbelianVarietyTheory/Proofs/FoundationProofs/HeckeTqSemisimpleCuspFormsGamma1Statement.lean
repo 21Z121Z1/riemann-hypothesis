@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeTqSemisimpleCuspFormsGamma1
 open GlobalTheory.HeckeFamilyMatrices Polynomial UpperHalfPlane
 open scoped MatrixGroups ModularForm

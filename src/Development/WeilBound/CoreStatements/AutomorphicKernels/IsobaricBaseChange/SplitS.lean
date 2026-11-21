@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpehShapeIffOfDiscreteSpectrum
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.AtPlace
 

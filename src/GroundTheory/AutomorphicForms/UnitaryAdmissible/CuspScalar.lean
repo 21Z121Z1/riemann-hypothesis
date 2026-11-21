@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.UnitaryAdmissible.Scalar
 import GroundTheory.AutomorphicForms.TensorProductTheorem.NonemptyAdelicDecomposition
 

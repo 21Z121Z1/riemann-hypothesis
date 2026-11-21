@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ExistsIsRegularAppendOfModDepthGE
 import Mathlib.RingTheory.Etale.Weakly
 open IsLocalRing TensorProduct Pointwise

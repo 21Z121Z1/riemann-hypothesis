@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.IsHerm
 import Development.AutomorphicArithmetic.UnitaryInvolutions.ExistsMulInvolutionEqFixedUnitOfComplete
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.GalBasic
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField.Euler

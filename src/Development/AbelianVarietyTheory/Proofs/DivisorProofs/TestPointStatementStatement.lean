@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestPointStatement
 open GlobalTheory.DetHT
 set_option maxHeartbeats 1000000 in

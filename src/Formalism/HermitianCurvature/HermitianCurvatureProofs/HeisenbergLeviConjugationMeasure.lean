@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.FormalDegreeBessel.FinalG
 import Mathlib.Algebra.Module.StablyFree.Basic

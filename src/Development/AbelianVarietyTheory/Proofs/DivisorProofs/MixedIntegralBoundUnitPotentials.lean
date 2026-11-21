@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
 
 open ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M

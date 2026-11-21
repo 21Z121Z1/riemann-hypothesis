@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsLastFurther
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistModNatMul
 set_option maxSynthPendingDepth 1

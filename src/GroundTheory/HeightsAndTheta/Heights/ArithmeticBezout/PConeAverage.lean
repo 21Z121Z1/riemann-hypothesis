@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsMahler
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Characterised
 import Mathlib.Topology.MetricSpace.HausdorffDimension

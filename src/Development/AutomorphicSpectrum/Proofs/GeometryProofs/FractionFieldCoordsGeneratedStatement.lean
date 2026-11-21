@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FractionFieldCoordsGenerated
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar
 set_option maxHeartbeats 1000000 in

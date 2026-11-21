@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsobaricCuspidalMultiplicityOneOfTwisted
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeSplitOneOfCharTied
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MuIntOfCharTied

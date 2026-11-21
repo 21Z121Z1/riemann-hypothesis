@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BddCrisToOD
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLPowIHatToHatSSubDvd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvdOfForallNearOD

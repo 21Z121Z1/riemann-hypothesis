@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GeometricLemmaModular
 import GroundTheory.AutomorphicForms.GeometricLemmaCharacters
 set_option maxSynthPendingDepth 1

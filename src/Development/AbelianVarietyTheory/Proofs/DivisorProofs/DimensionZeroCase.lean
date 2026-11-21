@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToricPeriodBlockIsSymm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAbelianKeyValueNormOne
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts

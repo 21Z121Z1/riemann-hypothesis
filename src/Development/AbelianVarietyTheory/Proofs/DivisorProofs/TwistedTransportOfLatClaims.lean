@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransportPrinc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RatioConjOfToricRatioConjugates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassInvOfUnitTrivial

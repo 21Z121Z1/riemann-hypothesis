@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.StatGlobalModule
 import Formalism.CharacterColumnKernels.StatementRho
 

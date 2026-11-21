@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedPlaceInnerProductClassSumRowsStatement
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OExt

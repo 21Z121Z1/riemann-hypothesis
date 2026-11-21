@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CartanPos
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsGaussBox
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PhiCentreEigenfunctionDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ScalarOfMultOne
 import Mathlib.Analysis.Calculus.Deriv.Star

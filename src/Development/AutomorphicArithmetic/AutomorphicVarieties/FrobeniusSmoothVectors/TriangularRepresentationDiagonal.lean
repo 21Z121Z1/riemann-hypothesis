@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.AdicCharUnipotentPgroupQuotient
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.Imports
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherTer

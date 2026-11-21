@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairPlaneDescentNinthStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairPlaneDescentTenthStatement

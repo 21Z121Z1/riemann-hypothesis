@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.Pairing
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.HomologyMapPiLiftPiHomologyIsoHom
 import GroundTheory.ProfiniteCohomology.CupProducts.Pairing

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ExistsBranchingCoordinatesIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemberFormsNonempty
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf

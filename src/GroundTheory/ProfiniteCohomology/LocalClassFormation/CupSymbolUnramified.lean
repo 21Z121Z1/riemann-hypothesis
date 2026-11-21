@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolDefs
 import GroundTheory.ProfiniteCohomology.CyclicCupBrauer
 set_option maxSynthPendingDepth 1

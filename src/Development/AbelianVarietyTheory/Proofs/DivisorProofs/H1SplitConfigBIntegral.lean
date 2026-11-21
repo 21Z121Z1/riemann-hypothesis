@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndLineInf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedLocalInducedSpaceIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBThetaDescentIdentityStatement

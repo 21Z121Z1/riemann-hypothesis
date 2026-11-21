@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RbFund
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.PoitouTate.RealEvenFree
 import GroundTheory.ProfiniteCohomology.PoitouTate.RealEvenLevel
 set_option maxSynthPendingDepth 1

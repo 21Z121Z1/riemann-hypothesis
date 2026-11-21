@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsCharpolyRootLift
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsRingHomExtendOfIsIntegral
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.FibreNormCharpolyFalse

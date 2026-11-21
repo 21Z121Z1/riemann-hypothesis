@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassCuspidal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNeg

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PadNatZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PolarisedThetaIntegralUnfoldWhittaker
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetIntegralMulConjNeZero

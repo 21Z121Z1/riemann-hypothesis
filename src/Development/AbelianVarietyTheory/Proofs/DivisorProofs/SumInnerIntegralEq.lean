@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvConjTMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShapeIntegratedOperatorRangesPolynomialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTraceSumInnerOfRangeLe

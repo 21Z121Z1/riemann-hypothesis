@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SmallHostRootDiscriminantLe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OneScaleDatumRelabelRec
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InhabitedAtLargeScale

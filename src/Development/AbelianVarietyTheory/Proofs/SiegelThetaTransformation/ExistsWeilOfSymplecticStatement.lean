@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsWeilOfSymplectic
 open Matrix Complex GlobalTheory.SW
 open scoped ComplexConjugate Real

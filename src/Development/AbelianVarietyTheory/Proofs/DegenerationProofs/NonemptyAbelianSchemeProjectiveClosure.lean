@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByOfSpans
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjBundleClosureStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasBoundedSumsOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriProjSurjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantModulus

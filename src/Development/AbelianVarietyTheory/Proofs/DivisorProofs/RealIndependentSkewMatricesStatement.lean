@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealIndependentSkewMatrices
 open NumberField Matrix ReciprocityTheory.ChartRestriction.G.FD
 set_option maxHeartbeats 1000000 in

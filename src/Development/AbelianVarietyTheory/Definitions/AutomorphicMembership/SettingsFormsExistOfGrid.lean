@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistGrid
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyGridDataIff
 

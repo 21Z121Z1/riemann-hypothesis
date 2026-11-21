@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.MemIntAfAndInIdIffSplitComponents
 import Development.AutomorphicArithmetic.DivisorFrames.UnitCharIdempotentSumEqProdOverSplitPlaces
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsReading

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.LocGlobIncl
 import Mathlib.Order.Interval.Finset.Box
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PeriodRingComparison.RationalRingEquivalences.IsLogCore
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.EqSumMultihomogeneousComponents
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.FibreDimB
 

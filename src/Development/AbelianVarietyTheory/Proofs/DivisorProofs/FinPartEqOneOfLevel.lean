@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartEqOneOfFibres
 import Mathlib.Algebra.AffineMonoid.Basic

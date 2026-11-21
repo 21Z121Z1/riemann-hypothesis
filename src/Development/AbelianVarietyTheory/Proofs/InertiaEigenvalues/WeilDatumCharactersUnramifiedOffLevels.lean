@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingCharactersUnramifiedOffLevels
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationOfMemNotMemSq
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula

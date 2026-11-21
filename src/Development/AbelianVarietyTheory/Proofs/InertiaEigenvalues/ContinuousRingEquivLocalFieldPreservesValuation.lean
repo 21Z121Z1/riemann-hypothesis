@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalizedAbsValueLocalFieldUnitMapHomeomorph
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfHasValueAtInfinite
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

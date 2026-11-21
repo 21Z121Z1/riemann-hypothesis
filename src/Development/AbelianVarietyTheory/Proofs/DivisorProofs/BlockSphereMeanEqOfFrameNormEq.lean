@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.SphereBlockLogMean
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinSubstLinSubst
 

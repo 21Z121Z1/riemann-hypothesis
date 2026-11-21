@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsBis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsBisFurther
 import Mathlib.RingTheory.PicardGroup

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IrreducibleCharacterSeries.ConjugateCharacterFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootsReverseProd
 

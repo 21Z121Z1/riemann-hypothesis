@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PowerSeries.Inverse
 import Mathlib.RingTheory.RegularLocalRing.Defs

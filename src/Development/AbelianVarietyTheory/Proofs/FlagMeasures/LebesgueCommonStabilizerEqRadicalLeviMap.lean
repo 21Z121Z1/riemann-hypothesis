@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsNormalFormStabilizerMeasure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UEmbMulPEl
 import Mathlib.CategoryTheory.Countable

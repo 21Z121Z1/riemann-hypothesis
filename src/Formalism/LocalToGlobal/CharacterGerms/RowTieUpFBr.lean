@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpF
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePFBMapSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF

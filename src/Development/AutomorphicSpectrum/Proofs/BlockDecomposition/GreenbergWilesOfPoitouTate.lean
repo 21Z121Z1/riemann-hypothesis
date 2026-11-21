@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SelmerGroupDualExactStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDualAll
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GreenbergWilesFormulaStatement

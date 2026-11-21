@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeSpans
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PeriodLatticeDiscreteFreeStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLieLieModel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepBijectionSchwartz
 open Matrix
 set_option maxHeartbeats 1000000 in

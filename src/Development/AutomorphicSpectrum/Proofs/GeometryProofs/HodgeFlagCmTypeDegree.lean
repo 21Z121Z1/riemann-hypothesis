@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualRevDualRev
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLatFlagPair
 import Mathlib.Data.Int.Star

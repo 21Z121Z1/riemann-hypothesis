@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree

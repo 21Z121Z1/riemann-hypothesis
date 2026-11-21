@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingMackeyPlaces
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingUnitsTwo
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DetIntOfLevel
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUnifPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChiDValuesAndCcTop

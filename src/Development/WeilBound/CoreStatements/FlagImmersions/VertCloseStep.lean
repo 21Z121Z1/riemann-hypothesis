@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.DivCycleEqZeroOfNotMemZ
 import Development.WeilBound.CoreStatements.FlagImmersions.SamePotTransRsmul
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RootOriginHeightComparisonTwo

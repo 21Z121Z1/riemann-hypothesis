@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ColFormsLemmas
 import Formalism.LocalToGlobal.Columns.LevGCount
 import Formalism.LocalToGlobal.Columns.Inputs

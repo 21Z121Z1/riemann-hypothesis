@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocDistC
 import Mathlib.LinearAlgebra.Matrix.Swap
 import Mathlib.RingTheory.PiTensorProduct

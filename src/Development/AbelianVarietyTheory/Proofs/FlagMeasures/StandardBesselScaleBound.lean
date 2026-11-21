@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqBigCellNormSq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselEnergyNormalisedFrameChangeStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitalSquareEqHilbertSchmidtNormalisedVectorStatement

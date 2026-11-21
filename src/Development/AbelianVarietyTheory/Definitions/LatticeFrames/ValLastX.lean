@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ThetaIdentityOfMapsAll
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsBiSmooth
 

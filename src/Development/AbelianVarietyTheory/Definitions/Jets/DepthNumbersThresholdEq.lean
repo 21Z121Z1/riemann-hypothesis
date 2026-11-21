@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 import Formalism.DropLevelBounds.ThBounds
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthCond

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LojasiewiczInequalityAnalytic
 open Filter Topology
 set_option maxHeartbeats 1000000 in

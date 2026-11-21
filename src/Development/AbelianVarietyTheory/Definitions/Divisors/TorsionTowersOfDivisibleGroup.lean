@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.EigLatBasis

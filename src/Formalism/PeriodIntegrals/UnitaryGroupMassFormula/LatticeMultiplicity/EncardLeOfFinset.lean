@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.LatCountG
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential
 

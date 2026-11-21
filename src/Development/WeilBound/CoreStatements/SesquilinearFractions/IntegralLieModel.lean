@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.SesquilinearFractions.Models
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GLieInt
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

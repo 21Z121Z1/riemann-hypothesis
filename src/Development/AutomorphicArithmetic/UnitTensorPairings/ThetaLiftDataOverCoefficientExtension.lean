@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBaseEnlargementFixedCoefFieldOfCoeffEnlargemen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivLift
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CrdOver

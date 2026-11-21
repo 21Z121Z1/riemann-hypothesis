@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlgebraMapZpInjective
 import Mathlib.RingTheory.PiTensorProduct
 open scoped MatrixGroups

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StarMulOfMemKc
 
 namespace GlobalTheory.CartanInt.Frob

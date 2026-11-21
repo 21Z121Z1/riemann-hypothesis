@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelMulConjCuspFormIntegrableOn
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

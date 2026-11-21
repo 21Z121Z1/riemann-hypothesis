@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LevelGoodAndSign
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ConjEquivApply
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ComponentAttainedAtBaseFrame

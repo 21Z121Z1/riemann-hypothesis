@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ShortNorms.normPrimesN
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DivLeRpowThreeQuarters
 import Mathlib.Order.CompletePartialOrder

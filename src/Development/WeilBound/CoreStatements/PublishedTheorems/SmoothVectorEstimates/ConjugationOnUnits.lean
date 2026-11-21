@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.MirabolicColumnBlock
 import Mathlib.Analysis.Calculus.ContDiff.Convolution
 import Mathlib.Topology.UniformSpace.Uniformizable

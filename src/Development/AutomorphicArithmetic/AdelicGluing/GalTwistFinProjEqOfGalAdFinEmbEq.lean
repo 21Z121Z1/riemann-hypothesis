@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AdelicQuotients.CentralSectionBaseChange
 import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteLevelGroups
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles

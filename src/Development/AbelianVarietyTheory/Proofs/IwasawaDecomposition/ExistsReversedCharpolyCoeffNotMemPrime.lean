@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharpolyBaseChangeIntegrallyClosedStatement
 import Mathlib.RingTheory.PicardGroup
 open CategoryTheory Polynomial GlobalTheory.NormalDescent

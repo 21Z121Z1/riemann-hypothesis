@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GroupCohomology.TransgressionStatement
 
 namespace ReciprocityTheory.Coh

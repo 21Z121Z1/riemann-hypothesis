@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.KummerTheory.SecSHPf
 import Mathlib.RingTheory.Unramified.LocalStructure
 

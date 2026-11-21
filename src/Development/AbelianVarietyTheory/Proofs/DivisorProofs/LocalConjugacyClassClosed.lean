@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinpolyEqOfAevalOfLinearIndependent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaDistributionHeisenbergInvariant
 import Mathlib.RingTheory.Artinian.Instances

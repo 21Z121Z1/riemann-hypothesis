@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumConjClassesCentralizerOrbitsEqPairOrbits
 open GlobalTheory.OrbitUnfold GlobalTheory.OrbitUnfold.ConjSelf
 set_option maxHeartbeats 1000000 in

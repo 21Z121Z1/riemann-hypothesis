@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.MapStdPoly
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.MeasureTheory.Function.L2Space

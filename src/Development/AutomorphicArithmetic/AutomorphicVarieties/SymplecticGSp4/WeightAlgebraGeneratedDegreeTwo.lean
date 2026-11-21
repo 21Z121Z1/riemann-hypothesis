@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.EntryMem
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.WPresGrZeroIsCOOfMemMaximalIdeal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.PartSpan

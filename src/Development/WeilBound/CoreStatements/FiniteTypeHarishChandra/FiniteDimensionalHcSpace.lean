@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis

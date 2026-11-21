@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RelabelledWeight
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodPartEq
 

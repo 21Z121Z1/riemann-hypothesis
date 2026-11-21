@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ArcPtX
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.MemOfEqMulInvPow
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FrameChangeExistsUniqueInvertible

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowSubst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChange
 open MvPolynomial Formalism.GradedWeylDivisibility GlobalTheory.GenCoef

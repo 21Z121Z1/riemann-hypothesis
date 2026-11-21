@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsBaseChangeUniformization
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SameUniformizationIdentityPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIdentityPullbackDegeneration

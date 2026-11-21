@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionMap
 

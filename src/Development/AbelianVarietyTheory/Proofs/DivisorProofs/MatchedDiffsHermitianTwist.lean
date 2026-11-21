@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxCompactPolDataPairStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolDataWittFrameScaledStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolDataSoWittFrameStatement

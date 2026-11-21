@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BcMapBcVec
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart

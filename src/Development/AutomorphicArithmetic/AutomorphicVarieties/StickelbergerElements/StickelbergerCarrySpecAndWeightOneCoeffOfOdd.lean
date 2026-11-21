@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.SamePrimesMulPow
 import Mathlib.Data.Rat.Star
 import Mathlib.RingTheory.WittVector.IsPoly

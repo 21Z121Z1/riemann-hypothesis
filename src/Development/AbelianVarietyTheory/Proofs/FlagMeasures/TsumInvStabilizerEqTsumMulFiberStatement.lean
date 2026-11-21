@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumInvStabilizerEqTsumMulFiber
 open scoped ENNReal
 set_option maxHeartbeats 1000000 in

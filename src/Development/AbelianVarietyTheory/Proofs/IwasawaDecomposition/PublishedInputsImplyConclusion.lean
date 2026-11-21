@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotGeoClFalse
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMemberOfConstructionStepsSecondPassStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelThreeToFourStatement

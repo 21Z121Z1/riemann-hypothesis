@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalIdealEqJointEigen
 import Std.Tactic.BVDecide.Normalize.Prop
 

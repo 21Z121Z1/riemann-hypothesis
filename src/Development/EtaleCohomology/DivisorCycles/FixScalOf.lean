@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.DivisorCycles.CycleCountPf
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AevalEig
 import Mathlib.RingTheory.Etale.Weakly

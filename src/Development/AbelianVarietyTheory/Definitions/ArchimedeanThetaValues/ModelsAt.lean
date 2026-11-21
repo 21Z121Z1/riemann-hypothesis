@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsThetaL2NormSquared
 import Development.AbelianVarietyTheory.Definitions.CMLattices.LamLetters
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GSEqZeroOfLt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussUnitsNormSq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSatakeLeOfUnitarySphericalGL

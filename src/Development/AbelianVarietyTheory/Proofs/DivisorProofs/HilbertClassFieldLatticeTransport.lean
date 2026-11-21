@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadraticFieldExistsSqrtNegDiscrStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FractionalIdealNormEqFiniteIdeleModuleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteIdeleModuleExistsRatStatement

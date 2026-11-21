@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AuxiliaryCuspFormConstantMonotone
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HeightInequalitiesIndefiniteLiftIndexStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HeightInequalityDefiniteLiftIndexStatement

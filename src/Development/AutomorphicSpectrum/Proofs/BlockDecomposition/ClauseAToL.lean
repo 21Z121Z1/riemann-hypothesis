@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ColumnRecursion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowToColumnReduction
 

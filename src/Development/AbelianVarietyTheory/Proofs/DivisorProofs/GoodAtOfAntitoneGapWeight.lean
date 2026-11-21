@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodWeightAntitoneGapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightLatticeSpanEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightLatticeFinitelyGeneratedAltBis

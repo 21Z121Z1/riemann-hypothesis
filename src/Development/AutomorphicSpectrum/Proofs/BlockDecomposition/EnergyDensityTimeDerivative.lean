@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Rr
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric

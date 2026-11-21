@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkVolSeam
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkVolChain
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkVolLat

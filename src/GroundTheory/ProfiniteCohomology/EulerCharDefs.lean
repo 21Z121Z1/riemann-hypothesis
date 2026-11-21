@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ContinuousCochains
 set_option maxSynthPendingDepth 1
 

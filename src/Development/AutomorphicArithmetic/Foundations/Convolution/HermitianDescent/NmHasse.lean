@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.RootMapRoot
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.HasseEt
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.GalField

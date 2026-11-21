@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularCoverDegreeOmega
 
 set_option autoImplicit false

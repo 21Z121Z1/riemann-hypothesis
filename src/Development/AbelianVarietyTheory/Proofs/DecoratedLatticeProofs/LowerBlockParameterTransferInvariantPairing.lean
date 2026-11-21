@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SumRepsDatumEq
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeIdentityIntegral
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GenValAddSegL

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvSubOneMem
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsLimitOfChart

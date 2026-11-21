@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.TwistSubEqMatrixSubst
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

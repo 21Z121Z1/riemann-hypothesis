@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReducedBases.GsInnerBOfLt
 import ReciprocityTheory.ReducedBases.LatDefs
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

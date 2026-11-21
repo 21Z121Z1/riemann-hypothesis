@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.InvariantSubspaceMobiusInverseRecEqOfFinrankLt
 import Mathlib.FieldTheory.Finite.Extension
 import Mathlib.RingTheory.Henselian

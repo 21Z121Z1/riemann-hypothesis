@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ValLeOfMem
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ExistsDualOf
 import ReciprocityTheory.DualLattices.HasLenLeOfSurj

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjLowUni
 open NumberField IsDedekindDomain GlobalTheory.CuspRep GlobalTheory.SchurExt
 open scoped ContDiff Topology

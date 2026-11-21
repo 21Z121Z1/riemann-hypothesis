@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EvFrame
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EvModel
 

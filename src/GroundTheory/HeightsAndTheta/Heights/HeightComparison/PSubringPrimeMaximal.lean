@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightSubringPrimeMaximal
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

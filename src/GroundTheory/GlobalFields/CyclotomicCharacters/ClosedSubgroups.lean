@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.CyclotomicCharacters.ProfinitePadic
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.PiTensorProduct

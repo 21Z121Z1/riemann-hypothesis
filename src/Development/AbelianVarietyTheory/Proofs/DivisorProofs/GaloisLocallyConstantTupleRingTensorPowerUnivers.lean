@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdSubConjEqZero
 import Mathlib.FieldTheory.Galois.Profinite
 

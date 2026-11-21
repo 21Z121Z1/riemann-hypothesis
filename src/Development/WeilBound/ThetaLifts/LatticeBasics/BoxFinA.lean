@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.SchwartzLogDerivLinearGaussian
 import Development.WeilBound.ThetaLifts.LatticeBasics.RealInvL
 

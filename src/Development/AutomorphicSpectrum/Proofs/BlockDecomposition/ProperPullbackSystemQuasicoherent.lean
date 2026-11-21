@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PushforwardIdealPowerShiftStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeOfAffineCoverStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CokernelSectionIdealPowerStatement

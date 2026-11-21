@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChowNorm
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.GroupTheory.MonoidLocalization.UniqueFactorization

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.PerfectoidField
 set_option maxSynthPendingDepth 1
 

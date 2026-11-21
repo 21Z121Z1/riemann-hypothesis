@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.PsiScal
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecRelationDefect
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SecEqZeroOfSvalWhiskerRightEqZero

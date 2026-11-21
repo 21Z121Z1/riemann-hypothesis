@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.LocalBaseChange.StrictDominanceCasselman.IsStrictlyDominant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerPowTendstoZero
 

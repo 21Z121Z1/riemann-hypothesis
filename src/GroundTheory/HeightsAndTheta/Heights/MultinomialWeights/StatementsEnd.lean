@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.Statements
 import Std.Tactic.BVDecide.Normalize.Bool
 set_option maxSynthPendingDepth 1

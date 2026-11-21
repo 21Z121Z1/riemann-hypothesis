@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacedBy
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseChainCommutationValid
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseChainStageYValid

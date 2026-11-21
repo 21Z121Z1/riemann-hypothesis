@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.PullDegSome
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XCWLine
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GeometricAbelianConnected

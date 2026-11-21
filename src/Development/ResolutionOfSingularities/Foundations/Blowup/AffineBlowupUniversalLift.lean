@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowup
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.Tactic.Polynomial.Basic

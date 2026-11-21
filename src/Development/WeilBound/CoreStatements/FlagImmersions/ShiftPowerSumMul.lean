@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.FlagDegreeLinearFunctionals
 import Development.WeilBound.CoreStatements.FlagImmersions.DegFlPowerSumMul
 import Mathlib.Tactic.Polynomial.Basic

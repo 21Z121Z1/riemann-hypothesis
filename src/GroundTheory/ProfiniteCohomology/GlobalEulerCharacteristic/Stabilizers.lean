@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.OrbitInvariants
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.StabilizersDefs
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingMackeyPlaces

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RWMulN
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralCompUnitMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilRepresentationWhittakerHypothesisStatement

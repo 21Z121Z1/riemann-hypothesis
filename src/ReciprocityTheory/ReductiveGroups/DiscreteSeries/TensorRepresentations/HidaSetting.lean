@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Residue
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.IsInLieAlgebraISmulAddConjTranspose
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Unitary

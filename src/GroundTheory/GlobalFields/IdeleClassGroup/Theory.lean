@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleClassGroup.NatCardTateOfIsCyclic
 import GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicImage
 

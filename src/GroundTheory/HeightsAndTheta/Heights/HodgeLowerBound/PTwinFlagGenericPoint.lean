@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.HypLineTer
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.GenericComplexPoint
 set_option maxSynthPendingDepth 1

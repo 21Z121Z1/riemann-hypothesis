@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivComp
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.GeometricLiftsOfFrames

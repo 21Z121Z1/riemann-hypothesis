@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLaws
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CubeConclusionIff

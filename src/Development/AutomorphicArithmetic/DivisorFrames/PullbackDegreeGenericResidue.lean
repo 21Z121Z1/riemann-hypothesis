@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.OrderCodimOneFiniteMap
 import Development.AutomorphicArithmetic.DivisorFrames.ValuationNormSumExtensions
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField IsDedekindDomain

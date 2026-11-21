@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.TateMain
 open NumberField Matrix MeasureTheory Filter Topology
 open scoped NumberField.AdeleRing

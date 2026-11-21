@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.UpdSelf
 import Development.WeilBound.ThetaLifts.CartanFactorisation.RinfZero
 import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocPart
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocIsoRefl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InsP

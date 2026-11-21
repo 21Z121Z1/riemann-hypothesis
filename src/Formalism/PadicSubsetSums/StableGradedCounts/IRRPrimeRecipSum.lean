@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PadicSubsetSums.CentralIdempotents.GaloisIrreducibility
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Complex.ExponentialBounds

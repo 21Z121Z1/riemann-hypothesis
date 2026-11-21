@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ScaleFamilySizeRelationsEventually
 open Formalism.MainNotions Formalism.BasicNotions Formalism.MainNotions.G Classical
 set_option maxHeartbeats 1000000 in

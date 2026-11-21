@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsFinFlatSub
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.IsPolarisationOfRelAmple
 

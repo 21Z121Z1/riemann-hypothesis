@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetDetNormPos
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsIsFundamentalDomainAndQuotMeasureEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsLast

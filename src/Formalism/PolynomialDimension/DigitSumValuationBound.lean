@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PolynomialDimension.StatementNum
 import Formalism.PolynomialDimension.DigitClassSize
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HomPadicIntTrivialOfIrreducibleCompactRepStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormUnitPowSubOne
 

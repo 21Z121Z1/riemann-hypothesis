@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCompletionNoPrimeTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BettiKummerRelationPadicAddStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BettiKummerRelationPadicSmulStatement

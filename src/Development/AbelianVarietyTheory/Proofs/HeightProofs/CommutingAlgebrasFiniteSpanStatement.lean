@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CommutingAlgebrasFiniteSpan
 open GlobalTheory.SmoothForms NumberField Matrix
 open scoped ContDiff Topology

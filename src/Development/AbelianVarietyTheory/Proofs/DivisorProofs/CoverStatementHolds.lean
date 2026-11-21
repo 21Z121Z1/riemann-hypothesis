@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsValuationSubringComplexComapValEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentGeometricallyIrreducibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComponentSurjectsClopenStatement

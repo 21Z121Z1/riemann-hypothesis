@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeometricSideEstimates.RationalPointRetractionExistsCmDatum
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeometricSideEstimates.CmDatumInfinitePlacesComplexSplit
 open UpperTheory.V.Lit.Geo

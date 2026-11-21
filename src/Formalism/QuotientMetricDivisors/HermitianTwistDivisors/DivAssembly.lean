@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.QuotientMetricDivisors.StatementJ
 
 open Finset

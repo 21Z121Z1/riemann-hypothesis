@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.MahlerMeasureProofs.MeanGam
 
 namespace Formalism.InvariantFactorPaths.L4

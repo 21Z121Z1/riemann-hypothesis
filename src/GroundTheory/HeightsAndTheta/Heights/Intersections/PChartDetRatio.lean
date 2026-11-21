@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StChartDetRatio
 import Mathlib.RingTheory.Henselian
 set_option maxSynthPendingDepth 1

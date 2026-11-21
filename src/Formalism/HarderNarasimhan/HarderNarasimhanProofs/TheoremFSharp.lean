@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameHermSharpB
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameLinearAlgebraFirst
 import Formalism.CorankShare.CorankShareProofs.LayerCakeFormula

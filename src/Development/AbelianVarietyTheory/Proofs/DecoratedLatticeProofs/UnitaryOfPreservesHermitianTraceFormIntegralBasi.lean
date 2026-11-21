@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRealCoord
 import Mathlib.Algebra.Module.StablyFree.Basic
 

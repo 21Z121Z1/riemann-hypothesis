@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.TracePairing
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsCdvrFiniteExtension
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartExtensionHolds
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExtensionPropertyPi

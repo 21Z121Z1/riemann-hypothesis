@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.DirichletGroupPowers.RedOne
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompCond
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompIne

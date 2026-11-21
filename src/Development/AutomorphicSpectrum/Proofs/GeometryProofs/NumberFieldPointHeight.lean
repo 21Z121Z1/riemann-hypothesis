@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineHeightInvariantScaling
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveRatSectionSum
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PFlZArithVar

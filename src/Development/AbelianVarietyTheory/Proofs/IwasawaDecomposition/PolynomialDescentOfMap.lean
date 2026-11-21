@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGenericFibreOpenEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OpenEmbeddingOfLevelOneStatement
 

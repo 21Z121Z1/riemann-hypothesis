@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawLeftRestrictionIsPair
 
 set_option autoImplicit false

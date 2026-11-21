@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryAdelicIwasawaCompactStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MinimalParabolicUnipotentLeviDecompStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ParabolicBlockEmbeddingCompactStatement

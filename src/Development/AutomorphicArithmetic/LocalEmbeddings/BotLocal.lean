@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.BotCoord
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsMaxCompactEqFrameGramSplitBasis
 import Development.AutomorphicArithmetic.DivisorFrames.LocalCharConductorLeOfHeckeExponent

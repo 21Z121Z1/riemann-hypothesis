@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsingletonRankZero
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsNormalisedOfIsDiscrete
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieCentralElementTraceStatement

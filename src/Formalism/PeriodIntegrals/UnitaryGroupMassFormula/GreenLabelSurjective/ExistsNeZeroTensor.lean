@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PadicSubsetSums.CentralIdempotents.IsConstituent
 import Mathlib.Algebra.Category.ModuleCat.Projective
 import Mathlib.Algebra.Module.StablyFree.Basic

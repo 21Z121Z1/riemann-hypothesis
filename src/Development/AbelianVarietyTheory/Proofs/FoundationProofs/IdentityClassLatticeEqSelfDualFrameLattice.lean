@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.ThPinsR
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.StandardHermitianSpace
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CompletedLatticeEqAdelicCompletionAndGram

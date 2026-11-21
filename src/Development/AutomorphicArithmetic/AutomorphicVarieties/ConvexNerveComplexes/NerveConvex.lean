@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.NerveCompact
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.AcycDirected
 

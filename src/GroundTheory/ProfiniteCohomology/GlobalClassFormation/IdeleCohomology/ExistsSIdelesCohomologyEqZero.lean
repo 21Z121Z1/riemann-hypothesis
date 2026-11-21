@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Galois
 import GroundTheory.ProfiniteCohomology.ColimitUnion
 import Mathlib.FieldTheory.Galois.Profinite

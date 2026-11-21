@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Polynomial.Basic

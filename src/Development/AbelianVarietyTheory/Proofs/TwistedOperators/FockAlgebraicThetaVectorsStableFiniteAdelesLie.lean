@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MulNonsingInvCancelRightGram
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtOfMemGfC

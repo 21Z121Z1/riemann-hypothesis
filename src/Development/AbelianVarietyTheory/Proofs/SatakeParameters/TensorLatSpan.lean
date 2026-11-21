@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PosOkId
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardWeylLatticesFockDual
 

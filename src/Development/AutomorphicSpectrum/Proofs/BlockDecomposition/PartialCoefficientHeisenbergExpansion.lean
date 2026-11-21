@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCharacterCommutatorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftConjHeisenbergStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentreCoefficientEquivarianceStatement

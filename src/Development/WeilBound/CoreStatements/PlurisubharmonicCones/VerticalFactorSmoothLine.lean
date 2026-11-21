@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHermExtend
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorPos

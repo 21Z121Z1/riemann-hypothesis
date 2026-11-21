@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PVertPointMultChart
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingPow
 set_option maxSynthPendingDepth 1

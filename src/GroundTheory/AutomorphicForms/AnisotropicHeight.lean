@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups
 import GroundTheory.AutomorphicForms.ReductionHeight
 import Mathlib.Topology.Sheaves.Presheaf

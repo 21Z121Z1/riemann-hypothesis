@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ContinuousCochains.Functoriality
 import GroundTheory.ProfiniteCohomology.OpenNormal
 import Mathlib.Tactic.Monotonicity.Lemmas

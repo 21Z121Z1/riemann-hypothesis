@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.VolumeInputs
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaStabilizerExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealScalarArchimedeanAdeleSmulMatrixRealPlace

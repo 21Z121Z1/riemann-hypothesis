@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Mathlib.LinearAlgebra.Charpoly.ToMatrix
 import Mathlib.Tactic.ENatToNat

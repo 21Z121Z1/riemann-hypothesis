@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.IrreducibleImage
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.RestrictIso
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.SectionBasis

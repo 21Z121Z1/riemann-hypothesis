@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelativeJacquetRepEquivRowStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParabolicInductionColumnFalseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParabolicInductionColumnTrueStatement

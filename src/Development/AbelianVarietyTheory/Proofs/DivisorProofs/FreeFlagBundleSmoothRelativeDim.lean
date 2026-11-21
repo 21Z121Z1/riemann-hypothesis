@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleProductOfEach
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleTransportAlongIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleBaseChangeAltBis

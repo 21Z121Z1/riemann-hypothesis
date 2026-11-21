@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousConjNilSymm
 import Mathlib.LinearAlgebra.Lagrange
 

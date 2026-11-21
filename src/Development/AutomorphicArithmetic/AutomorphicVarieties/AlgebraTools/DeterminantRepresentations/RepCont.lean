@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DeterminantRepresentations.RepApi
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Univ
 import Mathlib.Topology.Algebra.MvPolynomial

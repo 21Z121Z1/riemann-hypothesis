@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLocalConjugationSelfDualLatticesHost
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsCuspFunIffConstTerm
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.GPlacesExampleNatAct
 import Formalism.LocalRingCardinality.SpanPowerMembership.TrivialColumnsRamifiedTop
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

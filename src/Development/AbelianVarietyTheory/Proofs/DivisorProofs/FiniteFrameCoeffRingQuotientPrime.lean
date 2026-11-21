@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientPow
 

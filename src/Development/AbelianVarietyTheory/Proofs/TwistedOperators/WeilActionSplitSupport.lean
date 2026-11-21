@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLocalSupportIdempotentStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLocalSupportSourceStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryInductionOnSplitPlaceSupportStatement

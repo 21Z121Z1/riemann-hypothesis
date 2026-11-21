@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LemmaDensOfSteps
 import Mathlib.Topology.Sheaves.Presheaf
 

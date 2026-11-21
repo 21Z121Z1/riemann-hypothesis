@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsIntegralOfQuad
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.PairVal

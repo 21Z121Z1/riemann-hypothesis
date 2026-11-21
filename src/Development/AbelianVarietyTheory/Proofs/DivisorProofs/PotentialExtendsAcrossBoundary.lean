@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MongeAmpereMeasureFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialSmoothOnOpenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MongeAmpereLocalIntegralStatement

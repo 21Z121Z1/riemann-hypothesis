@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.MemPowSub
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.GroupTheory.FiniteAbelian.Basic

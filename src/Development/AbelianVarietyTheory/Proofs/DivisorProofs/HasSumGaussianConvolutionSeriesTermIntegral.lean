@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowForm
 import Mathlib.Analysis.Complex.OperatorNorm
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.HeckeCommuteOfCompatibility
 import Formalism.LocalToGlobal.HeckeThetaElements.IsHeckeElt
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil

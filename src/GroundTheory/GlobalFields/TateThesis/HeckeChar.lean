@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 import GroundTheory.GlobalFields.TateThesis.ConductorIdeal
 

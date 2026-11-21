@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsBoxSec
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SectionLinCombFiberProductSeparatedStatement
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.IsSquareDeterminantComparison

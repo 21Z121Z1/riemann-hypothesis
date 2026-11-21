@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
 import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
 

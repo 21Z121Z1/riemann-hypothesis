@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.TempProdUsedOf
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SquareIntegrableSegments.SegmentOfTwistedSquareIntegrable
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SquareIntegrableSegments.ExistsUnitaryCentralTwist

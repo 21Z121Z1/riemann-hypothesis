@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LenEqOfUnitriangular
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepOnePlusDet
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TwoByOneBlock

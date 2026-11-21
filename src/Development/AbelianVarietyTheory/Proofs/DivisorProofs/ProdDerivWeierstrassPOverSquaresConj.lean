@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjKernelMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardSqModPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdDerivWeierstrassPOverSquaresNeZeroStatement

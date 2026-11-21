@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.LamLocal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.DecEmb
 

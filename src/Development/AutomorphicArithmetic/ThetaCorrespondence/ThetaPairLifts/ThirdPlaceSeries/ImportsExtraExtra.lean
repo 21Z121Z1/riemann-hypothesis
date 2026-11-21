@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.NormChoiceFacts
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseSizes
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore

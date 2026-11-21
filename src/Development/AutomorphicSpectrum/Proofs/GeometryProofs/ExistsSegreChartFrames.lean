@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCentresStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtIffValueAtStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreChartBundleStatement

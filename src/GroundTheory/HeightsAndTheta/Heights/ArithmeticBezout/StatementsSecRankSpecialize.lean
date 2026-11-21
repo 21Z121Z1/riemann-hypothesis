@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Statements
 import Mathlib.RingTheory.MvPowerSeries.Inverse
 import Mathlib.RingTheory.PicardGroup

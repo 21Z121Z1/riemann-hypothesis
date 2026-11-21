@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylTensorLiftEquivariant
 open NumberField IsDedekindDomain
 open scoped TensorProduct

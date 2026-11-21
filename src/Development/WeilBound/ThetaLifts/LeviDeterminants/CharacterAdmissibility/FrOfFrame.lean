@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.DoublingGramFromBlocks
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.SchrodingerApplyZeroOfFst
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EvFrame

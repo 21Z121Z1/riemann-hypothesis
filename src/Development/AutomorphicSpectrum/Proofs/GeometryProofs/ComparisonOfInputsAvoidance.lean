@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpSt
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TopCmp
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsomorphicLinesPotentialDifference

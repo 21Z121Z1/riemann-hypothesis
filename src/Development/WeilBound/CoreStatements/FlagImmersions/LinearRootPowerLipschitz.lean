@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.CompactGapsGE
 import Development.WeilBound.CoreStatements.FlagImmersions.MapProdLinear
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.HermLatFin
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.PiTensorProduct

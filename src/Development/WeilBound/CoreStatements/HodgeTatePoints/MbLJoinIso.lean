@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLCentre
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GenfibMap
 import Mathlib.AlgebraicGeometry.Properties

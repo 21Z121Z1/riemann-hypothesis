@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralFramedPointBaseChangeStable
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BddGood
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd

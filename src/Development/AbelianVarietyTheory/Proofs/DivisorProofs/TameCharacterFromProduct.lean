@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteUnitChineseRemainder
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents

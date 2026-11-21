@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementJC
 
 namespace Formalism.FourierDecayAlt.JCT

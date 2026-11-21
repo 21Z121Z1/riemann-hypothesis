@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocTuplesThetaOfAdm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEffCartierOfOrders
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvdOfForallCompleteDvrDominating

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.FlagBasis
 import Development.EtaleCohomology.WeilConjectures.AbsContPf
 import Development.EtaleCohomology.WeilConjectures.ChevPf

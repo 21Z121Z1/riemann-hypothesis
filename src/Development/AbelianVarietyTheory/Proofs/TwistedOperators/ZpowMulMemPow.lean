@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.NormalRepresentationLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalBasic
 

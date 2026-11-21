@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalBlockLeviSemisimple
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.CuspBlock
 set_option maxHeartbeats 1000000 in

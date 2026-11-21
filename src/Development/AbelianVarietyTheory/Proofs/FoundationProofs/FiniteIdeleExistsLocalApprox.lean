@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationShortExactCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationMapMonoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationCkVanishesStatement

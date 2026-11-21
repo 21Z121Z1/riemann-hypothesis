@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.EnergyAbsFolnerExp
 import Mathlib.MeasureTheory.Function.L2Space
 import Mathlib.Tactic.ENatToNat

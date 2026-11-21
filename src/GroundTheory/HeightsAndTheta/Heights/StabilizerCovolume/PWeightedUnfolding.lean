@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.WeightedUnfoldingIntegral
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.Etale.Weakly

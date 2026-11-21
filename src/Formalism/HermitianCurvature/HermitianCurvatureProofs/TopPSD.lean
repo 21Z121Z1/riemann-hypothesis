@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementTop
 
 open Formalism.FourierDecayAlt NumberField MeasureTheory

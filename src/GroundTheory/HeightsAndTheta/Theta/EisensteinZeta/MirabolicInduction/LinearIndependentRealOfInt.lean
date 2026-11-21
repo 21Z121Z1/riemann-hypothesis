@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.CovolumeCount
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

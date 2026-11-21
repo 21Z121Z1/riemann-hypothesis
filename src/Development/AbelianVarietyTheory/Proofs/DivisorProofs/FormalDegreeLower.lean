@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.InnerProductFormulaField
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.HeckeCharacterParameters

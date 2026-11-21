@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaActionReductionStatement
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Saturated
 

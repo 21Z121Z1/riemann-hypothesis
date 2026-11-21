@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolFunApply
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.TiedRec
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.RatStab

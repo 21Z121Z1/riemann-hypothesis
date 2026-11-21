@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositiveQuadraticUniformLowerBound
 open Filter Topology Set Metric MeasureTheory GlobalTheory.ChernReg
 open scoped ContDiff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.RelBaseChangeSt
 import Mathlib.RingTheory.Flat.Equalizer
 import Mathlib.RingTheory.Henselian

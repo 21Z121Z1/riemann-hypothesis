@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueComplexPointUnder
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnderOfSameOrbit
 set_option autoImplicit false

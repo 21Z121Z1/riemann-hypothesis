@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.LocLatSat
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeSaturation.BcGSmulR
 import Mathlib.RingTheory.RegularLocalRing.Defs

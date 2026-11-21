@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.TwistedTraces.TracePairingSeparatesEndomorphisms
 import Development.AutomorphicArithmetic.TwistedTraces.TrOnRestrictAndEqOfMapsInto
 import Development.AutomorphicArithmetic.TwistedTraces.InfFixedLeSpanFixOfDenseSpanAll

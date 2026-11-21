@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.HasGenPull
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SpanEqTopOfFunctionals
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueThetaConst

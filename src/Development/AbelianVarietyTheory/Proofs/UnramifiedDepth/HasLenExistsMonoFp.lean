@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.HasLenCokerDet
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

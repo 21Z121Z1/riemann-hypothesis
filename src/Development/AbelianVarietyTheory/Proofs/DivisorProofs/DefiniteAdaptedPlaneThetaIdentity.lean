@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLiftDef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedAdaptedPlaneVanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPolDataAlmostAllPlaces

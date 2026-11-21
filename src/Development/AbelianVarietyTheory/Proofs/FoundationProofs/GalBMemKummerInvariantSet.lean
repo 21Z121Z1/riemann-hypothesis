@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularFunctionTowerIntegralityStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsConjLevelElemExponentShimuraStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCommonLevelSpanMultipleStatement

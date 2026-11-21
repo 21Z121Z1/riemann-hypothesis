@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SingleIndexPlacesAreTwisted
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitNeOne
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsFullOfXiRec

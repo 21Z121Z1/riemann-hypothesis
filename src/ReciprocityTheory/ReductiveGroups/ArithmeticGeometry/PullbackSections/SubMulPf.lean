@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SubMul
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspMulOf
 import Mathlib.Data.Finsupp.Pointwise

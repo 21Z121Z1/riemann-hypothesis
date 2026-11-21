@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FiniteAdeleVectorAnnihilatorsCompactOpenBasis
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 

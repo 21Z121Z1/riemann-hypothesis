@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsQuadraticSqrtExtensionBasicFacts
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Valuation.Integral

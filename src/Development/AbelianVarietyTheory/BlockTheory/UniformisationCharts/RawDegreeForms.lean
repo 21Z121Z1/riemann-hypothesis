@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.RingTheory.AdicCompletion.Completeness

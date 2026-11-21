@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTrace
 import Mathlib.Data.Finset.Functor
 import Mathlib.FieldTheory.Galois.Profinite

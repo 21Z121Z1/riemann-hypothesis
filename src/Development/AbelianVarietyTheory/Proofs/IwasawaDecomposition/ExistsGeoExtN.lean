@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RealMoveOfParts
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesOfLifts
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.OmPinsTr

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgHomAlgebraicClosureApplyEqPow
 open AlgebraicGeometry CategoryTheory
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor

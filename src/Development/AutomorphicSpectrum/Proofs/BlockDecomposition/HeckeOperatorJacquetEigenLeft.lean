@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeOperatorsCommuteOnFixed
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocallyConstantOrbit
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsOpenOhat

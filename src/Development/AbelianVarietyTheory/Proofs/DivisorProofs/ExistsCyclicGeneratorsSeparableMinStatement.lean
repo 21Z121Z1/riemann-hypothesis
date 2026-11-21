@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCyclicGeneratorsSeparableMin
 open scoped TensorProduct nonZeroDivisors
 open Polynomial

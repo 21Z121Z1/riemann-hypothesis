@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ShiftedGeneratorEqIteSmulAdd
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.RingTheory.SimpleRing.Principal

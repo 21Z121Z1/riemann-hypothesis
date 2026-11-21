@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GLnLattice
 import Mathlib.Tactic.ENatToNat
 

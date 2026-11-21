@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.HilbertMultidegreePieceDivisorSum
 
 namespace ReciprocityTheory.ChartRestriction.G.ArakelovGeometry

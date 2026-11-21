@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
 import Development.AbelianVarietyTheory.Definitions.Foundations.SgC
 import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT

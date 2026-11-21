@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalEquationsHeightSumStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResidueEmbeddingsCardStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosedPointAlgebraicStatement

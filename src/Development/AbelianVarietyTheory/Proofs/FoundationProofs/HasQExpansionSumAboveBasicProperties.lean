@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemRingOfInR
 import Mathlib.RingTheory.PiTensorProduct
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators

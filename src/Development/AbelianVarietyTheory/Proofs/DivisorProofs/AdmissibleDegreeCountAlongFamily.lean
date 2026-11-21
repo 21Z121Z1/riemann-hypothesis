@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NuAbsPlaceFine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LossBoundNonneg

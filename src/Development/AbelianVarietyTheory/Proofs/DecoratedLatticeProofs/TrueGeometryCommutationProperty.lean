@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ReadsLow
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ReadsRename
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRatOfSameOrb

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralAtOfComponentZeroUnderPrime
 open NumberField IsDedekindDomain Formalism.UG Formalism.L2.Col
 open scoped TensorProduct

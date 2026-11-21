@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalPartThetaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalPartIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalPartUnfoldStatement

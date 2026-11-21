@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsSigmaList
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchimedeanLiftUnitaryGroupProduct
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP

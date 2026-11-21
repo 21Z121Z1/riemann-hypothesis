@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitHermOfDet
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.IntegralAlmostAllPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceAdelicCmExtension

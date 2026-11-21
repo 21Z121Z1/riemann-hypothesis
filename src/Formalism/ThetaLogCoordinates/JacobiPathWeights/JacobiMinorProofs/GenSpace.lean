@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.GenSpaceFacts
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.ExistsSuppOfEvalNe
 import Mathlib.Algebra.Module.StablyFree.Basic

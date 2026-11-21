@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRescaledConvergentSubsequenceStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalPairTypedStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairSpaceCarriesFlatStatement

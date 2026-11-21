@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ArakelovCycleHeights.QpSndStr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine

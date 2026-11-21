@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmLatticeDualIntegralImage
 open NumberField GlobalTheory.CMVal GlobalTheory.LatJet GlobalTheory.RealMult
 open GlobalTheory.IndefiniteRowSideFullHecke.PolarisationModuleIndex (latMod polMod dualLat TrInt bar)

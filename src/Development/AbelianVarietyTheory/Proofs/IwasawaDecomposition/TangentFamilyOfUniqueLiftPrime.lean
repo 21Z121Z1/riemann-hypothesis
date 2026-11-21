@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.HeightBoundStatement.HTBoundSt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatDRSubsetLatHT

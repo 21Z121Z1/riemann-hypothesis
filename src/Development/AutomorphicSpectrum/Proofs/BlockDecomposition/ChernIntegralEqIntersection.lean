@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralRandomSectionsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AeZeroCountEqIntersectionStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace MeasureTheory

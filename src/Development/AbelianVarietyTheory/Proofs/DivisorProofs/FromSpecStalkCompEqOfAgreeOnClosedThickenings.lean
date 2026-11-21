@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ThickTransComp
 import Mathlib.RingTheory.WittVector.IsPoly
 open AlgebraicGeometry CategoryTheory Limits IsLocalRing

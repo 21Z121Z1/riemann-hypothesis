@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisAutomorphismActsOnDeeperLevelLabels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalLabAlt
 

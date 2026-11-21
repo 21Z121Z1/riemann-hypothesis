@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicCases.SymplecticGSp4
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.MemOfInt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.TbTriDiag

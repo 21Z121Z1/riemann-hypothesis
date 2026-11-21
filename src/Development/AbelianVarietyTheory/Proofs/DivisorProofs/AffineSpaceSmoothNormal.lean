@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsDomainAndIsIntegrallyClosedAtPrimeOfSmoothOfCo
 import Mathlib.AlgebraicGeometry.AffineSpace
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

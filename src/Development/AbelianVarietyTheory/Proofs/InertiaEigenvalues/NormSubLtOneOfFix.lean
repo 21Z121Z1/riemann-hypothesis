@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemWpNormSubLtOne
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface

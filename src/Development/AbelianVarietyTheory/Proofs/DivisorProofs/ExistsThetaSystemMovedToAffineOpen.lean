@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingOnAffineOpenFinitelyGeneratedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineChartLiftToModuliSchemeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsE8ThetaPowerOverModuliDomainStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsInverseChart
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain

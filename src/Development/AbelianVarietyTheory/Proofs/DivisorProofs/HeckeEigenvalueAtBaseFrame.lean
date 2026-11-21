@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenvalueInvEqStar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralHeckeElementExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantHaarAdelicUnitaryGroupHermiti

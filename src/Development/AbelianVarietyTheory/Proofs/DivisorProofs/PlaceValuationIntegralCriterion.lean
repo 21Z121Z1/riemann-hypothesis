@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairStatementOfHeightAlterationStatement

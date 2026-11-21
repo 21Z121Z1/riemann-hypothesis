@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsUnitReprOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocalCoefficientChangeCompare
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthQuotientMaximalIdealPowSmulTop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CenterEqSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelFinEMemDivisorStandardStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CentralFrameSplitPlaceNontrivialStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FixedMemOfOrbitHeightStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MatrixLatticeIndexIntegralTranslationInvarianceStatement

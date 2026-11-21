@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EichlerIsometry
 

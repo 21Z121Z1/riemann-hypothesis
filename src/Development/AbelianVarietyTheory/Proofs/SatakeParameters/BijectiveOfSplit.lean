@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSubquotientComp
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsOrbitProd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmoothCharCompNormU

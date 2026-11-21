@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LiftToLogResolutionAnalyticStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
 import Std.Tactic.BVDecide.Normalize.Prop

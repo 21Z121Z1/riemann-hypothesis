@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HermSysHypOneLeLambdaZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinSubstLinSubst
 open NumberField MvPolynomial ReciprocityTheory.MultiplicativeHeights CategoryTheory AlgebraicGeometry

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.FourierWhittaker.Smooth
 import GroundTheory.AutomorphicForms.FourierWhittaker.AdelicCharPairTorusPtSingle
 

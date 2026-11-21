@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EulerCharacteristicDimensionZero
 set_option autoImplicit false
 noncomputable section

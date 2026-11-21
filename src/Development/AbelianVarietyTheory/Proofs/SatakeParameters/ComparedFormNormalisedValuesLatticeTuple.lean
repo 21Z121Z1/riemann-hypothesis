@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RealAtSuccIffDecompositionValuesStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeTupleSuccLevelPointIsComponentPointInCharStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PosTieAt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortCentralMove
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortAtFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovAtBaseRoot

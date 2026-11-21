@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFieldExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompComparisonLeft
 

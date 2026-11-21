@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorWeightedBesselGapStatement
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilyFunctionalSpanDualStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepExteriorPowerStandardRep

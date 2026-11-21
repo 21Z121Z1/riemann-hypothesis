@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrameEquivApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleTwistOfTwistingCharacter
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators

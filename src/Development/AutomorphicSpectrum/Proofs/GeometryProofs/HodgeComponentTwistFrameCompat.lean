@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorIffStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EqOfEqGenericProjectiveStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective

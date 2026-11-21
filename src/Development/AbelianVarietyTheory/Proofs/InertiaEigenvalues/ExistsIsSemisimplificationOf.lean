@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.SemisimplificationConstituents
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N

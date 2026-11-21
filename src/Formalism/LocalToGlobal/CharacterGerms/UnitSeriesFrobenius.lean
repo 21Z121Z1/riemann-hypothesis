@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.CoefficientIdentityOfCurve
 import Formalism.LocalToGlobal.CharacterGerms.FrobSerSt
 

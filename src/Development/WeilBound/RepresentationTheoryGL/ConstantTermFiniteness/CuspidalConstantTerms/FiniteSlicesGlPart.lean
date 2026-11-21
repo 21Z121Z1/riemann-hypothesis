@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockEmb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxCompactBlockLeviSecond
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KinfFinite

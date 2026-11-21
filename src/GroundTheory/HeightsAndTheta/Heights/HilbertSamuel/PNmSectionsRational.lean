@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNmSectionsRational
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

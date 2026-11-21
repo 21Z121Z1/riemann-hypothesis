@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.IsogenyDegreeOne
 import GroundTheory.GlobalFields.ComplexMultiplication.GoodReductionAlmostAll
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionDifferential

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor
 import Development.WeilBound.CuspidalAdmissibility.OccPair
 import Development.WeilBound.CuspidalAdmissibility.OccTrace

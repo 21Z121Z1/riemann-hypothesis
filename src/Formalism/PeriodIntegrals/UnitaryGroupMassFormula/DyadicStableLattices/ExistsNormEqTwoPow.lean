@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DyadicStableLattices.AlgebraMapMkO
 import Mathlib.Data.Int.Star
 import Mathlib.NumberTheory.NumberField.ClassNumber

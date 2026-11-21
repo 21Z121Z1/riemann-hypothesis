@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.BridgeDefs
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.StablyFree.Basic

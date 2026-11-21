@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MonomialLtOfBoundedIntervalEndsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AcrisNormOfNonzero
 

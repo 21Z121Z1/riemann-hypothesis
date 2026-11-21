@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.LinearSubstitutionDiagonal
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 

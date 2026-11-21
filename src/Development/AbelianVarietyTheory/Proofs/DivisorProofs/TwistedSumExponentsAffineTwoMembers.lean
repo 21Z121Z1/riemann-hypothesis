@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumIOfSumFMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsYy
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSetupTranslationExponentsAffineStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.LemmaS
 import Mathlib.Analysis.Real.Pi.Bounds
 import Mathlib.Data.Int.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupLocal
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ExtensionEmbeddingOfIsRealAlgebraMap
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeSplitOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatakeBoundOfIsometricSphericalGLStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsMoreRest
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PBlockRatioAlg
 set_option maxSynthPendingDepth 1

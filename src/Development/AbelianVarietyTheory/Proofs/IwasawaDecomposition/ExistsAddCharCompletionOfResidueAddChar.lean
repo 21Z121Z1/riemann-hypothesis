@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Tactic.Polynomial.Basic

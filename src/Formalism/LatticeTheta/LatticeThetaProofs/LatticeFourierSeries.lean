@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeTheta.LatticeThetaProofs.TorusProjIsOpenQuotientMap
 import Formalism.LatticeTheta.LatticeSummableDecay
 import Mathlib.Dynamics.Ergodic.Action.Regular

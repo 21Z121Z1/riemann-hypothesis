@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.ClsSum
 import Formalism.LocalToGlobal.LatticeGeometry.GeoTied
 import Formalism.LocalToGlobal.LatticeGeometry.Inhabited

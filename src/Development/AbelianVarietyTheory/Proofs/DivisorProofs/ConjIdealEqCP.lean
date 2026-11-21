@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTuplesOfLaws
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowWeightStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistCharacterOfArtin

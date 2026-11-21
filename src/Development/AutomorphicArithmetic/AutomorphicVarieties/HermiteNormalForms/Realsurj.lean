@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
 import Mathlib.NumberTheory.NumberField.CanonicalEmbedding.Basic
 

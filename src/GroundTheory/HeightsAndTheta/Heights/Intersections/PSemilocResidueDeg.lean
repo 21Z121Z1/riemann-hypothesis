@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocResidueFibreDim
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocResidueAdjoin
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PChartRankAdjoin

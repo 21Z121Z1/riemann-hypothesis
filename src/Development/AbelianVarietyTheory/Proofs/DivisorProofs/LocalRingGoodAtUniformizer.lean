@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSubConjNotMem
 import GroundTheory.GlobalFields.LocalAtPlace

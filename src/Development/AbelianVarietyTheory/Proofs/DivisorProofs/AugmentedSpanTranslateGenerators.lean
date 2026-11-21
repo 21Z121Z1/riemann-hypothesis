@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearBarGlHaarIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearBarSpanGlIntegralStatement
 open scoped TensorProduct NNReal Matrix

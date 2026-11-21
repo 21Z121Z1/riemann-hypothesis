@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLatIntVec
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Henselian

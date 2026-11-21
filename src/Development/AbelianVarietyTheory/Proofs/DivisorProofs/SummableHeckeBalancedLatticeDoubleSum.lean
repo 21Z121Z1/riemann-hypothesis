@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
 import Mathlib.Algebra.Module.ZLattice.Summable
 import Mathlib.Algebra.Order.Ring.Star

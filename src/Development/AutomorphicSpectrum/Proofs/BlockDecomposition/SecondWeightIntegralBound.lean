@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.RealLocalIntegrals.RealSharpBounds.HasFDerivAtPm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodUnipotentOfParts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightDifferentiableLogarithmicStatement

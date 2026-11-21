@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceConjugationPropertiesCmFieldStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsConjMulEq
 import Formalism.LocalRingCardinality.SpanPowerMembership.Adelic

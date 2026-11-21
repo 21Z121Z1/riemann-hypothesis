@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionDiagonalIdentity
 open Finset Matrix PositivityTheory.RgHe.Frame
 set_option maxHeartbeats 1000000 in

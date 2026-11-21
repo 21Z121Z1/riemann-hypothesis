@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFormsGlOfOpenLevelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFormsGlOfOpenLevelInductionStatement
 open NumberField MeasureTheory GlobalTheory.CuspRep

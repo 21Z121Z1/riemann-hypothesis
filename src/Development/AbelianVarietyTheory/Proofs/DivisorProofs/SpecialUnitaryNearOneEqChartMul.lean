@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeftMulNearOneLuSplitSmallChartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalPhaseFrameSmallAnglesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjInvSectionMulEntriesNearOneStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTCLRadTCut
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

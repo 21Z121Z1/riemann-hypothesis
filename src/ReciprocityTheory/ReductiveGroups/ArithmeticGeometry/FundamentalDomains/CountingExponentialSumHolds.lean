@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicOutsideLine
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Algebra.Order.Star.Real

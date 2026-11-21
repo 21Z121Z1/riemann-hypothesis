@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HermitianForms.DefsSym
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetSym
 open Formalism.L2.Col

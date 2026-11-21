@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerAlong
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.EmbeddingXiZeroNeZero
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FinTensMemLatO

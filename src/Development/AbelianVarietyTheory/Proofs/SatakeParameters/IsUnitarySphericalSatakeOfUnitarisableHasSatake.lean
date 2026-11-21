@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsReadingLaws
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSubquotSmIndCongr

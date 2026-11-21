@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProjOverOfIsProjOverBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigidifiedSymmetricLineBundleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleTrivialOfSamePolarizationStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.FiniteEtaleSurjectiveOfPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordTieCompEquiv

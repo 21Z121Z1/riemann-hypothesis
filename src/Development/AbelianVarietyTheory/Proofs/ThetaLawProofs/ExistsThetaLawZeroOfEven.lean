@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaSqCongrModTwo
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaLawMul
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsIsSymmMulVecAddDiagModTwo

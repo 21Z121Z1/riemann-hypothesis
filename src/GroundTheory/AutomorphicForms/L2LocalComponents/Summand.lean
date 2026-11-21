@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.L2LocalComponents.Analytic
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchPolar
 import GroundTheory.AutomorphicForms.L2LocalComponents.CuspSmooth

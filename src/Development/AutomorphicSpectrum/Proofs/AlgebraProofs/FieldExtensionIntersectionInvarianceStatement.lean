@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FieldExtensionIntersectionInvariance
 open MvPolynomial GlobalTheory.CompanionTheory.Ar.Num GroundTheory.Heights₂.Heights.NumbersDVR
 open ReciprocityTheory.ChartRestriction.G.Geo (ChartBundle chartRing)

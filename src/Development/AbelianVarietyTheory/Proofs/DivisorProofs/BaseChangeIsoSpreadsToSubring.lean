@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MorphismDescendsToSubring
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MorphismsEqSpreadToSubring
 

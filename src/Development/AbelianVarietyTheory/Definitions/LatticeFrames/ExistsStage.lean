@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsUnitaryOfOrderDvd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EasyInputs

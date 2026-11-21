@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.TraceFourier
 import Mathlib.NumberTheory.NumberField.Discriminant.Basic
 import Mathlib.RingTheory.DedekindDomain.Different

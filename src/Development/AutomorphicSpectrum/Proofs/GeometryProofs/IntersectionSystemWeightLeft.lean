@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeMiddle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointLatticeData
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConjugatePointSameCentre

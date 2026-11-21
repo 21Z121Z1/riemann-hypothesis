@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.SplittingFromInequality.Decomposition
 
 namespace GroundTheory.Global

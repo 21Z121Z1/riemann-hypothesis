@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Statements
 import Development.ResolutionOfSingularities.EmbeddedResolution.HironakaTheorem
 

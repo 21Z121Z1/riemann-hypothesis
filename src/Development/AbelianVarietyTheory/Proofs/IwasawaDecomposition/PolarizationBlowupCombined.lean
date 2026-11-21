@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlowupPolarizationAmpleStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlowupPolarizationDegreeStatement
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

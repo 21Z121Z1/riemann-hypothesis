@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartRestrictPreimageOpenStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.InvariantOpenChartPreimageStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GlueQuotientChartsCoverStatement

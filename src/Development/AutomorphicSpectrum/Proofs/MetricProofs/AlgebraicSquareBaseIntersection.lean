@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AlgebraicSquareXiIntersectionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AlgebraicSquareIntersectionPullbackStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.APrime

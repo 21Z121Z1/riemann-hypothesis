@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LeISupInfPreimage
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstThickeningFieldStructureStatement
 import Mathlib.Tactic.Monotonicity.Lemmas

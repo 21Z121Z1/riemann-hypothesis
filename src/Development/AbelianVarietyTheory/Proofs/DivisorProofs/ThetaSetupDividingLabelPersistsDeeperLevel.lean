@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsFrameTwoLevels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinitePoint

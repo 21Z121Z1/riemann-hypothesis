@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.PiTensorProduct
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import ReciprocityTheory.AnalyticForms.LeviForms.TailBoundA

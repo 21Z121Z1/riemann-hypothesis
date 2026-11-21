@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PelUniformisedGeometricFree
 open MeasureTheory Matrix
 open scoped Classical

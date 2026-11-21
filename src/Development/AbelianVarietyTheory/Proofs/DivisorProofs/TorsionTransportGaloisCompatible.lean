@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdeleApproximationModConductorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdeleClearDenominatorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeMultipleMemSublatticeStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.PrimeToDifferent
 import Mathlib.NumberTheory.NumberField.Discriminant.Basic
 import Mathlib.RingTheory.Henselian

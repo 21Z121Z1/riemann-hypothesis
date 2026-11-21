@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GenfibMap
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLPulllocCentre
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Ring.IsFormallyReal

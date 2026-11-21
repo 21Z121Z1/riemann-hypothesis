@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexConjugationHermCompatStatement
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.CMadens
 import Mathlib.Analysis.Calculus.FDeriv.Star

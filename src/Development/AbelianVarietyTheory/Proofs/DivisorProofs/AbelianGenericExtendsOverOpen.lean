@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubsingletonOfFibres
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PerfectPairingDualSymplectic

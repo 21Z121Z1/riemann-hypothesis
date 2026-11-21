@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FgOfSmulLe
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsAdelicUnitaryTranslateStandardLattice

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HermitianForms.IsLocBasis
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.LatticeBasisExistsHolds
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StandardLattice

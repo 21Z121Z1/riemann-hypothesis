@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeMeanOfInputs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticDegreePrimeRemoval

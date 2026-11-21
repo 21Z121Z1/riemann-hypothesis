@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineDegreeGeOfTwistedSection
 
 open scoped IntermediateField Polynomial RatFunc

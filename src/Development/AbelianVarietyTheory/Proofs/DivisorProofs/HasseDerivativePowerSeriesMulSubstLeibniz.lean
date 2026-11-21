@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffHasse
 import Mathlib.RingTheory.PowerSeries.Substitution
 

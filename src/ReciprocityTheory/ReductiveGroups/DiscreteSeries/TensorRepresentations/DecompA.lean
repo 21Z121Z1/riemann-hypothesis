@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Lemmata.PowerApplication.PowApp
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.LinearAlgebra.Eigenspace.Minpoly

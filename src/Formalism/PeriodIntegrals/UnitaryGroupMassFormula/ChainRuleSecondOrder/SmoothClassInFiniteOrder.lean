@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ChainRuleSecondOrder.HasDerivAtDOf
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 import Mathlib.Topology.Sheaves.Presheaf

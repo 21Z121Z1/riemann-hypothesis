@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
 
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators

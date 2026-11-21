@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddCharNegEqOne
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.NumberTheory.LocalField.Basic

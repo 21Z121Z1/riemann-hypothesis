@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.Wcount
 import Mathlib.Algebra.QuadraticAlgebra.Basic
 import Mathlib.RingTheory.Etale.Weakly

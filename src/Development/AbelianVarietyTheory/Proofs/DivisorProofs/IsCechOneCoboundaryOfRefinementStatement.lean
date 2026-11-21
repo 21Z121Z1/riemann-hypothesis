@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCechOneCoboundaryOfRefinement
 open AlgebraicGeometry CategoryTheory GlobalTheory.KS
 set_option maxHeartbeats 1000000 in

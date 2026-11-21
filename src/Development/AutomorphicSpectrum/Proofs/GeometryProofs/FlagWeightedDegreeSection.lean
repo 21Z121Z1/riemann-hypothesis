@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorFlag
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPointStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarisedStatement

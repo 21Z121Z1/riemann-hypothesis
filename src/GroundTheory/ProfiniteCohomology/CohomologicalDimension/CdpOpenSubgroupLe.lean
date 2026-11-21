@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.SubsingletonCohomologyOfPrimaryOfFinite
 import GroundTheory.ProfiniteCohomology.Shapiro
 set_option maxSynthPendingDepth 1

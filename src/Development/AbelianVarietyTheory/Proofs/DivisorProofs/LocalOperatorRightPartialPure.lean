@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartREqPartLSwap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOperatorLeftPartialPureStatement
 

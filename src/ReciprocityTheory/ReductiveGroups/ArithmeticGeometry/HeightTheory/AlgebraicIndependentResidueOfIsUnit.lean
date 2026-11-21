@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
 import ReciprocityTheory.SemistableReduction.GaussIndepOfLeTrdeg
 import ReciprocityTheory.SemistableReduction.IntegralClosureRankAndResidueTrdegLe

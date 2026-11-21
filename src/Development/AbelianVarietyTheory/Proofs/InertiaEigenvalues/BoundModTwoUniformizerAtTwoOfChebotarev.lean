@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AddValLeOfNotMem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousCocycleChangeScalarsBack
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AntiOfKer

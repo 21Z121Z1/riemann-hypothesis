@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.Imports
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.StrongApproxN
 

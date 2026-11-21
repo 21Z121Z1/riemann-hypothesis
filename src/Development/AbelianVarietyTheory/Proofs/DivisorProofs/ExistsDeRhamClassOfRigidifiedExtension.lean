@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCocyclesOmega
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagSumCoc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsCharTorsVal

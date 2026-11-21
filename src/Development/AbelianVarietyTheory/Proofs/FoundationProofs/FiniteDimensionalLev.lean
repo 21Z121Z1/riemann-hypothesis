@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitQExpansionCoefficients
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.QuotientIntegralHolomorphic

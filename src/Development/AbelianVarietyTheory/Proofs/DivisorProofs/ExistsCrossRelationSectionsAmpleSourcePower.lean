@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusHomOfIff
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsAmpleLBOfRelAmpleOfIsAffine
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecOfLeChart

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerClassEqImpPowRatio
 open GlobalTheory.KZ GlobalTheory.CyclotomicQExpansion GlobalTheory.Glue
 open scoped MatrixGroups

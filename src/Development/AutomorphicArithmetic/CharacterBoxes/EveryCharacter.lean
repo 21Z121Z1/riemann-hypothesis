@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ShapeOf
 import Development.AutomorphicArithmetic.CharacterBoxes.ShapeWin
 import Development.AutomorphicArithmetic.CharacterBoxes.SupplyChi

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootIdx
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineBundleInducedArith

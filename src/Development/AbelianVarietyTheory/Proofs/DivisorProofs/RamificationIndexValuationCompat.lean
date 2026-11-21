@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteSeparableCompositum
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.Valuation.AlgebraInstances

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.LogVandermondeVariationUnbounded
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card

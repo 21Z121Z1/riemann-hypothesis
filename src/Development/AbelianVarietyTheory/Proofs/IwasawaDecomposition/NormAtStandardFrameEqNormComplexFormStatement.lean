@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormAtStandardFrameEqNormComplexForm
 open NumberField Formalism.L2.DIV Formalism.L2.Rows GlobalTheory.AmbCrd
 open scoped Matrix ComplexOrder

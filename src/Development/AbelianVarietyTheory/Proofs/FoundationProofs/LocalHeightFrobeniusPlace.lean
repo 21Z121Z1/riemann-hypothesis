@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CupProductCoboundaryMod
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.DecGen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameCochainCocycleExtensionStatement

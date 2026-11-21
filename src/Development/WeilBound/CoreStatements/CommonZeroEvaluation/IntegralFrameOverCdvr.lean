@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.IsTanIff
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.DualMapRComp
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenericFrameIntegralOffFinitelyManyFunctions

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsPres
 import Mathlib.RingTheory.PicardGroup
 set_option maxSynthPendingDepth 1

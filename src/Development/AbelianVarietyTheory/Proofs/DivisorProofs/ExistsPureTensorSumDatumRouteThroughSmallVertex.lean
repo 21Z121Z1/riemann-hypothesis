@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPureSumZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmallModelThetaTransformInjectiveProductsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulOfMapsInlMemS

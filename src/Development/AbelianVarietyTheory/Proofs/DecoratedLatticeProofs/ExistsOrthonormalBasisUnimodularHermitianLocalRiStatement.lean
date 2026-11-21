@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsOrthonormalBasisUnimodularHermitianLocalRi
 import Formalism.LocalRingCardinality.DataHost
 open scoped ComplexConjugate Matrix NNReal

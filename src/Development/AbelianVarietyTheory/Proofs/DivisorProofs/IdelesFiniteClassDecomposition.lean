@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff
 import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.HCFFromRecipA
 open NumberField IsDedekindDomain Formalism.L2.DIV Formalism.UG

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.ResInto
 
 namespace Formalism.InvariantFactorPaths.L4

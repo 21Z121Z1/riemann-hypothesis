@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.EtaleCompletion.QcohPresheaf
 import Mathlib.Tactic.Monotonicity.Lemmas
 set_option maxSynthPendingDepth 1

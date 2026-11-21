@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLCentre
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField
 

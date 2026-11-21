@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataErr
 import Mathlib.Combinatorics.Young.YoungDiagram
 import Mathlib.RingTheory.PowerSeries.Exp

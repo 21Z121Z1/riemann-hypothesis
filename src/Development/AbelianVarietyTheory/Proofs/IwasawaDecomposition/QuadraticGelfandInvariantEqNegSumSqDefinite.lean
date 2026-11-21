@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryLieGeneratorsRep
 open Matrix
 attribute [local instance 100] LieRing.ofAssociativeRing

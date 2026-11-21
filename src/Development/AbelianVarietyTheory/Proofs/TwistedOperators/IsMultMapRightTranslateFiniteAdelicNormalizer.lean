@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSmoothAutomorphicRightTranslateFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteRealPointsCommuteStatement

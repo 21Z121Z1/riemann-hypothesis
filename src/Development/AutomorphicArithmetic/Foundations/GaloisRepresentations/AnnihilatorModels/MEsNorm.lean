@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.FrobKill
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarQuotientStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagModelValueIndependent

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueSecPull
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpandsAtTransport
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HasBasisOfBasis

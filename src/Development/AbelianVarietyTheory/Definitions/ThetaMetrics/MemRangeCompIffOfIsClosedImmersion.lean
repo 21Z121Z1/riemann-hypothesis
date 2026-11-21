@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HasArcDataIff
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.LiftChartIdeal
 import Mathlib.Algebra.Category.Ring.Topology

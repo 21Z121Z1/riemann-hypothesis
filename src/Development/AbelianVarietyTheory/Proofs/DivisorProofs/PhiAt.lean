@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.NonnegOfMemCStarSet
 import Development.AbelianVarietyTheory.Definitions.Divisors.BarCompSubsetClosure
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

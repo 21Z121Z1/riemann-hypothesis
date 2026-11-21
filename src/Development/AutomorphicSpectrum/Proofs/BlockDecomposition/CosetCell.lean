@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelParabolicUnnMatrixBlockUpperTriangular
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

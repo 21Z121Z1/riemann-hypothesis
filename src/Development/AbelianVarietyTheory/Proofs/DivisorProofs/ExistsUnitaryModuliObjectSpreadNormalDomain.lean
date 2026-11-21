@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantConditionSpreadsFromGeometricPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelIsometryOfPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackSelf

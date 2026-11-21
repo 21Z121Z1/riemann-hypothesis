@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LogGaussNormSupportFinite
 import Mathlib.Algebra.Order.Star.Real
 set_option maxSynthPendingDepth 1

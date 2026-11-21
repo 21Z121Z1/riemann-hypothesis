@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModelClauseOfRankZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LevelAndHeckeOfZeroSignatureStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

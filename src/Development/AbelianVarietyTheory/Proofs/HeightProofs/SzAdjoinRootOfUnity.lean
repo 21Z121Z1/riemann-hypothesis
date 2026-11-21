@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
 
 set_option autoImplicit false

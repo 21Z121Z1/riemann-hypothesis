@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsIsKroneckerCharOfDiscr
 import Mathlib.Data.Rat.Star
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TuplesHaveLocalModelsAtConstructedPointOverTrueCStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowTwUHolds
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowAtOfStdTie

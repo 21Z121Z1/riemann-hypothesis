@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

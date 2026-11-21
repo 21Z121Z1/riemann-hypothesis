@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.ThetaMemLattice
 
 set_option autoImplicit false

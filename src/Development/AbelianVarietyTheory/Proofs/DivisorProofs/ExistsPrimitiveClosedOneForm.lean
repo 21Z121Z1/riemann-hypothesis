@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSpaceCoveringMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLiftGlobalPrimitiveStatement
 import Mathlib.Analysis.CStarAlgebra.Classes

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreConcl
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsModerateFormAdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfSig

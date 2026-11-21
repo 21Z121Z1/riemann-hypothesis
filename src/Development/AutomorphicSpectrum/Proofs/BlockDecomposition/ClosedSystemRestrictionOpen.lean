@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedSystemRestrictionSubobject
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectLeOfAffineCover
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArtinReesClosedSystem

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsFamThrough
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TwistBaseChangeAndValuationStatements
 import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames

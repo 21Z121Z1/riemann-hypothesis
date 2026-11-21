@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankZetaKernel
 open MeasureTheory GlobalTheory.SplitFlip
 open scoped Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.LieArcSt
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsPullQk

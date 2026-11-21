@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 open MeasureTheory Matrix Complex GlobalTheory.RealWeil
 open scoped Real SchwartzMap ComplexConjugate

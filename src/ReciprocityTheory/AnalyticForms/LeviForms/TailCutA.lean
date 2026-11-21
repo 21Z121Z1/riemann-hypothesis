@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import Std.Tactic.BVDecide.Normalize.Prop
 

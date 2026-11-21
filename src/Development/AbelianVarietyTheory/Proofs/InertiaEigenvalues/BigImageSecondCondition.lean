@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseSizes
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmG2OfDecomposition
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StatementJAll

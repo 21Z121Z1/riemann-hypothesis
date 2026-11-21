@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSubquotientOfEquiv
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.JacStages

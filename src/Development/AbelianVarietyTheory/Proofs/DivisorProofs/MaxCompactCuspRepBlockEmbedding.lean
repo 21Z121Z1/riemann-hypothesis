@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxCompactBlockLeviSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KinfFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZfinOfKnownTheorems

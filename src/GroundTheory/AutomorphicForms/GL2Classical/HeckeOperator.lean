@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.HeckeCosets
 import GroundTheory.AutomorphicForms.HeckeAlgebraLevel
 import GroundTheory.AutomorphicForms.GL2Classical.CuspConverse

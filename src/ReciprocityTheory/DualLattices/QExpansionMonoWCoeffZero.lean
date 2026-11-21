@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.Eisenstein4CoeffBound
 import Mathlib.NumberTheory.ModularForms.LevelOne.GradedRing
 import Mathlib.RingTheory.PiTensorProduct

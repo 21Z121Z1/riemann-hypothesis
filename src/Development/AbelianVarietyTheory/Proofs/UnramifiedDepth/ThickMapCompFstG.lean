@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.IsEigBasisIff
 
 set_option autoImplicit false

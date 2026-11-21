@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.LocDensSAChar
 import Mathlib.Analysis.Complex.CoveringMap
 import Mathlib.Analysis.Convex.Contractible

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.T2SpaceGlCompletionsOver
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.LevelEx
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.PosSide

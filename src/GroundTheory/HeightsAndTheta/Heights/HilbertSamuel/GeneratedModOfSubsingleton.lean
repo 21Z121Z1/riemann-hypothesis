@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.AlgDefs
 import Std.Tactic.BVDecide.Normalize.Prop
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EventuallyCongOne
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SphericalVolumeLift

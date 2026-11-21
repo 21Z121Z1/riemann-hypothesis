@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSpanOfPluckerProportionalStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PreModelChartGluingStatement
 

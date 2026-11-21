@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.CharacterAdmissibility.BoxCancel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryDoubledBlockDiagOneStatement
 import Mathlib.Analysis.CStarAlgebra.CStarMatrix

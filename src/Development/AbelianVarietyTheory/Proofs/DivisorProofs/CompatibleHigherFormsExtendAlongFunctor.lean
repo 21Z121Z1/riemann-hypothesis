@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitMpOmjExtIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompatFamilyExtend
 open CategoryTheory AlgebraicGeometry KaehlerDifferential GlobalTheory.CatCoh GlobalTheory.CechDR

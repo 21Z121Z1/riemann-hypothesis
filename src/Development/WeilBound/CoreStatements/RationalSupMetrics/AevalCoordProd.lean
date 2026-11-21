@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 import Mathlib.Algebra.Order.Sub.Prod
 import Mathlib.Topology.Sheaves.Presheaf

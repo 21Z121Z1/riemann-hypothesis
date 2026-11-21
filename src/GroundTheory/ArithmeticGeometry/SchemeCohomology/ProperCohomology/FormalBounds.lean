@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalCechSmul
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalAlgebra
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalCechLemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.Tactic.ENatToNat
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

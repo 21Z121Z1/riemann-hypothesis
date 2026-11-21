@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.PrimeLocalization
 import Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
 import Mathlib.RingTheory.Henselian

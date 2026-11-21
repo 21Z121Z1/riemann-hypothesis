@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumTupleProdOfSummableNormComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TsumExpNegAbsIntLtTop
 import Mathlib.Analysis.Normed.Group.Tannery

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DframeCommute
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.GenCapRepIntertwine
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HeadCorrespondenceOfParts

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatticeEqBaseOffTwist
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryReductionLevelStatement
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacedP

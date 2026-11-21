@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquaringOpenAtOneOfCompleteTwoNeZero
 open NumberField IsDedekindDomain GlobalTheory.QSA
 open scoped Quaternion Topology

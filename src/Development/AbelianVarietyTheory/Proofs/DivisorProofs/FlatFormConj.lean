@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousAndExistsConjChart
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SiegelReframe
 open CategoryTheory AlgebraicGeometry Set Matrix MeasureTheory MonObj Filter Topology

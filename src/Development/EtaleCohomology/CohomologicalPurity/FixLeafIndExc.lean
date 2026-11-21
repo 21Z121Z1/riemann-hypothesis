@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.OffContBasicPfR
 import Development.EtaleCohomology.CohomologicalPurity.ResLECompIsoOpenInfPreimageHomNaturality
 import Development.EtaleCohomology.CohomologicalPurity.OffContLocKnxPf

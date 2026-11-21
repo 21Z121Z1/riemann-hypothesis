@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallLeExp
 open NumberField IsDedekindDomain WithZero
 

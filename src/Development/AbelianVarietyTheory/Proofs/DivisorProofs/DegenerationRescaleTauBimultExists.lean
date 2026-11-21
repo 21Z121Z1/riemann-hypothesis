@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EvenDefect
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricCocycleTrivialization
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

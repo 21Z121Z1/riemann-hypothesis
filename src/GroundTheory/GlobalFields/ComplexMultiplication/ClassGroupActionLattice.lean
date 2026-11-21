@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraic
 import Mathlib.NumberTheory.NumberField.FractionalIdeal
 

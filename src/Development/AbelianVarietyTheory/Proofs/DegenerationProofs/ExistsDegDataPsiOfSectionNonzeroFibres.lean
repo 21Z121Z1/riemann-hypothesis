@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueExpansionSectionAdmissibleBase
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.UnitMapSnd
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.RigidificationComparisonUniformisationStatement

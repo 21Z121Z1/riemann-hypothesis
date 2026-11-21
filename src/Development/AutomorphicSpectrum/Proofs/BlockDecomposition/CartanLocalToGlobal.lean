@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAdmOnOfFiniteDimensional
 import Mathlib.Analysis.CStarAlgebra.Matrix
 open Matrix Topology Filter

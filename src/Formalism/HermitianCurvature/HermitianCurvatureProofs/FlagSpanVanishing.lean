@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MajorantEstimate
 
 open Matrix Formalism.FourierDecayAlt Formalism.QuantumDeterminants

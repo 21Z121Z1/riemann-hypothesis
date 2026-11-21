@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafAugInjPf
 import Mathlib.Order.CompletePartialOrder
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairConstantTermStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairVanishingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairEigenUniqueStatement

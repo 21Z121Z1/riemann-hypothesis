@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.BoundMulTranslate
 import Mathlib.Analysis.Distribution.SchwartzSpace.Deriv
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.NilpotentOrbits.OrbitIntegrals.CentralizerRepresentatives.IsChain
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.Henselian

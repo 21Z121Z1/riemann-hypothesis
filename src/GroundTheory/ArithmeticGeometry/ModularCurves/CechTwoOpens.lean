@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechLeray
 import Std.Tactic.BVDecide.Normalize.Prop
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicIntegersCompact.IsCompactAdicCompletionIntegers
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SelfDualVol
 

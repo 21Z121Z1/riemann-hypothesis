@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PQuotPartGraded
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFujitaVanishing
 import Mathlib.RingTheory.PicardGroup

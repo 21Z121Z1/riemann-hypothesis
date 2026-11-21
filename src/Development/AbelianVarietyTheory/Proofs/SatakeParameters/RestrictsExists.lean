@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormVZpowDegEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValSubLtIff
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdTransfer

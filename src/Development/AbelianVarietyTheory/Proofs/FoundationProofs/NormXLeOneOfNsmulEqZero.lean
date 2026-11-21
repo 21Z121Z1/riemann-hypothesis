@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormAddOfLt
 import Mathlib.Algebra.Order.Ring.Star
 

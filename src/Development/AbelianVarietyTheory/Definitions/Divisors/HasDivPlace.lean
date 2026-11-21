@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.IsPrimeToPLat

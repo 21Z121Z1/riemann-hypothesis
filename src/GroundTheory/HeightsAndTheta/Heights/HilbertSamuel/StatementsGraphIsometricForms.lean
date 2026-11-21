@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGraphChangeOfModel
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChangeOfModel
 set_option maxSynthPendingDepth 1

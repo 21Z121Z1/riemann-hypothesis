@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.DecLog
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.DecMoments
 import Mathlib.Analysis.Matrix.Spectrum

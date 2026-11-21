@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraCentre.Projection
 import Mathlib.RingTheory.SimpleRing.Principal
 

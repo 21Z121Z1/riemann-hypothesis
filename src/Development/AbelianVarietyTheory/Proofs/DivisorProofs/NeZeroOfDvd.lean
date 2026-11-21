@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistReductionCohomologyMapUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCoefficientReductionCupStatement

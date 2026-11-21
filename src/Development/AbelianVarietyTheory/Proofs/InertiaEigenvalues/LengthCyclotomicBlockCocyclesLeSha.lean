@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LenCob
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActDEqOfEqOne
 import Mathlib.Algebra.Module.StablyFree.Basic

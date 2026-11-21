@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.RareFlags
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CanonicalLatticeFiltrationSizeProperties

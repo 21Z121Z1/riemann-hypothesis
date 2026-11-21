@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HolomorphicDiscreteSeries
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.InfinitesimalEquivalenceUnitaryGroupPQ
 

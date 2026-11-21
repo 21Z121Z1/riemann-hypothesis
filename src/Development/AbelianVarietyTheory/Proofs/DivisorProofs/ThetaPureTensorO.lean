@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingsExistRow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMapMulInv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VacuumOrientedExists

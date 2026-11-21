@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StFrameImplicitGraph
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HasStrictFDerivAtEval
 import Mathlib.RingTheory.PicardGroup

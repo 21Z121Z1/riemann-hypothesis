@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TraceLimits.ExistsTraceLimit
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TraceLimits.SlopeTestRemainingChoices
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LimWUOfSeeds

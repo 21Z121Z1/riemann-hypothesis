@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FlatTensorVacuum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QuotientIntegralLinear
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

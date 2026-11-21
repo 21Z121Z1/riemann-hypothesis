@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGrpPullbackMapSemiAbelianNormalDomain
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFourthSide
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RigidifiedIsoRespectsCubeAndSymmetry
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ComparisonTorusInvariantStatement

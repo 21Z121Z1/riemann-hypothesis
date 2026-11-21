@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWRepOfNegSp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsVacX
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNonzeroRealIntertwinerGridArrowStatement

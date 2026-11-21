@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.UnifMetricScalar
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLinearEquivOfLifting
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsMonHomLift

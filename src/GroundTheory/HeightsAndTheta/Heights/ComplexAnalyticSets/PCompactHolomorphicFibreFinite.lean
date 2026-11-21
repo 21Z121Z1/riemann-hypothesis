@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCompactHolomorphicFibreFinite
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNonIsolatedFibreCurve
 import Mathlib.Analysis.Complex.AbsMax

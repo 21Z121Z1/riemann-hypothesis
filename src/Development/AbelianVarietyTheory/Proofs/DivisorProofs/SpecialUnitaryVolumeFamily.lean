@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSpecialUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryLieBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMultipleInLieLattice

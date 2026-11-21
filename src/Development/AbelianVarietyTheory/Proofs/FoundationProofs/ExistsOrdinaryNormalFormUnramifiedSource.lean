@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.VanishOrdL
 import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.ZetaUr
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNf

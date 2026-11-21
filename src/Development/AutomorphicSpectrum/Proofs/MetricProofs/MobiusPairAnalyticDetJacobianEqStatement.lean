@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MobiusPairAnalyticDetJacobianEq
 open MeasureTheory Filter Topology Matrix GlobalTheory.CompanionTheory.Ar.PB
 open scoped ComplexOrder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GaussianPlaneIntegrals.AssemblyAlt
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TotalDegreeLinear
 import Mathlib.RingTheory.SimpleRing.Principal

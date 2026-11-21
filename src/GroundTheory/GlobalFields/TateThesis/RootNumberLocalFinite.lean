@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalPlace
 import GroundTheory.AutomorphicForms.GL2.FiniteAdeleDecomp
 set_option maxSynthPendingDepth 1

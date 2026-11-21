@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientRingIntegersCompactAdicPropertiesStatement
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Mathlib.Tactic.ENatToNat

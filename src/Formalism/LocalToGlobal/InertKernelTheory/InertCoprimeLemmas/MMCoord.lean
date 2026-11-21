@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.DefsMMCoord
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.PowerSeriesEmbedding
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntTens

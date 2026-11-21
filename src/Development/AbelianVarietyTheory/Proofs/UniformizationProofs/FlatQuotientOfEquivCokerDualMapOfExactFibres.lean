@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExactDualMapOfExactFibresOfIsRegularLocalRing
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FlatCokerOfComplexExactModMaximalIdeal
 import Mathlib.LinearAlgebra.Dual.BaseChange

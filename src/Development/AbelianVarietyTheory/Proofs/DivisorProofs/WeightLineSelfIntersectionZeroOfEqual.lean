@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArithVarHasHhUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometricPullDetDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwoEmbeddingsOfTranscendental

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ChangeChart
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.RatioTrans
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TripleProductPointCompProjection

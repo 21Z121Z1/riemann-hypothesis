@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.PicardGroup

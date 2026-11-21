@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.RingTheory.WittVector.IsPoly

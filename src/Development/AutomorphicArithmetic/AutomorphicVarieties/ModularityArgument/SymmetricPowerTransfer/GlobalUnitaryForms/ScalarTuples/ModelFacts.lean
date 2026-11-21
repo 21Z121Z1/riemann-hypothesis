@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.HodgeTateFromSandwich
 import Mathlib.LinearAlgebra.Charpoly.ToMatrix
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

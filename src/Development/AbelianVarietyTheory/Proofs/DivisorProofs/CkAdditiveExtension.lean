@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactVectorBundlesRankAddStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkAdditiveCompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkPresentationInvariantStatement

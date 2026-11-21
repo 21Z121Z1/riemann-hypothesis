@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.IsFirstChernFamily
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Tactic.Polynomial.Basic

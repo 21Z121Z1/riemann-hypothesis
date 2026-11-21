@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChartProjFinite
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PSegreChartDim
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFiniteProjHomInjective

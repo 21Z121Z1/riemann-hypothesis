@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsHorizontalSpanXb
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsHorizontalSpanTwo
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IdDeg

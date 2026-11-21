@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.HodgeTrAt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlowUpFibreSemilocal
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsArtinianRingFibQuot
 open GlobalTheory.PD
 set_option maxHeartbeats 1000000 in

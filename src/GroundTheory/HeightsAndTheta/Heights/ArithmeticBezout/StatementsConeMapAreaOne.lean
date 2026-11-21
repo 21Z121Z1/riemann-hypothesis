@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChartGram
 import Mathlib.MeasureTheory.Measure.Hausdorff
 import Mathlib.Topology.Separation.CompletelyRegular

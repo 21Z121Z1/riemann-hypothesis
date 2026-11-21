@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentDecompositionDualBasis
 
 set_option autoImplicit false

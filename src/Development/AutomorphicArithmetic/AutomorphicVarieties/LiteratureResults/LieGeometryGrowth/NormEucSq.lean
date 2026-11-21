@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.BorelHarmonicForms.DerivativeRightTranslateL2
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsMeasure
 

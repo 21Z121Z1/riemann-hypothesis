@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CartFrSgn
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FrameExistsSignCompat
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LamFamily
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineFinsetInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CupMemRelS

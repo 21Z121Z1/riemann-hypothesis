@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalSectionOrderFactorisationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeromorphicSectionLocalOrderStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexPointsOffOpenFinite

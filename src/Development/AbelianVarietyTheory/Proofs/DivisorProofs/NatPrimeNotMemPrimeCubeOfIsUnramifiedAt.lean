@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPrimeSpanOfSqEqNegPrimeStatement
 import Mathlib.NumberTheory.RamificationInertia.Unramified
 import Mathlib.Tactic.ENatToNat

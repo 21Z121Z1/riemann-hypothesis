@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RankTwoPatching.PsForm
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.GenericIrreducibility.GenericUnitary.NormEqOneOfValuationEqOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RootsCharpolySmulMatrix

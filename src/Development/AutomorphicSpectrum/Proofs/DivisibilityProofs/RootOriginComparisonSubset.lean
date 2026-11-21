@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLatFlagPair
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SplitComps
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkSpecializesBijective

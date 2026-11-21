@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReadPk
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 

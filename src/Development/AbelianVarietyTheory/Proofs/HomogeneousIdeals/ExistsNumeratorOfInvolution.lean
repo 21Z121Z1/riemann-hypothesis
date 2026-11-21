@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.WeierstrassCurvePointOfLatticeAddOfGeneric
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

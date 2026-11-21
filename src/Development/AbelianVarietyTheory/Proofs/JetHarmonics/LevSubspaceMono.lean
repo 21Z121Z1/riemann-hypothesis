@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CompactCasimirLeSubspaceMonotoneStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WtNearLeOfAddDistLe
 import Mathlib.Topology.Sheaves.Presheaf

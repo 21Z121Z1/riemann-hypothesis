@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenRatios
 import Development.AbelianVarietyTheory.Definitions.Divisors.Multiplier
 

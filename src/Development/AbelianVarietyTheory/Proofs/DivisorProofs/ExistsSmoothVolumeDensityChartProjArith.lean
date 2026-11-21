@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioOfWeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositiveDensityExists
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

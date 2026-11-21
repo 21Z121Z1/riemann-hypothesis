@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharValMultiplicativeStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CompactCentralizerTranslate
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsSurjectiveZmodOfNeZero

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SgRevNeZero
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.SharpPoly
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UJClassFin
 import Formalism.PeriodIntegrals.MassRankOne
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassZero

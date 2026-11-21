@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainStatementOfPrismaticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConsStatementOfPrismaticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalAtOfLocalRootsStatement

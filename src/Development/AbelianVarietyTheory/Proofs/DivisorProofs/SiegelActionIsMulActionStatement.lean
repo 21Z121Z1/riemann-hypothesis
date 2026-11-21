@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelActionIsMulAction
 open Matrix MeasureTheory GlobalTheory.IndefiniteRowSideFullHecke.SiegelReframe
 open scoped Real ContDiff

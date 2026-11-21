@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition

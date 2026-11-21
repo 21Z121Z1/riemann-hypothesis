@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsUnitaryOfOrder
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOfBalanced
 import Formalism.LocalToGlobal.Columns.StdLatUnimodular

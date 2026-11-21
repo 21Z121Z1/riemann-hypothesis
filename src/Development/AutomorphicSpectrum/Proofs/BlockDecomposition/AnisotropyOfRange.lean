@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.WhitKAOfGenLt
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

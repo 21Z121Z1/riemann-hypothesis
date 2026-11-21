@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
 import Mathlib.RingTheory.Polynomial.IsIntegral
 open GlobalTheory.Frames

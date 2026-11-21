@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.AdelicNormWeight
 import Mathlib.RepresentationTheory.Basic
 

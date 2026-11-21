@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InstBorelGL
 import GroundTheory.LocalFields.PadicLogSeries
 import Mathlib.Order.CompletePartialOrder

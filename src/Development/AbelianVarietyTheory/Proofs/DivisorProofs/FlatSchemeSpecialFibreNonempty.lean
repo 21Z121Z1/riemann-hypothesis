@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SpecialFibreUnits
 import Mathlib.AlgebraicGeometry.Morphisms.UniversallyOpen
 

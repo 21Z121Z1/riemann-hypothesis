@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ScaleMultiHomogeneous
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.Monotonicity.Lemmas

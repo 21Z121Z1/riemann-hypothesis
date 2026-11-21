@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.OrderAsym
 import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.CauchyLoc
 import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.IsGalAd

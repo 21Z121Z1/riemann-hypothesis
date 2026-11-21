@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColShiftVacEqSmul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpansionSumProdLastVertexMovedEqStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmEqSumLattice

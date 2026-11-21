@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGHerm
 open NumberField TensorProduct
 

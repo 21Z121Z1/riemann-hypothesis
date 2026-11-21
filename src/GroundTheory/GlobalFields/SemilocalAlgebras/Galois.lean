@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.SemilocalAlgebras.Finite
 import Mathlib.NumberTheory.RamificationInertia.Galois
 

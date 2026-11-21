@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsPullbackFaithful
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PVectorBundleRestrict
 set_option maxSynthPendingDepth 1

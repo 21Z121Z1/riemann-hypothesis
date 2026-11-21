@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality
 import GroundTheory.ProfiniteCohomology.CoinducedModules
 set_option maxSynthPendingDepth 1

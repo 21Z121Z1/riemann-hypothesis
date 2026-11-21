@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.TateTwists.EtaleTensorUniversalPropertyOfDegreewise
 
 open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex GlobalTheory.EtC

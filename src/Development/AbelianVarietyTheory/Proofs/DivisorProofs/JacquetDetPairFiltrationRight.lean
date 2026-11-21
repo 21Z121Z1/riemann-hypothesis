@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorTransposedTwoBlockStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorScalarFirst

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ExistsUnitsToIdelesEqOfIdelesSumInvEqZero
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.OpenSubgroups
 set_option maxSynthPendingDepth 1

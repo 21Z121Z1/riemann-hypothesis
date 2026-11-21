@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataKerI
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
 import Formalism.LocalToGlobal.Columns.StdLatUnimodular

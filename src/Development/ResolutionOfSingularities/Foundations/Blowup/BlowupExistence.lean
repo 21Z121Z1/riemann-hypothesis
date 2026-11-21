@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupUniversal
 import Std.Tactic.BVDecide.Normalize.Prop
 universe u

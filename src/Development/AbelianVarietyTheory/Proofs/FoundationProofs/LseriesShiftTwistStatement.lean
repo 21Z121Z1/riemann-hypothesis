@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesShiftTwist
 open Complex Filter Topology
 set_option maxHeartbeats 1000000 in

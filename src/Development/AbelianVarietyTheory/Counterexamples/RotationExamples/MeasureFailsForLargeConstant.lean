@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.SlopeBoundSingleLiftOfDefinitions
 
 open Finset Module NumberField Formalism.HN Formalism.L2.Indef Formalism.L2.Indef.Tree

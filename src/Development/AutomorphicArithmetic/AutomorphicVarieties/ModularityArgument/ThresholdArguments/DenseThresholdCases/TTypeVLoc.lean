@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LitAut
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialOfIsSubquotient
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotMono0LpCharLpSp

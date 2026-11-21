@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.InfiniteProjInfiniteEmbeddingOfNe
 import Mathlib.RingTheory.ClassGroup.Basic
 import Mathlib.RingTheory.Henselian

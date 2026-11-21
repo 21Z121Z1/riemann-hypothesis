@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SvalEqZeroOfWeightSum
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SvalSecComb
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIndepCoords

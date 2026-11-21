@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.NatTr0Sum
 
 noncomputable section

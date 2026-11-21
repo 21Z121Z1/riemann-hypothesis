@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 import Mathlib.NumberTheory.NumberField.ClassNumber
 import Mathlib.RingTheory.DedekindDomain.SInteger

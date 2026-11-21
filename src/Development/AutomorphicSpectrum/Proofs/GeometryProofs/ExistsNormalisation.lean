@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatesRegAtLocalStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureChartSpanStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueDominatingMapStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.TwistedTraces.CasimirEqOfOrthonormalBases
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsSignedBasisLieSubalgebraExpCompact
 import Development.AutomorphicArithmetic.TwistedTraces.NormCuspVecLGkActionLeOfAevalEqZero

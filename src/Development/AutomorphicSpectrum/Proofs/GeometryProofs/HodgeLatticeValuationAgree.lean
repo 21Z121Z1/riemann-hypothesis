@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeLatticeGenericAgree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsConnectedZeroSetOfIsProperStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineDegreeSpecialFibreStatement

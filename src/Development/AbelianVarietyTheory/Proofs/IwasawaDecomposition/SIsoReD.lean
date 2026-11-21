@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpectralRedivisionTermEquivKeepsTermDataStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KeepPuVolAR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsoPairToTermSymm

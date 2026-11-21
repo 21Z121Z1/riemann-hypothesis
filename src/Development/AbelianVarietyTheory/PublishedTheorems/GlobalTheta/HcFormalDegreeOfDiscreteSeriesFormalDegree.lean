@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignatureFrame
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PosPartUnitaryMul
 

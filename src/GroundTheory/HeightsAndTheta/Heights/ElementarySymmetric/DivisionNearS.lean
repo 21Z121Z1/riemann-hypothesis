@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.DivisionSkodaStep
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.YangianSpanCharacter.ExchangeGen
 import Mathlib.Tactic.Polynomial.Basic
 import Mathlib.Tactic.ReduceModChar

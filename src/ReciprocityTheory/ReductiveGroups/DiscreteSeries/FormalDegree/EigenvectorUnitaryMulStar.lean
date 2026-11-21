@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PSpecB
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.LeadingMinorConjDiagonal
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.TraceMulSelfEqSumEigenvaluesSq

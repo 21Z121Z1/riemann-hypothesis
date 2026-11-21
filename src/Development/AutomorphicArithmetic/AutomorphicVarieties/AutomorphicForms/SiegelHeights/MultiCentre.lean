@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.MemAdjoinGelfandSupOfCommuteGlGenerators
 import Development.AutomorphicArithmetic.DivisorFrames.GelfandElementMemAdjoinCapelliCoeffs
 

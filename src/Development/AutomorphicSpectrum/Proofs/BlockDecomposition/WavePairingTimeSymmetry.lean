@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorAdjointStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveCptBoundedTime
 

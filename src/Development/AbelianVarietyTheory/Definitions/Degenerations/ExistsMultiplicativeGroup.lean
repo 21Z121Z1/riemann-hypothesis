@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.LocalTrivialization.LocTrivOfRetraction
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ShortSquareFormIff
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonzeroLocusIffPowFn

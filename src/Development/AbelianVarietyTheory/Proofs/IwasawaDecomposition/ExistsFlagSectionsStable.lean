@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPluckerCoordMatrixStableStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PluckerCoordMatrixRegularStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PluckerFunctionRegularAtPointStatement

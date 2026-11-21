@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientSemisimpleRestriction
 open GlobalTheory.PRep GlobalTheory.SmGL
 set_option maxHeartbeats 1000000 in

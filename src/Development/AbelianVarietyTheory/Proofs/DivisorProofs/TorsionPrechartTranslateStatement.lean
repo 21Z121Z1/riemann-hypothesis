@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPrechartTranslate
 set_option autoImplicit false
 noncomputable section

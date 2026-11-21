@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalDegreeAevalLeOfDegLeOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChange
 

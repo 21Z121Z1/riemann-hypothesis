@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BranchInput
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.FunctionalsSeparateFromRealInput
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WeightOccurrence.Occ

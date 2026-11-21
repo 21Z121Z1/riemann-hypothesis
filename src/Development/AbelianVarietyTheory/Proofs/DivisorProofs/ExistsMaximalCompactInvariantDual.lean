@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OpenSubgroupFixesPolynomialDatumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialThetaKernelModerateGrowthStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialThetaKernelFiniteTypeStatement

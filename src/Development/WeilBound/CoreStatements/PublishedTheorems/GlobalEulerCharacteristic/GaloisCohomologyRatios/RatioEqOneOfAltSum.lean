@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.RealHerbrand
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Coprime
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.GlobalEulerFormulaInf

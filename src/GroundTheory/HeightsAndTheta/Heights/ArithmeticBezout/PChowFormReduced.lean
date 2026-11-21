@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsBaseChange
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LocalMultRadical
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LowerBoundConditional

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.BorelHeckeBounds.HeckeShiftSums.TruncKer
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.TraceKer
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.TwAdj

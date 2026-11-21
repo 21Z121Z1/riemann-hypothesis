@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StrictHenselianAcyclic
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.IsLinked
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRowsOfHeqDataStatement

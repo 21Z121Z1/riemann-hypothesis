@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Per
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.Padics.ProperSpace

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CochainFrameLinearIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianMapKillsCochainFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianMapKernelSpannedStatement

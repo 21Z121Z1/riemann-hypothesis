@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.BothToSecondRelation
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.CategoryTheory.ExtremalEpi

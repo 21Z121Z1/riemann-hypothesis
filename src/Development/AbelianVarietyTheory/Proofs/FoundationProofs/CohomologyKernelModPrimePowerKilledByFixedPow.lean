@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowMulMemAdd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsQuotientMapToGSProd
 

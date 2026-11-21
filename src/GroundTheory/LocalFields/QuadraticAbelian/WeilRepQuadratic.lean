@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.NormCorrespondence
 import GroundTheory.LocalFields.LocalFourierChar
 

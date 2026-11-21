@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SepChars
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.OrdExt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LagTriangular

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.Statement
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Monotonicity.Lemmas

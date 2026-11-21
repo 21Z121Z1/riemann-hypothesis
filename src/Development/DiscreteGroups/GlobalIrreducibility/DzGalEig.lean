@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.DzLTame
 import Development.DiscreteGroups.GlobalIrreducibility.DzGalRes
 import Development.DiscreteGroups.GlobalIrreducibility.DzGalFin

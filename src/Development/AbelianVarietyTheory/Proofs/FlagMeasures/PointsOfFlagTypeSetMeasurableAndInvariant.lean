@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointRationalEquivariance
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetHasFlag
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsTwoPoints
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSegreCoordinates
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjectiveCoordinateRepresentationClosedSubschStatement

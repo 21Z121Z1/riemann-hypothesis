@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TensorActionHermitianExpFixedOfMinNorm
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.RingTheory.PiTensorProduct

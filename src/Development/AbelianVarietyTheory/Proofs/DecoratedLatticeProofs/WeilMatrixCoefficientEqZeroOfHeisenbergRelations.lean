@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaInnerProductHermitian
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemLatOIffExistsActO

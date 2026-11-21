@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfTmulOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousDualMat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCastPowNeZero

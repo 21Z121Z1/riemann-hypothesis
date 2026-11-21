@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FlagUnipotentLattices.UnipotentStabiliserCharacterisation
 import Formalism.FormalDegreeBessel.FinalDS
 import Mathlib.Algebra.Order.Ring.Star

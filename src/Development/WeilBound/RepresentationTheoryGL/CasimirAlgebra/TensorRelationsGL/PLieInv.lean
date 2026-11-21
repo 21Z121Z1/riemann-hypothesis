@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.QdetFacts
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.Calculus.Deriv.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShearGLTransposeMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAddHaarMatrixSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankCoinvariantFormZeroStatement

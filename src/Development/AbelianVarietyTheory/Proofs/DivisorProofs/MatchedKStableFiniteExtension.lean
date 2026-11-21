@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowPartCompactStableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDegreeSpaceFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPolynomialTripleProductStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpGLiAddSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfIsBlockEmb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineToGAdDerivative

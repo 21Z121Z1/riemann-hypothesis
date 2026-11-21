@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsStruct
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ThickeningQuotientImageOneIffExistsTorusImageStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AbelianPartLiftSquareZeroUnitPointStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.CoefMapSingle
 

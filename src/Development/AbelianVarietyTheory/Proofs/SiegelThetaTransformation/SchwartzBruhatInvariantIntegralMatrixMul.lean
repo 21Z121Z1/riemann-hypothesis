@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.StablyFree.Basic

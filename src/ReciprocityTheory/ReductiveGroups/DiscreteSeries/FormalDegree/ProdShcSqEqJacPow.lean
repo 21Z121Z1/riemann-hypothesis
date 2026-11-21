@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.DetPaHadApply
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.ShcAdC
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.DetPPos

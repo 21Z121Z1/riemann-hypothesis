@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InducedRepresentationCharacter
 open GlobalTheory.Published
 set_option maxHeartbeats 1000000 in

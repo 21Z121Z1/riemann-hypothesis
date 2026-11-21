@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsLocalRingDual
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsIntegralDiscrMulOfTraceInt
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsLamLettersIsGood

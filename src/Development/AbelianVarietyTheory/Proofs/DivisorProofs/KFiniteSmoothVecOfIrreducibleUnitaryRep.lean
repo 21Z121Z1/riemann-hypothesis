@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HarishChandraModulesIndefiniteUnitaryGroup
 open Matrix GlobalTheory.HolDS
 open Formalism.REAL (GlRel IsUnitary IsWeight KHighest root Jm inG)

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsMultiHomogIdealChain
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences

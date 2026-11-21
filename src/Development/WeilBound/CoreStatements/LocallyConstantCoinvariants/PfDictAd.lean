@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictDef
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ActEEqOfConjRelated
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.HermitianCharacters.SelfDualLatticeFiltrationCharacter

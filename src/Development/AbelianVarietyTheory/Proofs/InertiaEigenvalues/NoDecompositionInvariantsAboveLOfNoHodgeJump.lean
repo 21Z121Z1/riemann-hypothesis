@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TripleAtt
 import Mathlib.Algebra.Module.StablyFree.Basic
 

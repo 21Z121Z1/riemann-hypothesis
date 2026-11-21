@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.LatData
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.CommProjectionHolds
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementB

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.TransvectionPeriodicity
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SmulMemOfIsIntegral
 

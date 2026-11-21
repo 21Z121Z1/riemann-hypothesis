@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalFrameCoordsOfMemTorusLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePointSignEqThetaLawSemicharacterStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ApplyAddInfRat

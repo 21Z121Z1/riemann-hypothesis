@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelAutomorphismRepresentation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPartDimLeSumLocalSharesWhittakerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalShareSumBoundStatement

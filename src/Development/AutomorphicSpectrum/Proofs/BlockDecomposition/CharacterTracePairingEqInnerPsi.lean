@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermInf
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.RingTheory.Henselian

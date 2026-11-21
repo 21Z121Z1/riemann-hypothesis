@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 import Mathlib.AlgebraicGeometry.QuasiAffine

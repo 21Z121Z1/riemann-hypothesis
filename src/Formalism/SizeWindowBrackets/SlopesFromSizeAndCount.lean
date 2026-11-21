@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.SmoothedRemainderRealIntegralFormula
 import Formalism.SizeWindowBrackets.SBrDiv
 import Formalism.SizeWindowBrackets.TranslateWordBoundHypotheses

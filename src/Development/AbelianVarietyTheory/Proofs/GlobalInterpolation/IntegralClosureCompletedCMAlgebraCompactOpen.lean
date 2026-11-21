@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DisjointSpanPerpLat
 import Mathlib.RingTheory.Valuation.LocalSubring

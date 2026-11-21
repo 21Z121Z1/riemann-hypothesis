@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AveragedIntegralFunctional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairTransferAlongPlane
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxDoubledCoordinatesStatement

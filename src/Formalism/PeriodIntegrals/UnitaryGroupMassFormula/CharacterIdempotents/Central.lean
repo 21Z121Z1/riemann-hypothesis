@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CharacterIdempotents.Development
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.RingTheory.PiTensorProduct

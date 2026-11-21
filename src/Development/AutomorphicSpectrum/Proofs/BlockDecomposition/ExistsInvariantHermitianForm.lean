@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ClozelPurity.EopV
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormalisedCuspFormL2BoundedStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieActionSkewAdjointL2Statement

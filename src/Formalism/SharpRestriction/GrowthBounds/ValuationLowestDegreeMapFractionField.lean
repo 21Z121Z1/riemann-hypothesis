@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.SourceCleaning
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.MvPolynomial.EulerIdentity

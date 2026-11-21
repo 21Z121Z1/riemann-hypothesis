@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedGraph
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients
 set_option maxSynthPendingDepth 1

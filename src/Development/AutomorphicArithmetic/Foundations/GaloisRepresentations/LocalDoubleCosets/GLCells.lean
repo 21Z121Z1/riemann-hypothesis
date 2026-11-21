@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.TracePow
 import GroundTheory.AutomorphicForms.GeometricLemmaFiltration
 import GroundTheory.AutomorphicForms.WhittakerCells

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.Unfold
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsNormEmbId

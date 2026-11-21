@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.SecondDerivativeOfEventuallyEq
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne
 import Mathlib.Tactic.Polynomial.Basic

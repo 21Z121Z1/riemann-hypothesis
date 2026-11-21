@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhittakerSpaceDimParabolicInductionCuspidalEqOne
 open GlobalTheory.FinGL Formalism.L2.DIV Module
 set_option maxHeartbeats 1000000 in

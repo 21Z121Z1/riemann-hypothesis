@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
 import Mathlib.Data.Int.Star
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocSubSB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HoweDualityForClosure
 

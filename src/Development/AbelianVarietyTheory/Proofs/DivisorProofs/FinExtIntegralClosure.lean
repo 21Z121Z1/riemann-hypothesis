@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne
 
 open IsLocalRing ReciprocityTheory.ChartRestriction.G.Out GlobalTheory.Mum

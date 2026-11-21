@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.TwoPower
 
 namespace KStar.Ram

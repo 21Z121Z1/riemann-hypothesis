@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
 
 namespace GlobalTheory.CompanionTheory.Ar.Lines

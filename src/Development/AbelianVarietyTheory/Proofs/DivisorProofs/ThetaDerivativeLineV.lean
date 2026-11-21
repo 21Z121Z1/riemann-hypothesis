@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLeftInvariantDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaLatticeSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMatchedDescentIdentity

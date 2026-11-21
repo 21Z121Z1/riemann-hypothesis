@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.SesquilinearFractions.HermSplit
 import Development.WeilBound.CoreStatements.SesquilinearFractions.PrincipalRootReZeroImSq
 import Development.WeilBound.CoreStatements.SesquilinearFractions.SesqSesquilinearSkewHermitian

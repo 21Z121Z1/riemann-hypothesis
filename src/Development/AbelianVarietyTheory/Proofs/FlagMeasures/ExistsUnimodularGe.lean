@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CyclicDiscriminantLatticesFormOneGenus
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeUnimodular

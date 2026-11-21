@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsComplexEmbeddingFractionFieldFiniteOverCdv
 open NumberField Formalism.L2.Pj
 set_option maxHeartbeats 1000000 in

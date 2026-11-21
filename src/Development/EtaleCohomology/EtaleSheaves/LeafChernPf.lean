@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.InstCommRingR
 import Std.Tactic.BVDecide.Normalize.Prop
 

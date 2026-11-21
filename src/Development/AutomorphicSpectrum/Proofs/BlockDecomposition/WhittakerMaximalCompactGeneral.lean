@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.WhitKAOfGenLt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HolValueAtFinsetSum
 noncomputable section

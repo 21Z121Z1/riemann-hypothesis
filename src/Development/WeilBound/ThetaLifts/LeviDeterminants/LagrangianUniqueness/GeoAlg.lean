@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Mathlib.LinearAlgebra.BilinearForm.Orthogonal
 import Mathlib.RingTheory.PicardGroup

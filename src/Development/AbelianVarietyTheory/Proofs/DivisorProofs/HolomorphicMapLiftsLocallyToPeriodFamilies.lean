@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HolomorphicMapModuliLiftsLocallyToPeriods
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsRelativeExpOfParts
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LatContMapContinuous

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosedPointGeometricFibresFinite
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfSpecializesOfFinite
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.IdealCycleValues.ProdMapToMultiset
 import Development.WeilBound.CoreStatements.IdealCycleValues.IntersectionNumbersPermInvariant
 import Development.WeilBound.CoreStatements.IdealCycleValues.IntNumLCons

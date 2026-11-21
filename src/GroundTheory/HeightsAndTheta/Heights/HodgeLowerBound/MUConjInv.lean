@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FlagSectionNeZero
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Imports
 import Mathlib.Algebra.Ring.IsFormallyReal

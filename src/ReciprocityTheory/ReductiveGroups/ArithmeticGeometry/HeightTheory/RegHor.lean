@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegHorPf
 
 namespace ReciprocityTheory.ChartRestriction.G.T0

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EmbedsGeneric
 import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeetsPoint
 import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsSch

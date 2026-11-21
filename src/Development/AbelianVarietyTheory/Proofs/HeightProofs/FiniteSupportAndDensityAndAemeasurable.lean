@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MeasurableSumEmbeddingsOverGenericPoint
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AeEvalCircleMapNeZero
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AemeasurableFinsumSection

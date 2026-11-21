@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.FlagBundleSt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.LinEmbedSt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.FlagDimSt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselOrbitalIntegralEqInvDegSmulStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IintEquivariantStatement
 

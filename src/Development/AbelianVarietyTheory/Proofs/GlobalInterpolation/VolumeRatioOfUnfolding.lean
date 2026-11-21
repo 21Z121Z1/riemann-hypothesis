@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.IsometryTransportFrames
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeComplements
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MeasurePreservingGlue

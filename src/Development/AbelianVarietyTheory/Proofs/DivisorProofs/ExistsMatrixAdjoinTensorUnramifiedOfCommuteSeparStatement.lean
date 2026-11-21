@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatrixAdjoinTensorUnramifiedOfCommuteSepar
 open Matrix GlobalTheory.LKRes GlobalTheory.LKMid
 open scoped TensorProduct

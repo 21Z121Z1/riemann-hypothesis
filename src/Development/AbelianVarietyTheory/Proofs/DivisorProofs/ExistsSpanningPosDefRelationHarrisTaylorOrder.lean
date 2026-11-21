@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceCompPosOfAdjoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCasimirElementCentralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCasimirElementMulPosStatement

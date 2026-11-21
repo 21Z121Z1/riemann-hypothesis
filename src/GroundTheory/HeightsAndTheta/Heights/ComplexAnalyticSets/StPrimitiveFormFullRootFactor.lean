@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPrimitiveFormSheetedIffRootFull
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.AnalyticGerm
 set_option maxSynthPendingDepth 1

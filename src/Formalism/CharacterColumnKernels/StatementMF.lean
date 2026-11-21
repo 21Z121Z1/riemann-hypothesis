@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.StatementX
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.PiTensorProduct

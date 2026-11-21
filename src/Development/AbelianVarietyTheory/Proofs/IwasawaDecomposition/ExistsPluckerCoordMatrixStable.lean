@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemNonzeroLocusSecOfRat
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TriIff
 

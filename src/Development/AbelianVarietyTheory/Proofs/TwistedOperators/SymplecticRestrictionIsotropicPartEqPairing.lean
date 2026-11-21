@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HalfSymplZeroRight
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FinTensMemLatO
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.StarPurelyImaginaryEqNeg

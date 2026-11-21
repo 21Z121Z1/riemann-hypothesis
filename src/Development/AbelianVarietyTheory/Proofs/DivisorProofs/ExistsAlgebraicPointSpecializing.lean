@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExtPointSpecializingOutsideBasicOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf

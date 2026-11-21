@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixMulVecBasis
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 open scoped TensorProduct NNReal Matrix

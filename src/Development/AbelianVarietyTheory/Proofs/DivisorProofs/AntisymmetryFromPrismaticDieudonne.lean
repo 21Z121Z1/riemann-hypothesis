@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomogSwapSymmetricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapSymmetricImpliesSwapFlagStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapFlagDegreeIdentityStatement

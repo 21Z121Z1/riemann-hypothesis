@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.Etale.Weakly

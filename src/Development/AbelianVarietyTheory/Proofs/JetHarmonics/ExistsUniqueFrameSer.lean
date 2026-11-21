@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.PointDataQ
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsUniqueNormPrim

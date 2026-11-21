@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDivisorIntegralHolds
 open GlobalTheory.TorRef GlobalTheory.ShFam
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CompleteIntegersPropertiesStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PolarisedLatticeTowerExistsStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DivisibleGroupFromTowerStatement

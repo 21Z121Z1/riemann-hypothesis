@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.JacquetAdmissible
 import GroundTheory.AutomorphicForms.IwahoriFactorization
 import GroundTheory.AutomorphicForms.SmoothRepContragredient

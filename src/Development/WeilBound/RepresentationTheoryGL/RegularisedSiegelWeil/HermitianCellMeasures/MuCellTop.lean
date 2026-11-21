@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.MuCellOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousDivRp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousSmulQuot

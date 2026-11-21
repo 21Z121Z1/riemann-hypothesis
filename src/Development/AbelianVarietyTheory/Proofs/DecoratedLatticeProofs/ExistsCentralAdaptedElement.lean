@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StabMatch
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselLocalTypeData
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MulMulDivCancelLeft

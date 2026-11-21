@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtChart
 import Mathlib.RingTheory.AdicCompletion.RingHom
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Transl
 import Mathlib.RingTheory.WittVector.IsPoly

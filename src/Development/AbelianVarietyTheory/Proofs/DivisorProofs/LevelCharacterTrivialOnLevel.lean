@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitDetRoot
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameHeckeCharTrivialOnFiniteUnitsCongOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigRank
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTanBasisOfUniqueCombination
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GrNormPosOfBasis

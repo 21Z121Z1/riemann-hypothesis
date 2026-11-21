@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsSSFun
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableModel
 

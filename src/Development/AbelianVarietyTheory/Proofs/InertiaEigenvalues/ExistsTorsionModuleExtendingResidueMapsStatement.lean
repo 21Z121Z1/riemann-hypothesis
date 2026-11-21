@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTorsionModuleExtendingResidueMaps
 open CategoryTheory GlobalTheory.SelFun
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafTubeCut
 
 open CategoryTheory Limits

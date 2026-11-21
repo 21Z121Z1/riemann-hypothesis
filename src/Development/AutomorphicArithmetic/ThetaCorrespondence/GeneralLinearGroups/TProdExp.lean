@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.TCells
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.TScalarProd
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.TSchur

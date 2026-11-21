@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFibreRepresentatives
 import Mathlib.Data.Finsupp.Interval
 import Mathlib.Data.Int.Star

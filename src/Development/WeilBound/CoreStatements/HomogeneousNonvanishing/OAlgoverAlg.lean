@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HodgeIPIffHodgeFormConj
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 import Mathlib.FieldTheory.PurelyInseparable.Exponent

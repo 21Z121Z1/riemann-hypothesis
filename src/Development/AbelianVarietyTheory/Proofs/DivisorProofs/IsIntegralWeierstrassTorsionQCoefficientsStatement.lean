@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralWeierstrassTorsionQCoefficients
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate
 open GlobalTheory.QFam GlobalTheory.WpFam

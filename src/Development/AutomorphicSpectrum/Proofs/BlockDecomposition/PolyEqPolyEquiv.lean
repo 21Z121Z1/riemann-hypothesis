@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AlgebraMapConeRing
 import Mathlib.Order.Interval.Finset.Box
 

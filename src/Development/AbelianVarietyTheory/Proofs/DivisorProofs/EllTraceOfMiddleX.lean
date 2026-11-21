@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonFieldTypeVanishingX
 import CompanionTheory.AutomorphicTheory.PadicUnitaryWeights.UnitarySiegelSets.SiegelSetUnitaryHolds
 import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.RegClassIntHolds

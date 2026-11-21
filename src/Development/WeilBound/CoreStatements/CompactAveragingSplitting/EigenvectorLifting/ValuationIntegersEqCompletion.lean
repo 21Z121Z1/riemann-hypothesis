@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitFin
 
 noncomputable section

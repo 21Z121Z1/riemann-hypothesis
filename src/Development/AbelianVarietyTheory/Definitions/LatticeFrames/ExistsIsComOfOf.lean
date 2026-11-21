@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TiedAt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisOFinsetSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftFrLifts

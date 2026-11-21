@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowIdeal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentSubobjectCoherent
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExactAndSurjectiveAppOfExactOfEpi

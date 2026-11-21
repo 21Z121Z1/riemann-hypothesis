@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.LevelFree
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.LeviShift
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.OneSlot

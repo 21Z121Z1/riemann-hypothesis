@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily
 import Mathlib.Tactic.ENatToNat
 

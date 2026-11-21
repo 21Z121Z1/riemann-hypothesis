@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ZhangLowerBoundRationalStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ZhangUpperBoundDensePointsStatement
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.IsEigBasisIff
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.Etale.Weakly

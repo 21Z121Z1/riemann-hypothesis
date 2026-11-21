@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsLieCombOneIffComp
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonzeroLocusIffPowFn

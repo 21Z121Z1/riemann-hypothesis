@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CompactCasimirLeTensorOperatorRaiseStatement
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Std.Tactic.BVDecide.Normalize.Prop

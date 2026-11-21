@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.WaveBallEstimateWeightedDualAlt
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PowFourLeRpowNineHalves
 

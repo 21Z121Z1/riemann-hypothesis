@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GenericBlockMatrixIsBlockDiag
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Topology.OpenPartialHomeomorph.Composition

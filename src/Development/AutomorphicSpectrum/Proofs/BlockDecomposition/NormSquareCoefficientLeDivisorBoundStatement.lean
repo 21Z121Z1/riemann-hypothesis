@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormSquareCoefficientLeDivisorBound
 open Ad3 Ad3.S
 set_option maxHeartbeats 1000000 in

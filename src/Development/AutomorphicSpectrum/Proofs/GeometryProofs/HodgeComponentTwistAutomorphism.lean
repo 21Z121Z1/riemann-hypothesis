@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TwistModelsCommonPointStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelIsoTransportStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCompatibleLieModelStatement

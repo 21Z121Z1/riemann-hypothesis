@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricDenominatorOfZetaDenominators
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.LatVal
 set_option maxHeartbeats 1000000 in

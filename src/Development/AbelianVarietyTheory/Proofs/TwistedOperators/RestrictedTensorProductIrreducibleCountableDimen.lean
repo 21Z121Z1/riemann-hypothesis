@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorIrreducibleOfCountableDimensionIrreducibleStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 

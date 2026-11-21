@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarAddVectorScalar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameMapContractionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnFrameAtStatement

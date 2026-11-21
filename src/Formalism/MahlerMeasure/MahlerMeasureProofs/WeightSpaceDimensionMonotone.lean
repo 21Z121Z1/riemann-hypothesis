@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.StatementTM
 import Formalism.MahlerMeasure.MahlerMeasureProofs.FreezeY
 import Formalism.MahlerMeasure.MahlerMeasureProofs.FreezeBij

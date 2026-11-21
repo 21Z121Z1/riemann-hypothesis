@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInverseDifferentMaxValuation
 open NumberField IsDedekindDomain
 open scoped Matrix

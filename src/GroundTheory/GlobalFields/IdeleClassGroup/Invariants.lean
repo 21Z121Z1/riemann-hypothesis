@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassEquivIdeleClassMapOfComm
 import GroundTheory.GlobalFields.IdeleClassGroup.ConjugateNorm
 import GroundTheory.GlobalFields.CyclotomicCharacters.Character

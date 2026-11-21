@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeTheta.LatticeSummableDecay
 import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
 import Mathlib.RingTheory.WittVector.IsPoly

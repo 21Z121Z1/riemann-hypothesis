@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffZeroEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RootEqOfNormLt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqTopOfSpanImage

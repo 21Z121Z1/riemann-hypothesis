@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulIncMLagP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniqueness
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelThetaSliceIntegrableStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianLattices.HermitianLatticesProofs.MajLattice
 import Mathlib.RingTheory.DedekindDomain.Different
 import Std.Tactic.BVDecide.Normalize.Prop

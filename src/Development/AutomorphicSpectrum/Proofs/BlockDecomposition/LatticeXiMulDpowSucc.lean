@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LevelChainValuations.LatDefs
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Ring.IsFormallyReal

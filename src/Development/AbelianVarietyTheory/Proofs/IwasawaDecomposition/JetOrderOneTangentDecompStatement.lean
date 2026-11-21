@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetOrderOneTangentDecomp
 
 set_option autoImplicit false

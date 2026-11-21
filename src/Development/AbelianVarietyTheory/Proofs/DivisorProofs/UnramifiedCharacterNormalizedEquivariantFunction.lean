@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaIntegralEquivariantNonzeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalSchwartzLatticeCombinationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzAveragingLeftInvariantStatement

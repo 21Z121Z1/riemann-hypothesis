@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BcParamEqOfSatUEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBorelSplittingStatement
 

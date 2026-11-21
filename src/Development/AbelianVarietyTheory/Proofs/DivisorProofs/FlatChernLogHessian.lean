@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvatureFormVerticalRiemannStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcLogVerticalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialMixedDerivativeStatement

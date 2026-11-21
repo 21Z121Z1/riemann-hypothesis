@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeformedLatticeValueEqHilbertEisensteinValueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IterDEqOfEventuallyEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivativeEqHilbertEisensteinJetStatement

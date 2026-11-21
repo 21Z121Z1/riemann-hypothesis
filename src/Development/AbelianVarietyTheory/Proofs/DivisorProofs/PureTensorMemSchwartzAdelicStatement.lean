@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PureTensorMemSchwartzAdelic
 
 open scoped TensorProduct

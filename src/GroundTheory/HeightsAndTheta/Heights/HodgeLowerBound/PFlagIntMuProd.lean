@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFlagIntMuProd
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagIntMuProdSlice
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

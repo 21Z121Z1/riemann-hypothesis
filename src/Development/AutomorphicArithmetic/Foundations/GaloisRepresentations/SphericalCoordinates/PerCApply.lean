@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealMapOneInjective
 import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
 

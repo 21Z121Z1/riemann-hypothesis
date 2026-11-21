@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosBridge
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.TiedRec
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace

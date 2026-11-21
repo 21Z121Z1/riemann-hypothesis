@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.CoeffEqZeroOfMemSpanPow
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DiscrMulDetEqNormOfAnnihilator
 import Mathlib.RingTheory.MvPowerSeries.Derivative

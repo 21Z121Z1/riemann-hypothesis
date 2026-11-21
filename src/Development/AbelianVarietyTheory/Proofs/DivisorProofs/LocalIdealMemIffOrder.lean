@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TmulMemLocId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuedCompW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIdealCountLeOrder

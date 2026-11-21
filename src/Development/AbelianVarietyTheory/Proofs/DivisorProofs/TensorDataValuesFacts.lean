@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataCubicalStructureValuesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataPsiValuesThroughBundleIsoStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField

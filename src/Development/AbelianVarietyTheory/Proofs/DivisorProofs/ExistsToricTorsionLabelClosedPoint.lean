@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompleteLocalBaseAtClosedPointGroupImports
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastTail
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDominantOfGeneric

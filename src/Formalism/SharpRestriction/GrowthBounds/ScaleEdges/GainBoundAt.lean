@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.FramesOf
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.ManyEdges
 

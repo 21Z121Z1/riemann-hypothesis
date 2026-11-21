@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LocallyConstantCompact
 
 open IsDedekindDomain IsDedekindDomain.HeightOneSpectrum NumberField Topology Filter Set

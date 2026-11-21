@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacFn
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsLatticeEmbeddingStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LatticeStabilizerEquivAutomorphismsStatement

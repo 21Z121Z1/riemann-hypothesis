@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Mathlib.Algebra.DualNumber
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp

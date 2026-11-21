@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderContainsCharacters
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.PairingExtends
 import Mathlib.Algebra.Order.Star.Real

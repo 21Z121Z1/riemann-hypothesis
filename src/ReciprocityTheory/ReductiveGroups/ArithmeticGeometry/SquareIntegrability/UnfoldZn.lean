@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.CubeIcoMeas
 import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
 

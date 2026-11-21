@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MeasureDecomposition.InstDecomp
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.Monotonicity.Lemmas

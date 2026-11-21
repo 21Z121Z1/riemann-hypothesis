@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ArBirational
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenericPointAsIdeal
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqGenericPoint

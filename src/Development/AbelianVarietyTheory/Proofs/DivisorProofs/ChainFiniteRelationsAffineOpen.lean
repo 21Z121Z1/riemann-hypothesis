@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrdInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseFp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisibilityBaseChangeProjectiveStatement

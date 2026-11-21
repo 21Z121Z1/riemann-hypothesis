@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicFamilyConjConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSemisimpleRingOfPosFormAdjointClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramRePosDefAdjointPeriodStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFractionField
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.NonemptyLift

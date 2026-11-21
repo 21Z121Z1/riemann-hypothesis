@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointEigenbasisBaseChange
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul
 

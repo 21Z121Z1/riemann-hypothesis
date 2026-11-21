@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Adele.Discrete
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Monotonicity.Lemmas

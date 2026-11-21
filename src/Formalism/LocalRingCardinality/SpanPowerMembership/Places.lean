@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataRows
 import Formalism.LocalRingCardinality.DataArith
 import Mathlib.Algebra.AffineMonoid.Basic

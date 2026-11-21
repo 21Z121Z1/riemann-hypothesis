@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining
 open MvPolynomial Formalism.BasicNotions Formalism.GradedWeylDivisibility GlobalTheory.Branching
 open Formalism.MainNotions.PrimeDegreeVariant (embGL Interlace)

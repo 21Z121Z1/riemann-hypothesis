@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
 import Mathlib.Order.CompletePartialOrder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDensityEuler
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.InfAdeleTensorBijective

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatTuple
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitHermOfDet

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingProperties
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Ex
 open scoped BigOperators

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopStacked
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopBasisChange
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedDegree

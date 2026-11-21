@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GtOntoDivisibleKernel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFrameVal
 

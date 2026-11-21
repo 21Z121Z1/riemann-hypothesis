@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.PreMemIrreducibleComponents
 
 namespace ReciprocityTheory.AnForm.R.IrreducibleComponentPreimages

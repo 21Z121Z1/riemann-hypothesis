@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqIsMulRightInvariant
 open MeasureTheory Formalism.BasicNotions
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TensorLatticeVacuaExistUnique
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FgOfSmulLe
 import Formalism.LocalRingCardinality.DataHost

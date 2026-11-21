@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BurnsideEnd
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsetSystemInjectiveExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsetSystemScalarTowerExtStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PmExactnessOfExPStatement

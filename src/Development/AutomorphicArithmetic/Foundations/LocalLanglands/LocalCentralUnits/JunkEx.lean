@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ArtEx
 import Development.AutomorphicArithmetic.WhittakerHecke.ExistsUnitResidueLogarithmOfRootsOfUnity
 import Development.AutomorphicArithmetic.WhittakerHecke.ExistsAdicCompletionRingEquivExtendingOfStable

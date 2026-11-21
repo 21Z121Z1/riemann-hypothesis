@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PolynomialDimension.FrameSum
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.Henselian

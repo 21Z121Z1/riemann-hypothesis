@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.FarguesExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTatePairingSandwich
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegrallyClosedInOfIntegers

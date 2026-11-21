@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound
 import Mathlib.Algebra.AffineMonoid.Basic
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjectiveLineMultihomogClassify
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Mathlib.Topology.UniformSpace.Uniformizable

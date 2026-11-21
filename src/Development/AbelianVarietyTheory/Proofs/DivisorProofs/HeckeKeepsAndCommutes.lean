@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.AdelicScalarSectionLift
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IdemOfIsPrimeIdem

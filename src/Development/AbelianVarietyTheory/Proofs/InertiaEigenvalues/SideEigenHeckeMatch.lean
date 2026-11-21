@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EventuallyConjunctionMonoStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContainsAfterLocalizationStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenIntegralityStatement

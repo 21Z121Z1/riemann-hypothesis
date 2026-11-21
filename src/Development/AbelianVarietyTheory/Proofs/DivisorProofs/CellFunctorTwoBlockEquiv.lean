@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedRepSigmaApplyQuotientStatement
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix
 

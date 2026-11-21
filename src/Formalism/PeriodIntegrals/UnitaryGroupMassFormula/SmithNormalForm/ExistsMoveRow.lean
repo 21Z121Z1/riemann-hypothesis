@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SmithNormalForm.IsUnitOneAddVecMulVec
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Std.Tactic.BVDecide.Normalize.Prop

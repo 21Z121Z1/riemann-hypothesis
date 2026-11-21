@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentialChartSmoothForm
 open Filter Topology Set Metric MeasureTheory GlobalTheory.ChernReg
 open scoped ContDiff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LemmaB
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CardEqPowLength
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SeparableMatrixStability.MapEta

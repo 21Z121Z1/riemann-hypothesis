@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomOfSecSecPowAppChartSec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFrobCokernelSmulHomPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationMapMono

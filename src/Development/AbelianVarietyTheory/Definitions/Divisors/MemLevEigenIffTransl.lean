@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCoprimeOfNatCast
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ActLevFullLevelGroupFramedPoints

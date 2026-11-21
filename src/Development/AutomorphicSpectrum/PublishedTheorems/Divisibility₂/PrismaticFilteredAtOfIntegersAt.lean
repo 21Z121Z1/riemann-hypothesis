@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SettingInhabited
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta
 

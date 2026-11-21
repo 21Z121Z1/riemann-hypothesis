@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.EqOneOfMemLev
 import GroundTheory.GlobalFields.SemilocalAlgebras.Finite
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqZeroOfForallLeExp

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartRingsNoetherianFractionStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyInjectiveModelFactsStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LineLatticeFamilyModelStatement

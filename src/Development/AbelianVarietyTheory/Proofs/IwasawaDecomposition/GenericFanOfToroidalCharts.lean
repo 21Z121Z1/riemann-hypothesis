@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeAtOfToricChartStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeAtInteriorPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToricChartsGlobalConditionsStatement

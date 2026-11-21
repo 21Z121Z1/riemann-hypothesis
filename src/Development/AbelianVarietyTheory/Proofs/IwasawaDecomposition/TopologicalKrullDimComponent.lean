@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KawamataViehwegVanishingNumberFieldTwist
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothXF
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsChartMapLocalSystemStatement

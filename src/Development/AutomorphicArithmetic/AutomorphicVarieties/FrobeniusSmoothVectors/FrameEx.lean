@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.EtaleSimplicialCochainSchemeSectionExtensionNatu
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.AuxwEx
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.FieldEx

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpandsAtIffStalks
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SecDivOfThickenings
 

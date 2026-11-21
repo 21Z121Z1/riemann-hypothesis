@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.Statement
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.ENatToNat

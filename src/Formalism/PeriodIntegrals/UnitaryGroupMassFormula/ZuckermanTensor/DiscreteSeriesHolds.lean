@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.RevNum
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.ConjRep
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.SquareIntegrableConj

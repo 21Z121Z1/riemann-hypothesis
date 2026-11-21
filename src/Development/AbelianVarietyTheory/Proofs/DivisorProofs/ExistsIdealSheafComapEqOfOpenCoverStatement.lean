@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdealSheafComapEqOfOpenCover
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits Opposite
 universe u

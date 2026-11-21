@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ValuesEqOfCommonPointStatement
 
 noncomputable section

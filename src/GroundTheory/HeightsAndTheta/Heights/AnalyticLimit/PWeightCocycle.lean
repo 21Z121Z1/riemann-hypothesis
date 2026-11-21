@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.ConvergenceStatements
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
 set_option maxSynthPendingDepth 1

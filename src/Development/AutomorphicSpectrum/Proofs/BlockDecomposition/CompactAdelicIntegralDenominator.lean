@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicCompactDensity.ExistsNatLocal
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart
 import Mathlib.Algebra.Order.Ring.Star

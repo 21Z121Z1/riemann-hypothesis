@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DetLocus
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCotQuot
 

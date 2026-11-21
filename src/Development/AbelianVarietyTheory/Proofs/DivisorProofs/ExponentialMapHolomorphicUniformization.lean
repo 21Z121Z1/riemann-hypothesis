@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCochFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDerivAt0CompLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilPairingRiemannForm

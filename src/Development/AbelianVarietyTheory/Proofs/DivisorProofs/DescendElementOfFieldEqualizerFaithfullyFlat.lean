@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRangeOfForallAlgHomEq
 import Mathlib.Topology.Sheaves.Presheaf
 open scoped TensorProduct

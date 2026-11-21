@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Statements
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.PicardGroup

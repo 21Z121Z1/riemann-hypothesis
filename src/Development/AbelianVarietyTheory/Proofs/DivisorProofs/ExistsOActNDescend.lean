@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.OActDescendOfGenerators
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackDescentAlongGaloisCover
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne

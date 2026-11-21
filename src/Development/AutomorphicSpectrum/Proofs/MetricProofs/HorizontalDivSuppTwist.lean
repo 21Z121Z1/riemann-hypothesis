@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsHorizontalTwist
 import Mathlib.Topology.Sheaves.Presheaf
 

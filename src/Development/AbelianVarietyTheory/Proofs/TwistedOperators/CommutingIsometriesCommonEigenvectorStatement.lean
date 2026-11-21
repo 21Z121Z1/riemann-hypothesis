@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CommutingIsometriesCommonEigenvector
 open scoped InnerProductSpace
 set_option maxHeartbeats 1000000 in

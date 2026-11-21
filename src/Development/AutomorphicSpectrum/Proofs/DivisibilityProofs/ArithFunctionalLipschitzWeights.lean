@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.LinearRootPowerLipschitz
 
 open MvPolynomial Filter Topology GlobalTheory.CompanionTheory.Ar.Top

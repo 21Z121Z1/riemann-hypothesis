@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.StatementD
 import Formalism.MahlerMeasure.MahlerMeasureProofs.Mahler
 import Mathlib.RingTheory.Henselian

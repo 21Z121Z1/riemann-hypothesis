@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HsCodiscreteNeBot
 import Mathlib.Analysis.Complex.Convex
 import Mathlib.RingTheory.PiTensorProduct

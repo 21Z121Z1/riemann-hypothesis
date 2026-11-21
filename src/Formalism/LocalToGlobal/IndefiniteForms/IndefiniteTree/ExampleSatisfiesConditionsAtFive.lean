@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefUse
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.LocalConditionsWeightedConditional
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.AbsorbLocalConditionsOfExact

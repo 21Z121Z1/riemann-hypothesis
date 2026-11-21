@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelReducedIntegralFormBoundedEntries
 open Matrix GlobalTheory.ClassFin
 set_option maxHeartbeats 1000000 in

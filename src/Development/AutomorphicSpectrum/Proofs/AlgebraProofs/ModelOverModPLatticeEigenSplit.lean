@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HodgeLieBundleIntersectionStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ModelOverModPLatticeCharacterStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ModelOverModPLatticePermutedStatement

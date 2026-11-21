@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GaloisValuations.ArithOfA
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CyclotomicCharacterFrobV
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ClsFacts

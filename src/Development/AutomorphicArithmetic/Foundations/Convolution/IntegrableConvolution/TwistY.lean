@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TwTrace
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.JointEx
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TwistPerm

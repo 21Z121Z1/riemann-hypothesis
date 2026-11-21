@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
 import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs

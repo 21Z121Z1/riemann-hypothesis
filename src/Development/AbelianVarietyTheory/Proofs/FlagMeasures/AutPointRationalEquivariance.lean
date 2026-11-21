@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox

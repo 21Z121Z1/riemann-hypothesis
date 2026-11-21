@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AevalMemWeightZeroSections
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentNormConstantModelsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompatStatement

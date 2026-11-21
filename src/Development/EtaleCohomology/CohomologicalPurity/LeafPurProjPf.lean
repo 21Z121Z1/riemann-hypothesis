@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafPurPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafActNatPf
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPositiveHermitianLine
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FubiniStudyMetricSmooth
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedB

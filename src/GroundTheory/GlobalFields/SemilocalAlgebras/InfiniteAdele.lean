@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.SemilocalAlgebras.Infinite
 
 noncomputable section

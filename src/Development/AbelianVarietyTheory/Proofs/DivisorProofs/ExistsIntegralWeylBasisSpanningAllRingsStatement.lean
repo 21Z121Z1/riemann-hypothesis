@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralWeylBasisSpanningAllRings
 import Formalism.LocalRingCardinality.DataHost
 open NumberField IsDedekindDomain

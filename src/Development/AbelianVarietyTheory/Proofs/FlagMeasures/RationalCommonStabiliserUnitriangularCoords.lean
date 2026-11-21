@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AtBase
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.PlacesOf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianStabiliserRationalUnitriangularPairsStatement

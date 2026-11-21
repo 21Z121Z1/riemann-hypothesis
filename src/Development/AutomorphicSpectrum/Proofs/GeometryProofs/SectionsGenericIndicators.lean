@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.EvaluationLawsGenericFramesAtlasHold
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocalRingTrivSqZeroExt

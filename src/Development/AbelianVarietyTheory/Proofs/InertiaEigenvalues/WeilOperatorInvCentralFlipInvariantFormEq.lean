@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlipIdxNeZero
 import Formalism.LocalToGlobal.HeckeThetaElements.IsHeckeElt
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction

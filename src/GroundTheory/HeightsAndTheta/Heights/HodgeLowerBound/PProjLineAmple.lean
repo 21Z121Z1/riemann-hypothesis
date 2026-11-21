@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.ProjLineDim
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.ProjLineLaplace
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.OneLeft
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.Transl
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.FromSpecEv

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SetIntegralCharImEqZeroStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SummableExpNegHermStatement
 open Complex MeasureTheory GlobalTheory.UnitaryTheta

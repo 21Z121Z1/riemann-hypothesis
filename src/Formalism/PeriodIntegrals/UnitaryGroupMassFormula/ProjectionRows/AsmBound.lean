@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.Pieces
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.TruncatedLatticeHolds
 import Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing

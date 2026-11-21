@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFormsOfToH
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefActionReprMemSubfield
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CardStabilizerForgetFr

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.Brauer.BaseChangeCSA
 import GroundTheory.Brauer.IsBrauerEquivalentIffNonemptyAlgEquiv
 import Mathlib.RingTheory.SimpleModule.IsAlgClosed

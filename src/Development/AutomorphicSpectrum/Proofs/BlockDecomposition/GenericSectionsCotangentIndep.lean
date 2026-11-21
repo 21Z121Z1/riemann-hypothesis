@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericResidueLinearIndependence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodStalks
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FinrankRiemannRochNsmulHyperplane

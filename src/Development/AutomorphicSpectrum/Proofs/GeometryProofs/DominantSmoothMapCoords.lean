@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingModelChartCompat
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigConstantTermConeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallConstantTermConeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticNonvanishingStatement

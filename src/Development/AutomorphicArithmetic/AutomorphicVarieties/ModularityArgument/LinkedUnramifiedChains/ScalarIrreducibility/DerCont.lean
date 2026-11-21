@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.ScalarIrreducibility.NormLeOneOfInt
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsSpanModSq
 

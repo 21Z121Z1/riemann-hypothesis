@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqGenericPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticVarietyDivisorDimension
 

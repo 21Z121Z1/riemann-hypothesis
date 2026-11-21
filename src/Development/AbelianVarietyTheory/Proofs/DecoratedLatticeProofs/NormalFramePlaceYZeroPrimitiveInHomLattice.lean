@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsNormalFr
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PrHOUpIncAdj
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LineMemLatVIff

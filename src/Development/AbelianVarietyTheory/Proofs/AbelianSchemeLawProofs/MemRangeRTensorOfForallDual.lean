@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsSplitsOfIsAffineOpen
 import Mathlib.AlgebraicGeometry.Morphisms.Flat
 import Mathlib.Tactic.Polynomial.Basic

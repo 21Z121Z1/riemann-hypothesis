@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SpStep
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisCohomology.StatementLoc
 import Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

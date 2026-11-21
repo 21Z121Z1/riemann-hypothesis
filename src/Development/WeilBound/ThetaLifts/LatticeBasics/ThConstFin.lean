@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.ThConst
 import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstSplit
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoStatement

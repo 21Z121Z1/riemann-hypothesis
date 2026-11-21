@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.realDecomp
 import Development.AutomorphicArithmetic.MeanSquareBounds.realCond
 import Development.AutomorphicArithmetic.MeanSquareBounds.IndUnique

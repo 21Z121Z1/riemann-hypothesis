@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailLast
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsLastAlt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsMultiProjPrimeBaseComap

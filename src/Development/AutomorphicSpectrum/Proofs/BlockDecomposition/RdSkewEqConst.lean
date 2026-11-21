@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Rr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOneParamDifferentiableStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SkewHermitianUnitaryFlowStatement

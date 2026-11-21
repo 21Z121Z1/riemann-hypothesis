@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActMatApply
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SplitMapEqZeroOfMemAnn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TanEvBaseChange

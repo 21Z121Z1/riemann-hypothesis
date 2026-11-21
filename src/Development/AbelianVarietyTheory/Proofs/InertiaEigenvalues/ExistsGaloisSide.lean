@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenExportStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistSecondStepKeptWithLocalisationsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualCompatibleRowsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCoefficientBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSzNonneg

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BranchesAlongOfIrreducible
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPiTensorShuffleEquivStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PiTensorMapSurjectiveAndKerStatement

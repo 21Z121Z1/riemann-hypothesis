@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CentralCharts.AnalyticAtEval
 import Development.WeilBound.CoreStatements.CentralCharts.PshAt0LogNorm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagWeightedDegreeSection

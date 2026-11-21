@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul

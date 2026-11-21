@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.Real.Pi.Bounds

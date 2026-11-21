@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLieBase
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenMetricOnSet
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformizedFamilyChartIndex

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.IntersectionMultilinearExpansion
 import Development.WeilBound.CoreStatements.FlagImmersions.IntersectionMonomialLines
 

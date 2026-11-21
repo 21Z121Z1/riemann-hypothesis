@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticLogResolution
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedIntegralTailBoundExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PshPullbackHolomorphic

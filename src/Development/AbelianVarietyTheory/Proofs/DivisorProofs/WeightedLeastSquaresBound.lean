@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.CBinet
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqMaximalIdealOfTrdegLe
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalRigidOfSurjective
 open IsLocalRing NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.UnitaryRepresentations.IsInvariantIffCommuteStarProjection
 import Mathlib.MeasureTheory.Function.L2Space
 import Mathlib.RingTheory.PiTensorProduct

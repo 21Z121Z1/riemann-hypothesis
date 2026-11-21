@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeEqLintegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntNearOfClosureShort
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeSumSqBallPosLtTop

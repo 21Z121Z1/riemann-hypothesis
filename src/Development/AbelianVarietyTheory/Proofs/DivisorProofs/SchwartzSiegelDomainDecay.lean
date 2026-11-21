@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsModelBlocksUnitaryFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFrameModelEvaluationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFrameModelVacuumStatement

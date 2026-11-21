@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusTateGaloisActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePointsFixedFrobeniusPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TlLevSurjKer

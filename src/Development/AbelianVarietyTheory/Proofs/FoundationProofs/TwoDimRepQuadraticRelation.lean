@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanEqTopOfIrreducibleOverAlgClosed
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

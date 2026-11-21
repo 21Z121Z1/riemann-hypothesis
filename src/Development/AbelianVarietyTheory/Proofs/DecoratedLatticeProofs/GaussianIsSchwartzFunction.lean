@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelWeilUnitarySchrodinger
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolyMulGaussianBounded
 open scoped Matrix NNReal ComplexConjugate TensorProduct

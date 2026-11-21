@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafIndExc
 import Development.EtaleCohomology.CohomologicalPurity.LeafHensCutDef
 

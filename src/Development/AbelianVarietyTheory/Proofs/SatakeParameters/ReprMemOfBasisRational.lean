@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemCmComplexOfPow
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefActionReprMemSubfield
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar

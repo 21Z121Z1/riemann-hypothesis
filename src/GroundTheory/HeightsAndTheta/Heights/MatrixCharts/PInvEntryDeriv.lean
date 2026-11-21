@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsBounds
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.BoundsY
 import Mathlib.Analysis.Matrix.PosDef

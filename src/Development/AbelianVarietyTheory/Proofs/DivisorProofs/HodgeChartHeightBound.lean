@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeChartLineBaseRegularStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeChartMinorRegularityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeChartSectionDivisorStatement

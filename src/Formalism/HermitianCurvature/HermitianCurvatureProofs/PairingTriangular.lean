@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LatticeHerglotzBound
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HerglotzLowerSemicontinuous
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

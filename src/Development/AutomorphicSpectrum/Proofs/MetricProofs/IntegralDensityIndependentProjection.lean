@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AemeasurableCxPosDensity
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CxSheetSimpleNull
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.VolumeNonsimpleFibresEqZeroStatement

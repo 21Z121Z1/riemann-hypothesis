@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.DegreeTautologicalLineProjectiveLine
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.GramSt
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagHeightPowerSumOneZeroStatement

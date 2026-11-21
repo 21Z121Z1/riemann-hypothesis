@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.InertiaQuadraticRamification.InertSplitAlt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmSubfieldsCompositumClosed
 

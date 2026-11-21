@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

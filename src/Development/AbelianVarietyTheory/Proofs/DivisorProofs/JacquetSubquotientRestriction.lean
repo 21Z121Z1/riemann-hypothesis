@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductionFiniteLength
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalBlockLeviSemisimpleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientSemisimpleRestrictionStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.JInvariant
 import GroundTheory.GlobalFields.ComplexMultiplication.DifferentialConstantField
 import GroundTheory.GlobalFields.AnalyticClassNumber.Quadratic

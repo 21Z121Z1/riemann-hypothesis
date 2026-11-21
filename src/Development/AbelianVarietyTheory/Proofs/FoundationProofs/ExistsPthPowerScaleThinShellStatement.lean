@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPthPowerScaleThinShell
 open GlobalTheory.AlmostEt
 open scoped NNReal

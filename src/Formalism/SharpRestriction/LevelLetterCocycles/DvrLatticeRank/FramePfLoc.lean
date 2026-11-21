@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.DownSlotProposition
 import Mathlib.Order.Interval.Finset.Box
 

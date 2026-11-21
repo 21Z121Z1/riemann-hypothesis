@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.PointDegree.PermExpInj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShiftFunctionalPowerSumStatement
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.Statements
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 set_option maxSynthPendingDepth 1

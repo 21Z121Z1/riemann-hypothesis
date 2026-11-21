@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalUnitaryPointsDiscreteFundamentalDomain
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
 import Mathlib.Data.Finset.Functor

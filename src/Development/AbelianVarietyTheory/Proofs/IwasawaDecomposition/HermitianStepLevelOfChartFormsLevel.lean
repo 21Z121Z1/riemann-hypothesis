@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueColumnSpacesStandardInFrameCoords
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValNatCastLtOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UlocOfTrivDisc

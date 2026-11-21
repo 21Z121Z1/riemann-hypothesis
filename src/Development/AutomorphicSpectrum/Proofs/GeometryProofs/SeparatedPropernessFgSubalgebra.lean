@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.QuasiProjectiveProperCoverStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PropernessDescendsFgSubalgebraStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperOfProperCoverStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.GenSpecCut
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper
 

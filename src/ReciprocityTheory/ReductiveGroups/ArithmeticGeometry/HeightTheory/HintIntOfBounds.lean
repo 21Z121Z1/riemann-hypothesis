@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 
 namespace ReciprocityTheory.ChartRestriction.G.T0

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MirabolicClassFunBlockDiagonalEqSumDerivatives
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GgOneAndIsClass
 

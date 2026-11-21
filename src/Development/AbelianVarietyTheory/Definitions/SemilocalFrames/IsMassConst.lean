@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FractionFieldToGenericStalkAlgebraMapEq
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FrameLats
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Partners

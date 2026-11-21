@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.WeylAlgebraQuantumDet.Curve
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ENatToNat

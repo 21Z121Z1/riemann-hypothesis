@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlNeOfSplit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AnticyclotomicTwistRamifiedPlacesSplitStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitSetInertiaPowerTrivialStatement

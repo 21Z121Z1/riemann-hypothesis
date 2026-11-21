@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatFiniteAdelesMemSpanRestrictedProdu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActFromBlocks
 open scoped TensorProduct NNReal Matrix

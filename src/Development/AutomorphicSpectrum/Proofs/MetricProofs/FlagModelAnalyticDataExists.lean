@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SingularWeightMonotoneRegularization
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlatWeightExtends
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagBundlePartialBlockMapStatement

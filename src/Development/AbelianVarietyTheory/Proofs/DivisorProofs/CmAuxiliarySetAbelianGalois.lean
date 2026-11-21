@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceRingFractionEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AuxiliarySetFieldDataCongruenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AuxiliarySetLAdicPlaceStatement

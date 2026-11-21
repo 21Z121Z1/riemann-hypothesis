@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.DzLcFin
 import Development.DiscreteGroups.GlobalIrreducibility.DzLcIso
 import Development.DiscreteGroups.GlobalIrreducibility.DzRedSupp

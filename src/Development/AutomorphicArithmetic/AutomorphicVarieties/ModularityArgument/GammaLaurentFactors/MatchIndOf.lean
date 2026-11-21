@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.GammaLaurentFactors.PairGOps
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CmBridge

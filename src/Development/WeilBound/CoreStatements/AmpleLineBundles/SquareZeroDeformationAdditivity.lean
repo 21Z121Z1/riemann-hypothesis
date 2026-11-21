@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AmpleLineBundles.TopLePreimageOfEpsFibreSndComp
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
 import Mathlib.Tactic.Polynomial.Basic

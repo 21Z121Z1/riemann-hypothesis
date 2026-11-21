@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AmplePt
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsPowEqOneOfPosDefForm

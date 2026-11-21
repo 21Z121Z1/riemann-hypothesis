@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HighestWeightIntegralOfUnitary
 open Matrix Finset
 open scoped InnerProductSpace

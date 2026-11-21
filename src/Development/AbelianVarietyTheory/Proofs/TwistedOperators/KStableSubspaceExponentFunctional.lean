@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InducedKFiniteRestrictionStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CommutingIsometriesCommonEigenvectorStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LanglandsClassification

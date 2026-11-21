@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AnalyticLiftToLogResolution
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RealisationBijectiveDegreeOne
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogNormNonvanishingAnalyticHarmonic

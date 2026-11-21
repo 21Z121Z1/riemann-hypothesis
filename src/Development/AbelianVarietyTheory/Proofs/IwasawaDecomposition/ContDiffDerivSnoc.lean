@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsCuspFunIffConstTerm
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.UnitaryAdelicHeightCosetLeNormInfPow

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtOfFrameEqOfPointEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMoebZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLieBase

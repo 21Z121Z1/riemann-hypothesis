@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.HeckeDoubleCosets.PHeckeFormal
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.LinearAlgebra.Matrix.Permutation

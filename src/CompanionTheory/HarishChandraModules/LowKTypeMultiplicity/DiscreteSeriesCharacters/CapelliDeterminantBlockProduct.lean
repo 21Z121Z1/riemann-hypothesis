@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.DSInfCharCap
 import Formalism.PeriodIntegrals.IsLowUnitH
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

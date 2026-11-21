@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.SmoothOnGVIff
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Tactic.ENatToNat

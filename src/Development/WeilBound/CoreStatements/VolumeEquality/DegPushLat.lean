@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDefs
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmTypeLatticeComparison
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeConstantRank

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.HeckeCharacterChoice.LtHalfPredOfLog
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.Cyclotomic.Gal

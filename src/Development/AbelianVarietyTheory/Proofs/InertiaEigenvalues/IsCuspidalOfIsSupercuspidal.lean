@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubsingletonJacquetOfPerm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsInvariantForm

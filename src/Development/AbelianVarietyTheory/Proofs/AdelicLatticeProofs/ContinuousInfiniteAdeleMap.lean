@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.ThmBInHecke
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeCharacterOfUnitaryTensorIdeles
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCmAdeleUnitCharacterReadingHeckeChar

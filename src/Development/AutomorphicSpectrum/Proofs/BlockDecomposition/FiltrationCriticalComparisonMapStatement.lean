@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiltrationCriticalComparisonMap
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory CrystallineSemistableComparison CrystallineSemistableComparison.Pb

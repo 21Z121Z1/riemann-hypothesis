@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PBundlesAgree
 set_option maxSynthPendingDepth 1
 

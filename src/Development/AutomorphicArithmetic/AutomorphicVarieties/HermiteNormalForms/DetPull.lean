@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Detlow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Hadam
 

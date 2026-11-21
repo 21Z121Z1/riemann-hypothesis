@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Subquot
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.ImportsAlt
 

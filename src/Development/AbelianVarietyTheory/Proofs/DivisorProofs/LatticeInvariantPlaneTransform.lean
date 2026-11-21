@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneTransformRestriction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedRingEmbeddingRows
 open scoped TensorProduct Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

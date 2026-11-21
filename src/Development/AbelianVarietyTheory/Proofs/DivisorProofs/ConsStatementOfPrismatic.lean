@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleModelCommutesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFiniteLengthOfIsTorsion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernEvaluationCollapseVerticalStatement

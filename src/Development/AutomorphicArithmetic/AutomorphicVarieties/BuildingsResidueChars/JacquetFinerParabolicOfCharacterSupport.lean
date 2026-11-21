@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupercuspidalSupportUniqueGL
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ExistsRefinementBlockOrder
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneUnipotentMonodromy

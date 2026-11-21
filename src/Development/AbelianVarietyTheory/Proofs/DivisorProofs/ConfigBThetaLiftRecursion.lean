@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBMatchedIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBMatchedIntegralFoldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBMatchedThetaCompareStatement

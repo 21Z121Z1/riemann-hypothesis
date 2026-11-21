@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.CharpolyEqFinsumPsi
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

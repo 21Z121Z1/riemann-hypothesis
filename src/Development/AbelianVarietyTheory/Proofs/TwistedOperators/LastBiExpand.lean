@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceDoubleStepKernelLocalModels
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntIndFromCols
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CombAtSingleZero

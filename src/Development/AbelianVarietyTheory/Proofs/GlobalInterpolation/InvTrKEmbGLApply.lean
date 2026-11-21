@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 import Development.AbelianVarietyTheory.Counterexamples.PlaceInjectivity.NotPtIntZeroTarget
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StatementWithTransposeOfBranching

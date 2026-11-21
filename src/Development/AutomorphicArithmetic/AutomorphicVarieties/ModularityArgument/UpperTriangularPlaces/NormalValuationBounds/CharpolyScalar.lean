@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.UpperTriangularPlaces.PtLawsOf
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CommonEigenvalue
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbittAlg

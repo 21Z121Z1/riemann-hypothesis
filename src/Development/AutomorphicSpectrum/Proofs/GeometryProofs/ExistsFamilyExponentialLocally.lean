@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalHolomorphicExponentialChartStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannFormPeriodDeterminantStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IdealSheafComapIdealAffineOpenOfIsAffine

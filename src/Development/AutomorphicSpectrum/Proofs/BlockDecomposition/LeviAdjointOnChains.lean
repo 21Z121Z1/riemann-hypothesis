@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwLMulSelf
 import Std.Tactic.BVDecide.Normalize.Bool
 

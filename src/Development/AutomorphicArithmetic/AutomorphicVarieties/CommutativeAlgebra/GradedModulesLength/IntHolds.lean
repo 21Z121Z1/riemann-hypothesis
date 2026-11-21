@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.OrbitVanishingLocal
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CondEIsCoprimeHalfDifferent
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall

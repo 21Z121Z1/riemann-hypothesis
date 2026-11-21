@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.PlaneRemovalConfiguration
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaKernelGeneralIdentity
 import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj

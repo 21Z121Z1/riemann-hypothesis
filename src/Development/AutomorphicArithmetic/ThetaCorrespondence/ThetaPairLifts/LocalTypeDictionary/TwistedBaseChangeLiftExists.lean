@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ExistsRowLiftMatching
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunOfMemCusp
 

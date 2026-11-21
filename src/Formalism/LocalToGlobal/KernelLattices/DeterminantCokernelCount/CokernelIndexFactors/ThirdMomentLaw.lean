@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.DeterminantCokernelCount.CokernelIndexFactors.IdxSmith
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

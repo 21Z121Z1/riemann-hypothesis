@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.H90USurjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetMulConjDet
 import Development.AbelianVarietyTheory.Definitions.Foundations.ValuedAlgebraMapEqOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteUnitaryAutFormEqZeroOfFinitePoints
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 import Mathlib.Topology.Algebra.MvPolynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBlockMetricDiagForm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalRing
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame

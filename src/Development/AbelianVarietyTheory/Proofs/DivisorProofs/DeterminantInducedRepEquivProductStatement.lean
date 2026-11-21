@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantInducedRepEquivProduct
 open scoped TensorProduct
 open GlobalTheory.SmGL GlobalTheory.PRep GlobalTheory.IndLineGL

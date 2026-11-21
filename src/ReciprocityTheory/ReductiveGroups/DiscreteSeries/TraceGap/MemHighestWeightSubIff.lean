@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.BlockAnti
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.CFPrimeB
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.FockWeights

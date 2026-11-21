@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ClassFormations.SubsingletonCohomologyTopOfThreeLeInt
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation
 set_option maxSynthPendingDepth 1

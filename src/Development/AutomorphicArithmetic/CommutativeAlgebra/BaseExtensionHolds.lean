@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.FinModel
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CardPow
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.FirstCohomologyVanishesSpecOfIsLocalRing
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsIndepSections
 import Mathlib.AlgebraicGeometry.Geometrically.Integral

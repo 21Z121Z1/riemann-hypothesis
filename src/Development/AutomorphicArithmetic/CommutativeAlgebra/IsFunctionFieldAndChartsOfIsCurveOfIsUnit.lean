@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.IsFunctionFieldAndChartCoverOfIsCurve
 import Development.AutomorphicArithmetic.CommutativeAlgebra.BaseChangeCurveFunctionFieldCompOfNormal
 

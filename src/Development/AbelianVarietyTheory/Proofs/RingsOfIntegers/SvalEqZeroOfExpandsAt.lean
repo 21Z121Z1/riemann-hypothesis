@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpandsAtSub
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPivot
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsIntegralBasis

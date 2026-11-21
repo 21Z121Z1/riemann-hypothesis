@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.AevalEqZeroOfMemConeIdeal
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsoOverOfIsOpenImmersion
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasBoundedPolesGlobalData

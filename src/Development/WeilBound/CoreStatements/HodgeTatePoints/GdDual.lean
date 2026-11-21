@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RelatedPairsOrbitalTermEq
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.OmStable
 import Mathlib.RingTheory.PicardGroup

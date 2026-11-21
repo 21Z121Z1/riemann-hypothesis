@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.ResClosed
 import Mathlib.Tactic.Polynomial.Basic
 import Mathlib.Topology.LocallyConstant.Algebra

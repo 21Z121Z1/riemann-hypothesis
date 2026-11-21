@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValCCuspOfSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCuspFormsFullLattice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsFurther

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.PushInvertible
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.CoefficientFieldBaseChange
 import Mathlib.RingTheory.Henselian

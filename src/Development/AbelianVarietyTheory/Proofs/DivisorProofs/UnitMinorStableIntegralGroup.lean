@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastColsVal
 open MeasureTheory GlobalTheory.SplitFlip ValuativeRel
 open scoped Matrix

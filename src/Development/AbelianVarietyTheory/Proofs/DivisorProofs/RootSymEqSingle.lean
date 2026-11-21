@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QDivBdQ
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDivisorInducedAdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MbarSectionsCuspidal

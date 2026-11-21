@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.LinearAlgebra.SymplecticGroup

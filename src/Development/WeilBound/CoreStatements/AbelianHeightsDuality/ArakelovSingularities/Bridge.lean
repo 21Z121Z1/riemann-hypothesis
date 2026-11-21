@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.ArMixIff
 

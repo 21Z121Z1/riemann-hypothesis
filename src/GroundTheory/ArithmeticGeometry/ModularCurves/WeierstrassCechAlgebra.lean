@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.ModularCurves.WeierstrassXRing
 import Mathlib.Algebra.Polynomial.Basis
 import Mathlib.RingTheory.PiTensorProduct

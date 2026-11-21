@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DvdOfForallEmultiplicityLe
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Assembly
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PChartResidueDegreeAlgClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.WeilFixedField
 
 namespace GroundTheory.Arith.Abelian

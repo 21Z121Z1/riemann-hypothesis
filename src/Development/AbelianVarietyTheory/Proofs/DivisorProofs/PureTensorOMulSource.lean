@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.RealSmulSplit
 
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain

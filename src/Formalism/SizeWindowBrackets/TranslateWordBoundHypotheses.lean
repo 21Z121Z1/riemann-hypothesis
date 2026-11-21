@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.SlopeHypothesesRounded
 import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
 import Formalism.LogVandermondeBounds.LogRatioUpperBound

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.SupIndex
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.DecIndex
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.OrbIndex

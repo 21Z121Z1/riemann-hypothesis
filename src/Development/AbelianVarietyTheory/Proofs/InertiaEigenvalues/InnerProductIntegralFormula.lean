@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicFormsFiniteStabilisers
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TwistedLevelValues

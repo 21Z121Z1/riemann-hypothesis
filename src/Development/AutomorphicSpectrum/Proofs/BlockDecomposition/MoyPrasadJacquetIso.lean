@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFixedMkEqOfCommute
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FixedInjSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenGx

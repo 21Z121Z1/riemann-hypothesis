@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeilOperatorThetaTranslateShiftPrimeToQ
 open PowerSeries GlobalTheory.MomOne
 open scoped ComplexConjugate BigOperators Topology

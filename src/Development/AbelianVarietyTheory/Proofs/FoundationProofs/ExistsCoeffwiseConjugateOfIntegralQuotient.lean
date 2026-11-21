@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QExpansionsCoeffwiseConjugateRingClosure
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasQOfIntegralQuotStatement
 import Mathlib.RingTheory.PowerSeries.NoZeroDivisors

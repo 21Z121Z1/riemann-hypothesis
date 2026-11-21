@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.TowerModels.LeviAlg
 import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone

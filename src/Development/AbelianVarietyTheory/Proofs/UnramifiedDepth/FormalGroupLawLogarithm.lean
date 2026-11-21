@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.PderivSecondEvFirstPointEqZero
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
 import Mathlib.RingTheory.MvPowerSeries.Rename

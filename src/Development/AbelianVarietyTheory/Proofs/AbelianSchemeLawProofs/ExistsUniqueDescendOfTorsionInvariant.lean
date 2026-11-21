@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.TangentLinearity.FnOfComp
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 import Mathlib.AlgebraicGeometry.Morphisms.FlatMono

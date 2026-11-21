@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableHermC
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LintegralFintypeProdEqProd
 

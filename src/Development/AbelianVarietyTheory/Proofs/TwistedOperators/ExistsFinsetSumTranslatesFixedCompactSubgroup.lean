@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.RepresentationTheory.Basic
 open MeasureTheory Set Filter NumberField IsDedekindDomain

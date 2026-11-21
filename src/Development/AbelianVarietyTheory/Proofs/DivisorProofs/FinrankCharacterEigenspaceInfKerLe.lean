@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankRangeIdempotentLeOfEmbedsInRegularStatement
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 

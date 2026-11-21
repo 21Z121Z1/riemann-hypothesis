@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemAbLocusIff
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductMapIffStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelDominantHodgeStatement

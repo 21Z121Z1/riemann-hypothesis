@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformSchwartzSeminormBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPointwiseArchimedeanDecayBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportDenom

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EpsilonCyclotomicElementProperties
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DescOfDes
 set_option backward.isDefEq.respectTransparency false

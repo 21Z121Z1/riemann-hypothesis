@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsTemperedGLOfIsUnitaryLSeg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RealCusp
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Basic

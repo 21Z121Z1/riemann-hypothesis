@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RdNonunit
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RbProj
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RcFlag

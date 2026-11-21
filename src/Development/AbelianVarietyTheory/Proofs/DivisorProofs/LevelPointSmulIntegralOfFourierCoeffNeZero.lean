@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ZeroNotAdmissibleOfRankPos
 import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain

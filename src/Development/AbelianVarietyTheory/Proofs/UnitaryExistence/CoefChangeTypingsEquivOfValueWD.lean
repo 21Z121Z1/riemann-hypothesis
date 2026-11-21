@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.ComplexResidueRing
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ReducedFiniteTypeIffTestRing

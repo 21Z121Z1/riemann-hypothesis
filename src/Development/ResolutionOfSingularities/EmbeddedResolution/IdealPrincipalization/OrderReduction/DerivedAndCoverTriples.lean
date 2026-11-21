@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.IdealPrincipalization.OrderReduction.MaxContactReduction
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 universe u

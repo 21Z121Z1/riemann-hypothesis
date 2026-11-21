@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchBump
 import GroundTheory.AutomorphicForms.CuspidalProjection.OrthogonalProjectionOntoCompSubtypeL

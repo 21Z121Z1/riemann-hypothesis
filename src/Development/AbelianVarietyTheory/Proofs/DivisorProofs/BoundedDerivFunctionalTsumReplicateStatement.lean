@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedDerivFunctionalTsumReplicate
 open GlobalTheory.HCA MeasureTheory GroundTheory.Automorphic
 open scoped ContDiff

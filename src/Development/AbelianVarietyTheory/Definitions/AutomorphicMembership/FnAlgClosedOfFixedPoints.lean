@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsometryOfConjSplit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitLatOfOneOne
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.PermutesPeriodSpacesIdOfFixesCmCurveTorsion

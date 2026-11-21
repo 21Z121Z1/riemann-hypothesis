@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DensConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSeparatedOfIsProjOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CInfAtSum

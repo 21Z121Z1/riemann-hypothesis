@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.EisensteinGrowthForms.GrowForms
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesContinuationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinVerticalBoundStatement

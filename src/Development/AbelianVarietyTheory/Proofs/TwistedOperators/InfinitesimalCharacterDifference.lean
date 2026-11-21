@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HighestWeightFunctionalCharacterStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CapelliOfGelfandStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlRelationsOnKFiniteVectorsStatement

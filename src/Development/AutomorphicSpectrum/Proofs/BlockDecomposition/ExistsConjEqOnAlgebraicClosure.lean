@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodExistenceCm
 import CompanionTheory.AutomorphicTheory.PlaceSeparation.IsOpenQuotientMapArt0
 open NumberField

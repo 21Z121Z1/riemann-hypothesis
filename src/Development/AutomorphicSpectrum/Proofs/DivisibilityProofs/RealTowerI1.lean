@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.AgreementPos
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.KillNoneFormPoly
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.RealTowerArithAgreementStatement

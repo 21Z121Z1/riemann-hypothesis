@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemOffP
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermitianFormUnitaryOneOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicTransportMeasureFirst

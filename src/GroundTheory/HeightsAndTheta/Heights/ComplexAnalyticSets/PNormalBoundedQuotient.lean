@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalBoundedQuotient
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StWeaklyHolomorphicIntegral
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalGermIntegrallyClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMapApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTensorRightOperatorStatement

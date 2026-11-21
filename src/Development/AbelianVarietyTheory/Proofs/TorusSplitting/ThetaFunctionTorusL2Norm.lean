@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TorusSections.IsTorusOf
 import Mathlib.Dynamics.Ergodic.Action.Regular
 import Mathlib.RingTheory.PicardGroup

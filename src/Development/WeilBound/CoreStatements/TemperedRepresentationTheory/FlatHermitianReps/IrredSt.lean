@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.CuspDiscreteDecompositionOfTraceClass
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemL2OfAutomorphicEmbedding
 

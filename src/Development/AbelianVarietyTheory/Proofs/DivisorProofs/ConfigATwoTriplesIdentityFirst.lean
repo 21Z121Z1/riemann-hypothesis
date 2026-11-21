@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCompactIsOpenUnitsAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
 open scoped TensorProduct NNReal Matrix

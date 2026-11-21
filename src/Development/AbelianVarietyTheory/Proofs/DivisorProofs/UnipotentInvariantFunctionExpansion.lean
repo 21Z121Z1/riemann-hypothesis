@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreConcl
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2
 open scoped TensorProduct NNReal Matrix

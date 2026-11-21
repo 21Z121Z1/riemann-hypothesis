@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaStabilizerExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOperatorMulOfPublished
 import Development.AbelianVarietyTheory.Definitions.Divisors.PairsOfSquareTriple

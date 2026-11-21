@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FractionGeneratorsArcs
 import Mathlib.CategoryTheory.Limits.Shapes.Countable

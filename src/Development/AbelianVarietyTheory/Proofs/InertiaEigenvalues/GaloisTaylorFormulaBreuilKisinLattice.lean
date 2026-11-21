@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CauchyProductPartialSumsDvdPowStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DescEqXPowSmulNablaPowStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NablaPowApplySmulLeibnizStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FiniteAndNcardSetOfSubmoduleLeRelIndexEqLe
 import Mathlib.Algebra.Module.Lattice
 import Mathlib.Algebra.Order.Ring.Star

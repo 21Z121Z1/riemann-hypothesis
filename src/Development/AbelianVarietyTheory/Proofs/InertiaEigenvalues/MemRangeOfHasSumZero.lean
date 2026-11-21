@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormLtOneOfNotIsUnit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateAction
 import Development.AbelianVarietyTheory.Statements.WeilDeligneCrystalline.ExistsNotInduces

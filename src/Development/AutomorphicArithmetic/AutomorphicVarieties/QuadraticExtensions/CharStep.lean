@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.TameGen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.IneConj
 

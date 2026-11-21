@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PieriBlockIdeals.BlockIdealBound5Derived
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.LinearAlgebra.PiTensorProduct.Finite

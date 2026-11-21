@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitOneAddJacobsonTensorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFiniteAlgebraJacobsonRadicalStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteModuleAdicCompleteStatement

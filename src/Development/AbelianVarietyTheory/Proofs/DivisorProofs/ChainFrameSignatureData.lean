@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OrientedPairFockMapsLieEquivariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalHermitianFrameSignsPosOfDefiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteBottomTripleWeightNaturalStatement

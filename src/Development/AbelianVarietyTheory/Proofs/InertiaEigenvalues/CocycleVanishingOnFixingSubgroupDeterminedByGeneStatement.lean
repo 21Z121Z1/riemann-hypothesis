@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CocycleVanishingOnFixingSubgroupDeterminedByGene
 open Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.Cyc
 set_option maxHeartbeats 1000000 in

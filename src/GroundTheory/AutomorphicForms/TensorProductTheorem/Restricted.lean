@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.SmoothRep
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis

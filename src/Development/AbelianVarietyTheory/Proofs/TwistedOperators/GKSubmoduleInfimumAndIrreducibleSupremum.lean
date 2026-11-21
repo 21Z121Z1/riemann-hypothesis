@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AbstractCompleteReducibilityStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormFiniteDimCompactStableStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormFiniteDimFrameStableStatement

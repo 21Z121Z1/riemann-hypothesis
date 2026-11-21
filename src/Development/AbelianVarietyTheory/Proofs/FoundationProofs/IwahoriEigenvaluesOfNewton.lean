@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
 import Development.AbelianVarietyTheory.Counterexamples.DegenerateExamples.PremisesModel
 import Mathlib.Algebra.Order.Ring.Star

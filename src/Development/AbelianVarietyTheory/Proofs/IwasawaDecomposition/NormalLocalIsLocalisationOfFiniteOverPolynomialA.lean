@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsQuasiFinitePolynomialMapStatement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.PicardGroup

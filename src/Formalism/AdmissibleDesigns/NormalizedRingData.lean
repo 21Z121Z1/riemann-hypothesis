@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.RealDisplayAllKOf
 import Formalism.SharpRestriction.LevelLetterCocycles.RingDataOfIdempotents
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.IdempotentRankOneAtPoint

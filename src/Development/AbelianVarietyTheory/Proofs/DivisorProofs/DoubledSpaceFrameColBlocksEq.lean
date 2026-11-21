@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DblCol
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 

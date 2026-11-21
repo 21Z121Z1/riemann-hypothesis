@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.V0MapIotaEqTopDefinite
 open Formalism.BasicNotions Formalism.L2.DIV Formalism.L2.Indef NumberField
 set_option maxHeartbeats 1000000 in

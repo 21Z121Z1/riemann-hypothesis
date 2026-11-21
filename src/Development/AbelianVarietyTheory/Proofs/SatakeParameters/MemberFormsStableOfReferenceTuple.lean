@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataKerP
 open Formalism.BasicNotions Classical
 

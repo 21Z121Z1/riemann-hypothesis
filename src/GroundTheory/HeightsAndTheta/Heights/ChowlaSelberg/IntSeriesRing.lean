@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeries
 import Mathlib.RingTheory.PowerSeries.Expand
 set_option maxSynthPendingDepth 1

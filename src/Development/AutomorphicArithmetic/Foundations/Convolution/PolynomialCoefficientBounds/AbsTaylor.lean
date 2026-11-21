@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.AbsGrow
 
 open PositivityTheory.Rg.Fx UpperTheory.ConvolutionTheory.BW

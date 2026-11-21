@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalTheoremInputs
 import Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
 import Formalism.SharpRestriction.ParamsHeightRankConstant

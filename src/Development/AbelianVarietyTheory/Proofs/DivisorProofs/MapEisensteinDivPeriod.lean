@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModGEis
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators
 open GlobalTheory.QFam

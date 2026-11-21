@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpDiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalBasePtTopMinors
 import Mathlib.LinearAlgebra.Lagrange

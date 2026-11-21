@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryTopology
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelADef
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqBase

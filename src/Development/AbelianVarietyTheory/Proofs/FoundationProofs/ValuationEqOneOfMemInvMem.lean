@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FixingSubgroupOfIntermediateFieldPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InertFixesRootOfUnitRatioStatement
 import Mathlib.RingTheory.PicardGroup

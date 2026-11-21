@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NoThetaLiftDiscreteSeriesSmallerTowerMember
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible
 set_option maxHeartbeats 1000000 in

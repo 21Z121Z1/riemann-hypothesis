@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBottomTriplePeriodConstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBottomTriplePeriodConstDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConstantTripleCoefficientStatement

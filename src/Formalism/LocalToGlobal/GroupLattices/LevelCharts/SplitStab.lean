@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.JoinForms
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.AffineGLForms.GenSpace
 
 open NumberField GlobalTheory.CuspRep MeasureTheory PositivityTheory.Affgl

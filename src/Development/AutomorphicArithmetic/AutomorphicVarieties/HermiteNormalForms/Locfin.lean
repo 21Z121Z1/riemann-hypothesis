@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.LowbdSmul
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cntconj
 import Mathlib.Algebra.Order.Star.Real

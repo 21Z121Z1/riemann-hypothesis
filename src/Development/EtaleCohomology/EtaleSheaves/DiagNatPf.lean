@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.PartDiagCut
 
 namespace LateralTheory.E.DiagNatPf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymplecticDatumTorsionLevelExtStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymplecticDatumTorsionLevelStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SymplecticFormBasisChangeStatement

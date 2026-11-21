@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPinnedOfIsUnf
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MarkedIsometryHalf
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.AbsDefs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.KerPow
 import Mathlib.Algebra.AffineMonoid.Basic

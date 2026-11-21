@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasBoundedPolesGlobalData
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountUpSt
 

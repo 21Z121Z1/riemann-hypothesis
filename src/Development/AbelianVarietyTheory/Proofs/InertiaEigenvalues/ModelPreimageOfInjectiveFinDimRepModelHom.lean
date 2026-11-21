@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MapExactMiddleStatement
 
 open GlobalTheory.PhiGam GlobalTheory.AdmLoc GlobalTheory.Models

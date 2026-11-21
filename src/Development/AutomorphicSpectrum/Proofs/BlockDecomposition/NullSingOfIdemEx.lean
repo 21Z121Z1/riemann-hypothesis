@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarScalingMultiplicative
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureUnitImage
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureComplementImageEqZero

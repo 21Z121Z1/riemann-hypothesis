@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi
 import Mathlib.RepresentationTheory.Maschke
 import Mathlib.RingTheory.SimpleModule.IsAlgClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Topology.Algebra.ClopenNhdofOne
 import Mathlib.Algebra.Order.Floor.Extended
 import Mathlib.Algebra.Order.Interval.Basic

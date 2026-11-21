@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsIrreducibleIff
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU

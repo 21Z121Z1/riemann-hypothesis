@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
 import Mathlib.NumberTheory.FunctionField
 

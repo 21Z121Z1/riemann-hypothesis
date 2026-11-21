@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.LetterB
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FockR
 

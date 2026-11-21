@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsHomogOfMemQuotPartAlt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTerTer
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeierstrassCoeffsIntegralAverageChangeOfVariableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntVVariableChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralJOfNonrealMultiplierStatement

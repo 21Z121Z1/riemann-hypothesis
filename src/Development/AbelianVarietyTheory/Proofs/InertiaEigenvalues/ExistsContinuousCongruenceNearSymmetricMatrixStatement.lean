@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContinuousCongruenceNearSymmetricMatrix
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology
 set_option maxHeartbeats 1000000 in

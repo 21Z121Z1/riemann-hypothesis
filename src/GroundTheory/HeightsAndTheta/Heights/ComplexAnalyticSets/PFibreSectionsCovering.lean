@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFibreSectionsCovering
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PicardGroup

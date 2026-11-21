@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsTrSelf
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.TranslateProduct
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate

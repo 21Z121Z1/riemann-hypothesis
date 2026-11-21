@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PullQkSurjective
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import Mathlib.RingTheory.AdicCompletion.Completeness

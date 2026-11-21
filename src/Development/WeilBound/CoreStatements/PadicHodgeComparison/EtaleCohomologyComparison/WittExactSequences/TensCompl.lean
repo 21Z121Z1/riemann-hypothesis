@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WpPf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PqBaseChangePolynomial
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitTZpow

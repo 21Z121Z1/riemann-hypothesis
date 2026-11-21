@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NontrivialOfNeBot
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MemISupIrreducibleOfAdmissibleUnitary
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AutTranslate

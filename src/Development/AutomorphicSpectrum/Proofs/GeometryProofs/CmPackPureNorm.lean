@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DifferentTwistedGeneratorExistsStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenLocalBasisLogNormStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsLocalBasisCmOrderStatement

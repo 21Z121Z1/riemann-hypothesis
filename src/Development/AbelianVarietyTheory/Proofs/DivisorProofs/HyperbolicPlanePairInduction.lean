@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairRestriction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralSqNormLeOfSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPlaneSeesaw

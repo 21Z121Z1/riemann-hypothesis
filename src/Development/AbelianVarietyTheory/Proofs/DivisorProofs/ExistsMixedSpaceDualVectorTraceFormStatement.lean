@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMixedSpaceDualVectorTraceForm
 
 open IsDedekindDomain NumberField

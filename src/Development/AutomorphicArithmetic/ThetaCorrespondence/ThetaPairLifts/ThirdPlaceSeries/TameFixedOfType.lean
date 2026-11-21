@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.TameAnyAtOfIsConjPl
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameFixedAway
 

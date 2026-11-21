@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalGroupLog.Statement
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ENatToNat

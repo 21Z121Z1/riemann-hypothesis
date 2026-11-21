@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeSupLatticeComponentEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AsIdealSpMapClosedPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageDegEqDel

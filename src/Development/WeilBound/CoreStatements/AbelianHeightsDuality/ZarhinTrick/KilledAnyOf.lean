@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiDefs
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiCoreDefs
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.QiPtsA

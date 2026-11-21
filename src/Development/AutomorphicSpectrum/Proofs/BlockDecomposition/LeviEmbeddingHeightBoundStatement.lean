@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviEmbeddingHeightBound
 open NumberField GlobalTheory.CuspRep GlobalTheory.CompanionTheory.CTFin Matrix
 set_option maxHeartbeats 1000000 in

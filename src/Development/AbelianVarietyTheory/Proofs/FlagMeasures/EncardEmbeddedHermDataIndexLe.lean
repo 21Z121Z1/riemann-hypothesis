@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardEmbeddedDataWithGivenFixedLattice
 import Formalism.HyperbolicPlaceProducts.SecondLevelArithmeticNorm
 import Mathlib.Data.Set.Card.Arithmetic

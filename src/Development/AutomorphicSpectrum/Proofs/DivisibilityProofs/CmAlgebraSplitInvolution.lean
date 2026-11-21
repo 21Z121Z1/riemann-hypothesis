@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
 import GroundTheory.GlobalFields.TateThesis.AdelicCharDual

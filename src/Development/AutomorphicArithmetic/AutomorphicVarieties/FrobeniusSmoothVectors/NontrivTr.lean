@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.TrMap
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients
 import Mathlib.RingTheory.SimpleRing.Principal

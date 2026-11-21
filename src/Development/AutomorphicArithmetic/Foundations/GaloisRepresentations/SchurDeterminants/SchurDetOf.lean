@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.SchurYOffClr
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.JacobiTrudi
 import Mathlib.Algebra.AffineMonoid.UniqueSums

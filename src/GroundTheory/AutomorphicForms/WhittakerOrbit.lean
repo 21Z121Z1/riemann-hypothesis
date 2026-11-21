@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.WhittakerLSpace
 import GroundTheory.AutomorphicForms.SmoothRep
 import Mathlib.Topology.Algebra.Group.OpenMapping

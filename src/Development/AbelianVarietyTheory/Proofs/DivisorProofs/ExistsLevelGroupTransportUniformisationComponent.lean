@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelChangeTransportersAllComponentsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniqueUpToTargetGroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdentityTransportsComponentToItselfStatement

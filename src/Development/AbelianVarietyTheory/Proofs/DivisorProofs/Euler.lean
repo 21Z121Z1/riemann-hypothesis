@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalFactorDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarStabilizerNormalizedLocalProductStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAEvaluationLocalStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.LieGeometryGrowth.ThStmt
 open UpperTheory.V.Lit.Geo NumberField Matrix GlobalTheory.CuspRep Topology Filter
 

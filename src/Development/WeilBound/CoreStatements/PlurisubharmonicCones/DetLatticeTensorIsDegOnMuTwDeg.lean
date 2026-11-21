@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsUnitOfSum
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ComponentDataHeightIdentity
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionSystemHodgeDegree

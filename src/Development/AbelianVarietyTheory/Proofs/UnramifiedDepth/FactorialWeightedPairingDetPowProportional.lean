@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.DetPolyMulCayleyOmegaPow
 
 open ReciprocityTheory.PGsh MvPolynomial

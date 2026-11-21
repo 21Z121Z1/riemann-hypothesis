@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDeRhamPoincareDualityOfCubeDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveLiftIff
 

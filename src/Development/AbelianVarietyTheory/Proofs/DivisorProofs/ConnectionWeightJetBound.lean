@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaRulesExistAndCusp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightAntitoneBoundary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspOnRestrict

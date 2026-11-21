@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.MemImageOfTensorSum
 import Formalism.AdmissibleDesigns.CohomZeroEquivContinuous
 import Formalism.SharpRestriction.LevelLetterCocycles.IsobaricMultiplicityOne

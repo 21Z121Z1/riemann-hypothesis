@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.GramDeterminantReal
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.GramFlowTransform

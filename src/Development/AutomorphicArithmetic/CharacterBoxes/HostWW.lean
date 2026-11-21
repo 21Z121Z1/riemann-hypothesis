@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsFamPOfKits
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MPowFiveMulFMulLLe
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowNumAt

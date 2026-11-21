@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqZeroOfForallPowDvdGerm
 import Mathlib.AlgebraicGeometry.Morphisms.Flat
 import Mathlib.Tactic.Monotonicity.Lemmas

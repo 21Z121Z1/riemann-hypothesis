@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.TorsStep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.ImageRep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.PermCard

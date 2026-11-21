@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsUnitarisableOfCharIff
 import Mathlib.RepresentationTheory.Semisimple
 import Mathlib.Topology.Sheaves.Presheaf

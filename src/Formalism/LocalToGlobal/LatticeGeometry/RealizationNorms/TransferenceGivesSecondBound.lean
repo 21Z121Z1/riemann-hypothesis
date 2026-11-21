@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.WeightFamilies
 
 namespace Formalism.L2.Geo.Rec

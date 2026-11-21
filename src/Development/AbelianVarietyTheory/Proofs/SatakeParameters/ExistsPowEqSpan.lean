@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartEqOneOfFibres
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TrueColumnChoicesHeckeCharReferenceEqOne
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff

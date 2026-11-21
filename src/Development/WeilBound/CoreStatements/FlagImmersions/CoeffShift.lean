@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.AltCMul
 import Mathlib.Algebra.MvPolynomial.Coeff
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

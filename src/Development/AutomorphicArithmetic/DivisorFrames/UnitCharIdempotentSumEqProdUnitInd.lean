@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ComplEquivEvW
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnitCharTriangle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocPart

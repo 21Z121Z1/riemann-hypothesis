@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.ToricVarieties.Normal
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis
 import Mathlib.LinearAlgebra.TensorAlgebra.Basis

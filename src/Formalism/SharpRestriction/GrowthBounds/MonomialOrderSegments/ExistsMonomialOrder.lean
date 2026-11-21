@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.LiftBoundOfHypotheses
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Monotonicity.Lemmas

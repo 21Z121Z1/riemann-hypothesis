@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.StatementsEnd
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Imports
 set_option maxSynthPendingDepth 1

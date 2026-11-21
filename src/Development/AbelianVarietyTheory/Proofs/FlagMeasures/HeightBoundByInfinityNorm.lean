@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TruncatedLeastLatticeSizeLipschitzProperties
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedSmooth
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap

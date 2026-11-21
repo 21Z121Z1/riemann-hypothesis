@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SmithDeterminants.StatementGram
 
 open Finset

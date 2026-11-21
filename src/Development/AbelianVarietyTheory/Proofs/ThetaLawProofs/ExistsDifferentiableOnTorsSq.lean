@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.DegProd
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.WittVector.IsPoly

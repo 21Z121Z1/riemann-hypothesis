@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSLMapMulInvMem
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueNormalizedCyclotomicTraceStatement
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.MemClosureOfIsIntegral

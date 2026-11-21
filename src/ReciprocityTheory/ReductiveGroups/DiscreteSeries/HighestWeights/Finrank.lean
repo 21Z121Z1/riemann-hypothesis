@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ContinuousTorepK
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.WeylBridge
 

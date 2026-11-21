@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightFunctionCompactLevelContinuousStatement
 
 open scoped TensorProduct NNReal ENNReal Matrix

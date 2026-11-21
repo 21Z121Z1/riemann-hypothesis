@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.InfClassAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OppositePathLocalTotalTensorMemCoefficientField
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder

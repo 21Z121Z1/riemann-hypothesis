@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.InfiniteAdeleRingMapInfiniteAdeleRingMap
 import GroundTheory.GlobalFields.SecondInequality.Statement
 import Mathlib.RingTheory.PicardGroup

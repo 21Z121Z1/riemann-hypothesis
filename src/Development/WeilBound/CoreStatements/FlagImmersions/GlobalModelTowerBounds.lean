@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightIdentityStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergDerivativePreservesSchwartzStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SobolevPointwiseBoundWordsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurablePeriodicArchRestrictionStatement

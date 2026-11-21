@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DegreeBoundOfHolomorphicContinuation
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BesselSquareIntegrable.SchurHpk
 import Formalism.PeriodIntegrals.HCFdeg

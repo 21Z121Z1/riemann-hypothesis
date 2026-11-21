@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameNormsContinuousAlongEmbeddingFamilies
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsCompatibleLaws
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal

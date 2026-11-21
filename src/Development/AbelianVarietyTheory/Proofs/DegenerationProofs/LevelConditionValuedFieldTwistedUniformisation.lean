@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.RatTors
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomTransport
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RelationsAreFunctions

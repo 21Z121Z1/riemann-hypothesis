@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.BumpAOf
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.SliceMain
 

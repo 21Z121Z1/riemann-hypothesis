@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AinfElementThetaCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrEmbeddingRingHomPropertyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerMapSubsetImMap

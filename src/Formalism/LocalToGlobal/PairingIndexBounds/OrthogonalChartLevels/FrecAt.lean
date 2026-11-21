@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.BasesAt
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.GramLevelZeroEqReindex
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.CmpJInPosEqGat

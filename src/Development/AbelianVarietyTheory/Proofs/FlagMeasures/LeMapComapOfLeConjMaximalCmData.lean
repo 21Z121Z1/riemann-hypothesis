@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataSpaces
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

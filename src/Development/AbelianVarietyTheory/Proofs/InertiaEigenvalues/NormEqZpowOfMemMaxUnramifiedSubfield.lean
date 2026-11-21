@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Mathlib.NumberTheory.Padics.ProperSpace
 import Mathlib.Tactic.ENatToNat

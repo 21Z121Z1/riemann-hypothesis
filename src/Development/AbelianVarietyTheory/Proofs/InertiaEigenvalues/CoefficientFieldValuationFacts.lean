@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AuxiliaryPrimeNeTypePrime
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsEmptyOfNotAll
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsNegSqZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationComponentEqOfSameModulusPoint
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHoloFrameChart

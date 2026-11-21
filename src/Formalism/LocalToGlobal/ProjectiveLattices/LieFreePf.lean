@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.IntFrames
 import Formalism.LocalToGlobal.ProjectiveLattices.LieAlg
 import Formalism.LocalToGlobal.ProjectiveLattices.LieRel

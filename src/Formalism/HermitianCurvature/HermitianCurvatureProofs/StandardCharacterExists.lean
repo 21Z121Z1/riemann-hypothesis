@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementG
 import Mathlib.RingTheory.Complex
 import Mathlib.RingTheory.WittVector.IsPoly

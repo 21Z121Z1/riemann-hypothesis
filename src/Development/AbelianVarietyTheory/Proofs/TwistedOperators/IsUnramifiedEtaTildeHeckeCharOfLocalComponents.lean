@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TendstoInfMulProd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TameHeckeCharTrivialOnFiniteUnitsCongOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta

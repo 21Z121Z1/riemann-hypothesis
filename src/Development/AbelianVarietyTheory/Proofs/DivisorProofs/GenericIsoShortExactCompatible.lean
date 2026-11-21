@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagConcatenationExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactPairChernRelationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairMorphismCompatibilityStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DuStarPos
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormPrime
 

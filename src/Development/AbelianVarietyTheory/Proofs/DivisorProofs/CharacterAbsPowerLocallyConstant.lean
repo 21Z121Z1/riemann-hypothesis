@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCompactIsOpenUnitsAt
 import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
 open scoped TensorProduct NNReal Matrix

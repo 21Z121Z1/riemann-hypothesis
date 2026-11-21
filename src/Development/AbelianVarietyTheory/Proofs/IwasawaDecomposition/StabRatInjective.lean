@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsAbsIrrCharCompIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 

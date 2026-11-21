@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormMixedEmbeddingNatMulLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenRelationModelsMatrixSetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelEigenRelationSecondFormStatement

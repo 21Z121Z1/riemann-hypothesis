@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilInducedRepresentationHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilSmoothnessHypothesis
 

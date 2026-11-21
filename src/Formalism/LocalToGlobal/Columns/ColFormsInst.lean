@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.BaseInst
 
 open NumberField IsDedekindDomain IntermediateField Module

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNaturalHomotopyEquivChainsConstantPresheafStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeHomSections
 import Mathlib.Algebra.Homology.HomotopyCategory.HomComplexSingle

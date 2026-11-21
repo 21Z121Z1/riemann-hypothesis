@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormPeriodSq
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.EmbeddingPermutesLettersHolds
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitaryExtension

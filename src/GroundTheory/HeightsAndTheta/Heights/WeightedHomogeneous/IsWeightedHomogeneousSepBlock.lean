@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Statements
 import Mathlib.RingTheory.Nullstellensatz
 set_option maxSynthPendingDepth 1

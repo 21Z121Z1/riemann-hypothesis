@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CmProjectiveModulePairingP
 open NumberField TensorProduct
 set_option maxHeartbeats 1000000 in

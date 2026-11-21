@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.MatrixExtendByZeroApply
 import Mathlib.Algebra.DualNumber
 import Mathlib.Topology.Instances.TrivSqZeroExt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousIotaOQOfData

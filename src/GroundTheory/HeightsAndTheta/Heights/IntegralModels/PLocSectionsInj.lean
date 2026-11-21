@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsLocSectionsInj
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PGenericSections
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.LocalFieldAtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitDetOfCartan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBThetaDescentIdentity

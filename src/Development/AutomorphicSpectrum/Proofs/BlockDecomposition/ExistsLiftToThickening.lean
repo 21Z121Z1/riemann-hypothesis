@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiftHomExistsUnique
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EtaleLiftingOfNilIdeal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExtendedDividedPowers

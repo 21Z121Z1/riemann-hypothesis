@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.HodgeTateFromSandwich
 import GroundTheory.GlobalFields.Adele.Approximation
 import Mathlib.Algebra.Order.Ring.Star

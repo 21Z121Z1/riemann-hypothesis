@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointwiseBoundDiscreteSeriesCoefficients
 open BpJoin Formalism.FourierDecayAlt
 set_option maxHeartbeats 1000000 in

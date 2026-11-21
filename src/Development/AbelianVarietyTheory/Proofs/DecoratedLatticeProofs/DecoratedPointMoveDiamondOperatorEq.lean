@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DecoratedLatticePointMoveDiamond
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 

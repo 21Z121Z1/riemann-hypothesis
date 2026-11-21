@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DropPlInsert
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSameImagesMatrix
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentMulAddOneSubInverse

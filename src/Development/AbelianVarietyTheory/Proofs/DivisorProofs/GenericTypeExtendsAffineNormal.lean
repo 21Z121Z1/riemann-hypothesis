@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgHomCompEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiabelianTypeExtendsNormalSchemeStatement
 set_option autoImplicit false

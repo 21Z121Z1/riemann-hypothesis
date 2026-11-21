@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MdiscEqZeroOfEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralChernFormsInvariantUnderMetricChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantLineChernFormFlatStatement

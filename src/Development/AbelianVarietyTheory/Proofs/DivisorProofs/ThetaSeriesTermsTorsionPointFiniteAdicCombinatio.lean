@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSeriesTermSmulAddDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdicCoeffsTendstoZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralGaugeFiniteExtensionStatement

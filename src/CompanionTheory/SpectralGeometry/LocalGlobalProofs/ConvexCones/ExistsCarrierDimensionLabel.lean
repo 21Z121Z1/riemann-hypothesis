@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.CellFaceOfFaceCutStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.CellOfQuotientRadicalConeStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.CellOfQuotientCellStatement

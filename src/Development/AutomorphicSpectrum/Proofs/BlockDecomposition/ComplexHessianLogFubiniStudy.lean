@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JoinCol
 import ReciprocityTheory.L2DbarEstimates.SkodaWeights.LeviVA
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.HoloSmooth

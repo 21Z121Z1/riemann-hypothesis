@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CovolumeFrames.StepSize
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.FrameStd
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.Adelic
 open NumberField IsDedekindDomain Formalism.UG Formalism.L2.Col
 open scoped TensorProduct

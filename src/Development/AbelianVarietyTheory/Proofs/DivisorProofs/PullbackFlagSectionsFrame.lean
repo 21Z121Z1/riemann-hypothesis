@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColSec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalSubbundleRankStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClsDivPullEqVPull

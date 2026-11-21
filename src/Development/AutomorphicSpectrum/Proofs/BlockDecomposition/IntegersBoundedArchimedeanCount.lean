@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FiniteAndNcardBound
 
 open NumberField NumberField.mixedEmbedding Module

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.MemSmulLatCoord
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DensGS
 

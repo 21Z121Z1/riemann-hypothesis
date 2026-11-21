@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SiegelNeZeroIff
 import Mathlib.NumberTheory.ModularForms.LevelOne.Basic
 open scoped MatrixGroups

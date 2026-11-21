@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.DivisibilityConstruction.RBLam
 
 open Formalism.BasicNotions Formalism.MainNotions

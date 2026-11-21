@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsTypePlacesOfLevCh
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
 

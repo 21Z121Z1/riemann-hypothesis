@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RankPosOfLeaves
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalProdSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitBlockTypes

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.CorrOpEq
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.AllHolds
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.SpecCorrOfHolds

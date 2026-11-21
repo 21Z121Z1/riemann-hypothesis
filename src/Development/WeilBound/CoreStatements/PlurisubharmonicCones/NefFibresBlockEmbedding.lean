@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsCurvePoint
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ProjectionFormulaDegree

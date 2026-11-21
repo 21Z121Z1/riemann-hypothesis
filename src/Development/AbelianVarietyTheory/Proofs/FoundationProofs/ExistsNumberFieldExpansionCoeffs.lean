@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExpUpper
 import Mathlib.Data.Finset.Functor
 import Mathlib.RingTheory.PicardGroup

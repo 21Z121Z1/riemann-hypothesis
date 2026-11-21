@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
 import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAbelianSchemeThick

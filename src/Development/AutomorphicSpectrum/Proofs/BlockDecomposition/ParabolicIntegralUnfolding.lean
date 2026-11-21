@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitHomeoApply
 import Std.Tactic.BVDecide.Normalize.Prop
 open MeasureTheory Topology

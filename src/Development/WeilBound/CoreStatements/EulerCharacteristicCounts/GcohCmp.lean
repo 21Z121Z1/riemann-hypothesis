@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohCmpA
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohDefs
 

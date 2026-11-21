@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTorsionFormWithPoint
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CharChPartZero
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TranslationInv

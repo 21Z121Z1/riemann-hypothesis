@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardCharacterDecompose
 
 open scoped TensorProduct NNReal Matrix

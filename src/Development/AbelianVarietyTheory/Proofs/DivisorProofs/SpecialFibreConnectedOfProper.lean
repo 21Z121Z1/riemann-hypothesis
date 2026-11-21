@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialFibreConnected
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomSpecProdSelfPreimageEqClopenStatement

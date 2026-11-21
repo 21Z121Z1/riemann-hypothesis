@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.PairsStable
 import Development.WeilBound.ThetaLifts.LatticeBasics.LeviEx
 

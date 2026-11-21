@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelExistsForContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RegularisedIntegralLinearPropertiesStatement
 open scoped ComplexConjugate Matrix NNReal

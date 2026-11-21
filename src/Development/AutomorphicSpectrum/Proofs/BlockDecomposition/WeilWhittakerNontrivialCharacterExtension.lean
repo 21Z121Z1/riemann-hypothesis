@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactTranslateEntriesBoundedStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilWhittakerNonvanishingCharacterStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilWhittakerMeasurabilityStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusHomOfIff
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SecEqZeroAndHomEqOfThickenings
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceThickening

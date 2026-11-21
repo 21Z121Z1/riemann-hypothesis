@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsNoetherianRingCompletedStalkSiegelFibrePower
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsSharpAndPrim

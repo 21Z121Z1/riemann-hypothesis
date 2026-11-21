@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SpecFirstDetFormNeZero
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 set_option maxSynthPendingDepth 1

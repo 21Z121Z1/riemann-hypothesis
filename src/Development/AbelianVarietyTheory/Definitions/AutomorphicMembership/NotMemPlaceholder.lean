@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsKitWithKitWith
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SSupCompSecId
 import Development.AbelianVarietyTheory.Definitions.Divisors.ReferenceMetricMulDualEqOne

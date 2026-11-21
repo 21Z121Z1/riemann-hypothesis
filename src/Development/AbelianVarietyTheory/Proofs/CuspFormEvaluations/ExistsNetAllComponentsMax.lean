@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsNetAllComponents
 
 open NumberField ReciprocityTheory.ChartRestriction.G.FD Formalism.L2.PjFree

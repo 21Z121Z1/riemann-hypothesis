@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowDef
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowSobA
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowSobB

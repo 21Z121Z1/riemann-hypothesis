@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.HasFDerivAtMvPolynomialEval
 import Mathlib.Algebra.Group.ForwardDiff
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric

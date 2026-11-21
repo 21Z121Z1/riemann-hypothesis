@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHkTrace
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwBruhatKO
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwFactTorus

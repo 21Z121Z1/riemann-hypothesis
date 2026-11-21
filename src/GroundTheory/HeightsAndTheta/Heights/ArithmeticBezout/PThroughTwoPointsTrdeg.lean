@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsThroughTwoPointsTrdeg
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsTrdegAdjoinLe
 import Mathlib.Algebra.Order.Ring.Star

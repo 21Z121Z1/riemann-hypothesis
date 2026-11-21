@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ThirdPointDerivativeAtZeroSeriesMemIntegral
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DmonOfMulCongrOfCongr
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsIntegralGermNabValCongr

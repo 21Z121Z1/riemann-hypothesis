@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainUnfoldSubgroup
 open MeasureTheory
 open scoped Pointwise

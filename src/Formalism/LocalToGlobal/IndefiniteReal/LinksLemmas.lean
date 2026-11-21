@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
 import Formalism.LocalToGlobal.IndefiniteReal.CxCore
 import Formalism.LocalToGlobal.IndefiniteReal.BridgeLemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelDatumThetaSeriesShapeAtDAdaptedBases
 open NumberField Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Ker Classical
 set_option maxHeartbeats 1000000 in

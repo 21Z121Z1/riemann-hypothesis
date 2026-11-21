@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.CuspWeights
 import GroundTheory.AutomorphicForms.GL2Classical.WeightOperators
 

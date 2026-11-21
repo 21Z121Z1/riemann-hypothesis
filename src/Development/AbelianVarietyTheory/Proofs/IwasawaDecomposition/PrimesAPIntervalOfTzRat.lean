@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.HookFormulaTorsion.GlobalBoundRefinements
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.IsExcRat
 import Mathlib.NumberTheory.DirichletCharacter.Orthogonality

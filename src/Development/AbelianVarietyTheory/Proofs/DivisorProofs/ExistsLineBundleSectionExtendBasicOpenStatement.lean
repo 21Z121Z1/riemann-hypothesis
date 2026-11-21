@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleSectionExtendBasicOpen
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Semi
 open GlobalTheory.KS (rsT)

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpMapCompSpMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteFreeNeighbourhood
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondChernDensity

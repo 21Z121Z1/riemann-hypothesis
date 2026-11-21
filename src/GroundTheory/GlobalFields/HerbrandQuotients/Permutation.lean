@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.HerbrandQuotients.Cyclic
 
 namespace GroundTheory.Global

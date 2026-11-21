@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MeasurablePhi
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.NormLeOfDet
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FinMuUnconditional

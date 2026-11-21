@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.SplitPairGen
 import Mathlib.RingTheory.Henselian
 

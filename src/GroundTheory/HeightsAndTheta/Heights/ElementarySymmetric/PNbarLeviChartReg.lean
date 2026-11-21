@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StRefChartDisc
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StConeTangentDisc
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PNbarSmooth

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFrameUnipotentExchangingDualIsotropic
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL
 open scoped Pointwise ENNReal Classical

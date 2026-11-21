@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

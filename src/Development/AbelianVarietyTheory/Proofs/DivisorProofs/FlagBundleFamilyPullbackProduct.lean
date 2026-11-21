@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootIdx
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumPermApplyZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdIoiSubEqAntisymmMonomial

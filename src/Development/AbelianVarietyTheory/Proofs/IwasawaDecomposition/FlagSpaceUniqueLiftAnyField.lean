@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenFrameBasePointLiftsUniqueFlagSpace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpecMapFieldCancel
 

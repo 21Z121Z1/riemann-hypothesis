@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ScatteringLimits.ConvolutionSpectra.SvSpec
 import Mathlib.Analysis.Convolution
 import Mathlib.MeasureTheory.Function.AEEqOfIntegral

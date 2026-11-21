@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechVanishingFromCover
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubsingletonTensor
 set_option backward.isDefEq.respectTransparency false

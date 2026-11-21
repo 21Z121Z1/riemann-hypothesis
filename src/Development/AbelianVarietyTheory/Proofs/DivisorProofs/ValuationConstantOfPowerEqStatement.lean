@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationConstantOfPowerEq
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Opposite

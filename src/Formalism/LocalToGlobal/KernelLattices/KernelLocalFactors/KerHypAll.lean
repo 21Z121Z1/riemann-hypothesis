@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.KerHypAll
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivConcrete

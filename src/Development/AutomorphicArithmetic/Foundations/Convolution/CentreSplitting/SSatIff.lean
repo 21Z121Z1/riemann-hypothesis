@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SatIff
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.TsphVec
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatUnit

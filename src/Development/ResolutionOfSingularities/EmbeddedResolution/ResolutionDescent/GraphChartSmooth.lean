@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.GraphChart
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.GraphAlgebraSpecSmooth
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.AffineSpaceGlobalSections

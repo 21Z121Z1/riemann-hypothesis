@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JetOpIntegral
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TransportedLatticeLocalizationFreeLeCoefficientS
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StandardWeylLatticesFockDual

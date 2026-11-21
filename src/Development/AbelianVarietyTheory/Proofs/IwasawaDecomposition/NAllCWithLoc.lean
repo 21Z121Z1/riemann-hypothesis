@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GalTiedWithLoc
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NTiedLocTiedOfBuilt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyFinOne

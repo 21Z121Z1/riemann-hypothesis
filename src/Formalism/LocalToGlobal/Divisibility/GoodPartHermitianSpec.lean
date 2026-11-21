@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.ClassSum
 import Mathlib.RepresentationTheory.Character
 import Mathlib.RingTheory.Etale.Weakly

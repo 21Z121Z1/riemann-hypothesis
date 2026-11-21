@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.KLevTop
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.GlobFixed

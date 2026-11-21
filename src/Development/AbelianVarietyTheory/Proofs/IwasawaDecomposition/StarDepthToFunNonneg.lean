@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBaryStageStart
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsStrictIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SysExOfPol

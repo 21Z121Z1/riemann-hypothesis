@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubMemNsp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankChartStackDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankChartBoundedCoefficientsStatement

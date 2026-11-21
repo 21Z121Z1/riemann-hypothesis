@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerPotentialLocallyIntegrableBound
 open CategoryTheory AlgebraicGeometry Filter Topology Set MeasureTheory ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory GlobalTheory.CxPts GlobalTheory.ShFam GlobalTheory.ChernReg
 open scoped ContDiff

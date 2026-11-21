@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianIntegralBlockFubini
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousPartialFourierMeanStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodicPartialFourierMeanStatement

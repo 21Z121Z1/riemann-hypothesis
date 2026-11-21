@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.RelAmpleLiftSquareZeroThickening
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel
 import Development.AbelianVarietyTheory.Definitions.Divisors.Pullback1MemHodgeFiltration

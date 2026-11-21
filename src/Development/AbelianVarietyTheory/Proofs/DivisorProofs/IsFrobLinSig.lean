@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrob
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsBaseEqChain
 

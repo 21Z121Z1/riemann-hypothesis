@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.ImportsAlt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.DetBound
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Growth

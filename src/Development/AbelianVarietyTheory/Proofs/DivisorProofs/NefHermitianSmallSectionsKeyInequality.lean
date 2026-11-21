@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometricShiftOfIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoxFamilyMovingPartsChainBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FubiniStudyLeShiftOfSmallSectionsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThCLeftStab
 open NumberField IsDedekindDomain Formalism.L2.Ker
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsSecPointSeparable
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsGenericFormsKer
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsDerivSpanTrdeg

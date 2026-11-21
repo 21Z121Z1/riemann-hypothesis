@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.FinrankAdjoinSqrtNegOne
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcDefs

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsBaseClassLevelAdapted
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ColumnDataLaws

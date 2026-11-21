@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionsCountSqEqDetFormOnTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SqIsPowGrp
 

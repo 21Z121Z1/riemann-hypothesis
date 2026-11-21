@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Hyps
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.HypsTer
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.HypsBis

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LocallyProfinite
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StabilizerOf
 import Mathlib.RepresentationTheory.Coinvariants

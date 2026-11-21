@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AnalyticDeterminants.SingToDiffAlt
 import Mathlib.Analysis.Analytic.IteratedFDeriv
 import Mathlib.Tactic.ENatToNat

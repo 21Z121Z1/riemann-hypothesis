@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.IsAbelianSchemeAndExtendOfGenericHoms
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RangeSubsetOfForallField
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LiftMulHomPullbackFst

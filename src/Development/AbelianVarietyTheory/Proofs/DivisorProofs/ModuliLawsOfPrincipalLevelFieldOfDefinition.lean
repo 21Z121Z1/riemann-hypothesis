@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CoreArithmeticGroupContainsPrincipalCongruence

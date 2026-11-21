@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.AbsPInfModuleSection
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.PFinInvModuleSectionMul
 

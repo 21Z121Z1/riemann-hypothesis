@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TupPrimeEmpty
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftsRationalIffRecord
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftsRationalOfRatAt

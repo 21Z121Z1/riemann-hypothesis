@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.CubeTheorem.SchemeModels
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteAffineCover
 import Mathlib.AlgebraicGeometry.QuasiAffine

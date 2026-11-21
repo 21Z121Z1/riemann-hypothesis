@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactTorusQuotientMeasure
 open MeasureTheory
 open scoped NNReal ENNReal

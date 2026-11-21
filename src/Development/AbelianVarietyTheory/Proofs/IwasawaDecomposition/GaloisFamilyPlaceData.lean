@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadTw
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisSideStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeqRationalDataOfEigenStatement

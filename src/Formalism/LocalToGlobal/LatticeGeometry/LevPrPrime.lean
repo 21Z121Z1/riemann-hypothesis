@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.CompNe
 import Formalism.LocalToGlobal.LatticeGeometry.InstAddCommSemigroupWt
 

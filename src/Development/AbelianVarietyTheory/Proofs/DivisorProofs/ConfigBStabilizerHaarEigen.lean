@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCtIntSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConeRepresentatives
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawEvaluationHaarArchimedeanStatement

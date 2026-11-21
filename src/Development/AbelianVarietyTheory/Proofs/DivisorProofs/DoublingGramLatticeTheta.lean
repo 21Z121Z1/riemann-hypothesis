@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableTsumComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatOfDiag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RatOpenClasses

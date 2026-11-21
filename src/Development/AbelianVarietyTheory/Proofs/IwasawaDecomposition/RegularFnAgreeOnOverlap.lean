@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TraitOrdOfTraitOrdPt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkGenerizationGermCompatStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EtaleCompletionOfDimOneNormalStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MonomialMeanResidues.FilteredDegree
 import Mathlib.NumberTheory.Harmonic.Defs
 

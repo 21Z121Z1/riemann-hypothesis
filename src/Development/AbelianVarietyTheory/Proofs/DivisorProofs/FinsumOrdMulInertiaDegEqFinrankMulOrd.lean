@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthRestrictScalarsEqSumInertiaDegOfSubset
 import Mathlib.Data.ENat.BigOperators
 import Mathlib.RingTheory.OrderOfVanishing.Basic

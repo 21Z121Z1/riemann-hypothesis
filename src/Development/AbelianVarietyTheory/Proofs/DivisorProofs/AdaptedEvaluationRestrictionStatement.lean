@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedEvaluationRestriction
 
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.FirstCoordinateAdmissible
 open Matrix Complex NumberField
 open scoped ComplexConjugate ComplexOrder

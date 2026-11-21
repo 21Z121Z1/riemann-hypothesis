@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfApplyOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotRealPowOfGood
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensSmul

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WindowLower
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHFrameDtPackPre
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DsPPosAndLower

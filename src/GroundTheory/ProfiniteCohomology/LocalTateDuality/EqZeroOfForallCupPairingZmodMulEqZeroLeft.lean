@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.KummerCup
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.NormCharacters
 set_option maxSynthPendingDepth 1

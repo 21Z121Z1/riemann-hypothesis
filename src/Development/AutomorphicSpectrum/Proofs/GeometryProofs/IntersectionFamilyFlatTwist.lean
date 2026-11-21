@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitSectionDivisorEqStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VerticalStatementHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatHermUnitSectionAvoidStatement

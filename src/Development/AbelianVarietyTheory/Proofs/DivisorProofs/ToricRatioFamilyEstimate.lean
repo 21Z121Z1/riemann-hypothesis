@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FittedTiesBoundEventualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormNotMemPrimeAwayFromMuStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmAbelianFieldDataOfToricRatioStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EvalConvGroupAlg
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightRegularRepUnitaryStronglyContinuous
 open Formalism.BasicNotions Formalism.L2.SG.RowDict Formalism.L2.SG.RowLevelMatch Formalism.L2.SG.HidaSetting MeasureTheory

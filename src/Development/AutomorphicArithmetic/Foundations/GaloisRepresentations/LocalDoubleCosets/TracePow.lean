@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalDoubleCosets.SgMemUnipB
 import GroundTheory.AutomorphicForms.WhittakerOrbit
 

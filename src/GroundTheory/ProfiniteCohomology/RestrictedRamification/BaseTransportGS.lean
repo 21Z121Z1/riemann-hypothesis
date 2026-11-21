@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseTransport
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChangeMackey
 set_option maxSynthPendingDepth 1

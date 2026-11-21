@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SubsetSpanBy
 import Mathlib.Algebra.Module.StablyFree.Basic
 

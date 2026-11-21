@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.HeckeIntertwinersInert
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.InertLocalIndices
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LocSplitProdRight

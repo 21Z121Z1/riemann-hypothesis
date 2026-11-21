@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 open NumberField GroundTheory.Global GroundTheory.Global.IdeleGroup
 open scoped nonZeroDivisors

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.BundleObjects
 import Mathlib.NumberTheory.Padics.PadicIntegers
 set_option maxSynthPendingDepth 1

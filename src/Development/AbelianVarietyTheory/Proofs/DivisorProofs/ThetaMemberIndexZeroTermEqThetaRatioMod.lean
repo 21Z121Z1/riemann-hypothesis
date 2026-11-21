@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotTwistSumZeroFamily
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMemberPOfIsMember
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberTermNonzeroIndexMemMaximalIdealStatement

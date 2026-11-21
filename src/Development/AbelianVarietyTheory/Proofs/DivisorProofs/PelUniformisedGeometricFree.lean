@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocPartMul
 open MeasureTheory Matrix
 open scoped Classical

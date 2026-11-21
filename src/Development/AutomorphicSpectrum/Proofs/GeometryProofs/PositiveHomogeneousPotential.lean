@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSmoothHermTrivLine
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SmoothFunctionAsDegreeZeroMetricStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ConjugationInvariantHermitianMetricStatement

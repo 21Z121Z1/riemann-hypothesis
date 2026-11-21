@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FamilyDegreesAdmissible
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FactorialMulChooseEqProdRange
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateTorsionGaloisActionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalArtinFrobeniusActionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeilGroupDenseInDecompositionStatement

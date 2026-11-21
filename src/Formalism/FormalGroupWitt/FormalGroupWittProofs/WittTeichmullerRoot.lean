@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalGroupWitt.Statement
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.RegularLocalRing.Defs

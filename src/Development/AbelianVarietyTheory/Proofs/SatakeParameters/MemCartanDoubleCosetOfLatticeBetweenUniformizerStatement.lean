@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemCartanDoubleCosetOfLatticeBetweenUniformizer
 open NumberField IsDedekindDomain GlobalTheory.LatHecke Formalism.UG
 set_option maxHeartbeats 1000000 in

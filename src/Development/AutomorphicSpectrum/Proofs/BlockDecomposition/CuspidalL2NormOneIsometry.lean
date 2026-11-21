@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureNormOneProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainSplitCentreProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralSplitCentreInvariantStatement

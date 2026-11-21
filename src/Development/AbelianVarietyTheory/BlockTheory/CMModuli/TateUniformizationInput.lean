@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Clauses
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.TorusGraphMaps
 import Mathlib.Algebra.Order.Ring.Star

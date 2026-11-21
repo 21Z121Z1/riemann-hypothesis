@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsGrpPullbackOfLattice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRingEquiv
 

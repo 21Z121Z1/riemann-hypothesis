@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteBottomTowerConstantsDifferByFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtOfMemGfC
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ClassSumIntegral

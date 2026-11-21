@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsImg
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsBlockDiagFrameChangeStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagFrameAtGoodPointStatement

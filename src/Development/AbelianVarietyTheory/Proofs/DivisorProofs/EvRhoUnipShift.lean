@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentNormalizerRational
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairRestrictToSubspaceRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSkewLocalPlaceData

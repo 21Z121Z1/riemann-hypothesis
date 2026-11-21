@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerComposition
 
 open scoped TensorProduct NNReal Matrix

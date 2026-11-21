@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointLinearFunctionalCm
 open NumberField GlobalTheory.HTLat GlobalTheory.EigenSplit Classical
 open scoped TensorProduct NNReal

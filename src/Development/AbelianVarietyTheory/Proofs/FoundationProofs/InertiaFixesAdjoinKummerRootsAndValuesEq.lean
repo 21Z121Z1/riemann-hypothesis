@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InertFixesRootOfUnitRatio
 import Mathlib.Tactic.ENatToNat
 open GlobalTheory.NeedB Polynomial

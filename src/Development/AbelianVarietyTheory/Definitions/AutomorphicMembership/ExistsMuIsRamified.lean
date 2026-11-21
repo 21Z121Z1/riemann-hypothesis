@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardDvdCardGL
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSmallPrimeOff
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsLevChOfLevelPrime

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.SwOn
 import Development.DiscreteGroups.GlobalIrreducibility.DzMatchCut
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec

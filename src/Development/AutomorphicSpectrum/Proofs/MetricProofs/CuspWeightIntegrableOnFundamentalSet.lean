@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsGroupDictionaryStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FundamentalSetToFundamentalDomainStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumIntegralBoundStatement

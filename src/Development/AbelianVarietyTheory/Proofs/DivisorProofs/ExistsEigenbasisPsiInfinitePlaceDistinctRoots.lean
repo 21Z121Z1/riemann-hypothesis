@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.Brauer.TensorSimple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixDiagonalizableOfCharpolyEqProdDistinct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardRootsMapPol

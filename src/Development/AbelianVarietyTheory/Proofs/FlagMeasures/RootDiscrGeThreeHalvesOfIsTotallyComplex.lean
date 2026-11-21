@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianLattices.StatementMass
 import Mathlib.NumberTheory.NumberField.Discriminant.Basic
 import Mathlib.RingTheory.Henselian

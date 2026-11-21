@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.RegularLocalRing.Defs

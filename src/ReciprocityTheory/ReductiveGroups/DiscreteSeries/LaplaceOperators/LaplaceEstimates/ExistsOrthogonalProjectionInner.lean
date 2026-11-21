@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.RregRep
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 

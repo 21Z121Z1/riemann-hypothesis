@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightExponentsEmbeddingsDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FloorCastOfInt
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol

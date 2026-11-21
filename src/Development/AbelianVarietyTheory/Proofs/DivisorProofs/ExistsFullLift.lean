@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.LevelVectorSizeBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGalConjChrEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGalConjEta

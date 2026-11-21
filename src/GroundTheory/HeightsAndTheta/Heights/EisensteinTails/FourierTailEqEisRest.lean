@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.EisensteinTails.Statements
 import GroundTheory.HeightsAndTheta.Heights.EisensteinTails.ExistsIntOfIsIntegralThree
 set_option maxSynthPendingDepth 1

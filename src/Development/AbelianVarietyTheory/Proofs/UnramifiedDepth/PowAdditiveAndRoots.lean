@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.Interface
 
 open Formalism.L2.FormalSeriesBounds GlobalTheory.LeafTerm

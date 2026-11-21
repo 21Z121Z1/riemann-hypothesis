@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactorAlt
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OlocEx
 import Development.AutomorphicArithmetic.TwistedTraces.UiwPowCompEqOfAntitone

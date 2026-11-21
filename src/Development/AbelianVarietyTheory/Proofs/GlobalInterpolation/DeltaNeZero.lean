@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.HostRank
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InterTransport
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FieldIsoSelfDualAndPeriodLatticesAgreeStatement

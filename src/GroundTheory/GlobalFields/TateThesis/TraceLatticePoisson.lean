@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.TraceLatticeEuclidean
 import GroundTheory.GlobalFields.TateThesis.LatticePoisson
 

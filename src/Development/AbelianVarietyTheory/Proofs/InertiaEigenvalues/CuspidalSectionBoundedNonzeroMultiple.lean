@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralChartCoverCuspFormNoPoleStatement
 
 open AlgebraicGeometry CategoryTheory NumberField IsDedekindDomain MvPolynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.QuotRealize
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Duality

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.T2SpaceAdelicGeneralLinearGroupNumberField
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteInterCompact
 open scoped Classical

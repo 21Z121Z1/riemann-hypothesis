@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.IdempotentPartRepresentationAt
 import Formalism.AdmissibleDesigns.IdempotentPartFiniteAndFree
 import Formalism.AdmissibleDesigns.PiEquiv2

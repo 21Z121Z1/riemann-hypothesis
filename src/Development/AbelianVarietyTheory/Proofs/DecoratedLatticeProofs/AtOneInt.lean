@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.SiegelEisenstein.UnitPairEmbedding
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValQOfValQr
 

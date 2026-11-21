@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.CocycleTransportH1fSurjective
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.CharFil
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.CycInertia

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ThickTransComp
 import Mathlib.Algebra.DualNumber
 import Mathlib.Analysis.CStarAlgebra.Classes

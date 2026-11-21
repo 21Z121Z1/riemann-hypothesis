@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesTildeGammaValuesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemberRowsOfKernelDatumSizesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLatticeOfEqSpanFracSmul

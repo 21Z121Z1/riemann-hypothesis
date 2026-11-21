@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsPolynomialSectionBlockDiagonalMapStatement
 import Mathlib.Algebra.Order.Ring.Star
 open Matrix GlobalTheory.ClassFin

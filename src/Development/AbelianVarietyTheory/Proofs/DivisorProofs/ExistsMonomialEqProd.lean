@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithIntersectionFormExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithClassFormPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsTensorProductStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.WeightsConj
 
 open NumberField GlobalTheory.CuspRep GlobalTheory.ContraPair

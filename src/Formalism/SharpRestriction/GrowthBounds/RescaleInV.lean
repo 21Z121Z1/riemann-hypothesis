@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.ConstMemTypeSetOfNonneg
 
 set_option autoImplicit false

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EOpEqAsAlgebraHom
 import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
 

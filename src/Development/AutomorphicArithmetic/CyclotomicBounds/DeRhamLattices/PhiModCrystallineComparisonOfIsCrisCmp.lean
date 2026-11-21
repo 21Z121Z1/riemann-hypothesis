@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.CrisInclIBEqDeRhamInclID
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.TamePhiModuleCrystallineBasisCompat
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.PhiModDeRhamImageCoordExpansion

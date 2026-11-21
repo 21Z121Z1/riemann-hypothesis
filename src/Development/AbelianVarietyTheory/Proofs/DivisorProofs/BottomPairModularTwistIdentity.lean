@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinPt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TransposeMemUnitary

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.LocalizingCech
 import Mathlib.AlgebraicGeometry.Modules.Tilde
 set_option maxSynthPendingDepth 1

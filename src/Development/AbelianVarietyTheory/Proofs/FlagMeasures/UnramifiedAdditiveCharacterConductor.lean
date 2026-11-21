@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.OfInfProjInfMulOfFinProjFin
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.DualExponentDensity
 

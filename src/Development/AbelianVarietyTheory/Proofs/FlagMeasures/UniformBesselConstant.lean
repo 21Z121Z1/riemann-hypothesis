@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.CellDataExists
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapExistsFunctional
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSides

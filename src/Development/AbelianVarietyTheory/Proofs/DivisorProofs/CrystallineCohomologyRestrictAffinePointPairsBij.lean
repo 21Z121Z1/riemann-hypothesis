@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivPowerCompatTwoFormDerivativeCompOneForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallDescentH1Surjective
 

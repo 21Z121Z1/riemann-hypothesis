@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.DefsCS
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirRightLaplacianFormula
 open MeasureTheory Matrix Finset
 open scoped ContDiff ComplexConjugate InnerProductSpace

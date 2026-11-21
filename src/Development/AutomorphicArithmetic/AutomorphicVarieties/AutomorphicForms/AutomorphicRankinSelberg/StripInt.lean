@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ConstSmall
 import Mathlib.Analysis.Complex.UpperHalfPlane.Measure
 import Mathlib.NumberTheory.Modular

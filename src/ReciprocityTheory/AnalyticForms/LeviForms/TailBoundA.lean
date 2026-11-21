@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
 import Mathlib.Tactic.Monotonicity.Lemmas

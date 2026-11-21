@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetDivZero
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MemNonzeroLocusPullOn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameCover

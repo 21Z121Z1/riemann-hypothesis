@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CongAt
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemPrinCongOfSm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LastTwoStepsGuarded

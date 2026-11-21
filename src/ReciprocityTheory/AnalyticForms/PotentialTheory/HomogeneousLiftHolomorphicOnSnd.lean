@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.PiTensorProduct

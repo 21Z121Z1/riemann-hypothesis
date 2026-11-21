@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientLineBundleGauge
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjointRelationGeneratorCorrStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormalGermJetLiftStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RedIdeal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.CuspidalRankFourRegularAlgebraic
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicCases.SymplecticGSp4

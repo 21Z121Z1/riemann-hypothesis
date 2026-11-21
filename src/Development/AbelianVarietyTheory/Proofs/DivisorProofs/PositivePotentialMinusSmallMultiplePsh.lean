@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.TraceAsymptotics.SplitLineAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOfNotFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SupportOutFinite

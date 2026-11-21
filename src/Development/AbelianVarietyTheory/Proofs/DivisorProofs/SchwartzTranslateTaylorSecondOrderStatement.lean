@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTranslateTaylorSecondOrder
 open scoped SchwartzMap ContDiff
 open GlobalTheory.SchwartzFstOp

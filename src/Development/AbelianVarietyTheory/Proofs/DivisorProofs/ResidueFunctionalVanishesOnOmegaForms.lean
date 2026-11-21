@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DlogRatioVolumeFormNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdZpowAdd
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.MemSaturatedOrderIsoSubspaceSpanSymmApply
 import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature

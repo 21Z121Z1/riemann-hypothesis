@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsUnitIffUnitAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueCentreLocalHomStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuativeLiftExistsUniqueStatement

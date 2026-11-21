@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBlock
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedIntegralBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentSeriesAdaptedBasisCoordsVanishBeyondFinraStatement

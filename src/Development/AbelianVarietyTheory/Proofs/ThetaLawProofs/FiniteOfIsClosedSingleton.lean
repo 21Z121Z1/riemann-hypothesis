@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.JacNeZeroIffSpanEqMaximalIdeal
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 import Mathlib.AlgebraicGeometry.QuasiAffine

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedA
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArchimedeanValueBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VerticalBoundHeightCompareStatement

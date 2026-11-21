@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSubFibreSubFib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 import Mathlib.Algebra.AffineMonoid.Basic

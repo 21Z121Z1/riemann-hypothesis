@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticZeroDimensionalFinite
 open CategoryTheory AlgebraicGeometry GlobalTheory ReciprocityTheory.ChartRestriction.G.Geo.Tor
 

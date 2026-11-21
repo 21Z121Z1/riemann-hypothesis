@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.TensorSpan
 import Lemmata.MiscLemmasL.Imports
 import Mathlib.Algebra.Module.StablyFree.Basic

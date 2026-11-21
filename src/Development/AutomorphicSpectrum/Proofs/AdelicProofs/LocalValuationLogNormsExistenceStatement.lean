@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocalValuationLogNormsExistence
 open NumberField IsDedekindDomain GlobalTheory.CompanionTheory.Ar.Fl
 set_option maxHeartbeats 1000000 in

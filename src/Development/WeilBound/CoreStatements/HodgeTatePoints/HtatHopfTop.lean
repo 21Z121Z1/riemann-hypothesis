@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfFin
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEqOfLeStatement
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHopfReg

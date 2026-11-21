@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsChartDenNotMem
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsChartDim
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChartA

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.LintegralFundSetInterLe
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.LintegralBallLtTopOfLocalInverse
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.IsOpenSaturation

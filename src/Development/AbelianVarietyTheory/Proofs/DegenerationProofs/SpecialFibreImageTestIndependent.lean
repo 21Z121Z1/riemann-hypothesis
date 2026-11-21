@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfValHomEq
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FinrankSpanReductionLe
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HomGenericPoint

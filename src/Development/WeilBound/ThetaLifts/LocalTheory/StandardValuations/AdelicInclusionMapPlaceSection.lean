@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.LocalSplittingLinearSkew
 
 set_option linter.unusedSectionVars false

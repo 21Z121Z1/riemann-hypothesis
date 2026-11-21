@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientMultiplicityShiftLatticeQuotientStatement
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Data.Int.Star

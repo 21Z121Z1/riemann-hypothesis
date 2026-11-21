@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.EqZeroOfNotPrimary
 import Mathlib.RingTheory.Artinian.Instances
 

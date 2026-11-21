@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.LabelSettingScalars
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 

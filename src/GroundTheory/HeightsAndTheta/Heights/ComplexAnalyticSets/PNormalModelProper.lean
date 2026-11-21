@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalModelProper
 import Mathlib.Analysis.Polynomial.CauchyBound
 import Mathlib.Tactic.Monotonicity.Lemmas

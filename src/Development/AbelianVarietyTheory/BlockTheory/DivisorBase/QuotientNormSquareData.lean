@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.ShiftInvariance
 
 open Module NumberField IsDedekindDomain

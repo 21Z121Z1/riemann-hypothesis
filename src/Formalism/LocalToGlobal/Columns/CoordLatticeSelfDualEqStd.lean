@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.LocalLevelIsKOneEverywhere
 import Formalism.LocalToGlobal.Columns.TiedHK
 import Formalism.LocalToGlobal.Columns.ThBaseCompanion

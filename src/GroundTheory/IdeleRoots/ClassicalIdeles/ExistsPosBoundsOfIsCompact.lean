@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.SiegelSetsSL2Adelic
 import GroundTheory.AutomorphicForms.ReductionSplitting
 set_option maxSynthPendingDepth 1

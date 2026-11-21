@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.EigPowEqOne
 import ReciprocityTheory.DualLattices.IsAdicCompleteOfBasis
 import Mathlib.RingTheory.PiTensorProduct

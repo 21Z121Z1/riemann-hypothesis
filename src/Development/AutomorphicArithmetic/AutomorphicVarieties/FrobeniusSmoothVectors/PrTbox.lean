@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.PrCorrect
 import Mathlib.RingTheory.DualNumber
 import Mathlib.RingTheory.SimpleRing.Principal

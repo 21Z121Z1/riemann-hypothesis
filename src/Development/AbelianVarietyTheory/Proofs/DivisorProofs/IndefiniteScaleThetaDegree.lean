@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.NumericScaleExponentEqExtended
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PassIn3OfRows
 import Formalism.LocalToGlobal.IndefiniteReal.TrISepWith

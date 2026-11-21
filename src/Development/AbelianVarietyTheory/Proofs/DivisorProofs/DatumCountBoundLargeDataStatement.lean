@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumCountBoundLargeData
 open GlobalTheory.SumCount GlobalTheory.SumSize
 set_option maxHeartbeats 1000000 in

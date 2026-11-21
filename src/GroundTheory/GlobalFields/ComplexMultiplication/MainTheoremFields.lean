@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.AutCFixed
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.Supersingular
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionRespectsAdd

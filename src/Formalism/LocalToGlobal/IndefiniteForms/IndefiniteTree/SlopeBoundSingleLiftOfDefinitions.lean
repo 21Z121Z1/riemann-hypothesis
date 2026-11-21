@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefUse
 import Formalism.LocalToGlobal.IndefiniteForms.IndefExample
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.IndefiniteTreeX

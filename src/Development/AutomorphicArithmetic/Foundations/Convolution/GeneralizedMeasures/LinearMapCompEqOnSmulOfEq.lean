@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.TermEx
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.SideE
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.SmoothStar

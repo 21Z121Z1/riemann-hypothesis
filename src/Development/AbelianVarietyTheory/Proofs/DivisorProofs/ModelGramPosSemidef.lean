@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ModelDdcForms
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgePeriodGram
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PerValNeZero

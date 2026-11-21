@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EffOfSec
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsOddNeZero
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsHolFormConst

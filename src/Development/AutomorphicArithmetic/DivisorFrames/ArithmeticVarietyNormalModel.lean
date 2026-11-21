@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RingKrullDimLeOfIsAlgebraic
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf
 open CategoryTheory AlgebraicGeometry Limits NumberField IsDedekindDomain

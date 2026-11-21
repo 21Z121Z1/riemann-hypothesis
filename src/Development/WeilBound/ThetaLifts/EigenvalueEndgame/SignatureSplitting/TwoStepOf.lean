@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.SpanPairIff
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.SigSplitOf
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.ExistsAbsGt

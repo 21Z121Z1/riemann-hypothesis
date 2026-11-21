@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.KummerTheory.BockCut
 import Development.EtaleCohomology.TateTwists.EtaleInjectiveResolutionBasicProperties
 import Mathlib.Algebra.Homology.DerivedCategory.KInjective

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairBaseIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleGenericFibreData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericRootTransitionFactors

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramPosSemidefOfIntForm
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.RingTheory.Etale.Weakly

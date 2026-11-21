@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
 import Formalism.LocalToGlobal.ProjectiveLattices.HostSize
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainPointBound

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.IsClosedUnitaryOfComplex
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StDualIndexFinite
 set_option maxSynthPendingDepth 1

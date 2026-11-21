@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IncMatTransposeConjTranspose
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 open scoped TensorProduct Matrix

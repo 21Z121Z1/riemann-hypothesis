@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.IsFibreCurve
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementW
 import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementW

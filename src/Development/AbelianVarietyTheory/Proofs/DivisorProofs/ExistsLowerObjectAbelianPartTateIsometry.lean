@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AbPartActIsAdj
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsSymmetricOfSymmetryGenerator
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsEqNsmul

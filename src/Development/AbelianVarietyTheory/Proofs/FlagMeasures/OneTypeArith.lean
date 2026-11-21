@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ModerateLogFactorAbsorbed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TruncatedLeastLatticeSizeRightTranslateLowerBoun
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralLeSumTypes

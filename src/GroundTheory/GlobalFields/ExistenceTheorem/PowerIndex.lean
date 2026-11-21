@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.SUnits
 import Mathlib.GroupTheory.IndexNSmul
 import Mathlib.RingTheory.RootsOfUnity.EnoughRootsOfUnity

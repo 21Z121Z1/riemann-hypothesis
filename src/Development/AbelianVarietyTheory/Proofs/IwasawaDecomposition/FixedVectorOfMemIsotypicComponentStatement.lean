@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FixedVectorOfMemIsotypicComponent
 open Formalism.L2 Formalism.AUTREP ReciprocityTheory.Aut NumberField
 set_option maxHeartbeats 1000000 in

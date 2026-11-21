@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricallyIntegralOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfInfLeInfRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenUnitMulSq

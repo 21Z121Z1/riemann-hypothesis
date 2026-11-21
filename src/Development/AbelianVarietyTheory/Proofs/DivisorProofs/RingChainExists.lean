@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreimageFiniteProjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaSubOneSmulMemBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSMulRegularOfIsReflexive

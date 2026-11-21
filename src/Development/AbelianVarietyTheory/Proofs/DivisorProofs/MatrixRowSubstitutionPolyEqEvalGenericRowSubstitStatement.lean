@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixRowSubstitutionPolyEqEvalGenericRowSubstit
 open MvPolynomial Formalism.GradedWeylDivisibility GlobalTheory.GenCoef
 set_option maxHeartbeats 1000000 in

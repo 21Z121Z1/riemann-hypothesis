@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ProdFnMemSB
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.Monotonicity.Lemmas

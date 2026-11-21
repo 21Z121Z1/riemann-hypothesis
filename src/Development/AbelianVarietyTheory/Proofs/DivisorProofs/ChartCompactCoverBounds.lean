@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorNormPullbackComponent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagComponentProjectionSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerFormLocallyBoundedStatement

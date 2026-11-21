@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SlopeBoundOfLargeDegreeLineStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KeyDegreeOfBadReductionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KeyBadReductionHoldsStatement

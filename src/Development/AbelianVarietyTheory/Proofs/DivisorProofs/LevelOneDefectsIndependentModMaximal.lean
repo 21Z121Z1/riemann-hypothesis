@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocalizationAway
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpPull2Cob1
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmulSucc

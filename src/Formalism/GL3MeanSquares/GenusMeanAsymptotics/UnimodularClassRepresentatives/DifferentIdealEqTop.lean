@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.MassSt
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.NumberField.Discriminant.Different

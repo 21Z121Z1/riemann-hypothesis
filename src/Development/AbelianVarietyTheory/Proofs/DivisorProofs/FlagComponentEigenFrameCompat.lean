@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCellOfLeadingMinorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPermutationLeadingMinorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagComponentEigenframeOnAffineOpenStatement

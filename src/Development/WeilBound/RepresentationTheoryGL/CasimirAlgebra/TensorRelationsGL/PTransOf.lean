@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.LiftCommEAt
 import Mathlib.Data.Fin.Tuple.Sort
 import Mathlib.RingTheory.WittVector.IsPoly

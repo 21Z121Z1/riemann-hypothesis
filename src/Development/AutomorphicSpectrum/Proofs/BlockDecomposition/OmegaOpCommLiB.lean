@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmMemArchSmooth
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
 import GroundTheory.AutomorphicForms.GKModules.Casimir

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.IsSquareDeterminantComparison
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.DualNumberRingHomExt
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsIsLocalModelOfIntegral

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SingleMulSingle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitarySiegelDomainExistsStatement

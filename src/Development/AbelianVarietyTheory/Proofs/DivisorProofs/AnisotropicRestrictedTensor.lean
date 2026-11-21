@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualThetaLiftLeftInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnisotropicThetaAdditiveStatement
 open scoped TensorProduct NNReal Matrix

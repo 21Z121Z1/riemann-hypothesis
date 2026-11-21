@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialSupportHolds
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

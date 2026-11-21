@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjUInvMemGfC
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneParamSubgroupTransposeGramUnitaryDecomposesStatement

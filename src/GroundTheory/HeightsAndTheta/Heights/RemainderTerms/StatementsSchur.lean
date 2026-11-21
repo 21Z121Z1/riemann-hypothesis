@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.JacobiTrudi
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.AltCoeff
 import GroundTheory.HeightsAndTheta.Heights.KernelsRest

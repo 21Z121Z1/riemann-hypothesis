@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftQMk
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.HasPres
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.ExistsLinearMapSpanBaseChangeOfSemilinear

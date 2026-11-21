@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SphericalDecomposition.SphOfWit
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdTransfer
 

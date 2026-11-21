@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.RegularLocalRing.Defs

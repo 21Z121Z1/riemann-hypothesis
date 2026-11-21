@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RightInvariantUnderSubgroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdmissibleCompletelyReducibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTowerAdaptedPlanesFirstStatement

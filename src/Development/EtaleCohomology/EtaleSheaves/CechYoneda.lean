@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.CechSigmaOf
 import Mathlib.CategoryTheory.Limits.Indization.LocallySmall
 

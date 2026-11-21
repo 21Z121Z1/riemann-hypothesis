@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WhittakerEqZeroOfNotAntitone
 open NumberField IsDedekindDomain Formalism.UG GlobalTheory.PRep GlobalTheory.LFun
 open scoped Classical

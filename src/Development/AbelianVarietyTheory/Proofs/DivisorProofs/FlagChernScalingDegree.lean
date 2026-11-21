@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticFunctionalQuadraticRelations
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedMetricPullbackIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMetricShortExactIsometric

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.PullbackBlowupSequenceComposition
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 universe u

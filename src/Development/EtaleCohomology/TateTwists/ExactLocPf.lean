@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.TateTwists.EtaleSheafInjectiveResolutionInitialShortComplex
 import Mathlib.CategoryTheory.Sites.EpiMono
 

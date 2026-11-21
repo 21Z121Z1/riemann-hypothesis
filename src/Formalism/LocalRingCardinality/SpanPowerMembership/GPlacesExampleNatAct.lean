@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.DataS
 import Formalism.SharpRestriction.GrowthBounds.DataG
 import Mathlib.NumberTheory.Padics.PadicIntegers

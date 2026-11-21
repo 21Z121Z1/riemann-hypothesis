@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL6.ExistsIntegerSmulMemOfSpanTop
 import Formalism.LocalToGlobal.GlobalTheory.GL6.Statement
 

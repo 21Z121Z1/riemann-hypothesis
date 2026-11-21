@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.ExistsGlIsometryCompEqOfNondegenerate
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.LinearAlgebra.Matrix.Hermitian

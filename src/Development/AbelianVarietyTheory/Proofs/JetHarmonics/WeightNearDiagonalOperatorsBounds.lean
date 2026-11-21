@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WtNearOrthDecompStatement
 import Mathlib.Tactic.Monotonicity.Lemmas
 open Finset BranchingSupport Formalism.REAL Formalism.QuantumDeterminants

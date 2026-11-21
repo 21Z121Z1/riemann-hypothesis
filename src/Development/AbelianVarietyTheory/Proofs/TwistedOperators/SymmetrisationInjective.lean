@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeSingleAdd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdXEqMonomial
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UgMemSpanListProd

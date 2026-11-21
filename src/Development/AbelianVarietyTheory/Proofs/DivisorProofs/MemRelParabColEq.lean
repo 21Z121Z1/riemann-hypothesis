@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GeometricLemmaCellOneBlockSwapEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorTorusCharacter
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix

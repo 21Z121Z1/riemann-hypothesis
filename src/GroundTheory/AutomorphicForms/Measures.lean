@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.MeasuresParabolic
 set_option maxSynthPendingDepth 1
 

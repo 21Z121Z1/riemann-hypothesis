@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GelfandTransference.HadamardGelfand.Gelfand
 import Std.Tactic.BVDecide.Normalize.Prop
 

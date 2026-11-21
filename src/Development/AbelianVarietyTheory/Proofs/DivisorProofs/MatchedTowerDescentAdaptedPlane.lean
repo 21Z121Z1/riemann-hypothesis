@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleIsotropicTowerStepTen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedLocalRealPlaceScalingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeHyperbolicPlaneResidueStatement

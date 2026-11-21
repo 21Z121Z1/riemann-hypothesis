@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChainTieAndV0Onto
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColNormExistsImNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CxFactsOfPrims

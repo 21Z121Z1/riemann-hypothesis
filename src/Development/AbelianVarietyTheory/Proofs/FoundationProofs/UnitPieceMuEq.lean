@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimitiveCharacterEntrySumEisensteinProductStatement
 import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT
 

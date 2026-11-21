@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsFull
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsExtZ
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoStatement

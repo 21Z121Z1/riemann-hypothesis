@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecCarried
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppEqZeroOfSval
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionNonzeroOfExpansionModMaximalIdeal

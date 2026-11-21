@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CMTypeGalois.StatementField
 import Std.Tactic.BVDecide.Normalize.Prop
 

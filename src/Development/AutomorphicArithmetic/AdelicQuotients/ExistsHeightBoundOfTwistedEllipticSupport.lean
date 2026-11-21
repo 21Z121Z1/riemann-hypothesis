@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.SelmerRankBounds.EllipticityFromProductFormula
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 open MeasureTheory NumberField IsDedekindDomain Polynomial

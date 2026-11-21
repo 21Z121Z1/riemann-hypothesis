@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.SecondBound
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.FerreroWashington
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.LevUAnti

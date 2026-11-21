@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.WeightsBelow
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 import Formalism.LocalToGlobal.ProjectiveLattices.AxHLAM

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.MahlerMeasureProofs.WeightSpaceDimensionMonotone
 
 namespace Formalism.InvariantFactorPaths.PW

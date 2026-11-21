@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpanRationalTranslatesVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OmEqPullOfVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNormOneScalarAvoidingMatrixEigenvaluesStatement

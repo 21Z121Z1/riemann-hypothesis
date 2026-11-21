@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryInvariantHermitianFormSymmEqSmulTrace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosDefEqMulTransposeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelActionFormulaAndDerivativeStatement

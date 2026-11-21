@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.FourierWeightIntegralSymmetry
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsTestFourierNonvanishing
 import Development.AutomorphicArithmetic.DivisorFrames.SchwartzFourierPreimage

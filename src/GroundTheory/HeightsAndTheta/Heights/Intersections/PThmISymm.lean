@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsWellDefined
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ThmIExistsFamily
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PChoice

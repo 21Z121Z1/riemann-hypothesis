@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrPtOfEigFrame
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorOfAutomorphyLogarithmStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaQuasiPeriodicNormalFormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditivePeriodExponentLinearStatement

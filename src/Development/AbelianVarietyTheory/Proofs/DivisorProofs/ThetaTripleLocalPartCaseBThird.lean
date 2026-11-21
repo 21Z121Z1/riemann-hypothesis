@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeLin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOperatorMulOfPublished
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalWeilActionCompatibilityStatement

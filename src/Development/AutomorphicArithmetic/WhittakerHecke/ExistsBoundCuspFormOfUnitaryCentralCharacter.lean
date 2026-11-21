@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CmBridge
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Entire
 

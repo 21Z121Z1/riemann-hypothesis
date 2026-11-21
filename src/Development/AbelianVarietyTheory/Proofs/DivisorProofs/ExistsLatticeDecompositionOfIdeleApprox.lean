@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteRingClassGroupOfConductorNeZero
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeNormTransport
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

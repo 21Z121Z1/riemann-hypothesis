@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.IsOpenOfMemIrreducibleComponentsOfFinite
 import Mathlib.Tactic.ENatToNat
 open AlgebraicGeometry CategoryTheory TopologicalSpace

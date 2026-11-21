@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastPosWtAOfPins
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastPosOfKapIs
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiCols
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromColsMemLatDbl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertSphericalStabilizerPreservesLattice

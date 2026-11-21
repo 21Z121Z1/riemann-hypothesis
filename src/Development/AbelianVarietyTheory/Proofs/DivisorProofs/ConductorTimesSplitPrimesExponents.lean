@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.CMVal.Euler
 

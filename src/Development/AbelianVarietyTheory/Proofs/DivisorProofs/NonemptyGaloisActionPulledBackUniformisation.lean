@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformisedGroupGaloisAutomorphismMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedGroupGaloisMapUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedGroupGaloisMapOneStatement

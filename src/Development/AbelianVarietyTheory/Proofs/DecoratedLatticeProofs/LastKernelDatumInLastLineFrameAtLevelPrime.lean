@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SmallPair
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.IndicatorFunctionIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LMLatOfLIntegral

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsionFormCongrOfEventuallyEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodMapRigidityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricTranslationPullbackFlatStatement

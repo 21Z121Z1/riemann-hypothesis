@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.GagaSections
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothSchemeDecomposeRelativeDimensionStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HolomorphicLocalSectionsCompatibleStatement

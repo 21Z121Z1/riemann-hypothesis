@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoefExtendsHolomorphically
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CwContIntegralCommStatement
 

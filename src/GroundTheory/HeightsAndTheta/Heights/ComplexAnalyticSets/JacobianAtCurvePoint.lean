@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.GradientAtPoint
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalModelPlace
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.SmoothOfRegular

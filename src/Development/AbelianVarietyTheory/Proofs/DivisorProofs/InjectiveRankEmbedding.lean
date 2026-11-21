@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetSNeZero
 
 open MvPolynomial Formalism.BasicNotions.TH GlobalTheory.CharPair

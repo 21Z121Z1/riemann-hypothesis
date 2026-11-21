@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoGenResMapSmulHom
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

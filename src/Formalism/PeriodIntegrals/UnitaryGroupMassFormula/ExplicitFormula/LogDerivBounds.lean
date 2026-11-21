@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.GoodHeightExists
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.RingTheory.WittVector.IsPoly

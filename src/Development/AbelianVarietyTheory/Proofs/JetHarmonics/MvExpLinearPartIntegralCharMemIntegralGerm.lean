@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntegralGermEqGaugedFormalGroupLawExpIntegral
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EqMvExpOfAdditive
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MfactMulCoeffMvExpLinear

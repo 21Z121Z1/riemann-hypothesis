@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.Statement
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ReduceModChar

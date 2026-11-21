@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasureNormOne
 

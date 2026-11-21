@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleHyperbolicPlaneSplitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedAdaptedPlaneQZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedAdaptedPlaneEstimateStatement

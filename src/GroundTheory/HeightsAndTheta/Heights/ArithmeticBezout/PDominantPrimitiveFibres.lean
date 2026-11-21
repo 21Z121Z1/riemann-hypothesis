@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StDominantPrimitiveFibres
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PDominantFibreBound
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PPrimitiveElementFibres

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaGeneratorsLeastValueOverLevelPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SplitsInLevelPrime
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightOnDatum

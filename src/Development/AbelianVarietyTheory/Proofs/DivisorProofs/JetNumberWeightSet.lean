@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetNumeratorWeightBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormStalkIntegralFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightAntitoneBoundaryStatement

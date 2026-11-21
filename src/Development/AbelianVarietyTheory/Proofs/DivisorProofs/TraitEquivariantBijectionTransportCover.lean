@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecScalOneVal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulEquivPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTraitTransport

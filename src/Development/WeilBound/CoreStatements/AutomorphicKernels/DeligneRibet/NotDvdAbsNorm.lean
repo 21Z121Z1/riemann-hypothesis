@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsAvoidOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RayClassParametrizationExistsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PrimeNotDividingCoprimeIdealNormStatement

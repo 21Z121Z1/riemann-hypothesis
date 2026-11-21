@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.BciNarrowAux
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.NarrowAsc
 

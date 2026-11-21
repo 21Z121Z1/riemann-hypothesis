@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FgInfSupOfIsCompl
 open NumberField
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethProductProperSmoothStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethIsoProperSmoothStatement
 open CrystallineSemistableComparison CrystallineSemistableComparison.Onto

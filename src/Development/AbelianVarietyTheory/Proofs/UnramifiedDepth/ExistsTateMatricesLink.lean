@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.CharR
 import ReciprocityTheory.DualLattices.SubMemSpan
 import ReciprocityTheory.DualLattices.ThmAAll

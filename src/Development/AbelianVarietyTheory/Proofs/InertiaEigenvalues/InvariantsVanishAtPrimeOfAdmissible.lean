@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTauComponentFrameOfLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrimePowSmulMemOfTwistedInvariantModLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowSmulMemOL

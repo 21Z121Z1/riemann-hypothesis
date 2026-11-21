@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemConeOfMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegralIndependentOfCoefficientStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationFunctionalVanishesOnMonomialStatement

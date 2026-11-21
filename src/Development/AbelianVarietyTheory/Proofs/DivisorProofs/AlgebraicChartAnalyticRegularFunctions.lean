@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.ShareDetA
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecondCountableTopologyOfIsProjOver
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HasAlgebraicChartsOfIsStandardSmooth

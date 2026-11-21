@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorCommOfCommColumns
 open Formalism.REAL Finset
 set_option maxHeartbeats 1000000 in

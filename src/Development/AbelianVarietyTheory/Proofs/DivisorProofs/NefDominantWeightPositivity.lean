@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurveTopSelfIntersectionVanishStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurveDegreeDataOutsideSetStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace NumberField IsDedekindDomain

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopDegreeDifferenceTelescoping
 open GlobalTheory.Mean4O
 set_option maxHeartbeats 1000000 in

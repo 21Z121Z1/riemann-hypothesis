@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialSmoothOffBoundaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlurisubharmonicOffBoundaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialLogGrowthBoundStatement

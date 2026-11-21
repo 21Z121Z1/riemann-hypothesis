@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.ExDefs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoMvps
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoQuot

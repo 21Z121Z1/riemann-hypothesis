@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.SphericalCommutative
 import GroundTheory.AutomorphicForms.InductionParabolic
 import GroundTheory.AutomorphicForms.HeckeIrreducible

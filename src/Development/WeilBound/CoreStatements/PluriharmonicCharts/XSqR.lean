@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionVerticalPerturbationBoundStatement
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XSqDiag
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula

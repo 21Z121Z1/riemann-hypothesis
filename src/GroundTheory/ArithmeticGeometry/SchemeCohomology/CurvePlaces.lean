@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveBase
 import GroundTheory.FunctionField.PlaceDefs
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorLocal

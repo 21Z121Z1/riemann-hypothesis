@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaussValuationExtensionUniqueBertiniNoetherStatement
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 open scoped MatrixGroups TensorProduct

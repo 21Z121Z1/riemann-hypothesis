@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhaseFrame
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PropertyOfCodimOneLocalUnitsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelMapUniquenessStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelMapCompatibilityStatement

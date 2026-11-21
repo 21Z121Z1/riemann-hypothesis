@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqTopOfThick
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceThickening
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RelAmpleIffVeryAmpleBy

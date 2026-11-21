@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PoissonIntegralPuncturedDisc
 import Mathlib.MeasureTheory.Measure.RegularityCompacts
 import Mathlib.Topology.UniformSpace.Uniformizable

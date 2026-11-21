@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.GamMono
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.SlFixPoly
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.NegOneNot

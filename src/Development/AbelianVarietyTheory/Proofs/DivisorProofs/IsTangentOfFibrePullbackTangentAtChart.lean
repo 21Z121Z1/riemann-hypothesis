@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsChartOfIsLocalRing
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

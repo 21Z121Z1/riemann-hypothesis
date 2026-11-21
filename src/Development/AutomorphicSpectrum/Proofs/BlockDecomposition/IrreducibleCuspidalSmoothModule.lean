@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCompactSupportSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormLinearCombination
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieDerivativeConvolutionKernelStatement

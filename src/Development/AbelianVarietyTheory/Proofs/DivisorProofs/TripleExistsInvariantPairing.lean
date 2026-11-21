@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFundamentalDomainMulRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaArchimedean
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareIntegrabilityStatement

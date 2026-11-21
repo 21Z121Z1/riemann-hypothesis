@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.RelativeDifferentValues
 
 open NumberField IsDedekindDomain UniqueFactorizationMonoid IntermediateField

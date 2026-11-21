@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsOfEmbedding
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Algebra.Ring.IsFormallyReal

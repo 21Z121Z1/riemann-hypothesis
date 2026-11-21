@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeSqSubLeSlopeSqSpan
 
 open NumberField GlobalTheory.AllWt Module TensorProduct Matrix GlobalTheory.SlopeExt

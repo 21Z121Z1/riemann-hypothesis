@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumSplitPlaceIndicatorSource
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceDarbouxWeilStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceIdempotentLatticeStatement

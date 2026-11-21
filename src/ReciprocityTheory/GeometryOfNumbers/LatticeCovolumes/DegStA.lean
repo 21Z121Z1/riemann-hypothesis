@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ConjSymm
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.Matrix.PosDef

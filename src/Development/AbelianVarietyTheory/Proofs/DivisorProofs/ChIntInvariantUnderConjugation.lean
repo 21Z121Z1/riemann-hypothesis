@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjSmoothOnPreimageCharts
 import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.LatDen
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

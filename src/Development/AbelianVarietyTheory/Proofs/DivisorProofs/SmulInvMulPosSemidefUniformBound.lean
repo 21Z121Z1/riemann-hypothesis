@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedLeastSquaresBoundStatement
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.Data.Matrix.ColumnRowPartitioned

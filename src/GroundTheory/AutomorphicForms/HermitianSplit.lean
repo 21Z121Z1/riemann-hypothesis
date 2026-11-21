@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.UnitarySplit
 
 namespace GroundTheory.Automorphic

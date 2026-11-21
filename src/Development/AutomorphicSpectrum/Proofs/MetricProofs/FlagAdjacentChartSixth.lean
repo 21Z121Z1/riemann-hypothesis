@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsBaseChart
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentSwapVarietiesArithmeticStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticSecond

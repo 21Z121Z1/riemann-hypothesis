@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.BallVolDefs
 import Development.WeilBound.CoreStatements.VolumeEquality.LocInj
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.RmulScalOne

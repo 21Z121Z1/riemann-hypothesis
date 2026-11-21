@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.WCompat
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SurjectiveCubeOfGeneric
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsNormalisedGen

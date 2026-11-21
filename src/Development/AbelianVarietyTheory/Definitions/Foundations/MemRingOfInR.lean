@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExpUpper
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs

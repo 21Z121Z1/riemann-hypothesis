@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExactFunctorEquivariantChainStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedEmbeddingDualBasisExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentDecompositionDualBasisStatement

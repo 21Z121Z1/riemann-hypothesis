@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConcaveTwistEtaInequalitiesStatement
 import Mathlib.Analysis.SpecialFunctions.SmoothTransition

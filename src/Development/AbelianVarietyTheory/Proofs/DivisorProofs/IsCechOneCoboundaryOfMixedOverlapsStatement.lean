@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCechOneCoboundaryOfMixedOverlaps
 open AlgebraicGeometry CategoryTheory Limits
 open GlobalTheory.KS (rsT C1 IsCoc IsCob)

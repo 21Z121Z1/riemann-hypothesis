@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralComplexInvPowAddNormSqStatement
 import Mathlib.Analysis.CStarAlgebra.Classes
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory

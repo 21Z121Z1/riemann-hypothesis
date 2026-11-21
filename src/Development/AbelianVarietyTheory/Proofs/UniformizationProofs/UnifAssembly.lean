@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.IsCPPullback
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniformisationOfFunctionalEquationDegreeOnStatement
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

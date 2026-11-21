@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.MapNsmul
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Shapiro
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

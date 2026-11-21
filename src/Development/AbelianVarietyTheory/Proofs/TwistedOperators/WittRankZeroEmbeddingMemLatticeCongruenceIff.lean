@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilRepRankZeroWittEmbeddingValueAtZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasureToRealEqMass
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowBesZeroE

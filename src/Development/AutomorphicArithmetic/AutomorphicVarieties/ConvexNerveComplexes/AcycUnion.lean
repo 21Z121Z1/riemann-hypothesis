@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.AltDoubleSum
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.BdMem
 import Mathlib.RingTheory.WittVector.IsPoly

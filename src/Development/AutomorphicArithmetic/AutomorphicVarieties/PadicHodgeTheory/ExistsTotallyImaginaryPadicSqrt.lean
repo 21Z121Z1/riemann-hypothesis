@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsTotallyRealPrimitiveElementPadicFiniteExt
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsCMOfConjAlt
 import Mathlib.NumberTheory.Padics.Hensel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyLogNcardSeminormBallOneGe
 open Filter Topology GlobalTheory.VolBr
 set_option maxHeartbeats 1000000 in

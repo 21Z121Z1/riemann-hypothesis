@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CloudAddNodeLeTenBaseSize
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.EX
 set_option maxHeartbeats 1000000 in

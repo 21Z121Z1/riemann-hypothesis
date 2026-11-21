@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SuccessiveMinima.DefsMink
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Etale.Weakly

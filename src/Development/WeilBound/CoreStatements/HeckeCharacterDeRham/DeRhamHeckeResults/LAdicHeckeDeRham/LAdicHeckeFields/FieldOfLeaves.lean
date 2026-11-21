@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateIterateLimitCongruenceStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateScaledIterateTendsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateSeriesCommuteLinearStatement

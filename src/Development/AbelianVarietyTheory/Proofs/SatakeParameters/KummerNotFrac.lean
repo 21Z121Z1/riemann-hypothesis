@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedShiftFixedRatioConstDomainStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsUnitOfStableLineStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClosEqZeroOfMulMemStatement

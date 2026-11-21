@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowerBasisOfCharpolySeparable
 import Mathlib.RingTheory.Artinian.Instances
 import Mathlib.RingTheory.PicardGroup

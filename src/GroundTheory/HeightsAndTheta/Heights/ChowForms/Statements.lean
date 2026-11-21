@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.NumberTheory.Padics.PadicIntegers

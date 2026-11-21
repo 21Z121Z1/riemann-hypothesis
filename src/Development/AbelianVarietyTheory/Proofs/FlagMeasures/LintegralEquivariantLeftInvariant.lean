@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InstSecondCountableSub
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.DiscreteSpectrumKFiniteDecomposition
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactHaarRightInvariantInst

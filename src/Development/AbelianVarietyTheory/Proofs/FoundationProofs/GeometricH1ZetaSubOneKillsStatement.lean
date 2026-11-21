@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricH1ZetaSubOneKills
 open GlobalTheory.K5
 set_option maxHeartbeats 1000000 in

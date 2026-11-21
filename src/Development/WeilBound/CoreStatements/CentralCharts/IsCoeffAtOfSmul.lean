@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CentralCharts.AnalyticAtEval
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres

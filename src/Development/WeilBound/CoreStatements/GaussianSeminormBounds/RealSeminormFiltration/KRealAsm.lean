@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorIrreducibleModules
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyFinitePiTensorSumOfFactorOperators

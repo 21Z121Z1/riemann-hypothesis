@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightRegularRepresentationUnitaryMulContinuous
 open MeasureTheory Formalism.MainNotions.S
 open scoped InnerProductSpace

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairRestrictionGlobalFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPairDescentModelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceNondegeneratePartialFourierIntegralStatement

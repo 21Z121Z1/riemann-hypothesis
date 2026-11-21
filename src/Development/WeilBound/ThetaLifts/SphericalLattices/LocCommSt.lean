@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SphericalLattices.LocModSt
 
 noncomputable section

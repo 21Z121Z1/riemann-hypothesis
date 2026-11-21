@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecMapCompAppLE
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

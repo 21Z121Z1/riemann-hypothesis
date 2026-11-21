@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicOfRegularFunctionStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.AnalyticOnNhdFinChartIff
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory Matrix NumberField

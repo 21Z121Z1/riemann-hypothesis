@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.KerIdealCompOfSurjective
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsWeilFunction
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.WeilIsGrpPullbackIff

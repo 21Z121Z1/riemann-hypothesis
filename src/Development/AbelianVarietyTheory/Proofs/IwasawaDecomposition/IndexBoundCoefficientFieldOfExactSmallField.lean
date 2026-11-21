@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldTies
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootOneMemOfIsRayFieldIn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContainsRayFieldSub

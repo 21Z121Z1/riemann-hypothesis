@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.SatakeTriangular
 import GroundTheory.AutomorphicForms.Spherical
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsSideLast

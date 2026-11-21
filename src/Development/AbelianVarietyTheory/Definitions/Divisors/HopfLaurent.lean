@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.TrivSqZeroExt.Basic
 import Mathlib.AlgebraicGeometry.Group.Affine
 import Mathlib.RingTheory.HopfAlgebra.MonoidAlgebra

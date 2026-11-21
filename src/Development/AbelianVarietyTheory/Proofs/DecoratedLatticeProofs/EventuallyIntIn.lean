@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.Chebotarev.CyclotomicIrreducibleOfForallIsUnramifiedAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsOpenKerUnramMulTame
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt

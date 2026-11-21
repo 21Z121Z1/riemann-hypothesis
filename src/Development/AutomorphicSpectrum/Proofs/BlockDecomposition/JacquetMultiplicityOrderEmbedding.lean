@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClOfSelf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedProductDropZeroFactors
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet

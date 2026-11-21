@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicMatrixCongruenceBadPrimeIffCompletionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelElt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStarNe

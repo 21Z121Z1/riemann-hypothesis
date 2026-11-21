@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PeriodStepInvMulPointShapeStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ValuationDetStageVariablesEmbedGLEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar

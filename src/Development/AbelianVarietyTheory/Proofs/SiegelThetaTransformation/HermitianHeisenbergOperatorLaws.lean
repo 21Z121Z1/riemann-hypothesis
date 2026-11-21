@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionUnitaryGroupTestFunctionsStatement
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 open Matrix Complex NumberField GlobalTheory.SW Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.GoodAUIso
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OverRowsAndMono

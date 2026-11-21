@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherSide
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiProjPrimeImageZ
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFnDegAdjoin

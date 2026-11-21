@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.Bridge
 import Mathlib.Algebra.Category.Grp.Ulift
 import Mathlib.CategoryTheory.Abelian.GrothendieckAxioms.Basic

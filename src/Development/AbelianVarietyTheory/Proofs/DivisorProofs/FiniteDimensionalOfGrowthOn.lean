@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecZEqZeroOfGenVal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingSectionsFiniteTypeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDegreeOfNormBoundStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHolds
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RealBounds

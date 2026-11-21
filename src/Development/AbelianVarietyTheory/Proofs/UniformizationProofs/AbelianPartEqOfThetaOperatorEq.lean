@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqOfIsGenTransl
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.DegPreAbelianPartIsIntegralAndIsIntegrallyClosed
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsThetaPow

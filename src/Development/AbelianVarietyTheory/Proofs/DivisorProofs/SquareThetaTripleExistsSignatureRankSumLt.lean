@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsGLSubmatrix
 

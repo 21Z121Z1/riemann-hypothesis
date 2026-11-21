@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.Hcptgen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLev
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FamprojAlg

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MultipliableAndSgNeZero
 import Mathlib.Analysis.Calculus.LogDerivUniformlyOn
 import Mathlib.Analysis.Normed.Module.MultipliableUniformlyOn

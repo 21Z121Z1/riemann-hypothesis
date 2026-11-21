@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HasSupportOfIsSubquotientProdIrr
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeometricLemma
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPos

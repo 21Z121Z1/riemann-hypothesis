@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.Point
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.NumberTheory.LocalField.Basic

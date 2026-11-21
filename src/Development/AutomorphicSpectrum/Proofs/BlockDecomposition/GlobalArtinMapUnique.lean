@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlaceConnectedComponents.IsOpenQuotientMapArt0
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
 noncomputable section

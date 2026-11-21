@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveInstSt
 
 set_option synthInstance.maxHeartbeats 400000

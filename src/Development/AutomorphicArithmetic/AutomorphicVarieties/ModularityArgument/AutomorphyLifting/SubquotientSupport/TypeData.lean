@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.CuspidalSupport2
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.DeterminantVector
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.Isotypic₂

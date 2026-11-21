@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLinearNoetherNormalization
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalLocallyIrreducible
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHolomorphicIsolatedFibreOpen

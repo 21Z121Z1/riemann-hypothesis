@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistOfGrid
 

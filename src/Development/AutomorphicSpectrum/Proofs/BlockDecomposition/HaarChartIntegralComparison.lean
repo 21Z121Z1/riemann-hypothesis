@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DwCons
 import GroundTheory.AutomorphicForms.RealGroupsHaar
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

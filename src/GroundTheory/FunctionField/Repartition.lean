@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.FunctionField.Divisor
 import Mathlib.Algebra.Module.StablyFree.Basic
 set_option maxSynthPendingDepth 1

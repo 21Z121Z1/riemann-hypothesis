@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Comparison
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Topology
 

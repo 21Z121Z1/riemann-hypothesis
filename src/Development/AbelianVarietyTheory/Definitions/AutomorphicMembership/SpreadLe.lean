@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.RootOfUnityEightQMemCoeffGaloisSubfield
 import Formalism.LocalRingCardinality.SpanPowerMembership.FmZeroHLatEmpty
 import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow

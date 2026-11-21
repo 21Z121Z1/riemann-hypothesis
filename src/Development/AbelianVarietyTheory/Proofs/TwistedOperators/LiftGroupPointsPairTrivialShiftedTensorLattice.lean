@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RedMFrMapAdjZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormSignIndependent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThPDatumEq

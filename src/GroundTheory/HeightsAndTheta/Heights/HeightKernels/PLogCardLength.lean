@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLogCardLength
 import Mathlib.Algebra.Module.LocalizedModule.Exact
 import Mathlib.Algebra.Order.Ring.Star

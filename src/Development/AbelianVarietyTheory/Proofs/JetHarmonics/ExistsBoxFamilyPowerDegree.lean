@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.BoxProductLinearIndependent
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SecScalOfPointwise
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.RankAndGOfIsPowDeg

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.AlgebraicInfinityType.InfinityType
 import Mathlib.Tactic.ENatToNat
 

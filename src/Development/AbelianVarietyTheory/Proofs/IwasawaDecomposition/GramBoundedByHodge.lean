@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExponentialChartAtPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NegLogCoordLeRadiusStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExpCoordBoundLocalStatement

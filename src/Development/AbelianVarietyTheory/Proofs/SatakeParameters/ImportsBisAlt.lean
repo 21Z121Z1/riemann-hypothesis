@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscreteSelfDualStrongMultiplicityOne
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary

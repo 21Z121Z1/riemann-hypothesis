@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.ModerateCoefficientPositivity
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.GramFlowTransform
 import Mathlib.Tactic.ENatToNat

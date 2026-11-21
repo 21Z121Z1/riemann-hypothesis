@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.H1MapSubgroup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteContinuousCocyclesLocalGaloisRep
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCastPowNeZero

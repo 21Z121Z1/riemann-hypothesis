@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LamObj
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.CMObjBundlePull
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ProdSurjectiveGeometricPoints

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.SameUpToScalars
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.ConjugatePreservesWeightFiltration
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.Origin
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.ConjPushMat

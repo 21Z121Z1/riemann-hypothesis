@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinC
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Tactic.Monotonicity.Lemmas

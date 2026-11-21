@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.YangianSpanCharacter.StatementY
 
 namespace Formalism.YangianSpanCharacter.Y

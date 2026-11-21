@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LamV
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCompletionEquiv
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FrobOrderSpec

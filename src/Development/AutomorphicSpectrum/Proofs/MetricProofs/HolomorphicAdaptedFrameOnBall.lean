@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAdaptedFrameBisStatement
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PosSemidefOfIntQuadNonneg
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicEigenProjectionOnBallStatement

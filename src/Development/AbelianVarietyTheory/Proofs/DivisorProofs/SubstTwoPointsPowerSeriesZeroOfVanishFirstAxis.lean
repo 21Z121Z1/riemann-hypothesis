@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetFactorDepthInChartChartIndependent
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RelatedMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivAt0SubstLinearLipschitz

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ReBaseUniq
 import Development.AutomorphicArithmetic.LocalEmbeddings.ReBaseReal
 import Development.AutomorphicArithmetic.LocalEmbeddings.ReBaseArch

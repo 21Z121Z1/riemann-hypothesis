@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.FinIdemSmulOfReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDetSmulSubOne
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.QInertHolds

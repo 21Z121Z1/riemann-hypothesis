@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.PolNorm
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.WeakRes
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.StepLift

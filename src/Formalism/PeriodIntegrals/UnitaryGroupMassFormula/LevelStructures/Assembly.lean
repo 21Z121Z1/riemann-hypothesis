@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.InLevelSAtOfParts
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.KSpTop
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.ProdNH

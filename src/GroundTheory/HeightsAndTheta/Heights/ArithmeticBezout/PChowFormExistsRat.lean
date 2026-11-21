@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.MemConePointsSpanX0
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PGenericFibreIdeal
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PIntChowFormExists

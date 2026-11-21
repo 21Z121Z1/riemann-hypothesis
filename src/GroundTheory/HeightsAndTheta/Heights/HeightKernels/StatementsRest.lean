@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KernelsRest
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Inhabitants
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.RestCutBasic

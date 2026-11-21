@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.CohTrivial
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.C1FieldNormSurjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.COnePropertyFiniteExtensionStatement

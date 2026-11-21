@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPullDegEquivApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CarriesAtRev
 

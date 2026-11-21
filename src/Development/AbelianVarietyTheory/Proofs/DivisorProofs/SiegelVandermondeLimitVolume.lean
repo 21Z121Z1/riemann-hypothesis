@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightsSumToVolumeProportionalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestClassSelfIntersection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticDegreeVandermondeSumStatement

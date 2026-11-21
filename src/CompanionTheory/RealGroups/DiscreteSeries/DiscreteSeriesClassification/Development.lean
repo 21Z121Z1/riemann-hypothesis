@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.InConeRefl
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.ExistsMu
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Exists

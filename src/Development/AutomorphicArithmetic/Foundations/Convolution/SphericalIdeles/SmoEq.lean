@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SphConj
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.IsoEq
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.JacquetShalikaRigidity

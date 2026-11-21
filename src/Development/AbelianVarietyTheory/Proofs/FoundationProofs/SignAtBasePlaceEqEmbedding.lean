@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LiftWeightComplexPointEqTwist
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic

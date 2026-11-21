@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimes
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepColWPinned
 

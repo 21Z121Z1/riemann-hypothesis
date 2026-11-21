@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPrimitiveValueOfRingElementPsiRelation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsoOfJoinGen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass

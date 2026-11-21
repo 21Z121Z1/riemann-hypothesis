@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.Brauer.TensorSimple
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagHermitianTrivialOfSumFourSquares
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTripleTrivializationsDifferByGroupPoint

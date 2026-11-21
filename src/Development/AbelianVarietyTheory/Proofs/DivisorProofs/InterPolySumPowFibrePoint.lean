@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsX
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InterNumRedCloPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InterPolyHomog

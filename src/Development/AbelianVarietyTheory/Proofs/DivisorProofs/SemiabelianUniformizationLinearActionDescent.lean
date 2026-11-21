@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SamePolarisedDataUniformiseFiniteExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TqOfGtCoord
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinExtCompIsPullDeg

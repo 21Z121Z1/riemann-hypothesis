@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.CovolumeGram
 import Mathlib.MeasureTheory.Group.GeometryOfNumbers
 import Mathlib.RingTheory.Etale.Weakly

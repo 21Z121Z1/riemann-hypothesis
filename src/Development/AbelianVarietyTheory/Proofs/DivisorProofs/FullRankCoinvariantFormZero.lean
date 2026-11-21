@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantSesquilinearNontrivialCharStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantSesquilinearUnitaryCharStatement
 open scoped TensorProduct NNReal Matrix

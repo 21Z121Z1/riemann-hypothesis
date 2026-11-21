@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.ExistsDenFin
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.HeckeA
 

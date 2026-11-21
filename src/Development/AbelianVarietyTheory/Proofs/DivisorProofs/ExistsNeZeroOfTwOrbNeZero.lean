@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLInvolutive
 
 open NumberField IsDedekindDomain Polynomial Filter

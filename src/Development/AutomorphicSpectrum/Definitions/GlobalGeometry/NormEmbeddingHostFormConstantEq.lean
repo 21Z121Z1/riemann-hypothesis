@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AbsAZero
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.ExistsCtxOkOfPins
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLevelSubgroup

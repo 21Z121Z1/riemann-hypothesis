@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SobolevSpaceCompleteStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightWordLaplacianPowerBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LaplacianCasimirRelationStatement

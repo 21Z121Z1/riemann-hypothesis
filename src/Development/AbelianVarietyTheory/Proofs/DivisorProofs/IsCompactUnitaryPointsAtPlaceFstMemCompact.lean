@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvMemIntV
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Topology.Connected.Separation

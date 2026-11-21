@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.CommuteTheta
 import Development.WeilBound.ThetaLifts.LatticeBasics.BadStmt
 import Development.WeilBound.ThetaLifts.LatticeBasics.SchrUnit

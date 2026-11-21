@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsStrictlySemistableAlt
 import Mathlib.Algebra.Homology.HomotopyCategory.HomComplexCohomology
 import Mathlib.AlgebraicTopology.AlternatingFaceMapComplex

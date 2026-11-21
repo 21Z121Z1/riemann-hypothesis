@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.WhitLeOneOfDict
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.UnipBEqUnipotent
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.WhittakerCuspidal.RankDual

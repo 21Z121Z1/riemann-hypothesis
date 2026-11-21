@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.GenSpecV
 import Formalism.LocalToGlobal.ProjectiveLattices.GenFrPfB
 import Formalism.LocalToGlobal.ProjectiveLattices.GenSpecLocFrM

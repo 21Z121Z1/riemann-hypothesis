@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSubMemEigW
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SplitHermitianGeneratorsExistStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FamilyHodgeLatticeDataStatement

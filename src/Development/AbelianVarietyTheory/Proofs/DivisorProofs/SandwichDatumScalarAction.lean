@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MuCoeffZeroNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusOfPadic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrder

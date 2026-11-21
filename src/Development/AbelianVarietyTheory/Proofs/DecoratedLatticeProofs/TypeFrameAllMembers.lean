@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DegreeHypothesisAllMembersStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DataNonvanishingAllMembersStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RankConditionAllMembersStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCompactParahoricLevelAndContainsLifts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodFiniteOfHcFinite
 

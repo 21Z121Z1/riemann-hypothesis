@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationRingDominatesPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagTorusFrameSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagTorusEigenFrameCompatStatement

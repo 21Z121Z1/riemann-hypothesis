@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VdivLnIdFalse
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

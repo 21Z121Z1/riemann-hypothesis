@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.NormDetInf
 import Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef
 import Formalism.LocalToGlobal.LatticeGeometry.AmpleOnAbelianBase

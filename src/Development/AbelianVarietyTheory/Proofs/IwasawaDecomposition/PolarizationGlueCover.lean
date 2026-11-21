@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.NotIsProjOverAffineLine
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDivisorArcBlowup
 open AlgebraicGeometry CategoryTheory Limits NumberField

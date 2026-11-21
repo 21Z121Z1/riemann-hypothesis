@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsModelPresentingDivisor
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalSystemModelMap
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField IsDedekindDomain

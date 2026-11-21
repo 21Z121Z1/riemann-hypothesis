@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.PowIndexTorsionFiniteKerRange
 open NumberField IsDedekindDomain Polynomial GlobalTheory.QNorm GlobalTheory.CNorm
 open scoped WithZero TensorProduct

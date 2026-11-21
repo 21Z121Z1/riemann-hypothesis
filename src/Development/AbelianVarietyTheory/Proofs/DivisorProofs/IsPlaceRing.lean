@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ConjugateOrderData
 

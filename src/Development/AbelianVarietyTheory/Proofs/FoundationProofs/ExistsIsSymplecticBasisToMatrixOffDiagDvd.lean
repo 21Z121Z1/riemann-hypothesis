@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DualRestrictSurjectiveOfIsTorsionFreeQuotient
 import Mathlib.LinearAlgebra.BilinearForm.TensorProduct
 import Mathlib.RingTheory.Henselian

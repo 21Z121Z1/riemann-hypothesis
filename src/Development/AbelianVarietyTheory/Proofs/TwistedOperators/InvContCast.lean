@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefPerEqGenPer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PosDefOfNode
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselPeriodCorankConvergesColumn

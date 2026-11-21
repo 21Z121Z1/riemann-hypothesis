@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionNonzeroChartOfEffectiveClassStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEffectivePicClassAddIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEffectivePicClassPullbackVeryAmpleStatement

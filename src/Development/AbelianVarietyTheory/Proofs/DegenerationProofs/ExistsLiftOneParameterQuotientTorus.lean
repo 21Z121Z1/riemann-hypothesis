@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsLocalUnitOfWeight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UniqueFactorizationMonoidAddMonoidAlgebraOfFree

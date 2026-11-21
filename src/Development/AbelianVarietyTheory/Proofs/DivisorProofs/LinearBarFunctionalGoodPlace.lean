@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitDetOfCartan
 import Development.AbelianVarietyTheory.Definitions.Divisors.PairsOfSquareTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExistsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsSncModel
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs

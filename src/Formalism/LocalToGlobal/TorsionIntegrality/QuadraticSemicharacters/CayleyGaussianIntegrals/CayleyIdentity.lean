@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.IsSemiChar
 import Mathlib.Analysis.InnerProductSpace.Spectrum
 import Mathlib.Tactic.ENatToNat

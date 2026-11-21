@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFlagMinorsTrdeg
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFlagPivotIdentity
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFlagPivotAlgIndep

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaIntegralCompare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchHeisenbergDerivativesExist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinHasTemperateGrowth

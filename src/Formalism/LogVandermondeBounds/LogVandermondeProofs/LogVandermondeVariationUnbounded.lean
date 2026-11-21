@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.LogVandermondeVariationUnbounded
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.Harmonic.Bounds

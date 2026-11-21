@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 open AlgebraicGeometry CategoryTheory NumberField Matrix

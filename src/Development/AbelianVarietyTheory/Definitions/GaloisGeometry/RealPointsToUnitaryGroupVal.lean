@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FinrankPartTrivialMulRel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankGroupCohomologyFunRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianCongrOfPositiveIndexEq

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExMapAlt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StRatioAlgDep
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected

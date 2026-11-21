@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsCoprimeTwoSubRtTwoAddRt
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

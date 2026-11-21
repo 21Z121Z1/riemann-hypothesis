@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormDescentIdealSheafFiniteOpenClosedImage
 open AlgebraicGeometry CategoryTheory Limits IsLocalRing
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.LocM

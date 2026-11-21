@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.SplittingFieldIsoQuadratic
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.KstarRam
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Cases

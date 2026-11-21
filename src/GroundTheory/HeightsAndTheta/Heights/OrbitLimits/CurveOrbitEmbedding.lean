@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.CurveCountObjects
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotMemOfNonZeroDivisor
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg

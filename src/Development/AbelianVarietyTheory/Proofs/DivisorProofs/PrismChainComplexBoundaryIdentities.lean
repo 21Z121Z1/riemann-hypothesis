@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AlternatingSumZero
 import Mathlib.Data.Finsupp.Pointwise

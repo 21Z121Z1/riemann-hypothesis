@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaExponentIdentities
 import Development.AbelianVarietyTheory.Definitions.Foundations.NonnegOfMemCStarSet
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HalfLatticeTypes

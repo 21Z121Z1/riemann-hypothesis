@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ExistsIsRegularAppendOfModDepthGE
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bridge
 import ReciprocityTheory.CommutativeAlgebra.MaximalIdealSquares.RingKrullDimQuotientSpanSingletonAddOne

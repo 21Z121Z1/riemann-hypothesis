@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.HostNumberS
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Counts
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.AbstractCount

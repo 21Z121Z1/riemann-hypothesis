@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.FacWithCsNonneg
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsCharsPrime
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.OrthonormalBaseFrameNeg

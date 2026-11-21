@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.KTypeIntDomStatement
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.Weight
 import Std.Tactic.BVDecide.Normalize.Bool

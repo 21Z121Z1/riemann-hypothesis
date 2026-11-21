@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalGenDefs
 import GroundTheory.GlobalFields.CompletionAtPlace.Inertia
 import GroundTheory.LocalFields.UnramifiedHensel

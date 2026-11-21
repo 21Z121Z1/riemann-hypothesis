@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CPoly
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonomialCoefficientComparison

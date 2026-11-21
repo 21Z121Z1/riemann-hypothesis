@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.CpRegPhRegOfNonneg
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.IsCompactImageClosureMid
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PBoundedGlue

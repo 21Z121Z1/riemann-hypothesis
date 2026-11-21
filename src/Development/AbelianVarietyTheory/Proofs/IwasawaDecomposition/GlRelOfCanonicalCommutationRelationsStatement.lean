@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlRelOfCanonicalCommutationRelations
 open Matrix GlobalTheory.Mem.Lift
 set_option maxHeartbeats 1000000 in

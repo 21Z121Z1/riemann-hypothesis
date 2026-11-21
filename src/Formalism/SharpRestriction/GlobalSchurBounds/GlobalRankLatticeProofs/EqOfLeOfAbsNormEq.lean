@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.DirichletDensity.DirichletDensityProofs.QuadDiscr
 import Mathlib.Data.Int.Lemmas

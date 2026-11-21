@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockDegreeOne.EqZeroOfFockInnerSelfRe
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockDegreeOne.OmEDiagMonomial
 import Mathlib.Algebra.Order.Ring.Star

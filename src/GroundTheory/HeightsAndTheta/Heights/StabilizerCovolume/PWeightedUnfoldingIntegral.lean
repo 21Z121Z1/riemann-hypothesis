@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.WeightedUnfoldingIntegral
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.MeasureInterEqOfIsFundamentalDomain

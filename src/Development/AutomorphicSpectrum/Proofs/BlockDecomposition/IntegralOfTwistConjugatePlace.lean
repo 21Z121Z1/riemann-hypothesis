@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemKUConjOfComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocEqOneOfMemGam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjSrcMemOrb

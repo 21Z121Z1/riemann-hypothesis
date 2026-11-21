@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointAtZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomExtTensorAlt
 import Mathlib.RingTheory.PiTensorProduct

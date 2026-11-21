@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DescentEVMemLevel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JointStarProductNonvanishingStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.JointOfFamilyAndServiceStatement

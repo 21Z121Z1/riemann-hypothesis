@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.Lemma5aAt
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.Derivation.Lie

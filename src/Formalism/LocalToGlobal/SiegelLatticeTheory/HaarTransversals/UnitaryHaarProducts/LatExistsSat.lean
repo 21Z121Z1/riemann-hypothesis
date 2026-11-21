@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.LatExistsDefs
 import Lemmata.MiscLemmasD.Imports
 import Mathlib.RingTheory.Henselian

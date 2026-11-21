@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CiEigVal
 
 open AlgebraicGeometry CategoryTheory NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.CommutativeAlgebra.MaximalIdealSquares.RingKrullDimQuotientSpanSingletonAddOne
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.CategoryTheory.Abelian.Projective.Dimension

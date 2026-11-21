@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfSecAlgTop
 import Mathlib.RingTheory.WittVector.IsPoly
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite

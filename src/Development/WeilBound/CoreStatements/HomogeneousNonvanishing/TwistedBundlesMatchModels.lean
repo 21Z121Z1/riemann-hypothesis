@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EventuallyOneTmulAdicIntegralCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieLatticeAgree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalCodimOneStalkDvrStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.AnalyticClassNumber.DirichletHecke
 set_option maxSynthPendingDepth 1
 

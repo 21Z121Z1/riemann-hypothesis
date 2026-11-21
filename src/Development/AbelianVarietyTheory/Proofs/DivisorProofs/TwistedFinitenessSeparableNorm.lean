@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwFin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigResIterateEqSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigKQMemIntKQ

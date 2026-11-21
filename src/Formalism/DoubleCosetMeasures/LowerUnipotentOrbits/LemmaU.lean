@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DoubleCosetMeasures.StatementZ
 
 open MeasureTheory Matrix ComplexConjugate

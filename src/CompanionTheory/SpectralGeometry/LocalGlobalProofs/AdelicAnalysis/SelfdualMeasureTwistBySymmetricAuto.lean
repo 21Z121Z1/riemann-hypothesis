@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

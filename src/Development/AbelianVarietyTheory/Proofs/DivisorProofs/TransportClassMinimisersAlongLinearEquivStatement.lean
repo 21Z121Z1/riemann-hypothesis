@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportClassMinimisersAlongLinearEquiv
 open GlobalTheory.PolFan GlobalTheory.LocM
 set_option maxHeartbeats 1000000 in

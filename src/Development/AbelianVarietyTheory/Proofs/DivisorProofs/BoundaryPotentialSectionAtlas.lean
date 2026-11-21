@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncAtlasRankDropPotential
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundarySectionPullbackBound

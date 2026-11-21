@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDegZeroLoc
 import Mathlib.RingTheory.OrderOfVanishing.Basic
 set_option maxSynthPendingDepth 1

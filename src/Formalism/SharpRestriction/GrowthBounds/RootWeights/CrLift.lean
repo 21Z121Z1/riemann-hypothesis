@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.CasimirIsotypicNoHigherWeight
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.CrAevalStable
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.V2repResIsGLRep

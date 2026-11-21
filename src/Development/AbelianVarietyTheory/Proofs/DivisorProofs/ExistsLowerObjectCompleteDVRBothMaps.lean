@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompBEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OnTorusComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalFamilyLatticeIdentificationEqIdStatement

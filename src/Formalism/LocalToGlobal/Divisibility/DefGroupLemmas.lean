@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber

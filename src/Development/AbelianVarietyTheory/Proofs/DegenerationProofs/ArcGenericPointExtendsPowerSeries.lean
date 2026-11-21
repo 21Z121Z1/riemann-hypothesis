@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AdicCompleteness.IsAdicCompleteComapConstantCoeff
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericSectionExtendsNormal
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenOfFrames

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescentMapContinuousSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralMultipleExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts

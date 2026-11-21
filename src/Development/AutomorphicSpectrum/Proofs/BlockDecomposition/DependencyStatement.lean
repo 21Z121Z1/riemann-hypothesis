@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.CechHOneVanishesOnOpenOfIsAffineOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TrMulTrInv
 

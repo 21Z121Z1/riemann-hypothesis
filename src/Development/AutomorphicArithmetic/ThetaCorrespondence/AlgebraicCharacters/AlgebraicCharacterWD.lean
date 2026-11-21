@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.ContinuousRankOneRep
 import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.ChIndep
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.AlgebraicCharacterWD

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsOrthonormalBasisEigenOfInnerMap
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralCexpGaussianPlaneStatement
 import Mathlib.Data.Finsupp.Pointwise

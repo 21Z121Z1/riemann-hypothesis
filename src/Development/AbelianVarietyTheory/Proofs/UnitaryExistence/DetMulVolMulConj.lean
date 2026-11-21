@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinrankEqOfInjectiveOfSpan
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondJetsMoretBaillyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotingOfPublishedInputsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeFromHeightTheoremsStatement

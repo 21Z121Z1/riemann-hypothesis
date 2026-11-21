@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.PiTensorProduct

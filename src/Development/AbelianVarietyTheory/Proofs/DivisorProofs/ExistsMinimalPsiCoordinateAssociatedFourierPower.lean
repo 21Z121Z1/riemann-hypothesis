@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaConstantFourierPartsBoundedClassMinimaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormLeOfMemMapPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTrivialisationCoordinateNeZeroClassicalStatement

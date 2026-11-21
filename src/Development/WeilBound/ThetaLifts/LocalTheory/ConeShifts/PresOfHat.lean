@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.StarMemSchA
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ArchCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryDoubledBlockDiagOne

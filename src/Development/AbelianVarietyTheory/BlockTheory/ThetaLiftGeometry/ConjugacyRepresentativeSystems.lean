@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataKerI
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter

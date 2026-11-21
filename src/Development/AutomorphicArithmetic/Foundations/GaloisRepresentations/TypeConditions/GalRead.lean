@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.DzBigDef
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.Triple
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenExport

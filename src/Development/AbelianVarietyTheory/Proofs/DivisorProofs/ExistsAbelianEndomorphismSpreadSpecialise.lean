@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MorphismsSpreadOutToFgSubalgebra
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.OActDescendOfGenerators
 import Mathlib.FieldTheory.PurelyInseparable.Exponent

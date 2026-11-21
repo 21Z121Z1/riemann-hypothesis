@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.Sublevel
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.VertFinite
 import Mathlib.Algebra.Order.Star.Real

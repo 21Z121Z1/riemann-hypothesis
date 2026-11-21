@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VerticalModelBasisEmbeddingDecomp
 
 set_option autoImplicit false

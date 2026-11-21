@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AnalyticDoublingMapLocalInverse
 open Set Filter Topology Metric
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliKFiniteCoefficient
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsKTypeNonzeroBessel
 import Formalism.HermitianCurvature.RealInputsClosedAdmissibleSettings

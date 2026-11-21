@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveCohomologySheaves
 import Mathlib.Tactic.Polynomial.Basic
 

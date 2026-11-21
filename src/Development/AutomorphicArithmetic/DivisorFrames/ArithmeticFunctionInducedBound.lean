@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.VertCmp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonomialEqProd
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField IsDedekindDomain

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.HermRank
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsMaximalCompactInfinite
 import Development.WeilBound.ThetaLifts.FrameEstimates.LatArch

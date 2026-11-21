@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.CardChoiceLe
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.IteratedDerivListBound
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.OneAddPowSubOneLe

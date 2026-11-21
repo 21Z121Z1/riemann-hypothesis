@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ComapPowLe
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LenFgQuot
 import Mathlib.Tactic.ENatToNat

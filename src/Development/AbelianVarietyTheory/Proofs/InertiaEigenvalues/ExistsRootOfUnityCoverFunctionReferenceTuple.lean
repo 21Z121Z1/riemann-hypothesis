@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsThClsDGalRul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjFourierCoefficientsConjugateTuplesStatement

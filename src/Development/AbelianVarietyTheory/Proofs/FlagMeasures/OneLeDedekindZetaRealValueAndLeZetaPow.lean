@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsIdealInClassOfNormLeSqrtDiscr
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum
 import Mathlib.NumberTheory.LSeries.Dirichlet

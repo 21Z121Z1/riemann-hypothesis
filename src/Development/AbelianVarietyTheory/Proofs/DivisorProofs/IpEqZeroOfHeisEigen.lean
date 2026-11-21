@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SphericalZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinPt

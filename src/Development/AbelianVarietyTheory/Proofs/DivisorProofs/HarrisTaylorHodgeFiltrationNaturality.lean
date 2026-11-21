@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumProjSingle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSiegelObjectOddLevelRigid

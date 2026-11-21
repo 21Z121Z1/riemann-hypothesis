@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InfinitesimalCharacterConjugateStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRightHaarMeasureStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvariantHermitianFormStatement

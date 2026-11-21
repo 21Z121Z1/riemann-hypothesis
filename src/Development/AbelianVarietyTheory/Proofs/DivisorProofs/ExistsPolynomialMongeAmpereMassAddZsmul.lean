@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IntegrableOnTargetOfTsupport
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.Statement
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.NumberField.AdeleRing

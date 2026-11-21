@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Statements
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLocalGraphMass
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

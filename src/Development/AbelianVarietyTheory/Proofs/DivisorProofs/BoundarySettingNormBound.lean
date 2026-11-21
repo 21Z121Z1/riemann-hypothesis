@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryDataToroidalSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPositivePotentialCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialsBoundedByPositiveStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.OrbitMeasure
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.HermitianFormStandardFrameVanishes
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IndexFormulaOfSplit

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.CotangentSumStatement
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Cotangent
 import Mathlib.RingTheory.WittVector.IsPoly

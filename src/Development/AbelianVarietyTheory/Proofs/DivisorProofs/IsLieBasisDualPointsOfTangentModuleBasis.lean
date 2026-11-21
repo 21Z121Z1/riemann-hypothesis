@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TvELeft
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SpMapComp
 

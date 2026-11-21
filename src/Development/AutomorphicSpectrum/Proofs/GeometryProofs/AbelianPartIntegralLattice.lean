@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValues
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartBaseChangeAltBis
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelBaseChangeExistsStatement

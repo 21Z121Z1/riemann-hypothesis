@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.TorsionReduceInjective
 import Mathlib.Algebra.AffineMonoid.Basic
 

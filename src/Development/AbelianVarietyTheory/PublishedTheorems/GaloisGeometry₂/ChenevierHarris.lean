@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualIsConjByOne
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTheRecOfIsRec
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal

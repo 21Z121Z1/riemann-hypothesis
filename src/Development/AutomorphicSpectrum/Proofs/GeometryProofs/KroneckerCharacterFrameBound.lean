@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatFirstFromResolutionAndGagaStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatDegreeHoldsStatement

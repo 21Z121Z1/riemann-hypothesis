@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SelfDualLoc
 

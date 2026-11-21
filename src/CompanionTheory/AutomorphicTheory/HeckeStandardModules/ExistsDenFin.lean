@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.EqZeroOfCompAt
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact

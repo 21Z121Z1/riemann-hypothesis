@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTraceFiniteEtaleGaloisCoverLadicStatement
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC
 

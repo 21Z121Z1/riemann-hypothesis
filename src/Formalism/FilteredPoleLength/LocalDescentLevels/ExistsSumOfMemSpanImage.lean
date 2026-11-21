@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FilteredPoleLength.ReducedBasisBounds.TransvectionIsometry
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.WittVector.IsPoly

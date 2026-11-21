@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.InseparableFrobenius
 import GroundTheory.GlobalFields.ComplexMultiplication.DualDescent
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.SupersingularPowField

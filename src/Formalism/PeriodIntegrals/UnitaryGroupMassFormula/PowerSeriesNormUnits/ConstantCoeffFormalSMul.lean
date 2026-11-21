@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.PhNormUnits
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.PiTensorProduct

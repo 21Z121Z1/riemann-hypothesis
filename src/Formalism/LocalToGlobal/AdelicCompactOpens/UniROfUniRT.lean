@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsLevel
 import Formalism.LocalToGlobal.AdelicCompactOpens.GLintCompactOpen
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut

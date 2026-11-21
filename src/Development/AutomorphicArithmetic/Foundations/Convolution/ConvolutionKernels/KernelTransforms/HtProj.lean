@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdelicNormDetLeHeightPow
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsMeasure

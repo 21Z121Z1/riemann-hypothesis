@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GFrames
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Monotonicity.Lemmas

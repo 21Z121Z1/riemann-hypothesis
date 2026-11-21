@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSheet
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
 set_option maxSynthPendingDepth 1

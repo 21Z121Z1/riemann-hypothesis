@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EighthPowerTraitUniformisationLatticePowEightStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UTorsClosed
 import Development.AbelianVarietyTheory.Definitions.Divisors.IdlAlongNeTopOfValOn

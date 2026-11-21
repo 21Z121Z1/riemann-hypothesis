@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.GeoTransport
 import GroundTheory.GlobalFields.SemilocalAlgebras.Galois
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

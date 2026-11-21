@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HarmonicAnnulusMaximumPrinciple
 open MeasureTheory Filter Topology GlobalTheory.CompanionTheory.Ar.PB.Flat
 open scoped ContDiff

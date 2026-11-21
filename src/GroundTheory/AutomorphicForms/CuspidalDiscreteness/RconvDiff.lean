@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.AltSum
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.IsHilbertSchmidtOfAeEqDual
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Smoothing

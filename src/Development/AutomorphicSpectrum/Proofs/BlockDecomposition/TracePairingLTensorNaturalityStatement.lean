@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingLTensorNaturality
 open TensorProduct CrystallineSemistableComparison.Pb.Psi
 set_option maxHeartbeats 1000000 in

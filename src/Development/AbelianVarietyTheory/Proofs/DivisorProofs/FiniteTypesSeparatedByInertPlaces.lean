@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSeparatingInertPassageCarriedByFormsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPartnerCombinationGoodInertLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointInjectiveOnPart

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.IsometricPeriodsOfHypotheses
 
 open Module NumberField IsDedekindDomain

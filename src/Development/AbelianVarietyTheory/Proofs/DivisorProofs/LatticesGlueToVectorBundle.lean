@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeDescendsToSubfieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplittingOfLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSplittingRestrictsStatement

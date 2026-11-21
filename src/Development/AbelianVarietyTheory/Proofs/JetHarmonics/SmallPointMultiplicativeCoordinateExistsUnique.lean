@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UwEllipticFlow
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RingHomPointBijective
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CpTransportedTaylorSeriesInChartRingHomLaws

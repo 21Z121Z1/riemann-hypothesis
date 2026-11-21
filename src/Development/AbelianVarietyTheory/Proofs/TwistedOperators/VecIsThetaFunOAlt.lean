@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLowestKTypeFockMapThetaVectors
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelNormConstantSpec

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroOfRefinedInputs
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.SWEqSOf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesTransport
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PowerSeries.NoZeroDivisors

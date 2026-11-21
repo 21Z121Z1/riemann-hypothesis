@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GJGlobalUnfold
 import GroundTheory.AutomorphicForms.GL2.GJGlobalMean
 import GroundTheory.AutomorphicForms.GL2.GJGlobalRank

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LowKSubSingleSqrtCkvLeStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CompactCasimirBoundProjectionDualTensorStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WtNearLeOfAddDistLe

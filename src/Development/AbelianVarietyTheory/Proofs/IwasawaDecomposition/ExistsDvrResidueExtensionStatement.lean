@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDvrResidueExtension
 open IsLocalRing GlobalTheory.LN
 set_option maxHeartbeats 1000000 in

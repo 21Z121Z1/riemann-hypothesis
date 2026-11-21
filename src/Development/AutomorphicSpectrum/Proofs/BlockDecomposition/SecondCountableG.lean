@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveSolutionExistence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveKernelExistence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAtOfSmooth

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NonemptyProjCoordsConvergentCoefficients
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFormalConvergence
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.CoordsDetermineFamily

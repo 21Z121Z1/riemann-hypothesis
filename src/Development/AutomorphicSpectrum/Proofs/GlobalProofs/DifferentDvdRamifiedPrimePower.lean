@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PrimePowerNotDvdDifferentStatement
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTer
 

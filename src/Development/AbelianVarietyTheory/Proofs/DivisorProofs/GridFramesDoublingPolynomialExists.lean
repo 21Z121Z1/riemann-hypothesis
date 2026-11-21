@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.RegConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FstIsFinFFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinFSndFrames

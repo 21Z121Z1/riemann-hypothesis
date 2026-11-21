@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GodementSectionLocal
 set_option maxSynthPendingDepth 1
 

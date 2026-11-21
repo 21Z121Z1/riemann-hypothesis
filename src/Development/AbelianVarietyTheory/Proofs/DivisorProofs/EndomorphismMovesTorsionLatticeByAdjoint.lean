@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnimodMod
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FunctorialOfUnif

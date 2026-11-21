@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.JoinCastSucc
 import Mathlib.RingTheory.Polynomial.Resultant.Basic
 

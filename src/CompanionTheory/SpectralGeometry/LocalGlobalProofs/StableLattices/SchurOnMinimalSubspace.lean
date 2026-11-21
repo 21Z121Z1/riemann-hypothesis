@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HilbertSchurOfAdjointClosed
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 open CompanionTheory.D.gk.admitted (stdPoly)

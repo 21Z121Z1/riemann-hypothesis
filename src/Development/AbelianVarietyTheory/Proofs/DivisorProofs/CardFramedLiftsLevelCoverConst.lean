@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCoverFibreTorsorTrivialLevelChangesStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsPullOfMoveInv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedBlockSelfApply

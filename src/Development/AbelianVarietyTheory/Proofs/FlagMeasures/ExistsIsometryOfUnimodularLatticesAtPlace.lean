@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsCoprimeScaledIsometrySameSignature
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPositiveAdd
 import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds

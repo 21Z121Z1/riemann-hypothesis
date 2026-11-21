@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsMulStarEqOfNormOneUnramifiedQuadraticStatement
 import Std.Tactic.BVDecide.Normalize.Prop
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology

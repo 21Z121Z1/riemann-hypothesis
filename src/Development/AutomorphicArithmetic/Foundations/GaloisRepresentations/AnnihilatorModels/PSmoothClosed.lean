@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.SameNormBasic
 import Mathlib.RingTheory.Smooth.IntegralClosure
 import Mathlib.Tactic.Polynomial.Basic

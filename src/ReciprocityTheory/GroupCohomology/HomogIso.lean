@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GroupCohomology.HomogExistsStatement
 
 namespace ReciprocityTheory.Coh

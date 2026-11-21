@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesRealizationOfPublishedStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisHodgeOfCuspidalStatement

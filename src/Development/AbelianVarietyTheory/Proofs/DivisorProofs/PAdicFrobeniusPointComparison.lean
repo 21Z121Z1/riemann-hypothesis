@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducesPl
 
 open CategoryTheory Limits AlgebraicGeometry NumberField IsDedekindDomain

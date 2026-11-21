@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConstMemBddAut
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula

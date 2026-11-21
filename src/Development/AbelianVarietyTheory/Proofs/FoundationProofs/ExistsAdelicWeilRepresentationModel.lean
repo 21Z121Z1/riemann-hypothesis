@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsExtensionOfDense
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdelicHermitianCharacterPairingPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedStandardAdelicLatticeSelfDualStatement

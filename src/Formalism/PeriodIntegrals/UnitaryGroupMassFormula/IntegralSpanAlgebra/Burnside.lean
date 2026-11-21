@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UMultOne
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 import Mathlib.RingTheory.PicardGroup

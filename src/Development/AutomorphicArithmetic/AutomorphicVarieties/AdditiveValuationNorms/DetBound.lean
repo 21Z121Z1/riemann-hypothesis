@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.DetFactor
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.PadicUnitsDistanceLeMax
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.NormVal

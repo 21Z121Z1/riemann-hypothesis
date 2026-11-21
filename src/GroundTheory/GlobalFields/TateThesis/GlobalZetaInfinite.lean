@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
 import GroundTheory.GlobalFields.Adele.IntegersLattice
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic

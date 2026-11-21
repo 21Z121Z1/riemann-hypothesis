@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadicalUnipotentFirstBasisEqOne
 
 open Matrix Formalism.QuantumDeterminants Formalism.FourierDecayAlt

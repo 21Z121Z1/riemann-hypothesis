@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IterateExamples.Statements
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Tactic.Monotonicity.Lemmas

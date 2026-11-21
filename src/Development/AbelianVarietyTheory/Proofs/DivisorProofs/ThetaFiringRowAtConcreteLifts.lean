@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaPToLiftReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResInjLToLiftReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaAdjointAtLiftEqLowestKTypeRestrictionStatement

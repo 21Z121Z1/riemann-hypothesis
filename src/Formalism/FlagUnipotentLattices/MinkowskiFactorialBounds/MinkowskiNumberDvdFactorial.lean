@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.ExistsHasLeadingCoeffOfMemSpanBelow
 import Formalism.HyperbolicPlaceProducts.SecondLevelArithmeticNorm
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

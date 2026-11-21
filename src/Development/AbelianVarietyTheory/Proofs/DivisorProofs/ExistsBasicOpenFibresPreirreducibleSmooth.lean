@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreirreducibleFibreStandardEtaleSpreadsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RangeComapIncludeRightFieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreirreducibleTensorLocalizationAwayStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.TruncLogEqOfPowEqZero
 import Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

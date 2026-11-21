@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.XLaterHarmonicNotMemSpan
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsNabTwist
 

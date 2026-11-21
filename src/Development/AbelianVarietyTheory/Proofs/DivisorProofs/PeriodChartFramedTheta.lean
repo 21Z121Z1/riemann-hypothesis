@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEquivOfExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LePreimageOfFst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannDataLinearChart

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTanBasisOfUniqueCombinationStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSectionOfIsIsoRestrict
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralFrameValuationBoundStatement

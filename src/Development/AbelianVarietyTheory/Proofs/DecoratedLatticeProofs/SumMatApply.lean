@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SphericalVolumeLift
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ContinuousResTSymm
 open scoped ComplexConjugate Matrix NNReal

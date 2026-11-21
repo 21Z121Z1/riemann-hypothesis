@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenIntertwinerModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinHasTemperateGrowth
 open scoped TensorProduct NNReal Matrix

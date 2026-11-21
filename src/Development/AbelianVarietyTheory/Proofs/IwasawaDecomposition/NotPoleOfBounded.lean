@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FrameMatrixHasSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NomePowerSeriesDvdOfSumBoundedStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsChartOfIsLocalRing

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocallyConstantTestRepresentationTensorProduct
 open GlobalTheory.JR GlobalTheory.JR.WeilProd
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PtHomInjective
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardLatticeQuotIdeal
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder

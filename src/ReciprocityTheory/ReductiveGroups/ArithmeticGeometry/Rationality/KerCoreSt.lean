@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FiniteDetectStatement
 
 namespace ReciprocityTheory.ChartRestriction.G.FreeQuotientRank

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
 import Mathlib.Tactic.Polynomial.Basic

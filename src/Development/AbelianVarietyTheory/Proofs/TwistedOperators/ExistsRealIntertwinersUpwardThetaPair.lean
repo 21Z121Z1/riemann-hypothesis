@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ChainParSucc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsItWOfGlobIt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaVacuumCharactersRealPlacesStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.StandardCharacterExists
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WeakApproximationGL
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WhittakerVanishingImpliesZero

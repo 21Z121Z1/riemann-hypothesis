@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualFlagGradedIsometricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualFlagBottChernSumStatement

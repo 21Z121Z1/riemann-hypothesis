@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 open Formalism.MainNotions.S.Loc GlobalTheory.HL
 open scoped Pointwise

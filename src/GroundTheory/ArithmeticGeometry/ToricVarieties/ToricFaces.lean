@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.ToricVarieties.IsFaceOfIffExistsEqExposedFace
 import GroundTheory.ArithmeticGeometry.ToricVarieties.Lattice
 

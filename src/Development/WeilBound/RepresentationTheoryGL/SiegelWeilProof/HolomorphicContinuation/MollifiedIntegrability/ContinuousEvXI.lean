@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.MollifiedIntegrability.DensDefs
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsBisMore
 import Mathlib.Algebra.Order.Star.Real

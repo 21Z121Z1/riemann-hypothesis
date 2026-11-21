@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.SiegelEisenstein.GlobalLocalFactorization
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnesRepresent
 

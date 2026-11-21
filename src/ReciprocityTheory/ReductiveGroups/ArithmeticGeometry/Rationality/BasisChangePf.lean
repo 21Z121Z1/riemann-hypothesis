@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.BasisChangeSt
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralCoeIff
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.MeanPeriodLogarithms
 import Formalism.LocalToGlobal.KernelLattices.ThDistC

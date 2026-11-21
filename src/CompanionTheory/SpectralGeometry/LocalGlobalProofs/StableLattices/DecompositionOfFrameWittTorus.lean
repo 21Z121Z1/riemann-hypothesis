@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StSandwich
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Data.Fin.Tuple.Sort

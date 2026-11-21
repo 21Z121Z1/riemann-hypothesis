@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsCompletionOfCoreSatisfyingLaws
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MemPerGrpOfIntegral
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.HarmonicGermValueChartIndependent

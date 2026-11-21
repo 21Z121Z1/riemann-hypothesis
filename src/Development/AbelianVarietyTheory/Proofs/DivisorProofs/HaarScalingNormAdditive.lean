@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceTensorProductFiniteExtension
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms

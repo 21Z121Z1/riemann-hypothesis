@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
 import ReciprocityTheory.DualLattices.UpSmith
 import Mathlib.Algebra.Module.StablyFree.Basic

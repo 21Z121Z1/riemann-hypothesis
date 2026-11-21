@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Legendre
 import Mathlib.Data.Int.Star
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.E2.Transform

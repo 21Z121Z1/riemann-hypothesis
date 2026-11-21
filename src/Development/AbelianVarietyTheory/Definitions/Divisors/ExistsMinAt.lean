@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMumfordFamOfSubsingleton
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.IsE8ThetaStructure

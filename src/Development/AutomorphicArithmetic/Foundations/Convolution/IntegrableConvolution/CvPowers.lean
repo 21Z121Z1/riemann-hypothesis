@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.CvBasic
 
 open MeasureTheory

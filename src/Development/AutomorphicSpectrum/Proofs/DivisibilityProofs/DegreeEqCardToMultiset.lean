@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.MassFormulaConjugationAction
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
 

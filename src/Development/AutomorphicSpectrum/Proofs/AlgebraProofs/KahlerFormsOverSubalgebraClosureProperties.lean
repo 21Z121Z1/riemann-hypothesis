@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DetMulMapDetEqOneOfSesq
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PowEqOneOfIsIntegralOfMulComplexConjEqOne
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RootMulComplexConjEqOne

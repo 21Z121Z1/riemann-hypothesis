@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.IsHostFrame
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompAlg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompCond

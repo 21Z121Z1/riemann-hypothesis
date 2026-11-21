@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementJCCpt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositiveDensityModerateGrowth
 

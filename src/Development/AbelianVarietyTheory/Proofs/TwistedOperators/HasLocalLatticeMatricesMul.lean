@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsRealFam
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSplit
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemOrth

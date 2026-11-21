@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SpanRangeEqTopOfIsIrreducible
 import Mathlib.Algebra.Module.StablyFree.Basic
 open scoped TensorProduct

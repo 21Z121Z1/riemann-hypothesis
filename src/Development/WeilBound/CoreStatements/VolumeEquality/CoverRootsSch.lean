@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant

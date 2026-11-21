@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverDegreeOneRealisationStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticDataFubiniStudyStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagVarietyArithmeticStatement

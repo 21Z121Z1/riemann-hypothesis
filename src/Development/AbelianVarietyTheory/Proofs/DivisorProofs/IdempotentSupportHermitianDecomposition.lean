@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelNormConstantSpec
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepsOfFiniteIndex
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemHatSwap

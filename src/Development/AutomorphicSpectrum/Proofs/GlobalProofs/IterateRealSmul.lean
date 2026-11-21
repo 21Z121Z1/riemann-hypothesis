@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AnalyticVectorExponentialSeriesStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionOfSmoothVectorStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DerivedActionAdditiveStatement

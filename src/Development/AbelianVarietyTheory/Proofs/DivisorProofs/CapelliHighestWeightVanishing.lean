@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EabIsKCInr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockFirstActionMatrixUnitEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemTensSpan

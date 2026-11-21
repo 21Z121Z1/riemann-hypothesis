@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.ClosureConjugation.GrAlg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.UnitsOneBlock
 import Std.Tactic.BVDecide.Normalize.Prop

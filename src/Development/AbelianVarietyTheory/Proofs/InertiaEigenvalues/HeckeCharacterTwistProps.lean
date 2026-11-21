@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFiniteIdeleCharAtDeterminantRoots
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsDetRoot
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt

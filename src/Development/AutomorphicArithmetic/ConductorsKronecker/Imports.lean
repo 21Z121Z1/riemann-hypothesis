@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PrimitiveCosets.RecH
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.GaloisMapComplexConjugation
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpLawAndUnitAgreeOfOpenInDescentModelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFieldPt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSemiAbelianOfCharts

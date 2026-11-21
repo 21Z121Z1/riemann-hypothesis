@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingStalkGeneric
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ValUnitNeZero
 import Development.AbelianVarietyTheory.Definitions.Degenerations.InducedModelMorphismCompStructureMap

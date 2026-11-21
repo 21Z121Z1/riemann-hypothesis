@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GoodIdempotentFixesOfOnlySeriesOfLabelActs
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameGeneratorResidual
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DownMemRecOfTies

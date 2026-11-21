@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.NefGenericLocalizeSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.NefExtendIsoSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.LocalizeBundleSt

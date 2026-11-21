@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTensElliptic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTensorBundleRigidification
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrincipallyPolarisedPowerUnimodularFormStatement

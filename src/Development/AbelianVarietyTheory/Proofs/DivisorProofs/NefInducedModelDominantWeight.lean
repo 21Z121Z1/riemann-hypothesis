@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DominantInducedModelReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjModelClosedFiberIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NefDominantWeightPositivityStatement

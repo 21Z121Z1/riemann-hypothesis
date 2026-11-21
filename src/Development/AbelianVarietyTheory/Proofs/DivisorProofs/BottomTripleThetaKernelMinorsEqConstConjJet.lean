@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMinorPolZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorNegSpaceFrameChangeConjSubst
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtOfMemGfC

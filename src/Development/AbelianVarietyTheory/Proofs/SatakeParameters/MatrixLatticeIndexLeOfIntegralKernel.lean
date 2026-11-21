@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
 import Mathlib.RingTheory.Ideal.Quotient.Index
 import Mathlib.RingTheory.PiTensorProduct

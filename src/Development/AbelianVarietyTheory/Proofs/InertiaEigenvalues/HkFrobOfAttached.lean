@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TripleAtt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Eps0UnramFrob
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoeffProdOneSubCMulX

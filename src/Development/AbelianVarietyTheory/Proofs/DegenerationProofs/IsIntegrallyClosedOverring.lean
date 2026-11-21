@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRealDimOneIsFractionRing
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPreOfAffine
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ISupNonzeroLocusSecComb

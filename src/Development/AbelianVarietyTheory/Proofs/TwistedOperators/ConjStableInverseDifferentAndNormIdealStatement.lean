@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjStableInverseDifferentAndNormIdeal
 open Formalism.BasicNotions Formalism.BasicNotions.TH NumberField IsDedekindDomain
 open scoped nonZeroDivisors

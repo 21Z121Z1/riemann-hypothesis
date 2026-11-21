@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
 import Mathlib.RingTheory.PiTensorProduct
 

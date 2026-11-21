@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.CechAugRow
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory Opposite CrystallineSemistableComparison CrystallineSemistableComparison.CH

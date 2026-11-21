@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasQMdifferentiableAndIsBoundedAtImInfty
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
 

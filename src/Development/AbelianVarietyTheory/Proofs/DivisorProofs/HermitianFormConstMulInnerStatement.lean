@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormConstMulInner
 open MeasureTheory GlobalTheory.RealWeil
 open scoped SchwartzMap

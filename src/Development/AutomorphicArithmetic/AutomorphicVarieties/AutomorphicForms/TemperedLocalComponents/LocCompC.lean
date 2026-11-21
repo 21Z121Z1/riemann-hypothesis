@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Hypotheses2
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LocIsotypic
 

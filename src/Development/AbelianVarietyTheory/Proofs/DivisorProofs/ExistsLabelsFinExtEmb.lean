@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLabelsFinExt
 import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPullFib

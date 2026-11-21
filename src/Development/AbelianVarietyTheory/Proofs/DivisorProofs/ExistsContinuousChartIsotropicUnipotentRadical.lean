@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnipotentRadicalPointWithCoords
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSkewA
 open scoped TensorProduct NNReal ENNReal Matrix

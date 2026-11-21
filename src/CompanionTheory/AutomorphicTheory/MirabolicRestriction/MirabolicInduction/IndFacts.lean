@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndIrr
 import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndDim
 

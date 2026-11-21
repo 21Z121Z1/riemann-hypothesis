@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.IsLatticeMapSubIff
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.RestHLTransport
 

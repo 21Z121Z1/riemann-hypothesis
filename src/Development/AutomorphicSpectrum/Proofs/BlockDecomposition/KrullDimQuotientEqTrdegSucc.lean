@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIntDomainDim
 import Mathlib.AlgebraicGeometry.Morphisms.Immersion
 open CategoryTheory AlgebraicGeometry

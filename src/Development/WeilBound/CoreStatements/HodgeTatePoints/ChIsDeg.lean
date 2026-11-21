@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsUnitIffUnitAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtCompLocalHomStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LocalComponentsSurjective

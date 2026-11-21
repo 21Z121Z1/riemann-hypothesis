@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkEquivInl
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
 open NumberField MeasureTheory GlobalTheory.CuspRep

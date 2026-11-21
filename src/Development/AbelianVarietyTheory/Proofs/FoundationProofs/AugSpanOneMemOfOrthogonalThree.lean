@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAugmentationSpanEqIdOnIrreducibleStatement
 import Mathlib.LinearAlgebra.BilinearForm.Orthogonal
 open scoped Matrix

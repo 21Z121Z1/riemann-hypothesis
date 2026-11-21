@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.IsOpenOfMemIrreducibleComponentsOfFinite
 import Std.Tactic.BVDecide.Normalize.Prop
 open AlgebraicGeometry CategoryTheory Limits

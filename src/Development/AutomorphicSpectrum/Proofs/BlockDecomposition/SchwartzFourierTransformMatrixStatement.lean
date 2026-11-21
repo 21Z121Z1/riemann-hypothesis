@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzFourierTransformMatrix
 open scoped Matrix SchwartzMap
 set_option maxHeartbeats 1000000 in

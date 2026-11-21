@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupOpenCover
 import Development.ResolutionOfSingularities.Foundations.Schemes.SchemeCoproduct
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth

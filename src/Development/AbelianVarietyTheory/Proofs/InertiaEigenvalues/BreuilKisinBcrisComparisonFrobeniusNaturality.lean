@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CmpSemilinearPairStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitToBFrobEisStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PhiWInclLEPowStatement

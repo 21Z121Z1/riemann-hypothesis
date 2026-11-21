@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LeviFactorCharactersSplitPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsOpenLevelGroupSubgroupOf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetScalarIdempotentValueStatement

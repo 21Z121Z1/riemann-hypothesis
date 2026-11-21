@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.LocDensFF
 import Mathlib.Algebra.Polynomial.SpecificDegree
 import Mathlib.RingTheory.Henselian

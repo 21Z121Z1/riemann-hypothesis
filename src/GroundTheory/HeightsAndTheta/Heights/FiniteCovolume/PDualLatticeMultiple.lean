@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StDualLatticeMultiple
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

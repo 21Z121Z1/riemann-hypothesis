@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.AxisPderivComp
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumSupportRename
 

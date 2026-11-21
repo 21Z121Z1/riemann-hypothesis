@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.RepresentationTheory.Subrepresentation
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLocalSubringMonicRootsResidue
 open GlobalTheory.EtC
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.IsWeightLevelAdelicLift
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.ConstantTerm
 

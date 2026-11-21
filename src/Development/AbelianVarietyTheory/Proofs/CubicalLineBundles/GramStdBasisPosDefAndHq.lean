@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountStA
 import ReciprocityTheory.SemistableReduction.LatSemiSt
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField IsDedekindDomain

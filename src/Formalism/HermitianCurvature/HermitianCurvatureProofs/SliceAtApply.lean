@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceIntCut
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.YGSlice
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaCongrRight

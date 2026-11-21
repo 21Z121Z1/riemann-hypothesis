@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StoneVonNeumannSchwartzBruhatTransverseLagrangiaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterConductorExists
 open ValuativeRel

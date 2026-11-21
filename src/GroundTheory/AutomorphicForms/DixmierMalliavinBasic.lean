@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.RealGroupsLie
 
 namespace GroundTheory.Automorphic

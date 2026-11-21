@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAlgebraMapSubEqSumConjugatesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlacesOfSamePrimeBelowStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrtApproxIntegralStatement

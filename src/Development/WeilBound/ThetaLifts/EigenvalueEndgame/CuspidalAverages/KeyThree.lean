@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.PlaneRemovalConfiguration
 
 noncomputable section

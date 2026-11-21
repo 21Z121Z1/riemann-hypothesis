@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointSpecializationCurve
 open CategoryTheory AlgebraicGeometry
 

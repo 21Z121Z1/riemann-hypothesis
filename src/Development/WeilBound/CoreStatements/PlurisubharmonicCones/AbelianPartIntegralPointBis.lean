@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.InFibreLoc
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSandwichOfHodgeTateFreeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentVectorExtendsDvrStatement

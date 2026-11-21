@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WeightOccurrence.OccSome
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HeBranching
 

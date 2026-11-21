@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ZarhinBundleKernelSecondCoordEquations
 import Mathlib.NumberTheory.NumberField.CMField
 open NumberField

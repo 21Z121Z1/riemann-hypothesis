@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BlockHodgeTateJumps
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BlockJumpCount
 

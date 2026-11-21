@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardLeOfSpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqTopOfSpanImage
 import Mathlib.RingTheory.Etale.Weakly

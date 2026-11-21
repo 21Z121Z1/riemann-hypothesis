@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiffDefs
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
 

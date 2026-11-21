@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CvRhoOfParts
 
 open Matrix MeasureTheory Filter Topology

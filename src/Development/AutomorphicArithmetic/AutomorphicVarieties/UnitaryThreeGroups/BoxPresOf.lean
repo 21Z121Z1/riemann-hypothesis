@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.BoxAbs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.BoxCount
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.FinrankKerAdRepComplexConjSubOneEqBoxDef

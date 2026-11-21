@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubNatCompSubIncl
 
 open AlgebraicGeometry CategoryTheory Limits Opposite GlobalTheory.QcSub

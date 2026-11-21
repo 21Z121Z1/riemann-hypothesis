@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransl
 import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKSValueOneOfRetraction

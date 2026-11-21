@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.LeviForms.ProjLineChartTarget
 
 namespace ReciprocityTheory.AnForm.P

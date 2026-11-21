@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.LocalHermitianForms.LocalOrbitCounts.SqrtO
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.RegularLocalRing.Defs

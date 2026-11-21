@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocalRingOfIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToLinTransposeDot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumTransport

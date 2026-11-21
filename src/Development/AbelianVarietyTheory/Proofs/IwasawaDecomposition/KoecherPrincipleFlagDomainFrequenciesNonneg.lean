@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrbitThickSt
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FjCauchyBound
 

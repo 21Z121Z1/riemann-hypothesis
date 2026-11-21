@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveLiftIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomIdPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSurjectiveGeomFibre

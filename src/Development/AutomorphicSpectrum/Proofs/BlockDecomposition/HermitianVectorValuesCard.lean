@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardNonzeroStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFibreCardZeroStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianSpaceAnisotropicUnitStatement

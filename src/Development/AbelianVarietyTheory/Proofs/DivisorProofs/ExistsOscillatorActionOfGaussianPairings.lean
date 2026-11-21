@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralGauTwistedConv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowMulNormGauLe
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsBlkCover
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPointsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverBasePointInPointsStatement

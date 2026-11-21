@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FinsumQuotientOfLe
 import Mathlib.RingTheory.PiTensorProduct
 open Matrix Complex GlobalTheory.SW

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.MetricLocal
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionNumberMetricChange
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsSmoothWeightConstNearEmbeddings

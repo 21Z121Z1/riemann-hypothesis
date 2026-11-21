@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.CoboundaryMemFiniteClasses
 import Formalism.AdicCompletionExports.AdicCompleteRingEquiv.IsAdicCompleteOfRingEquiv
 

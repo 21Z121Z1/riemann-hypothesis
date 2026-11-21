@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HasRatBasisOfAct
 

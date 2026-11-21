@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistOfCuspParams
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesRationalityAndCoefficientBoundStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesCharacterInverseStatement

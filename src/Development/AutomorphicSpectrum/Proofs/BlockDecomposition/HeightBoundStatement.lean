@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JpUnif
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

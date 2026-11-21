@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeCharacterOfUnitaryTensorIdeles
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TwistedLevelValues
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilGramSignature

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommOfBezout
 import Mathlib.RingTheory.TotallySplit
 import Mathlib.Tactic.Monotonicity.Lemmas

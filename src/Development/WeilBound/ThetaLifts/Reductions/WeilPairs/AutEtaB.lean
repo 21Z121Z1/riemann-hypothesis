@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SquareOfApproximation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHalfAbstract
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntAFSmulMemLatOF

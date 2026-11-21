@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CzDiagUnitary
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CiEvalMSmul
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.CfEqSumOfSubset

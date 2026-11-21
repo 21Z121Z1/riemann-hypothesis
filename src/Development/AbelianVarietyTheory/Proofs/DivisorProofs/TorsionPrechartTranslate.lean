@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartOfResidueEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointSpreadsOutStatement
 set_option autoImplicit false

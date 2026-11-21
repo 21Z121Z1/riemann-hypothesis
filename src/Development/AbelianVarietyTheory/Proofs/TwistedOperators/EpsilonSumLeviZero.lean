@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ResidueSumHyperplaneZeroStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RootsWeightsPairwiseIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicResidueSumZeroStatement

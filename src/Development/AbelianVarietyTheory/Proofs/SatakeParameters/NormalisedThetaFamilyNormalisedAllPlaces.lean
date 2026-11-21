@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalisedThetaFamilyNormalisedAtStandardPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalNormalisationTransportIsometryStatement
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntWAPlaces

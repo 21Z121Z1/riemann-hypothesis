@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StIrreducibleFiniteGermProjectionOpenAt
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StIrreducibleGermPointsOffDiscriminant
 import Mathlib.Order.CompletePartialOrder

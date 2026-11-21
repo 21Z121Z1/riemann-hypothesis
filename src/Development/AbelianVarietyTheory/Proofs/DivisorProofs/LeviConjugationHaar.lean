@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicGroupTopology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientMeasureFubiniLocallyCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicAutomorphismMeasureScalingStatement

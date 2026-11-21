@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsTw
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.AdUnique
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.L2Cusps.SplitEq

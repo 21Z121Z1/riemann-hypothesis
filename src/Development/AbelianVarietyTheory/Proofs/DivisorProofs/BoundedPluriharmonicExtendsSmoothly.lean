@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FirstChernLeviEqConstant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormBoundedByPositivePotential
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PluriharmonicLogSingularExtendStatement

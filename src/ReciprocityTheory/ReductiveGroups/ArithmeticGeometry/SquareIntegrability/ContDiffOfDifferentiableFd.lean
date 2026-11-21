@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes
 import Formalism.HarderNarasimhan.StatementPl
 import Mathlib.RingTheory.Henselian

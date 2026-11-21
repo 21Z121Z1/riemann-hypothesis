@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AevalNeZeroOfNotMem
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Values

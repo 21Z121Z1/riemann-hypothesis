@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LieInj
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeTateKernel

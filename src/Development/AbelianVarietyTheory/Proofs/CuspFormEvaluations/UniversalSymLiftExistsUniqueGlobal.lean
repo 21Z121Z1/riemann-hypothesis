@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsLocallyNoetherian
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSymLiftGlobal
 

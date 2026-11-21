@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContCxOfDegreewise
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSpaceCohomologyPresheafClassesAsCocyclesStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGenericFibreTor
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGenericFreeness
 import Mathlib.Analysis.CStarAlgebra.Classes

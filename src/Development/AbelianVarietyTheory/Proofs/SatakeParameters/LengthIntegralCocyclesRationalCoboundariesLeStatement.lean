@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LengthIntegralCocyclesRationalCoboundariesLe
 open Formalism Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N Module
 set_option maxHeartbeats 1000000 in

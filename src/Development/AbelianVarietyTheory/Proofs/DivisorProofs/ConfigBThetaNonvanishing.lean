@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowPartEndomorphismScalarStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBRealPlaceH1BranchStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.CoeffIterateZero
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PowerSemilinearRankNullityModMaxIdealStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ChainStepKernelRankLeModMaxIdealStatement

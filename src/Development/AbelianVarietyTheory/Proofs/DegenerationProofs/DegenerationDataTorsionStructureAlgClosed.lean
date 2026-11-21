@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingPropertiesStatement
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

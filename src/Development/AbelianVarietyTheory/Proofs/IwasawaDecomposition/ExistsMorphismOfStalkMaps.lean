@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.IsOpenOfMemIrreducibleComponentsOfFinite
 import Mathlib.AlgebraicGeometry.SpreadingOut
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.XMemNonZeroDivisors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularLocalRingAndIsRelParam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbLocusIffOfMonomialTau

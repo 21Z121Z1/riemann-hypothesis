@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.BaseEmbeddingInclusion
 import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins

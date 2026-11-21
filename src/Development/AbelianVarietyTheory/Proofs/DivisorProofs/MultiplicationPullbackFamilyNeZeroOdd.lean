@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulSecK
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StalkMapInjectiveOfFlat
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MulAFiniteFlatSurjective

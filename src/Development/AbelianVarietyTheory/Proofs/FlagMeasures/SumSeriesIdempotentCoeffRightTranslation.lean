@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SerFixOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumProdFixedPlaceAverageStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsAdelicUnitaryTrivialOutsideSplitPlaceLocEqStatement

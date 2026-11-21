@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.ColengthSqMulLeProd
 import ReciprocityTheory.DualLattices.LengthDegreeOfFrobenius
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicDelChernFormOfGramMatrixEqZero
 open Set Matrix Filter Topology
 open GlobalTheory.HermFrame GlobalTheory.CxForm

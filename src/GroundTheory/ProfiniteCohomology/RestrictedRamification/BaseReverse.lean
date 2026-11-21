@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.PoincarePairs.IsDiscreteRepResHomCoindRes
 import GroundTheory.TateCohomology.CupGraded
 import GroundTheory.ProfiniteCohomology.PoincarePairs.ConeProduct

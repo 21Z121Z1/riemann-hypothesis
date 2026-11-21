@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCellsDecompositionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinBruhatDecompositionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinRationalPointsStatement

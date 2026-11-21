@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsTorsCharZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FfDescentPairs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPushoutFaithfullyFlat

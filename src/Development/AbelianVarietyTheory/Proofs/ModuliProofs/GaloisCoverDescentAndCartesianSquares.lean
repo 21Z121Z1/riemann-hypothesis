@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover
 import Mathlib.AlgebraicGeometry.Morphisms.FlatMono
 import Mathlib.AlgebraicGeometry.Sites.Fpqc

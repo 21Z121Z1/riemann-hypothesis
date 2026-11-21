@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.DatumEmbeddingMemHlam
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.KSchur
 

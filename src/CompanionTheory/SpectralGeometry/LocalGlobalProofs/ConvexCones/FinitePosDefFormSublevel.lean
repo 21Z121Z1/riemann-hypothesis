@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.RatFormPosOfIntPos
 import Mathlib.Data.Pi.Interval
 import Mathlib.Tactic.Monotonicity.Lemmas

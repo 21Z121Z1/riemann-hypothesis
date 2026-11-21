@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.PlacesGalois
 import GroundTheory.GlobalFields.Artin.Series
 import Mathlib.Analysis.Meromorphic.NormalForm

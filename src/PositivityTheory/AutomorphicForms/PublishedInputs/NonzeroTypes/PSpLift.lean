@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NonzeroBasicTwistOfSpecialForm
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsSmooth
 

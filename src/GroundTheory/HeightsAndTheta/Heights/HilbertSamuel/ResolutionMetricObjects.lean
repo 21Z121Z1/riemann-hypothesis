@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsBergDensity
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithRes
 set_option maxSynthPendingDepth 1

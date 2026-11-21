@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCastEqOneOfCoprime
 open GlobalTheory.AlmostEt
 open scoped NNReal

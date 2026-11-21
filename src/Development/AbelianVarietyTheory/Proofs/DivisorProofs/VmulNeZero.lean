@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfWeierstrassPDerivWeierstrassPTorsionEqStatement
 
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVSubRight
 import Mathlib.LinearAlgebra.PiTensorProduct.Generators
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerSpaceTransposeInverseStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModerateGrowthCompTransposeInvStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalCompTransposeInvStatement

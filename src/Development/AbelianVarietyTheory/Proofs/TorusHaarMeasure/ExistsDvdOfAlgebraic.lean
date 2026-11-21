@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.PolyImgSuccAbove
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

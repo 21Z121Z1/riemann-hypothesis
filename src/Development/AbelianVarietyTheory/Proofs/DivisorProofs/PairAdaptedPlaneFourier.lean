@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicThetaSumNormLePolynomialScaleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlanePairRestrictionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlanePairInductionStatement

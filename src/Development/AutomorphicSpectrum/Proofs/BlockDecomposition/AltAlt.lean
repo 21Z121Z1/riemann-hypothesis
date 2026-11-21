@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CofaceRel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FaceFaceApply
 

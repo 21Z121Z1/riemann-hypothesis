@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.PhiGalCris
 import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.PeriodRingUnits.DieudonneManinBasisModification
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.VecZero

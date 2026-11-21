@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineEigenFrameLocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagComponentEigenFrameCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagComponentFramePermutationStatement

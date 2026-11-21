@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LiftChart
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.SpLiftP
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.TangentSpaceDeformationDualNumbers

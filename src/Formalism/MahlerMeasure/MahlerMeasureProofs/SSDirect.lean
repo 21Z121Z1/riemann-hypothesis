@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.LevelLattice
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

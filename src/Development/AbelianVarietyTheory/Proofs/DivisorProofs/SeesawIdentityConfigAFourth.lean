@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzValuedIntegralLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSeminormWeylAlg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigATriplesCompatibilityStatement

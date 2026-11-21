@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormAlmostAll
 import Mathlib.LinearAlgebra.Charpoly.BaseChange
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnGramDeterminantDiagonalBlockUnitLowerPos
 open ReciprocityTheory.ChartRestriction.G.FD MeasureTheory GlobalTheory.IntBall
 open scoped ENNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Batteries.Data.Nat.Gcd
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.LogRootDiscChar
 import Mathlib.Order.CompletePartialOrder

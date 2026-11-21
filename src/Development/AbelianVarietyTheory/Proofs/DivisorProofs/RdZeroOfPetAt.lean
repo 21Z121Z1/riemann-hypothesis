@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ReadLeaves
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.VolPairExAndFinVol
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsCoreGoodMatch

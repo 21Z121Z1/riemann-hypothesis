@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.HermitianPerpSubgroup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIrreducible
 

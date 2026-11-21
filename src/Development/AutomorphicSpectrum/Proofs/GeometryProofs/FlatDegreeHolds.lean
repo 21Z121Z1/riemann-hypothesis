@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatDegree
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.HermitianMetricLogNormFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChowlaSelbergPeriodStatement

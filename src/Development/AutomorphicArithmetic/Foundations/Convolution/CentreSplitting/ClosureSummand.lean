@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.FormsClosure
 import GroundTheory.AutomorphicForms.L2LocalComponents
 

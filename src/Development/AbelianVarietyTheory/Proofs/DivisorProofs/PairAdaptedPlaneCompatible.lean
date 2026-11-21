@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AvgFormApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxCoordsGoodModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneDarbouxCoordinatesExist

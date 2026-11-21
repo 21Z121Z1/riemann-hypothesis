@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLowLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsBisRest
 import Mathlib.Algebra.Module.Lattice

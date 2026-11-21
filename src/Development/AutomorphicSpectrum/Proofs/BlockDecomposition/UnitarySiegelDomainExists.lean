@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryAdelicIwasawaStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MinimalParabolicRationalCompactStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittFrameReduceRankStatement

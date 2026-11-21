@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormLeOneOfIsIntegralBis
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTLawAt
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.PartialTrace
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.GelfandHW
 

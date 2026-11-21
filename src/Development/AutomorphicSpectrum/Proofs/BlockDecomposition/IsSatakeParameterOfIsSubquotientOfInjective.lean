@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PrincipalSeriesSubquotientOfCharacters
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedInPrincipalSeriesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubquotientPrincipalSeriesBoundStatement

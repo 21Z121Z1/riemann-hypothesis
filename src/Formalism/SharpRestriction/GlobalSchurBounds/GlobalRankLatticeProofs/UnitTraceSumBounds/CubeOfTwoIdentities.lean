@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 
 open Formalism.MainNotions.GL3Theta Formalism.MainNotions.TaylorLogMetric

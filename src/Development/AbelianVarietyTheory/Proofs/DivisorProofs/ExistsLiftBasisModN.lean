@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisModN
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor

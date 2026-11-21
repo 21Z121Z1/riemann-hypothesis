@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaDoublingPairDataIdentityCartan
 
 open NumberField MeasureTheory IsDedekindDomain UniqueFactorizationMonoid

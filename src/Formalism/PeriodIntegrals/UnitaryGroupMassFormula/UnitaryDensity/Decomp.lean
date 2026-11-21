@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryDensity.GramStep
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Matrix.PosDef

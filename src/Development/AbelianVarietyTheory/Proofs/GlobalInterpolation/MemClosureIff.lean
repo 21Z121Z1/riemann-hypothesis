@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulMemLocPOfVal
 import Formalism.LocalToGlobal.Columns.BtExistsSmulLeOfFg

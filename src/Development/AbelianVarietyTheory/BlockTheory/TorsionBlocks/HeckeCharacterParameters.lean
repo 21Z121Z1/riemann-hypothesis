@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Mathlib.Analysis.InnerProductSpace.SingularValues

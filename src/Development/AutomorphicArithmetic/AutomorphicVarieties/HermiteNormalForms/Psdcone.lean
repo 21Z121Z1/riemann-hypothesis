@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Matrix.PosDef

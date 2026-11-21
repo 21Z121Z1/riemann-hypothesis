@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.IsotypicProjectorFixedMem
 import Lemmata.GeneralBFactLeftVersion.Imports
 import Mathlib.Algebra.Module.Lattice

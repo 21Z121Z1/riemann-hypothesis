@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideMultiplicityCuspStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenRationalityStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenHeckeMatchStatement

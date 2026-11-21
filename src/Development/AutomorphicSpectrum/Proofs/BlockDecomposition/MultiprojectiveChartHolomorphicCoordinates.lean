@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableOnEvProd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableOnEvPtP
 open CategoryTheory AlgebraicGeometry Limits TopologicalSpace MvPolynomial

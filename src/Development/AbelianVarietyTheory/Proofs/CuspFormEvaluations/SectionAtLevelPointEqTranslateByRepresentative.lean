@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FockLaws
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SectionReadingExistsUniqueIsTheta
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExpNsmulEqPowVt

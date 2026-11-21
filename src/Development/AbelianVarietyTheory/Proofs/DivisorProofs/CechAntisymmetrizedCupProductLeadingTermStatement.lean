@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechAntisymmetrizedCupProductLeadingTerm
 open GlobalTheory GlobalTheory.DI
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PrimitiveCosets.CoreGm
 import Development.AutomorphicArithmetic.PrimitiveCosets.Imports
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.TopWin

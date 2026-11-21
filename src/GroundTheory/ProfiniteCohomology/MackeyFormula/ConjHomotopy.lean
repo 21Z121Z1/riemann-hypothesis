@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.InnerConj
 import Std.Tactic.BVDecide.Normalize.Prop
 set_option maxSynthPendingDepth 1

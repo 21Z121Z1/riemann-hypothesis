@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DecompAtZero
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TypeAtOfDiscreteSeries
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite

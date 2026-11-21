@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.StepsNonvacuous
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.MemAnalyticAtZeroOfEventuallyDifferentiableAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetRingProdEqFactorialSmulStatement

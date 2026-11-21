@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChKerCCongr
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryVectorDensity
 open scoped InnerProductSpace
 set_option maxHeartbeats 1000000 in

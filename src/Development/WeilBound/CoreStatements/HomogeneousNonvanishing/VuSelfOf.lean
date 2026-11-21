@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsImageHeightUnique
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuSelfKnownTheorem

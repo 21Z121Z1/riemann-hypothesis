@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsSphereLaw
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PPointwiseLelong
 set_option maxSynthPendingDepth 1

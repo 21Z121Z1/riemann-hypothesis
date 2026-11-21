@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.KummerOpen
 import GroundTheory.ProfiniteCohomology.CartierDual
 set_option maxSynthPendingDepth 1

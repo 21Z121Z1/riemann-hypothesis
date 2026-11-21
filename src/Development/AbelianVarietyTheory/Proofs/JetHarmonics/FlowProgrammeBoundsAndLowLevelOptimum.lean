@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MulFlowValLe
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DropLevelsBasic
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.LevelsUsedBalancedValueOrbitSums

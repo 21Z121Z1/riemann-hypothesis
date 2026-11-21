@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsIdempotentWeightZeroSectionOfComponentStatement
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.IdemMulMemCusp
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodRowCuspParamStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftAllOfInputsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowLocalAllStatement

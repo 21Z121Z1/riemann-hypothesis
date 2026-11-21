@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSncPatchRat
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.GenericMap
 import Mathlib.Algebra.AffineMonoid.Basic

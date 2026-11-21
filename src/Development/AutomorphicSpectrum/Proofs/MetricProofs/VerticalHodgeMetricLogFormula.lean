@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PositionPot
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PNbarSmooth
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorSmooth

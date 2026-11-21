@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteAlgebrasOverHenselianAndComplete
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CompositumFiniteNormalIsPGroup
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KummerTwistRelationAndFixedField

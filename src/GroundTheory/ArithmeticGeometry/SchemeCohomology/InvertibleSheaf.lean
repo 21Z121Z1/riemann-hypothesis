@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ModulesTensor
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.CategoryTheory.Limits.Shapes.Countable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.InvAlg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IdemLiftComplete
 import Mathlib.Tactic.ENatToNat

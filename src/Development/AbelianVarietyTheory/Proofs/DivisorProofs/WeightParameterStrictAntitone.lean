@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrictAntiOfStep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds

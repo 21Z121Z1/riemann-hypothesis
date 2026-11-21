@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdeleAbsGtOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftLeftInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermFundamentalDomainStatement

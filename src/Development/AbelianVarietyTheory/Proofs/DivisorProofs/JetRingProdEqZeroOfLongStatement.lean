@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetRingProdEqZeroOfLong
 open GlobalTheory.LatJet
 open scoped Classical

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.TensSurj
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.TensTors
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AnalyticAtCoordinateZero
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHolomorphicSections
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsChartWithParameters

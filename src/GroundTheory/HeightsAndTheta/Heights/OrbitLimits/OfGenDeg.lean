@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiHomogRenameCoordPow
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ArithVarZero
 set_option maxSynthPendingDepth 1

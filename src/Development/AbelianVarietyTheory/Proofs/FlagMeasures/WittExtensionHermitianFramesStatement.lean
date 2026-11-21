@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExtensionHermitianFrames
 open GlobalTheory.SgAlg Matrix
 set_option maxHeartbeats 1000000 in

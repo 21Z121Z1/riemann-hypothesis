@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsNormalisedOfIsDiscrete
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChiDetSplitCentre
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.StatementUnavailableOneStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SumEigenProjectionsEqSelfStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CmTypePolynomialVanishingCriterionStatement

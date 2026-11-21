@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeRigidity.StatementC
 import Formalism.YangianSpanCharacter.StatementT
 import Formalism.LatticeTheta.Statement

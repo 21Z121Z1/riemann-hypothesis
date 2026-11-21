@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SelfDualMap
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicCharacterTrivialAlmostEverywhereStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicAnnihilatorBoxProductStatement

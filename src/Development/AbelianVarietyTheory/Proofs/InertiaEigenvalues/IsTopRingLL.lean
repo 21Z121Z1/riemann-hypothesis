@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLStable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitOfClosure
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodORingOfIntegers

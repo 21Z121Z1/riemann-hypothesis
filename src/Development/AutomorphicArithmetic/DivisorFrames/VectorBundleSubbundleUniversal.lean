@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmpNaturality
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppInjectiveOfFrames

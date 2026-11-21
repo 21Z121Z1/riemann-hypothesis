@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeSizeContinuity.LatSizeContOfSteps
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Order.CompletePartialOrder

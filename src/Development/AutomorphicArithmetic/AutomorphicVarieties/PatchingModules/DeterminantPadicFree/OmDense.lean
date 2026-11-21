@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.PairedDualFirstOrderDualMatrixSpace
 import Mathlib.RingTheory.Polynomial.Resultant.Basic
 import Mathlib.RingTheory.PowerSeries.Ideal

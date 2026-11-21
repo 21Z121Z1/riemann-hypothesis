@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NilpotentCoordinates
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsSeriesOfNaturalOnNilpotent
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GroupLawPowerSeries

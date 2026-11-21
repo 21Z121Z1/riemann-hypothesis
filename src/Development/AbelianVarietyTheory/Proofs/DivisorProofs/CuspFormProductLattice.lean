@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsIsDeepOfField
 import Development.AbelianVarietyTheory.Definitions.Divisors.P22
 import Development.AbelianVarietyTheory.Definitions.Divisors.BarCompSubsetClosure

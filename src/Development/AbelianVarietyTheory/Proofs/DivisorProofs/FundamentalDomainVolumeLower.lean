@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFullLevelMeasureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialUnitaryVolumeFamilyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullLevelSelfDualLatticeStatement

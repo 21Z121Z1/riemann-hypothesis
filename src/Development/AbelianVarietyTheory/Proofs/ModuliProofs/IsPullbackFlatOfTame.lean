@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.InvariantTowerAlgebraMapInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FlatOfTameDescent
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MemMapKerOfOneTmulEqZeroOfFlat

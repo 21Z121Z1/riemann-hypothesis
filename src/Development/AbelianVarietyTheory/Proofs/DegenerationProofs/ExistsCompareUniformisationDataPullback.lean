@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.MorAlgSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsMonHomOfPG
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsCmpOfIsPullDeg

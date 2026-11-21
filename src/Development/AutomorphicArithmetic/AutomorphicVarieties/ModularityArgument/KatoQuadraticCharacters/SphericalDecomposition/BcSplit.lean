@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcPolar
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormEqNormV
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BaseChangeIsomorphicFields

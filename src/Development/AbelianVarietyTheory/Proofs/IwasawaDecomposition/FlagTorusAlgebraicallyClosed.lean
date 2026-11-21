@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtFJQOver
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivComp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.NoBase

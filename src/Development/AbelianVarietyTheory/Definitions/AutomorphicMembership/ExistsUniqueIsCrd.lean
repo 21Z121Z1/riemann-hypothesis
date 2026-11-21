@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MovedReadingSameMapsBaseReadingAgrees
 import Formalism.LocalToGlobal.Columns.InvariantSubspaceCoordsX
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.EventuallyCongOne

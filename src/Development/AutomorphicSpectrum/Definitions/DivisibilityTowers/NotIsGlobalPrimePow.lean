@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsQProjOverOfIsIso
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.ExistsGoodLevel

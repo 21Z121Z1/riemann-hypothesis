@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.TowerValuationBounds.TowerValuationBoundIndexed
 import Formalism.TowerValuationBounds.TowerValuationProofs.SumAdditiveCharacterEqZero
 import Mathlib.Order.Interval.Finset.Box

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.EqOneOfPowEqOneOfCongrOne
 import Mathlib.FieldTheory.IsAlgClosed.Spectrum
 import Mathlib.LinearAlgebra.Eigenspace.Minpoly

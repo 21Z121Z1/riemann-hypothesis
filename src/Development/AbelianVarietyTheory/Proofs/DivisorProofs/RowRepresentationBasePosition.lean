@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CountsIrreducibilityConstants
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteScaleThetaEqualityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteScaleThetaBoundRightStatement

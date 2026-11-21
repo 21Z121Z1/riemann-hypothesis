@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralEqL2Inner
 
 open scoped Classical InnerProductSpace ComplexConjugate

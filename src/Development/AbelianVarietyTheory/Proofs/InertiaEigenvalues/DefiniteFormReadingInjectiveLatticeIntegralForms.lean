@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockOfApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmT4OfRootsInField
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesIntegralFormsEqSpanDedekindCoefRingStatement

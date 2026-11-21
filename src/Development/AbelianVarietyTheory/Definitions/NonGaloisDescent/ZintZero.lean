@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AbsPowOneNotIsAlgRat
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
 import Formalism.DoubleCosetMeasures.Statement

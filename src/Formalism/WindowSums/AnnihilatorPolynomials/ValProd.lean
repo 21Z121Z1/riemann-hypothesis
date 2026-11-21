@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WindowSums.Statement
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

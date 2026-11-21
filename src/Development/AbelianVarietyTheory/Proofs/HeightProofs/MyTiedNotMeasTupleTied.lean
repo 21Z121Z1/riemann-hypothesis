@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.UnramifiedMeasureTuples
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.IsEmptyPlacesReferenceTuple

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntFrExtension
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsNonzeroOfGenerator
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.ExistsNotIntegralLie

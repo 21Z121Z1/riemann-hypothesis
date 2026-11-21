@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBlockEmb
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemUnipOfArchFrame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP

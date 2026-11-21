@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticTraceOfInputsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceInputsImplyCuspidalTraceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalSpectrumFinitenessOfDecayHarishChandraStatement

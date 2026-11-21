@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMaxThOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeSocleOverOfSimple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleArchimedeanComponents

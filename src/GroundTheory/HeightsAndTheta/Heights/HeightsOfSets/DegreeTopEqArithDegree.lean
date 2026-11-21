@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.LinearIndependentSumElimOfExact
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
 import Mathlib.Order.CompletePartialOrder

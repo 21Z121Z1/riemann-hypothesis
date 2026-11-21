@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolynomialTransfer
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false

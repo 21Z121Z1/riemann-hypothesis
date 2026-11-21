@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.GaussNormEqCoeffGaussNorm
 import Mathlib.Algebra.Polynomial.SpecificDegree
 import Mathlib.RingTheory.PiTensorProduct

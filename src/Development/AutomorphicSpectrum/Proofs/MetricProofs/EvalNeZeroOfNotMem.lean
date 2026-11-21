@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPotentialBlockDecomposition
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SamePotBlock

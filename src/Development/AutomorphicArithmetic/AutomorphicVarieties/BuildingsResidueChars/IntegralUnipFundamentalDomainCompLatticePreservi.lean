@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsLintegralConstantTermL2SqLe
 import Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar
 

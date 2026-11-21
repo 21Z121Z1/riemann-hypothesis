@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.EisValueAtIffEisPoleLE
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OneMemEntries
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsLinearIndependentOfRatIndependent

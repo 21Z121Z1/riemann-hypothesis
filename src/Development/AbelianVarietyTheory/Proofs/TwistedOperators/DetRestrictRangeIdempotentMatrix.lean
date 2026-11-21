@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotCompactOfIdempotent
 import Mathlib.RingTheory.TotallySplit
 open GlobalTheory.RegSS

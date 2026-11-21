@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.LocDensSt
 import Mathlib.Algebra.BigOperators.Ring.Nat
 import Mathlib.NumberTheory.LSeries.SumCoeff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.DensInfLoc
 import Mathlib.Topology.UniformSpace.Uniformizable
 

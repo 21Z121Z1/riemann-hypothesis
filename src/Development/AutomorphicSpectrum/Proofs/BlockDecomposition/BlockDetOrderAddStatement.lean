@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockDetOrderAdd
 
 open NumberField IsDedekindDomain Matrix

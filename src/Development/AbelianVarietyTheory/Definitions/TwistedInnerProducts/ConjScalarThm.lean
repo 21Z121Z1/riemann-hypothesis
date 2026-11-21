@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilGramSignature
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePartBase

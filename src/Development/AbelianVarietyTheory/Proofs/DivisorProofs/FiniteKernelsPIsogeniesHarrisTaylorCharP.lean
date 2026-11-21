@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvcPowRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqOfPointsOfGerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionExtOfApplyEq

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisRepTwistStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeightLocalisationRegularAlgebraicStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisRepMultisetJumpsStatement

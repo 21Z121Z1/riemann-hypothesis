@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RatIsom
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ModelFunctionFieldCompatibilityStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComplexPointsLiftModelStatement

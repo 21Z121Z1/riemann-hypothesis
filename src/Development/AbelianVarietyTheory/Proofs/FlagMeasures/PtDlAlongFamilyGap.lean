@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ThmBpDS
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeadingMinorLineUnitAmplitudesLargeGapsStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SizesLargeOfPowerBounds

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWildInertiaCyclotomicElement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitExEveryDatum
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RowsExhaust

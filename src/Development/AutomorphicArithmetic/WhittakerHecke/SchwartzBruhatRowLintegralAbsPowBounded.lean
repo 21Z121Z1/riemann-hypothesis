@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.LintegralIdeleRatPolyDecayMulNormRpowLtTop
 import GroundTheory.AutomorphicForms.GL2.GJGlobalLattice
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter

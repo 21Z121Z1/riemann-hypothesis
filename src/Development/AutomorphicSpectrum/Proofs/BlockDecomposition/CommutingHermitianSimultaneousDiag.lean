@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.EigenDecomposition
 import Mathlib.LinearAlgebra.Matrix.IsDiag
 import Mathlib.RingTheory.PicardGroup

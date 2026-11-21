@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.CharpolyCoeffsInSubalgebra
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.TameInertiaCondition
 

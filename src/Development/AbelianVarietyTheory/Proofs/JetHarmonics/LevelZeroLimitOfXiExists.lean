@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LimPosOfLimEvTOfCompactPositivity
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WaveIsometryOfRadial
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LiftBoundOfCompactPositivity

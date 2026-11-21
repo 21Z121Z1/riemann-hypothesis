@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MultihomogeneousSquares.AntisymmetryFibreSquares
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelExistsOfGivenStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseMetricExistsOfGivenStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement
 import ReciprocityTheory.DualLattices.ImportsBis

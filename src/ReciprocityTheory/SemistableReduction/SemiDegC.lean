@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.SemiDegSt
 import ReciprocityTheory.SemistableReduction.SemiDegCE
 import Mathlib.RingTheory.PiTensorProduct

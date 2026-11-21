@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.LogRatioUpperBound
 import Mathlib.Analysis.Matrix.Spectrum
 import Mathlib.LinearAlgebra.Matrix.PosDef

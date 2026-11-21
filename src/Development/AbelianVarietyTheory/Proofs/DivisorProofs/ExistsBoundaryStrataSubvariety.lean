@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedIrreducibleAnalyticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartOffClosedSubsetStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsCompatChartRestrOpen

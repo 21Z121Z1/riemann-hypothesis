@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZLevJ
 import Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.ExampleFunctionModuleEqSpan
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZLevI

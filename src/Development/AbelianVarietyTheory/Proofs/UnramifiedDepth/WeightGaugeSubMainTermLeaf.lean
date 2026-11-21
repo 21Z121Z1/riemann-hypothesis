@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FactorizationLeFourFifteenths
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WeightSubstNonneg
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CoeffLeafGaugeSubMainTermEqZeroOnFirstAxisStatement

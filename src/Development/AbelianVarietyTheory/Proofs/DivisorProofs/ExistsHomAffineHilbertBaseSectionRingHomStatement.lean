@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomAffineHilbertBaseSectionRingHom
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite
 open scoped TensorProduct

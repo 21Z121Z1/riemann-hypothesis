@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedUnip
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCompactPreimage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleQuotientCompactRepresentatives

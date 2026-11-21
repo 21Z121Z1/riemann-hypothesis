@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsUnitSmulEqOfBijectiveToSpanSingleton
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Order.CompletePartialOrder

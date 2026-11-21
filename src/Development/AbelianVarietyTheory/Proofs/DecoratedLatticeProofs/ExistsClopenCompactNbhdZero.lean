@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IntegralFiniteAdeleCompactClosedMultiples
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 open scoped Matrix NNReal ComplexConjugate TensorProduct

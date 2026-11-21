@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EMatMulNegCol
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralClosureCompletedCMAlgebraCompactOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.DictionaryStatement

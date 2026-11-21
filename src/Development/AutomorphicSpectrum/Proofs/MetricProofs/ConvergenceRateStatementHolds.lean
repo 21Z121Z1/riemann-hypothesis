@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MaMeasureEqOfConst
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TailBoundStatementHolds
 import Mathlib.Analysis.SpecialFunctions.Log.Monotone

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PrimeSetBoundDataOfPrimitiveChar
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.logpair
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.bigpair

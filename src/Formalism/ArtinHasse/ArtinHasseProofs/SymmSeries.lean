@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ArtinHasse.Statement
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem

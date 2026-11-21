@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Topology.Connected.Separation

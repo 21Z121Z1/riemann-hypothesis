@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LenCob
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MatKOSmulOne
 import Mathlib.RingTheory.Etale.Weakly

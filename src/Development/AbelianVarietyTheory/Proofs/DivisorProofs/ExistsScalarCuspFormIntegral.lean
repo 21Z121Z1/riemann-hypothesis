@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulNonnegLargeAtThreeFive
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamOfLSmulIff
 import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleHodgeTateZetaClassParams
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Imports

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.PathWeight.GeneratorImageIsSymbol
 
 noncomputable section

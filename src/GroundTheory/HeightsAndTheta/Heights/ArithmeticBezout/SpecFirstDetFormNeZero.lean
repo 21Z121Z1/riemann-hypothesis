@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.LatticePointLogCount
 import GroundTheory.HeightsAndTheta.Heights.Intersections.Statements
 import Mathlib.NumberTheory.Ostrowski

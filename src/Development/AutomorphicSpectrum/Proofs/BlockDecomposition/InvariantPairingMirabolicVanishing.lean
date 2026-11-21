@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicFourierExpansion
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicCharacterEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGlLastRowEq

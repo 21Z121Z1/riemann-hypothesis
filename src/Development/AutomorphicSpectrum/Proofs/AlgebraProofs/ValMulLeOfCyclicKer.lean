@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderLatticeBaseStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HasFinColengthOfHasLen
 import ReciprocityTheory.DualLattices.HasLenCokerDet

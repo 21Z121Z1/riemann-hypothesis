@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnnihilatorLiftOfMulEqP
 open NumberField
 open scoped TensorProduct

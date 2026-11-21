@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.MonomialDeterminantStatement
 import ReciprocityTheory.DualLattices.ProdEraseUpdate
 import Mathlib.Algebra.Order.Star.Real

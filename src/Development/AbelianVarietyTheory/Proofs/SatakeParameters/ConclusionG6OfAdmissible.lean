@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SixthDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SixthWeightStatementStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SixthCharacterEqualityStatement

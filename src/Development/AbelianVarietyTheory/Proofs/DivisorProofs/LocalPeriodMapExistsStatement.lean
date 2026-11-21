@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPeriodMapExists
 
 open CategoryTheory AlgebraicGeometry Set Matrix MeasureTheory MonObj

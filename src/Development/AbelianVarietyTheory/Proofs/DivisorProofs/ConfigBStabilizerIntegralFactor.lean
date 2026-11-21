@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBWittConstantNonzero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizedDataIntegralIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBHaarStabilizerLeftStatement

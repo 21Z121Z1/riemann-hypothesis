@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.StageGeoDefs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulMemScLatOfMem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsMixedLagrangianChartIntegralRowChange

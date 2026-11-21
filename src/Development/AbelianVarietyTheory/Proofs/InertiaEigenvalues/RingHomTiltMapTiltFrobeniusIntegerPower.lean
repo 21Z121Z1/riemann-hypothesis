@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MooreNorm
 import Mathlib.Data.Int.Star

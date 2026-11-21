@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.RationalSupMetrics.AevalCoordProd
 import Mathlib.RingTheory.SimpleRing.Principal
 

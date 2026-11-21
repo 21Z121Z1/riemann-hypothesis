@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFinsumSmulEqOneOfTame
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SubalgebraEqTopOfForallPrimeSmulMemSup
 import Mathlib.RingTheory.Flat.Equalizer

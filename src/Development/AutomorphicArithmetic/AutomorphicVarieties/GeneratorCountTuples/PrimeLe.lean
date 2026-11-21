@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK
 
 open NumberField UpperTheory.V UpperTheory.V.K

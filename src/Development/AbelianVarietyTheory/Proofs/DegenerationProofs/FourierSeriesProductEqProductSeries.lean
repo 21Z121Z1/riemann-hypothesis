@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ProductOfSectionsExpandsToConvolutionStatement
 import Development.AbelianVarietyTheory.Definitions.Degenerations.RigGen
 import Mathlib.Topology.Algebra.InfiniteSum.Nonarchimedean

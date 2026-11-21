@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CocycleNormalForm
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhGroup
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhSmall

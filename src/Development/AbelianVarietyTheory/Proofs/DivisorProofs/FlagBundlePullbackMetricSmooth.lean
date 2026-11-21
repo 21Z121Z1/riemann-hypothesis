@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwoEmbeddingsOfTranscendental
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithIntersectionFormExists

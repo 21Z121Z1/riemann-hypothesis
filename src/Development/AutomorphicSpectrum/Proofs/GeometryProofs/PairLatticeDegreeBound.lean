@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InteriorPointPolarisedStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSegreChartFramesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairSumFrameAtPointStatement

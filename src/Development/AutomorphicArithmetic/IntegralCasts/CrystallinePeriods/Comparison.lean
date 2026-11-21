@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamLog
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Action

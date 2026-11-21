@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcMeasUniv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMetricIsometricOfIsometry
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBcFiniteOfIso

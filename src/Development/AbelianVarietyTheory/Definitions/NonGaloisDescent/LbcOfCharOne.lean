@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Lbc
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ScholzeFunctorialExtension
 

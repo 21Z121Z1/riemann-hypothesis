@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataSpaces
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Order.CompletePartialOrder

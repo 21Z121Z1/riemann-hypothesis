@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingUniformConstantStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliKFiniteCoefficientStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselNormSqEqBigCellNormSqStatement

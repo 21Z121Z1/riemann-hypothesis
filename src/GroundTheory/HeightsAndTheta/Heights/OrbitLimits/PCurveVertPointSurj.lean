@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.MemMCoordIdealIff
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveRingFinite
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveSectionQuotLocal

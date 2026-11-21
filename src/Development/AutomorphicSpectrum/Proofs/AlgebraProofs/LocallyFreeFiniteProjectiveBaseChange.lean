@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.FlagMinor
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Order.Ring.Star

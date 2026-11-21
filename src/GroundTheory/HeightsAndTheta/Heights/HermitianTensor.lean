@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
 import Mathlib.Analysis.InnerProductSpace.TensorProduct
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsThickIsoOfIsPullDeg
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IntegralSectionsCorrespond
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfPullbackId

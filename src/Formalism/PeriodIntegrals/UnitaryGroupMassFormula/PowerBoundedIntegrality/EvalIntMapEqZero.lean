@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PowerBoundedIntegrality.Development
 import Mathlib.FieldTheory.IsAlgClosed.Spectrum
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs

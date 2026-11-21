@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStableGauss
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticStarStructure
 import Mathlib.Analysis.CStarAlgebra.Classes

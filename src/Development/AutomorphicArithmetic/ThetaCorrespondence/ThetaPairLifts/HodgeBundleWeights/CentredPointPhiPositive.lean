@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ExistsUniformizingIntegralFrameExtension
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.PeriodMinimumPhiPos
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol

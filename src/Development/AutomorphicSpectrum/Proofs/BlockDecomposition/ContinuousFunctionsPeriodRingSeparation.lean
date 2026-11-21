@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodRingBaseChangeFromUniversal
 import Mathlib.NumberTheory.Padics.ProperSpace
 import Mathlib.Topology.LocallyConstant.Algebra

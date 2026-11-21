@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.CompactTopologicalForms.FinalC
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.NormalFormHatCompact
 

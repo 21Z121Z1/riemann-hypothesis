@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TateBasisMatrix
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NormCardQuotientSpan
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldInducedClassFunction
 import Mathlib.RingTheory.PiTensorProduct
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI

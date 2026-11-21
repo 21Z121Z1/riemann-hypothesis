@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.PartFrobEigNormO
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedMuPartInBaseChange
 

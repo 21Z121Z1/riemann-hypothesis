@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisTranslateCoefficientsZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberUnitTranslateEqIdFieldPointsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstOrderTranslationFormulaGermsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdealWeight
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GindikinKarpelevich
 

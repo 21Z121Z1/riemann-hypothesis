@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.TowerModels.PlaneLat
 
 noncomputable section

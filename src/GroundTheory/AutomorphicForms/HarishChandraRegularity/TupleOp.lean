@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.PartialDifferential.AnalyticHypoCalc
 
 namespace GroundTheory.Automorphic.Sobolev

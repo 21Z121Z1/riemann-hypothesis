@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousToGAd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsParDec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCompactPreimage

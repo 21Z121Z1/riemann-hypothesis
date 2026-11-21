@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMonoFamNontrivial
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VanishingIdealComapOfIsOpenImmersion
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EtaleCompletionCompIso

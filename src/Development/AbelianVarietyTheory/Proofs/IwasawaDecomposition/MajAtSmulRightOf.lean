@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 import Formalism.LocalToGlobal.IndefiniteReal.PrincipalLevelLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsVecOfNe

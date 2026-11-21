@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTypePrimeUnderEq
 open NumberField IsDedekindDomain Formalism.L2.Col
 set_option maxHeartbeats 1000000 in

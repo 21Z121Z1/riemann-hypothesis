@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.Henselian

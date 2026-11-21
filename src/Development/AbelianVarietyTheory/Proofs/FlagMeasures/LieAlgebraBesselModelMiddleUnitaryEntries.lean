@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalDegreeBessel.FinalG
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne

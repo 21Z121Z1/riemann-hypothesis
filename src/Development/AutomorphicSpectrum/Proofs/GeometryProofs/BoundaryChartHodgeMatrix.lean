@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGramPullbackIffStatement
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsTorusAndQuotientHom

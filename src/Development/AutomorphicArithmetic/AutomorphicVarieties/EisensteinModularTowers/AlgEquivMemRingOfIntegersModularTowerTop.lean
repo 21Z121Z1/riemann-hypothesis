@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
 
 open scoped MatrixGroups Matrix

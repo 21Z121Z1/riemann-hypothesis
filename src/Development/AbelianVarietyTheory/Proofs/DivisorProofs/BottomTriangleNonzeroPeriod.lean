@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTripleThetaKernelMinorsEqConstConjJetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleArchimedeanConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasInfOfChars

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnFactRowDivDiag
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QnPtEmpty
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.CoeffTransposeVariables

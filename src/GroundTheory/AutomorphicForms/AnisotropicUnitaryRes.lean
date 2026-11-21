@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AnisotropicRestrict
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Anisotropic
 set_option maxSynthPendingDepth 1

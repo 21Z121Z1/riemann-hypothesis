@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockFormApply
 import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
 open MeasureTheory

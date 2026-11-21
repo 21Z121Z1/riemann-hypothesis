@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CoordAtConstMulIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FormsOver
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PreimageConnectedComponentMem

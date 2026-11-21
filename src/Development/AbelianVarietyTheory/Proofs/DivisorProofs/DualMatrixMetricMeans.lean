@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.FunctionalLowerBoundOfConditionsNumeric
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.InfinitePlaceDepthSums
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.FreeLiftMetric

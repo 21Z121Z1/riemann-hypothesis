@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricDeterminedByCurvatureZeroSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormMulPullZeroSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicSmoothOnOpenStatement

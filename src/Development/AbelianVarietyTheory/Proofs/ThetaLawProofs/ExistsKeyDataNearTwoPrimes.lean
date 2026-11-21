@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.GeomIntSelf
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsPrincipalPolarizationSectionNonzeroNearTwoStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LieFreeNearTwoPrimesStatement

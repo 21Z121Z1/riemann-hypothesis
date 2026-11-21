@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperFiniteness
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSheafSecPresheaf
 

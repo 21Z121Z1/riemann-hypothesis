@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverTransferIdealEqStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverBlockFieldEqStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ScaledCoordinatesValueAtPointStatement

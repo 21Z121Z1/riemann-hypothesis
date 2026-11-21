@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.KeyRootOfKeyFormula
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyDataDescendCountableSubringsStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ValueAtNormalForm

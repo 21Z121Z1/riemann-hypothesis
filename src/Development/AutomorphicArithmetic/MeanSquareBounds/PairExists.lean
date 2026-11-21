@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.PairShare
 import Development.AutomorphicArithmetic.MeanSquareBounds.RowsOfMem
 

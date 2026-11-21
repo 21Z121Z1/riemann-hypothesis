@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.GeoNumOneLin
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 

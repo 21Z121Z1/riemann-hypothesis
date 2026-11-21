@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.PartSpan
 
 open IsLocalRing MvPowerSeries UpperTheory.V.Alg

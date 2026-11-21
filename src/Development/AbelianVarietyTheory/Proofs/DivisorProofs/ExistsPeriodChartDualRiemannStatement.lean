@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPeriodChartDualRiemann
 
 open CategoryTheory AlgebraicGeometry Set Matrix MeasureTheory MonObj

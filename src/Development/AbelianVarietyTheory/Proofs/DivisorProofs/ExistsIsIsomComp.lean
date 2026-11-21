@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicRingHomEqCanonical
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ValuationCoeEqNorm
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsDetEltOne

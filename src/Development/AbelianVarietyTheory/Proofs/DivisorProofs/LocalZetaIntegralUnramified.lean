@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedCharValueProductStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelesAbsNormProductStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIdealMemIffOrderStatement

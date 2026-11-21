@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.HasSumNormalizedDeriv
 import Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula
 import Mathlib.RingTheory.PiTensorProduct

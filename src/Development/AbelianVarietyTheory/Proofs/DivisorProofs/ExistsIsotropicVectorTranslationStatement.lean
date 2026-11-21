@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicVectorTranslation
 
 open scoped TensorProduct NNReal Matrix

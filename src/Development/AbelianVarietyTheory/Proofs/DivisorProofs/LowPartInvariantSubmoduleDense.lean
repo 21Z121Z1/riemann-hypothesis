@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerUpperFixedPartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowDegreeLeFixedDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixedPartIrreducibleStatement

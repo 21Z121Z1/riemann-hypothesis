@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeActionFramedPointsOfUnipotentModTwoPrimesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinalRowWeightGramAlgebraicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinalRowGramAlgebraicSectionStatement

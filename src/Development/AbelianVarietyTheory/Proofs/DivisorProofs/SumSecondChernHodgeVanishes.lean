@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondChernDensity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.L2DbarLocalChartEstimate
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.PluriharmonicHolomorphic

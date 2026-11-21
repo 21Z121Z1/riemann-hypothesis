@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverMain
 
 open Formalism.BasicNotions Formalism.FrobeniusOrbits NumberField

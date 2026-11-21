@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowGrpEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RepresentationAtEveryPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInverseUnipotentVolumeConjDiagonalEq

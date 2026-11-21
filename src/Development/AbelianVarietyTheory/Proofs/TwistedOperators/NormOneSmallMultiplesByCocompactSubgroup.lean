@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NotCompactOfIdempotent
 import Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar
 import Mathlib.Order.CompletePartialOrder

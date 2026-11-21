@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Scinv
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Hnfeq
 import Mathlib.Tactic.ENatToNat

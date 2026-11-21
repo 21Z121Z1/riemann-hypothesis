@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.GIntegral
 import Development.AutomorphicArithmetic.MeanSquareBounds.PsiThin
 import Development.AutomorphicArithmetic.MeanSquareBounds.IntThin

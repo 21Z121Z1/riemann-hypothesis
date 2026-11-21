@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.CuspidalContribution.LevShrink
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AuxiliaryCuspLemmaStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitTwistBound

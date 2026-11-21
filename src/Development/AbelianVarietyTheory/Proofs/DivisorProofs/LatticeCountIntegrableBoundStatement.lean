@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCountIntegrableBound
 open scoped NNReal ENNReal
 open MeasureTheory

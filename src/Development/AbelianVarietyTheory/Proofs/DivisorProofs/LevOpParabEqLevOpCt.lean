@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulusHalfLeviAbsDetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarIntegralNormalizedOpenCompactEqFiniteLevelSuStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulusLeviMaximalCompactOneStatement

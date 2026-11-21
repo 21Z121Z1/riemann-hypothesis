@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNsmulFix
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilOrthogonalFiniteCoverStatement
 open scoped TensorProduct Matrix

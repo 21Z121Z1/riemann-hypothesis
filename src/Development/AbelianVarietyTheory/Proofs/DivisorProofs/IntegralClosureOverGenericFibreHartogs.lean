@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionFreeOver
 import Mathlib.RingTheory.PiTensorProduct

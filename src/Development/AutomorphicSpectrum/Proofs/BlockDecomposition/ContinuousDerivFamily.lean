@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.EisensteinGrowthForms.LocFinType
 import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
 

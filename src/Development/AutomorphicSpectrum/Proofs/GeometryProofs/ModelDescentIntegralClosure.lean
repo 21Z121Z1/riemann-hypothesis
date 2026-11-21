@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModelOverRamifiedExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModelOverDvrExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CycNumIntAndComb

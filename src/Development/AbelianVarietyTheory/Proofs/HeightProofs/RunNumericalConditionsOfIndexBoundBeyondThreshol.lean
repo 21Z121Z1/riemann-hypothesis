@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.PageRunSqLeRdAndEightLeRank
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ThreeLeDFOfPageRun
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IndexBoundConstantLePagePolynomialOfRunCondition

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SummableProdPi
 import Mathlib.NumberTheory.ModularForms.JacobiTheta.TwoVariable

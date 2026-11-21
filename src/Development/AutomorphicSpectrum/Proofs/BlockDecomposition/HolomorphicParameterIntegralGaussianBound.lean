@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOnIteratedDerivFamily
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AesmIteratedDerivReal
 import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform

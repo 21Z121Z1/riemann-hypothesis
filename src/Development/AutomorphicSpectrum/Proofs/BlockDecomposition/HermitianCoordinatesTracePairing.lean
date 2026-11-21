@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsWeilFormulas
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSumInvariantUnipotentTranslate

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlternatingCoefficientFormula
 open MvPolynomial Finset GlobalTheory.FlagHook Formalism.DegreeFormula
 set_option maxHeartbeats 1000000 in

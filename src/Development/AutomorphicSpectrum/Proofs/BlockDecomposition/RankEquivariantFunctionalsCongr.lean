@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentLengthTwoReducibleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentLengthTwoIrreducibleSubStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniqueIrreducibleSubLengthTwoStatement

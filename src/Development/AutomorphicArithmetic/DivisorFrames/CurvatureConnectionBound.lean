@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockModelPosFrameBound
 import Development.AutomorphicArithmetic.DivisorFrames.PoincareDerivativeBound
 open Matrix Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshRegMax
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.NewformCoefficients.Places
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Entire
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitaryExtension
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsWeilOfVacuum
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddEqOfEven

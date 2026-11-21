@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianMeasureConjugation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UpperLeftBlockMatrix
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HolomorphicContinuationValueNnrealPowFactor

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateOneOfPrintedResultsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalModelVerticalLettersSetupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeHalfOfPrintedResultsStatement

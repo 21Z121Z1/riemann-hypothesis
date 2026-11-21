@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
 import Mathlib.Analysis.CStarAlgebra.Matrix
 import Mathlib.Analysis.Matrix.HermitianFunctionalCalculus

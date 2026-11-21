@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeGenericOfDegree
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SamePotBlock
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CompChartEventuallyEq

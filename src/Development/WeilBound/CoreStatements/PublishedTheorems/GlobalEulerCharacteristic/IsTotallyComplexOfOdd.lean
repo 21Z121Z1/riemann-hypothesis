@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois
 
 open NumberField GroundTheory.Global

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearChangeEulerProduct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelativelyAmpleClosedImmersion
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

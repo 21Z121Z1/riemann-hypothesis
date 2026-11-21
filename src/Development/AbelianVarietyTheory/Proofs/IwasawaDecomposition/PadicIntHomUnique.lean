@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.AinfFacts
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsLogAExtends
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.MemLoc

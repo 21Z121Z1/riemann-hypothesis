@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalPointSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteHopfPointsSeparateStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.FaithfulSMulAlgClosure

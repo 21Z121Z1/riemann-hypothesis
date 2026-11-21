@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothAdelicGLComplexConjCommutesOperatorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapelliOperatorAlgebraStableUnderComplexConjStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspFormOfConjPointwise

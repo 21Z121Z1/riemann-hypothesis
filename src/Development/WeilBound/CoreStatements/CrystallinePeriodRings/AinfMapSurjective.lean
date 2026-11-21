@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FrobAinfMapFrobenius
 
 noncomputable section

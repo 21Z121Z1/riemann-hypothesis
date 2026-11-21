@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.Reduction
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated2
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists

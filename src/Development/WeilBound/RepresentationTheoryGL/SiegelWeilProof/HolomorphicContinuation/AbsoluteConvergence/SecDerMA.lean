@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AbsoluteConvergence.SecDerMSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDensityOfImmersion
 

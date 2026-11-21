@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsFinCombSingleZero
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsOrthDec
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixSDblDecZero

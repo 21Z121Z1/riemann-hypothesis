@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.Monotonicity.Lemmas

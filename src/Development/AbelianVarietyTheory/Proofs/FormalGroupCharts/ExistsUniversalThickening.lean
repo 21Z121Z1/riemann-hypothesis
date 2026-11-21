@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HasChartsOfForallIsAffineOpen
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Henselian

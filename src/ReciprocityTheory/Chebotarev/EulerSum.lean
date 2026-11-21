@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.Chebotarev.NZIdeal
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.NumberField.DedekindZeta

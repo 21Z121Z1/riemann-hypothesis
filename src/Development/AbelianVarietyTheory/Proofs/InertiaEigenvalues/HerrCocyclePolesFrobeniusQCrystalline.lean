@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChiGamPowNeOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NBasisLoc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCocycleSolutionConv

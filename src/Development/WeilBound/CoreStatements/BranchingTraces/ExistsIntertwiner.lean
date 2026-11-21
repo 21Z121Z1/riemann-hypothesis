@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.BranchingTraces.FormTSingle
 import Development.WeilBound.CoreStatements.BranchingTraces.ContinuousEmb
 

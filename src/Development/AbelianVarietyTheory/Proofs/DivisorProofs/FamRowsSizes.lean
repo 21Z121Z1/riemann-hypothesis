@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ScaleLargeThree
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwoLeOfLogPos
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.SevenLogLeLOfPowerBound

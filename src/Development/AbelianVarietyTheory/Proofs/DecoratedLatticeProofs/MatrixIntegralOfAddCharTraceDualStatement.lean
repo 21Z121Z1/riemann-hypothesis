@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MatrixIntegralOfAddCharTraceDual
 open ValuativeRel GlobalTheory.SplitWeil Matrix
 set_option maxHeartbeats 1000000 in

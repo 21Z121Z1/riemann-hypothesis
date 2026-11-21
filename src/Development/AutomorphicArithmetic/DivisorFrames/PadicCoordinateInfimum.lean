@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.PadicSpanCoordinateLattice
 import Mathlib.RingTheory.Valuation.Integral
 import Mathlib.Tactic.Monotonicity.Lemmas

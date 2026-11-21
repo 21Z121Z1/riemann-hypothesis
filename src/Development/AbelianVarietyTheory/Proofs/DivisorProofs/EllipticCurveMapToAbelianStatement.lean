@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticCurveMapToAbelian
 
 set_option autoImplicit false

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.IsFieldIntersection
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StRankAdjoinFrac
 set_option maxSynthPendingDepth 1

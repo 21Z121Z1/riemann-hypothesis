@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRingHomOfGeneric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBaseIff
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ScholzeWeinsteinB

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.SmoothRepContragredient
 import GroundTheory.AutomorphicForms.SmoothRepSchur
 import GroundTheory.AutomorphicForms.HeckeAlgebra

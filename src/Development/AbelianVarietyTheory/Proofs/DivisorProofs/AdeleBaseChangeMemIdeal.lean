@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TmulMemLocId
 import GroundTheory.GlobalFields.TateThesis.AdeleIdealMeasure
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange

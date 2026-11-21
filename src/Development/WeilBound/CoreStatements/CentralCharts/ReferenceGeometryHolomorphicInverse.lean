@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CentralCharts.IsCoeffAtOfSmul
 import Development.WeilBound.CoreStatements.CentralCharts.ChartAnalytic
 import Development.WeilBound.CoreStatements.CentralCharts.OneLeDimFl

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationRightTranslate
 open MeasureTheory Matrix Finset Filter Topology
 open scoped ContDiff ComplexConjugate InnerProductSpace ZeroAtInfty

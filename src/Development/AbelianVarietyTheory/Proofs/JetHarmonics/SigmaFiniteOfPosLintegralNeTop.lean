@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.BesselPeriodGGP
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Topology.Sheaves.Presheaf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.VirtualCharactersMulComapConjIndLinear
 import Mathlib.RingTheory.Etale.Weakly
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI

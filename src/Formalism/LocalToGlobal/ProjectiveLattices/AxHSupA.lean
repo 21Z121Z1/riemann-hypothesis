@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.AxHSup
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition

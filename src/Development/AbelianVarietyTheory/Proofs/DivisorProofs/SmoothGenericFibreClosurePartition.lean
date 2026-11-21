@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureGenericFibreClopenSplitStatement
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 import Mathlib.Combinatorics.Quiver.ReflQuiver

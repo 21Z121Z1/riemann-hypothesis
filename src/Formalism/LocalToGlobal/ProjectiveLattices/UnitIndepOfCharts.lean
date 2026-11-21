@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameProofs
 import Formalism.LocalToGlobal.ProjectiveLattices.ChartWD
 

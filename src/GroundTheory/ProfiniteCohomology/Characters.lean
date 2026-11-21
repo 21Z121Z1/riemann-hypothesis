@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CharactersDefs
 import GroundTheory.ProfiniteCohomology.Colimit
 import GroundTheory.ProfiniteCohomology.ContinuousCochains.LongExactSequence

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.StrongApproximationSLDoubleCoset
 import GroundTheory.GlobalFields.IdeleGroups.Rational
 

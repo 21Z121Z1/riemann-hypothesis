@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbitt
 import Mathlib.RepresentationTheory.Semisimple
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

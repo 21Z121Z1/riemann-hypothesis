@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigRank
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 import Mathlib.Algebra.Module.StablyFree.Basic

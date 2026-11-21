@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UjMatScalarMul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatCoordScalarMul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AvgCharEqOfExt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsStab
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsGat
 

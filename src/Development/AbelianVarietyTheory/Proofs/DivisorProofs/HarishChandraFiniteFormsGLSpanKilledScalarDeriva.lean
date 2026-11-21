@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemExpSolCons
 import Development.AbelianVarietyTheory.Definitions.Divisors.CentralNilGL
 open NumberField MeasureTheory GlobalTheory.CuspRep GlobalTheory.HCF Topology

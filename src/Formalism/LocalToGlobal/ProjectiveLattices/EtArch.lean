@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TorusAt
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
 import Formalism.LocalToGlobal.ProjectiveLattices.XcLat

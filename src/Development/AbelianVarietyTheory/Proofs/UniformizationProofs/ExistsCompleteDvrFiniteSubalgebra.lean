@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteAlgebraLocalCompletion
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPrecompleteOfLeOfPowLe
 import Mathlib.Tactic.Polynomial.Basic

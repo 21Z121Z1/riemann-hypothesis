@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProdZpowLe
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.TestMem
 open NumberField IsDedekindDomain Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DistinguishedUnitIdeals.Statement
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

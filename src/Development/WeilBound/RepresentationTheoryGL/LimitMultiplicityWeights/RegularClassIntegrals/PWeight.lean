@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.ClosedGraph
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqOfNearOfCharpolyEq
 

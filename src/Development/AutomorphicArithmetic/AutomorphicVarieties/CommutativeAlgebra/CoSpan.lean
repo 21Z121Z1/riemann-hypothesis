@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
 import Mathlib.Algebra.DualNumber
 import Mathlib.Algebra.Module.StablyFree.Basic

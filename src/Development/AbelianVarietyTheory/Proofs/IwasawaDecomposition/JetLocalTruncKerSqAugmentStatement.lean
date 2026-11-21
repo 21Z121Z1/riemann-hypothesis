@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetLocalTruncKerSqAugment
 
 set_option autoImplicit false

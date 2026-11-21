@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LocalComponentsSurjective
 

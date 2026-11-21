@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LogDivSqrtLeFourExp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BadRowsShareBoundTwoPrimesStatement
 import Formalism.SharpRestriction.ElevenLe

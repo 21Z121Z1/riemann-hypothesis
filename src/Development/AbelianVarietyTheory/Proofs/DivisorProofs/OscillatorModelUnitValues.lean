@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelsAtRecordCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LettersEqFockVarsCore
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelMapExtension

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.BesselHermitianTheta.Lemmas
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ImportsRest
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces

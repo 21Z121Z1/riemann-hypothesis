@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RestrictionLocal
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RestrictionPowers
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AlgebraMapMemChartRingLine

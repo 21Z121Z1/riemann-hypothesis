@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteHomogeneousGeneratorsGradedSubgroup
 open Filter Topology MvPolynomial GlobalTheory.HSAmp
 set_option maxHeartbeats 1000000 in

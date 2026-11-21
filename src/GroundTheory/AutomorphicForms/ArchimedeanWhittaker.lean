@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.Uniqueness
 
 namespace GroundTheory.Automorphic.ArchWhittaker

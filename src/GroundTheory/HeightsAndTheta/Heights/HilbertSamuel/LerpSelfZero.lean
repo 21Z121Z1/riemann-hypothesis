@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergman
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanNorms
 import Mathlib.Algebra.Order.Ring.Star

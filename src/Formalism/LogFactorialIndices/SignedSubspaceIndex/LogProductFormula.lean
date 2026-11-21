@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogFactorialIndices.StatementNorm
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.CStarAlgebra.Classes

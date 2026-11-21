@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.BaseCaseFalseGeneralHolds
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.FixAll
 

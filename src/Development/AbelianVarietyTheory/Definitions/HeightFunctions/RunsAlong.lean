@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldTies
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DsigEq
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.IntUnit

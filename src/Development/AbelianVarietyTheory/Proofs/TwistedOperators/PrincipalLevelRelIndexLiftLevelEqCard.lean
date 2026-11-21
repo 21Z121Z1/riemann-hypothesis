@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlacesApart
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 

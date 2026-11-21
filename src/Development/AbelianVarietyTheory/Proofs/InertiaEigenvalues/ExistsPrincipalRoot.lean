@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RationalRayLevels
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ExistsBaseRingOfConjugationFixedTensor
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsDetRoot

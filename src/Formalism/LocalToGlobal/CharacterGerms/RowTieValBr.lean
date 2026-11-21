@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.ValueEquationOfProjectors
 import Formalism.LocalToGlobal.CharacterGerms.RowTieProj
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfSpecializesOfFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalDegreePullbackFinite
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers

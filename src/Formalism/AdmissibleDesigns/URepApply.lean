@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.URecApply
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

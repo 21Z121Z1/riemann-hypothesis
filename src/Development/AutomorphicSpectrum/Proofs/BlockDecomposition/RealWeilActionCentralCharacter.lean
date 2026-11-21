@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OmR
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealWeilRepresentationHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasTemperateGrowthConjPow

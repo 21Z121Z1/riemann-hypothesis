@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingIntegralClosurePadicInt
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.AdicCompletion.RingHom

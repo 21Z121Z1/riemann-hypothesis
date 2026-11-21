@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.EllipticDegree
 import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Basic
 import Mathlib.AlgebraicGeometry.EllipticCurve.NormalForms

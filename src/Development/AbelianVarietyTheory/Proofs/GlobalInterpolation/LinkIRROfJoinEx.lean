@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HilbertRowConditions.AllJoinP
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdmissibleLabelWeightsOfGreenCuspidalParametrisa
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice

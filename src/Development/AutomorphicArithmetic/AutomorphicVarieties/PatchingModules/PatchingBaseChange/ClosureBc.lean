@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.FinE
 open IsLocalRing UpperTheory.V.Alg UpperTheory.V.W UpperTheory.V.Pa
 open scoped TensorProduct

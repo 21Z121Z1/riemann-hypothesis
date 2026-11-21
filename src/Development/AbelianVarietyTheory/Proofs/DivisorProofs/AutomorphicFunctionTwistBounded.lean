@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneIntegralSkewHermitianTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicConstantTermParabolicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothLocalLieRepresentationStatement

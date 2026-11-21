@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NotInjOnOfFderivEqZero
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsOpenPosDefOfContinuous
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

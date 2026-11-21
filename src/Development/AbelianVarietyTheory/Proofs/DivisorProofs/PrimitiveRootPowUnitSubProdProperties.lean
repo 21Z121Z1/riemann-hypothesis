@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Monotonicity.Lemmas

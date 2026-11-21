@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZeroWindow.RightHalfWith
 import Formalism.PeriodIntegrals.ZerosWindow
 import Mathlib.Order.CompletePartialOrder

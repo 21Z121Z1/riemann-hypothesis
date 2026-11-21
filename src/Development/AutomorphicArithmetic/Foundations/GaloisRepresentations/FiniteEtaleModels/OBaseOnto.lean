@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.FiniteEtaleModels.OClsAt
 import Development.AutomorphicArithmetic.CommutativeAlgebra.IsogenyClassExistsOfQuotient
 import Development.AutomorphicArithmetic.CommutativeAlgebra.QuotientModuliObjectExists

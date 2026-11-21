@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.SecPtRed
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCdvrMkLeContinuum
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.RegularityFirstClauseBot

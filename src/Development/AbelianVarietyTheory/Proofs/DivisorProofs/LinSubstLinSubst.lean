@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IrreducibleOfIrreducibleMap
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 import Mathlib.Algebra.Module.StablyFree.Basic

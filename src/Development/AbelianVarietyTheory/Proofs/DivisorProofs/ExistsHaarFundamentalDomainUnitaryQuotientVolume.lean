@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.VolQAndIntegrableIff
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MemHalfCosetSelf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfDefinite

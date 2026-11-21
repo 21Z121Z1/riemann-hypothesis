@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnisotropicDoubleCosetFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnisotropicOfDefinite
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian

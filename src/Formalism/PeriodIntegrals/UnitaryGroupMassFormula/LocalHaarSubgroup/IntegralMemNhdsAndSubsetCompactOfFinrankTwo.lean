@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalHaarSubgroup.ExistsHaarOfSubgroup
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.TotallySplit

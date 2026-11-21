@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowMapVUpdateZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ColPtInvMemStdLatIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGridBlockCongruenceTypePrimeDescription

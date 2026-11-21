@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AdmissibleResidues.LocDefs
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RootsCharpolySmulMatrix
 

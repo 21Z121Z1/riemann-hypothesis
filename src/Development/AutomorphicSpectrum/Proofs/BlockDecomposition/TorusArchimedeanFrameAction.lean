@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumFrameIdem
 import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactUnipFlag
 

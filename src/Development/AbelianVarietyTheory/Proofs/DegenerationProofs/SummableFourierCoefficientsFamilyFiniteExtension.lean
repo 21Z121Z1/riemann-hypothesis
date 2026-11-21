@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFinsetOfPoint
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAddValuation
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormLtOneOfIrreducible

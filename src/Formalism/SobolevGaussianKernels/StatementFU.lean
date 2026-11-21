@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CorankShare.StatementFR
 import Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality
 

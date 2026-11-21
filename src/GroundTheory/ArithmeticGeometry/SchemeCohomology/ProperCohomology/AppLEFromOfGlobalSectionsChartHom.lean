@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.SegreGlue
 import Mathlib.AlgebraicGeometry.Morphisms.Separated
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.PoincareLelongInv
 import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.PoincareLelong
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridge

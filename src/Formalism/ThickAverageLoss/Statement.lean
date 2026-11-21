@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WideWeightTheorem.Statement
 
 open Finset ArithmeticFunction

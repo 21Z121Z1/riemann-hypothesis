@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.IsOpenAddSubgroup
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalModelPeriodLattices
 

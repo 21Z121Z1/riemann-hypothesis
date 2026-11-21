@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicGLn
 import GroundTheory.GlobalFields.TateThesis.AdelicChar
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart

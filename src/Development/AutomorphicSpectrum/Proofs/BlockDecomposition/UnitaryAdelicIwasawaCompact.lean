@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.SiegelPar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlagTransitiveOfBaseStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMaxEvenAdaptedLatticeStatement

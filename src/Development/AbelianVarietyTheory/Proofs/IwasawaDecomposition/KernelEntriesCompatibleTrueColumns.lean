@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
 import Formalism.LocalToGlobal.KernelLattices.TopPin
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetIdStdBot

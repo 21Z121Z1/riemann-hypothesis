@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.IrrelevantLeMapLinearGradedMap
 
 open GlobalTheory.WeierstrassCurve GlobalTheory.AddLaw

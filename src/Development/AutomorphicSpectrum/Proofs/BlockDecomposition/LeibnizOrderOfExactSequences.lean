@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicExtensionExactStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiPreservesIsomorphismStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PsiPreservesIsomorphismStatement

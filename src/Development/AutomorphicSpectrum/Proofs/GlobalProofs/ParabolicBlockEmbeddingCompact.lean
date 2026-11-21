@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.SiegelPar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StdParEqFlag
 

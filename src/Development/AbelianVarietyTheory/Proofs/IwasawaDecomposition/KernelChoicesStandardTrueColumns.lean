@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompanionCrd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MtTwTieStd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetIdStdBot

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.IntegralOfModule
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.HeckeStdStatement
 

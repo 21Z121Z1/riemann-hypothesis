@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.HatCap
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.HatKBSOf
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFHatProdKBStmt

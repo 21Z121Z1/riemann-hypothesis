@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModels
 
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.LabApply
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.InnerProductSpace.Trace

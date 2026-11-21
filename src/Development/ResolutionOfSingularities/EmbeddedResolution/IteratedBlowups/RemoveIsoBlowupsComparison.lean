@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.RemoveIsoBlowups
 import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.StrictTransform
 universe u

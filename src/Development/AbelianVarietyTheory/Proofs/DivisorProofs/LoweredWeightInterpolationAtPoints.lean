@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.CurvAndMarginClosed
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.BddMulProd
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.TwoLevelLogarithm

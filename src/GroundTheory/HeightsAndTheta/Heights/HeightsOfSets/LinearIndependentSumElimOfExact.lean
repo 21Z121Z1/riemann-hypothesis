@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Extension
 import GroundTheory.HeightsAndTheta.Heights.ArithDegreeIdeal
 import GroundTheory.HeightsAndTheta.Heights.HermitianDual

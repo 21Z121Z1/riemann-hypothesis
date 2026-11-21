@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 open NumberField IsDedekindDomain GlobalTheory.CuspRep Formalism.UG GlobalTheory.LFun Matrix

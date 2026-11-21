@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeminormSliceRLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivPdLe
 import Mathlib.Analysis.Calculus.FDeriv.Partial

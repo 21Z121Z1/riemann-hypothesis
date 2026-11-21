@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.RankIdentity
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.PerSAlg
 

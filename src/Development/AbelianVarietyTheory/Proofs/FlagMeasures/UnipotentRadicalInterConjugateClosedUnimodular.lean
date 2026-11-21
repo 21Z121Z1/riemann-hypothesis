@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsFolnerUWset
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SymmetricMeasureL2NormEqResolutionL2
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentUpperFacts

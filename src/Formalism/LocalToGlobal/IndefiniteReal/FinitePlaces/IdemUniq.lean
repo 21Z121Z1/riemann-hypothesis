@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSum
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.CharStd
 

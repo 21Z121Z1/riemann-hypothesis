@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExistsIntValuationLtOne
 import GroundTheory.HeightsAndTheta.Heights.Intersections.FunFieldLeLocRing
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.CompletionAtPlace.Degree
 import Mathlib.NumberTheory.RamificationInertia.Galois
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

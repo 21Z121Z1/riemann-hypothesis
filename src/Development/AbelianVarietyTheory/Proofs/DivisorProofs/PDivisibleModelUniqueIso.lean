@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolarizationWeilPairingEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionIsoOfGroupPullbackGenericStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureTorsionPointsBijectiveStatement

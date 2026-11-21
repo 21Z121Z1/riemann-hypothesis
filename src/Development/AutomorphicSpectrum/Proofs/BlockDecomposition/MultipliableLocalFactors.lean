@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SummableOneDivAbsNormSq
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Mathlib.Analysis.SpecialFunctions.Log.Summable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerEqCentralizer
 
 open GlobalTheory.OrbitUnfold GlobalTheory.OrbitUnfold.ConjSelf

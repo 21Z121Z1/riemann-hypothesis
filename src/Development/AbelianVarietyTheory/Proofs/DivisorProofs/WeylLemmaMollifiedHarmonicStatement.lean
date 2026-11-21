@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylLemmaMollifiedHarmonic
 open Set MeasureTheory
 open ReciprocityTheory.L2DbarEstimates (V)

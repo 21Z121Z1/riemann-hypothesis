@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 import Formalism.GL3MeanSquares.HookFormulaTorsion.SmoothedRemainderRealIntegralFormula
 import Formalism.GL3MeanSquares.HookFormulaTorsion.PsiZeroIntegral

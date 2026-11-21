@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormSumLt
 import Mathlib.NumberTheory.Padics.Complex
 import Mathlib.RingTheory.Henselian

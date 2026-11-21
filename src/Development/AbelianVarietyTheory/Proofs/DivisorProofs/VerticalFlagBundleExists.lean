@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleExistsArithmeticVarietyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleSectionLiftsMetricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundlePullbackMetricFlagsCompatStatement

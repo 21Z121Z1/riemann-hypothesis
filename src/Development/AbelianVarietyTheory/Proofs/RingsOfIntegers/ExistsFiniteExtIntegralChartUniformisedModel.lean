@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.PlaceAdaptation.AdaptStd
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsExtensionAllModelsUniformizedStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntChartFrTruncExists

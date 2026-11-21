@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompletionUniqueUpToIso
 open IsLocalRing GlobalTheory.Pat
 set_option maxHeartbeats 1000000 in

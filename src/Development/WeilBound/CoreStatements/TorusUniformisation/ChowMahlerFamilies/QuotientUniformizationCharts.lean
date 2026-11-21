@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFormNotInCoordIdeal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVarStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodLabRankOne
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SecondIffFirstAndRest
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LocallyOfFiniteTypeKer

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementFr
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.HahnSeries.Summable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitOutIffGenAt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenFrobeniusStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocationsDistinguishedByGenericsStatement

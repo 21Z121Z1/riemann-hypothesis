@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgHomEvalCompEqEvAMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalChartPresentsLevelsModIdealStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective

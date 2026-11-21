@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.Uniformised
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointsNonemptyUnitaryRankOne
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PrimeToPOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ContragredientTranspose.GelfandKazhdan
 
 namespace GroundTheory.Variant₂.N1

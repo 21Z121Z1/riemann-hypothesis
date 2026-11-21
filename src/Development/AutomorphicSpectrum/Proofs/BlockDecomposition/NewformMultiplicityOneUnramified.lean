@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerCentralCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerRightTranslation

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ComplexFibreIdealBot
 set_option maxSynthPendingDepth 1
 

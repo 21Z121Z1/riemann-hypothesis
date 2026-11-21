@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralInvLeOfSupportCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmoothFunIntegralMulRightStatement
 import Mathlib.LinearAlgebra.Basis.MulOpposite

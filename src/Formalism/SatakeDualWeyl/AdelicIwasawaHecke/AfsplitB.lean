@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitA
 import Formalism.SatakeDualWeyl.StatementC
 import Mathlib.RingTheory.PiTensorProduct

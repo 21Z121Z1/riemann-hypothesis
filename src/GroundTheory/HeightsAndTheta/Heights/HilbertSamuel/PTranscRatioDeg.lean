@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTranscRatioDeg
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.LinearIndependentAdjoinOfTranscendental
 import Mathlib.RingTheory.WittVector.IsPoly

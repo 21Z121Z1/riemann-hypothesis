@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.PolyDef
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.TwistingSheafOneChartEqPreimageStandardChart
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

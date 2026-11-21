@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EePosFalseDvd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedEisensteinFxSumRowLiftsDistributionStatement

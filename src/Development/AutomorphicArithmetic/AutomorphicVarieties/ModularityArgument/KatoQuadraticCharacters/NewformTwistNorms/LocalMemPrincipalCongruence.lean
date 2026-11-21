@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.ResidueFlagPoints.CycIne
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

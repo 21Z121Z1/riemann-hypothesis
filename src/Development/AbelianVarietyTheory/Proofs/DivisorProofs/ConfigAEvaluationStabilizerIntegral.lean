@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleDecayIntegrableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFiniteDecompositionStableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigASchwartzLocalEvalStatement

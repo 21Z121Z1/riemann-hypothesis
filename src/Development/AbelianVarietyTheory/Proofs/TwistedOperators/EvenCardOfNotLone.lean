@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSquareMulInfinite
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AlmostNormFinDiag
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HasseNormTheoremQuadraticExtension

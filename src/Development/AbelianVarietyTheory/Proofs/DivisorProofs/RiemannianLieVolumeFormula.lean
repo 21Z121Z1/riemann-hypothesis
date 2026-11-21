@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianVolumeLieBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormCmTypeProductSqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormTraceFormDetIndexStatement

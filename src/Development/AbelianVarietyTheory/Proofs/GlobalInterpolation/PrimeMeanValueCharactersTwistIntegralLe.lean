@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralNormSqLp
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.BrunTitchmarshExistsConstStatement
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology GlobalTheory.Lin

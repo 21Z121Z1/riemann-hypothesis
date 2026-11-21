@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzOneParameterGroupFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSymplecticLieEqExpOneParamStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineSchrodingerModelStatement

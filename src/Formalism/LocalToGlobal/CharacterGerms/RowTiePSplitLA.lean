@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePSplitDef
 import Mathlib.LinearAlgebra.Lagrange
 import Mathlib.RingTheory.Etale.Weakly

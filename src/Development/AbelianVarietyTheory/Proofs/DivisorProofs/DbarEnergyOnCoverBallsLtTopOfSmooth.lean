@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Topology.Sheaves.Presheaf

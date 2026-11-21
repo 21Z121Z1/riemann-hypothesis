@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import Mathlib.NumberTheory.NumberField.Discriminant.Different
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.L2ExtensionLogCanonical
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMapHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationRayEventuallyStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeConditionsCoverModelsStatement

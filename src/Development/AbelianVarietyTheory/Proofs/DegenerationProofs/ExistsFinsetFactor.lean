@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Morphisms.FinitePresentation
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

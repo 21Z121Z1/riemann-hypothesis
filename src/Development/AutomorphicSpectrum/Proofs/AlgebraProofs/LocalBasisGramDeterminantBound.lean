@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SkewHermitianDiagonalizableStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsRealDifferentGeneratorStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PadicIntegralIffDenominatorStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlaceLaws
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.DoubleCollapse
 

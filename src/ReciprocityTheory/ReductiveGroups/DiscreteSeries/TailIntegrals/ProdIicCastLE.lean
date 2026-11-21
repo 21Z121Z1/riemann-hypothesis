@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.ExistsKmat
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.LinIndToLp
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralPowerExpansion
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA

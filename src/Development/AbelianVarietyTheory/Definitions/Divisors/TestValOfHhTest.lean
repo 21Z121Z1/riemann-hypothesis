@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqEmptyAddSumOfPrimeIncrements
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurveClIsHomogeneous

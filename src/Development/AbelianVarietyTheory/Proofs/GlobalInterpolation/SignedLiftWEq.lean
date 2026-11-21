@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralDensEqZero
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SmulMemLocPPerO
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsSdLatTwOExpS

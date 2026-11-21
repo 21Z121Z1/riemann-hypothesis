@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.DiagonalEtaleThreeOfFirst
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.AffineProperBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupVanishesOnTwoMemberCoverStatement

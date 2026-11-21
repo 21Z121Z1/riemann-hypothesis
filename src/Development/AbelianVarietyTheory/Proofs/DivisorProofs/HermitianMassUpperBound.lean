@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinsetSelfDualClassesRootDiscr
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic
 import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces

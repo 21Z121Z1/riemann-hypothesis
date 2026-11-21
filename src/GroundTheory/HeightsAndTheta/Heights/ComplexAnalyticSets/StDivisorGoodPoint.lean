@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsCurrent
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalModel
 set_option maxSynthPendingDepth 1

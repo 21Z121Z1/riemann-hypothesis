@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq

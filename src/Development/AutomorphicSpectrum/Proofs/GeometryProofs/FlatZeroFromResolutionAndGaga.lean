@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFramesAnalyticStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUnitAnalyticFunctionStatement

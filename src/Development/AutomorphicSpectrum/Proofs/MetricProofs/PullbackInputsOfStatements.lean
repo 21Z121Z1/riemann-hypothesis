@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ConvergenceRateStatementHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SignedConvergenceStatementHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeOfIsIntersectionSystem

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Realised
 import CompanionTheory.AutomorphicTheory.PlaceSeparation.IsOpenQuotientMapArt0
 import Development.AbelianVarietyTheory.Definitions.Divisors.TieTest

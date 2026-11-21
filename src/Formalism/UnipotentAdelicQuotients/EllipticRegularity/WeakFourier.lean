@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.EllRegCut
 import Mathlib.Analysis.InnerProductSpace.Calculus
 import Mathlib.RingTheory.PiTensorProduct

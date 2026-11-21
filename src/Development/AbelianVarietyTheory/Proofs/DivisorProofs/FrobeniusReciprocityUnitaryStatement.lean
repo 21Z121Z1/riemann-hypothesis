@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusReciprocityUnitary
 open GlobalTheory.WeilM GlobalTheory.SplitFlip
 open scoped Matrix

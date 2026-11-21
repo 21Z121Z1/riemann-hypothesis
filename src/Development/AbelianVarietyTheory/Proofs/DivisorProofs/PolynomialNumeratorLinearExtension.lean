@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmpleOnAbelianBase
 open GlobalTheory.ShFam.Pad
 

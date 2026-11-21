@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TorsionIntegralDistinctOfPos
 open NumberField IsDedekindDomain Polynomial GlobalTheory.FieldSize
 open scoped IntermediateField

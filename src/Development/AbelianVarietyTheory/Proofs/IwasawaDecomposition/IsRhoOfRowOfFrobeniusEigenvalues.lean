@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLocalHomOfNatCast
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.CMTypeEmbeddings
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadTw

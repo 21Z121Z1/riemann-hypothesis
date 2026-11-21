@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Smoothing
 
 open MeasureTheory Set Filter Topology Function

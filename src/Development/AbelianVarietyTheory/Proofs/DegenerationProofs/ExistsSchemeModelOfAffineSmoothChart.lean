@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GlueModelsOverSubfield
 import Mathlib.AlgebraicGeometry.QuasiAffine

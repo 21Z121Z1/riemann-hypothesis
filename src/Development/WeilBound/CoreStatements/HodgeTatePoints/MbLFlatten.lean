@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.McCramer
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLPulllocCentre
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MaSerre

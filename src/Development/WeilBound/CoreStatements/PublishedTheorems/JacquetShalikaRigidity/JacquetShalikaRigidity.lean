@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.RsPoleOfInputs
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.ConvergenceEntriesGeneralLinearHolds
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaBound.JacquetShalikaBound

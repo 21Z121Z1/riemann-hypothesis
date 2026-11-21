@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

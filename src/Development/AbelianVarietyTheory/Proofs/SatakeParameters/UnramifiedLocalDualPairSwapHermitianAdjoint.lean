@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 

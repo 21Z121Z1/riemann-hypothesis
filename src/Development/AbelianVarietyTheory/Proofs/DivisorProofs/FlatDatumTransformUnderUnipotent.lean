@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelActionPreservesFlatForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcCompHolomorphic
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TranslationInv

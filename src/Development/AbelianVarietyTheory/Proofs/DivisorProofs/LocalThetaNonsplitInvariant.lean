@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactFixesVacuumNonsplitStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RankSchwartzBruhatFinitePlaceCompletionLeAleph0
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GelfandPairIrreduciblePairingSymmetricStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwoMulRankWLt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IdemOfIsPrimeIdem
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HcFiniteAndSchurMult

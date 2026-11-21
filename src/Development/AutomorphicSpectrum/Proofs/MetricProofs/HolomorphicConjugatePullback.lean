@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Mathlib.Analysis.Calculus.FDeriv.Star
 import Mathlib.RingTheory.PicardGroup

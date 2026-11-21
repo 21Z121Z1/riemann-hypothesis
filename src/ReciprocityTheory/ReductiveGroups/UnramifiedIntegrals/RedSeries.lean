@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedVeluFun
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedVeluAlg
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EisensteinRecursion

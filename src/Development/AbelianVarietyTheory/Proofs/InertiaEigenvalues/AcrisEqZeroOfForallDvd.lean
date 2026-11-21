@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsLogAExtends
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc

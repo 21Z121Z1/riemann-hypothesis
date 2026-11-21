@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFockHarmonicRepresentative
 open Formalism.BasicNotions.TH GlobalTheory.FockAlg
 set_option maxHeartbeats 1000000 in

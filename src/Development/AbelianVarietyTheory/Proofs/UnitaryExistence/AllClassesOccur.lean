@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniversalFibreUniformisedTripleStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DatumCommensurablePeriod
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FamilyUnifFibreLatticeEqOfPullbackStatement

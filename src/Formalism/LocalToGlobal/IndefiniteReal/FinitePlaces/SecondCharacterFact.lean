@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.NormNatCastLtOne
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.CircleEqOneOfRePos
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FiniteAdeleSndAlgebraMap

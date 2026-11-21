@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.CentralCharacterHolds
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LibFresh
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.ChartEisIntDifferentiableAt

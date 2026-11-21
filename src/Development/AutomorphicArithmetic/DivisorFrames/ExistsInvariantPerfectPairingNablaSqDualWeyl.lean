@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GenericDetPowMulHw
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialModelIsometry.DetSplit
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining

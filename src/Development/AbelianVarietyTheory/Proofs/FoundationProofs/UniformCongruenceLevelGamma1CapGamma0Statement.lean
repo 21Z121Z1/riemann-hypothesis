@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UniformCongruenceLevelGamma1CapGamma0
 open GlobalTheory.KZ GlobalTheory.KZ.H3 Matrix
 open scoped MatrixGroups

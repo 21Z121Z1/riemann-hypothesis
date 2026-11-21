@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanThetaLocalActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTrivialAtFiniteSetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTrivialAtInfinitySetStatement

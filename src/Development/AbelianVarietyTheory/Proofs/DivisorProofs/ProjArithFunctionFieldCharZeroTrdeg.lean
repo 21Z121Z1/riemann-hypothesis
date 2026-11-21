@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTranscendenceBasisFunctionFieldArithmeticVarie
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinExpansionOfLipschitzHeckeZeta
 open GlobalTheory.LatVal GlobalTheory.LatJet
 set_option maxHeartbeats 1000000 in

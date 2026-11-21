@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HsLeWeightedSumBlockVariancesOfGap
 open Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformizedFamilyChartIndex
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodFamilyChartDomainStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodFamilyChartHolomorphicStatement

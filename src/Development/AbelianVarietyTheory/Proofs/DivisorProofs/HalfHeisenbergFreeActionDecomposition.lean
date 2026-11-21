@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreePointHalfLevelLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HalfLevelSubmodulePermutationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportPermutedDirectSumComplexificationStatement

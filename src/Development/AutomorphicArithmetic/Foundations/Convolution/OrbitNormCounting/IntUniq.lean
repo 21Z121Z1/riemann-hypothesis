@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.Transl
 import Development.AutomorphicArithmetic.UnitaryInvolutions.EventuallyMapMemMaximalCompactGL
 import Development.AutomorphicArithmetic.UnitaryInvolutions.EventuallySeparableOfIntegralModel

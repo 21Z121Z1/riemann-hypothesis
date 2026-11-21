@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkMapInitMinor
 import Mathlib.RingTheory.MvPowerSeries.Basic

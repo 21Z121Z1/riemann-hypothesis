@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WithLocPre
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LabConj
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RatInEig

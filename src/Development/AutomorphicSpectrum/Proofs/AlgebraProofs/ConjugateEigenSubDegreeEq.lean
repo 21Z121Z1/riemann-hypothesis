@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LinearIndependentMapVec
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsSplitInjectiveAndExists
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ShortExactEigenSubDegreeStatement

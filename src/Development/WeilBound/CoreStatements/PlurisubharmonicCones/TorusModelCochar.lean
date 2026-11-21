@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.IntValSmul
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUniqueLeftBasisCoordsAdicCompletion
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieMultIffExistsFrame

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CongruenceLevelEqDepthSucc
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanMapNabKDelK

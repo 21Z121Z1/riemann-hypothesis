@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Tactic.Polynomial.Basic

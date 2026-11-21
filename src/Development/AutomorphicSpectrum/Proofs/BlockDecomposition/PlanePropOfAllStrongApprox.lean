@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjMemSupp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsOfConjEq
 

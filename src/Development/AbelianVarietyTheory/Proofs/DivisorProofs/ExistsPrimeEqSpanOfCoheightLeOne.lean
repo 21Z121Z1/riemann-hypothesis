@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.Monotonicity.Lemmas
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens

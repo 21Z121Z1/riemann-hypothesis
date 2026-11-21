@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstFnCompSpMap
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LogDerivativePrincipalPolarisationIndependent
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CechPrimitive

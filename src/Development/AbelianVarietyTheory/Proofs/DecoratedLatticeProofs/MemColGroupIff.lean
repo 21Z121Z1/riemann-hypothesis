@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCompactOpenLatticeStabilizerAtPlaces
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BaseMatrixGlApply
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuedLtOfMem

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.GaussianComplex
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.QuotientMetricDivisors.Statement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.FractionalIdeal.Norm

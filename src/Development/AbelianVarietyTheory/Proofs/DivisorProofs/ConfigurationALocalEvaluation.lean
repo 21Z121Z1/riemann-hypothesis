@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardEvaluationGoodModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigurationAGaussianIntegral
 open scoped TensorProduct NNReal Matrix ENNReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SumExpSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinIndMapRangeField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalDegreeLeOfColW

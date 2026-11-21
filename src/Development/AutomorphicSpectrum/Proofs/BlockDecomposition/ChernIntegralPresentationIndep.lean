@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralWeightIndepStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralPresentationTransferStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace MeasureTheory

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdjoinRangeGLEqTopMatrix
 open Matrix Formalism.UG Formalism.L2.DIV GlobalTheory.LevNorm
 set_option maxHeartbeats 1000000 in

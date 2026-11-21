@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodVectorMoebiusTransformStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvatureReframedMetricEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtMapCompStatement

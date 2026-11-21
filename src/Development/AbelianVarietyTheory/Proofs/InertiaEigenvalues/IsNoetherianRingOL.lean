@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Saturated
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubstInvariants
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralCyclotomicChar

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocExtProper
 import GroundTheory.AutomorphicForms.GL2.GodementSectionFactor
 

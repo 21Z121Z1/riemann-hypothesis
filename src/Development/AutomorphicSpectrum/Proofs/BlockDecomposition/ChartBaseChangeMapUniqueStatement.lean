@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartBaseChangeMapUnique
 open CrystallineSemistableComparison.Onto GlobalTheory.CompanionTheory.SurjectionOntoH4
 set_option maxHeartbeats 1000000 in

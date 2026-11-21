@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms
 import Mathlib.Algebra.Order.Positive.Field

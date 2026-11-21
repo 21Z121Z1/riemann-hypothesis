@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothIntegralLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRepsSumEqZero

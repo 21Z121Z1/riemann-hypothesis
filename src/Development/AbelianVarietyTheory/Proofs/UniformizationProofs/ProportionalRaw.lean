@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpFLinear
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ChainVal
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ProportionalField

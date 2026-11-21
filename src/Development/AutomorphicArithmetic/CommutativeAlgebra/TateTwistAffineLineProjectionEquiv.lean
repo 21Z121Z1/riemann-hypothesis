@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.InjectiveComplexProductSectionMapQuasiIso
 import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.HomotopyInvarianceEtale

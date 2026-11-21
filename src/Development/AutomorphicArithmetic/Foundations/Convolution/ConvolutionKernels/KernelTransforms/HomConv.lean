@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.MultiplicityOne.OpenSubgroupRep
 
 open MeasureTheory NumberField IsDedekindDomain

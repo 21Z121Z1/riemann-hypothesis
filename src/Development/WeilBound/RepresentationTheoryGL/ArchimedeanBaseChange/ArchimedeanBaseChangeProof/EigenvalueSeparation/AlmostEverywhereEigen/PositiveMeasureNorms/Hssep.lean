@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.EigenvalueSeparation.AlmostEverywhereEigen.OneStepOf
 import Mathlib.MeasureTheory.Measure.SeparableMeasure
 open PositivityTheory.Rg.BcB.E1 PositivityTheory.Rg.BcB.E2

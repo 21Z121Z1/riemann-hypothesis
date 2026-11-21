@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKerTorusExtension
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoFromNormalization
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InterNumDetNonposSplitTorus

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.HasCMByStable
 
 open PowerSeries GlobalTheory.Honda Formalism.L2.Th1.CM

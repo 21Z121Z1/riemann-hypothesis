@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IncAdjYZeroMemLatOIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StaircaseLatticeIsotropicLineIdealIffStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselCoreLatticeMeetsLineOfZIdealStatement

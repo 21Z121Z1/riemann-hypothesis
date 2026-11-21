@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsMemKOEqStdFrameMulOfIsPrimFrameFin
 import Development.AutomorphicArithmetic.DivisorFrames.HaarVolKOLeResCardPowOfCongruenceLe
 import Development.AutomorphicArithmetic.DivisorFrames.UnramifiedCharacterInvariant

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SatakeParameterSphericalProductSpehQuotients
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.TcAnti
 

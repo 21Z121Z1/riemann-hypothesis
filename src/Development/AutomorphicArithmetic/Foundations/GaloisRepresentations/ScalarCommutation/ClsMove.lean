@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ScalarCommutation.TypeSlice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DformRelEquivalence
 

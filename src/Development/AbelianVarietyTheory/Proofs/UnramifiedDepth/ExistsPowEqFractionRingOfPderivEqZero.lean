@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsPthRootOfDerivationZeroStatement
 import Mathlib.RingTheory.MvPowerSeries.Derivative
 import Mathlib.RingTheory.MvPowerSeries.Expand

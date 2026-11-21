@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitKOfIsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTangentPresentationPrime
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

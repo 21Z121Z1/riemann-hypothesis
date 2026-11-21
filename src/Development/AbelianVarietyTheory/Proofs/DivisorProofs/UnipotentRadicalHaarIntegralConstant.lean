@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalRationalTranslateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinTransverseTermFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightFunctionCompactRightTranslateStatement

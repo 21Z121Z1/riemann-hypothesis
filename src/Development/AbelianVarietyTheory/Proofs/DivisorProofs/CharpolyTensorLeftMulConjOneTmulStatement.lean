@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyTensorLeftMulConjOneTmul
 open GlobalTheory.LKTrip GlobalTheory.LKMid
 open scoped TensorProduct Classical

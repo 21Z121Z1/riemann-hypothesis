@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasureEqHaarProdOfLeftInvariant
 open MeasureTheory Topology Matrix

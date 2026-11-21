@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionEqZeroOfValuesStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasValues
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.BochnerG2.NcVOneDecomp
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.SltEqZeroOfCompact
 

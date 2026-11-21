@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.DehomogenisingEqZeroIff
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

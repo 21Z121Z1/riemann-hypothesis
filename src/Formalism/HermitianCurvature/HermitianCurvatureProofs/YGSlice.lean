@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PtSizePtG
 
 namespace Formalism.FourierDecayAlt.P.FormNormSumIdentities

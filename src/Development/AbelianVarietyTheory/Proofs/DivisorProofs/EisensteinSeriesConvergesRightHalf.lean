@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightFirstColumnPositiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinLineRepsExistStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinHeightLowerBoundStatement

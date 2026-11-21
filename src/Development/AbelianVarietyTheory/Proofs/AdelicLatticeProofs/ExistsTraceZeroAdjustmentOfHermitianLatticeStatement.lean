@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsTraceZeroAdjustmentOfHermitianLattice
 open NumberField IsDedekindDomain Matrix GlobalTheory.UTrans GlobalTheory.AdLat
 open scoped TensorProduct

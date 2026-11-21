@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelFamInf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedProductHeckeSumStatement
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter

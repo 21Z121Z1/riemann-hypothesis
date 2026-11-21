@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GpProjContinuous
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInducedBallIndicatorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantFiniteBallSumStatement

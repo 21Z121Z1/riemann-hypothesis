@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ThetaKeyFormula.ZeroSetFinite
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CoordIdealIsMultiProjPrime
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

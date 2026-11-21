@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.BlockSphereProbIsProbabilityMeasure
 
 namespace ReciprocityTheory.ChartRestriction.G.T0

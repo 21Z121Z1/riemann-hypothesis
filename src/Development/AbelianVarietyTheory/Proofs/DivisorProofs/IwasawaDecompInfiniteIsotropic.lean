@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxAdaptedPlaneEvaluation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianIsotropicVectorCartanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanUnitaryApproximationStatement

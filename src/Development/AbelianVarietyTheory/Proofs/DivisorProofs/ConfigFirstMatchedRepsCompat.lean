@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEqISupFockDeg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible

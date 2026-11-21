@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AllTorsMap
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IotaPointsAdditive
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsSmulPtSmulPt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.LeafChartRing
 import Mathlib.RingTheory.MvPolynomial.Ideal
 

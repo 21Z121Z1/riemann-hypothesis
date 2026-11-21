@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsCmTypeEmbeddingsIntoValuationRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjEqNegOfSqEqNegNat
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TypedPartSplitPrimes

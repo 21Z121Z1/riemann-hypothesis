@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasExponentZeroIff
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfHasValueAtInfinite

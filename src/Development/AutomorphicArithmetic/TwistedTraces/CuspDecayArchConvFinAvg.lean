@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.DecayUniform
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.CuspDecayHeights.CuspDecay

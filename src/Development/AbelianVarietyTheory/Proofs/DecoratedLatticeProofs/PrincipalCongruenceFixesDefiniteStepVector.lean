@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PrinInf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilOperatorLatticeStabiliserFixesVacuumNonsplit
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.OmegaQEmpty

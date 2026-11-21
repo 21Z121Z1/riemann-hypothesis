@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemFormsOnOfMemSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermAlongSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StdParEqFlag

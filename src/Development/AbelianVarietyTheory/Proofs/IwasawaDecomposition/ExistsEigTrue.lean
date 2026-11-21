@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValuationFixedLattice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EigenCompatibleOfBadSet
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EsymmMapMulConst

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferencesSpanIntertwinersStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsFurtherFurther
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CompletedTensorDiscreteSeriesIrreducibleFormalDeStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProjAbsHolds
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralInvOfSupport

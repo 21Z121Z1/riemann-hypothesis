@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierCoeffExpDecayOnCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSumFourierSeriesOfExpDecayStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOnFourierCoeffFamilyStatement

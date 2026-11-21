@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.RSubMean
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions

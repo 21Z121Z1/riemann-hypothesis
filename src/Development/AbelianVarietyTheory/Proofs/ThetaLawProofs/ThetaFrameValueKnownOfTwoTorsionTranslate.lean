@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.GenMove
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyNormalFormDetRatioTwoTorsionTranslateStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaFrameValueKnownOfPolarizedPullbackStatement

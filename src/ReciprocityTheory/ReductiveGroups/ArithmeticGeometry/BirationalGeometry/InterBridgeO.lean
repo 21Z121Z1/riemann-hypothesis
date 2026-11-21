@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Polynomial.Basic
 import Mathlib.Topology.Algebra.MvPolynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorFlagStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductConjugateStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalRingPointsExistsUniqueStatement

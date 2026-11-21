@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlobalFormAniso
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsPlacesSingleton
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HasIwasawaDecompositionDoubledSplitPlace

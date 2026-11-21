@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RayFieldTheta
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SmulCommClassGalIntegers
 

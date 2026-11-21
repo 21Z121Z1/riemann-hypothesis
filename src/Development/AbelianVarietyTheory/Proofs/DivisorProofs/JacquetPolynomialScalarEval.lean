@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix
 open scoped TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StereographicMeasureChange
 open MeasureTheory
 open scoped ComplexOrder ENNReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ReprMem
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Data.Rat.Star

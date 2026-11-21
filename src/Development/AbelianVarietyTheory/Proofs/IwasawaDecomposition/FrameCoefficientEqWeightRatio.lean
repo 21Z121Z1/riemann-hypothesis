@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramTransformOfCoordinateChangeImports
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToroidalCompactificationData
 open AlgebraicGeometry CategoryTheory NumberField Matrix

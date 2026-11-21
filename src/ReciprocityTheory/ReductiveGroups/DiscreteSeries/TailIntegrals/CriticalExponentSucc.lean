@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.VolumeUnivFinZero
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.GaugeSplittingAlgebra
 

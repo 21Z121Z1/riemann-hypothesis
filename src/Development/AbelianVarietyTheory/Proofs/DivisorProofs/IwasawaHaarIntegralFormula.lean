@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPositiveAveragingFunctionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaAveragingIntegralFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaQuotientIntegralFormulaStatement

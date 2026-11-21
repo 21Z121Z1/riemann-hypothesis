@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.GramAtLocalLog
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.ContDiffAtSqrtQuotNormSq
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HodgeMetricFramePropertiesStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelNonvanishingWeightsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericMapExtendsAfterScalingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorBundleMapDeterminedGenericStatement

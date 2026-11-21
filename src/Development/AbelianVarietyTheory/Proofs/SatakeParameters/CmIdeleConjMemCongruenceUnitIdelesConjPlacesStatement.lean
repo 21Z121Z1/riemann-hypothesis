@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmIdeleConjMemCongruenceUnitIdelesConjPlaces
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host
 open GlobalTheory.HeckeUnrExt

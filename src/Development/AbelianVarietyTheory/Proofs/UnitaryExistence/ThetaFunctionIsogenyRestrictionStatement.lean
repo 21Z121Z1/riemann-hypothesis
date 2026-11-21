@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ThetaFunctionIsogenyRestriction
 open Matrix
 open scoped ComplexOrder

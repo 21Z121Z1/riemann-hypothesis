@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifAlong
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj

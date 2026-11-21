@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PureTensorLinearInFactorAndHeisenbergDerivRealStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.APlusComm
 

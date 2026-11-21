@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialTriangular.SortedSpec
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential

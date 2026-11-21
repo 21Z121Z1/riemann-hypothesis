@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicGLNormOneSplitStatement
 import GroundTheory.AutomorphicForms.Reduction
 import Mathlib.Topology.ContinuousMap.CompactlySupported

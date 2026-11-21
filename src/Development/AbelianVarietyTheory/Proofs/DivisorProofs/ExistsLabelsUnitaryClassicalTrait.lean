@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRechartingThetaSystemAffineOpenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RechartAtUnitaryClassicalTraitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformisedModelLabelsUnitaryTraitStatement

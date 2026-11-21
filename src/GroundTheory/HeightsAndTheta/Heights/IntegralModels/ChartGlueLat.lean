@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Statements
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueLoc
 set_option maxSynthPendingDepth 1

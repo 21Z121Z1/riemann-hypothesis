@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GodementJacquetMinusOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GodementJacquetMinusTwo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableOnModulusPowBall

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TraceLogLeLogDet
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.PicardGroup

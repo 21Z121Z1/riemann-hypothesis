@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Alternates
 import Std.Tactic.BVDecide.Normalize.BitVec
 open GlobalTheory.HTW Formalism.BasicNotions Formalism.FrobeniusOrbits

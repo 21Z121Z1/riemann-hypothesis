@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.HilbertClassFieldModels
 import Mathlib.Algebra.Lie.OfAssociative
 set_option maxSynthPendingDepth 1

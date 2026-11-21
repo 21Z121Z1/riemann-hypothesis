@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergInvariantAdmissibleFormEqMulDiagonalIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinMApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackMemSB

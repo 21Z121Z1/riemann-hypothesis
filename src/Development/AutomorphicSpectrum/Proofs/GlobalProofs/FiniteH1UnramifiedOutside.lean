@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.Hypotheses.GalCoh
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HermiteFinitelyManyUnramifiedExtensionsStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FinitelyManyOpenSubgroupsBoundedIndexStatement

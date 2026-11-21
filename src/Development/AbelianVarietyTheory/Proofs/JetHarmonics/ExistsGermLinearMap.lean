@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ValCongr
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExpandsGSum
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameNStHolds

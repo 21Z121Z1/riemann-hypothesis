@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FracIdExistsTotPos
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmpleLiftOfNilpotentDividedPowersThickening
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomTrivIff

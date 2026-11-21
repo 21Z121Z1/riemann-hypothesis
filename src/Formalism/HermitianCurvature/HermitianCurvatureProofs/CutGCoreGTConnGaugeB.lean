@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.cut_GCore_GTConnCut
 import Mathlib.Analysis.Calculus.FDeriv.Star
 import Std.Tactic.BVDecide.Normalize.Prop

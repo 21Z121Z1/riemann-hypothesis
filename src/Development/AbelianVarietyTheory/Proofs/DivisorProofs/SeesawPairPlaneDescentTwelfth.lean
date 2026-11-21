@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairAdaptedPlaneThetaLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairAdaptedPlaneFourierStatement
 

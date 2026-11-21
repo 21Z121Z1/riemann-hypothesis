@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnesRepresent
 import Development.AbelianVarietyTheory.BlockTheory.SiegelEisenstein.FlatOmegaSeries
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsHilbertSchmidtOfFiniteDimensional

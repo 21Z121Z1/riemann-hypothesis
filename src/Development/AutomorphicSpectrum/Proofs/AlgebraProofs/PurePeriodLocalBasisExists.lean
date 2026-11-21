@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsIntegralPosDefPerturbationStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UltrametricDetNormStableStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NegDefBlockOfPosDefStatement

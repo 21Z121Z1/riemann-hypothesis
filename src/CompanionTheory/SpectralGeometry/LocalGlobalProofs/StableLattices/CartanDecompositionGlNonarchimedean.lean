@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.EntryMulSubOne
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CartanExists
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BallSubgroup

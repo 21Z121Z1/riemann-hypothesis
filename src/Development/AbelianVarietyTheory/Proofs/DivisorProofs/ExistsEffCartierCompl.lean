@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.Multiplier
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeFormula
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SysExOfPol

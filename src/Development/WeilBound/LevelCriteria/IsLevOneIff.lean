@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.RatBasisLinearIndependentInt
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.Data.Rat.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.StandardChartsLineOne
 import Development.EtaleCohomology.EtaleSheaves.ChartsPf
 import Std.Tactic.BVDecide.Normalize.Prop

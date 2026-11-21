@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainMeasureFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermSliceCuspFormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermSliceContinuousInvariantStatement

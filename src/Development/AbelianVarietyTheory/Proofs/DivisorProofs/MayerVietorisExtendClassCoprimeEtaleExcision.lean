@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsExcisionNbhdSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalizationPullbackInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwayCongrModOfIsCoprimeStatement

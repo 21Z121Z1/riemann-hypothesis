@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.OrbitLabellings.ColDefs
 import Development.AutomorphicArithmetic.OrbitLabellings.ExistsFrobeniusEquivariantLocalBasisCoordinates
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LintegralLintegralNormSqRiemannTheta
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.RingTheory.SimpleRing.Principal

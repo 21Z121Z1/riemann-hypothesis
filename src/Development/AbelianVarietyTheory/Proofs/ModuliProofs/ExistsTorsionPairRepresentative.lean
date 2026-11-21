@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPullbackPow
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueIota
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FinitePartOfIsFinitePart

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.PairRelationOfScaledRatio
 import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 

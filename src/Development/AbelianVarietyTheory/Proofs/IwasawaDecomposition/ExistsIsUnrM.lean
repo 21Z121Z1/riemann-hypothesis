@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.QLocTied
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRepEqBlocks
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeltaHalfMulUnrTorus

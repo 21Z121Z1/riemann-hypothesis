@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsRegularLocalRingAdicCompletion
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.SimpleRing.Principal

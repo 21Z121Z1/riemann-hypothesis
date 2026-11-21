@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ColumnOperationTripleForm
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CharacterOrthogonalityDual
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.KernelQuotientFinite

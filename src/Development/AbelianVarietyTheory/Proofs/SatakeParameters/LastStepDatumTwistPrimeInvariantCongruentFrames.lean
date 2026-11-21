@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.UnderTie
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntAtFormOfMemStdAt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LastStepDatumLawK1DepthTwiceM

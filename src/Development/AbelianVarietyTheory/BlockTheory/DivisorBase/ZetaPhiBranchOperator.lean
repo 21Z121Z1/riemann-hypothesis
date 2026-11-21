@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.CoefModB
 import Mathlib.Algebra.Module.StablyFree.Basic
 

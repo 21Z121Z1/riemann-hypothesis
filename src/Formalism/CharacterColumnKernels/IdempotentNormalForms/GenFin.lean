@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.GenRelMapApply
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.LenCokerOfDetNeZero
 import Mathlib.Combinatorics.Nullstellensatz

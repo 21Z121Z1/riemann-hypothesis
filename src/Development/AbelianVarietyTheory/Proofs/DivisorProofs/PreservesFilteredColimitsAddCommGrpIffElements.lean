@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Category.Grp.Colimits
 import Mathlib.Algebra.Category.Grp.FilteredColimits
 import Mathlib.Algebra.Order.Floor.Extended

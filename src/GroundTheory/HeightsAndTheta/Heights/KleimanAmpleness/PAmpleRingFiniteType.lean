@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AmpleRingFiniteTypeSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PAmpleAffineGen
 set_option maxSynthPendingDepth 1

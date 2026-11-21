@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.HasSumCoprimeIntegralEqIdeleIntegral
 import Development.AutomorphicArithmetic.WhittakerHecke.ExistsIdeleCorrectingLowerRightEntry
 import Development.AutomorphicArithmetic.WhittakerHecke.BottomRowCongruenceIffIdeleCongruence

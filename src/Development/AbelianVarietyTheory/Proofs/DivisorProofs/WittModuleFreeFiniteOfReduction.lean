@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WittFrobeniusPowEqOne
 import Mathlib.RingTheory.AdicCompletion.Functoriality
 import Mathlib.RingTheory.Henselian

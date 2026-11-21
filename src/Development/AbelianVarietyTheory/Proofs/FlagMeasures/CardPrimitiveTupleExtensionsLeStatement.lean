@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardPrimitiveTupleExtensionsLe
 open GlobalTheory.GramCount
 open scoped Classical

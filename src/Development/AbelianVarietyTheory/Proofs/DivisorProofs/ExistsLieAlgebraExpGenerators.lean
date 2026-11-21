@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordsSecondKindFormPreservingGroup
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff
 

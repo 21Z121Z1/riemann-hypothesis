@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IntegralBallPow
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.EvaluationGenEqZero
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ConeBall

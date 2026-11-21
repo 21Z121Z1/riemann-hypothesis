@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.ObjSeg
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ValuationNonnegIffIntegral
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis

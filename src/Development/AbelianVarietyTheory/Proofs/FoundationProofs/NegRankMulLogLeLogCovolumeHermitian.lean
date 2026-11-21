@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PosDefExistsFrame
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EmbGramDetConjugate

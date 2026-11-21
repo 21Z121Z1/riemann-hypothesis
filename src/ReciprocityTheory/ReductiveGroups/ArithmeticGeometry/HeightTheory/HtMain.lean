@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HtArith
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Imports
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HeightMinMaxFormula

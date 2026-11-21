@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompactificationCompEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyKeySecOfFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSecReadingDecreasingIntegerExponents

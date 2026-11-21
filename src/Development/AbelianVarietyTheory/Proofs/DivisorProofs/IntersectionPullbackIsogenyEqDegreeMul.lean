@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrHomEqAndIsProjOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyFlatFinrank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyPullbackStructureModuleIso

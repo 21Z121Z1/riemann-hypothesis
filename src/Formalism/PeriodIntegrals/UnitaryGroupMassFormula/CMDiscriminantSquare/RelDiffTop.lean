@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.MassRatio
 import Mathlib.RingTheory.DedekindDomain.Different
 

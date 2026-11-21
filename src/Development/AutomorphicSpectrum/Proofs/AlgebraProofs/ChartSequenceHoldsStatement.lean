@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartSequenceHolds
 open Module NumberField GlobalTheory.CompanionTheory.Ar.HT TensorProduct
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPsiMinusExact
 open GlobalTheory.PRep GlobalTheory.BZMir GlobalTheory.BZMir.Fun
 set_option maxHeartbeats 1000000 in

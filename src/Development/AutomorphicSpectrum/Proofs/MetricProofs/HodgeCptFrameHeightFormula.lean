@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorRatioRegularOfInverseStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ProdIicBlockDiagDetFactorsStatement

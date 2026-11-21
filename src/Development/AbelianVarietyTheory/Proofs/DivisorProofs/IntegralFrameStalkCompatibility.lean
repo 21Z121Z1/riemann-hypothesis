@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartFrameChangeDiagonalUnitsIntegralFrameStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.BarCompSubsetClosure
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol

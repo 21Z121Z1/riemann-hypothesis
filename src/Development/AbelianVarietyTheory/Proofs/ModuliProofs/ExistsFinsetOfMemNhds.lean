@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifferentiableOnLeftInverse
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.IsPreconnectedBlockUnits
 import Mathlib.Algebra.Order.Star.Real

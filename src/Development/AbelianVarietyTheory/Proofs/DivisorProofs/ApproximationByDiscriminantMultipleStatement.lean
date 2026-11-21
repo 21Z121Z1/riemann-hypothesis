@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ApproximationByDiscriminantMultiple
 open MvPolynomial Formalism.DegreeFormula GlobalTheory.FlagPoly
 set_option maxHeartbeats 1000000 in

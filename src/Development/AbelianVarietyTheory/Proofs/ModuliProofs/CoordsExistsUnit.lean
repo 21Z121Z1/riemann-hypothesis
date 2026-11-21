@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NotMemBasicOpenOfGeom
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.AwayLiftCompFromZeroRingHom
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIdealOfLocally

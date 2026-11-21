@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.PlaneCountTheoremWithConstants
 import Mathlib.NumberTheory.Harmonic.Bounds
 

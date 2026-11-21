@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.GaussValExists
 import Std.Tactic.BVDecide.Normalize.Prop
 

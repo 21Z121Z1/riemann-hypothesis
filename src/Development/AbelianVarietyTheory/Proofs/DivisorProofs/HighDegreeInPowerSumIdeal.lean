@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialReductionModElementaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanPsumEqSpanEsymm
 open MvPolynomial Formalism.DegreeFormula GlobalTheory.FlagPoly

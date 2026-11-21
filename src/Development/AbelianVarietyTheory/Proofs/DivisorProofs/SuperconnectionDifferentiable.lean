@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TranslationInv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormClosedOnCover
 open Matrix MeasureTheory Set Filter Topology

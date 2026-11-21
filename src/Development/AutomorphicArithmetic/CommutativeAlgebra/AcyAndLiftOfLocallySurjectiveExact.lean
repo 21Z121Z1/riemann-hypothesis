@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlueStatement
 import Development.AutomorphicArithmetic.CommutativeAlgebra.AcyMiddleOfShortExact
 import Development.AutomorphicArithmetic.CommutativeAlgebra.AcyRightOfShortExact

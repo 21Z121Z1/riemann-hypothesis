@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QWeilZeroCartier
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoPointInductionStepLogCanonicalStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace

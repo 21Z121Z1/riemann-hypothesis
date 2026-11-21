@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.DiagramFitsSourceRank
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KernelRationalReferenceTuple
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpwardOperatorPreservesRationality

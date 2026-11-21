@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgePeriodGram
 import Mathlib.Analysis.Real.Pi.Bounds
 open Matrix Complex Filter Topology

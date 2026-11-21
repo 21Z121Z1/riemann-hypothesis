@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.BirationalOfClosure
 import Development.WeilBound.CoreStatements.FlagImmersions.InteriorUnionEmpty
 

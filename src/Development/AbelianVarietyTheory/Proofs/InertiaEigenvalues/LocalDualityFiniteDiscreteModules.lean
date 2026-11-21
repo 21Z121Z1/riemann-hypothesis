@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GreenbergWilesTotallyComplex
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelAllEquivSel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteFieldExistsTraceFormDualBasesPowOne

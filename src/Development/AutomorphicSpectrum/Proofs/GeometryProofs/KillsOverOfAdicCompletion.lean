@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EqZeroOfMemMapPow
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharValMultiplicativeStatement
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpecialMapFinite

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.LateralTheory
 open NumberField Formalism.BasicNotions Classical Formalism.MainNotions Formalism.L2.Ker
 

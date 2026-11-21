@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.IntegralMem
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.BlkUInvVal
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension

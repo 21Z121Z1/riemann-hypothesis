@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ModelDdcForms
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PLCurveA
 import ReciprocityTheory.AnalyticForms.PotentialTheory.AtlasIndep

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.LenIdStatement
 import ReciprocityTheory.DualLattices.MemOfSumSingleEqZero
 

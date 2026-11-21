@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ColHeightSharpWith
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterSumLocalConstantThird
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LocPAAAndPrimesNe

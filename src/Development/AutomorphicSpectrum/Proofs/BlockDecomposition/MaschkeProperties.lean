@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducibleStatement
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Tactic.ENatToNat

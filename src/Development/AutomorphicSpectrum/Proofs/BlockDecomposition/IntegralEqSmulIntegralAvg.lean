@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarQK
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapWithDensityEqOfScale
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralNonnegNormaliserEq

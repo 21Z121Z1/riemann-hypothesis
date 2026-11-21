@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA
 import Mathlib.Order.CompletePartialOrder

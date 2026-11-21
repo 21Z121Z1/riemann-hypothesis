@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ResLocal
 import GroundTheory.LocalFields.MainTheorem
 set_option maxSynthPendingDepth 1

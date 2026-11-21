@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PolynomialDimension.DigitClassSize
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.RegularLocalRing.Defs

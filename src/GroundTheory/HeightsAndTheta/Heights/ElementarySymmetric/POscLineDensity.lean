@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StatementsOscLineDensity
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StatementsLaplacianHoloComp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterFS

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.MuGeOfMuLe
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.KeyRootOfKeyFormula
 import Development.AbelianVarietyTheory.Definitions.Degenerations.RigGen

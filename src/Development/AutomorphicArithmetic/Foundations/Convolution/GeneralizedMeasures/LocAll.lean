@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.LocHeckeInert
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LocHeckeSplit
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.PolyMem

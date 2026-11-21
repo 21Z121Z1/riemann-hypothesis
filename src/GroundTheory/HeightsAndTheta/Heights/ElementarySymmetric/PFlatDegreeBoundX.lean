@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FlatDegree.Statements
 import Mathlib.NumberTheory.NumberField.Discriminant.Different
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.SlopesFromSizeAndCount
 import Formalism.SizeWindowBrackets.PrimeClassLossHypothesesSatisfiable
 

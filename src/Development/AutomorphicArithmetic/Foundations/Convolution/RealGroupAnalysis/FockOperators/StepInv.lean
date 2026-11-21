@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.QuadraticFormAddExpand
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.FockOperators.WeilSignAnticommuteOperator
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.WeilRepresentation.ImportsTer

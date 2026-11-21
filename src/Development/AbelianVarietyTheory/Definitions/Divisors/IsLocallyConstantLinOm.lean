@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.MemKFinOfIsLocallyConstant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantLinOm
 

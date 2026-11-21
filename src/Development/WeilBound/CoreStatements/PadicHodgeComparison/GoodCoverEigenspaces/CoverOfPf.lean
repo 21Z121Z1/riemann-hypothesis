@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.GoodCoverEigenspaces.CoverOf
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GaloisActionWeightSpectralE1Apply
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HodgePullHodgePull

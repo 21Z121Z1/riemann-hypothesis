@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LocalPrimeGaloisActionPeriodT
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.MaximalIdealEqSpanT
 import GroundTheory.PAdicHodge.WAKummerEps

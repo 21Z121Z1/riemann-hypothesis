@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.IsRatSectionOn
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 set_option maxSynthPendingDepth 1

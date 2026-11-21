@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ModelSame
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCcIsEquivAtSerOfTie
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteGroupActsByLiftTranslationPrincipalType

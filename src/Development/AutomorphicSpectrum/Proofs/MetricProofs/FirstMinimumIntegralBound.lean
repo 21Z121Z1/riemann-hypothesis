@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GroupDict
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FirstMinimumAttainedWithBoundsStatement

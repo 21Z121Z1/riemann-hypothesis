@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitTorsOfGenericLevelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelLocallyNoetherianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericPointLiftToFieldStatement

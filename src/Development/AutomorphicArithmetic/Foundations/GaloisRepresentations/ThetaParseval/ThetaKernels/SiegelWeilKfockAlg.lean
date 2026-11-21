@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FockDecK
 
 set_option synthInstance.maxHeartbeats 200000

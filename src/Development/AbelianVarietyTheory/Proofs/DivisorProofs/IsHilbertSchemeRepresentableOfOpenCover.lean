@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsRepresentableOfCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertPointEqOfOpenCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertPointGlueOpenCoverStatement

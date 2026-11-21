@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyTorusExtensionOfIsAlgClosed
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
 

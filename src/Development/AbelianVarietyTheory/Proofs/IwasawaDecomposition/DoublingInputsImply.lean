@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RowRatW
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Hypotheses3OfSiegelWeil
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AtDatMultEq

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLengthCoinvariantsExactStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteTwistedRankQuotientStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OmegaEquivInducedFibreStatement

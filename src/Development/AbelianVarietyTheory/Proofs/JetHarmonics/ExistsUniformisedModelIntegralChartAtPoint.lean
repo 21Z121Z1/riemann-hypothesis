@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntChartFrTruncExists
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BaseChangeOfFiniteExtension
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StarRingExtOfStar

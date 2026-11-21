@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
 import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon

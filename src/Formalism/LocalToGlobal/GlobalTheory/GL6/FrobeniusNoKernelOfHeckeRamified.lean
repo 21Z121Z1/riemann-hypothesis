@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PSplitT
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondPreservesForms
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiamondCommDistinctPlaces

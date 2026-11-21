@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleRestrictionMirabolicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleRestrictionMirabolicRightStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacquetCharacteristicPolynomialLeftStatement

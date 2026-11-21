@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderContainsCharacters
 open GlobalTheory.CompanionTheory.Ar.BT TensorProduct
 set_option maxHeartbeats 1000000 in

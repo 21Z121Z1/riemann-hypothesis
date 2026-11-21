@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodMapFlatDerivative
 open Matrix MeasureTheory GlobalTheory.IndefiniteRowSideFullHecke.SiegelReframe
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKeyDatumAbelianLocusPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeyValueHomogOfFibres
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineOpenRingIsDomainNoetherianIntegrallyClosed

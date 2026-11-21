@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.RedAll
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.LossLe
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Cases

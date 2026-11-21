@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSectionCycleFormulaProjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeNatCastOfAddOneLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LtNatCastOfAddOneLtSucc

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.PublishedTheorems.PublishedGlobalResults.PrincipalizationOfPrincipalisation
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsStatementStatement
 

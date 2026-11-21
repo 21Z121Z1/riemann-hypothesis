@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalGaloisCompatibility.PAdicSplitting.InfLifts
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.Multi
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorOfMono0

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeLatIn
 
 open NumberField Module IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions.S.Lat GlobalTheory.Mass GlobalTheory.Mass.DiscOrder Formalism.HermitianLatticesTheory

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalizationRelativeDimZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelProductClosedImmersionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelativeDimClosedImmersionProductStatement

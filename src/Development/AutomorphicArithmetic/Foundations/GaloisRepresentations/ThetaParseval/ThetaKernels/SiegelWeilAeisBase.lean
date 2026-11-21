@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.HalfIndexLattices.SplitStab
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesConvergent
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightContinuousPos

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.TableDegreeThreeBase
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsPFIntZero
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsPFVert

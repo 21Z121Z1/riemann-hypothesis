@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Data.Finsupp.Pointwise

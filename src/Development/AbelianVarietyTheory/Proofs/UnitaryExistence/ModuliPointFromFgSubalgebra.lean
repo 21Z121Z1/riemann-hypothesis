@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt
 import Mathlib.AlgebraicGeometry.AffineTransitionLimit
 import Mathlib.Data.Finset.Functor

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.SSmooth
 import GroundTheory.IdeleRoots.ClassicalIdeles.FinOrdValGenProof
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsOpenIdeleSubgroupContainsCongruenceUnits

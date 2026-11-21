@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHermNDNegGram
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ConclusionZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPreHasLetters

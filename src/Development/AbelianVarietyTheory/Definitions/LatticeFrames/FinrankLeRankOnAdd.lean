@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerInclOn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SumNormSqOrthonormalLeHilbertSchmidt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DiagSOfSDiagAt

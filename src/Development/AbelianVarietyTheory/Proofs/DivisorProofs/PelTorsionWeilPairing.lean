@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsTorusAndQuotientHom
 import Development.AbelianVarietyTheory.Definitions.Divisors.FaithfulSMulAlgClosure
 set_option autoImplicit false

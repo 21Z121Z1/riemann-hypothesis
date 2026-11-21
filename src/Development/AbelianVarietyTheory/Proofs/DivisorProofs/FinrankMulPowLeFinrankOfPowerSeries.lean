@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearIndependentOfDistinctValuationLikeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankLeCardValuesStatement
 import Mathlib.Analysis.CStarAlgebra.Classes

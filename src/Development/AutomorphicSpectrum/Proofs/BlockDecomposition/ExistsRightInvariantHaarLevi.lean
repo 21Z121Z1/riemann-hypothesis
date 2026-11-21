@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRadNMulLevM
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModularCharacterAdelicGLEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantOfModular

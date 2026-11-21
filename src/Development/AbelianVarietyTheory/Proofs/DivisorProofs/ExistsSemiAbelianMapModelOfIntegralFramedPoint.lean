@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SemiAbelianDvrExtensionsIsoCompatible
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsAlgHomOfComp
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

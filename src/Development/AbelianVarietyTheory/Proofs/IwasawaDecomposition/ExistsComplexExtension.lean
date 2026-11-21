@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RhoDetPrimeEqMuTildeMulChiPow
 
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem

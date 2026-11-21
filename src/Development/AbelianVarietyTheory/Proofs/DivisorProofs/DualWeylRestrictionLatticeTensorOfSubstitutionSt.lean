@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
 import Formalism.GradedWeylDivisibility.FinalC
 import Mathlib.Algebra.AffineMonoid.Basic

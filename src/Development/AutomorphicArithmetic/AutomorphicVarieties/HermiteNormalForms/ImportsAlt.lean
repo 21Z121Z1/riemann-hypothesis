@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Mink3
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Stabfin
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.FaceDSingle

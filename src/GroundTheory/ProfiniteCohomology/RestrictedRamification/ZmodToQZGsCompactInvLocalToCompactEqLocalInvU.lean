@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.GsRootsToUnitsCompactComparisonCup
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLeHermitianRankAndHostDegreeEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedClassOfCmHostStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeFromConjugateComplementStatement

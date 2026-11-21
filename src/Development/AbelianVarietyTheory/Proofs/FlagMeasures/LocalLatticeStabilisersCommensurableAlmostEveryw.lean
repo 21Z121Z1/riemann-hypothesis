@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianTermStabilizerCommensurableStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DatumStabilizerPreservesTermLatticeGoodPlaceStatement

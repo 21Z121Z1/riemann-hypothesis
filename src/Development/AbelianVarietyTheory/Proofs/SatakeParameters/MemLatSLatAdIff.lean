@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.PNeatB
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.IsOrthCo

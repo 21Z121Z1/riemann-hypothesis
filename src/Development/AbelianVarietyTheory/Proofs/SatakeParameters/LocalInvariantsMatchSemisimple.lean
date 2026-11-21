@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SSAscent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContMapRepIotaOQ

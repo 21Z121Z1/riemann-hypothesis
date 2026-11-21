@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.DivisionRowsRationalLattice
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.TateTwists.EtalePrimitiveRootsExistLocally
 import Development.EtaleCohomology.TateTwists.EtaleSheafSectionLocallyIffOfPresheafFacts
 import Mathlib.RingTheory.RegularLocalRing.Defs

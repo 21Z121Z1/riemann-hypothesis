@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulEqZeroOfInf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.JointSmooth

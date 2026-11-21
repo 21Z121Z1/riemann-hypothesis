@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.MassNumeric
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.HostTorsionOrderLe
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC

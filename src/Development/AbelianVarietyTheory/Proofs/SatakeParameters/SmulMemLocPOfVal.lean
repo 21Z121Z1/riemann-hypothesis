@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeFactsAt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsHomogeneousOfMemWeyl
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsMulOfApprox

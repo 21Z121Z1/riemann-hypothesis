@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatakeParametersBoundedLatticeEigenfunction
 open GlobalTheory.LatHecke
 set_option maxHeartbeats 1000000 in

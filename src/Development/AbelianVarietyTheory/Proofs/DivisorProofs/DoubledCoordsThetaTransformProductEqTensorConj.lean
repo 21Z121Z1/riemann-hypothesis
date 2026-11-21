@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUSplittingInl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDblCoordDblD
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SphericalZero

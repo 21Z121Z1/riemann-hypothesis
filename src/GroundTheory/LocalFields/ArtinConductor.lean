@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.DifferentGalois
 import Mathlib.Data.Rat.Star
 import Mathlib.Order.Interval.Finset.Box

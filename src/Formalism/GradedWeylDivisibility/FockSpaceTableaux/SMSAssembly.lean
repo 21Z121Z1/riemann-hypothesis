@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.StatementC
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCassemLemmas

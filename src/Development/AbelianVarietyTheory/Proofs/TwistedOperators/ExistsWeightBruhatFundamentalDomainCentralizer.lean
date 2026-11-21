@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MeasurePreservingRmulQuotMeas
 open MeasureTheory Set GlobalTheory.Orb GlobalTheory.AutomorphicL2Unitary
 open scoped ENNReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiftReductionZeroOfMaximalStatement
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.PicardGroup

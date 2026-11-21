@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Adele.BaseChange.FiniteCoord
 import GroundTheory.GlobalFields.Adele.BaseChange.FiniteMap
 

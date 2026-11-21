@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ConjugateOrderData
 import Mathlib.LinearAlgebra.DirectSum.Finite
 import Mathlib.LinearAlgebra.Eigenspace.Pi

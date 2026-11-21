@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LintegralThetaSeriesUnfoldMirabolic
 open NumberField MeasureTheory Matrix GlobalTheory.CuspRep GlobalTheory.MirTower
 open scoped ENNReal

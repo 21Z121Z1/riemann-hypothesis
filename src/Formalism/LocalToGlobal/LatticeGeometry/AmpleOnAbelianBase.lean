@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
 import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 

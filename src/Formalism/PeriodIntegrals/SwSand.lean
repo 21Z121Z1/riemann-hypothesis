@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.LongWeylElementSquare
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 

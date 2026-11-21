@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyIntegrableRep
 import Mathlib.Topology.Compactness.Paracompact
 

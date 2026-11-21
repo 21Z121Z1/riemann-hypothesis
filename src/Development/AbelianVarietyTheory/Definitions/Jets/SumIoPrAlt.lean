@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothAdd
 
 open Matrix MeasureTheory Finset

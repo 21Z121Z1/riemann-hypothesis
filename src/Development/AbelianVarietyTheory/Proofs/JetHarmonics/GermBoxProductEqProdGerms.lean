@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameNStHolds
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ImportsBis
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet

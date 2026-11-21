@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.DiscreteSeries.DiscreteSeriesClassification.DiscreteSeriesExhaustion.SimpleDistinctness.ScalarCharacterOfL2Embedding
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ExistsUnitaryImage
 

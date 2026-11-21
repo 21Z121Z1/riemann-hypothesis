@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaB
 
 open scoped TensorProduct Matrix Topology Kronecker ComplexOrder Classical

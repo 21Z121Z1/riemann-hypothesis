@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubstUpperTriangularHahnMulAndOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaBasisLinearCombination
 

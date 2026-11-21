@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HyperbolicPlaceProducts.Statement
 import Formalism.GelfandTransference.HadamardGelfand.Hadamard
 import Mathlib.RingTheory.SimpleRing.Principal

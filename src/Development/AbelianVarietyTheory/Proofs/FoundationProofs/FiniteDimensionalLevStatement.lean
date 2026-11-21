@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLev
 open scoped MatrixGroups
 set_option maxHeartbeats 1000000 in

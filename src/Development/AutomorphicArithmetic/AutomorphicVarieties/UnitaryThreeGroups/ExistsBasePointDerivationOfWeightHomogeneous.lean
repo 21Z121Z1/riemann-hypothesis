@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.DerExtend
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.MvPowerSeries.Rename

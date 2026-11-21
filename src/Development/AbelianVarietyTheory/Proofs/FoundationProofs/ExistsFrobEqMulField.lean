@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LangXRoot
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.WittVector.Complete

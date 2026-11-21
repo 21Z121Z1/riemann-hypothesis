@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.RestrProd
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.SWeqOm
 import Mathlib.Algebra.Order.Ring.Star

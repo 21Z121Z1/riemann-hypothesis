@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.CmpPrime
 import Mathlib.RingTheory.Artinian.Instances
 import Mathlib.RingTheory.LocalProperties.Reduced

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceMatricesOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGeneralProjection
 import Mathlib.RingTheory.PicardGroup

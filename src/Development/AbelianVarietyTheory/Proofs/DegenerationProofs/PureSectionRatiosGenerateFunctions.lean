@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueIsRatio
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsPartPartSec
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GroupAlgebraSingleOneMemOfSpan

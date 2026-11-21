@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LagFrameIsLagFrame
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RallisInnerProductKernelIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SiegelWeilSumDoubleIntegralExchangeCuspFormsStatement

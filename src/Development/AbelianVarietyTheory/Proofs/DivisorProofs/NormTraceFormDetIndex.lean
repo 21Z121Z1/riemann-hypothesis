@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieBasisSpansUnitaryLieStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceProductSkewHermitianRealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceIntegralOfPreservedLatticeStatement

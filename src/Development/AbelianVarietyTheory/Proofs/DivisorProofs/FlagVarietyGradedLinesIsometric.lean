@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalFlagExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalFlagUniversalStatement

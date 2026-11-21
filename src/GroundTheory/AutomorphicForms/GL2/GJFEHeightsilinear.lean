@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CompactModCentre
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 

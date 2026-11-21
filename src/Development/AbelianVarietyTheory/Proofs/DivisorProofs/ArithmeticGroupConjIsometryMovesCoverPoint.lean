@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenScal
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FrameBorelGroupoidProperties
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FramedPointsLiftToLevelCover

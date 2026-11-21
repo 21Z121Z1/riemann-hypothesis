@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyDirectedOfBasis
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite
 set_option maxHeartbeats 1000000 in

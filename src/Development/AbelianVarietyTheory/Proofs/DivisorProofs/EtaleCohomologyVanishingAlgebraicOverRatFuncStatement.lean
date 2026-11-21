@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCohomologyVanishingAlgebraicOverRatFunc
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC
 set_option maxHeartbeats 1000000 in

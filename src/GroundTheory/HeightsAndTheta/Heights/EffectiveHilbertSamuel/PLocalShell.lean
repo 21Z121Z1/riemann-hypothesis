@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsLocalShell
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsShellPolar
 import Mathlib.Algebra.Module.StablyFree.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSplit
 

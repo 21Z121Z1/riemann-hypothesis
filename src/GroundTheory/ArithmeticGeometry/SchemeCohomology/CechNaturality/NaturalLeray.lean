@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.CechFunctor
 set_option maxSynthPendingDepth 1
 

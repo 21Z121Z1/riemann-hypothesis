@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.BlockEnds
 import Formalism.SharpRestriction.CuspSpanNormBounds.SArith
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Lemmata.SimultaneousEigenvectors.BlSimeig
 import Mathlib.LinearAlgebra.Eigenspace.Minpoly
 import Mathlib.RingTheory.PiTensorProduct

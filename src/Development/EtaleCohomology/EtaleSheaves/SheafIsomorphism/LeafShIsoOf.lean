@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.SheafIsomorphism.LeafSheafIsoOf
 
 namespace LateralTheory.E.LeafShIsoPf.Glue

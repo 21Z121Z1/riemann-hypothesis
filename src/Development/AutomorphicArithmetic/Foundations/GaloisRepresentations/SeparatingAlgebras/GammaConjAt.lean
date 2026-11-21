@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.MacdonaldNormalization
 import GroundTheory.AutomorphicForms.MacdonaldSpherical
 import Mathlib.Analysis.SpecialFunctions.Complex.Circle

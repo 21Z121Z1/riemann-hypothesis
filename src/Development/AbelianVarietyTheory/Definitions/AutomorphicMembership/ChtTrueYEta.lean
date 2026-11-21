@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosedPointMemAbLocus
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrivOfAbSt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDiscreteValuationRingOfMinimal

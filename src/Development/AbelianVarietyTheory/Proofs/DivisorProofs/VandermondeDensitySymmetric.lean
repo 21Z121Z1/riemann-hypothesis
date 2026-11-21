@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VandermondeWeightedRootProductSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VandermondeBoundaryTermSumIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VandermondeSecondDerivativeStatement

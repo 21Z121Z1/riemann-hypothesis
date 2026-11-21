@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliWordSumExpansion
 
 open Matrix MeasureTheory Filter

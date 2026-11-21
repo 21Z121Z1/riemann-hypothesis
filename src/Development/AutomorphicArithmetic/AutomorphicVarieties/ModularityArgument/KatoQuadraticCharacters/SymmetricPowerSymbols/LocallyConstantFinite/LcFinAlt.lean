@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.LocallyConstantFinite.LcFin
 import Mathlib.FieldTheory.Galois.Profinite
 import Std.Tactic.BVDecide.Normalize.Prop

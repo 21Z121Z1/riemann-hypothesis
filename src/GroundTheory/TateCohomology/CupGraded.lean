@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.CupProduct
 import GroundTheory.TateCohomology.CochainReverse
 set_option maxSynthPendingDepth 1

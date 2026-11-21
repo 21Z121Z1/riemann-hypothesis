@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanTracePairingBilinearNondegenerate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiFinRat
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DiscreteSeriesUpqUniqueOfClassification
 import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
 import Formalism.PeriodIntegrals.BesselMapUniq

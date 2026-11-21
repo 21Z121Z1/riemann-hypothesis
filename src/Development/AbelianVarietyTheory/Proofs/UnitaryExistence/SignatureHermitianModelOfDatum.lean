@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemIffConjugateNotMem
 import Mathlib.Analysis.Matrix.Order

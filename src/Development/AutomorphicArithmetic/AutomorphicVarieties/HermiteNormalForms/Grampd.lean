@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Gramlow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Grampsd
 import Mathlib.RingTheory.Etale.Weakly

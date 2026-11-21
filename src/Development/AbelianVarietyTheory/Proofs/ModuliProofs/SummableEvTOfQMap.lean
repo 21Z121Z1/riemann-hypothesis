@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.ThetaTowerRecognition
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CubNSucc
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DegenerationWeilPairingProperties

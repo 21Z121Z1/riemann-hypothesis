@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutDef
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaB
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.EtaDef

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.LieLatticeGenerator
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EigenvectorLieDegree
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocalRingTrivSqZeroExt

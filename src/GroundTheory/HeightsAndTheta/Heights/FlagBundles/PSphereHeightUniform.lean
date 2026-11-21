@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsIntervalMoments
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsSpherePowerMean
 set_option maxSynthPendingDepth 1

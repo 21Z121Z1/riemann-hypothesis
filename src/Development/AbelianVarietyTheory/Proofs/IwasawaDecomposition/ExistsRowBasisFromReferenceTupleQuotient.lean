@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RowsRestWordColumnUnitBaseTupleAlt
 import Formalism.LocalToGlobal.IndefiniteReal.PrincipalLevelLattice
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsAdelicChain

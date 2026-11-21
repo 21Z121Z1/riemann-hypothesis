@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.SumSatUnit
 
 open UpperTheory.ConvolutionTheory.R

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoordinatesExtendingRegularParameters
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.KaehlerBasisSpreadsToNeighbourhoodStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SmoothLocalRingFreeDifferentialsStatement

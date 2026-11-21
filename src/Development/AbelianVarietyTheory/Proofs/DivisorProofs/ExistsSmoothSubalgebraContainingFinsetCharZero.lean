@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSmoothFreeAway
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

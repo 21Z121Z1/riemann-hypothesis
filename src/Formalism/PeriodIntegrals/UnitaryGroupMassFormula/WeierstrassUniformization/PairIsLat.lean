@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.WeierUnif
 import Mathlib.Analysis.SpecialFunctions.Elliptic.Weierstrass
 import Mathlib.NumberTheory.ModularForms.Discriminant

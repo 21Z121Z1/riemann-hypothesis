@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.StablyFree.Basic

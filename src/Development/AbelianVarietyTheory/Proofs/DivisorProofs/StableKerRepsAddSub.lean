@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DatumOfIsIntegersLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKernelEquivConjugatePointsStatement
 open NumberField IsDedekindDomain WeierstrassCurve GlobalTheory GlobalTheory.Published GlobalTheory.CMModel Formalism.L2.Th1.F

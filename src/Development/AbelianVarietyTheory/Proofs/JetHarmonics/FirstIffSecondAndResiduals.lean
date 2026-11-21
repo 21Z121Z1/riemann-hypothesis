@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.ThetaSpanAdjoint
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PushMemHarmK
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ColumnMapShift

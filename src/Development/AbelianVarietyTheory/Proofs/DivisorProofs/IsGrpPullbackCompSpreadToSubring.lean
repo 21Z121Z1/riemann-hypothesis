@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MorphismsEqSpreadToSubring
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPullDegEquivApply
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Order.Field.Basic
 import Mathlib.RingTheory.AdicCompletion.Basic
 import Mathlib.RingTheory.Ideal.BigOperators

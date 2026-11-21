@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocalFieldTopologyNormBallsStatement
 import Mathlib.Topology.UniformSpace.Uniformizable
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL

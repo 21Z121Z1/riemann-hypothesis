@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.InductionParabolic
 import GroundTheory.AutomorphicForms.AffineBruhat
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CmCharacterConjugateInverse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingLeviTranslationIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingHaarEigenUnfoldingStatement

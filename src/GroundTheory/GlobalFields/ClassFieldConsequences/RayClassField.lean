@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ClassFieldConsequences.RayClassFieldLocal
 import GroundTheory.GlobalFields.ClassFieldConsequences.IdealRayClass
 import GroundTheory.GlobalFields.ExistenceTheorem.ExistsIsAbelianGaloisRangeIdeleClassNormEqOfFini

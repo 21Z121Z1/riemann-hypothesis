@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasLoc
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasFrame
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PointHeightDegreeHypotheses
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.POneBlockStandard
 set_option maxSynthPendingDepth 1

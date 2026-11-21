@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RankLin
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueAct

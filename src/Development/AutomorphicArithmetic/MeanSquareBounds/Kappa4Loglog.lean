@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.PrimeSetTwoBounds
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mertensUpper
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.TailContour

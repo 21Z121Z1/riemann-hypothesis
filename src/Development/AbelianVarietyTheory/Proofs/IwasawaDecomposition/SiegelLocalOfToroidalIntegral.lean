@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTamePolyhedralFanStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOddLevelCoverStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolyhedralFanSiegelBaseChangeStatement

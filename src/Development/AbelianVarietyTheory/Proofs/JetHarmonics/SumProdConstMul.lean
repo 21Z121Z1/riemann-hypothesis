@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg
 

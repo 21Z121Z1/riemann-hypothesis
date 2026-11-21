@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.ThConst
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GlobalBasisAlgebra
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EpsPtScaleZero

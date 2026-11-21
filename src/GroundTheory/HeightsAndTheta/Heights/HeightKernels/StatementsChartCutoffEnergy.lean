@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartMass
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsSt
 import Mathlib.Analysis.SpecialFunctions.SmoothTransition

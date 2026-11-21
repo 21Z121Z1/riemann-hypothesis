@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatVInjective
 import GroundTheory.AutomorphicForms.ReductionMahler
 import GroundTheory.AutomorphicForms.AnisotropicUnitaryRes

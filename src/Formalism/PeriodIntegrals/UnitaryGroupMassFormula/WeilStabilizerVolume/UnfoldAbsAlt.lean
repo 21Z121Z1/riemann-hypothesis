@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.LintFibre
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Topology.Sheaves.Presheaf

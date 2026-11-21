@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotSt
 
 namespace ReciprocityTheory.ChartRestriction.G.FreeQuotientRank

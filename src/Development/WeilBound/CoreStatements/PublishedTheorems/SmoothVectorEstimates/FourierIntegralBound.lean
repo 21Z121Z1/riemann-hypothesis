@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.MirabolicColumnBlock
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FirstStatementC
 import Mathlib.Analysis.Fourier.FourierTransformDeriv

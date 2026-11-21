@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.AdelFinVol
 import Formalism.PeriodIntegrals.AdelClassFin
 import Formalism.LocalToGlobal.IndefiniteReal.AutomorphicEvaluation

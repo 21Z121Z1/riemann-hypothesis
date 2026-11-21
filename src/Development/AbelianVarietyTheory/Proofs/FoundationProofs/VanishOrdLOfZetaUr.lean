@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.KatoConj
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LocPublishedOfLitCoh
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsOrdinaryNormalFormUnramifiedSourceStatement

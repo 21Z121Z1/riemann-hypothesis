@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SameOffRefl
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientHeightLowerBoundShortIsotropicVector

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomothetyLatSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePrincMulUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualFormExistsUnique

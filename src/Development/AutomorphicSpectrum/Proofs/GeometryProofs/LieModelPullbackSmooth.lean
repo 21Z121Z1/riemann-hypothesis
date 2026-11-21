@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsVBOneOfChartGenerators
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeDominantCompat
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

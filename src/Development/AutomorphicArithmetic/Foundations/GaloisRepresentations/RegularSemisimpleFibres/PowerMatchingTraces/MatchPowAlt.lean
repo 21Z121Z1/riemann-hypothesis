@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.PowerMatchingTraces.MatchCut
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplit
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange

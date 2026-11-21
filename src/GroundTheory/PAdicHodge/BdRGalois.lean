@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.ThetaPlus
 import GroundTheory.PAdicHodge.AInfGalois
 set_option maxSynthPendingDepth 1

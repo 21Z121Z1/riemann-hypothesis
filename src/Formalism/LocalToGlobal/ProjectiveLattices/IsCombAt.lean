@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ThetaPt
 import Formalism.LocalToGlobal.ProjectiveLattices.EmbKCoe
 import Formalism.LocalToGlobal.ProjectiveLattices.AlgebraMapCAt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.MapScale
 
 open Module NumberField

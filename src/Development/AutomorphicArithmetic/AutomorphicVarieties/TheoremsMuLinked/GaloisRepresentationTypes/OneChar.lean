@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.ExistsDat
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.ULocEx
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.RingEx

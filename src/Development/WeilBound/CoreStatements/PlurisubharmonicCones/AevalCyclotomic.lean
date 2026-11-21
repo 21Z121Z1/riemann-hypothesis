@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartLatticeEigenCompat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieLatticeEvalFractionField

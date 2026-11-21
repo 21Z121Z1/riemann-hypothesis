@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCochFrame
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LinearIndependentFlagVec
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorusExt

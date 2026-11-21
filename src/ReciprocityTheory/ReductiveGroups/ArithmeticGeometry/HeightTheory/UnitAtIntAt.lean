@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.DiscLocal
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscAF
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.NormFactorizationClause

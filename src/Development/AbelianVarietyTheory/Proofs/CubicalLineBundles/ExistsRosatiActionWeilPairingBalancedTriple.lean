@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RingActIffOAct
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PointsSumsEqProducts
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RosatiAdjIffLamEq

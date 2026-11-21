@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SamePartIffOfNeZero
 
 open Polynomial Classical GlobalTheory.BadShare

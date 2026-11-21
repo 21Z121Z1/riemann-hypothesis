@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.AdjoinLow
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis
 import Mathlib.LinearAlgebra.TensorAlgebra.Basis

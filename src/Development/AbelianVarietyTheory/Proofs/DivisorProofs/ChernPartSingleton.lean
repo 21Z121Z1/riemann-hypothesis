@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoordinateNearGenericPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionLowerHeight
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderEqGenericPoint

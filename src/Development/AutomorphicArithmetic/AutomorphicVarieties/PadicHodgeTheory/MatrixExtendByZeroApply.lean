@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.AdmBilin
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.AdmHom
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.AdmSub

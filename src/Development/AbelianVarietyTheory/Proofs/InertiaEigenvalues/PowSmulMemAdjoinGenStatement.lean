@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PowSmulMemAdjoinGen
 open GlobalTheory.UnitLemma GlobalTheory.UnitLemma.Desc Polynomial
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAHaarEigenUnfolding
 
 open scoped TensorProduct NNReal Matrix

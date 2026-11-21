@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFiniteCoverPuncturedPolydisc
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Complex.Convex

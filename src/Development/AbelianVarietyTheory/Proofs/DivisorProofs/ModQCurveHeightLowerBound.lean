@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCurveOfDedekind
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProjectiveCoverGoodReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationPartOfPulledActionStatement

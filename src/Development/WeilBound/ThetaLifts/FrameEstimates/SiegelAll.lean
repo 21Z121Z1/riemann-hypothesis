@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.FrameEstimates.LintegralLeOfCover
 import Development.WeilBound.ThetaLifts.FrameEstimates.LeHeightOfIsTorusElt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport

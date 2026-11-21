@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormCompletedHeckeLCMOneLePhragmenLindelofStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCmValueCharacterConductorExponentsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridSizesLogBoundStatement

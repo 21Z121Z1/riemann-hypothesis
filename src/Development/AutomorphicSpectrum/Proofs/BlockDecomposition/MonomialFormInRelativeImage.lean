@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonLNegMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MonomialMemExceptionalIdeal
 import Std.Tactic.BVDecide.Normalize.Prop

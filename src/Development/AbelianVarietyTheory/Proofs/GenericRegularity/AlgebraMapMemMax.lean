@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AlgebraicCurves.PlacesRestrictInjective
 import Formalism.LocalToGlobal.ProjectiveLattices.LocalIntegralPolynomials.ExistsValuationAdaptedIndex
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 

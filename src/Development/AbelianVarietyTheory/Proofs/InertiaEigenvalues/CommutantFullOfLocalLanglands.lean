@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommutationFullnessOfReads
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsConjugateSplitPlaceOffStableSet
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff

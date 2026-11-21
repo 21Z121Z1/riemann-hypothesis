@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnrAtOfMulLeft
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameBlockTypeAtSplitPlace

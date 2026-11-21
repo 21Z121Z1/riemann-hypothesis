@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerIntegralUnfoldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerIntegralFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerIntegralConvergesStatement

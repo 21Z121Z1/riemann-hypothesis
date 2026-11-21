@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinsetMemTensorPowerFirstFactorAdjoinFinse
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC
 open scoped TensorProduct

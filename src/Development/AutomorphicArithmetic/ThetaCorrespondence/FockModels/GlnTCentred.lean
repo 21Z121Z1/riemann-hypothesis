@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.EssSquareIntegrableSegments
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.TSchur
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.TUnitcent

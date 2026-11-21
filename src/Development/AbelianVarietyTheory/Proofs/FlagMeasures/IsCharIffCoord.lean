@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldInducedClassFunction
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 

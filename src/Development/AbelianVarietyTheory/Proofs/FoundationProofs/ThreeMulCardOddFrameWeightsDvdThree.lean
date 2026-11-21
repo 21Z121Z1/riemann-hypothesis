@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Tactic.ENatToNat

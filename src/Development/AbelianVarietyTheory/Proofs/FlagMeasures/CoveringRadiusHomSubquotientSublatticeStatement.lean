@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoveringRadiusHomSubquotientSublattice
 open Formalism.HN Formalism.HermitianLatticesTheory Matrix NumberField Finset
 set_option maxHeartbeats 1000000 in

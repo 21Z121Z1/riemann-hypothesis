@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralOfTwistConjugatePlace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLevelFacts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousMapGLSpl

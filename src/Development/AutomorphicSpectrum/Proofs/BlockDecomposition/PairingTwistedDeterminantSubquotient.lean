@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNeg
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.BernsteinZelevinskyFiniteness
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PairingEquivContra

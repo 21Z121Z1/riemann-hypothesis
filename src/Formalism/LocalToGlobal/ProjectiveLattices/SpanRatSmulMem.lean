@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.IntegrableOnIntegrand
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LocalSituation
 import Mathlib.Algebra.AffineMonoid.Basic

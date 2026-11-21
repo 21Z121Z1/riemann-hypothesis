@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNoetherProjection
 import Mathlib.RingTheory.NoetherNormalization
 import Mathlib.RingTheory.TotallySplit

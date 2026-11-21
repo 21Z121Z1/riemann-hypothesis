@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Statements
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PCurvature
 set_option maxSynthPendingDepth 1

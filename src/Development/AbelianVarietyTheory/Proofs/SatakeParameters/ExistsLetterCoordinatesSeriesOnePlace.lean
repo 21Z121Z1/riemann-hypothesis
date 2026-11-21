@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdjointSubstLogarithmsIntoParametersOfLogExponen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIsFrobWToC
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FrobeniusMapSubstPair

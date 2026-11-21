@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.CMLattices.ExistsIsThetaDegOfIsLocalModel
 import Development.AbelianVarietyTheory.Definitions.CMLattices.CmHostBarHalfIntegerGenerator
 

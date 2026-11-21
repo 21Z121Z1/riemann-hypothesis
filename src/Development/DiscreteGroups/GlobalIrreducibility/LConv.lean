@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.LConvAltB
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
 

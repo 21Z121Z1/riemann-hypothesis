@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepFrame
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FrLocB
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.BaseEx

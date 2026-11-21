@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.NormComparisonConstants
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HalfEXIffOriented
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.LevelDvdBadN

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRemovableHyperplane
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PRiemannExtensionSlices
 import Mathlib.Analysis.Calculus.FDeriv.Pi

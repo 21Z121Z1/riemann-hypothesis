@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstLoc
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.IndicatorMem
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs

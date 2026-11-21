@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealCounting.ClassC
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.LogDisc
 

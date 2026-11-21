@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.LandherrAndLandherrSt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsCMFieldOfStar
 

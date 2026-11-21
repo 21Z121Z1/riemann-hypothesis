@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MoveStep
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsMulEqOfUnif
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PTermOfStd

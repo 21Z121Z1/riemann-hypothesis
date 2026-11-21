@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.SsCalcP
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.CharDR
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.PstExact

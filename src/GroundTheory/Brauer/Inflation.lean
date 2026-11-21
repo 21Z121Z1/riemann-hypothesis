@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.Brauer.CrossedProductInj
 import GroundTheory.Brauer.BaseChange
 set_option maxSynthPendingDepth 1

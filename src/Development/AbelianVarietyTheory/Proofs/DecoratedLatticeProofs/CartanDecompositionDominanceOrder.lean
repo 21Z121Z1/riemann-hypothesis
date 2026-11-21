@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCoType
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PosIffLtCard
 import Mathlib.Algebra.Order.Ring.Star

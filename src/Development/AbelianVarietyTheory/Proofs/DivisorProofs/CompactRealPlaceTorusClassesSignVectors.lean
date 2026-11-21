@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactWeyl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlaceCompactTorusClassesCompactWeylCosetsStatement
 open MeasureTheory Set Filter NumberField IsDedekindDomain

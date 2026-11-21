@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeIdealExtensionLocalDomainStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GroupSchemeIntegralNoetherianStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineBundleSectionDivisibleStatement

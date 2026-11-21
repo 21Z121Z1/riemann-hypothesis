@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasLinForms
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialSupportHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AssociatedOfHeightOneLocalizationsStatement

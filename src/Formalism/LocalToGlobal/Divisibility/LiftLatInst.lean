@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.LiftLat
 import Formalism.LocalToGlobal.Columns.RowFormsLemmas
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.PHermitianDetMono
 
 open Matrix GlobalTheory.CompanionTheory.Ar.PB

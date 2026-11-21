@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjInvGradedReferenceLines
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviAtSubConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiPolynomialBoundInDirection

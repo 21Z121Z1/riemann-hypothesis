@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StLocRingFrac
 import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
 set_option maxSynthPendingDepth 1

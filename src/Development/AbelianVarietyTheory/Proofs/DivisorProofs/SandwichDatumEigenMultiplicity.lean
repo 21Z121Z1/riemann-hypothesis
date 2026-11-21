@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepTraceEqMulAlgebraTraceDvrStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichDatumActionsRingHomsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichDatumTraceEqStatement

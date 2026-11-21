@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DwCons
 import Mathlib.Analysis.Calculus.Deriv.Pi
 

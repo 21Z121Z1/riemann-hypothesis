@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNilpotentOfComap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdEqZeroOfSuccLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmallChartPairAlongLinearMapStatement

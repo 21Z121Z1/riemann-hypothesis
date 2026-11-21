@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwKerIffAverage
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSmoothSmInd
 

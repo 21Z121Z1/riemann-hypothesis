@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdempotentTransfer.TraceFormulaOfRankDegree
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.Monotonicity.Lemmas

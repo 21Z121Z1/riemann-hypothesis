@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SandPS
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.ConstTerm
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SetIntegralCosets

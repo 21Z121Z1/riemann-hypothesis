@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.LiftWord
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.StatementB
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

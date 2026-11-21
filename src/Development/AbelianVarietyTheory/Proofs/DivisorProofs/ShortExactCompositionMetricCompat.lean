@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChgFromBlocksEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceSubmatrixSumMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotStages

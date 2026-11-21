@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.NullSec
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

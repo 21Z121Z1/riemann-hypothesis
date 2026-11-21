@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorScalarUniformizer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix GlobalTheory.CellScalarTwo

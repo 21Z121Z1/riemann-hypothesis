@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JumpIffMultNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEmbeddingIdempotentTensor
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamSubrepQuotientAndStrictnessStatement

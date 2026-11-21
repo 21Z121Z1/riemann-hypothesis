@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleVanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmplePosPowAffineBaseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.H1VanishingAffineBaseStatement

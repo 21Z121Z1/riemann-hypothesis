@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalThetaGoodPlaceLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentIntegralAdaptedPlaneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneLocalVectorInvarianceStatement

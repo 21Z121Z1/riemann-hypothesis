@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HidaCompleteRings.EigOfQuot
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.PicardGroup

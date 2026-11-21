@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ReductionHeight
 import GroundTheory.AutomorphicForms.ReductionIdele
 import Mathlib.RingTheory.Etale.Weakly

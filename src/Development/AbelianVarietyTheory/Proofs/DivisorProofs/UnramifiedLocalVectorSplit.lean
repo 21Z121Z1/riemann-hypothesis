@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipAugLeJacKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedLineKernelDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodPlaceInducedIntertwinerExistsStatement

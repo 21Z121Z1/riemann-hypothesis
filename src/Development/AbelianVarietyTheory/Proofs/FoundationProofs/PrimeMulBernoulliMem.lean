@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Integral
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

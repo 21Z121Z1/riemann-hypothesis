@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EvParamsOfRows
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal

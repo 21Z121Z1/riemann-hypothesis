@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmpOfIsCocycle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueIsPullForm
 open CategoryTheory AlgebraicGeometry Limits

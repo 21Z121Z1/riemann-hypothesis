@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisCohomology.Statement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.RamificationInertia.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.FibreFactorHolds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VandermondeSeparation
 import Mathlib.Algebra.Order.Ring.Star

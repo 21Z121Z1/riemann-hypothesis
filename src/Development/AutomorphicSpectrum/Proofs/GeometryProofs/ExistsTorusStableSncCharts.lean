@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionRegularLocalRingStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncResolutionCoverAndCone
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLocA

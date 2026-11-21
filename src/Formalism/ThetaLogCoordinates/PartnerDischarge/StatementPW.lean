@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.StatementTM
 
 namespace Formalism.InvariantFactorPaths.OddLevelGainBounds

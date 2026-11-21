@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.SphericalMonomials.MonomSt
 import Mathlib.LinearAlgebra.Matrix.PosDef
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ChooseLePowDivFactorial

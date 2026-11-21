@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PairingDivisors.PairingDivisorProofs.Height
 
 open Module NumberField IsDedekindDomain Finset

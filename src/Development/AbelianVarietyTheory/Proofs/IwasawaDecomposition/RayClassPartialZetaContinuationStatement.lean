@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassPartialZetaContinuation
 open NumberField IsDedekindDomain GlobalTheory.Mem Complex
 open scoped ComplexOrder

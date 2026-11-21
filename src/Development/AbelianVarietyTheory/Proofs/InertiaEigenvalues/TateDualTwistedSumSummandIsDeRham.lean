@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSummandTw
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BaseFont
 import Formalism.SharpRestriction.LevelLetterCocycles.PairedCharacterCondition

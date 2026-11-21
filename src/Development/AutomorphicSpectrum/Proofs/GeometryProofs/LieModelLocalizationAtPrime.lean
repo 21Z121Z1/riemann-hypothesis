@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeRegularAtLocalPointStatement
 import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
 import Mathlib.Algebra.AffineMonoid.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ExistsTeichmullerRepModPrime
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.KurNewton
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero

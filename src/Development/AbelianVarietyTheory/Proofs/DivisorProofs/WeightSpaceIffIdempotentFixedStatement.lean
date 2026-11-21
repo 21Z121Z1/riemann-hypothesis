@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightSpaceIffIdempotentFixed
 open scoped TensorProduct
 universe u

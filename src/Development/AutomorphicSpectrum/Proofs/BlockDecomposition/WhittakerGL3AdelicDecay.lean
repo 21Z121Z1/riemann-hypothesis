@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TransposeInvProperties
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MaxCompactTransposeInvWeyl
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerTransformProperties

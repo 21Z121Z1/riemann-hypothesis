@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FormallyUnramifiedOfCompOfEtaleOfSurjective
 import Mathlib.AlgebraicGeometry.Morphisms.FlatMono
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale

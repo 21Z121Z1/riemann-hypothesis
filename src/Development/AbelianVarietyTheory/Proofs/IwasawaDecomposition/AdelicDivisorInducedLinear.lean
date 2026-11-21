@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDivisorZeroTrivialStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDivisorInducedAddStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDivisorInducedNegStatement

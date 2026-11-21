@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsSpreadLocal
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsBasisIsoFree
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PVectorBundleRestrict

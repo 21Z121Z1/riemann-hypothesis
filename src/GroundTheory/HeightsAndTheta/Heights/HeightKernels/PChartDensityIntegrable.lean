@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.AMassStA
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartDensityIntegrable
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ChartMassAffine

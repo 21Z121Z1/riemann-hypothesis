@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCoverOpenImmersionNormalisedThetaClosureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EighthPowerFirstFactorThetaModelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullO1SectionCoordinatesPowerStatement

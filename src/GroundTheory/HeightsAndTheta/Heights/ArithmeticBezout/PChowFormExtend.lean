@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsBaseChange
 import Mathlib.RingTheory.Nullstellensatz
 import Std.Tactic.BVDecide.Normalize.Prop

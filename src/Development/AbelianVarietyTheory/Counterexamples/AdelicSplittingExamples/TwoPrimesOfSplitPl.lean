@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.RamificationInertia.Galois

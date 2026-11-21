@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrder
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta

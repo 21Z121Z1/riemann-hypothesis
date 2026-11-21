@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import Formalism.SharpRestriction.ElevenLe
 import Formalism.LocalRingCardinality.DataParams

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.LUnH
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.CountSpanEqZero
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.NormProducts.RelOfComap

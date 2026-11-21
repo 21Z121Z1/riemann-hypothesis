@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RankPosNegativeWeightBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeepGoodReductionStatement
 

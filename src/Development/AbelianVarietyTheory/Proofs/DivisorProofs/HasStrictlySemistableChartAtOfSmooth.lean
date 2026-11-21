@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsStrictlySemistableIff
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 import Mathlib.Order.CompletePartialOrder

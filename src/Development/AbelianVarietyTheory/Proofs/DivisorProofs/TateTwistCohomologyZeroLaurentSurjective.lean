@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullSpMapComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicPrimitiveVectorCompactRescale
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HZeroPullbackTwistBijective

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.TrivialExtensionSideWellFormed
 import Formalism.LocalToGlobal.Divisibility.DivisionHeightBoundColumns
 import Formalism.LocalToGlobal.Columns.HeckeInertTr

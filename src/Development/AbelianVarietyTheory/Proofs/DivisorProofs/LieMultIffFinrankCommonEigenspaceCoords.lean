@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.PicardGroup

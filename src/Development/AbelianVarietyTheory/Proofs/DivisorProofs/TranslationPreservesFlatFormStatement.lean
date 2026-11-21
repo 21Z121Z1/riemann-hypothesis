@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslationPreservesFlatForm
 open Matrix MeasureTheory GlobalTheory.IndefiniteRowSideFullHecke.SiegelReframe
 open scoped Real ContDiff

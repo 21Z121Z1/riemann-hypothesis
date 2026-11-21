@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EichlerIsometry
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DualInterSelfDualHermitianLatticeSubspaceStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AlgebraMapMemO

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.PSeries

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CvecSurjective
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects
 

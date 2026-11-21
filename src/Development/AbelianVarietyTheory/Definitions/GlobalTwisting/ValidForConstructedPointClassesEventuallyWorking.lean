@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
 

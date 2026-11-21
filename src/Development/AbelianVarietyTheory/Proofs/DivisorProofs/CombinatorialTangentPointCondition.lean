@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagPointTangentDualNumber
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CoordAtConstMulIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GrNormPosOfBasis

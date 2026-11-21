@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StZeroDimIsolated
 import Mathlib.Topology.Algebra.MvPolynomial
 set_option maxSynthPendingDepth 1

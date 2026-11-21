@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.MacdonaldHecke
 import GroundTheory.GlobalFields.CompletionAtPlace.Inertia
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU

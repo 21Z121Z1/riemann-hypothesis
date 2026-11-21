@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.GoodLat
 import GroundTheory.GlobalFields.Adele.Compact
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceDualB

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.ExistsUniquePairIff
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FlatIsoUnitGenerator
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsSmulPtSmulPt

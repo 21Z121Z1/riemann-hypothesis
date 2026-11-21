@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RankGapBounds.TheoremALocOfLemmaA
 import Formalism.PieriBlockIdeals.Statement
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs

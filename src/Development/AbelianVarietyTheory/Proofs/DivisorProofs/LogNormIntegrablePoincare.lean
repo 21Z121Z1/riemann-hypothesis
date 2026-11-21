@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasurableSetInterPreimage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothOnNhdOffBoundary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryPotentialSectionBoundStatement

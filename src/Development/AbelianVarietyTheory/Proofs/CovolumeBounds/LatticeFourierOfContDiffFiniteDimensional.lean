@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Group.ForwardDiff
 import Mathlib.Algebra.Module.ZLattice.Covolume
 import Mathlib.Algebra.Module.ZLattice.Summable

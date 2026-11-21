@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedGenericExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedPointLevelExtendsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointLatticeEvaluationStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFormIsCuspidalAtAllCuspsSL2
 open GlobalTheory.HeckeFamilyMatrices UpperHalfPlane CongruenceSubgroup
 open scoped MatrixGroups ModularForm Manifold

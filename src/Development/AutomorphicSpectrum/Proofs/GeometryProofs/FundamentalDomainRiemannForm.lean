@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Module.ZLattice.Covolume
 import Mathlib.Algebra.Order.Floor.Extended

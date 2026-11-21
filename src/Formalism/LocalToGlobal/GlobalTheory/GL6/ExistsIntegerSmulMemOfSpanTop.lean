@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedRankEqFinrank
 import Formalism.LocalToGlobal.GlobalTheory.GL6.RamifiedMaxSlopeLe
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ClearDenominatorsLattice

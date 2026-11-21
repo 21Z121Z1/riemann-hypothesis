@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PostOnGaLMemGoodPart
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLevChiFlagLEqOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfAdjointIdempotentPosType

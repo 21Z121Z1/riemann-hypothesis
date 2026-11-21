@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsConjAt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSplitChartOne
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels

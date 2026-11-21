@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.ConvSpec
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFin
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.UiwFin

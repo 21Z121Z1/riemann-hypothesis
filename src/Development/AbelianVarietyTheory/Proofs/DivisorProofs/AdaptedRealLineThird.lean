@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdaptedFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfiniteCompactLeviLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdeleWithArchimedeanComponents

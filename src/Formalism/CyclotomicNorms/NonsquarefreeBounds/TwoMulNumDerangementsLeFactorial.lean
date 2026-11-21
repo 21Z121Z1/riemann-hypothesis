@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CyclotomicNorms.DiscardKernel
 import Mathlib.Combinatorics.Derangements.Finite
 import Mathlib.Data.Int.Star

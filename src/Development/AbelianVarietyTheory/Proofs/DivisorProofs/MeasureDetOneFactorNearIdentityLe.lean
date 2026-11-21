@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PermMMulTranspose
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExpLogNearOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LamBallULe

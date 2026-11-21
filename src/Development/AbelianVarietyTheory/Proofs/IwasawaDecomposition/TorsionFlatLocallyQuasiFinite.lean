@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RTensorInjectiveOfFlatBaseChange
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIntegralNthRootTestModelPoint
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsUnitNatCastSections

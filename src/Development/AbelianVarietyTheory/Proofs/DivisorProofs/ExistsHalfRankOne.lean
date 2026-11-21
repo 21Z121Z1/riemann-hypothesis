@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EvenDefect
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.EqZeroIffSubsingleton
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.QuotientTiedToDatum

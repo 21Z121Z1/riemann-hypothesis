@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicGLn
 import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatDual
 import GroundTheory.AutomorphicForms.WhittakerGroups

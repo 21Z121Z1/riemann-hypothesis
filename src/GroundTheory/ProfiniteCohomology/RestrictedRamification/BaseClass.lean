@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseKummerDefs
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.ConePairing
 set_option maxSynthPendingDepth 1

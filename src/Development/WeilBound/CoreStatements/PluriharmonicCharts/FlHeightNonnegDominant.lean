@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagHeightPolynomialWeightForm
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XBirat
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XFlArith

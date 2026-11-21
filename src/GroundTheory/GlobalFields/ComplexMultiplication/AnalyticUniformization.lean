@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionIso
 import GroundTheory.GlobalFields.ComplexMultiplication.JInvariantHomothety
 set_option maxSynthPendingDepth 1

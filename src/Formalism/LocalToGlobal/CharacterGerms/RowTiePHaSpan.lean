@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePHaDefs
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePDescSpanSt
 import Mathlib.Algebra.Module.StablyFree.Basic

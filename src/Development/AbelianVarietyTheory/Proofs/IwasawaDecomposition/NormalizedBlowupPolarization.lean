@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GenericPreimageEqRangeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlatComapPowEffectiveCartierStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtendFiniteOverNormalDenseStatement

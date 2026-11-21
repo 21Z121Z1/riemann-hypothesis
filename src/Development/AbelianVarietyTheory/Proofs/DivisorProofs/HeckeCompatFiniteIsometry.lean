@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentPreservesLatticeHatStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RealIdemMulOfReal

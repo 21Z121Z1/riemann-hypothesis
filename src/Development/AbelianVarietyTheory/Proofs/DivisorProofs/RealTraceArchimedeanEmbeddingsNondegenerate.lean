@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.PlaceInjectivity.PlaceInjective
 import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
 import Formalism.LocalToGlobal.ProjectiveLattices.HalfOneAddSqrtNegIsIntegral

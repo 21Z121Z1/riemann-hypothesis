@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairAnisotropicThetaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairAnisotropicThetaRealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairAnisotropicThetaFiniteStatement

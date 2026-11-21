@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemRangeOfHasSumZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankInfMaximalUnramified
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormLeOneOfLt

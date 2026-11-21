@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.ClassRecordRowDimensionZero
 import Formalism.LocalRingCardinality.SpanPowerMembership.TrivialColumnsRamifiedTop
 

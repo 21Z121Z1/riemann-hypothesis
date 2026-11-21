@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.KerTens
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.Polynomial.Basic

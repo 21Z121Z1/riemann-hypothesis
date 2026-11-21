@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.CMCurveCharacterAction
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.RingOfIntegersSqrtNegThreeModFour
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsHolUnifReparam

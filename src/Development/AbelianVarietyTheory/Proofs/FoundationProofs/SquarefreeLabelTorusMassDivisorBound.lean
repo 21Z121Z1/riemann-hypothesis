@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MassDegTypeLeCycleTypeStatement
 
 open Polynomial Classical GlobalTheory.BadShare

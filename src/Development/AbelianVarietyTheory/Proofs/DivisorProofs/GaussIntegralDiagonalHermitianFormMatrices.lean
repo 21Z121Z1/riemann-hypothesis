@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasGaussIntegralCompactOpenPiStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussIntegralNormFormScaledEqSignAbsInvStatement
 open MeasureTheory Matrix GlobalTheory.KSp GlobalTheory.SplitUnitary

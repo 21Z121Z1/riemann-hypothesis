@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelPAdicComparisonStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCombinationLieGroupPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCombAtGBaseChangeStatement

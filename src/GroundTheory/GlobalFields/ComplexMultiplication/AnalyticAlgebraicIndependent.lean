@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicPoints
 
 open Filter Topology Set Polynomial

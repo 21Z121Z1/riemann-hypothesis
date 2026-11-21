@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.MajorantInvolutionDiagonalForm
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.MeasureTheory.Group.GeometryOfNumbers

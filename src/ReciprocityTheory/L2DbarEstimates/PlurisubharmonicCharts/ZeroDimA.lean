@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Topology.Sheaves.Presheaf

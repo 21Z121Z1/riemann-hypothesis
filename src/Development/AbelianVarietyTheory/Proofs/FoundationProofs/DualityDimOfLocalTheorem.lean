@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
 
 namespace GlobalTheory.BlochKato₂

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
 import Mathlib.RingTheory.PiTensorProduct
 

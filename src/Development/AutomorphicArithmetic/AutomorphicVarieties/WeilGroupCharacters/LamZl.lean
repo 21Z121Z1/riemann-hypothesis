@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
 import Mathlib.NumberTheory.Padics.RingHoms
 import Mathlib.Tactic.Polynomial.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.TruncLogEqOfPowEqZero
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.RingTheory.AdicCompletion.LocalRing

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 import Mathlib.LinearAlgebra.Matrix.PosDef
 import Mathlib.Topology.Covering.Basic

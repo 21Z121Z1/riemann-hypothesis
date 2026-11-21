@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.ArchChars
 import Mathlib.Data.Real.Sign
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FlagUnipotentLattices.PairingOrthogonalComplement
 
 namespace Formalism.HermitianLatticeCounting.S4

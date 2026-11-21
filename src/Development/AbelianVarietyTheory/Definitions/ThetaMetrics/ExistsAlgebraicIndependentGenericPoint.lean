@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.AevalEqZeroOfHomogeneousComponent
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis
 import Mathlib.LinearAlgebra.TensorAlgebra.Basis

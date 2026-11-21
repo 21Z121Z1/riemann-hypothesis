@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeGeneratorInvertConstantStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrModelOfNumberFieldPlaceStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProperDvrModelLatticeValuationStatement

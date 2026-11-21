@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfForallDual
 import Mathlib.LinearAlgebra.BilinearForm.Orthogonal
 

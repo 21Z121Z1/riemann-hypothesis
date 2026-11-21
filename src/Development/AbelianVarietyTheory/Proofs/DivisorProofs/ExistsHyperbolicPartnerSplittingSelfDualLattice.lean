@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneSplit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraMapTraceEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteUnimodularPlaneSplitAlongVector

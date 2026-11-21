@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CharpolySmul
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Polynomial.Basic

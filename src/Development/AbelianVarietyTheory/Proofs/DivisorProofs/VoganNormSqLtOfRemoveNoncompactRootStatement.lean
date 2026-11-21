@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VoganNormSqLtOfRemoveNoncompactRoot
 open Matrix GlobalTheory.HolDS
 open Formalism.REAL (GlRel IsUnitary IsWeight KHighest root Jm inG)

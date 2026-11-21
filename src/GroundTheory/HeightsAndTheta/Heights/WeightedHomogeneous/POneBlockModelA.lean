@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightObjects
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.DualModel
 set_option maxSynthPendingDepth 1

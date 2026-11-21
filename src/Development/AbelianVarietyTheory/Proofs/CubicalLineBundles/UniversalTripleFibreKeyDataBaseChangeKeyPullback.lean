@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SabMapCancelAndCompOver
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PrincipalTriplePullback
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SecTieBaseChange

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFundamentalDomainClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainSubgroupMeasureConstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainIndependentIntegralStatement

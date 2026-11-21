@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransl
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

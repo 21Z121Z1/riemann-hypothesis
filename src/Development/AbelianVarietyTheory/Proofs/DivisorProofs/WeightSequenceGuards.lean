@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PaddedWittNormSquare
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PaddedLastEntry
 

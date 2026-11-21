@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumMemOfStable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryEuclideanModelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantIntertwinesDualStatement

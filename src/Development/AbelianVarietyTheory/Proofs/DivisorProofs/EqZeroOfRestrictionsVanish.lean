@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
 import Formalism.LocalToGlobal.ProjectiveLattices.ReadAlg
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

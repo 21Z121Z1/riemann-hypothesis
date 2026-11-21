@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwayHomCompAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleProdOfEtaleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueFieldAtPrimeIsSepClosedOfFiniteTypeStatement

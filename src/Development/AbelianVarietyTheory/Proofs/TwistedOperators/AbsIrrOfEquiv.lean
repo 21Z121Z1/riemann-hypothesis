@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupport
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointIntertwinerDiscreteSeriesDescends
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurAndTensorSubmodule

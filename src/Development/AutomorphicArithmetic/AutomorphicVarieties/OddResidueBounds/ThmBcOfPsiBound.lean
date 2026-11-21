@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.KillPow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.LenPow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.Imports

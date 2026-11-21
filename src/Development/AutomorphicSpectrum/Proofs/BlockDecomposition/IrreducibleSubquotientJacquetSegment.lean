@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SupportSubschemeEmbedding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviIrreducibleTensorDecompositionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPos

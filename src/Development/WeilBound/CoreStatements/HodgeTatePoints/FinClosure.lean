@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PFiniteIntegralClosure
 
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField

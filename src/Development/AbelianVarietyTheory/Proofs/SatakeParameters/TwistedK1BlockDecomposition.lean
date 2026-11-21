@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ChainTopLawTw
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CongruenceLevelEqDepthSucc
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemZmuOfPowPred

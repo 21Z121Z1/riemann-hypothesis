@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinAddSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishRealOfVanishInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatModelNumeratorBoundStatement

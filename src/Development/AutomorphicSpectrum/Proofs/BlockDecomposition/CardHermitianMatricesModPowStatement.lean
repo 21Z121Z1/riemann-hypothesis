@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardHermitianMatricesModPow
 open PositivityTheory.PfSWUS.Loc GlobalTheory.CompanionTheory.UnrDens
 set_option maxHeartbeats 1000000 in

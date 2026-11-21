@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormSmoothOnCover
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTorsionFormPoint
 open Matrix Set Filter Topology

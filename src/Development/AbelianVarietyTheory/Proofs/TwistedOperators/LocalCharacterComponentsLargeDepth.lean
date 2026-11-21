@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EpsVEqOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationOfMemNotMemSq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsThetaChrTied

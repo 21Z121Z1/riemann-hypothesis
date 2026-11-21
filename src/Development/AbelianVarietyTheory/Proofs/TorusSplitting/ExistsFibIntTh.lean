@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TorusSections.ExistsSecTie
 import Formalism.LocalToGlobal.ProjectiveLattices.ThetaFramePf
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.GenMove

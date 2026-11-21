@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.QuotFubini
 import GroundTheory.LocalFields.Integers
 import GroundTheory.LocalFields.Uniqueness

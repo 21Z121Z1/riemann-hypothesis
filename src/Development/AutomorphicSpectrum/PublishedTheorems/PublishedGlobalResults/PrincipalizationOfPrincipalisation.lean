@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.Monomial
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.ConclusionOfSmooth
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NotSubsetOfDenseCompl

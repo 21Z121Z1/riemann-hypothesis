@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeTupleStatement
 
 namespace Formalism.IndefR.NonGenericAndKTwoTheorems

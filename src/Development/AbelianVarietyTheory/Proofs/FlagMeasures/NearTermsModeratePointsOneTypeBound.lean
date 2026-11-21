@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.CuspFrame
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.NearNonzeroTerms

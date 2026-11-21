@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.FixedBaseSurjectivity.GaloisPeriodCyclotomic
 import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.ThetaAlgebraMap.ThAlgebraMap
 

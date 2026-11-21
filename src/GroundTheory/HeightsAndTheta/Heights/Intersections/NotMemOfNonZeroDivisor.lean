@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExistsFunFieldMulEq
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ArithVarZero
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsHorizontalOfDimOne

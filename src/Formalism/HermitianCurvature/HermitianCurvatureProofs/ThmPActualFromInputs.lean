@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.EqOfContinuousOffZero
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopIdentFromParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LiftMemMatrixAlgebra

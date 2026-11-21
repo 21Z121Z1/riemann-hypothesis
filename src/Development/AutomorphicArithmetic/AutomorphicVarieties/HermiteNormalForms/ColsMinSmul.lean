@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Imports
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Spanpsd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Exbasis

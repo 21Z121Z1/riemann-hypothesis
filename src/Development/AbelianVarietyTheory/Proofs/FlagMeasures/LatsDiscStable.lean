@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrbitWeightedStabilizerSumTransportEquivariant
 import Formalism.HermitianLattices.StatementMass
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

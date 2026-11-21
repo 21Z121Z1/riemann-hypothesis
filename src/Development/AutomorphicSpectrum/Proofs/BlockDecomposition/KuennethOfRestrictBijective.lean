@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairingIsoOfComponentIsosStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairingRestrictCompatStatement
 set_option backward.isDefEq.respectTransparency false

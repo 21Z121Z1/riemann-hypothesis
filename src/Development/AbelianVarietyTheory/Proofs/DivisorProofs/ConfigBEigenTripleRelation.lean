@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationIsoBTriplePairStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerLocallyConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCoefficientTendstoZeroStatement

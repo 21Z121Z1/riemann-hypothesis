@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeComparisonRootMetrics
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometricCombEquiv
 

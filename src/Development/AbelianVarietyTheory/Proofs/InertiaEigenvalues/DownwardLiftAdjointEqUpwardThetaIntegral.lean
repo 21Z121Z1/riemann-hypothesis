@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PeterssonIntegralFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InnerProductIntegralFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdjointPairingUnfoldingDownwardLiftStatement

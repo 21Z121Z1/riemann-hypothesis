@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspValueComparison
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TameCharacterTorusValues
 import Mathlib.LinearAlgebra.Eigenspace.Semisimple

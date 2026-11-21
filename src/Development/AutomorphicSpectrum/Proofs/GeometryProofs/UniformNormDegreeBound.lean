@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormHeightCountStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormHeightEstimateStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeSectionsCuspLawsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.HermitianForms.IndicatorInSchrodingerSpan
 open MeasureTheory HeckeCharacterZeroLocus.SiegelWeilU
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticFirstStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticThirdStatement
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsOverPt

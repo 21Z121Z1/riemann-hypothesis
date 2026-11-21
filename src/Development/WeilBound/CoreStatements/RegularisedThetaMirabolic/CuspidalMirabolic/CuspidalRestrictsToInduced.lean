@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalWhittaker
 import Development.AutomorphicSpectrum.Proofs.SemilocalMultiplicity.GelfandGraevMultOneHolds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankMirabolicWhittakerEigenspace

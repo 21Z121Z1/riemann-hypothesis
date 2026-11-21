@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumProdConstantCoeffDmonOfCols
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdLeadingMinors
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerSeriesReparamBoundedCoefficients
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory

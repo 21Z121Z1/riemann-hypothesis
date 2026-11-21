@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicProductFormulaStatement
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.WittVector.IsPoly

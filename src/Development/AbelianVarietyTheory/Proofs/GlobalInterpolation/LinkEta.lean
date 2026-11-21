@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.EtaClosed
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice
 

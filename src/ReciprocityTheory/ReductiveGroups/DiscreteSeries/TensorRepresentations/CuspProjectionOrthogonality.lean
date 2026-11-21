@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.PosSemidefWeightedInnerNonneg
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.ContinuousUnitaryMatrix
 

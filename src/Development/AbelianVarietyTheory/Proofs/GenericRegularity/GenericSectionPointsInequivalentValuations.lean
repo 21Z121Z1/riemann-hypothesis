@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.LocRingPf
 import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSPf
 import Formalism.LocalToGlobal.ProjectiveLattices.CompFin

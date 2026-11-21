@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CohomZeroEquivContinuous
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.YonedaAddNaturalityLeft
 import Mathlib.RingTheory.Henselian

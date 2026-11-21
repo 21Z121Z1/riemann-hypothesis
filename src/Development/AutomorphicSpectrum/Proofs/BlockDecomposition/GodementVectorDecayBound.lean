@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerAdditiveCharacterEquivariance
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerCentralCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerSmoothness

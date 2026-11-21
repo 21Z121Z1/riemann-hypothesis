@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplitting
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberMorphismEqOfLocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberLocalMorphismsGlueStatement

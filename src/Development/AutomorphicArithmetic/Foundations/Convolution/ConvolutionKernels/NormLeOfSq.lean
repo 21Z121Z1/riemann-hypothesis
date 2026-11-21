@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.QhtBasic
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.GalTwistEx
 

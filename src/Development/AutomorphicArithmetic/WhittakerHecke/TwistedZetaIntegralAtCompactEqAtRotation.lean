@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.RatIdeleAbsRealIdeleNatIdeleUnitIdeles
 import Development.AutomorphicArithmetic.WhittakerHecke.ExistsUnipotentDiagRotationLevelDecomposition
 import Development.AutomorphicArithmetic.WhittakerHecke.WhittakerDiagTorusMulIwasawaEq

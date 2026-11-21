@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ContinuousMatrixEntryAbsSum
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.Monotonicity.Lemmas

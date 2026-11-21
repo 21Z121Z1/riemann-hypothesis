@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ValuedAlgebraMapEqOne
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 import Mathlib.Analysis.CStarAlgebra.Classes

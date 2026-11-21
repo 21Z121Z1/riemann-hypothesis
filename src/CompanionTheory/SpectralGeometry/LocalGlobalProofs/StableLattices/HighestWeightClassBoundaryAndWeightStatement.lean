@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HighestWeightClassBoundaryAndWeight
 open Finset Polynomial
 open Formalism.REAL (GlRel KHighest IsWeight qdet Tm qminor)

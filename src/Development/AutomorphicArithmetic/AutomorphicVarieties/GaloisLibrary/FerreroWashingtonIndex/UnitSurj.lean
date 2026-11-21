@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Batteries.Data.Nat.Gcd
 import Mathlib.Algebra.Order.Floor.Extended
 import Mathlib.Algebra.Order.Interval.Basic

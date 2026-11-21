@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorRationalInjectivityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatAffineOpenUnitsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalFibresCharUnitStatement

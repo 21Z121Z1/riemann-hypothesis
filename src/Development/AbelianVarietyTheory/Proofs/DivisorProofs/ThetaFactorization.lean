@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleAdaptedRestrictionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleAdaptedIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleAdaptedConstantStatement

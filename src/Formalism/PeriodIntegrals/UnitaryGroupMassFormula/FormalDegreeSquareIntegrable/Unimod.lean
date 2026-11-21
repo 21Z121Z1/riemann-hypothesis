@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeSquareIntegrable.FormalDegreeFromOrthogonality
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.MeasureTheory.Group.ModularCharacter

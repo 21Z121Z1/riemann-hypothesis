@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFunctionalIntegralComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzIntegralOfIntegrableBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerActionContinuousStatement

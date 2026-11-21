@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalGlobalCompatibility.TemperedLocalGlobal.WeilGroupRestriction.IwahoriCompatibilityOfChains
 import Development.WeilBound.CoreStatements.SatakeConjugation.ThetaTwPf
 import Development.WeilBound.CoreStatements.SatakeConjugation.ConjPl

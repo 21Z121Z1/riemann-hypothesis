@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormNatCastEqOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProdOfMemSupport

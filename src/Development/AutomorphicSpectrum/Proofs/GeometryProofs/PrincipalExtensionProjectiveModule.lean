@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IdealNormPrincipalInExtension
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Etale.Weakly

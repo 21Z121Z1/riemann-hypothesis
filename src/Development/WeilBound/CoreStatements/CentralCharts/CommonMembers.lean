@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CentralCharts.SmoothOnOfTame
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelAnalyticDataExists
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SmoothContinuous

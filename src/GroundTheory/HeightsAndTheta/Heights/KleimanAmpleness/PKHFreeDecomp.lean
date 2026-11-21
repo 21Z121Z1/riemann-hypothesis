@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeDecompSt
 import Mathlib.CategoryTheory.Action.Concrete
 import Mathlib.Tactic.Polynomial.Basic

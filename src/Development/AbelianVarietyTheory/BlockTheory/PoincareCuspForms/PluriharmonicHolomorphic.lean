@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ThetaQuasiPeriods.PeriodLattice
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 import Mathlib.LinearAlgebra.SymplecticGroup

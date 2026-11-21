@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TowerOrigin
 import Formalism.LocalRingCardinality.DataHost
 open NumberField IsDedekindDomain MeasureTheory Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartLocalAnalyticTrivializationStatement
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ContinuousAtOfHolo
 import Mathlib.Logic.Equiv.Bool

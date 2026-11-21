@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.LocalDefs
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.GroupTheory.SpecificGroups.KleinFour

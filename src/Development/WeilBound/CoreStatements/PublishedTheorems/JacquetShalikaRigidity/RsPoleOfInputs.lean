@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.QuadraticTransferFirst
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.QuadraticTransferReal
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.BaseRankDimension

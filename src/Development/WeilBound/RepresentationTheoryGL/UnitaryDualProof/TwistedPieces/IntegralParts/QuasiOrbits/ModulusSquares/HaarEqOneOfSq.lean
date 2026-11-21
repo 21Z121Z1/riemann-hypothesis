@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.NilpotentOrbits.OrbitIntegrals.ModulusBounds.DetEqOfSurj
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.MeasureTheory.Measure.Haar.DistribChar

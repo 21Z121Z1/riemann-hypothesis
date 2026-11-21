@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiPlaceStep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HwSubStableOfComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainLengthLeFinrankAddOne

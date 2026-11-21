@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinsetPrimesMemValuationSubringOver
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PieriBlockIdeals.PieriColumnMinors.XiOfDepth2
 import Formalism.PieriBlockIdeals.PieriColumnMinors.FsDivMem
 import Formalism.PieriBlockIdeals.PieriColumnMinors.HighestWeightMemWZero

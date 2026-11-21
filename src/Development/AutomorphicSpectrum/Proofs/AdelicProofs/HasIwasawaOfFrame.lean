@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocGram
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAHEqOfMemRatPts

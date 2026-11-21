@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.BlockAdmissibleChart
 import Formalism.LocalToGlobal.CharacterGerms.RowTieAdm
 import Formalism.LocalToGlobal.CharacterGerms.RowTieJet

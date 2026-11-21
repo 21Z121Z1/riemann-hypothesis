@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerSlActionRowVector
 open scoped UpperHalfPlane MatrixGroups
 open GlobalTheory.KZ GlobalTheory.Sieg

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernFormPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChIntInvariantUnderConjugation
 

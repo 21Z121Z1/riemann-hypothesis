@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EgaHolds
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.UniformisationCompleteDVRStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LinearUniformisationTriplesTorsionStatement

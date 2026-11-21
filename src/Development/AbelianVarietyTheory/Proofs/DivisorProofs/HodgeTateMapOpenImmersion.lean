@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonoFinitePartPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePartPowEqOneLocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NotDvdAbsNormDifferent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalGen

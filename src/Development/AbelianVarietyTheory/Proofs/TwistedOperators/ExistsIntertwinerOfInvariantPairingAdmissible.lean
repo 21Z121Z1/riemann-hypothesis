@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Analysis.CStarAlgebra.Classes

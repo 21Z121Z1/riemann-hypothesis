@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmoothVecLowKSub
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.SobolevContinuityLowGeneration
 

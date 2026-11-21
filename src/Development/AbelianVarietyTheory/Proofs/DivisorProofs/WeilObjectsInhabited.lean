@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplittingSplitOm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactOpenAddSubgroup

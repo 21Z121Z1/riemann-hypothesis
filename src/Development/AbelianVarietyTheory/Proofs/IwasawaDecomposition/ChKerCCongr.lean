@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RamifiedColumnsTrueColumnsEqConcrete
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ColMatchAll
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NrmStepZeroEq

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsInvDer
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RosLevel

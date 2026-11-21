@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.VerticalStrips.UnramifiedEulerProductIntegral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormMixedToEuclideanConjSqRat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoeAbsNormUnitsPrimeIdealUnit

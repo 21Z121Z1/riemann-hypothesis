@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

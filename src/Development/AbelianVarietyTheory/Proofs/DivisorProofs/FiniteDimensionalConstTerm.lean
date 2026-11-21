@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFundamentalDomainUnipotentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainMeasureFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicIwasawaMaximalParabolicFiniteRepsStatement

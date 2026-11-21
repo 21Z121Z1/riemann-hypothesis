@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform

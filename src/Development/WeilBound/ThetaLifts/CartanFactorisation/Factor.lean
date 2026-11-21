@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsPureML
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PureEqPureA
 import Development.AbelianVarietyTheory.Definitions.Divisors.MatchingOfParts

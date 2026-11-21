@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowCompMonHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqAddNsmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorMatchComp

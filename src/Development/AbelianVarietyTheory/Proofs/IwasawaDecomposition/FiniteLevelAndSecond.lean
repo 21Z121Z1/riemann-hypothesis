@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SecondGOfHalves
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GensJAlgebraic
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConstructionStartingChoicesOfFineAdelicDataStatement

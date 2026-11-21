@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.PhiPow
 import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 import Mathlib.Data.Int.Star

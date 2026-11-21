@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsPsh
 set_option maxSynthPendingDepth 1
 

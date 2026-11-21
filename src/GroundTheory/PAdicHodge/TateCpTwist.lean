@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.GaloisOnCp
 import Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 import Mathlib.RepresentationTheory.Continuous.TopRep

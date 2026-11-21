@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.BeTransSymmOfWitData
 

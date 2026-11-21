@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Mu0ChiHUnramifiedOutsideStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistPlaceStepCharacterConductorExponentOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussSumStepCharacterTwistPlaceDvdStatement

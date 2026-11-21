@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.PGroupCohTrivialInt
 import GroundTheory.TateCohomology.Annihilation
 set_option maxSynthPendingDepth 1

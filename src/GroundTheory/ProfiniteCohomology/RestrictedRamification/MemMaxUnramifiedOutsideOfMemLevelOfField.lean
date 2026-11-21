@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassMapIdeleClassMap
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.MaxUnramifiedOutside
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily
 import Mathlib.NumberTheory.DirichletCharacter.Orthogonality
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuSumApprox
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.HostApprox
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts

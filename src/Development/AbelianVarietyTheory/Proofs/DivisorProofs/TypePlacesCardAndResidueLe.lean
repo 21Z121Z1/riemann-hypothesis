@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 open Formalism.BasicNotions Formalism.L2.DIV Formalism.IndefR.Links NumberField
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

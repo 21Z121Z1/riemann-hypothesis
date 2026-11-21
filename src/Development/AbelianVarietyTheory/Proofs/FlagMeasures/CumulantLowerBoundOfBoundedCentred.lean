@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExpQuadraticLowerAndLogLinearLowerStatement
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.Monotonicity.Lemmas

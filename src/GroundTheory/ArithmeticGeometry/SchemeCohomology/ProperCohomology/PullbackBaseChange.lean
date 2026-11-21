@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.EtaleCompletion.PullbackAffine
 import GroundTheory.ArithmeticGeometry.EtaleCompletion.QcohZariski
 set_option maxSynthPendingDepth 1

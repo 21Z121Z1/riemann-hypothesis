@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSqContractLe
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HypAndAdj
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PieriLoweringStepGlTensorDualStandardStatement

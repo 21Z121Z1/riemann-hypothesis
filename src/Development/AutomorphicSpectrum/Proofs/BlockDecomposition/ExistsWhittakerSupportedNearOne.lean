@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerSmoothness
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerWellDefined
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsTrivialOnPrincipal

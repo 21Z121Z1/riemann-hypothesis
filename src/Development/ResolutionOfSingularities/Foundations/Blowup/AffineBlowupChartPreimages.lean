@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupCartier
 import Mathlib.Tactic.Polynomial.Basic
 open CategoryTheory AlgebraicGeometry Opposite

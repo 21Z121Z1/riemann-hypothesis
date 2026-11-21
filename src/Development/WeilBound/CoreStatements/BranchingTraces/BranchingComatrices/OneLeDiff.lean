@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.BranchingTraces.BranchingComatrices.RootOfNe
 import Development.WeilBound.CoreStatements.BranchingTraces.BranchingComatrices.ContDiffEmb
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.DiscreteSeriesInfinitesimalCharacter

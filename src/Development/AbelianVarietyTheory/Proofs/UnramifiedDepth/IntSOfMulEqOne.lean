@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CocycleIntegral
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcExp

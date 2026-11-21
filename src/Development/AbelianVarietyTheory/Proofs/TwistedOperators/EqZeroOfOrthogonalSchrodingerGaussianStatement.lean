@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfOrthogonalSchrodingerGaussian
 open GlobalTheory.RealWeil MeasureTheory
 open scoped SchwartzMap

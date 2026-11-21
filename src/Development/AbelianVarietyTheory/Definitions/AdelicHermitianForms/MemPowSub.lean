@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
 
 open NumberField IsDedekindDomain Polynomial

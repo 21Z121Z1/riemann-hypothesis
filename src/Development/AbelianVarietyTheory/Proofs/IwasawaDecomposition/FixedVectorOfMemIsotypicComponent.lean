@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 open Formalism.L2 Formalism.AUTREP ReciprocityTheory.Aut NumberField
 

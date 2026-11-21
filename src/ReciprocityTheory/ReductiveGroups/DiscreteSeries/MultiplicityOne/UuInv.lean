@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.PiInvApply
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JInvGroup
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JInvChar

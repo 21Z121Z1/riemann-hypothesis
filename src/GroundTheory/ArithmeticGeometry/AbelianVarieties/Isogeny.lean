@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FunctionFieldPoint
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.KernelCard
 import Mathlib.FieldTheory.RatFunc.IntermediateField

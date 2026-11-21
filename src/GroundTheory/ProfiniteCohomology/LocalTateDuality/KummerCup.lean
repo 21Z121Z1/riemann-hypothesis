@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.InjectiveCohomologyMapKummerSeqOpenFTwo
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.Bockstein
 import GroundTheory.ProfiniteCohomology.PoincareDuality.DeltaPairing

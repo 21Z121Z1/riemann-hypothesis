@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePKeyEigC
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePKeyJointDef
 import Mathlib.RingTheory.Etale.Weakly

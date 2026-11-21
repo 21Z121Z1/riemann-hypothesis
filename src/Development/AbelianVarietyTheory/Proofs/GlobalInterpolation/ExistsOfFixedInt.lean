@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSubConjNotMem
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsReflection

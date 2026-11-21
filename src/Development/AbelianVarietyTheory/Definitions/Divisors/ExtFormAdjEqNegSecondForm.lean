@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.MaIntEmpty
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.EventuallyDifferentiableAtOfContDiffAtTwo
 import Development.AbelianVarietyTheory.Definitions.Divisors.LeTwoMulOfForallScale

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTautologicalPointTorusExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalPointTorusExtensionAddStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalPointZeroAndPeriodStatement

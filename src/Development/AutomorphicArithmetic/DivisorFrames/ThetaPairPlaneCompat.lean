@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedEvaluationNonvanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairThetaIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmatMulVec

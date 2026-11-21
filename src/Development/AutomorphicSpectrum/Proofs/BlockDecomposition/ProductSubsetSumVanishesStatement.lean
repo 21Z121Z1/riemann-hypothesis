@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductSubsetSumVanishes
 open Polynomial
 set_option maxHeartbeats 1000000 in

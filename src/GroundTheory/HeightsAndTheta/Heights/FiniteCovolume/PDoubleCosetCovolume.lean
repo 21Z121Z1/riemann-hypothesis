@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsDoubleCoset
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntBTmulBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmallB
 import Formalism.LocalRingCardinality.SpanPowerMembership.Adelic

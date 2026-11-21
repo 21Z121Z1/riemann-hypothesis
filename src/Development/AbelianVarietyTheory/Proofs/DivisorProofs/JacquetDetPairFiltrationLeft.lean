@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstCellFunctorEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondCellFunctorApplyStatement
 

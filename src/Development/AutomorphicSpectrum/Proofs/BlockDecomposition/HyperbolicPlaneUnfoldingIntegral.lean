@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitExtensionFundamentalDomainStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFibrationVolumeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabiliserSplittingAdelicStatement

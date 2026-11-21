@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.NilpAlg
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

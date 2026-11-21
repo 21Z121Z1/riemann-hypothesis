@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeRightBasisExpansionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContDiffOnOfFderivFamily
 open MeasureTheory Matrix Finset Filter Topology

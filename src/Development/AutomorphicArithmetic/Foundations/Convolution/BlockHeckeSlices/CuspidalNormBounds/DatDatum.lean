@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.DatDatum
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SInfEx
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.SSatIff

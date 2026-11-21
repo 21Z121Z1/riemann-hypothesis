@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LRowstLemmas
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.RingTheory.PiTensorProduct

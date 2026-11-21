@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivRemCompLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzVanishingDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceFormMapSurjective

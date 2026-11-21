@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalAddCharComponentTrivialIntegersEventually
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
 open scoped Matrix GlobalTheory.VacAny

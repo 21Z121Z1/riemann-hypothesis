@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelGramPosSemidef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedGramReEqSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedSqInverseTransposeRev

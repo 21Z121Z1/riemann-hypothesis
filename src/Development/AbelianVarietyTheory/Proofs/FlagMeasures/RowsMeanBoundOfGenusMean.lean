@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsGenusWeightedSumComparisonStatement
 noncomputable section
 open scoped Classical ENNReal

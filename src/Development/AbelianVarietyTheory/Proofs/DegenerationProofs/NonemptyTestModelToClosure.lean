@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByOfSpans
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ImmByWeightZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFactorClosedImmersionDensePointsStatement

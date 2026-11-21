@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.UnitVectorOrthogonal
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnramifiedOfIsCMUnram
 import Development.AbelianVarietyTheory.PublishedTheorems.Landherr₂.LandherrStIffLandherr

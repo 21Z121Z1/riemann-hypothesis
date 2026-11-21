@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeftInverseExtendsToGLStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalEntriesUpperStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbSlotDiagonalStatement

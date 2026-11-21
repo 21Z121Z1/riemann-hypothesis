@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsRBasisOfLocBasis
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ComplexPadicNormKappaSplitPrime
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice

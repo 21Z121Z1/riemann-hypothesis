@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeMassOfFibre
 import Mathlib.Analysis.InnerProductSpace.NormDet
 set_option maxSynthPendingDepth 1

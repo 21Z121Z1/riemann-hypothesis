@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicModulusNormEqAbs
 
 open scoped TensorProduct NNReal Matrix

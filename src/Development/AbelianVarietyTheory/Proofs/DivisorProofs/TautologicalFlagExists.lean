@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GLColumnsIsFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalFlagCellFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CokernelSubbundleIsVBStatement

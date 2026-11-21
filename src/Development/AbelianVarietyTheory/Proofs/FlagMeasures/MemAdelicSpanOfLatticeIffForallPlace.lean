@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff
 open Formalism.BasicNotions Formalism.UG Formalism.L2.Forms NumberField IsDedekindDomain Matrix GlobalTheory.St.G

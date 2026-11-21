@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermUnipotentIntegralBis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianPlaneUnipotentIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviCharacterCuspIntegralStatement

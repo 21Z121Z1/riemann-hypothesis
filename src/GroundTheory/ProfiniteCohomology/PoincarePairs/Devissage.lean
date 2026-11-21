@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.PoincarePairs.Natural
 import GroundTheory.ProfiniteCohomology.PoincareDuality.Devissage
 set_option maxSynthPendingDepth 1

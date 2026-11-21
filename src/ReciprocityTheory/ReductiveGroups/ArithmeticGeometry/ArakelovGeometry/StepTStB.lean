@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterGoodA
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.KrullDimension.Polynomial

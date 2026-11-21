@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableAtFoldrLineDer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeApproximationUpwardIdele
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondKindCoordinatesInfiniteAdelicUnitaryPointsStatement

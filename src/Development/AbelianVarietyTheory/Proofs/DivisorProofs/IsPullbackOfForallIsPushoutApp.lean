@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPushoutAppLEOfIsPullbackOfIsAffine
 import Mathlib.Order.CompletePartialOrder
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits

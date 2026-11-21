@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WinSet
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
 import Std.Tactic.BVDecide.Normalize.Prop

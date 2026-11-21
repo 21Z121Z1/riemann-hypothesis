@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalLocalDepthTwo
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Etale.Weakly

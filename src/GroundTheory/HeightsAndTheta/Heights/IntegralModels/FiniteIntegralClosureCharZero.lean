@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.FiniteIntegralClosureLocal
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.NoetherNormalization

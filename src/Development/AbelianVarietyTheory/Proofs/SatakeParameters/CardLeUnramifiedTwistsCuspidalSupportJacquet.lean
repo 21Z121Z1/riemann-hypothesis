@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InSupportOfIsSubquotient
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IrreducibleSubquotientEigenvectorStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalJacquetSubquotientAtMostOneNonemptyBlockStatement

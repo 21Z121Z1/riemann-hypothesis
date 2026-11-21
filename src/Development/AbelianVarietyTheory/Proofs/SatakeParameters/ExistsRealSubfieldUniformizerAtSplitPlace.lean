@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Formalism.AlgebraicWeights.IsAlgWeight
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA

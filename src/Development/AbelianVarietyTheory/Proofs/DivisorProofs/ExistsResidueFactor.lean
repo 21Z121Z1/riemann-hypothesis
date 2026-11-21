@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.KapTrdegPf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompleteDvrPointLiftingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompleteDvrResidueTranscendenceStatement

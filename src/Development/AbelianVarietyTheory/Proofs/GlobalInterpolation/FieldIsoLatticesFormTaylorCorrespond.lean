@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SpanImageLeOf
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaLatticeImageRationalHomLattice
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.ZeroDimA

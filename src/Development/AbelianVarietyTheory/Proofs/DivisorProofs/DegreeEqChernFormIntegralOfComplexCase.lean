@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AnalyticWeightLinearComb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCoordsBaseChange

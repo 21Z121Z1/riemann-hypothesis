@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.QuotRealize
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions

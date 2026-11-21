@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericSectionExtendsNormalStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcPeriodStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcLimitStatement

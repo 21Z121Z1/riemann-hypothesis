@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsBoundOfIsRootExpMulForall
 import Development.AutomorphicArithmetic.TwistedTraces.NormDerivOrbitLeOfPolynomialAnnihilated
 import GroundTheory.AutomorphicForms.L2LocalComponents.Summand

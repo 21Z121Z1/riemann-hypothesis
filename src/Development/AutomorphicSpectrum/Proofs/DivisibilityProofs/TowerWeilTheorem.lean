@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArithFunctionalLipschitzWeightsStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerComponentHeightBoundStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerGapHeightUniformBoundStatement

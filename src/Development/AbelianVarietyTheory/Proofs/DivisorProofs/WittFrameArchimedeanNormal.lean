@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompInfRTensorInlA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockEmbeddingArchimedeanComponentsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexWittBasisNormalFormStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsAutIdemElementary
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantIntegrable
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SummableAndTsumLeOfBoxCount

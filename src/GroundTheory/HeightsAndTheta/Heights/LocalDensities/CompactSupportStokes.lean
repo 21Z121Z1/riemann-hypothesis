@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Geometry.Manifold.PartitionOfUnity
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.HessCRestrictThm
 import ReciprocityTheory.AnalyticForms.PotentialTheory.StokesC

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SameBlockOfPosC
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfFactorialBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverUpqClosureExpTopAndCartanStatement

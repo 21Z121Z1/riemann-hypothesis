@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlanePairDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneThetaEmbeddingExists

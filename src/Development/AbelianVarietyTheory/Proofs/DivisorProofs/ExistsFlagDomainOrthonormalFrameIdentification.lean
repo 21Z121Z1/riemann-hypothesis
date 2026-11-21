@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PermMMulTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualLatticeNegTransposeGram
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DefClassDecompIff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HomExtOfGeometric
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsContraction
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsHolToFibPtAndCompFibre

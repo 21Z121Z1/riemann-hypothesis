@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.BesselPeriodGGP
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.DecreasingNodeGaps
 

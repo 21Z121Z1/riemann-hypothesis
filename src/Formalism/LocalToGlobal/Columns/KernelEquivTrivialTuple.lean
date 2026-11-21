@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ReferenceKernelEquivOfLastComponent
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.KerEquivConcrete
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.Brauer.BaseChange
 import GroundTheory.Brauer.DoubleCentralizer
 import GroundTheory.Brauer.Degree

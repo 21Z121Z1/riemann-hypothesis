@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.TracePiReal
 import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd

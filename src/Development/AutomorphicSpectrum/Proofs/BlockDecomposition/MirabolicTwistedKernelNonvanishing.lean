@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShearGL
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactSetFiniteCosetRepresentatives
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicFourierExpansion

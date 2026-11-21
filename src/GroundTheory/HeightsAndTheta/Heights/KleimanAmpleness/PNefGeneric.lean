@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GenericPointSectionHypotheses
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsNefGeneric
 import Mathlib.Data.Int.Star

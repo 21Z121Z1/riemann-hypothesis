@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsResidueEqZeroIff
 import Mathlib.Algebra.Ring.IsFormallyReal
 open scoped TensorProduct

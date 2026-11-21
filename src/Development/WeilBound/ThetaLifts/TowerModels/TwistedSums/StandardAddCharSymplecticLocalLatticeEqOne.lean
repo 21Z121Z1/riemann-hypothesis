@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.LatAtVAtStable
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TraceMixedEmbedding

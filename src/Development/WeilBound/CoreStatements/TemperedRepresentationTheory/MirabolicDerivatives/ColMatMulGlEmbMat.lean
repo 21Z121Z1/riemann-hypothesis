@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.UnipApplyCastSuccLast
 import Mathlib.Analysis.Complex.Circle
 import Mathlib.NumberTheory.LocalField.Basic

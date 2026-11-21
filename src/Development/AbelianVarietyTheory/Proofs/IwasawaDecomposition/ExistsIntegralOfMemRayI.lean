@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyRayDataOfNeZero
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormOneSevenOneTwo
 import Mathlib.Topology.Sheaves.Presheaf

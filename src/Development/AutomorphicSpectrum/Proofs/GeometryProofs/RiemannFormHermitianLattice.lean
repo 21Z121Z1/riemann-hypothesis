@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsAdaptedUnimodular
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.Monotonicity.Lemmas

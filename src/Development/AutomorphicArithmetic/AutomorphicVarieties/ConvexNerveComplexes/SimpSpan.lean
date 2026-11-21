@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConvexNerveComplexes.Perturb
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Tactic.Polynomial.Basic

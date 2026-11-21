@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterSumLocalConstantSixth
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldedEntryTypePrimeSupportPeriodSizeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftFrLifts

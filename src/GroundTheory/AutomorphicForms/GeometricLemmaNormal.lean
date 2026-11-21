@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GeometricLemmaCharacters
 import GroundTheory.AutomorphicForms.GeometricLemmaModular
 import GroundTheory.AutomorphicForms.GeometricLemmaCellChar

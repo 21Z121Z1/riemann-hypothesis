@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
 
 open Formalism.FourierDecayAlt Finset

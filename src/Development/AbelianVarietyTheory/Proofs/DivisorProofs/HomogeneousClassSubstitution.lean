@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTotalBiChains
 open CategoryTheory Limits Opposite AlgebraicTopology GlobalTheory.EZ
 universe u v

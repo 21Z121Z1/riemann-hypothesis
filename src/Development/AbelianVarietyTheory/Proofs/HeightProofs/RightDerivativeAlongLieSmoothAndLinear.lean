@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsLieDataCircle
 import Mathlib.RingTheory.RegularLocalRing.Defs
 

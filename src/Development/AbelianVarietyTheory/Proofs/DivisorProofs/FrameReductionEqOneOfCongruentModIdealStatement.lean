@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameReductionEqOneOfCongruentModIdeal
 open NumberField IsDedekindDomain Formalism.L2 Formalism.L2.DIV
 open scoped TensorProduct Matrix

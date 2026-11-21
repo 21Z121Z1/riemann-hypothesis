@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransitionCoefficientsPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UltrametricCoefficientBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatHalfSt

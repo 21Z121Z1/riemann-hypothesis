@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseKummer
 import GroundTheory.ProfiniteCohomology.PoincarePairs.Natural
 set_option maxSynthPendingDepth 1

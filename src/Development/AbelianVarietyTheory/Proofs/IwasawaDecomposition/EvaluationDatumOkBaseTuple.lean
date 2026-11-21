@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelsOverOfFamily
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EvGSDOkOfEqOne

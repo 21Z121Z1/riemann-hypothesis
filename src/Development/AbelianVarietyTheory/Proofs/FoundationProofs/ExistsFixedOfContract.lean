@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.CoeffSubstInvMemOfTwoLeOrder
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 

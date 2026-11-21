@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.CoefDTensActPow
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Analytic
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.ClosureK

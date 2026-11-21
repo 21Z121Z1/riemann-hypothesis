@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCurveGermComponents
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLocalDimDomain
 import Mathlib.Topology.Algebra.MvPolynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtensionStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreSizeAndRangeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentMetricFromSectionStatement

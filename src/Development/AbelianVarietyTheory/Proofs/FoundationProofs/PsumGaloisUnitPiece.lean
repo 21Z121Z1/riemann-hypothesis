@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.PieceEqPieceT
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ZpowCongrOfModEq
 import Mathlib.Tactic.ENatToNat

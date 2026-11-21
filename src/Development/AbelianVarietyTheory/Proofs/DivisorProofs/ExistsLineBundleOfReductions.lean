@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EventuallySectionAndRelAmplePowDiv
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsProperOfIsProjBy

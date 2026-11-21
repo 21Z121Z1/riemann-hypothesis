@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteOrderSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDetGen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FixTorsionOfForallGeometric

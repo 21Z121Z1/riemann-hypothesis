@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondCountableTopologySphere
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientCurvatureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcEqOfLocalEq

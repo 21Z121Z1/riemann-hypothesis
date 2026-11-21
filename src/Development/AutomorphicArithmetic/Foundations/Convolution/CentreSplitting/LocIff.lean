@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.LocEmb
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.LocFlath
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.FixedDense

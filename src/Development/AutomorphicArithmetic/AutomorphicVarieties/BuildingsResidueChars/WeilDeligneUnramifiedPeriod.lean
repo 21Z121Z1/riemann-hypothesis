@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.GaloisRepresentationIntegralLattice
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.CrystallineFrobeniusAlgebraicElements
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoLOfEq
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFROfIsLamF
 import Development.AbelianVarietyTheory.Definitions.Foundations.ActWBOfInvariant

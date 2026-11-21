@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.SeesawThetaDualPair
 open Matrix NumberField IsDedekindDomain GlobalTheory.WeilM MeasureTheory
 open scoped TensorProduct

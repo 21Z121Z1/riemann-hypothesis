@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularLocalRingAtPrimeLocalizationTensor
 open IsLocalRing
 open scoped TensorProduct

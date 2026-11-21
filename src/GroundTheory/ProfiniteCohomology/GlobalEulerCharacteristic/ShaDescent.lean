@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Descent
 import GroundTheory.ProfiniteCohomology.PoitouTate.PtCompactDualMapEqZeroOfPtCompactToGlobalEqZero
 import GroundTheory.ProfiniteCohomology.PoitouTate.PoitouTateInfinite.DescentMaps

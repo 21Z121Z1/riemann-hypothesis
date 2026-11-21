@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.LgCurvePcurve
 
 namespace ReciprocityTheory.ChartRestriction.G.Sh.PTb

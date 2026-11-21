@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.LimitMemLpAndIntegralEq
 import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.SchurTensSpan
 import Mathlib.Tactic.ENatToNat

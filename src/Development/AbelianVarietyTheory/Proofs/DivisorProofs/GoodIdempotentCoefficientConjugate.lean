@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumWIffGoodFormsOrthSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypeCharacterConjugateInverse
 

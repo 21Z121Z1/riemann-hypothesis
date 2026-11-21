@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.InflationRestriction.TransgressionLift
 import GroundTheory.ProfiniteCohomology.InflationRestriction.Coinduced
 set_option maxSynthPendingDepth 1

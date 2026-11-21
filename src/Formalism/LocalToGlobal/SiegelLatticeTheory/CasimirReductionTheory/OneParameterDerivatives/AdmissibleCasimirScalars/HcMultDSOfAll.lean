@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.OneParameterDerivatives.AdmissibleCasimirScalars.CompactDerivativesBounded
 import Formalism.SharpRestriction.CuspSpanNormBounds.LowestKTypeMultiplicity
 import Formalism.SharpRestriction.CuspSpanNormBounds.ExpansionFromLemmaB

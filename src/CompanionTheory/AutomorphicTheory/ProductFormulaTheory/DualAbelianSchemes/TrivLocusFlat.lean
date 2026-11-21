@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CechFlatComplexStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SpecMapAppFromSpec
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IsIsoOfClosedImmersion

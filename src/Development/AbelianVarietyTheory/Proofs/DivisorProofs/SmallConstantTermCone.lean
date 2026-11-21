@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEigenIntegralStabilizerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEigenIntegralHaarStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEigenIntegralMeasureStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.DefsObj
 
 open MeasureTheory NumberField IsDedekindDomain

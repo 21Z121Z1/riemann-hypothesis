@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.CycMemPrincIff
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.PrincGen
 import Mathlib.Topology.Connected.Separation

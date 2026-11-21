@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Morphisms.Separated
 import Mathlib.Combinatorics.Quiver.ReflQuiver
 import Mathlib.RingTheory.TotallySplit

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeInfSubspaceBaseChangeDvr
 open Formalism.BasicNotions Formalism.L2 NumberField IsDedekindDomain Module
 set_option maxHeartbeats 1000000 in

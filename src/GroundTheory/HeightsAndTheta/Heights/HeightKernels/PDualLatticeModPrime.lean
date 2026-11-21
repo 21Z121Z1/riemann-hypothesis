@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualLatticeModPrime
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualLatticeIndex
 set_option maxSynthPendingDepth 1

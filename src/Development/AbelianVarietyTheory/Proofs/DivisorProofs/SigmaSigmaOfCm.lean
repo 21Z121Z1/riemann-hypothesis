@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntAFSmulMemLatOF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfTraceMul
 open scoped TensorProduct Matrix

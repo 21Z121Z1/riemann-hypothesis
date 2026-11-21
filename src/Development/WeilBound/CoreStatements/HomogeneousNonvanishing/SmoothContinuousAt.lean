@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ContinuousAtOfClosedRel
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GMonomial
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement

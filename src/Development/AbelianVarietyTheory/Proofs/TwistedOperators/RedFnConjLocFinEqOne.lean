@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DatumLevelHyperspecialOffFinitePlaces
 import Development.AbelianVarietyTheory.Definitions.Foundations.ForallEventuallyFinLocIff
 open MeasureTheory Set Filter NumberField IsDedekindDomain

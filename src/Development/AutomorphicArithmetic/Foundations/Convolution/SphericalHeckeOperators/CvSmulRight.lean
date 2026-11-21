@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SandId
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SatAvg
 

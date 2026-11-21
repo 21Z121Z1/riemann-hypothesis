@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRapoportOfIsUnitDiscr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RuleEqOfAgreeRapoport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRuleAllObjOfExtend

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorusCoordAdd
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGenOfIso
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

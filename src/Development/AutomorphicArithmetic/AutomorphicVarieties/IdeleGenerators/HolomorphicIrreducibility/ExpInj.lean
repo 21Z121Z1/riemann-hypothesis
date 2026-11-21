@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.StrongApp
 import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.OneNonUnit
 

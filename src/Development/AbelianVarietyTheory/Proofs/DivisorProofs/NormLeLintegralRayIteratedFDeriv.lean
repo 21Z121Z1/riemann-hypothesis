@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeLintegralTaylorTailIteratedDerivStatement
 open MeasureTheory Filter Topology Set Module
 open scoped ENNReal

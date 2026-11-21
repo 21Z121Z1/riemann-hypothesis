@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CMTypeGalois.CMTypeFrobenius.MQGalois
 import Formalism.CMTypeGalois.CMTypeFrobenius.MQKummer
 import Formalism.CMTypeGalois.CMTypeFrobenius.MQFrob

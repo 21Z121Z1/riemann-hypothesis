@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 import Mathlib.CategoryTheory.Sites.Adjunction
 

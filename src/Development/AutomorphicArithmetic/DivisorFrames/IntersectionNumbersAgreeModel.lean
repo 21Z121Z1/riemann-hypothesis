@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.IntersectionNumberPullbackDegree
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsNormalCommonModel
 import Development.AutomorphicArithmetic.DivisorFrames.PullCartierPicAgree

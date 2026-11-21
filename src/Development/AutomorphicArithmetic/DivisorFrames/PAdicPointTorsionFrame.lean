@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.AlgebraicPAdicPointLifts
 import Development.AutomorphicArithmetic.DivisorFrames.LevelReductionTorsionCharacter
 import Development.AutomorphicArithmetic.DivisorFrames.WeilPairingLabelsTorsionPoints

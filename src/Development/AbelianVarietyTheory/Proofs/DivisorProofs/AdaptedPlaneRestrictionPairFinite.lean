@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationGoodModelsIntertwineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameConjMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TamePartLeftStatement

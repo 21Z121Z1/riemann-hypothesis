@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CharactersMatchBundleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteScaleThetaSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowConditionsAtCompanionFromReadings

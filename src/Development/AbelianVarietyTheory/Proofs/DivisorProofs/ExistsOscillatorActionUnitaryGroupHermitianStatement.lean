@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionUnitaryGroupHermitian
 open MeasureTheory Complex Matrix GlobalTheory.RealWeil
 open scoped RealInnerProductSpace ContDiff Real ComplexOrder

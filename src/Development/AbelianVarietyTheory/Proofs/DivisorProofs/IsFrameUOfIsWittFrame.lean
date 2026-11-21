@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvIInfScaleMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFrameModelEvaluation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusElementUnitaryMatrixIdentity

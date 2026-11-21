@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermod
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
 

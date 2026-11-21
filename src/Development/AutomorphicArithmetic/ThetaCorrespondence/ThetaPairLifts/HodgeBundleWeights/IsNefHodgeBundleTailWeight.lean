@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.Hypotheses2
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPullLLStepEx
 

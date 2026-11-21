@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TwistedAutomorphicForms.SplitIso
 
 open NumberField IsDedekindDomain Neutral.B1 GlobalTheory.Mem.Chr.Model

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalExistenceTopIdealStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NoetherianIdealIntegralOrSplitStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealSheafWellFoundedGtStatement

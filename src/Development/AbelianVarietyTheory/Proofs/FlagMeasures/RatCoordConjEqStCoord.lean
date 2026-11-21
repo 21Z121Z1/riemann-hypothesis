@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RatCoordCont
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace
 

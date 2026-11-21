@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LePreimageOfClosedPoint
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.JacEqUnitMulDetPderiv
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MulVecCongrDeg

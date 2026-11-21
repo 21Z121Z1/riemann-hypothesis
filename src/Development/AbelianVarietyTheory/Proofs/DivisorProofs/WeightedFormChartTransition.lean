@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMatrixIsForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartFormTransitionCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexHessianAdjugateDivergenceFreeStatement

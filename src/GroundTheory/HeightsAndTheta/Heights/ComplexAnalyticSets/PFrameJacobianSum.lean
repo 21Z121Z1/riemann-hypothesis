@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFrameJacobianSum
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCauchyBinet
 import Mathlib.Algebra.Module.StablyFree.Basic

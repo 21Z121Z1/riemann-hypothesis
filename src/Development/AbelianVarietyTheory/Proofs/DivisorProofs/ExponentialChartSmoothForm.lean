@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffCutoffStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterIntegralSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositiveQuadraticUniformLowerBoundStatement

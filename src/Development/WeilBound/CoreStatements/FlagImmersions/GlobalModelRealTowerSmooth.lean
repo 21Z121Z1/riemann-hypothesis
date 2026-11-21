@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX
 import Development.WeilBound.CoreStatements.FlagImmersions.GeoNumOneLinear
 import Development.WeilBound.CoreStatements.FlagImmersions.InvNatCastMem

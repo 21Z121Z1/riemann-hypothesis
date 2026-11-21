@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.Tuples
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB

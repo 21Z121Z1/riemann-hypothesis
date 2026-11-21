@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsoEqOfMapsAlongSection
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsLocallyNoetherian

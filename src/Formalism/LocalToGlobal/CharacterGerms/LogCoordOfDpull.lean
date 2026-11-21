@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.ConstMemTypeSetOfNonneg
 import Formalism.LocalToGlobal.CharacterGerms.ConstantCoeffSinglePointZero
 

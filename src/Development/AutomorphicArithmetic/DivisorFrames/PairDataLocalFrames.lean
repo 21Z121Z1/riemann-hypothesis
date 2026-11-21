@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.SideDataNonunitOnChart
 import Development.AutomorphicArithmetic.DivisorFrames.SideDataGoodOnOpen
 import Development.AutomorphicArithmetic.DivisorFrames.JoinedMatrixDetValuationOne

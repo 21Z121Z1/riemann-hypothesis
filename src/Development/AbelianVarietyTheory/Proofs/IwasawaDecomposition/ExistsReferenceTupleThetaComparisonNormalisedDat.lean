@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JEvExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFirstOfSecond

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialThetaKernelContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftRealLineDerivative
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolMatchIff

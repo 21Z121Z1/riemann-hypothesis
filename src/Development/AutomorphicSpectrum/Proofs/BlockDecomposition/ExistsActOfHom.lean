@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FirstChernClassMemHodgeFiltration
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLiftToThickeningStatement
 set_option backward.isDefEq.respectTransparency false

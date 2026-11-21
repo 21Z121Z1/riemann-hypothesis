@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormRealCentralCharacterEqOneStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormLocalCentralScalarsEqOneStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedCentralScalarsTrivialStatement

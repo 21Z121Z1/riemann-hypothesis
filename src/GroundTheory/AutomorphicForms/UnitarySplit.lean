@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.UnitaryGroupScheme
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.TotallySplit

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeSlopes.Statement
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.InnerProductSpace.NormDet

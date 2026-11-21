@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.GalTorsConj
 import Mathlib.Analysis.SpecialFunctions.Elliptic.Weierstrass
 

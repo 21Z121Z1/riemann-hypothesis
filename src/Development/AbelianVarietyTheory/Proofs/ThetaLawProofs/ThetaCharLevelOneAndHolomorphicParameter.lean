@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsLevelIffAut
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsLevBasisReal
 

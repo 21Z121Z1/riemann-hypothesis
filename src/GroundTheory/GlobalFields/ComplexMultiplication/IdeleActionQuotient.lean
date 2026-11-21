@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.IdeleAction
 import GroundTheory.GlobalFields.Adele.Approximation
 set_option maxSynthPendingDepth 1

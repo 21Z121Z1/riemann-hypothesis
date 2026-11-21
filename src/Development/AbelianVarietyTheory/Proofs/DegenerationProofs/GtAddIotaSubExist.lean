@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsNsmulIffEq
 import Development.AbelianVarietyTheory.Definitions.Degenerations.RigGen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame

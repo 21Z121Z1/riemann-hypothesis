@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.MatCancel
 import Development.WeilBound.ThetaLifts.TowerModels.ExistsRefl
 import Development.WeilBound.ThetaLifts.LatticeBasics.EulerProd

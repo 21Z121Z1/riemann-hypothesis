@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartLocalAnalyticTrivializationStatement
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHoloInjDerivInj
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PVertFactorSmooth

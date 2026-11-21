@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LowestWeightVectorsAtRows
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.FFVMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionFirst

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalBMemKummerInvariantSet
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowProperties
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlMulToRingEquiv

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ResidueCharacters.FamilyBoundAtTwoThreeOfLocalBounds
 import Development.AutomorphicArithmetic.ResidueCharacters.RowTwo
 import Development.AutomorphicArithmetic.ResidueCharacters.RowThree

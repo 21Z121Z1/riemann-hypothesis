@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.StatementMF
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero
 import Mathlib.Algebra.Module.PID

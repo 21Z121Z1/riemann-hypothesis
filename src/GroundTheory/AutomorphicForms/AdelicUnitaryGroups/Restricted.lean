@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Lattice
 import Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
 

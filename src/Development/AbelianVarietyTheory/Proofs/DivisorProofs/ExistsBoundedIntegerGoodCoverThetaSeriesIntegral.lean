@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralCombIdempotentSectionsNonnegOverPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsShortRuleOfRaw
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmulIntZNonnegAway

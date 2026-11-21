@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormLeOneOfMemCoef
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 

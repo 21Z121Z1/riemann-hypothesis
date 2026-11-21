@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TiltLatticeBoundThirdStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiEmbeddingDeterminantPropertyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrAlphaDeterminantValuationStatement

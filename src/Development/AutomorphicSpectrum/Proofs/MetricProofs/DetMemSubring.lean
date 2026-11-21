@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
 
 open AlgebraicGeometry CategoryTheory NumberField Matrix

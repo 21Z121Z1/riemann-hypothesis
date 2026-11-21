@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.IdealLattice
 import Formalism.PeriodIntegrals.AreaLat
 

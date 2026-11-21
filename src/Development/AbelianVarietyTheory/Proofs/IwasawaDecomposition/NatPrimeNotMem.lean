@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAfMemIntUIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NatCastNotMemOfPrimeNe
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

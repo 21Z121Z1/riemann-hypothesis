@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NeBotOfNotMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricallyConnectedStr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagNonempty

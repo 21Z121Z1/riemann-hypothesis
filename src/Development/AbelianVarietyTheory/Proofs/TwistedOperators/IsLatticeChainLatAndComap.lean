@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScaledBasisMemChainLattice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.Imports
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ImportsAlt

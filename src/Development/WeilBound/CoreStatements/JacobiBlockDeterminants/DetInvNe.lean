@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.JacobiBlockDeterminants.ExistsColFrame
 
 set_option backward.isDefEq.respectTransparency false

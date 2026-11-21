@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemMaximalCompactUnitaryOfSplitPlaceLift
 open NumberField IsDedekindDomain ReciprocityTheory.Aut
 open scoped TensorProduct

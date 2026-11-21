@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentRefl
 

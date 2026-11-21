@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.TotallyPositiveExponents
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOfBalanced
 open scoped Pointwise

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StUnipotentCoordProper
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume

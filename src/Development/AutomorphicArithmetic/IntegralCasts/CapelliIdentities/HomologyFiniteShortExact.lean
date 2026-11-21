@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Category.Grp.IsFinite
 import Mathlib.Algebra.Homology.HomologySequence
 import Mathlib.Algebra.Homology.ShortComplex.ModuleCat

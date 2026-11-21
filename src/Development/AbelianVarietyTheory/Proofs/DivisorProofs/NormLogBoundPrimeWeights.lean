@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalHeightBoundedByPrimeWeightsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeDivisorsEffectiveFiniteDisjointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralSubschemePrimeFibreStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmRep
 import Mathlib.Algebra.Module.StablyFree.Basic
 

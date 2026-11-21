@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.FibreIncompTrdeg
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreIncomp
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiProjPrimeImageZ

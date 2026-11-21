@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppInjectiveOfFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsosSubbundleModificationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairCompositionExistsStatement

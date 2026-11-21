@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementC
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 import Formalism.HermitianCurvature.OperatorsCommuteTranslations

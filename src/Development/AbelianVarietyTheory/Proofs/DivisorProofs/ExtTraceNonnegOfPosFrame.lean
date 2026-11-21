@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianCurvatureForms
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg
 open Matrix Complex ComplexConjugate Filter Topology

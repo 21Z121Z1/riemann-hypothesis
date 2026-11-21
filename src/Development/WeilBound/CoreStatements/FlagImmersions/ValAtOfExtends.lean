@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackCorrespondence
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelActionBaseChangeStatement

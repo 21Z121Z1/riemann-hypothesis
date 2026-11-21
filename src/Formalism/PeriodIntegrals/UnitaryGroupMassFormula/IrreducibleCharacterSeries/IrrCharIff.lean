@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 import Formalism.PadicSubsetSums.CentralIdempotents.HCDisjointO
 import Mathlib.RepresentationTheory.Character

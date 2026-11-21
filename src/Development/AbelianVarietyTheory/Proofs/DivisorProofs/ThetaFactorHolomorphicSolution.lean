@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SiegelReframe
 import Mathlib.Analysis.Convex.Contractible
 import Mathlib.RingTheory.SimpleRing.Principal

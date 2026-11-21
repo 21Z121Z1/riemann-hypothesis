@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 
 namespace Formalism.L2.KerInert

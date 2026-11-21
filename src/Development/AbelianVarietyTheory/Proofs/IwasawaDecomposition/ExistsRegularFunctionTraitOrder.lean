@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RegularFnAgreeOnOverlapStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalRegularFnOrdinaryStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RegularFnUnitNearGenerizationStatement

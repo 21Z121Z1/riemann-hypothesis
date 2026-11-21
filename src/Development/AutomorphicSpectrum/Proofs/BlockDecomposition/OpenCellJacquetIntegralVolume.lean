@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothIntegralLinear
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentConjugationMeasureInvariant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellFunctionCompactSupportUnipotentStatement

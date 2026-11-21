@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LogIdealMulSpanMapStatement
 import Mathlib.NumberTheory.NumberField.ClassNumber
 

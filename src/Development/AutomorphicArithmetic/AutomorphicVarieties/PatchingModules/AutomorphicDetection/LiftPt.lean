@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AutomorphicDetection.Imports
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AutomorphicDetection.CohLim
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.AutomorphicDetection.AnnBc

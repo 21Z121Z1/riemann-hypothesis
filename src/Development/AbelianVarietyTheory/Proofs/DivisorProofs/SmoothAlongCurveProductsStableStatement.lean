@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothAlongCurveProductsStable
 open MeasureTheory
 open scoped ContDiff

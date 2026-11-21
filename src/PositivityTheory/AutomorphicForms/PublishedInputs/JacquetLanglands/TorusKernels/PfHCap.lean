@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.IsHolVOf
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Qminor
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist

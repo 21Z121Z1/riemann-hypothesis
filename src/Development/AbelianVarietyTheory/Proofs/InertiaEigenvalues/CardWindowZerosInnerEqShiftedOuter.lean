@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowTEqRowS
 import Mathlib.Data.Int.Star
 import Mathlib.Order.Interval.Finset.Box

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTracePowRestrictNeZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineOppositeParabolicUnitaryLeviSectionEq

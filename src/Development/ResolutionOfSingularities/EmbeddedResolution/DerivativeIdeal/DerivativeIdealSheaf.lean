@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdealLocalization
 import Mathlib.AlgebraicGeometry.IdealSheaf.Basic
 import Mathlib.AlgebraicGeometry.Modules.Sheaf

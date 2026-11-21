@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwlineLemmas
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas
 import Mathlib.Tactic.ENatToNat

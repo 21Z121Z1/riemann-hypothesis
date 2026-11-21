@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.KleimanInputUniverseZero
 import Development.WeilBound.CoreStatements.HodgeTatePoints.KTwins
 import Development.WeilBound.CoreStatements.HodgeTatePoints.SiuKodaira

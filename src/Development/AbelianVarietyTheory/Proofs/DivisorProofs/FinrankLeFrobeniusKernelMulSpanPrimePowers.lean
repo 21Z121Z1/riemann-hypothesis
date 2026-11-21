@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobKerIdealLeAugIdeal
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFrobGBaseChange

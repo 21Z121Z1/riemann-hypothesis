@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
 open FourierTransform MeasureTheory Filter Topology

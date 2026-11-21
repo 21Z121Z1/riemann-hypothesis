@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.CompLeft
 import Mathlib.Algebra.Homology.DerivedCategory.KInjective
 import Mathlib.Algebra.Homology.HomotopyCategory.HomComplexSingle

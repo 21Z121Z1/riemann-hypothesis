@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EvalAtOneExtremalMul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DelSqIrreducibleUnitary
 open MvPolynomial Formalism.BasicNotions Formalism.L2.Forms Formalism.L2.Ker GlobalTheory.KJInf MeasureTheory

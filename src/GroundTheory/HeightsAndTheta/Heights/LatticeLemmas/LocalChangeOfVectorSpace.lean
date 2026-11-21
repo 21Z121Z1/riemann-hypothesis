@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PLocalChange
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.LatticeOfLocalisationsHyps
 set_option maxSynthPendingDepth 1

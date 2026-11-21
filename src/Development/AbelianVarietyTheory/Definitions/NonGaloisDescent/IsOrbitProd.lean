@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RestrictsSelf
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsRealisesNeOne
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary

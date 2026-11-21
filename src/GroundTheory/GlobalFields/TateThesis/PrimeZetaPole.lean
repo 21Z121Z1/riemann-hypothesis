@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.DegreeOnePrimes
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Algebra.Order.Star.Real

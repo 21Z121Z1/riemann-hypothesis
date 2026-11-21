@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBettiCocycleKummerRelation
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ GlobalTheory.KZ.BettiB

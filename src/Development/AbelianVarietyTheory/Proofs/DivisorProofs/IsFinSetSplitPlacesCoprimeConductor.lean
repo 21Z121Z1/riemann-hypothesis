@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfVal
 import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds
 import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal

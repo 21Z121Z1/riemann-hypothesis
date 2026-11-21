@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.InertPlaceSetting
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.SphericalThetaInertPlaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPlaceHeckeDoubleCosetsInverseRepsLabel

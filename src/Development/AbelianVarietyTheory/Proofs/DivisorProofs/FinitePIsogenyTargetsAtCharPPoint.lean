@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogTarget
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpSchemeSquareProductMapEqTensorHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteKernelsPIsogeniesHarrisTaylorCharPStatement

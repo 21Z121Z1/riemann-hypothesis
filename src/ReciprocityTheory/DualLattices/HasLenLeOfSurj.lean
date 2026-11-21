@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.LiftMonomialDeterminantStatement
 import ReciprocityTheory.DualLattices.IsLocalOfIntegers
 import Mathlib.Tactic.ENatToNat

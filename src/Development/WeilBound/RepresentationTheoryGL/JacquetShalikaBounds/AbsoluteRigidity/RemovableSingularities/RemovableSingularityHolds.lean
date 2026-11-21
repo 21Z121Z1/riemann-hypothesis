@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.NewtonLow
 import Mathlib.Analysis.Complex.RemovableSingularity
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsBoundRight
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivLFunctionNearZero
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AnalyticAtDslope

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsIrrCharAdd
 import Mathlib.RingTheory.WittVector.IsPoly
 open GlobalTheory.BI

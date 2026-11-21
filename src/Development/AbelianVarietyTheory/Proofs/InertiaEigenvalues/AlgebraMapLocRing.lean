@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.LocalRingStructure
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LetterSandwichOfFrobMatrices
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NBasisLoc

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 import Development.AbelianVarietyTheory.Statements.FundamentalDomains.KeyFormulaPowOfKeyFormula
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase

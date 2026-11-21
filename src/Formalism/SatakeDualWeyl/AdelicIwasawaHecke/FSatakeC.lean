@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeB
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeA
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsShear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatUOfForm
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevRepZApply
 import Formalism.CharacterColumnKernels.Statement
 import Mathlib.RingTheory.LocalProperties.Reduced

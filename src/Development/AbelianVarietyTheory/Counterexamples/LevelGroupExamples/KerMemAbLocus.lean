@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.BetaAddRight
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BetaAtAddLeftAndDiagEqTwoOrder
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGoodIntegral

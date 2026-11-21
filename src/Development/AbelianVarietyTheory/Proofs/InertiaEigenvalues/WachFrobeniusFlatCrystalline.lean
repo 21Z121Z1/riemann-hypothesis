@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NBasisLoc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachInclusionXQFrobenius
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingsCyclotomic

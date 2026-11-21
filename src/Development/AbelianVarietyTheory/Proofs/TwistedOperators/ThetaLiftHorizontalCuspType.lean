@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnQuotHeightPowMulNorm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormUniformHeightApproxStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspAlongOfPairLifts

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfiniteTopOfDictionaryDepth
 open GlobalTheory.SumSize GlobalTheory.RowClaim
 set_option maxHeartbeats 1000000 in

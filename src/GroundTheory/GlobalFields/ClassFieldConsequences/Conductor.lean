@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ClassFieldConsequences.ConductorLocal
 import GroundTheory.GlobalFields.GlobalReciprocity.General
 set_option maxSynthPendingDepth 1

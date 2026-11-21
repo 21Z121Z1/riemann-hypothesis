@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelBoundGivesConstantBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SizeStatementStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.BundleChernComparison
 
 namespace GlobalTheory.CompanionTheory.Ar.Num

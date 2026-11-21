@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PullInvClsOfFibres
 

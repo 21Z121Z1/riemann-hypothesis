@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FinConv
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLevelFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteRestrictionVanishing

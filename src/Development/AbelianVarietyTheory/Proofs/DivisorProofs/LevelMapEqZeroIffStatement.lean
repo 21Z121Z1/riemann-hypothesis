@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapEqZeroIff
 open Matrix GlobalTheory.SUCong
 set_option maxHeartbeats 1000000 in

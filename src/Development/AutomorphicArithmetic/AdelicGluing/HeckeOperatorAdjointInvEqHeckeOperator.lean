@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.CommPrj
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.HopOloc
 open MeasureTheory NumberField IsDedekindDomain MvPolynomial Filter

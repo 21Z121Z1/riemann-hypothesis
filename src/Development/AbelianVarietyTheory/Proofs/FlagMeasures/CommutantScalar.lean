@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HilbertSchurUnitaryIrreducibleScalar

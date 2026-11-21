@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveComplexPoint
 set_option maxSynthPendingDepth 1

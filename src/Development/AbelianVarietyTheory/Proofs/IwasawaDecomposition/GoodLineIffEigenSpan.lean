@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowSetFinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadWMemGoodW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EOpEqAsAlgebraHom

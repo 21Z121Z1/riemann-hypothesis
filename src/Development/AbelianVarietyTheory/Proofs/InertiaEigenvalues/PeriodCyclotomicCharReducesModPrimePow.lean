@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisCohomology.LocalTateDualityK
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharacterCongrRootOfUnityPow
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc

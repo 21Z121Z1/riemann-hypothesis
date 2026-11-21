@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralFibreOverCellStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralPositiveNegativePartsStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory Matrix NumberField

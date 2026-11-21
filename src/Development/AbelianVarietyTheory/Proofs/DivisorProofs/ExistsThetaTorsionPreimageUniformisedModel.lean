@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UTorsClosed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MulEqOneOfComb
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsOperators

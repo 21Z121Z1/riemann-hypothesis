@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticesComplete
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemePullbackFstComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeCorrespondenceSurjective

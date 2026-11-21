@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompReixMemAdm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxSymplecticDoubledHermitian
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFreeLocalChartStatement

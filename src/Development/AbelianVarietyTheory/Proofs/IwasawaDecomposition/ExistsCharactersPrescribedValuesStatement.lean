@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharactersPrescribedValues
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem
 open Formalism.L2.Col

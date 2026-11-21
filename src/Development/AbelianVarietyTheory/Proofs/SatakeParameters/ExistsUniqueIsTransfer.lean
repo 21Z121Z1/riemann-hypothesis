@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FreeHomExtOfCoveringStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplittingSieveMemEtaleTopologyStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitByBaseChangeStatement

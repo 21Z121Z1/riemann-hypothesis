@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrR
 import Mathlib.RingTheory.AdicCompletion.RingHom
 

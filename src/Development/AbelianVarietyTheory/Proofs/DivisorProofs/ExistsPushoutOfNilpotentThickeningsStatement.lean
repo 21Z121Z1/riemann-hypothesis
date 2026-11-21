@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPushoutOfNilpotentThickenings
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits
 set_option maxHeartbeats 1000000 in

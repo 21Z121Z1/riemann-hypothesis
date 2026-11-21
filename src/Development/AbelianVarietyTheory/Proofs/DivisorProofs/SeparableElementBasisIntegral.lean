@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulMat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceMulEqZeroImp
 import Mathlib.RingTheory.Artinian.Instances

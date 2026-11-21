@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartExpOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecRatioEqRefl
 import Mathlib.RingTheory.WittVector.IsPoly

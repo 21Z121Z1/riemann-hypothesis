@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotMemOfMulExp
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsKFinDRep
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KFiniteLeOfGKStableDiscreteSeriesModel

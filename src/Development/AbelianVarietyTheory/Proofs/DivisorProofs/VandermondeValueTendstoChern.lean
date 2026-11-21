@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanTermFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapMaximalIdealOfTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanTermTendstoZeroStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisOApplyZero
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsCuspFunIffConstTerm
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.CovolOneIntegralAdd

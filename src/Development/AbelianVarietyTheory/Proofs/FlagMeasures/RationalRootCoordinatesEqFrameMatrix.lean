@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.InHHDef
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RatCoordCont
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabUMapEqOfRoots

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReductionCompletionBlockTriLowerBlockDet
 open NumberField IsDedekindDomain Formalism.L2 Formalism.L2.DIV
 

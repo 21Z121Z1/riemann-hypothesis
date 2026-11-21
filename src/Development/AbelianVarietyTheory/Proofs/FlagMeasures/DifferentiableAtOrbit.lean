@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsOrthonormalBasis
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsNormSqTensUpdate
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VPSubOfLocalBound

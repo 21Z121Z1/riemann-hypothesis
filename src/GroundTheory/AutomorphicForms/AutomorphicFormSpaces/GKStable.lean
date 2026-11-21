@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableConv
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableLaplacian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLevelSubgroupProperties
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermLocallyConstant
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermHeckeFormula

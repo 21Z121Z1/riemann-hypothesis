@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicFrameTorusElementMatrixEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviElementPreservesWittColumnSpanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameEigenvectorColumnFormStatement

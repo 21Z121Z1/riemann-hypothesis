@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGenericWeilPairing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TateIsoPullbackEquiv

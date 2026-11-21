@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantDerivationOfCounitalComul
 import Mathlib.RingTheory.Bialgebra.TensorProduct
 import Mathlib.RingTheory.HopfAlgebra.Basic

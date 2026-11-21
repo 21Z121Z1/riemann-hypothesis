@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingCriterion
 import GroundTheory.ProfiniteCohomology.Shapiro
 import GroundTheory.ProfiniteCohomology.CartierDual

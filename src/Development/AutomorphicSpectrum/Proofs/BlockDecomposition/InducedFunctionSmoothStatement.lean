@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionSmooth
 open Matrix Finset MeasureTheory
 open scoped ContDiff ComplexConjugate InnerProductSpace

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoCubeMulDerivWeierstrassPNegTwoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfOddEllipticOfTendstoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdKernelMultiplierTranslateNegStatement

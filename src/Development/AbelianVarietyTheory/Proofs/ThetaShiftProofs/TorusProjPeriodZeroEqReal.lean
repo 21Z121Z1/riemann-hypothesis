@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.DegeneratingToriPeriodMapEqBaseOfYEqZero
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.Matrix.Order

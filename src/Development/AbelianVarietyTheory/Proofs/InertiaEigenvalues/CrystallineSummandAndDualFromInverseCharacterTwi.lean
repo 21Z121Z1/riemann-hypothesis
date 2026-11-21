@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ResidualConstruction
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitsOfConjugatesMem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCrysIffOfTwist

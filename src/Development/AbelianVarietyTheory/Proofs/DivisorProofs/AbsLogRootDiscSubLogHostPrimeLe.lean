@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadraticSubfieldRootDiscriminant
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.SchurLatticeConjugates
 import Mathlib.RingTheory.PicardGroup

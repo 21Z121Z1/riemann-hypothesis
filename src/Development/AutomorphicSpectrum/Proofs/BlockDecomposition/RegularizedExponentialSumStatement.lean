@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularizedExponentialSum
 open scoped Classical
 namespace PositivityTheory.Rg.BcB.F

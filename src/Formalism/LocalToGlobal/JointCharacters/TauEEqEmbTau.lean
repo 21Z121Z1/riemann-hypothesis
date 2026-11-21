@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.JointCharacters.LocEMulLocE
 import Formalism.LocalToGlobal.UnitaryNorms.CharTied
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineHolFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocPtCompClosedPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalGenericFibreAffineFrameCover

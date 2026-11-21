@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.MatEquivApply
 import ReciprocityTheory.DualLattices.CokernelLengthComparisonOf
 import ReciprocityTheory.DualLattices.StdJForm

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions

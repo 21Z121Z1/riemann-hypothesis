@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.DedekindZetaEqSumRealEisenstein
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3

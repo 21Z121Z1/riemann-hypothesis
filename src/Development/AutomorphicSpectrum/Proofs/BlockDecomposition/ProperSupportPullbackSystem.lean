@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowIdeal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.SupportMore
 

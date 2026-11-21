@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
 import Formalism.LocalToGlobal.InertKernelTheory.DefsIntTens
 import Formalism.LocalToGlobal.GlobalTheory.GL3.ThirdClauseIntegralCombination

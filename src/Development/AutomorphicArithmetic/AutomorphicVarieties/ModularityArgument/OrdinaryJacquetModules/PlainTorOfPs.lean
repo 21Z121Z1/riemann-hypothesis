@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SupercuspidalSupportOfPrincipalSeriesSubquotient
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.Distinct

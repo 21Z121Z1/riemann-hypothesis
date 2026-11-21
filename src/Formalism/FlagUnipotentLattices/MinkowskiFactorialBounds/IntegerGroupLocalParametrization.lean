@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FlagUnipotentLattices.LatticeDeterminantIndexSq
 import Formalism.FlagUnipotentLattices.SignaturePreservingEntryNorms
 import Mathlib.Analysis.Complex.ExponentialBounds

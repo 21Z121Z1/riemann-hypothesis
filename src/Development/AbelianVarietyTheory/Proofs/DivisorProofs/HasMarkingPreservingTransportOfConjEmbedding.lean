@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniformisationOfComplexConjugateKeyDatum
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjPull
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianCompactForm

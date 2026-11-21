@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueSamePt
 
 set_option autoImplicit false

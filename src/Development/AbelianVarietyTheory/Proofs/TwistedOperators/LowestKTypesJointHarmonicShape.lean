@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestKTypesJointShapeBlockInUnitarySStatement
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible

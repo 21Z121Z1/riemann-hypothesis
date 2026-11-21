@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IntegralSpanAlgebra.Burnside
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

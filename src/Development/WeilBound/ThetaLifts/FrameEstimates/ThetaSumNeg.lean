@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.FrameEstimates.SqAllC
 import Development.WeilBound.ThetaLifts.FrameEstimates.ThickFrames
 import Development.WeilBound.ThetaLifts.FrameEstimates.ContinuousMixedSymm

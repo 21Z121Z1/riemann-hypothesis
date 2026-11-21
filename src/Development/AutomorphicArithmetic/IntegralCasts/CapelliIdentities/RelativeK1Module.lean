@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CupPair
 import Mathlib.RingTheory.Regular.RegularSequence
 import Mathlib.RingTheory.SimpleRing.Principal

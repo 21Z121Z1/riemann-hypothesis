@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralOrderDataExistAtPlaceStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactSetContainedInLatticeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLatticeVolumeOrderDataStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitChartAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelOpenNoetherian
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsLocallyNoetherianOfIsQProjOver

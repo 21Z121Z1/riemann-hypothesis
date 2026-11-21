@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusIdealDegreeBound
 open scoped PowerSeries Pointwise
 set_option maxHeartbeats 1000000 in

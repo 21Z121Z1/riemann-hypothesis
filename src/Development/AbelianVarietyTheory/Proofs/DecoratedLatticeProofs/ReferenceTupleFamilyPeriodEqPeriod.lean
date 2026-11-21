@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RatioOKOfRootOfUnity
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TopLevExists
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ExistsIntegralPendingObjectSymmetricFormsLevel

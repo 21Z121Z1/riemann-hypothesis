@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolSub0LeSpanRaw
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPullbackExistsUnique
 open CategoryTheory AlgebraicGeometry NumberField

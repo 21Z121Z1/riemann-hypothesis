@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.NuLe
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.NuQDUnit
 import Mathlib.RingTheory.PiTensorProduct

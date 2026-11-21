@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FiniteNotLocFrOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormEqNegOne
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TotalDegreeLeAndExistsCombinationOfMemFFV

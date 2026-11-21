@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentPhiSqZeroNaturalityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentPhiSmulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SqZeroPointEqOfCotangentFormEqStatement

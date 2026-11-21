@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGrpDataMapHaar
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible

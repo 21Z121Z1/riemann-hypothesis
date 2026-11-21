@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsConeMeasure
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsConeMeasurePosRank
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.MaximalCompactSubgroupProperties

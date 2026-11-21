@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Henselian

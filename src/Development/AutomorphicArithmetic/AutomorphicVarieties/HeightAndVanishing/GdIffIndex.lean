@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.PsiBar
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompIne
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PlacesQ

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteClassesSelfDualOfSelfDual
 import Batteries.Data.Nat.Gcd
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.FirstCoordinateAdmissible

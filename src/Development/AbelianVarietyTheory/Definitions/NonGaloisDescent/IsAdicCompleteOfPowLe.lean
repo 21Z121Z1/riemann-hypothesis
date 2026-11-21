@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AdicCompleteness.IsAdicCompleteComapConstantCoeff
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormLeOneOfMemOL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConstantCoeffTeichSub

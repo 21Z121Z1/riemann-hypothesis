@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntFrExtension
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModuliPointIntegralFrameAfterFiniteExtension

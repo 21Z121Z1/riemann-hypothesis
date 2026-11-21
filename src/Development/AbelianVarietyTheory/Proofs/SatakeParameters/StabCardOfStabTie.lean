@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.WeightedChainData
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.AmbientLatticeAvoidance
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DecorationLiftStdLatticeReductionStatement

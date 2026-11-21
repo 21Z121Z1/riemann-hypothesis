@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRepBasisCharpolyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyEqOfIntertwined
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittRepReductionStructureStatement

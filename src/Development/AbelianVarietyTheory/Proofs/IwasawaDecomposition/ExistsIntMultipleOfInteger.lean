@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.IntegralClosure.IntegralRestrict

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.DualLenStatement
 import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

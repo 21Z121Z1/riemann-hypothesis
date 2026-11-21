@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GoodConstOfAniso
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsIsoFrameFirstCols
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing

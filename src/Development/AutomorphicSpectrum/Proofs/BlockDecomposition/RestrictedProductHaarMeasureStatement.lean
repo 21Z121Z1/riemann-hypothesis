@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedProductHaarMeasure
 open MeasureTheory Topology
 open scoped ENNReal NNReal

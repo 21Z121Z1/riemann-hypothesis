@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAtlasRefiningCocycle
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AtlasModelComparisonStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepHoldsOfMapStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DerivationDivisibleOfCocomm
 open Formalism.MainNotions.DIV.Cons (intO)
 set_option maxHeartbeats 1000000 in

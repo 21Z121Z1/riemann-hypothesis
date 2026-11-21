@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsHyperbolicPairs
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume

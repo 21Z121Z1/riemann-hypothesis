@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Topology.Algebra.ClopenNhdofOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 

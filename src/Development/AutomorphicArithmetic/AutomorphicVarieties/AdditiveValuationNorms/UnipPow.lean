@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.NilLen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.CokLen
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqvDown
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabExtOfTrait
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqvRational

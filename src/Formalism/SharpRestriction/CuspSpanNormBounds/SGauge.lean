@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

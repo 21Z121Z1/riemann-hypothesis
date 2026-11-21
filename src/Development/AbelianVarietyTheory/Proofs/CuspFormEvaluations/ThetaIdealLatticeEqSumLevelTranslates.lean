@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockHxDifferentiable
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelOneThetaEqSmulOfSelfDualLattice
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LevelStructureProperties

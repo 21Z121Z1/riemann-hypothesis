@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SpanRestrictEqTopOfAbsIrrSubStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SemisimpleMatrixRepIsInternalIrreducibleStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsoSubSpanExtensionOfScalarsStatement

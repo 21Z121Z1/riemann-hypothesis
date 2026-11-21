@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.OneLeAPlLast
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSLowK
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HolomorphicLowestType

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormaliseAtSmoothPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CountKernelNonzero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonDominatingVarietyPointNoTrBasis

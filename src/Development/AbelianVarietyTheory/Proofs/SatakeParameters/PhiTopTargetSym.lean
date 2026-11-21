@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlkDetEqDB
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPDivOfUnit
 

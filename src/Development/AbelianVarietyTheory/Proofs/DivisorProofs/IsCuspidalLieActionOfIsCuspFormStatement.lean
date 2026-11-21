@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspidalLieActionOfIsCuspForm
 open NumberField GlobalTheory.CuspRep
 set_option maxHeartbeats 1000000 in

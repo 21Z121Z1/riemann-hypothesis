@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumNonneg
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGrowthStabilizerUnipotentStatement
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ReproducingFormulaReduction

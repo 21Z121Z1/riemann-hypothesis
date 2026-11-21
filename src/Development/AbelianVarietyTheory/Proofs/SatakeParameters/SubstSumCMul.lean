@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualOm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JetZ
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConstantCoeffJetLogG

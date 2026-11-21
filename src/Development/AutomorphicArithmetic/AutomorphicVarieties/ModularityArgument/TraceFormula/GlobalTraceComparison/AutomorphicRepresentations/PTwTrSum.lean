@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TwtrContOfMem
 import Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.TwTrSum
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ThetaCellCovers.AdmissibleLeHolds

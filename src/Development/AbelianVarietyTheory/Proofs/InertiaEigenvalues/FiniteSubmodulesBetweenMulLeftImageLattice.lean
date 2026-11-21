@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Mathlib.RingTheory.Ideal.Quotient.Index
 open GlobalTheory.UnitLemma Polynomial

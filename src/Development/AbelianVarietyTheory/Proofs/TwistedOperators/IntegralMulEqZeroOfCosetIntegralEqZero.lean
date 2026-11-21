@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MeasurePreservingRmulQuotMeas
 
 open MeasureTheory GlobalTheory.AutomorphicL2Unitary Topology Set Filter

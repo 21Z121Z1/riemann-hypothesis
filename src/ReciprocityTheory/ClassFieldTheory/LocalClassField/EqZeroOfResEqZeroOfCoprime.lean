@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.SubsingletonHOfSubsingleton
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField

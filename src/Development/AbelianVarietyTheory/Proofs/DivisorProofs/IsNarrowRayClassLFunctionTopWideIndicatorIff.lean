@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaValueIdeals
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateWideInd
 

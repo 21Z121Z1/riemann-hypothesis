@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.DiscreteModules
 import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply
 import Mathlib.FieldTheory.Galois.Profinite

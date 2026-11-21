@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCountableCharts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformisationsSamePointDifferByIsometryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeOfCountableHolomorphicImagesCoverStatement

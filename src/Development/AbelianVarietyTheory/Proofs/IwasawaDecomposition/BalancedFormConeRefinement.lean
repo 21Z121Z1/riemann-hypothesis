@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InRealConeSelf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIntegralSupportFunctionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RankIncreaseOfNonSpanStatement

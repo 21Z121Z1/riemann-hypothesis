@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ISupEigenspaceEqTop
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.RowAddGenericRowAddTerm
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ColumnDegreeLe

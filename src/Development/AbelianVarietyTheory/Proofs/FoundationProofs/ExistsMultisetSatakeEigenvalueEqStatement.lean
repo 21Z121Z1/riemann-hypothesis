@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMultisetSatakeEigenvalueEq
 open Formalism.UG GlobalTheory.PRep GlobalTheory.LFun
 set_option maxHeartbeats 1000000 in

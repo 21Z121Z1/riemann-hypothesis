@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGramFibrationDisintegrationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictedProductHaarMeasureStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsotropicFreeVectorsSameGramStatement

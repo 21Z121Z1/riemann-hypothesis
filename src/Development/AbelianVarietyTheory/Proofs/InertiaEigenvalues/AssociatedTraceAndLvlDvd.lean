@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBin
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.NumberTheory.Multiplicity

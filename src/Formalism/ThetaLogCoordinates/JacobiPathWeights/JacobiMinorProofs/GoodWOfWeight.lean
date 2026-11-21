@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.GenSpace
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.IndexWeightsDominance
 

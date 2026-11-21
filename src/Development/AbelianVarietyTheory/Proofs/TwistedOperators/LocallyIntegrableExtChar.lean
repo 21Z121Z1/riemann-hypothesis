@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DetUnitScalarMul
 import Mathlib.Topology.Compactness.CompactlyGeneratedSpace
 

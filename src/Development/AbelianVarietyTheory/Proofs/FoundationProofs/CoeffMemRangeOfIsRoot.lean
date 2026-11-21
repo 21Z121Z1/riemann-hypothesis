@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgebraicOfFiniteComplexAutomorphismOrbitStatement
 import Mathlib.RingTheory.PowerSeries.NoZeroDivisors
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators

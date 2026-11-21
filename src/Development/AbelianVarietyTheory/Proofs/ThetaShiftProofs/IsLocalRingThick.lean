@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ToStkAInjective
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueSecPull
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpandsAtTransport

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionPullOver
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.Tactic.Monotonicity.Lemmas

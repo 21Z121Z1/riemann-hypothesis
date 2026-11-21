@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RWConstMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NsgDivNorm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilRepresentationHypothesisStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.GeneralLinearGroupCharEqOneOfDetEqOne
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

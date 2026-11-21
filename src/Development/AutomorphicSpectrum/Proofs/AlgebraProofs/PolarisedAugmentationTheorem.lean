@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedAFStatement
 import ReciprocityTheory.DualLattices.HasLenCokerDet
 import ReciprocityTheory.DualLattices.PowMemCarrier

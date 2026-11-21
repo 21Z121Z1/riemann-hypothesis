@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.MonoM
 import Mathlib.RingTheory.Regular.RegularSequence
 

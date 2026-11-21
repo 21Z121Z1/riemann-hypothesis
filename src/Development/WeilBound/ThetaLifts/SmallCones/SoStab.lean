@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.SoStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionLabelsOneTraitWeilPairingBijectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionLabelsTraitCompatibleLevelsMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelPointMulLevelStatement

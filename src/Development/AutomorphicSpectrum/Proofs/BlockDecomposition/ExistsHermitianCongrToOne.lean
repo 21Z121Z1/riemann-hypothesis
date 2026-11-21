@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardOrthonormalFramesHermitianSpaceStatement
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.Henselian

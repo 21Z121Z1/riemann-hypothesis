@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCyclotomicMapLocalizationStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelFamilyBaseChangeModelStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormalModelFiniteStatement

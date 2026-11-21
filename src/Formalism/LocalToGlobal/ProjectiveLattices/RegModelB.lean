@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegKrull
 import Mathlib.Tactic.Polynomial.Basic
 

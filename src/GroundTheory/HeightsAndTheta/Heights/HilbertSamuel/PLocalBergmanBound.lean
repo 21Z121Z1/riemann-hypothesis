@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergman
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartBergman
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanNorms

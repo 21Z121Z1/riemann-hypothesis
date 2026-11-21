@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GenericFiniteMaps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneCompOfIsGrpPullback

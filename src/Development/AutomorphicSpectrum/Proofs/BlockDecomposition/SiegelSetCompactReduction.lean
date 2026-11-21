@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzBoundFiniteInfiniteStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaSeriesSiegelBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaRapidDecaySiegelSetStatement

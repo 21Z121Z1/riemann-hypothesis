@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.HeckeFr
 import Formalism.LocalToGlobal.ProjectiveLattices.HeckeStabSet
 import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove

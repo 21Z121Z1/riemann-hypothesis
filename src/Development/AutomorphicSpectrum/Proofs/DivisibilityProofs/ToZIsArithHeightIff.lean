@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArchIntegrableIffOverIntegersStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SumLogNormEqSumEmbeddingsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.WOverRestrPow

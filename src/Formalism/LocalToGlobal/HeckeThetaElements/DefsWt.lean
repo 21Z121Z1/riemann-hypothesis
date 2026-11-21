@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HeckeThetaElements.IsHeckeElt
 
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormEqNegOne
 import Mathlib.Algebra.Algebra.Field
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CentralCharts.ContDiffAtLogdet
 import Development.WeilBound.CoreStatements.CentralCharts.AnalyticAtDet
 

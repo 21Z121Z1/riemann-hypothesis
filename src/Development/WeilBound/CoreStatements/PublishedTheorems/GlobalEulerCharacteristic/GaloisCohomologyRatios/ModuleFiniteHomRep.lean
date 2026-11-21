@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.GaloisCohomologyRatios.NormalOfGsOpenSubgroupNormal
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.Kummer
 

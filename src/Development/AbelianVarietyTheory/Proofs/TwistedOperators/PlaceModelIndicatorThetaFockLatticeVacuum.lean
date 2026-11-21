@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThPDatumEq
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualCLatP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNsmulIntMemLatO

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DrowsPos
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LambdaPrimeBasisRowTypePosAtReference
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IotaProjectionAdjointBasisRowEigenvalueStatement

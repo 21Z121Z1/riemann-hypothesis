@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LibOpenLevel
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 

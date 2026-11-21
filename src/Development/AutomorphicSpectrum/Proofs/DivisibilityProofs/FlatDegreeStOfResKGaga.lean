@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ExistsConstSectionKroneckerCharStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgebraicOfNormConst
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField IsDedekindDomain

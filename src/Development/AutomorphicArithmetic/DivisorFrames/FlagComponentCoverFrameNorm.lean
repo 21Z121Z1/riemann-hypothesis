@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TangentSectionsOnNormalModel
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RepresentsOfComputes
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetMemSpanAdjugate
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOneOfMemProKer

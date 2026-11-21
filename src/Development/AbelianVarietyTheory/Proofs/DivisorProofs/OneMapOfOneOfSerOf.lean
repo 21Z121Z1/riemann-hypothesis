@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionThirdStatement
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.OfBeforeProjector

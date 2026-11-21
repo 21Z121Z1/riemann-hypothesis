@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsConeAvoid
 import Mathlib.RingTheory.MvPolynomial.Ideal
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingGapBoundStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingGapBoundDualStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselFunctionLocalityInvariantFactorFiniteSumStatement

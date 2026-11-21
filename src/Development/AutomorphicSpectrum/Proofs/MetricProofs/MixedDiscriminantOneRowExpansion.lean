@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedDiscriminantCofactorExpansionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EvalW
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ExistsVanishingIdeal
 

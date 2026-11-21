@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences
 import GroundTheory.HeightsAndTheta.Heights.Intersections.TableDegreeThreeBase
 

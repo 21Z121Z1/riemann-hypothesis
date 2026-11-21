@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DualCoefSpaceIsTensorOverRealPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TopSeparationStatement
 import Development.AutomorphicArithmetic.ThetaCorrespondence.BesselModels.SepGap

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralHeisKerSumDiag
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralKerSumGraphEq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaTransport

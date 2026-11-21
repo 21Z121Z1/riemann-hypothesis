@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ClassNumImQInt
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticInvariants.QuadPolyIrreducible
 import Mathlib.Tactic.ENatToNat

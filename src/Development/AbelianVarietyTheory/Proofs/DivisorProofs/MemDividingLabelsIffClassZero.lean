@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionTranslateOfClassZeroDividingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberDividingLabelClassZeroStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

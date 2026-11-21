@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.EzOfComplex
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.EvenPosGramFormIntegralLatticeProperties
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.GaussSumBound

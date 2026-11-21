@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisConjugateHolomorphicUniformizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionTransportCmUniformizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionTransportGaloisCompatibleStatement

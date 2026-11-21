@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsPotential
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc

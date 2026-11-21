@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.IntegralMaxCompactEqCircleAverage
 import Development.AutomorphicArithmetic.WhittakerHecke.CongruenceSubgroupVolumePos
 import Development.AutomorphicArithmetic.WhittakerHecke.FiniteIdeleCongruenceVolumePos

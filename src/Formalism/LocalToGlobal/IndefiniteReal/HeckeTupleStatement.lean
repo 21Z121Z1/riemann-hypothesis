@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 
 namespace Formalism.IndefR.HeckeTupleConditions

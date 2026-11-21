@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmallTracesDvdSpanImage
 open Formalism.MainNotions.N GlobalTheory.Cong GlobalTheory.PsChar
 set_option maxHeartbeats 1000000 in

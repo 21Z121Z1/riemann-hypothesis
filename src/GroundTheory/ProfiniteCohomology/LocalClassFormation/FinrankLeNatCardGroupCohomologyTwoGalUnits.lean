@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderInfRes
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderScalars
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.UnramifiedRes

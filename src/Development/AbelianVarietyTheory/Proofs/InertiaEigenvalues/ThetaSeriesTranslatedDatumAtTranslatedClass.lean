@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompAtMtOfMemGfC
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite

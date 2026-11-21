@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemHilbertLatticeTwistIffLiftStatement
 
 open NumberField UpperHalfPlane GlobalTheory.HilbFam GlobalTheory.QFam

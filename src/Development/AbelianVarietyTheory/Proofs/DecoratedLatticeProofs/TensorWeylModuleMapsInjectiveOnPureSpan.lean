@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TensorTypesRealPlacesEquivSpanWeylModules
 open Formalism.BasicNotions Formalism.L2.Forms
 open scoped TensorProduct

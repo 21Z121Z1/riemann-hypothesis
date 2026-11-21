@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InCellIffDetNeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParFunSiegMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierIntertwinesSiegelLeviOperatorStatement

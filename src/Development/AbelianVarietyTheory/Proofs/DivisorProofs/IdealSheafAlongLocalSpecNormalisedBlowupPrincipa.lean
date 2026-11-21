@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdlAlongComapEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationTransferModels
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact

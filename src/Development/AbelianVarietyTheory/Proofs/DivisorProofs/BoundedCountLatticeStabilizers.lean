@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrongApproximationLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedCountFiniteIndexSubgroupsStatement
 open scoped TensorProduct NNReal ENNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTaylorPartialSumDerivBound
 open SchwartzMap Filter Topology
 open scoped Nat

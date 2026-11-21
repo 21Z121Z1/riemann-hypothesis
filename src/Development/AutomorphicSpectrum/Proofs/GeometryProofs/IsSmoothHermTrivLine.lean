@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsVBOneOfChartGenerators
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ProjLineRankTwoPushforwardHypotheses
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine

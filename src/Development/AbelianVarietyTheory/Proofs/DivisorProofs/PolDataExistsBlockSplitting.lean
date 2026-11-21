@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConstOfPolConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalCharactersParabolicInductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDataLocalExpansionStatement

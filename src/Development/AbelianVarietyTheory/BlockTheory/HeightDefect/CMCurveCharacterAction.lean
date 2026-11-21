@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.EigLatBasis
 import Mathlib.NumberTheory.Harmonic.EulerMascheroni
 import Mathlib.NumberTheory.LSeries.DirichletContinuation

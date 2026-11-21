@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PowerSeriesArcAbelianLocusStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcTorusStatement
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

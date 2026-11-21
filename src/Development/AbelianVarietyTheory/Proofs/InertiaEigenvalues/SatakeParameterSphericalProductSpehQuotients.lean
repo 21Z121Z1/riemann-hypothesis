@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSubquotientOfSameSphericalHeckeEigenvalues
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SatakeParameterOfSpherical
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff

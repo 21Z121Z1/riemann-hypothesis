@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LevelTracedSeriesRational
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
 

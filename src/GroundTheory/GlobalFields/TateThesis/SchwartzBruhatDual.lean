@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.AdeleIdealMeasure
 import GroundTheory.GlobalFields.TateThesis.AdelicCharDual
 import GroundTheory.GlobalFields.TateThesis.TraceDualLattice

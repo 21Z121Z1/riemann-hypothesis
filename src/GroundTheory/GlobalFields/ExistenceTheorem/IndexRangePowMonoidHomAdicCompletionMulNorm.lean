@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ExistenceTheorem.PowerIndex
 import GroundTheory.GlobalFields.ExistenceTheorem.LocalPowers
 import GroundTheory.GlobalFields.IdeleGroups.IndexFormula

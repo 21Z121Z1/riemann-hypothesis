@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointPoly
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagComponentDimAndBaseDim
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationComponentHolomorphicBoundedDomainStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PluckerMinorsProportionalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitMinorOfIntegralMatrixStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PshExtensionOffClosedSet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialBoundarySmoothStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryPotentialPshStatement

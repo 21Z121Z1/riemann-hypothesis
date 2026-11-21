@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HighestWeightTensor
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 

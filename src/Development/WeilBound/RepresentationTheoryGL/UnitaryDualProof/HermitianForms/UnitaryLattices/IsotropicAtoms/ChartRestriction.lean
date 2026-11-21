@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenAdditiveCharacterKernelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCompactOpenSubgroupMemStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactSupAddSubgroupStatement

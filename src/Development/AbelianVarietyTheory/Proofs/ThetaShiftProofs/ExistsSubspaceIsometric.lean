@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcModelWitnessExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsNeZeroIff
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsDerivAt0NotIsDerivAlong

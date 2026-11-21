@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorsCommuteStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandOperatorNormalStatement
 

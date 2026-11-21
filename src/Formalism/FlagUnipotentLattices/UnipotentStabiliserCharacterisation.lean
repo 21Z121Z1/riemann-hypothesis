@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalDegreeBessel.StatementDS
 import Formalism.FormalDegreeBessel.StatementG
 import Mathlib.Algebra.AffineMonoid.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimeMulBernoulliMem
 
 open Finset GlobalTheory.KummerEisensteinGalois GlobalTheory.EisCong

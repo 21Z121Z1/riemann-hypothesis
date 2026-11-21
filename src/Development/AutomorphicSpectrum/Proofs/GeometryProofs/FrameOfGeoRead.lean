@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GeoRead
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin

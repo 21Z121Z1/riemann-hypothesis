@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.OneArcSt
 import Mathlib.AlgebraicGeometry.Morphisms.FlatDescent
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper

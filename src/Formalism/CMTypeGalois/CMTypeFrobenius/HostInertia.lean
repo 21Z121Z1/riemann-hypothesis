@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CMTypeGalois.StatementField
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.RamificationInertia.Galois

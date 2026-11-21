@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnComplexHessianOfContDiffOnTwo
 open Filter Topology MeasureTheory Metric ReciprocityTheory.L2DbarEstimates
 open scoped ComplexOrder

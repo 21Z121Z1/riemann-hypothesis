@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedSecondBlockRestriction
 
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter Topology

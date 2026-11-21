@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.CyclotomicOrders.NuHost
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmJumpSetupStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SetPointGoodStatement

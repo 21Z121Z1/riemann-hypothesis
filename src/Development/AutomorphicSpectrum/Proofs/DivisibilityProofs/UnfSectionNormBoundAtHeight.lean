@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotFlatExistsOfIsEmpty
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointVectors

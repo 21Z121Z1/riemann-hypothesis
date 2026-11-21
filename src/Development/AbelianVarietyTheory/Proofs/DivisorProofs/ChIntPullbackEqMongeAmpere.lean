@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescentMapContinuousSurjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.L2DbarChartMeasureTransferStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MIntEqDifferencePotentialMeasuresStatement

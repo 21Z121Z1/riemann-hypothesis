@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XHaLattice
 open GlobalTheory.CompanionTheory.Ar.Num
 

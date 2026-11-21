@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffSumPowMulFactorialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardCrossingSetEqGrassmannianDimStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormLowPolyEqNegSumCrossingStatement

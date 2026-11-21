@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeParabolicThetaSixthStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodParameterDiagonalNodesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormHasTypeOfGoodParameterStatement

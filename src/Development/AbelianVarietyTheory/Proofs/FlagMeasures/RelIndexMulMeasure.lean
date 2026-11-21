@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.T2SpaceOfIsNonarchimedeanLocalFieldFlagMeasures
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
 import Mathlib.MeasureTheory.Measure.Haar.DistribChar

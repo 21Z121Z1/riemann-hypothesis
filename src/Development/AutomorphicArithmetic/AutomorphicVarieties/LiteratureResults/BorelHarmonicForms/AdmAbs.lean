@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.BorelHarmonicForms.AvgPos
 import Mathlib.Analysis.Calculus.Deriv.Star
 import Mathlib.Topology.Algebra.Star.Unitary

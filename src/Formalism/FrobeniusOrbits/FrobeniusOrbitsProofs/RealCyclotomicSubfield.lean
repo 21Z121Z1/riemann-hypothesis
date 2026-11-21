@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusOrbits.Statement
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.CStarAlgebra.Classes

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.ThetaEigenspaceMapping
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.InternalDirectSumOfParts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsoLocAppendSingleton

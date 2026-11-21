@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.TendstoFinrankVeryAmple
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBigIffGenDeg
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartLatRank

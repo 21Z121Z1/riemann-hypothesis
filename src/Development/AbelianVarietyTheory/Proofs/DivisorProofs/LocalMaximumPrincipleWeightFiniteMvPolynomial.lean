@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialEvalBoundOnCircleFamily
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Polynomial.CauchyBound

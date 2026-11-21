@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareGeneric
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 

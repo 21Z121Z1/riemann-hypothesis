@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConsMatch
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SimilitudesCorrespond
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing

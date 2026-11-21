@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.SimpleRing.Principal

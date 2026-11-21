@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralFourierCoeffClassIndicatorLevelPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulShortNonneg
 open CategoryTheory AlgebraicGeometry NumberField

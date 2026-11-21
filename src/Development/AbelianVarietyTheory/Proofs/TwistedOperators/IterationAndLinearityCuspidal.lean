@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QEqColPer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChainDownEqLiftAlongPath
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalVectorsRowAndColumnPaths

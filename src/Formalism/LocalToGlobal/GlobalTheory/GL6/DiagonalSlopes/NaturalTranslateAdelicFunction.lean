@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL6.CongruenceNoKernelOfLevelZeroIdentities
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.DiamondCommDistinctPlaces
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.PSplitT

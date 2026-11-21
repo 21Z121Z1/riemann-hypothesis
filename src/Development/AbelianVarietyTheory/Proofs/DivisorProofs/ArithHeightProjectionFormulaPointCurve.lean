@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPartSingleton
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanIntegralPullMulDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDominantRestrictionPointClosuresStatement

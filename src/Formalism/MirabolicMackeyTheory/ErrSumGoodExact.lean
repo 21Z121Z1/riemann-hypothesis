@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MirabolicMackeyTheory.StatementC
 
 open Module NumberField IsDedekindDomain

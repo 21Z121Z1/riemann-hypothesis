@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HilbertSchmidt
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.Analysis.InnerProductSpace.StarOrder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTransverseSliceGeneral
 import GroundTheory.HeightsAndTheta.Heights.Intersections.JacMinorC
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsExpansion

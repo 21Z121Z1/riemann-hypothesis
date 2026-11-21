@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormFderivChartLeOfBoundedLieDerivativesStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
 

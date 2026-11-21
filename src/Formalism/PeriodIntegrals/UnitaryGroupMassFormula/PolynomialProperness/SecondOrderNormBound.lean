@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialProperness.ZhatNormLinearBound
 import Mathlib.Analysis.Normed.Unbundled.RingSeminorm
 import Mathlib.LinearAlgebra.Matrix.AbsoluteValue

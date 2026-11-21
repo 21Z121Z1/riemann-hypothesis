@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFirstOfSecond
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LawOfSquaresSelfDualSplitLatticeStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvMemDoubleCosetAndComm
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeC
 

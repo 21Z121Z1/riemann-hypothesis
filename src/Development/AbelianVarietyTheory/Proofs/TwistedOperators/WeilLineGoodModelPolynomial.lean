@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanLineIntertwinesRealSchrodinger
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneParameterOperatorUnique

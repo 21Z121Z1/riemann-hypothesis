@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolReal
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolSep

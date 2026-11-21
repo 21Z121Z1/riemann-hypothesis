@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.StatementI
 import Formalism.GaussJetBounds.MonoShapeTop
 import Formalism.GaussJetBounds.GaussJetProofs.MinorProductSupportTop

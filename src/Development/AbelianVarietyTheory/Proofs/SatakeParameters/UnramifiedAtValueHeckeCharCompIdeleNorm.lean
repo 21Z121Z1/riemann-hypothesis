@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
 import CompanionTheory.AutomorphicTheory.UnitriangularMeasure.AdeleCoordinateMeasure.EllipticTorusNorm
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

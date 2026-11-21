@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.AlgebraicGeometry.Morphisms.Proper
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicDoubleCosetDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMirProj
 import GroundTheory.AutomorphicForms.GLnLocal

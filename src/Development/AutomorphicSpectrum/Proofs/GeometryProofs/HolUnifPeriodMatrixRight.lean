@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsAbLift
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExponentialSurjectiveSemiabelianStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHolPtsOfFamExp

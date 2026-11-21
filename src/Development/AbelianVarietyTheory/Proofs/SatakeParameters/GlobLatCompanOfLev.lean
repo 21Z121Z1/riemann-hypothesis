@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClsCrdEqGlob
 import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.PNeatB
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSDLatLatK

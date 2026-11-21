@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingIntegralClosurePadicInt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAddValuation
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc

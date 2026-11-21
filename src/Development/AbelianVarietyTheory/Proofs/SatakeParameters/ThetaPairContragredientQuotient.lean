@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsParahoricVec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyCompSideMulEq
 import Development.AbelianVarietyTheory.Definitions.Divisors.T2SpaceGeneralLinearGroup

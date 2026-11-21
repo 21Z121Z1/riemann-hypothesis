@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.RatBasisLinearIndependentInt
 
 set_option autoImplicit false

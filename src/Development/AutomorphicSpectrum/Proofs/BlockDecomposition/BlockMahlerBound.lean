@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MahlerBoundOfDegree
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DegreeBoundedOfBasis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DegreeRationalSubspace

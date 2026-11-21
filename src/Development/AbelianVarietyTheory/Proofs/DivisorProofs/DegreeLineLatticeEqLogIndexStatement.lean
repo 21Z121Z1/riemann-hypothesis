@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeLineLatticeEqLogIndex
 open NumberField ReciprocityTheory.GeometryOfNumbersTheory GlobalTheory.LieHt
 open scoped ComplexOrder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSmulMemOfMemSpanFraction
 import ReciprocityTheory.SemistableReduction.SemiDegCE
 import Mathlib.RingTheory.Etale.Weakly

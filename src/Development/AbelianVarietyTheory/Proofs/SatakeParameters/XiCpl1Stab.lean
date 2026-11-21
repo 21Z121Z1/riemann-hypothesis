@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FirstCoupledKernelEquivariantCosets
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.XiEntryInvariant
 

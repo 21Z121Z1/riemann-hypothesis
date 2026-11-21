@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AnalyticAtEntry
 import Mathlib.Algebra.Module.StablyFree.Basic

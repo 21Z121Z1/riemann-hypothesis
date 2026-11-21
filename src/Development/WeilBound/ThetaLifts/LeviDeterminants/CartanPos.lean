@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.AdaptC
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.MMPreservesHM
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.EqZeroOfPiInf

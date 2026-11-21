@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineOpenPreimageOfIsPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartDensityChangeFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedMetricPullbackIsometricStatement

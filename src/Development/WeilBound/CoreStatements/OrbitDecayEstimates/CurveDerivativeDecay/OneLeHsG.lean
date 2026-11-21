@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FrobeniusBoundOfMulNearOne
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.PiTensorProduct

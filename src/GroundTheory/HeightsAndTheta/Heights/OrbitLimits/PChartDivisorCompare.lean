@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StChartDivisor
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChartIntegral

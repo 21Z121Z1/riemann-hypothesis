@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.CmCharactersOfNearestPlaneOfShortIntegersStatement
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.NearestPlaneRounding
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsShortIntegersSpan

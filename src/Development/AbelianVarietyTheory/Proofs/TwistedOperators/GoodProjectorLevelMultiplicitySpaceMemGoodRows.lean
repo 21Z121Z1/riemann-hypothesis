@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ProjectiveLiftExistence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelMultiplicityStableUnderActionStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupLiftsToParahoricLevelStatement

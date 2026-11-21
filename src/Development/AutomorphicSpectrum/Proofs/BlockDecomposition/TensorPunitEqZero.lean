@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftCommLTensorNatural
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectTensorProductStatement
 import Mathlib.Algebra.Order.PUnit

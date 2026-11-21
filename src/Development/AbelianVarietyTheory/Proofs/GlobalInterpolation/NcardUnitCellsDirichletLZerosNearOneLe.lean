@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CardSpacedDetectedLe
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ZetaZeroDetect
 import Mathlib.NumberTheory.LSeries.Nonvanishing

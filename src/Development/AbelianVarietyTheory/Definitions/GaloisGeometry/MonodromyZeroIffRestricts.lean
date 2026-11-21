@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RestrictsSelf
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsLocCompTrivIff
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.PolarizedPairLineIff

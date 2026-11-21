@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.DensVNA
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.DensVGlue
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarAngleFormReEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsC1DensityForLinePairStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartwiseC1DensityOfCompatibleStatement

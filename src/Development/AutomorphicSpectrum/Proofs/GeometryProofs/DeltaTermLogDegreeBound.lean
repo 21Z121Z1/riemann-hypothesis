@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.RootSurvey.GeometrySurvey.ExistsTopDegreeCoefficientFormAndEqOnTopForms
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EpSplit
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EpInert

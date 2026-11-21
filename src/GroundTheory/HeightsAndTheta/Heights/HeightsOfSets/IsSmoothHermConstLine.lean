@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.MemMCoordIdealIffOfIsWeightedHomogeneous
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Imports
 import Mathlib.Topology.Separation.CompletelyRegular

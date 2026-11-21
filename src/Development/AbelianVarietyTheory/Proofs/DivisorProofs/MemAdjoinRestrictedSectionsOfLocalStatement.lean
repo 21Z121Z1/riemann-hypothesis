@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemAdjoinRestrictedSectionsOfLocal
 open AlgebraicGeometry CategoryTheory Limits Opposite GlobalTheory.QcSub
 set_option maxHeartbeats 1000000 in

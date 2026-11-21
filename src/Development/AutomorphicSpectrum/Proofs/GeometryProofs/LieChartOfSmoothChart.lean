@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentVectorOfDualHomStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentVectorSumDualNumberStatement

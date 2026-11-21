@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.Proposition5OfThreeParts
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.GramExponentArithmetic
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.LeOfOneLeMul

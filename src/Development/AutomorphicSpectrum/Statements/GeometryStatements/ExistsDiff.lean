@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.AdelicGroupAlgebraActionInjective
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLieLieModel

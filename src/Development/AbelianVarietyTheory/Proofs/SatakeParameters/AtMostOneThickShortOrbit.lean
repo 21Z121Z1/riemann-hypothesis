@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Alternates
 import Development.AutomorphicArithmetic.CyclotomicBounds.PlaceOfLetterInjective
 open GlobalTheory.HTW Formalism.BasicNotions Formalism.FrobeniusOrbits

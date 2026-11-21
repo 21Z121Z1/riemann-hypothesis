@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HodgeComponentFactorPointStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GenericPointFieldIsoStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.RootOnFund

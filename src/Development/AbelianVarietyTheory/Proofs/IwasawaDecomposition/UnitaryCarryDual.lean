@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataLevel
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 import Mathlib.RingTheory.Henselian

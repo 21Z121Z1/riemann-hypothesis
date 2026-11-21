@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivial
 import Mathlib.Tactic.Polynomial.Basic
 

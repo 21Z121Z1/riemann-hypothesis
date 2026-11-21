@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StrongApproxStabStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexComapPairOfDenseImageStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarInvVolumeRelIndexPiUnivEqFinprodStatement

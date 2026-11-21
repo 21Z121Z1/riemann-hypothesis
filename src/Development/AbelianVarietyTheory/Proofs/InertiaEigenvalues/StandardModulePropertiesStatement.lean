@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StandardModuleProperties
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL
 set_option maxHeartbeats 1000000 in

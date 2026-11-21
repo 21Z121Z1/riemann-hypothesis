@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisOfRegularForms
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsComplexConjIsometryInertCompletion
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIdemOfAlgebraMap

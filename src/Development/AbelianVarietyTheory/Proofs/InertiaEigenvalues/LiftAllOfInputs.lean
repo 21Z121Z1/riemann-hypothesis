@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistCharacterUnramifiedInfStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsotypicRealNonzeroStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SphericalInertiaOfIsotypicStatement

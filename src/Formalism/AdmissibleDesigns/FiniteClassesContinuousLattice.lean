@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.NonemptyPl
 import Formalism.WeaklyAdmissibleFiltrations.CrystallineStableLifts.Galois
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalConcreteOf

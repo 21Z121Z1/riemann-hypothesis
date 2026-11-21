@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParaSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBThetaUnfolding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowPartCompactStableStatement

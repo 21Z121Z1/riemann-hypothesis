@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PolynomialDimension.MultinomialDepth.FockGaussComparisonHolds
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.LaTwTranspose
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.TransposeWordsProofs.FockPairingRowAction

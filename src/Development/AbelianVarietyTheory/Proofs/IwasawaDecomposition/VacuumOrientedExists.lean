@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MapFinNeg
 
 open Formalism.BasicNotions Formalism.IndefR.Datum

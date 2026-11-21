@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleOfEtaleHeightOneOfRegularLocalRingStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIntegralPi
 open IsLocalRing

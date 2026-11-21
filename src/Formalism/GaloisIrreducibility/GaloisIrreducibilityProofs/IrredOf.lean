@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisIrreducibility.NoSolvableOf
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.RegularLocalRing.Defs

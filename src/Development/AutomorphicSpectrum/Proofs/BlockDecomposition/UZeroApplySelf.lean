@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.SubThickRees
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Data.Finsupp.Pointwise

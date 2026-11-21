@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.MapsAtIdIsoPow
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SymBox
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.TauBimultPow

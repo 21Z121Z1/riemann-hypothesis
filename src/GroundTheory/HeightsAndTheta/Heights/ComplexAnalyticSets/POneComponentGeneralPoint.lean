@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StOneComponentGeneralPoint
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVanishNearPoint
 import Mathlib.Topology.Algebra.MvPolynomial

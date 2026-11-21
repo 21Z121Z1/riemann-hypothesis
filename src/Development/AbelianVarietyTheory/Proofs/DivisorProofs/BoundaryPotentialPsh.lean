@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviFormLogPotentialFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormBoundedByPositivePotential
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BoundaryPolynomialFunctions

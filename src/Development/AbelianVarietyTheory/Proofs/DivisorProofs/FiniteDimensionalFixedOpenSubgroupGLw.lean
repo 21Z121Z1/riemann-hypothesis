@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleAdmissibleGL
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSatakeGLOfIsSatVecGL
 import Development.AbelianVarietyTheory.Definitions.Divisors.SimpleTwistedTraceFormulaStable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.HTChartExists
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFunctionalBaseChangeStatement

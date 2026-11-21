@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ScalesBy
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealIdeleFlow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousSplitTorusSection

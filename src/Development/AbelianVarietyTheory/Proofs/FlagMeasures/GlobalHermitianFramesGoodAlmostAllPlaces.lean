@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitEntries
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HmUnit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RationalExtend

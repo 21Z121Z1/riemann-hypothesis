@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsRepresentativesModNsmul
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdjoin
 

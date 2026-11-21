@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmulLk
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemStabGLAdeleIff
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdelicLatticeCompletionLocalGlobal

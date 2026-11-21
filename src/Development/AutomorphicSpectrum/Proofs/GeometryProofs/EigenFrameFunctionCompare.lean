@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GermStalkClosedPointToBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameAtComponentPointStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AffineChartBundleSectionsStatement

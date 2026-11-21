@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginFrameLocalBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagEqualChangeLowerTriangularStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits

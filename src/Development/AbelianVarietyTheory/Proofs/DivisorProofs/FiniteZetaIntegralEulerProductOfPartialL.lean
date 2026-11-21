@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralEqClassSumOfHom
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaAdjointScalarParts

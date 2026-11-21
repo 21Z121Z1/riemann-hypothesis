@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleModelOfIsColimit
 import Mathlib.AlgebraicGeometry.AffineTransitionLimit
 import Mathlib.AlgebraicGeometry.Morphisms.UniversallyOpen

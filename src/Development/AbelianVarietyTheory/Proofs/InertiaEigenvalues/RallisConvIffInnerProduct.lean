@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.RallisInnerProductFormula
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow

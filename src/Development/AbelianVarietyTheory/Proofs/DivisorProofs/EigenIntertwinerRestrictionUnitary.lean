@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCentralUnipotentTranslateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalMapPairCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalMapPairCompatAltBis

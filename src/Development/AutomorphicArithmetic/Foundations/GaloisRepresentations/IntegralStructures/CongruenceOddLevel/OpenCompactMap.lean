@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLevelAwayAdapted
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LatticeDataThicknessBound
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AutFormFixedByIntegralPointsAlmostAllPlacesStatement

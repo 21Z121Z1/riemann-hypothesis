@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.FamSat
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.Places
 import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.LiftSum

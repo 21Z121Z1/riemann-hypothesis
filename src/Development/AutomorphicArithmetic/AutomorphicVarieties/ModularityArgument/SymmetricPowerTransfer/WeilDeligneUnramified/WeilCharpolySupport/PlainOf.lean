@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.WeilDeligneUnramified.UnitaryTwoForm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsUnramOfFixedIwahori
 

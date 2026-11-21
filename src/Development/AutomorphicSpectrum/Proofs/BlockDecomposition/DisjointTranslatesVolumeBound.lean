@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Order.CompletePartialOrder
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

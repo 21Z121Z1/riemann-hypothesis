@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalIsGenericStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerHeredityStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinrankEqProdOfNonemptyEquiv

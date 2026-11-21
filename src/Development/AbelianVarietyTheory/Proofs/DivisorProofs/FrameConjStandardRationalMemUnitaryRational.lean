@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrConjApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDetSmulSubOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.SAOpenStatement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.CStarAlgebra.Classes

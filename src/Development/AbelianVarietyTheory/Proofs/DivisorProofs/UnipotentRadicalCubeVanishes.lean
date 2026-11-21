@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemUnipFix
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneAdelicDecompositionStatement
 open scoped TensorProduct NNReal Matrix

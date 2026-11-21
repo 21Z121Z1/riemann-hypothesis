@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsPrincipalCongruence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenIsCompactPrincipal

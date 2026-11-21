@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.WittVector.IsPoly

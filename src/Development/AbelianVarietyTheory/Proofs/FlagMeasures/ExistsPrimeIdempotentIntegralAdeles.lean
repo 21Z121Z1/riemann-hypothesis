@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsReduction

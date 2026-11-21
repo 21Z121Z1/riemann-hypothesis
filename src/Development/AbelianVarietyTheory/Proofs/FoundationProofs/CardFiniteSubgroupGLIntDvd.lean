@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsInvariantNatLengthLattice
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

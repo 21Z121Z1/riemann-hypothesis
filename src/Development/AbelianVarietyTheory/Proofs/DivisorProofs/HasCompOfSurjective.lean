@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.TwoFactorUnique
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsIrreducibleIff
 

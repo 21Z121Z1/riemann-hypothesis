@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationMapIntertwines
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFiniteApproximation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerFixesScaledLattice

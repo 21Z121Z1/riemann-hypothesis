@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.BernsteinZelevinskyGL.TopAdm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ToQuotEqZeroIff
 

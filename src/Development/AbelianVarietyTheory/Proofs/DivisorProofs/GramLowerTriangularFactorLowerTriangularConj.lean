@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Mathlib.Analysis.CStarAlgebra.CStarMatrix
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory Filter Topology

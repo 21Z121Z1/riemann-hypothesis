@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HomogSpan
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhSection
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.LocGradedTop

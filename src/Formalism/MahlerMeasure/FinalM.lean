@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelSum
 import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelAct
 

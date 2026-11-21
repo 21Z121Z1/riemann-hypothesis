@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.AestronglyMeasurableQuotMeasureIffLift
 open CompanionTheory.D.gk.admitted (stdPoly)
 open GlobalTheory.AutomorphicL2Unitary

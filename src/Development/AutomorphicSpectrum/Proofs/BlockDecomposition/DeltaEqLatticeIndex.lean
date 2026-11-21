@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsLatIntVec
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermOf
 import Mathlib.Algebra.AffineMonoid.Basic

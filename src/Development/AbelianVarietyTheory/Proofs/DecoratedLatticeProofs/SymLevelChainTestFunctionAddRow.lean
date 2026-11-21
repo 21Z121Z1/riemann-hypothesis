@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IteratedDepthOneLevelCharacterClosedForm
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.OnesRepresent
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.GoodMap
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.JunkEx
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ExponentMulAbsPow

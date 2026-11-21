@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusFundamentalDomainCovers
 open GlobalTheory.IndefiniteRowSideFullHecke.SiegelReframe
 

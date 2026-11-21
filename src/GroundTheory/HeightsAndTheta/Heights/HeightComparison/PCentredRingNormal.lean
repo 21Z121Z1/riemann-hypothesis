@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightCentredRingNormal
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PSubringPrimeMaximal
 import Mathlib.Algebra.AffineMonoid.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdealEtaleBaseChange
 namespace FunctorialResolution.EmbeddedResolution
 namespace DerivIdealBaseChange

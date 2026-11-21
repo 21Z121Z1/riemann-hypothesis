@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecCyclicB
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField

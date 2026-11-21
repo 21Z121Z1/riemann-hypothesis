@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.CvSmulRight
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.NonVan
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.MemSuppMono

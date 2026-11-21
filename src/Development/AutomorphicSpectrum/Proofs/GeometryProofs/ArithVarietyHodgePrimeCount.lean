@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MulMemSqOfSmulEqZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LemmaBTHolds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieOmegaLatticeVectorBundle

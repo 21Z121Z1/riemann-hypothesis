@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeVolSlopeOfTendsto
 
 open NumberField IsDedekindDomain Filter Topology

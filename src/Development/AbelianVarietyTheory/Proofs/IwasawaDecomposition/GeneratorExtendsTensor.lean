@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtAt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

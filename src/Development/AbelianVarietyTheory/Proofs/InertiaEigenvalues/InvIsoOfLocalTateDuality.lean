@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatInvIsoOfLocalTateDualityCyclotomicTwistStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H2TwistFromOpenUnionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MapH2SubtypeInjectiveStatement

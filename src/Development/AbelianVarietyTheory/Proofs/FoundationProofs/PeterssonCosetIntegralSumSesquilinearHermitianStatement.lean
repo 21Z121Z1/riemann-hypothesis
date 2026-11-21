@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PeterssonCosetIntegralSumSesquilinearHermitian
 open UpperHalfPlane ModularForm CongruenceSubgroup MeasureTheory
 open scoped MatrixGroups ModularForm Manifold

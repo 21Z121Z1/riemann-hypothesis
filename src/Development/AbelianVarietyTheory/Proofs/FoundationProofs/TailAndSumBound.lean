@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KroneckerReal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Gl2L2IntegralityStatement
 

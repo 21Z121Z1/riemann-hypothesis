@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedMetricOfIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagGenericFibreIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleExistsArithmeticVarietyAltBis

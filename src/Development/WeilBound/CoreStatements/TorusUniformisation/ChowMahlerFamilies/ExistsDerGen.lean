@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ValAtSpecMap
 import ReciprocityTheory.DualLattices.CotangentSurjective
 open GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.BT

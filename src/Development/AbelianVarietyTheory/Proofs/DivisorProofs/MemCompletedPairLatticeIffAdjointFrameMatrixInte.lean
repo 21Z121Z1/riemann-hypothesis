@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NabBaseChange
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusMapsIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemLatOfIsIntMAdjConjHalf

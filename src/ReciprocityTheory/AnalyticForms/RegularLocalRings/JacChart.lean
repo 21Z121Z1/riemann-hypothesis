@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.JacChartC
 
 namespace ReciprocityTheory.AnForm.R

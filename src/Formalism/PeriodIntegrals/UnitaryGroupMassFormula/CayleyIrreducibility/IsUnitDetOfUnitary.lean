@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.DivClosedOf
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.SimpleRing.Principal

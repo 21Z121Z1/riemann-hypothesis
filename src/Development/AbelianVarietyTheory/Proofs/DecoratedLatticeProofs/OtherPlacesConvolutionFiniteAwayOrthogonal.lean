@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlaceIdemMemIdAt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisOFinsetSum
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsOneComb

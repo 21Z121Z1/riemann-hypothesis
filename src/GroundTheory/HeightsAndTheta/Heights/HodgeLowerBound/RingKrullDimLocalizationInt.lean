@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsDimX
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIntDomainDim
 set_option maxSynthPendingDepth 1

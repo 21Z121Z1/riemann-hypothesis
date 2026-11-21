@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDictDef
 
 set_option linter.unusedSectionVars false

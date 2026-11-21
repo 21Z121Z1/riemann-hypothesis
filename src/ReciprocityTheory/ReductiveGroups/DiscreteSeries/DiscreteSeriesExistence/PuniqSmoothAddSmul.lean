@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsStatement

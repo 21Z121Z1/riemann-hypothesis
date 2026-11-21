@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPelUnifPull
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsDescOfPoints
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsWitOfPull

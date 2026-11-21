@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SumSqCompBlockMap
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloOnDivCongr
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagGapPullbackFirstStatement

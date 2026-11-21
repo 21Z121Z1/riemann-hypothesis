@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.PdegEqOfIsDeg
 import Development.AutomorphicArithmetic.DivisorFrames.IntersectionNumberPullbackDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteSetDimDropClosedStatement

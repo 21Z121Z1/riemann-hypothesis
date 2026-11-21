@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.FourierSchwartzBruhatPreserved
 import Development.AutomorphicArithmetic.DivisorFrames.HaarIntegralUnitsScaling
 import Development.AutomorphicArithmetic.DivisorFrames.FiniteUnitContractions

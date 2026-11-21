@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeometricSideEstimates.SumDer
 import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
 open UpperTheory.V.Lit.Geo

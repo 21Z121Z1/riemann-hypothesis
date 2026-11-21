@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.ExistsSecTieFOfTies
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HalfPrincipalAndSplit
 open NumberField Formalism.BasicNotions Formalism.MainNotions

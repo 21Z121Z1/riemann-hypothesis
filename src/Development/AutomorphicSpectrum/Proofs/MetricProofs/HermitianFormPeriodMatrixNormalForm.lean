@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KernelsMatrix
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaHolomorphic
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField MeasureTheory

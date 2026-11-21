@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EPowXiExtMemMan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisElementMovingTiltedUniformizerStatement
 import Development.AutomorphicArithmetic.CyclotomicBounds.DeRhamLattices.PhiModCrystallineComparisonOfIsCrisCmp

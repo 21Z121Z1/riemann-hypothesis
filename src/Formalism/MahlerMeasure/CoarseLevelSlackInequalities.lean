@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.MahlerMeasureProofs.WindowAP
 import Formalism.MahlerMeasure.MahlerMeasureProofs.WindowMeanAP
 import Formalism.MahlerMeasure.FinalD

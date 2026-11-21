@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenlatticeLocalContainmentAtPairsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseTupleThetaSpanHasTypeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondLinkOfWeightRowsStatement

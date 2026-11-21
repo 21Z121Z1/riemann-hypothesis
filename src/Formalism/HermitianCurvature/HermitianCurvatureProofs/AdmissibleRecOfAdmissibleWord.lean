@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementFr
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.Interlace
 import Mathlib.Algebra.Order.Ring.Star

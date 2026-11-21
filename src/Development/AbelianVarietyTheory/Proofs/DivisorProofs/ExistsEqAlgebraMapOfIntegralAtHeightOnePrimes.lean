@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegKrull
 
 open scoped BigOperators Matrix ComplexConjugate

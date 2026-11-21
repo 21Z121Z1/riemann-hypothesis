@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeComb
 import Formalism.SatakeDualWeyl.Statement
 import Mathlib.Data.Matrix.PEquiv

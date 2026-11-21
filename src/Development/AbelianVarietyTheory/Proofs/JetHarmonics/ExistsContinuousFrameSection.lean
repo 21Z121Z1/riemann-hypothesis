@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementTBB
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DensityConstantOfParts
 

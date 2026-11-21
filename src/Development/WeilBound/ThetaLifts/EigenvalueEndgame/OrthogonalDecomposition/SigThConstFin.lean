@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.LocDecompOf
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.SigThConstOf
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict

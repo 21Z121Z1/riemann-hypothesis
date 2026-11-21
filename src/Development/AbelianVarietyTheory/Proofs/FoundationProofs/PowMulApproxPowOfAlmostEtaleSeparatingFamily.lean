@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationFrobeniusSumSubLeNatCastPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CosetRepresentativeTraceFixedPropertiesStatement
 import Mathlib.Algebra.Order.Star.Real

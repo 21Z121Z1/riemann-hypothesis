@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcPolar
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj
 

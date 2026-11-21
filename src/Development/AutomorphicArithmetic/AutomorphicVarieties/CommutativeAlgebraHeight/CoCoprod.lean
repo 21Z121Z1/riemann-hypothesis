@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Coprod
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoSurj
 

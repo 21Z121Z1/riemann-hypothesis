@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.UnitarizeD
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Closure
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.StdGap

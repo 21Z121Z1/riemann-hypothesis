@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.CapelliDeterminantBlockProduct
 import Mathlib.Analysis.InnerProductSpace.Calculus
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential

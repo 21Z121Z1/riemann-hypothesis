@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousMatQApply
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SelNZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoboundaryInertiaIndependent

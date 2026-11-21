@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.InvariantSplit
 set_option maxSynthPendingDepth 1
 

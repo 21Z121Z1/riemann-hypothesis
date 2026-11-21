@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCptGenResidueFieldGeneric
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointsInGenericFibreStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FieldPointLiftsGenericFibreStatement

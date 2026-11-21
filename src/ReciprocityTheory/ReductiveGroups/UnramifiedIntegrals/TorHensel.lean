@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.TorRes
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.KurNewton
 

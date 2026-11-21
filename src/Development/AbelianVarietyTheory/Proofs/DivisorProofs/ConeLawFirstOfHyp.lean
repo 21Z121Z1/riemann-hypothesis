@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalEigenPartitionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalWeilActionCompatibilityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalTriplePlaceStatement

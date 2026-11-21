@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InvariantHermitianFormNonnegOfCloudEigenStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumNormHhJSelfLeStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CloudNodeProjectionNormLowLevelStatement

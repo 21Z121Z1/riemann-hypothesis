@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsContinuousOnPolarLog
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.CartanCoshPower
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpqLocallyCompactGroup

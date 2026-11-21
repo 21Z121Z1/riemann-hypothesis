@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PathConvergenceDownChainStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PathConvergenceHorizontalThetaStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenFiniteRepresentationChainStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFixedDegreeFiltrationStepUp
 open scoped TensorProduct
 open Formalism.BasicNotions.TH GlobalTheory.RealLift

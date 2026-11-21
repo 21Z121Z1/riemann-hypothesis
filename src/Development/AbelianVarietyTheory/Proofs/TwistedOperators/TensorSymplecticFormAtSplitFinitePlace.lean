@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicTraceSupportedAtSplitPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumFourSwap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairChangeBasis

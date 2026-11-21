@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.CoordinateQuotient
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionOfSingularities
 universe u

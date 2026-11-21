@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstMeasurableSpaceRealSU
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.NotIsSRepsEmpty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRepsModKM

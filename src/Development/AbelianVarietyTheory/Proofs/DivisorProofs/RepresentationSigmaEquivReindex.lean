@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwinerNonzeroRestrictionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockInducedRepDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockInducedRepIntertwiningStatement

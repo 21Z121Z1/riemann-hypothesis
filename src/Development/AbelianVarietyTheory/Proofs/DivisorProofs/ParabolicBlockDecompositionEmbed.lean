@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StdSumSymmLt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixValuesUnipotentDiagonalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockUnipotentDetOneAndTrivialStatement

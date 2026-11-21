@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.SelfAdjointForms.Stabilizers.AnnAnti
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardCosetRepsEqRelIndexStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCharacterSeparatingLatticeStatement

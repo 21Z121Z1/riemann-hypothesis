@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityPos
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.JacquetModuleFiniteLength
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ParabolicInductionFiniteLength

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPDivisibleGroupTorsionTowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleHeightEqSignatureDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateMapEquivariantIntegersStatement

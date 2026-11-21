@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.MemEigSpOfMemHtDual
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NotInFibreOfIsUnit
 

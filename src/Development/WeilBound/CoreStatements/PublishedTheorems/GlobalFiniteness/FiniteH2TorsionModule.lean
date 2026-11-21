@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalFiniteness.Transport
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Dimension
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CohomologicalDimensionTopologicalIsoStatement

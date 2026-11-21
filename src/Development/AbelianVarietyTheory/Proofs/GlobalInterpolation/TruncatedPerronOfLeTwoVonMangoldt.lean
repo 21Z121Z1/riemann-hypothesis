@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TruncatedPerronPsi
 
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory Filter Topology

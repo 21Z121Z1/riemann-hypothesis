@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ExpIndep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvOneSubBound
 import Mathlib.Data.Int.Star

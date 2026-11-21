@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundStatementHolds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMapToModel

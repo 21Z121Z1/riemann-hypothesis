@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteCardTorsionLevelFractionRingQuot
 import Mathlib.RepresentationTheory.Invariants
 open ReciprocityTheory.Gal

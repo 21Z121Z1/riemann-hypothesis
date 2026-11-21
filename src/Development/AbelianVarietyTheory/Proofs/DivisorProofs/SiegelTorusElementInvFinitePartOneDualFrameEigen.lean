@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelTorusElementRealComponentsOfFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusElementDualFrameRowsEigenInverseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameConjugateGramInvStatement

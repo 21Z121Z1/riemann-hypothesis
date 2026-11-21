@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaCompOfIsGrpPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValAtUnique
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

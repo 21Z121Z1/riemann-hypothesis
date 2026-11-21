@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.HighestWeightSpaceFinite
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QcColHSuccLe
 import Mathlib.Topology.Sheaves.Presheaf

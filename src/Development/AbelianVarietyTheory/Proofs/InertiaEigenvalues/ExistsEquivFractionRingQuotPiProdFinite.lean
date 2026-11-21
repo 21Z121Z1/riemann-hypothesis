@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.Statement
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Order.CompletePartialOrder

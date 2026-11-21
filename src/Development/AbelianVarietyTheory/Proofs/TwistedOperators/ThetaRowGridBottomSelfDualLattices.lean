@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CongruenceLevelOfEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryLatticeCongruenceMemConjugateIdealInfStatement

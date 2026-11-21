@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenericCentreSpecializes
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LocalComponentsSurjective
 import Mathlib.AlgebraicGeometry.Modules.Sheaf

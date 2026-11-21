@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalFirstOrderDeformationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerMatrixUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecLocalHomFactorsAffineOpenStatement

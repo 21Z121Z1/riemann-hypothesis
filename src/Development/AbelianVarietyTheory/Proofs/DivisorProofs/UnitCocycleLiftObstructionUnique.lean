@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasOpens
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AugmentationSigmaMapBasicProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AugmentationSigmaMapNatural

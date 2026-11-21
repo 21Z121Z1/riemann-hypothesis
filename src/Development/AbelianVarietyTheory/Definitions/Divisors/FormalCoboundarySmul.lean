@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToSpanSingletonConstGenInjective
 import Mathlib.RingTheory.MvPowerSeries.Substitution
 import Mathlib.RingTheory.WittVector.Teichmuller

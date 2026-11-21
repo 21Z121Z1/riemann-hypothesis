@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkClosedPointToGermTop

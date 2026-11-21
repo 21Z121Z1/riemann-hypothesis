@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsValCharTwist
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem

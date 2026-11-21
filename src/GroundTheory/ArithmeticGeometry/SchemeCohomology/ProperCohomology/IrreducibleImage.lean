@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.SchemeImage
 import Mathlib.AlgebraicGeometry.IdealSheaf.IrreducibleComponent
 import Mathlib.SetTheory.ZFC.PSet

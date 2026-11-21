@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TendstoUnitaryAdelicPointsAgreeOnGrowingFinset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
 

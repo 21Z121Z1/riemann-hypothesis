@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.SchwartzBruhatDual
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.IsCondAt
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasureQuotient

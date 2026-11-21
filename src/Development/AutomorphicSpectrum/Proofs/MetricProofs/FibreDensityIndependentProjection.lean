@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CxPosDens
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CxSimple
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartDensityIntegrable

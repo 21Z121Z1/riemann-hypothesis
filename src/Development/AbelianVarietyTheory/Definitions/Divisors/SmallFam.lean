@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CharZeroFunctionField
 import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
 

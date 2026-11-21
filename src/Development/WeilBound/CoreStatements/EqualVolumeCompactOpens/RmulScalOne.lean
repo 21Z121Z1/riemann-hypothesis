@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PowEqOneOfIsIntegralOfMulComplexConjEqOneAlt
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RootOfUnityEqOneOfSubOneMemSpan
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemIdealSmulTopIffForallDual

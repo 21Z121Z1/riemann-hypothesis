@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.CramerMatrixBlockTriangularFactor
 import Development.AutomorphicArithmetic.DivisorFrames.ColMinorMulTriangular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodReductionExtendsRegularStatement

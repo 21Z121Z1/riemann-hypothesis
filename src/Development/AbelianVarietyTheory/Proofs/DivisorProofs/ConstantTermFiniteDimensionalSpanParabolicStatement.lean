@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermFiniteDimensionalSpanParabolic
 open NumberField MeasureTheory GlobalTheory.CuspRep
 set_option maxHeartbeats 1000000 in

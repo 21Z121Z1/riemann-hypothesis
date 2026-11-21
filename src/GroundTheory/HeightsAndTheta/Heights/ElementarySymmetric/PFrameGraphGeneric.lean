@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StFrameGraphGeneric
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StFrameImplicitGraph
 import Mathlib.Topology.Algebra.MvPolynomial

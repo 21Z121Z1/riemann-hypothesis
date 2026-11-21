@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeightNE
 import Mathlib.RingTheory.SimpleRing.Principal
 set_option maxSynthPendingDepth 1

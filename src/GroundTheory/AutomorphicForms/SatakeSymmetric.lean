@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.SphericalLaurent
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.Algebra.Order.Ring.Star

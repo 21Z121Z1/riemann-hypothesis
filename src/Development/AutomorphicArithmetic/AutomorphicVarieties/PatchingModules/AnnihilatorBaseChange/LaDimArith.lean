@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaMvpsCot
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaRegPrime
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCplReg

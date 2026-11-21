@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.SChain
 import Formalism.SizeWindowBrackets.GaloisToProductIsIso
 import Formalism.SizeWindowBrackets.WindowSettingSatisfiable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ConjugationContinuousOnInvertible
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactGroupHaarExists
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OppositeWeylSubgroupClosed

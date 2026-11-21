@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.Development
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.Tactic.Polynomial.Basic

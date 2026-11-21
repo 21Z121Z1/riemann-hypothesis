@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.IdempotentMemInvariants
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree
 

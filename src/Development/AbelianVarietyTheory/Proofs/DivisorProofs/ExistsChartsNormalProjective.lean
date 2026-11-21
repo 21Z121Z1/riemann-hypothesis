@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProjOverLocallyOfFiniteTypeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartRatioOnOverlapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ElementOfDvrTestPointsStatement

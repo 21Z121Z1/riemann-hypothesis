@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCIndValue
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemHGPIffParabolic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MvecLeviMulUv

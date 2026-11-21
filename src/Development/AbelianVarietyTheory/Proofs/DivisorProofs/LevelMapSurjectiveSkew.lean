@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCongruenceLiftLieElementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormHasUnitVectorStatement

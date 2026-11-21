@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.FnOne
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CocycleCoboundaryFiniteIndex
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.GalEmbTop

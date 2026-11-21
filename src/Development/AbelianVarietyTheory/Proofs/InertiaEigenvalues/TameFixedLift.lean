@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharInertiaSurjectiveStatement
 import Development.AutomorphicArithmetic.PrimeDiscriminants.CycImage
 import Development.AutomorphicArithmetic.CyclotomicBounds.FactorizationConductorLeLocalLevel

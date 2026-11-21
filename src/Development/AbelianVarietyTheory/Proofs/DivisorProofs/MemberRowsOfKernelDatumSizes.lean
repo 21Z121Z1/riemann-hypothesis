@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.KerSizes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnsMemberRowsOfLogLevelLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfNumReads

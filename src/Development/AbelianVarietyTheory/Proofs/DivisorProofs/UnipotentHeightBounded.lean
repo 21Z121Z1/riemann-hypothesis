@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedAdelesSubringStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstMemBoundedAdelesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMemBoundedAdelesStatement

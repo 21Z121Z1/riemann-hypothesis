@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Tactic.Monotonicity.Lemmas

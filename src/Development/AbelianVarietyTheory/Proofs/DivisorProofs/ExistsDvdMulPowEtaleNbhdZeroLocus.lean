@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwayHomCompAlgebraMap
 import Mathlib.RingTheory.RegularLocalRing.Defs
 open GlobalTheory.AffineCurveNbhd

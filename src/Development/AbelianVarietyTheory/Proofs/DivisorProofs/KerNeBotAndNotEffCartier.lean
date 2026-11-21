@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Morphisms.Proper
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits

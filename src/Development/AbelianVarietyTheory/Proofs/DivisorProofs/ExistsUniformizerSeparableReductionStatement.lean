@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformizerSeparableReduction
 open scoped TensorProduct nonZeroDivisors
 open Polynomial

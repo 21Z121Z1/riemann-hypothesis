@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeSlopes.CovolAntiSameRank
 import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram
 import Mathlib.Data.Int.Star

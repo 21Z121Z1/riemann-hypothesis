@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.MSplitDefs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SpBasis
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis

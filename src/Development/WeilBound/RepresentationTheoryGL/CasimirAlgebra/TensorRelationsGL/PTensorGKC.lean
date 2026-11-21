@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.LiftCommEAt
 import Mathlib.Analysis.Calculus.Deriv.Star
 import Mathlib.RingTheory.PiTensorProduct

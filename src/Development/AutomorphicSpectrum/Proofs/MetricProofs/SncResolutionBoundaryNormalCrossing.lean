@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularSystemOfParametersLocalRingStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncChartRegularAtConePointStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncChartRegularWithBoundaryChoiceStatement

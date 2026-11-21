@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelGroupLiftExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelLiftFiniteCongruenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCongruenceEndomorphismStatement

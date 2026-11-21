@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartPropertyPropagatesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartUnionLeSiteStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartRestrictPullBijectiveStatement

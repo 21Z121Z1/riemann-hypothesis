@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitEqNormCompletionTensorOfIsInertAt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianValuationSplitCriterionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianSplitRankOneStatement

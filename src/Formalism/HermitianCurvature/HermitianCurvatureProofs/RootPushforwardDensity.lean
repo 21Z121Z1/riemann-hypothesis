@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LatticeHerglotzBound
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Order.CompletePartialOrder

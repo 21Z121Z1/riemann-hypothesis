@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgePeriodGram
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 open Matrix Complex Filter Topology

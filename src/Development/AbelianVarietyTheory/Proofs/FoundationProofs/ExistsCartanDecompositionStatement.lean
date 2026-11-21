@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCartanDecomposition
 open scoped Matrix
 open GlobalTheory.IndefiniteRowSideFullHecke.RealRankSubgroupMembership

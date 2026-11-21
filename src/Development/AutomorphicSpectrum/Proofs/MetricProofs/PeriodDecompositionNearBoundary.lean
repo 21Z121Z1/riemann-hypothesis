@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIsKerProjStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ChartWSaturatedAndContinuousSectionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MemChartWOfContinuousPeriodStatement

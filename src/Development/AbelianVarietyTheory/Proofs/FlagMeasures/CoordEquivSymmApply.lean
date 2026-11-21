@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Direct
 import Development.AbelianVarietyTheory.Definitions.Foundations.InFrameStabilizer
 open scoped Classical ENNReal

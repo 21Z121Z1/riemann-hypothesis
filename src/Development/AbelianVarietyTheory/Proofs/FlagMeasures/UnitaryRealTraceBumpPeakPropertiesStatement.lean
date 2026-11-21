@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryRealTraceBumpPeakProperties
 open MeasureTheory Matrix Filter Topology
 set_option maxHeartbeats 1000000 in

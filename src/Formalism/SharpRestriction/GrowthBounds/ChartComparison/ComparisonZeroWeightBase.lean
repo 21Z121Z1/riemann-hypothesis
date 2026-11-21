@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageEq
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.SpanImageOfSurj
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw

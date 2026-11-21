@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FgIntOfForallIsIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCmPointNonvanishingSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDenominatorValuationBoundStatement

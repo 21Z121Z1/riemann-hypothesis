@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OffDiagonalBlockSumSqNormBlockUnitaryInvariant
 open MeasureTheory Matrix
 open Formalism.REAL (UJ KG toM toMK muK expG inG Jm Kset)

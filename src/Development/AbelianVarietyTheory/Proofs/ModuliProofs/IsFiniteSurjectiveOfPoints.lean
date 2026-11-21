@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.HeckeIsogenyKernels
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NatCastMemConj
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfProper

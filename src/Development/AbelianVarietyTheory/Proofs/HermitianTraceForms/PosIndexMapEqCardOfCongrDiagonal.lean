@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.ExistsOrthogonalBasisDotProductApplyEq
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.Tactic.Polynomial.Basic

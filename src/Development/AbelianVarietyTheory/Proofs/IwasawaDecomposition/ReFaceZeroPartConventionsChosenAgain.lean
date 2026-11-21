@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FurtherRowsUpdatedScalars
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PartAtUpdSReFace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadUpdSKeep

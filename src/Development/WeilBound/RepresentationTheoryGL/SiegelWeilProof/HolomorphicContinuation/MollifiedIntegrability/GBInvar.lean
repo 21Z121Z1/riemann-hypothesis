@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.MollifiedIntegrability.ClsGainBSt
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.RingTheory.WittVector.IsPoly

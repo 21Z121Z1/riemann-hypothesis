@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Data.Int.Star
 import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.BergmanDefs
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsBergDensity

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PrimInIffSubsingleton
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDifferentPair
 

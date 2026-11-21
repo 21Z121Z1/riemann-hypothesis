@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IntegralClosureFiniteLocalOfIsAdicComplete
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.VVNonnegIffLeOne
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ZeroNotAdmissibleOfRankPos
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.CharacterNorms.Aa
 import Development.AutomorphicArithmetic.WhittakerHecke.MeasurableWhittakerIdeleDiagTorusMul
 import Development.AutomorphicArithmetic.WhittakerHecke.WhittakerLintegralAbsPowBoundedOnMaximalCompact

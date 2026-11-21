@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsDeltaDelAtOwnAt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NusOfEqRamMulNuStarAt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IndexBoundAtLargerField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundleStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUnitWedge
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieMultIffExistsFrame

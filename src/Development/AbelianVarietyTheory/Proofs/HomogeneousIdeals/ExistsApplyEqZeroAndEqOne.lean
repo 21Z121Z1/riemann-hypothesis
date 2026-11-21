@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ContinuousAevalMvPolynomial
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.PowCardLeNormProd
 import Mathlib.Analysis.Polynomial.CauchyBound

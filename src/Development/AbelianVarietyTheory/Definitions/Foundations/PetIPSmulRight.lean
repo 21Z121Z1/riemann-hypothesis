@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Integral
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Complex.UpperHalfPlane.Measure

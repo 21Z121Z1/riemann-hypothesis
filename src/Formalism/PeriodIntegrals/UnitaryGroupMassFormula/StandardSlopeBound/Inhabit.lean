@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.WeTransposeWordTransposeWord
 import Formalism.PeriodIntegrals.HookBound
 import Mathlib.Algebra.AffineMonoid.Basic

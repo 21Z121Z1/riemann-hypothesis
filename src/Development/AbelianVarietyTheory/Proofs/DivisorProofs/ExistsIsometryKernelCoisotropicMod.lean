@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveModOfSurjectiveModOppositeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearSectionOppositeCongrModStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicShearOfAdjointStatement

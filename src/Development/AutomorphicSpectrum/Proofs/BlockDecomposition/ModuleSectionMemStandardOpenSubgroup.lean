@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.AnalyticClassNumber.HeckeContinued
 import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
 open NumberField GroundTheory.Global GroundTheory.Global.IdeleGroup

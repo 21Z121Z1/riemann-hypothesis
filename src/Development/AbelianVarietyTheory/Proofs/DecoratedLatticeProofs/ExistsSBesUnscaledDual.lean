@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GramEqOfInst
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StarEqHostConj
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsOrthDec

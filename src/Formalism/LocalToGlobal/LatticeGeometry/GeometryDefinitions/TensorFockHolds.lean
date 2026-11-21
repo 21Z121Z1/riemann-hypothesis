@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.KroneckerProductDet
 
 open Matrix MvPolynomial

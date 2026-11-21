@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.GammaSemisimpleLocalOfConsequences
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Formalism.FrobeniusContraction.HighestWeightResidueAvoids

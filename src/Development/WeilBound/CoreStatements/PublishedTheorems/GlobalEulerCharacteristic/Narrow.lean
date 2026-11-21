@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.Hypotheses.GalCoh
 
 open NumberField IsDedekindDomain ReciprocityTheory.Gal Formalism.ConjugateSelfDual

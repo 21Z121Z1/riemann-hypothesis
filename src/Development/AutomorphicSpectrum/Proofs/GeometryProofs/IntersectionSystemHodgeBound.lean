@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataHodgeThirdStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataHodgeFourthStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockMatrixGramNormalStatement

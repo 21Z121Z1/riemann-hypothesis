@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelCount
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsNcardEntrywiseBoxLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdEntrywiseLe

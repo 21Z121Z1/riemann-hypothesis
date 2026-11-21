@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyThetaCoordinateSchemeData
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaFamilyOverThetaPointSchemeStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaIdealFamilyUniversalPropertyStatement

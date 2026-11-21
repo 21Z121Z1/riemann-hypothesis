@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
 import Mathlib.Topology.Separation.CompletelyRegular
 

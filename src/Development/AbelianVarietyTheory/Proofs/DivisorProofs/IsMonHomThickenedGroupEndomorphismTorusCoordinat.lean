@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCoordEnd
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsRatioPoints
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.OLinearIffIsOLinear

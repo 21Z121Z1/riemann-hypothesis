@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecRatioAppRestrict
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalEndSecCoNonzeroLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemBasicOpenOfSectionRatioEqBasePointStatement

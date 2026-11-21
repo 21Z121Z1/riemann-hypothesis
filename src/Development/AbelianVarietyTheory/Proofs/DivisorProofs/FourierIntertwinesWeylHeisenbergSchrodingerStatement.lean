@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierIntertwinesWeylHeisenbergSchrodinger
 open MeasureTheory Matrix GlobalTheory.KSp GlobalTheory.SplitUnitary
 open GlobalTheory.WeilM (UG IsQuad IsHerm ResEtaPow)

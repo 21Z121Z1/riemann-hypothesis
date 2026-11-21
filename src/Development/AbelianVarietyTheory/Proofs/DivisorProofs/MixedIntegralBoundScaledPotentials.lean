@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedIntegralBoundUnitPotentialsStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasureB
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeGenericOfDegree
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

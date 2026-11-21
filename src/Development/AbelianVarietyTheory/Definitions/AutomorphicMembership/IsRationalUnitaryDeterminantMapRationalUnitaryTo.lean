@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalToGlobal.UnitaryNorms.CharUniq
 import Mathlib.Algebra.QuadraticAlgebra.Basic

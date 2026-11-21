@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolyRep
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Topology.Algebra.MvPolynomial

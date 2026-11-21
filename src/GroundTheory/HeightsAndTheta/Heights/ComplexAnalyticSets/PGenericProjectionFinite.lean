@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFiniteProjectionsGeneric
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StUnitaryZariskiDense
 import Mathlib.Topology.Algebra.MvPolynomial

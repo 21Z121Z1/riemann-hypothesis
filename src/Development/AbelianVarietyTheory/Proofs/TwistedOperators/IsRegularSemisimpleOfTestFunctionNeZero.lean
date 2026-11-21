@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsMulCommutativeCentRealUJ

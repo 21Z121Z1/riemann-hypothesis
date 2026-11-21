@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ContinuousCochains
 
 namespace GlobalTheory.CompanionTheory.Glob

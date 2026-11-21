@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DetFrobeniusSubPowSupport
 open ReciprocityTheory.PGsh
 set_option maxHeartbeats 1000000 in

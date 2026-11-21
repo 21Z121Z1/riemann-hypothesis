@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoversOfLifts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHolds

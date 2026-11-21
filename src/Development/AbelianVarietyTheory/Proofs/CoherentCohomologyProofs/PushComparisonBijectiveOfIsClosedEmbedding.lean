@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FreeYonedaHomEquivFreeToPullbackComp
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.CohomologyPresheafFunctorMapAppApply
 import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion

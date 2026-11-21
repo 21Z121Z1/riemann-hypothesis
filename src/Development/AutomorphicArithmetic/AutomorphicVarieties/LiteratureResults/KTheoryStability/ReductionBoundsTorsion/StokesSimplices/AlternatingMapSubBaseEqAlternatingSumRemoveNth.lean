@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.StokesSimplices.SubSlice
 import Mathlib.LinearAlgebra.Alternating.Uncurry.Fin
 import Mathlib.RingTheory.WittVector.IsPoly

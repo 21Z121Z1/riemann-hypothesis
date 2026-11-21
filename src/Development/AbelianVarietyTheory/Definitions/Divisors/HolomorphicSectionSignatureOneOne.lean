@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSmoothVector
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.AdelLeftInvAndContinuous
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.VolPairExAndFinVol

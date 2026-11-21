@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BlowPolSt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MorphismToLocalizedModel
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

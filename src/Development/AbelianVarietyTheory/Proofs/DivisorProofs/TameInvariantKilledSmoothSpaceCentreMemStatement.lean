@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameInvariantKilledSmoothSpaceCentreMem
 open NumberField GlobalTheory.CuspRep GlobalTheory.AutGrowth
 set_option maxHeartbeats 1000000 in

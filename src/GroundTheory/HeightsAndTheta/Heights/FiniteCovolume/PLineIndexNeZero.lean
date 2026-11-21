@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsTerExtra
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume

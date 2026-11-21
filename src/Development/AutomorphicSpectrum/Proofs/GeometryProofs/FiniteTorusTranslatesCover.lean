@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Topology.Algebra.MvPolynomial

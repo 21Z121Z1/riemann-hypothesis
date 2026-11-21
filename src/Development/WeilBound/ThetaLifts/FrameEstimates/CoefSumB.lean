@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange
 import Development.WeilBound.ThetaLifts.FrameEstimates.CoefSumA
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IndicatorMemSBOfIsClopen

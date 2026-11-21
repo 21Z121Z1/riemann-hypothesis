@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalFinite
 
 set_option maxSynthPendingDepth 1

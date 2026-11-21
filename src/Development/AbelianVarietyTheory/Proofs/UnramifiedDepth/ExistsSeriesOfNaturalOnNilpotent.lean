@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import ReciprocityTheory.DualLattices.FormalChartAtZero

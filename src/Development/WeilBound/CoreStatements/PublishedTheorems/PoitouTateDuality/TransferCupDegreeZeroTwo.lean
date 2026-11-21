@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohCmp
 import GroundTheory.ProfiniteCohomology.CupProducts.Pairing
 

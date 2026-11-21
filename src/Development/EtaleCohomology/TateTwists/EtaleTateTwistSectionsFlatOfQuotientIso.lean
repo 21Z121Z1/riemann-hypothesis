@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.TateTwists.EtaleTateTwistSheafFlat
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.Tactic.Polynomial.Basic

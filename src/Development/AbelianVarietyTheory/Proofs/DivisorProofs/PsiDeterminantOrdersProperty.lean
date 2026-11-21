@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsDetEltOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelativeLatticeElementPropertyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AinfCoefficientPsiPropertyStatement

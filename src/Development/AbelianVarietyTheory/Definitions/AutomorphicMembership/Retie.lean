@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.CdScaleTieIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsHalfPtIff
 

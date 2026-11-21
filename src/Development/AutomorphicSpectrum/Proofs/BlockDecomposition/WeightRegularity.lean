@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.RealLocalIntegrals.RealTemperedBounds.TrDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightVectorExplicitFormula
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.SecondCountableTopologyArchUnitary
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsDoubleCoset
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsAdelicLattices

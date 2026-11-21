@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearWeilFunctionalLocalUniqueness
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalMomentMatrixTransform

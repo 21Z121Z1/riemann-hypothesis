@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumLatticePairsIndexRpowLe
 open MeasureTheory Filter Topology
 open scoped InnerProductSpace BigOperators

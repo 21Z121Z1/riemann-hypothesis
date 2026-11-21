@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjPlNeOfIsSplit
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjPlEqCP
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeckeCharUnramifiedAtQuotientSameResidualStatement

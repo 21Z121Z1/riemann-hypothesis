@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerLocallyConstant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCoefficientTendstoZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCoefficientIdeleScaling

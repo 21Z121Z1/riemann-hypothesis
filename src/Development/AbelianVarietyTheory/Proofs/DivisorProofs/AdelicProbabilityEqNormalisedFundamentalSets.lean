@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CuspSquareIntegrableIffUnfolded
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.VolPairExAndFinVol

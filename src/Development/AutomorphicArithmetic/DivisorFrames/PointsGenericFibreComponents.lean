@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToIThCapDegOfAddNsmulDivP
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AevalFirstChernSurjective
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginWeightFree
 import Formalism.LocalRingCardinality.DataHost

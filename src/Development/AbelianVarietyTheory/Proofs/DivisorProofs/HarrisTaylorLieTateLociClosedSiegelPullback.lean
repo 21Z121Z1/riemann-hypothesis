@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieOcExistsSpMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeomAtIffOfSpecializes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorClosedImmersionOfAffinePointsStatement

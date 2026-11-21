@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThetaKernelInvarianceStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilRepresentationContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasureFundamentalDomainLtTop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SelmerScaling.SelScale
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SelmerScaling.AlgebraMapMemSecondOrder
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

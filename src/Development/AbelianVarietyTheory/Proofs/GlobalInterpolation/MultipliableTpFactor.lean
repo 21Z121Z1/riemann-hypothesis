@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableOddTheta
 import Mathlib.Analysis.SpecialFunctions.Log.Summable
 import Mathlib.RingTheory.WittVector.IsPoly

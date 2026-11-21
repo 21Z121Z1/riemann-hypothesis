@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemRegAtOfCodimOne
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 open AlgebraicGeometry CategoryTheory Limits GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Flat

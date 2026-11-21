@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.HodgeWedgeFields.H1CommutesBaseChange
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.LocalProperties.FinitePresentation

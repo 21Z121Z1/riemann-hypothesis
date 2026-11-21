@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrIsGenAt

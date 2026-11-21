@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects
 import Mathlib.Algebra.Module.ZLattice.Covolume
 

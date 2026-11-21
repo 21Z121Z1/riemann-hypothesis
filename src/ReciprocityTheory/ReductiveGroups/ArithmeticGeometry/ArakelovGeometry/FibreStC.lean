@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.FibreStB
 import Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrysActApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QActMSubAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorLieConditionModHodgeFiltration

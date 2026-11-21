@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.EtaleChartFiberProduct
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.OrderPullback
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.TaylorExpansionComparison

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ResidueCharacters.InvariantsKilledOverCyclotomicAlt
 import Development.AutomorphicArithmetic.ResidueCharacters.FiniteRoots
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation

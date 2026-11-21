@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.Restricted
 import GroundTheory.GlobalFields.TateThesis.LocalConductor
 import Mathlib.Topology.Sheaves.Presheaf

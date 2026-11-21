@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FrepDiscreteSeriesSum
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorRawOfFrep
 

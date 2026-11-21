@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg
 import Development.AutomorphicArithmetic.LocalEmbeddings.FrameCo

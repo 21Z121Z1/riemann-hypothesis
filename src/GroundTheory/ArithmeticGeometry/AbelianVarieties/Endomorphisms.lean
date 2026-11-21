@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualQuadratic
 
 namespace GroundTheory.Arith.Abelian

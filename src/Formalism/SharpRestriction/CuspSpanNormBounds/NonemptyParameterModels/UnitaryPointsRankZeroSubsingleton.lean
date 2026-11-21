@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.PlaceDegreeData
 import Formalism.SharpRestriction.CuspSpanNormBounds.AdmissibleBoundsFromSource
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocSpCompanEq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulDualSetLatAdMem
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatAdLocOf

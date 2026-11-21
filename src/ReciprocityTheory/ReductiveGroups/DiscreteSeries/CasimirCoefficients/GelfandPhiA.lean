@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.PsiExistsOfFormula
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.Topology.Sheaves.Presheaf

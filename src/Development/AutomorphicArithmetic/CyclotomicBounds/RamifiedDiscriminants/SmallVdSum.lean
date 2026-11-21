@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CMTraceForms.CmDatumDiscriminantDepthBounds
 import Mathlib.Analysis.Complex.ExponentialBounds
 

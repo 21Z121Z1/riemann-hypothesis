@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalPlace
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsInfiniteAdelicCharNeOne
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FactorialTendstoZero

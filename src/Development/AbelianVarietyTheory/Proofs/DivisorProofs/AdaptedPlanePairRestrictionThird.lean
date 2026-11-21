@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairEquivarianceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralAdelicGLMulVecHaarEqModulusDetStatement

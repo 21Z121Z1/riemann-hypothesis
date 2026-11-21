@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Hilbert90
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.HasVal
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

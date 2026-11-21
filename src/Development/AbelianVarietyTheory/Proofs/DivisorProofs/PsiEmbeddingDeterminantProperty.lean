@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantElementPropertyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantValuationBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiDeterminantRankPropertyStatement

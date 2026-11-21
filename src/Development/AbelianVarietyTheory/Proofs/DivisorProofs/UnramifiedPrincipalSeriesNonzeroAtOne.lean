@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WEMulNUMulTD
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsBiequivariant
 

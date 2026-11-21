@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.ReesGrading
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 import Mathlib.CategoryTheory.Monoidal.Mon

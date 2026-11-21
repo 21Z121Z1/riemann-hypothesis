@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.PrimeToDifferent
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.NumberTheory.NumberField.Discriminant.Different

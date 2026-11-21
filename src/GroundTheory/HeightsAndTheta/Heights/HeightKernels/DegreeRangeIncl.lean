@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StdCoordMapInjective
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DegreeTopEqArithDegree
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PLocalChange

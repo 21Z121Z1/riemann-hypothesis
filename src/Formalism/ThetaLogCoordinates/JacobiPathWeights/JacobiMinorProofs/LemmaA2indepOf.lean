@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.IndexWeightsDominance
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.PathProductHighestWeight
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.IsWeightedHomogeneousZeroStripPathWord

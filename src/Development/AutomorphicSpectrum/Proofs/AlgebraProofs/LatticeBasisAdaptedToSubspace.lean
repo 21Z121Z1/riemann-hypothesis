@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGaussChars
 import Mathlib.Tactic.Monotonicity.Lemmas
 

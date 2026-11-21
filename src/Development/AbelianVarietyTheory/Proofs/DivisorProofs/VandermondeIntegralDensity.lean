@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacobiDensityWeightedThetaIntegralZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentTriangularFactorUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeadingMinorsUnipotentMul

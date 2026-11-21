@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalCoordinates.RootSumWOff
 import Mathlib.RingTheory.MvPolynomial.Symmetric.NewtonIdentities
 

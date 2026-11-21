@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CohomologyKummer
 set_option maxSynthPendingDepth 1
 

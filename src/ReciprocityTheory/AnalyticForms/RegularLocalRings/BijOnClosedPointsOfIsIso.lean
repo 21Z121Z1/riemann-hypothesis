@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.SecHomSurjective
 
 namespace ReciprocityTheory.AnForm.R

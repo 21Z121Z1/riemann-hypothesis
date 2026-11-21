@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocalRingTrivSqZeroExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelPointOverInclusionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisGenericPointStatement

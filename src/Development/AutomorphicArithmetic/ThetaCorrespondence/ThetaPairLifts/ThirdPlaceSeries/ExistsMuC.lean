@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.HeckeOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousNormFin
 import Formalism.LocalToGlobal.UnitaryNorms.CharShare

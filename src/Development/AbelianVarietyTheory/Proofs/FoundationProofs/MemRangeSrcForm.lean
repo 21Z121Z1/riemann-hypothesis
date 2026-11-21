@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InjAndRatOfLi
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IpMSelfEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EOpEqAsAlgebraHom

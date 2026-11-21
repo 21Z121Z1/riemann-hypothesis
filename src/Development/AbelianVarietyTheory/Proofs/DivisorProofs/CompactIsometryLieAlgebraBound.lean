@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLieAlgebraVectorDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformBoundedRightInverse
 import Mathlib.Analysis.Matrix.Normed

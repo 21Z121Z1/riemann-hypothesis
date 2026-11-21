@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResEqIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FiniteDimensionalLetter
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdmSt

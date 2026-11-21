@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiHomogOfPullWeight
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticSecondStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionMapLocallyAnalyticStatement

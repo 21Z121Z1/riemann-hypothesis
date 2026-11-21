@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetaplecticCoverWeilRepresentation
 open MeasureTheory Matrix Complex GlobalTheory.RealWeil
 open scoped Real SchwartzMap ComplexConjugate

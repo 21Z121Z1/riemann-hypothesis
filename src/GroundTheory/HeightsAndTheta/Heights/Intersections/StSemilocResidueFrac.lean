@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocMaxIdeals
 import Mathlib.FieldTheory.Relrank
 import Mathlib.Order.CompletePartialOrder

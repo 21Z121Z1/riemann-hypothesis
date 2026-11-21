@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.FormalGroups.Inverse
 import Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
 import Mathlib.RingTheory.MvPowerSeries.Inverse

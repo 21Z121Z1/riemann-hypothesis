@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.KummerTheory.InjSlice
 import Mathlib.RingTheory.RegularLocalRing.Defs
 

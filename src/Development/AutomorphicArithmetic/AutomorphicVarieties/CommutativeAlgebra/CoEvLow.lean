@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
 import Mathlib.RingTheory.AdicCompletion.Topology
 import Mathlib.RingTheory.MvPowerSeries.Evaluation

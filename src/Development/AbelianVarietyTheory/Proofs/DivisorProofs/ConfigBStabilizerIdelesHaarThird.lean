@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NeOfReNe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAHaarUnfolding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerCompact

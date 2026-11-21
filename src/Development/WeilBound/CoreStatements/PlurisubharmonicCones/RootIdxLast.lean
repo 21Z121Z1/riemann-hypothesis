@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ProdSqrtLead
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeFlagTensorStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeFrameGenStatement

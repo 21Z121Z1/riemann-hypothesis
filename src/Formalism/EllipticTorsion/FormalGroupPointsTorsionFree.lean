@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.EllipticTorsion.Statement
 import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsOpenKerUnramMulTame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIsCombAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EntriesWellDefined

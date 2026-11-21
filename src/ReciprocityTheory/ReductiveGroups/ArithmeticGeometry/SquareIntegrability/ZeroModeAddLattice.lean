@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.ZeroModeAddRealSpan
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.MemOfProjTwoEqZero
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.ZmGAddI

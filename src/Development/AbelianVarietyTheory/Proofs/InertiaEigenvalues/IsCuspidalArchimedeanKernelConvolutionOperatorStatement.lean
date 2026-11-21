@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCuspidalArchimedeanKernelConvolutionOperator
 open NumberField MeasureTheory Matrix GlobalTheory.CuspRep GlobalTheory.JSW
 set_option maxHeartbeats 1000000 in

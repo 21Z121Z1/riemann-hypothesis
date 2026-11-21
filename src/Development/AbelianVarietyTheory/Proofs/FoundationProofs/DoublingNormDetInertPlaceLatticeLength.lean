@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.GraphHeightLattice
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.LengthCommensurableSpanSpanOfDetNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IrreducibleOfValued

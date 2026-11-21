@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.SumInvariants
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalDegreeGen
 set_option maxSynthPendingDepth 1

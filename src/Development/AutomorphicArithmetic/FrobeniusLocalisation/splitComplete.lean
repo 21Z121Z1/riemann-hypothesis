@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.FrobGSpec
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.FrobDecomp
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition

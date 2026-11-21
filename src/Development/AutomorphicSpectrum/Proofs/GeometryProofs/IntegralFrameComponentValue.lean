@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProdZpowLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestValueEqConstMulReadingSecZ
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.IndepPts

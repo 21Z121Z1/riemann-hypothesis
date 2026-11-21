@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.FrameExists2
 import Mathlib.Analysis.CStarAlgebra.Unitary.Connected
 import Mathlib.Data.Matrix.ColumnRowPartitioned

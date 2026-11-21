@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.DiscrK
 import Mathlib.Algebra.Ring.IsFormallyReal
 

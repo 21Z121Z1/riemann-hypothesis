@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PderivCoeffOptionEquivLeft
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IntSOfMulEqOne

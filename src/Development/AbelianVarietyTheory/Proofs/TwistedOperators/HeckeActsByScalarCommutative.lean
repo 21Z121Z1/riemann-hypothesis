@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeVecMemFixed
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 

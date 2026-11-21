@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSemisimpleRepresentationOfISupRangeEquivariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFixed
 import Development.AbelianVarietyTheory.Definitions.Foundations.ForallEventuallyFinLocIff

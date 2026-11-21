@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.LocVol
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SelfDualLoc
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InclR

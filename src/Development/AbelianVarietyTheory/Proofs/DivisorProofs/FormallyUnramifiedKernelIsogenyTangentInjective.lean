@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormallyUnramifiedOfDualNumbers
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne

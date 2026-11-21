@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InductionContragredient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductionFiniteLengthStatement

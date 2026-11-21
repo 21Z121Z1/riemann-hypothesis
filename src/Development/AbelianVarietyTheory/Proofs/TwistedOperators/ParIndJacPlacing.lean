@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
 import Mathlib.Data.Matrix.PEquiv
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

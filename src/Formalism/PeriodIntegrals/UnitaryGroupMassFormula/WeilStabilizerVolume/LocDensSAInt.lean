@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.LocDensSAChar
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.DedekindDomain.Different

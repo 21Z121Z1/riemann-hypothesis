@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DensAtGoodOf
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DensSplit
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticFormPullbackClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodChartTransitionHolomorphicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodChartTransitionDifferentiableStatement

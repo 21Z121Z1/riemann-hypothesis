@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitriangularCloseToOneInverseCloseStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PairingConjInverseAdjointCloseToOneStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemMaximalCompactOfIntegralStatement

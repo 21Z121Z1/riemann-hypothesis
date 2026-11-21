@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
 import Formalism.RealPlaceAnalysis.FinalF
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective

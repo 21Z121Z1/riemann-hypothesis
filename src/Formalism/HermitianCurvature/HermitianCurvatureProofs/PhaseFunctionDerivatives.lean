@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FourierUniquenessMirabolic
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CuspidalIrreducibleSubrep
 import Mathlib.Algebra.Ring.IsFormallyReal

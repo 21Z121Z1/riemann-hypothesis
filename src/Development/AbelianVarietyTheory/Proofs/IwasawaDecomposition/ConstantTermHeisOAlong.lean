@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SetIntegralMulLeft
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceTransvectionActsPositivelyInvariantForStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousMovPair

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.HHInt
 import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.RowsTrm

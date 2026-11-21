@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ExistsMinorNeZero
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GfCurve
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TrivFlagMod

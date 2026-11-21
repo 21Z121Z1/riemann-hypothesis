@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModuliFiniteSurjectiveOverGenericFamily
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.MatrixTwoByTwoCongr

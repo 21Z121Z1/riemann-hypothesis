@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdNonnegReal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockMatrixApplyInrInr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFinsetIntOff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MulVecMemLatMap
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsMassConst
 

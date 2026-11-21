@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSmallSectionsSeparated
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGridSeparation
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg

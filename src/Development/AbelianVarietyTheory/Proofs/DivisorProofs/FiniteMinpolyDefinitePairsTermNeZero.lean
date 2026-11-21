@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteClassesFixedGammaIrr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DpairEigenRootNormSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactConjCharpolyBoundedDenominatorsAwayPStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdeleClearDenominator
 open NumberField IsDedekindDomain GlobalTheory.CMVal
 set_option maxHeartbeats 1000000 in

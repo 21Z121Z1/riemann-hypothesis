@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NonarchValuationOfPrime
 open NumberField IsDedekindDomain UniqueFactorizationMonoid
 set_option maxHeartbeats 1000000 in

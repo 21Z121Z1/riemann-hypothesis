@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFrameLift
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousAtScalar
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KchEqOneOfWchar

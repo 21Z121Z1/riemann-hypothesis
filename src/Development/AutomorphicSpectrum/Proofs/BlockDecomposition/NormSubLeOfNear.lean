@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationLtOneOfEq
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Kernel

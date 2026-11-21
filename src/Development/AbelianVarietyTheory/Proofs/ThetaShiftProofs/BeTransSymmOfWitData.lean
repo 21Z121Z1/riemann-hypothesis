@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ToStkAInjective
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.PowerSeries.Inverse

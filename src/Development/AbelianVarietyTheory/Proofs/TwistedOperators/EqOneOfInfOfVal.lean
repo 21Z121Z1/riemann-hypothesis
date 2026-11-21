@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits
 
 open NumberField IsDedekindDomain NumberField.mixedEmbedding Classical

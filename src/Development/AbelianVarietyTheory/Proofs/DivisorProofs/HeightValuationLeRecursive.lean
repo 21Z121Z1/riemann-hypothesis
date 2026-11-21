@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumAbsExponentLeL1Norm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValVwProdLe
 

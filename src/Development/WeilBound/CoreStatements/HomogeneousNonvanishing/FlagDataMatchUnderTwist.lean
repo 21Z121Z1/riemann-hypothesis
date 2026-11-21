@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TwTan
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingMeasureStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsTripleFactorStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleGeometryUnitaryStatement

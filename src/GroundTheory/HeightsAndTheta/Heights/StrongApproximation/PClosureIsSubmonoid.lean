@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StrongApproximation.Statements
 import Mathlib.Tactic.Monotonicity.Lemmas
 set_option maxSynthPendingDepth 1

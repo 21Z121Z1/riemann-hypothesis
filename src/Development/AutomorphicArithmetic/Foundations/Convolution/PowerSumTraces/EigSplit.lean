@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.TwistedTraces.CfcApplyOfEigenvector
 import Development.AutomorphicArithmetic.TwistedTraces.EigInFiniteAboveOfIsCompactOperator
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsHilbertBasisPrjEigenvectorsOfIsCompactOper

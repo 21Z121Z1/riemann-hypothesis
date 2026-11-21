@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.FlagGramNonneg
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.PicardGroup

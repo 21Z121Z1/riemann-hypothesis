@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.FerreroWashingtonIndex.ToZModPowOneEqZeroIff
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.NumberTheory.Padics.MahlerBasis

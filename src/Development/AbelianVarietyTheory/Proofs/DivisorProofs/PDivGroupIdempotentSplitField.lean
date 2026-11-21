@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerIdealFinrankEqPowOfIdempotent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCocommOfSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorClosedImmersion

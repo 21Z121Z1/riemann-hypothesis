@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CenterTensorProductMemRange
 import Mathlib.Algebra.Lie.DirectSum
 import Mathlib.Algebra.Lie.UniversalEnveloping

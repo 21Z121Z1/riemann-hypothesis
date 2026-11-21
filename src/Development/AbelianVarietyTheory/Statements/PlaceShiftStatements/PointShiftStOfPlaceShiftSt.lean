@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PlaceShiftSt
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TrMMemFramesEIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftInvSubtypeSum
 import Development.WeilBound.CoreStatements.ThetaDilations.ThetaLint

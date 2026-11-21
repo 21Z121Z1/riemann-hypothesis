@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmulKaehlerDReparametrizationEq
 open GlobalTheory.K5 GlobalTheory.Glue
 set_option maxHeartbeats 1000000 in

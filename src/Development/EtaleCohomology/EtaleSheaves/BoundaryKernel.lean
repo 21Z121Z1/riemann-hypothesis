@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.BoundaryKernel.Formal
 import Development.EtaleCohomology.EtaleSheaves.SheafIsomorphism
 import Mathlib.CategoryTheory.Sites.EpiMono

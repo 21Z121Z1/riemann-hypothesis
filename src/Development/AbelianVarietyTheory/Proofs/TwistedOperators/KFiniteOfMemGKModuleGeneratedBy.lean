@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KStableOfIsGKSub
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RderMemAutFormsCuspForms
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSmoothAutomorphicRightTranslateFinite

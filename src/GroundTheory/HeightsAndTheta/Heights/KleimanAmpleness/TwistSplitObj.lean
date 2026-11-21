@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Objects
 import Mathlib.Algebra.MonoidAlgebra.Grading
 import Mathlib.Order.Interval.Finset.Box

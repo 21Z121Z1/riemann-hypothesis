@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.HodgeDualLatticeOverlap
 open ReciprocityTheory.ChartRestriction.G.Geo (ChartBundle chartRing)
 open GlobalTheory.CompanionTheory.Ar.Num (dotDual)

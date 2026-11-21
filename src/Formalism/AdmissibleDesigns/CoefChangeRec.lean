@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.H1MapMemLocallyConstant
 import Formalism.AdmissibleDesigns.CocZeroOfUnr
 import Formalism.AdmissibleDesigns.H1MapMemLcH1

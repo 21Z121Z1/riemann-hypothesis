@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHomogeneousLinPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricDegreeOfInducedBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightsSumToVolumeProportional

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsRootOne
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.Polynomial.Basic

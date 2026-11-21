@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.EulerCharDefs
 import GroundTheory.ProfiniteCohomology.Shapiro
 import Mathlib.Tactic.ENatToNat

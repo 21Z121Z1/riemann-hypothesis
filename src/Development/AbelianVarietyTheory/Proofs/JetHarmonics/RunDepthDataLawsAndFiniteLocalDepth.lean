@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAlternatingForm
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIntegralChartIntegralFramedPoint
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.NuAlgLeOfCharts

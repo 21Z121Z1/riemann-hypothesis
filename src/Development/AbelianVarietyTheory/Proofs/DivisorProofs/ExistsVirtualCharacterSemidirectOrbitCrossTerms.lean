@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.VirtualCharactersMulComapConjIndLinear
 import Mathlib.Algebra.Group.Action.Pointwise.Finset
 import Mathlib.GroupTheory.SemidirectProduct

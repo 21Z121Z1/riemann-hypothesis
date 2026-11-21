@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsPtJ
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIsUnivChartOfIsLieBasis
 import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.GermSC
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition

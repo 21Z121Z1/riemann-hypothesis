@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.LatticeDualFibres.StatDualFibreLattice
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.RegularLocalRing.Defs

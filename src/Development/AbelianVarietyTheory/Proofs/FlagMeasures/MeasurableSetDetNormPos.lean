@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DefClassNum
 
 open MeasureTheory NumberField Matrix Finset

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusReciprocityUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonrealCharFunctionalUniqueStatement

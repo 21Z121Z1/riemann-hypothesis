@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingsExistRow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HasProdQuadExtLocalEulerFactorInvInv

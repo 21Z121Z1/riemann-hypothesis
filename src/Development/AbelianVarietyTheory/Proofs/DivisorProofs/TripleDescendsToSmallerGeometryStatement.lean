@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleDescendsToSmallerGeometry
 
 open scoped TensorProduct NNReal Matrix

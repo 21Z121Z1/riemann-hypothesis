@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IsConeAnalyticSubset
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithRes
 set_option maxSynthPendingDepth 1

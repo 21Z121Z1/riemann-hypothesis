@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsSympl
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.Matrix.PosDef

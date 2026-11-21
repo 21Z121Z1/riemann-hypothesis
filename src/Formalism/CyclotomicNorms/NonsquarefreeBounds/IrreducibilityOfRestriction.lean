@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisIrreducibility.NoSolvableTransitive
 import Lemmata.GeneralBFactSecondBis.Imports
 import Mathlib.LinearAlgebra.Eigenspace.Charpoly

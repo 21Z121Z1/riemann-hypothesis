@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsFormalBiextMap
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.DofIterSmulDir

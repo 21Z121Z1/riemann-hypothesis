@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCarriedAlong
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecCarriedOver
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsEquivOfIsPushout

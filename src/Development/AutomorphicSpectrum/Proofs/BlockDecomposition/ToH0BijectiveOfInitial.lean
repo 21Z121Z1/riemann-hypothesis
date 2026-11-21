@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiltrationCriticalComparisonMapStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SqCSmul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullRestrictFirstPieceCompat

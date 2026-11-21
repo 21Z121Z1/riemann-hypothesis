@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.ArchCharsUnits
 
 namespace GroundTheory.Global

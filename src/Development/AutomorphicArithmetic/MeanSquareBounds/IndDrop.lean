@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.TwistPrim
 import Development.AutomorphicArithmetic.MeanSquareBounds.IndUnique
 

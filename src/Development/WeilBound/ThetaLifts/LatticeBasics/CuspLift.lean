@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldC
 import Development.WeilBound.ThetaLifts.LatticeBasics.ContinuousFlat
 

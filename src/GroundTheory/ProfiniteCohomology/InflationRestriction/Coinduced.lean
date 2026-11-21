@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.InflationRestriction.Section
 import GroundTheory.ProfiniteCohomology.CoinducedModules.Acyclic
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality

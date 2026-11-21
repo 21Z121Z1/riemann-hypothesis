@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ProperLeftVariablesDomain
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbSplitPt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutHB2

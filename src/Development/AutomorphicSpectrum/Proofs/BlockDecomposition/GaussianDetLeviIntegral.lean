@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianDetSquareIntegralStatement
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsValuationExtensionFieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicNormLeOneIffValuationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteSubextensionPointStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.CuspidalTwists.PromodularityCaseThree
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RedTanFlow
 

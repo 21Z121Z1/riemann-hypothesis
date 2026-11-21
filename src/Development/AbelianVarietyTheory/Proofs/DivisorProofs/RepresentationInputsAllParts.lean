@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.BaseRankDimension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteScaleThetaEqualityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteScaleThetaSumStatement

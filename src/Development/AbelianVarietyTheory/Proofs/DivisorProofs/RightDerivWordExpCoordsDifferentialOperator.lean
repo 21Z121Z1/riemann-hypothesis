@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefVFContDiffOn
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ContDiffCompCoordEquiv
 open ZetaZeros.D.EllReg GlobalTheory.HCA MeasureTheory GroundTheory.Automorphic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJEqSubmatrix
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.BlockFnFieldCompLe
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsOpenHoloPreimage

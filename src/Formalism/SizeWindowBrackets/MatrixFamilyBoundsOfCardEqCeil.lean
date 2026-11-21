@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.FrameTraceRatioFinEquiv
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 

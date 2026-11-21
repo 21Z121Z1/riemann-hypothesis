@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SingularValueFrame
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtLogCosh
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDerivedActionsTensorMembers

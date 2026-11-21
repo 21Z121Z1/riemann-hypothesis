@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismPoints
 import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismLift
 import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremPointHom

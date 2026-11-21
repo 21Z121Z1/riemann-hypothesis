@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetQuotientEigenvector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InSupportOfIsSubquotient
 import Development.WeilBound.CoreStatements.PublishedTheorems.SegmentRepresentations.IsIrreduciblePiTensorSegTerm

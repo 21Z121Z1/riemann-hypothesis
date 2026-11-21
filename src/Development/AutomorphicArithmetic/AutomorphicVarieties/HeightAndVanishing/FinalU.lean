@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaKOfPublished
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoHostVanE
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer

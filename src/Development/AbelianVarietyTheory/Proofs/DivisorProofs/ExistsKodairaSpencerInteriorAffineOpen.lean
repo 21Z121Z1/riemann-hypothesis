@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCechKodairaSpencerClassAbelianTripleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProperAmpleKTriv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcIntegral

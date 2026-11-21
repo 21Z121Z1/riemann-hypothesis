@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalDegreeBessel.StatementDS
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyQuasiFiniteOfUniqueGeomPointsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenIsoOfBijectiveGeomStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalSmoothLocalModelStatement

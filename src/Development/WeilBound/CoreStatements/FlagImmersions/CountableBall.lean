@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.Transport
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnif
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FibreLatticeLinearEquiv

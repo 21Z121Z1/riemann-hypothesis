@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualFor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
 open scoped TensorProduct NNReal Matrix

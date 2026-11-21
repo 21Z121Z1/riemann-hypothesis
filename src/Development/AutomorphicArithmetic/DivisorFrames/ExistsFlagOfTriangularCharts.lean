@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientBundleFrameExists
 import Development.AutomorphicArithmetic.LocalEmbeddings.FrameCo
 open CategoryTheory AlgebraicGeometry NumberField IsDedekindDomain Matrix

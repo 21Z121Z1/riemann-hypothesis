@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RestrictJumps
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZgFormula
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeakTopologyWachImageIsClosedStatement

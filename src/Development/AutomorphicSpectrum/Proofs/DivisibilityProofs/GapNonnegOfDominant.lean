@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import Mathlib.Tactic.Monotonicity.Lemmas
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEquivLatticeClassesFibreSummandStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEquivFourierClassesPosConeSummandStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSumEqConeSum

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaCoefficientOfConvergenceStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateOfWhittakerStatement

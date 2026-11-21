@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.DivisorCycles.OpenCoset
 import Mathlib.RingTheory.PowerSeries.Derivative
 import Mathlib.Tactic.ENatToNat

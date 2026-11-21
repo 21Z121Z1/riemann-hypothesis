@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsMulPowMemOOfIsAffineOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SpanEqSpanMinor

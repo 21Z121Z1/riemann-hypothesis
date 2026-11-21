@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormOneAtOne
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GramEqOfInst
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FrameCoordsMemSelfDualLatticeCoordsIff

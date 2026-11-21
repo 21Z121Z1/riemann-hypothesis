@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.RowFormsRank
 import Formalism.LocalToGlobal.Columns.RowFormsNZs
 import Formalism.LocalToGlobal.Columns.RowFormsNZc

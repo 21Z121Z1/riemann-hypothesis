@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CxSimpleOfCount
 
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ContinuousCochains
 import Mathlib.CategoryTheory.Monoidal.Mon
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Functoriality

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapCompStalkAlg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopPairDForm
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsEventuallyNormRiemannThetaTermLe
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected

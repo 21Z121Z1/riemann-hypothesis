@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MhBase
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsDenominatorBtOrderStatement
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder

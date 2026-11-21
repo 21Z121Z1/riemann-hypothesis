@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemHomLat
 import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 import Mathlib.Algebra.AffineMonoid.Basic

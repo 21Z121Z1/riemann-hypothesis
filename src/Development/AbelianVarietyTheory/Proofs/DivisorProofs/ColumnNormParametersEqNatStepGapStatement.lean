@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnNormParametersEqNatStepGap
 open Formalism.BasicNotions Formalism.MainNotions Formalism.L2.DIV
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ParametersSmallBound
 open Formalism.UnitaryBoundIntegral
 set_option maxHeartbeats 1000000 in

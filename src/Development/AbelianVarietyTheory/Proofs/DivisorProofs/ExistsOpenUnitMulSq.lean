@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvdOfForallHeightOneExistsDvdMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiabelianGermPrimeIdealMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiabelianGermInjectiveClosedPointStatement

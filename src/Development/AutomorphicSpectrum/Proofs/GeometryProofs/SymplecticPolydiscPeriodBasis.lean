@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.PInjective
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsSymplecticBasisLagrangianBetween
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SymplecticUnipotentShape

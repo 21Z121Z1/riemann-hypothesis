@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionRationalOverFiniteExt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft

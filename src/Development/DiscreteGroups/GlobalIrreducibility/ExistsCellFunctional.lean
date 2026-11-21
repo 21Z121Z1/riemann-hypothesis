@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.DzGenFun
 import Development.DiscreteGroups.GlobalIrreducibility.CellVecFixed
 import Development.DiscreteGroups.GlobalIrreducibility.DzGenCpt

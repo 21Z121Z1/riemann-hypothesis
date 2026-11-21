@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSpreadsOutFromLocalizationAtPrime
 open CategoryTheory Limits AlgebraicGeometry
 open scoped TensorProduct

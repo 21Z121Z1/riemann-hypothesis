@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcIntegrationByParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylLemmaMollifiedHarmonicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DensityStandardVolumeFormProductStatement

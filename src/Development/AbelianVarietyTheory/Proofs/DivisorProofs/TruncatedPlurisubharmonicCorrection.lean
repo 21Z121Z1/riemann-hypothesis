@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodReductionStatementHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoincareFormStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InterpolationCurvatureBoundStatement

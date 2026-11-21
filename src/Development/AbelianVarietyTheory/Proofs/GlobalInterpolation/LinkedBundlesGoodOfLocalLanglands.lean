@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.GoodReductionCondition
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.NotLargeBaseConditionDisjoint
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefficientDutyInPlaceStatement

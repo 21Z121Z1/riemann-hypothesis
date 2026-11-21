@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactVectorBundlesRankAddStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackPreservesLineBundleFlagStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntersectionNumberScalesPicMultipleStatement

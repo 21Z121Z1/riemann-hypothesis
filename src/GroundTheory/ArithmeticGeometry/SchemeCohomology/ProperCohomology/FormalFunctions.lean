@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalVanish
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalCompare
 set_option maxSynthPendingDepth 1

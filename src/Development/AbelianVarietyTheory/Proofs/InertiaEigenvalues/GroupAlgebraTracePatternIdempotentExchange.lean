@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PhIUnionTrans
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumGraphEqSumEntN
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TrFirstPattern

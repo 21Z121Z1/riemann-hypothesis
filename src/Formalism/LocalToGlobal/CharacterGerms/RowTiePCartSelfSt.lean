@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePAxesSelfSt
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 

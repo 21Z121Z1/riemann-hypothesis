@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HasTorusWeightIffTorusEquivariant
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAppEqOfHasWtZero
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSecOfRefine

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.CStarAlgebra.Classes

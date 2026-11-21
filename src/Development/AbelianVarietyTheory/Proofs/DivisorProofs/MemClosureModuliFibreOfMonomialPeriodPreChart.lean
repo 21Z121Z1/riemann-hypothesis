@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothFibreRegularLocalRing
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularSmooth
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMumfordFamOfSubsingleton

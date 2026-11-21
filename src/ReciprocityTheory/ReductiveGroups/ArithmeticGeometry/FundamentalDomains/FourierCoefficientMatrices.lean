@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicOutsideLine
 import Mathlib.RingTheory.TotallySplit
 import Mathlib.Tactic.ENatToNat

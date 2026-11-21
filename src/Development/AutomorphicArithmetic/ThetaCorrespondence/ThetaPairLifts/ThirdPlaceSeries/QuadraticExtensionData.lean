@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GeoAll
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.XiEqXiOffMul

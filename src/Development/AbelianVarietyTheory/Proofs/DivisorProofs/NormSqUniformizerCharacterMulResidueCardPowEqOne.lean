@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatLintegralSqNeTopStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubInvMulOutMemIff
 

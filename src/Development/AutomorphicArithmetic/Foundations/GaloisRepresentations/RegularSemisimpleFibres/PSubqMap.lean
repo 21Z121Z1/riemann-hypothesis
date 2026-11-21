@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.ResEmbCompat
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsContractNeZero
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.PIndDetK

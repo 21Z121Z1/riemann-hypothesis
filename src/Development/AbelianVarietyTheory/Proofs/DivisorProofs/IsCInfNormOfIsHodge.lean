@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsDualRiemann
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRiemannDataPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCInfOfIsDualRiemann

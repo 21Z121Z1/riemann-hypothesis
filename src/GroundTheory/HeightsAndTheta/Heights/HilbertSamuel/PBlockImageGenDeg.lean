@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageGenDeg
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHilbert
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenericFibreVar

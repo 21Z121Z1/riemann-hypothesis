@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralMulRightOfCompact
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelFamOfNotMem
 open MeasureTheory Set Filter NumberField IsDedekindDomain

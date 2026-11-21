@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HyperbolicPlaceProducts.Statement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.NumberField.Ideal.Basic

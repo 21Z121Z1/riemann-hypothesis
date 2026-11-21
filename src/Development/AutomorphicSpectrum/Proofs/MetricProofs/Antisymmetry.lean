@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdjacentSwapHeightPolynomialRelationStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ProportionalStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.WeightTransformInjectiveLinearStatement

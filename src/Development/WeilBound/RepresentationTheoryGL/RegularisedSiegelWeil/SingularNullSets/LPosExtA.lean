@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Topology.ContinuousMap.StoneWeierstrass
 import Mathlib.MeasureTheory.Integral.Bochner.Basic
 

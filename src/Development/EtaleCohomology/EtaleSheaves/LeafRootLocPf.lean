@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.ChernClassRootLocalization
 import Mathlib.RingTheory.Etale.StandardEtale
 import Mathlib.RingTheory.RegularLocalRing.Defs

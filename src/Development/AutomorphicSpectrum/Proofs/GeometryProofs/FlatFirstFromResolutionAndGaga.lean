@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CardComapMulFinsumEqFinsumFibres
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameFunctionAnalyticNormStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.InfNormConjugateInvariantStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPartOverProperClosedEqZero
 set_option autoImplicit false
 open CategoryTheory AlgebraicGeometry Limits TopologicalSpace MvPolynomial MeasureTheory

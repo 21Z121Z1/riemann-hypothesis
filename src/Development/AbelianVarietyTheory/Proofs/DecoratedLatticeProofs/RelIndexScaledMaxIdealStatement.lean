@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RelIndexScaledMaxIdeal
 open ValuativeRel GlobalTheory.SplitWeil
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValEqOfAppInjective
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TauBimultOfIsPullDeg
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SecCmp

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
 
 open MeasureTheory Filter UpperTheory.Lit.Cusp

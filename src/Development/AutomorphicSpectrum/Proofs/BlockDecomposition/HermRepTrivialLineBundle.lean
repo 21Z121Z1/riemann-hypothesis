@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsPullHermPullLine
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
 

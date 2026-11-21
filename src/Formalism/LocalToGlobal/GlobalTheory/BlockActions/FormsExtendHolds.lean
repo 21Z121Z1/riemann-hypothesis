@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.StabFunGen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.InJSymRestrict
 

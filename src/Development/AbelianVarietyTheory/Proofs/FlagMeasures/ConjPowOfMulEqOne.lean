@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
 import Formalism.RealPlaceAnalysis.FinalF
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LamXEquivariant

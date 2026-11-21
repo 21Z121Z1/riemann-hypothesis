@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ScalePolynomialQuantitiesComparison
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.BadCharacterBoundStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WeightRequirementOfValidStatement

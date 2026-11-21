@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteAdeleFieldIdentificationEqBaseChangeRingEq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegralHilbert90DetHostField
 open NumberField IsDedekindDomain Formalism.L2.DIV Formalism.UG

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CubicalWeilPairingEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalPointSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteHopfPointsSeparate

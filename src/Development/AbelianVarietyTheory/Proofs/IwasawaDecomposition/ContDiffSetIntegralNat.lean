@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasFDerivAtSetIntegral
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

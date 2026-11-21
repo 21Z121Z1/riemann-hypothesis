@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientPow
 import GroundTheory.PAdicHodge.NormalizedTraceTower

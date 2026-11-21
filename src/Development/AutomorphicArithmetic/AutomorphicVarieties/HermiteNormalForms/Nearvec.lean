@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Nearcoord
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cntconj
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleRightZeroThd
 import Formalism.LocalToGlobal.CharacterGerms.IntSubst
 import Formalism.LocalToGlobal.CharacterGerms.RowTieDefs

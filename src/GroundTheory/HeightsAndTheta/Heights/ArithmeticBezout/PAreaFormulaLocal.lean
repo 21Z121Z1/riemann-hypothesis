@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsAreaFormulaLocal
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PAreaGraph
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PAreaGraphBound

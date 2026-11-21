@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HTransABTwoZero
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 open NumberField Complex

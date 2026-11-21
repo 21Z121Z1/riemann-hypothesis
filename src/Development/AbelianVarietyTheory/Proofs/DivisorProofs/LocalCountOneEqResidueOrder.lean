@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocCountEqCardCongruenceQuotientStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalUnitaryConjugateTransposeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLatticeIdealSmulMemIffStatement

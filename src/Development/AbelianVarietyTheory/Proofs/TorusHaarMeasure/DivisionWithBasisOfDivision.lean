@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SpanSubtraction
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.BasePsiLeviLowerBound
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.DminCptEq

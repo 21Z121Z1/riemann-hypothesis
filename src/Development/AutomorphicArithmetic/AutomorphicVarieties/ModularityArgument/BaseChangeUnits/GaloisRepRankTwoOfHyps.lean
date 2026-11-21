@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.RealExistenceFromPublished
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 

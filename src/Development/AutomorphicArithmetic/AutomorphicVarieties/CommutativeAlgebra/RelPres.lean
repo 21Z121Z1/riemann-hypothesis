@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedTwoCoboundaries
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.PresNew
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.PresIndep

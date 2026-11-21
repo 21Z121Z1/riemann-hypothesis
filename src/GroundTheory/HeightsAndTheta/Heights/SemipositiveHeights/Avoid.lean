@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
 set_option maxSynthPendingDepth 1

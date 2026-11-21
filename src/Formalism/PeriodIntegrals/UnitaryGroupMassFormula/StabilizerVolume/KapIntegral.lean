@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.ESSymmApply
 import Mathlib.MeasureTheory.Integral.Pi
 

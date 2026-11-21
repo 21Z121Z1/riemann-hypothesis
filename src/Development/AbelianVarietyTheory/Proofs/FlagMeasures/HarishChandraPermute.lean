@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ExistsIsHaarMeasureSUJ
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SqIntIrrPerm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GelfandValuesShiftStatement

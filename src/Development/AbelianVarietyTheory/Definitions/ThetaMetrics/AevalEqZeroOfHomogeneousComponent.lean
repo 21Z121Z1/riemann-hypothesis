@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.WeightedHomogeneousComponentMemElimIdeal
 import Mathlib.RingTheory.Nullstellensatz
 import Mathlib.Tactic.Monotonicity.Lemmas

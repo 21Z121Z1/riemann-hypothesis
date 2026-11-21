@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionsEqUnivOffBadSupportStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemOfBadSetClosedFibre
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedSubsetSupportProper

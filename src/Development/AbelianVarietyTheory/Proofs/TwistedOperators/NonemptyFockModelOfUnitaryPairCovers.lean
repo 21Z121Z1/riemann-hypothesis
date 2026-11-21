@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyFockModelUnitaryDualPairStatement
 
 open Formalism.BasicNotions.TH Formalism.MainNotions.SchurIrreducible

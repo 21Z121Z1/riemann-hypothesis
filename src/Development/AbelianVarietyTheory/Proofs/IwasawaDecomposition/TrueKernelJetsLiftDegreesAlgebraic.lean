@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueColumnPeriodLatticeVacuumSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.KmapOfOkOfVecP
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntAtOfLocTop

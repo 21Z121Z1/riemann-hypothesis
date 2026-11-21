@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.OfFactorE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndUOfOLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LbIsoCubeOfGeneric

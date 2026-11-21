@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenvectorIntegralCompletion
 open NumberField
 open scoped Classical

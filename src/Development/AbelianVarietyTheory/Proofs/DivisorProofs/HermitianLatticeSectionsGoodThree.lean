@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ModelBound
 import Development.AutomorphicArithmetic.LocalEmbeddings.CuspSpan
 import Development.AutomorphicArithmetic.DivisorFrames.EvenWeightDictionaryFrame

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BcrisEqAcrisLocalizationPeriodT
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinExt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvFilD

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsPlueckerSpan
 import Mathlib.LinearAlgebra.ExteriorPower.Basis
 set_option maxSynthPendingDepth 1

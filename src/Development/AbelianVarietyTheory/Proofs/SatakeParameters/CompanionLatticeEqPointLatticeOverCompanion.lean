@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSDLatLatK
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsLatDlOfIsOrthCo
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff

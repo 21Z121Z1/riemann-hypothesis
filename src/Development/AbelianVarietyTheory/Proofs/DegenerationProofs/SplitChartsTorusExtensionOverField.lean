@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.MemRangeAppLEChartIff
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsWeightZeroSumOne
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGroupQuotientPullback

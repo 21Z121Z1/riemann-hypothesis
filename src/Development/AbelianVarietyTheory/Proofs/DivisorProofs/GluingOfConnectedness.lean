@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DensityStatementHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictionStatementHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModularityOfDensityStatement

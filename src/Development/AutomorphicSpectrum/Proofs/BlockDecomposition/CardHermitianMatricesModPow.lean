@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuotientCardStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardHermitianMatricesDvdSq

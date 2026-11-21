@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantBilinearFullRankVanishes
 open scoped Matrix
 open GlobalTheory.WeilM GlobalTheory.FullRankCoinv

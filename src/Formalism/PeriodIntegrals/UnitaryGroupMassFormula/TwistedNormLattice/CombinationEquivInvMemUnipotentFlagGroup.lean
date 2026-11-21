@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.TwNormLat
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.SimpleRing.Principal

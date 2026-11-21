@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContractsOfConstant
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGlobalSectionsDimCongrPicardClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyHomologyEquiv

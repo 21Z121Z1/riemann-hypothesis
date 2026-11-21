@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.SupWOfSup
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliKFiniteCoefficient
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselPeriodAdjointPairStatement

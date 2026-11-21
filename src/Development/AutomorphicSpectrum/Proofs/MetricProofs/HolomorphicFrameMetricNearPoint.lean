@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MinorIJMap
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloOnDivCongr
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameChangeScalarFactor

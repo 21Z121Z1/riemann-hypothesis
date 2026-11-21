@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FderivIntegralMulKernelApply
 open MeasureTheory Filter Topology Metric
 open scoped ContDiff

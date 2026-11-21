@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.AwayInB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGaussianDerivative
 

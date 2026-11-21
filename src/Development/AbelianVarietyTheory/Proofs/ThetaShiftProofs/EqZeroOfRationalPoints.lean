@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemRangeCompIffOfIsClosedImmersion
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFormalConvergence
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.LePreimageOfUnit

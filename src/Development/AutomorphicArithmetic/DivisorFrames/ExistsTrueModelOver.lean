@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.StalkMatrixLeftInverse
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsDivisorFrameGeneric
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TangentSectionsOnNormalModel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.YangianSpanCharacter.ExchangeGen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.FractionalIdeal.Norm

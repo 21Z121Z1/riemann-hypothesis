@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RangeOfIsPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjPull
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLiftClosedImmersionOfDense

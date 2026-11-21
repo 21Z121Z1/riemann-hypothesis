@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.C1FiniteExtensionLangStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TsenLangRatFuncStatement
 

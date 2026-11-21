@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosNatSmulMemOfFgAndSpanningLattice
 open NumberField ReciprocityTheory.ChartRestriction.G.FD
 set_option maxHeartbeats 1000000 in

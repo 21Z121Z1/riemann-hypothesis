@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PairingDivisors.StatementN
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
 import Mathlib.NumberTheory.NumberField.CMField

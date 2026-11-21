@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Imports
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.RestAssembly
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Assembly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.ElevenLe
 
 namespace Formalism.BasicNotions

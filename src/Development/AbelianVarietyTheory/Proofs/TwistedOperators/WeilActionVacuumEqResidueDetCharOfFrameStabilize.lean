@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLocalProductsTendstoFrameStabiliserStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilVacuumEqResidueCharDetSmulStatement
 

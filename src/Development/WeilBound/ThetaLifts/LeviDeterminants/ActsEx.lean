@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 

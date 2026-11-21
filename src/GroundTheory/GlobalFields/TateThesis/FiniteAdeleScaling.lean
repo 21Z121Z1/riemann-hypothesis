@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.AdeleMeasure
 import GroundTheory.GlobalFields.LocalFieldAtPlace
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms

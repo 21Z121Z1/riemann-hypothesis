@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RealCusp
 open NumberField GlobalTheory.BorelCoh UpperTheory.V.TR
 open scoped TensorProduct Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixTwoByTwoFinTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubstMemAndComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchACompCoordEq

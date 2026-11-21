@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Restricted
 import GroundTheory.AutomorphicForms.TensorProductTheorem.TotallyDisconnectedSpaceRestrictedProduct
 import Mathlib.LinearAlgebra.PiTensorProduct.Finite

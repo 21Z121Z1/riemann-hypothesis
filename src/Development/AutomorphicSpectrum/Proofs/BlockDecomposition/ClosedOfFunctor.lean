@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.LeftZeroDuality.H1StructureDimLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalPropertyAffineIdealCriterionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineIdealLocusCriterionStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveSec
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.EfRankSum
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.GenericSectionPointsInequivalentValuationsStatement

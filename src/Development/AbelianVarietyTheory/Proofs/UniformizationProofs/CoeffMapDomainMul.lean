@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.TensorContentEqPolyContentScalarCoeffs
 import Development.AbelianVarietyTheory.Definitions.Uniformization.AllDV
 import Mathlib.Algebra.AffineMonoid.Basic

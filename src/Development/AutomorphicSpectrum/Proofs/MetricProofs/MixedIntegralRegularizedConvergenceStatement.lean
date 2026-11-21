@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedIntegralRegularizedConvergence
 open MeasureTheory Filter Topology ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M
 set_option maxHeartbeats 1000000 in

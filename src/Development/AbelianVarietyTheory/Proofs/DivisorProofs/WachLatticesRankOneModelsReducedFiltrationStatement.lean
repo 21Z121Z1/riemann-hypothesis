@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WachLatticesRankOneModelsReducedFiltration
 open NumberField GlobalTheory.ExpFrame
 set_option maxHeartbeats 1000000 in

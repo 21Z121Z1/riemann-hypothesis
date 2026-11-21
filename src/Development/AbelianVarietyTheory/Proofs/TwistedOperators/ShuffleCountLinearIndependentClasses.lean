@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RadfordShufflePolynomialHolds
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.CStarAlgebra.Classes

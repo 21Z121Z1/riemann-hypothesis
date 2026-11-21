@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.FinrankOfLieMult
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsGram
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductPullbackUniqueStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSigFramesOfIsotropic
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PointShiftStOfPlaceShiftSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearPatPoint

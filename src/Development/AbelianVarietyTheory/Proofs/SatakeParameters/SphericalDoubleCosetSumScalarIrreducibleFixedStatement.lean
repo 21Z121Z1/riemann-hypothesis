@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalDoubleCosetSumScalarIrreducibleFixed
 open NumberField IsDedekindDomain ReciprocityTheory.Aut
 set_option maxHeartbeats 1000000 in

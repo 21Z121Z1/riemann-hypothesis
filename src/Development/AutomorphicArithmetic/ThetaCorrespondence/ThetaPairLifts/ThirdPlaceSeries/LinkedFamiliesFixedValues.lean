@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RingSpecNormalisedCharacterEqAlt
 import Formalism.LocalToGlobal.GroupLattices.Joint0
 import Formalism.LocalToGlobal.GroupLattices.StdSubAtOfRing

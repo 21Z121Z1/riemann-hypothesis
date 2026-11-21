@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimAddOneLeOfSsubset
 open CategoryTheory AlgebraicGeometry TopologicalSpace GlobalTheory
 set_option maxHeartbeats 1000000 in

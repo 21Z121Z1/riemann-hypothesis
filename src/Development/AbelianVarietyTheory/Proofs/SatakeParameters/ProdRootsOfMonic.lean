@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeightRegularOfExt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilDeligneParamMonodromyEqZeroIff

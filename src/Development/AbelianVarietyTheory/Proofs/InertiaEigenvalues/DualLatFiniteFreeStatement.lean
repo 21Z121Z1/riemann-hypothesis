@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DualLatFiniteFree
 open Formalism.RepresentationBoundsCohomology.LOC
 set_option maxHeartbeats 1000000 in

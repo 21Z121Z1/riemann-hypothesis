@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGeneratorThetaPointNormalisedThetaConstantStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionPointsFieldExtension
 

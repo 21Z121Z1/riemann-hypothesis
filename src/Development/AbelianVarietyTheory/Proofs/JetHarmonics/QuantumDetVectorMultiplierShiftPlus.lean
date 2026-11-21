@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliDetMulVectorTypeStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorPolyMapStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorIntertwiningApplyStatement

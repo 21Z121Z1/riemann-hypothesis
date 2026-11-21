@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsValuationSubringBelow
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsChartOfMaximal
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing

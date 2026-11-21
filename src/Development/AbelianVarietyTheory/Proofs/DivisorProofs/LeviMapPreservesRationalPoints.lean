@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalUnitaryLeviLift
 open scoped TensorProduct NNReal Matrix ENNReal

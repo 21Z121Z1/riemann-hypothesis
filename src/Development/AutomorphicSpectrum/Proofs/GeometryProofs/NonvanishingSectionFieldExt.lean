@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LeWchartOne
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsNonzeroSectionPpDataStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionModuleDivisibleAtPrimeStatement

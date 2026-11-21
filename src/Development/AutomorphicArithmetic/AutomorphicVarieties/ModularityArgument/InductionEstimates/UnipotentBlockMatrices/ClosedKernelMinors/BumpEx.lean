@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchBump
 import GroundTheory.AutomorphicForms.GKModules.KernelCalculus
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.CuspidalMultiplicityOneTotallyComplex

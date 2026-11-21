@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsRealFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsFiniteIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingFundamentalDomainStatement

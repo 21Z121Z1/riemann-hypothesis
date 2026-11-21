@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SubIdBijOfContracting
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NabBijectiveWindow
 import Mathlib.Data.Int.Star

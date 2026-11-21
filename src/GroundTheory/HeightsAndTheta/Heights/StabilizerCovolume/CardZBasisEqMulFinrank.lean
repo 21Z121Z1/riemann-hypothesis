@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Covolume
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.GramLieEqConjTransposeMul
 set_option maxSynthPendingDepth 1

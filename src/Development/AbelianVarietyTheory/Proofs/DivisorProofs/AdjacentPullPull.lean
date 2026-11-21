@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentRefl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlagCh2FlagPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsArithVarEffCartier

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleXSqAddOne
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.GroupTheory.FiniteAbelian.Basic

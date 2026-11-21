@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 open NumberField IsDedekindDomain

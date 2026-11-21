@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Tactic.Polynomial.Basic

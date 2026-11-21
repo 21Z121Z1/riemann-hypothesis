@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvariantExtending
 open Matrix Finset
 open scoped InnerProductSpace

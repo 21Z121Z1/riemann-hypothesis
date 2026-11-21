@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.UnitaryDescent.DescentUnitaryOfUnit
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.SymLow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.ArthurClozelDescent

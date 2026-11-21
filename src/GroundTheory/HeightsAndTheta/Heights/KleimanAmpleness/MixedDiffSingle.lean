@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailAlt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsWeightedHomogeneousAevalOfHom
 set_option maxSynthPendingDepth 1

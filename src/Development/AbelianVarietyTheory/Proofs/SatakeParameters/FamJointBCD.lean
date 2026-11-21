@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.HeckeCharacterExamples.ClusteredLetterwiseBoxes
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FamJEpsPos
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.NoLocalInvariants
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.TemperedRepresentations
 import Mathlib.Analysis.CStarAlgebra.Classes

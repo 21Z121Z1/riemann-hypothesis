@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FromSpecResidueFieldAppTopIso
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehomA
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper

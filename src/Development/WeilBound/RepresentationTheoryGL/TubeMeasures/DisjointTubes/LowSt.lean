@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OneMeasureSizes
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleTrace.LadicH0LocallyConstant
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

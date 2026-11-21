@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemRiemannRochSpaceIffRegularAtEverywhere
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardAffineHyperplaneStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CardTwoAffineHyperplanesStatement

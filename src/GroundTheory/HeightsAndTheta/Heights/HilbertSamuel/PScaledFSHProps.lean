@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsScaledFSHProps
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PTorusInvLevi
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsAntisym

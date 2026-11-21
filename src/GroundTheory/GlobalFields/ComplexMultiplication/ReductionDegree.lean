@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionIsogenyMap
 set_option maxHeartbeats 4000000
 set_option synthInstance.maxHeartbeats 400000

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 open NumberField IsDedekindDomain Matrix GroundTheory.Global GroundTheory.Automorphic.GJMatrix GlobalTheory.HenQ
 open GlobalTheory.CuspRep (GA Af Ad ratGL finGL locGL pFin pLoc)

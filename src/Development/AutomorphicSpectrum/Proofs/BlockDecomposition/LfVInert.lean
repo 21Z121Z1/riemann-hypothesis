@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularGroup
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitOrInertOfUnramified
 

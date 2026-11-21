@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceObjects
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.MvPolynomial.Ideal

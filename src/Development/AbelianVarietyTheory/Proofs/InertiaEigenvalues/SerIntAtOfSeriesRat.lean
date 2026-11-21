@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsTorsionFreeIntOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsConjLatUnimodBd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsHalfIdem

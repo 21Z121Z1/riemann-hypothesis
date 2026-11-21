@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ContinuousCochains
 import GroundTheory.ProfiniteCohomology.BridgeDefs
 import GroundTheory.ProfiniteCohomology.BridgeNested

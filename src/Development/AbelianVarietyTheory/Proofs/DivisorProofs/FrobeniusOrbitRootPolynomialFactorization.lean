@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LabelsCharOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalCharacterFormula
 

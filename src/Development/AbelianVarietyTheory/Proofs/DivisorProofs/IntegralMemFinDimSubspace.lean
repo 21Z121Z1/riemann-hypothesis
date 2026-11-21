@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DualMemSpanEvalOfFiniteDimensional
 open MeasureTheory Filter Topology
 

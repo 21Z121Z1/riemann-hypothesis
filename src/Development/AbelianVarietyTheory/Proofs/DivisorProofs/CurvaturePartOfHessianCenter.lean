@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InSOfParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularizedMetricLowerBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerFormBoundedByLeviStatement

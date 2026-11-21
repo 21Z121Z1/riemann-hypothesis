@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymTranslate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannDualFormIndep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCovEqMulVec

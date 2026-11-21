@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTorsionFormPoint
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.RingTheory.SimpleRing.Principal

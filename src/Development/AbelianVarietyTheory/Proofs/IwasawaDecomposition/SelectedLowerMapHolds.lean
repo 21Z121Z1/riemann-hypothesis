@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowerMapSharpAmbientTie
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StabRatInjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowerMapTie

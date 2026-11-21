@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.DiagonalLagrangianIntegralSiegelParabolicTransfoAlt
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.UnitCoef
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.PrSingle

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.JetsGlue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DenseOfPolynomialStdGaussianMemSchwartzStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LastColumnArrowRealAverageFunctionalStatement

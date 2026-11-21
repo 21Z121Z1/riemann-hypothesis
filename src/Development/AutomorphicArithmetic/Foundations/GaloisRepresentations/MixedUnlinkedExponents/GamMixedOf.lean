@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.MixedUnlinkedExponents.ValsExtOf
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.WeakStable
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp

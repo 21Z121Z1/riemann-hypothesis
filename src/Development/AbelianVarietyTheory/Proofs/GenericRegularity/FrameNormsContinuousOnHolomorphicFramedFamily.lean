@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.TypeFnPeriodExistModuliNonempty
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PeriodEqTriangularOrthonormalStatement
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ImNegOfFramePeriodVectorStatement

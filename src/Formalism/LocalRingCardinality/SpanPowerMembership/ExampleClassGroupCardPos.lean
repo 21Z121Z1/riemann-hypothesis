@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 import Formalism.LocalRingCardinality.SpanPowerMembership.RelDet
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleWeightMiddleEntries

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.UnramifiedCocycleIsCoboundaryOfBernoulliUnit
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.LxCore
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.LxPartial

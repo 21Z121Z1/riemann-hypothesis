@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Data.Matrix.PEquiv
 import ReciprocityTheory.Automorphisms.Unitary
 

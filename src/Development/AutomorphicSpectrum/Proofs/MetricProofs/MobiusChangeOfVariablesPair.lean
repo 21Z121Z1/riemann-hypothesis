@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContDiffAtFrameEntry
 import Mathlib.RingTheory.Complex
 import Mathlib.RingTheory.SimpleRing.Principal

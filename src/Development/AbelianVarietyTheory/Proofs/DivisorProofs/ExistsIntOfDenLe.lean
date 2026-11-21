@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteOfBoundedImageInFinitelyGeneratedSubgroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbeddingsRealIndependent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixedVectorSquaredBound

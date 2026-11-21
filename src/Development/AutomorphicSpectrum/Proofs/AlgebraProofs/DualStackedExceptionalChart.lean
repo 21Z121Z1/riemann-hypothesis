@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcChart
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcGeoFirst
 set_option maxSynthPendingDepth 1

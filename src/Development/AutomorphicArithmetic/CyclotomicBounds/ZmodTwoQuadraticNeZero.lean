@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.SmallFacts
 import Development.AutomorphicArithmetic.PrimeDiscriminants.CycImage
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SmallRam

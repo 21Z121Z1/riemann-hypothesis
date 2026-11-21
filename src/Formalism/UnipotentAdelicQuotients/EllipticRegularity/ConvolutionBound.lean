@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.EllRegCut
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConvSqLe
 import Mathlib.Tactic.Monotonicity.Lemmas

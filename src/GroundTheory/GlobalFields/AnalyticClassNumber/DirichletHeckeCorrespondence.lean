@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.AnalyticClassNumber.DirichletHeckeLocal
 import Mathlib.NumberTheory.LSeries.PrimesInAP
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Tactic.Monotonicity.Lemmas
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GaussianTailBound
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitSt

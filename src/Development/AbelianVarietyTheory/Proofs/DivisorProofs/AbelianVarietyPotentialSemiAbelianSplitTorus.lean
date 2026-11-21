@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SemistableReductionZero
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NumberFieldStandardFacts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsLocalHomAndIsAdicCompleteOfFiniteDvr

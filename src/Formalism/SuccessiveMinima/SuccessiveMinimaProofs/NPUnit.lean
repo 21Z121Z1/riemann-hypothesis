@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SuccessiveMinima.DefsNP
 import Formalism.SuccessiveMinima.SuccessiveMinimaProofs.NewtonSlope
 import Mathlib.Algebra.Order.Star.Real

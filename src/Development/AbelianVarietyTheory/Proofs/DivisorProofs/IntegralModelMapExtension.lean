@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecValAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftToLocalRingOpenImmersionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentFrameBaseChangeStatement

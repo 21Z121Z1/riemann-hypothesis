@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SimplePoleTwistedLift
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta

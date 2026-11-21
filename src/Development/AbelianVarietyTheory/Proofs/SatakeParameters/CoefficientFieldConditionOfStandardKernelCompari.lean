@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueKernelJetsMulDetCharactersMemCoefficientFielStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetIdStdBot
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NuRowSuccEqWt

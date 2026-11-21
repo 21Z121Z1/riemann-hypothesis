@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralLeOfMinor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TopX
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMulLeftFin

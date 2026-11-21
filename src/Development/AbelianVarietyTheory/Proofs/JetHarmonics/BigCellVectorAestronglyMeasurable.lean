@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPIntegralOfPlaces
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsContinuousFrameSectionStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselBigCellPointVectorEqBesselStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsArchOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RunModel
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IndexBoundJoin

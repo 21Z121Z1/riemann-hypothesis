@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 open Finset Polynomial
 open Formalism.REAL (GlRel KHighest IsWeight qdet Tm qminor)

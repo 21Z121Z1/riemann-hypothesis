@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorusExtensionFinite
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsAbPartBaseChange
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CardTorsionMulCardToricTorsion

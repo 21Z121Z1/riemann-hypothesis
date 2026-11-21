@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibLamC
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibLamB
 

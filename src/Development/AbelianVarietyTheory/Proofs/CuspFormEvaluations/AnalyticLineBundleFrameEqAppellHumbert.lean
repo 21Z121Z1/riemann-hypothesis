@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.JetRdMulInvPow
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CorrOfJetsOfAnalyticFrameProducts
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.AppLESpMapJetPt

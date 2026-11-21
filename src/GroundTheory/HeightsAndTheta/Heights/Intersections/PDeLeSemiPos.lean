@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsAntisym
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StPtsAddFirst

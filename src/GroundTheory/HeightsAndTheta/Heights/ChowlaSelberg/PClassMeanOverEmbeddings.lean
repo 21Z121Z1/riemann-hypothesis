@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PeriodLatticeIdeal
 import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupAction
 set_option maxSynthPendingDepth 1

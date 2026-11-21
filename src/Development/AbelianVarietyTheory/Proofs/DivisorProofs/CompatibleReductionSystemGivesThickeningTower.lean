@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsReductionClosedSubschemeIffIdealEqStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsAdicColimitOfFactor
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry

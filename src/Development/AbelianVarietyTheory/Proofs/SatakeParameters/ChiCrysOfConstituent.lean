@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.UnramifiedLatticeEmbeddings
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.CrystallineWindowLifts
 

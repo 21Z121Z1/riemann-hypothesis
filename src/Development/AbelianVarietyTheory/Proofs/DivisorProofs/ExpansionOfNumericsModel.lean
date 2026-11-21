@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimePowerLatticeInclusionOfLocalModelsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentDatumLeOfPrimePowerLatticeInclusionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExponentOfRecordVsFormulas

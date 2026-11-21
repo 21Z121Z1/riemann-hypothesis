@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWeilDatumOOneOfRankZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilRepresentationContinuous
 

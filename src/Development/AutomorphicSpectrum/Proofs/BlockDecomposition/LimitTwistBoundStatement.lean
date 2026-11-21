@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitTwistBound
 open scoped Classical
 namespace PositivityTheory.Rg.BcB.SpectralAccumulation.Lim5

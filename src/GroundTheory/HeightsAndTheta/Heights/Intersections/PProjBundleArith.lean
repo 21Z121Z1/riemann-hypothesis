@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StProjBundleArith
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StProjBundleMultiHomog
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StProjBundleDim

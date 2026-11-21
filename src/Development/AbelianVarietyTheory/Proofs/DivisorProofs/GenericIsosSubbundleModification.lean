@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsomorphismSubbundleLift
 
 set_option autoImplicit false

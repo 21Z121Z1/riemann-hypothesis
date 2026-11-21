@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.NotIsThetaOfNonunit
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ThetaGenFibre

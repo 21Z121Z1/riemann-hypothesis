@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.HensIdemCut
 import Mathlib.RingTheory.Polynomial.UniversalFactorizationRing
 

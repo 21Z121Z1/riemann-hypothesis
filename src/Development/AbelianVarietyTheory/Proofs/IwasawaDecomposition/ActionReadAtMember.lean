@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JumpsCardOfBuilt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CenterEqSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubOrthProjPerpMem

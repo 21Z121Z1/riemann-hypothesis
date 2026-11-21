@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.ContinuousPderivDisc
 import Mathlib.Algebra.DualNumber
 import Mathlib.RingTheory.PiTensorProduct

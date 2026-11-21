@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundednessStatement
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.SimpleRing.Principal

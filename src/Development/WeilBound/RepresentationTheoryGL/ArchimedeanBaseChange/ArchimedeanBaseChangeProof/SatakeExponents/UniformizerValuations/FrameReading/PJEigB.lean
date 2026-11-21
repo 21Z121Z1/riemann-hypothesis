@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.PairDoubleCosetFiniteSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdIrrEquivOfOrdered
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmoothColRep

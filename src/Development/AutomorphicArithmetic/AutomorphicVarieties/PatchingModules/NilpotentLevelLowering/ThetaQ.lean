@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.NilpotentLevelLowering.ActUVariableEqPow
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FixPiIff
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwDomMul

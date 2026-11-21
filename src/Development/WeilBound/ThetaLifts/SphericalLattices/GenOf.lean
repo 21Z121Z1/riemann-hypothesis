@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SphericalLattices.HoweDefs
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RhoMemOfMkEq
 

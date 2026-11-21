@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Theta.AdelicFourierCoord
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 import Mathlib.LinearAlgebra.BilinearForm.TensorProduct

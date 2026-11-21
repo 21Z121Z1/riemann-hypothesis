@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BlochKatoDuality
 
 open Matrix MeasureTheory Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixthStatement

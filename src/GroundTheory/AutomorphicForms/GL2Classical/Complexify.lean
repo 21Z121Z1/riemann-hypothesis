@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.Smooth
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.SmoothKZ
 import GroundTheory.AutomorphicForms.HarishChandraCentre.Consequences

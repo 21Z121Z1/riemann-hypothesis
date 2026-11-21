@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialModelIsometry.IsPolyMon
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Mathlib.RingTheory.SimpleRing.Principal

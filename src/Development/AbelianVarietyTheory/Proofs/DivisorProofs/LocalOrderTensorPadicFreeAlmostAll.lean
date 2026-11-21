@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsScalarTowerCenAlgebra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CycleListPermInvariant
 import Mathlib.RingTheory.Henselian

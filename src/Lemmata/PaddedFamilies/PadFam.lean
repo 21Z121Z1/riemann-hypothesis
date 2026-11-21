@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualLocalBasis.DualBasis
 import Mathlib.RingTheory.DedekindDomain.PID
 import Mathlib.RingTheory.Henselian

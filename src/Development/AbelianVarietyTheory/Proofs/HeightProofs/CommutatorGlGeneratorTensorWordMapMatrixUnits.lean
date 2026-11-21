@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsLieDataCircle
 import Formalism.RealPlaceAnalysis.StatementA
 import Mathlib.RingTheory.PiTensorProduct

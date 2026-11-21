@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.MemFlagOfRel
 import Development.WeilBound.CoreStatements.FlagImmersions.OfForall
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundle

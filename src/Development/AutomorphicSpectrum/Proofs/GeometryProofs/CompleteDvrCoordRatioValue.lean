@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFrameVec
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsClosureCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits

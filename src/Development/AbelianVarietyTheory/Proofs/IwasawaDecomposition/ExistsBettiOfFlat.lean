@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotIsBettiZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueRuleOfRegular
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlatSectionEqHorizontalGeneratorStatement

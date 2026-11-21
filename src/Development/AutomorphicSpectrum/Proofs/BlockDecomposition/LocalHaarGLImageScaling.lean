@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatAtIsCO
 noncomputable section
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

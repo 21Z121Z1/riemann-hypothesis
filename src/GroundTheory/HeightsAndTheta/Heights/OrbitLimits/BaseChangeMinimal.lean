@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.BaseChangeCB
 set_option maxSynthPendingDepth 1
 

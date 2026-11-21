@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SplitComps
 import Mathlib.RingTheory.PicardGroup
 

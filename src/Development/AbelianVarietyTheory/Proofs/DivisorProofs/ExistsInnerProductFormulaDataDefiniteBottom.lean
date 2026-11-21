@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramAtNegOfGramOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianWittIndexEqZeroDefiniteBottomStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPolynomialFockThetaVectorDefiniteBottomStatement

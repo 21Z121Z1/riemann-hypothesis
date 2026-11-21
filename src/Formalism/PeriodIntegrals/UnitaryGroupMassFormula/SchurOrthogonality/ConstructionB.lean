@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurOrthogonality.InstMeasurableSpaceMat
 import Mathlib.Analysis.CStarAlgebra.Matrix
 import Mathlib.Topology.Algebra.Star.Unitary

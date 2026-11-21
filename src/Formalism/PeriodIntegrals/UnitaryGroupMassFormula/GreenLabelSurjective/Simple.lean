@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PadicSubsetSums.CentralIdempotents.IsConstituent
 import Mathlib.Combinatorics.Quiver.ReflQuiver
 import Mathlib.RepresentationTheory.Coinduced

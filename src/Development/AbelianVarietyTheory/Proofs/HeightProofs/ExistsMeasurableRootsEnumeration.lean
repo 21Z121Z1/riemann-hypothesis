@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsProdXSubCOfMonic
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Data.Fin.Tuple.Sort

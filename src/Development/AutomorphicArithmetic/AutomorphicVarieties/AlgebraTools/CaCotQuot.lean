@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsRegularOfSupportDimQuotientAddLengthLe
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCotExtend
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFamilyFiniteDimSpan
 
 open scoped TensorProduct NNReal Matrix

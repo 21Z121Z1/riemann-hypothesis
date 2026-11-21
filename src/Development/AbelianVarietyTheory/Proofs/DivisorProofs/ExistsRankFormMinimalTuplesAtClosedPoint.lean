@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelTraitCharacterGroupFinrankLeGenusThree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNoetherianRingStalk
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagOfMatRel

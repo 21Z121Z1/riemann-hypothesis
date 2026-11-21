@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 

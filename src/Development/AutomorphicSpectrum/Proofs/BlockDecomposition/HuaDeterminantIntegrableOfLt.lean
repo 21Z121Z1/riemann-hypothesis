@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DetWEqNormSqDetOneAddIStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneLeDetWStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DetWBlockMatrixFormulaStatement

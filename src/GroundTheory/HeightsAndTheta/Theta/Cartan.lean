@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.RealGroupsPolar
 import GroundTheory.AutomorphicForms.HarishChandraInvariance.Compact
 

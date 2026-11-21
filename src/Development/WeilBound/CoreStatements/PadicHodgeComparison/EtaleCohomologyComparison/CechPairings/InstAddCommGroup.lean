@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FaceFaceApply
 import Mathlib.Algebra.Category.CommAlgCat.Basic
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

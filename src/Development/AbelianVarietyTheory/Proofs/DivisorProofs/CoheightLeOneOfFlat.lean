@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularCurve
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreimageRegSet

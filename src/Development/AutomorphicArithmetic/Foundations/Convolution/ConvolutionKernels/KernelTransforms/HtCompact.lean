@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsHeight
 
 open MeasureTheory NumberField IsDedekindDomain

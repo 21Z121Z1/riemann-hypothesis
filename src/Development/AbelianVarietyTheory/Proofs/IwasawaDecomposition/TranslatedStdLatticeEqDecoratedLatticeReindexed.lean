@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NVNeZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemHatSwap
 import Formalism.LocalToGlobal.Columns.AdelicLemmas

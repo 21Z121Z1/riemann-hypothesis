@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.ResClosed
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFrobGBaseChange
 

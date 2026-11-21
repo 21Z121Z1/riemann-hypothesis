@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitMkOfFormallyUnramified
 
 set_option autoImplicit false

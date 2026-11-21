@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalModelRootsOfUnityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingChainExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingChainMapStatement

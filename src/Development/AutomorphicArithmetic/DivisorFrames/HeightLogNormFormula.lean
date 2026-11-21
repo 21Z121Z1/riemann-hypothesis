@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ProductFormulaHeight
 import Development.AutomorphicArithmetic.DivisorFrames.AlgebraicPointsDegreeSum
 import Development.AutomorphicArithmetic.DivisorFrames.PointFieldExtensionLift

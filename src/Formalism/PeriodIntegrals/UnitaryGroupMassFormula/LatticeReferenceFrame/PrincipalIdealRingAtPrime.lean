@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeReferenceFrame.PPAssemble
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Data.Int.Star

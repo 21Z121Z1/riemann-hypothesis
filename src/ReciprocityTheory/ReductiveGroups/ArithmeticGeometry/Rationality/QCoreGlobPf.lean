@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QCoreH
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.GlobQuotPf
 

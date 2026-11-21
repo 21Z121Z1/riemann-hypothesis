@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTowerPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroThetaLiftAnisotropicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroDualThetaLiftStatement

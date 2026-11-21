@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.StrictTransform
 import Development.ResolutionOfSingularities.Foundations.BlowupUniversalProperty
 import Mathlib.AlgebraicGeometry.Morphisms.Proper

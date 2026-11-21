@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsFiniteLiftRestrict
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsFiniteLiftComp
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CmModelCoefficientSubringDedekindCompatibleEmbed

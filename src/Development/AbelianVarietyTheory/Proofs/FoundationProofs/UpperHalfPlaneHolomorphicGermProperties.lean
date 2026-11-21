@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlTwoPosRatMobiusBasicLawsStatement
 import Mathlib.Analysis.Complex.Convex
 import Std.Tactic.BVDecide.Normalize.Prop

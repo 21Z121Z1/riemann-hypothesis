@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.H2MapInjectiveStatement
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

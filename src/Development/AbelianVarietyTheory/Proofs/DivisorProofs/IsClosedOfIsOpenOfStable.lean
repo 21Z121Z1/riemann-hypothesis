@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqNearFibreOfQuotContracts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomDiffUnitSpecialises
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqUnitOfPullbackEq

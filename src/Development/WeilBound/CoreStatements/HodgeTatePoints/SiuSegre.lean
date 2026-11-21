@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.SiuaNum
 import Development.WeilBound.CoreStatements.HodgeTatePoints.SiubOf
 

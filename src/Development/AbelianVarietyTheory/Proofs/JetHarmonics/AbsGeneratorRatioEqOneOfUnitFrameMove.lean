@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrMoveValues
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryOfSabMap
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.UnitFramesGeneratorRatioModulusOne

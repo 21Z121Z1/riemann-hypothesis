@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricPullbackGeneratorSecondDifferenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmetricPullbackGeneratorEvenValueStatement
 

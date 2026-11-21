@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RealAt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeTupleLevelZeroPointIsComponentPoint
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PosTieAt

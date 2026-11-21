@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointLevelPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTateModuleOfEvaluationsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateLatticeSpansStatement

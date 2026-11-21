@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.GapAbsOf
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.WittVector.IsPoly

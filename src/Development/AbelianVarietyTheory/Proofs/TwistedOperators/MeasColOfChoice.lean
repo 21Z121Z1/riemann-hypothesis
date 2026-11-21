@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatLConjIIffHform
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeReductionEqOneOfCompletionCongruence
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsMatchOver

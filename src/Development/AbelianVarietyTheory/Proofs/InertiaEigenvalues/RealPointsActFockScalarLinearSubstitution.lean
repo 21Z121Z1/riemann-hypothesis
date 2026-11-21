@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActOfMemGfC
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SqEqOneOfFixDat
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable

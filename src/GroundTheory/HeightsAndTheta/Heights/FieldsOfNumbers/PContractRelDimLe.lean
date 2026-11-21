@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsContractRelDimLe
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PPFContracted
 set_option maxSynthPendingDepth 1

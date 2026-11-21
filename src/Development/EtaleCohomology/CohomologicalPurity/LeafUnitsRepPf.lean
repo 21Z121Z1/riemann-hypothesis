@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafTailNervePf
 import Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes
 

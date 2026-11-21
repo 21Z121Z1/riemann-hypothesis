@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcLinear
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopSimpleSub
 set_option maxSynthPendingDepth 1

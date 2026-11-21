@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint
 set_option autoImplicit false
 open CategoryTheory AlgebraicGeometry Limits TopologicalSpace MvPolynomial MeasureTheory

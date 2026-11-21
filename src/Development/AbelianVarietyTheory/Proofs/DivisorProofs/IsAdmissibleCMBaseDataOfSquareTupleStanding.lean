@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
 import Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GgNone
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Tactic.Polynomial.Basic

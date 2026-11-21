@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.FormalGroups.LubinTate
 
 namespace GroundTheory.LocalField.FormalGroup

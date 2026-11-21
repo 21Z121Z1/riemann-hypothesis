@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.GoodCount
 
 namespace Formalism.GM.M

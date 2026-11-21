@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.GoodLem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameUniformizerPower
 import Development.DiscreteGroups.GlobalIrreducibility.DzBigDef

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfSumSmul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanIsLinesOfGraded

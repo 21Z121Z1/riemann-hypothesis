@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DominatingPiecesSmoothStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PieceLocalizationAtElementStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TwistedFrameInChartStatement

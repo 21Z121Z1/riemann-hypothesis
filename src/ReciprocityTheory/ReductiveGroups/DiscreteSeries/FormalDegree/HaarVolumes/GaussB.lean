@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.GaussA
 import Mathlib.CategoryTheory.Countable
 import Mathlib.MeasureTheory.Order.Group.Lattice

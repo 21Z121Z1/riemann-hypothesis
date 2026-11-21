@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarefreePrimeFactor.BigPrimes
 import Formalism.PeriodIntegrals.SqfPrimeFactor
 import Mathlib.Algebra.Order.Ring.Star

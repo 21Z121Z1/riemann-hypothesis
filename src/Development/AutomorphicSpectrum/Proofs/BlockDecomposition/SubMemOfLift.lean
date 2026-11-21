@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemOfMk
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormAction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormLocalOfFrame

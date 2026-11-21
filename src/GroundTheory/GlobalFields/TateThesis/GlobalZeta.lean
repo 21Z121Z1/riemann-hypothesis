@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.GlobalZetaFinite
 import GroundTheory.GlobalFields.TateThesis.GlobalZetaInfinite
 import GroundTheory.GlobalFields.TateThesis.SchwartzBruhat

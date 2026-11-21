@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AdditiveCharConductorExists
 open scoped TensorProduct
 open NumberField IsDedekindDomain

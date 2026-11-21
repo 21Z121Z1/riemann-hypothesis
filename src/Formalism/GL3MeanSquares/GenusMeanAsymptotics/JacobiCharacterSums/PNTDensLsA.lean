@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LFunctionBounds.LFunctionBoundsProofs.LFunctionEqGOfOneLt
 
 open Complex Filter Topology

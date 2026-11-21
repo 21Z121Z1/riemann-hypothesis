@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.DualOrder
 import Mathlib.Tactic.ReduceModChar

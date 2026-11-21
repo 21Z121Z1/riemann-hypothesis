@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.PowerSeriesFrobeniusCongruence
 import Formalism.SharpRestriction.GrowthBounds.CoeffIdentityPlainChartOfThree
 import Formalism.LocalToGlobal.CharacterGerms.TripleSubstSecondCoordinate

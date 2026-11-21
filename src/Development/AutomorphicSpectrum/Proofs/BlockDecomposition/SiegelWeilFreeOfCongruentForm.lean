@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SiegelWeilMeasureOfCongruentForm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TrMMemFramesEIff
 

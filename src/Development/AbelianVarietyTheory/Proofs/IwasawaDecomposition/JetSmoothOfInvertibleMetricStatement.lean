@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetSmoothOfInvertibleMetric
 open Filter Topology Matrix
 open scoped ContDiff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BlockPullbackHermLineStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionCoversComplexPointsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AlgebraicRealisationHolomorphicMapStatement

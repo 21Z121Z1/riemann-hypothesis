@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.HermitianCellMeasures.EmDefs
 
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicClassFiniteness.PartSplitOfOne
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

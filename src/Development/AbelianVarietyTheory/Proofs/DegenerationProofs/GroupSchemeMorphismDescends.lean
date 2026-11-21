@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GrpObjOfDenseOpen
 import Mathlib.AlgebraicGeometry.Morphisms.LocalFlatDescent
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WindowSums.Statement
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalTheoryWindows
 

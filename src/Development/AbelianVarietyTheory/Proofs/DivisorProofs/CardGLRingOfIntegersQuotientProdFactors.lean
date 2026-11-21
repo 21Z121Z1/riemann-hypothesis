@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowBlockIndicatorFromLtIff
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Group.Pi.Units

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertiaPowFixesOfCommutativeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardAbelianVarietyTorsionSepClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFieldOfValues

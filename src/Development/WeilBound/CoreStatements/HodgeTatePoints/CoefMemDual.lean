@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FinitelyGeneratedHomology
 open Module NumberField GlobalTheory.CompanionTheory.Ar.HT TensorProduct Filter
 

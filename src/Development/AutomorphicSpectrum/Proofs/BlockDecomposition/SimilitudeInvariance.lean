@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimilitudeBetweenNonemptySpheresStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaMeasureIndependentChoicesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaMeasureSimilitudeStatement

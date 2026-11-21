@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.Order.CompletePartialOrder
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.IsInfUnitary

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalAdmissible
 import GroundTheory.AutomorphicForms.IwahoriFactorization
 

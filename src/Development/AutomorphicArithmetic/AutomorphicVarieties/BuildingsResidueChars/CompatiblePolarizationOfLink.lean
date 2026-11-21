@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.UntwistS
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.GuDefs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LevelIso

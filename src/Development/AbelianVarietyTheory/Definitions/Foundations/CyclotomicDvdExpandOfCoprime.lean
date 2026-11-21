@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PieriBlockIdeals.PieriColumnMinors.HeightDescentMinors
 import Mathlib.RingTheory.WittVector.Compare
 import Mathlib.RingTheory.WittVector.Complete

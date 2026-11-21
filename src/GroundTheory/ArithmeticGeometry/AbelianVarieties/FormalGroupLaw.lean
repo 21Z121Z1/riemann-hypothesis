@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroup
 import GroundTheory.LocalFields.FormalGroups.Basics
 import Mathlib.Algebra.AffineMonoid.Basic

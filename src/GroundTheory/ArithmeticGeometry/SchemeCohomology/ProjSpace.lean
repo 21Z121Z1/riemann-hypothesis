@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ConsCompSuccAboveZero
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 import Mathlib.Order.CompletePartialOrder

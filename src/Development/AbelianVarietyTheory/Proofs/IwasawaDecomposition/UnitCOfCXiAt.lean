@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MarkedIsometryHalf
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EqZeroOfForallAlgHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CXiValIff

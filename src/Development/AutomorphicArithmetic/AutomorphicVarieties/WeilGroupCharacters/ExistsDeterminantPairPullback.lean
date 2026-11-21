@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.Inertia
 
 open IsLocalRing UpperTheory.V.Alg UpperTheory.V.W

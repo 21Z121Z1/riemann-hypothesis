@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LocalAtPlaces
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IntersectionNumberFieldEquiv
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.DivCycleMapLocalisation

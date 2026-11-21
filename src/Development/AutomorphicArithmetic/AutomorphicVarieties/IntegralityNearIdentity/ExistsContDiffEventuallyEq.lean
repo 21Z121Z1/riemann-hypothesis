@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjugateOfRoots
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightedSumBis
 

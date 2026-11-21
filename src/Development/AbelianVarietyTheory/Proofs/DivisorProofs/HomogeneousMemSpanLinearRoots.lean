@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.FlagDegFormula
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsMulVal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PelTorsionWeilPairing
 set_option autoImplicit false

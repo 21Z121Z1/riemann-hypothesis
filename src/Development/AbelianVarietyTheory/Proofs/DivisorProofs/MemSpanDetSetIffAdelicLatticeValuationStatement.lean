@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanDetSetIffAdelicLatticeValuation
 open NumberField IsDedekindDomain Formalism.L2.Pj
 open scoped nonZeroDivisors

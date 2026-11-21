@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPowAct
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.RosatiAdjPow
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.TauBalPow

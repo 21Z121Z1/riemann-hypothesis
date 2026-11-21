@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLevelCoverOfPowEqOne
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIdealOfLocally
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelEqOfGLiesOfHasTh

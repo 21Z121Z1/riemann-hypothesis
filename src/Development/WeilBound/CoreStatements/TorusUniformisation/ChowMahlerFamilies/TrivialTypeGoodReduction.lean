@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.SlopeBoundSt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniformisationOfPoint
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsQProjOverOfIsIso

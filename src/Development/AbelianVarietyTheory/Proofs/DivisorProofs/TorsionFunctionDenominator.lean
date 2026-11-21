@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPrechartTranslateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteTorsionPrechartCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlobalOfLocalPrimeStatement

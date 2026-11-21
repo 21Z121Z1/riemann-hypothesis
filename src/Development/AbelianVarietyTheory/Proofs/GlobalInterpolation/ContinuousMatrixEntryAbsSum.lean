@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PerpendicularEmbedding
 import Std.Tactic.BVDecide.Normalize.Prop
 

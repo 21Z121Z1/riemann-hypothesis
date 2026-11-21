@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.JetProofs.EvFirst
 
 open GlobalTheory.CompanionTheory.AlgRepEndIrreducible PI.UpqRep Matrix

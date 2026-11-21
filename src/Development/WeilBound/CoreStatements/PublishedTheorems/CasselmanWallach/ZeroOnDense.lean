@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.SmoothSeminormAndSobolevBounds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CasselmanWallachOfHyp
 

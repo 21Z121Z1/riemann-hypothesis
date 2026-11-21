@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.MapZeroS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSecStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupEqClassOfIsAWStatement

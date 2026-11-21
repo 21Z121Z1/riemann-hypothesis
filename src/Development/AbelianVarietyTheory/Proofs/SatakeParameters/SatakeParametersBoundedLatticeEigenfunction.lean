@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NcardSublatticesOfIndexPrimePowerLeStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormLeOfRecurrenceGrowthStatement
 

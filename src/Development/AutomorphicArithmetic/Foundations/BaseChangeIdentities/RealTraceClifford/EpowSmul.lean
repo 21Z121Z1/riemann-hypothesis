@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.RealTraceClifford.HderEntry
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.RealTraceClifford.Rdcalc
 

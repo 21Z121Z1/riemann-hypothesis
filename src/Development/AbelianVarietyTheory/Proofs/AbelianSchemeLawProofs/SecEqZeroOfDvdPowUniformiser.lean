@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Geometrically.Integral
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.RingTheory.WittVector.IsPoly

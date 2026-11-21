@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.GaloisToProductIsIso
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia

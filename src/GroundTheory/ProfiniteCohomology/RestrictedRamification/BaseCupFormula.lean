@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseLocal
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseCupKummer
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseCupNat

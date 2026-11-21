@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.PowerSeries.Substitution
 import Mathlib.Algebra.Order.Algebra
 import Mathlib.Analysis.Normed.Group.Basic

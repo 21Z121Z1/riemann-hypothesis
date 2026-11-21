@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.LineSumExistsDerivativeFactor
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.SquaresAgreeLineDerivativeIsDerivation
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjUInvMemGfC

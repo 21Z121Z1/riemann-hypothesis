@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.MovDXiAtRecStep
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
 

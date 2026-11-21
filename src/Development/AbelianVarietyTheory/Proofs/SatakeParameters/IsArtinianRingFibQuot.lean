@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TcoMem
 import Mathlib.RingTheory.PicardGroup
 open GlobalTheory.PD

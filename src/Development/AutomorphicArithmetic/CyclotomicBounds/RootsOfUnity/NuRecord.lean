@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.SumFactorizationMulLogLe
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.WDvdQS
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.SplitNotDvd

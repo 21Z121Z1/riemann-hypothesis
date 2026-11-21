@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UpqRep
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential
 import Mathlib.RingTheory.PicardGroup

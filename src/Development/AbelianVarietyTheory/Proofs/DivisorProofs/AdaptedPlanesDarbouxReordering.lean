@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAdaptedDecomp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HTensAddRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HTensAdapted

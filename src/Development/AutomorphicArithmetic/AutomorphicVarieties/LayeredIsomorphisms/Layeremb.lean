@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Rootdeg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields
 

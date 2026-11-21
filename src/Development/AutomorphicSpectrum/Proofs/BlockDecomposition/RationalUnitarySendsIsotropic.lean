@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatVInjective
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Assembly
 import GroundTheory.AutomorphicForms.HermitianExistenceLocal

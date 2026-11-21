@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.SymbolBridge
 import GroundTheory.GlobalFields.NormResidueSymbol.RangeIdeleNormLeKerIdeleSymbol
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalSymbol

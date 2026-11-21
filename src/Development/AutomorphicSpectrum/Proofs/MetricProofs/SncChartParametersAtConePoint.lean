@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MapMemChartIdealOfAevalEqZero
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SpanEqTopOfForallDotEqZero

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableLatticeDescentUnramified
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousLineBaseDifferenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticFunctionSwapLineFamilyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoFlagRationalSectionsStatement

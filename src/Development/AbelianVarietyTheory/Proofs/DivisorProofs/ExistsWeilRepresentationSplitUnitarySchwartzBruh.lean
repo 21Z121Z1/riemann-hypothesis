@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomOfBigCellGenericRelationsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslateInCellStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilRepresentationBigCellRelationFourierStatement

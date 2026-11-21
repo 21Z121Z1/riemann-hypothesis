@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetProjectionHeckeHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetVectorLiftDominantStatement
 

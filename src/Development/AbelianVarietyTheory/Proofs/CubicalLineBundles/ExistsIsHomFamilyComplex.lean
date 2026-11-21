@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.PrimeSpectrumDualEq
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemNonzeroLocusIffPowFn

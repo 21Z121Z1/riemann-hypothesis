@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PadicEmbeddingValuationSubringStatement
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.PadicEmbeddingDiscreteValuationRingStatement

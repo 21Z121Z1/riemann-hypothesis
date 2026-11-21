@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsCoeffCurveOver
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsDeltaDatLargeCoeff

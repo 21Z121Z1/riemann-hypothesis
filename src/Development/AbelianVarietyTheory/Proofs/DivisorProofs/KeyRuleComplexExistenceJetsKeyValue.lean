@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimensionZeroCase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClassicalThetaDescriptionAbelianPartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealCoords

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeIntB
 import ReciprocityTheory.AnalyticForms.PotentialTheory.AnalyticSubsetChartLocal

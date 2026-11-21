@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.FiniteKernelPowClassesOfPrimitiveRoot
 import GroundTheory.FunctionField.PlaceAbove
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Algebra.Module.Lattice
 import Mathlib.NumberTheory.LocalField.Basic

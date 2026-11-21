@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ETPoint
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ETSpan
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCSpan

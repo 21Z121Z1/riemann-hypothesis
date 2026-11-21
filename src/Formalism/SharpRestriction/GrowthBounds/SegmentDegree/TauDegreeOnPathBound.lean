@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.OldestLetterInSegment
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.PsiCutSupported
 

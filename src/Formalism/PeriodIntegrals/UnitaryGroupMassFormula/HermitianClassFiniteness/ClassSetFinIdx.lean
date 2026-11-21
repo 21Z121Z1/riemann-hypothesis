@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.Statement
 
 namespace PI.UnitaryGroupMassFormula.InHHClassFin

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwinerOfCoef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestDegreeComponentNonzero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorIrreducibleModules

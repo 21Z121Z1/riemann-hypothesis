@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VandermondeSplitsCompactNoncompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointDetOnCompactTorus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NumShiftHolds

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreDefs
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Data.Rat.Star

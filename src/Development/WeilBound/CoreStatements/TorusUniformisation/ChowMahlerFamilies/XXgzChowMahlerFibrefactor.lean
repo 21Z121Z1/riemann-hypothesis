@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChowFormSpecializationProportionalStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
 set_option maxSynthPendingDepth 1

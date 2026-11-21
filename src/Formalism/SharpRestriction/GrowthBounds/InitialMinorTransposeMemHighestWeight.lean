@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.TableLineDegreeFive
 import Formalism.SharpRestriction.GrowthBounds.ProjectionOfIsotypicDecomposition
 import Formalism.GrowthSums.FactorialBaseGrowth.LogCoef

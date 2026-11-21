@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorMatch
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvdOrdSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TauCoordMulSq

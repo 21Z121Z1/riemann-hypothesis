@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ResultantValuation.ResultantAdjugateProofs.Laplace
 
 open Polynomial

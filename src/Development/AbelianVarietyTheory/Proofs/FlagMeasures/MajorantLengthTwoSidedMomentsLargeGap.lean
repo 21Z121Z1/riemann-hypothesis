@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AbsOfRange
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralTranslate
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvMomentOfBessel

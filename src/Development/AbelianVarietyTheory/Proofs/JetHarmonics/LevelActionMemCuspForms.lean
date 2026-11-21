@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ActLevFullLevelGroupFramedPointsStatement
 import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
 import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge

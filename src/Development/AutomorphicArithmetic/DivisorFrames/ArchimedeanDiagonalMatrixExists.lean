@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelPolynomial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanLaplacianPolData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPair

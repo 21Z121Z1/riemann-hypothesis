@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ToHLat
 import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas

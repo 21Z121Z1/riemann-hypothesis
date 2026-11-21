@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CmHostRankBounds
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CuspWeightIntegrableOnFundamentalSetStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeLeftStatement

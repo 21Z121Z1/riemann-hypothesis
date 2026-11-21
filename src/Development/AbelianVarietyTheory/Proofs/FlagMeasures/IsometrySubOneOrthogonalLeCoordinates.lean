@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordEquivSymmApply
 
 open scoped Classical ENNReal

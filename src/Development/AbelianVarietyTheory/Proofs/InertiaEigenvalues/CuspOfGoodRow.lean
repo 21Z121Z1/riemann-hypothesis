@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitPlaceGoodSignature
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WdOfMono0L
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.IsCompactImageClosureMid
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.GlueCharts
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PChartComparison

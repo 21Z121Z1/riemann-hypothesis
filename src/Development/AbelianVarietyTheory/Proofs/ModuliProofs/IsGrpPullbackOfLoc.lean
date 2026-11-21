@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SurjectiveAppTopPullbackSndOfApp
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AppTopSurjective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenOfInvariant

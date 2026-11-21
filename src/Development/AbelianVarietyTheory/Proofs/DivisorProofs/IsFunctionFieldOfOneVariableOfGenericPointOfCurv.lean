@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatPath
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrdegFunctionFieldEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FgFunctionField

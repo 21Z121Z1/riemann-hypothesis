@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.NewformTwistNorms.NewformNormCoeffPrimeLeOfNotDvdLevel
 open GlobalTheory.HeckeFamilyMatrices Polynomial UpperHalfPlane
 open scoped MatrixGroups ModularForm

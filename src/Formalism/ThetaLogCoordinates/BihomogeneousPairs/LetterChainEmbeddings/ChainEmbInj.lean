@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.LetterAtSuccVal
 
 namespace Formalism.InvariantFactorPaths.KP.LL

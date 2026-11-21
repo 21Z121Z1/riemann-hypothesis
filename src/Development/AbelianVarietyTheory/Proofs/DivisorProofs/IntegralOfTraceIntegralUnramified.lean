@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormallyUnramifiedRingOfIntegersIffDifferentIdea
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FinrankLeOfMapLe
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DefiniteBound

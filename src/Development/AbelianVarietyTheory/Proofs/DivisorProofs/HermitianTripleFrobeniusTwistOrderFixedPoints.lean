@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsRootSelectionUnitaryRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdIterateTwistedConj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigKQFixedEqInclK

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsGenericFormsKer
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLevOfRed
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsReductionOfMemLevelZero
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MovesOfMemLev

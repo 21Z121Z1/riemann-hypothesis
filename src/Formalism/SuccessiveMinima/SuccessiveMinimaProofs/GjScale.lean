@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SuccessiveMinima.DefsMink
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Dynamics.Ergodic.Action.Regular

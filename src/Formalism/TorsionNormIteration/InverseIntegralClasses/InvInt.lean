@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.TorsionNormIteration.InvIntegralOfClass
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 import Mathlib.Algebra.Order.Ring.Star

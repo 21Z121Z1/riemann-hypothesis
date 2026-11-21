@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClassPins
 

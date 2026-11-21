@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagModelStatementHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreRefineLineBundlesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptBlockRefinementStatement

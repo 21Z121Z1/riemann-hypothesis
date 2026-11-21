@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StrongApproximation.LocalIntegralOfSubstitution
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StrongApproximation.ExistsLatticeAutomorphismApprox
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StrongApproximation.DedekindLFunctions

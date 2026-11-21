@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMulPowEqIncl
 open CrystallineSemistableComparison.Onto GlobalTheory.CompanionTheory.SurjectionOntoH4
 

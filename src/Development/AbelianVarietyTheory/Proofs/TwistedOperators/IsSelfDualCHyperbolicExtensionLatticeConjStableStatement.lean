@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsSelfDualCHyperbolicExtensionLatticeConjStable
 open Formalism.BasicNotions Formalism.BasicNotions.TH NumberField IsDedekindDomain
 open scoped nonZeroDivisors

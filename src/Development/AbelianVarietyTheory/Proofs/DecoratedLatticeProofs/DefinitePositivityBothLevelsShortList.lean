@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftAdjointScalarFormulaInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryRep
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPart

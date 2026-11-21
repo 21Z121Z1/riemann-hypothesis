@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.AltCMul
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.ReduceModChar

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.Characters
 import GroundTheory.ProfiniteCohomology.CupProducts
 import GroundTheory.ProfiniteCohomology.GaloisModules.Discrete

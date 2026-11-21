@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTiedDataReciprocityStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsKerTie
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostPlacesRayField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.CplUniq
 import Mathlib.RingTheory.AdicCompletion.AsTensorProduct
 import Mathlib.RingTheory.Ideal.KrullsHeightTheorem

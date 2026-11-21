@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviBlockHomeomorph
 set_option maxSynthPendingDepth 1
 open GlobalTheory.SmGL

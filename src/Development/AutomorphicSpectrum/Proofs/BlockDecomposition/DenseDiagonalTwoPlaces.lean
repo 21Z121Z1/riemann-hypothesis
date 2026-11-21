@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Adele.WeakApprox
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousSingleV
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalWeilActionCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalWeilTranslationActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLeviTorusEvaluationStatement

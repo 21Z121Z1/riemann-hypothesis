@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

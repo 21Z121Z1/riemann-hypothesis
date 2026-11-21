@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PotentialBoundedPshBoth
 open GlobalTheory.CompanionTheory.Ar
 set_option maxHeartbeats 1000000 in

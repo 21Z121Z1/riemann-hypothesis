@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCyclicVectorOfSeparableCharpoly
 open Polynomial Matrix GlobalTheory.LatOrb
 set_option maxHeartbeats 1000000 in

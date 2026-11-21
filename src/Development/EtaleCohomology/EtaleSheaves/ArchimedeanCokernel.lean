@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.KernelLocalization.RangeOfBd
 import Development.EtaleCohomology.EtaleSheaves.FiltrationLevelInjectivity
 import Development.EtaleCohomology.EtaleSheaves.CechLevelIsomorphism

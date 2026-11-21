@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalTorusAlgebraic
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AppellHumbertUniformisationRiemannFormStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSiegPreOfPolAVStatement

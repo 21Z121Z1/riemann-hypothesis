@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.TruncatedSeriesCounting.LengthQuotientLeOfPowSMul
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ReduceModChar

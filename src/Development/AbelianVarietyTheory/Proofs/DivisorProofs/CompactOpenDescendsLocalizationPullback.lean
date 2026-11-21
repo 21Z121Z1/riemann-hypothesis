@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Tactic.Monotonicity.Lemmas
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
 open CategoryTheory Limits AlgebraicGeometry

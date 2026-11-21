@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FromNAdd
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FinitePartExtensionCore
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderBaseChangeGenericStatement

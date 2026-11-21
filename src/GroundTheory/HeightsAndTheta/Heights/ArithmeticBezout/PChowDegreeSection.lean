@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChowDegreeSection
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PIntChowFormExists
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChowFormHomog

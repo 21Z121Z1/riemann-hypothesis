@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GJGlobalSingular
 import GroundTheory.AutomorphicForms.GL2.GJGlobalPoisson
 import GroundTheory.AutomorphicForms.GL2.GJGlobalLatticeSummable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasRationalResidueFieldPointLocalRingClosedPoint
 open CategoryTheory AlgebraicGeometry
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.FieldPair

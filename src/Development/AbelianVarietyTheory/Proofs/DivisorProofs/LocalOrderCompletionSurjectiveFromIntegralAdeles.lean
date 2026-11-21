@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIdemOfAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIntegralSplitIdempotentOverTwo
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MulMemIntA

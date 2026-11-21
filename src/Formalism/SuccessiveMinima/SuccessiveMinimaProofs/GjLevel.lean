@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SuccessiveMinima.DefsMink
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.WittVector.IsPoly

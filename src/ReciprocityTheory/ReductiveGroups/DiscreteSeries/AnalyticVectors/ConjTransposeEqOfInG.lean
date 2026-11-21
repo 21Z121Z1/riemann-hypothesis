@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InPApplyEqZero
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential

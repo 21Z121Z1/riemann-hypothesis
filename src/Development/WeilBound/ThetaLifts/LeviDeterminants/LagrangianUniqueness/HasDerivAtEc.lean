@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.RealTest
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DenseHasCompactSupport
 

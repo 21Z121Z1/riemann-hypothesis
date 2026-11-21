@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LowerLeftBlock
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 import Mathlib.RingTheory.Etale.Weakly

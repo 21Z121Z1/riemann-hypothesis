@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.StrictNormalCrossings
 import Development.ResolutionOfSingularities.Foundations.Schemes.IdealSheafData
 universe u

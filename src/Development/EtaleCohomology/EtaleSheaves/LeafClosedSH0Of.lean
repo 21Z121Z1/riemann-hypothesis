@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.EmptySec
 import Development.EtaleCohomology.EtaleSheaves.DerivUnit
 import Development.EtaleCohomology.EtaleSheaves.HensQuot

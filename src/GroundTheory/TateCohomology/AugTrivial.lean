@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.AugmentationSES
 import GroundTheory.TateCohomology.CohTrivialBasic
 set_option maxSynthPendingDepth 1

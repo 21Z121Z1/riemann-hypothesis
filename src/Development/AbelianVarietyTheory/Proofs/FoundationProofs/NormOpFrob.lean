@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBasisOneAddXPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsOfRedEqZero
 open GlobalTheory.Col PowerSeries

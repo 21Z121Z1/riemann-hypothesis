@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveAtlasPositivePotential
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactProjectiveAnalyticStatement
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ToroidalCompactificationData

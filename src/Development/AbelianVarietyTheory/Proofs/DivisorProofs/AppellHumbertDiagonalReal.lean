@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppellHumbertRealMultiplication
 
 set_option autoImplicit false

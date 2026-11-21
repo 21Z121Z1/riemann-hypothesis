@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.KaehlerOneFormsToExtensionDeRhamMulSelf
 import Mathlib.LinearAlgebra.ExteriorAlgebra.Basis
 import Mathlib.RingTheory.Etale.Field

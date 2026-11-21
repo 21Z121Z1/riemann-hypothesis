@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicComplementDetNonzero
 open scoped Matrix
 open GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels

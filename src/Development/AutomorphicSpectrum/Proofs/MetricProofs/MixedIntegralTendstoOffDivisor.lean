@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalDensityInclusionExclusionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedEnergyUniformBoundStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedIntegralRegularizedConvergenceStatement

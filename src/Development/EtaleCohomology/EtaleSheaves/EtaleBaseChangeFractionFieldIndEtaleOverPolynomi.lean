@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.EtaleChapterEThree
 import Mathlib.CategoryTheory.MorphismProperty.Ind
 

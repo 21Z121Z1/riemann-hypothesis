@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TeichmullerRoots
 import Development.AbelianVarietyTheory.Counterexamples.DegenerateExamples.NotAdmissibleWithAmbientTop

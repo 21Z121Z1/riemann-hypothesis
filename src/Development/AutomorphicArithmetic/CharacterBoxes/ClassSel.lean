@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsClassSelOfRowL
 import Development.AutomorphicArithmetic.CharacterBoxes.ObjCTrue
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AddLargeBaseCoreSlotStatement

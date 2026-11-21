@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NormDetAtConstOfPlacewise
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame

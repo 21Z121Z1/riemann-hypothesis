@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.StatementNG
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalConcreteOf
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthQuotSmulRangeFree

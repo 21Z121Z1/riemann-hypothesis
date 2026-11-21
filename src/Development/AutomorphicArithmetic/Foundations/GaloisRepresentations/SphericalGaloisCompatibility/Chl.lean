@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineInputs.OfInputs
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlueIsLatticeUnimodular
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemGenusOfIsUnimodular
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PartsOfLat

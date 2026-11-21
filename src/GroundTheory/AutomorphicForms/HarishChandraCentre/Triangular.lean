@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraCentre.MemOfMemSupportToFinsupp
 
 namespace GroundTheory.Automorphic.HarishChandra

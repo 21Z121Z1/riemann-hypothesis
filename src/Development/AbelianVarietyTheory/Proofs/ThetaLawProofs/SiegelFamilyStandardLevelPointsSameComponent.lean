@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsPeriodLevelOfSiegelPointStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsPointOfPerLev
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SiegelFamilyNearbyPeriodsSameComponentStatement

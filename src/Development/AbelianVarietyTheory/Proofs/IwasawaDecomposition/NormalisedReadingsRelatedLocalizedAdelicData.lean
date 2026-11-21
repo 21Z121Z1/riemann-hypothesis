@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistDataAgreeAcrossCoefficientsLocalized
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RepOfHeq
 

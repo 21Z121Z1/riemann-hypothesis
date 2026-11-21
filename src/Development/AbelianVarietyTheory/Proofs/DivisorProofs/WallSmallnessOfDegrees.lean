@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SlopeTestRemainingChoices
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeEqDiscriminantMultipleStatement
 

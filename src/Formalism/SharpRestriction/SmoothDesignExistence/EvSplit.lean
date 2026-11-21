@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
 
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsShear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviTorusElementCm
 open scoped TensorProduct NNReal Matrix

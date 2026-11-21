@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaIntegralsOfMinguezStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularisedComparison
 

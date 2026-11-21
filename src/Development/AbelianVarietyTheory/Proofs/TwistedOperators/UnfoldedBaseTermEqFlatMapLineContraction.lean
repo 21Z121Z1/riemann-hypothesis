@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldedTermBasePointEqFlatMapPairing
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MixedModelBasePointMulMemRationalMatrices
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiActionUnipotentLaws

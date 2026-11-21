@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups
 import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CommRingSections.IsCovPr
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechLeray
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth

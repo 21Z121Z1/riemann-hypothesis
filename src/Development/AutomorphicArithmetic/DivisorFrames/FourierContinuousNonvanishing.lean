@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBDefs
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 import Mathlib.Topology.UniformSpace.Uniformizable

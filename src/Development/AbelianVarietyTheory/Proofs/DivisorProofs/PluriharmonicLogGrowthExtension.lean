@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarmonicPoissonPuncturedDiscStatement
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Topology.Sheaves.Presheaf

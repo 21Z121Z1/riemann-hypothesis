@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.ClassSel
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WorkingFamClassCopiesEqFrozenStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.GenusMassEntryStatement

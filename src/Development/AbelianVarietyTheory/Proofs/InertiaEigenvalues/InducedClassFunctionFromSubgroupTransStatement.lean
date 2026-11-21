@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InducedClassFunctionFromSubgroupTrans
 open GlobalTheory.BI GlobalTheory.BrauerZero
 set_option maxHeartbeats 1000000 in

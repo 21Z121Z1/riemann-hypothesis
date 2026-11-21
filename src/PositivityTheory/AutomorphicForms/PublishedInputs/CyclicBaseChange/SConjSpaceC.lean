@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.IsGalAd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.GelfandKazhdanReal
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeOfHeightPrintsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Ch2ConstantExistsStatement
 open GlobalTheory.CovTop GlobalTheory.BigTop

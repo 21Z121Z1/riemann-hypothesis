@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheafIffAlt
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftLeftFst

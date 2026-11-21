@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FrobFree
 import Mathlib.Topology.MetricSpace.Ultra.Pi
 

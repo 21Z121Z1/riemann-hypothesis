@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TateIsoBaseChangeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TateIsoPullbackEquivStatement
 

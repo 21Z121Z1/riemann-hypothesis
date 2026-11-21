@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGalConjEta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaAtOfIsEtaConj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPsiOfOverK

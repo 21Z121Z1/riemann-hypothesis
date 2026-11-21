@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFormIntegralFourierFactorizationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFormBallIntegralStabilizesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormFormBallIntegralScalingStatement

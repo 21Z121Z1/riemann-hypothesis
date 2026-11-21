@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.SymbolExtensionProperty
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Objects
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.UnitPreserving
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

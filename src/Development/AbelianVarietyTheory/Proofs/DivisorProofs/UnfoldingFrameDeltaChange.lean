@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CXiValIff
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.IoOverLeftUnique
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SecBCAndCuspBC

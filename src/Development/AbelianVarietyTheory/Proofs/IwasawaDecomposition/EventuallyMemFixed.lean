@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFixedOfMemISup
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU
 open NumberField IsDedekindDomain

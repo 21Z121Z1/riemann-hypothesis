@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneLeSizeZ
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EquivIntegral
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CntClLeEncardMul

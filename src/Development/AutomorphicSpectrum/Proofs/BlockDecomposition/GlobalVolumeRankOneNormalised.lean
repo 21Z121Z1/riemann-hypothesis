@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalVolumeRankOneIsotropicStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanVolumeRankOneIsotropicStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianFourierSelfDualAdelicStatement

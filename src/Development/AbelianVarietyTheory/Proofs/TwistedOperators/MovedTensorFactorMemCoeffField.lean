@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormSatakeLeOfUnitarySphericalGL

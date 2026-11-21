@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.SchurTraceOfHomInv
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.InvInv
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.InvInt

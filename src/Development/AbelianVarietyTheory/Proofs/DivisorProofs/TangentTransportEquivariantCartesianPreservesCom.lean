@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrvEqSelf
 import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

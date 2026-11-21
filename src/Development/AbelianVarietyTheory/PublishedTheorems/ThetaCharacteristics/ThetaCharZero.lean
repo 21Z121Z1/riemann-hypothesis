@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.KeyRuleOneOfKeyFormula
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.SimpleRing.Principal

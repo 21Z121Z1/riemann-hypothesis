@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.SegreChartObjects
 set_option maxSynthPendingDepth 1

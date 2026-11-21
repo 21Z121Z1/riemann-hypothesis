@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsIsUnitField
 import Mathlib.Tactic.ENatToNat
 open GlobalTheory.KeyKa

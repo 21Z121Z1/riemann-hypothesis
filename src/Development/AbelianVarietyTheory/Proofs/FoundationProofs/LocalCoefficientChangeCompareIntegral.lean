@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CrystallineCocycleTransportConjugation
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompatibleCoboundaries
 

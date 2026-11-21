@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ReProd
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CntCoord
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HasLenOfEquiv

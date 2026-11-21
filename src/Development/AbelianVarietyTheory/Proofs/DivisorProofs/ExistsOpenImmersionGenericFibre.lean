@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalisedBlowupCyclotomicAwayProjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyQuasiFiniteOfFiniteGeometricFibres
 

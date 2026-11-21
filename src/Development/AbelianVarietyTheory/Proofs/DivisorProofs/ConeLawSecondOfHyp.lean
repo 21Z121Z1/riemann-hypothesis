@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalPartIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalPartIdentityStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsWignerContractionChainLoweringStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsWignerContractionChainRaisingStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIntCoordsOfRegularParam

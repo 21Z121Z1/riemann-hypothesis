@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionLatticeFinite
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Finsupp.Interval

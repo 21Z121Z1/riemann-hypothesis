@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDivSec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRatioTwoMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedFibreRemIndep

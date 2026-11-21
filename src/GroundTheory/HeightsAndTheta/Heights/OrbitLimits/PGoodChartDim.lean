@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StGoodChartDim
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StConeVanishingHomog
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StConeSliceIdeal

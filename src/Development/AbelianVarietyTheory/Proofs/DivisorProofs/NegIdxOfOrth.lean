@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
 import Development.AbelianVarietyTheory.Definitions.Divisors.BplusOfEquivariant
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridHeckeCharactersExist

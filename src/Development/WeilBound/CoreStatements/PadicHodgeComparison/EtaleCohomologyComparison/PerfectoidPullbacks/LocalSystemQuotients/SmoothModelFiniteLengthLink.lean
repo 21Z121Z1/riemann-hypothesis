@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.IsProperOfProj
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteLengthWittCohomologyStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedWittIsNoetherianStatement

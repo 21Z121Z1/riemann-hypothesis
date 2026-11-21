@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProdAbsNormDivsDvd
 
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem

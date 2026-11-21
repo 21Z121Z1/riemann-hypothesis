@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DomBy
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper

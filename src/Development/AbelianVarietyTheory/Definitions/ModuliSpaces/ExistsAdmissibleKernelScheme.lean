@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.KerScheme
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.HeckeKerZero
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsHeckeIsog

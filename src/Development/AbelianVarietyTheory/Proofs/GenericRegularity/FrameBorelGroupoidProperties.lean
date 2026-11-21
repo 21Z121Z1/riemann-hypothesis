@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.IntAllProofFree
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.FrameRingGlRing
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsCombAtGMulVec

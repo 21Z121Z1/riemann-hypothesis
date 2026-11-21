@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteFieldEmbeddingStalkOfFiniteStalkMap
 open AlgebraicGeometry CategoryTheory
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.LStructC
 import Formalism.PeriodIntegrals.ZerosWindowIn
 import Mathlib.Tactic.Monotonicity.Lemmas

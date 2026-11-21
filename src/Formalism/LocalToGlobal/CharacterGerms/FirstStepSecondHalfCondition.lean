@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RankMaximalOfNondegenerate
 
 set_option autoImplicit false

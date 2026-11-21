@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InnerRightRegularRepSubEqIntervalIntegralDerivat
 open MeasureTheory GlobalTheory.AutomorphicL2Unitary
 set_option maxHeartbeats 1000000 in

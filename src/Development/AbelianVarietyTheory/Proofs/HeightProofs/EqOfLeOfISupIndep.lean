@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieAlgebraEigenDecompositionCMSignature
 import Development.AbelianVarietyTheory.Definitions.CMLattices.CmHostBarHalfIntegerGenerator
 import Mathlib.LinearAlgebra.DirectSum.Finite

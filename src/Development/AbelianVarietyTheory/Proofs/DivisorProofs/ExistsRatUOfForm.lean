@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryScalingVector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalUnitaryLeviLift
 open scoped TensorProduct NNReal Matrix

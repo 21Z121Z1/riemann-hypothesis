@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.UnitaryNorms.CharShare
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ConcreteTwistFrameExtraExcludedOverSmallPrimes
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseRangeUnits

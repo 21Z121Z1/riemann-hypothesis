@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HarishChandraCentralActionStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExtendSpecialUnitaryRepStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InfinitesimalCharacterExtensionStatement

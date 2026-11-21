@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnipVal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulMemRangeNormStatement
 open MeasureTheory Matrix GlobalTheory.KSp GlobalTheory.SplitUnitary

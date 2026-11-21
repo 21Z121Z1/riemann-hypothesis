@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.CycInertia
 
 open NumberField IsDedekindDomain IntermediateField UpperTheory.V.Kum UpperTheory.V.CF

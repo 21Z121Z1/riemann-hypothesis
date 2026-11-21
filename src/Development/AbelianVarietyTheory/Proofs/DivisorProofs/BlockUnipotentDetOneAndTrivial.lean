@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PutLinPack
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PutMulPut
 open ValuativeRel Matrix MeasureTheory

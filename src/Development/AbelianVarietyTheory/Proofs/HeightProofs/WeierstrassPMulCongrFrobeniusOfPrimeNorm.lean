@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeierstrassPComplexMultiplicationCongruenceModPr
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TorsionIntegralDistinctOfPosStatement
 open NumberField IsDedekindDomain Polynomial GlobalTheory.FieldSize

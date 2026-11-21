@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.OuterTensor
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

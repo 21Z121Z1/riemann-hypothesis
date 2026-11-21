@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSubgroupEqRangeOfLists
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEtaleLinearisation
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasQuotOfIsIsogT

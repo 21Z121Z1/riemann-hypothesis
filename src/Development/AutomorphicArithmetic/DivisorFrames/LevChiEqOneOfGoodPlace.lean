@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LiftFrameEmbeddingBase
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 open NumberField IsDedekindDomain TensorProduct

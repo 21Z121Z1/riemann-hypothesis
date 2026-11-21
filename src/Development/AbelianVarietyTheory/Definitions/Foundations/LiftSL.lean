@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
 import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn

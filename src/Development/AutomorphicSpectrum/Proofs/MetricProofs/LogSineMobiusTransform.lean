@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XGramGrad
 open Matrix GlobalTheory.CompanionTheory.Ar.PB
 open scoped ComplexOrder

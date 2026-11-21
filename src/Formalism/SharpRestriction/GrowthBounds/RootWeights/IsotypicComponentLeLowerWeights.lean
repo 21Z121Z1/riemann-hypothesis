@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.CrRootMem
 import Mathlib.Algebra.Lie.Sl2
 import Mathlib.RingTheory.RegularLocalRing.Defs

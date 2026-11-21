@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPosOfCoprime
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeomPointsFactorHenselianOfSpecializes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsLift

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.QuotEqZeroOfNotPrimeDivisor
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveDivisors
 import GroundTheory.FunctionField.Repartition

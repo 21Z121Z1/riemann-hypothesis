@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBCorr
 import Development.AbelianVarietyTheory.Definitions.Degenerations.CompanionTheory

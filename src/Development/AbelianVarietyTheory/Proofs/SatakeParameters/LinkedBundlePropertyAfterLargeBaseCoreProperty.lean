@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PositionMv
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AllRows

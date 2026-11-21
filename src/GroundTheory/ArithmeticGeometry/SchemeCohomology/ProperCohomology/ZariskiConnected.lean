@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheaf
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 set_option maxSynthPendingDepth 1

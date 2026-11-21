@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HermitianLocalisationAdelicPointLatticeEq
 open NumberField IsDedekindDomain Formalism.UG Formalism.L2.PairingIndexBounds.F
 open scoped TensorProduct

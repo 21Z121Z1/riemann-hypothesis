@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPDivOfUnit
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSmulOfDecoEq
 

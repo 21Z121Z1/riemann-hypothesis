@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsInjectiveSemilinearNablaTWtOpEquivariant
 import Development.AutomorphicArithmetic.DivisorFrames.EvalLocalElementMatrixEqOneOfPrimeNotDvd
 open NumberField IsDedekindDomain TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootOfUnityExpZModAdditiveCharacterProperties
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.QExpansion
 import Mathlib.Tactic.ENatToNat

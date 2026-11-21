@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoefficientDutyInPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateVectorInSubspaceStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRepresentationComponentStatement

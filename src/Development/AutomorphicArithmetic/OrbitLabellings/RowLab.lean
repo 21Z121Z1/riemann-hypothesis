@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.SelfConjugateRowData
 import Formalism.LocalToGlobal.CharacterGerms.RowTieLab
 import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves

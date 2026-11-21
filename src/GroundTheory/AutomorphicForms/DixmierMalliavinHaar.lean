@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.DixmierMalliavinHaarCoord
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension

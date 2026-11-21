@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.IsIsoStackProductPairOfBijective
 import Development.AutomorphicArithmetic.CommutativeAlgebra.LerayHirschOneIffTwistEquiv
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ProjBundleFormulaIffPglForm

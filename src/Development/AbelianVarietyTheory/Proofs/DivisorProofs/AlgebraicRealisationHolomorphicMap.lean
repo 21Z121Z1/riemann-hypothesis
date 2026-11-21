@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.LinearAlgebra.Eigenspace.Charpoly
 import Mathlib.RingTheory.Etale.Weakly

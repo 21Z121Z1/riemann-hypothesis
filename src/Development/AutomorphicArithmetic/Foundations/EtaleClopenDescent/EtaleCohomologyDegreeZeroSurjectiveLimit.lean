@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.CovOfPoints
 import Development.EtaleCohomology.EtaleSheaves.RelativeCohomologyForgetInjectiveDegreeZeroOfSub
 import Development.EtaleCohomology.EtaleSheaves.SecondDegreeKilling.LeafKill2Of

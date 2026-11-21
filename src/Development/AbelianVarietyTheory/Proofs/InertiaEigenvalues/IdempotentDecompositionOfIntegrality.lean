@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSubringEqOK
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIntegralPi
 import Mathlib.RingTheory.PicardGroup

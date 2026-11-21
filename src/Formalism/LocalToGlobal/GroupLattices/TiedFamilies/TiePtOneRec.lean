@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtRec
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePtOne
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.IntSplitOf

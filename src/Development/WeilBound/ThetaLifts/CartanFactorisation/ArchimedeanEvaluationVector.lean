@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.WeilBound.ThetaLifts.CartanFactorisation.CartanConj
 import Development.WeilBound.ThetaLifts.CartanFactorisation.NonemptyCoord

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.IntSProd
 import Formalism.LocalToGlobal.CharacterGerms.RowTieCartAdd
 import Formalism.LocalToGlobal.CharacterGerms.SubstSubst

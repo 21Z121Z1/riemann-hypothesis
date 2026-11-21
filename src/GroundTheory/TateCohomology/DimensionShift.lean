@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.Induced
 import Mathlib.CategoryTheory.Monoidal.Mon
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

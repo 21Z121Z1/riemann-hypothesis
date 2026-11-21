@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.inertQ
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.InertD
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.CycBasic

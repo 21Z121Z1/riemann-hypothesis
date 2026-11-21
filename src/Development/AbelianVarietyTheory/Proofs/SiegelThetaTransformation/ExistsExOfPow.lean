@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInnerProductSelfNonnegBoundsStatement
 import Mathlib.Algebra.Module.LinearMap.Rat
 import Mathlib.Algebra.Module.StablyFree.Basic

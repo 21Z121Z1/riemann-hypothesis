@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFibreNormRoots
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFibreNormIntegral

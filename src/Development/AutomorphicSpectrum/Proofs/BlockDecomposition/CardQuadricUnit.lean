@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteFieldQuadraticFormPointCount
 import Mathlib.LinearAlgebra.QuadraticForm.IsometryEquiv
 import Mathlib.RingTheory.PiTensorProduct

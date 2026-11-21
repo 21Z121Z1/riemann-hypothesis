@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemNonzeroLocusOfIsTwistPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationSectionFirstPower
 import Development.AbelianVarietyTheory.Definitions.Uniformization.SmulOneSecEqZeroIff

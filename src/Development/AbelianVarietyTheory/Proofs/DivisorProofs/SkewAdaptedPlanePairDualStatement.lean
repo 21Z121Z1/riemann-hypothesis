@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPlanePairDual
 
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerThetaGlobal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPartNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalPartProduct

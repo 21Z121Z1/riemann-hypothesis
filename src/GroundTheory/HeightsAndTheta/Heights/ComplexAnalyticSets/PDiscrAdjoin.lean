@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDiscrAdjoin
 import Mathlib.RingTheory.DedekindDomain.Different
 import Mathlib.RingTheory.Henselian

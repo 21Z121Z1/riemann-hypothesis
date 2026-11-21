@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StageY
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExtraColumnRangeMembershipStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TopStepVectorPropertyStatement

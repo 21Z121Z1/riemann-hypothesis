@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilPairingCubical
 import Development.WeilBound.CoreStatements.HodgeTatePoints.Weilreg
 

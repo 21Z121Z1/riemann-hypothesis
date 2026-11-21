@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.AffineFibreCountComparison
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlagUnipotentBesselCharacterLaws
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsInvInvariantOfRight
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsClosedNFlag

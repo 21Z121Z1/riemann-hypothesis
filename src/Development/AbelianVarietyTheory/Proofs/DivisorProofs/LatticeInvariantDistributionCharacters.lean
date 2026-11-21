@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SummableSchwartzSeriesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchwartzPartitionOfUnityLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeTranslatesCutoffSummableStatement

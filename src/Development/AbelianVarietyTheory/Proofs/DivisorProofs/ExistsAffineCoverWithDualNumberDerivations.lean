@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SndEqSum
 import Development.AbelianVarietyTheory.Definitions.Divisors.BarCompSubsetClosure
 import Mathlib.Algebra.TrivSqZeroExt.Ideal

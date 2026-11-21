@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitA
 
 open NumberField Complex ReciprocityTheory.ChartRestriction.G.I2

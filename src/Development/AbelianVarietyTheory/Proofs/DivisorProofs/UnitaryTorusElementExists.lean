@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreRest
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagKey
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorusUOne

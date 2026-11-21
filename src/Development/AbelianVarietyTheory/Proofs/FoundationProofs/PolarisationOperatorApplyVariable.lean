@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.BottomMinor
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.RingTheory.PiTensorProduct

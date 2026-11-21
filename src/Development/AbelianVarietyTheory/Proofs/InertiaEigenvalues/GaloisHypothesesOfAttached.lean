@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FirstAdmissibilityAtOfPartsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Adm8AtOfUnramifiedHeckeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobDualOfAttachedStatement

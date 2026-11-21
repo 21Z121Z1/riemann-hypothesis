@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PhiFree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingsCyclotomic
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BaseFont
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PeriodDataDeRhamAdmissible
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PeriodDataProperties

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeepLevelCoverPrincipalLevelLawsGalois
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormIffLevelCoverPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuliLawsCoefficientFieldChangeStatement

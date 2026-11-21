@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TraceCompLeftFunLeft
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IrreducibleCharacterSeries.FrobeniusSumFormula

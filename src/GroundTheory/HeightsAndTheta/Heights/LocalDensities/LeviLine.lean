@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.MaIntEmpty
 import Mathlib.Order.CompletePartialOrder
 set_option maxSynthPendingDepth 1

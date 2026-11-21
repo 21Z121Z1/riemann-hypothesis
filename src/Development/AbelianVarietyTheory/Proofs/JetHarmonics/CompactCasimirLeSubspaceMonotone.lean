@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CasKIsSymmetricAndFormStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ReInnerLeOnImageOfIntertwiningStatement

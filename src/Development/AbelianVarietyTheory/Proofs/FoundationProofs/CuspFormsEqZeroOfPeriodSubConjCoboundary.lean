@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DecayAtCusp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CuspFormEqZeroOfPeriodicOfBound
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerPeriodCocycleMemCocyclesAndEq

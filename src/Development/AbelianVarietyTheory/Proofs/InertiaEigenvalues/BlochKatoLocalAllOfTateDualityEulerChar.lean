@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlochKatoLocalAllPrimesOfBlochKato
 open Formalism Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N
 

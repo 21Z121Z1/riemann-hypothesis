@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableSetDetNormPos
 import Mathlib.Algebra.Module.StablyFree.Basic
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompletionPointClosedPointMemOfSmooth
 import Mathlib.AlgebraicGeometry.Morphisms.Etale
 import Mathlib.RingTheory.TotallySplit

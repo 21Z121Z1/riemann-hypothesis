@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.BorelHarmonicForms.OneParam
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MovedPointDeterminant
 import GroundTheory.AutomorphicForms.ReductionSplitting

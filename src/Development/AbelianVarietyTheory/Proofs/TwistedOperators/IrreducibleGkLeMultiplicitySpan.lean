@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocSubLocGen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicTypeFiniteDimStableStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValuesStatement

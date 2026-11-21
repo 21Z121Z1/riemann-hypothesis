@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameDescentConditionsEveryLocalisation
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseSizes
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameCombinationCoeffUnique
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GrNormPosOfBasis
 

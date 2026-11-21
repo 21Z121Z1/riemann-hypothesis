@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.FibreMultiHomog
 import GroundTheory.HeightsAndTheta.Heights.Intersections.LiftZComponent
 set_option maxSynthPendingDepth 1

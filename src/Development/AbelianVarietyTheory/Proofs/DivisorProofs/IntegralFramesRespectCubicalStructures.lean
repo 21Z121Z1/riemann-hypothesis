@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralGeneratorRigidificationAllLevels
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.CubBoxVal
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValEqOfLevels

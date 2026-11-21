@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.SecondCountableTopologyArchUnitary
 import Mathlib.Topology.Connected.Separation
 import Mathlib.Topology.Instances.ZMod

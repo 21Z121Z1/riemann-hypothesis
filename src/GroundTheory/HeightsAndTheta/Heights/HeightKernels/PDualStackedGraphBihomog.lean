@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcLead
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.RingTheory.Henselian

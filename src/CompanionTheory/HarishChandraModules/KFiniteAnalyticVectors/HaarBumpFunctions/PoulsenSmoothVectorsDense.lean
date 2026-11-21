@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.HaarBumpFunctions.ExistsIsBump
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.SmoothCyc
 import CompanionTheory.AutomorphicTheory.SchurLimitBounds.SchurOrthogonality.SchurH

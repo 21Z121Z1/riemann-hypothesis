@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.LocalLevelIsKOneAtT
 import Formalism.LocalToGlobal.Columns.TiedGlCore
 import Formalism.LocalToGlobal.Columns.TiedGlPl

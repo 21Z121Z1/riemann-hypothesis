@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.Density
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.ExistsIsOpenForallCuspRepTFinOneEq
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsArchConv

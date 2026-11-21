@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmValuesMinPadicValBoundStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmValuesExponentLogSumLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNarrowRayClassLFunctionMulPrimeWideIndicatorStatement

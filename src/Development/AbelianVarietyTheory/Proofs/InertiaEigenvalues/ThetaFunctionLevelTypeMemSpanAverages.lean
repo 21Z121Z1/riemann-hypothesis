@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeisOAdd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanKilledUnionAveragesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MirabolicDetCharacterFunctionConjStatement

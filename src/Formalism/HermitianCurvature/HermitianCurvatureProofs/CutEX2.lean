@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameTransport
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChartCoefficientHasCompactSupport
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IsOpenDomP

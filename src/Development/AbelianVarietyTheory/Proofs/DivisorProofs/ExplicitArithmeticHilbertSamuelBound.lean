@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormEqOfCsq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertSamuelFiltrationAtGoodSectionsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertSamuelLatticeSystemHypStatement

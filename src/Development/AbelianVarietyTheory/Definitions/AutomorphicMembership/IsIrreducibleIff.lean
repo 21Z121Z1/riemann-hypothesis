@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Development.AutomorphicArithmetic.IntegralCasts.IsOpenStabOfMemNhds
 import Mathlib.RepresentationTheory.Irreducible

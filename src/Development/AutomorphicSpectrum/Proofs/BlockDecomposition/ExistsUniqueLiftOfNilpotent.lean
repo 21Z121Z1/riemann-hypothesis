@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.ZariskiEtaleLifting.SubThickRees
 import Mathlib.RingTheory.AdicCompletion.RingHom
 set_option backward.isDefEq.respectTransparency false

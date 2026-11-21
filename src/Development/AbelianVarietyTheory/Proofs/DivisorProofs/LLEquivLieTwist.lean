@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveRangeOfCompEqSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaSubOneMemJacobson
 

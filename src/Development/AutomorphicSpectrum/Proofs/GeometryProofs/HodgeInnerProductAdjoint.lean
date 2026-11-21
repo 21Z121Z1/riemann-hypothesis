@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeHermitianFormExistsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.StalkUnitsSymmGm

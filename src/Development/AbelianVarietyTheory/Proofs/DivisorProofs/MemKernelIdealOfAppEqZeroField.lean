@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapMapEqSelfOfInjectiveFiniteHopf
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToSpanSingletonConstGenInjective
 

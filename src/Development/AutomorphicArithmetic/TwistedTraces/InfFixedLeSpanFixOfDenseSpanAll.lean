@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.TwistedTraces.FixedProjectionApplyEquivariantEq
 import Development.AutomorphicArithmetic.TwistedTraces.FixedProjectionInvariantAndCommutingReps
 

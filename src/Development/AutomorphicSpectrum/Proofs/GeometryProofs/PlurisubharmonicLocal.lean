@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PPshLocal
 
 namespace GlobalTheory.CompanionTheory.AnForm.PshLocal

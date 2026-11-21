@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsDegreeParametersBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegBoundOfClaimNumbers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertSamuelALogALe

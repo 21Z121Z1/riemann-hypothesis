@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CoeffEvPowOne
 
 namespace GlobalTheory.CompanionTheory.Ar.Conj

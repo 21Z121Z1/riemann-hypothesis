@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilActionMapsSchwartz
 open scoped TensorProduct NNReal Matrix

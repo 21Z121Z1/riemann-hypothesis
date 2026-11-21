@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapHBijOfRes
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedCohomologyOfFrame
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StdSomeZero

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.AdTransfer
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.NearSplit
 

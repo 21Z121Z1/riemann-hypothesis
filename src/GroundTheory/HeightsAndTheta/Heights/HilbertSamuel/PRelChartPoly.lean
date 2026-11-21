@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsRelChartPoly
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

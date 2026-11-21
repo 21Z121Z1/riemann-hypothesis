@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.Bridge
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.NqMovedExample
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.ProgYInjective

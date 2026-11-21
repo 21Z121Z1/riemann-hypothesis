@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormPosOfIsUnit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointRationalEquivariance

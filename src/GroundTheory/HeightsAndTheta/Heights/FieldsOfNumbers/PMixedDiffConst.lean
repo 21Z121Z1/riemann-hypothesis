@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Std.Tactic.BVDecide.Normalize.Prop

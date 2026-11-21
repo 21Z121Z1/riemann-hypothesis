@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalOfUnipotentSumsVanish
 open ReciprocityTheory.Ty.Fin
 open Formalism.IrreducibleCountingLemmas.TYPES hiding zIdem IsCuspidal

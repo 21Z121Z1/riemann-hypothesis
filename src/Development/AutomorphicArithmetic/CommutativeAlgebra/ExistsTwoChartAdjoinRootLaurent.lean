@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.GoodRoot
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

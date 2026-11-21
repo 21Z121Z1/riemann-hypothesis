@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HhPowerSumEqBoundaryFormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeEqFormDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryFormEqBlockMinusLowStatement

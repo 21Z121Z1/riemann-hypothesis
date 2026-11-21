@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.ContinuousPair
 import Mathlib.Analysis.Convex.Contractible
 import Mathlib.Topology.Homotopy.Lifting

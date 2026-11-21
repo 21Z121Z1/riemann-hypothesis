@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.GramPositiveVolumeContinuous
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.BlockEmbConjTranspose
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ExistsCompactHaarMeasure

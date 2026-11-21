@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSubmoduleChainBoundedStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyCompSideMulEq
 

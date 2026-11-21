@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.LogCharpoly
 import Mathlib.NumberTheory.NumberField.Ideal.Basic
 import Mathlib.RepresentationTheory.Character

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridRowLevelZeroInfUnitaryEqDatumLevelStatement
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAt
 

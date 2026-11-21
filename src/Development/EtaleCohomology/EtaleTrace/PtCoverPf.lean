@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleTrace.TorsionH0PointOfLocalTwist
 
 open CategoryTheory AlgebraicGeometry

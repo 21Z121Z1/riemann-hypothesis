@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions
 import Mathlib.Algebra.Polynomial.SpecificDegree
 

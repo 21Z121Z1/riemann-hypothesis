@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PHeightOneIntersection
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PHeightOneSectionsLocal
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PVectorBundleRestrict

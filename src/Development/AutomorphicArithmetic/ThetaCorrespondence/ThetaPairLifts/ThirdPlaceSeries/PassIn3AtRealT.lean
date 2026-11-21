@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.IndefRRealT
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PassIn3OfRows
 import Formalism.LocalToGlobal.Divisibility.NumericScaleExponentEqExtended

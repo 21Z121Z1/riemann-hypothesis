@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense
 

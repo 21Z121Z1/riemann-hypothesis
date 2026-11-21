@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace

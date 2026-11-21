@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideRationalEigenDataStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideRationalLevelDataStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocBrOfAutSpec

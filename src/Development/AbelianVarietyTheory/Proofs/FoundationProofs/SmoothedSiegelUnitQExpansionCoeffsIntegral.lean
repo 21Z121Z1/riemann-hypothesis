@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Definitions.Foundations.MultipliableAndSgNeZero
 import Mathlib.Analysis.Complex.TaylorSeries

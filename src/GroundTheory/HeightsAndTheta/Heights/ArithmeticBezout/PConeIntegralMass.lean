@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Characterised
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeMass
 import Mathlib.RingTheory.PiTensorProduct

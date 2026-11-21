@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.ReverseCauchySchwarzHolds
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 import Mathlib.LinearAlgebra.Matrix.Rank

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ToXQFst
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsClosureCoords
 import Mathlib.Analysis.Polynomial.CauchyBound

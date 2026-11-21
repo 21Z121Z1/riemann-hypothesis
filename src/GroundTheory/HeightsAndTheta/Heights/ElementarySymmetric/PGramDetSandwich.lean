@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.GramDetSandwich
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.DetIneq
 import Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Order

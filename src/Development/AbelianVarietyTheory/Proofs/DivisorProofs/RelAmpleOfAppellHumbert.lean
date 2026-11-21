@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalTorusAlgebraic
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAmpleFramesIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnimodularOverlatticeRiemannFormStatement

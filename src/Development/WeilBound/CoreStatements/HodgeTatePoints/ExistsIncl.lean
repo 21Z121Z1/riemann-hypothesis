@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GiResGeo
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GiResAlg
 import Development.WeilBound.CoreStatements.HodgeTatePoints.Twpdiv

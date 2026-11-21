@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnitaryAtAllRows
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TranslateUnitaryLifts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ReprMemOfBasisRational

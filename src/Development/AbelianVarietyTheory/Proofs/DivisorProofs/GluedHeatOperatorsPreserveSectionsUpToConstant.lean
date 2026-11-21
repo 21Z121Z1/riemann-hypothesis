@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResV
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeatOperatorGluedPullbackBundlePower
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGluedLineBundleSectionCoverStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Places
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Sequence
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.Colimit

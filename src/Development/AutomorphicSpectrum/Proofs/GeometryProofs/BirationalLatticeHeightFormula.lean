@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsGenOfIsVBOne
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IntegralClosurePlaceRingsDataStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormScaleConjugateInvariantStatement

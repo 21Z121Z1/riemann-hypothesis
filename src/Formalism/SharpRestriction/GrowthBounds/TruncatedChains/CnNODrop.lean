@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.IdxOfAppendSecond
 
 namespace Formalism.MainNotions.G.ExtremalProjector

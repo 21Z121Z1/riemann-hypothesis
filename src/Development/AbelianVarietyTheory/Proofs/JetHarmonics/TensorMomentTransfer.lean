@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsometricBesselCompareStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorBesselTransferStatement
 

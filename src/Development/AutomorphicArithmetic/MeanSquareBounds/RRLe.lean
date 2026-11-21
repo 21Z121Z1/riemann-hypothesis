@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.SumMinLeDiv
 import Std.Tactic.BVDecide.Normalize.Prop
 

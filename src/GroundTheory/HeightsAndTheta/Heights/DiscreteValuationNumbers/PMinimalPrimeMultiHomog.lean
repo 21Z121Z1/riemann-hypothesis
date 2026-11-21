@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.IsMultiHomogIdealSpanSingleton
 import Mathlib.RingTheory.GradedAlgebra.Radical
 set_option maxSynthPendingDepth 1

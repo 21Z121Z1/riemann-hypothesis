@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqConjugateOfIsConjMap
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemConjChartSource
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsExphOn

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPerfectPartAlgHomFiniteAlgebraStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PerfectProjectionNaturalIdempotentReducedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorSquarePerfectProjectionStatement

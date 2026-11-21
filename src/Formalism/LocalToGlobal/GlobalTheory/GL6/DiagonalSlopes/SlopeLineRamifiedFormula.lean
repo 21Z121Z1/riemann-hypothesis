@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.SlopeFormulaOfCharacterFinite
 import Formalism.SharpRestriction.GlobalSchurBounds.FiniteModelOfAdmissibleTransports
 import Formalism.LocalToGlobal.GlobalTheory.GL6.DiagonalSlopes.AdmissibleStabilisersOfCompatibleForms

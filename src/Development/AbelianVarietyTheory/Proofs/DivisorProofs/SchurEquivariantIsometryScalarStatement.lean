@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurEquivariantIsometryScalar
 open scoped Matrix
 open MeasureTheory GlobalTheory.RealWeil

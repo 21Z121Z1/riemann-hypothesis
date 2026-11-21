@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.PropASt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.PropAC
 

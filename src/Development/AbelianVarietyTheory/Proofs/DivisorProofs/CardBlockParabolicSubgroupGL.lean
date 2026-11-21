@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowBlockIndicatorFromLtIff
 import Mathlib.Tactic.ENatToNat
 open NumberField UniqueFactorizationMonoid GlobalTheory.StdLoc

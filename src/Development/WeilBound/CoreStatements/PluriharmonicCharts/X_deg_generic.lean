@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DegreeGenericOfDegree
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ExistsLinearIndependentOfGenerates
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ExistsUnique

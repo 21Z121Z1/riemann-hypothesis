@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.PeriodLowerBounds
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.ColumnAvoidanceConditions

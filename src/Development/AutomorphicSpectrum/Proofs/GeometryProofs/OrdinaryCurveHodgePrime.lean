@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyPrimeGlobalRelayStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyPrimeHodgeTotalStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartDThSqIdealMemAndSmulMemAndEigMemSqIdealStatement

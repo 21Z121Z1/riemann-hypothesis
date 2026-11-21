@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmHermitianTraceFormIntegral
 open NumberField GlobalTheory.CMVal GlobalTheory.RealMult
 set_option maxHeartbeats 1000000 in

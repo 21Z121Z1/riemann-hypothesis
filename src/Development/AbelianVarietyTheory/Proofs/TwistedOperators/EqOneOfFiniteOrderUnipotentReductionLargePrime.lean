@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GlEqOneOfPowPrimePow
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.SatakeDualWeyl.Statement

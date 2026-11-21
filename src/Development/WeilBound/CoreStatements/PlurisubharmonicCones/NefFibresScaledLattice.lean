@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitSectionDivisorEq

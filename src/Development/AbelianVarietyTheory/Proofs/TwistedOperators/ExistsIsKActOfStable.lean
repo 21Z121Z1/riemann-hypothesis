@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteSupport
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfInnerSmooth
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.BarMatrix

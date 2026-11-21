@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmAtSmulRight
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousBicharacterWeilSetup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlacesSelectingAdelicIdempotentStatement

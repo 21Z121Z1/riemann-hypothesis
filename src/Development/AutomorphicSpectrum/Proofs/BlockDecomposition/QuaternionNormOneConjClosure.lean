@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuaternionConjugateApproximationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuaternionClassNumberFiniteStatement
 open Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes IsDedekindDomain NumberField GlobalTheory.Published GlobalTheory.CompanionTheory.PlaneSA Topology

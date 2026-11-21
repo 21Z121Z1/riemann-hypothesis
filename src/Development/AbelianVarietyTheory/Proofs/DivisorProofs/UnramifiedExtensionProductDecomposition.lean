@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedExtensionBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormSumFrobeniusGcdStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientsBoundedRootsUnityStatement

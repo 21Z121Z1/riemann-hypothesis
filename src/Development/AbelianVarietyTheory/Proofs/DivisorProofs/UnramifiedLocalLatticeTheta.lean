@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleLocalGoodPlaceIntertwinerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentInvariantFunctionalInducedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentInvariantFunctionalTwoDimStatement

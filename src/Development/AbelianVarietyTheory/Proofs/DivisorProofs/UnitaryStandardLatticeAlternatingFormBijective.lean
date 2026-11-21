@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BasisApply
 import Mathlib.LinearAlgebra.SymplecticGroup
 import Mathlib.RingTheory.WittVector.IsPoly

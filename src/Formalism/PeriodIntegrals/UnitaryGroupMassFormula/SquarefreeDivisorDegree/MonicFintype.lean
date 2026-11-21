@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.SqfLab
 import Std.Tactic.BVDecide.Normalize.Prop
 

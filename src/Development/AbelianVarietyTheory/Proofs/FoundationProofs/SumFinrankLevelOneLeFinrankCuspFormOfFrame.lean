@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
 import Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula
 import Mathlib.RingTheory.PiTensorProduct

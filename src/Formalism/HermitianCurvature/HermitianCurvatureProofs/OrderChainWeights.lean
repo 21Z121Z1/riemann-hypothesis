@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.MemParahoricTimesPrincipalCongruenceIff
 import Std.Tactic.BVDecide.Normalize.Prop
 

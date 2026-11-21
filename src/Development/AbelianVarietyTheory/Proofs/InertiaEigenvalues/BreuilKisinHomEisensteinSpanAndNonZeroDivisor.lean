@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrismHomMapIdealEqStatement
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 

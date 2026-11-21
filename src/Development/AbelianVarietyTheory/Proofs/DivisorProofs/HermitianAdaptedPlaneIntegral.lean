@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneRestrictionPairRealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneRestrictionPairFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulusOfNormEqAbsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PlaceShiftSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsIsomComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrEmbeddingDeterminantValueStatement

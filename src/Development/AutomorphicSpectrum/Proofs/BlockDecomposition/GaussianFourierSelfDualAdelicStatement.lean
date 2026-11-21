@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianFourierSelfDualAdelic
 open NumberField IsDedekindDomain MeasureTheory Matrix
 open scoped ENNReal NNReal

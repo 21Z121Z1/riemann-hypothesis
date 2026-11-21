@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsSiegel
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspCompact
 

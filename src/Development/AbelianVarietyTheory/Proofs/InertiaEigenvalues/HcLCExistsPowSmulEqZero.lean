@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 open ReciprocityTheory.Gal
 open Formalism.NG

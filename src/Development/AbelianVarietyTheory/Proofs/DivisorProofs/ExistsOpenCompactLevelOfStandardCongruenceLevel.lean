@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NatCastSmulMemHatL
 import Formalism.LocalToGlobal.Columns.AdelicLemmas
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCongLevelIntG

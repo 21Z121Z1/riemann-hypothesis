@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsPowApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLatticeIsClosed
 open scoped TensorProduct NNReal Matrix

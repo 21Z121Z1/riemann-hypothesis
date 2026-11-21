@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRep
 import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
 

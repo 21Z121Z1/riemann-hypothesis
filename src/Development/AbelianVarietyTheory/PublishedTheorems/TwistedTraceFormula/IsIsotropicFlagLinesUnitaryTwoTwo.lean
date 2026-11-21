@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ComplexPrincipalSeriesIrreducible
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.NegNotMemSpecialLinearPartUnitaryOneOne
 

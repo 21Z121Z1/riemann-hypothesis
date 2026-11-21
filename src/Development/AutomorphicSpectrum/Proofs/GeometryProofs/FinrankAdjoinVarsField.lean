@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.BasisExtend
 
 namespace GlobalTheory.CompanionTheory.FieldDeg

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterComponentDegreeLowerBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestDegreeComponentNonzeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestDegreeComponentInvariantStatement

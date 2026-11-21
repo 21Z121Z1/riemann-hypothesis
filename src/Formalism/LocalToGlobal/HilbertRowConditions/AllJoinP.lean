@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HilbertRowConditions.AllJoin
 import Formalism.LocalToGlobal.GlobalTheory.ConcNWeight
 import Formalism.LocalToGlobal.ClassRec

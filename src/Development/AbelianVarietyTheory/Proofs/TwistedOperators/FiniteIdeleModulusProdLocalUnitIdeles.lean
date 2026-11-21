@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralHilbert90FiniteIdelesTrivialWhereTrivial
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationOfMemNotMemSq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNsmulActO

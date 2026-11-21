@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
 import Development.AbelianVarietyTheory.Definitions.Divisors.LiftFrameEmbeddingBase
 open NumberField IsDedekindDomain TensorProduct

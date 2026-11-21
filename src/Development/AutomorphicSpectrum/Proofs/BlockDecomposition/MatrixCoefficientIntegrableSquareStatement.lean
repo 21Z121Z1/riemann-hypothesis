@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixCoefficientIntegrableSquare
 open MeasureTheory GlobalTheory.CompanionTheory.UnitaryFramesMetricPeriods
 open scoped InnerProductSpace

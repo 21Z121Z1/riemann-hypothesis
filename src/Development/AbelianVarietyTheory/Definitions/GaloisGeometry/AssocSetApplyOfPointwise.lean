@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CohomZeroEquivSections
 import Mathlib.RingTheory.Henselian
 import Mathlib.Tactic.Polynomial.Basic

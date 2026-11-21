@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCompactAndIwasawaOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasIwasawaOfSmul
 open scoped TensorProduct NNReal Matrix

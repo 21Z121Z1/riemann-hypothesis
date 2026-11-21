@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsLowerMulUpperOfLeadingMinors
 import Std.Tactic.BVDecide.Normalize.Prop
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Matrix

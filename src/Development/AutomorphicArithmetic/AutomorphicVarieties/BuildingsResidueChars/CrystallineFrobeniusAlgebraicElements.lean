@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.TiltFrobeniusTeichmullerAction
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IqBasic
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormSubgroupOpen

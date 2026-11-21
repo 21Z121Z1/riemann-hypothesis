@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParabolicLeviUnipotentSplit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentNormalizerRational
 

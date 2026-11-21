@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HermitianLatticeFiniteness.HformTracePos
 import Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetAssembly
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound

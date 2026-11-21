@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.ExistsCoprimePowEqOne
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualOm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HasSubstCoordZA

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChristoffelTransferBiholomorphic
 open Filter Topology Matrix
 open scoped ContDiff

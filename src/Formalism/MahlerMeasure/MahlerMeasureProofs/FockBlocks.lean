@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.LevelLattice
 import Formalism.MahlerMeasure.MahlerMeasureProofs.RemoveS
 import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelDecomp

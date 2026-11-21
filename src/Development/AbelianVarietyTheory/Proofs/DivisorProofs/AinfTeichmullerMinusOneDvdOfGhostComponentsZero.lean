@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GhostFrobenius
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MuDvdOfDvdIterates
 

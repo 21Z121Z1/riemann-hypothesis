@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarProductClosedCompactHolds
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SmulNn
 import Mathlib.Tactic.ENatToNat

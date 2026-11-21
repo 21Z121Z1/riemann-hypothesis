@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.RankEqCardIffExistsFrameMatrixFirstColumnBlock
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantVanishingAtZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantFunctionalLargeRankVanishStatement

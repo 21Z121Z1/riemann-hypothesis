@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThFamMono
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormRawThetaSeriesIndexBoundLeSqrt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstMinAtHalfMax

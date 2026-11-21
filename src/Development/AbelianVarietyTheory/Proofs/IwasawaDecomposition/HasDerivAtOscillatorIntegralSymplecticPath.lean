@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOscillatorActionUnitaryGroupHermitian
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MovedVacuumDeriv
 

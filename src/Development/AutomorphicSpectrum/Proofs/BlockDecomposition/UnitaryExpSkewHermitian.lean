@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutingHermitianSimultaneousDiag
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MapMemKfin
 

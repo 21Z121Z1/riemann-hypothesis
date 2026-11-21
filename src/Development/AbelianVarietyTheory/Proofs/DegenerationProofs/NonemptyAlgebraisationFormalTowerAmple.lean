@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ClosedPointMemRange
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsAbelianSchemeOfAbelianThickeningsStatement
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ExistsGenPullTriv

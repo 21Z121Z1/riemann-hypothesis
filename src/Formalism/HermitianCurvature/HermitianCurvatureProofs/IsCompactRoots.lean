@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OmLongContinuousOn
 
 namespace Formalism.FourierDecayAlt.P.GermRateSplit

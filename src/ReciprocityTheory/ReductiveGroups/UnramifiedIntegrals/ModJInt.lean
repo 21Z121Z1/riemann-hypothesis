@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.Interface
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.IsIntegralOfRoot
 

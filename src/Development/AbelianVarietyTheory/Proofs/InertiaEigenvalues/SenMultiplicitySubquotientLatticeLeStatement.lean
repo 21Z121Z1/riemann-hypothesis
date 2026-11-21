@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SenMultiplicitySubquotientLatticeLe
 open GlobalTheory.PhiGam GlobalTheory.AdmLoc GlobalTheory.Models
 open scoped LaurentSeries PowerSeries

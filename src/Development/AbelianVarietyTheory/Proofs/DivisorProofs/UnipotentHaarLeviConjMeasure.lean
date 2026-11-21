@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicGroupTopology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergUnipotentCoordinatesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyCompactGroupFubiniSchwartzStatement

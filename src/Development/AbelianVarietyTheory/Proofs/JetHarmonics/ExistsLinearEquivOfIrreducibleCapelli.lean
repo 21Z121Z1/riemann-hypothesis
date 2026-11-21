@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CommonEigenvectors
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HighestWeightPolynomials
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsLinearEquivOfIrreducibleIsHW

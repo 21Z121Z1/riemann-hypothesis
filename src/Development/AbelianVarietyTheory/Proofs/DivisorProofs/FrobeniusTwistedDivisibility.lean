@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffAddPPowMulLt
 import Mathlib.RingTheory.LocalProperties.Reduced
 import Mathlib.RingTheory.PicardGroup

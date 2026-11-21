@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSubConjNotMem
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFieldAdicCompletionTensorOfInert

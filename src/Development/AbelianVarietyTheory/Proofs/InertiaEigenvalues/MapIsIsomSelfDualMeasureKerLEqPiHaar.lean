@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelfDualIffLatticeVolumeAndPlancherelStatement
 import Mathlib.Algebra.Module.StablyFree.Basic
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology

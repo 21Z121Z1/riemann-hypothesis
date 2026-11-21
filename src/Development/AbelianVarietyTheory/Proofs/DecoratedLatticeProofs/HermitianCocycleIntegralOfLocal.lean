@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.XiIndCClass
 open NumberField IsDedekindDomain Formalism.L2.Ker
 

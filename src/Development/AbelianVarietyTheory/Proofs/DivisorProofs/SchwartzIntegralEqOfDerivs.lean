@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousIteratedFDerivApply
 import Mathlib.Analysis.Normed.Module.HahnBanach
 import Mathlib.Tactic.Monotonicity.Lemmas

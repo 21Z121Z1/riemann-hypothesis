@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SurjectiveOfComplexPointsLiftOfUniversallyClosed
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.LevBasis
 import Mathlib.RingTheory.DualNumber

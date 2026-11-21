@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ImportsFurther
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PowLeSqrtDetGram
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.LinearIndependentReal

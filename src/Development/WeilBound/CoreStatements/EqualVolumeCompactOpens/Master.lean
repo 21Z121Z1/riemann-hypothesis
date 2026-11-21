@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.RelIndexInfEqOfMemMul
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.RelIndexRatioCocycle
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.EqOneOfPowEqLeExponent

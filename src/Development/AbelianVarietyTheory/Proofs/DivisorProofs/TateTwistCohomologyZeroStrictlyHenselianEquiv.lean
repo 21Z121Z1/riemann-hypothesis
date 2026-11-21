@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HZeroPullbackTwistBijective
 import Mathlib.RingTheory.RegularLocalRing.Defs
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralExtensionFiniteAdelesBasicProperties
 import Formalism.LocalToGlobal.Columns.RecLevel
 open NumberField IsDedekindDomain Formalism.UG Formalism.L2.Col

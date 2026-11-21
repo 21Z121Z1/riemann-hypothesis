@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Morphisms.FormallyUnramified
 import Mathlib.AlgebraicGeometry.Morphisms.QuasiFinite
 import Mathlib.RingTheory.Henselian

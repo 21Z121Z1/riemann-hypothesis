@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsChartPtChartPt
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

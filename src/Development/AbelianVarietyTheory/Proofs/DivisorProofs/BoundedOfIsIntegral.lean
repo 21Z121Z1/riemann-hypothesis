@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.RootsCharpolyPowEqMapPow
 import Mathlib.FieldTheory.IsAlgClosed.Spectrum
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs

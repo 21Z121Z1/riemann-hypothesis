@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.CxPairing
 import Mathlib.Algebra.Ring.IsFormallyReal
 set_option backward.isDefEq.respectTransparency false

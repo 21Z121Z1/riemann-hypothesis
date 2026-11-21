@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DetCharacterLabelRootOfHarishChandraConstituent
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 

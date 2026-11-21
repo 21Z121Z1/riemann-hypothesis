@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairSlicesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairRestrictionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairFiniteDimensionalStatement

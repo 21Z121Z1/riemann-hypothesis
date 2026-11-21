@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.UnitaryConstant
 import Mathlib.NumberTheory.SumFourSquares
 import Mathlib.RingTheory.SimpleRing.Principal

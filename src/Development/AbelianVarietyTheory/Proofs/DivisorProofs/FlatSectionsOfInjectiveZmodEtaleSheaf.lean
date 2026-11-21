@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulEqZeroOfSmulEqZero
 import Mathlib.CategoryTheory.Adjunction.Evaluation

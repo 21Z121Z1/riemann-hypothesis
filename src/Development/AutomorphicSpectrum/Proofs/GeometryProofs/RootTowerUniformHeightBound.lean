@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagCompareStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCompareFirstStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCompareSecondStatement

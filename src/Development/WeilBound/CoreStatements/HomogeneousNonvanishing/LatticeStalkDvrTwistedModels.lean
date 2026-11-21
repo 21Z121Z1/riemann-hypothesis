@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SemiabelianLieModelsAgreeStatement
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.LatticeIntegrallyClosedTorsion
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.Imports

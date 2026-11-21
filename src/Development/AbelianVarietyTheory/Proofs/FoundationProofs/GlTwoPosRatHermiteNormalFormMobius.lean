@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExpUpper
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Complex.UpperHalfPlane.MoebiusAction

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.AdmissibleTemperedUnramified
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.Transported
 

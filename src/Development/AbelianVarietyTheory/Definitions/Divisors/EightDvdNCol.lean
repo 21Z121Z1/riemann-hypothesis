@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyValExtOfOverLa
 import Development.AbelianVarietyTheory.Definitions.Foundations.NonnegOfMemCStarSet

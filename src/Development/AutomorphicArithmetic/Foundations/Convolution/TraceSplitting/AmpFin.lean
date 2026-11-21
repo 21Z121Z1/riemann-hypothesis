@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.NormCharSplit
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.OpBasics
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.EigSummands

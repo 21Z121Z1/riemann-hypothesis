@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceAtIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExOneEqSelf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowTestDoubleCosetPointsChainPlaceByPlaceStatement

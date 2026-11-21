@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnisotropicThetaLiftNonvanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleWittTowerDescentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftMatchedPlaneTowerIntegralStatement

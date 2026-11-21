@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.IsFlagIntegralOne
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PHomogeneousComponentMul
 import Mathlib.Data.Int.Star

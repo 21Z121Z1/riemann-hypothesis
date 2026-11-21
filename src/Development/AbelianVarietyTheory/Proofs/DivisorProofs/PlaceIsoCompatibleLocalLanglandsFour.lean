@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsTheRecOfIsRecLit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnits

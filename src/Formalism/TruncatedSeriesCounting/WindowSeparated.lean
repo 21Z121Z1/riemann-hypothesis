@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusContraction.HighestWeightResidueAvoids
 import Formalism.FrobeniusContraction.StatementTop
 import Mathlib.LinearAlgebra.Charpoly.Basic

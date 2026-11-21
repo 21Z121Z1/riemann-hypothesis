@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.SpecMapFactorisation
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CptFlatInputsOfPropZ
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFlatHermHodgeCptConst

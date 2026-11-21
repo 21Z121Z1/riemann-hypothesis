@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HomogeneousLocalization
 import GroundTheory.HeightsAndTheta.Heights.ArithDegreeExact
 set_option maxSynthPendingDepth 1

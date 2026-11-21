@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightConjugacy.DensStepOf
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnitaryDense
 

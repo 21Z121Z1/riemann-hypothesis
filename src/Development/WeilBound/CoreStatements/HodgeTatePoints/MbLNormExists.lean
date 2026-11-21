@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GenfibMap
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralClosureChartSpanStatement
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLMorph

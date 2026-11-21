@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EvenDefect
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MumfordBundleIsoNormalisedRespectsLaws
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsPullDegId

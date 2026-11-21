@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelAfterExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinExtIntegralClosure
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsThetaSystemGenusOne

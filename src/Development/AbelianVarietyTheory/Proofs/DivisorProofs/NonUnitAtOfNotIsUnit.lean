@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonUnitAt
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
 

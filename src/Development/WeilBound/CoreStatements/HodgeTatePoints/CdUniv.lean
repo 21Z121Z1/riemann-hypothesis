@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DifBijectiveOfParam
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdJet

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoDualGen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoAdicCont

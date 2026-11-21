@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.KerLe
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.ExpLoss
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.LogSum

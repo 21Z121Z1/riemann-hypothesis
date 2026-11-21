@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BranchDefs
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryStabiliserEmbeddingNormLawsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProjectionSmooth

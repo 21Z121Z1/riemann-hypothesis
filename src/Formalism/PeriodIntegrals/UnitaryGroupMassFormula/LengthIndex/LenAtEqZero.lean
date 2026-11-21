@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.DivisionRowsRationalLattice
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.RingTheory.WittVector.IsPoly

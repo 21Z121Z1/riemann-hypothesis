@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.StatementColKer
 import Mathlib.RingTheory.PiTensorProduct
 

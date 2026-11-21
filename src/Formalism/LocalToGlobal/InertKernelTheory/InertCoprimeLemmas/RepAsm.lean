@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.ConstantCoeffFormalSum
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepDict
 import Formalism.LocalToGlobal.InertKernelTheory.SclY

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRepRealisingCharOfMultiplicityOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalIdempotentCharacters
 

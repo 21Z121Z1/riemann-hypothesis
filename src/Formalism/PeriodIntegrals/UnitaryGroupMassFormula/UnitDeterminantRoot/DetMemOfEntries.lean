@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.GlobalLUnit
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Polynomial.Basic

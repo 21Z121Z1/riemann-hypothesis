@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Theta.Cartan
 
 namespace GroundTheory.Heights₂.Theta

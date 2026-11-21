@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithDegree
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Slopes
 import Mathlib.Algebra.Module.ZLattice.Covolume

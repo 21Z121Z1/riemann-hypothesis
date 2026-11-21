@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.AdeleMeasure
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
 import GroundTheory.AutomorphicForms.ReductionHeight

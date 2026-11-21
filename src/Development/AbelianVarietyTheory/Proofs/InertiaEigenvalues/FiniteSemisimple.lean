@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLinearExtension
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CayleyHamilton
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PseudoCharacterApplyIdempotentNatLeStatement

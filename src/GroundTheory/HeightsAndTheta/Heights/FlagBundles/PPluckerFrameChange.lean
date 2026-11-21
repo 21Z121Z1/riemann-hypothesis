@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.SlopeCauchyBinet
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Statements
 set_option maxSynthPendingDepth 1

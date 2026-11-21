@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.PairSplit
 import Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsPeriodLatticeIff
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ThetaZeroNorm
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjugateIdealLatticeDiscrOneHomotheticIdealStatement

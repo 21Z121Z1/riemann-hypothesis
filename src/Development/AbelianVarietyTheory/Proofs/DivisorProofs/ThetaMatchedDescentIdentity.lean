@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelDecay
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelPolynomialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairThetaUniformBoundFamilyStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsLocalizedModuleSubtype
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BaseDataEmbeddingConj
 
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem

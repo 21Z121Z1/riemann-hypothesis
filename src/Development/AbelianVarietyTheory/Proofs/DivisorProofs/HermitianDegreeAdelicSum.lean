@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ArakelovDegreeEqDegreeOfFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullLatticeContainsScaledBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledStandardLatticePadicSumStatement

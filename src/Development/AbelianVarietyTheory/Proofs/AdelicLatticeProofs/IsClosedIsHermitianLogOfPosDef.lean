@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
 import Mathlib.Analysis.CStarAlgebra.Matrix
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgIsoU
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgGauss
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgMulN

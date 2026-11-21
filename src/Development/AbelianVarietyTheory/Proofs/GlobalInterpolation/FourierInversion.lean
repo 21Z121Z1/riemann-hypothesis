@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ContinuousBdGen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HalfMulTwoAF
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PoissonSummationAdelicTuplesStatement

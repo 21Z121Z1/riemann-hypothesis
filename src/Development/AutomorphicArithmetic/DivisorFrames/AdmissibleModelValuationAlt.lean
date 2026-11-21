@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.AdmissibleModelValuation
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsSphericallyCompleteIsometric
 import Development.AutomorphicArithmetic.DivisorFrames.TangentModelsCompat

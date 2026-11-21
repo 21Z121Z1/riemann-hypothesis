@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.C1FieldNormSurjective
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TsenLangRatFunc
 

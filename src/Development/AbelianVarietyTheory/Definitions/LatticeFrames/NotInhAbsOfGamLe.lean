@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MiPinnedWithFinIff
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerInclOn
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VanishingGramTermsBoundParams

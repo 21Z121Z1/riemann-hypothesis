@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.PtSysFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseFrobSet
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteSplittingSetFrobeniusPolynomialsStatement

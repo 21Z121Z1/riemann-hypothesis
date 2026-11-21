@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 import Mathlib.Analysis.Normed.Module.HahnBanach
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsKsMatrixOf
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteAffineCharts
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ConstFnZero

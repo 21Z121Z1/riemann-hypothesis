@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSBArgs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilOver
 

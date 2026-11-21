@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.SumRangeBlocks
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockDetGe
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsPhlaBound

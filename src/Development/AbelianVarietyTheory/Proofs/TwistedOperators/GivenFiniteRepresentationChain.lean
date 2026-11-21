@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalVectorDownEdgeInteriorStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalVectorDownEdgeBoundaryStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalVectorRightEdgeCosineStatement

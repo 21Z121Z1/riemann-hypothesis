@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlkGLOneCorner
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermModerateGrowth
 open NumberField MeasureTheory GlobalTheory.CuspRep

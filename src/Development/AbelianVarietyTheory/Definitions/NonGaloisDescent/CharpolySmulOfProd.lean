@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.UnitaryNorms.CharTied
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.TameGeneratorProjectors
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.JumpDictionary

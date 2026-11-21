@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.DegreeZeroWeightsBounded
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealizationUnique
 open CrystallineSemistableComparison.Pb.Kap
 set_option maxHeartbeats 1000000 in

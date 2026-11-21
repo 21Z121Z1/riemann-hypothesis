@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActMatApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartOfMaximal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentSheafLocalModelBundle

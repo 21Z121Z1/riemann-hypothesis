@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.UnramifiedTrivialInertialType
 import GroundTheory.AutomorphicForms.SmoothRepSchur
 import GroundTheory.GlobalFields.LocalFieldAtPlace

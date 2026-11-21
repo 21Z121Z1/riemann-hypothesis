@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsEqOfSmulMkEqZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PSqSmulKaehlerMemSpan
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KaehlerDOfPowEq

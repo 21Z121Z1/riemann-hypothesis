@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniversalOfZariskiSheafOpenChartsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallOfSeparatedPresheafOpenChartsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartsRepresentedFunctorOpenCoverStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsIsFibreIso
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPushEquiv
 

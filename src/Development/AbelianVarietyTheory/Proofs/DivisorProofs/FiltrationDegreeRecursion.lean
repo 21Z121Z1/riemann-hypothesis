@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NumberFieldLatticeClearsDenominatorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexMapMulRelIndexKerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramDetScaleVectorsStatement

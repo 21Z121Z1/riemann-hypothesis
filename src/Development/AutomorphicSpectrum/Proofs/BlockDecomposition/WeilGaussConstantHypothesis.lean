@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsHaarMeasureComapSubtype
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticExtensionTestVectorBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSchwartzZetaSeparatingCharacterStatement

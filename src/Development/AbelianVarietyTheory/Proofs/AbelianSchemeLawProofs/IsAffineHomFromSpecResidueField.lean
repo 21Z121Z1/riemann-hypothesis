@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ValCalc
 import Mathlib.AlgebraicGeometry.Geometrically.Integral
 import Mathlib.AlgebraicGeometry.ZariskisMainTheorem

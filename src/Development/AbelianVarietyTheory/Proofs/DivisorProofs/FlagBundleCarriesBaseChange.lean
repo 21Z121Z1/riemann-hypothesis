@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnipotentTriangularFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeadingMinorsUnipotentMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CarriedFlagTriangularFrameStatement

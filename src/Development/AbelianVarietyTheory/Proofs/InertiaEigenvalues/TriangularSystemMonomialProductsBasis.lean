@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.Order.Grade

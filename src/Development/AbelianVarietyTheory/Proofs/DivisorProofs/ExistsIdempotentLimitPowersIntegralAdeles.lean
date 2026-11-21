@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIdeleGenerator
 open scoped Pointwise

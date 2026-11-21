@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Statements
 import Mathlib.Order.CompletePartialOrder
 import Std.Tactic.BVDecide.Normalize.Prop

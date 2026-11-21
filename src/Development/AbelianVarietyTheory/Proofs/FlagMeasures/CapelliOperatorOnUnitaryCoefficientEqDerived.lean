@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.Smooth
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothVecUnitaryModule
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

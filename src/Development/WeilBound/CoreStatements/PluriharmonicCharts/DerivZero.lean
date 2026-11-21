@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.ExistsPeriodOfFrames
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HolDifferentiableAt
 

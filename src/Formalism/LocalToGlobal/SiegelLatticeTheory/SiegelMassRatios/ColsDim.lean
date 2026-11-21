@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.ClassAct
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.Analysis.InnerProductSpace.Dual

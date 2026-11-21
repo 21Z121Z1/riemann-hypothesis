@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.EtaleExtensionDegreeTwoConstantsStatement
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.PageRows

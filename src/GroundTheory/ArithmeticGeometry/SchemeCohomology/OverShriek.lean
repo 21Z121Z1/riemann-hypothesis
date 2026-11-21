@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Category.Grp.Abelian
 import Mathlib.Algebra.Category.Grp.EpiMono
 import Mathlib.Algebra.Category.Grp.Zero

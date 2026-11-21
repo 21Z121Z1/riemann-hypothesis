@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietySmoothOverRatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyGeometricallyConnectedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPullbackLocalFramesStatement

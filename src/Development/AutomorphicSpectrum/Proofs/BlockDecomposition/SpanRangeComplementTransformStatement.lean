@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpanRangeComplementTransform
 open scoped Matrix
 open GlobalTheory.StdUnn PositivityTheory.GramSchwartzFunctions.EC

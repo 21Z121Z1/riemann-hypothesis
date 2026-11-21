@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WeilIdempotents
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomSuppSplit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterNormOneUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPlaceEmbeddingExists

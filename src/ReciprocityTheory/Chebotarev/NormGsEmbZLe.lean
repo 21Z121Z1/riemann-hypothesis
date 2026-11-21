@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.Chebotarev.Support
 import ReciprocityTheory.Chebotarev.DiscreteTopologyLatOf
 import Mathlib.Algebra.Module.ZLattice.Summable

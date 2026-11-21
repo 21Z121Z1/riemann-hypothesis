@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.NfacParallelFlowV
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FjCauchyBound
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RiemannFormFramePeriodsEqMajorantStatement

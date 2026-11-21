@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.SectionInjectivityHypothesesProjectiveLine
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Objects
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero

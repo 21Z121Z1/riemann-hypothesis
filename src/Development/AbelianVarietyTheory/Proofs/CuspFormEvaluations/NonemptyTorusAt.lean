@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FirstMinimumSqMulIInfHeightLeCard
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogThetaSumInvariantSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LeviLogThetaSumStatement

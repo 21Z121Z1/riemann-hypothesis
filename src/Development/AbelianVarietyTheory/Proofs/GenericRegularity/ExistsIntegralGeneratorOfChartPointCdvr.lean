@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.MatrixTwoByTwoCongr
 import Formalism.LocalToGlobal.ProjectiveLattices.ThetaFramePf
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.SecGeneratesOfNeZeroOnClosedFibre

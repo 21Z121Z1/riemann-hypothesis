@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ParahoricCharacterModulusProperties
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL
 open scoped ComplexConjugate ValuativeRel

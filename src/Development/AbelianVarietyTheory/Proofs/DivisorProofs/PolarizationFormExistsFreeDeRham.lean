@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolarizationCrystalFormPerfectSelfAnnihila
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsHolFormConst
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.EvenOddPowerQuotientEqualityCases
 import Formalism.FormalGroupWitt.Statement
 import Mathlib.Analysis.Complex.Circle

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WedgeLineLatticeVectorBundleStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DetFromColsFrameChange
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FromRowsMulFromColsSplit

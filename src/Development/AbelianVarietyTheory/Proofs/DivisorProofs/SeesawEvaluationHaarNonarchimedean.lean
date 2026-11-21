@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DisjointLineMid
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinHaarStabilizerIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLeviTorusEvaluation

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.SpFlag
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.SpBorLift
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IotaFacts

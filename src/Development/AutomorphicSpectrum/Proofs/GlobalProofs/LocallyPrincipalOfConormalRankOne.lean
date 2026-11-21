@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocPrincipalSpan
 import Mathlib.Topology.Sheaves.Presheaf
 open AlgebraicGeometry CategoryTheory Limits TopologicalSpace

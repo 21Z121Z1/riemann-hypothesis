@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.SBrDiv
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize

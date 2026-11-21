@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.QuotientH0FiniteHypothesesLine
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PClaimVanishCech
 set_option maxSynthPendingDepth 1

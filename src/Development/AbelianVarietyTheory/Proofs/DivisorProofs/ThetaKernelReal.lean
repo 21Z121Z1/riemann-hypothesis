@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiplicityOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasFormNegOfPairBoundsStatement

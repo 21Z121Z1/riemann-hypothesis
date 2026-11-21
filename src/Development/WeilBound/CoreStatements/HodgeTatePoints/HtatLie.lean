@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFiniteProjectiveBis
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmoothGroupTangentLiftStatement
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieA

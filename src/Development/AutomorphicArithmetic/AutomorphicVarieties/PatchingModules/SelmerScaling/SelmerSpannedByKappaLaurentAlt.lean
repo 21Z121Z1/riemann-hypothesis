@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SelmerScaling.SelScale
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients
 import Mathlib.RingTheory.LocalProperties.Reduced

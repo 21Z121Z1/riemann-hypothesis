@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullIntersectionGenericBoundStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CorrectedWeightRegularizationStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspWeightRegularisationsTiedStatement

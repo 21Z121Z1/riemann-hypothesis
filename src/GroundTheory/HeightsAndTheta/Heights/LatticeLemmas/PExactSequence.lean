@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Statements
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 set_option maxSynthPendingDepth 1

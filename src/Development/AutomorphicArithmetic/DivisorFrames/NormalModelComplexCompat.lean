@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ValuationNormSumExtensions
 import Development.AutomorphicArithmetic.DivisorFrames.PlaceDegreeResidueFormula
 import Development.AutomorphicArithmetic.DivisorFrames.ValuationSubringUniqueOfPrime

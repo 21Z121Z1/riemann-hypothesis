@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrictTransformIsolation.StrictTransformAvoidance
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrongResolution.AffineResolutionConditions
 universe u

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormSumRepresentativeLift
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CupListRepresentativeOfForms
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGradedClassRepresentative

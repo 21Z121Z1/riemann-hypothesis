@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.SumOfLevelSizesEq
 open Finset Polynomial
 open Formalism.REAL (GlRel KHighest IsWeight qdet Tm qminor)

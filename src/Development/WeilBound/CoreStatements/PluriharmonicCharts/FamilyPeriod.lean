@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsDerivAt0Congr
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.DerivZero
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XCBmExistsSumframe

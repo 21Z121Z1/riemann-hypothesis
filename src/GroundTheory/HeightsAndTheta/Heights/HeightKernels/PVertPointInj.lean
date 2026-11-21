@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointLengthSteps
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.OfSteps
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjOverCompFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsAffineOpenLeOfIsQProjOver
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GenericPartDenseProOpen

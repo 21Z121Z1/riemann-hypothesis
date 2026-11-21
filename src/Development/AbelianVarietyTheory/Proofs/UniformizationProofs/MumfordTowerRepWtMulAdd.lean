@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SquareOfCubical
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsMemCommonChart
 import Development.AbelianVarietyTheory.Definitions.Uniformization.IsCPPullback

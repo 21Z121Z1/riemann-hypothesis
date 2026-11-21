@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EigenvectorAdjointIntertwinerNormalOperatorsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LinearMapExtOfISupEqTop
 import Formalism.LocalToGlobal.Columns.HeckeSp

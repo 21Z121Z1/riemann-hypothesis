@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.LineOneCut
 import Mathlib.Topology.LocallyConstant.Algebra
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SymTupOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowDivMemOfEsymmPowDivMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEsymmPowDivMemOfIsLocalRing

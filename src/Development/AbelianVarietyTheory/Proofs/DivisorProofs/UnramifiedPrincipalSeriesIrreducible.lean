@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolarizedTwistAbsPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSeriesIrreducibleUnramStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSeriesSatakeParametersStatement

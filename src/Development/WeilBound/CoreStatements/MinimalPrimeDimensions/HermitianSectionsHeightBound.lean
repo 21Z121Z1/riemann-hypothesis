@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.ChowFormHeightOfArch
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IntegralOfLintegral
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.HeightBoundOfHyp

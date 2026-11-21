@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GlueModelsOverSubfield
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFgIsSeparatedStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothModelsIsoOverFgSubalgebraStatement

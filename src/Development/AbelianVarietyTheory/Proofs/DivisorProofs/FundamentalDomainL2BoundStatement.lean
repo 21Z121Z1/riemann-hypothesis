@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainL2Bound
 open MeasureTheory
 open scoped ContDiff

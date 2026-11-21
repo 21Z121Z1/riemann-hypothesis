@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetRelPermAndCompactVanish
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GlWordJetRelationsMultiplicationEquivariantStatement
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds

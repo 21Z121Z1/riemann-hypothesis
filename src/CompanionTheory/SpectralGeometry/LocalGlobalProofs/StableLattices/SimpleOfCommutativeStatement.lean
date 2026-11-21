@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BurnsideSurjOfIrred
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LiftThreeOverMapComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HenselSmoothSectionLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegenerationRescaleEvenBimultExistsStatement

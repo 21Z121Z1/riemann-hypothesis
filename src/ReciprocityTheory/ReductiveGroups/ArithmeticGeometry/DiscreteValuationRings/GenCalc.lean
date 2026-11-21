@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ValuationMultiplicationInvariance
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

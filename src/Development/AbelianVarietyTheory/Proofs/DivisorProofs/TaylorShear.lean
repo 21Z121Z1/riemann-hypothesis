@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TaylorCompChainStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TaylorCoordAndEvalStatement
 open Filter Topology

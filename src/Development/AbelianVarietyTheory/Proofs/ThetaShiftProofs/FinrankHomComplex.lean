@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TorusProjPeriodZeroEqReal
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq
 

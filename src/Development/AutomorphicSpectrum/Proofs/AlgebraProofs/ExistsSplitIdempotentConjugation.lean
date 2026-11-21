@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.ImportsAlt
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TeichmullerCharacterOrderGeneratesStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GaussSumValuationTeichmullerStatement

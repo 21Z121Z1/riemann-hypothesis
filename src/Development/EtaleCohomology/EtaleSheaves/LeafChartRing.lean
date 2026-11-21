@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.EtaleChapterESix
 import Mathlib.AlgebraicGeometry.AffineSpace
 import Mathlib.CategoryTheory.Limits.Types.Pushouts

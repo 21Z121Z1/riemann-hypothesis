@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenThetaMatchStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EtaEventuallyAgreesStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarClosedIntegralLatticeAllStatement

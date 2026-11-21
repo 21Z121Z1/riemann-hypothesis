@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralModularTowerJCompGlTwoPosRatStatement
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
 import Mathlib.RingTheory.Valuation.LocalSubring

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LvTwDivDvSplit
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SphericalParameterBoundSplitPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumQuotientTransportStatement

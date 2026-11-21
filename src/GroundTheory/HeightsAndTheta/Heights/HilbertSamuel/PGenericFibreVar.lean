@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenericFibreVar
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PGenericFibreDim
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedProductUnitaryGroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftSchwartzCompactInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftHaarIntegralConvergentStatement

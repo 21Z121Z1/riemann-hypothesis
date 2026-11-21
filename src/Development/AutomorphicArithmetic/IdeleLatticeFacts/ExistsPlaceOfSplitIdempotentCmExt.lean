@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFunctionHeisenbergInvariant
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEtaC
 

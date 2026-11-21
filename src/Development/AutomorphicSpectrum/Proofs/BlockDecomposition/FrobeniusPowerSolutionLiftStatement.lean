@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrobeniusPowerSolutionLift
 open TensorProduct CrystallineSemistableComparison.D
 open scoped LaurentPolynomial

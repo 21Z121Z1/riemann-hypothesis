@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.PtFinFinite
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoproductGeometry
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MonicNormLtOne

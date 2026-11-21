@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.RecTTransport
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RootsCharpolySmulMatrix
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyDualTamePart

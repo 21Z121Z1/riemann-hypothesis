@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.LogDetBounds
 import Development.WeilBound.CoreStatements.FlagImmersions.FrameOfMatrix
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointNormalCoords

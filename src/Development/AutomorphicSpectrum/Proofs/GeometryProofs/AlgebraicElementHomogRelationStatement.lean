@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicElementHomogRelation
 open ReciprocityTheory.ChartRestriction.G.Geo MvPolynomial
 set_option maxHeartbeats 1000000 in

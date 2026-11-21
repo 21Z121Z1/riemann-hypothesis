@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.SameNormBasic
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

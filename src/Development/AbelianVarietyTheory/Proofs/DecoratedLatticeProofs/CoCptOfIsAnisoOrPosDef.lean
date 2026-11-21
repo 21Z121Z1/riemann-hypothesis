@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBoundedUnitary
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DefiniteUnitaryCocompact
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam

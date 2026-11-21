@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLevelAwayAdapted
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUniqueSplitPlaceComponentDefiniteUnitaryStatement
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.SphericalOperatorsExist

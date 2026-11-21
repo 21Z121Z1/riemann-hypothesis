@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AntisymmFibrePointTwo
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory Filter Topology

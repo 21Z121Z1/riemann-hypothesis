@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenFns
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSupport
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsGenericIffIsGenericFor

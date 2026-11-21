@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsHomOpenPart
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
 open CategoryTheory Limits AlgebraicGeometry

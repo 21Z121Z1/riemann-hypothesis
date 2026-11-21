@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhaseNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterIdeleCharacterMatchUnique

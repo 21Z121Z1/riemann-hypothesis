@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsImmersionOfForallAffineSurjectiveAppLE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorusPt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSecBGenerating

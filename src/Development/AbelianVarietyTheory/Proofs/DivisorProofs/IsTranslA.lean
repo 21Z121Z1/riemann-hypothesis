@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeSubAFiniteFree
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

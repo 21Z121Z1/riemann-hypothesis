@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereIntegralCongrPotentials
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionFamilyDefectFormula
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsIntegralLogNormRat

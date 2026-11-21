@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnifTrait
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SixthLawsAndUnifUniq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSemiAbelianUniformisationOfFiniteExtTrans

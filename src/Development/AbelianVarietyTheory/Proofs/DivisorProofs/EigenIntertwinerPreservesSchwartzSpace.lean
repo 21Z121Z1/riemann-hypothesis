@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelEvaluationPreservesSchwartzStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelEvaluationIntertwinesStatement
 

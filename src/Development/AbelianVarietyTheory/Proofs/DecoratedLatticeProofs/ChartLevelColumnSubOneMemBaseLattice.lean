@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianStepLevelOfChartFormsLevel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnderTBijective
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevChiEqOne

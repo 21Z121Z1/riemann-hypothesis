@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.ConvolutionSmoothL2
 
 open NumberField Matrix Finset Formalism.MainNotions.S Formalism.REAL GlobalTheory.Count GlobalTheory.Dec

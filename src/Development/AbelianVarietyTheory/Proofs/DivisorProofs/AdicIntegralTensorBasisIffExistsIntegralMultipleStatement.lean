@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdicIntegralTensorBasisIffExistsIntegralMultiple
 open Matrix NumberField IsDedekindDomain GlobalTheory.AdicSpan
 open scoped TensorProduct Classical

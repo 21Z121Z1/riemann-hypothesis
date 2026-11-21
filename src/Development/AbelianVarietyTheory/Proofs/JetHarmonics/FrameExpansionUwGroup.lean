@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameCompletion
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LieBracketMultiplication
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WeylCellConjTransposeMulApply

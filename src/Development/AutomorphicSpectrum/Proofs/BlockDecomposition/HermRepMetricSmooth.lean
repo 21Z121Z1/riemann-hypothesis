@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUniqueComplexPointUnder
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffineOpenAndIsPushout
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood

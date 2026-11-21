@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealSheafGlueOfOpenImmersions
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits
 set_option maxHeartbeats 1000000 in

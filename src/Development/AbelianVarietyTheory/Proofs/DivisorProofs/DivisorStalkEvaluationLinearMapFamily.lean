@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumIOfSumFMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedMemberDividingThetaConstantNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaModelMemberTermMemMaximalIdealStatement

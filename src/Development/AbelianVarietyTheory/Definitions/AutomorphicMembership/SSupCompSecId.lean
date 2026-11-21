@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LocStOfLoc
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HomAppHomOfRestrictImage
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ChtTrueYEta

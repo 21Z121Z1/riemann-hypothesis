@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NonnegSubOfLt
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TopPlaceLogTheta
 

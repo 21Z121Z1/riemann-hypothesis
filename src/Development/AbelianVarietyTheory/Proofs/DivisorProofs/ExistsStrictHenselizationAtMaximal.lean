@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHenselisation
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IndEtaleComp
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

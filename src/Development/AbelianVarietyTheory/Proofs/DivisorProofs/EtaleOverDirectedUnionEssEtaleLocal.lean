@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalRingOfLocalizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleAdjoinBaseChangeImageStatement
 import Mathlib.Tactic.Monotonicity.Lemmas

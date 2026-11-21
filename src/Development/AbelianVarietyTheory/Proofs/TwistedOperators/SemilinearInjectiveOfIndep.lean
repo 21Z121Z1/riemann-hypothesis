@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ConjScalarThm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingsExistRow
 

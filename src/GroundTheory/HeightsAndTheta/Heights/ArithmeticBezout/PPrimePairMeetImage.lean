@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsPrimePairMeetImage
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsFiniteFibresDimLe
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PImageDimLe

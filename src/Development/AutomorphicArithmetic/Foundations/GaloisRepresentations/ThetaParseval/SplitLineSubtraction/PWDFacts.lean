@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SplitLineSubtraction.SubtractOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelationOperations
 

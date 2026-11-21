@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.TowerPin
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ShortIn
 import Formalism.LocalToGlobal.IndefiniteReal.LeafObjects.LiftDataTimeEqWeightTime

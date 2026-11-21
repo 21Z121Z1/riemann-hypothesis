@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.Statement
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsIwasawaOfIsCompact
 import Std.Tactic.BVDecide.Normalize.Prop

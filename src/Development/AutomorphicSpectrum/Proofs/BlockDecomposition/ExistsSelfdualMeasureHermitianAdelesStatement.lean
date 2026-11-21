@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSelfdualMeasureHermitianAdeles
 open HeckeCharacterZeroLocus.SiegelWeilU NumberField MeasureTheory
 open scoped TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToRingActOpOfRingAct
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.BiadditiveOfTrivAxes
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle

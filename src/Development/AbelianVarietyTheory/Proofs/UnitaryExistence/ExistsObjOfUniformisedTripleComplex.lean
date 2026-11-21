@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LieMultIffFinrank
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsAbelianSchemeOfProper
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsObjTwistBySimilitude

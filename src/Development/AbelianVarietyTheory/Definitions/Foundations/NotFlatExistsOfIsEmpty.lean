@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsNumberFieldPoint
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsUnf
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlgebraicRatFun

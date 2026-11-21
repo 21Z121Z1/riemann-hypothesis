@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SeriesLocationOfMembershipStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Adm8AndLambdaUsedStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TypeNonzeroOfHoweUnramifiedStatement

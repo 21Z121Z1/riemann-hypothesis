@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TrueW
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VacOfShape
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsNormalFr

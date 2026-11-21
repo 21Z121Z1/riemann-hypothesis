@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.SpanBall
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.EigStrOfMem
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.ProductMoment

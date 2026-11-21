@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JSmoothA
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 

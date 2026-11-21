@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RenameSwapOfEqualPartialsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonomialPderivDifferencePrimitiveExistsStatement
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

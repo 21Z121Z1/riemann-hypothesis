@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.CommutativeAlgebra.MaximalIdealSquares.RingKrullDimQuotientSpanSingletonAddOne
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsRegularRingOfSmooth
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn

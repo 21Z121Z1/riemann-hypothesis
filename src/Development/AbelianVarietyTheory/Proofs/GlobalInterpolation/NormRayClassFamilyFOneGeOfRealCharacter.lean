@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExpSumBoundsStatement
 import Mathlib.Analysis.PSeries
 import Mathlib.Topology.Separation.CompletelyRegular

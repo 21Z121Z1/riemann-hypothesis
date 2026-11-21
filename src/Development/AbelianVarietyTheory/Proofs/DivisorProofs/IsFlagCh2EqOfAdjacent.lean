@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ResidueDegreeOfIsClosedImmersion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentRefl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometricCombUnitOne

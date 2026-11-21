@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsCMFieldOfStar
 
 open NumberField Matrix GlobalTheory.Mass Formalism.HermitianLatticesTheory

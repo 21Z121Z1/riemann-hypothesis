@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.DimClosureAddOneLe
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartResidueDegreeAlgClosedClosed
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PChowDegreeSection

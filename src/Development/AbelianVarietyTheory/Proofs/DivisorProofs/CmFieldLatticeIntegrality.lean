@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SzPeriodsOfTangent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumUnramifiedAlmostAllStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedMultiplicationSubmoduleStableStatement

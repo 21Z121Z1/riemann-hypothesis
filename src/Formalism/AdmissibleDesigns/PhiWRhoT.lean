@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.RhoContOf
 import Formalism.AdmissibleDesigns.GlobalIndexTheoremPlacesOfRNAdm
 import Formalism.AdmissibleDesigns.LenComapSurj

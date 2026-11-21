@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.SumIndicesEqSumColumns
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.BCoreT
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.LWedge

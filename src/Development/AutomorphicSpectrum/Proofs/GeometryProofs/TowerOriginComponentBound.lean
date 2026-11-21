@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GeoRead
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFlagTriangularRelayStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PolynomialFieldExtensionDegreeStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.StatementE
 import Mathlib.Algebra.AffineMonoid.Basic
 open scoped NNReal

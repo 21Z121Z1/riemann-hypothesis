@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RealPlaces.ConeMap
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.HighSUnits
 set_option maxSynthPendingDepth 1

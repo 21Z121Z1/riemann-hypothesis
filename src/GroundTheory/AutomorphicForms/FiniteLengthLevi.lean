@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.FiniteLengthLeviBlock
 import GroundTheory.AutomorphicForms.CuspidalSplittingIsotypic
 import GroundTheory.AutomorphicForms.GeometricLemmaNormal

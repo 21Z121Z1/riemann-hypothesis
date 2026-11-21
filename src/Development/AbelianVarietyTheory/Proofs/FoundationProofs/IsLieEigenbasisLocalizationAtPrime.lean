@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EigenvectorLieDegree
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieCombBaseChange
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomLieEquivScalarTmul

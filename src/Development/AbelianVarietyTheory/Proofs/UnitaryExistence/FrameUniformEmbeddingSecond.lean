@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.MarkSpec
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionRationalPointsAndApproximation
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ZeroMemLatOf

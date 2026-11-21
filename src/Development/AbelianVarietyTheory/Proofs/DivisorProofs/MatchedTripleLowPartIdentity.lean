@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaArchimedeanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormInvariantQuotientDefiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOrbitSmoothVectorFiniteStatement

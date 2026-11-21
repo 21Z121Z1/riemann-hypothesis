@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.LawsChart
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PowerSeries.Inverse

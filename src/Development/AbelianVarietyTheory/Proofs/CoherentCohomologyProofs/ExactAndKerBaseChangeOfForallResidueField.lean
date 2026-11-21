@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsFiniteProjectiveComplexQuasiIso
 import Mathlib.CategoryTheory.Monoidal.Mon
 import Mathlib.RingTheory.Etale.Weakly

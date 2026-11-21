@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeRigidity.PackCount
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.SimpleRing.Principal

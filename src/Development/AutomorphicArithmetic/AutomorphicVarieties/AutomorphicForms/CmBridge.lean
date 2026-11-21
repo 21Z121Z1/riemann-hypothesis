@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.ArchimedeanCompact.AutomorphicFormsLeSm
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.FoundBridge
 

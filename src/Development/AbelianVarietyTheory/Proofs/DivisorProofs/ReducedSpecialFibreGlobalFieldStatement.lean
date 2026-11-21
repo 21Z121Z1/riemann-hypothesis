@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReducedSpecialFibreGlobalField
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Opposite

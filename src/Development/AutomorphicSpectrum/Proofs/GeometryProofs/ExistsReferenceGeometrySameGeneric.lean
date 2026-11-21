@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericCoordsDescendSubfieldStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentGenericCharZeroStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EmbedsGenericOfCharZeroStatement

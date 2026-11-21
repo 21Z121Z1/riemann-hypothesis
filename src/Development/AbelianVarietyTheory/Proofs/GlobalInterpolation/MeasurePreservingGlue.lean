@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ActionCoordinates
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonemptyCompactDualHaar
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LintegralComplexEqLintegralSqrtMulExpStatement

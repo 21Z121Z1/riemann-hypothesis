@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsLv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviSectionCommuteOfFixesIsotropicColumns
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewPlaneModularCharacter

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalUnitAbsoluteValueCriterionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagFrameCoverTangentCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagFramePrimeTangentCompatStatement

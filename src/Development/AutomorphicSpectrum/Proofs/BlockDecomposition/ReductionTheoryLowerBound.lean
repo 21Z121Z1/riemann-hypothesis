@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicTensorRationalApproximationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactHeightLowerBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdelicBoxCompactStatement

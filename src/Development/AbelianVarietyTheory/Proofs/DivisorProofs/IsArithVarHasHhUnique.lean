@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialFlagSmoothArithmeticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellVarietyDimensionCountsStatement

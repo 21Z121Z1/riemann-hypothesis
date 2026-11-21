@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Data.Rat.Star
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.AppCompatGeneric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PhiGenPf

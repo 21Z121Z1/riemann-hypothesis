@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxSlopeExtendedLatticeGaloisLeStatement
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange
 open NumberField GlobalTheory.AllWt

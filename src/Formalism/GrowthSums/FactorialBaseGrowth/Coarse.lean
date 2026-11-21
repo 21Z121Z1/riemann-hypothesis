@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GrowthSums.StatementA
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

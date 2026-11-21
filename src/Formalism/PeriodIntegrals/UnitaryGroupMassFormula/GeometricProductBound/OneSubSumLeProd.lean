@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.GeometricProductPowers.GaussianProductPowerBound
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Algebra.Order.Ring.Star

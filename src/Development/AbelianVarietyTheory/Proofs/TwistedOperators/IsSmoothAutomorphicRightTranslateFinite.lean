@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.EmbRelExistsUnique
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedSmooth
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.BlockKernelPropertiesOfSteps
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

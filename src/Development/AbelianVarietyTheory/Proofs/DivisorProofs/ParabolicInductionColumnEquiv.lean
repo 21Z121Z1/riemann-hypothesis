@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlCastRfl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParIndJacPlacing
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormalisedParabolicInductionReindexEquiv

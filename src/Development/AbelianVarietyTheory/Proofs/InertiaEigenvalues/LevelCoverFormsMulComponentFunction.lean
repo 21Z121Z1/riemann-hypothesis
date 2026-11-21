@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IntFormsSubset
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoverSectionsMulStableWeberValuesStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves

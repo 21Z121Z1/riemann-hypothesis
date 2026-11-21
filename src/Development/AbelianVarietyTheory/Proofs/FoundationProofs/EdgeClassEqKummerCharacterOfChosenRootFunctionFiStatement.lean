@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EdgeClassEqKummerCharacterOfChosenRootFunctionFi
 open GlobalTheory.K4 GlobalTheory.KEdge GlobalTheory.NeedB Polynomial
 set_option maxHeartbeats 1000000 in

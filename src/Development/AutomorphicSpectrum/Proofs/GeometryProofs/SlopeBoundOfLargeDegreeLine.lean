@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LineOfKeyDegreeStatement
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ShortVectorOfSubmodule

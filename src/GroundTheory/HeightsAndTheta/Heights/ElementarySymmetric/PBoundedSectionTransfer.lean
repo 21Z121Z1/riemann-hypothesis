@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StBoundedSectionTransfer
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsMultiHomogXpow

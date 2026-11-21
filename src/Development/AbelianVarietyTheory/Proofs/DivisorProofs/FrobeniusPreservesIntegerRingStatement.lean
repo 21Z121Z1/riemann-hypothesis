@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPreservesIntegerRing
 open ReciprocityTheory.DiscreteGroups.LocalClassField Matrix GlobalTheory.LKLoc
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.PullCupPowEqCupPowPull
 import Development.AutomorphicArithmetic.CommutativeAlgebra.LerayHirschOfTwoElementCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistCupProductGradedCommStatement

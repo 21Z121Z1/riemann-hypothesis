@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionAtPoint
 import GroundTheory.GlobalFields.ComplexMultiplication.InseparableFrobenius
 set_option maxSynthPendingDepth 1

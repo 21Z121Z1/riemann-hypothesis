@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveLiftOfReduction
 open GlobalTheory.RingChain
 open scoped TensorProduct Pointwise ChangeOfRings

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateDatumStatement
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.OrdinaryCurveStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PolarisedAbelianVarietyPTorsionStatement

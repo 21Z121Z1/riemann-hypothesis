@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.RationalLaws.RationalAdjointLaw
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConstOfConstOnDictLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivAtRecordOfEquivRow

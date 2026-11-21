@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPdivGroupForPoint
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MapDegreeEqExpCharPowMulCardKernel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPullbackPow

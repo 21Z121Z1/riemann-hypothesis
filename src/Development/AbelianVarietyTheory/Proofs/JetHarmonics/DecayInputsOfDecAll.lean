@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.ExistsIsCayleyUIff
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SideNormalisedGap
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd

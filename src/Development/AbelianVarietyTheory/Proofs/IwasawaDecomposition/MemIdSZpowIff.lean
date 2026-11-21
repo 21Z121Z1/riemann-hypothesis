@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneSubMemIdS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InTypeIsoSortedPos
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DivisorsAtInvDualLabelAndStabilizerMul

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeierstrassPTwoMulMulSqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionWeierstrassPMemValuationSubringStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOfDuplicationEqStatement

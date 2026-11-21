@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TmulMemComplId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StaircaseIdealConjugateInverse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemMulInvIff

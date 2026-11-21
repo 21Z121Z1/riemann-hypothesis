@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AdelicQuotients.MatrixCoefficientBoundedByValueAtOne
 import Development.AutomorphicArithmetic.AdelicQuotients.UnitaryAdelicMemOfLocalGroupsNearOne
 import Development.AutomorphicArithmetic.AdelicQuotients.UnitaryLocalGroupLeOffPlacesEmpty

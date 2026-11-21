@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LambdaPrimeAllPointsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterLargeAllPointsBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftWeightRhoEntryValuesStatement

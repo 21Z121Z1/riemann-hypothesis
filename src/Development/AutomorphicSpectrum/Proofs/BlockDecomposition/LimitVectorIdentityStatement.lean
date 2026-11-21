@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LimitVectorIdentity
 open scoped Classical
 namespace PositivityTheory.Rg.BcB.SpectralAccumulation

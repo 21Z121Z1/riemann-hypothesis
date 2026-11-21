@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelativeJacquetPiExteriorTensorEquivNormalized
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.JacStages
 set_option maxHeartbeats 1000000 in

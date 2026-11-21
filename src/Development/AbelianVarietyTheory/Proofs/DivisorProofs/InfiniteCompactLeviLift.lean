@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementSkewCm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaDecompIsotropicVector
 open scoped TensorProduct NNReal Matrix

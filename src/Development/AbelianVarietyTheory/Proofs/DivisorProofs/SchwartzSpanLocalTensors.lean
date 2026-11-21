@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TamePartRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalingOpenSubgroupsFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateOpenSubgroupsFinite

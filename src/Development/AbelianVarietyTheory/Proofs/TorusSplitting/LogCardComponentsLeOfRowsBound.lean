@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.LogCardCompUnfLe
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.ExistsPerfectTraceIdeal

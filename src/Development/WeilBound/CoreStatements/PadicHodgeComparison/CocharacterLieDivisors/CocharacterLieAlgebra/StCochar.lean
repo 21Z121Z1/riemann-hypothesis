@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.CocharacterLieDivisors.StGalW
 
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EnvelopingRepresentationInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EnvelopingActionCommutesTranslationStatement

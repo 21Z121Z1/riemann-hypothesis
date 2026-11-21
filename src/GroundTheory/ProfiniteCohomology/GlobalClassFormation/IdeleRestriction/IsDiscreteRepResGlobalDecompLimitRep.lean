@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleRestriction
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalResConj
 set_option maxSynthPendingDepth 1

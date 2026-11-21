@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 
 noncomputable section

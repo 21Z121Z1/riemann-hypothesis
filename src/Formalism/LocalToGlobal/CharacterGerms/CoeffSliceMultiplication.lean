@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RaiseSecondFirstEqZero
 import Formalism.LocalToGlobal.CharacterGerms.CanonicalGaugeFirstPartialLawEq
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm

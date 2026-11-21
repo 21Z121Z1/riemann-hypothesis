@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NegOneNormFromCmFieldFiniteAdeles
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem
 open scoped TensorProduct

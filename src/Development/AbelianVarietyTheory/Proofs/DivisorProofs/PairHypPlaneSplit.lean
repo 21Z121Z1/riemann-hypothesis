@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHyperbolicPlaneSplitHermitianLatticeSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairRestrictionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairLocalFactorStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.DiagonalSuccIsoFreeInvSingle
 import GroundTheory.TateCohomology.DimensionShift
 import GroundTheory.TateCohomology.InducedNorm

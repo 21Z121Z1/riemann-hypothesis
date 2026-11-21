@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
 import Mathlib.FieldTheory.PurelyInseparable.Exponent
 open CategoryTheory AlgebraicGeometry TopologicalSpace

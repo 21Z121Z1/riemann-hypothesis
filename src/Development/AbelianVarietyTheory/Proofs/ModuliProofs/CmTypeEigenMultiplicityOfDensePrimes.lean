@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.IsLocallyConstantRankAtStalkEigenSub
 import Mathlib.Algebra.DirectSum.LinearMap
 import Mathlib.RingTheory.IntegralClosure.IntegralRestrict

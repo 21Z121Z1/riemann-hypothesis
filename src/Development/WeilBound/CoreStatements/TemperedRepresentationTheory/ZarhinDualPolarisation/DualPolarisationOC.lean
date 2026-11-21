@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.IsPolarisationOfRelAmple
 
 set_option autoImplicit false

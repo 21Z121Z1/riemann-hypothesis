@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Graded
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.Carver
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.PartSpan

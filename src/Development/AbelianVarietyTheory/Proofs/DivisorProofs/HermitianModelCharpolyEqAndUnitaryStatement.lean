@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianModelCharpolyEqAndUnitary
 open GlobalTheory.UnitLemma Polynomial Matrix
 set_option maxHeartbeats 1000000 in

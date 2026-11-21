@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.FirstLemmaM
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.RingTheory.FormalGroup.Basic

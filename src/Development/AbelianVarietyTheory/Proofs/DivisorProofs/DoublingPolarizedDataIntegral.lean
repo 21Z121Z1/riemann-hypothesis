@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegFamOfContinuousAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingPairLatticeThetaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingPairLatticeMeasureStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRankOneIdem
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.RangeOnLieUnitEOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsionTowersOfDivisibleGroup

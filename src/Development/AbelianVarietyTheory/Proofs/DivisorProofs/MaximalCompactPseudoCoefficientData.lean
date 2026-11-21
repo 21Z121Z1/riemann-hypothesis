@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceEqOfMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightKernelLowestType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TracePairingNonzeroIntertwiner

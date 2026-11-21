@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartImageNull
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Assembly
 set_option maxSynthPendingDepth 1

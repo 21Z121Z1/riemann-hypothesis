@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.GammaEqDpow
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamMap

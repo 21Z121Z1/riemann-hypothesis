@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSplit
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 

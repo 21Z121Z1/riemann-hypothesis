@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandInvariantEvalLowest
 open Matrix Finset MeasureTheory
 open scoped ContDiff ComplexConjugate InnerProductSpace

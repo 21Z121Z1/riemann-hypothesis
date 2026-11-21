@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MultisetManySeparatedPointsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FewRootsSmallDiscStatement
 open Polynomial

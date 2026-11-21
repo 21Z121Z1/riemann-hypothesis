@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.UnitaryGroupScheme
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.LinearAlgebra.Matrix.PosDef

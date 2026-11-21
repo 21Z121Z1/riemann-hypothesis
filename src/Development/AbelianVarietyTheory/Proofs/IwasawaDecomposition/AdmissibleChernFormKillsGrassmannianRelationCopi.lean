@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RenVar
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SchubGamApply
 open MvPolynomial NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor

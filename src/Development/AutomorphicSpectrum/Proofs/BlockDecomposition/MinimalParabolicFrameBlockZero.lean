@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SumFrameIdem
 

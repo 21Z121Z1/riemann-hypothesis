@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TriIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStalkFactor
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyValExtOfOverLa

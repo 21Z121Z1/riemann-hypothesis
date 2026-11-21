@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsQuasicoherentOfForallExistsAffine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
 

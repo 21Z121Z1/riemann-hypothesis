@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormSubEqOneOfPowEqOne
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField.UnramifiedExtensions

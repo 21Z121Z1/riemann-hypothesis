@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.AdelicFourier2TensorCosetIndicatorAlgebraMap
 import GroundTheory.AutomorphicForms.GL2.GJMatrixFinite
 import GroundTheory.AutomorphicForms.GL2.GJMatrixInfinite

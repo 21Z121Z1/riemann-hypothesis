@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.LeafGlueProperPf
 import Std.Tactic.BVDecide.Normalize.Prop
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TupleActions.InstMulActionTup
 
 open NumberField Matrix UpperTheory.V.KT UpperTheory.V.Af.BA in

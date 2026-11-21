@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.BetaSt
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Algebra.Order.Star.Real

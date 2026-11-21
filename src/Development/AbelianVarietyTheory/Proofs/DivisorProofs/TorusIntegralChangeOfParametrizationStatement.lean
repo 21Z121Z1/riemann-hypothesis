@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusIntegralChangeOfParametrization
 open MeasureTheory Set
 open scoped ContDiff

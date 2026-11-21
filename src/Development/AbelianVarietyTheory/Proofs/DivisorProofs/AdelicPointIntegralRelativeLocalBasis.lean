@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TranslatedStdLatticeLatticeComparisonRational
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassesAt

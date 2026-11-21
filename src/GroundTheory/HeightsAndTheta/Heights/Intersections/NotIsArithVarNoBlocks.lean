@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsSmoothMetricOfIsSmoothHerm
 import GroundTheory.HeightsAndTheta.Heights.Intersections.Statements
 set_option maxSynthPendingDepth 1

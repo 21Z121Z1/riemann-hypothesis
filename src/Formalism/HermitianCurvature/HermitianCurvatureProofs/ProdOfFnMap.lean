@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RatioBound
 
 namespace Formalism.FourierDecayAlt.P.LiftDegreeLemmas

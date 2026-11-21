@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBStabilizerThetaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AugmentationSubmoduleSecondFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeBTripleSixthFormStatement

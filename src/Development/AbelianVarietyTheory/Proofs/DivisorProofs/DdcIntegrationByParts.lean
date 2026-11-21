@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasTopFormIntegralFiniteAdditiveHomogeneousStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralDelDbarZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarSumLeibniz

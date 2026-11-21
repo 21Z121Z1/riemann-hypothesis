@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SemicharacterSqEqOneOfSymmetric
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.SectionsPowThetaFunctions
 

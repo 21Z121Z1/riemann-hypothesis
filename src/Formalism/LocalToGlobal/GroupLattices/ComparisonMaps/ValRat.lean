@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.MapNatActR
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.CastGLApply
 

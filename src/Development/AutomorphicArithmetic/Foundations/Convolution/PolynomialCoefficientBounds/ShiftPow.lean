@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.AffineCharacterGenerators.AffChar
 import Mathlib.Algebra.Group.ForwardDiff
 import Mathlib.Algebra.Module.Submodule.Union

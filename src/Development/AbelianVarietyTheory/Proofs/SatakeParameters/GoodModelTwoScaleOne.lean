@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaZJetsThree
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FourthPowerTheta
 import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.ConjCls

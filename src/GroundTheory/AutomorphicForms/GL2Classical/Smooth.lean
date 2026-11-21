@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.Growth
 
 open NumberField IsDedekindDomain Matrix Set Filter Topology CongruenceSubgroup

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.PivotNeg
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.OrthonormalChartBounds

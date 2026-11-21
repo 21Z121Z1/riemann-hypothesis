@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.AnalyticIdentityTheorems.Legendre
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

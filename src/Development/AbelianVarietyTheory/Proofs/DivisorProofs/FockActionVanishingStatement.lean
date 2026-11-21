@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockActionVanishing
 open scoped TensorProduct Matrix
 set_option maxHeartbeats 1000000 in

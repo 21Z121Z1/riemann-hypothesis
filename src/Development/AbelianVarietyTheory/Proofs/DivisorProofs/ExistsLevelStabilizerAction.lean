@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpObjPullG
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentStabilizerActsByLevelChange
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf

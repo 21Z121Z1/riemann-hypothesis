@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConjCmHostRootNeSelf
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.RealPlaceLabelBijectiveCardEqF
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NotDvdDiscrHost

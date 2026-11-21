@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMatrixForm
 import Mathlib.AlgebraicTopology.AlternatingFaceMapComplex
 import Mathlib.AlgebraicTopology.CechNerve

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.StokesC
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
 import Mathlib.RingTheory.PiTensorProduct

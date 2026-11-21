@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricallyConnectedOfSurjective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AePolynomialNonvanishingStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GenericSectionsCotangentIndepStatement

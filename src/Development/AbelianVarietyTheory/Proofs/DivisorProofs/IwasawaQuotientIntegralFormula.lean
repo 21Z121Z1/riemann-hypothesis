@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.QuotientMeasure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarMeasureIwasawaQuotient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantMeasurableModificationStatement

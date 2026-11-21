@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicAffinePolydiscChartStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BoundaryChartFrameGrowthStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.VectorsAtComplexPointStatement

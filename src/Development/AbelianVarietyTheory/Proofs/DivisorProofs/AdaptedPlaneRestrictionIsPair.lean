@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulTransposeInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIsotropicLeCardStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfHasSigStatement

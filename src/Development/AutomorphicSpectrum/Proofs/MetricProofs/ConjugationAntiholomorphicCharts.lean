@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SameOrbitRefl
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AnalyticOfImmersionCompositionStatement
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn

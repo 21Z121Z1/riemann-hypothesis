@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.BlockHarmLevOfBlockHarm
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.BaseClassMove
 

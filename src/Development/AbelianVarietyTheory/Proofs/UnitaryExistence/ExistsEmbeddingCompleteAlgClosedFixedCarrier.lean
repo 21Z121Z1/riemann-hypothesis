@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsAbsoluteValueOfIsDiscreteValuationRing
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.IsOpenPart

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TailRd
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftsAllChartsEqClassSumStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsCompactEntriesLeOne

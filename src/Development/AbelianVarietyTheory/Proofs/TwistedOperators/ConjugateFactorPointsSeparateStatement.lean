@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjugateFactorPointsSeparate
 open GlobalTheory.RegSS
 set_option maxHeartbeats 1000000 in

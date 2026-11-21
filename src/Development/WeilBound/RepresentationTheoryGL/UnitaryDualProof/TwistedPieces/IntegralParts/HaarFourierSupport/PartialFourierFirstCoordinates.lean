@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.TwistedPieces.IntegralParts.HaarFourierSupport.DistribHaarCharAdU
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantAddChar
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBoxInvariantSnd

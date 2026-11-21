@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.SummableAndAbsTsumSubIntegralLe
 import Mathlib.Analysis.Normed.Group.Tannery
 import Mathlib.Data.Int.Star

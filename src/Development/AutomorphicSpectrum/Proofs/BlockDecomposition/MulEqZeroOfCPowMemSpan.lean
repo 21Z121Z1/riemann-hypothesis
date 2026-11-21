@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PfFacts
 
 open TensorProduct CrystallineSemistableComparison.D

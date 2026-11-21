@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonomialEqProd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArTopTrue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagAtOfLocalFlagStatement

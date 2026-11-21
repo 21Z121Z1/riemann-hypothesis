@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemOfAssembleMem
 import Mathlib.Algebra.Module.Lattice
 

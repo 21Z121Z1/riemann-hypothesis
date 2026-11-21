@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainIndicatorTsumOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainUnfoldSubgroupStatement
 import Mathlib.RingTheory.WittVector.IsPoly

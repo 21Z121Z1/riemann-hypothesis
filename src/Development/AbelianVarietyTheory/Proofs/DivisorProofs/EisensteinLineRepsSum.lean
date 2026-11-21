@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaHeightAdaptedLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinHeightSmulInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameLatticeAdaptedBasisStatement

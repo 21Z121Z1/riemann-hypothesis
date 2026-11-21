@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdmissibleUnitaryKFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviSubmoduleDenseStatement
 

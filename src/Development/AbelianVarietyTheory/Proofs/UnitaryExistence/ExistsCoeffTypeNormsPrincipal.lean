@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsIntegralRatZetaOfCoeff
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MultAddMultConjugate
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

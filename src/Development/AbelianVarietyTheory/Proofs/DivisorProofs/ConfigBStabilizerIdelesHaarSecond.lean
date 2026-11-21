@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawEvaluationHaarArchimedeanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFundamentalDomainUnipotentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReconfiguredTripleCompatibilityStatement

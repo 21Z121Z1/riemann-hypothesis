@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FlatIsoUnitGenerator
 
 set_option autoImplicit false

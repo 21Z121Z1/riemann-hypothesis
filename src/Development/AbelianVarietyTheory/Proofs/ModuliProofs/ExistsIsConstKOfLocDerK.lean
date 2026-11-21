@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHomOfDerivation
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsIsoOfIdModEpsThickeningStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsConstKOfIsPullback

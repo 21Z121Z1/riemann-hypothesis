@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwistIntersectionInt
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PTwistIntersection
 set_option maxSynthPendingDepth 1

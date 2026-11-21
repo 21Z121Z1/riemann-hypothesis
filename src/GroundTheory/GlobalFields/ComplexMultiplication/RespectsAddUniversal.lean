@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogeny
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.ReductionTorsion
 

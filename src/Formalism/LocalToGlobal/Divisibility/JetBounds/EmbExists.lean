@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.JetBounds.IsExpansion
 
 open Module NumberField IsDedekindDomain

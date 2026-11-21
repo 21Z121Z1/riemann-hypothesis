@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MemThetaShiftZero
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ToUnitCompLeft
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SecValFeTranslate

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CmpPair
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.PadicIntegersHenselianFiniteResidue
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TowerSymmetryLimitCompatStatement

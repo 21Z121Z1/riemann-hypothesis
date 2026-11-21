@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ShortExactFirstTermBundleStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualLatticeDegreeNegStatement
 import Mathlib.Data.Int.Star

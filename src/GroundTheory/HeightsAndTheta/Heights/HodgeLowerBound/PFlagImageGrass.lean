@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFlagGrassSteps
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ImageCoord
 set_option maxSynthPendingDepth 1

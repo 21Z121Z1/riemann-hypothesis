@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand.Places
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Decomposition
 

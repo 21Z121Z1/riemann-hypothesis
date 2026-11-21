@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CMLatticeAreaFormula.GoodLatCMOf
 
 open NumberField

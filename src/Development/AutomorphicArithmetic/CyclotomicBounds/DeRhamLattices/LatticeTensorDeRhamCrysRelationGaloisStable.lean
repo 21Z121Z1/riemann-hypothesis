@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanOfPowMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BdRpToBdR
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BcrisTensorLatticeFilZeroGaloisStable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMulVec
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueSequenceHolds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PhiGpCommutationHolds

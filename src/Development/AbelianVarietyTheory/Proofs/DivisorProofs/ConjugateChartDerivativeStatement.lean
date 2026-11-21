@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateChartDerivative
 open Filter Topology
 open GlobalTheory.CxForm

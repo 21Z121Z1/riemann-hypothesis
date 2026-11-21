@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistFactor
 import Development.AutomorphicArithmetic.TwistedTraces.IsotypicMultiplicityTensorProduct
 import Development.AutomorphicArithmetic.TwistedTraces.IntegralOperatorFixedInvariantOfLeftInvariantKer

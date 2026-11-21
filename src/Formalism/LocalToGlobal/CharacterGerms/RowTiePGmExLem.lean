@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.Interface
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.LittleWedderburn

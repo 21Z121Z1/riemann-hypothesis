@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentIdealPowFinrankEqSpanDiscrStatement
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport

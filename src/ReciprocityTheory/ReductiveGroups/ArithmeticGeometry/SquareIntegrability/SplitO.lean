@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitOA
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TransferenceMinima
 import Mathlib.RingTheory.PicardGroup

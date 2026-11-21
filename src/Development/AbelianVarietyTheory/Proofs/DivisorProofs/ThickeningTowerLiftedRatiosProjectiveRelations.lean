@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ProjectiveNotIsUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TowerSquaresStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeQuotientClosedImmersionIdealSheafStatement

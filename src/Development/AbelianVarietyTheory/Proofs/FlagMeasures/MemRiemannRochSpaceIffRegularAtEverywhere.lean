@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.FrameCoefficientData
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetTermBasicFacts
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanToZero

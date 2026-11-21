@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingLeviTranslationIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigurationStabiliserMeasureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigurationStabiliserIntegralStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeSpecFieldSmoothOfRelativeDimension
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.Et
 open scoped TensorProduct DirectSum

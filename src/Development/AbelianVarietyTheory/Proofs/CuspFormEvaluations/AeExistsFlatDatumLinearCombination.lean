@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FirstMinimumInvariantContinuousPosOnFrames
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MahlerCompactness
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.SumNormSqOrbit

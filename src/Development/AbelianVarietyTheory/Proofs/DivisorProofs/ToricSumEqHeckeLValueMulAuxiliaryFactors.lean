@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PairingDivisors.StatementA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticePointsIntegralIdelesEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSumIntegralIdelesEulerProductStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HkMemFixed
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutTranslate
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSmulEqOnFinset

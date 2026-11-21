@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.BudgetAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightAbsEntrySumNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumAbsExOfLe

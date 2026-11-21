@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipMinSubsetMinParOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulusOfNormEqAbs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatVInjective

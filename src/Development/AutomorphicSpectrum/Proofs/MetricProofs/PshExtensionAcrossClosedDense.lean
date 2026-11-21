@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 import Mathlib.Geometry.Manifold.IsManifold.Basic

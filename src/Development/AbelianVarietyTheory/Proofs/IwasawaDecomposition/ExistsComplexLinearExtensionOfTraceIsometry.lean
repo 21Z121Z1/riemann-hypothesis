@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.LateralTheory
 open NumberField IsDedekindDomain Formalism.L2.Ker Matrix
 open scoped BigOperators

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SphericalLattices.ExistsFixedSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyCompSideMulEq
 

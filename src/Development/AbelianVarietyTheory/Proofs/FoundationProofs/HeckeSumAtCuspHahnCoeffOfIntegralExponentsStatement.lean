@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeSumAtCuspHahnCoeffOfIntegralExponents
 open GlobalTheory.KZ GlobalTheory.CyclotomicQExpansion
 set_option maxHeartbeats 1000000 in

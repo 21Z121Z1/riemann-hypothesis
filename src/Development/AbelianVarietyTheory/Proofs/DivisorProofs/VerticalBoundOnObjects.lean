@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLogDivPredLeReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FRSubEqTopSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TruncatedPotentialSmooth

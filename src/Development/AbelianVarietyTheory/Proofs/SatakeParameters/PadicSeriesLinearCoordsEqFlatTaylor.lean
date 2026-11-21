@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.KerStd
 import Formalism.LocalToGlobal.InertKernelTheory.StatementIota
 import Formalism.LocalToGlobal.AlgebraicTheory.AlgebraicTheoryProofs.KerJet

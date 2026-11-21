@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormDegreeBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullIntersectionWeightBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormAllTowerBoundStatement

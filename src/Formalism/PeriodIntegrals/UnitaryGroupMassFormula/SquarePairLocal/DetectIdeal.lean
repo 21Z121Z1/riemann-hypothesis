@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.PowerSeriesExpansionImageDenseWithDenominator
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.MemFixSub
 import Mathlib.NumberTheory.NumberField.Ideal.Basic

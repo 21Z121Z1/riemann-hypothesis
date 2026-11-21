@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeriesRing
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeriesNorm
 import Mathlib.Algebra.Ring.IsFormallyReal

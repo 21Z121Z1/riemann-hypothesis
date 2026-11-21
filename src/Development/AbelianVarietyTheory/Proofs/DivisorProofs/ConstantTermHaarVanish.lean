@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdeleAbsGtOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLeviIdeleHomExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermUnipotentIntegralAltBis

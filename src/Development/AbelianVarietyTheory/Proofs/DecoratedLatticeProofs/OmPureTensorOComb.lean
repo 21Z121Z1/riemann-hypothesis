@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeisenbergCombinationCommFockPolynomialVectors
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BiThetaOfVac
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite

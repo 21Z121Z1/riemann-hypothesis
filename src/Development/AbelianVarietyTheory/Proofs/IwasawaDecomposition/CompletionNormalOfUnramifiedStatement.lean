@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletionNormalOfUnramified
 open IsLocalRing GlobalTheory.Toroidal TensorProduct
 set_option maxHeartbeats 1000000 in

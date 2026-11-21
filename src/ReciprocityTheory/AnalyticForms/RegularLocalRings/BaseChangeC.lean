@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.BaseChangeCB
 
 namespace ReciprocityTheory.AnForm.R

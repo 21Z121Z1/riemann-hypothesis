@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsLeOnFinset
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExactTermAfterTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniqueThetaConstStatement

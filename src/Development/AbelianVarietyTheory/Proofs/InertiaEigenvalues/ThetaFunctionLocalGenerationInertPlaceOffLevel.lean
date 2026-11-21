@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DropPlInsert
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HoweUnramifiedAllVacua
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HyperspecialFixesAllChainVacuaAtInertPrime

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EveryElementIsNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeLiftClassFunction
 import Std.Tactic.BVDecide.Normalize.Prop

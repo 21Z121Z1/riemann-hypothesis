@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRootMapMinpolyIffExistsRingHomExtensionStatement
 import Mathlib.Algebra.MvPolynomial.Division
 import Mathlib.Analysis.CStarAlgebra.Classes

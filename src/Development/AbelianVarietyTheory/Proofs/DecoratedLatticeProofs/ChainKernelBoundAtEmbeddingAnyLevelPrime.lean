@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BadPrimesSharp
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeightsRows
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormMuInvDetZeroOrOne

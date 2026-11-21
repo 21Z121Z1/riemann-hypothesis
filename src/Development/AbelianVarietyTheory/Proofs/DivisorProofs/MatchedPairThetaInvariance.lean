@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedThetaDescentNonvanishingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedThetaDescentRegularStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedThetaDescentSmoothStatement

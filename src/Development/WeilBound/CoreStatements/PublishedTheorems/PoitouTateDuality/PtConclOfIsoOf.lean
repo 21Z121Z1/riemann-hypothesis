@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisGroupTransportIsomorphismStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RingIsomorphismTransportsPlacesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TotallyComplexOfRingEquivStatement

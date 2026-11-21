@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.SplitSt
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.RingTheory.PiTensorProduct

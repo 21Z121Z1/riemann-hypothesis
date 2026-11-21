@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.PolFibreIdCompCancel
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieCombBaseChange
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ESecCompOfIsGrpPullback

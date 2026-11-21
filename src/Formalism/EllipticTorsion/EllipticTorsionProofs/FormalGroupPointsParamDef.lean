@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.EllipticTorsion.FormalGroupPointsParametrisation
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WSeries
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.QuadraticCharacterPrescribedPlaces
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosedStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPointLocalizationPrimeStatement

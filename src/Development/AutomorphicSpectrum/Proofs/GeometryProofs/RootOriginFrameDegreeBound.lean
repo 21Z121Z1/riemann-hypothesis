@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CompleteDvrCoordRatioValueStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializationCoordRatioValueStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagEqualChangeLowerTriangularStatement

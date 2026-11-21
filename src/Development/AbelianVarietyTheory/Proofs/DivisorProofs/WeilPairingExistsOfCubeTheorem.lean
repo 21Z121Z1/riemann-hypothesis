@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticesComplete
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsUniquePairsToTower
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CubeTheorem

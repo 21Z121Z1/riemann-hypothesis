@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.MemParahoricTimesPrincipalCongruenceIff
 
 namespace Formalism.FourierDecayAlt.P.S3x3

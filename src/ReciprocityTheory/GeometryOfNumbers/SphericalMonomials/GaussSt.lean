@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.SphericalMonomials.MonoNormSq
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral

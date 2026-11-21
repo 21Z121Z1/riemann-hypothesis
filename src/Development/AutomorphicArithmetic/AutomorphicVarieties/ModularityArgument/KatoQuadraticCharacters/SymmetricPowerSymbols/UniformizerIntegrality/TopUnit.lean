@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.UniformizerIntegrality.IsIntegralOfMemOverY
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemRingOfIntegersOfHol
 

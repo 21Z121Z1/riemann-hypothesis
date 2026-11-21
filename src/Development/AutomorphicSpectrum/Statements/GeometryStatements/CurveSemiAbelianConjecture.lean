@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.GapCondExample
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LocalComponentsSurjective
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst

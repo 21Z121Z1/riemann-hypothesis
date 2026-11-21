@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.WeilIsExpRiemannForm
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsConstOfCover
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero

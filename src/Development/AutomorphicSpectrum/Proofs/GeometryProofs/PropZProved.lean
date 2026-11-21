@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.PropZ
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsRegularSectionGenerator
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConnectedSpecialFibreConstantStatement

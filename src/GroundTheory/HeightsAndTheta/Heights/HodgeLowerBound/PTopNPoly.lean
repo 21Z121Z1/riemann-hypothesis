@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsTopNPoly
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsVertFactorPos
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsMuRegSmooth

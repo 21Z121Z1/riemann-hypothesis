@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDomainTensorComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsResidueToComplexOfRationalResidueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalModelAtComplexPointStatement

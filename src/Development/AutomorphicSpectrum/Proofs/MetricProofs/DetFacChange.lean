@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameChangeRegularEntriesStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameChangeUnderFieldMap
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CoordinateRatioValueAtPoint

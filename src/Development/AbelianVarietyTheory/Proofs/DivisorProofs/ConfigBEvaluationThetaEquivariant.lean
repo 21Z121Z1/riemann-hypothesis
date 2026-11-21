@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyConstantMaxCompactActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBSchwartzBruhatLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEigenTripleRelationStatement

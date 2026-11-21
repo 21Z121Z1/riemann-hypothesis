@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalInvariantsMatchSemisimpleStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RootsCharpolySmulMatrix

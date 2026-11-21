@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
 import Mathlib.Algebra.AffineMonoid.Basic
 

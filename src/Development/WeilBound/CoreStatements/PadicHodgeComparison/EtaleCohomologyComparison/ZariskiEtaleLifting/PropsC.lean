@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SquarePull
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwAcrFromBase
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullFrob

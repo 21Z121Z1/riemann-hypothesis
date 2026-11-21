@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBDefs
 import Mathlib.RingTheory.Complex
 import Mathlib.RingTheory.SimpleRing.Principal

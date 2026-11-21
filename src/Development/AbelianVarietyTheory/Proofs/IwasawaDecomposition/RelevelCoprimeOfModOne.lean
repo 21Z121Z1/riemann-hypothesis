@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem
 open scoped TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsSideLast
 import Mathlib.RingTheory.LocalProperties.Reduced
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimitiveDerivationPairing
 open scoped TensorProduct
 set_option maxHeartbeats 1000000 in

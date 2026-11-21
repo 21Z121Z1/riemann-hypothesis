@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemOfAevalEqZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIsLocalRingIsFractionRingStalk
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProdUpdateDiv

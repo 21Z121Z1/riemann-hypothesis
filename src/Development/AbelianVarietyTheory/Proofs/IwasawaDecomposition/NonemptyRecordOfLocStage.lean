@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalStageNonempty
 

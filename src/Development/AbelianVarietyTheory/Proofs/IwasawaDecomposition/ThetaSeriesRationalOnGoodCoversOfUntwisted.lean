@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalFormsDetTwistMulRationalStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaWeilTwist

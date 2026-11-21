@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRPlusFiltrationEqFontaineXiPowStatement
 import Development.AbelianVarietyTheory.CrystallinePeriods.CrisLoc
 import Mathlib.Order.Interval.Finset.Box

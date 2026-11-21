@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.EqGlobOfHat
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
 

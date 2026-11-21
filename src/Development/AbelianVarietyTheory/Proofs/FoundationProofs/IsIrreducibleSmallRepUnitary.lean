@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RowActCoefPolyAndUnitaryDense
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.BranchScale

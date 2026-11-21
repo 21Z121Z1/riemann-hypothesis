@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.LocalFourier
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 set_option maxSynthPendingDepth 1

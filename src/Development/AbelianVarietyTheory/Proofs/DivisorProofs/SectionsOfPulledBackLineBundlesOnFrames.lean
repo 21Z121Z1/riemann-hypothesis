@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAmpleLBOfFiniteFibres
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMulExpand
 open CategoryTheory AlgebraicGeometry Limits NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.FinalEq
 import Formalism.LocalToGlobal.InertKernelTheory.StatementInt

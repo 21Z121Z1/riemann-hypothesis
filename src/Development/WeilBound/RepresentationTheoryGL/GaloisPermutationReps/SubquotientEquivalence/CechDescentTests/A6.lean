@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.DepthZeroCuspidal.IsLevelOne
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PrincipalSeriesSupport.SeparatingWords.ExpDefs
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatVecUOfIsSphericalU

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.OpenImmersionCompStructureEqGeneric
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptInteriorGeneric
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.RootOnFund

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankEigenspacesOfSeparableMinpoly
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.WittVector.IsPoly

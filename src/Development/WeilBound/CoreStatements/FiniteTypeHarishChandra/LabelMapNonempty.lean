@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.PendTie
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalLabelUniqueStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalParametrization

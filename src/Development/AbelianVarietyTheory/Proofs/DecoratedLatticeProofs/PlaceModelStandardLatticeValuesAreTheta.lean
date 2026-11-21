@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FourUniq
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IpTheta
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfPartOneSubEInfSmul

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.EptInt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.PtInSmul
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormLeOneOfIsIntegral

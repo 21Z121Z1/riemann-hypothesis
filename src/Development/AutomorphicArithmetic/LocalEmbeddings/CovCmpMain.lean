@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.PullbackDegreeOfLineBundles
 import Development.AutomorphicArithmetic.DivisorFrames.PullbackDegreeGenericResidue
 import Development.AutomorphicArithmetic.DivisorFrames.ComparisonOfLineBundleSections

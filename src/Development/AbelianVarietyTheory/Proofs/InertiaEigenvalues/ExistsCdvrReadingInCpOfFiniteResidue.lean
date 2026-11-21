@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NatCastMemPlaceAt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUTestNontrivial
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPlaceEmb

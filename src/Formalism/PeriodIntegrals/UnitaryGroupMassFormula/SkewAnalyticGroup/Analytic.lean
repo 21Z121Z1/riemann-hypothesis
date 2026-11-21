@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SkewAnalyticGroup.IntegrableOfContOn
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SkewAnalyticGroup.HasDerivAtShift
 import Mathlib.Analysis.Calculus.Deriv.Star

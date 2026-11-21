@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.EllRegCheck
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AestronglyMeasurableExtendByZeroOffSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsContinuousFunctionalIterPartialDerivStatement

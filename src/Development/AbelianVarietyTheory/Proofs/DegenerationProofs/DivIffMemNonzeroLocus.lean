@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueIsRatio
 import Development.AbelianVarietyTheory.Definitions.Degenerations.InducedModelMorphismCompStructureMap
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts

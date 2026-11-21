@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosDefContinuousCompactNormEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeModelGramNormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionFormCompactBoundStatement

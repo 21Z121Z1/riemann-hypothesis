@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DefiniteThetaPairNormPadicValuationBoundStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoordIntOfJets
 

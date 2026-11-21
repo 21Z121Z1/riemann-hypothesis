@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LocCharDR
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.PstExact
 

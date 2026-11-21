@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinrankLetterHomComp
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

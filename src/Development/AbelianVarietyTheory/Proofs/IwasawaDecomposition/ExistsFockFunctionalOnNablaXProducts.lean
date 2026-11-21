@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.WeylLatDual
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualWeylEqSpanColProd
 open MvPolynomial

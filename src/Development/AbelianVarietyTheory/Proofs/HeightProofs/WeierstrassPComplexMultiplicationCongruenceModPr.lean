@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsWeierstrassPMulOde
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuotientEqLinearPowCharOfDerivativeEqZero
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.WeierstrassPTorsionIntegralAndDistinctMod

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousSetIntegralConstTermOn
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterEnvelopingCommutesLieStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightTranslationLieConjugateStatement

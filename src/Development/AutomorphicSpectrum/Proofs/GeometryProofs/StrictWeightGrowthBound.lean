@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ModelSmall
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsFormDefiningValueStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GoodOriginRootWeightBoundStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLatticeVectorBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsStableEigenTangentsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StableEigenAtComponentStalkStatement

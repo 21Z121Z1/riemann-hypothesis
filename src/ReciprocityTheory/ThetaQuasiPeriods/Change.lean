@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.Polynomial.Basic

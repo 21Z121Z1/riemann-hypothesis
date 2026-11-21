@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.FactorApply
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RadFinAdjoinStable
 import Std.Tactic.BVDecide.Normalize.Prop

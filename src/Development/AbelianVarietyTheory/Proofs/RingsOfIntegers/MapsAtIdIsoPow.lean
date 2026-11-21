@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.BoxSymIsSymmetry
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PullGenBoxGen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPowPolAVPowPolOf

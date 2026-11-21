@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StatementWithTransposeOfBranching
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BrEquivAll
 import Formalism.LocalToGlobal.Divisibility.BrJoint

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsMulCommutativeCentRealUJ
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowSmulNormLeOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.T2SpaceKq

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasSign
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmAtSmulRight
 

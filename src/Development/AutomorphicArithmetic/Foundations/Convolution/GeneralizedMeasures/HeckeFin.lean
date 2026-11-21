@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.StepFin
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.SphAct
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.PolyMem

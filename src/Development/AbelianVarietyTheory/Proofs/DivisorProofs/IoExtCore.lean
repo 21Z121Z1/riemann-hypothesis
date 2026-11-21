@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtensionOfLowSmoothLines
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinorProductFockVectorExtremalTorusWeightStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairRecordCore

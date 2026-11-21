@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealB
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.IdealStmt
 

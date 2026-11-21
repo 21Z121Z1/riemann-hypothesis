@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.HLatOps
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.TruncatedLatticeHolds

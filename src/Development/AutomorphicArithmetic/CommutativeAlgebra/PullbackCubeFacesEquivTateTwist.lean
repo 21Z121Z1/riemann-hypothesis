@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.StackProductIsPullbackOfActionPullback
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EqvTwistBlowupRestriction
 

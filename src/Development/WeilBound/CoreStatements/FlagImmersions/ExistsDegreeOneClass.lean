@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.CompactGapsGE
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.WittVector.IsPoly

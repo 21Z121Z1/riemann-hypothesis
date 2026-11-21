@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsRingHomPowPrimePow
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PfFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqCOfToLaurentEqInvert

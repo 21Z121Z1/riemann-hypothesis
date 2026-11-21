@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.SubMemOfCompat
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.IsEigBasisIff
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry TensorProduct Matrix

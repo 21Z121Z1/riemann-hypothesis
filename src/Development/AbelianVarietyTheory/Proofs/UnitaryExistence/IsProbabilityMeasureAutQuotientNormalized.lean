@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCoefficientDomain
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume

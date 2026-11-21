@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.ACrisLog
 import GroundTheory.PAdicHodge.LogPowSeries
 set_option maxSynthPendingDepth 1

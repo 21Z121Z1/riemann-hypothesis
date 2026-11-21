@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCliff
 import GroundTheory.GlobalFields.TateThesis.ArchCharsUnits
 import Mathlib.Analysis.InnerProductSpace.JointEigenspace

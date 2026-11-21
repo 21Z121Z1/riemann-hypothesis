@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TsumSchwartzBruhatLevelEqSumResidueCosets
 open Matrix Complex GlobalTheory.SW GlobalTheory.SW.FourierJ
 open scoped ComplexConjugate Real

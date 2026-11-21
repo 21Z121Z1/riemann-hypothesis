@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeFrameSpecializes
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreChartBundle
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilPairingLevelStructureFiniteFlatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualityTensorPairingCompatStatement
 set_option autoImplicit false

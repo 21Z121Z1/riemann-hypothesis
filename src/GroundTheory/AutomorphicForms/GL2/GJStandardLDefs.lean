@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.FiniteIdeleDecomp
 import GroundTheory.AutomorphicForms.GL2.GJFEInducedLevi
 

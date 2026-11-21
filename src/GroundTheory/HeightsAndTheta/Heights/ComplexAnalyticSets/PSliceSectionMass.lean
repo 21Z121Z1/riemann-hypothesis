@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceSectionMass
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceIdeal
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceComponents

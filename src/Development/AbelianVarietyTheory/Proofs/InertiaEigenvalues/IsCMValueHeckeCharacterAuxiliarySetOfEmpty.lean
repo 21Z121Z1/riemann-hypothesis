@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsValueTiedOfIsToricElt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLNeZeroNat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartEqOneOfLevel

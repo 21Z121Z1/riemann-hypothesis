@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FullOfSpanEqTop
 open NumberField IsDedekindDomain Matrix ValuativeRel Formalism.L2.Col
 open scoped Classical

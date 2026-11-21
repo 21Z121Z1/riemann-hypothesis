@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.RingTheory.SimpleRing.Principal
 open Formalism.ConjugateSelfDual Formalism.MainNotions.N Polynomial

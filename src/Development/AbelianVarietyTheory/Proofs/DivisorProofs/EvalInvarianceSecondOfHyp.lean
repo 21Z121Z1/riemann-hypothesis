@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPartOperatorCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBUnipotentEvaluationStatement

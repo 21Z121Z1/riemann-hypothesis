@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFieldTensorOfIsEmptyAlgHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmExistsMoved
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocChrOfResEtaPow

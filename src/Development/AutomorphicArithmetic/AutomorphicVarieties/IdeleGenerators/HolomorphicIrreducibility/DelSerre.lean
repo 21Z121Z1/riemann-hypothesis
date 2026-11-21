@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ConstSmall
 import Development.WeilBound.SimpleEigenvalues.SimpleEigenvalueExtension.SimEig
 import Mathlib.RingTheory.Etale.Weakly

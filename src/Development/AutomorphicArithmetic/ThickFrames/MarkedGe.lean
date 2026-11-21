@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThickFrames.expectationSpec
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ChoiceOfTops
 

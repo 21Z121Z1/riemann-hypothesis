@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.BesselOrbitBounds.BesselMapUniqueness.ContinuousOnOrbit
 
 open Matrix MeasureTheory Formalism.QuantumDeterminants CompanionTheory.D.Upq.Sm

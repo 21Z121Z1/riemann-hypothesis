@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsGPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussFieldIsEtPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointsAdditiveParametrizationStatement

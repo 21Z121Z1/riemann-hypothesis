@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LastStepIntertwinerOneTupleAllTuplesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IoPOfIsIoWAt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PItYOfOne

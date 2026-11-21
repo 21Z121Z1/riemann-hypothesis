@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBStabilizerLocalEvalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBStabilizerGlobalEvalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBStabilizerThetaEvalStatement

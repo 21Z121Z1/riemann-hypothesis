@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagPairs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureCballZpow
 import Mathlib.Order.Interval.Finset.Box

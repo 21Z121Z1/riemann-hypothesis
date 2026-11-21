@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SecEqOfSecBCIdOne
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFjNeZeroAtSplitPoint
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SumReCmTypeEqHalfTrace

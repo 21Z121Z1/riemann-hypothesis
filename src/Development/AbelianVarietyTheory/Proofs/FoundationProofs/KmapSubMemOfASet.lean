@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
 import Mathlib.RingTheory.AdicCompletion.Completeness
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

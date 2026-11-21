@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IrreducibleCapelliModules
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HwComponentTensorDualStandard
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorDualStandardRel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsCoordsAtOfCoordTie

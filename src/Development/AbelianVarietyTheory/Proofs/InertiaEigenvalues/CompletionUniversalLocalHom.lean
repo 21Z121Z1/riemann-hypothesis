@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCplAtApprox
 import Mathlib.RingTheory.AdicCompletion.RingHom
 

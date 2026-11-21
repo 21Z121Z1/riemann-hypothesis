@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoOfActionCompatibleMatchStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisionPointsCorrespondMatchedPullbacksStatement

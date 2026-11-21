@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 import Mathlib.Tactic.Monotonicity.Lemmas
 import ReciprocityTheory.AnalyticForms.LeviForms.TailCutA

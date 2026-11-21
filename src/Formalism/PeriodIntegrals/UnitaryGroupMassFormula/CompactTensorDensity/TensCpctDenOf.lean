@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.FinOrdAd
 import Formalism.PeriodIntegrals.AdCpctDen
 import Mathlib.RingTheory.Henselian

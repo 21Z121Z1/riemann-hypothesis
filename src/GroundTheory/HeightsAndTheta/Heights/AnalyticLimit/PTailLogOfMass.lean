@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StTailLogOfMass
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PTailLogOfMassCharts
 set_option maxSynthPendingDepth 1

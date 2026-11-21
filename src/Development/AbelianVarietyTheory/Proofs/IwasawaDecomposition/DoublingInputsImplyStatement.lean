@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DoublingInputsImply
 open GlobalTheory.Mem.Top.Bl GlobalTheory.Mem.LiteralAutomorphy
 set_option maxHeartbeats 1000000 in

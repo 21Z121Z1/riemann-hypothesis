@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsPeriodCompIsometry
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsOfFinOrderOfQuadratic
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsContraction

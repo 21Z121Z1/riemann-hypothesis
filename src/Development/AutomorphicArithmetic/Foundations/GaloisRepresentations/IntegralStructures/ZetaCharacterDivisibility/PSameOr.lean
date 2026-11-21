@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.ZetaCharacterDivisibility.StConj
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AdjoinForm
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjugateElement

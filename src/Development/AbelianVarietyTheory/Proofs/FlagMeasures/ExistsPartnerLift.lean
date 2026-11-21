@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DefiniteLatticeDiscriminantModuleCardDetSq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace

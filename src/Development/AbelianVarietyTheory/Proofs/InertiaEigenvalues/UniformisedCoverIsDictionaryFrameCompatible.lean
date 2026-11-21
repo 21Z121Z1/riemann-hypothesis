@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoversOfHalves
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IntFormsSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFormCompatBaseEmbedding

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.MapPart
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PiSpanVariable
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DensePiDecomposition

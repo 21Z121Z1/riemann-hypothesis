@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSocleSegmentProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientSegmentProductEquivStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosocleOfContragredientSocle

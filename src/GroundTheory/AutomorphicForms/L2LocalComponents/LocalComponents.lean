@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.L2LocalComponents.Summand
 import GroundTheory.AutomorphicForms.SupercuspidalCoefficients
 

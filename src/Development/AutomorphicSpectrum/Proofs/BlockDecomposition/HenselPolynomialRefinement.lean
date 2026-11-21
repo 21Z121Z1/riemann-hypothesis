@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsEvalEqProdOfNatDegreeEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulProdCongr
 import Mathlib.Tactic.Monotonicity.Lemmas

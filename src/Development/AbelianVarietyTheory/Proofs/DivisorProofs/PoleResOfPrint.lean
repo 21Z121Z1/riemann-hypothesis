@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinResidueLine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwiningConstEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoConstTerm

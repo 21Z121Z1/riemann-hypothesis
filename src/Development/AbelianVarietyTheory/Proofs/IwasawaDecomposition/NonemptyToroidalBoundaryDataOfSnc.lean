@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromSpecStalkMemZeroLocusIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DdcLogNormBoundedByKaehlerStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjInvariantDivisorNormStatement

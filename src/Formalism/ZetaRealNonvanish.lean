@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.Statement
 
 open Complex MeasureTheory Set Filter Topology

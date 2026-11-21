@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PtMapDualBCLeft
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapPairDetCovec
 

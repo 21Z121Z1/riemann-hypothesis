@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMeasY
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelsWith

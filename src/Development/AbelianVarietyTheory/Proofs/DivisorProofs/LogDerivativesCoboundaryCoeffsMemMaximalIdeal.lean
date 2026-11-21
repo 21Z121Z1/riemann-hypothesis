@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.AwayToAwayRightEqOfComp
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts

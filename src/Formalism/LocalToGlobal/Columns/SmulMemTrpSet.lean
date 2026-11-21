@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
 
 open NumberField IsDedekindDomain Module

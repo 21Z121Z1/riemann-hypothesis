@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ConeFactorisationOfCodimensionTwo
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.KAtCompact
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.FinSpan

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SplitTorusHomProperTrivialField
 import Mathlib.AlgebraicGeometry.Birational.RationalMap
 import Mathlib.Order.CompletePartialOrder

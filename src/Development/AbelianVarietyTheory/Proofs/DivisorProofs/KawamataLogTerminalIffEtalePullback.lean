@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimeDivisorEtalePullbackOrdersStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeDivisorOverRestrictEtaleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeDivisorLiftAlongEtaleMapStatement

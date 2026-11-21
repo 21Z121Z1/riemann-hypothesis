@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PiMapMemLocalSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubmoduleMembershipLocalStatement
 

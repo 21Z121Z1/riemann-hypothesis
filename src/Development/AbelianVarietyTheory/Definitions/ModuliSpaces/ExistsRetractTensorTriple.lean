@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.PowObjGeometricallyConnected
 import Development.AbelianVarietyTheory.Statements.HeckeInFamilies.GenericMemChart
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProperZeroTriple

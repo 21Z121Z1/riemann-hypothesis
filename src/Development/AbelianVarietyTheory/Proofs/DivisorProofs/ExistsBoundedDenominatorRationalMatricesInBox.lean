@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalFinPartInCompactBoundedDenominatorStatement
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealSizeNonneg
 open scoped Matrix NNReal ENNReal TensorProduct

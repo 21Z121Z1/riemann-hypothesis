@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StBoundedInverseCompact
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Matrix.PosDef

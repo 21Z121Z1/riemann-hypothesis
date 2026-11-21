@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.IntegralPolyLinearMapClosed
 import Mathlib.Data.Finsupp.Interval
 import Mathlib.RingTheory.LocalProperties.Reduced

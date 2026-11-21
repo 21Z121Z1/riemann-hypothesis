@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueLeviElement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementTorusPart
 

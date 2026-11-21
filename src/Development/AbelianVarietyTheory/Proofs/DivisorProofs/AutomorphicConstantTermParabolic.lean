@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLineContinuous
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RderMemAutFormsCuspForms
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport

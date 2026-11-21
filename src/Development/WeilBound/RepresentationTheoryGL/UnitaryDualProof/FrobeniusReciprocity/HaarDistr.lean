@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LocallyConstantCompact
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.FrobeniusReciprocity.PowNear
 import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.FrobeniusReciprocity.PullHomeoApply

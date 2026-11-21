@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SiegelReframe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPrimitiveClosedOneFormStatement
 import Mathlib.Analysis.Normed.Module.RCLike.Extend

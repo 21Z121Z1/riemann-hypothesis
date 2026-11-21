@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaLin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportAlg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenOfSpecializesIff

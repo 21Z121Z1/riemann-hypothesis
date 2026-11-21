@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.GoodGeneric
 import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InTypeIsoSortedPos

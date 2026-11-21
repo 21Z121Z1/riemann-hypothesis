@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjugateEmbApply
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDiagSpacesOfCh
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpreadLamOfLe

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ChainLawPhi
 import Formalism.LocalToGlobal.Columns.ChainLawExt
 import Formalism.LocalToGlobal.Columns.RecLevelDiv

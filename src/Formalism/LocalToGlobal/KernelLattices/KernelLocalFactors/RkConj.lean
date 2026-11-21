@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThIndEqAmbOfOf
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.Smooth
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.AmbOfENeSd

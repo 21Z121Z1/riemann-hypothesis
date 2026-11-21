@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecValAt
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.ExistsNotIntegralLie
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalSystemBasesNonempty

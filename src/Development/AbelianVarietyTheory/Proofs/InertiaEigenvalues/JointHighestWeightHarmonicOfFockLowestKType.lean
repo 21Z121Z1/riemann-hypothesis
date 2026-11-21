@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZRYRCover
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsKHwMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueJointTop

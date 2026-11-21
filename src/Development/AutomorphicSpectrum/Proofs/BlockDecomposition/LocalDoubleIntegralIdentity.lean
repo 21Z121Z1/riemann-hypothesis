@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaDecompositionGlTwoHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaCoordinatesBoundedRegionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaRegionMeasureBoundStatement

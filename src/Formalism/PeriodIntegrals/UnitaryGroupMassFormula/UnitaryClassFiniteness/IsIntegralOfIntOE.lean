@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicClassFiniteness.DictRing
 import Formalism.PeriodIntegrals.UJClassFin
 import Mathlib.RingTheory.PiTensorProduct

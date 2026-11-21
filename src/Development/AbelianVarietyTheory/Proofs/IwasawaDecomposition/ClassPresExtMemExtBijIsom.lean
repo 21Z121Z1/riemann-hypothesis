@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic
 
 open Formalism.IndefR Formalism.L2.DIV

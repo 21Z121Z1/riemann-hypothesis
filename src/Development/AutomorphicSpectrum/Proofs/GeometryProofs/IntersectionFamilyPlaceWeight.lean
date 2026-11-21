@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsEqMulMultOfUnits
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionFamilyFlatTwistStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GreenCurrentIntegralFormulaStatement

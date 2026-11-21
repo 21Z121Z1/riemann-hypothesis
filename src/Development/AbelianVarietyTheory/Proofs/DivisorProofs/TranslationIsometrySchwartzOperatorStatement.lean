@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslationIsometrySchwartzOperator
 open MeasureTheory Filter Topology
 open scoped SchwartzMap

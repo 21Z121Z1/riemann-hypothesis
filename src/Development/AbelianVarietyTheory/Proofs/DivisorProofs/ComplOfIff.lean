@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamSubbundleAffineSectionCriterionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamFiltrationIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianShortExact

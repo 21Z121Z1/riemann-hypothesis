@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsCharIffCoord
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsCharTraceOfMul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsListProdStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenBasicOpenSpecProdSelfFirstIdempotent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdempotentOfClopen
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.AlgConn

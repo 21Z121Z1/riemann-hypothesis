@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.StdAdditiveCharExists
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.StdCharTR
 

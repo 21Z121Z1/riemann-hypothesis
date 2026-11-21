@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.LocalFourierChar
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.CharacteristicFromRanks
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TwoMulChainStartIndexAddOneOfOdd
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PowAdditiveAndRoots

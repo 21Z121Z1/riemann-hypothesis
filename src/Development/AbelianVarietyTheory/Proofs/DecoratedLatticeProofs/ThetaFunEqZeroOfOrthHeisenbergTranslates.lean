@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaThetaFunctionsOrientedPair
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.ClosureConjugation.GrAlg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ThetaDiag
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.VrRange

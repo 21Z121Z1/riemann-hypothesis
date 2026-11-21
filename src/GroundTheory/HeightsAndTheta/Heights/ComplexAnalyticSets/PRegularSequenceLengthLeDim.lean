@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRegularSequenceLengthLeDim
 import Mathlib.RingTheory.KrullDimension.Regular
 import Mathlib.Tactic.Monotonicity.Lemmas

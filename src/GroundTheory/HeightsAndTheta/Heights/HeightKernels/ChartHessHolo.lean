@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ChartMassAffine
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.Order.CompletePartialOrder

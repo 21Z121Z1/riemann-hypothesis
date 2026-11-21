@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TendstoSmulCocompact
 import Mathlib.Algebra.Ring.IsFormallyReal
 

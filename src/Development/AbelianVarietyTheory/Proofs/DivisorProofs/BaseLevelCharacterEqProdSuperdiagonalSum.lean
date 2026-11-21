@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.LevelCuspCharacters
 import Formalism.SharpRestriction.Divisibility.LiftErrorLocal

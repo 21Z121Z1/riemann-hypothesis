@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Adele.Compact
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.DiagMulVecTmul
 

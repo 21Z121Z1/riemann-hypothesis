@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.KFinite
 import GroundTheory.AutomorphicForms.TensorProductTheorem.GenWindow
 

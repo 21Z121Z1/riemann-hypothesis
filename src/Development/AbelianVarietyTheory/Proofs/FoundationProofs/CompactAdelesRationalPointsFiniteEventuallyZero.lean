@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValHalfInf
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CocompactTensor
 open scoped TensorProduct NNReal Matrix

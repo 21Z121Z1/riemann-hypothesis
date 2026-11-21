@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticFunctionalGradedLineBundles
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleFamilyPullbackProduct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelabelRootPowerSumAndSignsStatement

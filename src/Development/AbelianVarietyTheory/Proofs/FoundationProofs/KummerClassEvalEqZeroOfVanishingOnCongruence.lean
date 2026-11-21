@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsRootOne
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Etale.Weakly

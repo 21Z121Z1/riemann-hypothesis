@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.ContinuousTo
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MetaplecticUnipotentBlockSecondDiag
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MapOfRealMul

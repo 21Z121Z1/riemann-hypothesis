@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThickFrames.MarkedLow
 import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 import Mathlib.Analysis.Complex.ExponentialBounds

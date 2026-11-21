@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecDefs
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.GalBasic
 import Std.Tactic.BVDecide.Normalize.Prop

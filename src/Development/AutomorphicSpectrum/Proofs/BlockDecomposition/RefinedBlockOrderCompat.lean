@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 import GroundTheory.AutomorphicForms.GeometricLemmaNormal
 set_option maxSynthPendingDepth 1

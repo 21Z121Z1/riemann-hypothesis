@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ShaTwist
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.KummerShaOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Coprime

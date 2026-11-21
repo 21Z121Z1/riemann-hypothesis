@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.InvariantLevels
 import GroundTheory.ProfiniteCohomology.CohomologyTwoIntAddEquivQZSymmApply
 set_option maxSynthPendingDepth 1

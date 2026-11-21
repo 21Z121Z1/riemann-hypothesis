@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SameSetup
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsBasisAtTransport
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports

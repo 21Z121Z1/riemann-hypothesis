@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.TateTwists.EtaleTensorComplexExistsOfSheafTensorComplex
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

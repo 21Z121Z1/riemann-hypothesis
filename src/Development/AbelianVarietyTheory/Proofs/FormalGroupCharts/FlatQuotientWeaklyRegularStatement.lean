@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FlatQuotientWeaklyRegular
 open IsLocalRing TensorProduct
 set_option maxHeartbeats 1000000 in

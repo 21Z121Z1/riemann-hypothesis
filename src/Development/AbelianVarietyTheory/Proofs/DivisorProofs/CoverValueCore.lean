@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFifth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelsAtRecordCore
 

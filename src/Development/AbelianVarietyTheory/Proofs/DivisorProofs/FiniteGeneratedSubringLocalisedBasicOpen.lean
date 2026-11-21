@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinSubRange
 import Mathlib.AlgebraicGeometry.Noetherian
 import Mathlib.Order.CompletePartialOrder

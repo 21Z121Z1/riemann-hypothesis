@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TracePowEqZeroOfLeDim
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.PicardGroup

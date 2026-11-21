@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SubHalfRankInt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NuRowSuccEqWt
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.KernelAwayPrimes

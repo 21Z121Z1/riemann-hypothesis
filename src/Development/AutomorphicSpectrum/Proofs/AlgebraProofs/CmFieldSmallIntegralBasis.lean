@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.TraceDualLattice
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FinrankMulDiscrRpowLeSumSqOfMemTraceDual
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsIndependentLeOfDualMin

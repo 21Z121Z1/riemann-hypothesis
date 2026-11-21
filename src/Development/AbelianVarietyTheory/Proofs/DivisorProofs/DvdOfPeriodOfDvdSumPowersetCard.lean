@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardDvdSumOfInvariantOfCardStabilizerDvd
 import Mathlib.Algebra.BigOperators.ModEq
 import Mathlib.Algebra.Group.Action.Pointwise.Finset

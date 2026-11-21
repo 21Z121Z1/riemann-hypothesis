@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionEqOfValuesAtLabelTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationGenericFramesScaleByConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberExpansionTermsEqStatement

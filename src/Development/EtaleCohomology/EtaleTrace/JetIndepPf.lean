@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleTrace.LCoverCut
 import Mathlib.RingTheory.MvPolynomial.EulerIdentity
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

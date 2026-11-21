@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.SelfTwistEigenvalues.CliffordSS
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 import Mathlib.RingTheory.Henselian

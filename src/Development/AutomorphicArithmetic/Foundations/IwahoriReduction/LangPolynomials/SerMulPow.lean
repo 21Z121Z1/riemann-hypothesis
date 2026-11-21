@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.NormGal
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.NormLev
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.SubOneMemOfPow

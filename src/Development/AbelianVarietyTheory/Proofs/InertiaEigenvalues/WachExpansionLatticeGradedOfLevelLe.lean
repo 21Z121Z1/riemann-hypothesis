@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnramifiedSubfieldLeCyclotomicExt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SingleMemOfSupportSubset

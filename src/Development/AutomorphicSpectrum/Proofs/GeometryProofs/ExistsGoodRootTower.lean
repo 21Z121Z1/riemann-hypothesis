@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsCptGenResidueFieldGenericStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsReferenceGeometrySameGenericStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsHolomorphicSectionOfAnalytic

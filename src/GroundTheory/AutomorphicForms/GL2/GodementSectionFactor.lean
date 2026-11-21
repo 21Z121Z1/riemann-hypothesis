@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GodementSectionUnramified
 import GroundTheory.AutomorphicForms.GL2.GodementSectionLocal
 import GroundTheory.AutomorphicForms.GL2.FiniteIdeleDecomp

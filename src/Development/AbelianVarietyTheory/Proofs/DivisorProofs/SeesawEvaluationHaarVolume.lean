@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisAtMinusRho
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RatFixLeRatStab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalEigenTriple

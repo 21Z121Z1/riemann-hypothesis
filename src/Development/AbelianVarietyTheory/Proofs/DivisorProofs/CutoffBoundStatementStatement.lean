@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CutoffBoundStatement
 open GlobalTheory.CovTop GlobalTheory.BigTop
 set_option maxHeartbeats 1000000 in

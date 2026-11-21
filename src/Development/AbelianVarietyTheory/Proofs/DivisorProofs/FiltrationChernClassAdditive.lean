@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelFrobeniusNoEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NoEmbeddingExtensionClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KilledPresentationExtensionFrobenius

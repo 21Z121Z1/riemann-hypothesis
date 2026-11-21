@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryQuotientCompactness.SsetGroup
 import Mathlib.Analysis.CStarAlgebra.Matrix
 import Mathlib.Algebra.Order.Star.Real

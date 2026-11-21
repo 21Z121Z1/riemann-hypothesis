@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntEmbInjective
 import GroundTheory.HeightsAndTheta.Theta.CMDatum
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

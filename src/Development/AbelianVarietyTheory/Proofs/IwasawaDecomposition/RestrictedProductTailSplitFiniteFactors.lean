@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralPointsFinitePlaceTensorProperties
 import Mathlib.Analysis.SpecialFunctions.Log.Summable
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Homology.HomologicalComplexAbelian
 import Mathlib.Algebra.Homology.HomologySequence
 import Mathlib.Algebra.Homology.ShortComplex.Ab

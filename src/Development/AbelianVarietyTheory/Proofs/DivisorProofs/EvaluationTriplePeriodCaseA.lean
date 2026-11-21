@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairDoubleDescentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingExistsDoublingConfiguration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementSkewGood

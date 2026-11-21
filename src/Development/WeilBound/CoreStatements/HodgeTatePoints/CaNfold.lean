@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBIdAd
 import Development.WeilBound.CoreStatements.HodgeTatePoints.Comp1IdentityLeft

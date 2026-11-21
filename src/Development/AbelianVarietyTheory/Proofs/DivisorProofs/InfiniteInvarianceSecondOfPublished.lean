@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFunctionStabilizerIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalEigenTriplesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalEigenUnfoldingStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsVanBdOfMemExtVanZ
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.OffZero
 

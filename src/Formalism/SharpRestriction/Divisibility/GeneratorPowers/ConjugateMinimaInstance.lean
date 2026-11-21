@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinima
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 

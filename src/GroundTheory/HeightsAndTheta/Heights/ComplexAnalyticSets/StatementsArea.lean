@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.Analysis.InnerProductSpace.Adjoint

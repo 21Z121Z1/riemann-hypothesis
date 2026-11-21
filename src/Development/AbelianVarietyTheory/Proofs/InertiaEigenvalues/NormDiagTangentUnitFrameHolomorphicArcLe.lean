@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOne
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolArcNilpotent
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HermFormSumSmul

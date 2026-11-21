@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsECAUnits
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarMemIdelesAtOfIsLevi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateEmbeddingCharacterInverse

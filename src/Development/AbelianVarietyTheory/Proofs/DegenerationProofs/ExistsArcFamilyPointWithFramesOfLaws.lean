@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ArcFamSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsExtendValuation
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AdmissibleBaseOfCompleteDvr

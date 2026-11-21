@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelCharacterEigenvectorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFourth
 

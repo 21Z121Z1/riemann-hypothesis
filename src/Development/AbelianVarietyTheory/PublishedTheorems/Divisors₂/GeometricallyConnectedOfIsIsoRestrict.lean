@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GenHom
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwistLeray
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FlatIsoUnitGenerator
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.FlatTorsionIsomorphism
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TorusExtensionOverCompleteLocalDvr

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLineGenOn
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen
 import Mathlib.LinearAlgebra.ExteriorPower.Pairing

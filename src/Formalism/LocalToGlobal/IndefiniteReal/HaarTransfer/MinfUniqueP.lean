@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.HaarDensityNeZero
 
 namespace Formalism.IndefR.Leaf.Proofs

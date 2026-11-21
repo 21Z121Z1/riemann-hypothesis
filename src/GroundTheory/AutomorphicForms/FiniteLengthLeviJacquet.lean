@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LeviStagesInduction
 import GroundTheory.LocalFields.PadicLogSeries
 set_option maxSynthPendingDepth 1

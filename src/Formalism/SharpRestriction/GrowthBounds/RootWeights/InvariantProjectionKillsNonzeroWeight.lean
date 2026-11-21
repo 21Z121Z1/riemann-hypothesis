@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.BinomialPreservesDiagonalStable
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.LoweringWordWeightOrNMinus
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.MemWeightSpaceIffDiagonalEigen

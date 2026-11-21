@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsBaseChart
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogPeriodStatementStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticFirst

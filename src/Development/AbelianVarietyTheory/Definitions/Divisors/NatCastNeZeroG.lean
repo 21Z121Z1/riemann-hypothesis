@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes

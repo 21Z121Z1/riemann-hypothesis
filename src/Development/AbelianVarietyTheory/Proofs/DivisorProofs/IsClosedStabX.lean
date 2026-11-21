@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacqExists
 import Mathlib.MeasureTheory.Group.ModularCharacter
 import Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar

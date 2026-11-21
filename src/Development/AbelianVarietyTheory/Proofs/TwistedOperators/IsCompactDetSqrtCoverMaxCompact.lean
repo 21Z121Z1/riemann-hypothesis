@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Upqcpt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousExptPY
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.BlockOrderedSquareIntegrable

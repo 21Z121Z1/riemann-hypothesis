@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvatureQuotientSubBlock
 open Matrix Complex ComplexConjugate Filter Topology
 open scoped ComplexOrder ContDiff

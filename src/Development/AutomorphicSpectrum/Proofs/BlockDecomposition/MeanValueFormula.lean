@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteProductDifferenceBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TailSumOverPlacesSmallStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MultipliableLocalFactorsStatement

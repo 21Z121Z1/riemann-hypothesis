@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnectionDifferentiable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WedgeWedgeAnticomm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SgnInsertOfNotMemNe

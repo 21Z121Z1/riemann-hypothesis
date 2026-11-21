@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotDComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageCochainExists
 

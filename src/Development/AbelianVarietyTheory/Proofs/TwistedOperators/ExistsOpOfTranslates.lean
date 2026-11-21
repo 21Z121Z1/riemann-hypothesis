@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RationalHeckeScalars
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClassPresBasic
 

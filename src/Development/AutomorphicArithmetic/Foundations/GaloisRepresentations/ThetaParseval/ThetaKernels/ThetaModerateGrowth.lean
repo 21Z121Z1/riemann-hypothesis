@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.WeilRationalSupportBound
 import Development.WeilBound.ThetaLifts.LeviDeterminants.AdelicThetaSumNormLePolynomialScale
 

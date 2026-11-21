@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FormsStableOfTgtEq
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelChainUOperatorCommutationOfPointPairLaw
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExtInOfValIn

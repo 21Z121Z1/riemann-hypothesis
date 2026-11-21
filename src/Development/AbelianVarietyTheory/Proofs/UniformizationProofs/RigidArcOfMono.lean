@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfPullbackId
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsPullDegId
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ArcWitPointEqOfIso

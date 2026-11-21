@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRegFormCompare
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSheetFormCompare
 set_option maxSynthPendingDepth 1

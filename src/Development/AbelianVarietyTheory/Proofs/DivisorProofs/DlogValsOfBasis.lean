@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LengthLetters
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagFramePrimeTangentCompat
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

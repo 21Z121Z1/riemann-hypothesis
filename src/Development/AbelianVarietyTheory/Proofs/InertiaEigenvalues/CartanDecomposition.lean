@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Cartan
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCharLab
 

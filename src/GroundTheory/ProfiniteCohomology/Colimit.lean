@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ColimitDefs
 import GroundTheory.ProfiniteCohomology.FilteredHomology
 import GroundTheory.ProfiniteCohomology.Factor

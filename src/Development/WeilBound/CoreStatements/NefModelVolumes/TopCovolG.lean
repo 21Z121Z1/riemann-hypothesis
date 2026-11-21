@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeFromGramAndBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramBoundStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RecursionOfGramBoundStatement

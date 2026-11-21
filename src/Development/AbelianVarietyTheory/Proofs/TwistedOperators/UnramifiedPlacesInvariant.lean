@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPlaceLatticeStabiliserFixesVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EigenEqOne
 

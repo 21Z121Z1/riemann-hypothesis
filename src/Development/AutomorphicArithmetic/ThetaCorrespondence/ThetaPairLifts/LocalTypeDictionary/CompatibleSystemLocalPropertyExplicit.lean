@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaLocalInputs
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.InjPrimeTo

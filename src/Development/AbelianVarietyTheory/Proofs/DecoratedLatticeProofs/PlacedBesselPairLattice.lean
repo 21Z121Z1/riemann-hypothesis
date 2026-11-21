@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PlacedP
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualLatticeFrameChain
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntOfSmul

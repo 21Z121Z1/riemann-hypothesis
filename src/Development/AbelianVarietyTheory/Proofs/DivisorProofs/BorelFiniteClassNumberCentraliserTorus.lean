@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormGroupToPadicPointsDegreeOneEqUnitaryPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDoubleCosetAwayP

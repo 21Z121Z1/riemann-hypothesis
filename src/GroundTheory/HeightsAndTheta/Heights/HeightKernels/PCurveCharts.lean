@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsClosedPointChart
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 set_option maxSynthPendingDepth 1

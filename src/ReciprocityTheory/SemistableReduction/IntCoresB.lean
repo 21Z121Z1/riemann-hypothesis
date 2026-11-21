@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.IntCoresA
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.MeasureTheory.Measure.RegularityCompacts

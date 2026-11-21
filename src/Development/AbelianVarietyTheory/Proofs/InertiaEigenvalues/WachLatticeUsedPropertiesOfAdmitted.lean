@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdditiveOfSumFor
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsNoetherianRingOL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinesAtOfLatticeAtLevels

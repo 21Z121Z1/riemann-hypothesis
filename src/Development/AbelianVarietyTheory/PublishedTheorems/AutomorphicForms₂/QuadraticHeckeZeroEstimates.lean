@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
 import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs

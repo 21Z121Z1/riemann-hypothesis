@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FRatioSelf
 import Development.AbelianVarietyTheory.Definitions.Divisors.ComparisonMemCechHodgeFiltration
 import Development.AbelianVarietyTheory.Definitions.Divisors.DetJacMatCoordsEqTransitionJacobianDet

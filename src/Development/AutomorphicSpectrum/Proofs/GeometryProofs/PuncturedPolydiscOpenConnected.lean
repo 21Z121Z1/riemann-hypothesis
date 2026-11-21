@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.BdryChart
 import Mathlib.Analysis.Normed.Module.Connected
 

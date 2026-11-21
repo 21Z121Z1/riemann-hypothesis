@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HESmulRight
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AdmissibleCharactersExist
 

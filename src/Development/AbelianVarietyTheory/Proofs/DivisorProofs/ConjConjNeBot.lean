@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TranslateSumVacuumMovedByAdelicPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinTensAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqTopOfOneMem

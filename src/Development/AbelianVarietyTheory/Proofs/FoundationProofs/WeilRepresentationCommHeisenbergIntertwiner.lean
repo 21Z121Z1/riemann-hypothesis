@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsThetaLatticeCorrespondenceWeilOperatorStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeilRepresentationThetaMovedLatticeStatement
 

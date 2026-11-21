@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIdemOfAlgebraMap
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 

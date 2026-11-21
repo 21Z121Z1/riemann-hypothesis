@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.SplitTorsionLabelsExist
 import Development.AutomorphicArithmetic.DivisorFrames.TorsionLabelsOnSeparatedModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPointExtensionSplitStatement

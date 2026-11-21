@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QdetTopThreeOrders
 import Mathlib.Algebra.Module.StablyFree.Basic

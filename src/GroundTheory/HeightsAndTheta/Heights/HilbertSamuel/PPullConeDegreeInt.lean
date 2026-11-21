@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullConeDegreeInt
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullConeDegree
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WeierstrassPSuperlatticeHalfPeriodProd
 open GlobalTheory.MomOne GlobalTheory.MomN PowerSeries
 open scoped ComplexConjugate

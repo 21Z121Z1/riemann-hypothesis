@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharCmEqOneOfTrivialDegreeOne
 open NumberField IsDedekindDomain HeckeValGen GlobalTheory.HeckeSplit
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EigEqZeroOfMemAugOfNotIntertwineStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsEigTranslateOfSubMemAugStatement
 import Mathlib.Order.CompletePartialOrder

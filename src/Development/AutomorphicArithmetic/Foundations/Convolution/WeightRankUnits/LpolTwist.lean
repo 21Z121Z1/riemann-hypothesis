@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaProdAlt
 import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.UnitAe
 

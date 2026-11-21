@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStepCharIdealValueEqBaseMulRootOfUnityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BasePlaceCharacterFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistPlaceStepFactorInverseAwayUnitStatement

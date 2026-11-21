@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOneP
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.RingTheory.PiTensorProduct

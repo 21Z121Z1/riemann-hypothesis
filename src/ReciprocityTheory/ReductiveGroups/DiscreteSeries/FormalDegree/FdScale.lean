@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.TraceMulSelfEqSumEigenvaluesSq
 import Mathlib.CategoryTheory.Countable
 import Mathlib.Topology.Separation.CompletelyRegular

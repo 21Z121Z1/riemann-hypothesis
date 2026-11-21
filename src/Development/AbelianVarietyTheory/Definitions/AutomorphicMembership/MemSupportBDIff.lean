@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousAndSmul
 

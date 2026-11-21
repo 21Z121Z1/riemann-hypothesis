@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightLineSelfIntersectionZeroOfEqualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightLineIsNefOfAntitoneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfInterGrLineShiftCoordinateStatement

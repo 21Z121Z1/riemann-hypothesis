@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEmbeddingIsoFiniteStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEqTopOfEtaleStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderComapHomStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsorModelFilteredColimit
 open IsLocalRing Polynomial
 set_option maxHeartbeats 1000000 in

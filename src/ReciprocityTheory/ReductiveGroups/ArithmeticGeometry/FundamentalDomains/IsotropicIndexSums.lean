@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.MajPos
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.IsotropicIndexSums

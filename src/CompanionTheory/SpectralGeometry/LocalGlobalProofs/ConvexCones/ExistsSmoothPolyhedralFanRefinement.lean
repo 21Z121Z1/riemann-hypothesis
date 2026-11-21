@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.ExistsSimplicialLabelledRefinementStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.ExistsSmoothSubordinateFanStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcPolarization
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeneratorExtendsTensor
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeneratorExtendsPower

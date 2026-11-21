@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CobOneEvDefectDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefectCompat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueLieOfAdditive

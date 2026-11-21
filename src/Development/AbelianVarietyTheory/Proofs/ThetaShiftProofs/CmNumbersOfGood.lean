@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EqZeroOfPow
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FormLetterLe

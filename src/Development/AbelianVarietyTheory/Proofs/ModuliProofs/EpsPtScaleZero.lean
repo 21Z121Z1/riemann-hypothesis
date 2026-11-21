@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueTangentLift

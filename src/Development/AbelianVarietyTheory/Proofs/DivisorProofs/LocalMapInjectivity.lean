@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSigmaLiftW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicTensorNumberFieldIsReduced
 import GroundTheory.Brauer.TensorSimple

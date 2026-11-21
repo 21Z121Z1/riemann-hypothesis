@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.AdeleScaling
 import GroundTheory.AutomorphicForms.ReductionMeasure
 open Matrix NumberField IsDedekindDomain GlobalTheory.WeilM MeasureTheory

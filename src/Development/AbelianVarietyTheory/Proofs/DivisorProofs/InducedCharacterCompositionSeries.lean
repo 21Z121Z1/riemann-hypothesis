@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorDeterminantPairEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParabolicInductionColumnEquivStatement

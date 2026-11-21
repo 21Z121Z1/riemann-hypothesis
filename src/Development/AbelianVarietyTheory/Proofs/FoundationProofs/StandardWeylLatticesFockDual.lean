@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.PairingNondegenerateHolds
 import Formalism.LocalToGlobal.Columns.CoefficientsModP.FkPderivBlockEmbNe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.StdWeylLatticesFgAndSpanCoeffSpace

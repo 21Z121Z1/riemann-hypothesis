@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsStabForm
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameMulTriangularOrthonormal
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ContinuousRmulPair

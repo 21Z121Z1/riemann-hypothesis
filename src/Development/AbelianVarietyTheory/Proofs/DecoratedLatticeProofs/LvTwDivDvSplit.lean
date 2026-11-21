@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormEulerPolySubOneLe
 import Formalism.SatakeDualWeyl.StatementE
 open scoped TensorProduct NNReal Matrix

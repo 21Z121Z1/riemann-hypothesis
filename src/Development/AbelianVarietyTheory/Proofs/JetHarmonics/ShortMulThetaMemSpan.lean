@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffMoreColumns
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsBetaUnitBlock
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ShortSeriesBlockProduct

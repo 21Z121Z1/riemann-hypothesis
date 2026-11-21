@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaDistributionUnfolded
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FormsAre
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ApplyAt0PolDEquivariant

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SubframeDetLogGrowth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PeriodMatrixLocalTrivializationStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTieFB
 import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 import Formalism.LocalToGlobal.CharacterGerms.RowTie

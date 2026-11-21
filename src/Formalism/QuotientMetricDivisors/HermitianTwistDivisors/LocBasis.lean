@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.QuotientMetricDivisors.ProdFormula
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.DedekindDomain.PID

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NotIsLineFnZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFramesAnalyticStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WedgeEigenLineGeneratorStatement

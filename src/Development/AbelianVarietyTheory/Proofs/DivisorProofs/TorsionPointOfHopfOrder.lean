@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionKernelFinitePresentationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartIsLocalizationAway
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfEvalEq

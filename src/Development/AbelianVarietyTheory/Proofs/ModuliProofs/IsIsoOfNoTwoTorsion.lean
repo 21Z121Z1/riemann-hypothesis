@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsGeometricPoint
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsQProjOverOfIsIso
 

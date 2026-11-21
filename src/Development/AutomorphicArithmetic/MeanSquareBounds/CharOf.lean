@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.StagePow
 import Development.AutomorphicArithmetic.MeanSquareBounds.ExistsCoprimePrimePairSetSecondEqPPset
 import Development.AutomorphicArithmetic.MeanSquareBounds.LogOddM

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CayleyOperatorPowEqSignedSumPartialDerivs
 open MvPolynomial ReciprocityTheory.PGsh GlobalTheory.CayleyBlock
 set_option maxHeartbeats 1000000 in

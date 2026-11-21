@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsExtPointSpecializingOutsideBasicOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicApproxAlgebraicPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicPointAffineApproxStatement

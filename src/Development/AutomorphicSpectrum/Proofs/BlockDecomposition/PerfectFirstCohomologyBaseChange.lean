@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatQuotientOfUniversallyInjectiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LinearMapZeroOfInjectiveFullRankStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFreeKernelSplittingStatement

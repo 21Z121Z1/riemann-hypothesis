@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceOfSection
 import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueSamePt

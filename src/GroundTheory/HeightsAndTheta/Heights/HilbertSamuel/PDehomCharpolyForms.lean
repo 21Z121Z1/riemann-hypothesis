@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsDehomCharpolyForms
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullFormsGeneric
 import Mathlib.LinearAlgebra.Charpoly.BaseChange

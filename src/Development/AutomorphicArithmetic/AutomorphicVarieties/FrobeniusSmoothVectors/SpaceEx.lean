@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.RbarProd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.OrdOfFlag
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.UnivLift

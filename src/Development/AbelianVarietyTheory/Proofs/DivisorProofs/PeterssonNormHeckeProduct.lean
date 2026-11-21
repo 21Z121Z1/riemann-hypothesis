@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFunOPosSigIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeFormAnisotropicRallisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteBottomThetaIntegralNormSqEqPeterssonStatement

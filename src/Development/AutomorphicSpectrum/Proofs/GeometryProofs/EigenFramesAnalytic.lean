@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFrameFunctionCompareStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GagaLineGeneratorEmbeddingStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointNormalCoords

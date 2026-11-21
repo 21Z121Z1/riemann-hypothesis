@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageDerivativeL1Bound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveKernelUniqueness
 

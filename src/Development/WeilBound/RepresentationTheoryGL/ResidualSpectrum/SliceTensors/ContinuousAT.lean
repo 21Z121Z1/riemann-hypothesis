@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PExpFin
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpehDataUnique
 

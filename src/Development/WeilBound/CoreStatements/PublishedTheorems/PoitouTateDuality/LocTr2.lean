@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalPtfsData
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.FinalInv
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.TransferCupDegreeTwoZero

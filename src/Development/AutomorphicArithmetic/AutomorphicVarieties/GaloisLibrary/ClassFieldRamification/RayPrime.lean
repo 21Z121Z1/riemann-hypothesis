@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RayPrimeSpan
 import GroundTheory.GlobalFields.ClassFieldConsequences.RayClassField
 

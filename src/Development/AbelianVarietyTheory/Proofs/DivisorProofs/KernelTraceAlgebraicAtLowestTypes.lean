@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOfAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanTranslatesEqTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SingleThetaSeriesKEquivariantLowestType

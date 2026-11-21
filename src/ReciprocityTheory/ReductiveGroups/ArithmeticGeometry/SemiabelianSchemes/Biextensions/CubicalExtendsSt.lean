@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.Biextensions.GenericFiberCubeInclusion
 import Mathlib.AlgebraicGeometry.Geometrically.Connected
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.InJSymRestrict
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClassMapEstimateOfPartial
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.DefNOfFact

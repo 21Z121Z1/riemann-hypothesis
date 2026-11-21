@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.ClPullApply
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.ExistsCen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign

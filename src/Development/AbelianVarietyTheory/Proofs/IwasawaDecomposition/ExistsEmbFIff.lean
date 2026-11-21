@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryOfIsON
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBasisAtOfIsLocBasis
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.PlacesOverConjPrimes

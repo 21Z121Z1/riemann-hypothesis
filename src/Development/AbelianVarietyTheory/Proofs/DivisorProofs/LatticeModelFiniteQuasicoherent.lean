@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFrameOfForallExists
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEulerContraction
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits

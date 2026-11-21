@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AdelicQuotients.QuotientHaarMeasurePushforward
 import Development.AutomorphicArithmetic.AdelicQuotients.AdelicGLSplitEquiv
 import Development.AutomorphicArithmetic.AdelicQuotients.QuotientMeasureSplit

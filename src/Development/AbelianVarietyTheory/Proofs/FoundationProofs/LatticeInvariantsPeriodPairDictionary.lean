@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LatticeDeterminedByInvariants
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 

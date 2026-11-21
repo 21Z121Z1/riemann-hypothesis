@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSplitPlaceGood
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitPlaceHeckeSatakeStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DoubleCosetSupportAtSplitStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.BrauerInductionLocal
 import GroundTheory.LocalFields.BrauerInductionElementary
 import Mathlib.Algebra.Group.ConjFinite

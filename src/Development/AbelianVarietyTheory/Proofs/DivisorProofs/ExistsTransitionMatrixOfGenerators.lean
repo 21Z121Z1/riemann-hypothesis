@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularFrameDiagonalRatiosStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularModulusProductsStatement
 

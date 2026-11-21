@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.SemilocalAlgebras.Galois
 import Mathlib.RingTheory.TotallySplit
 

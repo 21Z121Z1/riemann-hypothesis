@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DictionarySizeBoundStatement
 
 open GlobalTheory.SumSize GlobalTheory.RowClaim

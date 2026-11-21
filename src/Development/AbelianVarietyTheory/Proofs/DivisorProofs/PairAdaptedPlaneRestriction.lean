@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicCoordinatesEvalZeroFormMemAdmissible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanBaseChangeOfAnnihilatorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticGeneratorPreservesFormStatement

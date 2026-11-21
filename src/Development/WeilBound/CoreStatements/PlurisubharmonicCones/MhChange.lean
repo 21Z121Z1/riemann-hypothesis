@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.LevelFree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataIntersectionBound
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.VerticalHodgeMetricLogFormulaStatement

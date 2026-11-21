@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldOfRepresentationStatement
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.LinearMapShortExactCommuteStatement
 open GlobalTheory.BI

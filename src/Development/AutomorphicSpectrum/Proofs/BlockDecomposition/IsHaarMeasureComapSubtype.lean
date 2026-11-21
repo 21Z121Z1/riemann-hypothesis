@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilModulusHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormImageNeighbourhoodEventually
 open MeasureTheory Matrix GroundTheory.LocalField GroundTheory.Automorphic Ad3 Ad3.K.GL2LocalData

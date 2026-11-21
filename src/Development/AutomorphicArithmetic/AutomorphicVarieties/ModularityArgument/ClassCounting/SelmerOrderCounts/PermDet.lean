@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.RingTheory.PiTensorProduct

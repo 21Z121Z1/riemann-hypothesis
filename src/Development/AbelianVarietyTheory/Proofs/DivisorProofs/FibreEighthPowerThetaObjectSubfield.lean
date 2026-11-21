@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SharpRefinementOddPrimeLocalizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SharpRefinementCoefficientFamilyStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

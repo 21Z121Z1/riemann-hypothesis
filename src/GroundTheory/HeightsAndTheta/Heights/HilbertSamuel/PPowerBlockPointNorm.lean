@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockPointNorm
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionPointValue
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLocalRep

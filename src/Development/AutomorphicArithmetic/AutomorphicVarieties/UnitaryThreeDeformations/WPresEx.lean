@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.ConjPushMat
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.WeightedEntrySubMemIdeal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.WPresGen

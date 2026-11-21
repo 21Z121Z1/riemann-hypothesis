@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeInnerProductConjugateStatement
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Mathlib.RingTheory.PicardGroup

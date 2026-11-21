@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SizeFinitePlaces
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjugatePlacesFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LogAbsBasicFacts

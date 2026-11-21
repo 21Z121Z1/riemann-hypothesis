@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableHermC
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

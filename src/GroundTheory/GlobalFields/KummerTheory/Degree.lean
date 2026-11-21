@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.KummerCorrespondence
 
 namespace GroundTheory.Global

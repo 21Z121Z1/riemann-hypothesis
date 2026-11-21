@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionPullbackDifferentiableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaPieceSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarPlusAdjointSmoothStatement

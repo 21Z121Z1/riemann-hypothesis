@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSupportedIdele
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteAdeleBaseChangeEquiv

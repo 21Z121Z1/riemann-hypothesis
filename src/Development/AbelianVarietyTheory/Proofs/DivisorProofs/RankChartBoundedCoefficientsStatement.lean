@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankChartBoundedCoefficients
 open GlobalTheory.WeilM Matrix
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsAffineSplitTorusLeft
 import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueTorusCompat
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FieldChartOfInj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubsingletonSpectrumDualNumber
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftsAlongSmallExtensionOfDualNumberLiftingStatement

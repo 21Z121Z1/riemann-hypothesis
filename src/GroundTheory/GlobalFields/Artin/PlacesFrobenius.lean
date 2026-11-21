@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.Places
 import GroundTheory.GlobalFields.Artin.MackeyFrobenius
 import Mathlib.Algebra.AffineMonoid.Basic

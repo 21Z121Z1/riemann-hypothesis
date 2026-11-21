@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsThetaMeanSquareNorm
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.AssemblyAnalytic
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.CoordSiegel

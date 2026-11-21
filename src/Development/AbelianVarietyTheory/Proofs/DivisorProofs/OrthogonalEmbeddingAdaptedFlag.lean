@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGradedRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishingOnRegularFlagged
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubmatrixSchurComplementCompat

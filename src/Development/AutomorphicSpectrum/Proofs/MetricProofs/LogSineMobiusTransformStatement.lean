@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogSineMobiusTransform
 open Matrix GlobalTheory.CompanionTheory.Ar.PB
 open scoped ComplexOrder

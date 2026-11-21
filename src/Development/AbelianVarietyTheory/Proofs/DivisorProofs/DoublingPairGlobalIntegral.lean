@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabiliserArchFiniteDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingPairUnfoldingLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingPairUnfoldingOrbitStatement

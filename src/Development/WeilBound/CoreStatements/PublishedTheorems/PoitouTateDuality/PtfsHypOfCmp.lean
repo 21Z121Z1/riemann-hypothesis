@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsTransfer
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsShaHalf
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsHyp

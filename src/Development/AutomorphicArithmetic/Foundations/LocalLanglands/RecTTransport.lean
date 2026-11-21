@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CuspLaws
 import Mathlib.Data.Multiset.Functor

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulMemOfForall
 import Mathlib.Algebra.Module.SpanRankOperations
 open IsLocalRing TensorProduct

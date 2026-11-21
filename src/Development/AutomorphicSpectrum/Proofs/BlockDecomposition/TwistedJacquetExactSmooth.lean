@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.TwistedKernels.TwKerLeComapOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwKerEqMapOfSurjective

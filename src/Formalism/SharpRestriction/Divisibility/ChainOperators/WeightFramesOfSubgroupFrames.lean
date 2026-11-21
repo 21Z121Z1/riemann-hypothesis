@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.NablaSpans.MinorProdSpanHasCompl
 import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.MinorSpanCompl

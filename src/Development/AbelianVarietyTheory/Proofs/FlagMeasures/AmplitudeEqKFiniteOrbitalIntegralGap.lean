@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.UniqGapOfUniq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplifierOfHypotheses
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.HaarEqSmul

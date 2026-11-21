@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.DegLeOfEquiv
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenProjectorsSplitAction
 import Mathlib.Order.CompletePartialOrder

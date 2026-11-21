@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AllRows
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LoopRowOfFiniteDim
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OffK0Closed

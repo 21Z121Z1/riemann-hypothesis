@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterPC
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.SNCstep
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.Immersion

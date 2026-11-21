@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodicSectionContinuousLimitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductAbelianContinuousCoordsStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Matrix Filter Topology MonoidalCategory CartesianMonoidalCategory

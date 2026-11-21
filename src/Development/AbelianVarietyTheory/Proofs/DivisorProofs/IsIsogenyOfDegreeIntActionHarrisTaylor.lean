@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardLTorsionEqPowOfTateSimilitudeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyDegreeOfFibreRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFiniteAndFinrankEqNormPowStatement

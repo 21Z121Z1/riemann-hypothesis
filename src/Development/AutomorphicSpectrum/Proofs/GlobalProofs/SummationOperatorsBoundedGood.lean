@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialSum
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurther
 import Mathlib.Tactic.ENatToNat

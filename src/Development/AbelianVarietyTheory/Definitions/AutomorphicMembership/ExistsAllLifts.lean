@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ResCharThetaJetPlaceDegOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ConstMapInjective
 import Mathlib.NumberTheory.LSeries.PrimesInAP

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FamIdeal
 import Mathlib.AlgebraicGeometry.Morphisms.Finite
 import Mathlib.RingTheory.WittVector.IsPoly

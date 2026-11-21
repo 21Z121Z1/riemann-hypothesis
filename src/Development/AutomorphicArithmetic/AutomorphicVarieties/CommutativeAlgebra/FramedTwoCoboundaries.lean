@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
 import Mathlib.RepresentationTheory.Basic
 import Mathlib.RingTheory.MvPowerSeries.Rename

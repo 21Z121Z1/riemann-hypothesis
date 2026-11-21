@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.XLeZBaseOfPowLeN
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HostSzOfSizes
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowNumAt

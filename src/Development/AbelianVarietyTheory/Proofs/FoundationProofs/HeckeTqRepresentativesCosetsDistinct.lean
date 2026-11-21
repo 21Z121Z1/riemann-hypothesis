@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsDCReps
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SymplOZeroRight
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JacobiDepthLatticeKeepsIsotropicHomPartStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AnnRowIsCompact

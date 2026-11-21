@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.RenameProdMapMul
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 set_option maxSynthPendingDepth 1

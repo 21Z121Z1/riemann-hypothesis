@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.DecMomentsB
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.Tactic.ENatToNat

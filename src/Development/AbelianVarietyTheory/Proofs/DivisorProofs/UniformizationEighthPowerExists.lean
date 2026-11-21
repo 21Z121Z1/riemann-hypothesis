@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTotalClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.E8PowerBundleHypothesisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitExtensionModuloIdealEighthPowerStatement

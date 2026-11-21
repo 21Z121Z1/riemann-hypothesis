@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromSpecComapEqBotEqGenericPoint
 open CategoryTheory AlgebraicGeometry TopologicalSpace
 open scoped TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HolomorphicSeriesUniformTubeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionInvarianceCosetSumStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetSeriesSummableShiftedStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EichlerIsometry
 import Mathlib.RingTheory.Henselian

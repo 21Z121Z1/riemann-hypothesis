@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartTiedLevelChain
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InvSmulMem

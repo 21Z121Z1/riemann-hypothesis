@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TensorOneApply
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRatDatum
 

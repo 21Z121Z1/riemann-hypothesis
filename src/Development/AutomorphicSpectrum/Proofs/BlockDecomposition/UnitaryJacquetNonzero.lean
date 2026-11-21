@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StabFiniteIndexOfSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormHeckeVecDosetInd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SatakePowerNonvanishingStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GermSys
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalHermitianActionPairingStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.KernelRankBoundNormValuationStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleIdentityIso
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.BoxPowerBasic
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SmoothIsMultiplicative

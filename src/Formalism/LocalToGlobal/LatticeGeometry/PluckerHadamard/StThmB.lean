@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.ShimuraSheafOfIndefiniteSubspace
 import Formalism.LocalToGlobal.LatticeGeometry.ExtPtHt
 import Formalism.SharpRestriction.Divisibility.ProductFirstParts

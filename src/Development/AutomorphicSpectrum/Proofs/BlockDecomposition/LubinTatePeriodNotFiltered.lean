@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaloisActionPeriodProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PeriodProductFiltrationLevelsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HodgeTateCharacterWeightStatement

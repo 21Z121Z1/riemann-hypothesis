@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignSecond
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VPEqSumHeisCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairRecordCore

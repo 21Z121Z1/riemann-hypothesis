@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockOfApply
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvaluatesOfUnif
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BaseRatAtOfPhaseOne

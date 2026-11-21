@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsSectionOrder
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PFGNullstellensatz
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChowFormMultiHomog

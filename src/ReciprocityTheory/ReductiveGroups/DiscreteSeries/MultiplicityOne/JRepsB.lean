@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.JRepsA
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.StDefs
 

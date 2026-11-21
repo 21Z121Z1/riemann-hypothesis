@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.PiEquiv2
 import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
 import Formalism.AdmissibleDesigns.DisplayForms

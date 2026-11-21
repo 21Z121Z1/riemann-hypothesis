@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalFiniteTypeSubringInValuationSubringStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightLeOneOfGoingDownZariskiStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDivOfCenterHeightLeOneStatement

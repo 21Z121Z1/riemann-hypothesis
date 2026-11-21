@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DoubleCosetMultiplication
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactSupportDcos
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeAlgebraStructure

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.SplitProd
 import Development.WeilBound.ThetaLifts.LocalTheory.IsArchimedeanLocalEquivariantMap
 import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval

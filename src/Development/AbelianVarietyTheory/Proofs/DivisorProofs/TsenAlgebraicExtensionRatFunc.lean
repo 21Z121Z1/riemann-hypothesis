@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroZeroFormPolynomialIsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.COnePropertyFiniteExtension
 open Polynomial

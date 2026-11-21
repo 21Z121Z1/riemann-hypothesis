@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtLevOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfinitesimalPointTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFlatTorsionSubgroup

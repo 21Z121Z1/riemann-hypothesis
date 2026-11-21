@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.PowerSeries.Expand
 import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
 

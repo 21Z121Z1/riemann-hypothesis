@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.LastRowColLevSym
 import Formalism.LocalToGlobal.Columns.ChainLawPhiTop
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulCompSmul

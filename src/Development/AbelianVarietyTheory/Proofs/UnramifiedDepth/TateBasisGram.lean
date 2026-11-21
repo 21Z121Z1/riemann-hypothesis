@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.IsPairingValueAddRight
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import Mathlib.NumberTheory.Padics.MahlerBasis

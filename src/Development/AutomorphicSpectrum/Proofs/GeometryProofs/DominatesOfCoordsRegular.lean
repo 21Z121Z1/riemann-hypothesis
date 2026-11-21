@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapGermEqGenMapGerm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
 import Mathlib.AlgebraicGeometry.Morphisms.Separated

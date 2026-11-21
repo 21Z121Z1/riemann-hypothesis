@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsLieBasisEigen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DetCondIffOfFieldExtension
 

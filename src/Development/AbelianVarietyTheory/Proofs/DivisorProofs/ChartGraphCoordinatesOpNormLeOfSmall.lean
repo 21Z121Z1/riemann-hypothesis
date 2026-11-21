@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartFirstColumnsEqGraphTimesTopBlock
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Tactic.Monotonicity.Lemmas

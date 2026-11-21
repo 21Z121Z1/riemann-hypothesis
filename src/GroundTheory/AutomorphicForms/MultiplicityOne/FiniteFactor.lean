@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteLevel
 import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteLevelGroups
 import GroundTheory.AutomorphicForms.MultiplicityOne.OpenSubgroupRep

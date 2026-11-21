@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.GlobalTheory
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.WittVector.IsPoly

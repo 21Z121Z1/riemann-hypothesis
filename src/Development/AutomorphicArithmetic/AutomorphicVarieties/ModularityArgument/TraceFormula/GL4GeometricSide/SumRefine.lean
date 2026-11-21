@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL4GeometricSide.InnerEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieOperatorVectorEq
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsAverage

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.PartialDifferential.AnalyticHypoSeries
 import GroundTheory.AutomorphicForms.PartialDifferential.AnalyticHypoStep
 import GroundTheory.AutomorphicForms.PartialDifferential.AnalyticHypoGarding

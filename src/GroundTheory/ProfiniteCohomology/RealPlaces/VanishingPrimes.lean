@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RealPlaces.GSDefs
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingIndex
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Dimension

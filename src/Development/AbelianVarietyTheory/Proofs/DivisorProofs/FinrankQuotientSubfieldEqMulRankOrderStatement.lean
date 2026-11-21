@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankQuotientSubfieldEqMulRankOrder
 open GlobalTheory.HSAmp
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualCoalgebraIsoLevelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBaseChangeMapEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CubWeilEqTransport

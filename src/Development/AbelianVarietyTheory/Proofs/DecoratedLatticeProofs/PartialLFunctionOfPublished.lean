@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaInnerProductEqConstMulLValueStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedHoweLiftRowsStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UpInjWOfAForm

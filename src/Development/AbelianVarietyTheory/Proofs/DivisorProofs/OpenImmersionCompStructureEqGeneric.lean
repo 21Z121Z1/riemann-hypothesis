@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrPtOfClosedPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartStatementHolds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPointFactorsOpenImmersion

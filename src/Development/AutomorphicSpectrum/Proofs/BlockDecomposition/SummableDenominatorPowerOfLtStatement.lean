@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableDenominatorPowerOfLt
 import Formalism.LocalRingCardinality.DataHost
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

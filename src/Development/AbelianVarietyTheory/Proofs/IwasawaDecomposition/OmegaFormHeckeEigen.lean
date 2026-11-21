@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AnalyticFibreMatching
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SymplecticBasesMatched
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrthonormalNegFirstFamilyFrameCartanMove

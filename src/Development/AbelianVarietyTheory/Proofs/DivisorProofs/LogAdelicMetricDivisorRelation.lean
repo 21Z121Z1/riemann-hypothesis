@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMetricOnLineGram
 open CategoryTheory AlgebraicGeometry NumberField ReciprocityTheory.AnForm ReciprocityTheory.AnForm.M

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocOpInfMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalWeilOperatorContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalPartTripleStatement

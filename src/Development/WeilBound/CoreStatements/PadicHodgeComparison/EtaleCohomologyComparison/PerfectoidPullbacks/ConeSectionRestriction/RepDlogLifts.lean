@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCupListRepresentativeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusJacobianDetStatement
 

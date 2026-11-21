@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.IsOpenPart
 
 open Formalism.MainNotions.DIV.Cons (intO)

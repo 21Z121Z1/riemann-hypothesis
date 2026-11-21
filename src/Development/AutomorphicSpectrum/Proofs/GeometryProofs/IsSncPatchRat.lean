@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Mathlib.RingTheory.TotallySplit
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsNormPull
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormLtOneOfIrreducible
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAddValuationLeIffEqIff

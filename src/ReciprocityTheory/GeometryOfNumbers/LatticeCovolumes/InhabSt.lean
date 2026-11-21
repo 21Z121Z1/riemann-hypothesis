@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ArakelovDegreeEqDegreeOfFamily
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.Etale.Weakly

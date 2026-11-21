@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.ExponentialNegativity.GapAbsOf
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.TjcosetsFF
 import Mathlib.RingTheory.Etale.Weakly

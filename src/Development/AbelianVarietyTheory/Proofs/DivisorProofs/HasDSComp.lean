@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.FlatHermitianReps.ExistsIrreducibleSubrepresentationBis
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.FlatHermitianReps.CompSt
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.FlatHermitianReps.CptSt

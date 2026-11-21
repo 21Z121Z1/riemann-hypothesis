@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeReferenceFrame.PPAssemble
 import Batteries.Data.Nat.Gcd
 import Mathlib.RingTheory.PiTensorProduct

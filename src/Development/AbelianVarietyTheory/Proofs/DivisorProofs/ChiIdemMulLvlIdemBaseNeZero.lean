@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimPartsAtIffBadAndOff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumCoeffChiIdemMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspProdCharTransport

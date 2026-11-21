@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FZfirst
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FFirstProd
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FRedUnique

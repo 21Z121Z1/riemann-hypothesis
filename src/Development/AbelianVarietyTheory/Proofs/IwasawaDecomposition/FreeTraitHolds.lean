@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BasisGenericExtendsSectionsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BasisLevelZeroSectionsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SectionBasisDomainRelationStatement

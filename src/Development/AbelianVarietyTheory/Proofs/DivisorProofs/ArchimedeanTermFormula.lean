@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsX
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyValueUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricDescendsSameValueStatement

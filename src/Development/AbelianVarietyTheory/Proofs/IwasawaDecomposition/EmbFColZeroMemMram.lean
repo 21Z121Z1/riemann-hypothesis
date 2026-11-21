@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExtUHInjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianLatticeChartFamilyLawBasis
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSmulOfDecoEq

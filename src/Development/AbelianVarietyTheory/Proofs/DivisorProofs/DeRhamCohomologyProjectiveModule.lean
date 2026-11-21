@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeFirstDeRhamStructureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcObjIsAbelianScheme
 

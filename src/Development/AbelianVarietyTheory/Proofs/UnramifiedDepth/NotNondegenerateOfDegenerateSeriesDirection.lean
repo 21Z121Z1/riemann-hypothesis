@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.AddPCvOfAddMod
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EvalPowerSeriesEqOneOfTwoAxesStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EvPFirstOrderOfEqOne

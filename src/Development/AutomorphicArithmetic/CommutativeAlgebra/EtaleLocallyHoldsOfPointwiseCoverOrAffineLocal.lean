@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.LocallyHoldsOfForallAndMonoAndInterAndPullback
 import Mathlib.AlgebraicGeometry.Sites.Etale
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FlagSpanVanishing
 
 open Matrix Formalism.FourierDecayAlt Formalism.QuantumDeterminants

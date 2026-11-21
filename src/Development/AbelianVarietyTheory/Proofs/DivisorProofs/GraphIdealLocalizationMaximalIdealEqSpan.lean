@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToQMemMaximalIdealIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinOrdLeOrdAdd
 open CategoryTheory AlgebraicGeometry TopologicalSpace

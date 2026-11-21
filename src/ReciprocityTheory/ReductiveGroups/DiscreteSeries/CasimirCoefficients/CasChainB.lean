@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.DerivGA
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential
 import Mathlib.Tactic.ENatToNat

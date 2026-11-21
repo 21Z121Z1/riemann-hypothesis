@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTraceStatement
 import Mathlib.FieldTheory.KummerExtension
 import Mathlib.GroupTheory.Nilpotent

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfPartFPlaceIdem
 open scoped TensorProduct Matrix BoundedContinuousFunction ContDiff

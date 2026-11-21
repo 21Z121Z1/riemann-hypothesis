@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfGroupPullbackDataBase
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyHomFixRepTrivial
 import Mathlib.AlgebraicGeometry.Sites.Fpqc

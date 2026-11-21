@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.QuotientLatticeByIsotropicSubmoduleStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsBasisSubsetOfSaturatedSubmoduleStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LinearIndependentRealPeriodsBasisStatement

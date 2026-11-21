@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.SphereTorusB
 import ReciprocityTheory.SemistableReduction.SphereTorusC
 import Mathlib.Topology.Algebra.MvPolynomial

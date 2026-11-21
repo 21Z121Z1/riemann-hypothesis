@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiCompact
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsPullbackPow
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsGtPtGenRelRField

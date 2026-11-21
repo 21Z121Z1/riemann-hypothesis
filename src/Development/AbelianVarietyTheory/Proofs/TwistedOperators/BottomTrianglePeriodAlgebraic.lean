@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWeightedAverageHaarStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFourierDegreeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKernelAlgebraicExpansionStatement

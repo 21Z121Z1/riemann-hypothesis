@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeVariant
 import Formalism.SharpRestriction.LevelLetterCocycles.CurveIdealTorusProperties
 import Formalism.SharpRestriction.LevelLetterCocycles.CommutingEndomorphismPreservesInvariants

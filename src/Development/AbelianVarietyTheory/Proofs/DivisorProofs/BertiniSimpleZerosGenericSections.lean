@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResultantDerivativeNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeEqHilbertDegreeOfIsChowForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeImageBirationalLinearSystemEqSelfInt

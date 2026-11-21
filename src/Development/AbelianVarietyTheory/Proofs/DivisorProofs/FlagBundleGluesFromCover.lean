@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonoPullbackOfIsOpenImmersion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleUniqueUpToIso
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsRepresentableOfCover

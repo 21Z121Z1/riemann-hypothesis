@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDerApply
 import Std.Tactic.BVDecide.Normalize.Prop
 open IsLocalRing GlobalTheory.FormalOrigin

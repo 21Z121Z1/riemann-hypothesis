@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.KrullDimension.Polynomial
 import Mathlib.RingTheory.RegularLocalRing.Defs

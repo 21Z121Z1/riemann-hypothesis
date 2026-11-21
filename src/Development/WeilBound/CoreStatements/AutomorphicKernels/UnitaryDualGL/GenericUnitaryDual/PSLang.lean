@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LanglandsQuotientOfSpehTypeProductIsL
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Outright
 

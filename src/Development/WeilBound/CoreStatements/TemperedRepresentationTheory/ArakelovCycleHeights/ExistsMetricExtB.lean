@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ArakelovCycleHeights.QpSndStr
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ArakelovSingularities.Bridge
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArFormExistsOfInt

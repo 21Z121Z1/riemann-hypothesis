@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Tactic.ENatToNat

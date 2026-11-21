@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCalcNumOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffAtLogNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedPointBelowAlgebraic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.KugaCoordinates.IsStarRep
 import Lemmata.ProductIdentities.ProdInvZpowMulOfProdZpowEqOne
 

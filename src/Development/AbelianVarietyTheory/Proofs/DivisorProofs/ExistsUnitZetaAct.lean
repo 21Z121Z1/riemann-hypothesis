@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
 import Mathlib.RingTheory.SimpleRing.Principal
 

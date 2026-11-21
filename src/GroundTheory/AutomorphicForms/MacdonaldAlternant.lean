@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.MacdonaldRecursion
 import Mathlib.LinearAlgebra.Matrix.Permutation
 

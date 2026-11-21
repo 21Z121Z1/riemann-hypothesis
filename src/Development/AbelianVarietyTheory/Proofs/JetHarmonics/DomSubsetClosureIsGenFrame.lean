@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.DifferentiableOnOfTendstoLocallyUniformlyOn
 import Mathlib.Topology.Baire.LocallyCompactRegular
 import Mathlib.Topology.UniformSpace.Uniformizable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationBoundMultiplierSqrtNegDStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicValuationBoundAtRamifiedPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationBoundThreeInertStatement

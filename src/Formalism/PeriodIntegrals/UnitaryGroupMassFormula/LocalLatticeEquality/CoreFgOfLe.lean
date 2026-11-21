@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeEquality.Imports
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalLatticeEquality.CoreGenIdeal
 import Mathlib.RingTheory.Henselian

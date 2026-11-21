@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeComparisonCompatibility
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeComponentTwistAutomorphismStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelTwistedComparisonStatement

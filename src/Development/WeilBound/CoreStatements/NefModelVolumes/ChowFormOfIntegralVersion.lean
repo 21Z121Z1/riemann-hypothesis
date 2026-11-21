@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 import Development.AbelianVarietyTheory.Definitions.Divisors.IrreducibleOfIrreducibleMap
 

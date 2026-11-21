@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockEmbeddingFactors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviTensorBlockExt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentsSimpleFDRepFiniteFinsumEqOne

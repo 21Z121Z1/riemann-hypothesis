@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveDiffForm
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableOfDecay4
 

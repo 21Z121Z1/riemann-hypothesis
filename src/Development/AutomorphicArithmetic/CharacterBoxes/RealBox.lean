@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.RealSplit
 
 open Formalism.HC UpperTheory.Top

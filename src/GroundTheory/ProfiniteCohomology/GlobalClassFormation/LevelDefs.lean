@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
 import Mathlib.RepresentationTheory.Coinduced
 set_option maxSynthPendingDepth 1

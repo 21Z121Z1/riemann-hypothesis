@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMapFrameRestriction
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMapFrameRestrictionRegularStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalResolutionOpen

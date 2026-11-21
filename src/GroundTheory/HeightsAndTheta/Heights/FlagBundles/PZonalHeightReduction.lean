@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsSphereLongitude
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsZonalReduction
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

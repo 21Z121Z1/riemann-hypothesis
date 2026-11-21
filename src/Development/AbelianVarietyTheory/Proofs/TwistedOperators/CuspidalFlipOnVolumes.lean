@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalLiftsSmoothEverywhereStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongRightGridArrowsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongDownGridArrowsStatement

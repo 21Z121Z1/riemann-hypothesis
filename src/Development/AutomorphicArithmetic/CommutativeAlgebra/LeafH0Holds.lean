@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
 import Development.AutomorphicArithmetic.CommutativeAlgebra.TwistedSectionEqNsmulGeneratorOfConnected
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected

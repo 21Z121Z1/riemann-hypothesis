@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogBallBd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalInverseQuantitativeBallStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralNegLogBallBoundStatement

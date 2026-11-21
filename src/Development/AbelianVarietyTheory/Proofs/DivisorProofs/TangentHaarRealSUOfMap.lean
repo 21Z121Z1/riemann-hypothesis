@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDensityOfImmersion
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ContinuousMatrixEntryAbsSum

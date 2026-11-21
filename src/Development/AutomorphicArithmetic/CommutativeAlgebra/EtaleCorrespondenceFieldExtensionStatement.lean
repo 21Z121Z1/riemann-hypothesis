@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsIntegralRBIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryChartHodgeMatrix
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormallyUnramifiedOfIsReduced

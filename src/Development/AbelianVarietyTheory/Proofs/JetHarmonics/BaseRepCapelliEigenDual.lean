@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingGapDecayStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingUniformConstantStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliKFiniteCoefficient

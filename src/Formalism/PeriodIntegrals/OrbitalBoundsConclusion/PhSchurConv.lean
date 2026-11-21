@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SchurConvolution.MapMulApply
 import Mathlib.Tactic.ENatToNat
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemMinimalPrimesIff
 import Mathlib.Order.CompletePartialOrder
 import Std.Tactic.BVDecide.Normalize.Prop

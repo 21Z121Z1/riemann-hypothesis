@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.EtaleFirstChernClassRepresentedByChernCocycle
 import Development.EtaleCohomology.EtaleSheaves.GoalOf
 import Development.EtaleCohomology.EtaleSheaves.LeafActSheafPf

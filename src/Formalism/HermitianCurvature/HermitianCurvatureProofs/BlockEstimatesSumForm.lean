@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LatticeHerglotzBound
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.Data.Int.Star

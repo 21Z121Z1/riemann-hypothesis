@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicCompactModParabolicStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenRightInvarianceLocalCoefficientStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicProjShiftedEmbeddingStatement

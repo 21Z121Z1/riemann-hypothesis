@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSmulOfDecoEq
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitTorsAlgClosedFractionField
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf
 

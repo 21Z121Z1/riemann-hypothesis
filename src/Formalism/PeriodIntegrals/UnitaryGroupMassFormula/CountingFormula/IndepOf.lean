@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DensGFC
 import Mathlib.RingTheory.Valuation.Extension
 import Mathlib.Tactic.ENatToNat

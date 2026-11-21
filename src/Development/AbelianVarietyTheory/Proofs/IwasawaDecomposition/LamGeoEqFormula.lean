@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.IndefiniteWeightData
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

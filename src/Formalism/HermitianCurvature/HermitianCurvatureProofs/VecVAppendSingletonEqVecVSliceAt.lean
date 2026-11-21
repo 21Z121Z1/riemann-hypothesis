@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OuterInt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactCoefficientAppend
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CptCoefContSupp

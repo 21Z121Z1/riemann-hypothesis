@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentialOperatorBracket
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.CapelliParamsDiffInt
 

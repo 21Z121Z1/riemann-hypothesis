@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SzValueOfFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertFamilyWeierstrassTwistStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsSideTer

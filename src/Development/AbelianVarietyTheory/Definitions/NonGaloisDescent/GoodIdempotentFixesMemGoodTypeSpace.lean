@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolySmulOfProd
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.TripleAtt
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WdOfMono0L

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.GenIdeal
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuSelfKnownTheorem
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift

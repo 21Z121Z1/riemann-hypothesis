@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistUnitary
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.HopBasic
 import Development.AutomorphicArithmetic.AdelicGluing.ExistsGaloisTransportLocalGLPreservingIwahori

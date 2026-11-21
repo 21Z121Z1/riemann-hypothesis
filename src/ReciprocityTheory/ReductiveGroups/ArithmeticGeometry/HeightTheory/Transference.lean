@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TransferenceA
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TransferenceB
 import Mathlib.Algebra.Order.Star.Real

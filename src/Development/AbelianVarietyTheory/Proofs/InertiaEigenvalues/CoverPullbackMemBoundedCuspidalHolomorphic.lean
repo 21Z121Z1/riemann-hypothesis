@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqConstMulOfNormOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.La1sqEqOfUnXEq
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.CuspidalDecayHolds

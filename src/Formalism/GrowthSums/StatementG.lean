@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GrowthSums.StatementA
 
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FlatCokerOfInjectiveModMaximalIdeal
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.Regular.RegularSequence

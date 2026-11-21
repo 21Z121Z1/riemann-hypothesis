@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ModelDyWeightsStatement
 
 open AlgebraicGeometry CategoryTheory NumberField Matrix

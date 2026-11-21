@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnCosSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPullbackFrameSpanningFlag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleCarriesBaseChange

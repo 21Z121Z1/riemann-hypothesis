@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.ClNorm0
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormLeOneOfIntegral
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoPoint

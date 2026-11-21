@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsGreenReg
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.SliceCut
 set_option maxSynthPendingDepth 1

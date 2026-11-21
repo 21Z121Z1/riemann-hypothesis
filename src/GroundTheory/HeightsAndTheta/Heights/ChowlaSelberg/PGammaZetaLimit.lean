@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.GammaZetaLimitStatement
 import Mathlib.NumberTheory.Harmonic.ZetaAsymp
 import Mathlib.RingTheory.WittVector.IsPoly

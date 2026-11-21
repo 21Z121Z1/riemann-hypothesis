@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.ExpIntW
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.WittVector.IsPoly

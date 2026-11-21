@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPreChain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClsDivPullEqVPull
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField

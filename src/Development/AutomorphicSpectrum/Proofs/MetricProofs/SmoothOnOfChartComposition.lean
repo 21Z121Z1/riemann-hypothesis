@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Topology.Sheaves.Presheaf
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 

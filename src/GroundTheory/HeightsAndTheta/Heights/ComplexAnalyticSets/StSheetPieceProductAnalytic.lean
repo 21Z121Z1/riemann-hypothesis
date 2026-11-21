@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.LocalParametrisation
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Topology
 
 set_option linter.unusedSectionVars false

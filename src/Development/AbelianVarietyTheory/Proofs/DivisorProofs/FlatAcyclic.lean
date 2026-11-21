@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarAdjointFibreOperatorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatChernLogHessianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarmonicSectionLaplacianStatement

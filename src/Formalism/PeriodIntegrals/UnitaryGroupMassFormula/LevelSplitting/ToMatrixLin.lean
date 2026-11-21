@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting.SemiAlg
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

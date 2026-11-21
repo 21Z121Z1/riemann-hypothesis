@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComapSingleSpanAlgebraMapNumberField
 open NumberField IsDedekindDomain Matrix
 open scoped BigOperators

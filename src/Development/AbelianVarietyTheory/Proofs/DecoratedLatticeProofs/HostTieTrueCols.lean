@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HostFieldsPrimesTies
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TopPlaceLogTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClassFam

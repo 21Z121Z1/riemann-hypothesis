@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeSumAtCuspHahnCoeffOfIntegralExponentsStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiamondCommutesHeckeUStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeNormGamma1PrimePowInvariantStatement

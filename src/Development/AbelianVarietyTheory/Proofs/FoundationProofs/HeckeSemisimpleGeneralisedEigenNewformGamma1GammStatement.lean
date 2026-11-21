@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeSemisimpleGeneralisedEigenNewformGamma1Gamm
 open GlobalTheory.HeckeFamilyMatrices Polynomial
 open scoped MatrixGroups

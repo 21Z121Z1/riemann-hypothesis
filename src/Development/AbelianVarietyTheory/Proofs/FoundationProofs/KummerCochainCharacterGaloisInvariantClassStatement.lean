@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCochainCharacterGaloisInvariantClass
 open GlobalTheory.NeedB Polynomial
 set_option maxHeartbeats 1000000 in

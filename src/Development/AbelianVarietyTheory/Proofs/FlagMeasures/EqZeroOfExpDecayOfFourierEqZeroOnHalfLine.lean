@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FderivIntegralApplyOfHolomorphicOfDominated
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegrableExpNegMulAbs
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

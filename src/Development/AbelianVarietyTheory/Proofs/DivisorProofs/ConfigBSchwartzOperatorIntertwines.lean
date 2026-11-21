@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRelAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerArchimedean
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianSetSubspaceStatement

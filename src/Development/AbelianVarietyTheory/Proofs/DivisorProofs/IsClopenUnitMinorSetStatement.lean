@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClopenUnitMinorSet
 open MeasureTheory GlobalTheory.SplitFlip ValuativeRel
 open scoped Matrix

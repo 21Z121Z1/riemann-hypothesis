@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaLocalFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviLiftMaximalCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigATripleRepPairIdentityStatement

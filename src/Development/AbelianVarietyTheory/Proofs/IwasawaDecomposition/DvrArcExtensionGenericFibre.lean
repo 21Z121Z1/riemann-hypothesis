@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GenericLieMultiplicitiesUniformisedGroup
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DvrArcExtensionResidueStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DvrArcExtensionSpecialStatement

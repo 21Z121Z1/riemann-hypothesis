@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuantumDetVectorMultiplierShiftPlus
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GlRelNegTAndQdet
 open Formalism.REAL Finset

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToVInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDoubleCosetEqFinsumOrbit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixLineConjIff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemSmulLk
 import Formalism.LocalToGlobal.UnitaryNorms.UnramT
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr

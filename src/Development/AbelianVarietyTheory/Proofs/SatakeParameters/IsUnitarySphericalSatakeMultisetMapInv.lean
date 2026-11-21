@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RpowNegLeNormOfComponent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EsymmInvMulEsymmCard
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RelIndexGlMapStandardLatticeOfIntegralStatement

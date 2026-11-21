@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChebotarevDegreeOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousResI
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

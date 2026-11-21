@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpBijFAndExpandsFLin
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FamEqOfCoefEq
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubNMul

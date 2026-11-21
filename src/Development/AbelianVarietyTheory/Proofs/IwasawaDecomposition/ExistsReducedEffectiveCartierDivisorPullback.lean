@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValRSpMapFromSpecStalk
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsHomRangeSubset
 

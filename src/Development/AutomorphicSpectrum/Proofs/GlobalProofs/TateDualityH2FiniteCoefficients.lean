@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CupFlip
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.DualDOfDualQ
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.DualQOfTopInj

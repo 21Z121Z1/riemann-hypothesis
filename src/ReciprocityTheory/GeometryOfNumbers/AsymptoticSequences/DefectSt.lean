@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.SphericalMonomials.ChiPSt
 
 noncomputable section

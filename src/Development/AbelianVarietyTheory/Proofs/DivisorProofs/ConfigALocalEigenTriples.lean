@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeEvFun
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOperatorMulOfPublished
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalInvarianceFirstOfPrintsStatement

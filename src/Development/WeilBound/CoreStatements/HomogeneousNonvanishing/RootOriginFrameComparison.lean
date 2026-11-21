@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsEigenOpDiscr
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginFrameNonarchimedeanStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagHeight

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemDivsOfMem
 
 open NumberField IsDedekindDomain Formalism.L2.Host

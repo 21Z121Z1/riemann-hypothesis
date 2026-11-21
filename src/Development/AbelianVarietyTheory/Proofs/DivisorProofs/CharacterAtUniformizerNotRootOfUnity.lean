@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedCharacterAtUniformizerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterOfIdeleClassStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeValueNotFiniteOrderStatement

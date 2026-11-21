@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.PtOfSInst
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveLoc
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveInj

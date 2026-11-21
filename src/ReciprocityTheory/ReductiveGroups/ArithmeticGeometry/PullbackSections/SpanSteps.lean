@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.SpanGlue
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFormsFiniteDimensionalOf
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition

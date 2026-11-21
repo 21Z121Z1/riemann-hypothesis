@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.RamificationIdxEqOneAndInertiaDegEqOne
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual
 set_option synthInstance.maxHeartbeats 400000

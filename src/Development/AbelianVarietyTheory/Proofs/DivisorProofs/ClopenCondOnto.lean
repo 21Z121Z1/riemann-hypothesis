@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RangeSubsetOfGeom
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtPlace
 import Mathlib.RingTheory.PicardGroup

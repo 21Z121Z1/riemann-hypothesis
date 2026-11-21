@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.StandardOpenEquiv
 import GroundTheory.GlobalFields.Adele.Topology
 import GroundTheory.GlobalFields.TateThesis.AdeleMeasurable

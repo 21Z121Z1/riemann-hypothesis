@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.SiegelSpaceAlgebraHolds
 
 namespace GlobalTheory.IndefiniteRowSideFullHecke.CuspSectionNorms

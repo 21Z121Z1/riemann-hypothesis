@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveFamilyFormalGermStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FamilyGivesConjugateLieDataStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormalGermLieBasisStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Data.Int.Star
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis
 import Mathlib.LinearAlgebra.TensorAlgebra.Basis

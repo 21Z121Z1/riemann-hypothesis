@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsSecDegreeLe
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Assembly
 set_option maxSynthPendingDepth 1

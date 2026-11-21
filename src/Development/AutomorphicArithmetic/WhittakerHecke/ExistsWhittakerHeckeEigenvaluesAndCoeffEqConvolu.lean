@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.InertOrSplitOfGoodDeltaRat
 import Development.AutomorphicArithmetic.WhittakerHecke.IdeleOfNatMulAndPrimePow
 import Development.AutomorphicArithmetic.WhittakerHecke.ExistsMultiplicativeOfPrimePowerValues

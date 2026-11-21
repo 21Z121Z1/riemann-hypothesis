@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilKisinZetaFineBoundSecondBasis
 open PowerSeries GlobalTheory.BK
 set_option maxHeartbeats 1000000 in

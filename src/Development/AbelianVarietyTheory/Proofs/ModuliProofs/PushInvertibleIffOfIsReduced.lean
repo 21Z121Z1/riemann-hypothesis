@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.OpenModelSections
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsCoeffFieldOfCoeff
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft

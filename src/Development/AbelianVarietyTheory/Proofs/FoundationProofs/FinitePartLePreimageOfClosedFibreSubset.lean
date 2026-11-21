@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteMaximalSpectrumOfFiniteOfIsLocalRing
 import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
 import Mathlib.Combinatorics.Quiver.ReflQuiver

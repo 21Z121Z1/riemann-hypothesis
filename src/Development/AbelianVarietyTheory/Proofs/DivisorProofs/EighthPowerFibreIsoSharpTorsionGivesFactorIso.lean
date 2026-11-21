@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsChartMember
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EighthPowerFibreIsoEqCoordinatewisePowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsE8WeightedBundleIsoPullbackStatement

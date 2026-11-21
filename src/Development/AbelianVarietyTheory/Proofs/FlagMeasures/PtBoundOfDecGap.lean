@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.EigenfunctionFiniteCoefficients
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.CuspFrame
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsAutIdemElementary

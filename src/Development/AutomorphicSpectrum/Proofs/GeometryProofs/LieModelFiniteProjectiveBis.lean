@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieChart
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelExistsUniqueSemilinearStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalizationSheafGlueModulesStatement

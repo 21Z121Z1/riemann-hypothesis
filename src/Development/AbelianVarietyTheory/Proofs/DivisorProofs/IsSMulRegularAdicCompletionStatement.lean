@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSMulRegularAdicCompletion
 open Ideal WittVector
 set_option maxHeartbeats 1000000 in

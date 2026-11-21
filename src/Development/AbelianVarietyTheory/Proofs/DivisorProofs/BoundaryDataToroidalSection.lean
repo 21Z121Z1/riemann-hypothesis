@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorPotentialIsSNCBoundary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncComponentsLocalSncStatement
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ModelDdcForms

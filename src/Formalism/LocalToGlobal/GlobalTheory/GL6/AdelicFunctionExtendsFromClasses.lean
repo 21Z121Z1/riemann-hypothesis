@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL6.AdmissibleStabilisersOfCompatibleForms
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PUpNat
 

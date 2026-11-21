@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenSubHwOfSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JmConjTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowDegreeLeFixedDegreeStatement

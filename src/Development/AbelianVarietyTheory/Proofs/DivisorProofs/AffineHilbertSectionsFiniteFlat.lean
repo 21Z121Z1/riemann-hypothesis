@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BasicIff
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits Opposite
 

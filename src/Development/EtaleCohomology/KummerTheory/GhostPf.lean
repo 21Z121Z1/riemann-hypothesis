@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.KummerTheory.InjSlice
 
 open CategoryTheory Limits

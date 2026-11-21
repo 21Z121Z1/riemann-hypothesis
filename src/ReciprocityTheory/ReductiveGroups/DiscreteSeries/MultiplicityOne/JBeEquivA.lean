@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.UnitaryGroupStructuralFacts
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.UHMulInv
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.StDefs

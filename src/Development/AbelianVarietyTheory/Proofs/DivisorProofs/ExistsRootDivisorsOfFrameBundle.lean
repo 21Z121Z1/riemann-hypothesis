@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFramePullbackSections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCellFrameOfSpans
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.InterPolyProdSum

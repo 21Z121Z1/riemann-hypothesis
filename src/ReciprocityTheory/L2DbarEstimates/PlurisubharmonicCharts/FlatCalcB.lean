@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff
 import Mathlib.Topology.Algebra.MvPolynomial
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.HoloSmooth

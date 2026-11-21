@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.IsLocUnif
 import Mathlib.LinearAlgebra.Lagrange
 import Mathlib.RingTheory.SimpleRing.Principal

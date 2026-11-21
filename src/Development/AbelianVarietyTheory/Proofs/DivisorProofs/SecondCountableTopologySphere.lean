@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.FubiniStudyPotentialProductIsPotential
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
 import Mathlib.Topology.Compactification.OnePoint.Sphere

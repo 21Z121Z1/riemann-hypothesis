@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CMTypeGalois.StatementField
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs
 

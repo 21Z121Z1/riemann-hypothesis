@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaSt
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.LintegralStereo
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne

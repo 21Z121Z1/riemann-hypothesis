@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.XiValIffXiAt
 import Development.AbelianVarietyTheory.Definitions.Jets.EmbShortThLeThetaPlain
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsEquivariantFunOnSpanningFamilies

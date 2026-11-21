@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.LatticeTransfer
 
 set_option autoImplicit false

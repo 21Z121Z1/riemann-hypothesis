@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RefLowerOfFibreInputStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerI5OfReferenceStatement
 

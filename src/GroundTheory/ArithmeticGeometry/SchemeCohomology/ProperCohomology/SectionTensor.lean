@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.InvertibleSheaf
 import Mathlib.Tactic.ENatToNat
 set_option maxSynthPendingDepth 1

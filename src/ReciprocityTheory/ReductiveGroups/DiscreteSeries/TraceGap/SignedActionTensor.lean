@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.CoordSpan
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.CARUnit
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivariantPiTensorPolynomialBilinear
 open Formalism.MainNotions.S Matrix GlobalTheory.CompactHowe
 open scoped TensorProduct

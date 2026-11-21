@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AlgebraicWeights.IsAlgWeight
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RepresentationTheory.Irreducible

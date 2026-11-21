@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.BaseFacts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EEContainsStableWeightZero
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.QuadraticMapNonnegOfTendstoCofinite

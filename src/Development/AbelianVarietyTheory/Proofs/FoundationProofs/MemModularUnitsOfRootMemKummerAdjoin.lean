@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUnitMulPowOfKummerVanishesOnInertiaCurve
 import Development.AbelianVarietyTheory.Definitions.Foundations.HahnPowOrderLeadingCoeff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqOneOfPowEqOne

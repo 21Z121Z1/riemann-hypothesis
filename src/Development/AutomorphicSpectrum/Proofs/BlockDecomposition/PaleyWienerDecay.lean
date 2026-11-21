@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.CalcSteps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalCalculusCurve
 import Mathlib.Topology.UniformSpace.Uniformizable

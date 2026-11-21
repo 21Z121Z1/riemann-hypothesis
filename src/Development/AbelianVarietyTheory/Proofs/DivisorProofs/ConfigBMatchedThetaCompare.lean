@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxCompactLeviLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairDescentCaseBStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBMatchedIntegral

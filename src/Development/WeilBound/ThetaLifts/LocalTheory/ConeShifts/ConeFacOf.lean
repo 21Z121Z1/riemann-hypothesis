@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.VacShiftOf
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.PresOfHat
 

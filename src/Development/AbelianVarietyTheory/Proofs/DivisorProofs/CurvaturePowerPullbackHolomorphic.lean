@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullAevalSym
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvPolyPullback

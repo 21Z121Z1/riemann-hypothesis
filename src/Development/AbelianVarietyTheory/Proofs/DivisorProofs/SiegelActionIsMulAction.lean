@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SiegelReframe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreLast
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapOfRealAdd

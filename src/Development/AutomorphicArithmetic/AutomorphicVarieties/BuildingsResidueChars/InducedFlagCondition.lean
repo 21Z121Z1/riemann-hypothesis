@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MixStableLineLocal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MixFlagExists
 

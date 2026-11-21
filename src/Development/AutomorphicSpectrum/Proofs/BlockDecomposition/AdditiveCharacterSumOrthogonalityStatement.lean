@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdditiveCharacterSumOrthogonality
 open ReciprocityTheory.Ty.Fin GlobalTheory.CompanionTheory.TyFin.ColStep
 set_option maxHeartbeats 1000000 in

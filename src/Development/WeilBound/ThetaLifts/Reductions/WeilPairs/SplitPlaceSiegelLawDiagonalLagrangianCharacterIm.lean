@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
 open scoped TensorProduct Matrix

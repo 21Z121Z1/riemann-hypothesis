@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.IsCompl
 import Mathlib.Algebra.Colimit.Ring
 import Mathlib.Algebra.Order.Ring.Star

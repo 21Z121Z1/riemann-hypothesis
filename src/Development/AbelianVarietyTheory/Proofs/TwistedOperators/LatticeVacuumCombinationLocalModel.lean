@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EpsVEqOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLocalModelOfSplitPlaceThetaFunStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CombinationProducesDatumAllLocalModelsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicHaarDecomposition
 open MeasureTheory Topology
 open scoped ENNReal NNReal Matrix Pointwise

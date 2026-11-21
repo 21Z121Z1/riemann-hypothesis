@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.PosOfTorusNoLe
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorusNoLeClassNoRankOne
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU

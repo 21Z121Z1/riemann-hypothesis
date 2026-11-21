@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.FourierInjectiveSchwartzBruhat
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsCompactSubgroupCharacter
 import Development.AutomorphicArithmetic.DivisorFrames.ThetaLocalOpenSubgroup

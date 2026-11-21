@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.SepMinors
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.CoefficientIntegralPointwise
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.DerivSmulConstAll

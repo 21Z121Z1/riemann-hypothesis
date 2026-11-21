@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAmbOfIsArithVar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegralLinearRelationZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HessianOfCombinationMetricLinear

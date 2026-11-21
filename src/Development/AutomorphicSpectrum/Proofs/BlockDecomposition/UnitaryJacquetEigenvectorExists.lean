@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemIwGLOfDiag
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsStrictDom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetLemmaHoldsStatement

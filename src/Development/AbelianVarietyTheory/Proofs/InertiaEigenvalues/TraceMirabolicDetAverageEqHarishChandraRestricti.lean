@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesKillsAvg
 open GlobalTheory.GLq GlobalTheory.MirAvg Polynomial
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaDecompositionStatementStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightBoundStatementStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundednessStatementStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.RowWtSpan
 import Mathlib.RingTheory.MvPolynomial.EulerIdentity
 import Mathlib.RingTheory.SimpleRing.Principal

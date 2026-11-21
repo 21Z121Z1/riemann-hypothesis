@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QuotientInvariantMeasureExistsUniqueUnimodular
 open MeasureTheory GlobalTheory.IndefiniteRowSideFullHecke.InvariantRadonFibre
 open scoped ENNReal

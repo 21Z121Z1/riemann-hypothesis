@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualMapCompStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootTowerUniformHeightBoundStatement
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Assembly

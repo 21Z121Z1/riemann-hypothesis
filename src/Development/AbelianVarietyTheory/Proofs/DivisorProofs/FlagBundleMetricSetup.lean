@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleProjectiveOverBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KrullDimSmoothSurjectiveTotal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleExistsAfterBaseChange

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardHermiteDataPowerQStatement
 
 open GroundTheory.Automorphic GLnLocal Iwasawa

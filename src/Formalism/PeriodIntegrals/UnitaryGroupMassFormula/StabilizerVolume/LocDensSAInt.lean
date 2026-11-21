@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.LocDensSAChar
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.LinearMap.Rat

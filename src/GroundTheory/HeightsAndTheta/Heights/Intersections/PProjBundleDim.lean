@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PProjBundleArith
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagArith
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis

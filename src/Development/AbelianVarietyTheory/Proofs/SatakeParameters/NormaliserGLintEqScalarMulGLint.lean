@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact

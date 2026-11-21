@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.RatDatOfReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsEtaConjUnique

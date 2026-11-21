@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMassSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulMemOfMemSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InnerRealizeEqZero

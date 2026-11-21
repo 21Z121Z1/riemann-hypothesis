@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TopRowsParams
 open Formalism.MainNotions Formalism.BasicNotions Formalism.MainNotions.G Classical
 

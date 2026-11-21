@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotSymEOfNe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentPullbackEllipticModel
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj

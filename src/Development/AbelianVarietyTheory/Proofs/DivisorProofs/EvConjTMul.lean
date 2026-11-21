@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.RangeShape
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalDegreeSumXMulCLe
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactHaarRightInvariantInst

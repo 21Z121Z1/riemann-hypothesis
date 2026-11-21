@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabelsOfDepthZeroStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameParameterCoupled
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DepthZeroSupercuspidalCuspidalModule

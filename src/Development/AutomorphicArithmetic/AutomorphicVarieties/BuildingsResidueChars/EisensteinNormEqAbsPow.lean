@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.PerDeriv
 open UpperTheory.V.Sd.Eis NumberField GlobalTheory.Mem.Chr.CharModel
 

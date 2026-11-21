@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MSqCount
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Tactic.ENatToNat

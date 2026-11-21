@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsChartMax
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PProperSymm
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.ImportsBis

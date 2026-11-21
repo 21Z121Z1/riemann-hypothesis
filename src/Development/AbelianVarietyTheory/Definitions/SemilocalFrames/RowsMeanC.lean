@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.KappaOffDiagonal
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.AdaptSelf
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GoodLoc

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ResidualIrreducibilityFormsEquivalent
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BaseSizes

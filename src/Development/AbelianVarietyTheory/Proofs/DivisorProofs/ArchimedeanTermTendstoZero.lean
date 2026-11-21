@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyValueUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMatLinearCombination
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntersectionNumberGlobalSectionEqSumCycle

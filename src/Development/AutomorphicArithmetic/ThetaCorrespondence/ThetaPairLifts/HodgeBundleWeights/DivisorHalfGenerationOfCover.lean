@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ToKnownTheoremsOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DepthBoundOfTwoSteps

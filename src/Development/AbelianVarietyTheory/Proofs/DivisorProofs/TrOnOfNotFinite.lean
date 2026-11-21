@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfIsOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexProd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 
 import PositivityTheory.PublishedTheorems.UnitKilling.UnitAnnihilation.UnitAnnihilators.ExistsUnitKillsOfIdempotent
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.FormalAlgebraisation.GEClosedProj

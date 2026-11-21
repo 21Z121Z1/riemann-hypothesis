@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPreUOfFibres
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenericSquare
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcOfValuesEq
 open Set Matrix Filter Topology
 open ReciprocityTheory.L2DbarEstimates (V)

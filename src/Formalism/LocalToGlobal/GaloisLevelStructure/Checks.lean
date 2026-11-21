@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
 
 open Formalism.BasicNotions ReciprocityTheory.Aut Formalism.AUTREP

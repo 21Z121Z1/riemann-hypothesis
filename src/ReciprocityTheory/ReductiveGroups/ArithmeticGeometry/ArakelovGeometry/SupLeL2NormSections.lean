@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.SectionBasisLocalUniformBound
 
 namespace ReciprocityTheory.ChartRestriction.G.ArakelovGeometry

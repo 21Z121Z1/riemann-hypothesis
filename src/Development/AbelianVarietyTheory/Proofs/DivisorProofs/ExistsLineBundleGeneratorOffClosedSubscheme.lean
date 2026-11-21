@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Glues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Matched
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant

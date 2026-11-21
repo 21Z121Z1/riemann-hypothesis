@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PowValIntCast
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLat
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatPol

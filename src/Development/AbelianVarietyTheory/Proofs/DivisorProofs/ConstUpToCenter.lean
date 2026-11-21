@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfOfExtends
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WtRInjective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantEqOfNormGe
 open Matrix Finset

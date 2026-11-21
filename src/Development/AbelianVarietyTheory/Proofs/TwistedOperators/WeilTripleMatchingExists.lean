@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepresentationsForTripleStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameBaseExistsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameCompatibilityStatement

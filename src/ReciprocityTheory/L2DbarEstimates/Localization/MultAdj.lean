@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.L2DbarEstimates.Localization.IntegrableOnCompactOfLocL2
 import Mathlib.RingTheory.PiTensorProduct
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ChartSymmEventuallyEq

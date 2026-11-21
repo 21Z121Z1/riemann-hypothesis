@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IntegralNormSqLp
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MultiplicativeLargeSieveStatement
 

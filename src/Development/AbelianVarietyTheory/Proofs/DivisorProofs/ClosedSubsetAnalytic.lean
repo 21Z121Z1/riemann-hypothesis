@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralAdaptedMinorNormsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockUnipotentTriangularizingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixRegularAdaptedLocalStatement

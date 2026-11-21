@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareThetaTripleExistsSignatureRankSumLt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLevi
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasSignatureComplement

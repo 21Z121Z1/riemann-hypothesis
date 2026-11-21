@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.EtaleGroupHomologySlantOfDeltaCochain
 import Mathlib.Data.Finsupp.Pointwise
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SobolevGaussianKernels.StatementSB
 import Mathlib.Tactic.ENatToNat
 import Std.Tactic.BVDecide.Normalize.Prop

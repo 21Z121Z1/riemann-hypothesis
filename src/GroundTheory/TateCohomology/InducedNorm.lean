@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.Induced
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.MemVarsProdAll
 import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt
 import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves

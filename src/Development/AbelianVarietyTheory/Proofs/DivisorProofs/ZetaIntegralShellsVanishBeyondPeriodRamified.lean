@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EventuallyDeepSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnCartanDoubleCosetShellIntegrandStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartanDoubleCosetFiniteDisjointLeftCosetsStatement

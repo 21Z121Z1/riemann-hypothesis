@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotInhAbsOfGamLe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SizesLe

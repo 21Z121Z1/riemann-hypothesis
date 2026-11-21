@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.SummandSlopeAtDecoratedLattice
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleWeightMiddleEntries
 

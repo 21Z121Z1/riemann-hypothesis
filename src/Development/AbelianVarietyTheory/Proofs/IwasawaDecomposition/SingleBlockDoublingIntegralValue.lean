@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DoubleCosetMeasures.LatticeCoset
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsNrm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocalAtCompletionIntegersChosenUniformiserStatement

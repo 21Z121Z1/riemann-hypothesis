@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SameOrbitRefl
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicConjugatePullbackStatement
 import Mathlib.Analysis.SpecialFunctions.Complex.Analytic

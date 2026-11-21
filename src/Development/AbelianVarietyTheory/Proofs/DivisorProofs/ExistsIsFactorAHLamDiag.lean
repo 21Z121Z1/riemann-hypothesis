@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAHOfIsFactorAH
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DifferentiableOnProdOfForall
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueThetaCharAtPoint

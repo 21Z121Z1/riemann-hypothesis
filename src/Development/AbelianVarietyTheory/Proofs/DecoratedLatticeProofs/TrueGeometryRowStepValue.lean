@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdempotentMulEntryEqZeroOfCutInverse
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryCosetRelationStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LocalLevelComparisonStatement

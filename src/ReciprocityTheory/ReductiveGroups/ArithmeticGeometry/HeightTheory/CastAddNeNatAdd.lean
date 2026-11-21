@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.AeBlockSphereEvalNeZero
 import Mathlib.Data.Finsupp.Encodable
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

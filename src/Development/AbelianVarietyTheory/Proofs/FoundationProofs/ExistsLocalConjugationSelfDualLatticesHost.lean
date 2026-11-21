@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ReLatSelf
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.AdelicUnitaryGroups
 import Formalism.LocalToGlobal.ProjectiveLattices.UnramBridgeHolds

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NvalDetFrChgConst
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinsetIntegralOfDefinite

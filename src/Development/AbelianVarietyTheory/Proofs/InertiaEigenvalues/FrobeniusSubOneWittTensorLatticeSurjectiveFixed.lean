@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobSubMulSurjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
 

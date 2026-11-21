@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.FormLaws
 import Mathlib.LinearAlgebra.ExteriorPower.Basis
 import Mathlib.RingTheory.Etale.Weakly

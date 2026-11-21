@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActQdRPeriodTEqCyclotomicBottom
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndependentOfInvariant
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsInvFilD

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Theta.GaussianExample
 import GroundTheory.HeightsAndTheta.Theta.AdelicFourier
 import Mathlib.Algebra.Group.MinimalAxioms

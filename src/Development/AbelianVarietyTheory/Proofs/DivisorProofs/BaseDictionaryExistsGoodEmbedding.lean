@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralOfCountableCommutatorsUnitary
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces

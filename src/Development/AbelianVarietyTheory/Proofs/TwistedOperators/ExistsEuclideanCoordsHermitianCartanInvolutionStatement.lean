@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEuclideanCoordsHermitianCartanInvolution
 open MeasureTheory Complex Matrix GlobalTheory.RealWeil GlobalTheory.Mem.Lift
 open scoped RealInnerProductSpace Real ComplexOrder

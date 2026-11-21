@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGenRosati
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPicardGroup
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf

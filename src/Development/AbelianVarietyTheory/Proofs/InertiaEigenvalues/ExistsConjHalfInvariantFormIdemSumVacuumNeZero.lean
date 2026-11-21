@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.NotMemSpanOfCommute
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsInertTop
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdemSumMulOfSubset

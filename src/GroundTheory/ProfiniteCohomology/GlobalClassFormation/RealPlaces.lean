@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.SignsCup
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.SymbolBridgeCyclotomic
 import GroundTheory.GlobalFields.NormResidueSymbol.Rational

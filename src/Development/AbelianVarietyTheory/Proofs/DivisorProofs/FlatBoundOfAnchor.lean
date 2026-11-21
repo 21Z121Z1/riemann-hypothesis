@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsCoreGoodMatch
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatLineThetaRootTwistTwistingSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHoldsStatement

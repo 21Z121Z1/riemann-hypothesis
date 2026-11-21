@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorIntertwiningApply
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliDetFrameIndep
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntertwinerDOpOfStabiliser

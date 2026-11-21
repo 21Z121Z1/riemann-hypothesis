@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegrableUnitaryQuotientHeightPowMulRapidlyDecrStatement
 import Development.AbelianVarietyTheory.Definitions.Foundations.EisValueAtIffEisPoleLE
 open scoped ComplexConjugate Matrix NNReal

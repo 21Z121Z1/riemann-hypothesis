@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.EqOneOfStrictMono
 
 open MvPolynomial Equiv UpperTheory.V.AlgebraTools.Hk

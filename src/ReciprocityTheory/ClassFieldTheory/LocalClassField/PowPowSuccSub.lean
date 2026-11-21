@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.MemOfPowQKSubOne
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField.UnramifiedExtensions

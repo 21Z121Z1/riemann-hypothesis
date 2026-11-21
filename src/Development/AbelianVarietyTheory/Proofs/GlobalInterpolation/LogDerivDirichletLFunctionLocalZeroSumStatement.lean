@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivDirichletLFunctionLocalZeroSum
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory
 set_option maxHeartbeats 1000000 in

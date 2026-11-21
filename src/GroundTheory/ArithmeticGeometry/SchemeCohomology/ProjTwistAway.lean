@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwist
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic

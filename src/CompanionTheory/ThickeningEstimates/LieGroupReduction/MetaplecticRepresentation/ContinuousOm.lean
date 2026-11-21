@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.LocalLift
 
 noncomputable section

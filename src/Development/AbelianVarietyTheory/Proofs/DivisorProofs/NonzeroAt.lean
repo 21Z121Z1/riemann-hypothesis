@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartExpOn
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLeadOfUnif
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecRatioEqRefl

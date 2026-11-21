@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CentralIdempotentOfIrrCharacterOrthogonalCentral
 open GlobalTheory.GLq Formalism.MainNotions.ArithmeticCylinders Polynomial
 open scoped Classical

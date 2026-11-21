@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiagonalJetSumScaleTwo
 
 set_option autoImplicit false

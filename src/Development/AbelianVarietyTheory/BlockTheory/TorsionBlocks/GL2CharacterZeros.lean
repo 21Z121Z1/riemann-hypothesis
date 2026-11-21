@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 import Mathlib.RingTheory.Henselian

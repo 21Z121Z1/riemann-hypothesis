@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffGaloisTilt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyLocalPeriodRingsData
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffEqMkRootT

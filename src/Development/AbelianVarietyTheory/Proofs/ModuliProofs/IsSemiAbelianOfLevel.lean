@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.AlgebraLevelSetting
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EvenCubicUnitEqOne
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsSemiAbelianAndTqOfIsGt

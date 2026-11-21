@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianInvariantFunctionalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelHaarIntegrableBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxModelCoordinatesStatement

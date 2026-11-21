@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ChartRingLocalizationMembership
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimeChartExistsUniquePoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalization

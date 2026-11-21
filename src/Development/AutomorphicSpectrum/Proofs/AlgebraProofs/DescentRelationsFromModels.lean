@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ModelOverPrimePermModuleLatticeStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyModelFactsStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeFamilyModelComparisonStatement

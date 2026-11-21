@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClassFam
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TopPlaceLogTheta
 open NumberField IsDedekindDomain

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelCharacterMatchesWitnessStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistCharacterMatchesWitnessStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistPlacesMatchWitnessStatement

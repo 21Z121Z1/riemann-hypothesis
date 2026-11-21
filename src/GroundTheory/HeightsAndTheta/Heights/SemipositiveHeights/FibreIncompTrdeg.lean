@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MixedFieldContraction.GenericFibreKerTarget
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Tactic.Polynomial.Basic

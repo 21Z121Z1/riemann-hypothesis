@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.LamProdMonomial
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.RestCountOf
 import Mathlib.Order.Interval.Finset.Box

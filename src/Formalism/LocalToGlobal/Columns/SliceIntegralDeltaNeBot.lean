@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ToHLatLemmas
 import Formalism.LocalToGlobal.Columns.DiamondPreservesRamified
 import Formalism.LocalToGlobal.Columns.ColFormsInst

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsEqSumIndicatorOfRightInvariant
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ProjectiveOfFg

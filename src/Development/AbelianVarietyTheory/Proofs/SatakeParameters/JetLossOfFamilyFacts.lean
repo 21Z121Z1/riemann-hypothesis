@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FiniteQuotDivLatMulLatHomAt
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.JetSumTable
 

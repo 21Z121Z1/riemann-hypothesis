@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularRingDeterminesComponentStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartPrimeGivesComponentStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentGivesChartPrimeStatement

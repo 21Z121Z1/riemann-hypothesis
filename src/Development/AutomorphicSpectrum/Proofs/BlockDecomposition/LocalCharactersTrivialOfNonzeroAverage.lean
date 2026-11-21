@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterTrivialOfNonzeroSumStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ValuationVectorHomomorphismStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIntegralUnitShift

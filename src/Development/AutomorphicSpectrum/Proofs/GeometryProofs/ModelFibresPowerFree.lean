@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CompleteDvrDominatingValuationStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricPowerFreeFunctorialStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PelUniformisedGeometricFreeStatement

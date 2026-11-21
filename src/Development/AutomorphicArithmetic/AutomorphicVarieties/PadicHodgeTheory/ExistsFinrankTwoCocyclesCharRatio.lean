@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.TateRat
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.DecEmb
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.PtCont

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantFunctionHasTrivialRepSatakeParameters
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BottomExistsIntegrable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBottomTriIs

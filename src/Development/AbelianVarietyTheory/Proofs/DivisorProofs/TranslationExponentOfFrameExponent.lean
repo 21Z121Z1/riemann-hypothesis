@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TxFrameTranslate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.YKThNeZero

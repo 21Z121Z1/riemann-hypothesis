@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondCountableHermC
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Matrix.Spectrum

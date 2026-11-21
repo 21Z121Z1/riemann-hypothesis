@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.AnnihilatorModels.DinvExact
 import Mathlib.RingTheory.RegularLocalRing.Defs
 open TensorProduct Module

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBirationalModelIdAndCompStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlowupModelRegularFunctionOrInverseStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology

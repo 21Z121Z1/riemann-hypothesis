@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DeterminantConditionSpreadsOfDensePoints
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConnectedGroupSmoothRelDim
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EmbeddingFactorsThroughCmType

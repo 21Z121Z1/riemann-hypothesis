@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CapCentral
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CompositionMem
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.DiscreteGL2

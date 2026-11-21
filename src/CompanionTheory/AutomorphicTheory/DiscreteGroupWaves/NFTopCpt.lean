@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.GramLocSetCApp
 import CompanionTheory.AutomorphicTheory.DiscreteGroupWaves.NFTopSq
 

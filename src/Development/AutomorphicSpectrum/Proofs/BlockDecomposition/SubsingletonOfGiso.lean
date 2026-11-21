@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPsiMinusExactStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPhiMinusExactStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPhiMinusStatement

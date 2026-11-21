@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckePowOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoordValuationBoundLocal
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PowerOfAbelianSchemeProjective

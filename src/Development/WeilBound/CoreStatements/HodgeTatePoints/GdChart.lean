@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GdDual
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsCompactUnitaryPointsAtPlaceFstMemCompact
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TorusExtensionPairCorrectionEqValueQuotient

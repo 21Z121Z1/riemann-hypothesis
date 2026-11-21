@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.VdLe
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.inertQ
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.InertD

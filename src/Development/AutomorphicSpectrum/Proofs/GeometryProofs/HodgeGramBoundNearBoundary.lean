@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogPeriodsSubframeDetBounds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogPeriodsRiemannForm
 

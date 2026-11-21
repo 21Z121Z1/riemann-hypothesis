@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeLocalConjOfNotGood
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeLocalOfGoodEmbedding
 

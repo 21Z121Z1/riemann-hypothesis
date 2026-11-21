@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.RingTheory.MvPowerSeries.Basic
 open IsLocalRing GlobalTheory.FormalOrigin GlobalTheory.FormalOrigin.Extend

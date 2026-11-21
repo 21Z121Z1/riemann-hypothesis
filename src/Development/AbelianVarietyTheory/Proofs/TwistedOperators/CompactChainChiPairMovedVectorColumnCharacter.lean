@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqConjOfInFrame
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KerFockMovedReal

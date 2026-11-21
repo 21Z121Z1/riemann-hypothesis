@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelv
 

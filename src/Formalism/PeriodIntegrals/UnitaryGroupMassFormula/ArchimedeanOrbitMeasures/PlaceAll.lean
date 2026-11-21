@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.DetMulRCReal
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Tactic.ENatToNat

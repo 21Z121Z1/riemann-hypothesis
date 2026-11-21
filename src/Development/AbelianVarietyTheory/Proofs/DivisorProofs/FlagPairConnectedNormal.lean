@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Adj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsomorphismPullbackCompStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoFlagPairSubbundleCompatStatement

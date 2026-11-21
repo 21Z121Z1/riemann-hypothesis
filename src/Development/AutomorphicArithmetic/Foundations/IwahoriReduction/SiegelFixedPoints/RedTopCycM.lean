@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.Witalg
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.SiegelFixedPoints.IntCastEqZeroOfDvd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsCuspFunctionalValueGalBEquivariantStatement

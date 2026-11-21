@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.CardEmbPos
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HFour
 

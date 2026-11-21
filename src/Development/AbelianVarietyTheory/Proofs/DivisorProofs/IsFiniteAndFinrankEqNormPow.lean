@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualMapEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormNatAbsEqMinpolyCoeffZeroPow
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StRegSectionParts
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Mathlib.Analysis.Calculus.ParametricIntervalIntegral

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.SelmerInequalityOpen
 import Formalism.AdmissibleDesigns.CharacterTrivialWhereLattice
 

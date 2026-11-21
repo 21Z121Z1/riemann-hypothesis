@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PoincareValueBoundOnCubeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeAsRightWordsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarChartIntegralComparisonStatement

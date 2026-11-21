@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ContinuousRankOneRep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.OrdCharIff

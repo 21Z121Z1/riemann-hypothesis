@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelProjectionFactorisation
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilFactorizationStatement

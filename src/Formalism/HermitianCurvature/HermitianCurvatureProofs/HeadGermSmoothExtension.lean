@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SideOnePositive
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutHBFinal
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HeadJacquetOfLetterAndHead

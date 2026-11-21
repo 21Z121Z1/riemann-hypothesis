@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.WhittakerCriterion
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

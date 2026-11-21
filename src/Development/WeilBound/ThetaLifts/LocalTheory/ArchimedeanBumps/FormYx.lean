@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.HeisenbergActionAddOfOrthogonal
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.RationalWeightSuccMulInvNorm
 

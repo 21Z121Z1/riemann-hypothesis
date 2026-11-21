@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.SemiChar
 import Mathlib.Algebra.Module.ZLattice.Covolume
 

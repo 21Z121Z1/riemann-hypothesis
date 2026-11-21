@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LanglandsExhaustion.Outright
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.GenericUnitaryDualGLOfTwo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOrderedFormSingleRev

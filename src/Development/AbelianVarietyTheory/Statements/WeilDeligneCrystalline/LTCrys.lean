@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.PadicUnitaryWeights.CrystallineUnitParts.ConradLocalTiedness
 
 noncomputable section

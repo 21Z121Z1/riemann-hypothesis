@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.BplusOfEquivariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueIsFunForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFinClAndGamOrd

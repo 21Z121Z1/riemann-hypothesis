@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdempotentMulCutSubOneEntry
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LawsRescaleWithS

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.IsFrozenInv
 
 namespace Formalism.GM.M

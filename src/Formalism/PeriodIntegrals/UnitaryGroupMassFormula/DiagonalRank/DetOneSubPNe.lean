@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.DiagRank
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.NumberTheory.Padics.RingHoms

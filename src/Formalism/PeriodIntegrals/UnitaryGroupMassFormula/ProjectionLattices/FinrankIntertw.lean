@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.SameFormAllLevels
 import Mathlib.Algebra.Azumaya.Basic
 import Mathlib.Algebra.Module.StablyFree.Basic

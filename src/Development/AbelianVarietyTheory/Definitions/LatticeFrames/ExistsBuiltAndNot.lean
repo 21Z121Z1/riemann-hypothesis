@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BuiltGIntro
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsOkPins
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelNotMemRowSG

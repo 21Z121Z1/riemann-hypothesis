@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FunctionFieldPoint
 import Mathlib.RingTheory.DedekindDomain.PID
 

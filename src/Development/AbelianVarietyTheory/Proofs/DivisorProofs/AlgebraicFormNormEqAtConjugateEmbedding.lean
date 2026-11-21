@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenvalueBarCompatibility
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvaluatesOfUnif
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam

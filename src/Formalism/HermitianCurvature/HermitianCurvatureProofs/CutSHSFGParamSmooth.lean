@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSFG
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Topology.UniformSpace.Uniformizable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsZeroOfLev
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogAbsEEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainEmbSuccMulVec

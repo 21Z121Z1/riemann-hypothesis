@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PowerSeries.Substitution

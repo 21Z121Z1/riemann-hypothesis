@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose
 import Mathlib.RingTheory.Henselian

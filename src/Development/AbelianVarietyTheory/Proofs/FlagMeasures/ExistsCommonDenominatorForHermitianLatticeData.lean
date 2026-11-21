@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntSmulMemLattice
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ReduceModChar

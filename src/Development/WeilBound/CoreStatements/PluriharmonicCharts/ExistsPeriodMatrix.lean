@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.PeriodGramConj
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsOpenDet
 import Mathlib.Analysis.Matrix.Order

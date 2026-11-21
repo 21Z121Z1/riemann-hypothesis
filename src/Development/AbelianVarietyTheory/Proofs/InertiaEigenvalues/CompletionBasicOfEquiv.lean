@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Acris0TorsionFree
 
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc

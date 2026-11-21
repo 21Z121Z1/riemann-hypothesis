@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubleSplittingPairIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearModelDoubleSplittingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubleScalingLocalIdentityStatement

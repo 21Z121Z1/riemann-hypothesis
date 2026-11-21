@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogisticFactorMem
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianInterpolation
 import Mathlib.Topology.Sheaves.Presheaf

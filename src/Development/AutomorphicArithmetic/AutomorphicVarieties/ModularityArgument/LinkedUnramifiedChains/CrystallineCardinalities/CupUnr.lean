@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsIntBasis
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.CharFil
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.FrobCyc

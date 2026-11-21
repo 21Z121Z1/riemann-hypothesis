@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentDualPrecedesIff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentPullPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackPointResidueNonzero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeakResolutionOfPrincipalisation

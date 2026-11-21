@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedCechToCatCochainsOneApplyValueAtSubset
 import Mathlib.Topology.Algebra.Star.Unitary
 open Matrix Finset MeasureTheory

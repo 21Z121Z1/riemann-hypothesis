@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncAtOfStalkIdEqSpanProd
 open AlgebraicGeometry CategoryTheory ReciprocityTheory.AnForm.R
 set_option maxHeartbeats 1000000 in

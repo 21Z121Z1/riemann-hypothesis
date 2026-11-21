@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalizedMinorExtendsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPermNormalizedMinorsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LuDecompositionOfMinorsStatement

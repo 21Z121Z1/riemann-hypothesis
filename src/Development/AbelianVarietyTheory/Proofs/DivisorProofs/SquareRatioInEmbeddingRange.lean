@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.AuxiliaryPrimeNeTypePrime
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleConstantRatioStatement
 

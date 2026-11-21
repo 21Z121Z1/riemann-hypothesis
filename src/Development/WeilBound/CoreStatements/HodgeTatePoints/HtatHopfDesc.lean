@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatDesc
 import Mathlib.RingTheory.PiTensorProduct
 open GlobalTheory.CompanionTheory.Ar.BT TensorProduct

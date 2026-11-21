@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 import Mathlib.Data.Int.Star
 set_option maxSynthPendingDepth 1

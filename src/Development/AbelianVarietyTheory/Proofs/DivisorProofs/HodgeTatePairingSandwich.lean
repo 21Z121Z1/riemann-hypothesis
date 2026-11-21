@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.EpsilonPairingZeta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichKernelRangeExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicRingHomEqCanonical

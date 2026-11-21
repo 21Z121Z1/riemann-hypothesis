@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer
 import GroundTheory.ProfiniteCohomology.CupProducts.Projection
 import GroundTheory.ProfiniteCohomology.InflationRestriction.Higher

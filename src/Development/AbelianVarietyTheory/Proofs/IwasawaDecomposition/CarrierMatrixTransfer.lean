@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CarrierIndependentSpanIffStatement
 
 set_option autoImplicit false

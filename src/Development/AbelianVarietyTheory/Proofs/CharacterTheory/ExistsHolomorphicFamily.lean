@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ChainRuleAndJacobianCriterion
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHolomorphicSections
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

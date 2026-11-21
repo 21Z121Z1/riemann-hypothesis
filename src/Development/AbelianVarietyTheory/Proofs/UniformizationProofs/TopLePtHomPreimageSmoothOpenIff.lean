@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsStandardSmoothOfRelativeDimensionAwayJacobian
 import Mathlib.AlgebraicGeometry.Morphisms.UniversallyInjective
 import Mathlib.AlgebraicGeometry.QuasiAffine

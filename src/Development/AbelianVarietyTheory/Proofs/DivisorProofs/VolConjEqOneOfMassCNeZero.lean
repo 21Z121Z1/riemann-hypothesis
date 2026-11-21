@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MassMulVolumeCommensurableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedCentralizerMassMapConjStatement
 

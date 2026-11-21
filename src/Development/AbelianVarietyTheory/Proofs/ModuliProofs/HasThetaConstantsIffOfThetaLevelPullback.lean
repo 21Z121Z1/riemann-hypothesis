@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsThetaPtOverMove
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.GoodClass
 

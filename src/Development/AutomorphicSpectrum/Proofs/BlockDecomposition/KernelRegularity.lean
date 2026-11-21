@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RapidFactorizationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EigenvalueAdjointFactsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KernelRowExistsStatement

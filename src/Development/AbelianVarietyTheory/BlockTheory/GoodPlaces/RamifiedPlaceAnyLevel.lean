@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
 import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow

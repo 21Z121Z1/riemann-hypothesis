@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankAtStalkInvariantDifferentialsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppLESecEpsZeroEpsFn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentSurjective

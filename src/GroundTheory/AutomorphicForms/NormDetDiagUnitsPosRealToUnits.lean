@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ReductionSiegel
 
 open NumberField IsDedekindDomain Topology Filter Set Matrix

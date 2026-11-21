@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

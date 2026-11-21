@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChamberCoefficientTranslationStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChamberCoefficientContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChamberCoefficientProductFormulaStatement

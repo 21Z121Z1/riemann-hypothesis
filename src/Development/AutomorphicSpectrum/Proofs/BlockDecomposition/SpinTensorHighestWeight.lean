@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinGlRelationsAdjointStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LoweringWordsSpanStatement
 

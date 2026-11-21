@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.ComplSmulMapE
 
 noncomputable section

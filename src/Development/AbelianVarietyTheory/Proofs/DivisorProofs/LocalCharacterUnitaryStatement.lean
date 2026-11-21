@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterUnitary
 open ValuativeRel
 open scoped Matrix Topology

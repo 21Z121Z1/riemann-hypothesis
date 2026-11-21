@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.KummerInduction
 import Mathlib.AlgebraicGeometry.AffineTransitionLimit
 

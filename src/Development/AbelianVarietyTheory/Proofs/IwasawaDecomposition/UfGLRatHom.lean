@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemPrinCongOfSm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EmbFColZeroMemMram

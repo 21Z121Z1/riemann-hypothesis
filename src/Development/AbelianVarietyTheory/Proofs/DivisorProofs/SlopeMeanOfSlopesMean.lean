@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.PointDegree.PermExpInj
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.Algebra.MvPolynomial.Coeff

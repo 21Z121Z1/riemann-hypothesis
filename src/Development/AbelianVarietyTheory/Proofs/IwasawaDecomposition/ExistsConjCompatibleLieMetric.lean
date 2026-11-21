@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryOfFrameNormConj
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsLieMetricOfT2
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjSmoothOnPreimageChartsStatement

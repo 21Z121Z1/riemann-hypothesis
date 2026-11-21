@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.EllipsoidStA
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.Matrix.Order

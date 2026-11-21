@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompareFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WValAtLeOneAndUnitAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeChartHeightBoundStatement

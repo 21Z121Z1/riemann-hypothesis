@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalFiniteDominantRefinementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverLiftThroughNormalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverDominatingPairStatement

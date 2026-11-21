@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WeightExponentsEmbeddingsDegree
 import Formalism.LocalToGlobal.ProjectiveLattices.DepRun
 open AlgebraicGeometry CategoryTheory NumberField IsLocalRing IsDedekindDomain

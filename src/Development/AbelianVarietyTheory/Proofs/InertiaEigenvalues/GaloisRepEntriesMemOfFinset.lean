@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CompactGroupRepDefinedOverFiniteExtension
 import Formalism.ConjugateSelfDual.Statement
 import Mathlib.FieldTheory.Galois.Profinite

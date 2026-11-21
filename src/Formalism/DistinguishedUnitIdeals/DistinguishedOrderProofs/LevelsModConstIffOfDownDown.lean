@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GroundTheory
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.PowerSeries.Inverse

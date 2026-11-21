@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FaithfulRepMulVecInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceLsmulEqFinrankMulTraceStatement
 import Mathlib.NumberTheory.Padics.PadicIntegers

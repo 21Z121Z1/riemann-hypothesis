@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.WeierstrassPAddOfNeOfDerivNeZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JetRelOfWeierstrassSystem
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWhittakerCharacterPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankCharacterEigenspaceTwistedComplexificatioStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticFormsSpanInvariantStatement

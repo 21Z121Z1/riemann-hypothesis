@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BasicForm
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Product
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Shapiro

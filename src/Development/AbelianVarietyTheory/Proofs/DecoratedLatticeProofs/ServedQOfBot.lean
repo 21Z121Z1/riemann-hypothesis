@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FamAllQ
 import Formalism.LocalToGlobal.IndefiniteReal.RealRec
 open scoped InnerProductSpace TensorProduct

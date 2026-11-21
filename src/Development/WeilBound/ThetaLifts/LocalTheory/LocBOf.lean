@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.StepFacEq
 import Development.WeilBound.ThetaLifts.LocalTheory.MemPolData
 

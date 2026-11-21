@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.RealDisplaySplitting.GaloisTheoremWithGenerator
 
 open Finset Classical

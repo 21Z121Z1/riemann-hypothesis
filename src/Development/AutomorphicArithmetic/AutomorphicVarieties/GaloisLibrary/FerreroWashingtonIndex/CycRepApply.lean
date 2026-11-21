@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.StickelbergerTheorem.StickelbergerAt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LengthEqAddEigen
 

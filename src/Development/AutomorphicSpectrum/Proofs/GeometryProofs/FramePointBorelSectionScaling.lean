@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameLawsOfModuli
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EvLApply
 open NumberField IsDedekindDomain MeasureTheory Filter Topology

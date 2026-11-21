@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsFibreNormCharpoly
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.LocalProperties.Reduced

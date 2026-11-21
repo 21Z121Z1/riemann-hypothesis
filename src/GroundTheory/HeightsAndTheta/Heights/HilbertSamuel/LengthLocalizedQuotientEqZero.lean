@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.WeightedHomogeneousSubmoduleBlockWeightIntEqRing
 import Mathlib.Algebra.Module.LocalizedModule.Exact
 import Mathlib.Topology.Sheaves.Presheaf

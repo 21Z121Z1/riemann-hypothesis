@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsGenericOfIsLocComp
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContinuousOfIsOpenStab
 

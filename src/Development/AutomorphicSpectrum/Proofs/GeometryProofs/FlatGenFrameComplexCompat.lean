@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FixedByAutomorphismsMemFieldStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramedPointDescendsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatGenFrameIndependentStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLocalRingOfIdem
 import Mathlib.Order.CompletePartialOrder
 import Std.Tactic.BVDecide.Normalize.Prop

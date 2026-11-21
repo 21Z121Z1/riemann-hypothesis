@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.CARSqA
 import Mathlib.RingTheory.PiTensorProduct
 

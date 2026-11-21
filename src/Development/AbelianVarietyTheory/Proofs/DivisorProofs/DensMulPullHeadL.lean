@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadLApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReprEqZeroOfCardNe
 

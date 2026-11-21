@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TorsionEqOfSameRatios
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFptsPull
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RepTransport

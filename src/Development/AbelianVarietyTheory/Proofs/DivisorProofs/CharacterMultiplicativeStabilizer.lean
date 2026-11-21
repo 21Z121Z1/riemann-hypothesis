@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipLeStabP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviTorusHyperbolicPairStatement
 

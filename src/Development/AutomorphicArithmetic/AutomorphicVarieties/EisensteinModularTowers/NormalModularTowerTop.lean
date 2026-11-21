@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.EisensteinModularTowers.NormalModularTowerTopAlgebraModel
 open scoped MatrixGroups Matrix
 open GlobalTheory.KZ GlobalTheory.K4 Polynomial

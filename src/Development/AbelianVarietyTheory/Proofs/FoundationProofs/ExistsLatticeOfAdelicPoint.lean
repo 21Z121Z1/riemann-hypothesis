@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan

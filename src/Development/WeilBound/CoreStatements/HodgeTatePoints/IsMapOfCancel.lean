@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.LbIsoPullPull
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CdLocal
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ActGeneratorZero

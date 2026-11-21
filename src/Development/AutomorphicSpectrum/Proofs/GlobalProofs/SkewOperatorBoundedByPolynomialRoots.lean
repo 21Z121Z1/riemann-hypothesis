@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.Analysis.InnerProductSpace.Spectrum

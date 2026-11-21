@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeTheta.LatticeThetaProofs.InnerDualVecBasis
 import Formalism.LatticeTheta.LatticeThetaProofs.FundamentalDomainEqPreimage
 import Mathlib.Analysis.Fourier.AddCircleMulti

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

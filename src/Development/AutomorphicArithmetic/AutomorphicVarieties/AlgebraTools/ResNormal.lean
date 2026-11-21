@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ProfDefs
 import Std.Tactic.BVDecide.Normalize.Prop
 

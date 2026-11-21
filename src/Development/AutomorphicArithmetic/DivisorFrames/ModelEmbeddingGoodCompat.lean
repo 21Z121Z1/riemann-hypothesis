@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPartNeZero
 import Development.AutomorphicArithmetic.DivisorFrames.SchrodingerFunctionalEqZero

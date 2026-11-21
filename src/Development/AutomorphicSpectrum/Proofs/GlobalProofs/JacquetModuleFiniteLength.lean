@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductionFiniteLength
 import GroundTheory.AutomorphicForms.FiniteLength
 

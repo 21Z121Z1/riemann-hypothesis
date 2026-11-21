@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 
 set_option autoImplicit false

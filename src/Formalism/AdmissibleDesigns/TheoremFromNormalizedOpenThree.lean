@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.TheoremFromNormalizedOpen
 import Formalism.AdmissibleDesigns.FiniteClassesLocalEq
 

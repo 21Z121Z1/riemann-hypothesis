@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.FewBadPrimes
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.KitExOfHostWeightObj

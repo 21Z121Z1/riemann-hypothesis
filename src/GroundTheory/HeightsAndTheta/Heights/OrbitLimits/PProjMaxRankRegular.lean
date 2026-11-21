@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PProjRegular
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjMaxRankRegular
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

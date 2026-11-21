@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedFactorNeZero
 
 open scoped TensorProduct NNReal Matrix nonZeroDivisors

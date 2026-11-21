@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FinrankHostDivTwo
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.TrdegAdjoinEqIffExistsLinearIndependentD
 import Formalism.LocalToGlobal.ProjectiveLattices.IntAtExtExtAll

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 
 open Formalism.Per GlobalTheory.PSer

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.SpanSingletonProduct
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Henselian

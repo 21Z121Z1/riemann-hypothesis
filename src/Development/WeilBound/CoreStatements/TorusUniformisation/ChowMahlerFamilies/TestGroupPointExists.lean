@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyModelHodgeRelayStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PtAfTypeMain
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.TestOrderSections

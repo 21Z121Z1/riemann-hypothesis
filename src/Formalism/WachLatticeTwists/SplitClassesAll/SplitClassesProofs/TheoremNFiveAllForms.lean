@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.SplitClassesAll.Statement
 import Formalism.WachLatticeTwists.SplitLocalLifts.SplitLocalLiftProofs.CompColk
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.InChiSplit

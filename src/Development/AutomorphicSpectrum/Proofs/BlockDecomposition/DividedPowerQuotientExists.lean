@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerStructureExists
 import Mathlib.RingTheory.DividedPowers.SubDPIdeal
 

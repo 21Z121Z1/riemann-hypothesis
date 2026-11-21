@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 import Mathlib.Analysis.Fourier.FourierTransformDeriv
 import Mathlib.Order.CompletePartialOrder

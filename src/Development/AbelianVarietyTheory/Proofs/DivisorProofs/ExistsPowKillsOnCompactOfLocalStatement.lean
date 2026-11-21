@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowKillsOnCompactOfLocal
 open AlgebraicGeometry CategoryTheory TopologicalSpace
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.OneMemNbh
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmoothOfMemLowKSub
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowestKTypeInfinitesimalCharLargeGap

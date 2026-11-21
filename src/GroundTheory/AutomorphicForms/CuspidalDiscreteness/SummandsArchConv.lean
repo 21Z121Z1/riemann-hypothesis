@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SmoothingFinite
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStable
 import GroundTheory.AutomorphicForms.DiscreteSpectrumAbstract

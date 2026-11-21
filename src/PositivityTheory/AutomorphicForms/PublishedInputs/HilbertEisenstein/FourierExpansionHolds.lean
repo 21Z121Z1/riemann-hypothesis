@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.MixedFourierArchSchwartz
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.PointwiseThetaExpansion
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.LocalExpansionHolds

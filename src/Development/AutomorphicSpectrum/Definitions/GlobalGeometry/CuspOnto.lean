@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
 
 namespace GlobalTheory.CompanionTheory.Ar.ThA

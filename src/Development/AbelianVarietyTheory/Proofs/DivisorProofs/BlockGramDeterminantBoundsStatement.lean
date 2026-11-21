@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockGramDeterminantBounds
 open Matrix
 open scoped ComplexOrder

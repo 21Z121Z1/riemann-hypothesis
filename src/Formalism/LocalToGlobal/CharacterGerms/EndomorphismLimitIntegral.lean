@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.CoeffSubstEqSum
 import Formalism.LocalToGlobal.CharacterGerms.RowTieProj
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm

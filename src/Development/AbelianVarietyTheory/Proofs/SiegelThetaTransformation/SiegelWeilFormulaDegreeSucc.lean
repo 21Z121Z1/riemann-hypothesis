@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsGoodSplitPrimeCmFieldStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ClassSumNbStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TwistedSiegelWeilDifferenceBoundedStatement

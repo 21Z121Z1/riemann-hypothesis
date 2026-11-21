@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.UnramExtLaw
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.SmoothDense
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.NatCardEqOfEquivPiField

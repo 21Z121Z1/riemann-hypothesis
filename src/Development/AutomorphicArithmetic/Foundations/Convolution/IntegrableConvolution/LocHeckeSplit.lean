@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchProd
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SphLaws
 import GroundTheory.GlobalFields.KummerTheory.Splitting

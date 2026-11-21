@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapExistsFunctionalStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSidesStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps

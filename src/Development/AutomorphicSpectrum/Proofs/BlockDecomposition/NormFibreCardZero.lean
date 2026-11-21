@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
 import Mathlib.Data.Int.Star
 import Std.Tactic.BVDecide.Normalize.Prop

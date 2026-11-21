@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.FactDelDualNabla
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BideterminantFunctionsOfShape
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice

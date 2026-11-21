@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsSch
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalizationStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsExcisionNbhdAway

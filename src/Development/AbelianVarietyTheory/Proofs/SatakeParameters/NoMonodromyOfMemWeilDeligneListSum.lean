@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolarizedGaloisRepNarrow2
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LpTwOneNe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NEqZeroOfSumList

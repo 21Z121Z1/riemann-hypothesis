@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PadicIntHomUnique
 import Development.AbelianVarietyTheory.CrystallinePeriods.CrisLoc
 

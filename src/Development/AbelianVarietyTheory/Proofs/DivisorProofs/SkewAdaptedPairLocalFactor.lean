@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnipotentScalarTranslationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairRestrictionLeviStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.QuadraticSemicharacterIdentityReformulated
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KappaNormAtSplitPrimesStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KappaOnNonsplitPrimesStatement

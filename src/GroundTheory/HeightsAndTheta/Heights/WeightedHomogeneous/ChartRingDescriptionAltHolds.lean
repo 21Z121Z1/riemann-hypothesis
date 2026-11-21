@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.SectionInjectivityHypothesesProjectiveLine
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.ChartPowNeZero
 set_option maxSynthPendingDepth 1

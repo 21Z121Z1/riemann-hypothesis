@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasValues
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfSec
 import Mathlib.RingTheory.Etale.Weakly

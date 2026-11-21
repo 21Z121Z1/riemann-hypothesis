@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowDef
 import Mathlib.Algebra.Module.Torsion.Prod
 

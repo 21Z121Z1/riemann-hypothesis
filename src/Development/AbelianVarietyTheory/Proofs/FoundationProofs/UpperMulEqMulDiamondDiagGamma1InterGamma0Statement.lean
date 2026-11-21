@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperMulEqMulDiamondDiagGamma1InterGamma0
 open UpperHalfPlane ModularForm CongruenceSubgroup
 open scoped MatrixGroups ModularForm

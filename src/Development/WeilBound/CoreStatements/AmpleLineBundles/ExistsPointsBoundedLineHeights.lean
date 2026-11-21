@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveIsOrbit
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.HeightsSetAll

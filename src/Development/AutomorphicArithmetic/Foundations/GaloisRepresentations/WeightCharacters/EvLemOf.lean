@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.WeightCharacters.DeltaNear
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbittAlg
 

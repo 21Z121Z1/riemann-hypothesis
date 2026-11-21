@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientCurvatureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceChartIndepStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnExtTraceStatement

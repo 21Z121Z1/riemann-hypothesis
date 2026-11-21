@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.IsAdaptedEmpty
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LanglandsDecompositionUnipotentLevi
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ArchimedeanUnitaryElementLiftStatement

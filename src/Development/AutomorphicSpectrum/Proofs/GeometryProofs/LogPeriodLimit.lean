@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ImLowerOnKernel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SymplecticPolydiscPeriodBasisStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SiegelLimitImagBoundStatement

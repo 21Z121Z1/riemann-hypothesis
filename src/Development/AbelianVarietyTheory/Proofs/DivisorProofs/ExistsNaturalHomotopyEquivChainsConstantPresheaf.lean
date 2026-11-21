@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainsBasic
 import Mathlib.Algebra.Homology.Embedding.ExtendHomotopy
 import Mathlib.AlgebraicTopology.ExtraDegeneracy

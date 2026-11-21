@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilDatumOfSplittingCharactersStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtYAndItYOfPair

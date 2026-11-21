@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NumberFieldLatticeClearsDenominator
 open NumberField ReciprocityTheory.GeometryOfNumbersTheory
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.TruncLogEqOfPowEqZero
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

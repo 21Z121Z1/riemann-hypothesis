@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.AlmostSelfdual
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SmithZeroOne
 import Mathlib.RingTheory.PicardGroup

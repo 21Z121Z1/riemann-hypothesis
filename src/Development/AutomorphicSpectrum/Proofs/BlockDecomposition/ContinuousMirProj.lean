@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.TwistedKernels.ExPhiPlusOnto
 
 open GlobalTheory.PRep GlobalTheory.BZMir GlobalTheory.BZMir.Fun Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.SmoothRep
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Operators
 import GroundTheory.AutomorphicForms.TensorProductTheorem.MatrixCoeff

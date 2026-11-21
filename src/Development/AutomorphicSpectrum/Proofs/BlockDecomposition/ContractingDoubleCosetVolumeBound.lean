@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureImageDoubleCoset
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasureImagePrincipalPosLtTop
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockIndexMonotone

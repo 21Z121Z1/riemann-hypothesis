@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DifferentIdealPowers
 
 open NumberField Module IsDedekindDomain Formalism.L2.SG.Pf.Cnt

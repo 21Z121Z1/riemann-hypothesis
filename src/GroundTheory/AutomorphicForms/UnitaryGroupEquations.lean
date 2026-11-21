@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.UnitaryGroupScheme
 
 namespace GroundTheory.Automorphic

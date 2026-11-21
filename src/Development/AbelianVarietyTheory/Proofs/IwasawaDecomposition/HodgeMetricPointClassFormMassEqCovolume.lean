@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasurePreservingCurry
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MulConjTransposeEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsComponentUniformisationBoundedDomainCompleStatement

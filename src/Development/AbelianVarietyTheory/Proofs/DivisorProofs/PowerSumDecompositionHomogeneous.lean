@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighDegreeInPowerSumIdealStatement
 

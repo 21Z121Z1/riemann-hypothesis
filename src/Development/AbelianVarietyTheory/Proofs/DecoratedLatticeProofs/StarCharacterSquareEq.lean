@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelGroupPropertyClosedMulStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelZeroElementReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagSupportSplitPlacesStatement

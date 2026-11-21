@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LocalLeviPshRegularizationStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GluedLocalRegularizationsOnAtlasStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RegularizationGlueC2ExplicitStatement

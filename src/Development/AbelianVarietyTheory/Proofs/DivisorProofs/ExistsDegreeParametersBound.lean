@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFrameWeightsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertSamuelComponentShortBasisBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogDegreeLeWeightBoundStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FamJointBCD
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPrimeNeTypePrimeStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PointInFamilyCrystallineStatement

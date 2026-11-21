@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.L2DbarEstimates.MinimalSolutions.MinimalSolution
 
 namespace ReciprocityTheory.L2DbarEstimates

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SphereMeasureStereographicIntegralStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EvalW
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PDiagFibreMoment

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsAdaptedFlagCharts
 import Development.AutomorphicArithmetic.DivisorFrames.FlagBundleChartPoints
 import Development.AutomorphicArithmetic.DivisorFrames.FlagCompactOverBase

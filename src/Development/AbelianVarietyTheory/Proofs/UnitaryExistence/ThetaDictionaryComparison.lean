@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.ArchimedeanCocycleCharacter
 import Formalism.LocalToGlobal.ProjectiveLattices.IsLevMove
 import Formalism.LocalToGlobal.ProjectiveLattices.RhoWApply

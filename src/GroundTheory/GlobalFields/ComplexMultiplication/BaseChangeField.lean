@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.BaseChangeGalois
 import GroundTheory.GlobalFields.ComplexMultiplication.AutCFixed
 import GroundTheory.GlobalFields.ComplexMultiplication.BaseChangeDegree

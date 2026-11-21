@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.TowerSeq
 open TensorProduct CrystallineSemistableComparison.D
 open scoped LaurentPolynomial

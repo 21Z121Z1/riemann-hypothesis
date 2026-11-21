@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.SpecialFunctions.Bernstein
 import Mathlib.MeasureTheory.Integral.Bochner.Basic
 import Mathlib.Topology.ContinuousMap.CompactlySupported

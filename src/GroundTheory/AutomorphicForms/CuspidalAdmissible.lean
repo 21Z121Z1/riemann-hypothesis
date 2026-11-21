@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LeviCartan
 import GroundTheory.AutomorphicForms.SmoothRepSchur
 import GroundTheory.AutomorphicForms.AdmissibleInduction

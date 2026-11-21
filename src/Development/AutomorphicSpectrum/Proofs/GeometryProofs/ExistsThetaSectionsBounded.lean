@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThetaMultiplierQuadraticCharacterStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionSupNormFieldExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFullTorsionNumberFieldStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerAlongIdIff
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PrincipalOfFieldExtension
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj

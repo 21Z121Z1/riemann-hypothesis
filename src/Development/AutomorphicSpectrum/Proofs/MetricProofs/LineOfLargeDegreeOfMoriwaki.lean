@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PLineOfLargeDegreeX
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PIntCoordChange
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PIntCoordGeoNum

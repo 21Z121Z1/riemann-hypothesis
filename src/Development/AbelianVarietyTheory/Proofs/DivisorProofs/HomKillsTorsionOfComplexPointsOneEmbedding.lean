@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MulAFiniteFlatSurjective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AbelianSchemeIdPowFiniteEtaleSurjective

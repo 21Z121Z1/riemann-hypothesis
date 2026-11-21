@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StandardRankOneLatticeOfLocal
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SpanImageLeOf
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.StarDetMulDetMem

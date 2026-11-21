@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTieFB
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LinEig
 import Mathlib.LinearAlgebra.Eigenspace.Pi

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IpEqZeroOfHeisEigen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCongLevelIntG

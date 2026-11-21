@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.LemmaKOfSteps
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.NumGens
 

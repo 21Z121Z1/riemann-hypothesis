@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntertwinerUnipotentInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CartanDecomposition
 

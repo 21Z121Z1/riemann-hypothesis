@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjIncl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PiWIncM
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

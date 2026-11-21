@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPlaceSplitsCompletelyNotMemEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrongApproximationDetOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDetNormOneBisStatement

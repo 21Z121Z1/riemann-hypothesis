@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGoodIntegral
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RealPosOfDiscrete
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulEqSmulOne

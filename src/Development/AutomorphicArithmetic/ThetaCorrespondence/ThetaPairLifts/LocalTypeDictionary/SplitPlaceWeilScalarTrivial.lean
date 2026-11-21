@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.GradientFixesSplitVector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScalarSqSmulMatrixSupportedAtPlaceStatement
 

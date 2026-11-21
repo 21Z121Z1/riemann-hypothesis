@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsIsoIffBijectiveOverAlgClosed
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic

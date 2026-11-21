@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsShaDict
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsGsEquiv
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsLocal

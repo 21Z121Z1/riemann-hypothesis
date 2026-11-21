@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBCStmt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MajorantIntegrals
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LatticeSummability

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.NumericProductInequality
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.SymbolRealisableBound
 

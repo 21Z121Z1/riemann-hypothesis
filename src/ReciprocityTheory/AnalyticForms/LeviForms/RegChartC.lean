@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.LeviForms.RegChartB
 
 namespace ReciprocityTheory.AnForm.P.RegularChartScaling

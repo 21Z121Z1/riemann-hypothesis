@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.DiscreteSeriesInfinitesimalCharacter
 open Matrix GlobalTheory.HolDS
 open Formalism.REAL (GlRel IsUnitary IsWeight KHighest root Jm inG)

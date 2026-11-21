@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUnitCharts
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsClassicalLiftOfSmooth
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FinrankSpanResidueLe

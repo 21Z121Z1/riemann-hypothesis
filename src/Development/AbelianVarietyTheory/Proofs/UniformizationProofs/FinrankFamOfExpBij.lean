@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ScalCompSpecMap
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HasBasisOfBasis
 

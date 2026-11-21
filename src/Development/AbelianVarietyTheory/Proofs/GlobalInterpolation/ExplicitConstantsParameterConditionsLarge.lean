@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowAndImp
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowPrimesConductorStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitChoiceRankKLowerUpperBounds

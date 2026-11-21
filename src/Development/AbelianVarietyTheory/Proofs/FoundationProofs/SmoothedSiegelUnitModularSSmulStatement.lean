@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitModularSSmul
 open scoped UpperHalfPlane MatrixGroups Manifold
 open GlobalTheory.Sieg GlobalTheory.QFam

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ZlatticeTsumDilateSubIntegralLeRapid
 open NumberField IsDedekindDomain NumberField.mixedEmbedding MeasureTheory Complex Classical
 open scoped ContDiff nonZeroDivisors

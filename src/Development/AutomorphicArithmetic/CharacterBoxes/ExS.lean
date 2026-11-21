@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.DesignExistsOfChoices
 import Development.AutomorphicArithmetic.CharacterBoxes.Supply
 import Formalism.SharpRestriction.MuTuOfTuSize

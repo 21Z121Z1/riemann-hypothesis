@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatTuple
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsNatMulMem

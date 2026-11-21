@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.HostTraceIdentity
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EqZeroOrSingleOfDegreeLeOne
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.VVAlgebraMapNonnegDvr

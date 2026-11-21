@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IdealNormPrincipalInExtension
 open NumberField GroundTheory.Heights₂.Heights
 open scoped nonZeroDivisors

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqOfSpecializesOfFinite
 import Development.AbelianVarietyTheory.Definitions.Divisors.AnalyticOnNhdFinChartIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers

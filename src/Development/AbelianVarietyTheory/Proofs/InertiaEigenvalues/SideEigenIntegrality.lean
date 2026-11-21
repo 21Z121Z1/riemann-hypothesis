@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenLevelStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenWeightStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideEigenConductorStatement

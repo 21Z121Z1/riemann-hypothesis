@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 import Mathlib.Topology.Algebra.Nonarchimedean.AdicTopology
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesPadicExistsPthPowerCombinationStatement
 import Mathlib.RingTheory.AdicCompletion.Completeness
 open GlobalTheory.AlmostEt GlobalTheory.K5

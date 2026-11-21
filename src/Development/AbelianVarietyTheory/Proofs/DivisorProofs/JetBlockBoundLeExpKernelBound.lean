@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PaddedLastEntry
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TopPlaceLogTheta
 

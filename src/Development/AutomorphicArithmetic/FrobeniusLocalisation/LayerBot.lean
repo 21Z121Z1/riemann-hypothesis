@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.CondESpec
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.CardImgOneDvd
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsContRep
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.FixedOpen
 

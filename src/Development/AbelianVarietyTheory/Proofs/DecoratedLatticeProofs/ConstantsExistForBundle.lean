@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdmissibleRanksAllMembersStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeFrameAllMembersStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LargeGapAllMembersStatement

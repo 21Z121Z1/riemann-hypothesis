@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.RationalMatrixPrimeOrderBound
 import Formalism.LogVandermondeBounds.LogVandermondeProofs.LengthQuotientLeOfLatticeSandwich
 import Mathlib.Algebra.Ring.IsFormallyReal

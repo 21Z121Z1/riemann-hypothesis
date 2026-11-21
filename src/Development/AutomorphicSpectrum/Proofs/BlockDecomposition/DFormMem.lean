@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.DpZeroRight
 import Mathlib.CategoryTheory.Monoidal.Mon
 import Mathlib.Tactic.ENatToNat

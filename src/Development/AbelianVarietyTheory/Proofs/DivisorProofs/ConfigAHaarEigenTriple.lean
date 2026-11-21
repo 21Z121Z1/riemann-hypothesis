@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactSupportSchwartzDecayStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigATripleMatchedCompareStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigATripleMatchedEqualStatement

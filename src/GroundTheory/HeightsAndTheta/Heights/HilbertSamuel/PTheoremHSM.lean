@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResolutionSup
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsArith
 set_option maxSynthPendingDepth 1

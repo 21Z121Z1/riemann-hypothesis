@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.PrimePairOfBoxAndWeakMeanSquareHypotheses
 
 open Finset Classical

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryNormZeroIffOpenComplStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScalarBoundsOfNormLeOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcBoundaryPotentialEqFormStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledModelDarbouxWeilActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledPairEmbeddingBlockDiagonalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledPairDarbouxSeesawStatement

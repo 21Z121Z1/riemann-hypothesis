@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ProdUpdateDiv
 import Mathlib.RingTheory.LocalProperties.Reduced
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PartialFlagBlocks
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SumSqCompBlockMap
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ProjLineRankTwoPushforwardHypotheses

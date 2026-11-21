@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizedAbelianIsogenyExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyTorsionGeneratorPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionGeneratorCharTrivialStatement

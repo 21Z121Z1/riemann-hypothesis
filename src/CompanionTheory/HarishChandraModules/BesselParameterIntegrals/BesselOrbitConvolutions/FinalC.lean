@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.WeylGroupActions.TorusMovesCharacter
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.BesselOrbitConvolutions.DDFormC
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.BesselOrbitConvolutions.AtFormC

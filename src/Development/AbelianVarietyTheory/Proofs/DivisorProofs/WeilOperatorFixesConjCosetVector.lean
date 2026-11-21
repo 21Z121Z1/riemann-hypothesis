@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfIdem
 
 open Formalism.BasicNotions Formalism.IndefR.Links IsDedekindDomain NumberField Polynomial

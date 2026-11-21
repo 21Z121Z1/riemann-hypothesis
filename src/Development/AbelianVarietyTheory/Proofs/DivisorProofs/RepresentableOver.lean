@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentableOfZariskiSheafOpenChartsLargeStatement
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite
 

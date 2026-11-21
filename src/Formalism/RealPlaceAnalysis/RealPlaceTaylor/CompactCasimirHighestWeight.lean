@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.StatementKT
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.RingTheory.PiTensorProduct

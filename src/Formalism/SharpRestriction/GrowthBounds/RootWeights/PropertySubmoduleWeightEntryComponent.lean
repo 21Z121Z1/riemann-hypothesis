@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.LaurentCoefficientsMemProperty
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.BinomialStableContainsComponents
 import Mathlib.Order.Interval.Finset.Box

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DropPlInsert
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalThetaPairExistence
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFinsetOfMemNhds

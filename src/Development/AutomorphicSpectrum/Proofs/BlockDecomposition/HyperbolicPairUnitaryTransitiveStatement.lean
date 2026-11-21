@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HyperbolicPairUnitaryTransitive
 open HeckeCharacterZeroLocus.SiegelWeilU
 open scoped Matrix

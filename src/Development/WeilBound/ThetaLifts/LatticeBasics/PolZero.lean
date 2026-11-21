@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.FdEqZero
 import Development.WeilBound.ThetaLifts.LatticeBasics.NonZero
 

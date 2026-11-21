@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.ChartMongeAmpereL1Hypotheses
 import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasureB
 set_option maxSynthPendingDepth 1

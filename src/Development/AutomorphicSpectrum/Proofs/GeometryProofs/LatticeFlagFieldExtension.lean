@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualMapOfFieldExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap
 import Mathlib.Algebra.Module.StablyFree.Basic

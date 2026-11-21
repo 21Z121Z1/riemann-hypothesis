@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralElementCartierDualTraceStatement
 set_option autoImplicit false
 noncomputable section

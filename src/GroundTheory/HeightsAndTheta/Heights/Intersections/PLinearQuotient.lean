@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsLinearQuotient
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

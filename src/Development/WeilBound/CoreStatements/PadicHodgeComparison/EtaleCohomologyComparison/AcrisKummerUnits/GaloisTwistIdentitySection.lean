@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.AcrisKummerUnits.MapUgAlgebraMap
 import Mathlib.AlgebraicGeometry.Scheme
 import Mathlib.CategoryTheory.Monoidal.Mon

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConstantCoeffJetLogG
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HasSubstPairPadicComplexOfConstantCoeffZero
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.CalcExp

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.SecondInequality.Cyclic
 
 namespace GroundTheory.Global

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsExtraRest
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsMulMemAdjoinOfIsLocalization
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ExistsAmpleBaseLocalizationEq

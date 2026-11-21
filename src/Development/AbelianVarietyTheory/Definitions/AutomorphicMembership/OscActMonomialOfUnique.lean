@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousOfDense
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGrpDataMapHaar
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoverTensorHom

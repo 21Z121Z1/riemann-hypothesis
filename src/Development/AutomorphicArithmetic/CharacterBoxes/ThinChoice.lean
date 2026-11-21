@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LogCondLeThree
 import Development.AutomorphicArithmetic.MeanSquareBounds.Thin
 import Development.AutomorphicArithmetic.MeanSquareBounds.SmallZeros

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.FlagDegFormula
 
 open MvPolynomial Formalism.DegreeFormula

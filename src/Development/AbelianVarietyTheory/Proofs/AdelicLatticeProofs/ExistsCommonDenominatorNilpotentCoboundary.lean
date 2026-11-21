@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeAlgebraMapOfIsNilpotentTmulSub
 import Mathlib.RingTheory.LocalProperties.Reduced
 import Mathlib.RingTheory.RingHom.FiniteType

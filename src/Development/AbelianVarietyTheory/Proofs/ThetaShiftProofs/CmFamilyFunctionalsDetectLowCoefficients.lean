@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CarchAt
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.AbsNormHalfDifferentDvdDiscr
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.MemFormsLowCoeffsVanishIffFourierJacobiStatement

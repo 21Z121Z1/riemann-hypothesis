@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckePhiFourierTransformSigmaZeroEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SummableHilbertEisensteinWeightTwoQSeriesStatement
 

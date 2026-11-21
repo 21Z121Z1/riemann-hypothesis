@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RootNumberEqDifferentCoeff
 open NumberField GroundTheory.Global GroundTheory.Global.IdeleGroup
 open scoped nonZeroDivisors

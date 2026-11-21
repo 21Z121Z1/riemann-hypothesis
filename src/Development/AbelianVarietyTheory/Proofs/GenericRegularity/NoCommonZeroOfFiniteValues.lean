@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.RealPtGeo
 import Formalism.LocalToGlobal.ProjectiveLattices.LieFreePf
 import Formalism.LocalToGlobal.ProjectiveLattices.ThetaFramePf

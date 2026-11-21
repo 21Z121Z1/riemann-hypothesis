@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
 import Mathlib.Analysis.SpecialFunctions.Log.Monotone
 import Mathlib.RingTheory.WittVector.IsPoly

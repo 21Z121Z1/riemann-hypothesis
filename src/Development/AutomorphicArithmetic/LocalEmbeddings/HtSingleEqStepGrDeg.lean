@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.IdealNormLogHeight
 import Development.AutomorphicArithmetic.DivisorFrames.HeightLogNormFormula
 import Development.AutomorphicArithmetic.DivisorFrames.CoordinateEigenframeEquation

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
 import Mathlib.MeasureTheory.Function.AEEqOfIntegral
 import Mathlib.Order.CompletePartialOrder

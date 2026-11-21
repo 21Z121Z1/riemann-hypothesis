@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalIntegrandIntegrable
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableTinvIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FunctionalEquationGeneric

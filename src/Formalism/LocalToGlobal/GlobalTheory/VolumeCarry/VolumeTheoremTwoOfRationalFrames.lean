@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.VolumeCarry.VolumeTheoremTwoOfC3Stable
 import Formalism.PeriodIntegrals.GaugeGap
 

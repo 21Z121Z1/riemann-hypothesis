@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HypothesesX
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PoincareDeRhamDuality
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf

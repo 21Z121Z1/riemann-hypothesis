@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleAtInertStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedPlacesDeclaredStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JointConditionAdm5Statement

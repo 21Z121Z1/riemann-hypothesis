@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FourSquareQuaternions.FourSqOf
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FourSquareQuaternions.QuatMatTransposeMul
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.MultivariableReproducingFormula
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Tactic.Monotonicity.Lemmas

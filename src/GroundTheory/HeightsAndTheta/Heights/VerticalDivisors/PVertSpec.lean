@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.IntToFracInjective
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

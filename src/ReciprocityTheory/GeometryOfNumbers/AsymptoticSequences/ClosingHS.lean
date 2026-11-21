@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.AsymptoticSequences.DefectSt
 
 namespace ReciprocityTheory.GeometryOfNumbersTheory

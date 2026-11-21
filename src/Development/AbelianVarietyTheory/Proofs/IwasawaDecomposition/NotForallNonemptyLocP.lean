@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaXNonemptyProvisional
 import Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil
 import Mathlib.Algebra.Module.StablyFree.Basic

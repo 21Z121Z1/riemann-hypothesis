@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PolynomialDimension.DigitClassSize
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.WittVector.IsPoly

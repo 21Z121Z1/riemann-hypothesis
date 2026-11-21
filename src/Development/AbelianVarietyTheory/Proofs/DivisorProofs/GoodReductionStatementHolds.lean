@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientCurvatureStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaZeroOneSkewConjStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaZeroOneLowerVanishStatement

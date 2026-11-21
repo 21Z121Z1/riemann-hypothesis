@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HasDerivAtMexpCommAddBracket
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.Complex

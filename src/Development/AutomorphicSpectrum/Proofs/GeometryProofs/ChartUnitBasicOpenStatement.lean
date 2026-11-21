@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartUnitBasicOpen
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField
 set_option maxHeartbeats 1000000 in

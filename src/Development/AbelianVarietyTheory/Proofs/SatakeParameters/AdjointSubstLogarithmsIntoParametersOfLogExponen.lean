@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DualOm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralWOfMulEqOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.StandardSeriesBConditionsLargePrime

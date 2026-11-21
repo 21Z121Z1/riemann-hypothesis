@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterPartTensorSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowestDegreeComponentInvariant

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsSplitOfIsInertAt
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemSiegelOfIffRightAct
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBareNormDisc
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatLineIdempotentSectionsStatement
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero

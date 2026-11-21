@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroupReduction
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.UpperHalfSurvey.ValOfKindIndep
 import Formalism.LocalToGlobal.CharacterGerms.RowTie
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafClCut
 import Mathlib.Tactic.Monotonicity.Lemmas
 

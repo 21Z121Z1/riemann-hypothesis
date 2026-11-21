@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicDegreeOneBiholomorphism
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SameOrbitRefl

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsZonalSphericalFunctionUnramifiedUnitary
 open Formalism.UG (IsUnramInv GU KU Hecke dosetInd)
 set_option maxHeartbeats 1000000 in

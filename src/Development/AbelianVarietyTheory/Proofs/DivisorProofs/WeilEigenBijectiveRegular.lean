@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelEvaluationPreservesSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenBijectiveGoodModelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenBijectivePairStatement

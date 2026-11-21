@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Statements
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsTildeTail
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeTailLoc

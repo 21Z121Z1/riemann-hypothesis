@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.FriedrichsKernels.Friedrichs
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightWordL2LaplacianBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IteratedDerivTwoSmul

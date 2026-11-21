@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.SpreadingOutLocallyQuasiFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroForallComplexPointExtend
 import Mathlib.AlgebraicGeometry.QuasiAffine

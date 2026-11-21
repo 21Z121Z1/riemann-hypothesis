@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.GeNatCast
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.SimpleRing.Principal

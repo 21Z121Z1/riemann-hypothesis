@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupLawCoboundaryOneSubstOfEndomorphism
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantCoeffUpNmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHausdorffOfProjective

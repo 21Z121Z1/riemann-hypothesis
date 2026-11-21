@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CupProducts.ExistsCocycleMapFEqD
 import GroundTheory.ProfiniteCohomology.CupProducts.Pairing
 set_option maxSynthPendingDepth 1

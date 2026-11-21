@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexStabilizer
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubOneMulSumEq

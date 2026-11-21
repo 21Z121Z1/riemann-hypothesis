@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesSections
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesSubmodule
 set_option maxSynthPendingDepth 1

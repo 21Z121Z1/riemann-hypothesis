@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.MonomialRepresentations.Clifford
 import Mathlib.LinearAlgebra.Eigenspace.Pi
 import Mathlib.LinearAlgebra.Eigenspace.Semisimple

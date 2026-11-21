@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFlatAnIffIsConstMul
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsContraction
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SameCompOfIsHolTo

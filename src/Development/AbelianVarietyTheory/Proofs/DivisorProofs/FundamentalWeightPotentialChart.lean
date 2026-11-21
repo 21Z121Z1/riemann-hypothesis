@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedIntegralCutoffLogDecay
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPotentialPullback
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemSupportBDIff

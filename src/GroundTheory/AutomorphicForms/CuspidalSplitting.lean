@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalSplittingIsotypic
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AmpleLineBundles.FrameBasis
 import Development.WeilBound.CoreStatements.AmpleLineBundles.RhoEventually
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtComplexEmbedding

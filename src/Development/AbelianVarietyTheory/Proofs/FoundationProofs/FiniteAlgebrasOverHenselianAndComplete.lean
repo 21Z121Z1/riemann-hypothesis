@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsEquivalenceFiniteEtaleBaseChangeResidueField
 import Mathlib.RingTheory.Etale.Finite
 import Mathlib.RingTheory.HopfAlgebra.Convolution

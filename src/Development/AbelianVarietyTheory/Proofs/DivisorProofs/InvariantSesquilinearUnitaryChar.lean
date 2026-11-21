@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankInvariantFormTransportStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankFormLinearExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankInSpanSmallFProductsStatement

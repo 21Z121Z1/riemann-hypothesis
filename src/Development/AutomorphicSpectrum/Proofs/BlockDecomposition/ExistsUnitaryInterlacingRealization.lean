@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.Complexify
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionOffDiagonalIdentityStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFractionSquareIdentityStatement

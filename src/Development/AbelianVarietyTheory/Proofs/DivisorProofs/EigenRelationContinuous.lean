@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerTransitive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfTensEqOfNeZero

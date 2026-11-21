@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.PresentedLocalChart
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.LastCoordinateSlices
 import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.CoproductBaseChange

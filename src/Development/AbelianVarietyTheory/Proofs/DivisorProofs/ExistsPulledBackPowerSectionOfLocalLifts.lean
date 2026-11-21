@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPreimageOfLocalPreimagesInjectiveStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass
 

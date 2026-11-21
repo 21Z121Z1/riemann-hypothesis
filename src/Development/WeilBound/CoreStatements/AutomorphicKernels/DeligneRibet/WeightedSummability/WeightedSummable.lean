@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelContinuation
 

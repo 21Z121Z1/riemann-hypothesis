@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.WeilGroups.QuasiCharacter
 
 open NumberField

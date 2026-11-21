@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.GlobQuotH
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

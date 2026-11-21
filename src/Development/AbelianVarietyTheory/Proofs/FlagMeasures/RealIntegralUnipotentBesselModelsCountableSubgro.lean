@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.SCompact
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GoodLoc
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne

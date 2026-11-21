@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsDerivAt0CompLinMap
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AppellHumbertDataEqOfLbIsoPowPull
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel

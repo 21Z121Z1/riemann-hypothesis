@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypVin
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocCore
 

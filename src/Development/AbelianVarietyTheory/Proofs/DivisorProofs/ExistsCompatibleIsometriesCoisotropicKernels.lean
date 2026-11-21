@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicSaturatedSubmoduleOfFinrankLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOppositeIsotropicPairStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOppositeTransversalIsotropicStatement

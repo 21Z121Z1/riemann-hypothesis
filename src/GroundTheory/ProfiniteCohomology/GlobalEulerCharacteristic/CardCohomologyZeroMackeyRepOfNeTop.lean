@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.DefsForms
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingMackey
 set_option maxSynthPendingDepth 1

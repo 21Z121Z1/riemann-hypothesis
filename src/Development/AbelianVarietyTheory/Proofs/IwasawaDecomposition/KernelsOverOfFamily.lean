@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.ColInst
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelAtPointPenultimateStepFirstCoupledKernel

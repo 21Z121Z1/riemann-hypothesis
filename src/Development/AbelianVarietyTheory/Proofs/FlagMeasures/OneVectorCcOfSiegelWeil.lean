@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SiegelMeanCc
 import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
 import Mathlib.Algebra.Module.StablyFree.Basic

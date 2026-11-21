@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCyclotomicExtensionQI
 import Development.AbelianVarietyTheory.Definitions.Divisors.TwOrbMEqTwOrbUOfNormal
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointSide

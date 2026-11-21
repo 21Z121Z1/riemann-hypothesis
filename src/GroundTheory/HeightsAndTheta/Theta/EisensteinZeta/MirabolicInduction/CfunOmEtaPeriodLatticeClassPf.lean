@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.MirabolicInduction.CfunOmStatements
 import Mathlib.NumberTheory.ModularForms.Discriminant
 import Mathlib.Tactic.ENatToNat

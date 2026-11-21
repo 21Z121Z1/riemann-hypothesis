@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.LocalThetaFunctional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationIsoBTriplePair
 open scoped TensorProduct NNReal Matrix

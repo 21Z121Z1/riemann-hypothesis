@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianPlaneStrongApprox
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsSupported
 import GroundTheory.GlobalFields.TateThesis.AdelicCharDual

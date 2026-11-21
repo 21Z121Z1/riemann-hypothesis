@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernIntegralEqDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCInfNormOfIsHodge
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulDegEq

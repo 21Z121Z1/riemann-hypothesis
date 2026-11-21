@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.DataForm
 import Formalism.SharpRestriction.GrowthBounds.LatticeSystems
 

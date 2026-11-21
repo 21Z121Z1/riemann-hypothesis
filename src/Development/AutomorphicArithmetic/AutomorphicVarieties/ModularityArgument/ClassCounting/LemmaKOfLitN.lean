@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CyclotomicDiscriminants.FinSRel
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.STrans
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.FProd

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopologicalKrullDimEqSucc
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoGenResMapSmulHom
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

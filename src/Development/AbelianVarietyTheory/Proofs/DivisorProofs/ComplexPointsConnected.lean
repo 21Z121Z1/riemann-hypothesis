@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PreconnectedSpacePtsOfIsIntegral
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers
 open CategoryTheory AlgebraicGeometry Limits NumberField IsDedekindDomain TopologicalSpace

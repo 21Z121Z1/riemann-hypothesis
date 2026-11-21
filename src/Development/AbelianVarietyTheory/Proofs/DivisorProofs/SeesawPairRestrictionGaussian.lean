@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardTraceAddCharIsStandardCharOfAdmissibleCM
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchwartzNe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjLinApply

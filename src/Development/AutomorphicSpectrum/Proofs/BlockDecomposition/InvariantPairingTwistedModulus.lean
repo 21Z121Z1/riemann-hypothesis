@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeVolumeScalingLawsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairingLatticeRefinementCardStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenStandardLatticeStabilizerStatement

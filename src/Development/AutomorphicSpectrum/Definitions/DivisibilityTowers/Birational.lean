@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ArithmeticHilbertSamuelLowerBound
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.CompactGapsGE
 

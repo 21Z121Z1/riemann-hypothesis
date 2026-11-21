@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.TraceFormDualSystem
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsPosHermOfPositive

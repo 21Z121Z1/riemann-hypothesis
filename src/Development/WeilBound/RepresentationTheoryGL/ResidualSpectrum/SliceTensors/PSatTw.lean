@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.PSatDefs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.RealClassMaps.Statement
 import Formalism.WachLatticeTwists.CupProductVanishing.CupProductProofs.Clause4GK
 import Formalism.WachLatticeTwists.ShapeRowIsomorphisms.ShapeRowProofs.BkInRow

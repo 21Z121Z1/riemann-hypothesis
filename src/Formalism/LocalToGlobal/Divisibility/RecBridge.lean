@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.NumbersLink
 import Formalism.SharpRestriction.GlobalTheoremInputs
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes

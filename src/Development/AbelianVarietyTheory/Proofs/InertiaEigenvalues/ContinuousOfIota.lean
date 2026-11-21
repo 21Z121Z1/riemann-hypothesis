@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotMemPlacesOverOfNe
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormEqOneOfCompact
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalStrongMultiplicityOneOfAnalytic

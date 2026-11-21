@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TwoSidedSizeFunctionPosInvariantContinuous
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurableStarProjectionKerMatrix
 import Mathlib.Data.Matrix.ColumnRowPartitioned

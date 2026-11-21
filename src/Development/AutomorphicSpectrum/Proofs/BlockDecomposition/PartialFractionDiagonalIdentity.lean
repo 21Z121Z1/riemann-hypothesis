@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.EmbeddedFrames.PfD
 import Mathlib.LinearAlgebra.Lagrange
 import Mathlib.RingTheory.PiTensorProduct

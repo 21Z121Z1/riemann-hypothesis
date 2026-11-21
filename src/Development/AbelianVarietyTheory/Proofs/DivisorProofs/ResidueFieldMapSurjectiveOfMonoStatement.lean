@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueFieldMapSurjectiveOfMono
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry IsLocalRing
 set_option maxHeartbeats 1000000 in

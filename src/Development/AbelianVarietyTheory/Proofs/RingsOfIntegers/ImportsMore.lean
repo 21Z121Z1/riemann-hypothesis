@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PsiInOfComponent
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsSymmetricOfSymmetryGenerator
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FinrankOfExpBij

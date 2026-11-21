@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.InKIffTrivialTwist
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FlatKernelPolarisationCosetsOverDVR
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FlatQuotientOfEquivCokerDualMapOfExactFibresStatement

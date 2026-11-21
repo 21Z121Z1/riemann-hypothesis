@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.InnerEqZeroOfNotUEquiv
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 import Development.AbelianVarietyTheory.Definitions.Foundations.ContinuousOfMemCcSmooth

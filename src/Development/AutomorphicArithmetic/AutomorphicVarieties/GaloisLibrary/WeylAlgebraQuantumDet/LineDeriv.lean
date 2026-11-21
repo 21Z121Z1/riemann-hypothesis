@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.WeylAlgebraQuantumDet.IsTop
 import Mathlib.Analysis.Analytic.Polynomial
 import Mathlib.RingTheory.WittVector.IsPoly

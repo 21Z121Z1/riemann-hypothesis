@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingLFunctionSpecialValueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleDoublingPeriodFirstStatement
 

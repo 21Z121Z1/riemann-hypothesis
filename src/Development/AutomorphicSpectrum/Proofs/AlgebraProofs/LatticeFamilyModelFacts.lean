@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsLatticeFamily
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemSpanOverOfMem
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.XFlattenMany

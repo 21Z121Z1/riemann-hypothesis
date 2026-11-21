@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Main
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BoundedSums
 import Formalism.LocalToGlobal.CharacterGerms.CoeffSubstEqSum

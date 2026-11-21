@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TowerStageExtensionExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TowerStageSuccessorCoefficientsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharTrivialUniformizers

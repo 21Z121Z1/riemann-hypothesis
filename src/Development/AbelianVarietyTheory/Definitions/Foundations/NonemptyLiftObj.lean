@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.LatticeIntegralCoordinates
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPeriodPairIdealCurveLattice
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFixedOfContract

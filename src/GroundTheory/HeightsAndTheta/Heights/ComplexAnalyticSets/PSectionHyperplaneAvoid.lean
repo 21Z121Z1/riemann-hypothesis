@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSectionHyperplaneAvoid
 import Mathlib.GroupTheory.CosetCover
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

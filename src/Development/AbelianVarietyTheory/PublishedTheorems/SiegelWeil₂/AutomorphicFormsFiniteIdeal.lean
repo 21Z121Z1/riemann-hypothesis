@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedSmooth
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.WordDerivatives
 import Mathlib.Algebra.Lie.DirectSum

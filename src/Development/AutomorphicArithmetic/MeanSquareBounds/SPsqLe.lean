@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MSqDiagB
 import Development.AutomorphicArithmetic.MeanSquareBounds.SumMinLeDiv
 

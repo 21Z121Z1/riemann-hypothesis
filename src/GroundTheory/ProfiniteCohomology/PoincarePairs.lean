@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.PoincarePairs.Devissage
 import GroundTheory.ProfiniteCohomology.PoincarePairs.MackeyCup
 set_option maxSynthPendingDepth 1

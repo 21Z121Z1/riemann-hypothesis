@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StRegSectionParts
 import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas
 set_option maxSynthPendingDepth 1

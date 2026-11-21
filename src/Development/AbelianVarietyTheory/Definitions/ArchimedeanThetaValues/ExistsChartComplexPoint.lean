@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.RelationsAreFunctions
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ZeroFLeftExt
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero

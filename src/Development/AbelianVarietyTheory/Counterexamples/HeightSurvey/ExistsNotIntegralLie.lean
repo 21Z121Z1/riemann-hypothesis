@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.LieFreePf
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointFieldFromTestRing
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ThetaFrameAllOfThetaFrame

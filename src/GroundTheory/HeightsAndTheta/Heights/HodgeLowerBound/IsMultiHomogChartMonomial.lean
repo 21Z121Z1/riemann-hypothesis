@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.IsVerticalCartier
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithModel
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg

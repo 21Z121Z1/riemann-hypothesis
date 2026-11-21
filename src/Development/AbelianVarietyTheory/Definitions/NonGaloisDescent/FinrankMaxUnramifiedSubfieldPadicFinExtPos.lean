@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.AutomorphicArithmetic.PrimeDiscriminants.CycImage
 import Mathlib.LinearAlgebra.Lagrange

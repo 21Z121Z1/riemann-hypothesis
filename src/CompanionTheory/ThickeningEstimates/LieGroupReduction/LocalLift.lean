@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.NormExpSubLe
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.MetaDef
 import Mathlib.Analysis.Calculus.Deriv.Abs

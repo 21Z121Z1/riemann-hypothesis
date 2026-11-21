@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MulCoeEqZero
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 

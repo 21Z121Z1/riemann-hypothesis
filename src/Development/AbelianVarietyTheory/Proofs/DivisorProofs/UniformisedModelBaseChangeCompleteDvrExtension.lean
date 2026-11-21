@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ImportsTer
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NormPsiPullLocalRingsOfIntegers
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.DeltaIsGreatest

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.WeberRayClassFields.WeberRayFieldSt
 import GroundTheory.GlobalFields.ComplexMultiplication.JugendtraumGalois
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NcardEqIffStabilizer

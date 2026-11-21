@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecRatioEqRefl
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne

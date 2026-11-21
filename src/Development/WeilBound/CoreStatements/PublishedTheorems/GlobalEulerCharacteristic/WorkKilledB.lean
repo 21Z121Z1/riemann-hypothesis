@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkKilledA
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.ExistsPrimeToPart
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ApplySubrepresentationCongr

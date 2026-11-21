@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorsLocalizationLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentFrameLocalizationIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentFrameLocalizationSpansStatement

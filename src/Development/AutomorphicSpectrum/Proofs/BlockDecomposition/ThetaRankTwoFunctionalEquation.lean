@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.KFiniteVectors.KFiniteThetaLifts.PureThetaTransfer.FourierExpansionCentral
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CentralScalarEqWhittakerScalar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasseNormGroupProperty

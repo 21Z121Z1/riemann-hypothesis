@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FixedSubgroup
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.NumberTheory.Padics.RingHoms

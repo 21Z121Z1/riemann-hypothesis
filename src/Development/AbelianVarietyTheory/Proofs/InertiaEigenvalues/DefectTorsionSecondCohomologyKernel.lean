@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1fKsOntoUpToPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachIntegralComplexCocycleClassFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H1fClassWachPairJumpsStatement

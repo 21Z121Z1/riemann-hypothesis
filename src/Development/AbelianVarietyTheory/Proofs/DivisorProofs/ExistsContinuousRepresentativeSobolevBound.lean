@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConjModelExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicShapeIntegralWeightGoodEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicDiscreteSeriesModelsUnitarilyEquivaleStatement

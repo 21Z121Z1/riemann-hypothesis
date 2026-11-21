@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.ConcavityEquidistribution
 import Formalism.LogVandermondeBounds.LogVandermondeProofs.GammaIntegralPolynomialBound
 import Mathlib.Analysis.Complex.Isometry

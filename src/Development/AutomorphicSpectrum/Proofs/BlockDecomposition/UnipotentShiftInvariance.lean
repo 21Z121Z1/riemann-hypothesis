@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SigmaFiniteParameterProductMeasure
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralShiftHerm
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct Topology

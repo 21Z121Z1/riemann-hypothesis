@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.PtStep0
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

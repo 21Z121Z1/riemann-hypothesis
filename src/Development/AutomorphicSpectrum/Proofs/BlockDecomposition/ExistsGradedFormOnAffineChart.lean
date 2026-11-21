@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemOfMk
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormCocycle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedFormExistsOfCocycle

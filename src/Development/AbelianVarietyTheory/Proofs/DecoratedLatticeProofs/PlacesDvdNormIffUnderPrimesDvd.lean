@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 import Formalism.LocalToGlobal.Columns.BaseLemmas
 open NumberField IsDedekindDomain Formalism.BasicNotions

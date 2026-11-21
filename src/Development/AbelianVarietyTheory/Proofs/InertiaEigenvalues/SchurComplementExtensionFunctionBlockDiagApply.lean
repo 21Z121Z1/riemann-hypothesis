@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIdempotentElemIdemSf
 import GroundTheory.AutomorphicForms.FourierWhittaker.UMatColXEqFromBlocks
 open NumberField IsDedekindDomain GlobalTheory.CuspRep GlobalTheory.SchurExt

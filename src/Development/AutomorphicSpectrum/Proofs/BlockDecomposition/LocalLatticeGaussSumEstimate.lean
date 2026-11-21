@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EMatMulNegCol
 import Mathlib.Order.CompletePartialOrder
 open scoped Matrix NNReal ENNReal TensorProduct

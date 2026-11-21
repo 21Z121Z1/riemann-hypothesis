@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotBaseCondFalse
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ValidForConstructedPointClassesEventuallyWorking
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TwGoodOneSetDiv

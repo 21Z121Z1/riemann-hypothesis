@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.DecompOfNormalStatement
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 import Mathlib.RingTheory.SimpleRing.Principal

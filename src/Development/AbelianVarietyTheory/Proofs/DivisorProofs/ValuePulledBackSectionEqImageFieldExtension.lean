@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.QkToAkUInvariantUnderFieldEmbedding
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValuesNatural
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormVal

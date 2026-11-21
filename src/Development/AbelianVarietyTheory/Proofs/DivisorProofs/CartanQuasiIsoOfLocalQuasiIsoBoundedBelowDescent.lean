@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartanZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeMapFApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExactAtOfProd

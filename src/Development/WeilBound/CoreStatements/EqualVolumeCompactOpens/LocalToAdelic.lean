@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StrongApproximation.Assembly
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.ExistsDualBasis
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.EqVolSDOf

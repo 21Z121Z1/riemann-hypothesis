@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.SmulMemTrpSet
 import Formalism.LocalToGlobal.Columns.LocWLemmas
 

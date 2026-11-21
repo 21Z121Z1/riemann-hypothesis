@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsCompactKH
 import Formalism.SharpRestriction.CuspSpanNormBounds.LowestKTypeMultiplicity
 open MeasureTheory Matrix Filter Topology

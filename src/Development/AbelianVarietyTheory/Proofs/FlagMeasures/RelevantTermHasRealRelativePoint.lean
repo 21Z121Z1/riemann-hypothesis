@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RealPointTermAndLiftSameRealDoubleCoset
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLoUniMul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UpUniMul

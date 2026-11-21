@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormalisedCuspFormL2Bounded
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieActionSkewAdjointL2
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AuxiliaryCuspLemma

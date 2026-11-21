@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RatKDeg
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LocalProductMeasures
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThEquivPAmbOf

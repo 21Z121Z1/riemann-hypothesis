@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniqueness
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagLagrangian
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrIntRhoInv

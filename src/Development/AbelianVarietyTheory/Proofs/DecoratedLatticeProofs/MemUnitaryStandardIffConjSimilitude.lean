@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.SatakeDualWeyl.Statement
 open scoped Matrix NNReal ComplexConjugate TensorProduct ContDiff

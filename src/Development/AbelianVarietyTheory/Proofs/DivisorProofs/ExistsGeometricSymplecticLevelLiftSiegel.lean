@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelPrePullbackPrincipalRingChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSymplecticChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaStdAddNsmul

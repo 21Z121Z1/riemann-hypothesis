@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsLinearApproxTower
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralTmulOneMulMemAdelicCompletion
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SelfDualLatticeOccurs

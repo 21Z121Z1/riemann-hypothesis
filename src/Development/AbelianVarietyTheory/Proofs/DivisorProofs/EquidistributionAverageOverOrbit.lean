@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightAverageOverLifts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumLifts
 import Development.AbelianVarietyTheory.Definitions.Divisors.ChernOn

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HasDerivAtTMul
 import Mathlib.Analysis.Calculus.ParametricIntervalIntegral
 import Mathlib.Order.CompletePartialOrder

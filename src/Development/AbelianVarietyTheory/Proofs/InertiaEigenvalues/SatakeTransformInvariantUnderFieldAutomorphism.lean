@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitarySatakeInvariantAntidiagTransport
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeB
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaB

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.IntegrableOfContinuousCompact
 import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
 

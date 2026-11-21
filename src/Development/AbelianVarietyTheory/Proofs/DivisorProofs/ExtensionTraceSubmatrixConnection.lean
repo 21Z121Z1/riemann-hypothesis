@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalEqCurve
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChgFromBlocksEqOne
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory Matrix

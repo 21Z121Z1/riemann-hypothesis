@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OpEOmTargetUnipotent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralCompBlocks

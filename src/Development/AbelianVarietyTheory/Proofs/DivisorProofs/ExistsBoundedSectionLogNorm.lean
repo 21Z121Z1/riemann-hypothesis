@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPotentialPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothRatioOfLocalGeneratorsStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf

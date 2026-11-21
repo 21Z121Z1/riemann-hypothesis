@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArithVarGlobalSections
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OffSuppOfMultVertical
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulMultEqOrd

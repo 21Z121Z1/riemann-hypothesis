@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsAbsIrrCharCompIff
 import Formalism.LocalToGlobal.IndefiniteReal.BridgeTie
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeIndexRange

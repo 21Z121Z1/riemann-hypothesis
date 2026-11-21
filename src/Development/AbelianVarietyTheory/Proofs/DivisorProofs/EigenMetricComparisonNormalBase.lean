@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricPullbackDualFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelHeightComparisonStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelHodgeHeightStatement

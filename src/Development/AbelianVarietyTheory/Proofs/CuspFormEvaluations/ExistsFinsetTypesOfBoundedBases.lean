@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Normed.Unbundled.RingSeminorm
 import Mathlib.LinearAlgebra.Matrix.AbsoluteValue

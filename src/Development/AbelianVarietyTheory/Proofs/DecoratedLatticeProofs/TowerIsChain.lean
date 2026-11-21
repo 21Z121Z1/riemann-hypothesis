@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TowerIsChain
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsAtAndSeedFacts
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasInfExpMulZero

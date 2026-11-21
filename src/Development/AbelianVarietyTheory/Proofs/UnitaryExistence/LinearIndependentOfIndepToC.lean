@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.BaseChangeTensorProduct
 
 set_option synthInstance.maxHeartbeats 400000

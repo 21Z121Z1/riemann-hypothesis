@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecValAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSectionIntegralFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDvrOverHeightOneStatement

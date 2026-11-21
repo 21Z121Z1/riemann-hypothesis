@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.CoordinateChangeComp1IntertwinesAction
 
 noncomputable section

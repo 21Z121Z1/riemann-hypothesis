@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GlobalRankNumberBoundsGapsExceed
 open GlobalTheory.Diag.PG
 set_option maxHeartbeats 1000000 in

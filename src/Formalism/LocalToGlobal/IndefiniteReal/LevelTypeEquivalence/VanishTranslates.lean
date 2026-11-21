@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.ThFEquivOf
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IoUniq
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.VanishKfLow

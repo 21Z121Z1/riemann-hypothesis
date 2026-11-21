@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalMaximumPrinciple
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLocalTrace
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NotInFibreOfIsUnit
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointNormalCoords
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IntegralClosureHeightEqOneOfLiesOver

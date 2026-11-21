@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HtDefs
 import Mathlib.Data.Int.Star
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerCharacterEval.MemZpowersIff
 import Mathlib.Data.Int.Star
 import Mathlib.Tactic.Monotonicity.Lemmas

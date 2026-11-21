@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowup
 import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
 open CategoryTheory AlgebraicGeometry Opposite

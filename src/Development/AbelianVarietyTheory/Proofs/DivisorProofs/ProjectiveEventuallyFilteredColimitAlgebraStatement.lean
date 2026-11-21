@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveEventuallyFilteredColimitAlgebra
 open CategoryTheory Limits TensorProduct
 set_option maxHeartbeats 1000000 in

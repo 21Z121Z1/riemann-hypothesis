@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ChainParSucc
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeVecMemFixed
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsConjAt

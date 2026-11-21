@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalEigenStabilizerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalEigenTriplesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerHaarTripleStatement

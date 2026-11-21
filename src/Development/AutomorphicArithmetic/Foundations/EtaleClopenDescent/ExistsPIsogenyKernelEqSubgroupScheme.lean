@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorTypeTjIsogeniesRepresentableStatement
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsNoetherianBaseLink
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopenSubgroupLocus

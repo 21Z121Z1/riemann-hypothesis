@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFlagDegreeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BirationalLatticeHeightFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointNormalCoords

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.SplitQuadraticAlgebraOrder
 open Matrix ValuativeRel GlobalTheory.WeilM MeasureTheory
 open scoped ComplexConjugate NNReal

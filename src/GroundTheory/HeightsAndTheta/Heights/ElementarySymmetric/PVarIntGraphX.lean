@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StVarIntGraphCompact
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PVarIntGraph
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLelongPolyLimit

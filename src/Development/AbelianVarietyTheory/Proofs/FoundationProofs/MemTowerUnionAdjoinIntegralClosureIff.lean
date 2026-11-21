@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsTrDataGaussianIntOne
 
 open GlobalTheory.AlmostEt GlobalTheory.K5

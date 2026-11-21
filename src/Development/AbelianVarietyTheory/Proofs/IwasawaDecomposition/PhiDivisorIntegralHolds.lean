@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeLinearFormNonnegStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionRankBoundStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRegularFunctionTraitOrderStatement

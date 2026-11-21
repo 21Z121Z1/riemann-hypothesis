@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 
 open Topology Filter NumberField IsDedekindDomain WithZero Function

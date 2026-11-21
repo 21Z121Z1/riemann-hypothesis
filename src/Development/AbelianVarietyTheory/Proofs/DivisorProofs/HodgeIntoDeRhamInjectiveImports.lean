@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZeroSectionBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeRhamSheaf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueTangentOfValues

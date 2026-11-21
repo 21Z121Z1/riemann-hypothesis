@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeltaAddSubMemPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsStablePrismHomComp
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrismHomMapIdealEq

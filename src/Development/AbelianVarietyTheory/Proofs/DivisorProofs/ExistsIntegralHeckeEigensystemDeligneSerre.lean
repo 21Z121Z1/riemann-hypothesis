@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixExistsCommonEigenvectorMemStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteJointEigensystemsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatricesIntertwiningOfSemilinearStatement

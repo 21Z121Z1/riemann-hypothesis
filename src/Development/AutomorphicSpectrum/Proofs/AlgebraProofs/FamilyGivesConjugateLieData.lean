@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualLatticeDegreeNeg
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FrobeniusLatticeDegreeMulP
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FormalGroupActionRingHomStatement

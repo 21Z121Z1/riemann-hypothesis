@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftMatchedPlaneTowerDecomp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicPlaneConstantTermFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviTranslateAutomorphicConstantTermStatement

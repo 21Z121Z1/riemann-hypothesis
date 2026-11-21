@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairIterPhiMir
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeTwistedIso
 

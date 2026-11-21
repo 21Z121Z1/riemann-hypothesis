@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FromBaseWith
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisGen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionNe

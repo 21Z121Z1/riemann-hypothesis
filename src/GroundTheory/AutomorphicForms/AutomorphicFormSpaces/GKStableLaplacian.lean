@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStructure
 import GroundTheory.AutomorphicForms.GKModules.Casimir
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DcAevalIntertwineAlt

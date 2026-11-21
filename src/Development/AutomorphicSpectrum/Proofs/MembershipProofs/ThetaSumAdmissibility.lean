@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import GroundTheory.AutomorphicForms.GL2.GJMatrixInfinite
 import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform

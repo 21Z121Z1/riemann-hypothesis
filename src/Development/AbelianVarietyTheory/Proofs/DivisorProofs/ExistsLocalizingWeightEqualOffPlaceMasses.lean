@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicRapidDecayOfMemAdelicSchwartzSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendByZeroMemSchA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzMemL2

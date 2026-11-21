@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.ConeLaw
 
 set_option linter.unusedSectionVars false

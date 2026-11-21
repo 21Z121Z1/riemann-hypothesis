@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataSpaces
 import Formalism.SharpRestriction.CuspSpanNormBounds.DataS
 import Formalism.SharpRestriction.GrowthBounds.DataG

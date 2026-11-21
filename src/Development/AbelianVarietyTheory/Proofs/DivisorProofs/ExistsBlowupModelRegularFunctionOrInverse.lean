@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticModelAffineCoverRadical
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBirationalModelOfIsIsoOverNonemptyOpenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BirationalModelRegularUnitValuesStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.InfRes
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Brauer
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.BrauerInflationDefs

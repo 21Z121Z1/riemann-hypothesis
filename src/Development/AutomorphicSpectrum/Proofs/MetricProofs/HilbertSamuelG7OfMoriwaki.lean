@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefOnGenericOfSemipos
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightsNonnegOfIntersectionSystemStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GeneratedLineBundleNefOnFibresStatement

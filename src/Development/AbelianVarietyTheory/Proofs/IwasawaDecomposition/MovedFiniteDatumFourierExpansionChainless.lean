@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapRow0OfRowsSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsCompatible

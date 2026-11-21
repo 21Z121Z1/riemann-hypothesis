@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.IsUnitBZMap
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.BlockActEqBlkRow
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NormalFormAgree

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StrongApproximationAdditiveQuadraticExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemCoord
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsSmulIntegral

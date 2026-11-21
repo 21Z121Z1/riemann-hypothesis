@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsJacMapZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedRepresentationIrreducible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCharInducedJacquetStatement

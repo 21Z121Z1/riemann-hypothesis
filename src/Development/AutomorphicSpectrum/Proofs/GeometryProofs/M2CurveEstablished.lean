@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.CurveSemiAbelianConjecture
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.EigenFlagSlopeBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CurveLieEigenDegreeStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.ENatToNat

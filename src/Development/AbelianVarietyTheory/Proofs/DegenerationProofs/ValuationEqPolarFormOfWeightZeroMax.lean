@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsShiftedLtClassMin
 import Development.AbelianVarietyTheory.Definitions.Degenerations.Ser
 import Mathlib.Topology.Connected.Separation

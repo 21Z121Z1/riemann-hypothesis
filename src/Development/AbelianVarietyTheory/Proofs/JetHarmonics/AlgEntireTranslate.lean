@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL3.PThIndep
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.ParabolicPointMembership
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefInTranslate

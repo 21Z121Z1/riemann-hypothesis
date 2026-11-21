@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.StepUnfold
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RealDataStabilizer
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinitePartMemLevelOfThetaDatumNeZero

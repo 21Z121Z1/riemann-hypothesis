@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CircleHomEqZpow
 import Mathlib.Analysis.Normed.Module.Connected
 import Mathlib.LinearAlgebra.Matrix.Permutation

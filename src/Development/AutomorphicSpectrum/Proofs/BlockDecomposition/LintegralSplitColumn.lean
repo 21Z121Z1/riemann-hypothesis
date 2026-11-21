@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JoinCol
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Tactic.ENatToNat

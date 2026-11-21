@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormPowLeNormFactorial
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DerivationMemPow
 import Mathlib.Algebra.DualNumber

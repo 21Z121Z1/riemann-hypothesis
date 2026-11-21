@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitScalingRankOneVolumeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TraceGramUnitScalingStatement
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerOrbitVolume.DetAdmA

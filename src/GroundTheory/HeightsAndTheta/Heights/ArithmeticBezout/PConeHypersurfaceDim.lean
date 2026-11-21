@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeHypersurfaceDim
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeProjHyperplaneDim
 set_option maxSynthPendingDepth 1

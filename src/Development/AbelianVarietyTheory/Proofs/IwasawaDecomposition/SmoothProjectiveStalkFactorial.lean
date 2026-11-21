@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsLocalizationOfLeClosure
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.RegDom

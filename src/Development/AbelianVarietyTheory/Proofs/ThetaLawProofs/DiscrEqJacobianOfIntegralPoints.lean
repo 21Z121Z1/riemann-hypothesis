@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsUnitDetOfProductMapNeZero
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.PointMatrixMulLeftMulMatrix
 import Mathlib.RingTheory.Etale.Weakly

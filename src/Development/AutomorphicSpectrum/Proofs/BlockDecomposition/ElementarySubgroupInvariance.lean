@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CompactAbelianCharacters
 import GroundTheory.AutomorphicForms.FourierWhittaker.Series
 

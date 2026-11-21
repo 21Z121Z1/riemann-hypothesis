@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.DivisorCycles.CycleCount
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.Polynomial.Basic

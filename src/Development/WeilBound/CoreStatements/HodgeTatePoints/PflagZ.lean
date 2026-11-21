@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GenNumLinear
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CycleListPermInvariant
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GenNumLinearSubst

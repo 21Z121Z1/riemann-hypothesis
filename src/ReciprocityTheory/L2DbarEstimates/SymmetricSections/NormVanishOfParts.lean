@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.L2DbarEstimates.SymmetricSections.HoloSectionStatement
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Tactic.ENatToNat

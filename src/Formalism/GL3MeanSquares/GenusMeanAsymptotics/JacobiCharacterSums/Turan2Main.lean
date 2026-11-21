@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.ExistsFarFromPoints
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.RootNorm
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.HDSucc

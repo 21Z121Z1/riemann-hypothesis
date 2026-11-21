@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsPrimitiveNormalisation
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 

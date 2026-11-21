@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DixmierMalliavinFactorisationBasisStepStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLeftTranslateBoundedDerivFunctional
 import GroundTheory.AutomorphicForms.DixmierMalliavinHaarCoord

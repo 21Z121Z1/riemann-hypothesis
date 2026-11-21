@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharacterTrivialOnUnipotentStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInvariantLogarithmStatement
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.ExpForm
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.CprsMulRight
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.FixFAnti

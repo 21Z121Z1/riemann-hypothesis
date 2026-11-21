@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.CardUn
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.SplitPow
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.DivAlg

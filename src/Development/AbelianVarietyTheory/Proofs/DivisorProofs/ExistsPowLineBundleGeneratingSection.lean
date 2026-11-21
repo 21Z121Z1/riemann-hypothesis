@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticZeroDimensionalFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FractionalIdealInverseBoundedIndexStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassGroupTorsionPrincipalPowerStatement

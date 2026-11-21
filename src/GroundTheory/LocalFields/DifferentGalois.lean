@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.Different
 import GroundTheory.LocalFields.LowerIndexQuotient
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MinpolyProductMap

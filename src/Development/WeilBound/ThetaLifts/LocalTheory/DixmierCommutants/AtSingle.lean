@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.ChgApply
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.SplitCharacterFacts
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone

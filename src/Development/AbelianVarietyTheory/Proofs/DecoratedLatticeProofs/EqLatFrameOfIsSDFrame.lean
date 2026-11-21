@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PinColTOfPinColL
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColTOfPinColL
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt

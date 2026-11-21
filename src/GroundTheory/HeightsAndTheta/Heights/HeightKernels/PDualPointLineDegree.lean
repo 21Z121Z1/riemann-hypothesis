@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.IsArithVarBotDualBlocksUnit
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsHorizontalOfDimOne
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ArithVarZero

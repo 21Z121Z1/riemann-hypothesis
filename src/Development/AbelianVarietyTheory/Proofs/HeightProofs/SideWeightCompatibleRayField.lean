@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CoreFrameCompatibleConstructedPointStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SideWeightPsiChoiceTameStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SideWeightExportLevelStatement

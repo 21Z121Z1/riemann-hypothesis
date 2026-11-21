@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.FlagTorusGenericPoint
 import Development.AutomorphicArithmetic.DivisorFrames.FlagCarriesEigenframe
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConsMatch

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
 import Mathlib.Algebra.Ring.IsFormallyReal
 

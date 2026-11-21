@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LinearChangeOfVariablesBis
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FourthWeightDensityOfParts
 import Mathlib.Order.CompletePartialOrder

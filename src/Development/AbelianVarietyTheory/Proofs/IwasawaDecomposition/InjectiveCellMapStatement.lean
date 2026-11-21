@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InjectiveCellMap
 open Module TopologicalSpace GlobalTheory.FlagPts
 set_option maxHeartbeats 1000000 in

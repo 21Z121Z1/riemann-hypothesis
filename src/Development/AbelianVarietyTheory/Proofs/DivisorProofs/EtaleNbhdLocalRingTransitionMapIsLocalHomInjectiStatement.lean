@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleNbhdLocalRingTransitionMapIsLocalHomInjecti
 open IsLocalRing GlobalTheory.Henselisation
 set_option maxHeartbeats 1000000 in

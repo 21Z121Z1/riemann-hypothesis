@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralPointPullbackComparisonStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcValuation
 

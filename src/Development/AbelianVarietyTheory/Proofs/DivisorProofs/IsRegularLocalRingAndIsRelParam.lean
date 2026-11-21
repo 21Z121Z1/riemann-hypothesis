@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularLocalRingAndIsDomainOfIsComplAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularLocalRingOfFlatOfMapComapMaximalIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentIndepOfIsComplAt

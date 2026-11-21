@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.Statement
 import Lemmata.MiscLemmasI.Imports
 import Mathlib.LinearAlgebra.Matrix.DotProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ExistsMixedDifferenceExpansionStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PowerSumMixedExpansionStatement
 

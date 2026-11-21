@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleIsLocalHomeomorphStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalInverseStatement
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ChartSymmEventuallyEq

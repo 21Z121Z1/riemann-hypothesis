@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleChernIntegralPullFourthStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleHermitianLineCurvatureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcIntegrationByPartsStatement

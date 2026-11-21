@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsAlgebraicHeckeCharOfWeightOfIntegerExpo
 open NumberField Formalism.L2.Host GlobalTheory.HeckeGal GlobalTheory.CuspRep
 set_option maxHeartbeats 1000000 in

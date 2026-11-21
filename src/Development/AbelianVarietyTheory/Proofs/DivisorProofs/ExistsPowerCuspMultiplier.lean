@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvertibleSectionValuationNonnegStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsParallelWeightInvertibleSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyWeightSectionProductsStatement

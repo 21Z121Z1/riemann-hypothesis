@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsApproxFinitePlacesNumberFieldTarget
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.InvariantSubspaceMobiusInverseOneProdIco
 open Polynomial GlobalTheory.CuspGL
 set_option maxHeartbeats 1000000 in

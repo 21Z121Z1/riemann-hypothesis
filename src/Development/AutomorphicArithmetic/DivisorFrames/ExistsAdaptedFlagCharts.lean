@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagValExtTraceNonneg
 import Development.AutomorphicArithmetic.LocalEmbeddings.FrameCo
 open CategoryTheory AlgebraicGeometry NumberField IsDedekindDomain Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import Mathlib.RingTheory.SimpleRing.Principal
 set_option maxSynthPendingDepth 1

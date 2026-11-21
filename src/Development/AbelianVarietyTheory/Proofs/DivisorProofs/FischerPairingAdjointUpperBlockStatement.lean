@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FischerPairingAdjointUpperBlock
 open MvPolynomial Formalism.BasicNotions.TH GlobalTheory.CharPair
 set_option maxHeartbeats 1000000 in

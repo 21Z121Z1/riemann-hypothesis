@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.OmegaUpDownForms
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemberDatumOfFlagTie

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.EndomorphismSlices.SphComm2
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.PiInvTop
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.PiVecExHolds

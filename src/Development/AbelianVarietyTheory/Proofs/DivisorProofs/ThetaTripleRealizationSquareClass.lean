@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlipAtEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNatDatumSquareFlip
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomSuppSplit

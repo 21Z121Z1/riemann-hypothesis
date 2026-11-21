@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemRangeOfCls
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsFETranslateFeTranslate
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ScalCompSpecMap

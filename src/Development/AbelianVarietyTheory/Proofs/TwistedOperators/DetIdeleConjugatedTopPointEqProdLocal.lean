@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ActOOneResGCompl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DependenceFixed
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ValuationGdetKapAt

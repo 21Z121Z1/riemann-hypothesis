@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.DisjointUnionOfOpens
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry

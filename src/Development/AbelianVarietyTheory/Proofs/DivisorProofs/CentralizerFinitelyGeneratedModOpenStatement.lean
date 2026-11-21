@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerFinitelyGeneratedModOpen
 open Matrix GlobalTheory.LKRes
 open scoped TensorProduct Classical

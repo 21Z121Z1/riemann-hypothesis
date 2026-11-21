@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsFlagModelHermSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedImmersionSurjectiveLine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedFirstIsometricDualO1Statement

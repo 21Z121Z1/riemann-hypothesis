@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.XTwApplyApply
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.LenDual
 

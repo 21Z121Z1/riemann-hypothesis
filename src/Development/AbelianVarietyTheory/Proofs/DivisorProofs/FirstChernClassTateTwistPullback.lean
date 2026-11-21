@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixIntegralityFromCompletePointsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixRowNormPosOfUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularMatrixChainPointsStatement

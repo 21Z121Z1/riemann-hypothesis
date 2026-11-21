@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.IdeleRoots.ConstantFrames.GaugeExistence.QdetSub
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

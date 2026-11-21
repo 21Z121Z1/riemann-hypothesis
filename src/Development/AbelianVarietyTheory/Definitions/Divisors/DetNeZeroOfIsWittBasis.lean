@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsotropicComplGram
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalRationalTranslate
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsSquareIntegrableIffMemL2

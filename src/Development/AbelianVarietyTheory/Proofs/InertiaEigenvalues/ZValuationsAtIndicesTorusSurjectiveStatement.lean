@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZValuationsAtIndicesTorusSurjective
 open GlobalTheory.UnitLemma
 set_option maxHeartbeats 1000000 in

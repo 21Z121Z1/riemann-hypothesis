@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.Bundle
 
 open ReciprocityTheory.ChartRestriction.G.Geo (ChartBundle chartRing)

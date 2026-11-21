@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsThetaSectionsBoundedStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IteratedDerivBoundGaussianGrowthStatement
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.IntegralFlagEmbeddingCriterionStatement

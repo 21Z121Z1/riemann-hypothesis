@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AmpleLineBundles.IntersectionNumberEqLineHeight
 import Development.WeilBound.CoreStatements.AmpleLineBundles.ExistsPointsBoundedLineHeights
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveAdelic
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveCanonical
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveFunctionField

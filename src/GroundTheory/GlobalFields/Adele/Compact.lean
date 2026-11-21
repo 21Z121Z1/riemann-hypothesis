@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.LocalAtPlace
 import GroundTheory.GlobalFields.Adele.Discrete
 import Mathlib.Topology.Algebra.ProperAction.Basic

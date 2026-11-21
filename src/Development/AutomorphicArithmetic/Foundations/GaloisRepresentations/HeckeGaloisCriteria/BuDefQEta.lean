@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NStageTrivialCharacterCoeffEqAlt
 import Formalism.LocalRingCardinality.DataExtra
 import Formalism.LocalRingCardinality.DataParamsT

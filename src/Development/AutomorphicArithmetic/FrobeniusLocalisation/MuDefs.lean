@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PrimeDiscriminants.ExistsPrimitiveRootTorsionOrder
 import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
 

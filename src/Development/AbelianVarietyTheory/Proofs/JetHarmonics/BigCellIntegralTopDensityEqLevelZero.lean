@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MemLpAndTendstoIntegralInnerOfEventuallyEq
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BetaCutFTendsto
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelZeroPairingCutoffLocalityStatement

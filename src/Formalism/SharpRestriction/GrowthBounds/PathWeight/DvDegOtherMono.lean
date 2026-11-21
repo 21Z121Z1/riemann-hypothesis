@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.PathWeight.GeneratorImageIsSymbol
 import Mathlib.Algebra.Order.Sub.Prod
 

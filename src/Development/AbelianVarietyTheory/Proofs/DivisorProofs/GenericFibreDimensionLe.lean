@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.FunctionField
 import Mathlib.AlgebraicGeometry.Morphisms.UniversallyClosed
 import Mathlib.Order.CompletePartialOrder

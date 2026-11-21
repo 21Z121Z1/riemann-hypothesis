@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.ExS
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.CountsIrreducibilityConstants
 import Formalism.SharpRestriction.GlobalSchurBounds.LinkTied

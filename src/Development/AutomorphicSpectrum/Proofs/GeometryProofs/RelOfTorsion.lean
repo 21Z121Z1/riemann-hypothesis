@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DerRingInjective
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BtOrderEmbeddingOpenImmersionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DualLatticePointUniversalStatement

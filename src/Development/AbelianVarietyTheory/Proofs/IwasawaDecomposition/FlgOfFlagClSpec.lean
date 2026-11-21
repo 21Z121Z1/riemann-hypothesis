@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AllStepsHoldOfHasDRStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDROfAllStepsHoldStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFlagClosureStatement

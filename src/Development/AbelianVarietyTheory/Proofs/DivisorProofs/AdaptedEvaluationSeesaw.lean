@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedModelsEigenCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelsPairPlaneAdaptedGoodStatement

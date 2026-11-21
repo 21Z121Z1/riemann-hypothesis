@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.EventuallyComparable
 import Mathlib.RingTheory.Henselian

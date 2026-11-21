@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.UQEqZero
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.PropAC
 import Mathlib.Analysis.Calculus.ContDiff.WithLp

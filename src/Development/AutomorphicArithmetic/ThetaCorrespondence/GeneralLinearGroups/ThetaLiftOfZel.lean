@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeometricLemmaOfFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricLemmaFiltrationUnconditional
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.ImportsAlt

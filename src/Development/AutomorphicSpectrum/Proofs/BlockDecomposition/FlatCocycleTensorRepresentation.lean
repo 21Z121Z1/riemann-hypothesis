@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.USt
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

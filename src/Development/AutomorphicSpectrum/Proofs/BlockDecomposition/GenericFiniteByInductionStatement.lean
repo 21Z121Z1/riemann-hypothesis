@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GenericFiniteByInduction
 open NumberField GlobalTheory.CuspRep MeasureTheory PositivityTheory.Affgl
 set_option maxHeartbeats 1000000 in

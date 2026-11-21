@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightCentredPlacesFinite
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitChartResidue
 set_option maxSynthPendingDepth 1

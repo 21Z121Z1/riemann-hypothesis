@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.FrameJetEval
 import Formalism.GaussJetBounds.GaussJetProofs.NormDetLeOneOfEntries
 import Mathlib.Topology.Sheaves.Presheaf

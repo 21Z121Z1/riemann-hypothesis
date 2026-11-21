@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.W2pair
 import Formalism.PeriodIntegrals.WfRing
 import Formalism.PeriodIntegrals.WfSubst

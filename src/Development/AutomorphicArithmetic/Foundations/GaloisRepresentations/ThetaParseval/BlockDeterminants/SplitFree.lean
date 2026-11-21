@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ActsEx
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict
 import Development.AutomorphicArithmetic.LocalEmbeddings.OppLagr

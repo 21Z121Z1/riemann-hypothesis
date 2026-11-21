@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Mathlib.Topology.OpenPartialHomeomorph.Constructions
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.HoloSmooth

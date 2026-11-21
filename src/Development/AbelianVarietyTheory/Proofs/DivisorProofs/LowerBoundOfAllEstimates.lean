@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HtMapLeOfPoints
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHalfRankSub

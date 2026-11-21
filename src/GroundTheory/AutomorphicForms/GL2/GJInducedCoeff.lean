@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HaarCosets
 import GroundTheory.AutomorphicForms.AdmissibleInduction
 import GroundTheory.AutomorphicForms.SmoothRepContragredient

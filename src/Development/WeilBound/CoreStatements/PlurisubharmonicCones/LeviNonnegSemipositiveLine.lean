@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ConeTangentLiftInChartStatement
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ContDiffAtLogH
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology

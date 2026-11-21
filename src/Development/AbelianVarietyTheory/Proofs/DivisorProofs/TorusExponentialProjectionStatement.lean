@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusExponentialProjection
 open Matrix GlobalTheory.TorFin
 open scoped ContDiff

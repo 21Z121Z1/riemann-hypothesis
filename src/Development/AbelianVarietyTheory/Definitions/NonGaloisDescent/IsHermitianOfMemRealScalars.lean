@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemCentIffTwConj
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.CStarAlgebra.Classes

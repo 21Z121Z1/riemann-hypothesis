@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.SplitEquiv
 import Mathlib.Tactic.ENatToNat
 open UpperTheory.ConvolutionTheory.G UpperTheory.ConvolutionTheory.T4

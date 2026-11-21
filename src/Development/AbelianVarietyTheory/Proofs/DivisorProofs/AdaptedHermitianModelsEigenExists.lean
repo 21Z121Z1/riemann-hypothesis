@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticPairRankOneTraceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardCharacterKernelIntegralTraceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianDualLatticeDenominatorStatement

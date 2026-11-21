@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanRepMatrixEqTopOfAbsIrreducible
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpanEqTopOfSpanResidueEqTop
 import Mathlib.Algebra.Module.StablyFree.Basic

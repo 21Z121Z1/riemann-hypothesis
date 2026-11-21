@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivialIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgHomExtLocalization
 open IsLocalRing Polynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LintegralTsumOrbitUnfold
 open MeasureTheory Topology
 open scoped ENNReal

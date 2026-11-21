@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SmoothIsMultiplicative
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.KTrivExternalTensorPowerLineBundle
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.BoxPowerBasic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.RatioJoints.CharacterProductEqOne
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FinAfLocalIdele
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr

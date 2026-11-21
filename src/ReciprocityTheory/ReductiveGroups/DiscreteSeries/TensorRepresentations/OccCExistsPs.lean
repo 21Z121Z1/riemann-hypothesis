@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.OccurrencePhiSmoothL2
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.OccurrencePhiKEquivariant
 

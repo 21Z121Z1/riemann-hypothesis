@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.MarkSpec
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnitFrameEqOrthonormalMulTriangular
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.InfAdeleTensorBijective

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OmegaOpCommLiB
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Translation
 set_option maxSynthPendingDepth 1

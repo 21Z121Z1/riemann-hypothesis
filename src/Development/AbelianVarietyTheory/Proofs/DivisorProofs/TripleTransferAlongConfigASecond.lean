@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawIdentityConfigAFourthStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleTransferOfPlaneConfigStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialSchwartzDenseOfTripleStatement

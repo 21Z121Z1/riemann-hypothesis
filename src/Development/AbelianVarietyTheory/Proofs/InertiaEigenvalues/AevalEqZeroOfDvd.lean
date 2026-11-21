@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MatMapTmul
 open TensorProduct Polynomial IsLocalRing GlobalTheory.Pat
 

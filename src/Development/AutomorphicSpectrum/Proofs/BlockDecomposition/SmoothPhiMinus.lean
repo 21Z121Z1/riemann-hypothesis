@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.TwistedKernels.ExPhiPlusOnto
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsSmoothTwAct
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.VectorStabilizer

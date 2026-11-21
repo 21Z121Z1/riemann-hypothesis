@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MemSupSpanXPowIffAndIsAdicComplete
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NEvalSqZero
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

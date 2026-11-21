@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.KeyPBId
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsThetaLawZeroOfEven
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.NonzeroLocusConstMul

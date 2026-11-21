@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPrimitiveElementFibres
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSimpleRootBranch
 import Mathlib.Topology.Algebra.MvPolynomial

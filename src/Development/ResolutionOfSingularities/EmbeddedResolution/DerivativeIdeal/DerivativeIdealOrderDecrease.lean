@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdeal
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.IdealOrder
 import Mathlib.Tactic.Polynomial.Basic

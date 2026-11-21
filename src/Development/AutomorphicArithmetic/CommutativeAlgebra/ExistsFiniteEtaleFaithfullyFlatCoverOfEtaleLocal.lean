@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocallyIffAffineEtalePointCoverStatement
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.RingTheory.Etale.Weakly

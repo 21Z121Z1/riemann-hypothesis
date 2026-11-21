@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecCyclicA
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.NormOpen
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPair

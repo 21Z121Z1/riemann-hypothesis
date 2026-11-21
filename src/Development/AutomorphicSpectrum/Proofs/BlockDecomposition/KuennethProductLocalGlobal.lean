@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ChartGrConst
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethProductLocalCoordsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethMayerVietorisLeftStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.GeometricFlagBases.IntegOfMem
 import Development.AutomorphicArithmetic.CommutativeAlgebra.LevDefs
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsGHeckeMapForget

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.AltCoeffRho
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.WittVector.IsPoly

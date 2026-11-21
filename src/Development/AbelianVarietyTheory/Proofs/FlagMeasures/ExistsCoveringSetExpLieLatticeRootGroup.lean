@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OfRoots
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.CategoryTheory.Countable

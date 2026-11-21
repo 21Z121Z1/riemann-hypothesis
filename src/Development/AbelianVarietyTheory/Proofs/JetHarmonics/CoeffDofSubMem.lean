@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SubstMapAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InvariantDerivAlongEndo
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MapDofIterate

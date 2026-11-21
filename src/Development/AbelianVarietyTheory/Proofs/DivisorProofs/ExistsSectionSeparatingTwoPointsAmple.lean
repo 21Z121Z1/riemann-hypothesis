@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoPointInductionKltPairSeparationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSeparatingSectionOfIsolatedNonKltPointStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace

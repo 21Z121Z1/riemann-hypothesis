@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.TriangularOfReducibleRankThree
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LocGood
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.MopBase

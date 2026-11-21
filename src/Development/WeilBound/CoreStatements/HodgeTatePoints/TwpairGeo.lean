@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwpairAlg
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteOpenHopfOrder
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFinOpenSubOfFinite

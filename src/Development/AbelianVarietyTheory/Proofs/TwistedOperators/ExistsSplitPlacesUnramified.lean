@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPlaceStabilizerFixesVacuumLeft
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedPlacesSpherical
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitPlaceVacuumSourceStatement

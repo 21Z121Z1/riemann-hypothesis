@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StdPowMemOfLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitMulMemIff
 import Mathlib.Algebra.Order.Ring.Star

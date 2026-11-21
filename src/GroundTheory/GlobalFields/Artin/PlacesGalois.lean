@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.PlacesInfinite
 import GroundTheory.GlobalFields.Artin.Places
 set_option maxSynthPendingDepth 1

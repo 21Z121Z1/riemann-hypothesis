@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutGen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InfiniteNormOneField
 

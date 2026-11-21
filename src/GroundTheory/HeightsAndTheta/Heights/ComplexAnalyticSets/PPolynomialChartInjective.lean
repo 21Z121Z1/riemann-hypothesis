@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPolynomialChartInjective
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PNormalCurveRegularPoint
 import Mathlib.RingTheory.PiTensorProduct

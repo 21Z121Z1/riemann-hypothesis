@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsHilbertSchmidtOfFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InductionContragredient
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

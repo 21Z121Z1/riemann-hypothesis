@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ColInst
 

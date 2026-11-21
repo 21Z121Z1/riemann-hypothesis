@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.FactorApply
 open scoped TensorProduct
 open UpperTheory.Lit.HoweDuality

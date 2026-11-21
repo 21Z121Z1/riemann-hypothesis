@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.NormResidueSymbol.Abstract
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Topology.Connected.Separation

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.WittFrameLocaliserOrders
 import Formalism.SharpRestriction.GrowthBounds.TableLineDegreeFive
 

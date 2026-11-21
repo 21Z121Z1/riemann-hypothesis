@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ScalarOfMultOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothAddSmul
 

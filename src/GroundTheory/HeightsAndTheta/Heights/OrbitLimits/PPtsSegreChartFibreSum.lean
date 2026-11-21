@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsSegreChartFibreSum
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChartZeroSet
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChartProjFinite

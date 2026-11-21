@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFirstCoords
 import ReciprocityTheory.SemistableReduction.SJCoreA
 import ReciprocityTheory.SemistableReduction.SJCoreB

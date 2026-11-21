@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitaryTAct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointBlockOrthogonalityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlBlockFiniteDimModuleStructure

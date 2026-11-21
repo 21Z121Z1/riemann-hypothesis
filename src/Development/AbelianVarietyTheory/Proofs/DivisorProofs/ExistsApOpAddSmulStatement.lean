@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApOpAddSmul
 open ZetaZeros.D.EllReg GlobalTheory.HCA MeasureTheory
 open scoped ContDiff BoundedContinuousFunction

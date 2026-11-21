@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.Cartan
 import Mathlib.RingTheory.WittVector.IsPoly
 set_option maxSynthPendingDepth 1

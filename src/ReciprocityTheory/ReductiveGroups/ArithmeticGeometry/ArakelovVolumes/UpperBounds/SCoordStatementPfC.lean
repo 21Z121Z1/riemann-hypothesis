@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.SCoordStatementPfA
 
 namespace ReciprocityTheory.ChartRestriction.G.AR.Up.SCoC

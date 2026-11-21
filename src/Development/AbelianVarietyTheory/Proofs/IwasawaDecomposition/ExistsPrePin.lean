@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PositionOfIntro
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KsCondExact
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PinsCoordPre

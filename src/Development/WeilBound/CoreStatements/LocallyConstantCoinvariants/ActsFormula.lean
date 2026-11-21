@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.EqZeroOfLocW
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumTensorProduct
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.DblCoordUnique

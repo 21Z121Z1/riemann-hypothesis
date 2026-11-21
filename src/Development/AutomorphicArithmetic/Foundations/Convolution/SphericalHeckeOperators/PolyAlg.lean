@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SymSum
 import Development.AutomorphicArithmetic.Foundations.Convolution.TensFun
 

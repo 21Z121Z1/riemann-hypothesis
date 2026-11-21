@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.NumberTheory.Bertrand
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Counts
 

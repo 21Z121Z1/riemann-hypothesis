@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkPresentationInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDividedDifference
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOneCokernelKilledStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatLiftingObstructionClassStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftOfLiftingObstructionEqZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftingObstructionBocksteinAddStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaStabilizerExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleConfigBThetaIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralIdeleMajorantFinite

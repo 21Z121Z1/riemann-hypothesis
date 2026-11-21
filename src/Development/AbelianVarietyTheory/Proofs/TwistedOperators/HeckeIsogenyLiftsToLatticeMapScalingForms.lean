@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsHolToFibPtAndCompFibre
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsPeriodCompIsometry
 import Formalism.LocalToGlobal.ProjectiveLattices.HeckeFr

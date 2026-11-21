@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerTangentVectorsLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalRingPointDualNumberSndLinearDerivationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomDualNumberSndEqZeroStatement

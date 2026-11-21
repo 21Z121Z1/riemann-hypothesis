@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TendstoProdSmallBallAsymptoticsStatement
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Tactic.Polynomial.Basic

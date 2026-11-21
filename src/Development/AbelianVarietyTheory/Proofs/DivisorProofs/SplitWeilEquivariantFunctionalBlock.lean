@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMidJacAt
 

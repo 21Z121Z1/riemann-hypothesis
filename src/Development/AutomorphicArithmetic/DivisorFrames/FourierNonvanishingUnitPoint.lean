@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBDefs
 import Mathlib.Analysis.Fourier.Inversion
 import Mathlib.Analysis.InnerProductSpace.EuclideanDist

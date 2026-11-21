@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AnalyticDeterminants.InfInvA
 import Mathlib.Analysis.Calculus.ParametricIntegral
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential

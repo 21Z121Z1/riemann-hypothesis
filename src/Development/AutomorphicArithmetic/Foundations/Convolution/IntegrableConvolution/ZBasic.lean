@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensOp
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.EigBasic
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.EigAdm

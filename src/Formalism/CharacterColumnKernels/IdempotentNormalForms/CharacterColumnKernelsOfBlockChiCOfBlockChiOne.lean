@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalColumn
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.BlockChiOneFullOf
 

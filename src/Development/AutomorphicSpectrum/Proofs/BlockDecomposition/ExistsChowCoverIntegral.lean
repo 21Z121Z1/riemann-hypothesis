@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowGraph
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowLocal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ChowSegre

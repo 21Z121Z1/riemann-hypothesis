@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLFunctionBottomPair
 open GlobalTheory.SqTop
 set_option maxHeartbeats 1000000 in

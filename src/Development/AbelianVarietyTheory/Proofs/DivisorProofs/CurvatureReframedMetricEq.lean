@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaGaugeReframeCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarGaugeReframeCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarAdjointGaugeReframeCompatStatement

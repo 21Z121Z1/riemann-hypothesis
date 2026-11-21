@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbsoluteSiegel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitelyGeneratedLatticeFullEmbeddingStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemHGPIffParabolic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GpProjUnipotent
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.ProdGPn

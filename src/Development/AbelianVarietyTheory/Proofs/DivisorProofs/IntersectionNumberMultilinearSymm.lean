@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimEqDim
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrHomEqAndIsProjOver
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

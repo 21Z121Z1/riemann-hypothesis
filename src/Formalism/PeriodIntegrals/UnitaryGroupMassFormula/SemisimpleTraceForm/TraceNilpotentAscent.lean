@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Lemmata.IdempotentTraceVanishing.TraceAevalEqZero
 
 namespace PI.SSAscent.UnitaryGroupMassFormula

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.PublishedTheorems.Metrics₂.PoincareLelong
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsMultiHomogIdealMapRedMap
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.Stokes

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsIsWeilDatumOOmTAtLast
 
 set_option synthInstance.maxHeartbeats 200000

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.RecLevel
 import Formalism.LocalToGlobal.Columns.AdelicLemmas
 import Mathlib.Topology.Connected.Separation

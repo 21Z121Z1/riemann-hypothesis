@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 import Development.AutomorphicArithmetic.LocalEmbeddings.ThinCover
 import Development.AutomorphicArithmetic.LocalEmbeddings.ThinCore

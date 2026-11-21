@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelLevelPPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelLevelPPowerTangentStatement
 

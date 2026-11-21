@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsOfFinOrderOfBounded
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongruenceFiniteIndex
 

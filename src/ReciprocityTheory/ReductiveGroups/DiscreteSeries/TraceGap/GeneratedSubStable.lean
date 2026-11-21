@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.LoweringSpanDiagStable
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Transported
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.SecondKernelCoupled

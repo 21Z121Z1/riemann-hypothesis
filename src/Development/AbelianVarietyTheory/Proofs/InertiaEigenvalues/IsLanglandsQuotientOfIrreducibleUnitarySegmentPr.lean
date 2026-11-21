@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivProdIrrTw
 
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL

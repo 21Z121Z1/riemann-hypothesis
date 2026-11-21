@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AmpleLineBundles.SpanLeOfMem
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PNormComparison
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsOrthFull

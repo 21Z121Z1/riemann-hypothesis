@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightIdentityStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginDegreeCountStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginDegreeCountAltBis

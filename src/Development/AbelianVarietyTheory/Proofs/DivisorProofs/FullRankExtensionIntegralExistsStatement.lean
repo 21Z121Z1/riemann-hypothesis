@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankExtensionIntegralExists
 open scoped Matrix
 open GlobalTheory.WeilM GlobalTheory.FullRankCoinv MeasureTheory

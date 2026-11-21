@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.RatIntUnifDiscrete
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Algebra.Order.Star.Real

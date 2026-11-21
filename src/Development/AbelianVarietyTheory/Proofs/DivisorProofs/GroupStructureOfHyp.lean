@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmAbelianTypePropagationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleExtensionNormalBaseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleExtensionUniquenessStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.DiscrNe
 import Mathlib.NumberTheory.ModularForms.LevelOne.GradedRing
 import Mathlib.RingTheory.SimpleRing.Principal

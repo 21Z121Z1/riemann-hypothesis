@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatWittTowerLevelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothModelRestrictionBijectiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuotientReductionBijectiveOfFlatStatement

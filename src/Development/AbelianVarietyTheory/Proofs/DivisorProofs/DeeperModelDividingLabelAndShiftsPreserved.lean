@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisTowerDividingLabelStaysDividingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeClassZeroOfMemberTermsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCentredPureExtensionTowerMemberStatement

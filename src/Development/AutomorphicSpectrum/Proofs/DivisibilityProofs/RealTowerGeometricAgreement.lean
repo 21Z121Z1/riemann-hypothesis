@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsC2AtOfIsPotential
 

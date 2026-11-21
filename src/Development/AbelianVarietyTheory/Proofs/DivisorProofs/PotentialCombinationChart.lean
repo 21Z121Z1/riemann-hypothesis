@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGradedOfDivisors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTopPowLinearSumStatement
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MSmoothOfWeightIffIsCInf

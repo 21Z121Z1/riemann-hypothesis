@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjPlMemPlacesOver
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameFixedAwayStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameOfFrobeniusDenseStatement

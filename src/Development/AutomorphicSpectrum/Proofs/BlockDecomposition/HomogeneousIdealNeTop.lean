@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.GeoDefs
 import Mathlib.RingTheory.MvPolynomial.Ideal
 import Mathlib.RingTheory.RegularLocalRing.Defs

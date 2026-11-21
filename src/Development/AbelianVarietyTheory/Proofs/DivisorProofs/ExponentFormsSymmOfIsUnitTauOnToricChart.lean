@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.RigidForFan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonomialDegenerationUnitPartExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonomialTauParamsSymm

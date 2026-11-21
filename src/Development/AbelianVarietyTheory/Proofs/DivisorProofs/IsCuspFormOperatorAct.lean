@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemZalgCommuteCompactRepStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemZalgCommuteLieActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalSpanCompactOrbitLieDerivativeStatement

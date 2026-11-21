@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CohomologicalPurity.LeafHensCutDef
 import Mathlib.Algebra.Category.Ring.FilteredColimits
 

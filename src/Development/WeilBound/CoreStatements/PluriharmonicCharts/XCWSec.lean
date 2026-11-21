@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.ExistsPenFrame
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.MinorElementaryColumnOp
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsMultiHomogMonoX

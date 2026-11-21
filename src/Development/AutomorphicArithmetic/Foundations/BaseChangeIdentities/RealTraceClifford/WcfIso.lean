@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.RealTraceClifford.ChSymAnti
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.RealTraceClifford.TrOnZero
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.RealTraceClifford.LapForm

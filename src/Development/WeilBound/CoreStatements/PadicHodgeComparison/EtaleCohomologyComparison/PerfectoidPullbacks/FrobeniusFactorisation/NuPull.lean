@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittComparisonReductionCompatStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittComparisonFrobeniusCompatStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WittComparisonGaloisFixedStatement

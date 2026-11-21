@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwOCommDStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalDifferentialEval
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalDifferentialEval

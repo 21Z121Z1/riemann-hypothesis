@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.ThmBInHecke
 import Mathlib.NumberTheory.NumberField.CMField
 import Mathlib.RingTheory.Henselian

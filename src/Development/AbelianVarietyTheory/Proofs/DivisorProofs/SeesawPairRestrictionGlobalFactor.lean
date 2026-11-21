@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniquenessStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxDoublingSchrodingerFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairRestrictsToAdaptedWStatement

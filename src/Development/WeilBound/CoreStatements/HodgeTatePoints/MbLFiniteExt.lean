@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FinClosure
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MaBase
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopSubLattice
 import Mathlib.Data.Rat.Star
 set_option maxSynthPendingDepth 1

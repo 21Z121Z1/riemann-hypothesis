@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolyMulGaussianBounded
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Calculus.ContDiff.Bounds

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.LocalRingsCompletion.IsCharOneOfSubsingleton
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PowerSeries.Order

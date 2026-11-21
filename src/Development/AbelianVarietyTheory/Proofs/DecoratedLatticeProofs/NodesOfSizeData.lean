@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SecondLabelsNonempty
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.Diag.PG

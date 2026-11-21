@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightWeightRootChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFramePartitionFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalFunctionValueCompatibleStatement

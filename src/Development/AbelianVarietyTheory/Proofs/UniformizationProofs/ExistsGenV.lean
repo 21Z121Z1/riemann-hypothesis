@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.VRatioGtStatement
 import Development.AbelianVarietyTheory.Definitions.Uniformization.AllDV
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsFrameRatio

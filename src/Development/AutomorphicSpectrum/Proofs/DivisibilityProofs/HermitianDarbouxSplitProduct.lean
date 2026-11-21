@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FiniteNonunitMatrix
 import Mathlib.Analysis.CStarAlgebra.CStarMatrix
 

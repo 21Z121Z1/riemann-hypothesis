@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLv
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SummableOfCount
 open scoped TensorProduct NNReal ENNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaSysUOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStalkLiftFiniteCoverNormalLocal

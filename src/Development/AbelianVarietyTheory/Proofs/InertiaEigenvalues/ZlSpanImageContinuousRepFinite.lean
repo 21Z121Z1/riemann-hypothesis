@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFiniteExtensionEntriesOfCompactRepStatement
 open Formalism.MainNotions.N GlobalTheory.Cong GlobalTheory.PsChar
 

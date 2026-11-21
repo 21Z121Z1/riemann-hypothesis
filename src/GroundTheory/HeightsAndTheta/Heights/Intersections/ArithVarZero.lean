@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.RationalSections.ThmISt
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.KrullDimension.NonZeroDivisors

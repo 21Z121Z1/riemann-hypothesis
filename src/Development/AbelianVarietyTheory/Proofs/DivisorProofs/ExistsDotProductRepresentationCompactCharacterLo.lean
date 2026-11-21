@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReGt
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

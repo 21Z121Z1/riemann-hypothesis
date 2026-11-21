@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPPowerLevelFromPrimesAboveP
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 open NumberField IsDedekindDomain Filter Topology

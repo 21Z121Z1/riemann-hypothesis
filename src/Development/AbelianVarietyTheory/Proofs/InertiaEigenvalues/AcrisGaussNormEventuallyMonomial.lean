@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Acris0TorsionFree
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingIface
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SumFourEqTrace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalSubstitutionThetaHeisenbergUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTopologicalRingAE

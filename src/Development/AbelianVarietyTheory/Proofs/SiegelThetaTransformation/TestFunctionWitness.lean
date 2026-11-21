@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 open Matrix Complex
 namespace GlobalTheory.SW

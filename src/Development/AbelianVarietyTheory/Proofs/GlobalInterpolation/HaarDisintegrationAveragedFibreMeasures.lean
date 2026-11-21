@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FibOfZero
 import Mathlib.MeasureTheory.Measure.Haar.DistribChar
 import Mathlib.RingTheory.WittVector.IsPoly

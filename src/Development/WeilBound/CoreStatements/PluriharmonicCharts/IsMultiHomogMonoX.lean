@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.IsBlockMapInitialVertex
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagDiv
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagOrdOne

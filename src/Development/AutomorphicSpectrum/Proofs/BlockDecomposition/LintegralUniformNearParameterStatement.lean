@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralUniformNearParameter
 open MeasureTheory
 open scoped ENNReal NNReal Topology

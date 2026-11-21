@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.GaussOperatorProductFormula
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.Henselian

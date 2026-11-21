@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteQuotientOfIsLatLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainIntegralRatioStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainIntegralFinsetSumStatement

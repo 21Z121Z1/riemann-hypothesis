@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.BasisOfUnit
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsCrField
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsCrIff

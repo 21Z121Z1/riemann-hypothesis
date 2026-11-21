@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InstCommRingBcris
 import GroundTheory.PAdicHodge.BStPeriod
 

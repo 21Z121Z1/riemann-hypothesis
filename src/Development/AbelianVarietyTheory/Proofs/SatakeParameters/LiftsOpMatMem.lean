@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ReprMemOfBasisRational
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DcOpCommOfCommute
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GServT
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice
 import Formalism.LocalToGlobal.GroupLattices.AdmissibleAtGeneratorPlaces

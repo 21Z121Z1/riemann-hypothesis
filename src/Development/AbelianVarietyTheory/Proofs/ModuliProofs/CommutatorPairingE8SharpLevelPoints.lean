@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsArBaseAway
 

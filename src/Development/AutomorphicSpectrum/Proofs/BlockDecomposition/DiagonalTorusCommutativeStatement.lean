@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagonalTorusCommutative
 open GlobalTheory.PRep GlobalTheory.SmGL ValuativeRel
 set_option maxHeartbeats 1000000 in

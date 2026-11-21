@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MeanHeightDescent.MuMaxMinkowski
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtImage
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu

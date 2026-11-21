@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrossProductTwistedLeibnizRuleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CochainProductVanishingAboveDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedCocycleClassesPullbackCup

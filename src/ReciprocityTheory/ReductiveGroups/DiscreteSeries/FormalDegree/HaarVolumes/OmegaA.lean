@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.TriDens
 import Formalism.LocalRingCardinality.DataCD
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

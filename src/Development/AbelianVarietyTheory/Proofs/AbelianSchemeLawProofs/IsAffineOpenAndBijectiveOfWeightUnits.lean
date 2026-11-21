@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsSplitTorusPointsMulEquiv
 import Mathlib.AlgebraicGeometry.Morphisms.FlatDescent
 import Mathlib.CategoryTheory.EffectiveEpi.Comp

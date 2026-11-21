@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergySymm
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartIbpSymm
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartEnergySwap

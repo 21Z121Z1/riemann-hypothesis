@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.FiniteResidueFieldAdicCompletionIntegers
 import Formalism.LocalRingCardinality.ConjSqrtMinusD
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil

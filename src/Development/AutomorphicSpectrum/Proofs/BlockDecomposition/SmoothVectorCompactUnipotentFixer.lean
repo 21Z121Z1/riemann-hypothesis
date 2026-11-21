@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenCellUnipotentUniquenessClosedStatement
 import GroundTheory.AutomorphicForms.IwahoriFactorization
 import GroundTheory.AutomorphicForms.GeometricLemmaCellSurjective

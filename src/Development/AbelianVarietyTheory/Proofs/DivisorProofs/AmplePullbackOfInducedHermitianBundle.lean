@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverFunctionFieldMapEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartierDivisorDominantPullbackWithClass
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AmpleNsmul

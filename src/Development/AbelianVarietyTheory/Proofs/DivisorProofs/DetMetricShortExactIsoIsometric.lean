@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalEqOfNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMetricIsometricOfIsometry
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

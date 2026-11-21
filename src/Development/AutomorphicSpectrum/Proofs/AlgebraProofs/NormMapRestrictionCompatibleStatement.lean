@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.NormMapRestrictionCompatible
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory AlgebraicGeometry
 attribute [local instance] Over.cartesianMonoidalCategory

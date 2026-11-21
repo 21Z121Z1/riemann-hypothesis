@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.InvariantIsAlgebraic
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GalStarComplexMultiplicationPoints

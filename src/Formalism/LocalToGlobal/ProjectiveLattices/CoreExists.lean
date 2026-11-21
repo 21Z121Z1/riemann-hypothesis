@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
 import Formalism.LocalToGlobal.ProjectiveLattices.CoreProofs
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsParameterConditions

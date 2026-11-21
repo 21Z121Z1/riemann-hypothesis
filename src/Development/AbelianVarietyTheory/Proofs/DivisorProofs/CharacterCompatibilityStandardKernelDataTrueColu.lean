@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CharTieTrueCols
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
 import Formalism.LocalToGlobal.Divisibility.NumbersLemmas

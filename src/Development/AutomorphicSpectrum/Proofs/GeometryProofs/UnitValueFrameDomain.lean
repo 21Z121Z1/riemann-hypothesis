@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompDescentFourth
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValAtIffValueAtStatement
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric

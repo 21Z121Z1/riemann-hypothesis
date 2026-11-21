@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeFormIdealPairOfVectors
 open NumberField
 open scoped nonZeroDivisors

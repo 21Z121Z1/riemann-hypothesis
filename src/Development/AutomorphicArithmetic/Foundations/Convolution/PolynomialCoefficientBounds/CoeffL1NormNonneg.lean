@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.GenRed
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.GenFund
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.GenTrunc

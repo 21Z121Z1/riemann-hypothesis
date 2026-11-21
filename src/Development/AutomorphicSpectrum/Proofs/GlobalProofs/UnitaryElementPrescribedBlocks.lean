@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.RealPtExHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousKapSymm
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm

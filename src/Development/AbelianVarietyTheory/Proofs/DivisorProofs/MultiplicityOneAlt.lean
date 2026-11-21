@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HighestWeightModuleUnitaryFormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryFormOrthogonalComplementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorActionIsLieActionStatement

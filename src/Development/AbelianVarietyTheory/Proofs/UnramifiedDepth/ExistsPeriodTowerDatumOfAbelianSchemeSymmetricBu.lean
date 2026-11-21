@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BiextValAxioms
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GrpPullbackSquareProductLift
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsBXOfFactorSystems

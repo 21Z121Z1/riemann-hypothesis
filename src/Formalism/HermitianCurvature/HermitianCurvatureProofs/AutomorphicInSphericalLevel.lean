@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FlagStabilizerFixesFrame
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsSmoothExt
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DensityLemma.PFibreBoundX

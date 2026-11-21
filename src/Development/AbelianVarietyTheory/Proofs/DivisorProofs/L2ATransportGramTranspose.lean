@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportedWeilDatumIsUnitaryAdelicSchwartzStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationL2Isometry
 

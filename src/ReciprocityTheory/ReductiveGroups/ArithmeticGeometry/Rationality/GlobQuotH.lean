@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.GlobSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Hadamard
 import Mathlib.Algebra.AffineMonoid.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightDegreeOfPrintsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricDegreeAsIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticSelfIntersectionFormulaStatement

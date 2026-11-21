@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAHOfIsFactorAH
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaNonvanishingBundleGenerated
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductAbelianUniformization

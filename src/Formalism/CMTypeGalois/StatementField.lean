@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CMTypeGalois.StatementGroup
 import Mathlib.NumberTheory.NumberField.CMField
 import Mathlib.RingTheory.Frobenius

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyIntegralFlagModelOfSmoothCoefficientFielStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.P22
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PushInvertibleOfHasTheta

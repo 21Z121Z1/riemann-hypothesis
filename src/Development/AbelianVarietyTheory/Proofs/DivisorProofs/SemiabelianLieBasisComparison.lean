@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreChangeOfPolarizedFieldStatement
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUniqueDifferentialMonHomLieBasis
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.FormEqPiMulHermForm

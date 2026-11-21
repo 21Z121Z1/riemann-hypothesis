@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCMFrame
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ESecCompOfIsGrpPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsLieNormSqBaseChange

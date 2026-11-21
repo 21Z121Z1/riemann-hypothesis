@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.HigherColumnInvariantsBound
 import Formalism.AdmissibleDesigns.InertiaActsTrivially
 import Formalism.AdmissibleDesigns.SelfGood

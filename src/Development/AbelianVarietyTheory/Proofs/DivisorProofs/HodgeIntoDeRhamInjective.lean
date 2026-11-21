@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasicoherentHomFromAffineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeAffineBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeSubbundleCorrespondentExistsStatement

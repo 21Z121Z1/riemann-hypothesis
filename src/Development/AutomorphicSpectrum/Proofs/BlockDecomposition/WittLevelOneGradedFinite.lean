@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StableCoverCechVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedWittIsNoetherian
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PreimageMono

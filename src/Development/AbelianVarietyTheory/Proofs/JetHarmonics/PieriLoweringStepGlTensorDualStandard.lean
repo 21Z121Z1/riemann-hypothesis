@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SplitCasimirEigenspaceIrreducibleDualStandardStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ReducedWignerCoefficientLoweringStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WignerExtremeNeZero

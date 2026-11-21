@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.MapStdPoly
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.WittVector.IsPoly

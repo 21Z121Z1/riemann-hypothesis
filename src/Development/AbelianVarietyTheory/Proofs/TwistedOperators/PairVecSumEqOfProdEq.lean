@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfProdFunEqStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalizedKernelOfVectorAddStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalizedKernelOfVectorSmulStatement

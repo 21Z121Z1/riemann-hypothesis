@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.ContractBlocksSplitPrime
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PRenameMultiHomog
 import Mathlib.RingTheory.TotallySplit

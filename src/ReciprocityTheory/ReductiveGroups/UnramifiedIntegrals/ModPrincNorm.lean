@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModQuadInt
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Ring.Star

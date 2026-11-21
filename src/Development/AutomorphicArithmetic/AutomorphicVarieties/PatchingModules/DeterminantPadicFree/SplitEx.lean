@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DeterminantPadicFree.FrameWith
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaDvrIc
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

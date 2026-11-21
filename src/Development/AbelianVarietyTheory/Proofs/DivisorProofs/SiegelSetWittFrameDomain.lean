@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformSchwartzSeminormBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelContinuousFunctionalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelSetWittFrameSchwartzBoundStatement

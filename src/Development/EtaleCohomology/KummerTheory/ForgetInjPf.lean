@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.KummerTheory.InjSlicePf
 import Mathlib.CategoryTheory.Preadditive.Injective.Preserves
 

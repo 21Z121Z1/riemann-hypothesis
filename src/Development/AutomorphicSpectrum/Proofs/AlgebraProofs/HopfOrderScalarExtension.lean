@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ExtTensor
 open GlobalTheory.CompanionTheory.Ar.BT TensorProduct
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearBarGoodPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnramifiedCharacterGoodStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatFullRankModuloTranslatesStatement

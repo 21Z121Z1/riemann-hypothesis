@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntEmbInjective
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SignatureBlockDiagonal
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.HermitianPositiveSymplectic

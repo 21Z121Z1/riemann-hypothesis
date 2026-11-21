@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GLnLocal
 import Mathlib.MeasureTheory.Measure.Haar.DistribChar
 import Mathlib.RingTheory.Henselian

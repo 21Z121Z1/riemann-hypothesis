@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsIntegralOfIsAbelianSchemeField
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.SimpleZerosMoveHolomorphically
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.UnifValueJacZeros

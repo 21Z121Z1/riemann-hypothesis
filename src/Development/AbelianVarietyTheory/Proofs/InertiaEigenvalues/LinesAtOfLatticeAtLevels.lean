@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Saturated
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyOfDiagWith
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEqOfExhaustive

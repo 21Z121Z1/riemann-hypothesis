@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotIsPrimZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsStrictFaceOfSmoothConePolyhedralFanStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SimpLabMinValOne

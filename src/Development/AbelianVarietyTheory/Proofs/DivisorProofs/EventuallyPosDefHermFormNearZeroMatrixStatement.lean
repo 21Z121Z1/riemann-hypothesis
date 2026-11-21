@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyPosDefHermFormNearZeroMatrix
 open Matrix GlobalTheory.PELU
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor (hermForm)

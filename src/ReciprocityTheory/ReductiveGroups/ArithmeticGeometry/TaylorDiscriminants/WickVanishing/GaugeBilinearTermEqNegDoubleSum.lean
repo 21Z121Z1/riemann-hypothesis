@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ConnectionKillsSeries
 import Mathlib.RingTheory.MvPowerSeries.Rename
 import Mathlib.Tactic.ENatToNat

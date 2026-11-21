@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataArith
 import Formalism.QuotientMetricDivisors.Statement
 import Mathlib.Data.Int.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SkewAdjointCasimirSpectralStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieSkewAdjointL2Statement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CasimirSignatureMemCenterStatement

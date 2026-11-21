@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FockPolynomialVectorLaws
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCharFamIsVacVec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.APlusComm

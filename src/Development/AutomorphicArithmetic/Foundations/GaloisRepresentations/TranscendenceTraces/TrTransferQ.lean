@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.IsolateSpec
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.NormalSchemeSpectra.IsNormalSch
 import Development.EtaleCohomology.EtaleTrace.LTransferCut

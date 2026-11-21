@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Mathlib.Tactic.Polynomial.Basic

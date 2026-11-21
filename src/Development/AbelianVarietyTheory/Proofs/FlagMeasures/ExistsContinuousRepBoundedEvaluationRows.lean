@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsClosedEmbeddingEntriesInf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsOpIntIntegrable
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ConvolutionSmoothL2Statement

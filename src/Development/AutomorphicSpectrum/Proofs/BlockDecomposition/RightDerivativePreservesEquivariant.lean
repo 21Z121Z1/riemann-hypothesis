@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrderedCechToCatCochainsOneApplyValueAtSubset
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryMemGLs
 open Matrix Finset MeasureTheory

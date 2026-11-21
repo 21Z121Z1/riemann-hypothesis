@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLogLogCut
 import Mathlib.Analysis.Analytic.Polynomial
 set_option maxSynthPendingDepth 1

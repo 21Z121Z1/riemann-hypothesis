@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FundamentalDomainExtension.UnipotentMoves.KatoClassHeckeEulerFactorRelation
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.DedekindDomain.Different

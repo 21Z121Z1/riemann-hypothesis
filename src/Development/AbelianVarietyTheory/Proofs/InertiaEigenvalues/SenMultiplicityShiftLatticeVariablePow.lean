@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NabBijectiveWindow
 import Std.Tactic.BVDecide.Normalize.Prop
 

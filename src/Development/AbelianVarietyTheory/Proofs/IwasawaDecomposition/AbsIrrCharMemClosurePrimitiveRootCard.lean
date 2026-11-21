@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 open Formalism.L2.DIV

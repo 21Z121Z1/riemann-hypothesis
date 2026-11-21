@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NefRR
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionsDimZero
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMayerVietorisConnectingExact
 import Development.AutomorphicArithmetic.CommutativeAlgebra.IsCoveringPairOfIsOpenImmersionOfJointlySurjecti
 

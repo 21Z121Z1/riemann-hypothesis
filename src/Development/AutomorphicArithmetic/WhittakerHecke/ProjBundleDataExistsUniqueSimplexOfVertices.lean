@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.ProjBundleDataSimplexExtOfVertices
 import Development.AutomorphicArithmetic.WhittakerHecke.ProjBundleDataExistsSimplexOfRel
 

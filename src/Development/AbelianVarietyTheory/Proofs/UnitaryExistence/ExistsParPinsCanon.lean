@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.ParCanon
 import Formalism.LocalToGlobal.ProjectiveLattices.LevelPb
 import Formalism.LocalToGlobal.ProjectiveLattices.DatProofs

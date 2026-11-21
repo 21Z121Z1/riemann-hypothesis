@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AltSumMultilinear
 import Development.AbelianVarietyTheory.Definitions.Divisors.NefFibOfIsNef
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

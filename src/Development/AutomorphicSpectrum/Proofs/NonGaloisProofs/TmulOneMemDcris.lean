@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlochKatoRightExact
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.LinearRelationExactSequenceDimStatement
 

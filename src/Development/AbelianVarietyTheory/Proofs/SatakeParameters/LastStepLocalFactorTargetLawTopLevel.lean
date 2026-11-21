@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulCompSmul
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff
 

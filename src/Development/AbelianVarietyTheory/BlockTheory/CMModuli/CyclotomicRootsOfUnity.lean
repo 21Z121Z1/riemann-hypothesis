@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.SiegelFamilyZetaUnit
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.AbelianLocusModels
 import Mathlib.AlgebraicGeometry.Morphisms.Etale

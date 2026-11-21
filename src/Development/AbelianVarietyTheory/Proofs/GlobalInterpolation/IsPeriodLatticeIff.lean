@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ClassMeanPeriods
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitPosMeanOfPositivePart
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsReduced

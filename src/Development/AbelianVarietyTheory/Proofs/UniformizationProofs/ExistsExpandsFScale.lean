@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.UniformisationCharts.BaseChangeCharts
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExpansionBijectiveOverFields
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ProdSumReindex

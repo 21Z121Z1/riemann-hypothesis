@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.OrbStep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.PermSplit
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.GroupHomologyLongExact

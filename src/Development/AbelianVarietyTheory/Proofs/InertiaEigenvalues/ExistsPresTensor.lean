@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsCyclotomic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GammaActionReduction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachModuleGeneratorReductionStatement

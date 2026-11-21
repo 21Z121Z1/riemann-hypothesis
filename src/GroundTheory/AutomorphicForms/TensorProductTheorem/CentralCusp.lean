@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.NonemptyAdelicDecomposition
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsDecay
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsMeasure

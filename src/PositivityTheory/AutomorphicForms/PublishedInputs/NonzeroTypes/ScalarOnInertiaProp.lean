@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.GIface
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Brauer
 

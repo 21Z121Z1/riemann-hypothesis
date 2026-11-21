@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.RealProdS
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.StableBlock
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.TermId

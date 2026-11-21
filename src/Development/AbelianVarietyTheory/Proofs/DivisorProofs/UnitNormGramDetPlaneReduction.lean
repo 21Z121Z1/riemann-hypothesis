@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitNormOne
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

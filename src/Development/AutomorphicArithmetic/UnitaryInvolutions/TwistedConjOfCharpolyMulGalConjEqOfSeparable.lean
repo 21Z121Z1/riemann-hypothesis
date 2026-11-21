@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ModelEx
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ReflectCpInv
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.TBase

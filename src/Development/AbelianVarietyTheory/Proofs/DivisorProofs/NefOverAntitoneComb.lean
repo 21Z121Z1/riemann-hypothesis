@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsPullbackAlongCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverRefinementGenericDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometricOfSameNormsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.FockWeights
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.LowFock
 

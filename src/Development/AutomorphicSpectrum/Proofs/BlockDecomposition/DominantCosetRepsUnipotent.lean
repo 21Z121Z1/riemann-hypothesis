@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMemInfConjOfIsDom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InterConjIsOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactGroupFiniteCosetReps

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.LocalRingsCompletion.nakayama
 import Mathlib.RingTheory.AdicCompletion.Noetherian
 import Mathlib.RingTheory.MvPowerSeries.Equiv

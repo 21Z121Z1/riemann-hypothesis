@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EpsMulOfCondExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedCharacterAtUniformizer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowSubOneMemPow

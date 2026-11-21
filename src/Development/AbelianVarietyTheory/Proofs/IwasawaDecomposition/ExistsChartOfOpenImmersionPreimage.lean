@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAffineDomainPreimageStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSectionsOnOpenPullStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDualNumberPointsFrameStatement

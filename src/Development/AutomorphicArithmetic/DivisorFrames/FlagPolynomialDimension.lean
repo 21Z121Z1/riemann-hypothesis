@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ExistsIsMapToFn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsVarietiesComponentsSmoothGenericFibreStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorOfStageTriangleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilTopGridStageExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonvanishingFactorStageStatement

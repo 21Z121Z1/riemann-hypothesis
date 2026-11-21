@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HalfFlagAdelicWholeSymbolStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReversedFlagLocalHeightLogFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagCompactificationAdelicUnitHeightStatement

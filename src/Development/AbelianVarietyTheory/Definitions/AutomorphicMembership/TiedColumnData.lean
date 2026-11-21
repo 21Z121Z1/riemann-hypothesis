@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PositionOfIntro
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq

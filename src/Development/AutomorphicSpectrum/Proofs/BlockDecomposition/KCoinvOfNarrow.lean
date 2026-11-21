@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ContinuousFinId
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.ExistsExtZ
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfSplit

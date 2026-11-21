@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.CyclotomicCharacters.DegreeDecomposition
 import GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicCompositum
 

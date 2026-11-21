@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubharmonicLogConvexityQuotient
 open scoped ContDiff
 set_option maxHeartbeats 1000000 in

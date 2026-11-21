@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsAdelicChain
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftSchurMultiplierCompatibility
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ActEqTranslate

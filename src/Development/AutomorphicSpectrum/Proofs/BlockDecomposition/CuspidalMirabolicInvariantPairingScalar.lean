@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsOpenKerDerChar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalIsGeneric

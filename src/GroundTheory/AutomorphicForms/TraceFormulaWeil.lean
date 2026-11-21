@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TraceFormulaCentralizer
 
 open MeasureTheory Topology Filter Set Function

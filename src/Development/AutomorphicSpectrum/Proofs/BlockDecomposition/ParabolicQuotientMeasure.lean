@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitHomeoApply
 import Mathlib.Tactic.Monotonicity.Lemmas
 open MeasureTheory Topology

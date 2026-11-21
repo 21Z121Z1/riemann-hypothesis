@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.TPGDecomp
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MeasurableSetIntF
 

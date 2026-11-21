@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StrictWeightGrowthBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithmeticDegreePositiveHermStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.WeightThresholdLimitCoefficientsStatement

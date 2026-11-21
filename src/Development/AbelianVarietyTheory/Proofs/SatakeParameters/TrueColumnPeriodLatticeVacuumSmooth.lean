@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.JetsInIffStepField
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AbsNormEqOfSplit
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NotDvdDifferent

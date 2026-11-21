@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.InvariantSeriesBidegreeOneOne
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.Henselian

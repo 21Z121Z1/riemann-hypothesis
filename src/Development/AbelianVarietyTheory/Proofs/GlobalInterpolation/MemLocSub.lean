@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataLatDefs
 
 namespace GlobalTheory.EX.Glue

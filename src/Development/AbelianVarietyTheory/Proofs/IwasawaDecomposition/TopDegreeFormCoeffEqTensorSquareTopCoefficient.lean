@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.InterPolyProdSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VecMulVecComm
 

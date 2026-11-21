@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CharSumInv
 import Mathlib.GroupTheory.Schreier
 import Mathlib.Order.CompletePartialOrder

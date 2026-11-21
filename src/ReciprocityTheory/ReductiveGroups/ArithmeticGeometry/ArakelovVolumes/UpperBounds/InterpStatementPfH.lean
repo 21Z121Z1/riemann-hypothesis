@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

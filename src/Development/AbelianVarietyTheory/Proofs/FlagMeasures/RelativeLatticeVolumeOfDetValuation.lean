@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CardQuotPow
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardQuotPow

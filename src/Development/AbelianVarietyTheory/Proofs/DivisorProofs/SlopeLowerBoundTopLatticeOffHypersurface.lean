@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRightInvOfSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeDegreeGeHeightPolynomialVectorsDetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiformHeightLowerBoundStatement

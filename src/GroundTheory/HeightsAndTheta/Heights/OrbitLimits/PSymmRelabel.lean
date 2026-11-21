@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.RelabelTransport
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.IntNumCompPerm
 set_option maxSynthPendingDepth 1

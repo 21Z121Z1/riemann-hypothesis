@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
 import Mathlib.RingTheory.SimpleModule.Isotypic
 

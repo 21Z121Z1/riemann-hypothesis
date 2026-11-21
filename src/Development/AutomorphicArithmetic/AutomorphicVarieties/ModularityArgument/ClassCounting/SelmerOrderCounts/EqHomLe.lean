@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.SelmerOrderCounts.TwoLe
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar

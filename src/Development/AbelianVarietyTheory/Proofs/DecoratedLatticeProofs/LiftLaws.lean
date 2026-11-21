@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TargetLaw
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawLocalSourceLevelCharacter
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FoldrExtract

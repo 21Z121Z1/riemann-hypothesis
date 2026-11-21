@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeightTwoFactorSqValuesCorrespondStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PsiCoordinatesFourthPowerAssociatedStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HomExtNormalSt

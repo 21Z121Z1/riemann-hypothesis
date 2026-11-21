@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NumericProductInequality
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealEmbeddingOrdering
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalAppellHumbertRealMultStatement

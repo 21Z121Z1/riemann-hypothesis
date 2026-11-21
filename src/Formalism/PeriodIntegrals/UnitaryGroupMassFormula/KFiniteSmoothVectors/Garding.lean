@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.KFiniteSmoothVectors.UnitaryModelOfMultiplicityGardingDensity
 import Mathlib.Analysis.Calculus.ContDiff.Convolution
 import Mathlib.RingTheory.SimpleRing.Principal

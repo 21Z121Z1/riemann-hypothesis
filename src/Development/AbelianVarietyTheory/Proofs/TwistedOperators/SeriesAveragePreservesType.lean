@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TypeAtOfDiscreteSeries
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CayleyExistsAndAny

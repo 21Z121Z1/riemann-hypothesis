@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothFunctionGreenBoundFirstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothFunctionGreenBoundSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDivisorHeightBoundNormalSchemeStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoeffChosenRedEqRedHom
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ESSingleCoeffCentral
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightConvUniqueAddSmulMulComm

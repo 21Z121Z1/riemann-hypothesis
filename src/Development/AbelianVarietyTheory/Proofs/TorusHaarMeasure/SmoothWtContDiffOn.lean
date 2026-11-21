@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.UpperBounds.SumNormSqWPos
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.IntegrandAemeasurable
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.OntoStatementPfB

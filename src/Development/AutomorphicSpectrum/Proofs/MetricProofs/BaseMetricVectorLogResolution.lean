@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LiftToLogResolutionAnalytic
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackPullback
 import Mathlib.Topology.Algebra.Module.Cardinality

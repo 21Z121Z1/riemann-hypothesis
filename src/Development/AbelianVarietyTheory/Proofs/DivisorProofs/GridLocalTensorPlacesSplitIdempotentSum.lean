@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PlaceIdempotentUnderEqOfLiesOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHasLocalSmall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable

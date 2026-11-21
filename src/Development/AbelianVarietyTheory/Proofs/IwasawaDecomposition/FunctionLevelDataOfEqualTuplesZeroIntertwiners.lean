@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OneTupleRowsCuspFormsIsometricThetaLiftsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTupChars
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterIdeleCharacterMatchUnique

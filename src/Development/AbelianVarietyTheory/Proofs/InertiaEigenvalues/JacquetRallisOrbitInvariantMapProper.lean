@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Univ
 import Mathlib.RingTheory.WittVector.IsPoly

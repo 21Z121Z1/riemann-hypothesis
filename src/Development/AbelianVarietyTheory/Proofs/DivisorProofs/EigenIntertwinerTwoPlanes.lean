@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneTransformBijectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneTransformSymplecticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneTransformCardEqStatement

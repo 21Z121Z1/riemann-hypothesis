@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsOfPolAV
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.NatCastSmulMemHtLatK
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorsionQuasiFiniteGroupStatement

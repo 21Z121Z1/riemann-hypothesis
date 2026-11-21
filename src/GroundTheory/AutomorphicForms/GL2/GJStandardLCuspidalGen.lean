@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GJStandardL
 import GroundTheory.AutomorphicForms.TensorProductTheorem.CuspidalRepBasic
 import GroundTheory.AutomorphicForms.GL2.GJLocalFEGamma

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.KernelFlatBaseChange
 import Development.ResolutionOfSingularities.Foundations.Schemes.SchemeMorphismProperties
 import Mathlib.AlgebraicGeometry.Morphisms.UniversallyOpen

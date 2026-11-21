@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocGrLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralityCriterionNormalModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticModelFlagHeightFirst

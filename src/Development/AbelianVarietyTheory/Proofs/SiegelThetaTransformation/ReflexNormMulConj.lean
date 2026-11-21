@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MultAddMultConjugate
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.NeBotOfNorm
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DetIdealSelfDualLatticeAndInterStandardStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.PolarizationDividedPowerSumSucc
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.StableSubspaceCompleteReducibility
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasLabelTransportEquiv
 import Mathlib.Data.Fin.Tuple.Sort
 open CategoryTheory Polynomial Formalism.IrreducibleCountingLemmas.TYPES

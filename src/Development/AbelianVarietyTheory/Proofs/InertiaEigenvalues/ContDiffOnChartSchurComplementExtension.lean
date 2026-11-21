@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsIdempotentElemIdemSf
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperDiagEqSdM

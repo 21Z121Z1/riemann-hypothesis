@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompEqOneOfTransl
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProjOverOfIsProjOverBase
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SecLinOfSecScal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.AllPositions
 

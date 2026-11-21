@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommuteRtOfMemZalg
 open NumberField GlobalTheory.CuspRep GlobalTheory.CompanionTheory.CTFin Matrix
 

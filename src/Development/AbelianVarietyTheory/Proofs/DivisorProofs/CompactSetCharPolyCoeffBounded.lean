@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBallSubset
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Univ
 import Mathlib.Topology.Algebra.MvPolynomial

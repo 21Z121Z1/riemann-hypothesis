@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.MollifiedIntegrability.ClsBoundAlt
 import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnramifiedOfAttached
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeOfAttached
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JumpsGoodOfAttached

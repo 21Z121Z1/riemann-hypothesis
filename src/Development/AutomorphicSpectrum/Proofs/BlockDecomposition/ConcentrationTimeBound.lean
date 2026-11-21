@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosureOperatorFacts
 import Mathlib.Algebra.Ring.IsFormallyReal
 

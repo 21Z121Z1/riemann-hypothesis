@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormMinpolyCoeffZeroPowNumberField
 open NumberField Polynomial IsDedekindDomain
 open Formalism.DivisionValues (vw lw)

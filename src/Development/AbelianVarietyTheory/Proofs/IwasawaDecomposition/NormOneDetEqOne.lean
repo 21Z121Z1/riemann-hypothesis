@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth
 
 namespace GlobalTheory.Mem.Col2.IdxEx

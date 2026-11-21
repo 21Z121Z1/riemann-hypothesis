@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TraceCmbMulCmbStar
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingOfSumSqEq
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolumeShearedBalls

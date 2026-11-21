@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotDominatesTopPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormallyEtaleBaseChangeEvalHomStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFractionRingTensorOfFractionFieldsStatement

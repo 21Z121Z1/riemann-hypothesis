@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.WindowSettingSatisfiable
 
 namespace Formalism.LFunctionChainParameters.SmallOrderPrimeLosses

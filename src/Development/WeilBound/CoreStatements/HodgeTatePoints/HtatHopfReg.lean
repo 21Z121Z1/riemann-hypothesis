@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfSec
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BaseChangePointsCompatStatement
 open CategoryTheory Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsDiscreteValuationRingLocalizationOfIsDedekindD
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.DedekindDomain.Instances

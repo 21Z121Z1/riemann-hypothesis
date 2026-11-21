@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralClosureTensorLocalizationInjective
 open IsLocalRing
 set_option synthInstance.maxHeartbeats 400000

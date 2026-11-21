@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConnectionBlocksHermitianFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubbundleCurvatureFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientBundleCurvatureFormulaStatement

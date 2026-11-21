@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongruenceUnitsBasisOfNbhds
 open NumberField IsDedekindDomain Formalism.L2.DIV Formalism.UG
 set_option maxHeartbeats 1000000 in

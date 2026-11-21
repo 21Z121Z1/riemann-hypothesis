@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.VolEqOf
 import Development.WeilBound.CoreStatements.VolumeEquality.HolNull
 import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeets

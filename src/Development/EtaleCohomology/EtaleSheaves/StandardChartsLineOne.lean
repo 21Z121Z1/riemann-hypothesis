@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.ChartSurjCut
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 

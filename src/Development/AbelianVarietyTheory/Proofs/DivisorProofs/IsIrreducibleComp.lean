@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCosocleComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalInvTransposeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistInvTransposeDetCharStatement

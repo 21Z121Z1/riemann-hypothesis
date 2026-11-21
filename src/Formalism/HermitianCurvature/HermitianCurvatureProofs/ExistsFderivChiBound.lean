@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementNF
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 import Mathlib.Tactic.Monotonicity.Lemmas

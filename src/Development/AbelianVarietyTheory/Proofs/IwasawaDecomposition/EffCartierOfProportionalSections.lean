@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeneratesAlong
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Proportional
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems

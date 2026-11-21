@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockDegreeOddMapLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerUpperFixedPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedLinePolynomialKFixedStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDominantSpMapOfInjective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SInfMulNormPlk
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PreModelChartGluing

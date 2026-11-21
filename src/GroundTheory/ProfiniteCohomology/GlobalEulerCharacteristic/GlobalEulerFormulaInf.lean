@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RealPlaces.GSDefs
 import GroundTheory.ProfiniteCohomology.EulerCharDefs
 set_option maxSynthPendingDepth 1

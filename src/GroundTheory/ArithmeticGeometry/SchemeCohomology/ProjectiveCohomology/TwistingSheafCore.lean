@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwistLeray
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.InvertibleSheaf
 import Mathlib.AlgebraicGeometry.Noetherian

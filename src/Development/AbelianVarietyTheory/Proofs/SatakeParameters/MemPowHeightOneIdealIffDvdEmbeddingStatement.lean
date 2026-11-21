@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemPowHeightOneIdealIffDvdEmbedding
 open NumberField IsDedekindDomain WithZero
 set_option maxHeartbeats 1000000 in

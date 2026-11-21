@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.LocStep
 import Mathlib.LinearAlgebra.Matrix.Module
 import Mathlib.NumberTheory.LocalField.Basic

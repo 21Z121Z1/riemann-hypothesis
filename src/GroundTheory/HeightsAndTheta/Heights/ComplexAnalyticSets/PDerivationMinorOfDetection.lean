@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDerivationMinorOfDetection
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

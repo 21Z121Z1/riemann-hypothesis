@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.UnitaryFixingIsotropicComplement
 
 open scoped TensorProduct NNReal Matrix

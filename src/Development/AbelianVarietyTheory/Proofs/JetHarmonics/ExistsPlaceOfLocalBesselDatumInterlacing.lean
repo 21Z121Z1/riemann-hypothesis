@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliParamMemIntAddHalf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CapParamOfIsHCTypeW
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PlExists

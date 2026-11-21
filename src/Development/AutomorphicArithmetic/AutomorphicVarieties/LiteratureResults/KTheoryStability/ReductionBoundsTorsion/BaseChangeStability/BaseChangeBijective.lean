@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.HomologicalStability.KStability
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.DedekindSR
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.GrpHComp

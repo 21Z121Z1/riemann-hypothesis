@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.BasisBlock0
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HtDefs
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfForallAlgHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxPrincipleNear
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology

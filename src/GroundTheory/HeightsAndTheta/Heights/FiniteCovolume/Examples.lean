@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HermitianDisc
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects
 import Mathlib.Algebra.AffineMonoid.Basic

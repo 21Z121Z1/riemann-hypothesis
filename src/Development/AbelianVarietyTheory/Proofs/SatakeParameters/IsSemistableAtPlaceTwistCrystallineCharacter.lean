@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsFrobSSWdRep
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GaloisRepConjInvariant
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsPstOfIsSst

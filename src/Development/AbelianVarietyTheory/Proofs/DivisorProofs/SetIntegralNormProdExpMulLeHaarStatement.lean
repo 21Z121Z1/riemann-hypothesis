@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SetIntegralNormProdExpMulLeHaar
 open MeasureTheory GroundTheory.Automorphic
 open scoped ContDiff

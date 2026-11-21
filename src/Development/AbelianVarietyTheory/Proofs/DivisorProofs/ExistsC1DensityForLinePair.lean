@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffAtDelApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AngleFormFrameIndep
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

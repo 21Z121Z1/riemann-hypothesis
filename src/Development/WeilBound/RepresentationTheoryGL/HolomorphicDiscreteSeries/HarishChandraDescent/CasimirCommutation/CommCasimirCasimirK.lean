@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.HarishChandraDescent.Descent
 import Mathlib.Analysis.InnerProductSpace.JointEigenspace
 import Mathlib.RingTheory.PiTensorProduct

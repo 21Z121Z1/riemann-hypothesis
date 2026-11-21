@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtChartLocalizationStatement
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField
 

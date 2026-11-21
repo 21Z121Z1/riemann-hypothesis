@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CupProducts.Pairing
 import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply
 set_option maxSynthPendingDepth 1

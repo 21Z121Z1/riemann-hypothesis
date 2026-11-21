@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.WordTens
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchInf
 

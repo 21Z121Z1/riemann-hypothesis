@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusInvariantLiftAddInvariantCombination
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsKSSymmAbLocus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDlogAddCoboundaryAbLocus

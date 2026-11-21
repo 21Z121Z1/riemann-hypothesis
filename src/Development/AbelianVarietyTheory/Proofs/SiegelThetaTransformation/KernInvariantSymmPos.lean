@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DblZMemHn
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.PolyDerivEqSumList
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsMemRowHighestTotalDegreeEqTwo

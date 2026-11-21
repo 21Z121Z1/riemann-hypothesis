@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ElementaryDivisorsMulMinusculeTopTerm
 import Formalism.SatakeDualWeyl.StatementE
 open IsDedekindDomain NumberField Matrix

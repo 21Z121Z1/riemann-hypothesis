@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.TraceFormTwistIsoOfPullback
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsPhiEqShift
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsRingHomLift

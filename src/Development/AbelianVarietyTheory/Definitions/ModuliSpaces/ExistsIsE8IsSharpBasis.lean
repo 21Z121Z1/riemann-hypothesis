@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsArBaseAway
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRatA
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.NotGoodClassZeroSucc

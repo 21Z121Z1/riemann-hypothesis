@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameAtApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodMapMoebiusDenomUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormSmoothOnCover

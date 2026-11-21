@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHtFunGenericIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagAtWholeSymbolReindexedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairStatementOfHeightAlterationStatement

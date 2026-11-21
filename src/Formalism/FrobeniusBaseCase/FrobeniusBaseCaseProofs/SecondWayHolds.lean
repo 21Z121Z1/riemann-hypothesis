@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.ChainI
 import Mathlib.RingTheory.PiTensorProduct
 

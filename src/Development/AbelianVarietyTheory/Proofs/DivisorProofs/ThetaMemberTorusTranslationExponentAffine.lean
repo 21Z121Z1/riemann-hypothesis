@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberExistsFrameExponentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslationExponentOfFrameExponentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameExponentsAffineTwoMembersStatement

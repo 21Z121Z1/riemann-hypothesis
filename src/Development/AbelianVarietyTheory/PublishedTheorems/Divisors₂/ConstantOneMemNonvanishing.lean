@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsTypeIsRealConst
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenericPointAsIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt

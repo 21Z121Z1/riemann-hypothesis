@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.VertCmp
 import Development.AutomorphicArithmetic.DivisorFrames.LevelFlagCompactPoint
 import Development.AutomorphicArithmetic.DivisorFrames.LevelUnfoldingFlag

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenSetOfChartsMemStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartMapIntoAffineConstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreLineOverSurjectionStatement

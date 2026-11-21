@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.CasimirAlgebra.TensorRelationsGL.QdetFacts
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.WittVector.IsPoly

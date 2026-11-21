@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.PoincarePairs.IsDiscreteRepResHomCoindRes
 import GroundTheory.ProfiniteCohomology.PoincareDuality.CupPairingEvalPairingCohomologyMap
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SummableAbsNormRpowInv
 import Mathlib.Analysis.Normed.Group.Tannery

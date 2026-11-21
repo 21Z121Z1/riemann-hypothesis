@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsUnitNatCastUp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeIsogenyThetaGeneratorTransportStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HeckeSetDescends

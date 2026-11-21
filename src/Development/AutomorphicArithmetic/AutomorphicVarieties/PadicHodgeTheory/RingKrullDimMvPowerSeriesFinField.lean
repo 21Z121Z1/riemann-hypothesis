@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PiSpanVariable
 import Mathlib.RingTheory.KrullDimension.NonZeroDivisors

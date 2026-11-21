@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EgaHolds
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ModelsOfSemistableReduction
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.UniformisationCompleteDVR

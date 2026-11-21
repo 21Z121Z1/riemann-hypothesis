@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAutFormUCoef
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphicRepDualPairingStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.WeightModuleInvariantPairingStatement

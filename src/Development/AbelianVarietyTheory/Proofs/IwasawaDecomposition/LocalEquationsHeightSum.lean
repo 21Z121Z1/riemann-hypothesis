@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClosedPointGeometricFibresFinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CartierLocalEquationCommonStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArithmeticVarietyDimZeroFiniteStatement

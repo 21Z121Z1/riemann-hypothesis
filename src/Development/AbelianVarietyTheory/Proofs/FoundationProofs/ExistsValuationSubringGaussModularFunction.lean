@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.NormOrderPfA
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExpUpper
 import Mathlib.Algebra.Order.Ring.Star

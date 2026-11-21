@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumExactExponentsSmulMemLocalizedCoeffLattice
 open NumberField IsDedekindDomain Formalism.L2.DIV
 set_option maxHeartbeats 1000000 in

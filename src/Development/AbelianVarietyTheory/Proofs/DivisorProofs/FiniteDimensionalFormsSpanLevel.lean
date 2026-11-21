@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFundamentalDomainRationalBlockUnipotentGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalConstTerm
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgClosureOfTower
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective

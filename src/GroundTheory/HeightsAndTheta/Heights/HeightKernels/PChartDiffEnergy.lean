@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartIbpSteps
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ChartCutoffParts
 set_option maxSynthPendingDepth 1

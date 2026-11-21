@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLatBasisZero
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.Convex.Contractible

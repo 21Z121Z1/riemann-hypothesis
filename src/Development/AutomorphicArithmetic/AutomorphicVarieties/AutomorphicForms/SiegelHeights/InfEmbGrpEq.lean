@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RealCusp
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Archimedean
 import GroundTheory.AutomorphicForms.GKModules.LieAlgebra

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicUnitaryHaarBiInvariant
 open MeasureTheory Formalism.MainNotions.S NumberField
 open scoped InnerProductSpace

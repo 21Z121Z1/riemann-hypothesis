@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OrthogonalNormSquareSum
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ScaledCoisometryNorms
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistOneToRootsOfUnitySectionsSurjectiveStatement
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

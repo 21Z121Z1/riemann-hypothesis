@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ResidueCharacters.RowAtOfSetup
 import Development.AutomorphicArithmetic.ResidueCharacters.RowGlue
 

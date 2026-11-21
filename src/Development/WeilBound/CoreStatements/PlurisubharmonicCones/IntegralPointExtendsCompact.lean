@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.TorusModelCochar
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieMetricStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NumberFieldPointIntegralModelStatement

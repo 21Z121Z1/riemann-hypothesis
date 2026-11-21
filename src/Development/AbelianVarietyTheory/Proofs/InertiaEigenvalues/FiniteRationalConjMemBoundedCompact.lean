@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWildInertiaCyclotomicElement
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDimensionalForms

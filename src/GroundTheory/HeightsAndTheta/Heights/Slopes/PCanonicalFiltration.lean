@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Slopes
 import GroundTheory.HeightsAndTheta.Heights.Slopes.StatementsSupInf
 import Mathlib.LinearAlgebra.Dimension.Torsion.Finite

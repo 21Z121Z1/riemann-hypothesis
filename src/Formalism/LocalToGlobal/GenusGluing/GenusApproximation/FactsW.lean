@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.Statement
 
 noncomputable section

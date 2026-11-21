@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 import Mathlib.Algebra.Category.ModuleCat.Algebra
 import Mathlib.Combinatorics.Quiver.ReflQuiver

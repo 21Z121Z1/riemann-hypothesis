@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormOpFrob
 open GlobalTheory.Col PowerSeries
 set_option maxHeartbeats 1000000 in

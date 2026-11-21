@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.ImmersionProj
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.ImmersionCech
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.NaturalLeray

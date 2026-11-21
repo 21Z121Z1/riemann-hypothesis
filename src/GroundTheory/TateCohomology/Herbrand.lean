@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.TateLow
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.FiniteCyclic
 import Mathlib.RepresentationTheory.Homological.GroupHomology.FiniteCyclic

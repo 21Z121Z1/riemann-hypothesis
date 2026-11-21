@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PLCurveB
 
 namespace ReciprocityTheory.AnForm.M

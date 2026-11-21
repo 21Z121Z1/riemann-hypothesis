@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FourierTransformBijective
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SymmetricShiftIsUnit

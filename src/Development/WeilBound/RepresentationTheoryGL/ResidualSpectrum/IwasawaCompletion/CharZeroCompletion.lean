@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.SliceTensors.Clause3Asc
 import Development.WeilBound.CoreStatements.AutomorphicKernels.ResidualSpectrumHilbertSum.ResidualSpectrumTensors.LocalComponentGL
 import Development.WeilBound.RepresentationTheoryGL.ResidualSpectrum.IwasawaCompletion.SpehCosocleUc

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TwistApply
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ShortExactFirstTermBundle
 

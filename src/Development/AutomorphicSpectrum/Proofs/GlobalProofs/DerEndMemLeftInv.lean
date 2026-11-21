@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RightTranslateCommutesCenterAction
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCI
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapelliConstantTermVanishing

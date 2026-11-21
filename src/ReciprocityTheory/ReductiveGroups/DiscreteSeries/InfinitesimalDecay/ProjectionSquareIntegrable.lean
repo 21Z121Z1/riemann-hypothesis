@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.FormBSelfLe
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.PoleMatch
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.TopNilDefs
 import Mathlib.RingTheory.AdicCompletion.Exactness

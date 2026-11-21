@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FgLatOfOfLowerBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulNonnegOfShortRule

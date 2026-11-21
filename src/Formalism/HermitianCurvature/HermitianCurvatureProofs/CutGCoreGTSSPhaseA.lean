@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.EulerZetaGammaInvIdentity
 
 open Formalism.FourierDecayAlt Formalism.FourierDecayAlt.M Finset

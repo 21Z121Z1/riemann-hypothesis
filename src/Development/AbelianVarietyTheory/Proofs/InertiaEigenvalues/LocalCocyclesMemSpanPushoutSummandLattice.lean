@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CutCocFinsetCommon
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStableComplActK
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankSpanVecSLe

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.GoodXgFin
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.PiTensorProduct

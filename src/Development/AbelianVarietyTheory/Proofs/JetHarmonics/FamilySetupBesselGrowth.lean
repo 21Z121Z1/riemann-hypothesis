@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GapCoefficientDerivativeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondIntegrandOfBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SecondFubini
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatrixMulApply

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsGrpPullbackOfCommute
 import Mathlib.Algebra.Group.MinimalAxioms
 import Mathlib.AlgebraicGeometry.AffineSpace

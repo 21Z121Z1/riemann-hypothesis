@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightContinuousPosStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatSectionGrowthBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesConvergentStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieMultLabelRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryCentralizerOfCommutePadicPointsSpliStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiPNeighborhoodInLevelSubgroup

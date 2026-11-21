@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoAbelianSchemeDVROfGenericIso
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.IsCrisDRAIff
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Comparison
 

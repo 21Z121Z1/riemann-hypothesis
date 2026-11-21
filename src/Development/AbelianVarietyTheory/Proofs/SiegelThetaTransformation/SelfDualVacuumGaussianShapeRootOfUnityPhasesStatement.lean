@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualVacuumGaussianShapeRootOfUnityPhases
 open Matrix Complex GlobalTheory.SW GlobalTheory.Phase
 open scoped ComplexConjugate Real

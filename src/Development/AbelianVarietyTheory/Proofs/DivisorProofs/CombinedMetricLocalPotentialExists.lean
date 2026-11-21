@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviAtLinearCombinationPotential
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitAtOfDivisorRelationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogAdelicMetricDivisorRelationStatement

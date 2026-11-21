@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionFreeOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalMapGalElt
 import Mathlib.RingTheory.PiTensorProduct

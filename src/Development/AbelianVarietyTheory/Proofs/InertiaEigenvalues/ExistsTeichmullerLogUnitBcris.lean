@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KummerNotCoboundary
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAcrisLogOneAddStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAcrisLogOneAddAddOfMulStatement

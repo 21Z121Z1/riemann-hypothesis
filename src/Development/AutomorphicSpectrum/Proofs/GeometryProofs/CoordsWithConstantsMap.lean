@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsCoordsForComponent
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsModelVectorBundlesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAddedProjectiveStatement

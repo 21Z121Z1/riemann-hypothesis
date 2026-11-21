@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LowerUnipotentFamilyAnalytic
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticProjectionBijective
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsUpperOfMinors

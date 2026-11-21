@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ

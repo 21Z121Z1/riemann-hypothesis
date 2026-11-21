@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeLFunctionBottomPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareBottomHalfRankSumLeHalfRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StdMassNeZero

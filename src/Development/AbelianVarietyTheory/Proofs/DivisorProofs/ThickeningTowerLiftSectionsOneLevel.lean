@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartCocycleOfPullbackPowerStandardStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftSectionsNextThickeningStandardChartsStatement
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.AdelicDegreeTameRamification
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmCurveBaseChangeComp

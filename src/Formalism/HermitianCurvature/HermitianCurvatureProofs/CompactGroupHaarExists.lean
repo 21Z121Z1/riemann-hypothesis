@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Std.Tactic.BVDecide.Normalize.Prop

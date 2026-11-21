@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RedMFrMapAdjZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterEmbeddingCompat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemHatAStdLIff

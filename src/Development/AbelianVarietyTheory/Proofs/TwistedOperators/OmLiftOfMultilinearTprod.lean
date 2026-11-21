@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.MinorOrderedEntries
 open GlobalTheory.IndefiniteRowSideFullHecke.MinorOrderedEntries
 open scoped TensorProduct

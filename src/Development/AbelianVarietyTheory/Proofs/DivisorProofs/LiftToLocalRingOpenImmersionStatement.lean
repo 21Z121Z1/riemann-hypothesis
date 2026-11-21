@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftToLocalRingOpenImmersion
 
 set_option autoImplicit false

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.JacChart
 import Mathlib.Algebra.DualNumber
 import Mathlib.Analysis.Analytic.Polynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EmbWInjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegersCompleteDVR
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSumRootsOfUnity

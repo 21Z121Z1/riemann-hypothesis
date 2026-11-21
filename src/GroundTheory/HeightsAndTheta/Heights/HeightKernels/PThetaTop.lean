@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsTheta
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.Tactic.Monotonicity.Lemmas

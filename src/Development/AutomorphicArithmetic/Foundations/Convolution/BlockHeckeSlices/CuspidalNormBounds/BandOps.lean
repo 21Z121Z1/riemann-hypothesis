@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.UmgOps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommuteRtOfMemZalg
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FormalGroupCoordinatesPullbackLinearTangentBasisStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.OrdGeOfLgSumEqLinear
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HasSubstAddSqZero
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsToJetEq
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.IsNilpotentOfMemKerJetTruncR

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalCountGenericRow
 open Formalism.L2.SG.Pf.MainEqSteps
 set_option maxHeartbeats 1000000 in

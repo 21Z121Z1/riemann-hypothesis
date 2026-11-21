@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftOntoAllStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ServedQOfBot
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryFamilyRowDataStatement

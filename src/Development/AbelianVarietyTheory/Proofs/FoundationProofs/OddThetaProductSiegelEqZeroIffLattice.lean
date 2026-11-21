@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
 import Mathlib.Analysis.SpecialFunctions.Log.Summable
 import Mathlib.RingTheory.PiTensorProduct

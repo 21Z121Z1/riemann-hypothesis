@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.JetsPhW
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegralMv
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntegralPolynomialFirst

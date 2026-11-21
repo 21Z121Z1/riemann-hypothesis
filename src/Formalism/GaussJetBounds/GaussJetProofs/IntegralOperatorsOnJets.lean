@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.StatementQ
 import Formalism.GaussJetBounds.GaussJetProofs.ConstantCoeffQuadSer
 import Formalism.GaussJetBounds.GaussJetProofs.OneRow

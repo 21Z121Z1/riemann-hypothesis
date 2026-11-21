@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMulPowIntegral
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.CentralInvolutionRing
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

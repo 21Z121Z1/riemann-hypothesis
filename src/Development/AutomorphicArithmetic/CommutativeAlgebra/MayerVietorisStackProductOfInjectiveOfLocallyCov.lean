@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.BlowupCategories.SpanScale
 import Development.AutomorphicArithmetic.CommutativeAlgebra.MonoOfInjectiveOnSimplices
 import Development.AutomorphicArithmetic.CommutativeAlgebra.MayerVietorisCoverOfMonoOfZariskiLocal

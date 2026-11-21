@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Birational
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGaussChars

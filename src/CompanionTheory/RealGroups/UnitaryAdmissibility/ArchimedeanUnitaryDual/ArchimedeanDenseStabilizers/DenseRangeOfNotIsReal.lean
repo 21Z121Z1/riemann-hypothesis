@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.NefEffectiveCones.ExistsNsmulMulVecMemHat
 import Formalism.PeriodIntegrals.UJClassFin

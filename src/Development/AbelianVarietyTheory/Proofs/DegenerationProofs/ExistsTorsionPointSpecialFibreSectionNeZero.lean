@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FrameUnit
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsLocalHomOfTest
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.KbIsAlgClosedAndConj

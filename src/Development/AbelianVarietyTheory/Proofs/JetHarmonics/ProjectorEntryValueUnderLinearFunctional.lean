@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GlRelationRowStepsFunctionalEigenStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselColumnStepsFunctionalEigenStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuantumMinorBlockLinearMapIntertwineStatement

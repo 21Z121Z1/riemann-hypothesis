@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.CupCochains
 import GroundTheory.ProfiniteCohomology.Bridge
 import Mathlib.Algebra.Homology.ShortComplex.ModuleCat

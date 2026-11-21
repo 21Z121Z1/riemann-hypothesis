@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveBase
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorSheaf
 import Mathlib.Topology.Sheaves.Flasque

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartResult
 open GlobalTheory.HalfGeo
 set_option maxHeartbeats 1000000 in

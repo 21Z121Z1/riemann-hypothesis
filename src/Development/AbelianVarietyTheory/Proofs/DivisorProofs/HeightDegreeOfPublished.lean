@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialNumeratorLinearExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GreenPotentialSmoothPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeComparisonRootMetricsStatement

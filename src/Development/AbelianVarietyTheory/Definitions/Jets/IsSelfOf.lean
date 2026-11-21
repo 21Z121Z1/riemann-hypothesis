@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
 import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich

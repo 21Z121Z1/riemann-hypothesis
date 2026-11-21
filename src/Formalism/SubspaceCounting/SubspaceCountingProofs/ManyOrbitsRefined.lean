@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SubspaceCounting.GoodOrbitIntervalTileCondition
 import Formalism.SubspaceCounting.SubspaceCountingProofs.ManyOrbits
 import Mathlib.Data.Finset.Functor

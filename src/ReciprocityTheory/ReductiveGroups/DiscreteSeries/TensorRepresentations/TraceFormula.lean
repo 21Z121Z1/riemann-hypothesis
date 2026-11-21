@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Decomp
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.TraceFormulaM
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdegTransfer

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsValues
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordDegreeBoundCharZero

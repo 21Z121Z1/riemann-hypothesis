@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ShapiroReal
 
 open NumberField IsDedekindDomain CategoryTheory GroundTheory.ProfCoh GroundTheory.Global

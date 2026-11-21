@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeSeparatingIntegerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmDeRhamEigenspaceCorankLeTwoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicEndomorphismCorankDeRhamStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.SubMulOriginD
 import Mathlib.AlgebraicGeometry.EllipticCurve.Projective.Point
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RepUnique
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationProperty
 set_option backward.isDefEq.respectTransparency false

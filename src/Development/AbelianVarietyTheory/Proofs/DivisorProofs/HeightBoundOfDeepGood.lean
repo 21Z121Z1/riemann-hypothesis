@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightOfMeanBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortOfInputs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricOfPublishedInputsStatement

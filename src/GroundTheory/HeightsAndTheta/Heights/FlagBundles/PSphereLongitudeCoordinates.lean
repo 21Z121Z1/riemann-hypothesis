@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsSphereLongitude
 import Mathlib.Analysis.SpecialFunctions.PolarCoord
 set_option maxSynthPendingDepth 1

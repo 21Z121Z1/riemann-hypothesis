@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedMissingClosedFibreEmpty
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowSubSuccLe
 

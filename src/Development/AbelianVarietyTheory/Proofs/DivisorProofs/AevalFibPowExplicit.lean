@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCompFsDens
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivFractionsBilinearFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfEvalHermitian

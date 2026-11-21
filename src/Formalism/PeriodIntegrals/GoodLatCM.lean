@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.LatDefs
 import Formalism.PeriodIntegrals.ThGDefs
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs

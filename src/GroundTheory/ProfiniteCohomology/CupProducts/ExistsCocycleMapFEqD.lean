@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CupProducts
 import GroundTheory.ProfiniteCohomology.ContinuousCochains.LongExactSequence
 set_option maxSynthPendingDepth 1

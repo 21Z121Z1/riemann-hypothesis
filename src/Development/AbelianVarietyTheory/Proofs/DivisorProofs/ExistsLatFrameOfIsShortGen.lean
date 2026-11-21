@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsResolProjSpace
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

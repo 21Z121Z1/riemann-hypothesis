@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartanCommutingIsometriesBounded
 open GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.MulLatMulLat
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.HformSmulRightB
 import Formalism.LocalToGlobal.GlobalTheory.ExistsUnitaryOneDetEq

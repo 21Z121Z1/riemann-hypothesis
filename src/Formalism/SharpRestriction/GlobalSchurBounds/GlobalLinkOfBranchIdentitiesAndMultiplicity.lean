@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.TransposeBaseMatrixInfinity
 
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.BcStmt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.BrData

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LocallyConstantCompact
 import GroundTheory.AutomorphicForms.WhittakerGroups
 import GroundTheory.AutomorphicForms.WhittakerCells

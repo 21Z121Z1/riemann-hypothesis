@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DualCountBound.IsOpenLocO
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DualCountBound.LatticeStabilizerFixed
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerSmulLeIdealSmulOfFree
 open NumberField
 open scoped TensorProduct

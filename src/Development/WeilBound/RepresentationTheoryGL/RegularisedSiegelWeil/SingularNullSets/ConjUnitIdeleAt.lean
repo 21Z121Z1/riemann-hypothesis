@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.SplitPkg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CharacterConductorConditionStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EmbZeroTrivialWittDecomposition

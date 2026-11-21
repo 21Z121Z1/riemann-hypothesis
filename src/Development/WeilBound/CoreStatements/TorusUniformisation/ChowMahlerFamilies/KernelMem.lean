@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.CubNMulOfPow
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.ExistsDerGen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.TensOfBc

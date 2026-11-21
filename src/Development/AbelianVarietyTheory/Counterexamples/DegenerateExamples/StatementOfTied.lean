@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.FamilySizeBound
 import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeOfExplicitAndCompact
 import Formalism.SharpRestriction.ParamsHeightRankConstant

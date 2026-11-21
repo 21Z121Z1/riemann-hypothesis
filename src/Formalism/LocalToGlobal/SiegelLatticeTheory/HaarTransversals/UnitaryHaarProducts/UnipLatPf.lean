@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.UnipLat
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.CStarAlgebra.Classes

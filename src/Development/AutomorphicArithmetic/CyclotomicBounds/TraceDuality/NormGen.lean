@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmpleOnAbelianBase
 import Development.AutomorphicArithmetic.CyclotomicBounds.TraceDuality.ValGen
 open NumberField

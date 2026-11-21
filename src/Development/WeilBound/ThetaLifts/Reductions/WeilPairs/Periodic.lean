@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Mfac
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SetIntegralAddRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SetIntegralCompAut

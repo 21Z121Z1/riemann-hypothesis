@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemAdelicLatticeIffLocalSelfDualCompletion
 import Formalism.LocalToGlobal.HeckeThetaElements.IsHeckeElt
 import Formalism.SatakeDualWeyl.StatementE

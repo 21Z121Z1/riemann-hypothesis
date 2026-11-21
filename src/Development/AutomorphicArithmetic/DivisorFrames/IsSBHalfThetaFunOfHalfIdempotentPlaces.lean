@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ThetaOperatorIntertwinesHeisenberg
 import Development.AutomorphicArithmetic.DivisorFrames.PtOSgnMemLatAtVIffMemLatO
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsNeZeroLinearModelVacuumEqSmul

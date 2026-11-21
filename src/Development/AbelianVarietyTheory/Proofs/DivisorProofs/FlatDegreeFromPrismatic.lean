@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanExistenceEverywhereStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatDegreeOfSteps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmDifferentFromIdealStatement

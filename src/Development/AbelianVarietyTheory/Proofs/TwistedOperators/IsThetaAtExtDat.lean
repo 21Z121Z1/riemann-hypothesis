@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StepVecCongr
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdemSumMulOfSubset
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemUniq

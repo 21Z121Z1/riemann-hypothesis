@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuOntoC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanBdLeSpace

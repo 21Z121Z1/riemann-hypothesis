@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Adele.Approximation
 import GroundTheory.GlobalFields.Adele.IntegersLattice
 

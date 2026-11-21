@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.PDescentCutA
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NearTrivialPointwise
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointRationalEquivarianceStatement

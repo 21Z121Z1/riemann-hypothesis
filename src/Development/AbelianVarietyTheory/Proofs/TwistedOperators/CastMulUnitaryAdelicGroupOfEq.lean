@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridBottomLevelLeFormLevelLargeDepthStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairedPointsFirstLevelLawStatementStatement
 

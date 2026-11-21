@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PeriodRelationsTrueColumnsAtTupleStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KerTie
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowPinSetDivZ

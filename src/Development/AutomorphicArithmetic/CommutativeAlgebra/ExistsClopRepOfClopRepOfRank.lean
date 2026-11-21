@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopProjFinrankPullback
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.ENatToNat

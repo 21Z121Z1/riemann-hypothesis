@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Mathlib.Analysis.Normed.Field.ProperSpace
 import Mathlib.RingTheory.Henselian

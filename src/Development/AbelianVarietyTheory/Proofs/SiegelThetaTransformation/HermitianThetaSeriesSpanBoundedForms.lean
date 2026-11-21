@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SetIntegralCompOfStable
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsFamilyInvariantOfFockInner
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LatticeOperatorCoefficients

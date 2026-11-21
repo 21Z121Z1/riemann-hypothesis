@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteNonzeroIndexPlacesReferenceTuple
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLtGrpTrue
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGIsStatement

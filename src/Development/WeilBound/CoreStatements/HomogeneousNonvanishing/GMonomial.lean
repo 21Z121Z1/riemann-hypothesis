@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRiemannExtensionAnalytic
 import Mathlib.Analysis.Complex.AbsMax
 import Std.Tactic.BVDecide.Normalize.Prop

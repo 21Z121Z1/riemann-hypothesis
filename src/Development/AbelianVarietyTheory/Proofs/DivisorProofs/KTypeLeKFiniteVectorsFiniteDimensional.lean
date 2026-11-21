@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KStabIffIsKStableOnFiniteVectorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactHighestWeightUniqueOfIrreducibleStatement
 open Matrix GlobalTheory.HolDS

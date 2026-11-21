@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogFactorialIndices.StatementSize
 import Mathlib.Analysis.CStarAlgebra.Classes
 

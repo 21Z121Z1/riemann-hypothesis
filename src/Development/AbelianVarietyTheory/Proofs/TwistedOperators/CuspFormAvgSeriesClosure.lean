@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgIsCusp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeriesAveragePreservesTypeStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeriesAverageOtherPlaceTypeStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodicContinuousIntegrableDomain
 open MeasureTheory
 open scoped ComplexOrder

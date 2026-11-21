@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.GaussOperatorProductFormula
 
 namespace Formalism.HermitianLattices.LocalLatticeBases

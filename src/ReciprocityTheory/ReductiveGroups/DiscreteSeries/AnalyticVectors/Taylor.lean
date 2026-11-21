@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.IteratedDerivOrbit
 import Mathlib.Analysis.Calculus.Taylor
 import Mathlib.Tactic.ENatToNat

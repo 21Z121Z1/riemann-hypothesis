@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ScholzeWeinsteinB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsUnitRescaling
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PulledMetricSmoothOnFlagPointsStatement

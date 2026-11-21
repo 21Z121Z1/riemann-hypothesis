@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsPresents
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Stokes
 open CategoryTheory AlgebraicGeometry TopologicalSpace MeasureTheory

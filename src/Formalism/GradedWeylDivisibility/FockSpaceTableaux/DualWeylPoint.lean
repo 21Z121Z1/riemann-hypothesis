@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LSatLemmas
 import Mathlib.RingTheory.WittVector.IsPoly
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsStabForm
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction

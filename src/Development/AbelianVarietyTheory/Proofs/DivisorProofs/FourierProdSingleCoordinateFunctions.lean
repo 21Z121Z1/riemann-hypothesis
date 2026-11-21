@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegrableMonomialMulConjComplexGaussian
 open NumberField MeasureTheory
 open scoped RealInnerProductSpace FourierTransform

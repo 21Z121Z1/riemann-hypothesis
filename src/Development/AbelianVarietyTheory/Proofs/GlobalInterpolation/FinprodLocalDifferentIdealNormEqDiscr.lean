@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
 import Mathlib.NumberTheory.NumberField.Discriminant.Different
 import Mathlib.RingTheory.Henselian

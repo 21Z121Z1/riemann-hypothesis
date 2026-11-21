@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolynomialChernIntegralTensPowStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistAmpleGloballyGeneratedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMassEqSelfIntersectionOfGeneratedStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsPeriodHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPeriodCohomologyClassOfRichBasedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPointHol

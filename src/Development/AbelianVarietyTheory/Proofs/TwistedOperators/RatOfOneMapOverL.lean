@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TupPrimeEmpty
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RayFieldTheta

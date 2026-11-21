@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalQuotientRank
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.LocalLengthFraction
 import Mathlib.Tactic.Monotonicity.Lemmas

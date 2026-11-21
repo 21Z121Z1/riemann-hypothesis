@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.SliceMain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
 

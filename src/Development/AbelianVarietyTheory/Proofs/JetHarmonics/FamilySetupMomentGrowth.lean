@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DualTensorBesselMomentStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorMomentEstimateStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AbsCoordLeOfLOneNormLe

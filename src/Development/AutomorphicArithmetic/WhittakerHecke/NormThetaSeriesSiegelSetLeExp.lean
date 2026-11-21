@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.SummableTsumInvOneAddHeightPowLe
 import Development.AutomorphicArithmetic.WhittakerHecke.SchwartzBruhatTranslateDecayBound
 import Development.AutomorphicArithmetic.WhittakerHecke.ExistsCommonDenomOfIsCompactUnipotentTranslates

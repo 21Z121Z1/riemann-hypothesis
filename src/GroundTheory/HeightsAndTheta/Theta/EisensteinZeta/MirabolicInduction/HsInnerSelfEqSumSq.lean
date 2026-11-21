@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Theta.LieCoordinates.SecondKindStatements
 import Mathlib.Data.Int.Star
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.BundleObjects
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
 set_option maxSynthPendingDepth 1

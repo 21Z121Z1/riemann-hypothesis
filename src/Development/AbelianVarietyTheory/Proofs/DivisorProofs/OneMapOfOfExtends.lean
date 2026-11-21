@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PinsMerge
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.EqOfForallAlgClosed
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsEmbExt

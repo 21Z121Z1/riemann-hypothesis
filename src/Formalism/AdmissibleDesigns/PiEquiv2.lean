@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.RankReductionIdempotentOne
 import Formalism.AdmissibleDesigns.FgTopContinuousLinearMap
 import Formalism.AdmissibleDesigns.KernelLengthHigherColumns

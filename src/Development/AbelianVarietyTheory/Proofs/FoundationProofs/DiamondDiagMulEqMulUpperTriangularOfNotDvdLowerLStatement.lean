@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DiamondDiagMulEqMulUpperTriangularOfNotDvdLowerL
 open UpperHalfPlane ModularForm CongruenceSubgroup
 open scoped MatrixGroups ModularForm

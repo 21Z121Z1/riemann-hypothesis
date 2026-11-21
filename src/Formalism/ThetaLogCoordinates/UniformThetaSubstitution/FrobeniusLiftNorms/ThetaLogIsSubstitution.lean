@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementG
 
 open scoped BigOperators

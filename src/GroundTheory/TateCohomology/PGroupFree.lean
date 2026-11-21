@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.PGroupFixed
 import Mathlib.Combinatorics.Quiver.ReflQuiver
 import Mathlib.RepresentationTheory.Coinduced

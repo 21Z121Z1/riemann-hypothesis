@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasicInequality
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassDefectOrderLeStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianDoubleCosetMassLeAndFiniteStatement

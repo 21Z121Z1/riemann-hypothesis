@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 open Matrix Formalism.REAL Formalism.MainNotions.S
 open scoped InnerProductSpace

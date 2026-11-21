@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimes
 set_option maxSynthPendingDepth 1
 

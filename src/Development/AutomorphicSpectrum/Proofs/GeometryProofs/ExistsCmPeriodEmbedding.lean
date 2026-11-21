@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PureFamilyDecompositionStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PurePeriodLocalBasisExistsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackPureFrameStatement

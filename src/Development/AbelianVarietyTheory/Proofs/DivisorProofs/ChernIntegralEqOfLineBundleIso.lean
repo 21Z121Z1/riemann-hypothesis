@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMassLineBundleWeightOfIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegralTopIndependentOfSmoothWeightStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory

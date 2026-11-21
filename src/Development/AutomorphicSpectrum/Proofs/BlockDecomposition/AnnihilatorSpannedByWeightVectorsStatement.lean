@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnnihilatorSpannedByWeightVectors
 open GroundTheory.Automorphic.HarishChandra GlobalTheory.CompanionTheory.PresRho
 set_option maxHeartbeats 1000000 in

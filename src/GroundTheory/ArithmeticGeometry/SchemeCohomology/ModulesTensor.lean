@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Category.ModuleCat.Presheaf.Monoidal
 import Mathlib.Algebra.Category.ModuleCat.Sheaf.Localization
 import Mathlib.Algebra.Order.Floor.Extended

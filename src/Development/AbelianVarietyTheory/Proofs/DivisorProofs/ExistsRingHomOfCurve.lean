@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegDataOfCurveData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntEmbCoe
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.FiniteDegreeMorphisms

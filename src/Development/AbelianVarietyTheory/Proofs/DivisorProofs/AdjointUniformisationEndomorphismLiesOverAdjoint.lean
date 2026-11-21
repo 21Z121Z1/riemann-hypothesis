@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FunctorialOfUnif
 import Development.AbelianVarietyTheory.Definitions.Divisors.LinEndOfOLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RosatiAdjointUniqueDegenerationDataStatement

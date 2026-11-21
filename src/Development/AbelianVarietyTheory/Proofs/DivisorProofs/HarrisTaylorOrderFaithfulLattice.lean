@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineOpenPullbackLocalizationSpreadsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFreeSpreadsOutFromLocalizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineOpenInfBasicOpenIsoTensor

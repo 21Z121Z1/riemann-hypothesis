@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsBlockRatioAlg
 import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsHorizontalImageZ

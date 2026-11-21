@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemConeOfMem
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KrullDimOneOfFiniteGeneric
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes

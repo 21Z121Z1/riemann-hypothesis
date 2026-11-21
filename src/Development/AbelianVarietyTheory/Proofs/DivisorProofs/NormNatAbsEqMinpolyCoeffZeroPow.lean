@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EndCharpolyTateDetDegreeTraceStatement
 import ReciprocityTheory.ReductiveGroups.Lattices.LatUnrCharA
 open CategoryTheory Polynomial NumberField IsDedekindDomain AlgebraicGeometry

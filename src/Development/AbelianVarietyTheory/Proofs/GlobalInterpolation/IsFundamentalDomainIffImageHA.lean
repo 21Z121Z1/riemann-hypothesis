@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignatureLatticeIndependence
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.IsometryTransportFrames
 

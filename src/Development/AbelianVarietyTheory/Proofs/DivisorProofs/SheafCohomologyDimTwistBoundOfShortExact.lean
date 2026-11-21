@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineBundleGlobalSectionsDimCongrPicardClass
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Filter Asymptotics

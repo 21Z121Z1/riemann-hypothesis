@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 
 open NumberField Module IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions.S.Lat

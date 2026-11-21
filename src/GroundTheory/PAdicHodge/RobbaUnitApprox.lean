@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.RobbaClosed
 import Std.Tactic.BVDecide.Normalize.Prop
 set_option maxSynthPendingDepth 1

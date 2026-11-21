@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.InvNatCastMemWittIntegers
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExponentialIntegrality.Development
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

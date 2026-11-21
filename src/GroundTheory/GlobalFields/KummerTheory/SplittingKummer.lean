@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.KummerTheory.Degree
 import GroundTheory.GlobalFields.KummerTheory.SplittingInfinite
 

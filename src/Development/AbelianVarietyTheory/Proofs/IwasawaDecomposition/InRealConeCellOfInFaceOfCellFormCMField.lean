@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolyFanFaceCutByIntLinearFormIsCell
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullLinInjective
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PacketSumSignCastNeZero
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SignEven
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter

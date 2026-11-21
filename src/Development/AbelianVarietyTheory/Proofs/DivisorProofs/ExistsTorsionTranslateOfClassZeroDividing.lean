@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasTraitsOnOfHasTraitsP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitIffValEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThNeZero

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideIn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SwapCastEqSwapAE

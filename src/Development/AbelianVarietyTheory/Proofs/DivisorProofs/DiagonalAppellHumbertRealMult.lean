@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppellHumbertDiagonalRealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppellHumbertDiagonalRealDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeRealMultiplicationIntegralStatement

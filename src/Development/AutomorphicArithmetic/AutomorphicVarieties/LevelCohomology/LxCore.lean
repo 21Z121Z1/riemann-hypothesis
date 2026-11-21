@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.TwoPowDvdSubOneOrAddOneOfPowTwoPow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SumFilterTwoPowRootsEqZeroOfSumEqZero
 import Mathlib.RingTheory.Henselian

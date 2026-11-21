@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeAt
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HermitianSignatureBasisStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdaptedBasesChangeByBlockMatricesStatement

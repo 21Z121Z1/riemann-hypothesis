@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.SchurTensRep
 import Mathlib.MeasureTheory.Integral.Pi
 import Mathlib.RingTheory.PiTensorProduct

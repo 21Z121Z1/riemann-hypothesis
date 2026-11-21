@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsTransition
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.NormLeOneOfIntegralInt
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.UltrametricDetNormLeStatement

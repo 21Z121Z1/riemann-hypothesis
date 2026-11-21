@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.I0M
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.LinearAlgebra.Matrix.Permutation

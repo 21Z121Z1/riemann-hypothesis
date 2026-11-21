@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShiftedComplexCohomologyStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DirectSumComplexCohomologyStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DirectSumSystemDescendsStatement

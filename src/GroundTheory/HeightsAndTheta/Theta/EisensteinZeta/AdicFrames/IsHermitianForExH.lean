@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CompactFormulaUnitary
 import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal
 import GroundTheory.HeightsAndTheta.Theta.GaussianExample

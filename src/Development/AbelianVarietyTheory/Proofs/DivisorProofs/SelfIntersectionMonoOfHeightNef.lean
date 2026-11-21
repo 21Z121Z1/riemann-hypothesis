@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArithIntersectionNonnegOfSmallSectionDiffStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDerivAtLinearMapEvalAlgebraMap
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology

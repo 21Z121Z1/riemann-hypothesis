@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtWeilRepRealOneParamAdelicPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOneP
 

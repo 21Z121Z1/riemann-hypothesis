@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.Brauer.CrossedProductTensor
 import GroundTheory.Brauer.DoubleCentralizer
 set_option maxSynthPendingDepth 1

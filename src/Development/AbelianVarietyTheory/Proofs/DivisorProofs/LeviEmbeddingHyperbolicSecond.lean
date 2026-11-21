@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixMulVecBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatBoundTuple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneComplementForm

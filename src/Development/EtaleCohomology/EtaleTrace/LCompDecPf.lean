@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleTrace.LadicH0LocallyConstant
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.Order.CompletePartialOrder

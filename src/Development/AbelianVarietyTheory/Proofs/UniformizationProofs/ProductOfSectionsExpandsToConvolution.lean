@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExpansionBijectiveOverFields
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSubSum
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SumFCalculus

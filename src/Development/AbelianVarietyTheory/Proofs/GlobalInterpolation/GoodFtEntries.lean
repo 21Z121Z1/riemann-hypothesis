@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.GoodReductionCondition
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StrictHenselianAcyclic
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowTruthOfLabelTieStatement

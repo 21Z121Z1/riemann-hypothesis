@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SectionsGenericIndicators
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsBijectiveKappa
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEquivComp

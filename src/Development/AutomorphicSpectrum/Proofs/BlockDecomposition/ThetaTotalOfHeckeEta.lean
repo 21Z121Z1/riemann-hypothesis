@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.ThetaIdempotents.HeckeEta
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.ExistsIsCovolOneRatMx
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ZeroCoefficientTotalStatement

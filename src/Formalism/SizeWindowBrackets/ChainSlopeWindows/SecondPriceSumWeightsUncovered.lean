@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.TranslateWordBoundHypotheses
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.SubThreeMulLogTwoLe
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FixesWedgeAndForm
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LenEqOfUnitriangular
 

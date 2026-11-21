@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChartPointSeparable
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PFreeParAlgIndep
 set_option maxSynthPendingDepth 1

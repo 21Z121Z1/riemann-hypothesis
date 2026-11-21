@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodCover
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitMkOfFormallyUnramified
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OfRoots
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DetFromBlocksSingle
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUniquePlace

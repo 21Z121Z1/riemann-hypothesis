@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CardFilterLeSuccAndSqSumLePow
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormEigenLePowMulNormSum
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SplitCasEigenvalueSummand

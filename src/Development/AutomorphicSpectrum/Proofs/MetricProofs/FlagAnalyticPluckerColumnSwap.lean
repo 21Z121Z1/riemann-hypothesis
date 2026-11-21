@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsFlagPointInOrbitStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PluckerNonvanishingOrbitInvariantStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsUpperOfMinors

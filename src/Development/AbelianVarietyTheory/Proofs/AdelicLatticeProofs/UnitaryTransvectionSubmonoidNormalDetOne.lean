@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TransvectionIdentitiesUnitaryStatement
 import Mathlib.RingTheory.SimpleRing.Principal
 open NumberField IsDedekindDomain Matrix GlobalTheory.UTrans GlobalTheory.AdLat

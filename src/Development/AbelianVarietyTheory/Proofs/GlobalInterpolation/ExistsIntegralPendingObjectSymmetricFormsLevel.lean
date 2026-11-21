@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NfAllSmulReB
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.MulLatMulLat

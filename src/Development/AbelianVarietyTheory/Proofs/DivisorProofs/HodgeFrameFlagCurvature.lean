@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeFrameGram
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianCurvatureForms
 

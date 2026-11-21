@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPairingSpaceResultOfSchrodingerCoordinates
 open GlobalTheory.ArchUniq GlobalTheory.RealWeil MeasureTheory
 open scoped SchwartzMap

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyEquivOfCharacterEq
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Tactic.Polynomial.Basic

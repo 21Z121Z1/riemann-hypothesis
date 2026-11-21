@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZLevM
 import Formalism.LocalRingCardinality.SpanPowerMembership.NStageTrivialCharacterCoeffEq
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowE

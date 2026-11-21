@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.LogDetSt
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.TripleDeriv
 import Mathlib.Algebra.Order.Star.Real

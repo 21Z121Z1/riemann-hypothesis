@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MembershipCriteria.LaEqSqrtSmulLam
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.RegularLocalRing.Defs

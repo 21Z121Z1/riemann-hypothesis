@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalSystemModelMapStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalSystemModelExistsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDeRhamFlagStatement

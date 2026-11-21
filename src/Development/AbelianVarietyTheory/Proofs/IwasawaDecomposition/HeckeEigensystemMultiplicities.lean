@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoeffMonicPolySum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitExEveryDatumStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceOutsideNonHyperspecialOfLocalisationStatement

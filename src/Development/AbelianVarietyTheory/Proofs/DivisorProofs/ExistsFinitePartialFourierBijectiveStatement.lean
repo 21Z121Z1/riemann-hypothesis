@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinitePartialFourierBijective
 
 open scoped TensorProduct NNReal Matrix

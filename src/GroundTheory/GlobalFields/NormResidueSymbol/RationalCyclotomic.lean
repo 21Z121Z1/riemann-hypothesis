@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.Rational
 import GroundTheory.GlobalFields.CyclotomicCharacters.ProfinitePadic
 

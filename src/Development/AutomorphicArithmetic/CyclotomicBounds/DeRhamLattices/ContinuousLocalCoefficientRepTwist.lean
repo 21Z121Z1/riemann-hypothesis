@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftQMk
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousLoc
 set_option synthInstance.maxHeartbeats 400000

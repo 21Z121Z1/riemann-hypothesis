@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FlagImmersions.ContAtOfHoloOn
 import Development.WeilBound.CoreStatements.FlagImmersions.CoordsOrbit
 import Development.WeilBound.CoreStatements.FlagImmersions.IsHolToOfLocal

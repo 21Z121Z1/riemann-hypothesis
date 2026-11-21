@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CechDoubleSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PCechDSq
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PCechDoubleStair

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzBruhatFullRankModuloTranslates
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantFormFullRankBruhatVanishesStatement
 open scoped Matrix

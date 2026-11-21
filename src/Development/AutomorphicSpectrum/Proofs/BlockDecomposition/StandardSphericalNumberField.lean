@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FieldSphericalVectorTheta
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitOrInertOfUnramified
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnramifiedCharCompUnitsMap

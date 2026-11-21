@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AvgVanish
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaOpenMirabolic
 import GroundTheory.AutomorphicForms.GLnLocal

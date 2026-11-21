@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsDPModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRuleUnitObjOfCovers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineNbhdDetGen

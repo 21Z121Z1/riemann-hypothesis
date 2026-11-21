@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ExistsZeroGt
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBoxPullGen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.RatioTrans

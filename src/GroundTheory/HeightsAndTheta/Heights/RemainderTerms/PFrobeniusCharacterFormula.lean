@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsSchur
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 set_option maxSynthPendingDepth 1

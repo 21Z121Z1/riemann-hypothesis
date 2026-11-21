@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharValMultiplicativeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsSemiAbelianOfProperGenericTorusExtensionSpecialFiber

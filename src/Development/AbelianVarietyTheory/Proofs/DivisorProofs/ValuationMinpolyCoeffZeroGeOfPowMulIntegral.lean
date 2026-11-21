@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 
 open NumberField Polynomial IsDedekindDomain

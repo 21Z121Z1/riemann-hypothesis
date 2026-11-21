@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.LevelCuspCharacters

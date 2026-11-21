@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ClsFacts
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LevGal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.AbLevel

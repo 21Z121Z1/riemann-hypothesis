@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivativeBound
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegSumLogDerivNonneg
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivDirichletLFunctionLocalZeroSum

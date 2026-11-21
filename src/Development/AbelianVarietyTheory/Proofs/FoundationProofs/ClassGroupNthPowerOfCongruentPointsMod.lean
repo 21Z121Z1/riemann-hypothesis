@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DedekindFiniteTypeIdealCodimensionStatement
 import Mathlib.Tactic.ENatToNat
 open Polynomial

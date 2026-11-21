@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.ClassNumberFinite
 
 open NumberField IsDedekindDomain

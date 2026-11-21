@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GradedSandwichDegreeBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegularFunctionalSpecializesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelLocalizationAtPrimeStatement

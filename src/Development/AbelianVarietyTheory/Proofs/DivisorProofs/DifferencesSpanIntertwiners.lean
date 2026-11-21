@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolMatchLinearCombination
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPolynomialFiniteCompactStableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFactorizationStatement

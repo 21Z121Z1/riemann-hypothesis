@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGauss
 import GroundTheory.GlobalFields.TateThesis.LatticePoisson
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz

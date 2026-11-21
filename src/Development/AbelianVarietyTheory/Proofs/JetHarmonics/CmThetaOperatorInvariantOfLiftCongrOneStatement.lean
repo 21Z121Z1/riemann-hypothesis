@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CmThetaOperatorInvariantOfLiftCongrOne
 open GlobalTheory.MomOne Formalism.L2.Ker.JMB
 open scoped ComplexConjugate BigOperators

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsOfStarEq
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormEqOfSplitFactor
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelNotMemRowSG

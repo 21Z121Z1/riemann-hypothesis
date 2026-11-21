@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousAndSmul
 open Filter Topology Matrix
 open scoped ContDiff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.YangianSpanCharacter.StatementB
 import Formalism.YangianSpanCharacter.YangianRTTProofs.TransposeJReversed
 import Formalism.YangianSpanCharacter.YangianRTTProofs.TransposeSymplecticShift

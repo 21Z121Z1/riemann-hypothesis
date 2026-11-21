@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NonzeroDefectHeightPowerAbsorbsConstants
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Equality
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmpSqLeHeightMulMass

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.DescAt
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SameSat
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.NormUnr

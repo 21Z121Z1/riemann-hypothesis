@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EuOfDifferentiableAt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InducedFunctionAtOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EventuallyLineUnit

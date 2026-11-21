@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RatVSmul
 open PositivityTheory.RgEis PositivityTheory.RgEis.MG
 set_option maxHeartbeats 1000000 in

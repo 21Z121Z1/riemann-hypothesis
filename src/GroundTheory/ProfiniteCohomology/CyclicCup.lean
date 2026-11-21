@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CyclicCupDefs
 import GroundTheory.TateCohomology.TateZeroClass
 import Mathlib.Algebra.Order.Ring.Star

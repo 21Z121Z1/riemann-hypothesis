@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalStabilizerLocallyConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOperatorIdeleConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLocalPartPlaceStatement

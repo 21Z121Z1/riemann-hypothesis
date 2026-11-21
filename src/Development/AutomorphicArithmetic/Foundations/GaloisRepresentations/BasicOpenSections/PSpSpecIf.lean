@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SpecGood
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.PSpValsub
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BasicOpenSections.GenericFibreEqvOfSmoothOfNormalLocalDomain

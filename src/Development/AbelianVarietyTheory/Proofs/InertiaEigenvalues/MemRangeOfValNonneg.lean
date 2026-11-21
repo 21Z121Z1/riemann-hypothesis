@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OverExtAlgebraMap
 import Mathlib.Tactic.ENatToNat
 

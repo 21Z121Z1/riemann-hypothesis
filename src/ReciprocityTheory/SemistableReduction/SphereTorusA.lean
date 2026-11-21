@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 import Mathlib.Analysis.Polynomial.MahlerMeasure
 import Mathlib.MeasureTheory.Measure.RegularityCompacts

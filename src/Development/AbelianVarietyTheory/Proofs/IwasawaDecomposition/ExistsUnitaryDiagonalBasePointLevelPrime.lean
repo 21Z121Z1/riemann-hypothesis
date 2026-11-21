@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PlaceProjectionZeroIntegralIffComponentsAbove
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
 import Development.WeilBound.CoreStatements.EqualVolumeCompactOpens.LevelIdeal
 

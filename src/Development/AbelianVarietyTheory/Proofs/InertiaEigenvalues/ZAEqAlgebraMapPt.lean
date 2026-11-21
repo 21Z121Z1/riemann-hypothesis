@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConstantCoeffTaylor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicIntRingHomExtOfIsHausdorff
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CrisToODToOCr

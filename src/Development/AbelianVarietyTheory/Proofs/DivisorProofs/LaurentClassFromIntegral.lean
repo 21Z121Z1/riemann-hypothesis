@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonicPolynomialsHaveRootsIntegralClosureAlgClosu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitsCohomologyBijective
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

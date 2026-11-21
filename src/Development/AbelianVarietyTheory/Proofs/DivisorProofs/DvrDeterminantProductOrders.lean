@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasisOfBot
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.LinearAlgebra.ExteriorPower.Basis

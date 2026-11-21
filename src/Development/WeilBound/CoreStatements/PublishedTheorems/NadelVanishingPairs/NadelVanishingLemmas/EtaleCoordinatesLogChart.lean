@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtCoord
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitAtFnOfOfNotMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularLocalStatement

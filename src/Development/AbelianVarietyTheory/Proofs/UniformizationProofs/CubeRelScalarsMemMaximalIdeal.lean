@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EvenQuadraticPosOfFiniteNonpos
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.RingTheory.Valuation.Discrete.IsDiscreteValuationRing

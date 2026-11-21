@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Counts
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.TorsClass
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.ZqField

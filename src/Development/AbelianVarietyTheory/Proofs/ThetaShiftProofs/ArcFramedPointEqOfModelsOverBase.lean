@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsLocalRingThick
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointUniqueAndBaseChange
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcRigidityTwoModelsOfMono

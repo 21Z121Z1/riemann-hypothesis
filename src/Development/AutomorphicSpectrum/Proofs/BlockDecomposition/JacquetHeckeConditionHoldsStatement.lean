@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetHeckeConditionHolds
 open GlobalTheory.PRep GlobalTheory.SmGL ValuativeRel PositivityTheory.Lbc
 set_option maxHeartbeats 1000000 in

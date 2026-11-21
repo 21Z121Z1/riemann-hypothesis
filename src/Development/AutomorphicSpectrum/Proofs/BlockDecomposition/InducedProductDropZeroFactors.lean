@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardBlocksReindexStrictMono
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TensorProductDropZeroFactors
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParIndJacPlacing

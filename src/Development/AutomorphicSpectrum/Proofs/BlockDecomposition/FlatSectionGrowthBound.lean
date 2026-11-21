@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.Hypotheses2
 
 open scoped TensorProduct NNReal Matrix

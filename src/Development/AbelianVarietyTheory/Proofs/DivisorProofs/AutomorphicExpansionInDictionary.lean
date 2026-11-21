@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramSchmidtFlagDomainOrthonormalFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameUnitCorrespondenceStatement
 

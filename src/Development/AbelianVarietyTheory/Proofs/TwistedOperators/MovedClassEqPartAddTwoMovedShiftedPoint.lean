@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.LatOEqHatA
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatMod
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualCLatP

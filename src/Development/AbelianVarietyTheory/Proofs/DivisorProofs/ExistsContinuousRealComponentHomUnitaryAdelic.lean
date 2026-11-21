@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PermMMulTranspose
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicSplit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCMFamHost

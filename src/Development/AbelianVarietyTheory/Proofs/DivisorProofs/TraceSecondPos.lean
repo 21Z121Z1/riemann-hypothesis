@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrientedHermitianFormQuadSumEqTrace
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne
 

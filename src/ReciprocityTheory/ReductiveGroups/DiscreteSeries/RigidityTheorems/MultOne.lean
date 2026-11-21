@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.RigidOrth
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.MultOneA
 

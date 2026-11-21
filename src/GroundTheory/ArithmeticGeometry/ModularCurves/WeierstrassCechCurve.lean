@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.ModularCurves.WeierstrassChartIso
 import GroundTheory.ArithmeticGeometry.ModularCurves.WeierstrassCechAlgebra
 import GroundTheory.ArithmeticGeometry.ModularCurves.CechTwoOpens

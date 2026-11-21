@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagFramesGenericModelLeftStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TensorEquivOfBasisExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlagBundleUnderEquivStatement

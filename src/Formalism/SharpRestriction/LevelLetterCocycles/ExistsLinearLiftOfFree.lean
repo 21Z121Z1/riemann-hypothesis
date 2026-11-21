@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.InvariantLetterIdempotentOfFixed
 import Formalism.SharpRestriction.LevelLetterCocycles.IsTruncIff
 

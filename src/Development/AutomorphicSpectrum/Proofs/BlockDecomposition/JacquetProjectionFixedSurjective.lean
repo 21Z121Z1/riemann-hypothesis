@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusTrivialOnLeviCompactStatement
 
 open GlobalTheory.PRep GlobalTheory.SmGL ValuativeRel PositivityTheory.Lbc

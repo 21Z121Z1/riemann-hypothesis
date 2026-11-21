@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CardInsertEmbedding
 
 open Matrix Formalism.FourierDecayAlt Formalism.QuantumDeterminants

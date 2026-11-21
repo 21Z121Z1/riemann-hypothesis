@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.EpresDefs
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.OddSpanVariable
 

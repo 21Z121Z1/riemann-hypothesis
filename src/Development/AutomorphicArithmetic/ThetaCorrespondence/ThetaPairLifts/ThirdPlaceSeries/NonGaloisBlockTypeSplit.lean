@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LocalSeriesConcreteOfDzSwap
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitLocalOfGreen
 

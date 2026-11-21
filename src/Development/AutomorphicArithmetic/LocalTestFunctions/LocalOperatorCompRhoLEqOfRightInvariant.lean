@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor
 
 open MeasureTheory NumberField IsDedekindDomain MvPolynomial

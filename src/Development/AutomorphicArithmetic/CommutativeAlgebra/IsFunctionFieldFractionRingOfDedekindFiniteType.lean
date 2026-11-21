@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveFunctionField
 
 open GroundTheory.FunctionField UpperTheory.Et.Sel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.DeepSubMulSecNorm
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsFormFamilyHypothesesChangedSecondNormStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SecNormOfNetIn

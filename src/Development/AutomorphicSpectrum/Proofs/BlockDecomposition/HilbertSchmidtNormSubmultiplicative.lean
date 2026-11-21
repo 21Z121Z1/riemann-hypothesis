@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.Complexify
 import Mathlib.Algebra.Order.Star.Real
 open Finset Matrix PositivityTheory.RgHe.Frame

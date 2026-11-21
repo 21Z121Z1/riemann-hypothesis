@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianLattices.HermitianLatticesProofs.MassBasic
 
 noncomputable section

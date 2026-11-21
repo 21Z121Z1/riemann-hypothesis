@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFibrePointPolarizedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDomainLiftPolarizedVarietyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranscendenceBoundSpecializesStatement

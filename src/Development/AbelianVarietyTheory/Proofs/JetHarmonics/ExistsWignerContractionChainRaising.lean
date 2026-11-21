@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AdjointMemCapSpSubA
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WignerStepRaisingUnitaryComplementStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WigMapComp

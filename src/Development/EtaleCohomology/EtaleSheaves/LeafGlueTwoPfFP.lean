@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.LeafGlueTwoPf
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Std.Tactic.BVDecide.Normalize.Prop

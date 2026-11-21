@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharTraceMulIdempotent
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.SumConjIdempotentEqCardSmul
 import Mathlib.Tactic.ENatToNat

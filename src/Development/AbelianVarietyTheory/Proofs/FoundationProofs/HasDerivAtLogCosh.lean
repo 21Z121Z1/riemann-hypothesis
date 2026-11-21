@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.FockSingularValues
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DilMonomial

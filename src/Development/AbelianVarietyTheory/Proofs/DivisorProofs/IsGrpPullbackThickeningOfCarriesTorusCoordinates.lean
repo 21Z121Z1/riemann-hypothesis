@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsLeadOfUnif
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCocycleUnit
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.LieImgIffIsLieComb

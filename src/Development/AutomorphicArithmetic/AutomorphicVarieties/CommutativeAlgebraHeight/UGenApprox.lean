@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.CoRes
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LayerApproximation
 import Mathlib.Algebra.Module.StablyFree.Basic

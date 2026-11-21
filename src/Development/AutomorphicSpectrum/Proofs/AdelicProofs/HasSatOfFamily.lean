@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocGram
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsBasisCols
 open scoped TensorProduct Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemSupportBDIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralMulFderivOfTsupport
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsConjCompatibleKaehlerForms

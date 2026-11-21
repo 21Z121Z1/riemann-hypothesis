@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusFundamentalDomainCoversStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PluriharmonicHolomorphicDerivativeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PluriharmonicPeriodicConstantStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.UnitaryActHalfSpace
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ShortIsotropicVectorsExistenceSuccOfVeryShortSteStatement
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

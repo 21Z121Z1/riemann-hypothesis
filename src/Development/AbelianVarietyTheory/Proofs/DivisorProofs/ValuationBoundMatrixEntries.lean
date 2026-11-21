@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixNormFirstColumnStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixNormInvariantUnimodularStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixNormBlockReductionStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.UnitarySphericalFixing.SatakeParameters.ExistsCgTrueCharSide
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChoiceSide
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodLEq

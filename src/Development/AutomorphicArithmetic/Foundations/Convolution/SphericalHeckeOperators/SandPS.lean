@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.EigBasis
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.VandSum
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Mac

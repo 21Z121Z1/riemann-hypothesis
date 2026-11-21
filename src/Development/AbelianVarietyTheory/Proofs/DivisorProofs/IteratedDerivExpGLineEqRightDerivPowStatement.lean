@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedDerivExpGLineEqRightDerivPow
 open MeasureTheory GroundTheory.Automorphic
 open scoped ContDiff

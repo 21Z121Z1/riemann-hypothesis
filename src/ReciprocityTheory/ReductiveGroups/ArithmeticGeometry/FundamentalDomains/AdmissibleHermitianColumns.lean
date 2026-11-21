@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.EmbeddingHermitianPairs
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.AdmissibleHermitianColumns

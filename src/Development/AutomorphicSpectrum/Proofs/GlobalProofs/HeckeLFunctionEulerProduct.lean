@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ContinuousIdeleCircle
 import Development.AbelianVarietyTheory.Definitions.Divisors.EntireEqOfHalfPlane
 import GroundTheory.GlobalFields.TateThesis.NonvanishingPrimes

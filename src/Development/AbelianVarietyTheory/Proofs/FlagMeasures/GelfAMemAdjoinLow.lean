@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.PolarConjTranspose
 import Formalism.LatticeRigidity.HeightMinimum.PowFinrankEqZeroOfTracePow
 import Mathlib.RingTheory.Henselian

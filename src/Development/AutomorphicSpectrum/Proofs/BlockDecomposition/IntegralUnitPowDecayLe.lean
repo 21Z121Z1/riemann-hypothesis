@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LintegralKernelUniformBound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MajorantLeSumSwap
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TateLocalL1

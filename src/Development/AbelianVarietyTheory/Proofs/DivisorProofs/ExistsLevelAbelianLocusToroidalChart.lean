@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NondegOfFieldExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackSelf
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

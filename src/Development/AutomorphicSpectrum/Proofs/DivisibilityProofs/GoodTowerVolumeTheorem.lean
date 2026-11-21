@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGoodRootTowerStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VolumeTheoremOfInputsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGeometricHeightConstantsStatement

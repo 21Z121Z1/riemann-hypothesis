@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsOfPoint
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMumfordFamOfSubsingleton
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsNoetherianRingCompletedStalkSiegelFibrePower

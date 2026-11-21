@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryBorelSplitting
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsAdmissibleLinearFunctionalStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousUnitaryRootMapStatement

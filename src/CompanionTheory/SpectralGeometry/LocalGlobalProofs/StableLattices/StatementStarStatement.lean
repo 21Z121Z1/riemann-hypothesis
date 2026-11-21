@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.StatementStar
 open CompanionTheory.Rg.Fl
 set_option maxHeartbeats 1000000 in

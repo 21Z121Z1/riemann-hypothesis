@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsIsGlobal
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerComponentsEquivOfGivenStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SplitComponentsOfAlgClosedStatement

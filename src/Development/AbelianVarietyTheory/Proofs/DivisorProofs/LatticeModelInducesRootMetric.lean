@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualRef
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HomShInvOfGIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverFunctionFieldMapEqStatement

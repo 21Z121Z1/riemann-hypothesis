@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.FinSplit
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchFin
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SplitLoc

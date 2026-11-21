@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoefDualPair
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousCoeffBlockAct
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSmulPrIso

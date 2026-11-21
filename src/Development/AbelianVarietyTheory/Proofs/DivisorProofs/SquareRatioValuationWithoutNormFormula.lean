@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSqStOfClaims
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteThetaPairNormNeZeroOfCoordNeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRatios

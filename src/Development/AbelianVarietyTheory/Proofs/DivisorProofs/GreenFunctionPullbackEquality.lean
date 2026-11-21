@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothExtensionOfPhaseFunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfSmooth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSectionDivDetUnit

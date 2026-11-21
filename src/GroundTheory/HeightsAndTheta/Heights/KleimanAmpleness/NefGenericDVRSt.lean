@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AlgebraMapMemChartRingLine
 import Mathlib.RingTheory.MvPowerSeries.Inverse
 import Mathlib.RingTheory.PowerSeries.NoZeroDivisors

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChTwoImaginaryPartSymmetricZero
 open Matrix Filter Topology GlobalTheory.HermFrame
 set_option maxHeartbeats 1000000 in

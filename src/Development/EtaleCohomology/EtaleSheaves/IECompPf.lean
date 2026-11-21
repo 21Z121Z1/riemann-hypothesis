@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.EtaleBaseChangeFractionFieldIndEtaleOverPolynomi
 import Mathlib.Algebra.Category.Ring.FinitePresentation
 import Mathlib.Order.CompletePartialOrder

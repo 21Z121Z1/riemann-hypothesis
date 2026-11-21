@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.Live
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLevSIff
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TruePackTwistPlaceProperty

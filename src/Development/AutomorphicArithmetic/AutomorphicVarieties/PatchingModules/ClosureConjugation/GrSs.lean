@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.ClosureConjugation.GrAlg
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.AlghomOfUnits
 import Mathlib.RingTheory.SimpleModule.WedderburnArtin

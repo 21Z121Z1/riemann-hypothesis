@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.Conductor
 import GroundTheory.GlobalFields.Artin.InflationTower
 import Mathlib.Data.ENat.BigOperators

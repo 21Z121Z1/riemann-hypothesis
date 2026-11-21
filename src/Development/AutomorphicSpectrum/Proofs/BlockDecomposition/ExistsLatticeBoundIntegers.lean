@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegerMemLatticeSubBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFinsetGenerators
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PadicIntMemSub

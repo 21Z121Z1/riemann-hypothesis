@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.OneChartLev
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.BadQNotOver
 

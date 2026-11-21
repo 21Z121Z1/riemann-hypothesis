@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemLocDIffSpan
 import Std.Tactic.BVDecide.Normalize.Prop
 open NumberField

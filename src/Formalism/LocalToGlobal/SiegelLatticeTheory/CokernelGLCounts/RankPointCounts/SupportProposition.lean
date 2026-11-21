@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.SupportLoc
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalModelPeriodLattices
 

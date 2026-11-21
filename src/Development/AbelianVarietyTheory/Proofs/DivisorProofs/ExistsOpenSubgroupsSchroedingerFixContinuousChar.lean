@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsContOnOfLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSubgroupAddCharDotProductTrivialOnCompactStatement
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels

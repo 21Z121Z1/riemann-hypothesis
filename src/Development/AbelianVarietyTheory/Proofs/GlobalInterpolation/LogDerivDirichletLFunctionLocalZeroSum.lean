@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableAtMellinSummatory
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TsumOneDivRpowLe
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormOneSubConjMul

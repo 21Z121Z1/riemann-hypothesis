@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsMultiHomogIdealMap
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NotInjOnOfFderivEqZero
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInhab

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySignFirst
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemPerOInfHalfAO
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HomAtIffLocPPerO

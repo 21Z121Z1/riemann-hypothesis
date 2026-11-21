@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightBoundFullIntersectionSystemStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionDegreeUpperStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField Matrix Filter Topology

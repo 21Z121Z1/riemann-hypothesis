@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinorAtMulTriangular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CramerTriBlockTriangular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFrameGram

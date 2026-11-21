@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.IrreducibleSpan
 import GroundTheory.AutomorphicForms.GL2Classical.EigenformTranslatesIrreducible
 

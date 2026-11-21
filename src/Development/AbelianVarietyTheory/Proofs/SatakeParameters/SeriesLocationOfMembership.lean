@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabFixedOfTypesTrue
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CentralOfTameCoupledStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalLanglandsPlaceDatumStatement

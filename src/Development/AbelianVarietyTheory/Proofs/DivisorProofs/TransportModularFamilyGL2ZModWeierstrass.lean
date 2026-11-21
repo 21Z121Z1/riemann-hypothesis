@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportOfSeparating
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QAllQConjOfDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VactVmul

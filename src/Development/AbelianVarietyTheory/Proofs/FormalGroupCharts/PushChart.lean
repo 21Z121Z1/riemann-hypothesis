@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGroupIsoCubicalIsoOfTripleMapIdStatement
 import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 

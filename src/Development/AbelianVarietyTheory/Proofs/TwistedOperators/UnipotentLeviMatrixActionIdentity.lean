@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Mathlib.Data.Matrix.ColumnRowPartitioned

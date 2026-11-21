@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsBounds
 import Mathlib.Analysis.Complex.OperatorNorm
 import Mathlib.Topology.Sheaves.Presheaf

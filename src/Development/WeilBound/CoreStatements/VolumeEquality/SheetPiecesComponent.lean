@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityOfBallPotentialStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereDensityChangeOfVariablesStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SheetCoverOfArithmeticVarietyStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.IsInfUnitary
 import Formalism.RealPlaceAnalysis.StatementKT
 import Mathlib.LinearAlgebra.Eigenspace.Basic

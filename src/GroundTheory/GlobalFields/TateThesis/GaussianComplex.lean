@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.Gaussian
 import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
 import Std.Tactic.BVDecide.Normalize.Prop

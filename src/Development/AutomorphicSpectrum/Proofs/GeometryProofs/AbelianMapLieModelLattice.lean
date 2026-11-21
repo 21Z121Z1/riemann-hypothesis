@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapLieModelFieldPointStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsFrameVec
 open NumberField IsDedekindDomain MeasureTheory Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwinLemmas
 import Mathlib.Data.Rat.Star
 

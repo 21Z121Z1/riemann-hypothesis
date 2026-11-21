@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.TateMain
 import Mathlib.Analysis.Normed.Module.Connected
 

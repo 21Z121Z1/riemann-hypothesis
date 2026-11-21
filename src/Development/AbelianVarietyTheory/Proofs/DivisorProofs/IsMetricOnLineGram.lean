@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGradedOfDivisors
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MSmoothOfWeightIffIsCInf
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf

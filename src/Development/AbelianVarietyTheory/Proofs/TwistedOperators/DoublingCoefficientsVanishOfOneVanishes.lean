@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EqOneOfSmulHaarEq
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 

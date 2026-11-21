@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PeriodPairingUnitLattice
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.ColumnAvoidanceConditions
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MinkowskiBoundComapLattice

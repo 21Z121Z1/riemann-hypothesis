@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsPFVert
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiProjPrimeImageZ
 set_option maxSynthPendingDepth 1

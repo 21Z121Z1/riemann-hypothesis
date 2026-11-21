@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeFinIntEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeATripleStabilizerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeATripleSecondStatement

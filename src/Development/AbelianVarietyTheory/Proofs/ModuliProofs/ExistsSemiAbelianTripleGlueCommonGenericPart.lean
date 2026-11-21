@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabMapIdOfCommonGeneric
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsTripleGlueTwoOpensStatement

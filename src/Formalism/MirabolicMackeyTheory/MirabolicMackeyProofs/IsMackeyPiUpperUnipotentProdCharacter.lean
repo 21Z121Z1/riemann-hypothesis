@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.OnLocal
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.Mirabolic
 

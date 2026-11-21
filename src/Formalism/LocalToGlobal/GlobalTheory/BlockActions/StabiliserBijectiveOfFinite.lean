@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.StabiliserBijectiveOfFixed
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClassInjectiveOfSelfDual
 

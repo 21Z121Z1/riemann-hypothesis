@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TofTorMkCIsQuotientMap
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Dynamics.Ergodic.Action.Regular

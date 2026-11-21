@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
 import Mathlib.RingTheory.PowerSeries.Ideal
 import Mathlib.RingTheory.Regular.Free

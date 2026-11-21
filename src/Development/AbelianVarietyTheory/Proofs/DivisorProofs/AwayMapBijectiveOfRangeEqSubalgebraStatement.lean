@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwayMapBijectiveOfRangeEqSubalgebra
 open AlgebraicGeometry CategoryTheory Limits Scheme.AffineZariskiSite
 set_option maxHeartbeats 1000000 in

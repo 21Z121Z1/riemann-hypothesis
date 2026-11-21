@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.PureWeightSectionToTwistedPolarisationPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSecOfUnitAt
 

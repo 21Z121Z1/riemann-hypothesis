@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ThetaPairPlaneCompat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormSmulLeft
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalMapPairCompat

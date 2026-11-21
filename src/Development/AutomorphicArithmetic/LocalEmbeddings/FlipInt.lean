@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.IntegralMemAddSubgroupOfRamifiedTwistedInvariant
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsMemKOEqStdFrameMulOfIsPrimFrame
 import Development.AutomorphicArithmetic.DivisorFrames.IsIntegralUnitCharOfConductorLe

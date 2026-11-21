@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.DetShiftNormOf
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HookLengthBound.DiagonalMonomialFactorial
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.StandardFiveNontrivial
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

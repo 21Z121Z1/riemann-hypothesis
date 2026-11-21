@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.IsOpenAlt
 
 namespace ReciprocityTheory.AnForm.R

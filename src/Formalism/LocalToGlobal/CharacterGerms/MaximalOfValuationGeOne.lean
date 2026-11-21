@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.FirstStepSecondHalfCondition
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePGerm
 

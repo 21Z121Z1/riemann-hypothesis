@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SecScalIffPullAb
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ValRConstHom
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfValHomEq

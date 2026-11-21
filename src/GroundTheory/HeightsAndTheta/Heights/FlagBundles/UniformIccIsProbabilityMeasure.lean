@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyChern
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.Analysis.Complex.Circle

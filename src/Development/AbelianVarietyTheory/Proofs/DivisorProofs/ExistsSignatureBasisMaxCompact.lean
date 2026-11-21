@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxCompactConjugate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixMulVecBasis
 

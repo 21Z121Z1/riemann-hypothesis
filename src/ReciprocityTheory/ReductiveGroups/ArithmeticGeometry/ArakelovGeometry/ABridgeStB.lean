@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsBergDensity
 import Mathlib.RingTheory.Nullstellensatz
 import Mathlib.RingTheory.Henselian

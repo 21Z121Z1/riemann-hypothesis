@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHomogDimZeroPow
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLinearFormCut
 import Mathlib.Algebra.Module.Submodule.Union

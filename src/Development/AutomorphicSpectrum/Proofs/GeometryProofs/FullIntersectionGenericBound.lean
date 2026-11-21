@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPeriodAtRestrict
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalSncChartSystemStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorusStableSncChartsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HookDeterminantRatioStatement
 import Mathlib.Tactic.Monotonicity.Lemmas
 

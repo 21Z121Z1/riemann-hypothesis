@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaKeyRuleValuationUnitOfFunctorialStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.FamUnit
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.FamHomogOfHomog

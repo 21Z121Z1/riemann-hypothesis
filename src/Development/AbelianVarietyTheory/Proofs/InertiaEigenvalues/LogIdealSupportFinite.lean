@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LowerUnipotentConjBlockFormulas
 
 open NumberField IsDedekindDomain GlobalTheory.CuspRep GlobalTheory.SchurExt

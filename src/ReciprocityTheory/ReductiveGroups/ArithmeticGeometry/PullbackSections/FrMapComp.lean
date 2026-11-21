@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
 
 set_option autoImplicit false

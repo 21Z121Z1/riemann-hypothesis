@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPointOverNumberField
 open NumberField GlobalTheory.ShFam.Pad AlgebraicGeometry CategoryTheory
 set_option maxHeartbeats 1000000 in

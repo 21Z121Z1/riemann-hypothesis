@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ShearIsoActionProjectionStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemOrbitSelfStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.OrbitTransStatement

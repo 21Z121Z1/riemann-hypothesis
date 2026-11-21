@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkDevis
 import Development.WeilBound.CoreStatements.PublishedTheorems.GlobalEulerCharacteristic.WorkAssemble
 

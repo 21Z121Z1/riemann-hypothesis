@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RepresentationTheory.Irreducible

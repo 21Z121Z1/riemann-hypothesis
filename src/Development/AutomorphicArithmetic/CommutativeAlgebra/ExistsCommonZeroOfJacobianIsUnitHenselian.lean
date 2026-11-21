@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsSectionLiftOfEtaleOfHenselian
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

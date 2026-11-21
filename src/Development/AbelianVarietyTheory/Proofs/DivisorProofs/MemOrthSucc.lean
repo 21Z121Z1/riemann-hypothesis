@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsFockIPOfFockData
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable

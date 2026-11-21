@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DBaseApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorialFormPullbackSplit
 import Mathlib.Order.CompletePartialOrder

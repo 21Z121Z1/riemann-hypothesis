@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalTypeClosurePreservedByArchCompactIntertw
 open NumberField GlobalTheory.CuspRep GlobalTheory.Published GlobalTheory.IdemAdj
 set_option maxHeartbeats 1000000 in

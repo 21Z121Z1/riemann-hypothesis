@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.HsConjTranspose
 import Mathlib.LinearAlgebra.Lagrange
 open Matrix

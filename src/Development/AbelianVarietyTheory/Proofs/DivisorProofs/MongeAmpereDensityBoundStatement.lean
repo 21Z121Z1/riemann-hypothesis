@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MongeAmpereDensityBound
 open ReciprocityTheory.AnForm
 set_option maxHeartbeats 1000000 in

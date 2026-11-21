@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.ContentLargeFromSupplies
 import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt
 import Formalism.LocalToGlobal.CharacterGerms.CoeffIterateZero

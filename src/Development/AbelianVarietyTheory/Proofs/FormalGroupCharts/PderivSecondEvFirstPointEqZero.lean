@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FormalFamilyConstantCoeffZeroZeroSecondVar
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ConstantCoeffPrim
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ChartChg

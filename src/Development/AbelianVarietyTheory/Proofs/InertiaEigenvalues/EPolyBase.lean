@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JSmul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AevalApplyComm
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.Saturated

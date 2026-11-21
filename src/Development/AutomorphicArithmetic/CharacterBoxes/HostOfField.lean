@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ShortNorms.Primes
 import Development.AutomorphicArithmetic.ShortNorms.hostOfFieldOf
 import Development.AutomorphicArithmetic.ShortNorms.supplyOfAdmOf

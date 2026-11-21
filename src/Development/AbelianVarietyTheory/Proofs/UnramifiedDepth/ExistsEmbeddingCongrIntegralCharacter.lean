@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.FrobeniusLiftEmbeddingsUnit
 import Mathlib.Algebra.CharP.Subring
 import Mathlib.RingTheory.Henselian

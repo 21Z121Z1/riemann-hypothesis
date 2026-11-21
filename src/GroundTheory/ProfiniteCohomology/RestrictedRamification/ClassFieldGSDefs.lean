@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ClassFieldConsequences.CongruenceSubgroupLeStandardOpenSubgroup
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicDefs
 set_option maxSynthPendingDepth 1

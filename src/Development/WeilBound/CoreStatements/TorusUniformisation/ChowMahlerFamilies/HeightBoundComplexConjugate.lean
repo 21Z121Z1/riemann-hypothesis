@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianPartBaseChangeStatement

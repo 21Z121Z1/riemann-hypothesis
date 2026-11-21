@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsHermFormCompare
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.WittVector.IsPoly

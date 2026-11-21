@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
 
 open NumberField IsDedekindDomain GlobalTheory.AdLat GlobalTheory.UnRep

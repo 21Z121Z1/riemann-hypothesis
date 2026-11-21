@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TofSpanCondition
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Tactic.Monotonicity.Lemmas

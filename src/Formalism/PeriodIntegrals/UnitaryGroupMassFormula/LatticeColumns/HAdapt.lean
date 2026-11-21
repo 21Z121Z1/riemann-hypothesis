@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.HFrame
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.HSubCmp
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.ParabolicImageOfFrameBasis

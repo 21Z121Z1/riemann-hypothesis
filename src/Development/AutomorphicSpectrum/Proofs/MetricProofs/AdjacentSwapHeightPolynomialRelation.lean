@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HeightPolynomialReflectionSumStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.KillNoneFormPoly
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EtaleAwayOfIsEtaleAtOffSubmonoid

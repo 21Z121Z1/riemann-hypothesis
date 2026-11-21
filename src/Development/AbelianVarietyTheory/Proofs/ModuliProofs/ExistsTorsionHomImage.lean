@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionDescentFiniteEtaleCoverStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsTorsionToG
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HomExtOfIsFinite

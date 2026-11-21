@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetInd
 import Mathlib.Topology.LocallyConstant.Algebra
 open NumberField IsDedekindDomain MeasureTheory Matrix Filter Topology

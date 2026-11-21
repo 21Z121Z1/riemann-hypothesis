@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineBundleInducedArith
 open GlobalTheory GlobalTheory.ArInt
 set_option maxHeartbeats 1000000 in

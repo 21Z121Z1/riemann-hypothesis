@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeOfExplicitAndCompact
 import Mathlib.NumberTheory.Harmonic.Bounds
 

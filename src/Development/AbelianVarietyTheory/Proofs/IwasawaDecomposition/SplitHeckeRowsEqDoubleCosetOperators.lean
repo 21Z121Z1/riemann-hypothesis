@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadsDeco
 import Formalism.LocalToGlobal.Columns.MtHeckeSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralEqZero

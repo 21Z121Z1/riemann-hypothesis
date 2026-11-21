@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.MeanSquareBounds.twistK
 import Development.AutomorphicArithmetic.MeanSquareBounds.SPsqLe
 import Development.AutomorphicArithmetic.MeanSquareBounds.RRLe

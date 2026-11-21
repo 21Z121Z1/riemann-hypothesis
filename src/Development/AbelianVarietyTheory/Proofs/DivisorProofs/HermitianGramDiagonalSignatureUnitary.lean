@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstMeasurableSpaceRealSU
 import Mathlib.Dynamics.Ergodic.Action.Regular
 import Mathlib.RingTheory.Henselian

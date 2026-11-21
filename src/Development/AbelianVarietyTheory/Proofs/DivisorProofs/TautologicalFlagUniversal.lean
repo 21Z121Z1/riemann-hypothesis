@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagLocallyAdaptedAffineFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFramesAgreeOnOverlapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchemeMorphismsGlueOpenCoverStatement

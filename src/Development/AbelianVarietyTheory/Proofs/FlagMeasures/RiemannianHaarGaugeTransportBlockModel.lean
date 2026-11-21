@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CdScaleIsTrueScale
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ContinuousGaussSp
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd

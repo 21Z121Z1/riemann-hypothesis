@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PExactSequence
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SlopeBoundComparableMetricStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.NormalizedDegreeFullRankSublatticeStatement

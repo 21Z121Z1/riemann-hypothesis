@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Partners
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FrameLats

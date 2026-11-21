@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWachFunctorComparisonOfBhattScholze
 open Formalism Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N
 set_option maxHeartbeats 1000000 in

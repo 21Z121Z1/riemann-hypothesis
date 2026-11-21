@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteConesSiegelLevelStructureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalZEqOfSmulEqSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinFormBilinFormsEqSumMinimiserValuesStatement

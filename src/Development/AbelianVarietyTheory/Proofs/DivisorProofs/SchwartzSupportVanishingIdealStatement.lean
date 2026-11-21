@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzSupportVanishingIdeal
 open ValuativeRel
 open scoped Matrix Topology

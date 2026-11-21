@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniquePoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPrincipalDim
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.TateIsomorphismDescends

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IteratedFDerivCombMem
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MeasureOfProducts
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NormSumProdLeOfCoord

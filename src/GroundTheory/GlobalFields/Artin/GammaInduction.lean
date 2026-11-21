@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.PlacesGalois
 set_option maxSynthPendingDepth 1
 

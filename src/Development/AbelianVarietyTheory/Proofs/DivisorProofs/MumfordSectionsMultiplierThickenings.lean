@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfSameExpansionThickeningOpenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MumfordMultiplierThickeningChartSectionsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExpandsAtSectionUniformisedStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRingHomCyclotomicAwayToFieldPrimitiveRoot
 open GlobalTheory.SiegelTor
 set_option maxHeartbeats 1000000 in

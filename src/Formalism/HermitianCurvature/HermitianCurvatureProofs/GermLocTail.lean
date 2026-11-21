@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TendstoRatioPow
 
 namespace Formalism.FourierDecayAlt.P.PBK

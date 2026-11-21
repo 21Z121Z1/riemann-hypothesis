@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.LeafSHPtPf
 import Mathlib.AlgebraicGeometry.Sites.EtalePoint
 

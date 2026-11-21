@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealConstA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFactorizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaNonvanishingStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceFormNondegenerate
 import Mathlib.Algebra.Module.StablyFree.Basic
 open Formalism.MainNotions.N

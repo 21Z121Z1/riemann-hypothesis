@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.IvField
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.HostOdd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.BchiFacts

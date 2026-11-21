@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.HeckeAdjoints.HasPairingOfHerm
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.CapCentral
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHasCentChar

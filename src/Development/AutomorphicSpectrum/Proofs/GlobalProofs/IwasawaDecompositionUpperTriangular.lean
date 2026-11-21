@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InstBorelGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOfValILeOne
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL

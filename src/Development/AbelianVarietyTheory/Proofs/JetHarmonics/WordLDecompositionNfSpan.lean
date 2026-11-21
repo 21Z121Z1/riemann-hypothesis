@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrameStartConstantsNormalFormEmptyWordStatement
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MinusId
 

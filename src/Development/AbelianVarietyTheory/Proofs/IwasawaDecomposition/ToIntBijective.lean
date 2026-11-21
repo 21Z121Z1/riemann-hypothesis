@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HilbertRowConditions.KaTiedIffKapDef
 
 noncomputable section

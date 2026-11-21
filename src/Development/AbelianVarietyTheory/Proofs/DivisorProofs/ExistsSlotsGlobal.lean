@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGapNonemptyAndRecordNonempty
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsHwFonCmpTies
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantWachModuleBasisOfNonnegJumpsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeRigidity.HeightMinimum.PackingCountGeometricMean
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SmulMemFilTOfZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BdRFiltrationLaws
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsCrisP

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.TailBound
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LemmaETailMass
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.ProjLineChartsNotSubsetBall

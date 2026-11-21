@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
 import Formalism.LocalRingCardinality.DataParams
 import Mathlib.RepresentationTheory.Irreducible

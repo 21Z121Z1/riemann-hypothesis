@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HkRelFrOfTransportIff
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueTangentLift
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.BijectiveRestrictPointsOfEtaleOfHenselian

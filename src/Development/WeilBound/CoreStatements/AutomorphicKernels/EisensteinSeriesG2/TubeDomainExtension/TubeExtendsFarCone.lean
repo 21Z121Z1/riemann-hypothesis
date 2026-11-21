@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.TubeDomainExtension.Statement
 import Development.WeilBound.CoreStatements.AutomorphicKernels.EisensteinSeriesG2.TubeDomainExtension.Lemmas
 import Mathlib.LinearAlgebra.AffineSpace.MidpointZero

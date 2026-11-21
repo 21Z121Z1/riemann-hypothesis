@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalIwasawaDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanIwasawaDecompositionStatement
 open MeasureTheory Set Filter NumberField IsDedekindDomain

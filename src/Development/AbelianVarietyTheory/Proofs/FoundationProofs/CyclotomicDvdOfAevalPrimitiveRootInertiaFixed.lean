@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemCycAlgOfPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexStabilizer
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems

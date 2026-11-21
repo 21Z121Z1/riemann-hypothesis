@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.RowSideTie
 open NumberField Formalism.L2.DIV Formalism.L2.Rows GlobalTheory.AmbCrd
 open scoped Matrix ComplexOrder

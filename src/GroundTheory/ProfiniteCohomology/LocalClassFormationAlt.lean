@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.InvariantRes
 import GroundTheory.Brauer.BaseChangeRestriction
 set_option maxSynthPendingDepth 1

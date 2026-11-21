@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.AbelianSchemeLaw.TrivialBiextension
 import Mathlib.AlgebraicGeometry.Properties
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjTransposeVecMulVecSelf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCompactIntMatrix
 import Mathlib.Algebra.Order.Ring.Star

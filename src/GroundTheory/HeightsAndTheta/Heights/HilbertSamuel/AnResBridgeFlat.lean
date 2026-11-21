@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeK
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AnResBridgeAnalytic
 set_option maxSynthPendingDepth 1

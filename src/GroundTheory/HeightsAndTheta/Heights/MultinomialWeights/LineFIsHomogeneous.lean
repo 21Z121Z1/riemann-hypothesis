@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.StatementsHomDecomp
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.RecordEigenInputs
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EventuallySectionAndRelAmplePowDiv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NefFibPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalProjectiveModel

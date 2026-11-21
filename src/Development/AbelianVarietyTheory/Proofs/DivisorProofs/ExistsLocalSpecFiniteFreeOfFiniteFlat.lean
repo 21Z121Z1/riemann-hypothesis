@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmpleDiagonalDescendedBundleGaloisCover
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits GlobalTheory.HilbertSch
 

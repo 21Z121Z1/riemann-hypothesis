@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaSetupTowerLargeRatioStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividingLabelAndShiftsPersistDeeperModelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpMapStalkHomFromSpecStalk

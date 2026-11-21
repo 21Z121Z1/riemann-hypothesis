@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataHodgeSecondStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SumLatticeWedgeComapStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UnitValueFrameDomainStatement

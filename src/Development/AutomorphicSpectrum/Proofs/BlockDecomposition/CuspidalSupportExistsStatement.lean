@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalSupportExists
 open ReciprocityTheory.Ty.Fin
 set_option maxHeartbeats 1000000 in

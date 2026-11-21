@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ADensStBA
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergyIntegrable
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsHermFormCompare

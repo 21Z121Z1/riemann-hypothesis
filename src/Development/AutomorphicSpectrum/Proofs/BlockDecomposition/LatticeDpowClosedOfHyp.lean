@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemLatticeIdealIffSumStatement
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 

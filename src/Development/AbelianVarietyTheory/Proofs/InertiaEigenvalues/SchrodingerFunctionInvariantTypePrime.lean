@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankWeightComponentEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaEqZeroOfReal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitPlaceAdjointMatrixIsCoordinateEquivariant

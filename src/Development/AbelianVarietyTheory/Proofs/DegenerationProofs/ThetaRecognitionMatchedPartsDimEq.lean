@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.NotAllMatchRankZero
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TxCosetCriterionStatement
 import Mathlib.GroupTheory.IndexNSmul

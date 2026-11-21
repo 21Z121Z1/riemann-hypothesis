@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformFirstCohomologyKernelsExistStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningVeryAmpleOpensExistStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerAnnihilatesSectionsStatement

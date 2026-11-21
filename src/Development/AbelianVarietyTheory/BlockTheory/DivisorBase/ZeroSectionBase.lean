@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataDIV
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffineOpenAndIsPushout
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint

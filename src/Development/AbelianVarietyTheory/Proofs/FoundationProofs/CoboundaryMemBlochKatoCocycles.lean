@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteQuotientPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsOpenOfFgOfSpanEqTop

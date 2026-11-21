@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeCharEqOfLAdicRealisation
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IrrTransferAbsIrrStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ImportsSide

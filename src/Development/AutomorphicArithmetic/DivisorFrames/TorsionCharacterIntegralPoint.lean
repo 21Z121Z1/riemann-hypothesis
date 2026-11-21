@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.RootFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisTorsionCharsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPointExtensionSplitStatement

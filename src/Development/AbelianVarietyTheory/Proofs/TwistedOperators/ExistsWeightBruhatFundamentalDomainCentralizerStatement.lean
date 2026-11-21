@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWeightBruhatFundamentalDomainCentralizer
 open MeasureTheory Set GlobalTheory.Orb GlobalTheory.AutomorphicL2Unitary
 open scoped ENNReal

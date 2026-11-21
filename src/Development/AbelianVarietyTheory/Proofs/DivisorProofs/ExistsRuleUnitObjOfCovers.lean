@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitObj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDetGen
 

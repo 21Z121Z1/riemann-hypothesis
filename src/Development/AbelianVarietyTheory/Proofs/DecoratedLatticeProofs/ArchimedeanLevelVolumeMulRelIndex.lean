@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicUnitaryTopCong
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.HaarIdx
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.StabOrd

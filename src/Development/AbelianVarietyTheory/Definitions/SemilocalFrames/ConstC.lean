@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.NonGenericAndKTwoTheorems
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LocJEq
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GoodLoc

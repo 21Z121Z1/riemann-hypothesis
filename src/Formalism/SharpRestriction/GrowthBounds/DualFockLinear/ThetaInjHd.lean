@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.PolynomialThetaProduct
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.FRSmulRight
 import Mathlib.RingTheory.PicardGroup

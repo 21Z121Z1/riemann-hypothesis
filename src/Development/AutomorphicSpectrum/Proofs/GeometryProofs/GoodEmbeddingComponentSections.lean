@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.SupCLeISupGeneric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestValueEqConstMulReadingSecZ
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat

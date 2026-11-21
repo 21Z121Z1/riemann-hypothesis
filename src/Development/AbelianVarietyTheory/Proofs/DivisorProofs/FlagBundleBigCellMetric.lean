@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackChartMetricBlockForm
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory Matrix

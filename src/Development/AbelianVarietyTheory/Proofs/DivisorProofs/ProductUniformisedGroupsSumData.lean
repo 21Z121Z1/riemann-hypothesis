@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsProductDegenerationDataSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSemiAbelianTensorOverSchemeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductDataFirstFactorAdjointPairStatement

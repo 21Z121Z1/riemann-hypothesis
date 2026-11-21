@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGridProductLowerBound
 import Mathlib.Combinatorics.Nullstellensatz
 import Mathlib.RingTheory.SimpleRing.Principal

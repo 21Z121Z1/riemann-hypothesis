@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPullbackAbelianGenericStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianGenericIsogenyExtensionStatement
 

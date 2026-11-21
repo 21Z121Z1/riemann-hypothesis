@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDefs
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.PicardGroup

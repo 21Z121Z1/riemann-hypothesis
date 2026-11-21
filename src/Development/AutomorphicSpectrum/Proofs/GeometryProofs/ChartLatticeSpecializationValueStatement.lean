@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ChartLatticeSpecializationValue
 open ReciprocityTheory.ChartRestriction.G.Geo GlobalTheory.CompanionTheory.Ar
 

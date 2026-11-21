@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalPtTrCoPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagMatOfIsFrameSecX
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitDetTrans

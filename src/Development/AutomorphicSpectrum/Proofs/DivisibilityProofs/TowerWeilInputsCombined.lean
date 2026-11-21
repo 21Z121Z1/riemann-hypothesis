@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.TestHeightBoundStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagHeightLabelInvariantStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagHeightTestBoundStatement

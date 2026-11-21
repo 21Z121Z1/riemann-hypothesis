@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.NumberTheory.Padics.ProperSpace
 import Mathlib.Topology.Connected.Separation
 import Mathlib.Topology.Instances.ZMod

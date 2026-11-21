@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDegreeBound
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.IsMultiHomogIdealIff
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorsOfConstantsFlatNormalStageAtOriginStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorDescentFlatNormalDomainsStatement
 

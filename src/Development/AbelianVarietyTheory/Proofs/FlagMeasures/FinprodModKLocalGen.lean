@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SpanDifferentEqLocalGeneratorStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RelIndexMulMeasure
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AbsNormEqFinprod

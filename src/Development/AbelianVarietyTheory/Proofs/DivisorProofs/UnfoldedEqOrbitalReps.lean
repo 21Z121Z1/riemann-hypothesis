@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MassFormulaConjugationActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitSumLocalParts
 

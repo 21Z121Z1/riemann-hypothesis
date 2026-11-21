@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullAwChainsBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupHypercohomologyPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CochainProductAlexanderWhitneyFormula

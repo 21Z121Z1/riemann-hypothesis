@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.NeutralLocalFields.Reciprocity
 import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.ExistsMemIdealInvariants
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal

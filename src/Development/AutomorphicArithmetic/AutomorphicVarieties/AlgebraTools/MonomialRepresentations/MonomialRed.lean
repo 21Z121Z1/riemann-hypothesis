@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective
 import Mathlib.LinearAlgebra.Charpoly.ToMatrix
 import Mathlib.RingTheory.Etale.Weakly

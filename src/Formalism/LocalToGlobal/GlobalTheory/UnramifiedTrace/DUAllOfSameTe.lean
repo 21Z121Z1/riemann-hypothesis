@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.ProjectionKernelEqFunctional
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.TNotinSq
 

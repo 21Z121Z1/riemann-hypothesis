@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CombLineHEqExp
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SupMetricCombinationBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentNormConstantModelsStatement

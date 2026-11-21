@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigLBCubical
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullEqZeroOfChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleTrivialOfSamePolarization

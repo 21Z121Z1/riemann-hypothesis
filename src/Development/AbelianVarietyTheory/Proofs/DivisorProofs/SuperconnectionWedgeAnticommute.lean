@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarAddVectorScalar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WedgeWedgeOfLt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SgnInsertOfNotMemNe

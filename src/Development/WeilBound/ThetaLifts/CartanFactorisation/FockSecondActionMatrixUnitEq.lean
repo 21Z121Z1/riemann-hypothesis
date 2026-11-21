@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsGreatestProperInvariantSubmoduleOfSide
 import Development.WeilBound.ThetaLifts.CartanFactorisation.TensMax
 import Development.WeilBound.ThetaLifts.CartanFactorisation.UnitDef

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.Cartan
 import GroundTheory.AutomorphicForms.InductionParabolicGroups
 import Mathlib.Algebra.Group.Pi.Units

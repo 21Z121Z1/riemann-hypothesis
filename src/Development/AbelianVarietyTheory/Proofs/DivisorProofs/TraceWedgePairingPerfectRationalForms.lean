@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DlogRatioVolumeFormNeZero
 import Mathlib.Topology.Sheaves.Presheaf
 open GlobalTheory.PD GlobalTheory.CechDR KaehlerDifferential

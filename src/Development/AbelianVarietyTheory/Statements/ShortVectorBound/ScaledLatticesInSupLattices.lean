@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.SWEqSOf
 import Development.AbelianVarietyTheory.Definitions.Jets.ExistsSecTieFOfTies

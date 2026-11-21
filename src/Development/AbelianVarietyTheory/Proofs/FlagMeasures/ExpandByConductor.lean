@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsHermND
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 import Mathlib.RingTheory.RegularLocalRing.Defs

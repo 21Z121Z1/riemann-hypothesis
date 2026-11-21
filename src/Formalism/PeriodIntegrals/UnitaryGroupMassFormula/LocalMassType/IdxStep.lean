@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IdxGrp
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.IdxAbs
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassOrder.IsTopRingTens

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MemRangeOfIsPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaConstantsSatisfyClosureEquationsOfDenseClasStatement

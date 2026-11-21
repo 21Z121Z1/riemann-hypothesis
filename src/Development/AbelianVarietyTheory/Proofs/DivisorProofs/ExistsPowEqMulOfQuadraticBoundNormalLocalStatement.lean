@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowEqMulOfQuadraticBoundNormalLocal
 open IsLocalRing ReciprocityTheory.ChartRestriction.G.Out
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLocallyConstantLinOm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsStdMulShift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicAddCharNontrivialFinitePlace

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightProfileDerivFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CutoffDerivBoundStatement

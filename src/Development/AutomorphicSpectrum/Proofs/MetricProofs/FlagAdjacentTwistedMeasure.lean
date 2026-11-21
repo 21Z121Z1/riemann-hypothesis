@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwistedMetricLogFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HolomorphicFrameMetricNearPointStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentTwoFramesOrbitStatement

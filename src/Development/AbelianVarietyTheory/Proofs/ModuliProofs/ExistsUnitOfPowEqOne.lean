@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilPairingFieldExtensionIffStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorsionPointsFieldExtensionStatement
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

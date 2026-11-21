@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.KummerTheory.ContCut
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.Order.CompletePartialOrder

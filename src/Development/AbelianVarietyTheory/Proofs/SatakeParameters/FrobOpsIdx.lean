@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRationalLocalOperators
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.HasLevel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyOfPowerTraces

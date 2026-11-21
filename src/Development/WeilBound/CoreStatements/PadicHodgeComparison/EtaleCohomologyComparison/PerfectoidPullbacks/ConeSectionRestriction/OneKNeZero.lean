@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitClassNeZeroOfNonemptyStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineGradedQuotientVanishAboveDimStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CupPowerSmulStatement

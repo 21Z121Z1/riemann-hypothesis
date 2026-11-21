@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.DiagramFitsSourceRank
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FormsSharpAtOfValTied
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr

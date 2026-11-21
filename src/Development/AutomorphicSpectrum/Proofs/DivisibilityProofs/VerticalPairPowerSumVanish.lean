@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CycNumIntAndComb
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CycleNumberMulExpandStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.CycleNumberRenameStatement

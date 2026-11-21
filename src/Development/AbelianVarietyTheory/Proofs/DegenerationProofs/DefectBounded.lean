@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.OfDerivationFnOn
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.RegularLocalRing.Defs

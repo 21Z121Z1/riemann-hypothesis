@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodPartLevelFormInfinitePlaceEqClassSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelIdempotentMulLevelProjMulGoodPartEqStatement

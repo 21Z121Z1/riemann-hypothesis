@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PerfectPairingQuotients
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumOpTransversal
 open Classical GlobalTheory.FinWeil

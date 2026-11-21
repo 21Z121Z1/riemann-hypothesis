@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteDeterminingSet
 
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter Topology

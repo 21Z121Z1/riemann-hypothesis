@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Places
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Irreducible
 

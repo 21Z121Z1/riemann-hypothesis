@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameOrthogonalDimensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedHermitianNondegenerateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedWittFrameStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ShCocOn
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 

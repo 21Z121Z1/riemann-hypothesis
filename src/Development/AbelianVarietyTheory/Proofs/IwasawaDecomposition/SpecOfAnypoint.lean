@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CarriesFlagsIffAdaptedFrameAtImage
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UpperTriangularMul
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram

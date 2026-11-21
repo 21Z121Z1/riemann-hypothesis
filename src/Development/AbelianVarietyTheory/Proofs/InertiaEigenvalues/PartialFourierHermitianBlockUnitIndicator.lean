@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.MeasureTheory.Integral.Pi

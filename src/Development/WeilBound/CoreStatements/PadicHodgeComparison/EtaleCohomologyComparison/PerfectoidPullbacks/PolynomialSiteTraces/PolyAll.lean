@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerEnvelopeUniversalStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerEnvelopeExpansionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DividedPowerEnvelopeFiltrationStatement

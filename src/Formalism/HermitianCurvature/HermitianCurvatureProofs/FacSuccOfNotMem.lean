@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.Herglotz
 
 namespace Formalism.FourierDecayAlt.P.Fejer

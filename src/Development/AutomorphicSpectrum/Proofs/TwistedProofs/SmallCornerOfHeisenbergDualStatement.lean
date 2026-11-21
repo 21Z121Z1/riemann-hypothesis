@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.SmallCornerOfHeisenbergDual
 open GlobalTheory.InertZeta
 set_option maxHeartbeats 1000000 in

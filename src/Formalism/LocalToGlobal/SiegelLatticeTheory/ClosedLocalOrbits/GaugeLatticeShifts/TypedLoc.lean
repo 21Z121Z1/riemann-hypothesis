@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.HidaSetting
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

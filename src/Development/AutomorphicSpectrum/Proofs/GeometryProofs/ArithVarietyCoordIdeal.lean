@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntegralElementRegular
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIsLocalRingIsFractionRingStalk
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRelAlgClosureFinite

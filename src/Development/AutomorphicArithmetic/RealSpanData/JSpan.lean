@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.RealSpanData.RealData
 
 set_option autoImplicit false

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolLocalizationAwayStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolTransferRingMapsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCommonLocalizationModelStatement

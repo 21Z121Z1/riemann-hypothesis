@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.AdelicQuotientMeasure
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.InfAdeleTensorBijective
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal

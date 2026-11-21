@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasLocalLatticeMatricesMulStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasLocalLatticeMatricesInvStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemFinitePointsOfHasLocalLatticeMatricesStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ImaginaryRootNeZero
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsHodgeFrameIff
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

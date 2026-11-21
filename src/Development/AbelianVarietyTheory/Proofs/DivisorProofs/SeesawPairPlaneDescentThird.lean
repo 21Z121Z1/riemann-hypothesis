@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentTransvectionUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairPlaneDescentFirstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalMapPairCompat

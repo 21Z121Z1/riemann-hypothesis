@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.DiscriminantEstimates.DiscriminantTheorems.ScaledBoundInequality
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ImportsAlt
 import Mathlib.LinearAlgebra.Eigenspace.Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp
 
 open NumberField IntermediateField Ideal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledUnitaryCharacterTrivialOfSiegelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfIsSkew
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairRestrictToSubspaceLeftStatement

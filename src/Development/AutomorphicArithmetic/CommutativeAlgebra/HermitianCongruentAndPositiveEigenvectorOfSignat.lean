@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianCongrOfPositiveIndexEq
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

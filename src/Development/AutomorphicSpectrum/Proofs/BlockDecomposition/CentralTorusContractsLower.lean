@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MetaplecticLowRank.LowC
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCentralContract
 

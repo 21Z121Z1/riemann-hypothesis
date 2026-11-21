@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DemaillyRegularisationEstimateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestFunctionEstimateOfDualityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightIntegralLieSlopeStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoherentSubmodulesGlueFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedLatticesFamilyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendedLatticeFiniteProjectiveStatement

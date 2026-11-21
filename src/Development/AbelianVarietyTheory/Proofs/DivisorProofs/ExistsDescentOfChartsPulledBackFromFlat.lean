@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartOverlapEqPreimageOpenOfFibreStableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartTransitionMapsDescendOverlapsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlueOverlapDiagonalAndTransferStatement

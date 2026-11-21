@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OrderOfEqMaxTwoOfSignNegImplicit
 open GlobalTheory.HTW Formalism.BasicNotions Formalism.FrobeniusOrbits
 set_option maxHeartbeats 1000000 in

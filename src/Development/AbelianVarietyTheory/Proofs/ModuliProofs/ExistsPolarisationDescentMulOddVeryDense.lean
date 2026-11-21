@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsBasicOpenKTrivOfFibre
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsDescended
 

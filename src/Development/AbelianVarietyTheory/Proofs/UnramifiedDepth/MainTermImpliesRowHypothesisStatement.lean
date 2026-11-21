@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MainTermImpliesRowHypothesis
 open Formalism.L2.FormalSeriesBounds
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ValCongr
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffOfJet
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StarRingExtOfStar

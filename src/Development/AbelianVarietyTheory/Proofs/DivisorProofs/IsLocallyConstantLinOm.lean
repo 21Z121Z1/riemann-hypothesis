@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCoinvQuotEmpty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagCoIsotropic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StoneVonNeumannSchwartzBruhatAnyCharacter

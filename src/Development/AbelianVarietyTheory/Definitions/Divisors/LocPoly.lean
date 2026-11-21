@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RealCusp
 import GroundTheory.AutomorphicForms.ReductionSplitting
 import Mathlib.Data.Multiset.Functor

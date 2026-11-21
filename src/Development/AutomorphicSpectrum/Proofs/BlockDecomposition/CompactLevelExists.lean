@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.IsPairLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBallSubset
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSat2InvTConj

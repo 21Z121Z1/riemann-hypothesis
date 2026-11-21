@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubMemPowOfMemMaximalIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalChartEqOfSameGenericPointStatement

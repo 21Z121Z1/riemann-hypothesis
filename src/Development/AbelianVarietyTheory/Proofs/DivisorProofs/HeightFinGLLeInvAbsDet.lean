@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart
 open NumberField IsDedekindDomain GlobalTheory.HenQ
 open GlobalTheory.CuspRep (GA Af finGL)

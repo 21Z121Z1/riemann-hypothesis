@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorMapDescent
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.WeightedLeadingTermSplitZMinor
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EquivariantMapEqSmul

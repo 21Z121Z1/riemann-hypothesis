@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOnPts
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlatSectionIsFlat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMetricOnLineGram

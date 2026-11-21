@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupDecompositionGlobal
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.Splitting
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.RealPlaces

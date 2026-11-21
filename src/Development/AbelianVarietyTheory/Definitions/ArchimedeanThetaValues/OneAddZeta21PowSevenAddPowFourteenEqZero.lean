@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.TwoWeightEqOneAddRoot
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Ring.Star

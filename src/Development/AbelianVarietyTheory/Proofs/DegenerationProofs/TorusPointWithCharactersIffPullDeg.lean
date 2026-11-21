@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnifPreCharacterGroupIso
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGrpPullbackThick
 

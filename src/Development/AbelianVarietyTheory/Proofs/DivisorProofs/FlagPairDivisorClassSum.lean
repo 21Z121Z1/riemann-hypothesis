@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoDivisorClassIsoInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitResGEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoShortExactCompatStatement

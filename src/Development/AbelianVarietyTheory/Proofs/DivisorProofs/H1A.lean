@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.H1SplitConfigBIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.H1SplitConfigBRealPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.H1SplitConfigBFiniteStatement

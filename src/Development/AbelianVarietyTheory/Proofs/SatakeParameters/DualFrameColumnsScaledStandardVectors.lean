@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ColR
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.IsPairFrame
 open NumberField Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Ker Formalism.L2.Col Classical

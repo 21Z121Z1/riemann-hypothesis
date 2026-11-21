@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.ConvGrOf
 import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
 import GroundTheory.AutomorphicForms.GL2.GodementSection

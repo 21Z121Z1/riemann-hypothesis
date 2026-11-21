@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.FrameLetterGLActionRepresentationKeepsHarmonic
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.InPsiOrConjugateUnit
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.MemOfForallLocP

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFlatAffineAvoiding
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace
 open GlobalTheory GlobalTheory.QCoh

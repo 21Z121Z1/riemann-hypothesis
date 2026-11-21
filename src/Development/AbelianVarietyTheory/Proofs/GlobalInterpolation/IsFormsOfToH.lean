@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsClassSumPairingFormsLat
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HasRatBasisOfAct
 

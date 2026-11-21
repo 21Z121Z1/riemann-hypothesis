@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeWordLocalConstants
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NormsMatrixStepsCoupledFactorBoundedAnyLevelPrimStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightSequenceGuards

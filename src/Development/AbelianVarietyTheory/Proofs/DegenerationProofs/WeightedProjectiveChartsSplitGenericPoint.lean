@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SplitGenericOfBasedWeightedChartsStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FibreLawOfTestCartesian
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

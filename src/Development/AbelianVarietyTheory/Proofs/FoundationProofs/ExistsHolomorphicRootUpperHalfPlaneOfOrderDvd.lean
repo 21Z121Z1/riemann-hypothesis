@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRootBallOfAnalyticOrderDvd
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExpUpper
 import Mathlib.Algebra.Order.Star.Real

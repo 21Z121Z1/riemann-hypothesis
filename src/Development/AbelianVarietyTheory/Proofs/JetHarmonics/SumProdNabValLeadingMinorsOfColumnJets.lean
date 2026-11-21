@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SumProdNabValLeadingMinors
 
 set_option autoImplicit false

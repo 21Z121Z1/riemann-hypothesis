@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReductionUniqueUpToParabolicStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LevelSquareCongruenceConjugationStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueUpperUnipotentLiftStatement

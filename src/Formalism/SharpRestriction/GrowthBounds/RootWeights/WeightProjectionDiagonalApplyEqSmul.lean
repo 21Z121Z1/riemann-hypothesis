@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightSpaceEqBotOutsideSupport
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.OperatorsKillInvariantProjection
 import Mathlib.Tactic.Polynomial.Basic

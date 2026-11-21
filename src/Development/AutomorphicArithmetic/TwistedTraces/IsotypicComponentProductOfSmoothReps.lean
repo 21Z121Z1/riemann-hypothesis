@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.TwistedTraces.InfFixedLeSpanFixOfDenseSpanAll
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsAlgHomEndFixedVectorsToFixedSubspace
 

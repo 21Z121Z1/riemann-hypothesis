@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.LocalTransferIntertwiners
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.LocalizationParts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DcOpCommOfCommute

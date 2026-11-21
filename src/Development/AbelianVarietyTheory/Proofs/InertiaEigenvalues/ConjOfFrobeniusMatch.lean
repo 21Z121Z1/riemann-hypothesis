@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsAttachedHodge
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ColRepSemisimple
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.InjPrimeTo

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourBProdIterated
 open GlobalTheory.JR MeasureTheory
 set_option maxHeartbeats 1000000 in

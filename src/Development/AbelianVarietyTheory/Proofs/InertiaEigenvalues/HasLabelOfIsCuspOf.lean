@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqOfRootsBarEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PrincipalCongruenceFixedVectorsLeSmoothVectors
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharInOfIsCharLab

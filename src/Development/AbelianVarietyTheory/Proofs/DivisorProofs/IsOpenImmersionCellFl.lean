@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellOpenImmersion
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFrameOfForallExists
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

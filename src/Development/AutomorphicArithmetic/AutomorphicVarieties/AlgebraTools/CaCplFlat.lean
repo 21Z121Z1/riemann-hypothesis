@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCplUniq
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCplEx
 import Mathlib.RingTheory.Etale.Weakly

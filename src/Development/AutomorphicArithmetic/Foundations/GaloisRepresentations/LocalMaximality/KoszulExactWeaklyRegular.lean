@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.LiftFactorization
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PlacewiseToOutsideS
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RelativeK1Module

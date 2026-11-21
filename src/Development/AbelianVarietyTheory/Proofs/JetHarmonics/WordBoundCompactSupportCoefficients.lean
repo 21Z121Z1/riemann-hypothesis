@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsRadialPartPolyDiffOperatorClosedStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsMulGOfSmoothLog
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WordOperatorRadialPointwiseBoundStatement

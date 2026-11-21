@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IwahoriSubgroupDefinitionsAgree
 import Development.AutomorphicArithmetic.IwahoriCommensurability.IsCommensuratedIwahoriGl
 open Formalism.UG

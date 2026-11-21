@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyThetaDeRhamFilZeroConcretePeriod
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc
 set_option maxHeartbeats 1000000 in

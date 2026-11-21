@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFnDegAdjoin
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PChartRankAdjoin
 set_option maxSynthPendingDepth 1

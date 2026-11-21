@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcDensEqOfGram
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClsDivPullEqVPull
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToIThCapDegOfAddNsmulDivP

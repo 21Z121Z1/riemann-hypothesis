@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReferenceCoreOfSumPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumPointOfSizeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReferenceThetaOfCoreStatement

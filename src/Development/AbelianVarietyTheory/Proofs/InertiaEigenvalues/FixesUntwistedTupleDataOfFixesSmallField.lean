@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypePlaceResidueCharactersValuesMemSmallFieldStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CurveOverOfRayIn
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl

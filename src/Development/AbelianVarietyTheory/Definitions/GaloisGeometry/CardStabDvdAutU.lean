@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SpKerColToEqColCpl
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSmulOfDecoEq
 

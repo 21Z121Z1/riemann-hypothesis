@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.LinearAlgebra.Matrix.Permutation

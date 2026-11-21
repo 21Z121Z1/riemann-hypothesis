@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsCorr
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe

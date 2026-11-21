@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TraceDualDifferent
 import Mathlib.NumberTheory.NumberField.Discriminant.Different

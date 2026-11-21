@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorIntertwiningApply
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntertwinerDOpOfStabiliser

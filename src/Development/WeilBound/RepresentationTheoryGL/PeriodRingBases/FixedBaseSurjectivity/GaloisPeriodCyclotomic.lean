@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.PeriodRingBases.PeriodRingUnits.DieudonneManinBasisModification
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FundIotaTANeZero
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AwayExistsSelf

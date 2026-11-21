@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.PageThm
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsJacobiSymEqNegOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardPrimesResidueGeRpow

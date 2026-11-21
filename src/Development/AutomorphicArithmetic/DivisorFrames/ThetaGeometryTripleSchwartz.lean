@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEvaluationIntertwinesThetaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOperatorFixesIntegralIndicatorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilActionRestrictedProductStatement

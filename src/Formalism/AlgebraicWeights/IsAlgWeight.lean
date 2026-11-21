@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.Statement
 import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
 import Formalism.ConjugateSelfDual.StatementRest

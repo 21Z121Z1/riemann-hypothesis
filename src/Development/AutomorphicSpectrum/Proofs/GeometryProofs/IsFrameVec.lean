@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal

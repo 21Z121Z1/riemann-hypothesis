@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ContragredientTranspose.Character
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 

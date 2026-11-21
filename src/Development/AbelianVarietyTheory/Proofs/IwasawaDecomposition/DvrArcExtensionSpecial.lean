@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CmIdempotentAddStarEqOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRationalTateIsomorphismStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DvrArcExtensionTateStatement

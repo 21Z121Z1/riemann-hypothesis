@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PtRows
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueDOfTruePack
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RamShareOfFreeT

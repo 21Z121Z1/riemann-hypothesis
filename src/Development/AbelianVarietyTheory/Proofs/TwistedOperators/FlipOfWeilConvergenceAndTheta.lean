@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionCommutesOnGridStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalFlipOnVolumesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalListedTopFormsStatement

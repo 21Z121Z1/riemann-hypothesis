@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpanRangeComplementTransformStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SameSpanTransferMatricesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianBlockSolutionExistsStatement

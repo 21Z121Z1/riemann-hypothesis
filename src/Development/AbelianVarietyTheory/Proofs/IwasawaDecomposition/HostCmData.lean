@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem

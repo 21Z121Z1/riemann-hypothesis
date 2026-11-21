@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.NewtonThorneSym
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ShapeFacts
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow

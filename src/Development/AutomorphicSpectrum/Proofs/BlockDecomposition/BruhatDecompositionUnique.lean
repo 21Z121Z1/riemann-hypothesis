@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.Henselian

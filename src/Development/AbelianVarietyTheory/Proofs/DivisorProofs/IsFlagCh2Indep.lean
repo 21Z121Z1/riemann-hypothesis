@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentPullPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsFlagCh2
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlagCh2EqOfAdjacent

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FourierJacobiExpansionOverFieldInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpFLinear
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsProjectiveRep

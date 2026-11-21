@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ColFlags
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FunctionFieldRatioGenerators
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameMatrixChartRatios

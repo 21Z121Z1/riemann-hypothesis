@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.LocalDef
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityUnitary
 

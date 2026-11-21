@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.FockSecondActionMatrixUnitEq
 import Development.WeilBound.ThetaLifts.Reductions.LocalPoly
 import Development.WeilBound.ThetaLifts.Reductions.TensJoin

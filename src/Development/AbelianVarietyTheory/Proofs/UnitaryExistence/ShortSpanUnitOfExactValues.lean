@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.StandardFourierShortSpan
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.MultAddMultConjugate
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsPowLeHalfPart

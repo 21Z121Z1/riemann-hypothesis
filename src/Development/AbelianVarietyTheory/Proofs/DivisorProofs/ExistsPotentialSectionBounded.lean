@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenRangeComplexUniformizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedSubschemeModelGenericFibreStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedSubschemeModelComplexPointsStatement

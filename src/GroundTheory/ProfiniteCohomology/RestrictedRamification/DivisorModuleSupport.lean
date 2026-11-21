@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.DivisorModule
 set_option maxSynthPendingDepth 1
 

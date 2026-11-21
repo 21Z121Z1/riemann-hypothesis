@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.EtAICPf
 import Mathlib.AlgebraicGeometry.Morphisms.FlatMono
 import Mathlib.RingTheory.Etale.Weakly

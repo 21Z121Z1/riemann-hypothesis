@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGrpObjIsGrpPullbackOfIsPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallExtensionPrimitiveLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullH1SurjectiveOfBijectiveStatement

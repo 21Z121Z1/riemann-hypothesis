@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Smooth
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Window
 

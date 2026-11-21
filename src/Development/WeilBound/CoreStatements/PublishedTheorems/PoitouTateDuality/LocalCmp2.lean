@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsAlgHomMulEquivDec
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChangeMackey
 import Mathlib.RingTheory.PicardGroup

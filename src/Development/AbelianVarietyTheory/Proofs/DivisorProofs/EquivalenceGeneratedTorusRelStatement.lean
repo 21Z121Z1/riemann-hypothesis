@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivalenceGeneratedTorusRel
 open NumberField Matrix GlobalTheory.AdLat GlobalTheory.UCls
 set_option maxHeartbeats 1000000 in

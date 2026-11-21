@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapGermEqGenMapGerm
 import Mathlib.AlgebraicGeometry.Noetherian
 import Mathlib.Order.CompletePartialOrder

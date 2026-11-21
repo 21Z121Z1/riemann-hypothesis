@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.PermutationSigns.MatDefs
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.RingTheory.PiTensorProduct

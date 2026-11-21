@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsClosedImmersionBySectionsOfSpan
 import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame
 import Development.AbelianVarietyTheory.Definitions.Degenerations.RigGen

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.FerreroWashingtonIndex.TwSingle
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

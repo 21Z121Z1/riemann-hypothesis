@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TmulMemLocId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigALocalUnitLevi
 open scoped TensorProduct NNReal Matrix nonZeroDivisors

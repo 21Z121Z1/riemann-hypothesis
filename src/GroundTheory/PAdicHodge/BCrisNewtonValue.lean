@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.BCrisNewtonNorm
 import GroundTheory.PAdicHodge.BdRAlg
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.HeisenbergRankOneDecomposition
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.RankOneLeviComm
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.EIntBound

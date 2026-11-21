@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.StBoundedChartsOfRegCharts
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.ProjLineChartsNotSubsetBall
 import Mathlib.Topology.OpenPartialHomeomorph.Constructions

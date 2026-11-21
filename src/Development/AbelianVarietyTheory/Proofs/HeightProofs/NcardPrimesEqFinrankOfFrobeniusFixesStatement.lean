@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NcardPrimesEqFinrankOfFrobeniusFixes
 open NumberField IsDedekindDomain Polynomial GlobalTheory.FieldSize
 open scoped IntermediateField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupExistence
 import Development.AutomorphicArithmetic.WhittakerHecke.SurjectiveEvalBlowupChartOfSpanEq
 

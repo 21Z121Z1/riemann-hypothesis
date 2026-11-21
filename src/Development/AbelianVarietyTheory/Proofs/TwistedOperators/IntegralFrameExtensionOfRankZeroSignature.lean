@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsQProjOverOfIsIso
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsBasisOnAny
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIntegralFramesModelInvertiblePushforward

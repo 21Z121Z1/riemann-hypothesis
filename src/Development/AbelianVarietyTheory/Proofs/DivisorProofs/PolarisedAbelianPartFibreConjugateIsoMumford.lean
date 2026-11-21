@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.E8PowerFibreConjugateEvaluationIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EighthPowerFibreIsoSharpTorsionGivesFactorIsoStatement
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing

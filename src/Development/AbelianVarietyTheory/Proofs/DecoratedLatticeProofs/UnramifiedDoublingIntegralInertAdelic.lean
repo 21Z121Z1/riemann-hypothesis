@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumQuotientTransportStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIsSphSec
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HasSumDoublingInert

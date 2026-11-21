@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMem
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaledIntegralIndicatorSchwartzBruhatStatement

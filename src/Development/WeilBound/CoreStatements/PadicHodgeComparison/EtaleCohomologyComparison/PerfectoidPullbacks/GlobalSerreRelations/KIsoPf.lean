@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GlobalSerreRelations.gr_aff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HodgeFiltrationViaTruncationStatement
 

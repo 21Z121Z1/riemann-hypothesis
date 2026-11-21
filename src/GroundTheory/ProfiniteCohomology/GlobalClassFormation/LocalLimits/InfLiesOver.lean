@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.InfDefs
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.LiesOver
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SchurOrthogonalityIndefiniteUnitaryGroup
 open Formalism.MainNotions.S Matrix MeasureTheory
 set_option maxHeartbeats 1000000 in

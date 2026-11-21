@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoVanEOf
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLineZero
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLineNeg

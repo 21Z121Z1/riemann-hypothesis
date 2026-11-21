@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.GKTensor
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableLaplacian
 

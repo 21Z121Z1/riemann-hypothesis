@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComapMulIdealSheaf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealSheafDataComapInfOfFlatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdicCompletionNoetherianFlatCompleteStatement

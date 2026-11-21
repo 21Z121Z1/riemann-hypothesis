@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftAndAugmentationMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerLinEMulE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDPMorphismOfIsStd

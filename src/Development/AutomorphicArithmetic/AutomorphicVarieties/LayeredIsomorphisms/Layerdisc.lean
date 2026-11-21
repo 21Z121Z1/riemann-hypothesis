@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Layeremb
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Imports
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrder
 open ReciprocityTheory.PGsh.Up GlobalTheory.Sandwich Matrix
 set_option maxHeartbeats 1000000 in

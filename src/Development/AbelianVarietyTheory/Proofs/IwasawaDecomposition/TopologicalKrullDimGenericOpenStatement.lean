@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopologicalKrullDimGenericOpen
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace
 set_option maxHeartbeats 1000000 in

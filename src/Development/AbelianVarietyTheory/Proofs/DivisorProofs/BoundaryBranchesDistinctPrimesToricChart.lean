@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FromBaseAlt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeAtOfToricChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdClassGroupMk0EqOfLinearEquivPiStatement

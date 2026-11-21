@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms
 import GroundTheory.GlobalFields.Adele.Compact
 import Mathlib.Algebra.Ring.IsFormallyReal

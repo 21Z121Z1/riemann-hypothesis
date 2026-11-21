@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp

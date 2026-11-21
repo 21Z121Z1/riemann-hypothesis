@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceMemSpanPureTensorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubleAdaptedModelCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubleAdaptedLagrangianDimStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComponentDataHodgeBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalSchemeCoordsInjectiveStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeMiddle

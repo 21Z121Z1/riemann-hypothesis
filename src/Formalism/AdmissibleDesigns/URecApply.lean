@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.KoEquivSmul
 import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
 import Formalism.AdmissibleDesigns.BlockTwistedCyclotomic

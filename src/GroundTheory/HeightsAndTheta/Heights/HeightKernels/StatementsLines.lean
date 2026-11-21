@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.Lattice

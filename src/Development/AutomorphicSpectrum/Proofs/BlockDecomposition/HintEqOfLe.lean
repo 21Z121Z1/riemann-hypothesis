@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinsumOutOfLe
 
 open NumberField IsDedekindDomain Matrix Polynomial Filter

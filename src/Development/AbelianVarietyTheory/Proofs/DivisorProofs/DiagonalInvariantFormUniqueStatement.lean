@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalInvariantFormUnique
 
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ConeBall
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import Mathlib.CategoryTheory.Countable

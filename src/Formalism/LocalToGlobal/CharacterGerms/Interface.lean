@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.ScaledSecondIntegral
 import Formalism.IncomingBounds.StatementThmP
 import Mathlib.RingTheory.MvPowerSeries.Substitution

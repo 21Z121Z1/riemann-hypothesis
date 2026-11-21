@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.SiegelMod
 import Development.WeilBound.ThetaLifts.Reductions.SiegelCore
 

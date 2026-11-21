@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.AdelicInclusionMapPlaceSection
 import Development.WeilBound.ThetaLifts.LocalTheory.StandardValuations.IdeleInt
 

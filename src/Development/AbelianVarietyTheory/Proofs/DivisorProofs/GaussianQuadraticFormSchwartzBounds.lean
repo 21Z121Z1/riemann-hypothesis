@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormIteratedFDerivTruncExpICompLe
 import Mathlib.Tactic.Polynomial.Basic
 open SchwartzMap Filter Topology

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import Mathlib.Analysis.Calculus.ContDiff.WithLp
 import Mathlib.RingTheory.PiTensorProduct

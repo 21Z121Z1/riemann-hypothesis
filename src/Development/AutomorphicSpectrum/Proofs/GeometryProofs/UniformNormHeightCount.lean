@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TowerOriginComponentBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullIntersectionHeightBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericFrameComponentBoundStatement

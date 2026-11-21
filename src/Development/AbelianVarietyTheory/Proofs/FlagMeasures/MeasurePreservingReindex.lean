@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsProjOnOne
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasureLeCardMul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsOrthonormalBasis

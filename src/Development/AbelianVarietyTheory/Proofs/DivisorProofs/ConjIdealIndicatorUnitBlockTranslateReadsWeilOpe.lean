@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodIdemEmpty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergFinitePointReadsClassicalTranslation
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CharIntegrable

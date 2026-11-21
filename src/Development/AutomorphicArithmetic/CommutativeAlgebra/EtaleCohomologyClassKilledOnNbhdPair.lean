@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.NeighbourhoodKilling
 
 open CategoryTheory Limits

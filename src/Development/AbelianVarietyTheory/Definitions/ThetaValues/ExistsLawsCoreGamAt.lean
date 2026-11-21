@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.GamAt
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongrOfDvdModulus
 import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonal

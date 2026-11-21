@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.CechSigmaOf
 import Std.Tactic.BVDecide.Normalize.Prop
 

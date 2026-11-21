@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslationInvariantFunctionalRestrictStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslationInvariantSchwartzUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzExtensionFromSubspaceStatement

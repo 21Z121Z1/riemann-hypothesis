@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE

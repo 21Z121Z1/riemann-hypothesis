@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.DSExist
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.Zuckerman
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.Poulsen

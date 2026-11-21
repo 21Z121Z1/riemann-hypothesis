@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvIInfScaleMul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HaarModulusOfUnitCompletionsAtPlacesEqProdNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulusOfNormEqAbs

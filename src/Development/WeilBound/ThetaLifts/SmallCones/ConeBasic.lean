@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 

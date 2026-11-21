@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FamPSizesRecord
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightParameterSizeBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightParamCoeffSumBoundStatement

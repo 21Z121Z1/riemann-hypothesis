@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsoCrossPowersOfPullbackPowersStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoOfCompatibleAdicReductionsStatement
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry

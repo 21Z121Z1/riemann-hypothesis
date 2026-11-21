@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnnSeqShortExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCellFrameOfSpans
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacobianDensityHermitianMetrics

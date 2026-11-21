@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFinSetSplitPlacesCoprimeConductor
 import Mathlib.NumberTheory.NumberField.CMField
 open NumberField GlobalTheory.CMVal

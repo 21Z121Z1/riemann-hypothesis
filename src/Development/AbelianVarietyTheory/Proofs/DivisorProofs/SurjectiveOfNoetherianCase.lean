@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaCountCompactFinite
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC
 open scoped TensorProduct

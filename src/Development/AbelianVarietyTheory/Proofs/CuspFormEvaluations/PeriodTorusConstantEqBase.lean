@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.PolyDerivSmulLetter
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.EqTopOfForallEmbAllMem
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.SumCMulImHermCEqSignMulTrace

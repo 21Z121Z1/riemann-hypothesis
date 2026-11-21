@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.ResEmbCompat
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Stabilizer
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SmoothTensorFactor

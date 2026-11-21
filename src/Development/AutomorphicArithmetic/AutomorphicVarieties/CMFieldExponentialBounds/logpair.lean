@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
 
 open NumberField Formalism.HC UpperTheory.Top UpperTheory.V

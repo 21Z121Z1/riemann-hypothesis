@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsAdmissibleLocalNormMemSUnitsSupGlobalNorm
 open NumberField IsDedekindDomain GlobalTheory.QNorm
 set_option maxHeartbeats 1000000 in

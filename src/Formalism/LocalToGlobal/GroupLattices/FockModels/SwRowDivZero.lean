@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LRowdivLemmas
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWRaise
 import Mathlib.RingTheory.Derivation.Lie

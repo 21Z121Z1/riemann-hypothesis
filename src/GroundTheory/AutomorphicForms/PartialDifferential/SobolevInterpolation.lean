@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.PartialDifferential.SobolevMollifier
 
 namespace GroundTheory.Automorphic.Sobolev

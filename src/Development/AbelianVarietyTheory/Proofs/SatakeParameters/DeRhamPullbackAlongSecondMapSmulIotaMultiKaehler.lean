@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsCanFam
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.Topology.Sheaves.Presheaf

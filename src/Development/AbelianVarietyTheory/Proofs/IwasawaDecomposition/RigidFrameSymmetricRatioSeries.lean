@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CubeRatio
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HorizontalFrameThetaRelation
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNumOf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.OpensRangeChartYSupOpensRangeChartZ
 import Mathlib.AlgebraicGeometry.Geometrically.Connected
 import Mathlib.AlgebraicGeometry.Geometrically.Integral

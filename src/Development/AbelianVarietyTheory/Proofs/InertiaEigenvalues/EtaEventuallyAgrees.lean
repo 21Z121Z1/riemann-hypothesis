@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideMultiplicityFamily
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodFiberTypesAllStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedPlaceInnerProductClassSumRowsStatement

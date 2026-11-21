@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RosIdSt
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RigidifiedIsoRespectsCubeAndSymmetry

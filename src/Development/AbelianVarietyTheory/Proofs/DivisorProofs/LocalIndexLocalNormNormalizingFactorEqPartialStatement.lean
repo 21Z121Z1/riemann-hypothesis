@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalIndexLocalNormNormalizingFactorEqPartial
 
 open NumberField MeasureTheory IsDedekindDomain UniqueFactorizationMonoid

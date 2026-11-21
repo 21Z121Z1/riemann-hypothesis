@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfIsHypPl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalUnipotentCoordinateSurjective
 open scoped TensorProduct NNReal Matrix

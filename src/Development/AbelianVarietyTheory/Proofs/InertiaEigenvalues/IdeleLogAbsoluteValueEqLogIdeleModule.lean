@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.AbsCharNotUnitary
 import GroundTheory.GlobalFields.TateThesis.GlobalZetaFinite
 open NumberField IsDedekindDomain

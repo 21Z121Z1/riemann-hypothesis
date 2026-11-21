@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocalizationAway
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentCoordsNonunitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoboundaryFrobeniusCommuteModPQuasiLogStatement

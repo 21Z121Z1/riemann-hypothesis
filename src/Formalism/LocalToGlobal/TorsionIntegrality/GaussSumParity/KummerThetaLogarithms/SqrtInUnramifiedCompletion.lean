@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.HomotheticLatticeIntegralS2
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero

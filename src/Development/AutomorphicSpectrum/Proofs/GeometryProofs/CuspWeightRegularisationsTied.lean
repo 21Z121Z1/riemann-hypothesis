@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsCompactifiedModel
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsRegularizationSettingStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsRegularizationOfHodgeMetricStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.InvSqrtTwo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHermitianJmBracket
 

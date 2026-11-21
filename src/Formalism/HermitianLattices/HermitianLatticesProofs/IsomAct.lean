@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianLattices.StatementLat
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

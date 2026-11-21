@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HarishChandraSeriesLabelExistsUniqueGLnStatement
 
 open GlobalTheory.GLq Formalism.MainNotions.ArithmeticCylinders Polynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.RealTest
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.GeoAlg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz

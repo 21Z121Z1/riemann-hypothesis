@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FderivApplyEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartDerivativeInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothPullbackToFrameDomainStatement

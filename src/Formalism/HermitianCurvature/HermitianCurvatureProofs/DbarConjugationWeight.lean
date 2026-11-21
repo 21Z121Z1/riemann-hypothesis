@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LetterProductDoubleDegreeCount
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Topology.Sheaves.Presheaf

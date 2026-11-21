@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StickelbergerElements.CoefMapSingle
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.SimpleRing.Principal

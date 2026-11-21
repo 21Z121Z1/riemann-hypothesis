@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MulEqSmulOneSymm
 
 open scoped Matrix TensorProduct

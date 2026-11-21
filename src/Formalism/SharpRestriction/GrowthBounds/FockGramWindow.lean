@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.InitialPointNumericBound
 import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.WinLvl
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LatMin

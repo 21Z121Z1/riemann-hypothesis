@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
 import ReciprocityTheory.AnalyticForms.PotentialTheory.LogInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.MaMeasure

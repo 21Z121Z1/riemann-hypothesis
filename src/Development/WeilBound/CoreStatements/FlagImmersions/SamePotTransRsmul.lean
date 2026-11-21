@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionPotentialPullback
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LogResolutionReindexed
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFunctorialHolomorphic

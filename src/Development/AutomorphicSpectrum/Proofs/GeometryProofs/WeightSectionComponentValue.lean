@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AllWeightSectionsCompat
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.NotFamConstZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicApproximationCompleteDvrStatement

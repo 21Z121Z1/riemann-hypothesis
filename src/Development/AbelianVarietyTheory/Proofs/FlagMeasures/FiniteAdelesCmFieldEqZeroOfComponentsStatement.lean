@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FiniteAdelesCmFieldEqZeroOfComponents
 open NumberField IsDedekindDomain ReciprocityTheory.Aut
 open scoped TensorProduct

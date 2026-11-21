@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsScaleWithBoundedGamma
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.IsLinked
 

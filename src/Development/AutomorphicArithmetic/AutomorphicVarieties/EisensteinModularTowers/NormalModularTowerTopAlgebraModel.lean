@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgebraicOfJKMem
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ResMapBijective

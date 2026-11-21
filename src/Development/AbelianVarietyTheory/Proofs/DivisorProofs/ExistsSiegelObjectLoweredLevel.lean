@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SRelOneOneIff
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSymplecticOfTranslFixed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft

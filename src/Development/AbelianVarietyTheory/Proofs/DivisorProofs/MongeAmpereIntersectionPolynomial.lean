@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SameFormOfLeviCombinationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernTopChartIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialCombinationChartStatement

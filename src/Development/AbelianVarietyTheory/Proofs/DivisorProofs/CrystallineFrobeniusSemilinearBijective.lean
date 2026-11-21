@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineSmoothLiftOfRelations
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperCohomologyFlatBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftBaseChangeBijectiveLinearEquivSquareUnivStatement

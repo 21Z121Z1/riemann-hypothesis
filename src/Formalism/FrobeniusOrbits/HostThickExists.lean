@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FrobeniusOrbits.HostDiffSupport
 
 open NumberField IntermediateField Ideal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA
 import Mathlib.Order.CompletePartialOrder

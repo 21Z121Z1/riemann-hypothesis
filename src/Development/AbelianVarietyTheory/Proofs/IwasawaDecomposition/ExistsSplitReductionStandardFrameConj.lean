@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCompOfOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdMaximalCompactReductionProperties
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeDoubleCosetOperatorsStandardFacts

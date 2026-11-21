@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.StatementRho
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.RightMulEpsAlgebraMap
 import Mathlib.Tactic.Monotonicity.Lemmas

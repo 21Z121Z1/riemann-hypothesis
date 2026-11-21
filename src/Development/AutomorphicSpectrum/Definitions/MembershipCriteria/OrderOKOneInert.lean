@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MembershipCriteria.GoodChar
 import Mathlib.Algebra.QuadraticAlgebra.Basic
 

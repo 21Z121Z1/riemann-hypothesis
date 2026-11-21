@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WirtConst
 open Matrix GlobalTheory.MatDeriv
 open scoped Topology

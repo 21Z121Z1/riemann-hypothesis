@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualEnergyCharts
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergyIntegrable
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualGeomDegCharts

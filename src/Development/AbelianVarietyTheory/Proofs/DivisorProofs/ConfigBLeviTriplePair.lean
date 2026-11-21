@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleDescendsToSmallerGeometryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleSmallerGeometryThetaCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleSmallerGeometryEisensteinStatement

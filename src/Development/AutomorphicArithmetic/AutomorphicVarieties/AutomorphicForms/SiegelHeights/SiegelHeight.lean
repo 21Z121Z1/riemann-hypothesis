@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.SiegelHeights.InfEmbGrpEq
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.ConstantTerm
 import GroundTheory.AutomorphicForms.ReductionSiegel

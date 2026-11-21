@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.QuotientMeasure
 
 open MeasureTheory GroundTheory.Automorphic GroundTheory.Automorphic.RightCosetSpace

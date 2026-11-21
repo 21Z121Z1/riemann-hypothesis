@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Mathlib.Order.CompletePartialOrder
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology

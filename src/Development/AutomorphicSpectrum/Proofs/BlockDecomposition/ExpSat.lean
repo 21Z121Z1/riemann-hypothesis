@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSocleProdIrrCongr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LOneSatakeBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EmbeddingOfExponent

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.PairIntRatKOfThetaLocalInputs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairIntAt
 

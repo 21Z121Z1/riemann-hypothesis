@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaDecompositionGlTwoHolds
 open MeasureTheory Matrix GroundTheory.LocalField GroundTheory.Automorphic
 open scoped ValuativeRel ENNReal

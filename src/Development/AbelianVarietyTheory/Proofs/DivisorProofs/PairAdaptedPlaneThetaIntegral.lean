@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairAdaptedPlaneCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFunctionalArchimedeanFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasConstTermThetaSumSchrLin

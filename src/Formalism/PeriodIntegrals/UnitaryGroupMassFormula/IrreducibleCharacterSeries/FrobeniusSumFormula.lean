@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PadicSubsetSums.CentralIdempotents.IsConstituent
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis
 import Mathlib.RepresentationTheory.Invariants

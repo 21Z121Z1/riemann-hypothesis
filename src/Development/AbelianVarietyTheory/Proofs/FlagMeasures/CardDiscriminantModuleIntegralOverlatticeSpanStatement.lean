@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardDiscriminantModuleIntegralOverlatticeSpan
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
 open scoped Pointwise ENNReal Classical

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CapelliEigenvalues.SmRight
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.CapelliHighestWeightConjugated
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic

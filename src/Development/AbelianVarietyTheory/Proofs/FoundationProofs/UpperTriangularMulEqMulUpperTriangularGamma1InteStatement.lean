@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UpperTriangularMulEqMulUpperTriangularGamma1Inte
 open UpperHalfPlane ModularForm CongruenceSubgroup
 open scoped MatrixGroups ModularForm

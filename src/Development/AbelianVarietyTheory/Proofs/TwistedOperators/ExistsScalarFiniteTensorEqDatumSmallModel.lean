@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmulOfMapsInlMemS
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HTensMixHalfS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AtWAtPlSelf

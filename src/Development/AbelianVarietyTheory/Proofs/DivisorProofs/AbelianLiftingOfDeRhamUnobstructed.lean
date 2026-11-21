@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianLifting
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsStepNilExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareZeroLiftingOfNoetherianCaseStatement

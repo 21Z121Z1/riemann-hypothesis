@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsRepPatchTwist
 open Formalism.MainNotions.N
 set_option maxHeartbeats 1000000 in

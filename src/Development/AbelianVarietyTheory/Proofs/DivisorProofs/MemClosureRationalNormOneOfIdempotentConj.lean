@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureNormOneProductsSubgroupPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtInvS
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLocAdele

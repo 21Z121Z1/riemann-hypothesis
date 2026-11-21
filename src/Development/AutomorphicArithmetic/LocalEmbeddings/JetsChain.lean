@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InfOfMulFinOf
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralEqFinClSumAvg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFinClAndGamOrd

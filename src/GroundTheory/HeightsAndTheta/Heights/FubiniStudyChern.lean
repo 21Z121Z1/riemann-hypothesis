@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyMetric
 import Mathlib.LinearAlgebra.Matrix.PosDef
 set_option maxSynthPendingDepth 1

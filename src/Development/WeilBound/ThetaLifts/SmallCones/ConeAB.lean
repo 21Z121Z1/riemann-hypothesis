@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.ConeCore
 import Development.WeilBound.ThetaLifts.SmallCones.ConeLawAB
 

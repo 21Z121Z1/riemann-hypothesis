@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalChartEvalSquareProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerTensorStatement
 

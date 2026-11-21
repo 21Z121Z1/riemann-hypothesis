@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LayerProd
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormExpSubOneLeExpNorm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OrderedProductExpExpandingRealSmul

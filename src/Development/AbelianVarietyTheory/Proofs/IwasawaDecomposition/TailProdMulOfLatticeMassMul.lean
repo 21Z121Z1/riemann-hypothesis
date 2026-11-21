@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.T2SpaceNumberFieldInfiniteAdeles
 import Mathlib.Analysis.SpecialFunctions.Log.Summable
 import Mathlib.Tactic.Monotonicity.Lemmas

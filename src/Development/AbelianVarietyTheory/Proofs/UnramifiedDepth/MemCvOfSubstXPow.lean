@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich
 import Formalism.LocalToGlobal.CharacterGerms.ConstMemTypeSetOfNonneg
 open scoped BigOperators

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.TateCohomology.UniquelyDivisible
 set_option maxSynthPendingDepth 1
 

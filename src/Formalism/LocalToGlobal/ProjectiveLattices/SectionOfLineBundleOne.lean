@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HasArcDataIff
 import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
 import Mathlib.RingTheory.LaurentSeries

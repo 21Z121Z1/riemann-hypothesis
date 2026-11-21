@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HeBranching
 import Development.WeilBound.CoreStatements.BranchingTraces.ExistsIntertwiner
 

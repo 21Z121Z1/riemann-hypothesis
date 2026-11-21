@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremLevel
 set_option maxSynthPendingDepth 1
 

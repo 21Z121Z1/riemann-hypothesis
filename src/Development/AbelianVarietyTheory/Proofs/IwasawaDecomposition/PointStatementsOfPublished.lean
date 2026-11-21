@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsBisSide
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowsOfInputsAndJumpsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeEigISupEqTopOfSep

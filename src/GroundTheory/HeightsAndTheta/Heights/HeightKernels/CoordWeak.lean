@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KernelsMatrix
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.Analysis.Real.Pi.Bounds

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVacBox
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneTransformRationalPointsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeInvariantPlaneTransformStatement

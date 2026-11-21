@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopCMulBlk
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingPairLatticeMeasure
 open scoped TensorProduct NNReal Matrix

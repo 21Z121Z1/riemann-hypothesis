@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianLattices.StatementMaj
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.WittVector.IsPoly

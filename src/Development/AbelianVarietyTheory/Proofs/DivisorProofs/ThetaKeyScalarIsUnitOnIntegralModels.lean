@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotPoleOfBounded
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormalAtOfUnif
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtendOfIntegralAtDvr

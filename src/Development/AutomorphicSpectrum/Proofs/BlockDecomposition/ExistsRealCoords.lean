@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegrableOfRapidDecay
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Mathlib.RingTheory.TotallySplit

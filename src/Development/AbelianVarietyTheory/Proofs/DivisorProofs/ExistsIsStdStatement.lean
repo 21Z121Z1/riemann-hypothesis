@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsStd
 open DividedPowers GlobalTheory.Cris GlobalTheory.PDA
 set_option maxHeartbeats 1000000 in

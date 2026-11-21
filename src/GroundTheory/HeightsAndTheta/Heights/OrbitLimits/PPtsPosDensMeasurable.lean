@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsPosDensMeasurable
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PtsPosDensMeasurable
 set_option maxSynthPendingDepth 1

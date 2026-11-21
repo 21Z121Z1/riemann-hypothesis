@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisConjDefiniteFormsSemilinearEquivStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpOfTranslates
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem

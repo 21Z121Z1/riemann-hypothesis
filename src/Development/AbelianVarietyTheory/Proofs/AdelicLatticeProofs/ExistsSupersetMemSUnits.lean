@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
 import Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
 open NumberField IsDedekindDomain GlobalTheory.QNorm

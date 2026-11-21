@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.FirstPointNeSecondPoint
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyCharts
 set_option maxSynthPendingDepth 1

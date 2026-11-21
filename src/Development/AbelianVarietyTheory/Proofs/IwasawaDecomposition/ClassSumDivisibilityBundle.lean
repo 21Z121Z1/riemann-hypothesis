@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StrictHenselianAcyclic
 import Development.AbelianVarietyTheory.Definitions.Divisors.RowSideOfCompatibleThetaPair
 import Development.AbelianVarietyTheory.Definitions.Divisors.MapBaseTiedSel

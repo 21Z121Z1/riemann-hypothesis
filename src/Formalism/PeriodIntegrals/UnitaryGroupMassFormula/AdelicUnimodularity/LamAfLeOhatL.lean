@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnimodularity.SmulEqAlgebraMapMul
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Mathlib.RingTheory.PiTensorProduct

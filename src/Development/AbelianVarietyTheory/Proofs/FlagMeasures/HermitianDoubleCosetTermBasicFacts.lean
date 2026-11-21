@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasisOfIsCompl
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemPerpSpan
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurEqJtDet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AddLeOfStrictAnti
 import Mathlib.Order.Interval.Finset.Box

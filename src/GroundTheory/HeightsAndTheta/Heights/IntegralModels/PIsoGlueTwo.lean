@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsIsoGlueTwo
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PGlueModulesStar
 set_option maxSynthPendingDepth 1

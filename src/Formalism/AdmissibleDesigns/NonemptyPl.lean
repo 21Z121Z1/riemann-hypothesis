@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData
 import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 

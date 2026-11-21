@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleIntegralClosureOfIsArtinianRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalizationIntegralClosureEquiv
 import Mathlib.RingTheory.Smooth.IntegralClosure

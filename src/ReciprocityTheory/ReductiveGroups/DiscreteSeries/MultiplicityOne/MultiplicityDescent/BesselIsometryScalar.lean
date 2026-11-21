@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.L2BoundedOnSmooth
 import Mathlib.Analysis.InnerProductSpace.TensorProduct
 

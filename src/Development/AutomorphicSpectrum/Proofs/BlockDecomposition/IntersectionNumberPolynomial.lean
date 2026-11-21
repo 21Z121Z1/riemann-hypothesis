@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FinrankRiemannRochNsmulHyperplane
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace MeasureTheory

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.TanRel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigValD
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsTwistSections

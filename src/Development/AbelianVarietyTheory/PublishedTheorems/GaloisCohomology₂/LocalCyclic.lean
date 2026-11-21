@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ArthurClozelLocalSC
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NcardPrimesOverThreeZ
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsSmallStable

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.W8AddTransposeEqE8
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.SiegelFamilyZetaUnit
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

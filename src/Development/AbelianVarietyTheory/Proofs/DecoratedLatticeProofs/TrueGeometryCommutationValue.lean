@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ReadsLow
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LevTrue
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousOfCond

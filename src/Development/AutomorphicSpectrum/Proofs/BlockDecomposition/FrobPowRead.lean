@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerPropertiesResidue
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerResidueFieldFinitePowerStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LubinTateSequenceNormBoundsStatement

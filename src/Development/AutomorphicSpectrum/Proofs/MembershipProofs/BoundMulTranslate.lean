@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MembershipCriteria.ExistsHarrisTaylorObjectOfLevelLift
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.Tactic.Monotonicity.Lemmas

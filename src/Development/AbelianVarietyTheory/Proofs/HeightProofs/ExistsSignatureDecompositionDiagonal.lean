@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant
 import Std.Tactic.BVDecide.Normalize.Prop
 

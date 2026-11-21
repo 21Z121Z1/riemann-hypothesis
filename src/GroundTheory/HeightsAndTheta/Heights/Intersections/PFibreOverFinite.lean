@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFibreOverFinite
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PFibreDivSupp
 set_option maxSynthPendingDepth 1

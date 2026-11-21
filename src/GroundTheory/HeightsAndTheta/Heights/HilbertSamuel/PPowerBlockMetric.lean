@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionNormSqExtension
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlockMetric
 set_option maxSynthPendingDepth 1

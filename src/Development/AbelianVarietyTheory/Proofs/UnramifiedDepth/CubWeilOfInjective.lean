@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FiniteTorsOfFiniteTorsion
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubWeilOneLeft

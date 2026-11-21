@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PSliceSectionMass
 import Mathlib.Topology.UniformSpace.Uniformizable
 set_option maxSynthPendingDepth 1

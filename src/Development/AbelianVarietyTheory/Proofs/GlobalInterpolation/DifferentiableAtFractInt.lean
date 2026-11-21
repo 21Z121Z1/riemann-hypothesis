@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ZetaEqSubIntegralFract
 import Mathlib.NumberTheory.Harmonic.ZetaAsymp
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory

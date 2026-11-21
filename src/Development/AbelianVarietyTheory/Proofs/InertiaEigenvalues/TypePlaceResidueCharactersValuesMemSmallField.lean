@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletelySplitPrimeHostPlaceProperties
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Formalism.LocalToGlobal.Columns.AdelicLemmas

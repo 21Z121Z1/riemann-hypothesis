@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ConeSectionRestriction.ZeroC
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeCocycleClassIndependent
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CupListRepresentativeOfForms

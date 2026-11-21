@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsCtxBase
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThetaFunctionFundamentalDomainInnerProductBasic
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IsWeakOneOfRankZero

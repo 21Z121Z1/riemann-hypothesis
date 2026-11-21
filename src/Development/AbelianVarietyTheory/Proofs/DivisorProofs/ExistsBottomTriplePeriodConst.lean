@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicPointUnitaryGroupGramOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleNonzeroPeriodStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleExistsNonzeroStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.ExistsGoodLevel
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.ModuliNonemptyOfObj
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TateIsoDatumExistsStatement

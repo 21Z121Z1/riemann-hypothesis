@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.LinearAlgebra.Matrix.Hermitian
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FlowMatMulVec
 

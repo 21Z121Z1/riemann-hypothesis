@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.AmpWinGlob
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GoodLoc
 open scoped Classical ENNReal

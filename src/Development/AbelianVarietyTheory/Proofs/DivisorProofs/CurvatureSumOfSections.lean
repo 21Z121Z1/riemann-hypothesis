@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvFinsetSumOfDiff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnectionDifferentiableStatement
 

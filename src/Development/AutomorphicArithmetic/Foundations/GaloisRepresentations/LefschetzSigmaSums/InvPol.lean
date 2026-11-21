@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TraceDefinitePairsEqAutomorphicTrace
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.IsConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCorrFormPullTensorForm
 

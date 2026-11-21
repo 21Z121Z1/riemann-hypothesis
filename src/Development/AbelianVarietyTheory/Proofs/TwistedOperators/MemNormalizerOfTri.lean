@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilFormulaRootExchangeParabolicIntersection
 import Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumEqTraceOriented
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeilUnr

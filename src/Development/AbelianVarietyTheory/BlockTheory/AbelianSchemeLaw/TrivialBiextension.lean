@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.CubicalStructures.CubeSymmetricSwapFirst
 import Mathlib.CategoryTheory.Limits.Shapes.Countable
 import Mathlib.RingTheory.WittVector.IsPoly

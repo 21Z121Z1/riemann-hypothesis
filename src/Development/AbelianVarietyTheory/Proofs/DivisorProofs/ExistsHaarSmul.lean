@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedThetaIntegralValue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigThetaKernelIntegrable

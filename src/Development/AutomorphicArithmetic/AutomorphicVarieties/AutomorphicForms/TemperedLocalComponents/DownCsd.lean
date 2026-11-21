@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclotomicCharacterSecond
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.IsAlgChar

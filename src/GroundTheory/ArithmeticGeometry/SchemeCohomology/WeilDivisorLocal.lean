@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisor
 import Mathlib.RingTheory.Ideal.UFD
 import Mathlib.RingTheory.WittVector.IsPoly

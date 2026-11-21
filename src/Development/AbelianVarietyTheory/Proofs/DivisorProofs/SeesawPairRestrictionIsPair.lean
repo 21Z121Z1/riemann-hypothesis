@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipMat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusMulVecX
 

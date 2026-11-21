@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticVarietyPartitionDensity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedFormChartTransitionStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.AnalyticOnNhdFinChartIff

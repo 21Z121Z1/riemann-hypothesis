@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RingOfIntegersHomInjective
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConstantsValueOverPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsEmbLabel

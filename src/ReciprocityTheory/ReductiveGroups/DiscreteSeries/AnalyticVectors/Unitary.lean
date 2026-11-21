@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.ConjTransposeEqOfInG
 import Mathlib.Analysis.InnerProductSpace.Calculus
 import Mathlib.Tactic.ENatToNat

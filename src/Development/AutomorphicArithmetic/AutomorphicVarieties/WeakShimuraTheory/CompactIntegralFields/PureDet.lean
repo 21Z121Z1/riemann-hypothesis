@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RedIdeal
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs
 import Mathlib.RingTheory.SimpleRing.Principal

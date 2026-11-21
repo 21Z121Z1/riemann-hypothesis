@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnramifiedSplitting.GenV
 
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter

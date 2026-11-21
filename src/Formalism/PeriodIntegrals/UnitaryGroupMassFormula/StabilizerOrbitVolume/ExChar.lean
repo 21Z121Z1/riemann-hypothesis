@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerOrbitVolume.FibInfEx
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.Henselian

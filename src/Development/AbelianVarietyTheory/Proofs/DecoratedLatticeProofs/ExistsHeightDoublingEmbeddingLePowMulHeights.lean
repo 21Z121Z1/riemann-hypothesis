@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicHeightBlockDiagonalEmbeddingLeMul
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing
 open scoped ComplexConjugate Matrix NNReal

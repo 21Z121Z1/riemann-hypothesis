@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockHeckeSlices.CuspidalNormBounds.CuspUmg
 import Development.AutomorphicArithmetic.WhittakerHecke.IntegrableMulConjOfModerateGrowthOfCuspidal
 import Development.AutomorphicArithmetic.WhittakerHecke.IntegralQuotientDerivativeOneParameterEqZero

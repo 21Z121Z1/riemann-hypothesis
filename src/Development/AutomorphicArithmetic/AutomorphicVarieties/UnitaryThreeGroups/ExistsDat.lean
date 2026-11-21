@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IotaFacts
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.OpenField
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompIne

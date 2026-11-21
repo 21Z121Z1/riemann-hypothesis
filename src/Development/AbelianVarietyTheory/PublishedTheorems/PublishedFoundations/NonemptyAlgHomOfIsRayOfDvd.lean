@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.FiniteDimensionalOfSz
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ForallHeckeIdealIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NotInjectiveTwoPrimesEqualNormCofinite

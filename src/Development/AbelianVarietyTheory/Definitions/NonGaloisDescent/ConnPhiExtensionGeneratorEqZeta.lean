@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesVecReduceModUMulVec
 import Mathlib.Data.Int.Star
 import Mathlib.Data.Matrix.ColumnRowPartitioned

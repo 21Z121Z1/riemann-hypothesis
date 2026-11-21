@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UnivChartOfStandardSmooth
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.LocalProperties.FinitePresentation

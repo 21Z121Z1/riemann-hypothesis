@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RelativeDeterminantIsometryNormOne
 open NumberField Formalism.BasicNotions Classical Formalism.MainNotions Formalism.L2.Ker
 set_option maxHeartbeats 1000000 in

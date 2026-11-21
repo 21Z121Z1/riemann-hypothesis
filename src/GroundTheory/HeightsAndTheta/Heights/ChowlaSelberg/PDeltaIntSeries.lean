@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.DeltaIntSeries
 import Mathlib.Combinatorics.Enumerative.Pentagonal.PowerSeries
 import Mathlib.Data.Int.Star

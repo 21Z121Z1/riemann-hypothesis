@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.KerIsTerm
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.InvSmulMemOfRedL
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TilLatticesOfLevel

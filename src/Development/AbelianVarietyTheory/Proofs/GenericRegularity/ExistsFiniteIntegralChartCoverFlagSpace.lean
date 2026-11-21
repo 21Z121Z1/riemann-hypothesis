@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFlagCellChartOverModelChartStatement
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsFiniteMchartCover
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsIntegralPivotDecomposition

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.WeylRatio
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.BlockSum
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.PieriRules.WeylVanish

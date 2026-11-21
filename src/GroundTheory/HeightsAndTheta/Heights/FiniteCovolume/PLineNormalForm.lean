@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StLineNormalForm
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PIdealClassesFinite
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PLineCoeffsFG

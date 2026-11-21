@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IntegralLocallyConstCochainModPow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmallTracesSubgroupGaloisTowerTopStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteGaloisApproximationStatement

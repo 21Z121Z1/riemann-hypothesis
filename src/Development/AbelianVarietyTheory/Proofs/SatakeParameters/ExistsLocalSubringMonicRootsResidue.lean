@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalMapMul
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 import Mathlib.RingTheory.PicardGroup

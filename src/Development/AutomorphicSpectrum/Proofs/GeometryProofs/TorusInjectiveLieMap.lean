@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TorusKernelPrimeQuotientStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KillsOverSquareZeroLiftStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.KillsOverOfAdicCompletionStatement

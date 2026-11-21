@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GroupCohomology.CupCorA
 import Mathlib.Tactic.Polynomial.Basic
 

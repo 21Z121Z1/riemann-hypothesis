@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandCLMInfApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsArchimedeanRapidKernelOperatorFinsetSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumNormEntriesMulLe

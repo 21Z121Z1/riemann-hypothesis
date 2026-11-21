@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.RealTest
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.Imports
 import Development.WeilBound.ThetaLifts.LeviDeterminants.LagrangianUniqueness.LagAlg

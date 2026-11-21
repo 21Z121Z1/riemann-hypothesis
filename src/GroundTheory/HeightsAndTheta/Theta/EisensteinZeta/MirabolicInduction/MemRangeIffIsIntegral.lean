@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
 import GroundTheory.AutomorphicForms.HermitianDisc
 import GroundTheory.HeightsAndTheta.Theta.CMDatum

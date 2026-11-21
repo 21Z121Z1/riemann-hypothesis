@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.ExistsSE
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.GESymmApply
 

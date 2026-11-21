@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.GaugeRatio
 import Formalism.LocalToGlobal.ProjectiveLattices.IsExpChart
 import Mathlib.RingTheory.MvPowerSeries.Rename

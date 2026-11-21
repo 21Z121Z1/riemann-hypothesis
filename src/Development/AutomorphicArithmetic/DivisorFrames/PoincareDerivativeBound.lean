@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoincareMetricBoundPuncturedPolydisc
 open Matrix Filter Topology
 open scoped ComplexOrder

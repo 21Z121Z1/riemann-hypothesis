@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsFieldOrExistsSwappedIdempotentOfQuadraticEtaleStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittExtensionHermitianFramesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WittFreeTuplesSplitQuadraticEtaleStatement

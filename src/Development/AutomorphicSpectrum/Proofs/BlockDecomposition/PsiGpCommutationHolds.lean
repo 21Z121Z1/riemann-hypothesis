@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.LeibnizOrders.LeibnizOrd
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoFunSmooth
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPsiMinus

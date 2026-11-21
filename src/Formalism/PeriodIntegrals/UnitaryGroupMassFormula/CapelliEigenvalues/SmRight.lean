@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.CapelliEig
 
 open Matrix PI.UpqRep

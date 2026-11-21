@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.GenPieces
 
 open MvPolynomial Filter Topology PositivityTheory.Rg.Fx

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ScalarCommutation.OrbZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeCentralizerComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RatIntOfIsIntegral

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CyclotomicNorms.StatementTW
 
 open Finset Polynomial

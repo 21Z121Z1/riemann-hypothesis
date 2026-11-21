@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmatEqLowMat
 import Mathlib.Analysis.Matrix.PosDef
 open ReciprocityTheory.ChartRestriction.G.FD MeasureTheory GlobalTheory.IntBall

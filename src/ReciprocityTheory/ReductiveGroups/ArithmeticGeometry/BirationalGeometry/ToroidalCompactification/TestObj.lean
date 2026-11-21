@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Order.PUnit
 import Mathlib.RingTheory.WittVector.IsPoly

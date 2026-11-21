@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralQuotientOfValuationSubringAboveDvr
 open GlobalTheory.Published.AbVarRed IsLocalRing
 set_option maxHeartbeats 1000000 in

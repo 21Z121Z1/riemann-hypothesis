@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemContraIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.MeasurableCompInfGL
 

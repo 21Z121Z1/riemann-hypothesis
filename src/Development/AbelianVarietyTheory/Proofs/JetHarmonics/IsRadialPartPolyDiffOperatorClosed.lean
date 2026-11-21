@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.BasicLiftAll
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.JdPolyOKPolynomialOperators
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolyOpExistsComposition

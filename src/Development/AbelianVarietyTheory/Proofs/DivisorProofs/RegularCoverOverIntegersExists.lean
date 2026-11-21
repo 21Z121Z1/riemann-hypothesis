@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRegularCoverOfAlteration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackPointResidueNonzero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimensionOfDominantFlatCover

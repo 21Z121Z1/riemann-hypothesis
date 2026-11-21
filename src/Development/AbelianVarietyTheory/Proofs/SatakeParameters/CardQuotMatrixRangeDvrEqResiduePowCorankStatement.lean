@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CardQuotMatrixRangeDvrEqResiduePowCorank
 open GlobalTheory.LatHecke GlobalTheory.SatakeInv
 set_option maxHeartbeats 1000000 in

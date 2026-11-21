@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResAlgSplitTwo
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FixedNondeg
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedQuotientCardStatement

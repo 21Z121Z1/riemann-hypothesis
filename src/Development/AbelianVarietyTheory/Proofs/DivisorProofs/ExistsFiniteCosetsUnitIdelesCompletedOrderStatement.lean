@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteCosetsUnitIdelesCompletedOrder
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.CMVal.Euler
 set_option maxHeartbeats 1000000 in

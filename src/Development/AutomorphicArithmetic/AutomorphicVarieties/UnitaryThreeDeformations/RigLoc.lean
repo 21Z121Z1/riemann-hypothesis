@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.RigFin
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.RigDesc
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.Z1fCoef

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChartNormSep
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsNormForm
 import Mathlib.RingTheory.LocalProperties.Reduced

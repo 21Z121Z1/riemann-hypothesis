@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsPolynomialModularJOfHasQExpansion
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.Polynomial.IsIntegral

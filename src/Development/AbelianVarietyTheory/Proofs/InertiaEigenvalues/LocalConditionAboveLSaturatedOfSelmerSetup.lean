@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.H1MapSubgroup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralOfNormLeOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RestrictionH1MemBlochKato

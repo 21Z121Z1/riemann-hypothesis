@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.Unitarize
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.DecompC
 

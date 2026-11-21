@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CompactFormulaCountable
 import GroundTheory.AutomorphicForms.Anisotropic
 import GroundTheory.AutomorphicForms.TraceFormulaWeil

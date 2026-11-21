@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothAbsOfLeAbs
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun

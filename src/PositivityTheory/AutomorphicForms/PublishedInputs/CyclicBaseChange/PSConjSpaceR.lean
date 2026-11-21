@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.CyclicBaseChange.SConjSpaceC
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousMapGL
 import GroundTheory.GlobalFields.TateThesis.AdeleMeasure

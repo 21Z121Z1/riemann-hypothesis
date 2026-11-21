@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormPowDivFactorialLe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DatumCurveIntegralUnitDiscModel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoverFactoringProjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSectionOfIsIsoRestrict
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemConeOfMem

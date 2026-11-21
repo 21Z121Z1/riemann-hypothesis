@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralExtensionFiniteAdelesBasicProperties
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne
 

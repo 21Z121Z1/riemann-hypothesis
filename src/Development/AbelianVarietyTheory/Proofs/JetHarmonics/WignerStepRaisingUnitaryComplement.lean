@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.OpNormSumSmulSqLe
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HypAndAdj
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PieriRaisingSubmoduleGlSuccStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EpsilonSumLeviZero
 open MeasureTheory Finset GlobalTheory.Chamber
 open scoped InnerProductSpace

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplierLine
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProjectStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsDenseNonvanishingStatement

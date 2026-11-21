@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyEqPowOfIrreducible
 import Mathlib.RingTheory.Artinian.Instances
 import Mathlib.RingTheory.PiTensorProduct

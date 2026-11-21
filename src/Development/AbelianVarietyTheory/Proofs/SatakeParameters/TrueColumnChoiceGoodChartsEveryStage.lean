@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueColumnsGoodChartsMiddleStepsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueColumnChoiceStepZeroChartsGoodStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodChartLastStepAllTuplesStatement

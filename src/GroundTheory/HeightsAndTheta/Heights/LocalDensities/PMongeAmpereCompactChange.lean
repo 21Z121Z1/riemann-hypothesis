@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.Statements
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.CompactSupportStokes
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.IwasawaDecomposition
 open CompanionTheory.Bmu
 set_option maxHeartbeats 1000000 in

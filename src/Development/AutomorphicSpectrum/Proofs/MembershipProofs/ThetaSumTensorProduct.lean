@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.RemovableLogGrowthSingularityStatement
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.SeesawThetaDualPairStatement
 

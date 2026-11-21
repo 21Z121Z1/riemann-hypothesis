@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrPlaceTopFormOrdersApiStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueTopFormAlongPrimeDivisorAdjunctionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoDimLocalModelPrimePlacesAlongParametersStatement

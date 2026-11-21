@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AmpleOnLocalizedModelStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DomTrans
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FreeClosedHoldsStatement

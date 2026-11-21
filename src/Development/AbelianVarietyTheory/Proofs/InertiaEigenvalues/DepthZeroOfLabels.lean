@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitCharacterTame
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjDualOfLabelsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TameBlockTypeAtSplitPlaceStatement

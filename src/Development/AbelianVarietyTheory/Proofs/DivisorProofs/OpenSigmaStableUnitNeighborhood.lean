@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsNontrivialHeckeChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntAEMulMem
 open scoped TensorProduct Matrix

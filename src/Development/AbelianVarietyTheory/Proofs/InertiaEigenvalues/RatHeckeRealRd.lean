@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.HeckePin
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeCharacterValueAtSplitPlaceDeterminantStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitOffOutsideS0Statement

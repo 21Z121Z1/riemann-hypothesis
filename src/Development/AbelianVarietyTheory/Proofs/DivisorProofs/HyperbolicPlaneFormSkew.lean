@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineDerivativeAdditiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieAlgebraRepDerivationMatrixStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationsCommuteDistinctPlacesStatement

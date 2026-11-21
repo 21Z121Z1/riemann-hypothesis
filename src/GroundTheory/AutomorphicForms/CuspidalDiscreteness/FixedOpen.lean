@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SmoothingFinite
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspCompact
 import Mathlib.Analysis.Convex.Integral

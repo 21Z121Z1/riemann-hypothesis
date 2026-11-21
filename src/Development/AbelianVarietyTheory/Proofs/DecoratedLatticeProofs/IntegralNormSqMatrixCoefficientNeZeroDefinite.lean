@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelADef
 import Development.AbelianVarietyTheory.Definitions.Foundations.OfInfProjInfMulOfFinProjFin
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfInAMul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConstantCoeffMapEqZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueIsEval

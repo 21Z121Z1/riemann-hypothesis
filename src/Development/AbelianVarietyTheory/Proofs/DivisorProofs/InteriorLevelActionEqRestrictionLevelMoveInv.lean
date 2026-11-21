@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentStabilizerActsByLevelChange
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsTransitionUnique
 import Formalism.LocalToGlobal.ProjectiveLattices.GenSpecSep

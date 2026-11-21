@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaussSumFiltrations.EvenPos
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.BrData
 

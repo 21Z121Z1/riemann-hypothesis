@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtPlace
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

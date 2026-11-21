@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothGrpSchemeDescendsToFgSubring
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricallyConnectedDescendsToFinitelyGenerateStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SeparatedPropernessFgSubalgebraStatement

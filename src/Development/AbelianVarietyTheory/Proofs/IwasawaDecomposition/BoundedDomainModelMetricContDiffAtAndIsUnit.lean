@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.Statement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasurePreservingCompEquiv
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExtFormAdjEqNegSecondForm

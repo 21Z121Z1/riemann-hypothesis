@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusOfPadic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TiltIsDomainValuationRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusTwistedDivisibilityStatement

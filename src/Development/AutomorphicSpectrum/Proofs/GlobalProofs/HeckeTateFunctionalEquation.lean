@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsCMTypeEmbedding
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalFinite
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HeckeCharacterConductorExponentStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FixedIntegersIsUnitOfNotMemPrimeSpan
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OneAddXPowSubOneMem
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PowSubOneMem

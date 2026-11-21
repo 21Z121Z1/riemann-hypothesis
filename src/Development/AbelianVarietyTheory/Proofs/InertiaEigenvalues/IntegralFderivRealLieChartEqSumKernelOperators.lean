@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralFderivChartEqOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RapidlyDecreasingKernelMulAdjointConjCoefficientStatement
 open NumberField MeasureTheory Matrix GlobalTheory.CuspRep GlobalTheory.JSW

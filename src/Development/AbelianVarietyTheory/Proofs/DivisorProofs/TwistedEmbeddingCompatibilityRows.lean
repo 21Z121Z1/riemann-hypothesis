@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSmallGenerationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientBoundTupleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIntersectionAtPlaceStatement

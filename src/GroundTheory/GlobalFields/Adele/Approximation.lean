@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsValuationSubLeOne
 import Mathlib.NumberTheory.NumberField.AdeleRing
 import Mathlib.Topology.UniformSpace.Uniformizable

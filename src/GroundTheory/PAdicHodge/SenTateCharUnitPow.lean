@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.PrincipalUnitsModule
 import GroundTheory.PAdicHodge.FieldOfNormsRam
 set_option maxSynthPendingDepth 1

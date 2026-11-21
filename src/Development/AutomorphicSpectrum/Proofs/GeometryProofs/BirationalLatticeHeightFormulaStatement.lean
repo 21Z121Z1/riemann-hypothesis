@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BirationalLatticeHeightFormula
 open AlgebraicGeometry CategoryTheory MvPolynomial NumberField IsDedekindDomain ReciprocityTheory.ChartRestriction.G.Geo GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Flat
 set_option maxHeartbeats 1000000 in

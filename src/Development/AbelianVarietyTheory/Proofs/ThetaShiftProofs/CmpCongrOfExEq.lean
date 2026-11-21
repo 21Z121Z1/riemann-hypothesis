@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FibreComparison
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FamilyUnifComponentConst
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExpEqOfIsometryMatchingMarkingsStatement

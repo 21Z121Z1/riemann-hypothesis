@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithRes
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsExamples
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.PenHost

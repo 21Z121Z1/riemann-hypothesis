@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularCoversCommonRefinementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundlePullbackCoverIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackCoverGenericPointStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GridStaircaseLatticeFirstColumnTransportStages
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLb2OfThetaTieStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricLawsAllStatesStatement

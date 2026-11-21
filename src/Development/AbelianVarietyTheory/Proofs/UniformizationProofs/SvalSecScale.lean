@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValuesNatural
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AdicSumRel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConvTermFe

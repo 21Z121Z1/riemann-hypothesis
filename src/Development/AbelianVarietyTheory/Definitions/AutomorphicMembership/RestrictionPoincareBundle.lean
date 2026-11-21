@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PullbackAndTensorModule
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FormalTwistingNeTrivial
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniformBaseChange.PullGt

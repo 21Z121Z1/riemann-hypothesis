@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinCoeffSupportTraceFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinLatticeJetSplitDirectionAdd

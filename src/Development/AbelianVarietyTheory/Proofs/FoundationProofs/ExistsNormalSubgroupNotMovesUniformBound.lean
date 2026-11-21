@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.CosetTrace
 import Mathlib.Algebra.Order.Star.Real
 

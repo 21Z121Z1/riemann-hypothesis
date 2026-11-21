@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialRepTransvectionEntries
 import Std.Tactic.BVDecide.Normalize.Prop
 open Matrix GlobalTheory.AlgWtHW

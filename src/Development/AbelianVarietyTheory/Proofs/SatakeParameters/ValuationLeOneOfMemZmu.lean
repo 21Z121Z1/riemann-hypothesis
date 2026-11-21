@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteDivLatticeQuotient
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPEqZeroOfDiv
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JetOpIntegral

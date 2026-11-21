@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsFactorialMulEulerCharTwistPowSubLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EulerCharH0H1BoundHigherStatement
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Filter Asymptotics

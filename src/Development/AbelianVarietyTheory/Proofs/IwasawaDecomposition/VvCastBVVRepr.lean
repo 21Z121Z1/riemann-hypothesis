@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.BrgStdR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LamRdefEqSgTrue
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowActSmulOfWeight

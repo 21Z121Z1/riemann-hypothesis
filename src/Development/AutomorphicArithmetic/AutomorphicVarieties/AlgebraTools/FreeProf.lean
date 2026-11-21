@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ProfDefs
 import Mathlib.Combinatorics.Quiver.ReflQuiver
 import Mathlib.Topology.Algebra.Category.ProfiniteGrp.Completion

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RedIdeal
 import Mathlib.Algebra.DualNumber
 import Mathlib.RingTheory.SimpleRing.Principal

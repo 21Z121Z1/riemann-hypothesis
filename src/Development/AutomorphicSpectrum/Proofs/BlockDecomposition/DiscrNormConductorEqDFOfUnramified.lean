@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import GroundTheory.GlobalFields.TateThesis.HeckeTheoremScaling
 open NumberField GroundTheory.Global GroundTheory.Global.IdeleGroup

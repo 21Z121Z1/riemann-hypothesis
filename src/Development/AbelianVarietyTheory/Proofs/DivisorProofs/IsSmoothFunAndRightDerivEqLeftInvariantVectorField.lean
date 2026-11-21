@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlRes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CasKOp
 import GroundTheory.AutomorphicForms.GKModules.RightRegular

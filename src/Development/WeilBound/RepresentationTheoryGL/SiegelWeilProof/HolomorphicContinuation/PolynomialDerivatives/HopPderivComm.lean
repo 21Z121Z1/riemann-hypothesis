@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.PolynomialDerivatives.NullStableAlt
 import Mathlib.RingTheory.Derivation.Lie
 import Mathlib.RingTheory.PiTensorProduct

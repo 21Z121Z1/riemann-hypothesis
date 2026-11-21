@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasSumZeroOfTwoLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDenominatorPrimeToLFiniteAdeleStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport

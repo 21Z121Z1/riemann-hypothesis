@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Development.AbelianVarietyTheory.Definitions.Divisors.ReadsOnlyOmegaFree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsometryInGam

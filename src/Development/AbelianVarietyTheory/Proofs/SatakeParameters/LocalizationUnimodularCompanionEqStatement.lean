@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalizationUnimodularCompanionEq
 open NumberField Formalism.BasicNotions Formalism.L2.PairingIndexBounds.F
 

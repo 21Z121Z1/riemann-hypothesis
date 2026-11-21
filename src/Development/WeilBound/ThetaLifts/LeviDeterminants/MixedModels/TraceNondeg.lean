@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PureSt
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.RealSt
 import Mathlib.Algebra.Module.Torsion.Prod

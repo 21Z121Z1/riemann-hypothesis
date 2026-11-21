@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergy
 import Mathlib.LinearAlgebra.Matrix.Permutation
 set_option maxSynthPendingDepth 1

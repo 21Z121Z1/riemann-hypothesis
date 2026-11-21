@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ValueMemValuationSubring
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.StalkOfAppLEEq
 

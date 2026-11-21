@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Embedding
 import Development.AutomorphicArithmetic.CrystallineRing.Acris0
 

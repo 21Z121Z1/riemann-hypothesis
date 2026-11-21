@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementB
 import Mathlib.LinearAlgebra.Matrix.DotProduct
 import Mathlib.RingTheory.PiTensorProduct

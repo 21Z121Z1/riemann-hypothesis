@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharEqOneOfTrivialSplitPlacesCMStatement
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 open scoped TensorProduct Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.KunnethLefschetz.BasisOne
 import Mathlib.CategoryTheory.CofilteredSystem
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPowerSeriesRingHomExtendingFiniteFreeStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRingHomPowerSeriesRootStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TwistTxEvEqMapArcRootStatement

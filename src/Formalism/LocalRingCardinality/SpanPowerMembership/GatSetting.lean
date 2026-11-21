@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting
 import Formalism.LocalRingCardinality.SpanPowerMembership.GatRing
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.RootBranches
 import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsAlg
 import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsSch

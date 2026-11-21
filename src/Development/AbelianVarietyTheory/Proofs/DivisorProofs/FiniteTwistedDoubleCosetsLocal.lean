@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigIterateApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteLeftCosetRepresentativesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerFiniteDecompositionStatement

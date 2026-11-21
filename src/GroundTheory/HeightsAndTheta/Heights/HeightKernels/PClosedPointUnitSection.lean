@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsClosedPointUnitSection
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCurveCharts
 import Mathlib.NumberTheory.NumberField.Ideal.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsEqAlgebraMapAddPowMul
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CrisToODToOCr
 

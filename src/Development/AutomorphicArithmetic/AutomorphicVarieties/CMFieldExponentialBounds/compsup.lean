@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.QuadraticCharacters.GaussRoot
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields
 

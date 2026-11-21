@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FnAlgClosedCore
 import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff

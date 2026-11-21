@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadAtTopLevelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadAtFromInputsStatement
 open CategoryTheory AlgebraicGeometry NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HeightTwoHondaTypeFirstCoeffNormEqOne
 open PowerSeries GlobalTheory.Honda
 set_option maxHeartbeats 1000000 in

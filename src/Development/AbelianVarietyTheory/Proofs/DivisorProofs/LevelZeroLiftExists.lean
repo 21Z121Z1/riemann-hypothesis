@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LevelOfOfSameBut
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftEquivarianceWeilModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondLinkOfWeightRows

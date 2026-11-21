@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CuspidalProjection.ContinuousFiniteAdeleSingleAdd
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspCompact
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.TorusDifference

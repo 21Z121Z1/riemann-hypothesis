@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import ReciprocityTheory.SemistableReduction.LatAll
 import Mathlib.Analysis.Calculus.FDeriv.Pi

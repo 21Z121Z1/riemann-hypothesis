@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalPairPowerSumValueStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LocalPairValueLinearStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.VerticalPairPowerSumVanishStatement

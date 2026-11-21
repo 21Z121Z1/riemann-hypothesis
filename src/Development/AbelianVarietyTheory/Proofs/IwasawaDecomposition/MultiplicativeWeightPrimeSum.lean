@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JacobiSymEqOfModEqFourMul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InPartMulOutPartMulSq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeanSqCardPrimeFactorsOutPart

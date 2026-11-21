@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Lemmata.GeneralBFactThirdBisForm.Imports
 
 noncomputable section

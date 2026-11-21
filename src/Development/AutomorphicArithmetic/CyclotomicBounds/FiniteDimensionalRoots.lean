@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Development.AutomorphicArithmetic.PrimeDiscriminants.CycImage
 import Mathlib.Topology.Connected.Separation

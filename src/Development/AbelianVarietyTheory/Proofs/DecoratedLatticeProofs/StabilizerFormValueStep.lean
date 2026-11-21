@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsTwIffCanonEq
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.TrueWtAddSSNonneg
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrdSubConjEqNeg

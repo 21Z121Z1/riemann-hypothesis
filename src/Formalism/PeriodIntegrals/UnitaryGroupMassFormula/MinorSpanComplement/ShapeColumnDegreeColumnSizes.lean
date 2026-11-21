@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.StatementA
 import Mathlib.Combinatorics.Young.YoungDiagram
 import Mathlib.RingTheory.WittVector.IsPoly

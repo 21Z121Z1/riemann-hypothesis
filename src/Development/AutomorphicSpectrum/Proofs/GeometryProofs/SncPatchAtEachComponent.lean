@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSncPatchRat
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SncChartOfSmoothCoords
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIsLocalRingIsFractionRingStalk

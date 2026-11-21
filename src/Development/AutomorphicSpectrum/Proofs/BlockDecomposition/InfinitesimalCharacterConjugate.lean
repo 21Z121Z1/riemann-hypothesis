@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuantumDetAdjointFormStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuantumDetCapelliOperatorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieOperatorHermitianSkewStatement

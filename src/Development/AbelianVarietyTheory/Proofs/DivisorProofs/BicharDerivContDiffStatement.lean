@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BicharDerivContDiff
 open scoped ContDiff
 set_option maxHeartbeats 1000000 in

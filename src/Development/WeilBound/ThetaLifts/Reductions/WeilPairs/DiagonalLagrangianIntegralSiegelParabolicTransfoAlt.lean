@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LamFormula
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ProjFacts
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SymplOHF

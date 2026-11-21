@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RefilledStagesRecord
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SetUnipotentTranslate
 import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero

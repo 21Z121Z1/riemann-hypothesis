@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeometricSideEstimates.GeometricSideQuadraticFormIdentity
 open UpperTheory.V.Lit.Geo
 open NumberField IsDedekindDomain Matrix GlobalTheory.CuspRep GlobalTheory.GKCoh UpperTheory.V.Af

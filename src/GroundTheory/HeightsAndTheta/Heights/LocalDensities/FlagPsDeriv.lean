@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.FlagPsLine
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.LeviLine
 import Mathlib.Analysis.InnerProductSpace.Calculus

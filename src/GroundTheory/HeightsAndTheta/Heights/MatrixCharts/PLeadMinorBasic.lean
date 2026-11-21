@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsCusp
 import Mathlib.Analysis.Matrix.PosDef
 set_option maxSynthPendingDepth 1

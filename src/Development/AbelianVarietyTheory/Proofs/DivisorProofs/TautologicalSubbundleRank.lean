@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPointInSomeCell
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagStalkColumnSpanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFlagPointStalkStatement

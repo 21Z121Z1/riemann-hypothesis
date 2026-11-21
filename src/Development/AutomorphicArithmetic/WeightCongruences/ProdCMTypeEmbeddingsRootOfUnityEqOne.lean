@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WeightCongruences.IsRootOfIntegral
 
 open NumberField Formalism.BasicNotions

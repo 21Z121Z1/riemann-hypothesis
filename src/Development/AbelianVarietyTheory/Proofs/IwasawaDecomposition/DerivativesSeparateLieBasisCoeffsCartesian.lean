@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CombSnd
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.IsLieCombIffProd
 open AlgebraicGeometry CategoryTheory Limits NumberField TopologicalSpace

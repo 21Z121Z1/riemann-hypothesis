@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacedBesselPairTranslateStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacedBesselPairCharacterStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlacedBesselPairScalarStatement

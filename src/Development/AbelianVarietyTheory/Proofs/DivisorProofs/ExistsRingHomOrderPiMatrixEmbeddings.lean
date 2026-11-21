@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPadicAlgClRingEquivComplexCompEqOfCountabl
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Mathlib.RingTheory.PiTensorProduct

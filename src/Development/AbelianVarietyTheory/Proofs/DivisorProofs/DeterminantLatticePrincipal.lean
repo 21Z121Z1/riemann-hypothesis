@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenProjectionQuotientLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSpanningImageLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExteriorPowerSpanOfLatticeStatement

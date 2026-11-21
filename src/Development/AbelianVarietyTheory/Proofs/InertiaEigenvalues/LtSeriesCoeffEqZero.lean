@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateEndomorphismUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTatePeriodGaloisExpansionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTatePeriodThetaKernelStatement

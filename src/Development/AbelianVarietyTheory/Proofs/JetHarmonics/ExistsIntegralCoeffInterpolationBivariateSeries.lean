@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.PowerSeriesHasSumAt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffProdXSubCNormLe
 import Mathlib.RingTheory.Henselian

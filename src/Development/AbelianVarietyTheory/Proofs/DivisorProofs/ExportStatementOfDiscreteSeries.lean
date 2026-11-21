@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalExistenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalProjectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiAtCompStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.NormalFormDualOrthogonalLast
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LandherrHasse
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GenusMassSignature

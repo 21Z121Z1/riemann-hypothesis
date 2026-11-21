@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ShaFamMono
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.DecCyc
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.RootVal

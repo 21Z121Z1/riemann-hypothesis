@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FischerInnerFormFockSubstitutionUnitaryInvariant
 open Formalism.BasicNotions Formalism.IndefR.Datum Formalism.IndefR.Links
 set_option maxHeartbeats 1000000 in

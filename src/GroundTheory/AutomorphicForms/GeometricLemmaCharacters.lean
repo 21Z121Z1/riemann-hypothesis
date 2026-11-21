@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.JacquetAdmissible
 import GroundTheory.AutomorphicForms.GeometricLemmaCellGroups
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsIntegralOfForallMemDiscreteValuationSubring
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsChartOfIsLocalRing
 open AlgebraicGeometry CategoryTheory Limits NumberField TopologicalSpace

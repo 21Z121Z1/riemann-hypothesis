@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SigmaSigmaOfCm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousPlaceAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompactShellNsmul

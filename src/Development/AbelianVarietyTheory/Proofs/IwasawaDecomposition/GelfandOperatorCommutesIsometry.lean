@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousKapSymm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TracePowEq
 

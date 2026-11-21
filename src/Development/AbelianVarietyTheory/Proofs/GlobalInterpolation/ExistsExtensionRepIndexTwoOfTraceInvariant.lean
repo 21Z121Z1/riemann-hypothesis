@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ColRepSemisimple
 
 open Formalism.MainNotions.N Polynomial

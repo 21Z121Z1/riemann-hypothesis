@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HessRelFnB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PnPosOfGeneratesAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjPointNormPowEq

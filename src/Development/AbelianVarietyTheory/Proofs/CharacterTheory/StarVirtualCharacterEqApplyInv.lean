@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.CommutativeAlgebra.AbByPOfComm
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CentralIdempotentIrreducibleCharacterProps
 open Polynomial GlobalTheory.CuspGL GlobalTheory.BI

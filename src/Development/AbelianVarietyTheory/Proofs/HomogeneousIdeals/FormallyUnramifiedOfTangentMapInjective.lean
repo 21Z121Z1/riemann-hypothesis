@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Order.PUnit

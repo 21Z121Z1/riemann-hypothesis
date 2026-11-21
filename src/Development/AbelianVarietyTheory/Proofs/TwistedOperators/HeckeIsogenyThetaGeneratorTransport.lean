@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckePointLawsOfTransport
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsThetaTraceMulTIff
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSubgroupOfFinite

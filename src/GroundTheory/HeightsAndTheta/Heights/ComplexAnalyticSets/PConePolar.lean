@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StConePolar
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceDim
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StConeChartGram

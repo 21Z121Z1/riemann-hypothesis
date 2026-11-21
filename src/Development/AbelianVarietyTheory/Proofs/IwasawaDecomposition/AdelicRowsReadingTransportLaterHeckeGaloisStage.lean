@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WeakCharInertPartRealAdelicDataTransport
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftTieOfPk
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodCopy

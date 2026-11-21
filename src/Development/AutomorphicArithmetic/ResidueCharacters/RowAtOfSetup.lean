@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ResidueCharacters.ConclusionSplitOfHub
 import Development.AutomorphicArithmetic.ResidueCharacters.PlaceTypeConj
 import Development.AutomorphicArithmetic.ResidueCharacters.LenUnitInvariantsLe

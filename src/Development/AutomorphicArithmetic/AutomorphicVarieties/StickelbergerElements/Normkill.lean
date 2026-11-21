@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Mk0IdMapCongr
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.TotallySplit

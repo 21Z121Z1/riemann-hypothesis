@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IsScaleStable
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PTangentGaussInvariant
 set_option maxSynthPendingDepth 1

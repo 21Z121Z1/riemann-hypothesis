@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RestrictHomApply
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LocalLanglandsGL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStableIsCompl

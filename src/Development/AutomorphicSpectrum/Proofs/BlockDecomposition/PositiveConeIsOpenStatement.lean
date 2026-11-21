@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PositiveConeIsOpen
 open MeasureTheory Matrix Topology Filter
 open scoped ContDiff ENNReal ComplexOrder Pointwise

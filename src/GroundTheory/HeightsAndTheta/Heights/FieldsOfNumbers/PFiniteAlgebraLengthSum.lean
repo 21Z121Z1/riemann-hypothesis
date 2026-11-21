@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsFiniteAlgebraLengthSum
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.LengthSumLocalizations
 import Mathlib.Tactic.Polynomial.Basic

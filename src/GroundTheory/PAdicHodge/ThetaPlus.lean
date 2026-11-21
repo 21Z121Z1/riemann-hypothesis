@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.KerTheta
 import Mathlib.RingTheory.AdicCompletion.LocalRing
 import Mathlib.RingTheory.Perfectoid.BDeRham

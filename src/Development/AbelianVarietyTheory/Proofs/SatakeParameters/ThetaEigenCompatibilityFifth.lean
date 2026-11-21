@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodLabelsRankPartParameterCuspidalStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaEigenCompatibilityEighthStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodPlaceOutsideBadSetsStatement

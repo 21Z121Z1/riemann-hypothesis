@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalPointModelEvalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardCharContinuousNontrivialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalSpanTranslatesOfNonzeroSchwartzStatement

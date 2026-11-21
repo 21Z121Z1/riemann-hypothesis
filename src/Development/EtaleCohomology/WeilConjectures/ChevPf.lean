@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.WeilConjectures.ContinCut
 import Mathlib.NumberTheory.Padics.ProperSpace
 import Mathlib.Topology.Connected.Separation

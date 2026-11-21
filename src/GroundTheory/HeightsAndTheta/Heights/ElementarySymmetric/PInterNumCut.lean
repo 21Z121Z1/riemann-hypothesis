@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TensorSubInsertion
 set_option maxSynthPendingDepth 1
 

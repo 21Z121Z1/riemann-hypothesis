@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NoCommonZeroCombVal
 
 set_option autoImplicit false

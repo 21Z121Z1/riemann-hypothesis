@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaPartD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftInvSubtypeSum

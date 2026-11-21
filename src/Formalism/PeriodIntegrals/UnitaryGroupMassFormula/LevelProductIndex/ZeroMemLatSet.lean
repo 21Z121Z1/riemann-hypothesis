@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelProductIndex.Development
 
 open Matrix NumberField IsDedekindDomain

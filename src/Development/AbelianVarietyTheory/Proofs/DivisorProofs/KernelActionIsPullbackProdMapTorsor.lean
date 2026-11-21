@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCharacter
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
 import Mathlib.RingTheory.WittVector.IsPoly

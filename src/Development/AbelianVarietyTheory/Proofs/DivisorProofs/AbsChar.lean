@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHermNDSmulSkewForm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CentralExponentBoundOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterExponentListStatement

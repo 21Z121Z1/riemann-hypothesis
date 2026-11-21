@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOrIsEmptySubschemeOfPrimeCharts
 open CategoryTheory AlgebraicGeometry TopologicalSpace
 open scoped TensorProduct

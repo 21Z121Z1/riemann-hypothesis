@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Formalism.ConjugateSelfDual.Statement
 import Mathlib.RingTheory.Valuation.LocalSubring

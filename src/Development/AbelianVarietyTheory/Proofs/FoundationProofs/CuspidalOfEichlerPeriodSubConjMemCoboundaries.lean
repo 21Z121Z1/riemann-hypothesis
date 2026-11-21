@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EichlerPeriodCocycleMemCocyclesAndEqStatement
 import Mathlib.NumberTheory.ModularForms.QExpansion
 import Std.Tactic.BVDecide.Normalize.Prop

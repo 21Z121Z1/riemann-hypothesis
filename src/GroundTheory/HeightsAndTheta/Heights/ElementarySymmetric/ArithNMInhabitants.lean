@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StArithNMLift
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Reading
 set_option maxSynthPendingDepth 1

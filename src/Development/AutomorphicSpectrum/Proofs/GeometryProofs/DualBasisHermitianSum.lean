@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SesqSesquilinearSkewHermitianStatement
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 

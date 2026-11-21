@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelActionIsPullbackProdMapTorsorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKernelActionTripleOverlapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyTrivialUnitCocycleSchemeStatement

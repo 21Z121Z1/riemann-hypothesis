@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkIdComapOfAffine
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.Monomial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatExtensionRegularSequenceStatement

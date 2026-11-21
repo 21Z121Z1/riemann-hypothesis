@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLaurentConstantTermFormFunctionField
 open GlobalTheory.PD GlobalTheory.CechDR KaehlerDifferential
 set_option maxHeartbeats 1000000 in

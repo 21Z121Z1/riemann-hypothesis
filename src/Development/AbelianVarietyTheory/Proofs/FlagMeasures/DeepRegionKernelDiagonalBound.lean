@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.DeepKernelBound
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.DeepSetBound

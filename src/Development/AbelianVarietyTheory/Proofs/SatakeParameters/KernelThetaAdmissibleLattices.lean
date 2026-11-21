@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NatCastMemOfPlace
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepComb
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntPull

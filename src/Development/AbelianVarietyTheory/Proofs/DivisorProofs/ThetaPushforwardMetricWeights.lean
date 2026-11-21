@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPeriodChartDualRiemannStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusIntegralChangeOfParametrizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothIntegralOverUnitCubeStatement

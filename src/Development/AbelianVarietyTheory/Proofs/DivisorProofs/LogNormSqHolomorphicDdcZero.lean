@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormSmoothOnCover
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Topology.Sheaves.Presheaf

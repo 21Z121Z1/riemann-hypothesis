@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ThreeLeLevel
 set_option maxSynthPendingDepth 1
 

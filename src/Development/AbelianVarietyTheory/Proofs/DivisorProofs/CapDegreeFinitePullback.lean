@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFlatLocusCodimBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFlatCoverExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackVerticalDivisorIsoStatement

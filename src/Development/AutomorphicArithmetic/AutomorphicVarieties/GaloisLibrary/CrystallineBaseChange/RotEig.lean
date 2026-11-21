@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.HfStmt
 
 open NumberField IsDedekindDomain GlobalTheory.CuspRep Matrix UpperTheory.V

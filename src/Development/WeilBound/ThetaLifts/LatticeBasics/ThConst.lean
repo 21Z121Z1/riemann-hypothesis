@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstMatch
 import Development.WeilBound.ThetaLifts.LatticeBasics.ThConstAn
 import Development.WeilBound.ThetaLifts.FrameEstimates.SquareIntegrableWeilRange

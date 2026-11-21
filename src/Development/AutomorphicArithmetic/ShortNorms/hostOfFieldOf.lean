@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.Imports
 import Development.AutomorphicArithmetic.CharacterBoxes.PairRows
 import Development.AutomorphicArithmetic.CharacterBoxes.RealBox

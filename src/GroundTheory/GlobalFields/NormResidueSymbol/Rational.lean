@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.NormResidueSymbol.RationalDiagonal
 import GroundTheory.GlobalFields.NormResidueSymbol.RationalCyclotomic
 

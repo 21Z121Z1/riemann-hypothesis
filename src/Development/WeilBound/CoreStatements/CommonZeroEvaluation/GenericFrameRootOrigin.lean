@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginRootIndexBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TriangularSpanCoeffRatio
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapLieModelLatticeStatement

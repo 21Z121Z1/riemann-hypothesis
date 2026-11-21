@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupExpTwoSidedInverseUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameDualStatement
 

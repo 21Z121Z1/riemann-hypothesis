@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.GalExt
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.RepNmSucc
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormProd

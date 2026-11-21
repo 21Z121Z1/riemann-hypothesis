@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniformisationTorusMonoAndFactor
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeConditionsProduct
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne

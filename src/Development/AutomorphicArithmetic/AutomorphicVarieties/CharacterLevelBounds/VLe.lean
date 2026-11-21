@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.SelFam
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LocUnr
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PlacesQ

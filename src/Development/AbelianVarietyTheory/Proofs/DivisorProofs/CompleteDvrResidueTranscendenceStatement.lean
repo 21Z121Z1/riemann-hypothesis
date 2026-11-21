@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompleteDvrResidueTranscendence
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain IsLocalRing
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj GlobalTheory.FactorDepth

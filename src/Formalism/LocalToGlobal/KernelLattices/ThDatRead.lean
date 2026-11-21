@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
 import Formalism.LocalToGlobal.KernelLattices.MatrixKernelDiamondCommutation
 

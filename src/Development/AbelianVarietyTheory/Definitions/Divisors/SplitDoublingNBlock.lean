@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 import Mathlib.RepresentationTheory.Coinduced
 import Mathlib.RepresentationTheory.Irreducible

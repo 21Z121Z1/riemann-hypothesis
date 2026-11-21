@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BkOnLeMapOfSurjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PairingEquivariantStatement
 

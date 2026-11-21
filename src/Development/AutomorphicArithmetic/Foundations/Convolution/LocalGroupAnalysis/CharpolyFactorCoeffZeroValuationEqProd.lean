@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.SelmerRankBounds.EllipticityFromProductFormula
 import Mathlib.RingTheory.Valuation.LocalSubring
 open PositivityTheory.Rg.Tf.Geo

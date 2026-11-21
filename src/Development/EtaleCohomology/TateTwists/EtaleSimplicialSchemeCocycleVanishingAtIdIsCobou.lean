@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.TateTwists.EtaleSimplicialCochainExistsFromNaturalSections
 import Mathlib.Tactic.Polynomial.Basic
 

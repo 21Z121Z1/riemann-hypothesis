@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FiniteMinimalPrimes
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterAlgRes
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals

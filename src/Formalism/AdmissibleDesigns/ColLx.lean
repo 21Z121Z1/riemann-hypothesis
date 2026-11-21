@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.ColumnUnramifiedCharacter
 import Formalism.AdmissibleDesigns.IsDROfWpIso
 import Formalism.AdmissibleDesigns.MemIntegralSpanIffImage

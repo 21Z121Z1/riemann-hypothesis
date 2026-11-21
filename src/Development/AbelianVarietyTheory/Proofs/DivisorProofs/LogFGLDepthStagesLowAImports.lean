@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
 
 namespace GlobalTheory.DepthStages

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MapExactMiddle
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GmultTransport
 

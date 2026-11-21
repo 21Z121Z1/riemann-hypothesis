@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LTensorLeibniz
 import Development.AbelianVarietyTheory.Definitions.Divisors.EllFamNontrivial
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

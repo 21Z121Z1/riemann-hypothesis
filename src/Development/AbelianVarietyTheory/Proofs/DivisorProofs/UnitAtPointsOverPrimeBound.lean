@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducesPl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodReductionExtendsRegular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPointClosureExtension

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryEigenIsotropicVectorLocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLocalTorusFactorizationStatement
 open scoped TensorProduct NNReal Matrix

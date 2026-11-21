@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeCollarCompare
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PTubeFormCompare
 import Mathlib.Algebra.Ring.IsFormallyReal

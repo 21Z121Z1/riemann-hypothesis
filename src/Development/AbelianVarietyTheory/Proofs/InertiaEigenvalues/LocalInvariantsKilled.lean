@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VecPairApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RepOnEqOfEqOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NatCastEqOneOfMod

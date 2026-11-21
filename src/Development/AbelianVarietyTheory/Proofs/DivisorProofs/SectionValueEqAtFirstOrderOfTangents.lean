@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FrameMatrixHasSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValRPowIso

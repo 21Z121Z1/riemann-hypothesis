@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineH2SmallCoverBijectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DividedPowerFiltration
 import Mathlib.Tactic.Monotonicity.Lemmas

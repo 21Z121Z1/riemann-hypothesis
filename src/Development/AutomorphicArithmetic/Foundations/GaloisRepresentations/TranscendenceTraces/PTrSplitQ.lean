@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TranscendenceTraces.IsolateSpec
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.Tactic.Polynomial.Basic

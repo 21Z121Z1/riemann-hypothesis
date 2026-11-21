@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetLemmaHolds
 open GlobalTheory.PRep PositivityTheory.SphericalProduct
 set_option maxHeartbeats 1000000 in

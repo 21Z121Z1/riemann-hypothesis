@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PolarisationModuleIndex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FractionalIdealGeneratedPrimeToLStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationFormExistsForCmObjectStatement

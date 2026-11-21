@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanBdLeSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagNonempty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnectedStatement

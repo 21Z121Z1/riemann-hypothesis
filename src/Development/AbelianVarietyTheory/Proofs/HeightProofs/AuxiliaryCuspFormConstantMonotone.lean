@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.BirationalOfFormRatiosFullTrdeg
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PageHypothesesAtCuspStatement

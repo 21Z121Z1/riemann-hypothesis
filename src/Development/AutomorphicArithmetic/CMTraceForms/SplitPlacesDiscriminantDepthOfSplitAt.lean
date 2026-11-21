@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CMTraceForms.ExistsPrimitiveOrthogonalIdempotentsSumEqOfNoeth
 import Development.AutomorphicArithmetic.CMTraceForms.ExistsSplitIdempotentOfSplitAt
 import Development.AutomorphicArithmetic.CMTraceForms.TraceFormDecompositionCMDatum

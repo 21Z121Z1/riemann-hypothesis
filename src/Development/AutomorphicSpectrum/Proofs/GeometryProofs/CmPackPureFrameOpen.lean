@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TransitionMatrixPeriodFrameStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackEigenPeriodStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TangentVectorsBaseChangeStatement

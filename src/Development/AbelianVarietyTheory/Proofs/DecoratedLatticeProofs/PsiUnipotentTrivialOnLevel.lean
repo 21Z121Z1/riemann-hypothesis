@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicPointComponentsAtPlacesLatticesVacua
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.FstACoordOfInfPart
 

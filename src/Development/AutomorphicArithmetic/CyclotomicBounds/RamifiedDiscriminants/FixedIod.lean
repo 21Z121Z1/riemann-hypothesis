@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Development.AutomorphicArithmetic.PrimeDiscriminants.CycImage
 

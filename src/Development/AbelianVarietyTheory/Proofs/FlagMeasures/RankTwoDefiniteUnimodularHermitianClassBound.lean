@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ClassNumberLeMinkowskiCount
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RootDiscrGeThreeHalvesOfIsTotallyComplexStatement

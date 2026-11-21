@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LieLatticeData
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
 import Mathlib.RingTheory.SimpleRing.Principal

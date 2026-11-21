@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GoodPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsDominantPullbackFstOfFlatOfInjective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsActionModelOfExt

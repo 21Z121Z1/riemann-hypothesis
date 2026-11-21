@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SizeAt
 import Development.AbelianVarietyTheory.Definitions.Divisors.TieTest
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.NormSmall

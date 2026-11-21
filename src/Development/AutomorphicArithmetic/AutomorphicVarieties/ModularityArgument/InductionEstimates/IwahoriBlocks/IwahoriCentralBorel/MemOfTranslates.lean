@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.RestScalar
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SphRank
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.EigBasic

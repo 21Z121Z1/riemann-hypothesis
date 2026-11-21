@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LePreimageOfClosedPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAffineHomOfField
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj

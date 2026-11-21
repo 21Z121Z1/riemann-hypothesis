@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DformRelEquivalence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BiInvariantConjugacyClassesFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefinitePairTermEqCentraliserOrbitSumStatement

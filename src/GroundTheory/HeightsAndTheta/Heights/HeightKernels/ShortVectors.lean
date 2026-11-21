@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KernelsMatrix
 import Mathlib.MeasureTheory.Group.GeometryOfNumbers
 import Mathlib.Order.CompletePartialOrder

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RembApply
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TraceDualDifferent
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

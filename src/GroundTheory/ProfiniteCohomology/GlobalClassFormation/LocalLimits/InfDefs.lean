@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.IsScalarTowerFiniteSubfieldAlgebraicClosure
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Infinite
 set_option maxSynthPendingDepth 1

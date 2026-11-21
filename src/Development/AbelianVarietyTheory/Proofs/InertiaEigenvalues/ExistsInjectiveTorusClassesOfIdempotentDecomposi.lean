@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DltEqZero
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients
 import Mathlib.RingTheory.PiTensorProduct

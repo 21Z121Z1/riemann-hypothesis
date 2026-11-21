@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelInner
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelGen
 

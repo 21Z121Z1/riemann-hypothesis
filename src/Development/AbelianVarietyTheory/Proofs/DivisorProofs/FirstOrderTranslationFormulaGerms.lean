@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompProdOfFn
 open AlgebraicGeometry CategoryTheory Limits NumberField

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianLatticeMajorant
 open Module NumberField IsDedekindDomain Formalism.BasicNotions Formalism.DivisionValues
 open scoped Matrix ComplexOrder

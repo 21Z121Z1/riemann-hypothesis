@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedModuleSystemRestrictionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutingOperatorsUniformKernelStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CommutingOperatorsUniformCokernelStatement

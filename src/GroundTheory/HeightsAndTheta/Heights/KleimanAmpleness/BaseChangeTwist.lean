@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.BaseChangeObj
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistAlg
 set_option maxSynthPendingDepth 1

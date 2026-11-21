@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.IdeleRoots.TorusPowers.HeckeTensor
 set_option maxSynthPendingDepth 1
 

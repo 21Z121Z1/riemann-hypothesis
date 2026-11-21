@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.FibreSum
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.Vdm
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SchurDeterminants.PMixDet

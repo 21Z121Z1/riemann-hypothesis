@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UntiltFrobeniusLaurentSeriesAddSubLeStatement
 open Formalism.Per GlobalTheory.PSer
 open scoped Formalism.Per

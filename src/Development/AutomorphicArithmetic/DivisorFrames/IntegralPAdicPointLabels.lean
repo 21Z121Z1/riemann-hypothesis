@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.PAdicPointTorsionFrame
 import Development.AutomorphicArithmetic.DivisorFrames.TorsionCharacterIntegralPoint
 import Development.AutomorphicArithmetic.DivisorFrames.PAdicLatticeMembershipApproximated

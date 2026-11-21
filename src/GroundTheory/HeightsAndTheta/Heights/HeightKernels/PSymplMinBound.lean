@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsSympl
 import Mathlib.Tactic.ENatToNat
 set_option maxSynthPendingDepth 1

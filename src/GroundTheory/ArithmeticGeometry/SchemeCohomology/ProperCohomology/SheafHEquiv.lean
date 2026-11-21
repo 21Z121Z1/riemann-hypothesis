@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.SheafHOver
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechSeparated
 import Mathlib.Algebra.Homology.DerivedCategory.Ext.MapBijective

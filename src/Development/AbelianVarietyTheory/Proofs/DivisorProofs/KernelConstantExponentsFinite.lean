@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.LateralTheory
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 

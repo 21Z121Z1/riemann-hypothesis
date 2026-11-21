@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeometricSideEstimates.AdmissibleFunctionClassClosureProperties
 open UpperTheory.V.Lit.Geo
 open NumberField GlobalTheory.CuspRep GlobalTheory.GKCoh UpperTheory.V.Af

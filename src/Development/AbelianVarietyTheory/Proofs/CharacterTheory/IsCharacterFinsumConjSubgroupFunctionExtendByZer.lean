@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.IsCharacterOverSubfieldOfRepresentation
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.WittVector.IsPoly

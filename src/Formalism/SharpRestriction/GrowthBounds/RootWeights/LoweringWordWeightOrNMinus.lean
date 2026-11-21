@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.NontrivialIsotypicWeightZeroKilled
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.LinearAlgebra.Eigenspace.Basic

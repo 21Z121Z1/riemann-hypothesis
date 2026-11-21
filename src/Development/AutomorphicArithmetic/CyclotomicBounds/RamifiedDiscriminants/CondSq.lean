@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SmallRam
 import Formalism.LocalRingCardinality.DataHost
 

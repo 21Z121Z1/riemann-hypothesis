@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.StabilizerIndexVolumes.PtMatIsUnit
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LocClosed
 open scoped Classical ENNReal

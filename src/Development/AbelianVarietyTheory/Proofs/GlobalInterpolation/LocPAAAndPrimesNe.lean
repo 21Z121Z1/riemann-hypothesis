@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AbsNormSpanInvol
 import Formalism.LocalToGlobal.ProjectiveLattices.HostRank
 import Development.AutomorphicArithmetic.CyclotomicBounds.ZmodTwoQuadraticNeZero

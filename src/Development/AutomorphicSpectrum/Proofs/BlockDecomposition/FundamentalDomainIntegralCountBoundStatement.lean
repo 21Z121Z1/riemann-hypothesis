@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainIntegralCountBound
 open MeasureTheory Topology
 open scoped ENNReal

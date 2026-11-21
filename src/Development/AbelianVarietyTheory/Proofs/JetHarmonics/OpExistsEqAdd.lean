@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DifferentPowerUnramifiedIff
 
 set_option autoImplicit false

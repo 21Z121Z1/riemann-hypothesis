@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDerivAtOscillatorIntegralSymplecticPathStatement
 import Mathlib.Analysis.Normed.Unbundled.RingSeminorm
 import Mathlib.LinearAlgebra.Matrix.AbsoluteValue

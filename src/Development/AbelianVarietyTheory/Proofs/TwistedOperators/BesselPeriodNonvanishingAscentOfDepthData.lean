@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BesselPeriodAscentOfTowerRungsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstRowDataHaveDepthStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockConjugatesSpanDepthDataStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsPresents
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussianWeightTotalMassStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SigmaCompactDisjointRefinementStatement

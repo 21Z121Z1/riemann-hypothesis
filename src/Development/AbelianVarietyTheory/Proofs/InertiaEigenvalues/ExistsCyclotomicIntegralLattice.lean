@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientRingIntegersCompactAdicProperties
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Mathlib.RingTheory.TotallySplit

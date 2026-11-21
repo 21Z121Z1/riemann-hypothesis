@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.LowerBlockMatrices
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.BlockIdentityExpansion
 

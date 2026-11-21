@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.StepExactNS
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStageTrivialTwist
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjPlNeOfIsSplit

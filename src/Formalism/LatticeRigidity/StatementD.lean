@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GelfandTransference.EnergyIdentity
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.LinearAlgebra.Matrix.PosDef

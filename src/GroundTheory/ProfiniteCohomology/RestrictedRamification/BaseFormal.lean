@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.PoincarePairs.Natural
 import GroundTheory.ProfiniteCohomology.CupProducts.Graded
 import GroundTheory.ProfiniteCohomology.PoincareDuality.Induced

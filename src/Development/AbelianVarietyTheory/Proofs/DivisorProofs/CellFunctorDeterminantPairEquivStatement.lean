@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorDeterminantPairEquiv
 open GlobalTheory.SmGL GlobalTheory.PRep GlobalTheory.IndLineGL
 open scoped TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTied6
 import Development.AutomorphicArithmetic.ThetaCorrespondence.LocalComparison.LocTiedOf6
 

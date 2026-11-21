@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerRestrictionRankStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaSumInvariantRationalUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymplecticPairingRankOneStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuationRingCentreInChartStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareGenericStatement

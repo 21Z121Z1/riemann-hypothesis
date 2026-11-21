@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Tactic.Monotonicity.Lemmas

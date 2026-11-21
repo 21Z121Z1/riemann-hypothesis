@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowPropertiesStatement
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 open GlobalTheory.KZ GlobalTheory.KZ.H3 Matrix

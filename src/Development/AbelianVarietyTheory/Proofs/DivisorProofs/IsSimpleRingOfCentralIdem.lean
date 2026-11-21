@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGDatumOneOneOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsReducedTensorIntNumberField
 import Mathlib.RingTheory.SimpleModule.WedderburnArtin

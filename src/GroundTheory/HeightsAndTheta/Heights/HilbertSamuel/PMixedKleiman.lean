@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsMixedKleiman
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsMixedKleimanTop
 set_option maxSynthPendingDepth 1

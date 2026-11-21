@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.TameGeneratorProjectors
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SubMemMaximalIdealIff

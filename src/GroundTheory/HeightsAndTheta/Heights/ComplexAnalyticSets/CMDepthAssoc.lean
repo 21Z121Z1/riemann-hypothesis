@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTransverseObjects
 import Mathlib.RingTheory.Ideal.AssociatedPrime.Localization
 import Mathlib.RingTheory.PicardGroup

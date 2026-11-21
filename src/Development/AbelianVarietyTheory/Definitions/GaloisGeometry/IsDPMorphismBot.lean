@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.OfNatTrans
 import Mathlib.Algebra.DualNumber
 import Mathlib.RingTheory.DividedPowers.DPMorphism

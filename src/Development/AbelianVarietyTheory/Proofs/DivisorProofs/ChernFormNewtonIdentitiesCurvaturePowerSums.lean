@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.LogCharpoly
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory Filter Topology

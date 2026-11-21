@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionSubgroupSchemes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramRightMulActionLaws

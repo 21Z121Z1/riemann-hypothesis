@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsCompatOfLocal
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSegreCoordinates
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsThetaPtOverMove

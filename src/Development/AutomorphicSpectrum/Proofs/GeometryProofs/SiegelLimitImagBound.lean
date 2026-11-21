@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MulVecEqZeroOfPair
 
 open Filter Topology Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.IsotypicProjectorTraceFormula
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.InvariantProjectionExtremalFormula
 

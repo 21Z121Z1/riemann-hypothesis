@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DescendToThetaConstantFieldStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaObjectOverCompleteDvrSpecialisationStatement
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsArBaseAway

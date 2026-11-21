@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.HermitianTraceFormVanishing
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.Lattice

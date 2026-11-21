@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.HasCompactSupportCompHypInclAt
 
 namespace ReciprocityTheory.AnForm.A

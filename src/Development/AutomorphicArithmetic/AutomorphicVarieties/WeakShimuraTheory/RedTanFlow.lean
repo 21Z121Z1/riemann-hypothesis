@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.RedTanDefs
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Monotonicity.Lemmas

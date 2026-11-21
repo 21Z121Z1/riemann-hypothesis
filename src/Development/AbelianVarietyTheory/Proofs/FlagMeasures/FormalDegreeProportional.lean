@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HaarEqSmul
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale

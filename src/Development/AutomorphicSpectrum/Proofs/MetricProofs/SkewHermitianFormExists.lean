@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.BlockGLSupportedMemMirabolicSupported
 import GroundTheory.AutomorphicForms.HermitianOrthogonal
 import Mathlib.Algebra.Order.Star.Real

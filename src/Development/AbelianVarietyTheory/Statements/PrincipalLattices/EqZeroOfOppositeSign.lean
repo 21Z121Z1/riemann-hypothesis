@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.FiniteDimensionalBase
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.LogHermFormOfUnitDiscriminant
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEquivOfSumEq

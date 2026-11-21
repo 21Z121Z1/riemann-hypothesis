@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.RegDom
 import Mathlib.RingTheory.OrderOfVanishing.Basic
 import Mathlib.Tactic.Polynomial.Basic

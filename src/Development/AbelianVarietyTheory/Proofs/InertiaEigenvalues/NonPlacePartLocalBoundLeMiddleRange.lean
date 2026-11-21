@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.SmallFacts
 import Formalism.SharpRestriction.LevelLetterCocycles.NEqRZeroMulXPow
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CommutingEndomorphismCondition

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardPermExistsStableSubsetLe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SquarefreeLabelTorusMassUnionBounds
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MassDegTypeLeCycleType

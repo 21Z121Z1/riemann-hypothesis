@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.IsQProjOverOfIsProjOver
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringCoordRatioValueStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValueScalingByMonomialStatement

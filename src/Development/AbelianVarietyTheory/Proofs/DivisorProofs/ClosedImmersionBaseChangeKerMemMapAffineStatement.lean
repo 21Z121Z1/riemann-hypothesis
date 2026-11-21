@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedImmersionBaseChangeKerMemMapAffine
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 set_option maxHeartbeats 1000000 in

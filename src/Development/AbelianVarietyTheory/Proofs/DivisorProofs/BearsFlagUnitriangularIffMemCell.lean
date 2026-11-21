@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLuSubring
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowMulUpULeadMinorNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UpUUniqueOfLower

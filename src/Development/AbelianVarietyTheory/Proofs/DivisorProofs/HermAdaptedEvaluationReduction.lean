@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentCoordinatesInverse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NmatMulVec

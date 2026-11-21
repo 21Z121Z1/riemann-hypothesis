@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualEigenSubDegreeTranspose
 open GlobalTheory.CompanionTheory.Ar.Crv
 set_option maxHeartbeats 1000000 in

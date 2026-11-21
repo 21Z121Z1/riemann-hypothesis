@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvaluationMapsLinearStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClosedEvaluationInducedStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothSubrepCompactInductionSpanStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsReps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitPlaceDegreeOneEmbedding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralBasisLocalIntegrality

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesOfFrame
 import Formalism.SharpRestriction.LevelLetterCocycles.PsCoprimeOf
 import Mathlib.Order.Interval.Finset.Box

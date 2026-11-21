@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.DualWeylIn
 import Formalism.ThetaLogCoordinates.SandwichModelDomains.FinalW
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.TransposeWordsProofs.ProdBlockEmbMonomial

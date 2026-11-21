@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GcChart
 
 open Module NumberField GlobalTheory.CompanionTheory.Ar.HT TensorProduct

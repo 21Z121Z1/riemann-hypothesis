@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BinaryMassMeans.MeanVal
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.GaloisBoundSecond
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

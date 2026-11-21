@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaDensityUpqUniqueAndSmul
 open Formalism.BasicNotions MeasureTheory Filter Topology Matrix
 set_option maxHeartbeats 1000000 in

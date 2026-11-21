@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StepIdeal
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LetterConjugation
 

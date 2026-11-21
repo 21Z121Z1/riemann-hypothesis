@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DimEqOfFiniteSurjective
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsInverseIsogenySumOfCmHoms
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ImHermFormEqCurveForm

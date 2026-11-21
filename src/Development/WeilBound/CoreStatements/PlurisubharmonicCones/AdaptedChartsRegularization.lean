@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.PotentialsBoundedRegSettingEqReference
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ProdEqZeroIffCoordDiv
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.SymmetricChartsCutoffFamily

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.LocalHerbrand
 import GroundTheory.GlobalFields.InfiniteNormIndex.LocalSymbol
 

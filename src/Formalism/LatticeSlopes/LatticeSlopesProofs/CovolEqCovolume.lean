@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.Polynomial.Basic

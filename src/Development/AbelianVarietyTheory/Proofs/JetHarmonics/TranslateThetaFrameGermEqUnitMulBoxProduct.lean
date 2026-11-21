@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGermLinearMap
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GermBoxProductEqProdGerms
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PowEqOneOfMultilinear

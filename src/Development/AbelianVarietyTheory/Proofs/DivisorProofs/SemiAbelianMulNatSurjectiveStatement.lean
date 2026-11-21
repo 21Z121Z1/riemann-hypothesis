@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianMulNatSurjective
 set_option autoImplicit false
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussTubeOfTubeGood
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FInt
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHermitianThetaFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppellHumbertFactorOfHermitianStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsHolFormConst

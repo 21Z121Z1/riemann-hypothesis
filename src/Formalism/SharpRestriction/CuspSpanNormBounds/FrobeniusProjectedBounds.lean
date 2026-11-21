@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl
 import Formalism.SharpRestriction.CuspSpanNormBounds.FlagEEqHyperbolic
 import Mathlib.Analysis.InnerProductSpace.Positive

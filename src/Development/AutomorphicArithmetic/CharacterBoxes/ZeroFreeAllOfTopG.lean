@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.Supply
 import Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV
 import Development.AutomorphicArithmetic.PrimitiveCosets.LevelGmLeOnFamilyScales

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GJGlobalTheta
 
 open MeasureTheory Set Filter NumberField ComplexConjugate

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.HarishChandraParameters
 import Mathlib.RingTheory.SimpleRing.Principal

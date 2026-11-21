@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDvrExtensionEtale
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BoundaryEtaleStalkUnif
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BoundaryEtaleStalkFormsStatement

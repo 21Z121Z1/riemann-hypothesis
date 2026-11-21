@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteSpreadsOutFromLocalizationAtPrimeStatement
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 

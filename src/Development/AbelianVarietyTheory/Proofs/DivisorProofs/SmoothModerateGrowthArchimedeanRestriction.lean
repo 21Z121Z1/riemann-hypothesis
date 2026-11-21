@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BridgeSIsBridge
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedRepLocalFactorFirst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIntegralRealLineDerivative

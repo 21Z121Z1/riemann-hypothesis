@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs
 import Mathlib.RingTheory.DedekindDomain.Different

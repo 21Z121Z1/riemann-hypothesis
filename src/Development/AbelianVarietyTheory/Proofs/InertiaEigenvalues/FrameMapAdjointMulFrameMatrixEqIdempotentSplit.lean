@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

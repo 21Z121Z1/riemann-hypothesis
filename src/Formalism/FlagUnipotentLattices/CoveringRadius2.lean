@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FlagUnipotentLattices.HalfDifferenceL1Bound
 import Formalism.LatticeRigidity.StatementD
 import Mathlib.NumberTheory.NumberField.DedekindZeta

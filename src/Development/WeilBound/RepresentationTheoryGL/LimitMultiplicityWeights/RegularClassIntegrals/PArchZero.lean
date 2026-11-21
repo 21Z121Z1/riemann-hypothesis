@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.LimitMultiplicityWeights.RegularClassIntegrals.ArchUnimod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicTermsVanish
 

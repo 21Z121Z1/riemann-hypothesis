@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.QminorSwapAdjacent
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
 

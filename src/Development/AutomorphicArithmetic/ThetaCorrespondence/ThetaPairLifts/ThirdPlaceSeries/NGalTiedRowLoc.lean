@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedRowLoc
 
 set_option synthInstance.maxHeartbeats 200000

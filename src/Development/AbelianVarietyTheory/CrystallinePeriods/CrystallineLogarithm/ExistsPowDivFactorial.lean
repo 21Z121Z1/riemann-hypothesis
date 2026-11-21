@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.UniformContinuousConstSMulOfIsIsometricSMul
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Period
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Kernel

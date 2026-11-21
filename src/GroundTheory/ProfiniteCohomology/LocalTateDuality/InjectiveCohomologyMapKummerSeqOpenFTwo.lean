@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormationAlt
 import GroundTheory.ProfiniteCohomology.ClassFormations.Corestriction
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer

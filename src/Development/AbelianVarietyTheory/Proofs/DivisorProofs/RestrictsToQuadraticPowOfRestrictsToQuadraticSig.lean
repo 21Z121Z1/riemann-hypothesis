@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsFundamentalDomainOfHaar
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels

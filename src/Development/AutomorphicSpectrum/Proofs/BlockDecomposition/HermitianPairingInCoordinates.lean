@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitHermOfDet
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordForm
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianCoordinatesHomeomorph

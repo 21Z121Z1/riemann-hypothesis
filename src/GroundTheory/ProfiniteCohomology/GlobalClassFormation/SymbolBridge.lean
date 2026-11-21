@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.NormResidueSymbol.Infinite
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalRestriction
 set_option maxSynthPendingDepth 1

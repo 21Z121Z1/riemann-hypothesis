@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EqOfWeightEq
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CoeffSymmSum
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsBasisUniqueMinAndSumsSeparated

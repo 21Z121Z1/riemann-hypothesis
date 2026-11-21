@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupContinuousCharEqDetZpowStatement
 import Mathlib.Analysis.CStarAlgebra.CStarMatrix
 open Matrix

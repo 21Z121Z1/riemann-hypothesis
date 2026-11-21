@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianQuotientGermSubstitutionStatement
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FrRatio
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PsJetTwistedSeriesOfLeOne

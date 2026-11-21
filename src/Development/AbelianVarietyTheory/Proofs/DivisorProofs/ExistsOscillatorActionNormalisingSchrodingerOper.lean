@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitaryOsc
 import Formalism.LocalRingCardinality.DataTheta

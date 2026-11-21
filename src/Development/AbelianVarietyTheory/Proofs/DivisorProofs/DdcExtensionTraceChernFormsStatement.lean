@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcExtensionTraceChernForms
 open Matrix Complex ComplexConjugate Filter Topology
 open scoped ComplexOrder ContDiff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsInternalStableDecompositionDescendsToSubfi
 open Formalism.MainNotions Formalism.MainNotions.N GlobalTheory.SplitField
 set_option maxHeartbeats 1000000 in

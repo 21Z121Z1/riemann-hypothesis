@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.Statement
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.RingTheory.PiTensorProduct

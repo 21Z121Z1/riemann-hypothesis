@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzValuedDoubleIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousKernelIntegralProdStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaIntegralUnfoldStatement

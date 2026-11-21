@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.QuotientMetricDivisors.HeightBoundExactNorms
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean
 import Mathlib.Algebra.Module.StablyFree.Basic

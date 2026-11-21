@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloMapOfLocalProductChartsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagDimensionIndexEquivStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFromOrbitChartsStatement

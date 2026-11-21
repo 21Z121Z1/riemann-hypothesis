@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.PairRelationOfScaledRatio
 import Mathlib.GroupTheory.Perm.DomMulAct
 import Mathlib.RingTheory.WittVector.IsPoly

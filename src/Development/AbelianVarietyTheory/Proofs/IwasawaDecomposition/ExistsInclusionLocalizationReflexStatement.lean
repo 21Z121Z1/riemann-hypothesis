@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsInclusionLocalizationReflex
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Models
 set_option maxHeartbeats 1000000 in

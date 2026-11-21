@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinrankEigenspaceEmbeddingOne
 open scoped TensorProduct NumberField
 open GlobalTheory.EigenSplit

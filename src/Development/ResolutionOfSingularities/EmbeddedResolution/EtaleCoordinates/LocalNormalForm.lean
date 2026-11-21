@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.FormallyEtaleCoordinates
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.IdealGeneratorsFromBase
 open scoped TensorProduct

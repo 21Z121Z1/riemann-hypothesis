@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsOrthFull
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FibrePowerMapOfTotalSpacesIsPullback
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CentralizerCmFieldInvolution

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.LocallyOfFiniteTypePullbackUnit
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.PowSpanXLeAndFiniteQuotientOfLeSupPowSucc
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.FiniteTorsionSpecialFibreOfUnif

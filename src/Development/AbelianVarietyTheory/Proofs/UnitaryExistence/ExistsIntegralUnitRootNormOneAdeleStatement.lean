@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIntegralUnitRootNormOneAdele
 open NumberField IsDedekindDomain GlobalTheory.AdLat
 open scoped TensorProduct Topology Matrix

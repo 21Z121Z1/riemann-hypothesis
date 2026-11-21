@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeStepFrameFiberStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeFrameFiberRankStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeFrameFiberBasisStatement

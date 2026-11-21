@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointShiftSt
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.InjectiveOfSumEq
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaUniformisationComplexAbelianVariety

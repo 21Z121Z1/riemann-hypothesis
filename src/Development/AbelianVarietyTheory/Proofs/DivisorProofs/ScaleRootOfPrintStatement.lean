@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ScaleRootOfPrint
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
 open GlobalTheory.BigTop GlobalTheory.BigOn GlobalTheory.BigOn.Exp

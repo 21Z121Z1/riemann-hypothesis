@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.FunctionalCalculusLaws
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.WittVector.IsPoly

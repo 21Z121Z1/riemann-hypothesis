@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.IsClosedEmbeddingToM
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.Matrix.Normed

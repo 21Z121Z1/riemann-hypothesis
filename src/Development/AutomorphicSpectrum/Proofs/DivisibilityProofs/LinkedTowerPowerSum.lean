@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LogMulDegFlBracketMul
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PowerSumHeightChangeModelStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LimitHeightConstantShiftStatement

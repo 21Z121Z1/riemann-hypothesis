@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.ClosedAtLConclusionOfMem
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.BlockCharacterApproximation.PolyApproxCut

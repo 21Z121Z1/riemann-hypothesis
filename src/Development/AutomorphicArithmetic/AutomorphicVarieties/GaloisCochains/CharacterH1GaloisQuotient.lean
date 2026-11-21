@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LevelS
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.StrGen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.GwTame

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.TwistSplitLoc
 set_option maxSynthPendingDepth 1
 

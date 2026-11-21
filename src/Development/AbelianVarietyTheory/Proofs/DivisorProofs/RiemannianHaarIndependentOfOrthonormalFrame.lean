@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstMeasurableSpaceRealSU
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.InnerProductSpace.Adjoint

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CuspidalTwistRamifiedCharNeSelf
 open NumberField IsDedekindDomain Formalism.L2.Host GlobalTheory.CuspRep
 set_option maxHeartbeats 1000000 in

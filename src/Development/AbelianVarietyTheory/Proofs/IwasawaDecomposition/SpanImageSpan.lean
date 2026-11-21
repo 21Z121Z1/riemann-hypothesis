@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NatCastMemPrimeOf
 import Mathlib.RingTheory.PiTensorProduct
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.PolarizationDividedPowerMonomial
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.DividedPowersPreserveZero
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.FockLatticeFiniteSpanning

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.Places
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormalFormAtPrime
 import Development.AbelianVarietyTheory.Definitions.Foundations.AbsCharNotUnitary

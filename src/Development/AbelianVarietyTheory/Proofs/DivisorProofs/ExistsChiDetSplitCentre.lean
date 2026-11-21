@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousSplitCentre
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHasCentChar
 

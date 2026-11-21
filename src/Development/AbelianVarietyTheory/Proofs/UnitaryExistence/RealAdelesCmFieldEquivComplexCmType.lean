@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
 import Formalism.LocalToGlobal.ProjectiveLattices.DatProofs
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.InfAdeleTensorBijective

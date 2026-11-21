@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.ExtendedColumns
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.StripDataTensorColumnFamilies
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.FinalP

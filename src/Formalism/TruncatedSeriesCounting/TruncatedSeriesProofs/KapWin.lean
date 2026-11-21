@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.TruncatedSeriesCounting.PowMemSpanOfMemSpanLinearDistinguished
 import Formalism.WindowSums.PowerSeriesRelationList
 import Mathlib.Order.Interval.Finset.Box

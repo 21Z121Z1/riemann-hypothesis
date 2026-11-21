@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RamificationWeightedLogNormSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbeddingSumDegreeFormula

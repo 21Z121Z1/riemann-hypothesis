@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowActMul
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

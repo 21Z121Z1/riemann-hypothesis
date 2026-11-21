@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairsConnectedNormalModelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernClassFlagPairIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernClassFlagPairRankTwoStatement

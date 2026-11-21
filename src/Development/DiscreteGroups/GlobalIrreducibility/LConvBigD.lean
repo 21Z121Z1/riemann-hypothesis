@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.LConvBigC
 import Development.DiscreteGroups.GlobalIrreducibility.LConvGlue
 

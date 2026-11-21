@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIdealIndexPlaces
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.IntegerSmulEqAlgebraMapSmul
 

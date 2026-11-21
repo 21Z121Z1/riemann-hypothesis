@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataRRMetric
 
 open Formalism.BasicNotions NumberField

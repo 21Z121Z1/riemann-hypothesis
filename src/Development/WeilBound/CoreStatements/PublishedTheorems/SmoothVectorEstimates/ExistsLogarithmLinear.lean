@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.SmoothVectorEstimates.MirabolicColumnBlock
 import Mathlib.Analysis.Complex.CoveringMap
 import Mathlib.Analysis.Convex.Contractible

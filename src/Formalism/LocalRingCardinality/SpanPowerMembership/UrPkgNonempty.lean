@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.UrRing
 import Mathlib.Analysis.Normed.Field.Instances
 import Mathlib.NumberTheory.Padics.Complex

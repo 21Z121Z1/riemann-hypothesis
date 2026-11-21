@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheafAlt
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.Generation
 set_option maxSynthPendingDepth 1

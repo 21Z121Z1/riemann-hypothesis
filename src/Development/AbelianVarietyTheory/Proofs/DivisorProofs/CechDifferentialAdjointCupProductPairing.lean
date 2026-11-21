@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.CupPair
 import Mathlib.RingTheory.SimpleRing.Principal
 open GlobalTheory.PD GlobalTheory.CechDR KaehlerDifferential

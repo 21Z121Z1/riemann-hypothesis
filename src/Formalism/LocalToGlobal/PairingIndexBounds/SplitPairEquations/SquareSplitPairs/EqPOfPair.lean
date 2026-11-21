@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.SquareSplitPairs.SqSplitOf
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.PolFamInhabited
 

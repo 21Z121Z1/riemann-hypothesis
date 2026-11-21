@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.HeckeLower
 import Mathlib.Analysis.SumIntegralComparisons
 import Mathlib.RingTheory.WittVector.IsPoly

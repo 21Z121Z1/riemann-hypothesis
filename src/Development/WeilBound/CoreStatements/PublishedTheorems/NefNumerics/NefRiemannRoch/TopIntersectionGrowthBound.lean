@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.NefNumerics.NefRiemannRoch.AmpleNefCombinationBound
 
 open CategoryTheory Limits AlgebraicGeometry TopologicalSpace Filter Asymptotics

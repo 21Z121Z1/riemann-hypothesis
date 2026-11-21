@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.RecLevelSymF
 open Formalism.L2.Col
 

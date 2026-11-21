@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFormDbarStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDeformationToSplitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreIntegralConstantFamilyStatement

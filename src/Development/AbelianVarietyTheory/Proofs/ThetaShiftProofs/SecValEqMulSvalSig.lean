@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IdealPart
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.SvalEqSumOfHasVal
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsChartLoc

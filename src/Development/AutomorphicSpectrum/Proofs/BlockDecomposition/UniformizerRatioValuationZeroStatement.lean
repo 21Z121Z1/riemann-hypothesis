@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformizerRatioValuationZero
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ValuativeRel
 set_option maxHeartbeats 1000000 in

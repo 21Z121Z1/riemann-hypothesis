@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Operators
 import Mathlib.RepresentationTheory.Irreducible
 import Mathlib.Tactic.ReduceModChar

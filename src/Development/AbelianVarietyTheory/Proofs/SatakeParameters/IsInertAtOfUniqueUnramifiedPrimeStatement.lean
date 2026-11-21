@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsInertAtOfUniqueUnramifiedPrime
 open IsDedekindDomain NumberField Formalism.UG GlobalTheory.SelfDualGenus
 open scoped TensorProduct Matrix

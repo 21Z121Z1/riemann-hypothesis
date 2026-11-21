@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.TcAnti
 import Mathlib.Algebra.Order.Ring.Star
 open Matrix UpperTheory.V.Hi

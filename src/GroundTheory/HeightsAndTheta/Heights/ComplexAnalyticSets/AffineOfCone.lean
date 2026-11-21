@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsArea
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Topology.Algebra.MvPolynomial

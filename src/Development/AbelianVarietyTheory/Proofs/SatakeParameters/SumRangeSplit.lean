@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BTLeFiveQuarters
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotMemTopPlaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TopRowsParams

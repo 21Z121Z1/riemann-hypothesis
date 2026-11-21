@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.FiniteSubfamilySpansDual
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Nearvec
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cardsub

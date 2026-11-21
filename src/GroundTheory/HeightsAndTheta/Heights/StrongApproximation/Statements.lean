@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.EichAlongSub
 import GroundTheory.HeightsAndTheta.Theta.GaussianExample
 import Mathlib.Order.CompletePartialOrder

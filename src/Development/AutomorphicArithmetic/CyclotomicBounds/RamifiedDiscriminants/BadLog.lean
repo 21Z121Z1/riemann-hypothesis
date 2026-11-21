@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.RadBounds2
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.RamEq
 

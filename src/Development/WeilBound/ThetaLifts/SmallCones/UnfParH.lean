@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.UnfPar
 import Development.WeilBound.ThetaLifts.SmallCones.UnfMod
 import Development.WeilBound.ThetaLifts.SmallCones.UnfAbs

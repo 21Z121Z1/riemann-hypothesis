@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.DualExponentDensity
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDensityEuler
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ProductLocalDensitiesAdeleCharacter

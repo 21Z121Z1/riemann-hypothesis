@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHilbRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapEqKerIff
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementD
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumDualVectorEqZeta
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RestrictionIrrelevantDoubleLevelOperator

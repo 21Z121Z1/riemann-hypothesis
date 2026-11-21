@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointIntegralityStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieSlopePointIntegralityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatHeightStatementStatement

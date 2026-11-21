@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.IdealSheafOpenRestriction
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 universe u

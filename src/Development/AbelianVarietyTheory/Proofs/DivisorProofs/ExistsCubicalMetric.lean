@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMetricChernFlatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFactorTrivializationExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricTranslationPullbackFlatStatement

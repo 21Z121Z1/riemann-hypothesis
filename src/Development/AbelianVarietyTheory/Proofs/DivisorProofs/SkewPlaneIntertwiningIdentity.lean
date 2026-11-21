@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModerateGrowthOfHasCompactSupport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewPlaneJacobianIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelLineDerivativeCommutatorStatement

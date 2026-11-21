@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.MahlerMeasureProofs.BadCrit
 import Formalism.MahlerMeasure.MahlerMeasureProofs.MeanGam
 import Formalism.MahlerMeasure.GamLead

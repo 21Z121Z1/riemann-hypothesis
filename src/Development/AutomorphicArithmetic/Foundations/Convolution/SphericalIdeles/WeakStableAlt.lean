@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.WeakStable
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.SameSat
 

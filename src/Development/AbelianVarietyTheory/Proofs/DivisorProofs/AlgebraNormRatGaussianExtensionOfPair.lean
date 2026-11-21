@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.OmegaFactorization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleXSqAddOne
 import Mathlib.Algebra.Module.StablyFree.Basic

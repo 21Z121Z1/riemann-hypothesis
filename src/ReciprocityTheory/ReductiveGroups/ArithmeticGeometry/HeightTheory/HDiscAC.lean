@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.AlgebraMapOLInjective
 import ReciprocityTheory.SemistableReduction.AlgAll
 import Mathlib.RingTheory.DedekindDomain.PID

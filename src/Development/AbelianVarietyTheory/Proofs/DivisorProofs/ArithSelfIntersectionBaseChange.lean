@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowLineBundleGeneratingSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLineBundleSmoothMetricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionEqHalfSumWeightsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsChainFirst
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHFlProdLinear

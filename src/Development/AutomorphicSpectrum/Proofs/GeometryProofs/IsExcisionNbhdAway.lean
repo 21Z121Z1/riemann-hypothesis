@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EigLat
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen
 import Mathlib.AlgebraicGeometry.Modules.Sheaf

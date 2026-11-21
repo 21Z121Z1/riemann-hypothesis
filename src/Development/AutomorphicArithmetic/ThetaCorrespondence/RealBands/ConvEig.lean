@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Topology.Compactness.Paracompact

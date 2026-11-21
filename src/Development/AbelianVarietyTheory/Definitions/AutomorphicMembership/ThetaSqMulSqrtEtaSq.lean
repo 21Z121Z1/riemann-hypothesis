@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.LatticeGeometry.AmpleOnAbelianBase
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaKeyRuleValuationUnitOfFunctorial
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.FamUnit

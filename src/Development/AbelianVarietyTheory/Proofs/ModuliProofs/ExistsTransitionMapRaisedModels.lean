@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.OpenImmersionCompStructureEqGeneric
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsFiniteLiftComp
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelDescentCoefficientField

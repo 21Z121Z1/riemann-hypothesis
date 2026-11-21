@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LFunctionEquationGlobal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FieldWeilActionLocallyConstantStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitWeilActionTorusEquivariantStatement

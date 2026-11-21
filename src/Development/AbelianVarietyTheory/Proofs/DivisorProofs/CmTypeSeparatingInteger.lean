@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeSeparatesEmbeddings
 import Mathlib.Data.Rat.Star
 import Mathlib.GroupTheory.CosetCover

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.EqZeroOfForallCupPairingZmodMulEqZeroLeft
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing
 set_option maxSynthPendingDepth 1

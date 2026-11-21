@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramMatrixTraceFormBasisChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFormDetUnitAndTwistStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormOfEqualGramTraceFormsStatement

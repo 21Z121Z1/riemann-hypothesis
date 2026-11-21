@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.Statement
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne

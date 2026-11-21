@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InterNumDetNonposSplitTorus
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsTangentEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExOfHeadWt

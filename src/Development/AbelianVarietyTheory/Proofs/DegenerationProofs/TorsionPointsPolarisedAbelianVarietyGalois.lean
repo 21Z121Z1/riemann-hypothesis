@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditionalStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFieldOfValuesStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsProjectiveRep

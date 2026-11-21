@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.L2UnitaryRepresentationData
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGrpDataMapHaar
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConjGaugeInvariant

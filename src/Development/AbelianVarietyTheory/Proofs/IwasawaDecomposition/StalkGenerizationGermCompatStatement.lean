@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StalkGenerizationGermCompat
 open AlgebraicGeometry CategoryTheory Limits TopologicalSpace
 set_option maxHeartbeats 1000000 in

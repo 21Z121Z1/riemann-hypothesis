@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TotalEqCurve
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PerValNeZero
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsHodgeFrameIff

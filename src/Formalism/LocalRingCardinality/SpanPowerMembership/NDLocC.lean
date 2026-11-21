@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocB
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocA
 import Mathlib.Topology.Connected.Separation

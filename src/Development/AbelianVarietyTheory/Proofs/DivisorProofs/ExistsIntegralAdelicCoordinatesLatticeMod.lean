@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLatticeFullAndCompletion
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TameInvariantLevelAction
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicLocalCompactness.AdeleLC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAveragingProjection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NineGeoU
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeIPOfFibreLatVec
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeMiddle

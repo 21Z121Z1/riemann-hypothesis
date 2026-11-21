@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.TrivFlagOnHodge
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFreeTrivialFlagModStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TrivFlagModOfDvdStatement

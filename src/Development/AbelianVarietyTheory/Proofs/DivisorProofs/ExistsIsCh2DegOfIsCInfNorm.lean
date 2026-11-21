@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCh2DegOrthSumOfExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharZeroResidueFieldGenericPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlagCh2Indep

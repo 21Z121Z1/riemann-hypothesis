@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUdlOfIsUnit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsPrincipalCongruence
 import Mathlib.RingTheory.Henselian

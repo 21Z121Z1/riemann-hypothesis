@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlagBundleIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsometryPullIdComp
 import Development.AutomorphicArithmetic.LocalEmbeddings.FrameCo

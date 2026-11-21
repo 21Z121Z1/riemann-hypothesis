@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GermSystemHeightFree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPairing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTorsionKilledByIdealCharZeroStatement

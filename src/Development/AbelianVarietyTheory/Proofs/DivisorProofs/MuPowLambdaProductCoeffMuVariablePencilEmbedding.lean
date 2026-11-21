@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PscoTCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TDualProd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BarMSingle

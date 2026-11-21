@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLtCommutatorMemOfNeTop
 open GlobalTheory.BI GlobalTheory.BrauerZero
 set_option maxHeartbeats 1000000 in

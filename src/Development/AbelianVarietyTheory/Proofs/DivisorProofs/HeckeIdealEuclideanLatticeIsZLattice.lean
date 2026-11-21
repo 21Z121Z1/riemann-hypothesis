@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbAApply
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsValuedHeckeCharRamified
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

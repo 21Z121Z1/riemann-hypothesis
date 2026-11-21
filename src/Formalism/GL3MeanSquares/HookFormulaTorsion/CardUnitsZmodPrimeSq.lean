@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.RankMulPowThreeHalvesLeFourthPower
 import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
 import Mathlib.Data.Int.Star

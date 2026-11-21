@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.CMLattices.LamLetters
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.EllPullExistsOAct
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomLieEquivScalarTmul

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaConstantBoundedByShortestVectorStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsPrimitiveScalingStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionFramePowEqIntegralGeneratorStatement

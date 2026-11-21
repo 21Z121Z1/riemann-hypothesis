@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGTheta
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.DedekindDomain.Different

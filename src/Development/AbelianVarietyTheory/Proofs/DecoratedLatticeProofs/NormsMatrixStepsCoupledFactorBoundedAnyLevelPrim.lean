@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnNormsOf
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CardOrbitsLeExp
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NcardYbSetLe

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.RealProd
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Branch
 

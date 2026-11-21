@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelSpace
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.KFacts
 

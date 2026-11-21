@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedExtensionProductDecomposition
 open ReciprocityTheory.DiscreteGroups.LocalClassField Matrix GlobalTheory.LKRes
 set_option maxHeartbeats 1000000 in

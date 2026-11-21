@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzHeisLine
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SchurTranslationsCharacters
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilRepresentationQuadraticDatum

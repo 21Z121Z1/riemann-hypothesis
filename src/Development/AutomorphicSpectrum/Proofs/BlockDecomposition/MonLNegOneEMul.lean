@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMulPowEqIncl
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolyEqPolyEquiv
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TheoremPCompactOfSquareDensity
 
 open MeasureTheory Filter Topology

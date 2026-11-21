@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentationRestrictionIntertwinerExists
 open scoped TensorProduct
 open GlobalTheory.SmGL GlobalTheory.PRep GlobalTheory.IndLineGL GlobalTheory.LocTypeGood

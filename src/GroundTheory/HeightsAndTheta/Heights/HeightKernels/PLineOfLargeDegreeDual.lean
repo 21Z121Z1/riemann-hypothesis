@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLineDegreeDual
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 import Mathlib.Topology.Sheaves.Presheaf

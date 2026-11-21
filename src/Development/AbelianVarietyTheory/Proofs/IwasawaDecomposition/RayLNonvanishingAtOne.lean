@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassPartialZetaContinuationStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DedekindZetaFactorizationRayStatement
 import Mathlib.GroupTheory.FiniteAbelian.Duality

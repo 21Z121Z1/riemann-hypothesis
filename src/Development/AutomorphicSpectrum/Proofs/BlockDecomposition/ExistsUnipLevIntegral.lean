@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AdelicGLn
 import GroundTheory.AutomorphicForms.Iwasawa
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OneMemGoodCT

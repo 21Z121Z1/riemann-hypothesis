@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KilledByIdealFiniteEtale
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyDegreeOfPointCount
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarrisTaylorCardKilledByIdealEqAbsNormPowStatement

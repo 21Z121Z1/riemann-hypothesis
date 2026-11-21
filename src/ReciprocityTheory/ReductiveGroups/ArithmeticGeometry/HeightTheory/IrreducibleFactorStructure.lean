@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ComponentFormProperties
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.SubstitutionVanishesOfRelation
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.CoeffPsiBNeZero

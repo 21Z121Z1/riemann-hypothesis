@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationCloseMatricesQuotientIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockTriangularIntegralGramUnitDetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsAtOfNorms

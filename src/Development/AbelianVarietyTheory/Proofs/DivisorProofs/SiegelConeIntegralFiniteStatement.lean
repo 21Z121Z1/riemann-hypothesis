@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelConeIntegralFinite
 open MeasureTheory
 open scoped ENNReal

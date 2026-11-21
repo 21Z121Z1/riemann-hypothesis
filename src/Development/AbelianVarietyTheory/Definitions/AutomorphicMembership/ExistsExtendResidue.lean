@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsPrincipalMapDifferent
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsClosedFlagsIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsTangentEquiv

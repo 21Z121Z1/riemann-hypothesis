@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanLevelSubgroupClosedMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFiniteVectorsFiniteMatrixCoeffStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleLocalInvarianceStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicAbsDetMulArchimedeanExpScalarCurve
 open NumberField MeasureTheory GlobalTheory.CuspRep GlobalTheory.HCF Topology
 set_option maxHeartbeats 1000000 in

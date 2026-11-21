@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsIsUnitFormSelfOfNotMem
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.BinaryFormUniversal
 import Mathlib.NumberTheory.Padics.PadicIntegers

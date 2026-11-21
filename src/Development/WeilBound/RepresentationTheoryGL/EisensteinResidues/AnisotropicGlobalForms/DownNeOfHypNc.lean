@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSum
 open scoped ComplexConjugate Matrix NNReal

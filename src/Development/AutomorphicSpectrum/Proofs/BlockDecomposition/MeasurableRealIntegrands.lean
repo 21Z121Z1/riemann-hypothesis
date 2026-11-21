@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Sec2
 import Mathlib.MeasureTheory.Order.Group.Lattice
 

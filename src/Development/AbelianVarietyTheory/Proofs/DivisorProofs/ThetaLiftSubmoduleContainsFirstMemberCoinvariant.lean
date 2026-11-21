@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ActAtApply
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible

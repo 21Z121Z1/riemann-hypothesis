@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.DatFacts
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsMoreTail
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormSumLt

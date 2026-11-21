@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.TriDefs
 import Mathlib.Analysis.CStarAlgebra.Classes
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.XiMulNu
 import ReciprocityTheory.DualLattices.AinfFacts
 import ReciprocityTheory.DualLattices.Imports

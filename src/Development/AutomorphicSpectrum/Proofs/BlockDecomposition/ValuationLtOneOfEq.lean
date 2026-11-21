@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasPeriods
 import GroundTheory.PAdicHodge.LocalBridge
 import GroundTheory.PAdicHodge.FieldOfNormsCyclBase

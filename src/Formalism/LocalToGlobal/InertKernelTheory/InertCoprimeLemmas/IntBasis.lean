@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.DefsBasis
 import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IntRing

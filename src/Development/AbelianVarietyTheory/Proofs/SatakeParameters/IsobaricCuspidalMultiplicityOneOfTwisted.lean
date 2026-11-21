@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscreteSelfDualStrongMultiplicityOne
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
 

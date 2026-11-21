@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValAtAlgebraMap
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf

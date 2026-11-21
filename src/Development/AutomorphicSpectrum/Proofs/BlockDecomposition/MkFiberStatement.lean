@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MkFiber
 open PositivityTheory.Rg.BcB.F.Tail.BS
 set_option maxHeartbeats 1000000 in

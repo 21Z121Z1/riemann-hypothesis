@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.HeckeCharacterEqualityOfRealisation
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConclusionG6OfAllParts
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.TrivialLocalCondition

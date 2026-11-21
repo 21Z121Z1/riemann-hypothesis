@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.StripEntire
 import Mathlib.Analysis.Complex.LocallyUniformLimit
 open Filter Topology

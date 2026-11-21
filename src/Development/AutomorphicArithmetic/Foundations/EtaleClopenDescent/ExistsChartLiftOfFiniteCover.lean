@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.PActsLin
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.ChineseRemainderFiniteCover
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.KoszulActionInclusion

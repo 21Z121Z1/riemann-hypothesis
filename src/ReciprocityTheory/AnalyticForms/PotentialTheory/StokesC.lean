@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PotentialTheory.StokesB
 import Mathlib.Topology.Sheaves.Presheaf
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition

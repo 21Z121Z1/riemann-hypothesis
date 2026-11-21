@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComparableHermitianFormsDetBounds
 import Development.AbelianVarietyTheory.Definitions.Divisors.ReferenceMetricMulDualEqOne
 

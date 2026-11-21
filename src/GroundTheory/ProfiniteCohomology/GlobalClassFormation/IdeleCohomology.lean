@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.SDecomposition
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Decompose
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Ramified

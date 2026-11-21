@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResABound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialCoefficientSubStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialCoefficientUniformLimitStatement

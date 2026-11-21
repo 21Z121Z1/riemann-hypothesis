@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifGood
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifEx2
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RingOfIntegersHomInjective

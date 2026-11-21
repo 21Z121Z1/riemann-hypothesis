@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsUnitaryOnTheta
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemUniq
 import Development.AbelianVarietyTheory.Definitions.Divisors.BasePlaceNotMemChiGridBadPlaces

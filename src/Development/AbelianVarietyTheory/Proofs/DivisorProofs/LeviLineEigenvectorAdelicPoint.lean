@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixMulVecBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchUnipotentRadicalMem
 open scoped TensorProduct Matrix

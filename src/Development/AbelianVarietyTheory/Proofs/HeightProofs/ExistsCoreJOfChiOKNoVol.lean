@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsParPinsCanon
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsAdelicCoreWithoutVolumeNormalisationStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGaloisConjugatesHeckeCharTrivialOnRealIdelStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.EmbeddingTransposeVectorZero
 import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.ExistsTorus
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedDeterminedBySpherical

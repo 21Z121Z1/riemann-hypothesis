@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LayerTwoFamilyClass
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ColDict
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowDict

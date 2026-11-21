@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ArtinDefs
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ArtinCount
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.PermLattice

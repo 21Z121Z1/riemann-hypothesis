@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVecEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCombinationIffOfSameVecs
 

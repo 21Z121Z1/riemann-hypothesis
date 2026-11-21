@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGauss
 import Mathlib.Topology.Sheaves.Presheaf
 set_option maxSynthPendingDepth 1

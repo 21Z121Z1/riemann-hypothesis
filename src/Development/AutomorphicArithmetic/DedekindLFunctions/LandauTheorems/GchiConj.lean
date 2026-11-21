@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj
 import Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily
 

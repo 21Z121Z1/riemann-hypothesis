@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SettingsFormsExistList
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotGeoClFalse
 

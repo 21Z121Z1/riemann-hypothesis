@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.NullSec
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Matrix.Spectrum

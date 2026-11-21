@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SingularValueFrame
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.CartanCoshPower
 import Formalism.LocalRingCardinality.SpanPowerMembership.SignSplitEquivInl

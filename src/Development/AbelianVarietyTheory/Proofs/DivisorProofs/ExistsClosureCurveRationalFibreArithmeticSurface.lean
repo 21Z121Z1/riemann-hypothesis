@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompleteCurveArithModelClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemChart
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology

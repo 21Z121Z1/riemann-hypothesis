@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HuaDeterminantIntegrableOfLtStatement
 import Mathlib.MeasureTheory.Integral.Pi
 open MeasureTheory

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwCentSwTw
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteRestrictionVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.G8FiniteAuxiliaryStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistSmulHomApp
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoherentSubobjectCoherentStatement
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.RelSerreAffine

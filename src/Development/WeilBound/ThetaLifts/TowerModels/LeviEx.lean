@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.PlaneRemovalConfiguration
 import Development.WeilBound.ThetaLifts.ConeHypotheses.PolDense
 import Development.WeilBound.ThetaLifts.TowerModels.LeviAd

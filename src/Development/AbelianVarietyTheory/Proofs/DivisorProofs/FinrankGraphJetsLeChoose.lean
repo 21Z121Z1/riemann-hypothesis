@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLocModelIsPrimeOf
 import Mathlib.Data.Finite.Vector
 open CategoryTheory AlgebraicGeometry TopologicalSpace

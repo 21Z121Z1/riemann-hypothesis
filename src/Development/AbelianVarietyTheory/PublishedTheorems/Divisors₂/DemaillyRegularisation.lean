@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshBasic
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousAndSmul
 import Development.AbelianVarietyTheory.Definitions.Divisors.AnalyticOnNhdFinChartIff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoherentSubmoduleSectionsAffineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveLatticeLocalBasisStatement
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsUniqueLbIsoPullEqOfCoheightLeOne

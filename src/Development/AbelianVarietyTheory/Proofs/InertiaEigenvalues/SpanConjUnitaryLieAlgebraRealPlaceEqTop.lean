@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AdelicUnitaryRealPointsStructureRealPlaces
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedSmooth

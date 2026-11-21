@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TwoMulFinrank
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsTotallyRealEvenNegPlacesLocalNorm
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsDiffGenerator

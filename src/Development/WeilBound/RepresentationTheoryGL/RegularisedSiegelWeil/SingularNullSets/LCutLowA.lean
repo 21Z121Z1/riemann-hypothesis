@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.RegularisedSiegelWeil.SingularNullSets.WeakApproximationFinitePlace
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FourierZeroHolds
 

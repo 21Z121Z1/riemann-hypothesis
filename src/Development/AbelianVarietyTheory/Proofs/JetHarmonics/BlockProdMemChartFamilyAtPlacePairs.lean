@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GapParts
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdDetMemHaO
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FlagOfLetterNumberingRowData

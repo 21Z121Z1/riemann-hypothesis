@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.AInfGalois
 import GroundTheory.PAdicHodge.TiltAlgClosed
 set_option maxSynthPendingDepth 1

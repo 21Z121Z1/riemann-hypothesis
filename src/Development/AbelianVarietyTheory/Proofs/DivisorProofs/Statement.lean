@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.HeckeCharacterChoice.TendstoUnderCofinite
 import Formalism.ConjugateSelfDual.Statement
 import Mathlib.NumberTheory.NumberField.CMField

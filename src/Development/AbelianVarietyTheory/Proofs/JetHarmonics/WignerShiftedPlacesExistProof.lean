@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.DiscreteSeriesShifts.ShiftExists
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WignerMapsThreePlacesExistsStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WithRightAction

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupProper
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrongResolution.DiscardedLocus
 universe u

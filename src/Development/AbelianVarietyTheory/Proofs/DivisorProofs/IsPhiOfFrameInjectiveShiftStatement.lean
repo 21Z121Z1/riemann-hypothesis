@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPhiOfFrameInjectiveShift
 open NumberField IsDedekindDomain
 open scoped TensorProduct

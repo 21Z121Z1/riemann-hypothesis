@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedDataLocalIdentityInfStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedRepLocalFactorFirstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedRepLocalFactorSecond

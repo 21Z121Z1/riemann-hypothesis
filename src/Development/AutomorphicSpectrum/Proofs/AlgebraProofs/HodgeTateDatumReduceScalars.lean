@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over
 import ReciprocityTheory.DualLattices.CotangentSurjective
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry TensorProduct Matrix

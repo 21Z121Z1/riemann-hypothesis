@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
 
 namespace GroundTheory.Global

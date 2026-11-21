@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KFacDifferentiable
 import Mathlib.Tactic.Polynomial.Basic
 open NumberField Complex

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.TrISepWith
 import Formalism.LocalToGlobal.IndefiniteReal.PartsRow
 import Formalism.LocalToGlobal.IndefiniteReal.ThetaFireRow

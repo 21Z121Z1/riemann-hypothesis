@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
 
 open scoped UpperHalfPlane MatrixGroups Manifold

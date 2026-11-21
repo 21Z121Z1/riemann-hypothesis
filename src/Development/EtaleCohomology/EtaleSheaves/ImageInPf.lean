@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.IsClosedImmersionOfCover
 import Mathlib.Order.CompletePartialOrder
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueGlueDual
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsTangentVectorBasisAtPointBaseChange

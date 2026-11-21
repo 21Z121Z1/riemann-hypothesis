@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddnessConditionHolds
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CharacterTrivialAtInertPrimesStatement
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealEmbeddingOrderingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealEmbeddingsLinearlyIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalAppellHumbertRealMultStatement

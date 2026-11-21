@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FrepDiscreteSeriesSumStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorRawOfFrepStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsKTypeNonzeroBesselStatement

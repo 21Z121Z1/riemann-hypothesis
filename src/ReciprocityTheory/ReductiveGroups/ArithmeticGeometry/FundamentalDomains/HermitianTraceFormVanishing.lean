@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Lemmata.GeneralBFactAltForm.Imports
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.Henselian

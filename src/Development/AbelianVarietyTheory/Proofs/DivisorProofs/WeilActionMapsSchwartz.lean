@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
 
 open scoped TensorProduct NNReal Matrix

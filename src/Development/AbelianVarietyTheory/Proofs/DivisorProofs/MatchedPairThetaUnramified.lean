@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleFiniteMapsForallPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaFinitePlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftMatchedVanishingStatement

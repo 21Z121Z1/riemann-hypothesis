@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianFormLastCoordinateUniformizerVectorSelf
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
 import Formalism.LocalToGlobal.HermitianForms.TiedTwSymP

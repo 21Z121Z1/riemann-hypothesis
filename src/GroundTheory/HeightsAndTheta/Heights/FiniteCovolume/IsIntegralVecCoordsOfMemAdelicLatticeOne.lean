@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.CoreLatticeEqOfMemCoreStabilizer
 import GroundTheory.AutomorphicForms.DefiniteClassNumber.Finiteness
 

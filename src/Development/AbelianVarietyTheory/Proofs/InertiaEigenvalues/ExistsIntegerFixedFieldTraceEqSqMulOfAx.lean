@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoTowerQ
 import GroundTheory.LocalFields.IntermediateField
 import Mathlib.Algebra.Module.StablyFree.Basic

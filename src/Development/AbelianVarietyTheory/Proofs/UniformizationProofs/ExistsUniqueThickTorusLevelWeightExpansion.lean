@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsDescentOfIsReduced
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorusStableAffineOpenFunctionsWeightGraded
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValTorusPointAndTranslate

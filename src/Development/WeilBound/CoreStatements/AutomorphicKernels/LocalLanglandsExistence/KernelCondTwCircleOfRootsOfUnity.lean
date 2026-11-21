@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.LocalLanglandsExistence.LaurentMonomialEqOneOfCircle
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsWeilOfFixes
 import Mathlib.RingTheory.Etale.Weakly

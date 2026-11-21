@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.InertKernelTheory.DefsSigma
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.FourthTensorThetaEqKernel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRingEquivTranscendental

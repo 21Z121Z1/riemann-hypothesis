@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.CechDescentTwistOfProperSurjectiveStrictlyHensel
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.EquivOfStalkwiseBaseChange
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.TateTwistFinitary

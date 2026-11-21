@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FactorialLeTwoMulCardPermWithFixedPointStatement
 import Std.Tactic.BVDecide.Normalize.Prop
 open Polynomial Classical GlobalTheory.BadShare

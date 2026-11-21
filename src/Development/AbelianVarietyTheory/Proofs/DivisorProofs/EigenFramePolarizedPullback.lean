@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpMapDualMapComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnifOfOrtho

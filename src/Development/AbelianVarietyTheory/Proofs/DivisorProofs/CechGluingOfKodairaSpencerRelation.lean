@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRingHomAddEpsMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeformationChartPointReductionEqSpecialFibreStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDeformationChartPointSpecMapStatement

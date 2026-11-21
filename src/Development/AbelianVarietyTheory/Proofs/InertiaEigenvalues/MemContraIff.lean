@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsUnitaryOfCharIff
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RDualC
 

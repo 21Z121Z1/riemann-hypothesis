@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointHeightDualAndLinearComb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionLowerHeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemipositiveNonnegCombination

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyCM
 
 namespace GlobalTheory.FieldExtHeight

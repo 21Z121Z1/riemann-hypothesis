@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FactorialLeTwoMulCardPermWithFixedPoint
 open Polynomial Classical GlobalTheory.BadShare
 set_option maxHeartbeats 1000000 in

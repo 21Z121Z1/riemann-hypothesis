@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsFinFlatSub
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.SphericalMonomials.MonomSt
 import Std.Tactic.BVDecide.Normalize.Prop
 

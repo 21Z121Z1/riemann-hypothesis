@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeyDatumFibreOfComposableBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeyDatumFalseOfModelSectionZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeyDatumScaleSectionsByConstantStatement

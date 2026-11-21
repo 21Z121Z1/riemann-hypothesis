@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TensorHomCubes.StabDirectedSystem
 import Mathlib.AlgebraicTopology.SingularHomology.Basic
 import Mathlib.Topology.CWComplex.Classical.Basic

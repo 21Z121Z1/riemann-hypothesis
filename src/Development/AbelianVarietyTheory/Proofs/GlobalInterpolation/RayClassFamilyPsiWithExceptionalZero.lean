@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AnalyticAtDslope
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivSubExceptionalLe
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TruncatedPerronOfLeTwoVonMangoldt

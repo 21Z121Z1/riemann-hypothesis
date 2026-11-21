@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsTrivialOnUnitsModConductorUnitCharacterValuePr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SubsingletonJacquetIff
 import Mathlib.Algebra.Order.Ring.Star

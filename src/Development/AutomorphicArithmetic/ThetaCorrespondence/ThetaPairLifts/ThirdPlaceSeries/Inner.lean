@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.HeckeOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LabConj
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyAllIff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfIntegralTraceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitDenominatorIntegralStatement
 

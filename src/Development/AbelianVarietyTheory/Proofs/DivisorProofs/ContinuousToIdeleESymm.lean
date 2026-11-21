@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIdTorusEltOne
 import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange

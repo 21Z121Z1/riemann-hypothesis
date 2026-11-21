@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityClass
 
 open NumberField Module WeierstrassCurve IntermediateField

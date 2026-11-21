@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharpolyDvdPowOfAevalEqZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsAlt
 open GlobalTheory.UnitLemma GlobalTheory.UnitLemma.Desc Polynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RWConstMul
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsOpenKerOfContinuous
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

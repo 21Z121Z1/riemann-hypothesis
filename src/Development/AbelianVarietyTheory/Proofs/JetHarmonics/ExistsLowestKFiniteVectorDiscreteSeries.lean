@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CayleyExistsAndAny
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DominantRootSums
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.KStableFiniteDimSmoothCompactRootStable

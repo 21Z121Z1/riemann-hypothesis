@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AevalNeZeroOfNotMem
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.FiniteEtaleSurjectiveOfPullback
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PChartNormPtsA

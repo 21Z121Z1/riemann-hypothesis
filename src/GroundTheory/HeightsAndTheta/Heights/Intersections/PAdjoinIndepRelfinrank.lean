@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StAdjoinIndepRelfinrank
 import Mathlib.FieldTheory.LinearDisjoint
 import Mathlib.RingTheory.Henselian

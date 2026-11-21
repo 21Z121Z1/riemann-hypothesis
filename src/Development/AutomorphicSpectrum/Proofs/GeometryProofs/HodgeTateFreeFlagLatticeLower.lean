@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HtatLinkOf
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HTChartExistsHolds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateChartIntegral

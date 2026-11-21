@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsProjDegreeChow
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsProjSecDomain
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsProjChowNonzero

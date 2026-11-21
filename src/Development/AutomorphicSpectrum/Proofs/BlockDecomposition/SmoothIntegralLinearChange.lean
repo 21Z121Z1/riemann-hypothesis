@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCompSymm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OpenFns
 

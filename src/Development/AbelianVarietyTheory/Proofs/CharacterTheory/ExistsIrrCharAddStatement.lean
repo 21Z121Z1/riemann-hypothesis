@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsIrrCharAdd
 open GlobalTheory.BI
 set_option maxHeartbeats 1000000 in

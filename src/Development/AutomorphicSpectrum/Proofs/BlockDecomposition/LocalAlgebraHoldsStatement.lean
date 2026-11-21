@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalAlgebraHolds
 open PositivityTheory.Rg.BcB.F.Eig
 set_option maxHeartbeats 1000000 in

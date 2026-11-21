@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HcoSmulRight
 
 namespace Formalism.FourierDecayAlt.P.PBI.Sm

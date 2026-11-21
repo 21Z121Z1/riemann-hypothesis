@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelHodgeGram
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DivisorDecompositionFlagSteps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicChartAffineNeighbourhoodStatement

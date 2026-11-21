@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsTensorOrderOfCover
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFunctionalBaseChange
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelBaseChangeSpanStatement

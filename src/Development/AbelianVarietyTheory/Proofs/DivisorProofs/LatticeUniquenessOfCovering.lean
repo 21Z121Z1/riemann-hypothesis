@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTransport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartOfMaximal
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf

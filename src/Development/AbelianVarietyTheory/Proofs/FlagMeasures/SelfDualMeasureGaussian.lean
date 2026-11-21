@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CmDataIsCMExtAndGramIsHermND
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SelfDualMeasureRealDiagonalStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ComplexCoordinatesMeasurePreservingStatement

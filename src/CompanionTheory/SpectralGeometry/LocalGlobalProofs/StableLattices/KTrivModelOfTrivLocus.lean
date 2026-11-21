@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.ObstructionLifting.H1StructureDimLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftLeftFst
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.SmoothMorphisms.ExistsModelAbelianLb

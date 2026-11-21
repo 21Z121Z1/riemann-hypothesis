@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Mathlib.NumberTheory.NumberField.ClassNumber

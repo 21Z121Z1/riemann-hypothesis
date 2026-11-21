@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPrimeComplexRadical
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.FieldTheory.SeparablyGenerated

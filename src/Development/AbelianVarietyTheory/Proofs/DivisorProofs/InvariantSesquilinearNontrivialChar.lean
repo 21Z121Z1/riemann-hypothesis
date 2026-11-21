@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantBilinearNontrivialCharacterStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankNormalFormValuationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantBilinearDoubleCosetStatement

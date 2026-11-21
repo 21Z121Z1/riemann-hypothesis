@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EulerCharHomAdditiveShortExactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChiHomModAddOfGenRankEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubsheafOfStructureTorsionQuotientStatement

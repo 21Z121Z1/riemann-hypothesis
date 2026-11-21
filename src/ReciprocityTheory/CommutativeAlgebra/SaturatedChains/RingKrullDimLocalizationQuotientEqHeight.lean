@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.LocDim
 
 namespace ReciprocityTheory.CA

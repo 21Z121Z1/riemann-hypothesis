@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.LogDerivativeIdealSheaf
 import Mathlib.AlgebraicGeometry.IdealSheaf.Functorial
 universe u

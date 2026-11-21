@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.StatementKT
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable

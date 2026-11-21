@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.PointDegree.PermExpInj
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
 import Mathlib.Algebra.MvPolynomial.Coeff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsIdeleNotMulNorm
 open NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.GenericFiniteMaps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalSection
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HomAppHomOfRestrictImage

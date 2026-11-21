@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraCentre.MemCenterOfCommuteE
 import GroundTheory.AutomorphicForms.HarishChandraCentre.RepBase
 import Mathlib.Analysis.CStarAlgebra.Classes

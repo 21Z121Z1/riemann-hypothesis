@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.UniformisationCharts.RigidPullbackIdentification
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPullFOfGenRel
 

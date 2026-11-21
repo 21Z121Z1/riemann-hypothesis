@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Actions
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LinSubstIsHomogeneous
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective

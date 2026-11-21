@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.WhittakerHecke.FirstChernClassEqZsmulOfLineUnitEqZpow
 import Development.AutomorphicArithmetic.WhittakerHecke.ChernPowerZsmulEqPowSmul
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass

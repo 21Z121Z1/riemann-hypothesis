@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.DSInfCharCap
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsNormEmbId
 

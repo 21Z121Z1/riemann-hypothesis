@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PairingDivisors.StatementN
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.Normed.Module.Connected

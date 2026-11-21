@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.SupportG
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.TotallySplit

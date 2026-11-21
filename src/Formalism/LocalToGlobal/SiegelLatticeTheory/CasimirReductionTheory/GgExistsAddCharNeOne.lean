@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesWeylDimension
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCPX
 import Formalism.SharpRestriction.CuspSpanNormBounds.TheoremBConstants

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SubsetTwistExceptionalPlaces
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RatInEig
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyPtsOfReading

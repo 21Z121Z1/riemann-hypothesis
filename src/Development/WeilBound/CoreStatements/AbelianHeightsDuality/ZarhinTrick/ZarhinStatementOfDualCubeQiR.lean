@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.OneCompPrj
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.KLiftSqToBase
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibAmple

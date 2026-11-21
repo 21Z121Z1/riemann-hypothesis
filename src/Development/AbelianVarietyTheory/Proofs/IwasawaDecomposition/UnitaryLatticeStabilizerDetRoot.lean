@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsIntegralDetOfIsIntegral
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Analysis.CStarAlgebra.Classes

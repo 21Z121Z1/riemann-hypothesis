@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralLeOfHighest
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevZeroOfKHighest
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuotientMeasureRightInvariant

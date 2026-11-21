@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitFunctionsAdaptedPlaneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEigenThetaTorusStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBConstantTermThetaLiftStatement

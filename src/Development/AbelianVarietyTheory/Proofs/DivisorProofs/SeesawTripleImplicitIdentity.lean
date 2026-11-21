@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAEvaluationLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOperatorIdeleConstant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrablePowerNormCompact

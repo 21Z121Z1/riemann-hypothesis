@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Aq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableIwasawaPullback
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DampedWhittakerLimitAsTwistVanishes

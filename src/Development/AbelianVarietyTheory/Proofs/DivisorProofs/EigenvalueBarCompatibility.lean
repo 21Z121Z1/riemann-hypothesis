@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiplicativeInnerProductModel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAntilinear
 

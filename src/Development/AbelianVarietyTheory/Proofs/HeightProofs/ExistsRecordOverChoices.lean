@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SetUnipotentTranslate
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsExplicitParameters
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsBaseOfRich

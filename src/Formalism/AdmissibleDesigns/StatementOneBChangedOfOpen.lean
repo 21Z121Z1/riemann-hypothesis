@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.ColLx
 import Formalism.AdmissibleDesigns.UnramifiedInputOfAdmitted
 import Formalism.AdmissibleDesigns.DesignNormalizedOfAdmitted

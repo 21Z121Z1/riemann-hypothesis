@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.TorusKernels.ComplexMinusRealLineMeasureCoordinates
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.Etale.Weakly

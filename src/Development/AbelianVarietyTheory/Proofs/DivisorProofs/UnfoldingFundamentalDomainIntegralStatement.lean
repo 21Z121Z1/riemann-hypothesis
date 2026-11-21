@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingFundamentalDomainIntegral
 open scoped NNReal ENNReal
 open MeasureTheory

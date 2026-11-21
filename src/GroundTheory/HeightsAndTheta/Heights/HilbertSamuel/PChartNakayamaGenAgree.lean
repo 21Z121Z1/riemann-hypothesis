@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenTwistGenerated
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenSESStep
 set_option maxSynthPendingDepth 1

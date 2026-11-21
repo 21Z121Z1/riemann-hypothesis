@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.BranchingTraces.CasimirDecomposition.ExtensionFixesSmoothVectors
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.ZuckermanLibraryBounds
 import Development.WeilBound.CoreStatements.BranchingTraces.CasimirDecomposition.CasApply

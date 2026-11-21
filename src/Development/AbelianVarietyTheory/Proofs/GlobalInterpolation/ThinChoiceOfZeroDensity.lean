@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplZeta
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExplChi
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.LogDerOne

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SuccessiveMinima.StatementMink
 
 open MeasureTheory Module Metric Set

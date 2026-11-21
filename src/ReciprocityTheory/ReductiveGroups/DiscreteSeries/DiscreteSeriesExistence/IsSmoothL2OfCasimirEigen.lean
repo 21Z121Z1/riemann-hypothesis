@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.ClassTwoEntries
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 

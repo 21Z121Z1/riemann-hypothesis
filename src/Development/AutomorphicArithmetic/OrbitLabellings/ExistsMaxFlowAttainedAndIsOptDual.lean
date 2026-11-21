@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.IncomingBounds.FlowDegreeBounds.MaxFlowValueAttained
 
 open scoped BigOperators

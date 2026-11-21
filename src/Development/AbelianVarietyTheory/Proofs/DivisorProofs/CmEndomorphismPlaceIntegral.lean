@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyOfForall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveLiftIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescendsTo

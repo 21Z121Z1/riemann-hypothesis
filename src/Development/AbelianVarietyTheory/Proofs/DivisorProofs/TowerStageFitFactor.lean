@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFramesForTriangleStage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangleStageFrameFactorisation
 

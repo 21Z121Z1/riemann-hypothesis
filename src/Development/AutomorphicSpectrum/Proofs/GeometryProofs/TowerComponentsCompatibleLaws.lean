@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CInfGood
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginGenericFrameStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelPullbackEquivalence

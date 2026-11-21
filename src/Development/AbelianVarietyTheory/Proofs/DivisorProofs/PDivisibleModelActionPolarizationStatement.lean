@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PDivisibleModelActionPolarization
 set_option autoImplicit false
 noncomputable section

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EisensteinPowMulMemColonIdealFrobenius
 open PowerSeries GlobalTheory.BK Matrix GlobalTheory.LiftCoker
 set_option maxHeartbeats 1000000 in

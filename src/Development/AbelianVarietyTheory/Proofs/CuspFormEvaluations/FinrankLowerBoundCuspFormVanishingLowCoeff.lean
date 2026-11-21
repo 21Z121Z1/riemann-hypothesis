@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.GenericSectionsPolynomialDictionary
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsLtMulOfLt
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsIndepForms

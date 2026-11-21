@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.NumericalFamilyShapeGaps
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AbsCoordLeOfLOneNormLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CapParamOfIsHCTypeW

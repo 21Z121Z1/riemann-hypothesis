@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntInd
 import GroundTheory.LocalFields.QuadraticAbelian.WeilRepQuadratic
 import GroundTheory.LocalFields.LocalZetaShell

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwOCommDStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DTCompDTStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BisimplicialOperatorChainsAcyclicPositiveDegreeStatement

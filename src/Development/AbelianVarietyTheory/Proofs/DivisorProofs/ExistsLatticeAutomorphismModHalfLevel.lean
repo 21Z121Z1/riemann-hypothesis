@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UniformLevelMultiplicity
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelLiftConditions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalVectorMemIdealCompletedLatticeIffStatement

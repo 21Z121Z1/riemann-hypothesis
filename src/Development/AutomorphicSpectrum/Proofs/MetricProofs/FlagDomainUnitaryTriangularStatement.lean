@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagDomainUnitaryTriangular
 open Complex Metric
 set_option maxHeartbeats 1000000 in

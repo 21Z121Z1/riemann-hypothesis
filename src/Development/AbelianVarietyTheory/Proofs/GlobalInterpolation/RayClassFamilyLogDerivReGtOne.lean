@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RayClassLFunctionFamilyContinuationGrowth
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TsumOneDivRpowLe
 import Mathlib.NumberTheory.LSeries.Injectivity

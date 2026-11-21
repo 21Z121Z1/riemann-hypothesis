@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.CartanFactorisation.CuspidalClassOfWeilConvergence
 import Development.WeilBound.ThetaLifts.CartanFactorisation.Kills0Of
 import Development.WeilBound.ThetaLifts.LatticeBasics.PolDense

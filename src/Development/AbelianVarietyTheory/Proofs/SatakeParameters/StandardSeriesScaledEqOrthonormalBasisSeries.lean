@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsConstantCoeffOne
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepFrame

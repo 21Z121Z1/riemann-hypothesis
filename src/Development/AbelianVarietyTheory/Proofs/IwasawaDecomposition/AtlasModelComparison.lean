@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMorphismOfStalkMapsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AtlasLocalRingPointsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStalkFactor

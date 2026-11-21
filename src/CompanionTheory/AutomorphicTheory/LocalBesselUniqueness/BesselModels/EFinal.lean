@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.WeilPairJ
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.StepIntGOf
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LocFactorAll

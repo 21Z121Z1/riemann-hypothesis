@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSplitK
 import Mathlib.Tactic.Monotonicity.Lemmas
 open scoped Matrix NNReal ENNReal ComplexConjugate TensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousActP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StdSideUnique
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsIntegralOfLine

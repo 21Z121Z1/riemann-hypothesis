@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsOpenPartialHomeomorphAnalytic
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

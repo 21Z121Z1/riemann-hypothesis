@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HessianOfCombinationMetricLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDetHermitianSumZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackChartMetricBlockFormStatement

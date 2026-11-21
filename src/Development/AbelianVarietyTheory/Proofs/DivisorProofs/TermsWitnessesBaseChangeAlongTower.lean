@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPullIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.YKThNeZero

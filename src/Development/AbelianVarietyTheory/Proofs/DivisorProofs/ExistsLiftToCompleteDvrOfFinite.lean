@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
 import Mathlib.Tactic.Polynomial.Basic
 open IsLocalRing

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactTorusGroupMeasureDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingLocalClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalStabilizerHaarRightInvariantStatement

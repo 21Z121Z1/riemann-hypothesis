@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.FrameEstimates.TowerRallisLemma
 import Development.WeilBound.ThetaLifts.FrameEstimates.LatSumRedH
 

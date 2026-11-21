@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.FrobeniusTwistEigen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfScaledAlongPerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPrincipalIdealRingStalk

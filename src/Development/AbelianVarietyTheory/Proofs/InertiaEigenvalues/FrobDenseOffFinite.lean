@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChebotarevDegreeOne
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual Formalism.MainNotions.V

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProperFlatAdicSectionsLift
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits GlobalTheory.SpecialConn
 set_option maxHeartbeats 1000000 in

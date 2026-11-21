@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolySmulOfProd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AttOfFrobMatch
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JumpDictCrysAtOfWeights

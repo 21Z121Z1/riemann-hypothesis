@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCellOfIsFrameMat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPermutationLeadingMinors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCellOfLeadingMinors

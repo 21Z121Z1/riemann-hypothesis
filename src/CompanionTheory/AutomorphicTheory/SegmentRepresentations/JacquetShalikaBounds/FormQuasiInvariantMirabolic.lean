@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.SegmentRepresentations.JacquetShalikaBounds.CMMul
 import GroundTheory.AutomorphicForms.MacdonaldWhittaker
 

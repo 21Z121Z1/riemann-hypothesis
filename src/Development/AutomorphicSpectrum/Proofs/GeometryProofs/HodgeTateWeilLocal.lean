@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NormalAffineChartExistsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateWeilOpenChartStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateWeilUniqueStatement

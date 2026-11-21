@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardBiUnionLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsDenominatorOfFg
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MemOfPerpPerp

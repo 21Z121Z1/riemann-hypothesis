@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitsOfConjugatesMem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnitOfSpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LineOfSingleJump

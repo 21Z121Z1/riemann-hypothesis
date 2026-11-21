@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.PositiveSpanMatrices
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.LowerBlockMatrices

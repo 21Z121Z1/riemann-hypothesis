@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCuspFormPeriodNeZero
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ExistsMultTEqPoin
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsContAutRTrans

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PowerMapLocallyQuasiFiniteStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PowerMapFlatSemiabelianStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ThickeningGroupHomExtendsStatement

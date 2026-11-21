@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
 import Mathlib.Algebra.Lie.Sl2
 import Mathlib.LinearAlgebra.Eigenspace.Minpoly

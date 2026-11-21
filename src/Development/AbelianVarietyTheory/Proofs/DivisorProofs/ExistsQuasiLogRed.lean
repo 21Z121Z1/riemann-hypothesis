@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCob1WittLiftModPStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmSuccessiveApproximationStepStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSeqOfStep

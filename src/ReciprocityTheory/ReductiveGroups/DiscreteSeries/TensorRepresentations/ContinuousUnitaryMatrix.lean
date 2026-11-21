@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.HasDerivAtInvExpCurveEntry
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

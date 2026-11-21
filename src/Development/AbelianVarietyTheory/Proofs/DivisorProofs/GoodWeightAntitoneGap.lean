@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearL2Independent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCmPointGoodSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameDenominatorDominantWeightCmStatement

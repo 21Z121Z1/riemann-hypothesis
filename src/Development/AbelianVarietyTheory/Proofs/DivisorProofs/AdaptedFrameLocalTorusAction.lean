@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocIdeleEqIdl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplMapSplitProj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinePlace

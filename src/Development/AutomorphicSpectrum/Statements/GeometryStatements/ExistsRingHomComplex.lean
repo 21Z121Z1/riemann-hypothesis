@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.ZhangDimensionPushDownGrassmannianHeightBounds
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PCutoffs
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PTopNPoly

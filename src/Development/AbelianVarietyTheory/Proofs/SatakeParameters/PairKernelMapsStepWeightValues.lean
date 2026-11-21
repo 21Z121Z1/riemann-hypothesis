@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TrueWeightConsecutiveStepsPartitionStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaDistributionUnfolded
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JetLL

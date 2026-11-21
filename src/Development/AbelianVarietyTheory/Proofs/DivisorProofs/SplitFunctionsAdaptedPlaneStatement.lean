@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitFunctionsAdaptedPlane
 
 open scoped TensorProduct NNReal Matrix

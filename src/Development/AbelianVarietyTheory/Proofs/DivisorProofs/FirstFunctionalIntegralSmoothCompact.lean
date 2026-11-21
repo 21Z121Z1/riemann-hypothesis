@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ExpHaar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMulConvolutionEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConvSmoothCompactSupportStatement

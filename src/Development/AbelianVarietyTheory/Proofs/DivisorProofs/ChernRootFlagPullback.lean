@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelTrivializingBlowup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BcDensEqOfGram
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorPartTorusExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowFrameOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThNeZero

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StMaDensLogPow
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PMaDensChain
 set_option maxSynthPendingDepth 1

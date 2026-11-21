@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetKapIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitScalarFourier
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EntireEqOfMonomialDerivationsAtZeroEq

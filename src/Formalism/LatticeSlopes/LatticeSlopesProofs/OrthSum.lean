@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolPos
 import Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot
 import Formalism.LatticeSlopes.LatticeSlopesProofs.SlopesBdd

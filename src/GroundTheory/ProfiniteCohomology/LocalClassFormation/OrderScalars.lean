@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.LowDegree
 set_option maxSynthPendingDepth 1

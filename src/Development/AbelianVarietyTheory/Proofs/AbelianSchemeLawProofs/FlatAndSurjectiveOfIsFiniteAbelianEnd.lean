@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FlatOfFormallyUnramifiedGrpEnd
 import Mathlib.AlgebraicGeometry.Geometrically.Integral
 import Mathlib.AlgebraicGeometry.Morphisms.QuasiFinite

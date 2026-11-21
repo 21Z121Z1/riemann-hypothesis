@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.ExistsNormLeOfNormLtOneFinite
 set_option maxSynthPendingDepth 1
 

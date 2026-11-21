@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussianQuadraticFormSchwartzBounds
 open SchwartzMap Filter Topology
 open scoped Nat

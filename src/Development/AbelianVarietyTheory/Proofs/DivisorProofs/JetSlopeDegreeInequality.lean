@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSpanIntersectionSubspaceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankInfKerAddOneOfNeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelLemmaSmallVectorStatement

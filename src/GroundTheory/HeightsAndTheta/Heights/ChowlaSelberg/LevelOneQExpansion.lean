@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.HeckeRatios
 import GroundTheory.GlobalFields.ComplexMultiplication.JInvariant
 set_option maxSynthPendingDepth 1

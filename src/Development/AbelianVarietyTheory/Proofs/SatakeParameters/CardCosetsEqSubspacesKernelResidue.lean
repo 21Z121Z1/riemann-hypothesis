@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankReductionRangeAddCorank
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLinearEquivMapEqOfFinrankEq
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsZeroOfLev
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentCoordinateAdditive
 open scoped TensorProduct NNReal Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ContragredientTranspose.GelfandKazhdan
 import GroundTheory.AutomorphicForms.ContragredientTranspose.Character
 import GroundTheory.AutomorphicForms.WhittakerLocal

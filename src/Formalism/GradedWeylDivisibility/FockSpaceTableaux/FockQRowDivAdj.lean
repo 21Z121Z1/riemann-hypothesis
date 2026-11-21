@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.StatementB
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockRowAdj
 import Mathlib.RingTheory.SimpleRing.Principal

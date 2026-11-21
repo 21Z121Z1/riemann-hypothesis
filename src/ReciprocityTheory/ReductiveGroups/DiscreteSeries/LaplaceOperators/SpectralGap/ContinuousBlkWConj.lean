@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.SpectralGap.BesselIntegralSquareIntegrable
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TailIntegrals.UHMulInv
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MulVecFixOfSupp

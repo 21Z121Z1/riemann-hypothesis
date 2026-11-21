@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Rypos
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Locfin
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.RynePlace

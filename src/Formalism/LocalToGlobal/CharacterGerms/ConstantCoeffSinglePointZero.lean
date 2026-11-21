@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.SubstSubst
 import Formalism.LocalToGlobal.CharacterGerms.RowTieJet
 import Formalism.LocalToGlobal.CharacterGerms.RowTieValCut

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.KatoQuadraticCharacters.SymmetricPowerSymbols.CycSpec
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Hilbert90

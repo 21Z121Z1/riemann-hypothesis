@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsTheRecOfIsRecLit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableHopfOrderSubgroupRestriction
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec

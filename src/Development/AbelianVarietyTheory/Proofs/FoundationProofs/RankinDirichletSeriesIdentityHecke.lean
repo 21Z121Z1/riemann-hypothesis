@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RankinConvolutionCoeffStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesSummableTwistPowOfSqSummableStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LseriesShiftTwistStatement

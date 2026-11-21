@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLogPeriodFamily
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeGramComplexConjugateStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyExponentialConjugateStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasDerivAtAndIsTheta
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalSymplecticPointsSelfAnnihilator
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDescendPeriodicTrig

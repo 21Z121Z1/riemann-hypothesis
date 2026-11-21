@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRationalOrbitPointEqBesselBasePoint
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TowerEx
 

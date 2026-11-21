@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.MeasureTheory.Order.Group.Lattice
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.AdFormOf
 

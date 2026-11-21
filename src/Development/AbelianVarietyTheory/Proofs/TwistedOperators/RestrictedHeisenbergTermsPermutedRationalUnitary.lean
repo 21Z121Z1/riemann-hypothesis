@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.AdjointIsotropicDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisOApplyZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws

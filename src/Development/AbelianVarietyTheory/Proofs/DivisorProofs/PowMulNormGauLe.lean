@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFourierGau
 import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
 import Mathlib.Analysis.Real.Pi.Bounds

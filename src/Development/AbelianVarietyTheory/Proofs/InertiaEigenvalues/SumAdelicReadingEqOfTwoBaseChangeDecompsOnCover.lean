@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.IoOverLeftUnique
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IntFormsSubset
 open NumberField IsDedekindDomain

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatWeightInvertiblePairStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatWeightPairProductUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundedUnitSumComponentStatement

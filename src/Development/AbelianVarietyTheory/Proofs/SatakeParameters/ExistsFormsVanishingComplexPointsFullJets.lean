@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.RingKrullDimLeOfQuasiFinite
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGenericForms
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCotangentBasis

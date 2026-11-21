@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.InertDef
 import Development.WeilBound.CoreStatements.LocalThetaKernels.LocrepAd
 import Development.WeilBound.CoreStatements.LocalThetaKernels.LinearIndependentOfNotMem

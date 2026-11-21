@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec

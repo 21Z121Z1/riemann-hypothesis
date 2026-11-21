@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.OpenSubgroups
 import GroundTheory.GlobalFields.GlobalArtinMap.ArtinMap
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalSymbol

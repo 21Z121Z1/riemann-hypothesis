@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsAdicCompleteOfPowSmulEqZero
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.Tactic.ENatToNat

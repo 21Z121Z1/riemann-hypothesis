@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DegreeMonoLatticeLeStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SubDegreeNonposTrivialLatticeStatement
 

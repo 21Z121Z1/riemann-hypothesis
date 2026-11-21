@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.KernelTrace
 
 namespace GroundTheory.Automorphic

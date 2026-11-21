@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.CuspSpanNormBounds.KappaEndpoints
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc
 open scoped Pointwise ENNReal Classical

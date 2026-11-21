@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.MixedCoefficientClosed
 import Formalism.LocalToGlobal.CharacterGerms.FirstPartialLawAtPoints
 import Formalism.LocalToGlobal.CharacterGerms.RankMaximalOfNondegenerate

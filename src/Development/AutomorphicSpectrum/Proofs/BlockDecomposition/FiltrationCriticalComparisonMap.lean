@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalisationLadders.TruncationHomExt
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.RingTheory.PiTensorProduct

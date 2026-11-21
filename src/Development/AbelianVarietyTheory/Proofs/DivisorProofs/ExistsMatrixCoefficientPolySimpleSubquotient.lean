@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ApplyCoefEqZeroOfCol
 import Development.AbelianVarietyTheory.Definitions.Divisors.LiftFrameEmbeddingBase

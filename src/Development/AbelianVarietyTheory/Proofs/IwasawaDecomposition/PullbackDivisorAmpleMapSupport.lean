@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalizedBlowupSeparated
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetOmIsLBOfAmple
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteFiberAmpleTorsionStatement

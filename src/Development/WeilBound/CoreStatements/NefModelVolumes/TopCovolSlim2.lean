@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.NefModelVolumes.TopCovolG
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.HermitianSectionsHeightBound
 import Development.WeilBound.CoreStatements.NefModelVolumes.InjectivityWeightSections

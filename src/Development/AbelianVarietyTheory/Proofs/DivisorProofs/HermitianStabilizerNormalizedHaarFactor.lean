@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleRestrictedProductStructureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleRestrictedProductHaarStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerNormalizedHaarRestrictedStatement

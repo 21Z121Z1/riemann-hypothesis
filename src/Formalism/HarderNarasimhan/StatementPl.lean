@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.Statement
 import Formalism.HermitianLattices.StatementMaj
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs

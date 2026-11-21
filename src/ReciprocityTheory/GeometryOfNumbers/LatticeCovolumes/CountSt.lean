@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountStC
 
 namespace ReciprocityTheory.GeometryOfNumbersTheory

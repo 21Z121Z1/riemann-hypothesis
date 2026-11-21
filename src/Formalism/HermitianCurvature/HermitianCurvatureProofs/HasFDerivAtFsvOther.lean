@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FsvMulFsvNeg
 import Std.Tactic.BVDecide.Normalize.Prop
 

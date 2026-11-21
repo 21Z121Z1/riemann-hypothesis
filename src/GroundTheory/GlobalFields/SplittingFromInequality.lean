@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.FirstInequalityStatement
 import GroundTheory.GlobalFields.IdeleGroups.LocalNormsEverywhere
 import GroundTheory.GlobalFields.Adele.WeakApproxUnits

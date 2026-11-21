@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ResidualSpectrumByClass
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DegreesPos
 

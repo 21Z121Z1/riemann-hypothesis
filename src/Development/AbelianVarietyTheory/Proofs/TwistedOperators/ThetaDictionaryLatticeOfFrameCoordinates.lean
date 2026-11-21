@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DictionaryComponentFrameMarkingUniformisation
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RealPoints
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AtPlaceIffEqAtTau

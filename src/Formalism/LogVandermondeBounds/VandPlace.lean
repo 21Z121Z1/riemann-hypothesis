@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.LogRatioLowerBound
 
 namespace Formalism.LogVandermondeBounds.StandardLattice

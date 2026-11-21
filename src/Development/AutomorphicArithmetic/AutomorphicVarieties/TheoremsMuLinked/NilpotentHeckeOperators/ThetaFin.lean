@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHkNorm
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwMemIwC
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHeckePairIwC

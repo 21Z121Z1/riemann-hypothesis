@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.ClosedPointLifts.ClosedLift
 import Development.EtaleCohomology.EtaleSheaves.LeafConeZeroPf
 

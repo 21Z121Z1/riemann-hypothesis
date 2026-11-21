@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CmTypeLetterFrameColumnDictionaryStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DetOfTriangular
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PeriodsEqFramePeriods

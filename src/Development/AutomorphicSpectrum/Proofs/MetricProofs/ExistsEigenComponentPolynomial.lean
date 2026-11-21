@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ExistsIntSmulIsAdicIntegralInTensorBasis
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.PicardGroup

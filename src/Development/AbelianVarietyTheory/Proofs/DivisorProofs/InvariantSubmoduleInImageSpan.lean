@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLocType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumMemSpanRangeLeOfIsSimpleModule
 

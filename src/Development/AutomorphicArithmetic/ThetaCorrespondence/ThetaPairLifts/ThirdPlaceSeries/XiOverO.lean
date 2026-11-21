@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CuspidalGaloisUnramified
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormEqOneOfCompact
 

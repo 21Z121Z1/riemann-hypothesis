@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IntersectionFamilySymmetric
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.LocHeckeInert
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.SummandFactor

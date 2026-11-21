@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsBaseEnlargementFixedCoefFieldOfCoeffEnlargemen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.Forms
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmPeriodFromEllipticLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieCorrespondenceDifferentialsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTypeDifferentialsAlgebraicStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsEquivOfFinrank
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 import Development.AbelianVarietyTheory.Definitions.Divisors.Uniformised

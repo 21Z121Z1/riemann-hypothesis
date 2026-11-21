@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CthFacMultipliable
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.Tactic.Monotonicity.Lemmas

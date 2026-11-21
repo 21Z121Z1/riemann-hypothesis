@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PrimeSetBoundDataOfPrimitiveChar
 import Mathlib.NumberTheory.Cyclotomic.Gal
 import Mathlib.RingTheory.PicardGroup

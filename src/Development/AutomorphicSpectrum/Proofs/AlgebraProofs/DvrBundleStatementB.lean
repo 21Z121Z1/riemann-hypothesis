@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SameGenericBaseExtensionStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.SameGenericBundleChainStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleBaseExtensionStatement

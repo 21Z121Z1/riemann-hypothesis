@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdmissibleIntegralInterchangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBStabilizerHaarAdelicStatement

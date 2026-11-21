@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsNormalVerticalModel
 import Development.AutomorphicArithmetic.DivisorFrames.VerticalModelMatchCompat
 import Development.AutomorphicArithmetic.DivisorFrames.UnitAtPowDivFnMapOfReadsOfGReads

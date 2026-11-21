@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsoOfSectionRingAutOfRelAmple
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsProperAndRelAmpleLPow
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsEquivPow

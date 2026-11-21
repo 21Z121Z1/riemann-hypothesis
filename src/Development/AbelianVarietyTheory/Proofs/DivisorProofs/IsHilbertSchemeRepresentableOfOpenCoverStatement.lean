@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHilbertSchemeRepresentableOfOpenCover
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits GlobalTheory.HilbertSch
 set_option maxHeartbeats 1000000 in

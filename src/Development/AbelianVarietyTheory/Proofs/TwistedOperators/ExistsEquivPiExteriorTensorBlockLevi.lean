@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpenNormalisedSubgroupSubset
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContractsTensorProductChain
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchurAdmissibleAlt

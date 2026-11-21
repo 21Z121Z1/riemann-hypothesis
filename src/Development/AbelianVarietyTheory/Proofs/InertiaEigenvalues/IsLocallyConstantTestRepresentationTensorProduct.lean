@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TensorRepApply
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 

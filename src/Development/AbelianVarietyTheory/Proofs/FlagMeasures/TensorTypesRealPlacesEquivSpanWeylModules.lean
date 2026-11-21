@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConjLinearIsometryCompactUnitaryTypeWeylMoStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalizedFockFormPureTensorPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConjLinearOfGramEqStatement

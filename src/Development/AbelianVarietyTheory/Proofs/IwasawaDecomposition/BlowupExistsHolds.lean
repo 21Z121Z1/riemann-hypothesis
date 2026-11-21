@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.OpenImmersionCompStructureEqGeneric
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BoundaryIdealPowerMapsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DenseImageBoundaryPowerStatement

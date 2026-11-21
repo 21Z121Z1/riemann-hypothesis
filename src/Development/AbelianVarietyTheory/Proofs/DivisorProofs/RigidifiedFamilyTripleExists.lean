@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfDefinite
 import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds

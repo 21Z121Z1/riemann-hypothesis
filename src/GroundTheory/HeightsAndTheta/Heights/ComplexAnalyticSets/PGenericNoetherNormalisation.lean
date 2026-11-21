@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SumRMulNe
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProofSimp
 import Std.Tactic.BVDecide.Normalize.Prop

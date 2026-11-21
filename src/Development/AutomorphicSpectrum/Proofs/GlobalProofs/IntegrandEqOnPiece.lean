@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SphericalZetaCosets
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL
 open scoped ComplexConjugate ValuativeRel

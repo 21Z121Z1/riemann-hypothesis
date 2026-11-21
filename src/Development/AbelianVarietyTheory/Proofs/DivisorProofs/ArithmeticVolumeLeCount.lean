@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsRatSecOfPull
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArTopOfInduced

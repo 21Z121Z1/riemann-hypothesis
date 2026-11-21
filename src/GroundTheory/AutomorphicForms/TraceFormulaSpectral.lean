@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.TraceClass
 import GroundTheory.AutomorphicForms.UnitaryRepresentations
 import Mathlib.Topology.UniformSpace.Uniformizable

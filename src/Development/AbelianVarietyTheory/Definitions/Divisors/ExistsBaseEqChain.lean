@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GrNormCompCast
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLengthOneChainIdentityEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDvrPowEqPrime

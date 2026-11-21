@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.CompleteTrivial
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Hilbert90
 import Mathlib.RingTheory.PiTensorProduct

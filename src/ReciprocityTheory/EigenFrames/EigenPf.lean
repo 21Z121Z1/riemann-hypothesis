@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.EigenFrames.EigenSt
 import Mathlib.RingTheory.SimpleRing.Principal
 import Mathlib.RingTheory.WittVector.IsPoly

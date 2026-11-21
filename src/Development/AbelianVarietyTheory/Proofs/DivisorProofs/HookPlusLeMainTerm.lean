@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.CuspLatticeAnyLevel
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.LevelVectorSizeBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePartBase

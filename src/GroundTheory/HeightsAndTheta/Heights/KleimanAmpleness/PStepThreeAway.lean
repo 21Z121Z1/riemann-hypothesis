@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsStepThreeAway
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.PiTensorProduct

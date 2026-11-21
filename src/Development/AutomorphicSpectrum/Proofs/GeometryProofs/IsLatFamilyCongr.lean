@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsPreFamilyOfLatticeFamilyTwo
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NonemptyEquivOfCardHom
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.HTChartExists

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.CovariantDegrees
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.OperatorsKillInvariantProjection
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightSpaceEqBotOutsideSupport

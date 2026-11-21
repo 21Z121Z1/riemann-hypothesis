@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergyDiagonal
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergyInvariant
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergyCocycle

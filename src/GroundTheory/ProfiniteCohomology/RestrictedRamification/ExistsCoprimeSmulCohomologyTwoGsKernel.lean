@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.EqZeroOfCohomologyInflThreeEqZero
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerSplit
 set_option maxSynthPendingDepth 1

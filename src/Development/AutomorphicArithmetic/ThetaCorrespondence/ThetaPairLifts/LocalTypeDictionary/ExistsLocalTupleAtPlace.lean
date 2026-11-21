@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.LocalFixedPointAtPlace
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistConjugateTuplesSameRealisationExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PureTensorOSmul

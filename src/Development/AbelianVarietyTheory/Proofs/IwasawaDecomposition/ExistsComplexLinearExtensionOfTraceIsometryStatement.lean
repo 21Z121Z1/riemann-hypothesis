@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsComplexLinearExtensionOfTraceIsometry
 open NumberField IsDedekindDomain Formalism.L2.Ker Matrix
 open scoped BigOperators

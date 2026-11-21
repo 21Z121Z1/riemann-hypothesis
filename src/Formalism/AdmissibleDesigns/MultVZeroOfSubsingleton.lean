@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.TensSubsingleton
 import Formalism.AdmissibleDesigns.InvariantsEqBotIff
 import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs

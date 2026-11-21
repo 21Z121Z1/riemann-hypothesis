@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasLevelStd
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaValueIdeals
 open NumberField UpperHalfPlane GlobalTheory.HilbFam GlobalTheory.QFam

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.HeckeVectors.HeckeDoubleCosets.DoubleCosetLemmas.ExtendedCharacterCongrOfTame
 
 noncomputable section

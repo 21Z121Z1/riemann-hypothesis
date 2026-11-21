@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SlantProductSecondAction
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoboundaryCup1
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoboundaryCup0

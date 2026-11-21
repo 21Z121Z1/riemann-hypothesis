@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.NonemptyAlgHomOfIsRayOfDvd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayClassNumberBounds
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HeckeIdealEqOfRay

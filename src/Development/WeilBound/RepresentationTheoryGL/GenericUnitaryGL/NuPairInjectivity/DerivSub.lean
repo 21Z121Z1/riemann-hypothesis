@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.SegmentDerivatives.DerivSub
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivativeJacquetHolds
 

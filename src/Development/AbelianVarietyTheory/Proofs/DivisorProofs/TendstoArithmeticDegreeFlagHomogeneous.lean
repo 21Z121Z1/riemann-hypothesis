@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeAndArithmeticCompatibilityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticDegreeMixedLinearRootStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneousMemSpanLinearRootsStatement

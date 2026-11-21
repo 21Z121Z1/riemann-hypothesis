@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.NsmulCoprimeBijectiveCurves
 import Mathlib.RingTheory.PowerSeries.Substitution
 

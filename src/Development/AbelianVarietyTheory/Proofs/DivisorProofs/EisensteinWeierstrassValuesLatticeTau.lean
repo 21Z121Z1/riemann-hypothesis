@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomogeneityOfIsTauOfStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AreaTauPair
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate

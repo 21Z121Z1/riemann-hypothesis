@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUnipMir
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MemTwKerIffAverage
 import GroundTheory.LocalFields.LocalFourierChar

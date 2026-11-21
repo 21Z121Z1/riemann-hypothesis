@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoverFormRationalDescentToBase
 open NumberField IsDedekindDomain
 open scoped TensorProduct

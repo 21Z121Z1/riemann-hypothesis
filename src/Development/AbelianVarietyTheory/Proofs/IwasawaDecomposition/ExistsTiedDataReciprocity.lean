@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExtraTiedCol
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NTiedAllAtWit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColsTwTied

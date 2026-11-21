@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTraceRead
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.EtaComparisonIffForall
 

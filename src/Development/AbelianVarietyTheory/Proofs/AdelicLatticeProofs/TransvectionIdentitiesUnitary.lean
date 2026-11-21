@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermHyperbolic
 import Mathlib.RingTheory.PiTensorProduct
 open NumberField IsDedekindDomain Matrix GlobalTheory.UTrans GlobalTheory.AdLat

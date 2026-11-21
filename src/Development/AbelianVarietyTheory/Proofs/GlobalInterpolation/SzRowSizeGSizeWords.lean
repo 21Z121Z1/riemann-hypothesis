@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogAddRpowMulLogPowLeRpow
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowAndImp
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowCardWordsLe

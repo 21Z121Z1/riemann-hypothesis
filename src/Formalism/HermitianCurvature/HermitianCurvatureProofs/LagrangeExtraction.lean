@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChebyshevExtremalPolynomials
 
 namespace Formalism.FourierDecayAlt.P.LagrangeExtraction

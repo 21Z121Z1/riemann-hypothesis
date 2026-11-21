@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassPresExtMemExtBijIsom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaLevelVPCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelTensorValues

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceOfIsDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialFibreConnectedOfProper
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PSplitT

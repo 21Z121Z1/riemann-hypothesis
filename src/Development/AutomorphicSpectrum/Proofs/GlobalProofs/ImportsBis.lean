@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PlaneStrongApproxProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PlaneStrongApproxGeneratorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PlaneStrongApproxHoldsStatement

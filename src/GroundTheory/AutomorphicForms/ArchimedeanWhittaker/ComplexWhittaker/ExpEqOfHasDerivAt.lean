@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.CartanBasis
 
 namespace GroundTheory.Automorphic.ArchWhittakerC

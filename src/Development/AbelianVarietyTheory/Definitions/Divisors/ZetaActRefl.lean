@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.E2.Defs
 

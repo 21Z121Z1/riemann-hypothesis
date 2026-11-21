@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff

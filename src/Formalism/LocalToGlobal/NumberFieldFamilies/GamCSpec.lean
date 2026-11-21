@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNd
 import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCTypTame
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TwoPowS0EqTwoPartModulus

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.Imports
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.ImportsBis

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StImplicitCurve
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.OsgoodSeparate
 import Mathlib.Analysis.Calculus.FDeriv.Pi

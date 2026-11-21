@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.DualHopfOrderStatement
 import ReciprocityTheory.DualLattices.MemDualLatMapFourier
 import ReciprocityTheory.DualLattices.TransposeMulSelf

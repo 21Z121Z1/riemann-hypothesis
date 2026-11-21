@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.EigenLatDifferent
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.RecordEigenInputs
 import Mathlib.Tactic.Monotonicity.Lemmas

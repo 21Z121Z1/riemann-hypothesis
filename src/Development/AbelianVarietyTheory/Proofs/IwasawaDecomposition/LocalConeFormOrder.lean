@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelFormAlongDvr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCompleteDvrOfLocalizationStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalConeRegularPointStatement

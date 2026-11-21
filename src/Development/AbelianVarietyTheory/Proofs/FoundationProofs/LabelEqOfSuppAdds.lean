@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemChainVecsDet
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUpperMulInc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabelUniqueOfIrreducibleStatement

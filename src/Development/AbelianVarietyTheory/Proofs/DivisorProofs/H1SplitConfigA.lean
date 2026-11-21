@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryCharInducedJacquetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaUnfoldingStatement
 

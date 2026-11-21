@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteRamifiedPlacesHeckeCharacter
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowEqSpan
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemFin

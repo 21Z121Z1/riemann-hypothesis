@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHypersurfacePresentation
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGenericPrimitive
 import Mathlib.Algebra.MvPolynomial.Division

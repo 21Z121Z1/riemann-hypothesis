@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableIdelesPowerDecay
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBDefs
 open scoped TensorProduct NNReal Matrix

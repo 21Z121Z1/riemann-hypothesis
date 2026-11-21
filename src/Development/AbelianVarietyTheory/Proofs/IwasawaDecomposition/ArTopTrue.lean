@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ArakelovTopUnique
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicDivisorInducedLinearStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCommonRefinementModelsStatement

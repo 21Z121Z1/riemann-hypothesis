@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RpowNegLeNormOfComponent
 open NumberField IsDedekindDomain GlobalTheory.LatHecke Formalism.UG
 

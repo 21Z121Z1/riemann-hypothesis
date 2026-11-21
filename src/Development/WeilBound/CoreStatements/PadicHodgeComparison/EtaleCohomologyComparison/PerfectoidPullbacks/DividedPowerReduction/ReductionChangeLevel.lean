@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MuBNat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullInclRedMor
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DPullCEqZero

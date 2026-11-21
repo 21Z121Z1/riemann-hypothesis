@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelEmbeddingFirstStatement
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GrNormPosOfBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentFrameBaseChange

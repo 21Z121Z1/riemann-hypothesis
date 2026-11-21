@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.LenOfCard
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK
 import Mathlib.Algebra.Order.Ring.Star

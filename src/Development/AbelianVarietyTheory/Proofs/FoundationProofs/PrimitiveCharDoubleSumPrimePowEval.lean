@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.Integral
 import Mathlib.NumberTheory.DirichletCharacter.GaussSum
 import Mathlib.RingTheory.Henselian

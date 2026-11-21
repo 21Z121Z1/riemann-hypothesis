@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.IsotypicComponentLeLowerWeights
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.CrCCommApply
 

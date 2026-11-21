@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.IsSelfOf
 import Development.AbelianVarietyTheory.Definitions.Jets.DepthNumbersThresholdEq
 import Std.Tactic.BVDecide.Normalize.BitVec

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.MahlerMeasure.LevelLattice
 import Std.Tactic.BVDecide.Normalize.Prop
 

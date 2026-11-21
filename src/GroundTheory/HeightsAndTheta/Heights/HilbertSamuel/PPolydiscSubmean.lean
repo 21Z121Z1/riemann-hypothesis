@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergman
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PolydiscMean
 set_option maxSynthPendingDepth 1

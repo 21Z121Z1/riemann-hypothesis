@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.FrobeniusSmoothVectors.LocRho
 import Mathlib.RingTheory.MvPowerSeries.Derivative
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SpanOfVariable

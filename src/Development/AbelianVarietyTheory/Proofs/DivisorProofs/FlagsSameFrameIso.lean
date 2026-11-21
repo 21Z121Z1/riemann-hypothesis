@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulesIsoOfMatchingFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniREqUni
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory Matrix

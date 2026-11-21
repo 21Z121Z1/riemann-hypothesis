@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtendByZeroOnSubsetApplyCoe
 import Mathlib.Tactic.Polynomial.Basic
 import Mathlib.Topology.Sheaves.Presheaf

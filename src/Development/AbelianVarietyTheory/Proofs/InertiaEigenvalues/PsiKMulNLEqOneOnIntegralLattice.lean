@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuadraticStarStructure
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.ClassNumberFinite
 
 namespace HeckeCharacterZeroLocus

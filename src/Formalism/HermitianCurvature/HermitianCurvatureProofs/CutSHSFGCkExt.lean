@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSHSFG
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RegularisedPairingViaPhase
 import Mathlib.Topology.UniformSpace.Uniformizable

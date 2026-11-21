@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionFirst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefMapNormEquivariantBasisAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairRecordCore

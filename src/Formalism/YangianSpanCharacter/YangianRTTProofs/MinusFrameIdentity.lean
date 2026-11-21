@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.YangianSpanCharacter.StatementF
 import Formalism.YangianSpanCharacter.YangianRTTProofs.DiagonalEntryEqOfModularRelation
 import Mathlib.Tactic.ENatToNat

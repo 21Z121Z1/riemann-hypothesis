@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.AlgebraicGeometry.AffineSpace

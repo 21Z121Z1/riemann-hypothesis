@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBDefs
 import Development.AutomorphicArithmetic.DivisorFrames.GaussianFourierConjPower
 import Mathlib.MeasureTheory.Constructions.HaarToSphere

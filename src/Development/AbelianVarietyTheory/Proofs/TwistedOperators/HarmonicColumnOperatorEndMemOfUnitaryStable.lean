@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SumSmulMemOfSumZpowSmulMem
 import Mathlib.Analysis.CStarAlgebra.Classes
 open scoped ComplexConjugate

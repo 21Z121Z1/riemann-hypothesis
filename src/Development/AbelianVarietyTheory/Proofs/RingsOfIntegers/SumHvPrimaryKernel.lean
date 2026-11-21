@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.InZhIffKillsAdapted
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.EqOfSqEqOfOdd
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SumSupportCMul

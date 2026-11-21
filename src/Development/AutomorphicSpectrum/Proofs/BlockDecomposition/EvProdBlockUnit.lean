@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsIsUnder
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PullRatioTopEq
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProdZpowSingle

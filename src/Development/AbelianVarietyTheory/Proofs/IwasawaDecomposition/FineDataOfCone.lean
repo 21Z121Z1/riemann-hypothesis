@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSymmetricFormAlongDvrStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DvdOfValuationLeAllDvrStatement
 

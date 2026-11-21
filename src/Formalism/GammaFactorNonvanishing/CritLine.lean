@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CharacterBoxes.EveryCharacter
 import Formalism.GammaFactorNonvanishing.RhOfRight
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ExpHaar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarLintegralMulRightLeStatement
 open MeasureTheory GroundTheory.Automorphic

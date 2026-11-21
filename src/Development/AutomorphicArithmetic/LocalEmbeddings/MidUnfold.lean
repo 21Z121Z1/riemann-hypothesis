@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarFundamentalDomainOneFlagTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReconfiguredTripleCompatibility
 open scoped TensorProduct NNReal Matrix

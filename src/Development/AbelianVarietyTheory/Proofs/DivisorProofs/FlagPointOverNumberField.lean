@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagPointTangentDualNumberStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorsChartIndependenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupPullbackTangentVectorsCompatStatement

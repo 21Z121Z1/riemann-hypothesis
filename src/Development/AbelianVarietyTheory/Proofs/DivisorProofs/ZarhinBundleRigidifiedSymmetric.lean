@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaOK
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomOfClassifying
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeHomEqOfPowEqStatement

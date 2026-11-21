@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DegVand
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.BlockAnti
 

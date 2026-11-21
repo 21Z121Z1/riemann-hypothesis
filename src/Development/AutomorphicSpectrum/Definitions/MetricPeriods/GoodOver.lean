@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IntStable
 import Mathlib.RingTheory.MvPowerSeries.Basic
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.FamilyLeCoords

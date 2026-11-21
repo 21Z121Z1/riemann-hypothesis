@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.QuotientMetricDivisors.Statement
 import Formalism.HarderNarasimhan.QuotRealize
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions

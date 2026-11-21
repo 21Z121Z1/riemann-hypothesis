@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataAmbForm
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange
 

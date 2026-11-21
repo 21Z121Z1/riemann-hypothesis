@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHaarOfIsCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartanCommutingIsometriesBoundedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupBoundedEntriesCompactStatement

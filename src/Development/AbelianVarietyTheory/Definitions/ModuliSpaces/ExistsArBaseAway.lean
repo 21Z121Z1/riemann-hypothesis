@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.GoodClass
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.W8AddTransposeEqE8
 import Mathlib.Algebra.AffineMonoid.Basic

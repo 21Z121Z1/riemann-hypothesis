@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EighthPowerIntegerMatrixPrimitiveAdjoint
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsArBaseAway
 

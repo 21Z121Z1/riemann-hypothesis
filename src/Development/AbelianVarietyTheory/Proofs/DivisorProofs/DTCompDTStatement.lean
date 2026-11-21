@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DTCompDT
 open CategoryTheory Limits Opposite AlgebraicTopology GlobalTheory.EZ
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.FamRows
 
 open Module NumberField IsDedekindDomain Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBDefs
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Topology.Separation.CompletelyRegular

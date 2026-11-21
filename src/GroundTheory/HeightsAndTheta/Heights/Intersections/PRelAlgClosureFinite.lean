@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StRelAlgClosureFinite
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SphericalLattices.FunDefs
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharactersAgreeInertUnramified
 

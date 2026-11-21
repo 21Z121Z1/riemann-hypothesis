@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.ComplementarySeries.Complementary
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SesquilinearFlipConj
 

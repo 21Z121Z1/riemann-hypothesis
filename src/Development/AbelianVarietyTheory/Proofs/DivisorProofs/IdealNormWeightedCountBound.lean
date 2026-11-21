@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealIntersectionNormSeriesBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubidealNormPowerSeriesBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedNormIdealElementsFiniteCountStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieTrH
 import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero
 

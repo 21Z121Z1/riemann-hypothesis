@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PowerSubgroups.CountableNeighbourhoods.SingleMemInitialCoordSubspace
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

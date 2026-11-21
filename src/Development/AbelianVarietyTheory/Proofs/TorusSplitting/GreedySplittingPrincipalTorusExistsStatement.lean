@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.GreedySplittingPrincipalTorusExists
 open NumberField Complex ReciprocityTheory.ChartRestriction.G.I2
 theorem _root_.GlobalTheory.T.greedy_splitting_principal_torus_exists : SplitStatement := by

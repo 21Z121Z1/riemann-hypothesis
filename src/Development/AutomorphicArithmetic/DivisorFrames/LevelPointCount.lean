@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConsAgree
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConsMatch
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CardLiesOverEqIndex

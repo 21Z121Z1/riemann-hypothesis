@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.WeilConjectures.FermatCount
 import Development.EtaleCohomology.EtaleSheaves.EtaleBaseChangeFractionFieldIndEtaleOverPolynomi
 import Mathlib.AlgebraicGeometry.Morphisms.UniversallyInjective

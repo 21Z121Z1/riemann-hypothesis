@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EigenLatticesDifferentStatementHolds
 open NumberField GroundTheory.Heights₂.Heights.NineStatements
 set_option maxHeartbeats 1000000 in

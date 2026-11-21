@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CubeTheorem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdditiveLiftIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDualOfIsPerfectOfAdditive

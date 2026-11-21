@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueColumnWeightSpreadLeTwoMulScaleStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WtsOkAndSizes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogLeLOfLeCond

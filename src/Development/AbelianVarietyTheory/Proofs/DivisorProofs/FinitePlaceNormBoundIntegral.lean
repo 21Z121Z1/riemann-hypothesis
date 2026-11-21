@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicEmbeddingPlaceExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicEmbeddingsSameNormConjugateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FstEqFalseOfMemSupport

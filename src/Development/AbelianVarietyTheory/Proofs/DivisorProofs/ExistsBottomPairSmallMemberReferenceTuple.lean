@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongOneInvMulIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormEqOfTwoOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CondESupConj

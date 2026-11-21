@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NatTransUpToSqPullback
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory Opposite CrystallineSemistableComparison CrystallineSemistableComparison.CH

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeVectorContentIdealExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContentIdealLocalValuationBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContentIdealLocalLatticeValuationStatement

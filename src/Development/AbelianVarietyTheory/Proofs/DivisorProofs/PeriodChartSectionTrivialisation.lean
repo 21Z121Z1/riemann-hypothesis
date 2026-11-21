@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicTranslationSectionSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodChartTranslationLiftStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsHolToPrecomp

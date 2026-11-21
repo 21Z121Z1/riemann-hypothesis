@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob

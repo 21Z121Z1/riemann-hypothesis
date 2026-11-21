@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.CyclotomicDiscriminants.SZcTPf
 import Development.EtaleCohomology.CyclotomicDiscriminants.SChainPf
 import Mathlib.Algebra.AffineMonoid.Basic

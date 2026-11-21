@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CupProducts
 import GroundTheory.ProfiniteCohomology.FilteredHomology
 import Mathlib.Tactic.ENatToNat

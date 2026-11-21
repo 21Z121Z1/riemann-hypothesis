@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HorizontalThetaLevelFifth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgHasTypeStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgTypeOtherPlaceStatement

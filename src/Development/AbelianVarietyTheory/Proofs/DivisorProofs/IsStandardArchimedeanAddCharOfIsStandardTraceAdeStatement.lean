@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStandardArchimedeanAddCharOfIsStandardTraceAde
 open NumberField Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
 set_option maxHeartbeats 1000000 in

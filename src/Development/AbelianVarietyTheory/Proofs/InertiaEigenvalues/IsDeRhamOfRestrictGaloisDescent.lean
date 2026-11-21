@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DeRhamJumpDescent
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Mathlib.RingTheory.Henselian

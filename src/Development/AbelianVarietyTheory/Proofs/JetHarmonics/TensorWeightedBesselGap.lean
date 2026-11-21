@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorWeightedBesselSumStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSettingGapDecayStatement
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirrorDecomposition.HpkRowEsI

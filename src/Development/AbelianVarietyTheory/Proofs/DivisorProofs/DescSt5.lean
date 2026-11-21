@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescSt
 import Development.AbelianVarietyTheory.Definitions.Divisors.MinSt5OfMinSt4
 

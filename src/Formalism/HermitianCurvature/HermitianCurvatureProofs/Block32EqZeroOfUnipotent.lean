@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.MemParahoricTimesPrincipalCongruenceIff
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.Minors
 import Mathlib.Algebra.Order.Ring.Star

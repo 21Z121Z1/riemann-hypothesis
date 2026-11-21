@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.EntryCommuteTransposedRMatrix
 
 namespace Formalism.FourierDecayAlt.P.Wd7

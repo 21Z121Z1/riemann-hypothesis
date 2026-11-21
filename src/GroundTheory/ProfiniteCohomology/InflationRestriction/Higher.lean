@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.InflationRestriction.Coinduced
 import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality.QuotientToInvariantsFunctorPreservesZeroMorphism

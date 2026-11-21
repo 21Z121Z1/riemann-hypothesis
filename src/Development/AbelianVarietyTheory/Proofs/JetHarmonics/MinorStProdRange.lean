@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 
 set_option autoImplicit false

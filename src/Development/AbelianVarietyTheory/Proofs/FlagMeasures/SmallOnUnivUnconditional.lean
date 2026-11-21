@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RowsPtAt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassRatioStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsRawMassAndGenusMass

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ThresholdSelection
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassNumberAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FirstTypePrimeLargeOfRecord

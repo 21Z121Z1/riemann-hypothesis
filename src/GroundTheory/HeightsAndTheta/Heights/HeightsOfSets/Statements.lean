@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Points
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Slopes
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GenEigenMultiplicityQuotientAdditiveChain
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CloseVectorNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NabBijectiveWindow

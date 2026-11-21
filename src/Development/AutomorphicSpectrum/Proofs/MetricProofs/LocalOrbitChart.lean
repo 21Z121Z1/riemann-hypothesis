@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsLocalOrbitChart
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PLevelSetLocalInj
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsAnalyticLogResolution

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagOffPair
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PDiagForms
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagOffUnit

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PowerSums
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsFlag
 set_option maxSynthPendingDepth 1

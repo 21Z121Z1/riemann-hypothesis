@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToGAdMat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevSplitOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviIsoPlaneUnique

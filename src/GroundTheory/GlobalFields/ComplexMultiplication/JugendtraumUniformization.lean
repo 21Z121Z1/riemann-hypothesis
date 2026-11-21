@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticUniformizationClassification
 import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremLattice
 set_option maxSynthPendingDepth 1

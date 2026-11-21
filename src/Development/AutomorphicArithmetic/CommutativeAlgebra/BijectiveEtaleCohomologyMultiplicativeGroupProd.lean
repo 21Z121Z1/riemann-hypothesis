@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
 import Development.AutomorphicArithmetic.CommutativeAlgebra.BijectiveEtaleCohomologyLaurentPolynomialOfCoord
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LaurentCharacterLambda

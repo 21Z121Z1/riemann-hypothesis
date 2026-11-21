@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFieldsPrimesOk
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ColNorm
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr

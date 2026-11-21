@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LamGApply
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormIntegersLeOne
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightedHomogeneousMap

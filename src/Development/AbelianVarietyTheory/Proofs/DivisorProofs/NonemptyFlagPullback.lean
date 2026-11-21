@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagConcatenationExtension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorBundleOverFieldHasFlag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppInjectiveOfFrames

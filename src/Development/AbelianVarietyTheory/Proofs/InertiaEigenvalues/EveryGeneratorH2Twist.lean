@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PhiInjectiveQuotientH2Statement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H2QuotientFiniteCardStatement
 

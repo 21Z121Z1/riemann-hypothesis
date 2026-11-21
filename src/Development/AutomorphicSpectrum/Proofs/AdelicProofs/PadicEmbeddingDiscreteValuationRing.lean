@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 import Mathlib.RingTheory.Valuation.LocalSubring
 

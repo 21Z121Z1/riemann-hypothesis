@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryMovesIsotropicLineToScalarStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicVectorNonzeroPairingsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalConjugateUnipotentRadicalStatement

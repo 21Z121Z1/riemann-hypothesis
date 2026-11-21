@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLatComap
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIndepSpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsMore

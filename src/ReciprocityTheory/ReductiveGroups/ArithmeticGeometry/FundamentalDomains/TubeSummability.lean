@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FlowMeanContinuity
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.TubeSummability

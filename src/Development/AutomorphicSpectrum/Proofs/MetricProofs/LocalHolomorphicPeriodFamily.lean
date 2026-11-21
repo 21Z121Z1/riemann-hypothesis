@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 import Mathlib.RingTheory.PicardGroup

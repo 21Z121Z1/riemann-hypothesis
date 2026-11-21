@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RepresentationOfIntegralMatricesEqInvTwistedChar
 set_option synthInstance.maxHeartbeats 400000
 set_option maxHeartbeats 1000000

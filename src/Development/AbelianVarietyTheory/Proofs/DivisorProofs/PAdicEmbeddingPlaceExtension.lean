@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingKrullDimIntegers
 
 open NumberField IsDedekindDomain GlobalTheory.TrueGeo

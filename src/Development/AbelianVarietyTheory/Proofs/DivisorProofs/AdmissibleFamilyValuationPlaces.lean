@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsLgOfLnSymUpdateSubLe
 import Development.AutomorphicArithmetic.LocalEmbeddings.PairMain
 import Development.AutomorphicArithmetic.LocalEmbeddings.CovCmpMain

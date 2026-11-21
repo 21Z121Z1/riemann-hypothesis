@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReOfDiv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultREqReL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MvEvHolds

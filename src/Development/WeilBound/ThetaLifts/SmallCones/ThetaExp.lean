@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.SmallCones.Leaves
 import Development.WeilBound.ThetaLifts.SmallCones.GenSmallOf
 import Development.WeilBound.ThetaLifts.SmallCones.Kernel

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConductorRecCompatible
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.LocalCentralUnits.ExtDim
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeIndices.CharZeroAdicCompletion

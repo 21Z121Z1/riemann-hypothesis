@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.SiegelNeZeroIff
 open scoped MatrixGroups
 open GlobalTheory.KZ

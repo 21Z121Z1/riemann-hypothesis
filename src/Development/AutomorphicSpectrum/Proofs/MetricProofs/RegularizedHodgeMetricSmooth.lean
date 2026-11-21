@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PMuRegSmooth
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHermExtend
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PProjSmoothAlong

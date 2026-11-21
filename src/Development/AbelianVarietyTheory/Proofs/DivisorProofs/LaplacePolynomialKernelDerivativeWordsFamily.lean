@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsExpLieAlgebraComplexUnits
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivWordLeIntegralOfAevalCasimirEqZeroStatement
 open GlobalTheory.HCA MeasureTheory GroundTheory.Automorphic

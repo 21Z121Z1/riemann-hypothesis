@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.RegularLocalRing.Polynomial
 import Mathlib.Topology.Compactification.OnePoint.Basic
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.JacChart

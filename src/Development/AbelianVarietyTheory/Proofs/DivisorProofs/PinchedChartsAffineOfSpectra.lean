@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitsPatch
 import Development.AbelianVarietyTheory.Definitions.Uniformization.ExistsUniqueTorusCompat
 import Mathlib.CategoryTheory.Limits.Shapes.Countable

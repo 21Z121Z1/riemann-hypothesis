@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCobWholeOfIsCobCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumMulHodgeFilEqZeroOfDeRhamCoboundaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParCocIsCoc

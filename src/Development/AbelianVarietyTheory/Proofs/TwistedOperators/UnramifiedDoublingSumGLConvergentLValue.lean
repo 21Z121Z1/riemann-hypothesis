@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatFunDifferentiableOn
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormLeCard
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed

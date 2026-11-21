@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KerEntTiedWithEnt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KernelChoicesStandardTrueColumns
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnfIsAllOfSame

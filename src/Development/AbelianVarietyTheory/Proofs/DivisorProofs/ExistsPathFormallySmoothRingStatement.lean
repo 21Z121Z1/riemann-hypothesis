@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPathFormallySmoothRing
 
 open scoped IntermediateField Polynomial RatFunc

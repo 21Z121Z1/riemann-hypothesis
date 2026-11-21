@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SpMapComp
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLatticeTorsionHom
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsClopenWeilIsIff

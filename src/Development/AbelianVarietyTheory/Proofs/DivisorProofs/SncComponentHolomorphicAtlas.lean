@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSNCAtlasOfIsEmpty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticLogResolution
 import Mathlib.RingTheory.PicardGroup

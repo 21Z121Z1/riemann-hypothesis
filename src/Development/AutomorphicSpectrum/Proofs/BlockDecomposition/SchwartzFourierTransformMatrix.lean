@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SchwartzBilinear.ExistsEquivInnerOfNondegenerate
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

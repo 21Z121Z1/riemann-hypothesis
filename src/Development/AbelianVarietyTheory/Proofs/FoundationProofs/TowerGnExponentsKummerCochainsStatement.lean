@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerGnExponentsKummerCochains
 open GlobalTheory.K5 GlobalTheory.KumDlog
 set_option maxHeartbeats 1000000 in

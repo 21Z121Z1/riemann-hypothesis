@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DvrPointAnalyticDiscStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenericPointComponentLocalRing
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InjectiveOfIsCptGen

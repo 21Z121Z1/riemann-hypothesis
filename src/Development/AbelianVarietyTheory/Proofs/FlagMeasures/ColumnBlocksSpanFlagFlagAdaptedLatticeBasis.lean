@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SigmaFiniteOfRealSmul
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
 

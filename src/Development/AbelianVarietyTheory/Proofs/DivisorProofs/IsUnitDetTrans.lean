@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagMatrixUniqueUpToTriangular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagMatrixChangeOfFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegFlagged

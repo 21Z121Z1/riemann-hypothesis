@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DictionaryComponentFrameMarkingUniformisationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFormCompatBaseEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLatOfInt

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsTrSelf
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs

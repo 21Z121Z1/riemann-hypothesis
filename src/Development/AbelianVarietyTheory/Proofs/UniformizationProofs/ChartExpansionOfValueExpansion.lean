@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SvalSecComb
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.MatchingSectionsExist
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsLiftUnitTensor

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsHodgeFlagMinorTrdeg
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsHodgeFlag

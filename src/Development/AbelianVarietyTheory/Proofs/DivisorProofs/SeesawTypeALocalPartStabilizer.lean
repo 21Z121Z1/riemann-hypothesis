@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerCompactLocalSchwartzStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriplePairLocalPartCaseAStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleAbsPowerIntegrableStatement

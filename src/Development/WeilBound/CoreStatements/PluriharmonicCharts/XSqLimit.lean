@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AnalyticSystemRegularityProperties
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PotentialContDiffAt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens

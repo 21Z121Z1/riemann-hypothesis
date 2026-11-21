@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapAdditiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapEqZeroIffStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapMemSkewTraceStatement

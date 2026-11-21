@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToGAdMat
 

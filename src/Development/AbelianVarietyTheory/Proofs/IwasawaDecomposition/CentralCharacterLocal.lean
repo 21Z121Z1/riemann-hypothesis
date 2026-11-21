@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CentralRationalAtMemberStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ActionReadAtMemberStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CentralLocalFrameAtMemberStatement

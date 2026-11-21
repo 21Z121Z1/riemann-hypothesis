@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.LubinTatePoints
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Vanishing
 set_option maxSynthPendingDepth 1

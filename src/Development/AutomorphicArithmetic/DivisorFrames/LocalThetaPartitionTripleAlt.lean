@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBumpB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalWeilActionCompatibilityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationIsoBTriplePairStatement

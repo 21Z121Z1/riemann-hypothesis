@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.LinearAlgebra.Matrix.Hermitian

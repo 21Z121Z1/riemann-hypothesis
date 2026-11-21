@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkSpecializes
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtFractionNoetherianClosed

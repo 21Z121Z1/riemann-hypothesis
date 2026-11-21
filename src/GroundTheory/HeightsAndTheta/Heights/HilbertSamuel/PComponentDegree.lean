@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComponentDegree
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComponentResInt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsSmoothMetricOfIsSmoothHerm

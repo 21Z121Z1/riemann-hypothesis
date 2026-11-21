@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedMultiplicityOneProportional
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.MemLatWIff
 import Development.WeilBound.ThetaLifts.TowerModels.LeviAd

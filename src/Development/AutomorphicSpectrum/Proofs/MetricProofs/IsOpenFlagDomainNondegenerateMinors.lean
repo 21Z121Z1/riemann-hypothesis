@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Matrix.Hermitian

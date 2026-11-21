@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SecCoordOfRatio
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MemIdealOfOfDense
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SpMapCompRingHomComp

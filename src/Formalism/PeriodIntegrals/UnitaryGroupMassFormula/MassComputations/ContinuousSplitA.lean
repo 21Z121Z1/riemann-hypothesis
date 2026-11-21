@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.ProdFirstProjectionSmul
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.StrongApproxN
 

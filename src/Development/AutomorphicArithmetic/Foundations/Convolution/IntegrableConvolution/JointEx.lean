@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.CompactSelfAdjoint
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.JointNe
 

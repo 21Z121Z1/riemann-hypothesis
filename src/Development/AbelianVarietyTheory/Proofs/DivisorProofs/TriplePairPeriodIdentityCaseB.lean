@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedVacuumFixedByStabilizerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBStabilizerGlobalEvalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerPairModelGoodDescentStatement

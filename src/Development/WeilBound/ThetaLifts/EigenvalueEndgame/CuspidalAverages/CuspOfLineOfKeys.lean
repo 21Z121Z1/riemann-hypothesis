@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.AvLine
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.KillCoef
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.AeFacts

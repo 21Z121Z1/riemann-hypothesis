@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKMOne
 import Mathlib.NumberTheory.NumberField.CMField
 import Mathlib.RingTheory.SimpleRing.Principal

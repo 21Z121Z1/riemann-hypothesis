@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortSeriesBaseDatumAdelicFormMultipleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortTranslate
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalMaximumPrincipleWeightFiniteMvPolynomialStatement
 import Mathlib.RingTheory.NoetherNormalization
 import Mathlib.Tactic.ENatToNat

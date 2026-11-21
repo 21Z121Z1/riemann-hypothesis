@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialChartContDiffAtTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPullbackHolomorphicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncPullbackSectionBoundStatement

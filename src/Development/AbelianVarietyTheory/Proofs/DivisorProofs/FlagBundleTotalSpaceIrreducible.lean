@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleExistsAfterBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleOverFieldIrreducibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleUniversallyOpenStatement

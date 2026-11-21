@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGoodReductionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitAlmostEverywhereFactsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalSupportFacts

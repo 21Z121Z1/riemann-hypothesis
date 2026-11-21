@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.CodeRecordDiscriminantLevel
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZColH
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZTypeH

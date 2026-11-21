@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalisedFamilyEqTensorPowerVacuum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JetScalarUnitModulusStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitIdempotentUnitDecompositionStatement

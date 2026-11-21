@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GermSecRestrictGlobalAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RiemannFormHermitianLattice
 

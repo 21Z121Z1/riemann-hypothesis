@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsDegDataIsPullDeg
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GmMulEqOfResMulEq
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUnifPrePull

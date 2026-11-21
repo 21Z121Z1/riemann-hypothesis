@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQHW
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQWordAdj
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishingOnRegularFlagged
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyArithDimension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualFlagGradedIsometricStatement

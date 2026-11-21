@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlockLiftActionOnPrincipalCongruenceFixedVectors
 open GlobalTheory.GLq GlobalTheory.GLp GlobalTheory.SerSys
 set_option maxHeartbeats 1000000 in

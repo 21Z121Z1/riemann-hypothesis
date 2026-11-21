@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetPhiMinusEquiv
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.HermitianForms.GlCongr
 

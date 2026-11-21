@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsArch
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 import GroundTheory.GlobalFields.TateThesis.TraceFourier

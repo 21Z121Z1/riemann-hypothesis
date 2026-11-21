@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OverInclusionBaseChangeModel
 
 set_option autoImplicit false

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.SemilocalAlgebras.Finite
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 import Mathlib.NumberTheory.Padics.HeightOneSpectrum

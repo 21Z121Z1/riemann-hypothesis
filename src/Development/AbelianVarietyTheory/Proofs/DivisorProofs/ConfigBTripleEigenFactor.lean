@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementSkewCmStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftLinearCombinationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftLeftInvariantAltBis

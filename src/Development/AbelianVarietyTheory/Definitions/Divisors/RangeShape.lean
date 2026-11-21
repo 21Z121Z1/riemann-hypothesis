@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.DiscreteSeriesCharacter
 import Development.AbelianVarietyTheory.Definitions.Divisors.TCoefMInMMul
 

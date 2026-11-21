@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TendstoUniformlyOfFamAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualGramHermitianFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannDerivativeTangentVectorStatement

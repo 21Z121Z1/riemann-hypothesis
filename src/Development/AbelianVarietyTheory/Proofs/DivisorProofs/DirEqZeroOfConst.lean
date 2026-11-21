@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupPullbackAbelianSchemeDualNumberEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PulledBackLineBundleAutomorphismEqConstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualNumberUnitEqOfGermEqStatement

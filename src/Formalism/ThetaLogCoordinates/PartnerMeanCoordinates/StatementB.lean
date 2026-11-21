@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PolynomialDimension.ChainOrderLetters
 
 namespace Formalism.InvariantFactorPaths.MC

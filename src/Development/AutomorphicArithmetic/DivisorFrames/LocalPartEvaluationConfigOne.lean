@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.UnipotentSchwartzLocallyConstant
 import Development.AutomorphicArithmetic.DivisorFrames.LocalThetaPartitionTriple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerLocallyConstant

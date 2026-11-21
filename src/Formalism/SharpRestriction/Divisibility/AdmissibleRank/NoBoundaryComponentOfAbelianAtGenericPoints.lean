@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 
 namespace Formalism.MainNotions.DIV

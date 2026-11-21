@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulEqOfRangeLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DegreePairingIdentity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConjugatePlacesFacts

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Mathlib.RepresentationTheory.Semisimple

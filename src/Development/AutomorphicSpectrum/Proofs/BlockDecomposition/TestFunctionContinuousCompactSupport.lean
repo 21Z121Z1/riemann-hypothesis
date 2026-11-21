@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsTestZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfIsBlockEmb

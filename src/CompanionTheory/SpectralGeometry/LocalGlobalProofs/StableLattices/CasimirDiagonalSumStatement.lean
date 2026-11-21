@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CasimirDiagonalSum
 open CompanionTheory.Zuck BranchingSupport Matrix Finset
 open scoped InnerProductSpace Kronecker

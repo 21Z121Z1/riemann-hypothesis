@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsSymplecticBasisToMatrixOffDiagDvd
 import Mathlib.GroupTheory.Transfer
 import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card

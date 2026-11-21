@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.MaxWeightGL1EqOne
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.UnrExtC
 open ReciprocityTheory.DiscreteGroups.LocalClassField Matrix GlobalTheory.LKLoc

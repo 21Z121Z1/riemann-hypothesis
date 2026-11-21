@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.StatementOC
 
 namespace Formalism.LFunctionChainParameters.ConditionalMainTheorem

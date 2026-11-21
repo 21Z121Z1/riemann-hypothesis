@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReducedBases.SizeReduce
 import ReciprocityTheory.ReducedBases.NormGsoCompSwapRightSqMul
 import Mathlib.Algebra.Order.Star.Real

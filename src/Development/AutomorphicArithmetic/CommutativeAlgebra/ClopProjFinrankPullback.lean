@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopProjFiniteEtaleOfIsClosed
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 import Mathlib.CategoryTheory.Limits.Shapes.Connected

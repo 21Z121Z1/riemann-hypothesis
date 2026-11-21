@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeCocycleClosedStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConeCocycleClassIndependentStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsConeLiftStatement

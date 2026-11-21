@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRingHomRhoK
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.StdBases
 import Formalism.LocalRingCardinality.FactDelDualNabla

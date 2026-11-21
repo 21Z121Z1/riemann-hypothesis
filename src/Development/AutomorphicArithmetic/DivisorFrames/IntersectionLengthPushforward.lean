@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.PdegEqOfIsDeg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRegularCoverOfAlteration
 import Development.AutomorphicArithmetic.DivisorFrames.IntersectionNumberGenericRank

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfiniteTopOfDictionaryDepth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OppositeKernelsRationalRowMapLargeConstantsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateRowBoundOfDictionaryStatement

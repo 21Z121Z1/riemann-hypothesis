@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsValuationAlmostEtaleTowerFixer
 open GlobalTheory.AlmostEt GlobalTheory.K5
 open scoped NNReal

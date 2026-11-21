@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianBlockSolutionExists
 open scoped Matrix
 open GlobalTheory.StdUnn PositivityTheory.GramSchwartzFunctions.EC

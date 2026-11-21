@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.BaseRankEqOfRealisation
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr

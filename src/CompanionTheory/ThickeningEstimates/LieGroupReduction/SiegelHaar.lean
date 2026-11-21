@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarProductClosedCompactHolds
 import Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar
 import Mathlib.Tactic.ENatToNat

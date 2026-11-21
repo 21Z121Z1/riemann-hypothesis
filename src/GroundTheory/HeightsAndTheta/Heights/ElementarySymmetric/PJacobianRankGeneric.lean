@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.JacobianSmoothness.RingKrullDimLeRingKrullDimQuotientAddOne
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StJacobianRankGeneric
 import Mathlib.FieldTheory.SeparablyGenerated

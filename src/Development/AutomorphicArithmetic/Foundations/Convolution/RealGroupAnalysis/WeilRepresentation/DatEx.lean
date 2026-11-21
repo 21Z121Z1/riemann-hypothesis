@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnitaryActions.DatAlg
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnitaryActions.DatNeg
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.Smooth

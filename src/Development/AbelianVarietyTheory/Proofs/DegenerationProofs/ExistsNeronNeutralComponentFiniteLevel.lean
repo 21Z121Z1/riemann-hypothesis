@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNeutralGroupModelStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.SmConnModelDescends
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAmpleCubSpFibre

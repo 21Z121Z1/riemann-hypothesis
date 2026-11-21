@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.EtaleMulNAndIsOpenOmOfIsSemiAbelian
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BaseChangeTestOfSurjectiveMulAbelianVarietyStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsNormsOfTestsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerOrbitVolume.LocDensSAChar
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.PiTensorProduct

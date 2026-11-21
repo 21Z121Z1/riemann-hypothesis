@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.InfAdeleTensorBijective
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FockOrthogonalDecomposition
 

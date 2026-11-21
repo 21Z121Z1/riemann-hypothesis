@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.StatementPl
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.FractionalIdeal.Norm

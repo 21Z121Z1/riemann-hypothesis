@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AntisymmChernRootsMulFibrePoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapPolynomialHomogeneousStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlternatingPderivDifferenceStatement

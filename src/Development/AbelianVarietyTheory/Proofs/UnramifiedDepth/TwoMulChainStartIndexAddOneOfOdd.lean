@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.CartesianBoundOnCurves
 import Mathlib.Algebra.Order.Ring.Star
 import Std.Tactic.BVDecide.Normalize.Prop

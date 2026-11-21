@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.VolumeEquality.RootBranches
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.AgreementPos
 import Development.AutomorphicSpectrum.Statements.TowerExistence.GoodTowerExistsX

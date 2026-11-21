@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.ChartPoints.ChartPt
 
 set_option autoImplicit false

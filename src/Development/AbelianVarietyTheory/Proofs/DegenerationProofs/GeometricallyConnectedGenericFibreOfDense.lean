@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsAffineOpenDisjointImageOfIsConstructible
 import Mathlib.AlgebraicGeometry.AffineTransitionLimit
 import Mathlib.AlgebraicGeometry.Geometrically.Connected

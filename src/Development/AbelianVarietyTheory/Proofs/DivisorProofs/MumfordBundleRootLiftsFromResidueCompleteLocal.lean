@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrpPullbackId
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleOfReductions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisation

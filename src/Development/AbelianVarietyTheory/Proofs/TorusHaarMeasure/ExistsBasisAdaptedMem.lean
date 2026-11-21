@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.ExistsBasisAdaptedTwoSubspaces
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.LatDen
 

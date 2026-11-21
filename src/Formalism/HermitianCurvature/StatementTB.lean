@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementK
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.LinearAlgebra.Matrix.PosDef

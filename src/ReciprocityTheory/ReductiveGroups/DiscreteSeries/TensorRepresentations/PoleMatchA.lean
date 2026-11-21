@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.TraceFormula
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.MomentMatch
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.PtrScalar

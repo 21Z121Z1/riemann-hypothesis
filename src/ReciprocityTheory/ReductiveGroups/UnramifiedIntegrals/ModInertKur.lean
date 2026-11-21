@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModLocA
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModLocB
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModLocC

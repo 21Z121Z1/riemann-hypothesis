@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceBound

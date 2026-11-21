@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GlobalTraceComparison.AutomorphicRepresentations.EvalBasis
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.PiVecExHolds
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.TsumEnormEq

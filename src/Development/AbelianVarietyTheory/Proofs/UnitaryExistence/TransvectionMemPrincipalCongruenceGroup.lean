@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.NormConst
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.SmulMemOfIsIntegral
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FinrankEqOfInjectiveOfSpan

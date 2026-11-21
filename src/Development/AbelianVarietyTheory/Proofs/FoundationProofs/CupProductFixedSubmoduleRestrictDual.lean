@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnramifiedH1CardInvariantsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedDualEvalBidualApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardKerMulCardEq

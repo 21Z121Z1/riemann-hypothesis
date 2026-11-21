@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.KatoUse
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.GdOfHost
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.OrbFacts

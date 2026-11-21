@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Grampd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.RealVec
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Realsurj

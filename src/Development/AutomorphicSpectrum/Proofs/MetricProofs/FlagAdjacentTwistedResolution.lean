@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsLocSec
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverTwoFramesComparison
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ElementaryTwistMinorScalarStatement

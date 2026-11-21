@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.EqOfInvariantGenTranslates
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBLocalC
 import Development.AbelianVarietyTheory.Definitions.KeyFormula.IsSquareDeterminantComparison

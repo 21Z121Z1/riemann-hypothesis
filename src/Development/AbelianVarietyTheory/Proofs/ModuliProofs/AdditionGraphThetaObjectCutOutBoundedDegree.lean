@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaSectionsVeryAmplePeriodic
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MemSubringOfLocalInverse
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.VampIsoOfSegreCoordinates

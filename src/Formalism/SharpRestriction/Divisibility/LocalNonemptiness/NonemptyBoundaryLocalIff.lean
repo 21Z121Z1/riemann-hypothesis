@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Module.Submodule.Order

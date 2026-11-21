@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GJStandardLDefs
 import GroundTheory.AutomorphicForms.GL2.GJMatrixSchwartz
 import GroundTheory.AutomorphicForms.GL2.GJUnramified

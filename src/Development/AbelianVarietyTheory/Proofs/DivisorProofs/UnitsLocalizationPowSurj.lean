@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitsLocalizationStrictHenselianEqConstMulUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitPowEq
 open IsLocalRing

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMatrixForm
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.LinearAlgebra.PiTensorProduct.Basic

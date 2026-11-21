@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetsInOfIsTw
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHalfSelectionSplitPlacesBase
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsOkPins

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.BaseChangeIdentities.FrameMatching.HeckeWordBounds.ChainSc
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchingWordOf
 

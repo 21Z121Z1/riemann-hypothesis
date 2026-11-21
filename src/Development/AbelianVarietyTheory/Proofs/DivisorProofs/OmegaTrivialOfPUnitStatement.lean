@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaTrivialOfPUnit
 
 set_option autoImplicit false

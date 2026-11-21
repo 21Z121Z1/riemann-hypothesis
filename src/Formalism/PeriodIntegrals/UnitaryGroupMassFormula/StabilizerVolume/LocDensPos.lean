@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.LocDensSt
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.TensAll
 

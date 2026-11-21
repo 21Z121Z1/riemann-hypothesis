@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatePlaceValuationCountUnder
 
 open NumberField MeasureTheory IsDedekindDomain UniqueFactorizationMonoid

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSpanSubMemSq
 open GlobalTheory
 open scoped Pointwise

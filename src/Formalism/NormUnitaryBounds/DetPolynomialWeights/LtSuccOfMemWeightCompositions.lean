@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.NormUnitaryBounds.Statement
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

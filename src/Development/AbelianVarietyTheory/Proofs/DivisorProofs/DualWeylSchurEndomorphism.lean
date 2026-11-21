@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NablaSchur
 import Formalism.PieriBlockIdeals.PieriColumnMinors.HighestWeightMemWZero
 

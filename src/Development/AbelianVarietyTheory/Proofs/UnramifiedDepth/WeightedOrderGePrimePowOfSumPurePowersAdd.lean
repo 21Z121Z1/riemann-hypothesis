@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.PeriodValuation
 import Mathlib.RingTheory.PiTensorProduct
 open ReciprocityTheory.PGsh

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAwayOfIsAlgebraicOfFiniteType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeAwayMulOfFiniteType
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleAwayOfIsAlgebraic

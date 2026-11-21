@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemFinPt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicElementPlaceFactorization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOpenPlacesStableStatement

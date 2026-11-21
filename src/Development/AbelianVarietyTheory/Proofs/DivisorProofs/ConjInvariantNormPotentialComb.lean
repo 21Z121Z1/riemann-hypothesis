@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetWeightIsCInfOfPotentialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetWeightIsConjOfConjNormsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadFnCInfAtOfSmoothStatement

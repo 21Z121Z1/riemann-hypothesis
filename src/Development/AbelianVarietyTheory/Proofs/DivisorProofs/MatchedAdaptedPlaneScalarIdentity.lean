@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousThetaLiftTransfer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairHypPlaneAdaptedLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewSpaceFundamentalDomainIntegral

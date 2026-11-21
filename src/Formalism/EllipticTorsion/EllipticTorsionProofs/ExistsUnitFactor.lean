@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.EllipticTorsion.WChordSeries
 import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 import Mathlib.RingTheory.MvPowerSeries.Inverse

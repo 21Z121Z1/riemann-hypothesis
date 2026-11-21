@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitDom
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
 

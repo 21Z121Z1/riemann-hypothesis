@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.ShaLeV
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.PowTotientConductor
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.VsField

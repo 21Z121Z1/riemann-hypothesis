@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.HlamStable
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.IntMuCD
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.RhoNSubNab

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SingleMemOfMem
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 import Mathlib.RingTheory.PicardGroup

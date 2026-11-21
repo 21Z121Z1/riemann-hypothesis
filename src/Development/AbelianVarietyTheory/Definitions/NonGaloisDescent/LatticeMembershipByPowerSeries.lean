@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LowerTriIsUnitDet
 import Mathlib.Algebra.Order.Star.Real

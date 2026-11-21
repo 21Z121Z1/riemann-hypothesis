@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelSetWittFrameCompactBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFrameUOfIsWittFrame
 

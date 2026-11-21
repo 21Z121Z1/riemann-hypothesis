@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ExistsPrimitiveRootPadicInt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HypSEisensteinCurve
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsFractionRingOfForallDiv

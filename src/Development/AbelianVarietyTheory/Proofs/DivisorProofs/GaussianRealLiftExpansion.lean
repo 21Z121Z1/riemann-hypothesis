@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzLogDerivativeGaussianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairExistsArchimedeanTranslatesStatement
 open scoped TensorProduct NNReal Matrix

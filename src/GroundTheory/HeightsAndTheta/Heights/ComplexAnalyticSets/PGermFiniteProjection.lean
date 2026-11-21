@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGermFiniteProjection
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.SimpleRing.Principal

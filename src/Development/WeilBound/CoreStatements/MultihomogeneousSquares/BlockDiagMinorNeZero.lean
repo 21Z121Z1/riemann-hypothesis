@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SingSt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
 

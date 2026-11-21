@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Uniformization.AllDV
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SvalOfIsTwistPull
 import Development.AbelianVarietyTheory.Statements.TorsionEndomorphisms.ExistsGeneratorOfIsField

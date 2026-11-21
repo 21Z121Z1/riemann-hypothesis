@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsEquivStdSymp
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.ExistsStarNormLEOfIsCMField
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.IsThetaPtDownStatement

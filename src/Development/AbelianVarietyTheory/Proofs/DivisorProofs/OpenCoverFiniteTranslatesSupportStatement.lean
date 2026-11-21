@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OpenCoverFiniteTranslatesSupport
 open MeasureTheory GlobalTheory.SplitFlip ValuativeRel
 open scoped Matrix

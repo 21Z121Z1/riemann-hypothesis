@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.GL3.Statement
 import Mathlib.Analysis.SpecialFunctions.Elliptic.Weierstrass
 

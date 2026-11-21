@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.HookBound
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Mathlib.Algebra.Order.Ring.Star

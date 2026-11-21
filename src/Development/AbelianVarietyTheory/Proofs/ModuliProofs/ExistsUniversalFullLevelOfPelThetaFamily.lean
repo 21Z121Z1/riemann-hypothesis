@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.TopAmpExists
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothOfRelativeDimensionOfGenerization
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ActCommOfClosure

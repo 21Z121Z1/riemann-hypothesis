@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CMTypeGalois.StatementField
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.Henselian

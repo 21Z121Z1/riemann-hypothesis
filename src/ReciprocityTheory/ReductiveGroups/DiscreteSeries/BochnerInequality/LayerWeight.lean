@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.PositionPrependMemNoncompactPositionSubmodule
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.Weights
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.LayerOrth

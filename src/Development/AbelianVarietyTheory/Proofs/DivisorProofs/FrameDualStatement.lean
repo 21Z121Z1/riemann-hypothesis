@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameDual
 open ReciprocityTheory.PGsh GlobalTheory.FGDepth
 set_option maxHeartbeats 1000000 in

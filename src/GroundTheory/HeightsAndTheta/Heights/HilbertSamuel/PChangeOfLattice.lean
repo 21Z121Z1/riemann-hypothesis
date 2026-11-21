@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNestedLattice
 import Mathlib.GroupTheory.FiniteAbelian.Basic
 set_option maxSynthPendingDepth 1

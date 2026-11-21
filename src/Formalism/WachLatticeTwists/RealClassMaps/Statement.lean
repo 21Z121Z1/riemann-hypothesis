@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.WachLatticeTwists.ShapeRowIsomorphisms.Statement
 import Formalism.WachLatticeTwists.ShapeRowIsomorphisms.StatClause5Row
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareIntegrableSmoothSubmoduleGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactCoveredByOpenCosets
 

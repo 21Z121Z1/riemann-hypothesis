@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ContDiffCompCoordEquiv
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ExpChart
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ExpHaar

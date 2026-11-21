@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormDwLeSobNorm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau

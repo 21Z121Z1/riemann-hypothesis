@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CFxi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsumLeftPull
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLiftMemLiftSpace
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotIsConstTerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeApproximationUpwardIdele

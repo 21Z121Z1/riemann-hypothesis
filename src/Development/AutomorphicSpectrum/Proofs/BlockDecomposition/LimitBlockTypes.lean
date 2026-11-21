@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.TwistStripLimits.BlockTypes
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlatAbsoluteCharacter
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TypedSecondBlockRestriction

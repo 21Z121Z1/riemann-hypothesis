@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ThickFrames
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensSmoothAlt
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.TensOp

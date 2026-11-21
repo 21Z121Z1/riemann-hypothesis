@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousFourierGau
 import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
 import Mathlib.Tactic.Polynomial.Basic

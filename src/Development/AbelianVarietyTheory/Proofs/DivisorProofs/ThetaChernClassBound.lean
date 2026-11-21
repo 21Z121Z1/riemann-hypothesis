@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularCoverPullbackThetaDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SliceContDiff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneVector

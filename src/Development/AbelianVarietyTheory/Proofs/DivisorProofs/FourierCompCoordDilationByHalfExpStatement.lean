@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FourierCompCoordDilationByHalfExp
 open NumberField MeasureTheory
 open scoped RealInnerProductSpace FourierTransform

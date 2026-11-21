@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralUnitBallRayAverageLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormLeLintegralRayIteratedFDerivStatement
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

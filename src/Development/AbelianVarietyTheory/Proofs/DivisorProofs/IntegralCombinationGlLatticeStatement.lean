@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCombinationGlLattice
 open ValuativeRel
 open scoped Matrix

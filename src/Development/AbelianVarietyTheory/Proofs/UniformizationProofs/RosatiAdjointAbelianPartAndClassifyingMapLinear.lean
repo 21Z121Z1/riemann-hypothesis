@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LocGenOfThickenings
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceThickening
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsGenRosati

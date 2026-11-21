@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNormSurjectivity.FinNormSurj
 import Formalism.SatakeDualWeyl.StatementF
 import Mathlib.Algebra.Order.Ring.Star

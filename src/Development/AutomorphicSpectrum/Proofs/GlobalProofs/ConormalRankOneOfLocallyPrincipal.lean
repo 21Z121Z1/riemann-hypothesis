@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocPrincipalSpan
 import Mathlib.Tactic.Polynomial.Basic
 open AlgebraicGeometry CategoryTheory Limits TopologicalSpace

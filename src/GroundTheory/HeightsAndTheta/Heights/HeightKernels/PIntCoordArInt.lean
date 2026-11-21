@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsIntCoordArInt
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualTopBasisChange
 set_option maxSynthPendingDepth 1

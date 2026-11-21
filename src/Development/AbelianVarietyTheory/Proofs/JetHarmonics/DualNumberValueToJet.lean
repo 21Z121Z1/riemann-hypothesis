@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConstantCoeffDmonOfProdLinear
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsToJetEq
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

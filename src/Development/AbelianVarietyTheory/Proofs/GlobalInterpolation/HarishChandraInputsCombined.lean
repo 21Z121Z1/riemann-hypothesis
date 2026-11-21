@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.GoodReductionCondition
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DivisorEmbeddingKappaEqRowsKappaAtInfinitePlaceStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultiplicityEqualityStatementStatement

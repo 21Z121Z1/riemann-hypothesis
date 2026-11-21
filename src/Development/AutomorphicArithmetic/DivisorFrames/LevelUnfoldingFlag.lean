@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DivisorFrames.FlagTorusGenericPoint
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConsMatch
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalSystemModelMap

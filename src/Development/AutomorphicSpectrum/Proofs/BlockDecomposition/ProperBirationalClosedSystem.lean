@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PushforwardSystemAffineSectionsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacobsonIdealFaithfulModuleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompleteModuleNoetherianRealizationStatement

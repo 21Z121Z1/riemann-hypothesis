@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutProdA
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.GoodLat
 

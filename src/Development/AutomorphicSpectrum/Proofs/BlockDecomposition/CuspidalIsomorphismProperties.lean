@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
 
 open CategoryTheory ReciprocityTheory.Ty.Fin

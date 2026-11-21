@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KernelTransforms.HopBasic
 import GroundTheory.AutomorphicForms.IwahoriFactorization
 import GroundTheory.AutomorphicForms.CuspidalAdmissible

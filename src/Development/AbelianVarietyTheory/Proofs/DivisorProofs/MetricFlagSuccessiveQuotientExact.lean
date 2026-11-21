@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactCompositionCompatibility
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsShortExactOfComposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMetricShortExactIsoIsometric

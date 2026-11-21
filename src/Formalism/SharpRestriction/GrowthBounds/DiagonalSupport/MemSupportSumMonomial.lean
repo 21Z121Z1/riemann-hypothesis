@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ValLamOfSubset
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDefs
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FunKerSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.RationalityHolds
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.DescPf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemCompletedLatticeColumnLatticeMulIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsSelfDualEColLatOne
 import Formalism.LocalToGlobal.Columns.DetChrChi

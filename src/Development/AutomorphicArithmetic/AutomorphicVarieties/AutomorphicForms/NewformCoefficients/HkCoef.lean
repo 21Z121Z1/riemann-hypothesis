@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.NewformCoefficients.Places
 
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual UpperTheory.V.Sd

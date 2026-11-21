@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AcrisMulEqZeroStatement
 import Development.AbelianVarietyTheory.CrystallinePeriods.CrisLoc
 

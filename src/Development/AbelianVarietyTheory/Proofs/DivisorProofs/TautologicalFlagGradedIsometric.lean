@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMetricShortExactIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalFlagDetIsometricStatement
 

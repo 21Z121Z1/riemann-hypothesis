@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.ThetaBasicK
 import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesX
 import Development.WeilBound.ThetaLifts.LatticeBasics.PairsStable

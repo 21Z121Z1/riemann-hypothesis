@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemL2OfAutomorphicEmbedding
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsSplitOfIsInertAt
 import Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyEqOfIsPreconnected

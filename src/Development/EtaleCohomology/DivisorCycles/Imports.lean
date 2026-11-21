@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.DivisorCycles.DivPlus
 import Mathlib.Tactic.Polynomial.Basic
 

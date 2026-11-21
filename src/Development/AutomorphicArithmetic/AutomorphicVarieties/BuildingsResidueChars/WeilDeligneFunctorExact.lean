@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.WdDefs
 
 open TensorProduct Module GlobalTheory.Pst GlobalTheory.Pst.DpstMap in

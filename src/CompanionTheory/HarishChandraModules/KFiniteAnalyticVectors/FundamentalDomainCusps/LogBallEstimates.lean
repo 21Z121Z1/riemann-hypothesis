@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.FundamentalDomainCusps.HeightBoundSetup
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CoveringRadius.CoverRad
 import Mathlib.Algebra.Module.StablyFree.Basic

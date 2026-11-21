@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ScalesBy
 import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactSpaceAxis
 open scoped TensorProduct NNReal ENNReal Matrix

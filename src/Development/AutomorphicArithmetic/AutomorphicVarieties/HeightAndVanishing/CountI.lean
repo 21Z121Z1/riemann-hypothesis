@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.GdOfHost
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.OrbFacts
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.OrbSum

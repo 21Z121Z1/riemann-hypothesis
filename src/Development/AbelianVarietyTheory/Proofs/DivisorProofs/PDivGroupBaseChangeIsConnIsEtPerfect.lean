@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.EqZeroOfForallLTensorEqZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToBaseChangePtsBijective
 import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse

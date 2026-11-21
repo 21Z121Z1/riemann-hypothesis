@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyUWit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorPartTorusExtension
 

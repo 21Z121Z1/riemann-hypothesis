@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.CharacterColumnKernelLengthBound
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.SumIteLe

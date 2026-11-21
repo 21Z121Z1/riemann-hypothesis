@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TermExponentsNonnegAndDefectGroupBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RmulMul
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SumClsLeEncard

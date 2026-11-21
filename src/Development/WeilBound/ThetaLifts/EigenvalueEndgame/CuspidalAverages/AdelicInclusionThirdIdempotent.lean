@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.KeyThree
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.CuspidalAverages.FirstIdempotentAdjointThird
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.ContinuousExpG

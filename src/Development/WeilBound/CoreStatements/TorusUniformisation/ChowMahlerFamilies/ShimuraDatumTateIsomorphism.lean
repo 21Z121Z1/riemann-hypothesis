@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniformisationOfPoint
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPrincipalDim
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TwoMulEqOfIsTypeFn

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ClassRec
 import Formalism.LocalToGlobal.KernelLattices.KerChTie
 import Formalism.LocalToGlobal.KernelLattices.AdaptedEnt

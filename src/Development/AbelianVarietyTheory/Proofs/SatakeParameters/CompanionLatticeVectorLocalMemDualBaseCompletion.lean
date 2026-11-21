@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemLatSLatAdIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryCompletionMapsDualLattices
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsMidLevIff

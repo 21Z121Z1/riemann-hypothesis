@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.TowerModels.PlanePair
 import Development.WeilBound.ThetaLifts.TowerModels.PlaneIso
 import Development.WeilBound.ThetaLifts.TowerModels.PlaneBas

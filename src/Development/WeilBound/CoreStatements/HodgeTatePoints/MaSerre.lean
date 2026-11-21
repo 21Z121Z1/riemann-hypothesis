@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MaBase
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsGenOnChart
 import Mathlib.Algebra.Order.Ring.Star

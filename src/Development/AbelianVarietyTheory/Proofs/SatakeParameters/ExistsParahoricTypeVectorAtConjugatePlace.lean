@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineOppositeParabolicUnitaryLeviSectionEq
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsParahoricVec
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SecondLabelsNonempty
 import Formalism.LocalRingCardinality.SpanPowerMembership.RankRecordRowDimensionZero
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

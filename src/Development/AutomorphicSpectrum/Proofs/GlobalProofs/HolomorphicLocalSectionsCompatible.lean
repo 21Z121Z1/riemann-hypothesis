@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AnalyticSectionIsAlgebraicStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.HolomorphicGluingLocalFunctionsStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set

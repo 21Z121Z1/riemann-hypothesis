@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ComplexificationHolds
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PlaceRankTwoOne

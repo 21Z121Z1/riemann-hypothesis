@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BreuilRingModHighDegreePropertyStatement
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 

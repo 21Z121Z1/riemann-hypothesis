@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviPartsCommuteStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LeviEqISupPartsStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AdelicHaarFiniteInfiniteProductStatement

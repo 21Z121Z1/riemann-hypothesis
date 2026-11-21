@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValTorusPointAndTranslate
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GmMulEqOfResMulEq
 

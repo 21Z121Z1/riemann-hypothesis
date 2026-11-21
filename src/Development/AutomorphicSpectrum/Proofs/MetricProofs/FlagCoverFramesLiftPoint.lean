@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesPullbackStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverFramesAtBasePointStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverBasePointMapsToPointsStatement

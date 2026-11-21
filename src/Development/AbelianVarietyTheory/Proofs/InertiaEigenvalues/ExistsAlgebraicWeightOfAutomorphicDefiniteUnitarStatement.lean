@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAlgebraicWeightOfAutomorphicDefiniteUnitar
 open NumberField IsDedekindDomain GlobalTheory.CuspRep GlobalTheory.UnitaryBC
 set_option maxHeartbeats 1000000 in

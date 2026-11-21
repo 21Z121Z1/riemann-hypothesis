@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RegularLocalRegularSequence.RingKrullDimQuotientSpanSingletonAddOne
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.Regular.RegularSequence

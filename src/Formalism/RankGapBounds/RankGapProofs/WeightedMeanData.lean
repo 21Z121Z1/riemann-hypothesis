@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RankGapBounds.MeanBoundSecondForm
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.WittVector.IsPoly

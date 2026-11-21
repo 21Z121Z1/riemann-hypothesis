@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalToGlobal.ProjectiveLattices.RowDeg
 import Mathlib.Tactic.Polynomial.Basic

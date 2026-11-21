@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearWittModelLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearWittModelUnitaryAction

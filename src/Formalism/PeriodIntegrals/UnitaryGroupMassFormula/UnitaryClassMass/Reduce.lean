@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UJClassMass
 
 open NumberField Formalism.HermitianLatticesTheory Formalism.ThetaLiftIndependence

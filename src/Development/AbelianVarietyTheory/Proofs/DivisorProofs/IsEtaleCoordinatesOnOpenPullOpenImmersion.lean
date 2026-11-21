@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtCoord
 import Mathlib.AlgebraicGeometry.Morphisms.Etale
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits

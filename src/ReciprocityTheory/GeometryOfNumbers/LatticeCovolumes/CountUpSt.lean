@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.CStarAlgebra.Classes
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.ConjSymm

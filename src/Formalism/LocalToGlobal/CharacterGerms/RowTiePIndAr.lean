@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePPTAvg
 import Mathlib.Algebra.Order.Star.Real
 

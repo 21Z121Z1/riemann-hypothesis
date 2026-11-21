@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.HsInnerSmulRight
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.MultiplicityOne.HilbertSchmidtContinuousFunctional
 

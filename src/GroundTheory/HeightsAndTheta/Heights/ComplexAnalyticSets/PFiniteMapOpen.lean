@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFiniteMapOpen
 import Mathlib.Analysis.Normed.Unbundled.RingSeminorm
 import Mathlib.Analysis.Polynomial.CauchyBound

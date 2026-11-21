@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ChainRuleSmooth.Curves
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 import Mathlib.RingTheory.PiTensorProduct

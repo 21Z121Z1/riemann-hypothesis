@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StepLevelLocalGroupEqOfAgreeOffPlaces
 open NumberField IsDedekindDomain Formalism.UG Formalism.L2.Forms
 set_option maxHeartbeats 1000000 in

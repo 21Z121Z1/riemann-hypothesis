@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PHeightRecR
 set_option maxSynthPendingDepth 1
 

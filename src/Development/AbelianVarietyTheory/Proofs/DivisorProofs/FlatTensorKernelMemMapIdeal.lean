@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleModelDegree
 open IsLocalRing Polynomial
 open scoped TensorProduct

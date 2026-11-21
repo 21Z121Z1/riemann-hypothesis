@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RowsPtAt
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CollSBound
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PairAbsCorankGeTwoLeSumCorankClassesStatement

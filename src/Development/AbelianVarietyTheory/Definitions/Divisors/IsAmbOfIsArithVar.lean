@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEqMultiDiff
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProjOverCompFinite
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EqOfIsometricTrivShift

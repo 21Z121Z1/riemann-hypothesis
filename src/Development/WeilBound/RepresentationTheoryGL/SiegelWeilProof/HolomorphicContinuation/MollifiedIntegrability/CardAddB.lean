@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.MollifiedIntegrability.DensDefs
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Order.CompletePartialOrder

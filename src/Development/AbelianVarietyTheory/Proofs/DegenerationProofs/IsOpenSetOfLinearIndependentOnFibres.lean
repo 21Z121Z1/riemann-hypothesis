@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 import Mathlib.RingTheory.PicardGroup

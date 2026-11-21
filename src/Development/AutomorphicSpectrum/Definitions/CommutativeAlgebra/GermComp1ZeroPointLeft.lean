@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.BetaInt
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsSplitGaussChars
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.CoeffSyGauge

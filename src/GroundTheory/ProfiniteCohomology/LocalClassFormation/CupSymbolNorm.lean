@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.CupProducts.Projection
 import GroundTheory.ProfiniteCohomology.ClassFormations.Corestriction
 import GroundTheory.ProfiniteCohomology.CyclicCupProf

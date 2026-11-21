@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.UnitaryWeylNormalHolds
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LeftPhaseRule.MulApplyS
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbRegCountOfRanks
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitSeparationRegularDeterminantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeepsCuspLatticeNorm

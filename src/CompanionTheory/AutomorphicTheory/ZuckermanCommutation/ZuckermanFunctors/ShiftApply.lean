@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.MultOne
 import CompanionTheory.AutomorphicTheory.SchurLimitBounds.SchurOrthogonality.SchurH
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

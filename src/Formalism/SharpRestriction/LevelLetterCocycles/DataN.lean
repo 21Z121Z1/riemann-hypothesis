@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalRingCardinality.DataRows
 import Formalism.GaloisCohomology.Statement

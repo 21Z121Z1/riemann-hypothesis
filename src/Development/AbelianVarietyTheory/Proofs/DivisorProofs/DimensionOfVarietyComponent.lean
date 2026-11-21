@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimEqDimGrAdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbBBijective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LetterConjugation

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.IdxTwo
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.IneChar
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.IneConj

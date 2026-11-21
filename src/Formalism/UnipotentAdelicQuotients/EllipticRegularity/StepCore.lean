@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.EllRegStep
 import Formalism.UnipotentAdelicQuotients.EllipticRegularity.KernDecay
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension

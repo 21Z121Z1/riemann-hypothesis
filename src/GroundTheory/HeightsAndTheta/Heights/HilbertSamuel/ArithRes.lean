@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.KerEqBotOfCoord
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudy
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyTransition

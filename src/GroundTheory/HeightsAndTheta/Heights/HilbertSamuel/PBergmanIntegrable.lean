@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergmanIntegrable
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanSectionPairing
 import Mathlib.Algebra.Ring.IsFormallyReal

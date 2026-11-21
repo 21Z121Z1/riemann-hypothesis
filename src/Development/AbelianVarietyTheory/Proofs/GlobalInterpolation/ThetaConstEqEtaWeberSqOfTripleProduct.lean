@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ThetaConstantWeber
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableOddTheta
 open Complex

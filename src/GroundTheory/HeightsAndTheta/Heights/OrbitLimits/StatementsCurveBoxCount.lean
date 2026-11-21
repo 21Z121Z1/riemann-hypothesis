@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRes
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.CurveCountObjects
 set_option maxSynthPendingDepth 1

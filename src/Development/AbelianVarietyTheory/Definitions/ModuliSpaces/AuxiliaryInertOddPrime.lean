@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Clauses
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.AbelianSchemeQuotients.QSurjective

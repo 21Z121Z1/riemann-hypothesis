@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JointCmpEmbeddingY
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FormsSharpAtOfValTied
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChTwDGamDvdMemDGam

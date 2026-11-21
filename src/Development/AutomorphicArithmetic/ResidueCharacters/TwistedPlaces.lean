@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuInf

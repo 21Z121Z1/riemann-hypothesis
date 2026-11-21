@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicIndexEquality.SplitGL
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

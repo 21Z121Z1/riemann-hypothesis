@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ClosedProperAlt
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DeterminantNonzero
 

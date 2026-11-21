@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DerivationCommutesWithTrace
 set_option backward.isDefEq.respectTransparency false
 open MvPolynomial

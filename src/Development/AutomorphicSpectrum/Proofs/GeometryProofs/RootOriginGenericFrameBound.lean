@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LabelSigBijective
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PartnerPointIntegralModel
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FirstFormIffSecondForm

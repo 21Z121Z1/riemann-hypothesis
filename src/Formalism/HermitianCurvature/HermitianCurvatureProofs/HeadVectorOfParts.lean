@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PolynomialHeadTypes
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactCoefficientAppend
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentLevelZeroEqOne

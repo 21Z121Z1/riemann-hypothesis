@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasPolChartOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SysExOfPol
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior

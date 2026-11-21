@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularUFDLocalization
 import Mathlib.RingTheory.Regular.LinearMap
 set_option maxSynthPendingDepth 1

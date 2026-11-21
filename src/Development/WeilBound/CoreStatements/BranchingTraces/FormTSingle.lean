@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.SmoothVec
 import Development.WeilBound.CoreStatements.BranchingTraces.HeBranching
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur

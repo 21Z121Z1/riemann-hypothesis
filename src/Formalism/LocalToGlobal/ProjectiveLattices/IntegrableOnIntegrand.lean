@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import Mathlib.Algebra.Module.Lattice
 import Mathlib.RingTheory.PiTensorProduct

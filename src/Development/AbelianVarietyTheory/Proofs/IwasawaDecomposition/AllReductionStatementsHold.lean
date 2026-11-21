@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SecondBoundOfPrimitiveStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesCoverOfPrimitiveStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultiplicityOfPrimitiveStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
 import GroundTheory.GlobalFields.TateThesis.ArchCharsUnitary

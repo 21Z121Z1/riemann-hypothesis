@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.ExistsRootNotMem
 import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
 

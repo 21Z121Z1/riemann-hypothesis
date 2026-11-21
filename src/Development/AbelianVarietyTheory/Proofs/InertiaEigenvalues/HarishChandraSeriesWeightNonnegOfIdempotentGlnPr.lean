@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 import Mathlib.Data.Finsupp.Pointwise
 

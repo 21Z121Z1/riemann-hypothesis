@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ReferenceCharactersFactorTame
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LevelNotMemRowSG
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnderEqIffMapLe

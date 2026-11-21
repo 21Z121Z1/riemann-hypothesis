@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.ProjectiveValuations.CompactSpaceOfIsProper
 import Development.AbelianVarietyTheory.Definitions.Divisors.DetJacMatCoordsEqTransitionJacobianDet
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set

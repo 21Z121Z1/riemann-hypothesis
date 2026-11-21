@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdmissibleCompletelyReducible
 open GlobalTheory.ThK.SplitInv
 set_option maxHeartbeats 1000000 in

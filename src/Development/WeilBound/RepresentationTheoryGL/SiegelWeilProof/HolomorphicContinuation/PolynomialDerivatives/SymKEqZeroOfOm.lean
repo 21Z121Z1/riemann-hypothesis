@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.PolynomialDerivatives.SymbolFirstFamilyOfMem
 import Mathlib.LinearAlgebra.Charpoly.Basic
 import Mathlib.RingTheory.Etale.Weakly

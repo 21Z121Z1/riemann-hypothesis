@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenMetricOnSetStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HodgeSmoothConjStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenframeGramNearPointStatement

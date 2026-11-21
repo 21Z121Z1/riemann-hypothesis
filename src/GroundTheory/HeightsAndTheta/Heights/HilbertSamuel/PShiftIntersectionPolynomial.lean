@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsShiftIntersectionPolynomial
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PZCombLimit
 set_option maxSynthPendingDepth 1

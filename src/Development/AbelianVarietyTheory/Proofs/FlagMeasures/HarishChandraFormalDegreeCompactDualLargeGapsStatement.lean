@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HarishChandraFormalDegreeCompactDualLargeGaps
 open Formalism.BasicNotions Formalism.MainNotions.S MeasureTheory
 set_option maxHeartbeats 1000000 in

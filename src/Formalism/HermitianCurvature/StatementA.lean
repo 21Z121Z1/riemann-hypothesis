@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DoubleCosetMeasures.Statement
 
 namespace Formalism.FourierDecayAlt.A

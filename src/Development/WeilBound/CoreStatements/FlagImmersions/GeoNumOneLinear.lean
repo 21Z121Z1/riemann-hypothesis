@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ProjDeg
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PFnDegRelDeg

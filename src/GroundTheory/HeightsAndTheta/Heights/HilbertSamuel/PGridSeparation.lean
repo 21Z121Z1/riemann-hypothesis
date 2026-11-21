@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGridSeparation
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsRootGridLower
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNormalLocusRep

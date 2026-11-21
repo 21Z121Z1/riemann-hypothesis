@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFourierStableGaussianSubmodule
 open FourierTransform MeasureTheory Filter Topology
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneDecompositionOfPair
 
 open scoped TensorProduct NNReal Matrix

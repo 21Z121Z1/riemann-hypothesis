@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.TruncatedSeriesCounting.LemmaDetPoly
 import Mathlib.LinearAlgebra.Matrix.Rank
 

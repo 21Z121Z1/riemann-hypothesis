@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjLowUni
 import GroundTheory.GlobalFields.Adele.Compact
 import GroundTheory.GlobalFields.LocalFieldAtPlace

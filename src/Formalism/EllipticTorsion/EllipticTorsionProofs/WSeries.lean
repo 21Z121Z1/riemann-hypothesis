@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.EllipticTorsion.WChordSeries
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.MvPowerSeries.Inverse

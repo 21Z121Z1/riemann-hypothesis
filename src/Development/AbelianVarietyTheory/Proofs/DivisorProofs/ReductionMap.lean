@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogReducesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuasiLogarithmEqPSmulAddIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiLogRedStatement

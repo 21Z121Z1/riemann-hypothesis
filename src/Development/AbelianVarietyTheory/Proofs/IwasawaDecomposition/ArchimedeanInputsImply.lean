@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PrincipalIdealSt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis

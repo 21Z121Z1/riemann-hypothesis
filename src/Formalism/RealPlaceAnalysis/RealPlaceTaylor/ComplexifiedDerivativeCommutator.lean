@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.RealPlaceAnalysis.SmoothOnG
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.RingTheory.SimpleRing.Principal

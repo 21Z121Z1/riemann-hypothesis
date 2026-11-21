@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.MorAlgSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CompatibleLineBundlesFormalThickeningStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueHomOfThickeningsStatement

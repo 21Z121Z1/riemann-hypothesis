@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackComplexFormsLinearMapComp
 open GlobalTheory GlobalTheory.CxForm
 open ReciprocityTheory.L2DbarEstimates (V)

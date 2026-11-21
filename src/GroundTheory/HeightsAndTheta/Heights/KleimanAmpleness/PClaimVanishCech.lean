@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AlgebraMapMemChartRingLine
 import Mathlib.RingTheory.PiTensorProduct
 set_option maxSynthPendingDepth 1

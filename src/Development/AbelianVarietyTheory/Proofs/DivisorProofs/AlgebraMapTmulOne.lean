@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapMaximalIdealEqOrigin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomExtTensor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale

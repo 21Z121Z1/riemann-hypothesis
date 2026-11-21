@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicEvaluationLinearStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedInvariantPairingCharacterStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MirabolicPairingDepthInductionStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.LConvKirStep
 import Development.DiscreteGroups.GlobalIrreducibility.LConvCut
 

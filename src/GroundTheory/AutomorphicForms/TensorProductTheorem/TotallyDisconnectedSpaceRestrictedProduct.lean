@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LocallyProfinite
 import Mathlib.Topology.Algebra.RestrictedProduct.TopologicalSpace
 

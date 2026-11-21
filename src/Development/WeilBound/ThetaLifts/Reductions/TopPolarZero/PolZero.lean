@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.CoefLine
 import Development.WeilBound.ThetaLifts.LatticeBasics.HermCpt
 import Development.WeilBound.ThetaLifts.LatticeBasics.FinLevel

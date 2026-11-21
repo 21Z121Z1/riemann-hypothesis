@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRuleAllObjOfThreeTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfEqOnRapoportUnitSix
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevObjRuleEqOfExtend

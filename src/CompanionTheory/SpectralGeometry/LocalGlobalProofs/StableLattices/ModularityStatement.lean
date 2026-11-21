@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.SimpleRing.Principal

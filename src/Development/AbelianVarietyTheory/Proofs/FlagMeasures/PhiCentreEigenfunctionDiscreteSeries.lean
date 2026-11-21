@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdPartialZpow
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.HWDiag
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.TrPowSumFilterZero

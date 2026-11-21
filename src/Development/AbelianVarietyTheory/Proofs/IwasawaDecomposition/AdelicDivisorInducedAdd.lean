@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetsOfParOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelAdd
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolReal
 set_option maxSynthPendingDepth 1
 

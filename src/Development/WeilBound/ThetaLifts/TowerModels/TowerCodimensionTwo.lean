@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.TowerModels.PlaneSkew
 import Development.WeilBound.ThetaLifts.TowerModels.ModelEx
 import Development.WeilBound.ThetaLifts.TowerModels.WeilExOf

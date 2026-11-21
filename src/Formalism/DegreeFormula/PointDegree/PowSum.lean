@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DegreeFormula.FlagDegFormula
 import Mathlib.RingTheory.MvPolynomial.Symmetric.NewtonIdentities
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Morphisms.Flat
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
 import Mathlib.RingTheory.WittVector.IsPoly

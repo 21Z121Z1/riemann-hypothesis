@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GaussianPlaneIntegrals.IntegralMonSelf
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.SimpleRing.Principal

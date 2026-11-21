@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.AcrisNAlgebraMapAinf
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.ExistsMapEqOfPowMul
 

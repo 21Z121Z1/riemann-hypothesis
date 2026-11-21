@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ClassMassBotBotOfInfinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfSig
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenStabOfDefinite

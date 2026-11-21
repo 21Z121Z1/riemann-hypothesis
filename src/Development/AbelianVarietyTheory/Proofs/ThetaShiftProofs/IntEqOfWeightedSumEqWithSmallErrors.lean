@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsThetaL2NormSquared
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.BetaPf
 import Mathlib.Data.Rat.Star

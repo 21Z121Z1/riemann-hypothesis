@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.GKStableCartan
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.Complex

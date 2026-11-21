@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchroedingerPreservesSchwartzRealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TracePairingNondegenerateStatement

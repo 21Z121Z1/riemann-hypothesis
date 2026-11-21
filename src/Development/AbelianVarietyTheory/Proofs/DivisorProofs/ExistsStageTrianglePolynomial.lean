@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnThetaKernelDefiniteSeesawStageStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageSmallNonzeroBaseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageKernelIntegrablePolynomialBoundStatement

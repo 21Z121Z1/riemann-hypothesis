@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaHeisenbergCommutingThetaOperator
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.SymplOHFNegNeg
 

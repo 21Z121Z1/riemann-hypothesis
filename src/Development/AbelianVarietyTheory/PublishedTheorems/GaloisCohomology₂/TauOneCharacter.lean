@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroInertia
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.ExistsEigenvalueGLOneEqCuspidalLabelGen
 import Mathlib.NumberTheory.Padics.HeightOneSpectrum

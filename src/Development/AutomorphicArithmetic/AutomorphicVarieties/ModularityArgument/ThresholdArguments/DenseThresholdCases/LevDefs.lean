@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SemisimpleLevels.CountRankThree
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.KatoUse
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.ShaInj
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.ModelLower

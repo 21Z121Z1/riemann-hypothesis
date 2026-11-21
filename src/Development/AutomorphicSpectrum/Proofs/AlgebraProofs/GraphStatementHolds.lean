@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GraphIdealArithmeticVarietyImageStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.GraphIdealFibreChartDegreeStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FibreDim

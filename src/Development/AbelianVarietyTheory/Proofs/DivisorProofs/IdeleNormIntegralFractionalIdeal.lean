@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.GlobalZeta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelesAtInfiniteFiniteIffStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleBaseChangeMemIdealStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.SelmerWindowSums
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Kernel
 

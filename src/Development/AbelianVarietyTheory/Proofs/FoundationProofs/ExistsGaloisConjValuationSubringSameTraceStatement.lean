@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsGaloisConjValuationSubringSameTrace
 open scoped MatrixGroups TensorProduct
 open Matrix GlobalTheory.KZ GlobalTheory.KZ.ES

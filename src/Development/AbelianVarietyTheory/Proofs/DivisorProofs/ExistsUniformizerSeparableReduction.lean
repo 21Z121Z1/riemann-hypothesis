@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyEqQuotientCharpolyPow
 import Mathlib.LinearAlgebra.Charpoly.BaseChange
 import Mathlib.NumberTheory.Padics.RingHoms

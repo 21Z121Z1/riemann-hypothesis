@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExpSecondKindCoordinatesStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasFDerivAtDerFamProdExpStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.DerFamExpandWordsStatement

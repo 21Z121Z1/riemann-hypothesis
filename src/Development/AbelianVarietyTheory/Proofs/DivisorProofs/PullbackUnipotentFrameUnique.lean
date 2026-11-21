@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentTriangularFactorUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagFramesTriangularChangeStatement
 

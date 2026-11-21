@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ArcBasic
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.LiftsAtThickLetterType
 import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesOfMembership

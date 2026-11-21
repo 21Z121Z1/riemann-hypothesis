@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 

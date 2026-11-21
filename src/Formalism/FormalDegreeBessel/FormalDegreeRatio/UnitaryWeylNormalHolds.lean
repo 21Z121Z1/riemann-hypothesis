@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FormalDegreeBessel.StatementG
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.Cases

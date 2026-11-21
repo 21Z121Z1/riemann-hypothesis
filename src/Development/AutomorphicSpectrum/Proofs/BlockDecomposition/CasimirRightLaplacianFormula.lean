@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FderivZeroApply
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RdSkewEqConst
 open MeasureTheory Matrix Finset

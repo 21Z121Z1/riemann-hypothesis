@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusRealMultAppellHumbertStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductTorusFactorAppellHumbertStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslatedUniformizationPullbackStatement

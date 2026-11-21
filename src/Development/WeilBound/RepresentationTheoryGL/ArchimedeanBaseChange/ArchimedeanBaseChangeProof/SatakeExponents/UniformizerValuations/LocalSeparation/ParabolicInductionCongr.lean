@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionTwoBlocksEmptyProductLeft
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
 

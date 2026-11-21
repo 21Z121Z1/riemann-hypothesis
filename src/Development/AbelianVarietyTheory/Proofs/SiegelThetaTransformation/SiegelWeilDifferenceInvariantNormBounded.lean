@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DecayOfVanishingAtCuspsStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IsHeatSwdStatement
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SwdTendstoZeroAtCuspsStatement

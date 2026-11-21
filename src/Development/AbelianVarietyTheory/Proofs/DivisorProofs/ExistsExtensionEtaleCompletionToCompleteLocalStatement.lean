@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtensionEtaleCompletionToCompleteLocal
 open IsLocalRing GlobalTheory.Toroidal
 set_option maxHeartbeats 1000000 in

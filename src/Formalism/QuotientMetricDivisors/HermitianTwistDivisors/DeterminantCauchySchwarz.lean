@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.QuotientMetricDivisors.ProdFormula
 import Mathlib.Analysis.CStarAlgebra.PositiveLinearMap
 import Mathlib.RingTheory.PiTensorProduct

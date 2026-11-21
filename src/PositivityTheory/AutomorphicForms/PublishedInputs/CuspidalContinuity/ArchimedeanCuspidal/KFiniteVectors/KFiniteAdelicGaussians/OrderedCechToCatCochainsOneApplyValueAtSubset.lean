@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.AdelePoissonUniform
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SummableLatticeHeightSeriesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactColumnsNormLowerBoundStatement

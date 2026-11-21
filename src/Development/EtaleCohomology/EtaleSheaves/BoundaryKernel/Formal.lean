@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Algebra.Category.ModuleCat.Adjunctions
 import Mathlib.Algebra.Homology.DerivedCategory.Fractions
 import Mathlib.Algebra.Homology.HomotopyCategory.HomComplexSingle

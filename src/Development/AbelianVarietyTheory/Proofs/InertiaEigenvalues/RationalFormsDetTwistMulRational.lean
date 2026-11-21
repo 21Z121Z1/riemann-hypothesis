@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevelCoverFormsMulComponentFunction
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CurveOverOfRayIn
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGlobalApprox

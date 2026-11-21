@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.DzStickValBasic
 import Mathlib.Tactic.ENatToNat
 

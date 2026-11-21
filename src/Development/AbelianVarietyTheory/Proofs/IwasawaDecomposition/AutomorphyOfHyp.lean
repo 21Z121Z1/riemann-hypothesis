@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TheoremOfPublishedInputsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistOfCuspParamsStatement
 

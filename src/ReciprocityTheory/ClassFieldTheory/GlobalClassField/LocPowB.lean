@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ResidueCardinality.ArtinOntoB
 
 noncomputable section

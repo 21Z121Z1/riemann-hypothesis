@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.SWFull
 import Mathlib.Analysis.Complex.Schwarz
 

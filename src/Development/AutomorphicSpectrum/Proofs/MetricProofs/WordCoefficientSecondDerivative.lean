@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PDiagFibreFubini
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EvalW
 import Mathlib.RingTheory.Derivation.Lie

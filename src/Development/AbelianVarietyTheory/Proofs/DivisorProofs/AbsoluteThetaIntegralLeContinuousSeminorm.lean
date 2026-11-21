@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.WeilThetaConvergence
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzCoordinatesInInfiniteFamilyStatement

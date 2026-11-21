@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
 import Development.AbelianVarietyTheory.Counterexamples.UniformisationSurvey.NeTopOfAdmissibleBase
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.ConclusionNotEmpty

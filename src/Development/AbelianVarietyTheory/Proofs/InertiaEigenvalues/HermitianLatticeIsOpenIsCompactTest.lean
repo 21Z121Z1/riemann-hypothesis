@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.Henselian

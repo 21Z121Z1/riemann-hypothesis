@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.LeOfEventuallyDown
 import Formalism.LocalRingCardinality.SpanPowerMembership.HasStrictFDerivAtExpZero
 import Mathlib.Algebra.Order.Star.Real

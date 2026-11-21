@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.CharacteristicPolynomialFreeGeneratorsStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.RepresentationBasisLinearIndependentStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightCharFreeGeometricStatement

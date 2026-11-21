@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DiagScaleApply
 open PowerSeries GlobalTheory.BK
 

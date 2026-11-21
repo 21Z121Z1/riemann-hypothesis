@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBThetaDescentIdentity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviBlockSizesSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogAbsEEqZero

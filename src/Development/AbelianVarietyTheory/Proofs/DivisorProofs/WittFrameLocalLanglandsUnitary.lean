@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameLocalCompactUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSubquotientJacUIntertwining
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStableMapCuspSub

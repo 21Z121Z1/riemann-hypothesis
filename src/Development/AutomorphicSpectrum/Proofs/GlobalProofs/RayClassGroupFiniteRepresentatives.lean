@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.SiegelKlingenDeligneRibet
 import Formalism.LocalToGlobal.GlobalTheory.GL2.TotallyComplexOfNoReal
 

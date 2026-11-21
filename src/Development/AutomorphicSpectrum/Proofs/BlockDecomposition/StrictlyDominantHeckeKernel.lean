@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsDominantOneAndMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetFixedFirstConditionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StrictlyDominantContractsUnipotentStatement

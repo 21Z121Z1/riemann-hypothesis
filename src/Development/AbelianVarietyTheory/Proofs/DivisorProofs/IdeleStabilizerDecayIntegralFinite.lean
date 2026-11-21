@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleDecayMeasurable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleStabilizerIsOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MinkowskiIdealBound.MinkReal

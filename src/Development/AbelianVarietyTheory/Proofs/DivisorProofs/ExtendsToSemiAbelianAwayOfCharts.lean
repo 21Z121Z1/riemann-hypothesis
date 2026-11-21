@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsoPreimageBasicOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCartierDivClosure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasExtOfSetup

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SandwichMaps
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PiTensorProduct

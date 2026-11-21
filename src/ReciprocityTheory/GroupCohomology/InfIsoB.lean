@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.GroupCohomology.InfIsoA
 
 namespace ReciprocityTheory.Coh

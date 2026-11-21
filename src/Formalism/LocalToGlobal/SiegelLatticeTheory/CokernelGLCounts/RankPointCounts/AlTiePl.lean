@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.LocVol
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.DataInst
 import Formalism.LocalToGlobal.SiegelLatticeTheory.AFTransport

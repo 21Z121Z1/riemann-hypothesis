@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiagHermitianTrivialOfSumFourSquares
 import Development.AbelianVarietyTheory.Definitions.Divisors.PointsNonemptyUnitaryRankOne
 

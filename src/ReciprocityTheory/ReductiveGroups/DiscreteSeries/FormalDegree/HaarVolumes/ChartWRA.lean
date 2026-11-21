@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.TriDens
 import Lemmata.CurryModusPonens.CurryMp
 import Mathlib.CategoryTheory.Countable

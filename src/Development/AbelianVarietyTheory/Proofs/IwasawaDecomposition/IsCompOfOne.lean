@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds
 import Formalism.SharpRestriction.Divisibility.LiftErrorLocal

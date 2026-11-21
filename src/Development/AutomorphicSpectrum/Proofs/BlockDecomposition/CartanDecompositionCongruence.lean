@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CentredSegments.IrreducibleUnif
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.CartanExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsFractionRingInteger

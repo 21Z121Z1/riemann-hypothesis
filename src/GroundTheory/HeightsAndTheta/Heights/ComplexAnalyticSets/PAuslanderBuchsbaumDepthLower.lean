@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StAuslanderBuchsbaumDepthLower
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Order.CompletePartialOrder

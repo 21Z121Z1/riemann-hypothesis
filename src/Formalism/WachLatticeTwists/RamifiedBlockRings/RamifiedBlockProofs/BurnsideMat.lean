@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.IdemNormalForm
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AbsolutelyIrreducibleSpan
 import Formalism.WachLatticeTwists.RamifiedBlockRings.RightIdealImageOfSurjective

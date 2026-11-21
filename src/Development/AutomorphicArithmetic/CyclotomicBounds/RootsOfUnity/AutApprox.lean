@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuInf
 import Mathlib.FieldTheory.Minpoly.IsConjRoot
 import Mathlib.RingTheory.Henselian

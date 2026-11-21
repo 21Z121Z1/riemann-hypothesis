@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieCommutatorActionInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBMatchedThetaLocalStatement
 open scoped TensorProduct NNReal Matrix

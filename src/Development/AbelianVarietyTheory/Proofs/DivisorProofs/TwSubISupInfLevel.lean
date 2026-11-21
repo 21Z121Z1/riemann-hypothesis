@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankWEigenpartEqRowsFullHeckeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ISupStableInfTypeSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankISupEqOfISupIndep

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgIsCuspStatement
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqBase

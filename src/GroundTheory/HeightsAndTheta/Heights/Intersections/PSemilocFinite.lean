@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocFinite
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocIntegral
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsLocRingIntClosure

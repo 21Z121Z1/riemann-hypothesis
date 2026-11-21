@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.ExistsRootAdicComplete
 import Development.WeilBound.CoreStatements.CommonZeroEvaluation.IsAlgebraicStd

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CompoundMatrixCauchyBinetPropertiesStatement
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.IsUnitDetOfMemGV
 import Mathlib.LinearAlgebra.Matrix.AbsoluteValue

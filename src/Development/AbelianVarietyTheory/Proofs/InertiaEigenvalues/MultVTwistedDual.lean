@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CentralIdemCoeff
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GaloisRepresentationHomFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JumpIffMultNeZero

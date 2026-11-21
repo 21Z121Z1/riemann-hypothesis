@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopRepPullback
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClopRepOfIsSplitOfRank
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ClopRepUnique

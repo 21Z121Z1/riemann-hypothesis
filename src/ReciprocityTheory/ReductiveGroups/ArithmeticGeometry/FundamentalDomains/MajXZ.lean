@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.SignTypeCancelIdentity
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.RealLower2
 

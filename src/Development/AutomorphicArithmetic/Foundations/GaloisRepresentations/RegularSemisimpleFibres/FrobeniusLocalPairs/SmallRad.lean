@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.FrobeniusLocalPairs.SmallRadAlt
 import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.BallSub
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightLatticeBasisOfEigenvectors
 
 open CategoryTheory Limits AlgebraicGeometry NumberField IsDedekindDomain

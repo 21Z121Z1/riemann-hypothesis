@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Lpart
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFunctionalEquationFourthHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DetThreePointsEqExpansion

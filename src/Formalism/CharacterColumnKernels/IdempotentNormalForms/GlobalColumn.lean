@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.StatementGC
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.GlobalModuleOf
 

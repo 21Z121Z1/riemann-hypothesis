@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaZeroMeanLogNormConjugatesOfWeberStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LatticePeriodEtaObj
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ThetaWeberStatement

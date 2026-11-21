@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StManifoldZerosComplementConnected
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Normed.Module.Ball.Homeomorph

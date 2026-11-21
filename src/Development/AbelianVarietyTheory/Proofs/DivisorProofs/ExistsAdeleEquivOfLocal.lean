@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.AdelicScalarMultiplier
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.IdeleNormTraceForm
 import Mathlib.Algebra.Order.Ring.Star

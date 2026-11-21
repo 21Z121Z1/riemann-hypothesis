@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAdelicCoreTransportEnlargedCoefficientBase
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsLExistsBaseChangeCoordinates
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RSideA

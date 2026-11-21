@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ShortValTotOfPinned
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.CoverProductIndepOfLift
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedModuliAlgebraicLawsChartWeightIntegrality

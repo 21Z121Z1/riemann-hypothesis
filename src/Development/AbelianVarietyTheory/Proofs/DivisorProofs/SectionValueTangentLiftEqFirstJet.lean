@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToricPeriodBlockIsSymm
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TangentBijectionOfValues
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

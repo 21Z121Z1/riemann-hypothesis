@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRescalePsiW0
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UnivIdentity
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.GtActIffEqGtSmul

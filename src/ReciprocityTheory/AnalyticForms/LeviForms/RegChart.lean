@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement
 
 namespace ReciprocityTheory.AnForm.P

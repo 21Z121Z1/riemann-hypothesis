@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.TripleSumIndependence.RowSwApply
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.SecondConstantHolds
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.RightMoveTrianglesOfUnit

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PieriBlockIdeals.LemmaWFromLattice
 import Formalism.PieriBlockIdeals.PieriColumnMinors.HeightDescentMinors
 import Formalism.PieriBlockIdeals.PieriColumnMinors.RegularCuspidalTrace

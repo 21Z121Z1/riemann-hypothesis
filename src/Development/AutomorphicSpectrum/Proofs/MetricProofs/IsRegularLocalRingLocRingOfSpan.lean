@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.StalkLocA
 
 namespace GlobalTheory.CompanionTheory.Ar.Cmp.SncRes.Kreg

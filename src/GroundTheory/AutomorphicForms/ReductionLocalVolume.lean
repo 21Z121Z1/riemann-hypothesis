@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.ReductionLocalVolumeGL
 import GroundTheory.AutomorphicForms.ReductionSiegel
 

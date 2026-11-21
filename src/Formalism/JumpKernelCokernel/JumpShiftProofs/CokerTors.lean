@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.JumpKernelCokernel.JumpShiftProofs.DetLen
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.LinearAlgebra.Charpoly.BaseChange

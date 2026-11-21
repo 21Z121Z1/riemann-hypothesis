@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.MvSecValComp
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeilPairingPullbackIffStatement
 

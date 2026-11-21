@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntFamPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionPullbackCommutingEndomorphismGeneraStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiplicationPullbackTraitGenericConditionStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobPullHomExtAffine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeCorrespondenceUniqueRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemePullbackFstComm

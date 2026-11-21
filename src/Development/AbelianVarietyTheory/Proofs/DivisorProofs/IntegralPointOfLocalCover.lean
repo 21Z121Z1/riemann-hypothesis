@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLatticeLocalBasisDescription
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LinearIndependentFlagVec
 open AlgebraicGeometry CategoryTheory NumberField IsDedekindDomain

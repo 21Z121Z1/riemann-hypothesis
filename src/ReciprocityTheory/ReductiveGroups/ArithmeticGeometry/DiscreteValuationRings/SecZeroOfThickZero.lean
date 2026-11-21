@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ExpandsAtScale
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.MemPowOfThickZero
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.HrelPf

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsShintaniConeDomain
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RayClassConeParametrization
 

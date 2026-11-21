@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.CharMain
 
 namespace ReciprocityTheory.ChartRestriction.G.I2

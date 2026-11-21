@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.JGenLinLie
 import Development.AutomorphicArithmetic.Foundations.Convolution.CentreSplitting.CapHCMem
 

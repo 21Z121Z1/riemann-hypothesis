@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.SectionBaseChange
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CoefChangeTypingsEquivOfValueWD

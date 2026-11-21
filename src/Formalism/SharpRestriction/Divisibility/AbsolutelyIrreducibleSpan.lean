@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Mathlib.NumberTheory.PrimesCongruentOne

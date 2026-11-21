@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedKerPrin
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedPrime
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedCardG

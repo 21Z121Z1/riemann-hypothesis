@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.UnitBound
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 import Mathlib.Algebra.Order.Positive.Field

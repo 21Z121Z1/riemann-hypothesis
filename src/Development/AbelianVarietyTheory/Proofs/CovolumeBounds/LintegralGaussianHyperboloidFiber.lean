@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.LintegralHyperboloidFibrationStatement
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform

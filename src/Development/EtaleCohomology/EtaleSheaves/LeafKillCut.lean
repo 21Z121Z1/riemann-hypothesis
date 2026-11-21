@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 import Std.Tactic.BVDecide.Normalize.Prop

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SetAtOfSizeAt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowNumAt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsExplicitParameters

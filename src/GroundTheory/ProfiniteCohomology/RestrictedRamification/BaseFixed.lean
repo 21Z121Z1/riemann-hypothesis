@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Finite
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseDefs
 set_option maxSynthPendingDepth 1

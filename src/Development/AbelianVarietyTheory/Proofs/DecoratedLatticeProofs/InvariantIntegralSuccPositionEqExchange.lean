@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ToOneSucc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QuotientIntegralParabolicUnfolding
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OrbitLocallyConstant

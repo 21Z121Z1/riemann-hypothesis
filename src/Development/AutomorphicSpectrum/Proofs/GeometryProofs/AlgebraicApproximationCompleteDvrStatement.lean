@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicApproximationCompleteDvr
 open Formalism.L2.Pj
 

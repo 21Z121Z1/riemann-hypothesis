@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.BoundedSectionAlgebra
 
 open NumberField ReciprocityTheory.ChartRestriction.G.FD MeasureTheory

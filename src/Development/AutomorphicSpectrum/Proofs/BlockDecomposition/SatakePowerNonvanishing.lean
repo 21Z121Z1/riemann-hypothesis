@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwasawaBruhatDecompositionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BruhatWeightDecreasesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryIwahoriFactorizationStatement

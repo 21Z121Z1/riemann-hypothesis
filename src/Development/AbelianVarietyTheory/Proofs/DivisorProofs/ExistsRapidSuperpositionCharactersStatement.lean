@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRapidSuperpositionCharacters
 open MeasureTheory GlobalTheory.JSW
 open scoped FourierTransform ContDiff

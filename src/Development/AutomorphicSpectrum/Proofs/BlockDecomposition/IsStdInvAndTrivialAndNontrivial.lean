@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SphericalFirst
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AddCharConductorInv
 

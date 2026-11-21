@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FlagDegreeLinearFunctionals
 open MvPolynomial Filter Topology GlobalTheory.CompanionTheory.Ar.Top
 set_option maxHeartbeats 1000000 in

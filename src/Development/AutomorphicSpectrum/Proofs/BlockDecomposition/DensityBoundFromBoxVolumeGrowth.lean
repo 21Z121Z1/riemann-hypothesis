@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsSplitK
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NontrivialDegenerationOutsideAbelianStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DvrArcExtensionMonoBaseStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DvrArcExtensionGenericFibreStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.LatticeHerglotzBound
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MiddleThirdEstimate
 import Mathlib.Tactic.ENatToNat

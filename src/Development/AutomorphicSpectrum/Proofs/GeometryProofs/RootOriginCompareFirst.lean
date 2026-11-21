@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ArchBetween
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptFiniteExtension
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCompCompareFlagStatement

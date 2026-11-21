@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.ExistsPowIdem
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.Inertof
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasAd

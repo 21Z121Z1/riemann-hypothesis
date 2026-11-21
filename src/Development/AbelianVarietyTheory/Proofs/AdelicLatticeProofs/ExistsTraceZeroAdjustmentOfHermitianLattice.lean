@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermHyperbolic
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ImportsTer
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsNsmulMulVecMem

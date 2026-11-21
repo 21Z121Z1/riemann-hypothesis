@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducesPl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGrpPullbackTangentCombination
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToOverSurjective

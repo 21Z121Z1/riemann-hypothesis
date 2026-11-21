@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 
 namespace GlobalTheory.CoordsOfMemAdjoin

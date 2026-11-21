@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameOfPeriodLinear
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DetOfTriangular
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsEqNsmulOfDvdPairing

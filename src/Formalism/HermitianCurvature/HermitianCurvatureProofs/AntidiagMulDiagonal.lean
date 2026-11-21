@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementK
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RecText
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSetup
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsClassSystem
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar

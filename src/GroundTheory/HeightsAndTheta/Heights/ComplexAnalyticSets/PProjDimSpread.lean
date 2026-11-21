@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StProjDimSpread
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.LocalProperties.ProjectiveDimension

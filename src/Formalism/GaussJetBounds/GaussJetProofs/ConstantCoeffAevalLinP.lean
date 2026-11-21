@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.StatementJ
 import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 

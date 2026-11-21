@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReductionCorankEqRankLowerLeft
 open Matrix GlobalTheory.CompanionTheory.Jp
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StandardCoverShortValueEqThetaValue
 open NumberField Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open scoped Classical

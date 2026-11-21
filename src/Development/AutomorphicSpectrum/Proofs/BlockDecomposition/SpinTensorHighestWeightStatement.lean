@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpinTensorHighestWeight
 open Matrix Finset
 open scoped InnerProductSpace

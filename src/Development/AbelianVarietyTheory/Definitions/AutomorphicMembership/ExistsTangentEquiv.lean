@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LinearIndependentVec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTotallyComplexOfI
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BddAboveSubDegsOfJointlyMono

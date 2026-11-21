@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsClosedNFlag
 import Development.AbelianVarietyTheory.Definitions.Divisors.BplusOfEquivariant
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam

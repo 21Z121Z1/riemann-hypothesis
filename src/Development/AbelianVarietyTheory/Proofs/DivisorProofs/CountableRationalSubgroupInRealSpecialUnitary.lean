@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.RingTheory.Henselian

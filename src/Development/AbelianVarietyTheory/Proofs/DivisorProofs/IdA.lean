@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateGroupPointsInjectiveMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateTorsionPointCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateCurvePointAdditionCompatStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemFiniteExtPadicRingOfIntegersIffNormLeOne
 
 open Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N

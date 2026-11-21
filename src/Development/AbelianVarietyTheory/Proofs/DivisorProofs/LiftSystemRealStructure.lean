@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsTjCorrDiagModel
 import Mathlib.GroupTheory.FiniteAbelian.Duality
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.FrobeniusPaths.AntitoneOfAppend
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.DvrFractionFieldCharZeroPrime
 import Mathlib.RingTheory.Etale.Weakly

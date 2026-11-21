@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DependenceFixedStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BasicModelsOfFunctorialityStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSurjectiveAllDataStatement

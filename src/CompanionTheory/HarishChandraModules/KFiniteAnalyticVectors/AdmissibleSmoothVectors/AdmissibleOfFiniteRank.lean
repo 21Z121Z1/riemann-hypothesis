@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.MapStdPoly
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.InPCommutatorOfInK
 import Formalism.PeriodIntegrals.IsLowUnitH

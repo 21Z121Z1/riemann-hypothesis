@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.HilbertRowConditions.CenterIdempotentAction
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SlopeStep
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FiniteDimensionalMram

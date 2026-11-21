@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFromOrbitCharts
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloMapOfLocalProductCharts
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalResolutionRegularStatement

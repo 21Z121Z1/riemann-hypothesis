@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GrGenOfIsFlagVBOn
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticeTensorPowerDegree
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenMapStalkMap

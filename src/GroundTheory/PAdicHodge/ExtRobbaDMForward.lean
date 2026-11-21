@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.ExtRobbaDMSplit
 set_option maxSynthPendingDepth 1
 

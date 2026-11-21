@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.EigenLengthProductStatementHolds
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RbProj
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RbTriang

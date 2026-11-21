@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.LieArcSt
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.LieLiftsTangentReduction
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PmapsOfGenRelR

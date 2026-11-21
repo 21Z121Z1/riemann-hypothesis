@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMidLevOfMem
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MidLevMulBeforeLast
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PenultimateChartLocalGroupMemNearLevelSetStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowPartFiniteDimensionalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowDegreeKEquivariantStatement
 open scoped TensorProduct NNReal Matrix

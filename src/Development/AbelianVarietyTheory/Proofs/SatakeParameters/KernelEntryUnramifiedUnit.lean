@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NrmIdNonneg
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelBasisDeterminantAbsAtPlaceStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixLineConjIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianPositivityInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithIntersectionDivisorSupport

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.PairsL
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.PlaneRemovalConfiguration
 import Development.WeilBound.ThetaLifts.LatticeBasics.PairsStable

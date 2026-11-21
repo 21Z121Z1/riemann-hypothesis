@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGraphAreaHolomorphic
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.InnerProductSpace.NormDet

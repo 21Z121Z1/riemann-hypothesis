@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryJacquetEigenvectorExistsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryEquivariantFormStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryCharacterFactsStatement

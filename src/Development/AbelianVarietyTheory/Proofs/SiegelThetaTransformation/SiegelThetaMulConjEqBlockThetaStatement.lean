@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SiegelThetaMulConjEqBlockTheta
 open Matrix Complex GlobalTheory.SW
 open scoped ComplexConjugate Real

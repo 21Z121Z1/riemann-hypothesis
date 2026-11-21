@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SelectionLemmas
 import Formalism.QuotientMetricDivisors.Statement
 import Std.Tactic.BVDecide.Normalize.Prop

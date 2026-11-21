@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsFlagBundleRankOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainStatementOfPublishedInputsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalOfHasChainAtPrime

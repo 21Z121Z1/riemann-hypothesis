@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LrActScalar
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetConsColNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HformMulVecRight

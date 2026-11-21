@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.IrreducibleDistinctUnitary
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GenericDetPowMulHw
 import Mathlib.Order.Interval.Finset.Box

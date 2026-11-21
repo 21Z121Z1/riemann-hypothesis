@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTopologicalRingAE
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCB
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels

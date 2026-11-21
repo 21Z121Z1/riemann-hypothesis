@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RelativeAmpleSpreadFromLocalization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorProductAlgEquivOfIsPullbackSpec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOpenDescendsLocalizationPullbackStatement

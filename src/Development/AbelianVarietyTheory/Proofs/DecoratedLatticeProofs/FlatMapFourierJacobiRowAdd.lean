@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClosedEmbeddingAffPtUncurry
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContrFactor
 

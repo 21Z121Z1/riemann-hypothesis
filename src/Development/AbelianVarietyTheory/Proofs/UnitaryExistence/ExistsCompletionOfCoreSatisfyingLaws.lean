@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CIndNab
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.ExistsIsNabUncond
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaValueExistsUniqueOfChartIndependence

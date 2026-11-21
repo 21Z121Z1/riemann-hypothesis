@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DifferentiableAtChart
 import Development.AutomorphicArithmetic.IntegralCasts.IsOpenStabOfMemNhds
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj

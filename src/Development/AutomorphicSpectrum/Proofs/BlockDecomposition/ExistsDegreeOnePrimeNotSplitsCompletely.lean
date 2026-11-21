@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.DegreeOneDensity
 open NumberField IsDedekindDomain GroundTheory.Global
 

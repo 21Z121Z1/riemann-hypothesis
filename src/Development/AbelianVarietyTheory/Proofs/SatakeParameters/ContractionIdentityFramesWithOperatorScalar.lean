@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.Reframe
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.K2Hermitian
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PendTThFLtOfKapLawLt

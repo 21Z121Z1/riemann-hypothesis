@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieCoordLat
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorusExt
 

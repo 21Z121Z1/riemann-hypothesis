@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNormFormGaussBound
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PDehomNormPIntegral
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerInclOn
 open Formalism.BasicNotions Formalism.MainNotions.S GlobalTheory.Core.Rk
 open scoped InnerProductSpace

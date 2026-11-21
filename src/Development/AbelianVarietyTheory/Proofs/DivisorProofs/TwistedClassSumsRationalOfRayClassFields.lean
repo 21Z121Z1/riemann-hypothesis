@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedRationalOfOneMapOverL
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoverFieldOfContainsRayField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTieCoordBase

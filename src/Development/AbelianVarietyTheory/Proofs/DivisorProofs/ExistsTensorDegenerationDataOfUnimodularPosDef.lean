@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTensorPreDataRigidificationInvPsiZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataPsiIsEvenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorDataTauBimultiplicativeStatement

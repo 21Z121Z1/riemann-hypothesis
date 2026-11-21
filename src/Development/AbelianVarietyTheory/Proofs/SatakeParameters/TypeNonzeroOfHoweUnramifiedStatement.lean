@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TypeNonzeroOfHoweUnramified
 open Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Host
 set_option maxHeartbeats 1000000 in

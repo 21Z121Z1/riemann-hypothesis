@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsOver
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkClosedPointToGermTop

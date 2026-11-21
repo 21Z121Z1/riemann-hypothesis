@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsComplementUnitaryMulActionLocalInnerDatum
 open ValuativeRel Formalism.MainNotions.S Formalism.MainNotions.S.Loc
 open scoped Pointwise ENNReal Classical

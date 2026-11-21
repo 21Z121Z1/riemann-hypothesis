@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalStageNonemptyStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnramifiedDataCharacterStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTwistEmptyLocalStatement

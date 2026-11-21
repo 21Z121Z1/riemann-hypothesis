@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CentralCharacters.CentralScalar
 import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
 

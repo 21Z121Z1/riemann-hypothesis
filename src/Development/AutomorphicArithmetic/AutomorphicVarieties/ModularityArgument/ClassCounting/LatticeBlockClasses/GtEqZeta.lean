@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ClassCounting.LatticeBlockClasses.CBlock
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.ZMod.UnitsCyclic

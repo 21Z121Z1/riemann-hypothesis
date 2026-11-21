@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreimageUpOpen
 import Mathlib.AlgebraicGeometry.Morphisms.Finite
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry Opposite

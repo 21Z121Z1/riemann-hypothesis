@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ChangeVar
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.PushTest
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.QuotAny

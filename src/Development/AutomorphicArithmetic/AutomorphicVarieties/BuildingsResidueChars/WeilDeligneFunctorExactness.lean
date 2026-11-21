@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.DpstRightExact
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.WeilDeligneFunctorExact
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinrankLetterHomComp

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallSectionPointHeight
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionOrderAtPoint
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PBoundedSectionTransfer

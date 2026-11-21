@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularSmooth
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushInvertibleOfDensePart
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCptGen

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftTorsionPointNilpotentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureDescendsStatement
 

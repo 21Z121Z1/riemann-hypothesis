@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncModelEmbeddedLogResolutionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AdjoinCoordsArithVarStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EmbeddedResolutionAmpleMetricStatement

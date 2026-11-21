@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InjectiveResolutionLiftPushforward
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechH0PullCompatStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechConnectingPullNaturalStatement

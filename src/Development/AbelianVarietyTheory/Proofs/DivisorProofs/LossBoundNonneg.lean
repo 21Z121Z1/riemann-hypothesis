@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelLossDegreeBounds
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BracketAbsoluteSums
 

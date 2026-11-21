@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerMapSubsetImMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichDatumScalarAction
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SandwichMaps

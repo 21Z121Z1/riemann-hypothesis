@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SqChar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WeylNumeratorLaplace
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjSubMulNegMulOfNormOne

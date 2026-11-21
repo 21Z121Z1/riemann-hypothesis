@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Statements
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FiniteSupportHeight
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ExistsDensity
 import GroundTheory.GlobalFields.TateThesis.GaussianComplexFourier
 import Mathlib.Analysis.Real.Pi.Bounds

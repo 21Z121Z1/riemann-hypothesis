@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjugateHermitianSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LogGramSquareSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFlagCoordinatesStatement

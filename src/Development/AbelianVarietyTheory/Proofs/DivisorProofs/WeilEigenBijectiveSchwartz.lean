@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerPreservesSchwartzSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenBijectivePairedModelsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEigenBijectiveRegularStatement

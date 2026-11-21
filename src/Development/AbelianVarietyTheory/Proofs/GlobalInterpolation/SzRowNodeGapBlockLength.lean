@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowAndImp
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowPpDimToLeRpowStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitChoiceWindowRankConditionsStatement

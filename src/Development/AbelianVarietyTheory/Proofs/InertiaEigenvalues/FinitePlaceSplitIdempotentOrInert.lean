@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TendstoOneOfSummable
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinPartIdemMulMemIff

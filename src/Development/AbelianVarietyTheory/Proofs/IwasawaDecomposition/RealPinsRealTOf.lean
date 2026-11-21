@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
 import Formalism.LocalToGlobal.IndefiniteReal.RealPins
 open Formalism.BasicNotions Formalism.MainNotions NumberField IsDedekindDomain

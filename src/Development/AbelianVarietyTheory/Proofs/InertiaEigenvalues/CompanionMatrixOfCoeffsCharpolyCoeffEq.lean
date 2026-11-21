@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisBorderedMatrixNormalFormInvariants
 import Mathlib.Algebra.AffineMonoid.Basic
 open GlobalTheory.JR Matrix

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OfShortExact
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamRepresentationTensorComparison

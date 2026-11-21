@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.TwoChartAtlas.TwoChartSt
 import Mathlib.RingTheory.MvPowerSeries.Equiv
 

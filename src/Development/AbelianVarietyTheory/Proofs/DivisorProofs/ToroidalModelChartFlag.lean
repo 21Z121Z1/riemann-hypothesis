@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolToOfOpenImmersion
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjugateHermitianSmooth
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAlgAtlasAtlasOf

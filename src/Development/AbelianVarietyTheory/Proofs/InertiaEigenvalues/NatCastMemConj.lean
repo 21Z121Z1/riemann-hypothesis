@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsThetaChrTied
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsResOfChrEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnrAtOfOff

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermHyperbolic
 import Mathlib.Algebra.Module.Submodule.Union
 import Mathlib.RingTheory.Henselian

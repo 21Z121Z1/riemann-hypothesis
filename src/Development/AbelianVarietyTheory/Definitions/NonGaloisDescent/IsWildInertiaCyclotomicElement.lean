@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SplitRep
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.ResidualConstruction
 import Formalism.SharpRestriction.LevelLetterCocycles.TypePrimeCongruences

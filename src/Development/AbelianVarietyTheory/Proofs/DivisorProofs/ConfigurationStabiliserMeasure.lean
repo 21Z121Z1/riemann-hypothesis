@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemAdelicSchwartzSpaceOfLevelCompactSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAEigenStabilizerTriplesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAEigenStabilizerIntegralStatement

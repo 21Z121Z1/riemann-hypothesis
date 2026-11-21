@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvFieldBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKsCocOfKsRel
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField IsLocalRing

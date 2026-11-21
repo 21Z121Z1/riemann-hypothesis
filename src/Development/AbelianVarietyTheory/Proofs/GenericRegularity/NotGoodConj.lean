@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.FrameCharts
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.ExistsUnitGramFrameBorelChangeStatement
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CabsDiagEqOneStatement

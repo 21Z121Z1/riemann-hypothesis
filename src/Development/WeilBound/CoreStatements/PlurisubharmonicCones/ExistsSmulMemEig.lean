@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsAdapted
 import GroundTheory.HeightsAndTheta.Heights.ArithDegreeDetIdeal
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherFurther

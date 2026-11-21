@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.AdelicPair
 import Mathlib.RepresentationTheory.Semisimple
 open Matrix GlobalTheory.ClassFin

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.BigCellVanishingOfCommute
 import Mathlib.Tactic.ENatToNat
 

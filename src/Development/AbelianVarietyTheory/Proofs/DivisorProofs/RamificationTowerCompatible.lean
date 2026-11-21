@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSmoothCharCompNormU
 import GroundTheory.GlobalFields.CompletionAtPlace.Integers
 import GroundTheory.LocalFields.LocalFourierHaar

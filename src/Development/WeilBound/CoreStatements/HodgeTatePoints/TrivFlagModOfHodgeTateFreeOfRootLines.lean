@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.IsPolLatticePlane
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GeTriv
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ChartMonNeZero

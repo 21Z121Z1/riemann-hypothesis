@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.KleimanNefness.ModelSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CellMeets
 set_option maxSynthPendingDepth 1

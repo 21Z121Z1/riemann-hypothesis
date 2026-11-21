@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuppAtMul
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.SqEqOneOfFixDat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NabBaseChange

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.IdeleRoots.ConstantFrames.GaugeExistence.QdetSub
 
 open Polynomial GroundTheory.BlockD.FourierDecayAlt.GaugeExists

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.InterlacingGrids.Bracket
 
 namespace GroundTheory.BlockD.FourierDecayAlt.WaveGridLiftGrid

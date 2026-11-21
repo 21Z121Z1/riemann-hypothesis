@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.TateThesis.DedekindZetaContinuation
 set_option maxSynthPendingDepth 1
 

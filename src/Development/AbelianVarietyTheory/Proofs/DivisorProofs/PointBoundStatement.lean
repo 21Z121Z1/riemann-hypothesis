@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieLatticeReadBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieLatticeSemiFibrationExistsStatement
 

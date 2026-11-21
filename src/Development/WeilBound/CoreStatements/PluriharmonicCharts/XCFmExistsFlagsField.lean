@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.StalkSpecializesBijective
 import Development.AutomorphicSpectrum.Statements.MetricStatements.ExistsFlagModelBaseMetric
 open AlgebraicGeometry CategoryTheory NumberField Matrix

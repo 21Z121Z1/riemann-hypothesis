@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeFactsAt
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TranslateMomentsAll
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.CharacterValuation

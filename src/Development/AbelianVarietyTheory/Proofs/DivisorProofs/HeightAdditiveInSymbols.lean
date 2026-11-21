@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightWeightRootChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFormulaRationalFunctionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalHeightSupportFiniteStatement

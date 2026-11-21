@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RealPoints
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTopologicalRingAE

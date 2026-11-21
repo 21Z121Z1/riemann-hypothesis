@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WedgeEqSpanOfIsFrameAt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsLineGenOn
 import Mathlib.LinearAlgebra.ExteriorPower.Basis

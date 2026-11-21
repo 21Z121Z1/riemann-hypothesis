@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGaloisSubfieldConjStable
 import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
 import Development.AbelianVarietyTheory.Definitions.Foundations.FoundationsPrimeFact

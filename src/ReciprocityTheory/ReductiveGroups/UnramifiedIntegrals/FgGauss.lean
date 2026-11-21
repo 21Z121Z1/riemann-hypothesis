@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgBasic
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.DualLattices.Imports
 import ReciprocityTheory.DualLattices.CyclicRecursion
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

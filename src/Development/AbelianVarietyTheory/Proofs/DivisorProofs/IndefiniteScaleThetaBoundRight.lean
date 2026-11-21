@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowsBOfClauses
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIoExtensionOfWeakCharacterisationFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndefiniteScaleThetaBoundLeftStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TwoPowCardLeIndexIInf
 open NumberField IsDedekindDomain GlobalTheory.QNorm
 open scoped WithZero

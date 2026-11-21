@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RangeSubsetOfGeom
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Mathlib.Tactic.Polynomial.Basic

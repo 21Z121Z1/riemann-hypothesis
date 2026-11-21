@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GeometricLemmaCellGroups
 import GroundTheory.AutomorphicForms.GeometricLemmaCount
 set_option maxSynthPendingDepth 1

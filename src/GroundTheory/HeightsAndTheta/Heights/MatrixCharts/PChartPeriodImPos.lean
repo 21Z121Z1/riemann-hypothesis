@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsCusp
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Period
 import Mathlib.RingTheory.Etale.Weakly

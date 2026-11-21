@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.SharpRestriction.CuspSpanNormBounds.LinQRawRange
 import Mathlib.Tactic.Polynomial.Basic

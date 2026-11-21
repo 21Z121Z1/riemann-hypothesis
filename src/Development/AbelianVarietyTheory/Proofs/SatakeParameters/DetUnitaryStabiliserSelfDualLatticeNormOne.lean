@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIntegralDetOfStable
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmulLatMatOf
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators

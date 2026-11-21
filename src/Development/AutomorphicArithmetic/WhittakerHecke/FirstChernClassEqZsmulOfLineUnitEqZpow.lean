@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 
 set_option backward.isDefEq.respectTransparency false

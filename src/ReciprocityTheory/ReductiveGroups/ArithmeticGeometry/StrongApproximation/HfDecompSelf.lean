@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.ReachableFixingAddSmulSecond
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.ExistsMaxOfNotCoprime
 

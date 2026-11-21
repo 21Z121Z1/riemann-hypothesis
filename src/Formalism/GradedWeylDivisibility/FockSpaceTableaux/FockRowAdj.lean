@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockSubAdj
 import Std.Tactic.BVDecide.Normalize.Prop
 

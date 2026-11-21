@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 
 set_option synthInstance.maxHeartbeats 100000

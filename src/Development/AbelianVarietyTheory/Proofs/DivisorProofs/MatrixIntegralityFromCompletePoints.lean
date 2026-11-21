@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsChartOfMaximal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationBoundMatrixEntriesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSphericallyCompleteEmbeddingStatement

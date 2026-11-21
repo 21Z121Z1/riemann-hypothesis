@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjUInvMemGfC
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactElementGaussianListStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AlgebraicModelInvariantSubStatement

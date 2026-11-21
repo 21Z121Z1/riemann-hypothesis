@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohField
 import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohMu
 import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohTate

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.IsIntegralVecCoordsOfMemAdelicLatticeOne
 import GroundTheory.AutomorphicForms.HermitianOrthogonal
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsAdelicSplit

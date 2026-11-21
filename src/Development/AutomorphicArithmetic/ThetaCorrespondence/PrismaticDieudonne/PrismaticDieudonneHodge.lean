@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDatumBiconnOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSumEpsPairingSmul

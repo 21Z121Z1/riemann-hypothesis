@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GeneralLinearIntegralCompactOpenStatement
 import GroundTheory.AutomorphicForms.MeasuresGL
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL

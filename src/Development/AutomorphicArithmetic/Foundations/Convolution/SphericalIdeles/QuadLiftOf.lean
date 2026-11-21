@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.QuadLiftUnr
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsWeight
 

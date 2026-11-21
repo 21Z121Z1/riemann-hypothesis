@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ProdNormGramRLeProdGramDet
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RatHermHermUnitAniso
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LcvNonnegOfIntegralFull

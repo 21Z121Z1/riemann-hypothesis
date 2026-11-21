@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FamilyExistsPosOfFamilyExists
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ShortExactStandardLatticeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ArithVarietyHodgePrimeBoundStatement

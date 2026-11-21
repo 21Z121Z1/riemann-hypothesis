@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Weight
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsCompactBall
 

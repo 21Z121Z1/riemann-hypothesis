@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffMinpolyMemAdicCompletionIntegers
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.Tactic.Polynomial.Basic

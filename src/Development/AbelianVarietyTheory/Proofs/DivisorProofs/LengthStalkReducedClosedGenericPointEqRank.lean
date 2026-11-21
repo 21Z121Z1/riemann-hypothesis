@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsTorsionFreeOfForallExists
 open CategoryTheory AlgebraicGeometry TopologicalSpace GlobalTheory
 

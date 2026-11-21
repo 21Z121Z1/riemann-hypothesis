@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittRankLeSignatureSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolDataWittFrameDecompStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacquetSubquotientCharExistsStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DatExtRestOfParts
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAnalyticDataEnlargedBaseTupleFreeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCharacterisedDataWeilEnlargedBaseStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineDerivativeAdditive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationsCommuteDistinctPlaces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLineContinuous

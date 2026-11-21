@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRigidifiedValueAtOriginStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigidifiedValueAtOriginMemIdealPowOfVanishesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitRigidifiedValueAtOriginStatement

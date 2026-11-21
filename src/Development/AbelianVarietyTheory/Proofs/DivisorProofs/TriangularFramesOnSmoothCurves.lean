@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntEmbCoe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriFrames
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsUnitSubOfIsSplitting

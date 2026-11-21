@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Kernel
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.AdicCompletion.LocalRing

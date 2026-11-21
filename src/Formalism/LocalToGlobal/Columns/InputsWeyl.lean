@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WeylProd
 import Formalism.LocalToGlobal.Columns.Inputs
 import Formalism.PeriodIntegrals.AdmissibleModel.WeylDim

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram
 import Formalism.LatticeSlopes.LatticeSlopesProofs.GramDetLe
 

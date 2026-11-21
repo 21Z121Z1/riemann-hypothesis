@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 import Mathlib.RingTheory.PicardGroup

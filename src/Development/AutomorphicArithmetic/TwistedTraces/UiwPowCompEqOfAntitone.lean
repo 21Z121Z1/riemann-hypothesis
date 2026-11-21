@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.HopOloc
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.UiwPow
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.LocHeckeInert

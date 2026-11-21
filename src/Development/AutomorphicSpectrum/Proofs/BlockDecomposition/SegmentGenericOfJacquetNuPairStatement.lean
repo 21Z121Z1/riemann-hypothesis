@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentGenericOfJacquetNuPair
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL
 set_option maxHeartbeats 1000000 in

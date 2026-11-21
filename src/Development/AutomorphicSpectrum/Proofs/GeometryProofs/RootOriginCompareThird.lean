@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.JoinModelPointsProject
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplierLine
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeB

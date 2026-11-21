@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlashToGLSmul
 import Mathlib.NumberTheory.ModularForms.Basic
 open GlobalTheory.HeckeFamilyMatrices UpperHalfPlane CongruenceSubgroup

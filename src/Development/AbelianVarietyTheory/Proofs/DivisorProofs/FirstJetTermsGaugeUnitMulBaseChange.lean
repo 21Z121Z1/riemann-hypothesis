@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionValueLinCombChangeOfChartsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratorValueLinCombChangeOfChartsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransitionUnitPowValueAtPointCocycleStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOfFinOrderOfIsOfFinOrderMapRingHomStatement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.GroupTheory.FiniteAbelian.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 

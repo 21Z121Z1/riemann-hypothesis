@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BetaLowerAndSmul
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 

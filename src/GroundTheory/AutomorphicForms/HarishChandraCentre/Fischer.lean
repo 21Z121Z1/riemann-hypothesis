@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.HarishChandraCentre.RepBase
 import GroundTheory.AutomorphicForms.HarishChandraCentre.FischerForm
 import Mathlib.Algebra.Order.Ring.Star

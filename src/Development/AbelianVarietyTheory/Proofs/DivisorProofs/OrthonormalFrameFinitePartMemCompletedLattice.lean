@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SelfDualLatticePairingDual
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmAtSmulRight
 import Formalism.LocalToGlobal.Divisibility.CoefMod

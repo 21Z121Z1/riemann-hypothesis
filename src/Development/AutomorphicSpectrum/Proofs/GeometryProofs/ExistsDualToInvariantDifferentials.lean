@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NonemptyEquivOfCardHom
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RelOfTorsion
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderContainsCharacters

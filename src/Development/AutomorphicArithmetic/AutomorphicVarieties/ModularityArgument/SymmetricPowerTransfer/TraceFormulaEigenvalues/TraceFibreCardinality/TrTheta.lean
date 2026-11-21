@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.TraceFormulaEigenvalues.FormsFin
 import Mathlib.Algebra.DirectSum.LinearMap
 import Mathlib.Analysis.CStarAlgebra.Classes

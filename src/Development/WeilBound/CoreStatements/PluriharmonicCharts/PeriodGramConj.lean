@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.OmHeightslockG
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 

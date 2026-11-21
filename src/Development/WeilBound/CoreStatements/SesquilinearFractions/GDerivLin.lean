@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.SesquilinearFractions.RetractionTwoProjectionOne
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.AnChartX
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeGram

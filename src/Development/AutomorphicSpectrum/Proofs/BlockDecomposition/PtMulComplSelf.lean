@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IwasawaDecompositionUnitary
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PtMMapOfZero
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableAffLine
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Etale.Weakly

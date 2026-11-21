@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NEvalSqZero
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.EtaDualPairing
 

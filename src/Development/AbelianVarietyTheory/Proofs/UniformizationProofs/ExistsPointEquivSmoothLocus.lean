@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.MulLeftCompOfPullbackPointEquivMul
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfLocallyRel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsNegOriginSmoothLocus

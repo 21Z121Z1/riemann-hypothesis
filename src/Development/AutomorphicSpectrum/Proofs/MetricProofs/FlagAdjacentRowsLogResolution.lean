@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartThirdStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartFourthStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TwoPointFibreChartSixthStatement

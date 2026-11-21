@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.SuppBCOfMix
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NotModEqOfLt
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DixmierMalliavinFactorisationBasisStep
 open GlobalTheory.HCA MeasureTheory GroundTheory.Automorphic
 open scoped ContDiff

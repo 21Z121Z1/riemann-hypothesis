@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothConjugateInverseMem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartStarInvT
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EvStmt
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsAdaptedModelTwoPlanes
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EigenIntertwinerTwoPlanes

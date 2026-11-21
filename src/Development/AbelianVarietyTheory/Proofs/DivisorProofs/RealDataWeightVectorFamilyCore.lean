@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimRows3OfParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiplicityOneRationalRowsSizedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealDataWeightVectorFamilyStatement

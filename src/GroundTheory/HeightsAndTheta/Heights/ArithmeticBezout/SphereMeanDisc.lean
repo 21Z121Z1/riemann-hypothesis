@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMeanCalc
 import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
 set_option maxSynthPendingDepth 1

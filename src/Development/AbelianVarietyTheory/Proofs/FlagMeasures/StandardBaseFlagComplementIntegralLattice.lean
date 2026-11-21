@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowMinor
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLocalizedModuleSubtype
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeLatIn

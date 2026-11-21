@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.Chebotarev.DiscreteTopologyLatOf
 import ReciprocityTheory.Chebotarev.NormCongr
 import Mathlib.Topology.Sheaves.Presheaf

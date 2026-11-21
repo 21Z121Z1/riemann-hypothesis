@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UnitaryGlProjectionLevelSumSqLe
 open Finset BranchingSupport Formalism.REAL Formalism.QuantumDeterminants
 open scoped InnerProductSpace

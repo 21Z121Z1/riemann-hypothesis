@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlashToGLSmul
 import Mathlib.Tactic.Polynomial.Basic
 

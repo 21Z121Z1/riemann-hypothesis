@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.IsotropicMahlerBounds.OnlyIsotropic
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NilradicalChangeOfVariablesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuotientVanishingStatement

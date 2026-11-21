@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.DefectBoundedStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSmoothOfDefectZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSmoothFreeAwayStatement

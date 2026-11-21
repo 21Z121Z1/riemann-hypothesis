@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.SimpleIn
 import GroundTheory.AutomorphicForms.SmoothRepSchur
 import GroundTheory.AutomorphicForms.CompactFormulaCountable

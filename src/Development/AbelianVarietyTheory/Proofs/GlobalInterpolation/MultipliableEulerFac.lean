@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDualIndex
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.LocalDensityEuler
 import Formalism.GL3MeanSquares.HookFormulaTorsion.SumWeightsOverPrimeLeHalfDegree

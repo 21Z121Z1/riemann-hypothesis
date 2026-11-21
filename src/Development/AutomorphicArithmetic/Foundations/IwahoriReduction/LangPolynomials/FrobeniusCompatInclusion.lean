@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.CyclotomicDvdExpandOfCoprime
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTLawAt
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsLocallyConstantCycMod

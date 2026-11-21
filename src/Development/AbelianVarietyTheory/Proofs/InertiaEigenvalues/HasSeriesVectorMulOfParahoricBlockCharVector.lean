@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DetCharacterMemPrincipalCongruenceFixedVectors
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LabelEqOfSuppAdds
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesEqOfOpposite

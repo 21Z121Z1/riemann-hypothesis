@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleAdjoinRootXPowSubC
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

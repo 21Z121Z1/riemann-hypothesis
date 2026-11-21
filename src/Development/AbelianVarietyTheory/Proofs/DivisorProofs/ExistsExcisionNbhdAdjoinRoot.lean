@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsExcisionNbhdSelf
 import Mathlib.RingTheory.Etale.StandardEtale
 import Mathlib.Tactic.Polynomial.Basic

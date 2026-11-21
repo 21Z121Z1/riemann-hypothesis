@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawLeftRestrictionLeviStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlacesBoundTupleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatBoundTupleStatement

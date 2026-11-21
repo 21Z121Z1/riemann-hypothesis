@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChartSheetCompare
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PSegreSheetFormCompare
 set_option maxSynthPendingDepth 1

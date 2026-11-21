@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsLatMeasurableConst
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AutPointRationalEquivariance
 

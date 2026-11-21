@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionFractionalIdealProperties
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.ENatToNat

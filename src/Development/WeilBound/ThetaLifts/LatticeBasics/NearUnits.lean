@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.MemLam
 import Development.WeilBound.ThetaLifts.LatticeBasics.BadStmt
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocMeas

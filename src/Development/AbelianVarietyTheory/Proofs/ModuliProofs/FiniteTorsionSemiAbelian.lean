@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.FiniteFibrePoints
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FiniteTorsionSemiAbelianOfAbelian
 

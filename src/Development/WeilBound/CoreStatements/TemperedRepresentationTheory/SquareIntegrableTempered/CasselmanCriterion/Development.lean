@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NotMemLpOfGrowthStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LtOneOfPowerBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeOneOfPowerBoundsStatement

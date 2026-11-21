@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardEtaleLocalSection
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.Order.CompletePartialOrder

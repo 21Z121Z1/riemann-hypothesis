@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GenericDegreeOfProjectionAndFibreDimStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CoordinateProjectionOfArithSystemStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FibreDim

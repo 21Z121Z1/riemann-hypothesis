@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NonvanishingFromTruePackStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TruePackOfBundleStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MainTheoremFromPublishedResultsAltBis

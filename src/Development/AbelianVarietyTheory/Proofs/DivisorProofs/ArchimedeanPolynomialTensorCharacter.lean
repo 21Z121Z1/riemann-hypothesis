@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixPartEqBotOfLt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TprodMemDegLE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeakExponentialActionOnFockVectors

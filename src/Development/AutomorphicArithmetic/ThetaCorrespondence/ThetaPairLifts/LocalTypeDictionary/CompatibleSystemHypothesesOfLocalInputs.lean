@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.HypA
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OfClassification

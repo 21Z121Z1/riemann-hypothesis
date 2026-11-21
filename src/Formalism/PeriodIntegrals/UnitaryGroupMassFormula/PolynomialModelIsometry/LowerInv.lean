@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialModelIsometry.IsPolyMon
 import Mathlib.Analysis.InnerProductSpace.Dual
 import Mathlib.RingTheory.PiTensorProduct

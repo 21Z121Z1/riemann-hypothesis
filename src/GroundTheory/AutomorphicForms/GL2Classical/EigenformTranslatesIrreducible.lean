@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.EigenformTranslates
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsDecay
 import GroundTheory.AutomorphicForms.GL2Classical.CuspFormsFiniteDim

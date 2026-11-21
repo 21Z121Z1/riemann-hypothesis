@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SncAdaptedAtlasProjectionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFubiniStudyPositiveStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticDimensionCountStatement

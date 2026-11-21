@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.TracePairingGeDetImPowHermitianHalfSpace
 open Matrix Complex NumberField GlobalTheory.SW Filter Topology
 open ReciprocityTheory.ChartRestriction.G.FD (cc herm)

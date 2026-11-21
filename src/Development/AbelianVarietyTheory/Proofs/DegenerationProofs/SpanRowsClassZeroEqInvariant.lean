@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAdaptedBasisTestLattice
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsBasisB
 import Mathlib.Algebra.Order.Star.Real

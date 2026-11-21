@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MatrixInductionTransvectionDiagonalStatement
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar

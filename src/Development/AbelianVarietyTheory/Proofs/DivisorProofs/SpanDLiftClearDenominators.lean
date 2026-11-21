@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentialsSpanOfUniformizerBasis
 open GlobalTheory.PD GlobalTheory.CechDR KaehlerDifferential
 

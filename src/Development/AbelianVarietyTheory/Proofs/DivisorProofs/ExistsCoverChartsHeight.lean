@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverRefinementExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartResult
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFamily

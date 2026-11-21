@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WeakCharInertPartRealAdelicDataTransport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FieldValuesMemFixedField

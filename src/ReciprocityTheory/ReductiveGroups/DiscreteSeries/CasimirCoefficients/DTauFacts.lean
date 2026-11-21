@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirCoefficients.KFacts
 import Mathlib.Analysis.Calculus.Deriv.Star
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjTransposeMulMulSelfOfUnitaryConjStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PosDefExistsConjTransposeMulMulEqOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RadicalEltMovingDualToMajorantStatement

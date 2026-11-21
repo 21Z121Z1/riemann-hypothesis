@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ConnectionKillsSeries
 import Mathlib.NumberTheory.NumberField.CMField
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.JointMultOfSteps
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.WittVector.IsPoly

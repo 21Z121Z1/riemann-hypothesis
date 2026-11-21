@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.ConductorInflation
 import GroundTheory.GlobalFields.Artin.GammaInduction
 import GroundTheory.GlobalFields.Artin.RelativeDiscriminantLocal

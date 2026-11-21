@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmpleOnAbelianBase
 
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

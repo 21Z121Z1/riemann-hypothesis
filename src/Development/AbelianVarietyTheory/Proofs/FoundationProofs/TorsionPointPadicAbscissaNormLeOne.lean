@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableSqTh
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralJAndAlgebraicData
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Intersections.FlagBundleSt
 set_option maxSynthPendingDepth 1
 

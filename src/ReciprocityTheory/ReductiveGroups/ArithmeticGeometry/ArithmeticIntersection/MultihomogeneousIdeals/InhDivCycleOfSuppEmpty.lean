@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.KrullDimension.Polynomial
 import Mathlib.RingTheory.OrderOfVanishing.Basic

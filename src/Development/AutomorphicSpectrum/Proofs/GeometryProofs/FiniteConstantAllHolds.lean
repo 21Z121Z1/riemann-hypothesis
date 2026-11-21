@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FinConstFor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenLinePAdicBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeLatticeValuationAgreeStatement

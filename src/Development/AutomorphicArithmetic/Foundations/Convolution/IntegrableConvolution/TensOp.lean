@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ArchBasic
 
 open MeasureTheory GroundTheory.Automorphic GroundTheory.Automorphic.AutomorphicForm

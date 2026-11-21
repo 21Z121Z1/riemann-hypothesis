@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.HaarDefs
 import Formalism.FormalDegreeBessel.FinalG
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential

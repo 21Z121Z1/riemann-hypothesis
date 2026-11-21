@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SCuIsom
 import Development.AbelianVarietyTheory.Definitions.Foundations.AuxiliaryFrameNormalizedSpaces
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

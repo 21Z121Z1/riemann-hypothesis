@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IrreducibleConnected.StMonicRootGrowth
 import Mathlib.Analysis.Polynomial.CauchyBound
 import Mathlib.RingTheory.PiTensorProduct

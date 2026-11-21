@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.YangianSpanCharacter.StatementT
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

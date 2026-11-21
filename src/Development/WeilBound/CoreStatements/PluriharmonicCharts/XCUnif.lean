@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.AnalyticAtDetFac
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.NotMemOfEqTop
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAnalyticProjectionBijectiveStatement

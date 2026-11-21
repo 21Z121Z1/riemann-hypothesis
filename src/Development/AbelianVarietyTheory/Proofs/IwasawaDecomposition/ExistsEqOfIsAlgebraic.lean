@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HostPins
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnramInIffDifferentIdealEqTop
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyAlgHomRayField

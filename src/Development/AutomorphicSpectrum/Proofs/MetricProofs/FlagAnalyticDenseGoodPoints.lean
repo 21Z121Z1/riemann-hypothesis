@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BaseMetricVectorLogResolutionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagPointInMultiprojectivePointsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsFlagPointInOrbitStatement

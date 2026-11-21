@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousTwOfContinuous
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExAllOfGood
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HoldsSDRAllOfGood

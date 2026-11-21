@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HarderNarasimhan.Statement
 import Mathlib.Analysis.Normed.Field.Instances
 import Mathlib.LinearAlgebra.CliffordAlgebra.Contraction

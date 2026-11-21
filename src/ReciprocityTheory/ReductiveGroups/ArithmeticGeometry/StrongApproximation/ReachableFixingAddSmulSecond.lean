@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.StrongApproximation.ConjMemEichSet
 
 namespace ReciprocityTheory.ChartRestriction.G.SA

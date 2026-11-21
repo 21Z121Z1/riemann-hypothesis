@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.EisAutomorphyLinear
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FiniteClsAndStab
 open Matrix Complex NumberField GlobalTheory.SW Filter Topology

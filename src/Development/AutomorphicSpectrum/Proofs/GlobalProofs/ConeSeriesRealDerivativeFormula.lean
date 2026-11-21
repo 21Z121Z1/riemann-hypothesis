@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialSum
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.WittVector.IsPoly

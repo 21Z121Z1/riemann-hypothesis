@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsMuIsRamified
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.NotMtStableOfFree

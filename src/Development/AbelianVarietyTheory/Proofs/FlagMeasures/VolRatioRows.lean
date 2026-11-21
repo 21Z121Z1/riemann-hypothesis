@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsReductionActionChosenPlaces
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolRatioProd
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsChoiceOfIdem

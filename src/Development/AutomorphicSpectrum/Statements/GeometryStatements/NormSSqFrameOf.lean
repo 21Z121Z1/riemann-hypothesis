@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NormEmbeddingHostFormConstantEq
 import Formalism.LocalToGlobal.Divisibility.FramesLemmas
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CuspFormsDominantWeightFiniteDimensional

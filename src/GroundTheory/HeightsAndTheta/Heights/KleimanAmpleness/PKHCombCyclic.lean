@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHCombCyclicSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHCombContractSt
 import Mathlib.Tactic.Polynomial.Basic

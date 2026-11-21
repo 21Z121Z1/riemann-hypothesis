@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BTLeFiveQuarters
 
 open Formalism.MainNotions Formalism.BasicNotions Formalism.MainNotions.G Classical

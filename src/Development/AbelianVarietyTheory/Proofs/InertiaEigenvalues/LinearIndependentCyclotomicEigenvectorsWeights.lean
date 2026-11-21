@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.PowLtFirstRadius
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateInvariantsTwist
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LogVandermondeBounds.FinrankFiberSumZero
 
 namespace Formalism.LogVandermondeBounds.product_first_zeroth_parts

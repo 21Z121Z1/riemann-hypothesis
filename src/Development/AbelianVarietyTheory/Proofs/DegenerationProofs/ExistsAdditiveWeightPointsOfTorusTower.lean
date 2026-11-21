@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ExistsGenPullTriv
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HasWtGenPullIff

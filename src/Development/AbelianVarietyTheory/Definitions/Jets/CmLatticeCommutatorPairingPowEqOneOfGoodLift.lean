@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsVariableChangeEqLatticeCurve
 import Mathlib.Analysis.Normed.Field.Instances
 import Mathlib.Data.Rat.Star

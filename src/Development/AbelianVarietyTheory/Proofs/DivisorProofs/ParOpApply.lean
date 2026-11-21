@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchANe
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsoRows
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemSiegelOfIffRightAct

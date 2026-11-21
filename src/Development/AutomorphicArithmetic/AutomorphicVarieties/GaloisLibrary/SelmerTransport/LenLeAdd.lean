@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.RestrictionMemInvariantH1
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.Tactic.Monotonicity.Lemmas

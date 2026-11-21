@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MpFOne
 
 noncomputable section

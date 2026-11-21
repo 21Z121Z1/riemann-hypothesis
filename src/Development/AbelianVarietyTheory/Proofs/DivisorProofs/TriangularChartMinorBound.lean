@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNonarchimedeanW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinorsTriangularChangeInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeModelInducesRootMetric

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemTChartSource
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeImageComplPtsIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleFibreEmbeddingsCard

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleTrace.FibrePf
 import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 

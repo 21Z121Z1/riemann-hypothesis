@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.Artin.MemInvariantsCompSubtypeIff
 import GroundTheory.GlobalFields.TateThesis.NonvanishingPrimes
 set_option maxSynthPendingDepth 1

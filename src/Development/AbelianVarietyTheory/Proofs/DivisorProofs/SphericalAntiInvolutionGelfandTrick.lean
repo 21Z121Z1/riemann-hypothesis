@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInertPrimeNonsplitPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualScaledHermitianInertStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalUnitaryIsoStabilizerStatement

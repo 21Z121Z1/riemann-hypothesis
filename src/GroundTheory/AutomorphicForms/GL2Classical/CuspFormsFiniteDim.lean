@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.EigenQExpansion
 import Mathlib.NumberTheory.ModularForms.LevelOne.DimensionFormula
 import Mathlib.NumberTheory.ModularForms.NormTrace

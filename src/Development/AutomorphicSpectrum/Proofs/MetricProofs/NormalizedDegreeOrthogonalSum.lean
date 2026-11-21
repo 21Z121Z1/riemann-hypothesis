@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsOrthFull
 import Development.WeilBound.CoreStatements.AmpleLineBundles.SpanLeOfMem
 import Mathlib.Order.CompletePartialOrder

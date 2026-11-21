@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.SelmerRankBounds.EllipticityFromProductFormula
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NmHasse
 open PositivityTheory.Rg.Tf.Geo

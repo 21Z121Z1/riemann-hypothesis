@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPhaseSmoothUnitBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPhaseSmoothUnitSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithSelfIntersectionBaseChangeStatement

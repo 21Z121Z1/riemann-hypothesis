@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsWeilChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateFreeOfCard
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectivePairTOfLev

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.JointBlockShapes.MinusPart
 
 noncomputable section

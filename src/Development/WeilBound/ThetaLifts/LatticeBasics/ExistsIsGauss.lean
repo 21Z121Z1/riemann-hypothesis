@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.SchToPol
 import Development.WeilBound.ThetaLifts.LatticeBasics.DenseG
 import Development.WeilBound.ThetaLifts.LatticeBasics.DenseM

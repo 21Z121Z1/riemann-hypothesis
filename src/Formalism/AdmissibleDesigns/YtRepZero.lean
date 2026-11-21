@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.AdmissibleDesigns.ContOfInjY
 import Formalism.AdmissibleDesigns.TensSubsingleton
 import Formalism.AdmissibleDesigns.TrCMemZ1D

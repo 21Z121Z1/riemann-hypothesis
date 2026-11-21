@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ThetaSeriesTies
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.PlaceBelowAllPowers
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GoodPartMemBasisSeries

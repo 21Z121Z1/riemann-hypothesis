@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.TorusUniformisation.ChowMahlerFamilies.IsDerAt0
 import Development.WeilBound.CoreStatements.HodgeTatePoints.IsFractionRingOfIntegers
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FreeOfFg

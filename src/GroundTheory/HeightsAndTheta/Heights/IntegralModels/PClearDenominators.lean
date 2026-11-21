@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PullbackBasis
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.RatLocalAffine
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PVectorBundleRestrict

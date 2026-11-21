@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.L2.Col GlobalTheory.IndefiniteRowSideFullHecke.ConjugacyRepresentativeSystems

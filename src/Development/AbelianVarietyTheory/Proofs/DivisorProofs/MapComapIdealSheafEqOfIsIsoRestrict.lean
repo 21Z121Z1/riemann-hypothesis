@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapComapFlatStatement
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry

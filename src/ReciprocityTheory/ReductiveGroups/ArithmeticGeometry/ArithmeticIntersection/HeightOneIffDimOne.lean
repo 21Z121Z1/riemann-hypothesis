@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.LocalLengthAdditivityTorsionFree
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.ENatToNat

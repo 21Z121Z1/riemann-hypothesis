@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.FlagUnipotentLattices.CardSubmodulesAndLinearEquivBounds
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Ring.IsFormallyReal

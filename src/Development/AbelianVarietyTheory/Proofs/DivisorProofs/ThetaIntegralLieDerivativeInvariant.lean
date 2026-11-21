@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLineDerivativeDominatedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainLineDerivativeIntegralStatement
 

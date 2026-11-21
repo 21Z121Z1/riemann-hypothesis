@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.CharacterColumnKernels.CharacterColumnKernelLengthBound
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.NumberTheory.Multiplicity

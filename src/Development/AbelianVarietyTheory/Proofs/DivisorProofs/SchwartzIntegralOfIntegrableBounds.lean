@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchwartzIteratedIntegral
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic
 import Mathlib.Tactic.ENatToNat

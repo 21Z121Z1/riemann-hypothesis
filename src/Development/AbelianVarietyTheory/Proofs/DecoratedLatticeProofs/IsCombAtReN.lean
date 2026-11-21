@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLocPlOff
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ExistsFoldr
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBase

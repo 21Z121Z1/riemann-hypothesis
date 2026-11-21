@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleClassGroupCardPos
 import Formalism.LocalRingCardinality.SpanPowerMembership.SizeData₂
 import Formalism.LocalRingCardinality.SpanPowerMembership.DivXExample

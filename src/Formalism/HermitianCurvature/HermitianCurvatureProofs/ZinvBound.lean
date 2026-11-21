@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdmissibleWordLengthLe
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdmissibleOfUnitWords
 import Mathlib.Analysis.Calculus.ContDiff.RestrictScalars

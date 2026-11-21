@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreVolumeCompactBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreVolumeCompactLowerBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FibreVolumeCoverCountableStatement

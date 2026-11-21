@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsReps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalComponentRationalIdeleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FieldWeilActionDiagonalStatement

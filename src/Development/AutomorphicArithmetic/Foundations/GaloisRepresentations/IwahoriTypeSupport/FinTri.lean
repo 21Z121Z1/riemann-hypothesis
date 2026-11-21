@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IwahoriTypeSupport.TorusScalar
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockIndexMonotone
 

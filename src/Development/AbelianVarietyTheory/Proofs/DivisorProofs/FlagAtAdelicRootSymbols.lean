@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ScholzeWeinsteinB
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMonomialEqProd

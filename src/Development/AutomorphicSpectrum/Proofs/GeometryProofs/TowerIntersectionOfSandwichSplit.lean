@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatUnitOfSplitRootLinesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HasReferenceOfSandwichAllPrimesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootModelFlagHeightStatement

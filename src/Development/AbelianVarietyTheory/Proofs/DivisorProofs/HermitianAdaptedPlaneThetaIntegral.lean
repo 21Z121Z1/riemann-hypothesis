@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPlaneSeesawStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianAdaptedPlaneIntegralStatement
 

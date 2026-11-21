@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzContinuousOfSeminormBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzIntegralOfIntegrableBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzIntegralEqOfBoundsStatement

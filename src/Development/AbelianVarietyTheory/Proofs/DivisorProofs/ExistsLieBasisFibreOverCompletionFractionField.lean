@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIsLieBasisBaseChange
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 import Formalism.LocalToGlobal.ProjectiveLattices.IsCombAt

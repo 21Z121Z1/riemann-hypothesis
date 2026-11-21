@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedIntegralFiniteSupportStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularisingTranslateCombinationStatement
 import GroundTheory.AutomorphicForms.QuotientMeasure

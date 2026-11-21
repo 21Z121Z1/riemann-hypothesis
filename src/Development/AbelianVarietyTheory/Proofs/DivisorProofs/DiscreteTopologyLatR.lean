@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralBoundLtTop
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousSplitCentre
 open scoped TensorProduct NNReal ENNReal Matrix

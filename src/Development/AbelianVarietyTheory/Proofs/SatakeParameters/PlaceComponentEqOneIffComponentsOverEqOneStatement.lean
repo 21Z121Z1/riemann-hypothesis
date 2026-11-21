@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceComponentEqOneIffComponentsOverEqOne
 open NumberField IsDedekindDomain Formalism.L2.DIV
 open scoped TensorProduct

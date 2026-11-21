@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.UniformisationTriplesCompleteDVRTorsion
 import Development.WeilBound.CoreStatements.HodgeTatePoints.PquoSplit
 import Development.WeilBound.CoreStatements.HodgeTatePoints.PquoFibre

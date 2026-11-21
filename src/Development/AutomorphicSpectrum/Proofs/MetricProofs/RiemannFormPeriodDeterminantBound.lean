@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FcIndepDetNeZeroOfRank
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.RingTheory.WittVector.IsPoly

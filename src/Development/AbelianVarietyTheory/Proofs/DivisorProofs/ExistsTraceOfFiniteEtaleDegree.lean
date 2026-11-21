@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUniqueIsTransfer
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RedCompatOfFiniteEtale
 

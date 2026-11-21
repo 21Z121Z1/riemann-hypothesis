@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TopVectorCutoffEqAndVanishStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HsInnerSelfEqNormSq
 

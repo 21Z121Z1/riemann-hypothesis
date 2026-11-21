@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.IsHostFrame
 import Mathlib.Topology.Algebra.ProperAction.Basic
 import Mathlib.Topology.Connected.Separation

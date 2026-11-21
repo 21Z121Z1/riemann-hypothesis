@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.StatementTB
 import Mathlib.Analysis.InnerProductSpace.GramMatrix
 import Mathlib.Data.Finset.Functor

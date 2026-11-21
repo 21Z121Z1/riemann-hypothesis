@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.PublishedTheorems.PublishedGlobalResults.RegularAlgebraicPurity
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.IsCohomologicalRankOne
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsEqMulMultOfUnits

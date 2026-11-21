@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.WeightDictionaryLifting
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.JumpDictionary

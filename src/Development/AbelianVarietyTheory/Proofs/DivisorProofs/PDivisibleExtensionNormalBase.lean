@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SabMapCancelAndCompOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoOfGenericPolarizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPDivisibleGroupModelStatement

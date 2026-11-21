@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterExtLocal
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PThmIUnique
 set_option maxSynthPendingDepth 1

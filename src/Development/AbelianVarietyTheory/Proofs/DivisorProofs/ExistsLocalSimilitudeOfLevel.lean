@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDefiniteDatumGoodObj
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField

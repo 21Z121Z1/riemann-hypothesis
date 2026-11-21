@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.AutomorphicKernels.MoriwakiBigness.HilbertSamuelApplications.HsLinksOfUse
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualStackedExceptionalBaseStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.DualStackedExceptionalChartStatement

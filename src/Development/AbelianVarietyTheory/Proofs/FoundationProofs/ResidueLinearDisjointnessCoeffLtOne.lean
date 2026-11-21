@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.LaurentSeriesPadicExistsPthPowerCombination
 import Development.AbelianVarietyTheory.Definitions.Foundations.EeProd
 open scoped MatrixGroups NNReal

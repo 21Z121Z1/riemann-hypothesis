@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenFiniteCompDegreeMul
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits
 open GlobalTheory.IndefiniteRowSideFullHecke.GenericFiniteMaps

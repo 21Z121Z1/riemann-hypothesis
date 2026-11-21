@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalHaarMeasuresPullbackRealGroup
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsFundOne
 

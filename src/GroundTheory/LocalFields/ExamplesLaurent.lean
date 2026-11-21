@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.LocalFields.Examples
 import GroundTheory.LocalFields.ExamplesTeichmuller
 import Mathlib.RingTheory.PowerSeries.Evaluation

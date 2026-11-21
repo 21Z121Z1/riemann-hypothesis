@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GodementVectorDecayBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerVectorGaugeBoundStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PartialFourierContinuousBoundedSupportStatement

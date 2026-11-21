@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.Descent.SliceVanishing.IsClosedGzS
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.PicardGroup

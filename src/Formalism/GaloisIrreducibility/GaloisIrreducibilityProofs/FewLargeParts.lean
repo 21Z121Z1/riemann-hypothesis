@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisIrreducibility.Statement
 
 namespace Formalism.GaloisIrreducibility

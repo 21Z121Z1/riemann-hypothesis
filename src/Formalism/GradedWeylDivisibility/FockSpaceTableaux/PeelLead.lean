@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCpleadLemmas
 import Mathlib.Tactic.Monotonicity.Lemmas
 

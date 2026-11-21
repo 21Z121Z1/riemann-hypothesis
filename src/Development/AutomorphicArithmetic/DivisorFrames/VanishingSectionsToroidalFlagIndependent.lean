@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.FamArc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtensionOfArcVanishingSmoothChart
 import Development.AutomorphicArithmetic.DivisorFrames.HolomorphicPointsVanishingAtOrigin

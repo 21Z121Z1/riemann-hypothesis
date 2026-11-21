@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdFormsOfEquivariant
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ColsSharpDictionary
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TransportRationalPointsStabiliserFrameStatement

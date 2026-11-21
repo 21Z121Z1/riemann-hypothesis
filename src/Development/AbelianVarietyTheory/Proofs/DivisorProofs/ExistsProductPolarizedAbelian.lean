@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelAmpleOfProductDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KTrivialOfProductDecompositionStatement

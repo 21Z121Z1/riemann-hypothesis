@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevEAddTwo
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UnitaryGlModuleLevelSumNormSqLeStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CayleyEndomorphismsModularStatement

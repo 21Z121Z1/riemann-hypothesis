@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurAndTensorSubmodule
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScalarOfComm
 open scoped TensorProduct Classical

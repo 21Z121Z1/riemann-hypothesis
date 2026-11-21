@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryDiagonalFactorizationAlongEmbedding
 open Formalism.UG GlobalTheory.SatakeWeyl
 set_option maxHeartbeats 1000000 in

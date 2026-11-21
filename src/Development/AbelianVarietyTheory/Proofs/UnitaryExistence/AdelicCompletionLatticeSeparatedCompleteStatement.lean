@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionLatticeSeparatedComplete
 open NumberField IsDedekindDomain GlobalTheory.AdLat
 open scoped TensorProduct Matrix nonZeroDivisors

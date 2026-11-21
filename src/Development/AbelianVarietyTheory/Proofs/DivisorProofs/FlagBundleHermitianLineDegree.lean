@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsWeilChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestPointStatement

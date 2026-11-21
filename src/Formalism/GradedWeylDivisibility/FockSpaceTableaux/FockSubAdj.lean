@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas
 
 open MvPolynomial Formalism.REAL

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PlueckerCoordinates.IsPlueckerCoord
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PlueckerCoordinates.RhoExistsNeZero
 set_option maxSynthPendingDepth 1

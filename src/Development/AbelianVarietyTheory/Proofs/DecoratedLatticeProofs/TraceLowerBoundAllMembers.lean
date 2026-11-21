@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VanishingGramTermsBoundParams
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.GlobalRowsOfSizeParameters
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NodesOfSizeData

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VdivLnIdFalse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteSetResidueLogBound
 import Development.AutomorphicArithmetic.DivisorFrames.GenericIsoSectionsLog

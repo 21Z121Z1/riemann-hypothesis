@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.LocalEmbeddings.FrameCo
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFlagFrame
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram

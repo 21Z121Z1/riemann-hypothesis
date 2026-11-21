@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.M3bExpHolds
 
 namespace ReciprocityTheory.ChartRestriction.G.FD.SublatticeCoefficients

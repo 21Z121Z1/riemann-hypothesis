@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.LawsThirdToSixthOfLaws
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPrimGenerator
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValueAtFormalTorsion

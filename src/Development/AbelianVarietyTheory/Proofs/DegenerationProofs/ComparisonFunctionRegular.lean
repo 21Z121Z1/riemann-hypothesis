@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsReducedCombination
 import Development.AbelianVarietyTheory.Definitions.Degenerations.ArithBase
 import Mathlib.Data.Int.Star

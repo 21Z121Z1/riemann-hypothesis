@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechLeray
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.Tactic.Polynomial.Basic

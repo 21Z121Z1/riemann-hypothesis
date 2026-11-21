@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ResLocal
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalResConj
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalResKill

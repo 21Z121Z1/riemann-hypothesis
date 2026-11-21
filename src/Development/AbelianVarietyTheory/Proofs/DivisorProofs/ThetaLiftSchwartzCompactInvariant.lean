@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOpenSubgroupFixingSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousComponents
 open scoped TensorProduct NNReal Matrix ENNReal

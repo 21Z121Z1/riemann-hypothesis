@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictToBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisationExtendsByNewTuplesKeepingLawsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwLevPow

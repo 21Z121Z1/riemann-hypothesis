@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.KernelCard
 
 namespace GroundTheory.Arith.Abelian

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.StPuncturedExpOrder
 import Mathlib.Analysis.Complex.RemovableSingularity
 import Mathlib.RingTheory.WittVector.IsPoly

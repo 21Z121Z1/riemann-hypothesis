@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.CommutativeAlgebra.SpecializationTensorRingHomProperties
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsPsi
 import Mathlib.Algebra.Order.Ring.Star

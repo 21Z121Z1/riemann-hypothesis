@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.DropLevelBounds.Statement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.WtAddSingle
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

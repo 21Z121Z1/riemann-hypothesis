@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisIrreducibility.Statement
 import Mathlib.GroupTheory.GroupAction.Jordan
 import Mathlib.RingTheory.WittVector.IsPoly

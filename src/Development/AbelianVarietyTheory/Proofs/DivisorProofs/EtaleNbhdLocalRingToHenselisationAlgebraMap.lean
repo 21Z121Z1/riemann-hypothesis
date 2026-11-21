@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
 open IsLocalRing GlobalTheory.Henselisation
 

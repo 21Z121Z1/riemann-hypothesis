@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationExtendMvPolynomialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularFibreOfJacobianDerivationsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGenericJacobianDataIteratedStatement

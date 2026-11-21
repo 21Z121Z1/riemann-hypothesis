@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Jets.SupWOfSup
 import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK
 open BpJoin Formalism.FourierDecayAlt Formalism.MainNotions.S.ThB

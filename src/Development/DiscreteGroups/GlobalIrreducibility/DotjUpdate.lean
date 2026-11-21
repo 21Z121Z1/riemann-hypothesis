@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.KUSStable
 import Development.DiscreteGroups.GlobalIrreducibility.MulMemBall
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltGraded
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartRootsHolds
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRationalPair

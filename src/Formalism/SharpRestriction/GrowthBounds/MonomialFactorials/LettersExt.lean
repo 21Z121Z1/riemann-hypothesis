@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BoxOfFibres
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BlockBoundUniformiser
 

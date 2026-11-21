@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.FibAbs
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Etale.Weakly

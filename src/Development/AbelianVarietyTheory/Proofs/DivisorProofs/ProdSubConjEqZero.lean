@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocallyConstantApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AevalEqZeroOfDvd
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

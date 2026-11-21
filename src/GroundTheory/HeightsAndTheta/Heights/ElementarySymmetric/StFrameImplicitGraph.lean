@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StFrameJacobianGeneric
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsArea
 set_option maxSynthPendingDepth 1

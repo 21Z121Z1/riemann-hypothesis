@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WithRightAction
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.WignerMapsThreePlacesExists
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GridsAtPlaceLongCutNormaliserPositiveStatement

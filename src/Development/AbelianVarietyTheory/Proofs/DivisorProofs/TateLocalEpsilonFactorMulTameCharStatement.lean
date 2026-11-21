@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateLocalEpsilonFactorMulTameChar
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.HeckeEps
 set_option maxHeartbeats 1000000 in

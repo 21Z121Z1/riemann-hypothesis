@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.TateDefs
 import Mathlib.Algebra.Module.PID
 import Mathlib.LinearAlgebra.FreeProduct.Basic

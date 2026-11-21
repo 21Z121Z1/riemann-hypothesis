@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformFamilyComponentIndexStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConstMulReadingOfMovedSectionAtFrameStatement
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TameInvariantLevelAction

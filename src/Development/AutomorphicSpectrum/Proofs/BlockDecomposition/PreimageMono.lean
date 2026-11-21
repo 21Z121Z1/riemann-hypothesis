@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChart
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemOfLift
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedCechCohomologyFinite

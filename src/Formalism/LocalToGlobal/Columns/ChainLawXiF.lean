@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Columns.ChainLawPhiPf
 
 open NumberField IsDedekindDomain

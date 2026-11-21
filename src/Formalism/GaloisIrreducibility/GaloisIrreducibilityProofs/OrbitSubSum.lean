@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaloisIrreducibility.Statement
 import Mathlib.Tactic.ENatToNat
 import Std.Tactic.BVDecide.Normalize.Prop

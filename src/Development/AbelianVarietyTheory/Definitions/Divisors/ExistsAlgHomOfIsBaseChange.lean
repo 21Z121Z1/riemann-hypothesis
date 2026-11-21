@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.AlternatingMapSumSmulEqDetSmul
 import Mathlib.LinearAlgebra.ExteriorAlgebra.Basis
 import Mathlib.RingTheory.PiTensorProduct

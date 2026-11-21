@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsSmulPtSmulPt
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTangentOfIsLieImage

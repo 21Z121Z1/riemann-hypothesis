@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Tactic.Polynomial.Basic
 import ReciprocityTheory.GroupCohomology.ContinuousContractNth
 

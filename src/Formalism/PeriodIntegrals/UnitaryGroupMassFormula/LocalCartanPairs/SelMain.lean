@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalCartanPairs.SelCore
 import Mathlib.RingTheory.TotallySplit
 import Mathlib.Tactic.ENatToNat

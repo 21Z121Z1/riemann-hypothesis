@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteWeilRepEqLatticeIntertwinerMulCharacter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjOfNonSplit
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsEigenComponentPolynomial
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsEigFrames
 

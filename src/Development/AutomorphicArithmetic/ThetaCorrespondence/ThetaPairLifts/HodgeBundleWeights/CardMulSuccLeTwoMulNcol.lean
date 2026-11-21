@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ToKnownTheoremsOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.SemiposAtOfPositive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaBoundLengthUnit

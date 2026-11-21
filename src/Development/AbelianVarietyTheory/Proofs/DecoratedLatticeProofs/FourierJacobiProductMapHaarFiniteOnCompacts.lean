@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ProdRFJCoe
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProperTriple
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QuotientIntegralLinear

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelProductIndex.Development
 import Mathlib.Algebra.AffineMonoid.Basic
 

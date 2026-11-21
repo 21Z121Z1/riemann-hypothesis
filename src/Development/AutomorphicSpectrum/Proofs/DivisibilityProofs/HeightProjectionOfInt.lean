@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsArithVarInt
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.WZIsCInfStatement
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ToZIsArithHeightIffStatement

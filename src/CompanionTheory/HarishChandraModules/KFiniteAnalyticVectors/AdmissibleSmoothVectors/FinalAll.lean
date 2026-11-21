@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.AdmissibleOfIwasawa
 import Formalism.PeriodIntegrals.PhMeasCore
 import Formalism.RealPlaceAnalysis.Complexify

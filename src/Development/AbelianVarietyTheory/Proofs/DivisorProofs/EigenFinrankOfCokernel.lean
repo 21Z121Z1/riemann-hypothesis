@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeTateKernel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaFreeFiniteBijectiveOfSmooth
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MulEqZeroOfToCompletion

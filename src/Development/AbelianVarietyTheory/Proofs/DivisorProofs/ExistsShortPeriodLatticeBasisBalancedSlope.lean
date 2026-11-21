@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasPhiExistsExtAndUnique
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsMulEqSmulOne
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GramSpace

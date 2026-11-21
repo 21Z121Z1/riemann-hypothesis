@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.Signature
 import Mathlib.LinearAlgebra.Charpoly.BaseChange
 import Mathlib.NumberTheory.NumberField.Completion.InfinitePlace

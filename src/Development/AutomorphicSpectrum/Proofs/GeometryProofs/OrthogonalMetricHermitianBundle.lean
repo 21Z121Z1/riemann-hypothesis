@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsSubFibreSubFib
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsUnitNatCastStalk
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsConstStalk

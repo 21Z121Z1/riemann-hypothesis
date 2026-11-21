@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RankConditionOfColumnsEqualSymmetricLevel
 open Formalism.BasicNotions Formalism.MainNotions
 set_option maxHeartbeats 1000000 in

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.EtaleCohomology.EtaleTrace.GenOutChartPf
 import Std.Tactic.BVDecide.Normalize.Prop
 

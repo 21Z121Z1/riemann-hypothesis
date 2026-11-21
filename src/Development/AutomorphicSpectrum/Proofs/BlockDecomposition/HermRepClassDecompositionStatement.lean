@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermRepClassDecomposition
 set_option autoImplicit false
 noncomputable section

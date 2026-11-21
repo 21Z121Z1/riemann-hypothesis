@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCastMap
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ModelSame
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AssembleLattice

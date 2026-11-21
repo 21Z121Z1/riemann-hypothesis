@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.EllipticFibrePrincipalData
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsKroneckerCharIff
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsEtaMeanOfIsKroneckerChar

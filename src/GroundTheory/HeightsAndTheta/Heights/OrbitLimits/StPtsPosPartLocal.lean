@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsSheetSimpleNull
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsPosPartProjIndep
 set_option maxSynthPendingDepth 1

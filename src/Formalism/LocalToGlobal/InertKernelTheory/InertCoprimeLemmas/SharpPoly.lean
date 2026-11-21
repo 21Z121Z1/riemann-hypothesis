@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Mathlib.RingTheory.Nullstellensatz

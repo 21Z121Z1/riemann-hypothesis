@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.EffCartierIffForallCartAt
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.LocPrincipalSpan
 

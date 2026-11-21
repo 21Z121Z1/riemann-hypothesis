@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorWeightedBesselGapStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRegularRepBesselBigCellVectorEqBesselStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FamilyFunctionalSpanDualStatement

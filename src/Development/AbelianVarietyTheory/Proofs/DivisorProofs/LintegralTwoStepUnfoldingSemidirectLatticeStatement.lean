@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralTwoStepUnfoldingSemidirectLattice
 open MeasureTheory Filter Topology GlobalTheory.ResLine
 open scoped ENNReal

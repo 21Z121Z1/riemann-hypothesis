@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardSectionExistsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartSectionExistsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarSectionExistsStatement

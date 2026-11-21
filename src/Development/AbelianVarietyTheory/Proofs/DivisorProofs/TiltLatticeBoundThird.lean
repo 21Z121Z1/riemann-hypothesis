@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveIntoLineSpanEqSmulSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantLatticePrincipalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichDatumEigenMultiplicityStatement

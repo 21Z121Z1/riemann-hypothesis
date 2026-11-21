@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SiegelStructurePullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSiegelObjectOfDescendedData
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectOfModelsStatement

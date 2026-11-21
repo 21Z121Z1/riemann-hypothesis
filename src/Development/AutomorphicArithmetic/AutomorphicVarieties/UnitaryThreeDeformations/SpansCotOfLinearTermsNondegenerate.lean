@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.MemSatSqIffConstantCoeffAndLinearCoeffEqZero
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.SimpleRing.Principal

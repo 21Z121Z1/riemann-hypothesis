@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairFrameBlockEigenRelationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvaluationCompactSetBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockScaledNormDecayStatement

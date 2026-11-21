@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueLinearLiftUniformisedFibres
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsDerivAt0CompLinear

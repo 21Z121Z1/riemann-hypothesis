@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PartialOperatorFderivFormula
 
 open GlobalTheory.SliceSchwartz GlobalTheory.SliceOp

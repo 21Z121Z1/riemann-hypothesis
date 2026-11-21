@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousProduct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralEqOfNorms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDistributionAutomorphySourceGroupStatement

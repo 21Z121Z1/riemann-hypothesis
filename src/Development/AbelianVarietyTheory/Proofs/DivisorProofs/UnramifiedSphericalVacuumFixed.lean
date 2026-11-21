@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLatticeImageOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeInvariantVectorLocalSupport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOpenLatticeImage

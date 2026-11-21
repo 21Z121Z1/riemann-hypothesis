@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.LocalHermitianForms.LocalOrbitCounts.GConj
 import Mathlib.Algebra.Module.Lattice
 import Mathlib.Analysis.CStarAlgebra.Classes

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2.GJGlobalHaar
 
 open MeasureTheory Measure Topology Filter Set IsDedekindDomain NumberField

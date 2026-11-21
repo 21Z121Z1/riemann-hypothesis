@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ColumnConjugationMeasure
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.SepSum
 import GroundTheory.AutomorphicForms.ReductionFinite

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsEntC
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ColumnSidePropertiesTrueColumnsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.StandardKernelDataWithStandardReadersStatement

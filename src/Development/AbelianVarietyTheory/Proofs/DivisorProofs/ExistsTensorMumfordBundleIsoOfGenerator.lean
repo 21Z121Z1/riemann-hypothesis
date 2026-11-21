@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinCombPullbackTransportIsoWithValues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftCompPartialSumPair
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProjOverWeierstrass

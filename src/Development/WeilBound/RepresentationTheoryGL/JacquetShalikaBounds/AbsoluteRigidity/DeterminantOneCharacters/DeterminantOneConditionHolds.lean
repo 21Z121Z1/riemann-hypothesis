@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.RepresentationTheoryGL.JacquetShalikaBounds.AbsoluteRigidity.CauchyLoc
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.SphericalVectorMemFixedRight
 

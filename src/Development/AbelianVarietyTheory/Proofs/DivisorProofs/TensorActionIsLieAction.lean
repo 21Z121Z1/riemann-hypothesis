@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrActApply
 import Formalism.SharpRestriction.Divisibility.SchurIrreducible
 

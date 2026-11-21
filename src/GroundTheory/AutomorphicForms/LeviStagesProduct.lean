@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.LeviCartan
 import GroundTheory.AutomorphicForms.SmoothRep
 import Mathlib.RepresentationTheory.Irreducible

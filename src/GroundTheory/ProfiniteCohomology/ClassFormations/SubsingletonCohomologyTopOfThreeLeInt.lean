@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.ClassFormations.HighFinite
 import GroundTheory.ProfiniteCohomology.ClassFormations.Corestriction
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.FormationThree

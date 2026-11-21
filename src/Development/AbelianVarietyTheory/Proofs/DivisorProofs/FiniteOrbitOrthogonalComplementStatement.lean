@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteOrbitOrthogonalComplement
 open scoped Topology
 set_option maxHeartbeats 1000000 in

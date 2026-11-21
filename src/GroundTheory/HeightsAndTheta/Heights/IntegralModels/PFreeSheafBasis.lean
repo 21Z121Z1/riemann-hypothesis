@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsFreeSheafBasis
 set_option maxSynthPendingDepth 1
 

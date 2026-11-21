@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolyBall
 import Mathlib.Topology.Sheaves.Presheaf
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AssemblyBase
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ExistsLineBundleTwistMulOf
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PClaimVanish

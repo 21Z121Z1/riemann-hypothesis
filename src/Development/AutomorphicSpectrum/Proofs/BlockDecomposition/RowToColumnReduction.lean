@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChainIndependenceStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerSymmetryStatement
 

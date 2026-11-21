@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.DiscreteGroups.GlobalIrreducibility.DzStickValOne
 import Development.DiscreteGroups.GlobalIrreducibility.DzStickDigits
 import Mathlib.NumberTheory.JacobiSum.Basic

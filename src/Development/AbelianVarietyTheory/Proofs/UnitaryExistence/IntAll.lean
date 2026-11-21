@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntFrExtOfGoodLevelStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntegralFrameChangeIntegralInvertibleMatrixStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsCombAtGMulVec

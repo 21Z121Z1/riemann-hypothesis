@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IrreducibleCharacterSeries.FrobeniusSumFormula
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetModuleAll
 import Mathlib.Algebra.Module.StablyFree.Basic

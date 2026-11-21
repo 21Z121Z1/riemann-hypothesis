@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.AdditiveDefs
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

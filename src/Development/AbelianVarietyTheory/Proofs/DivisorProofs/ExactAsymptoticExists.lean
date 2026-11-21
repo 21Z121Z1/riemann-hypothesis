@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowerSumDecompositionHomogeneousStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LimitsOfShiftFunctionalsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KappaIndependentOfEmbeddingStatement

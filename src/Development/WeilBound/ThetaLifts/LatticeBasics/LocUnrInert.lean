@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnr
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrInertA
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocUnrInertN

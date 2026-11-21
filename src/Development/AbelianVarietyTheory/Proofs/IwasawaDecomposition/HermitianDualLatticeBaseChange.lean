@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.QuotientMetricDivisors.Statement
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
 import Mathlib.Tactic.ENatToNat

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerArchimedeanIntegralUnfoldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanEigenvectorIdeleMemStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanParabolicFixedDecompositionStatement

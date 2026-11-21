@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishingEverywhereOfRegularAlteration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyArithDimension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackCoverGenericPoint

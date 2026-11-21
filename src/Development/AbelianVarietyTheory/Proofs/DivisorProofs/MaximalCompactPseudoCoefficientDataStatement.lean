@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactPseudoCoefficientData
 open GlobalTheory.PsCo.Pc1
 set_option maxHeartbeats 1000000 in

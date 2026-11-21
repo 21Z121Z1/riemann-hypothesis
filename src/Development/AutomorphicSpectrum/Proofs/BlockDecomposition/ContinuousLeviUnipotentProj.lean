@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUMOfMem
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SmoothPsiMinus
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMirProj

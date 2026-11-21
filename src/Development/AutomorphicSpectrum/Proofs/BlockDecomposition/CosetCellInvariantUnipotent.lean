@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCell
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinRationalPoints
 import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds

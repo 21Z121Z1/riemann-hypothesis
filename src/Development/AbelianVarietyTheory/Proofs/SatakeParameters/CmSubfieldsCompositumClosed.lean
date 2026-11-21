@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsCMFieldOfForallIsConj
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 

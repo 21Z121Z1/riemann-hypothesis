@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMulEqMulDiagonal
 import Mathlib.Algebra.Module.Lattice
 import Mathlib.RingTheory.Henselian

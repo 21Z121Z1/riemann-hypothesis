@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelOperatorsAtPrimeOffLevelDatum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DcOpCommOfCommute
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilGramSignature

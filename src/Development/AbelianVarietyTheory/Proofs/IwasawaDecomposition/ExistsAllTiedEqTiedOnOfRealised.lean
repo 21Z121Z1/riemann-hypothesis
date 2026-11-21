@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumNormEmb
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MeasureLeOfCover
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TypAddOfDiscreteSeries

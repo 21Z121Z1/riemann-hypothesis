@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagFramesTriangularChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularChangeSpansFlag
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValRSpMapFromSpecStalk

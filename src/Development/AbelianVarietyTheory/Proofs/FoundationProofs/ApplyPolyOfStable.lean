@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFROfIsLamF
 import Development.AbelianVarietyTheory.Definitions.Foundations.LiftApplyOfMemAdmissibleSubalgebra
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRestrict

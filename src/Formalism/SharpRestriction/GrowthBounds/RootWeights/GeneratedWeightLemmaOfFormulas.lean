@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.IsotypicProjectionCommutesOperators
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.V2repResIsGLRep
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.MonomialsAreWeightVectors

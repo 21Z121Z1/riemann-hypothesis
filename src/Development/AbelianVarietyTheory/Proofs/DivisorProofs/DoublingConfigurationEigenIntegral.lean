@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAHaarIntegralFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAHaarUnfoldingAltBis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAHaarStabilizerStatement

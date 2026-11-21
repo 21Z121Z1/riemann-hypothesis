@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitSumExpPotentialUniformBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PoinConvBdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNearOneMatrixNormBoundsStatement

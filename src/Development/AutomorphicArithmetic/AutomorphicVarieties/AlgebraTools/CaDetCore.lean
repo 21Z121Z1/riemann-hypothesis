@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaDetLocus
 

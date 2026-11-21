@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftsAlongOfPrincipal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftsAlongOfSmoothInj
 

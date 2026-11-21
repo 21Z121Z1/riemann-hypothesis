@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.AutomorphicForms.GL2Classical.ExistsIntOfMemIntegralFiniteAdeles
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Archimedean
 import Mathlib.Data.Rat.Star

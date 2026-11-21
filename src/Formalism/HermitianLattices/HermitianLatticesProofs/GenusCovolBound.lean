@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HermitianLattices.GenusCovolBound
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusScale
 import Formalism.HermitianLattices.HermitianLatticesProofs.LocDual

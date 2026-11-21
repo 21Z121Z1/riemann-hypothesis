@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedLimitGauge.OrbitPushCut
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Tactic.Polynomial.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IterULevelValStable
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ZsNormCharLeOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EisensteinTameWeightSecondEqCharacterSumStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
 import Mathlib.Analysis.SpecialFunctions.JapaneseBracket
 import Mathlib.Data.Nat.Choose.Multinomial

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdicIntegersCompact.IsCompactAdicCompletionIntegers
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

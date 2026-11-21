@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FiniteTypeOverIntegersModel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ValuativeLiftExistsUnique
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueSection

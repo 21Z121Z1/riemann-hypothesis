@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFunctionRationalTranslateMem
 open Formalism.BasicNotions Formalism.IndefR.Links IsDedekindDomain NumberField Polynomial
 open scoped Pointwise nonZeroDivisors

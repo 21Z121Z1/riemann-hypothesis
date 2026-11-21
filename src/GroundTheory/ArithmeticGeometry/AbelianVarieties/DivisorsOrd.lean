@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DivisorsNorm
 import Mathlib.Data.Int.Star
 

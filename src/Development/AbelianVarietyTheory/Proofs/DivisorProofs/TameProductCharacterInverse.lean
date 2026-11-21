@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelLiftConditions
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TameInvariantLevelAction

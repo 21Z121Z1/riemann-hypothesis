@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.JEqOrbInt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsKFinNeZeroOfCwCont
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TorusNormaliserBessel

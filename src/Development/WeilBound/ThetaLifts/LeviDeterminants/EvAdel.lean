@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ModelChangeOf
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MapEqOfSmul
 

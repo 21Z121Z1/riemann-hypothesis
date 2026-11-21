@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.CoeffFSumDerivEqFderiv
 import Mathlib.Analysis.CStarAlgebra.ContinuousMap
 import Mathlib.Analysis.Fourier.AddCircleMulti

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockUniOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticModelFlagHeightFifth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsGradedRankOne

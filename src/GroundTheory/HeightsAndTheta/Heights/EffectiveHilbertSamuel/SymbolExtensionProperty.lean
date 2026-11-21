@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ProjTopology
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SectionL2NormSq
 set_option maxSynthPendingDepth 1

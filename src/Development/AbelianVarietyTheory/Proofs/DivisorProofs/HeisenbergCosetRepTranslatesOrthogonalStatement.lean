@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergCosetRepTranslatesOrthogonal
 
 open MeasureTheory Matrix ValuativeRel

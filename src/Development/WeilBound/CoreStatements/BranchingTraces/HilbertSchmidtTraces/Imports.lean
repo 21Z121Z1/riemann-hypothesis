@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.IsFdAbs
 import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.HsTrace
 import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ReflEx

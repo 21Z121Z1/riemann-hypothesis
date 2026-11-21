@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaActionExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondConfigurationTripleCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankDeficientSchwartzAverageStatement

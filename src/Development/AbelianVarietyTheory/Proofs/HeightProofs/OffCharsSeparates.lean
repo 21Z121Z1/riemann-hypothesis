@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ThetaContinuous
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.OmegaUpDownForms
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAlgebraMapOfSigRFixed

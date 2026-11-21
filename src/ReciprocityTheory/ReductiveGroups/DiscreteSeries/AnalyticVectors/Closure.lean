@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Analytic
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.ClosureK
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.PolarJmConjTranspose

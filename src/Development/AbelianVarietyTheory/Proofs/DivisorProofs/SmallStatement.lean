@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.LiftFrameEmbeddingBase
 import Formalism.SharpRestriction.GlobalSchurBounds.MainSup
 import Development.AutomorphicArithmetic.PrimeDiscriminants.ExcSet

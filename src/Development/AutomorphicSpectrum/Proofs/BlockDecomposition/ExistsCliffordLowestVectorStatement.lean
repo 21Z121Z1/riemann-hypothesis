@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsCliffordLowestVector
 open Matrix Finset
 open scoped InnerProductSpace

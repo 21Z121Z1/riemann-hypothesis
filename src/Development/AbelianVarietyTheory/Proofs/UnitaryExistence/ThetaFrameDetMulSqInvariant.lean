@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsSecGeneratorFibre
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.UniformizationPeriodLatticeChangeStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.RatioSqEqDetJAut

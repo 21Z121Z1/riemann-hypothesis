@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.StickelbergerTheorem.StickelbergerAt
 
 open NumberField IsDedekindDomain UpperTheory.V.Kum UpperTheory.V.Stick

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp
 import Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily
 import Mathlib.Tactic.Monotonicity.Lemmas

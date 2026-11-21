@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormDwLeSobNorm
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

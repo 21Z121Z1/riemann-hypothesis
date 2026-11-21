@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsHolomorphicUniformisationPowerThetaKeyDatu
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsPowGrpBaseChange
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SmoothIsMultiplicative

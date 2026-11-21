@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.ResolutionOfSingularities.Foundations.Schemes.AffineOpens
 import Mathlib.AlgebraicGeometry.IdealSheaf.Functorial
 import Mathlib.AlgebraicGeometry.Modules.Sheaf

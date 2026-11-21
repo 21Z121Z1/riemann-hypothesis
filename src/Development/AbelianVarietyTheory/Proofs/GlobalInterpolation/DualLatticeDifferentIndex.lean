@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TraceInfAlgebraMap
 

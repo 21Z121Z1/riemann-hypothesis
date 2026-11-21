@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.MemRangeOfOneTmulMem
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

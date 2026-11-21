@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqOneOfLowerParab
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousInvOfPowEqOne
 

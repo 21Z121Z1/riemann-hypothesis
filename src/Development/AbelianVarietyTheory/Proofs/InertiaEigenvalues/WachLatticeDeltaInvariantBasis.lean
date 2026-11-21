@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RingsCyclotomic
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NBasisLoc
 import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices

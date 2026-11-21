@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsPolAVSectionInverseImage
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TorsionPairingValuesOfFamiliesValues
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.FamiliesValuesCorrespond

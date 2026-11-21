@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFree
 import Formalism.LocalToGlobal.ProjectiveLattices.PtFree
 import Mathlib.Algebra.Order.Star.Real

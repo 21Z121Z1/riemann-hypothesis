@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DecompAtZero
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.IsTypeAtCentral
 import Formalism.LocalToGlobal.IndefiniteReal.MultLemmas

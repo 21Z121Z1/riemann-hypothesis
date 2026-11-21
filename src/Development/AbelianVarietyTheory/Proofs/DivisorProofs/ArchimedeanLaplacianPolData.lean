@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLineCorrespondsToLineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneParameterSkewHermitianStatement

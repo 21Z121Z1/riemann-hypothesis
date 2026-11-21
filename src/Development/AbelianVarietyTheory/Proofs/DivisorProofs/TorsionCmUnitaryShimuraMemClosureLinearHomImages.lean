@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLinearHomProd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmTorsionMemClosureGenerators
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomKillsTorsionOfComplexPointsOneEmbeddingStatement

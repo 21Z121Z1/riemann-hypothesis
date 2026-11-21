@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OntoFormLaws
 open CrystallineSemistableComparison.Onto
 set_option maxHeartbeats 1000000 in

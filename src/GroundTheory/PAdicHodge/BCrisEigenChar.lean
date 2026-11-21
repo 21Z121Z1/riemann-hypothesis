@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.PAdicHodge.BCrisEigenFrob
 import GroundTheory.PAdicHodge.UnramifiedClosure
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaClosureComponentTrdegGeStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothGenericFibreOfIndependentAndTangentBoundStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SmoothGenericFibreOfAffineOpensStatement

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TautologicalFlagUniversalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsoInclLastStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackFlagSectionsFrame

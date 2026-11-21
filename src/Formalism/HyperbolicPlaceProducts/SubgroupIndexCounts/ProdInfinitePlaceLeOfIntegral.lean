@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.HyperbolicPlaceProducts.DetIndexProductHyperbolicInequality
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

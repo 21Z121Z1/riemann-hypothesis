@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsNormalFormLattice
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LatticeNormalFormCoordinates
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnfoldingBoundedIntegral

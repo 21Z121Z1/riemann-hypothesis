@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.OneAddLeLminorSq
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajorantEqSumNormSqOrthonormalFrame

@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeylUnipotentIwasawaHeightStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticeImageLowerBlocksStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarImageGLScalingStatement

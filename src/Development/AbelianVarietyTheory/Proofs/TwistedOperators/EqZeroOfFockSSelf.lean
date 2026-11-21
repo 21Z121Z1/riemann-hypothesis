@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MeasurePreservingMulRight
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelPlusSubgroup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChiGridHighestWeightEqCompactChainParameter

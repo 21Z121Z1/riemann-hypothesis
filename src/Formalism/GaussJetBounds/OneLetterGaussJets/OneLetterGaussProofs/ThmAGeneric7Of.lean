@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementJ
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementF
 import Formalism.GaussJetBounds.GaussJetProofs.Generic

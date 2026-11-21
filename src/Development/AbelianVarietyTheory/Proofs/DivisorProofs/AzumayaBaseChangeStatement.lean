@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AzumayaBaseChange
 open scoped TensorProduct
 open Function

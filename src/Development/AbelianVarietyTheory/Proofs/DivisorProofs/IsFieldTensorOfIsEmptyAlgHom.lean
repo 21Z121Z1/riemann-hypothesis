@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsFieldAdicCompletionTensorOfInert
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Mathlib.Algebra.Polynomial.Degree.IsMonicOfDegree

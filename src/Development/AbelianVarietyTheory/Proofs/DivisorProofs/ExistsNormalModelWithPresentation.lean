@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLatLie
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkChainPeriodicRelation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamLatticeTangentCombination

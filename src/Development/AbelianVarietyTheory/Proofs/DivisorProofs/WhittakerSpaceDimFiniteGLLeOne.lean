@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsColReduced
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable

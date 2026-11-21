@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FlipIdxNeZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IdemSumMulOfSubset
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.OmVacuumEqSplitFacSmulSum

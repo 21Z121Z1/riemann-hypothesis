@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonemptyRayDataOfNeZero
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Normed.Group.Tannery

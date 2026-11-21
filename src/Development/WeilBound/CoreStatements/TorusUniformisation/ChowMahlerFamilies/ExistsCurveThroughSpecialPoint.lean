@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GenericCentreSpecializes
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsCurveOfFunctionField
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueValuationRingLift

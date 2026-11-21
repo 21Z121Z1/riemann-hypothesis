@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import ReciprocityTheory.SemistableReduction.AlgAll
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.AlgebraicIndependentResidueIffGauss
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

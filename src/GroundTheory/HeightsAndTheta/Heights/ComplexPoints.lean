@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.ComplexProjective
 import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
 set_option maxSynthPendingDepth 1

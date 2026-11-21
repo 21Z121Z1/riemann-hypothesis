@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MhBase
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfInd
 import Mathlib.RingTheory.PiTensorProduct

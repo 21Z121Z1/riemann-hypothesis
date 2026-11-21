@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import GroundTheory.ProfiniteCohomology.PoitouTate.RealLocal
 import GroundTheory.ProfiniteCohomology.PoitouTate.RealCup
 import GroundTheory.ProfiniteCohomology.PoitouTate.PoitouTateNineTermGs

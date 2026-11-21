@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsNormalisedKeyInvariantRuleCharZeroStatement
 import Mathlib.FieldTheory.IsAlgClosed.Classification
 import Mathlib.RingTheory.Localization.Cardinality

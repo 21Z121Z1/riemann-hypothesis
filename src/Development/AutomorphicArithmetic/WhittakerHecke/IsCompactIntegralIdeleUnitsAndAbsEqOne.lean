@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.ConjInv
 import GroundTheory.GlobalFields.TateThesis.ConductorIdeal
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter

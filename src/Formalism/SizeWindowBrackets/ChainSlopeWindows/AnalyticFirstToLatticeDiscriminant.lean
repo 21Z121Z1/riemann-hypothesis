@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.SlopesFromSizeAndCount
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.ChainLatticeSizesModelEventually
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.PrimeCongruenceConditions

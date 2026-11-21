@@ -1,3 +1,4 @@
+import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsIsoFromNormalization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyHomologyEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MonoPullbackMapOfFlatStatement
