@@ -53,7 +53,7 @@ theorem exists_finite_torusExtension_act : ∀ (O : Type) [CommRing O] (K Ω : T
   have hu₀ : ∀ a, T₀.i ≫ i₀.act a ≫ T₀.q = toUnit _ ≫ η[T₀.B] := fun a => by
     have := i₀.hom a
     rw [GlobalTheory.SemiRigid.torus_const T₀.X T₀.B (T₀.i ≫ i₀.act a ≫ T₀.q)]
-    simp [IsMonHom.one_hom_assoc, IsMonHom.one_hom]
+    simp [IsMonHom.one_hom]
   obtain ⟨j₀, hj₀⟩ := hk₀.exists_oAct i₀ hu₀
 
   let f := spMap (algebraMap F Ω)
@@ -78,10 +78,10 @@ theorem exists_finite_torusExtension_act : ∀ (O : Type) [CommRing O] (K Ω : T
   have := hk.1
   have c₁ : u'' ≫ q' = toUnit _ ≫ η[A] := by
     rw [GlobalTheory.SemiRigid.torus_const T₀.X A (u'' ≫ q')]
-    simp [IsMonHom.one_hom_assoc, IsMonHom.one_hom]
+    simp [IsMonHom.one_hom]
   have c₂ : u' ≫ q'' = toUnit _ ≫ η[(Over.pullback f).obj T₀.B] := by
     rw [GlobalTheory.SemiRigid.torus_const X _ (u' ≫ q'')]
-    simp [IsMonHom.one_hom_assoc, IsMonHom.one_hom]
+    simp [IsMonHom.one_hom]
   obtain ⟨β, hβ, hβq⟩ := flatQuotient_iso_of_same_kernel _ G' _ A _ _ q'' u'' q' u' hk''.1 inferInstance hk''.2.1
     hk''.2.2.1 hk''.2.2.2.1 hk''.2.2.2.2 hk.1 hu hk.2.1 hk.2.2.1 hk.2.2.2.1 hk.2.2.2.2 c₂ c₁
   haveI := hβ

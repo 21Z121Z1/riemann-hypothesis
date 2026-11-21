@@ -29,7 +29,7 @@ theorem special_fibre_generators : ∀ (p : ℕ) [Fact p.Prime] (Λ : Type) [Com
     change Φ (algebraMap ℤ_[p] Λ z) = algebraMap k (Matrix (Fin h) (Fin h) k) (ψ z)
     rw [hΦ, hρ, Algebra.algebraMap_eq_smul_one]
     ext i j
-    by_cases hij : i = j <;> simp [ψ, hij, Matrix.one_apply]
+    by_cases hij : i = j <;> simp [ψ, hij]
   have hscal' : ∀ z (l : Λ), Φ (z • l) = ψ z • Φ l := by
     intro z l
     have : Φ (algebraMap ℤ_[p] Λ z) = algebraMap k (Matrix (Fin h) (Fin h) k) (ψ z) :=

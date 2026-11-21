@@ -174,7 +174,7 @@ theorem gInt2 (e : ℝ) (he0 : 0 < e) (he1 : e < 1 / 2) :
     refine IsLocallyConstant.continuous ?_
     rw [IsLocallyConstant.iff_exists_open]
     intro g
-    refine ⟨{x | g⁻¹ * x ∈ U}, U.isOpen.preimage (continuous_const.mul continuous_id), by simp [U.one_mem],
+    refine ⟨{x | g⁻¹ * x ∈ U}, U.isOpen.preimage (continuous_const.mul continuous_id), by simp,
       fun x hx => ?_⟩
     have := hU g _ hx
     simpa using this
@@ -426,7 +426,7 @@ theorem temperedBoundGL3_of_lift : ∀ (F : Type) [Field F] [ValuativeRel F] [To
   · refine IsLocallyConstant.continuous ?_
     rw [IsLocallyConstant.iff_exists_open]
     intro g
-    refine ⟨{x | g⁻¹ * x ∈ U}, U.isOpen.preimage (continuous_const.mul continuous_id), by simp [U.one_mem],
+    refine ⟨{x | g⁻¹ * x ∈ U}, U.isOpen.preimage (continuous_const.mul continuous_id), by simp,
       fun x hx => ?_⟩
     have := hU g _ hx
     simpa using this

@@ -35,7 +35,7 @@ theorem form_ne_zero_of_isIrr : ∀ {K : Type} [Field K] [CharZero K] {Γ : Type
     rw [h2, ← Matrix.mul_assoc, ← Matrix.mul_assoc, hu, Matrix.one_mul]
   let Wk : Submodule K (Fin 2 → K) := LinearMap.ker (Matrix.mulVecLin (ofCoord y))
   have hmem : ∀ x, x ∈ Wk ↔ ofCoord y *ᵥ x = 0 := fun x => by
-    simp [Wk, LinearMap.mem_ker, Matrix.mulVecLin_apply]
+    simp [Wk, LinearMap.mem_ker]
   have hinv : IsInv ρ Wk := by
     intro g x hx
     rw [hmem] at hx ⊢

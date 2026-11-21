@@ -235,7 +235,7 @@ theorem exists_period {n : ℕ} {E : Type} [AddCommGroup E] (φ : (Fin n → k) 
   obtain ⟨t, ht⟩ := hK.isCompact.elim_finite_subcover
     (fun p : Fin n → k => {v : Fin n → k | Multiplicative.ofAdd (v - p) ∈ polyBall (k := k) n (sp p)})
     (fun p => isOpen_shiftBall n (sp p) p)
-    (fun v _ => Set.mem_iUnion.2 ⟨v, by simp [sub_self, one_mem]⟩)
+    (fun v _ => Set.mem_iUnion.2 ⟨v, by simp [one_mem]⟩)
   have hcom : ∀ t : Finset (Fin n → k), ∃ s : kˣ, ∀ p ∈ t, polyBall (k := k) n s ≤ polyBall n (sp p) := by
     intro t
     classical
@@ -440,7 +440,7 @@ theorem gp_uM (d : ℕ) (x : Fin (d + 0) → k) (h : uM (d + 0) x ∈ MirabolicP
         simpa using (eGP d 0).injective e
       · rintro rfl; rfl
     have hl : eGP d 0 ⟨false, j⟩ ≠ Fin.last (d + 0) := blockIndex_false_ne_last d 0 j
-    simp [colMat, hl, one_apply, hinj]
+    simp [colMat, one_apply, hinj]
     exact fun h => absurd h hl
   · haveI := subsingleton_mir_zero (k := k)
     exact Subsingleton.elim _ _

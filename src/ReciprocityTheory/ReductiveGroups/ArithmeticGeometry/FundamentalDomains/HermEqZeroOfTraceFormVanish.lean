@@ -43,7 +43,7 @@ lemma herm_eq_zero_of_trace_form_vanish {r : ℕ} (ξ0 : E) (hξ0 : ξ0 ≠ 0) (
   have hw : ∀ w : E, Algebra.trace ℚ E (w * (-ξ0 * herm G x y)) = 0 := by
     intro w
     rw [← hinv w, ← (NumberField.integralBasis E).sum_repr (cc w)]
-    simp only [cc, map_sum, map_rat_smul, Finset.sum_mul, smul_mul_assoc, LinearMap.map_smul]
+    simp only [cc, map_sum, map_rat_smul, Finset.sum_mul, smul_mul_assoc]
     refine Finset.sum_eq_zero fun i _ => ?_
     rw [NumberField.integralBasis_apply]
     have := hb ((NumberField.RingOfIntegers.basis E) i)

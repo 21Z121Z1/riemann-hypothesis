@@ -147,7 +147,7 @@ theorem mv_exact : ∀ (R : Type) [CommRing R] (A A' : Type) [CommRing A] [CommR
     rw [← Spec.map_comp, ← Spec.map_comp]
     congr 1
     ext a
-    simp [Localization.awayMap, IsLocalization.Away.map, IsLocalization.map_eq]
+    simp [Localization.awayMap, IsLocalization.Away.map]
   have w : biprod.lift ((free R).map (yoneda.map (Spec.map (CommRingCat.ofHom (Localization.awayMap (algebraMap A A') f))))) (-(free R).map (yoneda.map (Spec.map (CommRingCat.ofHom (algebraMap A' (Localization.Away (algebraMap A A' f))))))) ≫ biprod.desc ((free R).map (yoneda.map (Spec.map (CommRingCat.ofHom (algebraMap A (Localization.Away f)))))) ((free R).map (yoneda.map (Spec.map (CommRingCat.ofHom (algebraMap A A'))))) = 0 := by
     rw [biprod.lift_desc, Preadditive.neg_comp, ← Functor.map_comp, ← Functor.map_comp, ← Functor.map_comp,
       ← Functor.map_comp, hsq, add_neg_cancel]

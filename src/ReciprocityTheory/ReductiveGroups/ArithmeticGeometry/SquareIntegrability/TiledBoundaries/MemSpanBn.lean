@@ -108,7 +108,7 @@ theorem stepPos : StepPos := by
         show 0 < X.ptN2 q F (-g +ᵥ v) ↔ 0 < X.ptN2 q F v
         rw [per_span X n (X.ptN2 q F) hper (-g) v]
       have hfd := (fd_fund X n).measure_eq_tsum U
-      simp only [hinv, tsum_const] at hfd
+      simp only [hinv] at hfd
       rw [pos_iff_ne_zero]
       intro h0
       rw [h0] at hfd

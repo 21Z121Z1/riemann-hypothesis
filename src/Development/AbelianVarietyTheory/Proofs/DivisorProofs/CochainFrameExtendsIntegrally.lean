@@ -77,7 +77,7 @@ theorem exists_bcTan_eq_of_isCochFrame : GlobalTheory.Published.SemiAbelianHomEx
   obtain ⟨e₀, he₀⟩ := (lieCoord_bijective_add_smul (𝓞 K) r).1.2 (Pi.single i 1)
   have hb := left_comp_bcMap (algebraMap (𝓞 K) K) e₀ e fun j => by
     rw [he, he₀]
-    by_cases h : j = i <;> simp [Pi.single_apply, h]
+    by_cases h : j = i <;> simp [h]
   refine ⟨tanOf (isTan_of_lieG t xO (lieMap U e₀)), tan_ext ?_⟩
   rw [left_bcTan, left_tanOf, hi, ← hψ₁, ← Category.assoc u.left, hU', Category.assoc, ← Category.assoc e.1.left, hb]
   simp [lieMap]

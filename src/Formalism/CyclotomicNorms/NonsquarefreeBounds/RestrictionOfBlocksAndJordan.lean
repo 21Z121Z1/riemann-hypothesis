@@ -362,7 +362,7 @@ theorem restriction_of_blocks_and_jordan (hB : BlocksCycle) (hJ : JordanTransiti
       intro c c' j j' hc' h
       by_contra hjj
       have h2 := congrArg (fun v => e.repr v j') h
-      simp [Finsupp.single_apply, hjj, Ne.symm hjj] at h2
+      simp [Ne.symm hjj] at h2
       exact hc' (by first | exact h2.symm | exact h2)
     have hline : ∀ (g : G) (i : Fin N), ∃ j, ∃ c : k, c ≠ 0 ∧ ρ g (e i) = c • e j := by
       intro g i

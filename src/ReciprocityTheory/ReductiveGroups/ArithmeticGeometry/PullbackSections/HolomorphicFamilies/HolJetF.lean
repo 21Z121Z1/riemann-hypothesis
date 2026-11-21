@@ -65,7 +65,7 @@ theorem aeval_tan (ℓ : ι) (q : MvPolynomial ι K) :
     · have h' : ℓ ≠ i := Ne.symm h
       have hc : MvPolynomial.coeff (Finsupp.single ℓ 1) (p * MvPolynomial.X i) = 0 := by
         rw [MvPolynomial.coeff_mul_X']
-        simp [Finsupp.single_apply, h', h]
+        simp [h]
       rw [hc]
       ext <;> simp [h]
 

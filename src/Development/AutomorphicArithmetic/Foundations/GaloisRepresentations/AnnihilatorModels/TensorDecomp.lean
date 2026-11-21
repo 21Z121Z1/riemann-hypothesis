@@ -21,7 +21,7 @@ private lemma UpperTheory.Gal.crystallineComparison.Mod.tensor_decomp (p : ℕ) 
       obtain ⟨z', hz'⟩ := Ideal.mem_span_singleton'.mp h
       refine ⟨(PadicInt.zmodRepr z : ℤ), z', ?_⟩
       have : z = (PadicInt.zmodRepr z : ℤ_[p]) + z' * p := by rw [hz']; ring
-      simp only [zsmul_eq_mul, mul_one]
+      simp only [zsmul_eq_mul]
       push_cast
       rw [mul_comm (p : ℤ_[p])]
       first | (rw [mul_one]; exact this) | simpa using this

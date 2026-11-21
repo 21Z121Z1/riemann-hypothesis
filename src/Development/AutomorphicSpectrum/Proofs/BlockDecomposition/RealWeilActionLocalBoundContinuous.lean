@@ -25,7 +25,7 @@ def monoX (n : ℤ) (x : ℂ) : ℂ :=
 
 theorem norm_monoX (n : ℤ) (x : ℂ) : ‖monoX n x‖ = ‖x‖ ^ n.natAbs := by
   unfold monoX
-  split_ifs <;> simp [norm_pow, Complex.norm_conj]
+  split_ifs <;> simp [norm_pow]
 
 theorem piRc_eq (n : ℤ) (t : ℝ) (g : GL (Fin 2) ℝ) (h : 0 < (g.val).det) (x : ℂ) :
     piRc (chC n (Complex.I * t)) g (PhiInf n) x = preG n t g * monoX n x *

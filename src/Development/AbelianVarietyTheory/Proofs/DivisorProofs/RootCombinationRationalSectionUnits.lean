@@ -61,7 +61,7 @@ theorem GlobalTheory.FlatRat.exists_unit_ratSec_comb_root : ∀ (D : D7) (O : Se
     ring
   · intro i x hx
     have H := hu i x hx
-    simp only [pow_one, one_pow] at H
+    simp only [pow_one] at H
     have hp0 : (∏ k, genAt (Dv k) (W.V.π x)) ≠ 0 := (hgen (W.V.π x)).ne_zero
     have e : ((Units.mk0 (W.V.φ fl) hφ0 * r i : W.V.G.functionFieldˣ) : W.V.G.functionField) =
         W.V.φ (fl * (∏ k, genAt (Dv k) (W.V.π x))⁻¹) * (W.V.φ (∏ k, genAt (Dv k) (W.V.π x)) * r i) := by

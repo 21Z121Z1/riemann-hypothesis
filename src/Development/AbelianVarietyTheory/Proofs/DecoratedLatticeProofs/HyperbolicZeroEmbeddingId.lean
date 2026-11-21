@@ -34,7 +34,7 @@ theorem mem_flagN_hypZero (V : HSp D) {n : GA D V} (hn : n ∈ flagN (hypZero V)
         funext k
         by_cases hk : k = j
         · subst hk; simp [Formalism.L2.Theta.ratV]
-        · simp [Formalism.L2.Theta.ratV, Pi.single_apply, hk]
+        · simp [Formalism.L2.Theta.ratV, hk]
       rw [hr] at ha
       rw [ha]
       funext k

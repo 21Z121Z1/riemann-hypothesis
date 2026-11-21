@@ -20,7 +20,7 @@ theorem glue_glue {A B C : Type} [CommRing A] [CommRing B] [CommRing C] {m : Typ
   by_cases h : r = s
   · subst h
     simp only [GlobalTheory.IndefiniteRowSideFullHecke.AdelicUnitaryGroups.glue, Matrix.add_apply, Matrix.smul_apply, Matrix.map_apply, smul_eq_mul,
-      Matrix.one_apply_eq, mul_one, map_add, map_mul, map_sub, NonUnitalRingHom.comp_apply]
+      Matrix.one_apply_eq, mul_one, map_add, map_sub, NonUnitalRingHom.comp_apply]
     ring
   · simp [GlobalTheory.IndefiniteRowSideFullHecke.AdelicUnitaryGroups.glue, h]
 
@@ -75,7 +75,7 @@ theorem emb_mulVec (v : HeightOneSpectrum (𝓞 F)) (x : GLoc σ J v) (y : Fin n
     simp only [Matrix.mulVec, dotProduct, Matrix.map_apply, map_sum, L, locInc_mul]
   funext k
   simp only [GlobalTheory.IndefiniteRowSideFullHecke.AdelicUnitaryGroups.glue, Matrix.add_mulVec, Matrix.one_mulVec, Pi.add_apply,
-    Pi.smul_apply, smul_eq_mul, e2, Matrix.sub_mulVec, Pi.sub_apply, map_sub]
+    e2, Matrix.sub_mulVec, Pi.sub_apply, map_sub]
   have e3 : L 1 * y k = L (compFin F E v (y k)) := by rw [locInc_mul, one_mul]
   have e4 : (((1 - L 1) • (1 : Matrix (Fin n) (Fin n) (AF F ⊗[F] E))) *ᵥ y) k = (1 - L 1) * y k := by
     simp [Matrix.mulVec, dotProduct, Matrix.smul_apply, Matrix.one_apply, ite_mul]

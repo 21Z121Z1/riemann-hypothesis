@@ -44,7 +44,7 @@ theorem level_product_of_constant_weights (k r : ℕ) (GG : ℝ) : ∀ (n : ℕ)
     intro d b
     rw [List.ofFn_succ, Fin.prod_univ_succ]
     simp only [C.nAux]
-    simp [ih, e, e2, Fin.val_succ]
+    simp [ih, e, Fin.val_succ]
     all_goals (by_cases hb : b = r + 1 <;> simp [hb])
     all_goals (left; congr 1; first | ring | omega)
     all_goals clear ih e e2

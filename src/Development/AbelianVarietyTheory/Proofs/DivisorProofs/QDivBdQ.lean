@@ -27,8 +27,8 @@ theorem qDiv_bdQ (P : PolDat s Φ hm h0) (k : s.Comp) : qDiv (bdQ P k) = 1 ⊗�
   rw [bdQ, qDiv_comb, Fintype.sum_option]
   simp only [Option.elim]
   rw [PolDat.qDiv_ab]
-  simp only [e, qL, PolDat.dirQ, TensorProduct.smul_tmul', smul_eq_mul, mul_one, neg_smul, one_smul, neg_sub, neg_neg,
-    TensorProduct.neg_tmul, Finset.sum_neg_distrib, sub_neg_eq_add]
+  simp only [e, qL, PolDat.dirQ, TensorProduct.smul_tmul', smul_eq_mul, mul_one, neg_smul, one_smul, neg_sub,
+    Finset.sum_neg_distrib, sub_neg_eq_add]
   abel
 
 end GlobalTheory.CovHt.Link

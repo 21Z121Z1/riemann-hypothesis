@@ -82,7 +82,7 @@ theorem GlobalTheory.baseChange_isometry_injective : ∀ (K K' : Type) [Field K]
     refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun j _ => ?_
     congr 1
     have e : ∀ k, (Pi.single k 1 : Fin n → K') = fun i => algebraMap K K' ((Pi.single k 1 : Fin n → K) i) := by
-      intro k; ext i; by_cases hik : i = k <;> simp [Pi.single_apply, hik]
+      intro k; ext i; by_cases hik : i = k <;> simp [hik]
     rw [e i, e j, h3, h3, bc_form h h' hb, ← hα, ← bc_form hW hW' hbW]
   refine ⟨β, ?_, hiso, h3⟩
   rw [← LinearMap.ker_eq_bot, LinearMap.ker_eq_bot']

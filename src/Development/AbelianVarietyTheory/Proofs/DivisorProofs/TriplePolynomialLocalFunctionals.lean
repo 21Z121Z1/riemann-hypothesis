@@ -193,7 +193,7 @@ theorem GlobalTheory.ThetaGlobalHalf.thetaIntegral_eq_sum_local : ∀ (F E : Typ
     funext y
     simp only [LinearMap.smul_apply, LinearMap.comp_apply, Pi.smul_apply]
     rw [hΛI _ hin1, hΛI _ hin, tensL_apply, e1]
-    simp only [T, LinearMap.funLeft_apply, Function.comp_apply]
+    simp only [T, LinearMap.funLeft_apply]
     rw [I_om_right, map_mul]
     rfl
   · have hΦsum : Φ = ∑ j, coef j • tensL B.v₁ (r j) (φj j B.v₁) := by

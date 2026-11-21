@@ -30,7 +30,7 @@ theorem column_unit_entry_to_first_basis_vector :
     have : ∀ i : Fin r, E i.succ i.succ = 1 := by
       intro i
       simp [hEdef, Fin.succ_ne_zero]
-    simp [this, hEdef]
+    simp [hEdef]
   set B : Matrix (Fin (r+1)) (Fin (r+1)) R := E.submatrix σ id with hBdef
   have hBdet : IsUnit B.det := by
     rw [hBdef, Matrix.det_permute, hE]

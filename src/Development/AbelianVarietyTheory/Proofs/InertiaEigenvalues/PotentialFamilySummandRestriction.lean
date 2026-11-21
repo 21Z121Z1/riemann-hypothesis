@@ -77,7 +77,7 @@ theorem exists_rep (φ : (Fin a → Fin n → LL) →ₗ[LL] LL) :
   refine ⟨fun b k => φ (Pi.single b (Pi.single k 1)), fun u => ?_⟩
   have hu : u = ∑ b, ∑ k, u b k • (Pi.single b (Pi.single k 1) : Fin a → Fin n → LL) := by
     funext b' k'
-    simp [Finset.sum_apply, Pi.single_apply, ite_apply, Finset.sum_ite_eq, Finset.sum_ite_eq']
+    simp [Finset.sum_apply, Pi.single_apply, ite_apply, Finset.sum_ite_eq]
   conv_lhs => rw [hu]
   rw [pr_apply]
   simp [map_sum, dotProduct]

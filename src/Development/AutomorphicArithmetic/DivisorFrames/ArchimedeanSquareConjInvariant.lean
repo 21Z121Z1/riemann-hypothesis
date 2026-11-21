@@ -19,4 +19,4 @@ theorem UpperTheory.archimedean_square_conj_invariant :
   rw [← Complex.conj_ofReal N, hN, RingHom.map_det]
   congr 1
   ext i k
-  simp [dotProduct, Matrix.mulVec, map_sum, Complex.star_def]
+  simp [dotProduct, Matrix.mulVec, map_sum]

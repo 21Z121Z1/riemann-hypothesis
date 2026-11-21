@@ -387,7 +387,7 @@ theorem quotTriv_of_model (hK : GlobalTheory.ThK.KP) (hcm : IsCMExt F E σ) (ψ 
           fun h => rt a f h * (starRingEnd ℂ) (thetaSum F (om (g, h) Φ)) := funext fun h => by
         rw [omg, mul_inv_cancel_right, mul_one]; rfl
       rwa [e] at h2
-    | zero => intro Φ _; simp [integrableOn_zero]
+    | zero => intro Φ _; simp
     | add u w _ _ hu hw =>
       intro Φ hΦ
       refine ((hu Φ hΦ).add (hw Φ hΦ)).congr (Eventually.of_forall fun h => ?_)

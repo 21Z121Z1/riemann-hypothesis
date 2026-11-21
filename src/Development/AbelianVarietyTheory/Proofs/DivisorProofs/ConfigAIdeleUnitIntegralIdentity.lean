@@ -154,7 +154,7 @@ theorem coef_mem [NumberField E] (σ : E →ₐ[F] E) (B : Base F E) {n n₁ d :
       refine Finset.sum_congr rfl fun i _ => ?_
       rw [Finset.smul_sum]
       refine Finset.sum_congr rfl fun j _ => ?_
-      simp only [incM, incV, Matrix.smul_apply, Matrix.map_apply, Matrix.vecMulVec_apply, map_mul, smul_mul_assoc,
+      simp only [incM, incV, Matrix.smul_apply, Matrix.map_apply, Matrix.vecMulVec_apply, map_mul,
         Algebra.smul_def]
       ring
     rw [he]

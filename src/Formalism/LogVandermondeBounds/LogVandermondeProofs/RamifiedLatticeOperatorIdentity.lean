@@ -37,7 +37,7 @@ lemma pair_single_left (i : Fin r) (t : k) (x : Fin r → k) :
   unfold pair
   rw [Finset.sum_eq_single i]
   · simp
-  · intro j _ hj; simp [Pi.single_apply, hj]
+  · intro j _ hj; simp [hj]
   · simp
 
 lemma ne_zero_of_pair_eq_one {f x : Fin r → k} (h : pair f x = 1) : x ≠ 0 := by

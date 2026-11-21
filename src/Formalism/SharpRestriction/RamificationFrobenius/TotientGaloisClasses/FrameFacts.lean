@@ -447,7 +447,7 @@ theorem hostOrdersFrob (g : φ.GG) :
 private theorem cc_mul_mem_Psi_iff_not_mem (g : φ.GG) : φ.cc * g ∈ φ.Psi ↔ g ∉ φ.Psi := by
   rw [mem_Psi_iff, mem_Psi_iff]
   show (-1 : ℤˣ) * g.1.2 = 1 ↔ ¬ g.1.2 = 1
-  rcases Int.units_eq_one_or g.1.2 with h | h <;> rw [h] <;> simp [int_units_neg_one_ne_one]
+  rcases Int.units_eq_one_or g.1.2 with h | h <;> rw [h] <;> simp
 
 theorem hostPartner (τ : φ.GG) (hτ : τ ∈ φ.Psi) :
     Set.BijOn (fun g : φ.GG => φ.cc * g * τ) {g | g ∉ φ.Psi} (φ.Psi : Set φ.GG) := by

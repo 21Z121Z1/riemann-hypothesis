@@ -153,10 +153,10 @@ theorem exists_radial_mem_of_stable : ∀ (k : Type) [Field k] [ValuativeRel k] 
       simp [dilF, mul_assoc]
     · intro ψ _
       funext y
-      simp [← mul_assoc]
+      simp
     · intro ψ _
       funext y
-      simp [← mul_assoc]
+      simp
     · intro ψ _
       rfl
 

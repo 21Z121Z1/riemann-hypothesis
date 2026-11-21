@@ -102,7 +102,7 @@ def UniformlyAboveThreshold (p : ℝ → ℝ → Prop) : Prop :=
   ∃ X₀ : ℝ, ∀ X, X₀ ≤ X → ∀ x, X ^ (1 / P.K) ≤ x → x ≤ X → p X x
 
 theorem uniform_iff_above_threshold (p : ℝ → ℝ → Prop) : P.Unif p ↔ P.UniformlyAboveThreshold p := by
-  simp only [Unif, UniformlyAboveThreshold, eventually_atTop, ge_iff_le, mem_Icc, and_imp, Y]
+  simp only [Unif, UniformlyAboveThreshold, eventually_atTop, mem_Icc, and_imp, Y]
 
 theorem Unif.mono {P : Params} {p r : ℝ → ℝ → Prop} (hp : P.Unif p)
     (h : ∀ X x, x ∈ Icc (P.Y X) X → p X x → r X x) : P.Unif r :=

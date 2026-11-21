@@ -36,7 +36,7 @@ theorem isAnalyticSubset_zero (A : FinHolAtlas d X) (B : FinHolAtlas n Y) (μ : 
   refine ⟨μ ⁻¹' L.U (μ y), (L.isOpen_U (μ y)).preimage hμ.1, L.mem_U (μ y), 1,
     fun _ w => s (μ y) (μ w), fun _ => hs'.1 y, ?_⟩
   ext w
-  simp only [Set.mem_inter_iff, Set.mem_setOf_eq, Set.mem_preimage, Set.mem_sep_iff]
+  simp only [Set.mem_inter_iff, Set.mem_setOf_eq, Set.mem_preimage]
   constructor
   · rintro ⟨h0, hw⟩
     exact ⟨hw, fun _ => (sec_zero_iff A L s hs (μ y) (μ w) hw).1 h0⟩

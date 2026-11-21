@@ -84,7 +84,7 @@ theorem flL_zLoc_contDiffOn (hD : A.D0 L w w0 s) (i : ι) :
   unfold WeightedAtlas.zLoc
   rw [contDiffOn_piLp]
   intro k
-  simp only [WithLp.ofLp_toLp]
+  simp only
   exact ReciprocityTheory.L2DbarEstimates.C.holo_contDiffOn_complex (flL_isOpen_O A hD i) (flL_comp_diff A hD i k)
 
 theorem flL_mem_O (hD : A.D0 L w w0 s) {x : Y} (hx : x ∈ A.Mset w0 s De) {i : ι}

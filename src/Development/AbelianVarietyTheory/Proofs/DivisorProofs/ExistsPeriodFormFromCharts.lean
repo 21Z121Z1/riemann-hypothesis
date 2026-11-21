@@ -95,9 +95,9 @@ theorem eval₂_eq (α : Alt n) (ξ ζ : V n) :
 theorem coef_eq (α : Alt n) (a b : Fin n) : coef α a b =
     (eval₂ α (coordVec a) (coordVec b) + Complex.I * eval₂ α (coordVec a) (Complex.I • coordVec b)) / 2 := by
   have h1 : eval₂ α (coordVec a) (coordVec b) = coef α a b - coef α b a := by
-    simp [eval₂_eq, mul_sub, Finset.sum_sub_distrib, Pi.single_apply, apply_ite (starRingEnd ℂ)]
+    simp [eval₂_eq, mul_sub, Finset.sum_sub_distrib, apply_ite (starRingEnd ℂ)]
   have h2 : eval₂ α (coordVec a) (Complex.I • coordVec b) = -Complex.I * coef α a b - Complex.I * coef α b a := by
-    simp [eval₂_eq, mul_sub, Finset.sum_sub_distrib, Pi.single_apply, apply_ite (starRingEnd ℂ)]
+    simp [eval₂_eq, mul_sub, Finset.sum_sub_distrib, apply_ite (starRingEnd ℂ)]
     ring
   rw [h1, h2]
   linear_combination ((coef α a b + coef α b a) / 2) * Complex.I_mul_I

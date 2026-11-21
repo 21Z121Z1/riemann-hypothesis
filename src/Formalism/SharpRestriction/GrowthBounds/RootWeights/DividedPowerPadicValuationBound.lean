@@ -110,7 +110,7 @@ theorem divided_power_padic_valuation_bound {ι : Type} [Fintype ι] {n : ℕ} (
     have hma : m' (l, a) = m (l, a) - f l := by
       rw [hm']; simp [ha, hb, hab]
     have hmb : m' (l, b) = m (l, b) + f l := by
-      rw [hm']; simp [ha, hb, hab, Ne.symm hab]
+      rw [hm']; simp [ha, hb, Ne.symm hab]
     have hmc : ∀ c, c ≠ a → c ≠ b → m' (l, c) = m (l, c) := by
       intro c hca hcb
       rw [hm']; simp [ha, hb, hca, hcb]

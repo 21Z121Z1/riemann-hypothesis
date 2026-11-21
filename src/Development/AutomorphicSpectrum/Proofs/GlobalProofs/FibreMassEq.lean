@@ -151,7 +151,7 @@ theorem GlobalTheory.CompanionTheory.Hypotheses₂.OneV.avgV_tendsto : ∀ (F E 
   let φ : (Fin 1 → Fin M → Fv F v ⊗[F] E) → ℝ := A.indicator fun _ => 1
   have hφc : Continuous φ := by
     refine continuous_indicator ?_ continuous_const.continuousOn
-    simp [hAo.frontier_eq, hAcl.closure_eq]
+    simp [hAo.frontier_eq]
   have hφs : HasCompactSupport φ := by
     refine HasCompactSupport.intro hAc fun x hx => ?_
     exact Set.indicator_of_notMem hx _

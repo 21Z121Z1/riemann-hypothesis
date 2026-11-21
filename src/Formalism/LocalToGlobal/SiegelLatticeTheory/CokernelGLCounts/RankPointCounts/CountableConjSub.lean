@@ -190,7 +190,7 @@ theorem lint_eq {A B : Set G} (hA : MeasurableSet A) (hB : MeasurableSet B) (c :
     calc c * A.indicator g x
         = (A.indicator (1 : G → ℝ≥0∞) x * g x) * ∫⁻ r, B.indicator (1 : G → ℝ≥0∞) (r * x) ∂ν := by
           rw [h2]
-          by_cases hx : x ∈ A <;> simp [Set.indicator_apply, hx] <;> ring
+          by_cases hx : x ∈ A <;> simp [hx] <;> ring
       _ = ∫⁻ r, A.indicator (1 : G → ℝ≥0∞) x * B.indicator (1 : G → ℝ≥0∞) (r * x) * g x ∂ν := by
           rw [← lintegral_const_mul _ hm]
           refine lintegral_congr fun r => ?_
@@ -211,7 +211,7 @@ theorem lint_eq {A B : Set G} (hA : MeasurableSet A) (hB : MeasurableSet B) (c :
     calc c * B.indicator g y
         = (B.indicator (1 : G → ℝ≥0∞) y * g y) * ∫⁻ r, A.indicator (1 : G → ℝ≥0∞) (r⁻¹ * y) ∂ν := by
           rw [h2]
-          by_cases hy : y ∈ B <;> simp [Set.indicator_apply, hy] <;> ring
+          by_cases hy : y ∈ B <;> simp [hy] <;> ring
       _ = ∫⁻ r, A.indicator (1 : G → ℝ≥0∞) (r⁻¹ * y) * B.indicator (1 : G → ℝ≥0∞) y * g y ∂ν := by
           rw [← lintegral_const_mul _ hm]
           refine lintegral_congr fun r => ?_

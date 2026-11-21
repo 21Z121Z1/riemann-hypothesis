@@ -67,7 +67,7 @@ theorem curv_lower : HessSt → CentSt → OnCore fun D O x P => ∃ C t₀ : �
           have := ContDiffAt.sum (s := Finset.univ) fun i (_ : i ∈ Finset.univ) => hs1 τ i
           convert this using 1
           funext z
-          simp [Function.comp_def]) ξ]
+          simp) ξ]
       refine Finset.sum_congr rfl fun τ _ => ?_
       rw [GlobalTheory.ShFam.CombCurv.levi_sum Finset.univ (fun i z => coef u τ i * P.regFund c σ τ i t z) (hs1 τ) ξ]
       exact Finset.sum_congr rfl fun i _ => AlgChart.levi_const_mul _ (hsm τ i) ξ

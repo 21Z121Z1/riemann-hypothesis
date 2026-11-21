@@ -78,7 +78,7 @@ theorem lagL_at_vmv {n d : ℕ} {c : Fin n → AE F E} (hc : At (evI F) c) (x : 
 
 theorem lagL_smul_vmv {n d : ℕ} (a : AF F) (c : Fin n → AE F E) (x : Fin d → AE F E) :
     a • Matrix.vecMulVec c x = Matrix.vecMulVec (a • c) x := by
-  ext i j; simp [Matrix.vecMulVec_apply, smul_mul_assoc]
+  ext i j; simp [Matrix.vecMulVec_apply]
 
 end GlobalTheory.ArchSch
 

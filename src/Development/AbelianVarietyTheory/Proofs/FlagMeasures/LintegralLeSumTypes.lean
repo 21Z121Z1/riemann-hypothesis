@@ -72,7 +72,7 @@ theorem exists_type (B : RowsAut) (p q : ℕ) (hs : SigIs B p q) (hn : 1 ≤ B.I
     omega
   let c : Composition (∑ i, j i) :=
     ⟨List.ofFn j, fun {b} hb => by
-      simp only [List.mem_ofFn, Set.mem_range] at hb
+      simp only [List.mem_ofFn] at hb
       obtain ⟨k, rfl⟩ := hb
       exact hjpos k, by simp [List.sum_ofFn]⟩
   have hlen : c.length = a := by simp [c, Composition.length]

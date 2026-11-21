@@ -103,7 +103,7 @@ theorem exists_kInf_isLevi_of_fix : ∀ (F E : Type) [Field F] [NumberField F] [
     · intro u hu
       have h0 : u • (mat k - 1) = 0 := hk.1 u hu
       have : u • ((mat k - 1) *ᵥ incV F z) i = ((u • (mat k - 1)) *ᵥ incV F z) i := by
-        simp [mulVec, dotProduct, Finset.smul_sum, smul_mul_assoc]
+        simp [mulVec, dotProduct, Finset.smul_sum]
       rw [this, h0, zero_mulVec]; rfl
     · intro w
       have h1 := RingHom.map_mulVec (piInf (B.emb w)) (mat k - 1) (incV F z) i

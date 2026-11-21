@@ -18,7 +18,7 @@ theorem sp_epsMul_mul {S : Type} [CommRing S] (a b : S) :
     spMap (epsMul a) ≫ spMap (epsMul b) = spMap (epsMul (a * b)) := by
   rw [GlobalTheory.ShFam.Pad.Guard.sp_comp]
   congr 1
-  ext r <;> simp [epsMul, mul_assoc]
+  ext r <;> simp [epsMul]
 
 theorem exists_norm_eq_pi {m : ℕ} {C : Type} [NormedAddCommGroup C] (f : Fin m → C) (hf : 0 < ‖f‖) :
     ∃ k₀, ‖f k₀‖ = ‖f‖ ∧ ∀ k, ‖f k‖ ≤ ‖f k₀‖ := by

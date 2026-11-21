@@ -36,8 +36,8 @@ def darbouxTransp {c : A →ₐ[R] A} {ξ : A} {JA : Matrix α α A} {JB : Matri
     rw [Matrix.transpose_transpose, Matrix.transpose_transpose] at h
     rw [h, d.form]
     simp only [LinearEquiv.trans_apply, LinearEquiv.prodCongr_apply, Matrix.transposeLinearEquiv_apply,
-      LinearEquiv.funCongrLeft_apply, LinearMap.funLeft_apply]
-    simp only [dotProduct, Fintype.sum_prod_type, Function.comp_apply, Equiv.prodComm_apply, Prod.swap_prod_mk]
+      LinearEquiv.funCongrLeft_apply]
+    simp only [dotProduct, Fintype.sum_prod_type]
     rw [Finset.sum_comm, Finset.sum_comm (f := fun a b => (d.e yᵀ).1 (a, b) * (d.e xᵀ).2 (a, b))]
     rfl
 

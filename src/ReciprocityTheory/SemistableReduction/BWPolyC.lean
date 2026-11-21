@@ -71,9 +71,9 @@ theorem bwp_finite_det_id_line {p : ℕ} (z : Fin p × Fin p → ℂ) :
   ext i j
   by_cases h : i = j
   · subst h
-    simp [Matrix.charmatrix_apply, bwpMat, bwpId, Matrix.diagonal_apply]
+    simp [bwpMat, bwpId]
     ring
-  · simp [Matrix.charmatrix_apply, bwpMat, bwpId, Matrix.diagonal_apply, h]
+  · simp [bwpMat, bwpId, h]
 
 theorem bwp_continuous_of_matrix {p : ℕ} :
     Continuous (fun y : Fin p → Fin p → ℂ => Matrix.of y) := by

@@ -122,7 +122,7 @@ theorem sub_mem_of_gen (A : Subring R) (π : R) (σ : R → R)
     simp only [h2]
     rfl
   rw [h3, cmb, cmb, cmb, Finset.smul_sum]
-  simp only [smul_comm ((1 : O) ⊗ₜ[Z] π : O ⊗[Z] R), Matrix.of_apply]
+  simp only [smul_comm ((1 : O) ⊗ₜ[Z] π : O ⊗[Z] R)]
   abel
 
 end Bases

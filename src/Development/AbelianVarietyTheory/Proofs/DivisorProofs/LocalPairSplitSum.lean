@@ -42,7 +42,7 @@ theorem etale_of_isZTorsor (B D : Type) [CommRing B] [CommRing D] [Algebra B D] 
       funext g
       by_cases hg : g = 1
       · subst hg; simp [hx0]
-      · simp [Pi.single_apply, hg]
+      · simp [hg]
     rw [hxe]
     exact Ideal.mul_mem_mul hx heI
   haveI : Subsingleton Ω[D⁄B] := (Ideal.cotangent_subsingleton_iff _).2 hidem

@@ -111,7 +111,7 @@ theorem eisG_eq (a : ℂ) (ha : a ≠ 0) (τ : ℍ) (k : ℕ) (hk : 1 ≤ k) :
     apply hv
     first
       | (simp only [eisSummand, Pi.zero_apply, Int.cast_zero, zero_mul, add_zero, zpow_neg,
-          zpow_natCast, zero_pow hk2, inv_zero, one_div])
+          zpow_natCast, zero_pow hk2, inv_zero])
       | (simp [eisSummand, hk2])
       | (unfold eisSummand; done)
   calc PI.eisG (PI.lat2 a (a * τ)) k

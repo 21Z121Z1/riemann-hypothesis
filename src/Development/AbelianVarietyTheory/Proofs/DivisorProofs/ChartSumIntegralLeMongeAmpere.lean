@@ -87,7 +87,7 @@ theorem lintegral_maMeasure_eq {n : ℕ} {Y : Type} [TopologicalSpace Y] [Measur
       ((hχc.mul hdc).aemeasurable hTm).ennreal_ofReal (hg.comp_aemeasurable hsm)]
   refine setLIntegral_congr_fun hTm fun z hz => ?_
   have h0 := locDens_nonneg_of_psh B (fun _ => Ψ) (fun _ => hΨ) (fun _ => hpsh) k hz
-  simp only [Pi.mul_apply, Function.comp_apply]
+  simp only [Pi.mul_apply]
   rw [ENNReal.ofReal_mul (hne.some.nonneg k _), Real.enorm_eq_ofReal h0]
   ring
 

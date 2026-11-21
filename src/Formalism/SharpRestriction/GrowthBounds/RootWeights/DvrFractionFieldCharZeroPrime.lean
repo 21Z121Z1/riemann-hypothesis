@@ -118,7 +118,7 @@ theorem pairwise_list_index_lt {α : Type*} [BEq α] [LawfulBEq α] (r : α → 
           · exact absurd h.symm hay
           · exact h
         have := ih hl.2 hxt hyt
-        simp [List.idxOf_cons, hax, hay]
+        simp [hax, hay]
         omega
 
 theorem exists_normalOrder (n : ℕ) : ∃ ord, NormalOrder n ord := by

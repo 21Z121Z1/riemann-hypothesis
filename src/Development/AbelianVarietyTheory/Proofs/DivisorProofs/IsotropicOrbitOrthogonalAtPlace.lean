@@ -199,7 +199,7 @@ theorem form_single (σ : E →ₐ[F] E) {d : ℕ} (J : Matrix (Fin d) (Fin d) E
     form σ J x (Pi.single l 1) = ∑ j, x j * J j l := by
   simp only [form, dotProduct, Matrix.mulVec]
   refine Finset.sum_congr rfl fun j _ => ?_
-  rw [Finset.sum_eq_single l (fun k _ hk => by simp [Pi.single_apply, hk]) (by simp)]
+  rw [Finset.sum_eq_single l (fun k _ hk => by simp [hk]) (by simp)]
   simp
 
 theorem vanish_of_orth (σ : E →ₐ[F] E) (hσ : ∀ x, σ (σ x) = x) {n : ℕ} (JX : Matrix (Fin n) (Fin n) E)
@@ -241,10 +241,10 @@ theorem vanish_of_orth (σ : E →ₐ[F] E) (hσ : ∀ x, σ (σ x) = x) {n : �
         · subst hj
           simp only [Pi.smul_apply, Pi.single_eq_same, Pi.zero_apply, r]
           rw [Algebra.smul_def, ← mul_assoc, ← map_mul, hul, map_zero, zero_mul]
-        · simp [Pi.single_apply, hj]
+        · simp [hj]
       have h1 := h _ hr
       have e1 : ∑ i', ∑ k, (Pi.single i r : Fin n → AE F E) i' * incM F JX i' k * cA σ (b k) = r * β i := by
-        rw [Finset.sum_eq_single i (fun j _ hj => by simp [Pi.single_apply, hj]) (by simp)]
+        rw [Finset.sum_eq_single i (fun j _ hj => by simp [hj]) (by simp)]
         simp only [Pi.single_eq_same, hβdef, Matrix.mulVec, dotProduct, Finset.mul_sum, cb]
         refine Finset.sum_congr rfl fun k _ => ?_
         ring

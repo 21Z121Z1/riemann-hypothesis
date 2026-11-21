@@ -15,7 +15,7 @@ variable {G : Type} [Group G] [Fintype G]
 
 theorem eq_sum_single (e : MonoidAlgebra ℂ G) : e = ∑ x, MonoidAlgebra.single x (e.coeff x) := by
   ext y
-  simp [MonoidAlgebra.coeff_sum, Finsupp.single_apply]
+  simp [MonoidAlgebra.coeff_sum]
 
 theorem idem_eq_zero (D : MonoidAlgebra ℂ G) (h : D * D = D) (h0 : D.coeff 1 = 0) : D = 0 := by
   have hi : IsIdempotentElem (LinearMap.mulLeft ℂ D) := by

@@ -93,6 +93,6 @@ theorem periods_unif : GlobalTheory.Published.PeriodComparison →
     rw [hP x _ hpos hNx, hP (a * x) _ hpos hNax, map_smul]
     congr 1
     exact hend α M (fun w => hα w) ⟨em ((n * m) • x), hemL _ hNx⟩ ⟨em ((n * m) • (a * x)), hemL _ hNax⟩
-      (by funext j; simp only [hem, M, LinearMap.coe_mk, AddHom.coe_mk, map_nsmul, nsmul_eq_mul, map_mul]; ring)
+      (by funext j; simp only [hem, M, LinearMap.coe_mk, AddHom.coe_mk, nsmul_eq_mul, map_mul]; ring)
 
 end GlobalTheory.PeriodLattice

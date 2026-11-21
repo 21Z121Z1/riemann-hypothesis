@@ -138,7 +138,7 @@ theorem toGQ_mul (γ : SL(2, ℤ)) (m : Matrix (Fin 2) (Fin 2) ℤ) (h : 0 < m.d
     rw [Matrix.det_mul, γ.det_coe, one_mul]; exact h
   apply Subtype.ext; apply Units.ext
   ext i j
-  simp [toGQ, hd, h, ofSL, Matrix.mul_apply]
+  simp [toGQ, h, ofSL, Matrix.mul_apply]
 
 end Mat
 

@@ -166,7 +166,7 @@ theorem smooth_of_der {F E : Type} [Field F] [NumberField F] [Field E] [NumberFi
         by_cases hi : i = j
         · subst hi
           simp [GlobalTheory.SiegelSet.isRealLine_add F E σ hcm _ J' (γ i) (hγ i)]
-        · simp [hi, Function.update_of_ne hi]
+        · simp [hi]
       simp only [P, γ', suf, e1, GlobalTheory.list_prod_ofFn_update_mul_right, mul_assoc]
     have hd := hDd (Zt t) γ' ((continuous_const.mul (GlobalTheory.RealLineCont.continuous_of_isRealLine F E σ hcm _ J' _ (hγ j))).mul
       continuous_const) (fun s u => by

@@ -122,7 +122,7 @@ theorem exists_rat_near (v : Pl) (x : Qv v) : ∃ q : ℚ, x - algebraMap ℚ (Q
   have hc : Continuous (fun y : Qv v => x - y) := continuous_const.sub continuous_id
   have ho := (Valued.isOpen_integer (Qv v)).preimage hc
   obtain ⟨q, hq⟩ := (HeightOneSpectrum.denseRange_algebraMap ℚ v).exists_mem_open ho
-    ⟨x, by simp [Valuation.mem_integer_iff]⟩
+    ⟨x, by simp⟩
   refine ⟨q, ?_⟩
   rw [mem_O_iff v]
   have e : algebraMap ℚ (Qv v) q = @algebraMap ℚ (v.adicCompletion ℚ) _ _ (HeightOneSpectrum.instAlgebraAdicCompletion (𝓞 ℚ) ℚ v) q :=
@@ -137,7 +137,7 @@ theorem coords_integral_iff : ∀ (K : Type) [Field K] [NumberField K] (v : Pl) 
     have hi : IsIntegral ℤ (β i) := (hβ _).2 fun j => by
       by_cases hij : i = j
       · exact ⟨1, by simp [hij]⟩
-      · exact ⟨0, by simp [Finsupp.single_apply, hij]⟩
+      · exact ⟨0, by simp [hij]⟩
     rw [mem_O_iff, val_alg]
     exact val_le_of_integral w hi
   constructor

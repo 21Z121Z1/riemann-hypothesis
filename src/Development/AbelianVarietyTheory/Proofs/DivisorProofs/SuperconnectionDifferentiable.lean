@@ -100,7 +100,7 @@ theorem fderiv_per_apply {τ : E → Matrix (Fin g) (Fin g) ℂ} {b : E}
       fun l _ => ((hτ l k).hasFDerivAt.const_mul _)).add_const _
   rw [(hasFDerivAt_pi.2 hk).fderiv]
   funext k
-  simp [ContinuousLinearMap.sum_apply, smul_eq_mul]
+  simp
 
 theorem comp_fst {W : Type} [NormedAddCommGroup W] [NormedSpace ℝ W] {f : E → W} {b : E}
     {z : Fin g → ℂ} (hf : DifferentiableAt ℝ f b) :

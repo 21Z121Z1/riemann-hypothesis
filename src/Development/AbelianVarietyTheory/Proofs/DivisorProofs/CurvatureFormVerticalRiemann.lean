@@ -15,7 +15,7 @@ theorem curvature_vertical : ∀ {E : Type} [NormedAddCommGroup E] [NormedSpace 
   have hv := GlobalTheory.FlatVert.dflat_vert hτ b hb z v
   have hw := GlobalTheory.FlatVert.dflat_vert hτ b hb z w
   show riem _ _ = _
-  simp only [ContinuousAlternatingMap.compContinuousLinearMap_apply]
+  simp only
   simp [hv, hw]
 
 end GlobalTheory.TorsionForm.FlatAcyc

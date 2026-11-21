@@ -92,8 +92,8 @@ theorem mem_sp (k : Matrix.unitaryGroup (Fin g) ℂ) :
   · simp only [Matrix.mul_zero, Matrix.mul_one, Matrix.mul_neg, zero_add, add_zero, transpose_neg,
       Matrix.neg_mul]
     rw [← h1]; abel
-  · simp only [Matrix.mul_zero, Matrix.mul_one, Matrix.mul_neg, zero_add, add_zero, transpose_neg,
-      Matrix.neg_mul, neg_neg]
+  · simp only [Matrix.mul_zero, Matrix.mul_one, Matrix.mul_neg, zero_add, add_zero,
+      neg_neg]
     exact h1
   · simp [h2]
 

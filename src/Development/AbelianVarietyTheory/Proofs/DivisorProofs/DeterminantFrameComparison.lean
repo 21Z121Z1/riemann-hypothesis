@@ -30,7 +30,7 @@ theorem frames_exist : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Field C] [IsAlgC
     intro c
     rw [hρ, rhoTA, AlgHom.commutes, Matrix.algebraMap_eq_diagonal]
     ext1 i j
-    by_cases hij : i = j <;> simp [hij, Matrix.diagonal_apply, Matrix.one_apply]
+    by_cases hij : i = j <;> simp [hij]
   let L : (Fin h → ℤ_[p]) →ₗ[ℤ_[p]] (Fin h → Ainf p O) :=
     (Algebra.linearMap ℤ_[p] (Ainf p O)).compLeft (Fin h)
   have hL : ∀ w j, L w j = ofPadic p O (w j) := fun w j => rfl
@@ -58,7 +58,7 @@ theorem frames_exist : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [Field C] [IsAlgC
       rw [hL, Pi.basisFun_apply]
       by_cases hkj : j = k
       · subst hkj; simp
-      · simp [Pi.single_apply, hkj]
+      · simp [hkj]
     rw [← e1]
     exact hk
   obtain ⟨eT, heT, heT1⟩ := GlobalTheory.T.ainf_frame_span_generation p O Λ N' d h (Module.finBasis ℤ_[p] Λ) ρ

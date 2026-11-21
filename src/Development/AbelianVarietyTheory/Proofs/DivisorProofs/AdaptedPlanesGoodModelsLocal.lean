@@ -73,7 +73,7 @@ theorem eq_zero_of_trace_gram (σ : E →ₐ[F] E) {n : ℕ} (J : Matrix (Fin n)
       funext j
       by_cases hj : j = k
       · subst hj; simp [GlobalTheory.ArchTraceNondeg.cA_cAinv]
-      · simp [Pi.single_apply, hj]
+      · simp [hj]
     rw [hw, dotProduct_single] at h
     exact h
   calc b = b ᵥ* (incM F J * (incM F J)⁻¹) := by rw [Matrix.mul_nonsing_inv _ hdet, Matrix.vecMul_one]

@@ -23,7 +23,7 @@ def dcos (N P : Subgroup G) (x : G) : Set G := {g | ∃ u ∈ N, ∃ p ∈ P, g 
 def cj (x : G) (P : Subgroup G) : Subgroup G := P.comap (MulAut.conj x⁻¹).toMonoidHom
 
 theorem mem_cj {x y : G} {P : Subgroup G} : y ∈ cj x P ↔ x⁻¹ * y * x ∈ P := by
-  simp [cj, MulAut.conj_apply]
+  simp [cj]
 
 theorem indicator_isLocallyConstant {W : Set G} (hW : IsClopen W) (c : ℂ) :
     IsLocallyConstant (W.indicator fun _ => c) := fun s => by

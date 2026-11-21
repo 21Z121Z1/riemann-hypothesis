@@ -61,7 +61,7 @@ theorem skew_decomp {J : Matrix (Fin n) (Fin n) ℂ} (hJ : Jᴴ = J) (hdet : IsU
   · simp only [IsSkew, conjTranspose_smul, conjTranspose_add, Matrix.smul_mul, Matrix.mul_smul,
       Matrix.add_mul, Matrix.mul_add, hYsH, hJYs]
     have : star (1 / (2 * Complex.I)) = -(1 / (2 * Complex.I)) := by
-      simp [Complex.ext_iff]
+      simp
     rw [this, neg_smul, add_comm (J * Y), neg_add_cancel]
   · rw [smul_smul, show Complex.I * (1 / (2 * Complex.I)) = 1 / 2 by field_simp]
     module
@@ -135,7 +135,7 @@ theorem exists_wop_of_mem_adjoin : ∀ (n : ℕ) (G : Type) [Group G] (J : Matri
     · intro l hl γ hγ
       have hl' : l = L.map (lineOf s) := by
         by_contra hne
-        simp [Finsupp.single_apply, Ne.symm hne] at hl
+        simp at hl
         exact hne hl
       subst hl'
       obtain ⟨Z, hZ, rfl⟩ := List.mem_map.mp hγ

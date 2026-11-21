@@ -164,7 +164,7 @@ theorem main : Hypotheses2 → HypothesesH → GlobalTheory.Published.ScholzeWei
     have h1 : 1 + k - 1 < O.N := by omega
     have e1 : 1 + k - 1 = k := by omega
     have h2 : k < O.S.Dw.p := by omega
-    simp only [hxx, dif_pos h1, Setup.root0, Setup.adl0, rootSym, Fin.val_mk, e1, if_pos h2]
+    simp only [hxx, dif_pos h1, Setup.root0, Setup.adl0, rootSym, e1, if_pos h2]
     rfl
   have S2 : ∀ τ, ∀ i, O.j < i → i < O.N →
       ∑ l ∈ Icc (i + 1) O.N, xx τ l = stepHt O (ref0 O) y (conjEmb (DV.tauEmb D τ)) (O.N - i) := by
@@ -181,7 +181,7 @@ theorem main : Hypotheses2 → HypothesesH → GlobalTheory.Published.ScholzeWei
     have h2 : ¬ (O.N - 1 - k < O.S.Dw.p) := by omega
     have h3 : k < O.S.Dw.mult (conjEmb (DV.tauEmb D τ)) := by rw [mc τ]; omega
     have h4 : O.S.Dw.p + O.S.Dw.q - 1 - (O.N - 1 - k) = k := by omega
-    simp only [hxx, dif_pos h1, Setup.root0, Setup.adl0, rootSym, Fin.val_mk, e1, if_neg h2, h4]
+    simp only [hxx, dif_pos h1, Setup.root0, Setup.adl0, rootSym, e1, if_neg h2, h4]
     exact hDual c z hzc _ _ h3
 
   have hB0' : 0 ≤ C1 * Real.log (2 + C1 + H.hA y) + C1 := by

@@ -228,7 +228,7 @@ theorem exists_herm (h : O.Reads A T H) (hO : O.DualRef) (B : ℝ) (c : O.s.Comp
     simp only [Real0.gen, Option.elim]
     rw [(T.K B c).firstChern_smul_leviEq _ _ a j y hy w, Deg.leviAt_rsmul, T.firstChern_leviEq_constant B c a j y hy w, e₂ j y hy w, Fintype.sum_option,
       Fintype.sum_unique, Setup.LatModel.mult]
-    simp only [Option.elim, U]
+    simp only [U]
     push_cast
     field_simp
     rfl

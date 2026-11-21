@@ -38,10 +38,10 @@ theorem mix_blk_fib (ι : Type) [Fintype ι] (r : ι → ℕ) (n D : ℕ) (ε : 
         · subst h
           by_cases h' : j = i
           · subst h'; simp [hX, updateRow_apply]
-          · simp [hX, updateRow_apply, diagonal_apply, h', Ne.symm h', Pi.single_apply]
+          · simp [hX, updateRow_apply, h', Ne.symm h']
         · by_cases h' : i = j
-          · subst h'; simp [hX, updateRow_apply, h, diagonal_apply]
-          · simp [hX, updateRow_apply, h, diagonal_apply, h']
+          · subst h'; simp [hX, updateRow_apply, h]
+          · simp [hX, updateRow_apply, h, h']
     rw [hu, det_fromBlocks_zero₂₁, det_diagonal, Finset.prod_update_of_mem (Finset.mem_univ s), one_mul,
       Finset.sdiff_singleton_eq_erase]
   have htr : (X.adjugate * diagonal (Sum.elim 0 fun s => (m s : ℂ))).trace =

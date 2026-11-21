@@ -1074,7 +1074,7 @@ def tangentEquiv :
       (fun φ ψ => by
         have h := (mem_primitiveTensors_iff _).1 x.2 φ ψ
         ext
-        · simp [algebraMap_eq_inl', Algebra.TensorProduct.one_def]
+        · simp [algebraMap_eq_inl']
         · simp [algebraMap_eq_inl', h]),
     fun φ => by simp [algebraMap_eq_inl']⟩
   left_inv f := Subtype.ext (AlgHom.ext fun φ => by
@@ -1475,9 +1475,9 @@ theorem isGroupLikeElem_tensor_map {A B K K' : Type*} [CommSemiring A] [Algebra 
   rw [e2, h2, map_mul]
   congr 1
   · rw [← AlgHom.comp_apply, ← AlgHom.comp_apply]; congr 1
-    ext <;> simp [Algebra.TensorProduct.one_def]
+    ext <;> simp
   · rw [← AlgHom.comp_apply, ← AlgHom.comp_apply]; congr 1
-    ext <;> simp [Algebra.TensorProduct.one_def]
+    ext <;> simp
 
 variable {H K : Type*} [CommSemiring H] [Bialgebra R H] [CommSemiring K] [Bialgebra R K]
   {u : H ⊗[R] K}
@@ -1515,7 +1515,7 @@ theorem pairingMap_pairingBaseChange (u : H ⊗[R] K) (x : A ⊗[R] CartierDual 
       simp only [pairingMap, pairingBaseChange, tmul_add, map_add, LinearMap.add_apply,
         LinearMap.baseChange_tmul] at hs ht ⊢
       rw [hs, ht]
-    | tmul h k => simp [pairingBaseChange, smul_tmul', ← smul_tmul]
+    | tmul h k => simp [pairingBaseChange, smul_tmul']
 
 variable [Module.Finite R H] [Module.Projective R H] [Module.Finite R K] [Module.Projective R K]
 

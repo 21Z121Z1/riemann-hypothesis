@@ -18,7 +18,7 @@ variable {ι : Type} [Fintype ι] {N : ℕ}
 theorem permute_comp (a b : ι → ι) : permute (N := N) a ≫ permute b = permute fun τ => a (b τ) := by
   rw [← cancel_mono (plEmb Prod.fst Prod.snd)]
   refine Limits.Pi.hom_ext _ _ fun x => ?_
-  simp only [Category.assoc, permute_plEmb_π, permute_plEmb_π_assoc]
+  simp only [Category.assoc, permute_plEmb_π]
 
 theorem permute_id : permute (ι := ι) (N := N) (fun τ => τ) = 𝟙 _ := by
   rw [← cancel_mono (plEmb Prod.fst Prod.snd)]

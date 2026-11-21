@@ -73,7 +73,7 @@ theorem truncMat_mulVec {d : ℕ} (W : Spc F E d) (v : Pl F) (A : Matrix (Fin d)
     truncMat (idem {v}) A *ᵥ z = A *ᵥ z := by
   have hs : ((GlobalTheory.LatVac.liftV v 1) • (A - 1)) *ᵥ z = (GlobalTheory.LatVac.liftV v 1) • ((A - 1) *ᵥ z) := by
     funext i
-    simp [Matrix.mulVec, dotProduct, Finset.smul_sum, smul_mul_assoc]
+    simp [Matrix.mulVec, dotProduct, Finset.smul_sum]
   rw [truncMat, idem_singleton, Matrix.add_mulVec, Matrix.one_mulVec, hs, Matrix.sub_mulVec,
     Matrix.one_mulVec, smul_sub, eAt_smul_of_mem W v hz, eAt_smul_of_mem W v hA]
   abel

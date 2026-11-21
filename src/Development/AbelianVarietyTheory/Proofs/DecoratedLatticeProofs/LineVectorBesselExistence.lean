@@ -132,7 +132,7 @@ theorem tau_line {n p : ℕ} (hn : n = 1) (hp : p = 1) (G : Matrix (Fin n) (Fin 
     obtain rfl : i = 0 := Subsingleton.elim _ _
     obtain rfl : k = 0 := Subsingleton.elim _ _
     simp only [Matrix.mul_apply, Matrix.conjTranspose_apply, Matrix.of_apply, Fin.sum_univ_one, Matrix.smul_apply,
-      smul_eq_mul, star_div₀, star_mul', star_inv₀]
+      smul_eq_mul, star_div₀, star_mul']
     field_simp
     first | linear_combination hrel | (rw [div_eq_iff (mul_ne_zero hz' hz)]; linear_combination hrel)
   · funext i

@@ -52,8 +52,8 @@ theorem g_eq {n : ℕ} (i j : PUnit → P.L.ι)
       (LPow P.A P.L (n : ℤ) (baseOver S)).U (fun _ => j ()))) :
     ((toProd P).appLE _ _ e).hom ((LPow P.A P.L (n : ℤ) (baseOver S)).g (fun _ => i ()) (fun _ => j ())).val =
       ((lbPow P.L n).g i j).val := by
-  simp only [LPow, LB.LinComb, Units.coe_prod, Fin.prod_univ_one, Fintype.prod_unique, zpow_natCast, Units.val_pow_eq_pow_val]
-  simp only [lbPow, LB.LinComb, Units.coe_prod, Fintype.prod_unique, zpow_natCast, Units.val_pow_eq_pow_val]
+  simp only [LPow, LB.LinComb, Fintype.prod_unique, zpow_natCast, Units.val_pow_eq_pow_val]
+  simp only [lbPow, LB.LinComb, Fintype.prod_unique, zpow_natCast, Units.val_pow_eq_pow_val]
   refine (appLE_res_pullU_pow (toProd P) (snd (baseOver S) P.A).left (P.L.U (i ()) ⊓ P.L.U (j ()))
     ((P.L.wchart (fun _ : Fin 1 => (snd (baseOver S) P.A).left) fun _ => i ()) ⊓
       P.L.wchart (fun _ : Fin 1 => (snd (baseOver S) P.A).left) fun _ => j ())

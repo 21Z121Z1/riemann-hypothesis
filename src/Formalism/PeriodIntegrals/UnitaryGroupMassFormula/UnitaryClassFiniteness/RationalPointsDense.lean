@@ -20,7 +20,7 @@ theorem single_tmul (l : Fin M) (a : Af F) (t : E) :
   by_cases h : i = l
   · subst h
     simp
-  · simp [Pi.single_apply, h]
+  · simp [h]
 
 theorem nsmul_tmul_F (N : ℕ) (a : Af F) (e : E) : N • (a ⊗ₜ[F] e) = a ⊗ₜ[F] ((N : F) • e) := by
   first

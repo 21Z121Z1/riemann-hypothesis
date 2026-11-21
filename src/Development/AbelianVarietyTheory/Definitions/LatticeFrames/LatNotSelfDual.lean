@@ -292,7 +292,7 @@ theorem lat_not_selfDual {D : D7} {u : D.what₂.Word} (F : Forms0 D u)
       obtain ⟨b, hb⟩ := hy _ ((lat x).1 hx)
       refine ⟨b, ?_⟩
       refine hb.trans ?_
-      simp only [hform, gramN, dotProduct, mulVec, Finset.mul_sum]
+      simp only [hform, gramN]
       refine (Fintype.sum_equiv (finCongr hr) _ _ fun i => ?_).symm
       refine Fintype.sum_equiv (finCongr hr) _ _ fun j => ?_
       simp [mul_assoc]

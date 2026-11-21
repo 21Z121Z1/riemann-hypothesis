@@ -197,7 +197,7 @@ theorem pullPsi_surj (ψ' : ∀ v : TypePl D, AddChar (ZMod (D.host.g v.1)) LL) 
   refine ⟨fun PP => if h : PP ∈ Pg then ψ0 ⟨PP, h⟩ else 1, ?_⟩
   funext v
   unfold pullPsi
-  simp only [dif_pos (P.pl v).2, Subtype.coe_eta, ψ0]
+  simp only [dif_pos (P.pl v).2, ψ0]
   rw [Equiv.piCongrLeft_apply_apply]
   ext x
   simp

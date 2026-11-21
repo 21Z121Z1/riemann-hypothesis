@@ -138,7 +138,7 @@ private theorem qr_hensel {O : Type} [CommRing O] [IsDomain O] [IsDiscreteValuat
   have hmax := (IsDiscreteValuationRing.irreducible_iff_uniformizer w).mp hw
   have hd : eval a₀ (derivative (X ^ 2 + C B * X + C D)) = 2 * a₀ + B := by
     simp only [derivative_add, derivative_X_pow, derivative_mul, derivative_C, derivative_X, eval_add, eval_mul,
-      eval_C, eval_X, eval_pow, eval_zero, eval_one, eval_natCast, zero_mul, mul_one, add_zero, zero_add]
+      eval_C, eval_X, eval_pow, zero_mul, mul_one, add_zero, zero_add]
     (try norm_num) <;> ring
   obtain ⟨θ, hθ, hθa⟩ := HenselianRing.is_henselian (I := IsLocalRing.maximalIdeal O)
     (X ^ 2 + C B * X + C D) (by monicity!) a₀

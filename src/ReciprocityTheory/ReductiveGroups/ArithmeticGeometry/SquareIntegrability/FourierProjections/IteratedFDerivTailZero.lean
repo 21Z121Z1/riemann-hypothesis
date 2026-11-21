@@ -81,7 +81,7 @@ theorem ellL_apply (q : ℕ) (a v : EuclideanSpace ℂ ι) : ellL q a v = q * Re
   simp [ellL, Hf]
   left
   first
-    | (rw [PiLp.inner_apply]; exact Finset.sum_congr rfl fun x _ => by simp [mul_comm])
+    | (rw [PiLp.inner_apply]; exact Finset.sum_congr rfl fun x _ => by simp)
     | (simp [PiLp.inner_apply, mul_comm]; done)
     | (simp [EuclideanSpace.inner_eq_star_dotProduct, dotProduct, mul_comm]; done)
 

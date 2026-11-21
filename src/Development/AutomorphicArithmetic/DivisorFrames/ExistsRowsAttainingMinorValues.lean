@@ -44,7 +44,7 @@ private theorem positionOne_invariantIntegral_exchange_step {K : Type} [Field K]
     · simp [x]
     · congr 1
       ext a l
-      simp [Matrix.updateCol_apply, Fin.castSucc_ne_last]
+      simp [Fin.castSucc_ne_last]
   have hsn : ∀ ρ, w (M.submatrix (Fin.snoc (α := fun _ => Fin n) σ ρ) id).det = w (x ρ) * m := by
     intro ρ
     rw [hexp, Fin.sum_univ_castSucc]

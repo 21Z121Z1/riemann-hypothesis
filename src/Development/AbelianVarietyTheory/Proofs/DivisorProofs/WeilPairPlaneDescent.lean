@@ -158,7 +158,7 @@ theorem exists_isEv_onto : ∀ {F E : Type} [Field F] [NumberField F] [Field E] 
     intro f φ hφ hφv
     funext y
     rw [LinearMap.smul_apply, LinearMap.comp_apply, hpure f φ hφ hφv]
-    simp only [ev, LinearMap.funLeft_apply, Function.comp_apply, Pi.smul_apply, smul_eq_mul, GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure,
+    simp only [ev, LinearMap.funLeft_apply, Pi.smul_apply, smul_eq_mul, GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure,
       ContinuousLinearMap.comp_apply, hR, LinearMap.smul_apply, LinearMap.comp_apply]
     have hI : (fun i => evI F (Function.extend j y 0 i)) = Function.extend j (fun i => evI F (y i)) 0 :=
       extend_map hj (evI F) (by unfold evI; exact map_zero _) y
@@ -188,16 +188,16 @@ theorem exists_isEv_onto : ∀ {F E : Type} [Field F] [NumberField F] [Field E] 
       simp
     rw [h1]
     funext y
-    simp only [LinearMap.smul_apply, LinearMap.comp_apply, LinearMap.funLeft_apply, Function.comp_apply, Pi.smul_apply,
+    simp only [LinearMap.smul_apply, LinearMap.comp_apply, LinearMap.funLeft_apply, Pi.smul_apply,
       smul_eq_mul]
     rw [hheis _ Φ hΦ]
     simp only [Darboux.rho, schr, hι, extend_dot hj, ← extend_add hj, Pi.smul_apply, smul_eq_mul,
-      LinearMap.smul_apply, LinearMap.comp_apply, LinearMap.funLeft_apply, Function.comp_apply]
+      LinearMap.funLeft_apply]
     ring
   · intro u hu Φ hΦ
     obtain ⟨z, rfl⟩ := hu
     funext y
-    simp only [LinearMap.smul_apply, LinearMap.comp_apply, LinearMap.funLeft_apply, Function.comp_apply, Pi.smul_apply,
+    simp only [LinearMap.smul_apply, LinearMap.comp_apply, LinearMap.funLeft_apply, Pi.smul_apply,
       smul_eq_mul]
     rw [hheis _ Φ hΦ]
     obtain ⟨h1, h2⟩ := hx z

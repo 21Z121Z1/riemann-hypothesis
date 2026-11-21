@@ -44,8 +44,7 @@ theorem exists_stack_rank_eq {ρ e d : ℕ} (h : ρ + e ≤ d) (Y₁ : Matrix (F
     rw [← Module.finrank_eq_card_basis b, Module.finrank_fin_fun]
   have hb : ∀ i, b (Sum.inl i) = Y₁.row i := by
     intro i
-    simp only [b, Module.Basis.sumExtend, Module.Basis.reindex_apply, Module.Basis.coe_extend,
-      Equiv.symm_symm, Equiv.trans_apply, Equiv.sumCongr_apply]
+    simp only [b, Module.Basis.sumExtend, Module.Basis.reindex_apply, Module.Basis.coe_extend]
     rfl
   have hS : e ≤ Fintype.card (Module.Basis.sumExtendIndex hli) := by
     rw [Fintype.card_sum, Fintype.card_fin] at hcard; omega

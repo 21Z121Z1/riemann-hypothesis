@@ -64,7 +64,7 @@ theorem apolar_X_mul (P Q : MvPolynomial V ℝ) (x : V) :
           ∏ y ∈ Finset.univ.erase x, ((u y).factorial : ℝ) := by
         refine Finset.prod_congr rfl fun y hy => ?_
         have := Finset.ne_of_mem_erase hy
-        simp [Finsupp.single_apply, this.symm]
+        simp [this.symm]
       rw [h2]
       simp [Nat.factorial_succ]
       ring

@@ -73,7 +73,7 @@ theorem weighted_bound : ∀ (E : Type) [NormedAddCommGroup E] [InnerProductSpac
   intro E _ _ c α hc hα k m
   set B : E →L[ℝ] E →L[ℝ] ℝ := (-c) • innerSL ℝ with hBdef
   have hBy : ∀ y : E, B y y = -(c * ‖y‖ ^ 2) := fun y => by
-    simp [hBdef, real_inner_self_eq_norm_sq]
+    simp [hBdef]
     left
     first | exact real_inner_self_eq_norm_sq y | simp [innerSL_apply, real_inner_self_eq_norm_sq] | rfl
   have hfun : (fun y : E => Complex.exp (-((c * ‖y‖ ^ 2 : ℝ) : ℂ))) =

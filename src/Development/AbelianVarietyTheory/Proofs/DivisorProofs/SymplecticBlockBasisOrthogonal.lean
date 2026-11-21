@@ -117,7 +117,7 @@ theorem GlobalTheory.ThKTorus.exists_frameCo_of_basis : ∀ {F E : Type} [Field 
           have hcv : c (.inl k) = tAd F (t i)⁻¹ := hprod (fun i => (t i)⁻¹) i k hi
           rw [hcv, hb'v, hw, incM_vecMulVec, mul_vecMulVec_eq, mulVec_eq_tAd _ _ _ (hT.2.1 i)]
           ext r l
-          simp [Matrix.vecMulVec_apply, smul_mul_assoc]
+          simp [Matrix.vecMulVec_apply]
         · push_neg at hk
           have hcv : c (.inl k) = 1 := hone (fun i => (t i)⁻¹) k hk
           rw [hcv, one_smul]
@@ -128,7 +128,7 @@ theorem GlobalTheory.ThKTorus.exists_frameCo_of_basis : ∀ {F E : Type} [Field 
           have hcv : c (.inr k) = tAd F (t i) := hprod t i k hi
           rw [hcv, hb'v, hw, incM_vecMulVec, mul_vecMulVec_eq, mulVec_eq_tAd _ _ _ (hT.1 i)]
           ext r l
-          simp [Matrix.vecMulVec_apply, smul_mul_assoc]
+          simp [Matrix.vecMulVec_apply]
         · push_neg at hk
           have hcv : c (.inr k) = 1 := hone t k hk
           rw [hcv, one_smul]

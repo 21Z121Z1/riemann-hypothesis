@@ -40,9 +40,9 @@ theorem hermForm_pull {g g' : ℕ} (M : Matrix (Fin g') (Fin g) ℂ) (Hm : Matri
 def imBil {g : ℕ} (Hm : Matrix (Fin g) (Fin g) ℂ) : (Fin g → ℂ) →ₗ[ℝ] (Fin g → ℂ) →ₗ[ℝ] ℝ :=
   LinearMap.mk₂ ℝ (fun y w => (hermForm Hm y w).im)
     (fun a b w => by simp [hermForm, add_dotProduct])
-    (fun c a w => by simp [hermForm, smul_dotProduct, Complex.smul_im])
+    (fun c a w => by simp [hermForm, smul_dotProduct])
     (fun y a b => by simp [hermForm, Matrix.mulVec_add, dotProduct_add])
-    (fun c y a => by simp [hermForm, star_smul, Matrix.mulVec_smul, dotProduct_smul, Complex.smul_im])
+    (fun c y a => by simp [hermForm, star_smul, Matrix.mulVec_smul, dotProduct_smul])
 
 theorem eq_of_im_hermForm {g r : ℕ} {v : Fin r → Fin g → ℂ} (hv : Submodule.span ℝ (Set.range v) = ⊤)
     {H₁ H₂ : Matrix (Fin g) (Fin g) ℂ} (h : ∀ m m', (hermForm H₁ (v m) (v m')).im = (hermForm H₂ (v m) (v m')).im) :

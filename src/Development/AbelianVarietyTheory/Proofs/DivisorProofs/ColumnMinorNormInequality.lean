@@ -85,7 +85,7 @@ theorem det_expand {k : ℕ} {S : Finset (Fin g)} {i : Fin g} (e : Fin k ≃ S)
       exact hu l hl.2 hl.1)]
     simp
   · ext a b
-    simp [Matrix.updateCol_ne (Fin.succ_ne_zero b), hs]
+    simp [hs]
 
 theorem apply_sum_le (hw : IsNonarchimedean w) {ι : Type} (s : Finset ι) (f : ι → K) {r : ℝ} (hr : 0 ≤ r)
     (h : ∀ a ∈ s, w (f a) ≤ r) : w (∑ a ∈ s, f a) ≤ r := by

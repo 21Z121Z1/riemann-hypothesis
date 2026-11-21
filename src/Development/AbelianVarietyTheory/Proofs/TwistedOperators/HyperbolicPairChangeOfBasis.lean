@@ -79,7 +79,7 @@ theorem exists_adapted_basis (n : ℕ) (ε : Fin n → Bool) (e : Fin n → ℂ)
   let col : Fin n → Fin n → ℂ := fun j => if j = p then e else if j = q then e' else pr (Pi.single j 1)
   let P : Matrix (Fin n) (Fin n) ℂ := Matrix.of fun i j => col j i
   have hPcol : ∀ j, P *ᵥ Pi.single j 1 = col j := by
-    intro j; ext i; simp [P, mulVec_single_one]
+    intro j; ext i; simp [P]
   have hgram : ∀ a b, (Pᴴ * Jm ε * P) a b = hf d (col a) (col b) := by
     intro a b
     rw [hJ, Matrix.mul_apply]; simp only [Matrix.mul_diagonal]

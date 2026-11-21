@@ -123,7 +123,7 @@ end General
 theorem epsMul_comp {S : Type} [CommRing S] (a b : S) : spMap (epsMul a) ≫ spMap (epsMul b) = spMap (epsMul (a * b)) := by
   rw [spMap_spMap]
   congr 1
-  ext s <;> simp [epsMul, mul_assoc]
+  ext s <;> simp [epsMul]
 
 theorem isCombAtG_scale {E : Type} [Field E] [NumberField E] [IsCMField E] {H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E}
     {X : Scheme.{0}} {t : SAB H X} {S : Type} [CommRing S] {x : Sp S ⟶ X} {m : ℕ}

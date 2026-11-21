@@ -109,7 +109,7 @@ theorem eq_zero_of_pow_dvd (r : K[X]) (cs : Finset K) (b : ℕ)
     exact (Polynomial.isCoprime_X_sub_C_of_isUnit_sub (sub_ne_zero.mpr hxy).isUnit).pow
   have hdeg' : (∏ c ∈ cs, (Polynomial.X - Polynomial.C c) ^ b).natDegree = cs.card * b := by
     rw [Polynomial.natDegree_prod _ _ (fun c _ => pow_ne_zero _ (Polynomial.X_sub_C_ne_zero c))]
-    simp [Polynomial.natDegree_pow, Polynomial.natDegree_X_sub_C, mul_comm]
+    simp [Polynomial.natDegree_pow, mul_comm]
   have := Polynomial.natDegree_le_of_dvd hprod hr
   omega
 

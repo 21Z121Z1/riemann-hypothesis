@@ -112,7 +112,7 @@ private lemma exists_isCompact_integral_compl_sq_lt (μ : Measure ℂ) [NullSing
             rw [div_le_iff₀ (by positivity)]
             rw [div_lt_iff₀ hpos] at ha
             linarith
-        simp [Set.indicator_apply, hmem])
+        simp [hmem])
     simpa using h
   obtain ⟨n, hn⟩ := (hlim.eventually (gt_mem_nhds hη)).exists
   exact ⟨Kn n, hKc n, h0K n, hn⟩
@@ -167,12 +167,12 @@ theorem tendsto_integral_inner_germ_moving {α : Type} {l : Filter α} (μ : Mea
     have h1 : ‖⟪F x D, G x D⟫_ℂ‖ ≤ ‖F x D‖ * ‖G x D‖ := norm_inner_le_norm _ _
     have hP := mul_le_young_bounds_of_le_add ht hδ.le (norm_nonneg (F x D)) hGD
     by_cases hD : D ∈ K
-    · have hi1 : K.indicator (fun _ => (1 : ℝ)) D = 1 := by simp [Set.indicator_apply, hD]
-      have hi2 : Kᶜ.indicator (fun D => g D ^ 2) D = 0 := by simp [Set.indicator_apply, hD]
+    · have hi1 : K.indicator (fun _ => (1 : ℝ)) D = 1 := by simp [hD]
+      have hi2 : Kᶜ.indicator (fun D => g D ^ 2) D = 0 := by simp [hD]
       rw [hi1, hi2]
       exact h1.trans (hP.1 (hlD hD))
-    · have hi1 : K.indicator (fun _ => (1 : ℝ)) D = 0 := by simp [Set.indicator_apply, hD]
-      have hi2 : Kᶜ.indicator (fun D => g D ^ 2) D = g D ^ 2 := by simp [Set.indicator_apply, hD]
+    · have hi1 : K.indicator (fun _ => (1 : ℝ)) D = 0 := by simp [hD]
+      have hi2 : Kᶜ.indicator (fun D => g D ^ 2) D = g D ^ 2 := by simp [hD]
       rw [hi1, hi2]
       exact h1.trans hP.2
   have hsplit : ∫ D, (t * ‖F x D‖ ^ 2 + (Kᶜ.indicator (fun D => g D ^ 2) D + e x D ^ 2) / (2 * t) +

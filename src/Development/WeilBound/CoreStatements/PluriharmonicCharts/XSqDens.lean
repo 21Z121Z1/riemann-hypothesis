@@ -365,7 +365,7 @@ theorem part2 (c : σ → ℝ) (hc : c a₀ = 0) (n k : ℕ) (hk : 1 ≤ k) (i :
     · simp only [h0, ↓reduceIte, Pi.sub_apply, sub_mul, Finset.sum_sub_distrib]
       exact (K0 Q n hz).sub (K1 Q n hz)
     · by_cases h1 : (r : ℕ) = 1
-      · simp only [h0, h1, ↓reduceIte]
+      · simp only [h1, ↓reduceIte]
         exact K1 Q n hz
       · by_cases h2 : (r : ℕ) < 2 + 2 * i
         · simp only [h0, h1, h2, ↓reduceIte]
@@ -386,7 +386,7 @@ theorem part2 (c : σ → ℝ) (hc : c a₀ = 0) (n k : ℕ) (hk : 1 ≤ k) (i :
     · simp only [h0, ↓reduceIte]
       exact hx0.sub hx1
     · by_cases h1 : (r : ℕ) = 1
-      · simp only [h0, h1, ↓reduceIte]
+      · simp only [h1, ↓reduceIte]
         exact hx1
       · by_cases h2 : (r : ℕ) < 2 + 2 * i
         · simp only [h0, h1, h2, ↓reduceIte]

@@ -77,7 +77,7 @@ theorem im_ne_zero [IsTotallyComplex K] (φ : K →+* ℂ) (b : Module.Basis (Fi
     have hz : (-q.num) • b 0 + ((q.den : ℤ)) • b 1 = 0 := by
       apply RingOfIntegers.ext
       simp only [RingOfIntegers.coe_eq_algebraMap] at hK ⊢
-      simp only [zsmul_eq_mul, map_add, map_mul, map_intCast, map_neg, map_zero, map_natCast]
+      simp only [zsmul_eq_mul, map_add, map_mul, map_intCast, map_zero]
       push_cast at hK ⊢
       linear_combination hK
     have := Fintype.linearIndependent_iff.1 b.linearIndependent ![-q.num, (q.den : ℤ)]
@@ -128,7 +128,7 @@ theorem abs_im_eq (φ : K →+* ℂ) (b : Module.Basis (Fin 2) ℤ (𝓞 K)) (J 
       (b.repr (e j : 𝓞 K) 1 : ℂ) * ψ (b 1) := by
     intro j
     conv_lhs => rw [← b.sum_repr (e j : 𝓞 K)]
-    simp [map_sum, Fin.sum_univ_two, zsmul_eq_mul]
+    simp [Fin.sum_univ_two, zsmul_eq_mul]
   have hdet := Ideal.natAbs_det_basis_change b J e
   rw [Module.Basis.det_apply, Matrix.det_fin_two] at hdet
   simp only [Module.Basis.toMatrix_apply, Function.comp_apply] at hdet

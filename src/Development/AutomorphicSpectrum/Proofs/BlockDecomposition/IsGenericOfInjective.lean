@@ -52,9 +52,9 @@ theorem append_get {α : Type*} (A B : List α) (i : Fin (A.length + B.length)) 
     Fin.append A.get B.get i = (A ++ B).get (Fin.cast (List.length_append (as := A) (bs := B)).symm i) := by
   refine Fin.addCases (fun i => ?_) (fun i => ?_) i
   · rw [Fin.append_left]
-    simp [List.getElem_append]
+    simp
   · rw [Fin.append_right]
-    simp [List.getElem_append]
+    simp
 
 theorem word_append_aux₁ (A B : List (IrrGL k)) {r t : ℕ} (hA : ∑ a, (A.get a).1 = r) (hB : ∑ a, (B.get a).1 = t)
     (h' : ∑ a, (Fin.append A.get B.get a).1 = r + t) :

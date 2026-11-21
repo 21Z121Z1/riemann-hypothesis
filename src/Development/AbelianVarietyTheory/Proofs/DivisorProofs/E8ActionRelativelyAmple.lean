@@ -151,7 +151,7 @@ theorem exists_bound_relAmple : ∀ (W : Matrix (Fin 8) (Fin 8) ℤ), IsE8 W →
     rw [map_zsmul, ← pull_comp, ← Over.comp_left, comp_lift, hact i uv.1, hact i uv.2]
     rfl
   rw [cls_linComb hL, cls_linComb c.isLB, Fin.sum_univ_two]
-  simp only [Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.vecHead]
+  simp only [Matrix.cons_val_zero, Matrix.cons_val_one]
   rw [pull_id, hpf, hPL]
   simp only [Matrix.sub_apply, Matrix.smul_apply, smul_eq_mul, sub_smul, mul_smul, Finset.sum_sub_distrib,
     Finset.smul_sum]

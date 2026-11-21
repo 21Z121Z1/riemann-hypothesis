@@ -55,9 +55,9 @@ theorem lat_charpoly_blockDiagonal {R n o : Type*} [CommRing R] [Fintype n] [Dec
     · subst hk
       by_cases hij : i = j
       · subst hij
-        simp [Matrix.charmatrix_apply, Matrix.blockDiagonal_apply]
-      · simp [Matrix.charmatrix_apply, Matrix.blockDiagonal_apply, Matrix.diagonal_apply, hij]
-    · simp [Matrix.charmatrix_apply, Matrix.blockDiagonal_apply, Matrix.diagonal_apply, hk]
+        simp [Matrix.blockDiagonal_apply]
+      · simp [Matrix.blockDiagonal_apply, hij]
+    · simp [Matrix.blockDiagonal_apply, hk]
   rw [Matrix.charpoly, h, Matrix.det_blockDiagonal]
   rfl
 

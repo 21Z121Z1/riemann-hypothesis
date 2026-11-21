@@ -29,7 +29,7 @@ variable {n r : ℕ} (X Y : Matrix (Fin n) (Fin r) E) (a b : Matrix (Fin r) (Fin
 theorem projC_mul_X (haX : a * X = 0) (hbX : b * X = 1) :
     (1 - X * b - Y * a) * X = 0 := by
   simp only [Matrix.sub_mul, Matrix.one_mul, Matrix.mul_assoc, hbX, haX, Matrix.mul_one, Matrix.mul_zero,
-    sub_self, sub_zero]
+    sub_self]
 
 theorem projC_mul_Y (haY : a * Y = 1) (hbY : b * Y = 0) :
     (1 - X * b - Y * a) * Y = 0 := by
@@ -44,7 +44,7 @@ theorem a_mul_projC (haX : a * X = 0) (haY : a * Y = 1) :
 theorem b_mul_projC (hbX : b * X = 1) (hbY : b * Y = 0) :
     b * (1 - X * b - Y * a) = 0 := by
   simp only [Matrix.mul_sub, Matrix.mul_one, ← Matrix.mul_assoc, hbX, hbY, Matrix.zero_mul, Matrix.one_mul,
-    sub_zero, sub_self]
+    sub_self]
 
 theorem projC_idem (haX : a * X = 0) (haY : a * Y = 1) (hbX : b * X = 1) (hbY : b * Y = 0) :
     (1 - X * b - Y * a) * (1 - X * b - Y * a) = 1 - X * b - Y * a := by

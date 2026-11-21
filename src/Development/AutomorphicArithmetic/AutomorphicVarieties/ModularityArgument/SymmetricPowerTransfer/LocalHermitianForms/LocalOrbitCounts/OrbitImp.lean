@@ -90,7 +90,7 @@ private theorem coe_scal (s : Kˣ) :
     ((Matrix.GeneralLinearGroup.scalar (Fin 2) s : GL (Fin 2) K) : Matrix (Fin 2) (Fin 2) K) =
       (s : K) • (1 : Matrix (Fin 2) (Fin 2) K) := by
   ext a b
-  by_cases h : a = b <;> simp [Matrix.GeneralLinearGroup.scalar, Matrix.one_apply, h]
+  by_cases h : a = b <;> simp [Matrix.GeneralLinearGroup.scalar, h]
 
 private theorem lift_mat (A : Matrix (Fin 2) (Fin 2) K) (h : ∀ s t, A s t ∈ (algebraMap O K).range) :
     ∃ A₀ : Matrix (Fin 2) (Fin 2) O, A₀.map (algebraMap O K) = A := by

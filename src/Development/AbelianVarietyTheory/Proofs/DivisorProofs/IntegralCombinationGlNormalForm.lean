@@ -118,7 +118,7 @@ theorem mem_iff_repr {d : ℕ} (L : Submodule 𝒪[k] (Fin d → k)) [L.IsLattic
 theorem mul_toMatrix_apply {n d : ℕ} (bK : Module.Basis (Fin d) k (Fin d → k)) (Y : Matrix (Fin n) (Fin d) k) (i j) :
     (Y * (bK.toMatrix (Pi.basisFun k (Fin d)))ᵀ) i j = bK.repr (Y i) j := by
   conv_rhs => rw [← (Pi.basisFun k (Fin d)).sum_repr (Y i)]
-  simp [Matrix.mul_apply, Module.Basis.toMatrix_apply, Finsupp.smul_apply, mul_comm]
+  simp [Matrix.mul_apply, Module.Basis.toMatrix_apply]
 
 end GlobalTheory.IntRowLattice
 

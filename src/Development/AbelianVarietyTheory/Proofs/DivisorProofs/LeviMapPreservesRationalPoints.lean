@@ -106,7 +106,7 @@ theorem levi_eq {d d₁ : ℕ} {J : Matrix (Fin d) (Fin d) E} {J₁ : Matrix (Fi
     have hs : incV F (Pi.single j (1 : E)) = Pi.single j 1 := by
       ext k; by_cases hk : k = j
       · subst hk; simp [incV]
-      · simp [incV, Pi.single_apply, hk]
+      · simp [incV, hk]
     rw [hs] at this
     simpa [Matrix.mulVec_single_one] using this
   exact Subtype.ext (Units.ext hmat)

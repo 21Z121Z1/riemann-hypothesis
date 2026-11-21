@@ -218,7 +218,7 @@ theorem mem_support_wholeSym {a : ℕ → Bool} {R : Option ℝ} {g : ℕ} {x : 
 theorem parOf_rootSym (a : ℕ → Bool) (R : Option ℝ) (τ : E →+* ℂ) (i : ℕ) : parOf (rootSym Dw a R τ i) = R := by
   have h : (rootSym Dw a R τ i).support.Nonempty := by
     unfold rootSym
-    split_ifs <;> simp [Finsupp.support_single_ne_zero]
+    split_ifs <;> simp
   rw [parOf, dif_pos h]
   exact (mem_support_rootSym h.choose_spec).2
 

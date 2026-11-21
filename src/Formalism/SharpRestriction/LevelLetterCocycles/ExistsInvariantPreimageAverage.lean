@@ -61,7 +61,7 @@ theorem letGamma_idempotent (g₀ : PowerSeries O →ₐ[O] PowerSeries O) (i : 
   rw [e]
   by_cases h : j = i
   · subst h; simp [letE]
-  · simp [letE, Pi.single_apply, h]
+  · simp [letE, h]
 
 theorem idempotent_mul_self' (i : ZMod n) : (letE i : LetA O n) * letE i = letE i := by
   first

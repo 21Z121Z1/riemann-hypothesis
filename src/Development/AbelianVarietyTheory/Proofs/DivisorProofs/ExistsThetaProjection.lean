@@ -30,7 +30,7 @@ theorem proj_exists (p : ℕ) [Fact p.Prime] (O : Type) [CommRing O] [Fact ¬IsU
     simp [Finset.sum_apply, Pi.single_apply]
   funext i
   conv_rhs => rw [hw]
-  simp only [Matrix.mulVecLin_apply, Matrix.mulVec, dotProduct, M, Finset.sum_apply, Pi.smul_apply,
+  simp only [M, Finset.sum_apply, Pi.smul_apply,
     map_sum, theta_map_smul_fontaine σ f hf, map_mul]
   show (M *ᵥ _) i = _
   simp only [Matrix.mulVec, dotProduct, M]

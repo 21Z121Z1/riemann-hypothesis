@@ -84,7 +84,7 @@ theorem isSNC_of_local_power : ∀ (X : Type) [TopologicalSpace X] [T2Space X]
   set ψ' : OpenPartialHomeomorph X (Fin 1 → ℂ) :=
     (ψ.restrOpen V hVo).transHomeomorph (pa_aff 1 one_ne_zero (ψ x)) with hψ'
   have hsrc : ψ'.source = ψ.source ∩ V := by
-    simp [ψ', OpenPartialHomeomorph.restrOpen_source]
+    simp [ψ']
   have hψ'app : ∀ y, ψ' y = ψ y - ψ x := by
     intro y
     simp [ψ', pa_aff]

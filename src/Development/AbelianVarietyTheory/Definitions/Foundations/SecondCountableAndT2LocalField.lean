@@ -221,7 +221,7 @@ theorem not_isSelfDual_one (ν : Measure k) : ¬ IsSelfDual (1 : AddChar k Circl
   obtain ⟨_, _⟩ := secondCountable_and_t2_local_field (k := k)
   have := noncompact (k := k)
   have h := h2 _ indicator_mem_SB
-  simp [Measure.real, measure_univ_of_isAddLeftInvariant ν, Set.indicator_of_mem (zero_mem 𝒪[k] : (0 : k) ∈ (𝒪[k] : Set k))] at h
+  simp [Measure.real, measure_univ_of_isAddLeftInvariant ν] at h
 
 omit [MeasurableSpace k] [BorelSpace k] in
 

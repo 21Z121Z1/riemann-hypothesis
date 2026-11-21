@@ -45,6 +45,6 @@ example (k : ℂ) : baseMul (n := 1) (of fun _ _ => k) (Pi.single ∅ 1) Finset.
   have e₄ : (({1} : Finset (Fin 2)).filter (· = 0)).card = 0 := by decide
   have e₅ : Fin.castAdd 1 (0 : Fin 1) = (0 : Fin 2) := rfl
   have e₆ : Fin.natAdd 1 (0 : Fin 1) = (1 : Fin 2) := rfl
-  simp [baseMul, wedge, sgn, e₁, e₄, e₅, e₆]
+  simp [baseMul, wedge, sgn, e₁, e₄, e₅]
 
 end GlobalTheory.TorsionForm

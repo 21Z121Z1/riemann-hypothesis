@@ -51,7 +51,7 @@ theorem surjective_of_integral_sq_card : ∀ (R K : Type) [CommRing R] [IsDomain
       | tmul k d =>
         rw [Algebra.TensorProduct.tmul_mul_tmul, hΛ d, _root_.mul_one]
         simp [Algebra.TensorProduct.algebraMap_apply, Algebra.TensorProduct.tmul_mul_tmul,
-          Algebra.smul_def, TensorProduct.tmul_smul, TensorProduct.smul_tmul']
+          Algebra.smul_def]
         rw [← Algebra.smul_def, ← Algebra.smul_def, TensorProduct.tmul_smul, TensorProduct.smul_tmul']
     simp only [ΛK, ← map_mul, key]
     rw [map_mul, AlgHomClass.commutes]

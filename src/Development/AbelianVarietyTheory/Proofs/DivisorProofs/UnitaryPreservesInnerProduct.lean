@@ -15,7 +15,7 @@ theorem integral_mul_conj_eq_inner {X : Type} [MeasurableSpace X] {μ : Measure 
   refine integral_congr_ae ?_
   filter_upwards [hu.coeFn_toLp, hv.coeFn_toLp] with x hx hy
   rw [hx, hy]
-  simp [mul_comm]
+  simp
 
 theorem eLpNorm_two_eq {X : Type} [MeasurableSpace X] {μ : Measure X} {u v : X → ℂ}
     (h : ∫⁻ x, ‖u x‖ₑ ^ 2 ∂μ = ∫⁻ x, ‖v x‖ₑ ^ 2 ∂μ) : eLpNorm u 2 μ = eLpNorm v 2 μ := by

@@ -86,7 +86,7 @@ theorem two_mul_functional_eq_sum_diag (X : Type) [AddCommGroup X] [Module.Finit
       refine Finset.sum_congr rfl fun j _ => ?_
       ring
     conv_lhs => rw [hβ]
-    simp [map_sum, map_smul, smul_eq_mul]
+    simp [map_sum, map_smul]
   let ι := (Fin n × Fin n) × Fin 3
   let Y : ι → X := fun p => ![e p.1.1 + e p.1.2, e p.1.1, e p.1.2] p.2
   let A : ι → ℤ := fun p => ![ℓ (B p.1.1 p.1.2), -ℓ (B p.1.1 p.1.2), -ℓ (B p.1.1 p.1.2)] p.2

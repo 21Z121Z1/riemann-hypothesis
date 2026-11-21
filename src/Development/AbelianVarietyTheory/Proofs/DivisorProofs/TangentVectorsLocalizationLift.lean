@@ -40,14 +40,14 @@ theorem isLieBasis_scale {R : Type} [CommRing R] {G : Over (Sp R)} [GrpObj G] {n
     rw [key, hc]
     congr 1
     funext i
-    simp [mul_assoc]
+    simp
   · replace hc' := (Chart.isLieComb_iff _ _ _).mp hc'
     rw [key] at hc'
     have := huniq _ ((Chart.isLieComb_iff _ _ _).mpr hc')
     funext i
     have hi := congrFun this i
     rw [← hi]
-    simp [mul_assoc]
+    simp
 
 end GlobalTheory.LieFrameLoc
 

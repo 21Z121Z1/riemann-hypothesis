@@ -37,7 +37,7 @@ theorem continuous_glue : Continuous (glue (n := n) (R := R) hd) := by
 
 theorem glue_pr (y : Fin n × Fin d → R) : glue hd (pr1 hd y, pr2 hd y) = y := by
   funext k
-  simp only [glue, pr1, pr2]
+  simp only [glue]
   rcases h : idx hd k with q | q
   · show y ((idx hd).symm (Sum.inl q)) = y k; rw [← h, Equiv.symm_apply_apply]
   · show y ((idx hd).symm (Sum.inr q)) = y k; rw [← h, Equiv.symm_apply_apply]

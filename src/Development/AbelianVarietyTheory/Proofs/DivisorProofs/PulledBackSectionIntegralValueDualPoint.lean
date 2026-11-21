@@ -19,7 +19,7 @@ theorem top_le_of_redE {A : Type} [CommRing A] {X : Scheme.{0}} (x : Sp (DualNum
   have hw : (redE A).base w = z := by
     simp only [w, redE, spMap, Spec.map_base]
     refine PrimeSpectrum.ext (Ideal.ext fun t => ?_)
-    simp only [TopCat.hom_ofHom, ContinuousMap.coe_mk, PrimeSpectrum.comap_asIdeal, Ideal.mem_comap,
+    simp only [
       CommRingCat.hom_ofHom]
     have hn : TrivSqZeroExt.inr (TrivSqZeroExt.snd t) ∈ z.asIdeal := by
       apply z.isPrime.mem_of_pow_mem 2

@@ -118,7 +118,7 @@ theorem lift_eq_cI_io : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : 
   erw [hk2]
   show _ = (cIOf (pk W) (lvP W) f.g t j • ((f.row t).io j G).1 ((pk W).ItY j P v)) g
   rw [hio]
-  simp only [Pi.smul_apply, cIOf, Complex.real_smul, smul_eq_mul, nsmul_eq_mul]
+  simp only [Pi.smul_apply, cIOf, Complex.real_smul, smul_eq_mul]
   push_cast
   ring
 

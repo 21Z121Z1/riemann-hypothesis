@@ -73,7 +73,7 @@ theorem deltaForm_sum {Γ A K M : Type} [Group Γ] [Group A] [Field K] [AddCommG
   · exact Finset.sum_congr rfl fun γ h => if_pos (hA.mem_toFinset.1 h)
   · intro γ h
     rw [Function.mem_support] at h
-    simp only [Finset.coe_sort_coe, Set.Finite.coe_toFinset]
+    simp only [Set.Finite.coe_toFinset]
     by_contra h'
     exact h (if_neg h')
 
@@ -417,7 +417,7 @@ theorem form_eq [Fintype C] (c : Fin N → ℂ) :
       ∑ k, ∑ k', star (c (e.symm (b, k))) * (pk k k' * c (e.symm (b, k'))) := by
     intro b
     simp only [blk, map_sum, LinearMap.sum_apply, LinearMap.map_smulₛₗ, LinearMap.smul_apply, map_smul, smul_eq_mul, hpk, hm,
-      RingHom.id_apply, Finset.mul_sum]
+      Finset.mul_sum]
     rw [Finset.sum_comm]
     refine Finset.sum_congr rfl fun k _ => Finset.sum_congr rfl fun k' _ => ?_
     simp only [starRingEnd_apply]

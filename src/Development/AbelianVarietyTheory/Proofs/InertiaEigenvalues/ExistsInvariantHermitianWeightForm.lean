@@ -75,9 +75,9 @@ theorem exists_form_of_bounded {ι : Type} [Fintype ι] [DecidableEq ι]
     refine Continuous.integral_pos_of_hasCompactSupport_nonneg_nonzero (x := 1)
       (Complex.continuous_re.comp (hφc x x)) (HasCompactSupport.of_compactSpace _) ?_ ?_
     · intro k
-      simp only [Pi.zero_apply, Function.comp_apply, hre]
+      simp only [Pi.zero_apply, hre]
       exact Finset.sum_nonneg fun i _ => sq_nonneg _
-    · simp only [Function.comp_apply, hre]
+    · simp only [hre]
       have hN1 : N 1 = 1 := by simp [N]
       rw [hN1, Matrix.one_mulVec]
       obtain ⟨i, hi⟩ := Function.ne_iff.mp hx

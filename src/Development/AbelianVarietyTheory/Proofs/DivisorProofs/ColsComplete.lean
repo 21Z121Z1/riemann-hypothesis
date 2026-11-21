@@ -119,7 +119,7 @@ theorem cols_complete : ∀ (C : Type) [Field C] (N : ℕ) (β : Matrix (Fin N) 
       have : (fun i : Fin β.rank => β *ᵥ Pi.single (k (Fin.castLE (by omega) i)) (1:C)) =
           (β.col ∘ a) ∘ e := by
         funext i
-        simp [k, Matrix.mulVec_single_one]
+        simp [k]
       rw [this]
       exact hli.comp e e.injective)
   refine ⟨k, g, ?_⟩

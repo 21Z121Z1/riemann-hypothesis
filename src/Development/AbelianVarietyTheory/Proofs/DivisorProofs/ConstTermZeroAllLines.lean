@@ -82,7 +82,7 @@ theorem exists_isom_of_ne (hσ : ∀ x, σ (σ x) = x) (hsk : ∀ i j, σ (J j i
     intro z
     rw [Matrix.add_mulVec, Matrix.one_mulVec, Matrix.smul_mulVec, Matrix.vecMulVec_mulVec, dotProduct_comm]
     funext i
-    simp [form, mul_comm, mul_left_comm, mul_assoc]
+    simp [form, mul_assoc]
   have hσβ : σ β ≠ 0 := by simpa using hxy
   have huu : form σ J u u = σ β - β := by
     rw [hu, form_add_left, form_add_right, form_add_right, form_smul_left, form_smul_left, form_smul_right,
@@ -213,7 +213,7 @@ theorem unip_eq_unipSp (hσ : ∀ x, σ (σ x) = x) {n n₁ : ℕ} {H : Plane E 
     have h0 : q ᵥ* incM F H.ι = 0 := by
       funext k
       have := hk k
-      simp only [formA, Matrix.mulVec_single_one, GlobalTheory.ThKLineCusp.incV_mulVec] at this
+      simp only [formA, Matrix.mulVec_single_one] at this
       rw [← hq] at this
       simpa [Matrix.vecMul, dotProduct, incM, incV, Matrix.mulVec, Pi.single_apply, mul_comm] using this
     show (incM F H.ι *ᵥ w) ⬝ᵥ q = 0

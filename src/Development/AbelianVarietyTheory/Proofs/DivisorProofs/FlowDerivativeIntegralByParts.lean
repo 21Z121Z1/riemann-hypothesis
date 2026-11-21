@@ -46,7 +46,7 @@ theorem sq_lintegral_le_measure_univ_mul_lintegral_sq {X : Type} [MeasurableSpac
     (∫⁻ y, h y ∂ν) ^ 2 ≤ ν Set.univ * ∫⁻ y, h y ^ 2 ∂ν := by
   have H := ENNReal.lintegral_mul_le_Lp_mul_Lq ν Real.HolderConjugate.two_two
     (f := fun _ => 1) (g := h) aemeasurable_const hh
-  simp only [Pi.mul_apply, one_mul, ENNReal.one_rpow, lintegral_const, one_mul, ENNReal.rpow_two] at H
+  simp only [Pi.mul_apply, one_mul, lintegral_const, one_mul, ENNReal.rpow_two] at H
   have e2 : ∀ a : ℝ≥0∞, (a ^ (1 / 2 : ℝ)) ^ 2 = a := fun a => by
     rw [← ENNReal.rpow_natCast, ← ENNReal.rpow_mul]; norm_num
   refine (pow_le_pow_left' H 2).trans (le_of_eq ?_)

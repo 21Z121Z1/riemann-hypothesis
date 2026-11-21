@@ -312,7 +312,7 @@ def colsEquiv (ιi : Γ →* Gi) (ψ : K →* kˣ) (π : Representation k Gi V) 
     apply Subtype.ext
     ext ξ y
     obtain ⟨_, hT2⟩ := T.2
-    have e : y = ((1 : Gi), y.2) * (y.1, (1 : Gf)) := by simp [Prod.ext_iff]
+    have e : y = ((1 : Gi), y.2) * (y.1, (1 : Gf)) := by simp
     show (T : V →ₗ[k] (Gi × Gf → k)) (π y.1 ξ) (1, y.2) = (T : V →ₗ[k] (Gi × Gf → k)) ξ y
     rw [hT2, ← e]
   right_inv f := by

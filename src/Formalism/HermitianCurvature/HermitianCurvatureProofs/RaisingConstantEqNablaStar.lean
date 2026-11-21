@@ -925,7 +925,7 @@ theorem mA_star (Y : ℂ) (hY : star Y = Y) : mA P Y = star (lA P (Y - 1)) := by
     (fun π π' h => by
       beta_reduce
       rw [rho_up_same P hj h]
-      simp [hY, hY', Complex.conj_ofReal]
+      simp [hY, Complex.conj_ofReal]
       try ring)
   rw [hs]
   unfold ggiA

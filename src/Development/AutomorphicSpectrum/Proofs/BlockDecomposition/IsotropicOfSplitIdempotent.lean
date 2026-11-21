@@ -47,7 +47,7 @@ theorem exists_orthogonal_pair [NumberField E] (σ : E →ₐ[F] E) (hσ : ∀ t
     rw [← hPd]
     simp only [hf, Matrix.mul_apply, Matrix.transpose_apply, Matrix.map_apply, Finset.sum_mul]
     refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun j _ => ?_
-    simp only [AlgHom.coe_toRingHom, RingHom.coe_coe]
+    simp only [RingHom.coe_coe]
     ring
   have hij : (⟨0, by omega⟩ : Fin M) ≠ ⟨1, by omega⟩ := by simp
   refine ⟨fun k => P k ⟨0, by omega⟩, fun k => P k ⟨1, by omega⟩, ?_, ?_, ?_, ?_⟩

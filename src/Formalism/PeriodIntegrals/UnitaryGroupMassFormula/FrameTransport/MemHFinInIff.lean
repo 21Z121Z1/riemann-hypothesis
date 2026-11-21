@@ -181,7 +181,7 @@ theorem mem_HFinIn_iff (hinj : Function.Injective (inclR (F := F) (E := E) R))
     apply inj
     simp only [Matrix.map_mul, cT_map_incl, ← ha]
     have hg := g.2
-    simp only [HA, HR, Formalism.UG.UJ, JR, Subgroup.mem_mk, Submonoid.mem_mk, Subsemigroup.mem_mk,
+    simp only [HR, Formalism.UG.UJ, JR, Subgroup.mem_mk, Submonoid.mem_mk, Subsemigroup.mem_mk,
       Set.mem_setOf_eq] at hg
     exact hg
 

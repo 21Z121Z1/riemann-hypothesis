@@ -72,7 +72,7 @@ theorem isAutOn_realConj (hCM : IsCMExt F E σ) (ha : a ∈ infPts σ J) (hK : �
     have hk2 : a⁻¹ * k * a ∈ K₂ := (hK _).2 (by simpa [mul_assoc] using hk)
     refine ⟨fun g => ψ (g * (a⁻¹ * k * a)), Submodule.subset_span ⟨⟨_, hk2⟩, rfl⟩, ?_⟩
     funext g
-    simp [LinearMap.funLeft_apply, Function.comp, mul_assoc]
+    simp [LinearMap.funLeft_apply, mul_assoc]
   · have := h.zfin
     refine Submodule.finiteDimensional_of_le
       (S₂ := (Submodule.span ℂ {f | ∃ z, IsCentral σ J z ∧ f = dop z ψ}).map

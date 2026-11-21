@@ -62,7 +62,7 @@ theorem reframe_vert : ∀ {E : Type} [NormedAddCommGroup E] [NormedSpace ℂ E]
     ext d
     · simp [reframe, vert]
     · simp [reframe, vert, hNdef, Matrix.vecMul, dotProduct, Finset.sum_add_distrib, add_mul,
-        Finset.smul_sum, mul_assoc, Pi.single_apply]
+        Pi.single_apply]
   have hder : HasLineDerivAt ℝ (reframe τ γ) ((0 : E), Pi.single a (1 : ℂ) ᵥ* N) P (vert E a) := by
     unfold HasLineDerivAt
     rw [hline]

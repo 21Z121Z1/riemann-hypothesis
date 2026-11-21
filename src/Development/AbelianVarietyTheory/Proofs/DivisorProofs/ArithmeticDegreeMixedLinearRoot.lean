@@ -60,7 +60,7 @@ theorem num_lin {V : Type} [AddCommGroup V] [Module ℝ V] {n : ℕ}
       funext j
       refine Fin.cases ?_ (fun k => ?_) j
       · simp
-      · simp [Function.update, Equiv.swap_apply_def]
+      · simp [Function.update]
     rw [← h4, hf]
   simp only [Function.Embedding.coeFn_mk, h3, Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
   push_cast

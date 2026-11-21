@@ -61,7 +61,7 @@ theorem isSDLat_pi (E : Type) [Field E] [NumberField E] [StarRing E] (n : ℕ) :
       rw [Finset.sum_eq_single i]
       · simp
       · intro j _ hj
-        simp [Pi.single_apply, hj]
+        simp [hj]
       · simp
     rwa [e] at this
 

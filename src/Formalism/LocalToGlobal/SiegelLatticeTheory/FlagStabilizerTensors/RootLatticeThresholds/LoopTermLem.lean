@@ -65,7 +65,7 @@ theorem star_dot_conjT {n m : Type*} [Fintype n] [Fintype m] (Q : Matrix n m ℂ
 theorem hJ_smul_real {n : ℕ} (ε : Fin n → Bool) (r s : ℝ) (x y : Fin n → ℂ) :
     hJ ε ((r : ℂ) • x) ((s : ℂ) • y) = ((r * s : ℝ) : ℂ) * hJ ε x y := by
   simp only [hJ]
-  simp [Matrix.mulVec_smul, smul_eq_mul]
+  simp [Matrix.mulVec_smul]
   try push_cast
   try ring
 

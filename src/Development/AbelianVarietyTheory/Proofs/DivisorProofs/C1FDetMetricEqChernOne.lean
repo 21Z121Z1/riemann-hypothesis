@@ -543,7 +543,7 @@ theorem lineVec_eq_gsLow (hG : G.PosDef) (x : ℂ) : ∃ t : ℂ, lineVec x =
   generalize (√(G 1 1).re : ℝ) = a at *
   generalize (√G.det.re : ℝ) = d at *
   funext i
-  fin_cases i <;> simp [lineVec, mulVec, dotProduct, Fin.sum_univ_two, ← ha] <;> field_simp
+  fin_cases i <;> simp [lineVec, ← ha] <;> field_simp
   ring
 
 variable {k : Type} [CommRing k] {X : Scheme.{0}} {p : X ⟶ Sp k} {σ : k →+* ℂ}

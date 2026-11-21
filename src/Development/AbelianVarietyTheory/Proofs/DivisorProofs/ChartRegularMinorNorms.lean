@@ -151,7 +151,7 @@ theorem exists_maxFun : ∀ {F : Type} [Field F] [NumberField F] {Y : Var F} {C 
     have h1 := hrn i v hv e y trivial z yt (fun _ => c i) hz hyt (htop.trans ((Scheme.Hom.preimage_mono yt) (hU₁ i)))
     have h2 := hlg i
     have e1 : Finset.Iic i = Finset.univ.filter fun l : Fin g => (l : ℕ) < (i : ℕ) + 1 := by
-      ext l; simp [Nat.lt_succ_iff]
+      ext l; simp
     have e2 : Finset.Iio i = Finset.univ.filter fun l : Fin g => (l : ℕ) < (i : ℕ) := by
       ext l; simp
     have e3 : valAt y.1 (genAt (A i).D (below y.1) * d (below y.1) i) =

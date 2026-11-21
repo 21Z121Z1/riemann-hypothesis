@@ -237,7 +237,7 @@ theorem tilde_lattice_restrict_mem {N n : ℕ} (hN : N = n + 1) {ST SG : Finset 
   have h1 : LinearMap.funLeft E E Fin.castSucc (s • v) = x := by
     rw [← hab]
     funext i
-    simp [LinearMap.funLeft_apply, incl, eLast, Pi.single_apply, Fin.castSucc_ne_last]
+    simp [LinearMap.funLeft_apply, incl, eLast, Fin.castSucc_ne_last]
   have h2 : (s • v) (Fin.last n) = algebraMap (𝓞 E) E c := by
     rw [← hab]
     simp [incl, eLast, Algebra.smul_def]

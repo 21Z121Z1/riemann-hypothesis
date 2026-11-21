@@ -177,7 +177,7 @@ end CMObj
 theorem mem_psiBar_of_notMem_psi (H : Host E) (τ : E →+* ℂ) (h : τ ∉ psi H) : τ ∈ psiBar H := by
   have h1 : τ (H.rt : E) ^ 2 = H.rt0 ^ 2 := by
     have := congrArg (fun a : 𝓞 E => τ (a : E)) H.rt_sq
-    simp only [RingOfIntegers.coe_eq_algebraMap, map_pow, map_neg, map_natCast] at this
+    simp only [map_pow, map_neg, map_natCast] at this
     rw [H.sqrt_neg_disc_sq]; exact this
   rcases sq_eq_sq_iff_eq_or_eq_neg.1 h1 with h2 | h2
   · exact absurd h2 h

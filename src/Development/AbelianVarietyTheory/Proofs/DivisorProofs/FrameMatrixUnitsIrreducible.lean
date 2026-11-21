@@ -89,7 +89,7 @@ theorem exists_path : ∀ (L : Type) [Field L] (ι : Type) [Fintype ι] (n : ι 
     rw [← Spec.map_comp, ← Spec.map_id]
     congr 1
     ext r
-    simp [c, hf]
+    simp
   let B : ∀ a, Matrix (Fin (n a)) (Fin (n a)) Γ(Spec (CommRingCat.of R), ⊤) := fun a =>
     ((Scheme.ΓSpecIso (CommRingCat.of R)).inv.hom.comp (algebraMap L[X] R)).mapMatrix (line (A a))
   have hval : ∀ (x : L) (hx : IsUnit ((evalRingHom x) p)) a i j,

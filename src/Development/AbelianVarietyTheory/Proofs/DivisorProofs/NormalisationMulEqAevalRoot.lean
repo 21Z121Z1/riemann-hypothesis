@@ -37,7 +37,7 @@ theorem tensor_exists_smul_eq_eval₂ (S K L : Type) [CommRing S] [IsDomain S]
     obtain ⟨p, hp⟩ := AdjoinRoot.mk_surjective (φ d)
     have hd : d = aeval t p := by
       rw [aeval_algHom_apply, AdjoinRoot.aeval_eq, hp]
-      simp [t]
+      simp
     refine ⟨C ⟨s • l, hint⟩ * p.map (algebraMap S (integralClosure S L)), s, hs, ?_⟩
     rw [eval₂_mul, eval₂_C, eval₂_map]
     have : (gA.toRingHom.comp (algebraMap S (integralClosure S L))) =

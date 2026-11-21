@@ -105,7 +105,7 @@ theorem moved_coord_mem {F E : Type} [Field F] [NumberField F] [Field E] [Number
     set a : 𝓞 F := (m' : 𝓞 F) * ⟨(D₀ : F) * q, hq⟩
     have ha : ((m : F) * (a : F)) = ((m₁ * m₂ * D₀ : ℕ) : F) * q := by
       rw [hmm]
-      simp only [a, map_mul, map_natCast]
+      simp only [a]
       show (m : F) * ((m' : F) * ((D₀ : F) * q)) = _
       ring
     rw [hc, ← ha]

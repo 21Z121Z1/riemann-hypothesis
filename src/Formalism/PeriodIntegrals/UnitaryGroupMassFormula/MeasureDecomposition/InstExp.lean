@@ -73,7 +73,7 @@ theorem exponent_fixed_instance : InstExpFix := by
       funext i
       first
         | exact Pi.exp_apply _ _
-        | simp [Pi.exp_def]
+        | simp
         | rfl
     first
       | rw [Matrix.exp_conj _ _ hunit, hd]

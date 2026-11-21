@@ -41,11 +41,11 @@ theorem fromRows_mul_fromCols_split {R : Type} [CommRing R] {p q : ℕ}
     Matrix.fromRows (J' * (1 - S' * S)) S * Matrix.fromCols J S' = 1 := by
   rw [Matrix.fromRows_mul_fromCols]
   have e1 : J' * (1 - S' * S) * J = 1 := by
-    simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.one_mul, Matrix.mul_assoc,
+    simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.mul_assoc,
       h0, Matrix.mul_zero, sub_zero, hJ]
   have e2 : J' * (1 - S' * S) * S' = 0 := by
-    simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.one_mul, Matrix.mul_assoc,
-      hS, Matrix.mul_zero, sub_self]
+    simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.mul_assoc,
+      hS, sub_self]
   rw [e1, e2, h0, hS, Matrix.fromBlocks_one]
 
 theorem splitExact_of_rank : ∀ (R : Type) [CommRing R] (p q : ℕ) (J : Matrix (Fin p ⊕ Fin q) (Fin p) R) (S : Matrix (Fin q) (Fin p ⊕ Fin q) R), S * J = 0 → (∃ J' : Matrix (Fin p) (Fin p ⊕ Fin q) R, J' * J = 1) → (∃ S' : Matrix (Fin p ⊕ Fin q) (Fin q) R, S * S' = 1) → (∀ S' : Matrix (Fin p ⊕ Fin q) (Fin q) R, S * S' = 1 → IsUnit (Matrix.fromCols J S').det) ∧ ∀ v, S.mulVec v = 0 ↔ ∃ w, J.mulVec w = v := by

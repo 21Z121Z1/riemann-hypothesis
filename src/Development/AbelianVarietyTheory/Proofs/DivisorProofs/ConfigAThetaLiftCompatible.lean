@@ -158,7 +158,7 @@ theorem levi_comm {d d₁ : ℕ} {W : Spc F E d} {W₁ : Spc F E d₁} {H' : Pla
     have hs : incV F (Pi.single j (1 : E)) = Pi.single j 1 := by
       funext l; by_cases h : l = j
       · subst h; simp [incV]
-      · simp [incV, Pi.single_apply, h]
+      · simp [incV, h]
     rw [hs, Matrix.mulVec_single_one] at hj
     simpa using hj
   apply Subtype.ext

@@ -330,7 +330,7 @@ theorem dens_prodChart (cE : Chart E 2) (c₁ : AlgChart q σ d) (c' : AlgChart 
     · exact congrArg Z (Subtype.ext (Prod.ext rfl (h₄ s)))
   have hprod (t : ℂ) : prodPt (c.e b₀) t = prodPt (c.e b₀) 0 + fibL d (EuclideanSpace.single 0 t) := by
     ext i
-    induction i using Fin.lastCases <;> simp [fibL_apply, EuclideanSpace.single_apply, Fin.castSucc_ne_last]
+    induction i using Fin.lastCases <;> simp [fibL_apply, Fin.castSucc_ne_last]
   have hdiff : Differentiable ℂ (prodPt (c.e b₀)) :=
     differentiable_prodPt.comp ((differentiable_const _).prodMk differentiable_id)
   have eω := pull_omF_affine hY π w H fl σ cE (hU hb) (chg_gsLow hG) x (Φ := Φ) a b (z := EuclideanSpace.single 0 s)

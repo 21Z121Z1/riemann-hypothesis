@@ -14,7 +14,7 @@ namespace BL
 
 theorem Iic_zero (n : ℕ) : Finset.Iic (0 : Fin (n + 1)) = {0} := by
   ext a
-  simp [Fin.le_zero_iff]
+  simp
 
 section Lv
 variable {k r' : ℕ}

@@ -21,8 +21,8 @@ theorem isLieBasis_tvE : ∀ {R : Type} [CommRing R] {G : Over (Sp R)} [GrpObj G
   intro R _ G _ _ n v
   have hE : (overAt (𝟙 (Sp R)) (DualNumber R)).hom = (epsR R).hom := by
     simp [epsR, overAt]
-  let e : epsR R ⟶ overAt (𝟙 (Sp R)) (DualNumber R) := Over.homMk (𝟙 _) (by simp [hE])
-  let f : overAt (𝟙 (Sp R)) (DualNumber R) ⟶ epsR R := Over.homMk (𝟙 _) (by simp [hE])
+  let e : epsR R ⟶ overAt (𝟙 (Sp R)) (DualNumber R) := Over.homMk (𝟙 _) (by simp)
+  let f : overAt (𝟙 (Sp R)) (DualNumber R) ⟶ epsR R := Over.homMk (𝟙 _) (by simp)
   have hfe : f ≫ e = 𝟙 _ := Over.OverMorphism.ext (by simp [e, f])
   have hef : e ≫ f = 𝟙 _ := Over.OverMorphism.ext (by simp [e, f])
 

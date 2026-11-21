@@ -48,7 +48,7 @@ theorem exists_im_pos (E : Type) [Field E] [NumberField E] [IsCMField E] (I : Ty
       InfinitePlace.isComplex_mk_iff.1 (IsTotallyComplex.isComplex _)
     rcases InfinitePlace.embedding_mk_eq (φ i) with h | h
     · have hex : ∃ j, (InfinitePlace.mk (φ i)).embedding = φ j := ⟨i, h⟩
-      simp [f, y, h, hex]
+      simp [f, y, h]
     · have hne : (InfinitePlace.mk (φ i)).embedding ≠ φ i := by
         rw [h]; exact fun h' => hnr (ComplexEmbedding.isReal_iff.2 h')
       have hex : ¬ ∃ j, (InfinitePlace.mk (φ i)).embedding = φ j := by

@@ -123,7 +123,7 @@ theorem nsq_root_le (a b : Fin n) : Formalism.REAL.nsq (root a b) ≤ 2 := by
       simp only [root, Pi.sub_apply, Pi.single_apply]
       by_cases h1 : c = a <;> by_cases h2 : c = b
       · exact absurd (h1.symm.trans h2) hab
-      · simp [h1, h2]; simp [← h1, h2]
+      · simp [h1]; simp [← h1, h2]
       · subst h2; simp [h1]
       · simp [h1, h2]
     have : Formalism.REAL.nsq (root a b) = 2 := by

@@ -58,7 +58,7 @@ private theorem matId {R : Type} [CommRing R] {n : â„•} (i j : Fin n) (hij : i â
       simp_all [eq_comm]
   rw [hP, hD]
   simp only [mul_add, add_mul, mul_sub, sub_mul, mul_one, one_mul, single_mul_single_same,
-    single_mul_single_of_ne _ _ _ _ hij, single_mul_single_of_ne _ _ _ _ hij.symm, zero_mul, mul_zero,
+    single_mul_single_of_ne _ _ _ _ hij, single_mul_single_of_ne _ _ _ _ hij.symm, zero_mul,
     Units.inv_mul, Units.mul_inv]
   abel
 

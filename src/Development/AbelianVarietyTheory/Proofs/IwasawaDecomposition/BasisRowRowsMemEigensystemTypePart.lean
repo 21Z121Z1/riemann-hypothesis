@@ -121,7 +121,7 @@ theorem eec_le_of_agree : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0 I0 
       (by rw [one_pow, Nat.cast_one]; exact fun h1 => P.isPrime.ne_top ((Ideal.eq_top_iff_one _).2 h1))
       (fun PP hPP => hG PP (hPP.imp id fun h => absurd h (Finset.notMem_empty _)))
   have hYlab : GlobalTheory.Hk3.IsLab (Yc D 0) P d := ⟨B, ((levY.2.1 R.SF d B).1 hB).2⟩
-  have hdd : dualLab (dualLab d) = d := by simp [dualLab, List.map_reverse, List.map_map, Function.comp_def]
+  have hdd : dualLab (dualLab d) = d := by simp [dualLab, List.map_reverse, List.map_map]
   have hWlab : GlobalTheory.Hk3.IsLab (Wc D i) P (dualLab d) := by
     have h := ((GlobalTheory.LabEq.isLab_W_iff (s := 1) R.toRealDat F.lv2 hCore i P (dualLab d) hG).1).2
     rw [hdd] at h

@@ -165,7 +165,7 @@ theorem rank_fstT_ne {k : Type} [Field k] {a b : ℕ} (ℓ : Fin a → k) (hℓ 
     apply hℓ
     have := LinearMap.ker_eq_bot.1 h
     apply this
-    simp [Matrix.mulVecLin_apply, hv]
+    simp [hv]
   have h1 := LinearMap.finrank_range_add_finrank_ker (fstT Y).mulVecLin
   have h2 : 0 < Module.finrank k (LinearMap.ker (fstT Y).mulVecLin) :=
     Nat.pos_of_ne_zero (mt Submodule.finrank_eq_zero.1 hk)

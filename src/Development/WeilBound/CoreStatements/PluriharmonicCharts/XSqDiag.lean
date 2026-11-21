@@ -182,11 +182,11 @@ theorem key (n : ℕ) (i : ι k₀) (hi0 : (X (Q.v 0 ⟨k₀, i⟩) : MRing Q.ι
     by_cases ha : k = Q.κ 0 k₀
     · subst ha
       have hb : ¬ Q.κ 0 k₀ = Q.κ 1 k₀ := κ_ne Q
-      simp [Pi.single_apply, hb]
+      simp [hb]
     · by_cases hb : k = Q.κ 1 k₀
       · subst hb
-        simp [Pi.single_apply, ha]
-      · simp [Pi.single_apply, ha, hb]
+        simp [ha]
+      · simp [ha, hb]
   · simp only [map_pow, map_X, eval_X, norm_pow]
     exact hnorm z hz
 

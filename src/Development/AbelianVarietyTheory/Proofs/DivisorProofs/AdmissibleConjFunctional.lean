@@ -51,4 +51,4 @@ theorem GlobalTheory.AdmConj.conj_mem_adm : ∀ (F : Type) [Field F] [NumberFiel
   rw [hl', GlobalTheory.AdmConj.conjForm_apply, ← hT₀]
   congr 2
   funext x
-  simp [pureA, GlobalTheory.AdmConj.conjCLM_apply, star_mul']
+  simp [pureA, GlobalTheory.AdmConj.conjCLM_apply]

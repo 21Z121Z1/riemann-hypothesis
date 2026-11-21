@@ -219,7 +219,7 @@ theorem cell_forms {c : AlgChart q σ 1} {cE : ∀ a, Chart (E a) (r a)} {c' : A
     simp only [chg, ← Matrix.sum_mul, ← Matrix.mul_sum]
     congr 2
     ext i j
-    by_cases hij : i = j <;> simp [Matrix.sum_apply, diagonal_apply, hij]
+    by_cases hij : i = j <;> simp [Matrix.sum_apply, hij]
 
 variable (hq : IsRegSurf q) (hp : IsArithVar p (d + 1)) (hs : GenSmooth p (d + 1)) (hfl : IsFlagBundle π E r fl)
   (hd : d = Fintype.card (Σ a, Low (r a))) {I : Type} [Fintype I] {c : I → ℝ} {n : I → (Σ a, Fin (r a)) → ℤ}

@@ -84,7 +84,7 @@ theorem exists_grpObj_of_cover : ∀ (S : Scheme.{0}) (I : Type) (U : I → S.Op
     apply GlobalTheory.CoverGlue.over_ext hU
     intro i T' r
     obtain ⟨z, hz⟩ := hl i T' r
-    simp only [comp_lift_assoc, comp_lift, Category.comp_id]
+    simp only [comp_lift_assoc, Category.comp_id]
     rw [← Category.assoc r (toUnit A) e']
     apply Over.OverMorphism.ext
     rw [hm i T' _ _ z z⁻¹ hz (hn i T' r r z z hz hz), _root_.mul_inv_cancel, h1 i T' (r ≫ toUnit A)]

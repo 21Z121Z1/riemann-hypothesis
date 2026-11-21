@@ -33,7 +33,7 @@ theorem linZ_apply {ι : Type} [Fintype ι] (n : ι → ℤ) : linZ ι n = ArInt
 theorem linZ_single {ι : Type} [Fintype ι] [DecidableEq ι] (i : ι) : linZ ι (Pi.single i 1) = MvPolynomial.X i := by
   rw [linZ_apply, ArInt.lin, Finset.sum_eq_single i]
   · simp
-  · intro j _ hj; simp [Pi.single_apply, hj]
+  · intro j _ hj; simp [hj]
   · simp
 
 end GlobalTheory.ShFam.PolarPowers

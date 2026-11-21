@@ -55,7 +55,7 @@ theorem finrank_tensorInl : ∀ {X Y S : Scheme.{0}} (f : X ⟶ S) (g : Y ⟶ S)
   subst hy
   have := finrank_pushout_inl (Field.toIsField _) (Field.toIsField _) _ _ _ _ (IsPushout.of_hasPushout ((S.residueFieldCongr hx).inv ≫ f.residueFieldMap x) ((S.residueFieldCongr (rfl : g y = g y)).inv ≫ g.residueFieldMap y))
   refine this.trans ?_
-  simp only [Scheme.residueFieldCongr_refl, Iso.refl_inv, Category.id_comp]
+  simp only
   rfl
 
 end GlobalTheory.ResidueTensorRank

@@ -185,11 +185,11 @@ theorem awayRep_isoLoc (hGal : TieGal N A) (c : ℝ) (Pa : List (Part A.CG))
           (by rw [List.length_cons, mul_add, mul_one, add_comm]) fun w => ?_
         rw [List.foldr_cons, A.lpTw_sum, A.lpTw_add]
     have h2 := h1 ((List.range p.d : List ℕ) : List ℝ) fun k hk => by
-      simp [Lean.Internal.coeM] at hk
+      simp at hk
       obtain ⟨n, hn, rfl⟩ := hk
       exact ⟨n, hn, rfl⟩
     refine (h2.sum N A i hGal (ih fun q hq => h q (List.mem_cons_of_mem _ hq))).congr N A i
-      (by simp [rankIso, Lean.Internal.coeM]) fun w => ?_
+      (by simp [rankIso]) fun w => ?_
     simp only [isoLoc, spehLoc, List.foldr_cons, A.lpTw_sum]
 
 end List

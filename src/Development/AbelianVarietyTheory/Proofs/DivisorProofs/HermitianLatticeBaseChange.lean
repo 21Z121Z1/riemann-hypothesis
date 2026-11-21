@@ -103,7 +103,7 @@ theorem fullBC : ∀ (K K' : Type) [Field K] [NumberField K] [Field K'] [NumberF
   have e : (fun j => algebraMap K K' ((Pi.single i (1 : K) : Fin m → K) j)) = Pi.single i 1 := by
     funext j; by_cases hj : j = i
     · subst hj; simp
-    · simp [Pi.single_apply, hj]
+    · simp [hj]
   rw [e] at h1
   simpa using h1
 

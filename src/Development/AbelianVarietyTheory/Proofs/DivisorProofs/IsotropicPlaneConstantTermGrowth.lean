@@ -27,8 +27,8 @@ theorem exp_block {n n₁ : ℕ} (ι : Matrix (Fin n) (Fin n₁) ℂ) (π : Matr
       map_one' := by simp
       map_mul' := fun p q => by
         simp only [Prod.fst_mul, Prod.snd_mul, Matrix.add_mul, Matrix.mul_add, Matrix.smul_mul, Matrix.mul_smul,
-          Matrix.sub_mul, Matrix.mul_sub, Matrix.mul_assoc, h', Matrix.one_mul, Matrix.mul_one, sub_self, smul_zero,
-          add_zero, zero_add, sub_zero, smul_smul, smul_sub]
+          Matrix.sub_mul, Matrix.mul_sub, Matrix.mul_assoc, h', Matrix.one_mul, Matrix.mul_one, sub_self,
+          zero_add, smul_sub]
         module
       map_zero' := by simp
       map_add' := fun p q => by

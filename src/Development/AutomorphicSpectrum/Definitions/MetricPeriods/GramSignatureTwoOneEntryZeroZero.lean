@@ -96,7 +96,7 @@ theorem stepPot_pos_zero (z : ℂ) :
       = gramLog (sigForm 2 2) 1 !![1, 0; z, 1] - gramLog (sigForm 2 2) 0 !![1, 0; z, 1] := by
     simp [stepPot]
   have h : gramOf (sigForm 2 2) !![1, 0; z, 1] 0 0 = ((1 + ‖z‖ ^ 2 : ℝ) : ℂ) := by
-    simp [gramOf, sigForm, Matrix.mul_apply, Fin.sum_univ_two, diagonal_apply, Complex.conj_mul']
+    simp [gramOf, sigForm, Matrix.mul_apply, Fin.sum_univ_two, Complex.conj_mul']
   rw [this, gramLog, gramLog, det_head_one, det_head_zero, h, Complex.norm_real,
     Real.norm_of_nonneg (by positivity)]
   simp

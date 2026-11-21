@@ -28,7 +28,7 @@ theorem fderiv_mulN (n : ℤ) (P : Pt E g) : fderiv ℝ (mulN n : Pt E g → Pt 
 theorem per_zsmul (τ : Matrix (Fin g) (Fin g) ℂ) (n : ℤ) (l : Fl g) :
     per τ (n • l) = n • per τ l := by
   funext i
-  simp [per, Matrix.vecMul, dotProduct, Finset.mul_sum, mul_add, mul_assoc]
+  simp [per, Matrix.vecMul, dotProduct, Finset.mul_sum, mul_assoc]
 
 theorem mulN_transl (τ : E → Matrix (Fin g) (Fin g) ℂ) (n : ℤ) (l : Fl g) (P : Pt E g) :
     mulN n (transl τ l P) = transl τ (n • l) (mulN n P) := by

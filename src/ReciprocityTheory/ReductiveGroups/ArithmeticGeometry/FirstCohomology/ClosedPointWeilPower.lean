@@ -82,7 +82,7 @@ lemma res_le_le {X : Scheme.{0}} {U Z : X.Opens} (h : Z ≤ U) (h' : U ≤ Z) (x
   have h1 : homOfLE h = 𝟙 U := rfl
   have h2 : homOfLE h' = 𝟙 U := rfl
   ext
-  simp [res, h1, h2]
+  simp [res]
 
 lemma top_of_closedPoint {V : Type} [CommRing V] [IsLocalRing V] (U : (Spec (CommRingCat.of V)).Opens)
     (hU : (IsLocalRing.closedPoint V : Spec (CommRingCat.of V)) ∈ U) : U = ⊤ := by
@@ -104,7 +104,7 @@ theorem gen_local {V : Type} [CommRing V] [IsLocalRing V]
     intro W h0 z
     have h1 : homOfLE h0 = 𝟙 W := rfl
     ext
-    simp [res, h1]
+    simp [res]
 
   refine ⟨⟨fun i => res (le_inf le_rfl (hle _) : M.U i ≤ M.U i ⊓ M.U i0) (M.g i i0)⟩, ?_⟩
   intro i j

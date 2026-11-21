@@ -93,7 +93,7 @@ lemma bord_diag {n : ℕ} (d : R) :
   have h0' : n + 1 ≠ 0 := by omega
   ext i j
   refine Fin.cases ?_ (fun i => ?_) i <;> refine Fin.cases ?_ (fun j => ?_) j <;>
-    simp [Matrix.diagonal_apply, h0, h0']
+    simp [Matrix.diagonal_apply]
 
 lemma bord_map {S : Type} [CommRing S] (φ : R →+* S) {m : ℕ} (M : Matrix (Fin m) (Fin m) R) :
     (bord M).map φ = bord (M.map φ) := by
@@ -118,7 +118,7 @@ lemma rank_bord_le {K : Type} [Field K] {m : ℕ} (M : Matrix (Fin m) (Fin m) K)
   have hsplit : bord M = S' * T' + S * M * T := by
     ext i j
     refine Fin.cases ?_ (fun i => ?_) i <;> refine Fin.cases ?_ (fun j => ?_) j <;>
-      simp [S, T, S', T', Matrix.mul_apply, Fin.sum_univ_succ]
+      simp [S, T, S', T', Matrix.mul_apply]
   rw [hsplit]
   refine (rank_add_le' _ _).trans ?_
   have h1 : (S' * T').rank ≤ 1 :=

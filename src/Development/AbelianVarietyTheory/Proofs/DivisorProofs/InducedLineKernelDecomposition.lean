@@ -94,7 +94,7 @@ private theorem sizeMatrix_eq (a a' : ℕ) (h : 2 ≤ a + a')
   rw [Fin.sum_univ_three] at r r'
   fin_cases j
   · exact e0 i
-  · have := e0 i; have := e2 i; simp only [Fin.zero_eta, Fin.mk_one, Fin.reduceFinMk] at *; omega
+  · have := e0 i; have := e2 i; simp only [Fin.mk_one] at *; omega
   · exact e2 i
 
 end Main

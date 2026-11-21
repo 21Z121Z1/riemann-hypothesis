@@ -72,7 +72,7 @@ theorem gapZ_apW (j l g n : ℕ) (hn : Even n) (τ : D.what₂.Tau) (i : Fin (D.
   have hi := i.isLt
   unfold gapZ
   split_ifs with h
-  · simp only [apW_aP, Fin.val_mk]
+  · simp only [apW_aP]
     have e1 : (D.R.sigW j).1 - 1 - i.1 = ((D.R.sigW j).1 - 1 - (i.1 + 1)) + 1 := by omega
     rw [e1]
     push_cast

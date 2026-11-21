@@ -80,7 +80,7 @@ lemma hMap_thick (Y : Over (Spec (CommRingCat.of R))) (Y' : Over (Spec (CommRing
   · rw [Category.assoc, Category.assoc, hMap_fst]
     simp only [thickMap, pullback.map]
     erw [pullback.lift_fst_assoc, pullback.lift_fst]
-    simp only [Category.comp_id, Category.id_comp]
+    simp only [Category.comp_id]
     rw [hMap_fst]
   · rw [Category.assoc, Category.assoc, hMap_snd]
     simp only [thickMap, pullback.map]

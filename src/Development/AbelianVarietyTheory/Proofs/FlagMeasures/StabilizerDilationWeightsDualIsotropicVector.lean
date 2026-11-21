@@ -559,7 +559,7 @@ theorem rEl_ee (j : ℕ) (β : Fin r → ℕ) (q : (UTin β → ℂ) × PTop k r
     · intro a'
       simp only [pTop, pOf, Rad.pEl_se, Rad.esI_ne_eI, if_false]
   simp only [rEl, Matrix.mul_apply, hcol, mul_ite, mul_one, mul_zero, Finset.sum_ite_eq',
-    Finset.sum_ite_eq, Finset.mem_univ, if_true, UEmb.u_ee]
+    Finset.mem_univ, if_true, UEmb.u_ee]
 
 theorem block_of_subset (j : ℕ) {β β' : Fin r → ℕ} (h : Set.range (rEl k r j β) ⊆ Set.range (rEl k r j β'))
     (p : UT r) (hp : β p.1.1 = β p.1.2) : β' p.1.1 = β' p.1.2 := by

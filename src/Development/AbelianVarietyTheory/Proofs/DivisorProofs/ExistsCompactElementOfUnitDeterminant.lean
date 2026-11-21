@@ -50,7 +50,7 @@ theorem exists_idem {K : Type} [Field K] (O : ValuationSubring K) {n : ℕ} (hn 
     rw [e1, Matrix.single_vecMul]
     by_cases e : k = j
     · subst e; simpa using hint i l
-    · simp [Matrix.one_apply, e]
+    · simp [e]
 
 theorem keep {K : Type} [Field K] (O : ValuationSubring K) {n : ℕ} (b : GL (Fin n) K) (Q : Matrix (Fin n) (Fin n) K)
     (hQ : ∀ i j, ((b⁻¹ : GL (Fin n) K).val * Q * b.val) i j ∈ O) {c : K} (hc : c ∈ O) (y : Fin n → K)

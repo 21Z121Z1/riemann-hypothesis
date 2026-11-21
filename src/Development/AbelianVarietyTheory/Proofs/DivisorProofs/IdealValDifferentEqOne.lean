@@ -61,7 +61,7 @@ theorem pt_eq_ptHom (Λ : PeriodPair) {Ω : ℂ} (hΩ : Ω ≠ 0) :
     · have hl : t ∉ Λ.lattice := fun h => hlat ⟨h, ht⟩
       have hP := Λ.weierstrassPExcept_def 0 t
       have hP' := Λ.derivWeierstrassPExcept_def 0 t
-      simp only [ZeroMemClass.coe_zero, sub_zero, div_zero, zero_sub] at hP hP'
+      simp only [ZeroMemClass.coe_zero, sub_zero] at hP hP'
       have hd : Λ.derivWeierstrassP t ≠ 0 := by
         intro h0
         apply hden

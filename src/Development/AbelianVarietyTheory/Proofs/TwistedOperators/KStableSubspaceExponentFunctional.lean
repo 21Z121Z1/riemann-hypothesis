@@ -134,7 +134,7 @@ theorem functional : GlobalTheory.Published.Langlands.Induced → ∀ (n : ℕ) 
       rw [pairing, Finset.sum_eq_single ⟨0, h⟩]
       · simp [hj, rho, hIio]
         left; ring
-      · intro b _ hb; simp [Pi.single_apply, hb]
+      · intro b _ hb; simp [hb]
       · simp
     have hfun : (fun t : ℝ => g.1 (expG ε H₀ t)) = fun t : ℝ => Complex.exp ((I.s ⟨0, h⟩ + n - 1) * t) • g.1 1 :=
       funext fun t => by

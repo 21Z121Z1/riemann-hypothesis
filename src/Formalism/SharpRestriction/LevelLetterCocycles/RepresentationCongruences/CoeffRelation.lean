@@ -50,7 +50,7 @@ theorem coeff_relation {O : Type*} [CommRing O] [IsDomain O] {d₁ d : ℕ} (p :
   have h2 := sub_eq_zero.mp ((mul_eq_zero.mp h1).resolve_left (pow_ne_zero _ hp))
   rw [h2]
   split_ifs with hj
-  · simp [← map_pow, mul_assoc, coeff_C_mul, coeff_X_pow_mul', hkS]
+  · simp [mul_assoc, coeff_C_mul, coeff_X_pow_mul', hkS]
   · exact map_zero _
 
 end Formalism.MainNotions.N.FrobeniusPowerSeries.ArcLengthTwo

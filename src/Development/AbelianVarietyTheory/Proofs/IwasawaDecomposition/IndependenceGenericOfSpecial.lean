@@ -175,7 +175,7 @@ theorem indepAlong_generic : ∀ (R : Type) [CommRing R] (G : Over (Sp R)) (L : 
         ((Scheme.ΓSpecIso (CommRingCat.of V)).hom.hom z) := fun z => by simp
     rw [ex x, ex y, appK, appK] at hxy
     have h' := congrArg (Scheme.ΓSpecIso (CommRingCat.of K)).hom.hom hxy
-    simp only [Iso.inv_hom_id_apply, CommRingCat.hom_inv_apply] at h'
+    simp only [Iso.inv_hom_id_apply] at h'
     rw [ex x, ex y, Subtype.ext h']
   let u : Γ((Over.mk (spMap (V.subtype.comp g))).left, ⊤) := (Scheme.ΓSpecIso (CommRingCat.of K)).inv.hom (e i₀)⁻¹
   have h1 := lin_mul G L N _ b c u hc

@@ -232,7 +232,7 @@ theorem linIso_lintegral_eq : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Ty
   let μ : Measure (Fin a × Fin (a + a') → Fv F v) := Measure.addHaar
   have hμ : μ.IsAddHaarMeasure := inferInstance
   obtain ⟨hψc, hψ1, wT, wM, hA⟩ := GlobalTheory.UnitWShape.heisW B G X om om' hTr v t 1 id (fun f hf => hf)
-    (fun γ _ f _ => by simp [actAB, mat])
+    (fun γ _ f _ => by simp [actAB])
   obtain ⟨hT0, hM0, -, -⟩ := hA ι hι
   have hbij := GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Model.IsLin.bij hι
   have hmaps := hbij.mapsTo

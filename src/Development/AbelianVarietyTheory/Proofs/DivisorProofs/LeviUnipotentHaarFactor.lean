@@ -257,7 +257,7 @@ theorem haarChar_smul_mulVec : ∀ (F E : Type) [Field F] [NumberField F] [Field
   have hdet : Matrix.GeneralLinearGroup.det
       (Units.map (Matrix.scalar (Fin n₁) : AE F E →+* Matrix (Fin n₁) (Fin n₁) (AE F E)).toMonoidHom c) = c ^ n₁ := by
     ext
-    simp [Matrix.GeneralLinearGroup.val_det_apply, Matrix.det_smul]
+    simp [Matrix.GeneralLinearGroup.val_det_apply]
   rw [hdet, map_pow, GlobalTheory.Doubling.absE_conjUnit]
 
 theorem isLevi_inv {n n₁ : ℕ} {X : Spc F E n} {X₁ : Spc F E n₁} (H : Plane E n n₁) {l : (AE F E)ˣ}

@@ -147,7 +147,7 @@ theorem GlobalTheory.MixedLagrOrth.mem_iso_zero_of_orth : ∀ (F E : Type) [Fiel
       funext j
       by_cases hj : j = i
       · subst hj; simp
-      · simp [Pi.single_apply, hj]
+      · simp [hj]
     simp only at h
     rw [hs, single_dotProduct, one_mul] at h
     exact h

@@ -82,8 +82,8 @@ private theorem gysin_injective {q : ℕ} {X B : Spc} (p : B ⟶ X) (ξ : Ht q B
     Fin.cases (motive := fun j : Fin 2 => Ht q X (n - 2 * (((j : ℕ) : ℤ))) (i - ((j : ℕ) : ℤ)))
       (Ht.cast (by simp) (by simp) y0)
       (fun k => Ht.cast (by have : (k : ℕ) = 0 := by omega
-                            simp [this]) (by have : (k : ℕ) = 0 := by omega
-                                             simp [this]) y1) j
+                            simp) (by have : (k : ℕ) = 0 := by omega
+                                             simp) y1) j
   have e0 : a' 0 = Ht.cast (by simp) (by simp) y0 := rfl
   have e1 : a' 1 = Ht.cast (by simp) (by simp) y1 := rfl
   have hz := (LHp n i).1 (a₁ := a') (a₂ := 0) (by

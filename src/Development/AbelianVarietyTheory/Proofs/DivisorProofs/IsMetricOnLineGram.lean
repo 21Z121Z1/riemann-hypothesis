@@ -126,7 +126,7 @@ theorem isMetricOn_lineGram_of_isPot : ∀ {F : Type} [Field F] [NumberField F] 
     rw [Subsingleton.elim u 0, Subsingleton.elim v 0]
     simp only [lineGram, Matrix.mul_apply, Fin.sum_univ_one, Matrix.of_apply, Matrix.conjTranspose_apply, Mat.map,
       Matrix.map_apply, e2]
-    have e3 : (A' * A⁻¹) τ 0 0 = A' τ 0 0 * (A τ 0 0)⁻¹ := by simp [Matrix.mul_apply, Matrix.inv_def]
+    have e3 : (A' * A⁻¹) τ 0 0 = A' τ 0 0 * (A τ 0 0)⁻¹ := by simp [Matrix.mul_apply]
     rw [e3]
     set w := ratVal (A' τ 0 0 * (A τ 0 0)⁻¹) y
     push_cast

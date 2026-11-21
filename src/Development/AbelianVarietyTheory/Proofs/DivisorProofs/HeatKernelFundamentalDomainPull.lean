@@ -21,7 +21,7 @@ namespace HeatPull
 theorem pullOp_apply {n g : ℕ} (a : Fin n → ℂ) (K : Ext (n + n + g) →L[ℂ] Ext (n + n + g))
     (w : Ext (1 + 1 + g)) :
     pullOp a K w = ∑ S : Finset (Fin (1 + 1)), lamL S (pullFullL a (K (rhoL S w))) := by
-  simp [pullOp, ContinuousLinearMap.sum_apply]
+  simp [pullOp]
 
 theorem pullOp_add {n g : ℕ} (a : Fin n → ℂ) (K K' : Ext (n + n + g) →L[ℂ] Ext (n + n + g)) :
     pullOp a (K + K') = pullOp a K + pullOp a K' := by

@@ -49,7 +49,7 @@ theorem normOneGen_of_imag {R : Type} [CommRing R] [IsDomain R] [CharZero R]
   have hq0 : q ≠ 0 := by
     intro h
     have h2 := congrArg (fun r => r.coeff 2) h
-    simp [hq, coeff_X, coeff_C] at h2
+    simp [hq] at h2
   have hY : ({α} ∪ {y | q.IsRoot y} : Set R).Finite :=
     (Set.finite_singleton α).union (Polynomial.finite_setOf_isRoot hq0)
   have hg : Function.Injective (fun n => m n * p) := fun a b h =>

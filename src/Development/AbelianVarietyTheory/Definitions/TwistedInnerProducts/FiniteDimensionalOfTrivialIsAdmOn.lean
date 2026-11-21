@@ -28,9 +28,9 @@ theorem isLinRed_units (n : ℕ) : IsLinRed {g : Matrix (Fin n) (Fin n) ℂ | Is
       congr 1
       ext i j
       by_cases h : i = j
-      · simp [h, Matrix.one_apply]
+      · simp [h]
         try ring
-      · simp [h, Matrix.one_apply]
+      · simp [h]
         try ring
     have hp0 : p ≠ 0 := fun h => by simpa [h] using hp 0
     have hfin : {t : ℂ | p.IsRoot t}.Finite := Polynomial.finite_setOf_isRoot hp0

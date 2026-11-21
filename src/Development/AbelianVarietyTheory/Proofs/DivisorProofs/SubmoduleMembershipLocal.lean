@@ -94,7 +94,7 @@ theorem mem_of_locally_mem_span_res :
     rw [← hW.self_le_iSup_basicOpen_iff]
     intro y hy
     obtain ⟨r, hyr, hr⟩ := H' y hy
-    simp only [TopologicalSpace.Opens.mem_iSup, SetLike.mem_coe]
+    simp only [TopologicalSpace.Opens.mem_iSup]
     exact ⟨⟨r, hr⟩, hyr⟩
   exact Submodule.mem_of_span_eq_top_of_smul_pow_mem T s hs v fun r => r.2
 

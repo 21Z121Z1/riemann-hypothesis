@@ -39,7 +39,7 @@ theorem bas_pair (a b : Fin n) : bas n {a.castAdd n, b.natAdd n} = dz a * dzb b 
   simp [Set.powersetCard.ofFinEmbEquiv, Set.powersetCard.ofCard, e, dz, dzb, -Fin.natAdd_eq_addNat]
 
 theorem hermMat_sym (a b : Fin n) : hermMat (Complex.I • (dz a * dzb b)) a b = 1 := by
-  simp [hermMat, ← bas_pair, ← mul_assoc]
+  simp [hermMat, ← bas_pair]
 
 end Values
 

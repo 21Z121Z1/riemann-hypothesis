@@ -17,7 +17,7 @@ theorem functional_single {n : ℕ} (f : (Fin n → ℂ) →ₗ[ℝ] ℝ) (j : F
       z.re • (Pi.single j (1:ℂ) : Fin n → ℂ) + z.im • (Pi.single j Complex.I : Fin n → ℂ) := by
     ext k
     by_cases h : k = j
-    · subst h; simp [Complex.ext_iff]
+    · subst h; simp
     · simp [h]
   rw [hz, map_add, map_smul, map_smul]
   simp only [map_div₀, map_sub, map_mul, Complex.conj_ofReal, Complex.conj_I, map_ofNat]

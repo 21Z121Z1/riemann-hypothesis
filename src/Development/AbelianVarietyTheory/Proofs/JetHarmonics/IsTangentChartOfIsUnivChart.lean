@@ -135,7 +135,7 @@ theorem tvecOver_add (hx : IsUnivChart G n x) (c c' : Fin n → S) :
     congr 2
     exact jet_ext fun j => by
       rw [AlgHom.comp_apply, modLift_zR, dualLiftOver_zR]
-      simp [g, TrivSqZeroExt.liftEquivOfComm]
+      simp [g]
   rw [h, h, h, modPt_add hx, MonObj.comp_mul]
 
 theorem tvecOver_smul (s : S) (c : Fin n → S) :

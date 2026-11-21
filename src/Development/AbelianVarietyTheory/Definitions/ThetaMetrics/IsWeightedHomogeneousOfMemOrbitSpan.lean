@@ -124,7 +124,7 @@ theorem yForm_apply (t : T) (b : Fin q) (φ : κ → R) :
 
 theorem rowForm_single [DecidableEq κ] (t : T) (r : Fin p ⊕ Fin q) (k : κ) :
     (rowForm t r (Pi.single k 1) : Poly R T p q κ) = X (t, r, k) := by
-  rw [rowForm_apply, Finset.sum_eq_single k] <;> simp +contextual [Pi.single_apply]
+  rw [rowForm_apply, Finset.sum_eq_single k] <;> simp +contextual
 
 @[simp] theorem xForm_single [DecidableEq κ] (t : T) (a : Fin p) (k : κ) :
     (xForm t a (Pi.single k 1) : Poly R T p q κ) = X (xVar t a k) := rowForm_single _ _ _
@@ -159,7 +159,7 @@ theorem laplacian_xForm_mul_yForm (t : T) (a : Fin p) (b : Fin q) (ε φ : κ �
     laplacian t a b (xForm t a ε * yForm t b φ : Poly R T p q κ) = C (ε ⬝ᵥ φ) := by
   classical
   have h1 (k : κ) : pderiv (yVar t b k) (xForm t a ε : Poly R T p q κ) = 0 := by
-    simp [xForm_apply, pderiv_X, Pi.single_apply]
+    simp [xForm_apply, pderiv_X]
   have h2 (k : κ) : pderiv (yVar t b k) (yForm t b φ : Poly R T p q κ) = C (φ k) := by
     simp [yForm_apply, pderiv_X, Pi.single_apply]
   have h3 (k : κ) : pderiv (xVar t a k) (xForm t a ε : Poly R T p q κ) = C (ε k) := by
@@ -487,7 +487,7 @@ theorem isPerp_base (h : p + q ≤ n) :
     have := congrArg Fin.val e
     have := a.isLt; have := b.isLt
     simp only [Fin.val_castLE, Fin.val_rev] at *; omega
-  simp [baseCovec, baseVec, Pi.single_apply, this]
+  simp [baseCovec, baseVec, this]
 
 theorem linearIndependent_baseCovec (h : p + q ≤ n) : LinearIndependent R (baseCovec R h) := by
   have := (Pi.basisFun R (Fin n)).linearIndependent.comp _
@@ -556,12 +556,12 @@ theorem eval_basePoly :
     rw [yMinor, RingHom.map_det]
     refine (congrArg (fun A => det A ^ c' t i) (?_ : _ = (1 : Matrix _ _ R))).trans (by simp)
     ext a b
-    simp [eval_yForm, baseVec, Pi.single_apply, Matrix.one_apply, eq_comm]
+    simp [baseVec, Pi.single_apply, Matrix.one_apply, eq_comm]
   · intro i _
     rw [xMinor, RingHom.map_det]
     refine (congrArg (fun A => det A ^ c t i) (?_ : _ = (1 : Matrix _ _ R))).trans (by simp)
     ext a b
-    simp [eval_xForm, baseCovec, Pi.single_apply, Matrix.one_apply, eq_comm]
+    simp [baseCovec, Pi.single_apply, Matrix.one_apply, eq_comm]
 
 theorem basePoly_ne_zero [Nontrivial R] : basePoly R h c c' ≠ 0 := fun e => by
   have := eval_basePoly (R := R) h c c'
@@ -610,8 +610,8 @@ example (u : Rˣ) (k : Fin n) :
   constructor
   · congr 1
     rw [covecAct, ← map_inv]
-    ext l; simp [Matrix.GeneralLinearGroup.scalar, Pi.single_apply, diagonal_apply, eq_comm]
+    ext l; simp [Matrix.GeneralLinearGroup.scalar, Pi.single_apply, eq_comm]
   · congr 1
-    ext l; simp [vecAct, Matrix.GeneralLinearGroup.scalar, Pi.single_apply, diagonal_apply, eq_comm]
+    ext l; simp [vecAct, Matrix.GeneralLinearGroup.scalar, Pi.single_apply, eq_comm]
 
 end GlobalTheory.Harm

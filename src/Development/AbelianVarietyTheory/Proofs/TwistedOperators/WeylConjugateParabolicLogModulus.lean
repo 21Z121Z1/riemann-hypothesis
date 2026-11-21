@@ -27,7 +27,7 @@ theorem hLin_coordR (x y : V.V) :
     hLin hc.sig V.gram R (coordR V R x) (coordR V R y) = inclR R (V.hD x y) := by
   change hR R hc.sig V.gram _ _ = inclR R (V.hT _ _)
   rw [GlobalTheory.IndefiniteRowSideFullHecke.AdelicUnitaryGroups.hT_coord]
-  simp [hR, Formalism.UG.hform, coordR, JR, inclR, Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.sigR, CMData.sig, TensorProduct.tmul_sum,
+  simp [hR, Formalism.UG.hform, coordR, JR, inclR, Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.sigR, CMData.sig,
     starRingEnd_apply]
 
 theorem coordR_smul (c : E) (x : V.V) : coordR (F := F) V R (c • x) = inclR (F := F) R c • coordR V R x := by

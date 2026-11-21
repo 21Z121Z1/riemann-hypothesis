@@ -47,7 +47,7 @@ theorem termW_eq (R : ℝ) (c : O.s.Comp) : termW O c R =
   · refine (congrArg _ e2).trans ?_
     rw [map_mul, map_mul, rename_rename]
     congr 1
-    simp only [ArIn.mixEv, aeval_X, EigWhole.update_ind_one ∅ hT, map_sum, map_pow, rename_X, map_mul, algHom_C]
+    simp only [ArIn.mixEv, aeval_X, EigWhole.update_ind_one ∅ hT, map_sum, map_pow, rename_X, algHom_C]
     norm_num
     rfl
   · rw [map_pow, map_sum, ← e0]

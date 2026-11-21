@@ -107,7 +107,7 @@ by
   refine Complex.le_def.2 ⟨?_, (im_quad_eq_zero hM c).symm⟩
   rw [sub_mulVec, dotProduct_sub, smul_mulVec, dotProduct_smul, gram_quad_eq h' σ Hm W hf,
     ← GlobalTheory.LieMet.form_sum]
-  simp only [Complex.zero_re, Complex.sub_re, smul_eq_mul, Complex.re_ofReal_mul, Complex.mul_re,
+  simp only [Complex.zero_re, Complex.sub_re, smul_eq_mul, Complex.mul_re,
     Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero]
   have := key c
   linarith

@@ -24,7 +24,7 @@ theorem valR_spMap_top {R S : Type} [CommRing R] [CommRing S] (f : R →+* S) (a
   rw [dif_pos h, show (spMap f).appLE ⊤ ⊤ h = (spMap f).appTop from Scheme.Hom.appLE_eq_app _]
   have e := congrArg (fun q => CommRingCat.Hom.hom q ((Scheme.ΓSpecIso (CommRingCat.of R)).inv a))
     (Scheme.ΓSpecIso_naturality (CommRingCat.ofHom f))
-  simp only [CommRingCat.comp_apply] at e
+  simp only at e
   calc _ = _ := e
     _ = f a := by simp
 

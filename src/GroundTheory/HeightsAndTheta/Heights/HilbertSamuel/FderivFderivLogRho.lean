@@ -28,7 +28,7 @@ def bil : (J → ℂ) →L[ℝ] ((J → ℂ) →L[ℝ] ℝ) :=
   ∑ p, ((reP p).smulRight (reP p) + (imaginary p).smulRight (imaginary p))
 
 theorem bil_apply (u v : J → ℂ) : bil u v = ∑ p, (reP p u * reP p v + imaginary p u * imaginary p v) := by
-  simp [bil, ContinuousLinearMap.sum_apply]
+  simp [bil]
 
 theorem reP_apply (p : J) (z : J → ℂ) : reP p z = (z p).re := rfl
 

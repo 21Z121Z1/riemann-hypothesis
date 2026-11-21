@@ -59,7 +59,7 @@ theorem eq_lag_iff {R E ι : Type*} [CommRing R] [Ring E] [Algebra R E] [Fintype
 
 example (R : Type) [CommRing R] (a : Unit → R) (P : R) : lag a P () = 1 := by
   have : (Finset.univ : Finset Unit).erase () = ∅ := rfl
-  simp [lag, this]
+  simp [lag]
 
 def pat {ι : Type*} (R : Type*) [CommRing R] (p : ι → ι → Prop) : Submodule R (Matrix ι ι R) where
   carrier := {X | ∀ i j, ¬ p i j → X i j = 0}

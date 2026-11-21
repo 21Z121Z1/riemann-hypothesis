@@ -358,7 +358,7 @@ theorem single_mem_coordFil (a : Bool → w.valuationSubring) (h : a true ≠ a 
   have hδm : (a true : C) - a false ∈ w.valuationSubring := sub_mem (a true).2 (a false).2
   refine ⟨(mem_freeLattice_bool a h _).2 fun j => ?_, fun t => ?_⟩
   · have hsw : w ((a false : C) - a true) = w ((a true : C) - a false) := w.map_sub_swap _ _
-    cases s <;> by_cases e : j = i <;> simp [e, hδ, hδm, neg_div, hsw]
+    cases s <;> by_cases e : j = i <;> simp [e, hδ, hδm, hsw]
   · by_cases e : t = s
     · subst e; simp [hi.symm]
     · simp [e]

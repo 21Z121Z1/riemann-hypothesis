@@ -167,7 +167,7 @@ theorem fix_low {g : B.Mat k r} (hfix : ∀ b : Fin r, g *ᵥ bvec (eI k r b) = 
       by_cases hil : i = l
       · subst hil
         simp [bvec]
-      · simp [bvec, Pi.single_apply, hil]
+      · simp [bvec, hil]
   rw [Finset.sum_congr rfl (fun l _ => hterm l)]
   simp
 

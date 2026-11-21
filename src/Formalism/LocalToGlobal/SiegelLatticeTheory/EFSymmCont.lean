@@ -60,8 +60,8 @@ theorem letter_eq (D : D7) (w : D.what₂.Word) (τ : D.what₂.Tau) (l : Fin (D
   unfold letterOf
   rw [hu]
   cases hb : D.s.letter w l
-  · simp [hb]
-  · simp [hb, hD.ne']
+  · simp
+  · simp [hD.ne']
 
 theorem del_eq (D : D7) (hk : 3 ≤ D.R.k) (w : D.what₂.Word) (τ : D.what₂.Tau) :
     (D.s.Del : ℚ) = delOf (D.hcW w τ) hk := by

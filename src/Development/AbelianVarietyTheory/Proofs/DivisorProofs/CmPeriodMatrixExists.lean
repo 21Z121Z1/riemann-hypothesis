@@ -46,7 +46,7 @@ theorem surj_lattice : ∀ (K : Type) [Field K] [NumberField K] (d : ℕ) (δ : 
     refine IsUnit.mk0 _ (mul_ne_zero (by exact_mod_cast hN0.ne') (by exact_mod_cast hm0))
   let b' := b.isUnitSMul hs
   have hb' : ∀ j, b' j = w j := fun j => by
-    simp only [b', Module.Basis.isUnitSMul_apply, w, Algebra.smul_def, zsmul_eq_mul, map_mul, map_natCast, map_intCast]
+    simp only [b', Module.Basis.isUnitSMul_apply, w, Algebra.smul_def, map_mul, map_natCast, map_intCast]
     simp only [algebraMap_int_eq, eq_intCast]
     ring
   let A : Matrix (Fin f) (Fin f) ℂ := fun i j => φ (e i) (w j)

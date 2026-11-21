@@ -23,7 +23,7 @@ theorem finite_det_one_add_smul_eq_zero {E K : Type} [Field E] [Field K] (φ : E
     rw [this]
     congr 1
     ext i j
-    by_cases h : i = j <;> simp [h, Matrix.one_apply] <;> ring
+    by_cases h : i = j <;> simp [h] <;> ring
   have hp0 : p ≠ 0 := by
     intro h
     have := hp 0
@@ -47,7 +47,7 @@ theorem finite_not_isUnit_det {E R : Type} [Field E] [CommRing R] (φ : E →+* 
     rw [RingHom.map_det]
     congr 1
     ext i j
-    by_cases h : i = j <;> simp [h, Matrix.one_apply]
+    by_cases h : i = j <;> simp [h]
   have h1 : ∀ M ∈ {M : Ideal R | M.IsMaximal ∧ 1 - ε ∈ M}, {l : E | (1 + φ l • G).det ∈ M}.Finite := by
     rintro M ⟨hM, -⟩
     letI := Ideal.Quotient.field M

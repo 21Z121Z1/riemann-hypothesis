@@ -121,7 +121,7 @@ def lamG (hu : IsUnit u) : CG α β u hb →ₗ[R] Qt R :=
     (by
       rw [Submodule.span_le, Set.singleton_subset_iff, SetLike.mem_coe, LinearMap.mem_ker]
       simp only [LinearMap.coe_comp, Function.comp_apply, Submodule.coe_subtype, bN, LinearMap.snd_apply,
-        LinearMap.mulLeft_apply, Units.inv_mul, IsUnit.unit_spec]
+        LinearMap.mulLeft_apply]
       exact (mkQ_eq_zero_iff _).2 ⟨1, by simp⟩)
 
 theorem lamG_mk (hu : IsUnit u) (x : NF α) :

@@ -24,7 +24,7 @@ theorem subst_prodF (G : ∀ v, Fin (P.n' v) → Matrix (Fin (P.m + 1)) (Fin (P.
   have key : (P.subst G).comp ((P.vEmb v).comp (blockEmb Kf s)) =
       ((P.vEmb v).comp (blockEmb Kf s)).comp (rowAct Kf (G v s)) := by
     refine MvPolynomial.algHom_ext fun y => ?_
-    simp [Places.subst, rowAct, Places.vEmb, blockEmb, map_sum, aeval_X]
+    simp [Places.subst, rowAct, Places.vEmb, blockEmb, map_sum]
   exact congrArg (fun φ => φ (F v s)) key
 
 def IsZPow (b x : Kf) : Prop := ∃ z : ℤ, x = b ^ z

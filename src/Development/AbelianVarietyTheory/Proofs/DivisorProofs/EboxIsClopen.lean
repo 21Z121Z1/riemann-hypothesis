@@ -26,7 +26,7 @@ theorem ebox_eq_image {k : Type} [Field k] [ValuativeRel k] [TopologicalSpace k]
   · intro hX
     refine ⟨_, hX, ?_⟩
     ext i j
-    simp [← mul_assoc]
+    simp
   · rintro ⟨Y, hY, rfl⟩
     simpa [← mul_assoc] using hY
 

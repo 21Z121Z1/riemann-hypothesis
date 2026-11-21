@@ -153,7 +153,7 @@ theorem _root_.GlobalTheory.MomOne.lift_change : ∀ (q : ℕ) [Fact q.Prime] (l
   have hOKim : ∀ {u u' : ℤ}, ((u : ℂ) + (u' : ℂ) * _root_.Formalism.L2.Ker.JMB.w0 S.d).im = u' * (√(S.d : ℝ) / 2) := by
     intro u u'
     rw [hw0]
-    simp [Complex.add_im, Complex.mul_im, Complex.div_im]
+    simp [Complex.add_im, Complex.mul_im]
   have hbetaim : ∀ x w, (_root_.Formalism.L2.Ker.JMB.beta S.d S.Hm x w).im = √(S.d : ℝ) / 2 * (_root_.Formalism.L2.Ker.JMB.hf S.Hm x w).im := by
     intro x w
     unfold _root_.Formalism.L2.Ker.JMB.beta

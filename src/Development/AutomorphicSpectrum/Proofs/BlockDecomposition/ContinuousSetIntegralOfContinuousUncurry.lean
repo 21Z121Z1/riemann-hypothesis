@@ -14,7 +14,7 @@ theorem continuous_scal : Continuous (scal : IdeleGroup K → GL (Fin 2) 𝔸[K]
   refine Units.continuous_iff.2 ⟨?_, ?_⟩
   · refine continuous_matrix fun i j ↦ ?_
     fin_cases i <;> fin_cases j <;>
-      simp [Function.comp_def, scal, borelElt_val] <;> first | exact Units.continuous_val | exact continuous_const
+      simp [scal, borelElt_val] <;> first | exact Units.continuous_val | exact continuous_const
   · have hinv : Continuous fun a : IdeleGroup K ↦ ((a⁻¹ : IdeleGroup K) : 𝔸[K]) :=
       Units.continuous_val.comp continuous_inv
     refine continuous_matrix fun i j ↦ ?_

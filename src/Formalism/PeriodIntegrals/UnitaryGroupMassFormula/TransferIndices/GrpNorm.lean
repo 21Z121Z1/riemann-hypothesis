@@ -55,7 +55,7 @@ theorem root_pow_eq_one {d : Type} [Fintype d] [DecidableEq d] (M : Matrix d d �
   have hMv : M *ᵥ v = μ • v := by
     rw [Matrix.sub_mulVec, sub_eq_zero] at hv
     rw [← hv]
-    simp [Matrix.scalar_apply, Matrix.mulVec_diagonal, funext_iff, Pi.smul_apply, smul_eq_mul]
+    simp [Matrix.scalar_apply]
   have hpow : ∀ k : ℕ, (M ^ k) *ᵥ v = μ ^ k • v := by
     intro k
     induction k with

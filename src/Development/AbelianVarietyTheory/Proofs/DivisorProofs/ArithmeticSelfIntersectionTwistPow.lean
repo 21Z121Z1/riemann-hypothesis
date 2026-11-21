@@ -64,7 +64,7 @@ theorem isometric_comb_none {ι : Type} [Fintype ι] (ρ : X ⟶ Sp k') (hρ : �
   refine HermLB.icls_eq_iff.1 ?_
   rw [← HermLB.icls_eq_iff.2 (isometric_pull_fnB ρ hρ c hc hcc), HermLB.icls_pull,
     HermLB.icls_eq_iff.2 hM, HermLB.icls_pow, map_nsmul, ← HermLB.icls_pull, icls_comb,
-    Finset.sum_eq_single (none : Option ι) (fun b _ hb => by simp [Pi.single_apply, hb]) (by simp)]
+    Finset.sum_eq_single (none : Option ι) (fun b _ hb => by simp [hb]) (by simp)]
   simp [natCast_zsmul]
 
 end GlobalTheory.MixPull
@@ -77,7 +77,7 @@ theorem aeval_subst {ι : Type} [Fintype ι] (e : ℕ) (n : ι → ℤ) (D : ℕ
       (e : ℝ) • (MvPolynomial.X none * rename some (lin fun i => (n i : ℝ)) ^ D) := by
   have h1 : aeval (fun j : Option ι => lin fun i => ((Pi.single j (j.elim (e : ℤ) fun _ => 1) : Option ι → ℤ) i : ℝ))
       (rename some (lin fun i => (n i : ℝ))) = rename some (lin fun i => (n i : ℝ)) := by
-    simp [lin, aeval_rename, map_sum, Fintype.sum_option, Pi.single_apply]
+    simp [lin, map_sum, Fintype.sum_option, Pi.single_apply]
   rw [map_mul, map_pow, h1, aeval_X]
   simp [lin, Fintype.sum_option, Pi.single_apply, smul_eq_C_mul, mul_assoc]
 

@@ -145,7 +145,7 @@ lemma mem_closure_rat_symplectic_of_det (γ : Matrix (l ⊕ l) (l ⊕ l) ℝ)
     simp only [Φ, transpose_neg, transpose_mul, transpose_add, transpose_transpose, J_transpose,
       Matrix.mul_neg, neg_neg, Matrix.mul_assoc, hJ]
     simp only [← Matrix.mul_assoc, hJ]
-    simp only [Matrix.mul_neg, Matrix.neg_mul, mul_one, one_mul, neg_neg]
+    simp only [Matrix.neg_mul, mul_one, one_mul, neg_neg]
     abel
   let U : Set (Matrix (l ⊕ l) (l ⊕ l) ℝ) := {T | (1 + Φ T).det ≠ 0}
   have hU : IsOpen U :=

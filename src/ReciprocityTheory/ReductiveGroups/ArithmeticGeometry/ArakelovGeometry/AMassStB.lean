@@ -129,7 +129,7 @@ theorem gb_exists_scale {Δ : MvPolynomial (Fin (D + 1)) ℂ} (hΔ : Δ ≠ 0) :
     refine Fin.cases ?_ (fun i => ?_) k
     · simp
     · first
-      | (simp [hw0]; done)
+      | (simp; done)
       | (simp; field_simp)
   rw [hw']
   exact left_ne_zero_of_mul hw

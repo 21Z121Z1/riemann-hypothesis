@@ -30,7 +30,7 @@ theorem isInU_inFrame : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Nu
         = cT ρ b.1 * cT ρ G * (cT ρ (b⁻¹).1 * cT ρ b.1) * JR w.Completion J * (b.1 * (b⁻¹).1) * G * b.1 := by
           simp only [cT_mul, Matrix.mul_assoc]
       _ = cT ρ b.1 * (cT ρ G * JR w.Completion J * G) * b.1 := by
-          rw [hcb, hinv']; simp only [Matrix.mul_one, Matrix.one_mul, Matrix.mul_assoc]
+          rw [hcb, hinv']; simp only [Matrix.mul_one, Matrix.mul_assoc]
       _ = cT ρ b.1 * JR w.Completion J * b.1 := by rw [hG]
   have hval : inFrame σ J τ b g = ((b⁻¹).1 * G * b.1).map φ := rfl
   unfold IsInU

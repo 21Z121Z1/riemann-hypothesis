@@ -49,7 +49,7 @@ def TyLev.triv : TyLev Unit Unit where
   le := le_rfl
   ker _ _ _ := rfl
   idx := by simp
-  cms _ := by simp [Subgroup.relIndex_top_right, Subgroup.index_ne_zero_of_finite]
+  cms _ := by simp
 
 namespace TyLev
 

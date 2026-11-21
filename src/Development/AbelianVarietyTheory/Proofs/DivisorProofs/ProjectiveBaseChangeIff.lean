@@ -68,7 +68,7 @@ theorem projective_baseChange_iff (A S : Type) [CommRing A] [CommRing S] [Algebr
     rw [LinearMap.toMatrix_baseChange]
     congr 1
     ext i j
-    simp [LinearMap.toMatrix_apply, Pi.single_apply, Matrix.mulVec, dotProduct]
+    simp [LinearMap.toMatrix_apply]
   constructor
   · rintro ⟨w, hw⟩
     refine ⟨LinearMap.toMatrix b₀ b₁ w, ?_⟩

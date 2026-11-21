@@ -37,10 +37,10 @@ theorem GlobalTheory.EisRestrict.isWittFrame_restrict : ∀ (F E : Type) [Field 
   have c0Y : GlobalTheory.EisMidHt.firstColumn Y = fun k => Y k 0 := rfl
   have memX : ∀ j : Fin r, (fun k => X k j.succ) ∈ V0 σ J X Y := fun j => by
     rw [mem_invariant_forms, c0X, c0Y, ent, ent, hW.xx, hyx]
-    simp [Matrix.one_apply, (Fin.succ_ne_zero j).symm]
+    simp [(Fin.succ_ne_zero j).symm]
   have memY : ∀ j : Fin r, (fun k => Y k j.succ) ∈ V0 σ J X Y := fun j => by
     rw [mem_invariant_forms, c0X, c0Y, ent, ent, hW.xy, hW.yy]
-    simp [Matrix.one_apply, (Fin.succ_ne_zero j).symm]
+    simp [(Fin.succ_ne_zero j).symm]
   have iX := fun j => ι_coordTail σ J X Y X j (memX j)
   have iY := fun j => ι_coordTail σ J X Y Y j (memY j)
   refine ⟨?_, ?_, ?_, ?_⟩

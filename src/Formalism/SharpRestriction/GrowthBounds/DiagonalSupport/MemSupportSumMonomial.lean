@@ -33,7 +33,7 @@ theorem multideg_single (v : ι × Fin n) (b : ℕ) (i : ι) :
   by_cases h : vi = i
   · subst h
     simp [Finsupp.single_apply]
-  · simp [Finsupp.single_apply, h]
+  · simp [h]
 
 theorem IsMH.congr {P : MvPolynomial (ι × Fin n) A} {δ δ' : ι → ℕ} (h : IsMH P δ) (hd : ∀ i, δ i = δ' i) : IsMH P δ' :=
   fun m hm i => (h m hm i).trans (hd i)
@@ -123,7 +123,7 @@ theorem twistSub_support (F : MvPolynomial (ι × Fin n) R) (m : ι × Fin n →
 
 theorem twistSub_monomial_off (M : ι × Fin n →₀ ℕ) (h : ∀ v ∈ M.support, v.1 ∉ S) :
     twistSub (R := R) LL S j (MvPolynomial.monomial M 1) = MvPolynomial.monomial M 1 := by
-  simp only [twistSub, MvPolynomial.coe_eval₂Hom, MvPolynomial.eval₂_monomial, RingHom.comp_apply, map_one,
+  simp only [twistSub, MvPolynomial.coe_eval₂Hom, MvPolynomial.eval₂_monomial, map_one,
     one_mul]
   rw [MvPolynomial.monomial_eq, MvPolynomial.C_1, one_mul]
   apply Finsupp.prod_congr

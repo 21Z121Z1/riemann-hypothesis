@@ -48,7 +48,7 @@ private lemma scale {I : Type} [Fintype I] (A : Matrix I I ℂ) (x : I → ℂ) 
   rw [Matrix.mulVec_smul, dotProduct_smul, star_smul, smul_dotProduct]
   simp only [smul_eq_mul, RCLike.star_def, Complex.conj_ofReal]
   rw [← mul_assoc, ← Complex.ofReal_mul]
-  simp [Complex.re_ofReal_mul, sq]
+  simp [sq]
 
 private lemma cont {I : Type} [Fintype I] (A : Matrix I I ℂ) :
     Continuous fun x : I → ℂ => RCLike.re (star x ⬝ᵥ A.mulVec x) := by

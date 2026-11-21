@@ -87,6 +87,6 @@ theorem lowSupp (k r : ℕ) (z : Fin (2 * r + k + 1) → ℂ) (a : ℕ) (ha : a 
   · have hcr : c.val < r := by omega
     have hne : i ≠ eI k r ⟨c.val, hcr⟩ := by
       intro e; rw [Fin.ext_iff] at e; simp [eI] at e; omega
-    simp [fvec, hcr, bvec, Pi.single_apply, hne]
+    simp [fvec, hcr, bvec, hne]
 
 end PI.StabPairs.Conv

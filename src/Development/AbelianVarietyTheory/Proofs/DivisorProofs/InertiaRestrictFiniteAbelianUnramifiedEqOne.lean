@@ -56,7 +56,7 @@ theorem restrict_eq_one : ∀ {K : Type} [Field K] [NumberField K] {Ω : Type} [
         = e (σ (e.symm ((y : L) : AlgebraicClosure K))) - ((y : L) : AlgebraicClosure K) := by
       have h3 : ((AlgEquiv.restrictNormalHom L ((e.symm.trans σ).trans e) • y : 𝓞 L) : L) =
           AlgEquiv.restrictNormalHom L ((e.symm.trans σ).trans e) (y : L) := rfl
-      simp only [map_sub, h3, AlgEquiv.restrictNormalHom_apply]
+      simp only [map_sub, h3]
       have h4 := AlgEquiv.restrictNormalHom_apply L ((e.symm.trans σ).trans e) (y : L)
       rw [AddSubgroupClass.coe_sub, h4]
       rfl

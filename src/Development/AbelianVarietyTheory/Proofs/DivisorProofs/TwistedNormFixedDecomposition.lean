@@ -171,7 +171,7 @@ theorem stable_subgroup : ∀ {H : Type} [Group H] (θ : H →* H) (K₀ : Subgr
       · exact Subgroup.subset_closure (Or.inl (Finset.mem_coe.mpr (Finset.mem_union_left _ hx)))
       · have hx' := Subgroup.mem_inf.mp hx
         have hx1 : x ∈ Z ⊓ K₀.map (MulAut.conj (1 : H)).toMonoidHom :=
-          Subgroup.mem_inf.mpr ⟨hx'.1, ⟨x, hx'.2, by simp [MulAut.conj_apply]⟩⟩
+          Subgroup.mem_inf.mpr ⟨hx'.1, ⟨x, hx'.2, by simp⟩⟩
         obtain ⟨f, hf, a, ha, rfl⟩ := hR x hx1
         exact Subgroup.mul_mem _
           (Subgroup.subset_closure (Or.inl (Finset.mem_coe.mpr (Finset.mem_union_right _ hf))))

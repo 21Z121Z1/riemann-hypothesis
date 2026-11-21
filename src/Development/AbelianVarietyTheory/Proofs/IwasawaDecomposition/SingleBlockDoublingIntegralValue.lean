@@ -406,7 +406,7 @@ theorem stepAt_one : ∀ (L : Type) [Field L] [NumberField L] (P : HeightOneSpec
       | exact ((measurable_add_const c.1).comp measurable_fst).prod_mk ((measurable_add_const c.2).comp measurable_snd)⟩
   have hc : ∀ g, mcoef (OP P) μ (fun _ : GL (Fin r) (P.adicCompletion L) => (1 : ℂ)) g = 1 := by
     intro g
-    simp [mcoef, setIntegral_const, Measure.real, hμ1]
+    simp [mcoef, Measure.real, hμ1]
   show IsStep (OP P) _ nrm δ (fun _ => ν) r t 0 _
   unfold IsStep
   rw [Nat.zero_mul, Nat.zero_add, Nat.one_mul]

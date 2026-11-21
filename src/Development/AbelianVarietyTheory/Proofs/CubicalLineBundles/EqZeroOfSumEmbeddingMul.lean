@@ -57,7 +57,7 @@ theorem _root_.GlobalTheory.EigenNorm.hermForm_conj (hH : Hm.IsHermitian) (z w :
   have h := congrFun (congrFun hH i) j
   simp only [Matrix.conjTranspose_apply] at h
   rw [← h]
-  simp [Pi.star_apply, Complex.star_def]
+  simp [Pi.star_apply]
   ring
 
 theorem eq_zero_of_sum_embedding_mul {E : Type} [Field E] [NumberField E] (f : (E →+* ℂ) → ℂ)

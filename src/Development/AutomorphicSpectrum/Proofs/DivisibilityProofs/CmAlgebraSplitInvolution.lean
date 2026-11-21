@@ -29,7 +29,7 @@ def splitAE : AE F E ≃ₐ[F] (Ainf F ⊗[F] E) × (Af F ⊗[F] E) :=
 theorem splitAE_tmul (a : AF F) (e : E) :
     splitAE F E (a ⊗ₜ[F] e) = (a.1 ⊗ₜ[F] e, a.2 ⊗ₜ[F] e) := by
   have h : (Algebra.TensorProduct.comm F (AF F) E) (a ⊗ₜ[F] e) = e ⊗ₜ[F] a := rfl
-  simp only [splitAE, AlgEquiv.trans_apply, h, Algebra.TensorProduct.prodRight_tmul]
+  simp only [splitAE, AlgEquiv.trans_apply]
   rfl
 
 theorem splitAE_smul (u : AF F) (x : AE F E) :

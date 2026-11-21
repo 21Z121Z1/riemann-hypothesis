@@ -77,7 +77,7 @@ theorem re_sesq_self (B : Fl ι p q →L[ℝ] Fl ι p q →L[ℝ] ℝ) (ξ : Pt 
 
 theorem sesq_herm {B : Fl ι p q →L[ℝ] Fl ι p q →L[ℝ] ℝ} (hB : ∀ u v, B u v = B v u) (ξ ζ : Pt ι p q) :
     sesq B ζ ξ = starRingEnd ℂ (sesq B ξ ζ) := by
-  simp only [sesq_apply, fn, map_div₀, map_add, map_mul, map_sub, Complex.conj_ofReal, Complex.conj_I, map_ofNat]
+  simp only [sesq_apply, fn, map_div₀, map_add, map_mul, Complex.conj_ofReal, Complex.conj_I, map_ofNat]
   rw [hB (flat ζ), hB (flat (Complex.I • ζ)), hB (flat ζ) (flat (Complex.I • ξ)), hB (flat (Complex.I • ζ)) (flat ξ)]
   push_cast; ring
 
@@ -90,8 +90,7 @@ theorem ext_of_re {a b : Pt ι p q →ₗ[ℂ] Pt ι p q →ₗ⋆[ℂ] ℂ} (ha
   refine LinearMap.ext₂ fun ξ ζ => ?_
   have e1 := e (ξ + ζ)
   have e2 := e (ξ + Complex.I • ζ)
-  simp only [map_add, map_smul, map_smulₛₗ, LinearMap.add_apply, LinearMap.smul_apply, e, smul_eq_mul, Complex.conj_I,
-    RingHom.id_apply] at e1 e2
+  simp only [map_add, map_smul, map_smulₛₗ, LinearMap.add_apply, LinearMap.smul_apply, e, smul_eq_mul, Complex.conj_I] at e1 e2
   show c ξ ζ = 0
   linear_combination (1 / 2) * e1 + (Complex.I / 2) * e2 + ((c ξ ζ - c ζ ξ) / 2) * Complex.I_mul_I
 

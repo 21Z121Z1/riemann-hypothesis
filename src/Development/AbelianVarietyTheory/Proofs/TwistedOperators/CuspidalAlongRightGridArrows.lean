@@ -82,7 +82,7 @@ theorem isCuspListed_smul : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : Consts
   rcases X with ⟨i, j⟩ | i | j
   · intro τ
     have e : (fun g => star ((c • F) g)) = star c • fun g => star (F g) := by
-      funext g; simp [Pi.smul_apply, smul_eq_mul, star_mul', mul_comm]
+      funext g; simp [Pi.smul_apply, smul_eq_mul, star_mul']
     show IsTypeAt _ _ _ _ fun g => star ((c • F) g)
     rw [e]
     exact GlobalTheory.Mem.Th.isTypeAt_smul _ (h3 τ)

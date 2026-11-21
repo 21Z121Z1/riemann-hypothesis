@@ -170,7 +170,7 @@ lemma eS_apply (T : GoodSet K G) (s : T.S) (x : G) :
   rw [eS, MonoidAlgebra.coeff_sum, Finsupp.finsetSum_apply]
   rw [Finset.sum_eq_single x]
   · simp [MonoidAlgebra.of_apply, MonoidAlgebra.coeff_single, cf]
-  · intro y _ hy; simp [MonoidAlgebra.of_apply, MonoidAlgebra.coeff_single, Finsupp.single_apply, hy]
+  · intro y _ hy; simp [MonoidAlgebra.of_apply, MonoidAlgebra.coeff_single, hy]
   · simp
 
 lemma eS_orth (T : GoodSet K G) (s t : T.S) (hst : s ≠ t) : eS T s * eS T t = 0 := by

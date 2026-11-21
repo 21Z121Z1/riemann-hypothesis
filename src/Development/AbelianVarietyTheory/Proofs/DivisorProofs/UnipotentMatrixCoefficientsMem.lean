@@ -169,7 +169,7 @@ theorem coeff_mem_of_blocks : ∀ (G : Type) [CommGroup G] [TopologicalSpace G] 
     (LinearMap.proj i) (Pi.single j 1)
   have : (fun s => ρ s i j) = fun s => (LinearMap.proj i : (Fin d → ℂ) →ₗ[ℂ] ℂ) (T s (Pi.single j 1)) := by
     funext s
-    simp [hT, Matrix.mulVec_single_one]
+    simp [hT]
   rw [this]; exact hmain
 
 end GlobalTheory.CommRepBlocks

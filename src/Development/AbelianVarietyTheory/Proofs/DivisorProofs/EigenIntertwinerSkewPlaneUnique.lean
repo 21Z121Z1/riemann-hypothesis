@@ -38,7 +38,7 @@ theorem GlobalTheory.ThK.EvUniq.evZero_unique : GlobalTheory.FunPr.Hypotheses₂
     have hfe : (fun v => ev' v (φ v)) = fun v => ev v (φ v) := funext fun v => hfin v _ (hφ v)
     rw [hfe]
     funext x
-    simp only [GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure, Pi.smul_apply, smul_eq_mul, ContinuousLinearMap.smul_apply, SchwartzMap.smul_apply, mul_assoc]
+    simp only [GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure, Pi.smul_apply, smul_eq_mul, ContinuousLinearMap.smul_apply, mul_assoc]
   | zero => simp
   | add x y _ _ hx hy => rw [map_add, map_add, hx, hy, smul_add]
   | smul a x _ hx => rw [map_smul, map_smul, hx, smul_comm]

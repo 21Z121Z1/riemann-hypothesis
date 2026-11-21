@@ -415,7 +415,7 @@ def negStd (E : Type) [CommRing E] [StarRing E] (n : ℕ) :
     (fun x x' y => by simp [add_mul, Finset.sum_add_distrib, add_comm])
     (fun c x y => by simp [Finset.mul_sum, mul_assoc])
     (fun x y y' => by simp [mul_add, Finset.sum_add_distrib, add_comm])
-    (fun c x y => by simp [Finset.mul_sum, mul_left_comm, mul_comm, mul_assoc, starRingEnd_apply])
+    (fun c x y => by simp [Finset.mul_sum, mul_left_comm, starRingEnd_apply])
 
 theorem isInnerLattice_std (n : ℕ) (A : Frame F (Fin n → E) 0) (i₀ : Fin n)
     (hz : ∀ i, A.z i ∈ MaxOrd o E) (h1 : A.z i₀ = 1)

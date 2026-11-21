@@ -27,7 +27,7 @@ theorem exp_smul_idem {p : Matrix (Fin n) (Fin n) ℂ} (hp : p * p = p) (a : ℂ
       map_one' := by simp
       map_mul' := fun s t => by
         simp only [Prod.fst_mul, Prod.snd_mul, add_mul, mul_add, smul_mul_smul_comm, mul_sub, sub_mul, hp,
-          mul_one, one_mul, sub_self, smul_zero, add_zero, zero_add, sub_sub_cancel, sub_zero]
+          mul_one, one_mul, sub_self, smul_zero, add_zero, zero_add, sub_zero]
       map_zero' := by simp
       map_add' := fun s t => by simp only [Prod.fst_add, Prod.snd_add, add_smul]; abel }
   have hf : Continuous f := by

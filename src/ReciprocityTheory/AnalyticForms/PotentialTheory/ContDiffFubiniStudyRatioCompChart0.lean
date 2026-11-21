@@ -706,7 +706,7 @@ theorem ptAtlas_mInt (Y : Type*) [TopologicalSpace Y] [Unique Y] (g : Y → ℝ)
     rw [hχ, hd, Subsingleton.elim (((ptAtlas Y).chart (0 : Fin 1)).symm y) default]
     ring
   simp only [e, ht]
-  simp [MeasureTheory.volume_pi, MeasureTheory.Measure.pi_univ, MeasureTheory.measureReal_def]
+  simp [MeasureTheory.volume_pi, MeasureTheory.measureReal_def]
 
 end
 

@@ -34,7 +34,7 @@ theorem deg_stepLat_succ (D : D7) (O : Setup D) (K : Type) [Field K] [NumberFiel
     by_cases hjk : j = k
     · subst hjk; simp [e]
     · have : p k ≠ p j := fun h' => hjk (hp h').symm
-      simp [e, Pi.single_apply, this, hjk]
+      simp [e, this, hjk]
   have hrep : ∀ v ∈ S', v = ∑ k, v (p k) • e k := by
     intro v hv
     let Φ : (Fin F.P₀.g → K) →ₗ[K] (Fin F.P₀.g → K) := ∑ k, (LinearMap.proj (p k)).smulRight (e k)

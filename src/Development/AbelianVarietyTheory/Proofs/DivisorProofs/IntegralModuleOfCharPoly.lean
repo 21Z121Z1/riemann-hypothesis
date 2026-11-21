@@ -18,7 +18,7 @@ theorem GlobalTheory.isIntMod_of_monic_dvd_affine : ∀ (A : Type) [Ring A] [Alg
     have h1 : ∑ k ∈ Finset.range (N + 1), u ^ k • (if k = 0 then 0 else q' (k - 1)) =
         ∑ k ∈ Finset.range N, u ^ (k + 1) • q k := by
       rw [Finset.sum_range_succ']
-      simp only [↓reduceIte, smul_zero, add_zero, Nat.add_sub_cancel, Nat.succ_ne_zero, if_false]
+      simp only [↓reduceIte, smul_zero, add_zero, Nat.add_sub_cancel, Nat.succ_ne_zero]
       exact Finset.sum_congr rfl fun k hk => by simp [q', Finset.mem_range.1 hk]
     have h2 : ∑ k ∈ Finset.range (N + 1), u ^ k • (H * q' k) = ∑ k ∈ Finset.range N, u ^ k • (H * q k) := by
       rw [Finset.sum_range_succ]
@@ -33,7 +33,7 @@ theorem GlobalTheory.isIntMod_of_monic_dvd_affine : ∀ (A : Type) [Ring A] [Alg
     have h1 : ∑ k ∈ Finset.range (N + 1), (-H) ^ k * (if k = 0 then 0 else q' (k - 1)) =
         ∑ k ∈ Finset.range N, (-H) ^ (k + 1) * q k := by
       rw [Finset.sum_range_succ']
-      simp only [↓reduceIte, mul_zero, add_zero, Nat.add_sub_cancel, Nat.succ_ne_zero, if_false]
+      simp only [↓reduceIte, mul_zero, add_zero, Nat.add_sub_cancel, Nat.succ_ne_zero]
       exact Finset.sum_congr rfl fun k hk => by simp [q', Finset.mem_range.1 hk]
     have h2 : ∑ k ∈ Finset.range (N + 1), (-H) ^ k * (H * q' k) = ∑ k ∈ Finset.range N, (-H) ^ k * (H * q k) := by
       rw [Finset.sum_range_succ]

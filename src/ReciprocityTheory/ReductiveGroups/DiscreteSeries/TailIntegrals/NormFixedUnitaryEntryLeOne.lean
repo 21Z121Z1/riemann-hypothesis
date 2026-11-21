@@ -54,7 +54,7 @@ private lemma mulVec_bvec_eq_fun_apply {n : ℕ} (M : Matrix (Fin n) (Fin n) ℂ
     M *ᵥ bvec j = fun i => M i j := by
   funext i
   first
-  | simp [Matrix.mulVec, bvec, Pi.single_apply]
+  | simp [Matrix.mulVec, bvec]
   | simp [Matrix.mulVec, dotProduct, bvec, Pi.single_apply]
   | simp [Matrix.mulVec, Matrix.dotProduct, bvec, Pi.single_apply]
 
@@ -62,7 +62,7 @@ private lemma star_bvec_dotProduct_eq_apply {n : ℕ} (j : Fin n) (w : Fin n →
   first
   | (rw [dotProduct, Finset.sum_eq_single j]
      · simp [bvec]
-     · intro b _ hb; simp [bvec, Pi.single_apply, hb]
+     · intro b _ hb; simp [bvec, hb]
      · simp)
   | (rw [Matrix.dotProduct, Finset.sum_eq_single j]
      · simp [bvec]

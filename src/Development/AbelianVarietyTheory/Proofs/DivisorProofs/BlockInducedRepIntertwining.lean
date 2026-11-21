@@ -71,7 +71,7 @@ theorem exists_sub_evals_injective : ∀ (k : Type) [Field k] [ValuativeRel k] [
     funext j
     by_cases hj : j = j₀
     · subst hj; simp [hκ]
-    · simp [Pi.mulSingle_apply, hj]
+    · simp [hj]
   let R : Subrepresentation ρ' :=
     { toSubmodule :=
         { carrier := {F | (∀ κ : Levi k m', κ j₀ = 1 → (∀ j, κ j ∈ K j) → ∀ x, F.1.1 (x * κ) = F.1.1 x) ∧

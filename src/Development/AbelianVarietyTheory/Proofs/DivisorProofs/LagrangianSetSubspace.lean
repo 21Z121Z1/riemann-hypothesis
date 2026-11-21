@@ -71,7 +71,7 @@ theorem lagSetB_isSubspace : ∀ {F E : Type} [Field F] [NumberField F] [Field E
             incM F H.ι * z * (incM F H'.ι)ᵀ) := by
         ext i j
         simp [Matrix.vecMulVec_apply, Matrix.mulVec, dotProduct, Matrix.mul_apply, Finset.smul_sum, Finset.sum_mul,
-          smul_add, mul_smul_comm, smul_mul_assoc]
+          smul_add]
       rw [this, map_smul, Prod.smul_fst, Prod.smul_snd, sub_arch_smul, sub_arch_smul]
       rfl
 

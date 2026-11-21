@@ -213,7 +213,7 @@ theorem splitTorus_gen_cubical :
       (ε := fun _ => 1) θ a.left q I) (fun _ => rfl), gs_eq _ q ⊤ trivial, map_one, map_one,
       Units.val_eq_one, mul_inv_eq_one]
     rcases h with rfl | rfl | rfl
-    · rw [C.face]; simp only [_root_.one_mul, _root_.mul_one]; ac_rfl
+    · rw [C.face]; simp only [_root_.one_mul]; ac_rfl
     · rw [C.face₂]; simp only [_root_.one_mul, _root_.mul_one]; ac_rfl
     · rw [C.face₃]; simp only [_root_.one_mul, _root_.mul_one]
   have key := unit_eq_one k X (m.left.appTop.hom w.val) (w.isUnit.map _)

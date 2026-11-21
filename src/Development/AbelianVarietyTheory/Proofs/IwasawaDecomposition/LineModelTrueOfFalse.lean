@@ -196,7 +196,7 @@ theorem nonempty_true (hp : p.Prime) (hW : (p : ℂ) ∈ W.nonunits) (Z : Mdl Y 
       exact ⟨hi, hj⟩
     · have h1 := congrArg (res (inf_le_left : M.L.U (e k).1 ⊓ V (e k).2 ≤ M.L.U (e k).1)) (M.L.isLB.g_self (e k).1)
       rw [res_res, map_one] at h1
-      simp only [L0, map_mul, res_res, u_self, map_one, _root_.mul_one]
+      simp only [L0, res_res, u_self, map_one, _root_.mul_one]
       exact h1
     · have h1 := congrArg (res (le_inf (le_inf (inf_le_left.trans (inf_le_left.trans inf_le_left))
         (inf_le_left.trans (inf_le_right.trans inf_le_left))) (inf_le_right.trans inf_le_left) :

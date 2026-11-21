@@ -34,7 +34,7 @@ theorem symm_multilinear_telescope {e : ℕ} {V : Type} [AddCommGroup V] [Module
     funext k
     refine Fin.cases ?_ (fun l => ?_) k
     · simp
-    · simp [Nat.succ_le_iff]
+    · simp
   have hb : T i = num (Fin.cons x (fun l : Fin e => if (l : ℕ) < i then x + d else x)) := by
     rw [hf, ← hs _ (Equiv.swap 0 ⟨i, hi'⟩)]
     simp only [hT]

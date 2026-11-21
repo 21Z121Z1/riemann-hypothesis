@@ -90,7 +90,7 @@ private theorem parOf_lnSym (a : ℕ → Bool) (R : Option ℝ) (l : Ln Dw) : pa
   have h : (lnSym a R l).support.Nonempty := by
     obtain ⟨n, hn, e⟩ := lnSym_eq l
     rw [e]
-    rcases hn with rfl | rfl <;> simp [Finsupp.support_single_ne_zero]
+    rcases hn with rfl | rfl <;> simp
   rw [parOf, dif_pos h]
   exact (mem_support_lnSym h.choose_spec).2
 

@@ -140,7 +140,7 @@ theorem latW_isLattice (L : GlobalTheory.FinPl.Lat S) (hL : Submodule.IsLattice 
       funext j
       by_cases hij : i = j
       · subst hij; simp [aux₃]
-      · simp [aux₃, Pi.single_apply, hij, Ne.symm hij]
+      · simp [aux₃, hij, Ne.symm hij]
     rwa [e] at h
 
 end GlobalTheory.LocMod.FullLatFrame

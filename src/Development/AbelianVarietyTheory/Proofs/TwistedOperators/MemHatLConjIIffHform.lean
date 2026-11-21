@@ -52,7 +52,7 @@ theorem mulVec_eq_sum {A : Type} [CommRing A] {n : ℕ} (B : Matrix (Fin n) (Fin
     B *ᵥ u = ∑ i, u i • (B *ᵥ Pi.single i 1) := by
   funext c
   rw [Finset.sum_apply]
-  simp only [Pi.smul_apply, Matrix.mulVec_single_one, smul_eq_mul, Matrix.transpose_apply]
+  simp only [Pi.smul_apply, Matrix.mulVec_single_one, smul_eq_mul]
   simp only [Matrix.mulVec, dotProduct]
   exact Finset.sum_congr rfl fun i _ => mul_comm _ _
 

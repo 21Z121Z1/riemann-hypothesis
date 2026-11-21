@@ -250,7 +250,7 @@ theorem liesOver_iff {S : Type} [CommRing S] [Algebra c.F S] [Algebra C.c₂.F S
         FrOver (coverDat C n nab₂ f φ) (k := S) y₂ y := by
   unfold Cover.LiesOver Cover.IsGroupMap
   rw [spMap_id, spMap_dual_id]
-  simp only [Category.id_comp, Category.comp_id]
+  simp only [Category.id_comp]
   refine and_congr ⟨fun h x => (RingHom.congr_fun h x).symm, fun h => RingHom.ext fun x => (h x).symm⟩
     (and_congr Iff.rfl (and_congr Iff.rfl ?_))
   constructor

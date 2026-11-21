@@ -42,9 +42,9 @@ theorem eq_zero_of_hermBil (σ : E →ₐ[F] E) (hσ : ∀ x, σ (σ x) = x) {n 
       rw [Finset.sum_eq_single l]
       · simp [hσ]
       · intro l' _ h
-        simp [Pi.single_apply, h]
+        simp [h]
       · simp
-    simp only [hs, Matrix.vecMul, dotProduct, Pi.zero_apply, Finset.sum_mul]
+    simp only [hs, Matrix.vecMul, dotProduct, Finset.sum_mul]
   calc b = b ᵥ* (J * J⁻¹) := by rw [Matrix.mul_nonsing_inv _ (Ne.isUnit hJ), Matrix.vecMul_one]
     _ = (b ᵥ* J) ᵥ* J⁻¹ := (Matrix.vecMul_vecMul _ _ _).symm
     _ = 0 := by rw [h1, Matrix.zero_vecMul]

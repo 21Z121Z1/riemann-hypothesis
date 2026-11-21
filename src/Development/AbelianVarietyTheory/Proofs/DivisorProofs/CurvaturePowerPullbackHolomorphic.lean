@@ -55,7 +55,7 @@ theorem charpolyRev_map {R S : Type} [CommRing R] [CommRing S] (f : R →+* S) (
   rw [Matrix.charpolyRev, Matrix.charpolyRev, ← Polynomial.coe_mapRingHom, RingHom.map_det]
   congr 1
   ext1 i j
-  by_cases h : i = j <;> simp [h, Matrix.one_apply]
+  by_cases h : i = j <;> simp [h]
 
 end GlobalTheory.ChernCalc.HoloPull
 

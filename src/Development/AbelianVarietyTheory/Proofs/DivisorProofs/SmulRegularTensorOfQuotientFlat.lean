@@ -137,7 +137,7 @@ theorem isSMulRegular_tensor_of_flat_quot (A : Type) [CommRing A] (f : A) (M : T
     rw [quotTensorEquivQuotSMul_mk_one_tmul]
   have hqex : Function.Exact (LinearMap.lsmul A N f) q := by
     intro n
-    simp only [q, TensorProduct.mk_apply, Set.mem_range, LinearMap.lsmul_apply]
+    simp only [q, Set.mem_range, LinearMap.lsmul_apply]
     exact kerq n
   have ha : IsSMulRegular (N ⊗[A] F) f := by
     have hinj : Function.Injective ((LinearMap.lsmul A N f).rTensor F) :=

@@ -114,9 +114,9 @@ theorem exists_isometric_ringEquiv :
   obtain ⟨t, htc, htn, ht⟩ := exists_extend ι' ι hd' (fun a => h a)
   obtain ⟨s, hsc, hsn, hs⟩ := exists_extend ι ι' hd (fun a => (h a).symm)
   have h1 : ∀ z, t (s z) = z := congrFun (hd.equalizer (htc.comp hsc) continuous_id
-    (funext fun a => by simp only [Function.comp_apply, hs, ht, id]))
+    (funext fun a => by simp only [Function.comp_apply, hs, ht]))
   have h2 : ∀ z, s (t z) = z := congrFun (hd'.equalizer (hsc.comp htc) continuous_id
-    (funext fun a => by simp only [Function.comp_apply, hs, ht, id]))
+    (funext fun a => by simp only [Function.comp_apply, hs, ht]))
   let σ : ℂ_[p] ≃+* ℂ_[p] :=
     { toFun := t, invFun := s, left_inv := h2, right_inv := h1, map_mul' := t.map_mul, map_add' := t.map_add }
   exact ⟨σ, htn, ht⟩

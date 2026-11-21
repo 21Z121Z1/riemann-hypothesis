@@ -103,7 +103,7 @@ theorem highest_weight_successive : StepHW := by
     · subst hab
       simp [sub_smul]
     · rw [if_neg (Ne.symm hab)]
-      simp [Pi.single_apply, hab]
+      simp [hab]
 
 section Tower
 

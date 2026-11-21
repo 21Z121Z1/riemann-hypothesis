@@ -66,9 +66,9 @@ theorem macof_swap {n : ℕ} (M : Matrix (Fin n) (Fin n) ℂ) {i j : Fin n} (h :
     ext a b
     simp only [Matrix.submatrix_apply, id]
     rcases eq_or_ne a i with rfl | ha
-    · simp [Matrix.updateRow_apply, h]
+    · simp [Matrix.updateRow_apply]
     rcases eq_or_ne a j with rfl | hb
-    · simp [Matrix.updateRow_apply, h, ha, Ne.symm h]
+    · simp [Matrix.updateRow_apply, h, ha]
     · simp [Matrix.updateRow_apply, ha, hb, Equiv.swap_apply_of_ne_of_ne ha hb]
   rw [hB, Matrix.det_permute, Equiv.Perm.sign_swap h]
   simp

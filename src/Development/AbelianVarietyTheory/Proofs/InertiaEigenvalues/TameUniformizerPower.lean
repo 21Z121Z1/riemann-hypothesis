@@ -94,10 +94,10 @@ theorem inflates_units (i : ℚ_[g] ≃+* w.adicCompletion E) (θ : (ZMod g)ˣ �
   refine ⟨LinearMap.id, fun e => (one_ne_zero : (1 : ℂ) ≠ 0) (LinearMap.congr_fun e (1 : ℂ)), fun k (v : ℂ) => ?_⟩
   have h1 : Matrix.GeneralLinearGroup.det (GlobalTheory.GLp.inc g 1 k) =
       Units.map (algebraMap ℤ_[g] ℚ_[g]).toMonoidHom (Matrix.GeneralLinearGroup.det k) := by
-    ext; simp [GlobalTheory.GLp.inc, RingHom.map_det]
+    ext; simp [GlobalTheory.GLp.inc]
   have h2 : Matrix.GeneralLinearGroup.det (GlobalTheory.GLp.red g 1 k) =
       Units.map (PadicInt.toZMod (p := g)).toMonoidHom (Matrix.GeneralLinearGroup.det k) := by
-    ext; simp [GlobalTheory.GLp.red, RingHom.map_det]
+    ext; simp [GlobalTheory.GLp.red]
   have e2 : Matrix.GeneralLinearGroup.det (Matrix.GeneralLinearGroup.map i.toRingHom (GlobalTheory.GLp.inc g 1 k)) =
       Units.map i.toRingHom.toMonoidHom (Matrix.GeneralLinearGroup.det (GlobalTheory.GLp.inc g 1 k)) := by
     ext; simp
@@ -264,7 +264,7 @@ theorem GlobalTheory.DepthZeroRankOneLabel.wild_trivial (D : D7) (k : Fin 2) (v 
     rw [Matrix.sub_apply, Matrix.one_apply_eq] at h1
     have h2 : μ (Matrix.GeneralLinearGroup.det u) = 1 := hT _ (by
       have e : ((Matrix.GeneralLinearGroup.det u : (_)ˣ) : (D.naut.plGw k v).adicCompletion D.host.E) = u.val 0 0 := by
-        simp [Matrix.det_fin_one]
+        simp
       rw [e]; exact h1)
     change (GlobalTheory.SmGL.detRep (Fin 1) μ) u (1 : ℂ) = (1 : ℂ)
     simp [GlobalTheory.SmGL.detRep, h2]))

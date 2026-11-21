@@ -71,14 +71,14 @@ theorem blockCentre_eq (h : IsCMExt F E σ) (hJ : IsHermND σ J) (hW : IsWittFra
     congr 1; funext k
     rcases eq_or_ne k i with rfl | hk
     · simp
-    · simp [hk, Pi.mulSingle_eq_of_ne hk]
+    · simp [hk]
   have d2 : GlobalTheory.LeviBlockRealization.diagonalMulSingle F i (sigR (AF F) σ (((e⁻¹ : (AF F ⊗[F] E)ˣ)) : AF F ⊗[F] E)) - 1 =
       diagonal (fun k => (((conjUnit σ ((Pi.mulSingle i e : Fin r → (AF F ⊗[F] E)ˣ) k))⁻¹ : (AF F ⊗[F] E)ˣ) : AF F ⊗[F] E) - 1) := by
     rw [GlobalTheory.LeviBlockRealization.diagonalMulSingle, ← diagonal_one, diagonal_sub]
     congr 1; funext k
     rcases eq_or_ne k i with rfl | hk
     · simp [conjUnit]
-    · simp [hk, Pi.mulSingle_eq_of_ne hk]
+    · simp [hk]
   rw [key, d1, d2]
 
 open GroundTheory.Global GlobalTheory.HeckeAbsArch in

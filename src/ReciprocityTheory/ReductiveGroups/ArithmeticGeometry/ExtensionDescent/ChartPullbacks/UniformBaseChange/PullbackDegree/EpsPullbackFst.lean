@@ -139,7 +139,7 @@ lemma kapS_comm : kapS φ hφ ≫ jK R = jK R' ≫ specOf φ := by
   simp only [kapS, jK, specOf, ← Spec.map_comp]
   congr 1
   ext x
-  simp [kap, IsLocalization.map_eq]
+  simp [kap]
 
 end Kappa
 

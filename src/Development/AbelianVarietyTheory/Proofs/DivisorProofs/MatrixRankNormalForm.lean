@@ -38,6 +38,6 @@ theorem rank_frame_exists :
   rw [this]
   ext k
   rw [Module.Basis.equivFun_self]
-  simp [Pi.single_apply, Finsupp.single_apply, eq_comm]
+  simp [Pi.single_apply, eq_comm]
 
 end GlobalTheory

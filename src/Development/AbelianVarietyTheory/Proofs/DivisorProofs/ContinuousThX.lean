@@ -225,7 +225,7 @@ theorem thX_rat_right (hK : GlobalTheory.FunPr.Hypotheses₂) {B : Base F E} {a 
   have hinv := ((GlobalTheory.T.theta_basic_properties hK F E σ B _ _ _ _ G₁.M' _ _ om₁' _ _ _ _ p1).1 _ (he'.maps _ hρ)).2.1 1 (one_mem _) h₁ hh₁ 1 1
   simp only [mul_one] at hinv
   rw [hα, ha2] at h3
-  simp only [mul_one, one_mul, map_one, Circle.coe_one, NNReal.coe_one, Real.one_rpow, Complex.ofReal_one, one_smul] at h3
+  simp only [mul_one, map_one, Circle.coe_one, NNReal.coe_one, Real.one_rpow, Complex.ofReal_one, one_smul] at h3
   rw [hν, ha1, ← hinv]
   unfold thX theta
   rw [h1, ← h2, h3]

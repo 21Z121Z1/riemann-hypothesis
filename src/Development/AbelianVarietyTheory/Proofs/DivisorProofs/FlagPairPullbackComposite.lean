@@ -82,7 +82,7 @@ theorem theta (M : B.X.Modules) :
   rw [← cancel_mono ((compIso (genMap hc) B.gen.ι _ (genMap_comp_ι hc)).hom.app M)]
   simp only [Category.assoc, Iso.inv_hom_id_app, Category.comp_id]
   rw [A3]
-  simp only [← Functor.map_comp_assoc, Category.assoc, Iso.inv_hom_id_app, Category.comp_id]
+  simp only [← Functor.map_comp_assoc, Iso.inv_hom_id_app, Category.comp_id]
   rw [← A2, Iso.inv_hom_id_app_assoc, A1]
 
 include hfc in

@@ -308,7 +308,7 @@ theorem core_loss (ch : Choice R) {t : T} {w : PlL D} {Φ : ch.G.Datum} (hS : ch
   have := Fintype.ofFinite (ch.S.Classes t Φ β)
   rw [GridChoice.classSum, finsum_eq_sum_of_fintype]
   refine loss_sum _ _ fun c _ => loss_mul (hG β c) ?_
-  simp only [GridChoice.pairAt, Finsupp.sum, LinearMap.sum_apply, LinearMap.smul_apply, smul_eq_mul, LinearMap.compl₁₂_apply]
+  simp only [GridChoice.pairAt, Finsupp.sum, LinearMap.sum_apply, LinearMap.smul_apply, smul_eq_mul]
   refine loss_sum _ _ fun d hd => ?_
   obtain ⟨x', y', e⟩ := (hτ β hβ').coef_eq hd
   rw [e]

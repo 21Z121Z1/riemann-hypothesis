@@ -202,7 +202,7 @@ example {K LL : Type} [Field K] [Field LL] [NumberField LL] [Algebra K LL] {C : 
     rw [Finset.sum_eq_single 1]
     · simp [MonoidAlgebra.one_def, Module.End.one_eq_id]
     · intro g _ hg
-      simp [MonoidAlgebra.one_def, Finsupp.single_apply, hg.symm]
+      simp [MonoidAlgebra.one_def, hg.symm]
     · simp
   have h2 : algType (LL := LL) ρ chi ⊥ 1 = ⊤ := by
     rw [eq_top_iff]

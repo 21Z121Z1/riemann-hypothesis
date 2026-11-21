@@ -77,7 +77,7 @@ theorem star_dotProduct_self (g : Fin p → ℂ) : star g ⬝ᵥ g = ((sqNorm g 
 
 theorem projPerp_apply (g : Fin p → ℂ) (i l : Fin p) :
     projPerp g i l = (if i = l then 1 else 0) - ((sqNorm g : ℝ) : ℂ)⁻¹ * (g i * conj (g l)) := by
-  simp [projPerp, Matrix.sub_apply, Matrix.one_apply, vecMulVec_apply, Complex.star_def]
+  simp [projPerp, Matrix.sub_apply, Matrix.one_apply, vecMulVec_apply]
 
 theorem projPerp_mulVec (g w : Fin p → ℂ) :
     projPerp g *ᵥ w = w - (((sqNorm g : ℝ) : ℂ)⁻¹ * (star g ⬝ᵥ w)) • g := by
@@ -111,7 +111,7 @@ theorem conj_projPerp (g : Fin p → ℂ) (i l : Fin p) :
     apply_ite (starRingEnd ℂ), map_one, map_zero]
   by_cases h : i = l
   · subst h
-    simp only [if_pos rfl]
+    simp only
     ring
   · rw [if_neg h, if_neg (Ne.symm h)]
     ring
@@ -137,7 +137,7 @@ theorem sum_normSq_projPerp {g : Fin p → ℂ} (hg : g ≠ 0) :
     intro l
     have h1 : sqNorm (Pi.single l (1 : ℂ)) = 1 := by
       unfold sqNorm
-      rw [Finset.sum_eq_single l (fun b _ hb => by simp [Pi.single_apply, hb]) (by simp)]
+      rw [Finset.sum_eq_single l (fun b _ hb => by simp [hb]) (by simp)]
       simp
     have := sqNorm_projPerp_mulVec hg (Pi.single l (1 : ℂ))
     have h2 : star g ⬝ᵥ Pi.single l (1 : ℂ) = star (g l) := by

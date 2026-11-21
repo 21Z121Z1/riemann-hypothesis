@@ -52,7 +52,7 @@ theorem UpperTheory.V.AlgebraTools.AnnihilatorQuotientFinite.idemLift :
     (by simpa [sq] using hx)
     (by
       have : (Polynomial.derivative (Polynomial.X ^ 2 - Polynomial.X : Polynomial R)).eval x = 2 * x - 1 := by
-        simp [Polynomial.derivative_X_pow]
+        simp
         try norm_num
       rw [this]; exact hu)
   refine ⟨e, ?_, hex⟩

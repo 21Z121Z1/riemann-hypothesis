@@ -384,7 +384,7 @@ theorem wordWeight_true : Formalism.FourierDecayAlt.F7.WordWeight := by
       · simp only [Bool.false_eq_true, ↓reduceIte] at hl ⊢
         rw [div_one]
         ring
-      · simp only [Bool.false_eq_true, ↓reduceIte] at hl ⊢
+      · simp only [↓reduceIte] at hl ⊢
         have a1 : Y - pt ≠ 0 := hl.1
         have a2 : Y - pt + 1 ≠ 0 := fun h => hl.2 (by linear_combination h)
         have e1 : Y + 1 - pt - 1 = Y - pt := by ring

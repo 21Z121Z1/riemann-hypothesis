@@ -59,7 +59,7 @@ theorem at_embArch {m : ℕ} (J : Matrix (Fin m) (Fin m) E) {w : InfinitePlace F
     (fun _ _ => Prod.ext rfl (mul_zero _).symm) from rfl, e]
   by_cases h : r = s
   · subst h
-    simp only [Matrix.one_apply_eq, mul_one, sub_add_cancel_left, add_sub_cancel_left]
+    simp only [Matrix.one_apply_eq, mul_one]
     have hab : ∀ a b : AF F ⊗[F] E, 1 - a + b - 1 = b - a := fun a b => by ring
     rw [hab, smul_sub, smul_tensNU_inl u hu, smul_tensNU_inl u hu, sub_zero]
   · simp only [Matrix.one_apply_ne h, mul_zero, zero_add, sub_zero]

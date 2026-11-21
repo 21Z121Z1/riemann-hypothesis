@@ -169,7 +169,7 @@ theorem support_unif : GlobalTheory.ThK.KP → ∀ (F E : Type) [Field F] [Numbe
     exact himpl.symm
   have key := hcond (((m₀ * N : ℕ) : AF F) * z j) (fun t ht0 ht1 => by
     have e1 := congrFun (hfix _ (isMulInt_single (m₀ * N) j t ht0 ht1)) z
-    simp only [schr, dotProduct_single, zero_dotProduct, Pi.zero_apply, zero_mul, mul_zero, add_zero] at e1
+    simp only [schr, dotProduct_single, Pi.zero_apply, zero_mul, mul_zero, add_zero] at e1
     have e2 := (mul_eq_right₀ hz').1 e1
     rw [← e2]
     congr 1

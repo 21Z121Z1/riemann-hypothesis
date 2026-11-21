@@ -134,7 +134,7 @@ def iwRed (h : ℕ) (hh : 1 ≤ h) (w : Ob) (hw : w ∈ IsLocalRing.maximalIdeal
     have h0 : MvPowerSeries.constantCoeff (∏ i : Fin h, (MvPowerSeries.X i : MvPowerSeries (Fin h) Ob)) = 0 := by
       rw [map_prod]
       exact Finset.prod_eq_zero (i := ⟨0, hh⟩) (Finset.mem_univ _) (by simp)
-    simp [map_mul, map_sub, h0, (IsLocalRing.residue_eq_zero_iff w).mpr hw]
+    simp [map_mul, map_sub, (IsLocalRing.residue_eq_zero_iff w).mpr hw]
     exact Or.inr (by omega))
 
 def iwMax (h : ℕ) (hh : 1 ≤ h) (w : Ob) (hw : w ∈ IsLocalRing.maximalIdeal Ob) : Ideal (IwRing Ob h w) :=

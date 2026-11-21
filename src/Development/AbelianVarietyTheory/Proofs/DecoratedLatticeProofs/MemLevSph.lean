@@ -21,11 +21,11 @@ def levTw (W : RealPack ex) (x : GA (I.rec7 l Z) (I.rec7 l Z).sp.X') (t : W.P.T)
 
 theorem mem_levSph {W : RealPack ex} {x : GA (I.rec7 l Z) (I.rec7 l Z).sp.X'} (h : GA (I.rec7 l Z) (I.rec7 l Z).sp.X') :
     h ∈ levSph W x ↔ x⁻¹ * h * x ∈ levS _ (pk W).βX (datSph W) := by
-  simp [levSph, levS, MulAut.conj_apply]
+  simp [levSph, levS]
 
 theorem mem_levTw {W : RealPack ex} {x : GA (I.rec7 l Z) (I.rec7 l Z).sp.X'} {t : W.P.T} (h : GA (I.rec7 l Z) (I.rec7 l Z).sp.X') :
     h ∈ levTw W x t ↔ x⁻¹ * h * x ∈ levS _ (pk W).βX (datXP (pk W) (lvP W) t) := by
-  simp [levTw, levS, MulAut.conj_apply]
+  simp [levTw, levS]
 
 end GlobalTheory.TopVol
 

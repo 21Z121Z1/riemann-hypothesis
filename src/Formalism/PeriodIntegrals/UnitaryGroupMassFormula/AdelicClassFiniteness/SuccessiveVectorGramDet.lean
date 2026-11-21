@@ -68,7 +68,7 @@ theorem successive_vector_gram_det : SvGramDet := by
       by_cases h : a = i
       · subst h
         simp
-      · simp [Pi.single_apply, h]
+      · simp [h]
     rw [hs]
     first
       | rw [single_dotProduct, one_mul]

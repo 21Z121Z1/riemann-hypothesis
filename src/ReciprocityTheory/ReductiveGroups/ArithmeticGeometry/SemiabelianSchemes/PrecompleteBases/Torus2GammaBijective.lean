@@ -382,8 +382,8 @@ theorem torus_const_mul_chi {c₁ c₂ : Γ(Spec (.of K), ⊤)} (h1 : IsUnit c�
   | exact (((AddMonoidAlgebra.single_eq_single_iff _ _ _ _).1 h').resolve_right (fun h => hc h.1)).1
   | exact ((AddMonoidAlgebra.single_eq_single_iff.1 h').resolve_right (fun h => hc h.1)).1
   | (simp [AddMonoidAlgebra.single_eq_single_iff, hc] at h'; exact h'.1)
-  | (simp [hc] at h'; exact h'.1)
-  | (simp [hc] at h'; exact h')
+  | (simp at h'; exact h'.1)
+  | (simp at h'; exact h')
   | (by_contra ha
      have h2 := congrArg (fun p => AddMonoidAlgebra.coeff p a) h'
      simp [Ne.symm ha] at h2

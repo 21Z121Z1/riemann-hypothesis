@@ -83,7 +83,7 @@ theorem differentiableOn_integral_of_bounded_holomorphic {X : Type} [MeasurableS
             (tendsto_atTop_add_const_right _ _ tendsto_natCast_atTop_atTop)
         have h2 := (Complex.continuous_ofReal.tendsto 0).comp h1
         exact h2
-      · simp only [Set.mem_setOf_eq, Set.mem_compl_iff, Set.mem_singleton_iff, h]
+      · simp only [Set.mem_compl_iff, Set.mem_singleton_iff, h]
         exact Complex.ofReal_ne_zero.2 (hpos n).ne'
     refine aestronglyMeasurable_of_tendsto_ae atTop
       (f := fun n x => (h n)⁻¹ • (F (s₁ + h n) x - F s₁ x)) (fun n => ?_) ?_

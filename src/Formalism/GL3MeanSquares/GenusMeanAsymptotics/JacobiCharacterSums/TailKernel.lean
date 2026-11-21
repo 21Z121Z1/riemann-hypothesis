@@ -107,7 +107,7 @@ theorem tail_kernel_norm_lower (σ u : ℝ) (hσ1 : σ ≤ 1 - 1 / 800) :
   have h2 := Complex.abs_im_le_norm ((σ : ℂ) + (u : ℂ) * I - 1)
   simp only [Complex.sub_re, Complex.add_re, Complex.ofReal_re, Complex.mul_re, Complex.I_re,
     Complex.I_im, Complex.ofReal_im, Complex.one_re, Complex.sub_im, Complex.add_im, Complex.mul_im,
-    Complex.one_im, mul_zero, mul_one, sub_zero, zero_mul, add_zero, zero_add] at h1 h2
+    Complex.one_im, mul_zero, mul_one, sub_zero, add_zero, zero_add] at h1 h2
   have hre : 1 / 800 ≤ |σ - 1| := by
     rw [abs_sub_comm, abs_of_pos (by linarith)]
     linarith

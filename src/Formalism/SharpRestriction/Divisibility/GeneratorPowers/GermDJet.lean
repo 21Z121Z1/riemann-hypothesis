@@ -164,7 +164,7 @@ theorem sL_trunc (m : ℕ) (g : Fin d → MvPowerSeries (Fin 1 × Fin d) R) :
   rw [Ideal.Quotient.eq]
   fin_cases k
   · simp
-  · simp only [power_series_in_fin_one, Matrix.cons_val_one, Matrix.head_cons]
+  · simp only [power_series_in_fin_one]
     change psTrunc (m + 1) (g j) - C (MvPolynomial.constantCoeff (psTrunc (m + 1) (g j))) -
       (psTrunc m (g j) - C (MvPolynomial.constantCoeff (psTrunc m (g j)))) ∈ _
     rw [const_psTrunc_lemma_3, const_psTrunc_lemma_3, sub_sub_sub_cancel_right]

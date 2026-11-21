@@ -14,7 +14,7 @@ theorem conjCoord_apply (d : ℕ) (w : V d) (i : Fin d) : conjCoord d w i = conj
 
 theorem conjCoord_smul (d : ℕ) (c : ℂ) (w : V d) : conjCoord d (c • w) = conj c • conjCoord d w := by
   ext i
-  simp [conjCoord_apply, mul_comm]
+  simp [conjCoord_apply]
 
 theorem conjCoord_coordVec {d : ℕ} (b : Fin d) : conjCoord d (GlobalTheory.GoodMetric.coordVec b) = GlobalTheory.GoodMetric.coordVec b := by
   ext i

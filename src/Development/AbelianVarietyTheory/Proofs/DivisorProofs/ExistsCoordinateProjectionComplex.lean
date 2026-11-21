@@ -109,6 +109,6 @@ theorem realDiag_conj_coordProj : ∀ (g : ℕ) (K : Type) (ρ : K → Fin g →
   funext m
   by_cases hm : m = j
   · subst hm; simp [hδj]
-  · simp [hδm m hm, Pi.single_apply, hm]
+  · simp [hδm m hm, hm]
 
 end GlobalTheory

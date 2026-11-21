@@ -150,7 +150,7 @@ theorem eta_eq_of_one_lt {s : ℂ} (hs : 1 < s.re) :
     have := natCast_mul_natCast_cpow 2 (k + 1) (-s)
     rw [show 2 * k + 2 = 2 * (k + 1) by ring, Nat.cast_mul, this]
     simp
-  simp only [Fin.sum_univ_two, br, Fin.val_zero, Fin.val_one, add_zero, add_assoc]
+  simp only [Fin.sum_univ_two, br, Fin.val_zero, Fin.val_one, add_assoc]
   rw [this]
   ring
 

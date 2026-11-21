@@ -85,7 +85,7 @@ theorem GlobalTheory.EisRestrict.isHermND_restrictedForm : ∀ (F E : Type) [Fie
       have h' : (fun k => σ ((Pi.single i (1 : E) : Fin n → E) k)) = Pi.single i 1 := by
         funext k; by_cases hk : k = i
         · subst hk; simp
-        · simp [Pi.single_apply, hk]
+        · simp [hk]
       rw [h', single_one_dotProduct] at h
       have := congrArg σ h
       rw [hσ, map_zero] at this

@@ -91,7 +91,7 @@ theorem repF_one : RepF X wt ιA 1 (1 : unitaryGroupFiniteAdeles D) := by
   rw [e, Matrix.one_mulVec, Finset.sum_eq_single j]
   · simp
   · intro b _ hb
-    simp [Matrix.one_apply, hb]
+    simp [hb]
   · simp
 
 set_option maxHeartbeats 1000000 in

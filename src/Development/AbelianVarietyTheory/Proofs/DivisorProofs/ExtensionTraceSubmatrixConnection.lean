@@ -15,9 +15,9 @@ theorem emb_inj {N : ℕ} (i : Fin N) : Function.Injective (emb i) := by
   · simp only [emb, Sum.elim_inl] at h
     exact congrArg Sum.inl (Fin.castLE_injective _ h)
   · simp only [emb, Sum.elim_inl, Sum.elim_inr] at h
-    exact absurd (congrArg Fin.val h) (by simp [Fin.coe_castLE]; exact a.isLt.ne)
+    exact absurd (congrArg Fin.val h) (by simp; exact a.isLt.ne)
   · simp only [emb, Sum.elim_inl, Sum.elim_inr] at h
-    exact absurd (congrArg Fin.val h) (by simp [Fin.coe_castLE]; exact (b.isLt.ne).symm)
+    exact absurd (congrArg Fin.val h) (by simp; exact (b.isLt.ne).symm)
   · rw [Subsingleton.elim a b]
 
 theorem sum_castLE_eq {N : ℕ} (i : Fin N) (f : Fin N → ℂ) :

@@ -355,8 +355,8 @@ theorem second_shift_constant : GTSSConst := by
     have h := congrArg (fun x : Q.Pr (Q.RadSp P.k P.r Bs.z Bs.z' Bs.π Bs.π') => vl P Bs e (x.1 U) ρ' q) h0
     simp only [pm, Module.End.mul_apply] at h
     rw [vl_kap P Bs d e hk, hWv, (hss _ ρ' q).2] at h
-    simp only [vl_kap P Bs d e hk, hUv, f, g, hup, if_false, if_true] at h
-    simp only [mul_ite, mul_zero, mul_one, Finset.sum_ite_eq', Finset.mem_univ, if_true, ite_mul, zero_mul,
+    simp only [vl_kap P Bs d e hk, hUv, f, g, if_true] at h
+    simp only [mul_ite, mul_zero, mul_one, Finset.sum_ite_eq', Finset.mem_univ, if_true,
       one_mul] at h
     exact h.symm.trans (by simp [hup])
 

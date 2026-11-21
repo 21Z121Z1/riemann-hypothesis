@@ -171,7 +171,7 @@ theorem norm_dotProduct_mulVec_star_le (A : Matrix n n ℂ) (x : n → ℂ) :
 theorem norm_diag_le_l2_opNorm (A : Matrix n n ℂ) (k : n) : ‖A k k‖ ≤ ‖A‖ := by
   have h := norm_dotProduct_mulVec_star_le A (Pi.single k 1)
   have h1 : ∑ l, ‖(Pi.single k 1 : n → ℂ) l‖ ^ 2 = 1 := by
-    rw [Finset.sum_eq_single k] <;> simp +contextual [Pi.single_apply]
+    rw [Finset.sum_eq_single k] <;> simp +contextual
   rw [h1] at h
   simpa [← Pi.single_star] using h
 
@@ -319,7 +319,7 @@ theorem posDef_neg_submatrix_diagonal_add {j : n → ℂ} {E : Matrix n n ℂ} (
     fun a => by simp [hj]
   convert h using 1
   ext a b
-  by_cases hab : e a = e b <;> simp [diagonal_apply, hab, add_comm]
+  by_cases hab : e a = e b <;> simp [hab, add_comm]
 
 omit [DecidableEq n] in
 

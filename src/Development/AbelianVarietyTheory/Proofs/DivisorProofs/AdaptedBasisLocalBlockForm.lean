@@ -130,7 +130,7 @@ theorem emb_mem_unip : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
       by_contra hc; exact hne (Pi.single_eq_of_ne hc 1)
     rw [hj', hbl' k, hbl' _] at hkj
     have := tri_lt hkj
-    simp only [Fin.val_mk] at this
+    simp only at this
     exact ⟨⟨k.val, by omega⟩, this, (hcol k (by omega)).symm⟩
 
   have G3 : ∀ (x' : GLoc σ J v) (g' : GL (Fin n) (Fv F v)), g' ∈ GlobalTheory.SmGL.unipRad (Fv F v) (tripPlace hld) →

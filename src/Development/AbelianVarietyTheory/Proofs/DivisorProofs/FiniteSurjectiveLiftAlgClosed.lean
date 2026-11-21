@@ -19,7 +19,7 @@ theorem finite_exists_lift_algClosed_point : ∀ (Bg S : Scheme.{0}) (πB : Bg �
   obtain ⟨⟨s, φ⟩, rfl⟩ := (Scheme.SpecToEquivOfField K S).symm.surjective x
   simp only [Scheme.SpecToEquivOfField_symm_apply] at hb
   have hs : (Spec.map φ ≫ S.fromSpecResidueField s) (IsLocalRing.closedPoint K) = s := by
-    simp only [Scheme.Hom.comp_base, TopCat.hom_comp, ContinuousMap.coe_comp, Function.comp_apply]
+    simp only [Scheme.Hom.comp_base, TopCat.hom_comp, ContinuousMap.coe_comp]
     exact Scheme.fromSpecResidueField_apply _ _
   rw [hs] at hb
   subst hb

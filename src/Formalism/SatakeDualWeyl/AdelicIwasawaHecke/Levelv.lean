@@ -88,7 +88,7 @@ theorem levelv_tmul_mem_range (e : 𝓞 E) (x : v.adicCompletionIntegers F) :
     rw [Finset.sum_eq_single i]
     · simp
     · intro j _ hj
-      simp [Pi.single_apply, hj]
+      simp [hj]
     · intro h
       exact absurd (Finset.mem_univ i) h
   show φ e ∈ _

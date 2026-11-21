@@ -165,10 +165,10 @@ theorem delta_cechOfPosetOne_of_eq {y : CC F 2} {f : C1 F} (hf : e2 F y = d1 F f
   have sI : cubeSign t.1 i = 1 := cubeSign_eq_one_of_forall_le hle
   have sJ : cubeSign t.1 j = -1 := by
     rw [cubeSign, ht, Finset.filter_insert, Finset.filter_insert, Finset.filter_singleton]
-    simp [hij, hjk.not_gt, lt_irrefl]
+    simp [hij, hjk.not_gt]
   have sK : cubeSign t.1 k = 1 := by
     rw [cubeSign, ht, Finset.filter_insert, Finset.filter_insert, Finset.filter_singleton]
-    simp [hik, hjk, lt_irrefl, Finset.card_pair hij.ne]
+    simp [hik, hjk, Finset.card_pair hij.ne]
   erw [e2_min_single y (Cube.eraseIdx t ⟨i, hi⟩) (ne t.1 (card_nonempty t)),
     e2_min_single y (Cube.eraseIdx t ⟨j, hj⟩) (ne t.1 (card_nonempty t)),
     e2_min_single y (Cube.eraseIdx t ⟨k, hk⟩) (ne t.1 (card_nonempty t)),

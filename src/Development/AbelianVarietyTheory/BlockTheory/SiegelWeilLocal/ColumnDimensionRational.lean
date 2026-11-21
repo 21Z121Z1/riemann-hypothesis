@@ -309,6 +309,6 @@ def ColumnDim : Prop :=
 example (g : ℕ) : ga 0 g = 1 := by
   have h1 : Nat.card (GL (Fin 0) (ZMod g)) = 1 := Nat.card_unique
   have h2 : Nat.card ↥(Formalism.L2.Col.HU (ZMod g) 0) = 1 := Nat.card_unique
-  simp [ga, h1, h2]
+  simp [ga]
 
 end GlobalTheory.IndefiniteRowSideFullHecke.ParabolicSubgroups

@@ -135,14 +135,14 @@ theorem hasPairEps_of_equiv (i : k ≃+* k') (hi : Continuous i) (hi' : Continuo
         (L'.comp B.toLinearMap) (τ (tilde g) (B.symm w'))) =
       fun g => l' (π' (tilde (corner g)) v') * L' (τ' (tilde g) w') := by
     funext g
-    simp only [LinearMap.funLeft_apply, LinearMap.comp_apply, LinearEquiv.coe_coe, Function.comp_apply, hA, hB,
+    simp only [LinearMap.funLeft_apply, LinearMap.comp_apply, LinearEquiv.coe_coe, hA, hB,
       map_tilde, map_corner, map_map_symm, LinearEquiv.apply_symm_apply]
   have e2 : LinearMap.funLeft ℂ ℂ (GeneralLinearGroup.map (n := Fin m) i.symm.toRingHom)
       (fun g => (l'.comp A.toLinearMap) (π (corner g) (A.symm v')) *
         (L'.comp B.toLinearMap) (τ g (B.symm w'))) =
       fun g => l' (π' (corner g) v') * L' (τ' g w') := by
     funext g
-    simp only [LinearMap.funLeft_apply, LinearMap.comp_apply, LinearEquiv.coe_coe, Function.comp_apply, hA, hB,
+    simp only [LinearMap.funLeft_apply, LinearMap.comp_apply, LinearEquiv.coe_coe, hA, hB,
       map_corner, map_map_symm, LinearEquiv.apply_symm_apply]
   have e3 : (ω'.comp (Units.map i.toRingHom.toMonoidHom)) (-1) = ω' (-1) := by
     simp

@@ -52,4 +52,4 @@ theorem UpperTheory.Reformulated.B.ExistsColumnVector.ex_col :
     rcases Int.units_eq_one_or (Equiv.Perm.sign (Equiv.swap 0 i)) with h | h <;> simp [h]
   refine ⟨Matrix.GeneralLinearGroup.mkOfDetNeZero _ h2, ?_⟩
   ext j
-  simp [Matrix.mulVec_single_one, Matrix.GeneralLinearGroup.mkOfDetNeZero]
+  simp [Matrix.GeneralLinearGroup.mkOfDetNeZero]

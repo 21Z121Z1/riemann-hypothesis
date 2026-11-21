@@ -56,7 +56,7 @@ lemma isPrecomplete_of_basis (I : Ideal R) [IsPrecomplete I R] (b : Module.Basis
     rw [Finset.sum_eq_single i]
     · simp
     · intro j _ hj
-      simp [Finsupp.single_apply, hj, Ne.symm hj]
+      simp [Ne.symm hj]
     · simp
   rw [hs]
   exact h1

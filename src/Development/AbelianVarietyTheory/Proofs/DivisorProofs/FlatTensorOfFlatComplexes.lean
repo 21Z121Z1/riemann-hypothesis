@@ -69,7 +69,7 @@ def tensP {ι : Type} (A B : ι → Scheme.{0}ᵒᵖ ⥤ ModuleCat.{1} (ULift.{1
     classical
     ext1
     refine DirectSum.linearMap_ext _ fun i => TensorProduct.ext' fun a b => ?_
-    simp [DirectSum.lof_eq_of, DirectSum.lmap_of]
+    simp [DirectSum.lof_eq_of]
   map_comp f g := by
     classical
     ext1

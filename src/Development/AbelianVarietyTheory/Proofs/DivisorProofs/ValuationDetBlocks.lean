@@ -97,7 +97,7 @@ theorem conj_mem_KO_iff {s : kˣ} (hs : (s : k) ∈ 𝒪[k]) (σ : A ⊕ A' ≃ 
 
 def levelJ {ϖ : kˣ} (hϖ : IsUnif ϖ) (c : ℕ) (σ : A ⊕ A' ≃ D) : Subgroup (GL D k) where
   carrier := {h | h ∈ KO k D ∧ ∀ i j, h.val (σ (.inr i)) (σ (.inl j)) ∈ cball (ϖ ^ c)}
-  one_mem' := ⟨one_mem _, fun i j => by simp [cball, Matrix.one_apply]⟩
+  one_mem' := ⟨one_mem _, fun i j => by simp [cball]⟩
   mul_mem' := fun {x y} hx hy => by
     have hs : ((ϖ ^ c : kˣ) : k) ∈ 𝒪[k] := by rw [Units.val_pow_eq_pow_val]; exact pow_mem hϖ.mem c
     refine ⟨mul_mem hx.1 hy.1, (conj_mem_KO_iff hs σ (mul_mem hx.1 hy.1)).1 ?_⟩

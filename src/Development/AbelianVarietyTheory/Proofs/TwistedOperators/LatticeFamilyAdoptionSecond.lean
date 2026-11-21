@@ -117,7 +117,7 @@ theorem ext_smul (c : K) (A : Module.End K Fm) :
     ext O K'' (c • A) = algebraMap K K'' c • ext O K'' A := by
   apply TensorProduct.AlgebraTensorModule.ext
   intro x m
-  simp [tmul_smul_frac, TensorProduct.smul_tmul', smul_eq_mul]
+  simp [tmul_smul_frac, TensorProduct.smul_tmul']
   rw [Algebra.smul_def]
 
 theorem ext_sum {ι : Type} (s : Finset ι) (A : ι → Module.End K Fm) :

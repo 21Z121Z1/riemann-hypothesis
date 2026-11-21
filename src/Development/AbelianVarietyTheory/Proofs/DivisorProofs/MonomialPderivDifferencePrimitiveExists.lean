@@ -58,7 +58,7 @@ theorem monomial_pderiv_difference_primitive (n : ℕ) (i i' : Fin (n + 1)) (hii
         = monomial (α + Finsupp.single i 1 - Finsupp.single i' 1) (c * (α i' : ℝ)) := by
     intro α c
     rw [pderiv_monomial]
-    simp [Finsupp.single_apply, hii]
+    simp [hii]
   have hsplit : ∀ x y : MvPolynomial (Fin (n + 1)) ℝ,
       pderiv i' (x + y) - pderiv i (x + y) = (pderiv i' x - pderiv i x) + (pderiv i' y - pderiv i y) := by
     intro x y
@@ -79,10 +79,10 @@ theorem monomial_pderiv_difference_primitive (n : ℕ) (i i' : Fin (n + 1)) (hii
     have ha : ((α i : ℝ) + 1) ≠ 0 := by positivity
     set α' := α + Finsupp.single i 1 - Finsupp.single i' 1 with hα'
     have hα'i' : α' i' = b := by
-      simp [hα', Finsupp.single_apply, hii, hb]
+      simp [hα', hii, hb]
     have hα'j : ∀ j, j ≠ i → j ≠ i' → α' j = α j := by
       intro j h1 h2
-      simp [hα', Finsupp.single_apply, Ne.symm h1, Ne.symm h2]
+      simp [hα', Ne.symm h1, Ne.symm h2]
     obtain ⟨J', R', hD', hJ', hR'⟩ := ih α' (c * ((b : ℝ) + 1) / ((α i : ℝ) + 1)) hα'i'
     refine ⟨(-(1 / ((α i : ℝ) + 1))) • (X i * monomial α c) + J', J', ?_, rfl, ?_⟩
     · rw [hsplit, hD', hXm, Derivation.map_smul, Derivation.map_smul, hpi, hpi', hb, smul_monomial, smul_monomial,
@@ -98,8 +98,8 @@ theorem monomial_pderiv_difference_primitive (n : ℕ) (i i' : Fin (n + 1)) (hii
         rw [Finset.mem_singleton] at hb'
         subst hb'
         refine ⟨?_, fun j hj hj' => ?_⟩
-        · simp [Finsupp.single_apply, hii, hα'i', hb]
-        · simp [Finsupp.single_apply, Ne.symm hj, hα'j j hj hj']
+        · simp [hii, hα'i', hb]
+        · simp [Ne.symm hj, hα'j j hj hj']
       · obtain ⟨h1, h2⟩ := hR' β h
         rw [hα'i'] at h1
         exact ⟨by omega, fun j hj hj' => (h2 j hj hj').trans (hα'j j hj hj')⟩

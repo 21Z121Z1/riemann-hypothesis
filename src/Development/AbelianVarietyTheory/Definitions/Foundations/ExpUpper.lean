@@ -151,7 +151,7 @@ example : ent (ofSL 1) 0 1 = 0 := by
 
 example (z : ℂ) : mob (toGQ !![1, 1; 0, 1]) z = z + 1 := by
   have h : (0 : ℤ) < (!![1, 1; 0, 1] : Matrix (Fin 2) (Fin 2) ℤ).det := by simp [Matrix.det_fin_two]
-  simp [mob, ent, toGQ, h]
+  simp [mob, ent, toGQ]
 
 example : (1 : ℂ) ∈ Hs ↔ False := by
   simp [Hs]

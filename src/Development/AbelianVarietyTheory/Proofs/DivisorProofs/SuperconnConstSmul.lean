@@ -35,8 +35,8 @@ theorem superconn_const_smul (τ : E → Matrix (Fin g) (Fin g) ℂ) (h : Pt E g
     simp only [d10, hd, ContinuousLinearMap.smul_apply]; module
   have h01 : ∀ v, d01 (fun Q => c • s Q) P v = c • d01 s P v := fun v => by
     simp only [d01, hd, ContinuousLinearMap.smul_apply]; module
-  simp only [superconn, nablaE, pointDifference, dbarV, dbarAdj, h10, h01, connForm_smul, wedge_smul,
-    contr_smul, Finset.smul_sum, smul_add, smul_neg, smul_comm c, ← wedge_smul, ← contr_smul,
+  simp only [superconn, nablaE, pointDifference, dbarV, dbarAdj, h10, h01, connForm_smul,
+    Finset.smul_sum, smul_add, smul_neg, smul_comm c, ← wedge_smul, ← contr_smul,
     wedge_add, contr_add]
 
 theorem phi_contDiffOn [FiniteDimensional ℂ E] {B : Set E} {φ : Pt E g → ℂ} (hB : IsOpen B)

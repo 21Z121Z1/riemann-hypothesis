@@ -36,7 +36,7 @@ theorem incV_single' {n : ℕ} (j : Fin n) : incV F (Pi.single j (1 : E)) = Pi.s
   ext k
   by_cases h : k = j
   · subst h; simp [incV]
-  · simp [incV, Pi.single_apply, h]
+  · simp [incV, h]
 
 end Lemmas
 

@@ -76,7 +76,7 @@ theorem hasDerivAt_thetaSum_along_line_y_direction : _root_.GlobalTheory.FunPr.T
     rw [← hg]; exact (hΛ g).tsum_eq
   rw [hcurve, hend, hasDerivAt_iff_tendsto_slope]
   refine (Λ.continuous.tendsto g |>.comp hlim).congr' (Filter.Eventually.of_forall fun t => ?_)
-  simp [slope_def_module, map_sub, map_smul]
+  simp [slope_def_module, map_sub]
 end GlobalTheory.ThetaLineDerY
 end
 end

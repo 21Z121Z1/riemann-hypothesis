@@ -63,7 +63,7 @@ theorem order_of_local : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] 
     · fin_cases i; simpa [hbe'] using hk
     · have e0 : f r = ϖ ^ k * ((v⁻¹ : Wˣ) : W) := by rw [← hv]; simp [mul_assoc]
       have e1 : (u : W) * f r = ((u * v⁻¹ : Wˣ) : W) * ∏ i, ![ϖ] i ^ ![k] i := by
-        rw [e0]; simp [Fin.prod_univ_one]; ring
+        rw [e0]; simp; ring
       rw [← e1]; exact hu
   obtain ⟨n, hn, hid⟩ := hphi W hW ϖ hϖ (spMap f ≫ ξ) t' mt'' P' hr be' hmem hmon
   refine ⟨n, ?_, hid⟩

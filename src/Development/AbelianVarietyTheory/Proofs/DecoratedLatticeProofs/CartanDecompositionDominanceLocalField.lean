@@ -35,7 +35,7 @@ theorem sum_le_sum_of_threshold {α : Type*} [DecidableEq α] (e : α → ℤ) (
     Finset.sum_le_sum_of_subset_of_nonneg Finset.inter_subset_right (fun i hi hni => by
       have : i ∉ U := fun h => hni (Finset.mem_inter.2 ⟨h, hi⟩)
       linarith [hU' i hi this])
-  simp only [Finset.sum_sub_distrib, Finset.sum_const, smul_eq_mul] at h1 h2
+  simp only [Finset.sum_sub_distrib, Finset.sum_const] at h1 h2
   rw [hc] at h2
   linarith
 

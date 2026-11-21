@@ -81,7 +81,7 @@ def secPullAlg (hf : f ≫ s = s') (p : Pair f) :
     { toRingHom := secPull s s' p
       commutes' := fun r ↦ by
         have e := semiHom_secPull (over_id hf) p r 1
-        simp only [smul_eq_mul, mul_one, map_one] at e
+        simp only [map_one] at e
         rw [Algebra.algebraMap_eq_smul_one, Algebra.algebraMap_eq_smul_one]
         exact e }
 

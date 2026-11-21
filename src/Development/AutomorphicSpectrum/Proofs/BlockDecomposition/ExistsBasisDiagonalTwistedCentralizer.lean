@@ -146,7 +146,7 @@ theorem eig_col (A : Matrix (Fin n) (Fin n) ℂ) (P : GL (Fin n) ℂ) (l : Fin n
   rw [Matrix.mulVec_diagonal]
   by_cases h : a = j
   · subst h; simp
-  · simp [Pi.single_apply, h]
+  · simp [h]
 
 theorem coord_mem (A : Matrix (Fin n) (Fin n) ℂ) (P : GL (Fin n) ℂ) (l : Fin n → ℂ)
     (hl : Function.Injective l) (hA : A * P.val = P.val * Matrix.diagonal l)

@@ -59,7 +59,7 @@ def MapOver.ev (φ : MapOver C G f x) {T : Scheme.{0}} (t : T ⟶ Y) (p : Over.m
     Over.mk (t ≫ x) ⟶ G :=
   Over.homMk (pullback.lift p.left t (Over.w p) ≫ φ.left) (by
     have := Over.w φ
-    simp only [Over.mk_left, Over.mk_hom, Functor.id_obj, Functor.const_obj_obj] at this ⊢
+    simp only [Over.mk_left, Over.mk_hom] at this ⊢
     rw [Category.assoc, this, pullback.lift_snd_assoc])
 
 end Maps

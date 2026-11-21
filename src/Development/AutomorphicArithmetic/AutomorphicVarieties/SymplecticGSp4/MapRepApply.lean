@@ -137,12 +137,12 @@ end Rep
 
 example : IsGSp (1 : R) 1 := by
   ext i j
-  fin_cases i <;> fin_cases j <;> simp [adj_apply, sgn, Fin.rev, Matrix.one_apply]
+  fin_cases i <;> fin_cases j <;> simp [adj_apply, sgn, Fin.rev]
 
 example : Xm R ∈ sp4 R := by
   show adj _ = -_
   ext i j
-  fin_cases i <;> fin_cases j <;> simp [adj_apply, sgn, Xm, Fin.rev, Matrix.single_apply]
+  fin_cases i <;> fin_cases j <;> simp [adj_apply, sgn, Xm, Fin.rev]
 
 end UpperTheory.V.GradeZeroInterpolatingElement
 

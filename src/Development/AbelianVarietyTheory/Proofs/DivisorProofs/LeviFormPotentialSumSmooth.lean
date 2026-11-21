@@ -120,7 +120,7 @@ theorem relFun_local (Q : ι → LocPot (M.X a)) (hQ : ∀ i, IsPot (I.pt a) (m 
   have hE : UnitAt x E := by
     simpa [E, Units.coe_prod, Units.val_zpow_eq_zpow_val] using hEu
   have hP : (∏ i, (genAt (Δ i) x : Y.Fn) ^ k i) = E⁻¹ := by
-    simp [E, genAt, Units.val_inv_eq_inv_val, inv_zpow, Finset.prod_inv_distrib]
+    simp [E, genAt, Units.val_inv_eq_inv_val, Finset.prod_inv_distrib]
   have hEne : E ≠ 0 := hE.ne_zero
   have hu : (∏ i, f i ^ k i) = E⁻¹ * ∏ i, (f i * (eqn (Δ i) x : Y.Fn)) ^ k i := by
     rw [Finset.prod_congr rfl fun i _ => mul_zpow (f i) _ (k i), Finset.prod_mul_distrib, ← hEdef]

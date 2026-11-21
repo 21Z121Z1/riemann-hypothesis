@@ -32,7 +32,7 @@ theorem cusp_form_approx_by_lift (happrox : _root_.GlobalTheory.FunPr.ThetaLocal
       hM.2 hr ((GlobalTheory.Grid.ofSgn true _).symm h)
     convert key using 3 with g
     simp only [thetaKO, GlobalTheory.Grid.WRep.toSgn, MonoidHom.comp_apply, MonoidHom.prodMap, MonoidHom.prod_apply,
-      MonoidHom.coe_comp, Function.comp_apply, MonoidHom.coe_fst, MonoidHom.coe_snd, MulEquiv.coe_toMonoidHom,
+      MonoidHom.coe_fst, MonoidHom.coe_snd, MulEquiv.coe_toMonoidHom,
       MulEquiv.apply_symm_apply, MonoidHom.id_apply]
   have hfin := GlobalTheory.CuspDecay.measure_lt_top GlobalTheory.Mem.VolFin.finVol _ _ _ hM.1 hM.2
   set vol := (G.meas t i j).ν.real (G.meas t i j).fd with hvol

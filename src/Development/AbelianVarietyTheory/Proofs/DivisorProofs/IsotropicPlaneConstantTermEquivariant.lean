@@ -27,7 +27,7 @@ theorem exp_sandwich {n n₁ : ℕ} (ι : Matrix (Fin n) (Fin n₁) ℂ) (R : Ma
       map_mul' := fun p q => by
         simp only [Prod.fst_mul, Prod.snd_mul, Matrix.add_mul, Matrix.mul_add, Matrix.smul_mul, Matrix.mul_smul,
           Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc, h', Matrix.one_mul, Matrix.mul_one, sub_self, smul_zero,
-          smul_smul, sub_zero, add_zero, zero_add]
+          add_zero]
         module
       map_zero' := by simp
       map_add' := fun p q => by

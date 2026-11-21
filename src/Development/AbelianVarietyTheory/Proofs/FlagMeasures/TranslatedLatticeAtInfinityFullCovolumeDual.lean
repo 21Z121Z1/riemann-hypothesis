@@ -74,8 +74,8 @@ theorem toMatrix_form : LinearMap.BilinForm.toMatrix (stdB E j) (form E j) =
       by_cases ha : a = a'
       · subst ha
         fin_cases s <;> fin_cases s' <;> simp
-      · simp [ha, Pi.single_eq_of_ne ha]
-    · simp [hw, Pi.single_eq_of_ne hw]
+      · simp [ha]
+    · simp [hw]
   · intro w'' _ h
     simp [Pi.single_eq_of_ne h]
   · simp

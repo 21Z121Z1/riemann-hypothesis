@@ -575,7 +575,7 @@ theorem exists_basis_tensor {ι : Type} [Fintype ι] (b : Module.Basis ι E (Adj
     simp only [map_sum, map_smul_tensor, map_zero] at this
     rw [Finset.sum_eq_single j] at this
     · simpa [← Algebra.TensorProduct.one_def] using this
-    · intro i _ hij; simp [Finsupp.single_apply, hij]
+    · intro i _ hij; simp [hij]
     · simp
   · rintro y -
     induction y using TensorProduct.induction_on with

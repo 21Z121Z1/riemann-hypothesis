@@ -62,7 +62,7 @@ theorem ev_rho_unip_shift : ∀ (F E : Type) [Field F] [NumberField F] [Field E]
       have hσinj : Function.Injective σ := σ.toRingHom.injective
       apply hσinj
       rw [Pi.zero_apply, map_zero, ← hc0 i]
-      simp only [vecMul, mulVec, dotProduct, map_sum, map_mul, hc₀, Pi.zero_apply]
+      simp only [vecMul, mulVec, dotProduct, map_sum, map_mul, hc₀]
       refine Finset.sum_congr rfl fun j _ => ?_
       rw [hY.herm, mul_comm]
     have h1 := hH.xy

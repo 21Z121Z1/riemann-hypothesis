@@ -42,7 +42,7 @@ theorem vecMulVec_single_mul_self (i : Fin d) (u : Fin d → k) :
       u i • vecMulVec u (Pi.single i (1 : k)) := by
   ext a b
   simp only [Matrix.mul_apply, vecMulVec_apply, Matrix.smul_apply, smul_eq_mul, Pi.single_apply]
-  simp only [mul_ite, mul_one, mul_zero, ite_mul, zero_mul, one_mul]
+  simp only [mul_ite, mul_one, mul_zero, ite_mul, zero_mul]
   simp
   split_ifs <;> simp [mul_comm]
 

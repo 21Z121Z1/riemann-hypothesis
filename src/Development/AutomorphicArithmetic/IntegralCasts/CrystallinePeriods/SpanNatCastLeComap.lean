@@ -108,7 +108,7 @@ theorem adicMap_adicMap (I : Ideal A) (J : Ideal B) (K : Ideal C) (f : A →+* B
 theorem span_natCast_le_comap (p : ℕ) (f : A →+* B) :
     span {(p : A)} ≤ (span {(p : B)}).comap f := by
   rw [Ideal.span_le, Set.singleton_subset_iff]
-  simp [Ideal.mem_comap]
+  simp
 
 end Adic
 

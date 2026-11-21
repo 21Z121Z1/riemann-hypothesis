@@ -87,7 +87,7 @@ theorem coinvariants_irreducible : ∀ {k : Type} [Field k] [ValuativeRel k] [To
   have hwM : ∀ Y, wM' Y = wM (e Y) := fun _ => rfl
   have hsum : ∀ Y z : Matrix (Fin n) (Fin 1) k, ∑ i, ∑ j, Y i j * z i j = e Y ⬝ᵥ e z := by
     intro Y z
-    simp [dotProduct, Fin.sum_univ_one, he]
+    simp [dotProduct, he]
   have hψcc : Continuous ψc := hψc.comp (continuous_const.mul continuous_id)
   have hcond' : ∀ x : k, (∀ y ∈ 𝒪[k], ψc (x * y) = 1) ↔ x ∈ 𝒪[k] := fun x => by
     simp only [hψcapp]; exact hcond x

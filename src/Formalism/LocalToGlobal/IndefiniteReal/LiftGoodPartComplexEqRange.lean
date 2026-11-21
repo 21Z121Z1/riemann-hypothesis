@@ -64,7 +64,7 @@ private theorem opV_single_lemma_2 (σ : K →+* ℂ) {M : Type} [AddCommGroup M
     | (simp [MonoidAlgebra.single_apply]; done)
   · intro b _ hb
     first
-    | (simp [hb, Ne.symm hb]; done)
+    | (simp [hb]; done)
     | (simp [MonoidAlgebra.coeff_single, Finsupp.single_apply, hb, Ne.symm hb]; done)
     | (simp [MonoidAlgebra.single_apply, hb, Ne.symm hb]; done)
   · intro h

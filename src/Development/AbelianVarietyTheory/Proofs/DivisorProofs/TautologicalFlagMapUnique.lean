@@ -59,7 +59,7 @@ theorem pullback_map_comp_pullbackComp : ∀ {S Z T Y : Scheme.{0}} (x : Y ⟶ T
   simp at A
   have nat := (Scheme.Modules.pullbackComp x g₁).hom.naturality u
   simp at nat
-  simp only [Scheme.Modules.pullbackCongr, eqToIso.hom, eqToHom_app, eqToHom_refl, Category.comp_id,
+  simp only [Scheme.Modules.pullbackCongr, eqToIso.hom, eqToHom_app, eqToHom_refl,
     Functor.map_comp, Category.assoc]
   rw [← reassoc_of% nat]
   congr 1

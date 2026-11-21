@@ -78,7 +78,7 @@ private theorem hpsi (h : CopyAll D D' ι e) {S : RatDat D.ntw} {S' : RatDat D'.
       ((psiUOf D.nd (NX.xiRed D) θ ⟨u, hu'⟩ : (↥D.LL0)ˣ) : ↥D.LL0) := by
     apply (embLL0 D).injective
     rw [h.cp.embLL0_eq, a1]
-    simp only [hxi]
+    simp only
     exact (by with_unfolding_all exact (a2 :))
   have a4 := h3 i b u hu hu'
   rw [← a3] at a4

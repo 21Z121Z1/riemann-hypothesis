@@ -78,6 +78,6 @@ theorem UpperTheory.V.Ws.Pt.ptPair :
   have hz : (1 - ((4 : ℕ) : ℤ)) = -3 := by norm_num
   rw [hz]
   first
-    | simp [zpow_neg, Units.val_zpow_eq_zpow_val]
+    | simp [zpow_neg]
     | (rw [MonoidHom.zpow_apply]; simp [zpow_neg, Units.val_zpow_eq_zpow_val])
     | done

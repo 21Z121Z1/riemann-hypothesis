@@ -22,7 +22,7 @@ theorem cs_dot (u v : ι → ℂ) : ‖star u ⬝ᵥ v‖ ^ 2 ≤ ‖star u ⬝�
   set x : EuclideanSpace ℂ ι := WithLp.toLp 2 u
   set y : EuclideanSpace ℂ ι := WithLp.toLp 2 v
   have h := norm_inner_le_norm (𝕜 := ℂ) x y
-  simp only [norm_pow, RCLike.norm_ofReal, abs_norm, Complex.norm_real, norm_norm]
+  simp only [norm_pow, RCLike.norm_ofReal, abs_norm]
   calc _ ≤ (‖x‖ * ‖y‖) ^ 2 := by gcongr
     _ = _ := by ring
 

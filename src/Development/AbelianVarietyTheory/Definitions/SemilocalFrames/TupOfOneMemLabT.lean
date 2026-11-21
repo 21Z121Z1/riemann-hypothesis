@@ -236,7 +236,7 @@ theorem ES_pi (A : ∀ k, D.nd.PlG k → Finset (ZMod (D.host.g k))[X]) :
       (fun k v => t ⟨k, v⟩) ∈ {t : Tup2 D | ∀ k v, t k v ∈ A k v}} =
       (Fintype.piFinset fun kv : (Σ k : Fin 2, D.nd.PlG k) => A kv.1 kv.2 : Finset _) := by
     ext t
-    simp [Fintype.mem_piFinset, Sigma.forall]
+    simp [Sigma.forall]
   rw [this, zSet, finsum_mem_coe_finset]
   ext g
   rw [tensAlg_coeff, MonoidAlgebra.coeff_sum, Finsupp.finsetSum_apply]

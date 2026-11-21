@@ -30,7 +30,7 @@ lemma dmin_ortho {r : ℕ} (X : Data E r) {x : Frame X.Ψ r} (hx : X.IsOrtho x) 
 lemma pnorm_unit {r : ℕ} (X : Data E r) (la : Wt X.Ψ r) (P : Frame X.Ψ r → ℂ) {x : Frame X.Ψ r}
     (hu : ∀ τ i, ‖dmin X.Gm x τ i‖ = 1) : X.pnorm la P x = ‖P x‖ := by
   unfold Data.pnorm
-  simp [norm_div, hu]
+  simp [hu]
 
 theorem supAtUnit (hL1 : Lam1RowSt) : SupAtUnitSt := by
   intro D T h hGam large₂ j hj w hrows hL hrn hlast σ hσ f hf hpos

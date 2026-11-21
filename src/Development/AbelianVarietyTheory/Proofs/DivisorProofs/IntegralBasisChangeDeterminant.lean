@@ -98,7 +98,7 @@ theorem det_saturated_lattice_baseChange : ∀ (O k V K : Type) [CommRing O] [Is
       intro i
       refine (hO _).mpr ⟨Pi.single i 1, ?_⟩
       have : (fun j => algebraMap O k ((Pi.single i 1 : Fin m → O) j)) = Pi.single i 1 := by
-        ext j; by_cases h : j = i <;> simp [Pi.single_apply, h]
+        ext j; by_cases h : j = i <;> simp [h]
       rw [this, Matrix.single_one_vecMul]; rfl
     choose a ha using this
     refine ⟨Matrix.of a, ?_⟩
@@ -150,7 +150,7 @@ theorem det_saturated_lattice_baseChange : ∀ (O k V K : Type) [CommRing O] [Is
   have h2 : (P' * Q') * M' = 1 := mul_eq_one_comm.mp h1
   have hsingle : ∀ i : Fin m, (fun j => algebraMap V K ((Pi.single i 1 : Fin m → V) j)) = Pi.single i 1 := by
     intro i
-    ext j; by_cases h : j = i <;> simp [Pi.single_apply, h]
+    ext j; by_cases h : j = i <;> simp [h]
   have hU : ∃ U : Matrix (Fin m) (Fin m) V, C = U.map (algebraMap V K) * M' := by
     have : ∀ i, ∃ a : Fin n → V, Matrix.vecMul (C i) P' = fun j => algebraMap V K (a j) := by
       intro i

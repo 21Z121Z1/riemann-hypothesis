@@ -180,7 +180,7 @@ theorem GlobalTheory.ThK.ctBig_integrate : GlobalTheory.ThK.KP → ∀ (F E : Ty
       have := hmix 1 t 1 m hL 1 (one_mem _) (om (g, h) Φ) (hpres _)
       rw [one_mul, ← Module.End.mul_apply, ← map_mul, Prod.mk_mul_mk, one_mul] at this
       rw [this, Prod.mk_one_one, map_one, Module.End.one_apply]
-      simp only [thetaSum, LinearMap.smul_apply, Pi.smul_apply, smul_eq_mul]
+      simp only [thetaSum, Pi.smul_apply, smul_eq_mul]
       exact tsum_mul_left
     simp only [key, MeasureTheory.integral_const_mul]
     ring

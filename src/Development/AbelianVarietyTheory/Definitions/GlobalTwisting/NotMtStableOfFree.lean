@@ -90,7 +90,7 @@ theorem smul_mem_sat (σ : L →+* ℂ) (M : Rows.OLat O φ V) (a : 𝓞 L) (c :
     conv_lhs => rw [← (RingOfIntegers.basis L).sum_repr a]
     simp only [smul_smul, ← Finset.sum_smul]
     congr 1
-    simp [Finset.mul_sum, mul_comm, mul_left_comm, mul_assoc]
+    simp [Finset.mul_sum, mul_comm, mul_assoc]
   rw [e]
   exact sum_mem fun i _ => AddSubgroup.subset_closure
     ⟨_, _, Finset.mem_image.2 ⟨(i, v), by simpa using hv, rfl⟩, rfl⟩

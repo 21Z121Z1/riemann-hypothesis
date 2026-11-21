@@ -249,7 +249,7 @@ private theorem exists_unip_mul_mem_kInf {B : Base F E} (hCM : IsCMExt F E σ) {
           ((mat k₁).map (piInf (B.emb w))).map (starRingEnd ℂ) := by
         ext i j; exact GlobalTheory.RealPlaceConj.piInf_cA_eq_star F E σ hCM w (B.emb w) _
       have := congrArg (fun A => A.map (piInf (B.emb w))) h2
-      simp only [Matrix.map_mul, ← Matrix.transpose_map, hinc, hmapc] at this
+      simp only [Matrix.map_mul, hinc, hmapc] at this
       exact this
   choose κ κ' hκ1 hκ2 hκ3 hκ4 b hκ5 using hloc
   obtain ⟨K, hKat, hKmap⟩ := GlobalTheory.ArchGlueMat.exists_unitary_glue σ B.emb Y.J κ κ' hCM hκ1 hκ2

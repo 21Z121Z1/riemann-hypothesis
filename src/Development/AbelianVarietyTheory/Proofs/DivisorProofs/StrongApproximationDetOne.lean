@@ -19,7 +19,7 @@ theorem strongApprox_split_herm : GlobalTheory.Published.StrongApproxSU → ∀ 
   have hδ : (1 : E) ≠ 0 := one_ne_zero
   have hJ' : IsHermND σ ((1 : E) • V.Jᵀ) := by
     refine ⟨fun i j => ?_, ?_⟩
-    · simp only [Matrix.smul_apply, Matrix.transpose_apply, smul_eq_mul, map_mul, map_one, one_mul, hV.herm]
+    · simp only [Matrix.smul_apply, Matrix.transpose_apply, smul_eq_mul, one_mul, hV.herm]
     · rw [Matrix.det_smul, Matrix.det_transpose]
       exact mul_ne_zero (pow_ne_zero _ hδ) hVd
   have hidem := isPlacesIdem_placeIdem (F := F) v

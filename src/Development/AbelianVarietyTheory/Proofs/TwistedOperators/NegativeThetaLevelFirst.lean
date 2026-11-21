@@ -21,7 +21,7 @@ theorem integrableOn_thetaKO_mul_cusp : GlobalTheory.IndefiniteRowSideFullHecke.
     hM.2 hr ((GlobalTheory.Grid.ofSgn true _).symm h)
   convert key using 3 with g
   simp only [thetaKO, GlobalTheory.Grid.WRep.toSgn, MonoidHom.comp_apply, MonoidHom.prodMap, MonoidHom.prod_apply,
-    MonoidHom.coe_comp, Function.comp_apply, MonoidHom.coe_fst, MonoidHom.coe_snd, MulEquiv.coe_toMonoidHom,
+    MonoidHom.coe_fst, MonoidHom.coe_snd, MulEquiv.coe_toMonoidHom,
     MulEquiv.apply_symm_apply, MonoidHom.id_apply]
 
 end GlobalTheory.CuspThetaConvX

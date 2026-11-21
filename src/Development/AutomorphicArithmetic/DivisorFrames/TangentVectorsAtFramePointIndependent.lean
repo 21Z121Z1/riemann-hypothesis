@@ -24,7 +24,7 @@ private theorem isTangent_of_isTanAt_sab {E : Type} [Field E] [NumberField E] [I
   · have a : η[t'.G].left ≫ t'.G.hom = 𝟙 _ := Over.w η[t'.G]
     rw [Category.assoc, hw, a, GlobalTheory.spMap_comp_spMap]
     have : (TrivSqZeroExt.fstHom S S S).toRingHom.comp (algebraMap S (DualNumber S)) = RingHom.id S := by
-      ext r; simp [TrivSqZeroExt.algebraMap_eq_inl]
+      ext r; simp
     rw [this]
     exact Spec.map_id _
 

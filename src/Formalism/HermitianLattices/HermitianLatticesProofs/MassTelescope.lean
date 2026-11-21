@@ -54,7 +54,7 @@ lemma massTelescope_ortho (n : ℕ) :
   · by_cases hij : i = j
     · subst hij
       simp
-    · simp [hij, Pi.single_eq_of_ne hij]
+    · simp [hij]
   · intro b _ hb
     simp [Pi.single_eq_of_ne hb]
   · intro hi

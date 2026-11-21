@@ -106,7 +106,7 @@ theorem whittaker_induced_space : Ad3.SchwartzSpaceL2.FeGen → ∀ (F : Type) [
       | mem W hW =>
         obtain ⟨φ, hφ, rfl⟩ := hW
         exact hFe F ψ hψ μ₁ μ₂ h₁ h₂ φ hφ c hc s hs0 hs1
-      | zero => simp [integrable_zero]
+      | zero => simp
       | add W₁ W₂ _ _ i₁ i₂ =>
         obtain ⟨a₁, b₁, e₁⟩ := i₁
         obtain ⟨a₂, b₂, e₂⟩ := i₂

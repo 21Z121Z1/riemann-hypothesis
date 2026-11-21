@@ -88,7 +88,7 @@ theorem d_aeval (n : ℕ) (P : MvPolynomial (Fin d) O) :
       rw [MvPolynomial.coeff_mul_X']
       by_cases hij : j = i
       · subst hij; simp [MvPolynomial.constantCoeff_eq]
-      · simp [hij, Finsupp.support_single_ne_zero]
+      · simp [hij]
     simp only [hc, ite_smul, zero_smul, Finset.sum_ite_eq, Finset.mem_univ, if_true]
     have hx : Bialgebra.counitAlgHom O (G.A n) (c.x n j) = 0 := by simpa using c.aug n j
     rw [map_mul, MvPolynomial.aeval_X, PDiv.dUnit, AugCot.d_mul, counit_aeval, hx, zero_smul,

@@ -59,7 +59,7 @@ theorem isFlagBundle_of_isPullback {P Y B' B : Scheme.{0}} {a : P ⟶ Y} {b : P 
     have hee' : e.hom ≫ (fl'' x).ι i ≫ (Scheme.Modules.pullbackComp t g).hom.app (E x) = _ := hee
     rw [← hee'] at k
     rw [← cancel_mono ((Scheme.Modules.pullbackComp t g).hom.app (E x))]
-    simp only [Iso.trans_hom, Iso.app_hom, Category.assoc]
+    simp only [Category.assoc]
     exact k.symm
   · rintro y ⟨w'', he''⟩
     have w₁ : (y ≫ a) ≫ π = t ≫ g := by rw [Category.assoc, sq.w, ← Category.assoc, w'']

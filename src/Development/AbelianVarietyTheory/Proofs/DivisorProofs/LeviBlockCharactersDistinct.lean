@@ -51,7 +51,7 @@ theorem cellChar_distinct : ∀ (k : Type) [Field k] [ValuativeRel k] [Topologic
     intro a a' p
     unfold cellChar₂
     simp only [Units.val_mul, norm_mul, norm_chi2_eq_one hν, norm_absPow, one_mul, mul_one]
-    congr 2 <;> simp [Complex.div_re]
+    congr 2 <;> simp
   rcases hij with h | h
   · refine ⟨(ϖ, 1), fun e => ?_⟩
     have e' := congrArg norm e

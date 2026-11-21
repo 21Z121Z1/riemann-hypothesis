@@ -49,7 +49,7 @@ theorem span_boxLat_eq_top (F : Type) [Field F] [NumberField F] (κ : Type) [Fin
     refine ⟨Pi.single i b, funext fun j => ?_⟩
     by_cases hj : j = i
     · subst hj; simp [ratInf]
-    · simp [ratInf, Pi.single_apply, hj]
+    · simp [ratInf, hj]
   apply hi
   rw [span_mixedEmbedding_mul_int F a ha]
   exact ⟨y i, trivial, rfl⟩

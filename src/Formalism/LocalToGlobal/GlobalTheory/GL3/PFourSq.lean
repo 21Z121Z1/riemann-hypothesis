@@ -225,7 +225,7 @@ theorem Herm4.iso_of (H : Herm4 c h) {n : Type} [Fintype n] [DecidableEq n] (b :
   have hdim : finrank K (Fin 4 → V) = finrank K (Fin 4 × n → K) := by
     have e := ((LinearEquiv.piCongrRight fun _ : Fin 4 => b.equivFun).finrank_eq)
     rw [e]
-    simp only [Module.finrank_eq_card_basis b, Module.finrank_fintype_fun_eq_card, Fintype.card_prod, Fintype.card_fin]
+    simp only [Module.finrank_fintype_fun_eq_card, Fintype.card_prod, Fintype.card_fin]
     first
       | (rw [Module.finrank_pi_fintype]; simp)
       | (rw [FiniteDimensional.finrank_pi_fintype]; simp)

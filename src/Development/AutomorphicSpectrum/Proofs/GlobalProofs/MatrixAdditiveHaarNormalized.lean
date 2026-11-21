@@ -19,7 +19,7 @@ theorem finite_on_compacts {G : Type} [AddGroup G] [TopologicalSpace G] [IsTopol
     _ ≤ ∑ x ∈ t, dx ((fun y => -x + y) ⁻¹' K) := measure_biUnion_finset_le t _
     _ < ⊤ := by
       simp only [hb]
-      simp [ENNReal.mul_lt_top]
+      simp
 
 theorem eq_addHaar {G : Type} [AddGroup G] [TopologicalSpace G] [IsTopologicalAddGroup G]
     [T2Space G] [LocallyCompactSpace G] [SecondCountableTopology G] [MeasurableSpace G] [BorelSpace G]

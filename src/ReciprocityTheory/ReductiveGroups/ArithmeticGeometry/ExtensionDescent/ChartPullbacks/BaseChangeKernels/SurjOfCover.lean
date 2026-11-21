@@ -79,9 +79,9 @@ lemma cm_nat {V₁ V₂ : B.Opens} (h₁ : V₁ ≤ W) (h₂ : V₂ ≤ W) (h : 
       (cm q φ V₁ h₁).comp (AddMonoidAlgebra.mapRingHom X (B.presheaf.map (homOfLE h).op).hom) := by
   apply AddMonoidAlgebra.ringHom_ext
   · intro r
-    simp [AddMonoidAlgebra.liftNC_single, app_res]
+    simp
   · intro x
-    simp [AddMonoidAlgebra.liftNC_single, hnat V₁ V₂ h₁ h₂ h]
+    simp [hnat V₁ V₂ h₁ h₂ h]
 
 include hnat in
 lemma cm_nat_apply {V₁ V₂ : B.Opens} (h₁ : V₁ ≤ W) (h₂ : V₂ ≤ W) (h : V₁ ≤ V₂)

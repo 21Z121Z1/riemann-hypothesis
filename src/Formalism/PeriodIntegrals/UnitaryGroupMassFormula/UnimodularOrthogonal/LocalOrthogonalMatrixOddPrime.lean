@@ -93,7 +93,7 @@ theorem det_updateRow_zero {n : ℕ} (w : Fin (n + 1) → S) :
     rw [updateRow_ne hi]
     exact one_apply_ne (ne_of_lt hij).symm
   rw [det_of_isUpperTriangular hup, Fin.prod_univ_succ]
-  simp [updateRow_ne (Fin.succ_ne_zero _)]
+  simp
 
 def elim {n : ℕ} (A : Matrix (Fin (n + 1)) (Fin (n + 1)) S) : Matrix (Fin (n + 1)) (Fin (n + 1)) S :=
   Matrix.of (Fin.cons (Pi.single 0 1 : Fin (n + 1) → S)
@@ -105,11 +105,11 @@ theorem det_elim {n : ℕ} (A : Matrix (Fin (n + 1)) (Fin (n + 1)) S) : (elim A)
     have hij' : i < j := OrderDual.toDual_lt_toDual.mp hij
     rcases Fin.eq_zero_or_eq_succ i with rfl | ⟨i, rfl⟩
     · have hj : j ≠ 0 := (ne_of_lt hij').symm
-      simp [elim, Pi.single_apply, hj]
+      simp [elim, hj]
     · rcases Fin.eq_zero_or_eq_succ j with rfl | ⟨j, rfl⟩
       · exact absurd hij' (Fin.not_lt_zero _)
       · have : j ≠ i := (ne_of_lt (Fin.succ_lt_succ_iff.mp hij')).symm
-        simp [elim, Pi.single_apply, this]
+        simp [elim, this]
   rw [det_of_isLowerTriangular _ hlow, Fin.prod_univ_succ]
   simp [elim]
 
@@ -154,12 +154,12 @@ theorem blk_cong {n : ℕ} {M : Matrix (Fin (n + 1)) (Fin (n + 1)) S} {P : Matri
   ext a b
   rcases Fin.eq_zero_or_eq_succ a with rfl | ⟨i, rfl⟩ <;>
     rcases Fin.eq_zero_or_eq_succ b with rfl | ⟨j, rfl⟩
-  · simp [blk, mul_apply, Fin.sum_univ_succ, hr0, hrs, hcs, one_apply]
-  · simp [blk, mul_apply, Fin.sum_univ_succ, hr0, hrs, hcs, one_apply, (Fin.succ_ne_zero j).symm]
-  · simp [blk, mul_apply, Fin.sum_univ_succ, hr0, hrs, hcs, one_apply]
+  · simp [blk, mul_apply, Fin.sum_univ_succ, hr0, hrs, one_apply]
+  · simp [blk, mul_apply, Fin.sum_univ_succ, hr0, hrs, one_apply, (Fin.succ_ne_zero j).symm]
+  · simp [blk, mul_apply, Fin.sum_univ_succ, hcs, one_apply]
   · have := congrFun (congrFun hP i) j
     simp only [mul_apply, submatrix_apply, conjTranspose_apply] at this
-    simp [blk, mul_apply, Fin.sum_univ_succ, hr0, hrs, hcs, one_apply] at this ⊢
+    simp [blk, mul_apply, Fin.sum_univ_succ, hcs, one_apply] at this ⊢
     exact this
 
 theorem step (hL : LocHyp S) {n : ℕ}

@@ -21,7 +21,7 @@ theorem coord_map {ι : Type} [DecidableEq ι] (b : Module.Basis ι F E) {R R' :
       f (equivFinsuppOfBasisRight b x i) := by
   induction x using TensorProduct.induction_on with
   | zero => simp
-  | tmul a e => simp [equivFinsuppOfBasisRight_apply_tmul_apply]
+  | tmul a e => simp
   | add x y hx hy => simp [hx, hy]
 
 omit [NumberField E] in

@@ -46,7 +46,7 @@ theorem col_le {σ I K : Type} [Fintype I] [Fintype K] (e : I × K → σ) (he :
     ext s
     by_cases hs : s = e (i, c₀)
     · subst hs; simp [δ]; omega
-    · simp [δ, Finsupp.single_apply, Ne.symm hs]
+    · simp [δ, Ne.symm hs]
   have h := congrArg (coeff (Finsupp.single (e (i₀, c₀)) 1 + δ)) (hE i₀ i hi.symm)
   rw [coeff_sum, coeff_zero, Finset.sum_eq_single c₀, coeff_X_mul, coeff_pderiv_eq, hδ] at h
   · refine hα.1 ((mul_eq_zero.1 h).resolve_left ?_)

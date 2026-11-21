@@ -82,7 +82,7 @@ theorem serFix_one (π : Formalism.L2.NG.FinTyp L n) (s : SplitPlace L) {g : ℕ
   rw [finsum_eq_single _ 1]
   · simpa using h _ (hℓ 1)
   · intro γ hγ
-    simp [MonoidAlgebra.one_def, Finsupp.single_apply, Ne.symm hγ]
+    simp [MonoidAlgebra.one_def, Ne.symm hγ]
 
 end Types
 

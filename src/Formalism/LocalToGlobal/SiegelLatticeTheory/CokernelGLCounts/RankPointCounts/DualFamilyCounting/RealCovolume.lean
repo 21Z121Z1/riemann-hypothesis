@@ -73,7 +73,7 @@ theorem Qf_eq (g : κ → ℝ) (a b : ι → κ → ℂ) :
     Qf g a b = ∑ p : ι × κ × Fin 2, reCo a p * reCo b p * g p.2.1 := by
   simp only [Qf, Fintype.sum_prod_type, Fin.sum_univ_two, reCo_apply]
   refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun c _ => ?_
-  simp [Complex.mul_re, Complex.star_def, Complex.conj_re, Complex.conj_im] <;> ring
+  simp [Complex.mul_re, Complex.conj_re, Complex.conj_im] <;> ring
 
 def boxC : Set ℂ := {z | z.re ∈ Set.Ico (0 : ℝ) 1 ∧ z.im ∈ Set.Ico (0 : ℝ) 1}
 

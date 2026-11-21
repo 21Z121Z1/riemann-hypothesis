@@ -423,7 +423,7 @@ private theorem off_inf {r : ℕ} (y : Fin r → A) (f : A) :
     off A (Ideal.span (Set.range fun k => y k * f)) = off A (Ideal.span (Set.range y)) ⊓ off A (Ideal.span {f}) := by
   ext p
   change p ∈ off A _ ↔ p ∈ off A _ ∧ p ∈ off A _
-  simp only [mem_off, Ideal.span_le, Set.range_subset_iff, Ideal.span_singleton_le_iff_mem, SetLike.mem_coe]
+  simp only [mem_off, Ideal.span_le, Set.range_subset_iff, SetLike.mem_coe]
   have hp := (p : PrimeSpectrum A).isPrime
   by_cases hf : f ∈ (p : PrimeSpectrum A).asIdeal
   · simp [hf, Ideal.mul_mem_left]

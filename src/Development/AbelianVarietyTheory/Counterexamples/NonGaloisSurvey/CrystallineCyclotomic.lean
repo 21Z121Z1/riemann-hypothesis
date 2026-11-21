@@ -93,7 +93,7 @@ theorem isCrys_cyc [FiniteDimensional Qp LL] : IsCrys PD (charRep (cyc PD LL)) :
     | tmul v b =>
       have hmq : ∀ (q : Qp) (z : LL ⊗[Qp] B), m (q • z) = q • m z := fun q z =>
         (m : LL ⊗[Qp] B →ₗ[LL] LL ⊗[Qp] B).map_smul_of_tower q z
-      simp [actVB, charRep, cyc, ← Algebra.smul_def, TensorProduct.smul_tmul, hmq]
+      simp [actVB, charRep, cyc, TensorProduct.smul_tmul, hmq]
       simp [m, hu, PD.t_act]
     | add a b ha hb => simp only [map_add, ha, hb]
   have h : (Dcris PD (charRep (cyc PD LL))).map (m : LL ⊗[Qp] B →ₗ[LL] LL ⊗[Qp] B) =

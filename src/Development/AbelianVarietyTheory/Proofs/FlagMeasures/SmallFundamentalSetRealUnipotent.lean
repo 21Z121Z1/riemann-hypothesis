@@ -107,7 +107,7 @@ theorem exists_rat (x : I.GA) (g : ℕ) (R : Submodule (𝓞 I.E) (Fin I.n → I
     congr 2
     ext i j
     by_cases hij : i = j <;>
-      simp [γ, ex, Matrix.mul_apply, Matrix.one_apply, hij, map_ofNat]
+      simp [γ, ex, Matrix.mul_apply, hij, map_ofNat]
 
 end Point
 

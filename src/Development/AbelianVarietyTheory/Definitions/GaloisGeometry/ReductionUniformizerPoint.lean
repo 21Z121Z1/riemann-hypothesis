@@ -156,7 +156,7 @@ theorem δ_Ystrπ (s : ℕ) (j : Fin (s + 2)) : δ I s j ≫ Ystrπ I s = Ystrπ
 theorem δ_comp_δ {s : ℕ} {i j : Fin (s + 2)} (hij : i ≤ j) :
     δ I (s + 1) j.succ ≫ δ I s i = δ I (s + 1) i.castSucc ≫ δ I s j :=
   Ystr_hom_ext I fun S => by
-    simp only [inj_δ_assoc, Category.assoc, inj_δ, incl_comp_assoc]
+    simp only [inj_δ_assoc, inj_δ, incl_comp_assoc]
     exact incl_inj_congr I (face_face S hij) _ _
 
 end Face
@@ -317,7 +317,7 @@ theorem pullStr_Ystrπ (s : ℕ) : pullStr I f s ≫ Ystrπ I s = Ystrπ (pull I
 theorem δ_pullStr [LinearOrder ι] (s : ℕ) (j : Fin (s + 2)) :
     δ (pull I f) s j ≫ pullStr I f s = pullStr I f (s + 1) ≫ δ I s j :=
   Ystr_hom_ext _ fun S => by
-    simp only [inj_δ_assoc, inj_pullStr_assoc, Category.assoc]
+    simp only [inj_δ_assoc, inj_pullStr_assoc]
     rw [inj_pullStr, incl_pullMap_assoc, inj_δ]
 
 end BaseChangeStr
@@ -346,7 +346,7 @@ def red : A O ϖ →+* O ⧸ Ideal.span {ϖ} :=
     intro a ha
     rw [Ideal.mem_span_singleton'] at ha
     obtain ⟨c, rfl⟩ := ha
-    simp [Ideal.Quotient.eq_zero_iff_mem, Ideal.mem_span_singleton_self])
+    simp)
 
 theorem reduction_uniformizerPoint (k : Fin 2) : red O ϖ (T O ϖ k) = 0 := by simp [red, T]
 

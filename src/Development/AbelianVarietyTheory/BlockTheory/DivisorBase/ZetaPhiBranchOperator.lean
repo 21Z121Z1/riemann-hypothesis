@@ -168,6 +168,6 @@ example (K : Type) [Field K] (ι : Type) [Fintype ι] (lam : ι → DomWeight 1)
 
 example (K : Type) [Field K] (u : ℤ) :
     capelli K 1 u (X (0, 0)) = u • (X (0, 0) : MvPolynomial (Fin 2 × Fin 2) K) := by
-  simp [capelli, fOp, eOp, Fin.sum_univ_two, pderiv_X, Pi.single_apply, add_mul]
+  simp [capelli, fOp, eOp, Fin.sum_univ_two, pderiv_X]
 
 end GlobalTheory.IndefiniteRowSideFullHecke.InterlacingNumerators

@@ -180,10 +180,10 @@ theorem level_surjective : ∀ (R K : Type) [CommRing R] [IsDomain R] [IsIntegra
     have h2 : (φi * toConv ψ).ofConv = (Algebra.ofId R T).comp (counitAlgHom R A) := by
       apply ker_trivial h hθ hθ' _ hg
       rw [AlgHom.convMul_comp_bialgHom_distrib]
-      simp only [ofConv_toConv]
+      simp only
       rw [← e]
       have := AlgHom.convMul_comp_bialgHom_distrib φi (toConv φ) g
-      simp only [ofConv_toConv] at this
+      simp only at this
       rw [← this, h1]
       ext a
       simp [AlgHom.convOne_def]

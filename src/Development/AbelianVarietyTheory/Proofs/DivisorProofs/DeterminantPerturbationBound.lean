@@ -82,7 +82,7 @@ theorem det_sub_lt_of_close_on_unitBall : ∀ (C : Type) [NormedField C] [IsUltr
       ext r l
       by_cases hr : r = c
       · subst hr; simp [Matrix.updateRow_apply]
-      · simp [Matrix.updateRow_apply, hr, Function.update_of_ne hr, hA]
+      · simp [Matrix.updateRow_apply, hr, hA]
     have h3 : ∑ l, Q l c * P j l = (A.det)⁻¹ * ∑ l, A.adjugate l c * P j l := by
       rw [hQ, Matrix.inv_def, Finset.mul_sum]
       refine Finset.sum_congr rfl fun l _ => ?_

@@ -73,7 +73,7 @@ private theorem exists_unit_near {Y C : Scheme.{0}} (p : Y ⟶ C) [IsIntegral Y]
       (germ_res h₂ hV (p.app W c)).trans (algebraMap_germ (W := p ⁻¹ᵁ W) (x := y) hW _).symm
     rw [map_mul, map_mul, e, e, germ_res, germ_res, germ_res]
     rw [← hab, ← algebraMap_germ hy, hf₀, div_mul_eq_mul_div, div_eq_iff hb']
-    simp only [← map_mul, map_pow]
+    simp only [map_pow]
     simp only [← map_pow (algebraMap _ Y.functionField), ← map_mul]
     congr 1
     rw [Units.val_mul]

@@ -77,7 +77,7 @@ theorem arFun_sumLine_base_eq_zero : ArCalc → ∀ (k : Type) [CommRing k] (B Y
     ((aeval fun j => lin fun i => ((T j i : ℤ) : ℝ)).comp (aeval (![X 3, X 2] : Fin 2 → MvPolynomial (Fin 4) ℝ))) P
   congr 1
   ext i
-  fin_cases i <;> simp [T, lin, Fin.sum_univ_four, Pi.single_apply]
+  fin_cases i <;> simp [T, lin, Fin.sum_univ_four]
 
 end GlobalTheory.CovTest.SwapLine
 

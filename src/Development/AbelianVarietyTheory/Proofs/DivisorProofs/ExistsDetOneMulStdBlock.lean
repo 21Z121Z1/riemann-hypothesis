@@ -59,8 +59,7 @@ theorem exists_det_one_mul_stdBlock {K : Type} [Field K] {n r : ℕ} (hrn : r < 
     rw [← Module.finrank_eq_card_basis b, Module.finrank_fin_fun]
   have hb : ∀ i, b (Sum.inl i) = y.col i := by
     intro i
-    simp only [b, Module.Basis.sumExtend, Module.Basis.reindex_apply, Module.Basis.coe_extend,
-      Equiv.symm_symm, Equiv.trans_apply, Equiv.sumCongr_apply]
+    simp only [b, Module.Basis.sumExtend, Module.Basis.reindex_apply, Module.Basis.coe_extend]
     rfl
   have hS : Fintype.card (Module.Basis.sumExtendIndex hli) = n - r := by
     rw [Fintype.card_sum, Fintype.card_fin] at hcard; omega
@@ -99,14 +98,14 @@ theorem exists_det_one_mul_stdBlock {K : Type} [Field K] {n r : ℕ} (hrn : r < 
       simp only [τ, Fin.coe_castLE, dif_pos c.isLt]
     rw [IsUnit.unit_spec]
     ext i c
-    simp only [g, D, Matrix.mul_assoc, Matrix.mul_apply, Matrix.diagonal_apply, Matrix.of_apply, hE]
-    simp only [mul_ite, mul_one, mul_zero, Finset.sum_ite_eq', Finset.sum_ite_eq, Finset.mem_univ, if_true]
+    simp only [g, D, Matrix.mul_apply, Matrix.diagonal_apply, Matrix.of_apply, hE]
+    simp only [mul_ite, mul_one, mul_zero, Finset.sum_ite_eq', Finset.mem_univ, if_true]
     have hne : Fin.castLE hrn.le c ≠ last := by
       intro h
       have h2 := congrArg Fin.val h
       simp only [Fin.coe_castLE, last] at h2
       omega
-    simp only [if_neg hne, mul_one]
+    simp only [if_neg hne]
     show b (τ (Fin.castLE hrn.le c)) i = y i c
     rw [hτc, hb]
     rfl

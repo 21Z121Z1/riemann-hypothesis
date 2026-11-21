@@ -342,7 +342,7 @@ theorem _root_.GlobalTheory.exists_induced_int_prime_to : ∀ (G : Type) [Group 
       refine Finset.sum_congr rfl fun s _ => ?_
       simp only [_root_.GlobalTheory.BI.ext0]
       by_cases h : s⁻¹ * g * s ∈ E
-      · simp only [dif_pos h, h, true_and]
+      · simp only [h, true_and]
         calc _ = (Nat.card E : ℂ)⁻¹ * ∑ k : Fin o, ((ζ⁻¹ ^ (k : ℕ) : ℂˣ) : ℂ) *
               ((((powMonoidHom (k : ℕ)).comp χ) ⟨_, h⟩ : ℂˣ) : ℂ) := by
               rw [Finset.mul_sum]; exact Finset.sum_congr rfl fun k _ => mul_left_comm _ _ _

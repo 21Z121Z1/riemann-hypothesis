@@ -28,7 +28,7 @@ theorem hLin_coordR (x y : V.V) :
   change hR R hc.sig V.gram _ _ = inclR R (V.hT _ _)
   rw [IndefiniteRowSideFullHecke.AdelicUnitaryGroups.hT_coord]
   simp [hR, Formalism.UG.hform, GlobalTheory.IndefiniteRowSideFullHecke.AdelicUnitaryGroups.coordR, JR, inclR, Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.sigR, CMData.sig,
-    TensorProduct.tmul_sum, starRingEnd_apply]
+    starRingEnd_apply]
 
 theorem hD_bas_dbas (u : SV (wittIndex V)) (i k : Supp u) :
     V.hD (bas Φ u i.1) (dbas Φ u k.1) = if i = k then 1 else 0 := by

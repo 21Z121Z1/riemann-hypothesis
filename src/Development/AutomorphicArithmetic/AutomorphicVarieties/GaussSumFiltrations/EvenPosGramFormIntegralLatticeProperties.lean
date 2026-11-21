@@ -76,7 +76,7 @@ theorem qf_int {G : Matrix κ κ ℤ} (hG : EvenPos G) {x : κ → F} (hx : ∀ 
     exact IsIntegral.sum _ fun i _ => by
       by_cases h : j = i
       · subst h; simpa using hx j
-      · simp [Pi.single_apply, h, isIntegral_zero]
+      · simp [h, isIntegral_zero]
   have key : ∀ s : Finset κ, IsIntegral ℤ (QF G (∑ i ∈ s, Pi.single i (x i))) := by
     intro s
     refine Finset.induction_on s ?_ ?_
@@ -87,7 +87,7 @@ theorem qf_int {G : Matrix κ κ ℤ} (hG : EvenPos G) {x : κ → F} (hx : ∀ 
       intro j
       by_cases h : j = i
       · subst h; simpa using hx j
-      · simp [Pi.single_apply, h, isIntegral_zero]
+      · simp [h, isIntegral_zero]
   simpa [Finset.univ_sum_single] using key Finset.univ
 
 theorem et_props (x y : F) : et (x + y) = et x * et y ∧ ‖et x‖ = 1 ∧ (et x = 1 ↔ ∃ n : ℤ, Algebra.trace ℚ F x = n) ∧

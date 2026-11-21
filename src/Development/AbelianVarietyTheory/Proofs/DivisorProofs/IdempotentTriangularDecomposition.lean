@@ -88,7 +88,7 @@ theorem exists_integral_basis_fixed_vectors (F : Type) [Field F] (R : Subring F)
     by_cases h : k = k'
     · subst h; simp
     · have : snf.f k' ≠ snf.f k := fun h' => h (snf.f.injective h').symm
-      simp [h, Finsupp.single_apply, this]
+      simp [h]
   · have key : ∀ y : Fin N → R, y ∈ M → (u * l).mulVec (c y) = c y := by
       intro y hy
       rw [← Matrix.mulVec_mulVec]
@@ -149,7 +149,7 @@ theorem exists_integral_block_bases_of_projectors :
     by_cases h : σ = τ
     · subst h
       simp [heu, hlu, Matrix.one_apply]
-    · simp [h, Matrix.one_apply]
+    · simp [h]
   have hQP : Q * P = 1 := by
     rw [← hs]
     ext i j

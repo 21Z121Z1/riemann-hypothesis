@@ -83,7 +83,7 @@ theorem dChar_apply (x : LieG (torus R r)) (χ : Fin r → ℤ) :
   rw [map_sum]
   refine Finset.sum_congr rfl fun i _ => ?_
   have : (Pi.single i (χ i) : Fin r → ℤ) = χ i • Pi.single i 1 := by
-    ext j; by_cases h : j = i <;> simp [Pi.single_apply, h]
+    ext j; by_cases h : j = i <;> simp [h]
   rw [this, map_zsmul, zsmul_eq_mul, lieCoord_eq]
 
 theorem val_eq_of_lieCoord (x : LieG (torus R r)) (χ : Fin r → ℤ) :

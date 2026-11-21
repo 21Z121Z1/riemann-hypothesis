@@ -263,7 +263,7 @@ theorem fibForm_posDef : ∀ (k : Type) [CommRing k] (S : Scheme.{0}) (p : S ⟶
     rw [e3]
     linear_combination (1/2 : ℂ) * e2 - (1/2 : ℂ) * e1
   have hwsum : wv = ∑ c, (star ξ) c • GoodMetric.coordVec c := by
-    ext i; simp [GoodMetric.coordVec, EuclideanSpace.single_apply, hwvdef, Pi.single_apply]
+    ext i; simp [GoodMetric.coordVec, hwvdef, Pi.single_apply]
   have hvm : star ξ ᵥ* M = (u.1 : Fin D → ℂ) := by
     rw [← hbase u, hu, hwsum]
     ext a

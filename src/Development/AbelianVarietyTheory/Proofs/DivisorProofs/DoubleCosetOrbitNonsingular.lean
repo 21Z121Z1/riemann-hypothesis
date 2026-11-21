@@ -52,7 +52,7 @@ theorem form_single (σ : E →ₐ[F] E) {N : ℕ} (J : Matrix (Fin N) (Fin N) E
   have : (fun i => σ ((Pi.single b (1 : E) : Fin N → E) i)) = Pi.single b 1 := by
     funext i; by_cases h : i = b
     · subst h; simp
-    · simp [Pi.single_apply, h]
+    · simp [h]
   simp only [form, this]
   simp
 
@@ -79,7 +79,7 @@ theorem det_ne_zero_cartan' [NumberField E] (B : Base F E) {n : ℕ} (Y : Spc F 
     ext i
     have := congrArg τ (congrFun hJv i)
     simp only [Matrix.mulVec, dotProduct, map_sum, map_mul, Pi.zero_apply, map_zero] at this
-    simp only [M, v', Matrix.smul_mulVec, Matrix.mulVec, dotProduct, Matrix.map_apply, Pi.smul_apply, smul_eq_mul,
+    simp only [M, v', Matrix.mulVec, dotProduct, Matrix.map_apply, smul_eq_mul,
       Pi.zero_apply, Matrix.smul_apply, mul_assoc, ← Finset.mul_sum, this, mul_zero]
   have hx : star v' ≠ 0 := fun h => hv' (by simpa using congrArg star h)
   have := (h w).2.2 (star v') hx

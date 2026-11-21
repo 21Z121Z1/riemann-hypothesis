@@ -138,7 +138,7 @@ theorem GlobalTheory.ExpUniqCh0.exists_factor_trivSqZeroExt : ∀ {X : Scheme.{0
     show spMap (algebraMap S A) ≫ x0 = _
     conv_lhs => rw [← hx0]
     rw [← Category.assoc, ← Spec.map_comp]
-    simp [spMap]
+    simp
 
   haveI : IsLocalHom (G.left.presheaf.stalkCongr (Inseparable.of_eq hp)).hom.hom := isLocalHom_of_isIso _
   haveI : IsLocalHom m.hom := inferInstanceAs (IsLocalHom (G.hom.stalkMap (δ.left (IsLocalRing.closedPoint A))).hom)

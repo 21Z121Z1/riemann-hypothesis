@@ -46,7 +46,7 @@ namespace GlobalTheory.HermOpBound
 lemma entry {n : ℕ} (M : Matrix (Fin n) (Fin n) ℂ) (a b : Fin n) :
     star (Pi.single a (1:ℂ) : Fin n → ℂ) ⬝ᵥ M *ᵥ (Pi.single b (1:ℂ)) = M a b := by
   have h : star (Pi.single a (1:ℂ) : Fin n → ℂ) = Pi.single a 1 := by
-    ext i; by_cases hi : i = a <;> simp [Pi.single_apply, hi]
+    ext i; by_cases hi : i = a <;> simp [hi]
   rw [h, single_dotProduct]
   simp [mulVec, dotProduct, Pi.single_apply]
 
@@ -60,7 +60,7 @@ lemma expand {n : ℕ} (M : Matrix (Fin n) (Fin n) ℂ) (u w : Fin n → ℂ) (s
 
 lemma norm_single_le {n : ℕ} (a : Fin n) : ‖(Pi.single a (1:ℂ) : Fin n → ℂ)‖ ≤ 1 :=
   (pi_norm_le_iff_of_nonneg zero_le_one).2 (fun i => by
-    by_cases h : i = a <;> simp [Pi.single_apply, h])
+    by_cases h : i = a <;> simp [h])
 
 lemma one_le_norm_single {n : ℕ} (a : Fin n) : 1 ≤ ‖(Pi.single a (1:ℂ) : Fin n → ℂ)‖ := by
   have := norm_le_pi_norm (Pi.single a (1:ℂ) : Fin n → ℂ) a
@@ -104,7 +104,7 @@ lemma entry_bound {n : ℕ} (M : Matrix (Fin n) (Fin n) ℂ) (c : ℝ) (hM : M.I
   obtain ⟨p2, p2'⟩ := key (-1) (by simp)
   obtain ⟨p3, p3'⟩ := key Complex.I (by simp)
   obtain ⟨p4, p4'⟩ := key (-Complex.I) (by simp)
-  simp [Complex.add_re, Complex.mul_re, Complex.mul_im] at p1 p1' p2 p2' p3 p3' p4 p4'
+  simp [Complex.add_re, Complex.mul_re] at p1 p1' p2 p2' p3 p3' p4 p4'
   have hre : |(M a b).re| ≤ c := abs_le.2 ⟨by linarith, by linarith⟩
   have him : |(M a b).im| ≤ c := abs_le.2 ⟨by linarith, by linarith⟩
   calc ‖M a b‖ ≤ |(M a b).re| + |(M a b).im| := Complex.norm_le_abs_re_add_abs_im _

@@ -49,7 +49,7 @@ theorem GlobalTheory.BKLim.limit_basis_link_mod : ∀ (l : ℕ) [Fact l.Prime] (
           = Pi.single j 1 := by
         funext a; by_cases h : a = j
         · subst h; simp
-        · simp [Pi.single_apply, h]
+        · simp [h]
       have := hv1 i
       rw [hs] at this
       simpa [Matrix.mulVec_single_one] using this

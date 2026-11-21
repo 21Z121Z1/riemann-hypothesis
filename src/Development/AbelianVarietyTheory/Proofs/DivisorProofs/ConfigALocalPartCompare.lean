@@ -171,7 +171,7 @@ theorem evShift_levi : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Type) [Fi
   rw [hom, hrho, hrho, he', he'] at hglob
   refine GlobalTheory.ThK.EvUniqInf.eq_of_pure_std _ _ (hglob.trans ?_)
   funext x
-  simp only [GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure, Pi.smul_apply, smul_eq_mul, ContinuousLinearMap.map_smul, SchwartzMap.smul_apply]
+  simp only [GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure, Pi.smul_apply, smul_eq_mul, SchwartzMap.smul_apply]
   ring
 
 end GlobalTheory.ShiftInfA

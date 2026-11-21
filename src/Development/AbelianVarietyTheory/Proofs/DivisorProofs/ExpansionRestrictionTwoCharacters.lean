@@ -99,7 +99,7 @@ theorem expansion_restrict_two_characters : (∀ (G : Type) [CommGroup G] (L : G
     · intro i hi; simpa [hi] using key i
     intro t
     have h1 := congrArg (fun f => f.coeff 0) (hQ0 t η hη)
-    simp only [Q, coeff_sub, finsetSum_coeff, apply_ite (fun f : ℂ[X] => f.coeff 0), coeff_C_mul,
+    simp only [Q, finsetSum_coeff, apply_ite (fun f : ℂ[X] => f.coeff 0), coeff_C_mul,
       taylor_coeff_zero, coeff_zero, h₁, h₂, if_false, sub_zero] at h1
     rw [← h1]
     refine Finset.sum_congr rfl fun i _ => ?_

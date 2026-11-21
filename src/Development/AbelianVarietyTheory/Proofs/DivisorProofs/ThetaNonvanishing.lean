@@ -51,7 +51,7 @@ theorem claimV (hK : GlobalTheory.ThK.KP) (n : ℕ) : ∀ (F E : Type) [Field F]
     have hx0 : (0, 0) = x := hu (0, 0) (by rw [h0]; exact split2_zero _ _ _)
     have := hCT X om om' om₁ om₁' hT' hT₁ Φ hΦ x.1 x.2 hx h₁ m hm 1
     rw [← hx0] at this
-    simp only [LinearMap.map_zero, Prod.snd_zero] at this
+    simp only at this
     erw [om_one] at this
     rw [mul_one] at this
     simpa [hC0] using this.symm

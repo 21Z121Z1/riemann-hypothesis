@@ -100,7 +100,7 @@ theorem position_coeff : GlobalTheory.ThK.KP → ∀ (k : Type) [Field k] [Valua
   rw [hc]
   rcases Fin.exists_fin_two.1 ⟨r t, rfl⟩ with h | h <;> rw [h]
   · have e1 : ((b2 n d 0 : ℕ) : ℂ) = (d : ℂ) - n := by simp [b2, Nat.cast_sub hnd']
-    simp only [chi2, Fin.val_zero, if_true, MonoidHom.one_apply, Units.val_one, one_mul, e1, if_pos rfl]
+    simp only [chi2, Fin.val_zero, if_true, MonoidHom.one_apply, Units.val_one, one_mul, e1]
     simp only [← mul_assoc, ← GlobalTheory.SplitFlip.apow_add]
     have : -s + (((d : ℂ) - 1) / 2 + (1 - ((d : ℂ) - n)) / 2) = 0 := by rw [hs]; ring
     rw [this, GlobalTheory.SplitFlip.apow_zero]; simp

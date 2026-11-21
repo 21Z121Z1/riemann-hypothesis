@@ -130,14 +130,14 @@ lemma filter_le_succ (n : ℕ) (h : n + 1 < d) :
     univ.filter (fun j : Fin d => j.val ≤ n + 1) =
       insert ⟨n + 1, h⟩ (univ.filter (fun j : Fin d => j.val ≤ n)) := by
   ext j
-  simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.mem_insert, Fin.ext_iff, Fin.val_mk]
+  simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.mem_insert, Fin.ext_iff]
   omega
 
 lemma filter_ge (n : ℕ) (h : n < d) :
     univ.filter (fun j : Fin d => n ≤ j.val) =
       insert ⟨n, h⟩ (univ.filter (fun j : Fin d => n + 1 ≤ j.val)) := by
   ext j
-  simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.mem_insert, Fin.ext_iff, Fin.val_mk]
+  simp only [Finset.mem_filter, Finset.mem_univ, true_and, Finset.mem_insert, Fin.ext_iff]
   omega
 
 lemma sum_gs_le (b : Fin d → E)

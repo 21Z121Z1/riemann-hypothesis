@@ -54,7 +54,7 @@ theorem chartMon_join {Ω : Type} [Field Ω] {K K' : Type} [Fintype K] [Fintype 
   rw [Finset.prod_eq_single j]
   · simp
   · intro b _ hb
-    simp [Pi.single_apply, hb]
+    simp [hb]
   · intro h
     exact absurd (Finset.mem_univ j) h
 

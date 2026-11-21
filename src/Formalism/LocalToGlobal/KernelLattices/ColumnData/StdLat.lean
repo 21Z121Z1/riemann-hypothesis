@@ -75,7 +75,7 @@ theorem stdL_isSD (N : ℕ) : (letI := D.host.cmStar; IsSDLat D.host.E N (Formal
       have := h _ (single_mem_stdL D i)
       simp only [stdH] at this
       rw [Fintype.sum_eq_single i (fun j hj => by simp [Pi.single_eq_of_ne hj])] at this
-      simp only [Pi.single_eq_same, star_one, one_mul, mul_one] at this
+      simp only [Pi.single_eq_same, star_one, one_mul] at this
       first
         | exact this
         | simpa using star_mem_range D _ this

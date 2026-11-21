@@ -16,7 +16,7 @@ variable {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNonarchim
 theorem det_blk (h : GL (Fin 2) F) :
     (!![h.val 0 0, h.val 0 1, 0; h.val 1 0, h.val 1 1, 0; 0, 0, 1] : Matrix (Fin 3) (Fin 3) F).det
       = (h.val).det := by
-  simp [Matrix.det_succ_row_zero, Fin.sum_univ_succ, Matrix.det_fin_two, Fin.succAbove]
+  simp [Matrix.det_succ_row_zero, Fin.sum_univ_succ, Fin.succAbove]
 
 theorem em_coe (h : GL (Fin 2) F) : (GL2LocalData.em h).val =
     !![h.val 0 0, h.val 0 1, 0; h.val 1 0, h.val 1 1, 0; 0, 0, 1] := by

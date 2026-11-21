@@ -74,7 +74,7 @@ theorem aesm_weight_smul (D : B.RealPlaceData k r Wp Wq) {E : Type*} [NormedAddC
   filter_upwards [hA, hB] with q hqa hqb
   classical
   by_cases hq : q ∈ s
-  · simp [Set.indicator_apply, hq]
+  · simp [hq]
   · simp only [Set.indicator_apply, hq, if_false]
     have hlt : Complex.normSq q.2 < Tz k r D.z * Tz k r D.z' := by
       have hn : ¬ (Tz k r D.z * Tz k r D.z' < Complex.normSq q.2) := fun h => hq ⟨hqa, h⟩

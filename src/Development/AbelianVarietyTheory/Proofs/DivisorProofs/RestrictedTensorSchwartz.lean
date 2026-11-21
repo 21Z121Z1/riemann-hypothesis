@@ -31,7 +31,7 @@ theorem pure_mul_conj (f f' : SInf F κ) (φ φ' : ∀ v : Pl F, (κ → Fv F v)
   have h2 := mulSupport_finite φ' hφ' x
   have h3 : (Function.mulSupport fun v : Pl F => conj (φ' v (fun i => evFin F v (x i)))).Finite := by
     refine h2.subset fun v hv h => hv ?_
-    simp only [Function.mem_mulSupport, ne_eq, not_not] at h ⊢
+    simp only at h ⊢
     rw [h, map_one]
   have hc : conj (∏ᶠ v, φ' v (fun i => evFin F v (x i))) = ∏ᶠ v, conj (φ' v (fun i => evFin F v (x i))) :=
     MonoidHom.map_finprod (starRingEnd ℂ).toMonoidHom h2

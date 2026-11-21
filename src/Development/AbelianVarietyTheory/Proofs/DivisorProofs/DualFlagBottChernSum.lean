@@ -167,7 +167,7 @@ theorem spans_dualFlag (H : Spans fl U v) (hv : IsFrame v) :
     simp only [dualApp_sum, LinearMap.sum_apply, dualApp_smul, dualApp_res, LinearMap.smul_apply,
       hv.dualApp_coord_frame, smul_eq_mul, mul_ite, mul_one, mul_zero, LB.resG_self]
     split_ifs with hb
-    · rw [Finset.sum_eq_single ⟨b.rev, hb⟩ (fun j _ hj => if_neg fun e => hj (by subst e; simp [Fin.ext_iff]))
+    · rw [Finset.sum_eq_single ⟨b.rev, hb⟩ (fun j _ hj => if_neg fun e => hj (by subst e; simp))
         (by simp), if_pos (by simp [Fin.ext_iff]; omega)]
     · exact Finset.sum_eq_zero fun j _ => if_neg fun e => hb (by subst e; simp)
   refine ⟨s', fun V h => ⟨(injective_iff_map_eq_zero _).2 fun a ha => funext fun j => ?_, fun w => ?_⟩, hs'⟩

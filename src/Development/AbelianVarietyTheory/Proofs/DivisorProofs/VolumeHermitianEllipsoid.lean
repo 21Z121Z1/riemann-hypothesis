@@ -102,7 +102,7 @@ theorem volume_hermitian_ellipsoid : ∀ (g : ℕ) (Hm : Matrix (Fin g) (Fin g) 
   rw [hset, Measure.addHaar_preimage_linearMap _ (by rw [hdetL]; exact hd.ne'), hdetL, hre]
   rcases Nat.eq_zero_or_pos g with rfl | hg
   · have hu : {v : Fin 0 → ℂ | ∑ k, ‖v k‖ ^ 2 < r ^ 2} = Set.univ := by
-      ext v; simp [hr.ne', sq_pos_of_pos hr]
+      ext v; simp [sq_pos_of_pos hr]
     have h1 : Complex.normSq B.det = 1 := by simp
     rw [hu, h1, ← Set.pi_univ Set.univ, volume_pi_pi]
     simp

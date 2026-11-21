@@ -103,7 +103,7 @@ theorem conj_entry (H : Matrix (Fin r) (Fin r) ℂ) (i j : Fin r) (hij : i ≠ j
       H + H * Eij i j s - Eij i j s * H - Eij i j s * (H * Eij i j s) := by
     noncomm_ring
   rw [h]
-  simp only [Matrix.add_apply, Matrix.sub_apply, mul_Eij, Eij_mul, if_true, ite_true, eq_self_iff_true]
+  simp only [Matrix.add_apply, Matrix.sub_apply, mul_Eij, Eij_mul, if_true]
   ring
 
 theorem coeffs_of_small (a b c : ℂ) (δ : ℝ) (hδ : 0 < δ)

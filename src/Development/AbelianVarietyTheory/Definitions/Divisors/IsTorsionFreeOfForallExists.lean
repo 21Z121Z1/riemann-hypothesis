@@ -665,7 +665,7 @@ def prodAct : ℤ × ℤ →+* End (F ⊞ G) where
     refine biprod.hom_ext _ _ ?_ ?_ <;> simp
   map_mul' a b := by
     change _ = biprod.map _ _ ≫ biprod.map _ _
-    refine biprod.hom_ext _ _ ?_ ?_ <;> simp [smul_smul, mul_comm]
+    refine biprod.hom_ext _ _ ?_ ?_ <;> simp [smul_smul]
   map_zero' := by
     change _ = (0 : F ⊞ G ⟶ F ⊞ G)
     refine biprod.hom_ext _ _ ?_ ?_ <;> simp

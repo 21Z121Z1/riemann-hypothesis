@@ -50,7 +50,7 @@ theorem homog_rename_dr {Tau : Type} [Fintype Tau] {N : ℕ} (d : Rt Tau N →�
 
 theorem tagDR_toR {Tau : Type} [Fintype Tau] {N : ℕ} (G : MvPolynomial (Rt Tau N) ℚ) :
     tagDR Tau N (Formalism.MainNotions.LatticeTransfer.toR G) = Formalism.MainNotions.LatticeTransfer.toR (rename (fun x => (Sum.inl (false, x) : Vm Tau N)) G) := by
-  simp only [tagDR, Formalism.MainNotions.LatticeTransfer.toR, AlgHom.coe_toRingHom]
+  simp only [tagDR, Formalism.MainNotions.LatticeTransfer.toR]
   rw [map_rename]
 
 theorem collapse_toR {D : D7} {N : ℕ} (G : MvPolynomial (Rt D.what₂.Tau N) ℚ) :

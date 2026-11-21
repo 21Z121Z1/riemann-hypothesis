@@ -211,7 +211,7 @@ theorem cro_coeff_lin (G : FGLaw k d) (i j : Fin d) :
         · have h0 : D ((0 : Fin 2), s2) = 0 := by
             by_contra hne
             exact hx _ (Finsupp.mem_support_iff.mpr hne) rfl
-          simp [h0, Finsupp.single_apply]
+          simp [h0]
         · simp [Finsupp.single_apply] at hev ⊢
           split_ifs at hev ⊢ <;> omega
       · intro s hs hne

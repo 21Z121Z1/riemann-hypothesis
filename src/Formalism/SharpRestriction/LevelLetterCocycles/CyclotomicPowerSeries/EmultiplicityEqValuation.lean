@@ -63,7 +63,7 @@ theorem not_dvd_natCast (b : ℕ) (hb : ¬ l ∣ b) : ¬ (l : ℤ_[l]) ∣ (b : 
   apply hb
   obtain ⟨c, hc⟩ := h
   have h2 := congrArg (PadicInt.toZMod : ℤ_[l] →+* ZMod l) hc
-  simp only [map_natCast, map_mul, CharP.cast_eq_zero, ZMod.natCast_self, zero_mul] at h2
+  simp only [map_natCast, map_mul, CharP.cast_eq_zero, zero_mul] at h2
   exact (CharP.cast_eq_zero_iff (ZMod l) l b).1 h2
 
 theorem toZModPow_eq_one_iff (k : ℕ) (x : ℤ_[l]) (hx : x - 1 ≠ 0) :

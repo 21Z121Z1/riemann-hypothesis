@@ -42,7 +42,7 @@ theorem chart : ∀ (X G : Scheme.{0}) (U : X.Opens) (hU : IsAffineOpen U) (W : 
   let ℓ := pullback.lift _ _ hc
   have hℓ : ℓ ≫ m = pullback.fst _ _ := by
     apply pullback.hom_ext
-    · simp only [Category.assoc, ℓ, m, pullback.map, pullback.lift_fst, pullback.lift_fst_assoc, Category.comp_id]
+    · simp only [Category.assoc, ℓ, m, pullback.map, pullback.lift_fst, Category.comp_id]
     · simp only [Category.assoc, ℓ, m, pullback.map, pullback.lift_snd, pullback.lift_snd_assoc]
       exact e2.symm
   refine ⟨(pullbackSpecIso Γ(X, U) R Γ(G, W)).hom (ℓ q), ?_⟩

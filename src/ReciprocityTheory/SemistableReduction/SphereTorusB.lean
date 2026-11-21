@@ -31,7 +31,7 @@ theorem eval_update_eq_eval_aeval {ι : Type*} [DecidableEq ι] (w : ι → ℂ)
   by_cases h : j = i
   · subst h
     simp
-  · simp [h, Function.update_of_ne h]
+  · simp [h]
 
 theorem eval_bind₁_scale {ι : Type*} (r w : ι → ℂ) (f : MvPolynomial ι ℂ) :
     MvPolynomial.eval w
@@ -122,7 +122,7 @@ theorem scaledTorusMean_le_torusMean {ι : Type} [Fintype ι] [DecidableEq ι]
         by_cases hj : j = a
         · subst hj
           simp
-        · simp [Finset.mem_insert, hj, Function.update_of_ne hj]
+        · simp [Finset.mem_insert, hj]
       rw [e] at hle
       exact hle
   have hu := key Finset.univ

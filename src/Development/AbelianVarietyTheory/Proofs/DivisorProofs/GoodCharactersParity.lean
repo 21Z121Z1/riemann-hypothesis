@@ -103,7 +103,7 @@ theorem even_mα_add : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
     obtain ⟨x, y, hxy, -⟩ := (hh (AF F)).1 (n : AE F E)
     have E0 : sgnAd w = algebraMap F (AF F) (t : F) * (x ^ 2 - algebraMap F (AF F) δ * y ^ 2) := by
       have := congrArg (fun q : (AF F)ˣ => (q : AF F)) htn
-      simp only [Units.val_mul, Units.coe_map, MonoidHom.coe_coe] at this
+      simp only [Units.val_mul, Units.coe_map] at this
       rw [← hxy]
       exact this.symm
 

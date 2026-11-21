@@ -31,7 +31,7 @@ theorem exp_herm_swap {A : Over (Sp ℂ)} [GrpObj A] {L : LB A.left} {g : ℕ} (
   rw [zero_add] at hne
   have hχl : χ l ≠ 0 := fun h0 ↦ by simpa [h0] using h.2.2.1 l
   have hχm : χ m ≠ 0 := fun h0 ↦ by simpa [h0] using h.2.2.1 m
-  simp only [zero_add, zero_dotProduct, mul_zero, Complex.exp_add, Complex.exp_zero, one_mul] at e1 e2 e3 e4
+  simp only [zero_add, zero_dotProduct, mul_zero, Complex.exp_add] at e1 e2 e3 e4
   set X := Complex.exp (Real.pi / 2 * ((l : Fin g → ℂ) ⬝ᵥ Hm.mulVec (star (l : Fin g → ℂ))))
   set Y := Complex.exp (Real.pi / 2 * ((m : Fin g → ℂ) ⬝ᵥ Hm.mulVec (star (m : Fin g → ℂ))))
   have hX : X ≠ 0 := Complex.exp_ne_zero _
@@ -166,7 +166,7 @@ theorem hermE_add_left (φ : I → E →+* ℂ) (h : I → ℝ) (a b x' : E) :
 
 theorem hermE_add_right (φ : I → E →+* ℂ) (h : I → ℝ) (x a b : E) :
     hermE φ h x (a + b) = hermE φ h x a + hermE φ h x b := by
-  simp only [hermE, map_add, add_mul, mul_add, Finset.sum_add_distrib]
+  simp only [hermE, map_add, mul_add, Finset.sum_add_distrib]
 
 theorem hermE_swap (φ : I → E →+* ℂ) (h : I → ℝ) (x x' : E) :
     hermE φ h x' x = starRingEnd ℂ (hermE φ h x x') := by

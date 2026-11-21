@@ -225,7 +225,7 @@ theorem descend_pullback {k : Type} [Field k] [Countable k] [IsAlgClosed k] [Alg
     obtain ⟨a, rfl⟩ : c ∈ (algebraMap k R).range := by
       exact minpoly.mem_range_of_degree_eq_one k c
         (IsAlgClosed.degree_eq_one_of_irreducible k (minpoly.irreducible hc.isIntegral))
-    simp [Algebra.ofId_apply]
+    simp
   obtain ⟨f₁, hf₁, e₁⟩ := exists_specialise fR ρ
   choose g hg eg using fun σ : R →ₐ[k] ℂ => exists_specialise fR σ
   have main : g ((Algebra.ofId k ℂ).comp ρ) = f := by

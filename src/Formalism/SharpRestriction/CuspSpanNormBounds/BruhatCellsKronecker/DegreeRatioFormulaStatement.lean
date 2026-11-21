@@ -156,7 +156,7 @@ def SzaSpl (D : D7) : Prop :=
 
 theorem sza_prod_Icc (g : ℕ → ℝ) (k : ℕ) : ∏ i ∈ Icc 1 k, g i = ∏ j ∈ range k, g (j + 1) := by
   induction k with
-  | zero => simp [Finset.Icc_eq_empty]
+  | zero => simp
   | succ n ih => rw [Finset.prod_Icc_succ_top (Nat.le_add_left 1 n), ih, Finset.prod_range_succ]
 
 theorem sza_glCard (k : ℕ) (q : ℝ) :

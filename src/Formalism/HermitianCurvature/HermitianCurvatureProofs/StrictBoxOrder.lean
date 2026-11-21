@@ -76,7 +76,7 @@ theorem isWt_mono {n : ℕ} {E : Fin n → Fin n → Module.End ℂ V} {y : Fin 
     (a : Fin n → ℕ) (v : V) (h : IsWt E v) : IsWt E (mono y a v) := by
   unfold mono
   refine list_prod_pres (IsWt E) _ (fun f hf => ?_) v h
-  simp only [List.mem_ofFn, Set.mem_range] at hf
+  simp only [List.mem_ofFn] at hf
   obtain ⟨x, rfl⟩ := hf
   exact pow_pres (IsWt E) (y x) (fun w hw => isWt_vec hy x w hw) (a x)
 

@@ -184,7 +184,7 @@ theorem UpperTheory.archimedean_ideles_plane_compat :
       rw [hJv, ← map_one (inclR (F := F) (E := E) (AF F)), ← hA.xy, form, RingHom.map_dotProduct]; rfl
     have h2 := congrArg (fun z => z ⬝ᵥ incV F H.x) (UpperTheory.vecMul_unitary_eigen c _ _ _ hkk hu _ _ (inv _ ky))
     rw [← Matrix.dotProduct_mulVec] at h2
-    simp only [kx, dotProduct_smul, smul_dotProduct, dotProduct_comm _ (incV F H.x), h1,
+    simp only [kx, dotProduct_smul, dotProduct_comm _ (incV F H.x), h1,
       smul_eq_mul, mul_one] at h2
     exact h2.symm
   refine ⟨⟨⟨incM F π * mat k * incM F H.ι, incM F π * mat k⁻¹ * incM F H.ι, ?_, ?_⟩, ?_⟩, ?_, kx, ?_, g1⟩

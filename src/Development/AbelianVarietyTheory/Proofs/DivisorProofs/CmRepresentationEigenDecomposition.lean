@@ -74,7 +74,7 @@ theorem finrank_common_eigenspace_eq_one :
       obtain ⟨N2, h2, z2, hz2, e2⟩ := hy
       refine ⟨N1 * N2, mul_ne_zero h1 h2, (N2 : ℤ) • z1 + (N1 : ℤ) • z2,
         Zd.add_mem (Zd.smul_mem _ hz1) (Zd.smul_mem _ hz2), ?_⟩
-      simp only [Subring.coe_add, AddSubgroupClass.coe_zsmul, zsmul_eq_mul]
+      simp only [Subring.coe_add, zsmul_eq_mul]
       push_cast
       rw [e1, e2]; ring
     | smul q x _ hx =>
@@ -82,7 +82,7 @@ theorem finrank_common_eigenspace_eq_one :
       refine ⟨q.den * N, mul_ne_zero q.den_nz h, q.num • z, Zd.smul_mem _ hz, ?_⟩
       have hq : ((q.num : ℚ) : E) = (q.den : E) * (q : E) := by
         rw [← Rat.den_mul_eq_num q]; push_cast; ring
-      simp only [AddSubgroupClass.coe_zsmul, zsmul_eq_mul, Rat.smul_def]
+      simp only [zsmul_eq_mul, Rat.smul_def]
       push_cast
       rw [e]
       have hq' : (q.num : E) = (q.den : E) * (q : E) := by exact_mod_cast hq

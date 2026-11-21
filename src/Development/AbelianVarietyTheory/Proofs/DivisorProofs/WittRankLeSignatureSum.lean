@@ -53,7 +53,7 @@ theorem le_of_isotropic_sig {n m s r : ℕ} (M : Matrix (Fin n) (Fin n) ℂ) (hS
     · exact congrFun hy i
     · exact congrFun hx' i
   have h := LinearMap.finrank_le_finrank_of_injective hinj
-  simp only [Module.finrank_fin_fun, Module.finrank_fintype_fun_eq_card, Fintype.card_sum, Fintype.card_fin] at h
+  simp only [Module.finrank_fintype_fun_eq_card, Fintype.card_sum, Fintype.card_fin] at h
   omega
 
 theorem wittIndex_le : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E)
