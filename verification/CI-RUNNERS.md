@@ -102,36 +102,68 @@ additional administrator configuration, which this script does not perform.
 
 ## Persistent volunteer enrollment
 
-The operator creates/verifies the restricted group, then issues an organization
-runner registration token from their own authenticated machine:
+An organization registration token permits selecting other available runner groups;
+it is not restricted to this pool. **Do not send it to a volunteer.** The operator
+pre-registers one identity on their own trusted Linux machine, without starting its
+listener, then privately hands over only that identity. The volunteer first runs
+`doctor` and `install` above under their dedicated runner account.
+
+On the operator's machine, from the trusted checkout:
 
 ```sh
 umask 077
-gh api orgs/leanprover-community/actions/runner-groups/GROUP_ID > group-policy.json
+handoff=$(mktemp -d "$HOME/rh-runner-handoff.XXXXXXXX")
+gh api orgs/leanprover-community/actions/runner-groups/5 > "$handoff/group-policy.json"
+gh api orgs/leanprover-community/actions/runner-groups/5/repositories \
+  --jq '.repositories[].full_name'
+# Verify the only repository is leanprover-community/riemann-hypothesis.
 gh api --method POST \
-  orgs/leanprover-community/actions/runners/registration-token --jq .token
+  orgs/leanprover-community/actions/runners/registration-token --jq .token \
+  > "$handoff/registration-token"
+python3 scripts/ci-runner.py install --directory "$handoff/runner"
+python3 scripts/ci-runner.py register --directory "$handoff/runner" \
+  --name volunteer-host-name --policy-file "$handoff/group-policy.json" \
+  --token-file "$handoff/registration-token"
+mkdir -m 700 "$handoff/identity"
+cp "$handoff/runner/.runner" "$handoff/runner/.credentials" \
+  "$handoff/runner/.credentials_rsaparams" "$handoff/identity/"
+python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8-sig"))["agentId"])' \
+  "$handoff/identity/.runner"
+rm -- "$handoff/registration-token"
 ```
 
-Transfer the freshly fetched `group-policy.json` and **one-hour registration
-token**, not a PAT or GitHub App key, to the volunteer. Both files must be owned
-by the runner user and mode 0600. The policy receipt is an operator assertion,
-not a signed attestation: the operator must obtain it directly from GitHub and
-verify the group's selected repositories as well. Registration fails closed if
-the receipt permits a PR ref, another repository/workflow, or unrestricted jobs.
-Do not paste the token into a shell command, cloud-init, workflow log, or committed
-file. The volunteer can enter it at the hidden prompt:
+Record the printed runner ID and verify that identity's group membership through
+GitHub. The policy receipt is a fresh operator assertion, not a signed attestation;
+check its exact main workflow restriction and selected repository. Privately transfer
+`identity/` and `group-policy.json` to the volunteer, along with the expected runner
+name and numeric ID. Do not transfer the installation, logs, or an enrollment token.
+Never start the operator's listener or run both copies of this identity.
+
+On the volunteer host, make the transferred directory mode 0700 and its three files
+mode 0600, owned by the dedicated runner account. The receipt must also be mode 0600:
 
 ```sh
-python3 scripts/ci-runner.py register --name my-rh-build-host \
-  --policy-file group-policy.json
+chmod 700 identity
+chmod 600 identity/.runner identity/.credentials identity/.credentials_rsaparams group-policy.json
+python3 scripts/ci-runner.py adopt-identity --identity-directory identity \
+  --policy-file group-policy.json --name volunteer-host-name --runner-id PRINTED_ID
 ```
 
-For unattended enrollment, `--token-file FILE` requires a regular, owner-only
-mode-0600 file; remove it after successful enrollment. Registration selects the
-organization URL, group and label itself. It refuses to silently replace an
-existing identity. The resulting GitHub runner identity persists locally under
-a mode-0700 runner directory, with owner-only credential files. No cloud
-credential or broad GitHub token is needed on the volunteer's machine.
+Adoption checks the private regular files, expected runner ID/name, group ID/name,
+organization, relative `_work` directory, and GitHub OAuth endpoints before copying
+only JSON identity data. It starts no process and refuses an existing registration.
+The official runner release must match the operator's installation. This handoff
+uses the current Linux runner's credential-file layout; the
+[official configuration source](https://github.com/actions/runner/blob/v2.338.2/src/Runner.Listener/Configuration/ConfigurationManager.cs#L390)
+and [OAuth implementation](https://github.com/actions/runner/blob/v2.338.2/src/Runner.Listener/Configuration/OAuthCredential.cs#L25)
+show that runtime authentication uses the individual client ID and RSA key.
+
+After confirmed adoption, the volunteer deletes the transferred `identity/`, and
+the operator deletes their private `$handoff` directory. **Do not use
+`config.sh remove` on the operator's copy:** that would revoke the transferred
+registration. If handoff fails or is abandoned, revoke the identity through GitHub.
+The operator's own trusted AWS hosts may still use `register` directly; organization
+enrollment tokens remain on operator-controlled machines.
 
 Enable a user service:
 
@@ -154,8 +186,9 @@ fresh GitHub runner-removal token.
 
 ## One-job alternatives
 
-`register --ephemeral` makes the official runner unregister after one job. It
-then needs another operator-issued registration. `run-jit --config-file FILE`
+Operator-side `register --ephemeral` makes the official runner unregister after
+one job. Transfer its individual identity as above; enrollment tokens stay with
+the operator. It then needs a fresh operator-prepared identity. `run-jit --config-file FILE`
 starts one operator-issued GitHub JIT configuration; the file must be owner-only.
 Both modes still require `--policy-file group-policy.json`.
 Neither mode is an unattended volunteer pool by itself. Replenishing those

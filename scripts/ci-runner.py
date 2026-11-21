@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Prepare one ordinary GitHub Actions build runner; no fleet or cloud credentials."""
 import argparse
+import base64
 import getpass
 import hashlib
 import json
@@ -15,6 +16,8 @@ import sys
 import tarfile
 import tempfile
 import urllib.request
+import urllib.parse
+import uuid
 
 GROUP = "RiemannHypothesisBuild"
 LABEL = "rh-build"
@@ -29,6 +32,7 @@ ARCHIVES = {
     "arm64": "670adb2f268fe21dcbb58b3db0e0aa9d5b3bddfe2c651481336e561ff86de945",
 }
 DEFAULT_DIRECTORY = Path.home() / ".local/share/riemann-build-runner"
+IDENTITY_FILES = (".runner", ".credentials", ".credentials_rsaparams")
 
 
 def architecture():
@@ -49,7 +53,7 @@ def private_file(path):
                 or stat.S_IMODE(info.st_mode) & 0o077):
             raise ValueError("credential file must be a regular file owned by you, mode 0600")
         with os.fdopen(fd, "r", closefd=False) as stream:
-            value = stream.read(65537).strip()
+            value = stream.read(65537).removeprefix("\ufeff").strip()
         if not value or len(value) > 65536:
             raise ValueError("empty or oversized credential file")
         return value
@@ -163,6 +167,115 @@ def check_policy(path, maintenance=False):
             or not set(workflows) <= allowed
             or (not maintenance and set(workflows) != allowed)):
         raise ValueError("runner-group policy receipt must restrict this pool to the approved main workflow")
+    return policy
+
+
+def identity_json(path):
+    def unique(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("duplicate runner identity JSON field")
+            result[key] = value
+        return result
+    value = json.loads(private_file(path), object_pairs_hook=unique)
+    if not isinstance(value, dict):
+        raise ValueError("runner identity file must contain a JSON object")
+    return value
+
+
+def github_runner_url(value):
+    if not isinstance(value, str) or len(value) > 2048:
+        return False
+    url = urllib.parse.urlsplit(value)
+    return (url.scheme == "https" and url.hostname is not None
+            and (url.hostname.endswith(".actions.githubusercontent.com")
+                 or url.hostname.endswith(".actions.github.com"))
+            and not url.username and not url.password and not url.query and not url.fragment
+            and url.port in (None, 443))
+
+
+def adopt_identity(args):
+    """Install one pre-registered identity; never receive an org enrollment token."""
+    if os.getuid() == 0:
+        raise ValueError("adopt as the dedicated unprivileged runner account")
+    directory = runner_directory(args.directory)
+    if not all((directory / name).is_file() for name in ("config.sh", "run.sh", "bin/Runner.Listener")):
+        raise ValueError("install the official runner before adopting its identity")
+    if any((directory / name).exists() or (directory / name).is_symlink() for name in IDENTITY_FILES):
+        raise ValueError("runner already has identity files; adoption never replaces a registration")
+    policy = check_policy(args.policy_file)
+    if type(policy.get("id")) is not int or policy["id"] <= 0:
+        raise ValueError("fresh group policy must include its numeric GitHub group id")
+    source = runner_directory(args.identity_directory)
+    if not source.is_dir() or {entry.name for entry in source.iterdir()} != set(IDENTITY_FILES):
+        raise ValueError("identity directory must contain exactly the three official identity files")
+    for name in IDENTITY_FILES:
+        if stat.S_IMODE((source / name).lstat().st_mode) != 0o600:
+            raise ValueError("every supplied identity file must have mode 0600")
+    settings, credential, rsa = [identity_json(source / name) for name in IDENTITY_FILES]
+    permitted = {"agentId", "agentName", "poolId", "poolName", "serverUrl", "serverUrlV2", "gitHubUrl", "workFolder",
+                 "ephemeral", "disableUpdate", "isHostedServer", "useV2Flow", "useRunnerAdminFlow", "skipSessionRecover"}
+    if set(settings) - permitted:
+        raise ValueError("unsupported runner settings in identity handoff")
+    if (type(settings.get("agentId")) is not int or settings["agentId"] <= 0
+            or settings["agentId"] != args.runner_id or settings.get("agentName") != args.name
+            or not re.fullmatch(r"[A-Za-z0-9_.-]{1,64}", args.name)
+            or type(settings.get("poolId")) is not int or settings["poolId"] != policy["id"]
+            or settings.get("poolName") != GROUP or settings.get("gitHubUrl", "").rstrip("/") != ORGANIZATION
+            or settings.get("workFolder") != "_work" or not github_runner_url(settings.get("serverUrl"))):
+        raise ValueError("identity does not match the operator's runner id/name, restricted group, organization and relative _work directory")
+    if "serverUrlV2" in settings and not github_runner_url(settings["serverUrlV2"]):
+        raise ValueError("runner serverUrlV2 is not a GitHub Actions endpoint")
+    for key in permitted - {"agentId", "agentName", "poolId", "poolName", "serverUrl", "serverUrlV2", "gitHubUrl", "workFolder"}:
+        if key in settings and type(settings[key]) is not bool:
+            raise ValueError("runner setting flags must be booleans")
+    if set(credential) != {"scheme", "data"} or credential["scheme"] != "OAuth" or not isinstance(credential["data"], dict):
+        raise ValueError("identity must contain per-runner OAuth credentials")
+    data = credential["data"]
+    if (not {"clientId", "authorizationUrl"} <= data.keys()
+            or data.keys() - {"clientId", "authorizationUrl", "authorizationUrlV2", "oauthEndpointUrl", "requireFipsCryptography", "enableAuthMigrationByDefault"}):
+        raise ValueError("unsupported per-runner OAuth credential fields")
+    try:
+        client = uuid.UUID(data["clientId"])
+        if client.int == 0:
+            raise ValueError("empty OAuth client")
+    except (ValueError, TypeError, AttributeError):
+        raise ValueError("invalid per-runner OAuth client id") from None
+    for key in ("authorizationUrl", "authorizationUrlV2", "oauthEndpointUrl"):
+        if key in data and not github_runner_url(data[key]):
+            raise ValueError("runner OAuth endpoint must belong to GitHub Actions")
+    for key in ("requireFipsCryptography", "enableAuthMigrationByDefault"):
+        if key in data and (not isinstance(data[key], str) or data[key].lower() not in ("true", "false")):
+            raise ValueError("runner OAuth flags must be boolean strings")
+    if set(rsa) != {"d", "dp", "dq", "exponent", "inverseQ", "modulus", "p", "q"}:
+        raise ValueError("unsupported RSA identity fields")
+    try:
+        decoded = {key: base64.b64decode(value, validate=True) for key, value in rsa.items() if isinstance(value, str)}
+    except ValueError:
+        raise ValueError("invalid runner RSA key encoding") from None
+    if (set(decoded) != set(rsa) or len(decoded["modulus"]) not in (256, 384, 512)
+            or len(decoded["d"]) != len(decoded["modulus"]) or not 1 <= len(decoded["exponent"]) <= 8
+            or any(len(decoded[key]) != len(decoded["modulus"]) // 2 for key in ("dp", "dq", "inverseQ", "p", "q"))):
+        raise ValueError("invalid runner RSA key dimensions")
+    # Stage all data first. Link into absent destination names without replacing
+    # anything; publish .runner last so an interrupted copy is not runnable.
+    installed = []
+    with tempfile.TemporaryDirectory(prefix=".identity-adoption-", dir=directory) as temporary:
+        temporary = Path(temporary)
+        for name, value in zip(IDENTITY_FILES, (settings, credential, rsa)):
+            target = temporary / name
+            target.write_text(json.dumps(value, indent=2) + "\n")
+            target.chmod(0o600)
+        try:
+            for name in (".credentials", ".credentials_rsaparams", ".runner"):
+                os.link(temporary / name, directory / name, follow_symlinks=False)
+                installed.append(directory / name)
+        except BaseException:
+            for path in installed:
+                path.unlink()
+            raise
+    print(f"Adopted pre-registered runner {args.name} (id {args.runner_id}) in {GROUP}; no process started.")
 
 
 def register(args):
@@ -293,6 +406,13 @@ def main():
     configure.add_argument("--ephemeral", action="store_true", help="one job only; requires new enrollment afterward")
     configure.add_argument("--remove", action="store_true", help="use a fresh removal token; stop service first")
     configure.set_defaults(function=register)
+    adopt = commands.add_parser("adopt-identity", help="adopt one operator-pre-registered identity, without an organization registration token")
+    adopt.add_argument("--directory", type=Path, default=DEFAULT_DIRECTORY)
+    adopt.add_argument("--identity-directory", type=Path, required=True)
+    adopt.add_argument("--policy-file", type=Path, required=True)
+    adopt.add_argument("--name", required=True)
+    adopt.add_argument("--runner-id", type=int, required=True)
+    adopt.set_defaults(function=adopt_identity)
     service = commands.add_parser("systemd-unit", help="print a persistent user service; does not install/start it")
     service.add_argument("--directory", type=Path, default=DEFAULT_DIRECTORY)
     service.set_defaults(function=unit)
