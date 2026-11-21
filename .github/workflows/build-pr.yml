@@ -65,6 +65,8 @@ jobs:
       labels: rh-build
     timeout-minutes: 1440
     steps:
+      - name: Clear disposable outputs from earlier jobs
+        run: rm -rf -- staging identity rh-ci-build-*
       - name: Checkout trusted harness
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -151,6 +153,9 @@ jobs:
           if-no-files-found: error
           overwrite: true
           retention-days: 7
+      - name: Remove disposable build outputs
+        if: ${{ always() }}
+        run: rm -rf -- staging identity rh-ci-build-*
       - name: Report build result
         if: ${{ always() }}
         env:
