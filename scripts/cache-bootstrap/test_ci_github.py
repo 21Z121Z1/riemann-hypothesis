@@ -181,6 +181,27 @@ class Validation(unittest.TestCase):
             ci.catch_up_main(Store(), self.identity["candidate_head"])
             promote.assert_not_called()
 
+    def test_failed_header_only_map_skips_without_credentials_or_writes(self):
+        self.run["conclusion"] = "failure"
+        ci.validate_input(self.input())
+        directory = self.root / "validated"
+        expected = ci.read_json(directory / "expected.json")
+        expected["build_exit_code"] = 1
+        ci.write_json(directory / "expected.json", expected)
+        state = ci.read_json(directory / "state.json"); state["build_validated"] = True
+        ci.write_json(directory / "state.json", state)
+        cache = self.root / "cache"; cache.mkdir()
+        (cache / "outputs.jsonl").write_bytes(ci.pub.canonical(ci.pub.transport.SCHEMA) + b"\n")
+        with (patch.object(ci, "token_file", side_effect=AssertionError("Empty failures need no credential")),
+              patch.object(ci.subprocess, "run", side_effect=AssertionError("No publication process needed"))):
+            ci.publish(SimpleNamespace(validated=str(directory), cache_dir=str(cache)))
+        with self.assertRaisesRegex(ValueError, "successful build"):
+            ci.empty_failed_build(cache, {"build_exit_code": 0})
+        (cache / "outputs.jsonl").unlink()
+        (cache / "outputs.jsonl").symlink_to(directory / "expected.json")
+        with self.assertRaises(OSError):
+            ci.empty_failed_build(cache, expected)
+
 
 if __name__ == "__main__":
     unittest.main()

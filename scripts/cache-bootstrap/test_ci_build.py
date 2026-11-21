@@ -59,8 +59,8 @@ def resource_tests(ci):
         (packages / "tool").mkdir(parents=True)
         (project / "lake-manifest.json").write_text(json.dumps({"packages": [{"name": "tool"}]}))
         private = ci.private_package_builds(project, packages, directory / "private")
-        assert (packages / "tool/.lake").is_dir()
-        (private / "tool/private-only").write_text("candidate cache writes stay private")
+        assert not (packages / "tool/.lake").exists()
+        (private / "tool/.lake/private-only").write_text("candidate cache writes stay private")
         assert not (packages / "tool/.lake/private-only").exists()
     oversized = Mock()
     oversized.stat.return_value.st_size = 65 * 1024**2
@@ -156,6 +156,7 @@ def main():
         origin = temporary / "dependency-origin"
         origin.mkdir()
         (origin / "lakefile.toml").write_text('name = "external"\n[[lean_lib]]\nname = "External"\n')
+        (origin / "adjacent-input.txt").write_text("trusted dependency source-adjacent file\n")
         (origin / "lean-toolchain").write_text(ci.TOOLCHAIN + "\n")
         (origin / "External.lean").write_text("def externalValue : Nat := 3\n")
         (origin / "lake-manifest.json").write_text(json.dumps({"version": "1.2.0", "packagesDir": ".lake/packages", "packages": []}))
@@ -216,7 +217,7 @@ roots = ["Base", "Stable", "Main"]
         commit()
         host_secret = temporary / "personal-secret"
         host_secret.write_text("must not be readable by candidate")
-        python_probe = "import os,socket; assert 'CI_HOST_SECRET' not in os.environ; assert 'AWS_SECRET_ACCESS_KEY' not in os.environ; assert not os.path.exists(" + repr(str(host_secret)) + "); assert not os.path.exists('/work/project/.lake/packages/external/.git/config'); open('/work/project/.lake/packages/external/.lake/private-marker','w').write('private'); s=socket.socket(); s.settimeout(1); assert s.connect_ex(('1.1.1.1',443)) != 0\ntry:\n open('/work/project/src/Base.lean','ab').write(b'changed during build')\nexcept OSError:\n pass\nelse:\n raise AssertionError('attested source is writable')"
+        python_probe = "import os,socket; assert 'CI_HOST_SECRET' not in os.environ; assert 'AWS_SECRET_ACCESS_KEY' not in os.environ; assert not os.path.exists(" + repr(str(host_secret)) + "); assert not os.path.exists('/work/project/.lake/packages/external/.git/config'); open('/work/project/.lake/packages/external/.lake/private-marker','w').write('private'); open('/work/project/.lake/packages/external/adjacent-input.txt.hash','w').write('private source-adjacent hash'); s=socket.socket(); s.settimeout(1); assert s.connect_ex(('1.1.1.1',443)) != 0\ntry:\n open('/work/project/src/Base.lean','ab').write(b'changed during build')\nexcept OSError:\n pass\nelse:\n raise AssertionError('attested source is writable')"
         probe = 'import Lean\nrun_elab do\n  let result ← IO.Process.output {cmd := "python3", args := #[' + json.dumps("-c") + ", " + json.dumps(python_probe) + ']}\n  unless result.exitCode == 0 do throwError "sandbox probe failed: {result.stderr}"\n'
         (root / "src/Base.lean").write_text(probe + "def value : Nat := 9\n")
         commit()
@@ -246,6 +247,7 @@ roots = ["Base", "Stable", "Main"]
         assert module_hashes["Base"][0] not in mapping
         assert len(receipt["artifacts"]) == 2
         assert not (packages / "external/.lake/private-marker").exists()
+        assert not (packages / "external/adjacent-input.txt.hash").exists()
         # A later PR uses previous successful PR outputs without rebuilding them.
         for archive in (changed / "artifacts").iterdir():
             shutil.copyfile(archive, cache / "artifacts" / archive.name)
