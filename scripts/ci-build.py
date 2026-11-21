@@ -79,6 +79,16 @@ def normalized_exit_code(code):
     return 128 - code if code < 0 else code
 
 
+def choose_work_directory(output, override=None):
+    # /tmp may be a small RAM-backed filesystem. Proof caches belong on the
+    # persistent CI workspace beside staging unless the operator overrides it.
+    directory = (override if override is not None else output.parent).expanduser()
+    directory.mkdir(parents=True, exist_ok=True)
+    if not directory.is_dir():
+        raise ValueError("CI work directory must be a directory")
+    return directory.resolve()
+
+
 def supervised_build(command, environment, log, filesystems, reserve_gib):
     reserve = reserve_gib * 1024**3
     if any(shutil.disk_usage(path).free < reserve for path in filesystems):
@@ -415,7 +425,8 @@ def main():
     parser.add_argument("--packages", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--toolchain", type=Path)
-    parser.add_argument("--work-dir", type=Path)
+    parser.add_argument("--work-dir", type=Path,
+                        help="persistent scratch parent (default: staging output's parent, not /tmp)")
     parser.add_argument("--jobs", type=int, default=24)
     parser.add_argument("--memory-gib", type=int,
                         help="fail-closed systemd user scope memory limit for the candidate build")
@@ -454,7 +465,7 @@ def main():
         soft, hard = resource.getrlimit(kind)
         desired = hard if preferred is None else (preferred if hard == resource.RLIM_INFINITY else min(preferred, hard))
         resource.setrlimit(kind, (desired, hard))
-    with tempfile.TemporaryDirectory(prefix="rh-ci-build-", dir=args.work_dir) as temporary:
+    with tempfile.TemporaryDirectory(prefix="rh-ci-build-", dir=choose_work_directory(output, args.work_dir)) as temporary:
         work = Path(temporary)
         project, cache, result, control = work / "project", work / "cache", work / "result", work / "control"
         for directory in (project, cache / "artifacts", result, control):

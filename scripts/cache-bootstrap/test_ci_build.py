@@ -28,6 +28,19 @@ def resource_tests(ci):
     assert ci.normalized_exit_code(-9) == 137
     assert ci.normalized_exit_code(-15) == 143
     assert ci.normalized_exit_code(1) == 1
+    with tempfile.TemporaryDirectory(prefix="rh-ci-work-location-") as temporary:
+        root = Path(temporary)
+        workspace, small_tmp = root / "workspace", root / "small-tmp"
+        workspace.mkdir()
+        small_tmp.mkdir()
+        with patch.dict(os.environ, {"TMPDIR": str(small_tmp)}):
+            selected = ci.choose_work_directory(workspace / "staging")
+            assert selected == workspace.resolve()
+            with tempfile.TemporaryDirectory(prefix="rh-ci-build-", dir=selected) as scratch:
+                assert Path(scratch).parent == workspace.resolve()
+            override = workspace / "explicit-new-scratch"
+            assert ci.choose_work_directory(workspace / "staging", override) == override.resolve()
+            assert override.is_dir()
     with tempfile.TemporaryDirectory(prefix="rh-ci-root-link-") as directory:
         directory = Path(directory)
         (directory / "outside/lib").mkdir(parents=True)
