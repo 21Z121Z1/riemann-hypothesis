@@ -182,7 +182,7 @@ theorem corr_lower (hDR : GlobalTheory.Published.AbelianDeRham) {E : Type} [Fiel
   simp only [LinearMap.smul_apply, smul_eq_mul, map_mul] at h3
   have h4 : eH.symm.conjRingEquiv M x₀ = eH.symm (M (eH x₀)) := rfl
   rw [h4]
-  simp only [LinearMap.smul_apply, LinearMap.smulRight_apply, LinearMap.flip_apply, smul_eq_mul]
+  simp only [LinearMap.smul_apply, LinearMap.smulRight_apply, smul_eq_mul]
   have h5 : ψ.flip yv x = algebraMap R ℂ (ψR x₀ (eH.symm f)) := hψ _ _ _ _ hx hyv
   rw [hyv z, h5, div_mul_eq_mul_div, div_eq_iff h0, hγ]
   have h6 : algebraMap R ℂ D = (D : ℂ) := rfl

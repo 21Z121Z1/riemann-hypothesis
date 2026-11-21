@@ -36,6 +36,6 @@ theorem exists_natCast_smul_mem_harmA :
   refine ⟨N, hN, ⟨smul_mem_HHa _ hP, fun m => h m⟩, ?_⟩
   have hN' : (N : c.F) ≠ 0 := Nat.cast_ne_zero.2 hN.ne'
   ext m
-  simp [MvPolynomial.mem_support_iff, MvPolynomial.coeff_smul, hN']
+  simp [MvPolynomial.mem_support_iff, hN']
 
 end GlobalTheory

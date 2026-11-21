@@ -57,7 +57,7 @@ theorem lFam_comb {t : ℝ → ℝ} {ι : Type} [Fintype ι] {L : ℝ → ι →
       (Ψ := fun v : ι → ℝ => ∑ i, (n i : ℝ) * v i)
       (ContDiff.sum fun i _ => contDiff_const.mul (contDiff_apply ℝ ℝ i))
     refine H.congr (.of_forall fun x => ?_) (.of_forall fun z => by simp)
-    simp [G, g, AddSubgroup.val_finset_sum, Finset.sum_apply]
+    simp [G, g, Finset.sum_apply]
 
 end Cls
 

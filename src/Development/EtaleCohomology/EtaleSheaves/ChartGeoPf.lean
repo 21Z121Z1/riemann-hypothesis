@@ -66,7 +66,7 @@ theorem quotLoc_pf : QuotLoc := by
     rw [IsScalarTower.algebraMap_apply A B]
     show _ = e (Ideal.Quotient.mk _ (algebraMap B (Localization.Away g) (algebraMap A B a)))
     simp only [e, RingEquiv.trans_apply, Ideal.quotEquivOfEq_mk, RingHom.quotientKerEquivOfSurjective_apply_mk]
-    simp [φ, Localization.awayMap, IsLocalization.Away.map, IsLocalization.map_eq]
+    simp [φ, IsLocalization.Away.map, IsLocalization.map_eq]
   rw [← RingHom.isStandardSmoothOfRelativeDimension_algebraMap, ← he]
   exact (RingHom.isStandardSmoothOfRelativeDimension_respectsIso (n := n)).1 _ e.symm (H _ hts)
 

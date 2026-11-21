@@ -84,7 +84,7 @@ theorem key {O : Type} [CommRing O] [IsLocalRing O] {α β : O} (hab : ¬ IsUnit
         done
       · have e := congrFun (congrFun hUDL i) j
         rw [udl_apply] at e
-        simp only [Matrix.of_apply, Fin.lastCases_castSucc, Fin.lastCases_last, mul_zero, add_zero, mul_one]
+        simp only [Matrix.of_apply, Fin.lastCases_castSucc, Fin.lastCases_last]
         rw [← e]
         simp only [G]
         linear_combination (-(r i * ↑a⁻¹ * c j)) * hinv

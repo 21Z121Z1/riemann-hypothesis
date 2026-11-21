@@ -88,7 +88,7 @@ theorem GlobalTheory.MixedModel.mixed_model : GlobalTheory.FunPr.Hypotheses₂ �
   · intro y Φ hΦ v
     obtain ⟨q, hq⟩ := hx y
     rw [key _ Φ hΦ, hq]
-    simp only [schr, GlobalTheory.ThK.Adapt.glue_dot, dotProduct_zero, zero_dotProduct, add_zero, zero_add, mul_zero,
+    simp only [schr, GlobalTheory.ThK.Adapt.glue_dot, dotProduct_zero, zero_dotProduct, add_zero, mul_zero,
       AddChar.map_zero_eq_one, one_mul]
   · obtain ⟨Ψ, hΨ, hΨ0⟩ := GlobalTheory.SchANonzero.exists_mem_schA_ne_zero F ((Fin n × Fin d) ⊕ (Fin n × Fin d))
     obtain ⟨Φ, hΦ, hSΦ⟩ := hSo Ψ hΨ
@@ -99,7 +99,7 @@ theorem GlobalTheory.MixedModel.mixed_model : GlobalTheory.FunPr.Hypotheses₂ �
     exact h0
   · intro y Φ hΦ v
     rw [GlobalTheory.SiegelAvg.starFam_apply, key _ Φ hΦ, hy y]
-    simp only [schr, GlobalTheory.ThK.Adapt.glue_dot, GlobalTheory.ThK.Adapt.glue_add, dotProduct_zero, zero_dotProduct, add_zero, zero_add,
+    simp only [schr, GlobalTheory.ThK.Adapt.glue_add, dotProduct_zero, add_zero, zero_add,
       mul_zero, AddChar.map_zero_eq_one, one_mul]
 
 end

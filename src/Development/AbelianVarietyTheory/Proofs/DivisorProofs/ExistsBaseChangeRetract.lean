@@ -46,7 +46,7 @@ theorem mem_originIdeal_iff {R : Type} [CommRing R] [IsLocalRing R] (f : Polynom
         intro x hx
         rw [Set.mem_singleton_iff] at hx
         subst hx
-        simp [Ideal.mem_comap]
+        simp
     simpa [Ideal.mem_comap] using hle hf
   · intro hf
     have h1 : C (f.coeff 0) ∈ GlobalTheory.KeyOriginCut.originIdeal R :=

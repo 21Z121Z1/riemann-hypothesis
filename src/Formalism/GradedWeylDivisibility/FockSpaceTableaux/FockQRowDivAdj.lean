@@ -39,8 +39,8 @@ lemma lfockq_eval_rowGen {r n : ℕ} (a b : Fin r) (t : ℂ) (f : MvPolynomial (
       simp [add_mul, Finset.sum_add_distrib, apply_ite (C : ℂ → MvPolynomial (Fin r × Fin n) ℂ),
         ite_mul, Finset.sum_ite_eq, Finset.sum_ite_eq']
       exact mul_comm _ _
-    · simp [hv, add_mul, Finset.sum_add_distrib, apply_ite (C : ℂ → MvPolynomial (Fin r × Fin n) ℂ),
-        ite_mul, Finset.sum_ite_eq, Finset.sum_ite_eq']
+    · simp [hv, apply_ite (C : ℂ → MvPolynomial (Fin r × Fin n) ℂ),
+        ite_mul, Finset.sum_ite_eq]
 
 lemma lfockq_eval_C {σ : Type*} (P : Polynomial (MvPolynomial σ ℂ)) (N : ℕ) (hN : P.natDegree < N)
     (t : ℂ) : Polynomial.eval (C t) P = ∑ i ∈ Finset.range N, C (t ^ i) * P.coeff i := by

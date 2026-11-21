@@ -31,7 +31,7 @@ theorem cpt_single (σ : K →+* ℂ) {n : ℕ} (i : Fin n) : cpt σ (Pi.single 
   funext j
   by_cases h : j = i
   · subst h; simp [cpt]
-  · simp [cpt, Pi.single_apply, h]
+  · simp [cpt, h]
 
 theorem jEEx_injective (h2 : X.H2 cr b) (σ : K →+* ℂ) : Function.Injective (jEEx X cr b σ) := by
   intro x y hxy

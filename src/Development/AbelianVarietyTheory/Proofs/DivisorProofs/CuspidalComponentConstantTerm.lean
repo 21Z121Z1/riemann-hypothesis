@@ -108,7 +108,7 @@ theorem isAutOn_transl (hK : K ≤ infPts σ J) {φ : GAd σ J → ℂ} (h : Glo
     rintro _ ⟨⟨k, hk⟩, rfl⟩
     refine ⟨fun g => φ (g * k), Submodule.subset_span ⟨⟨k, hk⟩, rfl⟩, ?_⟩
     funext g
-    simp only [LinearMap.funLeft_apply, Function.comp]
+    simp only [LinearMap.funLeft_apply]
     rw [mul_assoc, mul_assoc, (commute_infPts (hK hk) x).eq]
   · have := h.zfin
     refine Submodule.finiteDimensional_of_le

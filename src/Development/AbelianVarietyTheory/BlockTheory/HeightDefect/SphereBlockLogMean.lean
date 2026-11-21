@@ -220,8 +220,8 @@ example (B n : ℕ) (b₀ : Fin B) (j₀ : Fin n) :
     by_contra h; exact hd (if_neg h)
   subst this
   by_cases hb : b = b₀
-  · subst hb; simp [Finsupp.single_apply, eq_comm]
-  · simp [Finsupp.single_apply, hb, Ne.symm hb]
+  · subst hb; simp [Finsupp.single_apply]
+  · simp [hb]
 
 example (K : Type) [Field K] [NumberField K] (B N : ℕ) :
     heightZero (1 : MvPolynomial (Fin B × Fin (N + 1)) K) = 0 := by

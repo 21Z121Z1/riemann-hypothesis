@@ -231,7 +231,7 @@ theorem exists_isArFun_vdmPol (hC : ArCalc) {k : Type} [CommRing k] {Y : Scheme.
     aeval_vdmPol]
   rintro (_ | i)
   · exact ⟨Pi.single none 1, by simp [lin, Pi.single_apply, apply_ite], by simp [Pi.single_apply, h₀]⟩
-  · exact ⟨Pi.single (some i.rev) (-1), by simp [lin, Pi.single_apply, apply_ite, ite_smul],
+  · exact ⟨Pi.single (some i.rev) (-1), by simp [lin, Pi.single_apply, apply_ite],
       by simp [Pi.single_apply, h₁]⟩
 
 theorem eq_genericPoint {k : Type} [CommRing k] {X : Scheme.{0}} [IsIntegral X] {p : X ⟶ Sp k} {d : ℕ}

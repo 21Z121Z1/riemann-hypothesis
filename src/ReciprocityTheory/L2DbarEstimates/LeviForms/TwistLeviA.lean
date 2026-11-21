@@ -73,7 +73,7 @@ theorem tl_hasDerivAt_k (c t : ℝ) (hs : 9 / 10 ≤ c - t) :
   have h2 := (hu.add hl).log he.ne'
   refine h2.neg.congr_deriv ?_
   unfold tlKp
-  simp only [Pi.add_apply, Pi.div_apply]
+  simp only [Pi.add_apply]
   field_simp
   ring
 

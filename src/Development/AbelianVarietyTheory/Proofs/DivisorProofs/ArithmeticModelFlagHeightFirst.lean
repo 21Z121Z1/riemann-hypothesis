@@ -27,7 +27,7 @@ theorem sp_epsMul_mul {K : Type} [CommRing K] (a b : K) :
     spMap (epsMul a) ≫ spMap (epsMul b) = spMap (epsMul (a * b)) := by
   rw [sp_comp]
   congr 1
-  ext r <;> simp [epsMul, mul_comm]
+  ext r <;> simp [epsMul]
 
 theorem isEigTan_smul {K : Type} [CommRing K] {φ : c.F →+* K} {x : Sp K ⟶ Z.X} {τ : E →+* ℂ}
     {w : Sp (DualNumber K) ⟶ Z.t.G.left} (hw : IsEigTan Z φ x τ w) (a : K) :

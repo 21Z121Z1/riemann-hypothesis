@@ -47,7 +47,7 @@ theorem nat_mul_polForm_eq_of_smul_eq (H : GlobalTheory.Published.AbelianDeRham)
   intro x y
   have v := LinearMap.congr_fun (LinearMap.congr_fun u x) y
   rw [u₁, u₂]
-  simp only [LinearMap.sub_apply, LinearMap.flip_apply, kn, kt, act_natCast, map_smul, LinearMap.smul_apply,
+  simp only [LinearMap.sub_apply, LinearMap.flip_apply, kn, kt, act_natCast, map_smul,
     smul_eq_mul] at v ⊢
   have a₁ := corrForm_antisymm H.1 X _ hφt y x
   have a₂ := corrForm_antisymm H.1 X c₀ hφ₀ (act (dp0 R) (𝟙 _) X.rm t y) x

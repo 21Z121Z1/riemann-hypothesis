@@ -68,7 +68,7 @@ theorem secIn_of_fil (C : Formalism.MainNotions.UnusedSlot80.LevC.Ctx W) (A : Ar
     have h2 : dvO W T (e + 1) b (Pi.single m 1) = dv W T (e + 1) b (Pi.single m 1) := by
       unfold dvO; congr 1; funext k; by_cases hk : k = m
       · subst hk; simp
-      · simp [Pi.single_apply, hk]
+      · simp [hk]
     rwa [h2] at h1
   obtain ⟨I, P, Q, h, hPQ, hPG, hlev, hvan⟩ :=
     Formalism.MainNotions.UnusedSlot80.CrA.adapted Gf hGa (-(H : ℤ)) (H : ℤ) (by omega) hGtop
@@ -181,7 +181,7 @@ theorem secIn_of_fil (C : Formalism.MainNotions.UnusedSlot80.LevC.Ctx W) (A : Ar
       rw [h3, ← h1]
       by_cases hmm : m = m'
       · subst hmm; simp
-      · simp [hmm, Pi.single_apply, Ne.symm hmm]
+      · simp [hmm]
     show lE W (κ1 + κ2) * f m = ∑ i, g i * algebraMap O W.EE (c₀ i m)
     simp only [g, c₀, Finset.sum_mul]
     rw [Finset.sum_comm]

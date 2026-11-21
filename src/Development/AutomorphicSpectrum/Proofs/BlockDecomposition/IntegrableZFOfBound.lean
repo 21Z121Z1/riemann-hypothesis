@@ -22,7 +22,7 @@ theorem summable_cut {p r C B : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hr0 : 0 < r) (
       ((summable_geometric_of_lt_one hr0.le hr1).mul_left |C|)
     simp only [hf]
     split_ifs
-    · simp [abs_mul, abs_of_pos hr0]
+    · simp [abs_of_pos hr0]
     · simp only [Complex.ofReal_zero, norm_zero]
       positivity
   have hneg : Summable fun n : ℕ => f (-(n : ℤ)) := by

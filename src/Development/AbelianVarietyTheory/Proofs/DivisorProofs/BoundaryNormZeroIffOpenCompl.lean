@@ -15,7 +15,7 @@ theorem sec_self_eq_zero_iff {e : ℕ} {X : Type} [TopologicalSpace X] (A : FinH
   · simp only [hu y hy, false_or]
     cases σ i <;> simp
   · intro k _ hk
-    cases σ k <;> simp [Pi.single_apply, hk]
+    cases σ k <;> simp [hk]
   · intro hi; exact absurd (Finset.mem_univ i) hi
 
 theorem main {e : ℕ} {X : Type} [TopologicalSpace X] (A : FinHolAtlas e X) {m : ℕ}

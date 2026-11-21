@@ -30,7 +30,7 @@ theorem abs_eval_iterate_pderiv_monomial_le {N k n : ℕ} (m : Fin N →₀ ℕ)
   rw [iterate_pderiv_monomial_descFactorial]
   by_cases h : m i < n
   · rw [Nat.descFactorial_eq_zero_iff_lt.2 h]
-    simp only [Nat.cast_zero, mul_zero, map_zero, abs_zero, monomial_zero]
+    simp only [Nat.cast_zero, mul_zero, map_zero, abs_zero]
     positivity
   · push_neg at h
     have hik : m i ≤ k := hm ▸ Finset.single_le_sum (f := fun a => m a)

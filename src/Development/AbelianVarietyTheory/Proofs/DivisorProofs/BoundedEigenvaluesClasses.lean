@@ -298,7 +298,7 @@ theorem isRoot_inv (G : HTGroup p) (i : Fin G.m) (β y : G.Cˣ) (c : ℚˣ)
       _ = rhoE G i ((y⁻¹ : G.Cˣ) : G.C) *ᵥ ((rhoE G i (y : G.C) * rhoE G i (β : G.C) *
             rhoE G i (sh G y)) *ᵥ v) := by
           rw [hM]
-          simp only [hw, Matrix.mulVec_mulVec, mul_assoc]
+          simp only [hw, Matrix.mulVec_mulVec]
       _ = (rhoE G i ((y⁻¹ : G.Cˣ) : G.C) * rhoE G i (y : G.C)) *ᵥ
             (rhoE G i (β : G.C) *ᵥ (rhoE G i (sh G y) *ᵥ v)) := by
           simp only [Matrix.mulVec_mulVec, mul_assoc]

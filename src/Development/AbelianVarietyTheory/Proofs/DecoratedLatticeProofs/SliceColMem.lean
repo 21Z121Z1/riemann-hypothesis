@@ -190,7 +190,7 @@ theorem gval : ∀ (D : D7), FlatBF D → FlatFB D → ContrLoc D → GlobalTheo
       simp only [Ψ₂, Pi.smul_apply, smul_eq_mul]
       rw [hΦ₂, hpr]
       have hC'0 : (C' : ℂ) ≠ 0 := by exact_mod_cast hC'.ne'
-      simp only [toRows₁_fromRows, fromRows_apply_inr, Matrix.zero_apply]
+      simp only [toRows₁_fromRows]
       have hz : a.fromRows (0 : Matrix Unit (XIx (Fin κ) t (j + 1)) k) (Sum.inr ()) ∈ box (XIx (Fin κ) t (j + 1)) (S.ϖ ^ (σ + 1)) := (box _ _).zero_mem
       simp only [hz, if_true, mul_one]
       rw [← mul_assoc, inv_mul_cancel₀ hC'0, one_mul]

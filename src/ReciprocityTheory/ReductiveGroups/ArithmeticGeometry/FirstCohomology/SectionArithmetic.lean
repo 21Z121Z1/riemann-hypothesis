@@ -54,7 +54,7 @@ theorem sval_pullSec {Y' : Scheme.{0}} {φ : K → (Y ⟶ X)} {ε : K → ℤ} (
   have hm2 := hJ.mem φ (r ≫ h)
   simp only [Category.assoc] at hm2
   unfold sval
-  simp only [Category.assoc]
+  simp only
   exact (gs_res r z _ hm1 _).trans (gs_pull r h z _ hm2 _)
 
 def mulSec {φ : K → (Y ⟶ X)} {ε : K → ℤ} {φ' : K' → (Y ⟶ X)} {ε' : K' → ℤ}

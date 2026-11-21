@@ -53,7 +53,7 @@ theorem arch_iwasawa_line : ∀ (F E : Type) [Field F] [NumberField F] [Field E]
     intro h w
     have h2 : (mat h)ᵀ * incM F W.J * (mat h).map (cA σ) = incM F W.J := h.2
     have := congrArg (fun A => A.map (piInf (B.emb w))) h2
-    simp only [Matrix.map_mul, ← Matrix.transpose_map, hmapJ, hmapc] at this
+    simp only [Matrix.map_mul, hmapJ, hmapc] at this
     exact this
   have hinv : ∀ (h : UA σ W.J) w, (mat h).map (piInf (B.emb w)) * (mat h⁻¹).map (piInf (B.emb w)) = 1 := by
     intro h w

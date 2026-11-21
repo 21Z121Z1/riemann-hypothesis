@@ -34,7 +34,7 @@ theorem gramE_levi {J₁ g g' : Matrix M M K} (h : gᵀ * J₁ * g' = J₁) (η 
       fromBlocks (of fun _ _ => ((y⁻¹ : Kˣ) : K)) 0 0 (fromBlocks g' 0 0 (of fun _ _ => ((x⁻¹ : Kˣ) : K))) = gramE J₁ η := by
   have e : ∀ i j, ∑ k, (∑ l, g l i * J₁ l k) * g' k j = J₁ i j := fun i j => by
     simpa [Matrix.mul_apply] using congrFun (congrFun h i) j
-  ext (i | i | i) (j | j | j) <;> simp [gramE, Matrix.mul_apply, Fintype.sum_sum_type, e, Matrix.one_apply,
+  ext (i | i | i) (j | j | j) <;> simp [gramE, Matrix.mul_apply, Fintype.sum_sum_type, e,
     Fin.fin_one_eq_zero, mul_comm (y : K), mul_assoc]
 
 theorem gramE_unip {J₁ J₁' : Matrix M M K} (h : J₁ * J₁' = 1) {η η' : K} (hη : η' * η = 1)
@@ -56,7 +56,7 @@ theorem gramE_unip {J₁ J₁' : Matrix M M K} (h : J₁ * J₁' = 1) {η η' : 
     symm
     rw [Finset.sum_comm]
     exact Finset.sum_congr rfl fun x _ => Finset.sum_comm
-  ext (i | i | i) (j | j | j) <;> simp [gramE, Matrix.mul_apply, Fintype.sum_sum_type, Matrix.one_apply, Fin.fin_one_eq_zero, fromCols, fromBlocks, Finset.sum_add_distrib, Finset.mul_sum, Finset.sum_mul, hη', k1, k2]
+  ext (i | i | i) (j | j | j) <;> simp [gramE, Matrix.mul_apply, Fintype.sum_sum_type, Matrix.one_apply, Fin.fin_one_eq_zero, fromCols, fromBlocks, Finset.mul_sum, Finset.sum_mul, hη', k1, k2]
   all_goals done
 
 end Algebra
@@ -235,7 +235,7 @@ theorem exists_lift_frame (hcm : IsCMExt F E σ) (τ : E →ₐ[F] Fv F v) {n n�
     have := congrArg (fun Z => Z.map (τ : E →+* Fv F v)) hG
     simp only [Matrix.map_mul, Matrix.transpose_map] at this
     refine this.trans ?_
-    ext (i | i | i) (j | j | j) <;> simp [gramE, Matrix.one_apply, Fin.fin_one_eq_zero]
+    ext (i | i | i) (j | j | j) <;> simp [gramE, Fin.fin_one_eq_zero]
   have hη' : algebraMap F (Fv F v) εW * τ η = 1 := by
     have := congrArg τ hη
     rwa [map_mul, AlgHom.commutes, map_one] at this

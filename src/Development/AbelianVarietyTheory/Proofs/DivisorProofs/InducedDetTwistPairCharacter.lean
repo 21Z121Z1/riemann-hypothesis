@@ -48,7 +48,7 @@ theorem deltaHalf_two_blocks (b : Fin 2 → ℕ) (g : Levi k (fun j : Fin 2 => F
 
 theorem pairChar_two_blocks (b : Fin 2 → ℕ) (μ : Fin 2 → kˣ →* ℂˣ) (g : Levi k (fun j : Fin 2 => Fin (b j))) :
     pairChar k b μ g = μ 0 (gdet (g 0)) * μ 1 (gdet (g 1)) := by
-  simp [pairChar, MonoidHom.finsetProd_apply, Fin.prod_univ_two]
+  simp [pairChar, Fin.prod_univ_two]
 
 theorem exists_detTw_pair (b : Fin 2 → ℕ) (d : ℕ) (h : b 0 + b 1 = d) (ν : kˣ →* ℂˣ) (χ : Fin 2 → kˣ →* ℂˣ)
     (h0 : χ 0 = 1) (h1 : χ 1 = ν⁻¹) (f : GL (Fin d) k → ℂ) (hf : f ∈ indSp k (b 1) d ν) :

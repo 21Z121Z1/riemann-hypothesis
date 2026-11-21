@@ -14,7 +14,7 @@ theorem seg_apply {e : ℕ} (k : Fin e) (t : ℝ) (z : Fin e → ℂ) (i : Fin e
     seg k t z i = if i = k then (t : ℂ) * z k else z i := by
   by_cases hi : i = k
   · subst hi; simp [seg]; ring
-  · simp [seg, hi, Pi.single_apply]
+  · simp [seg, hi]
 
 theorem seg_mem_ball {e : ℕ} {k : Fin e} {z0 z : Fin e → ℂ} {r : ℝ} (hr : 0 < r) (hz0 : z0 k = 0)
     {t : ℝ} (ht : t ∈ Icc (0 : ℝ) 1) (hz : z ∈ ball z0 r) : seg k t z ∈ ball z0 r := by

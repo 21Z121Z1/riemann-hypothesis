@@ -58,7 +58,7 @@ private theorem sum_pow_mul_inv_prod_sub_eq_ite {m : ℕ} (x : Fin m → ℝ) (h
       Polynomial.monic_prod_of_monic _ _ fun j _ => Polynomial.monic_X_sub_C _
     have hnd : (∏ j ∈ univ.erase s, (Polynomial.X - Polynomial.C (x j))).natDegree = m - 1 := by
       rw [Polynomial.natDegree_prod_of_monic _ _ fun j _ => Polynomial.monic_X_sub_C _]
-      simp [Polynomial.natDegree_X_sub_C, card_erase_of_mem]
+      simp [card_erase_of_mem]
     rw [← hnd, hmon.coeff_natDegree, mul_one, prod_inv_distrib]
   simp only [Polynomial.coeff_C_mul, hb, Polynomial.eval_pow, Polynomial.eval_X,
     Polynomial.coeff_X_pow] at hc

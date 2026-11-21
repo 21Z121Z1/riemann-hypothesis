@@ -50,7 +50,7 @@ theorem sum_hs_eq_zero (m' : ℕ) : ∑ i ∈ Finset.range (m' + 2), C ((-1 : �
       X 1 ^ (m' + 1) * ((-X 1) ^ i * (X 0 + X 1) ^ (m' + 1 - i) * (((m' + 1).choose i : ℕ) : MvPolynomial (Fin 2) ℝ)) := by
     intro i _
     have hr := hs_roots (m' + i)
-    simp only [map_mul, map_pow, aeval_C, aeval_X, algebraMap_eq, map_neg, map_one, map_natCast, neg_pow (X 0 : MvPolynomial (Fin 2) ℝ),
+    simp only [map_mul, map_pow, aeval_X, map_neg, map_one, map_natCast, neg_pow (X 0 : MvPolynomial (Fin 2) ℝ),
       neg_pow (X 1 : MvPolynomial (Fin 2) ℝ), Matrix.cons_val_zero]
     linear_combination ((-1 : MvPolynomial (Fin 2) ℝ) ^ i * (((m' + 1).choose i : ℕ) : MvPolynomial (Fin 2) ℝ) * (X 0 + X 1) ^ (m' + 1 - i)) * hr
   rw [Finset.sum_congr rfl e, Finset.sum_sub_distrib, ← Finset.mul_sum, ← Finset.mul_sum, h0, h1]

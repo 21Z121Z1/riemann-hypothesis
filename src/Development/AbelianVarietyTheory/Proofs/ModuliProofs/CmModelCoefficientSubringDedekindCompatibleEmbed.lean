@@ -78,7 +78,7 @@ theorem natCast_mul_mem_of_isIntegral (K : IntermediateField ℚ ℂ) [FiniteDim
   convert h2 using 1
   obtain ⟨m, rfl⟩ : ∃ m, n = m + 1 := ⟨n - 1, by omega⟩
   have hxc : (x : ℂ) = ζ := rfl
-  simp [derivative_X_pow, hxc]
+  simp [hxc]
   linear_combination (-(m + 1 : ℂ) * z) * hζ
 
 open IntermediateField in

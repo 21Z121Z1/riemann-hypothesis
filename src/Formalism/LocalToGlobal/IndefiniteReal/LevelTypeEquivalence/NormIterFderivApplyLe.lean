@@ -38,7 +38,7 @@ theorem snoc_eq_cons_rot {n : ℕ} (w : V) (vs : Fin n → V) :
     (Fin.snoc vs w : Fin (n + 1) → V) = (Fin.cons w vs : Fin (n + 1) → V) ∘ finRotate (n + 1) := by
   funext i
   refine Fin.lastCases ?_ (fun j => ?_) i
-  · simp [finRotate_last]
+  · simp
   · simp only [Fin.snoc_castSucc, Function.comp_apply]
     rw [finRotate_succ_apply, Fin.coeSucc_eq_succ, Fin.cons_succ]
 

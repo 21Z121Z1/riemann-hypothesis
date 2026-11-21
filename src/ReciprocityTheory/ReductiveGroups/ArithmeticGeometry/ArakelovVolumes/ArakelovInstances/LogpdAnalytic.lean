@@ -78,8 +78,8 @@ theorem pd_eval (v : Fin 1 → ℂ) : pd hm Y v = (lin (-(Ym hm Y))).det.eval (v
   ext i j
   by_cases h : i = j
   · subst h
-    simp [Matrix.one_apply, sub_eq_add_neg] <;> ring
-  · simp [Matrix.one_apply, h, sub_eq_add_neg] <;> ring
+    simp [sub_eq_add_neg] <;> ring
+  · simp [h, sub_eq_add_neg] <;> ring
 
 theorem pd_analytic : AnalyticAt ℂ (pd hm Y) 0 := by
   have e : pd hm Y = (fun z => (lin (-(Ym hm Y))).det.eval z) ∘ (fun v : Fin 1 → ℂ => v 0) :=

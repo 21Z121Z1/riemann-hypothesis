@@ -176,11 +176,11 @@ theorem eventually_smul_mem_latAtV {n d : ℕ} (X : Spc F E n) (W : Spc F E d) [
     · have h1 : ((m j' : ℤ) : E) ≠ 0 := Int.cast_ne_zero.2 (hm j')
       have h2 : ((m' j' : ℤ) : E) ≠ 0 := Int.cast_ne_zero.2 (hm' j')
       rw [Matrix.smul_apply, Matrix.vecMulVec_apply, Pi.smul_apply, Pi.smul_apply, Pi.single_eq_same]
-      simp only [Algebra.smul_def, map_inv₀, map_intCast, zsmul_eq_mul, Int.cast_mul, map_mul, mul_one]
+      simp only [Algebra.smul_def, map_inv₀, map_intCast, Int.cast_mul, map_mul, mul_one]
       field_simp
       simp [algebraMap_int_eq]
     · intro j _ hj
-      simp [Matrix.vecMulVec_apply, Pi.single_apply, Ne.symm hj]
+      simp [Matrix.vecMulVec_apply, Ne.symm hj]
     · simp
   filter_upwards [eventually_all.2 fun j => GlobalTheory.VacIndic.eventually_int (((m j * m' j : ℤ) : F)⁻¹)] with v hv a ha hai
   rw [hu, incM_sum, Finset.smul_sum]

@@ -140,7 +140,7 @@ theorem smulS_mul {m : ℤ} {f : ℤ → V} (hf : LB m f) (g h : PowerSeries LL)
           Finset.Nat.sum_antidiagonal_eq_sum_range_succ_mk]
         refine Finset.sum_congr rfl fun i hi => ?_
         have hin : i ≤ n := by
-          simp only [Finset.mem_range, Nat.succ_eq_add_one] at hi
+          simp only [Finset.mem_range] at hi
           omega
         have e : k - (n : ℤ) = k - i - ((n - i : ℕ) : ℤ) := by omega
         rw [e]

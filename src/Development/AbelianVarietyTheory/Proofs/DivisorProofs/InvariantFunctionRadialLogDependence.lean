@@ -46,7 +46,7 @@ theorem coeff_mem_of_isNilpotent (G : Type) [CommGroup G] [TopologicalSpace G] (
     funext s
     have h1 : ρ s = ((lam s : ℂˣ) : ℂ) • u s := by rw [hu, smul_smul, Units.mul_inv, one_smul]
     rw [h1, hM s]
-    simp [Matrix.sum_apply, Finset.mul_sum, Finset.sum_apply, mul_comm, mul_left_comm]
+    simp [Matrix.sum_apply, Finset.mul_sum, Finset.sum_apply, mul_comm]
     try exact Finset.sum_congr rfl fun _ _ => by ring
   rw [hρ]
   exact Submodule.sum_mem _ fun k _ => Submodule.smul_mem _ _ (Submodule.subset_span ⟨(lam, k), rfl⟩)

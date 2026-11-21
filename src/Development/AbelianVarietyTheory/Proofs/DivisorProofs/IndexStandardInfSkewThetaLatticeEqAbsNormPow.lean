@@ -75,7 +75,7 @@ theorem mem_YYl_skew_iff (𝔪 : Ideal (𝓞 D.host.E)) (a d : ℕ) (x : Matrix 
             intro k
             by_cases hk : k = j
             · subst hk; simp [Submodule.one_eq_range]
-            · simp [Pi.single_apply, hk]
+            · simp [hk]
           have h := (mem_skewLat_iff D 𝔪 d _).1 (hA _ hj) i
           simpa [Matrix.mulVec_single] using h
         | zero => intro i j; simp
@@ -108,7 +108,7 @@ theorem mem_YYl_skew_iff (𝔪 : Ideal (𝓞 D.host.E)) (a d : ℕ) (x : Matrix 
           rw [← ho, mul_comm, ← Algebra.smul_def]
           exact Submodule.smul_mem _ o hn
         · have hk' : i ≠ k := Ne.symm hk
-          simp [Matrix.mulVec, dotProduct, Matrix.single_apply, hk']
+          simp [Matrix.mulVec, dotProduct, hk']
       · rw [Matrix.smul_single, smul_eq_mul]
     · intro x y hx hy
       simpa [Matrix.single_add] using add_mem hx hy

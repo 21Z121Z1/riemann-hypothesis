@@ -46,7 +46,7 @@ theorem exists_basis_push_eq_sum : GlobalTheory.Published.AbelianDeRham → ∀ 
   have hsum : ∀ v : Fin n → R, (GlobalTheory.Published.AbelianDeRham.bcMor h).Corr (∑ k, v k • b k)
       (∑ k, ((v k : R) : ℂ) • B k) := by
     intro v x
-    simp only [LinearMap.sum_apply, LinearMap.smul_apply, hB _, map_sum, smul_eq_mul, map_mul]
+    simp only [LinearMap.sum_apply, LinearMap.smul_apply, map_sum, smul_eq_mul, map_mul]
     refine Finset.sum_congr rfl fun k _ ↦ ?_
     rw [hB k x]
     rfl

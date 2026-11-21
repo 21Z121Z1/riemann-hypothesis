@@ -133,8 +133,8 @@ theorem wt_pow (hv : LL.vec (Fin.last K) = true) (ρ c : Fin r) (e : ℕ) (m : F
     intro i
     by_cases hi : i = Fin.last K
     · subst hi
-      by_cases hρ : ρ = c <;> simp [hv, Finsupp.single_apply, hρ] <;> (try ring)
-    · simp [hi, Finsupp.single_apply, Ne.symm hi]
+      by_cases hρ : ρ = c <;> simp [hv, hρ] <;> (try ring)
+    · simp [hi]
   refine (Finset.sum_congr rfl fun i _ => hterm i).trans ?_
   rw [Finset.sum_add_distrib, Finset.sum_ite_eq']
   simp

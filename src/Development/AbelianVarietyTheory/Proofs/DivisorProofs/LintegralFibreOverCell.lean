@@ -27,7 +27,7 @@ theorem measurableSet_image_chart {X Z : Type} [TopologicalSpace X] [Topological
   have h2 := (MeasurableEmbedding.subtype_coe e.open_target.measurableSet).measurableSet_image.2 (h1 hA)
   convert h2 using 1
   ext v
-  simp only [Set.mem_inter_iff, Set.mem_preimage, Set.mem_image, Set.restrict_apply]
+  simp only [Set.mem_inter_iff, Set.mem_preimage, Set.mem_image]
   constructor
   · rintro ⟨h3, h4⟩
     exact ⟨⟨v, h3⟩, h4, rfl⟩

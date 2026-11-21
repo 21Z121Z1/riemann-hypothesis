@@ -23,7 +23,7 @@ theorem gs_comp (ψ : Z ⟶ Y) (r : Y ⟶ X) (y : Z) (W : X.Opens) (a : Γ(X, W)
     simp [Scheme.Hom.comp_app]
     rfl
   · have h' : ¬ (ψ ≫ r) y ∈ W := h
-    simp [gs, h, h']
+    simp [gs, h]
 
 theorem sval_comp {L : LB X} {K : Type} [Fintype K] {φ : K → (Y ⟶ X)} {ε : K → ℤ} {Y' : Scheme.{0}}
     (s : LB.Sec (LB.LinComb L φ ε)) (ψ : Z ⟶ Y') (r : Y' ⟶ Y) (y : Z) (J : (Z ⟶ X) → L.ι) :

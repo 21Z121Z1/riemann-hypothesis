@@ -281,7 +281,7 @@ theorem sum_zero_lattice_spanning : SumZeroLatticeSpanning := by
     simp only [Finset.sum_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul]
     rw [Fin.sum_univ_castSucc] at hv
     refine Fin.lastCases ?_ (fun j => ?_) j
-    · simp [Pi.single_apply, Fin.ext_iff, (Fin.is_lt _).ne']
+    · simp [Fin.ext_iff, (Fin.is_lt _).ne']
       linarith
     · simp [Pi.single_apply, Fin.ext_iff, (Fin.is_lt _).ne]
       simp only [← Fin.ext_iff]; simp
@@ -290,7 +290,7 @@ theorem sum_zero_lattice_spanning : SumZeroLatticeSpanning := by
           (Pi.single j.castSucc (1 : ℚ) - Pi.single (Fin.last n) 1))) =
         1 + Matrix.replicateCol Unit (fun _ => (1:ℚ)) * Matrix.replicateRow Unit (fun _ => (1:ℚ)) := by
       ext i j
-      simp [Matrix.one_apply, Matrix.mul_apply, dotProduct_sub, sub_dotProduct, Pi.single_apply, Fin.ext_iff,
+      simp [Matrix.one_apply, Matrix.mul_apply, dotProduct_sub, Pi.single_apply, Fin.ext_iff,
         (Fin.is_lt _).ne, (Fin.is_lt _).ne']
       by_cases h : (j:ℕ) = i
       · simp [h]

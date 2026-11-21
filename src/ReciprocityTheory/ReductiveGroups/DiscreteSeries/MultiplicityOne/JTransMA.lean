@@ -179,7 +179,7 @@ private theorem unitary_exists_diagonalization (m : Matrix S S ℂ) (hm : mᴴ *
     · linear_combination (-Complex.I) * h8 + (Wᴴ * X * W) i j * Complex.I_sq
     · linear_combination (-Complex.I) * h8 + (Wᴴ * X * W) i j * Complex.I_sq
   have eL : Wᴴ * (u * (1 + X)) * W = (Wᴴ * u * W) * (1 + Wᴴ * X * W) := by
-    simp only [Matrix.mul_add, Matrix.add_mul, Matrix.mul_one, Matrix.one_mul, Matrix.mul_assoc]
+    simp only [Matrix.mul_add, Matrix.add_mul, Matrix.mul_one, Matrix.mul_assoc]
     rw [← Matrix.mul_assoc W Wᴴ, hW2, Matrix.one_mul]
   have eR : Wᴴ * (1 - X) * W = 1 - Wᴴ * X * W := by
     simp only [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_one, Matrix.mul_assoc]

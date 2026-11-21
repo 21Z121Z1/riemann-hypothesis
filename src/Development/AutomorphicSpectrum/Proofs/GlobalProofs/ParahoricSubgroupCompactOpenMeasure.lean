@@ -112,7 +112,7 @@ theorem one_mem_parJ {O : Subring F} {ϖ : F} {r c : ℕ} : (1 : GL (Fin (r + c)
     have := congrArg Fin.val h
     simp at this
     omega
-  simp [bDA, Matrix.one_apply, this]
+  simp [bDA, this]
 
 def parSub (O : Subring F) (ϖ : F) (r c : ℕ) : Subgroup (GL (Fin (r + c)) F) where
   carrier := parJ O ϖ r c

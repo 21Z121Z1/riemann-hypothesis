@@ -65,7 +65,7 @@ theorem nat_mul_integral_of_trace_form_int : ∀ {F E : Type} [Field F] [NumberF
       funext j
       by_cases hj : j = k
       · subst hj; simp
-      · simp [Pi.single_apply, hj]
+      · simp [hj]
     simp only [form, Matrix.dotProduct_mulVec, hs]
     simp [dotProduct, Pi.single_apply, ha, mul_assoc]
   choose o ho using hv

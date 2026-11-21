@@ -169,7 +169,7 @@ theorem scalar_step {Ψ : Finset (E →+* ℂ)} (τ₀ : Ψ) (g : Matrix (Fin r)
     have h := hall (Pi.single a 1 + Pi.single b 1) a b
     rw [Matrix.mulVec_add] at h
     simp only [Pi.add_apply, hcolv] at h
-    simp [Pi.single_apply, hab, Ne.symm hab, hoff a b hab, hoff b a (Ne.symm hab)] at h
+    simp [hab, Ne.symm hab, hoff a b hab, hoff b a (Ne.symm hab)] at h
     linear_combination h
   refine ⟨M i0 i0, ?_⟩
   ext a b

@@ -42,7 +42,7 @@ theorem block_mix (M P₀ Ps : Matrix n n ℂ) (l : ℂ) (hPs : Ps = (1 - l) •
       Ps⁻¹ * M * (1 + (1 - l) • w) - (1 + l • w) * (1 + (1 - l) • w) := by
     rw [← Matrix.sub_mul]; congr 1; abel
   rw [e2, h1]
-  simp only [Matrix.add_mul, Matrix.mul_add, Matrix.one_mul, Matrix.mul_one, Matrix.smul_mul, Matrix.mul_smul, smul_smul]
+  simp only [Matrix.add_mul, Matrix.mul_add, Matrix.one_mul, Matrix.mul_one, Matrix.smul_mul, Matrix.mul_smul]
   module
 
 theorem block_lin (Y : Matrix n n ℂ) (a a₀ l : ℂ) (h : l * a₀ = a) :

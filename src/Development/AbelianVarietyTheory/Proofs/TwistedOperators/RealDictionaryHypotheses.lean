@@ -144,7 +144,7 @@ theorem good_pure (hPr : GlobalTheory.FunPr.Hypotheses₂) (M : Model σ Y Wd) (
     simp only [hc, hΛ]
     rw [hasDerivAt_iff_tendsto_slope]
     refine ((Λ.continuous.tendsto g).comp hlim).congr' (Eventually.of_forall fun t => ?_)
-    simp [slope_def_module, map_sub, map_smul]
+    simp [slope_def_module, map_sub]
 
 end GlobalTheory.ThetaInterchange
 

@@ -131,7 +131,7 @@ theorem nondeg : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFie
       funext i
       by_cases h : i = l
       · subst h; simp
-      · simp [Pi.single_apply, h]
+      · simp [h]
     simp only [form] at h1
     rw [hs, Matrix.dotProduct_mulVec, dotProduct_single, mul_one] at h1
     exact h1

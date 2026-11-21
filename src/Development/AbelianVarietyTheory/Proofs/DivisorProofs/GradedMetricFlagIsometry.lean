@@ -63,7 +63,7 @@ theorem bil_eq (hA : IsVB A a) (hB : IsVB B b) {h : Met p σ C c} {h' : Met p σ
     have hy := mem_ptsIn_inf.2 ⟨hA.mem_pick y, hB.mem_pick y⟩
     rw [Met.form, ← fib_crd hA _ _ _ hy, ← fib_crd hB _ _ _ hy, Chart.crd_resM _ _ _ hy, Chart.crd_resM _ _ _ hy,
       Chart.crd_frame _ (hA.mem_pick y), Chart.crd_frame _ (hB.mem_pick y), form_mulVec]
-    simp [form]
+    simp
   rw [bil, bil, form_mulVec, form_mulVec]
   congr 2
   ext i j

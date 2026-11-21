@@ -115,8 +115,8 @@ theorem signature_exists : Formalism.UG.SigExists := by
     split_ifs
     · rw [sign_pos ((Fintype.equivFin {i // 0 < hH.eigenvalues i}).symm a).2, Complex.ofReal_one]
     · rfl
-  · simp [Matrix.diagonal_apply]
-  · simp [Matrix.diagonal_apply]
+  · simp
+  · simp
   · simp only [Matrix.fromBlocks_apply₂₂, Matrix.diagonal_apply, Function.comp_apply, hinr,
       Sum.inr.injEq, Matrix.neg_apply, Matrix.one_apply]
     split_ifs

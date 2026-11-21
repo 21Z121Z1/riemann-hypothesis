@@ -48,8 +48,7 @@ theorem linearIndependent_bcTan : ∀ {E : Type} [Field E] [NumberField E] [IsCM
   have hB : ∀ j, B2 (e (Sum.inl j)) = b j := by
     intro j
     rw [Module.Basis.reindex_apply, Equiv.symm_apply_apply]
-    simp only [B, Module.Basis.sumExtend, Module.Basis.reindex_apply, Module.Basis.coe_extend,
-      Equiv.symm_symm, Equiv.trans_apply, Equiv.sumCongr_apply]
+    simp only [B, Module.Basis.sumExtend, Module.Basis.reindex_apply, Module.Basis.coe_extend]
     rfl
   have hv : ∀ i, IsTanAtG t x (tv (B2 i)).left := fun i => isTan_tv (B2 i)
   have hbas : ∀ w, IsTanAtG t x w → ∃! cf, IsCombAtG t x (fun i => (tv (B2 i)).left) cf w := by

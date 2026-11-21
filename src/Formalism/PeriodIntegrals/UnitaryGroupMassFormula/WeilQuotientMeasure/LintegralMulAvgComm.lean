@@ -111,8 +111,7 @@ theorem weilQuotient_of_parts (hb : StepBruhat) (hi : StepInvInv) (h2 : WqUnique
   have hne : ρ ≠ 0 := by
     intro h0
     have e := hunf (fun _ => 1) measurable_const
-    simp only [h0, lintegral_zero_measure, lintegral_const, one_mul,
-      Measure.measure_univ_eq_zero] at e
+    simp only [h0, lintegral_const, one_mul] at e
     simp at e
     exact NeZero.ne μ e
   have hfin : ∀ K : Set (G ⧸ H), IsCompact K → ρ K < ∞ := by

@@ -95,7 +95,7 @@ theorem spanFinrank_maximalIdeal_quotient_succ_le (R : Type*) [CommRing R] [IsLo
   have hset : (Ideal.Quotient.mk (Ideal.span ({x} : Set R))) '' (Subtype.val ''
       (insert (⟨x, hx⟩ : maximalIdeal R) (y '' ↑(Finset.univ.erase j)))) =
       insert 0 (↑((Finset.univ.erase j).image (fun i => Ideal.Quotient.mk (Ideal.span ({x} : Set R)) (y i : R))) : Set (R ⧸ Ideal.span ({x} : Set R))) := by
-    simp only [Set.image_insert_eq, Set.image_image, Finset.coe_image, Subtype.coe_mk, hx0]
+    simp only [Set.image_insert_eq, Set.image_image, Finset.coe_image, hx0]
   rw [hmax, Ideal.map_span, hset]
   have hz : Ideal.span (insert (0 : (R ⧸ Ideal.span ({x} : Set R)))
       (↑((Finset.univ.erase j).image (fun i => Ideal.Quotient.mk (Ideal.span ({x} : Set R)) (y i : R))) : Set (R ⧸ Ideal.span ({x} : Set R)))) =
@@ -167,7 +167,7 @@ theorem spanFinrank_quotient_eq_and_ringKrullDim_add_one (R : Type*) [CommRing R
     | (rw [← Ideal.jacobson_bot]; exact IsLocalRing.maximalIdeal_le_jacobson ⊥ hx)
     | (rw [← Ideal.jacobson_bot, IsLocalRing.jacobson_eq_maximalIdeal ⊥ bot_ne_top]; exact hx)
   have hd := ringKrullDim_le_ringKrullDim_quotient_add_card ({x} : Finset R) hxj
-  simp only [Finset.coe_singleton, Finset.card_singleton, Nat.cast_one] at hd
+  simp only [Finset.card_singleton, Nat.cast_one] at hd
   have hle := ringKrullDim_le_spanFinrank_maximalIdeal (R ⧸ Ideal.span ({x} : Set R))
   obtain ⟨e1, e2⟩ := eq_natCast_and_add_one_eq_of_le (a := ringKrullDim (R ⧸ Ideal.span ({x} : Set R)))
     (d := Submodule.spanFinrank (maximalIdeal (R ⧸ Ideal.span ({x} : Set R))))

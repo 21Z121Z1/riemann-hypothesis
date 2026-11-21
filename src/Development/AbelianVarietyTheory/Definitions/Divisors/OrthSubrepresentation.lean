@@ -275,7 +275,7 @@ example : ¬ Kills (fun g : ℤˣ => 1 - ((g : ℤ) : ℂ)) (fun g => 1 - ((g : 
   let ρ : Representation ℂ ℤˣ (ℂ × ℂ) :=
     { toFun := fun g => LinearMap.prodMap LinearMap.id (((g : ℤ) : ℂ) • LinearMap.id)
       map_one' := by ext <;> simp
-      map_mul' := fun g k => by ext <;> simp [mul_comm] }
+      map_mul' := fun g k => by ext <;> simp }
   have hρ : ∀ g : ℤˣ, ρ g = LinearMap.prodMap LinearMap.id (((g : ℤ) : ℂ) • LinearMap.id) := fun _ => rfl
   have h1 := h (ℂ × ℂ) ρ (by
     rw [finsum_eq_sum_of_fintype]

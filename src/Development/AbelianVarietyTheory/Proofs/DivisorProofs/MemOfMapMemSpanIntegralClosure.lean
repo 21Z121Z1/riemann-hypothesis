@@ -63,7 +63,7 @@ theorem mem_of_map_mem_span_integralClosure :
     apply LinearMap.ext_on hspan
     intro x hx
     have hx' := hdecomp ⟨x, hx⟩
-    simp only [Finset.sum_apply, LinearMap.sum_apply, LinearMap.smulRight_apply, LinearMap.id_apply]
+    simp only [LinearMap.sum_apply, LinearMap.smulRight_apply, LinearMap.id_apply]
     conv_rhs => rw [show x = ((⟨x, hx⟩ : P) : Fin n → K) from rfl, hx']
     rw [Submodule.coe_sum]
     refine Finset.sum_congr rfl fun j _ => ?_

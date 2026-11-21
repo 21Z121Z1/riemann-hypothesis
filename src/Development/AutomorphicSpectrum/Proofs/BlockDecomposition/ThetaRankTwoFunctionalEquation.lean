@@ -367,7 +367,7 @@ theorem expansion (h2 : Module.finrank ℚ K = 2) (hC : IsTotallyComplex K) {DK 
       · exact absurd ⟨Units.mk0 x h0, rfl⟩ hx)).2 h1'
     have e : (Function.update I 0 0 ∘ ((↑) : Kˣ → K)) = fun κ : Kˣ => I (κ : K) := by
       funext κ
-      simp [Function.update_of_ne κ.ne_zero]
+      simp
     rwa [e] at h2'
   have hF := hU.tsum_fiberwise (Units.map (Algebra.norm ℚ : K →* ℚ))
   have hst := L_stab K h2 hC c M hM

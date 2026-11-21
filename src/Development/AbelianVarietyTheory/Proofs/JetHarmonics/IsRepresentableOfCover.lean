@@ -178,7 +178,7 @@ theorem exists_universal_units (K : Type) :
   · apply Units.ext
     rw [hpb, ← hφ]
     have : i.inv ≫ (Z.toSpecΓ ≫ Spec.map (CommRingCat.ofHom φ)).appTop = CommRingCat.ofHom φ := by
-      simp [i, ← Scheme.ΓSpecIso_inv_naturality_assoc]
+      simp [i]
     rw [this]; rfl
   · intro c c' h h'
     apply ext_of_isAffine

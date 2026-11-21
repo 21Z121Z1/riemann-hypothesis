@@ -58,7 +58,7 @@ theorem koszul_relations_among_variables :
           simp [h1, this, show (j : ℕ) < n + 1 by omega]
         · by_cases h2 : (j : ℕ) = n
           · have : j = ⟨n, hlt⟩ := Fin.ext h2
-            simp [h1, this]
+            simp [this]
           · have : j ≠ ⟨n, hlt⟩ := fun h => h2 (by rw [h])
             simp [h1, this, show ¬ (j : ℕ) < n + 1 by omega]
       rw [Finset.sum_congr rfl (fun j _ => pt j), Finset.sum_add_distrib, ← ih (by omega),

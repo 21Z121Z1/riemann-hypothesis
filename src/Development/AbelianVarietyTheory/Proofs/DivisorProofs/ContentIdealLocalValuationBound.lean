@@ -49,7 +49,7 @@ theorem smul_one_tmul_mem_latLoc : ∀ (F E : Type) [Field F] [NumberField F] [F
       have hs := (latLoc F L v).smul_mem (⟨_, hint⟩ : GlobalTheory.AdelicU.intLoc F E v) hmem
       convert hs using 1
       funext k
-      simp only [hU, Pi.smul_apply, smul_eq_mul, Submodule.coe_smul]
+      simp only [hU, Pi.smul_apply, smul_eq_mul]
       change c * (1 : Fv F v) ⊗ₜ[F] (i * j) * (1 : Fv F v) ⊗ₜ[F] u k
         = c * (1 : Fv F v) ⊗ₜ[F] j * (1 : Fv F v) ⊗ₜ[F] (i * u k)
       rw [mul_assoc, mul_assoc, Algebra.TensorProduct.tmul_mul_tmul, Algebra.TensorProduct.tmul_mul_tmul,

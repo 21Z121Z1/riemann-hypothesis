@@ -253,7 +253,7 @@ omit [NumberField E] [IsCMField E] in
 theorem nmat_zero (τ : X.Ψ) : mat (nmat X (0 : V (nd X))) τ = 1 := by
   ext a b
   by_cases h : b < a
-  · simp [mat, nmat, Matrix.one_apply, h, h.ne']
+  · simp [mat, nmat, h, h.ne']
     first
     | exact V_zero_app _
     | rfl

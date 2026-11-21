@@ -109,7 +109,7 @@ theorem realAction : ∀ {D : D7} {T : Type} [Finite T] {L : LevCh D T} {μ₀ :
       rw [GlobalTheory.RealColAct.gramAt_of_gram_one hVW]; simp
     have key0 := GlobalTheory.RealFockPos.om_pureTensorO_pos D W.ψ W.θ A' WW _ _ (X.ω' t) (hW t) hθ (fun _ => 1) (fun _ => 1) hBS hBT
       a b ha (hbt t) e₁ (fun τ => -k τ) he₁ (fun τ => by push_cast; rw [hk τ]) (X.f' t) hf hv (g : GA D A') g.2 1 (one_mem _) P
-    simp only [inv_one, Matrix.one_mul, Matrix.mul_one, GlobalTheory.StdUnn.CartanMove.compAt_mt_one, Matrix.det_one, one_zpow, mul_one]
+    simp only [inv_one, Matrix.one_mul, GlobalTheory.StdUnn.CartanMove.compAt_mt_one, Matrix.det_one, one_zpow, mul_one]
       at key0
     have hinv : ∀ τ, (compAt W.θ τ (Formalism.L2.Theta.mt A' (g : GA D A')))⁻¹ =
         compAt W.θ τ (Formalism.L2.Theta.mt A' (g : GA D A')⁻¹) := fun τ =>

@@ -71,7 +71,7 @@ theorem cmDiffSt_of_idealSt : IdealSt → GlobalTheory.FlatCore.CMDiffSt := by
     rw [h0] at this
     exact H.d_prime.ne_zero (by simpa using this)
   have hτb' : τb H.rt = -ρ := by
-    simp [hτb, GlobalTheory.CM.EigDec.bar_rt, hτ]
+    simp [hτb, hτ]
   have hne : ¬ τb H.rt = ρ := by
     rw [hτb']
     intro e

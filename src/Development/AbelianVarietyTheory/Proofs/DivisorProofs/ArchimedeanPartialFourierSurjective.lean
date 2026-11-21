@@ -71,7 +71,7 @@ theorem fourier_hop (μ : Measure (κ ⊕ κ → mixedEmbedding.mixedSpace F)) [
   rw [integral_add_right_eq_self (fun y => f y * Complex.exp (-(2 * Real.pi * Complex.I) * ((B y (ξ + b) : ℝ) : ℂ))) a]
   congr 1
   congr 1
-  simp only [map_neg, LinearMap.neg_apply]
+  simp only [map_neg]
   rw [traceDot_comm ξ a, traceDot_comm b a]
   ring
 

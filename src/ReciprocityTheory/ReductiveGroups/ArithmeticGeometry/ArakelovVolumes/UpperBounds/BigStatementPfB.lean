@@ -158,7 +158,7 @@ private theorem sum_mul_mul_cc_eq_of_herm_mulVec {G g : Matrix (Fin r) (Fin r) E
   rw [Fintype.sum_eq_single a, Fintype.sum_eq_single b]
   · simp
   · intro l hl
-    simp [Pi.single_apply, hl]
+    simp [hl]
   · intro k hk
     simp [Pi.single_apply, hk]
 

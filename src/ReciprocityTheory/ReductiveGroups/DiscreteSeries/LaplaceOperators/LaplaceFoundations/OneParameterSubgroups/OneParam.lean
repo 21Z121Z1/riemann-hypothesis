@@ -130,7 +130,7 @@ theorem one_param {V H : Type*} [NormedAddCommGroup V] [NormedSpace ℂ V]
     simp only [map_smul, map_add, inner_smul_right, inner_add_right]
     rw [hm, hstρ, map_add, inner_add_left, e1, e3]
     simp only [map_add, map_smul, inner_add_right, inner_smul_right, inner_add_left, inner_smul_left,
-      hdst, map_mul, Complex.conj_ofReal, Complex.conj_conj, RCLike.conj_conj, hdX]
+      hdst, map_mul, Complex.conj_ofReal, Complex.conj_conj, hdX]
     linear_combination (d Yl * ⟪w, u s w⟫_ℂ) * h1 + (d ρ1 * ⟪w, u s w⟫_ℂ) * h2
   rw [hmain]
   have hT0 : (0 : ℝ) ≤ T := by linarith

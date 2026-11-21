@@ -88,7 +88,7 @@ theorem exists_transfer {n : ℕ} {L : Submodule (𝓞 E) (Fin n → E)} (hL : L
       ext k
       by_cases hk : k = i
       · subst hk
-        simp only [Pi.single_eq_same, Pi.smul_apply, smul_eq_mul, mul_one, Algebra.smul_def]
+        simp only [Pi.single_eq_same, Pi.smul_apply, mul_one, Algebra.smul_def]
         rw [map_mul, mul_assoc, ← Algebra.smul_def (b : 𝓞 E) (x j), ← ho]
         ring
       · simp [Pi.single_eq_of_ne hk]

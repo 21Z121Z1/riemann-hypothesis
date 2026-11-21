@@ -153,7 +153,7 @@ theorem isSm_theta_small : ∀ (F E : Type) [Field F] [NumberField F] [Field E] 
         by_cases hi : i = j
         · subst hi
           simp [GlobalTheory.T.real_line_one_parameter_homomorphism F E σ hcm _ J' (γ i) (hγ i)]
-        · simp [hi, Function.update_of_ne hi]
+        · simp [hi]
       simp only [P, γ', suf, e1, GlobalTheory.T.list_prod_update_conjugate, mul_assoc]
     have hd := hDd (Zt t) γ' h1 h2 Ψ hΨ (g * P t)
     have hval : G.M'.I om' (D (Zt t) Ψ) ((toGAd hσ G.W.J hc).symm (g * P t)) =

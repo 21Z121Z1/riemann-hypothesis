@@ -56,7 +56,7 @@ lemma decA_exp {U : Matrix (Fin n) (Fin n) ℂ} (hU : U ∈ Matrix.unitaryGroup 
     funext j
     first
       | (rw [Pi.exp_apply]; simp [← Complex.exp_eq_exp_ℂ, Complex.ofReal_exp])
-      | (simp [Pi.exp_def, ← Complex.exp_eq_exp_ℂ, Complex.ofReal_exp])
+      | (simp [← Complex.exp_eq_exp_ℂ, Complex.ofReal_exp])
       | (simp [NormedSpace.exp_pi, ← Complex.exp_eq_exp_ℂ, Complex.ofReal_exp])
   rw [← hinv, Matrix.exp_conj U _ hu, Matrix.exp_diagonal, hd]
 

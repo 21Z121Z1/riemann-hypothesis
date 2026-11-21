@@ -94,7 +94,7 @@ theorem dgM_in (n o p : ℕ) (A : Matrix (Fin p) (Fin p) R) (i j : Fin n) (hi : 
   simp only [Matrix.one_apply, Fin.ext_iff]
   by_cases h : i.val = j.val
   · have h' : i.val - o = j.val - o := by omega
-    simp [h, h']
+    simp [h]
   · have h' : i.val - o ≠ j.val - o := by omega
     simp [h, h']
 

@@ -77,7 +77,7 @@ theorem induced_adlOf_zero : ∀ (D : D7) (A : Amb D) (N j : ℕ) (S : Sig A N j
     have a1 := hz (-1)
     have a2 := hz (-((m : ℕ) : ℤ))
     simp only [zpow_neg, zpow_one, zpow_natCast] at a1 a2
-    simp only [Units.val_mul, Units.val_one, mul_one, Units.val_pow_eq_pow_val, Units.val_inv_eq_inv_val, inv_pow, a1, a2,
+    simp only [mul_one, Units.val_pow_eq_pow_val, Units.val_inv_eq_inv_val, inv_pow, a1, a2,
       map_inv₀, map_pow, Real.log_inv, Real.log_pow, Pi.zero_apply, mul_zero, sub_zero]
     ring
 

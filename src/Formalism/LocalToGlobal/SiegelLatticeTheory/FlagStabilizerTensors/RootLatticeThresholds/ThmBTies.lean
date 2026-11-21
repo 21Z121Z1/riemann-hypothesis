@@ -96,7 +96,7 @@ theorem comp_last {n : ℕ} (c : Composition (n + 1)) (h : 0 < c.length) :
     c.sizeUpTo (c.length - 1) + c.blocksFun ⟨c.length - 1, by omega⟩ = n + 1 := by
   have h1 : c.length - 1 + 1 = c.length := by omega
   have h2 := c.sizeUpTo_succ' ⟨c.length - 1, by omega⟩
-  simp only [Fin.val_mk, h1, Composition.sizeUpTo_length] at h2
+  simp only [h1, Composition.sizeUpTo_length] at h2
   exact h2.symm
 
 theorem comp_not_end {n : ℕ} (c : Composition (n + 1)) (h : 0 < c.length)

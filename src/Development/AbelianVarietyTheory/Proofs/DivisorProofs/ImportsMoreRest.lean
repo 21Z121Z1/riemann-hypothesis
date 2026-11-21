@@ -17,13 +17,13 @@ theorem main : ∀ {A : Type} [inst : CommRing A] {n q : ℕ} (X Y : Matrix (Fin
   have hDa : Matrix.diagonal a + Matrix.diagonal a' + Matrix.diagonal a * Matrix.diagonal a' = 0 := by
     ext i j
     by_cases hij : i = j
-    · subst hij; simp [Matrix.diagonal_apply, ha i]
-    · simp [Matrix.diagonal_apply, hij]
+    · subst hij; simp [ha i]
+    · simp [hij]
   have hDb : Matrix.diagonal b + Matrix.diagonal b' + Matrix.diagonal b * Matrix.diagonal b' = 0 := by
     ext i j
     by_cases hij : i = j
-    · subst hij; simp [Matrix.diagonal_apply, hb i]
-    · simp [Matrix.diagonal_apply, hij]
+    · subst hij; simp [hb i]
+    · simp [hij]
   have kx : X * (Matrix.diagonal a * RY) + X * (Matrix.diagonal a' * RY)
       + X * (Matrix.diagonal a * (Matrix.diagonal a' * RY)) = 0 := by
     have := congrArg (fun M => X * (M * RY)) hDa
@@ -37,7 +37,7 @@ theorem main : ∀ {A : Type} [inst : CommRing A] {n q : ℕ} (X Y : Matrix (Fin
         + (Y * (Matrix.diagonal b * RX) + Y * (Matrix.diagonal b' * RX)
           + Y * (Matrix.diagonal b * (Matrix.diagonal b' * RX))) := by
         simp only [Matrix.add_mul, Matrix.mul_add, Matrix.mul_assoc, Matrix.mul_one, Matrix.one_mul,
-          e1, e2, e3, e4, Matrix.zero_mul, Matrix.mul_zero, add_zero]
+          e1, e2, e3, e4, Matrix.mul_zero, add_zero]
         abel
     _ = 1 := by rw [kx, ky, add_zero, add_zero]
 

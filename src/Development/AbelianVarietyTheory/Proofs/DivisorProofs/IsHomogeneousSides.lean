@@ -79,7 +79,7 @@ theorem mixEv_sieg (T : Finset ℕ) (hT : 1 ∉ T) (R : ℝ) (c : O.s.Comp) :
   simp only [AlgHom.comp_apply] at e2
   rw [map_mul, e2, map_mul, map_mul, rename_rename]
   congr 1
-  simp only [ArIn.mixEv, aeval_X, update_ind_one T hT, map_sum, map_pow, rename_X, map_mul, algHom_C]
+  simp only [ArIn.mixEv, aeval_X, update_ind_one T hT, map_sum, map_pow, rename_X, algHom_C]
   norm_num
   rfl
 

@@ -67,9 +67,9 @@ theorem main : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [NumberField
     refine ⟨Pi.single (⟨x, hx⟩, ⟨y, hy⟩) 1, (hO _).2 fun i => ?_, ?_⟩
     · by_cases h : i = (⟨x, hx⟩, ⟨y, hy⟩)
       · rw [h]; simp
-      · simp [Pi.single_apply, h]
+      · simp [h]
     · show ∑ i, (Pi.single ((⟨x, hx⟩, ⟨y, hy⟩) : ι) (1 : Fv F v) : ι → Fv F v) i • ρ i = _
-      rw [Finset.sum_eq_single ((⟨x, hx⟩, ⟨y, hy⟩) : ι) (fun b _ hb => by simp [Pi.single_apply, hb]) (by simp)]
+      rw [Finset.sum_eq_single ((⟨x, hx⟩, ⟨y, hy⟩) : ι) (fun b _ hb => by simp [hb]) (by simp)]
       simp only [Pi.single_eq_same, one_smul]
       rfl
   have hle2 : Λ ≤ Opi.map φ.toAddMonoidHom := by

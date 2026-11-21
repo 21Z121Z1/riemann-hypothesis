@@ -142,7 +142,7 @@ theorem ext_types (hUρ : IsURepOn (Kset ε) ρ) (hUπ : IsURepOn (Kset ε) π)
     ∀ y, IsKFin ε ρ y → ⟪a, y⟫_ℂ = ⟪w, T y⟫_ℂ := by
   intro y hy
   refine Submodule.iSup_induction (kIso ε ρ) (motive := fun y => ⟪a, y⟫_ℂ = ⟪w, T y⟫_ℂ) (hd y hy)
-    (fun Λ y hyΛ => ?_) (by simp) (fun y₁ y₂ h₁ h₂ => by simp [inner_add_right, h₁, h₂])
+    (fun Λ y hyΛ => ?_) (by simp) (fun y₁ y₂ h₁ h₂ => by simp [h₁, h₂])
   by_cases hΛ : Λ ∈ s
   · exact hs Λ hΛ y hyΛ
   · rw [finset_orth hUρ s hΛ a ha y hyΛ,

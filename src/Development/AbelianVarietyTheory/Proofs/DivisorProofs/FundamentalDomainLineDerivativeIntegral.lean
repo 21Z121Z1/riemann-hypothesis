@@ -32,7 +32,7 @@ theorem GlobalTheory.setIntegral_fundamentalDomain_deriv_eq_zero : ∀ {G : Type
       rw [sub_self]; exact hder _
     have h1 := h0.comp_sub_const t t
     refine h1.congr_of_eventuallyEq (Filter.Eventually.of_forall fun s => ?_)
-    simp only [Function.comp, mul_assoc, ← hγ]
+    simp only [mul_assoc, ← hγ]
     congr 2; ring_nf
   have hball : Metric.ball (0:ℝ) 1 = Set.Ioo (-1) 1 := by
     rw [Real.ball_eq_Ioo]; norm_num

@@ -273,7 +273,7 @@ theorem isContOn_of_acts (v : Pl F) {G : Type} [Group G] [TopologicalSpace G]
       simp only [pureA, h0, Pi.smul_apply, smul_eq_mul]
     show (R 0)⁻¹ • l (fun t => pureA F f g (lift t)) = _
     rw [e, map_smul]
-    simp [smul_eq_mul, mul_comm, mul_assoc, mul_left_comm]
+    simp [smul_eq_mul, mul_comm, mul_left_comm]
   refine (hc0 L hL _ (hR φ hφ).2).congr fun q => ?_
   rw [hom q φ hφ R (hR φ hφ)]
   have e : (fun t => tens (evFin F v) (om q φ) R (lift t)) = R 0 • om q φ := by

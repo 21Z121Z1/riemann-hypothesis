@@ -147,7 +147,7 @@ theorem exists_finite_smooth [Algebra.FinitePresentation R₀ B] [Algebra.Smooth
       refine ⟨d' j, hM ?_⟩
       have hMa (q : MvPolynomial _ A) : M (aeval h' q) = aeval h (M q) := by
         induction q using MvPolynomial.induction_on with
-        | C a => simp [M, MvPolynomial.algebraMap_apply]
+        | C a => simp [M]
         | add p q hp hq => simp only [map_add, hp, hq]
         | mul_X p i hp =>
           simp only [map_mul, aeval_X, hp, hh', hMX]

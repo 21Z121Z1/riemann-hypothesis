@@ -44,7 +44,7 @@ private theorem homFac_eq_archSq_ortho (E : Type) [Field E] [NumberField E] [IsC
     rw [hHm] at h1
     have h2 : hermForm (((2 * x : ℝ) : ℂ) • (1 : Matrix (Fin W.g) (Fin W.g) ℂ)) (Pi.single (W.e.symm j0) 1)
         (Pi.single (W.e.symm j0) 1) = ((2 * x : ℝ) : ℂ) := by
-      simp [hermForm, Matrix.smul_mulVec, dotProduct, Pi.single_apply]
+      simp [hermForm, dotProduct, Pi.single_apply]
     rw [h2, Complex.ofReal_re] at h1
     linarith
   have key : ∀ (ρ : E →+* ℂ) (v : Fin (Dw.mult ρ) → (epsR K ⟶ t₀.G)), (∀ i, (v i).left ≫ m1.φ = y.u ρ i) →

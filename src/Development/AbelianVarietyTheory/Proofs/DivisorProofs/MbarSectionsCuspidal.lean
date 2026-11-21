@@ -121,7 +121,7 @@ theorem sum_rootExp (L : CmList A) (u : AllWt.Weight S.Dw) (z : Letter S.Dw) :
     simp only [conjEmb_conjEmb] at e
     rw [e, Finset.sum_eq_single (L.ψ.symm ⟨conjEmb τ, conj_mem h⟩, ⟨S.Dw.p + (S.Dw.q - 1 - a), by omega⟩) ?_ (by simp)]
     · have e₁ : S.Dw.p + S.Dw.q - 1 - (S.Dw.p + (S.Dw.q - 1 - (a : ℕ))) = a := by omega
-      simp [e₁, conjEmb_conjEmb]
+      simp [e₁]
     · rintro ⟨t, i⟩ _ hne
       dsimp only
       split_ifs with h1 h2 h3

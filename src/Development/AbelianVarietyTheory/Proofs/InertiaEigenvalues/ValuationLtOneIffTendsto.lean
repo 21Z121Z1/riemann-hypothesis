@@ -62,7 +62,7 @@ def twistEquiv {G V W : Type} [Group G] [AddCommGroup V] [Module ℂ V] [AddComm
   Representation.Equiv.mk φ.toLinearEquiv fun g => LinearMap.ext fun x => by
     have e := LinearMap.congr_fun (φ.isIntertwining' g) x
     simp only [LinearMap.comp_apply] at e
-    simp only [LinearMap.comp_apply, LinearEquiv.coe_coe, twist_apply, map_smul]
+    simp only [LinearMap.comp_apply, twist_apply, map_smul]
     congr 1
 
 def push {D : D7} (I : Ident D) (k : Fin 2) (v : D.nd.PlG k) (μ : ℚ_[D.host.g k]ˣ →* ℂˣ) :

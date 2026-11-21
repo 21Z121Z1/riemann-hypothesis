@@ -18,7 +18,7 @@ omit [MeasurableSpace F] [BorelSpace F] in
 theorem characteristic_function_integral_apply (v : Fin 2 → F) :
     phi0 F v = (𝒪[F] : Set F).indicator 1 (v 0) * (𝒪[F] : Set F).indicator 1 (v 1) := by
   by_cases h0 : v 0 ∈ 𝒪[F] <;> by_cases h1 : v 1 ∈ 𝒪[F] <;>
-    simp [phi0, Set.indicator_apply, Fin.forall_fin_two, h0, h1]
+    simp [phi0, Fin.forall_fin_two, h0, h1]
 
 omit [MeasurableSpace F] [BorelSpace F] in
 theorem characteristic_function_integral_invariant {k : GL (Fin 2) F} (hk : k ∈ GLnLocal.integralGL F 2) (v : Fin 2 → F) :

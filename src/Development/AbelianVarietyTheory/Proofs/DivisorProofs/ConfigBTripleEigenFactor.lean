@@ -206,7 +206,7 @@ theorem nonzero : GlobalTheory.ThK.KP → ∀ (F E : Type) [Field F] [NumberFiel
         funext v
         by_cases hv : v = w
         · subst hv; simp [cur]
-        · simp [cur, Function.update_of_ne hv, Finset.mem_insert, hv]
+        · simp [cur, Finset.mem_insert, hv]
       rw [e, ← hrt]
       intro h0
       exact hlw ((hl' _ hcw).trans h0)
@@ -274,7 +274,7 @@ theorem nonzero : GlobalTheory.ThK.KP → ∀ (F E : Type) [Field F] [NumberFiel
         funext v
         by_cases hv : v = B.v₁
         · subst hv; simp [cur]
-        · simp [cur, Function.update_of_ne hv, hv]
+        · simp [cur, hv]
       rw [e, ← hrt]
       intro h0
       exact hlv ((hl' _ (Submodule.subset_span hcv)).trans h0)

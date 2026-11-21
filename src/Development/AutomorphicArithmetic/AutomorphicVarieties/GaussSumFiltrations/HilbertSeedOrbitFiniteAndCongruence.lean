@@ -12,7 +12,7 @@ open scoped Matrix
 namespace GlobalTheory.HilbertThetaSeries.GaussSumOrbitFiniteness
 
 theorem reAt_eq {F : Type} [Field F] [NumberField F] [IsTotallyReal F] (v : InfinitePlace F) (x : F) : reAt v x = rhom x v := by
-  simp only [reAt, rhom, Pi.ringHom_apply]
+  simp only [reAt, rhom]
   rw [← InfinitePlace.embedding_of_isReal_apply (IsTotallyReal.isReal v) x, Complex.ofReal_re]
   rfl
 

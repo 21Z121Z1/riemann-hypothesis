@@ -80,7 +80,7 @@ theorem rs_app_mulGen (φ : K → (Y' ⟶ X)) (ε : K → ℤ) (φ' : K' → (Y'
     (h₁ : O ≤ q ⁻¹ᵁ LB.wchart L φ (j ∘ Sum.inl)) (h₂ : O ≤ q ⁻¹ᵁ LB.wchart L φ' (j ∘ Sum.inr)) :
     rs h ((q.app _).hom ((LB.mulGen L φ ε φ' ε' t t').s j).val) =
       rs h₁ ((q.app _).hom (t.s (j ∘ Sum.inl)).val) * rs h₂ ((q.app _).hom (t'.s (j ∘ Sum.inr)).val) := by
-  simp only [LB.mulGen, Units.val_mul, map_mul, rs_mul]
+  simp only [LB.mulGen, Units.val_mul, map_mul]
   congr 1
   · exact (congrArg (rs h) (app_rs q _ (t.s (j ∘ Sum.inl)).val)).trans (rs_rs _ _ _)
   · exact (congrArg (rs h) (app_rs q _ (t'.s (j ∘ Sum.inr)).val)).trans (rs_rs _ _ _)

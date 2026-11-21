@@ -51,7 +51,7 @@ theorem neg_pmat_eq {ε : Fin n → Bool} (z : PCoord ε → ℂ) :
   rw [h]
   have hd : diagonal (fun a => ((-pev z a : ℝ) : ℂ)) = -diagonal (fun a => (pev z a : ℂ)) := by
     ext i j
-    by_cases hij : i = j <;> simp [diagonal_apply, hij]
+    by_cases hij : i = j <;> simp [hij]
   rw [hd]
   first
   | rw [Matrix.mul_neg, Matrix.neg_mul]
@@ -87,10 +87,10 @@ private lemma charpoly_roots_diagonal (d : Fin n → ℂ) :
       by_cases hij : i = j
       · subst hij
         first
-        | simp [Matrix.charmatrix_apply]
+        | simp
         | simp [Matrix.charmatrix]
       · first
-        | simp [Matrix.charmatrix_apply, hij]
+        | simp [hij]
         | simp [Matrix.charmatrix, hij]
     rw [hc, det_diagonal]
   rw [h1, Finset.prod_eq_multiset_prod]

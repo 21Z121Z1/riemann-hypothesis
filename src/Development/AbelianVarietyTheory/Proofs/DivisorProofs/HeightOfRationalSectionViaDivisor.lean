@@ -111,11 +111,11 @@ theorem vertMix : Hypotheses2 → ∀ (k : Type) [CommRing k] (X : Scheme.{0}) [
     let c : Fin (D + 1) → Option (Fin D) := Fin.cons none some
     have := hnum (Option (Fin D)) (fun o => o.elim M N) Φ hΦ (fun j => Pi.single (c j) 1)
     have hl (o : Option (Fin D)) : lin (Pi.single o (1 : ℝ)) = MvPolynomial.X o := by
-      rw [lin, Finset.sum_eq_single o (fun b _ hb => by simp [Pi.single_apply, hb]) (by simp)]
+      rw [lin, Finset.sum_eq_single o (fun b _ hb => by simp [hb]) (by simp)]
       simp
     have hs (o : Option (Fin D)) : ∑ i, (Pi.single o (1 : ℝ) : Option (Fin D) → ℝ) i • cl ((fun o => o.elim M N) i) =
         cl ((fun o => o.elim M N) o) := by
-      rw [Finset.sum_eq_single o (fun b _ hb => by simp [Pi.single_apply, hb]) (by simp)]
+      rw [Finset.sum_eq_single o (fun b _ hb => by simp [hb]) (by simp)]
       simp
     simp only [hl, hs] at this
     rw [Fin.prod_univ_succ] at this

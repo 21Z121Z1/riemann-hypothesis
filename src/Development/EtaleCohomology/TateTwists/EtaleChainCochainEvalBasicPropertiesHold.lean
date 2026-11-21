@@ -48,7 +48,7 @@ theorem freeGen_res (P : PSh) {V U : Scheme.{0}} (g : V ⟶ U) x :
   unfold freeGen
   refine ((key _).symm).trans ?_
   congr 1
-  simp only [freeP, ModuleCat.freeMk, ModuleCat.free, Functor.whiskeringRight_obj_map, Functor.comp_map, Functor.whiskerRight_app, uliftFunctor_map] <;> try (erw [Finsupp.lmapDomain_apply, Finsupp.mapDomain_single]; rfl)
+  simp only [freeP, ModuleCat.freeMk, ModuleCat.free] <;> try (erw [Finsupp.lmapDomain_apply, Finsupp.mapDomain_single]; rfl)
   all_goals simp [freeP, ModuleCat.freeMk, ModuleCat.free, Finsupp.lmapDomain_apply, Finsupp.mapDomain_single]
 
 theorem freeGen_map {P Q : PSh} (f : P ⟶ Q) U x :

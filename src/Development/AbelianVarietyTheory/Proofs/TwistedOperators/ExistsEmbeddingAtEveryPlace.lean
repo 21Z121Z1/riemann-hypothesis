@@ -193,7 +193,7 @@ theorem omA_left (ν : kˣ →* ℂˣ) (g : GL (Fin n) k) (Φ : Matrix (Fin n) (
       GlobalTheory.SplitWeil.om 1 (1 : GL (Fin m) k) g Φ := by
   funext X
   simp only [GlobalTheory.SplitFlip.omA, GlobalTheory.SplitWeil.om, GlobalTheory.SplitFlip.apow, Pi.smul_apply, smul_eq_mul, map_one,
-    Units.val_one, one_mul, mul_one, inv_one, GlobalTheory.SplitFlip.invT_val, Matrix.transpose_one, Fintype.card_fin,
+    Units.val_one, one_mul, mul_one, inv_one, Fintype.card_fin,
     MonoidHom.one_apply, GlobalTheory.SplitFlip.gdet]
   simp [GlobalTheory.SplitWeil.nabs]
   rw [Complex.ofReal_cpow (NNReal.coe_nonneg _)]

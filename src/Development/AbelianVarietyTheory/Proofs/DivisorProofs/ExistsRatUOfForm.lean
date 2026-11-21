@@ -91,7 +91,7 @@ theorem mem_ratU_of_mulVec {n : ℕ} {J : Matrix (Fin n) (Fin n) E} (g : UA σ J
   have hs : ∀ j : Fin n, incV F (Pi.single j (1 : E)) = Pi.single j 1 := fun j => by
     ext k; by_cases hk : k = j
     · subst hk; simp [incV]
-    · simp [incV, Pi.single_apply, hk]
+    · simp [incV, hk]
   have hm : mat g = incM F Q := by
     ext i j
     have := congrFun (hW (Pi.single j 1)) i

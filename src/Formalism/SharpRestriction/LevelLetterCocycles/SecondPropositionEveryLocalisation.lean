@@ -361,7 +361,7 @@ theorem pi_one_eq :
     Submodule.pi Set.univ (fun _ : δ => (1 : Submodule O (FractionRing O))) =
       LinearMap.range (LinearMap.compLeft (Algebra.linearMap O (FractionRing O)) δ) := by
   ext v
-  simp only [Submodule.mem_pi, Set.mem_univ, true_implies, forall_const, Submodule.mem_one,
+  simp only [Submodule.mem_pi, Set.mem_univ, forall_const, Submodule.mem_one,
     LinearMap.mem_range]
   constructor
   · intro h
@@ -912,7 +912,7 @@ theorem charpolyRev_map {A B : Type} [CommRing A] [CommRing B] {n : Type} [Finty
   rw [← Polynomial.coe_mapRingHom, RingHom.map_det]
   congr 1
   ext i j
-  by_cases hij : i = j <;> simp [hij, Matrix.one_apply]
+  by_cases hij : i = j <;> simp [hij]
 
 theorem inSpan_tSpan (Kf : Type) [CommRing Kf] [Algebra (N.O i) Kf] {a : X' → MatN N i}
     (ha : InSpan N i T' rep a) :

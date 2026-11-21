@@ -86,7 +86,7 @@ theorem part1 {K Ω : Type} [Field K] [CharZero K] [Field Ω] [Algebra K Ω]
     · simp only [a, dif_pos hj]
       rw [Finset.sum_eq_single ⟨j, hj⟩]
       · simp
-      · intro b _ hb; simp [Pi.single_apply, hb]
+      · intro b _ hb; simp [hb]
       · simp
     · simp only [a, dif_neg hj]; exact hco j
   have hxU' : c 0 ∈ U := by rw [hc0]; exact hxU.2

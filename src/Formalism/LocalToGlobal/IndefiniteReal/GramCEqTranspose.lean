@@ -107,10 +107,10 @@ theorem pet_self (σ : LL →+* ℂ) (x : WL) : A.pet σ x x = ((A.nrmAt σ x : 
   simp [pet, nrmAt, inner_self_eq_norm_sq_to_K]
 
 theorem pet_add_left (σ : LL →+* ℂ) (x x' y : WL) : A.pet σ (x + x') y = A.pet σ x y + A.pet σ x' y := by
-  simp [pet, map_add, inner_add_right]
+  simp [pet, map_add]
 
 theorem pet_smul_left (σ : LL →+* ℂ) (a : LL) (x y : WL) : A.pet σ (a • x) y = σ a * A.pet σ x y := by
-  simp [pet, map_smulₛₗ, inner_smul_right]
+  simp [pet, map_smulₛₗ]
 
 theorem pet_conj_symm (σ : LL →+* ℂ) (x y : WL) : A.pet σ y x = starRingEnd ℂ (A.pet σ x y) := by
   simp [pet, inner_conj_symm]

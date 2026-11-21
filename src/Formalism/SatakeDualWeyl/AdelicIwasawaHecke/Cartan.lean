@@ -233,8 +233,8 @@ theorem cartan_diag_perm {m : ℕ} (d : Fin m → L) (σ : Equiv.Perm (Fin m)) :
   ext i j
   by_cases h : i = j
   · subst h
-    simp [Matrix.diagonal_apply]
-  · simp [Matrix.diagonal_apply, h]
+    simp
+  · simp [h]
 
 theorem cartan_sort (ϖ : L) {m : ℕ} (a : Fin m → ℤ) :
     ∃ a' : Fin m → ℤ, Antitone a' ∧ ∃ S₁ ∈ GLint (Fin m) O, ∃ S₂ ∈ GLint (Fin m) O,

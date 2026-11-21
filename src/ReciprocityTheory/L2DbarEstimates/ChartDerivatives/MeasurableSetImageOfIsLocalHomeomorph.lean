@@ -79,7 +79,7 @@ theorem encard_inter_fiber_of_injOn (n : ℕ) (z : M → V n) (S : Set M) (hS : 
       · rintro ⟨hb, hba⟩; exact hS hb ha hba
       · rintro rfl; exact ⟨ha, rfl⟩
     rw [h1, Set.encard_singleton]
-    simp [Set.indicator_apply, Set.mem_image_of_mem z ha]
+    simp [Set.mem_image_of_mem z ha]
   · have h1 : S ∩ z ⁻¹' {y} = ∅ := by
       ext b
       simp only [Set.mem_inter_iff, Set.mem_preimage, Set.mem_singleton_iff,
@@ -87,7 +87,7 @@ theorem encard_inter_fiber_of_injOn (n : ℕ) (z : M → V n) (S : Set M) (hS : 
       intro hb hby
       exact hy ⟨b, hb, hby⟩
     rw [h1, Set.encard_empty]
-    simp [Set.indicator_apply, hy]
+    simp [hy]
 
 end VolAux
 
@@ -199,8 +199,8 @@ theorem lintegral_vol_chart {M : Type*} [TopologicalSpace M] [SecondCountableTop
     congr 1
     funext x
     by_cases hx : x ∈ e.source
-    · simp [Set.indicator_apply, hx]
-    · simp [Set.indicator_apply, hx, hs x hx]
+    · simp [hx]
+    · simp [hx, hs x hx]
   rw [h1, vol_restrict_source n z hz e he,
     lintegral_map' hf.aemeasurable (e.continuousOn_symm.aemeasurable e.open_target.measurableSet)]
 
@@ -211,8 +211,8 @@ theorem integral_vol_chart {M : Type*} [TopologicalSpace M] [SecondCountableTopo
     congr 1
     funext x
     by_cases hx : x ∈ e.source
-    · simp [Set.indicator_apply, hx]
-    · simp [Set.indicator_apply, hx, hs x hx]
+    · simp [hx]
+    · simp [hx, hs x hx]
   rw [h1, vol_restrict_source n z hz e he,
     integral_map (e.continuousOn_symm.aemeasurable e.open_target.measurableSet)
       hf.aestronglyMeasurable]

@@ -91,7 +91,7 @@ theorem hpk_row (i m : Fin (2 * r + k + 1)) :
   have hi := i.isLt
   have hm := m.isLt
   unfold Hpk tau sgn
-  simp only [Fin.ext_iff, Fin.val_mk]
+  simp only [Fin.ext_iff]
   split_ifs <;> first | rfl | omega | (exfalso; omega) | norm_num
 
 theorem hpk_mul_apply (A : Matrix (Fin (2 * r + k + 1)) (Fin (2 * r + k + 1)) ℂ)

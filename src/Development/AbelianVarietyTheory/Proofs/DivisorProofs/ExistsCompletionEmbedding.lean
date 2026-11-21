@@ -15,7 +15,7 @@ theorem residue_exists (k A : Type) [Field k] [IsAlgClosed k] [CommRing A] [Alge
     (Ideal.Quotient.mk Q c)
   refine ⟨a, ?_⟩
   rw [← Ideal.Quotient.eq_zero_iff_mem, map_sub, ← ha]
-  simp [Ideal.Quotient.algebraMap_eq]
+  simp
 
 section Dedekind
 variable {A : Type} [CommRing A] [IsDedekindDomain A]

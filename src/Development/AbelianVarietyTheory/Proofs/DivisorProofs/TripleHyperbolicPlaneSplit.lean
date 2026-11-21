@@ -490,8 +490,7 @@ theorem exists_model_isEv : GlobalTheory.ThK.KP → ∀ (F E : Type) [Field F] [
         · obtain ⟨a, rfl⟩ := h
           simp [hj.extend_apply]
         · simp [Function.extend_apply' _ _ _ h]
-      simp only [ContinuousLinearMap.comp_apply, hR, hf₀, hz, ContinuousLinearMap.zero_apply,
-        SchwartzMap.zero_apply] at this
+      simp only [ContinuousLinearMap.comp_apply, hR, hf₀, hz, ContinuousLinearMap.zero_apply] at this
       exact hb0 this
     · intro v
       refine ⟨rfl, ?_⟩

@@ -20,7 +20,7 @@ theorem detOn_prefix {n b : ℕ} {ε : Fin n → Bool} {W' : Flag n b}
     (hW : IsIsoFlag ε (fun _ => 1) W') {x : Fin b → ℝ} {t : UJ ε} (ht : IsSplit ε W' x t) (m : Fin (b + 1)) :
     detOn (uMat t) (W' m) = Real.exp (∑ l with l.castSucc < m, x l) := by
   induction m using Fin.induction with
-  | zero => simp [hW.1, detOn_bot, Fin.not_lt_zero]
+  | zero => simp [hW.1, detOn_bot]
   | succ m ih =>
     rw [ht.detOn_succ hW m, ih, ← Real.exp_add]
     congr 1

@@ -41,7 +41,7 @@ theorem leftInv_mulVec {n n₁ : ℕ} (hσ : ∀ x, σ (σ x) = x) {J : Matrix (
     have h := hv (Pi.single j 1)
     rw [GlobalTheory.LeviPlaneSection.form_skew hσ hJ, neg_eq_zero, map_eq_zero] at h
     refine Eq.trans ?_ h
-    simp only [form, Matrix.mulVec, dotProduct, Matrix.transpose_apply, Matrix.map_apply, Pi.zero_apply,
+    simp only [form, Matrix.mulVec, dotProduct, Matrix.transpose_apply, Matrix.map_apply,
       Pi.single_apply, mul_ite, mul_one, mul_zero, Finset.sum_ite_eq', Finset.mem_univ, if_true, Finset.mul_sum]
     rw [Finset.sum_comm]
     exact Finset.sum_congr rfl fun _ _ => Finset.sum_congr rfl fun _ _ => by ring

@@ -120,8 +120,8 @@ theorem coefR [NumberField E] (σ : E →ₐ[F] E) {n d : ℕ} (X : Spc F E n) (
       refine Finset.sum_congr rfl fun i _ => ?_
       rw [Finset.smul_sum]
       refine Finset.sum_congr rfl fun j _ => ?_
-      simp only [incM, incV, Matrix.smul_apply, Matrix.map_apply, Matrix.vecMulVec_apply, map_mul, map_smul,
-        GlobalTheory.SuppOut.cA_inclR, smul_mul_assoc, Algebra.smul_def, AlgHom.commutes]
+      simp only [incM, incV, Matrix.smul_apply, Matrix.map_apply, Matrix.vecMulVec_apply, map_mul,
+        GlobalTheory.SuppOut.cA_inclR, Algebra.smul_def, AlgHom.commutes]
       ring
     rw [he]
     change Algebra.TensorProduct.map (evFin F v) (AlgHom.id F E)
@@ -156,7 +156,7 @@ theorem read_shift (σ : E →ₐ[F] E) (hcc : ∀ z : AE F E, cA σ (cA σ z) =
   refine Finset.sum_congr rfl fun i _ => ?_
   rw [Finset.mul_sum]
   refine Finset.sum_congr rfl fun j _ => ?_
-  simp only [Matrix.smul_apply, Matrix.vecMulVec_apply, smul_eq_mul, map_smul, map_mul, hcc, incV,
+  simp only [Matrix.smul_apply, Matrix.vecMulVec_apply, smul_eq_mul, map_mul, hcc, incV,
     GlobalTheory.SuppOut.cA_inclR, Algebra.smul_def, AlgHom.commutes]
   ring
 

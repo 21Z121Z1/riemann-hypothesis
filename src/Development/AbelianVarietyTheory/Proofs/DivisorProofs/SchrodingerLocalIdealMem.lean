@@ -60,7 +60,7 @@ theorem mem_conjI_iff_span (σ : E →ₐ[F] E) (𝔠 : FractionalIdeal (𝓞 E)
   rw [conjI, FractionalIdeal.mem_extended_iff]
   have h : (IsLocalization.map E (conjO σ) (conjO_le σ) : E →+* E) = (σ : E →+* E) :=
     IsLocalization.ringHom_ext (𝓞 E)⁰ (RingHom.ext fun x => by
-      simp [IsLocalization.map_eq, conjO, RingOfIntegers.mapRingHom_apply])
+      simp [conjO, RingOfIntegers.mapRingHom_apply])
   have h' : (IsLocalization.map E (conjO σ) (conjO_le σ) : E → E) = σ := congrArg DFunLike.coe h
   rw [h']
 

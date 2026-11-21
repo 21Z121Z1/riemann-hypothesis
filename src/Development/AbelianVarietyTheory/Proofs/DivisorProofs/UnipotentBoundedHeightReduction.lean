@@ -143,7 +143,7 @@ theorem adj_adj (hσ : ∀ a, σ (σ a) = a) {Li L : Matrix (Fin d) (Fin d) E} (
   have h : incM F Li * incM F L = 1 := by rw [← incM_mul, hLi, incM_one]
   simp only [adj_apply, cT_mul, cT_incM, cT_cT hσ, hL1, hL2, incM_neg, Matrix.mul_assoc]
   rw [← Matrix.mul_assoc (incM F Li) (-incM F L), Matrix.mul_neg, h]
-  simp [Matrix.neg_mul, h]
+  simp [h]
 
 theorem adj_incM {Li L : Matrix (Fin d) (Fin d) E} (A : Matrix (Fin d) (Fin d) E) :
     adj σ Li L (incM F A) = incM F (Li * (A.map σ)ᵀ * L) := by
@@ -445,7 +445,7 @@ theorem exists_bounded_translate : ∀ (F E : Type) [Field F] [NumberField F] [F
   have hcomm : ∀ X, hh * X = X * hh := by
     intro X
     have : hh = Matrix.scalar (Fin d) (inclR (F := F) (AF F) 2⁻¹) := by
-      ext i j; by_cases hij : i = j <;> simp [hhdef, incM, hij, Matrix.scalar_apply, Matrix.diagonal_apply]
+      ext i j; by_cases hij : i = j <;> simp [hhdef, incM, hij, Matrix.scalar_apply]
     rw [this]; exact (Matrix.scalar_commute _ (fun _ => Commute.all _ _) X)
   obtain ⟨K₀, hK₀, hK₀s⟩ := GlobalTheory.AutFunCompare.tens_cocompact (F := F) (E := E)
   set K : Set (Matrix (Fin d) (Fin d) (AE F E)) := Set.pi Set.univ fun _ => Set.pi Set.univ fun _ => K₀ with hKdef

@@ -51,7 +51,7 @@ theorem localBiholom_partial_ne_zero_of_vanishing :
     have hev : (fun t : ℂ => T (z0 + t • v) j) =ᶠ[𝓝 0] fun _ => (0:ℂ) := by
       filter_upwards [htend.eventually hvan] with t ht
       apply ht
-      simp [v, Pi.single_apply, Ne.symm hl, hk]
+      simp [v, Ne.symm hl, hk]
     have hg0 : HasDerivAt (fun t : ℂ => T (z0 + t • v) j) 0 0 :=
       (hasDerivAt_const (0:ℂ) (0:ℂ)).congr_of_eventuallyEq hev
     exact hg.unique hg0

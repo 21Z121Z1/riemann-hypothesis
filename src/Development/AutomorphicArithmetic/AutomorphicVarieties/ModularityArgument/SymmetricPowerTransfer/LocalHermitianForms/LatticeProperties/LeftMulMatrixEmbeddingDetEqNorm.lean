@@ -95,7 +95,7 @@ theorem ent_of_zk [IsDomain O] [IsDiscreteValuationRing O] [IsFractionRing O K] 
   obtain ⟨r, hr⟩ := hw
   intro s t
   obtain ⟨a, ha⟩ := kg_ent hk s t
-  exact ⟨r * a, by simp [sc_val, hr, ha]⟩
+  exact ⟨r * a, by simp [hr, ha]⟩
 
 end Mat
 
@@ -215,18 +215,18 @@ theorem cls_smul (s : Kˣ) (S : Set (Etau K τ)) : cls τ (((s : K) • ·) '' S
   ext T
   constructor
   · rintro ⟨r, rfl⟩
-    exact ⟨r * s, by simp [← Set.image_comp, Function.comp_def, mul_smul]⟩
+    exact ⟨r * s, by simp [← Set.image_comp, mul_smul]⟩
   · rintro ⟨r, rfl⟩
-    exact ⟨r * s⁻¹, by simp [← Set.image_comp, Function.comp_def, smul_smul]⟩
+    exact ⟨r * s⁻¹, by simp [← Set.image_comp, smul_smul]⟩
 
 theorem cls_mul (t : Etau K τ) (S : Set (Etau K τ)) :
     cls τ ((t * ·) '' S) = (fun S => (t * ·) '' S) '' cls τ S := by
   ext T
   constructor
   · rintro ⟨r, rfl⟩
-    exact ⟨_, ⟨r, rfl⟩, by simp [← Set.image_comp, Function.comp_def]⟩
+    exact ⟨_, ⟨r, rfl⟩, by simp [← Set.image_comp]⟩
   · rintro ⟨_, ⟨r, rfl⟩, rfl⟩
-    exact ⟨r, by simp [← Set.image_comp, Function.comp_def]⟩
+    exact ⟨r, by simp [← Set.image_comp]⟩
 
 theorem cls_lat [IsFractionRing O K] {g g' : GL (Fin 2) K} :
     cls τ (LL O τ g) = cls τ (LL O τ g') ↔ g⁻¹ * g' ∈ ZK O K := by

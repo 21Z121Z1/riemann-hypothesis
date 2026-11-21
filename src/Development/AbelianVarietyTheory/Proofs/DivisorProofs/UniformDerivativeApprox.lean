@@ -39,7 +39,7 @@ theorem fibre_fderiv_uniformly_near_id :
   have hη0 : ‖η‖ ≤ δ₀ := hη.trans (min_le_left _ _)
   have hη1 : ‖η‖ < δ₁ := lt_of_le_of_lt (hη.trans (min_le_right _ _)) (half_lt_self hδ₁)
   have hdist : dist (z, η) (z, (0:E)) = ‖η‖ := by
-    simp [Prod.dist_eq, dist_eq_norm]
+    simp [dist_eq_norm]
   have hmemC : (z, η) ∈ cthickening δ₀ (K ×ˢ ({0} : Set E)) :=
     mem_cthickening_of_dist_le _ (z, 0) _ _ ⟨hz, rfl⟩ (hdist ▸ hη0)
   have h0C : (z, (0:E)) ∈ cthickening δ₀ (K ×ˢ ({0} : Set E)) :=

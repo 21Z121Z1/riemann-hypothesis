@@ -207,7 +207,7 @@ private lemma inUJ_exp_real_smul_of_inG {n : ℕ} {ε : Fin n → Bool} {X : Mat
       _ = -(Jm ε * X * Jm ε) := by rw [h1, Matrix.neg_mul]
   have hYc : ((u : ℂ) • X)ᴴ = Jm ε * (-((u : ℂ) • X)) * Jm ε := by
     rw [Matrix.conjTranspose_smul, h2]
-    simp [Matrix.mul_smul, Matrix.smul_mul, Matrix.mul_assoc]
+    simp [Matrix.mul_assoc]
   let U : (Matrix (Fin n) (Fin n) ℂ)ˣ := ⟨Jm ε, Jm ε, hJ, hJ⟩
   have hU : ((u : ℂ) • X)ᴴ = (U : Matrix (Fin n) (Fin n) ℂ) * (-((u : ℂ) • X)) *
       ((U⁻¹ : (Matrix (Fin n) (Fin n) ℂ)ˣ) : Matrix (Fin n) (Fin n) ℂ) := hYc

@@ -35,7 +35,7 @@ lemma conj_conj (φ : E →+* ℂ) :
     ComplexEmbedding.conjugate (ComplexEmbedding.conjugate φ) = φ := by
   first
     | exact ComplexEmbedding.conjugate_conjugate φ
-    | (ext x; simp [ComplexEmbedding.conjugate_coe_eq])
+    | (ext x; simp)
 
 lemma inner_iota (x y : E) :
     inner ℝ (iota E x) (iota E y) = ∑ w : CP E, (w.1.embedding x * conj (w.1.embedding y)).re := by

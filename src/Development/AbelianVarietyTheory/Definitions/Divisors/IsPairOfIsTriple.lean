@@ -115,7 +115,7 @@ theorem pl_adapted (B : Base F E) (ε : E) : (pl E).IsAdapted σ B (hyp F ε) (p
       simpa [pl] using h 0 trivial
   cartan := fun w => ⟨Subsingleton.elim _ _, 1, one_ne_zero, by
     funext i
-    fin_cases i <;> simp [pl, hyp, Matrix.mulVec, dotProduct, Fin.sum_univ_two]⟩
+    fin_cases i <;> simp [pl, hyp, dotProduct, Fin.sum_univ_two]⟩
   bas := fun v i => by
     refine ⟨fun h r => ?_, fun h r => ?_, fun j => j.elim0⟩ <;> fin_cases i <;> fin_cases r <;> simp_all [pl, hyp]
 

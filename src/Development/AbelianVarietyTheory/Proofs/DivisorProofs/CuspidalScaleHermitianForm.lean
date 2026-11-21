@@ -66,7 +66,7 @@ theorem unipRad_map (J : Matrix (Fin n) (Fin n) E) {k : E} (hk : k ≠ 0) {r : �
   ext x
   obtain ⟨y, rfl⟩ := (toJ (σ := σ) J hk).surjective x
   rw [Set.mem_image_iff_of_inverse (f := (toJ J hk).toMonoidHom) (g := (toJ J hk).symm) (fun a => by simp) (fun a => by simp)]
-  simp only [Set.mem_setOf_eq, MulEquiv.coe_toMonoidHom, MulEquiv.symm_apply_apply]
+  simp only [Set.mem_setOf_eq, MulEquiv.symm_apply_apply]
   have hm : matHom (AF F) σ J (toJ J hk y) = matHom (AF F) σ (k • J) y := rfl
   have hu : IsUnit (inclR (F := F) (AF F) k) := (IsUnit.mk0 k hk).map _
   have ha : adMat F (Formalism.UG.cT (σ : E →+* E) C * k • J) = inclR (F := F) (AF F) k • adMat F (Formalism.UG.cT (σ : E →+* E) C * J) := by

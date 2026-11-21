@@ -41,7 +41,7 @@ def moveExp (n : Fin 5 → ℤ) : Fin 5 → ℤ := ![0, 0, n 2, n 3 + n 0, n 4 +
 theorem aeval_lin_moveExp (n : Fin 5 → ℤ) :
     aeval (![X 3, X 4, X 2, X 3, X 4] : Fin 5 → MvPolynomial (Fin 5) ℝ) (lin fun j => (n j : ℝ)) =
       lin fun j => (moveExp n j : ℝ) := by
-  simp [lin, Fin.sum_univ_five, moveExp, MvPolynomial.algebraMap_eq]
+  simp [lin, Fin.sum_univ_five, moveExp]
   ring
 
 theorem sum_moveExp {G : Type*} [AddCommGroup G] (x : Fin 5 → G) (h₀ : x 0 = x 3) (h₁ : x 1 = x 4) (n : Fin 5 → ℤ) :

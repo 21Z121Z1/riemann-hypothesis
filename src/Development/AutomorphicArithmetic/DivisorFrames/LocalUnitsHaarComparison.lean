@@ -68,10 +68,10 @@ theorem UpperTheory.local_units_haar_comparison :
         constructor
         · rintro ⟨x, hx, rfl⟩
           refine ⟨j (a * x), ⟨a * x, hx, rfl⟩, ?_⟩
-          simp [j, Units.smul_def, map_mul]
+          simp [j, map_mul]
         · rintro ⟨_, ⟨x, hx, rfl⟩, rfl⟩
           refine ⟨a⁻¹ * x, by simpa using hx, ?_⟩
-          simp [j, Units.smul_def, map_mul, map_inv]
+          simp [j, map_mul, map_inv]
       rw [e, ← distribHaarChar_mul lam (φ a)⁻¹ (j '' s), map_inv, distribHaarChar_Ev]
       rfl
     ext s hs

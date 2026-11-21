@@ -15,7 +15,7 @@ namespace GlobalTheory.Sl2Ad
 
 theorem form_isSymm {K : Type} [Field K] : (form (K := K)).IsSymm := by
   first
-  | exact ⟨fun v w => by simp only [RingHom.id_apply, form_apply]; ring⟩
+  | exact ⟨fun v w => by simp only [form_apply]; ring⟩
   | exact fun v w => by simp only [RingHom.id_apply, form_apply]; ring
   | (intro v w; simp only [RingHom.id_apply, form_apply]; ring)
 

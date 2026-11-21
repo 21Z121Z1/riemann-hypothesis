@@ -68,7 +68,7 @@ theorem levi_unique : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     have hs : incV F (Pi.single j (1 : E)) = Pi.single j 1 := by
       funext k; by_cases hk : k = j
       · subst hk; simp [incV]
-      · simp [incV, Pi.single_apply, hk]
+      · simp [incV, hk]
     rw [hs, Matrix.mulVec_single_one, Matrix.mulVec_single_one] at h
     simpa using h
   exact Subtype.ext (Units.ext hmat)

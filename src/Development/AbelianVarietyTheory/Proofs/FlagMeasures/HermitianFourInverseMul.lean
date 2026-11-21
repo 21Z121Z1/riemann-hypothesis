@@ -391,9 +391,9 @@ def toyExample (L : LocE F E) (ϖ : 𝒪[F]) (hϖ : Irreducible ϖ) (m : ℕ) : 
   es := ![extZ (e4 m) ![0,1,-1,1]]
   es' := ![extZ (e4 m) ![1,-1,0,1]]
   gram := by
-    intro a b; fin_cases a <;> fin_cases b <;> simp [hf_extZ] <;> simp [H4, hf, Fin.sum_univ_succ, Fin.last]
+    intro a b; fin_cases a <;> fin_cases b <;> simp [hf_extZ] <;> simp [H4, hf, Fin.sum_univ_succ]
   gram' := by
-    intro a b; fin_cases a <;> fin_cases b <;> simp [hf_extZ] <;> simp [H4, hf, Fin.sum_univ_succ, Fin.last]
+    intro a b; fin_cases a <;> fin_cases b <;> simp [hf_extZ] <;> simp [H4, hf, Fin.sum_univ_succ]
   dual := by
     intro a b; fin_cases a <;> fin_cases b <;> simp [hf_extZ] <;> simp [H4, hf, Fin.sum_univ_succ]
   dual' := by

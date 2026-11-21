@@ -39,9 +39,9 @@ theorem matrix_eq_zero_of_quad {e : ℕ} (H : Matrix (Fin e) (Fin e) ℂ)
   have e2 := hsmul (Pi.single j 1) (Pi.single k 1)
   rw [hq, hq, hq] at e1 e2
   have hjk : dotProduct (star (Pi.single j (1 : ℂ))) (Matrix.mulVec H (Pi.single k 1)) = H j k := by
-    simp [Matrix.mulVec_single, dotProduct_single, Pi.single_apply]
+    simp [Matrix.mulVec_single]
   have hkj : dotProduct (star (Pi.single k (1 : ℂ))) (Matrix.mulVec H (Pi.single j 1)) = H k j := by
-    simp [Matrix.mulVec_single, dotProduct_single, Pi.single_apply]
+    simp [Matrix.mulVec_single]
   rw [hjk, hkj] at e1 e2
   rw [Matrix.zero_apply]
   linear_combination (-1/2 : ℂ) * e1 + (Complex.I / 2) * e2 + ((H j k - H k j) / 2) * Complex.I_sq

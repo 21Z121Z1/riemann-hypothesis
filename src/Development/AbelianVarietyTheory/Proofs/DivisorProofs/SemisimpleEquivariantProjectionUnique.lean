@@ -127,7 +127,7 @@ theorem GlobalTheory.LocFinIso.hermitian_matrix_of_commuting_idempotent : ∀ (G
             show ((e (π (a • u)) : D) : V) = _
             rw [π.map_smul a u, hsmulV]
           rw [key, map_sum]
-          simp only [map_smul, hLQ]
+          simp only [map_smul]
           rw [map_sum, Submodule.coe_sum]
           simp only [map_smul, Submodule.coe_smul]
           refine Finset.sum_congr rfl (fun κ _ => ?_)

@@ -52,7 +52,7 @@ theorem hermForm_expand {m g : ℕ} (Hm : Matrix (Fin g) (Fin g) ℂ) (W : Fin m
     smul_dotProduct, dotProduct_smul, smul_eq_mul, Finset.mul_sum]
   rw [Finset.sum_comm]
   refine Finset.sum_congr rfl fun j _ => Finset.sum_congr rfl fun i _ => ?_
-  simp [Complex.star_def]; ring
+  simp; ring
 
 end GlobalTheory.LieHt.NrmSq
 

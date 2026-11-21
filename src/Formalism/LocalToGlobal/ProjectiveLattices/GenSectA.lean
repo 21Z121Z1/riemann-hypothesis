@@ -240,7 +240,7 @@ theorem pderiv_gs (x : Fin m → Ω) (j₀ : Fin m) (q : {p : Fin (D + 1) × Fin
   · have hne : p ≠ q.1 := fun h => q.2 (h ▸ hp)
     rw [gs, if_pos hp, if_neg hne, zero_sub, map_neg]
     congr 1
-    simp only [map_sum, Derivation.leibniz, pderiv_C, smul_zero, smul_eq_mul, pderiv_xv, mul_zero, zero_add]
+    simp only [map_sum, Derivation.leibniz, pderiv_C, smul_eq_mul, pderiv_xv, mul_zero, zero_add]
     rw [Finset.sum_eq_single q.1.2]
     · by_cases h1 : p.1 = q.1.1
       · have e : (p.1, q.1.2) = q.1 := Prod.ext h1 rfl

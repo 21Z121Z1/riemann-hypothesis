@@ -95,7 +95,7 @@ theorem pow_form {U : Type} [CommGroup U] (hM : M ≠ 0) {z : U} (hz : z ^ M = 1
 
 theorem card_std (hM : M ≠ 0) : Nat.card (Std h M) = M ^ (2 * h) := by
   have : NeZero M := ⟨hM⟩
-  simp [Nat.card_prod, two_mul, pow_add]
+  simp [two_mul, pow_add]
 
 end Labels
 

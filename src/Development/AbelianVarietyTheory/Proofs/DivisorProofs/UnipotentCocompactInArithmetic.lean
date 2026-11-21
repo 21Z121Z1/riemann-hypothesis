@@ -181,8 +181,7 @@ theorem cocompact_unip : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
           P *ᵥ v - v = (P - 1) *ᵥ v from fun P v => by rw [Matrix.sub_mulVec, Matrix.one_mulVec]]
         rw [Matrix.mulVec_mulVec, hM]
         funext i
-        simp only [Matrix.mulVec, dotProduct, Matrix.of_apply, Pi.smul_apply, smul_eq_mul, incV, Finset.sum_mul,
-          Finset.mul_sum]
+        simp only [Matrix.mulVec, dotProduct, Matrix.of_apply, Pi.smul_apply, smul_eq_mul, incV, Finset.sum_mul]
         refine Finset.sum_congr rfl fun j _ => by ring
     exact fun g hg => hle hg
   obtain ⟨K', hK', hKs⟩ := GlobalTheory.UAut.cocompact_unipFlag hJ' hσ hC (fun _ => 0)

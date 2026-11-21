@@ -56,7 +56,7 @@ theorem restrS_ne_zero {κ ι κ₁ : Type} [Fintype κ] [Fintype κ₁] (eq : �
   have hc : ContDiff ℝ (⊤ : ℕ∞) (fun x => ((b x : ℝ) : ℂ)) := Complex.ofRealCLM.contDiff.comp b.contDiff
   have h1 := congrArg (fun T : SInf F κ →L[ℂ] SInf F κ₁ => T (hs.toSchwartzMap hc) 0) h
   have h2 : b 0 = 1 := b.one_of_mem_closedBall (by simp [b])
-  simp only [restrS_apply, matrixExtendByZero_zero, ContinuousLinearMap.zero_apply, SchwartzMap.zero_apply] at h1
+  simp only [restrS_apply, matrixExtendByZero_zero, ContinuousLinearMap.zero_apply] at h1
   change ((b 0 : ℝ) : ℂ) = 0 at h1
   simp [h2] at h1
 

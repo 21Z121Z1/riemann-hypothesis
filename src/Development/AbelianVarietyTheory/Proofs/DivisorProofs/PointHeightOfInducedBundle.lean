@@ -338,7 +338,7 @@ theorem ht_twist_neg {C : CxSt F} (A : Adl C Y) {cf : HeightOneSpectrum (𝓞 F)
       ∑ᶠ v, SA v + N * (A.n : ℕ) * ∑ᶠ v, cf v := by
     rw [finsum_congr hT, finsum_add_distrib hSA hc, mul_assoc, mul_finsum, mul_finsum]
   rw [Adl.ht, hsplit, Adl.ht]
-  simp only [Adl.twist, Pi.add_apply, Pi.zero_apply, add_zero]
+  simp only [Adl.twist, add_zero]
   field_simp
   ring
 

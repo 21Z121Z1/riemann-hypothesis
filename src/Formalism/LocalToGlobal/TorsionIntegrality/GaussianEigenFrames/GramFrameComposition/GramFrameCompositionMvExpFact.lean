@@ -41,10 +41,10 @@ theorem linSub_linSub {n m p : Type} [Finite n] [Fintype m] [Fintype p] (A : n â
   simp only [map_mul, linSubHom_apply, linSub_X]
   have hc : âˆ€ w, linSubHom B (MvPowerSeries.C (A i w)) = MvPowerSeries.C (A i w) := fun w => by
     rw [linSubHom_apply, linSub_C]
-  simp only [hc, Finset.mul_sum, map_sum, map_mul]
+  simp only [Finset.mul_sum, map_sum, map_mul]
   rw [Finset.sum_comm]
   refine Finset.sum_congr rfl fun x _ => ?_
-  simp only [Finset.sum_mul, map_sum, map_mul]
+  simp only [Finset.sum_mul]
   refine Finset.sum_congr rfl fun w _ => ?_
   simp only [linSub_C]
   ring

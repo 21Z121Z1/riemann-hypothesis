@@ -139,7 +139,7 @@ theorem finite_forms {k J : Type} [Field k] [Finite J] (C : Set (J → k)) (d : 
 example {R : Type} [CommRing R] (a : R) : valR (𝟙 (Sp R)) ⊤ (constFn (𝟙 (Sp R)) ⊤ a) = a := by
   have e : ∀ (h : (⊤ : (Sp R).Opens) ≤ ⊤) (x : Γ(Sp R, ⊤)), ((Sp R).presheaf.map (homOfLE h).op).hom x = x :=
     fun h x => congrArg (fun φ => CommRingCat.Hom.hom φ x) ((Sp R).presheaf.map_id _)
-  simp only [valR, constFn, Scheme.Hom.appLE, Scheme.Hom.id_app, Category.id_comp]
+  simp only [valR, constFn, Scheme.Hom.appLE, Scheme.Hom.id_app]
   refine (dif_pos (fun _ _ => trivial)).trans ?_
   erw [e, e]
   exact (Scheme.ΓSpecIso (CommRingCat.of R)).inv_hom_id_apply a

@@ -132,7 +132,7 @@ example (a d : ℝ) (ha : a ≠ 0) (b : ℂ) :
 
 example {g : ℕ} (Hm : Matrix (Fin g) (Fin g) ℂ) (p q : Fin g) :
     hermForm Hm (Pi.single p 1) (Pi.single q 1) = Hm p q := by
-  simp [hermForm, ← Pi.single_star]
+  simp [hermForm]
 
 end Minor
 

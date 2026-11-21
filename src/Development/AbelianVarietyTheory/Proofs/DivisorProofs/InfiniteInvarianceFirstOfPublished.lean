@@ -34,7 +34,7 @@ theorem infInvA_holds : GlobalTheory.FunPr.Hypotheses₂ → GlobalTheory.ThK.Le
     intro x hx
     have h : mat x * Matrix.vecMulVec (incV F H.x) (incV F H'.y) = Matrix.vecMulVec (incV F H.x) (incV F H'.y) :=
       (Matrix.mul_vecMulVec _ _ _).trans (by rw [hx])
-    simp only [actAB, shiftA, Units.val_one, one_smul, Prod.snd_one, Prod.fst]
+    simp only [actAB, shiftA, Units.val_one, one_smul]
     simpa [mat] using h
   have hunipfix : ∀ n ∈ unip σ G.V H, mat n *ᵥ incV F H.x = incV F H.x := by
     intro n hn

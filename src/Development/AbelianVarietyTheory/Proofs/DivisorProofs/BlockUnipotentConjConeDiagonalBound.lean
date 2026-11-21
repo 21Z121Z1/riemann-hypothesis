@@ -45,7 +45,7 @@ theorem unip_mul_diag_cone : ∀ (E : Type) [Field E] [NumberField E] [IsTotally
     congr 1
     simp only [nilM, Matrix.of_apply]
     split_ifs with h
-    · simp only [Pi.add_apply, Pi.mul_apply, Pi.smul_apply, smul_eq_mul, Complex.real_smul, add_right_inj]
+    · simp only [Pi.add_apply, Pi.mul_apply, Pi.smul_apply, Complex.real_smul, add_right_inj]
       have := hr k
       have hk0 : (r k : ℂ) ≠ 0 := by exact_mod_cast this.ne'
       push_cast

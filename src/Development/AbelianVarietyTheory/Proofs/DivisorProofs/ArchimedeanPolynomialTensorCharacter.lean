@@ -31,7 +31,7 @@ theorem jm_eq_diagonal (p q : ℕ) :
   simp only [Matrix.diagonal_one]
   congr 1
   ext i j
-  by_cases h : i = j <;> simp [h, Matrix.diagonal_apply]
+  by_cases h : i = j <;> simp [h]
 
 theorem not_sameBlock_symm {p q : ℕ} {a b : Formalism.BasicNotions.TH.Ix p q} (h : ¬ Formalism.BasicNotions.TH.sameBlock a b) :
     ¬ Formalism.BasicNotions.TH.sameBlock b a := by

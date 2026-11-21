@@ -45,7 +45,7 @@ theorem thetaInterchange_isPure (hPr : _root_.GlobalTheory.FunPr.ThetaLocalInput
     simp only [hc, hΛ]
     rw [hasDerivAt_iff_tendsto_slope]
     refine ((Λ.continuous.tendsto g).comp hlim).congr' (Eventually.of_forall fun t => ?_)
-    simp [slope_def_module, map_sub, map_smul]
+    simp [slope_def_module, map_sub]
 end GlobalTheory.ThetaInterchange
 open GlobalTheory.ThetaInterchange in
 theorem GlobalTheory.ThetaInterchange.hasDerivAt_theta_integral_interchange : _root_.GlobalTheory.FunPr.ThetaLocalInputs → ∀ (D : D7) {n k : ℕ} (Xs : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Spc D.host.F D.host.E n) (Ws : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Spc D.host.F D.host.E k)

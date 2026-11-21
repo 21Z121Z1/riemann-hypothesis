@@ -139,7 +139,7 @@ theorem lamY_zero (q : ℕ) (ex : ℕ → ℕ) (x : Sp E (n + 0)) : x ∈ LocE.l
   have e : (LinearMap.pi fun l : Fin (n + 0) => ((q : E) ^ LocE.scE n ex l.1)⁻¹ • (LinearMap.proj l : Sp E (n + 0) →ₗ[E] E)) x = x := by
     funext l
     have : l.1 < n := l.2
-    simp [LocE.scE, this]
+    simp [LocE.scE]
   show (LinearMap.pi fun l : Fin (n + 0) => ((q : E) ^ LocE.scE n ex l.1)⁻¹ • (LinearMap.proj l : Sp E (n + 0) →ₗ[E] E)) x ∈ stdAt E (n + 0) P ↔ _
   rw [e]
 

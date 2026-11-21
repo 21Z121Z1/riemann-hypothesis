@@ -21,7 +21,7 @@ theorem diagonalizable_corank_le_two {V : Type*} {κ : Type} [AddCommGroup V] [M
     have : (b.coord k) ∘ₗ S = ν k • b.coord k := b.ext fun l => by
       by_cases h : l = k
       · subst h; simp [hS]
-      · simp [hS, Finsupp.single_apply, h]
+      · simp [hS, h]
     simpa using LinearMap.congr_fun this x
   constructor
   · let q := (LinearMap.range S).mkQ
@@ -106,7 +106,7 @@ theorem exists_eigenbasis {V : Type*} [AddCommGroup V] [Module ℂ V] {g : ℕ} 
     funext l
     by_cases h : l = k.1
     · subst h; simp [M]
-    · simp [M, Pi.single_apply, h]
+    · simp [M, h]
   simp only [v]
   rw [hTQ, this, map_smul]
   rfl

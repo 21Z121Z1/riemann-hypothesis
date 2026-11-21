@@ -455,8 +455,8 @@ theorem isPullback_normalizationMap_of_isIntegralHom_of_mono {X T V Y : Scheme.{
       f.fromNormalization b :=
   (isPullback_normalizationMap_of_mono (f₁ ≫ c) b f (by simp [H])).of_iso
     (normalizationTransIso f₁ c (f₁ ≫ c) rfl).symm (.refl _) (.refl _) (.refl _)
-    (by simp [Iso.eq_inv_comp, normalizationTransIso, normalizationMap_comp])
-    (by simp [Iso.eq_inv_comp]) (by simp) (by simp)
+    (by simp [normalizationTransIso, normalizationMap_comp])
+    (by simp) (by simp) (by simp)
 
 section Localization
 

@@ -83,7 +83,7 @@ theorem deg_stdLat (m : ℕ) : deg (stdHerm K m) (stdLat K m) = 0 := by
     · by_cases h : i = j
       · subst h
         simp
-      · simp [h, Pi.single_apply, Ne.symm h]
+      · simp [h]
     · intro b _ hb
       simp [Pi.single_apply, hb]
     · simp

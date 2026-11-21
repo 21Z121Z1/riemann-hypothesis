@@ -33,9 +33,8 @@ theorem charpoly_lsmul_eq_pow (Λ O T : Type) [CommRing Λ] [CommRing O] [Algebr
       Matrix.blockDiagonal (fun _ => LinearMap.toMatrix c c (LinearMap.mulLeft Λ a)) := by
     ext ⟨i, k⟩ ⟨j, k'⟩
     simp only [LinearMap.toMatrix_apply, Module.Basis.smulTower_apply, Module.Basis.smulTower_repr,
-      Matrix.blockDiagonal_apply, Algebra.lsmul_coe, smul_smul, Module.Basis.repr_smul,
-      Module.Basis.repr_self, Finsupp.smul_single, Finsupp.single_apply, LinearMap.mulLeft_apply,
-      smul_eq_mul, mul_one]
+      Matrix.blockDiagonal_apply, Algebra.lsmul_coe, smul_smul,
+      LinearMap.mulLeft_apply]
     split_ifs with h1 h2 h2 <;> simp_all
   rw [hM, charpoly_blockDiagonal, Finset.prod_const, Finset.card_univ, Fintype.card_fin]
 

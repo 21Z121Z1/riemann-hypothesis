@@ -62,7 +62,7 @@ theorem exists_genPtMap {R R' : Type} [CommRing R] [IsDomain R] [CommRing R'] [I
   simp only [jK, spMap, ← Spec.map_comp]
   congr 1
   ext x
-  simp [IsLocalization.lift_eq]
+  simp
 
 end GlobalTheory.PolDeg.SymCoc
 

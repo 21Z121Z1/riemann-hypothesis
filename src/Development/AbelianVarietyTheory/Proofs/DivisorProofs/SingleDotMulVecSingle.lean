@@ -77,7 +77,7 @@ private theorem exists_aniso [CharZero E] (hσ : ∀ x, σ (σ x) = x) (J : Matr
       funext k
       by_cases h : k = i
       · subst h; simp [sv]
-      · simp [sv, Pi.single_apply, h]
+      · simp [sv, h]
     rw [h1, single_dot_mulVec_single]
     simpa using hi
   · push_neg at hd

@@ -467,7 +467,7 @@ theorem bcMap_bc {R R' : Type} [CommRing R] [Algebra ℚ R] [CommRing R'] [Algeb
       Algebra.TensorProduct.includeRight (((g : GL (Fin n) F × ℚˣ).1 : Matrix (Fin n) (Fin n) F) i j)
     simp [Algebra.TensorProduct.includeRight_apply, Algebra.TensorProduct.map_tmul]
   · apply Units.ext
-    simp only [bcMap, bc, simMap_snd]
+    simp only [bcMap, bc]
     exact f.commutes _
 
 end BcLemmas
@@ -518,7 +518,7 @@ def toP : G.GQ →* ℚ_[p]ˣ × ((i : Fin G.m) → GL (Fin G.n) (G.Fw i)) := G.
 
 theorem toPadic_fst (g : G.GQ) : (((G.toP g).1 : ℚ_[p]ˣ) : ℚ_[p]) = ((G.sim g : ℚ) : ℚ_[p]) := by
   show ((((ubc ℚ_[p] g : UPts G.star ℚ_[p]) : (ℚ_[p] ⊗[ℚ] G.C)ˣ × ℚ_[p]ˣ).2 : ℚ_[p]ˣ) : ℚ_[p]) = _
-  simp only [ubc, uMap_snd]
+  simp only [ubc]
   rfl
 
 theorem toPadic_snd (g : G.GQ) (w : G.W) :
@@ -845,7 +845,7 @@ theorem hK_QI : Module.finrank ℚ (⊤ : Subfield QI) = 2 ∧ ∀ τ : QI →+*
   · intro τ
     refine ⟨IsCyclotomicExtension.zeta 4 ℚ QI, Subfield.mem_top _, fun h => ?_⟩
     have h3 := congrArg (fun z => (τ z).re) zeta_sq
-    simp only [map_pow, map_neg, map_one, pow_two, map_mul, Complex.mul_re, h, Complex.neg_re, Complex.one_re] at h3
+    simp only [map_neg, map_one, pow_two, map_mul, Complex.mul_re, h, Complex.neg_re, Complex.one_re] at h3
     nlinarith [mul_self_nonneg (τ (IsCyclotomicExtension.zeta 4 ℚ QI)).re]
 
 instance fact_prime_five : Fact (Nat.Prime 5) := ⟨by norm_num⟩

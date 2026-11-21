@@ -153,7 +153,7 @@ def connFormL (τ : E → Matrix (Fin g) (Fin g) ℂ) (b v : E) :
 
 theorem connFormL_apply (τ : E → Matrix (Fin g) (Fin g) ℂ) (b v : E) (w : Ext (n + n + g)) :
     connFormL τ b v w = connForm τ b v w := by
-  simp [connFormL, connForm, ContinuousLinearMap.sum_apply]
+  simp [connFormL, connForm]
 
 def scZ (τ : E → Matrix (Fin g) (Fin g) ℂ) (h : Pt E g → ℝ) (β : Fin n → E) (u : ℝ) (P : Pt E g) :
     Ext (n + n + g) →L[ℂ] Ext (n + n + g) :=

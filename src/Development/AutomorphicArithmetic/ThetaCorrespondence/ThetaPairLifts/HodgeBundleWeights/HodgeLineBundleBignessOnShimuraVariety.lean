@@ -37,7 +37,7 @@ theorem hodgeLineBundle_isBig : _root_.GlobalTheory.CovTop.PublishedHodgeBundleT
   have ew : 2 • hodgeWt Dw - χ = w := by
     funext τ i
     simp only [w, Finset.sum_apply, NefWt.unitWt_apply, Finset.sum_ite_eq, Finset.mem_univ, if_true, Pi.sub_apply,
-      Pi.smul_apply, hodgeWt, CompHt.barWt, χ, smul_eq_mul]
+      Pi.smul_apply, hodgeWt, CompHt.barWt, χ]
     split_ifs <;> norm_num
   have hwnef : (letI := algebraΓOfHom (str₀ TF.X Z); IsNef c.F (L₀ TF.X Z w)) := by
     letI := algebraΓOfHom (str₀ TF.X Z)

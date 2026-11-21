@@ -34,7 +34,7 @@ theorem harmTy_le_ker {P Q R S : ℕ} (x : ℚ) (X : Mat P Q) (hX : IsKC X) :
     harmTy P Q R S x ≤ LinearMap.ker (fockAct1 P Q R S X - ((x : ℂ) * X.trace) • 1) := by
   refine Submodule.span_le.2 ?_
   rintro f ⟨_, hf⟩
-  simp [sub_eq_zero, hf X hX]
+  simp [hf X hX]
 
 theorem tensHarm_le_chiPart {F : Type} [Field F] [NumberField F] {P Q R S : ℕ} (x : InfinitePlace F → ℚ) :
     tensHarm F P Q R S x ≤ GlobalTheory.KFixIrr.chiPart (InfinitePlace F) P Q R S x := by

@@ -596,7 +596,7 @@ lemma sz_hb_eq (k : ℕ) :
       simp [ha, this]
       have := a.isLt; omega
   · have : a.val ≠ b.val := fun h => hab (Fin.ext h)
-    simp [hab, this]
+    simp [hab]
 
 lemma sz_castW_mem {k : ℕ} (μ : B.Mat k 0) (hμ : μ ∈ B.GV k 0) : (castW μ)ᴴ * Hb k * castW μ = Hb k := by
   have h : μᴴ * Hpk k 0 * μ = Hpk k 0 := hμ

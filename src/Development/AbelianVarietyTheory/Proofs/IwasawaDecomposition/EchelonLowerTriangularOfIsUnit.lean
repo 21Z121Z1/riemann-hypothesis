@@ -25,7 +25,7 @@ theorem echelon_lower_triangular_of_det_ne_zero {K : Type} [Field K] : ∀ (m : 
         (fun (i' : Fin m) => if k = 0 then -(M i'.succ q * (M 0 q)⁻¹) else if k = i'.succ then 1 else 0) i
     have hE0 : ∀ j : Fin (m+1), (E * M) 0 j = (M 0 q)⁻¹ * M 0 j := by
       intro j
-      simp [E, Matrix.mul_apply, Fin.sum_univ_succ, Fin.succ_ne_zero]
+      simp [E, Matrix.mul_apply]
     have hEs : ∀ (i' : Fin m) (j : Fin (m+1)), (E * M) i'.succ j = M i'.succ j - M i'.succ q * (M 0 q)⁻¹ * M 0 j := by
       intro i' j
       simp [E, Matrix.mul_apply, Fin.sum_univ_succ, Fin.succ_ne_zero, Fin.succ_inj]

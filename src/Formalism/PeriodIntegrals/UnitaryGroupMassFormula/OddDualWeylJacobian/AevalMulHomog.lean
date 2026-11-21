@@ -51,7 +51,7 @@ lemma genM_map (A : Matrix (Fin k) (Fin k) (MvPolynomial (Fin k × Fin k) R)) :
 lemma cM_map (A : Matrix (Fin k) (Fin k) (MvPolynomial (Fin k × Fin k) R)) (g : Matrix (Fin k) (Fin k) R) :
     (cM g).map (sbs A) = cM g := by
   ext i j
-  simp [cM, sbs_C]
+  simp [cM]
 
 lemma cM_mul (g h : Matrix (Fin k) (Fin k) R) : cM (g * h) = cM g * cM h := by
   first

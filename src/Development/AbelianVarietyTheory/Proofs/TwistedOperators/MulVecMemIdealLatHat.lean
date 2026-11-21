@@ -203,7 +203,7 @@ theorem mulVec_mem_idealLatHat {k : GA D V} (h : FinCong V 1 k) {I : Ideal (𝓞
 theorem gLat_mul {k k' : GA D V}
     (h : gLat V k' = (latHat V : Set (Fin V.rank → Af D.host.F ⊗[D.host.F] D.host.E))) : gLat V (k * k') = gLat V k := by
   conv_rhs => rw [gLat, ← h, gLat, Set.image_image]
-  simp only [gLat, map_mul, Units.val_mul, Subgroup.coe_mul, Matrix.mulVec_mulVec]
+  simp only [gLat, map_mul, Units.val_mul, Matrix.mulVec_mulVec]
 
 theorem gLat_one : gLat V 1 = (latHat V : Set (Fin V.rank → Af D.host.F ⊗[D.host.F] D.host.E)) := by
   simp [gLat]

@@ -195,7 +195,7 @@ theorem isSemisimpleModule_repD_of_locally_unitary : ∀ (G : Type) [Group G] (K
       rw [hρ]
       simp only [vec, map_sum, map_smul, hact κ κ.2, Finset.smul_sum, smul_smul]
       rw [Finset.sum_comm]
-      simp only [vec, Matrix.toEuclideanLin_apply, Matrix.mulVec, dotProduct, PiLp.smul_apply, smul_eq_mul, Finset.mul_sum, Finset.sum_smul, smul_smul]
+      simp only [Matrix.toEuclideanLin_apply, Matrix.mulVec, dotProduct, PiLp.smul_apply, smul_eq_mul, Finset.mul_sum, Finset.sum_smul]
       exact Finset.sum_congr rfl fun y _ => Finset.sum_congr rfl fun x _ => by rw [mul_comm (e.ofLp x)]
     exact isSemisimple_of_unitary_model (fun κ => Matrix.toEuclideanLin (A κ))
       (fun κ => inner_toEuclideanLin_of_unitary _ (hun κ κ.2)) g hbij hint

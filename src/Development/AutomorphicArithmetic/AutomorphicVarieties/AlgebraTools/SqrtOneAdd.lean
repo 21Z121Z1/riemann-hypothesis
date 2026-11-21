@@ -16,7 +16,7 @@ theorem UpperTheory.V.AlgebraTools.sqrt_one_add :
     (by
       have : (derivative (X ^ 2 - C a : B[X])).eval 1 = 2 := by
         simp only [derivative_sub, derivative_X_pow, derivative_C, eval_sub, eval_mul, eval_C,
-          eval_pow, eval_one, eval_zero]
+          eval_pow, eval_zero]
         norm_num
       rw [this]
       exact h2.map _)

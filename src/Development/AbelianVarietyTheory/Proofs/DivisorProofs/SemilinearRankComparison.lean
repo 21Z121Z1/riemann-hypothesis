@@ -122,7 +122,7 @@ theorem torsLen_diag [IsDomain R] {ι κ : Type} [Fintype ι] [Fintype κ] (b : 
           rw [← hc, hh, map_sum, Finsupp.finset_sum_apply]
           refine Finset.sum_eq_zero fun k _ => ?_
           have : f k ≠ t := fun e => hn ⟨k, e⟩
-          simp [Finsupp.single_apply, this]
+          simp [this]
         rw [map_smul, Finsupp.smul_apply, smul_eq_mul, mul_eq_zero] at h1
         exact (Finsupp.mem_support_iff.1 ht) (h1.resolve_left hr)
       rw [← Set.range_comp, Submodule.mem_span_range_iff_exists_fun] at hy'

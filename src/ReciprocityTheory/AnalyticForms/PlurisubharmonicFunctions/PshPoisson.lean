@@ -152,7 +152,7 @@ lemma poissonInt_eq_re {g : ℂ → ℝ} {r : ℝ} (hr : 0 < r) (hg : Continuous
   congr 1
   apply intervalIntegral.integral_congr
   intro θ _
-  simp only [Pi.smul_apply, Pi.mul_apply, smul_eq_mul, Complex.mul_re, Complex.ofReal_re,
+  simp only [Pi.mul_apply, smul_eq_mul, Complex.mul_re, Complex.ofReal_re,
     Complex.ofReal_im, mul_zero, sub_zero, re_herglotzRieszKernel_eq_poissonKernel]
 
 private lemma poissonInt_eq_re_cauchy_integral {g : ℂ → ℝ} {r : ℝ} (hr : 0 < r)
@@ -235,7 +235,7 @@ lemma poissonInt_zero {g : ℂ → ℝ} {r : ℝ} (hr : 0 < r) :
   intro z hz
   rw [mem_sphere_zero_iff_norm, abs_of_pos hr] at hz
   have hz0 : ‖z‖ ≠ 0 := by rw [hz]; exact hr.ne'
-  simp only [Pi.smul_apply, Pi.mul_apply, smul_eq_mul, poissonKernel_def, sub_zero, norm_zero]
+  simp only [Pi.mul_apply, smul_eq_mul, poissonKernel_def, sub_zero, norm_zero]
   rw [div_mul_eq_mul_div, div_eq_iff (pow_ne_zero 2 hz0)]
   ring
 
@@ -261,7 +261,7 @@ lemma poissonInt_sub {g : ℂ → ℝ} {r : ℝ} (hr : 0 < r) (hg : ContinuousOn
     congr 1
     funext θ
     ring
-  simp only [Pi.smul_apply, smul_eq_mul] at h1 ⊢
+  simp only [smul_eq_mul] at h1 ⊢
   rw [hI]
   linear_combination c * h1
 

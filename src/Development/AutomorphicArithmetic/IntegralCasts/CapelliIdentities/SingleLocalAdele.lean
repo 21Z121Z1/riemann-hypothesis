@@ -81,9 +81,9 @@ private theorem inter (hψ : IsLocallyConstant ψ) (h1 : ∃ t, ψ t ≠ 1)
       simp only [schr, AddChar.map_add_eq_mul, Pi.smul_apply, smul_eq_mul]; ring
     have hφ' := sb_comp (Homeomorph.addRight w.2) hφ
     funext y
-    simp only [LinearMap.comp_apply, LinearMap.funLeft_apply, Homeomorph.coe_neg, Pi.neg_apply]
+    simp only [LinearMap.comp_apply, LinearMap.funLeft_apply, Homeomorph.coe_neg]
     rw [e, map_smul, Pi.smul_apply, hm (fun x => φ (x + w.2)) hφ'.1 hφ'.2, ht φ hφ.1 hφ.2]
-    simp only [schr, LinearMap.funLeft_apply, Homeomorph.coe_neg, Pi.neg_apply, smul_eq_mul, ← mul_assoc, neg_add,
+    simp only [schr, LinearMap.funLeft_apply, smul_eq_mul, ← mul_assoc, neg_add,
       ← AddChar.map_add_eq_mul]
     congr 2
     simp only [dotProduct_comm w.2, neg_dotProduct, add_dotProduct]

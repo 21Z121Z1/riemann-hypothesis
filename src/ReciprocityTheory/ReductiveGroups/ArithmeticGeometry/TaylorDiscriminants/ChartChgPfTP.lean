@@ -113,7 +113,7 @@ theorem pderiv_subst_coe {σ τ : Type} [Fintype σ] [DecidableEq σ] {a : σ �
       | rw [MvPolynomial.coe_C, MvPowerSeries.smul_eq_C_mul, mul_one]
       | simp [MvPowerSeries.smul_eq_C_mul]
     rw [hc]
-    simp [map_smul, Derivation.map_one_eq_zero, h1, h0, MvPowerSeries.subst_smul hs]
+    simp [Derivation.map_one_eq_zero, h1, h0, MvPowerSeries.subst_smul hs]
   next p q hp hq =>
     simp only [MvPolynomial.coe_add, map_add, MvPowerSeries.subst_add hs, hp, hq, add_mul, Finset.sum_add_distrib]
   next p s hp =>
@@ -124,9 +124,9 @@ theorem pderiv_subst_coe {σ τ : Type} [Fintype σ] [DecidableEq σ] {a : σ �
     have hδ : ∑ s', subst a (p : MvPowerSeries σ k) * subst a (pderiv k s' (X s : MvPowerSeries σ k)) *
         pderiv k i (a s') = subst a (p : MvPowerSeries σ k) * pderiv k i (a s) := by
       rw [Finset.sum_eq_single s]
-      · simp [MvPowerSeries.pderiv_X, Pi.single_apply, h1]
+      · simp [h1]
       · intro b _ hb
-        simp [MvPowerSeries.pderiv_X, Pi.single_apply, hb, Ne.symm hb, h0]
+        simp [Ne.symm hb, h0]
       · simp
     rw [hpX, MvPowerSeries.subst_mul hs, MvPowerSeries.subst_X hs, Derivation.leibniz, hp]
     simp only [Derivation.leibniz, smul_eq_mul, MvPowerSeries.subst_add hs, MvPowerSeries.subst_mul hs,

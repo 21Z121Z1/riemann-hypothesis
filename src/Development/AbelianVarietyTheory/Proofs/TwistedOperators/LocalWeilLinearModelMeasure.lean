@@ -63,7 +63,7 @@ theorem char_eq_local_any : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Type
     push_cast
     rfl
   rw [k2] at k1
-  simp only [GlobalTheory.SplitFlip.omA, map_one, GlobalTheory.SplitFlip.apow_one, MonoidHom.one_apply, Units.val_one, mul_one,
+  simp only [GlobalTheory.SplitFlip.omA, map_one, GlobalTheory.SplitFlip.apow_one, Units.val_one, mul_one,
     Matrix.mul_zero, Matrix.zero_mul] at k1
   have k3 := mul_right_cancel₀ (GlobalTheory.SplitFlip.apow_ne_zero _ _) (mul_right_cancel₀ hφ0 k1)
   rw [MonoidHom.inv_apply, ← inv_eq_iff_eq_inv]

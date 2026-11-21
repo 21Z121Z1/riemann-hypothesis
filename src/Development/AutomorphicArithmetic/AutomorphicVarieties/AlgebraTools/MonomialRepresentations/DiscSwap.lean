@@ -10,7 +10,7 @@ private theorem charpoly_fromBlocks_antidiagonal_fin_two {F : Type} [Field F] (P
   have hcz : charmatrix (0 : Matrix (Fin 2) (Fin 2) F) = diagonal (fun _ : Fin 2 => (X : F[X])) := by
     ext i j
     by_cases h : i = j
-    · subst h; simp [charmatrix_apply]
+    · subst h; simp
     · simp [charmatrix_apply, diagonal_apply_ne _ h]
   rw [hcz]
   generalize hS : (diagonal (fun _ : Fin 2 => (X : F[X])) : Matrix (Fin 2) (Fin 2) F[X]) = S
@@ -32,7 +32,7 @@ private theorem charpoly_fromBlocks_antidiagonal_fin_two {F : Type} [Field F] (P
   rw [det_mul, det_fromBlocks_zero₂₁, det_fromBlocks_zero₁₂] at hdet
   have hSd : det S = X ^ 2 := by
     subst hS
-    simp [det_diagonal, Fin.prod_univ_two, sq]
+    simp [det_diagonal, sq]
   rw [det_mul, hSd] at hdet
   have hX : (X ^ 2 * X ^ 2 : F[X]) ≠ 0 := by
     exact mul_ne_zero (pow_ne_zero _ X_ne_zero) (pow_ne_zero _ X_ne_zero)

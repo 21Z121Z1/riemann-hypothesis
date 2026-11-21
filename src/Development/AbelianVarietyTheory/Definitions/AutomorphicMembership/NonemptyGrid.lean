@@ -41,7 +41,7 @@ theorem listPin_transfer {D : D7} {I I' : Type} {Lc : LevCh D I} {Lc' : LevCh D 
     exact e ▸ this
   · intro i hi
     have := hT i hi
-    simp only [GlobalTheory.LamTie.IsLam, GlobalTheory.LamTie.LamDat.lam0, GlobalTheory.LamTie.LamDat.kap, lamOf] at this ⊢
+    simp only [GlobalTheory.LamTie.IsLam, GlobalTheory.LamTie.LamDat.lam0, lamOf] at this ⊢
     rw [hc, hC]
     exact this
 

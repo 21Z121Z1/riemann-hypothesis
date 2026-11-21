@@ -138,7 +138,7 @@ theorem restr_isEv : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [Numbe
   · funext x
     have h1 := he (incM F ι * z * (incM F ι')ᵀ)
     rw [hblk z] at h1
-    simp only [restr_apply, Darboux.rho, schr, h1, glue_dot, dotProduct_zero, zero_dotProduct, zero_add,
+    simp only [restr_apply, Darboux.rho, schr, h1, glue_dot, dotProduct_zero, zero_add,
       glue_add_zero]
   · funext x
     have h1 := he u

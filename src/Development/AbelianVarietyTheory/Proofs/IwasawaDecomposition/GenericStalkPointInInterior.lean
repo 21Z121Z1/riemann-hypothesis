@@ -28,7 +28,7 @@ theorem fromSpecStalk_bot_mem_range_j : ∀ (E : Type) [Field E] [NumberField E]
     exact (RingHom.injective_iff_ker_eq_bot _).mp (IsFractionRing.injective _ _)
   refine ⟨y w, ?_⟩
   have e := congrArg (fun f => f w) hy
-  simp only [Scheme.Hom.comp_apply] at e
+  simp only at e
   rw [← hw]
   exact e
 

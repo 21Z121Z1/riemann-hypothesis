@@ -131,7 +131,7 @@ theorem exists_lowType_map : GlobalTheory.ThK.KP → ∀ (F E : Type) [Field F] 
           have e₁ : mat (k₁ * k₁') = mat k₁ * mat k₁' := rfl
           simp only [inv_one, Units.val_one, map_one, one_smul] at hx1 hy1 hx1' hy1'
           refine ⟨GlobalTheory.HwCoef.kInf_mul_mem h1 h1', GlobalTheory.HwCoef.kInf_mul_mem h2 h2', ?_, ?_, ?_⟩
-          · simp only [inv_one, Units.val_one, one_smul]
+          · simp only [Units.val_one, one_smul]
             change mat (k * k') *ᵥ _ = _
             rw [e, ← Matrix.mulVec_mulVec, hx1', hx1]
           · simp only [inv_one, Units.val_one, map_one, one_smul]

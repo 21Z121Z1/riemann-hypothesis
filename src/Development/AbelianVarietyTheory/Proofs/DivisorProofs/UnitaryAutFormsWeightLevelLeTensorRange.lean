@@ -61,7 +61,7 @@ theorem eq_zero_of_sum (lam : InfinitePlace E → DomWeight n) {ι : Type} [Fint
   · rw [← hP _ (hT k)]; simp
   · intro j _ hj
     rw [← hP _ (hT j)]
-    simp [Module.Basis.coord_apply, Module.Basis.repr_self, Finsupp.single_apply, hj]
+    simp [Module.Basis.coord_apply, Module.Basis.repr_self, hj]
   · simp
 
 end GlobalTheory.BCT.TrKer

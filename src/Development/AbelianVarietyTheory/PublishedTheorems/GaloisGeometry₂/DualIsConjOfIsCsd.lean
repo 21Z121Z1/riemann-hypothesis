@@ -115,7 +115,7 @@ theorem central_eq_zero {π : CuspSub L a} (hd : DualIsConj π) {c : ℂ} (hc : 
     change Op.lie _ = _
     congr 1
     funext i j
-    by_cases h : i = j <;> simp [Matrix.one_apply, h]
+    by_cases h : i = j <;> simp [h]
   obtain ⟨φ, hφ, h0⟩ := (Submodule.ne_bot_iff _).1 π.ne_bot
   by_contra hne
   refine h0 (congrArg Subtype.val (h1 ⟨φ, hφ⟩ fun ψ => ?_))

@@ -47,7 +47,7 @@ theorem herm_bvec_right (v : Fin (2 * r + k + 1) → ℂ) (p : Fin (2 * r + k + 
     by_cases h : q = p
     · subst h
       simp
-    · simp [Pi.single_apply, h]
+    · simp [h]
   unfold herm bvec
   rw [hs, single_dotProduct, one_mul, SignAntidiagonal.mulVec_hpk]
 

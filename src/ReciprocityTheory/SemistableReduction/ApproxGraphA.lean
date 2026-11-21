@@ -139,7 +139,7 @@ lemma sum_smul_eq {r : ℕ} (X : Fin r → Fin r → ℂ) (w : Fin r → ℂ) (c
   funext k
   simp only [Finset.sum_apply, Pi.add_apply, Pi.smul_apply, Pi.sub_apply, smul_eq_mul, mul_sub,
     Finset.sum_sub_distrib, Pi.single_apply]
-  simp [Finset.mul_sum]
+  simp
   ring
 
 lemma norm_err_le {r p : ℕ} {μ R : ℝ} (X : Fin r → Fin r → ℂ)

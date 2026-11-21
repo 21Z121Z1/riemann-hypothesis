@@ -319,7 +319,7 @@ theorem bijective_of_gram {R M : Type} [CommRing R] [AddCommGroup M] [Module R M
 
 theorem E_bΛ (i j : Fin 2) : E (bΛ i) (bΛ j) = ![![0, -1], ![1, 0]] i j := by
   rw [E_apply]
-  fin_cases i <;> fin_cases j <;> simp [Module.Basis.repr_self, Finsupp.single_apply]
+  fin_cases i <;> fin_cases j <;> simp [Module.Basis.repr_self]
 
 theorem E_perfect : Function.Bijective (E.baseChange ℤ_[5]) := by
   let b := Algebra.TensorProduct.basis ℤ_[5] bΛ

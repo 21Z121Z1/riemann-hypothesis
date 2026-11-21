@@ -150,7 +150,7 @@ theorem main : ∃ C : ℝ, 0 < C ∧ ∀ (N : ℕ) [NeZero N] (χ : DirichletCh
     have e : -x - y / 2 - z / 2 - u = -x + -(y / 2) + -(z / 2) + -u := by ring
     rw [e]
     refine (norm_add₄_le).trans ?_
-    simp [norm_neg, norm_div]
+    simp [norm_neg]
   refine (hh _ _ _ _).trans ?_
   nlinarith
 

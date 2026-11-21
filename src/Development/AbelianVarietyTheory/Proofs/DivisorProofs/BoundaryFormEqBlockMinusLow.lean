@@ -10,7 +10,7 @@ theorem bcForm_eq_blkForm_sub_toForm_pLow (ι : Type) [Fintype ι] [DecidableEq 
       ∑ i : Fin N, if (i : ℕ) < j then rootForm (τ, i) else 0 := by
     simp only [toForm, pLow, map_sum, Finset.sum_filter, pow_one]
     refine Finset.sum_congr rfl (fun i _ => ?_)
-    split_ifs <;> simp [aeval_X]
+    split_ifs <;> simp
   have h2 : toForm (pLow j τ 1 : Pol ι N) =
       (∑ a : Fin N, ∑ b : Fin N, if a < b ∧ (b : ℕ) < j then X (τ, a, b) else 0) -
       ∑ a : Fin N, ∑ b : Fin N, if a < b ∧ (a : ℕ) < j then X (τ, a, b) else 0 := by

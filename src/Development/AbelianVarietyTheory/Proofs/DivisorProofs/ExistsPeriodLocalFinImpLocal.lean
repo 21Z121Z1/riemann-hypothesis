@@ -35,7 +35,7 @@ theorem phiPow_eq_iterate (D : D7) (p : ℕ) [Fact p.Prime] (n : ℕ) (τ : Emb 
     rfl
   | succ n ih =>
     rw [Function.iterate_succ_apply', ← ih]
-    simp only [phiPow, pow_succ', pow_one]
+    simp only [phiPow, pow_succ']
     rfl
 
 theorem phiPow_one_injective (D : D7) (p : ℕ) [Fact p.Prime] : Function.Injective (phiPow D (p := p) 1) := by

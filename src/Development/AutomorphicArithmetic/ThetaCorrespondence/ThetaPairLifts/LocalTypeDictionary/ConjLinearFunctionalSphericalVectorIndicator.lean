@@ -50,9 +50,9 @@ theorem conjLinearFunctional_sphericalVector_indicator : _root_.GlobalTheory.Fun
   ext Y i j
   rw [e1, e2]
   simp only [Units.val_mul, Units.coe_map, MonoidHom.coe_coe, RingHom.toMonoidHom_eq_coe, Matrix.transpose_mul, Matrix.scalar_apply,
-    Matrix.transpose_neg, Matrix.transpose_smul, Matrix.mul_neg, Matrix.neg_mul, Matrix.mul_smul, Matrix.smul_mul,
-    Matrix.diagonal_transpose, Matrix.mul_assoc, neg_neg]
-  simp [Matrix.mul_assoc, ← Matrix.smul_eq_diagonal_mul, Matrix.mul_smul, Matrix.smul_mul]
+    Matrix.transpose_neg, Matrix.transpose_smul, Matrix.mul_neg, Matrix.mul_smul,
+    Matrix.diagonal_transpose, Matrix.mul_assoc]
+  simp [← Matrix.smul_eq_diagonal_mul, Matrix.mul_smul]
 end GlobalTheory.SplitBarVac
 end
 end

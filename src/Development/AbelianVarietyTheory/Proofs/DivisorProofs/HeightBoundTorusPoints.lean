@@ -185,7 +185,7 @@ theorem dual_pt (φ : R →+* R') (w : Sp R ⟶ W) (c : Fin r → R) :
 theorem dual_raw (φ : R →+* R') (w : Sp R ⟶ W) (i : Fin r) :
     spMap (dualMap φ) ≫ raw u w i = raw u (spMap φ ≫ w) i := by
   have e : φ ∘ (Pi.single i 1 : Fin r → R) = Pi.single i 1 := funext fun j => by
-    by_cases h : j = i <;> simp [Pi.single_apply, h]
+    by_cases h : j = i <;> simp [h]
   rw [raw, raw, ← e, reassoc_of% (dual_pt φ w (Pi.single i 1))]
 
 variable [IsMonHom u]

@@ -28,7 +28,7 @@ theorem exp_inUJ {X : Matrix (Fin n) (Fin n) ℂ} (hX : X ∈ GlobalTheory.Smoot
       _ = _ := by rw [h1, mul_neg, neg_mul]
   have hc : ((t : ℂ) • X)ᴴ = Formalism.REAL.Jm ε * (-((t : ℂ) • X)) * (Formalism.REAL.Jm ε)⁻¹ := by
     rw [conjTranspose_smul, hXh, Complex.star_def, Complex.conj_ofReal]
-    simp [smul_neg, mul_smul_comm, smul_mul_assoc]
+    simp [smul_neg]
   unfold Formalism.REAL.inUJ
   rw [← Matrix.exp_conjTranspose, hc, Matrix.exp_conj _ _ hu, hJinv]
   have hcomm : Commute (-((t : ℂ) • X)) ((t : ℂ) • X) := (Commute.refl _).neg_left

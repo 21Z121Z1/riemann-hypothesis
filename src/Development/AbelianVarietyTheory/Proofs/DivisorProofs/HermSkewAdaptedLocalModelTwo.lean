@@ -180,7 +180,7 @@ theorem isoA_orth_at : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
         map_mul]
       exact Finset.sum_congr rfl fun k _ => mul_comm _ _
     rw [hα, hβ, hγ]
-    simp only [dotProduct, Matrix.vecMul, Finset.sum_mul, Finset.mul_sum]
+    simp only [dotProduct, Matrix.vecMul, Finset.mul_sum]
     rw [Finset.sum_comm]
     refine Finset.sum_congr rfl fun p _ => Finset.sum_congr rfl fun q _ => ?_
     ring

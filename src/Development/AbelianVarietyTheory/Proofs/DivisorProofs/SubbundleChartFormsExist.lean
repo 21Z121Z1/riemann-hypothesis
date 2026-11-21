@@ -90,7 +90,7 @@ theorem angleForm_frames (H : h.IsCInf) (hl : IsSubbundle l) (hl' : IsSubbundle 
 theorem eq_sum_single {D : ℕ} (w : EuclideanSpace ℂ (Fin D)) :
     w = ∑ a, w a • EuclideanSpace.single a (1 : ℂ) := by
   ext i
-  simp [Finset.sum_apply, EuclideanSpace.single_apply, Pi.single_apply]
+  simp [Finset.sum_apply, Pi.single_apply]
 
 end GlobalTheory.AngleGlueDim
 

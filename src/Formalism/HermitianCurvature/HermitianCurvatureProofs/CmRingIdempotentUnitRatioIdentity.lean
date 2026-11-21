@@ -169,16 +169,16 @@ theorem g_power_bounds : GPowers := by
   have e2 : 2 * (q + 1 - 1) + (u + 1) - 1 = 2 * q + u := by omega
   have e3 : 2 * (q + 1) - 1 = 2 * q + 1 := by omega
   have e4 : 2 * (q + 1 - 1) = 2 * q := by omega
-  simp only [xThreshold, lamThreshold, lamPrimeSq, Nat.add_sub_cancel, e1, e2, e3, e4]
+  simp only [xThreshold, lamThreshold, lamPrimeSq, Nat.add_sub_cancel, e1, e3]
   have hg0 : g ≠ 0 := hg.ne'
   have hka0 : ka ≠ 0 := hka.ne'
   have e5 : 2 * q + (u + 1) - 1 = 2 * q + u := by omega
   simp only [e5]
   refine ⟨?_, ?_, ?_, ?_⟩
-  · simp only [div_pow, inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
-  · simp only [div_pow, inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
-  · simp only [div_pow, inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
-  · simp only [div_pow, inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
+  · simp only [inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
+  · simp only [inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
+  · simp only [inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
+  · simp only [inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
 
 theorem lattice_placement : Placement := by
   intro k r m N Del hm hN hmk hk hDel
@@ -223,20 +223,20 @@ theorem normalised_forms : NormalisedForms := by
   have e2 : 2 * (q + 1 - 1) + (u + 1) - 1 = 2 * q + u := by omega
   have e3 : 2 * (q + 1) - 1 = 2 * q + 1 := by omega
   have e4 : 2 * (q + 1 - 1) = 2 * q := by omega
-  simp only [xThreshold, lamThreshold, lamPrimeSq, xHat, lamHat, lamPrimeHat, Nat.add_sub_cancel, e1, e2, e3, e4]
+  simp only [xThreshold, lamThreshold, lamPrimeSq, xHat, lamHat, lamPrimeHat, Nat.add_sub_cancel, e1, e3]
   have hg0 : g ≠ 0 := hg.ne'
   have hka0 : ka ≠ 0 := hka.ne'
   have hI0 : I ≠ 0 := hI.ne'
   have e5 : 2 * q + (u + 1) - 1 = 2 * q + u := by omega
   simp only [e5]
   refine ⟨?_, ?_, ?_⟩
-  · simp only [div_pow, inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
-  · simp only [div_pow, inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
+  · simp only [inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
+  · simp only [inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
   · have hsq : ∀ X : ℝ, g * Real.sqrt X = Real.sqrt (g ^ 2 * X) := fun X => by
       rw [Real.sqrt_mul (sq_nonneg g), Real.sqrt_sq hg.le]
     rw [hsq]
     congr 1
-    simp only [div_pow, inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
+    simp only [inv_pow, mul_pow, mul_inv, inv_inv, div_eq_mul_inv]; field_simp; try ring
 
 theorem threshold_products : ThresholdProducts := by
   intro ι _ t B1 B k C A0 Ct ka N I g Del TT i s hC hA0 hCt hka hkapi hN hI hg hDel hTT hCN ht htp hB1 hB hi

@@ -643,7 +643,7 @@ theorem ld_boxes_le (p w i q : ℕ) (lam2 tau : Fin q → ℕ) (htau : tau ∈ s
         (lam2 a : ℤ) ≤ c + (a.val : ℤ) ∧ c + (a.val : ℤ) < (tau a : ℤ)).max' hS).val : ℤ) := by
       exact_mod_cast hab
     have htb := hanti a _ hab
-    simp only [colLen, Finset.mem_filter, Finset.mem_univ, true_and]
+    simp only [Finset.mem_filter, Finset.mem_univ, true_and]
     constructor <;> omega
 
 theorem muLe : MuLe := by
@@ -964,7 +964,7 @@ theorem ld_sym_shape (q w i : ℕ) (hi : i ≤ w) :
   · intro a b hab
     have hab' : a.val ≤ b.val := hab
     split_ifs <;> omega
-  · simp [Fin.sum_univ_succ]
+  · simp
   · intro b j hj
     unfold colLen
     rw [Finset.card_le_one]

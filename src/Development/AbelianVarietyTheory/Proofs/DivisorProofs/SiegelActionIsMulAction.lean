@@ -150,7 +150,7 @@ theorem det_den_ne (γ : Sp g) {τ : Matrix (Fin g) (Fin g) ℂ} (hτ : IsSiegel
     ext i j
     have hij : τ j i = τ i j := by simpa using congrFun (congrFun hτ.1 i) j
     simp only [Matrix.sub_apply, conjTranspose_apply, hij, Matrix.smul_apply, cx, map_apply, smul_eq_mul]
-    apply Complex.ext <;> simp [hij] <;> ring
+    apply Complex.ext <;> simp <;> ring
   rw [hY, smul_mulVec, dotProduct_smul, smul_eq_mul, mul_eq_zero] at hz
   rcases hz with hz | hz
   · norm_num [Complex.ext_iff] at hz

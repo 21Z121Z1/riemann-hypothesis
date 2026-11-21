@@ -26,7 +26,7 @@ theorem trace_pi_self {K : Type} [Field K] {P : Type} [Fintype P] [DecidableEq P
   let b := Pi.basisFun K P
   rw [Algebra.trace_eq_matrix_trace b, Matrix.trace]
   refine Finset.sum_congr rfl fun p _ => ?_
-  simp [Algebra.leftMulMatrix_eq_repr_mul, b, Pi.single_apply]
+  simp [Algebra.leftMulMatrix_eq_repr_mul, b]
 
 theorem exists_trace_eq_finsum : ∀ (R B : Type) [CommRing R] [CommRing B] [Algebra R B], Module.Finite R B →
     Algebra.Etale R B → ∀ b : B, ∃ v : R, ∀ (Ω : Type) [Field Ω] [IsAlgClosed Ω] (φ : R →+* Ω),

@@ -62,7 +62,7 @@ theorem isVB_X₂_of_shortExact : ∀ (X : Scheme.{0}) (S : ShortComplex X.Modul
     rw [app_resM, app_resM, resM_resM]
   · simp only [Module.Basis.map_apply, Module.Basis.prod_apply, Sum.elim_inr, Function.comp_apply,
       LinearMap.inr_apply, LinearEquiv.ofBijective_apply, LinearMap.coprod_apply, map_zero,
-      zero_add, appLinear_apply, IsFrame.basis_apply, e]
+      zero_add, IsFrame.basis_apply, e]
     exact hσc U₃ V hU₃ h (e₃ j)
 
 end GlobalTheory.VBExt

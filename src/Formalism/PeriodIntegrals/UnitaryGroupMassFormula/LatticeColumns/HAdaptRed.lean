@@ -326,7 +326,7 @@ theorem hAdaptQ_of_in (X : HidaSetting D) (hb : AdBridgeIso X.B.I) (u : D.what�
       by_cases hts : t = dlH s
       · subst hts
         simp
-      · simp [Pi.single_apply, hts]
+      · simp [hts]
   · have hQP : Q = P * (P⁻¹ * Q) := (mul_inv_cancel_left P Q).symm
     rw [hQP]
     have hmap : reindex₂ X p (P * (P⁻¹ * Q)) = reindex₂ X p P * reindex₂ X p (P⁻¹ * Q) := by

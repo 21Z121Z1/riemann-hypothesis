@@ -173,7 +173,7 @@ theorem isData_halfPlane :
       generalize Real.exp (1 + (z ()).re) = x at h3
       push_cast
       rw [← Complex.mul_conj']
-      simp only [smul_eq_mul, map_mul, Complex.conj_ofReal, map_div₀, map_ofNat]
+      simp only [map_mul, Complex.conj_ofReal, map_div₀, map_ofNat]
       field_simp
       rw [Complex.I_sq]; ring
     have h5 := diagVal_formOf_eq_gnorm_sq h1.posSemidef ξ

@@ -246,15 +246,15 @@ theorem cns_shift_inj (dual : Bool) (μ : Fin n → ℝ) {s s' : Fin n} (h : shi
   by_contra hne
   have := congrFun h s
   cases dual
-  · simp [shiftF, Pi.single_apply, hne] at this
-  · simp [shiftF, Pi.single_apply, hne] at this
+  · simp [shiftF, hne] at this
+  · simp [shiftF, hne] at this
 
 theorem cns_coefV {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
     (σ : Matrix (Fin n) (Fin n) ℂ → (H →L[ℂ] H)) (g : Matrix (Fin n) (Fin n) ℂ) (a b : H) (x y : Fin n → ℂ) :
     inner ℂ b (σ g a) * (star y ⬝ᵥ (g *ᵥ x)) =
       ∑ c, inner ℂ (y c • b) (tensGrp false σ g (fun d => x d • a) c) := by
   simp only [tensGrp, cond_false, map_smul, smul_smul, inner_smul_left, inner_sum, inner_smul_right,
-    dotProduct, Matrix.mulVec, Finset.mul_sum, Finset.sum_mul, Pi.star_apply, Complex.star_def]
+    dotProduct, Matrix.mulVec, Finset.mul_sum, Pi.star_apply, Complex.star_def]
   refine Finset.sum_congr rfl fun c _ => Finset.sum_congr rfl fun d _ => ?_
   ring
 
@@ -263,7 +263,7 @@ theorem cns_coefVd {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
     inner ℂ b (σ g a) * (star y ⬝ᵥ (g⁻¹ *ᵥ x)) =
       ∑ c, inner ℂ (star (x c) • b) (tensGrp true σ g (fun d => star (y d) • a) c) := by
   simp only [tensGrp, cond_true, map_smul, smul_smul, inner_smul_left, inner_sum, inner_smul_right,
-    dotProduct, Matrix.mulVec, Finset.mul_sum, Finset.sum_mul, Pi.star_apply, Complex.star_def,
+    dotProduct, Matrix.mulVec, Finset.mul_sum, Pi.star_apply, Complex.star_def,
     Complex.conj_conj]
   rw [Finset.sum_comm]
   refine Finset.sum_congr rfl fun c _ => Finset.sum_congr rfl fun d _ => ?_

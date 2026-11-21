@@ -38,7 +38,7 @@ lemma sandwich (Y : Module.End K W) (hY : Y ≠ 0) :
   rw [Finset.sum_eq_single j]
   · simp [hφ]
   · intro i _ hij
-    simp [Finsupp.single_apply, Ne.symm hij]
+    simp [Ne.symm hij]
   · simp
 
 end Sandwich

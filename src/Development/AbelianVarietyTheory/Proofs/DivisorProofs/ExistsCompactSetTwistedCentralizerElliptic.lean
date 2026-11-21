@@ -170,7 +170,7 @@ theorem main : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E], Unr E →
         subset_closure (Subgroup.npow_mem_zpowers s k)
       have e : ((s ^ k).1 : Matrix (Fin n) (Fin n) (w.adicCompletion E)) =
           (s.1 : Matrix (Fin n) (Fin n) (w.adicCompletion E)) ^ k := by
-        simp [Subgroup.coe_pow, Units.val_pow_eq_pow_val]
+        simp [Units.val_pow_eq_pow_val]
       rw [← e]
       exact (norm_le_sum _ a b).trans (hB ⟨_, hk, rfl⟩)
   intro t ht hc

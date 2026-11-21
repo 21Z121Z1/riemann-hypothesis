@@ -55,7 +55,7 @@ theorem piS_uni (χ : AddChar F Circle) (c₁ : Fˣ →* ℂˣ) (b : F) (Ψ : F 
   rw [piS_eq]
   simp only []
   rw [rWS_zero χ (det_normalized_determinant_one _) (by simp [one1, uni2])]
-  have e0 : one1 (uni2 b : GL (Fin 2) F) 0 0 = 1 := by simp [one1, hdet, uni2]
+  have e0 : one1 (uni2 b : GL (Fin 2) F) 0 0 = 1 := by simp [one1, uni2]
   have e1 : one1 (uni2 b : GL (Fin 2) F) 0 1 = b := by simp [one1, uni2]
   rw [e0, e1, hdet]
   have : (1 * z.1, 1 * z.2) * ((1 : F), (1 : F)) = z := by ext <;> simp

@@ -82,7 +82,7 @@ theorem exists_incM_of_span {d : ℕ} (M : Matrix (Fin d) (Fin d) (AE F E)) (S :
   ext i j
   have h1 := congrFun (hf (Pi.single j 1)) i
   have h2 : incV F (Pi.single j (1 : E)) = Pi.single j 1 := by
-    ext k; by_cases hk : k = j <;> simp [incV, Pi.single_apply, hk]
+    ext k; by_cases hk : k = j <;> simp [incV, hk]
   rw [h2, Matrix.mulVec_single_one] at h1
   simpa [incM, incV] using h1
 

@@ -55,7 +55,7 @@ theorem dense_closedPoints_bounded : ∀ (F : Type) [Field F] [NumberField F] (Y
     have e : φ.comp (MvPolynomial.aeval t).toRingHom =
         MvPolynomial.eval₂Hom (φ.comp ρ) (fun j => φ (t j)) := by
       apply MvPolynomial.ringHom_ext
-      · intro c; simp [MvPolynomial.aeval_C]; rfl
+      · intro c; simp; rfl
       · intro j; simp
     have := congrArg φ (hp0 i)
     rw [Polynomial.hom_eval₂, map_zero, e] at this

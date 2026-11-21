@@ -76,7 +76,7 @@ theorem exists_split_vec {n d₂ : ℕ} (J : Matrix (Fin n) (Fin n) E) (hσ : �
     have hu : u = 0 := hinj (by rw [h, Matrix.mulVec_zero])
     subst hu; rfl
   have hdim : Module.finrank E (E × E × (Fin d₂ → E)) = Module.finrank E (Fin n → E) := by
-    simp [Module.finrank_prod, Module.finrank_fin_fun, ← hn]; ring
+    simp [Module.finrank_prod, ← hn]; ring
   have hS : Function.Surjective L := (LinearMap.injective_iff_surjective_of_finrank_eq_finrank hdim).mp hL
   obtain ⟨⟨s, t, u⟩, hp⟩ := hS r
   exact ⟨s, t, u, hp.symm⟩

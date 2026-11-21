@@ -120,7 +120,7 @@ theorem coeff_eq_zero : ∀ (N : ℕ) (Ξ : Type) (lam : Ξ → Fin N → ℝ) (
     rw [tsum_div_const, h, zero_div]
   have hcn : Summable (fun ξ => ‖c ξ‖) := summable_norm_iff.mpr hc
   have hgn : ∀ ξ t, ‖g ξ t‖ = ‖c ξ‖ := by
-    intro ξ t; simp [g, norm_mul, norm_chr]
+    intro ξ t; simp [g, norm_chr]
   have hgs : ∀ t, Summable (fun ξ => g ξ t) := fun t =>
     Summable.of_norm (by simpa [hgn] using hcn)
   refine norm_le_zero_iff.mp (le_of_forall_gt_imp_ge_of_dense fun ε hε => ?_)

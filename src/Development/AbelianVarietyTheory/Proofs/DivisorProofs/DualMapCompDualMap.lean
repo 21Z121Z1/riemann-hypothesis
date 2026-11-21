@@ -241,7 +241,7 @@ theorem IsTransl.red {B : Type} [CommRing B] {φ : K →+* B} {x : Sp B ⟶ A.le
           | simp
   have e4 : (TrivSqZeroExt.fstHom B B B).toRingHom.comp (algebraMap B (DualNumber B)) = RingHom.id B := by
     ext b
-    simp [TrivSqZeroExt.algebraMap_eq_inl']
+    simp
   calc spMap (TrivSqZeroExt.fstHom B B B).toRingHom ≫ (x' * v').left = (g ≫ (x' * v')).left := rfl
     _ = (g ≫ x' * g ≫ v').left := by rw [e]
     _ = (g ≫ x').left := by rw [e1, _root_.mul_one]

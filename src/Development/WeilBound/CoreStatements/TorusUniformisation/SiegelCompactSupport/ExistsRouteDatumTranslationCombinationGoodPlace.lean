@@ -731,7 +731,7 @@ theorem L_half (hc : Continuous ψ) (h1 : ψ ≠ 1) (s : ((κ → k) × (κ → 
       show ((x, 0) : (κ → k) × (κ → k)) + w = (0, w.2) + (x + w.1, 0) by ext <;> simp, smul_eq_mul, smul_eq_mul,
       ← mul_assoc, ← AddChar.map_add_eq_mul]
     congr 2
-    simp only [zero_dotProduct, dotProduct_zero, add_dotProduct]
+    simp only [dotProduct_zero, add_dotProduct]
     linear_combination (x ⬝ᵥ w.2) * (invOf_two_add_invOf_two (R := k))
   have cs : Continuous s := by
     have : (s : _ → _) = fun w => (s ∘ₗ LinearMap.inl k _ _) w.1 + (s ∘ₗ LinearMap.inr k _ _) w.2 := funext fun w => by

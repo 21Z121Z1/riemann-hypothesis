@@ -134,7 +134,7 @@ example : Fact (Nat.Prime 2) ∧ Module.Free ℤ_[2] ℤ_[2] ∧ Module.Finite �
 example : unitE ℤ_[2] 2 ≠ 1 ∧ unitE ℤ_[2] 2 ≠ 0 := by
   refine ⟨fun h => ?_, fun h => ?_⟩
   · have := congrFun (congrFun h 1) 1
-    simp [unitE, Matrix.single_apply] at this
+    simp [unitE] at this
   · have := congrFun (congrFun h 0) 0
     simp [unitE] at this
 

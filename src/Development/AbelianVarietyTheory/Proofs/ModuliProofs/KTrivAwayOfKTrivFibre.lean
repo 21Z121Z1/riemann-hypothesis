@@ -28,7 +28,7 @@ private theorem isGrpPullback_pullback_obj {S S' : Scheme.{0}} (G : Over S) [Grp
       simp only [Over.lift_left, pullback.lift_fst, pullback.lift_fst_assoc, hx]
     · simp only [Category.assoc]
       rw [Over.μ_pullback_left_fst_snd]
-      simp only [Over.lift_left, pullback.lift_snd, pullback.lift_snd_assoc, pullback.lift_fst_assoc, hy]
+      simp only [Over.lift_left, pullback.lift_snd, pullback.lift_snd_assoc, hy]
   rw [Hom.mul_def, Hom.mul_def, Over.comp_left, Over.comp_left, e, Functor.obj.μ_def, Over.comp_left]
   simp only [Category.assoc]
   refine congrArg (_ ≫ ·) (congrArg (_ ≫ ·) ?_)

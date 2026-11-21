@@ -105,13 +105,13 @@ theorem imprimitive_case_count : ImprimitiveOrbitCondition := by
         rw [Finset.sum_eq_single j]
         · simp [mul_comm]
         · intro b _ hb
-          simp [Pi.single_apply, hb]
+          simp [hb]
         · simp
       rwa [hs] at h
     · rw [Finset.sum_eq_single j]
       · simp
       · intro b _ hb
-        simp [Pi.single_apply, hb]
+        simp [hb]
       · simp
 
 theorem prime_order_element : RationalMatrixPrimeOrderBound := by

@@ -74,7 +74,7 @@ theorem GlobalTheory.RowVacScalar.vacScalar_eq_prod : ∀ {D : D7} {T : Type} {L
   intro D T L sc G W U S μ₀ hL t i hi q hq1 hq2 hS hT c hc
   classical
   have hp : (Pair.chi i D.R.m : Pair T).InRange D.R.m := by
-    simp only [Pair.InRange, Pair.big, Node.InRange]; omega
+    simp only [Pair.InRange, Node.InRange]; omega
   have hW := W.om_is (.chi i D.R.m) hp
   have sd := GlobalTheory.RowVertexInv.FactorTheta.selfDual S hi
   have hv := (S.Z.vac_is (.chi i D.R.m) ⟨hi, rfl⟩).2

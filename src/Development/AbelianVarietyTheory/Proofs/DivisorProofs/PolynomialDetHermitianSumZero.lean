@@ -123,7 +123,7 @@ theorem pol_eq_zero_of_mem_lowDeg {k : ℕ} (hk : k < Fintype.card β) {g : (α 
     congr 1
     refine hgT _ _ (fun a => by simp) fun b' hb' => ?_
     have : b' ≠ b := fun h => hb (h ▸ hb')
-    simp [Function.update_apply, this]
+    simp [this]
   | zero => intro L; simp [pol]
   | add x y _ _ hx hy =>
     intro L

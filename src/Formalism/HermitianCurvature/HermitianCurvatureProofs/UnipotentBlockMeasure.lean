@@ -931,7 +931,7 @@ theorem occ_of_ne {τ Rw I H H₁ : Type} [Fintype I] [NormedAddCommGroup H] [In
     · rw [Set.indicator_of_mem ht]
       by_contra hv
       exact hno ⟨t, ht.1, hv, ht.2.1, ht.2.2.1, ht.2.2.2⟩
-    · simp [Set.indicator_apply, ht]
+    · simp [ht]
   unfold Formalism.FourierDecayAlt.PN.grp
   simp only [hz, tsum_zero]
 

@@ -66,7 +66,7 @@ theorem GlobalTheory.Mem.Top.Bl.tiedSK_at_witnesses : ∀ (hL : GlobalTheory.Pub
     rw [h1, one_mul]
     have hY := hTw.1.eY u μ i hi
     rw [GlobalTheory.Mem.Col2.TC.KerSK.ch_cast he] at hY
-    simp only [twYS, Equiv.trans_apply, hY, Equiv.refl_symm, Equiv.refl_apply, eYS]
+    simp only [twYS, Equiv.trans_apply, hY, eYS]
     split_ifs with h
     · exact congrFun ((hC u).eY i hi h y).symm τ
     · exact congrFun ((hC u).eYC i _ _ y).symm τ

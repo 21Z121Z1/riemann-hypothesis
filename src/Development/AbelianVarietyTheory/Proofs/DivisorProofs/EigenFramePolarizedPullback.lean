@@ -31,7 +31,7 @@ theorem hermForm_smul_one_comb {J : Type} [DecidableEq J] {n : ℕ} (e : Fin n �
   rw [Finset.sum_comm]
   refine Finset.sum_congr rfl fun l _ => Finset.sum_congr rfl fun l' _ => ?_
   have hs : star (Pi.single (e.symm (j' l')) (1 : ℂ) : Fin n → ℂ) = Pi.single (e.symm (j' l')) 1 := by
-    ext t; by_cases h : t = e.symm (j' l') <;> simp [Pi.single_apply, h]
+    ext t; by_cases h : t = e.symm (j' l') <;> simp [h]
   rw [hs, single_dotProduct]
   simp only [Pi.single_apply, e.symm.injective.eq_iff]
   split_ifs <;> simp [mul_comm]

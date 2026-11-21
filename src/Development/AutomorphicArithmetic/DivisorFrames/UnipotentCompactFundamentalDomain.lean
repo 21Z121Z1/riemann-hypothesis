@@ -89,7 +89,7 @@ private theorem keyH (σ : E →ₐ[F] E) {n n₁ : ℕ} (J : Matrix (Fin n) (Fi
         ext i
         have := RingHom.map_mulVec (cA σ).toRingHom M X i
         rw [hx] at this
-        simp only [Function.comp_def, hXdef, incV, cA_inclR, AlgHom.coe_toRingHom] at this ⊢
+        simp only [Function.comp_def, hXdef, incV] at this ⊢
         exact this.symm
       have hW : incM F J *ᵥ incV F (fun i => σ (x i)) = incV F w := by rw [hwdef, incV_mulVec]
       have hMW : Mᵀ *ᵥ incV F w = incV F w := by

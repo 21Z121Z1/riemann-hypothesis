@@ -30,7 +30,7 @@ def FEat (ψ : AddChar F Circle) (μ₁ μ₂ c : Fˣ →* ℂˣ) (s : ℂ) (W :
 
 theorem FEat.zero (ψ : AddChar F Circle) (μ₁ μ₂ c : Fˣ →* ℂˣ) (s : ℂ) :
     FEat ψ μ₁ μ₂ c s (0 : GL (Fin 2) F → ℂ) := by
-  simp [FEat, integrable_zero]
+  simp [FEat]
 
 theorem FEat.add {ψ : AddChar F Circle} {μ₁ μ₂ c : Fˣ →* ℂˣ} {s : ℂ} {W W' : GL (Fin 2) F → ℂ}
     (h : FEat ψ μ₁ μ₂ c s W) (h' : FEat ψ μ₁ μ₂ c s W') : FEat ψ μ₁ μ₂ c s (W + W') := by

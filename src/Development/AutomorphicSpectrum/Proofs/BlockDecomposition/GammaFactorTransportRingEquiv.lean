@@ -35,7 +35,7 @@ theorem ord_pos_iff_tendsto {x : F} (hx : x ≠ 0) :
     have hm := h (valBall_mem_nhds (K := F) 1)
     obtain ⟨n, hn⟩ := (Filter.eventually_atTop.mp (Filter.mem_map.mp hm))
     have := hn (n + 1) (by omega)
-    simp only [Set.mem_preimage, SetLike.mem_coe] at this
+    simp only [SetLike.mem_coe] at this
     rw [mem_valBall_iff_le_ord (pow_ne_zero _ hx), ord_pow_nat hx] at this
     push_cast at this
     nlinarith

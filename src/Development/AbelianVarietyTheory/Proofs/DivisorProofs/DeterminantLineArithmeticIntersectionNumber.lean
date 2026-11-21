@@ -29,9 +29,9 @@ theorem sum_gen {D : D7} {Y : Formalism.BasicNotions.DV.ShimX D.what₂.Tau} (T 
     simp only [Finset.sum_apply, Pi.smul_apply, smul_eq_mul]
     rw [Fintype.sum_prod_type, Finset.sum_eq_single σ, Finset.sum_eq_single i]
     · simp
-    · intro b _ hb; simp [Pi.single_apply, hb.symm]
+    · intro b _ hb; simp [hb.symm]
     · simp
-    · intro b _ hb; simp [Pi.single_apply, Ne.symm hb]
+    · intro b _ hb; simp [Ne.symm hb]
     · simp
 
 theorem lin_elim {ι : Type} [Fintype ι] (b : ι → ℝ) :

@@ -147,7 +147,7 @@ theorem residue_map_p1_eq (hl : (l : O) ∈ IsLocalRing.maximalIdeal O) (hp : p1
   have h0'' : ((l : ℕ) : (IsLocalRing.ResidueField O)⟦X⟧) = 0 := by
     rw [← map_natCast (C : IsLocalRing.ResidueField O →+* (IsLocalRing.ResidueField O)⟦X⟧) l, h0', map_zero]
   rw [hp]
-  simp [h0, h0', h0'']
+  simp [h0'']
 
 theorem isDist_p1_pow_wdeg (hl : (l : O) ∈ IsLocalRing.maximalIdeal O) (hu : IsUnit u)
     (hp : p1 = C (l : O) * e + u * X ^ l) (y : ℕ) :

@@ -128,7 +128,7 @@ theorem exists_vec {P : Finset (SV k)} (hP : IsPar P) (l : SV k → ℝ)
         have : ∀ j, inner ℝ (vec (b (c i)) j) (h j) = if c j = c i then l (b (c i)) / N (c i) else 0 := fun j => by
           by_cases hj : c j = c i
           · have : ((p j : ℝ)) * p j = 1 := by rw [← SignType.coe_mul, sign_sq _ (hpj j hj), SignType.coe_one]
-            simp only [vec, b, res, h, if_pos hj, hj, if_true, RCLike.inner_apply, conj_trivial]
+            simp only [vec, b, res, h, hj, if_true, RCLike.inner_apply, conj_trivial]
             linear_combination (l (b (c i)) / N (c i)) * this
           · simp [vec, b, res, hj]
         rw [PiLp.inner_apply, Finset.sum_congr rfl fun j _ => this j, ← Finset.sum_filter, Finset.sum_const,

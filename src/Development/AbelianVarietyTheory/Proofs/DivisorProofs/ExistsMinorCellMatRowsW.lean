@@ -102,7 +102,7 @@ theorem eq_flagPt_of_le {A : Type} [CommRing A] (w : ι → Equiv.Perm (Fin N)) 
       erw [Scheme.Hom.appIso_inv_appLE_assoc]
       have e₂ : (Spec.map ψ).appLE ⊤ ⊤ le_rfl = (Spec.map ψ).appTop := (Scheme.Hom.app_eq_appLE _).symm
       rw [e₂]
-      simp [← Scheme.ΓSpecIso_inv_naturality_assoc]
+      simp
     exact congrArg CommRingCat.Hom.hom e₁
   refine (spMap_flagPt _ _ ψ.hom _).trans ?_
   congr 1

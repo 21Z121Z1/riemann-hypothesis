@@ -13,4 +13,4 @@ theorem UpperTheory.admissible_of_newform_attached :
   generalize ((W s : GL (Fin 2) (Qbar l)) : Matrix (Fin 2) (Fin 2) (Qbar l)) = A
   ext i j
   fin_cases i <;> fin_cases j <;>
-    simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.det_fin_two, Matrix.vecMul, dotProduct] <;> ring
+    simp [Matrix.mul_apply, Fin.sum_univ_two, Matrix.det_fin_two] <;> ring

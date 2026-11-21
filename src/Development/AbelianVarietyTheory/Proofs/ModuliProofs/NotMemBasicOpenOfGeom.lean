@@ -40,7 +40,7 @@ theorem sum_stdSymp {g k : ℕ} (a c : Lab g k) :
     split_ifs <;> first | rfl | omega
   rw [← (idx g).sum_comp]
   simp_rw [← (idx g).sum_comp]
-  simp [Fintype.sum_sum_type, e₁, e₂, e₃, e₄, labEquiv, omegaLab, Finset.sum_sub_distrib, sub_eq_add_neg,
+  simp [Fintype.sum_sum_type, e₁, e₂, e₃, e₄, labEquiv, omegaLab, sub_eq_add_neg,
     Finset.sum_add_distrib, add_comm]
 
 theorem zpow_eq_pow_val {U : Type} [CommGroup U] {u : U} {k : ℕ} [NeZero k] (hu : u ^ k = 1) {z : ℤ} {w : ZMod k}

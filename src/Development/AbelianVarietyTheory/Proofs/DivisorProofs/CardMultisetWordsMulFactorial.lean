@@ -65,7 +65,7 @@ theorem card_mul_prod_factorial : ∀ {I : Type} [Fintype I] (k : ℕ) (ν : I �
           · apply Finset.prod_congr rfl
             intro i hi
             simp only [Finset.mem_compl, Finset.mem_singleton] at hi
-            simp [hμ, Function.update_apply, hi]
+            simp [hμ, hi]
         have h2 : ∏ i, (ν i).factorial = (ν a).factorial * ∏ i ∈ Finset.univ \ {a}, (ν i).factorial :=
           Fintype.prod_eq_mul_prod_compl a _
         have h3 : (ν a).factorial = ν a * (ν a - 1).factorial := (Nat.mul_factorial_pred (by omega)).symm
@@ -74,7 +74,7 @@ theorem card_mul_prod_factorial : ∀ {I : Type} [Fintype I] (k : ℕ) (ν : I �
         rw [h2, h3, ← hi]
         ring
       · have : ν a = 0 := by omega
-        simp [ha, this]
+        simp [this]
     rw [Finset.sum_mul]
     simp_rw [key]
     rw [← Finset.sum_mul, hν, Nat.factorial_succ]

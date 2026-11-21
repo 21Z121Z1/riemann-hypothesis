@@ -160,7 +160,7 @@ theorem hsNormSq_smul {Wp Wq : Type*} [NormedAddCommGroup Wp] [InnerProductSpace
     rw [← mul_assoc, Complex.normSq_eq_conj_mul_self]
   have hy : ∀ z : ℂ, c * ((starRingEnd ℂ) c * z) = (Complex.normSq c : ℂ) * z := fun z => by
     rw [← mul_assoc, Complex.mul_conj]
-  simp only [hx, hy]
+  simp only [hy]
   rw [← Finset.mul_sum, Complex.re_ofReal_mul]
 
 theorem isQuotMeas_smul {k r : ℕ} {μG μS ν : Measure (Formalism.QuantumDeterminants.Mt k r)} (h : IsQuotMeas μG μS ν) {c : ENNReal}

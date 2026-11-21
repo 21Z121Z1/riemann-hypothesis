@@ -10,7 +10,7 @@ theorem wtSpace_stable : ∀ (E Ω : Type) [Field E] [NumberField E] [Field Ω] 
   intro E Ω _ _ _ _ _ A w h V _ _ _ a
   refine ⟨fun k σ v hv => ?_, fun k v hv => ?_⟩
   · have hd : deg (σ * frob h * σ⁻¹) = deg (frob h) := by
-      simp [map_mul, map_inv]
+      simp
     have he : ∀ u, a.ρ σ (a.ρ (frob h) u) = a.ρ (σ * frob h * σ⁻¹) (a.ρ σ u) := by
       intro u
       rw [← Module.End.mul_apply, ← map_mul, ← Module.End.mul_apply, ← map_mul, mul_assoc, mul_assoc,

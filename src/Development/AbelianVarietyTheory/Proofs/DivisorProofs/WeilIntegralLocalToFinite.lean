@@ -35,7 +35,7 @@ theorem exists_factor_pi {O B : Type} [CommRing O] [IsDomain O] [CommRing B] [Al
     funext j
     by_cases h : j = i
     · subst h; simp
-    · simp [Pi.single_apply, h]
+    · simp [h]
   let φ : T i →ₐ[O] O :=
     { toFun := fun t => χ (Pi.single i t)
       map_one' := h1

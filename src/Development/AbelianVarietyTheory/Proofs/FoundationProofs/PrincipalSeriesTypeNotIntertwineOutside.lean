@@ -70,7 +70,7 @@ theorem not_intertwine : ∀ (k : Type) [Field k] [ValuativeRel k] [TopologicalS
       intro i
       by_cases hi : i = a
       · subst hi; simp [hsu]
-      · simp [Pi.single_eq_of_ne hi, hi]
+      · simp [hi]
     rw [hθj, hθ]
     intro h
     exact hne (Units.ext h).symm

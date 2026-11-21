@@ -45,8 +45,7 @@ theorem splitEquiv_fst (w : InfinitePlace F) (z : AF F ⊗[F] E) :
   | tmul a e =>
     simp only [splitEquiv, AlgEquiv.trans_apply, Algebra.TensorProduct.comm_tmul,
       Algebra.TensorProduct.congr_apply, Algebra.TensorProduct.map_tmul, AlgEquiv.refl_toAlgHom,
-      Algebra.TensorProduct.prodRight_tmul, AlgEquiv.prodCongr_apply, Prod.map_fst,
-      Algebra.TensorProduct.piRight_tmul, AlgEquiv.piCongrRight_apply]
+      Algebra.TensorProduct.prodRight_tmul]
     rfl
 
 def pairMat {R S : Type} {m : ℕ} (A : Matrix (Fin m) (Fin m) R) (B : Matrix (Fin m) (Fin m) S) :

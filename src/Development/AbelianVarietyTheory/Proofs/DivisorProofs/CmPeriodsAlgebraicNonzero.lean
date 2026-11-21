@@ -51,7 +51,7 @@ theorem mul_comm_of_rank_coker {K V : Type*} [Field K] [AddCommGroup V] [Module 
       exact hyW ((W.smul_mem_iff ha).1 hg)
     intro j; fin_cases j <;> assumption
   have := hli.cardinal_lift_le_rank
-  simp only [Cardinal.mk_fintype, Fintype.card_fin, Nat.cast_ofNat, Cardinal.lift_ofNat] at this
+  simp only [Cardinal.mk_fintype, Fintype.card_fin] at this
   have h3 : (3 : Cardinal) ≤ 2 := by
     have := this.trans (Cardinal.lift_le.2 hrk)
     simpa using this

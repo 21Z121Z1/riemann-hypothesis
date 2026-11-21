@@ -96,8 +96,8 @@ theorem toLp_eq_sum_bas (N : ℕ) (ξ : Fin N → ℂ) :
     (WithLp.toLp 2 ξ : V N) = ∑ j, ξ j • ReciprocityTheory.L2DbarEstimates.bas N j := by
   ext i
   simp only [ReciprocityTheory.L2DbarEstimates.bas, WithLp.ofLp_sum, WithLp.ofLp_smul, Finset.sum_apply, Pi.smul_apply,
-    EuclideanSpace.single_apply, smul_eq_mul, mul_ite, mul_one, mul_zero, Finset.sum_ite_eq,
-    Finset.sum_ite_eq', Finset.mem_univ, if_true]
+    EuclideanSpace.single_apply, smul_eq_mul, mul_ite, mul_zero, Finset.sum_ite_eq,
+    Finset.mem_univ, if_true]
   try simp
 
 theorem fubiniStudy_hessian_posDef : ∀ (k : Type) [CommRing k] (N : ℕ) (σ : k →+* ℂ) (c0 : AlgChart (PSpace.str k N) σ N) (z : CxPts (PSpace.str k N) σ), z ∈ c0.e.source → ∀ (b : (ProjSpace.hermitianTwistingSheaf k N).B.ι), z ∈ ptsIn (PSpace.str k N) σ ((ProjSpace.hermitianTwistingSheaf k N).B.U b) → (c0.hess ((ProjSpace.hermitianTwistingSheaf k N).φ σ) b z).PosDef := by

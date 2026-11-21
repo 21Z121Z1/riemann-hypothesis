@@ -39,7 +39,7 @@ theorem baseChange_nondeg {K M : Type} [CommRing K] [AddCommGroup M] [Module.Fre
       b.repr_self, one_smul, one_mul]
     by_cases hij : i = j
     · subst hij; simp
-    · simp [Finsupp.single_eq_of_ne hij, Finsupp.single_eq_of_ne' hij]
+    · simp [Finsupp.single_eq_of_ne' hij]
   refine b'.forall_coord_eq_zero_iff.1 fun j => ?_
   rw [← key j]
   exact hx _

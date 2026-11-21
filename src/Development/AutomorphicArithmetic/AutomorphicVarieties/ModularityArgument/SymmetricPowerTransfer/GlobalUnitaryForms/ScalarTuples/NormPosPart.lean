@@ -168,7 +168,7 @@ private theorem norm_pos_part {Δ : F} (hneg : ∀ σ : F →+* ℝ, σ Δ < 0) 
     0 ≤ σ (QuadraticAlgebra.norm y) := by
   have h := hneg σ
   rw [QuadraticAlgebra.norm_def]
-  simp only [map_add, map_sub, map_mul, map_zero, zero_mul, add_zero]
+  simp only [map_sub, map_mul, zero_mul, add_zero]
   nlinarith [sq_nonneg (σ y.re), sq_nonneg (σ y.im), mul_nonneg (neg_nonneg.mpr h.le) (sq_nonneg (σ y.im))]
 
 end Main
@@ -193,7 +193,7 @@ theorem exG : ExG := by
     simp at h1
   have hx1 : herm c m (0, ⟨1, 0⟩) (0, ⟨1, 0⟩) = algebraMap F (Lsq F Δ) g := by
     rw [hg, herm, tr_form]
-    simp only [star_zero, star_one, mul_zero, zero_mul, mul_one, add_zero, zero_add, map_zero]
+    simp only [star_zero, star_one, mul_zero, mul_one, add_zero, zero_add]
     rfl
   have hgpos : TPos g := by
     have h1 := hpos _ hx1ne

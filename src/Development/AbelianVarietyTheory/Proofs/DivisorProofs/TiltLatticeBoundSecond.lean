@@ -599,7 +599,7 @@ theorem iota_existsUnique_bijective : ∀ (p : ℕ) [Fact p.Prime] (C : Type) [F
     (by intro x y; simp [actH, Matrix.map_add]) hsH
   have memE : ∀ (ρ : Λ → Matrix (Fin h) (Fin h) O) (u : Fin h → C), u ∈ eig C ρ τ ↔
       ∀ b, Matrix.toLin' ((ρ b).map (algebraMap O C)) u = algebraMap O C (τ b) • u := by
-    intro ρ u; simp [eig, Submodule.mem_iInf, Module.End.mem_eigenspace_iff]
+    intro ρ u; simp [eig, Submodule.mem_iInf]
   set V := eig C (actT D) τ with hVdef
   set W := eig C (actH D) τ with hWdef
   set Fc : Matrix (Fin h) (Fin h) C := D.F.map ((algebraMap O C).comp (fontaineTheta O p)) with hFc

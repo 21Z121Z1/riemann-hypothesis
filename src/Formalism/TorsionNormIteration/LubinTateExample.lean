@@ -34,8 +34,8 @@ theorem torsionExample : TorsionExample := by
   unfold TorsionExample IsLTPoly
   refine ⟨⟨?_, ?_, ?_, ?_⟩, ?_, ?_, ?_⟩
   · simp
-  · simp [Polynomial.coeff_X]
-  · simp [Polynomial.coeff_X]
+  · simp
+  · simp
   · intro i h1 h2
     simp [Polynomial.coeff_X, Polynomial.coeff_X_pow, h2, Ne.symm h1]
   · norm_num

@@ -257,7 +257,7 @@ theorem brp_gram_star (hc : ∀ (φ : K →+* ℂ) (x : K), φ (star x) = starRi
   ext a c
   simp only [Formalism.HN.gramPl, Matrix.of_apply, Matrix.map_apply, Formalism.HermitianLatticesTheory.majAt, Formalism.HermitianLatticesTheory.fcoord, Formalism.HermitianLatticesTheory.vecAt,
     inv_one, Matrix.one_mulVec, Pi.basisFun_repr, Pi.star_apply, hc, map_sum, map_mul]
-  simp [Complex.star_def]
+  simp
 
 variable [IsTotallyComplex K]
 

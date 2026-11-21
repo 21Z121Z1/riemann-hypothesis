@@ -102,7 +102,7 @@ theorem mat_nmat_toChart (X : Data E r) (lab : Ψ ≃ X.Ψ) (q : LowEnt Ψ r ≃
   rw [toChart_apply]
   simp only [mat, nmat, lowMat, Matrix.of_apply]
   split_ifs with h
-  · simp [PiLp.toLp_apply]
+  · simp
   · rfl
   · rfl
 

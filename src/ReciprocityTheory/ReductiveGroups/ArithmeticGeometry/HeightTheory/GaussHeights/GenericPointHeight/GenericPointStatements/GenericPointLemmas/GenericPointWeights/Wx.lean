@@ -13,7 +13,7 @@ theorem main {K : Type} [Field K] [NumberField K] {ι : Type} [Fintype ι] {Ω :
         ((LinearMap.proj c : ((c : ι) → A c) →ₗ[K] A c) ∘ₗ
           (∑ j, (LinearMap.proj j : (Fin (d.N + 1) → K) →ₗ[K] K).smulRight (d.w j))) x = d.wx x c := by
       intro c x
-      simp [ReciprocityTheory.ChartRestriction.G.T0.Data.wx, LinearMap.sum_apply, Finset.sum_apply]
+      simp [ReciprocityTheory.ChartRestriction.G.T0.Data.wx, Finset.sum_apply]
     have hne : ∀ c, LinearMap.ker ((LinearMap.proj c : ((c : ι) → A c) →ₗ[K] A c) ∘ₗ
         (∑ j, (LinearMap.proj j : (Fin (d.N + 1) → K) →ₗ[K] K).smulRight (d.w j))) ≠ ⊤ := by
       intro c htop

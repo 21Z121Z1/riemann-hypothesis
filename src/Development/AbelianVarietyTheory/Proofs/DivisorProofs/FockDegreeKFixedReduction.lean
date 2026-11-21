@@ -38,13 +38,13 @@ theorem exists_upq_decomp {R S : ℕ} (Z : Formalism.BasicNotions.TH.Mat R S) :
       Matrix.conjTranspose_mul, Matrix.conjTranspose_conjTranspose, hJH, Matrix.smul_mul, Matrix.mul_smul,
       Matrix.add_mul, Matrix.mul_add, Matrix.neg_mul, Matrix.mul_neg, Matrix.mul_assoc, hJ, Matrix.mul_one]
     simp only [← Matrix.mul_assoc, hJ, Matrix.one_mul]
-    ext i j; simp [Matrix.add_apply, Matrix.sub_apply, Matrix.smul_apply]; try ring
+    ext i j; simp [Matrix.add_apply, Matrix.smul_apply]; try ring
   · show _ * Jm R S + Jm R S * _ = 0
     simp only [conjR, adjZ, Matrix.conjTranspose_smul, Matrix.conjTranspose_sub, Matrix.conjTranspose_neg,
       Matrix.conjTranspose_mul, Matrix.conjTranspose_conjTranspose, hJH, Matrix.smul_mul, Matrix.mul_smul,
       Matrix.sub_mul, Matrix.mul_sub, Matrix.neg_mul, Matrix.mul_neg, Matrix.mul_assoc, hJ, Matrix.mul_one]
     simp only [← Matrix.mul_assoc, hJ, Matrix.one_mul]
-    ext i j; simp [Matrix.add_apply, Matrix.sub_apply, Matrix.smul_apply]; try ring
+    ext i j; simp [Matrix.add_apply, Matrix.smul_apply]; try ring
   · ext i j; simp [Matrix.add_apply, Matrix.sub_apply, Matrix.smul_apply]; ring_nf; rw [Complex.I_sq]; ring
 
 end GlobalTheory.EvenStep

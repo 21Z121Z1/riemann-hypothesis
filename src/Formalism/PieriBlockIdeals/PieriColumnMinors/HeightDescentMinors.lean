@@ -183,7 +183,7 @@ theorem action_laws_holds : ActLaws := by
 theorem X_mul_q_eq_one_add_X_pow_sub_one : X * q l O = (1 + X) ^ l - 1 := by
   ext n
   rcases n with _ | m
-  · simp [coeff_one_add_X_pow_alt]
+  · simp
   · simp [q, coeff_one_add_X_pow_alt, PowerSeries.coeff_succ_X_mul]
 
 theorem q_multiplicative_holds : QMul := by
@@ -330,7 +330,7 @@ theorem br_eq_X_mul_shift (d : ℤ_[l]) :
 
 theorem coeff_one_br (d : ℤ_[l]) : coeff 1 (br l O d) = algebraMap ℤ_[l] O d := by
   first
-    | simp [br, PowerSeries.binomialSeries_coeff, Ring.choose_one_right, Algebra.smul_def]
+    | simp [br, PowerSeries.binomialSeries_coeff, Algebra.smul_def]
     | simp [br, PowerSeries.binomialSeries, Ring.choose_one_right, Algebra.smul_def]
     | simp [br, PowerSeries.binomialSeries, Ring.choose_one_right]
 

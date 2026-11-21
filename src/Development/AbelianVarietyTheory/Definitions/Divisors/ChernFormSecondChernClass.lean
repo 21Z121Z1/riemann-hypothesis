@@ -84,7 +84,7 @@ theorem aeval_pm (m : ℕ) (a b : ℝ) :
   simp_rw [hI]
   rw [intervalIntegral.integral_finsetSum fun j _ => by apply Continuous.intervalIntegrable; fun_prop]
   simp only [pm, map_sum, map_mul, map_pow, map_sub, map_ofNat, aeval_C, aeval_X, Matrix.cons_val_zero,
-    Matrix.cons_val_one, Matrix.head_cons, Algebra.algebraMap_self, RingHom.id_apply]
+    Matrix.cons_val_one, Algebra.algebraMap_self, RingHom.id_apply]
   refine Finset.sum_congr rfl fun j _ => ?_
   rw [intervalIntegral.integral_const_mul, beta]
   ring

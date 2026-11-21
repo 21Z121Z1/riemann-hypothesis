@@ -23,7 +23,7 @@ theorem mix_eq_zero_of_re_form_eq_zero : ∀ (d : ℕ) (A M : Matrix (Fin (d + 1
         + b * M l l * starRingEnd ℂ b := by
     intro a b j l
     simp only [Pi.add_apply, map_add, add_mul, mul_add, Finset.sum_add_distrib]
-    simp [Pi.single_apply, apply_ite (starRingEnd ℂ), mul_ite, ite_mul, Finset.sum_ite_eq', Finset.sum_ite_eq]
+    simp [Pi.single_apply, apply_ite (starRingEnd ℂ), mul_ite, ite_mul, Finset.sum_ite_eq']
     ring
   have h0 : ∀ j, (M j j).re = 0 := by
     intro j
@@ -35,7 +35,7 @@ theorem mix_eq_zero_of_re_form_eq_zero : ∀ (d : ℕ) (A M : Matrix (Fin (d + 1
     have h1 := hf (Pi.single j 1 + Pi.single l 1)
     have h2 := hf (Pi.single j 1 + Pi.single l Complex.I)
     rw [hq] at h1 h2
-    simp [Complex.mul_re, Complex.conj_re, Complex.conj_im, h0 j, h0 l] at h1 h2
+    simp [Complex.mul_re, h0 j, h0 l] at h1 h2
     apply Complex.ext <;> simp [Matrix.conjTranspose_apply] <;> linarith
   have hH : A.adjugateᴴ = A.adjugate := by
     rw [adjugate_conjTranspose, hA.eq]

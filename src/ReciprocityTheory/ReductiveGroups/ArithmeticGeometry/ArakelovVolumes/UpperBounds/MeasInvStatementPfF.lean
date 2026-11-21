@@ -61,7 +61,7 @@ lemma one_add_sl_eS (x : LoI ι r → ℂ) (y : UpI ι r → ℂ) (τ : ι) :
     1 + sl ((eS ι r).symm (x, y)) τ = Nmat x τ := by
   ext a b
   by_cases h : b < a
-  · simp [sl, Nmat, eS_symm_apply, Matrix.one_apply, h, h.ne']
+  · simp [sl, Nmat, eS_symm_apply, h, h.ne']
   · simp [sl, Nmat, eS_symm_apply, Matrix.one_apply, h]
 
 lemma up_eS (x : LoI ι r → ℂ) (y : UpI ι r → ℂ) (τ : ι) : up ((eS ι r).symm (x, y)) τ = Umat y τ := by

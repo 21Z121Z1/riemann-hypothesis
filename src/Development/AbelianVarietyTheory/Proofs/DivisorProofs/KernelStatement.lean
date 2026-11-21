@@ -91,7 +91,7 @@ theorem cov_bound [FiniteDimensional ℝ E] [MeasurableSpace E] [BorelSpace E] (
   have h1 : 1 ≤ δ⁻¹ * |(Φ' x).det| := by
     rw [inv_mul_eq_div, one_le_div hδ]
     exact hdet x hx
-  simp only [smul_eq_mul, Function.comp_apply]
+  simp only [smul_eq_mul]
   nlinarith [abs_nonneg (g (Φ x))]
 
 end Flat
@@ -222,7 +222,7 @@ theorem kernelSt_holds : KernelSt := by
     exact cthickening_mono hCt Kc (closedBall_subset_cthickening hyK _ (ball_subset_closedBall hw))
   · have hv : ‖(WithLp.toLp 2 ξ : V d)‖ ≤ R := hball y hy hyK _ (by simpa using hξ)
     obtain ⟨h1', -, h3'⟩ := hFy _ hv
-    simp only [WithLp.ofLp_toLp] at h1' h3'
+    simp only at h1' h3'
     exact ⟨h1', h3'⟩
   obtain ⟨hac, hah⟩ := continuous_and_smul ha hy
   obtain ⟨s, hsdef⟩ : ∃ s : Set (V d), s = {v | a c y v.ofLp < 1} := ⟨_, rfl⟩

@@ -169,9 +169,9 @@ theorem pderiv_prod (k : K) (f g : PowerSeries K) :
       MvPowerSeries.C k * (at1 0 (PowerSeries.derivative K f) * at1 1 g) := by
   have hC : MvPowerSeries.pderiv K (0 : Fin 2) (MvPowerSeries.C k) = 0 := by
     ext n
-    simp [MvPowerSeries.coeff_pderiv, MvPowerSeries.coeff_C]
+    simp
   have h10 : (1 : Fin 2) ≠ 0 := by decide
-  simp only [Derivation.leibniz, hC, pderiv_single_self, pderiv_single_ne h10, smul_zero, add_zero, zero_add,
+  simp only [Derivation.leibniz, hC, pderiv_single_self, pderiv_single_ne h10,
     smul_eq_mul]
   ring
 

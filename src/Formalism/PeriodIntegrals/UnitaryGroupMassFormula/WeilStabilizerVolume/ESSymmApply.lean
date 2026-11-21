@@ -27,7 +27,7 @@ lemma hasProd_tl (hT : TailH m L) (S : Finset ι) :
     have h3 := (ENNReal.tendsto_toNNReal hc).comp h
     refine h3.congr ?_
     intro s
-    simp [Function.comp_def, am, ENNReal.toNNReal_prod]
+    simp [am, ENNReal.toNNReal_prod]
   unfold tl
   rw [h2.tprod_eq]
   exact h2
@@ -53,8 +53,8 @@ lemma tl_split [DecidableEq ι] (hT : TailH m L) {S T : Finset ι} (h : S ⊆ T)
   funext i
   by_cases hiS : i ∈ S
   · have hiT := h hiS
-    simp [Set.mulIndicator_apply, hiT, hiS]
-  · by_cases hiT : i ∈ T <;> simp [Set.mulIndicator_apply, hiT, hiS]
+    simp [hiT, hiS]
+  · by_cases hiT : i ∈ T <;> simp [hiT, hiS]
 
 lemma tl_zero [DecidableEq ι] (hT : TailH m L) {S : Finset ι} {i : ι} (hi : i ∉ S)
     (h0 : am m L i = 0) : tl m L S = 0 := by

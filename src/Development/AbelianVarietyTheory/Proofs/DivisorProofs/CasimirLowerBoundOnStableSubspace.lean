@@ -117,7 +117,7 @@ lemma finiteRing_sq_sub_mul_sq_eq_of_card [FiniteDimensional ℂ W] (hL : IsKLie
     · subst he0
       have hz0 : z ≠ 0 := by simpa using h0
       have := hIH hz0
-      simp only [map_zero, LinearMap.zero_apply, Complex.zero_re, mul_zero, zero_add]
+      simp only [map_zero, Complex.zero_re, mul_zero, zero_add]
       exact this
     · have hpos := hB.2.1 e he0
       have h2 : (c₀ : ℝ) * (B z z).re ≤ (B z (casK actW z)).re := by

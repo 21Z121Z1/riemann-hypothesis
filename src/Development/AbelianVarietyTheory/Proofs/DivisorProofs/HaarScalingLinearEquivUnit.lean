@@ -106,7 +106,7 @@ theorem haarChar_smul_mulVec : ∀ (F E : Type) [Field F] [NumberField F] [Field
   have hdet : Matrix.GeneralLinearGroup.det
       (Units.map (Matrix.scalar (Fin n₁) : AE F E →+* Matrix (Fin n₁) (Fin n₁) (AE F E)).toMonoidHom c) = c ^ n₁ := by
     ext
-    simp [Matrix.GeneralLinearGroup.val_det_apply, Matrix.det_smul]
+    simp [Matrix.GeneralLinearGroup.val_det_apply]
   rw [hdet, map_pow, GlobalTheory.Doubling.absE_conjUnit]
 
 end GlobalTheory.LeviModulus.CharVec

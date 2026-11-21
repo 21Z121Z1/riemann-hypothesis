@@ -56,7 +56,7 @@ theorem constFn_comp_spMap' {R S : Type} [CommRing R] [CommRing S] (q : Y ⟶ Sp
     (q.appLE ⊤ W le_top).hom ((Scheme.ΓSpecIso (CommRingCat.of S)).inv.hom (x t))
   rw [e1, CommRingCat.comp_apply]
   congr 1
-  simp only [CommRingCat.comp_apply] at h2
+  simp only at h2
   exact h2.symm
 
 theorem isUnit_of_mul_eq_one' {M : Type*} [CommMonoid M] (a b : M) (h : a * b = 1) : IsUnit a :=

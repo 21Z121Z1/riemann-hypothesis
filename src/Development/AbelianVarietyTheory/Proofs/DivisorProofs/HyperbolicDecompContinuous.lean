@@ -45,7 +45,7 @@ theorem levi_continuous : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [
       (continuous_const (y := b)).smul ((hcA.comp hui).smul (continuous_const (y := incV F y)))
     exact (c1.add c2).add c3
   refine continuous_pi fun r => continuous_pi fun i => ?_
-  have : ∀ p, f p r i = (f p *ᵥ Pi.single i 1) r := fun p => by simp [Matrix.mulVec_single_one]
+  have : ∀ p, f p r i = (f p *ᵥ Pi.single i 1) r := fun p => by simp
   simp_rw [this]
   exact (continuous_apply r).comp (hcol i)
 

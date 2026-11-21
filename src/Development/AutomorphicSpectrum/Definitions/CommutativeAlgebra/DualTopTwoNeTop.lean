@@ -116,7 +116,7 @@ theorem mu_int_ne_top [Nontrivial T] : muOrder ℤ T ≠ ⊤ := by
   intro h
   obtain ⟨s, t, hst⟩ := exists_pair_ne T
   have := mu_int_parity (Pi.single s 1) (h ▸ trivial) s t
-  simp [Pi.single_apply, hst.symm] at this
+  simp [hst.symm] at this
 
 theorem mu_two_ne_bot : muOrder ℤ ℤˣ ≠ ⊥ := by
   intro h

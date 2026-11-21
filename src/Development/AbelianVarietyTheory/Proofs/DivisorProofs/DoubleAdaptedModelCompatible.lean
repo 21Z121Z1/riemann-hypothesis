@@ -72,7 +72,7 @@ theorem finRelG_isoA_unique : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Ty
         rintro c _ ⟨u, ⟨y, rfl⟩, hu, rfl⟩
         refine ⟨GlobalTheory.LatVac.liftV v c • Matrix.vecMulVec y (incV F H'.x), ⟨GlobalTheory.LatVac.liftV v c • y, ?_⟩, ?_, ?_⟩
         · ext i j
-          simp [Matrix.vecMulVec_apply, smul_mul_assoc]
+          simp [Matrix.vecMulVec_apply]
         · intro a ha
           rw [smul_comm, hu a ha, smul_zero]
         · rw [GlobalTheory.LatOpenCpt.locCo_smul, GlobalTheory.LatVac.evFin_liftV] }

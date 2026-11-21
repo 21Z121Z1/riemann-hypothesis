@@ -118,7 +118,7 @@ theorem phiCSpan_holds : PhiCSpanStatement := by
         intro z
         obtain ⟨n, hn, hny⟩ := hx y
         have h1 := hspan _ hny z
-        simp only [map_nsmul, map_zsmul, LinearMap.smul_apply, nsmul_eq_mul, zsmul_eq_mul] at h1
+        simp only [map_nsmul, LinearMap.smul_apply, nsmul_eq_mul] at h1
         rw [show ((0 : SymB cj Y) : Y →ₗ[ℤ] Y →ₗ[ℤ] ℝ) = 0 from rfl, LinearMap.zero_apply,
           LinearMap.zero_apply]
         rcases mul_eq_zero.mp h1 with h | h

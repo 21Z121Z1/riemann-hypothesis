@@ -73,7 +73,7 @@ theorem exists_fac_comp {G X P Y : Scheme.{0}} (j : G ⟶ X) (ν : X ⟶ P) (π 
     have e : ε.hom.app E = (Scheme.Modules.pullbackComp j (ν ≫ π)).hom.app E ≫ eqToHom (by simp) := by
       simp [ε, Scheme.Modules.pullbackCongr]
     rw [e, ← h]
-    simp only [← Category.assoc, ← Functor.map_comp, Iso.hom_inv_id_app, Iso.hom_inv_id_app_assoc]
+    simp only [← Category.assoc, Iso.hom_inv_id_app]
     simp
   refine ⟨ε.hom.app A ≫ t ≫ (Scheme.Modules.pullbackComp j ν).inv.app B, ?_⟩
   rw [← cancel_mono (ε.hom.app E)]

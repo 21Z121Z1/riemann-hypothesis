@@ -36,7 +36,7 @@ theorem exists_isWittBasis (σ : E →ₐ[F] E) (h : IsCMExt F E σ) {n : ℕ} (
     intro h0
     have := (σ : E →+* E).map_det ((l / 2) • J⁻¹)
     rw [show (σ : E →+* E).mapMatrix ((l / 2) • J⁻¹) = Z from rfl, h0, map_eq_zero] at this
-    simp [Matrix.det_smul, Matrix.det_nonsing_inv, hl, hJ] at this
+    simp [Matrix.det_nonsing_inv, hl, hJ] at this
   have hM : (blk 1 Z 1 (-Z)).det ≠ 0 := by
     rw [blk, Matrix.det_submatrix_equiv_self, Matrix.det_fromBlocks_one₁₁, Matrix.one_mul,
       show -Z - Z = (-2 : E) • Z by rw [neg_smul, two_smul]; abel, Matrix.det_smul]

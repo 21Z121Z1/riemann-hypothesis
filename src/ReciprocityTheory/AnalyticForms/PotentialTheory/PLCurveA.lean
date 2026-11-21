@@ -133,7 +133,7 @@ theorem maDens_one (φ : Fin 1 → (Fin 1 → ℂ) → ℝ) (z : Fin 1 → ℂ) 
   have hU : (Finset.univ : Finset (Finset (Fin 1))) = {∅, {0}} := by decide
   unfold ReciprocityTheory.AnForm.maDens ReciprocityTheory.AnForm.mdisc
   rw [hU, Finset.sum_pair (by decide)]
-  simp [Matrix.det_fin_one]
+  simp
 
 theorem maDens_congr {D : ℕ} (φ ψ : Fin D → (Fin D → ℂ) → ℝ) (z : Fin D → ℂ)
     (h : ∀ k, φ k =ᶠ[𝓝 z] ψ k) : ReciprocityTheory.AnForm.maDens φ z = ReciprocityTheory.AnForm.maDens ψ z := by

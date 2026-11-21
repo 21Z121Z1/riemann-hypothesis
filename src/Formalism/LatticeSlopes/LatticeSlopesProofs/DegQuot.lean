@@ -192,7 +192,7 @@ theorem degree_quotient : DegQuot := by
     refine ⟨Sum.elim s r, ?_⟩
     apply Subtype.ext
     simp only [Fintype.sum_sum_type, Sum.elim_inl, Sum.elim_inr, Submodule.coe_add,
-      Submodule.coe_sum, Submodule.coe_smul, v, Submodule.coe_mk]
+      Submodule.coe_sum, Submodule.coe_smul, v]
     rw [hs]
     abel
   let cB := Module.Basis.mk hli hsp

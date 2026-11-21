@@ -43,7 +43,7 @@ theorem pikf : Ad3.K.QuadraticBaseChangeGL3.Th.RWKF → Ad3.K.GL2LocalData.WMod 
   have hu1 : (u : F) ∈ 𝒪[F] := det_mem_of_entries hk1
   have hu2 : ((u⁻¹ : Fˣ) : F) ∈ 𝒪[F] := by
     have : ((u⁻¹ : Fˣ) : F) = ((k⁻¹ : GL (Fin 2) F).val).det := by
-      simp [u, map_inv]
+      simp [u]
     rw [this]
     exact det_mem_of_entries hk2
   have hmodu : modulus (k.val).det = 1 := modulus_eq_one_of_unit u hu1 hu2

@@ -38,7 +38,7 @@ theorem iteratedFDeriv_frac_mul_le {E : Type} [NormedAddCommGroup E] [NormedSpac
   refine ⟨M, fun ε hε x hx => ?_⟩
   have hfun : (fun y => ((ε * w y / (1 + ε * w y) : ℝ) : ℂ) * g y) = ε • fun y => Φ (ε, y) := by
     funext y
-    simp only [Φ, Pi.smul_apply, smul_smul, Complex.real_smul, mul_div_assoc]
+    simp only [Φ, Pi.smul_apply, Complex.real_smul, mul_div_assoc]
     push_cast
     ring
   have hat : ContDiffAt ℝ k (fun y => Φ (ε, y)) x :=

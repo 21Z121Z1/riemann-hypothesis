@@ -207,7 +207,7 @@ def adaptStd (n N ℓ : ℕ) : Adapt (⟨stdLat E n⟩ : GenLat E n) N ℓ where
   onto v hv := ⟨v, hv, by simp⟩
   prod := by
     ext i j
-    by_cases h : i = j <;> simp [Matrix.one_apply, h]
+    by_cases h : i = j <;> simp [h]
   cols v hv := by
     have : (1 : Matrix (Fin n) (Fin n) (𝓞 E)).map (algebraMap (𝓞 E) E) = 1 := Matrix.map_one _ (map_zero _) (map_one _)
     rw [this, Matrix.one_mulVec]; exact ⟨hv, hv⟩

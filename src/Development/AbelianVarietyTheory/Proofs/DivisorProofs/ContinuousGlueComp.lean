@@ -40,7 +40,7 @@ variable {R E : Type} [CommRing R] [CommRing E] [Algebra R E] (c : E →ₐ[R] E
 
 theorem hTens_dbl (JA : Matrix α α E) (JB : Matrix β β E) (a b a' b' : Matrix α β E) :
     hTens c JA (dbl JB) (Matrix.fromCols a b) (Matrix.fromCols a' b') = hTens c JA JB a a' - hTens c JA JB b b' := by
-  simp [hTens, dbl, Fintype.sum_sum_type, Finset.sum_add_distrib, Finset.sum_sub_distrib, sub_eq_add_neg]
+  simp [hTens, dbl, Fintype.sum_sum_type, Finset.sum_add_distrib, sub_eq_add_neg]
 
 theorem hTens_zero_right (JA : Matrix α α E) (JB : Matrix β β E) (a : Matrix α β E) : hTens c JA JB a 0 = 0 := by
   simp [hTens]

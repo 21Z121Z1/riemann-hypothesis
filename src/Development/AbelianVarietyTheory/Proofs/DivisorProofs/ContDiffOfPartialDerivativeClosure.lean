@@ -37,7 +37,7 @@ theorem contDiff_of_partials_in_smooth_span :
           ext m
           by_cases hm : m = i
           · subst hm; simp
-          · simp [hm, Function.update_apply])
+          · simp [hm])
         (fun i => (hDc i).continuous)
       have hcast : ((n + 1 : ℕ) : WithTop ℕ∞) = (n : WithTop ℕ∞) + 1 := by push_cast; rfl
       rw [hcast, contDiff_succ_iff_fderiv]

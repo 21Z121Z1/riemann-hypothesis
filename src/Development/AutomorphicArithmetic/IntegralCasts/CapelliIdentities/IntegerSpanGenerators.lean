@@ -476,7 +476,7 @@ private theorem mem_wachFiltration_iff (W : LocWach PD LL O v n) (T : LocLat G Q
     have hy' : (letE i : LetA O n) • y = x := hy
     have he : (letE i : LetA O n) * letE i = letE i := by
       funext k
-      by_cases h : k = i <;> simp [letE, Pi.single_apply, h]
+      by_cases h : k = i <;> simp [letE, h]
     rw [← hy', smul_smul, he]
   · rintro ⟨h1, h2, h3⟩
     exact ⟨⟨h1, h3⟩, x, h1, h2⟩

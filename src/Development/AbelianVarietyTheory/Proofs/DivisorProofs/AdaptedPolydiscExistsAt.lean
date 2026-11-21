@@ -71,10 +71,10 @@ theorem exists_adapted_of_chart {e m : ℕ} {X : Type} [TopologicalSpace X] (A :
         · intro h'; cases h'
         · rintro ⟨h', h''⟩; cases h'; exact absurd h'' hj
   have hsrc : ψ.source = ψ'.source := by
-    simp [ψ, OpenPartialHomeomorph.trans_source]
+    simp [ψ]
   have htgt : ∀ z, z ∈ ψ.target ↔ H.symm z ∈ ψ'.target := by
     intro z
-    simp [ψ, OpenPartialHomeomorph.trans_target]
+    simp [ψ]
   have hsymm : ∀ z, ψ.symm z = ψ'.symm (H.symm z) := by
     intro z; rfl
   have hHs : ∀ z, H.symm z = c + (ε : ℂ) • z := fun z => rfl

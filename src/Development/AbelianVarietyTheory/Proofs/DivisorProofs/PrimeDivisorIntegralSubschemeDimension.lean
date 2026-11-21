@@ -51,8 +51,8 @@ theorem num_cons_eq {num : Form (Cl p) D} (hn : IsArForm D num) (M : HermLB p) (
   congr 1
   funext j
   refine Fin.cases ?_ (fun j => ?_) j
-  · simp [Fintype.sum_option, Pi.single_apply]
-  · simp [Fintype.sum_option, Pi.single_apply]
+  · simp [Pi.single_apply]
+  · simp [Pi.single_apply]
 
 theorem num_fnB_const (hP : Hypotheses2) (hX : IsArithVar p D) {num : Form (Cl p) D} (hn : IsArForm D num)
     (N : Fin D → HermLB p) (c : ℝ) :

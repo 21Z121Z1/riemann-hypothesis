@@ -138,7 +138,7 @@ theorem IsRestrGroup.exists_const (D : IsRestrGroup p q K) (μi : ∀ i, Measure
   have hU : ∀ g, g ∈ U ↔ ∀ k ∉ S, q k g ∈ K k := fun g => by simp [U, Subgroup.mem_iInf]
   have hUo : IsOpen (U : Set G) :=
     Subgroup.isOpen_mono (H₁ := ⨅ k, (K k).comap (q k)) (fun g hg => (hU g).2 fun k _ => Subgroup.mem_iInf.1 hg k)
-      (by convert D.isOpen_all using 1; ext g; simp [Subgroup.mem_iInf])
+      (by convert D.isOpen_all using 1; ext g; simp)
   have hemb : Topology.IsOpenEmbedding U.subtype := hUo.isOpenEmbedding_subtypeVal
   let π : U →* (∀ i, H i) × (∀ k : S, P k) :=
     ((Pi.monoidHom p).prod (Pi.monoidHom fun k : S => q k)).comp U.subtype

@@ -343,7 +343,7 @@ theorem tr_snoc {n : ℕ} (h : Pt E n) (t : Eˣ) (s : ℕ+) :
   split_ifs with hi
   · subst hi
     simp
-  · simp [List.getD_eq_getElem?_getD, List.getElem?_append, hi]
+  · simp [List.getD_eq_getElem?_getD, List.getElem?_append]
     split_ifs with hlt
     · rfl
     · have h1 : h.blocks.length < i := lt_of_le_of_ne (not_lt.mp hlt) (Ne.symm hi)
@@ -383,7 +383,7 @@ theorem ptEntryL_eq : ∀ (bs : List (Eˣ × ℕ+)) (a b : ℕ), a < (bs.map (fu
 theorem mat_eq {n : ℕ} (w : Pt E n) :
     w.mat = (pt (tr w).1 (tr w).2).submatrix (finCongr (tr_sum w).symm) (finCongr (tr_sum w).symm) := by
   ext a b
-  simp only [Pt.mat, Matrix.submatrix_apply, pt, tr, finCongr_apply, Fin.val_cast]
+  simp only [Pt.mat, Matrix.submatrix_apply, pt, tr]
   exact ptEntryL_eq w.blocks a b (by rw [w.size]; exact a.2)
 
 theorem det_eq {n : ℕ} (w : Pt E n) : w.mat.det = (pt (tr w).1 (tr w).2).det := by

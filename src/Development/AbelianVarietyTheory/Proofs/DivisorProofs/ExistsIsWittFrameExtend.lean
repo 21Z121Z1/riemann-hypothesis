@@ -22,8 +22,7 @@ omit [NumberField F] [NumberField E] in
 
 theorem hE_smul_map {σ : E →ₐ[F] E} (hσ : ∀ x, σ (σ x) = x) {n : ℕ} (J : Matrix (Fin n) (Fin n) E) (c s t : E)
     (x y : Fin n → E) : hE σ (c • J.map σ) (s • x) (t • y) = σ s * t * c * σ (form σ J x y) := by
-  simp only [hE, form, dotProduct, mulVec, Finset.mul_sum, map_sum, map_mul, Function.comp_apply, hσ, Pi.smul_apply,
-    smul_eq_mul, Matrix.smul_apply, Matrix.map_apply]
+  simp only [hE, form, dotProduct, mulVec, Finset.mul_sum, map_sum, map_mul, hσ]
   exact Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun j _ => by
     show σ (s * x i) * (c * σ (J i j)) * (t * y j) = _
     rw [map_mul]; ring
@@ -40,7 +39,7 @@ omit [NumberField F] [NumberField E] in
 
 theorem form_swap {σ : E →ₐ[F] E} (hσ : ∀ x, σ (σ x) = x) {n : ℕ} {J : Matrix (Fin n) (Fin n) E}
     (hJ : ∀ i j, σ (J j i) = -J i j) (x y : Fin n → E) : form σ J x y = -σ (form σ J y x) := by
-  simp only [form, dotProduct, mulVec, Finset.mul_sum, map_sum, map_mul, Function.comp_apply, hσ, hJ,
+  simp only [form, dotProduct, mulVec, Finset.mul_sum, map_sum, map_mul, hσ, hJ,
     ← Finset.sum_neg_distrib]
   rw [Finset.sum_comm]
   exact Finset.sum_congr rfl fun _ _ => Finset.sum_congr rfl fun _ _ => by ring

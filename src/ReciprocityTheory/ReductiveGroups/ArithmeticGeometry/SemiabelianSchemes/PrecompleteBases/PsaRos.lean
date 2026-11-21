@@ -15,7 +15,7 @@ theorem eq_single_of_mul_eq_one {R A : Type*} [CommRing R] [IsDomain R] [AddComm
   have hone1 : ∀ x : A, x ≠ 0 → (1 : AddMonoidAlgebra R A).coeff x = 0 := by
     intro x hx
     rw [AddMonoidAlgebra.one_def, AddMonoidAlgebra.coeff_single]
-    simp only [Finsupp.single_apply, hx, Ne.symm hx, if_false]
+    simp only [Finsupp.single_apply, Ne.symm hx, if_false]
   have hf : f ≠ 0 := by
     rintro rfl
     rw [zero_mul] at h
@@ -66,7 +66,7 @@ theorem eq_single_of_mul_eq_one {R A : Type*} [CommRing R] [IsDomain R] [AddComm
     by_cases hx : x = a
     · subst hx
       rw [Finsupp.single_eq_same]
-    · simp only [Finsupp.single_apply, hx, Ne.symm hx, if_false]
+    · simp only [Finsupp.single_apply, Ne.symm hx, if_false]
       by_contra hne
       have hmem : x ∈ f.coeff.support := Finsupp.mem_support_iff.mpr hne
       rw [ha, Finset.mem_singleton] at hmem
@@ -78,7 +78,7 @@ theorem eq_single_of_mul_eq_one {R A : Type*} [CommRing R] [IsDomain R] [AddComm
     by_cases hx : x = b
     · subst hx
       rw [Finsupp.single_eq_same]
-    · simp only [Finsupp.single_apply, hx, Ne.symm hx, if_false]
+    · simp only [Finsupp.single_apply, Ne.symm hx, if_false]
       by_contra hne
       have hmem : x ∈ g.coeff.support := Finsupp.mem_support_iff.mpr hne
       rw [hb, Finset.mem_singleton] at hmem

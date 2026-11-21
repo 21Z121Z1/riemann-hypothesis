@@ -51,7 +51,7 @@ theorem gs_pull (f : Z ⟶ Y) (g : Y ⟶ X) (z : Z) (U : X.Opens) (h : g (f z) �
     gs f z (g ⁻¹ᵁ U) ((g.app U).hom a) = gs (f ≫ g) z U a := by
   have h' : (f ≫ g) z ∈ U := h
   rw [gs_eq f z (g ⁻¹ᵁ U) h, gs_eq (f ≫ g) z U h']
-  simp only [Scheme.Hom.comp_app, CommRingCat.comp_apply]
+  simp only [Scheme.Hom.comp_app]
   try rfl
 
 theorem fn_ext {V : X.Opens} {a b : Γ(X, V)} (h : ∀ x ∈ V, gs (𝟙 X) x V a = gs (𝟙 X) x V b) : a = b := by

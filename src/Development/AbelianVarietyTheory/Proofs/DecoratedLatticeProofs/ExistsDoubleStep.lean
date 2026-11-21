@@ -69,7 +69,7 @@ theorem last_gram (N : ℕ) (a : Matrix (Fin (N + 1)) (Fin N) E) (b : Matrix (Fi
   · simp [Matrix.diagonal_apply, Fin.castSucc_ne_last]
   · rw [Subsingleton.elim i 0, Subsingleton.elim j 0]
     simp
-  · simp [Matrix.diagonal_apply, (Fin.castSucc_ne_last j).symm]
+  · simp [(Fin.castSucc_ne_last j).symm]
 
 end Gram
 

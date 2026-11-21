@@ -38,7 +38,7 @@ theorem d01_smul_base_leibniz_of_differentiableAt {φ : E → ℂ} {σ : Pt E g 
   unfold d01
   rw [fderiv_fst_smul hφ hσ, fderiv_fst_smul hφ hσ]
   funext S
-  simp only [Prod.smul_fst, Pi.add_apply, Pi.smul_apply, smul_eq_mul, add_smul]
+  simp only [Prod.smul_fst, Pi.add_apply, Pi.smul_apply, smul_eq_mul]
   ring
 
 theorem d10_apply_zero_direction (φ : E → ℂ) (b : E) : d10 φ b 0 = 0 := by simp [d10]

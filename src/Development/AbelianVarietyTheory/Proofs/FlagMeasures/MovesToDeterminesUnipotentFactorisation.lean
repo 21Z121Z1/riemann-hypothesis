@@ -77,7 +77,7 @@ theorem step : ∀ (D : D7) (X : HidaSetting D) (Y : Full X) (u u' : D.what₂.W
       rw [frame_mapLF _ ht0]
     have e1 : frame t.frame b = t.lin (frame (lf D (X.Fu u')) b) := frame_mapLF _ ht1 _ b
     rw [e1, ht]
-    simp only [LinearEquiv.mul_apply, LinearEquiv.apply_symm_apply]
+    simp only [LinearEquiv.mul_apply]
     have hinv : ∀ x, n (n⁻¹ x) = x := fun x => by
       rw [← LinearEquiv.mul_apply, mul_inv_cancel]
       rfl

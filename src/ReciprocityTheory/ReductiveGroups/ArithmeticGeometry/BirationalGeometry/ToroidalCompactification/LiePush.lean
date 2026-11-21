@@ -127,9 +127,9 @@ theorem comb_baseChange {R : Type} [CommRing R] {G₀ : Over (Sp R)} [GrpObj G�
     congr 1
     ext a <;> first
       | (simp [dualMapR, epsScaleR]; done)
-      | (simp [dualMapR, epsScaleR, smul_eq_mul, map_mul]; done)
-      | (simp [dualMapR, epsScaleR, smul_eq_mul, map_mul, mul_comm]; done)
-      | (simp [dualMapR, epsScaleR, smul_eq_mul, map_mul, TrivSqZeroExt.algebraMap_eq_inl]; done)
+      | (simp [dualMapR, epsScaleR, smul_eq_mul]; done)
+      | (simp [dualMapR, epsScaleR, smul_eq_mul, mul_comm]; done)
+      | (simp [dualMapR, epsScaleR, TrivSqZeroExt.algebraMap_eq_inl]; done)
       | (simp [dualMapR, epsScaleR, smul_eq_mul, TrivSqZeroExt.algebraMap_eq_inl]; clear * -; done)
   let d : Over.mk ((epsR S).hom ≫ Geo.Tor.spMap f) ⟶ epsR R := Over.homMk (Geo.Tor.spMap (dualMapR f)) hd
   have cm : ∀ a b : epsR R ⟶ G₀, d ≫ (a * b) = (d ≫ a) * (d ≫ b) := fun a b => by

@@ -34,6 +34,6 @@ theorem UpperTheory.V.K.tensTors :
     apply hinj
     have : LinearMap.rTensor (H ⧸ T) m = n • LinearMap.id := by
       ext a b
-      simp [m, ← nsmul_eq_mul, TensorProduct.smul_tmul']
+      simp [m, TensorProduct.smul_tmul']
     rw [map_zero, this, LinearMap.smul_apply, LinearMap.id_apply, ← map_nsmul, hnx, map_zero]
   exact (hE x).1 h0

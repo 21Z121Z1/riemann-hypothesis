@@ -579,7 +579,7 @@ theorem shift_smulLat_lattice (a : K) (ha : a ≠ 0) (N : Submodule (𝓞 K) (Fi
     simp [smulLat]
   rw [hset, ← Submodule.map_span, hN.span_eq_top, Submodule.map_top, LinearMap.range_eq_top]
   intro v
-  exact ⟨a⁻¹ • v, by simp [smul_smul, mul_inv_cancel₀ ha, inv_mul_cancel₀ ha]⟩
+  exact ⟨a⁻¹ • v, by simp [smul_smul, inv_mul_cancel₀ ha]⟩
 
 theorem shift_idealSmul_lattice (I : FractionalIdeal (𝓞 K)⁰ K) (hI : I ≠ 0)
     (N : Submodule (𝓞 K) (Fin d → K)) (hN : Submodule.IsLattice K N) :

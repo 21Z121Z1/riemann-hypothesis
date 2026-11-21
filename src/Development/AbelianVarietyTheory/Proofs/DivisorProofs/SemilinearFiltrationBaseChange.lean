@@ -69,7 +69,7 @@ theorem annihilator_baseChange : ∀ {R R' : Type} [CommRing R] [CommRing R'] [A
           have := hφ _ (Submodule.subset_span ⟨_, hqd c, rfl⟩)
           rw [map_sub, map_sub, sub_eq_zero] at this; exact this
         rw [h1, hexp (q c)]
-        simp [map_sum, LinearMap.map_smulₛₗ, LinearMap.sum_apply, hg, k, Algebra.smul_def, mul_comm]
+        simp [map_sum, LinearMap.map_smulₛₗ, LinearMap.sum_apply, hg, k, mul_comm]
     rw [key]
     exact Submodule.sum_mem _ fun i _ => Submodule.smul_mem _ _ (Submodule.subset_span ⟨k i, hk i, rfl⟩)
 

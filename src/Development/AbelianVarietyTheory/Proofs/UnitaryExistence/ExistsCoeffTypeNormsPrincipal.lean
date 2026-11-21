@@ -51,7 +51,7 @@ theorem exists_coeff_typeNorms_principal :
   · intro z hz
     have e : z = ∑ i, b.repr ⟨z, hz⟩ i • (b i : ℂ) := by
       have := congrArg c.F.val (b.sum_repr ⟨z, hz⟩)
-      simp only [map_sum, map_smul] at this
+      simp only [map_sum] at this
       exact this.symm
     rw [e]
     exact sum_mem fun i _ => IntermediateField.smul_mem _ (hc' _ (by simp))

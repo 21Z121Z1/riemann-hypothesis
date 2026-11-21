@@ -140,7 +140,7 @@ theorem finRel_unique : GlobalTheory.FunPr.Hypotheses₂ → ∀ (F E : Type) [F
         rintro u (⟨z, rfl⟩ | ⟨y, rfl⟩) hat
         · refine hw _ ⟨z, 0, hat, ?_, ?_⟩
           · simpa [vz] using at0
-          · simp [vz]
+          · simp
         · refine hw _ ⟨0, y, ?_, hat, ?_⟩
           · simpa [vz] using at0
           · simp [vz]

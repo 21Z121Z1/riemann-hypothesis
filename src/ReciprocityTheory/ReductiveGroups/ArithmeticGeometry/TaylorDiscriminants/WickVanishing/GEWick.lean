@@ -54,7 +54,7 @@ theorem foldr_add (L : List ι) (m : ι →₀ ℕ) (f g : PS k 1 d) :
 private theorem Dof_C_mul (v : Fin d → k) (r : k) (f : PS k 1 d) :
     Dof F v (C r * f) = C r * Dof F v f := by
   first
-  | (simp only [Dof, ← MvPowerSeries.smul_eq_C_mul, map_smul, mul_smul_comm, Finset.smul_sum]; done)
+  | (simp only [Dof, ← MvPowerSeries.smul_eq_C_mul, Finset.smul_sum]; done)
   | (simp only [Dof, ← MvPowerSeries.smul_eq_C_mul, Derivation.map_smul, mul_smul_comm, Finset.smul_sum]; done)
   | (simp only [Dof, Finset.mul_sum, Derivation.leibniz, smul_eq_mul, mul_add, Finset.sum_add_distrib]; done)
   | (have hp := (pderiv : Unit))
@@ -284,7 +284,7 @@ theorem exp_cut (t : k) (q : PS k 1 d) (hq0 : constantCoeff q = 0) (N : ℕ) :
   unfold FB.expS
   rw [hexp]
   simp only [key, map_add, map_sum, map_mul, map_pow, map_smul, hX]
-  simp only [smul_pow, smul_smul, MvPowerSeries.smul_eq_C_mul, map_mul, map_pow]
+  simp only [MvPowerSeries.smul_eq_C_mul]
   congr 1
   all_goals first
     | rfl

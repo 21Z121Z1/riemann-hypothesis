@@ -35,7 +35,7 @@ theorem intS_iff (V : VF K) {σ : Type} (f : MvPowerSeries σ K) :
 theorem map_self {σ : Type} (f : MvPowerSeries σ K) :
     MvPowerSeries.map (algebraMap K K) f = f := by
   ext n
-  simp [coeff_map]
+  simp
 
 variable [CharZero K] {d : ℕ} {O : Type} [CommRing O] [StarRing O]
 

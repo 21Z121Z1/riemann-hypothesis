@@ -66,7 +66,7 @@ theorem exists_invariant_pairing : ∀ (n : ℕ) (ι : Type) [Fintype ι] [Decid
         ∏ τ, detPow ℂ n (g τ) (sh τ) = 1 := by
       simp only [detPow]
       rw [← Units.coe_prod, ← Units.val_mul, ← Finset.prod_mul_distrib]
-      simp [← zpow_add]
+      simp
     have hpure : ∀ x y, B (Formalism.L2.DIV.rhoK lam g (GlobalTheory.CoefIrred.tenMul lam x))
         (wtOp ℂ n mu sh g (PiTensorProduct.tprod ℂ y)) = B (GlobalTheory.CoefIrred.tenMul lam x) (PiTensorProduct.tprod ℂ y) := by
       intro x y

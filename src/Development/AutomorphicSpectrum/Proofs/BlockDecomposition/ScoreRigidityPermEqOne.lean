@@ -65,7 +65,7 @@ theorem sum_sym (f : Fin n → Fin n → ℤ) (hf : ∀ a b, f a b = f b a) :
       + (if a = b then f a a else 0) := by
     intro a b
     rcases lt_trichotomy a b with h | h | h
-    · simp [h, h.ne, h.le, not_lt.2 h.le]
+    · simp [h, h.ne, not_lt.2 h.le]
     · subst h; simp
     · simp [h, h.ne', not_lt.2 h.le, hf a b]
   have hA : ∑ a, ∑ b, (if a < b then f a b else 0) = ∑ p ∈ prs n, f p.1 p.2 := by

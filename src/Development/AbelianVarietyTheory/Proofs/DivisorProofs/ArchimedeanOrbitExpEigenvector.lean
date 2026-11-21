@@ -59,7 +59,7 @@ theorem mat_extH_eq {F E R R' : Type} [Field F] [Field E] [Algebra F E] [CommRin
   rw [mat_extH]
   by_cases h : r = s
   · subst h; simp [map_sub]; ring
-  · simp [Matrix.one_apply, h]
+  · simp [h]
 
 theorem mulVec_embArch_eq_smul : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberField E] [Algebra F E] (σ : E →ₐ[F] E), IsCMExt F E σ →
     ∀ (n : ℕ) (J : Matrix (Fin n) (Fin n) E) (x : Fin n → E), x ≠ 0 → ∀ (w : InfinitePlace F) (τ : EmbOver E w) (Z : Matrix (Fin n) (Fin n) ℂ) (l : ℂ),

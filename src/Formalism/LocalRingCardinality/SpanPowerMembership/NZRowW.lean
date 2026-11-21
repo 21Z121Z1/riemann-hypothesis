@@ -28,7 +28,7 @@ theorem mem_locW_std (w : D.what₂.places.Pl) {ι : Type} [Fintype ι] [Decidab
         intro c
         by_cases h : c = k
         · subst h; simp
-        · simp [Pi.basisFun_apply, Pi.single_apply, h]
+        · simp [Pi.basisFun_apply, h]
       | zero => intro c; simp
       | add a b _ _ ha hb => intro c; exact add_mem (ha c) (hb c)
       | smul r a _ ha => intro c; exact mul_mem (intW_int D w r) (ha c)

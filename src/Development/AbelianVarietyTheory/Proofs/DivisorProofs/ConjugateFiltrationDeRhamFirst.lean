@@ -50,7 +50,7 @@ theorem frobLin_comp_cokernel_π_eq_zero : ∀ (p : ℕ) [Fact p.Prime] {T : Sch
   refine Scheme.Modules.hom_ext _ _ fun U => ?_
   ext s
   simp only [Adjunction.homEquiv_unit, Scheme.Modules.Hom.comp_app, Scheme.Modules.pushforward_map_app,
-    Scheme.Modules.Hom.zero_app, Limits.comp_zero]
+    Scheme.Modules.Hom.zero_app]
   show (cokernel.π C.incl).app U (Ψ.app U (((Scheme.Modules.pullbackPushforwardAdjunction f).unit.app H).app U s)) = 0
   rw [hu]
   exact C.cokernel_π_app_eq_zero_iff.2 (key U s)

@@ -62,7 +62,7 @@ theorem sub_sum_mem_rad_of_isometric (hE : GlobalTheory.Published.ArExists) {D :
     rw [ArInt.aeval_lin]
     have : (fun c : κ ⊕ Fin N => ∑ o, a j o * (A o c : ℝ)) = 0 := by
       funext c
-      rcases c with c | c <;> simp [a, A, Fintype.sum_option, Fintype.sum_sum_type, Pi.single_apply]
+      rcases c with c | c <;> simp [a, A, Fintype.sum_option, Pi.single_apply]
     rw [this]
     simp [lin]
   rw [LinearMap.comp_apply, AlgHom.toLinearMap_apply, map_prod, Finset.prod_eq_zero (Finset.mem_univ j) h3, map_zero]

@@ -59,12 +59,12 @@ theorem mul_eq_one_of_mul_eq_one {n : ℕ} (h : R + S = n) (C : Matrix (Fin n) (
 theorem map_star_mul {m n o : Type} [Fintype n] (X : Matrix m n ℂ) (Y : Matrix n o ℂ) :
     (X * Y).map star = X.map star * Y.map star := by
   ext i j
-  simp [Matrix.mul_apply, star_sum, mul_comm]
+  simp [Matrix.mul_apply]
 
 theorem map_star_mulVec {m n : Type} [Fintype n] (K : Matrix m n ℂ) (u : n → ℂ) :
     K.map star *ᵥ star u = star (K *ᵥ u) := by
   ext i
-  simp [Matrix.mulVec, dotProduct, star_sum, mul_comm]
+  simp [Matrix.mulVec, dotProduct, star_sum]
 
 variable {d d₁ : ℕ}
 

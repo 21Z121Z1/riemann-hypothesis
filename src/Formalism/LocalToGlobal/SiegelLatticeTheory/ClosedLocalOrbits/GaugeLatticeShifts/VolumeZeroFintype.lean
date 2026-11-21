@@ -14,7 +14,7 @@ theorem PF_eval {ι : Type*} (p : MvPolynomial ι ℂ) (y : ι → ℝ) :
     (MvPolynomial.aeval (R := ℂ) (fun i (y : ι → ℝ) => (y i : ℂ)) p : (ι → ℝ) → ℂ) y =
       MvPolynomial.eval (fun i => (y i : ℂ)) p := by
   induction p using MvPolynomial.induction_on with
-  | C a => simp [MvPolynomial.aeval_C]
+  | C a => simp
   | add p q hp hq => simp only [map_add, Pi.add_apply, hp, hq]
   | mul_X p i hp => simp only [map_mul, Pi.mul_apply, hp, MvPolynomial.aeval_X, MvPolynomial.eval_X]
 

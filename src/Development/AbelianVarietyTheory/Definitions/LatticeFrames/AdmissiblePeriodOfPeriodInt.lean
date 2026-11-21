@@ -436,7 +436,7 @@ theorem fam_per (u : W) (φ : Unit → H.E) (F : En 1) :
 theorem fam_Mt (F : En 1) : F ∈ ((DR).what₂.Mtilde (DR).what₂.mu0).carrier ↔ ∃ c : 𝓞 H.E, F 0 = H.φ₀ (c : H.E) := by
   show (∃ c : En 1 → 𝓞 H.E, F = ∑ v ∈ genB (eb 1), H.φ₀ (c v : H.E) • v) ↔ _
   have hg : genB (eb 1) = {eb 1 0} := by
-    ext v; simp [genB, eq_comm]
+    ext v; simp [genB]
   rw [hg]
   simp only [Finset.sum_singleton]
   constructor

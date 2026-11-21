@@ -135,7 +135,7 @@ theorem deltaHalf_pair (g : Levi k (fun j : Fin 2 => Fin (b' j))) :
 
 theorem pairChar_apply' (μ : Fin 2 → kˣ →* ℂˣ) (g : Levi k (fun j : Fin 2 => Fin (b' j))) :
     GlobalTheory.LeviBlockExponent.pairChar k b' μ g = μ 0 (Matrix.GeneralLinearGroup.det (g 0)) * μ 1 (Matrix.GeneralLinearGroup.det (g 1)) := by
-  simp [GlobalTheory.LeviBlockExponent.pairChar, MonoidHom.finsetProd_apply, Fin.prod_univ_two]
+  simp [GlobalTheory.LeviBlockExponent.pairChar, Fin.prod_univ_two]
 
 end Pair2
 

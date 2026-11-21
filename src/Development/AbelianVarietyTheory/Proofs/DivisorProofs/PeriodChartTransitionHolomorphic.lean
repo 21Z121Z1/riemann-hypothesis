@@ -75,7 +75,7 @@ theorem rat_iff {J : Type} [Fintype J] (x : J → ℝ) :
 
 theorem per_nsmul {g : ℕ} (t : Matrix (Fin g) (Fin g) ℂ) (N : ℕ) (x : Fl g) : per t (N • x) = N • per t x := by
   ext i
-  simp [per, vecMul, dotProduct, mul_add, Finset.mul_sum]
+  simp [per, vecMul, dotProduct, Finset.mul_sum]
   exact Finset.sum_congr rfl fun _ _ => mul_assoc _ _ _
 
 theorem mem_stdLat_iff {g : ℕ} {x : Fl g} : x ∈ stdLat g ↔ ∀ i, ∃ n : ℤ, x i = n := by

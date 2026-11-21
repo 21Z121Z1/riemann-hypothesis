@@ -37,7 +37,7 @@ theorem act_sub_int_of_Gamma (x : Fin 2 → ℚ) (M : ℕ) (hM : 0 < M)
     simp only [Fin.zero_eta, Fin.isValue, Matrix.cons_val_zero]
     rw [q00, q10, ha, hb]; push_cast; field_simp; ring
   · simp only [act, Fin.sum_univ_two]
-    simp only [Fin.mk_one, Fin.isValue, Matrix.cons_val_one, Matrix.head_cons]
+    simp only [Fin.mk_one, Fin.isValue, Matrix.cons_val_one]
     rw [q01, q11, ha, hb]; push_cast; field_simp; ring
 
 theorem siegel_level : ∀ (Ω : Type) [Field Ω] [Algebra ℚ Ω] [IsAlgClosure ℚ Ω] (ε : Ω →+* ℂ) (T : Tower Ω ε) (c : ℕ)

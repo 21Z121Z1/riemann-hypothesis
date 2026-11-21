@@ -96,7 +96,7 @@ theorem dim_le_of_genFibre : ∀ (F : Type) [Field F] [NumberField F] (W G : Sch
   have hfib : Set.range g = t ⁻¹' {genericPoint (Sp ℤ)} := by
     rw [hr, genericPoint_eq_bot_of_affine]
     ext x
-    simp only [Set.mem_preimage, Set.mem_singleton_iff]
+    simp only [Set.mem_preimage]
     constructor
     · rintro ⟨y, hy⟩
       change Spec.map _ (q x) = _

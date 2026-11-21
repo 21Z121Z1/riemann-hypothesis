@@ -226,7 +226,7 @@ theorem exists_ratLagr : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [N
         simp only [Prod.fst_add, Prod.snd_add, Submodule.coe_add, Matrix.vecMulVec_add, Matrix.mul_add]; abel
       map_smul' := fun c p => by
         ext i j
-        simp [Matrix.vecMulVec_apply, Matrix.mul_apply, Finset.smul_sum, mul_smul_comm, smul_add] }
+        simp [Matrix.vecMulVec_apply, Matrix.mul_apply, Finset.smul_sum, smul_add] }
   have hΦ : ∀ p, Φ p = Matrix.vecMulVec H'.x p.1 + H'.ι * (p.2 : Matrix (Fin d₁) (Fin n ⊕ Fin n) E) := fun _ => rfl
   have hinj : Function.Injective Φ := by
     rw [← LinearMap.ker_eq_bot, LinearMap.ker_eq_bot']

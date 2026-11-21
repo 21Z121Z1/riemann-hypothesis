@@ -248,7 +248,7 @@ theorem integrable_decay (k : ℕ) :
       ENNReal.inv_pow]
   have h1 : 0 ≤ decay (k + 1) N (toUnits b) := by rw [hd]; positivity
   have h2 : 0 ≤ ∏ i, (1 + ‖b i‖) ^ (-(3 : ℝ)) := Finset.prod_nonneg fun i _ => by positivity
-  simp only [Pi.mul_apply, Function.comp]
+  simp only [Pi.mul_apply]
   rw [hw, Real.enorm_eq_ofReal h1, Real.enorm_eq_ofReal h2, ← ENNReal.ofReal_mul (by positivity), hd]
   exact ENNReal.ofReal_le_ofReal (decay_bound k (fun i => ‖b i‖) hx)
 

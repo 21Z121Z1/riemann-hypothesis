@@ -91,7 +91,7 @@ theorem gam_one_real (ψ₀ : AddChar F ℂ) :
   unfold gam
   have h1 : ∀ y : GL (Fin k) F, y * 1 * y⁻¹ = 1 := fun y => by group
   have h2 : ∀ y : GL (Fin k) F, y * y⁻¹ = 1 := fun y => by group
-  simp only [h1, h2, hpsi, Finset.sum_const, Finset.card_univ, nsmul_eq_mul, mul_one]
+  simp only [h2, hpsi, Finset.sum_const, Finset.card_univ, nsmul_eq_mul, mul_one]
   push_cast
   ring
 

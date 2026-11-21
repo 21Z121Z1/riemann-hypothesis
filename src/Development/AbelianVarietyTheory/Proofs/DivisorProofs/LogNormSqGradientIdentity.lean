@@ -28,7 +28,7 @@ theorem logNormSq_coord_fderiv_sq_add_sq :
     rw [← Complex.normSq_eq_norm_sq, Complex.normSq_apply]; ring
   have hpos : (z k).re ^ 2 + (z k).im ^ 2 ≠ 0 := by rw [← hn]; exact h0
   rw [hn, hw]
-  simp only [Complex.mul_re, Complex.conj_re, Complex.conj_im, Complex.I_re, Complex.I_im, Complex.mul_im, Complex.smul_re, Complex.smul_im]
+  simp only [Complex.mul_re, Complex.conj_re, Complex.conj_im, Complex.I_re, Complex.I_im, Complex.mul_im]
   field_simp
   simp only [nsmul_eq_mul]
   push_cast

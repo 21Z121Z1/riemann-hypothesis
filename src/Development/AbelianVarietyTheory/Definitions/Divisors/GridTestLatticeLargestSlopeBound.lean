@@ -169,7 +169,7 @@ theorem testFunction_value_at_rep (rp : ClassReps G) (hN : rp.Neat) {n : ℕ} (e
   split_ifs with h1 h2 h2
   · simp [h2.2]
   · have : ¬ (e a).2 = i := fun h => h2 ⟨h1, h.symm⟩
-    simp [Finsupp.single_apply, this]
+    simp [this]
   · exact absurd h2.1 h1
   · simp
 

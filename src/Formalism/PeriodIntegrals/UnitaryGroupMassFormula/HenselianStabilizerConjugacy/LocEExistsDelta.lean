@@ -152,7 +152,7 @@ theorem locE_qbasis (L : LocE F E) [IsNonarchimedeanLocalField F] [CharZero F] :
         have : algebraMap F E (a1 + a2) + algebraMap F E (((c1 + c2 : 𝒪[F]) : F) * e) * δ =
             (algebraMap F E a1 + algebraMap F E ((c1 : F) * e) * δ) +
               (algebraMap F E a2 + algebraMap F E ((c2 : F) * e) * δ) := by
-          push_cast; simp only [map_add, add_mul, map_mul]; ring
+          push_cast; simp only [add_mul]; ring
         rw [this]; exact add_mem h1 h2
       zero_mem' := ⟨0, by simp⟩
       smul_mem' := by

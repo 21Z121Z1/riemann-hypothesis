@@ -124,7 +124,7 @@ theorem GlobalTheory.ReadAtBase.red_of_isLoc : ∀ (D : D7) (u : D.what₂.Word)
     rw [map_sub, resS_oToS, hz]
     exact sub_self _
   have hv := (hred.ker _).1 hz0
-  simp only [RingHom.comp_apply, Subring.coe_subtype, AddSubgroupClass.coe_sub, map_sub, h] at hv
+  simp only [RingHom.comp_apply, Subring.coe_subtype, map_sub, h] at hv
   have e8 : π' ((oToS _ _ z : Formalism.L2.Herm.intAf D.host.F D.host.E) : Datum.EAf D) =
       (GlobalTheory.LocMod.ofSplit G.q).pr (z : D.host.E) := hπ' (incA D (z : D.host.E))
   rw [e8] at hv

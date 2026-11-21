@@ -79,7 +79,7 @@ theorem levMap_midHom (ψ : K ≃+* L) (l n N : ℕ) (g : GL (Fin n) K) :
   rw [levMap_apply]
   by_cases hj : j = 1
   · subst hj
-    simp only [midHom, MonoidHom.mulSingle_apply, Pi.mulSingle_eq_same]
+    simp only [midHom]
     rfl
   · show glMap ψ _ (Pi.mulSingle (M := fun j : Fin 3 => GL (Fin (tripSizes l n N j)) K) 1 g j) =
       Pi.mulSingle (M := fun j : Fin 3 => GL (Fin (tripSizes l n N j)) L) 1 (GlobalTheory.LFun.SplitTie.glEquiv n ψ g) j

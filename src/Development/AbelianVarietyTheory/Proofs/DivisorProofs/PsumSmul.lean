@@ -59,7 +59,7 @@ theorem abel (w r : Fin N → ℝ) (h0 : ∑ k ∈ range N, ext r k = 0) :
     simp only [ext_fin, smul_eq_mul]
     ring
   rw [e1, Finset.sum_range_by_parts]
-  simp only [Finset.sum_neg_distrib, h0, neg_zero, smul_zero, zero_sub, smul_eq_mul, mul_neg, ← sub_eq_add_neg]
+  simp only [Finset.sum_neg_distrib, h0, neg_zero, smul_eq_mul, mul_neg]
   rw [← Finset.sum_neg_distrib]
   simp
 

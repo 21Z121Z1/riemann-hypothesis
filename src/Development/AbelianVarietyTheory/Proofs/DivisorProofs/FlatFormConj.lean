@@ -92,7 +92,7 @@ theorem om0_conj : ∀ (D g : ℕ) (τ : V D → Matrix (Fin g) (Fin g) ℂ) (P 
   have h2 := hd u'
   simp only [conjPt_apply] at h1 h2
   show riem _ _ = -riem _ _
-  simp only [ContinuousAlternatingMap.compContinuousLinearMap_apply, Function.comp_def, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons]
+  simp only [Matrix.cons_val_zero, Matrix.cons_val_one]
   exact (congrArg₂ riem h1 h2).trans (riem_refl _ _ _)
 
 end GlobalTheory.FlatFormConj

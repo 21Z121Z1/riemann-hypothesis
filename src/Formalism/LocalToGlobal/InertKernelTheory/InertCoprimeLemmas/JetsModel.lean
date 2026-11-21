@@ -96,10 +96,10 @@ theorem integral_model_exists : ModelExists := by
   · rw [WeierstrassCurve.variableChange_a₃, hSu]
     simp only [S, zero_mul, mul_zero, add_zero, norm_mul, norm_pow, hn, one_pow, one_mul]; exact h3
   · rw [WeierstrassCurve.variableChange_a₄, hSu]
-    simp only [S, zero_mul, mul_zero, sub_zero, add_zero, zero_add, zero_pow two_ne_zero, norm_mul, norm_pow, hn,
+    simp only [S, zero_mul, mul_zero, sub_zero, add_zero, zero_pow two_ne_zero, norm_mul, norm_pow, hn,
       one_pow, one_mul]; exact h4
   · rw [WeierstrassCurve.variableChange_a₆, hSu]
-    simp only [S, zero_mul, mul_zero, sub_zero, add_zero, zero_add, zero_pow two_ne_zero, zero_pow three_ne_zero,
+    simp only [S, zero_mul, mul_zero, sub_zero, add_zero, zero_pow two_ne_zero, zero_pow three_ne_zero,
       norm_mul, norm_pow, hn, one_pow, one_mul]; exact h6
   · rw [WeierstrassCurve.variableChange_Δ, hSu, ← hν, inv_pow, inv_mul_cancel₀ (pow_ne_zero _ hν0)]
 

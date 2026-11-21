@@ -66,7 +66,7 @@ theorem exists_basis_cols {O : Type} [CommRing O] [IsDomain O] [IsPrincipalIdeal
     simp only [Submodule.coe_sum, Submodule.coe_smul, Finset.sum_apply, Pi.smul_apply,
       smul_eq_mul, S.snf] at hw'
     have hcol : (A.mulVecLin (Pi.single b 1)) i = A i b := by
-      simp [Matrix.mulVecLin_apply, Matrix.mulVec, dotProduct, Pi.single_apply]
+      simp [Matrix.mulVec, dotProduct, Pi.single_apply]
     rw [Matrix.mul_apply]
     refine hcol.symm.trans (hw'.symm.trans ?_)
     simp only [hP1, hu, hf']

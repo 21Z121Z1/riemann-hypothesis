@@ -91,7 +91,7 @@ theorem u_eventuallyEq (L : PeriodPair) :
   filter_upwards [hev] with z hz
   by_cases hz0 : z = 0
   · subst hz0
-    simp [hPl, PeriodPair.weierstrassPExcept_zero]
+    simp
   · have hd : L.derivWeierstrassP z = deriv (L.weierstrassPExcept 0) z - 2 / z ^ 3 := by
       rw [← L.deriv_weierstrassP, hPl]
       have h1 : HasDerivAt (fun w => L.weierstrassPExcept 0 w) (deriv (L.weierstrassPExcept 0) z) z :=

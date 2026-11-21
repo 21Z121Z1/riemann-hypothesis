@@ -24,7 +24,7 @@ theorem single_eq_incV {n : ℕ} (j : Fin n) :
   funext i
   by_cases h : i = j
   · subst h; simp [incV]
-  · simp [incV, Pi.single_apply, h]
+  · simp [incV, h]
 
 theorem fA_incV (σ : E →ₐ[F] E) {n : ℕ} (J : Matrix (Fin n) (Fin n) E) (v w : Fin n → E) :
     fA σ J (incV F v) (incV F w) = inclR (F := F) (AF F) (form σ J v w) := by

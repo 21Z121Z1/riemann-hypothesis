@@ -42,8 +42,7 @@ theorem exists_periodChart : ∀ (k : Type) [CommRing k] (S : Scheme.{0}) (p : S
   set c := c₀.restr _ hS' with hc
   have htgt : c.e.target = Bl := by
     ext v
-    simp only [hc, AlgChart.restr, Set.mem_inter_iff,
-      Set.mem_preimage]
+    simp only [hc, AlgChart.restr]
     constructor
     · rintro ⟨hv, -, hv'⟩
       have hv'' := Set.mem_preimage.1 hv'

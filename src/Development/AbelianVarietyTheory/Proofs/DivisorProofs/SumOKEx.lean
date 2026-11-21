@@ -76,7 +76,7 @@ theorem isNatDatum_sliceB {ϖ : kˣ} {e : ℕ} {γ : List Edge} {T : G.Args → 
         ext r s; simp [Matrix.toCols₂]
       · by_cases hb' : b = .theta i j
         · subst hb'
-          ext r s; simp [Function.update_of_ne hne, Matrix.toCols₁]
+          ext r s; simp [Matrix.toCols₁]
         · simp [Function.update_of_ne hb, Function.update_of_ne hb']
     have hZ' := FourierDepth.mem_matLat_smul_stdLat.1 hZ₀
     refine (congrArg T key).trans (hT.2.2 _ _ fun b => ?_)
@@ -124,7 +124,7 @@ theorem isTensor_flipTensor {ψ : AddChar k Circle} {ϖ : kˣ} {e : ℕ} (hϖ : 
       by_cases hb2 : b = .ex i j
       · subst hb2; simp
       · by_cases hb1 : b = .theta i j
-        · subst hb1; simp [Function.update_of_ne hne]
+        · subst hb1; simp
         · simp only [Function.update_of_ne hb2, Function.update_of_ne hb1]
           exact hxy b (mo b hb hb1 hb2)
     have e2 : G.joinA i j x = G.joinA i j y := by
@@ -156,13 +156,13 @@ theorem isTensor_flipTensor {ψ : AddChar k Circle} {ϖ : kˣ} {e : ℕ} (hϖ : 
         by_cases hb : b = .ex i j
         · subst hb; simp
         · by_cases hb' : b = .theta i j
-          · subst hb'; simp [Function.update_of_ne hne]
+          · subst hb'; simp
           · simp [Function.update_of_ne hb, Function.update_of_ne hb']
       refine (congrArg T key).trans (hT.2.2 _ _ fun b => ?_)
       by_cases hb : b = .ex i j
       · subst hb; simp
       · by_cases hb' : b = .theta i j
-        · subst hb'; simp [Function.update_of_ne hne]
+        · subst hb'; simp
         · simpa [Function.update_of_ne hb, Function.update_of_ne hb'] using hz b
     have e2 : G.joinA i j (x + z) = G.joinA i j x + G.joinA i j z := by
       ext r (s | s) <;> simp [Grid.joinA]

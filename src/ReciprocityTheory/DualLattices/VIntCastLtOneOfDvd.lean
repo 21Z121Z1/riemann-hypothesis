@@ -172,7 +172,7 @@ theorem exists_teichChar [IsAlgClosed C] (hv : v.Integers R) (hpv : v (p : C) < 
       have hd : (p : ℤ) ∣ (((a * b).val : ℤ) - (a.val : ℤ) * (b.val : ℤ)) := by
         rw [← ZMod.intCast_zmod_eq_zero_iff_dvd]
         push_cast
-        simp [ZMod.natCast_zmod_val]
+        simp
       have := v_intCast_lt_one_of_dvd hv hpv hd
       push_cast at this
       exact this

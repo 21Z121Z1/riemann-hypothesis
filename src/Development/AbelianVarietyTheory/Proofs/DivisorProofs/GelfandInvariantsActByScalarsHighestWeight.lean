@@ -24,10 +24,10 @@ private theorem single_one_mul_single_one' (p q : Mt n) (a b : Fin n) :
     p * Matrix.single a b 1 * q = ∑ i, ∑ j, (p i a * q b j) • Matrix.single i j (1 : ℂ) := by
   ext x y
   have hl : (p * Matrix.single a b 1 * q : Mt n) x y = p x a * q b y := by
-    simp [Matrix.mul_apply, Matrix.single_apply, ite_and, Finset.sum_ite_eq, Finset.sum_ite_eq', ite_mul, mul_ite]
+    simp [Matrix.mul_apply, Matrix.single_apply, ite_and, Finset.sum_ite_eq, ite_mul, mul_ite]
   rw [hl, Matrix.sum_apply, Fintype.sum_eq_single x (fun c hc => by
-      rw [Matrix.sum_apply]; simp [Matrix.single_apply, hc]),
-    Matrix.sum_apply, Fintype.sum_eq_single y (fun c hc => by simp [Matrix.single_apply, hc])]
+      rw [Matrix.sum_apply]; simp [hc]),
+    Matrix.sum_apply, Fintype.sum_eq_single y (fun c hc => by simp [hc])]
   simp
 
 private theorem mul_inv_mul_eq_mul_inv_mul_of_factorizations (c d : ℂ) (x : A) :

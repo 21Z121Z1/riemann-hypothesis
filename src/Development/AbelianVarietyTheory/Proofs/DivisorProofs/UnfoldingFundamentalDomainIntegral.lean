@@ -181,7 +181,7 @@ theorem foldBound_le : ∀ {G G₁ L Kt : Type} [Group G] [MeasurableSpace G] [G
         exfalso
         exact hy (Set.mem_iUnion.2 ⟨q, Set.mem_iUnion.2 ⟨q₀, Set.mem_iUnion.2 ⟨hq, hqD, hq₀⟩⟩⟩)
     · push_neg at h
-      simp [Set.indicator_apply, h]
+      simp [h]
   have hpull : ∀ Z : Set G, MeasurableSet Z → μG Z = 0 →
       ∀ᵐ k ∂μK, ∀ᵐ l ∂μL, ∀ᵐ g₀ ∂ν, ∀ᵐ n ∂μN, n.1 * m l g₀ * kk k ∉ Z := by
     intro Z hZ hZ0
@@ -227,7 +227,7 @@ theorem foldBound_le : ∀ {G G₁ L Kt : Type} [Group G] [MeasurableSpace G] [G
           rw [mul_assoc]; exact hfN _ n.2 _
         by_cases hD : n.1 * m l g₀ * kk k ∈ D₀
         · simp [Set.indicator_of_mem hD, h1, h2]
-        · simp [Set.indicator_apply, hD]
+        · simp [hD]
     _ ≤ c * ∫⁻ k, ∫⁻ l, μN 𝓕 * ∫⁻ g₀ in dom, f (m l g₀ * kk k) * w l ∂ν ∂μL ∂μK := by
         gcongr c * ?_
         refine lintegral_mono_ae (hgood.mono fun k hk => ?_)

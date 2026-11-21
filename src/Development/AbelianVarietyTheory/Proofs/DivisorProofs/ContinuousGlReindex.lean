@@ -241,7 +241,7 @@ theorem exists_form (hK : KP) {B : Base F E} {Mo : Model σ X W} {χX χW : Chr 
         rw [omg, mul_inv_cancel_right]
       rw [e] at h2
       exact h2
-    | zero => intro Φ _; simp [integrableOn_zero]
+    | zero => intro Φ _; simp
     | add u w _ _ hu hw =>
       intro Φ hΦ
       refine ((hu Φ hΦ).add (hw Φ hΦ)).congr (Eventually.of_forall fun h => ?_)

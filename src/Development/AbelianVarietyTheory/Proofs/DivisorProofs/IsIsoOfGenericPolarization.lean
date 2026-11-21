@@ -77,7 +77,7 @@ def cotDualBC (R k : Type) [CommRing R] [CommRing k] [Algebra R k] (A : Type) [C
       induction x with
       | zero => simp
       | add x y hx hy => simp only [map_add, hx, hy]
-      | tmul r φ => simp [Algebra.TensorProduct.one_def, Algebra.smul_def, mul_comm]))).symm
+      | tmul r φ => simp [Algebra.smul_def, mul_comm]))).symm
 
 theorem finrank_cot_le {p : ℕ} {R : Type} [CommRing R] (G : PDivGroup p R) (k : Type) [Field k] [Algebra R k]
     (hp : algebraMap R k p = 0) [FiniteDimensional k (k ⊗[R] Cot R (G.A 1))] (n : ℕ) :

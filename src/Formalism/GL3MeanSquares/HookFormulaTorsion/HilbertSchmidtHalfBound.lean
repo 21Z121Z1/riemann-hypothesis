@@ -89,7 +89,7 @@ theorem hsHalf : Formalism.HermitianLattices.CumulantEstimateDefs.HilbertSchmidt
   have hdiag : ∀ i, (1:ℝ) / 4 ≤ ‖A i i‖ ^ 2 := by
     intro i
     have h0 := (Complex.le_def.1 (hA.diag_nonneg (i := i))).1
-    simp [Matrix.sub_apply, Matrix.one_apply] at h0
+    simp [Matrix.sub_apply] at h0
     have hn := Complex.re_le_norm (A i i)
     have h1 : 1 / 2 ≤ ‖A i i‖ := by linarith
     nlinarith [h1]

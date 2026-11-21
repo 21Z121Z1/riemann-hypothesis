@@ -46,7 +46,7 @@ theorem exists_comp_cover_lift : (∀ {A B : Type} [TopologicalSpace A] [Topolog
   have hZc_eq : Set.range (pullback.snd U₀.ι (pullback.fst sF g)) = pullback.fst sF g ⁻¹' (Z : Set (Xo.XF c)) := by
     rw [IsOpenImmersion.range_pullbackSnd]
     ext w
-    simp only [Scheme.Hom.coe_preimage, Set.mem_preimage, SetLike.mem_coe, Scheme.Hom.coe_opensRange, Scheme.Opens.range_ι, hU₀]
+    simp only [Scheme.Hom.coe_preimage, Set.mem_preimage, Scheme.Hom.coe_opensRange, Scheme.Opens.range_ι, hU₀]
   have hZc_irr : IsIrreducible (pullback.fst sF g ⁻¹' (Z : Set (Xo.XF c))) := by
     have hr : Set.range ((pullbackRightPullbackFstIso sF g U₀.ι).inv ≫ pullback.snd U₀.ι (pullback.fst sF g)) =
         Set.range (pullback.snd U₀.ι (pullback.fst sF g)) := by

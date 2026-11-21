@@ -71,7 +71,7 @@ theorem norm_sq_dbar_proj_rank_two (E : Type) [NormedAddCommGroup E] [NormedSpac
       dbar_congr (hreal.mono fun x hx => hx.symm)]
 
   have hoc : ∀ x, orthCoeff (G x) 0 0 = (G x i₁ i₁)⁻¹ * G x i₂ i₁ := fun x => by
-    simp [orthCoeff, Matrix.mul_apply, Matrix.inv_def, Matrix.det_unique, i₁, i₂]
+    simp [orthCoeff, Matrix.mul_apply, i₁, i₂]
     rfl
   have hane : ∀ᶠ x in 𝓝 z, G x i₁ i₁ ≠ 0 := hP.mono fun x hx => (hx.diag_pos (i := i₁)).ne'
   have hdoc : DifferentiableAt ℝ (fun x => (G x i₁ i₁)⁻¹ * G x i₂ i₁) z :=
@@ -86,9 +86,9 @@ theorem norm_sq_dbar_proj_rank_two (E : Type) [NormedAddCommGroup E] [NormedSpac
     simp only [Matrix.neg_apply, mdbar_apply, hoc]
 
   have htr : extTrace G z ξ ξ = kappa * ((quotGram (G z) 0 0)⁻¹ * conj (extForm G z ξ 0 0) * G z i₁ i₁ * extForm G z ξ 0 0) := by
-    simp [extTrace, extFormAdj, adj, Matrix.trace_fin_one, Matrix.mul_apply, Matrix.inv_def, Matrix.det_unique, subGram, Matrix.toBlocks₁₁, i₁]
+    simp [extTrace, extFormAdj, adj, Matrix.trace_fin_one, Matrix.mul_apply, subGram, Matrix.toBlocks₁₁, i₁]
   have hQ : quotGram (G z) 0 0 = G z i₂ i₂ - G z i₂ i₁ * (G z i₁ i₁)⁻¹ * G z i₁ i₂ := by
-    simp [quotGram, Matrix.mul_apply, Matrix.inv_def, Matrix.det_unique, i₁, i₂]
+    simp [quotGram, Matrix.mul_apply, i₁, i₂]
     rfl
   have hQpos := (Complex.lt_def.1 ((posDef_quotGram hz).diag_pos (i := 0))).1
   have hGb : G z i₁ i₂ = conj (G z i₂ i₁) := (hz.isHermitian.apply i₁ i₂).symm

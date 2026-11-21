@@ -53,7 +53,7 @@ theorem lie_frame : ∀ (n : ℕ) (A : Matrix (Fin n) (Fin n) ℂ) (C : GL (Fin 
     exact h3.symm
   · have := congrArg (C.1 *ᵥ ·) hl
     simp only [Matrix.mulVec_smul, hx', Matrix.mulVec_mulVec, Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc,
-      Units.mul_inv, Matrix.mul_one, Units.mul_inv_cancel_left, Matrix.one_mulVec] at this
+      Units.mul_inv, Matrix.mul_one, Units.mul_inv_cancel_left] at this
     simpa only [Matrix.mul_assoc] using this
 
 theorem pi_exp {ι 𝔸 : Type} [Fintype ι] [NormedRing 𝔸] [NormedAlgebra ℝ 𝔸] [FiniteDimensional ℝ 𝔸] (Y : ι → 𝔸) (i : ι) :

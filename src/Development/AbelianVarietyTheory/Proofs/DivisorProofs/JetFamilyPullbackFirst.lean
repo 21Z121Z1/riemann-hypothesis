@@ -107,7 +107,7 @@ theorem GlobalTheory.LatJet.baseChange_liftFil : GlobalTheory.Published.AbelianD
       simp only [map_add, ha, hb, Finset.sum_add_distrib, mul_add]
       ring
     | smul r a _ ha =>
-      simp only [map_smulₛₗ, LinearMap.map_smul, smul_eq_mul, ha, map_mul, mul_add, Finset.mul_sum,
+      simp only [map_smulₛₗ, smul_eq_mul, ha, map_mul, mul_add, Finset.mul_sum,
         RingHom.id_apply]
       congr 1
       exact Finset.sum_congr rfl fun i _ ↦ by ring

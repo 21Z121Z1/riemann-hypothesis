@@ -161,7 +161,7 @@ theorem restr_law (χ₁ χ₂ : kˣ →* ℂˣ) (u v : ℕ) (Φ : CellSp (k := 
   unfold restr
   rw [Submodule.quotEquivOfEqBot_apply_mk]
   congr 1
-  simp only [Subtype.coe_mk, incl_true, incl_false, Subtype.coe_eta, map_one, one_mul, Units.val_mul]
+  simp only [incl_true, incl_false, Subtype.coe_eta, map_one, one_mul, Units.val_mul]
 
 theorem restr_smooth (χ₁ χ₂ : kˣ →* ℂˣ) (u v : ℕ) (Φ : CellSp (k := k) χ₁ χ₂ u v) :
     (⟨restr χ₁ χ₂ u v Φ, fun q x₁ => restr_law χ₁ χ₂ u v Φ q x₁⟩ :
@@ -208,7 +208,7 @@ theorem toCell_surjective {χ₁ χ₂ : kˣ →* ℂˣ} (hχ₂ : IsSmoothChar 
   conv_rhs => rw [hx, h1, ← mk_restr χ₁ χ₂ u v Φ (x false), inducing_mk]
   unfold toFun
   rw [hl]
-  simp only [map_one, Pi.one_apply, Units.val_one, mul_one]
+  simp only [map_one, Pi.one_apply, mul_one]
   rfl
 
 def mapF {χ₁ χ₂ : kˣ →* ℂˣ} (hχ₂ : IsSmoothChar χ₂) (u v : ℕ) :

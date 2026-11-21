@@ -420,7 +420,7 @@ theorem quasiPeriod_ω₁_eq_eisenstein (τ : UpperHalfPlane) (hτ : (τ : ℂ) 
       simp only [Function.comp_apply, he, zetaTerm_eq, eisSummand, Matrix.cons_val_zero,
         Matrix.cons_val_one, Matrix.cons_val_fin_one]
       rw [show L.ω₁ - -(L.ω₁ * (m * τ + n)) = L.ω₁ * (m * τ + n + 1) by ring]
-      simp only [zpow_neg, zpow_ofNat, div_neg, inv_neg, neg_sq, mul_pow, div_eq_mul_inv, mul_inv, one_mul]
+      simp only [zpow_neg, zpow_ofNat, inv_neg, neg_sq, mul_pow, div_eq_mul_inv, mul_inv, one_mul]
       generalize ((m : ℂ) * τ + n + 1)⁻¹ = a
       generalize (((m : ℂ) * τ + n) ^ 2)⁻¹ = b
       linear_combination (L.ω₁⁻¹ * b) * mul_inv_cancel₀ h0
@@ -1221,7 +1221,7 @@ theorem exists_eq_const_of_periodic_of_simple_pole {f N : ℂ → ℂ}
   have ho := L.isClosed_lattice.isOpen_compl
   obtain ⟨M, hM, e⟩ := hN.exists_eq_sum_add_pow_mul 1
   simp only [Finset.sum_range_one, pow_zero, Nat.factorial_zero, Nat.cast_one, div_one,
-    iteratedDeriv_zero, one_smul, pow_one, smul_eq_mul, one_mul] at e
+    iteratedDeriv_zero, pow_one, smul_eq_mul, one_mul] at e
   set r := N 0
   let h : ℂ → ℂ := fun z => f z - r * weierstrassZeta L z
   have hh : AnalyticOnNhd ℂ h (L.lattice : Set ℂ)ᶜ := fun z hz =>

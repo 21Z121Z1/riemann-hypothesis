@@ -127,7 +127,7 @@ theorem mul_blkA₁ {P : Matrix β β A} (h : KeepsDiag e P) : P * blkA₁ e = b
   congr 1
   rw [← fromBlocks_toBlocks (P.submatrix e e), fromBlocks_multiply, fromBlocks_multiply]
   have h' : (P.submatrix e e).toBlocks₂₁ + (P.submatrix e e).toBlocks₂₂ = leviMat e P := h
-  simp only [Matrix.mul_one, Matrix.mul_zero, add_zero, zero_add, Matrix.one_mul, Matrix.zero_mul]
+  simp only [Matrix.mul_one, Matrix.mul_zero, add_zero, Matrix.one_mul]
   rw [h']
   rfl
 

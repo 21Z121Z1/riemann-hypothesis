@@ -461,7 +461,7 @@ theorem b_toEuc_mul {l m n : Type} [Fintype l] [Fintype m] [Fintype n] [Decidabl
     Matrix.toEuclideanLin (A * B) = (Matrix.toEuclideanLin A).comp (Matrix.toEuclideanLin B) := by
   apply LinearMap.ext
   intro x
-  simp [Matrix.mulVec_mulVec]
+  simp
 
 theorem matrix_mul_factor_through_inv {l m n : Type} [Fintype l] [Fintype m] [Fintype n] [DecidableEq l] [DecidableEq m] [DecidableEq n]
     (P : Matrix l l ℂ) (A : Matrix l m ℂ) (Y : Matrix m m ℂ) (B : Matrix m n ℂ) (Z : Matrix n n ℂ)

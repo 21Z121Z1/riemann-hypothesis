@@ -29,6 +29,6 @@ theorem selfInter_of_cls_eq_nsmul : ∀ (k : Type) [Field k] (T : Scheme.{0}) [A
   rw [eM, eL, hn']
   have := hv.form.map_smul_univ (fun _ => (n : ℤ)) (fun _ => CechPic.cls L hL)
   rw [this, smul_eq_mul]
-  simp [Fin.prod_univ_two, sq]
+  simp [sq]
 
 end GlobalTheory.Selfsq

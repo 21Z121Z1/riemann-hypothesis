@@ -75,7 +75,7 @@ theorem decomp {n : ℕ} (g : Mir k n) : g = levi k n (mirabolicProjection k n g
   · rw [congrFun hlast j]
     refine Fin.lastCases ?_ (fun j => ?_) j
     · simp [GlobalTheory.BZMir.glEmbMat, GlobalTheory.BZMir.colMat, GlobalTheory.BZMir.eLast]
-    · simp [GlobalTheory.BZMir.glEmbMat, GlobalTheory.BZMir.colMat, GlobalTheory.BZMir.eLast, Pi.single_apply,
+    · simp [GlobalTheory.BZMir.glEmbMat, GlobalTheory.BZMir.colMat, GlobalTheory.BZMir.eLast,
         Fin.castSucc_ne_last]
   · refine Fin.lastCases ?_ (fun j => ?_) j
     · simp [GlobalTheory.BZMir.glEmbMat, GlobalTheory.BZMir.colMat, GlobalTheory.CompanionTheory.MirLevi.colv]

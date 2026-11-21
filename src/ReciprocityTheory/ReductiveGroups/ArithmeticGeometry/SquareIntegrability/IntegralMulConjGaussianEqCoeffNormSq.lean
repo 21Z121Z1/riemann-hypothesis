@@ -35,7 +35,7 @@ theorem eval_eq_sum_coeff_mul_monomial {g : ℕ} (p : MvPolynomial (Fin g) ℂ) 
     MvPolynomial.eval (fun i => z i) p = ∑ α ∈ p.support, MvPolynomial.coeff α p * monomialOfMultiindex α z := by
   first
   | (simp [MvPolynomial.eval_eq', monomialOfMultiindex]; done)
-  | (simp [MvPolynomial.eval_eq, monomialOfMultiindex, Finsupp.prod]; done)
+  | (simp [MvPolynomial.eval_eq, monomialOfMultiindex]; done)
   | (rw [MvPolynomial.eval_eq']; unfold monomialOfMultiindex; done)
 
 theorem norm_eval_sq_le {g : ℕ} (p : MvPolynomial (Fin g) ℂ) (z : EuclideanSpace ℂ (Fin g)) :

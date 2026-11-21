@@ -37,7 +37,7 @@ def frame (K : Type) [Field K] {n d : ℕ} (h : n ≤ d) : Matrix (Fin n) (Fin d
 
 theorem mul_frame (h : n ≤ d) (M : Matrix (Fin n) (Fin n) K) (i j : Fin n) :
     (M * frame K h) i (Fin.castLE h j) = M i j := by
-  simp [frame, Matrix.mul_apply, eq_comm]
+  simp [frame, Matrix.mul_apply]
 
 theorem val_frame (h : n ≤ d) (i : Fin n) (j : Fin d) : w (frame K h i j) ≤ 1 := by
   unfold frame

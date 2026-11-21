@@ -80,8 +80,8 @@ theorem main : ∀ (R K L : Type) [CommRing R] [IsDomain R] [IsDiscreteValuation
     have hφ : φ (AdjoinRoot.root f) = AdjoinRoot.root g := AdjoinRoot.liftAlgHom_root _ _ _ _
     simp only [bR, bK, Algebra.TensorProduct.basis_apply, PowerBasis.coe_basis, AdjoinRoot.powerBasis'_gen, ψ,
       Algebra.TensorProduct.lift_tmul, map_one, one_mul, AlgHom.comp_apply, AlgHom.restrictScalars_apply,
-      Algebra.TensorProduct.includeRight_apply, Algebra.TensorProduct.includeLeft_apply, map_pow,
-      hφ, Fin.val_cast, Fin.coe_cast]
+      Algebra.TensorProduct.includeRight_apply, map_pow,
+      hφ]
     rw [Algebra.TensorProduct.tmul_pow, one_pow]
     rfl
   have hinj : Function.Injective ψ := by

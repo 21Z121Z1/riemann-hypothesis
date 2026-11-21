@@ -427,8 +427,8 @@ theorem smul_blk_sub_one {R S : Type} [Ring S] [SMulZeroClass R S] {p q d : ℕ}
   have c2 := fun r s => congrFun (congrFun hB r) s
   rcases r with r | r <;> rcases s with s | s
   · simpa [GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk, Matrix.one_apply] using c1 r s
-  · simp [GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk, Matrix.one_apply]
-  · simp [GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk, Matrix.one_apply]
+  · simp [GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk]
+  · simp [GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk]
   · simpa [GlobalTheory.IndefiniteRowSideFullHecke.UnitaryConjugation.blk, Matrix.one_apply] using c2 r s
 
 attribute [local instance] GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.measFv GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.borelFv

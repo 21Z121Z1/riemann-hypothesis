@@ -97,7 +97,7 @@ theorem eq_zero_of_mem_twKer {s : ℕ} {d : Fin s → ℕ} (e : (Σ a, Fin (d a)
       ext v i
       by_cases h : i = j
       · subst h; simp [τ]
-      · simp [τ, Pi.single_apply, h]⟩
+      · simp [τ, h]⟩
     exact GlobalTheory.JacquetExact.map_mem_twKer f (hw' j)
   have h1 : (Submodule.Quotient.mk (⟨w, hw⟩ : A) : Jacquet σ' (unipRad k e)) = 0 := by
     apply hinj

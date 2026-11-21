@@ -170,8 +170,8 @@ theorem spherical_split_of_pointwise :
         unfold sphJ
         rw [e1, char_eq_one hc₁ hu1, intInd_of_mem, intInd_of_mem]
         · simp
-        · rw [← modulus_le_one_iff]; simp [modulus_mul, hu1]
-        · rw [← modulus_le_one_iff]; simp [modulus_mul, modulus_inv, hu1]
+        · rw [← modulus_le_one_iff]; simp [hu1]
+        · rw [← modulus_le_one_iff]; simp [modulus_inv, hu1]
       · rw [Set.indicator_of_notMem hu]
         have hu1 : modulus (u : F) ≠ 1 := fun h => hu (mem_units_iff_modulus.2 h)
         unfold sphJ

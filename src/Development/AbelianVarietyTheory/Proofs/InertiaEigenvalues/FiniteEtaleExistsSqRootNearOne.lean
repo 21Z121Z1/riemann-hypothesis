@@ -14,8 +14,8 @@ theorem exists_sq_eq_inv_near_one : ∀ (F E : Type) [NontriviallyNormedField F]
   have hc : Continuous eL := IsModuleTopology.continuous_of_linearMap eL.toLinearMap
   have hcs : Continuous eL.symm := IsModuleTopology.continuous_of_linearMap eL.symm.toLinearMap
   let L₂ : V →ₗ[F] V →ₗ[F] V := LinearMap.mk₂ F (fun x y => eL (eL.symm x * eL.symm y))
-    (by intros; simp [add_mul]) (by intros; simp [smul_mul_assoc])
-    (by intros; simp [mul_add]) (by intros; simp [mul_smul_comm])
+    (by intros; simp [add_mul]) (by intros; simp)
+    (by intros; simp [mul_add]) (by intros; simp)
   let B : V →L[F] V →L[F] V :=
     LinearMap.toContinuousLinearMap ((LinearMap.toContinuousLinearMap : (V →ₗ[F] V) ≃ₗ[F] (V →L[F] V)).toLinearMap ∘ₗ L₂)
   have hB : ∀ x y, B x y = eL (eL.symm x * eL.symm y) := fun x y => rfl

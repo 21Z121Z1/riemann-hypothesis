@@ -28,7 +28,7 @@ theorem main : ∀ {A : Type} [inst : CommRing A] {n q : ℕ} (J : Matrix (Fin n
   calc _ = J + J * (Xc * ((diagonal b + diagonal a + diagonal b * diagonal a) * (Yᵀ * J)))
         + J * (Yc * ((diagonal a + diagonal b + diagonal a * diagonal b) * (Xᵀ * J))) := by
           simp only [Matrix.mul_add, Matrix.add_mul, Matrix.mul_assoc, Matrix.mul_one,
-            Matrix.one_mul, g1, g2, g3, g4, Matrix.mul_zero, Matrix.zero_mul, add_zero, zero_add]
+            Matrix.one_mul, g1, g2, g3, g4, Matrix.mul_zero, add_zero]
           abel
     _ = J := by rw [k1, k2]; simp
 

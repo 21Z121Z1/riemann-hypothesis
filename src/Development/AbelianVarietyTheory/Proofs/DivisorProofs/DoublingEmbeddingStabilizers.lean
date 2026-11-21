@@ -167,7 +167,7 @@ theorem isCartan_smul {n : ℕ} {M θ : Matrix (Fin n) (Fin n) ℂ} (h : IsCarta
   · rw [hm]; simp only [Matrix.transpose_smul, Matrix.smul_mul, Matrix.mul_smul, smul_smul, h.2.1]
     congr 1; linear_combination (c : ℂ) * h1'
   · have := h.2.2 x hx
-    simp only [Matrix.smul_mulVec, smul_dotProduct, dotProduct_smul, smul_smul, smul_eq_mul]
+    simp only [Matrix.smul_mulVec, smul_dotProduct, dotProduct_smul, smul_eq_mul]
     rw [← mul_assoc, ← Complex.ofReal_mul, Complex.re_ofReal_mul]
     exact mul_pos (by linarith [mul_comm c ε]) this
 

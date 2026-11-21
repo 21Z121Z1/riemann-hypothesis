@@ -150,7 +150,7 @@ theorem exists_rat_isLevi (hσ : ∀ a, σ (σ a) = a) {n₁ : ℕ} (W : Spc F E
     simp [incV, hf]
   · rw [hmv, hMv, leviVec_y σ W.J H.x H.y hσ hsk hyy hxy]
     ext i
-    simp only [incV, Pi.smul_apply, smul_eq_mul, Units.coe_map_inv, MonoidHom.coe_coe, Units.val_inv_eq_inv_val]
+    simp only [incV, Pi.smul_apply, smul_eq_mul, Units.coe_map_inv, Units.val_inv_eq_inv_val]
     erw [hcf]
     rw [map_inv₀, ← map_mul]
   · rw [hmat, show mat (1 : UA σ W₁.J) = 1 from rfl, Matrix.mul_one, show incM F H.ι = H.ι.map f from rfl,

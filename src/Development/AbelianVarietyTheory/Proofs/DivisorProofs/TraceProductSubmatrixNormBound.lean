@@ -20,7 +20,7 @@ theorem trace_mul_submatrix_norm_le {m : ℕ} (k : Fin (m + 1)) (P : Matrix (Fin
         refine (pi_norm_le_iff_of_nonneg zero_le_one).2 fun i => ?_
         by_cases h : i = c j
         · subst h; simp
-        · simp [Pi.single_apply, h]
+        · simp [h]
       nlinarith
     refine (pi_norm_le_iff_of_nonneg hg).2 fun i => ?_
     have : (Y *ᵥ Pi.single j 1) i = (X *ᵥ Pi.single (c j) (1 : ℂ)) (c i) := by

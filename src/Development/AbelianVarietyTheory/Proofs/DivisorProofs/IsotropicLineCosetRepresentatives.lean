@@ -30,7 +30,7 @@ theorem exists_reps : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
         rintro p ⟨l, hl⟩
         refine ⟨l⁻¹, ?_⟩
         have e : (matHom _ σ J (p⁻¹).1).1 = ((matHom _ σ J p.1)⁻¹ : GL (Fin n) (AF F ⊗[F] E)).1 := by
-          simp [Subgroup.coe_inv, map_inv]
+          simp [map_inv]
         rw [e]
         have h1 : ((matHom _ σ J p.1)⁻¹ : GL (Fin n) (AF F ⊗[F] E)).1 * ((matHom _ σ J p.1).1 * adMat F x) = adMat F x := by
           rw [← Matrix.mul_assoc, ← Units.val_mul, inv_mul_cancel, Units.val_one, Matrix.one_mul]

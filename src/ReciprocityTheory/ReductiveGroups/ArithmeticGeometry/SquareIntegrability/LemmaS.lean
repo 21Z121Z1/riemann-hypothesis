@@ -46,7 +46,7 @@ lemma lemS_pack (hP : Ext.PackingCount) (S : Finset (EuclideanSpace ℂ ι)) (δ
       obtain ⟨a, ha, rfl⟩ := Finset.mem_map.1 hx
       obtain ⟨b, hb, rfl⟩ := Finset.mem_map.1 hy
       have hab : a ≠ b := fun h => hxy (by rw [h])
-      simp only [Function.Embedding.coeFn_mk, LinearIsometryEquiv.dist_map, dist_eq_norm]
+      simp only [Function.Embedding.coeFn_mk, dist_eq_norm]
       first
         | exact hsep a ha b hb hab
         | (rw [← map_sub, LinearIsometryEquiv.norm_map]; exact hsep a ha b hb hab)

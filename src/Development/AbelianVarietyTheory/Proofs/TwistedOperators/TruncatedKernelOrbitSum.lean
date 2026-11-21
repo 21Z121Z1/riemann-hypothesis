@@ -92,7 +92,7 @@ theorem GlobalTheory.TruncKer.kT_eq_of_unipIntegralsVanish : ∀ (D : D7) (V : H
     refine tsum_congr fun δ => ?_
     refine (integral_unipMeas_of_k_eq_zero (φ := fun n => f (((rat V) g * x)⁻¹ * rat V (e δ).1 * n * ((rat V) g * x))) _ hk).trans ?_
     have hδ : ((e δ).1 : GF V) = g * δ.1 * g⁻¹ := rfl
-    simp only [hδ, OneMemClass.coe_one, map_mul, map_inv, mul_inv_rev, mul_one]
+    simp only [hδ, map_mul, map_inv, mul_inv_rev, mul_one]
     congr 1
     group
   ·

@@ -35,7 +35,7 @@ theorem gt_coeff_expX (i : Fin 2) (e : Fin 2 →₀ ℕ) :
 
 theorem gt_single_add (e : Fin 2 →₀ ℕ) : e = single 0 (e 0) + single 1 (e 1) := by
   ext j
-  fin_cases j <;> simp [Finsupp.single_apply]
+  fin_cases j <;> simp
 
 theorem gt_coeff_sum_pow (n : ℕ) (e : Fin 2 →₀ ℕ) :
     coeff e (((X 0 : MvPowerSeries (Fin 2) A) + X 1) ^ n) =
@@ -87,7 +87,7 @@ theorem exp_subst_add_two_vars :
   rw [finsum_eq_single _ (e 0 + e 1)]
   · rw [if_pos rfl]
     rw [Finset.sum_eq_single (single 0 (e 0), single 1 (e 1))]
-    · simp only [Finsupp.single_eq_same, eq_self_iff_true, if_true, ite_true]
+    · simp only [Finsupp.single_eq_same, if_true]
       rw [smul_eq_mul, ← map_natCast (algebraMap ℚ A), ← map_mul, ← map_mul]
       congr 1
       have f0 : ((e 0 + e 1).factorial : ℚ) ≠ 0 := by positivity

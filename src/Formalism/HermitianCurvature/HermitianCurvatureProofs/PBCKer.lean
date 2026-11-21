@@ -59,8 +59,7 @@ theorem psd_entry {Z : Type} (P : Finset Z) (K : Z → Z → ℂ) (hK : TB.PSDOn
   let f : Fin 2 → P := ![⟨p, hp⟩, ⟨q, hq⟩]
   have h := (hK.submatrix f).det_nonneg
   rw [Matrix.det_fin_two] at h
-  simp only [Matrix.submatrix_apply, Matrix.of_apply, f, Matrix.cons_val_zero, Matrix.cons_val_one,
-    Matrix.head_cons] at h
+  simp only [Matrix.submatrix_apply, Matrix.of_apply, f, Matrix.cons_val_zero, Matrix.cons_val_one] at h
   have hqp := psd_herm P K hK hp hq
   rw [hqp, Complex.mul_conj] at h
   have hpd := psd_diag P K hK hp

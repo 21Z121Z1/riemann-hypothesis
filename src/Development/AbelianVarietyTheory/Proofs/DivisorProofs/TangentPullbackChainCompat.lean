@@ -63,7 +63,7 @@ theorem exists_tangent_baseChange : ∀ (R₀ R : Subring ℂ) (ic : R₀ →+* 
     · have hr : ((TrivSqZeroExt.fstHom R R R).toRingHom).comp (algebraMap R (DualNumber R)) =
           RingHom.id R := by
         refine RingHom.ext fun x => ?_
-        simp [TrivSqZeroExt.algebraMap_eq_inl]
+        simp
       rw [Category.assoc, hvG, spMap_comp_ring, hr, Over.w η[G]]
       simp
   · apply hg.1.hom_ext

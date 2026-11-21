@@ -281,7 +281,7 @@ theorem dom_nonempty : flagData.dom.Nonempty := by
   fin_cases i
   · simp [lminor, psgn]
   · simp [lminor, psgn, sgn]
-  · simp [lminor, psgn, sgn, Finset.prod_range_succ, Matrix.det_fin_two]
+  · simp [lminor, psgn, sgn, Finset.prod_range_succ]
 
 theorem isIso_one : flagData.IsIso ![1, 1] := by
   refine ⟨?_, ?_, fun h => by simpa using congrFun h 0⟩

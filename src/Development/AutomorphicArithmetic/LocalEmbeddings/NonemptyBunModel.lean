@@ -218,7 +218,7 @@ theorem nonempty_bunModel {D : D7} (O : Setup D) (hC : O.Core) {R : ℝ} (hR : 2
   have hi := i.2
   obtain ⟨τ, _ | _⟩ := a
   · simp only [rkB, cond_false] at hi
-    simp only [rootSym, cond_false, Bool.not_false, cond_true, pos, Fin.val_rev, rkB]
+    simp only [rootSym, cond_false, Bool.not_false, cond_true, pos, rkB]
     rw [if_neg (by omega)]
     congr 5
     change _ = ((Fin.rev i : Fin _) : ℕ)

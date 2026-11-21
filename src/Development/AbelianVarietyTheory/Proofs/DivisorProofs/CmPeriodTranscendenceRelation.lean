@@ -63,7 +63,7 @@ theorem exists_algebraic_eigenvectors : GlobalTheory.Published.PeriodComparison 
       funext j
       by_cases hj : j = U.e.symm i
       · subst hj; simp
-      · simp [Pi.single_apply, hj]
+      · simp [hj]
     obtain ⟨v', hv'1, hv'2⟩ := GlobalTheory.T.lie_image_polynomial_endomorphism X.A (X.diag U.c) _ U.u α D hD' h (v i).hom _ (φ i b) hlie hdiff hDw
       (Q.map (algebraMap Qb ℂ))
     rw [hQ1, one_smul] at hv'2

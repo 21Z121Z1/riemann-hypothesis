@@ -58,8 +58,8 @@ theorem stabOf_of (hN : NearNbhd) (hP : PrimeProj) (hD : Dict) : StabOf := by
       · simp only [hu, true_imp_iff]
         exact (V.shape.opn u hu).preimage (iT_cont.comp (hc u))
       · simp [hu]
-    · simp [Subgroup.one_mem]
-    · simp [iT_one, Subgroup.one_mem]
+    · simp
+    · simp [iT_one]
   choose e he using hO
   have hJ : IsOpen (V.J : Set (GLw n w₀)) := V.Kw0 ▸ V.shape.opn w₀ V.shape.mem
   obtain ⟨e₀, he₀⟩ := hN E n w₀ ((fun g : GLw n w₀ => iT ((F.a w₀)⁻¹ * g * F.a w₀)) ⁻¹' (Subtype.val '' {k : V.J | V.χ k = 1}))

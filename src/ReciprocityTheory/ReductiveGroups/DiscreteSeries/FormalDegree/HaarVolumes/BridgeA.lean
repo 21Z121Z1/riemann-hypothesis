@@ -24,7 +24,7 @@ lemma Jpq_zero (N : ℕ) : Formalism.UG.Jpq N 0 = 1 := by
   · exact i.elim0
 
 lemma Jm_true (N : ℕ) : Jm (fun _ : Fin N => true) = 1 := by
-  simp [Jm, Formalism.REAL.Jm]
+  simp [Jm]
 
 lemma cT_eq {m : Type} [Fintype m] (M : Matrix m m ℂ) : Formalism.UG.cT (starRingEnd ℂ) M = Mᴴ := by
   ext i j

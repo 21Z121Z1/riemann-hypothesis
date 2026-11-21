@@ -199,7 +199,7 @@ theorem eq_smul_of_loc {B : Base F E} {n d n₁ d₁ : ℕ} {X : Spc F E n} {W :
     rw [hfe]
     funext x
     simp only [GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure, Pi.smul_apply, smul_eq_mul, ContinuousLinearMap.smul_apply,
-      SchwartzMap.smul_apply, mul_assoc]
+      mul_assoc]
   | zero => simp
   | add x y _ _ hx hy => rw [map_add, map_add, hx, hy, smul_add]
   | smul a x _ hx => rw [map_smul, map_smul, hx, smul_comm]

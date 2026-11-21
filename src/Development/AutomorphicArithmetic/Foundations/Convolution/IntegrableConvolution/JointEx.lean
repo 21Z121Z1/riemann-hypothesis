@@ -17,7 +17,7 @@ variable {Γ G H : Type} [Group Γ] [TopologicalSpace Γ] [Group G] [NormedAddCo
 
 private lemma mem_eigIn {W : Submodule ℂ H} {T : H →L[ℂ] H} {c : ℝ} {v : H} :
     v ∈ eigIn W T c ↔ v ∈ W ∧ T v = (c : ℂ) • v := by
-  simp [eigIn, Submodule.mem_inf, Module.End.mem_eigenspace_iff]
+  simp [eigIn, Submodule.mem_inf]
 
 private lemma closed_eigIn {W : Submodule ℂ H} (hW : IsClosed (W : Set H)) (T : H →L[ℂ] H) (c : ℝ) :
     IsClosed (eigIn W T c : Set H) := by

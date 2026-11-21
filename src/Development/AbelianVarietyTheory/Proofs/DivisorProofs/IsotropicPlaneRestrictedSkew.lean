@@ -179,7 +179,7 @@ theorem exists_rat_isLevi_one_skew : ∀ (F E : Type) [Field F] [NumberField F] 
     simp only [Matrix.map_mul] at this
     rw [← this]
     ext i j
-    simp only [Matrix.map_apply, Matrix.mul_apply, map_sum, map_mul]
+    simp only [Matrix.map_apply, Matrix.mul_apply]
     simp only [← map_mul, ← map_sum]
     rfl
 

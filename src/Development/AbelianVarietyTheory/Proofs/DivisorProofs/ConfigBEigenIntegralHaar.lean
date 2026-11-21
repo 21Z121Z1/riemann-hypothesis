@@ -47,7 +47,7 @@ theorem cA_cA (h : IsCMExt F E σ) (x : AE F E) : cA σ (cA σ x) = x := by
 theorem absE_cA (x : (AE F E)ˣ) : absE F E (Units.map (cA σ).toMonoidHom x) = absE F E x := by
   have : Units.map (cA σ).toMonoidHom x = GlobalTheory.Doubling.conjUnit σ x := by
     ext
-    simp only [Units.coe_map, MonoidHom.coe_coe]
+    simp only [Units.coe_map]
     rfl
   rw [this, GlobalTheory.Doubling.absE_conjUnit]
 

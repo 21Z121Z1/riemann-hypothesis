@@ -43,9 +43,9 @@ lemma pair_apply (a : ι → ℂ) (M : ℝ) (h : ∀ i, ‖a i‖ ≤ M) (c : lp
 lemma pair_single [DecidableEq ι] (a : ι → ℂ) (M : ℝ) (h : ∀ i, ‖a i‖ ≤ M) (i : ι) :
     pair a M h (lp.single 1 i 1) = a i := by
   rw [pair_apply, tsum_eq_single i]
-  · simp [lp.coeFn_single]
+  · simp
   · intro j hj
-    simp [lp.coeFn_single, Pi.single_apply, hj]
+    simp [hj]
 
 variable {V : Type} [NormedAddCommGroup V] [NormedSpace ℝ V]
 

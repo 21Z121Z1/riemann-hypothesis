@@ -73,7 +73,7 @@ theorem integral_traces_bounded_denominators : ∀ (E : Type) [Field E] [NumberF
     funext i
     by_cases h : i = k
     · subst h; simp
-    · simp [Pi.single_apply, h]
+    · simp [h]
   have hv : ∀ k l, ∃ z : ℤ, Algebra.trace ℚ E ((ξ ᵥ* A) k * c l) = z := by
     intro k l
     obtain ⟨z, hz⟩ := hξ (e.symm (k, l))

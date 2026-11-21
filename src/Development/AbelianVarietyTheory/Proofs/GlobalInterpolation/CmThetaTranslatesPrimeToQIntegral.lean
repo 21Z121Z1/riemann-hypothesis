@@ -54,7 +54,7 @@ theorem jet_one {F : ℂ → ℂ} (hF : ContDiff ℂ ⊤ F) (k : ℕ) (v : Fin k
   have e : (fun z : Fin 1 → ℂ => F (z 0)) = F ∘ (ContinuousLinearMap.proj (R := ℂ) (φ := fun _ : Fin 1 => ℂ) 0) := rfl
   rw [e, h, iteratedDeriv_eq_iteratedFDeriv]
   have e2 : (fun j => v j 0) = fun j => (v j 0) • (1 : ℂ) := by funext j; simp
-  simp only [ContinuousMultilinearMap.compContinuousLinearMap_apply, Function.comp_def]
+  simp only [ContinuousMultilinearMap.compContinuousLinearMap_apply]
   have := (iteratedFDeriv ℂ k F ((0 : Fin 1 → ℂ) 0)).map_smul_univ (fun j => v j 0) (fun _ => (1 : ℂ))
   simpa [smul_eq_mul] using this
 

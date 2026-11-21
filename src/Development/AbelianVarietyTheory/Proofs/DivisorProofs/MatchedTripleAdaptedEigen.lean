@@ -530,7 +530,7 @@ theorem pure_multilinear {κ : Type} [Fintype κ] (ζ : ∀ v : Pl F, (κ → Fv
   refine ⟨{ toFun := fun f => MultilinearMap.pi (fun x => (f (fun i => evI F (x i)) * c x) • P x),
             map_add' := ?_, map_smul' := ?_ }, ?_⟩
   · intro f g; ext φ x; simp [add_mul, add_smul]
-  · intro a f; ext φ x; simp [mul_assoc, smul_smul]
+  · intro a f; ext φ x; simp [mul_assoc]
   · intro f φ; funext x
     rw [GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure, hc x (fun v => π v (φ v)) _ (fun v h => by simp [h]) (fun v h => by simp [h])]
     simp [P, MultilinearMap.mkPiAlgebra_apply]

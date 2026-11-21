@@ -140,7 +140,7 @@ def ell (h : M22) : E2 →ₗ[ℝ] M23 where
 theorem affine_eq (h : M22) (y : E2) :
     Matrix.of.symm (Matrix.of h * blk y.ofLp) = cst h + ell h y := by
   funext i j
-  fin_cases j <;> simp [Matrix.mul_apply, Fin.sum_univ_two, blk, cst, ell, Fin.sum_univ_three]
+  fin_cases j <;> simp [Matrix.mul_apply, Fin.sum_univ_two, blk, cst, ell]
 
 theorem ell_ker (h : M22) (hdet : (Matrix.of h).det ≠ 0) : LinearMap.ker (ell h) = ⊥ := by
   refine LinearMap.ker_eq_bot'.2 fun y hy => ?_
@@ -220,7 +220,7 @@ theorem innB_eq {Ψ : M23 → ℂ} {h : M22} {S : 𝓢(E2, ℂ)} (hS : ∀ y : E
     simp [PiLp.inner_apply, Fin.sum_univ_two, mul_comm]
   beta_reduce
   rw [hin, hS, smul_eq_mul, mul_comm]
-  simp only [gx, psiR, WithLp.ofLp_toLp]
+  simp only [gx, psiR]
   congr 2
   push_cast
   ring

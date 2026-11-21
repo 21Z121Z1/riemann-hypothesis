@@ -33,7 +33,7 @@ theorem appLE_stalk_top (y : X) {K : Type} [CommRing K] (ψ : X.presheaf.stalk y
     ((spMap ψ ≫ X.fromSpecStalk y).appLE N ⊤ (top_le_preimage_stalk y ψ hy)).hom h =
       fnOn ⊤ (ψ (X.presheaf.germ N y hy h)) := by
   rw [Scheme.Hom.comp_appLE, Scheme.fromSpecStalk_app hy]
-  simp only [Category.assoc, Scheme.Hom.map_appLE]
+  simp only [Category.assoc]
   have e2 := congrArg (fun χ => χ.hom (X.presheaf.germ N y hy h))
     (Scheme.ΓSpecIso_inv_naturality (R := X.presheaf.stalk y) (S := .of K) (CommRingCat.ofHom ψ))
   refine Eq.trans ?_ (congrArg (resG (Sp K) (le_top : (⊤ : (Sp K).Opens) ≤ ⊤)) e2.symm)

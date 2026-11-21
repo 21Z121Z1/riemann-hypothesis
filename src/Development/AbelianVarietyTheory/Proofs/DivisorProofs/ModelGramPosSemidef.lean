@@ -67,7 +67,7 @@ theorem form_modelGram (σ : Fin m → Option (Fin e)) (z w : Fin e → ℂ) :
   classical
   rw [form_eq_sum, GlobalTheory.IndefiniteRowSideFullHecke.ModelDdcForms.modelAt, Complex.re_sum]
   refine Finset.sum_congr rfl fun k _ => ?_
-  rw [Finset.sum_eq_single k (fun l _ hl => by simp [modelGram, diagonal_apply_ne _ hl.symm, diagonal_apply_ne _ hl]) (by simp)]
+  rw [Finset.sum_eq_single k (fun l _ hl => by simp [modelGram, diagonal_apply_ne _ hl.symm]) (by simp)]
   have h : ∀ c : ℝ, (w k * (c : ℂ) * (starRingEnd ℂ) (w k)).re = c * ‖w k‖ ^ 2 := fun c => by
     rw [mul_right_comm, Complex.mul_conj', ← Complex.ofReal_pow, ← Complex.ofReal_mul, Complex.ofReal_re, mul_comm]
   simp only [modelGram, diagonal_apply_eq]

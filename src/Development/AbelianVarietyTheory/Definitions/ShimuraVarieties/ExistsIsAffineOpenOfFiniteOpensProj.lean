@@ -577,7 +577,7 @@ instance orbitsInAffineOpens_pullbackAction : OrbitsInAffineOpens (pullbackActio
     (isPullback_pullbackMap f t (π ρ) _ (π_desc ρ f hf)) inferInstance
   .of_invariant _ (pullbackπ ρ f hf t) fun g ↦ by
     apply pullback.hom_ext <;>
-      simp [pullback.map, pullback.lift_fst, pullback.lift_snd]
+      simp [pullback.lift_fst, pullback.lift_snd]
 
 noncomputable def pullbackIso [Flat t] :
     finiteQuotient (pullbackAction ρ f hf t) ≅ pullback (desc ρ f hf) t :=

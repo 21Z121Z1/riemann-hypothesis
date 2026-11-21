@@ -27,7 +27,7 @@ theorem idem_mul_self (w₀ : InfinitePlace F) : idem w₀ * idem w₀ = idem w�
     show (Pi.single w₀ 1 : InfiniteAdeleRing F) v * (Pi.single w₀ 1 : InfiniteAdeleRing F) v = (Pi.single w₀ 1 : InfiniteAdeleRing F) v
     by_cases h : v = w₀
     · subst h; simp
-    · simp [Pi.single_apply, h]
+    · simp [h]
   · show (0 : FiniteAdeleRing (𝓞 F) F) * 0 = 0
     simp
 
@@ -88,7 +88,7 @@ theorem piInf_tv {w : InfinitePlace F} (τ : EmbOver E w) (w₀ : InfinitePlace 
   rw [h1, idem_fst_apply]
   by_cases h : w = w₀
   · subst h; simp
-  · simp [Pi.single_apply, h]
+  · simp [h]
 
 end GlobalTheory.IdeleAtPlace
 

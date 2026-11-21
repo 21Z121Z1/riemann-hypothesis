@@ -90,8 +90,8 @@ example (ρ : O →+* Module.End R V) : IsCut ρ (Finsupp.single (1 : Matrix (Fi
   zero q hq := by
     ext f x
     obtain ⟨q, rfl⟩ := Nat.exists_eq_succ_of_ne_zero hq
-    simp only [altOp, zero_smul, Finsupp.sum_single_index, one_smul, altPull, LinearMap.coe_mk, AddHom.coe_mk,
-      AlternatingMap.compLinearMap_apply, LinearMap.zero_apply, AlternatingMap.zero_apply]
+    simp only [altOp, zero_smul, Finsupp.sum_single_index, one_smul, altPull,
+      LinearMap.zero_apply, AlternatingMap.zero_apply]
     exact f.map_coord_zero 0 (Subsingleton.elim _ _)
 
 end GlobalTheory.KS

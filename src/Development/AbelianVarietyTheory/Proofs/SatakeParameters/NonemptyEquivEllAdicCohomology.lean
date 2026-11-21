@@ -251,7 +251,7 @@ theorem nonempty_equiv_ellAdicCohomology (l : ℕ) [Fact l.Prime] (X : Scheme.{0
   intro F G g f
   apply (e' _).injective
   rw [he']
-  simp only [Equiv.trans_apply]
+  simp only
   erw [Equiv.apply_symm_apply, Equiv.apply_symm_apply]
   exact freeOnEquiv_comp _ X g f
 

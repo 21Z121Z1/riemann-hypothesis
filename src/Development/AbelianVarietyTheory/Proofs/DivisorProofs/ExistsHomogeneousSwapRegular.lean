@@ -66,7 +66,7 @@ theorem swapReg_exists : ArCalc → ∃ G, Homog G ∧ SwapReg G := by
     congr 2
     congr 1
     funext i
-    fin_cases i <;> simp [T, lin, Fin.sum_univ_five, Pi.single_apply] <;> ring
+    fin_cases i <;> simp [T, lin, Fin.sum_univ_five] <;> ring
 
   have hdim : topologicalKrullDim (closure ({π (genericPoint Y)} : Set B)) < ((d + 1 + 1 : ℕ) : WithBot ℕ∞) := by
     refine (topologicalKrullDim_subspace_le B _).trans_lt ?_

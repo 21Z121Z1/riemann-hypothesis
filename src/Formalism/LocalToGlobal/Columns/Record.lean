@@ -1904,8 +1904,7 @@ theorem recPer_lower_emb (hX : X.Ok) (σ₀ : X.K →+* ℂ) (hσ : ∀ x : X.K,
       (ptEv W ΛM σ₀ hσ).ev (brC W u ((φ : (stepGSD W Λ u R.m).D → (stepGSD W Λ u R.m).V)
         (tilR hSG u ((ptGSD W ΛM).outSec.rep c)))) := by
   first
-  | (simp only [recPer, LinearMap.pi_apply, LinearMap.comp_apply, LinearMap.proj_apply, GSD.Ev.evAt_apply,
-      GSD.Ev.atPt_emb, lowC_ev]; done)
+  | (simp only [recPer]; done)
   | (show lowC W Λ ΛM σ₀ hσ u ((stepEv W Λ σ₀ hσ u R.m).atPt (tilR hSG u ((ptGSD W ΛM).outSec.rep c))
         ((stepEv W Λ σ₀ hσ u R.m).emb φ)) = _
      rw [GSD.Ev.atPt_emb, lowC_ev])

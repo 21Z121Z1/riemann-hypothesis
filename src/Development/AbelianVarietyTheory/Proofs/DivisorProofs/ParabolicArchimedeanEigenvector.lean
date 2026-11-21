@@ -63,4 +63,4 @@ theorem GlobalTheory.LineGlue.exists_idele_smul_of_local_lines : ∀ (F E : Type
   rw [hMX]
   ext i j
   fin_cases j
-  simp [Matrix.mul_apply, Fin.sum_univ_one, mul_comm]
+  simp [Matrix.mul_apply, mul_comm]

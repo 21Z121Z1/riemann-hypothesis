@@ -185,7 +185,7 @@ theorem vanishesTo_sum_of_baseChange [Algebra k k'] (H : IsPullback φ p' p (spM
       rw [Ideal.map_map, e, ← Ideal.map_map, Ideal.map_pow, ← ds_stalkId_eq_map I W _ hz.1,
         Ideal.map_pow, ← hI]
       convert Ideal.mul_mem_left _ ((φ.stalkMap z).hom (tr B (φ z) i (a.idx j)).val) h₁ using 1
-      simp only [map_sum, map_mul, germ_smul, germ_pullChart, ger_algX, ger_appLE, ger_resG,
+      simp only [map_sum, map_mul, germ_smul, germ_pullChart, ger_algX, ger_appLE,
         Finset.mul_sum]
       refine Finset.sum_congr rfl fun t _ => ?_
       rw [mul_left_comm, ← map_mul]

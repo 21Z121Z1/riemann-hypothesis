@@ -70,7 +70,7 @@ theorem herm (hp : (Ideal.absNorm P.asIdeal).Prime)
       ∀ x, (∃ v, Mm v ∧ v l = x ∧ ∀ k, l < k → v k = 0) → IntAt P (qE P ^ K * x) := by
     intro l
     apply ideal_form P hp hq j (fun x => ∃ v, Mm v ∧ v l = x ∧ ∀ k, l < k → v k = 0)
-    · refine ⟨Pi.single l 1, Mlam _ fun k => ?_, by simp, fun k hk => by simp [Pi.single_apply, hk.ne']⟩
+    · refine ⟨Pi.single l 1, Mlam _ fun k => ?_, by simp, fun k hk => by simp [hk.ne']⟩
       by_cases hk : k = l
       · rw [hk]; simpa using intAt_one P
       · simpa [Pi.single_apply, hk] using intAt_zero P
@@ -116,7 +116,7 @@ theorem herm (hp : (Ideal.absNorm P.asIdeal).Prime)
         congr 1
         rw [Finset.sum_eq_single ⟨k, by omega⟩]
         · simp
-        · intro i _ hi; simp [Pi.single_apply, hi]
+        · intro i _ hi; simp [hi]
         · simp
   exact fun v hv => main n le_rfl v hv (fun l hl => absurd l.2 (by omega))
 

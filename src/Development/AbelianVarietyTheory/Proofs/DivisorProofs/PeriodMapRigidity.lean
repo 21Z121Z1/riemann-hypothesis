@@ -232,7 +232,7 @@ theorem rigidity : ∀ {g : ℕ} {E : Type} [NormedAddCommGroup E] [NormedSpace 
   have hP₀ : ((b₀, 0) : Pt E g) ∈ cov B g := ⟨hb₀, Set.mem_univ _⟩
   have hne : ∀ l ∈ M, κ₂ l ≠ 0 := fun l hl h0 => by simpa [h0] using hn₂ l hl
   set χ : Fl g → ℂ := fun l => κ₁ l / κ₂ l with hχ
-  have hχ1 : ∀ l ∈ M, ‖χ l‖ = 1 := fun l hl => by simp [hχ, norm_div, hn₁ l hl, hn₂ l hl]
+  have hχ1 : ∀ l ∈ M, ‖χ l‖ = 1 := fun l hl => by simp [hχ, hn₁ l hl, hn₂ l hl]
   have hχm : ∀ l ∈ M, ∀ l' ∈ M, χ (l + l') = χ l * χ l' := by
     intro l hl l' hl'
     have e1 := kappa_add hj₁ hi₁ hl hl' hP₀

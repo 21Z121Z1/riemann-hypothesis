@@ -39,7 +39,7 @@ theorem unitary_of_herm (H M : Matrix (Fin n) (Fin n) ℂ) (h : ∀ u v, herm H 
   convert this using 1
   · simp [dotProduct, Matrix.mulVec, Matrix.col, Finset.mul_sum, mul_comm, mul_left_comm, mul_assoc]
     rw [Finset.sum_comm]
-  · simp [dotProduct, Matrix.mulVec, Pi.single_apply]
+  · simp [dotProduct, Pi.single_apply]
 
 end FLW
 

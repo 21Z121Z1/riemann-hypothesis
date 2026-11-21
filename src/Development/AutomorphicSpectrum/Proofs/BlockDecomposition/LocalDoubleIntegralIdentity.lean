@@ -73,7 +73,7 @@ theorem gInt2 : Ad3.LFS.GInt2 := by
     refine IsLocallyConstant.continuous ?_
     rw [IsLocallyConstant.iff_exists_open]
     intro g
-    refine ⟨{x | g⁻¹ * x ∈ U}, U.isOpen.preimage (continuous_const.mul continuous_id), by simp [U.one_mem],
+    refine ⟨{x | g⁻¹ * x ∈ U}, U.isOpen.preimage (continuous_const.mul continuous_id), by simp,
       fun x hx => ?_⟩
     have := hU g _ hx
     simpa using this

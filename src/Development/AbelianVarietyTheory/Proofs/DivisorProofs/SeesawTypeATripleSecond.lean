@@ -129,7 +129,7 @@ theorem exists_levi_one {F E : Type} [Field F] [NumberField F] [Field E] [Number
       funext r; simp [Q, mulVec, dotProduct, Pi.single_apply]
     have e2 : fromBlocks (mat h₁) 0 0 (1 : Matrix (Fin 2) (Fin 2) (AE F E)) *ᵥ Pi.single (Sum.inr t) 1 =
         Pi.single (Sum.inr t) 1 := by
-      ext i; rcases i with i | i <;> simp [mulVec, dotProduct, Pi.single_apply, one_apply, Fintype.sum_sum_type]
+      ext i; rcases i with i | i <;> simp [mulVec, dotProduct, Pi.single_apply, one_apply]
     rw [e1, mulVec_mulVec, hMQ, ← mulVec_mulVec, e2]
   refine ⟨?_, ?_, ?_⟩
   · rw [Units.val_one, one_smul]; exact hcol 0

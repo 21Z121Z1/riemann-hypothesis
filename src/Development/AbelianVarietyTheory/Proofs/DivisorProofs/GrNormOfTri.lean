@@ -348,7 +348,7 @@ theorem lnStep_core {Bs Bg Y₀ G : Scheme.{0}} [IsIntegral G] {jB : Bg ⟶ Bs} 
       obtain ⟨cf, g₁, g₂, g₃⟩ := hT.2.2 τ i
       refine ⟨fun k => φ (cf k), congrArg φ g₁, fun k hk => (congrArg φ (g₂ k hk)).trans (map_zero φ), ?_⟩
       have g₄ := GlobalTheory.LatDRFree.comb_map Z.t φ g₃
-      simp only [dual_comp, x] at g₄ ⊢
+      simp only [dual_comp] at g₄ ⊢
       rw [sp_comp', b₂, ← sp_comp', reassoc_of% a₄]
       exact g₄) A hA r b (fun i => by
       have g := h i

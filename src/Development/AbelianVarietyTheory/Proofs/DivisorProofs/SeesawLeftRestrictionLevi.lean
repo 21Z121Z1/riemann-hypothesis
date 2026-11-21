@@ -70,7 +70,7 @@ theorem dbl_decomp (H : Plane E n n₁) (w : Matrix (Fin d) (Fin n₁ ⊕ Fin n�
       (w.toCols₂ * (incM F H.ι)ᵀ + Matrix.vecMulVec z₂ (incV F H.x)) := by
   ext i j
   rcases j with j | j <;>
-    simp [dblEmb, Matrix.mul_apply, Matrix.fromBlocks_transpose, Fintype.sum_sum_type, Matrix.vecMulVec_apply,
+    simp [dblEmb, Matrix.mul_apply, Fintype.sum_sum_type, Matrix.vecMulVec_apply,
       Matrix.fromBlocks]
 
 end GlobalTheory.MixXDblEv

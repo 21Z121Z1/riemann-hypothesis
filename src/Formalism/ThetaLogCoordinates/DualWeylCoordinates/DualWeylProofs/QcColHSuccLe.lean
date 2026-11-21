@@ -106,6 +106,6 @@ theorem qc_colFam_triv {n : ℕ} [NeZero n] (M : GLMod n) (h1 : Fintype.card M.�
     simpa using congrFun h0 i0
   · have : Unique {I : TIdx (0 : Fin n → ℤ) // StdT I} :=
       ⟨⟨⟨canT 0, qc_canT_std 0⟩⟩, fun I => Subtype.ext (Subsingleton.elim _ _)⟩
-    simp [h1, dMu]
+    simp [dMu]
 
 end Formalism.InvariantFactorPaths.ColumnFamilies

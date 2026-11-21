@@ -262,7 +262,7 @@ theorem overlattice_three_orbits : Formalism.HermitianLattices.RamifiedLatticeOp
           linear_combination (-(q : ℚ)) * hm + hk
         have h2 : (⌊(q : ℚ) * sel a⌋ : ℤ) = k - q * m := by exact_mod_cast h1
         show (k : ZMod q) = ((⌊(q : ℚ) * sel a⌋ : ℤ) : ZMod q)
-        rw [h2]; push_cast; simp [ZMod.natCast_self]
+        rw [h2]; push_cast; simp
       have fv_zero : fv 0 = 0 := by
         have h := W 0 La.zero_mem 0 rfl 0 (by simp)
         simpa using h.symm

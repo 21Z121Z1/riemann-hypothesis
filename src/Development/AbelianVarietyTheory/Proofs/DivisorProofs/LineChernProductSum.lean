@@ -29,6 +29,6 @@ theorem lineChern_prod : ∀ (E : Type) [NormedAddCommGroup E] [NormedSpace ℂ 
   have hl : ∀ τ ∈ (Finset.univ : Finset T), ContDiffAt ℝ 2 (fun x => Real.log (f τ x)) y :=
     fun τ _ => (hf τ).log (hpos τ).ne'
   simp only [ddc, leviForm_congr hcongr, leviForm_sum hl]
-  simp [Finset.mul_sum, ContinuousLinearMap.sum_apply]
+  simp [Finset.mul_sum]
 
 end GlobalTheory.ChernProd

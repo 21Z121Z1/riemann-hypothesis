@@ -17,7 +17,7 @@ namespace GlobalTheory.CompanionTheory.WinertRn
 variable {F : Type} [Field F]
 
 theorem det_mul_right_unipotent (x : F) (g : GL (Fin 2) F) : ((g * uni2 x).val).det = (g.val).det := by
-  simp [uni2, Matrix.det_fin_two, Matrix.mul_apply, Fin.sum_univ_two]
+  simp [uni2, Matrix.det_fin_two]
 
 theorem mul_right_unipotent_upper_left (x : F) (g : GL (Fin 2) F) : (g * uni2 x).val 0 0 = g.val 0 0 := by
   simp [uni2, Matrix.mul_apply, Fin.sum_univ_two]

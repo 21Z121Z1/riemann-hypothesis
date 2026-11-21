@@ -121,17 +121,17 @@ theorem overlapEquiv_mapY (b : Away (homGrading W) (var W 1)) :
   apply AdjoinRoot.ringHom_ext
   · apply Polynomial.ringHom_ext
     · intro r
-      simp only [RingHom.comp_apply, RingEquiv.toRingHom_eq_coe, RingEquiv.coe_toRingHom,
+      simp only [RingHom.comp_apply, RingEquiv.toRingHom_eq_coe,
         AlgHom.toRingHom_eq_coe, RingHom.coe_coe]
       rw [show AdjoinRoot.of (infPolynomial W) (Polynomial.C r) = algebraMap R (InfChart W) r from rfl,
         chartYEquiv_symm_algebraMap, mapY_scalarAway, overlapEquiv_mapZ, chartZEquiv_scalarAway,
         AlgHom.commutes, ← IsScalarTower.algebraMap_apply]
-    · simp only [RingHom.comp_apply, RingEquiv.toRingHom_eq_coe, RingEquiv.coe_toRingHom,
+    · simp only [RingHom.comp_apply, RingEquiv.toRingHom_eq_coe,
         AlgHom.toRingHom_eq_coe, RingHom.coe_coe]
       rw [show AdjoinRoot.of (infPolynomial W) Polynomial.X = zI W from rfl, chartYEquiv_symm_zI,
         overlapEquiv_mapY_frac, infToOverlap_zI]
       simp [dehomZ]
-  · simp only [RingHom.comp_apply, RingEquiv.toRingHom_eq_coe, RingEquiv.coe_toRingHom,
+  · simp only [RingHom.comp_apply, RingEquiv.toRingHom_eq_coe,
       AlgHom.toRingHom_eq_coe, RingHom.coe_coe]
     rw [show AdjoinRoot.root (infPolynomial W) = xI W from rfl, chartYEquiv_symm_xI,
       overlapEquiv_mapY_frac, infToOverlap_xI]

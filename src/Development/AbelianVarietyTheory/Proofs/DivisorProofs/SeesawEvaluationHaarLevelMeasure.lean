@@ -111,7 +111,7 @@ theorem tendsto_family_zero {ψ : AddChar (AF F) ℂ} (hψ : IsStd ψ) {K : Type
     have c4 := (continuous_heisS f).comp (c2.prodMk (c3.prodMk c1))
     have t4 := c4.tendsto' 0 f (by
       ext y
-      simp [heisS_apply, trL_apply, dotProduct, eChar_apply]
+      simp [heisS_apply, trL_apply, dotProduct]
       congr 1
       funext i
       simp)

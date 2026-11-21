@@ -69,7 +69,7 @@ theorem exists_presentation_baseChange : ∀ (A : Type) [CommRing A] (c : A) (Li
   have hR' : R' = 1 - E.map (algebraMap A A') + c' • E.map (algebraMap A A') := by
     subst hR hc
     ext i j
-    by_cases hij : i = j <;> simp [Matrix.one_apply, hij, Algebra.smul_def (A := A')]
+    by_cases hij : i = j <;> simp [hij, Algebra.smul_def (A := A')]
   obtain ⟨e, he⟩ := exists_quot_equiv_of_section φ σ h c' (Matrix.mulVecLin R') fun x => by
     rw [hE, hR', Matrix.mulVecLin_apply, Matrix.add_mulVec, Matrix.sub_mulVec, Matrix.one_mulVec, Matrix.smul_mulVec]
   exact ⟨e, fun x => by rw [he, hφ]⟩

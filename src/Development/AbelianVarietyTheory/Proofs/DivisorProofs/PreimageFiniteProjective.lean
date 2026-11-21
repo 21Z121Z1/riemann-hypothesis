@@ -99,7 +99,7 @@ theorem preimage_finite_projective : ∀ (p : ℕ) [Fact p.Prime] (D : PrismData
   let N : Submodule B (Fin G.height → B) := Submodule.comap (piMap (e : B →+* S.R) (Fin G.height)) (H D c n)
   have hBreg : IsSMulRegular B (algebraMap A B (p : A)) := fun x y hxy => e.injective (S.reg (by
     have h1 := congrArg e hxy
-    simp only [smul_eq_mul, map_mul, he, map_natCast] at h1
+    simp only [smul_eq_mul, map_mul, map_natCast] at h1
     exact h1))
   have hN : ∀ y, algebraMap A B (p : A) • y ∈ N := fun y => by
     show piMap (e : B →+* S.R) _ _ ∈ H D c n

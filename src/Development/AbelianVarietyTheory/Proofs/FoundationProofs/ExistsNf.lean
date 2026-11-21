@@ -109,7 +109,7 @@ theorem exists_nf : ∀ (l : ℕ) [Fact l.Prime] (Ω : Type) [Field Ω] [Algebra
     · have hd : s ∈ Dec (F := ℚ) A := Ine_le_Dec A hs
       rw [(hup s hd).2, (hIne ⟨s, hd⟩ hs).1]
       have hχ1 := GlobalTheory.T.character_pow_pred_eq_one_of_killsPrimeRoots Ω l _ χ s hχ
-      simp only [Units.val_mul, Units.val_zpow_eq_zpow_val, zpow_natCast, mul_pow, eps]
+      simp only [Units.val_mul, zpow_natCast, mul_pow, eps]
       rw [← Units.val_pow_eq_pow_val (χ s), hχ1, Units.val_one, mul_one, Units.val_pow_eq_pow_val, ← pow_mul]
   · obtain ⟨s, hs⟩ := hne A κ hA ⟨g, hg⟩
     refine ⟨s, s.2, ?_⟩

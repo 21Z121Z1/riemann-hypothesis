@@ -68,7 +68,7 @@ theorem two_terms_eq {n d d₁ : ℕ} (a : AF F) (x x₀ : Fin n → E) (w : Fin
   ext i j
   simp only [Matrix.add_apply, Matrix.smul_apply, incM, incV, Matrix.map_apply, Matrix.vecMulVec_apply, Matrix.mulVec,
     dotProduct, Pi.smul_apply, smul_eq_mul, map_mul, map_sum]
-  simp only [Algebra.smul_def, Finset.mul_sum, map_mul]
+  simp only [Algebra.smul_def, Finset.mul_sum]
   congr 1
   · ring
   · exact Finset.sum_congr rfl fun m _ => by ring

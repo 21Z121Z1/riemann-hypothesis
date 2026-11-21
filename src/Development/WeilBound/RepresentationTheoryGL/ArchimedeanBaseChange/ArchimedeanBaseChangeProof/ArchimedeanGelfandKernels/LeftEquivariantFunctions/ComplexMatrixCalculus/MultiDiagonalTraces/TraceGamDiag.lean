@@ -23,7 +23,7 @@ theorem map_diag_ιMulti {k : ℕ} (v : Md n → ℂ) (e : Fin k → Md n) :
       fun i => v (e i) • Pi.single (e i) (1 : ℂ) := by
     funext i
     ext j
-    simp [Matrix.toLin'_apply, Pi.single_apply, diagonal_apply]
+    simp [Matrix.toLin'_apply, Pi.single_apply]
   rw [h, AlternatingMap.map_smul_univ]
 
 private theorem exteriorAlgebra_map_diagonal_ιMulti_eq_prod_smul (v : Md n → ℂ) {k : ℕ} (s : Set.powersetCard (Md n) k) :

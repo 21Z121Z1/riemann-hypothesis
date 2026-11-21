@@ -155,7 +155,7 @@ theorem finrank_slSp_le (G : Matrix (Fin r) (Fin r) E) (hG : G.det ≠ 0) :
   have hmem : δ • (1 : Matrix (Fin r) (Fin r) E) ∈ skewSp G := by
     change (δ • (1 : Matrix (Fin r) (Fin r) E))ᵀ * G + G * (δ • (1 : Matrix (Fin r) (Fin r) E)).map cc = 0
     have e : (δ • (1 : Matrix (Fin r) (Fin r) E)).map cc = (-δ) • 1 := by
-      ext a b; by_cases h : a = b <;> simp [h, cc, hδ, Matrix.one_apply]
+      ext a b; by_cases h : a = b <;> simp [h, cc, hδ]
     rw [e, transpose_smul, transpose_one, Matrix.smul_mul, Matrix.one_mul, Matrix.mul_smul, Matrix.mul_one,
       neg_smul, add_neg_cancel]
   have hnot : δ • (1 : Matrix (Fin r) (Fin r) E) ∉ slSp G := by

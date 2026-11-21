@@ -49,7 +49,7 @@ theorem Qr_span_pow (p : ℕ) [Fact p.Prime] {r : ℕ} (hr : 0 < r) (ζ : Qr p r
   refine ⟨fun j => f.coeff j, ?_⟩
   apply Subtype.ext
   rw [h1, Polynomial.aeval_eq_sum_range' hf, Finset.sum_range]
-  simp [IntermediateField.coe_sum]
+  simp
 
 theorem KQ_eq_sum_pow : ∀ (p : ℕ) [Fact p.Prime] (K : IntermediateField ℚ_[p] (PadicAlgCl p)) (r : ℕ), 0 < r →
     ∀ (ζ : Qr p r), IsPrimitiveRoot (ζ : PadicAlgCl p) (p ^ r - 1) →

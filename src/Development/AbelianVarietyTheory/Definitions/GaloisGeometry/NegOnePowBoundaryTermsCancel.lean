@@ -249,10 +249,10 @@ def cup {m n k : ℕ} (h : m + n = k) : H F m →ₗ[R] H F n →ₗ[R] H F k :=
     { toFun := cupProductCocycleClass μ h
       map_add' := fun f f' => Submodule.linearMap_qext _ (LinearMap.ext fun g => by
         simp only [cupProductCocycleClass, LinearMap.comp_apply, Submodule.mkQ_apply, Submodule.liftQ_apply, map_add,
-          LinearMap.add_apply, Submodule.Quotient.mk_add])
+          LinearMap.add_apply])
       map_smul' := fun r f => Submodule.linearMap_qext _ (LinearMap.ext fun g => by
         simp only [cupProductCocycleClass, LinearMap.comp_apply, Submodule.mkQ_apply, Submodule.liftQ_apply, map_smul,
-          LinearMap.smul_apply, Submodule.Quotient.mk_smul, RingHom.id_apply]) }
+          LinearMap.smul_apply, RingHom.id_apply]) }
     fun f hf => by
       rw [LinearMap.mem_ker]
       refine Submodule.linearMap_qext _ (LinearMap.ext fun g => ?_)

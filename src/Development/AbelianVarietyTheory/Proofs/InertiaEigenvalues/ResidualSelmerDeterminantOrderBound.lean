@@ -38,7 +38,7 @@ theorem aeval_eps {K : Type} [Field K] (p : Polynomial K) :
   | add p q hp hq => simp [hp.1, hp.2, hq.1, hq.2]
   | monomial n a =>
     rcases n with _ | _ | n
-    · simp [Polynomial.coeff_monomial, TrivSqZeroExt.algebraMap_eq_inl]
+    · simp [TrivSqZeroExt.algebraMap_eq_inl]
     · simp [Polynomial.coeff_monomial, TrivSqZeroExt.algebraMap_eq_inl]
     · have : (DualNumber.eps : DualNumber K) ^ (n + 1 + 1) = 0 := by
         rw [pow_succ, pow_succ, mul_assoc, DualNumber.eps_mul_eps, mul_zero]

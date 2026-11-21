@@ -210,7 +210,7 @@ theorem tensLocX_of (hI : LocInt) : TensLoc := by
   rw [Algebra.smul_def, ← Module.Basis.coord_apply]
   have hk2 := congrArg (algebraMap F E) (key k)
   push_cast at hk2 ⊢
-  simp only [map_mul, map_intCast] at hk2 ⊢
+  simp only [map_intCast] at hk2 ⊢
   linear_combination ((n : E) * B k) * hk2
 
 end PI.UnitaryGroupMassFormula.UJClassMass

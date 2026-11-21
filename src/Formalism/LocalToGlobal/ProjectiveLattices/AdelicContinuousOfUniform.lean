@@ -102,7 +102,7 @@ theorem bcEig {S T : Type} [CommRing S] [Algebra c.F S] [CommRing T] [Algebra c.
   rw [Category.assoc, h a, ← Category.assoc, ← Category.assoc, bcSp, bcSp]
   congr 2
   refine RingHom.ext fun d => TrivSqZeroExt.ext ?_ ?_ <;>
-    simp [dualMap, epsMul, TrivSqZeroExt.algebraMap_eq_inl, smul_eq_mul, map_mul, AlgHom.commutes]
+    simp [dualMap, epsMul, smul_eq_mul]
 
 theorem bcOver {S T : Type} [CommRing S] [Algebra c.F S] [CommRing T] [Algebra c.F T] (ψ : S →ₐ[c.F] T)
     {x : Sp S ⟶ Xo.X} (h : x ≫ Xo.s = sOf c S) : (spMap ψ.toRingHom ≫ x) ≫ Xo.s = sOf c T := by

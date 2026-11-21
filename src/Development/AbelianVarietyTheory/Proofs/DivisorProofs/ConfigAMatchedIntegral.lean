@@ -166,7 +166,7 @@ theorem fock_bridge : GlobalTheory.ThK.KP → ∀ (F E : Type) [Field F] [Number
     · intro v
       rw [h5 v]
       simp only [twAct, Bool.false_eq_true, if_false, LinearMap.comp_apply, negT_Eab, map_neg, LinearMap.neg_apply,
-        Matrix.transpose_single, neg_smul, neg_inj]
+        neg_smul, neg_inj]
     · intro v hv w
       obtain ⟨a1, a2⟩ := h6 v hv w
       refine ⟨fun i hi => ?_, fun j hj => ?_⟩

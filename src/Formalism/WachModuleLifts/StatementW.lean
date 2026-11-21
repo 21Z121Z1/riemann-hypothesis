@@ -133,7 +133,7 @@ def polyBase (p : ℕ) [Fact p.Prime] : Base p (Polynomial ℤ_[p]) where
   γA := AlgHom.id ℤ_[p] _
   π₀ := Polynomial.X
   q := Polynomial.X + Polynomial.C (p : ℤ_[p])
-  hq := by simp [Polynomial.algebraMap_apply]
+  hq := by simp
   hφ := ⟨1, by simp⟩
   comm := fun _ => rfl
 

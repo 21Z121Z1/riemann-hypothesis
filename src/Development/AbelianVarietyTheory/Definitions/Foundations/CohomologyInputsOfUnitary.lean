@@ -69,7 +69,7 @@ theorem gr_of_triv (W : R2 Ω l) (A : ValuationSubring Ω) (hW : ∀ s ∈ Dec (
   obtain ⟨x, hx⟩ := h
   refine ⟨x 1, fun s hs => ?_⟩
   rw [hx s hs]
-  simp [Matrix.mulVec, dotProduct, Fin.sum_univ_two, hW s hs]
+  simp [hW s hs]
 
 theorem strZero_of_grZero (W : R2 Ω l) (A : ValuationSubring Ω) (hW : ∀ s ∈ Dec (F := ℚ) A, mat W s 1 0 = 0)
     (h : GrZero W A) : StrZero W A := fun c hc hu ht => h c hc hu (gr_of_triv W A hW c ht)

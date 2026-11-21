@@ -174,7 +174,7 @@ lemma blkB_low (Z : X.Coord) (τ : X.Ψ) : blkB X (X.lowBlock Z τ) = Matrix.of 
   have hb := b.isLt
   have hne : X.p0 + (m : ℕ) ≠ (b : ℕ) := by omega
   first
-    | simp [blkB, Data.lowBlock, nI, Fin.ext_iff, hne, hb]
+    | simp [blkB, Data.lowBlock, nI, Fin.ext_iff, hne]
     | (simp only [blkB, Data.lowBlock, Matrix.of_apply, Fin.ext_iff, Fin.coe_castLE, nI]
        split_ifs <;> first | (simp_all; done) | omega | (congr 1 <;> ext <;> simp))
 

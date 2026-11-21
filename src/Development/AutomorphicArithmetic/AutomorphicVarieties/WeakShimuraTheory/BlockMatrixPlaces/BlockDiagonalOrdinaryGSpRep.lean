@@ -194,7 +194,7 @@ example {R : Type} [CommRing R] : Matrix.single 1 2 (1 : R) ∈ uM R := by
   · fin_cases i <;> fin_cases j <;> simp_all [lamW]
   · show adj _ = -_
     ext i j
-    fin_cases i <;> fin_cases j <;> simp [adj_apply, sgn, Fin.rev, Matrix.single_apply]
+    fin_cases i <;> fin_cases j <;> simp [adj_apply, sgn, Fin.rev]
 
 end UpperTheory.V.Ws.Bl
 

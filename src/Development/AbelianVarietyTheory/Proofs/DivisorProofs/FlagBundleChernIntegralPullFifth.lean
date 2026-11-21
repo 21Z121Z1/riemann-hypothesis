@@ -68,7 +68,7 @@ theorem alg_step (f : M → ℝ) (t : ℝ) (D α ψ : A.Fld) (hpos : ∀ y, 0 < 
   funext z
   have hz := (hpos z.pt).ne'
   simp only [Pi.mul_apply, Pi.sub_apply, Pi.add_apply, HolAtlas.fn, ← Algebra.smul_def]
-  simp only [sub_mul, add_mul, smul_mul_assoc, smul_add, smul_sub, mul_add]
+  simp only [sub_mul, add_mul, smul_mul_assoc, smul_add]
   match_scalars <;> push_cast <;> field_simp <;> ring
 
 end General
@@ -147,7 +147,7 @@ theorem pl_step : ∀ (k : Type) [CommRing k] (B Y : Scheme.{0}) [IsIntegral B] 
     obtain ⟨c1, s1, -⟩ := GlobalTheory.T.smooth_composition_form _ _ At f (Set.Ioi (-t)) (fun s => Real.log (s + t)) hfc hfs isOpen_Ioi
       (fun y => by simp only [Set.mem_Ioi]; linarith [hpos y])
       (Real.contDiffOn_log.comp (contDiff_id.add contDiff_const).contDiffOn fun s hs => by
-        simp only [Set.mem_Ioi] at hs; simp only [Set.mem_compl_iff, Set.mem_singleton_iff, id]; linarith)
+        simp only [Set.mem_Ioi] at hs; simp only [Set.mem_compl_iff, Set.mem_singleton_iff]; linarith)
     obtain ⟨-, -, g2F⟩ := GlobalTheory.T.smooth_composition_form _ _ At f (Set.Ioi (-t)) (fun s => t / (s + t) ^ 2) hfc hfs isOpen_Ioi
       (fun y => by simp only [Set.mem_Ioi]; linarith [hpos y])
       (contDiffOn_const.div ((contDiff_id.add contDiff_const).pow 2).contDiffOn fun s hs => by

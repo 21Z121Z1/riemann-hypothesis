@@ -50,7 +50,7 @@ theorem mem_conjI (σ : E →ₐ[F] E) {𝔠 : FractionalIdeal (𝓞 E)⁰ E} {s
   refine ⟨s, hs, ?_⟩
   have h : (IsLocalization.map E (conjO σ) (conjO_le σ) : E →+* E) = (σ : E →+* E) :=
     IsLocalization.ringHom_ext (𝓞 E)⁰ (RingHom.ext fun x => by
-      simp [IsLocalization.map_eq, conjO, RingOfIntegers.mapRingHom_apply])
+      simp [conjO, RingOfIntegers.mapRingHom_apply])
   exact congrFun (congrArg DFunLike.coe h) s
 
 end GlobalTheory.VacShift

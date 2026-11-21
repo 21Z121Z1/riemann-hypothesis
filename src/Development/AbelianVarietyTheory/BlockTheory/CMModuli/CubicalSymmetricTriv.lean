@@ -183,7 +183,7 @@ theorem existsUnique_isPairing (N : ℕ) {T : Over S} (x x' : T ⟶ G) (hx : x ^
       refine (Fintype.prod_sum_type _).trans (Eq.trans ?_ (Fintype.prod_empty _).symm)
       rw [hx, hx', mul_comm x' x]
       apply Additive.ofMul.injective
-      simp [Fin.prod_univ_succ, ofMul_mul, ofMul_inv, ofMul_zpow, ofMul_pow]
+      simp [Fin.prod_univ_succ, ofMul_mul, ofMul_inv, ofMul_pow]
       module)
     (LB.mulGen L.L _ _ _ _ u (LB.invGen L.L _ _ u'))
     (ReciprocityTheory.ChartRestriction.G.DVR.mulGen_isGen _ _ _ _ _ _ _ hu (ReciprocityTheory.ChartRestriction.G.DVR.invGen_isGen _ _ _ _ hu'))

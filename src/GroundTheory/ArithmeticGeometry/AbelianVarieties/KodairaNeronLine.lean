@@ -149,7 +149,7 @@ theorem exists_integral_line [DecidableEq K] {x₁ y₁ x₂ y₂ x₃ y₃ : �
   · simp only [map_add, map_sub, map_mul]; rw [e1, e3]; ring
   · simp only [map_add, map_sub, map_mul, map_pow]; rw [v1]; simp
   · have hN : N = ι y₁ - ι ℓ * ι x₁ := by rw [e1]; ring
-    simp only [map_add, map_sub, map_mul, map_pow, map_ofNat]; rw [v2, hN]; simp
+    simp only [map_add, map_sub, map_mul, map_ofNat]; rw [v2, hN]; simp
   · have hN : N = ι y₁ - ι ℓ * ι x₁ := by rw [e1]; ring
     simp only [map_add, map_sub, map_mul, map_pow]; rw [v3, hN]; simp
 

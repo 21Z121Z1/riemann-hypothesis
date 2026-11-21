@@ -295,7 +295,7 @@ theorem DiagOffFrame.proof : DiagOffFrame.Statement := by
           (DiagonalForms.isMultiHomog_X (ι := T.wwIdx ι ν κ) T.WBlk.det l) (isMultiHomog_Xbase_pow i N))
           (hG3 hF')) ?_
         funext b
-        cases b <;> simp [T.wwDeg, Pi.single_apply] <;> omega
+        cases b <;> simp [T.wwDeg] <;> omega
       · have h1 := congrArg (algebraMap Ω Φ) (hrv l k k')
         have h2 := congrArg (algebraMap Ω Φ) (hrv l' k k')
         simp only [map_mul, map_pow] at h1 h2

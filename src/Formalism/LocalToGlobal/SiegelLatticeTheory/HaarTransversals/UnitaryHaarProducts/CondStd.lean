@@ -68,7 +68,7 @@ theorem eq_psiStd (ψ : AddChar (AF F) ℂ) (h1 : IsCharAF F ψ) (h2 : Formalism
       first
         | exact InfinitePlace.Completion.extensionEmbedding_coe w a
         | exact InfinitePlace.Completion.extensionEmbedding_coe a
-        | simp [InfiniteAdeleRing]
+        | simp
     simp only [psiA, hw]
     first
       | rfl

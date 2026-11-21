@@ -18,13 +18,13 @@ theorem cn_notMem {l1 l2 : List α} (h : (l1 ++ l2).Nodup) {x : α} (hx : x ∈ 
 
 private theorem idxOf_cons_self_eq_zero (a : α) (l : List α) : (a :: l).idxOf a = 0 := by
   first
-  | simp [List.idxOf_cons]
+  | simp
   | exact List.idxOf_cons_self l
   | simp [List.idxOf, List.findIdx_cons]
 
 private theorem idxOf_cons_of_ne (a u : α) (h : a ≠ u) (l : List α) : (a :: l).idxOf u = l.idxOf u + 1 := by
   first
-  | simp [List.idxOf_cons, h]
+  | simp [h]
   | exact List.idxOf_cons_ne l h
   | simp [List.idxOf, List.findIdx_cons, h]
 

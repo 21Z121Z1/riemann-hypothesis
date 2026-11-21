@@ -52,7 +52,7 @@ theorem hom_eq_sum {n N : ℕ} {Lm : Submodule (𝓞 E) (Fin n → E)}
     funext b
     simp only [Submodule.coe_sum, Submodule.coe_smul, Finset.sum_apply, Pi.smul_apply]
     rw [Finset.sum_eq_single b (fun j _ hj => by simp [hj.symm]) (by simp)]
-    simp only [Algebra.smul_def, hu, Pi.single_eq_same, map_mul, map_natCast, eq_natCast, Nat.cast_id]
+    simp only [Algebra.smul_def, hu, Pi.single_eq_same, map_mul, map_natCast, eq_natCast]
     ring
   have h2 := congrArg (fun z => algebraMap (𝓞 E) E (f z)) h1
   simp only [map_smul, map_sum, smul_eq_mul, map_mul, map_natCast, hu] at h2

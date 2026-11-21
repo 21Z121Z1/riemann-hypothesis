@@ -256,7 +256,7 @@ def restrict (X : Submodule (𝓞 H.E) (V H n)) (B : Bal H n) :
       (fun a a' b => by simp [bil]) (fun z a b => by
         simp only [bil, Submodule.coe_smul_of_tower, map_zsmul, LinearMap.smul_apply])
       (fun a b b' => by simp [bil]) (fun z a b => by
-        simp only [bil, Submodule.coe_smul_of_tower, map_zsmul, LinearMap.smul_apply]),
+        simp only [bil, Submodule.coe_smul_of_tower, map_zsmul]),
     fun a b => B.2.1 _ _,
     fun c c' h a b => by
       change bil B (toR H n (c • (a : V H n))) (toR H n b) = bil B (toR H n a) (toR H n (c' • (b : V H n)))

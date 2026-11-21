@@ -140,7 +140,7 @@ lemma eta6Mult_neg_one : eta6Mult (-1) = -1 := by
 def eta6Group : Subgroup SL(2, ℤ) := eta6Mult.toHomUnits.ker
 
 lemma mem_eta6Group (γ : SL(2, ℤ)) : γ ∈ eta6Group ↔ eta6Mult γ = 1 := by
-  simp [eta6Group, MonoidHom.mem_ker, Units.ext_iff]
+  simp [eta6Group, MonoidHom.mem_ker]
 
 lemma T_pow_four_mem_eta6Group : ModularGroup.T ^ 4 ∈ eta6Group := by
   rw [mem_eta6Group, map_pow, eta6Mult_T_eq_I, I_pow_four]

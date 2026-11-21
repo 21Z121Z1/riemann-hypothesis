@@ -19,8 +19,8 @@ def exampleCass : CassData (Multiplicative ℤ) where
   isClosed_N := isClosed_discrete _
   isClosed_Nm := isClosed_discrete _
   isClosed_alt := isClosed_discrete _
-  norm_N t _ := Subgroup.mem_normalizer_iff.2 fun h => by simp [mul_comm]
-  norm_Nm t _ := Subgroup.mem_normalizer_iff.2 fun h => by simp [mul_comm]
+  norm_N t _ := Subgroup.mem_normalizer_iff.2 fun h => by simp
+  norm_Nm t _ := Subgroup.mem_normalizer_iff.2 fun h => by simp
   fact_low x hx := ⟨1, one_mem _, 1, one_mem _, 1, one_mem _, by simpa using hx⟩
   fact_up x hx := ⟨1, one_mem _, 1, one_mem _, 1, one_mem _, by simpa using hx⟩
 

@@ -127,7 +127,7 @@ theorem exists_affine_smooth_prime : ∀ (k : Type) [CommRing k] (X : Scheme.{0}
         IsScalarTower.algebraMap_apply ℂ Γ(Y, V) (Γ(Y, V) ⧸ Q), Ideal.Quotient.algebraMap_eq,
         Ideal.Quotient.algebraMap_eq, Ideal.Quotient.algebraMap_quotient_map_quotient]
       congr 1
-      simp only [RingHom.algebraMap_toAlgebra, hres, ReciprocityTheory.ChartRestriction.G.DVR.FlatBC.algX, RingHom.comp_apply]
+      simp only [RingHom.algebraMap_toAlgebra, ReciprocityTheory.ChartRestriction.G.DVR.FlatBC.algX, RingHom.comp_apply]
       change _ = ((Scheme.ΓSpecIso (CommRingCat.of ℂ)).inv ≫ q.appLE ⊤ V _ ≫
         Y.presheaf.map (homOfLE hWV).op).hom c
       have e1 : q.appLE ⊤ V (by simp) ≫ Y.presheaf.map (homOfLE hWV).op = q.appLE ⊤ W (by simp) :=

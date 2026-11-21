@@ -146,7 +146,7 @@ theorem coord_self (b : Module.Basis (Fin g) R (H 1)) (i : Fin g) : b.coord i (b
 
 theorem coord_ne (b : Module.Basis (Fin g) R (H 1)) {i j : Fin g} (h : i ≠ j) :
     b.coord i (b j) = 0 := by
-  simp [Module.Basis.coord_apply, Finsupp.single_apply, h, h.symm]
+  simp [Module.Basis.coord_apply, h]
 
 theorem eq_zero_of_iter
     (hD : ∀ n l x z, D (n + 1) l (L (n + 1) x z) = l x • τ (n + 1) z - L n x (D n l z))

@@ -114,7 +114,7 @@ theorem topU_eq (A : Type) [CommRing A] [Algebra F A] [TopologicalSpace A] [IsTo
       simp only [← crdA_eq]
       exact continuous_iff_le_induced.2 (iInf_le_of_le a (iInf_le_of_le b (iInf_le _ φ)))
     refine continuous_iff_le_induced.1 (Units.continuous_iff.2 ⟨hv, ?_⟩)
-    simp only [Function.comp_def, inv_eq_adjoint]
+    simp only [inv_eq_adjoint]
     exact (continuous_const.matrix_mul (hv.matrix_map (continuous_sigR A)).matrix_transpose).matrix_mul
       continuous_const
   · refine le_iInf fun a => le_iInf fun b => le_iInf fun φ => continuous_iff_le_induced.1 ?_

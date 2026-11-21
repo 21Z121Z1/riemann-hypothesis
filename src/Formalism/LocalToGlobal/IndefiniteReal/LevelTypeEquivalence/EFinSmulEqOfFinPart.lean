@@ -21,7 +21,7 @@ theorem actO_smul (c : AF D.host.F) (g : GA D S) (h : GA D T) (x : WO S T) :
 theorem actO_add (g : GA D S) (h : GA D T) (x y : WO S T) :
     actO S T g h (x + y) = actO S T g h x + actO S T g h y := by
   unfold actO
-  simp [Matrix.mul_add, Matrix.add_mul, smul_add]
+  simp [Matrix.mul_add, Matrix.add_mul]
 
 theorem actO_inv (g : GA D S) (h : GA D T) (x : WO S T) : actO S T g h (actO S T g⁻¹ h⁻¹ x) = x := by
   unfold actO

@@ -486,7 +486,7 @@ theorem smooth_turn (L : LocBessel k r) (ka : ℝ) {v : L.Hs} (hv : v ∈ PI.Upq
   let Φ : Matrix (Fin (2 * r + k + 1)) (Fin (2 * r + k + 1)) ℂ →ₗ[ℝ] Matrix (Fin (2 * r + k + 1)) (Fin (2 * r + k + 1)) ℂ :=
     { toFun := fun g => tT k r * g * tTi k r
       map_add' := by intro a b; simp [Matrix.mul_add, Matrix.add_mul]
-      map_smul' := by intro c a; simp [Matrix.mul_smul, Matrix.smul_mul] }
+      map_smul' := by intro c a; simp }
   have hcont : Continuous fun g : Matrix (Fin (2 * r + k + 1)) (Fin (2 * r + k + 1)) ℂ => tT k r * g * tTi k r :=
     (LinearMap.toContinuousLinearMap Φ).continuous
   simp only [PI.UpqRep.smoothVecs, Set.mem_setOf_eq, PI.UpqRep.IsSmoothVec] at hv ⊢

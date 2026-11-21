@@ -106,7 +106,7 @@ theorem eJ (a : Fin (r + 1) → ℝ) (γ : ℝ) :
   congr 1
   simp only [mul_add, Finset.sum_add_distrib, ← Finset.mul_sum, ← sum_jac]
   push_cast
-  simp only [Finset.mul_sum, Finset.sum_sub_distrib, Finset.sum_add_distrib, Finset.sum_neg_distrib]
+  simp only [Finset.mul_sum]
   ring_nf
   try simp only [Finset.sum_sub_distrib, Finset.sum_neg_distrib]
   rw [show ∑ x : Fin r, ((x : ℕ) : ℝ) * γ * 4 = ∑ x : Fin r, γ * ((x : ℕ) : ℝ) * 4 from

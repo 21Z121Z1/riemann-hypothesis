@@ -178,9 +178,9 @@ theorem opPow_eqOn (X Y : Fin n → Fin n → Matrix (Fin n) (Fin n) ℂ) (σ : 
     intro z hz
     by_cases hab : a = b
     · subst hab
-      simp [opPow, Matrix.one_apply, hFG hz]
+      simp [opPow, hFG hz]
     · have hs : σ a ≠ σ b := fun h => hab (σ.injective h)
-      simp [opPow, Matrix.one_apply, hab, hs]
+      simp [opPow, hab, hs]
   | succ k ih =>
     intro z hz
     have hterm : ∀ d, Lhol (Y a d) (opPow (fun a b => Lhol (Y a b)) k d b F) z =

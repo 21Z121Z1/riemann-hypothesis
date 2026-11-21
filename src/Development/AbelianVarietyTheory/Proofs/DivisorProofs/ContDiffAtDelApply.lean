@@ -13,7 +13,7 @@ variable {E : Type} [NormedAddCommGroup E] [NormedSpace ℂ E] [NormedSpace ℝ 
 
 theorem angleForm_smul (n : ℕ) (a a' : E → ℝ) (q : E → ℂ) (ξ z : E) (c : ℂ) :
     angleForm n a a' q (c • ξ) z = c * angleForm n a a' q ξ z := by
-  simp only [angleForm, ContinuousLinearMap.map_smul, ContinuousLinearMap.map_smulₛₗ, smul_eq_mul,
+  simp only [angleForm, ContinuousLinearMap.map_smulₛₗ, smul_eq_mul,
     map_sub, map_mul, Complex.conj_conj, RingHom.id_apply]
   ring
 

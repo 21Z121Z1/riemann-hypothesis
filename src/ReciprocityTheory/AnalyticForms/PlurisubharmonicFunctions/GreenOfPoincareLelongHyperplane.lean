@@ -89,8 +89,7 @@ theorem green_of_poincareLelongHyperplane (h : PoincareLelongHyperplane) (u : (F
       simp [densHyp, ReciprocityTheory.AnForm.maDens, ReciprocityTheory.AnForm.mdisc]
     rw [e1, e2, mul_one]
   simp_rw [hw]
-  simp [MeasureTheory.integral_const, MeasureTheory.volume_pi, MeasureTheory.measureReal_def,
-    MeasureTheory.Measure.pi_univ]
+  simp [MeasureTheory.integral_const, MeasureTheory.volume_pi, MeasureTheory.measureReal_def]
 
 end
 

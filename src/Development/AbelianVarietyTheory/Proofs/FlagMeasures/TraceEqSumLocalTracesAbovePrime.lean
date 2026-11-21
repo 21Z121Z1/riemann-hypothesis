@@ -88,7 +88,7 @@ theorem ker_isPrime (σ : F →+* Ω) : (ker σ).IsPrime := by
     rw [mem_ker] at hab
     by_contra h
     rw [not_or, mem_ker, mem_ker, not_lt, not_lt] at h
-    simp only [RingOfIntegers.coe_eq_algebraMap, map_mul, norm_mul] at hab
+    simp only [map_mul, norm_mul] at hab
     nlinarith [h.1, h.2]
 
 theorem norm_le_one (σ : F →+* Ω) (p : HeightOneSpectrum (𝓞 F)) (hp : p.asIdeal = ker σ)

@@ -130,7 +130,7 @@ def sys0 (ζ : o) (hζ : IsPrimitiveRoot ζ ((3 * 81) ^ 2)) (hu : IsUnit ((3 * 8
   unit := hu
   J := Unit
   ρ := fun _ => 1
-  ρ_one := fun _ _ => Subsingleton.elim _ _ |> fun (_ : () = ()) => by ext i j; simp [Matrix.one_apply]
+  ρ_one := fun _ _ => Subsingleton.elim _ _ |> fun (_ : () = ()) => by ext i j; simp
   ρ_mul := fun _ _ => ⟨0, by simp⟩
   ρ_add := fun _ _ _ => by simp
   th := fun _ => 1

@@ -15,7 +15,7 @@ variable {F : Type} [Field F] [ValuativeRel F] [TopologicalSpace F] [IsNonarchim
 theorem isUnit1_mul {μ ν : Fˣ →* ℂˣ} (hμ : IsUnit1 μ) (hν : IsUnit1 ν) : IsUnit1 (μ * ν) := by
   refine ⟨?_, fun x => ?_⟩
   · exact hμ.1.mul hν.1
-  · simp [MonoidHom.mul_apply, Units.val_mul, norm_mul, hμ.2 x, hν.2 x]
+  · simp [MonoidHom.mul_apply, Units.val_mul, hμ.2 x, hν.2 x]
 
 theorem isUnit1_inv {μ : Fˣ →* ℂˣ} (hμ : IsUnit1 μ) : IsUnit1 μ⁻¹ := by
   refine ⟨?_, fun x => ?_⟩

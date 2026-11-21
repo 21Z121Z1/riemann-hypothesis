@@ -63,7 +63,7 @@ theorem eAt_smul_of_mem {d : ℕ} (W : Spc F E d) (v : Pl F) {z : Fin d → AE F
 theorem smul_mulVec' {d : ℕ} (u : AF F) (M : Matrix (Fin d) (Fin d) (AE F E)) (z : Fin d → AE F E) :
     (u • M) *ᵥ z = u • (M *ᵥ z) := by
   funext i
-  simp [Matrix.mulVec, dotProduct, Finset.smul_sum, smul_mul_assoc]
+  simp [Matrix.mulVec, dotProduct, Finset.smul_sum]
 
 theorem mulVec_mem_latAt {d : ℕ} (W : Spc F E d) (v : Pl F) (M : Matrix (Fin d) (Fin d) (AE F E))
     (hM : At (evFin F v) (M - 1)) (hL : ∀ z ∈ latHat W, M *ᵥ z ∈ latHat W) {z : Fin d → AE F E}

@@ -93,7 +93,7 @@ theorem restr_unitary (hPI : P * I = 1) (hc : Iᵀ * Jd = J₁ * P.map c) (hd : 
 
 theorem vecMulVec_mulVec_comm (w : Fin d → R) (v z : Fin d₁ → R) : vecMulVec w v *ᵥ z = (v ⬝ᵥ z) • w := by
   ext i
-  simp only [mulVec, vecMulVec, dotProduct, of_apply, Pi.smul_apply, smul_eq_mul, Finset.sum_mul, Finset.mul_sum]
+  simp only [mulVec, vecMulVec, dotProduct, of_apply, Pi.smul_apply, smul_eq_mul, Finset.sum_mul]
   exact Finset.sum_congr rfl fun j _ => by ring
 
 end Alg

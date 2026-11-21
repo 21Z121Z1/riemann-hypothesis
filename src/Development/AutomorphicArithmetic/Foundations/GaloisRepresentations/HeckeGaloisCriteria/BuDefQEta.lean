@@ -74,7 +74,7 @@ theorem NP_tr (Y : G.LatInst D) (u : D.what₂.Word) (w : D.what₂.places.Pl)
   have e1 : G.bL (ledTr Λ L) = G.bL L := rfl
   have e2 : ∀ a b p t, G.Sv (instTr Λ X) K a b p t = G.Sv X K a b p t := fun _ _ _ _ => rfl
   unfold G.NP
-  simp only [e0, e1, e2, VV_tr, tau_translate]
+  simp only [e0, e1, VV_tr, tau_translate]
   rfl
 
 end Local

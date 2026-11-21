@@ -65,7 +65,7 @@ theorem exists_isCorrForm_diag : GlobalTheory.Published.AbelianDeRham → ∀ (F
       RingHom.id_apply, e, push_push _ _ _ (lift_fst _ _), push_push _ _ _ (lift_snd _ _),
       push_push _ _ _ (lift_fst _ _), push_push _ _ _ (lift_snd _ _), push_id, LinearMap.id_apply,
       LinearMap.id_apply, anti x y, LinearMap.smul_apply, LinearMap.smul_apply, two_smul]
-    simp only [LinearMap.add_apply, sub_neg_eq_add]
+    simp only [sub_neg_eq_add]
   rw [h2]
   exact hψ'
 

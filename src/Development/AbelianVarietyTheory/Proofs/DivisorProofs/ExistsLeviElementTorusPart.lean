@@ -178,7 +178,7 @@ theorem exists_levi : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numb
     rw [h1, Matrix.mul_one]
     ext i j
     have e : (fun k => incM F H'.ι k j) = incV F (H'.ι *ᵥ Pi.single j 1) := by
-      funext k; simp [incV, incM, Matrix.mulVec_single_one]
+      funext k; simp [incV, incM]
     have hz : fR c (incM F W.J) (fun k => incM F H'.ι k j) (incV F H'.x) = 0 := by
       rw [e, fR_inc, (hH.orth _).1, map_zero]
     have hz' : fR c (incM F W.J) (fun k => incM F H'.ι k j) (incV F H'.y) = 0 := by

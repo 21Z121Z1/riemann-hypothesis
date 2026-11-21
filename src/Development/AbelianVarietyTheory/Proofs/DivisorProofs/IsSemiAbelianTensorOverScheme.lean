@@ -151,10 +151,10 @@ theorem torusExtension_of_prod {K : Type} [Field K] {G G₁ G₂ : Over (Spec (.
   refine IsPullback.of_iso key (asIso (lift (SplitTorusPow.torusMap _ (AddMonoidHom.inl E₁.X E₂.X))
     (SplitTorusPow.torusMap _ (AddMonoidHom.inr E₁.X E₂.X)))).symm (asIso (lift a₁ a₂)).symm
     (Iso.refl _) (Iso.refl _) ?_ ?_ ?_ ?_
-  · simp only [Iso.refl_hom, Category.comp_id, Iso.symm_hom, asIso_inv, Category.assoc, IsIso.inv_hom_id]
+  · simp only [Iso.symm_hom, asIso_inv]
     simp only [← Category.assoc, IsIso.inv_hom_id, Category.id_comp]
   · exact toUnit_unique _ _
-  · simp only [Iso.refl_hom, Category.comp_id, Iso.symm_hom, asIso_inv, Category.assoc, IsIso.inv_hom_id_assoc]
+  · simp only [Iso.refl_hom, Category.comp_id, Iso.symm_hom, asIso_inv, IsIso.inv_hom_id_assoc]
   · simp only [Iso.refl_hom, Category.comp_id, Category.id_comp]
 
 theorem isSemiAbelian_tensor : ∀ (S : Scheme.{0}) (G₁ G₂ : Over S) [GrpObj G₁] [GrpObj G₂], IsSemiAbelian G₁ → IsSemiAbelian G₂ → IsSemiAbelian (G₁ ⊗ G₂) := by

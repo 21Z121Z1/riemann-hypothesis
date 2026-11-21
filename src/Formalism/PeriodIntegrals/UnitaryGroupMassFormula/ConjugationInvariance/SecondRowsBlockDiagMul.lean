@@ -69,7 +69,7 @@ theorem conj_mem (O : Subring F) (ϖ : F) (h : GL (Fin a) F) (hh : h ∈ Formali
       ((h⁻¹ : GL (Fin a) F) : Matrix (Fin a) (Fin a) F) * (ϖ⁻¹ • ((g : Matrix (Fin a) (Fin a) F) - 1)) *
         (h : Matrix (Fin a) (Fin a) F) := by
     simp only [Units.val_mul, Matrix.mul_smul, Matrix.smul_mul, Matrix.mul_sub, Matrix.sub_mul,
-      Matrix.mul_one, Matrix.one_mul, Matrix.mul_assoc, Units.inv_mul]
+      Matrix.mul_one, Matrix.mul_assoc, Units.inv_mul]
   show h⁻¹ * g * h ∈ Formalism.DoubleCosetMeasures.GLint O a ∧
     ∀ i j, (ϖ⁻¹ • (((h⁻¹ * g * h : GL (Fin a) F) : Matrix (Fin a) (Fin a) F) - 1)) i j ∈ O
   refine ⟨hmem, ?_⟩

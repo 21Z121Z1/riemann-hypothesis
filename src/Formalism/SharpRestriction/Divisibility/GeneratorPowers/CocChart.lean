@@ -147,7 +147,7 @@ theorem coc_chart (hP1 : ExpGJ.PhOneValSt) (hP2 : ExpGJ.PhTwoValSt) (hAd : ExpGJ
   rw [hU']
   ring_nf
   apply Additive.ofMul.injective
-  simp only [ofMul_mul, ofMul_inv, ofMul_pow, ofMul_zpow]
+  simp only [ofMul_mul, ofMul_inv, ofMul_pow]
   abel
 
 end Formalism.MainNotions.ModuliIntegralCharts.H1.ExpGL

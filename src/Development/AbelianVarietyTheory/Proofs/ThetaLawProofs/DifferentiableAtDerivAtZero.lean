@@ -203,7 +203,7 @@ private lemma eighthPower_slash_S :
   ext τ
   rw [ModularForm.SL_slash_apply, ModularGroup.denom_S, UpperHalfPlane.modular_S_smul]
   unfold _root_.GlobalTheory.JacobiDeriv.eighthPower
-  simp only [UpperHalfPlane.coe_mk]
+  simp only
   have hτ : (τ : ℂ) ≠ 0 := τ.ne_zero
   set t : ℂ := (τ : ℂ) with ht
   rw [derivAtZero_neg_inv t hτ]

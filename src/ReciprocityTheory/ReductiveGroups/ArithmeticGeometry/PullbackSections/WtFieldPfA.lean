@@ -87,7 +87,7 @@ theorem wtfA_fst_epsMul (a : S) :
   ext r <;> simp [epsMul]
 
 theorem wtfA_epsMul_mul (a b : S) : (epsMul a).comp (epsMul b) = epsMul (a * b) := by
-  ext r <;> simp [epsMul, mul_assoc, smul_smul]
+  ext r <;> simp [epsMul]
 
 theorem wtfA_epsMul_zero :
     epsMul (0 : S) = (algebraMap S (DualNumber S)).comp (TrivSqZeroExt.fstHom S S S).toRingHom := by

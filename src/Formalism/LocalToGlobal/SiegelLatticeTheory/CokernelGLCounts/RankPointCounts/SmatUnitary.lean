@@ -36,7 +36,7 @@ private theorem conjTranspose_mul_J_one_add_mul_eq_one_add (J : Matrix (Fin n) (
     intro m _ X
     rw [← Matrix.mul_assoc, ← Matrix.mul_assoc, hF, Matrix.one_mul]
   have key2 : Fᴴ * (J * F) = 1 := by rw [← Matrix.mul_assoc, hF]
-  simp only [Matrix.mul_add, Matrix.add_mul, Matrix.mul_one, Matrix.one_mul, Matrix.mul_assoc, key, key2]
+  simp only [Matrix.mul_add, Matrix.add_mul, Matrix.mul_one, Matrix.mul_assoc, key, key2]
 
 private theorem conjTranspose_one_add_mul_J_mul_eq_J (J : Matrix (Fin n) (Fin n) ℂ) (F : Matrix (Fin n) (Fin k) ℂ)
     (D : Matrix (Fin k) (Fin k) ℂ) (hJh : Jᴴ = J) (hF : Fᴴ * J * F = 1) (hD : D + Dᴴ + Dᴴ * D = 0) :

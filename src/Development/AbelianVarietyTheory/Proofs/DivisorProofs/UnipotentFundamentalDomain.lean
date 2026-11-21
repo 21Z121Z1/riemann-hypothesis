@@ -37,7 +37,7 @@ theorem exists_haar_unipSp_mass_one : ∀ (F E : Type) [Field F] [NumberField F]
     simp only [form, dotProduct, Matrix.mulVec, map_sum, map_mul, hσ, map_zero, mul_zero] at h
     rw [Matrix.zero_apply, ← h]
     simp only [Formalism.UG.cT, Matrix.mul_apply, Matrix.transpose_apply, Matrix.map_apply, Matrix.smul_apply, smul_eq_mul,
-      Matrix.zero_apply, Finset.sum_mul, Finset.mul_sum, RingHom.coe_coe]
+      Finset.sum_mul, Finset.mul_sum, RingHom.coe_coe]
     rw [Finset.sum_comm]
     refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun i' _ => by ring
   have hmem := GlobalTheory.UnipMatch.mem_unipSp_iff F E σ hσ B d W r s hW c hc j Y hiso

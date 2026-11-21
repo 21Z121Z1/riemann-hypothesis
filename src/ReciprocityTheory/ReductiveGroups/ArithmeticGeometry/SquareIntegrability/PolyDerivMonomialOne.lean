@@ -72,7 +72,7 @@ def colL {n : ℕ} (L : List (Fin n × W)) (k : Fin n) : List W :=
 theorem colL_cons {n : ℕ} (a : Fin n × W) (L : List (Fin n × W)) (k : Fin n) :
     colL (a :: L) k = if a.1 = k then a.2 :: colL L k else colL L k := by
   unfold colL
-  by_cases h : a.1 = k <;> simp [List.filter_cons, h]
+  by_cases h : a.1 = k <;> simp [h]
 
 theorem itD_prod {n : ℕ} {g : Fin n → W → ℂ} (hg : ∀ k, ContDiff ℂ (⊤ : ℕ∞) (g k))
     (L : List (Fin n × W)) (x : Fin n → W) :

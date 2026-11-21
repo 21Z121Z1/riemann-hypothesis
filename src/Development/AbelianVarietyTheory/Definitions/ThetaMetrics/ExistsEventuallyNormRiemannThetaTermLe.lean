@@ -621,7 +621,7 @@ theorem riemannTheta_half_neg (α β : ι → ℤ) (Ω : Matrix ι ι ℂ) (v : 
     simp
   rw [this]
   congr 1
-  simp only [dotProduct, Finset.mul_sum, Finset.sum_mul, Pi.neg_apply]
+  simp only [dotProduct, Finset.mul_sum, Pi.neg_apply]
   push_cast
   rw [Finset.sum_mul]
   exact Finset.sum_congr rfl fun i _ => by ring
@@ -869,7 +869,7 @@ example (z τ : ℂ) : jacobiTheta₂ (z + τ) τ = cexp (-π * I * (τ + 2 * z)
   have := riemannTheta_add_mulVec_intCast hs 0 0 ![z] (fun _ => 1)
   rw [riemannTheta_unique_zero_zero, riemannTheta_fin_one] at this
   convert this using 3
-  · simp [mulVec, dotProduct]
+  · simp [dotProduct]
   · simp
   · simp [mulVec, dotProduct]
     ring

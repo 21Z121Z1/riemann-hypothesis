@@ -18,7 +18,7 @@ theorem eq_zero_of_congr_one {n : ℕ} {ι : Type} [Fintype ι] [DecidableEq ι]
   obtain ⟨z, hxz⟩ : ∃ z, x = A *ᵥ z :=
     ⟨(M * A.map star)ᵀ *ᵥ x, by rw [Matrix.mulVec_mulVec, h2, Matrix.one_mulVec]⟩
   have hstar : star (A *ᵥ z) = A.map star *ᵥ star z := by
-    ext i; simp [Matrix.mulVec, dotProduct, star_sum, mul_comm]
+    ext i; simp [Matrix.mulVec, dotProduct, star_sum]
   have key : x ⬝ᵥ M *ᵥ star x = z ⬝ᵥ star z := by
     rw [hxz, hstar, Matrix.mulVec_mulVec, ← Matrix.vecMul_transpose A z, Matrix.dotProduct_mulVec,
       Matrix.vecMul_vecMul, ← Matrix.mul_assoc, h1, Matrix.vecMul_one]

@@ -171,7 +171,7 @@ theorem cV_embInf (v w : InfinitePlace E) (y : GL (Fin n) ℂ) :
   by_cases h : w = v
   · subst h
     simp
-  · simp [h, Pi.mulSingle_eq_of_ne h]
+  · simp [h]
 
 theorem pFin_embInf (v : InfinitePlace E) (y : GL (Fin n) ℂ) :
     GeneralLinearGroup.map (pFin E) (embInf n v y) = 1 := by

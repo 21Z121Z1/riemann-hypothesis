@@ -94,7 +94,7 @@ theorem core (C : Matrix (Fin n) (Fin r) A) (N : Matrix (Fin r) (Fin n) A) (T : 
       refine ⟨a + (N * C) *ᵥ a, fun l hl => ?_, ?_⟩
       · rw [Pi.add_apply, ha l hl, supp_mulVec P hPt _ hQ j a (fun l h => ha l h) l hl, add_zero]
       · rw [hD]
-        simp only [mulVec_add, mulVec_mulVec, Matrix.mul_assoc]
+        simp only [mulVec_add, mulVec_mulVec]
     · rintro ⟨b, hb, hy⟩
       have hd : N *ᵥ y + (N * C) *ᵥ (N *ᵥ y) = (N * C) *ᵥ b := by
         rw [← mulVec_mulVec, ← mulVec_add, ← hD, ← hy, mulVec_mulVec]

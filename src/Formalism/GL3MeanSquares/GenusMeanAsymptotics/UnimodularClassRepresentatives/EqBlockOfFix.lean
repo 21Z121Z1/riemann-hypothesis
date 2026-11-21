@@ -53,7 +53,7 @@ theorem eq_block_of_fix {H' : Matrix κ κ A} {Y : Matrix (Unit ⊕ κ) (Unit �
 theorem form_col {H X : Matrix (Unit ⊕ κ) (Unit ⊕ κ) A} (hX : Xᴴ * H * X = H)
     (h00 : H (Sum.inl ()) (Sum.inl ()) = 1) : star (X *ᵥ e₀) ⬝ᵥ (H *ᵥ (X *ᵥ e₀)) = 1 := by
   rw [star_mulVec, ← dotProduct_mulVec, mulVec_mulVec, mulVec_mulVec, hX]
-  simp [e₀, mulVec_single_one, dotProduct, Fintype.sum_sum_type, h00]
+  simp [e₀, dotProduct, Fintype.sum_sum_type, h00]
 
 theorem card_split [Finite A] (H' : Matrix κ κ A)
     (htr : ∀ x : Unit ⊕ κ → A, star x ⬝ᵥ (HH H' *ᵥ x) = 1 →

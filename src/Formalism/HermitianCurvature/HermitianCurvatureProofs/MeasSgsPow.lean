@@ -162,7 +162,7 @@ theorem orb_gN (hJC : JF.JConv) {Wp Wq : Type} [NormedAddCommGroup Wp] [InnerPro
     ext
     simp [B.rho, trivS]
   have e2 : ‖fZ (k := k) (r := r) b (B.sgs p γ)‖ = ‖B.gN (B.sgs p γ) ^ (-b)‖ := by
-    simp [fZ, norm_smul, Complex.norm_real]
+    simp [fZ, norm_smul]
   rw [← e2, ← e]
   exact hp
 

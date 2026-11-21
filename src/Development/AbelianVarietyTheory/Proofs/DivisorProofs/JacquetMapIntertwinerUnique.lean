@@ -40,7 +40,7 @@ theorem val_mem (ν β : kˣ →* ℂˣ) (a b : ℕ) (F : PSp ν β a b) : indSc
     rw [h]
     obtain ⟨c, hc⟩ := (TensorProduct.lid ℂ ℂ).symm.surjective (F.1.1 x)
     rw [← hc]
-    simp only [MonoidHom.coe_comp, Function.comp_apply, twist_apply, MonoidHom.coe_coe]
+    simp only [MonoidHom.coe_comp, Function.comp_apply, twist_apply]
     simp [parChar, detRep, ofChar_apply]
     ring
 

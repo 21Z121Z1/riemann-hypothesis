@@ -659,7 +659,7 @@ theorem exists_lift [FiniteDimensional K V] (N : NF H r) (h0 : II N.F N.F' ⊓ N
     intro u hu
     have hsu := hsII u hu
     rw [hfa, levi_apply, p_II N h0 hu, q_X N (hIIX u hu)]
-    simp only [sub_self, sub_zero, map_zero, add_zero, LinearEquiv.coe_coe]
+    simp only [sub_self, map_zero, add_zero, LinearEquiv.coe_coe]
     exact htr _ (hermFlag_isotropicPart_orthogonal_anisotropicVector N.F (hIIX _ hsu)) (orth_X N.F (hIIX _ hsu) (hIIX d hdII))
   have hfXa : ∀ u ∈ N.F.Xa N.j, f u = s u := by
     intro u hu

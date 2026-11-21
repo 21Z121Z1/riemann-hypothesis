@@ -42,7 +42,7 @@ theorem hasDerivAt_prod_ofFn : ∀ (F E : Type) [Field F] [NumberField F] [Field
     refine List.ofFn_inj.2 (funext fun j => ?_)
     by_cases h : j = i
     · subst h; simp
-    · simp [Pi.single_apply, h, h1]
+    · simp [h, h1]
   have hpart : ∀ i, fderiv ℝ Φ 0 (Pi.single i 1) = lineDer (δ i) f g := fun i => by
     have hs : HasDerivAt (fun s : ℝ => (Pi.single i s : Fin k → ℝ)) (Pi.single i 1) 0 := by
       refine hasDerivAt_pi.2 fun j => ?_

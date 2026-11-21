@@ -23,7 +23,7 @@ private def lineMap {k : ℕ} (c : Fin k → R) : EpsAlg R k →ₐ[R] DualNumbe
         MvPolynomial (Fin k) R →ₐ[R] DualNumber R) := by
       rw [sqIdeal, Ideal.span_le]
       rintro _ ⟨a, rfl⟩
-      simp [RingHom.mem_ker, sq, TrivSqZeroExt.inr_mul_inr]
+      simp [RingHom.mem_ker, sq]
     exact this hp)
 
 private theorem lineMap_mk {k : ℕ} (c : Fin k → R) (p : MvPolynomial (Fin k) R) :
@@ -52,7 +52,7 @@ private theorem snd_aeval {k : ℕ} (a : Fin k) (p : MvPolynomial (Fin k) R) :
     by_cases h : n = a
     · subst h; simp
     · have : n ∉ (Finsupp.single a 1).support := by simp [h]
-      simp [this, h]
+      simp [h]
 
 private theorem degree_topMon (k : ℕ) : Finsupp.degree (topMon k) = k := by
   simp [topMon, map_sum]
