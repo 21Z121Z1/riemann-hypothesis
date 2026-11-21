@@ -3,6 +3,7 @@ import ReciprocityTheory.DualLattices.EvHtStatement
 import ReciprocityTheory.DualLattices.CharR
 import ReciprocityTheory.DualLattices.DualPairInh
 import ReciprocityTheory.DualLattices.IsPairingValueAddRight
+import ReciprocityTheory.DualLattices.NilSurjOfSqZero
 
 noncomputable section
 

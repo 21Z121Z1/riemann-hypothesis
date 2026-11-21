@@ -2,6 +2,7 @@ import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DifferentiableAtOrbit
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.KFiniteVectorsIrreducibleUnitaryUnitaryGroupPQ
+import Development.WeilBound.HeckeVectors.SmoothVectors.SobolevApproximation.GelfandCentralHolds
 
 noncomputable section
 
