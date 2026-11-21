@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChiAlgUnitInert
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DeterminantIdealNormOneAndCharUnitarySmulStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SystemWeightsEqShiftedCharacterExponentsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormLambdaCharacterNormOneIdeleEqPPowStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeTuplePointDetNormOneOrderEqNegLengthStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LatticeTuplePointDetNormOneOrderEqNegLength
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MInvFdOfCharts
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepAdmRec
 import Formalism.LocalToGlobal.InertKernelTheory.ScalG
@@ -37,8 +37,8 @@ theorem scal_of_pos_pair : Sites (fun {D L hT Gi Gl Kc Dx cX ex u μ w hg Lv I H
   obtain ⟨hN, hN', hsd, hsd'⟩ := hAdm
   obtain ⟨ha, -, hu⟩ := chi_alg_unit_inert D _ S.lam t.χ hχ hp2 hIn _ (GlobalTheory.T.determinantIdeal_normOne_char_unitary_smul D t.χ hχ _ _ hN hsd).1
   obtain ⟨ha', -, hu'⟩ := chi_alg_unit_inert D _ S.lam t.χ hχ hp2 hIn _ (GlobalTheory.T.determinantIdeal_normOne_char_unitary_smul D t.χ hχ _ _ hN' hsd').1
-  obtain ⟨hU0, hord0⟩ := GlobalTheory.T.lattice_det_mem_U1_and_ordA_eq_neg_len S hD hS j hj'.le L0 hL0lat
-  obtain ⟨hU1, hord1⟩ := GlobalTheory.T.lattice_det_mem_U1_and_ordA_eq_neg_len S hD hS (j + 1) hj' La' hLa'
+  obtain ⟨hU0, hord0⟩ := _root_.GlobalTheory.TwV.Xc.latticeTuplePoint_det_normOne_order_eq_neg_length S hD hS j hj'.le L0 hL0lat
+  obtain ⟨hU1, hord1⟩ := _root_.GlobalTheory.TwV.Xc.latticeTuplePoint_det_normOne_order_eq_neg_length S hD hS (j + 1) hj' La' hLa'
   have hfill := GlobalTheory.T.systemWeights_eq_shifted_character_exponents S hD hS j hj' La'.1
   have hm1 := S.law.mu_alg j hj' _ hU1
   have hm0 := S.law.mu_alg j hj' _ hU0

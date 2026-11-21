@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgebraicOfJKM
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMapConstEqOfIsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemRingOfIntegersOfHol
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteDimensionalLevStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCupProductCoboundaryTheoremStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerCupProductCoboundaryTheorem
+import Development.AbelianVarietyTheory.Definitions.Foundations.IsFirstChernClassOfLineBundle
 
 noncomputable section
 
@@ -155,7 +156,7 @@ theorem spec_of_units [IsAlgClosure ℚ Ω] (X : Tower Ω ε) {M l n : ℕ} (hM 
   have hx := topChar_apply X hl hlM huF hu0
   have hy := topChar_apply X hl hlM hvF hv0
   have ha : ∃ η, IsTopEta X M (topChar X M l n u) (topChar X M l n v) η := by
-    obtain ⟨-, -, -, -, η, h1, h2, h3⟩ := GlobalTheory.T.kummerCupProduct_coboundary_theorem Ω (topL X M) (topBar X M) (l ^ n) _ hN hζ ⟨u, huL⟩ ⟨v, hvL⟩ _ _
+    obtain ⟨-, -, -, -, η, h1, h2, h3⟩ := _root_.GlobalTheory.KummerCob.thmA Ω (topL X M) (topBar X M) (l ^ n) _ hN hζ ⟨u, huL⟩ ⟨v, hvL⟩ _ _
       (fun h => hu0 (congrArg Subtype.val h)) (fun h => hv0 (congrArg Subtype.val h)) hu1 hu2 hv1 hv2 hα hβ
     obtain ⟨η', g1, g2, g3⟩ := exists_extend hx hy _ η h1 h2 h3
     exact ⟨η', g1, g2, fun B g hB => g3 B g ((over_iff X M B).2 hB)⟩

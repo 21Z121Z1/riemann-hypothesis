@@ -3,7 +3,10 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.SimilitudeFacto
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.MetricsProjectionFormulaNef
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.Proportional
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereIntegralMultilinearExpansionStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereIntegralCongrPotentialsStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.MongeAmpereIntegralCongrPotentials
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.CompRightEqZero
+import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridge
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffAtOfIsPotential
@@ -164,7 +167,7 @@ theorem mInt_ref_eq {D : ℕ} {σ : Type} {S : AnSys D σ} {P : Ideal (MRing ι)
   have hth : ∀ a, IsPotential S.A (S.th a) := fun a => (S.sing a).1
   have hpb : ∀ a, IsPotential Re.R.A ((S.th a).pullback Re.π Re.holo.1) := fun a =>
     isPotentialPullback S.A Re.R.A Re.π Re.holo (S.th a) (hth a)
-  have h1 := (GlobalTheory.T.monge_ampere_integral_congr_potentials D Re.R.X Re.R.A Set.univ (fun j => potOf Re.R (Re.ref (w j)))
+  have h1 := (_root_.GlobalTheory.CompanionTheory.Ar.PB.mInt_congr_samePot D Re.R.X Re.R.A Set.univ (fun j => potOf Re.R (Re.ref (w j)))
     (fun j => (S.th (w j)).pullback Re.π Re.holo.1) (fun _ => 1) (fun _ => 1)
     (fun j => by simp) (fun i => Re.ref_pot (w i)) (fun i x _ => isC2At_of_isPotential _ (hpb _) x)
     (fun _ _ => rfl)).1

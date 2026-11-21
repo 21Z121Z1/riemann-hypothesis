@@ -13,7 +13,10 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ContinuousRepresenta
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MeasurePreservingReindex
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RightRegularRepUnitaryStronglyContinuous
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AdelicTransportMeasureSecond
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivativeClosedClassBoundedByInverseLeastSizeStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivativeClosedClassBoundedByInverseLeastSize
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SobolevIteratedOneParameterSubgroupsWords
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RiemannianHaarGaugeExistsPosUnique
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TruncatedLeastLatticeSizeLipschitzProperties
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HeightBoundByInfinityNorm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivativeAlongLieAlgebraPreservesSmoothSpaceStatement
 
@@ -46,7 +49,7 @@ theorem hasDerivAt_apply (he : IsEquiv θ Φ) (hs : IsSob Φ) (τ : D.what₂.Ta
   haveI : CompleteSpace (M.H τ) := (M.ds τ).1
   have hG := gram_unit (M.fr_unit τ) (M.fr_gram τ)
   obtain ⟨ℓ, hℓ, hℓT⟩ := hs τ u x
-  obtain ⟨m, ls, a, hls, ha⟩ := GlobalTheory.T.sobolevContinuousForm_sum_lieWord_inner _ _ _ (M.σ τ) (M.fr τ) _ (M.fr_unit τ) (M.fr_gram τ) (M.ds τ).2.2.1 ℓ hℓ
+  obtain ⟨m, ls, a, hls, ha⟩ := _root_.GlobalTheory.SmVec.sobCont_repr _ _ _ (M.σ τ) (M.fr τ) _ (M.fr_unit τ) (M.fr_gram τ) (M.ds τ).2.2.1 ℓ hℓ
   have hu := (MultGelf.mem_sm M τ).1 (u τ).2
   have hmem : ∀ t : ℝ, trRep (M.σ τ) (M.fr τ) (NormedSpace.exp (t • X)) (u τ) ∈
       smSub (gramAt D V τ) (trRep (M.σ τ) (M.fr τ)) := fun t =>
@@ -205,7 +208,7 @@ theorem isContRep_of_ae (B : RowsAut) {y : B.I.L2 B.μf B.fund} {f : B.I.GA → 
 
 theorem eq_of_ae (B : RowsAut) {f f' : B.I.GA → ℂ} (hc : Continuous f) (hc' : Continuous f')
     (h : f =ᵐ[B.I.muA B.μf] f') : f = f' := by
-  obtain ⟨-, -, -, -, hop⟩ := GlobalTheory.T.adelicUnitaryHaar_bi_invariant B.I B.μf
+  obtain ⟨-, -, -, -, hop⟩ := _root_.GlobalTheory.AdelicUnimod.adelic_unimodular B.I B.μf
   have : (B.I.muA B.μf).IsOpenPosMeasure := ⟨fun U hU hne => (hop U hU hne).ne'⟩
   exact (Continuous.ae_eq_iff_eq (B.I.muA B.μf) hc hc').1 h
 

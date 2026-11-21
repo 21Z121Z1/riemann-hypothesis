@@ -6,8 +6,12 @@ import Development.AbelianVarietyTheory.Definitions.RegularCharts.ModelAt
 import Formalism.LocalToGlobal.ProjectiveLattices.UnitIndepOfCharts
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFramedPointBaseChangeAlgebraMap
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointReducedFromTestRingStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ChartCoverFOfSectionBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointReducedFromTestRing
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
+import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ChartCoverFOfSectionBaseChange
 
 noncomputable section
 
@@ -30,13 +34,13 @@ variable {Xo c U}
 variable (Xo c)
 
 theorem evalWD_framed : EvalWD (K := c.F) (fun S _ _ => FrPt Xo c S) (fun φ y z => FrMap φ y z) :=
-  evalWD_fr (frChartF_of (GlobalTheory.T.chartCoverF_of_sectionBaseChange GlobalTheory.abelianSchemeLaws_all.1.secBaseChange E H Dw l Xo c))
+  evalWD_fr (frChartF_of (_root_.GlobalTheory.Frames.chartCoverF_of_secBaseChange GlobalTheory.abelianSchemeLaws_all.1.secBaseChange E H Dw l Xo c))
 
 theorem frBC_framed : GlobalTheory.Reg.FrBC Xo c := fun S T _ _ _ _ φ y =>
   GlobalTheory.Frames.FramedBaseChange.exists_frMap GlobalTheory.abelianSchemeLaws_all.1.secBaseChange E H Dw l Xo c S T φ y
 
 theorem allTest_framed : AllTest Xo c :=
-  GlobalTheory.T.framedPoint_reduced_from_testRing GlobalTheory.abelianSchemeLaws_all.1.secBaseChange E H Dw l Xo c
+  _root_.GlobalTheory.Frames.allTest_of_secBaseChange GlobalTheory.abelianSchemeLaws_all.1.secBaseChange E H Dw l Xo c
 
 variable (U)
 

@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformisationFiniteExtSameMumfordBundleStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformisationFiniteExtSameMumfordBundle
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMumfordBundlePullbackGrpPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCdvrDominating
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SABBaseChangeSt
@@ -118,7 +118,7 @@ theorem exists_trait_unif_lam : ∀ (R : Type) [CommRing R] [IsDomain R] [IsLoca
     (pull_isLB A.isLB _) (pull_isLB AV.isLB _) hLV hPP
   have hGV : IsSemiAbelian ((Over.pullback (spMap φ)).obj G) := IsSemiAbelian.pullback (spMap φ) G hG
   obtain ⟨R', _, _, _, ρ, D₁, G₁, _, _, β, β₂, A₁, U₁, hR', hρ, hβ, hsq, hLam⟩ :=
-    GlobalTheory.T.exists_uniformisation_finiteExt_sameMumfordBundle V hV _ hGV AV genV hgenV _ hExtV
+    _root_.GlobalTheory.Mum.exists_unif_finExt_lam V hV _ hGV AV genV hgenV _ hExtV
   have hρloc : IsLocalHom ρ := RingHom.IsIntegral.isLocalHom hρ.2.2.to_isIntegral hρ.2.1
   refine ⟨R', _, _, _, ρ.comp φ, G₁, _, _, β ≫ pullback.fst G.hom (spMap φ), β₂ ≫ βV₂, D₁, A₁, U₁, hR',
     hρ.2.1.comp hφ, ?_, ?_, ?_, ?_⟩

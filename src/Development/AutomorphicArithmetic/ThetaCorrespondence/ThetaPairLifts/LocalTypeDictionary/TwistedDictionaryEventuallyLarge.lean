@@ -37,7 +37,7 @@ theorem twisted_dictionary_eventually_large : _root_.GlobalTheory.FunPr.ThetaLoc
   have H2 := hx D large₂ hε hx₀ Γ Pl0 T A Ks R F hS ch hIs hAt
   intro t p hp k d hk hcos hz hP' x y
   obtain ⟨Ls, Lt, κ, hLs, hLt, hκ, hdiff, hq, htr⟩ := H2 p hp x y
-  obtain ⟨n, c, w, hwL, hwf, hcI, hcN, hvec⟩ := GlobalTheory.T.cosetDatumVector_finite_heisenbergCombination ch.S.toGridChoice t p hp k d hk hcos hz hP'
+  obtain ⟨n, c, w, hwL, hwf, hcI, hcN, hvec⟩ := _root_.GlobalTheory.RowEx.fourierVec ch.S.toGridChoice t p hp k d hk hcos hz hP'
   choose ζ s hζ hs hjet using fun i => htr k hk (w i) (hwL i)
   refine ⟨Ls, Lt, κ, n, fun i => oppQ p (c i) * ζ i, s, hLs, hLt, hκ, hs, fun i => ?_, fun ρ => ?_, hq, fun mon => ?_⟩
   · obtain ⟨m, hm, hζm⟩ := hζ i

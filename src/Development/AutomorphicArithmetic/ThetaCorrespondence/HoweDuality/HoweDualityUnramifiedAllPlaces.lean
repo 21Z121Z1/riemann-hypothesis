@@ -49,7 +49,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalAddCharUnramif
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsStdCharNegOneOfStandardTraceAdelicAddChar
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuousSingleAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiUnramifiedAwayDifferent
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StoneVonNeumannSchwartzBruhatTransverseLagrangiaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StoneVonNeumannSchwartzBruhatTransverseLagrangia
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalUnipotentAdditive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicTraceSupportedAtSplitPlaceStatement
@@ -60,13 +60,15 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicChara
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPreservesSchwartzBruhat
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterConductorExists
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSmulOfCommuteHeisenbergLinearModelSchwartzBruhStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlaceAdelicMatrixGivenComponentsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTensorSkewHermitianSplitSymplecticPairStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqSmulOfCommuteHeisenbergLinearModelSchwartzBruh
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSplitPlaceAdelicMatrixGivenComponents
+import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacFn
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTensorSkewHermitianSplitSymplecticPair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplementaryAdelicSchwartzOfNonzeroLocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodingerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSelfDualLatticeSpaceFormHermitianNondeg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceSymplecticSelfZeroSplitSupported
@@ -80,12 +82,13 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSchwartzBr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductFunctionOnSumCoordsMemAdelicSchwartzSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslationInvariantFunctional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCharacterNormOneUnit
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DistribHaarCharSupportedIdeleEqLocalAbsValueStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DistribHaarCharSupportedIdeleEqLocalAbsValue
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteLengthLeviQuotient
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaSubmoduleSupNeTop
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HoweDualityRealPlacesTrivialCharFockLiftStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HoweDualityRealPlacesTrivialCharFockLift
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationLocalAtFinitePlaceUnitaryGroupStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationLocalAtFinitePlaceUnitaryGroup
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemKAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShearGLTransposeMul
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsBicharPairing
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzBruhatMatrixExistsOpenAddSubgroupInvaria
@@ -103,11 +106,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableZetaIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactCoveredByOpenCosets
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearWittModelLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearModelUnitaryConjugate
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryCommutingHeisenbergActsFibrewiseStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicAddCharNontrivialFinitePlaceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsComplementaryAdelicSchwartzRestFunctionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzRestrictFinitePlaceMemSchwartzBruhStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMemOfMemStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryCommutingHeisenbergActsFibrewise
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicAddCharNontrivialFinitePlace
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLinearOfBilinearSchwartzBruhatProduct
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SpanSchwartzBruhatProductEqTop
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ProdFnMemSB
@@ -190,14 +190,14 @@ theorem stageVp : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFi
   have dW : G.W.J.det ≠ 0 := det_ne_sig_map (Bs.emb w₀).1 Complex.I (hg.hW.sig w₀)
   have hres := resEta_div hc.resα hc.resβ (Nat.add_comm a a')
   have hhk := hecke_div hc.heckeα hc.heckeβ
-  have hlie := GlobalTheory.T.firstMember_lieAlgebra_preserves_polynomialFock F E σ hTr.base.cm a' (a + a') G.V' G.W G.M' Bs.ψ Xc.α (Xc.α / Xc.β) om' hTr.base.std
+  have hlie := _root_.GlobalTheory.RealLieFockX.lie_deriv_polX F E σ hTr.base.cm a' (a + a') G.V' G.W G.M' Bs.ψ Xc.α (Xc.α / Xc.β) om' hTr.base.std
     hg.hV'.herm dV' hg.hW.skew dW hc.resα hres hc.heckeα hhk hTr.weil' Bs.emb hg.hV'.cartan hg.hW.cartan
-  have hcpt := GlobalTheory.T.firstMember_maximalCompact_preserves_polynomialFock F E σ hTr.base.cm a' (a + a') G.V' G.W G.M' Bs.ψ Xc.α (Xc.α / Xc.β) om' hTr.base.std
+  have hcpt := _root_.GlobalTheory.FockCompactX.pol_stable_compact_left F E σ hTr.base.cm a' (a + a') G.V' G.W G.M' Bs.ψ Xc.α (Xc.α / Xc.β) om' hTr.base.std
     hg.hV'.herm dV' hg.hW.skew dW hc.resα hres hc.heckeα hhk hTr.weil' Bs.emb hg.hV'.cartan hg.hW.cartan
   obtain ⟨L, hL, hrange⟩ := GlobalTheory.T.exists_linear_tensor_polyVacuum_pureTensors G.M' Bs.ψ Bs.emb hg.hM'.std T
   have hloc := GlobalTheory.T.howeDuality_realPlaces_polynomialVectors_smallPair F E σ Bs a a' G Xc om om' R Rf hM hreal hlie hcpt
   have hfl := fun v => locVp hM v
-  obtain ⟨h1, h2, h3, h4⟩ := GlobalTheory.T.unitaryDualPair_global_to_local_tensor_transfer G.M' Bs.ψ Bs.emb om' (fun v => (hg.hM'.vac v).1) hg.hM'.std N hN T L hL
+  obtain ⟨h1, h2, h3, h4⟩ := _root_.GlobalTheory.HoweGlobalPair.tensor_transfer G.M' Bs.ψ Bs.emb om' (fun v => (hg.hM'.vac v).1) hg.hM'.std N hN T L hL
   have key := tens (ι := T) (M₀ := ↥(G.M'.Pol Bs.ψ Bs.emb))
     (M := fun v : T => ↥(SB (Fin a' × Fin (a + a') → Fv F v.1)))
     (opInf G.M' Bs.ψ Bs.emb om') (fun v => opFin om' v.1)

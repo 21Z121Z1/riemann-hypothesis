@@ -10,9 +10,12 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaxCompac
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteInertHeckeSupportCosetsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDoubleCosetOperatorEqInertHeckeOperator
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalMemUnitaryGroupAntidiagonalStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalStdLatticeStabilizerMemMaxCompactStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTrivOutsideInertDatumLocalEqStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalInjectiveOnTrivOutsideStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalStdLatticeStabilizerMemMaxCompact
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CommuteOfTrivOutside
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMaxCompactOfTrivOutsideLocalIntegral
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteInertHeckeSupportCosets
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTrivOutsideInertDatumLocalEq
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertDatumLocalInjectiveOnTrivOutside
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitPlaceIdempotentMulEqSelfOfSupported
 import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 import Formalism.LocalToGlobal.IndefiniteReal.TopMult
@@ -260,7 +263,7 @@ theorem transport_succ {D : D7} {cf : CharFrame D} {nch : NChoice D} {tp : TupTi
   have hp := rep_pull A.hF (A.PV j) (A.stdV j) hd hv
   obtain ⟨a, R₀, ha, hR₀, hs⟩ := hp
   have hq := GlobalTheory.InertDCOp.dcOp_eq_heckeFunI D.host.E D.R.nV v Pp Dv
-    (GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal _ _ v Pp Dv) (GlobalTheory.T.inertDatum_local_stdLatticeStabilizer_mem_maxCompact _ _ v Pp Dv) (GlobalTheory.T.exists_trivOutside_inertDatum_local_eq _ _ v Pp Dv) (GlobalTheory.T.inertDatum_local_injective_on_trivOutside _ _ v Pp Dv) a ha
+    (GlobalTheory.T.inertDatum_local_mem_unitaryGroup_antidiagonal _ _ v Pp Dv) (_root_.GlobalTheory.InertStdLat.loc_mem_KU _ _ v Pp Dv) (_root_.GlobalTheory.InertLift.exists_trivOutside_loc_eq _ _ v Pp Dv) (_root_.GlobalTheory.InertLocInj.loc_injective _ _ v Pp Dv) a ha
   obtain ⟨R₁, h0, hR₁, hh0, hsum⟩ := hq
   refine ⟨h0, hh0, fun f' y' c hy hfix hc => ?_⟩
   refine eigen_of_fin X j _ h hh Pp hG d y' c fun g hg => ?_

@@ -11,7 +11,6 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleNonze
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleNonzeroConstantSecond
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsConstantTripleCoefficient
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicPointUnitaryGroupGramOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleRootOfUnityTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWeilRepresentationVacuumCosetVectorsGrid
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.PolarizationScalarImPos
@@ -73,7 +72,7 @@ theorem bottomTheta_ne_zero_of_innerProduct_formula : _root_.GlobalTheory.FunPr.
   have hd : P'.d = P.d := hbot.rank.2.2.2
   have ed' : P'.d = WW.rank := hd.trans ed
   obtain ⟨M, -, -, HC⟩ := HC μ₀ Q δ t0 P P' hbot ea ea' ed ed'
-  obtain ⟨g, hg⟩ := GlobalTheory.T.exists_finiteAdelicPoint_unitaryGroup_gramOne WW hX.stdW.1 h ed.symm
+  obtain ⟨g, hg⟩ := _root_.GlobalTheory.BotFormula.exists_isFinPt_of_gram_one WW hX.stdW.1 h ed.symm
   have hg' := hg.cast hd
   by_contra hz
   push Not at hz

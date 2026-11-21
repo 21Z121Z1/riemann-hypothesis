@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnThet
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunOfMemCusp
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GrowthSobZeroNeTop
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApproxStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormKFiniteApprox
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FinitePartTypes
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnOfRapidDec
@@ -41,7 +41,7 @@ theorem sobolev_approximation_by_cuspForms : _root_.GlobalTheory.FunPr.ThetaLoca
     by_contra h
     rw [ENNReal.ofReal_of_nonpos (not_lt.1 h)] at hr1
     exact lt_irrefl _ hr1
-  obtain ⟨e, he, hgrow⟩ := GlobalTheory.T.exists_KFinite_iteratedCompactAverage_approx D R.θ hθ (G.P (i + 1)) φ hφg.1 (Finset.univ : Finset D.what₂.Tau).toList
+  obtain ⟨e, he, hgrow⟩ := _root_.GlobalTheory.KAvgApprox.approx_avgList D R.θ hθ (G.P (i + 1)) φ hφg.1 (Finset.univ : Finset D.what₂.Tau).toList
     (Finset.nodup_toList _) d r hr
   obtain ⟨n, F, v, hF, hFlev, hsum⟩ := _root_.GlobalTheory.T.twist_cusp_average_k_finite_decomposition D R.θ hθ hP (G.P (i + 1)) φ hφ U hU hlev e he
     (Finset.univ : Finset D.what₂.Tau).toList (fun τ => Finset.mem_toList.2 (Finset.mem_univ τ))

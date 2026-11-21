@@ -14,10 +14,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelMapExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDualWeylWeightProjector
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalIdealsMeetingSubspaceCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeStableOfHeckeFramePolynomialActionStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimpleSubquotientDualWeylEmbedsHighestWeightStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimpleSubquotientDualWeylEmbedsHighestWeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineLatticeLinkOfBlockDataStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasBlocksOfSystemOccursInBlockPartStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoeffRingPrimeNotIsUnitStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasBlocksOfSystemOccursInBlockPart
+import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoeffRingPrimeNotIsUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFrameCoeffRingQuotientPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeLinkOfSurvivingSimpleSubquotientStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnifDvd
@@ -84,7 +85,7 @@ theorem winputs_frame : ∀ (E Ω : Type) [Field E] [NumberField E] [IsCMField E
           ∀ τ, LatticeLink P (reFr W fr cjj) l τ (hw τ)) := by
     intro Gm _ _ _ _ hs hq
     obtain ⟨mT, _, hHG⟩ := GlobalTheory.ExpFrame.HeckeMod.hecke_module l ι P.Nr F W.lam jK hF hJ Gm
-    obtain ⟨mu, hmu, hemb⟩ := GlobalTheory.T.simpleSubquotient_dualWeyl_embeds_highestWeight F.O P.Nr ι W.lam ϖ hϖ hanti Gm hs hq
+    obtain ⟨mu, hmu, hemb⟩ := _root_.GlobalTheory.HighWt.simpleSubquot_embeds F.O P.Nr ι W.lam ϖ hϖ hanti Gm hs hq
     refine ⟨mT, fun τ => res P.Nr (mu τ), (GlobalTheory.T.heckeStable_of_heckeFrame_polynomial_action l ι P.Nr F W.lam jK Gm hH hHG).2, fun τ => ?_, fun hn =>
       GlobalTheory.T.latticeLink_of_surviving_simple_subquotient E Ω hCheb l ι inc fr cjj P W hlink F hF Bk hG jK hJ ϖ hϖ hϖl hanti Gm hHG hs hq mu
         (fun τ => ⟨(hmu τ).1, (hmu τ).2.1, (hmu τ).2.2.1⟩) hemb m θ0 h0e h0b h0o hn⟩

@@ -14,7 +14,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCocha
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.ChartGrConst
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HodgeXD
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairingIsoOfComponentIsosStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairingRestrictCompatStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PairingRestrictCompat
 
 set_option backward.isDefEq.respectTransparency false
 open CategoryTheory AlgebraicGeometry TensorProduct DirectSum GlobalTheory.LogCris CrystallineSemistableComparison CrystallineSemistableComparison.Onto CrystallineSemistableComparison.Pb CrystallineSemistableComparison.HT GlobalTheory.CompanionTheory.KunGlue
@@ -27,6 +27,6 @@ theorem kun_res {K : Type} [Field K] (E : XD K) {U₁ U₁' : ObjectProperty E.C
     (fun {a a' c} ha => E.pr U₁ U₂ U₃ h₁ h₂ ha) (fun {a a' c} ha => E.pr U₁' U₂' U₃' h₁' h₂' ha)
     (fun a => (resU (E.F₁ a) k₁).hom) (fun a => (resU (E.F₂ a) k₂).hom) (fun a => (resU (E.F₃ a) k₃).hom)
     b₁ b₂ b₃
-    (fun ha _ _ _ h x y => GlobalTheory.T.pairing_restrict_compat E h₁ h₂ h₁' h₂' k₁ k₂ k₃ ha h x y)
+    (fun ha _ _ _ h x y => _root_.GlobalTheory.CompanionTheory.KunGlue.pr_res E h₁ h₂ h₁' h₂' k₁ k₂ k₃ ha h x y)
 
 end GlobalTheory.CompanionTheory.KunGlue

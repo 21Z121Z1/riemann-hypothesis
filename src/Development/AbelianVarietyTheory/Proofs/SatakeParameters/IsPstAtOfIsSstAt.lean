@@ -20,11 +20,13 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.Conc
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeLAdicCharacterAndPrincipalIdealSt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodConjSelfDualTwistSplitUnramifiedStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodConjSelfDualTwistSplitUnramified
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SatakeParametersOfTwist
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsPotentiallySemistableOfSemistableRestrict
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsSubquotientDetRepParInd
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSemistableAtPlaceTwistCrystallineCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSemistableAtPlaceTwistCrystallineCharacter
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GaloisRepOfPolarizedCuspidal
+import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InertialOrderFifteenCharAuxiliaryPrimeSpec
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
 
@@ -84,7 +86,7 @@ theorem isSstAt_twist (hD : GlobalTheory.Published.DeRhamPotSemistable) {l : ℕ
     (hc : Continuous fun g => ((c g : GL (Fin 1) (Om l)) : Matrix (Fin 1) (Fin 1) (Om l)))
     (h1 : IsSstAt P Bw r) (h2 : IsCrysAt P Bw c) :
     IsSstAt P Bw (Formalism.MainNotions.SumRepresentations.At.twGL r (Matrix.GeneralLinearGroup.det.comp c)) :=
-  GlobalTheory.T.isSemistableAtPlace_twist_crystallineCharacter hD l P AI hT E Ω Gw O Bw a r c hr hc h1 h2
+  _root_.GlobalTheory.SstTwist.isSstAt_twist hD l P AI hT E Ω Gw O Bw a r c hr hc h1 h2
 
 end GlobalTheory.GalCut.IwaTwist
 

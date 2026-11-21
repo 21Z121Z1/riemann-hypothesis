@@ -20,7 +20,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoverCupActionB
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StableCoverCechVanishing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncatedWittIsNoetherian
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGradedVanishing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinatesRestrictAffineOpenStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoordinatesRestrictAffineOpen
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.GlobSerre
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.PolynomialSiteTraces.PolyAll
 set_option backward.isDefEq.respectTransparency false
@@ -213,7 +213,7 @@ theorem free_at (hp : p ≠ 0) (hn : IsNilpotent (p : R)) {V W : X.Opens} (h : W
     (c : Coord q V d) {u : Fin d → ∀ T : Thick (nlFun γ p X q κ), T.B}
     (hu : IsLift (fib hI q κ γ p) (jF hI q κ ⁻¹ᵁ V) (fun i => jf hI q κ V (c.t i)) u) (r : ℕ) :
     Free (fib hI q κ γ p) (jF hI q κ ⁻¹ᵁ W) (SQ q κ γ p W) r u := by
-  obtain ⟨c', hc'⟩ := GlobalTheory.T.coordinates_restrict_affine_open c h hW
+  obtain ⟨c', hc'⟩ := _root_.GlobalTheory.CompanionTheory.CoordRes.main c h hW
   have hu' : IsLift (fib hI q κ γ p) (jF hI q κ ⁻¹ᵁ W) (fun i => jf hI q κ W (c'.t i)) u :=
     isLift_res _ (preimage_mono' hI h) hu fun i => by rw [hc', jf_rs]
   obtain ⟨E, σ, θ, hGr, hbot, hco, hσ, hpt⟩ := frame_at hI hp hn c' u hu'

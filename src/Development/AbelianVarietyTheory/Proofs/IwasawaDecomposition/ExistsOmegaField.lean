@@ -9,15 +9,15 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRepsOfFini
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFirstOfSecond
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsIndexIdeal
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGaloisGe
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoeffExtRationalFormsValuesFieldStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoeffExtRationalFormsValuesField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelAtEachIndex
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelCoefficientCompatibility
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LawOfSquaresSelfDualSplitLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHarmonicCoefficientMapAtWeightsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNumberFieldHeckeCharacterSqrtNormValuesStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjPrincipalFractionalIntegralIdempotentSumStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualVectorPairsIntegralFrameColumnsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InverseSelfDualFrameStandardSpaceIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNumberFieldHeckeCharacterSqrtNormValues
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjPrincipalFractionalIntegralIdempotentSum
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SelfDualVectorPairsIntegralFrameColumns
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InverseSelfDualFrameStandardSpaceIntegral
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.IndefR.Datum Formalism.IndefR.FWT Formalism.L2.Pj
 open scoped TensorProduct InnerProductSpace
@@ -66,7 +66,7 @@ theorem rowP_int (W : HSp D) (β : GL (Fin W.rank) (EAf D)) (Λ : Submodule (�
   | mem x hx =>
     obtain ⟨c, hc, v, hv, rfl⟩ := hx
     rw [rowPairing_smul, rowP, ← mul_assoc, mul_comm _ (toEAf D e)]
-    exact mul_mem (GlobalTheory.T.conj_principalFractional_integral_idempotentSum D e P he hP c hc) (GlobalTheory.T.selfDual_vector_pairs_integral_frame_columns D W β Λ hβ v hv a)
+    exact mul_mem (_root_.GlobalTheory.IdemIntegral.conj_mem_intAf D e P he hP c hc) (_root_.GlobalTheory.PairIntegral.pair_mem_intAf D W β Λ hβ v hv a)
   | zero => rw [rowPairing_zero]; exact zero_mem _
   | add x y _ _ hx hy => rw [rowPairing_add]; exact add_mem hx hy
   | smul c x _ hx =>

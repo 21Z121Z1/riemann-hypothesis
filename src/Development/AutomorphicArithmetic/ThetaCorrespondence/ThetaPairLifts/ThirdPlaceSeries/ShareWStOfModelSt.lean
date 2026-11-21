@@ -27,7 +27,7 @@ theorem shareWSt_of_modelSt_alt : _root_.GlobalTheory.ShareOn.ModelStatement →
   intro hM
   unfold _root_.GlobalTheory.ShareOn.ModelStatement _root_.GlobalTheory.BigOn.ForallTwoRuns _root_.GlobalTheory.BigOn.AtPtsAlt at hM
   unfold _root_.GlobalTheory.ShareOn.SharedWeightStatement _root_.GlobalTheory.BigOn.ForallTwoRuns _root_.GlobalTheory.BigOn.AtPtsAlt
-  refine (hM.and GlobalTheory.T.shareSize_bounds_along_family).imp ?_
+  refine (hM.and _root_.GlobalTheory.ShareNumbers.numbers_along_family).imp ?_
   intro eps Fm CH _ h
   obtain ⟨⟨x1, h1⟩, ⟨x2, h2⟩⟩ := h
   refine ⟨max x1 x2, fun x hx hle ι p hp hmore r hr hown i => ?_⟩

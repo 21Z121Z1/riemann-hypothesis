@@ -2,11 +2,12 @@ import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.Loca
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpDiv
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsPairReading
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelHermitianScaling
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ComplementaryAdelicSchwartzArchimedeanReplaceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ComplementaryAdelicSchwartzArchimedeanReplace
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaLineDerivVanishesOnCoinvariants
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.HasDerivAtThetaSumAlongLineYDirection
@@ -56,9 +57,9 @@ theorem lie_derivative_mem_coinvariants : _root_.GlobalTheory.FunPr.ThetaLocalIn
     · change (-M.gram).det ≠ 0
       rw [Matrix.det_neg]
       exact mul_ne_zero (pow_ne_zero _ (by norm_num)) hGM
-  obtain ⟨T, hT, hTinj⟩ := GlobalTheory.T.thetaTransform_darbouxModel_linear_injective D Mo ψ' (sgn ε M).gram (Equiv.refl _) hR.good hstd hdetX hdetW hG
+  obtain ⟨T, hT, hTinj⟩ := _root_.GlobalTheory.ThetaTransformInj.linear_injective D Mo ψ' (sgn ε M).gram (Equiv.refl _) hR.good hstd hdetX hdetW hG
   have hΦ1 : Φ 1 ≠ 0 := fun h => one_ne_zero (hinj (h.trans (map_zero Φ).symm))
-  have hRf₁ : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Rest (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.evI D.host.F) f₁ r := GlobalTheory.T.complementaryAdelicSchwartz_archimedean_replace _ f₁ r (hFr 1).1 hΦ1
+  have hRf₁ : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Rest (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.evI D.host.F) f₁ r := _root_.GlobalTheory.TwistRest.restTr _ f₁ r (hFr 1).1 hΦ1
   have hRQ := (hFr Q).1
   have hone : GlobalTheory.TripleRead.toUX X (Equiv.refl (Fin X.rank)) hR.JW 1 = 1 := by
     apply Subtype.ext

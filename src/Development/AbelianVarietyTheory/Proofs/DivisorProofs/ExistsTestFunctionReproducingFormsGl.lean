@@ -3,7 +3,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMemBand
 import GroundTheory.AutomorphicForms.ReductionSiegel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarishChandraExistsReproducingTestFunctionGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlphaSmoothingFinite
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionReproducingLaplacianPolySolutiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTestFunctionReproducingLaplacianPolySoluti
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CasKOp
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfMemWeakIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLaplacianPolynomialKillsHarishChandraFinitStatement
 open NumberField MeasureTheory GlobalTheory.CuspRep GlobalTheory.HCF Topology GroundTheory.Automorphic.Reduction
 open scoped ContDiff
@@ -26,7 +28,7 @@ theorem exists_smooth_beta : ∀ (E : Type) [Field E] [NumberField E] [IsTotally
   intro E _ _ _ a L W hW X hX N
   have hν := isAddHaarMeasure_volume_Lie (E := E) (a := a)
   obtain ⟨p, hp0, hp⟩ := GlobalTheory.T.exists_laplacianPolynomial_kills_harishChandraFinite E a L W hW X hX N
-  obtain ⟨α, hα, h⟩ := GlobalTheory.T.exists_testFunction_reproducing_laplacianPoly_solutions E a volume hν p hp0
+  obtain ⟨α, hα, h⟩ := _root_.GlobalTheory.GLParametrix.exists_test_reproducing E a volume hν p hp0
   refine ⟨α, hα.1, hα.2.1, hα.2.2, fun φ hφm x => ?_⟩
   have hφ := hp φ hφm
   have h1 := h (chart φ.1 x) (φ.2 x) (fun y hy => by

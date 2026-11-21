@@ -5,7 +5,11 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefficientExten
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JumpIffMultNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineSummandAndDualFromInverseCharacterTwi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AmbientJumpBlockOfAdmissibleDecompositionStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H0VanishOfZeroMultiplicityStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.H0VanishOfZeroMultiplicity
+import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
+import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
+import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
+import Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsDeRhamOfIsCrystallineSpan
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JumpSetDistinctOfRealPlaceFacts
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRhoPtOfSplitting
@@ -86,12 +90,12 @@ theorem twistedRep_no_invariants_purity (D : D7) (L : SizeData₂ D) (ep : Bool)
   obtain ⟨g, ρ', -, -, hW⟩ := hJ i r hr w hw C τ₀
   obtain ⟨-, hW0, -, hT0⟩ := hW ρ π hπ hD 0
   constructor
-  · refine GlobalTheory.T.H0_vanish_of_zero_multiplicity _ _ _ (D.locT _) _ _ _ _ τ₀ hdrW ?_
+  · refine _root_.GlobalTheory.InvJump.h0V_eq_bot_of_multV_zero _ _ _ (D.locT _) _ _ _ _ τ₀ hdrW ?_
     refine hW0.trans ?_
     rw [if_neg]
     push_cast
     exact zero_not_mem_JW hJc _ hjr.1 hjr.2 ρ' _
-  · refine GlobalTheory.T.H0_vanish_of_zero_multiplicity _ _ _ (D.locT _) _ _ _ _ τ₀ hdrT ?_
+  · refine _root_.GlobalTheory.InvJump.h0V_eq_bot_of_multV_zero _ _ _ (D.locT _) _ _ _ _ τ₀ hdrT ?_
     refine hT0.trans ?_
     rw [if_neg]
     rw [GlobalTheory.JumpSets.dualS_int]

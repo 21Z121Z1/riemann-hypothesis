@@ -28,7 +28,7 @@ variable {E : Type} [Field E] [NumberField E] [IsCMField E] {H : ReciprocityTheo
 theorem isBC_rulBC {a : (E →+* ℂ) × ℕ → ℕ} {n : ℕ} {f : Rul Xo c} (hf : f ∈ sec Xo c a n) :
     IsBC hle (rulBC hle f) (fun _ : Fin 1 => (1 : c'.F)) (fun _ => f) := by
   intro S _ _ _ h y
-  rw [((GlobalTheory.T.ruleBaseChange_section_values_semilinear E H Dw l Xo c c' hle).1 a n f hf).2 S h y]
+  rw [((_root_.GlobalTheory.FieldBC.rulBC_sec_val_linear E H Dw l Xo c c' hle).1 a n f hf).2 S h y]
   simp
 
 end Field

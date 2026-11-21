@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsHeatZero
-import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionUnitaryGroupTestFunctionsStatement
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.HermitianWeilActionUnitaryGroupTestFunctions
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SchwartzBruhatInvariantIntegralMatrixMulStatement
 
 open Matrix Complex NumberField GlobalTheory.SW Filter Topology
@@ -131,8 +131,8 @@ theorem GlobalTheory.SW.weil_comp_unitary : ∀ (E : Type) [Field E] [NumberFiel
     fun ψ hψ => ((GlobalTheory.T.schwartzBruhatInvariantIntegral_matrix_mul E (Fin n) (Fin N) ψ hψ).2 h hdet).1
   have hw : ∀ γ ∈ UU E N, weil Ψ γ (fun x => φ (h * x)) = fun x => weil Ψ γ φ (h * x) := by
     intro γ hγ
-    obtain ⟨h1, h2, -⟩ := GlobalTheory.T.hermitianWeilAction_unitaryGroup_testFunctions E Ψ hΨ n N hn γ hγ φ hφ
-    exact ((GlobalTheory.T.hermitianWeilAction_unitaryGroup_testFunctions E Ψ hΨ n N hn γ hγ _ (hSB φ hφ)).2.2.1 _ (hSB _ h1)
+    obtain ⟨h1, h2, -⟩ := _root_.GlobalTheory.SW.weil_action E Ψ hΨ n N hn γ hγ φ hφ
+    exact ((_root_.GlobalTheory.SW.weil_action E Ψ hΨ n N hn γ hγ _ (hSB φ hφ)).2.2.1 _ (hSB _ h1)
       (transH_mul Ψ hh γ h2)).symm
   refine ⟨hSB φ hφ, hw, fun Z _ => ⟨?_, ?_⟩⟩
   · refine (thH_mul Ψ hh φ Z 0 0).trans ?_

@@ -27,7 +27,8 @@ import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGeneratedEffectiveSec
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefAmpleFibre
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSemiampleNef
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.GeoNum
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.PackingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.PackingAlt
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.ArakelovGeometry Filter Topology NumberField
 
@@ -40,6 +41,6 @@ theorem selfIntersection_le_of_boundedInjection_use :
       GroundTheory.Heights₂.Heights.HilbertSamuel.LocalRep.proof
       GroundTheory.Heights₂.Heights.HilbertSamuel.ConstantShift.proof
       (GroundTheory.Heights₂.Heights.HilbertSamuel.ArithmeticVolumeBig.of_moriwakiBig_only hBig)
-      hU.g7 GlobalTheory.T.packing'
+      hU.g7 _root_.GlobalTheory.CompanionTheory.Ar.Small.packing
 
 end GlobalTheory.CompanionTheory.Ar.Giv

@@ -36,7 +36,8 @@ import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGeneratedEffectiveSec
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefAmpleFibre
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSemiampleNef
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.GeoNum
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.PackingStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.PackingAlt
+import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EmbeddingPiecesOfIntersectionAndResolutionStatement
 
 open MvPolynomial ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.ArakelovGeometry Filter Topology NumberField

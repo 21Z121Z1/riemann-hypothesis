@@ -3,7 +3,11 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelTypeEigenfunct
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupActionPreservesPrincipalFlagMultiplic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelGroupActionIsAction
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricLevelLiftsExistStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParahoricLevelLiftsExist
+import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RePosOfIsMultIP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLiftModelsOn
@@ -45,7 +49,7 @@ theorem not_isConjPl (P : Formalism.L2.Host.PiBar D.host) {k k' : Fin 2} {PP PP'
 
 theorem liftsExist {T : Type} {L : LevCh D T} {μ0 : T} (hL : L.Is μ0) : LiftsExist (Yc D 0) (L.βY 0) (L.dat0 L.triv) := by
   obtain ⟨c, hc⟩ := hL.βY 0 (lt_of_lt_of_le two_pos D.R.two_le_m)
-  refine GlobalTheory.T.parahoricLevel_liftsExist _ _ _ _ _ hc (fun PP h PP' h' => ?_) (Finset.disjoint_empty_right _)
+  refine _root_.GlobalTheory.ParahoricLift.liftsExist _ _ _ _ _ hc (fun PP h PP' h' => ?_) (Finset.disjoint_empty_right _)
   obtain ⟨k, hk⟩ := (hL.Pg PP).1 h
   obtain ⟨k', hk'⟩ := (hL.Pg PP').1 (h'.resolve_right (Finset.notMem_empty _))
   exact not_isConjPl _ hk hk'

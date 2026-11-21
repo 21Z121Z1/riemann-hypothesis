@@ -1,6 +1,6 @@
 import Mathlib
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.IsCompl
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectTensorGeneratedLiftStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectTensorGeneratedLift
 
 open TensorProduct CrystallineSemistableComparison.D
 open scoped LaurentPolynomial
@@ -80,7 +80,7 @@ theorem bc_laur : ∀ (p : ℕ) [Fact p.Prime] (A : Type) [CommRing A](B : Type)
     rw [Ideal.map_span, Set.image_singleton, map_sub, map_mul, hjC, hjC, hjT]
   refine ⟨i₁, ?_, hC, hT⟩
   rw [← hmap]
-  exact GlobalTheory.T.perfect_tensor_generated_lift p A A[T;T⁻¹] B K K[T;T⁻¹] i _ LaurentPolynomial.C j i₁ hA hK hPQ hcomp hgen
+  exact _root_.GlobalTheory.CompanionTheory.PerfectRing.pq_baseChange p A A[T;T⁻¹] B K K[T;T⁻¹] i _ LaurentPolynomial.C j i₁ hA hK hPQ hcomp hgen
     hC hij
 
 end GlobalTheory.CompanionTheory.PerfBC

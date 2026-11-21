@@ -8,8 +8,8 @@ import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Development.AbelianVarietyTheory.Definitions.Jets.TauZero
 import Formalism.HermitianCurvature.StatementTBB
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSidesStatement
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilySetupMomentClosureStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselDatumBothSidesAreSides
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FamilySetupMomentClosure
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
 namespace GlobalTheory

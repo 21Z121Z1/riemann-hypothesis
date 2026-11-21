@@ -13,7 +13,9 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PowersDiagonalA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexNeZeroOfSubsetCpt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ConstantTermStarStatement
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.LeviMatchingWords.LeviMatchingBlocks.StabilizerDilationWeightsDualIsotropicVector
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchLeviWordsOfStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MatchLeviWordsOf
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalisedMatrixIntegralCompLinearEquivDet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParP
 
 namespace PositivityTheory.Rg.BcB.F.MLM
 
@@ -23,6 +25,6 @@ theorem muInert : MuInert := GlobalTheory.T.multiplicity_inert
 theorem regPowT : RegPowT := GlobalTheory.T.regular_power_torus
 theorem sepPowT : SepPowT := GlobalTheory.T.separable_power_torus
 theorem ctStar : CtStar := GlobalTheory.T.constant_term_star
-theorem matchLMWordSOf : MatchLMWordSOf := GlobalTheory.T.match_levi_words_of
+theorem matchLMWordSOf : MatchLMWordSOf := _root_.GlobalTheory.CompanionTheory.LeviMatchingWords.matchLMWordSOf
 
 end PositivityTheory.Rg.BcB.F.MLM

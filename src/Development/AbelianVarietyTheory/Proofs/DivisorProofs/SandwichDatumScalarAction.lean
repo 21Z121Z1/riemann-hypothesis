@@ -1,6 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IotaScalarOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrderStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FontaineAinfLocalDomainXiAdicOrder
+import ReciprocityTheory.DualLattices.CotangentSurjective
+import ReciprocityTheory.DualLattices.CyclicRecursionStatement
+import Development.AbelianVarietyTheory.Definitions.Divisors.XiMulNu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MuCoeffZeroNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusOfPadic
 

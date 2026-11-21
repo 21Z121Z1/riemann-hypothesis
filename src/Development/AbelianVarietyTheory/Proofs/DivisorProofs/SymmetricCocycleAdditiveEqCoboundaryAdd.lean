@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.WittOnFalse
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalCoboundarySmul
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmCocycleApplyFinsetSumStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SymmCocycleApplyFinsetSum
 
 set_option autoImplicit false
 
@@ -207,7 +207,7 @@ theorem symmetricCocycle_additive_eq_coboundary_add_alt (R : Type) [CommRing R] 
     rw [Pi.single_apply]; split_ifs <;> simp⟩
   let y : Fin d → A := fun m => ⟨Pi.single m (X (Sum.inr m)), fun i => by
     rw [Pi.single_apply]; split_ifs <;> simp⟩
-  have key := GlobalTheory.T.symmCocycle_apply_finset_sum A (MvPowerSeries τ R) γ hsymm hcoc hzero d x y
+  have key := _root_.GlobalTheory.symmCocycle_sum A (MvPowerSeries τ R) γ hsymm hcoc hzero d x y
   have coeA : ∀ (s : Finset (Fin d)) (f : Fin d → A),
       ((∑ j ∈ s, f j : A) : Fin d → MvPowerSeries τ R) = ∑ j ∈ s, (f j : Fin d → MvPowerSeries τ R) :=
     fun s f => map_sum A.subtype f s

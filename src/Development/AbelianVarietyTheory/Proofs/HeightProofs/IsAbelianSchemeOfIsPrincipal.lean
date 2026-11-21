@@ -18,7 +18,8 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CommutatorPair
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsRigTransport
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.FlatOfIsFiniteOfFlatGeometricFibres
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.MulAFiniteFlatSurjectiveEtale
-import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditionalStatement
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsUnconditional
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ThetaUniformisationComplexAbelianVariety
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SemiAbelianHomExtensionDvr
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ConnectedSpaceSpecOfIsLocalRing
@@ -125,8 +126,8 @@ theorem isFinFlatSurj_sumMap_iff (σ : K →+* ℂ) (A A' B : Out.PolAV (Sp (�
       Over.homMk z (by rw [← Over.w (EigenLatticeFibres.sumMap f f'), ← Category.assoc, ← hz]; exact Over.w y)
     exact ⟨_, _, (Over.OverMorphism.ext hz : y = x ≫ _).trans (comp_sumMap f f' x)⟩
   · intro hs
-    obtain ⟨P, pP, hP⟩ := GlobalTheory.T.exists_polarisedAbelianScheme_power (𝓞 K) A p
-    obtain ⟨P', pP', hP'⟩ := GlobalTheory.T.exists_polarisedAbelianScheme_power (𝓞 K) A' q
+    obtain ⟨P, pP, hP⟩ := _root_.GlobalTheory.CM.exists_polAV_isPowGrp (𝓞 K) A p
+    obtain ⟨P', pP', hP'⟩ := _root_.GlobalTheory.CM.exists_polAV_isPowGrp (𝓞 K) A' q
     obtain ⟨Q, u, v, hu, hv, huv, hQ⟩ := GlobalTheory.T.exists_prod_polAV_add_g GlobalTheory.T.abelianScheme_laws_unconditional.1 (𝓞 K) P P'
     have := pP.hom
     have := pP'.hom

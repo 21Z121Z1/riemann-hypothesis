@@ -6,11 +6,11 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelFunctionNe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelFunctionHolomorphic
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerAnEqSiegelUnitOnComplex
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerSlActionRowVector
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerNeZeroStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerNeZero
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasQIff
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerSlActionRowVectorStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitIndexAddIntVectorStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisActionSiegelUnitInTowerStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SmoothedSiegelUnitIndexAddIntVector
+import Development.AbelianVarietyTheory.Definitions.Foundations.Imports
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GaloisActionSiegelUnitInTower
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SlTwoInvariantHolomorphicMemAdjoinJInvariantStatement
 
 noncomputable section
@@ -46,7 +46,7 @@ theorem siegel_hol [IsAlgClosure ℚ Ω] (X : Tower Ω ε) {c : ℕ} {y : Fin 2 
   have ha := SiegelMem.an_siegel_eq Ω ε X c y hy
   refine ⟨⟨_, hd, ha⟩, (sgC c y)⁻¹, hd.inv fun z _ => hne z, ?_⟩
   have h1 : X.an (siegel X c y)⁻¹ * X.an (siegel X c y) = 1 := by
-    rw [← map_mul, inv_mul_cancel₀ (GlobalTheory.T.siegelUnitInTower_ne_zero Ω ε X c y hy), map_one]
+    rw [← map_mul, inv_mul_cancel₀ (_root_.GlobalTheory.KZ.siegel_ne_zero Ω ε X c y hy), map_one]
   have h2 : X.an (siegel X c y) * (((sgC c y)⁻¹ : ℂ → ℂ) : Mero) = 1 := by
     rw [ha, ← Filter.Germ.coe_mul, ← Filter.Germ.coe_one]
     congr 1

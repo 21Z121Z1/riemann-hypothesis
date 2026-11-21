@@ -5,7 +5,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.Fa
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.OmBStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.WeightedSumBounds.WtSubOneLe
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsSatFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupExpTwoSidedInverseUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalGroupExpTwoSidedInverseUnique
 
 namespace GlobalTheory.FGDepth.Coord
 

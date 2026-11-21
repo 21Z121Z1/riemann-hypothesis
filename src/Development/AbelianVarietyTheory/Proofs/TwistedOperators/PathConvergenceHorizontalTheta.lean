@@ -24,14 +24,14 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCuspFunOfAppro
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelIteratedIntegralsSwap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKernelApprox
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridDownArrowThetaFunctionFockDenseOfLevelStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridDownArrowThetaFunctionFockDenseOfLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnQuotHeightPowMulNorm
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TypeAtOfDiscreteSeries
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsGrowthSobNeTopOfIsAutFunSm
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GrowthSobZeroNeTop
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApproxStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormKFiniteApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutCuspOfMemCusp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HorizontalThetaLevelFourth
@@ -55,17 +55,21 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalListedTo
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinCoefMultT
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunSmRealProd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualFrameSpanUnitaryRepresentationStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelAdjointEqInvFiniteDimensionalStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModelTypeFormExpandsAlongDualFrameStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelAdjointEqInvFiniteDimensional
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfInnerSmooth
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlacePointCommuteOfNePlace
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModelTypeFormExpandsAlongDualFrame
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEachStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroupStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftVerticalCuspidalSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongRightGridArrows
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongDownGridArrows
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKOContinuousAndRatInvariant
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridVertexMeasureEqOfSameNormalisationStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstRowSchwartzDataIsThetaFunctionLargeDepthStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstRowCosetVectorsIsLocalThetaVectorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridVertexMeasureEqOfSameNormalisation
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstRowSchwartzDataIsThetaFunctionLargeDepth
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstRowCosetVectorsIsLocalThetaVector
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftedCuspFormsListed
 
 noncomputable section
@@ -89,7 +93,7 @@ variable {D : D7} {T : Type} {L : LevCh D T} {sc : Consts} {G : GridData L sc}
 theorem IsCuspListed.left {θ : InfFam D} {X : Node} {F : Fn G X} (h : IsCuspListed θ X F) :
     ∀ γ ∈ GQ (G.V X), ∀ g, F (γ * g) = F g := h.1.toIsAutFun.left
 
-theorem measEq : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : Consts} {G : GridData L sc} (M M' : Vol G) (X : Node) (K : Subgroup (GL (Fin (G.V X).rank) (Lev.EAf D))), M.IsAt X K → M'.IsAt X K → M.ν X = M'.ν X := GlobalTheory.T.gridVertexMeasure_eq_of_same_normalisation
+theorem measEq : ∀ {D : D7} {T : Type} {L : LevCh D T} {sc : Consts} {G : GridData L sc} (M M' : Vol G) (X : Node) (K : Subgroup (GL (Fin (G.V X).rank) (Lev.EAf D))), M.IsAt X K → M'.IsAt X K → M.ν X = M'.ν X := _root_.GlobalTheory.HaarNorm.vol_nu_eq_of_isAt
 
 theorem kerA_right_rat (W : G.Weil) {i : ℕ} (hi : i < D.R.m) {f : Sch G (.right i 0)}
     (hf : IsThetaFunO W.ψ (G.pS (.chi i 0)) (G.pT (.chi i 0)) f) :

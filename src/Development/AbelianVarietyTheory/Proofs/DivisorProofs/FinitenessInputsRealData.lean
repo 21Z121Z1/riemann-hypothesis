@@ -15,22 +15,28 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Sc
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FormalDegreeCompactDualIff
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistedThetaLiftInnerProductFormulaOfPublishedStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLiftMemCuspFormMultiplicitySpaceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftRowsAntitoneSignatureRankStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistedThetaLiftInnerProductFormulaOfHyp
+import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.RealLowestKTypeCoeffSquareIntegrable
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartW
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLiftMemCuspFormMultiplicitySpace
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftRowsAntitoneSignatureRank
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockFormMinorProductEqProdHookProductsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalDegreeRealPlaceUpperBoundOfHarishChandraStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalDegreeRealPlaceUpperBoundOfHarishChandra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryMassLowerBoundOfOrthonormalLatticeFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLiftScalarOfInnerProductFormulaBis
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteZetaIntegralEulerProductOfPartialLStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteZetaIntegralEulerProductOfPartialL
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsKTranslate
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasDerivAtLogCosh
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MatrixEntryNormSumUpperRightBlockElementPLe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.T2SpaceIsNonarchimedeanLocalFieldSingleBlock
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerivEqZeroOfEven
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorMatrixCoefficientFormulaStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLevelIndexMulSchwartzNormFormulaStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDatumSourceLevelCharacterLawStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockVectorMatrixCoefficientFormula
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HalfLinearCocycle
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.HeckeCharacterParameters
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLevelIndexMulSchwartzNormFormula
+import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.LocalIntegralGL
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDatumSourceLevelCharacterLaw
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteZetaIntegralThetaLiftEqPartialLValueStatement
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
@@ -44,11 +50,11 @@ namespace GlobalTheory.LowRowAdel
 theorem deltaNorm_all (D : D7) : DeltaNorm D := by
   intro i σ
   have h := GlobalTheory.T.fockForm_minorProduct_eq_prod_hookProducts D (Wc D i).rank (Vc D i).rank (pW D i) (qW D i) (aPlAt D i σ) (aMiAt D i σ)
-    (fun ρ => (GlobalTheory.T.liftRows_antitone_signature_rank D i σ ρ).2.2.1.le)
+    (fun ρ => (_root_.GlobalTheory.LowRow.lift_rows_antitone D i σ ρ).2.2.1.le)
     (fun ρ => by
-      obtain ⟨-, -, hpq, hWV⟩ := GlobalTheory.T.liftRows_antitone_signature_rank D i σ ρ
+      obtain ⟨-, -, hpq, hWV⟩ := _root_.GlobalTheory.LowRow.lift_rows_antitone D i σ ρ
       exact ⟨by omega, by omega⟩)
-    (fun ρ => ⟨(GlobalTheory.T.liftRows_antitone_signature_rank D i σ ρ).1, (GlobalTheory.T.liftRows_antitone_signature_rank D i σ ρ).2.1⟩)
+    (fun ρ => ⟨(_root_.GlobalTheory.LowRow.lift_rows_antitone D i σ ρ).1, (_root_.GlobalTheory.LowRow.lift_rows_antitone D i σ ρ).2.1⟩)
   simpa [deltaAtEmb] using h
 
 end GlobalTheory.LowRowAdel

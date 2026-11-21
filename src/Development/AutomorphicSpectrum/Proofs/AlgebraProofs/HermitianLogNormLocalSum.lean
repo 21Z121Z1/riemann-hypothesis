@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Definitions.AdelicLattices.FactPrimes
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.LatNormGrLatNeZeroOfSpan
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.DifferentIdealLogSumRootDiscriminantStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.DifferentIdealLogSumRootDiscriminant
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LogNormsOfNonzeroAdelicStatement
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SumEmbeddingsBaseChangeStatement
-import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LogIdealSupportFiniteStatement
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.SumEmbeddingsBaseChange
+import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LogIdealSupportFinite
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.ProductFormulaLogNormsStatement
 
 open NumberField Matrix GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Fl
@@ -56,7 +56,7 @@ theorem deg_of_local_formulas : ∀ (k E : Type) [Field k] [NumberField k] [Fiel
   constructor
   · have S1 := GlobalTheory.T.log_norms_of_nonzero_adelic k ρ hρ
     have S4 := GlobalTheory.T.log_norms_of_nonzero_adelic k (d : k) hdk
-    have S3 := GlobalTheory.T.logIdeal_support_finite E (differentIdeal ℤ (𝓞 E)) differentIdeal_ne_bot
+    have S3 := _root_.GlobalTheory.CompanionTheory.Ar.Fl.finite_logIdeal_ne_zero E (differentIdeal ℤ (𝓞 E)) differentIdeal_ne_bot
     refine (((S1.union S4).union S3).union hfin).subset ?_
     rintro ℓ ⟨j, hj⟩
     by_contra h
@@ -83,8 +83,8 @@ theorem deg_of_local_formulas : ∀ (k E : Type) [Field k] [NumberField k] [Fiel
         + ((-(m / e) * (((p : ℝ) + q) / 2)) * (∑ j : E →+* ℂ_[ℓ], logIdeal (j.comp (algebraMap (𝓞 E) E)) (differentIdeal ℤ (𝓞 E)))
         + (((p : ℝ) + q) / 2) * (LogNorms.ofElt (d : k)).finSum ℓ)) := by
       intro ℓ
-      have f1 := GlobalTheory.T.sum_embeddings_base_change E k ℂ_[ℓ] τ (fun i => Real.log ‖i (t ℓ)‖)
-      have f2 := GlobalTheory.T.sum_embeddings_base_change E k ℂ_[ℓ] τ
+      have f1 := _root_.GlobalTheory.CompanionTheory.Ar.Fl.finrank_mul_sum_comp_eq E k ℂ_[ℓ] τ (fun i => Real.log ‖i (t ℓ)‖)
+      have f2 := _root_.GlobalTheory.CompanionTheory.Ar.Fl.finrank_mul_sum_comp_eq E k ℂ_[ℓ] τ
         (fun i => logIdeal (i.comp (algebraMap (𝓞 E) E)) (differentIdeal ℤ (𝓞 E)))
       have g1 : ∑ j : E →+* ℂ_[ℓ], (Real.log ‖j (t ℓ)‖ + Real.log ‖j (t' ℓ)‖ + Real.log ‖j a‖) =
           ∑ j : E →+* ℂ_[ℓ], -((p : ℝ) + q) * logIdeal (j.comp (algebraMap (𝓞 E) E)) (differentIdeal ℤ (𝓞 E)) :=
@@ -113,7 +113,7 @@ theorem deg_of_local_formulas : ∀ (k E : Type) [Field k] [NumberField k] [Fiel
     have hA := GlobalTheory.T.product_formula_log_norms k ρ hρ
     have hE := GlobalTheory.T.product_formula_log_norms E a ha
     have hG := GlobalTheory.T.product_formula_log_norms k (d : k) hdk
-    have hΔ := GlobalTheory.T.different_ideal_log_sum_root_discriminant E
+    have hΔ := _root_.GlobalTheory.CompanionTheory.Ar.Fl.different_sum_eq_neg_finrank_mul_log_rootDiscr E
     have hfs : ∑ᶠ ℓ, N.finSum ℓ = 1 * (∑ᶠ ℓ, (LogNorms.ofElt ρ).finSum ℓ)
         + (((m / e) * (1 / 2)) * (∑ᶠ ℓ, (LogNorms.ofElt a).finSum ℓ)
         + ((-(m / e) * (((p : ℝ) + q) / 2)) * (∑ᶠ ℓ : Nat.Primes, ∑ j : E →+* ℂ_[ℓ], logIdeal (j.comp (algebraMap (𝓞 E) E)) (differentIdeal ℤ (𝓞 E)))
@@ -131,7 +131,7 @@ theorem deg_of_local_formulas : ∀ (k E : Type) [Field k] [NumberField k] [Fiel
         nsmul_eq_mul, hcardC, ← Finset.sum_div]
     have hAτ : ∑ s : k →+* ℂ, Real.log ‖s (τ a)‖ = (m / e) * ∑ s : E →+* ℂ, Real.log ‖s a‖ := by
       rw [div_mul_eq_mul_div, eq_div_iff he, mul_comm]
-      exact GlobalTheory.T.sum_embeddings_base_change E k ℂ τ (fun i => Real.log ‖i a‖)
+      exact _root_.GlobalTheory.CompanionTheory.Ar.Fl.finrank_mul_sum_comp_eq E k ℂ τ (fun i => Real.log ‖i a‖)
     have hdinf : ∑ s : k →+* ℂ, Real.log ‖s (d : k)‖ = m * Real.log d := by
       simp only [map_natCast, Complex.norm_natCast, Finset.sum_const, Finset.card_univ,
         nsmul_eq_mul, hcardC]

@@ -25,7 +25,7 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnSourceIffOfDensity
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralInvPowAddNormSqComplexSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralInvPowAddNormSqComplexSpace
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -54,7 +54,7 @@ theorem lintegral_fubiniStudy_density_eq_one : ∀ n : ℕ, ∫⁻ v : Reciproci
     funext z
     rw [EuclideanSpace.norm_sq_eq]
     rfl
-  rw [hV, GlobalTheory.T.lintegral_inv_pow_add_normSq_complexSpace n 0 1 one_pos, ← ENNReal.ofReal_mul hc]
+  rw [hV, _root_.GlobalTheory.ComplexSpaceIntegral.lintegral_inv_pow_add_sum_norm_sq n 0 1 one_pos, ← ENNReal.ofReal_mul hc]
   have hpi : Real.pi ^ n ≠ 0 := pow_ne_zero _ Real.pi_ne_zero
   have hf : (n.factorial : ℝ) ≠ 0 := by exact_mod_cast (Nat.factorial_pos n).ne'
   rw [show (n.factorial : ℝ) / Real.pi ^ n * (Real.pi ^ n * (Nat.factorial 0 : ℝ) /

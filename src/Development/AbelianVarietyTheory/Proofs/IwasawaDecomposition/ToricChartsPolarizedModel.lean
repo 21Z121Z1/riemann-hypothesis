@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasConesIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PushInvertibleOfHasTheta
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsChartOfIsLocalRing
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AuxiliaryInertOddPrime
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasFibrewiseNonvanishingThetaSectionOfSmoothModeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasFibrewiseNonvanishingThetaSectionOfSmoothMode
+import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.AnForm.R Formalism.L2.Pj
 open GlobalTheory.Toroidal GlobalTheory.Models GlobalTheory.LN GlobalTheory.ShFam GlobalTheory.LocM GlobalTheory.PolFan GlobalTheory.TorRef
@@ -24,7 +25,7 @@ theorem isLB_detOm_of_smooth {E : Type} [Field E] [NumberField E] [IsCMField E] 
     have := (inferInstance :
       SmoothOfRelativeDimension (0 + (D.dim + 0)) (inv (genι Y) ≫ genStr Y ≫ spMap (RingHom.id c.F)))
     simpa using this
-  have hθ : GlobalTheory.Models.HasTheta Y.t.G Y.t.PP.L := GlobalTheory.T.hasFibrewiseNonvanishingThetaSection_of_smooth_model E H D hpq l Xo c Y hs
+  have hθ : GlobalTheory.Models.HasTheta Y.t.G Y.t.PP.L := _root_.GlobalTheory.ThetaNormal.hasTheta_of_smooth E H D hpq l Xo c Y hs
   exact GlobalTheory.FlagMod.isLB_detOm (GlobalTheory.CompHS.TorFlagEx.pushInvertible_of_hasTheta Y hθ)
 
 end GlobalTheory.FanTheta

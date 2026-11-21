@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompId
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AsIdealSpMapClosedPoint
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHilbertSamuelRankDegreeShareLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithHilbertSamuelRankDegreeShareLe
+import Formalism.HarderNarasimhan.StatementPl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageDegEqDel
 
 open CategoryTheory AlgebraicGeometry NumberField
@@ -31,7 +32,7 @@ theorem choose_mul_compDeg_le : Quoted → ∀ (E : Type) [Field E] [NumberField
   obtain ⟨hD, hP⟩ := GlobalTheory.CompHS.compPresents_data E H Dw l Xo c Y X Z r U P R ω x D V dict h f₁ f₂ th k
   have e := GlobalTheory.HSCore.ImageDegree.imageDeg_eq_del hQ c.F (h.data f₁ f₂ th k).toTuple _ _ _ _ _
     (h.data f₁ f₂ th k).geom hB hP
-  refine share_of_data (h.data f₁ f₂ th k) hD rfl (h.d_eq f₁ f₂ th k) ?_ (GlobalTheory.T.arithHilbertSamuel_rankDegree_share_le hQ c.F _ hn hb)
+  refine share_of_data (h.data f₁ f₂ th k) hD rfl (h.d_eq f₁ f₂ th k) ?_ (_root_.GlobalTheory.HSCore.share_le hQ c.F _ hn hb)
   rw [← e, CompHt.compDeg, ← hD]
 
 end GlobalTheory.HSCore.CompShare

@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsobaricDiscr
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisRepBaseChange
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharacterTrivialAtWildOfCoprimePowStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PrimitiveRootNotPrimePowMapNeOneStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharacterTrivialAtWildOfCoprimePow
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PrimitiveRootNotPrimePowMapNeOne
 
 noncomputable section
 
@@ -108,7 +108,7 @@ theorem residue_ne_one (N : NData R H what₂) (i : N.Loc)
     have h15 : chiBar N i σ ^ 15 = 1 := by
       show (Units.map (IsLocalRing.residue (N.O i)).toMonoidHom) (N.chi i 1 σ) ^ 15 = 1
       rw [← map_pow, hpow σ hI, map_one]
-    exact GlobalTheory.T.character_trivial_at_wild_of_coprime_pow H.E N.Om q (N.plOm.1 w) hval _ (chiBar N i) (chiBar_open N i) σ
+    exact _root_.GlobalTheory.WildChar.main H.E N.Om q (N.plOm.1 w) hval _ (chiBar N i) (chiBar_open N i) σ
       (fun a ha => hσ a ha) 15 (by norm_num) hcop h15
   have hg : N.gam0 i w ∈ (chiBar N i).ker :=
     MonoidHom.mem_ker.2 (Units.ext (by simp only [chiBar_val, h1, Units.val_one]))
@@ -130,7 +130,7 @@ theorem residue_ne_one (N : NData R H what₂) (i : N.Loc)
   have hprim : IsPrimitiveRoot ((g : (N.O i)ˣ) : N.O i) 15 := by
     rw [IsPrimitiveRoot.coe_units_iff, ← hord]
     exact IsPrimitiveRoot.orderOf _
-  apply GlobalTheory.T.primitiveRoot_notPrimePow_map_ne_one' _ (N.O i) (IsLocalRing.residue (N.O i)) _ 15 (by norm_num) hprim not_isPrimePow_15
+  apply _root_.GlobalTheory.primitiveRoot_notPrimePow_map_ne_one _ (N.O i) (IsLocalRing.residue (N.O i)) _ 15 (by norm_num) hprim not_isPrimePow_15
   rw [← hσg]
   exact hIne σ hσ
 

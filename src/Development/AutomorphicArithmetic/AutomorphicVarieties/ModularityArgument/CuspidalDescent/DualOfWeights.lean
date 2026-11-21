@@ -391,7 +391,7 @@ theorem UpperTheory.V.Z.Desc.jPTw :
     (hLG' _ (hsp _ (hin _ (hlv v))) _ (hbc _ (hsp _ (hin _ (hlv v))))) lam (hψ v) (hfl' v) (hfl v).2
   refine upU PH l L Ω s n hn V Q c r ι B Λ R K hS J hJ x h lam hx hlam σ ρ' hσ hc' hs' hρ' hLG'
     (fun y => ?_) (fun w hw => ?_) ?_ fun v => ?_
-  · obtain ⟨ν, h1⟩ := GlobalTheory.T.exists_algebraicWeight_of_automorphic_definiteUnitary L n hn σ hσ (ι.toRingHom.comp y.res)
+  · obtain ⟨ν, h1⟩ := _root_.GlobalTheory.DefU.exists_hasWeightAt_of_isAutRepU L n hn σ hσ (ι.toRingHom.comp y.res)
     have h3 := hwt y.res ν h1
     rw [show HT' y.res = _ from (hab y.1).2 y.2] at h3
     rwa [← dual_of_weights (lam y.res) ν h3]

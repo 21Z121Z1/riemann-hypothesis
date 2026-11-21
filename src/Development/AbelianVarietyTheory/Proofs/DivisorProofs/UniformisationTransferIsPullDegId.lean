@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBase
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsBaseChangeUniformization
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsMonHomOfMul
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.DimSplitPf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullDegIdentitySymmStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullDegIdentitySymm
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifBaseChangeSt
 
 noncomputable section
 
@@ -24,7 +25,7 @@ theorem g_eq_of_isPullDeg_id {R : Type} [CommRing R] [IsDomain R] {D D' : DegPre
 
 theorem nonempty_isPullDeg_id_symm {R : Type} [CommRing R] [IsDomain R] {D D' : DegPre R}
     (hD : IsPullDeg (RingHom.id R) D D') : Nonempty (IsPullDeg (RingHom.id R) D' D) :=
-  GlobalTheory.T.isPullDeg_identity_symm R D D' hD
+  _root_.GlobalTheory.PullDegSymm.isPullDeg_symm R D D' hD
 
 theorem exists_unif_of_isPullDeg_id {R : Type} [CommRing R] [IsDomain R] {I : Ideal R} (hR : AdmBase R I)
     {D D' : DegData R I} (hD : IsPullDeg (RingHom.id R) D.toPre D'.toPre) {A : PolAV (Sp (FractionRing R))}

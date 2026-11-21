@@ -13,10 +13,15 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedConjugate
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnramifiedNonsplitExistsConjInvolutionUniformise
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenIsCompactUnitaryIntegralPoints
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsComplementaryProductOfIsCuspidal
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetDefiniteUnitaryDoubleCosetsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteDimensionalDefiniteUnitaryLevelFormsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocalUnitaryEmbeddingDefiniteUnitaryNonsplStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSatakeParameterDefiniteUnitaryInertPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFinsetDefiniteUnitaryDoubleCosets
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteClassSetHermitianUnitaryOpenLevel
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RamificationIdxEqOneOfIsSquare
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueIsConjAt
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteDimensionalDefiniteUnitaryLevelForms
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLocalUnitaryEmbeddingDefiniteUnitaryNonspl
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivOfISupRange
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSatakeParameterDefiniteUnitaryInertPlace
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSatakeParameterSphericalUnramifiedUnitary
 
 noncomputable section
 
@@ -128,7 +133,7 @@ theorem isUnramU_of_hasSatAt {π : Submodule ℂ (UA E n → ℂ)} {s : w.adicCo
     {ϖ : w.adicCompletion E} {q : ℕ} {α : Fin (n / 2) → ℂˣ} (h : HasSatAt π w s ϖ q α) : IsUnramU π w := by
   obtain ⟨b, hb, hJ, p, hp, σ, ⟨hσ, f, h0, h1, h2⟩, hS⟩ := h
   obtain ⟨v, hv, hv0⟩ := (Submodule.ne_bot_iff _).1 hS.1
-  obtain ⟨ι, -, hι, -⟩ := GlobalTheory.T.exists_localUnitary_embedding_definiteUnitary_nonsplit E n w s hs hval (not_isSplitAt hs hval)
+  obtain ⟨ι, -, hι, -⟩ := _root_.GlobalTheory.UnitaryBC.exists_locUnitary_embedding E n w s hs hval (not_isSplitAt hs hval)
   have hsurj : Function.Surjective p := fun g => by
     have hg : cT s g.1.val * antiJ _ n * g.1.val = antiJ _ n := g.2
     have hm : b * g.1 * b⁻¹ ∈ UJ s (1 : Matrix (Fin n) (Fin n) (w.adicCompletion E)) := by
@@ -158,8 +163,8 @@ theorem exists_hasSatAt
       (∀ x : E, s (algebraMap E _ x) = algebraMap E _ (IsCMField.complexConj E x)) ∧ IsUnramInv ϖ s q ∧
         HasSatAt π w s ϖ q α := by
   obtain ⟨s, ϖ, q, h1, h2⟩ := GlobalTheory.InertPlaceConj.exists_conj_isUnramInv E w (hE w) hw
-  obtain ⟨α, h3⟩ := GlobalTheory.T.exists_satakeParameter_definiteUnitary_inertPlace E n w s ϖ q h1 h2 (GlobalTheory.T.finiteDimensional_definiteUnitary_levelForms E n (GlobalTheory.T.exists_finset_definiteUnitary_doubleCosets E n))
-    (GlobalTheory.T.exists_localUnitary_embedding_definiteUnitary_nonsplit E n w s h1 h2.2.1 hw) π hπ hu
+  obtain ⟨α, h3⟩ := _root_.GlobalTheory.UnitaryBC.SatEx.exists_hasSatAt E n w s ϖ q h1 h2 (_root_.GlobalTheory.UnitaryBC.finiteDimensional_levelForms E n (_root_.GlobalTheory.UnitaryBC.ClassTransport.exists_finset_double_cosets E n))
+    (_root_.GlobalTheory.UnitaryBC.exists_locUnitary_embedding E n w s h1 h2.2.1 hw) π hπ hu
   exact ⟨s, ϖ, q, α, h1, h2, h3⟩
 
 theorem isNormalised_of_isCsd {P : CuspSub E a} (h : P.IsCsd) : GlobalTheory.DiscSpec.IsNormalised P := by

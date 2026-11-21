@@ -49,7 +49,7 @@ theorem exists_quadratic_tower_stage : _root_.GlobalTheory.FunPr.ThetaLocalInput
   choose c hc using fun t w => GlobalTheory.ConstRatio.exists_expAt (nuH G t i j) w
   have hI : ∀ t, (∏ w ∈ locPl G t, w.asIdeal ^ c t w) ≠ ⊥ := fun t =>
     Finset.prod_ne_zero_iff.2 fun w _ => pow_ne_zero _ w.ne_bot
-  choose f hf _ using fun t => GlobalTheory.T.first_standard_pair_member_has_theta_function D W.ψ W.θ _ WW rA rW _ _ _ _ _ hA hW (ch t).2.2.1 (he t) (hI t) hv
+  choose f hf _ using fun t => _root_.GlobalTheory.Adopt.first_standard_pair_member_has_theta_function D W.ψ W.θ _ WW rA rW _ _ _ _ _ hA hW (ch t).2.2.1 (he t) (hI t) hv
   choose f' hf' _ using fun t =>
     GlobalTheory.T.exists_thetaFunction_standardPairSecond D W.ψ W.θ _ WW rA' rW _ _ _ _ A.rank _ hA' hW (ch t).2.2.1 (he t) (hI t) hv'
   obtain ⟨m, fd, hm⟩ := GlobalTheory.ConstRatio.exists_meas A

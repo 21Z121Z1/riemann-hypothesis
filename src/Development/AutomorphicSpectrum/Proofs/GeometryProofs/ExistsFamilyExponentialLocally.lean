@@ -2,8 +2,8 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExponentialFamilyPeriods
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeGram
 import Development.AbelianVarietyTheory.Definitions.Uniformization.PointEqOfSubsingleton
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalHolomorphicExponentialChartStatement
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannFormPeriodDeterminantStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalHolomorphicExponentialChart
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannFormPeriodDeterminant
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.IdealSheafComapIdealAffineOpenOfIsAffine
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.HolPairA
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsHolToOfComponents
@@ -502,7 +502,7 @@ open ExpLoc in
 
 theorem exists_famExp_near : ∀ (R : Type) [CommRing R] (G : Over (Sp R)) [GrpObj G] [IsCommMonObj G] (g n : ℕ) (M : LieModel G (𝟙 (Sp R)) (Fin g → R)) (B : Set (Fin n → ℂ)) (ψ : (Fin n → ℂ) → (R →+* ℂ)), Smooth G.hom → IsHolPts B ψ → ∀ b₀ ∈ B, ∃ ε : ℝ, 0 < ε ∧ ball b₀ ε ⊆ B ∧ Nonempty (FamExp G M (ball b₀ ε) ψ) := by
   intro R _ G _ _ g n M B ψ hsm hψ b₀ hb₀
-  obtain ⟨V, t, N, f, ε, Ψ, hε, hsub, hΨ, hfib, δ, hδ, hret⟩ := GlobalTheory.T.local_holomorphic_exponential_chart R G g n M B ψ hsm hψ b₀ hb₀
+  obtain ⟨V, t, N, f, ε, Ψ, hε, hsub, hΨ, hfib, δ, hδ, hret⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exp_chart R G g n M B ψ hsm hψ b₀ hb₀
   have hone : ∀ b ∈ ball b₀ ε, Ψ b 0 = 1 := fun b hb => (hfib b hb).1
   have hder := fun b hb => (hfib b hb).2.1
   have hV : ∀ b ∈ ball b₀ ε, ∀ z ∈ ball (0 : Fin g → ℂ) ε, ⊤ ≤ (Ψ b z).left ⁻¹ᵁ V :=
@@ -513,7 +513,7 @@ theorem exists_famExp_near : ∀ (R : Type) [CommRing R] (G : Over (Sp R)) [GrpO
       (∀ j, ‖valAt' x.left V (f j) - valAt' (Ψ b₀ 0).left V (f j)‖ < δ) →
       coord V t x ∈ ball (0 : Fin g → ℂ) ε ∧ x = Ψ b (coord V t x) := hret
   obtain ⟨hman, hm0, hK, hunit, hcomm, hassoc⟩ := chartMul_law (f := f) hε hδ hΨ hone hV ht hret'
-  obtain ⟨L, hLan, hL0, hLadd⟩ := GlobalTheory.T.holomorphic_group_law_germ n g b₀ (chartMul V t Ψ) hman hunit hcomm hassoc
+  obtain ⟨L, hLan, hL0, hLadd⟩ := _root_.GlobalTheory.CompanionTheory.Ar.Flat.exists_local_log_of_commutative_law n g b₀ (chartMul V t Ψ) hman hunit hcomm hassoc
   obtain ⟨Λ, hΛan, hLΛ, hΛL⟩ := exists_family_inverse b₀ L hLan hL0
   have hsl := family_inverse_slices b₀ L Λ hΛan hL0 hLΛ hΛL
   have hΛ0 : Λ (b₀, 0) = 0 := hsl.self_of_nhds.1

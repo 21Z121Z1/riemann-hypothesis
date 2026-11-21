@@ -19,7 +19,7 @@ theorem first_row_invariant_under_twist : _root_.GlobalTheory.FunPr.ThetaLocalIn
       GlobalTheory.ExpansionInvariance.pairPts ch.S.toGridChoice τ x (Function.update y 0 (y 0 * k)) v (ch.S.formC t u (y 0 * k)) =
       GlobalTheory.ExpansionInvariance.pairPts ch.S.toGridChoice τ x y v (ch.S.formC t u (y 0)) := by
   intro hP hS
-  obtain ⟨a, h1⟩ := GlobalTheory.T.gridBottomLevel_le_formLevel_largeDepth
+  obtain ⟨a, h1⟩ := _root_.GlobalTheory.FirstRowLevel.levRow_zero_le
   obtain ⟨b, h2⟩ := _root_.GlobalTheory.T.vertex_pair_points_transformation_law hP hS
   refine ⟨max a b, fun ε CF hC => ?_⟩
   obtain ⟨x₁, h1⟩ := h1 ε CF (le_of_max_le_left hC)

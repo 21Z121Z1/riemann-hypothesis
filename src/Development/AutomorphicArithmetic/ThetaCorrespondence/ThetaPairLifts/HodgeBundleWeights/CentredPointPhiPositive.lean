@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharZeroStalkCompactFlagSpaceOverComponentStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompleteDVRReadingCentredValuationStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitGenericPointMemCompactFlagSpaceOpenPartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharZeroStalkCompactFlagSpaceOverComponent
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCompleteDVRReadingCentredValuation
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitGenericPointMemCompactFlagSpaceOpenPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFramedPointOfCompactFlagSpaceOpenPartStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemModelInteriorOfMemAbelianLocusPullbackStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemModelInteriorOfMemAbelianLocusPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsExtensionDvrFlagLift
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasPhiExistsExtAndUnique
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialSupportHolds
@@ -31,14 +31,14 @@ theorem degree_valuation_phi_pos (hP : _root_.GlobalTheory.CovTop.PublishedHodge
     (ν : Valuation ((Y₀ TF.X Z).presheaf.stalk y) (WithZero (Multiplicative ℤ))) (hν : Centred y ν) :
     ∃ φ : ℝ, 0 < φ ∧ PhiAt TF.X Z y ν φ := by
   obtain ⟨h1, h2, h3⟩ := hν
-  haveI := GlobalTheory.T.charZero_stalk_compactFlagSpaceOverComponent TF Z y
+  haveI := _root_.GlobalTheory.CompHS.charZero_stalk_Y₀ TF Z y
   haveI : IsDomain ((Y₀ TF.X Z).presheaf.stalk y) := by
     refine @NoZeroDivisors.to_isDomain _ _ inferInstance ⟨fun {a b} hab => ?_⟩
     have := congrArg ν hab
     rw [map_mul, map_zero, mul_eq_zero] at this
     exact this.imp (h3 a) (h3 b)
-  obtain ⟨T, g, ρ, hρ, hinj, hloc, hval⟩ := GlobalTheory.T.exists_completeDVR_reading_centredValuation _ ν h1 h2 h3
-  have hz := GlobalTheory.T.traitGenericPoint_mem_compactFlagSpaceOpenPart TF Z y T.Fr ((algebraMap T.V T.Fr).comp g)
+  obtain ⟨T, g, ρ, hρ, hinj, hloc, hval⟩ := _root_.GlobalTheory.CentredDiscreteRead.exists_cdvr_read _ ν h1 h2 h3
+  have hz := _root_.GlobalTheory.GenTrait.top_le_preimage_flagOpen TF Z y T.Fr ((algebraMap T.V T.Fr).comp g)
     ((IsFractionRing.injective T.V T.Fr).comp hinj)
   obtain ⟨io, hP'⟩ := GlobalTheory.T.exists_framedPoint_of_compactFlagSpaceOpenPart TF.X T.Fr _ hz
   letI := io.toAlgebra
@@ -60,7 +60,7 @@ theorem degree_valuation_phi_pos (hP : _root_.GlobalTheory.CovTop.PublishedHodge
     exact IsLocalRing.comap_closedPoint f
   have hpos : 0 < φT := by
     refine _root_.GlobalTheory.T.minimal_period_pos hP T' _ y' φT hφT G t' m1 m2 fun hab => hy ?_
-    have h := GlobalTheory.T.mem_modelInterior_of_mem_abelianLocus_pullback TF.Y _ _ G m3 _ hab
+    have h := _root_.GlobalTheory.AbInterior.mem_interior_of_mem_abLocus TF.Y _ _ G m3 _ hab
     have e1 : (spMap j) (IsLocalRing.closedPoint T'.V) = IsLocalRing.closedPoint T.V := hcl j hjloc
     have e2 : (Spec.map (CommRingCat.ofHom g)) (IsLocalRing.closedPoint T.V) =
         IsLocalRing.closedPoint ((Y₀ TF.X Z).presheaf.stalk y) := hcl g hloc

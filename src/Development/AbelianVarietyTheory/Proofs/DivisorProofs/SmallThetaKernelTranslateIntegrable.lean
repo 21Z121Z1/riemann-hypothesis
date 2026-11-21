@@ -5,11 +5,14 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftPRouteSmall
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareThetaTripleHypothesesOfStandingStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslatedKernelLeThetaFunctionRouteBigVertexStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslatedKernelLeThetaFunctionRouteBigVertex
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicHeightBlockDiagonalEmbeddingLeMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallRouteKernelLeftInvariantRationalUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousTranslatesKernelRouteSmallVertex
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestPlacesPrimeToLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestPlacesPrimeToLevel
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.RowTest GlobalTheory.RowClaim
@@ -25,7 +28,7 @@ theorem splitBound_ge : Big fun {D} _ _ _ _ _ _ _ _ _ _ _ _ => 11 ≤ D.host.spl
   exact ⟨0, fun _ _ _ => ⟨0, fun D large₂ _ _ Γ _ _ Pl0 T A Ks _ _ _ R F hS _ _ _ => hS.size.2.1.eleven_le⟩⟩
 
 theorem standing : Big fun ch => ∀ t, SquareStanding ch.G t := by
-  obtain ⟨CF0, hH⟩ := splitBound_ge.and GlobalTheory.T.test_places_prime_to_level
+  obtain ⟨CF0, hH⟩ := splitBound_ge.and _root_.GlobalTheory.PlacesPrime.places_prime_to_level
   refine ⟨CF0, fun ε CF hCF => ?_⟩
   obtain ⟨x₀, hx⟩ := hH ε CF hCF
   refine ⟨x₀, fun D large₂ he hx0 Γ _ _ Pl0 T A Ks _ _ _ R F hS ch hch hsc t => ?_⟩

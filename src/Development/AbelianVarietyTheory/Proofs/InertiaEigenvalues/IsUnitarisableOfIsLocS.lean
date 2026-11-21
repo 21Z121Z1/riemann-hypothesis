@@ -74,7 +74,7 @@ theorem exists_form_rowRepR (hH : GlobalTheory.Published.HarishChandraFinite) (h
   have hM := hP.char.base.models
   have hθ : IsInfFam R.θ := hM.inf
   have hSig : (Yc D 0).SigOK := D.sp.Y_sig 0
-  have hcc := GlobalTheory.T.unitary_congruence_conj_contains_congruence D.host.E D.R.r
+  have hcc := _root_.GlobalTheory.CongConjugate.congConj D.host.E D.R.r
   have hfd : ∀ j, j < D.R.m → (R.νY A3.A.μ0 j).IsHaarMeasure ∧
       IsFundamentalDomain (GQ (Yc D j)) (R.fdY A3.A.μ0 j) (R.νY A3.A.μ0 j) := by
     intro j hj
@@ -92,7 +92,7 @@ theorem exists_form_rowRepR (hH : GlobalTheory.Published.HarishChandraFinite) (h
   obtain ⟨B', h1, h2, h3, h4⟩ := GlobalTheory.finTyp_invariant_form_of_isotIn D D.R.r _ (actM Y.PY (R.MY 0))
     (Minf R.θ Y.PY (R.MY 0)) (ipM (R.MY 0) (R.νY A3.A.μ0 0) (R.fdY A3.A.μ0 0)) hlin hherm hpos
     (fun h x hx => GlobalTheory.FinTypesRows.minf_stable Y.PY hcc h hx)
-    (fun h x hx y hy => GlobalTheory.T.schur_pairing_invariant_under_standard_group D (Yc D 0) _ R.θ (R.MY 0) D.R.r Y.PY (R.νY A3.A.μ0 0) (R.fdY A3.A.μ0 0) hSA hSig hθ
+    (fun h x hx y hy => _root_.GlobalTheory.SchurPairingInvariant.ipM_actM D (Yc D 0) _ R.θ (R.MY 0) D.R.r Y.PY (R.νY A3.A.μ0 0) (R.fdY A3.A.μ0 0) hSA hSig hθ
       hHaar hFD h x hx y hy) (FinTyp.conjT π) hne
   exact GlobalTheory.RowLocalRows.form_of_conjT π B' h1 h2 h3 h4
 

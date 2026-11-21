@@ -51,7 +51,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelia
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.GtActIffEqGtSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRescaleIsPullDegGeneratingEverywhereStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiUnitOnUnivOfPullbackReadTopStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullDegKeepsBimultActionPolarisationElementStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullDegKeepsBimultActionPolarisationElement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RescaledDegenerationDataDifferByScalarStatement
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
@@ -69,7 +69,7 @@ theorem main : ∀ {E : Type} [Field E] [NumberField E] [IsCMField E] {H : Host 
   letI := H.starRing
   obtain ⟨g, hD, hxe, hβ, hWt⟩ := GlobalTheory.T.exists_rescale_isPullDeg_generating_everywhere θ₀ D₀ Q e.toAddEquiv β hU gp hL hc
   letI : Module (𝓞 E) (GlobalTheory.PolDeg.rescale Q g).X := ‹Module (𝓞 E) Q.X›
-  obtain ⟨hB', o', ho', hW'⟩ := GlobalTheory.T.pullDeg_keeps_bimult_action_polarisationElement o₀ hD oQ.onB
+  obtain ⟨hB', o', ho', hW'⟩ := _root_.GlobalTheory.tauBimult_and_exists_oAct_of_pullDeg o₀ hD oQ.onB
     (fun a y => by rw [hxe, hxe]; exact e.map_smul a y) oQ.c_lin
     (fun a => by rw [hβ]; exact hact a) hB₀ H.w0 hW₀
   obtain ⟨q, h1, h2, h3, h4⟩ := GlobalTheory.T.rescaled_degenerationData_differ_by_scalar Q oQ g o' ho' hBQ hB' H.w0 hWQ hW'

@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSteinberg
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharEqOfSplitOfTied
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitary
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
 import Formalism.LocalToGlobal.UnitaryNorms.CharTransport
 
@@ -35,7 +35,7 @@ theorem main : ∀ {R : Ranks} (Hs : Host R) (μ : HChar Hs.E), IsCSD Hs μ → 
   have hcont : Continuous i := CT.continuous_compEquiv j w
   have halg : ∀ x, i (algebraMap Hs.E _ x) = algebraMap Hs.E _ (Hs.conj x) := fun x => CT.compEquiv_algebraMap j w x
   refine ⟨i, hcont, halg, ?_⟩
-  obtain ⟨ξ, -, huniq, -⟩ := GlobalTheory.T.heckeChar_localComponent_exists_unique_unitary Hs.E μ⁻¹ w
+  obtain ⟨ξ, -, huniq, -⟩ := _root_.GlobalTheory.HeckeComp.main Hs.E μ⁻¹ w
   set ψ₁ : (w.adicCompletion Hs.E)ˣ →* ℂˣ := (μ.loc (CT.plMap j w)).comp (Units.map i.toRingHom.toMonoidHom) with hψ₁
   have h1 : IsComp μ⁻¹ w ψ₁ := by
     refine ⟨?_, fun x => ?_⟩

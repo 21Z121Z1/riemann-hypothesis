@@ -4,7 +4,18 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SplitOffDetection
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.HkSupSizedOfHkSup
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckeValueIntegrality
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeOperatorPreservesSupLatticeRealSideStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeOperatorPreservesSupLatticeRealSide
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsUniqueHcharOfFiniteOrder
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.VpBounds
+import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGlIntertwinerOfResidualSpanEqTop
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.UnramifiedNoJump
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsAuxiliaryHeckeCharacter
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RankOneCuspidalUnitaryCharEquivApplySymm
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsLamTie0OfIsLamTie
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumThEmptyNeZero
+import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TwistSeries
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OfFirstStepLoc
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ExistsIsHeckeSetting
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
@@ -37,7 +48,7 @@ theorem ratHecke_keeps_ball_alt : ∀ hL : _root_.UpperTheory.Zero.LLC.RecTExist
       (Set.finite_singleton _).union (tuOf w.I (usedOf w.I T P.Wt)).finite_toSet
     exact hs.to_subtype
   let X := GlobalTheory.TwInputs.RealSide.ofPins x.m.z.geo x.m.z.pins x.m.intersectionNumber_baseChange x.m.inGeo hfin hHo hStd hSize
-  have hS := GlobalTheory.T.heckeOperator_preserves_supLattice_realSide hDec hI hT hRT (Dof x) X (idxOf (Dof x) j)
+  have hS := _root_.GlobalTheory.HeckeSupReal.hkSupAt_realSide hDec hI hT hRT (Dof x) X (idxOf (Dof x) j)
   have hlow : ∀ p ∈ lowAll (Dof x), p ≠ 0 → ((p : ℕ) : 𝓞 (Dof x).host.E) ∉ v.asIdeal := by
     intro p hp hp0 hm
     apply hPS

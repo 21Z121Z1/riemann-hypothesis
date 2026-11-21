@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaCoefficien
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnfoldingHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateOfWhittakerStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerNondegenerateOfIwasawaStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockSplittingMaximalCompactStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FockSplittingMaximalCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerAdditivityStatement
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.SphericalBigCell.IfrBAddOfWeilThetaConvergence
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdjOne
@@ -36,7 +36,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnipotentMapCon
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHermPart
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.EqZeroOfFourierCoefficientsVanish
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFourierUnfoldingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFourierUnfolding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCellInvariantUnipotentStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BigCellCosetsHermitianParamStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCharacterCellFactorizationStatement
@@ -53,11 +53,12 @@ import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.TensTo
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsStandardCartanInvolutionCommuteCompact
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnipotentAtTauMemStabilizer
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CompletionIsLocalRing
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DictionaryMaximalCompactPartsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnisotropyOfRangeStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerMaximalCompactGeneralStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DictionaryMaximalCompactParts
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AnisotropyOfRange
+import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.WhitKAOfGenLt
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerMaximalCompactGeneral
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.VanishTop2
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaAutomorphicOfConvergenceStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaAutomorphicOfConvergence
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.GlobalGaussLaws.Top7
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.WhitGenLt
 import Development.WeilBound.CoreStatements.AutomorphicKernels.UnitarySchrodingerModel.UnitarySchrodingerLemmas.SchrodingerMatching.MatchMono
@@ -73,9 +74,9 @@ open PositivityTheory.Rg.Sw.Glob PositivityTheory.PfSWUS
 
 theorem coefND : CoefND :=
   GlobalTheory.T.nondegenerate_of_whittaker GlobalTheory.T.unfolding_holds (GlobalTheory.T.theta_coefficient_of_convergence wtc)
-    (GlobalTheory.T.whittaker_nondegenerate_of_iwasawa (GlobalTheory.T.whittaker_maximal_compact_general whitGenLt (GlobalTheory.T.dictionary_maximal_compact_parts GlobalTheory.T.fock_splitting_maximal_compact GlobalTheory.T.whittaker_additivity
+    (GlobalTheory.T.whittaker_nondegenerate_of_iwasawa (_root_.GlobalTheory.CompanionTheory.IwaAd.whitKAOfGenLt whitGenLt (_root_.GlobalTheory.CompanionTheory.SWDict.dictKA_of_parts _root_.GlobalTheory.CompanionTheory.PfSWUS.fockSplitK GlobalTheory.T.whittaker_additivity
       (PositivityTheory.PfSWUS.HandIAdd.ifrBAdd_of_weilThetaConvergence wtc) PositivityTheory.PfSWUS.SwMatch.matchMono)
-      GlobalTheory.T.anisotropy_of_range))
+      _root_.GlobalTheory.CompanionTheory.AnisoRange.anisoOfRange))
 
 theorem lit : GlobalTheory.Published.SiegelWeilUnitarySchrodingerLit := by
   intro D n V a1 a2 a3 ψ hψ χ hχ hη θ hθ μ 𝓕 hμ ω hω H hH l hl s hs ν hν Φ hΦ g

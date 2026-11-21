@@ -11,12 +11,17 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharact
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTupChars
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistIndexSetEqProdLocalRepresentatives
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTupleAdelicDataStandardBasePointsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSplitPlaceGeometryExtensionCosetOrbitRepsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsExtGeometryTupleOfRepresentativesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSplitPlaceGeometryExtensionCosetOrbitReps
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsOpenKerUnramMulTame
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsExtGeometryTupleOfRepresentatives
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsCompletionTwistDataChainColumnsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistIndexDataRepresentativeDependsOnDoubleCosetStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistIndexSetEqProdLocalRepresentativesStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilCharacterSplitDegreeOnePlaceEqExpStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TwistIndexDataRepresentativeDependsOnDoubleCoset
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
+import Formalism.LocalToGlobal.Columns.ChainTw
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeilCharacterSplitDegreeOnePlaceEqExp
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsCombAt
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NatCastNotMemUnderSq
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsGAtAllPlacesMul
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StepInverseCharacterLocalComponentChainTameStatement
 
 noncomputable section
@@ -35,7 +40,7 @@ variable {B : GlobalTheory.Mem.Base} {X : PreX B.toPre} {I : TC B X} {l : I.Laws
 theorem idxProd (hI : I.Ok) (hT : I.IsTw) (a : I.ι) : IdxProd I.sel (I.tup a) (I.cst a) (I.idx a) := by
   have h := hI.idx_ok a
   rw [(hT a).2] at h ⊢
-  exact GlobalTheory.T.twistIndexData_representative_dependsOnDoubleCoset _ _ _ _ _ _ _ _ _ _ h
+  exact _root_.GlobalTheory.TwBridge.idxProd_twIdx _ _ _ _ _ _ _ _ _ _ h
 
 theorem h_one (hT : I.IsTw) (a : I.ι) : ∀ j b (P : BadPr I a), P.1 ∈ (B.primes X).vGs → (I.idx a).h j b P = 1 := by
   rw [(hT a).2]
@@ -91,7 +96,7 @@ theorem exists_good (hI : I.Ok) (hT : I.IsTw) (P : BadPr I a) (hP : P.1 ∉ (B.p
   have hd := TC.degOne_of_ok hI a P
   obtain ⟨⟨ϖ, unif, ψ, cont, cond, δ, tame, η, unr, sg⟩, hA, h1, h2, h3, h4⟩ :=
     GlobalTheory.T.exists_completionTwistData_chainColumns _ _ _ _ _ _ _ _ _ _ _ hL P hP G.k (G.q.pr.comp (incA (I.rec7 l Z))) G.ϖ hcp G.unif G.ψk hψ G.cond
-      (GlobalTheory.T.weilCharacter_splitDegreeOne_place_eq_exp (I.rec7 l Z) G.k G.q P.1 hid hd.1 hd.2 hcp.int c.ψ hstd G.ψk G.char) μ
+      (_root_.GlobalTheory.SplitDegOnePow.weilChar_pr_eq_exp (I.rec7 l Z) G.k G.q P.1 hid hd.1 hd.2 hcp.int c.ψ hstd G.ψk G.char) μ
       fun i hi => GlobalTheory.T.step_inverse_character_local_component_chain_tame I hI l Z a P hP G.k G.q hid hcp.int hcp.dense i hi (χ i) (hχ i hi) _ (hμ (i + 1))
   dsimp only at h1 h2 h3 h4
   subst h1 h2
@@ -103,8 +108,8 @@ theorem exists_good (hI : I.Ok) (hT : I.IsTw) (P : BadPr I a) (hP : P.1 ∉ (B.p
   have hmu : ∀ j, j ≤ G.s + 1 → (ofSplit G.q).IsComp (χ j)⁻¹ (η (j + 1) * δ) := fun j hj => by
     rw [h3 j (by omega)]
     exact hμ (j + 1)
-  obtain ⟨E₀, rfl, rfl, rfl, e4⟩ := GlobalTheory.T.exists_extGeometry_tuple_of_representatives _ c v Bs _ G χ hc δ tame η unr hmu A a1 _ a2
-  obtain ⟨E, e1, e2, e3, e5, -, e6⟩ := GlobalTheory.T.exists_splitPlaceGeometryExtension_cosetOrbitReps _ c v Bs _ G χ hc _ tame _ unr hmu _ a1 _ a2 (E₀.Ch (G.s + 1))
+  obtain ⟨E₀, rfl, rfl, rfl, e4⟩ := _root_.GlobalTheory.QExtEx.exists_qExt _ c v Bs _ G χ hc δ tame η unr hmu A a1 _ a2
+  obtain ⟨E, e1, e2, e3, e5, -, e6⟩ := _root_.GlobalTheory.QTw.CosExt.exists_qExt_cos _ c v Bs _ G χ hc _ tame _ unr hmu _ a1 _ a2 (E₀.Ch (G.s + 1))
     (fun y => (E₀.cos y).out ∘ id) (fun y y' h => E₀.cos_inj y y' (by
       rw [← e4] at h
       simpa only [Function.comp_id, Submodule.Quotient.mk_out] using h))

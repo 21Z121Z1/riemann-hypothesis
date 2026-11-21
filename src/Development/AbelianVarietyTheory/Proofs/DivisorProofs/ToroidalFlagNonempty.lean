@@ -1,6 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyIntegralFlagModelOfSmoothCoefficientFielStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyIntegralFlagModelOfSmoothCoefficientFiel
+import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyCuspFrame
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushforwardPolarisationBundleInvertibleOnModel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.AllSixAbelianSchemeLawsHold
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AuxiliaryInertOddPrime
@@ -29,6 +30,6 @@ variable {E : Type} [Field E] [NumberField E] [IsCMField E] {H : ReciprocityTheo
 theorem torFlag_of_model (Y : Model Xo c (RingHom.id c.F)) (hs : SmoothOfRelativeDimension Dw.dim Y.s)
     (hb : ReciprocityTheory.AnForm.R.FinalTheorems.Snc (LogKS.boundary Y)) (hk : LogKS.HasLogKS Y.t Y.s (LogKS.interior Y))
     (hp : PushInvertible Y.t.G Y.t.PP.L) : Nonempty (TorFlag Xo c) :=
-  ⟨⟨Y, hs, hb, hk, (GlobalTheory.T.nonempty_integralFlagModel_of_smooth_coefficientField E H Dw l Xo c Y hs hp).some⟩⟩
+  ⟨⟨Y, hs, hb, hk, (_root_.GlobalTheory.FlagMod.FieldFlag.nonempty_flagModel E H Dw l Xo c Y hs hp).some⟩⟩
 
 end GlobalTheory.CompHS.TorFlagEx

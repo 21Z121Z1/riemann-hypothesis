@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegIdxOfIsStd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseFits
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneSplit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SelfDualLatticeHasRigidification
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneSplitSelfDualHermitianComplementStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneSplitSelfDualHermitianComplement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfDefinite
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ExistsSmallTripleOfWeilVacuum
@@ -41,9 +41,9 @@ theorem quadratic_tower_step_base_stage : _root_.GlobalTheory.FunPr.ThetaLocalIn
     simp only [rankV, qq, Formalism.BasicNotions.Ranks.r]; omega
   have hb2 : 2 * pp D j ≤ rankV D (i + 1) (j + 1) := by
     simp only [rankV, pp, Formalism.BasicNotions.Ranks.r]; omega
-  obtain ⟨B', Λ₁, ι, x, y, hs, hsig, hsd, hneg⟩ := GlobalTheory.T.hyperbolicPlane_split_selfDual_hermitian_complement D A' X.rA'.Λ q hXI.rigA'.1 hnA' (by omega) (by omega)
+  obtain ⟨B', Λ₁, ι, x, y, hs, hsig, hsd, hneg⟩ := _root_.GlobalTheory.PlaneComplement.plane_split_complement D A' X.rA'.Λ q hXI.rigA'.1 hnA' (by omega) (by omega)
   obtain ⟨WW₁, ΛW, ι', x', y', hs', hsig', hsd', hneg'⟩ :=
-    GlobalTheory.T.hyperbolicPlane_split_selfDual_hermitian_complement D WW X.rW.Λ (p + q) hXI.rigW.1 (by simpa only [add_assoc] using hnW) (by omega) (by omega)
+    _root_.GlobalTheory.PlaneComplement.plane_split_complement D WW X.rW.Λ (p + q) hXI.rigW.1 (by simpa only [add_assoc] using hnW) (by omega) (by omega)
   obtain ⟨rB, eB, hB⟩ := GlobalTheory.RigExists.exists_rig D B' Λ₁ hsig hsd
   obtain ⟨rW, eW, hW⟩ := GlobalTheory.RigExists.exists_rig D WW₁ ΛW hsig' hsd'
   obtain ⟨Y, e1, e2, e3, hY⟩ := _root_.GlobalTheory.T.exists_small_triple_of_weil_vacuum hP D T A A' WW B' WW₁ X W.ψ W.θ _ _ _ _ rB rW W.θ_is hXI hB hW

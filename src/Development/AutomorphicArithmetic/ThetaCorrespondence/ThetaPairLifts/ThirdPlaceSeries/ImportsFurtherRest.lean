@@ -26,7 +26,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypes
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CoefficientCompatibilityOf
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinrankMaxUnramifiedSubfieldPadicFinExtPos
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThickLetterWordLatticeSurjectionHypotheses
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsIrrDistinctConstituentsAfterExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsIrrDistinctConstituentsAfterExtension
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JointCondTBAtRange
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AmbientH1fOfLocalFiniteness
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineSummandAndDualFromInverseCharacterTwi
@@ -44,8 +44,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ResidualAbsIrr
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.JumpSetDistinctOfRealPlaceFacts
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.SemisimpleDecompositionOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypePrimeExceedsConstant
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SignsAndJumpSetsAtTypePrimeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PointConditionsOfPointGaloisRepFamiliesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SignsAndJumpSetsAtTypePrime
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PointConditionsOfPointGaloisRepFamilies
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGlobalCompatibilityAtTypes
 import Formalism.SharpRestriction.LevelLetterCocycles.PairedCharacterCondition
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.GaloisConditionFiveExtraOf
@@ -53,10 +53,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameDescentCon
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LNotMemGset
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmFonOfPoints
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlockAndTorsionExponentBoundsCanonicalHubData
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecompositionLocalAboveStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecompositionLocalAbove
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DecompositionLocalAway
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorsionExponentLeOfJumpsAtEmbeddingsUnramifiedStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HostCompletionLeMaxUnramifiedPadicStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorsionExponentLeOfJumpsAtEmbeddingsUnramified
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HostCompletionLeMaxUnramifiedPadic
+import Development.AutomorphicArithmetic.ResidueCharacters.TwistedPlaces
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FinrankLeOfSubsetClosureRange
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChiCrysOfConstituent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitRowPrimeOf
@@ -71,8 +72,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLoc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PsiAtPsiAt
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontainePropertiesAllPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.BlochKatoFiniteTrivialRepUnramifiedColumnPlacesAStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxLengthLocalInvariantsTwistedFractionModIntegeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLatticeWachModuleExistsProofStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MaxLengthLocalInvariantsTwistedFractionModIntege
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLatticeWachModuleExistsProof
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TorsionExponentKillsInvariantsNoJumpZeroStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChebotarevDegreeOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LenUnitInvariantsTwistedLatticeLeOfKillingExponeStatement
@@ -98,14 +99,14 @@ theorem main_alt_alt : Hypotheses₂ → ∀ (D : D7) (L : SizeData₂ D) (P : P
   obtain ⟨-, -, -, -, hCB, hC0, ⟨M0, h0', hW⟩, -⟩ := hub
   intro i hT hg hR
   refine ⟨hCB i hT hg hR, ?_, ?_⟩
-  · have h := GlobalTheory.T.maxLength_localInvariants_twisted_fractionModInteger_le D i (X.dc i).col (fun h => hR.1 (Or.inl h)) (fun h => hR.2.1 (Or.inl h))
+  · have h := _root_.GlobalTheory.InvariantsKO.main D i (X.dc i).col (fun h => hR.1 (Or.inl h)) (fun h => hR.2.1 (Or.inl h))
       (fun h => hR.2.1 (Or.inr h)) (fun u hu => ((X.dc i).cover u).1 (Or.inr hu))
     have ht : (0 : ℝ) ≤ D.R.t := Nat.cast_nonneg _
     linarith
   · intro hsp u hu
     refine ⟨hC0 i hT hg hR hsp u hu, fun π hπ => ?_⟩
     obtain ⟨hu', s, hs, hc, hcrys, hJ, hnj, hcle⟩ := hW i hT hg hsp u hu π hπ
-    have hWat := GlobalTheory.T.crystallineLatticeWachModuleExists_proof D HW F Cm (D.nd.l i) (D.nbr i u hu').Kw s (D.nbr i u hu').LL hs
+    have hWat := _root_.GlobalTheory.NLink.wAll_holds D HW F Cm (D.nd.l i) (D.nbr i u hu').Kw s (D.nbr i u hu').LL hs
     have hHW := hWat (GlobalTheory.HubX.wLat D i (X.ρ i) π u hu' hc) M0 h0' hcrys hJ
     have hkill := GlobalTheory.T.torsion_exponent_kills_invariants_of_good hP.bk hP.tate hP.euler D HW F Cm (D.nd.l i) (D.nbr i u hu').Kw s (D.nbr i u hu').LL hs
       M0 h0' (GlobalTheory.HubX.wLat D i (X.ρ i) π u hu' hc) hHW hnj

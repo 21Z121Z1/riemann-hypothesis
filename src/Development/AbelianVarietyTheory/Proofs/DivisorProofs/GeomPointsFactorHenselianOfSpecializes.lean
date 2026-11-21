@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteEtaleLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsIntClosedLocalizationAndQuotient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRootSubMemOfEvalMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAffineRingHomPairOfSpecializesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralDomainExtensionWithMonicRootsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralDomainExtensionWithMonicRoots
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RingHomExtendOfIsIntegralIsAlgClosedStatement
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -27,7 +27,7 @@ theorem geomPoints_factor_henselian_of_specializes :
   let h' : D →+* k' := RingHom.kerLift g'
   have h'inj : Function.Injective h' := RingHom.kerLift_injective g'
   let h : D →+* k := Ideal.Quotient.lift q g (fun b hb => hker hb)
-  obtain ⟨C, _, _, hCdom, hCint, hCinj, hCroot, hCext⟩ := GlobalTheory.T.exists_integral_domain_extension_with_monic_roots D
+  obtain ⟨C, _, _, hCdom, hCint, hCinj, hCroot, hCext⟩ := _root_.GlobalTheory.exists_integral_domain_extension_monic_roots D
   obtain ⟨e', he'inj, he'⟩ := hCext k' h' h'inj
   obtain ⟨ψ, hψ⟩ := GlobalTheory.T.exists_ringHom_extend_of_isIntegral_of_isAlgClosed D C k h (by
     intro a ha; rw [RingHom.mem_ker] at ha ⊢

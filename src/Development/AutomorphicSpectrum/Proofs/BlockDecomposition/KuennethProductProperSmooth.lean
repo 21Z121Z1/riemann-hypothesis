@@ -1,8 +1,8 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethProductLocalGlobalStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethMayerVietorisRightStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethMayerVietorisRight
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.KuennethOfRestrictBijectiveStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictSelfPullCEqStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictSelfPullCEq
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.FormUniq
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.HodgeSurjectivity.NLeA
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.MapHComp
@@ -56,7 +56,7 @@ theorem glue_top (hMV : MVBij) (hCD : CovDesc) {K : Type} [Field K] (E : XD K) (
     (b₃ : ∀ a n, Function.Bijective ((resU (E.F₃ a) k₃).pull n))
     (g₁ : ∀ T, U₃ T → U₁ (E.L₁.obj T)) (g₂ : ∀ T, U₃ T → U₂ (E.L₂.obj T)) : E.Kun U₁ U₂ U₃ g₁ g₂ :=
   (GlobalTheory.T.kuenneth_of_restrict_bijective E g₁ g₂ (h₁ ∅) (h₂ ∅) k₁ (le_refl U₂) k₃ b₁ (fun a n => resU_self_bij _ _ _ n) b₃).2
-    (GlobalTheory.T.kuenneth_mayer_vietoris_right hMV hCD E U₂ V W hV hW h₁ h₂ hK)
+    (_root_.GlobalTheory.CompanionTheory.KunGlue.glue_l hMV hCD E U₂ V W hV hW h₁ h₂ hK)
 
 section Site
 

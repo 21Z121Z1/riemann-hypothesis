@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecZEqZeroOfGenVal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesOnEqModel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnReadingIntegerExponentSectionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnReadingIntegerExponentSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingSectionsFiniteType
 import Formalism.LocalToGlobal.ProjectiveLattices.TieGenDense
 

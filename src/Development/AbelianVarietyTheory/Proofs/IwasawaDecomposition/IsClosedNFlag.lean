@@ -11,15 +11,15 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAuto
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothAutomorphicFormRightTranslateFiniteAdelicStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeCharacterInfinityExponentGroupLawsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspFunctionClosedUnderOperationsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspFunctionClosedUnderOperations
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousAdelicUnitaryEmbeddingStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryUnimodularExistsFundamentalDomainStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLatticeStabiliserSubgroupOutsidePlacesStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeterssonNormSqPosAutomorphicFunctionUnitaryStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryUnimodularExistsFundamentalDomain
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLatticeStabiliserSubgroupOutsidePlaces
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeterssonNormSqPosAutomorphicFunctionUnitary
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DefiniteBesselPeriodSesquilinearStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueNormalizedHaarMeasureAdelicUnitaryStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BesselCharacterGenericCharacterLawsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsotropicUnipotentRadicalsRationalCocompactStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueNormalizedHaarMeasureAdelicUnitary
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BesselCharacterGenericCharacterLaws
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsotropicUnipotentRadicalsRationalCocompact
 
 noncomputable section
 
@@ -34,11 +34,11 @@ variable {D : D7}
 
 theorem exists_pair (V : HSp D) : ∃ m : Measure (GA D V) × Set (GA D V), IsQuot V m.1 m.2 ∧ (V.SigOK → IsVolPair D V m.1 m.2) := by
   by_cases hV : V.SigOK
-  · obtain ⟨μ, hμ, -⟩ := GlobalTheory.T.existsUnique_normalizedHaarMeasure_adelicUnitary D V hV
-    obtain ⟨-, 𝓕, h𝓕⟩ := GlobalTheory.T.adelicUnitary_unimodular_exists_fundamentalDomain D V μ hμ.1
+  · obtain ⟨μ, hμ, -⟩ := _root_.GlobalTheory.Mem.VolMeasure.existsUnique_isVolMeasG D V hV
+    obtain ⟨-, 𝓕, h𝓕⟩ := _root_.GlobalTheory.Mem.AdelicGroupFund.rightInvariant_and_exists_fundamentalDomain D V μ hμ.1
     exact ⟨(μ, 𝓕), ⟨hμ.1, h𝓕⟩, fun _ => ⟨hμ, h𝓕⟩⟩
   · obtain ⟨i1, i2, i3, i4, i5, -, -⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D V
-    obtain ⟨-, 𝓕, h𝓕⟩ := GlobalTheory.T.adelicUnitary_unimodular_exists_fundamentalDomain D V Measure.haar inferInstance
+    obtain ⟨-, 𝓕, h𝓕⟩ := _root_.GlobalTheory.Mem.AdelicGroupFund.rightInvariant_and_exists_fundamentalDomain D V Measure.haar inferInstance
     exact ⟨(Measure.haar, 𝓕), ⟨inferInstance, h𝓕⟩, fun h => absurd h hV⟩
 
 def mu (V : HSp D) : Measure (GA D V) := (exists_pair V).choose.1
@@ -51,7 +51,7 @@ theorem integral_mu {V : HSp D} (hV : V.SigOK) {μ 𝓕} (h : IsVolPair D V μ �
     (hf : ∀ γ ∈ GQ V, ∀ g, f (γ * g) = f g) : ∫ g in dom V, f g ∂(mu V) = ∫ g in 𝓕, f g ∂μ := by
   obtain ⟨i1, i2, i3, i4, i5, -, i7⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D V
   have h0 : IsVolPair D V (mu V) (dom V) := (exists_pair V).choose_spec.2 hV
-  obtain rfl : μ = mu V := (GlobalTheory.T.existsUnique_normalizedHaarMeasure_adelicUnitary D V hV).unique h.1 h0.1
+  obtain rfl : μ = mu V := (_root_.GlobalTheory.Mem.VolMeasure.existsUnique_isVolMeasG D V hV).unique h.1 h0.1
   haveI := h.1.1
   exact h0.2.setIntegral_eq h.2 fun γ g => hf γ γ.2 g
 
@@ -145,7 +145,7 @@ theorem integral_aut {G : Type} [Group G] [TopologicalSpace G] [IsTopologicalGro
 theorem isClosed_NFlag (B : HSp D) {ρ : ℕ} {e : Matrix (Fin B.rank) (Fin ρ) D.host.E} (he : IsIsoSub B e) :
     IsClosed (NFlag B e : Set (GA D B)) := by
   obtain ⟨i1, i2, i3, i4, i5, i6, i7⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D B
-  obtain ⟨K, hK, h⟩ := (GlobalTheory.T.isotropic_unipotentRadicals_rational_cocompact D B ρ e he).1
+  obtain ⟨K, hK, h⟩ := (_root_.GlobalTheory.Mem.UnipCocompact.radicals_cocompact D B ρ e he).1
   haveI : DiscreteTopology (GQ B ⊓ NFlag B e : Subgroup (GA D B)) :=
     DiscreteTopology.of_subset (s := (GQ B : Set (GA D B))) i6 (fun x hx => hx.1)
   have h1 : IsClosed ((GQ B ⊓ NFlag B e : Subgroup (GA D B)) : Set (GA D B)) := Subgroup.isClosed_of_discrete
@@ -183,7 +183,7 @@ theorem inv_integrand {F : GA D B → ℂ} (hF : ∀ γ ∈ GQ B, ∀ g, F (γ *
     ∀ γ ∈ NFlagQ B d.e, ∀ n : NFlag B d.e,
       F (((γ * n : NFlag B d.e) : GA D B) * g) * star (besChar ψ d ((γ * n : NFlag B d.e) : GA D B)) =
         F ((n : GA D B) * g) * star (besChar ψ d (n : GA D B)) := fun γ hγ n => by
-  obtain ⟨h1, h2, -, -⟩ := GlobalTheory.T.besselCharacter_generic_character_laws D ψ hψ A B ι hι d
+  obtain ⟨h1, h2, -, -⟩ := _root_.GlobalTheory.BesselChar.besChar_laws D ψ hψ A B ι hι d
   rw [h1, h2 γ hγ, one_mul, Subgroup.coe_mul, mul_assoc, hF (γ : GA D B) hγ]
 
 theorem coef_eq {ν ν' 𝓝 𝓝'} (h1 : ν.IsHaarMeasure) (h2 : IsFundamentalDomain (NFlagQ B d.e) 𝓝 ν) (h3 : ν 𝓝 = 1)
@@ -200,7 +200,7 @@ theorem coef_left {ν 𝓝} (h1 : ν.IsHaarMeasure) (h2 : IsFundamentalDomain (N
     coef ψ d ν 𝓝 F (δ * g) = coef ψ d ν 𝓝 F g := by
   obtain ⟨-, -, -, -, i5, -, -⟩ := GlobalTheory.Mem.AdelicGroupTop.adelic_unitary_topology D B
   obtain ⟨j1, j2, j3, j4⟩ := top_NFlag B d.e_iso
-  obtain ⟨-, -, -, h4⟩ := GlobalTheory.T.besselCharacter_generic_character_laws D ψ hψ A B ι hι d
+  obtain ⟨-, -, -, h4⟩ := _root_.GlobalTheory.BesselChar.besChar_laws D ψ hψ A B ι hι d
   let c : NFlag B d.e ≃ₜ* NFlag B d.e :=
     { toFun := fun n => ⟨δ⁻¹ * n * δ⁻¹⁻¹, (h4 _ _ e2 n n.2).1⟩
       invFun := fun n => ⟨δ * n * δ⁻¹, (h4 _ _ e1 n n.2).1⟩

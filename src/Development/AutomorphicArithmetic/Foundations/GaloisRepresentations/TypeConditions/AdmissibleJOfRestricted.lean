@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JumpDictCrysAtOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmG2PairOfAdmissible
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmissibleDictionaryOfParams
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeTateJumpsReadingRowAdmStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HodgeTateJumpsReadingRowAdm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChebotarevDegreeOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsDescent
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWildInertiaCyclotomicElement
@@ -21,9 +21,9 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SemisimpleOfIn
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CoefficientCompatibilityOf
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SplitRep
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsIrrDistinctConstituentsAfterExtensionStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowFiveOneOfCoefRingTakenAtLiveLocalisationsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowFiveOneTypePrimeOfCoefRingTakenAtLiveStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsIrrDistinctConstituentsAfterExtension
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowFiveOneOfCoefRingTakenAtLiveLocalisations
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowFiveOneTypePrimeOfCoefRingTakenAtLive
 
 noncomputable section
 
@@ -38,6 +38,6 @@ theorem g2g' {D : D7} (h : DeRhamJumpsDistinctCondition D) : ∀ i r, GoodR D.nd
 theorem jc_of_u {D : D7} {i : D.nd.Loc} {r : D.nd.X i → (GE D.nd →* GL (Fin D.R.nV) (D.nd.O i))} (hr : GoodR D.nd i r)
     (hS : GlobalTheory.SplitCoef.OSplit D) (h : DistinctAbsIrredConstituents D.nd i r) : AbsIrreducibleDistinct D i r := by
   obtain ⟨K', hK', hA, _, hK⟩ := h
-  exact GlobalTheory.T.absIrr_distinct_constituents_after_extension D i r (hS i) hr K' (algebraMap (Kf D.nd i) K') (fun x => (hK x).2)
+  exact _root_.GlobalTheory.absIrrDistinct_repK_of_oSplitAt_of_mapRep_distinct D i r (hS i) hr K' (algebraMap (Kf D.nd i) K') (fun x => (hK x).2)
 
 end UpperTheory.GalS

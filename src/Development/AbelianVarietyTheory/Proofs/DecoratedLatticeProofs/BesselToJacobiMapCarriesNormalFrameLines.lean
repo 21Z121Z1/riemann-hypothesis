@@ -33,9 +33,9 @@ theorem colsAt_xZero_of_normalFr : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ)
   have hdJ : j + 1 + 2 * ρ = l.s + 1 := by omega
   have hxi := GlobalTheory.ColsBFSplit.xi_unit l.q l.unit
   obtain ⟨hsc, -, hhz, hB, hJ, -⟩ := hN
-  obtain ⟨m₀, m₁, h0, h1, hp⟩ := GlobalTheory.T.besselNormalFrame_isotropicColumns_pairing D l.k (ofSplit l.q) ρ ((y.bes j ρ h).lev (a.x j).vol)
+  obtain ⟨m₀, m₁, h0, h1, hp⟩ := _root_.GlobalTheory.BesFrameCols.cols_pair D l.k (ofSplit l.q) ρ ((y.bes j ρ h).lev (a.x j).vol)
     (XIx (Fin D.R.k) (Fin D.R.t) j) (2 * ρ + 1) (sc j) (l.FX j (by omega)) (FY j (2 * ρ + 1) hdB) (hB j ρ h (2 * ρ + 1) hdB) i
-  obtain ⟨n₀, n₁, g0, g1, gp⟩ := GlobalTheory.T.fourierJacobiNormalFrame_isotropicColumns_pairing D l.k (ofSplit l.q) ρ ((y.jac j ρ h).lev (a.x (j + 1)).vol)
+  obtain ⟨n₀, n₁, g0, g1, gp⟩ := _root_.GlobalTheory.LocMod.JacCols.cols_pair D l.k (ofSplit l.q) ρ ((y.jac j ρ h).lev (a.x (j + 1)).vol)
     (XIx (Fin D.R.k) (Fin D.R.t) (j + 1)) (2 * ρ) (sc j) ((ofSplit l.q).hz ((y.bes j ρ h).lev (a.x j).vol))
     (l.FX (j + 1) (by omega)) (FY (j + 1) (2 * ρ) hdJ) (hJ j ρ h (2 * ρ) hdJ) i
   have v0 : valuation l.k (sc j * (ofSplit l.q).xi ^ (ρ - i.val)) = 1 := by

@@ -13,7 +13,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSumOfMemMu
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLocSubLocGen
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableOneP
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicTypeFiniteDimStable
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValuesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SubmodulePowSimpleEqSumEquivValues
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelKFinite
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlacesDistinctTranslationsDerivativesCommuteStatement
 
@@ -29,7 +29,7 @@ theorem sub_pow_sum : ∀ {P : Type} [AddCommGroup P] [Module ℂ P] {ι : Type}
     (∀ B : Submodule ℂ P, (∀ i, ∀ p ∈ B, a i p ∈ B) → B ≠ ⊥ → B = ⊤) →
     ∀ (m : ℕ) (N : Submodule ℂ (Fin m → P)), (∀ i, ∀ y ∈ N, (fun j => a i (y j)) ∈ N) →
     ∀ y ∈ N, ∃ (n : ℕ) (Sm : Fin n → (P →ₗ[ℂ] (Fin m → P))) (q : Fin n → P),
-      (∀ l i p, Sm l (a i p) = fun j => a i (Sm l p j)) ∧ (∀ l p, Sm l p ∈ N) ∧ y = ∑ l, Sm l (q l) := GlobalTheory.T.exists_sum_intertwined_of_mem_invariant_submodule
+      (∀ l i p, Sm l (a i p) = fun j => a i (Sm l p j)) ∧ (∀ l p, Sm l p ∈ N) ∧ y = ∑ l, Sm l (q l) := _root_.GlobalTheory.submodule_pow_simple_eq_sum_equiv_values
 
 theorem place_comm : ∀ {D : D7} (θ : D.what₂.Tau → (Ainf D.host.F ⊗[D.host.F] D.host.E →+* ℂ)) (V : HSp D),
     IsInfFam (D := D) θ → ∀ τ τ' : D.what₂.Tau, τ ≠ τ' →

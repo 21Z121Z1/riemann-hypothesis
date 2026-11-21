@@ -80,7 +80,7 @@ theorem standard_module_bottom_datum : _root_.GlobalTheory.FunPr.ThetaLocalInput
     have h := GlobalTheory.VacConj.isVacO_conj_negSp W.ψ W.θ A WW X.rA.s X.rW.s _ _ X.vac hIs.isVac
     rwa [hΛA, hΛW, show X.rA.s = fun _ => 1 from funext fun τ => (hX.std.2.2 τ).1,
       show X.rW.s = fun _ => 1 from funext fun τ => (hX.stdW.2.2 τ).1] at h
-  obtain ⟨G0, hG0, hne, hread⟩ := GlobalTheory.T.adelicVacuum_standardLattices_readsTheta W.ψ W.θ A WW rfl rfl δ hcc hs _ hv
+  obtain ⟨G0, hG0, hne, hread⟩ := _root_.GlobalTheory.VacRead.vacuum_reads_theta W.ψ W.θ A WW rfl rfl δ hcc hs _ hv
   obtain ⟨κ, hκ, hc⟩ := exists_const hI δ t0 G0 hG0 hne
   have hc' : ∀ (a d : ℕ) (ea : a = A.rank) (ed : d = WW.rank) (e0 : VC D a d → ℂ), GL3Theta.IsTwoTorsionPointUnkilled D (lamOf D ⊤ δ) t0 →
       oddE0 D ⊤ δ t0 a d e0 → e0 ≠ 0 → ∃ u, IsPh u ∧ (κ * u) • e0 ∈ Th D (tor0 D ⊤ δ) (stdL D a) (stdL D d) ∧
@@ -97,9 +97,9 @@ theorem standard_module_bottom_datum : _root_.GlobalTheory.FunPr.ThetaLocalInput
   have hm : GoodMod (X.e s) (GlobalTheory.SqTop.modT G s) := ⟨_, _, hIs.idem s, c0, cI.symm,
     GlobalTheory.FunObj.StdDatum.TwBig.modT_isCoprime_bb hL G s (GlobalTheory.T.gridConductorIdealCM_isCoprime_halfDifferent G.pl q1 q2)⟩
   have hν : GlobalTheory.NormExact.HasFinPart (G.nu s i (j + 1))⁻¹ P.W.chV' P.W.ep' := fun x y hxy => by
-    rw [hB.chars.2 y, MonoidHom.inv_apply, Circle.coe_inv, GlobalTheory.T.heckeCharacter_finiteIdele_value_eq _ _ (chrEq_nu G s i j hL) x y hxy]
+    rw [hB.chars.2 y, MonoidHom.inv_apply, Circle.coe_inv, _root_.GlobalTheory.FinIdlRead.chr_finIdl _ _ (chrEq_nu G s i j hL) x y hxy]
     exact (Units.val_inv_eq_inv_val _).symm
-  obtain ⟨Tm, hTm, hf⟩ := GlobalTheory.T.schrodingerModel_complexConjugate_negForm W.ψ hW A WW _ _ _ _ _ _ (hIs.fst s)
+  obtain ⟨Tm, hTm, hf⟩ := _root_.GlobalTheory.ConjSchr.conj_schroedinger_neg W.ψ hW A WW _ _ _ _ _ _ (hIs.fst s)
   have eν : Lc.mu s (j + 1) * Lc.eta ^ (rankV D i j % 2) / (G.ch.chi (D.R.m - i) * Lc.eta ^ (rankV D i j % 2)) =
       G.nu s i (j + 1) := mul_div_mul_right_eq_div _ _ _
   have eI : X.ideal (locPl G) s = GlobalTheory.SqTop.modT G s := cI

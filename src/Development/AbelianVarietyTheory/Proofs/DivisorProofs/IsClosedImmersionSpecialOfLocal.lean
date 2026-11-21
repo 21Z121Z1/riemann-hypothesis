@@ -17,8 +17,8 @@ import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HomBaseChangeBi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedImmersionSplitTorusIntoTorusExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitTorusHomTrivialModPowStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitTorusHomExtOfEqModMaximalIdealPowStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedImmersionOfBaseChangeFieldExtStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OverSpecBaseChangeMapEqOfFieldExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedImmersionOfBaseChangeFieldExt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OverSpecBaseChangeMapEqOfFieldExtension
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits MonoidalCategory CartesianMonoidalCategory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -44,7 +44,7 @@ theorem isClosedImmersion_special_of_local : ∀ (R : Type) [CommRing R] [IsLoca
   intro R _ _ _ K _ _ G _ hG r u hu hmono
   let k := IsLocalRing.ResidueField R
   let Ω := AlgebraicClosure k
-  refine GlobalTheory.T.closedImmersion_of_baseChange_field_ext R k Ω (GlobalTheory.IndefiniteRowSideFullHecke.LieAlgebraMaps.torus R r) G u ?_
+  refine _root_.GlobalTheory.ClosedImmFieldDescent.isClosedImmersion_of_baseChange_extension R k Ω (GlobalTheory.IndefiniteRowSideFullHecke.LieAlgebraMaps.torus R r) G u ?_
   let p : Spec (CommRingCat.of Ω) ⟶ Spec (CommRingCat.of R) :=
     Spec.map (CommRingCat.ofHom (algebraMap R Ω))
   obtain ⟨E⟩ := hG.fibres Ω p
@@ -64,7 +64,7 @@ theorem isClosedImmersion_special_of_local : ∀ (R : Type) [CommRing R] [IsLoca
       rw [← e1, Category.assoc]
       exact h
 
-    have hk := GlobalTheory.T.overSpecBaseChange_map_eq_of_fieldExtension R k Ω _ _ _ _ hΩ
+    have hk := _root_.GlobalTheory.baseChange_map_eq_of_fieldExtension R k Ω _ _ _ _ hΩ
     have hf : torusMap _ φ ≫ u = 1 :=
       GlobalTheory.T.splitTorus_hom_ext_of_eq_mod_maximalIdeal_pow R (ZMod q) G hsep _ _ (GlobalTheory.T.splitTorus_hom_pullback_quotient_pow_eq_one R (ZMod q) G _ inferInstance hk)
 

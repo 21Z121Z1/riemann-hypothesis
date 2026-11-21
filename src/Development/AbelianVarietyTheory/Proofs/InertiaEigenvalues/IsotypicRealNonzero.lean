@@ -10,7 +10,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.De
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroSupport
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGlobalAboveL
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OverRowsAndMono
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TypeSpacesOrthogonalOfClassSumInnerStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TypeSpacesOrthogonalOfClassSumInner
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaIsotypicInjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPairThetaLowest
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIrreducibleTwist
@@ -24,7 +25,6 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSteinberg
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharEqOfSplitOfTied
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PairReadingOfJoin
@@ -51,7 +51,7 @@ theorem exists_ne_of_mem_iSup' {M : Type} [AddCommGroup M] [Module ℂ M] {ι : 
 theorem exists_irr_pair {D : D7} {μ : D.what₂.Tup} {j : ℕ} (Mr : MtReal D μ j) (x : D.what₂.Mt μ j) (hx : x ≠ 0) :
     ∃ (S : Submodule ℂ (GAf D.host.E D.R.nV → Mr.wt.W)) (_ : NG.IsIrrRep Mr.wt.ρ S),
       ∃ F ∈ (NG.isoTyp Mr.wt.ρ S).comap Mr.real, inner ℂ F x ≠ 0 := by
-  obtain ⟨-, ι, -, S, hirr, -, -, -, -, hsum⟩ := GlobalTheory.T.typeSpaces_orthogonal_of_classSum_inner D.host.E D.R.nV Mr.wt Mr.J Mr.χ Mr.J_open
+  obtain ⟨-, ι, -, S, hirr, -, -, -, -, hsum⟩ := _root_.GlobalTheory.CompRed.typeSp_decomp D.host.E D.R.nV Mr.wt Mr.J Mr.χ Mr.J_open
   let p : ι → Submodule ℂ (D.what₂.Mt μ j) :=
     fun i => (NG.isoTyp Mr.wt.ρ (S i) ⊓ NG.TypeSp Mr.wt.ρ Mr.J Mr.χ).comap Mr.real
   have htop : (⨆ i, p i) = ⊤ := by

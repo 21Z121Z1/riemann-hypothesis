@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsPresents
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralWeightIndepStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralWeightIndep
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChernIntegralPresentationTransferStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -17,6 +17,6 @@ theorem chernInt_eq_of_presents (Y : Var ℂ) (Δ : Y.Dv) (L L' : LB Y.X) (r : L
     φ.chernInt Y.dim Set.univ (fun _ => 1) = ψ.chernInt Y.dim Set.univ (fun _ => 1) := by
   obtain ⟨ψ₀, hψ₀, hmass⟩ := GlobalTheory.T.chern_integral_presentation_transfer Y Δ L L' r r' hL hL' φ hφ
   rw [← hmass]
-  exact GlobalTheory.T.chern_integral_weight_indep Y L' ψ₀ ψ hψ₀ hψ
+  exact _root_.GlobalTheory.CompanionTheory.ChernMass.chernInt_eq_of_isCInf Y L' ψ₀ ψ hψ₀ hψ
 
 end GlobalTheory.CompanionTheory.ChernMass

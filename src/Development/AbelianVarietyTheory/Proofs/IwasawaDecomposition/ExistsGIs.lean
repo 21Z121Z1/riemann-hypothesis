@@ -17,9 +17,11 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.WithTr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsRecGOfIsLocalFamily
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOrderThree
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnLayerConditionsTrueColumnsLaterStages
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStandardColumnComparisonsTrueColumnsStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStandardColumnComparisonsTrueColumns
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StdLvPr
+import Formalism.LocalToGlobal.HermitianForms.TiedTwJSym
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFullHermitianColumnsTrueColumnsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdditiveCharacterTypePrimesValuesCoefficientFielStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdditiveCharacterTypePrimesValuesCoefficientFiel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VolumesAgreeAdelicOfTrueVolumeStatement
 import Formalism.LocalToGlobal.BesselHermitianTheta.Joints
 import Formalism.SharpRestriction.GlobalSchurBounds.ThickPlacesCorollaryOfAnyTranslate
@@ -149,7 +151,7 @@ theorem nonempty_columnLocalData_of_standardConcreteFamily (w : ColW B f T) (Z :
     (hO : Formalism.L2.GlobalTheoryTheory.OmegaCompatible (w.D { Z with G := { Z.G with gat := g, gat_d := hd } }) w.I.J.δ) :
     Nonempty (ColumnDataSplitPrimes K w { Z with G := { Z.G with gat := g, gat_d := hd } }) := by
   obtain ⟨Gt, c, G, hR, hl, hf, hpl⟩ := isRecG_of_isLocalFamily C.joint0
-    (fun u => GlobalTheory.T.exists_psi0_eq_embLL w.I w.ok w.pins w.l Z (C.forms u).gl (hC u).gl) hd h
+    (fun u => _root_.GlobalTheory.Mem.Col2.TC.additiveCharacter_typePrimes_values_coefficientField w.I w.ok w.pins w.l Z (C.forms u).gl (hC u).gl) hd h
   exact columnLocalData_of_levelZero_concreteData w _ (colsRe _ C) (stdC_colsRe w.I w.l _ C hC) (fun u => stdLvC_colsRe w.I w.l _ C u (hL u)) hV hO Gt c G hR
     (funext hl) (funext fun u => (hf u).trans ((forms0Re_setGat g hd _).symm.trans (columnFormsAlongLaterStages_stageZero_eq _ C u).symm)) hpl
 
@@ -158,9 +160,9 @@ set_option maxHeartbeats 8000000 in
 theorem exists_trueVolume_stage_of_any_column_choice (p : WP) : StepW p fun K B f T w => ∃ G : GJStage B w.C, GIs2 K w G := by
   refine StepW.of_all fun K B f T w hO _ _ => ?_
   obtain ⟨Z₀⟩ := TrueColsTest.later w.l (JetEx.hasLetters_of_over hO)
-  obtain ⟨C, hC, hL⟩ := GlobalTheory.T.exists_standardColumnComparisons_trueColumns w.I w.ok w.pins w.l Z₀
+  obtain ⟨C, hC, hL⟩ := _root_.GlobalTheory.Mem.Col2.TC.colsTiedSym_std w.I w.ok w.pins w.l Z₀
   obtain ⟨g, hd, h⟩ := exists_isLocalFamily K.s (D := w.D Z₀) (fun u => (C.forms u).to0) C.herm.std (companion_of_colsHermS C.herm)
-    C.joint0 fun u => GlobalTheory.T.exists_psi0_eq_embLL w.I w.ok w.pins w.l Z₀ (C.forms u).gl (hC u).gl
+    C.joint0 fun u => _root_.GlobalTheory.Mem.Col2.TC.additiveCharacter_typePrimes_values_coefficientField w.I w.ok w.pins w.l Z₀ (C.forms u).gl (hC u).gl
   refine ⟨{ Z₀.G.withTrue with gat := g, gat_d := hd }, (LayerTwoModel.gIs2_iff w _).2 fun W V S N => ?_⟩
   have hV : Formalism.L2.Theta.VolTieG (w.D ⟨W, V, S, N, { Z₀.G.withTrue with gat := g, gat_d := hd }⟩) :=
     GlobalTheory.T.volumesAgreeAdelic_of_trueVolume _ fun _ => rfl

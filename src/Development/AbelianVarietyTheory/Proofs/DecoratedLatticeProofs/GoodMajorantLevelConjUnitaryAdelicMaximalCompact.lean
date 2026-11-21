@@ -1,6 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.MeanPair
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsAdelicUnitaryConjSelfDualMajorantLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsAdelicUnitaryConjSelfDualMajorantLevels
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContinuesConst
+import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MixSDblDecZero
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SphericalEisensteinSeriesOnGroup
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EisensteinIsotropicLine
 import Development.AbelianVarietyTheory.Definitions.Foundations.AnalyticOnNhdTsumNpow
@@ -25,7 +28,7 @@ theorem good_level_conj_stab : ∀ (D : D7) (T T₀ : HSp D) (r : ℕ) (d : HypD
   have hL0 : GlobalTheory.EisCont.IsLevel T (AdelicU.frameLat T) b :=
     ⟨AdelicU.SelfDual.isLattice_frameLat T, AdelicU.SelfDual.isSelfDualAt_frameLat D T, hb⟩
   have hL : GlobalTheory.EisCont.IsLevel T l.L l.c := ⟨hl.1, hl.2.1, hl.2.2⟩
-  obtain ⟨g, hg⟩ := GlobalTheory.T.exists_adelic_unitary_conj_selfDual_majorant_levels D T (AdelicU.frameLat T) l.L b l.c hL0 hL
+  obtain ⟨g, hg⟩ := _root_.GlobalTheory.EisCont.LevelConj.exists_conj D T (AdelicU.frameLat T) l.L b l.c hL0 hL
   obtain ⟨q, k₀, hk₀, hgq⟩ := hIw g
   have hconj : ConjBy (q : GA D T) l.K (Kmax T b) := by
     intro k

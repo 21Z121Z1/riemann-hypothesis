@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsDimEqOne
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorisationThroughAbelianSubvarietyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorisationThroughAbelianSubvariety
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFiniteIffFiniteKer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianVarietyDimLeOfFiniteAndOfSurjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIsogenyCompIffAndDegreeMul
@@ -25,7 +25,7 @@ variable {K : Type} [Field K]
 theorem eq_one_of_coprime {A B : AbVar K} (f : A ⟶ B) (hf : IsIsogeny f) (m : ℕ) (hm : 0 < m)
     (hcop : Nat.Coprime m (deg f)) {T : Over (Sp K)} (x : T ⟶ A.X)
     (hx : x ≫ f.hom = 1) (hxm : x ^ m = 1) : x = 1 := by
-  obtain ⟨C, q, i, hq, hi, hqi⟩ := GlobalTheory.T.exists_factorisation_through_abelianSubvariety K A (prod B A) (prodLift f ((m : ℤ) • 𝟙 A))
+  obtain ⟨C, q, i, hq, hi, hqi⟩ := _root_.GlobalTheory.AV.AbVar.exists_factor_abelianSubvariety K A (prod B A) (prodLift f ((m : ℤ) • 𝟙 A))
   have h1 : q ≫ (i ≫ prodFst B A) = f := by
     rw [← Category.assoc, hqi]
     apply AbVar.hom_ext

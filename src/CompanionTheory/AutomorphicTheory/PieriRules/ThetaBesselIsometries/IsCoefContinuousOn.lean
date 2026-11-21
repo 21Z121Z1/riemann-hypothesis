@@ -8,7 +8,7 @@ import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Development.AbelianVarietyTheory.Definitions.Jets.TauZero
 import Formalism.HermitianCurvature.StatementTBB
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AemeasurableBesselNormIntegrandBigCellStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AemeasurableBesselNormIntegrandBigCell
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 

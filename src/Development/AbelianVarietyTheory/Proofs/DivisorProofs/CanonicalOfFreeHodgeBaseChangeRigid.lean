@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.BijectiveC
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHodgeDeRham
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullOverOneEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RigidOfFreeOfCrystallineDeRham
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineDeRhamAbelianStructureOfStatementsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineDeRhamAbelianStructureOfStatements
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianDeRhamStructure
 
 set_option autoImplicit false
 
@@ -79,7 +80,7 @@ theorem grothendieckDeformation_of_structure (hS : AbelianDeRhamStructure)
 theorem grothendieckDeformation_of_abelianLifting
     (hCrys : CrystallineSmoothLift) (hHdR : AbelianHodgeDeRham) (hLift : AbelianLifting) :
     GrothendieckDeformation :=
-  grothendieckDeformation_of_structure (GlobalTheory.T.crystallineDeRham_abelianStructure_of_statements hCrys hHdR).1 (GlobalTheory.T.crystallineDeRham_abelianStructure_of_statements hCrys hHdR).2 hLift
+  grothendieckDeformation_of_structure (_root_.GlobalTheory.Published.abelianDeRhamStructure_crystallineDeRham_of_hypotheses hCrys hHdR).1 (_root_.GlobalTheory.Published.abelianDeRhamStructure_crystallineDeRham_of_hypotheses hCrys hHdR).2 hLift
 
 theorem grothendieckDeformation₂
     (hCrys : CrystallineSmoothLift) (hHdR : AbelianHodgeDeRham) (_hDual : DualAbelianScheme)

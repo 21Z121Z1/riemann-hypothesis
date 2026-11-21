@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotrop
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationUnitaryEquiv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanWeilOperatorTransportsHeisenbergLineDStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanWeilOperatorTransportsHeisenbergLineD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchActionReadingsCompatible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilModelLineActionExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFockMap
@@ -236,8 +236,8 @@ theorem pair_pol {B : Base F E} {M : Model σ X W} {χX χW : Chr F E} {om : Rep
     (hθX : ∀ w, (mat g).map (piInf (B.emb w)) * X.θ w = Y.θ w * (mat g).map (piInf (B.emb w)))
     (hθW : ∀ w, (mat h).map (piInf (B.emb w)) * W.θ w = Z.θ w * (mat h).map (piInf (B.emb w))) :
     (M.Pol B.ψ B.emb).map (T : SInf F (Fin n × Fin d) →ₗ[ℂ] SInf F (Fin n × Fin d)) = (reM M Y Z).Pol B.ψ B.emb := by
-  have hfw := GlobalTheory.T.archimedeanWeilOperator_transports_heisenbergLineDerivative F E σ B n d X W M χX χW om r s r' s' hB hX hW hM hw g hg h hh T hT1 hT2
-  have hbw := GlobalTheory.T.archimedeanWeilOperator_transports_heisenbergLineDerivative F E σ B n d X W M χX χW om r s r' s' hB hX hW hM hw g⁻¹ (uat_inv hg) h⁻¹ (uat_inv hh) T.symm
+  have hfw := _root_.GlobalTheory.HeisTransport.actsD_heisLine_transport F E σ B n d X W M χX χW om r s r' s' hB hX hW hM hw g hg h hh T hT1 hT2
+  have hbw := _root_.GlobalTheory.HeisTransport.actsD_heisLine_transport F E σ B n d X W M χX χW om r s r' s' hB hX hW hM hw g⁻¹ (uat_inv hg) h⁻¹ (uat_inv hh) T.symm
     hT2 (fun f => by simpa only [inv_inv, LinearEquiv.symm_symm] using hT1 f)
   have hX' : ∀ w, (mat g⁻¹).map (piInf (B.emb w)) * Y.θ w = X.θ w * (mat g⁻¹).map (piInf (B.emb w)) :=
     fun w => rev_conj (map_mul_inv _ g) (map_inv_mul _ g) (hθX w)

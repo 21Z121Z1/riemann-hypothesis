@@ -11,7 +11,7 @@ import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsPull
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ArcWitMemRangeJKOfMemRangeJ
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ArcWitPointEqOfIso
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ArcWitAgreeOfIsPullUnif
-import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsoUniformisationsOfIsoDegenerationDataStatement
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIsoUniformisationsOfIsoDegenerationData
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisedArcIsoMatchesLevelPointsStatement
 
 open CategoryTheory CategoryTheory.Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry NumberField
@@ -47,7 +47,7 @@ theorem core (hL : Laws) (hL₂ : Laws2) (hL₅ : Laws5)
   obtain ⟨hD, hdat⟩ := arcWit_data_iso hL₅ E H D l Xo c k bF a O O' β β' Y Y' χ χ' W W'
   have hI : Ideal.span {(PowerSeries.X : PowerSeries k)} = IsLocalRing.maximalIdeal (PowerSeries k) :=
     PowerSeries.maximalIdeal_eq_span_X.symm
-  obtain ⟨ψ, bc, hψ, hbc, hfst, hU⟩ := GlobalTheory.T.exists_iso_uniformisations_of_iso_degeneration_data hL hL₂ (PowerSeries k) _ (admissibleBase_powerSeries k) hI W'.P.D W.P.D W'.P.A W.P.A
+  obtain ⟨ψ, bc, hψ, hbc, hfst, hU⟩ := _root_.GlobalTheory.exists_iso_isPullUnif_of_isPullDeg hL hL₂ (PowerSeries k) _ (admissibleBase_powerSeries k) hI W'.P.D W.P.D W'.P.A W.P.A
     W'.t.G W.t.G W'.t.semi W.t.semi W'.P.U W.P.U hD
   have hx : ∀ (x : 𝓞 E) (z : W.P.D.toPre.X), hD.xe (x • z) = x • hD.xe z := by
     intro x z

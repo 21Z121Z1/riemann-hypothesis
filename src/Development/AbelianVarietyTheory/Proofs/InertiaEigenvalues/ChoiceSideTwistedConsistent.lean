@@ -10,31 +10,32 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyDefiniteSpacesStandardAndLarge
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedPlaceIndexMemFirstPairOfCompatibleChoice
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalLatticeTwistedTupleSpanTopStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndependentComplexOfSubfieldCoeffLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientLatticeEqSmallCoefficientFieldStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LinearIndependentComplexOfSubfieldCoeffLattice
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoefficientLatticeEqSmallCoefficientField
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenFieldFormsProportionalOfReadings
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumsTwistedDefiniteFormsRationalStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteComplexFormsEqTwistComplexFormsFockModel
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LevelTwistCharacterMemCoefficientIntegersStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftFormAtEvaluationVectorEqRealisationLiftStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftTwistLevelFormEqUnitMulClassSumStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftTwistLevelFormEqUnitMulClassSum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralFormsCentralTranslateIffStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugationScaledCoordsIntegralFormsTwistStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistConjugateTuplesSameRealisationExtensionStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugationScaledCoordsIntegralFormsTwist
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistConjugateTuplesSameRealisationExtension
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasTuplesOfLaws
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixBaseOfFixingField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PureTensorOSmul
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateFunctionAtPlace
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsScaleTwistedPlaceCoefficientMapStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumsConjugateTwistsConjugateExpansionsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenTwistViaEmbeddingGoodConjugateStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClassSumsConjugateTwistsConjugateExpansions
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenTwistViaEmbeddingGoodConjugate
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitPrimeProductOfTwistedPlaceTupleStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExtensionComplexDataEmbeddingRestrictCoeffStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralUnitOfIsUnitAwayFromLevelEmbeddingStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsExtensionComplexDataEmbeddingRestrictCoeff
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIntegralUnitOfIsUnitAwayFromLevelEmbedding
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalRowSeries
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistingOkClassAtPlace
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesIntegralFormsEqSpanDedekindCoefRingStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RationalLatticeFockPolysSpanIntegralForms
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteFormReadingInjectiveLatticeIntegralFormsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DefiniteFormReadingInjectiveLatticeIntegralForms
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.FWT IsDedekindDomain NumberField Formalism.ConjugateSelfDual ReciprocityTheory.Gal GlobalTheory.ExportSeries GlobalTheory.SeriesTie GlobalTheory.TwInputs GlobalTheory.ConjTwist GlobalTheory.ChoiceRead
 open Formalism.MainNotions.IntegralHeckeForms (TwOK ClsQ)
@@ -212,7 +213,7 @@ theorem span_translate (H : AtPlace Y Z c w j) {ι : KE c w →+* ℂ} (hι : �
       Submodule.span (ringOf ι) ((fun x h => (κ⁻¹ • fockOf Y (used_of_tw H.tw) j u (D.what₂.jMt (D.what₂.muTw w) (j.1 + 1) x))
         (h * finPt (Vc D j) z)) '' latS w (j.1 + 1)) := by
   have hB := Z.good.base (c.twI w) j (c.sd w)
-  obtain ⟨hg, ha, -⟩ := GlobalTheory.T.chosen_twist_via_embedding_good_conjugate D c w Z.ρ Z.good H.ok j ι
+  obtain ⟨hg, ha, -⟩ := _root_.GlobalTheory.PlaceRead.twVia_good D c w Z.ρ Z.good H.ok j ι
   have hle := intLL_le hι
   obtain ⟨hN0, hNP, o, ho⟩ := GlobalTheory.T.isUnit_primeProduct_of_twistedPlaceTuple D X X0 Y S YS Z c w j H ι hι
   have hNi : ((GlobalTheory.TwistField.tupPrime X.R.toRealDat (Y.tupT (D.what₂.muTw w)) : ℕ) : ℂ)⁻¹ ∈ ringOf ι := by
@@ -225,7 +226,7 @@ theorem span_translate (H : AtPlace Y Z c w j) {ι : KE c w →+* ℂ} (hι : �
     have e1 : (baseOf Z c w j).mtLat (embLL0 D) (labLL0 D) (ringOf ι) (twVia Z.ρ ι) =
         (baseOf Z c w j).mtLat D.what₂.embLL (labLL D) (ringOf ι) (twVia Z.ρ ι) := by
       unfold Base.mtLat
-      rw [funext (GlobalTheory.T.coefficient_lattice_eq_small_coefficient_field D _ _ _ hB _ hle)]
+      rw [funext (_root_.GlobalTheory.PlaceSmall.coefLat_eq_small D _ _ _ hB _ hle)]
     have e2 := GlobalTheory.T.thetaSeriesIntegralForms_eq_span_dedekindCoefRing D _ _ _ hB _ hg ha _ D.what₂.embLL (labLL D) (𝓞 D.what₂.LL) (D.what₂.embLL.comp (algebraMap _ _))
       (D.what₂.embLL.injective.comp RingOfIntegers.coe_injective) (coefRing_LL le_rfl) (GlobalTheory.T.level_twist_character_mem_coefficientIntegers D X X0 Y S YS Z c w j H ι hι) _ hle
     have e3 := GlobalTheory.T.rational_lattice_fock_polys_span_integral_forms D X X0 Y S YS Z c w j H ι hι u hu κ hκ hs

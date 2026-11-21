@@ -17,9 +17,12 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticesSelfDual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockJetsUnitVacuumEqScaledThetaJets
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntireStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinitePartZeroNeOfIsVacuumOrientedModelStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMonomialAtOriginGaussianEntireOrthonormalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockMonomialAtOriginGaussianEntireOrthonormal
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GramAtPosDef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsVacuumConjOfNegHermitianSpaceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVectorNegHermitianSpaceConjMonomialStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVectorNegHermitianSpaceConjMonomial
+import Development.AbelianVarietyTheory.Definitions.Divisors.KernelNormConstantSpec
+import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VacuumTranslateConjugateJetBound
@@ -84,7 +87,7 @@ theorem fock_jets_moved : ∀ {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (θ : In
       exact congrFun h0 _
     rw [hreal w hw, h1, mul_zero]
   · have hdiff : Differentiable ℂ Θ := hTh.1
-    have hj := GlobalTheory.T.fockMonomial_at_origin_gaussian_entire_orthonormal ψ θ S T frS frT hf.1 hf.2.inf hS hT f Φ hΦd hreal k
+    have hj := _root_.GlobalTheory.FockPos.fock_monomial_zero_of_on ψ θ S T frS frT hf.1 hf.2.inf hS hT f Φ hΦd hreal k
     change pureTensorO ψ θ S T (fun _ => 1) (fun _ => 1) (GlobalTheory.FockPos.frAt frS) (GlobalTheory.FockPos.frAt frT) f
       (MvPolynomial.monomial k 1) 0 = _
     rw [hj, hΦeq, GlobalTheory.FockPos.applyAt0_monomial', GlobalTheory.FockPos.applyAt0_monomial',

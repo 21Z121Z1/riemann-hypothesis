@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RatInOfUnit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BottomExistsIntegrable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsConstSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteBottomTripleTransportSameRanksConstantsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDefiniteBottomTripleTransferredFramesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDefiniteBottomTripleTransferredFrames
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.MemHalfCosetSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteBottomTripleConstantsEqOfSameLatticesStatement
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 
@@ -26,7 +27,7 @@ theorem bottom_constant_transfer_along_tower : _root_.GlobalTheory.FunPr.ThetaLo
   refine ⟨0, fun ε CF _ => ⟨0, 0, fun C _ D large₂ _ _ _ T Lc μ₀ hL G => ?_⟩⟩
   intro W S hψ hN i j A A' WW X B B' WW₁ Y c hX hY hc
   obtain ⟨X₁, hX₁, hX₁c⟩ := GlobalTheory.T.definiteBottomTriple_transport_same_ranks_constants W i j A A' WW X B B' WW₁ Y hX hY
-  obtain ⟨Y₁, hY₁, e1, e2, e3, hY₁c⟩ := GlobalTheory.T.exists_definiteBottomTriple_transferred_frames W S hψ μ₀ hL hN i j B B' WW₁ X₁ Y hX₁ hY
+  obtain ⟨Y₁, hY₁, e1, e2, e3, hY₁c⟩ := _root_.GlobalTheory.BotFrames.frames_transfer W S hψ μ₀ hL hN i j B B' WW₁ X₁ Y hX₁ hY
   obtain ⟨u, hu⟩ := hY₁c c hc
   exact ⟨u, hX₁c _ (GlobalTheory.T.definiteBottomTriple_constants_eq_of_same_lattices W i j B B' WW₁ X₁ Y₁ hX₁ hY₁ e1.symm e2.symm e3.symm _ hu)⟩
 end GlobalTheory.BotTransfer

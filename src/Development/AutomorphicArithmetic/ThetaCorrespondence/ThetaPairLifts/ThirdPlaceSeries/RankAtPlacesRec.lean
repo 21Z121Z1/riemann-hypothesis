@@ -54,7 +54,7 @@ theorem rank_at_twisted_places_of_rec_span (hR : p.PointConditions') (hm : More 
       hC.tup.mu_on hdel (fun u => chi_eq_one h1 hC.grp.chiW j u.2)
     exact tie_thetaJ (ht v j).1 (ht v j).2 (mirIncl_injective _) hU (hd j) (hMax v hv j) hty (hrec.1.ok.run v hv' j)
       (hCmp v hv j)
-  exact GlobalTheory.T.eigenlattice_local_containment_at_pairs _ _ _ _ _ _ O hSp hD hProj hComm fun w hw =>
+  exact _root_.GlobalTheory.OnRankAlg.rankAtPlaces_alg _ _ _ _ _ _ O hSp hD hProj hComm fun w hw =>
     ⟨fun j => key w hw j, fun j => key _ (conjPl_mem_twPl hC hw) j⟩
 end Point
 end GlobalTheory.BigOn

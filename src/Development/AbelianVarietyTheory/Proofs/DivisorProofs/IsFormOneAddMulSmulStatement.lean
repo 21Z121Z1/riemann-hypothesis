@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFormOneAddMulSmul
 import Development.AbelianVarietyTheory.Definitions.Divisors.LineSCShortExact
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnCoefficientsComplexFormMulStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffOnCoefficientsComplexFormMul
 
 open GlobalTheory GlobalTheory.CxForm GlobalTheory.GoodMetric
 open ReciprocityTheory.L2DbarEstimates (V)

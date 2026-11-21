@@ -68,7 +68,7 @@ theorem finite_sum_of_gKModule_maps : _root_.GlobalTheory.FunPr.ThetaLocalInputs
     haveI : FiniteDimensional ℂ (gkSums θ V τ (M.ε τ) (M.σ τ) (M.fr τ) ⊓ W : Submodule ℂ _) :=
       Submodule.finiteDimensional_of_le inf_le_right
     refine mem_of_approx fun K hK δ hδ => ?_
-    obtain ⟨e, he, hap⟩ := GlobalTheory.T.exists_compactFinite_approxIdentity _ (M.ε τ) (GA D V)
+    obtain ⟨e, he, hap⟩ := _root_.GlobalTheory.KFinApprox.approx_identity _ (M.ε τ) (GA D V)
       (fun x k => φ (x * atTau θ V τ ((M.fr τ)⁻¹ * toMK k * M.fr τ)))
       (hφ.cont.comp (continuous_fst.mul (hk.comp continuous_snd))) K hK δ hδ
     refine ⟨avg θ V τ (M.ε τ) (M.fr τ) e φ, ⟨hZ e he, avg_mem hθ hP hJ hWK hφ.cont hφW he⟩, fun x hxK => ?_⟩

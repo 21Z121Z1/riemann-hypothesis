@@ -8,11 +8,15 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualit
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HypothesesAbsDet
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjUInvMemGfC
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneParamSubgroupTransposeGramUnitaryDecomposesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneParamSubgroupTransposeGramUnitaryDecomposes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealmapsIsomorphism
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParamSubgroupTransposeGramLieAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerSkewPlaneUniqueDual
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineOneParameterStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineOneParameter
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilCompositionLines
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingMellin
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
@@ -44,7 +48,7 @@ theorem ker_projection_eq_line_weyl : _root_.GlobalTheory.FunPr.ThetaLocalInputs
     IsDatum Γ.M ψ cA ΦD Φ → IsDatum Γ.M ψ cA Φ₁D Φ₁ → p Φ = 0 → p Φ₁ = 0 := by
   intro hP D ψ θ W W₁ X A A₁ B α β ν 𝓕 ν₁ 𝓕₁ ωA ωB e Bs Γ Xc om om' cA cB hθ hT hO hT' Pi rf rl p p' hm γ hγ ΦD hΦD
     Φ₁D hΦ₁D hder Φ Φ₁ hD hD₁ hp
-  obtain ⟨l, hl, hγl⟩ := GlobalTheory.T.oneParamSubgroup_transposeGramUnitary_decomposes D θ X e Γ.W hO.JX hθ γ hγ
+  obtain ⟨l, hl, hγl⟩ := _root_.GlobalTheory.KapXLineDec.line_dec D θ X e Γ.W hO.JX hθ γ hγ
   have hder' : ∀ x, HasDerivAt (fun t : ℝ => om (1, kapX X e hO.JX ((l.map fun q => oneP θ X q.1 q.2 t).prod)) ΦD x)
       (Φ₁D x) 0 := by
     intro x; have := hder x; simp only [hγl] at this; exact this

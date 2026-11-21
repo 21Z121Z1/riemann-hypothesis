@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueJointTo
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.Sl2NonnegWeightOfHighestWeightVector
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZRYRCover
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JointHighestWeightHarmonicOfFockLowestKTypeStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JointHighestWeightHarmonicMultiplicityOneCoverinStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsJointHighestWeightHarmonicSliceOuterVariablesStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JointHighestWeightHarmonicMultiplicityOneCoverin
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsJointHighestWeightHarmonicSliceOuterVariables
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ParamsEx
@@ -91,7 +91,7 @@ theorem joint_line : ∀ (D : D7) (n m : ℕ) (w : GlobalTheory.ExportSeries.Wei
   have hU : ∀ τ : D.what₂.Tau, ∃ Q₀ : MvPolynomial (Fin m × Fin n) ℂ, ∀ α β f,
       GlobalTheory.CompactHarm.JointTop (GlobalTheory.HarmLine.zR m n (w.p τ)) (GlobalTheory.HarmLine.yR m n (w.p τ)) (κ τ) α β f →
         ∃ r : ℂ, f = r • Q₀ := fun τ =>
-    GlobalTheory.T.jointHighestWeightHarmonic_multiplicity_one_covering _ _ (GlobalTheory.HarmLine.zR_inj m n (w.p τ)) (GlobalTheory.HarmLine.yR_inj m n (w.p τ))
+    _root_.GlobalTheory.CompactHarm.jointTop_line _ _ (GlobalTheory.HarmLine.zR_inj m n (w.p τ)) (GlobalTheory.HarmLine.yR_inj m n (w.p τ))
       (GlobalTheory.HarmLine.zR_ne_yR m n (w.p τ)) (GlobalTheory.HarmLine.zR_yR_cover m n (w.p τ)) (κ τ)
   choose Q₀ hQ₀ using hU
   let Q : D.what₂.Tau → PolF D m n := fun τ => MvPolynomial.rename (Prod.mk τ) (Q₀ τ)
@@ -100,7 +100,7 @@ theorem joint_line : ∀ (D : D7) (n m : ℕ) (w : GlobalTheory.ExportSeries.Wei
         (Prod.mk τ ∘ GlobalTheory.HarmLine.yR m n (w.p τ)) (κ τ) α β P →
       ∃ R : PolF D m n, P = Q τ * R ∧ ∀ v ∈ R.vars, v.1 ≠ τ := by
     intro τ P α β h
-    obtain ⟨s, f, g, hPs, hf, hg⟩ := GlobalTheory.T.isJointHighestWeightHarmonic_slice_outer_variables (Prod.mk τ) (fun a b h => (Prod.mk.inj h).2) _ _ _ _ _ P h
+    obtain ⟨s, f, g, hPs, hf, hg⟩ := _root_.GlobalTheory.jointTop_slice (Prod.mk τ) (fun a b h => (Prod.mk.inj h).2) _ _ _ _ _ P h
     choose! r hr using fun i (hi : i ∈ s) => hQ₀ τ α β (f i) (hf i hi)
     refine ⟨∑ i ∈ s, r i • g i, ?_, ?_⟩
     · rw [hPs, Finset.mul_sum]

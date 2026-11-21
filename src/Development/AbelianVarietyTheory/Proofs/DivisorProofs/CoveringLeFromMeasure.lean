@@ -2,7 +2,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeSqSubLeSlopeSqSpan
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearEmbSupLatticeOntoRealisationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearEmbSupLatticeOntoRealisation
+import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
+import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
+import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
+import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMassSum
 
 set_option synthInstance.maxHeartbeats 400000
 
@@ -21,7 +26,7 @@ variable {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : Formalism.MainNotio
 set_option maxHeartbeats 1000000 in
 
 theorem coreAt_of (C : ℝ) (hg : GramAt p i) (hm : MeasAt p i C) (hr : RatAt p i) : CoreAt p i (2 * C) := by
-  obtain ⟨ι, hι, hli, himg⟩ := GlobalTheory.T.exists_semilinear_emb_supLattice_onto_realisation _ _ _ _ _ p.T p.R.toRealDat p.κ p.v₀ p.fw i
+  obtain ⟨ι, hι, hli, himg⟩ := _root_.GlobalTheory.CovTop.SupImage.exists_emb_image_latW _ _ _ _ _ p.T p.R.toRealDat p.κ p.v₀ p.fw i
   have hTC : IsTotallyComplex p.T.Q.c.F := ⟨fun v => by
     rw [← InfinitePlace.not_isReal_iff_isComplex, InfinitePlace.isReal_iff, ComplexEmbedding.isReal_iff]
     exact fun e => GlobalTheory.CompHt.conj_comp_ne (c := p.T.Q.c) v.embedding (RingHom.ext fun a => RingHom.congr_fun e a)⟩

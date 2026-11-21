@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TransportedLatti
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsBasisAtBlock
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CoefficientSpaceEqSpanOrbitExtremalVector
 import Formalism.BranchSandwichDivisors.DivFromPassageAndNorm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLeOfHighestVectorRowOperatorStableStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLeOfHighestVectorRowOperatorStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastRowTopComponentDualWeylEqMonomialMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualWeylLastZeroInclusion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockPairingLastRowMonomialReadsCoefficientStatement
@@ -33,7 +33,7 @@ theorem hw_weight {ν : Fin n → ℕ} (hν : Antitone ν) (s : Fin n) :
 theorem capDet_dualWeyl {μ : Fin n → ℕ} (hμ : Antitone μ) (u : ℤ) {f : MvPolynomial (Fin n × Fin n) K}
     (hf : f ∈ dualWeyl K n n μ) :
     capDet (fun i j => rowE K n n i j) u f = ((∏ j : Fin n, (u + ((j : ℕ) : ℤ) - (μ j : ℤ)) : ℤ) : K) • f := by
-  have h := GlobalTheory.T.dualWeyl_le_of_highest_vector_rowOperator_stable K n μ hμ (Module.End.eigenspace (capDet (fun i j => rowE K n n i j) u)
+  have h := _root_.GlobalTheory.BrCompare.dualWeyl_le_of_rowE_stable K n μ hμ (Module.End.eigenspace (capDet (fun i j => rowE K n n i j) u)
     ((∏ j : Fin n, (u + ((j : ℕ) : ℤ) - (μ j : ℤ)) : ℤ) : K)) ?_ ?_ hf
   · exact Module.End.mem_eigenspace_iff.1 h
   · exact Module.End.mem_eigenspace_iff.2 (capDet_eigen _ u _ (fun j => (μ j : ℤ)) (hw_raise μ)

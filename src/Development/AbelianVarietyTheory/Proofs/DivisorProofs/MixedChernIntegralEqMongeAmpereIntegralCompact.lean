@@ -28,7 +28,7 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnSourceIffOfDensity
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormSignedPartMeasureChartApplyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormSignedPartMeasureChartApply
 
 set_option autoImplicit false
 
@@ -94,7 +94,7 @@ theorem part_eq_lintegral_locDens [SecondCountableTopology (CxPts p σ)] (L : Fi
   rw [hA.chart_eq j] at hs hl ⊢
   set c := hA.anRead.chart j
   have hm := measurableSet_image c.e hS hs
-  rw [GlobalTheory.T.mixedChernFormSignedPartMeasure_chart_apply k X p σ D L ε c S hS hs,
+  rw [_root_.GlobalTheory.Mix.part_apply k X p σ D L ε c S hS hs,
     ← measurePreserving_toV.setLIntegral_comp_preimage_emb (toV D).toHomeomorph.measurableEmbedding]
   have e : c.e '' S = c.e.target ∩ c.e.symm ⁻¹' S := by
     rw [← c.e.image_source_inter_eq', inter_eq_right.2 (show S ⊆ c.e.source from hs)]

@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FischerDecompositio
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockAdjoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicsGradedCompactStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFockHarmonicRepresentativeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicMemFiniteDimensionalCompactStableStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockHarmonicMemFiniteDimensionalCompactStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableComplementOfKernelExistsStatement
 
 noncomputable section
@@ -20,7 +20,7 @@ theorem lemA : ∀ (P Q R S : ℕ) (W : Type) [AddCommGroup W] [Module ℂ W] (p
 
 theorem lemB : ∀ (P Q R S : ℕ) (h : Pol P Q R S), h ∈ harm2 P Q R S →
     ∃ H0 : Submodule ℂ (Pol P Q R S), FiniteDimensional ℂ H0 ∧ h ∈ H0 ∧ (∀ v ∈ H0, v ∈ harm2 P Q R S) ∧
-      KStable (fockAct1 P Q R S) H0 ∧ KStable (fockAct2 P Q R S) H0 := GlobalTheory.T.fockHarmonic_mem_finiteDimensional_compactStable
+      KStable (fockAct1 P Q R S) H0 ∧ KStable (fockAct2 P Q R S) H0 := _root_.GlobalTheory.FockAlg.fin_harm
 
 theorem lemC : ∀ (V W H : Type) [AddCommGroup V] [Module ℂ V] [AddCommGroup W] [Module ℂ W]
     [NormedAddCommGroup H] [InnerProductSpace ℂ H] (ι : V →ₗ[ℂ] H), Function.Injective ι →

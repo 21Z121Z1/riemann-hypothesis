@@ -5,7 +5,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.Uni
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FrameChangeComposeInvertBaseChangeTriangular
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.FramedPointEvalNaturalWeightScaling
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcLetterRingOverDVRPolynomialDenominators
-import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointUniqueAndBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointUniqueAndBaseChange
+import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFramedPointChangedByLetters
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ArcFramedPointIntegralOpenDiscStatement
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IntegralOfFrChg
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFactorOfMemRange
@@ -168,7 +169,7 @@ theorem recordAt_of_isArcFr : Out.Laws → Out.Laws2 → ∀ (E : Type) [Field E
   obtain ⟨z₁, hz₁⟩ := hev.bc _ _ φ Dv.yR
   have hA : IsArcFr W e th ((algebraMap T'.V T'.Fr).comp e₀) z₀ := by
     rw [← he₁]
-    have key := (GlobalTheory.T.arcFramedPoint_unique_and_baseChange hL hL2 E H Dw l Xo c O β Y Dv.Tv.V b aw χ W e th hth _ _ y₀ hy).2
+    have key := (_root_.GlobalTheory.ArcQ.isArcFr_unique_baseChange hL hL2 E H Dw l Xo c O β Y Dv.Tv.V b aw χ W e th hth _ _ y₀ hy).2
     first
       | exact key hmono _ φ z₀ hz₀
       | exact key _ φ z₀ hz₀

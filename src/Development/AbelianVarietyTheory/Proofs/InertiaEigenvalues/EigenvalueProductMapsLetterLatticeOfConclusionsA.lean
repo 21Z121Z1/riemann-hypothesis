@@ -3,7 +3,8 @@ import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
 import Formalism.SharpRestriction.LevelLetterCocycles.LetterConditionGlobal
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineLiftingInputs
 import Formalism.SharpRestriction.LevelLetterCocycles.RingHypothesesOfCrystalline
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachOperatorProductShiftMemLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachOperatorProductShiftMemLattice
+import Formalism.SharpRestriction.LevelLetterCocycles.ExpRules
 open Formalism.WeaklyAdmissibleFiltrations Formalism.BasicNotions Formalism.BasicNotions.Loc
 
 noncomputable section
@@ -162,7 +163,7 @@ theorem eigenvalue_product_maps_letter_lattice_of_conclusions : ∀ (D : Formali
     exact h2
   have h9 : Formalism.MainNotions.DeltaInvariantLattices.P9W ((HW l).W K 1 LL h) := hN.2.2.2.2.2.2.2.2.1 l K 1 LL h
   exact eigenvalue_product_maps_letter_lattice_local _ l hpl (fun hA T hT => Formalism.MainNotions.RamifiedCoefficientChains.Sh.ZT.ring_hypotheses_of_crystalline _ hA h9 T hT)
-    (fun _ => GlobalTheory.T.wachOperatorProduct_shift_mem_lattice D HW F Cm hN l K LL hCAl) hCA
+    (fun _ => _root_.GlobalTheory.wachShift_mem_of_N1used D HW F Cm hN l K LL hCAl) hCA
 
 end GlobalTheory.PrimeSequence
 

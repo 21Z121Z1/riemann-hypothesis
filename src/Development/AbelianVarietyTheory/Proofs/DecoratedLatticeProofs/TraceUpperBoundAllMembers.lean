@@ -11,8 +11,12 @@ import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.Lemm
 import Formalism.LocalToGlobal.GlobalTheory.GL5.DiscreteSeriesOfFormalDegree
 import Formalism.SharpRestriction.ElevenLe
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BinaryHermitianFormRepresentsTotallyPositive
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FdegHCRowsMulSuperfactorialLeVandermondeStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CloudAddNodeLeTenBaseSizeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FdegHCRowsMulSuperfactorialLeVandermonde
+import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
+import Formalism.FormalDegreeBessel.StatementDS
+import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GapAtLeast
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CloudAddNodeLeTenBaseSize
+import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Fc GlobalTheory.MiS GlobalTheory.Fam
 attribute [local instance] Formalism.BasicNotions.Host.cmStar
 
@@ -312,8 +316,8 @@ theorem tr_le_of (C : Formalism.MainNotions.Inhab.FC) (hC : C.CTu = 25) (cD ch :
     have h1 : ∀ ρ ∈ (Finset.univ : Finset D.what₂.Tau), Real.log (D.dsig ρ * facProd D.R.r / vand (uColR D u ρ)) ≤
         ((D.R.k : ℝ) * D.R.m + (D.R.m : ℝ) ^ 2) * (L.sc.L + 3) := by
       intro ρ _
-      have hnb := GlobalTheory.T.cloud_add_node_le_ten_base_size C cD ch D L hv N.sizes hX ρ
-      have hP := GlobalTheory.T.fdegHC_rows_mul_superfactorial_le_vandermonde D.R (D.hc ρ) (D.hcW u ρ) (by rw [D.hcW_v]) (by rw [D.hcW_b]) (10 * L.sc.b)
+      have hnb := _root_.GlobalTheory.cloud_add_node_le_ten_b C cD ch D L hv N.sizes hX ρ
+      have hP := _root_.GlobalTheory.FdegRowsBound.fdeg_rows_le D.R (D.hc ρ) (D.hcW u ρ) (by rw [D.hcW_v]) (by rw [D.hcW_b]) (10 * L.sc.b)
         (by linarith) hnb.1 hnb.2
       have hdim := dim_weyl_pos_of_strictAnti _ (column_param_strictAnti D u ρ)
       have hvd : 0 < vand (uColR D u ρ) := by

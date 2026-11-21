@@ -4,10 +4,12 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ei
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.FderivIntegralApplyOfHolomorphicOfDominated
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHeightDoublingEmbeddingLePowMulHeightsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIntegrableBoundDoublingIntegrandQuotientStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingBasicIdentityUnfoldingStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelEisensteinSphericalModerateGrowthRealPointStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsHeightDoublingEmbeddingLePowMulHeights
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IntegrableUnitaryQuotientHeightPowMulRapidlyDecr
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsGrowthSobNeTopOfIsAutFunSm
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIntegrableBoundDoublingIntegrandQuotient
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingBasicIdentityUnfolding
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelEisensteinSphericalModerateGrowthRealPoint
 open scoped ComplexConjugate Matrix NNReal
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.L2.Theta Formalism.L2.Pj Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField
 open GlobalTheory.AutomorphicL2Unitary GlobalTheory.Cusp GlobalTheory.AdelicU GlobalTheory.Doubling GlobalTheory.Cont
@@ -26,7 +28,7 @@ theorem zetaContinues_of_eisRegularAt {D : D7} {V : HSp D} {μ : (AE D)ˣ →* C
     (ha : ∀ g, AnalyticOnNhd ℂ (eisSer V Φ g) (rightOf (V.rank / 2))) (hreg : ∀ s₀, ∃ k, EisRegularAt V Φ s₀ k)
     {f₁ f₂ : GA D V → ℂ} (h₁ : GlobalTheory.Grow.RapidDec V f₁) (h₂ : GlobalTheory.Grow.RapidDec V f₂)
     (hZ : IsZetaFamily V μ m Φ f₁ f₂) : ZetaContinues V μ m Φ f₁ f₂ := by
-  obtain ⟨C', c, hio⟩ := GlobalTheory.T.exists_height_doublingEmbedding_le_pow_mul_heights D V
+  obtain ⟨C', c, hio⟩ := _root_.GlobalTheory.Cont.HeightIo.height_io_bound D V
   have key : ∀ (H : ℂ → GA D (dblSp V) → ℂ) (z : ℂ) (r : ℝ), 0 < r →
       (∀ s ∈ ball z r, LeftInv (GQ (dblSp V)) (H s)) →
       (∀ g, DifferentiableOn ℂ (H · g) (ball z r)) →
@@ -35,7 +37,7 @@ theorem zetaContinues_of_eisRegularAt {D : D7} {V : HSp D} {μ : (AE D)ˣ →* C
       (∀ s ∈ ball z r, DblConv V μ m (H s) f₁ f₂) ∧
         DifferentiableOn ℂ (fun s => dblInt V μ m (H s) f₁ f₂) (ball z r) := by
     rintro H z r hr hinv hd hc ⟨C, N, hb⟩
-    obtain ⟨bound, hbi, hbd⟩ := GlobalTheory.T.exists_integrable_bound_doubling_integrand_quotient D V μ m hm f₁ f₂ h₁ h₂ C' c hio C N
+    obtain ⟨bound, hbi, hbd⟩ := _root_.GlobalTheory.Core.Rk.Dom.exists_integrable_bound_dblIntegrandQ D V μ m hm f₁ f₂ h₁ h₂ C' c hio C N
     have hcont : ∀ s ∈ ball z r, Continuous (H s) := fun s hs =>
       hc.comp_continuous (f := fun g => (s, g)) (by fun_prop) fun g => ⟨hs, trivial⟩
     have hli : ∀ s ∈ ball z r, LeftInv ((GQ V).prod (GQ V)) (dblIntegrand V μ (H s) f₁ f₂) := fun s hs =>

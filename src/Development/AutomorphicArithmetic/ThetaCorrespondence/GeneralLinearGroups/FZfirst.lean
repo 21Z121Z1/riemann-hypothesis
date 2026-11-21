@@ -27,7 +27,7 @@ private theorem segTerm_irr {d : ℕ} (σ : IrrRep (GL (Fin d) k)) (l : ℕ) (a 
 
 private theorem piSeg_irr (hBZ : GlobalTheory.Published.BernsteinZelevinskyFiniteness) {d : ℕ} (σ : IrrRep (GL (Fin d) k))
     (l : ℕ) : (piTensor (segTerm σ.ρ l)).IsIrreducible :=
-  GlobalTheory.T.piExteriorTensor_smoothIrreducible_isIrreducible hBZ k (Fin l) (fun _ => Fin d) fun a => ⟨_, segTerm σ.ρ l a, segTerm_smooth σ l a, segTerm_irr σ l a⟩
+  _root_.GlobalTheory.ExtTensorIrr.piTensor_isIrreducible hBZ k (Fin l) (fun _ => Fin d) fun a => ⟨_, segTerm σ.ρ l a, segTerm_smooth σ l a, segTerm_irr σ l a⟩
 
 private theorem range_eq {l d N : ℕ} (e : (Σ _ : Fin l, Fin d) ≃ Fin N) {V X : Type} [AddCommGroup V] [Module ℂ V]
     [AddCommGroup X] [Module ℂ X] {π : Representation ℂ (GL (Fin N) k) V} (hπ : IsSmooth π)
@@ -117,7 +117,7 @@ private theorem word (hG : GlobalTheory.Published.GeometricLemma) (hBZ : GlobalT
   obtain rfl : u = fun a => ⟨Δ.d, c a⟩ := funext hc
   obtain ⟨θ⟩ := (hZ Δ Δ.start.rep Δ.start.cl_rep e π).2.1 (h.cl_eq hZ)
   have hT : (piTensor fun a => (c a).rep.ρ).IsIrreducible :=
-    GlobalTheory.T.piExteriorTensor_smoothIrreducible_isIrreducible hBZ k (Fin Δ.len) (fun _ => Fin Δ.d) fun a => (c a).rep
+    _root_.GlobalTheory.ExtTensorIrr.piTensor_isIrreducible hBZ k (Fin Δ.len) (fun _ => Fin Δ.d) fun a => (c a).rep
   haveI := Model.nontrivial_of_isIrreducible π.irr
   obtain ⟨v, hv⟩ := exists_ne (0 : π.V)
   have h4 := GlobalTheory.CompanionTheory.SocleJm.one_le_jhMult_jac e hT φ ⟨v, fun h0 => hv (hφ (h0.trans (map_zero φ).symm))⟩

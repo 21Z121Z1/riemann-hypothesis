@@ -17,11 +17,11 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Fo
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
 import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 import Development.AbelianVarietyTheory.Definitions.Divisors.RealisedChainTorusEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftEigenvalueLowerBoundOfWeakCharacterisationStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatesOfRationalThetaLiftFromCharacterisatioStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftEigenvalueLowerBoundOfWeakCharacterisation
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatesOfRationalThetaLiftFromCharacterisatio
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitenessInputsRealData
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPlacesPrimeToHostBaseTupleStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPartBaseLinksOfPrimitiveRowsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPlacesPrimeToHostBaseTuple
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPartBaseLinksOfPrimitiveRows
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.FinitenessInputsRealData
 
 section
@@ -37,10 +37,10 @@ theorem lamLow_closing_alt : GlobalTheory.Published.CuspRapidDecay → GlobalThe
     hOk hSep hChar hEx hPrim hPhs hStd fw hBar hIo hPins hOne hTie hSizes hLow hNum hPar hStdV
   have hAd : AdelC R.toRealDat F.lv2 :=
     _root_.GlobalTheory.T.adelC_of_parameter_choice_stdV hCusp hWS hSWC hDM hUD hBZ hFD R.toRealDat F.lv2 hPar hStdV
-  have hCore := (GlobalTheory.T.splitPart_baseLinks_of_primitiveRows R F s hOk hSep hChar hEx hPrim hPhs).1
+  have hCore := (_root_.GlobalTheory.LowRow.baseLinks_of_prims R F s hOk hSep hChar hEx hPrim hPhs).1
   have hPT : PrimeToHost R.toRealDat A3.A.μ0 :=
-    GlobalTheory.T.badPlacesPrimeToHost_baseTuple R.toRealDat F.lv2 (GlobalTheory.Core5.of_core hCore)
-  exact GlobalTheory.T.liftEigenvalueLowerBound_of_weakCharacterisation GlobalTheory.T.conjugatesOfRationalThetaLift_from_characterisation T R F κ v₀ O s b C CH hOk hSep hChar hEx hPrim hPhs hStd fw hBar
+    _root_.GlobalTheory.LowRow.primeToHost_base R.toRealDat F.lv2 (GlobalTheory.Core5.of_core hCore)
+  exact _root_.GlobalTheory.LowRow.lamLow_of_weak _root_.GlobalTheory.ConjRatLiftFive.conjRatLift5 T R F κ v₀ O s b C CH hOk hSep hChar hEx hPrim hPhs hStd fw hBar
     hIo hPins hOne hTie hSizes hLow hNum hAd hPT
 end GlobalTheory.LowRow
 end

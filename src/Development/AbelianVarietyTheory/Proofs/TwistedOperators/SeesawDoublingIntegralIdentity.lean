@@ -154,7 +154,7 @@ theorem actAt : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [NumberFiel
           om' (K g, 1) (GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.tens (evFin F Bs.v₁) φ r) = GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.tens (evFin F Bs.v₁) φ₁ r ∧
             ι φ₁ = omB ν α g 1 (ι φ) := by
   intro F E _ _ _ _ _ σ a a' Bs Γ X om om' hTr K hK
-  have hB := fun g => GlobalTheory.T.weilRepresentationLocality_unitaryGroupV' Bs Γ X om om' hTr Bs.v₁ (K g) (hK g).1
+  have hB := fun g => _root_.GlobalTheory.WeilLocality.locality Bs Γ X om om' hTr Bs.v₁ (K g) (hK g).1
   choose S hS using hB
   have hSplit := GlobalTheory.WeilM.IsUWeilPair.isUSplitting hTr.weil'
   have pres : ∀ p Φ, Φ ∈ GlobalTheory.WeilM.schA F _ → om' p Φ ∈ GlobalTheory.WeilM.schA F _ :=
@@ -200,8 +200,8 @@ theorem actAt : ∀ {F E : Type} [Field F] [NumberField F] [Field E] [NumberFiel
       GlobalTheory.VacBridge.rho_acts_locCo Γ.M'.co Bs.ψ Bs.v₁ _ (atAct g γ hγ) (S g φ) r (restS g φ r hφ hr)]
   have h5 : ∀ g, ∀ φ ∈ GlobalTheory.WeilM.SB _, ∀ μ : @Measure (Fin a' × Fin (a + a') → Fv F Bs.v₁) (borel _),
       @Measure.IsAddHaarMeasure _ _ _ (borel _) μ → ∫⁻ y, ‖S g φ y‖ₑ ^ 2 ∂μ = ∫⁻ y, ‖φ y‖ₑ ^ 2 ∂μ :=
-    fun g φ hφ μ hμ => GlobalTheory.T.localWeilOperator_isometry_schwartzBruhat Bs Γ X om om' hTr Bs.v₁ (K g) (hK g).1 φ (S g φ) hφ (h1 g φ hφ) (hS g φ hφ).2 μ hμ
-  obtain ⟨ν, α, hν, hC⟩ := GlobalTheory.T.heisenbergIntertwiner_eq_twisted_weilOperator Bs Γ X om om' hTr K (fun g => hK g) S h1
+    fun g φ hφ μ hμ => _root_.GlobalTheory.LocalIsom.lintegral_sq_eq_of_acts Bs Γ X om om' hTr Bs.v₁ (K g) (hK g).1 φ (S g φ) hφ (h1 g φ hφ) (hS g φ hφ).2 μ hμ
+  obtain ⟨ν, α, hν, hC⟩ := _root_.GlobalTheory.LinModelLocal.exists_omB_of_linBar Bs Γ X om om' hTr K (fun g => hK g) S h1
     (fun g => GlobalTheory.LocWeilAct.linear_of_acts Bs.v₁ (om' (K g, 1)) (S g) (hS g)) h2 h3 h4 h5
   exact ⟨ν, α, hν, fun ι hι g φ hφ r hr =>
     ⟨S g φ, h1 g φ hφ, (hS g φ hφ).2 r hr, hC ι hι g φ hφ⟩⟩

@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActCCoe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreePointHalfLevelLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HalfLevelSubmodulePermutation
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportPermutedDirectSumComplexificationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportPermutedDirectSumComplexification
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ToKnownTheoremsOf
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LiftLambdaBound
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsFreeHalfLiftOfNeat
@@ -72,7 +72,7 @@ theorem halfH_acts_freely_on_internal_sum_decomposition : _root_.GlobalTheory.Co
     obtain ⟨hf, h⟩ := hK g f
     rw [← h]
     rfl
-  obtain ⟨A', hint', hperm'⟩ := GlobalTheory.T.transport_permuted_directSum_complexification p.T.Q.c.F (Fm.D x ι).what₂.LL (Fin (p.R.nW i) → (Fm.D x ι).what₂.LL) (CF p i)
+  obtain ⟨A', hint', hperm'⟩ := _root_.GlobalTheory.DefRead.Transport.transport p.T.Q.c.F (Fm.D x ι).what₂.LL (Fin (p.R.nW i) → (Fm.D x ι).what₂.LL) (CF p i)
     (GlobalTheory.BadCount.Inh.halfH (Fm.D x ι) k) p.P.Gp X (Fm.D x ι).what₂.embLL (p.R.FW i).WK n b hbW hbK hbsK hbL hbsL
     (p.fw.e i) (p.R.FW i).ρ (p.R.FW i).chi (_root_.GlobalTheory.DefHalf.groupActionOnCoefficients p i hp.1) he
     (((p.R.eG.trans p.cG).symm.toMonoidHom).comp (GlobalTheory.BadCount.Inh.halfH (Fm.D x ι) k).subtype) A hint hperm

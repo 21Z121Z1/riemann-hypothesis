@@ -8,29 +8,38 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicProduct
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsIrreducibleIffOfLinearEquiv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrreducibleFixed
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIrreducibleTwist
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParahoricBlockTypeVectorCuspidalSupportTameCharaStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IrreducibleSplitExactTwistCountProductStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalTwistOfBlockTypeVectorStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRepParabolicCharStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLeviBlockEigenvectorAtIdentityStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InSupportMulUnramifiedCharOfIntegralEigenvectorStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharInCuspidalSupportOfJacquetSubquotientFactorStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterIffIsCuspidalGLnFiniteFieldStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterOfPolynomialOfCuspidalLabelStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TraceHarishChandraInducedEqProductCharactersStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsConstituentHarishChandraRepIffPairingNeZeroStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassFunctionLabelOfLabelMapLabelStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFixedParahoricBlockVectorOfIdempotentStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParahoricBlockTypeVectorCuspidalSupportTameChara
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.UnlinkedProductIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.DepthZeroJacquetInjective
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IrreducibleSplitExactTwistCountProduct
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalTwistOfBlockTypeVector
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRepParabolicChar
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsLeviBlockEigenvectorAtIdentity
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InSupportMulUnramifiedCharOfIntegralEigenvector
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharInCuspidalSupportOfJacquetSubquotientFactor
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterIffIsCuspidalGLnFiniteField
+import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoeffZeroNeOfMonicIrr
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonListLength
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterOfPolynomialOfCuspidalLabel
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TraceHarishChandraInducedEqProductCharacters
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsConstituentHarishChandraRepIffPairingNeZero
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassFunctionLabelOfLabelMapLabel
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsFixedParahoricBlockVectorOfIdempotent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameCharacterParahoricInvariantStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetSubquotientDetCharacterFactorsIntegralStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetSubquotientFirstFactorOfEmptySecondBlockStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetSubquotientDetCharacterFactorsIntegral
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetSubquotientFirstFactorOfEmptySecondBlock
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParabolicInductionEmptySecondIsSubquotientFirstStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSubquotientRepresentationTwoReindexingsStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsEquivariantMapOfLevelTypeVectorStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsParabolicTypeVectorOfEquivariantMapStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStandardTypeVectorOfParabolicTypeVectorStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StdParabolicTwistedTraceSumNeZeroOfVectorStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrreducibleHarishChandraOfStdTraceNeZeroStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsParabolicTypeVectorOfEquivariantMap
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsStandardTypeVectorOfParabolicTypeVector
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.StdParabolicTwistedTraceSumNeZeroOfVector
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrreducibleHarishChandraOfStdTraceNeZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIrreducibleDetTwistOfStdTraceTwoBlockStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLabelRootOfHarishChandraConstituentStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabelTameCharacter
@@ -51,10 +60,10 @@ theorem isRoot_of_parVec {p : ℕ} [Fact p.Prime] (L : GlobalTheory.GLq.LabelDat
     {θ : (ZMod p)ˣ →* ℂˣ} {u : ZMod p} {f : (ZMod p)[X]} (ρ : FDRep ℂ (GL (Fin r) (ZMod p))) (hρ : CategoryTheory.Simple ρ)
     (hf : GlobalTheory.GLq.HasLabel L (fun x => ρ.character x) f) (hθ : GlobalTheory.GLp.IsCharLab L θ u) (ha : Fintype.card (m a) = 1)
     {v : ρ} (hv : v ≠ 0) (h : ParVec ρ.ρ e a θ v) : f.IsRoot u := by
-  obtain ⟨c, v', hc, hv', hs⟩ := GlobalTheory.T.exists_standardTypeVector_of_parabolicTypeVector p r α m e a θ _ ρ.ρ v ha hv h
-  have ht := GlobalTheory.T.stdParabolicTwistedTraceSum_ne_zero_of_vector p r c θ ρ v' hv' hs
+  obtain ⟨c, v', hc, hv', hs⟩ := _root_.GlobalTheory.LevelType.exists_stdVec_of_parVec p r α m e a θ _ ρ.ρ v ha hv h
+  have ht := _root_.GlobalTheory.LevelType.stdTrace_ne_zero p r c θ ρ v' hv' hs
   have hr : r = c + 1 + (r - c - 1) := by omega
-  obtain ⟨A, B, hA, hB, h1, h2⟩ := GlobalTheory.T.exists_irreducible_harishChandra_of_stdTrace_ne_zero p r c (r - c - 1) θ ρ.character hr ⟨ρ, fun _ => rfl⟩ ht
+  obtain ⟨A, B, hA, hB, h1, h2⟩ := _root_.GlobalTheory.LevelType.exists_irr_hc_of_stdTrace_ne_zero p r c (r - c - 1) θ ρ.character hr ⟨ρ, fun _ => rfl⟩ ht
   obtain ⟨σ, hσ, h3⟩ := GlobalTheory.T.exists_irreducible_detTwist_of_stdTrace_twoBlock p c θ A hA h2
   exact GlobalTheory.T.thetaLabel_root_of_harishChandraConstituent p L r c _ θ u f _ A B σ hr ⟨ρ, hρ, fun _ => rfl⟩ hA hB hσ hf hθ h1 h3
 
@@ -132,8 +141,8 @@ theorem exists_hasLabel {p : ℕ} [Fact p.Prime] (t : Formalism.CyclotomicNorms.
     ∃ L : GlobalTheory.GLq.LabelDatum p, L.teich = t ∧ L.gen = ζ ∧ GlobalTheory.GLq.HasLabel L (fun x => ρ.character x) f := by
   let L : GlobalTheory.GLq.LabelDatum p := ⟨t, ht, ζ, fun d hd => (hζ d hd).1,
     fun d e hd he => (hζ d hd).2 (d * e) (dvd_mul_right d e) (Nat.mul_pos hd he)⟩
-  exact ⟨L, rfl, rfl, GlobalTheory.T.classFunctionLabel_of_labelMap_label p L O (fun d V hd hs hc => GlobalTheory.T.isCuspidalCharacterOfPolynomial_of_cuspidalLabel p L t ht hζ rfl d V _ hd
-    ((GlobalTheory.T.isCuspidalCharacter_iff_isCuspidal_GLnFiniteField p d V hd hs).2 hc) (hO d V hd hs hc)) (GlobalTheory.T.trace_harishChandra_induced_eq_product_characters p) (GlobalTheory.T.isConstituent_harishChandraRep_iff_pairing_ne_zero p) r ρ f hρ
+  exact ⟨L, rfl, rfl, _root_.GlobalTheory.SerCmp.hasLabel_of_hasLabelO p L O (fun d V hd hs hc => _root_.GlobalTheory.SerCmp.LabConv.isCuspOf_of_hasCuspLabel p L t ht hζ rfl d V _ hd
+    ((_root_.GlobalTheory.CuspCharRep.isCusp_character_iff_isCuspidal p d V hd hs).2 hc) (hO d V hd hs hc)) (_root_.GlobalTheory.HCChar.trace_hcRep_eq_hcL p) (_root_.GlobalTheory.GLq.ConstIff.constituent_hcRep_iff p) r ρ f hρ
     (hasLabelO_of_mul O ρ hρ h0 h)⟩
 
 end GlobalTheory.BlockTypeSplit

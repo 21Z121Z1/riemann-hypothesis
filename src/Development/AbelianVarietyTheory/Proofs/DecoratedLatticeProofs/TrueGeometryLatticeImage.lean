@@ -16,7 +16,9 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.We
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianStepLevelOfChartFormsLevel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardDatumSplitPlacesOverLevelPrime
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPointBaseLatticeCoordsIntegralLastInPrimeStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardPairFrameCoordinatesIntegralAndFunctionaStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardPairFrameCoordinatesIntegralAndFunctiona
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TwTransAlt
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPointsLieOverDistinctPlaces
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
 open GlobalTheory.MixModel GlobalTheory.MixPer GlobalTheory.Unf GlobalTheory.SeeSaw GlobalTheory.StepData GlobalTheory.SymChain GlobalTheory.LocMod GlobalTheory.MiS GlobalTheory.MiTop GlobalTheory.Fam GlobalTheory.Mem.Col2 ValuativeRel IsLocalRing
@@ -208,7 +210,7 @@ theorem col_mem_level {B : GlobalTheory.Mem.Base} {X : GlobalTheory.Mem.PreX B.t
     rw [hF.piU]; exact hLb
   have h1 := (GlobalTheory.Mem.Col2.Lv.uloc_T_iff (Formalism.L2.Forms.sigD (I.rec7 l Z)) (I.rec7 l Z).sp.cm.deg2 (fun x => star_star x)
     (fun x hx => ((I.rec7 l Z).sp.cm.fixed x).1 hx) (I.rec7 l Z).sp.cm.cmUnram.2.2 hgram S F.atT.piU (c F.atT.piU) rfl hpq hTp hL
-    v hv (GlobalTheory.T.levelPrime_dvd_of_adicValuation_lt_one (I.rec7 l Z) u F.atT v hv) _).1 (((S.U_eq x).1 hx).2 v)
+    v hv (_root_.GlobalTheory.LevelUnif.dvd_of_val_lt_one (I.rec7 l Z) u F.atT v hv) _).1 (((S.U_eq x).1 hx).2 v)
   exact col_mem _ hgram S.Lb (fun z hz j => let ⟨r, hr, _⟩ := (hLb z).1 hz j; ⟨r, hr⟩) v _ h1.2 s
 
 set_option maxHeartbeats 4000000 in
@@ -252,7 +254,7 @@ theorem stdPair_fixed {B : GlobalTheory.Mem.Base} {X : GlobalTheory.Mem.PreX B.t
   let r₀ : Fin ((I.rec7 l Z).sp.X j).rank := ⟨((I.rec7 l Z).sp.X j).rank - 1, by omega⟩
   have hr₀ : r₀.1 + 1 = ((I.rec7 l Z).sp.X j).rank := by simp only [r₀]; omega
   refine smul_pair_eq _ _ _ _ ((mt _ κ⁻¹).map (p i).pr) (β j i).b'b _ r₀
-    (GlobalTheory.T.standardPair_frameCoordinates_integral_and_functional I l Z u k ι p β Q L hS j hj i r₀ hr₀) g hg ?_ (fun r s => (k1 r s).1) (fun r s => (k2 r s).1)
+    (_root_.GlobalTheory.AdForm.stdT_pair_coords I l Z u k ι p β Q L hS j hj i r₀ hr₀) g hg ?_ (fun r s => (k1 r s).1) (fun r s => (k2 r s).1)
     (fun s => (k2 r₀ s).2 hr₀)
   rw [← Matrix.map_mul, mt_mul_inv]
   exact Matrix.map_one _ (map_zero _) (map_one _)

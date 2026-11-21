@@ -14,15 +14,15 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.Stabilizer
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NonarchimedeanGroupOfIsCompactIsOpen
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InducedSectionSmooth
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.InducedSectionZFinite
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsAdelicUnitaryConjSelfDualMajorantLevelsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsAdelicUnitaryConjSelfDualMajorantLevels
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContinuesWithModerateGrowthShiftTranslatePowStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AnisotropicCoreWittFrame
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoubledSpaceMaximalLevelLattice
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.ExistsNotEisContinues
 import Development.WeilBound.RepresentationTheoryGL.EisensteinResidues.AnisotropicGlobalForms.SectionTrace.SecOf
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardSectionExistsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartSectionExistsStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarSectionExistsStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardSectionExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartSectionExists
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalarSectionExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DivisibilityStatementStatement
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.EisensteinChartSplitting.PositiveSumGrowth.AbsAPos
 
@@ -32,6 +32,6 @@ open ResidueKilled.Tr
 
 theorem siegelEisensteinContinuation_of (hD : Dict) (hI : DictInf) (hL : SecLaw) (hW : WallLaw) (hG : CMGood)
     (hT : GrpTop) (hB : BdetLaw) (hE : ExtLaw) (hP : ParLaw) (hS : SgAll) : GlobalTheory.Published.SiegelEisensteinContinuation :=
-  ResidueKilled.Tr.tTop hG hT hB hE hP hS (GlobalTheory.T.chart_section_exists hD hI GlobalTheory.T.standard_section_exists) (GlobalTheory.T.scalar_section_exists hL hW) GlobalTheory.T.divisibility_statement
+  ResidueKilled.Tr.tTop hG hT hB hE hP hS (_root_.GlobalTheory.CompanionTheory.TChartProof.tChart hD hI _root_.GlobalTheory.CompanionTheory.StdChart.tStd) (_root_.GlobalTheory.CompanionTheory.ScalWall.tScal hL hW) GlobalTheory.T.divisibility_statement
 
 end PositivityTheory.RgEis.Sp

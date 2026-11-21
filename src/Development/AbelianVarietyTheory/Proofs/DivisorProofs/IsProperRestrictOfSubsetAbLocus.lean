@@ -2,8 +2,10 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProperOfProperSpecialFibreUniversallyOpenDvrStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProperOfCompleteDVRLiftGenericPointStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsProperOfProperSpecialFibreUniversallyOpenDvr
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProperOfCompleteDVRLiftGenericPoint
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CoeIntEmbEmbP
+import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyUniformisationTraitInAbelianLocus
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsIntegralOfSmoothFieldOfConnectedSpace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
@@ -28,7 +30,7 @@ theorem isProper_dvr (V : Type) [CommRing V] [IsDomain V] [IsDiscreteValuationRi
   have := hG.geomConnected
   have := GlobalTheory.grpObj_geometricallyIntegral_of_smooth (Sp V) G
   have p : Sp (ResidueField V) := IsLocalRing.closedPoint (ResidueField V)
-  refine GlobalTheory.T.isProper_of_properSpecialFibre_universallyOpen_dvr V G.left G.hom inferInstance inferInstance inferInstance inferInstance inferInstance ?_
+  refine _root_.GlobalTheory.FibreProperDvr.isProper_of_specialFibre V G.left G.hom inferInstance inferInstance inferInstance inferInstance inferInstance ?_
   exact GlobalTheory.AbelianTrait.isProper_snd_of_mem_abLocus G (K := ResidueField V)
     (Spec.map (CommRingCat.ofHom (IsLocalRing.residue V))) p (by rw [hab]; trivial)
 
@@ -39,7 +41,7 @@ theorem isProper_of_abLocus_eq_univ (R : Type) [CommRing R] [IsDomain R] [IsNoet
   haveI := hG.quasiCompact
   haveI := hG.smooth
   haveI : IsIntegral G.left := GlobalTheory.isIntegral_left_of_isSemiAbelian G
-  refine GlobalTheory.T.isProper_of_completeDVR_lift_genericPoint R G.left G.hom ?_
+  refine _root_.GlobalTheory.TraitProper.isProper_of_lift_genericPoint R G.left G.hom ?_
   intro V K _ _ _ _ _ _ _ x y _ hxy
   have hGV : IsSemiAbelian ((Over.pullback y).obj G) := IsSemiAbelian.pullback y G hG
   have habV : abLocus ((Over.pullback y).obj G) = Set.univ := Set.eq_univ_of_forall fun z =>

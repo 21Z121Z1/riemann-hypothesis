@@ -5,10 +5,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLieCombIffIsCombA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftsOfCechKodairaSpencerDeformationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EpsilonPartDeformationFormClassEqCoboundaryOfLifStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstOrderDeformationFormLiftValuesSubStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernEqSumCupInvariantFormsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeformationClassPullbackEqConstantAddEpsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCechRepresentativeChernClassTangentValueStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineClassMemHodgeFiltrationOfCechRepZeroStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernEqSumCupInvariantForms
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeformationClassPullbackEqConstantAddEps
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCechRepresentativeChernClassTangentValue
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CrystallineClassMemHodgeFiltrationOfCechRepZero
 
 set_option autoImplicit false
 
@@ -91,7 +91,7 @@ theorem isKSValue_of_isCechKS (P : GlobalTheory.Published.AbelianDeRham) {K : Ty
     IsKSValue h f (FlagTan.lieComb (fun a ↦ ∑ b, θ a b * ψ f (hb b)) u) := by
   classical
   obtain ⟨v, k, ⟨d, hd, hdk⟩, -⟩ := IsKSValue.exists_of_isAbelianScheme P h hA' hg' hf
-  obtain ⟨I, _, c, ω, hω, hch, hψf⟩ := GlobalTheory.T.firstChern_eq_sum_cup_invariantForms P K A g hA hg L hL ψ hψ
+  obtain ⟨I, _, c, ω, hω, hch, hψf⟩ := _root_.GlobalTheory.PolForm.chern_eq_sum_cup_form P K A g hA hg L hL ψ hψ
   choose z hz using fun k ↦ H1.mk_surjective _ (c k).1
   have key : k - ∑ a, (∑ b, θ a b * ψ f (hb b)) • hb a ∈ Fil A := by
     letI : Algebra (DualNumber K) K := (TrivSqZeroExt.fstHom K K K).toRingHom.toAlgebra
@@ -105,7 +105,7 @@ theorem isKSValue_of_isCechKS (P : GlobalTheory.Published.AbelianDeRham) {K : Ty
     change x ∈ F1 _ at hx
     rw [hodgeFiltration_eq_range] at hx
     obtain ⟨ω', rfl⟩ := hx
-    obtain ⟨b, hbe⟩ := GlobalTheory.T.deformation_class_pullback_eq_constant_add_eps P K A A' i h g hA' hg' ⟨_, hx'⟩
+    obtain ⟨b, hbe⟩ := _root_.GlobalTheory.CechKS.liftMor_pull_eq_const_add_eps P K A A' i h g hA' hg' ⟨_, hx'⟩
     obtain ⟨zb, hzb⟩ := H1.mk_surjective _ b.1
     let ω₀ := (fibMor h).isMor.pullForm ω'
     have hω₀ : Form.cl _ ω₀ ∈ primDR A := (fibMor h).pullback_mem_primitive hx'
@@ -113,10 +113,10 @@ theorem isKSValue_of_isCechKS (P : GlobalTheory.Published.AbelianDeRham) {K : Ty
       rw [hzb]; exact congrArg Subtype.val hbe)
     have hch' : IsChern (dp0 K) (A.hom ≫ 𝟙 (Sp K)) L (∑ k, cup _ (H1.mk _ (z k)) (Form.cl _ (ω k))) := by
       simpa only [hz] using hch
-    have hr := fun a ↦ GlobalTheory.T.isCechRepresentative_chernClass_tangentValue K A hA L hL I z ω hch' (u a) (hu a) J V τ hτ
+    have hr := fun a ↦ _root_.GlobalTheory.CechKS.isRep_chern_tanVal K A hA L hL I z ω hch' (u a) (hu a) J V τ hτ
     have hsum := hrep.add (IsRep.sum Finset.univ fun a _ ↦ IsRep.sum Finset.univ fun b _ ↦
       (hr b).smul (θ a b * tanVal (u a) ω₀))
-    have hF1 := GlobalTheory.T.crystallineClass_mem_hodgeFiltration_of_cechRep_zero K _ _ J _ hV _ (hsum.congr (F' := 0) fun j j' Q _ _ ↦ by
+    have hF1 := _root_.GlobalTheory.CechKS.h1_mk_mem_f1_of_isRep_zero K _ _ J _ hV _ (hsum.congr (F' := 0) fun j j' Q _ _ ↦ by
       simp only [Pi.add_apply, Finset.sum_apply, Pi.smul_apply, Pi.zero_apply, Algebra.smul_def, map_mul,
         Finset.sum_mul]
       rw [neg_add_eq_zero]

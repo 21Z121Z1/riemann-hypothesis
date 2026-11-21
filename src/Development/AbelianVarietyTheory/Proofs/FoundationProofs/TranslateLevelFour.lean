@@ -2,7 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Formalism.PairingDivisors.StatementH
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DifferentiableComb
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPeriodPairIdealCurveLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPeriodPairIdealCurveLattice
+import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoordsAlongOrthonormalRealSubfieldBasis
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OddThetaFunctionExistenceUniqueness
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThetaSpaceSelfDualPairAtMostLine
@@ -55,7 +56,7 @@ theorem translate_level_four : ∀ (D : D7), admG1 D → ∀ (cc : Ideal (𝓞 D
   intro D hG cc δ hC N N' r b hb
   obtain ⟨w₁, w₂, hli, hΛ⟩ : ∃ w₁ w₂ : ℂ, LinearIndependent ℝ ![w₁, w₂] ∧
       lamOf D cc δ = AddSubgroup.closure {w₁, w₂} := by
-    obtain ⟨L, hL⟩ := GlobalTheory.T.exists_periodPair_idealCurveLattice D cc δ hC
+    obtain ⟨L, hL⟩ := _root_.GlobalTheory.CurveLattice.exists_periodPair_lamOf D cc δ hC
     refine ⟨L.ω₁, L.ω₂, L.indep, ?_⟩
     ext z
     rw [hL, PeriodPair.mem_lattice, AddSubgroup.mem_closure_pair]

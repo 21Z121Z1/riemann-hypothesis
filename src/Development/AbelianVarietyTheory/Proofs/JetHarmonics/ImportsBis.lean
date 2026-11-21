@@ -11,7 +11,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.OneCSt
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ProdSumReindex
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GroupExpansionBijectiveOfCompleteDVRStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GroupExpansionBijectiveOfCompleteDVR
 
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.DVR ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -51,7 +51,7 @@ theorem main : Laws → Laws2 → Laws4 → TwistBaseChangeStatement → ∀ (V 
       · obtain ⟨hψ, H⟩ := isBoxFamB_boxFamB pD k (fun i => f i (e l i)) α'
         exact box_val pD.w hψ _ _ _ H _ y hJ hJ'
   rw [one_smul] at hX
-  obtain rfl : t' = s' := ((GlobalTheory.T.groupExpansion_bijective_of_completeDVR h₁ h₂ h₄ hT V D' A' G' U' F k hk).2 S).unique hE' hX
+  obtain rfl : t' = s' := ((_root_.GlobalTheory.expandsG_bijective_of_dvr h₁ h₂ h₄ hT V D' A' G' U' F k hk).2 S).unique hE' hX
   have a₂ := fun l => boxG_val (isBoxSecG_boxSecG pG P.wL P.wL_gen U.LG.isLB U'.LG.isLB k (fun i => σ i (e l i)))
     (r ≫ UnifPre.gFK (G := G') F) z hJ hJ'
   have a₃ : ∀ i, sval (t i) (ri i) z J = ∑ a, constHomVal (r ≫ (fst (TFK (R := V) F)

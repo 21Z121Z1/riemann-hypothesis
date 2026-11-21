@@ -20,10 +20,10 @@ import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsH
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemL2OfBoundedContinuousInvariant
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgHasType
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgTypeOtherPlace
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteDimStableSpaceMaxCompactAveragesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteDimStableSpaceMaxCompactAverages
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApprox
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqBase
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AvgOverMaximalCompactWeightedSupNormBoundStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AvgOverMaximalCompactWeightedSupNormBound
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.KFiniteCuspFormAverageApprox
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.KFiniteCuspAverageHasKType
@@ -86,10 +86,10 @@ theorem exists_kFinite_approx_of_cusp_form : _root_.GlobalTheory.FunPr.ThetaLoca
       intro hnd φ hφ δ hδ
       rw [List.nodup_cons] at hnd
       obtain ⟨e, he, hK, happ⟩ := _root_.GlobalTheory.T.cuspForm_approximation_single_place hP R.θ hθ (G.V i j) φ hφ τ a (δ / 2) (by linarith)
-      obtain ⟨C, hC0, hC⟩ := GlobalTheory.T.avgOverMaximalCompact_weighted_supNorm_bound R.θ hθ (G.V i j) τ e he a
+      obtain ⟨C, hC0, hC⟩ := _root_.GlobalTheory.KFinCuspApprox.avgN_weighted_bound R.θ hθ (G.V i j) τ e he a
       obtain ⟨ψ', hψ', W', hW'f, hψW', hW'c, hW's, hb⟩ := ih hnd.2 φ hφ (δ / (2 * (C + 1))) (by positivity)
       obtain ⟨W, hWf, hWc, hWs, hWm⟩ :=
-        GlobalTheory.T.exists_finiteDim_stable_space_maxCompactAverages R.θ hθ (G.V i j) τ e hK {τ | τ ∈ l} hnd.1 W' hW'f hW'c hW's
+        _root_.GlobalTheory.KFinAvgSpan.exists_stab_insert R.θ hθ (G.V i j) τ e hK {τ | τ ∈ l} hnd.1 W' hW'f hW'c hW's
       refine ⟨_, hA τ e he hK ψ' hψ', W, hWf, hWm ψ' hψW', hWc, by simpa [Set.insert_def] using hWs, fun g => ?_⟩
       have h1 := happ g
       have h2 := hC (φ - ψ') _ hb g

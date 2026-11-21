@@ -21,7 +21,6 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSteinberg
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharEqOfSplitOfTied
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PairReadingOfJoin
@@ -29,7 +28,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIrredu
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.FixedNeBotOfEquiv
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasThetaAtOfThetaMod
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CharacteristicFunctionIntegralApply
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaFunctionsSpannedHeckeTwistedStandardFrameStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaFunctionsSpannedHeckeTwistedStandardFrame
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUniqueVec
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JumpsCardOfBuilt
 import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.RealPlaceImaginaryGeneratorReEqZero
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ReferenceTupleFormsSmoothAdmissibleUnitaryModuleStatement
@@ -65,7 +65,7 @@ theorem GlobalTheory.RefTheta.datum_real : GlobalTheory.Published.HarishChandraF
       (s.w.adicCompletion D.host.E)) →ₗ[ℂ] (WO (Vc D i) (Wc D i) → ℂ))
       (_ : GlobalTheory.NPin.IsLinAt (omStd Ad i (t0 Y)) s μw ηw ι ∧ ∀ Φ, IsThetaFunO R.ψ (Vc D i) (Wc D i) (ι Φ)),
       LinearMap.range ι := fun v =>
-    GlobalTheory.T.thetaFunctions_spanned_heckeTwisted_standardFrame D R.ψ (Vc D i) (Wc D i) D.R.nV D.R.r (Ad.PV i) (Y.PW i) Y.hF
+    _root_.GlobalTheory.LinModSpan.main D R.ψ (Vc D i) (Wc D i) D.R.nV D.R.r (Ad.PV i) (Y.PW i) Y.hF
       (Ad.std i) (Y.stdPsi.2 i) _ _ (R.ωP i (t0 Y)) (hC.thP.ωP i _) _ _ h1 h2 s μw ηw hμw hηw _ (hth v)
   have hlin := mem_iSup_isLinAt_lin' (omStd Ad i (t0 Y)) (IsThetaFunO R.ψ (Vc D i) (Wc D i)) (· ∈ Om Ad i hc)
     (fun β f hf => GlobalTheory.T.referenceTuple_thetaValued_map_mem_thetaData hHC hCR D G Pl0 I0 T A3 Ks R F cG X0 Y hP hH hEx M Ad i X hc _ fun v => by

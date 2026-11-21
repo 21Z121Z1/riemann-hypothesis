@@ -19,11 +19,13 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfF
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNeZeroAtZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisThetaLaws
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryAdelicCharacterTrivialRatAndSplit
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharFiniteIdelesIsAlgebraicOfResEtaStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CongruentPairsFixVacuumWeilDatumStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharFiniteIdelesIsAlgebraicOfResEta
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfDualLatticeInFrameCoordinatesEq
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CongruentPairsFixVacuumWeilDatum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilDatumFinitePairVacuumAlgebraicCombinationStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAlgebraicInvariantFormVacuumSplitPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteUnitaryPointsMemOfLevelAndSplitPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAlgebraicInvariantFormVacuumSplitPlace
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteUnitaryPointsMemOfLevelAndSplitPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteDatumIsAlgebraicCombinationDefiniteBottomStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumSelfDualLatticesStatement
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
@@ -161,8 +163,8 @@ theorem split_alg {e : Formalism.L2.Theta.AE D} (he : IsSplitIdem D e) {g : GA D
     rw [hy, RingHom.map_add, RingHom.map_mul, RingHom.map_sub, h1, RingHom.map_one, zero_mul, zero_add, sub_zero]
   have hz : ((splitFacO χS χT x y : Circle) : ℂ) ∈ Qb := by
     rw [splitFacO, Circle.coe_mul, Circle.coe_inv]
-    exact mul_mem (inv_mem (mem_algebraicClosure_iff.2 (GlobalTheory.T.heckeChar_finiteIdeles_isAlgebraic_of_resEta hv.2.inf hW.hecT hW.resT x hx1)))
-      (mem_algebraicClosure_iff.2 (GlobalTheory.T.heckeChar_finiteIdeles_isAlgebraic_of_resEta hv.2.inf hW.hecS hW.resS y hy1))
+    exact mul_mem (inv_mem (mem_algebraicClosure_iff.2 (_root_.GlobalTheory.FinValAlg.finite_values_isAlgebraic hv.2.inf hW.hecT hW.resT x hx1)))
+      (mem_algebraicClosure_iff.2 (_root_.GlobalTheory.FinValAlg.finite_values_isAlgebraic hv.2.inf hW.hecS hW.resS y hy1))
   have hz1 : star ((splitFacO χS χT x y : Circle) : ℂ) * (splitFacO χS χT x y : Circle) = 1 := by
     rw [Complex.star_def, ← Circle.coe_inv_eq_conj, ← Circle.coe_mul, inv_mul_cancel, Circle.coe_one]
   generalize ((splitFacO χS χT x y : Circle) : ℂ) = z at hℓ hz hz1
@@ -177,7 +179,7 @@ theorem split_alg {e : Formalism.L2.Theta.AE D} (he : IsSplitIdem D e) {g : GA D
       (mem_algebraicClosure_iff.2 (GlobalTheory.T.vacuum_self_dual_lattices hv hS hT p.1 p.2 hp F F hF hF))
 
   obtain ⟨n, c, w, hc, hw, hFe⟩ := id hF
-  obtain ⟨ℓ, l1, l2, l3⟩ := GlobalTheory.T.exists_algebraicInvariantForm_vacuum_splitPlace hv hS hT e he n w hw
+  obtain ⟨ℓ, l1, l2, l3⟩ := _root_.GlobalTheory.SplitAlgForm.exists_alg_form hv hS hT e he n w hw
   have ha : ℓ F ∈ Qb := by
     rw [hFe, map_sum]
     exact sum_mem fun q _ => by
@@ -210,8 +212,8 @@ theorem mem_algGroup {p : GA D S × GA D T} :
 
 set_option maxHeartbeats 1000000 in
 theorem source_mem {x : GA D S} (hx : x ∈ GfC S) : (x, (1 : GA D T)) ∈ algGroup hv hS hT hcS hcT hW := by
-  obtain ⟨N, hN, hlev⟩ := GlobalTheory.T.congruent_pairs_fix_vacuum_weilDatum hv hS hT hcS hcT hW
-  refine GlobalTheory.T.finiteUnitaryPoints_mem_of_level_and_split_place S ((algGroup hv hS hT hcS hcT hW).comap (MonoidHom.inl _ _)) N hN (fun g hg m hm hp => ?_)
+  obtain ⟨N, hN, hlev⟩ := _root_.GlobalTheory.VacFixPair.pair_fix_vacO hv hS hT hcS hcT hW
+  refine _root_.GlobalTheory.FinPtsGen.mem_of_level_of_split S ((algGroup hv hS hT hcS hcT hW).comap (MonoidHom.inl _ _)) N hN (fun g hg m hm hp => ?_)
     (fun k hk hc => ?_) (fun e he g hg => ?_) x hx
   · rw [Subgroup.mem_comap, map_pow, mem_algGroup] at hp
     rw [Subgroup.mem_comap, MonoidHom.inl_apply, mem_algGroup]
@@ -224,8 +226,8 @@ theorem source_mem {x : GA D S} (hx : x ∈ GfC S) : (x, (1 : GA D T)) ∈ algGr
 
 set_option maxHeartbeats 1000000 in
 theorem target_mem {h : GA D T} (hh : h ∈ GfC T) : ((1 : GA D S), h) ∈ algGroup hv hS hT hcS hcT hW := by
-  obtain ⟨N, hN, hlev⟩ := GlobalTheory.T.congruent_pairs_fix_vacuum_weilDatum hv hS hT hcS hcT hW
-  refine GlobalTheory.T.finiteUnitaryPoints_mem_of_level_and_split_place T ((algGroup hv hS hT hcS hcT hW).comap (MonoidHom.inr _ _)) N hN (fun g hg m hm hp => ?_)
+  obtain ⟨N, hN, hlev⟩ := _root_.GlobalTheory.VacFixPair.pair_fix_vacO hv hS hT hcS hcT hW
+  refine _root_.GlobalTheory.FinPtsGen.mem_of_level_of_split T ((algGroup hv hS hT hcS hcT hW).comap (MonoidHom.inr _ _)) N hN (fun g hg m hm hp => ?_)
     (fun k hk hc => ?_) (fun e he g hg => ?_) h hh
   · rw [Subgroup.mem_comap, map_pow, mem_algGroup] at hp
     rw [Subgroup.mem_comap, MonoidHom.inr_apply, mem_algGroup]

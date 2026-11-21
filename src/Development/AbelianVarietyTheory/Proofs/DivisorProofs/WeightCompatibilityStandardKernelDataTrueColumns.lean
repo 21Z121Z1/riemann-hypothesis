@@ -1,7 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.KerSizes
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.WeightTieTrueCols
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnNormParametersEqNatStepGapStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnNormParametersEqNatStepGap
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClassFam
+import Formalism.LocalToGlobal.Divisibility.NumbersLemmas
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RecHeightSWith
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsEntC
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ColNorm
@@ -29,7 +31,7 @@ theorem weightTie_of_stdKer : ∀ {B : Base} {X : PreX B.toPre} (I : TC B X), I.
   cases hPr
   cases hword
   cases hW
-  have hN := GlobalTheory.T.columnNormParameters_eq_natStepGap (I.rec7 l Z) L Del h0 hDel hEta
+  have hN := _root_.GlobalTheory.ColumnNormCompare.numRec_eq_ofRecord (I.rec7 l Z) L Del h0 hDel hEta
   refine ⟨plRec (I.rec7 l Z), fun u => ?_⟩
   have key := GlobalTheory.CoreHt.weightTie_trueCols I hOk l Z L ⟨Del, hDel⟩ u
   have gen : ∀ N : NumDatum, numDatumOfParameters (I.rec7 l Z) L = N → ∀ (W' : Wts B.fields (B.primes X).Word N.R), HEq B.wts W' →

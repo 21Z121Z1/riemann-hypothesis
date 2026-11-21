@@ -1,15 +1,33 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MeanLogSupNormLowerBoundCmFrameNonvanishingStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MeanLogSupNormLowerBoundCmFrameNonvanishing
+import Development.AbelianVarietyTheory.Definitions.CMLattices.IntegralOf
+import Development.AbelianVarietyTheory.Statements.PrincipalLattices.ExistsPrincipalLattice
+import Formalism.LocalToGlobal.ProjectiveLattices.L2DefiniteCuspForms
+import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NonemptyUnitAt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.NonvanishingNearMaximum
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicCoefficientSplitting
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.OneLeAbsNormOfLeOne
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.DetValuationLeOne
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsMonicIrreducibleCardGt
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
 import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormSupNormLePeterssonIntegralComponentStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicProbabilityEqNormalisedFundamentalSetsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualDataTransvectionPrincipalLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormSupNormLePeterssonIntegralComponent
+import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.UnitaryHaarVolume
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicProbabilityEqNormalisedFundamentalSets
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualDataTransvectionPrincipalLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlagDomainDataPrincipalCongruenceLevelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeEqOfRealUnitaryConjStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalLevelComponentsDoubleCosetsCongruenceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalLevelComponentsDoubleCosetsCongruence
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.FinMuAllData
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo
 import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
@@ -71,7 +89,7 @@ theorem comp_bound {r : ℕ} (hr : 0 < r) (X : Data E r) (Xx : DataX E r) (hX : 
       ∫⁻ z in FF, ENNReal.ofReal (X.pnorm la (X.dom.piecewise P 0) (ReciprocityTheory.ChartRestriction.G.AR.Inst.cpt X x0 z) ^ 2) ∂(muF X x0) := by
   subst hX
   intro y hy
-  have h := GlobalTheory.T.cuspForm_sup_norm_le_petersson_integral_component E r Xx la P M' w x0 FF hr hP hM' hw hw0 hL
+  have h := _root_.GlobalTheory.supLoc_component E r Xx la P M' w x0 FF hr hP hM' hw hw0 hL
     (fun v hv hiso b hb hbi => by
       obtain ⟨γ, hγ, he⟩ := hT v hv hiso b hb hbi
       exact ⟨γ, hγ, hχ γ hγ, he⟩) ho hF y hy

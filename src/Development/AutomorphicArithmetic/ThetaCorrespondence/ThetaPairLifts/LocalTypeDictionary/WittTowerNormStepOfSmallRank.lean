@@ -29,7 +29,7 @@ theorem theta_tower_norm_step_small_rank : _root_.GlobalTheory.FunPr.ThetaLocalI
         GlobalTheory.SqTower.IsStageC W i j p q Y ∧ Y.IsConst W.ψ W.θ c ∧
         (∀ t, y t ≠ 0 ∧ lam t * Lf t ((e + 1 : ℕ) : ℂ) = y t * c t) ∧ ∀ t, GlobalTheory.Square.StepRatio D.what₂.embLL (Qn G t) G.pl.S0 (condExp G.pl) (fun v => Ideal.absNorm v.asIdeal) (y t) (y μ₀) := by
   intro hP hK hM
-  refine gbig_three (_root_.GlobalTheory.T.seesaw_first_reduction_level hP hK hM) GlobalTheory.T.thetaStepFactor_ratio_unit_gaussSumQuotient GlobalTheory.T.partialHeckeLFunction_square_eq_primitive ?_
+  refine gbig_three (_root_.GlobalTheory.T.seesaw_first_reduction_level hP hK hM) _root_.GlobalTheory.SqStepArith.stepFac_ratio GlobalTheory.T.partialHeckeLFunction_square_eq_primitive ?_
   intro D T Lc sc G μ₀ C x b hk ha hl W S hψ hN i j p q A A' WW X lam e Lf hX hF he hLf
   obtain ⟨B, B', WW₁, Y, c, hY, hc, hc0, H⟩ := hk W S hψ hN i j p q A A' WW X lam e hX hF he
   have he1 : 1 ≤ e := by

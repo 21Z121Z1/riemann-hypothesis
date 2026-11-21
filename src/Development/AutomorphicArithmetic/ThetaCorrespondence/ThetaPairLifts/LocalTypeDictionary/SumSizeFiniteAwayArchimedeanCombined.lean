@@ -25,7 +25,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteInfinitePsiBo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumOKEx
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAtOfSubsingleton
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsExpansionIff
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCosetIndicatorExpansionOfDepthPeriodicStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCosetIndicatorExpansionOfDepthPeriodic
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsCosetExpansionExpDepth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DepthPeriodicOfCosetIndicatorExpansionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatProductDepthPeriodicGcdStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatTensorDepthConditionsAwayFromTwist
@@ -51,28 +52,30 @@ import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.MatLat
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.LatMove
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumEqualSignKernelLossesBounded
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HBdNonneg
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteVertexClassesCardLePrincipalCongruenceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteVertexClassesCardLePrincipalCongruence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardTopVertexClassesLeClassNumberBoundNormPowStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormGridModulusLeExpDepthLogNormSumStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteKernelNodeRankLeTotalRankStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterSizeConditionsNumericBoundsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalCongruenceLeTopLevelClassSumStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumVertexLevelsContainPrincipalCongruenceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormGridModulusLeExpDepthLogNormSum
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteKernelNodeRankLeTotalRank
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterSizeConditionsNumericBounds
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalCongruenceLeTopLevelClassSum
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumVertexLevelsContainPrincipalCongruence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfCountAtOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumCountBoundLargeDataStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosineCountOfHyp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PureTensorCountBoundOfCosetDepthBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSumSizeBoundLargeDataFromFactorsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSumSizeBoundLargeDataFromFactors
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjPlInvolutive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DictionaryDepthPairStandard
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfiniteTensorBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfiniteTopOfDictionaryDepth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteInfiniteScalarBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousReGLSymm
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridKernelPairingIndependentOfExpansionStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GridKernelPairingIndependentOfExpansion
+import Development.AbelianVarietyTheory.Definitions.Divisors.InvVolConjLevelOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatIntegrableAaVacOfConductor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemValuationEq
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaNormBoundHypothesesSatisfiedStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CmThetaNormBoundHypothesesSatisfied
+import Formalism.PairingDivisors.StatementH
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.RowSumOfHyp
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.DepthOfSumBound
@@ -97,7 +100,7 @@ section
 namespace GlobalTheory.SumSize.Join
 theorem sum_size_finite_away_archimedean_combined : _root_.GlobalTheory.FunPr.ThetaLocalInputs → GlobalTheory.SumSize.FinK ∧ GlobalTheory.SumSize.AwayK ∧ GlobalTheory.SumSize.InfK := by
   intro P
-  have hInp : ∀ D, GlobalTheory.NormSum.Inp D := GlobalTheory.T.cmThetaNormBoundHypotheses_satisfied
+  have hInp : ∀ D, GlobalTheory.NormSum.Inp D := _root_.GlobalTheory.NormSum.inp_all
   have hOK : GlobalTheory.RowClaim.SumOKK := _root_.GlobalTheory.T.sumOKK_of_theta_local_inputs P
   have hDep : GlobalTheory.SumSize.DepthK := _root_.GlobalTheory.T.depthK_of_sumOKK P hOK
   have hDict : GlobalTheory.SumSize.DictK := _root_.GlobalTheory.T.sum_size_dictionary P hInp
@@ -112,7 +115,7 @@ theorem sum_size_finite_away_archimedean_combined : _root_.GlobalTheory.FunPr.Th
   refine ⟨?_, _root_.GlobalTheory.Adopt.twisted_local_factor_away_from_level P, ?_⟩
   · exact GlobalTheory.Adopt.finiteSumDenominatorBound_of_factor_claims hOK hDep hScal.1 (_root_.GlobalTheory.Adopt.finCoefK_of_theta_inputs P) (_root_.GlobalTheory.T.finDatK_of_theta_inputs P) (_root_.GlobalTheory.T.gamma_factor_loss_at_finite_places P)
       hTopF hRowF hPair.1 hPsi.1 hForm.1
-  · exact GlobalTheory.T.archimedeanSumSizeBound_largeData_from_factors hOK hDep hScal.2 (_root_.GlobalTheory.T.sum_size_archimedean_tensor_bound P) (_root_.GlobalTheory.T.sum_count_bound_archimedean P hDep) (_root_.GlobalTheory.T.class_count_bound_archimedean P)
+  · exact _root_.GlobalTheory.Adopt.archimedeanSumSizeBound_largeData_from_factors hOK hDep hScal.2 (_root_.GlobalTheory.T.sum_size_archimedean_tensor_bound P) (_root_.GlobalTheory.T.sum_count_bound_archimedean P hDep) (_root_.GlobalTheory.T.class_count_bound_archimedean P)
       hTopI hRowI hPair.2 hPsi.2 hForm.2
 end GlobalTheory.SumSize.Join
 end

@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.EqOrConjOfPlaceOf
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsCompactAdeleRingModNumberFieldStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.IntegrableOnFundamentalDomainOfCocompactStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.IntegrableOnFundamentalDomainOfCocompact
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemAdelicLatticeIffLocalSelfDualCompletionStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TwoStepUnipotentCompactModSubringStatement
 
@@ -379,7 +379,7 @@ theorem integrableOn_constTerm (W : Submodule E V.V) (hW : IsIsotropic V W) (f :
   have : BorelSpace (GA hc V) := ⟨rfl⟩
   have := countable_unipRat hc V W
   obtain ⟨K, hK, h⟩ := unipRad_cocompact hc V W hW
-  refine GlobalTheory.T.integrableOn_fundamentalDomain_of_invariant_of_cocompact _ (unipRat hc V W) K hK h μ hμ 𝓕 h𝓕 _
+  refine _root_.GlobalTheory.integrableOn_fundamentalDomain_of_cocompact _ (unipRat hc V W) K hK h μ hμ 𝓕 h𝓕 _
     (hf.comp (continuous_subtype_val.mul continuous_const)) fun γ hγ n => ?_
   rw [Subgroup.coe_mul, mul_assoc]
   exact hl _ hγ _

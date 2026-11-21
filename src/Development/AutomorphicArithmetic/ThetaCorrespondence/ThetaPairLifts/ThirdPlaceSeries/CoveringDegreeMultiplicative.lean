@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCo
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
 import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnchoredWeightIndefiniteLiftGapsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RunSizesQuotientGapsLargeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentImageDegreeBetweenOfProportionalityStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RunSizesQuotientGapsLarge
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentImageDegreeBetweenOfProportionality
 import Development.AbelianVarietyTheory.Definitions.Divisors.WellChosen
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenRatios
@@ -30,7 +30,9 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.MemLevEigenIffTrans
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.RealCubicMeans.LogMeanShares.LogMeanStatements.HSClaim
 import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEffCartierCompl
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformisationComponentsCovolumeEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformisationComponentsCovolumeEq
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FirstIndexEqOfUnfolded
+import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToroidalFlagProportionalityOfGoodChernWeilStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformizationLawsOfGoodDeepCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightParameterStrictAntitone
@@ -41,7 +43,9 @@ import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.Hodg
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ExistsNonzeroSectionWeightBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentredPointPhiPositiveWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpace
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetNumberQuotientBounds
 import Development.AbelianVarietyTheory.Definitions.Divisors.PolyBetween
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LocalValuationColumns
@@ -63,7 +67,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormStalkIntegr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IInfThRuleLeNuLocOf
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateAny
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateEqUnitMulNormaliserThetaVa
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHoldStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHold
+import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsShortPeriodLatticeBasisBalancedSlope
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsProductDataCopiesTrivialisationValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLocusExponentLeOscillationNonTypePrime
@@ -127,7 +134,7 @@ theorem covering_degree_eq_alt : HypothesesX → _root_.GlobalTheory.CovTop.Publ
     have e : ∀ d C N : ℕ, (d + 3) ^ 2 + 2 * N ≤ (d + 3) * (C + 4 * N + d + 3) := fun d C N => by nlinarith
     rw [GlobalTheory.CompHS.dimFlag_eq]
     exact_mod_cast e _ _ _)
-  have key := GlobalTheory.T.componentImageDegree_between_of_proportionality _ _ _ _ _ _ _ Y.U hY.1.unf hPr.1 hEq _ (fun τ => (hAnti τ).1) (fun τ => (hAnti τ).2) hBir hV
+  have key := _root_.GlobalTheory.DegVal.compDeg_between _ _ _ _ _ _ _ Y.U hY.1.unf hPr.1 hEq _ (fun τ => (hAnti τ).1) (fun τ => (hAnti τ).2) hBir hV
   refine ⟨CompHt.delPrime Y.U Z' _, ?_, fun Z => key Z Z'⟩
   exact mul_pos (hPr.2 Z') (Int.cast_pos.2 (CompHt.vdm_pos fun τ => (hAnti τ).2))
 end GlobalTheory.CovTop.DegProof

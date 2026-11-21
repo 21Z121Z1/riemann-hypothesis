@@ -29,15 +29,18 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPlaceOverP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NTiedLocTiedOfBuilt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyFinOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideMultiplicityCharacter
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReadingOfRowLiftFamilyMovedDataStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsReadingOfRowLiftFamilyMovedData
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesLifts
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsBIffCoreB
+import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRowsT
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinksAnalyticHypothesesOfWeilRepHarishChandra
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TwDatPsiValuesInLL
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMovedDataStateLocalisationsStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalisedReadingsRelatedLocalizedAdelicDataStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsMovedDataStateLocalisations
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormalisedReadingsRelatedLocalizedAdelicData
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SetupLGood
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToricCharacterGridListKeptLocalizedStageStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GroupTieOfLocalCoefficientStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToricCharacterGridListKeptLocalizedStage
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GroupTieOfLocalCoefficient
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeRowOfLocalAll
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenAdjointOfReadRelation
 
@@ -120,7 +123,7 @@ variable (L) in
 
 theorem grpD : Formalism.L2.DIV.GrpTie (DL x L) (famR (w.st (oL x L).Z) w.I P.hX (usedOf w.I T P.Wt) (datL x L).Xg (datL x L).tr).A
     (datL x L).F.P0 (datL x L).F.ψ0 (datL x L).F.P1 (datL x L).F.ψ1 ((datL x L).R.eG.trans (datL x L).cG) :=
-  ⟨(by with_unfolding_all exact ((GlobalTheory.T.group_tie_of_local_coefficient l).card :)), (by with_unfolding_all exact ((GlobalTheory.T.group_tie_of_local_coefficient l).e0 :)), (by with_unfolding_all exact ((GlobalTheory.T.group_tie_of_local_coefficient l).lvl0 :)), (by with_unfolding_all exact ((GlobalTheory.T.group_tie_of_local_coefficient l).psi0 :)), (by with_unfolding_all exact ((GlobalTheory.T.group_tie_of_local_coefficient l).idxSharp :)),
+  ⟨(by with_unfolding_all exact ((_root_.GlobalTheory.HeightCounting.Fin3.grpTie_of_LC l).card :)), (by with_unfolding_all exact ((_root_.GlobalTheory.HeightCounting.Fin3.grpTie_of_LC l).e0 :)), (by with_unfolding_all exact ((_root_.GlobalTheory.HeightCounting.Fin3.grpTie_of_LC l).lvl0 :)), (by with_unfolding_all exact ((_root_.GlobalTheory.HeightCounting.Fin3.grpTie_of_LC l).psi0 :)), (by with_unfolding_all exact ((_root_.GlobalTheory.HeightCounting.Fin3.grpTie_of_LC l).idxSharp :)),
     (datL x L).pins.keep.psi.lvl⟩
 
 variable {p0 : BaseLevelRowSide (w.D (oL x L).Z)} (Y : YT x L p0) (hY : YRel L Y)

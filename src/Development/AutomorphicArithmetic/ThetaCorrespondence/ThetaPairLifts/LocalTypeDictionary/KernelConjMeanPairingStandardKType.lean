@@ -17,9 +17,9 @@ theorem kernel_conj_mean_pairing_standard_KType : _root_.GlobalTheory.FunPr.Thet
   intro hP hI hD hDp
   obtain ⟨C1, hC1, hmean⟩ := GlobalTheory.T.exists_const_mean_logArea_logThetaNorm_le
   obtain ⟨F1, k1⟩ := _root_.GlobalTheory.T.kernel_conjugation_average hP hI hD hDp C1 hC1
-  obtain ⟨F2, k2⟩ := GlobalTheory.T.rationalEqualSignKernels_largeConstants
+  obtain ⟨F2, k2⟩ := _root_.GlobalTheory.KerConjMean.ratTopAt_big
   obtain ⟨F3, k3⟩ := _root_.GlobalTheory.T.conjRowAt_of_dict_depth hP hI hD hDp C1 hC1
-  obtain ⟨F4, k4⟩ := GlobalTheory.T.oppositeKernelsRationalRowMap_largeConstants
+  obtain ⟨F4, k4⟩ := _root_.GlobalTheory.KerConjMean.ratRowAt_big
   refine ⟨max (max F1 F2) (max F3 F4), fun CF hCF => ?_⟩
   obtain ⟨C01, l1⟩ := k1 CF (by simp only [max_le_iff] at hCF; exact hCF.1.1)
   obtain ⟨C02, l2⟩ := k2 CF (by simp only [max_le_iff] at hCF; exact hCF.1.2)
@@ -37,7 +37,7 @@ theorem kernel_conj_mean_pairing_standard_KType : _root_.GlobalTheory.FunPr.Thet
   obtain ⟨hL1, hLrd, hLd⟩ := sizes D large₂ Γ Pl0 T A Ks R F hS
   obtain ⟨hmA, hmT⟩ := hmean D (hI D) ch.S.Z.δ ch.S.Z.t0 ch.S.Z.crv ch.S.Z.pt0 _ hL1 hLrd hLd
   exact pairStdAt_of ch C large₂.sc.b C1 hmA hmT
-    (fun σ => GlobalTheory.T.embeddingsCurveFieldAbove_finite_nonempty D (hI D) ch.S.Z.δ ch.S.Z.t0 ch.S.Z.crv ch.S.Z.pt0 σ)
+    (fun σ => _root_.GlobalTheory.KerConjMean.ext_finite_nonempty D (hI D) ch.S.Z.δ ch.S.Z.t0 ch.S.Z.crv ch.S.Z.pt0 σ)
     (m2 D large₂ hε hx.1.2 Γ Pl0 T A Ks R F hS ch hIs hAt hF)
     (m1 D large₂ hε hx.1.1 Γ Pl0 T A Ks R F hS ch hIs hAt hF)
     (m4 D large₂ hε hx.2.2 Γ Pl0 T A Ks R F hS ch hIs hAt hF)

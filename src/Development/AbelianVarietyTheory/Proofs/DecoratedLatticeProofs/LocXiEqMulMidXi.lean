@@ -175,8 +175,8 @@ theorem chi_tie (q : GlobalTheory.FinPl.SplitPt D k) {PP : Formalism.L2.DIV.Pl D
     (ha : IntAt PP a) (hr : (r : Formalism.L2.DIV.kP PP) = redP PP a) (hu : (u : k) = (ofSplit q).pr a) : m u = c r := by
   obtain ⟨ma, hma⟩ := Witness.exists_isComp (ofSplit q) (μ j)
   obtain ⟨mb, hmb⟩ := Witness.exists_isComp (ofSplit q) η
-  have e1 := (GlobalTheory.T.splitPoint_heckeComponent_tame_and_residual D k q PP hid hi hd _ _ _ _ h1 h2 hma).2 a u r ha hr hu
-  have e2 := (GlobalTheory.T.splitPoint_heckeComponent_tame_and_residual D k q PP hid hi hd _ _ _ _ h3 h4 hmb).2 a u r ha hr hu
+  have e1 := (_root_.GlobalTheory.LocMod.SplitHecke.tame_and_res D k q PP hid hi hd _ _ _ _ h1 h2 hma).2 a u r ha hr hu
+  have e2 := (_root_.GlobalTheory.LocMod.SplitHecke.tame_and_res D k q PP hid hi hd _ _ _ _ h3 h4 hmb).2 a u r ha hr hu
   have f0 := hm u (SymChainAt.idl q u) rfl
   have f1 := hma u (SymChainAt.idl q u) rfl
   have f2 := hmb u (SymChainAt.idl q u) rfl

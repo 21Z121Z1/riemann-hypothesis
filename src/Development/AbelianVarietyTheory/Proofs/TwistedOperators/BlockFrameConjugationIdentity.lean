@@ -381,7 +381,7 @@ theorem exists_good_vec : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T :
     have eg := congrArg star (congrFun (hxG κ hκ) g)
     rw [← eg, Finset.sum_apply, Finset.sum_apply, star_sum]
     refine Finset.sum_congr rfl fun a _ => ?_
-    have := GlobalTheory.T.star_idemOf_coeff_eq_self D.what₂.embLL A.X hOk.irr hX a
+    have := _root_.GlobalTheory.CuspMult.idemOf_coeff_real D.what₂.embLL A.X hOk.irr hX a
     simp only [principalLevelFrame.rt_apply, Pi.smul_apply, smul_eq_mul, star_mul']
     congr 1
     exact this.symm
@@ -463,7 +463,7 @@ theorem exists_mem_isotL (hP : GlobalTheory.Published.HarishChandraFinite) {D : 
   obtain ⟨c', hc'⟩ := hC.lev.βW i
   have hrk : (Yc D 0).rank = (Wc D i).rank := GlobalTheory.PartDims.rank_zeroth_component_eq.trans (GlobalTheory.PartDims.rank_weight_component_eq i).symm
   obtain ⟨j, Φ, hΦ⟩ := GlobalTheory.FinIsoExists.exists_isFinIso (Yc D 0) (Wc D i) (R.βY 0) (R.ΛY 0) _ (R.βW i) (R.ΛW i) _ R.Pg hrk hc hc'
-    (GlobalTheory.T.typePlaces_not_pairwise_conjugate R.C.P R.Pg hC.lev.Pg)
+    (_root_.GlobalTheory.TypePlaces.not_isConjPl R.C.P R.Pg hC.lev.Pg)
   obtain ⟨h, hh⟩ := frames_inner (Yc D 0) (Wc D i) hF PY PW hPY hPW (by rw [GlobalTheory.PartDims.rank_zeroth_component_eq]; exact odd_r D.R) _ _ _ j Φ hΦ
   set P := R.levL F false (sg0 D A) with hPdef
   let e := eqv PY

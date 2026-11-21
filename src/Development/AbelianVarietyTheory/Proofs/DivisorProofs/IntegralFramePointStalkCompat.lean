@@ -11,7 +11,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsHori
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactification
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.InjectiveOfSmulMemRange
 import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstLengthArchSectionEqSmulOfSameWeightStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstLengthArchSectionEqSmulOfSameWeight
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsAlgebraicOfNormConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadsZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsModelRuleSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlatWeightRuleReadsNonvanishingDetSectionStatement
@@ -47,7 +48,7 @@ theorem nonempty_keySec (hL : Laws U x) : Nonempty (KeySec Xo c) := by
   obtain ⟨κ, k₁, k₂, -, k₄, -, k₆, -, -⟩ := GlobalTheory.KeyFamClosing.keyFam_one
   let e : Fin (Fintype.card (Σ τ : E →+* ℂ, Fin (Dw.mult τ))) ≃ Σ τ : E →+* ℂ, Fin (Dw.mult τ) :=
     (Fintype.equivFin _).symm
-  obtain ⟨K, hKmem, hKval⟩ := GlobalTheory.T.exists_unit_section_thetaKeyRule_weightFour κ k₁ k₂ k₆ E H Dw l Xo c _ e hL.pos
+  obtain ⟨K, hKmem, hKval⟩ := _root_.GlobalTheory.KeyFourth.exists_unit_secZ_keyRule κ k₁ k₂ k₆ E H Dw l Xo c _ e hL.pos
   have hσ0 := goodEmb_goodOf c c.F.val.toRingHom
   obtain ⟨ρ, -⟩ := GlobalTheory.T.exists_keySection_fourthRoot_perComponent κ k₁ k₂ k₆ k₄ E H Dw l Xo c _ e _ r (U _) K hσ0 (hL.unf _ hσ0) hL.geo hL.pos
     hKmem hKval

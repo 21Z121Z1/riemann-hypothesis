@@ -46,7 +46,7 @@ theorem vac_eq_smul {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D}
   have hth : IsThetaFunO ψ S T f' := hf'.2.theta
   obtain ⟨σ, h⟩ := GlobalTheory.RealLineAt.exists_inverse_chart hθ
   obtain ⟨h1, h2, h3⟩ := GlobalTheory.T.self_dual_lattice_pairing_dual D ψ S T ΛS ΛT hψ hΛS hΛT
-  have hden := GlobalTheory.T.scaled_finite_matrix_mem_lattice D S T ΛS ΛT hΛS.1 hΛT.1
+  have hden := _root_.GlobalTheory.VacUnique.Den.exists_nsmul_finRat_mem D S T ΛS ΛT hΛS.1 hΛT.1
   have hlat := hf.2.lat
   have hlat' := hf'.2.lat
   have hinf := fun u => latO_inf (u := u) S T (ΛS : Set (Fin S.rank → D.host.E)) (ΛT : Set (Fin T.rank → D.host.E))
@@ -70,7 +70,7 @@ theorem vac_eq_smul {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D}
     have e := det f f 0 hf.2.theta hf.2.theta hlat hlat fun z => by rw [zero_mul]; exact congrFun h0 z
     rw [e] at n1
     simp [nrm2] at n1
-  obtain ⟨j1, j2, j3, j4⟩ := GlobalTheory.T.realSymplecticForm_alternating_invariant_definite D S T sS sT hS hT
+  obtain ⟨j1, j2, j3, j4⟩ := _root_.GlobalTheory.RealSymplForm.form_alt_inv_def D S T sS sT hS hT
   have hsp : Submodule.span ℝ (Set.range (infRat S T)) = ⊤ := by
     have := span_piW_ratW_eq_top D θ σ h T S
     simpa only [piW_ratW hθ] using this
@@ -91,7 +91,7 @@ theorem vac_eq_smul {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D}
     have hv' : finRat S T (-v) ∈ Λ := (Λ.comap (finRat S T)).neg_mem hv
     rw [apply_add_infRat h hψ hg v (hε2 _ hv' g hl) z, ← j2]
     simp only [c, dif_pos hv']
-  have hli := GlobalTheory.T.not_linearIndependent_alt (RW T S) (jO S T sS sT) (omO S T) j1 j2 j3 j4 (Matrix (Fin T.rank) (Fin S.rank) D.host.E)
+  have hli := _root_.GlobalTheory.VacuumLine.not_linearIndependent (RW T S) (jO S T sS sT) (omO S T) j1 j2 j3 j4 (Matrix (Fin T.rank) (Fin S.rank) D.host.E)
     (infRat S T) (infRat_injective S T) hsp (Λ.comap (finRat S T))
     (fun x => by
       obtain ⟨N, hN, hx⟩ := hden x

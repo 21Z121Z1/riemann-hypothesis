@@ -10,10 +10,11 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemCuspOfVan
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenframeBaseChangeLocalRings
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MonoSpMapRingOfIntegers
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsLocalHomOfAlgebraic
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLieEigenspaceFrameLocalRingBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLieEigenspaceFrameLocalRingBaseChange
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OrbitThickSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLaurentArcDegeneratingOnModelConvergenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLieEigenspaceFrameFlagCoverChartDomainStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemToroidalComponentClosureOfSpecializesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemToroidalComponentClosureOfSpecializes
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.GeometryOfNumbersTheory Formalism.L2.Pj Formalism.BasicNotions
 open ReciprocityTheory.ChartRestriction.G.Out (nonzeroLocus)
@@ -87,7 +88,7 @@ theorem evR_mem_maximalIdeal : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
   have hxe : GlobalTheory.AllWt.ptF y ≫ Y.j = spMap (algebraMap V K) ≫ χ ≫ genι Y := by
     rw [Model.j, ← Category.assoc, hpt, Category.assoc]
   have hb : (χ ≫ genι Y) (IsLocalRing.closedPoint V) ∈ barComp Y Z := by
-    refine GlobalTheory.T.mem_toroidalComponentClosure_of_specializes E H Dw l Xo c Y Z (GlobalTheory.AllWt.ptF y s₀) (hZ s₀) _ ?_
+    refine _root_.GlobalTheory.CompHS.mem_barComp_of_specializes E H Dw l Xo c Y Z (GlobalTheory.AllWt.ptF y s₀) (hZ s₀) _ ?_
     have h1 := (hsp (spMap (algebraMap V K) s₀)).map (χ ≫ genι Y).continuous
     have h2 : Y.j (GlobalTheory.AllWt.ptF y s₀) = (χ ≫ genι Y) (spMap (algebraMap V K) s₀) := by
       have := congrArg (fun m => m s₀) hxe
@@ -142,7 +143,7 @@ theorem evR_mem_maximalIdeal : ∀ (E : Type) [Field E] [NumberField E] [IsCMFie
       hj₀ (Set.mem_univ _)
     exact evalPt_mem_maximalIdeal w _ _ _ ⟨trivial, hi⟩ (hs _ hbdy _ hi)
 
-  have hbc : Vanish.FrameBC Y := GlobalTheory.T.exists_lieEigenspaceFrame_localRing_baseChange E H Dw l Xo c _ _ Y
+  have hbc : Vanish.FrameBC Y := _root_.GlobalTheory.CuspFrom.exists_eigFrame_baseChange E H Dw l Xo c _ _ Y
   obtain ⟨fC, hfC⟩ := GlobalTheory.T.exists_lieEigenspaceFrame_flagCover_chart_domain E H Dw l Xo c _ _ Y X V K φ hφ q k hz (GlobalTheory.FlagMod.frX y) (GlobalTheory.FlagMod.frX_snd y) hl'.1
   obtain ⟨g', hg'⟩ : ∃ g' : EigFrame Y φ (q ≫ X.π), ∀ τ i, g'.v τ i = g.v τ i := by
     rw [q2]; exact ⟨g, fun _ _ => rfl⟩

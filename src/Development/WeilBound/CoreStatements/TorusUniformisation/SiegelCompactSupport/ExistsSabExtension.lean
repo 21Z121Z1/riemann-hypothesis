@@ -5,7 +5,20 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSabExten
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRigidifiedCubicalSymmetricExtensionNormalB
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabMapIdOfCommonGeneric
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CubicalStructureAndSymmetricOfCubeGenStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HomExtensionSemiAbelianDiscreteValuationRingStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HomExtensionSemiAbelianDiscreteValuationRing
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.HeckeKer
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.Splits
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GtBaseChangeSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaUnifAV
+import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.TopAmpExists
+import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ArcFamSt
+import Development.AbelianVarietyTheory.Definitions.Degenerations.HomExtSt
+import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
+import Development.AbelianVarietyTheory.Statements.SemistableTorsion.ImmersedBy
+import Development.AbelianVarietyTheory.Statements.SemistableTorsion.UTorsSt
+import Development.AbelianVarietyTheory.PublishedTheorems.SemistableReduction₂.SemistableReductionSt
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsPullCubicalId
 
 noncomputable section
@@ -24,7 +37,7 @@ theorem pic_ext {X U : Scheme.{0}} [IsLocallyNoetherian X] (hX : Geo.Tor.IsNorma
     α = β := by
   obtain ⟨N, hN, hc⟩ := cls_surj (α - β)
   refine sub_eq_zero.1 (hc ▸ (cls_eq_zero_iff hN).2 ?_)
-  refine GlobalTheory.T.exists_lineBundleGenerator_extending_densePart X U j hX inferInstance inferInstance inferInstance inferInstance P e N he hp hg hN
+  refine _root_.GlobalTheory.GenericExtend.exists_isGen_of_densePart X U j hX inferInstance inferInstance inferInstance inferInstance P e N he hp hg hN
     ((cls_eq_zero_iff (pull_isLB hN _)).1 ?_) ((cls_eq_zero_iff (pull_isLB hN _)).1 ?_)
   · rw [cls_pull hN, hc, map_sub, h₂, sub_self]
   · rw [cls_pull hN, hc, ← hj.isoPullback_inv_fst, pull_comp, map_sub, h₁, sub_self, map_zero]

@@ -8,7 +8,7 @@ import CompanionTheory.AutomorphicTheory.ProductFormulaTheory.SquareIntegrableSe
 import CompanionTheory.AutomorphicTheory.TemperedLocalSpectra.BernsteinZelevinsky.TopAdm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsListPairwiseNotRel
 import Mathlib
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosocleOfContragredientSocleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosocleOfContragredientSocle
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.LSegJacquet
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IrreducibleAdmissibleGL
@@ -26,18 +26,21 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchurAdmissibleA
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionTensorProductHasFiniteLength
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSemisimpleRepresentationTprodChevalley
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SocleOfMultiplicityOne
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReverseOrderedProductHasSocleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ReverseOrderedProductHasSocle
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutiveStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsFactorsDualReverseOrderedStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsFactorsDualReverseOrdered
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnlinkedCommuteOfIrreducibleStatement
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.LUnlinkedComm
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.PropsCos
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandKazhdanContragredientStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GelfandKazhdanContragredient
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.ZelevinskyCosocles.GKLocal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductTransposeInverseDualReverseStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSocleOfOrderFreeStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissibleStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalLanglandsOfIrreducibleAdmissible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentJacquetAllStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSegmentDualStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LanglandsSegmentDual
+import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.ZelevinskyJacquet.FineJacquetModules.SegDefs
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.SegmentRepresentation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentProductWordInShuffleStatement
 
 noncomputable section
@@ -58,14 +61,14 @@ theorem stdCos (hZ : GlobalTheory.Published.SegmentRepresentation) (hI : Zc.Cos.
       ∃ π : IrrRep (GL (Fin N) k), IsCosocle π.ρ (prodIrr x hd) := by
   have hA := CompanionTheory.Tls2.BZGL.irreducibleAdmissibleGL_top
   intro 𝔪 h N x hd hx
-  obtain ⟨Γ, hΓ, hL⟩ := GlobalTheory.T.langlands_factors_dual_reverse_ordered hA (GlobalTheory.T.langlands_segment_dual hA hZ) 𝔪 x hx
+  obtain ⟨Γ, hΓ, hL⟩ := _root_.GlobalTheory.CompanionTheory.DualForms.exists_revOrdered_dual hA (_root_.GlobalTheory.CompanionTheory.SegLDual.lSegDual hA hZ) 𝔪 x hx
   obtain ⟨hd', ⟨e⟩⟩ := GlobalTheory.T.contragredient_product_irreducible hA x hd
-  obtain ⟨τ, hτ⟩ := GlobalTheory.T.reverse_ordered_product_has_socle hA (GlobalTheory.T.segment_jacquet_all hA hZ) hI (comm_of hI) Γ (fun a => dualCl (x a)) hd' hΓ hL
-  exact GlobalTheory.T.cosocle_of_contragredient_socle hA (prodIrr x hd) (isSmooth_prodIrr x hd) (GlobalTheory.T.product_irreducible_finite_length hA x hd) τ
+  obtain ⟨τ, hτ⟩ := _root_.GlobalTheory.CompanionTheory.SocleRev.exists_isSocle_prodIrr_of_isRevOrdered hA (GlobalTheory.T.segment_jacquet_all hA hZ) hI (comm_of hI) Γ (fun a => dualCl (x a)) hd' hΓ hL
+  exact _root_.GlobalTheory.CompanionTheory.CosocleContra.isCosocle_of_isSocle_contra hA (prodIrr x hd) (isSmooth_prodIrr x hd) (_root_.GlobalTheory.CompanionTheory.ProdFL.main hA x hd) τ
     (hτ.of_equiv (Representation.Equiv.refl _) e.symm)
 
 theorem segCl (Δ : Segment k) : ∃ x : IrrGL k, IsLSeg Δ x.rep := by
-  obtain ⟨π, hπ⟩ := GlobalTheory.T.exists_segment_representation CompanionTheory.Tls2.BZGL.irreducibleAdmissibleGL_top Δ
+  obtain ⟨π, hπ⟩ := _root_.GlobalTheory.CompanionTheory.SegExists.exists_isLSeg CompanionTheory.Tls2.BZGL.irreducibleAdmissibleGL_top Δ
   exact ⟨IrrGL.of π.ρ π.smooth π.irr, hπ.of_equiv (IrrGL.equivOf π.ρ π.smooth π.irr)⟩
 
 theorem ex_of (HS : ∀ (𝔪 : Multiset (Segment k)) (h N : ℕ) (x : Fin h → IrrGL k) (hd : ∑ a, (x a).1 = N), LFactors 𝔪 x →
@@ -154,7 +157,7 @@ theorem cls_of (hZ : GlobalTheory.Published.SegmentRepresentation) (k : Type) [F
   obtain ⟨hM, hR, hS⟩ := H
   have hCm : Zc.Cos.LUnlinkedComm k := comm_of hI
   have hF : Zc.LOrderFree k := CompanionTheory.PfEss.Zc2.cs_orderfree hA hCm
-  have hSoc : Zc.LSocleGL k := GlobalTheory.T.langlands_socle_of_order_free hA (GlobalTheory.T.local_langlands_of_irreducible_admissible hA) hF
+  have hSoc : Zc.LSocleGL k := GlobalTheory.T.langlands_socle_of_order_free hA (_root_.GlobalTheory.CompanionTheory.GKLocalProof.gkLocal hA) hF
   have HS := stdCos hZ hI
   have hC : CuspEmbP k := cuspEmbP k hA hR
   exact
@@ -165,7 +168,7 @@ theorem cls_of (hZ : GlobalTheory.Published.SegmentRepresentation) (k : Type) [F
       free := hF
       soc := hSoc
       jac := GlobalTheory.T.segment_jacquet_all hA hZ
-      seg := fun Δ => GlobalTheory.T.exists_segment_representation hA Δ
+      seg := fun Δ => _root_.GlobalTheory.CompanionTheory.SegExists.exists_isLSeg hA Δ
       unl := hI
       com := hCm }
 

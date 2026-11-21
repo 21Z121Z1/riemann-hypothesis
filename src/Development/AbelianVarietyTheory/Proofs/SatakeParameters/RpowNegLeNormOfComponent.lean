@@ -3,7 +3,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeSplitOne
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FiniteResidueFieldPadicInt
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatakeBoundOfIsometricSphericalGLStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatakeBoundOfIsometricSphericalGL
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.SmallRowEigenvalues
 
 noncomputable section
@@ -33,7 +33,7 @@ variable {O K}
 theorem IsUnitarySatake.norm_le {r : ℕ} {β : Multiset ℂ} (h : IsUnitarySatake O K r β) :
     ∀ b ∈ β, ‖b‖ ≤ (qRes O : ℝ) ^ (((r : ℝ) - 1) / 2) := by
   obtain ⟨hc, V, _, _, ρ, v, hρ, hv, hfix, hT⟩ := h
-  exact GlobalTheory.T.satake_bound_of_isometric_sphericalGL O K r V ρ v β hc hρ hv hfix hT
+  exact _root_.GlobalTheory.LatHecke.satake_bound_of_isometric_spherical O K r V ρ v β hc hρ hv hfix hT
 
 end Local
 

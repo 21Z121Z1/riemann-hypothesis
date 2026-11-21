@@ -28,7 +28,11 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBare
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CopyLIntegral
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodTypesOfTypesTrue
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqualMultiplicitiesRowTestOfSameGroupTransferStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqualMultiplicitiesRowTestOfSameGroupTransfer
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.TwistPlacesOffPrimeQZero
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HoldsUIff
+import Development.AbelianVarietyTheory.Definitions.Divisors.Hypotheses2
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NonzeroPlacesOverPrimesLifts
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.CuspidalNoRadicalFixed
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.IwahoriSubgroup
@@ -36,22 +40,22 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Centra
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleRationalClassKernelIntegralsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeHypothesisFormsAgreeStatement
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.StandardMaximalParabolic
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsRegularSemisimpleOfTestFunctionNeZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralHasSumEqIntegralIndicatorHasSumStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSumConjClassesRegroupWithInvariantSelectionStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsRegularSemisimpleOfTestFunctionNeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralHasSumEqIntegralIndicatorHasSum
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSumConjClassesRegroupWithInvariantSelection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceInputsImplyCuspidalTrace
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalSpectrumFinitenessOfDecayHarishChandraStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalSpectrumFinitenessOfDecayHarishChandra
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricExpansionOfParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicTermsVanish
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ParabolicLeviDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsRegularSemisimpleTorusEllipticElementRealPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerTorusEllipticElementRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerTorusEllipticElementRealPlace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MeasurableEmbeddingEquiv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactRealPlaceTorusClassesSignVectorsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDiscreteSeriesCharacterEqWeylCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactRealPlaceTorusClassesSignVectors
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumDiscreteSeriesCharacterEqWeylCharacter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceSeparationOfIwahoriTraceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PseudoCoefficientSeparation
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestFunctionsTransportLocalLatticeIsometriesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestFunctionsTransportLocalLatticeIsometries
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableOrbitalIntegralPreservedLatticeIsometryStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HarishChandraModulesOn
 import Formalism.RealPlaceAnalysis.StatementE
@@ -96,10 +100,10 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.NonFie
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LengthFilterFinRange
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IwahoriEigenvalues
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IwahoriTraceOfBorelCasselman
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleUnitaryGroupConcreteStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RegularSemisimpleUnitaryGroupConcrete
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParabolicAndConstantTerm
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeIdempotentConstantTermVanishStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalOperatorsVanishingRadicalIntegralsUnitarStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeIdempotentConstantTermVanish
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalOperatorsVanishingRadicalIntegralsUnitary
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EllipticPart
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHasCls
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalTraceMultiplicityGiven
@@ -127,7 +131,7 @@ theorem multiplicative_closure_prime_mem_alt : GlobalTheory.Published.HarishChan
   obtain ⟨L, -, -, hpar, -⟩ := hLed (q.w.st Z') q.x.isOver hη hA
   obtain ⟨hhost, -⟩ := hHost (q.w.st Z') q.x.isOver
   have s := GlobalTheory.Mem.R3.LedRec.sameGrp q.x.what₂.grp g1'
-  refine (GlobalTheory.T.equalMultiplicities_rowTest_of_sameGroupTransfer q.B q.w.C q.Z Z' q.w.px q.w.I q.x.what₂.hX q.T q.x.Wt s q.x.what₂.r.z).1 ?_
+  refine (_root_.GlobalTheory.Twist.multEq_rowTest_of_copy q.B q.w.C q.Z Z' q.w.px q.w.I q.x.what₂.hX q.T q.x.Wt s q.x.what₂.r.z).1 ?_
   have hEx' := GlobalTheory.Mem.R3.DatCopy.copy_exAt Z' s q.x.what₂.exAt
   have hok := q.x.what₂.r.intersectionNumber_baseChange.ok
   have hok' : (GlobalTheory.Mem.R3.famR Z'.st q.w.I q.x.what₂.hX (GlobalTheory.Mem.R3.usedOf q.w.I q.T q.x.Wt)

@@ -8,10 +8,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToGAdMat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DOpMemDStep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActsDIffDOp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArchOperatorCompactUnitaryW
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuaSpanFiniteDimensionalDualPairStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalArchimedeanSchwartzFockOperatorStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactArchOperatorPreservesFockVacuaStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanMaximalCompactIntertwinesFockDerivatiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuaSpanFiniteDimensionalDualPair
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalArchimedeanSchwartzFockOperator
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalCompactArchOperatorPreservesFockVacua
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanMaximalCompactIntertwinesFockDerivati
 
 open NumberField IsDedekindDomain
 
@@ -257,11 +257,11 @@ theorem polData_kfin : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
   have hfin : ∀ m, FiniteDimensional ℂ (GlobalTheory.FockKFin.polLe M B.emb m) := by
     intro m
     induction m with
-    | zero => exact GlobalTheory.T.fockVacua_span_finiteDimensional_dualPair F E σ B n d X W M χX χW om r s r' s' hP
+    | zero => exact _root_.GlobalTheory.FockKFin.vacSp_finiteDimensional F E σ B n d X W M χX χW om r s r' s' hP
     | succ m ih =>
       rw [GlobalTheory.FockKFin.polLe_succ]
       haveI := ih
-      haveI := GlobalTheory.T.finiteDimensional_archimedeanSchwartzFockOperatorSpan F _ _ ih
+      haveI := _root_.GlobalTheory.FockKFinStep.dStep_finiteDimensional F _ _ ih
       infer_instance
   have hle : ∀ m, GlobalTheory.FockKFin.polLe M B.emb m ≤ M.Pol B.ψ B.emb := by
     intro m
@@ -291,7 +291,7 @@ theorem polData_kfin : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
     | zero =>
       intro f hf
       rw [GlobalTheory.FockKFin.polLe_zero] at hf ⊢
-      refine Submodule.span_induction (fun g hg => Submodule.subset_span (GlobalTheory.T.maximalCompact_archOperator_preserves_fockVacua F E σ B n d X W M χX χW om r s r' s' hP k hk A hA g hg))
+      refine Submodule.span_induction (fun g hg => Submodule.subset_span (_root_.GlobalTheory.KInfVac.gaussD_of_kInf F E σ B n d X W M χX χW om r s r' s' hP k hk A hA g hg))
         (by rw [map_zero]; exact Submodule.zero_mem _) (fun x y _ _ hx hy => by rw [map_add]; exact Submodule.add_mem _ hx hy)
         (fun c x _ hx => by rw [map_smul]; exact Submodule.smul_mem _ c hx) hf
     | succ m ih =>
@@ -304,7 +304,7 @@ theorem polData_kfin : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Num
         (by rw [map_zero]; exact Submodule.zero_mem _) (fun x y _ _ hx hy => by rw [map_add]; exact Submodule.add_mem _ hx hy)
         (fun c x _ hx => by rw [map_smul]; exact Submodule.smul_mem _ c hx) hz
       obtain ⟨a, b, g₀, hg₀, rfl⟩ := hg
-      obtain ⟨a', b', hab⟩ := GlobalTheory.T.archimedeanMaximalCompact_intertwines_fockDerivativeOps F E σ B n d X W M χX χW om r s r' s' hP k hk A hA a b
+      obtain ⟨a', b', hab⟩ := _root_.GlobalTheory.KInfComm.main F E σ B n d X W M χX χW om r s r' s' hP k hk A hA a b
       rw [hab]
       exact GlobalTheory.FockKFin.dOp_mem_dStep _ a' b' (ih g₀ hg₀)
   induction hΦ using Submodule.span_induction with

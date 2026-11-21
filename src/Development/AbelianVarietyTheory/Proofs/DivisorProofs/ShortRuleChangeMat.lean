@@ -28,7 +28,7 @@ theorem shortRule_change_mat (D : D7) (T : Full D) (hF : LawsFull T) (j : ℕ) (
         IsShortRule (T.Q.Xo j) T.Q.c (T.dδ j n) (actLat g Λ) N' x0 P' (ζ • f) := by
   set d := T.dδ j n with hd
   obtain ⟨_, hnab⟩ := hF.sh.dNab j hj n
-  have hCI := GlobalTheory.T.harmonic_germ_value_chart_independent
+  have hCI := _root_.GlobalTheory.harmonicValue_chart_independent
   have hbad := GlobalTheory.ShortChange.badOK_host D T.Q.H d.l₂
   have hdv : D.host.QS * D.host.q * D.host.d ∣ badN D := Dvd.intro _ rfl
   have hb1 : D.host.QS * D.host.q * D.host.d * d.l₂.M ≠ 1 := fun h => by
@@ -37,7 +37,7 @@ theorem shortRule_change_mat (D : D7) (T : Full D) (hF : LawsFull T) (j : ℕ) (
   have hB := GlobalTheory.ShortChange.trivAt_mul (trivAt_of_dvd hdv hT) hM
   have hB' := GlobalTheory.ShortChange.trivAt_mul (trivAt_of_dvd hdv hT') hM'
   have hK := hF.p.kPsi j hj
-  obtain ⟨ze, ⟨k, hk, hze⟩, hrep⟩ := GlobalTheory.T.thetaChangeOfRepRootOfUnity_of_chartIndependence hCI D.host.E T.Q.H (T.Q.Dw j) d.l₂ d.Xo₂ d.c₂ d.nab₂ n
+  obtain ⟨ze, ⟨k, hk, hze⟩, hrep⟩ := _root_.GlobalTheory.changeRoot_of_chartIndep hCI D.host.E T.Q.H (T.Q.Dw j) d.l₂ d.Xo₂ d.c₂ d.nab₂ n
     ⟨(GlobalTheory.PlaceInt.host_galois_discr_moves D T.Q.H).1, GlobalTheory.ShortChange.odd_rank T hF j hj, hev, hnab⟩ _ hbad
     Λ g _ _ hU hg hB hB' (isBeta_cover d hK hb1 Λ hU hB) (isBeta_cover d hK hb1 _ hU' hB')
   have hP' := ((GlobalTheory.PushKeeps.push_keeps D.host.E T.Q.H (T.Q.Dw j) T.Q.l T.Q.c n a g hg).2 Λ).2.2.2 P hP

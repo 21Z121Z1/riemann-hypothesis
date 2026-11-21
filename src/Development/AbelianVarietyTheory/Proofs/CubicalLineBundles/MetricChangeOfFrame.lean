@@ -19,7 +19,7 @@ import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidu
 import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LieBasisIffTangentBasisPullbackUniversal
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.TangentVectorExistsUniqueUniformisingVectorStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.TangentVectorExistsUniqueUniformisingVector
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SecTieBaseChange
 
 noncomputable section
@@ -127,7 +127,7 @@ theorem metricAt_change {E : Type} [Field E] [NumberField E] [IsCMField E] {H : 
     congr 2
     funext z
     rw [norm_mul, mul_pow, _root_.mul_assoc]
-  · exact (GlobalTheory.T.tangentVector_existsUnique_uniformisingVector Φ.key u).2 _ (w b) (W b) _ (w' b i) (fun j => l1 _ ((h7 b j).1.symm ▸ ht b j))
+  · exact (_root_.GlobalTheory.LamT.existsUnique_isDiff_and_linear Φ.key u).2 _ (w b) (W b) _ (w' b i) (fun j => l1 _ ((h7 b j).1.symm ▸ ht b j))
       (fun j => (h7 b j).2) (hw2 b i)
   · rw [hermForm_sum]
     simp only [Matrix.mul_apply, Matrix.conjTranspose_apply, h8, Finset.mul_sum, Finset.sum_mul]

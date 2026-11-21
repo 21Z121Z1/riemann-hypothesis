@@ -17,11 +17,11 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistAllPowers
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmbientBaseHeq
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmT4OfRationalRows
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisAveragedSeriesOfClassSumsStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FullRankThetaSeriesFormsOfRationalScalarsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisAveragedSeriesOfClassSums
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FullRankThetaSeriesFormsOfRationalScalars
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwistedPlaceIndexMemFirstPairOfCompatibleChoice
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeOperatorPreservesSupLatticeRealSideStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesRationalityAndCoefficientBoundStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HeckeOperatorPreservesSupLatticeRealSide
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaSeriesRationalityAndCoefficientBound
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GalSide
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExportAtOfBundlesStatement
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.IsPotCrysAtOfMono0
@@ -39,9 +39,9 @@ theorem exportAt_bundles_alt : Cheb → PoitouTateTotallyComplex → CohDimTwo �
   intro hCheb hPT hCD hTame hLF hLTD hLEC hGF hGEC hUO hadm hGW hRCA hCusp hCheb1 hGAR hTor hSR hSI hHI hHT hHRT
   intro D nch xd X Y G hF hGH hconds hTie hBase
   exact _root_.GlobalTheory.T.realization_of_published_alt hCheb hPT hCD hTame hLF hLTD hLEC hGF hGEC hUO hadm hGW hRCA hCusp hCheb1 hGAR hTor D nch xd X Y G
-    (GlobalTheory.T.thetaSeries_rationality_and_coefficientBound hCusp hGAR hSR hSI D X (twEOf xd) Y hF).1
-    (GlobalTheory.T.thetaSeries_rationality_and_coefficientBound hCusp hGAR hSR hSI D X (twEOf xd) Y hF).2
-    (GlobalTheory.T.heckeOperator_preserves_supLattice_realSide hCusp hHI hHT hHRT D X)
+    (_root_.GlobalTheory.Unframe.rat_and_xiBdd hCusp hGAR hSR hSI D X (twEOf xd) Y hF).1
+    (_root_.GlobalTheory.Unframe.rat_and_xiBdd hCusp hGAR hSR hSI D X (twEOf xd) Y hF).2
+    (_root_.GlobalTheory.HeckeSupReal.hkSupAt_realSide hCusp hHI hHT hHRT D X)
     hGH hconds hF.galois hF.roots hTie hBase
 end GlobalTheory.ExportClose0
 end

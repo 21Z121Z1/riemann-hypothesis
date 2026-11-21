@@ -5,7 +5,12 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationMultiplici
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ExistsNonzeroSectionWeightBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentredPointPhiPositiveWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpace
+import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightParameterStrictAntitone
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
@@ -43,7 +48,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormStalkIntegr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IInfThRuleLeNuLocOf
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateAny
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateEqUnitMulNormaliserThetaVa
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHoldStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHold
+import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsShortPeriodLatticeBasisBalancedSlope
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsProductDataCopiesTrivialisationValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLocusExponentLeOscillationNonTypePrime
@@ -102,7 +110,7 @@ theorem nef_share_lower_bound (hP : _root_.GlobalTheory.CovTop.PublishedHodgeBun
   have hA := _root_.GlobalTheory.T.hodge_bundle_isNef_isBig_of_weight hP1 hQ.nef hSI hKS.toroidalChartsForFan hSL _ _ _ _ _ _ TF Z _ Y.U P R ω _ D _ _ h f₁ f₂ th k hY.geo hB
   have a3 := GlobalTheory.T.hilbertSamuel_map_birational_of_cuspForms_generate TF.X Z Y.U P R ω _ _ _ h f₁ f₂ th k (GlobalTheory.T.cuspForm_ratios_generate_at_flagSpace_genericPoint TF.X Z Y.U P.u₁ ⟨R.toModif⟩ hbir)
   obtain ⟨a1, a2⟩ := hA
-  have key := GlobalTheory.T.choose_mul_componentDegree_le_dimension hQ _ _ _ _ _ _ _ _ Z _ Y.U P R ω _ D _ _ h f₁ f₂ th k a1 a2 a3
+  have key := _root_.GlobalTheory.HSCore.CompShare.choose_mul_compDeg_le hQ _ _ _ _ _ _ _ _ Z _ Y.U P R ω _ D _ _ h f₁ f₂ th k a1 a2 a3
   have hr : rankOn Y.U Z (wtOf _ (P.wt P.T) 0) = Module.finrank Y.d.c₂.F (cuspOn Y.U Z (wtOf _ (P.wt P.T) 0)) := by
     rw [rankOn, Formalism.HN.rkK, ((good _ (g3 P.T)).2 Z).2.2, finrank_top]
   rw [← hr] at key
@@ -124,7 +132,7 @@ theorem nef_share_upper_bound (hX : GlobalTheory.CovTop.HypothesesX) (hP : _root
   have hT1 := hB.le_T
   have hD2 := two_le_dimFlag hp hq hf
   rw [← hD] at hg hT1 hD2
-  have hle := (GlobalTheory.T.componentImageDegree_between_of_proportionality _ _ _ _ _ _ _ Y.U hY.unf (_root_.GlobalTheory.T.proportionality_principle_compactification hP hSI hKS hSL D T hT j hp hq hf hj Y e o hY).1
+  have hle := (_root_.GlobalTheory.DegVal.compDeg_between _ _ _ _ _ _ _ Y.U hY.unf (_root_.GlobalTheory.T.proportionality_principle_compactification hP hSI hKS hSL D T hT j hp hq hf hj Y e o hY).1
     (_root_.GlobalTheory.T.compactification_top_chern_eq_volume hP hSI hKS hSL D T hT j hp hq hf hj Y e o hY) P.u₁ (fun τ => (hs τ).1) (fun τ => (hs τ).2) hbir hV Z Z).1
   rw [CompHt.delPrime_eq _ _ (CompHt.vdm_pos fun τ => (hs τ).1).ne'] at hle
   set ρ := CompHt.rhoB _ P.u₁ with hρ

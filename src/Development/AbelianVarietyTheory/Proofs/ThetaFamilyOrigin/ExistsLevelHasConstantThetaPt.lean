@@ -2,7 +2,9 @@ import Mathlib
 import Development.AbelianVarietyTheory.Statements.TorsionEndomorphisms.ConstantThetaDeformationZero
 import Development.AbelianVarietyTheory.Statements.TorsionEndomorphisms.ExistsGeneratorOfIsField
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.IsThetaPtOverMove
-import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.ExistsStdSympZmodStatement
+import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.ExistsStdSympZmod
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.GlobalSectionsRankAlgClosed
+import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.WeilIsAlternatingSkewNatural
 import Development.AbelianVarietyTheory.Proofs.ThetaFamilyOrigin.ExistsLevelStructureOfWeilPairing
 
 set_option autoImplicit false
@@ -35,7 +37,7 @@ theorem exists_symplectic_points (hLaw : Laws) (K : Type) [Field K] [IsAlgClosed
   have s : ∀ x y, c y x = (c x y)⁻¹ := fun x y => (hu _ _ _ (CommPairing.weilIs_symm P.isLB (hc x y))).symm
   let e : H →* H →* Γ(Sp K, ⊤)ˣ := MonoidHom.mk' (fun x => MonoidHom.mk' (c x) fun y y' => by
     rw [s (y * y'), l, mul_inv, ← s, ← s]) fun x x' => MonoidHom.ext fun y => l x x' y
-  obtain ⟨x, hx⟩ := T.exists_standard_symplectic_basis_of_pairing M P.g H _ ze (Nat.pos_of_ne_zero fun h => hM (by rw [h, Nat.cast_zero])) hz
+  obtain ⟨x, hx⟩ := _root_.GlobalTheory.exists_stdSymp_of_alternating_pairing M P.g H _ ze (Nat.pos_of_ne_zero fun h => hM (by rw [h, Nat.cast_zero])) hz
     (fun x => Subtype.ext (hH x)) (fun d hd => by
       obtain ⟨b, rfl⟩ := hd
       have hd : (d : K) ≠ 0 := left_ne_zero_of_mul (by rwa [Nat.cast_mul] at hM)

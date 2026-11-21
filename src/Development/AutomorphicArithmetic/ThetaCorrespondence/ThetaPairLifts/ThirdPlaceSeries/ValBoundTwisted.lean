@@ -13,7 +13,7 @@ import CompanionTheory.AutomorphicTheory.PlaceSeparation.IsOpenQuotientMapArt0
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NormalFormToricRatio
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsCMValueHeckeCharacterAuxiliarySetOfEmpty
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsValCharTwist
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedThetaValueValuationLeDivSqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedThetaValueValuationLeDivSq
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Realised
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ValuesAsToricSumsStatement
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ToricRatioFieldDataCm
@@ -41,7 +41,7 @@ theorem val_bound_twisted_alt : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D
   obtain ⟨lam, a, u, ha, he⟩ := _root_.GlobalTheory.T.toric_ratio_field_data_cm_alt p CF d hp hfit hG hF w hw i j s hs1 hs2 T₀ ψc T hv h0 h0ne hψ hT' z
     (by rw [← hd, hz, hΛs]) (_root_.GlobalTheory.T.toric_ratio_field_data_abelian_alt p CF d hp hfit hG hF w hw i j s hs1 hs2 T₀ ψc T hv h0 h0ne hψ hT')
   obtain ⟨N0, hN⟩ := hfit.1.powers
-  exact GlobalTheory.T.twistedThetaValue_valuation_le_div_sq ex.nch w N0 lam a u z (hN w hw a ha) he
+  exact _root_.GlobalTheory.TwistValBound.vw_le_of_bound ex.nch w N0 lam a u z (hN w hw a ha) he
 end GlobalTheory.ThmAUpper
 end
 end

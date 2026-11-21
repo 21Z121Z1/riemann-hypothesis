@@ -254,7 +254,7 @@ theorem normSq_scalar {D : D7} (ψ : AddChar (AF D.host.F) ℂ) (θ : InfFam D) 
         (k.prod fun v n => GlobalTheory.FunObj.period δ v.1 ^ n) * Formalism.MainNotions.GL3Theta.applyAt0 D (MvPolynomial.monomial k 1) Θ := by
     intro k
     have hdiff : Differentiable ℂ Θ := hTh.1
-    have hj := GlobalTheory.T.fockMonomial_at_origin_gaussian_entire_orthonormal ψ θ S T frS frT hf.1 hf.2.inf hS hT f Φ hΦd hreal k
+    have hj := _root_.GlobalTheory.FockPos.fock_monomial_zero_of_on ψ θ S T frS frT hf.1 hf.2.inf hS hT f Φ hΦd hreal k
     change pureTensorO ψ θ S T (fun _ => 1) (fun _ => 1) (GlobalTheory.FockPos.frAt frS) (GlobalTheory.FockPos.frAt frT) f
       (MvPolynomial.monomial k 1) 0 = _
     rw [hj, hΦeq, GlobalTheory.FockPos.applyAt0_monomial', GlobalTheory.FockPos.applyAt0_monomial',

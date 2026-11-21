@@ -69,7 +69,7 @@ theorem levR_unique (hpq : 1 ≤ Dw.p + Dw.q) (hA : l.A.Coprime l.M) (gM : Dw.La
       rw [← Spec.map_comp]; rfl)
   obtain ⟨rfl, e⟩ := GlobalTheory.T.levelMove_moduli_unique_universalTriple E H Dw l Xo c ρ ρ' ν ν' _ _ _ _ hpq (fun a => by simp) (fun a => ⟨0, by simp⟩) i i' h g
     (GlobalTheory.exists_sim_of_aut_mod E H Dw l l.A gM hpq l.A_pos hA hinj)
-  exact (GlobalTheory.T.existsUnique_framedPoint_move_universalTriple E H Dw l Xo c ρ ν h.1 S y).2 y' y'' ν' e.symm hm gm
+  exact (_root_.GlobalTheory.exists_unique_frMove E H Dw l Xo c ρ ν h.1 S y).2 y' y'' ν' e.symm hm gm
 
 end Move
 

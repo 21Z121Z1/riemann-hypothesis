@@ -1,7 +1,8 @@
 import Mathlib
 import Formalism.LocalToGlobal.Divisibility.ColPins
 import Development.AbelianVarietyTheory.Definitions.Divisors.FactorBounds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumLeFrameNormSqGoodPartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSumLeFrameNormSqGoodPart
+import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 open Module NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.DIV Formalism.L2.Indef Formalism.L2.Rows GlobalTheory.ColRows
 open scoped ComplexOrder
 
@@ -93,7 +94,7 @@ theorem ipAt_le_of_ties {Xf : Fields} [IsTotallyComplex Xf.K]
   subst hp2
   have hmuE : mu = fun t => t.1 := funext muTie
   subst hmuE
-  exact GlobalTheory.T.classSum_le_frameNorm_sq_good_part Xf Pr Rk W Ch sel Sg hX v0 TU Xg ∅ xiVal trIv Lv Zs _ (hP _) ok1 F F' hm hres v X0
+  exact _root_.GlobalTheory.ClassSumLevel.classSum_le_normAt_sq Xf Pr Rk W Ch sel Sg hX v0 TU Xg ∅ xiVal trIv Lv Zs _ (hP _) ok1 F F' hm hres v X0
     (hX0 v).1 (hX0 v).2
 
 end GlobalTheory.ColEvNorm

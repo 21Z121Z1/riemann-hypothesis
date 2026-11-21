@@ -44,7 +44,7 @@ namespace GlobalTheory.BigOn.Exp
 theorem baseGe_of_alt : GlobalTheory.Published.CuspRapidDecay → GlobalTheory.Published.GlobalArtinReciprocity → GlobalTheory.Published.RayClassFieldSt →
     GlobalTheory.SerStd.SeriesRatS → _root_.GlobalTheory.BigOn.Exp.BaseLowerBound₂ := fun hP hA hR hS =>
   _root_.GlobalTheory.BigOn.Exp.SerBase.baseGe_of_serBase_facts_flatKer_centLat _root_.GlobalTheory.T.read_injective _root_.GlobalTheory.T.latSmallGen' _root_.GlobalTheory.T.kerOfAt' _root_.GlobalTheory.T.trace_rationality_at_place' (_root_.GlobalTheory.T.kernel_rationality_of_reciprocity_hypotheses_alt hP hA hR hS) _root_.GlobalTheory.T.latIoAt' _root_.GlobalTheory.T.readCmpAt_of_serBase
-    GlobalTheory.T.flatDatum_series_unit_times_kernel_series GlobalTheory.T.central_element_moves_coefficient_lattice_by_prime_pow GlobalTheory.T.kernelTrace_algebraic_at_lowestTypes GlobalTheory.T.ownPrime_isUnit_at_place
+    _root_.GlobalTheory.BigOn.Exp.SerBase.flatKer_holds GlobalTheory.T.central_element_moves_coefficient_lattice_by_prime_pow _root_.GlobalTheory.TraceRatPf.traceRat _root_.GlobalTheory.BigOn.Exp.SerBase.ownUnit
 end GlobalTheory.BigOn.Exp
 end
 end

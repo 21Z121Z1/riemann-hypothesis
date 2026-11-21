@@ -42,14 +42,14 @@ import Formalism.LocalRingCardinality.DataTies
 import Formalism.SharpRestriction.CuspSpanNormBounds.WeightedUniformRotatedOfExpansion
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.ThmBChain
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ProdSubEqProdFactorial
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowColumnShapeOfWindowDataWidthGeOneStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsThresholdCriticalLevelLowerBoundStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AmplitudeBoundsAtParametersOfAdmittedBoundsStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalizedFormalDegreeEqVandermondeOfSizesStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormalDegreeRatioEqVandermondeRatioAlongLineStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AmpleThetaWideRangeLargeConstantsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowColumnShapeOfWindowDataWidthGeOne
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsThresholdCriticalLevelLowerBound
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AmplitudeBoundsAtParamsOfAdmittedBounds
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NormalizedFormalDegreeEqVandermondeOfSizes
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FormalDegreeRatioEqVandermondeRatioAlongLine
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AmpleThetaWideRangeLargeConstants
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PtDlAtRecord
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RealPlaceAmplitudeNormLeConstDivFormalDegreeStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RealPlaceAmplitudeNormLeConstDivFormalDegree
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AbsAllAtRecordGap
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SchurAtRecordGap
 
@@ -92,20 +92,20 @@ theorem weyl_at (D : D7) : VanishingOnXAndXPlusBranching.adm12 D := by
 
 theorem ampOn_singleton : ∀ c : ℝ, AmpOn {c} := by
   intro c Cg cb Cu cT CT hcb _
-  obtain ⟨CPT, hPT⟩ := GlobalTheory.T.ampleTheta_wideRange_large_constants Cg cb Cu cT CT c
+  obtain ⟨CPT, hPT⟩ := _root_.GlobalTheory.Core.Deg.ptWide_at_record_gap Cg cb Cu cT CT c
   obtain ⟨CDl, hDl⟩ := GlobalTheory.CoreDlGap.ptDl_at_record Cg cb Cu cT CT c
   obtain ⟨Ca, hCa, hAbs⟩ := GlobalTheory.AbsRecGap.abs_all_at_record_gap Cg cb Cu cT CT c
   obtain ⟨CS, tS, hS⟩ := GlobalTheory.Amp.schur_at_record_gap Cg cb Cu cT CT c
-  obtain ⟨tL, hL⟩ := GlobalTheory.T.exists_threshold_criticalLevel_lower_bound cb Cu hcb
-  obtain ⟨tV, hV⟩ := GlobalTheory.T.normalizedFormalDegree_eq_vandermonde_of_sizes
-  obtain ⟨C, C2, Ch, hC, hCh, H⟩ := GlobalTheory.T.ampAt_of_admitted_bounds Cg CPT CDl 1 Ca CS zero_le_one hCa
+  obtain ⟨tL, hL⟩ := _root_.GlobalTheory.CritLevelSize.tcritLow_sizes cb Cu hcb
+  obtain ⟨tV, hV⟩ := _root_.GlobalTheory.Core.Deg.CritVand.vv_eq_vand_of_sizes
+  obtain ⟨C, C2, Ch, hC, hCh, H⟩ := _root_.GlobalTheory.ampAt_record_of_inputs Cg CPT CDl 1 Ca CS zero_le_one hCa
   refine ⟨C, C2, Ch, hC, hCh, fun Cpr δ hδ => ?_⟩
   obtain ⟨t0, H0⟩ := H Cpr δ hδ
   obtain ⟨t1, h1⟩ := hPT (max Cpr 0)
   obtain ⟨t2, h2⟩ := hDl (max Cpr 0)
-  obtain ⟨t3, h3⟩ := GlobalTheory.T.realPlaceAmplitude_norm_le_const_div_formalDegree Cg cb Cu cT CT c (max Cpr 0)
+  obtain ⟨t3, h3⟩ := _root_.GlobalTheory.AmpRec.exists_threshold_adm9_of_ties Cg cb Cu cT CT c (max Cpr 0)
   obtain ⟨t4, h4⟩ := hAbs (max Cpr 0)
-  obtain ⟨t5, h5⟩ := GlobalTheory.T.formalDegree_ratio_eq_vandermonde_ratio_along_line (max Cpr 0)
+  obtain ⟨t5, h5⟩ := _root_.GlobalTheory.DegLine.deg_VandLine_of_gap (max Cpr 0)
   refine ⟨max t0 (max t1 (max t2 (max t3 (max t4 (max tS (max tL (max tV t5))))))),
     fun C0 hC0 C' Cl hC' hCl D large₂ hG hT _ hTF => ?_⟩
   obtain rfl : C0 = c := hC0
@@ -114,7 +114,7 @@ theorem ampOn_singleton : ∀ c : ℝ, AmpOn {c} := by
   obtain ⟨b0, b1, b2, b3, b4, bS, bL, bV, b5⟩ := hCl
   have hLow : VanishingOnXAndXPlusBranching.adm5 D large₂ C' Cl Cg cb Cu cT CT C0 := fun h0 =>
     hL D large₂ C' Cl Cg cT CT C0 bL
-      (hV D large₂ C' Cl Cg cb Cu cT CT aV bV hT h0.1 (GlobalTheory.T.dataNW_of_standingNumericalData D C0 h0.2.2 h0.2.1)) h0
+      (hV D large₂ C' Cl Cg cb Cu cT CT aV bV hT h0.1 (_root_.GlobalTheory.Core.Deg.rowColumnShape_of_windowData_width_ge_one D C0 h0.2.2 h0.2.1)) h0
   exact H0 D large₂ C' Cl cb Cu cT CT C0 a0 b0 hG
     (h1 D large₂ C' Cl a1 b1 hT hTF)
     (h2 D large₂ C' Cl a2 b2 hT)

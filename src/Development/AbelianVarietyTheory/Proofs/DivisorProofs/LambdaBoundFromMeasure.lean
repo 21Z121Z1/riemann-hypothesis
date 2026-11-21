@@ -5,8 +5,13 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.QuoIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeMaxSquaredBound
 import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxSlopeSqFieldExtensionLeComparableNormsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearEmbSupLatticeOntoRealisationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxSlopeSqFieldExtensionLeComparableNorms
+import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
+import Formalism.MeanHeightDescent.DivisionInequalityWithCovolume
+import Formalism.MeanHeightDescent.AverageDegreeBounds.GlobalBoundRefinements
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearEmbSupLatticeOntoRealisation
+import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMassSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightBoundHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.EqZeroOfPnorm
@@ -45,7 +50,7 @@ theorem slopeMax_all_le (Cm : ℝ) (hG : GramAt p i) (hM : MeasAt p i Cm) :
     slopeMax_sq (nrmR p.R.toRealDat i) (latAll p.R.toRealDat i) ≤
       slopeMax_sq (nrmK p.fw i) (latW (p.T.U ((i : ℕ) + 1)) (Gk p i)) + 2 * (Cm * unitE p) := by
   haveI := totallyComplex_core p
-  obtain ⟨ι, h1, h2, h3⟩ := GlobalTheory.T.exists_semilinear_emb_supLattice_onto_realisation D _ _ _ _ p.T p.R.toRealDat p.κ p.v₀ p.fw i
+  obtain ⟨ι, h1, h2, h3⟩ := _root_.GlobalTheory.CovTop.SupImage.exists_emb_image_latW D _ _ _ _ p.T p.R.toRealDat p.κ p.v₀ p.fw i
   choose c hc0 hcB hcE using hM
   have hAll : latAll p.R.toRealDat i =
       Submodule.span (𝓞 D.what₂.LL) (ι '' (latW (p.T.U ((i : ℕ) + 1)) (Gk p i) : Set (VK p.fw i))) := by
@@ -57,7 +62,7 @@ theorem slopeMax_all_le (Cm : ℝ) (hG : GramAt p i) (hM : MeasAt p i Cm) :
     change latAll p.R.toRealDat i ≤ ⊥
     rw [hAll, h0]
     simp
-  have key := GlobalTheory.T.maxSlope_sq_fieldExtension_le_comparable_norms p.T.Q.c.F D.what₂.LL (VK p.fw i) (Fin (p.R.toRealDat.nW i) → D.what₂.LL) (nrmK p.fw i)
+  have key := _root_.GlobalTheory.SlopeMaxExt.slopeMax_sq_span_le p.T.Q.c.F D.what₂.LL (VK p.fw i) (Fin (p.R.toRealDat.nW i) → D.what₂.LL) (nrmK p.fw i)
     (nrmR p.R.toRealDat i) ι (latW (p.T.U ((i : ℕ) + 1)) (Gk p i)) c (Cm * unitE p) hG.2.2.2.1 hG.1 (nrmK_conj p i) h2
     hG.2.2.2.2.1 hne (fun σ => ⟨hc0 σ, hcB σ⟩) (fun σ x => by
       obtain ⟨h, e⟩ := h1 x

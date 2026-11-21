@@ -12,13 +12,13 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRepSuppSplit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisOSumSmul
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAlgebraicStdCharHalfSymplecticRealPartZeroStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAlgebraicStdCharHalfSymplecticRealPartZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumValueAlgebraicCongruence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLocalSupportIdempotent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemGfCOfSuppAt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpenFixingNegativeVacuumDefiniteBottom
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryInductionOnSplitPlaceSupportStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryInductionOnSplitPlaceSupport
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPointActsOnVacuumByAlgebraicScalarStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PeriodAlgebraicFixedDegree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpecialisedUniversalSeriesEqTwistedThetaSeries
@@ -52,7 +52,7 @@ theorem moved_translate_eq_algebraic_combination : ∀ {D : D7} {T : Type} [Fini
   intro D T _ L μ₀ sc G W i j A A' WW X hP hI hL hX t x hx h hh u hu
   have hψ : ∀ u v : WO (GlobalTheory.Grid.neg A) WW, u.map (infPart D) = 0 → v.map (infPart D) = 0 →
       IsAlgebraic ℚ (W.ψ (symplOH (GlobalTheory.Grid.neg A) WW u v)) := fun u v hu hv =>
-    GlobalTheory.T.isAlgebraic_stdChar_halfSymplectic_realPart_zero hX.is.isVac.1 _ _ u v hu hv
+    _root_.GlobalTheory.PsiFinAlgebraic.isAlgebraic_psi_symplOH hX.is.isVac.1 _ _ u v hu hv
   obtain ⟨N, hN, hlev⟩ := _root_.GlobalTheory.T.vacuum_vector_at_level_mem_fockAlgebraic hP hI hL hX t
   obtain ⟨γ, hγ, a, ha, s, hs, k, hk, hx', hkc, hss⟩ := GlobalTheory.UnRep.Space.exists_rep_suppSplit D A N hN x
   obtain ⟨γ', hγ', a', ha', s', hs', k', hk', hh', hkc', hss'⟩ := GlobalTheory.UnRep.Space.exists_rep_suppSplit D WW N hN h

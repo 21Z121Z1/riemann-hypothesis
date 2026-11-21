@@ -5,7 +5,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmulNonnegOfS
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinrankLeOfAntilinear
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JEvExistsAndJEvBar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationLawsCentralMovedReadingsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeriesRationalityBackFromMovedReadingsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeriesRationalityBackFromMovedReadings
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPrimeMemExceptionalSet
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
 import Development.AbelianVarietyTheory.Definitions.Divisors.LevelOfOfSameBut
@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToRatHyp0
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiAtComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowWeightStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicFormEqRationalPhaseKernelSeriesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitModulusRationalPhaseMemCoefficientFieldStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitModulusRationalPhaseMemCoefficientField
 
 set_option autoImplicit false
 noncomputable section
@@ -90,7 +90,7 @@ theorem kerRat_framed (hP : GlobalTheory.Published.CuspRapidDecay) (hA : GlobalT
     have e := congrFun hx.symm g
     have e2 : ph * singleSeries Rl.toRealDat j ω φ h (c0L j P) u g = 0 := e
     exact ((mul_eq_zero.1 e2).resolve_left hph0).symm
-  · obtain ⟨c, hcph⟩ := GlobalTheory.T.unit_modulus_rational_phase_mem_coefficient_field hP hA hR D Γ Pl0 I0 T0 A3 T Rl cG S YS F κ v₀ O t j hV hH gramR c0R c0L hFT u hu hph hc ph
+  · obtain ⟨c, hcph⟩ := _root_.GlobalTheory.PhaseOneOnto.phase_mem_coefField hP hA hR D Γ Pl0 I0 T0 A3 T Rl cG S YS F κ v₀ O t j hV hH gramR c0R c0L hFT u hu hph hc ph
       hph1 hRP
     refine ⟨c⁻¹ • x, ?_⟩
     rw [adForm_smul]

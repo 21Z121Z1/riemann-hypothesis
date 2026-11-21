@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZ
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLatticeForMatchedFrames
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteSupportMulLatticeStabilizerStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFiniteSupportMulLatticeStabilizer
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.TwistSmallKernelInvariant
 
@@ -39,7 +39,7 @@ theorem exists_combination_trivial_off_places : _root_.GlobalTheory.FunPr.ThetaL
   refine ⟨x₀, fun D large₂ hε hx Γ _ _ Pl0 T A Ks _ _ _ R F hS => ?_⟩
   intro G W hW B ρ hρ t i j Θ Θ' hM g g₁ z
   obtain ⟨L, S, hLfg, hLsp, hinv⟩ := hA D large₂ hε hx Γ Pl0 T A Ks R F hS G W hW B ρ hρ t i j Θ Θ' hM g g₁
-  choose b' P hP hK using fun b => GlobalTheory.T.exists_finiteSupport_mul_latticeStabilizer (G.V (.grid i j)) L hLfg hLsp S b
+  choose b' P hP hK using fun b => _root_.GlobalTheory.TruncAway.exists_trunc_mul_inK (G.V (.grid i j)) L hLfg hLsp S b
   set f := kerSmall W Θ' g g₁ with hf
   have key : ∀ b u, f (u * b' b) = f (u * b) := fun b u => by
     have := hinv _ (hK b) (u * b' b)

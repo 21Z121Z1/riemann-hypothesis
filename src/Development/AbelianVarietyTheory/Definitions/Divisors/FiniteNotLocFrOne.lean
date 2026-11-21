@@ -17,8 +17,20 @@ import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlg
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsSpanningHypotheses
 import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LinearIndependentOfIsLieBasis
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTangentModuleUniversalGroupStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniformisationDataNonemptyComponentStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsTangentModuleUniversalGroup
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
+import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
+import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
+import Formalism.LocalToGlobal.ProjectiveLattices.RegPFree
+import Formalism.LocalToGlobal.ProjectiveLattices.RegQFree
+import Formalism.LocalToGlobal.ProjectiveLattices.ThShort
+import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
+import Formalism.LocalToGlobal.ProjectiveLattices.IsGenFrGenFr
+import Formalism.LocalToGlobal.ProjectiveLattices.ChartDirectionsIntegral
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 
 noncomputable section
 
@@ -66,7 +78,7 @@ theorem posDef_of_isMetric {σ : c.F →+* ℂ} {y : FrPt Xo c (CAt σ)} {N : �
   obtain ⟨Φ, u, Hm, χ, θ, Fd, w, W, -, hA, -, -, -, -, h7, h8⟩ := h
   obtain ⟨-, -, -, -, -, t2, -⟩ := GlobalTheory.AHWeil.tangent_and_weil_of_isAH GlobalTheory.thetaUnifAV_all Φ.key.P _ u Hm χ hA
   obtain ⟨l1, l2⟩ := GlobalTheory.MetricChange.lift_comb Φ.m.cart
-  obtain ⟨M, _, _, v, ρ, -, htan, hcomb, -, -⟩ := GlobalTheory.T.exists_tangent_module_universal_group E H Dw l Xo (CAt σ) y.x
+  obtain ⟨M, _, _, v, ρ, -, htan, hcomb, -, -⟩ := _root_.GlobalTheory.TanMod.exists_tangent_module E H Dw l Xo (CAt σ) y.x
   choose β hβ using fun i => (htan (y.u b i)).1 (y.tan b i)
   have hu : y.u b = fun i => v (β i) := funext fun i => (hβ i).symm
   have hw : y.u b = fun i => (w b i).left ≫ Φ.m.φ := funext fun i => (h7 b i).1.symm

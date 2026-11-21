@@ -41,7 +41,7 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLat
 import Formalism.LocalRingCardinality.DataTies
 import Formalism.SharpRestriction.CuspSpanNormBounds.WeightedUniformRotatedOfExpansion
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.ThmBChain
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowAmplitudeBoundsUniformSingletonWidthStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowAmplitudeBoundsUniformSingletonWidth
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTermLoopOfStandingHypotheses
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowsPosTypeP
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmallOnUnivUnconditional
@@ -64,7 +64,7 @@ theorem degenerate_and_collisions_uncond : (∀ c : ℝ, On {c} VanishingGramTer
     (inputs_of_subset_widths {c} Set.univ (Set.subset_univ _)).2.1 smallOn_univ_unconditional
   have hP : GlobalTheory.TypeAsm.TypeP := GlobalTheory.rowsPos_typeP
   refine ⟨vanishingGramBound_uniformWindow_and_weightData.1 (vanishingGramBoundWindow_of_termPairTypeBound hP), fun c => ?_⟩
-  exact collS_on hSM {c} (GlobalTheory.T.rowAmplitudeBoundsUniform_singleton_width c) (corankTwoCountBounds_of_rowCountBoundsUniform {c} (cntOn_singleton hSM c)) (hS c)
+  exact collS_on hSM {c} (_root_.GlobalTheory.AmpRecordGap.ampOn_singleton c) (corankTwoCountBounds_of_rowCountBoundsUniform {c} (cntOn_singleton hSM c)) (hS c)
     (tieOn_singleton_uncond c)
 
 end GlobalTheory.Core.Deg

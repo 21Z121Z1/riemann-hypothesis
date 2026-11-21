@@ -17,7 +17,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SphericalInert
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InfinityTypeOfLift
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowLocalAll
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParameterLawsEmpty
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallySizesCongruencesHostFactsColumnChoicesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallySizesCongruencesHostFactsColumnChoices
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitarisableOfIsSpehOne
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FinIso
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
@@ -93,7 +93,7 @@ theorem cuspParameter_at_member_alt : _root_.GlobalTheory.HeightCounting.Up.Publ
   intro hN hL
   have hlift := _root_.GlobalTheory.T.liftAll_of_parIn_of_mtInput hN hL
   have hloc := _root_.GlobalTheory.T.local_component_of_par_in_third_layer hN hL
-  have hsz := GlobalTheory.T.eventually_sizes_congruences_hostFacts_columnChoices
+  have hsz := _root_.GlobalTheory.HeightCounting.Up.sizes_host_at_record
   refine EvG.imp ((hlift.inter hloc).inter hsz) fun K _ _ _ _ H => ?_
   refine large₂.imp ((H.1.1.inter H.1.2).inter H.2) fun B f T _ h => ?_
   intro hKP w Z Wt p0 t nch n xd c hE _ hpin Rw hRw

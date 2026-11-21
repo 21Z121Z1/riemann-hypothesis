@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocallyConstantBoxApproximation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetOff
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureLocalBallStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarMeasureLocalBall
 
 open HeckeCharacterZeroLocus.SiegelWeilU GlobalTheory.CompanionTheory.SW NumberField IsDedekindDomain MeasureTheory Topology Filter GlobalTheory.CompanionTheory.Equi
 open scoped Classical

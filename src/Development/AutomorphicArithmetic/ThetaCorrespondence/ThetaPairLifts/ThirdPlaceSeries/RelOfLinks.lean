@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuationE
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ThmSOwn
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ValuationEqZeroOfRootOfSUnitRatioStatement
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RealPack
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.TopReadAt
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FormsAtZero
@@ -47,7 +47,7 @@ theorem rel_of_links_alt : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi
     rw [e, ← mul_assoc, inv_mul_cancel₀ hr.ne', one_mul]
   · refine ⟨fun t => div_ne_zero (mul_ne_zero (hTop t) hs) (hBot t), ?_⟩
     intro w k hk
-    refine GlobalTheory.T.valuation_eq_zero_of_rootOfSUnitRatio D.what₂.LL D.what₂.embLL w (_root_.GlobalTheory.MiTop.qPrime_alt W (W.Q.Rl.mu w)) _ _ (hRat (n + 1) hN (W.Q.Rl.mu w)).2
+    refine _root_.GlobalTheory.Fam.vw_eq_zero_of_unitRatio D.what₂.LL D.what₂.embLL w (_root_.GlobalTheory.MiTop.qPrime_alt W (W.Q.Rl.mu w)) _ _ (hRat (n + 1) hN (W.Q.Rl.mu w)).2
       (fun p hp hb => hServ w p hp hb) k ?_
     rw [hk]
     have a1 := hTop (W.Q.Rl.mu w)

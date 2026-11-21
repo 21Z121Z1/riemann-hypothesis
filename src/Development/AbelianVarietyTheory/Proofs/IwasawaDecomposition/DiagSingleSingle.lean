@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Foundations.RootOfUnityEightQMemCoeffGaloisSubfield
 import Formalism.LocalRingCardinality.SpanPowerMembership.Spaces
 import Formalism.SharpRestriction.InertJacobiLevels.HostFam
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NegOneNormFromCmFieldFiniteAdelesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NegOneNormFromCmFieldFiniteAdeles
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasSignatureDiagonalSgn
 
 noncomputable section
@@ -305,7 +305,7 @@ def spacesStd : Spaces R F E where
     change R.rankY 0 - (R.k + j - 1) = R.m - j
     omega
   baseSpace_isometric_graded := fun j _ _ => by
-    obtain ⟨y, hy⟩ := GlobalTheory.T.neg_one_norm_from_cmField_finiteAdeles F E cm
+    obtain ⟨y, hy⟩ := _root_.GlobalTheory.neg_one_norm_finiteAdele F E cm
     obtain ⟨g, hg⟩ := sign_congr (Formalism.UG.sigR cm.sig (FiniteAdeleRing (𝓞 F) F))
       (Formalism.UG.inclE (FiniteAdeleRing (𝓞 F) F)) y hy star_isIntegral (R.rankY 0) (cut _ (pY R 0))
       (cut _ (R.k + j - 1))

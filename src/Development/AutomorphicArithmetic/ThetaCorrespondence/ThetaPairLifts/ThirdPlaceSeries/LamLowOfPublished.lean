@@ -17,13 +17,15 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.TupleReadBaseTupleE
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
 import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 import Development.AbelianVarietyTheory.Definitions.Divisors.RealisedChainTorusEq
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftEigenvalueLowerBoundOfWeakCharacterisationStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatesOfRationalThetaLiftFromCharacterisatioStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftEigenvalueLowerBoundOfWeakCharacterisation
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatesOfRationalThetaLiftFromCharacterisatio
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitenessInputsRealData
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPlacesPrimeToHostBaseTupleStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPartBaseLinksOfPrimitiveRowsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HookLogSumSubSizeTermLeLowerBoundStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftWeightSizesEventuallyAlongFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPlacesPrimeToHostBaseTuple
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitPartBaseLinksOfPrimitiveRows
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HookLogSumSubSizeTermLeLowerBound
+import Formalism.LocalToGlobal.Divisibility.RecBridgeNum
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftWeightSizesEventuallyAlongFamily
+import Formalism.SharpRestriction.ParConsts
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.FinitenessInputsRealDataThree
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.Realised
 
@@ -44,14 +46,14 @@ theorem lamLow_of_hypotheses_alt_alt : GlobalTheory.Published.CuspRapidDecay →
   intro h1 h2 h3 h4 h5 h6 h7
   refine (Formalism.MainNotions.DIV.closed_Csz_ge FamHyp 8).imp ?_
   intro eps Fm CH _ h8
-  obtain ⟨x0, hx0⟩ := GlobalTheory.T.thetaLift_weightSizes_eventually_along_family eps Fm
+  obtain ⟨x0, hx0⟩ := _root_.GlobalTheory.LowRow.weightSizes_along eps Fm
   refine ⟨x0, fun x hx hle i p hp C => ?_⟩
   have hS : ∀ j, Sizes (Fm.D x i) j (Fm.L x i).sc.b := hx0 x hx hle i
   refine _root_.GlobalTheory.T.finiteness_inputs_real_data_three_alt h1 h2 h3 h4 h5 h6 h7 (T := p.T) (R := p.R) (F := p.F) p.κ p.v₀ p.O 1 (Fm.L x i).sc.b C CH
     hp.ok hp.sep p.charW hp.exAt hp.prim p.phsOne p.stdChar p.fw p.bar hp.ioExt p.pins (fun j => (hp.oneMap j).1) p.phase hS
     ?_ ?_ ⟨_, ⟨Fm.params x hx i⟩⟩ p.stdV
   · intro j
-    have := GlobalTheory.T.hookLogSum_sub_sizeTerm_le_lowerBound (Fm.D x i) (Fm.L x i) p.Del p.h0 Fm.Csz j h8 (hS j)
+    have := _root_.GlobalTheory.LowMainTerm.main_le_lowB (Fm.D x i) (Fm.L x i) p.Del p.h0 Fm.Csz j h8 (hS j)
     exact this
   · intro j
     show _ - C * 0 ≤ _

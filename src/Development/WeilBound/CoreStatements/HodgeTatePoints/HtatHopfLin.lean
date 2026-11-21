@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUnitFormLocalizationEtaleNbhd
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasValues
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueTangentDualNumberStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsUniqueTangentDualNumber
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHopfMul
 open CategoryTheory Limits AlgebraicGeometry MonoidalCategory CartesianMonoidalCategory MonObj TensorProduct
 open GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.BT
@@ -160,7 +160,7 @@ theorem char_on_tangent_linear : ∀ (R : Type) [CommRing R] [IsDomain R] (T : T
   intro R _ _ T _ _ Γ S G _ _ x N i h L _ _ M χ s hs
   have hex : ∀ e : L, ∃ v, IsTan (Ideal.Quotient.mk (Ideal.span {(N : R)})) Γ i M e v ∧
       ∀ w, IsTan (Ideal.Quotient.mk (Ideal.span {(N : R)})) Γ i M e w → w = v :=
-    fun e => GlobalTheory.T.existsUnique_tangent_dual_number R T Γ S G x N i h L M e
+    fun e => _root_.GlobalTheory.CompanionTheory.Ar.BT.TanLift.tangent_mod_torsion R T Γ S G x N i h L M e
   choose v hv hu using hex
   have hfst : ∀ e, (valAt (v e) ⊤ le_top s).fst = 1 := fun e => fst_valAt h χ s hs (hv e)
   refine ⟨{ toFun := fun e => (valAt (v e) ⊤ le_top s).snd, map_add' := ?_, map_smul' := ?_ }, ?_⟩

@@ -2,8 +2,10 @@ import Mathlib
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsGenericFlag
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.Metric
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalizationStatement
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GermGenPtInjectiveRangeRegAtStatement
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RegAtIffChartLocalization
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt
+import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GermGenPtInjectiveRangeRegAt
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCptGen
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.Semi GlobalTheory.CompanionTheory.Ar
 
@@ -71,7 +73,7 @@ theorem exists_chart (hT : CoordTie o ξ x) {c : κ} (hc : x c ≠ 0) :
     exact h2
   have hUq : ∀ q : Cpt ξ, q.1 ∈ U ↔ InChart ξ x c q := fun q =>
     ⟨fun hq => by obtain ⟨_, h2⟩ := (hmem q.1).1 hq; exact h2, fun hq => (hmem q.1).2 ⟨q.2, hq⟩⟩
-  obtain ⟨hinj, hran⟩ := GlobalTheory.T.germ_genPt_injective_range_regAt X Ω ξ hT.gen U h hsp
+  obtain ⟨hinj, hran⟩ := _root_.GlobalTheory.CompanionTheory.Ar.regAt_sections X Ω ξ hT.gen U h hsp
   refine ⟨U, h, hU, hUq, hsp, hinj, fun a => ?_⟩
   rw [hT.ring c hc a]
   refine Iff.trans ?_ (hran a).symm
@@ -100,7 +102,7 @@ theorem exists_point (hT : CoordTie o ξ x) {c : κ} (hc : x c ≠ 0) (P : Ideal
 
 theorem exists_den (hT : CoordTie o ξ x) {c : κ} {p : Cpt ξ} (hp : InChart ξ x c p) {a : Ω}
     (ha : a ∈ regAt ξ p) : ∃ s ∈ chartRing o x c, unitAt ξ p s ∧ s * a ∈ chartRing o x c :=
-  (GlobalTheory.T.regAt_iff_chart_localization X Ω ξ o κ x hT c p hp a).1 ha
+  (_root_.GlobalTheory.CompanionTheory.Ar.regAt_iff_exists_chart_fraction X Ω ξ o κ x hT c p hp a).1 ha
 
 variable {E : Type} [AddCommGroup E] [Module Ω E]
 

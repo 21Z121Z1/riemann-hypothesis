@@ -5,13 +5,34 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsFiniteDime
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KroneckerCharacterFrameFirst
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MeanLogSupNormLowerBoundCmFrameNonvanishingStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MeanLogSupNormLowerBoundCmFrameNonvanishing
+import Development.AbelianVarietyTheory.Definitions.CMLattices.IntegralOf
+import Development.AbelianVarietyTheory.Statements.PrincipalLattices.ExistsPrincipalLattice
+import Formalism.LocalToGlobal.ProjectiveLattices.L2DefiniteCuspForms
+import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NonemptyUnitAt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.NonvanishingNearMaximum
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.IsotropicCoefficientSplitting
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.OneLeAbsNormOfLeOne
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ProdMulLeDetIdeal
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ValuationLeOfEqAlgebraMap
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.AbsNormSpanGalois
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.DetValuationLeOne
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsEvalNeZeroOfTotalDegreeLt
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.ExistsMonicIrreducibleCardGt
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.FiniteDetAddSmulOneEqZero
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
+import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.HermitianFormGramBlockBasis
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
 import Formalism.LocalToGlobal.ProjectiveLattices.FreeBridge
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxSlopeSqLeOfNoShortVectorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxSlopeSqLeOfNoShortVector
+import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart
+import Formalism.MeanHeightDescent.DivisionInequalityWithCovolume
+import Formalism.MeanHeightDescent.AverageDegreeBounds.GlobalBoundRefinements
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSpecialUnitary
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormOneTorusClassNumberBoundProofStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormOneTorusClassNumberBoundProof
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DefiniteBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MassBoundOfTamagawaUnitary
 import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
 import Formalism.LocalRingCardinality.DataParamsT
@@ -77,7 +98,7 @@ theorem _root_.UpperTheory.Lit.Tam.tamagawa_local_volume_factor : True → Globa
     unfold Formalism.BasicNotions.Ranks.r
     omega
   have hcusp := abelian₂.holSub_SS siegelSpaceAlgebra_holds (U σ).X la hP
-  have hdat := fun k => GlobalTheory.T.exists_selfDual_data_transvection_principal_level D j H Dw l Xo c U dict hLw σ hσ k
+  have hdat := fun k => _root_.GlobalTheory.LevGeo.exists_dataX_transv D j H Dw l Xo c U dict hLw σ hσ k
   choose Xx hXx hg hΛ hL' M' hM' hk hT using hdat
   have hfs : ∀ k, ∃ x0, IsOrth ((U σ).X k) x0 ∧ ∃ FF, IsFundSet ((U σ).X k) x0 FF := fun k => by
     obtain ⟨x0, ho, FF, hF, -⟩ := GlobalTheory.DriftCovolume.finMu_unconditional D.R.r ((U σ).X k)
@@ -104,7 +125,7 @@ theorem _root_.UpperTheory.Lit.Tam.tamagawa_local_volume_factor : True → Globa
     simp only [hΦdef]
     rw [pnorm_piecewise_eq _ _ _ hu, pnorm_piecewise_eq _ _ _ hu',
       FrameDegreeData.pnorm_rmul ((U σ).X k) (la k) (P k) (hsec k).2.1 u hu b hb]
-  obtain ⟨hS0, hStop, hΦeq⟩ := GlobalTheory.T.adelicProbability_eq_normalised_fundamentalSets D j H Dw l Xo c U dict hLw σ hσ x0 FF (fun k => ⟨ho k, hF k⟩)
+  obtain ⟨hS0, hStop, hΦeq⟩ := _root_.GlobalTheory.LevGeo.adelicProb_mul_volFund D j H Dw l Xo c U dict hLw σ hσ x0 FF (fun k => ⟨ho k, hF k⟩)
   have heq := hΦeq Φ hΦm hΦΓ hΦB
   have hms := MainStatements.Tam.Plug.comp D j H Dw l Xo c U dict hLw σ hσ x0 FF (fun k => ⟨ho k, hF k⟩)
 
@@ -179,7 +200,7 @@ theorem _root_.UpperTheory.Lit.Tam.finrank_cuspW_le_supConst2 : True → GlobalT
   rw [← hw_def]
   have hw : 0 < w := by rw [hw_def]; positivity
   have hspread : ∀ k, (∑ τ, ((U σ).X k).spread (laU (U σ) a n k) τ) ≤ w := fun k =>
-    (GlobalTheory.T.sum_weightSpread_le_exponentNorm_add D j H Dw l Xo c U dict hL σ hσ a n k).trans (by rw [hw_def]; linarith)
+    (_root_.GlobalTheory.LamSpread.sum_spread_laU_le D j H Dw l Xo c U dict hL σ hσ a n k).trans (by rw [hw_def]; linarith)
   have hχ := hL.chiTriv σ hσ a n hDom
   have hsup := UpperTheory.Lit.Tam.tamagawa_local_volume_factor hM hT D j H Dw l Xo c U dict hL σ hσ (laU (U σ) a n) w hw hspread hχ
   obtain ⟨Cw, hCw⟩ : ∃ Cw, Cw = cuspW Xo c U (wtZ a n) := ⟨_, rfl⟩
@@ -270,9 +291,9 @@ theorem _root_.UpperTheory.Lit.Tam.petersson_norm_tamagawa_formula : True → Gl
   intro hM hT D j H Dw l Xo c U dict hL _ χ hχ a n hD F hF hF0
   have hFc : (F : Rul Xo c) ∈ cusp Xo c U a n := cuspW_wtZ (Xo := Xo) (c := c) (U := U) a n ▸ F.2
   have hF0' : (F : Rul Xo c) ≠ 0 := fun h => hF0 (Subtype.ext h)
-  have hsup := GlobalTheory.T.meanLogSupNorm_lowerBound_principalLevel D j H Dw l Xo c U dict hL χ hχ a n hD _ hFc hF hF0'
+  have hsup := _root_.GlobalTheory.lamSup_of_laws D j H Dw l Xo c U dict hL χ hχ a n hD _ hFc hF hF0'
   have hsl := UpperTheory.Lit.Tam.tamagawa_local_volume_factor hM hT D j H Dw l Xo c U dict hL
-  have hsp := GlobalTheory.T.sum_weightSpread_le_exponentNorm_add D j H Dw l Xo c U dict hL
+  have hsp := _root_.GlobalTheory.LamSpread.sum_spread_laU_le D j H Dw l Xo c U dict hL
   have hdef : Formalism.L2.Pj.SupDef Xo c U :=
     (Formalism.L2.PjFree.supDef_ofPj U).1 (GlobalTheory.supNorm_definite_on_cusp _ H Dw l Xo c _ _ hL.unf)
   set x := xiR D
@@ -343,7 +364,7 @@ theorem _root_.UpperTheory.Lit.Tam.petersson_norm_local_factor_eq : True → Glo
     rw [normW, normW, petW, petW, GlobalTheory.CompHt.goodOf_conj σ]
   have hP := UpperTheory.Lit.Tam.petersson_norm_tamagawa_formula hMass hTor D j H Dw l Xo c U dict hL χ hχ a n hD
   have hR := UpperTheory.Lit.Tam.finrank_cuspW_le_supConst2 hMass hTor D j H Dw l Xo c U dict hL a n hD
-  have hS := GlobalTheory.T.maxSlope_sq_le_of_no_short_vector c.F (cuspW Xo c U (wtZ a n)) (normW U (xiR D) (fun _ => D.sp.W j) dict (wtZ a n))
+  have hS := _root_.GlobalTheory.SlopeMink.slopeMax_sq_le_of_no_short c.F (cuspW Xo c U (wtZ a n)) (normW U (xiR D) (fun _ => D.sp.W j) dict (wtZ a n))
     (latW U (wtZ a n)) _ hG.1 hj hG.2.1 h0 (fun F hF hF0 => (hP F hF hF0).2)
   haveI := hR.1
   obtain ⟨F, hF, hF0⟩ := Submodule.exists_mem_ne_zero_of_ne_bot h0
@@ -365,7 +386,7 @@ open scoped ENNReal
 namespace GlobalTheory
 
 theorem _root_.UpperTheory.Lit.Tam.holSub_supE_sq_le_supConst2_mul_petE_sq : True → ∀ (D : D7) (j : ℕ) (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host D.host.E) (Dw : Datum H) (l : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Level H) (Xo : Moduli Dw l) (c : Coeff l) (U : ∀ σ : c.F →+* ℂ, Unf Xo c σ D.R.r) (dict : ∀ σ : c.F →+* ℂ, GA D (D.sp.W j) → Σ k, Frame ((U σ).X k).Ψ D.R.r), Laws D j Xo c U dict → ∀ σ, GoodEmb c σ → ∀ (la : ∀ k, Wt ((U σ).X k).Ψ D.R.r) (w : ℝ), 0 < w → (∀ k, (∑ τ, ((U σ).X k).spread (la k) τ) ≤ w) → (∀ k, ∀ γ ∈ ((U σ).X k).Γ, ((U σ).X k).χ (la k) γ = 1) → ∀ P ∈ holSub (U σ).X la, supE (U σ).X la P ^ 2 ≤ ENNReal.ofReal (MainStatements.Tam.Plug.supConst2 D.host.E D.R.r D.host.d l.M w) * petE (D.sp.W j) (dict σ) (muQ1 (D.sp.W j)) la P ^ 2 := fun hT =>
-  UpperTheory.Lit.Tam.tamagawa_local_volume_factor trivial GlobalTheory.T.normOneTorusClassNumberBound_proof
+  UpperTheory.Lit.Tam.tamagawa_local_volume_factor trivial _root_.GlobalTheory.UCls.torusBound
 
 end GlobalTheory
 end
@@ -377,7 +398,7 @@ open scoped ENNReal
 namespace GlobalTheory
 
 theorem _root_.UpperTheory.Lit.Tam.tamagawa_measure_comparison : True → ∀ (D : D7) (j : ℕ) (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host D.host.E) (Dw : Datum H) (l : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Level H) (Xo : Moduli Dw l) (c : Coeff l) (U : ∀ σ : c.F →+* ℂ, Unf Xo c σ D.R.r) (dict : ∀ σ : c.F →+* ℂ, GA D (D.sp.W j) → Σ k, Frame ((U σ).X k).Ψ D.R.r), Laws D j Xo c U dict → ∀ [NeZero H.d] (χ : DirichletCharacter ℂ H.d), GlobalTheory.IsKroneckerChar χ → ∀ (a : (D.host.E →+* ℂ) × ℕ → ℕ) (n : ℕ), Dom a n → GoodW U (xiR D) (fun _ => D.sp.W j) dict (wtZ a n) → latW U (wtZ a n) ≠ ⊥ → slopeMax_sq (normW U (xiR D) (fun _ => D.sp.W j) dict (wtZ a n)) (latW U (wtZ a n)) ≤ 2 * lamSup D.host.E D.R.r Dw.q D.host.d l.M (GlobalTheory.CM.logOm D.host.E χ).re ((absA Dw a : ℕ) : ℝ) ((fdeg D.host.E * D.R.r * n : ℕ) : ℝ) + 2 * Real.log (MainStatements.Tam.Plug.supConst2 D.host.E D.R.r D.host.d l.M (((absA Dw a : ℕ) : ℝ) + ((fdeg D.host.E * D.R.r * n : ℕ) : ℝ) + 1)) + Real.log |(discr c.F : ℝ)| / (Module.finrank ℚ c.F : ℝ) := fun hT =>
-  UpperTheory.Lit.Tam.petersson_norm_local_factor_eq trivial GlobalTheory.T.normOneTorusClassNumberBound_proof
+  UpperTheory.Lit.Tam.petersson_norm_local_factor_eq trivial _root_.GlobalTheory.UCls.torusBound
 
 end GlobalTheory
 end
@@ -564,7 +585,7 @@ theorem _root_.UpperTheory.Lit.Tam.slopeMax_sq_latW_le_pow_mul (h6 : True) {PP A
   have hn : normW (p.T.U ((i : ℕ) + 1)) (xiR D) (fun _ => D.sp.W ((i : ℕ) + 1)) (GlobalTheory.LevGeo.coreDict p.T.toCore ((i : ℕ) + 1))
       (Gk p i) = nrmK p.fw i := by
     funext σ f; exact hnorm _ σ f
-  obtain ⟨_, χ, hχ, hOm, -, -⟩ := GlobalTheory.T.logPeriod_eq_kroneckerCharacter_logPeriod_of_host D L p.T.Q p.fw.laws.pins.1 p.Del p.h0
+  obtain ⟨_, χ, hχ, hOm, -, -⟩ := _root_.GlobalTheory.CovTop.Period.period_eq_kronecker D L p.T.Q p.fw.laws.pins.1 p.Del p.h0
   have hgood : GoodW (p.T.U ((i : ℕ) + 1)) (xiR D) (fun _ => D.sp.W ((i : ℕ) + 1))
       (GlobalTheory.LevGeo.coreDict p.T.toCore ((i : ℕ) + 1)) (Gk p i) := ⟨by rw [hn]; exact hG.2.2.2.1, hG.2.2.2.2⟩
   have main := UpperTheory.Lit.Tam.tamagawa_measure_comparison h6 D _ _ _ _ _ _ _ _ hLaws χ hχ (wtA (p.κ i)) (p.κ i).n hW.dom hgood (latW_ne_bot p i hG)
@@ -621,7 +642,7 @@ theorem _root_.UpperTheory.Lit.Tam.slopeMax_sq_latW_le_pow_mul (h6 : True) {PP A
   have hl3 : Real.log (D.host.d : ℝ) ≤ 4 * (2 * L.sc.L) := by linarith [hN.logd]
   have n1 := (MainStatements.Tam.Plug.supremum_constant_log_bound_alt D.host.E D.R.r D.host.d _ (s + t + 1) (2 * L.sc.L) hr2 hd hM (by linarith) (by linarith)
     hl1 hlM hl2 hl3 hlw).2
-  have n2 := GlobalTheory.T.meanLogSupNormLoss_le_linear_in_weight D.host.E D.R.r (dat p i).q D.host.d _ (ofRecord D L p.Del p.h0).logOm s t (2 * L.sc.L) (by omega) hd hM
+  have n2 := _root_.GlobalTheory.LamSize.lamSup_le D.host.E D.R.r (dat p i).q D.host.d _ (ofRecord D L p.Del p.h0).logOm s t (2 * L.sc.L) (by omega) hd hM
     (by linarith) hs0 ht0 hl1 hlM hl2 hl3 hlw
   have n3 := (log_rd_le_fieldSz _).trans (hR.core_size_le p (by linarith))
   rw [hfd] at n1 n2

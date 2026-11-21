@@ -42,11 +42,12 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ContinuousAtDetR
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviModulusOneLinearReductiveExpMulExp
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.IwaAll
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IwasawaUnitaryUpperTriangularStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlagOrthonormalAdaptedBasisStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsotropicHyperbolicComplementStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryExtensionOfBlockStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieAlgebraStarClosedBracketStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLiftCommutingInvolutionStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FlagOrthonormalAdaptedBasis
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicSplitTorusIwasawaUnitaryGroup
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsotropicHyperbolicComplement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryExtensionOfBlock
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LieAlgebraStarClosedBracket
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnitaryLiftCommutingInvolution
 
 open Matrix
 
@@ -101,7 +102,7 @@ theorem iwaOn_leviOne : ∀ {n a : ℕ} (ε : Fin n → Bool) (j : Fin a → ℕ
       PositivityTheory.Tls2.Iua.IwaOn (GlobalTheory.RealInd.mats (GlobalTheory.RealInd.leviOne ε W)) := by
   intro n a ε j W hW _
   obtain ⟨h0, hm, -, hiso⟩ := hW
-  obtain ⟨D, C, τ, hC, hτ, hτa, hfl⟩ := GlobalTheory.T.flag_orthonormal_adapted_basis W h0 hm
+  obtain ⟨D, C, τ, hC, hτ, hτa, hfl⟩ := _root_.GlobalTheory.CompanionTheory.Flag.exists_flag_frame W h0 hm
   have hJ : Formalism.REAL.Jm ε * Formalism.REAL.Jm ε = 1 := PI.UpqRep.Jm_mul_self ε
   have hJh : (Formalism.REAL.Jm ε)ᴴ = Formalism.REAL.Jm ε := PI.UpqRep.Jm_conjTranspose ε
   set J := Formalism.REAL.Jm ε with hJdef
@@ -118,9 +119,9 @@ theorem iwaOn_leviOne : ∀ {n a : ℕ} (ε : Fin n → Bool) (j : Fin a → ℕ
     rw [star_mulVec, ← dotProduct_mulVec, Matrix.mulVec_mulVec, Matrix.mulVec_mulVec, e,
       Matrix.mulVec_single_one, single_one_dotProduct] at this
     simpa using this
-  obtain ⟨m, R, ε', hR, hJR, hCR, hsum⟩ := GlobalTheory.T.isotropic_hyperbolic_complement ε C hC hCJ
+  obtain ⟨m, R, ε', hR, hJR, hCR, hsum⟩ := _root_.GlobalTheory.CompanionTheory.Dblock.CompFrame.exists_comp_frame ε C hC hCJ
   obtain ⟨U₀, hU₀, hI⟩ := CompanionTheory.D.gk.admitted.iwasawa_decomposition_unitary_group m ε'
-  obtain ⟨U, hU, hTri⟩ := GlobalTheory.T.unitary_extension_of_block J (Formalism.REAL.Jm ε') C R hJ hJh hC hCJ hR hJR hCR hsum U₀ hU₀
+  obtain ⟨U, hU, hTri⟩ := _root_.GlobalTheory.CompanionTheory.WittFrame.unitary_adapted_triangularises J (Formalism.REAL.Jm ε') C R hJ hJh hC hCJ hR hJR hCR hsum U₀ hU₀
   refine ⟨U, hU, fun g hg => ?_⟩
   obtain ⟨hgU, hgk, hgd⟩ := GlobalTheory.LeviPolar.mem_mats_leviOne.1 hg
   have hgU' : gᴴ * J * g = J := hgU
@@ -151,10 +152,10 @@ theorem iwaOn_leviOne : ∀ {n a : ℕ} (ε : Fin n → Bool) (j : Fin a → ℕ
     have h3 := congrFun h2 c
     rw [Matrix.mulVec_single_one] at h3
     simpa [hv0 c (by simpa using hdc)] using h3
-  obtain ⟨hu, hgJC, hgR, hgRU⟩ := GlobalTheory.T.parabolic_stabilizer_block_unit J (Formalism.REAL.Jm ε') C R hJ hJh hC hR hJR hCR hsum g h hgU' hgC hgC'
+  obtain ⟨hu, hgJC, hgR, hgRU⟩ := _root_.GlobalTheory.CompanionTheory.UnitaryBlock.block_diagonal_of_keeps_frame J (Formalism.REAL.Jm ε') C R hJ hJh hC hR hJR hCR hsum g h hgU' hgC hgC'
   obtain ⟨k₀, hk₀, b, hb, hbT, hk₀T, hk₀T'⟩ := block_qr τ hτ h hu htri
   obtain ⟨kR, ⟨hkR, hkRJ⟩, sR, hsR, hgks, hsT⟩ := hI (Rᴴ * g * R) hgRU
-  obtain ⟨k, hk, hkJ, hkC, hkC', hkR', hkJC⟩ := GlobalTheory.T.unitary_lift_commuting_involution J (Formalism.REAL.Jm ε') C R hJ hJh hC hCJ hR hJR hCR hsum
+  obtain ⟨k, hk, hkJ, hkC, hkC', hkR', hkJC⟩ := _root_.GlobalTheory.CompanionTheory.UnitaryAssembly.exists_unitary_assemble J (Formalism.REAL.Jm ε') C R hJ hJh hC hCJ hR hJR hCR hsum
     k₀ hk₀ kR hkR hkRJ
   have hk1 : k * kᴴ = 1 := Matrix.mem_unitaryGroup_iff.1 hk
   have hk2 : kᴴ * k = 1 := Matrix.mem_unitaryGroup_iff'.1 hk

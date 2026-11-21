@@ -40,9 +40,13 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeilRepresentationSixth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorTorusAction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientConjugateThetaForm
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilMaximalCompactFockSubstitutionCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeilMaximalCompactFockSubstitutionCharacter
+import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
+import Formalism.LocalRingCardinality.DataExtra
+import Formalism.LocalRingCardinality.DataTies
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsHolRepOfIsTau
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtensionOfLowSmoothLines
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalVectorsHolomorphicModelUniqueUpToPhaseStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtremalVectorsHolomorphicModelUniqueUpToPhase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateWeilRepresentationFifth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsFockVacAtOfIsThetaAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelExtensionFirst
@@ -86,9 +90,8 @@ import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SplitOffBadOfSup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdentityClassLatticeEqSelfDualFrameLattice
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.IsSelfDualCLatFrame
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointSmulIntegralOfFourierCoeffNeZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubIdempotentSmulMemLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentSumConjSumOrthogonalDvdStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubIdempotentSmulMemLattice
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentSumConjSumOrthogonalDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdelicMatrixMemLatticeOfColumnsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartConjMem
@@ -102,9 +105,12 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.ConstantUniqueOfEqP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaFormSignExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SignForWeilModelFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSpanDetSetIffAdelicLatticeValuationStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumeratorIdealOfAntiInvariantDivisorStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicCharacterEqProdUnramifiedValueZpowStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceIdempotentComponentsConjValuationStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumeratorIdealOfAntiInvariantDivisor
+import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdelicCharacterEqProdUnramifiedValueZpow
+import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
+import Formalism.LocalToGlobal.ProjectiveLattices.FamilyUniformisationBasePointOrthogonalBis
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceIdempotentComponentsConjValuation
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotents
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBaseChangeFiniteAdeleRingEquiv
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFinitePlaceIdempotentBaseChangeAdeles
@@ -126,7 +132,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LatticeMarki
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreDictionaryGoodAtGoodEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicShapeIntegralWeightGoodEmbedding
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ActLevAndActBC
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MarkingRootsDilationCoprimeLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MarkingRootsDilationCoprimeLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelsWeightCompat
 
 section
@@ -665,7 +671,7 @@ theorem deltaConj_extremal_weight_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fi
       simp [θs, e]
   have e1 : ∀ ρ, (R.BV i ρ)⁻¹ * compAt R.θ ρ (Formalism.L2.Theta.mt (Vc D i) 1) * R.BV i ρ = 1 := fun ρ => by
     rw [show compAt R.θ ρ (Formalism.L2.Theta.mt (Vc D i) 1) = 1 from GlobalTheory.PointAtPlaceHom.infMat_one _ _, Matrix.mul_one, hBi]
-  have key := (GlobalTheory.T.weil_maximalCompact_fock_substitution_character D R.ψ R.θ _ _ _ _ _ _ M (R.BV i) hω hθ (D.sp.V_sig _) (D.sp.W_sig _) hB _ _ hpq hε
+  have key := (_root_.GlobalTheory.FockCompactAction.om_pureTensorO_eq_fact D R.ψ R.θ _ _ _ _ _ _ M (R.BV i) hω hθ (D.sp.V_sig _) (D.sp.W_sig _) hB _ _ hpq hε
     _ _ ha hb x₁ x₂ x₃ hx₁ hx₂ hx₃ _ hth hv 1 (one_mem _) g a1 (fun ρ => hg ρ ▸ diag_mem _)).2
     (delta (pW D i) (qW D i) (fun ρ => aPl D i (pW D i ρ) (lab σ ρ)) (fun ρ => aMi D i (pW D i ρ) (qW D i ρ) (lab σ ρ)))
   simp only [hg, e1] at key
@@ -711,7 +717,7 @@ theorem ioExt_conj_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype G] {Pl0 T
   have hvec := GlobalTheory.GalOne.VecConj.vec_conj_ofFive R F hR i σ μ' η' ω f₀ f hC
   have hinj := hvec.2.2.2.1 _ hvec.2.2.1
   let pt := pureTensorO R.ψ R.θ (Vc D i) (Wc D i) (fun _ => 1) (cart (R.MW i σ)) (R.BV i) (onb (R.MW i σ)) f
-  exact exists_unit_of_isIoW R.θ (R.MW i σ) (GlobalTheory.HolLowOnce.lowSm_and_lowIrr D _ _ _ hH).1 (GlobalTheory.T.extremal_vectors_holomorphic_model_unique_up_to_phase D _ _ _ hH) c ω pt
+  exact exists_unit_of_isIoW R.θ (R.MW i σ) (GlobalTheory.HolLowOnce.lowSm_and_lowIrr D _ _ _ hH).1 (_root_.GlobalTheory.HolLowOnce.extLine_of_holShape D _ _ _ hH) c ω pt
     (deltaConj i σ) (fun h => deltaConj_ne i σ (hinj (h.trans (map_zero pt).symm)))
     (GlobalTheory.GalOne.MinorWeight.deltaConj_extremal_weight_ofFive R F hR i σ μ' η' ω f₀ f hC) io hio v hv
 
@@ -1300,8 +1306,8 @@ theorem omega_level_conjVec_ofFive : ∀ {D : D7} {G : Type} [Group G] [Fintype 
   have hmu : ∀ x, R.toLevCh.mu A.μ0 ((i : ℕ) + 1) x = R.mu0 ((i : ℕ) + 1) x := fun x => by
     show R.mu0 ((i : ℕ) + 1) x * R.xi A.μ0 x = _
     rw [hxi, MonoidHom.one_apply, mul_one]
-  refine (om_vec hW ⟨_, hη⟩ (GlobalTheory.T.isSelfDualCoordLattice_of_selfDualFrame D _ _ _ _ (hL.βV i))
-    (GlobalTheory.T.isSelfDualCoordLattice_of_selfDualFrame D _ _ _ _ (hL.βW i)) (hL.βV i).choose_spec.1 (hL.βW i).choose_spec.1 hv).elim fun P h1 =>
+  refine (om_vec hW ⟨_, hη⟩ (_root_.GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ (hL.βV i))
+    (_root_.GlobalTheory.SDFrameLattice.isSelfDualC_of_isSDFrame D _ _ _ _ (hL.βW i)) (hL.βV i).choose_spec.1 (hL.βW i).choose_spec.1 hv).elim fun P h1 =>
       h1.elim fun e h2 => h2.elim fun hee h3 => ?_
   have he := h3.2.1
   have hP : ∀ PP, PP ∈ P ↔ PP ∈ R.toLevCh.Pg ∨ PP ∈ R.toLevCh.Q A.μ0 := fun PP => by
@@ -1674,7 +1680,7 @@ theorem moved_datum_ofFive' : ∀ (D : D7) (G : Type) [Group G] [Fintype G] (Pl0
       obtain ⟨cQ, hcQ⟩ := D.host.toHostRaw.two_dvd_QS
       rw [hcQ, mul_assoc, mul_assoc, Nat.cast_mul, Nat.cast_ofNat]; exact Ideal.mul_mem_right _ _ h2)⟩)
     bad N h k Λ mk (fun PP hPP => hbad PP (Finset.mem_union.1 hPP)) hh hΛ hT hL hmk Y hY q
-    (fun s hs => GlobalTheory.T.levelPoint_smul_integral_of_fourierCoeff_ne_zero D G Pl0 T0 A Ks R i H Dw ι t l φ hφ q hq s fun PP hPP => hs PP (Finset.mem_union.2 hPP))
+    (fun s hs => _root_.GlobalTheory.HatInt.smul_eq_of_hatC_ne_zero D G Pl0 T0 A Ks R i H Dw ι t l φ hφ q hq s fun PP hPP => hs PP (Finset.mem_union.2 hPP))
     (γ q) (u q) (hu q).1 (hu q).2
   have h3 : heisO R.ψ (Vc D i) (Wc D i) (2 • actO (Vc D i) (Wc D i) h k c) (R.ωP i t (h, k) (R.vacP i)) =
       R.ωP i t (h, k) (R.vacP i) := by
@@ -2462,7 +2468,7 @@ theorem adelic_value_ofFive (hR : GlobalTheory.Core5 R F) (tie : FWTie T R κ v�
   have h9 : gphi X Dc.bas (T.Q.H.w0 : D.host.E) (O.La () j).La X.Λ v (fun q => σ' (O.w () j q)) (fun q => Y j (m • q)) =
       gphi X Dc.bas (T.Q.H.w0 : D.host.E) (O.La () j).La X.Λ v (fun q => inC O.c' (O.w () j q)) (Y j) := by
     rw [funext (hw j)]
-    exact ((GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ (O.dδ ()).l₂ _ _ X.Λ mk₂ m hm).2 0 (Y j)).2 g X Dc.bas _ _ v
+    exact ((_root_.GlobalTheory.DilateLevel.dilate _ _ _ (O.dδ ()).l₂ _ _ X.Λ mk₂ m hm).2 0 (Y j)).2 g X Dc.bas _ _ v
       fun q => inC O.c' (O.w () j q)
   rw [hQ, h9]
   simp only [map_mul] at h7 ⊢
@@ -2502,15 +2508,15 @@ theorem geometric_value_ofFive (hR : GlobalTheory.Core5 R F) (tie : FWTie T R κ
   have hj : InR D ((i : ℕ) + 1) := ⟨Nat.le_add_left _ _, i.2⟩
   obtain ⟨hlev, hA₂, hnab⟩ := hP.cov ()
   obtain ⟨him, -, hov, -⟩ := (markAd_laws D _ _ _ _ (rank_Wc i) _ hemb _ _ hlat T.Q.l).2 mk hmk hma
-  have him₂ := (GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ _ _ 0 _ _ n hn₂).1
+  have him₂ := (_root_.GlobalTheory.DilateLevel.dilate _ _ _ _ _ 0 _ _ n hn₂).1
     ((markAd_laws D _ _ _ _ (rank_Wc i) _ hemb _ _ hlat (O.dδ ()).l₂).2 mk₂ hmk₂ hma₂).1
-  have him₁ := (GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ _ _ 0 _ _ n hn₁).1 him
+  have him₁ := (_root_.GlobalTheory.DilateLevel.dilate _ _ _ _ _ 0 _ _ n hn₁).1 him
   have hov' := markOver_zsmul (hov _ hlev.1.1 (Ideal.map_mono hlev.1.2.1) mk₂ hmk₂ hma₂) n
   obtain ⟨y', hy', hev⟩ : ∃ y' : FrPt (T.Q.Xo ((i : ℕ) + 1)) O.c' ℂ, levR (O.lev z, LinearMap.id) y y' ∧
       evR _ O.c' (actLev O.c' O.lev2 z f) y = evR _ O.c' f y' :=
     ⟨_, mvPt_spec hP.act.2.total z _,
       evalAt_actL hP.act.2 (GlobalTheory.TransferCompare.evalWD_framed _ _) frMap_trans_id z hf.1 _⟩
-  obtain ⟨A', hrd', hmk''⟩ := GlobalTheory.T.analyticFibre_description_levelMove_marking_comp _ _ _ _ _ O.c' _ _ _ Dc.bas Dc.idx Dc.e _ _ Dc.sympl hdom hsd (O.lev z) _ y' hy' B
+  obtain ⟨A', hrd', hmk''⟩ := _root_.GlobalTheory.Dict.FibreMove.anFib_levR_id _ _ _ _ _ O.c' _ _ _ Dc.bas Dc.idx Dc.e _ _ Dc.sympl hdom hsd (O.lev z) _ y' hy' B
   have hA' : A'.Marked (n • mk) :=
     marked_of_congr A' (hmk'' mk hB) fun a ha => by
       obtain ⟨b, hb⟩ := hzl a ha
@@ -2591,7 +2597,7 @@ theorem identity_of_frConst_ofFive (hR : GlobalTheory.Core5 R F) (tie : FWTie T 
   have h8 := fun k => (DualMark.dual_marking _ _ _ (O.dδ ()).l₂ _ _ _ _ _ hsd (isMark_sign (h7.2 mk₂ hmk₂.1 hmk₂.2).1 ε)
     (Complex.isPrimitiveRoot_exp _ hM₂.ne')).2.2.2.2 (Vc D i).rank (O.Nc () k) ((hP.reps ()).1 k).2.2.2.1.1.pos
   have hY := fun k => (h8 k).choose_spec
-  have hY' := fun k => ((GlobalTheory.T.marking_roots_dilation_coprime_level _ _ _ (O.dδ ()).l₂ _ _ _ ((ε : ℤ) • mk₂) m hm.1).2 _ _).1
+  have hY' := fun k => ((_root_.GlobalTheory.DilateLevel.dilate _ _ _ (O.dδ ()).l₂ _ _ _ ((ε : ℤ) • mk₂) m hm.1).2 _ _).1
     (fun a => zsmul_mem (hmk₂.1 a) _) (hY k)
   simp only [smul_smul] at hY'
   have hAo : AlgOver T.Q.c O.c' O.hle ℂ := fun _ => rfl

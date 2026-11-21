@@ -1,7 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KernelJets
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RenameUpperLeftCornerMemWeylLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeylRowActionMemWeylLatticeSquareStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RenameUpperLeftCornerMemWeylLattice
+import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
+import Formalism.SatakeDualWeyl.KpqSubgroupCompact
+import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeylRowActionMemWeylLatticeSquare
 import Formalism.LocalRingCardinality.CoeNeZeroOfNotMem
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DualWeylEqSpanColProd
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPowEqSpanNormOne
@@ -56,7 +59,7 @@ theorem coeff_subGen_mem {ν : Fin a → ℕ} {ν' : Fin b → ℕ} (hν : Antit
     (hf : f ∈ weyl ℤ a a le_rfl ν) (α : Fin b × Fin a →₀ ℕ) : (subGen hab f).coeff α ∈ weyl ℤ b b le_rfl ν' := by
   let S := MvPolynomial (Fin b × Fin a) ℤ
   let M : Matrix (Fin b) (Fin b) S := fun i β => if h : (i : ℕ) < a then X (β, ⟨i, h⟩) else 0
-  have h1 := GlobalTheory.T.rename_upperLeftCorner_mem_weylLattice ℤ a b hab ν ν' h f hf
+  have h1 := _root_.GlobalTheory.weyl_rename_castLE_mem ℤ a b hab ν ν' h f hf
   have hmap : ∀ g ∈ weyl ℤ b b le_rfl ν', map (algebraMap ℤ S) g ∈ weyl S b b le_rfl ν' := by
     intro g hg
     induction hg using Submodule.span_induction with
@@ -68,7 +71,7 @@ theorem coeff_subGen_mem {ν : Fin a → ℕ} {ν' : Fin b → ℕ} (hν : Antit
     | zero => rw [map_zero]; exact zero_mem _
     | add x y _ _ hx hy => rw [map_add]; exact add_mem hx hy
     | smul c x _ hx => rw [map_zsmul]; exact zsmul_mem hx c
-  have h2 := GlobalTheory.T.weylRowAction_mem_weylLattice_square S b ν' hν M _ (hmap _ h1)
+  have h2 := _root_.GlobalTheory.WeylRowAll.rowAct_mem_weyl_square S b ν' hν M _ (hmap _ h1)
   let ψ : MvPolynomial (Fin b × Fin b) S →+* MvPolynomial (Fin b × Fin a) (MvPolynomial (Fin b × Fin b) ℤ) :=
     eval₂Hom (map (algebraMap ℤ _)) fun v => C (X v)
   have hψ : ∀ g : MvPolynomial (Fin b × Fin b) ℤ, ψ (map (algebraMap ℤ S) g) = C g := fun g => by

@@ -1,6 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisOfPolarized
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ElementaryDivisorsMulMinusculeTopTermStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ElementaryDivisorsMulMinusculeTopTerm
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.HoweUnram
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsStepWeil
+import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 
 noncomputable section
 
@@ -232,7 +236,7 @@ theorem gen_nat (h0 : ϖ ≠ 0) (hu : IsUnifV E P ϖ) (A : Submodule ℂ (GL (Fi
   obtain ⟨d', rfl⟩ : ∃ d' : Fin n → ℕ, a = fun i => (d' i : ℤ) :=
     ⟨fun i => (a i).toNat, funext fun i => (Int.toNat_of_nonneg (ha0 i)).symm⟩
   have hd' : Antitone d' := fun a b hab => Int.ofNat_le.1 (haa hab)
-  rcases GlobalTheory.T.elementaryDivisors_mul_minuscule_top_term (P.adicCompletion E) ϖ n hu d k hd hdk x y
+  rcases _root_.GlobalTheory.Hk3.MinuscTop.elemDiv_mul_minuscule (P.adicCompletion E) ϖ n hu d k hd hdk x y
     (flip (by simp [tor_val]) hx) (flip (by rw [tor_val]; congr 1; funext i; split_ifs <;> simp) hy) d' hd'
     (flip (by simp [tor_val]) hxy) with rfl | ⟨h1, h2⟩
   · exact Or.inl hxy

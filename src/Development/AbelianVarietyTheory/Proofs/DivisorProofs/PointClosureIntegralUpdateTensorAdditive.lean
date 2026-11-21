@@ -27,9 +27,9 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralAdditiveInFactorStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralAdditiveInFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormSignedPartMeasureEqOfIsometricProjStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothWeightedLineBundleIsometryCalculusStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothWeightedLineBundleIsometryCalculus
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -66,7 +66,7 @@ open GlobalTheory.Mix.CycAdd in
 theorem GlobalTheory.Mix.cycInt_update_tens : ∀ (k : Type) [CommRing k] (X : Scheme.{0}) (p : X ⟶ Sp k) (σ : k →+* ℂ), IsProjOver p → ∀ (D : ℕ) (L : Fin D → MLine p σ) (i : Fin D) (A B : MLine p σ) (f : CxPts p σ → ℝ) (z : X), CycIntg (Function.update L i A) f z → CycIntg (Function.update L i B) f z → cycInt (Function.update L i (A.tens B)) f z = cycInt (Function.update L i A) f z + cycInt (Function.update L i B) f z := by
   intro k _ X p σ hp D L i A B f z hA hB
   have hq := isProjOver_clos hp z
-  have hI := GlobalTheory.T.smoothWeightedLineBundle_isometry_calculus k X (clos z) p (closι z ≫ p) σ (closι z) rfl
+  have hI := _root_.GlobalTheory.Mix.isom_calculus k X (clos z) p (closι z ≫ p) σ (closι z) rfl
   have hparts : ∀ ε, part (fun j => (Function.update L i (A.tens B) j).pull (closι z) rfl) ε =
       part (Function.update (fun j => (L j).pull (closι z) rfl) i
         ((A.pull (closι z) rfl).tens (B.pull (closι z) rfl))) ε := by
@@ -74,9 +74,9 @@ theorem GlobalTheory.Mix.cycInt_update_tens : ∀ (k : Type) [CommRing k] (X : S
     refine GlobalTheory.T.mixedChernFormSignedPartMeasure_eq_of_isometric_projOver k (clos z) (closι z ≫ p) σ hq D _ _ (fun j => ?_) ε
     by_cases hj : j = i
     · subst hj; simpa using hI.2.2.1 A B
-    · simpa [Function.update_of_ne hj] using (GlobalTheory.T.smoothWeightedLineBundle_isometry_calculus k (clos z) (clos z) (closι z ≫ p) (closι z ≫ p) σ (𝟙 _) (Category.id_comp _)).1 ((L j).pull (closι z) rfl)
+    · simpa [Function.update_of_ne hj] using (_root_.GlobalTheory.Mix.isom_calculus k (clos z) (clos z) (closι z ≫ p) (closι z ≫ p) σ (𝟙 _) (Category.id_comp _)).1 ((L j).pull (closι z) rfl)
   unfold CycIntg at hA hB
   unfold cycInt
   rw [int_congr hparts, pull_update, pull_update]
   rw [pull_update] at hA hB
-  exact (GlobalTheory.T.mixedChernIntegral_additive_in_factor k (clos z) (closι z ≫ p) σ hq D _ i _ _ _ hA hB).2
+  exact (_root_.GlobalTheory.Mix.int_update_tens k (clos z) (closι z ≫ p) σ hq D _ i _ _ _ hA hB).2

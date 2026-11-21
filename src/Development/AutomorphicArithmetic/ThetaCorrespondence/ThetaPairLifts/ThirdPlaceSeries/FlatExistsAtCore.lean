@@ -8,8 +8,9 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.Genera
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.MemRangeOfIsAlgebraicRatFun
 import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
 import Formalism.LocalToGlobal.ProjectiveLattices.ModelAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyDefiniteRationalPointDataComponentStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeDualDetLieEqNegFlatSectionDegreeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyDefiniteRationalPointDataComponent
+import Formalism.LocalToGlobal.ProjectiveLattices.LiftLaSpec
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeDualDetLieEqNegFlatSectionDegree
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FlatSecInhabited
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentPointLastIndex
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LiftLambdaBound
@@ -28,8 +29,8 @@ theorem flatExistsAt_core_alt : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D
   obtain ⟨hDC, -, -, -⟩ := _root_.GlobalTheory.T.finite_nonempty_components_and_dict_mem_dom p i PP A M hR hi hG hW hH hF
   intro Z τ
   refine ⟨GlobalTheory.FlatLine.Definite.nonempty_flatSec _ _ hDC.q hDC.p hDC.good hDC.unf hDC.geo Z τ, fun s => ?_⟩
-  obtain ⟨P⟩ := GlobalTheory.T.nonempty_definiteRationalPointData_component _ _ _ _ _ _ _ _ _ hDC Z
-  have h1 := (GlobalTheory.T.degree_dualDetLie_eq_neg_flatSection_degree _ _ _ _ _ _ _ _ _ hDC Z P).1 τ s
+  obtain ⟨P⟩ := _root_.GlobalTheory.DefPt.PtExist.main _ _ _ _ _ _ _ _ _ hDC Z
+  have h1 := (_root_.GlobalTheory.DefPt.degLie_eq_neg_deg_flat _ _ _ _ _ _ _ _ _ hDC Z P).1 τ s
   have h2 := _root_.GlobalTheory.T.degLie_eq_neg_flatDegVal_at_last_index p i PP A M hR hi hG hW hH hF Z P τ
   rw [neg_neg]
   linarith

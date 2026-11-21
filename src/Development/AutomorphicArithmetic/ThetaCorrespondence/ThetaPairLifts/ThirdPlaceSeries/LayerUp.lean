@@ -33,7 +33,7 @@ theorem exists_kept_nChoice_thData_upL : ∀ (hL : _root_.UpperTheory.Zero.LLC.R
     subst e1
     obtain ⟨a', hA⟩ := (mvOf w Z S' N h).exists_at_alt c.a
     refine Exists.elim (_root_.GlobalTheory.LayerMove.exists_nonempty_nMore_upL hL K B f T w Z Wt S' N h nch xd p0 t p0' t' hs hg
-      (GlobalTheory.T.rowReadings_sameRows_identify_definiteForms K B f T w Z Wt S' N h p0 t p0' t' hs) (_root_.GlobalTheory.T.geo_heq_geoHalf_of_same K B f T w Z Wt S' N h nch p0 t p0' t' hs hg)
+      (_root_.GlobalTheory.Mem.R3.Rw.JmtUp.jMt_rowsSame K B f T w Z Wt S' N h p0 t p0' t' hs) (_root_.GlobalTheory.T.geo_heq_geoHalf_of_same K B f T w Z Wt S' N h nch p0 t p0' t' hs hg)
       (tp' := (by with_unfolding_all exact (((mvOf w Z S' N h).tp n.tp) :))) c.a ((by with_unfolding_all exact (a' :))) ((by with_unfolding_all exact (hA :))) c.row e) fun r' hr => hr.elim fun e' => ?_
     have hq : a'.Pq = (by with_unfolding_all exact (c.a.Pq :)) := eq_of_heq ((by with_unfolding_all exact (hA.2.1 :)))
     have hsel : Set.range a'.Pq = (by with_unfolding_all exact ((Set.range w.I.sel) :)) := (congrArg Set.range hq).trans ((by with_unfolding_all exact (c.sel :)))

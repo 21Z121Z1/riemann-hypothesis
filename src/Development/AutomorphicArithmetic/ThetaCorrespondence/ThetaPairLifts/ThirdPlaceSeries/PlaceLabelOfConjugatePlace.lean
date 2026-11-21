@@ -64,7 +64,7 @@ theorem GlobalTheory.LabConjPlace.locComp_of_isRc_classMapD_cenLoc : ∀ (hPr : 
     exact Units.ext (by simpa using this)
   have hval := (WD.lab_lpOfChar_eq_iff HS (ha.smooth hχ) hwild u).mp hlab'
   have hμw : μH.loc (D.naut.plGw k v) = (S i _ hw).mu := by
-    obtain ⟨ξ₀, -, huniq, -⟩ := GlobalTheory.T.heckeChar_localComponent_exists_unique_unitary D.host.E μH (D.naut.plGw k v)
+    obtain ⟨ξ₀, -, huniq, -⟩ := _root_.GlobalTheory.HeckeComp.main D.host.E μH (D.naut.plGw k v)
     exact (huniq _ ⟨ParLaws.isSmoothChar_loc _ _, fun x => rfl⟩).trans (huniq _ (hS.mu i _ hw jj hjj)).symm
   obtain ⟨c, hcE, hcA, hcγ⟩ := hγ2 k v w' hc
   set τc : D.host.E ≃+* D.host.E := (D.host.conj : D.host.E ≃+* D.host.E) with hτc
@@ -81,7 +81,7 @@ theorem GlobalTheory.LabConjPlace.locComp_of_isRc_classMapD_cenLoc : ∀ (hPr : 
     ⟨GlobalTheory.TameLabels.normV_eq_of_split (D.host.g_prime k) (D.nd.g_split k) hw'over, hIne', HS.2.2⟩
   have hcsd : IsCSD D.host μH := by
     rw [hμH, ← P.chr.muC i jj hjj]; exact (P.chr.csd _).1 (D.naut.muC_csd i)
-  obtain ⟨ic, hic, hicE, hicμ⟩ := GlobalTheory.T.conjSelfDual_heckeChar_conjugatePlace_component_inv D.host μH hcsd _ w' hc
+  obtain ⟨ic, hic, hicE, hicμ⟩ := _root_.GlobalTheory.ConjLocCsd.main D.host μH hcsd _ w' hc
   have htr : ∀ (σ : Weil (D.nd.plOm.2 (D.naut.plGw k v))) (σ' : Weil (D.nd.plOm.2 w')),
       (∀ z, c ((σ : Formalism.ConjugateSelfDual.G D.host.E D.nd.Om) z) = (σ' : Formalism.ConjugateSelfDual.G D.host.E D.nd.Om) (c z)) →
       μH.loc w' (a' σ') = ((S i _ hw).mu (a σ))⁻¹ := by

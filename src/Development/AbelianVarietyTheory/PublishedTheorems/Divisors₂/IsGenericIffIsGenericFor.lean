@@ -125,14 +125,14 @@ open GlobalTheory.CuspGeneric GlobalTheory.CuspRep.Generic in
 
 theorem cuspidalGeneric_holds : CuspidalGeneric := by
   intro E _ _ _ a _ P w ψ' hc' h1'
-  obtain ⟨ψ, hψ⟩ := GlobalTheory.T.exists_standardAdelicAddChar E
+  obtain ⟨ψ, hψ⟩ := _root_.GlobalTheory.CuspGeneric.exists_stdPsi E
   have hg : ∀ v : P.V, Good ψ (a - 1) v.1.1 := fun v => GlobalTheory.T.isMirabolicWhittakerStage_of_isCuspForm E a ψ v.1 (P.cusp _ v.2)
   have h0 : a - 1 < a ∨ a - 1 = 0 := by omega
   have := Submodule.nontrivial_iff_ne_bot.2 P.ne_bot
   obtain ⟨v₀, hv₀⟩ := exists_ne (0 : P.V)
   have hv1 : v₀.1.1 ≠ 0 := fun h => hv₀ (Subtype.ext (Subtype.ext h))
   obtain ⟨g₀, hg₀⟩ := Function.ne_iff.1 ((whit_good hψ (a - 1) h0 (hg v₀)).2 hv1)
-  obtain ⟨h, gw, e, hc⟩ := GlobalTheory.T.exists_split_adelicMatrix_localComponent E a w g₀
+  obtain ⟨h, gw, e, hc⟩ := _root_.GlobalTheory.CuspGeneric.exists_split_loc E a w g₀
   have hrt : ∀ u (v : P.V) x, whit ψ (a - 1) (P.locRep w u v).1.1 x =
       whit ψ (a - 1) v.1.1 (x * finGL E a (locGL E a w u)) := fun u v x => whit_rt _ _ _ _
   let l : P.V →ₗ[ℂ] ℂ :=
@@ -146,7 +146,7 @@ theorem cuspidalGeneric_holds : CuspidalGeneric := by
   have hgen : GlobalTheory.Whittaker.IsGeneric (locPsi hψ w) (P.locRep w) := by
     refine ⟨l, fun e => hne (by rw [e]; rfl), fun u hu v => ?_⟩
     obtain ⟨u1, u2⟩ := (GlobalTheory.SmGL.mem_unipB _).1 hu
-    obtain ⟨t1, t2, t3⟩ := GlobalTheory.T.localUpperUnipotent_adelic_upperUnipotent E a w u u1 u2
+    obtain ⟨t1, t2, t3⟩ := _root_.GlobalTheory.CuspRep.locTri_adelic E a w u u1 u2
     have hlw := (whit_good hψ (a - 1) h0 (hg v)).1.law
     have := GlobalTheory.T.whittakerLaw_upperTriangularUnipotent_adelic E a ψ _ (fun k hk => hlw k hk) _ t1 t2 h
     rw [hl, hrt, hc, this, t3, superDiag_eq_sum_pairs]

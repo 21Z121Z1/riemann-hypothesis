@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MonoSpMapRingOfIntegersAlt
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MajorantHarnackHolomorphicHalfPlaneStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MajorantHarnackHolomorphicHalfPlane
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.MajLactRmul
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.ArakelovInstances.PointwiseNormInvarianceHolds
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.ProdCastLESucc
@@ -208,7 +208,7 @@ theorem maj_strip {T : ℝ} {x : ℂ → Frame X.Ψ N} (hx : DifferentiableOn �
   have h0 : T < w0.im := by simp [hw0]
   have hm : 0 ≤ X.maj (x w0) τ u := ReciprocityTheory.ChartRestriction.G.FD.MajorantConjugateTransfer.maj_nonneg X (hd w0 h0) τ u
   refine ⟨1 + (2 + M ^ 2 + (1 + |T + 1|) ^ 2) * X.maj (x w0) τ u, by positivity, fun w h1 h2 h3 => ?_⟩
-  have h := GlobalTheory.T.majorant_harnack_holomorphic_half_plane E N X T x hx hd w0 w h0 (by linarith) τ u
+  have h := _root_.GlobalTheory.maj_harnack E N X T x hx hd w0 w h0 (by linarith) τ u
   have e0 : w0.im - T = 1 := by simp [hw0]
   rw [e0, one_mul] at h
   have e1 : ‖w0 - w‖ ^ 2 = w.re ^ 2 + (T + 1 - w.im) ^ 2 := by

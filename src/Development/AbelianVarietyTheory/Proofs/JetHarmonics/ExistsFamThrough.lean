@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsRepresentat
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBasisOfEq
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.FamEqOnClassOfEq
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.LinOfSval
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsBoxFamilyMultilinearMapStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsBoxFamilyMultilinearMap
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsBoxFamilyPowerDegree
 
 set_option autoImplicit false

@@ -27,7 +27,7 @@ theorem GlobalTheory.MiTop.linkComm_of_laws_alt : ∀ {D : D7} {L : SizeData₂ 
     intro η
     obtain ⟨α⟩ := hne W.P.A3.A.μ0
     have hR := (ht W.P.A3.A.μ0).2.2.2.2
-    refine GlobalTheory.T.levelPrime_operators_stepZero_scale_norms D u (_root_.GlobalTheory.MiTop.formsAtZero W u) W.Q.Rl.θ hc.inf hU (hc.x 0 (Nat.zero_le _)).cpt k ι o.p o.I o.q o.χ o.hχ (o.β 0) (o.Q 0)
+    refine _root_.GlobalTheory.RamStepZero.opsStepZero_norm D u (_root_.GlobalTheory.MiTop.formsAtZero W u) W.Q.Rl.θ hc.inf hU (hc.x 0 (Nat.zero_le _)).cpt k ι o.p o.I o.q o.χ o.hχ (o.β 0) (o.Q 0)
       hnd hinj (fun φ y i => ?_) η (fun φ => ?_)
     · have := (hR.ram 0 (Nat.zero_le _) _ (h0 _ φ).1 α y).2 i
       rw [(h0 _ φ).2 α y] at this
@@ -58,6 +58,6 @@ theorem GlobalTheory.MiTop.linkComm_of_laws_alt : ∀ {D : D7} {L : SizeData₂ 
     refine Complex.ofReal_ne_zero.2 (Real.rpow_pos_of_pos ?_ _).ne'
     exact Nat.cast_pos.2 Nat.card_pos
   · obtain ⟨t1, t2, t3, t4, t5⟩ := ht t
-    rw [GlobalTheory.T.seeSawKernelChain_levelPrimeOperator_to_step_zero D f.c k ι o (f.t t) ε (S₀ t) t1 t2 t3 t4 t5 n h _ (h0 t φ).1 F,
+    rw [_root_.GlobalTheory.SeeSaw.commX_of_laws D f.c k ι o (f.t t) ε (S₀ t) t1 t2 t3 t4 t5 n h _ (h0 t φ).1 F,
       LComm.iterS_comm (fun η φ => S η φ) (S₀ t) (_root_.GlobalTheory.MiTop.col0_alt f t) (hS0 t) ε n φ, hA']
 end

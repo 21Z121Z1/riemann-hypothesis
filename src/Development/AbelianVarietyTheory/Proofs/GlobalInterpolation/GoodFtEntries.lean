@@ -23,7 +23,8 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIs
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowTruthOfLabelTie
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasLabelOfIsCuspOf
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ConstructedSpectralObjectsIrreducibilityConditioStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ConstructedSpectralObjectsIrreducibilityConditio
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RelabelledWeight
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsTerAlt
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.L2 Formalism.L2.Host GlobalTheory.EX GlobalTheory.EX.OB GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Mem.Top.Bl GlobalTheory.Fc GlobalTheory.HeightCounting

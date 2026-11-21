@@ -13,7 +13,7 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinCells
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinRationalPoints
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousHalfTr
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCell
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFourierUnfoldingStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FundamentalDomainFourierUnfolding
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetCellInvariantUnipotentStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BigCellCosetsHermitianParamStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCharacterCellFactorizationStatement
@@ -186,7 +186,7 @@ theorem unfold : PositivityTheory.PfSWUS.Unfold := by
     refine ⟨.of_nonneg_of_le (fun _ => norm_nonneg _) hb2 hs2, ?_⟩
     refine (Summable.tsum_le_tsum hb2 (.of_nonneg_of_le (fun _ => norm_nonneg _) hb2 hs2) hs2).trans_eq ?_
     exact (τ ⟨γ, hγ⟩).symm.tsum_eq u
-  have := GlobalTheory.T.fundamental_domain_fourier_unfolding lam (ratHerm D n) 𝓖 hFD hvol cosetCell (⊥ : Submodule D.host.E (Fin n → D.host.E)) F
+  have := _root_.GlobalTheory.CompanionTheory.UnfoldAbs.unfold_abs lam (ratHerm D n) 𝓖 hFD hvol cosetCell (⊥ : Submodule D.host.E (Fin n → D.host.E)) F
     (fun b => sect ω H Φ z (w * nb b * g)) ch
     (fun q => Continuous.aestronglyMeasurable (hcont.comp (continuous_const.mul (hcn.mul continuous_const))))
     hchc.aestronglyMeasurable

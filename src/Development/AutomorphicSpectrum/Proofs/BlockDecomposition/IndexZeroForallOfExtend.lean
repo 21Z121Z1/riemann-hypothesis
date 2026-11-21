@@ -12,8 +12,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCocha
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.CapOComp
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.PerfectoidPullbacks.LocalisationLadders.CriterionTruncation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiltrationCriticalComparisonMapStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameFormRespectsFiltrationStatement
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedCohomologyOfFrameStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameFormRespectsFiltration
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedCohomologyOfFrame
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameFormRestrictionCocycleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FrameFormCoboundaryRelationStatement
 
@@ -30,7 +30,7 @@ def fc {Fil : ℤ → IdF Φ.A} (hF : IsFil Φ Fil) {d : ℕ} (E : Frame Φ d) (
     (hr : r = j + q) (I : Fin j → Fin d) (x : Φ.A.obj E.D) (hx : x ∈ (Fil q).S E.D) : CH.Cn (gr Fil r) j :=
   fun s => sqMk (Fil r) (Fil (r + 1)) (E.form σ I x s) (by
     subst hr
-    have := GlobalTheory.T.frame_form_respects_filtration hF E σ j q I x hx s
+    have := _root_.GlobalTheory.CompanionTheory.FormMem.form_mem hF E σ j q I x hx s
     simpa using this)
 
 def fs {Fil : ℤ → IdF Φ.A} (hF : IsFil Φ Fil) {d : ℕ} (E : Frame Φ d) (σ : ∀ T : C, E.D ⟶ T) {j q : ℕ} {r : ℤ}
@@ -119,7 +119,7 @@ theorem mem_y (hF : IsFil Φ Fil) {j q : ℕ} {r : ℤ} (hr : r = (j + 1 : ℕ) 
     have : (Fil ((1 : ℕ) : ℤ)).S (Q.P (s.obj (Fin.last j))) = Φ.J.S _ := by simpa using hF.one _
     rw [this]
     exact Ideal.add_mem _ (Q.X_mem _) (Φ.J.map_mem _ (E.mem 0 _ _))
-  have h2 := (Fil _).map_mem (Q.j (s.obj (Fin.last j))) (GlobalTheory.T.frame_form_respects_filtration hF E σ j q I x hx s)
+  have h2 := (Fil _).map_mem (Q.j (s.obj (Fin.last j))) (_root_.GlobalTheory.CompanionTheory.FormMem.form_mem hF E σ j q I x hx s)
   have h3 := hF.mul 1 (j + q) _ h1 h2
   have e : (((1 + (j + q) : ℕ)) : ℤ) = r := by subst hr; push_cast; ring
   rwa [e] at h3
@@ -371,7 +371,7 @@ theorem fc_zero (hF : IsFil Φ Fil) {d : ℕ} (E : Frame Φ d) (σ : ∀ T : C, 
   funext s
   refine Subtype.ext ((Ideal.Quotient.eq_zero_iff_mem).2 ?_)
   have h' : x ∈ (Fil ((q + 1 : ℕ) : ℤ)).S E.D := by simpa using h
-  have := GlobalTheory.T.frame_form_respects_filtration hF E σ j (q + 1) I x h' s
+  have := _root_.GlobalTheory.CompanionTheory.FormMem.form_mem hF E σ j (q + 1) I x h' s
   have e : ((j + (q + 1) : ℕ) : ℤ) = r + 1 := by subst hr; push_cast; ring
   rwa [e] at this
 
@@ -555,7 +555,7 @@ theorem st : ∀ d, St d := by
   induction d with
   | zero =>
     intro R _ C _ Φ Q Fil hF E σ hc r hQ j
-    exact GlobalTheory.T.graded_cohomology_of_frame hF E σ r j
+    exact _root_.GlobalTheory.CompanionTheory.LocGr.gr_zero hF E σ r j
   | succ d ih => exact step ih
 
 theorem loc_gr : ∀ {R : Type} [CommRing R] {C : Type 1} [Category.{0} C] {Φ : PDF R C} (Q : Poly Φ) {Fil : ℤ → IdF Φ.A}

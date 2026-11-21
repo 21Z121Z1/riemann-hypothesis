@@ -19,7 +19,7 @@ theorem geoSt_of_pageSt_alt : _root_.GlobalTheory.BigOn.PageStatement → _root_
   obtain ⟨CK, xa, HR⟩ := runsHold_of_ties
   obtain ⟨xb, HL⟩ := leaves_sup_span_data CK
   obtain ⟨Cd, HD⟩ := leafDepth_all_record
-  refine ((hP.and (GlobalTheory.T.runNumericalConditions_hold_along_family xa)).and (GlobalTheory.T.runNumericalConditions_hold_along_family xb)).imp fun Fm CH _ H => ?_
+  refine ((hP.and (_root_.GlobalTheory.OntoNum.pageNum_along xa)).and (_root_.GlobalTheory.OntoNum.pageNum_along xb)).imp fun Fm CH _ H => ?_
   obtain ⟨⟨⟨c0, hc0⟩, ⟨ya, hya⟩⟩, ⟨yb, hyb⟩⟩ := H
   refine ⟨max c0 Cd, fun c hc hbad => ?_⟩
   obtain ⟨x0, hx0⟩ := hc0 c ((le_max_left _ _).trans hc) hbad

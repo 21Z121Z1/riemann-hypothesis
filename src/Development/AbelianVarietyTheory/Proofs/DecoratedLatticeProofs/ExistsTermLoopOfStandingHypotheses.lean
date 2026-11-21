@@ -49,12 +49,12 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLat
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.BesselOfWPf
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LocFactorAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RMeasExAll
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolumeUnipotentIntegralNormalisedHaarStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalBesselJFactorAllWordsOfGapStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolumeUnipotentIntegralNormalisedHaar
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalBesselJFactorAllWordsOfGap
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselMultiplicityOneLargeGapAndWhittakerBessel
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoefWeightedLocUncond
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InstFactDecLow
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabiliserCovolumeRelevantTermLeHeightPowStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabiliserCovolumeRelevantTermLeHeightPow
 
 open scoped Classical
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.S Formalism.L2.SG.HidaSetting Formalism.L2.SG.Full Formalism.L2.SG.RowsConc Formalism.L2.SG.PackageTie2 Formalism.L2.SG.TermTieOf GlobalTheory.Core.Deg
@@ -77,7 +77,7 @@ theorem GlobalTheory.Core.Deg.exists_termLoop_of_standingHypotheses : ∀ (D : D
   have hSS : ∀ τ, GoodS D (lamD D τ) (Formalism.L2.SG.LocWSOf.locS hB u u τ) := fun τ =>
     Formalism.L2.SG.LocWSOf.goodS_of hB u u τ (Formalism.L2.SG.Pf.goodSRest_all hG hT.dsig_tie hB u u τ)
   have hwin : normWin D large₂ 1 1 := Formalism.L2.SG.Pf.LoopBTheta.normWin_one large₂ zero_le_one
-  have hCF : Formalism.L2.SG.Pf.LoopBCovN.CovNFormula := GlobalTheory.T.covolume_unipotentIntegral_normalisedHaar
+  have hCF : Formalism.L2.SG.Pf.LoopBCovN.CovNFormula := _root_.GlobalTheory.CovNFormulaPf.main
   have hup : Formalism.L2.SG.Pf.LoopBCovN.eN D * Real.log (2 * D.host.v) ≤
       1 * (D.R.m : ℝ) ^ 2 * Real.log large₂.sc.b := by
     have h2v : 2 * D.host.v = D.host.rdE := by unfold Formalism.BasicNotions.Host.v; ring
@@ -113,7 +113,7 @@ theorem GlobalTheory.Core.Deg.exists_termLoop_of_standingHypotheses : ∀ (D : D
         (Formalism.L2.SG.LoopsTies.aOfW X Y hF hI hWD) (Formalism.L2.SG.LoopsTies.hvOfW X Y hF hI hWD) large₂ 1 C hB u u hwin hW hSS
         (GlobalTheory.RMeasAll.rMeasEx_all D X Y hF hI C u u hW)
         (Formalism.L2.SG.Pf.LoopBPin.pinAll_holds u u) (Formalism.L2.SG.Pf.LoopBPin.covolPos_holds u u)
-        (GlobalTheory.T.localBesselJFactor_all_words_of_gap D X Y hF hI C hB u u hG)
+        (_root_.GlobalTheory.JFactTie.jFactN_all D X Y hF hI C hB u u hG)
         (Formalism.L2.SG.Pf.LoopBCovN.covN_pos hCF one_pos C u u)
         (Formalism.L2.SG.Pf.LoopBCovN.covWinN_of hCF C large₂ zero_le_one hup u u) hwin), ?_, fun t => rfl⟩
   exact ⟨Formalism.L2.SG.LoopsFinal.jtPin_of _ hI _ _ _ (Formalism.L2.SG.Pf.FibreCounting.AmpFibreConst_holds Y),
@@ -126,7 +126,7 @@ namespace GlobalTheory.Core.Deg
 
 theorem tieOn_singleton_uncond : ∀ c : ℝ, TieOn {c} := by
   intro c Cg cb Cu cT CT
-  obtain ⟨C, hCv⟩ := GlobalTheory.T.stabiliserCovolume_relevantTerm_le_heightPow Cg cb Cu cT CT c 1
+  obtain ⟨C, hCv⟩ := _root_.GlobalTheory.LoopVol.volRC_le Cg cb Cu cT CT c 1
   refine ⟨C, 72, ?_⟩
   intro C0 hC0 C' Cl hC' hCl D large₂ X Y hF hI u hT hH hCT
   have hC0' : C0 = c := hC0

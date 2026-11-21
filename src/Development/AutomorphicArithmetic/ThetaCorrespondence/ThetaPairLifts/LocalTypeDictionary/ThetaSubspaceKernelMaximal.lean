@@ -12,26 +12,30 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateUnitaryAde
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjUInvMemGfC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodSplitPlaceTranslationActsThroughWeil
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParamSubgroupTransposeGramLieAt
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfThetaDistributionHeisenbergTranslatesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqZeroOfThetaDistributionHeisenbergTranslates
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TransposeGramUnitarySurjectiveFinitePlaceSupportStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactUnitaryPreservesPolynomialFockStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CompactUnitaryPreservesPolynomialFock
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinPartNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftLeftInvariant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedFiniteMapsRestriction
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelStandardCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelStandardCharacter
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermitianSkewModelGood
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParameterSubgroupTransposeGramRealPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParameterSubgroupTransposeGramRealPlace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDOne
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneParamSubgroupTransposeGramUnitaryDecomposesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OneParamSubgroupTransposeGramUnitaryDecomposes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealmapsIsomorphism
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerSkewPlaneUniqueDual
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineOneParameterStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineOneParameter
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilCompositionLines
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingMellin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolynomialDatumActionOfPairStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingInnerProduct
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingSwap
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedPlacesFiniteSetStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnramifiedPlacesFiniteSet
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolMatchFiniteSetVacuum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsAdelicUnitaryProdLocalPointsMulLatticeStabStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ArchimedeanSupportedSmulTransposeGramFiniteSubOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealLinePolynomialEquivariance
@@ -110,7 +114,7 @@ theorem GlobalTheory.SquareAgree.kernel_maximal_theta_subspace : _root_.GlobalTh
   have inj : ∀ ΦD ∈ GlobalTheory.WeilM.schA D.host.F (Fin W.rank × Fin (W.rank + W₁.rank)),
       ∀ ΨD ∈ GlobalTheory.WeilM.schA D.host.F (Fin W.rank × Fin (W.rank + W₁.rank)), dF ΦD = dF ΨD → ΦD = ΨD := by
     intro ΦD h ΨD h' he
-    have h0 := GlobalTheory.T.eq_zero_of_thetaDistribution_heisenbergTranslates Γ.M Bs.ψ hstd (ΦD - ΨD) (sub_mem h h') (fun u => by
+    have h0 := _root_.GlobalTheory.ThetaSeparates.eq_zero_of_thetaSum_rho Γ.M Bs.ψ hstd (ΦD - ΨD) (sub_mem h h') (fun u => by
       have := congrFun (dF_sub ΦD h ΨD h') (cA u)
       rw [he, sub_self] at this
       have e2 : dF (ΦD - ΨD) (cA u) = GlobalTheory.WeilM.thetaSum D.host.F (Γ.M.co.rho Bs.ψ u (ΦD - ΨD)) := by

@@ -15,7 +15,9 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSBes
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StarSmulVec
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingLevelsAndStepsHaarMeasuresExist
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DetNeZeroOfHasSignature
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsThetaLiftSpacesPositiveIndexWithLineNormsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsThetaLiftSpacesPositiveIndexWithLineNorms
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.LineLatAt
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.BaseMatrixGlApply
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GramEqOfInst
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Lev Formalism.IndefR.Mult Formalism.IndefR.Datum MeasureTheory IsDedekindDomain NumberField Matrix
@@ -166,7 +168,7 @@ theorem exists_yRat : ∀ {D : D7} {L : SizeData₂ D} {hT : GatTies D} {Gi : Fo
     fun k => by rw [hz k, one_mul]
   have hB0 := sbes_norm B hP.bot.idE hz1
 
-  have hI := GlobalTheory.T.exists_thetaLiftSpaces_positiveIndex_with_lineNorms D u (fun j hj => D.X_posDef j hj)
+  have hI := _root_.GlobalTheory.SeeSaw.YRat.spaces_of_index D u (fun j hj => D.X_posDef j hj)
   have hbes : ∀ j ρ (h : j + 2 * ρ + 2 = D.R.m), ∃ b : BesAt (Yc D j) (D.sp.X j) ρ,
       star b.ζ ⬝ᵥ b.L.gram *ᵥ b.ζ * (D.host.xi0 * star D.host.xi0) ^ (j / 2) = -(((D.mem u).A.T : ℕ) : D.host.E) := by
     intro j ρ h

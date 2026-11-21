@@ -30,7 +30,7 @@ theorem unit_vector_line_conjugate_alt : GlobalTheory.Published.DiscreteSeriesCl
   have hMt : Matches W.S.X W.Q.instEq (_root_.GlobalTheory.MiTop.rJ_z W) (_root_.GlobalTheory.MiTop.realCharacter W) (show GA D (D.sp.Y 0) from W.Q.tS) := by
     have := hM 1 (one_mem _) (Subgroup.one_mem _)
     rwa [one_mul] at this
-  obtain ⟨⟨j, hj, hjT⟩, -⟩ := GlobalTheory.T.evalAll_and_norm_eq_one_of_conjVec hDS hCR D W.S.X W.Q.instEq W.Q.Rl.θ _ (W.Q.Rl.MY 0) (_root_.GlobalTheory.MiTop.rJ_z W) (_root_.GlobalTheory.MiTop.realCharacter W)
+  obtain ⟨⟨j, hj, hjT⟩, -⟩ := _root_.GlobalTheory.Core.Mi.evalAll_rows hDS hCR D W.S.X W.Q.instEq W.Q.Rl.θ _ (W.Q.Rl.MY 0) (_root_.GlobalTheory.MiTop.rJ_z W) (_root_.GlobalTheory.MiTop.realCharacter W)
     (show GA D (D.sp.Y 0) from W.Q.tS) v (by simp) hθ hB.gap hB.idE hMt hv
   obtain ⟨T', hT'⟩ := hj.2 ⟨star φ, hst⟩
   have h1 := hjT T'

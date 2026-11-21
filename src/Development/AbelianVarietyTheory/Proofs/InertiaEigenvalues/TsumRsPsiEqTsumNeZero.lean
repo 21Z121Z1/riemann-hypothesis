@@ -1,9 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegrableInfMeasure
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegrableOnAbsDetRpowLeOneFundamentalDomainStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourierTransformUniformRapidDecayFamilyStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FourierTransformUniformRapidDecayFamily
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOfMemSmoothSpan
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SummableNonzeroRationalVectorLeShortestVectorStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MellinIntegralRapidDecayEntireOfLeOneStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MellinIntegralRapidDecayEntireOfLeOne
 
 noncomputable section
 
@@ -82,7 +83,7 @@ theorem exists_norm_rsHat_le {ι : Type} {S S' : Submodule ℂ (Sm E a)} {g : ι
     (hS' : ∀ F ∈ S', ∃ C : ℝ, ∀ x, ‖F.1 x‖ ≤ C) {F F' : Sm E a} (hF : F ∈ S) (hF' : F' ∈ S')
     (hΦ : IsTest (rowSet E ℓ) Φ) (M : ℕ) : ∃ C : ℝ, ∀ i y,
       ‖rsHat ℓ F.1 F'.1 Φ J η (g i) y‖ * (1 + ‖fun j => pInf E (y j)‖) ^ M ≤ C * w i := by
-  obtain ⟨C, hC⟩ := GlobalTheory.T.fourierTransform_uniformRapidDecay_family E a ι w (famSpan ℓ S S' g) (famSpan_bound hS hS')
+  obtain ⟨C, hC⟩ := _root_.GlobalTheory.fourier_decay_family E a ι w (famSpan ℓ S S' g) (famSpan_bound hS hS')
     (fun f hf => (famSpan_fderiv hL hL' f hf).2) M _ (Submodule.subset_span ⟨F, hF, F', hF', Φ, hΦ, rfl⟩)
   refine ⟨(finiteMeasurePi E (latt a J)).toReal * C, fun i y => ?_⟩
   have h1 := hC i fun j => pInf E (y j)

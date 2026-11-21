@@ -24,7 +24,7 @@ theorem GlobalTheory.FlipRun.twist_sign_flip_succ : _root_.GlobalTheory.FunPr.Th
     GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree → ConstK → StepFlip := by
   intro hP hLC hWC hTI hCK
   obtain ⟨C0, H⟩ := (((((_root_.GlobalTheory.T.twist_square_commutes hP hWC hTI).and (_root_.GlobalTheory.T.flipRun_cusp_transition hLC hP)).and
-    (_root_.GlobalTheory.T.endCusp_leadingForm_listed hP)).and (_root_.GlobalTheory.T.flipSequence_initial_term hP hLC)).and GlobalTheory.T.localFlipStage_isTensor_placeDepth).and hCK
+    (_root_.GlobalTheory.T.endCusp_leadingForm_listed hP)).and (_root_.GlobalTheory.T.flipSequence_initial_term hP hLC)).and _root_.GlobalTheory.FlipRun.isTensor_flips_take).and hCK
   refine ⟨C0, fun ε CF h => ?_⟩
   obtain ⟨x₀, H⟩ := H ε CF h
   refine ⟨x₀, fun D large₂ e hx Γ _ _ Pl0 T A Ks _ _ _ R F s ch i j => ?_⟩

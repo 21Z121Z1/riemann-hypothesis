@@ -6,7 +6,7 @@ import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsProved
 import GroundTheory.HeightsAndTheta.Heights.CountingLowerBound.Assembly
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntEmbInjective
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PPartRealSmul
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameInversePropertiesStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.AdaptedFrameInverseProperties
 
 open NumberField Matrix MeasureTheory Filter Topology GlobalTheory.CompanionTheory.Ar GlobalTheory.CompanionTheory.Ar.Cusp ReciprocityTheory.ChartRestriction.G.Geo ReciprocityTheory.ChartRestriction.G.Geo.Tor GroundTheory.Heights₂.Heights.FiniteCovolume GroundTheory.Automorphic GlobalTheory.CompanionTheory.Ar.Cusp.Dict
 open scoped ENNReal InnerProductSpace

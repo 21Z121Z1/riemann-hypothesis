@@ -11,13 +11,15 @@ import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
 import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TorusWeightVectorIffCartanWeightVectorStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.FiniteDimKStableSubspaceKFiniteLieStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsKStableOnOfLieStableFiniteDimStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsKStableOnOfLieStableFiniteDim
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HighestWeightGeneratedWeightsBelowStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.DiscreteSeriesCoverIrreducibleUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.BlockOrderedSquareIntegrableStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqEqOfOmegaDensity
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.AtPlaceIffEqAtTau
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.SchurOrthogonalityIndefiniteUnitaryGroupStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.SchurOrthogonalityIndefiniteUnitaryGroup
+import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms
+import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
 
 noncomputable section
 
@@ -327,7 +329,7 @@ theorem isKTypeOf_of_isHW (h : BlockOrd e ε) (hσ : Factors R.U e σ) (μ : Ix 
     refine Submodule.eq_of_le_of_finrank_le h1 ?_
     rw [hW]
     exact Nat.find_min' hex ⟨W', ⟨Submodule.finiteDimensional_of_le h1, h2, v', h3, h4⟩, rfl⟩
-  have hSK := GlobalTheory.T.isKStableOn_of_lieStable_finiteDim p q n e ε T R σ h hσ W hf hK
+  have hSK := _root_.GlobalTheory.RealPar.isKStableOn_of_kStable p q n e ε T R σ h hσ W hf hK
   obtain ⟨hw1, hw2⟩ := (mem_hwSub _ _ _).1 hv.2
   have hle : ∀ S' : Submodule ℂ R.U.H, S' ≤ W.map R.ι → S'.comap R.ι ≤ W := fun S' h' =>
     (Submodule.comap_mono h').trans (Submodule.comap_map_eq_of_injective R.ι_inj W).le

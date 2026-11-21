@@ -4,7 +4,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.ThetaCore
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModel
-import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LieModelFreeOfSmoothStatement
+import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LieModel
+import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.LieFree
 
 noncomputable section
 

@@ -20,13 +20,14 @@ import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsPro
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadWeightLineNef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNefPullLLStepEx
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusFlagUnitWeightBundlesNef
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanBdLeSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyIntegralFlagModelOfSmoothCoefficientFiel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PushInvertibleOfHasTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasFibrewiseNonvanishingThetaSectionOfSmoothMode
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.AdmissibleBaseChartRing
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoExponentDivisorPullbackFlagCoverStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoExponentDivisorPullbackFlagCover
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesExist
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj
@@ -239,22 +240,22 @@ theorem exists_iso (T : TorFlag Xo c) (Z : Comp Xo c) (B : Comp Xo c → GlobalT
   have : IsNoetherian (Y₀ T.X Z) := {}
   have hU : ∀ (K : Type) [Field K] (z : Sp K ⟶ Y₀ T.X Z), ∃! p : Sp K ⟶ C.Y.X, Rel T.X.F C (z ≫ inc₀ T.X Z) p :=
     GlobalTheory.T.flagModel_point_carries_unique_flagBundle_point T.X Z hX C hC (B Z) (j Z) f hπ hl hJ
-  obtain ⟨h, hh, hR⟩ := GlobalTheory.T.exists_hom_of_fieldPoint_relation_proper (Y₀ T.X Z) C.Y.X T.Y.X (inc₀ T.X Z ≫ T.X.π) (C.π ≫ genι T.Y)
+  obtain ⟨h, hh, hR⟩ := _root_.GlobalTheory.FieldPointGraph.exists_hom_of_rel (Y₀ T.X Z) C.Y.X T.Y.X (inc₀ T.X Z ≫ T.X.π) (C.π ≫ genι T.Y)
     (fun K _ z w => Rel T.X.F C (z ≫ inc₀ T.X Z) w)
     (fun K _ z w hw => by rw [← Category.assoc]; exact Rel.over T.X C hw)
     (fun K _ z => hU K z)
     (fun K K' _ _ ι z w hw => by
-      have := GlobalTheory.T.flagModel_carriesSameFlags_fieldExtension T.X hX C K K' ι _ _ hw
+      have := _root_.GlobalTheory.VarFlag.rel_baseChange T.X hX C K K' ι _ _ hw
       rwa [← Category.assoc] at this)
     (fun A _ _ _ u v huv hr => by
-      have := GlobalTheory.T.flagModel_carriesSameFlags_specialise_valuationRing T.X hX C hC A (u ≫ inc₀ T.X Z) v (by simpa only [Category.assoc] using huv)
+      have := _root_.GlobalTheory.VarFlag.rel_specialise T.X hX C hC A (u ≫ inc₀ T.X Z) v (by simpa only [Category.assoc] using huv)
         (by simpa only [Category.assoc] using hr)
       simpa only [Category.assoc] using this)
   have : IsProper (inc₀ T.X Z ≫ T.X.π) := inferInstance
   have : IsProper (h ≫ C.π ≫ genι T.Y) := by rw [hh]; infer_instance
   have : IsProper h := IsProper.of_comp h (C.π ≫ genι T.Y)
-  have := GlobalTheory.T.flagModel_to_flagBundle_locallyQuasiFinite T.flag C hC Z h hR
-  have hiso := GlobalTheory.T.isIso_flagModel_flagBundle_over_moduli T.X Z hX C hC (B Z) (j Z) f hπ hJ h hU hR
+  have := _root_.GlobalTheory.VarFlag.locallyQuasiFinite_flag T.flag C hC Z h hR
+  have hiso := _root_.GlobalTheory.VarFlag.isIso_restrict_Vo T.X Z hX C hC (B Z) (j Z) f hπ hJ h hU hR
   have hVo : Nonempty (Vo C) := by
     refine ⟨⟨genericPoint C.Y.X, ?_⟩⟩
     show C.π (genericPoint C.Y.X) ∈ Set.range T.Y.jQ
@@ -304,7 +305,7 @@ theorem exists_flagTor (T : TorFlag Xo c) (hF : FnAlgClosed Xo c) {σ : c.F →+
         ∀ (K : Type) [Field K] (z : Sp K ⟶ Y₀ T.X (q k)), Rel T.X.F (Φ.C k) (z ≫ inc₀ T.X (q k)) (z ≫ h) := by
   have hsm := smooth_gen T.smooth
   obtain ⟨q, hq⟩ := GlobalTheory.UnifComp.exists_equiv_comp E H Dw l Xo c σ N U hσ hU (fun k => GlobalTheory.CompBij.frames_nonempty _) hF
-  obtain ⟨B, j, hB, hcov⟩ := GlobalTheory.T.exists_varieties_components_smooth_genericFibre E H Dw l Xo c c.F (RingHom.id c.F) T.Y c.F (RingEquiv.refl _) hF hsm
+  obtain ⟨B, j, hB, hcov⟩ := _root_.GlobalTheory.GenFibreComp.exists_vars E H Dw l Xo c c.F (RingHom.id c.F) T.Y c.F (RingEquiv.refl _) hF hsm
   have key := fun i : U.Comp =>
     haveI := (hB (q i)).1
     GlobalTheory.FlagBundle.exists_flagCpt T.Y (RingEquiv.refl _) (GlobalTheory.T.snc_toroidalGenericBoundary_of_snc_boundary T.snc) (B (q i)) (j (q i)) (hB (q i)).2.2.1
@@ -317,7 +318,7 @@ theorem exists_flagTor (T : TorFlag Xo c) (hF : FnAlgClosed Xo c) {σ : c.F →+
     rwa [show w = IsLocalRing.closedPoint K from Subsingleton.elim (α := PrimeSpectrum K) _ _]
   refine ⟨⟨C, fun k => ?_, fun K _ _ χ x hx g => ?_, fun i x s => ?_⟩, q, hq,
     fun k => exists_iso T (q k) B j hB hcov (C k) (f k) (hπ k) (hl k)⟩
-  · rw [hdim, (hB _).2.1, GlobalTheory.T.flag_space_dimension_eq_sum_choose E H Dw, hU.1]
+  · rw [hdim, (hB _).2.1, _root_.GlobalTheory.FlagDimSum.dim_add_sum_choose E H Dw, hU.1]
   · obtain ⟨i₀, hi, hi'⟩ := hcov (x (IsLocalRing.closedPoint K))
     obtain ⟨i, rfl⟩ := q.surjective i₀
     obtain ⟨x', hx'⟩ := lift K x _ hi
@@ -346,7 +347,7 @@ theorem topSelf_eq_inter (T : TorFlag Xo c) (Z : Comp Xo c) (C : FlagCpt T.Y (Ri
   letI := algebraΓOfHom (str₀ T.X Z)
   have hL := isLB_L₀ T.X Z la
   have hL' := T.X.F.isLB_LL (AllWt.exOf Dw la 0)
-  have e := GlobalTheory.T.lineBundleIso_exponentDivisor_pullback_flagCover T.X C (inv h ≫ inc₀ T.X Z) (by rw [Category.assoc, ← hh, IsIso.inv_hom_id_assoc])
+  have e := _root_.GlobalTheory.VarFlag.lbIso_LL_pull T.X C (inv h ≫ inc₀ T.X Z) (by rw [Category.assoc, ← hh, IsIso.inv_hom_id_assoc])
     (fun K _ p => by simpa using hR K (p ≫ inv h)) (AllWt.exOf Dw la 0) rfl
   have e' : topSelfIntersection c.F (C.Y.lb (C.Lw la)) C.Y.dim = topSelfIntersection c.F ((L₀ T.X Z la).pull (inv h)) C.Y.dim :=
     interNum_congr_cls _ _ (fun _ => Cartier.isLB_toLB _) (fun _ => LB.isLB_pull hL _) fun _ => by

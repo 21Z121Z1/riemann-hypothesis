@@ -5,7 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOn
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsArchEquivEq
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemMultTOfEquivariant
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLieAlgebraExpEqOfCommuteCartanInvolutionStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsLieAlgebraExpEqOfCommuteCartanInvolution
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaEqB
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubSelf
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
@@ -32,7 +33,7 @@ variable {D : D7}
 theorem exists_log_of_cartan {n : ℕ} {G C g : Matrix (Fin n) (Fin n) ℂ} (hG : Gᴴ = G)
     (hC : GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsCartan Gᵀ C) (hg : gᴴ * G * g = G) (hgC : Commute g C) :
     ∃ Z : Matrix (Fin n) (Fin n) ℂ, Zᴴ * G + G * Z = 0 ∧ Commute Z C ∧ NormedSpace.exp Z = g :=
-  GlobalTheory.T.exists_lieAlgebra_exp_eq_of_commute_cartanInvolution hG hC hg hgC
+  _root_.GlobalTheory.ExpCartan.exists_exp_eq_of_commute_cartan hG hC hg hgC
 
 theorem emb_cases (t : D.what₂.Tau) (e : GlobalTheory.AdelicU.EmbOver D.host.E (GlobalTheory.AdelicU.placeOf D t)) :
     e.1 = tauE D t ∨ e.1 = (starRingEnd ℂ).comp (tauE D t) := by

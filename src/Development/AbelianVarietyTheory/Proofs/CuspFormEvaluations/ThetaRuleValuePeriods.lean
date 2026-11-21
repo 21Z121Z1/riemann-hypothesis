@@ -10,7 +10,7 @@ import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsAnalyticFrameOfUnitUniformisationFrameStatement
-import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaValueAnalyticFrameEqPolyDerivFockStatement
+import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaValueAnalyticFrameEqPolyDerivFock
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ThetaRuleValueTestRingEqThetaValueStatement
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SectionReadingExistsUniqueIsTheta
 
@@ -26,7 +26,7 @@ theorem thetaRule_value_periods : ChartIndepSt2 → ∀ (E : Type) [Field E] [Nu
   obtain ⟨Φ, hof, hHm, -, -, hrd, -, hlin, hlev⟩ := GlobalTheory.T.exists_analytic_frame_of_unit_uniformisation_frame E H Dw l Xo c σ r U k xf W Wu
   have hv := GlobalTheory.T.thetaRuleValue_testRing_eq_thetaValue hci E H Dw l Xo c nab hnab a n x P hP f hf (CAt σ) (U.un k xf) hft
   refine ⟨((GlobalTheory.AnVal.reading_existsUnique_isTh _ _ _ _ _ Φ.toAnFr 1 _).2.1 _ hrd).1, ?_⟩
-  have key := GlobalTheory.T.thetaValue_analyticFrame_eq_polyDeriv_fock hci E H Dw l Xo c (U.un k xf) W.g _ W.e Φ
+  have key := _root_.GlobalTheory.AnVal.thValAt_eq_polyDeriv_fock hci E H Dw l Xo c (U.un k xf) W.g _ W.e Φ
     (W.Pm.comp (W.F.t (W.ik k)).toAddMonoidHom) (fun a => by rw [hof.2.1]; exact ⟨_, rfl⟩) hlin hlev nab hnab Wu.θ hrd
     n x x2 h2 hx a P hP _ hv
   rw [hHm] at key

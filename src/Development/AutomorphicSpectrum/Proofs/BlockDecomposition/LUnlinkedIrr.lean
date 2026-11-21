@@ -9,7 +9,8 @@ import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultipli
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetSubLeftOfAdmissible
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicitySubquotientLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ProductIrreducibleFiniteLength
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentProductJacquetShuffleCountStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SegmentProductJacquetShuffleCount
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContragredientProductIrreducibleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.JacquetMultiplicityTransitiveLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnlinkedProductIrreducible
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.MirabolicDerivatives.SegmentCuspLines.CuspStdSubGeneric
@@ -358,8 +359,8 @@ theorem isGeneric_of_isSubquotient (hA : GlobalTheory.Published.IrreducibleAdmis
     · exact hv₂ w hw
     · obtain ⟨t, ht, rfl⟩ := List.mem_map.1 hw
       exact (hu t ht).nu _
-  rw [GlobalTheory.T.segment_product_jacquet_shuffle_count hA hJ Δ x hd hL _ c₁] at W₁
-  rw [GlobalTheory.T.segment_product_jacquet_shuffle_count hA hJ Δ x hd hL _ c₂] at W₂
+  rw [_root_.GlobalTheory.CompanionTheory.FineProd.jmL_prodIrr hA hJ Δ x hd hL _ c₁] at W₁
+  rw [_root_.GlobalTheory.CompanionTheory.FineProd.jmL_prodIrr hA hJ Δ x hd hL _ c₂] at W₂
   obtain ⟨f₁, hf₁⟩ := exists_colouring W₁
   obtain ⟨f₂, hf₂⟩ := exists_colouring W₂
   refine false_of_shift Δ hun u hune (fun w hw => ?_) (fun w hw => ?_)

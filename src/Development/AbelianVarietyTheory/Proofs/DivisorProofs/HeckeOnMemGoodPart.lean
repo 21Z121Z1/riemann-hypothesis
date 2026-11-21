@@ -3,7 +3,11 @@ import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RePosOfIsMultIP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMultMapRightTranslateFiniteAdelicNormalizerStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMultMapRightTranslateFiniteAdelicNormalizer
+import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsDCOfMemDoubleCoset
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotentsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvolutionSphericalHeckeAntiStatement
@@ -11,7 +15,9 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecia
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsAntiInvolutionOfChars
 import Formalism.LocalToGlobal.IndefiniteReal.Bridge
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryUnimodularExistsFundamentalDomainStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicUnitaryUnimodularExistsFundamentalDomain
+import Formalism.LocalToGlobal.BesselHermitianTheta.AllTied
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AdelicDataRowMeasureScaleTrivialTuple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubleCosetSumFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiplicativeInnerProductModel
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
@@ -117,7 +123,7 @@ theorem heckeOn_mem_mult {θ : InfFam D} {M : DSModel V S} {β : GL (Fin V.rank)
   have hex : ∀ a : GA D V, ∃ T' : MMap M, a ∈ A → IsMultMap θ M ∅ (levChi V β L) T' ∧ ∀ v, T' v = rTr V a (T v) := by
     intro a
     by_cases ha : a ∈ A
-    · obtain ⟨T', h⟩ := GlobalTheory.T.isMultMap_rightTranslate_finiteAdelic_normalizer θ M ∅ (levChi V β L) a (hf (hAL a ha))
+    · obtain ⟨T', h⟩ := _root_.GlobalTheory.isMultMap_rightTranslate_finite θ M ∅ (levChi V β L) a (hf (hAL a ha))
         (fun k hk => absurd hk (Set.notMem_empty _)) T h0
       exact ⟨T', fun _ => h⟩
     · exact ⟨0, fun h => absurd h ha⟩

@@ -16,7 +16,7 @@ import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SmulMemLatO
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SelfDualSplitComponentIsLatticeStabilizerEq
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnitaryPairMapsCompletedHomLatticeOntoTranslate
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinitePartEqIntegralCombinationOfMemCompletedLatStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionOMemLatticeOOfIntegralCombinationsStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionOMemLatticeOOfIntegralCombinations
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.RowTest GlobalTheory.RowClaim
 open Formalism.L2.Host (HChar)
@@ -133,7 +133,7 @@ theorem actO_latO_le (S T : HSp D) (g : GA D S) (h : GA D T)
       Formalism.L2.Herm.hatL (F := D.host.F) BT) :
     ∀ w ∈ latO S T (AS : Set (Fin S.rank → D.host.E)) (AT : Set (Fin T.rank → D.host.E)) (fun _ => True),
       actO S T g h w ∈ latO S T (BS : Set (Fin S.rank → D.host.E)) (BT : Set (Fin T.rank → D.host.E)) (fun _ => True) :=
-  GlobalTheory.T.weilActionO_mem_latticeO_of_integralCombinations S T g h AS BS AT BT (fun s hs => GlobalTheory.T.finitePart_eq_integralCombination_of_mem_completedLattice BS _ (hS s hs)) (fun t ht => GlobalTheory.T.finitePart_eq_integralCombination_of_mem_completedLattice BT _ (hT t ht))
+  _root_.GlobalTheory.LatMoveGen.actO_mem_latO S T g h AS BS AT BT (fun s hs => GlobalTheory.T.finitePart_eq_integralCombination_of_mem_completedLattice BS _ (hS s hs)) (fun t ht => GlobalTheory.T.finitePart_eq_integralCombination_of_mem_completedLattice BT _ (hT t ht))
 
 theorem actO_actO_inv (S T : HSp D) (g : GA D S) (h : GA D T) (w : WO S T) : actO S T g h (actO S T g⁻¹ h⁻¹ w) = w := by
   simp only [actO]

@@ -71,7 +71,7 @@ theorem exists_weil_over_of_clauses (hW : GlobalTheory.Published.WeilRepresentat
   obtain ⟨W', a1, a2, a3, a4, a5⟩ := exists_weil G (fun i hi => by
     have : (G.node (.grid i 0)).IsV (rankV D i 0) ((D.R.m - 0) / 2) := by
       cases i with
-      | zero => exact GlobalTheory.T.gridFirstColumnSpace_rank_signature_selfDual D T R.toLevCh A.μ0 hlev 0 hi
+      | zero => exact _root_.GlobalTheory.ChiGrid.colY_isV D T R.toLevCh A.μ0 hlev 0 hi
       | succ i => exact G.sp.V_is (i + 1) 0 (by omega) hi (Nat.zero_le _)
     exact ⟨this.sigOK, this.sd⟩) he hψ hmod.inf s B hs om hom
   exact ⟨W', a1, a2, fun j hj => a3 ▸ (sY _ j hj rfl).1, a3 ▸ (sX _ rfl).1, fun j hj => a4 ▸ (sY _ j hj rfl).2,

@@ -5,7 +5,7 @@ import Formalism.RealPlaceAnalysis.RealPlaceTaylor.FirstSlotSliceSlotMixedCasimi
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.IsCompactInvariantOrthogonalInf
 import Formalism.RealPlaceAnalysis.FinalF
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DerivedModuleCoefficientsAndStableFlows
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.JetUniquenessAlgebraicStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.JetUniquenessAlgebraic
 
 open MeasureTheory Matrix Finset Formalism.MainNotions.S Formalism.REAL Formalism.QuantumDeterminants GlobalTheory.Count GlobalTheory.Dec GlobalTheory.DSId GlobalTheory.Jet
 open scoped InnerProductSpace ComplexOrder
@@ -236,7 +236,7 @@ theorem jets_vanish {ε : Fin n → Bool} {E : Fin n → Fin n → Module.End �
     intro x hx w
     simp only [ι, LinearMap.comp_apply, hp' x hx, LinearMap.codRestrict_apply]
   have hev : ∀ y : jets ε E u, ev y = y.1 [] := fun y => rfl
-  have key := GlobalTheory.T.jet_uniqueness_algebraic V n ε E lam g u h1 h2 h3 h4 h5 h6 (jets ε E u) (shift ε E u) ι ev (shift_gl ε E u)
+  have key := _root_.GlobalTheory.Jet.UniqAlg.uniqAlg V n ε E lam g u h1 h2 h3 h4 h5 h6 (jets ε E u) (shift ε E u) ι ev (shift_gl ε E u)
     (by
       intro c d h x hx
       apply Subtype.ext; funext w

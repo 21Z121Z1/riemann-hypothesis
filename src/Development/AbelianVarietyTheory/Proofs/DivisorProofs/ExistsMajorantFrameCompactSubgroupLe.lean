@@ -1,6 +1,6 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvariantPosDefHermitianStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianPosDefSimultaneousNormalFormStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianPosDefSimultaneousNormalForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToGAdMat
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsGenericIffIsGenericFor
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.StrongMultiplicityOne
@@ -49,7 +49,7 @@ theorem exists_frame_le_majCpt : ∀ (F E : Type) [Field F] [NumberField F] [Fie
       exact (h.2.2.2 τ.1 _).symm.trans (congrArg _ (hJ.1 i j))
     have hd : (J.map τ.1).det ≠ 0 := by
       rw [← RingHom.mapMatrix_apply, ← RingHom.map_det]; exact (map_ne_zero _).2 hJ.2
-    obtain ⟨ε, Q, hQ, hQu⟩ := GlobalTheory.T.hermitian_posDef_simultaneous_normal_form hG hd hPh hPpos
+    obtain ⟨ε, Q, hQ, hQu⟩ := _root_.GlobalTheory.SimNormal.simultaneous_normal_form hG hd hPh hPpos
     have h1 : (Formalism.UG.bc e.symm.toRingHom Q).1.map (infEmb τ) = Q.1 := Matrix.ext fun i j => e.apply_symm_apply _
     have h1' : ((Formalism.UG.bc e.symm.toRingHom Q)⁻¹).1.map (infEmb τ) = (Q⁻¹).1 :=
       Matrix.ext fun i j => e.apply_symm_apply _

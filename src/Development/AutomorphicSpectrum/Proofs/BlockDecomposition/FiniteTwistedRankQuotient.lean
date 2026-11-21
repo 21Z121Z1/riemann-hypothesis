@@ -86,7 +86,7 @@ theorem exists_gl_mul_eq_base (e : c ⊕ d ≃ a) (x : Matrix c a k) (hx : x.ran
   have hr : (x * g.val).rank = Fintype.card c := by
     rw [rank_mul_eq_left_of_isUnit_det _ _ ((isUnit_iff_isUnit_det _).1 g.isUnit)]
     exact hx
-  have h := GlobalTheory.T.leftColumns_mulVec_injective_of_rank_eq_card k c c d a e (x * g.val) hr hg
+  have h := _root_.GlobalTheory.mulVec_firstCols_eq_zero_of_rank_eq_card k c c d a e (x * g.val) hr hg
   have hu : IsUnit ((x * g.val).submatrix id fun i => e (.inl i)) :=
     mulVec_injective_iff_isUnit.1 fun v w hvw => sub_eq_zero.1 (h _ (by rw [mulVec_sub, hvw, sub_self]))
   set u : Matrix c c k := (x * g.val).submatrix id fun i => e (.inl i) with hudef

@@ -1,5 +1,7 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntertwinersAndLiftsExistAtChoicesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntertwinersAndLiftsExistAtChoices
+import Formalism.LocalToGlobal.IndefiniteReal.LinksW
+import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvInjOfIsModelsOfTie
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.JEvExistsAndJEvBar
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GeoAct

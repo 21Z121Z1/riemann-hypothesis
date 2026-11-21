@@ -1,10 +1,20 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SettingsFormsExistList
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallySizesCongruencesHostFactsColumnChoicesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallySizesCongruencesHostFactsColumnChoices
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenLocOfCenReal
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RatInEig
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnivChar
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CGTrue
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsRhoPtOfSplitting
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroWild
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroSupport
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGlobalAboveL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NFunAddOneLtEExpAddCen
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAuxiliaryHeckeCharacterToricListOfGridStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGridUnitGapFieldContainsValuesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAuxiliaryHeckeCharacterToricListOfGridAlt
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsGridUnitGapFieldContainsValues
 
 noncomputable section
 
@@ -18,7 +28,7 @@ theorem lamOf_ok (D : D7) {T : Type} (L : Formalism.IndefR.Links.LevCh D T) (cDe
     (w0 : HeightOneSpectrum (𝓞 D.host.E)) (h : GlobalTheory.LamTie.PlacesOk D.host (AbsolutelyIrreducibleSpan.q0 D) w0) :
     (GlobalTheory.BigTop.Fun.lamOf G).Ok := by
   classical
-  refine ⟨⟨?_, h.distinct, h.splits⟩, GlobalTheory.T.lamOf_chi_is_chosen_hecke_character_of_placesOk D L _ G w0 h, fun j a g => ?_⟩
+  refine ⟨⟨?_, h.distinct, h.splits⟩, _root_.GlobalTheory.GridLambdaData.isAuxiliaryHeckeCharacter_toricListOfGrid D L _ G w0 h, fun j a g => ?_⟩
   · have h1 := G.pl.basePlace_over_qZero
     have h2 := G.pl.w_over G.pl.v0 (Finset.mem_insert_self _ _)
     show ((GlobalTheory.ChiGrid.q0 D : ℕ) : 𝓞 D.host.E) ∈ (G.pl.w G.pl.v0).asIdeal

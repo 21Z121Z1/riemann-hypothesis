@@ -27,8 +27,14 @@ import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LocalLowerBoun
 import Formalism.LocalToGlobal.CMDeterminantIdeals.CMIdealValuations.LargeResidueExtensionLemma
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestValueEqConstMulReadingSecZ
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsEqProdBlockDetPolyPowMul
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCompleteDVRCompletionIntegralIffStatement
-import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCmPointLocalModelOverDvrStatement
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCompleteDVRCompletionIntegralIff
+import Development.AbelianVarietyTheory.Statements.PrincipalLattices.ExistsPrincipalLattice
+import Development.AbelianVarietyTheory.Definitions.RegularCharts.BaseNorm
+import Formalism.LocalToGlobal.ProjectiveLattices.L2DefiniteCuspForms
+import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.NonemptyUnitAt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.NonvanishingNearMaximum
+import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsCmPointLocalModelOverDvr
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsIntegralEigenbasisOfFrameAtLocalModelStatement
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsUnitIntegralGeneratorPrincipalLocalModelStatement
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LieLetterIntegralInIntegralEigenbasisStatement
@@ -66,8 +72,8 @@ theorem exists_clear_coeff_at_prime_any : ∀ (E : Type) [Field E] [NumberField 
         ∀ μ, p.valuation z.K ((x : z.K) * MvPolynomial.coeff μ G) ≤ 1 := by
   intro E _ _ _ H Dw l Xo c _ z f La hz e k p
   classical
-  obtain ⟨T, iK, hT, hiK⟩ := GlobalTheory.T.exists_completeDVR_completion_integral_iff z.K p
-  obtain ⟨M⟩ := (GlobalTheory.T.exists_cmPoint_localModel_over_dvr E H Dw l Xo c z T iK).1 fun a => (hiK _).2 (p.valuation_le_one a)
+  obtain ⟨T, iK, hT, hiK⟩ := _root_.GlobalTheory.exists_cdvr_completion_integral_iff z.K p
+  obtain ⟨M⟩ := (_root_.GlobalTheory.LamT.locMod_exists E H Dw l Xo c z T iK).1 fun a => (hiK _).2 (p.valuation_le_one a)
   let io : c.F →+* T.Fr := iK.comp (algebraMap c.F z.K)
   letI := io.toAlgebra
   let φ : z.K →ₐ[c.F] T.Fr := { iK with commutes' := fun _ => rfl }
@@ -171,8 +177,8 @@ theorem coeff_valuation_le_one_almost_all_any : ∀ (E : Type) [Field E] [Number
   obtain ⟨⟨hp1, hp2⟩, hp3⟩ := hp
   have hgen : ∀ j, Formalism.L2.LamCM.IsLocGen p (1 : z.K) (z.ℓ j).I := fun j =>
     ⟨one_ne_zero, by rw [FractionalIdeal.spanSingleton_one, FractionalIdeal.count_one, hp2 j]⟩
-  obtain ⟨T, iK, hT, hiK⟩ := GlobalTheory.T.exists_completeDVR_completion_integral_iff z.K p
-  obtain ⟨M⟩ := (GlobalTheory.T.exists_cmPoint_localModel_over_dvr E H Dw l Xo c z T iK).1 fun a => (hiK _).2 (p.valuation_le_one a)
+  obtain ⟨T, iK, hT, hiK⟩ := _root_.GlobalTheory.exists_cdvr_completion_integral_iff z.K p
+  obtain ⟨M⟩ := (_root_.GlobalTheory.LamT.locMod_exists E H Dw l Xo c z T iK).1 fun a => (hiK _).2 (p.valuation_le_one a)
   let io : c.F →+* T.Fr := iK.comp (algebraMap c.F z.K)
   letI := io.toAlgebra
   let φ : z.K →ₐ[c.F] T.Fr := { iK with commutes' := fun _ => rfl }

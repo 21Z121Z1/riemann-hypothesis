@@ -82,7 +82,7 @@ theorem PositivityTheory.ThKW.PhaseFourierInjectivity.finj_k : ∀ (F E : Type) 
       ring
     simp_rw [hx]
     rw [integral_sub (hint a N₁ i₁) (hint a N₂ i₂), hN a, sub_self]
-  have h0 := GlobalTheory.T.eq_zero_of_adelicFourier_separatingChars_vanish F E B.ψ hψ (nT * nS) (WOF F E nS nT) (pr σ JS ξ₀) (pr_add σ JS ξ₀)
+  have h0 := _root_.GlobalTheory.AdelicFourierUniq.eq_zero F E B.ψ hψ (nT * nS) (WOF F E nS nT) (pr σ JS ξ₀) (pr_add σ JS ξ₀)
     (fun u hu => pr_sep σ hcc hψ JS hS.2 ξ₀ hξ₀ u hu) (ν.map em) hμ N hNc hNi key
   funext v
   have := congrFun h0 (vecE F E nS nT v)

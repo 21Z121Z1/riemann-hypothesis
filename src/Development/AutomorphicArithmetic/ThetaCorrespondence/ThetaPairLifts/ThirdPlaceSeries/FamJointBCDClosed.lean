@@ -7,7 +7,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.On
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThickLetterWordLatticeSurjectionHypotheses
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HodgeTateJumpsAtModulesForSign
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FamJointBCD
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPrimeNeTypePrimeStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertPrimeNeTypePrime
+import Development.AutomorphicArithmetic.ResidueCharacters.TwistedPlaces
 import Formalism.SharpRestriction.LevelLetterCocycles.LargeLevelLemmas
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoefficientExtensionDecomposition
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
@@ -28,6 +29,6 @@ theorem fam_jointBCD_closed_alt : GlobalTheory.Published.FontaineBcris → (∀ 
   refine ⟨x0, fun x hx h1 j HW X hA hX => h x hx h1 j HW X (hJ _ _ hA).1 fun i _ hi π hπ => ?_⟩
   refine _root_.GlobalTheory.T.ptIn_of_ptFam_deRham_away hF _ X hX hA.1 i ?_ π hπ
   simp only [TwistedPlaces.gset, Finset.mem_insert, Finset.mem_singleton, not_or]
-  exact ⟨GlobalTheory.T.inert_prime_ne_typePrime _ _ 0 hi, GlobalTheory.T.inert_prime_ne_typePrime _ _ 1 hi⟩
+  exact ⟨_root_.GlobalTheory.InertNotType.main _ _ 0 hi, _root_.GlobalTheory.InertNotType.main _ _ 1 hi⟩
 end GlobalTheory.HTW.RecS
 end

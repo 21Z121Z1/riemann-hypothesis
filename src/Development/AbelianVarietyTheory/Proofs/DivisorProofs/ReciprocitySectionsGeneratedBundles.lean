@@ -27,13 +27,13 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratedBundlesReciprocitySemiPositiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeneratedBundlesReciprocitySemiPositive
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemiPosTwistMetrisedLineBundleStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralAdditiveInFactorStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointClosureIntegralUpdateTensorAdditiveStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogNormSectionIntegrableMixedChernProjectiveStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormFiniteIntegrablePointClosureStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightEqOneIffClosureDimProjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralAdditiveInFactor
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointClosureIntegralUpdateTensorAdditive
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogNormSectionIntegrableMixedChernProjective
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormFiniteIntegrablePointClosure
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightEqOneIffClosureDimProjective
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -71,10 +71,10 @@ theorem finsum_update_tens (P : GlobalTheory.Published.Principalisation) {F : Ty
   · simp [h0]
   have hz1 : Order.coheight z = 1 := CartierDiv.coheight_eq_one_of_mult_ne_zero h0
   have hcl : topologicalKrullDim (closure ({z} : Set X)) = e :=
-    (GlobalTheory.T.coheight_eq_one_iff_closure_dim_projective F X p e hp hdim z).1 hz1
-  have h₁ := (GlobalTheory.T.mixedChernForm_finite_integrable_pointClosure P F X p σ hp e (Function.update L i A) z hcl).2.2.2 B b (hb z h0)
-  have h₂ := (GlobalTheory.T.mixedChernForm_finite_integrable_pointClosure P F X p σ hp e (Function.update L i C) z hcl).2.2.2 B b (hb z h0)
-  rw [GlobalTheory.T.pointClosureIntegral_update_tensor_additive F X p σ hp e L i A C (B.logSec b) z h₁ h₂, mul_add]
+    (_root_.GlobalTheory.FieldDimCoheight.coheight_eq_one_iff F X p e hp hdim z).1 hz1
+  have h₁ := (_root_.GlobalTheory.CycFin.cycle_facts P F X p σ hp e (Function.update L i A) z hcl).2.2.2 B b (hb z h0)
+  have h₂ := (_root_.GlobalTheory.CycFin.cycle_facts P F X p σ hp e (Function.update L i C) z hcl).2.2.2 B b (hb z h0)
+  rw [_root_.GlobalTheory.Mix.cycInt_update_tens F X p σ hp e L i A C (B.logSec b) z h₁ h₂, mul_add]
 
 theorem side_update_tens (P : GlobalTheory.Published.Principalisation) {F : Type} [Field F] {X : Scheme.{0}} [IsIntegral X]
     [IsLocallyNoetherian X] {p : X ⟶ Sp F} {σ : F →+* ℂ} {e : ℕ} (hp : IsProjOver p)
@@ -85,9 +85,9 @@ theorem side_update_tens (P : GlobalTheory.Published.Principalisation) {F : Type
       side N (Function.update L i A) (M.logSec s) (B.logSec b) Δ +
         side N (Function.update L i C) (M.logSec s) (B.logSec b) Δ := by
   simp only [side, Fin.cons_update]
-  have hA := GlobalTheory.T.log_norm_section_integrable_mixedChern_projective P F X p σ (e + 1) hp hdim (Function.update (Fin.cons N L) i.succ A) M s hs
-  have hC := GlobalTheory.T.log_norm_section_integrable_mixedChern_projective P F X p σ (e + 1) hp hdim (Function.update (Fin.cons N L) i.succ C) M s hs
-  rw [(GlobalTheory.T.mixedChernIntegral_additive_in_factor F X p σ hp (e + 1) (Fin.cons N L) i.succ A C (M.logSec s) hA hC).2,
+  have hA := _root_.GlobalTheory.Mix.logSec_intg_proj P F X p σ (e + 1) hp hdim (Function.update (Fin.cons N L) i.succ A) M s hs
+  have hC := _root_.GlobalTheory.Mix.logSec_intg_proj P F X p σ (e + 1) hp hdim (Function.update (Fin.cons N L) i.succ C) M s hs
+  rw [(_root_.GlobalTheory.Mix.int_update_tens F X p σ hp (e + 1) (Fin.cons N L) i.succ A C (M.logSec s) hA hC).2,
     finsum_update_tens P hp hdim Δ B b hb L i A C]
   ring
 
@@ -110,7 +110,7 @@ theorem reciprocity_sec : GlobalTheory.Published.Principalisation → ∀ (F : T
       side_update_tens P hp hdim M N t ht _ M s hbs L i A C]
     ring
   have hpos : ∀ L : Fin e → MLine p σ, (∀ i, (L i).φ.SemiPosReg (e + 1)) → Df L = 0 := fun L hL =>
-    sub_eq_zero.2 (GlobalTheory.T.generatedBundles_reciprocity_semiPositive P F X p σ e hp hdim L M N s hs t ht hcod hL hgM hgN)
+    sub_eq_zero.2 (_root_.GlobalTheory.Mix.side_eq_of_generated P F X p σ e hp hdim L M N s hs t ht hcod hL hgM hgN)
   have key : ∀ (S : Finset (Fin e)) (L : Fin e → MLine p σ),
       (∀ i, i ∉ S → (L i).φ.SemiPosReg (e + 1)) → Df L = 0 := by
     intro S

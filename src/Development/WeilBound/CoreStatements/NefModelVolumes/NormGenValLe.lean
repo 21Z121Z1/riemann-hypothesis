@@ -8,7 +8,7 @@ import Development.WeilBound.CoreStatements.ProjectiveValuations.NonemptyToroida
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.VuOntoC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanBdLeSpace
 import Development.WeilBound.CoreStatements.NefModelVolumes.NV
-import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ExtVanSectionHasCuspFormMatchStatement
+import Development.WeilBound.CoreStatements.CommonZeroEvaluation.CuspFormExtensionVanishing
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.BasicNotions.TH Formalism.L2.Theta ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.CompHt GlobalTheory.CovTop GlobalTheory.CovHt GlobalTheory.Mean4 GlobalTheory.Mean4O
 open scoped ENNReal Classical

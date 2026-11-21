@@ -5,7 +5,14 @@ import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsExplici
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowNumAt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ForcedContentEqOverSameChoices
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResCharConj
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IndicesPairingLengthsVanishOffTwistedPlacesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IndicesPairingLengthsVanishOffTwistedPlaces
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowsAre
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsIsBIffCoreB
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.WeilRepresentationUnitaryPair
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.DsExistsOfDiscreteSeriesExists
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
+import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsNormLeHeightPow
+import Formalism.LocalToGlobal.IndefiniteReal.LinksStage
 
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N Formalism.L2 Formalism.L2.Host GlobalTheory.Mem GlobalTheory.Mem.Top GlobalTheory.Mem.Top.Bl GlobalTheory.HeightCounting GlobalTheory.HeightCounting.Up
 open GlobalTheory.Mem.R3 GlobalTheory.Mem.R3.Rw GlobalTheory.Mem.Top.GroupRetwisting GlobalTheory.Mem.Col2
@@ -89,7 +96,7 @@ theorem aj_zero_at_state : StepW Start fun K B f T w => ∀ (P : Pre2 K w) (x : 
     refine Eq.trans ?_ e1.symm
     refine P.exact.trans ?_
     rw [GlobalTheory.Mem.Top.Bl.RowWt.forcedContent_eq_over_same_choices K B f T w P.Z₀ x.o.Z P.kap (P.q.kap x.o.η x.o.hη x.o.V x.o.S x.o.N x.o.G)]
-  have H := GlobalTheory.T.indices_pairingLengths_vanish_off_twistedPlaces K B f T w hO hF ⟨hS.1, ⟨P⟩⟩ P x hex
+  have H := _root_.GlobalTheory.Mem.R3.Rw.St.idx_zero_off_twisted_anyEta K B f T w hO hF ⟨hS.1, ⟨P⟩⟩ P x hex
   have key : ∀ v', (w.D x.o.Z).what₂.muAt v' = (w.D x.o.Z).what₂.mu0 → v' ∉ P.Wt := by
     intro v' he hw
     have he' : P.q.W₀.muAt v' = w.C.mu0 := he

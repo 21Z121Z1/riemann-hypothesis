@@ -15,7 +15,7 @@ import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ToricSymbols
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisOSumSmul
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsRepSuppSplit
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAlgebraicStdCharHalfSymplecticRealPartZeroStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAlgebraicStdCharHalfSymplecticRealPartZero
 
 section
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
@@ -37,7 +37,7 @@ theorem split_vacuum_algebraic_combination : ∀ {D : D7} {T : Type} [Finite T] 
   classical
   have hψ : ∀ u v : WO (GlobalTheory.Grid.neg A) WW, u.map (infPart D) = 0 → v.map (infPart D) = 0 →
       IsAlgebraic ℚ (W.ψ (symplOH (GlobalTheory.Grid.neg A) WW u v)) :=
-    fun u v hu hv => GlobalTheory.T.isAlgebraic_stdChar_halfSymplectic_realPart_zero hX.is.isVac.1 (GlobalTheory.Grid.neg A) WW u v hu hv
+    fun u v hu hv => _root_.GlobalTheory.PsiFinAlgebraic.isAlgebraic_psi_symplOH hX.is.isVac.1 (GlobalTheory.Grid.neg A) WW u v hu hv
   have hchr := _root_.GlobalTheory.T.isAlgebraic_splitCharacter_twist hPr hInp hLμ hX
   have vac : IsAlgComb W.ψ (GlobalTheory.Grid.neg A) WW X.vac X.vac := isAlgComb_self
   have detAlg : ∀ (e' : AE D) (he' : IsSplitIdem D e') (g : GA D WW),
@@ -56,12 +56,12 @@ theorem split_vacuum_algebraic_combination : ∀ {D : D7} {T : Type} [Finite T] 
   obtain ⟨ϖ, hϖ, hϖ2⟩ : ∃ ϖ : 𝓞 D.host.E, ϖ ∈ P.asIdeal ∧ ϖ ∉ P.asIdeal ^ 2 :=
     SetLike.exists_of_lt (by
       simpa using Ideal.pow_right_strictAnti P.asIdeal P.ne_bot P.isPrime.ne_top (by norm_num : 1 < 2))
-  have gen := GlobalTheory.T.splitPlace_unitaryPoint_mem_heckeClosure (stdLatSp WW hX.stdW.1) P e ϖ hP hϖ hϖ2 h hh hs
+  have gen := _root_.GlobalTheory.SplitCartanGen.supp_mem_closure (stdLatSp WW hX.stdW.1) P e ϖ hP hϖ hϖ2 h hh hs
   refine Submonoid.closure_induction
     (motive := fun x _ => IsAlgComb W.ψ (GlobalTheory.Grid.neg A) WW X.vac (X.ω t (1, x) X.vac)) ?_ ?_ ?_ gen
   · intro x hx
     rcases hx with (⟨hk, hks⟩ | ⟨k, hα⟩) | ⟨k, hα⟩
-    · rw [GlobalTheory.T.definiteBottom_splitPlace_stabiliser_vacuum hX t e hP.1 x hk hks]
+    · rw [_root_.GlobalTheory.StabVacSplit.stab_vac_split hX t e hP.1 x hk hks]
       exact vac.smul (detAlg e hP.1 x)
     · exact hecke e hP.1 ϖ k x hα
     · have hc := ((GlobalTheory.SplitPlace.split_local (stdLatSp WW hX.stdW.1) P e hP).2.2 ϖ hϖ hϖ2).2 k x⁻¹ hα |>.1

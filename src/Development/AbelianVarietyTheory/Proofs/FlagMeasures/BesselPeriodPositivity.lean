@@ -12,11 +12,10 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscreteSeriesUnitar
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselCharacterUnipotentRadicalProperties
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSubgroupParameterMeasurePreservingStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselSubgroupParameterMeasurePreserving
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialProperness.ZhatNormLinearBound
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGrowthStabilizerUnipotentStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGrowthStabilizerUnipotent
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ReproducingFormulaReduction
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselCharacterUnipotentRadicalPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HaarEqSmul
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QuotientMeasureAeMemAndMeasurableBesselModel
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsKFinNeZeroOfCwCont
@@ -24,7 +23,8 @@ import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CapParamOfIsHCTypeW
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsUnitaryTorusScaleBesselCharacter
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TorusNormaliserBessel
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSeriesBesselGap
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieIsHaarOnUnipotentRadicalStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HaarLieIsHaarOnUnipotentRadical
+import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction
 import Formalism.FormalDegreeBessel.FinalG
 
 open BranchingSupport GlobalTheory.CellAmp GlobalTheory.Amp Formalism.BasicNotions Formalism.MainNotions.S Formalism.QuantumDeterminants Matrix MeasureTheory Finset
@@ -67,7 +67,7 @@ theorem sideG_of {k r : ℕ} {Wp : Type} [NormedAddCommGroup Wp] [InnerProductSp
     ∃ U, SideG k r z π U μW (haarLie (Nset k r) κ) μG νq := by
   refine ⟨fun n => if h : n - 1 < k then u ⟨n - 1, h⟩ else 0, hz, hT, ⟨u, hπ⟩,
     GlobalTheory.ThA.capParam_of_isHCTypeW k r z u _ Wp π hz hT hπ (fun i => by simp), hW,
-    GlobalTheory.T.haarLie_isHaarOn_unipotentRadical k r κ (scale_pos hG.2.1 hq) hκ, hG, hq⟩
+    _root_.GlobalTheory.haarLie_isHaarOn_Nset k r κ (scale_pos hG.2.1 hq) hκ, hG, hq⟩
 
 theorem dsigW_eq {k r : ℕ} {H : Type} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
     (σ : MatKR k r → (H →L[ℂ] H)) (w : List (MatKR k r)) (v : H) :

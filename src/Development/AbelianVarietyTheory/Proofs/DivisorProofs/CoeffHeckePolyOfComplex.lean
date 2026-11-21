@@ -10,7 +10,14 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeElementComp
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SupportedSubgroupSplitCommutePrimeIdempotentsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InvolutionSphericalHeckeAntiStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantHaarAdelicUnitaryGroupHermitiStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantHaarAdelicUnitaryGroupHermiti
+import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+import Formalism.LocalToGlobal.IndefiniteReal.IndefiniteWeightData
+import Formalism.LocalToGlobal.IndefiniteReal.HeckeTupleStatement
+import Formalism.LocalRingCardinality.DataExtra
 
 noncomputable section
 
@@ -277,7 +284,7 @@ theorem inner_hecke (hχ : ∀ k ∈ levG V β L, levChi V β L k = 1) (hμ : μ
   haveI : IsTopologicalGroup (GA D V) := Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.Unfold.topGroupHA _ _
   haveI : BorelSpace (GA D V) := ⟨rfl⟩
   haveI : Countable (GQ V) := Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.Unfold.countableGamma _ _
-  haveI := GlobalTheory.T.isMulRightInvariant_haar_adelicUnitaryGroup_hermitianSpace D V μ hμ
+  haveI := _root_.GlobalTheory.AdelicPointsUnimod.isMulRightInvariant_of_isHaarMeasure D V μ hμ
   have hm : ∀ z, HM.e z ∈ Mult θ M (levS V β L) (levChi V β L) := fun z => hU (h.2.1 ▸ LinearMap.mem_range_self _ z)
   have ha : ∀ z v, IsAutFun V (HM.e z v) := fun z v =>
     (((GlobalTheory.MultMem.mem_mult_iff _ _ _ _ _ _ _ _).1 (hm z)).aut v).toIsAutFun

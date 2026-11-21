@@ -38,8 +38,8 @@ theorem theta_lift_finite_sum_smooth : GlobalTheory.IndefiniteRowSideFullHecke.C
     exact Finset.sum_congr rfl fun i _ => (isContAut_cusp (F i) (w i)).1 γ hγ g
   obtain ⟨hν, hfd⟩ := measX_haar_fd hG j hj.le
   have hA := hG.arrows.col t j hj
-  obtain ⟨Φ', hΦ', heig, heq⟩ := GlobalTheory.T.exists_thetaLift_realCentre_average_eigenvector D R.ψ _ _ _ _ (G.col t j).ω hA.weil hsig hdef _ _ hν hfd χ _ hψc hψa Φ hΦ hint
-  obtain ⟨k, f, p, hf, hsum⟩ := GlobalTheory.T.centreEigen_thetaFunction_finite_sum_fockPolynomials D R.ψ R.θ hθ (G.Xp j) (G.Xp (j + 1)) νS νT PS PT hS hT (G.col t j) _ _ hA
+  obtain ⟨Φ', hΦ', heig, heq⟩ := _root_.GlobalTheory.CenAvgOne.exists_central_average_one D R.ψ _ _ _ _ (G.col t j).ω hA.weil hsig hdef _ _ hν hfd χ _ hψc hψa Φ hΦ hint
+  obtain ⟨k, f, p, hf, hsum⟩ := _root_.GlobalTheory.CenFockGen.cenFock_fin D R.ψ R.θ hθ (G.Xp j) (G.Xp (j + 1)) νS νT PS PT hS hT (G.col t j) _ _ hA
     (fun z => (χ z)⁻¹) Φ' hΦ' heig
   have hcol := hCA.col t j hj
   choose F' hF' hI using fun (l : Fin k) (i : Fin n) => hcol (f l) (hf l) (F i).1 (F i).2

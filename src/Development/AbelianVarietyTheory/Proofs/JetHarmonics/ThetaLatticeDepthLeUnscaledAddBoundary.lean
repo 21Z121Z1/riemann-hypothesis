@@ -13,8 +13,8 @@ import Formalism.LocalToGlobal.ProjectiveLattices.DepRun
 import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
 import Formalism.LocalToGlobal.ProjectiveLattices.Adm3OfExtension
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.TheoremZeroSplitOfLocalAndSum
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaLatticeDepthLeAtPlacesPrimeToLevelStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaLatticeDepthLeAtPlacesOverLevelStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaLatticeDepthLeAtPlacesPrimeToLevel
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaLatticeDepthLeAtPlacesOverLevel
 
 open AlgebraicGeometry CategoryTheory NumberField IsLocalRing IsDedekindDomain
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.DVR ReciprocityTheory.ChartRestriction.G.DVR.QForm Formalism.L2.Pj Formalism.MainNotions.ModuliIntegralCharts.H1
@@ -26,7 +26,7 @@ theorem depth_le : (∀ (p : ℕ) [Fact p.Prime], Pdiv.ChartF.HTFSt p) → ∀ (
   intro hHT D T h j hj hinj EX w c hO hR la y
   by_cases hla : ∃ i : Fin 2, ((D.host.g i : ℕ) : 𝓞 T.Q.c.F) ∈ la.asIdeal
   · obtain ⟨i, hi⟩ := hla
-    exact GlobalTheory.T.thetaLatticeDepth_le_at_places_over_level hHT D T h j hj hinj EX w c hO hR la i hi y
-  · exact GlobalTheory.T.thetaLatticeDepth_le_at_places_prime_to_level D T h j hj hinj EX w c hO hR la (fun i hi => hla ⟨i, hi⟩) y
+    exact _root_.GlobalTheory.DepthOverLevel.depth_le_over_level hHT D T h j hj hinj EX w c hO hR la i hi y
+  · exact _root_.GlobalTheory.DepthPrimeToLevel.depth_le D T h j hj hinj EX w c hO hR la (fun i hi => hla ⟨i, hi⟩) y
 
 end GlobalTheory.RecDepth

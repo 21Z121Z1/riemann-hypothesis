@@ -18,7 +18,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.We
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlacesApart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralShiftExists
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLevelsGoodPrimesProperties
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceConjStabilizesFramedLatticeIffStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceConjStabilizesFramedLatticeIff
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsReductionOfMemLevelZero
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.L2.DIV Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Datum Formalism.L2.Forms MeasureTheory IsDedekindDomain NumberField Matrix
@@ -44,7 +44,7 @@ theorem GlobalTheory.TopLevQ.red_eq_zero_iff : ∀ {D : D7} {k : Type} [Field k]
       have e : (GlobalTheory.LocMod.ofSplit q).pr (z : D.host.E) = M i j - (M i j - (GlobalTheory.LocMod.ofSplit q).pr (z : D.host.E)) := by ring
       rw [e]
       exact lt_of_le_of_lt (Valuation.map_sub _ _ _) (max_lt hv h1)
-    obtain ⟨π', hπ, hred, -⟩ := GlobalTheory.T.exists_finiteAdele_projection_integral_reduction D k q PP hPP
+    obtain ⟨π', hπ, hred, -⟩ := _root_.GlobalTheory.FinPl.SplitPt.exists_lift_isRed D k q PP hPP
     have h6 : (GlobalTheory.LocMod.ofSplit q).pr (z : D.host.E) = (π'.comp (Formalism.L2.Herm.intAf D.host.F D.host.E).subtype) (Formalism.L2.DIV.oToS D.host.F D.host.E z) := (hπ _).symm
     rw [h6, ← hred.ker, Formalism.L2.DIV.resS_oToS] at h2
     rw [← hz, h2]

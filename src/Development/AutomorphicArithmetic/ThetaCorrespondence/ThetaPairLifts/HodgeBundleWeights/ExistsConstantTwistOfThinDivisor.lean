@@ -28,9 +28,18 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatLineC1LogBound
 import Development.AbelianVarietyTheory.Definitions.Divisors.HtValOnSubset
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMassSum
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformizationLawsOfGoodDeepCoverStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasUnramifiedIntegralFramedPointsOfGoodPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKeySectionInverseRootTwistingSectionSpreadStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformizationLawsOfGoodDeepCover
+import Development.AbelianVarietyTheory.Definitions.Divisors.NormNegCmConstantEqAtAllEmbeddings
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasUnramifiedIntegralFramedPointsOfGoodPlaces
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
+import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KchMul
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.FibreFramesOnModels
+import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CanonicalOfAbelianDeRham
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsKeySectionInverseRootTwistingSectionSpread
+import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTwSecOfConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulInvPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspOnRestrict
@@ -51,9 +60,9 @@ theorem exists_constant_twist_of_thin_divisor (hP : _root_.GlobalTheory.CovTop.P
     ∃ g ∈ cuspOn Y.U Z (wtOf (T.Q.Dw j) u 0), ∃ K : ℝ, 0 < K ∧
       ∀ z ∈ framesOn (Y.U σ) Z, ptN (modelWt (Y.U σ) (wtOf (T.Q.Dw j) u 0)) (rdU (Y.U σ) g) z =
         K * ptN (modelWt (Y.U σ) (wtOf (T.Q.Dw j) (u + parWt (T.Q.Dw j) w₀) m)) (rdU (Y.U σ) f) z := by
-  have hL := GlobalTheory.T.complexUniformizationLaws_of_goodDeepCover D T j Y e o hT hj hY
-  have hN := GlobalTheory.T.hasUnramifiedIntegralFramedPoints_of_goodPlaces hP.q18 hP.q1 hP.p5 _ _ _ Y.d.l₂ Y.d.Xo₂ Y.d.c₂ hL.pos
-  obtain ⟨hK, ht⟩ := GlobalTheory.T.exists_keySection_inverseRoot_twistingSection_spread _ _ _ _ _ _ _ Y.U hL.unf (xiR D) hL.xi hL.geo hL.pos hL.good hN
+  have hL := _root_.GlobalTheory.LawsDeep.laws_deep D T j Y e o hT hj hY
+  have hN := _root_.GlobalTheory.UnramPoint.unramPts hP.q18 hP.q1 hP.p5 _ _ _ Y.d.l₂ Y.d.Xo₂ Y.d.c₂ hL.pos
+  obtain ⟨hK, ht⟩ := _root_.GlobalTheory.KeyRootSpread.exists_twSec_keyRoot_spread _ _ _ _ _ _ _ Y.U hL.unf (xiR D) hL.xi hL.geo hL.pos hL.good hN
   obtain ⟨t, ht1, ht2⟩ := ht Z
   obtain ⟨s, -, -, -, hs1, hs2⟩ := (GlobalTheory.FlatTwisting.twSec_of_flat _ _ _ _ _ _ _ Y.U (xiR D) _ hK hL.unf hL.pos hN).1 Z (-w₀) _
       (FlatSec.shift (hasPts Y.U hL.pos hL.good hL.unf Z) (fun τ => (hF.nonempty Z τ).some) (-w₀))

@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LeviRep
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableZetaIntegrand
 import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnitaryAdmissibleMatrixCoefficient
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HermitianFormNormSqLeReMulReStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HermitianFormNormSqLeReMulRe
 
 noncomputable section
 
@@ -83,7 +83,7 @@ theorem continuous_coef (hσ : IsSmooth σ) (v w : V) : Continuous (coef σ Bf v
 theorem norm_coef_le (hs : ∀ v w, Bf w v = starRingEnd ℂ (Bf v w)) (hp : ∀ v, v ≠ 0 → 0 < (Bf v v).re)
     (hu : ∀ g v w, Bf (σ g v) (σ g w) = Bf v w) (v w : V) (g : GL (Fin r) k) :
     ‖coef σ Bf v w g‖ ≤ √((Bf v v).re * (Bf w w).re) := by
-  have h := GlobalTheory.T.hermitian_norm_sq_le_re_mul_re_of_posDef V Bf hs hp (σ g⁻¹ v) w
+  have h := _root_.GlobalTheory.hermitianForm_norm_sq_le_re_mul_re V Bf hs hp (σ g⁻¹ v) w
   rw [hu] at h
   exact Real.le_sqrt_of_sq_le h
 

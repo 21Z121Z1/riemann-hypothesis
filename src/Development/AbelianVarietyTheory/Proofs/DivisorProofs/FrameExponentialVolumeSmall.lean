@@ -9,10 +9,10 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.MulSmulIdemMem
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualTr
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FundSetMeasStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormPeakAtInjectiveChartFrameStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspFormPeakAtInjectiveChartFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeepCongruenceElementSeparatesChartBallThickFramStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualAndPrincipalCongruenceOrbitsOfGoodLevelStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormLowerBoundBergmanFunctionOnComponentStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualAndPrincipalCongruenceOrbitsOfGoodLevel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormLowerBoundBergmanFunctionOnComponent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusLengthLowerBoundQuotient
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexUniformizationLawsOfGoodDeepCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HostBoundHolds
@@ -25,8 +25,8 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.O
 import Formalism.LocalToGlobal.ProjectiveLattices.ModelAt
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.ExtFStatementPfA
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.FundSetPf
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitriangularChartMemDomainSmallBallStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelWeightGapL1CardBoundStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitriangularChartMemDomainSmallBall
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelWeightGapL1CardBound
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.BasicNotions.TH Formalism.L2.Theta ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.CompHt GlobalTheory.CovTop GlobalTheory.BigTop GlobalTheory.CovHt
 
@@ -36,7 +36,7 @@ open ReciprocityTheory.ChartRestriction.G.AR.Up ReciprocityTheory.ChartRestricti
 
 theorem cpt_mem_dom_small : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : ℕ) (X : Data E r)
     (x : Frame X.Ψ r) (z : ReciprocityTheory.L2DbarEstimates.V (nd X)), IsOrth X x → ‖z‖ ≤ 1 / (100 * (r : ℝ) ^ 2) →
-    cpt X x z ∈ X.dom := GlobalTheory.T.unitriangularChart_mem_domain_small_ball
+    cpt X x z ∈ X.dom := _root_.GlobalTheory.ChartDomain.cpt_mem_dom_of_norm_le
 
 theorem ball_injects : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : ReciprocityTheory.ChartRestriction.G.Geo.Tor.Host E)
     (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l) (σ : c.F →+* ℂ) (r : ℕ) (U : Unf Xo c σ r),
@@ -47,7 +47,7 @@ theorem ball_injects : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H
       ‖z'‖ ≤ 1 / (100 * (r : ℝ) ^ 2) → ∀ b ∈ Bor (U.X k).Ψ r,
       lact γ (cpt (U.X k) x z) = rmul (cpt (U.X k) x z') b → γ = 1 := by
   intro E _ _ _ H Dw l Xo c σ r U hσ hU hl hp hq k x hx hM γ hγ z z' hz hz' b hb he
-  obtain ⟨hsd, horb⟩ := GlobalTheory.T.selfDual_and_principalCongruence_orbits_of_goodLevel E H Dw l Xo c σ r U hσ hU hl hp hq k
+  obtain ⟨hsd, horb⟩ := _root_.GlobalTheory.EqCovol.selfDual_and_congr_of_isUnf E H Dw l Xo c σ r U hσ hU hl hp hq k
   have hwd : cpt (U.X k) x z ∈ (U.X k).dom := cpt_mem_dom_small E r (U.X k) x z hx hz
   obtain ⟨γ', hγ'U, hγ'c, b', hb', he'⟩ := horb γ hγ _ hwd
   have h1 : lact γ' (cpt (U.X k) x z) =
@@ -70,7 +70,7 @@ theorem modelWt_shape : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     (∀ τ (a b : Fin r), (a : ℕ) = 0 → (b : ℕ) = r - 1 →
       g ≤ (modelWt U (wtOf Dw u1 0) k τ b : ℝ) - modelWt U (wtOf Dw u1 0) k τ a) ∧
     (∑ τ, ∑ a, |(modelWt U (wtOf Dw u1 0) k τ a : ℝ)|) = l1 u1 ∧
-    (U.X k).Ψ.card = Nat.card (Psi H) := GlobalTheory.T.model_weight_gap_l1_card_bound
+    (U.X k).Ψ.card = Nat.card (Psi H) := _root_.GlobalTheory.ModelWtGap.model_weight_gap_l1_card
 
 theorem orth_transfer : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (r : ℕ) (X : Data E r)
     (la : Wt X.Ψ r) (y : Frame X.Ψ r), y ∈ X.dom → ∃ x, IsOrth X x ∧ X.firstMinimumSq x = X.firstMinimumSq y ∧

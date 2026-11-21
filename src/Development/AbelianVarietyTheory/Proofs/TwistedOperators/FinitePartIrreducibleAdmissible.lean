@@ -16,10 +16,10 @@ import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.Ra
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdelicUnitaryClosureLocalComponentsOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFixed
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryRepEqFiniteSmoothPartTensorDisStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IrreducibleUnitaryRepEqFiniteSmoothPartTensorDis
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesFactorLocalStable
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFinsetSumTranslatesFixedCompactSubgroupStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SpanValuesDenseFinitePartSubrepStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SpanValuesDenseFinitePartSubrep
 
 open MeasureTheory Set Filter NumberField IsDedekindDomain
 open GlobalTheory.AdelicU GlobalTheory.OpTrace GlobalTheory.Orb GlobalTheory.AutomorphicL2Unitary GlobalTheory.AutMult Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
@@ -88,7 +88,7 @@ theorem irreducible [CompleteSpace H] (hπ : IsIrrUnitary π) (hD : HasDSComp M 
     exact inner_eq_bePi (fun τ => isIrrUnitary_dsRep M τ) hunit (Φ : homDS M π ⊤).2 (Φ' : homDS M π ⊤).2 y y'
 
   have hne : ∃ w : smoothPart (finPartDS M hU), w ≠ 0 := by
-    obtain ⟨T, -, -, hTd⟩ := GlobalTheory.T.irreducibleUnitaryRep_eq_finiteSmoothPart_tensor_discreteSeries D V S M H π hπ hD hU
+    obtain ⟨T, -, -, hTd⟩ := _root_.GlobalTheory.TrCopy.isCopyFinDS_finPartDSSm D V S M H π hπ hD hU
     by_contra hc
     push_neg at hc
     have h0 : Submodule.span ℂ {v | ∃ w y, v = T w y} = ⊥ := by
@@ -108,7 +108,7 @@ theorem irreducible [CompleteSpace H] (hπ : IsIrrUnitary π) (hD : HasDSComp M 
   by_cases hN : N = ⊥
   · exact Or.inl hN
   refine Or.inr (Subrepresentation.toSubmodule_injective (eq_top_iff.2 fun Φ _ => ?_))
-  have hdense := GlobalTheory.T.span_values_dense_finitePartSubrep D V S M H π hπ hU N hN
+  have hdense := _root_.GlobalTheory.TrFinDense.span_values_dense D V S M H π hπ hU N hN
   obtain ⟨K0, hK0o, hK0c⟩ := GlobalTheory.CuspDec.exists_compact_open V
   have hΦo : IsOpen ((stabGroup (finPartDSSm M hU) Φ : Subgroup (GfC V)) : Set (GfC V)) := by
     have e : {g : GfC V | finPartDSSm M hU g Φ = Φ} = {g | finPartDS M hU g Φ = Φ} :=

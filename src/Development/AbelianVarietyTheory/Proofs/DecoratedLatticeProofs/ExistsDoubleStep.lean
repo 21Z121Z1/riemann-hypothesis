@@ -9,7 +9,7 @@ import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
 import Development.AbelianVarietyTheory.Definitions.Foundations.EqPlaceIdemOfIsPrimeIdem
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StandardCharacterConductorAlmostAll
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlaceIdempotentActsOnSupportedAndOffStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PlaceIdempotentActsOnSupportedAndOff
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ContinuousCharacterFiniteOrderIntegralUnits
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsGaloisConjugatesHeckeCharTrivialOnRealIdel
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsBaseChangeFiniteAdeleRingEquiv
@@ -42,7 +42,7 @@ theorem sec_mem_idAt (a : k) : q.sec a ∈ idAt D (· = q.v) := by
   obtain ⟨ε, hε, hsum⟩ := q.above
   obtain ⟨hee, hec, -⟩ := q.split
   have he : q.e ∈ idAt D (· = q.v) := by
-    refine ((GlobalTheory.T.placeIdempotent_acts_on_supportedAndOff D q.v ε hε).1 q.e).2 ?_
+    refine ((_root_.GlobalTheory.FinPl.placeIdem_acts D q.v ε hε).1 q.e).2 ?_
     rw [← hsum, add_mul, hee, mul_comm (cA D q.e), hec, add_zero]
   have h : q.e * q.sec a = q.sec a := GlobalTheory.LocChar.e_mul_ι (ofSplit q) a
   rw [← h]

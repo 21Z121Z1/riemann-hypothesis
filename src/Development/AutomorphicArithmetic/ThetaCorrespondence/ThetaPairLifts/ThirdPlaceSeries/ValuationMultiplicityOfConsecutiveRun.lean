@@ -4,7 +4,12 @@ import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.Hodg
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ExistsNonzeroSectionWeightBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentredPointPhiPositiveWeights
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpace
+import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightParameterStrictAntitone
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
@@ -42,7 +47,10 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormStalkIntegr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IInfThRuleLeNuLocOf
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateAny
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateEqUnitMulNormaliserThetaVa
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHoldStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHold
+import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsShortPeriodLatticeBasisBalancedSlope
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsProductDataCopiesTrivialisationValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLocusExponentLeOscillationNonTypePrime
@@ -100,7 +108,7 @@ theorem valuation_multiplicity_of_consecutive_run_alt : _root_.GlobalTheory.CovT
     have h : 4 ≤ (Fm.D x ι).R.ord := (Fm.D x ι).host.four_le_n'
     omega
   have hCI : ∀ la, CuspIso TF.X Z Y.U la := fun la =>
-    ⟨GlobalTheory.T.cuspForms_extend_vanish_compactifiedFlagSpace _ _ _ Y _ _ hY.1 hf Z TF _, vanBd_le_space _ _ _ Y _ _ hY.1 hf Z TF _⟩
+    ⟨_root_.GlobalTheory.CompHS.cusp_extends_comp _ _ _ Y _ _ hY.1 hf Z TF _, vanBd_le_space _ _ _ Y _ _ hY.1 hf Z TF _⟩
   have hfree := _root_.GlobalTheory.T.hodge_bundle_base_point_free_on_open hP' hGD hQ hP.q15 hP.q16 hS hT.toroidalChartsForFan hL _ _ _ _ _ _ TF Z _ Y.U hY.1.geo
     hB.one_le _ (gaps_of_wtBig _ _ _ _ hB _ List.mem_cons_self).2 (hCI _)
   refine valMult_of_section TF.X Z Y.U (GlobalTheory.VarFlag.isVariety₀_flag _ _ _ _ _ _ TF Z hY.1.geo) hCI ?_ hfree θ hθ

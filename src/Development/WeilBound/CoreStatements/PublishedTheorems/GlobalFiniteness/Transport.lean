@@ -5,7 +5,9 @@ import GroundTheory.ProfiniteCohomology.RestrictedRamification.IsUnramifiedOutsi
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Finite
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.NormalSubgroupLeUnramifiedFixingStatement
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GaloisUnramifiedOutsideCohomologyStatement
+import Mathlib
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.GaloisUnramifiedOutsideCohomology
+import GroundTheory.ProfiniteCohomology.ContinuousCochains
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CohomologicalDimensionTopologicalIso
 
 noncomputable section
@@ -21,7 +23,7 @@ theorem gsEquiv (F Ω : Type) [Field F] [NumberField F] [Field Ω] [Algebra F Ω
   let φ : G F Ω →* Gal(E/F) := AlgEquiv.restrictNormalHom E
   have hφs : Function.Surjective φ := AlgEquiv.restrictNormalHom_surjective Ω
   have hNS : NS Ω S = (maxUnramifiedOutside F Ω S).fixingSubgroup :=
-    le_antisymm (GlobalTheory.T.normal_subgroup_le_unramified_fixing F Ω S) (GlobalTheory.T.galois_unramified_outside_cohomology F Ω S)
+    le_antisymm (GlobalTheory.T.normal_subgroup_le_unramified_fixing F Ω S) (_root_.GlobalTheory.CompanionTheory.Glob.InertiaLift.fixingSubgroup_le_NS F Ω S)
   have hker : φ.ker = NS Ω S := by
     rw [hNS]
     ext σ

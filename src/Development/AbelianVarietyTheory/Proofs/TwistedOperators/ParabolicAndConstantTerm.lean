@@ -1,10 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ConstantTermVanishing
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMapInfFinEquivEqProd
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TotallyIsotropicDimBoundsOddRankStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotropicStabilizerSplitPlaceInConjParabolicsStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeIdempotentUnipotentIntegralVanishSplitPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentIntegralsPureTensorVanishOfLocalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TotallyIsotropicDimBoundsOddRank
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotropicStabilizerSplitPlaceInConjParabolics
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TypeIdempotentUnipotentIntegralVanishSplitPlace
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentIntegralsPureTensorVanishOfLocal
 
 noncomputable section
 
@@ -53,12 +53,12 @@ theorem parabolicAtSplitPlaces : ParabolicAtSplitPlaces := by
   let i : Fin (𝔉.k + 1) := ⟨1, Nat.succ_lt_succ hP⟩
   have hi : i ≠ 0 := Fin.ne_of_val_ne one_ne_zero
   have hW := 𝔉.isIsotropic hi
-  obtain ⟨h0, h2⟩ := GlobalTheory.T.totallyIsotropic_dim_bounds_oddRank D V hodd _ hW
+  obtain ⟨h0, h2⟩ := _root_.GlobalTheory.IsoDim.isotropic_dim_bounds D V hodd _ hW
   refine ⟨_, h0, h2, fun v => ?_⟩
   have hle : parAt 𝔉 (T.frame v) ≤ (GlobalTheory.IndefiniteRowSideFullHecke.AdelicUnitaryGroups.parab D.sp.cm V (Fv D.host.F v.1) (𝔉.X i)).map
       ((T.frame v).equiv : GLoc D.sp.cm.sig V.gram v.1 →* GL (Fin V.rank) (Fv D.host.F v.1)) :=
     Subgroup.map_mono (𝔉.par_le_parab _ _ i)
-  obtain ⟨h3, h4⟩ := GlobalTheory.T.isotropicStabilizer_splitPlace_inConjParabolics D V v.1 (T.frame v) _ hW
+  obtain ⟨h3, h4⟩ := _root_.GlobalTheory.SplitStab.splitStab D V v.1 (T.frame v) _ hW
   exact ⟨inConjParabolic_mono hle h3, inConjParabolic_mono hle h4⟩
 
 end GlobalTheory.Proof.parabolic_and_constant_term

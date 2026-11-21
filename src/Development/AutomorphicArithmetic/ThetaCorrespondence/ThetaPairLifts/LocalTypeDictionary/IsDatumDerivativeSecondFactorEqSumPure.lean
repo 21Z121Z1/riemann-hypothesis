@@ -6,8 +6,8 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualit
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.HoweDualityReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfComponentTensorAdelicFunctionEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodSplitPlaceTranslationActsThroughWeil
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzDatumEqOfThetaFunctionEqStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelStandardCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzDatumEqOfThetaFunctionEq
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelStandardCharacter
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ThetaSumDifferentiableAlongLine
 
@@ -59,7 +59,7 @@ theorem isDatum_derivative_second_factor_eq_sum_pure : _root_.GlobalTheory.FunPr
       simp only [hval]
       exact hDer (cB u)
     exact h1.unique h2
-  exact GlobalTheory.T.schwartzDatum_eq_of_thetaFunction_eq Γ.M' ψ hstd cB Φ'D _ Φ' hΦ'D hnew
+  exact _root_.GlobalTheory.ThetaInj.theta_inj Γ.M' ψ hstd cB Φ'D _ Φ' hΦ'D hnew
 end GlobalTheory.SquareAgree.LieDat
 end
 

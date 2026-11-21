@@ -8,15 +8,19 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ApplyAt0Smul
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DefiniteThetaPairTermsNormsIndependentRepresenta
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.InducedTypeThetaGenusOnePermutes
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsWeilDatumComplexConjugateOfNegHermitianSpace
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumFinitePartMovesVacuumAsThetaModelStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedThetaFunctionsReadOfMovedVacuumReadsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumFinitePartMovesVacuumAsThetaModel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormPeriodSq
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedThetaFunctionsReadOfMovedVacuumReads
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdelicThetaReadsCurveThetaFunctionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntire
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VacuumUnderAdelicPairModulusOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedVacuumReads
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTripleThetaKernelMinorsEqConstConjJet
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterFiniteIdeleValueEqStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRationalPointOfMemMovedThetaLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterFiniteIdeleValueEq
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsApprox
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsRationalPointOfMemMovedThetaLattice
+import Development.AbelianVarietyTheory.Definitions.Foundations.NormSumPairRankZeroOfCurveCoordNorm
+import Formalism.PairingDivisors.StatementH
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.Theta IsDedekindDomain NumberField Finset MeasureTheory
 open Formalism.MainNotions.TaylorLogMetric Formalism.MainNotions.StandardLatticesGL3 Formalism.L2.Indef.Tree.ArchimedeanLeafBounds.Cuts
 open Formalism.DivisionValues (vw)
@@ -81,7 +85,7 @@ theorem reads_of_fock {ψ : AddChar (AF D.host.F) ℂ} {θ : InfFam D} {S T : HS
     (GlobalTheory.NormExact.heisO_finPt_reads ψ θ S T hS hT cc δ r hset G f hR z).smul _
   obtain ⟨n, hn, hL⟩ := GlobalTheory.T.weilPair_moves_phasedHeisenbergTranslate ψ θ S T hS hT cc δ r hset χS χT om hom 1 1 1 1 (isFinPt_one S hS) (isFinPt_one T hT) f hf 0
   refine ⟨G, ⟨hG, n, hn, fun x hx => ?_⟩, hR⟩
-  obtain ⟨z, rfl, hz⟩ := GlobalTheory.T.exists_rationalPoint_of_mem_movedThetaLattice D (GlobalTheory.InducedType.induced_type D).1 cc δ hset.crv.1.1 a d 1 1 _ _
+  obtain ⟨z, rfl, hz⟩ := _root_.GlobalTheory.NormSum.exists_pt_of_mem_La_moved D (GlobalTheory.InducedType.induced_type D).1 cc δ hset.crv.1.1 a d 1 1 _ _
     (GlobalTheory.NormSum.VacMove.moves_one D a) (GlobalTheory.NormSum.VacMove.moves_one D d) x hx
   simp only [OneMemClass.coe_one, inv_one, Units.val_one, Matrix.one_mul, Matrix.mul_one] at hz
   have hp : n • pt D (tor0 D cc δ) δ z = pt D (tor0 D cc δ) δ (n • z) := by
@@ -126,8 +130,8 @@ theorem bottom_finParts {T : Type} {L : LevCh D T} {sc : GlobalTheory.ChiGrid.Co
     HasFinPart ((G.ch.chi (D.R.m - i) * L.eta ^ (rankV D i j % 2)) /
       (L.mu s (j + 1) * L.eta ^ (rankV D i j % 2)))⁻¹ P.W.chV' (-P.W.ep') := by
   refine ⟨fun x y hxy => ?_, fun x y hxy => ?_⟩
-  · have h1 := GlobalTheory.T.heckeCharacter_finiteIdele_value_eq _ _ (G.ch.chi_eq (D.R.m - i) (by omega) (by omega)) x y hxy
-    have h2 := GlobalTheory.T.heckeCharacter_finiteIdele_value_eq _ _ hL.eta x y hxy
+  · have h1 := _root_.GlobalTheory.FinIdlRead.chr_finIdl _ _ (G.ch.chi_eq (D.R.m - i) (by omega) (by omega)) x y hxy
+    have h2 := _root_.GlobalTheory.FinIdlRead.chr_finIdl _ _ hL.eta x y hxy
     have e : (betaH G i j)⁻¹.1 (GlobalTheory.Mem.Col2.SplitChar.finIdl D y) =
         ((G.ch.chiH (D.R.m - i)).1 (GlobalTheory.Mem.Col2.SplitChar.finIdl D y) *
           L.C.eta.1 (GlobalTheory.Mem.Col2.SplitChar.finIdl D y) ^ (rankV D i j % 2))⁻¹ := rfl
@@ -140,7 +144,7 @@ theorem bottom_finParts {T : Type} {L : LevCh D T} {sc : GlobalTheory.ChiGrid.Co
     have e : (nuH G s i j)⁻¹.1 (GlobalTheory.Mem.Col2.SplitChar.finIdl D y) =
         ((nuH G s i j).1 (GlobalTheory.Mem.Col2.SplitChar.finIdl D y))⁻¹ := rfl
     rw [eν, zpow_neg, hB.chars.2 y, e, inv_inv]
-    exact GlobalTheory.T.heckeCharacter_finiteIdele_value_eq _ _ (chrEq_nu G s i j hL) x y hxy
+    exact _root_.GlobalTheory.FinIdlRead.chr_finIdl _ _ (chrEq_nu G s i j hL) x y hxy
 
 end GlobalTheory.BotIntertw
 

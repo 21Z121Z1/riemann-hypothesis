@@ -4,7 +4,11 @@ import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.CoeSelfD
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsIsometryOfSabMap
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeExistsUniqueOfSamePoint
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LowerTriIsUnitDet
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeByMatricesReflAndCompStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FrameChangeByMatricesReflAndComp
+import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame
+import Formalism.LocalToGlobal.ProjectiveLattices.AllTest
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsLieBasis
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.SecBaseChangeAnySt
 
 set_option autoImplicit false
 
@@ -67,7 +71,7 @@ theorem exists_frBor_gen (z y : FrPt Xo c (CAt σ)) (hx : y.x = z.x) (hu : y.u =
   refine ⟨a, (GlobalTheory.Frames.frBor_iff_frChg _ _ _).2 ⟨fun _ => 1, fun τ i j hij => Matrix.one_apply_ne hij.ne,
       fun τ i => Matrix.one_apply_eq i, hx, fun τ i => ?_, hbc⟩⟩
   rw [hu]
-  exact (GlobalTheory.T.frameChangeByMatrices_refl_and_comp E H Dw l Xo c (CAt σ) z z z).1.2.1 τ i
+  exact (_root_.GlobalTheory.Frames.frChg_refl_and_comp E H Dw l Xo c (CAt σ) z z z).1.2.1 τ i
 
 theorem exists_pinned_of_isUnf {U : Formalism.L2.PjFree.Unf Xo c σ r} (hU : Formalism.L2.PjFree.IsUnf U) :
     ∃ (g : ℕ) (e : Fin g ≃ Σ τ : E →+* ℂ, Fin (Dw.mult τ))

@@ -10,21 +10,22 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.De
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DepthZeroSupport
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGlobalAboveL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SideMultiplicityFamily
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyTypePlaceCompletionIdentStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyTypePlaceCompletionIdent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsClassMapCorrespondence
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTypeComponents
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameSupportCompatible
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesIdempotentStarCompatibleOfLabellingAgreeStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SeriesIdempotentStarCompatibleOfLabellingAgree
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasLabelOfIsCuspOf
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameParameterCoupled
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DepthZeroSupercuspidalCuspidalModule
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjugateVectorInSubspace
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabFixedOfTypesTrue
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.InfinitesimalCharacterReference
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CongruenceLengthTwistedPlacesOfHeckeIntegralityStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedPlaceInnerProductClassSumRowsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CongruenceLengthTwistedPlacesOfHeckeIntegrality
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsWildInertiaCyclotomicElement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedPlaceInnerProductClassSumRows
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BuiltEx
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GaloisSideTwistedSelmerAuxiliaryPrimes
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SemisimpleOfInjective
@@ -59,7 +60,7 @@ set_option synthInstance.maxHeartbeats 400000 in
 theorem exists_etaJ_alt : _root_.GlobalTheory.HeightCounting.Up.PublishedInputsThirdLayerAlt → ∀ hL : _root_.UpperTheory.Zero.LLC.RecTExists, _root_.GlobalTheory.HeightCounting.Up.PointStatement hL → AllSt fun _ _ _ _ _ P x => ∀ l : _root_.GlobalTheory.HeightCounting.Up.StrictHenselianAcyclicLevel hL x, _root_.GlobalTheory.CoefDuty.ForcedByAutomorphicSemisimpleData l.a.A l.mt.M l.c.ch l.c.tp.tup fun D' => SumRepresentations.hypO D' → ∀ j v, 1 ≤ j → j ≤ (Dof x).R.m → ∀ v' : D'.what₂.places.Pl, HEq v' v → D'.what₂.etaJ j v' = P.q.eta j v := by
   intro hPr hL hPt
   have hG := _root_.GlobalTheory.T.allSt_goodFTAll_of_levelA hPr hL
-  have hI := GlobalTheory.T.twistedPlace_innerProduct_classSum_rows
+  have hI := _root_.GlobalTheory.FormInner.sumTw_rows
   have hcheb := GlobalTheory.ChebSplitDense.chebSplit_nd hPr.what₂.cheb
   unfold _root_.GlobalTheory.HeightCounting.Up.PointStatement at hPt
   unfold AllSt at hPt hG ⊢

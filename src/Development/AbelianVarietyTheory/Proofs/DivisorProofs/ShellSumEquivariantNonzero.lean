@@ -2,7 +2,7 @@ import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndicatorIntMMemSB
 import Development.AbelianVarietyTheory.Definitions.Divisors.DiscreteSeriesHermitianUnique
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ScaledIntegerPeriodic
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaIntegralShellsVanishBeyondPeriodRamifiedStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaIntegralShellsVanishBeyondPeriodRamified
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsMulLeftInvariantVolGL
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CartanAntitone
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Cartan
@@ -57,7 +57,7 @@ variable {ϖ : kˣ} {ν : kˣ →* ℂˣ} {e : ℕ}
 theorem finite_shells (hϖ : IsUnif ϖ) (hram : ¬ IsUnram ν) (hcond : CondLE ϖ e ν) {a : ℕ}
     {φ : Matrix (Fin a) (Fin a) k → ℂ} (hφ : φ ∈ SB (Matrix (Fin a) (Fin a) k)) :
     {m : {m : Fin a → ℤ // Antitone m} | ∃ z : ℂ, shell (haarVol (KO k (Fin a))) ϖ ν z φ m.1 ≠ 0}.Finite :=
-  (GlobalTheory.T.zetaIntegralShells_vanish_beyondPeriod_ramified k ϖ hϖ ν e hram hcond a (haarVol (KO k (Fin a))) φ hφ).2.2.2
+  (_root_.GlobalTheory.ShellVan.shell_lemma k ϖ hϖ ν e hram hcond a (haarVol (KO k (Fin a))) φ hφ).2.2.2
 
 theorem support_finite (hϖ : IsUnif ϖ) (hram : ¬ IsUnram ν) (hcond : CondLE ϖ e ν) {a : ℕ}
     {φ : Matrix (Fin a) (Fin a) k → ℂ} (hφ : φ ∈ SB (Matrix (Fin a) (Fin a) k)) (w : ℂ) :

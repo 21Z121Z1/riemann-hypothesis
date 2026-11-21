@@ -3,7 +3,7 @@ import Formalism.SharpRestriction.LevelLetterCocycles.UsedLocalConclusion
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NotFullBot
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqTopOfSpanImage
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeGaloisTrivialModUniformizer
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeHeightsFromHodgeJumpsStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachLatticeHeightsFromHodgeJumps
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemWachNOfMapMemSaturatedStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FontaineAndDecompletion
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneNotMemFilOne
@@ -115,7 +115,7 @@ theorem crystalline_extension_integral_cocycle_all_places : ∀ (D : Formalism.B
     · exact hjT τ i hτ a h1
     · rw [hjs.2 τ a h1]
       exact ⟨by simp, by simp⟩
-  have h5 := (GlobalTheory.T.wachLattice_heights_from_hodgeJumps D HW F Cm l K s LL h Tp M hh hTp hjTp).1
+  have h5 := (_root_.GlobalTheory.NL.Heights.heights_from_jumps D HW F Cm l K s LL h Tp M hh hTp hjTp).1
   have h2 := (GlobalTheory.NL.WachLatticeTrivialModUniformizer.wachLattice_galois_trivial_mod_uniformizer D HW F Cm l K s LL h Tp hTp).2.2
   exact core _ T Tp ι π M (fun y hy => (hexact y).1 hy) hsat h5 h2 e hφe hγe x hx c hc
 

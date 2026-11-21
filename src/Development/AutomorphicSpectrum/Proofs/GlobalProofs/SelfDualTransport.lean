@@ -7,7 +7,7 @@ import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.Coordin
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteComponentCoordinatesAction
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateBijectionTraceForm
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.TupOfCv
-import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsSchwartzBruhatCompactSupportNonzeroStatement
+import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsSchwartzBruhatCompactSupportNonzero
 
 noncomputable section
 
@@ -20,7 +20,7 @@ open scoped TensorProduct ENNReal Matrix NumberField.AdeleRing
 
 variable {F : Type} [Field F] [NumberField F] {ι : Type} [Fintype ι] [DecidableEq ι]
 
-theorem exists_test : ∃ f ∈ schwartzBruhatPi F ι, HasCompactSupport f ∧ f 0 ≠ 0 := GlobalTheory.T.exists_schwartzBruhat_compact_support_nonzero F ι
+theorem exists_test : ∃ f ∈ schwartzBruhatPi F ι, HasCompactSupport f ∧ f 0 ≠ 0 := _root_.GlobalTheory.CompanionTheory.Hypotheses₂.CompactTest.exists_compactSupport_ne_zero F ι
 
 theorem selfDual_eq (G : Matrix ι ι F) (hs : G.IsSymm) (hG : G.det ≠ 0) (ν : Measure (ι → 𝔸[F]))
     (h : Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes.SelfDual ν (chiG G)) : ν = adeleMeasurePi F := by

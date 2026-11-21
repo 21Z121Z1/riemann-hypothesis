@@ -1,12 +1,13 @@
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.DepthPays
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesCoefficientsCuspidalIffOneSided
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemOffP
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClosedUnipotentRadicalAtRealPlaceTrivialAtPlacStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalAtRealPlaceCommuteInfTrivialStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClosedUnipotentRadicalAtRealPlaceTrivialAtPlac
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalAtRealPlaceCommuteInfTrivial
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalEqAtRealPlaceMulTrivialAtPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelIndicatorTestFunctionFactorAtRealPlaceStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealComponentFrameHomUnitaryDiagStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClosedEmbeddingRealComponentUnipotentRadicalStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LevelIndicatorTestFunctionFactorAtRealPlace
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRealComponentFrameHomUnitaryDiag
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsClosedEmbeddingRealComponentUnipotentRadical
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.IndefR.Mult Formalism.L2.DIV
 open IsDedekindDomain NumberField MeasureTheory GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.Grow
 open GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup (coefPlus Cols SizeRows)
@@ -49,12 +50,12 @@ theorem isHaarSub_top {H : Type} [Group H] [TopologicalSpace H] [IsTopologicalGr
 theorem L_closed (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) {r : ℕ} (C : Matrix (Fin V.rank) (Fin r) D.host.E)
     (τ : D.what₂.Tau) :
     IsClosed (atP θ V C τ : Set (NI V C)) ∧ IsClosed (offP θ V C τ : Set (NI V C)) :=
-  GlobalTheory.T.isClosed_unipotentRadical_atRealPlace_trivialAtPlace D θ hθ V r C τ
+  _root_.GlobalTheory.FibreAtTau.isClosed_atP_and_isClosed_offP D θ hθ V r C τ
 
 theorem L_comm (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) {r : ℕ} (C : Matrix (Fin V.rank) (Fin r) D.host.E)
     (τ : D.what₂.Tau) :
     (∀ p ∈ atP θ V C τ, ∀ q ∈ offP θ V C τ, p * q = q * p) ∧ ∀ h, h ∈ atP θ V C τ → h ∈ offP θ V C τ → h = 1 :=
-  GlobalTheory.T.unipotentRadical_atRealPlace_commute_inf_trivial D θ hθ V r C τ
+  _root_.GlobalTheory.FibreAtTau.comm_and_inf_trivial D θ hθ V r C τ
 
 theorem L_decomp (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) {r : ℕ} (C : Matrix (Fin V.rank) (Fin r) D.host.E)
     (hC : IsIsoFrame V C) (τ : D.what₂.Tau) (h : NI V C) : ∃ p ∈ atP θ V C τ, ∃ q ∈ offP θ V C τ, h = p * q :=
@@ -65,12 +66,12 @@ theorem L_factor (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) (S : D.what₂.
     (C : Matrix (Fin V.rank) (Fin r) D.host.E) (q : NI V C) (hq : q ∈ offP θ V C τ) (x y : GA D V) :
     ∃ R : ℂ, ∀ p ∈ atP θ V C τ, coef θ M K v a (x * ((p * q : NI V C) : GA D V) * y) =
       ⟪v τ, M.rep τ (cmp θ τ x * cmp θ τ (p : GA D V) * cmp θ τ y) (a τ)⟫_ℂ * R :=
-  GlobalTheory.T.levelIndicatorTestFunction_factor_atRealPlace D θ hθ V S M K v a τ r C q hq x y
+  _root_.GlobalTheory.FibreAtTau.coef_factor D θ hθ V S M K v a τ r C q hq x y
 
 theorem L_hom (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) (S : D.what₂.Tau → SPar) (M : DSModel V S)
     (τ : D.what₂.Tau) : ∃ E : GA D V →* Formalism.REAL.UJ (M.ε τ),
       ∀ g, Formalism.MainNotions.S.umat (E g) = M.fr τ * cmp θ τ g * (M.fr τ)⁻¹ :=
-  GlobalTheory.T.exists_realComponent_frame_hom_unitaryDiag D θ hθ V S M τ
+  _root_.GlobalTheory.FibreAtTau.cmp_frame_hom D θ hθ V S M τ
 
 theorem L_emb (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) (S : D.what₂.Tau → SPar) (M : DSModel V S)
     (τ : D.what₂.Tau) {r : ℕ} (C : Matrix (Fin V.rank) (Fin r) D.host.E) (hC : IsIsoFrame V C)
@@ -78,6 +79,6 @@ theorem L_emb (θ : InfFam D) (hθ : IsInfFam θ) (V : HSp D) (S : D.what₂.Tau
     ∃ W : Submodule ℂ (Fin V.rank → ℂ), GlobalTheory.Dec.IsIsoC (M.ε τ) W ∧
       Topology.IsClosedEmbedding (fun p : atP θ V C τ => E ((p : NI V C) : GA D V)) ∧
       Set.range (fun p : atP θ V C τ => E ((p : NI V C) : GA D V)) = GlobalTheory.Dec.NW (M.ε τ) W :=
-  GlobalTheory.T.isClosedEmbedding_realComponent_unipotentRadical D θ hθ V S M τ r C hC E hE
+  _root_.GlobalTheory.FibreAtTauEmb.isClosedEmbedding_atP D θ hθ V S M τ r C hC E hE
 
 end GlobalTheory.FibreAtTau

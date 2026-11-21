@@ -30,7 +30,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanon
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalIntegralWeightSection
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ToroidalChartsForFan
@@ -48,11 +48,12 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulEqOfGeneri
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPositivityPrincipalisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightPositivityPrincipalisationDeep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivLeSubMulDiv
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralBaseChangeRationalFunctionFieldFiniteVStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimFieldBaseChangeLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralBaseChangeRationalFunctionFieldFiniteV
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsAlgClosedBaseChange
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimFieldBaseChangeLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModificationLineBundleGlobalSectionsDimPullEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopSelfIntersectionNefLeCuspFormGrowthStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOrIsEmptyGenericMemberLinearSystemStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOrIsEmptyGenericMemberLinearSystem
 
 set_option autoImplicit false
 
@@ -197,8 +198,8 @@ theorem exists_step {k : Type} [Field k] {X : Scheme.{0}} [IsIntegral X] [a : Al
   set f' := pullback.snd f (spMap (algebraMap k K))
   letI := algebraΓOfHom f'
   obtain ⟨hpr, -⟩ := (isProjOver_iff_isProper_and_exists_isAmpleLB f).1 hp
-  have := GlobalTheory.T.isIntegral_baseChange_rationalFunctionField_finiteVars k N X _ f f' π H
-  obtain ⟨t, ht, hH⟩ := GlobalTheory.T.isIntegral_or_isEmpty_generic_member_linearSystem k N X _ f f' π H L hLB b hb
+  have := _root_.GlobalTheory.PureTransc.isIntegral_of_isPullback k N X _ f f' π H
+  obtain ⟨t, ht, hH⟩ := _root_.GlobalTheory.GenericMember.isIntegral_or_isEmpty_zeroScheme k N X _ f f' π H L hLB b hb
   have hp' : IsProjOver (strHom K (pullback f (spMap (algebraMap k K)))) := by
     rw [strHom_eq (f := f') fun _ => rfl]
     exact PosBaseChange.isProjOver_of_isPullback H hp
@@ -208,7 +209,7 @@ theorem exists_step {k : Type} [Field k] {X : Scheme.{0}} [IsIntegral X] [a : Al
   set ι := (secIdeal hL' t).subschemeι
   letI := algebraΓAlong K ι
   refine ⟨K, inferInstance, _, algebraΓAlong K ι, ι ≫ π, isProjOver_along hp' ι, ?_, hH, fun B hB => ?_, fun e P hP => ?_⟩
-  · exact dim_zeroScheme_le hL' ht ((GlobalTheory.T.topologicalKrullDim_fieldBaseChange_le k K X _ f f' π H).trans hd)
+  · exact dim_zeroScheme_le hL' ht ((_root_.GlobalTheory.FieldExtDim.topologicalKrullDim_baseChange_le k K X _ f f' π H).trans hd)
   · have h1 := globalSections_dim_le_div_add_restriction hp' hL' (LB.isLB_pull hB π) ht
     have e1 : lbH0 K (B.pull π) = lbH0 k B := FieldChangeInter.hdim_pull H hB 0
     have e2 : lbH0 K ((LB.div B L).pull π) = lbH0 k (LB.div B L) := FieldChangeInter.hdim_pull H (LB.isLB_div hB hLB) 0

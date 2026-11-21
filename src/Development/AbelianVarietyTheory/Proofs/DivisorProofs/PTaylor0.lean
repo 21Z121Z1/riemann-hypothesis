@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.AbelianHod
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsNilpotentOfIsNilDP
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveCrystallineBaseChangeNilpotentThickeninStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimitiveCrystallineBaseChangeNilpotentThickenin
 
 set_option autoImplicit false
 
@@ -33,7 +33,7 @@ theorem of_core0 (core : ∀ {I : Type} [Fintype I] [DecidableEq I] {g : ℕ} {�
   intro I _ _ g B _ _ 𝒜 _ hA hg y₀ A₀ _ φ₀ h₀ L₀ u₀ F σ e h0 hy hE hτ P₀ hP D _ _ π κ hκ hπ N t ht hN j hj
     A' _ φ' h' m' i h hi k x d hd c per hper
   obtain ⟨hA₀, hg₀⟩ := GlobalTheory.AbBaseChange.isAbelianScheme_and_relDim_of_isGrpPullback _ 𝒜 A₀ φ₀ g h₀ hA hg
-  have hsp := (GlobalTheory.T.primitiveCrystalline_baseChange_nilpotent_thickening A₀ g hA₀ hg₀ D π κ hκ hπ k).2
+  have hsp := (_root_.GlobalTheory.primCris_isBC_of_nilThick A₀ g hA₀ hg₀ D π κ hκ hπ k).2
   have hm : (liftMor κ h).pull (m'.pull c) ∈ Submodule.span D (Set.range k.pull) := by rw [hsp]; trivial
   obtain ⟨m, dd, v, hv⟩ := Submodule.mem_span_set'.1 hm
   choose cs hcs using fun a ↦ (v a).2

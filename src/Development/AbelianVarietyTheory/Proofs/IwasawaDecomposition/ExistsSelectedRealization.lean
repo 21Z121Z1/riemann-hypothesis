@@ -36,9 +36,10 @@ import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CmQuad
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsRowsOfHeqData
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
 import Formalism.LocalToGlobal.IndefiniteReal.NonzeroIndexPlaceIndepConstants
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnParametersInstanceDataStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColumnParamsInstanceData
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTwExtend
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowPartFormsAndNonzeroVectorsEveryPlaceStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowPartFormsAndNonzeroVectorsEveryPlace
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LinksAnalyticHypothesesOfWeilRepHarishChandra
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodGenericCharacterOfSeriesTypes
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports
@@ -224,7 +225,7 @@ theorem selection_group_ambient_tie (hC : GlobalTheory.Published.DiscreteSeriesC
   obtain ⟨κ, sE, hκ, hsE⟩ := exists_places t.r.z.R.toRealDat t.r.z.F.lv2 X Gd ι g c
     (twAt (w.st Z).toD7.what₂.embLL (famT t).A.v0) t.r.z.pins.char.base.models.HE hc hev
   obtain ⟨sEE, hsEE⟩ := see_cast (ex := ex) (t := t) X hK Gd pw _ _ wU bij eNu hSp sE
-  obtain ⟨a, haDc, haSp, haZsc, haSEE, haWU, haENu, -⟩ := GlobalTheory.T.column_params_instance_data hC K B f T w Z Wt L hT Gi Gl Kc Yd cX ex t hA hM hG hp
+  obtain ⟨a, haDc, haSp, haZsc, haSEE, haWU, haENu, -⟩ := _root_.GlobalTheory.Mem.R3.twArgs_exists hC K B f T w Z Wt L hT Gi Gl Kc Yd cX ex t hA hM hG hp
     Dc Sp₀ Zsc₀ C₀ Sp (zscRaw (famT t) t.r.z.F L' Del h0 c') sEE
   obtain ⟨x, hx⟩ : ∃ x : R3.TwIn ex, HEq a.x x := ⟨a.x, HEq.rfl⟩
   have hW : HEq x.C.wU C₀.wU := by

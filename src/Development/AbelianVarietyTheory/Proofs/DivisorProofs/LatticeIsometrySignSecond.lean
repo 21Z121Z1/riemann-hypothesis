@@ -3,9 +3,9 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeIsometrySign
 import Development.AbelianVarietyTheory.Definitions.Divisors.GenReads
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChartIndep2
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointSmulIntegralOfFourierCoeffNeZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubIdempotentSmulMemLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentSumConjSumOrthogonalDvdStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelPointSmulIntegralOfFourierCoeffNeZero
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneSubIdempotentSmulMemLattice
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentSumConjSumOrthogonalDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteAdelicMatrixMemLatticeOfColumnsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSelfDualCHLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
@@ -314,7 +314,7 @@ theorem step (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-1)) (V W :
   obtain ⟨-, -, m4, -, m5, -⟩ := GlobalTheory.MovedLat.moved_lattices D V W ΛV ΛW a1 a2 a3 a4 1 k
   rw [show fin V 1 = 1 from map_one _, m5, a5] at m4
   obtain ⟨-, e', P', he', hP', hs'⟩ := hh
-  have horth := GlobalTheory.T.idempotentSum_conjSum_orthogonal_dvd D e e' P P' bad he he' hbad hP'
+  have horth := _root_.GlobalTheory.IdemOrth.idemSum_orth D e e' P P' bad he he' hbad hP'
   have hee := GlobalTheory.PlaceDatum.idemSum_mul_self he
   have hec := he.2
   have hcc : cA D e * cA D e = cA D e := by rw [← RingHom.map_mul, hee]
@@ -447,7 +447,7 @@ theorem step (ψ : AddChar (AF D.host.F) ℂ) (hψ : IsStdChar D ψ (-1)) (V W :
     (nsmul_mem_latO V W _ _ _ N (nsmul_std Λ.La _ hΛ N (hN.trans inf_le_left)))
     (nsmul_mem_latO V W _ _ _ k₀ (nsmul_std Λ.La _ hΛ k₀ hk₁)) hk₀ l.odd hMN
     (idem_div_mem he 2 fun PP hPP => (hP PP hPP).2) u _ h1
-    (GlobalTheory.T.one_sub_idempotent_smul_mem_lattice D V W _ _ e P he _ fun s hs => hX s (hq s hs)) hMX _ w hw hw' s hs0 hsi w₂ hw₂ hw₂'
+    (_root_.GlobalTheory.OffIdem.one_sub_smul_mem_latO D V W _ _ e P he _ fun s hs => hX s (hq s hs)) hMX _ w hw hw' s hs0 hsi w₂ hw₂ hw₂'
   obtain ⟨c₀, hc₀, rfl⟩ := (m3 c).1 hc
   rw [hy, actO_smul V W h k e f1]
   exact ⟨c₀, hc₀, hc1, hc2⟩

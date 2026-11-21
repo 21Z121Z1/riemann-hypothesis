@@ -24,7 +24,6 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSteinberg
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharEqOfSplitOfTied
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PairReadingOfJoin
@@ -80,7 +79,7 @@ theorem localComponent_matches_of_howeDuality_alt (hBZ : GlobalTheory.Published.
   have L : _root_.UpperTheory.One.M.RecLawsH (_root_.GlobalTheory.NPin.weilDeligneOfLocalIrrep hL D s.w) := (_root_.GlobalTheory.CuspRep.ParLawsT.isRecT_locRecT hL (D.nd.plOm.2 s.w)).recLaws
   set χ := cf.mu0 ⟨j - 1, by omega⟩ with hχ
   have hμc : IsComp χ s.w (χ.loc s.w) := ⟨GlobalTheory.CuspRep.ParLaws.isSmoothChar_loc χ s.w, fun _ => rfl⟩
-  obtain ⟨ξ₀, -, huniq, hunit⟩ := GlobalTheory.T.heckeChar_localComponent_exists_unique_unitary D.host.E χ s.w
+  obtain ⟨ξ₀, -, huniq, hunit⟩ := _root_.GlobalTheory.HeckeComp.main D.host.E χ s.w
   have hχu : χ.IsUnitary := hμ ▸ (a.chr.e1 μ).2
   have hμU : IsUnitaryChar (χ.loc s.w) := fun x => by
     rw [huniq _ hμc]; exact hunit hχu x

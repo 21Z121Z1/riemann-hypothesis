@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.IsHermForm
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.UnitaryQuasiReflectionLaws
-import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.NormOneApproximationAtLevelPrimesStatement
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.NormOneApproximationAtLevelPrimes
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsNatSmulMem
 
 open NumberField IsDedekindDomain GlobalTheory.AdLat GlobalTheory.UnRep
@@ -65,7 +65,7 @@ theorem exists_refl_correction : ∀ (F E : Type) [Field F] [NumberField F] [Fie
     show _ = v + (a - 1) • ((hermE c G v x / hermE c G x x) • x)
     rw [smul_smul, mul_div_assoc]
   obtain ⟨u', hu', ⟨t, ht, b, hb⟩, s, hs, ⟨b₁, hb₁⟩, b₂, hb₂⟩ :=
-    GlobalTheory.T.normOne_approximation_at_level_primes F E c hG.1 hG.2.1 u N (D * d) hu hN (Nat.mul_pos hD hd)
+    _root_.GlobalTheory.UnRep.normOne_approx F E c hG.1 hG.2.1 u N (D * d) hu hN (Nat.mul_pos hD hd)
   have key : ∀ (a : E) (b : 𝓞 E), (s : E) * (a - 1) = ((D * d : ℕ) : E) * (b : E) →
       ∀ v ∈ L, s • (refl c G x a *ᵥ v) ∈ L := by
     intro a b hb v hv

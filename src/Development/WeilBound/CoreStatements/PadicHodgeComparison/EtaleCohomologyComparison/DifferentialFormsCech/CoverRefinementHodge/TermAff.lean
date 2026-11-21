@@ -13,7 +13,8 @@ import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomology
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.TotPairing
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCochainFiltrationDecomposition
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SerreClassOfCechSpectralSequence
-import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedRestrictPullBijectiveStatement
+import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GradedRestrictPullBijective
+import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.HodgeC
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormsRestrictOpenBijectiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RestrictGradedPullNaturalStatement
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.AffineHodgeIsomorphisms.HodgeAffineIsoType
@@ -97,7 +98,7 @@ abbrev trM (q : X ⟶ Spec (CommRingCat.of K)) (s a : ℕ) :
   CH.Mor.restrict (HT.grT (smFun X q) a) (KS q s {⊤}).ι
 
 theorem trM_bij (q : X ⟶ Spec (CommRingCat.of K)) (s a : ℕ) (h : a < s) (n : ℕ) : Function.Bijective ((trM q s a).pull n) :=
-  GlobalTheory.T.graded_restrict_pull_bijective q {⊤} (by simp) a s h n
+  _root_.GlobalTheory.CompanionTheory.OmLoc.grT_restrict_bijective q {⊤} (by simp) a s h n
 
 theorem ks_top {q : X ⟶ Spec (CommRingCat.of K)} {p : Y ⟶ Spec (CommRingCat.of K)} (r : X ⟶ Y) (hr : r ≫ p = q) (s a : ℕ)
     (T) (hT : KS q s {⊤} T) : KS p s {⊤} ((pullM r hr a).G.obj T) :=

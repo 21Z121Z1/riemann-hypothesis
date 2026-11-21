@@ -11,7 +11,8 @@ import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyPullba
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenericRel
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.GenericExistsUniqueOActOfIsGrpPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianHomExtensionHolds
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBundleIsoExtendingGenericCompleteLocalNormStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBundleIsoExtendingGenericCompleteLocalNorm
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCompletedPointOfThickenings
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj IsLocalRing NumberField
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Out ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -133,7 +134,7 @@ theorem GlobalTheory.unif_determined_by_data_normal : ∀ (R : Type) [CommRing R
   have hΦ : IsMonHom Φ.hom := GlobalTheory.DataDetNormal.isMonHom_generic hL hR hI hG hG' hj hE hw
   obtain ⟨ψ, hψm, hψK⟩ := GlobalTheory.DataDetNormal.exists_iso_extending hG hG' Φ
   have hth := GlobalTheory.DataDetNormal.thick_compat hL hR hG hG' hj hE hw ψ.hom hψK
-  obtain ⟨wL, hwL, H⟩ := GlobalTheory.T.exists_bundleIso_extending_generic_completeLocalNormal R hR D D' A A' G G' hG hG' U U' hD j hj Φ w hw ψ hψm hψK hth
+  obtain ⟨wL, hwL, H⟩ := _root_.GlobalTheory.exists_bundleIso_extending_generic_normal R hR D D' A A' G G' hG hG' U U' hD j hj Φ w hw ψ hψm hψK hth
   have hs := Geo.Tor.specOf_id R
   obtain ⟨bc, mbc, hbc⟩ := grpPullback_iso ((isGrpPullback_of_iso ψ).congr hs.symm rfl)
     (isGrpPullback_pullback G (specOf (RingHom.id R)))

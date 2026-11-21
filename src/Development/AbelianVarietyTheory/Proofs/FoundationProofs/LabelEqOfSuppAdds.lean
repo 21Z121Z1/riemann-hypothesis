@@ -221,7 +221,7 @@ theorem label_of_mapsToProd (L : LabelDatum g) (h5 : 5 ≤ g) (hG : Green) {n : 
   have hsum : ∀ {m : ℕ} (i : Gn g m →* Gn g (a + b)) (u : fixK1 π), T u ≠ 0 →
       ∃ f, T ((repK π).asAlgebraHom (mapDomainAlgHom ℂ ℂ i (eSerC L m f)) u) ≠ 0 := by
     intro m i u hu
-    obtain ⟨S, -, hS⟩ := (GlobalTheory.T.harishChandraSeriesCentralIdempotent_laws g L h5 hG m).2.2.2.2
+    obtain ⟨S, -, hS⟩ := (_root_.GlobalTheory.GLq.eSerC_laws g L h5 hG m).2.2.2.2
     have e : u = ∑ f ∈ S, (repK π).asAlgebraHom (mapDomainAlgHom ℂ ℂ i (eSerC L m f)) u := by
       rw [← LinearMap.sum_apply, ← map_sum, ← map_sum, hS, map_one, map_one, Module.End.one_apply]
     rw [e, map_sum] at hu

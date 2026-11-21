@@ -2,7 +2,7 @@ import Mathlib
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineInputs.OfInputs
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnramifiedGoodOfSelfDual
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CyclicStrongAtCusp
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodConjSelfDualTwistSplitUnramifiedStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodConjSelfDualTwistSplitUnramified
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.AttTwist
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RepERankOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeLAdicCharacterAndPrincipalIdealSt
@@ -99,7 +99,7 @@ theorem _root_.UpperTheory.Gal.Int.Inp.holdsS_good_dR_of_csd : UpperTheory.Gal.I
   intro hI hC E Ω _ _ _ _ _ _ l _ ι a ha π χ hs r hr w hw B hB
   have hF := GlobalTheory.automorphicFormsFiniteGL
   have hA := hI.hk
-  obtain ⟨κ, m, hκ, hu, hcs⟩ := GlobalTheory.T.exists_good_conjSelfDual_twist_split_unramified hF E l a ha π χ hs w hw
+  obtain ⟨κ, m, hκ, hu, hcs⟩ := _root_.GlobalTheory.GoodCsdTwist.exists_goodCsd_twist hF E l a ha π χ hs w hw
   obtain ⟨art, hart, hμ⟩ := (GlobalTheory.Published.GlobalArtinReciprocity.heckeLAdicCharacter_and_principalIdealSt
     GlobalTheory.globalArtinReciprocity_holds).1 E Ω
   have hκp : GlobalTheory.HeckeGal.IsAlgPos κ m := GlobalTheory.HeckeGal.isAlgPos_of_isAlg hκ
@@ -431,9 +431,9 @@ theorem _root_.UpperTheory.Gal.Int.Inp.holdsS_all_phi : UpperTheory.Gal.Int.Inp.
   have hQ := GlobalTheory.QuadLiftBridge.quadLift hIn.ac hIn.js
   obtain ⟨Q, hQdec, hQsplit, hQram, hQgood⟩ := (GlobalTheory.T.infinite_quadraticCM_goodBaseChange_split hF E Ω l a π w).nonempty
   obtain ⟨P, hP⟩ := hQ E Q.K Q.two a ha π hQram
-  obtain ⟨⟨χ', hsc'⟩, -⟩ := GlobalTheory.T.polarizedPair_baseChange_polarized_same_weight hF hIn.js hIn.gk E Q.K l a ha π χ P hP hsc.all
+  obtain ⟨⟨χ', hsc'⟩, -⟩ := _root_.GlobalTheory.LiftPolar.main hF hIn.js hIn.gk E Q.K l a ha π χ P hP hsc.all
   have hsc'' : InScope .good l P χ' := ⟨hsc'.1, hsc'.2.1, hQgood P hP⟩
-  have hr' := GlobalTheory.T.weaklyAttachedGaloisRepresentation_baseChange_restrict E Q.K Ω l ι a π P hP r hr
+  have hr' := _root_.GlobalTheory.GalCut.weak_comp_res E Q.K Ω l ι a π P hP r hr
   have hdec := hQdec A h
   have hjK := GlobalTheory.RealGal.bridge_j_mem_Kw_of_dec_le E Ω Q.K l A O Bw hdec
   obtain ⟨Bw', e1, e2, e3⟩ := UpperTheory.V.Af.Cq.exBridge E Q.K Ω l A O Bw hjK
@@ -444,9 +444,9 @@ theorem _root_.UpperTheory.Gal.Int.Inp.holdsS_all_phi : UpperTheory.Gal.Int.Inp.
     ext1
     exact this.over.symm
   obtain ⟨c, hc, hdegc, hq, -⟩ :=
-    GlobalTheory.T.place_over_transport_ring_iso E Ω A w h Q.K Ω A w' h' (RingEquiv.refl Ω) (algebraMap E Q.K) i hi
+    _root_.GlobalTheory.WeilTransport.weil_equiv E Ω A w h Q.K Ω A w' h' (RingEquiv.refl Ω) (algebraMap E Q.K) i hi
   obtain ⟨S, hS, -, -, -, -, hTw, -⟩ :=
-    GlobalTheory.T.place_over_transport_ring_iso_symm E Ω A w h Q.K Ω A w' h' (RingEquiv.refl Ω) (algebraMap E Q.K) i hi
+    _root_.GlobalTheory.WDTransport.exists_equiv_wd E Ω A w h Q.K Ω A w' h' (RingEquiv.refl Ω) (algebraMap E Q.K) i hi
   have hB' : (CG.mk P).HasSat w' B := by
     have := hP.sat w' 1 B (by rw [pow_one, hunder, hq]) (by rw [hunder]; exact hB)
     simpa using this

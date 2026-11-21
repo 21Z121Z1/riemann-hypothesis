@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StarCharac
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FlagSupportSplitPlaces
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowLevelReductionCriterion
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndexZeroLevelGeneratedByLocalUnipotentsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndexZeroLevelCharacterEqBesselCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndexZeroLevelGeneratedByLocalUnipotents
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IndexZeroLevelCharacterEqBesselCharacter
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BaseChainCommutationValid
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnderEqOrSmulUnderEq
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StageY
@@ -90,7 +90,7 @@ theorem rowChi_conj_of_mem_alt (W : _root_.GlobalTheory.MiS.RealPackAlt ex) (hW 
       redFn (finE (D.sp.Y 0) s * β) PP (finE (D.sp.Y 0) (s * k * s⁻¹)) = redFn β PP (finE (D.sp.Y 0) k) := fun PP k => by
     rw [map_mul, map_mul, map_inv, GlobalTheory.FrameConj.redFn_conj]
   subst hβ hLz
-  refine GlobalTheory.T.indexZeroLevel_generated_by_local_unipotents (c := f.c) (_root_.GlobalTheory.BaseChain.com_z W) (_root_.GlobalTheory.LevZero.levelZeroState W) (f.g.b 0) (fun PP => G (pl.symm PP)) h0 hBot
+  refine _root_.GlobalTheory.LevZero.gen (c := f.c) (_root_.GlobalTheory.BaseChain.com_z W) (_root_.GlobalTheory.LevZero.levelZeroState W) (f.g.b 0) (fun PP => G (pl.symm PP)) h0 hBot
     (fun k : GA D (D.sp.Y 0) => rowChi W.S.X W.Q.instEq (s * k * s⁻¹) =
       levChi (D.sp.Y 0) ((_root_.GlobalTheory.Fam.pk_z W).βY 0) (_root_.GlobalTheory.LevZero.datZero_alt W) k) ?_ ?_ ?_ ?_
   · intro (k : GA D (D.sp.Y 0)) hk (k' : GA D (D.sp.Y 0)) hk' q q'
@@ -101,7 +101,7 @@ theorem rowChi_conj_of_mem_alt (W : _root_.GlobalTheory.MiS.RealPackAlt ex) (hW 
     rw [GlobalTheory.ChrMatch.levChi_mul (D.sp.Y 0) ((_root_.GlobalTheory.Fam.pk_z W).βY 0) (_root_.GlobalTheory.LevZero.datZero_alt W) hk hk', ← q₁, ← q₂, e, rowChi, rowChi, rowChi,
       map_mul, Prod.snd_mul, W.S.Y.hK.2.2.2.1 _ (hmem k hk).2 _ (hmem k' hk').2, star_mul']
   · intro PP (n : GA D (D.sp.Y 0)) q hn hq hl hk
-    have h2 := GlobalTheory.T.indexZeroLevelCharacter_eq_besselCharacter (c := f.c) (_root_.GlobalTheory.BaseChain.com_z W) (_root_.GlobalTheory.LevZero.levelZeroState W) (f.g.b 0) (fun PP => G (pl.symm PP)) h0 hBot
+    have h2 := _root_.GlobalTheory.LevZeroChar.levChi_eq_psiBes (c := f.c) (_root_.GlobalTheory.BaseChain.com_z W) (_root_.GlobalTheory.LevZero.levelZeroState W) (f.g.b 0) (fun PP => G (pl.symm PP)) h0 hBot
       PP n q hq hl hk
     have hn' : n ∈ flagN B.d := by rw [hfl]; exact hn
     have e : s * (t⁻¹ * n * t) * s⁻¹ = ((iotaX W.S.X W.Q.instEq).symm (1, W.S.X.xu u))⁻¹ *

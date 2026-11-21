@@ -25,14 +25,14 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCuspFunOfAppro
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsHeightLeTwoMulQuotHeight
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaKernelIteratedIntegralsSwap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKernelApprox
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridDownArrowThetaFunctionFockDenseOfLevelStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridDownArrowThetaFunctionFockDenseOfLevel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnQuotHeightPowMulNorm
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.TypeAtOfDiscreteSeries
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsGrowthSobNeTopOfIsAutFunSm
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GrowthSobZeroNeTop
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApproxStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormKFiniteApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutCuspOfMemCusp
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HorizontalThetaLevelFourth
@@ -56,17 +56,21 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalListedTo
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FinCoefMultT
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunSmRealProd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsDualFrameSpanUnitaryRepresentationStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelAdjointEqInvFiniteDimensionalStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModelTypeFormExpandsAlongDualFrameStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelAdjointEqInvFiniteDimensional
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfInnerSmooth
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlacePointCommuteOfNePlace
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsSmoothAutomorphicFunctionTranslateAtRealPlace
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousOnAtTau
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ModelTypeFormExpandsAlongDualFrame
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExpandPiOfExpandEachStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroupStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SumProdUpdateRegroup
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftVerticalCuspidalSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongRightGridArrows
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspidalAlongDownGridArrows
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenPathRepresentationFinite
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFlipStageIsTensorPlaceDepthStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalFlipStageIsTensorPlaceDepth
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridSquareFlipSmallRouteEqInvSmulBigRouteStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridPathCutAtSquareSwapRouteStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridPathCutAtSquareSwapRoute
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GivenOppositeGridPathsAndDeterminedByEdgesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlippedFiniteTensorOfRepresentingOppositePathStatement
 
@@ -175,7 +179,7 @@ theorem flipAt_of (hL : R.toLevCh.Is A.μ0) (ch : Choice R)
         have hc := (canFlip_flipOrder D.R.m).1
         rw [← List.take_append_drop k (flipOrder D.R.m), List.drop_eq_getElem_cons hkl] at hc
         exact passesThrough_of_canFlip _ _ hc
-      obtain ⟨A, Bp, rfl, hA', hB', hN, hNe⟩ := GlobalTheory.T.gridPath_cut_at_square_swap_route D.R.m t x.1 x.2 hi hj p hp hpass
+      obtain ⟨A, Bp, rfl, hA', hB', hN, hNe⟩ := _root_.GlobalTheory.PathCut.cut_at_square D.R.m t x.1 x.2 hi hj p hp hpass
       have hT : ∀ w ∈ locPl ch.G t, (locGrid ch.G t w).IsTensor (unifAt w) (depthAt ch.G w)
           (GlobalTheory.FlipRun.edges ((A.comp (routeSmall t x.1 x.2)).comp Bp)) (S k w).tensor := fun w hw => by
         have := hE t Φ w hw k (by omega)

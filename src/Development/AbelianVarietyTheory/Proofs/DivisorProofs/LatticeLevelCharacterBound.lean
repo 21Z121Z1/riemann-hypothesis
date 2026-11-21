@@ -25,9 +25,13 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPullbackExis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EquivAtRecordOfEquivRow
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullActLev
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreConstantIffCoveringGroupInvariantStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreConstantIffCoveringGroupInvariant
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.WeightFunctionOnFrames
+import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ValuesAlgIffValuesUnitOfNe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCoverCuspFormPullbackInjectiveDescentStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTypeFrameCoverLevelMapsReductionsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTypeFrameCoverLevelMapsReductions
+import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
+import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLevelCharacterEqProdSuperdiagonalSum
 
 set_option synthInstance.maxHeartbeats 400000
@@ -113,13 +117,13 @@ theorem mem_span_pull_iff : ∀ (D : D7) (T : CoreJ D) (j : ℕ) (Y : Deep T.toC
   let π' := (Y.V (wtZ a n)).subtype.comp π
   have hc : ∀ γ v, (transl Y.d.Xo₂ Y.d.c₂ γ).toLinearMap (π' v) = π' (ρ (θ γ) v) := by
     intro γ v
-    have hv := ((GlobalTheory.T.ruleBaseChange_section_values_semilinear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ v.2)).1
+    have hv := ((_root_.GlobalTheory.FieldBC.rulBC_sec_val_linear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ v.2)).1
     have h1 := GlobalTheory.LevPullEquiv.pull_actLev D j _ _ _ _ _ Y.d hpq.2 hG.lev.1 hG.lev.2
       (GlobalTheory.ClsVal.Cmp.overBase_of_ne hpq.1 hL.levA Y.d) G _ lev liftLa hact' hact₂ (θ γ) γ (hθ γ) a n _ hv _
       (s₂ (π v).2) (p1 v)
     refine GlobalTheory.CoverSec.eq_of_geometric (GlobalTheory.LevelEquivCompare.actLev_mem_sec hact₂ γ (s₂ (π v).2)).1 (s₂ (π _).2).1 (geo h1 (p1 (ρ (θ γ) v)) ?_)
     refine GlobalTheory.CoverSec.eq_of_geometric (GlobalTheory.LevelEquivCompare.actLev_mem_sec hact' _ hv).1
-      ((GlobalTheory.T.ruleBaseChange_section_values_semilinear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ (ρ (θ γ) v).2)).1.1 fun k _ _ _ y => ?_
+      ((_root_.GlobalTheory.FieldBC.rulBC_sec_val_linear _ _ _ _ _ _ _ Y.hle).1 a n _ (s₁ (ρ (θ γ) v).2)).1.1 fun k _ _ _ y => ?_
     letI := resAlg Y.hle k
     exact (hbc a n (θ γ) 1 _ _ _ hv (fun _ => s₁ v.2) (GlobalTheory.LevelEquivCompare.isBC_rulBC Y.hle (s₁ v.2)) k (fun _ => rfl) y).trans
       (GlobalTheory.LevelEquivCompare.isBC_rulBC Y.hle (s₁ (ρ (θ γ) v).2) k (fun _ => rfl) y).symm
@@ -154,7 +158,7 @@ theorem mem_span_pull_iff : ∀ (D : D7) (T : CoreJ D) (j : ℕ) (Y : Deep T.toC
     exact (hc γ v).trans ((congrArg π' (hv ⟨θ γ, hγ⟩)).trans (map_smulₛₗ π' _ _))
   · intro h
     have h1 : GlobalTheory.LevPull.FibConst Y.d g := by
-      refine (GlobalTheory.T.fibreConstant_iff_coveringGroup_invariant D j _ _ _ _ _ Y.d hpq.2 hG.lev.1 hG.lev.2 (Or.inl ⟨hpq.1, hL.levA⟩) liftLa (fun γ => LinearMap.ext (liftLa_spec γ)) a n g
+      refine (_root_.GlobalTheory.LevInv.fibConst_iff_invariant D j _ _ _ _ _ Y.d hpq.2 hG.lev.1 hG.lev.2 (Or.inl ⟨hpq.1, hL.levA⟩) liftLa (fun γ => LinearMap.ext (liftLa_spec γ)) a n g
         (s₂ hg)).2 fun γ hγ => ?_
       have h0 := h γ (hker γ hγ ▸ P.one_mem)
       rw [show (⟨θ γ, hker γ hγ ▸ P.one_mem⟩ : P) = 1 from Subtype.ext (hker γ hγ), map_one, Units.val_one, map_one,
@@ -236,7 +240,7 @@ theorem latDeep_eq_latN (p : PtAt ex Csz) (i : Fin D.R.m) (Y : Cov p i) {e : ℕ
   have hMb := ((p.pins i).2.tuple ()).half.1
   have hr : (dat p i).p + (dat p i).q = D.R.r := (GlobalTheory.Member.exists_iotaOK D p.T.Q hJ.pins _ hj).2.1
   have hle : Y.d.l₂.Mb ≤ p.T.Q.l.Mb := hY.lev.1.2.2.2.1.le.trans Ideal.mul_le_left
-  obtain ⟨fr, ε, iso, h1, h2⟩ := GlobalTheory.T.exists_typeFrame_cover_levelMaps_reductions D _ _ _ _ _ p.R.toRealDat i (p.charW.base.lev.βW i) _ (dat p i) _ Y.d.l₂ _
+  obtain ⟨fr, ε, iso, h1, h2⟩ := _root_.GlobalTheory.TypeFrameCover.typeFrame_cover D _ _ _ _ _ p.R.toRealDat i (p.charW.base.lev.βW i) _ (dat p i) _ Y.d.l₂ _
     (GlobalTheory.LevelAction.latEmb_iotaW p.T hJ i) hr hA hM hl₂ hle hMb _ (p.pins i).2.lift.lev
   obtain ⟨t, ψ, t1, t2, t3, t4⟩ := GlobalTheory.TypeBase.base_level_unip_char D _ _ _ _ _ p.R.toRealDat p.F.lv2 p.charW.base.grp.levels p.charW.base.grp.chiW
     (exists_root p) ε iso

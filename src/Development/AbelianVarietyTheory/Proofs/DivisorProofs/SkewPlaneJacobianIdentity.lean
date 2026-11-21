@@ -25,7 +25,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineDerivativeAddit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleAdaptedPlaneLocalFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnitaryAdelicHeightWittEmbeddingLeConstMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableAtFoldrLineDer
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLieAlgebraExpGeneratorsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLieAlgebraExpGenerators
 
 open scoped TensorProduct NNReal Matrix ComplexConjugate
 open NumberField IsDedekindDomain MeasureTheory Filter Topology Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes
@@ -63,7 +63,7 @@ theorem chart : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [NumberFiel
     fun Y w => pi_exp Y w
   have hZ' : ∀ j (t : ℝ), NormedSpace.exp (t • Z j) = ι (γ j t) := fun j t => funext fun w => by
     rw [hpe, hι, hZ]; rfl
-  obtain ⟨s, hs, hev⟩ := GlobalTheory.T.exists_lie_algebra_exp_generators (InfinitePlace F → Matrix (Fin n) (Fin n) ℂ) S
+  obtain ⟨s, hs, hev⟩ := _root_.GlobalTheory.ClosedMonoid.coords_second_kind_of_spanning (InfinitePlace F → Matrix (Fin n) (Fin n) ℂ) S
     (by
       simp only [S, Set.setOf_forall]
       exact isClosed_iInter fun w => isClosed_eq (((continuous_apply w).matrix_conjTranspose.matrix_mul

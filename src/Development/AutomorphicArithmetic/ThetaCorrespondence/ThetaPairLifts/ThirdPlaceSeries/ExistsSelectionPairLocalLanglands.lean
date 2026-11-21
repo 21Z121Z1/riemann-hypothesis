@@ -36,7 +36,7 @@ theorem wp3_ne_bot_and_piece_at_of_multEq (hWR : GlobalTheory.Published.WeilRepr
     (q : WPt p.s K) (hMult : GlobalTheory.CuspMult.MultEq q.x.what₂.r.z.R.toRealDat) :
     ∀ p', q.x.what₂.r.z.R.EEp3 p' ≠ ⊥ → ∀ i, q.x.what₂.r.z.R.Wp3 i p' ≠ ⊥ ∧
       ∀ v, v ≠ (famT q.x.what₂).A.v0 → q.x.what₂.r.z.R.PartAt q.x.what₂.r.z.F i p' v :=
-  GlobalTheory.T.rowPart_forms_and_nonzero_vectors_every_place _ _ _ _ _ _ _ q.x.what₂.r.z.R q.x.what₂.r.z.F q.x.what₂.r.z.cG
+  _root_.GlobalTheory.RowsLift.rows_lift _ _ _ _ _ _ _ q.x.what₂.r.z.R q.x.what₂.r.z.F q.x.what₂.r.z.cG
     (GlobalTheory.LinksInputs.inputs_of_hypotheses hWR hDSE hHCF hCRD _) q.x.what₂.r.z.pins q.x.what₂.r.intersectionNumber_baseChange hMult
     (GlobalTheory.GoodGenericSer.goodGenericCharacter_of_seriesTypes q.x.what₂.r.z.R q.x.what₂.r.z.F q.x.what₂.r.z.pins.char 1 q.x.what₂.r.intersectionNumber_baseChange.ok
       (fun k => ⟨_, q.core_data_of_point.a.all.types.O k, q.core_data_of_point.a.all.types.eSer_def k⟩)).1

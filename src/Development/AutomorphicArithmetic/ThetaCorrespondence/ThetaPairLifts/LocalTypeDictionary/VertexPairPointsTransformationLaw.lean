@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairPtsClasses
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowShiftTheta
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowMapVUpdateZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsMultilinearColumnRowKernelPairingStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfFunctionProductSumsEqStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MultilinearSumEqOfFunctionProductSumsEq
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FirstColumnVectorSumFormula
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.BernsteinUnitaryProductIrreducible
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.FirstCoefficientDatumLaw
@@ -123,7 +123,7 @@ theorem pair_points_first_vertex_law : _root_.GlobalTheory.FunPr.ThetaLocalInput
     rw [hscale d hd]
     ring
   rw [step1]
-  refine GlobalTheory.T.multilinear_sum_eq_of_function_product_sums_eq M τ _ _ _ _ fun xs ys => ?_
+  refine _root_.GlobalTheory.funProd_multilinear_sum_eq M τ _ _ _ _ fun xs ys => ?_
   have hk' := key xs ys
   simp only [Finsupp.sum] at hk' ⊢
   refine (?_ : _ = χk * _).trans (hk'.trans (Finset.sum_congr rfl fun d hd => ?_))

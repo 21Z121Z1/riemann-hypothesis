@@ -7,7 +7,7 @@ import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckeV
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGoodRowHeckeOfOcc
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemBlockTriangularTwoBlockSizesOfLe
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadWMemGoodW
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DescentJointEigenvectorsComplexReadingStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DescentJointEigenvectorsComplexReading
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GoodLineIffEigenSpan
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenSpanInclusionInjective
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EigenCompatibleOfBadSet
@@ -76,7 +76,7 @@ theorem spanC_core (R : RealDat3 D A3 Ks) (F : Face3 D A3) {X0 : BaseLevelRowSid
   intro v hv
   have hv' : iotaR R (idxOf D j) v ∈ ⨆ σ ∈ s, Part σ :=
     goodW_le_parts Y hI hG (idxOf D j) j hjj ((htie j hj1 hj2 v).1 hv)
-  have hd := GlobalTheory.T.descent_joint_eigenvectors_complex_reading (sg0 D A3.A) (iotaR R (idxOf D j)) (goodL D (ratDatR R cG kKs hk) θ j)
+  have hd := _root_.GlobalTheory.descent_joint_eigen (sg0 D A3.A) (iotaR R (idxOf D j)) (goodL D (ratDatR R cG kKs hk) θ j)
     (fun u _ h0 => hinj (idxOf D j) (h0.trans (map_zero _).symm)) (fun t => hL j t.1 t.2) T' I hT Part s
     (fun σ t => ((eig j σ t.1 t.2 : ↥D.LL0) : D.what₂.LL)) hPa hGa v hv'
   have hle : (⨆ σ ∈ s, goodL D (ratDatR R cG kKs hk) θ j ⊓ ⨅ t ∈ I,

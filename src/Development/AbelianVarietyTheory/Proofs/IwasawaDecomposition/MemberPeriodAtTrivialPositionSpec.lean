@@ -30,7 +30,7 @@ def trE (hθ : IsInfFam θ) (V : HSp D) (k : GA D V) (hk : ∀ φ, IsAutFunSm θ
 
 theorem trE_cusp (hθ : IsInfFam θ) (V : HSp D) (k hk) (F : AFs θ V) (hF : F ∈ cuspIn θ V) : trE hθ V k hk F ∈ cuspIn θ V := by
   rw [mem_cuspIn hθ] at hF ⊢
-  exact (GlobalTheory.T.isCuspFunction_closed_under_operations D V _ _ (aut hθ F).toIsAutFun (aut hθ F).toIsAutFun hF hF).2.2.1 k
+  exact (_root_.GlobalTheory.Mem.Th.isCuspFun_closed D V _ _ (aut hθ F).toIsAutFun (aut hθ F).toIsAutFun hF hF).2.2.1 k
 
 def actFin (hθ : IsInfFam θ) (V : HSp D) : GfC V →* Module.End ℂ (AFs θ V) where
   toFun k := trE hθ V k fun φ h => GlobalTheory.T.smoothAutomorphicForm_rightTranslate_finiteAdelic D θ hθ V φ h k k.2
@@ -66,10 +66,10 @@ theorem expo_eq {χ : chrGrp D} {τ : D.what₂.Tau} {a : ℚ} (h : HasInfExp D 
   (GlobalTheory.T.heckeCharacter_infinityExponent_group_laws D).2.1 _ _ _ _ (expo_spec χ τ) h
 
 def ksph (V : HSp D) (S : Finset (HeightOneSpectrum (𝓞 D.host.F))) : Subgroup (GfC V) :=
-  (GlobalTheory.T.exists_lattice_stabiliser_subgroup_outside_places D V S).choose.subgroupOf (GfC V)
+  (_root_.GlobalTheory.Mem.Ksph.exists_subgroup_ksph D V S).choose.subgroupOf (GfC V)
 
 theorem mem_ksph {V : HSp D} {S} {g : GfC V} : g ∈ ksph V S ↔ (g : GA D V) ∈ KsphC V S := by
-  rw [← (GlobalTheory.T.exists_lattice_stabiliser_subgroup_outside_places D V S).choose_spec.1]; rfl
+  rw [← (_root_.GlobalTheory.Mem.Ksph.exists_subgroup_ksph D V S).choose_spec.1]; rfl
 
 open Classical in
 

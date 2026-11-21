@@ -41,7 +41,7 @@ theorem det_cong_of_finCong (V : HSp D) (N : ℕ) (hN : N ≠ 0) (u : GA D V) (h
     ∃ w ∈ GlobalTheory.AdLat.hat1 D.host.F (Set.range (algebraMap (𝓞 D.host.E) D.host.E)),
         ((Matrix.GeneralLinearGroup.det (finHom V u) : (Af D.host.F ⊗[D.host.F] D.host.E)ˣ) :
           (Af D.host.F ⊗[D.host.F] D.host.E)) - 1 = (N : ℕ) • w := by
-  obtain ⟨k1, -, k3, k4, -⟩ := GlobalTheory.T.completedLattice_eq_adelicCompletion_and_gram D V
+  obtain ⟨k1, -, k3, k4, -⟩ := _root_.GlobalTheory.Member.latHat_eq_hat_and_gram D V
   exact det_cong_one D.host.F (latC V) k3 k4 N hN (finHom V u).1 (by rw [← k1]; exact hu)
 
 end Marks

@@ -32,7 +32,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TiedSKAtWitn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHostDatumOfPlaceData
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevExOfOver
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LevelTiedOfLevEx
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WitnessesPassAlongSetDivisionStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WitnessesPassAlongSetDivision
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsEOfHeq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ZetaUniformOfExtension
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StandardLatticesDiagonal
@@ -81,7 +81,7 @@ theorem exBL_isLinked_prmR_alt : GlobalTheory.Published.GreenCuspidal → Global
   have hz := _root_.GlobalTheory.T.zeta_uniform_of_extension' ⟨hCov, hHM, hCW, hH, hC⟩ hL N SExt.none Γ hN
   subst hp
   refine _root_.GlobalTheory.T.eta_size_recursion_alt hA hWb hRF hL _ ?_ ?_ ?_
-  · exact witExE_of_witMv _ (GlobalTheory.T.witnesses_pass_along_set_division _ hS)
+  · exact witExE_of_witMv _ (_root_.GlobalTheory.Mem.Top.Bl.witMv_of_positionMv _ hS)
   · exact GlobalTheory.Fc.EvP.of_all fun _ K _ q => hz K q
   · exact _root_.GlobalTheory.T.local_langlands_prm_reduction_alt hG hCov hHM hCW hW hD hH hC hA hRF hL N Γ _ rfl hN hM
 end GlobalTheory.Mem.Top.Bl

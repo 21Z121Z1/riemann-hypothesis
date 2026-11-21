@@ -4,9 +4,10 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SetAutSelfNa
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GEquivIntL
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeAlgebraCompUnitaryGroupAntidiagTransportMemStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitaryTorusUnipotentCosetTransportIffStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitarySatakeInvariantAntidiagTransportStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitarySatakeInvariantAntidiagTransport
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InertHeckeOperatorIndepOfInertDatumStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IrreducibleRepIsotypicOfCentraliserFactorStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IrreducibleRepIsotypicOfCentraliserFactor
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousMapPFin
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.UnitaryFiniteAdelesSplitPlaceDecompositionStatement
 
 noncomputable section
@@ -27,7 +28,7 @@ theorem satAtS_indep {L : Type} [Field L] [NumberField L] [IsCMField L] {n : ℕ
   have hm : 2 * (n / 2) ≤ n := Nat.mul_div_le n 2
   rw [GlobalTheory.T.inertHeckeOperator_indep_of_inertDatum L n v w Dv Dv' U _ h' hh'.1 f,
     hH _ (GlobalTheory.T.heckeAlgebra_comp_unitaryGroupAntidiagTransport_mem (gEquiv Dv Dv') (gEquiv_comm Dv Dv') (gEquiv_intL Dv Dv') n h' hh'),
-    GlobalTheory.T.unitarySatake_invariant_antidiagTransport (gEquiv Dv Dv') (gEquiv_comm Dv Dv') (gEquiv_intL Dv Dv') Dv.ϖ Dv'.ϖ _ n (n / 2) h' hh'.1
+    _root_.GlobalTheory.SatInd.satU_guMap (gEquiv Dv Dv') (gEquiv_comm Dv Dv') (gEquiv_intL Dv Dv') Dv.ϖ Dv'.ϖ _ n (n / 2) h' hh'.1
       (GlobalTheory.T.unitaryTorus_unipotent_coset_transport_iff (gEquiv Dv Dv') (gEquiv_comm Dv Dv') (gEquiv_intL Dv Dv') Dv.ϖ Dv'.ϖ _ _ n (n / 2)
         Dv.unram Dv'.unram hm)]
 
@@ -144,7 +145,7 @@ theorem cl_eq_of_isLocS {L : Type} [Field L] [NumberField L] [IsCMField L] {n : 
     refine ⟨s.loc n x, fun B => ?_⟩
     rw [show sH (s.loc n x) = x from sec_eq x hx, inv_mul_cancel_left]
     exact (hcom _ _ (hsec B).1 hy).symm
-  obtain ⟨φ⟩ := (GlobalTheory.T.irreducibleRep_isotypic_of_centraliser_factor _ _ _ _ _ ρ sH (τ.ρ.comp e) (τ'.ρ.comp e) hρ
+  obtain ⟨φ⟩ := (_root_.GlobalTheory.CuspRep.CompUniq.isotypic _ _ _ _ _ ρ sH (τ.ρ.comp e) (τ'.ρ.comp e) hρ
     (GlobalTheory.CuspRep.ParLaws.isIrreducible_comp τ.irr e he) (GlobalTheory.CuspRep.ParLaws.isIrreducible_comp τ'.irr e he)
     hcomm f hf).2 f' hf'
   refine IrrRep.cl_eq_iff.2 ⟨Representation.Equiv.mk φ.toLinearEquiv fun B => ?_⟩

@@ -1,6 +1,11 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspFormsExtendVanishCompactifiedFlagSpace
+import Development.AbelianVarietyTheory.Definitions.Divisors.P22
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsLogCanonicalMultipleCanonical
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GeometricallyConnectedOfIsIsoRestrict
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.CrysToDRBijective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightParameterStrictAntitone
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
@@ -39,7 +44,10 @@ import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.Hodg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IInfThRuleLeNuLocOf
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateAny
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HarmonicValueTranslateEqUnitMulNormaliserThetaVa
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHoldStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointStatementsOnCopiesHold
+import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsShortPeriodLatticeBasisBalancedSlope
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsProductDataCopiesTrivialisationValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseLocusExponentLeOscillationNonTypePrime
@@ -87,7 +95,7 @@ theorem exists_cusp_value_le_phi_of_hilbertSamuel_alt : _root_.GlobalTheory.CovT
       subst hla
       exact hN x hx' l1 ι p hp i hi
   obtain ⟨f, hf0, hfb⟩ := hJ x hx' l0 ι p hp i hi Y hY Z TF la hla (1 / 2500) hnum y hy T io y' g φT hg hφT hpt
-  have hE : Extends TF.X Z Y.U la := GlobalTheory.T.cuspForms_extend_vanish_compactifiedFlagSpace (Fm.D x ι) p.T.toCore ((i : ℕ) + 1) Y _ _ hY.1 hfin Z TF la
+  have hE : Extends TF.X Z Y.U la := _root_.GlobalTheory.CompHS.cusp_extends_comp (Fm.D x ι) p.T.toCore ((i : ℕ) + 1) Y _ _ hY.1 hfin Z TF la
   refine ⟨hE.equiv f, ?_⟩
   have e : ofSpace TF.X Z Y.U la (hE.equiv f) = f := hE.equiv.symm_apply_apply f
   rw [e]

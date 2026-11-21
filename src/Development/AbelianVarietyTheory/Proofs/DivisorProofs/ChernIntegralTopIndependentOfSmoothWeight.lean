@@ -24,8 +24,8 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexPointsSmoothProjVarietyCompactManifoldStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegralOneEqMongeAmpereIntegralStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexPointsSmoothProjVarietyCompactManifold
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegralOneEqMongeAmpereIntegral
 
 set_option autoImplicit false
 
@@ -70,8 +70,8 @@ theorem mInt_one_eq {D : ℕ} [CompactSpace (CxPts p σ)] [T2Space (CxPts p σ)]
   ring
 
 theorem chernInt_one_eq : ∀ (Y : Var ℂ) (L : LB Y.X) (φ ψ : Weight Y.str (RingHom.id ℂ) L), φ.IsCInf → ψ.IsCInf → Weight.chernInt φ Y.dim Set.univ (fun _ => 1) = Weight.chernInt ψ Y.dim Set.univ (fun _ => 1) := fun Y L φ ψ hφ hψ => by
-  obtain ⟨h₁, h₂, -, A, hA⟩ := GlobalTheory.T.complexPoints_smoothProjVariety_compact_manifold Y
-  rw [(GlobalTheory.T.chernIntegral_one_eq_mongeAmpereIntegral Y L φ hφ).2 A hA, (GlobalTheory.T.chernIntegral_one_eq_mongeAmpereIntegral Y L ψ hψ).2 A hA]
+  obtain ⟨h₁, h₂, -, A, hA⟩ := _root_.GlobalTheory.cxPts_var_compact_manifold Y
+  rw [(_root_.GlobalTheory.chernInt_one_eq_mInt Y L φ hφ).2 A hA, (_root_.GlobalTheory.chernInt_one_eq_mInt Y L ψ hψ).2 A hA]
   exact mInt_one_eq hA hφ hψ
 
 end GlobalTheory.ChernMass

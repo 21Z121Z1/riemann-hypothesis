@@ -42,7 +42,7 @@ theorem ker_derivation_isThetaSubgroup : _root_.GlobalTheory.FunPr.ThetaLocalInp
   have hpa : ∀ f φ, f ∈ Γ.M'.Pol Bs.ψ Bs.emb → (∀ w, φ w ∈ SB _) → (∀ᶠ w in cofinite, φ w = Γ.M'.vac w) →
       GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.pure f φ ∈ algD Γ.M' Bs.ψ Bs.emb := fun f φ hf hφ hv =>
     Submodule.subset_span ⟨f, φ, hf, hφ, hv, rfl⟩
-  obtain ⟨Φp, hΦp, hnot⟩ := GlobalTheory.T.exists_algebraicDatum_not_matched_zero_by_localMaps Bs Γ Xc om om' R Rf hM
+  obtain ⟨Φp, hΦp, hnot⟩ := _root_.GlobalTheory.SquareAgree.exists_algD_not_polMatch_zero Bs Γ Xc om om' R Rf hM
   refine ⟨N, hN, ⟨fun Φ h => h.1, ?_, ?_, ?_, ?_, ?_, ?_⟩, fun e => hnot ((hN Φp).mp (e ▸ hΦp)).2⟩
   ·
     intro v f φ hf hφ hv hφv

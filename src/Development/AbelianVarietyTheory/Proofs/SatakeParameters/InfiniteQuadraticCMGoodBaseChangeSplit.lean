@@ -13,10 +13,17 @@ import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.R
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.LocIsotypic
 import PositivityTheory.AutomorphicForms.PublishedInputs.RealGaloisRepresentations.IwahoriSphericalTransfer.ExistsInfiniteQcmSplitRam
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalGLLocalComponentsEventuallySatake
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCmQuadraticAdjoinSqrtNegNatStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSplitPlaceBelowCMFieldOfSqrtNegPrimeStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotIsUnramifiedAtOfSqEqNegPrimeStatement
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsNatUnramifiedOverRealOfCmSubfieldStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCmQuadraticAdjoinSqrtNegNat
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.AlgebraMapMemMaximalRealSubfieldIff
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSqrtTotallyNegative
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSplitPlaceBelowCMFieldOfSqrtNegPrime
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BaseChangeDefiniteUnitary
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ValuationComplexConjOfNotSplit
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.IsSquareOneAddFourMul
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotIsUnramifiedAtOfSqEqNegPrime
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NotSqMulUnit
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsNatUnramifiedOverRealOfCmSubfield
+import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.UnramifiedAdjoinSqrtOfNotMem
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FinrankMaximalRealEvenStatement
 
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N
@@ -34,24 +41,24 @@ theorem exists_qcm_adjoin (E Ω : Type) [Field E] [NumberField E] [IsCMField E] 
     [IsAlgClosure E Ω] (p : ℕ) (hp : 0 < p) (δ : Ω) (hδ : δ ^ 2 = -(p : Ω))
     (hn : δ ∉ Set.range (algebraMap E Ω)) :
     ∃ Q : GlobalTheory.RealGal.QCM E Ω, Q.K = IntermediateField.adjoin E {δ} :=
-  GlobalTheory.T.exists_cmQuadratic_adjoin_sqrt_neg_nat E Ω p hp δ hδ hn
+  _root_.GlobalTheory.CMSqrtNeg.exists_qcm_adjoin_sqrt_neg E Ω p hp δ hδ hn
 
 theorem isSplitAt_of_dvd (L : Type) [Field L] [NumberField L] [IsCMField L] (p q : ℕ) (δ : L) (hp : 0 < p)
     (hδ : δ ^ 2 = -(p : L)) (hq : ((8 * q : ℕ) : ℤ) ∣ (p : ℤ) + 1) (w : HeightOneSpectrum (𝓞 L))
     (hw : (q : 𝓞 L) ∈ w.asIdeal) : GlobalTheory.UnitaryBC.IsSplitAt w :=
-  GlobalTheory.T.isSplitPlaceBelowCMField_of_sqrt_neg_prime L p q δ hp hδ hq w hw
+  _root_.GlobalTheory.SplitOfNegPrime.isSplitAt L p q δ hp hδ hq w hw
 
 theorem not_isUnramifiedAt (E K : Type) [Field E] [NumberField E] [Field K] [NumberField K] [Algebra E K]
     (p : ℕ) (hp : p.Prime) (hd : ¬ (p : ℤ) ∣ discr E) (δ : K) (hδ : δ ^ 2 = -(p : K))
     (w : HeightOneSpectrum (𝓞 K)) (hw : (p : 𝓞 K) ∈ w.asIdeal) :
     ¬ Algebra.IsUnramifiedAt (𝓞 E) w.asIdeal :=
-  GlobalTheory.T.not_isUnramifiedAt_of_sq_eq_neg_prime E K p hp hd δ hδ w hw
+  _root_.GlobalTheory.SqrtNegRam.not_isUnramifiedAt_of_sq_eq_neg E K p hp hd δ hδ w hw
 
 theorem exists_unram (E : Type) [Field E] [NumberField E] [IsCMField E] :
     ∃ N : ℕ, N ≠ 0 ∧ ∀ (K : Type) [Field K] [NumberField K] [IsCMField K] [Algebra E K]
       (w : HeightOneSpectrum (𝓞 K)), (N : 𝓞 K) ∉ w.asIdeal →
         Algebra.IsUnramifiedAt (𝓞 (maximalRealSubfield K)) w.asIdeal :=
-  GlobalTheory.T.exists_nat_unramified_over_maximalRealSubfield E
+  _root_.GlobalTheory.exists_nat_unramified_over_real_of_cm_subfield E
 
 theorem even_finrank (E Ω : Type) [Field E] [NumberField E] [IsCMField E] [Field Ω] [Algebra E Ω]
     (Q : GlobalTheory.RealGal.QCM E Ω) : Even (Module.finrank ℚ (maximalRealSubfield Q.K)) :=

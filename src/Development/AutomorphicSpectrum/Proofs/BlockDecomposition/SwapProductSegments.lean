@@ -3,7 +3,9 @@ import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.Mirabol
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSubquotientParIndProductsFlattened
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionProductBlockRenamingEquivStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ParabolicInductionProductBlockRenamingEquiv
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasSupportOfIsSubquotientProdIrr
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 import BuildAid.D3
 
 noncomputable section
@@ -34,7 +36,7 @@ theorem flatten {s h N : ℕ} (t : Fin s → ℕ) (u : ∀ a, Fin (t a) → IrrG
   refine Exists.elim hS fun E0 hχ => ?_
   let E : (Σ c : Fin h, Fin (u (ofLex (F c)).1 (ofLex (F c)).2).1) ≃ Fin N :=
     (Equiv.sigmaCongrLeft (β := fun c : Σₗ a, Fin (t a) => Fin (u (ofLex c).1 (ofLex c).2).1) F.toEquiv).trans E0
-  have hω := GlobalTheory.T.parabolicInductionProduct_block_renaming_equiv (k := k) F F.strictMono F.surjective E0 E
+  have hω := _root_.GlobalTheory.SmGL.BlockRename.multiProd_rename (k := k) F F.strictMono F.surjective E0 E
     (fun _ _ => rfl) fun c => (u (ofLex c).1 (ofLex c).2).rep
   refine hχ.elim fun χ => hω.elim fun ω => ?_
   refine (GlobalTheory.ProdReorder.multiProd_placing (k := k) E (stdBlocks (fun c => (u (ofLex (F c)).1 (ofLex (F c)).2).1) hxN)

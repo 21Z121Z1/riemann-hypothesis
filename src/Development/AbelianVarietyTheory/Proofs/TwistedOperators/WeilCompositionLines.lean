@@ -10,10 +10,15 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsThetaSubGAlgDO
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRealmapsIsomorphism
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOneParamSubgroupTransposeGramLieAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerSkewPlaneUniqueDual
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineOneParameterStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineOneParameter
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionUnitaryCompact
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPairingStdP
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineCmModelAction
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineCmModelSum
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzTendstoOperatorCurveOfPointwiseStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchwartzTendstoOperatorCurveOfPointwise
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzMapBarrelledSpace
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.MainNotions.S MeasureTheory IsDedekindDomain NumberField Matrix
 open Formalism.L2.Theta Formalism.L2.DIV Formalism.L2.Indef Formalism.DivisionValues
@@ -52,7 +57,7 @@ theorem slope_prod {V : Type} [NormedAddCommGroup V] [NormedSpace ℝ V] [Finite
       refine h2.congr' (eventually_nhdsWithin_of_forall fun t ht => ?_)
       rw [smul_smul, mul_inv_cancel₀ ht, one_smul, sub_add_cancel]
       rfl
-    have h1 := GlobalTheory.T.schwartz_tendsto_operatorCurve_of_pointwise V S hS1 _ _ ht
+    have h1 := _root_.GlobalTheory.schwartz_tendsto_apply_of_tendsto_pointwise V S hS1 _ _ ht
     have h3 := h1.add (hQ 0 f)
     rw [Fin.sum_univ_succ, add_comm (Q 0 f)]
     refine h3.congr fun t => ?_

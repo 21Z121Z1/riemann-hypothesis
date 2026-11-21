@@ -40,7 +40,7 @@ theorem exists_theta_section_alt_alt : _root_.GlobalTheory.CovTop.PublishedHodge
     omega
   obtain ⟨θ, hθ, hb⟩ := _root_.GlobalTheory.ThetaSteep.exists_section_of_theta_datum Z h1 hL hM TF (fun τ => (hfl Z τ).1.some) hdeg
   exact ⟨θ, hθ, fun la _ f hf' => vanBd_le_space _ _ _ Y _ _ hY.1 hf Z TF la
-    (mul_mem_vanBd TF.X Z _ θ ((GlobalTheory.T.cuspForms_extend_vanish_compactifiedFlagSpace _ _ _ Y _ _ hY.1 hf Z TF _).space_le hf')),
+    (mul_mem_vanBd TF.X Z _ θ ((_root_.GlobalTheory.CompHS.cusp_extends_comp _ _ _ Y _ _ hY.1 hf Z TF _).space_le hf')),
     fun y _ ν hν φ hφ j hj m hm => hb y ν hν φ hφ j hj m hm⟩
 end GlobalTheory.ThetaSteep
 end

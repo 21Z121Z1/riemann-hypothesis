@@ -8,7 +8,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitOneAddPiOMul
 import GroundTheory.LocalFields.FilteredSurj
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.NormApproximationFirstLevel
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.NormApproximationFiltration
-import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.NormFiltrationComplete
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormFiltrationComplete
+import Formalism.SatakeDualWeyl.StatementF
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.EqZeroOfMemAllPowers
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.ConjugateSelfReciprocalCharpoly
 import Development.WeilBound.CoreStatements.AutomorphicKernels.IsobaricBaseChange.IntegralCoefficientBaseChange.UnitaryBaseChangeCharacters.UnitaryBaseChangeLinks.CharpolyDvdOfAevalEqZero
@@ -78,7 +79,7 @@ theorem normU_surj (L : Type) [Field L] [Valued L (WithZero (Multiplicative ℤ)
       show ((z.1 / normU P u : (Alg P)ˣ) : Alg P) - 1 ∈ piPow h P (n + 1)
       exact div_mem_of_sub_mem hu'
   obtain ⟨u, hu⟩ := surjective_of_graded_surjective (F := filt h P) (E := E) (filt_antitone h P) hE
-    (GlobalTheory.T.norm_filtration_complete L σ ϖ q h P) hsepE f tendsto_id (filt_zero h P) hE0 hmap hgr ⟨x, hx⟩
+    (_root_.GlobalTheory.NormEq.filtrationComplete_filt L σ ϖ q h P) hsepE f tendsto_id (filt_zero h P) hE0 hmap hgr ⟨x, hx⟩
   exact ⟨u, congrArg Subtype.val hu⟩
 
 end GlobalTheory.NormEq

@@ -12,7 +12,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPolarizedT
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.QuadraticTwists.AttTwist
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlobalArtinReciprocityHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeLAdicCharacterAndPrincipalIdealSt
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodConjSelfDualTwistSplitUnramifiedStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsGoodConjSelfDualTwistSplitUnramified
 
 open NumberField IsDedekindDomain Neutral.B1 Formalism.L2.Host Formalism.ConjugateSelfDual ReciprocityTheory.Gal Formalism.BasicNotions Formalism.BasicNotions.Loc Formalism.MainNotions.N
 open GlobalTheory.CuspRep GlobalTheory.WeilDeligne GlobalTheory.Pst GlobalTheory.LocLanglands GlobalTheory.HeckeGal GlobalTheory.LocGL GlobalTheory.GalOfCusp
@@ -56,7 +56,7 @@ theorem ex_good_of_ex_csd : AutomorphicFormsFiniteGL → Ex .csd → Ex .good :=
   have hsplit : GlobalTheory.UnitaryBC.IsSplitAt w₀ := by
     by_contra h
     exact (hs.2.2.2.2 w₀ h).1 hw₀
-  obtain ⟨κ, m, hκ, -, hs'⟩ := GlobalTheory.T.exists_good_conjSelfDual_twist_split_unramified hA E l a ha π χ hs w₀ hsplit
+  obtain ⟨κ, m, hκ, -, hs'⟩ := _root_.GlobalTheory.GoodCsdTwist.exists_goodCsd_twist hA E l a ha π χ hs w₀ hsplit
   obtain ⟨r', hr'c, hr'⟩ := hcsd E Ω l ι a ha (π.twist κ) _ hs'
   have hκi : (κ⁻¹).IsAlg (-m) := fun k => by
     rw [HChar.inf_inv, Units.val_inv_eq_inv_val, hκ k, ← Finset.prod_inv_distrib]

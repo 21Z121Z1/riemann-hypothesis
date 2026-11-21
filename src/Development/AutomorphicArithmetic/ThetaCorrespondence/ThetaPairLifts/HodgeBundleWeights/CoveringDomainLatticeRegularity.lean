@@ -37,7 +37,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.S
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodCoverComponentExtendsToRankOneCuspData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformisationFrameReadingNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNumberFieldFrameValueNeZeroOfComplex
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameDenominatorDominantWeightCmStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameDenominatorDominantWeightCm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowerCuspMultiplierGap
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ToKnownTheoremsOf
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ExistsPowMulMemCuspFormsOfWeightMatch
@@ -69,7 +69,7 @@ theorem weight_lattice_fg_on_domain : _root_.GlobalTheory.CovTop.PublishedHodgeB
   refine GlobalTheory.fg_of_integral_functionals Y.d.c₂.F (Y.V (wtOf _ la 0)) _ fun x hx => ?_
   obtain ⟨z, La, y, hz, hyx, hne⟩ := _root_.GlobalTheory.T.cmPoint_detects_dominant_covering hP D T j Y e o hG hE hp hq la hA hb (fun _ => rfl) x.1 x.2
     (fun h => hx (Subtype.ext h))
-  obtain ⟨N, hN, hint⟩ := GlobalTheory.T.exists_frame_denominator_dominant_weight_cm _ _ _ _ _ _ z _ La hz y hyx hp hq la hA hb
+  obtain ⟨N, hN, hint⟩ := _root_.GlobalTheory.LatFull.CMInt.exists_frame_denom_dominant _ _ _ _ _ _ z _ La hz y hyx hp hq la hA hb
   refine ⟨z.K, inferInstance, inferInstance, inferInstance,
     { toFun := fun F => N * evR Y.d.Xo₂ Y.d.c₂ F.1 y
       map_add' := fun F G => ?_

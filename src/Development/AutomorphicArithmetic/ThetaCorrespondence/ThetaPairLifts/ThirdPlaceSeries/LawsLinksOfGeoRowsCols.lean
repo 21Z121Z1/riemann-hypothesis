@@ -22,7 +22,11 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RamUnitary
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeDataUnitShiftRelation
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeriesUnitary₂.DiscreteSeriesClassificationIff
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.ThmSOwn
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawTotalConstantRatioOfFactorRatiosStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawTotalConstantRatioOfFactorRatios
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HzUnit
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CosInj
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnitRatio
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VacOfShape
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawLatticeFramePinsFiniteIntegralLawsStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.NonzeroScalarsRootsOfUnity
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ProdDat
@@ -30,15 +34,15 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RankOneGra
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FrameTopAlt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.QuadraticFamilyLevelIdentity
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PinColL
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNonzeroJetScaleTrueColumnsStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTranslatesOfValuesFramesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNonzeroJetScaleTrueColumns
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsTranslatesOfValuesFrames
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueColumnsRealDataSpecStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.KernelPartLawsOfColumnPinsStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLastPeriodClassDataOfLastStepStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsRowFormReadingLevelFormLastSpaceStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpOfOrder
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ChainIdealIndexProduct
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteLiftCommLevelPrimeOperatorsStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteLiftCommLevelPrimeOperators
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CoCptOfIsAnisoOrPosDef
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsThetaFunOOfThetaAt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PtYAndItYOfPair
@@ -48,12 +52,13 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsKFinOfMe
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ThetaIdentityOfMapsAll
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftChainScalar
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftTopScalar
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawKernelLiftCombinationOfDefiniteClassDataStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawLastPeriodFactorizationOfClassDataStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawKernelLiftCombinationOfDefiniteClassData
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawLastPeriodFactorizationOfClassData
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawScalarFormsContinuousAutomorphicCentralStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawTupleKernelBackOfClassKernelDataStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LastPeriodClassesGiveTailReadingStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitLiftExactConstantProofStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SeeSawTupleKernelBackOfClassKernelData
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LastPeriodClassesGiveTailReading
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitLiftExactConstantProof
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.DoubleCollapse
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RootOfUnityThetaTwist
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TypeDataLocalRelation
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.UnramifiedCharacter
@@ -175,7 +180,7 @@ theorem GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt : GlobalTheory.Published
     (hweil t).2.2.2.1, hchars t, (hCO.laws t).1, (hCO.laws t).2.1, (hCO.laws t).2.2, hCO.cT t, hCO.cv t⟩
   have hcls : ClsPinD (a.fam row col).t := _root_.GlobalTheory.T.cls_pin_d_of_true_family W u (a.fam row col) hW.tr hW.tw ha.top (hRow col) hFC
   have hlaws : LawsX (a.fam row col).t := ⟨hIs.1, htIs, hloc, _root_.GlobalTheory.T.realEq_of_colOK' W u hW.pk (a.fam row col) hCO.ok, hval, hlast,
-    GlobalTheory.T.seeSawKernelLiftCombination_of_definiteClassData _ _ _ _ hIs.1 htIs hcls, GlobalTheory.T.seeSawLastPeriodFactorization_of_classData _ _ _ _ hIs.1 htIs hcls, GlobalTheory.T.seeSaw_scalarForms_continuous_automorphic_central _ _ _ _ hIs.1 htIs hcls⟩
+    _root_.GlobalTheory.SeeSaw.kerX_of_clsPinD _ _ _ _ hIs.1 htIs hcls, _root_.GlobalTheory.SeeSaw.perX_of_clsPinD _ _ _ _ hIs.1 htIs hcls, GlobalTheory.T.seeSaw_scalarForms_continuous_automorphic_central _ _ _ _ hIs.1 htIs hcls⟩
   have hheq : ∀ t, W.P.I.tup t = (I.rec7 l Z).what₂.mu0 → ∀ φ, HEq (_root_.GlobalTheory.MiTop.col0_alt (a.fam row col) t φ) ((I.rec7 l Z).eMu u φ).1 := by
     intro t ht φ
     show HEq ((I.rec7 l Z).e0Tw u (W.P.I.tup t) _) _
@@ -194,10 +199,10 @@ theorem GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt : GlobalTheory.Published
     refine _root_.GlobalTheory.T.type_data_unit_shift_relation_alt W u (a.fam row col) a.k a.ι a.o ε S₀ (GlobalTheory.FinPl.RamUnit.ramUnitary_holds _) hIs.1
       (fun t => ⟨htIs t, ?_, ?_, ?_, hS₀ t⟩) ha.shape.pre.nodup ha.shape.pre.all ha.shape.pre.inj ?_ ?_ ?_
     · obtain ⟨⟨A, hAI⟩, -⟩ := hA t
-      exact GlobalTheory.T.seeSawTuple_kernelBack_of_classKernelData _ _ _ ρ A hIs.1 (htIs t) hρ hAI fun j hj => hne (hCO.cK t j hj)
+      exact _root_.GlobalTheory.SeeSaw.kBack_of_classData _ _ _ ρ A hIs.1 (htIs t) hρ hAI fun j hj => hne (hCO.cK t j hj)
     · obtain ⟨-, A, hAI⟩ := hA t
-      exact GlobalTheory.T.lastPeriodClasses_give_tailReading _ _ _ ρ A hAI (hne (hCO.cP t))
-    · exact GlobalTheory.T.definiteLift_comm_levelPrimeOperators _ _ a.k a.ι k.v a.o _ (w t) (GlobalTheory.T.splitLiftExactConstant_proof _) hIs.1 (htIs t) hvIs (hVF t) hsh
+      exact _root_.GlobalTheory.SeeSaw.tailRd_of_clsT _ _ _ ρ A hAI (hne (hCO.cP t))
+    · exact _root_.GlobalTheory.SeeSaw.liftS_of_exact _ _ a.k a.ι k.v a.o _ (w t) (_root_.GlobalTheory.FinPl.liftExact _) hIs.1 (htIs t) hvIs (hVF t) hsh
         (_root_.GlobalTheory.T.type_data_local_relation_alt W u hW.pk (a.fam row col) a.v a.k a.ι a.o (hRow col) hCO.ok ha.vis (ha.tie row col).1 ha.shape t)
     · intro t
       obtain ⟨α₀, -⟩ := hCO.zero t
@@ -241,7 +246,7 @@ theorem GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt : GlobalTheory.Published
           ((_root_.GlobalTheory.T.root_of_unity_theta_twist_alt _ _ _ _ _ _ _ _ _ W u (a.fam row col) hW.pk (hRow col) tt).choose_spec.2.2.2 (j + 1))
       · rw [hq tt j ρ h, hq W.P.A3.A.μ0 j ρ h]
         exact (GlobalTheory.Fam.unitRatio_laws _).1 _ (inv_ne_zero (mul_ne_zero (hcI _ j (by omega)) (hcI _ (j + 1) (by omega))))
-    obtain ⟨h1, -, h3⟩ := GlobalTheory.T.seeSaw_totalConstant_ratio_of_factor_ratios _ _ k.v W.P.T (a.fam row col).t w (_root_.GlobalTheory.MiTop.qPrime_alt W) W.P.A3.A.μ0 htIs hCO.cv hkap hcG hsc hct
+    obtain ⟨h1, -, h3⟩ := _root_.GlobalTheory.SeeSaw.ratio_total_unitRatio_of_parts _ _ k.v W.P.T (a.fam row col).t w (_root_.GlobalTheory.MiTop.qPrime_alt W) W.P.A3.A.μ0 htIs hCO.cv hkap hcG hsc hct
       hCO.cP n hn t
     exact ⟨h1, h3⟩
 end

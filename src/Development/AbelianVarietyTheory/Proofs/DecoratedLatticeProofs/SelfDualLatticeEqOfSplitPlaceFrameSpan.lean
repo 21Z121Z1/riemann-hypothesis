@@ -144,7 +144,7 @@ theorem latV_eq : ∀ {D : D7} (V : HSp D) (t : GA D V) (Λ L N : GlobalTheory.F
     obtain ⟨ε, hε, hs⟩ := q.above
     rw [← add_smul, hs]
     funext i
-    exact ((GlobalTheory.T.placeIdempotent_acts_on_supportedAndOff D q.v ε hε).1 (z i)).1 (hz i)
+    exact ((_root_.GlobalTheory.FinPl.placeIdem_acts D q.v ε hε).1 (z i)).1 (hz i)
   have hgen : ∀ A B : GlobalTheory.FinPl.Lat V, IsSelfDualC V A → IsSelfDualC V B →
       (∀ z, q.e • z ∈ latV V A (· = q.v) ↔ q.e • z ∈ latV V B (· = q.v)) →
       latV V A (· = q.v) ≤ latV V B (· = q.v) := by

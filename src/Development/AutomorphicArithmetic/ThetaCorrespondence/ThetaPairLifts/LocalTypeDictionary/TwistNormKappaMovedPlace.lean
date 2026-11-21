@@ -36,7 +36,7 @@ theorem norm_kappa_of_moved_place : _root_.GlobalTheory.FunPr.ThetaLocalInputs �
   cases p with
   | chi i j =>
     obtain ⟨hi, rfl⟩ := hp
-    have h2 := fun f k => GlobalTheory.T.fockVector_negHermitianSpace_conj_monomial ch.W.ψ ch.W.θ (ch.G.V (.grid (i + 1) D.R.m)) (ch.G.V (.grid i D.R.m))
+    have h2 := fun f k => _root_.GlobalTheory.FockConj.pureTensorO_negSp_monomial ch.W.ψ ch.W.θ (ch.G.V (.grid (i + 1) D.R.m)) (ch.G.V (.grid i D.R.m))
       (ch.W.cart (.grid (i + 1) D.R.m)) (ch.W.cart (.grid i D.R.m)) (ch.S.N.frC (.grid (i + 1) D.R.m))
       (ch.S.N.frC (.grid i D.R.m)) f ch.W.ψ_std ch.W.θ_is k 0
     have key := fun Ls Lt => @normSq_scalar D ch.W.ψ ch.W.θ (ch.G.V (.grid (i + 1) D.R.m)) (ch.G.V (.grid i D.R.m))

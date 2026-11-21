@@ -42,7 +42,7 @@ theorem exists_finset_doubleCosets (V : HSp D) (U : Subgroup (GA D V)) (hU : IsO
       ∀ g, ∃ γ ∈ GQ V, ∃ x ∈ S, ∃ a ∈ GinfC V, ∃ k ∈ U, k ∈ GfC V ∧ g = γ * x * a * k := by
   classical
   obtain ⟨⟨θ, hθ⟩, -⟩ := GlobalTheory.Ker.exists_infFam_and_stdChar D
-  have R := (GlobalTheory.T.adelicUnitary_realPoints_structure_realPlaces D).2 θ hθ V
+  have R := (_root_.GlobalTheory.SmoothForms.RealPts.realPoints D).2 θ hθ V
   obtain ⟨S, _, _, hS⟩ := GlobalTheory.SmoothForms.reduction hθ R U hU
   choose p hp q hq e using R.2.2.2.2.2.2.1
   refine ⟨S.image p, fun x hx => ?_, fun g => ?_⟩

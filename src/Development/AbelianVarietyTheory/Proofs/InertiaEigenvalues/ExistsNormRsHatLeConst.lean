@@ -133,10 +133,10 @@ theorem partB_entire (hπ : π.IsUnitary) (hπ' : π'.IsUnitary) (hφ : φ ∈ r
   have hi := GlobalTheory.T.integrableOn_absDet_rpow_le_one_fundamentalDomain E a ℓ.pos μ 𝓕 h𝓕 1 one_pos
   simp only [Real.rpow_one] at hi
   have hb := exists_tsum_norm_rsHat_le J η hπ hπ' hφ hφ' hΦ
-  have h1 := GlobalTheory.T.mellin_integral_rapidDecay_entire_of_le_one _ _ _ _ GlobalTheory.RSThetaLow.continuous_absDet.measurable hδ hi (AEStronglyMeasurable.tsum hm) fun K =>
+  have h1 := _root_.GlobalTheory.integral_mul_cpow_of_rapid_decay_entire _ _ _ _ GlobalTheory.RSThetaLow.continuous_absDet.measurable hδ hi (AEStronglyMeasurable.tsum hm) fun K =>
     (hb K).imp fun C h => hlow.mono fun g hg =>
       (norm_tsum_le_tsum_norm (poisson_rsPsi J η φ φ' hΦ g).2.1).trans (h g hg)
-  have h2 := GlobalTheory.T.mellin_integral_rapidDecay_entire_of_le_one _ _ _ _ GlobalTheory.RSThetaLow.continuous_absDet.measurable hδ hi
+  have h2 := _root_.GlobalTheory.integral_mul_cpow_of_rapid_decay_entire _ _ _ _ GlobalTheory.RSThetaLow.continuous_absDet.measurable hδ hi
     (Complex.continuous_ofReal.comp_aestronglyMeasurable (AEStronglyMeasurable.tsum fun ξ => (hm ξ).norm)) fun K =>
     (hb K).imp fun C h => hlow.mono fun g hg => by
       rw [Complex.norm_real, Real.norm_of_nonneg (tsum_nonneg fun _ => norm_nonneg _)]

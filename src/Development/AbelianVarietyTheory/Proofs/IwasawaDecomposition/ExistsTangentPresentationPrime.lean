@@ -4,7 +4,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntOIsLocalR
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharEqOfEqOnTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDlogUniqueModuloPStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalFiniteTorsionSplittingStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharacterCocycleDescentStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TorsionCharacterCocycleDescent
 
 set_option autoImplicit false
 
@@ -252,7 +252,7 @@ theorem ex_gl [IsIntegrallyClosed A] {κ : (Sp (FractionRing A) ⟶ t.G.left) �
   haveI := P.dom
   haveI : IsIntegrallyClosed (Localization.Away P.f) :=
     isIntegrallyClosed_of_isLocalization _ _ (powers_le_nonZeroDivisors_of_noZeroDivisors P.ne)
-  obtain ⟨b, hb, hb'⟩ := GlobalTheory.T.torsion_character_cocycle_descent E H X t (Localization.Away P.f) _ q P.B P.u P.fin
+  obtain ⟨b, hb, hb'⟩ := _root_.GlobalTheory.LineNorm.exists_groupLike_unit_of_isFinPart E H X t (Localization.Away P.f) _ q P.B P.u P.fin
     (fun σ => Units.map (algebraMap A (Localization.Away P.f)).toMonoidHom
       (κ (spMap (P.toK.comp σ.toRingHom) ≫ P.u.left))) (fun σ σ' σ'' w w' h h' h'' => by
       have e : spMap P.toK ≫ spMap (RingHom.id _) ≫ spMap (algebraMap A (Localization.Away P.f)) ≫ x₀ =

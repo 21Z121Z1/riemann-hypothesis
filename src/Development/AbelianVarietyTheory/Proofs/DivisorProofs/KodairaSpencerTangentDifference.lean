@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.P22
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.GrothendieckDeformation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalFirstOrderDeformation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KodairaSpencerMatrixUnique
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecLocalHomFactorsAffineOpenStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareZeroDeformationFactorsThroughLinearStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecLocalHomFactorsAffineOpen
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareZeroDeformationFactorsThroughLinear
 
 set_option autoImplicit false
 
@@ -43,8 +43,8 @@ theorem exists_dir_eq_of_smooth : ∀ (k₀ : Type) [Field k₀] (X : Scheme.{0}
     rw [← cp]; exact hxV
   have h2 : x' (IsLocalRing.closedPoint (DualNumber K)) ∈ V := by
     rw [← cp]; have := hxV; rw [← hred] at this; exact this
-  obtain ⟨R, rfl⟩ := GlobalTheory.T.exists_ringHom_spec_factor_fromSpec_of_closedPoint_mem X V hV _ Xι h1
-  obtain ⟨g, rfl⟩ := GlobalTheory.T.exists_ringHom_spec_factor_fromSpec_of_closedPoint_mem X V hV _ x' h2
+  obtain ⟨R, rfl⟩ := _root_.GlobalTheory.spec_local_hom_factors_affineOpen X V hV _ Xι h1
+  obtain ⟨g, rfl⟩ := _root_.GlobalTheory.spec_local_hom_factors_affineOpen X V hV _ x' h2
   letI := (s.appLE U V e).hom.toAlgebra
   haveI : Algebra.IsStandardSmoothOfRelativeDimension n Γ(Spec (CommRingCat.of k₀), U) Γ(X, V) := hstd
   have key := IsAffineOpen.SpecMap_appLE_fromSpec s hU hV e
@@ -73,7 +73,7 @@ theorem exists_dir_eq_of_smooth : ∀ (k₀ : Type) [Field k₀] (X : Scheme.{0}
       congr 2
     have := mono hU _ _ (e2.trans (hφ.symm.trans e1))
     exact (RingHom.congr_fun this a).symm
-  obtain ⟨M, hM⟩ := GlobalTheory.T.square_zero_deformation_factors_through_linear Γ(Spec (CommRingCat.of k₀), U) Γ(X, V) K n hstd ι hι R (hc _ R hXs)
+  obtain ⟨M, hM⟩ := _root_.GlobalTheory.FirstOrderPoints.exists_linearCombination_eq Γ(Spec (CommRingCat.of k₀), U) Γ(X, V) K n hstd ι hι R (hc _ R hXs)
     (fun M M' h => hinj M M' (by
       rw [← Category.assoc, ← Category.assoc, ← Spec.map_comp, ← Spec.map_comp, ← CommRingCat.ofHom_comp,
         ← CommRingCat.ofHom_comp, h]))

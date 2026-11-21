@@ -29,9 +29,9 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioC
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchRestrictedEqZeroOfNoComplexPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InductiveArakelovFormulaRhsTensorAdditive
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightOneIffPointClosureDimProjArithStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchLogNormIntegralEqSumEmbeddingsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralPointClosureClosedSubschemeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightOneIffPointClosureDimProjArith
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedArchLogNormIntegralEqSumEmbeddings
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernIntegralPointClosureClosedSubscheme
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -57,14 +57,14 @@ theorem resArch_eq_finsum_cycInt : GlobalTheory.Published.Principalisation → �
     show cloι z (genericPoint (clo z)) ∈ nonzeroLocus t
     rw [cloι_genericPoint]; exact htz
   have hd : topologicalKrullDim (clo z) = (e + 1 : ℕ) :=
-    ((GlobalTheory.T.coheight_one_iff_pointClosure_dim_projArith k X p hamb (e + 1) hX.dim_eq).2 z (genericPoint (clo z)) hz).1
+    ((_root_.GlobalTheory.MixHt.dimOne k X p hamb (e + 1) hX.dim_eq).2 z (genericPoint (clo z)) hz).1
   have hamb' : IsAmb (cloι z ≫ p) := hamb.sub (cloι z)
-  have hc (σ : k →+* ℂ) := (GlobalTheory.T.mixed_chern_integral_point_closure_closed_subscheme k X (clo z) p (cloι z ≫ p) σ hX.isProjOver (cloι z) rfl e
+  have hc (σ : k →+* ℂ) := (_root_.GlobalTheory.Mix.cycInt_of_closedImmersion k X (clo z) p (cloι z ≫ p) σ hX.isProjOver (cloι z) rfl e
     (fun i => MLine.ofHerm (L i) σ) ((MLine.ofHerm N σ).logSec t)).2
   simp only [cloι_genericPoint] at hc
   refine (dif_pos hgen).trans ?_
   rcases isArithVar_or_isEmpty hamb' hd with hv | hE
-  · refine (GlobalTheory.T.mixedArchLogNormIntegral_eq_sum_embeddings hP k (clo z) (cloι z ≫ p) e hv (fun a => (L a).restr (cloι z)) (N.restr (cloι z))
+  · refine (_root_.GlobalTheory.MixPolar.mixArch_eq_sum hP k (clo z) (cloι z ≫ p) e hv (fun a => (L a).restr (cloι z)) (N.restr (cloι z))
       (Cartier.secPull t (cloι z)) hgen).trans (finsum_congr fun σ => ?_)
     rw [hc σ, logSec_restr_secPull]
     rfl

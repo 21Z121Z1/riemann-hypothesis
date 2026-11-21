@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FibreIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanNormSquareExists
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLieEigenbasisBaseChangeLocalAlgebraStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLieEigenbasisLocalizationAtPrimeStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLieEigenbasisOfLocalizationsAtPrimeStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLieEigenbasisBaseChangeLocalAlgebra
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLieEigenbasisLocalizationAtPrime
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsLieEigenbasisOfLocalizationsAtPrime
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompactificationOpenOfClosed
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DeterminantSectionRule
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceOverPInducedByAlgebraicPadicEmbedding
@@ -30,7 +30,7 @@ theorem eigStable {S : Scheme.{0}} (T : SAB H S) (c : Coeff l) : EigStable T c :
   choose w hw using fun i => exists_lift n.cart (v i)
   choose w' hw' _ using fun i => existsUnique_isVecOver n'.cart.1 (w i)
   have hb := ((fibre_iff n.cart hw).2 n.act _).2 hv
-  refine ((fibre_iff n''.cart (v := w') fun i => ?_).2 n''.act _).1 (GlobalTheory.T.isLieEigenbasis_of_localizations_atPrime E H R' t' _ m w' fun q _ => ?_)
+  refine ((fibre_iff n''.cart (v := w') fun i => ?_).2 n''.act _).1 (_root_.GlobalTheory.FlatRow.isEigBasis_of_local E H R' t' _ m w' fun q _ => ?_)
   · change _ ≫ n''.φ = _
     rw [e'', ← Category.assoc, hw' i, Category.assoc, hw, hv']
   let p := q.comap g
@@ -45,8 +45,8 @@ theorem eigStable {S : Scheme.{0}} (T : SAB H S) (c : Coeff l) : EigStable T c :
   choose wq hq _ using fun i => existsUnique_isVecOver nq.cart.1 (w' i)
   choose wp hp _ using fun i => existsUnique_isVecOver np.cart.1 (w i)
   refine ⟨tq, nq, wq, hq, ?_⟩
-  have h₁ := GlobalTheory.T.isLieEigenbasis_localization_atPrime E H R p t tp np _ m w wp hb hp
-  have h₂ := GlobalTheory.T.isLieEigenbasis_baseChange_localAlgebra E H l c _ _ ((algebraMap R _).comp j) gp tp tq k' τ m wp wq h₁ fun i =>
+  have h₁ := _root_.GlobalTheory.EigBasisPrime.isEigBasis_atPrime E H R p t tp np _ m w wp hb hp
+  have h₂ := _root_.GlobalTheory.EigBasisLocal.isEigBasis_baseChange E H l c _ _ ((algebraMap R _).comp j) gp tp tq k' τ m wp wq h₁ fun i =>
     EllComp.isVecOver_cancel np.cart.1 k'.cart.1 (hp i)
       (by rw [← ek', ek, hg]; exact EllComp.isVecOver_comp (hw' i) (hq i))
   rwa [← RingHom.comp_assoc, hg] at h₂

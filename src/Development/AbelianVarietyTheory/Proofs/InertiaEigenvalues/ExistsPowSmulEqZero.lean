@@ -6,8 +6,10 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodCoefficien
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingIntegralClosurePadicInt
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueAlgEquivOfCompatibleQuotient
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardH1LocalEulerFormulaStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticePowSmulNhdsZeroBasisStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardH1LocalEulerFormula
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MkMemAdmissibleAtIffCocycle
+import Formalism.GaloisCohomology.LocalTateDualityK
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticePowSmulNhdsZeroBasis
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdicallyCompleteLatticeReductionActionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LatticeTwistExactSequenceCohomologyStatement
 
@@ -436,7 +438,7 @@ theorem free_and_tensIso_gal {G Qp LL O : Type} [Group G] [TopologicalSpace G] [
   rw [hm] at hA hF'
   rw [← hr]
   refine free_and_tensIso Γ.χ₁ hi
-    (GlobalTheory.T.lattice_pow_smul_nhds_zero_basis LL O Γ.T₀.V Γ.T₀.L.T Γ.lam Γ.T₀.L.fg Γ.T₀.L.span hO hl0 hU) (fun v => ?_) hl0 h0 h2
+    (_root_.GlobalTheory.lattice_multiples_nhds_basis LL O Γ.T₀.V Γ.T₀.L.T Γ.lam Γ.T₀.L.fg Γ.T₀.L.span hO hl0 hU) (fun v => ?_) hl0 h0 h2
     fun _ hlc => hE _ _ (fun m => ?_) hlc h0 h2
   · have h := (hχ.comp continuous_inv).smul (Γ.T₀.cont v)
     refine h.congr fun g => ?_

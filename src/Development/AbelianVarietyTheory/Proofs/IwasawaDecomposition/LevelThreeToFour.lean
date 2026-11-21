@@ -10,7 +10,8 @@ import Development.AbelianVarietyTheory.Definitions.Foundations.CdScaleTieIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.UpLReStage
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotLv3MvFixH
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSpectralObjectsOverReplacedStagesStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSpectralObjectsOverReplacedStages
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RelabelledWeight
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsColsTiedSym
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RangeEEAndNorm
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSStageTrue
@@ -21,7 +22,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LevelMatchIf
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.UnitaryHaarProducts.InstExists
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LocalAdditiveCharContinuous
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowDictGoodOpNonempty
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDiscreteSeriesFormalDegreeProductStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDiscreteSeriesFormalDegreeProduct
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TrueScaleIsScale
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.VolumesEqMassesOfUnfold
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHyperplaneVolumeRatioSiegelWeil
@@ -73,7 +74,7 @@ set_option maxHeartbeats 4000000 in
 theorem satOfDiscreteSeries (h1 : GlobalTheory.Dec.DSInfChar) (h2 : GlobalTheory.Published.HarishChandraFinite) (h3 : GlobalTheory.Published.CuspRapidDecay)
     (h4 : GlobalTheory.Published.DiscreteSeriesUpqUnique) (h5 : Formalism.L2.SG.RowsDef.RowsFinDim) : SatNew :=
   fun B C a p F0 P g i l r d e ⟨a1, a2, a3, a4, a5, a6, a7⟩ =>
-    GlobalTheory.T.exists_spectralObjects_over_replacedStages h1 h2 h3 h4 h5 B C a p.G' p.Pl0 p.T p.A p.Ks p.R p.F F0 p.eE P g i l r d a1 a2 a3 e a4 a5 a6 a7
+    _root_.GlobalTheory.Mem.SRe.satOfDiscreteSeries h1 h2 h3 h4 h5 B C a p.G' p.Pl0 p.T p.A p.Ks p.R p.F F0 p.eE P g i l r d a1 a2 a3 e a4 a5 a6 a7
 
 set_option maxHeartbeats 8000000 in
 
@@ -111,11 +112,11 @@ theorem realOf (h1 : Vol.DiscreteSeriesExist) (h2 : Vol.FormalDegreeFormula₂) 
   · intro τ
     unfold Formalism.L2.Theta.IsDsig
     rw [hs, hd τ]
-    exact (GlobalTheory.T.exists_discreteSeries_formalDegree_product h1 h2 D.cd D.R (D.hc τ)).1
+    exact (_root_.GlobalTheory.Mem.Vol.exists_isDS_isFdeg_trueDsig h1 h2 D.cd D.R (D.hc τ)).1
   · intro τ H _ _ σ d hσ hf
     rw [hs] at hf
     rw [hd τ]
-    exact (GlobalTheory.T.exists_discreteSeries_formalDegree_product h1 h2 D.cd D.R (D.hc τ)).2 H σ d hσ hf
+    exact (_root_.GlobalTheory.Mem.Vol.exists_isDS_isFdeg_trueDsig h1 h2 D.cd D.R (D.hc τ)).2 H σ d hσ hf
 
 theorem goodIdempotent_real_of_harishChandra_series (D : D7) (h : GlobalTheory.GLq.ESerTie D) : IdempotentRealFixed D :=
   GlobalTheory.GoodIdemReal.star_coeff_of_reverse D fun k g hm h0 x => by

@@ -47,7 +47,7 @@ theorem exists_admissible_fock_polynomial : _root_.GlobalTheory.FunPr.ThetaLocal
   · obtain ⟨p₀, q₀, hsig, -, hlt⟩ := htr.sig
     have hW : IsWeilDatumO ψ (GlobalTheory.Grid.sgn false W₁) X α (α / β) (ωB.toSgn false) := hm.weilB
     have hk := killed_capelli hψ hθ (frSgn false A₁) B hf τ P₀
-    refine GlobalTheory.T.thetaKernel_integrableOn_fundamentalDomain hP.siegelSetUnitary D ψ θ hθ false W₁ X _ _ ωB hm.weilB q₀ ⟨τ, (hsig τ).2.1⟩ (by omega) ν₁ 𝓕₁ hν _
+    refine _root_.GlobalTheory.ThetaCuspInteg.integrableOn_thetaKO hP.siegelSetUnitary D ψ θ hθ false W₁ X _ _ ωB hm.weilB q₀ ⟨τ, (hsig τ).2.1⟩ (by omega) ν₁ 𝓕₁ hν _
       (GlobalTheory.FockAdjoint.ptF_theta hψ hθ (frSgn false A₁) B hf.1 _) τ fun g h S₀ r d μ' 𝓕' hμ x i hx => ?_
     have := (hk.om hW hθ ((GlobalTheory.Grid.ofSgn false W₁).symm g) h).mixS_eq_zero hψ hθ d hμ x i hx
     exact this

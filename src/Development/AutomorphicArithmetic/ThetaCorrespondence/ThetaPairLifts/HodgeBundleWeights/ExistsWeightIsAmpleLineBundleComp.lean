@@ -12,8 +12,11 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.BarCompSubsetClosur
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagSpaceComponentSmoothProjectiveConnected
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNormalProjectiveModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CommonRestrIsoTens
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAmplePullbackPowerDivOfLocallyAmpleStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BorelWeilFlagModelDetInverseIsAmpleLocalStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAmplePullbackPowerDivOfLocallyAmple
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsProperAndExistsIsAmpleLB
+import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsAffineOfQuasiAffine
+import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsProjectiveModel
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BorelWeilFlagModelDetInverseIsAmpleLocal
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.Hypotheses2
 
 section
@@ -69,8 +72,8 @@ theorem exists_weight_isAmple_lineBundle_comp : _root_.GlobalTheory.CovTop.Hypot
       have := congrArg (· - GlobalTheory.CechPic.cls (TF.X.F.LL 0) ((commonLL TF.X).isLB 0)) h0
       simpa using this.symm
     exact hsum.symm.trans h4
-  obtain ⟨n₀, hn⟩ := GlobalTheory.T.isAmple_pullbackPower_div_of_locally_ample TF.X.π A hAmp (TF.X.F.LL (AllWt.exOf Dw ρ 0)) (TF.X.F.LL e) hN hM hcls
-    (fun z => GlobalTheory.T.borelWeil_flagModel_detInverse_isAmple_local TF.flag z)
+  obtain ⟨n₀, hn⟩ := _root_.GlobalTheory.AmpleTwistLB.ample_pow_div TF.X.π A hAmp (TF.X.F.LL (AllWt.exOf Dw ρ 0)) (TF.X.F.LL e) hN hM hcls
+    (fun z => _root_.GlobalTheory.FlagPlucker.isAmpleLB_LL_flagModel TF.flag z)
   have h := (hn n₀ le_rfl).pull_of_isOpenImmersion (inc₀ TF.X Z)
   have hAπ := LB.isLB_pull hA TF.X.π
   have hAg := LB.isLB_pull hA (inc₀ TF.X Z ≫ TF.X.π)

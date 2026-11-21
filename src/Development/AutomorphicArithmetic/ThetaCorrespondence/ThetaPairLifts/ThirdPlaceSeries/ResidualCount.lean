@@ -40,7 +40,7 @@ theorem residual_count_alt_alt : ValRingModel → SSList → SSRankUnique → _r
   have h1 : ∀ p ∈ L1, 1 ≤ p.1 ∧ AbsIrrSub p.2 ⊤ := by
     intro p hp
     rcases List.mem_cons.1 hp with rfl | hp
-    · exact ⟨hr1, GlobalTheory.T.absIrrSub_map_of_irredOn_map_Fbar hr1 rb (D.naut.kFbar i) hirr φ⟩
+    · exact ⟨hr1, _root_.GlobalTheory.StringRepresentationDecomposition.irr_transfer_absIrr hr1 rb (D.naut.kFbar i) hirr φ⟩
     · obtain ⟨c, -, rfl⟩ := List.mem_map.1 hp
       exact ⟨le_rfl, absIrr_id le_rfl _ fun W _ => sub_fin_one W⟩
   have h2 : ∀ p ∈ L2, 1 ≤ p.1 ∧ AbsIrrSub p.2 ⊤ := by

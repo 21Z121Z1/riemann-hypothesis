@@ -2,11 +2,12 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.IndEtOfForallFinset
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.A6supp
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlueStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleSheafSectionsExtAndGlue
+import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChosenInjectiveResolutionEtaleSheafSectionsExactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeHomSectionsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleCochainEvalOnSimplexBasicPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSecStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegreeZeroSectionClassPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CupEqClassOfIsAWStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistSectionsLocallyGeneratedStatement
@@ -19,11 +20,11 @@ open CategoryTheory Limits AlgebraicGeometry Opposite CochainComplex CochainComp
 namespace UpperTheory.Et
 
 structure SlopeTestRemainingChoices : Prop where
-  sheaf : type_of% @GlobalTheory.T.etaleSheafSections_ext_and_glue
+  sheaf : type_of% @_root_.GlobalTheory.EtC.sec_ext_glue
   resol : type_of% @GlobalTheory.T.chosenInjectiveResolutionEtaleSheaf_sections_exactness
   freeS : type_of% @GlobalTheory.T.free_sections_ext_res_map
   evs : type_of% @GlobalTheory.T.etaleCochainEvalOnSimplex_basic_properties
-  rep : type_of% @GlobalTheory.T.cocycle_ev_d_eq_zero_and_mk_eq_zero_iff
+  rep : type_of% @_root_.GlobalTheory.EtC.sch_cls_cocycle_sec
   sec : type_of% @GlobalTheory.T.degreeZeroSectionClass_properties
   aw : type_of% @GlobalTheory.T.cup_eq_class_of_isAW
   twist : type_of% @GlobalTheory.T.tateTwist_sections_locally_generated

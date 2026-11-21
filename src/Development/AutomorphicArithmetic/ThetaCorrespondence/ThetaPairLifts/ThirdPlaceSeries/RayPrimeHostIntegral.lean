@@ -28,7 +28,7 @@ theorem elem_all_alt_alt : _root_.GlobalTheory.HeightCounting.Up.PublishedInputs
   rintro K B f T w P x ⟨⟨⟨h1, h2⟩, h3, h4⟩, h5, h6⟩
   refine ⟨⟨h1, h2, h3⟩, h4, h5, ?_⟩
   obtain ⟨hT⟩ := HostTied.exists (Dof x)
-  exact ⟨hT, hT.fr.j.toRingHom, fun y => rfl, fun k => GlobalTheory.T.isRayPrime_of_norm_integer_congruent_one (Dof x) k _ (h6 k).1 (h6 k).2⟩
+  exact ⟨hT, hT.fr.j.toRingHom, fun y => rfl, fun k => _root_.GlobalTheory.RayPrimeOfNorm.isRayPrime_of_norm_eq (Dof x) k _ (h6 k).1 (h6 k).2⟩
 end GlobalTheory.ElemAtStates
 end
 section

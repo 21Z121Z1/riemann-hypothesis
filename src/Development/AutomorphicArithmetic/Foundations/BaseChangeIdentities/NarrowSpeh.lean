@@ -94,14 +94,14 @@ theorem baseChange_speh_of_discreteSeries (H : AscComp)
       (hm0 i τ) ?_
     rw [hmm i τ, hmm j τ, hd, hasInfChar_eq_of_sigma hs (hm1 i τ) (hm1 j τ)]
   · intro w s ϖ q hs hU α hα
-    exact GlobalTheory.T.satakeParameter_spherical_product_spehQuotients E w c n a d h (ρ · w) (σ · w) (fun i => (hpos i).2) (fun i => hsp i w) _
+    exact _root_.GlobalTheory.SatInd.satake_locProd_speh E w c n a d h (ρ · w) (σ · w) (fun i => (hpos i).2) (fun i => hsp i w) _
       (bc.inert w s ϖ q hs hU α hα)
 
 theorem bcSpeh_of (H2 : AscComp) (H1 : DefiniteN) : BcSpeh := by
   intro E _ _ _ hE n hn π hπ
   obtain ⟨c, N, h, V, σ, m, bc⟩ := H1 E hE n hn π hπ
   choose a d P _ hPn hPc hPs using bc.csd
-  exact baseChange_speh_of_discreteSeries H2 GlobalTheory.T.exists_algebraicWeight_of_automorphic_definiteUnitary hn hπ bc a d P hPn hPs hPc fun i => (ascEmb_mul_eq (hPs i)).symm
+  exact baseChange_speh_of_discreteSeries H2 _root_.GlobalTheory.DefU.exists_hasWeightAt_of_isAutRepU hn hπ bc a d P hPn hPs hPc fun i => (ascEmb_mul_eq (hPs i)).symm
 
 end UpperTheory.BaseChangeIdentities
 

@@ -4,8 +4,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ToroidalCompactificationBis
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LeISupInfPreimage
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldConstFnEqZeroStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldPreservesRaynaudTorusWeightStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusWeightScalarZeroCharacterEqOneStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantVectorFieldPreservesRaynaudTorusWeight
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusWeightScalarZeroCharacterEqOne
 
 set_option autoImplicit false
 
@@ -225,7 +225,7 @@ theorem isWt_constFn_mul {α : Q.X} {W : Y.H.left.Opens} {f : Γ(Y.H.left, W)} (
 theorem isWt_zero_mul {W : Y.H.left.Opens} {f g : Γ(Y.H.left, W)} (hf : IsWt Y 0 W f) (hg : IsWt Y 0 W g) :
     IsWt Y 0 W (f * g) := by
   intro S _ φ x x' c a a' ha ha' h1 h2 hq hc
-  have h0 : c 0 = 1 := GlobalTheory.T.torusWeightScalar_zeroCharacter_eq_one Y S φ x x' c hq hc
+  have h0 : c 0 = 1 := _root_.GlobalTheory.Heat.weight_scalar_zero_eq_one Y S φ x x' c hq hc
   rw [valR_mul a' h2, valR_mul a h1, hf S φ x x' c a a' ha ha' h1 h2 hq hc, hg S φ x x' c a a' ha ha' h1 h2 hq hc, h0]
   simp
 
@@ -233,13 +233,13 @@ theorem isWt_zero_constFn (W : Y.H.left.Opens) (r : R) : IsWt Y 0 W (constFn Y.H
   have := isWt_constFn_mul (Y := Y) (α := 0) (W := W) (f := 1) ?_ r
   · rwa [_root_.mul_one] at this
   intro S _ φ x x' c a a' ha ha' h1 h2 hq hc
-  have h0 : c 0 = 1 := GlobalTheory.T.torusWeightScalar_zeroCharacter_eq_one Y S φ x x' c hq hc
+  have h0 : c 0 = 1 := _root_.GlobalTheory.Heat.weight_scalar_zero_eq_one Y S φ x x' c hq hc
   rw [h0, valR_one a' h2, valR_one a h1]; simp
 
 theorem isWt_zero_pbT {V : Q.P.A.left.Opens} (s : Γ(Q.P.A.left, V)) {W : Y.H.left.Opens}
     (hW : W ≤ Y.q.left ⁻¹ᵁ V) : IsWt Y 0 W (pbT Y.q.left s W) := by
   intro S _ φ x x' c a a' ha ha' h1 h2 hq hc
-  have h0 : c 0 = 1 := GlobalTheory.T.torusWeightScalar_zeroCharacter_eq_one Y S φ x x' c hq hc
+  have h0 : c 0 = 1 := _root_.GlobalTheory.Heat.weight_scalar_zero_eq_one Y S φ x x' c hq hc
   have e : a' ≫ Y.q.left = a ≫ Y.q.left := by
     subst ha ha'
     have := congrArg CommaMorphism.left hq
@@ -249,7 +249,7 @@ theorem isWt_zero_pbT {V : Q.P.A.left.Opens} (s : Γ(Q.P.A.left, V)) {W : Y.H.le
 
 theorem isWt_inv {v : TanM (𝟙 (Sp R)) Y.H} {dd : Fld Y.H.left} (h : IsInv Y.H v dd) {α : Q.X} {W : Y.H.left.Opens}
     {f : Γ(Y.H.left, W)} (hf : IsWt Y α W f) : IsWt Y α W (dd W f) :=
-  GlobalTheory.T.invariantVectorField_preserves_raynaudTorusWeight Y v dd h α W f hf
+  _root_.GlobalTheory.Heat.GlueWt.isWt_of_isInv Y v dd h α W f hf
 
 end Wt
 

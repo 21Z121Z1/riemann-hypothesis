@@ -16,10 +16,16 @@ import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLat
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.BesselOfWPf
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LoopBTheta
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.GapClosed
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LoopRowBoundsAlongFamilyLargeGapsStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabiliserCovolumeRelevantTermLeHeightPowStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LoopRowBoundsAlongFamilyLargeGaps
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.DegenerateConstant
+import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
+import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.FamilyStatementOfItemsFourSeven
+import Formalism.SharpRestriction.CuspSpanNormBounds.AbsoluteAmplitudeSecondOfSource
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StabiliserCovolumeRelevantTermLeHeightPow
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LoopTerm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolumeUnipotentIntegralNormalisedHaar
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalBesselJFactorAllWordsOfGapStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalBesselJFactorAllWordsOfGap
+import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.LoopBCovN
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RMeasExAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoefWeightedLocUncond
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermRepUnram
@@ -133,10 +139,10 @@ theorem loop_rows_closed_gap : GlobalTheory.GapIn.Hyp → Formalism.L2.SG.LocWSO
   haveI : Fact Formalism.FourierDecayAlt.ThreeDimData.DecInf := ⟨hH.1.1.2.1⟩
   have hFX : Formalism.L2.SG.PoincareAmplitudeLowerBounds.FinXC := Formalism.L2.SG.Pf.finXC_of hWu hRF
   have hRM : RMeasExAll := GlobalTheory.RMeasAll.rMeasEx_all
-  have hJF : JFactNAll := GlobalTheory.T.localBesselJFactor_all_words_of_gap
+  have hJF : JFactNAll := _root_.GlobalTheory.JFactTie.jFactN_all
   have hCF : Formalism.L2.SG.Pf.LoopBCovN.CovNFormula := GlobalTheory.CovNFormulaPf.main
-  choose C₀F thrF hR using GlobalTheory.T.loopRowBounds_along_family_largeGaps Formalism.HermitianLattices.Ext.L3.siegelMassRatio hH hBp
-  choose cVF hcV using GlobalTheory.T.stabiliserCovolume_relevantTerm_le_heightPow
+  choose C₀F thrF hR using _root_.GlobalTheory.LoopRowBoundsGap.rows_along_family Formalism.HermitianLattices.Ext.L3.siegelMassRatio hH hBp
+  choose cVF hcV using _root_.GlobalTheory.LoopVol.volRC_le
   have hForm : Closed 𝒞 fun Fm _ => OwnEv Fm fun C' Cl x i =>
       Cnt.Hyp0 (Fm.D x i) (Fm.L x i) C' Cl (Fm.CYL + 1) (1 / 4) 3 (1 / 2) Fm.CTu 3 →
         ∀ u, UnitaryVolumeMass.FormAt (Fm.D x i) u := by

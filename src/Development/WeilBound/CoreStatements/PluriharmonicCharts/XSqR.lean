@@ -3,7 +3,7 @@ import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.APrime
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal
 import Development.AutomorphicSpectrum.Statements.MetricStatements.AgreementIffGuarded
-import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionVerticalPerturbationBoundStatement
+import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionVerticalPerturbationBound
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XSqDiag
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PZeroSetNull
@@ -151,7 +151,7 @@ theorem PositivityTheory.Xgp.t_sq_R : Inputs → ∀ (II : IntersectionSystem), 
         Real.log_rpow (mul_pos h0 h1), Real.log_mul h0.ne' h1.ne']
       ring
     rw [e7, recRRat, e8, e9, e10]
-  have hV := GlobalTheory.T.intersection_vertical_perturbation_bound hIn II hII Q.KW Q.ιW Q.Δ (d + 1) T X₀ X₁ ∅ (fun _ => 0) Q.arithΔ hT hs0 hs1
+  have hV := _root_.GlobalTheory.CompanionTheory.Ar.PB.lemma_v_lines hIn II hII Q.KW Q.ιW Q.Δ (d + 1) T X₀ X₁ ∅ (fun _ => 0) Q.arithΔ hT hs0 hs1
     (by simp) (PositivityTheory.Xgp.t_sq_diag K ι P d k₀ xi2 Q Xi X₀ X₁ hp0 hp1) (by simp)
   rw [Finset.sum_empty, zero_mul, abs_nonpos_iff] at hV
   have hsq := PositivityTheory.Xgp.sq_R.sq_sub hF (n := d + 1) hW hT hs0 hs1 _ hdeg

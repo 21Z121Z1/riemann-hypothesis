@@ -20,8 +20,11 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsNilpotentSubOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperspecialFixesVacuaGoodInertPlace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EOpEqAsAlgebraHom
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftScalarIdentityMatchingAdjointInjectiveStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaInnerProductEqConstMulLValueStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftScalarIdentityMatchingAdjointInjective
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HeckeFormNSOfHeckeForm
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.PartW
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaInnerProductEqConstMulLValue
+import Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PrinInf
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.SkewGramHalfModule
@@ -29,15 +32,14 @@ import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Ex
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.PairwiseDisjointCell
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HeckeLPartialContinuationHolds
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingSiegelWeilSectionMemDegeneratePrincipalSStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDoubledGroupSelfDualLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDoublingEqMatrixCoefficientStatement
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilSectionDoublingEqMatrixCoefficient
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingMapThetaIdentityAnyWeilDataStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingVectorFockPairIsCompactFiniteStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CuspFormsArchimedeanKFiniteStarCompMemStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CuspFormsArchimedeanKFiniteStarCompMem
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ImportsBis
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BoxProductsOrthogonalSumTargetCartanFockStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BoxProductsOrthogonalSumTargetCartanFock
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingIntegralsVanishOfAllLiftsVanishStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelPlacesIntegralNonzeroConstantStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevelPlacesIntegralNonzeroConstant
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ZetaResidueNeZeroOfSimplePoleLiftLFunctionStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsIsLatticeFrameIsMajorantFrame
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsInfFamAndStdChar
@@ -52,24 +54,26 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsWittDecomp
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.EmbRelExistsUnique
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AdelicIwasawaDecompositionWittIsotropicStabilizeStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaMajorantAverageIdentity
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsVacuumVectorPrincipalCongruenceSupportStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSumHyperbolicPlanesOrthogonalWittDecomposiStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteRealGroupFixesSplitSpaceWeilVacuumStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteUnitaryQuotientCompactFundamentalDomainStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsVacuumVectorPrincipalCongruenceSupport
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsSumHyperbolicPlanesOrthogonalWittDecomposi
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteRealGroupFixesSplitSpaceWeilVacuum
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DefiniteUnitaryQuotientCompactFundamentalDomain
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingZetaValueAtEisensteinHolomorphicPoint
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ContAutRapidDecBoundedIntegrable
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsWeilDatumHermitianSpaceDoubled
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsThetaFunctionDoublingSeesawOfStandardChar
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingVectorFockPairIsCompactFinite
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilDatumAtPlaceEqLatticeIntertwinerMulDetChar
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingEulerProductFarRightOfRapidDecayUnramifiStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftNonvanishingOnStringOfDefiniteDownStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedThetaCorrespondenceAllGoodPrimesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DoublingEulerProductFarRightOfRapidDecayUnramifi
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftNonvanishingOnStringOfDefiniteDown
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnramifiedThetaCorrespondenceAllGoodPrimes
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DownwardThetaLiftEigenformIsEigenformStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftGenerationFinitePlacesStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftGenerationAtRealPlacesStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DownwardThetaLiftPreservesGoodStatement
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodTypesExcludeLevelCharacterStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftGenerationFinitePlaces
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
+import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.GaussianBinomialClosedForm
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftGenerationAtRealPlaces
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DownwardThetaLiftPreservesGood
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodTypesExcludeLevelCharacter
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasStringOfLift
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsParamDefinite
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TypeNZOfNonVanGen
@@ -83,7 +87,7 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UpInjWOfAF
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoreClausesOfWeakCharacterisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurConstantsExistOnChainOfCuspRapidDecay
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ScalarHypothesesOfTopRows
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftOntoOfInjectiveEigenspacesStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftOntoOfInjectiveEigenspaces
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HarishChandraFinite
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.HasDRepIffHasDerivAt
@@ -100,15 +104,17 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
 import Formalism.SharpRestriction.ElevenLe
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LiftIntegOfCuspRapidDecay
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalFixed
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransferEigensystemPartsThreeLevelsOfMultEqStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodCharactersDualStableOfThetaLiftScalarsStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransferEigensystemPartsThreeLevelsOfMultEq
+import Development.AbelianVarietyTheory.Definitions.Divisors.TwistedPlacesOfCondition
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodCharactersDualStableOfThetaLiftScalars
+import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeOperatorsRowsLiftsRationalAdjointClosed
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GUnitOfModels
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PGEquivOfBaseW
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjointLiftRangeLeGoodBlockEigenspaces
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftTheoremAPublishedHypothesesStatement
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftTheoremBPublishedHypothesesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftTestsModularLatticeOfCoreCompatibilityStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaLiftSecondHypotheses
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftTestsModularLatticeOfCoreCompatibility
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicFormNormEqAtConjugateEmbedding
 
 noncomputable section
@@ -138,7 +144,7 @@ theorem carries_of_upInj (hCusp : GlobalTheory.Published.CuspRapidDecay) (hHowe 
   have hSch : SchurAll R.toRealDat := GlobalTheory.Hk3.schurAll_of_cuspRapidDecay hCusp R.toRealDat
   have hTw := GlobalTheory.VmTwo.twoSided_goodInert hHowe R F hLI hCW hEx hSch
   have hHk := (GlobalTheory.Hk3.inertJunk_iff A3).1 hJ
-  obtain ⟨Tc, hTc, hx⟩ := GlobalTheory.T.operatorFamily_adjointLift_single_eigensystem R F hLI hOk hCW hEx hSch hTw hHk
+  obtain ⟨Tc, hTc, hx⟩ := _root_.GlobalTheory.UpSystem.up_sys R F hLI hOk hCW hEx hSch hTw hHk
   obtain ⟨x, hxc⟩ := hx c
   obtain ⟨w, hw, hw0⟩ := (Submodule.ne_bot_iff _).1 hc
   have hne : LinearMap.adjoint (R.Th A3.A.μ0) w ≠ 0 := fun h => hw0 (hUp A3.A.μ0 (h.trans (map_zero _).symm))
@@ -162,7 +168,7 @@ theorem carries_of_upInj (hCusp : GlobalTheory.Published.CuspRapidDecay) (hHowe 
     rintro (i | k)
     · exact (hOk.ok2.what₂ A3.A.μ0).split i
     · exact (hOk.what₂ A3.A.μ0).split k
-  have hZ := (GlobalTheory.T.range_adjoint_le_span_jX_image_ZHg R F hLI hOk hCW hEx hSch hPG).1 A3.A.μ0
+  have hZ := (_root_.GlobalTheory.AdjBlockSpan.range_adjoint_le_span_good_block R F hLI hOk hCW hEx hSch hPG).1 A3.A.μ0
   obtain ⟨s', hxs, heig, f, hf0, hfZ, hfE⟩ := GlobalTheory.Div.exists_sys_of_mem_span D.what₂.embLL j b op Tc
     ((A3.A.fam.R A3.A.μ0).ZHg A3.A.X) hli hjX.2.2 hcomm hpc hso x (LinearMap.adjoint (R.Th A3.A.μ0) w) (hxc w hw) hne
     (hZ ⟨w, rfl⟩)
@@ -204,10 +210,10 @@ theorem levW_of_span (hCusp : GlobalTheory.Published.CuspRapidDecay) (R : RealDa
     (hScal : 0 < R.kap ∧ ∀ i t p, 0 < R.lam3 i t p A3.A.v0) (hA : R.PThmA) (hLT : Formalism.IndefR.Rat.LiftTest (R.toCx3 F))
     (hU : R.toRealDat.LUnif) : R.PLevW F := by
   have hSchur := GlobalTheory.Hk3.schurAll_of_cuspRapidDecay hCusp R.toRealDat
-  have hSpan := GlobalTheory.T.cuspidal_multiplicity_carriers R F hOk hC hEx hSchur hGS hCD hME hCar
+  have hSpan := _root_.GlobalTheory.SpanW.iSup_wp3_eq_range_eH R F hOk hC hEx hSchur hGS hCD hME hCar
   have hW := GlobalTheory.T.principalFormsSubspace_eq_good_forms R F hOk hC hEx hSpan hScal hA hLT hBlock
   intro j
-  exact (GlobalTheory.T.range_goodProjector_baseLevel_twistedModel R F hOk hC hEx hU j).trans (congrArg (· ⊓ _) (hW j).symm)
+  exact (_root_.GlobalTheory.WType.range_w0C_type R F hOk hC hEx hU j).trans (congrArg (· ⊓ _) (hW j).symm)
 
 theorem partsW_of_carried (hCRD : GlobalTheory.Published.CuspRapidDecay) (R : RealDat3 D A3 Ks) (F : Face3 D A3) {s : ℕ}
     (hOk : A3.fam3.Ok3 s) (hW : R.WeakCharacterisation F) (hEx : R.toRealDat.ExAt) (hGS : GoodStable A3.A.X) (hCD : GlobalTheory.CuspMult.CuspDecomp D)
@@ -217,10 +223,10 @@ theorem partsW_of_carried (hCRD : GlobalTheory.Published.CuspRapidDecay) (R : Re
   have hS : SchurAll R.toRealDat := GlobalTheory.Hk3.schurAll_of_cuspRapidDecay hCRD R.toRealDat
   obtain ⟨hCore, hSF, -, hWc⟩ := GlobalTheory.CoreOfWeak.core_of_weak R F hW hEx
   have hirr : ∀ χ ∈ A3.A.X, IsAbsIrrChar χ := hOk.ok2.irr
-  have hspan := GlobalTheory.T.cuspidal_multiplicity_carriers R F hOk hW hEx hS hGS hCD hME hcar
-  have horth := GlobalTheory.T.W_forms_parts_of_distinct_types_orthogonal R F hOk hW hEx hS hOkH hkap hB
+  have hspan := _root_.GlobalTheory.SpanW.iSup_wp3_eq_range_eH R F hOk hW hEx hS hGS hCD hME hcar
+  have horth := _root_.GlobalTheory.OrthW.inner_wp3_eq_zero_of_ne R F hOk hW hEx hS hOkH hkap hB
   intro j
-  have htype := GlobalTheory.T.range_goodProjector_baseLevel_twistedModel R F hOk hW hEx hU j
+  have htype := _root_.GlobalTheory.WType.range_w0C_type R F hOk hW hEx hU j
   refine ⟨fun p q hpq w hw w' hw' => ?_, ?_⟩
   · exact GlobalTheory.SumW.inner_tw_eq_zero (E := (R.HW j (sg0 D A3.A)).H) (twAt D.what₂.embLL A3.A.v0) w w'
       (horth j p q hpq _ hw.1 _ hw'.1)

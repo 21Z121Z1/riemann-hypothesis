@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LevelMapsClosed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSimilitudeOfAutModLevelIdeal
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointBaseChangeUniqueReflIff
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LevelMoveModuliUniqueUniversalTripleStatement
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueFramedPointMoveUniversalTripleStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsUniqueFramedPointMoveUniversalTriple
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointMoveCalculusStatement
 
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain
@@ -97,7 +97,7 @@ theorem frMove_transfer (hpq : 1 ≤ D.p + D.q) (hA : l.A.Coprime l.M) (Xo : Mod
     (hy : levR (liftLa γ, LinearMap.id) y y') : FrMove ρ ν y y' := by
   obtain ⟨ρ', ν', i', h', hm⟩ := hy
   obtain ⟨rfl, e⟩ := move_unique hpq hA Xo c γ i i' h h'
-  obtain ⟨⟨w, hw⟩, hu⟩ := GlobalTheory.T.existsUnique_framedPoint_move_universalTriple E H D l Xo c ρ ν h.1 S y
+  obtain ⟨⟨w, hw⟩, hu⟩ := _root_.GlobalTheory.exists_unique_frMove E H D l Xo c ρ ν h.1 S y
   rwa [← hu w y' ν' e.symm hw hm]
 
 theorem liftLa_one_sub (a : D.La) :

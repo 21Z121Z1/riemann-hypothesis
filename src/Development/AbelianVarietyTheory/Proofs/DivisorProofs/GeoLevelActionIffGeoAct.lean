@@ -1,9 +1,9 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsHalfOfBasePins
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeBasisHermitianSpaceStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedLatticeStabilizerIffBasisIntegralStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralAdelicCoordinatesLatticeModStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeBasisHermitianSpace
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompletedLatticeStabilizerIffBasisIntegral
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralAdelicCoordinatesLatticeMod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameProductCharacterInverse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TameCharacterFromProduct
 
@@ -157,7 +157,7 @@ theorem exists_coord (l : Level H) (V : HSp D) {r : ℕ} (hr : V.rank = r) (β :
           φ ((l.Mb • (⊤ : Submodule (𝓞 D.host.E) Dw.La)).mkQ a') =
             ((Formalism.L2.DIV.pullFr β ⟨_, h⟩).1.map (resI D.host.F l.Mb (half_ne_bot l))).mulVec
               (φ ((l.Mb • (⊤ : Submodule (𝓞 D.host.E) Dw.La)).mkQ a)) := by
-  obtain ⟨ρ, hlin, hsur, hker, hcong⟩ := GlobalTheory.T.exists_integral_adelic_coordinates_lattice_mod D V r hr β hβ Dw.La ι hι l.M (by have := l.three_le; omega)
+  obtain ⟨ρ, hlin, hsur, hker, hcong⟩ := _root_.GlobalTheory.GeoActCompare.exists_lattice_coord D V r hr β hβ Dw.La ι hι l.M (by have := l.three_le; omega)
   obtain ⟨φ, hφ⟩ := exists_coord_of (Formalism.L2.DIV.oToS D.host.F D.host.E) l.prod l.coprime
     (resI D.host.F l.Mb (half_ne_bot l)) (resI_oToS _ _) (resI_eq_zero_iff _ _) ρ hlin hsur (hker _ _ l.prod)
   refine ⟨φ, fun κ h a ha a' ha' => ?_⟩

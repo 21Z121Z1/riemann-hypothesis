@@ -2,7 +2,8 @@ import Mathlib
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemSupportBDIff
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HDiscAA
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueEmbeddingEigenspaceSumStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueEmbeddingEigenspaceSum
+import Formalism.LocalToGlobal.ProjectiveLattices.EmbKCoe
 open CategoryTheory AlgebraicGeometry Limits NumberField IsDedekindDomain Filter Topology Matrix
 open ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.L2.Geo
 open GlobalTheory GlobalTheory.Toroidal GlobalTheory.Cartier GlobalTheory.ProjVar GlobalTheory.TrueGeo GlobalTheory.CxPts GlobalTheory.ShFam GlobalTheory.ShFam.Pad GlobalTheory.Mean4O GlobalTheory.ChernReg
@@ -34,14 +35,14 @@ theorem exists_eigBasis (g : EigFrame Z φ x) : ∃ b : Module.Basis (Σ τ : E 
   have hli : LinearIndependent R (fun p : (Σ τ : E →+* ℂ, Fin (Dw.mult τ)) => g.vec p.1 p.2) := by
     rw [Fintype.linearIndependent_iff]
     intro a ha p
-    have hw := (GlobalTheory.T.existsUnique_embedding_eigenspace_sum c φ (actR Z.t.act) 0).unique
+    have hw := (_root_.GlobalTheory.EigDecomp.exists_unique_eigen_sum c φ (actR Z.t.act) 0).unique
       (y₁ := fun τ => ∑ i, a ⟨τ, i⟩ • g.vec τ i) (y₂ := fun _ => 0)
       ⟨fun τ b => heig τ _ b, by rw [← ha, Fintype.sum_sigma]⟩ ⟨fun τ b => by simp, by simp⟩
     have h0 := congrFun hw p.1
     exact Fintype.linearIndependent_iff.1 (g.linearIndependent_vec p.1) (fun i => a ⟨p.1, i⟩) h0 p.2
   have hsp : ⊤ ≤ Submodule.span R (Set.range fun p : (Σ τ : E →+* ℂ, Fin (Dw.mult τ)) => g.vec p.1 p.2) := by
     intro v _
-    obtain ⟨w, ⟨hw, hs⟩, -⟩ := GlobalTheory.T.existsUnique_embedding_eigenspace_sum c φ (actR Z.t.act) v
+    obtain ⟨w, ⟨hw, hs⟩, -⟩ := _root_.GlobalTheory.EigDecomp.exists_unique_eigen_sum c φ (actR Z.t.act) v
     rw [← hs]
     refine Submodule.sum_mem _ fun τ _ => ?_
     obtain ⟨a, ha, -⟩ := g.existsUnique_sum τ (w τ) (hw τ)

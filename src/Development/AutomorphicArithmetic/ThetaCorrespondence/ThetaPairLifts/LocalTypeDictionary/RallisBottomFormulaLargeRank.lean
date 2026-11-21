@@ -56,7 +56,7 @@ theorem GlobalTheory.BotFormula.rallis_bottom_formula_large_rank : _root_.Global
     rw [norm_mul, huU p hp lam, one_mul, norm_one] at h3
     exact h3.symm
   have pts : ∀ x : GA D P.a, ∃ y : GA D A, GlobalTheory.BotFormula.IsFinPt A y x := fun x =>
-    GlobalTheory.T.exists_finiteAdelicPoint_unitaryGroup_gramOne A hX.std.1 x ea.symm
+    _root_.GlobalTheory.BotFormula.exists_isFinPt_of_gram_one A hX.std.1 x ea.symm
   choose pt hpt using pts
   rw [HC s Q P P' hP ea ed g pt hpt T]
   simp_rw [HK ea ed h g _ (pt _) hg (hpt _) T]

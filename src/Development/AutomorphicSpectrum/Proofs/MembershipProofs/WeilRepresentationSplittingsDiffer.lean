@@ -1,7 +1,7 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Definitions.Divisors.HilbertNinetyQuotientHomEqIff
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ThetaSumAdmissibility
-import Development.AutomorphicSpectrum.Proofs.MembershipProofs.WeilRepresentationThetaEquivarianceStatement
+import Development.AutomorphicSpectrum.Proofs.MembershipProofs.WeilRepresentationThetaEquivariance
 import GroundTheory.GlobalFields.Adele.IntegersLattice
 
 open Matrix NumberField IsDedekindDomain GlobalTheory.WeilM MeasureTheory

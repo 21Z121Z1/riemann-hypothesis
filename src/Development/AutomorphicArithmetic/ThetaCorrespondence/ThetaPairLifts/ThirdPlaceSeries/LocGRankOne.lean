@@ -22,7 +22,6 @@ import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSpanFormsNeBot
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.ExistsSteinberg
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharEqOfSplitOfTied
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitaryStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeCharLocalComponentExistsUniqueUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PairReadingOfJoin
@@ -74,7 +73,7 @@ theorem locG_rankOne_alt {hL : _root_.UpperTheory.Zero.LLC.RecTExists} {D : D7} 
       rw [hf', Multiset.singleton_inj, Units.val_inj, inv_inj] at hf
       rw [HChar.val_mul, HChar.val_inv, hf, mul_inv_cancel]
   have hcomp : IsComp χ w (χ.loc w) := ⟨ParLaws.isSmoothChar_loc χ w, fun _ => rfl⟩
-  obtain ⟨ξ₀, -, huniq, -⟩ := GlobalTheory.T.heckeChar_localComponent_exists_unique_unitary D.host.E χ w
+  obtain ⟨ξ₀, -, huniq, -⟩ := _root_.GlobalTheory.HeckeComp.main D.host.E χ w
   have hξ : ξ = χ.loc w := (huniq _ h).trans (huniq _ hcomp).symm
   subst hξ
   rw [hloc, _root_.GlobalTheory.CuspRep.ParLaws.local_parameter_of_hecke_character_eq_reciprocity, _root_.GlobalTheory.NPin.weilDeligneOfLocalIrrep]

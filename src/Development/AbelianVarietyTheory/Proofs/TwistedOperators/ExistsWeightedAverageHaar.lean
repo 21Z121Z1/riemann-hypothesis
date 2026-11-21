@@ -14,7 +14,7 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralEqFinClS
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaKORatLeftAndEigenRight
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SignedUnitaryGroupCompat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AutomorphicCuspFormsHermitianSpaceSignTwist
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpenCompactLevelThetaKernelSourceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpenCompactLevelThetaKernelSource
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.MainNotions Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes Formalism.MainNotions.StandardLattice Formalism.L2.Theta Formalism.IndefR Formalism.IndefR.Datum Formalism.IndefR.Links Formalism.L2.DIV
 open IsDedekindDomain NumberField GlobalTheory.ChiGrid GlobalTheory.FunObj GlobalTheory.RowTest GlobalTheory.RowClaim
 open Formalism.L2.Host (HChar)
@@ -72,7 +72,7 @@ theorem level_all [Finite T] (t₀ : T) (hX : IsBottomTri W i j X) :
     ∃ K : Subgroup (GL (Fin A.rank) (Lev.EAf D)), GlobalTheory.IndefiniteRowSideFullHecke.ClassFunctionSumIntegral.IsOpenCompactLevel A K ∧
       ∀ (t : T) (P : PolF D WW.rank A.rank) (h : GA D WW), ∀ k ∈ Lev.levA A K, ∀ g,
         X.ker W.ψ W.θ t P h (g * k) = X.ker W.ψ W.θ t P h g := by
-  choose K hK hinv using GlobalTheory.T.exists_openCompactLevel_thetaKernel_source hX
+  choose K hK hinv using _root_.GlobalTheory.SrcLevel.exists_level_ker hX
   refine ⟨⨅ t, K t, ⟨?_, ?_⟩, fun t P h k hk g => hinv t P h k ?_ g⟩
   · have e : (((⨅ t, K t).comap (Lev.finE A) : Subgroup (GA D A)) : Set (GA D A)) =
         ⋂ t, (((K t).comap (Lev.finE A) : Subgroup (GA D A)) : Set (GA D A)) := by

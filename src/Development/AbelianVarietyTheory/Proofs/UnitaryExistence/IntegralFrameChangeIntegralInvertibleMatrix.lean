@@ -13,7 +13,7 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabComp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.Biextensions.CubicalExtendsSt
 import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointFieldFromTestRingStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FramedPointFieldFromTestRing
 
 set_option autoImplicit false
 
@@ -697,4 +697,4 @@ open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalC
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor Formalism.L2.Pj GlobalTheory.Frames
 
 theorem GlobalTheory.IntRebase.intRebase : Out.SecBaseChangeSt → ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (H : Host E) (Dw : Datum H) (l : Level H) (Xo : Moduli Dw l) (c : Coeff l), Formalism.L2.PjFree.IntRebase Xo c :=
-  fun h E _ _ _ H Dw l Xo c => GlobalTheory.IntRebase.intRebase_of (GlobalTheory.T.framedPoint_field_from_testRing h E H Dw l Xo c)
+  fun h E _ _ _ H Dw l Xo c => GlobalTheory.IntRebase.intRebase_of (_root_.GlobalTheory.Frames.framedPoint_field_fromTest h E H Dw l Xo c)

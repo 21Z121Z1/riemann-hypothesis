@@ -4,21 +4,26 @@ import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.Gr
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenRegularCharacters
 import Formalism.LocalToGlobal.GlobalTheory.IrreducibleOfCountSizes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullRepTwist
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPartDimLeSumLocalSharesWhittakerStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedIdempotentLocalShareBadTuplesLeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadPartDimLeSumLocalSharesWhittaker
+import Development.AbelianVarietyTheory.Definitions.Divisors.BadElt
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedIdempotentLocalShareBadTuplesLe
+import Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWhittakerDatumAndHalfLevelsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadShareSizeBoundsAlongFamilyStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteCuspFormsFiniteRegularRepresentationStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelCuspFormsEmbedRegularRepresentationCopieStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainEigenspaceShareStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BadShareSizeBoundsAlongFamily
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteCuspFormsFiniteRegularRepresentation
+import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.SmallUnipotentElements
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelCuspFormsEmbedRegularRepresentationCopie
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainEigenspaceShare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoLevelFlagDomainCuspFormRanksShiftedWeightsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsWhittakerCharacterPair
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.GreenSeriesSt
-import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LemmaLSeriesWeightsOfGreenCuspidalParametrisatioStatement
+import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LemmaLSeriesWeightsOfGreenCuspidalParametrisatio
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumRangeEqRoots
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIInfKerSemilinearStandardBasisStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbedsInRegularRepresentationCopiesComplexEmbeddStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeLineMultipleLeFamilyThresholdStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIInfKerSemilinearStandardBasis
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbedsInRegularRepresentationCopiesComplexEmbedd
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeLineMultipleLeFamilyThreshold
+import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SingleIndexPlacesAreTwisted
 
 open NumberField IsDedekindDomain
 open Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.L2.DIV Formalism.L2.Indef Formalism.L2.Indef.Tree Formalism.IndefR Formalism.IndefR.Links Formalism.IndefR.Cx Formalism.IndefR.FWT
@@ -40,7 +45,7 @@ theorem model_bound {E : Type} [Field E] [NumberField E] [IsCMField E] {r : ℕ}
     (H P : Subgroup U) (hH : LevelHyp (GlobalTheory.ShareOn.sub M H)) (hP : LevelHyp (GlobalTheory.ShareOn.sub M P)) (lam : P →* ℂˣ) :
     ∃ n : ℕ, EmbReg ρ H n ∧ (n : ℝ) * Nat.card H ≤ 2 * Nat.card P * finrank ℂ (eig ρ P lam) := by
   rcases hc with hdef | ⟨h0, hr, hA, hs, hbot⟩
-  · obtain ⟨-, hrest⟩ := GlobalTheory.T.definite_cuspForms_finite_regularRepresentation E r U C M hdef ka ρ hρ
+  · obtain ⟨-, hrest⟩ := _root_.GlobalTheory.ShareOn.Definite.share_definite E r U C M hdef ka ρ hρ
     obtain ⟨⟨n, hn, hnc⟩, -⟩ := hrest H hH
     have hP2 := (hrest P hP).2 lam
     refine ⟨n, hn, ?_⟩
@@ -49,8 +54,8 @@ theorem model_bound {E : Type} [Field E] [NumberField E] [IsCMField E] {r : ℕ}
     have : (0 : ℝ) ≤ Nat.card P * finrank ℂ (eig ρ P lam) := by positivity
     linarith
   · have hR := GlobalTheory.T.twoLevelFlagDomain_cuspForm_ranks_shifted_weights E r U C M hbot h0 hr ka T hA hs
-    obtain ⟨n, hn, hb⟩ := GlobalTheory.T.twoLevelCuspForms_embed_regularRepresentation_copies E r U C M ka ρ hρ _ _ hR H hH
-    have hS := (GlobalTheory.T.twoLevelFlagDomain_eigenspace_share E r U C M ka ρ hρ _ _ hR P hP lam).1
+    obtain ⟨n, hn, hb⟩ := _root_.GlobalTheory.CuspEmb.cusp_embReg E r U C M ka ρ hρ _ _ hR H hH
+    have hS := (_root_.GlobalTheory.ShareEig.share_eig E r U C M ka ρ hρ _ _ hR P hP lam).1
     refine ⟨n, hn, ?_⟩
     have h4 := hR.2.2.2.1
     have hb' : (n : ℝ) * Nat.card H ≤ finrank ℂ (M.cusp (ka + 2 • deMul M.Ψ r M.p0 (GlobalTheory.ShareOn.sOf M))) := by

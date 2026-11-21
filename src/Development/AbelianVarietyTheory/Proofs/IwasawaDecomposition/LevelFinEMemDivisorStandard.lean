@@ -15,7 +15,8 @@ import Formalism.LocalToGlobal.Divisibility.ProjLemmas
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CenterEqSum
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCompOfOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsBlockDiagonalWithIdentity
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSplitReductionStandardFrameConjStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSplitReductionStandardFrameConj
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BaseFrameUnitaryDivisorSplit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DatumLevelHyperspecialOffFinitePlaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSplitPlaceEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePlacesNotPairwiseConjugate
@@ -52,7 +53,7 @@ theorem frame_of {D : D7} {T : Type} (L : LevCh D T) {μ0 : T} (hL : L.Is μ0)
   · have hn : ¬ Formalism.IndefR.Lev.IsConjPl (D := D) PP PP :=
       h.elim (fun h => GlobalTheory.TypePlaces.not_isConjPl L.C.P L.Pg hL.Pg PP h PP h) fun h => (hL.Q_pl s PP h).2 PP h
     obtain ⟨s', hs'⟩ := exists_split D PP hn
-    obtain ⟨φ, b, h1, h2⟩ := GlobalTheory.T.exists_split_reduction_standard_frame_conj D (Vc D k) D.R.nV (GlobalTheory.FrameBlockDiagonal.rankV D k) hF P (L.βV k) (L.ΛV k) hP hβ s'
+    obtain ⟨φ, b, h1, h2⟩ := _root_.GlobalTheory.FrameRedSplit.frameRed_exists D (Vc D k) D.R.nV (GlobalTheory.FrameBlockDiagonal.rankV D k) hF P (L.βV k) (L.ΛV k) hP hβ s'
     exact ⟨s', φ, b, hs', h1, h2⟩
 
 end GlobalTheory.FrameInt

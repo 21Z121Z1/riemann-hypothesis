@@ -72,7 +72,7 @@ theorem ties_of_nAtData_real (hG : GlobalTheory.GLq.Green) (hZ : GlobalTheory.Pu
   have hR := GlobalTheory.Mem.R3.RowFrameParts.main D G Pl0 I0 T A3 Ks R.toRealDat F.lv2 X0 Y
   have hT := _root_.GlobalTheory.Fc.LabLinked.typeLab_of_gen_alt_alt hG hZ a hl hp _ r.rep_eq
   exact ⟨s.P.X, s.P.G, s.S.hI.eHH,
-    GlobalTheory.T.constructedSpectralObjects_irreducibilityConditions D G Pl0 T A3.A Ks R.toRealDat F.lv2 Y.eE F0 s Y.PY Y.hF
+    _root_.GlobalTheory.Sat.ties_at D G Pl0 T A3.A Ks R.toRealDat F.lv2 Y.eE F0 s Y.PY Y.hF
       (fun σ : D.what₂.FT => principalLevelFrame.rowRepR R.θ (Y.eFT σ)) hR.1 hR.2 hT hg⟩
 end Rows
 set_option maxHeartbeats 1000000 in

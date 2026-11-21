@@ -1,5 +1,5 @@
 import Mathlib
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeComplexPointsProperClosedChartFieldStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumeComplexPointsProperClosedChartField
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankRangeFderivLtOfVolumeImageEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrableOnSourceIffOfDensity
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ChernDegreeComplex
@@ -59,7 +59,7 @@ theorem finrank_range_fderiv_lt_of_not_dominant : ∀ (k : Type) [Field k] (X Y 
     rw [hm]
     exact specializes_iff_mem_closure.1 this
   obtain ⟨c, hc⟩ := hA l
-  have hnull := GlobalTheory.T.volume_complexPoints_properClosed_chart_field k X p σ D Z hZc hZg c
+  have hnull := _root_.GlobalTheory.ChernNull.chart_null_field k X p σ D Z hZc hZg c
   have hsub : (A.chart l ∘ m ∘ (A'.chart j).symm) '' W ⊆
       FinChart.toV D ⁻¹' (c.e '' (c.e.source ∩ {x : CxPts p σ | x.1 (IsLocalRing.closedPoint ℂ) ∈ Z})) := by
     rintro _ ⟨z, hz, rfl⟩

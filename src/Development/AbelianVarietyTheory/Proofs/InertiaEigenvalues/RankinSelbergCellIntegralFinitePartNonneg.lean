@@ -350,8 +350,8 @@ theorem lintegral_whit_sq_eq : ∀ (E : Type) [Field E] [NumberField E] [IsTotal
     simp only [hw, GlobalTheory.RSnm.detAbs]
     rw [row_mul (blkU_row hℓ y), map_mul, det_blkU, one_mul]
   have hgood : Good ψC (m + 1 - 1) F := GlobalTheory.CuspGeneric.good_top E m ψC F hB.cont hB.left
-    fun r hr hra g => GlobalTheory.T.cuspidal_blockAverage_lastColumn_eq_zero E (m + 1) F hB.cont hB.left hB.cusp r hr hra g
-  have e2 := (GlobalTheory.T.unfold_mirabolic_alt E (m + 1) μ ψC (GlobalTheory.T.isStandardAdelicAddChar_global_adelicChar E) 𝓕P 𝓕₀ h𝓕P h𝓕₀' w hwm hwl hwu).1 F hgood
+    fun r hr hra g => _root_.GlobalTheory.CuspGeneric.avg_blk_last_eq_zero E (m + 1) F hB.cont hB.left hB.cusp r hr hra g
+  have e2 := (_root_.GlobalTheory.MirTower.unfold_mirabolic E (m + 1) μ ψC (_root_.GlobalTheory.StdCharStd.stdPsi_adelicChar E) 𝓕P 𝓕₀ h𝓕P h𝓕₀' w hwm hwl hwu).1 F hgood
   rw [GlobalTheory.T.iteratedColumnTransform_eq_globalWhittaker E (m + 1) F (Nat.succ_pos m) hB.cont hB.left] at e2
   simp_rw [mul_assoc]
   exact e2.symm

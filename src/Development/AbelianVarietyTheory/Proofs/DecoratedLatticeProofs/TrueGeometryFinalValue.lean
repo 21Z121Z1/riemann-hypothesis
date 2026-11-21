@@ -116,7 +116,7 @@ theorem red_iff (q : SplitPt D k) {PP : Formalism.L2.DIV.Pl D.host.E} (hq : Form
       m ∈ ((S.T (Fin D.R.t)).lev 0 (s + 1) (Nat.zero_add _)).J := by
   obtain ⟨w, hw⟩ := hst
   rw [← hw, Formalism.L2.DIV.redFn_frGL]
-  obtain ⟨π', hπ, hred, -, -⟩ := GlobalTheory.T.exists_finiteAdele_projection_integral_reduction D _ q PP hq
+  obtain ⟨π', hπ, hred, -, -⟩ := _root_.GlobalTheory.FinPl.SplitPt.exists_lift_isRed D _ q PP hq
   have h1 := RedLev.mul_moved (ofSplit q) hπ _ _ _ _ w hw hM
   have h3 := RedLev.conj_eq F ((S.T (Fin D.R.t)).bas 0 _ (Nat.zero_add _)) m
     (e.symm.trans (stdOrd (Fin D.R.k) (Fin D.R.t) 0 _ (Nat.zero_add _))) _

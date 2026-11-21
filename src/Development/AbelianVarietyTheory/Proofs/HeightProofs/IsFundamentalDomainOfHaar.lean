@@ -2,14 +2,19 @@ import Mathlib
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Formalism.LocalToGlobal.GlobalTheory.GL5.FamilyMassVolumeIdentityOfClassDecomp
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.UnitaryVolumePairs
-import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroupStatement
+import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.LcscAdelicUnitaryGroup
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HaarUpqIsMulRightInvariant
 import Formalism.LocalRingCardinality.DataCD
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.ModularCharacterEqOneOnExpHermitian
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsHyperbolicCompletion
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticExtNormFormOverAlgebraStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticFormIdeleValuesMemNhdsOneStatement
-import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsIdeleNotMulNormStatement
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticExtNormFormOverAlgebra
+import Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.QuadraticFormIdeleValuesMemNhdsOne
+import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.HigherUnitsLeSquaresHigherUnits
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsIdeleNotMulNorm
+import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.SUnitsSupUnitsLocalNormsSqrtNeTop
+import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsAdmissibleLocalNormMemSUnitsSupGlobalNorm
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsInfEmbUnique
 
 noncomputable section
@@ -64,7 +69,7 @@ theorem exists_form (D : D7) : ∃ δ : D.host.F, ¬ IsSquare δ ∧
     (∀ x, UnitaryVolumePairs.resF D (normU D x) = UnitaryVolumePairs.normId D x) ∧
     ∀ a : (AF D.host.F)ˣ, a ∈ (normU D).range ↔
       ∃ x y : AF D.host.F, (a : AF D.host.F) = x ^ 2 - algebraMap D.host.F (AF D.host.F) δ * y ^ 2 := by
-  obtain ⟨δ, hδ, h⟩ := GlobalTheory.T.quadraticExt_norm_form_over_algebra D.host.F D.host.E D.sp.cm.sig D.sp.cm.deg2 (fun x => star_star x)
+  obtain ⟨δ, hδ, h⟩ := _root_.GlobalTheory.QuadNormBase.norm_form D.host.F D.host.E D.sp.cm.sig D.sp.cm.deg2 (fun x => star_star x)
     (exists_not_fixed D)
   obtain ⟨h1, h2⟩ := h (AF D.host.F)
   have hN : ∀ z : AE D, algebraMap (AF D.host.F) (AE D) (Algebra.norm (AF D.host.F) z) =
@@ -96,13 +101,13 @@ theorem normGroup_eq (D : D7) : UnitaryVolumePairs.normGroup D = (UnitaryVolumeP
 theorem isOpen_normGroup (D : D7) : IsOpen (UnitaryVolumePairs.normGroup D : Set (AF D.host.F)ˣ) := by
   obtain ⟨δ, hδ, -, h⟩ := exists_form D
   have h0 : δ ≠ 0 := fun e => hδ (e ▸ IsSquare.zero)
-  refine Subgroup.isOpen_of_mem_nhds _ (Filter.mem_of_superset (GlobalTheory.T.quadraticForm_ideleValues_mem_nhds_one D.host.F δ h0) fun a ha => ?_)
+  refine Subgroup.isOpen_of_mem_nhds _ (Filter.mem_of_superset (_root_.GlobalTheory.QNorm.norm_form_mem_nhds_one D.host.F δ h0) fun a ha => ?_)
   rw [normGroup_eq]
   exact Subgroup.mem_sup_right ((h a).2 ha)
 
 theorem normGroup_ne_top (D : D7) : UnitaryVolumePairs.normGroup D ≠ ⊤ := by
   obtain ⟨δ, hδ, -, h⟩ := exists_form D
-  obtain ⟨a, ha⟩ := GlobalTheory.T.exists_idele_ne_algebraMap_mul_norm_of_not_isSquare D.host.F δ hδ
+  obtain ⟨a, ha⟩ := _root_.GlobalTheory.QNorm.exists_idele_not_mul_norm D.host.F δ hδ
   intro e
   have hm : a ∈ UnitaryVolumePairs.normGroup D := e ▸ Subgroup.mem_top a
   rw [normGroup_eq] at hm

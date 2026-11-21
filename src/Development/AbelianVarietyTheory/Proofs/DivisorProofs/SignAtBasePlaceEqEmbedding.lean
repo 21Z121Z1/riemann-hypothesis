@@ -6,14 +6,18 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinRepApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitDetOfSplitDetermines
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemNotMem
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffDerivSnoc
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupLiftsToParahoricLevelStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelOfDualParameterStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleAdmissibleDecomposableCompEquivStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdemOfCoeffRealStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupLiftsToParahoricLevel
+import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull
+import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
+import Formalism.LocalToGlobal.IndefiniteReal.OrthogonalComplementCharacterisation
+import Formalism.LocalToGlobal.IndefiniteReal.DatumVec
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DiscreteSeriesModelOfDualParameter
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleAdmissibleDecomposableCompEquiv
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdemOfCoeffReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodFormsEqKilledByGroupAlgebraStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelTypeHeckeKilledCorrespondMatchingIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryMatchesParahoricLevelsStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePlacesNotPairwiseConjugateStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePlacesNotPairwiseConjugate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugateModelsMultiplicityEqual
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankKilledEqOfEqualMultiplicitiesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainIntegralMulRight
@@ -23,7 +27,7 @@ import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocallyCompa
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiscreteCountableGQ
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContDiffSetIntegralNat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCompatFiniteIsometry
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicIsometryMatchingFramesStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteAdelicIsometryMatchingFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyMulRight
 
 noncomputable section
@@ -169,7 +173,7 @@ theorem exists_conjModel {S' : D.what₂.Tau → SPar} (h : ∀ τ, S' τ = dual
     ∃ (M' : DSModel V S') (c : ∀ τ, M'.H τ ≃ₗᵢ⋆[ℂ] M.H τ),
       ∀ τ, ∀ g ∈ Formalism.QuantumDeterminants.UH (gramAt D V τ), ∀ w, c τ (M'.rep τ g w) = M.rep τ g (c τ w) := by
   obtain rfl : S' = fun τ => dualPar (S τ) := funext h
-  exact GlobalTheory.T.discrete_series_model_of_dual_parameter M
+  exact _root_.GlobalTheory.ConjDS.exists_conjModel M
 
 end Hecke
 

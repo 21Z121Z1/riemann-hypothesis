@@ -11,8 +11,8 @@ import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.AdelicL
 import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.ExistsGlIsometryCompEqOfNondegenerate
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.MemAdelicLatticeIffLocalSelfDualCompletion
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsLocalConjugationSelfDualLatticesHostStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAdelicUnitaryOfLocalFamilyAlmostAllTrivialStatement
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsVolumeTransportOfLatticeIsometryStatement
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsAdelicUnitaryOfLocalFamilyAlmostAllTrivial
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsVolumeTransportOfLatticeIsometry
 
 noncomputable section
 
@@ -84,7 +84,7 @@ theorem exists_conj (V : HSp D) (L : Submodule (𝓞 D.host.E) V.V) (h1 : Submod
     (h2 : Formalism.HermitianLatticesTheory.IsUnimodular V.hT L) : ∃ k ∈ GfC V, ∀ y, y ∈ latHat D.host.F D.host.E (L0c D V) ↔
       (finMat D.sp.cm.sig V.gram k).mulVec y ∈ latHat D.host.F D.host.E (L0c D (reLat V L h1 h2)) := by
   obtain ⟨γ, hfin, hγ⟩ := GlobalTheory.T.exists_local_conjugation_selfDual_lattices_host D V L h1 h2
-  obtain ⟨k, hk, hkv⟩ := GlobalTheory.T.exists_adelicUnitary_of_localFamily_almostAll_trivial D V γ hfin
+  obtain ⟨k, hk, hkv⟩ := _root_.GlobalTheory.LocalUnitaryGlue.exists_finite_adelic D V γ hfin
   refine ⟨k, hk, fun y => ?_⟩
   refine (GlobalTheory.LatticeLocalGlobal.mem_latHat_iff D.host.F D.host.E V y).trans (Iff.trans ?_
     (GlobalTheory.LatticeLocalGlobal.mem_latHat_iff D.host.F D.host.E (reLat V L h1 h2) _).symm)
@@ -151,7 +151,7 @@ theorem isVol_of_isometry (V V' : HSp D) (e : V.V ≃ₗ[D.host.E] V'.V) (he : �
   obtain ⟨hx, ⟨μ, hμ⟩, hall⟩ := h
   obtain ⟨⟨𝓕, h𝓕⟩, hv⟩ := hall μ hμ
   let V₁ := reLat V' (tMap e V.L0) (tMap_lattice e _ V.standardTuple_isLattice) (tMap_unimod V V' e he)
-  obtain ⟨φ, hc, hc', hQ, hφ⟩ := GlobalTheory.T.exists_volume_transport_of_lattice_isometry D V V₁ e he fun x => by
+  obtain ⟨φ, hc, hc', hQ, hφ⟩ := _root_.GlobalTheory.VolTransport.transport D V V₁ e he fun x => by
     show _ ↔ e x ∈ tMap e V.L0
     rw [mem_tMap, e.symm_apply_apply]
   obtain ⟨i1, i2, i3⟩ := GlobalTheory.AdelicUnitaryTop.lcsc_adelicUnitary D.host.F D.host.E D.sp.cm.sig V₁.rank V₁.gram

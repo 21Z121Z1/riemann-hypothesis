@@ -12,12 +12,21 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormalizedAbsV
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ParabolicInductionCompGeneralLinearGroupMapOfFie
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsRecLawsSuppUnitSurj
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LabLPIsLabelActK
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCuspidalSupportIrreducibleSmoothGLStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterIffIsCuspidalGLnFiniteFieldStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterOfPolynomialOfCuspidalLabelStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TraceHarishChandraInducedEqProductCharactersStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsConstituentHarishChandraRepIffPairingNeZeroStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassFunctionLabelOfLabelMapLabelStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCuspidalSupportIrreducibleSmoothGL
+import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaMod
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.HasFiniteLengthOfIsIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.UnlinkedProductIrreducible
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.DepthZeroJacquetInjective
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterIffIsCuspidalGLnFiniteField
+import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoeffZeroNeOfMonicIrr
+import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
+import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.GreenCuspidalIff
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CanonListLength
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCuspidalCharacterOfPolynomialOfCuspidalLabel
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TraceHarishChandraInducedEqProductCharacters
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsConstituentHarishChandraRepIffPairingNeZero
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassFunctionLabelOfLabelMapLabel
 
 noncomputable section
 
@@ -45,20 +54,20 @@ include hO
 
 theorem isCuspOf_lab (d : ℕ) (V : FDRep ℂ (GL (Fin d) (ZMod g))) (hd : 1 ≤ d) (hs : Simple V)
     (hc : IsCuspidal (ZMod g) V) : IsCuspOf (datum t ht ζ hζ) (O.lab d V) (fun x => V.character x) :=
-  GlobalTheory.T.isCuspidalCharacterOfPolynomial_of_cuspidalLabel g (datum t ht ζ hζ) t ht hζ rfl d V _ hd ((GlobalTheory.T.isCuspidalCharacter_iff_isCuspidal_GLnFiniteField g d V hd hs).2 hc) (hO d V hd hs hc)
+  _root_.GlobalTheory.SerCmp.LabConv.isCuspOf_of_hasCuspLabel g (datum t ht ζ hζ) t ht hζ rfl d V _ hd ((_root_.GlobalTheory.CuspCharRep.isCusp_character_iff_isCuspidal g d V hd hs).2 hc) (hO d V hd hs hc)
 
 theorem allLab : AllLab (datum t ht ζ hζ) := by
   intro d χ hχ
   obtain ⟨V, hV, hVχ⟩ := hχ.2.1
   obtain rfl : (fun x => V.character x) = χ := funext hVχ
-  exact ⟨_, isCuspOf_lab O hO d V hχ.1 hV ((GlobalTheory.T.isCuspidalCharacter_iff_isCuspidal_GLnFiniteField g d V hχ.1 hV).1 hχ)⟩
+  exact ⟨_, isCuspOf_lab O hO d V hχ.1 hV ((_root_.GlobalTheory.CuspCharRep.isCusp_character_iff_isCuspidal g d V hχ.1 hV).1 hχ)⟩
 
 theorem eSerC_mul_zIdem {r : ℕ} (ρ : FDRep ℂ (GL (Fin r) (ZMod g))) (hρ : Simple ρ) (f : (ZMod g)[X])
     (h : zIdem ρ * eSerO O r f = zIdem ρ) : eSerC (datum t ht ζ hζ) r f * zIdem ρ = zIdem ρ := by
   classical
   by_cases hm : zIdem ρ ∈ GlobalTheory.SerOSys.Zl O r f
   · obtain ⟨τ, hτ, he, hl⟩ := hm
-    have h1 := GlobalTheory.T.classFunctionLabel_of_labelMap_label g (datum t ht ζ hζ) O (isCuspOf_lab O hO) (GlobalTheory.T.trace_harishChandra_induced_eq_product_characters g) (GlobalTheory.T.isConstituent_harishChandraRep_iff_pairing_ne_zero g) r τ f hτ hl
+    have h1 := _root_.GlobalTheory.SerCmp.hasLabel_of_hasLabelO g (datum t ht ζ hζ) O (isCuspOf_lab O hO) (_root_.GlobalTheory.HCChar.trace_hcRep_eq_hcL g) (_root_.GlobalTheory.GLq.ConstIff.constituent_hcRep_iff g) r τ f hτ hl
     have h2 : zOf (fun x => τ.character x) = zIdem τ := by
       unfold zOf zIdem
       simp only [FDRep.char_one]

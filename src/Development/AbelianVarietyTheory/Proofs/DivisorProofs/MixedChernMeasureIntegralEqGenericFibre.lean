@@ -27,7 +27,7 @@ import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeInt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffFubiniStudyRatioCompChart0
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ProjectiveLinePartitionContinuousCoe
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormDensityChangeOfChartStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedChernFormDensityChangeOfChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFiberArithmeticVarietyIntegralProjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexPointsOverRingHomIsHomeomorphBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartDensBc
@@ -56,7 +56,7 @@ theorem ofReal_dens_trans {k : Type} [CommRing k] {X : Scheme.{0}} {p : X ⟶ Sp
     (hy' : y ∈ c'.e.source) :
     ENNReal.ofReal ((ε : ℤ) * dens L c y) =
       ENNReal.ofReal (‖transDet c.e c'.e y‖ ^ 2) * ENNReal.ofReal ((ε : ℤ) * dens L c' y) := by
-  rw [GlobalTheory.T.mixedChernFormDensity_change_of_chart k X p σ D L c c' y hy hy', ← ENNReal.ofReal_mul (by positivity)]
+  rw [_root_.GlobalTheory.Mix.ChartChange.dens_change_chart k X p σ D L c c' y hy hy', ← ENNReal.ofReal_mul (by positivity)]
   congr 1
   ring
 

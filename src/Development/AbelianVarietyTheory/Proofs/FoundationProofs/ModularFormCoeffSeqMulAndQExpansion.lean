@@ -1,7 +1,8 @@
 import Development.AbelianVarietyTheory.Definitions.Foundations.PetIPSmulRight
 import Development.AbelianVarietyTheory.Definitions.Foundations.RepL
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.Newform
-import Development.AbelianVarietyTheory.Proofs.FoundationProofs.QExpansionPolyGrowthSummableContinuousStatement
+import Mathlib
+import Development.AbelianVarietyTheory.Proofs.FoundationProofs.QExpansionPolyGrowthSummableContinuous
 
 open UpperHalfPlane Complex MeasureTheory CongruenceSubgroup GlobalTheory.EisM UpperTheory.V.Af Filter Topology
 open scoped MatrixGroups Real ComplexConjugate Manifold ModularForm
@@ -49,8 +50,8 @@ theorem polyB_mul (a b : ℕ → ℂ) (ha : PolyB a) (hb : PolyB b) : PolyB (mul
 theorem qs_mul (a b : ℕ → ℂ) (ha : PolyB a) (hb : PolyB b) :
     qs (mul a b) = fun τ => qs a τ * qs b τ := by
   funext τ
-  have sa := (GlobalTheory.T.qExpansion_polyGrowth_summable_continuous a ha).1 τ
-  have sb := (GlobalTheory.T.qExpansion_polyGrowth_summable_continuous b hb).1 τ
+  have sa := (_root_.GlobalTheory.EisM.qs_summable_continuous a ha).1 τ
+  have sb := (_root_.GlobalTheory.EisM.qs_summable_continuous b hb).1 τ
   unfold qs
   rw [tsum_mul_tsum_eq_tsum_sum_antidiagonal_of_summable_norm sa sb]
   congr 1

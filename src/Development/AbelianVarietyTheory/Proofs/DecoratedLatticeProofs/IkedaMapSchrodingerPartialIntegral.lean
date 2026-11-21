@@ -223,7 +223,7 @@ theorem integrable_slice (hψ : IsStdChar D ψ (-1)) (v : GlobalTheory.Unf.VolM 
   obtain ⟨U, hU, hfU⟩ := hf.level
   obtain ⟨K, hK, hKN⟩ := GlobalTheory.Unf.mixS_le_maj D ψ hψ θ hθ S (zeroSp D) T ρ e v U hU
   obtain ⟨C, hC⟩ := hKN N
-  have hfin := ENNReal.mul_ne_top (ENNReal.coe_ne_top (r := C)) ((GlobalTheory.T.heisenberg_sup_sobolev_seminorm_theta_laws D ψ hψ θ hθ S T).1 N f hf)
+  have hfin := ENNReal.mul_ne_top (ENNReal.coe_ne_top (r := C)) ((_root_.GlobalTheory.Unf.SupFin.supSob_laws D ψ hψ θ hθ S T).1 N f hf)
   have hli : LinearIndependent D.host.E d.e.transpose := by
     have h1 : d.qX * d.e = 1 := d.e'e
     refine Matrix.mulVec_injective_iff.1 fun a b hab => ?_

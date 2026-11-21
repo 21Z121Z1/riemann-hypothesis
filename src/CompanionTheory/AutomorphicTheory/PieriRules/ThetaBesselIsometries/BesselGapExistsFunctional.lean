@@ -1,7 +1,14 @@
 import Mathlib
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LowerSmoothStability.ExistsFinStableOfMemSSup
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.TensorMomentEstimate
-import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselGapIntegrabilityStatement
+import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.BesselGapIntegrability
+import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt
+import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.Poulsen
+import Formalism.PeriodIntegrals.DSInfCharCap
+import Formalism.PeriodIntegrals.LowCyc
+import Formalism.PeriodIntegrals.UpqRep
+import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPr
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselNeZeroOfCyclicOrbit
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.IsDSOfIsDG
 
@@ -21,7 +28,7 @@ theorem exists_normalised_bessel_map : HypsG → ∀ (k r : ℕ) (ε : Fin (2 * 
   intro hH k r ε mu h R Wp _ _ _ _ z π u μW μN μG νq hDS hgap hok hside
   obtain ⟨hz, hT, ⟨u₀, hπ⟩, -, hW, hN, -⟩ := id hside
   obtain ⟨L, hL⟩ := hH.1.2.2.2 k r ε mu R Wp z u₀ π μW μN hDS hz hT hπ hW hN
-  have hTK : ∀ v ∈ R.TK, v ∈ R.sm := (GlobalTheory.T.discreteSeries_unitary_smooth_basic hH.1.2.2.1 k r ε mu R hDS).2.2.2.2.1
+  have hTK : ∀ v ∈ R.TK, v ∈ R.sm := (_root_.Gp91.GlobalTheory.rep_basic_of_isDS hH.1.2.2.1 k r ε mu R hDS).2.2.2.2.1
   by_cases h0 : ∀ v ∈ R.TK, L v = 0
   · refine ⟨fun _ => 0, Formalism.FourierDecayAlt.P.DDSmoothness.bessel_zero, fun w hw v hv => ⟨(hL w hw v (hTK v hv)).1, ?_⟩⟩
     rw [(hL w hw v (hTK v hv)).2, h0 v hv]
@@ -30,7 +37,7 @@ theorem exists_normalised_bessel_map : HypsG → ∀ (k r : ℕ) (ε : Fin (2 * 
   · push Not at h0
     obtain ⟨v₀, hv₀, hne⟩ := h0
     have hB := Formalism.FourierDecayAlt.P.DDSmoothness.bessel_smul
-      (GlobalTheory.T.isBes_bessel_integral_of_gap hH k r ε mu h R Wp z π u μW μN μG νq hDS hgap hok hside v₀ hv₀ (L v₀)) (⟪L v₀, L v₀⟫_ℂ)⁻¹
+      (_root_.Gp91.GlobalTheory.be_apply_isBes hH k r ε mu h R Wp z π u μW μN μG νq hDS hgap hok hside v₀ hv₀ (L v₀)) (⟪L v₀, L v₀⟫_ℂ)⁻¹
     have e : ∀ w ∈ R.sm, (⟪L v₀, L v₀⟫_ℂ)⁻¹ • be z Formalism.QuantumDeterminants.cStd π R.σ μW μN w v₀ (L v₀) = L w := by
       intro w hw
       rw [(hL w hw v₀ (hTK _ hv₀)).2, ContinuousLinearMap.smulRight_apply, innerSL_apply_apply, smul_smul,

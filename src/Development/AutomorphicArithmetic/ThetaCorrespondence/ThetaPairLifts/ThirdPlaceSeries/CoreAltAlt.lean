@@ -33,8 +33,8 @@ theorem core_data_of_point (hL : _root_.UpperTheory.Zero.LLC.RecTExists) (D : D7
         ((P.M μ k h1 h2).real x) ((P.M μ k h1 h2).real y) := by
   subst hk
   obtain ⟨Fx, hmem, hext, hin⟩ := inner_eq X μ hμ j
-  obtain ⟨N, hN, hopen⟩ := GlobalTheory.T.exists_principalCongruence_in_definiteLevel D P.cf P.C P.tp X P.M P.rep hA j (X.tupT μ)
-  obtain ⟨Fb, hFb⟩ := GlobalTheory.T.definiteLevel_preimage_finitely_many_cosets D P.cf P.C P.tp X P.M P.rep hA j (X.tupT μ)
+  obtain ⟨N, hN, hopen⟩ := _root_.GlobalTheory.VFormCong.exists_cong_levEnv D P.cf P.C P.tp X P.M P.rep hA j (X.tupT μ)
+  obtain ⟨Fb, hFb⟩ := _root_.GlobalTheory.LevCosetFin.preimage_levEnv_finite_cosets D P.cf P.C P.tp X P.M P.rep hA j (X.tupT μ)
   have hcV := X.given.core.models.cV j
   have hφ := frame_bij (hA.PV j)
   set φ := (finHom (Vc D j)).rangeRestrict.comp (hA.PV j).ψ with hφdef

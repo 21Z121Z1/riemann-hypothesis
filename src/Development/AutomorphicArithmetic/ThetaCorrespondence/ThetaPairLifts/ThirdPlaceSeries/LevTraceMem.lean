@@ -33,7 +33,8 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeomet
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryFinalValue
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryFinalRelation
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.TrueGeometryFinalProperty
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CarriesLatticeCompletionOnOffIffAllFinitePlacesStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.CarriesLatticeCompletionOnOffIffAllFinitePlaces
+import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsSumFrame
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.RealPack
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.FamilyConstants
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.GeoAll
@@ -62,7 +63,7 @@ theorem levTrace_mem_alt : ∀ {B : GlobalTheory.Mem.Base} {X : GlobalTheory.Mem
   rw [_root_.GlobalTheory.T.true_geometry_final_identity_alt W hA u a ha hT' row col hc κ hκ y e, _root_.GlobalTheory.T.true_geometry_final_value_alt W hA u a ha hT' row col hc _ hx]
   unfold _root_.GlobalTheory.FamTrace.InLevelGroupOfY _root_.GlobalTheory.FamTrace.InLevelGroup
   rw [_root_.GlobalTheory.T.true_geometry_final_relation_alt W hA u a ha hT' row col hc κ hκ, _root_.GlobalTheory.T.true_geometry_final_property_alt W hA u a ha hT' row col hc κ hκ,
-    ← GlobalTheory.T.carriesLatticeCompletion_on_off_iff_all_finitePlaces _ κ _ (fun p => p ∈ a.v.gP)]
+    ← _root_.GlobalTheory.FinPl.moves_iff_moves_on_off _ κ _ (fun p => p ∈ a.v.gP)]
   tauto
 end GlobalTheory.FamTrace
 end

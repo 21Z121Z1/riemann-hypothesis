@@ -4,7 +4,7 @@ import Formalism.LocalToGlobal.UnitaryNorms.CharTied
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRationalUnitaryDeterminantMapRationalUnitaryTo
 import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyHostHeckeCharacterFrameStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyHostHeckeCharacterFrame
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalToGlobal.Divisibility.Tuples
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TildeCharacterOnUnitary
@@ -30,7 +30,7 @@ theorem splitsC_pde' : SplitsC B.host.E B.host.pde' := B.splitsC_level B.host.pd
 def EvenExp : Prop := ∀ j, UpperTheory.MUQ (embPsi B.host) (fun τ : B.R.Psi => (B.hc τ).e j)
 
 theorem nonempty_hframe (h : B.EvenExp) : Nonempty (HFrame B.host fun j τ => (B.hc τ).e j) :=
-  GlobalTheory.T.nonempty_hostHeckeCharacterFrame B.R B.host _ B.splitsC_g B.splitsC_pde B.splitsC_pde' (fun j τ => (B.hc τ).e_int j) h
+  _root_.GlobalTheory.nonempty_hFrame B.R B.host _ B.splitsC_g B.splitsC_pde B.splitsC_pde' (fun j τ => (B.hc τ).e_int j) h
 
 end GlobalTheory.Mem.Pre
 

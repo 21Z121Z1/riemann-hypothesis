@@ -274,7 +274,7 @@ theorem const_move {H : Geo.Tor.Host D.host.E} {Dw : Datum H} {W : HSp D} {l : G
   have hmt := hc.mt
   have hr1 : 1 ≤ W.rank := hU.1 ▸ hpq
   obtain ⟨Wt⟩ := nonempty_uw (U := Formalism.L2.PjFree.Unf.ofPj U) hU
-  have hSD := fun k => (GlobalTheory.T.uniformisation_component_lattices_markings _ H Dw l Xo c σ _ (Formalism.L2.PjFree.Unf.ofPj U) hσ hU hr1 Wt k).2.1
+  have hSD := fun k => (_root_.GlobalTheory.Dict.uw_lattice _ H Dw l Xo c σ _ (Formalism.L2.PjFree.Unf.ofPj U) hσ hU hr1 Wt k).2.1
   have hS : SameSp (U.X k) (U.X k') := ⟨hmt.psi, hc.gm.symm, hmt.p0, hmt.xi, (hM k).kap.trans (hM k').kap.symm⟩
   obtain ⟨Dc, hDc, -⟩ := GlobalTheory.Dict.exists_dic _ H Dw l c σ _ Wt.g 0 (U.X k) 0 Wt.e hσ hU.1 (hU.2.1 k).1 (hU.2.1 k).2
     (hSD k) ⟨fun _ => antitone_const, Even.zero⟩

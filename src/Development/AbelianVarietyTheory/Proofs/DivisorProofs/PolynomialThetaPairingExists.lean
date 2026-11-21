@@ -11,24 +11,23 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsReading
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.ExistsNeZeroOfIsMatch
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameBaseExists
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRtensOp
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLieStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalenceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockAlgebraicThetaVectorsStableFiniteAdelesLie
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawFramesWeilEquivalence
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilIntertwiningValueStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEqStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactorStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilUnramifiedFactorStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilGlobalFactorStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilLocalFactorEq
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilArchimedeanFactor
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilUnramifiedFactor
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawWeilGlobalFactor
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasInfExpDiv
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsStableComplementOfIrreducibleSpanIntertwinStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleQuotientsIsoOfIntertwinedSemisimpleStatement
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OrientedPairFockMapsLieEquivariantStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsStableComplementOfIrreducibleSpanIntertwin
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SimpleQuotientsIsoOfIntertwinedSemisimple
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsPairReading
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelRationalStructure
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjectiveStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjective
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LieActionFockOperatorsScalarsTrace
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModel
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelHermitianScaling
-import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ComplementaryAdelicSchwartzArchimedeanReplaceStatement
+import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ComplementaryAdelicSchwartzArchimedeanReplace
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelCharacterMatch
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelFiniteExponent
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelArchimedeanExponent
@@ -45,7 +44,10 @@ import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFockPolyno
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FockPolynomialVectorBasisChangeEqSubstitution
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DualDirectionDerivativeMixedCoordinateBound
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaDoubleAbsoluteSumSobolevBound
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelIntegrableOnFundamentalDomainStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaKernelIntegrableOnFundamentalDomain
+import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.SqNormIntegralFundamentalDomainEqL2NormSq
+import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.WittDecompSymplInclIsotropicInclAnisotropic
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCI
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.CapelliIdentity.Expand
 
@@ -422,7 +424,7 @@ theorem mixS_dRho (hψ : IsStdChar D ψ (-1)) (hθ : IsInfFam θ) {V₀ : HSp D}
   have hline := GlobalTheory.RealLineAt.lineAt_unique D θ hθ _ _ τ _ _ _ hL' (GlobalTheory.OrientedHeis.isLineAt_lineAt hθ τ _)
   have hline' : ∀ t, d.extY W (lineAt θ τ z t) = lineAt θ τ (z * compAt θ τ d.pY) t := fun t => by
     rw [← hline]; rfl
-  have hder := GlobalTheory.T.hasDerivAt_mixedModelSource_dualLine_linearForm D ψ hψ θ hθ V V₀ W ρ d v f hf (lineAt θ τ z) hL.1 hL.2.1 x 0
+  have hder := _root_.GlobalTheory.Unf.hasDerivAt_mixS_extY D ψ hψ θ hθ V V₀ W ρ d v f hf (lineAt θ τ z) hL.1 hL.2.1 x 0
   have hfun : (fun p => deriv (fun t : ℝ => heisO ψ V W (d.extY W (lineAt θ τ z t)) f p) 0) =
       Formalism.IndefR.Datum.dRho (heisO ψ V W) θ τ (z * compAt θ τ d.pY) f := by
     funext p

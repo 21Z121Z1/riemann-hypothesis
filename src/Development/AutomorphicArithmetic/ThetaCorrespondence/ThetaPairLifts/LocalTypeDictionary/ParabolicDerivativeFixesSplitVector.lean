@@ -42,10 +42,10 @@ theorem parabolic_derivative_fixes_split_vector : _root_.GlobalTheory.FunPr.Thet
     simp only [hΨdef, tens, x, GlobalTheory.LatVac.evFin_liftV, hRx, Pi.zero_apply] at h1
     exact mul_ne_zero hy hR0 h1
   obtain ⟨c, hc⟩ := _root_.GlobalTheory.T.doubleLine_eigenspace_decomposition_split hP F E σ B a a' G X om om' hTr v hsp hT hψ h2 hvac dd omd hdc hws R hRv p hp.1
-  obtain ⟨l, hl, hinv, hl0⟩ := GlobalTheory.T.exists_translationInvariant_doubledForm_conjProduct_ne_zero F _ Ψ hΨ hΨne
+  obtain ⟨l, hl, hinv, hl0⟩ := _root_.GlobalTheory.DblDiagForm.exists_form F _ Ψ hΨ hΨne
   obtain ⟨t, ht⟩ := hp.2
   have hS := hws.2.2 l hl (fun z φ hφ => hinv φ hφ _ _ (GlobalTheory.WeilM.SiegelModel.rho_diag B.ψ hdc z φ)) p t ht _ hΦ
-  have htp := GlobalTheory.T.doubledSiegelParabolic_diagonal_action_integral F E σ G.W v p hp t ht
+  have htp := _root_.GlobalTheory.InertDbl.parD_diag_action F E σ G.W v p hp t ht
   have ha := _root_.GlobalTheory.T.split_det_character_trivial hP F E σ B a a' G X om om' hTr v hsp hT hψ h2 hvac t htp
   have hb := _root_.GlobalTheory.T.split_det_modulus_norm_formula hP F E σ B a a' G X om om' hTr v hsp hT hψ h2 hvac t htp
   rw [ha, hb] at hS

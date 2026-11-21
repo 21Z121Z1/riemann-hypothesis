@@ -6,9 +6,9 @@ import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicElementLat
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CongruenceLatticeFractionalMultipleAgree
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsAdeleRingTensorEquivInfiniteProdFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitDeterminantCongruentElement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalVectorMemIdealCompletedLatticeIffStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalVectorMemIdealCompletedLatticeIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelGroupLatticeCongruence
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeAutomorphismModHalfLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLatticeAutomorphismModHalfLevel
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsTwistCharacterUnitsModSpecialIdeal
 
 set_option autoImplicit false
@@ -197,7 +197,7 @@ theorem map_smul_top (hι : LatEmb V ι) (I : Ideal (𝓞 D.host.E)) :
 
 theorem iota_mem_idl (hι : LatEmb V ι) {I : Ideal (𝓞 D.host.E)} (hI : I ≠ ⊥) (a : Dw.La) :
     finVec V (ι a) ∈ idl V I ↔ a ∈ I • (⊤ : Submodule (𝓞 D.host.E) Dw.La) := by
-  refine (GlobalTheory.T.rationalVector_mem_ideal_completedLattice_iff D V I hI (ι a)).trans ?_
+  refine (_root_.GlobalTheory.IdealCap.finVec_mem_closure_iff D V I hI (ι a)).trans ?_
   rw [← map_smul_top hι]
   exact ⟨fun ⟨b, hb, e⟩ => hι.1 e ▸ hb, fun h => ⟨a, h, rfl⟩⟩
 

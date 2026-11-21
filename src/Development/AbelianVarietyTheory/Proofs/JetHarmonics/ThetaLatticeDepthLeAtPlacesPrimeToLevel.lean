@@ -21,7 +21,7 @@ import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HalfPrincipalAndSpli
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsProductDataCopiesTrivialisationValuation
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DepthBoundOfTwoSteps
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IInfThetaGeneratorsLeLocalDepthPrimeToLevelStatement
-import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaDepthLeScaledRuleValueStatement
+import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ThetaDepthLeScaledRuleValue
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsShortBasisUniformizationLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsUniformisedModelIntegralChartAtPointStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.UnscaledWeightDepthFiniteBoundedAboveChartsStatement
@@ -151,7 +151,7 @@ theorem depth_le : ∀ (D : D7) (T : Top D) (h : LawsP T) (j : ℕ) (hj : InR D 
     rw [← EReal.sub_le_iff_le_add (Or.inl (EReal.coe_ne_bot _)) (Or.inl (EReal.coe_ne_top _))]
     refine le_iInf₂ fun f hf => ?_
     rw [EReal.sub_le_iff_le_add (Or.inl (EReal.coe_ne_bot _)) (Or.inl (EReal.coe_ne_top _)), ← hval w f hf, add_comm]
-    refine (GlobalTheory.T.thetaDepth_le_scaled_rule_value D T h j hj w hlp _ hs0 la y f hf).trans (le_of_eq ?_)
+    refine (_root_.GlobalTheory.DepthRule.depth_le_scaled_value D T h j hj w hlp _ hs0 la y f hf).trans (le_of_eq ?_)
     exact congrArg (fun x : ℝ => (x : EReal) + vAtV y f) hsW
   have hnu : nusOf (recB h.toLawsCore) w (nuWt T w) la =
       (ramOverZ la : ℝ) * nuWt T w la + (ramOverZ la : ℝ) * clOf w la := by

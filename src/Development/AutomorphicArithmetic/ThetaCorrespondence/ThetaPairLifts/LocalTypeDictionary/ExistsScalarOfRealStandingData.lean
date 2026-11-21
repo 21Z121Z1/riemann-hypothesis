@@ -113,7 +113,7 @@ theorem exists_scalar_of_realStandingData (hP : _root_.GlobalTheory.FunPr.ThetaL
       obtain ⟨l, e⟩ := hl B ρ t M hM n Φ τ τ' hn hF g g₁
       have hΘ : IsMatched B t ρ i j (tensT W a τ) (tensT W b τ') := ⟨a, b, τ, τ', n, Φ, hab, hn, hF, rfl, rfl⟩
       obtain ⟨z, z0, z1, z2⟩ := hc₀ M hM _ _ ⟨a₀, b, τ, τ', n, Φ, hab₀, hn, hasFlip_congr h1 h2 hF, rfl, rfl⟩ g g₁
-      have z3 := hc M hM _ _ hΘ z g g₁ ⟨GlobalTheory.T.bigRoute_kernel_integrableOn_unitary_quotient (_root_.GlobalTheory.T.twisted_theta_integral_converges hP.siegelSetUnitary hP) hL W B ρ t i j
+      have z3 := hc M hM _ _ hΘ z g g₁ ⟨_root_.GlobalTheory.FunObj.routeBig_kerBig_integrableOn (_root_.GlobalTheory.T.twisted_theta_integral_converges hP.siegelSetUnitary hP) hL W B ρ t i j
         (GlobalTheory.T.squareThetaTripleHypotheses_of_standing hL W t i j (hst t)) M hM _ _ hΘ g₁ g, z1.2⟩
       replace z2 := (congrArg (zdeg z * ·) (e a₀)).symm.trans z2
       replace z3 := (congrArg (zdeg z * ·) (e a)).symm.trans z3

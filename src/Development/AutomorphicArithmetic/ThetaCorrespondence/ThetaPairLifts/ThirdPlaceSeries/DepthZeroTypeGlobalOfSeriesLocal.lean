@@ -10,7 +10,7 @@ import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyTypePl
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsClassMapCorrespondence
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameParameterCoupled
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TameSupportCompatible
-import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertiaInvariantUnderUnramifiedTwistOfWeilDelignStatement
+import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertiaInvariantUnderUnramifiedTwistOfWeilDelign
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalCompatibilityOfClassMaps
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ThetaLocalInputs
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SglobDzBigDef
@@ -39,7 +39,7 @@ theorem depthZeroType_series_local_explicit_alt : _root_.GlobalTheory.NRows.Thet
   intro hPr hG hZ hDZ hL D P L hLT hκ hCen
   obtain ⟨I⟩ := GlobalTheory.TypeIdent.nonempty_ident D
   obtain ⟨rc, hrc, hcl⟩ := _root_.UpperTheory.One.M.exists_isRc_isClassMapD_alt hL D P.T I
-  refine _root_.DiscreteGroups.sglob.DzType.Rt.serLoc_of_tame_param_le D L rc hG hLT (GlobalTheory.T.inertiaInvariantUnderUnramifiedTwist_of_weilDeligne D P.T)
+  refine _root_.DiscreteGroups.sglob.DzType.Rt.serLoc_of_tame_param_le D L rc hG hLT (_root_.GlobalTheory.IneUnrTwist.main D P.T)
     (_root_.GlobalTheory.T.locComp_of_isRc_of_classMap_of_cenLoc hPr hL D P I rc hrc hcl hCen) (_root_.GlobalTheory.T.tame_gen_support_compat_of_is_rc hZ hL D P.T I rc hrc)
     (fun k => GlobalTheory.DepthZeroCusp.depthZeroCuspidal (D.host.g k)) ?_
   intro k v

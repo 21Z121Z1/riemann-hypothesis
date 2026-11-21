@@ -11,8 +11,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OddEigenvectorUniqu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBottomPairBigMemberTwistedTuple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomPairsExistEveryTupleOfCmThetaHypotheses
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockVacuumRealRestrictionGaussianEntire
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerModelComplexConjugateNegFormStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicVacuumStandardLatticesReadsThetaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerModelComplexConjugateNegForm
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicVacuumStandardLatticesReadsTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OddEisensteinRatioAlgebraicUnitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareNuConductorExponentsPosProdEqModulusStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealIndicatorReadsNormPowMulIntertwinedVacuumStatement
@@ -21,8 +21,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilActionIntegralP
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralActionUnitCharacterEigenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardPairFirstConjEqSumCosetIndicatorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitDetCharacterIntegralFramePowEqOneStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralMatrixFrameCompletedStandardLatticeStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterFiniteIdeleValueEqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralMatrixFrameCompletedStandardLattice
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterFiniteIdeleValueEq
 
 noncomputable section
 
@@ -139,7 +139,7 @@ theorem reads_std (hI : GlobalTheory.NormSum.Inp D) {δ t0 : ℂ} {Q : ℕ} (P :
     (hf : f = Tm fun w => starRingEnd ℂ (stdFst ν e 𝔪 S T β 1 w)) :
     ∃ u, IsPh u ∧ Reads ψ θ hS hT ⊤ δ 1 ((c * u) • P.F) f := by
   obtain ⟨R, hR1, hR2, hF⟩ := hstd
-  obtain ⟨b1, b2⟩ := GlobalTheory.T.isIntegralMatrix_frame_completedStandardLattice β hβ
+  obtain ⟨b1, b2⟩ := _root_.GlobalTheory.StdRead.isIntM_of_isFrame_stdL β hβ
   obtain ⟨m, hm0, hpow⟩ := GlobalTheory.T.unitDetCharacter_integralFrame_pow_eq_one e 𝔪 hm ν hk β b1 b2
   choose! z hz using fun (k : Formalism.MainNotions.StandardLatticesGL3.GA D P.a) (hk : k ∈ intG D P.a) => exists_approx hm.ne_bot 0 P.d hk
   have hz' : ∀ r ∈ R, IsIntE (z r) ∧ Approx 𝔪 0 r (z r) := fun r hr => hz r (hR1 r hr)
@@ -166,7 +166,7 @@ theorem killsCong {μ₀ : T} (hL : L.Is μ₀) (G : GlobalTheory.ChiGrid.GridDa
   have e : nuH G t i j = nuH G μ₀ i j * L.xiH t := by
     show L.C.mu0 j * L.xiH t / G.ch.chiH (D.R.m - i) = L.C.mu0 j * L.xiH μ₀ / G.ch.chiH (D.R.m - i) * L.xiH t
     rw [hL.xi_base, mul_one, mul_div_right_comm]
-  have h3 := GlobalTheory.T.heckeCharacter_finiteIdele_value_eq _ _ (chrEq_nu G t i j hL) x u hxu
+  have h3 := _root_.GlobalTheory.FinIdlRead.chr_finIdl _ _ (chrEq_nu G t i j hL) x u hxu
   have e1 : (nuH G μ₀ i j * L.xiH t).1 (finIdl D u) = (nuH G μ₀ i j).1 (finIdl D u) * (L.xiH t).1 (finIdl D u) := rfl
   have e2 : (nuH G μ₀ i j).1 (finIdl D u) = 1 := inv_eq_one.1 h1
   rw [e, e1, e2, h2, mul_one] at h3

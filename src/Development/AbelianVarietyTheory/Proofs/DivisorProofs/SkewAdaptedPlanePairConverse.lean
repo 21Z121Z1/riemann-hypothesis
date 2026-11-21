@@ -1,12 +1,25 @@
 import Development.AbelianVarietyTheory.Definitions.Divisors.SiegelWeilAnisotropicHermitian
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicSchwartzSpaceTranslateMem
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddCharDotMulMemAdelicSchwartzSpaceStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AddCharDotMulMemAdelicSchwartzSpace
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTriple
+import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.UnifModGrowthOfIsUnifModerate
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftPRouteSmall
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTranslatesEqPrimFrameLat
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHeisenbergActsByLocalSchrodinger
+import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotRelZero
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
+import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareStanding
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousAtPlace
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacFn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerGoodModelsStatement
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilRepresentationPreservesSchwartz
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicStoneVonNeumannLagrangianUniquenessStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairRestrictionThetaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairRestrictionTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenIntertwinerExtensionStatement
 
 open scoped TensorProduct NNReal Matrix
@@ -35,7 +48,7 @@ theorem proj_zero_mem_adm (F : Type) [Field F] [NumberField F] (κ : Type) [Fint
 
 theorem schr_mem_schA {F : Type} [Field F] [NumberField F] (ψ : AddChar (AF F) ℂ) (hψ : IsStd ψ) {κ : Type} [Fintype κ]
     (w : (κ → AF F) × (κ → AF F)) {Φ : (κ → AF F) → ℂ} (hΦ : Φ ∈ schA F κ) : schr ψ w Φ ∈ schA F κ := by
-  have h2 := GlobalTheory.T.addCharDotMul_mem_adelicSchwartzSpace ψ hψ w.2 _ (GlobalTheory.SchwartzTranslate.main F κ w.1 Φ hΦ)
+  have h2 := _root_.GlobalTheory.CharMulSchA.charMul_mem_schA ψ hψ w.2 _ (GlobalTheory.SchwartzTranslate.main F κ w.1 Φ hΦ)
   have : schr ψ w Φ = ψ (⅟(2 : AF F) * (w.1 ⬝ᵥ w.2)) • (fun x => ψ (x ⬝ᵥ w.2) * Φ (x + w.1)) := by
     funext x
     simp only [schr, Pi.smul_apply, smul_eq_mul, AddChar.map_add_eq_mul]

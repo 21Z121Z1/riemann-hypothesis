@@ -6,7 +6,7 @@ import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermLat
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MatrixCongruentOneModUniformizerPowGroupAndOrbitStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianMatrixCongruenceContentJacobianStatement
-import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TupleJacobianRightMulIsometryStatement
+import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TupleJacobianRightMulIsometry
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PrimitiveTuplesHermitianGramCosetContentStatement
 
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory
@@ -179,7 +179,7 @@ theorem cont_prim_scale : ∀ {F : Type} [Field F] [ValuativeRel F] [Topological
       refine ⟨by simpa only [rmul_rmul, hAA, rmul_one] using h1, ?_⟩
       rw [← hOB]
       exact ⟨_, h2, (gramT_rmul L hH.1 _ _).symm⟩
-  have hcS := ((GlobalTheory.T.tuple_jacobian_rightMul_isometry L ϖ hϖ Hm hH Λs hΛ m).1 A hA _ hTco).2
+  have hcS := ((_root_.GlobalTheory.HL.TupleJac.tuple_jacobian L ϖ hϖ Hm hH Λs hΛ m).1 A hA _ hTco).2
   rw [hS, hcS, hcO, ← mul_assoc, ← zpow_add₀ hq.ne']
   have he : -(vE L ϖ (A.det * L.cj A.det) * ((n : ℤ) - m)) + -(vE L ϖ (A.det * L.cj A.det) * m)
       = -(vE L ϖ (A.det * L.cj A.det) * n) := by ring

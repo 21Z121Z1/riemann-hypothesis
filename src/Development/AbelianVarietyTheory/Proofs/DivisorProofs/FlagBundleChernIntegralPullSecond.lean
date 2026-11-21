@@ -51,9 +51,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoGradedDeterm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernOneEqNegDdcLogDet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DensMulPullHeadL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadLastMeasMeasurePreserving
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothFormsCalculusHolomorphicAtlasStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernFormPropertiesStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasTopFormIntegralFiniteAdditiveHomogeneousStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernFormProperties
 
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.Semi ReciprocityTheory.ChartRestriction.G.Geo.Tor
@@ -95,17 +93,17 @@ def pullHom {k : Type} [CommRing k] {B Y : Scheme.{0}} [IsIntegral B] {q : B ⟶
     (hB : IsRegVar q d) (hY : IsRegVar p d') (σ : k →+* ℂ) (π : Y ⟶ B) (w : π ≫ q = p) :
     (hB.atlas σ).Fld →+* (hY.atlas σ).Fld where
   toFun := pullF hB hY σ π w
-  map_one' := ((GlobalTheory.T.smoothForms_calculus_holomorphicAtlas _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
-    ((GlobalTheory.T.firstChern_form_properties k B q d hB σ).2.2 Y p d' hY π w).1).1
-  map_mul' α β := (((GlobalTheory.T.smoothForms_calculus_holomorphicAtlas _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
-    ((GlobalTheory.T.firstChern_form_properties k B q d hB σ).2.2 Y p d' hY π w).1).2 0 α β).2.1
+  map_one' := ((_root_.GlobalTheory.formCalculus _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
+    ((_root_.GlobalTheory.LineForm.basicForms k B q d hB σ).2.2 Y p d' hY π w).1).1
+  map_mul' α β := (((_root_.GlobalTheory.formCalculus _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
+    ((_root_.GlobalTheory.LineForm.basicForms k B q d hB σ).2.2 Y p d' hY π w).1).2 0 α β).2.1
   map_zero' := by
-    have := (((GlobalTheory.T.smoothForms_calculus_holomorphicAtlas _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
-      ((GlobalTheory.T.firstChern_form_properties k B q d hB σ).2.2 Y p d' hY π w).1).2 0 0 0).2.2.1
+    have := (((_root_.GlobalTheory.formCalculus _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
+      ((_root_.GlobalTheory.LineForm.basicForms k B q d hB σ).2.2 Y p d' hY π w).1).2 0 0 0).2.2.1
     simp only [zero_smul] at this
     exact this
-  map_add' α β := (((GlobalTheory.T.smoothForms_calculus_holomorphicAtlas _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
-    ((GlobalTheory.T.firstChern_form_properties k B q d hB σ).2.2 Y p d' hY π w).1).2 0 α β).1
+  map_add' α β := (((_root_.GlobalTheory.formCalculus _ _ (hB.atlas σ)).2.2.2.2 _ _ (hY.atlas σ) _
+    ((_root_.GlobalTheory.LineForm.basicForms k B q d hB σ).2.2 Y p d' hY π w).1).2 0 α β).1
 
 section Pull
 variable {k : Type} [CommRing k] {B Y : Scheme.{0}} [IsIntegral B] {q : B ⟶ Sp k} {p : Y ⟶ Sp k} {d d' : ℕ}

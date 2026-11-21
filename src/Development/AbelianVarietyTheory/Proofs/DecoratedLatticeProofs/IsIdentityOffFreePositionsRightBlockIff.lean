@@ -10,9 +10,10 @@ import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BesselAdap
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjugateSymmetricUnipotentPattern
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsPatOne
 import Formalism.LocalToGlobal.Divisibility.DefGroup
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceReductionsConjOfNestedFrameStabilisersStatement
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceReductionsConjOfNestedFrameStabilisers
+import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFiniteAdeleProjectionIntegralReduction
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagonalBlockDetBlockTriangular
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsReductionIffPattern
-import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsFiniteAdeleProjectionIntegralReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemLevelIffSymmetricPositionEntryPattern
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SplitPlaceLocalGroupElementsJacobiBessel
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IdempotentSubMulComplementEqComplement
@@ -92,7 +93,7 @@ theorem exists_read (X : Formalism.L2.SG.HidaSetting.HidaSetting D) (h : X.B.I =
       rw [hfe, GlobalTheory.FrameConj.conj_mem_St_iff]; exact hS⟩).2
     have h2 := st_of_kset X h _ hβ₀ _ h1
     rwa [hfe, GlobalTheory.FrameConj.conj_mem_St_iff] at h2
-  have hm := fun PP : Pg => (hid PP).elim fun e he => GlobalTheory.T.splitPlaceReductions_conj_of_nestedFrameStabilisers D (D.sp.Y 0) β β₂ Λ N hβ e PP.1 he h12
+  have hm := fun PP : Pg => (hid PP).elim fun e he => _root_.GlobalTheory.NestedStab.redFn_conj_of_stab_le D (D.sp.Y 0) β β₂ Λ N hβ e PP.1 he h12
   choose m hm using hm
   refine ⟨m, fun k hk hS => ?_⟩
   rw [(hK _).1, hfe, GlobalTheory.FrameConj.conj_mem_St_iff]

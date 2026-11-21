@@ -72,7 +72,7 @@ theorem depthZero_tame_alt : _root_.GlobalTheory.NRows.ThetaLocalInputsAlt → �
   obtain ⟨hsw', -⟩ := GlobalTheory.TypeTame.conjSP_w_of_isConjPl D s w' (conjPl_symm D hc)
   subst hsw'
   obtain ⟨σ, hσ, -⟩ := GlobalTheory.T.splitPlaceLocalComponent_exists_unique_class D.host.E D.R.nV (P.H.av.rep i PI) s
-  obtain ⟨κ, σ', e, hκ, hκc, hσ', he⟩ := GlobalTheory.T.splitPlaceLocalComponent_conj_eq_inverseTranspose D D.R.nV (P.H.av.rep i PI) s σ hσ
+  obtain ⟨κ, σ', e, hκ, hκc, hσ', he⟩ := _root_.GlobalTheory.ConjLocComp.exists_isLocS_conjSP D D.R.nV (P.H.av.rep i PI) s σ hσ
   have hloc : ∀ w, D.naut.locV i PI w = D.nbc.locAU (D.nd.j i)
       (P.H.au.cls (D.nd.j i) (D.nd.j_range i).1 (D.nd.j_range i).2 (P.H.av.rep i PI)) w := fun w =>
     by rw [D.nbc.embAV_loc, P.H.emb]

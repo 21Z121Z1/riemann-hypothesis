@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.SymTupOne
 import Development.AbelianVarietyTheory.Statements.TorsionEndomorphisms.EndDeterminedOnTorsion
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.SiegelToroidalIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteIntegerRingActionsPrincipallyPolarisedStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuliGeometricPointEqOfSameFibreActionLevelStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuliGeometricPointEqOfSameFibreActionLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationPartBaseChange
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushEquivSymmLeft
@@ -199,7 +199,7 @@ theorem finite_points : ∀ (E : Type) [Field E] [NumberField E] [IsCMField E] (
     simp only [F, Prod.mk.injEq] at h
     obtain ⟨h1, h2, h3⟩ := h
     apply Subtype.ext
-    refine GlobalTheory.T.moduli_geometric_point_eq_of_same_fibre_action_level E H Dw l Xo K P x.1 x'.1 (α x) (α x') (x.2.1.trans x'.2.1.symm) (hα x) (hα x') (hL x) (hL x')
+    refine _root_.GlobalTheory.UMin.moduli_point_eq_of_same_fibre E H Dw l Xo K P x.1 x'.1 (α x) (α x') (x.2.1.trans x'.2.1.symm) (hα x) (hα x') (hL x) (hL x')
       (fun a => ⟨(ρ x).act a, hρ x a, by rw [congrFun h1 a]; exact hρ x' a⟩)
       (fun a => ⟨pt x (Xo.univ.eta a), ObjPull.secPull_left (hα x) _, by
         rw [congrFun h2 a]; exact ObjPull.secPull_left (hα x') _⟩)

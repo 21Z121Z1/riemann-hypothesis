@@ -3,7 +3,8 @@ import Development.AbelianVarietyTheory.Definitions.Divisors.FormalEnd
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.UniformisationConclusion
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissibleBaseOfCompleteDvr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraitUniformisationPullbackFiniteExtension
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvenOnTorusDescendsAlongLocalHomStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvenOnTorusDescendsAlongLocalHom
+import Development.AbelianVarietyTheory.Definitions.Divisors.TateProductRigidificationTrivial
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TqOfGtCoord
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoOfGenericNormalLocalBase
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ForallGeometricallyIntegralOfSmoothOfGeometrical
@@ -47,7 +48,7 @@ theorem GlobalTheory.Mum.evenOn_of_trait_unif : ∀ (R : Type) [CommRing R] [IsD
     (algebraMap (FractionRing W) (Kb W)).injective.comp ((IsFractionRing.injective W (FractionRing W)).comp hφi)
   obtain ⟨e, he⟩ := GlobalTheory.Mum.TraitExt.exists_fracHom ρ hfin.2.1 hfin.2.2 _ hgi
   obtain ⟨W₁, _, _, _, iw, φ₁, -, hW₁, hiwi, -, hiwl, hφ₁i, hφ₁l, hcomm, -, -⟩ :=
-    GlobalTheory.T.exists_finite_complete_trait_extension_of_base R W R' hW φ hφi hφl ρ hfin (Kb W) e he
+    _root_.GlobalTheory.TraitExt.exists_finite_trait_extension R W R' hW φ hφi hφl ρ hfin (Kb W) e he
   have hAW : AdmBase W (maximalIdeal W) := by
     haveI := hW.1; exact ⟨inferInstance, inferInstance, inferInstance, hW.2.1⟩
   have hAW₁ : AdmBase W₁ (maximalIdeal W₁) := by
@@ -141,4 +142,4 @@ theorem GlobalTheory.Mum.evenOn_of_trait_unif : ∀ (R : Type) [CommRing R] [IsD
       (Over.w η[(Over.pullback (specOf iw)).obj GW]) _ _ U''.LG.isLB (pull_isLB P.L.isLB _) hgen'
   have hLB' : LBIso P''.L.L (P.L.L.pull β'') := by rw [hP''L]; exact hLB
 
-  exact GlobalTheory.T.evenOnTorus_descends_along_localHom R' W₁ φ₁ hφ₁l G₁ hG₁' _ β'' hpb3 hprop P P'' hLB' hP''E X hTQ
+  exact _root_.GlobalTheory.Mum.evenOn_of_local R' W₁ φ₁ hφ₁l G₁ hG₁' _ β'' hpb3 hprop P P'' hLB' hP''E X hTQ

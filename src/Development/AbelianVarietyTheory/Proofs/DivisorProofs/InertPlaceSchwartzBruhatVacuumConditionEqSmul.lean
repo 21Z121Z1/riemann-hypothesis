@@ -8,7 +8,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorLatticeLocalD
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatAtVAtStable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianTensorSkewHermitianLatticeOpenCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InertPlaceTensorLatticeSelfDualSymplecticStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSecondCoordinateOfOrthogonalSelfDualStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSecondCoordinateOfOrthogonalSelfDual
 
 open NumberField IsDedekindDomain Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes GlobalTheory.WeilM GlobalTheory.AdelicU GlobalTheory.LFun GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels
 open scoped TensorProduct Matrix GlobalTheory.VacAny
@@ -91,7 +91,7 @@ theorem vac_unique : ∀ (F E : Type) [Field F] [NumberField F] [Field E] [Numbe
       c * l.1 i ∈ v.adicCompletionIntegers F := by
     obtain ⟨c, hc0, hc⟩ := GlobalTheory.LatBound.locCo_latAtV_bounded G.V' G.W v G.M'.co hTr.geo.hV'.lat hTr.geo.hW.lat
     exact ⟨c, hc0, by rintro _ ⟨γ, hγ, rfl⟩ i; exact (hc γ hγ i).1⟩
-  have hD := GlobalTheory.T.exists_second_coordinate_of_orthogonal_selfDual v (GlobalTheory.LatVac.psiAt B.ψ v) _ hsd hst hbd
+  have hD := _root_.GlobalTheory.selfDual_exists_snd_of_orth v (GlobalTheory.LatVac.psiAt B.ψ v) _ hsd hst hbd
   refine eq_smul_of_eigen (GlobalTheory.LatVac.psiAt B.ψ v) (fun γ : latAtV G.V' G.W v => GlobalTheory.LatVac.locCo G.M'.co v γ) cf
     (fun u hu => ?_) φ (G.M'.vac v) (hloc φ hφ hfix) (hloc _ (hTr.geo.hM'.vac v).1 hvac) (hTr.geo.hM'.vac v).2.1
   obtain ⟨y', γ, hγ, he⟩ := hD u (by

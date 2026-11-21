@@ -5,21 +5,22 @@ import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.T
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.UnifUniqSt
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaObjectNearGoodPrimeStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenericObjectMinimalPrimeModuliChartStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyThetaCoordinateSchemeDataStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaObjectNearGoodPrime
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGenericObjectMinimalPrimeModuliChart
+import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.FiniteHomogeneousInf
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.NonemptyThetaCoordinateSchemeData
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelShapePrimitivityPullbackDescent
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelPullbackIdCompCancel
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsRingBaseChange
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaPointsVanishingIdealRadicalHomogeneous
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HasThetaConstantsIffOfThetaLevelPullback
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaConstantsUniqueUpToUnitStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaConstantsUniqueUpToUnit
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemePullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaLevelIsoUniqueOfDenseCommonFibresStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SecCoordBcScaleUnique
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionCoordinateVectorExistsLocallyStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SectionCoordinateVectorExistsLocally
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsSectionCoordinateVectorOfLocallyOnRingStatement
-import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemeGlueAffineCoverStatement
+import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsThetaLevelAbelianSchemeGlueAffineCover
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIdealOfLocally
 
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj NumberField
@@ -248,7 +249,7 @@ theorem exists_chart [IsNoetherianRing o] (hG : GenericObj C Y Mat κ)
     (v' : Ix g (N' ^ 2) → K) (hsh : t'.Shape Mat κ) (hth : t'.HasTh (𝟙 _) v') (hv' : SecCoord Y.de Y.th z v')
     (p : Sp K) : ∃ (R : Type) (_ : CommRing R) (x : Sp R ⟶ Y.MM) (v : Ix g (N' ^ 2) → R)
       (t : TObj g (N' ^ 2) J b (x ≫ Y.s)), IsChart Y Mat κ x v t ∧ z p ∈ Set.range x := by
-  obtain ⟨R0, _, x0, v0, hx0, hp0, hsc0⟩ := (GlobalTheory.T.sectionCoordinateVector_exists_locally Y.MM Y.de _ Y.th Y.isLB).2.2 (z p)
+  obtain ⟨R0, _, x0, v0, hx0, hp0, hsc0⟩ := (_root_.GlobalTheory.ZM.LocalCoord.secCoord_local Y.MM Y.de _ Y.th Y.isLB).2.2 (z p)
   haveI : IsOpenImmersion x0 := hx0
   haveI : IsReduced Y.MM := Y.reduced
   haveI : _root_.IsReduced R0 := isReduced_of_open x0
@@ -406,7 +407,7 @@ theorem Covered.hasTh_iff (h : Covered Mat κ univ) (h₁ : Out.Laws) (h₂ : Ou
       intro p
       obtain ⟨f, hf, w, hw1, hw2⟩ := h.exists_local h₂ z p
       have hb := GlobalTheory.hasTh_baseChange h₂ _ _ _ _ _ _ _ univ _ _ (algebraMap R (Localization.Away f)) z v ht
-      obtain ⟨u, hu⟩ := GlobalTheory.T.thetaConstants_unique_up_to_unit h₁ h₂ _ _ _ _ _ _ _ univ _ _ _ _ hw1 hb (span_of_secCoord hw2)
+      obtain ⟨u, hu⟩ := _root_.GlobalTheory.hasTh_unique_unit h₁ h₂ _ _ _ _ _ _ _ univ _ _ _ _ hw1 hb (span_of_secCoord hw2)
       refine ⟨f, hf, ?_⟩
       have e : (fun a => algebraMap R (Localization.Away f) (v a)) = fun a => (u : Localization.Away f) * w a :=
         funext hu
@@ -501,7 +502,7 @@ theorem exists_covered (h₁ : Out.Laws) (h₂ : Out.Laws2) {m : ℕ} (hm : 2 �
     first
     | simp
     | rfl
-  obtain ⟨t₀, ht₀⟩ := GlobalTheory.T.exists_thetaLevelAbelianScheme_glue_affineCover h₁ h₂ _ _ _ _ b m U.toScheme (U.ι ≫ Y.s) U.toScheme R x' t' hm hd ho
+  obtain ⟨t₀, ht₀⟩ := _root_.GlobalTheory.ThetaAffineGlue.exists_glue h₁ h₂ _ _ _ _ b m U.toScheme (U.ι ≫ Y.s) U.toScheme R x' t' hm hd ho
     (fun i => inferInstance) (fun p => ⟨p, hcov p⟩) (fun i i' T _ a a' u ha e hu => by
       haveI := ha
       have e' : a ≫ x i = a' ≫ x i' := by
@@ -520,8 +521,8 @@ end Glue
 
 theorem nonempty_wFam : Out.Laws → Out.Laws2 → ∀ (g : ℕ) (J : Type) [Finite J] (Mat : J → Matrix (Fin (2 * g)) (Fin (2 * g)) ℤ) (κ n : ℕ) (w w' : J), n.Prime → Odd n → ∃ j₀ : ℕ, ∀ j ≥ j₀, ∀ (o : Type) [CommRing o] (b : TBase o ((n ^ j) ^ 2)) (em : o →+* ℂ) (C : TObj g ((n ^ j) ^ 2) J b (spMap em) → Prop) (d : ℕ), ArBase em → GoodClass em C Mat κ w w' d → Nonempty (WFam n em C Mat κ) := by
   intro h₁ h₂ g J _ Mat κ n w w' hn hodd
-  obtain ⟨j₁, hj₁⟩ := GlobalTheory.T.exists_generic_object_minimalPrime_moduli_chart h₁ h₂ g J Mat κ n w w' hn hodd
-  obtain ⟨j₂, hj₂⟩ := GlobalTheory.T.exists_thetaObject_near_good_prime h₁ h₂ g J Mat κ n hn hodd
+  obtain ⟨j₁, hj₁⟩ := _root_.GlobalTheory.GenericObject.exists_generic_object h₁ h₂ g J Mat κ n w w' hn hodd
+  obtain ⟨j₂, hj₂⟩ := _root_.GlobalTheory.ZM.NearBuild.exists_tObj_near h₁ h₂ g J Mat κ n hn hodd
   refine ⟨max (max j₁ j₂) 2, fun j hj o _ b em C d har hgood => ?_⟩
   have hj1 : j ≥ j₁ := le_trans (le_trans (le_max_left _ _) (le_max_left _ _)) hj
   have hj2 : j ≥ j₂ := le_trans (le_trans (le_max_right _ _) (le_max_left _ _)) hj
@@ -529,7 +530,7 @@ theorem nonempty_wFam : Out.Laws → Out.Laws2 → ∀ (g : ℕ) (J : Type) [Fin
   haveI : IsDedekindDomain o := har.1
   obtain ⟨hrad, hhom, htf⟩ :=
     GlobalTheory.ZM.ThIdeal.thIdeal_radical_homogeneous_torsionFree o g (n ^ j) J b em C har.2.2
-  obtain ⟨Y⟩ := GlobalTheory.T.nonempty_thetaCoordinateSchemeData o g n (n ^ j) (thIdeal em C) (pow_pos hn.pos j) hrad hhom htf
+  obtain ⟨Y⟩ := _root_.GlobalTheory.ZM.nonempty_MMPre o g n (n ^ j) (thIdeal em C) (pow_pos hn.pos j) hrad hhom htf
   have hG : GenericObj C Y Mat κ := genericObj_of h₂ w w' (hj₁ j hj1 o b em C d har hgood Y)
   have hB := hj₂ j hj2 o b
   have ho : Odd (n ^ j) := hodd.pow

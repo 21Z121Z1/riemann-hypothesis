@@ -1,9 +1,10 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InfOfNodupAlg
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SplitPlaceLocalComponentExistsUniqueClassStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SatakeParametersInertPlaceIndependentOfModelStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SatakeParametersInertPlaceIndependentOfModel
+import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RingSpecNormalisedCharacterEq
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightHighestWeightExistsUniqueAntitoneStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightContragredientExistsUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgWeightContragredientExistsUnique
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCoordinateModelOfAlgWeightStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AutomorphicRepCmQuotientModelStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AutomorphicMultiplicityEqOfIsoStatement
@@ -115,7 +116,7 @@ theorem f_sat (π : NG.AutRep D.host.E D.R.nV) (v : HeightOneSpectrum (𝓞 (max
   obtain ⟨α, hα⟩ := hα
   have hex : ∃ (v' : HeightOneSpectrum (𝓞 (maximalRealSubfield D.host.E))) (Dv' : InertDatum D.host.E D.R.nV v' w)
       (α' : Fin (D.R.nV / 2) → ℂ), NG.OverPl w v' ∧ NG.SatAt (clsA π).rep Dv' α' :=
-    ⟨v, Dv, α, hv, GlobalTheory.T.satakeParameters_inertPlace_independent_of_model _ _ π _ (autIso_symm (rep_iso π)) v w hv Dv Dv α hα⟩
+    ⟨v, Dv, α, hv, _root_.GlobalTheory.SatInd.satAt_indep _ _ π _ (autIso_symm (rep_iso π)) v w hv Dv Dv α hα⟩
   unfold satOf
   rw [dif_pos hex]
   have key : ∀ (v' : HeightOneSpectrum (𝓞 (maximalRealSubfield D.host.E))) (Dv' : InertDatum D.host.E D.R.nV v' w)
@@ -123,19 +124,19 @@ theorem f_sat (π : NG.AutRep D.host.E D.R.nV) (v : HeightOneSpectrum (𝓞 (max
     intro v' Dv' α' hv' hs'
     have e := overPl_unique hv hv'
     subst e
-    exact GlobalTheory.T.satakeParameters_inertPlace_independent_of_model _ _ _ π (rep_iso π) v w hv _ Dv _ hs'
+    exact _root_.GlobalTheory.SatInd.satAt_indep _ _ _ π (rep_iso π) v w hv _ Dv _ hs'
   obtain ⟨hv', hs'⟩ := hex.choose_spec.choose_spec.choose_spec
   exact ⟨_, key _ _ _ hv' hs', rfl⟩
 
 theorem f_wt (π : NG.AutRep D.host.E D.R.nV) (a : NG.AlgWt D.host.E D.R.nV) (hd : π.toAlgWt.IsDual a) :
     wtOf D (clsA π).rep = clsW a := by
   have hπ : (clsA π).rep.toAlgWt.Iso π.toAlgWt := (rep_iso π).1
-  obtain ⟨b, hb, hbu, hba⟩ := GlobalTheory.T.algWeight_contragredient_exists_unique _ _ π.toAlgWt
+  obtain ⟨b, hb, hbu, hba⟩ := _root_.GlobalTheory.algWt_contragredient _ _ π.toAlgWt
   have hrb : (clsA π).rep.toAlgWt.IsDual b := (hba _ hπ.symm).1
   have hex : ∃ b, (clsA π).rep.toAlgWt.IsDual b := ⟨b, hrb⟩
   unfold wtOf
   rw [dif_pos hex]
-  obtain ⟨b', -, hbu', -⟩ := GlobalTheory.T.algWeight_contragredient_exists_unique _ _ (clsA π).rep.toAlgWt
+  obtain ⟨b', -, hbu', -⟩ := _root_.GlobalTheory.algWt_contragredient _ _ (clsA π).rep.toAlgWt
   have h1 : b'.Iso hex.choose := (hbu' _).1 hex.choose_spec
   have h2 : b'.Iso b := (hbu' _).1 hrb
   have h3 : b.Iso a := (hbu a).1 hd
@@ -144,7 +145,7 @@ theorem f_wt (π : NG.AutRep D.host.E D.R.nV) (a : NG.AlgWt D.host.E D.R.nV) (hd
 theorem f_infW (a : NG.AlgWt D.host.E D.R.nV) (τ : D.host.E →+* ℂ) (lam : Fin D.R.nV → ℤ) (hl : a.HWAt τ lam) :
     NG.infOf (hwOf (clsW a).rep τ) = NG.infOf lam := by
   have hi : a.Iso (clsW a).rep := (repW_iso a).symm
-  obtain ⟨b0, hb0, hb0', hhw⟩ := GlobalTheory.T.algWeight_contragredient_exists_unique _ _ a
+  obtain ⟨b0, hb0, hb0', hhw⟩ := _root_.GlobalTheory.algWt_contragredient _ _ a
   have hr : (clsW a).rep.HWAt τ lam := ((hhw _ hi).2 τ lam hl)
   obtain ⟨huniq, hanti⟩ := GlobalTheory.T.algWeight_highestWeight_exists_unique_antitone _ _ (clsW a).rep τ
   have hex : ∃ lam, (clsW a).rep.HWAt τ lam ∧ Antitone lam := ⟨lam, hr, hanti lam hr⟩

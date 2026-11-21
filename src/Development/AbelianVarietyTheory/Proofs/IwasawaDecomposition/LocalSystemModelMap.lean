@@ -1,13 +1,13 @@
 import Mathlib
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GrNormPush
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameComposeRingHomBaseChangeStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsFrameComposeRingHomBaseChange
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TransitionUniqueAndPointsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitSectionOfLocalValues
 import Development.AbelianVarietyTheory.Statements.HeightBoundStatement.HTBoundSt
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LineModel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsTangentOfUniqueIntegralLiftStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TangentFamilyOfUniqueLiftPrimeStatement
-import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameCombinationCoeffUniqueStatement
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TangentFamilyOfUniqueLiftPrime
+import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameCombinationCoeffUnique
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.DominatesLiftUnique
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.RigidSys
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbProj
@@ -143,7 +143,7 @@ theorem lnStep_tri (hB : HTBoundSt) (hp : p.Prime) (C : Formalism.MainNotions.DI
     lnStep t (spMap (intO ↥C.S).subtype ≫ xO) u' p b st =
       Real.log ‖cf x.2‖ + lnStep t (spMap (intO ↥C.S).subtype ≫ xO) u p b st := by
   obtain ⟨h0, h1⟩ := (h x.1).diag (frame_ind hu _) (frame_ind hu' _) hc
-  have pos := GlobalTheory.T.tangent_family_of_unique_lift_prime hB E H X t p C b xO hp hO
+  have pos := _root_.GlobalTheory.GrNormPos.grNorm_pos hB E H X t p C b xO hp hO
   rcases st with ⟨τ, k⟩ | k
   · by_cases hk : k < Dw.mult τ
     · simp only [letterOf, dif_pos hk, Option.some.injEq] at hx
@@ -153,9 +153,9 @@ theorem lnStep_tri (hB : HTBoundSt) (hp : p.Prime) (C : Formalism.MainNotions.DI
         (pos _ _ (frame_ind hu τ).1 (frame_ind hu τ).2 _).ne', add_sub_assoc]
     · simp [letterOf, hk] at hx
   · obtain ⟨hk, rfl⟩ := List.getElem?_eq_some_iff.1 hx
-    obtain ⟨i1, c1⟩ := GlobalTheory.T.frame_combination_coeff_unique E H Dw l c X t _ f _ u hu
+    obtain ⟨i1, c1⟩ := _root_.GlobalTheory.Proof.frame_combination_coeff_unique.concat_frame E H Dw l c X t _ f _ u hu
     have I1 : Ind t _ _ := ⟨fun i => (hu.1 _ _).1, i1⟩
-    have I2 : Ind t _ _ := ⟨fun i => (hu'.1 _ _).1, (GlobalTheory.T.frame_combination_coeff_unique E H Dw l c X t _ f _ u' hu').1⟩
+    have I2 : Ind t _ _ := ⟨fun i => (hu'.1 _ _).1, (_root_.GlobalTheory.Proof.frame_combination_coeff_unique.concat_frame E H Dw l c X t _ f _ u' hu').1⟩
     have T : Tri t _ (fun i : Fin (letters Dw).length => u ((letters Dw).get i).1 ((letters Dw).get i).2)
         (fun i => u' ((letters Dw).get i).1 ((letters Dw).get i).2) := fun j => by
       obtain ⟨d, d1, d2⟩ := h ((letters Dw).get j).1 ((letters Dw).get j).2
@@ -176,7 +176,7 @@ theorem chart_frame (Z : Mdl Y i₀) {a : Fin Z.m} {R : Type} [CommRing R] {φ :
     {w : Sp R ⟶ Z.X} (h : spMap φ ≫ Z.chart a = w) :
     GlobalTheory.LocM.IsFrame (Y Z.i).t (φ.comp (Z.alg a)) (w ≫ Z.π) ((Z.fr a).bc φ) := by
   rw [← h, Category.assoc]
-  exact GlobalTheory.T.isFrame_compose_ringHom_baseChange E H Dw _ _ _ _ _ _ _ φ _ _ (Z.frame a)
+  exact _root_.GlobalTheory.ShFam.Pad.isFrame_baseChange E H Dw _ _ _ _ _ _ _ φ _ _ (Z.frame a)
 
 theorem affineOpenChart_comp_structure_eq_spMap (Z : Mdl Y i₀) {a : Fin Z.m} {R : Type} [CommRing R] {φ : Γ(Z.X, (Z.U a).1) →+* R}
     {w : Sp R ⟶ Z.X} (h : spMap φ ≫ Z.chart a = w) :

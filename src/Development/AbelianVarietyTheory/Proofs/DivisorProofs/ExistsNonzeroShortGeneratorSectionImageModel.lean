@@ -5,8 +5,8 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NefFibOfIsGenerated
 import Development.AbelianVarietyTheory.Definitions.Divisors.NormSqColGrLineOfOrthogonal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageModelSectionsLinearRingOfIntegersStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormSqSemilinearLeLatticeFrameNormSqStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImageModelSectionsLinearRingOfIntegers
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormSqSemilinearLeLatticeFrameNormSq
 
 open NumberField IsDedekindDomain Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Pj Formalism.BasicNotions.TH Formalism.L2.Theta ReciprocityTheory.ChartRestriction.G.Geo.Tor ReciprocityTheory.ChartRestriction.G.FD GlobalTheory.AllWt GlobalTheory.CompHt GlobalTheory.CovTop GlobalTheory.CovHt GlobalTheory.Mean4 GlobalTheory.Mean4O
 open scoped ENNReal Classical
@@ -42,7 +42,7 @@ theorem exists_mem_nonzeroLocus_of_isShortGen : ∀ (K V Ω : Type) [Field K] [N
     rw [← hc]; refine Finset.sum_congr rfl fun j _ => ?_
     simp [Int.cast_smul_eq_zsmul]
   obtain ⟨k, hk⟩ := TopologicalSpace.Opens.mem_iSup.1 hv
-  rw [GlobalTheory.T.imageModel_sections_linear_ringOfIntegers K V Ω Nm W ev D X p L ψ s hM hev n (fun j => (c j : 𝓞 K)) (fun j => ⟨w j, hw j⟩) v hsum k] at hk
+  rw [_root_.GlobalTheory.ImageModel.sec_linear K V Ω Nm W ev D X p L ψ s hM hev n (fun j => (c j : 𝓞 K)) (fun j => ⟨w j, hw j⟩) v hsum k] at hk
   obtain ⟨j, hj⟩ := TopologicalSpace.Opens.mem_iSup.1 (basicOpen_sum_le _ _ hk)
   obtain ⟨-, hj⟩ := TopologicalSpace.Opens.mem_iSup.1 hj
   rw [Scheme.basicOpen_mul] at hj

@@ -4,10 +4,12 @@ import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ThExprUniqOfChart
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ClassSumValuesUnitOfClassSumValues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HxOfIsONFr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstRelIffTwistFactorAt
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowGeneratorEqConstMulVacuumThetaStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowGeneratorEqConstMulVacuumTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaPairCharactersAtLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelFormCompatBaseEmbedding
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVacuumMultiplierConstantPerLatticeStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsVacuumMultiplierConstantPerLattice
+import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
+import Development.AbelianVarietyTheory.Definitions.Divisors.MarkAd
 
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain
 open ReciprocityTheory.ChartRestriction.G ReciprocityTheory.ChartRestriction.G.FD GlobalTheory GlobalTheory.ThFr GlobalTheory.Dict GlobalTheory.AdTh GlobalTheory.ClsVal
@@ -133,9 +135,9 @@ theorem exists_ccIs_of_pair (hci : Formalism.MainNotions.ModuliIntegralCharts.H1
     have hi : IdxIs c σ (U.X k) Dc.idx Dc.e := ⟨Dc.per_eq, Dc.ty_eq⟩
     obtain ⟨v, hv⟩ := (TensVac.vacua _ _ _ _ Dc.bas Dc.idx V.rank Dc.sympl hP.even _ hw hw' _ hsd 1 _
       (Base.stdL_mem_Vset V.rank 1)).1
-    obtain ⟨C, hC0, hC⟩ := GlobalTheory.T.pow_generator_eq_const_mul_vacuum_theta hci _ H Dw l Xo c σ r U hσ hU hr1 hA k V.rank _ Dc.bas Dc.idx Dc.e hP.even
+    obtain ⟨C, hC0, hC⟩ := _root_.GlobalTheory.AdTh.prod_gen_eq_const_mul_thA hci _ H Dw l Xo c σ r U hσ hU hr1 hA k V.rank _ Dc.bas Dc.idx Dc.e hP.even
       Dc.sympl hi v hv
-    obtain ⟨κ, -, hκ, hrd⟩ := GlobalTheory.T.exists_vacuum_multiplier_constant_per_lattice D ψ θ V W χV χW om hP mu hmu r _ hr (U.X k) Dc.bas Dc.idx (hmod k) Dc.sympl H hrt
+    obtain ⟨κ, -, hκ, hrd⟩ := _root_.GlobalTheory.VacFamily.exists_vacuum_multiplier D ψ θ V W χV χW om hP mu hmu r _ hr (U.X k) Dc.bas Dc.idx (hmod k) Dc.sympl H hrt
       ΛV ΛW hV0 h1 h2 h3 h4 h5 hsd _ s (hon k) (hinv k) f hf v hv
     refine ⟨κ / C, ?_, fun h x hL hxe g bas idx e hs hie ϑ' hϑ' w hw0 => ?_⟩
     · obtain ⟨hd, hu, -⟩ := hx_of_isONFr _ r _ 0 _ Dc.bas Dc.idx Dc.sympl Even.zero _ (hon k)

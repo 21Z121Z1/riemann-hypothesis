@@ -3,7 +3,7 @@ import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TransportSymmetricL
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.NormalisedPullbackCommutesSymmetricTranslations
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLineBundleIsoRestrictAlongSectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorMovedToTraitSideStatement
-import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorMovedToCoverSideStatement
+import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeneratorMovedToCoverSide
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGroupPowValueEqOfConjugateTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGroupSymmetryValueEqOfConjugateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGroupActionCompatFibreIsoStatement
@@ -115,11 +115,11 @@ theorem GlobalTheory.ThetaMove.transport_symLift : ∀ (R : Type) [CommRing R] [
   · rintro ⟨⟨pt', φ', hφ'⟩, hs'⟩
     have e0 : pt' = x' := hs'.pt_eq
     subst e0
-    obtain ⟨u, hu, hvu⟩ := GlobalTheory.T.exists_generator_moved_to_cover_side hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
+    obtain ⟨u, hu, hvu⟩ := _root_.GlobalTheory.ThetaMove.exists_gen_up hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
       (translPt C.A.A x).left (snd (TFK (R := W) F) T.A.A).left (translPt T.A.A pt').left (translT T.A.A pt').left h₁
       (hs₂ pt') hs₃ ((C.n ^ j : ℕ) : ℤ) φ' hφ'
     obtain ⟨ν', hν', hsym'⟩ := hs'.sym
-    obtain ⟨ν, hν, hvν⟩ := GlobalTheory.T.exists_generator_moved_to_cover_side hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
+    obtain ⟨ν, hν, hvν⟩ := _root_.GlobalTheory.ThetaMove.exists_gen_up hAL hPL hGL hTL wA hwA T.ℓ T.ℓ_gen w hw f (snd (TFK (R := R) F) C.A.A).left
       (snd (TFK (R := R) F) C.A.A ≫ (GrpObj.inv : C.A.A ⟶ C.A.A)).left (snd (TFK (R := W) F) T.A.A).left
       (snd (TFK (R := W) F) T.A.A ≫ (GrpObj.inv : T.A.A ⟶ T.A.A)).left (negT T.A.A (TFK (R := W) F)).left h₁ hn₂ hn₃
       ((C.n ^ j : ℕ) : ℤ) ν' hν'

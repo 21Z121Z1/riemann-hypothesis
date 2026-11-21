@@ -33,5 +33,5 @@ theorem GlobalTheory.GoodFix.e_zero_theta_descent_eval_alt_bis : ∀ {D : D7} {L
   unfold _root_.GlobalTheory.MiS.LevelHypothesis at hL
   obtain ⟨⟨s, hs⟩, -⟩ := hL
   have hgf := good_fix (W.P.A3.A.fam.R t) (W.P.A3.A.fam.lvl W.Q.F.P1 W.Q.F.ψ1) hs.ok2.irr F
-  exact goodProjector_fixes_compositeThetaLift_of_fixed GlobalTheory.T.cusp_forms_rapid_decay (_root_.GlobalTheory.Fam.pk_z W) hC.lev hC.models hC.chain hC.grp.red_R t _ hgf v
+  exact goodProjector_fixes_compositeThetaLift_of_fixed _root_.GlobalTheory.RapidDecay.cuspRapidDecay (_root_.GlobalTheory.Fam.pk_z W) hC.lev hC.models hC.chain hC.grp.red_R t _ hgf v
 end

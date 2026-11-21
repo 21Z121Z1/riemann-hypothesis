@@ -1,10 +1,12 @@
 import Development.WeilBound.CoreStatements.ThetaDilations.SqPosOfNe
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.FiniteAdeleTopologyStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicHaarMeasureScalingStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicHaarMeasureLinearChangeStatement
+import Mathlib
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.AdelicHaarMeasureLinearChange
+import CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.CountData
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.WeilRepresentationQuadraticDatumStatement
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MobiusActionUpperHalfPlaneStatement
-import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SL2BruhatDecompositionIdentitiesStatement
+import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SL2BruhatDecompositionIdentities
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ArchimedeanGaussianFourierStatement
 
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology GlobalTheory.CompanionTheory.SW.Core
@@ -47,7 +49,7 @@ theorem mod_rat [MeasurableSpace (A F)] [BorelSpace (A F)] {lf : Measure (A F)} 
     (B : Matrix ι ι F) (a : Fˣ) (s : Set (ι → A F)) (hs : MeasurableSet s) :
     muF B lf ((fun u => (uA a : A F) • u) '' s) =
       ENNReal.ofReal ((|((Algebra.norm ℚ (a : F) : ℚ) : ℝ)|⁻¹ ^ M) ^ 2) * muF B lf s := by
-  have h2 := (GlobalTheory.T.adelic_haar_measure_linear_change F lf hlf h1 ι).2 (uA a) s hs
+  have h2 := (_root_.GlobalTheory.CompanionTheory.SW.Core.PiScale.pi_scale F lf hlf h1 ι).2 (uA a) s hs
   have h3 := (GlobalTheory.T.adelic_haar_measure_scaling F lf hlf h1).1 a a.ne_zero _ (GlobalTheory.T.mem_Oh_iff_and_nat_mul_properties F).2.2.2.2.1.measurableSet
   rw [h1, mul_one] at h3
   rw [muF, Measure.smul_apply, Measure.smul_apply, h2, smul_eq_mul, smul_eq_mul, mul_left_comm, ← pow_mul,
@@ -107,7 +109,7 @@ theorem good_ex [MeasurableSpace (A F)] [BorelSpace (A F)] {lf : Measure (A F)} 
     refine Finset.prod_congr rfl fun w _ => ?_
     rw [← Complex.ofReal_pow, Complex.im_ofReal_mul, Real.sqrt_mul (sq_nonneg _), Real.sqrt_sq_eq_abs, mul_pow, mul_comm]
   show G γ
-  obtain ⟨d1, -, d3, -⟩ := GlobalTheory.T.SL2_bruhat_decompositions_and_w_inv F γ
+  obtain ⟨d1, -, d3, -⟩ := _root_.GlobalTheory.CompanionTheory.SW.Core.SL2BruhatDecomposition.decompositions F γ
   by_cases hc : γ 1 0 = 0
   · have ha : γ 0 0 ≠ 0 := fun h0 => by
       have := γ.det_coe

@@ -70,7 +70,7 @@ variable {D : D7}
 theorem exists_expInf {θ : InfFam D} (hθ : IsInfFam θ) (V : HSp D) (g : ℝ → GA D V) (hc : Continuous g)
     (hadd : ∀ s t, g (s + t) = g s * g t) (hinf : ∀ t, g t ∈ GinfC V) :
     ∃ Z : GlobalTheory.SmoothForms.LieN V, ∀ t : ℝ, g t = GlobalTheory.SmoothForms.expInf θ V (t • Z) := by
-  have R := (GlobalTheory.T.adelicUnitary_realPoints_structure_realPlaces D).2 θ hθ V
+  have R := (_root_.GlobalTheory.SmoothForms.RealPts.realPoints D).2 θ hθ V
   have h0 : g 0 = 1 := by
     have := hadd 0 0
     rw [add_zero] at this
@@ -91,7 +91,7 @@ theorem der_sum {θ : InfFam D} (hθ : IsInfFam θ) {U : HSp D} (𝒮 : Set (GA 
     {φ : GA D U → ℂ} (hφ : φ ∈ 𝒮) (Z : GlobalTheory.SmoothForms.LieN U) (a : D.what₂.Tau → ℂ)
     (ha : ∀ τ, HasDerivAt (fun t : ℝ => φ (oneP θ U τ (Z τ).1 t)) (a τ) 0) :
     HasDerivAt (fun t : ℝ => φ (GlobalTheory.SmoothForms.expInf θ U (t • Z))) (∑ τ, a τ) 0 := by
-  have R := (GlobalTheory.T.adelicUnitary_realPoints_structure_realPlaces D).2 θ hθ U
+  have R := (_root_.GlobalTheory.SmoothForms.RealPts.realPoints D).2 θ hθ U
   have h1 := GlobalTheory.Mem.DerClosed.mem_smFun_of_closed D θ hθ U 𝒮 hc hd φ hφ
   have h2 : GlobalTheory.SmoothForms.Sm (GlobalTheory.SmoothForms.expInf θ U) φ :=
     (GlobalTheory.SmoothForms.isSmoothInf_iff φ).1 ((GlobalTheory.SmoothForms.smooth_iff R φ).1 h1)
