@@ -42,9 +42,14 @@ between jobs; only candidate workspaces are disposable.
 
 `Build PR` resolves the proposed merge commit on a hosted runner, then sends it
 to this pool. A warm build restores the original proof cache and the latest
-available ancestor cache before running stock Lake. It publishes completed
+available ancestor cache before running stock Lake. It reads compressed archives
+without making a second cache of every expanded OLean, ILean and C file; newly
+packed module archives are collected for publication. It publishes completed
 modules even when another module fails, so a retry can retain completed work.
 The workflow finishes active builds rather than cancelling them on every update.
+Ordinary failed builds publish their completed modules. If Lake is killed before
+flushing its output map, recovery retains only archives already saved completely;
+newly completed modules can be lost in that exceptional case.
 
 `Publish CI cache` runs separately on a GitHub-hosted runner, validates the build
 identity and opaque output hashes, and uploads only new artifacts. Its R2 token

@@ -390,7 +390,9 @@ def sandbox(toolchain, project, packages, cache, result, control, jobs, dependen
             command += ["--ro-bind", "/dev/null", "/work/project/.lake/packages/" + package.name + "/.git"]
     environment = {"HOME": "/home/build", "PATH": "/opt/lean/bin:/run/current-system/sw/bin:/usr/bin:/bin",
                    "LEAN_SYSROOT": "/opt/lean", "LAKE_HOME": "/opt/lean", "LAKE_CACHE_DIR": "/work/cache",
-                   "LAKE_ARTIFACT_CACHE": "true", "LAKE_RESTORE_ARTIFACTS": "true",
+                   # Unset LAKE_ARTIFACT_CACHE: stock defaults allow cache reads
+                   # without copying every raw OLean/ILean/C into the cache.
+                   "LAKE_RESTORE_ARTIFACTS": "true",
                    "LEAN_NUM_THREADS": str(jobs), "RUST_MIN_STACK": "8388608"}
     for name, value in environment.items():
         command += ["--setenv", name, value]
@@ -436,22 +438,37 @@ def module_traces(project, incomplete=False):
         yield name, module, dep_hash
 
 
-def recover_completed_map(project, cache, toolchain, work, destination, known_hashes=None):
+def recover_completed_map(project, cache, toolchain, work, destination, known_hashes=None, existing=None, known_mappings=None):
     """Recover only already-saved LTARs after Lake dies before flushing -o."""
     known_by_digest = {digest: name for name, digest in (known_hashes or {}).items()}
     candidates, unknown = [], []
     for name, module, dep_hash in module_traces(project, incomplete=True):
+        if dep_hash in (existing or {}):
+            continue
+        try:
+            for directory, extension in (("lib/lean", ".olean"), ("lib/lean", ".ilean"), ("ir", ".c")):
+                safe_file(project / ".lake/build" / directory, str(module.parent / (module.name + extension)))
+        except FileNotFoundError:
+            # buildLean removes old outputs before elaboration; its saved trace
+            # may remain after a failure and must not revive stale warm outputs.
+            continue
         try:
             archive = safe_file(project / ".lake/build/ir", str(module.parent / (module.name + ".ltar")))
         except FileNotFoundError:
-            continue
+            filename = (known_mappings or {}).get(dep_hash)
+            if filename is None:
+                continue
+            try:
+                archive = safe_file(cache, "artifacts/" + filename)
+            except FileNotFoundError:
+                continue
         digest = sha256(archive)
         known = known_by_digest.get(digest)
         candidates.append((dep_hash, archive, digest, known))
         if known is None:
             unknown.append(archive)
     hashes = native_hashes(toolchain, unknown, work, basenames=False) if unknown else {}
-    mapping = {}
+    mapping = dict(existing or {})
     for dep_hash, archive, digest, known in candidates:
         filename = known or (hashes[str(archive)] + ".ltar")
         try:
@@ -465,7 +482,25 @@ def recover_completed_map(project, cache, toolchain, work, destination, known_ha
         mapping[dep_hash] = filename
     destination.write_text(json.dumps(SCHEMA) + "\n" +
                            "".join(json.dumps(row) + "\n" for row in sorted(mapping.items())))
-    print(f"Recovered {len(mapping)} completed module mappings after interrupted build", flush=True)
+    print(f"Retained {len(mapping)} verified completed module mappings", flush=True)
+
+
+def collect_mapped_ltars(project, cache, mapping):
+    """Stock -o confirms completed packs; readonly cache leaves new LTARs local."""
+    missing = {filename for filename in mapping.values()
+               if not (cache / "artifacts" / filename).exists()}
+    if not missing:
+        return
+    found = set()
+    for _, module, dep_hash in module_traces(project):
+        filename = mapping.get(dep_hash)
+        if filename not in missing:
+            continue
+        archive = safe_file(project / ".lake/build/ir", str(module.parent / (module.name + ".ltar")))
+        shutil.copyfile(archive, cache / "artifacts" / filename)
+        found.add(filename)
+    if found != missing:
+        raise ValueError("completed output map references a missing module LTAR")
 
 
 def main():
@@ -533,6 +568,9 @@ def main():
         base_hashes, warm_jobs, base_map_sha = baseline(args, project, cache)
         base_mapping = load_map(args.baseline_map) if args.baseline_map else {}
         extra_maps = prepare_cache_maps(args, base_mapping, cache, control, toolchain, work, base_hashes)
+        known_mappings = dict(base_mapping)
+        for path in args.cache_map:
+            known_mappings.update(load_map(path))
         (project / ".lake/packages").mkdir(parents=True, exist_ok=True)
         command = sandbox(toolchain, project, packages, cache, result, control, args.jobs, dependency_builds)
         if warm_jobs:
@@ -547,9 +585,16 @@ def main():
                 build_environment, log, (work, output), args.reserve_disk_gib)
         mapping_file = result / "outputs.jsonl"
         if build_exit_code and not mapping_file.exists() and not mapping_file.is_symlink():
-            recover_completed_map(project, cache, toolchain, work, mapping_file, base_hashes)
+            recover_completed_map(project, cache, toolchain, work, mapping_file, base_hashes, known_mappings=known_mappings)
         mapping_file = safe_file(result, "outputs.jsonl")
         mapping = load_map(mapping_file)
+        # Lean 4.33.1 omits the portable flag when reusing arts.ltar?, so -o
+        # filters those entries from a platformIndependent map. Supplement only
+        # current traces whose LTAR has an identical completed cache copy.
+        if tomllib.loads((project / "lakefile.toml").read_text()).get("platformIndependent") is True:
+            recover_completed_map(project, cache, toolchain, work, mapping_file, base_hashes, mapping, known_mappings)
+            mapping = load_map(mapping_file)
+        collect_mapped_ltars(project, cache, mapping)
         artifacts = []
         paths = [safe_file(cache, "artifacts/" + name) for name in sorted(set(mapping.values()))]
         new_paths = [path for path in paths if path.name not in base_hashes]

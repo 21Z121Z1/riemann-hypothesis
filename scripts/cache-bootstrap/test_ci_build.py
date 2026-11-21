@@ -113,6 +113,8 @@ def recovery_tests(ci):
         for name, dep_hash in (("Complete", "1" * 16), ("Partial", "2" * 16)):
             (project / "src" / (name + ".lean")).write_text("-- authored recovery fixture\n")
             (library / (name + ".trace")).write_text(json.dumps({"depHash": dep_hash}))
+            for directory, extension in ((library, ".olean"), (library, ".ilean"), (ir, ".c")):
+                (directory / (name + extension)).write_bytes(b"completed fixture output")
             (ir / (name + ".ltar")).write_bytes((name + " compressed bytes").encode())
         # Hash opaque test bytes with stock Lake; recovery checks completed-cache
         # identity, while archive parsing is covered by the real integration suite.
@@ -130,6 +132,10 @@ def recovery_tests(ci):
             ci.recover_completed_map(project, cache, toolchain, work, destination, known)
             assert hasher.call_args.args[1] == [aliases[1]]
         assert ci.load_map(destination) == {"1" * 16: hashes["Complete.ltar"] + ".ltar"}
+        aliases[0].unlink()
+        ci.recover_completed_map(project, cache, toolchain, work, destination, known,
+                                 known_mappings={"1" * 16: known_name})
+        assert ci.load_map(destination) == {"1" * 16: known_name}, "cached LTAR hits need not leave a local archive alias"
     print("PASS missing-map recovery: completed cached LTAR retained; partial cache/trace discarded")
 
 
@@ -167,6 +173,7 @@ def main():
         run(["git", "clone", "-q", str(origin), str(packages / "external")], temporary)
         run(["git", "config", "http.extraHeader", "Authorization: fixture-private-git-header"], packages / "external")
         config = '''name = "ciFixture"
+platformIndependent = true
 srcDir = "src"
 defaultTargets = ["Main"]
 [[require]]
@@ -240,6 +247,7 @@ roots = ["Base", "Stable", "Main"]
             return output, receipt
 
         changed, receipt = build("changed")
+        assert "artifact cache is not enabled" in (changed / "build.log").read_text(), "CI must use stock readable, non-writing cache mode"
         mapping = ci.load_map(changed / "outputs.jsonl")
         stable_hash, stable_archive = module_hashes["Stable"]
         assert mapping[stable_hash] == stable_archive
@@ -254,6 +262,7 @@ roots = ["Base", "Stable", "Main"]
         reused, _ = build("reused", ["--cache-map", str(changed / "outputs.jsonl")])
         assert ci.load_map(reused / "outputs.jsonl") == mapping
         assert "Built Base" not in (reused / "build.log").read_text()
+        assert "Unpacked Base" in (reused / "build.log").read_text(), "read-only cache mode must still reuse prior PR artifacts"
         # Changed options must not retain old input hashes, even with warm archives available.
         (root / "lakefile.toml").write_text(config + "\n[leanOptions]\npp.unicode.fun = true\n")
         commit()
