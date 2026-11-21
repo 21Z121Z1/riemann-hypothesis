@@ -265,6 +265,18 @@ def catch_up_main(store, source):
     print(json.dumps({"caught_up_main_alias": result}, sort_keys=True))
 
 
+def empty_failed_build(cache, expected):
+    """An early failed build can have a valid header but no completed modules."""
+    if cache.is_symlink() or not cache.is_dir():
+        raise ValueError("Downloaded CI cache must be an ordinary directory")
+    lines = pub.regular_bytes(cache / "outputs.jsonl").splitlines()
+    if len(lines) != 1 or pub.decode_json(lines[0]) != pub.transport.SCHEMA:
+        return False
+    if type(expected.get("build_exit_code")) is not int or expected["build_exit_code"] == 0:
+        raise ValueError("A successful build cannot publish an empty output map")
+    return True
+
+
 def publish(args):
     directory = Path(args.validated)
     request, state = read_json(directory / "request.json"), read_json(directory / "state.json")
@@ -272,9 +284,12 @@ def publish(args):
     run = prep.api(f"actions/runs/{state['run_id']}")
     if run.get("run_attempt") != state["run_attempt"] or run.get("status") != "completed":
         raise ValueError("Workflow was rerun before publication")
+    cache = Path(args.cache_dir).absolute()
+    if state["mode"] == "build" and state.get("build_validated") is True and empty_failed_build(cache, expected):
+        outputs(published=False, reason="Failed build completed no modules; no cache writes needed")
+        return
     with token_file() as credential:
         if state["mode"] == "build" and state.get("build_validated") is True:
-            cache = Path(args.cache_dir).absolute()
             if cache.is_symlink() or not cache.is_dir():
                 raise ValueError("Downloaded CI cache must be an ordinary directory")
             # Artifact ZIPs omit empty directories when the logical delta is zero.
