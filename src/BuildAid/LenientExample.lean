@@ -1,4 +1,5 @@
 import Lean.Elab.Declaration
+import BuildAid.Leniency
 
 /-!
 `example` that warns instead of failing.
@@ -11,7 +12,9 @@ This elaborator takes precedence over the builtin one for `example` declarations
 declarations go to the builtin elaborator unchanged). It runs the builtin `elabDeclaration`
 synchronously and without incrementality, so that every message ends up in the command's message
 log rather than in an asynchronous snapshot task. If that produces errors, they are reported as
-warnings, together with a warning that a necessary import may have been removed.
+warnings, together with a warning that a necessary import may have been removed. The warnings
+are governed by `linter.leniency.example` (see `BuildAid.Leniency`); when it is off, the errors are
+dropped.
 -/
 
 namespace BuildAid.LenientExample
@@ -32,9 +35,11 @@ def elabExample : CommandElab := fun stx => do
     logException ex
   let new := (← get).messages
   if new.hasErrors then
-    modify fun s => { s with messages := saved ++ new.errorsToWarnings }
-    logWarningAt stx[1][0] m!"this `example` failed to elaborate (its errors are shown as \
-      warnings); a necessary import may have been removed"
+    let opt := linter.leniency.example
+    let kept := BuildAid.Leniency.keep opt (← getOptions) new
+    modify fun s => { s with messages := saved ++ kept }
+    BuildAid.Leniency.warn opt stx[1][0]
+      m!"this `example` failed to elaborate (its errors are shown as warnings)"
   else
     modify fun s => { s with messages := saved ++ new }
 
