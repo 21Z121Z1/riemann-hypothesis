@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstAndFinite
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

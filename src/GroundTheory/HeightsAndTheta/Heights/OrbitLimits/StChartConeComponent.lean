@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StChartSection
 set_option maxSynthPendingDepth 1

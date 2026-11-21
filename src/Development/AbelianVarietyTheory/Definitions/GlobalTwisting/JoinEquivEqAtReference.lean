@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.TupleReadBaseTupleEqFamily
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.StableIffCarrierEq

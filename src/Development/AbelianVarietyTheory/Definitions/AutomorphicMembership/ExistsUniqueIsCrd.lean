@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MovedReadingSameMapsBaseReadingAgrees
 import Formalism.LocalToGlobal.Columns.InvariantSubspaceCoordsX

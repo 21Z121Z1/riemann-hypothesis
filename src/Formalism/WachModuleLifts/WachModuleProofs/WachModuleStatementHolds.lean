@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.WachModuleLifts.StatementW
 import Mathlib.RingTheory.SimpleRing.Principal

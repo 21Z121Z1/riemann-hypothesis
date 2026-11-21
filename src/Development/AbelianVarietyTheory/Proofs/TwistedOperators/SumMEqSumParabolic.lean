@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EpsilonSumLeviZeroStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EpsilonAlternatingSumZeroStatement

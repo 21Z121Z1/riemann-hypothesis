@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.FiberLocalization.EqZeroOfFiberEquivariant
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.LieArcSt
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.UnivFrame

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 
 noncomputable section

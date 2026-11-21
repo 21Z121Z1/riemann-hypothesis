@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GlobalTheory.SmallShareWeightExists
 import Formalism.SharpRestriction.GlobalSchurBounds.WeightVectorSmallSharesEight

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotDvdCardStabFrm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainWideTwistTransport

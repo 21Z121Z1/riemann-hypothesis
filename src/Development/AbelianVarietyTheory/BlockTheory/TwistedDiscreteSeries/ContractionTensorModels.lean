@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 import Mathlib.Analysis.Calculus.Deriv.Star

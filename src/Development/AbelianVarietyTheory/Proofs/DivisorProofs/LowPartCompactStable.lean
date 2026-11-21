@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KStab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEqISupFockDeg

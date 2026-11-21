@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.DiagMemCongruencePairs
 import Mathlib.RingTheory.SimpleRing.Principal

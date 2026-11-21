@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvalProd
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin

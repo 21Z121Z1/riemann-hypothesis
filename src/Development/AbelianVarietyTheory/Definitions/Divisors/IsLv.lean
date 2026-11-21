@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OneMemEntries
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValHalfInf

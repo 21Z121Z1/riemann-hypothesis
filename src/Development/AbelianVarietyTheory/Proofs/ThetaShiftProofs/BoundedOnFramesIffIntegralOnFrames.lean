@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.FinCorePf
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.BasisChangePf

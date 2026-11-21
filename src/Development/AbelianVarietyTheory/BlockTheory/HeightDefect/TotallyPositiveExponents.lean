@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.SharpRestriction.Divisibility.ModuliIntegralCharts
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.ThetaWeightHeightConstants

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.TranslateCocycles.StatementNet
 import Formalism.TranslateCocycles.TranslateCocycleProofs.TranslateScale

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic

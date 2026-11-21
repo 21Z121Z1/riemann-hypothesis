@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Batteries.Data.Nat.Gcd
 import Mathlib.Algebra.Order.Floor.Extended

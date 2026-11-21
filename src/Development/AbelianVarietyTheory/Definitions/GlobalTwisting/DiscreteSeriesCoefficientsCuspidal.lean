@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.VolGe
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TamagawaSpecialUnitary
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.OfPositiveTrivial

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.CuspFamily

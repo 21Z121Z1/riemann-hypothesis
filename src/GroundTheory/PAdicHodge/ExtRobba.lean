@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import GroundTheory.PAdicHodge.ExtRobbaLift
 import GroundTheory.PAdicHodge.ExtRobbaUnion
 set_option maxSynthPendingDepth 1

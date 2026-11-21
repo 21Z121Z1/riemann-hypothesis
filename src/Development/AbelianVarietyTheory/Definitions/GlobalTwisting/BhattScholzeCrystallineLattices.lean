@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DepthZeroSupport
 
 namespace GlobalTheory.Fc.S0

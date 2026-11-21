@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.CrystallinePeriods.AdicMaps
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc

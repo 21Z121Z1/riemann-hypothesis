@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightPtsIntegralPoints
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightObjects

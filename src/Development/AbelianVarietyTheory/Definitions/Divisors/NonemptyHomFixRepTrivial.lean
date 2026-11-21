@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
 import Mathlib.RingTheory.WittVector.IsPoly

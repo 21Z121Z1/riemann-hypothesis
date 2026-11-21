@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassLinesProj
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PGrassArithVar

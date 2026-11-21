@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTKLineCut
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IrreducibleCapelliModules

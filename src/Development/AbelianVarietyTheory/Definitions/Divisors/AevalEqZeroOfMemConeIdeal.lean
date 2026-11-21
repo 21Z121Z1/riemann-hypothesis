@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.DegreeFormula.FlagDegFormula
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHeightIffOfDegreeEq

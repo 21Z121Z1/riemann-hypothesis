@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.RedTheta
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IsParI

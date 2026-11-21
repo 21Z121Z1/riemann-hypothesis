@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DemaillyRegularisation
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.MatrixLemma

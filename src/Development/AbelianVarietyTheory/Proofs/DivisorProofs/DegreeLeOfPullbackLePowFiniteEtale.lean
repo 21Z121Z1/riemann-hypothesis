@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FiniteMonotoneGrowth
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FinrankSecPullSandwich

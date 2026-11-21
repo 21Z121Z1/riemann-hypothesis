@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.NormsFree
 import Formalism.LocalToGlobal.ProjectiveLattices.IntegrableOnIntegrand

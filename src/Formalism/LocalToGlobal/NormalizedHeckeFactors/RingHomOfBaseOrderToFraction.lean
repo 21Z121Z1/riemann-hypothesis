@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedLevel
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.ExpDefs

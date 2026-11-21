@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 
 noncomputable section

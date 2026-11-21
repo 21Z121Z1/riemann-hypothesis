@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAHEqOfMemRatPts
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsGLSubmatrix

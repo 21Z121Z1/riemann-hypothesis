@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.NotBadPrimeBase
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TopLevExists

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.DegreeFormula.Statement
 import Mathlib.Analysis.Matrix.Order

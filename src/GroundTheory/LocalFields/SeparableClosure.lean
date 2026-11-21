@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.LocalFields.FiniteExtension
 import GroundTheory.LocalFields.IntermediateField

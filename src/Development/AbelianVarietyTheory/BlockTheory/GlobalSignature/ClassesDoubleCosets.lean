@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalRingCardinality.DataLevelD
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel

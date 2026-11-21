@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 import Formalism.LocalToGlobal.Columns.GoodXgE

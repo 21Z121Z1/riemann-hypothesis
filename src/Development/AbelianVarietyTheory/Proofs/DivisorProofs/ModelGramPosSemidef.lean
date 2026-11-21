@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ModelDdcForms
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgePeriodGram

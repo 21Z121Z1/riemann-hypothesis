@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PsiGeOn
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PerIntOnAmb

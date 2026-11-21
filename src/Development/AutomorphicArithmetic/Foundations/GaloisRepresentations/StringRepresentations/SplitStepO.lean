@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TwistedMuPartInBaseChange
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.StringRepresentations.PartFrobEigNormO

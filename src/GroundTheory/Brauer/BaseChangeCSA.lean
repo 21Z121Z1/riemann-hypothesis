@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.Brauer.TensorSimple
 import Mathlib.Order.CompletePartialOrder

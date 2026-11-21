@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormAevalSubLe
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.Padics.PadicNumbers

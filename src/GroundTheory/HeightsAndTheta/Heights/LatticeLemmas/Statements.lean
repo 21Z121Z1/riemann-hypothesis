@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsExamples
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsBundles

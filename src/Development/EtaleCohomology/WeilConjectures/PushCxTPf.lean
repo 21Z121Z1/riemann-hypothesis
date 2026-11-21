@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.EtaleCohomology.WeilConjectures.PushPf
 import Development.EtaleCohomology.KummerTheory.InjSlice

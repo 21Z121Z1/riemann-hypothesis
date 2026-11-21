@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualLatticeIndex

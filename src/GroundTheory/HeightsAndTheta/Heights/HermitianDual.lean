@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HermitianTensor
 import Mathlib.LinearAlgebra.Dual.BaseChange

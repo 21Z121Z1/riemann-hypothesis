@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 import Formalism.PairingDivisors.StatementH

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.CardStabDvdAutU
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormMapOfFinOrder

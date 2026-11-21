@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsFieldSubalgebraSelf
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.FockAnisoOfRanges
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinHalfPlane.IntegralUnitCoefficients.CoefND
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SiegelWeilDoubledSpaceOfStandardUnitary

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.AssocSetApplyOfPointwise
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsRankOneIdem

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.SlopesHypothesisFinitePlaces
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram

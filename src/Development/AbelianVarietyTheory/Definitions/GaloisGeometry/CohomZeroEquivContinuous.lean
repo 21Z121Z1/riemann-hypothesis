@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsMatrixForm
 import Mathlib.AlgebraicGeometry.Sites.ConstantSheaf

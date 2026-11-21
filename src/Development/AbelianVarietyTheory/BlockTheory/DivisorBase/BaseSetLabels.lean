@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 import Formalism.LocalRingCardinality.DataRRMetric

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.IntegralExtensionOfRegR1
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.SWEqSOf

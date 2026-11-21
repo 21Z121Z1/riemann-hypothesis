@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.PolarizedGaloisRepNarrow7
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec

@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.GL3MeanSquares.SignsFromTrianglesSquares
 import Mathlib.Tactic.Polynomial.Basic

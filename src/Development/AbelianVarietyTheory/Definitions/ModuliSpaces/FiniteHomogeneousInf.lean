@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.GoodClass
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale

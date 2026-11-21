@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.ProjectiveLattices.L2DefiniteCuspForms
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier

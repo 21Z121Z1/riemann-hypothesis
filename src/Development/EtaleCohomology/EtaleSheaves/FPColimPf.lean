@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Mathlib.Algebra.Category.Ring.FilteredColimits
 import Mathlib.Algebra.Order.Floor.Extended

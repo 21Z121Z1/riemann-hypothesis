@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.SizeWindowBrackets.RealSlopeBoundsSplit
 import Mathlib.Data.Rat.Cast.Order

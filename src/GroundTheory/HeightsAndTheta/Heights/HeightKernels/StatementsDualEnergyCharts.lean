@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergy
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ScaledExample

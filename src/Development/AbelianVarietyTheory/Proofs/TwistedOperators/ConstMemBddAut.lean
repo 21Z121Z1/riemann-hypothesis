@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TwistedLevelValues
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotIsSplitOfIsInertAt

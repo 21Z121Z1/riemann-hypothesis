@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Statements
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ChowFormHomog

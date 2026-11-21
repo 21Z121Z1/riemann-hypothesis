@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Mathlib.Algebra.Category.CommAlgCat.Basic
 import Mathlib.Algebra.Order.Floor.Extended

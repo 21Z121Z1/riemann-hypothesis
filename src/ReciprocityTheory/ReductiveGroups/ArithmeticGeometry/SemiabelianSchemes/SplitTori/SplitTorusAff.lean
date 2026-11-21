@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Mathlib.AlgebraicGeometry.Group.Affine
 import Mathlib.RingTheory.HopfAlgebra.MonoidAlgebra

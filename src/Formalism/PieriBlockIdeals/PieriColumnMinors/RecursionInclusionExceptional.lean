@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.PieriBlockIdeals.StatementE
 import Formalism.PieriBlockIdeals.PieriColumnMinors.WeightBounds

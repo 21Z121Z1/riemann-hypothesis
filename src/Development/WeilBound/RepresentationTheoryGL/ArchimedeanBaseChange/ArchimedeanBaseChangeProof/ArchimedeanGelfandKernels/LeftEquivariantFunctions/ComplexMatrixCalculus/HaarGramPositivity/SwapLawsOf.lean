@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.ComplexMatrixCalculus.HaarGramPositivity.ContDiffConjTranspose
 
 namespace PositivityTheory.RgBcC

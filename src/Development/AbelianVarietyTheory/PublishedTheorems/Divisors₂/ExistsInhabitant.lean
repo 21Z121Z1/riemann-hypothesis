@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotIsConstTerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsValEq

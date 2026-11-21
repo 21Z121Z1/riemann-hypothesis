@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsCoordAtPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerConstantCoeffEqSpan

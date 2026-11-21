@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.BaseChangeObj
 import Mathlib.RingTheory.DedekindDomain.Instances
 set_option maxSynthPendingDepth 1

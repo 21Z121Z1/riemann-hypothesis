@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralStrictHenselianAcyclicFinitaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CechLevelRepresentableStatement

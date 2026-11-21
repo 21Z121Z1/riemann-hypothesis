@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Formalism.PairingDivisors.StatementN
 import Mathlib.Algebra.AffineMonoid.Basic

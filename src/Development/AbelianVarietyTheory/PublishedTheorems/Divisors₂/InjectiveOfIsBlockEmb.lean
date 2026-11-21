@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.LeviBlockCentreFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlockEmb

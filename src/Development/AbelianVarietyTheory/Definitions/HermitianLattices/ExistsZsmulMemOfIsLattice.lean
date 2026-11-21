@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Proofs.HermitianTraceForms.Imports
 import Mathlib.LinearAlgebra.BilinearForm.TensorProduct

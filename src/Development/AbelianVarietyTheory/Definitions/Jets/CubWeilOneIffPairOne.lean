@@ -1,3 +1,4 @@
+import BuildAid.LenientExample
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.Statements.LocalTrivialization.MulSelfEqOneOfWeilIsInv
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SemiAbelianAxisTangent
