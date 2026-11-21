@@ -31,14 +31,20 @@ jobs:
           cmp "$T/lean/lean-toolchain" lean-toolchain
           cmp "$T/lean/lake-manifest.json" lake-manifest.json
 
-          # lakefile.toml is the original, byte for byte, followed by the marked block
+          # Only the explicit cache prefix and marked Comparator suffix are additions.
+          printf '# Cache infrastructure; the original submission starts below this block.\nplatformIndependent = true\n\n' > "$T/cache-prefix"
+          head -n 3 lakefile.toml | cmp - "$T/cache-prefix"
+          tail -n +4 lakefile.toml > "$T/lakefile-without-cache.toml"
           n=$(wc -c < "$T/lean/lakefile.toml")
-          head -c "$n" lakefile.toml | cmp - "$T/lean/lakefile.toml"
-          tail -c +"$((n + 1))" lakefile.toml
+          head -c "$n" "$T/lakefile-without-cache.toml" | cmp - "$T/lean/lakefile.toml"
+          tail -c +"$((n + 1))" "$T/lakefile-without-cache.toml"
 
   challenge:
     name: Challenge compiles against Mathlib alone
     runs-on: ubuntu-latest
+    env:
+      LEAN_ABORT_ON_PANIC: "1"   # as Comparator sets it for builds and exports
+      MATHLIB_CACHE_GET_URL: https://cache.mathlib.org/mathlib4   # Mathlib's current cache server
     steps:
       - uses: actions/checkout@v4
       - name: Install elan
@@ -47,7 +53,7 @@ jobs:
           sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Fetch Mathlib's official build cache
-        run: lake exe cache get
+        run: lake exe mathlib/cache get
       - name: Build only the Challenge module
         run: lake build Challenge
 

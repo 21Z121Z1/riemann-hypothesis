@@ -1,13 +1,13 @@
 # riemann-hypothesis
 
-[![checks](https://github.com/Deicyde/riemann-hypothesis/actions/workflows/checks.yml/badge.svg)](https://github.com/Deicyde/riemann-hypothesis/actions/workflows/checks.yml)
+[![checks](https://github.com/leanprover-community/riemann-hypothesis/actions/workflows/checks.yml/badge.svg)](https://github.com/leanprover-community/riemann-hypothesis/actions/workflows/checks.yml)
 
-A [Comparator](https://github.com/leanprover/comparator) setup for the Lean formalization that
+A [Comparator](https://github.com/leanprover/comparator) setup and community build cache for the Lean formalization that
 claims a proof of the Riemann Hypothesis, and of GRH for Dirichlet L-functions, announced on
 2026-11-20 at <https://alpo.ge/remark.pdf>.
 
-This repository is the submission, unmodified, plus what Comparator needs and the submission
-does not include:
+The submitted Lean source is unmodified. This repository adds Comparator files and cache
+infrastructure:
 
 | File | What it is |
 |---|---|
@@ -15,6 +15,26 @@ does not include:
 | [`comparator.json`](comparator.json) | the Comparator config |
 | [`export-targets.txt`](export-targets.txt) | the declarations to export |
 | [`verification/`](verification/NOTES.md) | our notes, and the results once there are some |
+| [`scripts/`](scripts/) | public Lake cache configuration and reproducible bootstrap/publishing tools |
+
+## Using the build cache
+
+Fetch and restore Mathlib and this project's compiled modules:
+
+```bash
+lake exe cache get
+lake --no-build --rehash build Main
+```
+
+The cache settings are in `lakefile.toml`; no user configuration is needed. The first command
+fetches both caches anonymously and extracts the oleans to `.lake/build`. The second confirms
+that Lake considers all Main dependencies up to date, without compiling them. The project cache
+is 4.94 GB and contains portable Lean outputs and generated C. Subsequent ordinary builds
+compile changed modules and their dependents.
+
+The [cache notes](verification/CACHE.md) describe the pinned published archive, the cheaper
+bootstrap that reuses its proofs, and how to produce and publish future caches. For independent
+verification, follow the clean-build instructions below.
 
 ## What is claimed
 
@@ -26,19 +46,21 @@ does not include:
 | `LFunction_eq_zero_re` | every zero of L(χ, s) with 0 < Re s < 1 has Re s = 1/2 |
 | `LFunction_eq_zero_re_of_isPrimitive` | the same, for primitive characters |
 
-"GRH" here means Dirichlet L-functions only.
-
 ## Checking it
 
 ```bash
+export LEAN_ABORT_ON_PANIC=1   # as Comparator sets it: stop on an internal error, don't continue
+export LAKE_ARTIFACT_CACHE=false   # rebuild the submission even if cache-env.sh was sourced earlier
+export MATHLIB_CACHE_GET_URL=https://cache.mathlib.org/mathlib4   # Mathlib's current cache server
+
 # 1. Export the challenge. Clean clone at $CLEAN, Lean v4.33.1.
 cd "$CLEAN"
-lake exe cache get
+lake exe mathlib/cache get
 lake build Challenge
 lake env lean4export Challenge -- $(cat export-targets.txt) > challenge.export
 
 # 2. Build the solution. Second clone, inside a sandbox with no network. Takes hours.
-lake exe cache get      # before entering the sandbox
+lake exe mathlib/cache get      # before entering the sandbox
 lake build Main         # inside the sandbox
 
 # 3. Export the solution. Still inside the sandbox; only solution.export comes out.
@@ -59,16 +81,6 @@ What to know before running it:
   where none of that code has been compiled. CI does step 1 on every push and publishes the
   result as the `challenge-export` artifact. Its sha256 is
   `bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9`.
-- **Sandbox.** Steps 2 and 3 both run in the sandbox. It has no network, sees the clean clone
-  read-only, and cannot write to the exporter or to the Lean `v4.36.0` toolchain.
-- **The second clone is hostile after step 2.** The build could have rewritten anything in
-  it: the lakefile, the config, the Git settings, the compiled files. So nothing in it is run
-  or opened outside the sandbox, including `lake` and `git`. The config, the export targets and
-  the challenge export all come from the clean clone.
-- **Checkers.** The judge does not trust the build. It re-checks the whole proof with Lean's
-  kernel and the four checkers named in `comparator.json`, compares the statements with the
-  challenge, and allows only the three standard axioms. `--paranoid` would add lean4lean, which
-  cannot read exports made by Lean 4.33.1, so lean4lean is run separately.
 - **Cost.** Hours on a large machine, about 100 GB of disk, and a lot of memory for step 4.
 
 The [notes](verification/NOTES.md) have the details: where the source came from, the Lean
