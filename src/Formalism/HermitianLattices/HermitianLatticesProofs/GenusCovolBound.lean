@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.GenusCovolBound
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusScale

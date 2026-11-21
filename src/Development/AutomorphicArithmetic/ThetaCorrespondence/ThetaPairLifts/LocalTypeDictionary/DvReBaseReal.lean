@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ReBaseReal
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ILiescalar

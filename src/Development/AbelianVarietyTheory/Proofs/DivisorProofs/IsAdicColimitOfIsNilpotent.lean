@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TorusExtensionOverCompleteLocalDvr
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsWeilChar

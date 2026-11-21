@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.ResultantValuation.KoszulSecondDifferential
 import Mathlib.RingTheory.PicardGroup

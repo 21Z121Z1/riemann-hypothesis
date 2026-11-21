@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndIrr
 import CompanionTheory.AutomorphicTheory.MirabolicRestriction.MirabolicInduction.IndDim

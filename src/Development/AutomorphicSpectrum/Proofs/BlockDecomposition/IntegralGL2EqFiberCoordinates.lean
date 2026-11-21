@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Row1
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableFixedFunction

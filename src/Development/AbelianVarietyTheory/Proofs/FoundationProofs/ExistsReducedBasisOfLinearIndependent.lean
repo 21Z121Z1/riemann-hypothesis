@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReducedBases.ExistsRedOf
 import ReciprocityTheory.ReducedBases.PrefixProdGeOne

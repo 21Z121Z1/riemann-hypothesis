@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Closed
 import GroundTheory.ProfiniteCohomology.NotDvdSuperIndexIffMap

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.GaloisIrreducibility.Statement
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.SiegelWeil₂.SiegelEisensteinContinuationOfDoublingMethod
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ConstOneMemCuspFormsOfAnisotropic

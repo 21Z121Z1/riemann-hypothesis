@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.ArchSlice
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.DictHaar

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.PluckerCoord
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueSat

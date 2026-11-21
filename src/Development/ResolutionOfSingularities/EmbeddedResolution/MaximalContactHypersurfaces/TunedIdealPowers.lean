@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.ResolutionOfSingularities.EmbeddedResolution.MaximalContactHypersurfaces.TunedIdeal
 import Mathlib.Tactic.Monotonicity.Lemmas
 

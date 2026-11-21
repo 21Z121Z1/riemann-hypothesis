@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.PAdicHodge.FundamentalSeqFixed
 import GroundTheory.PAdicHodge.GalSmulAlgebraMapPadicPlus
 set_option maxSynthPendingDepth 1

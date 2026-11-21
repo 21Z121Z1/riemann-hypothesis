@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousOfDense
 
 noncomputable section

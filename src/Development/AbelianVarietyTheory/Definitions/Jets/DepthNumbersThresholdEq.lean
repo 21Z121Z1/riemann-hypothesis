@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 import Formalism.DropLevelBounds.ThBounds

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLogDivPredLeReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FRSubEqTopSub

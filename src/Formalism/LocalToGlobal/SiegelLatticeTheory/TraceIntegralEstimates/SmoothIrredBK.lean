@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BesselNeZeroOfCyclicOrbit
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.DifferentialAction.DifferentialActionLemma.DsigWSmul

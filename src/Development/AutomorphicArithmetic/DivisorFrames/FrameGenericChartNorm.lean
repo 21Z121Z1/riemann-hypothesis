@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ExistsIsMapToFn
 open CategoryTheory AlgebraicGeometry NumberField IsDedekindDomain Matrix

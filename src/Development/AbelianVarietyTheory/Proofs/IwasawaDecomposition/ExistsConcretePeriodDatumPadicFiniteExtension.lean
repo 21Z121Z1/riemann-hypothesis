@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsRealPD
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ResEqIff

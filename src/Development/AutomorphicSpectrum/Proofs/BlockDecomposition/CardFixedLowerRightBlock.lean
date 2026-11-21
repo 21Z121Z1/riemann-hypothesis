@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LowerLeftBlock
 import Mathlib.Data.Matrix.ColumnRowPartitioned

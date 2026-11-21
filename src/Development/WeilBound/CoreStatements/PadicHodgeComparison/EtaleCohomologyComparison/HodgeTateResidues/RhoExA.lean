@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiftPOfBounds
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RedTrans

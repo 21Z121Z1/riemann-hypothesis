@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BaseIndexConstantInjective
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.QminorIntertwiningApply

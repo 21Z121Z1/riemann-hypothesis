@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypInvLe
 import Formalism.LocalToGlobal.GlobalTheory.GL6.ValuationClassTranslateMem

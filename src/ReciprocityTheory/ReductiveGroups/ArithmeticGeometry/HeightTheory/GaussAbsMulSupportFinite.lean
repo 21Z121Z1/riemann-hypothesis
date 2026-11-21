@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SemiDegCA
 import Mathlib.RingTheory.Etale.Weakly

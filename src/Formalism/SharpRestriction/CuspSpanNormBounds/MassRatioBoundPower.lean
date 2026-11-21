@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.MassRatioBound
 import Mathlib.Analysis.Real.Pi.Bounds

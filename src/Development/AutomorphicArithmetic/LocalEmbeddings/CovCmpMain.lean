@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.PullbackDegreeOfLineBundles
 import Development.AutomorphicArithmetic.DivisorFrames.PullbackDegreeGenericResidue

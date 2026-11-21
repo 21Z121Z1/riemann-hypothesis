@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.SumLogDivSqModPmOneLe
 import Development.AutomorphicArithmetic.CyclotomicBounds.CyclotomicOrders.NuHost

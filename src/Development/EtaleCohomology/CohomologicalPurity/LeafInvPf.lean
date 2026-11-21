@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.EtaleCohomology.CohomologicalPurity.LeafHensCutDef
 import Mathlib.Algebra.Order.Floor.Extended
 import Mathlib.Algebra.Order.Interval.Basic

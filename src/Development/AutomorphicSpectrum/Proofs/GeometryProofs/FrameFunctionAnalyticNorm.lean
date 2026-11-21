@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.NotIsLineFnZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.EigenFramesAnalyticStatement

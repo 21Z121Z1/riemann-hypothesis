@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DedekindLFunctions.RunBaseDimensionLeRankAddGenusTerm
 import Formalism.SizeWindowBrackets.SChain

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.AeBlockSphereEvalNeZero
 import Mathlib.Data.Finsupp.Encodable

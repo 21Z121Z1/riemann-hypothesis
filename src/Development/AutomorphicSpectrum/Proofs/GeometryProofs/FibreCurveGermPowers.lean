@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsSubMemEigW
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionHiddenFirstStatement

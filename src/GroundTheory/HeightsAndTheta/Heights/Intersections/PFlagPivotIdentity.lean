@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFlagPivotIdentity
 set_option maxSynthPendingDepth 1
 

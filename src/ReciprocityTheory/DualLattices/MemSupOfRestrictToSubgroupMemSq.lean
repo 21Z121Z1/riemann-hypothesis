@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.MemMapAugmentationIdealComapPullbackQuotient
 import ReciprocityTheory.DualLattices.ExistsFamilyValuationDetEqOne

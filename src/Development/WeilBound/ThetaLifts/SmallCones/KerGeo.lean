@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PlaneAd
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq

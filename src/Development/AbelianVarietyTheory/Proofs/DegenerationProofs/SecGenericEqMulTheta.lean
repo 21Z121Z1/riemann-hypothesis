@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsBasisOfFormEq
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLocalBasisAlong

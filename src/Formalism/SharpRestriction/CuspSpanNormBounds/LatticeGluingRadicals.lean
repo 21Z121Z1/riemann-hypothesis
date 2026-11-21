@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.SignaturePreservingEntryNorms
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice

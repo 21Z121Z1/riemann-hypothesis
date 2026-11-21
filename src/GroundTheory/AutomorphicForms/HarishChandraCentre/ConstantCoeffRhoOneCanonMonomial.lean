@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HarishChandraCentre.MemOfMemSupportToFinsupp
 import GroundTheory.AutomorphicForms.HarishChandraCentre.RhoOneEqZeroOfRhoZeroEqZero

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsCompatChartChart
 import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas

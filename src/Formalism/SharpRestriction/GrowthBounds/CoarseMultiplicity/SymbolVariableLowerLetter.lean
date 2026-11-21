@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.DegSplit
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.FinalTheorems

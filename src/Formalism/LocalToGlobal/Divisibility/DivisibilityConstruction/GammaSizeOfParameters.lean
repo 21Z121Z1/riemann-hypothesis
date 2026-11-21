@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.DivisibilityConstruction.RBDGam
 import Formalism.LocalToGlobal.HilbertRowConditions.ColumnsFunctionAtSubspaces

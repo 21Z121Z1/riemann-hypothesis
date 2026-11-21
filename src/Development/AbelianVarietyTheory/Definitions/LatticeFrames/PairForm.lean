@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CxTiesOf
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsTransportAdelicCorrection

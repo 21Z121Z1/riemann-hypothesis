@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
 import Mathlib.NumberTheory.NumberField.InfiniteAdeleRing

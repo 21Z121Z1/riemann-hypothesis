@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.NumberFieldModels.NFTieProv
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeGTrChain

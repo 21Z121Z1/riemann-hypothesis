@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LiftThreeOverMapComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HenselSmoothSectionLiftStatement

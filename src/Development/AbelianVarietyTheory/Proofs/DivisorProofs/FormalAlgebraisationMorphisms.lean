@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.FormalAlgebraisation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalAlgebraisationTowerStatement

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.StatementG
 import Formalism.MahlerMeasure.MahlerMeasureProofs.RemoveS

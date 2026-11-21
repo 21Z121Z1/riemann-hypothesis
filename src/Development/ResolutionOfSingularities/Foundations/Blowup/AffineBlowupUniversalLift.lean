@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowup
 import Mathlib.AlgebraicGeometry.Modules.Sheaf

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ZariskiLocal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalLimit

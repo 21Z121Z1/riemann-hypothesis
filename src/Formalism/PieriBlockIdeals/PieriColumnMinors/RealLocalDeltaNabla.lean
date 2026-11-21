@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.LocalFaithfullyFlat
 import Formalism.PieriBlockIdeals.PieriColumnMinors.SL2BinomialLattices

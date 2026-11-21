@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.LamProdMonomial
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.RestCountOf

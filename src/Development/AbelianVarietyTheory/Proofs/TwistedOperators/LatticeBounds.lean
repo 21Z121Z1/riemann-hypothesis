@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ZpowMulMemPow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEmbXMul

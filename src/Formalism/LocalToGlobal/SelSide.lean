@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ClassRec
 import Formalism.LocalToGlobal.UnitaryNorms.CharTransport

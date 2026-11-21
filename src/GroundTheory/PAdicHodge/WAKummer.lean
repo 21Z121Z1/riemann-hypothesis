@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WAKummerBCris
 import GroundTheory.PAdicHodge.ExistsNormLeOfNormLtOneFinite

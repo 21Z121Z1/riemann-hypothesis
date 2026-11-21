@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.TwistFactorAlt
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.LocGalEx

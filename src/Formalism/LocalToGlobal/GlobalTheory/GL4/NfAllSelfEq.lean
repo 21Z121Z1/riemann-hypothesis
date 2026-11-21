@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.FockNormSubstitutionBound
 import Formalism.LocalToGlobal.GlobalTheory.GL4.CoeffMemOfIntSpanAt

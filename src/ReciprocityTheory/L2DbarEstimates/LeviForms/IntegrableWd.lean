@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.LeviForms.DetUpdateColEq
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.DifferentiableAtChart

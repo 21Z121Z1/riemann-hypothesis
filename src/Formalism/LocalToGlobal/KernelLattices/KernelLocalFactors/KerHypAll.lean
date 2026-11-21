@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.KerHypAll
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.TopLawQ

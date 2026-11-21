@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.CrRootMem
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FirstStatementB

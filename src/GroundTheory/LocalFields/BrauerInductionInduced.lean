@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.BrauerInductionCharacters
 import Mathlib.RepresentationTheory.Induced

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsBasOpens
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsOb1NeZero

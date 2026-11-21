@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.RegularityR2Quotient
 import Formalism.LocalToGlobal.ProjectiveLattices.CompOrd

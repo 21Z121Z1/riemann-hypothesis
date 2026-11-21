@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifConjA
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ConjugateUniversalFamilyStatement

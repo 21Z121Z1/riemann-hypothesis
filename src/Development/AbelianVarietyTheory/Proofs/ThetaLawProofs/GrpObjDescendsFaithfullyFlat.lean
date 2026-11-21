@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.AlgebraicGeometry.Morphisms.Flat
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.BcAtDesc
 import Formalism.SharpRestriction.LevelLetterCocycles.IsFracOL

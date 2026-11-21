@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.Statements
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.IsIsoPullbackObjUnitToUnit
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMapFrameRestrictionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartSixth

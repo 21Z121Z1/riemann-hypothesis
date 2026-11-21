@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.StatementsEnd
 import Mathlib.Data.Rat.Star

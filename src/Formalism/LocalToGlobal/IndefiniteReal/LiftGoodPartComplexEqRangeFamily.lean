@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.PrimitiveStatementsWithPassage
 import Formalism.LocalToGlobal.IndefiniteReal.LiftGoodPartComplexEqRange

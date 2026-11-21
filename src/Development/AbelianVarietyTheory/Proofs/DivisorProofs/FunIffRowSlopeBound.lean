@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteForms.IndefUse
 import Formalism.LocalToGlobal.Divisibility.FramesLemmas

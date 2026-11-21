@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.EllipticFibrePrincipalData
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsKroneckerCharIff

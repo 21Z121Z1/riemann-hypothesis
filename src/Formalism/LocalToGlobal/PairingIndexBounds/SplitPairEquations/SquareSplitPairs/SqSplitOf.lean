@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.SquareSplitPairs.ExistsNOne
 import Formalism.LocalToGlobal.GlobalTheory.GL3.LinkThetaStatementFamily

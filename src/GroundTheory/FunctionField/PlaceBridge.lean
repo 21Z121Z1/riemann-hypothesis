@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.FunctionField.PlaceSum
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis

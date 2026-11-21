@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.FlagCarriesEigenframe
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConsMatch

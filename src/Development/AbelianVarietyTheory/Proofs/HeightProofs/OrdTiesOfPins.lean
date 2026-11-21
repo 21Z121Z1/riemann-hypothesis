@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.NumericalH1Condition
 import Formalism.LocalToGlobal.ProjectiveLattices.HeightF1OfData

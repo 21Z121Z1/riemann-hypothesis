@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.HostCls
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsPrimeOfDifferentLe

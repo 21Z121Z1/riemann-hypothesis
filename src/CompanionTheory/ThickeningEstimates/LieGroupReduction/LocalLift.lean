@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.NormExpSubLe
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.MetaDef

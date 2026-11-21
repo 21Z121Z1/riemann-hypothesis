@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGLOfSpanRangeEqLocalRing
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MemSpanIndicatorLowerSetsFinitePoset
 import Mathlib.Analysis.CStarAlgebra.CStarMatrix

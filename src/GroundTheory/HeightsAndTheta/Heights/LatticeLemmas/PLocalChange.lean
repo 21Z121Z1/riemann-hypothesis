@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsIndex
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Statements

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.FormalGroups.Inverse
 import Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass

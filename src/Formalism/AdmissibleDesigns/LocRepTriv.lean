@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.ExistsUnrDec
 import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypes

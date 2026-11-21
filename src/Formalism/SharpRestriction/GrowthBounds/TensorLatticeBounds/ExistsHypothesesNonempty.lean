@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.DataLoc
 import Formalism.SharpRestriction.GrowthBounds.WeilJacquetShalikaLaw

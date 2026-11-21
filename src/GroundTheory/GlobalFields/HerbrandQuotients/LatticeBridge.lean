@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.HerbrandQuotients.Lattice
 import GroundTheory.GlobalFields.HerbrandQuotients.CycTate

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsTopDensityChart
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PExtension

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergySwap
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ChartHessHolo

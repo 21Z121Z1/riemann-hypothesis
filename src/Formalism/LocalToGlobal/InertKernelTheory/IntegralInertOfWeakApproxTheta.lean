@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.LocalToGlobal.InertKernelTheory.FinalB
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.GlobalOrthonormalBasisFour
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntWeak

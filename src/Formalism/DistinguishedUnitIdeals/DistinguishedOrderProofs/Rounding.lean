@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.DistinguishedUnitIdeals.UnivPart
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.ENatToNat

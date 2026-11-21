@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.FDecompL
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.ParIndSingle

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.NumberFieldModels.TransferGaugeGeneratorZbarInv
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.TieRad

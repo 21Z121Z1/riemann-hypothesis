@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Partition
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun

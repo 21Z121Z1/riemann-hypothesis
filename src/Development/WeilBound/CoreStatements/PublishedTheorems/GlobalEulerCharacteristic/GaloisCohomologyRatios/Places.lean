@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.StabilizersFinite
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.AdditiveDefs

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.ToFSSymmStab
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsMain

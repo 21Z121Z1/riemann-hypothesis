@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.JetAnalytic
 open NumberField GlobalTheory.CMVal GlobalTheory.LatJet GlobalTheory.RealMult

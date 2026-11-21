@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.RightOfCompact
 import Development.WeilBound.CoreStatements.ThetaDilations.Nuabs

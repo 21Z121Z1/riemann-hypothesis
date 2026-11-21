@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalBesselAndTopKernel
 import Formalism.SharpRestriction.CuspSpanNormBounds.AuxiliaryNormPrimes

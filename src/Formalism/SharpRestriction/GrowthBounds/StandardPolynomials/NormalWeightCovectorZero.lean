@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.IdentityLiftWeightedHomog
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.PsiRes0Ne

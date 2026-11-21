@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Lemmata.MiscLemmasQ.Imports
 import Mathlib.RingTheory.PiTensorProduct
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.RestrictDiagCompInclFst

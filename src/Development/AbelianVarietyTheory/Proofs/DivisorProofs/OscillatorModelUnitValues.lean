@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelsAtRecordCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LettersEqFockVarsCore

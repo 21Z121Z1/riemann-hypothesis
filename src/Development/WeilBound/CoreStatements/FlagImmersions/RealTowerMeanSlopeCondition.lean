@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.RefLinked
 import Development.WeilBound.CoreStatements.FlagImmersions.RealTowerPlurisubharmonicPotential

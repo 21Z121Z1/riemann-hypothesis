@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.DoubleCosetMeasures.Statement
 import Mathlib.LinearAlgebra.Matrix.Rank

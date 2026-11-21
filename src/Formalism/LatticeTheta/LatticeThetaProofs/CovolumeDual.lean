@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

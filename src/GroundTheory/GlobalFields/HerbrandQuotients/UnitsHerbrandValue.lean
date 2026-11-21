@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.HerbrandQuotients.UnitsHerbrand
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

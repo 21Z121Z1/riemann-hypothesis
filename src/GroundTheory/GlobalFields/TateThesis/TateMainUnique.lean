@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.TateMain
 import Mathlib.Analysis.Normed.Module.Connected

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RealPlaces.DevissageNatural
 import GroundTheory.ProfiniteCohomology.RealPlaces.InducedDefs

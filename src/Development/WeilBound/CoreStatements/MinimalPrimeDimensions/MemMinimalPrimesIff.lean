@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PFundCycleBaseChange
 import Mathlib.Topology.Sheaves.Presheaf

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree
 import Mathlib.RingTheory.WittVector.IsPoly

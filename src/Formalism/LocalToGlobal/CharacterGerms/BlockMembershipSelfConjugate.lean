@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.MemVarsProdAll
 import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt

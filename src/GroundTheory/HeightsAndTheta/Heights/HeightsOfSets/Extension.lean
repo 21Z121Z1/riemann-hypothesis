@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithDegree
 import Mathlib.Tactic.Monotonicity.Lemmas

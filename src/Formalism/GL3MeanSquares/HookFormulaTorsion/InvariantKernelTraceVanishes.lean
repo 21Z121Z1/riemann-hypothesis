@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.AffineFibreCountComparison
 import Mathlib.Algebra.Module.StablyFree.Basic

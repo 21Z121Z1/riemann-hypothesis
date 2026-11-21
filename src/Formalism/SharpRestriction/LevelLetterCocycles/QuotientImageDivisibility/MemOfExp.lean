@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.QpEqUnit
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.MemCrit

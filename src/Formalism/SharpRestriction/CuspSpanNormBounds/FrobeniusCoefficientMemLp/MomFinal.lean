@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.MomMain
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QuotInv

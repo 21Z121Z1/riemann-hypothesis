@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Levels
 import GroundTheory.GlobalFields.IdeleGroups.LocalHerbrandInfinite

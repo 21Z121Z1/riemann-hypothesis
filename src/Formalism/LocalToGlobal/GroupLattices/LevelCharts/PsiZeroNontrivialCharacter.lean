@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.FiniteCompG
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.AtGLev

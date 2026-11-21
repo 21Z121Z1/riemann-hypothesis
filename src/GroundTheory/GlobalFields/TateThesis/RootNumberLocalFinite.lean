@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalPlace
 import GroundTheory.AutomorphicForms.GL2.FiniteAdeleDecomp

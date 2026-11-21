@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.StatementC
 import Mathlib.RingTheory.PiTensorProduct

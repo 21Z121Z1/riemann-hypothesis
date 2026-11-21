@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite
 import GroundTheory.GlobalFields.NormResidueSymbol.FunctorialInfinite

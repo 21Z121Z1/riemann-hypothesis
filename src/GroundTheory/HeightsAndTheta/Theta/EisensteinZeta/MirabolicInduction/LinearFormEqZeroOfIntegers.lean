@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Theta.UnitaryReduction.UnipotentRadicalPlaces
 import Mathlib.Algebra.AffineMonoid.Basic

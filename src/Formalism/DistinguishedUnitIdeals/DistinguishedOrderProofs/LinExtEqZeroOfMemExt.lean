@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.Statement
 import Mathlib.Algebra.Module.StablyFree.Basic

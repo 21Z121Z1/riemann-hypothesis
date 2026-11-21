@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.ConjugateSelfDual.Statement
 import Mathlib.Algebra.AffineMonoid.Basic

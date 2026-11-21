@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.GCauchyStatement
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

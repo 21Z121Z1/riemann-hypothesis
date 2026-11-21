@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LatticeTheta.LatticeSummableDecay
 import Mathlib.RingTheory.WittVector.IsPoly

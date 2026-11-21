@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Topology.Algebra.MvPolynomial
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.IsPhysSet

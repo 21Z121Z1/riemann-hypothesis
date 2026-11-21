@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice
 import Formalism.LocalToGlobal.GroupLattices.LinkGConcreteNoKer

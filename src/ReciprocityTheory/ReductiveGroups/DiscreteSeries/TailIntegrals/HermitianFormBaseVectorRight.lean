@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Std.Tactic.BVDecide.Normalize.Prop

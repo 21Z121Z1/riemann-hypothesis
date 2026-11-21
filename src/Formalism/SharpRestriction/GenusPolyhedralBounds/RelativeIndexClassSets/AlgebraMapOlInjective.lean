@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.GaussIdealIdentity.GaussIdealPrimality.GaussLocalizationLengthHolds
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBCStmt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstNormRealNonneg

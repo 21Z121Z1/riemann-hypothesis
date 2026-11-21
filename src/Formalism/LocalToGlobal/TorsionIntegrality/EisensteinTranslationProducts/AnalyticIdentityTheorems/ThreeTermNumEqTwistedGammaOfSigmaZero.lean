@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.ThetaLine
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Legendre

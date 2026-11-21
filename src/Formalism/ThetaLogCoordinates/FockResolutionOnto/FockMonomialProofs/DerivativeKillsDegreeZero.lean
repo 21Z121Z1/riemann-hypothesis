@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.LatDefs
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.FockMonomialProofs.Vanish

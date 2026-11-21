@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Example
 import Development.AbelianVarietyTheory.Definitions.Foundations.CoPtMu
 import Mathlib.RingTheory.Henselian

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KerAltSucc
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CoordAtConstMulIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBaseChange

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Statement
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SplitD

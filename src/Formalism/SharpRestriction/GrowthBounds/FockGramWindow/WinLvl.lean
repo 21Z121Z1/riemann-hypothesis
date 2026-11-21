@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.LettersAtUPos
 import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.GramWindow2Proved

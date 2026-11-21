@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.InjectiveComplexProductSectionMapQuasiIso
 import Development.AutomorphicArithmetic.CommutativeAlgebra.LocallySurjectiveMultiplicativeGroupKunnethMap

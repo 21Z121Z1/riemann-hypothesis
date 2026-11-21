@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LevelComponentsSurjective
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LocRed

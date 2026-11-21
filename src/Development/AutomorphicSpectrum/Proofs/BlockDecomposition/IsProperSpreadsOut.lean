@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.CubeTheorem.SchemeModels
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsFiniteAffineCover

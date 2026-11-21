@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Algebra.Order.Sub.Prod
 import Mathlib.RingTheory.Henselian

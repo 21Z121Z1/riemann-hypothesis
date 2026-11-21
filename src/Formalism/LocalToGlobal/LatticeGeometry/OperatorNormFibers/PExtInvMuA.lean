@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.StExtInv
 import Mathlib.Algebra.AffineMonoid.Basic

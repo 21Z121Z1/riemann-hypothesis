@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.ModularCurves.WeierstrassProj
 import GroundTheory.ArithmeticGeometry.ModularCurves.WeierstrassCharts

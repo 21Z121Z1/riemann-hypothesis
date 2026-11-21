@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemIntMat
 
 noncomputable section

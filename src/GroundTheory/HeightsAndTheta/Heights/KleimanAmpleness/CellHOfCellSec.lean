@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CellMeets
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.Objects
 set_option maxSynthPendingDepth 1

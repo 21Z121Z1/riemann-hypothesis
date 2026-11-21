@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.DivIntoDualShift
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu

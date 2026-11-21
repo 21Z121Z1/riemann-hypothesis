@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveOperatorLeL2Subspace
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSEOuterLeib

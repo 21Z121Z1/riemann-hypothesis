@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.GenBCFrameR
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.TanAddPf

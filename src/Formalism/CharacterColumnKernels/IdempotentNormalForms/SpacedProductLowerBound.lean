@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.StatOntoLattice
 import Mathlib.RingTheory.AdicCompletion.AsTensorProduct

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.FullOfSoLoc
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfDict

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.Induced
 import Mathlib.CategoryTheory.Monoidal.Mon

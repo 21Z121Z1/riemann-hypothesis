@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.ExistsPrimitiveRoot
 import Mathlib.Algebra.Order.Ring.Star

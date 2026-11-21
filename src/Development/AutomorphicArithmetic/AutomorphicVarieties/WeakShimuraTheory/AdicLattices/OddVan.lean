@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.AdicLattices.LocVanK
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.XvanExt

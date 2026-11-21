@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.acycPf
 import Mathlib.Algebra.Homology.ShortComplex.ModuleCat

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.UnipUGood
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.UnipotentGroups.KerCocompact

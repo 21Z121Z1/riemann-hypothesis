@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsDescendHom
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PClearDenominators

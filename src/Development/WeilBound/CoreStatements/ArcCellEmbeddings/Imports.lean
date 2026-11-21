@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsCompactDualHaar
 open MeasureTheory Filter Topology Matrix Metric Set GlobalTheory.SUVol GlobalTheory.CompanionTheory.Ar.abelian₂

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.FrobeniusCoboundedArc
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GoodOf

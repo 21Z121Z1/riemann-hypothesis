@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBallSubset
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Univ

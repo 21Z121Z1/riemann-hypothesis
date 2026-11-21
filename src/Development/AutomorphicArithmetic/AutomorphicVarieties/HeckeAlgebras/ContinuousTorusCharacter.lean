@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FixedSubgroup
 import Mathlib.LinearAlgebra.Eigenspace.Basic

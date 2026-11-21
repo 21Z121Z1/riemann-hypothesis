@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.DimensionSylow
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Vanishing

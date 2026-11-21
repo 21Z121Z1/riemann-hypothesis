@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU
 open NumberField Matrix GlobalTheory.SUVol ReciprocityTheory.ChartRestriction.G.FD

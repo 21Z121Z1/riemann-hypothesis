@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.GoodOfComplete
 import Mathlib.Tactic.Monotonicity.Lemmas
 

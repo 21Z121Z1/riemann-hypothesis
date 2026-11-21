@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Imports
 import GroundTheory.AutomorphicForms.GL2.SummableNormIffAndTsumEqCoset2

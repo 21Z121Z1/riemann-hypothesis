@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Uniformization.SmulOneSecEqZeroIff
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry

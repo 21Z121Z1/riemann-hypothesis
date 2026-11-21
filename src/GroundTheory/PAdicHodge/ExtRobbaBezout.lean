@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.PAdicHodge.ConvergesAtOfNormLeSeq
 import GroundTheory.PAdicHodge.BoundOfEventuallyAntitone
 set_option maxSynthPendingDepth 1

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RecExGOfRecAtG

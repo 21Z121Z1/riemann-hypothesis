@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Lemmata.PowerApplication.PowApp
 import Mathlib.Analysis.CStarAlgebra.Classes

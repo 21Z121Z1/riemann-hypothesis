@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleSheafShortComplexExactIffLocallyLifts
 import Mathlib.CategoryTheory.Sites.EpiMono

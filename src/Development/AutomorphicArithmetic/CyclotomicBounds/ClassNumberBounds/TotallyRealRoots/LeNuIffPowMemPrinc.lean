@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots
 import Mathlib.NumberTheory.Padics.RingHoms
 import Mathlib.RingTheory.PiTensorProduct

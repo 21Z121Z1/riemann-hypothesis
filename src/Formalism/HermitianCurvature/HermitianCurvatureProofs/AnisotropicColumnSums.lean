@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.FrameMinor
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorRepresentations

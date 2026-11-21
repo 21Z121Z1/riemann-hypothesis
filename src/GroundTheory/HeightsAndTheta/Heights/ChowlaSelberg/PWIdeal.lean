@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PWIdealField
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PWIdealPrimes

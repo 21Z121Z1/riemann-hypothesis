@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.RealHerbrand
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Coprime

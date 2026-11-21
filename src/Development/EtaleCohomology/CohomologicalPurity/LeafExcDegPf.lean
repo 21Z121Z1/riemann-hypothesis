@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafExcFormalPf
 import Mathlib.CategoryTheory.Limits.Types.Pushouts

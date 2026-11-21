@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.ClsCrdEqGlob
 import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.PNeatB

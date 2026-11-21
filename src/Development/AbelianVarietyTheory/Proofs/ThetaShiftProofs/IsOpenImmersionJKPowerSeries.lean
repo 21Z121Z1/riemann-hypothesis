@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PowerSeries.Inverse

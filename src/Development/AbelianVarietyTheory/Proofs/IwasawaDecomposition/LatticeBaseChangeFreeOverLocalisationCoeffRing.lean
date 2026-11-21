@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.WeightFamilies
 import Formalism.LocalToGlobal.NumberFieldFamilies.GamCSpec

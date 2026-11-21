@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.GaloisValuations.ArithOfA
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CyclotomicCharacterFrobV

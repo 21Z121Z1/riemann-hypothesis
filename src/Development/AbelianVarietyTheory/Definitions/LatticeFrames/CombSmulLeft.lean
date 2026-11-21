@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RescOne
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HandBFSmul

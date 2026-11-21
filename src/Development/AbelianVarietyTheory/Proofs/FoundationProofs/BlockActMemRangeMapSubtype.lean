@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PairingDivisors.PairingDivisorProofs.ValAdd
 import Formalism.LocalToGlobal.Divisibility.CoefModLemmas

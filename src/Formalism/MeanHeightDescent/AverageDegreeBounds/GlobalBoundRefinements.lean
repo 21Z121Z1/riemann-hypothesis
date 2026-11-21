@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.MeanHeightDescent.CovolumeEstimateAnchoredWeights
 import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeFullAssemblyHolds

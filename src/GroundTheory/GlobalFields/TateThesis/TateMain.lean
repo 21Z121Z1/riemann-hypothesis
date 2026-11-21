@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.TateThetaDecay
 import GroundTheory.GlobalFields.TateThesis.ArchCharsUnitary

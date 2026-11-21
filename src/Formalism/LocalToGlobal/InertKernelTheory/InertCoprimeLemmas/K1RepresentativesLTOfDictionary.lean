@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepLt
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.RepFrame

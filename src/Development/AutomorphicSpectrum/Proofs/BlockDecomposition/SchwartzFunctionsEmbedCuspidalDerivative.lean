@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousMulVec
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ResidueSequenceHolds

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.ThmFlatA
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.FlatLineGenerator

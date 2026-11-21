@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Analysis.InnerProductSpace.JointEigenspace
 import Mathlib.RingTheory.WittVector.IsPoly

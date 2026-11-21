@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.DiagInvVal
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.AbLower

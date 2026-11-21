@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalDefs
 import Mathlib.FieldTheory.Galois.Profinite
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

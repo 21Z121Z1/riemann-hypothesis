@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.LeviForms.HomDens
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff

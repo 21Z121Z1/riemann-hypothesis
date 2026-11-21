@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.HeckeLFunction
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality

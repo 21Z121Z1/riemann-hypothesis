@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.GermEvalOneStandardPointSelf
 import Formalism.LocalToGlobal.CharacterGerms.MaximalOfValuationGeOne

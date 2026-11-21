@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.Lpart
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PartialFourierInversion

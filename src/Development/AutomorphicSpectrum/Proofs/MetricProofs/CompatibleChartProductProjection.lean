@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Topology.OpenPartialHomeomorph.Composition
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun

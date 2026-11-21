@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.LemmaMLin
 import Formalism.IncomingBounds.FlowDegreeBounds.ThmPJet

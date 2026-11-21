@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LinksExist
 import Formalism.LocalToGlobal.IndefiniteReal.LinksW

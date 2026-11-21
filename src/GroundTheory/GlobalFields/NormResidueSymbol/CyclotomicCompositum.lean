@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois
 import GroundTheory.GlobalFields.NormResidueSymbol.Functorial

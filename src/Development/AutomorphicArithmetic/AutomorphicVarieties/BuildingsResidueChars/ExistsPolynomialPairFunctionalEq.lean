@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.LocalGammaFactorExponentialForm
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.FunctionalEquationFromContinuation

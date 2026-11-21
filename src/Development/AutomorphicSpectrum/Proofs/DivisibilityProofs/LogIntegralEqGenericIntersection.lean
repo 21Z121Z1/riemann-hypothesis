@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LogIntegralCongrSmul
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.FractionRingRingEquiv

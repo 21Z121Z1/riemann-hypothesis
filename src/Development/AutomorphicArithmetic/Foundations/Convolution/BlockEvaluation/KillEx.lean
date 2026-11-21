@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.TruncSpec
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.KillLiftSingle

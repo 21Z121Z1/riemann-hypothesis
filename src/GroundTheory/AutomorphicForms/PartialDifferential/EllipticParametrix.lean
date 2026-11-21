@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.PartialDifferential.EllipticSolutions
 import GroundTheory.AutomorphicForms.PartialDifferential.EllipticDiffOp

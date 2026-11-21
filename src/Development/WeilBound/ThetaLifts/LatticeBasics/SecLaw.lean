@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.Hypotheses2
 import GroundTheory.GlobalFields.TateThesis.AdeleScaling

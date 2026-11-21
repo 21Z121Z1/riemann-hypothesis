@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MemRangeOfPowG
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ColsReLev0

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 import Mathlib.NumberTheory.NumberField.ClassNumber

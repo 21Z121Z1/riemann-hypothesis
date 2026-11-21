@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFactorisationThroughAbelianSubvarietyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInverseIsogenyStatement

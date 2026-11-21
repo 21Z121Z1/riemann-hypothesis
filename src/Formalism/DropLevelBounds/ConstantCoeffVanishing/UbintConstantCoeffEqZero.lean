@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.DropLevelBounds.Statement
 import Formalism.IncomingBounds.FlowDegreeBounds.ThmPExp

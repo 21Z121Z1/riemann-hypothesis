@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.PartEq
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.TwListSs

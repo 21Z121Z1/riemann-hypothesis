@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.KernelCondition
 
 set_option autoImplicit false

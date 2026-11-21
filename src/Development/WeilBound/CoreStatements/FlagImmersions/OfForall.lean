@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.VolumeEquality.CoverRootsSch
 import Development.WeilBound.CoreStatements.VolumeEquality.Pieces

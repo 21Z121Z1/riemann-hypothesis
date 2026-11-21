@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSublatticeDegreeSteps
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.DetGramLeProdNormSq
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

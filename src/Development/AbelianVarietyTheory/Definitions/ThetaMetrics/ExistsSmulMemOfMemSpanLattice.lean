@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Example
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import BuildAid.Leniency.Open

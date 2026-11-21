@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.HerbrandRep
 import GroundTheory.TateCohomology.TateLow

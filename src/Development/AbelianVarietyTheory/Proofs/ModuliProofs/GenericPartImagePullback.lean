@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.AllTorsMap
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHomOfEquivariant

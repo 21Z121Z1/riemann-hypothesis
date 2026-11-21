@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.ExistsPeriodOfFrames
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.HolDifferentiableAt

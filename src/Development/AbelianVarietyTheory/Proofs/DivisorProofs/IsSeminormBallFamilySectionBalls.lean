@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.CharZeroFunctionField
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology

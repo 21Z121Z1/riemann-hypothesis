@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.LocallyProfinite
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StabilizerOf

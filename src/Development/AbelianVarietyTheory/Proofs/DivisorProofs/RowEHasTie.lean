@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.MapBaseTiedSel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RealPins3RealTOf

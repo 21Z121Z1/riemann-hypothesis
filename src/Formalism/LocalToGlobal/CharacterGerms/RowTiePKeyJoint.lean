@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePKeyJointDef
 import Mathlib.LinearAlgebra.Eigenspace.Pi
 import Mathlib.Order.CompletePartialOrder

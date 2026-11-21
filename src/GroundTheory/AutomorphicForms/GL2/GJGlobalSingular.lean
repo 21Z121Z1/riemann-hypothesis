@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJGlobalUnfold
 import GroundTheory.AutomorphicForms.GL2.GJGlobalMean

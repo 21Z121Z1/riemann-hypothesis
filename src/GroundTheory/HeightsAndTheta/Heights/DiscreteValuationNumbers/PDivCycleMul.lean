@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.IsMultiHomogIdealSpanSingleton
 import Mathlib.Algebra.Module.LocalizedModule.Exact
 import Mathlib.Order.CompletePartialOrder

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToNatLengthEqRangeAddRange
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsRetractTensorTriple

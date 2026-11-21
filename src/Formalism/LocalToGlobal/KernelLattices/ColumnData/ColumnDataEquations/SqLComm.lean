@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WeightThresholdDefs
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.Reduction

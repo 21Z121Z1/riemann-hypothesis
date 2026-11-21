@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HilbertSchmidt
 import Mathlib.Analysis.Normed.Operator.Compact.Basic

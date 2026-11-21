@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Vanishing
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Trivial
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Devissage

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.Periodic
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.InvHerm

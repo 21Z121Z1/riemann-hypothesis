@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.Mollifiers.MollifierL2LocTendsto
 import Mathlib.Topology.UniformSpace.Uniformizable

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RingOfIntegersHomInjective
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConstantsValueOverPoint

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.StatementRP
 import Mathlib.Tactic.ENatToNat

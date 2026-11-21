@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.RelativeDiscriminant
 import GroundTheory.GlobalFields.SemilocalAlgebras.NormTrace

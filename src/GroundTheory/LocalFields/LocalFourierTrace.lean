@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.Different
 import GroundTheory.LocalFields.LocalFourierExistence

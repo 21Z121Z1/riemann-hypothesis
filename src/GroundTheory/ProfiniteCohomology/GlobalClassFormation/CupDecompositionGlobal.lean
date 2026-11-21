@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupDecomposition
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupLocal

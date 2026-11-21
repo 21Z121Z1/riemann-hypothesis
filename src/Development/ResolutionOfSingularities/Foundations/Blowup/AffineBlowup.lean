@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.Foundations.Blowup.ReesGrading
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic

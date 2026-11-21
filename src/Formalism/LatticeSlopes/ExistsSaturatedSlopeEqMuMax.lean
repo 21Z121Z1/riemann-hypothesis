@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqCovolume
 import Formalism.LatticeSlopes.LatticeSlopesProofs.ShortVector
 import Formalism.LatticeSlopes.LatticeSlopesProofs.FiniteSaturated

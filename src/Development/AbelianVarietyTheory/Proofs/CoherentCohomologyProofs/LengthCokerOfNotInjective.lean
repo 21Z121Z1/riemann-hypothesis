@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.LengthCommensurableMapIffOfInjective
 import Mathlib.RingTheory.OrderOfVanishing.Noetherian
 import Mathlib.RingTheory.RegularLocalRing.Defs

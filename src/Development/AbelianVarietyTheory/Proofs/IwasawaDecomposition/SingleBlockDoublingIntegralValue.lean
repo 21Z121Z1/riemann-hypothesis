@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.DoubleCosetMeasures.LatticeCoset
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsNrm

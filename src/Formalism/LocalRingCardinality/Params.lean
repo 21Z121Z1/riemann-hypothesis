@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection

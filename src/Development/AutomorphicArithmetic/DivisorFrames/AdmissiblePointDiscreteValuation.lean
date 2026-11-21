@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.VertCmp
 import Development.AutomorphicArithmetic.DivisorFrames.LevelFlagCompactPoint

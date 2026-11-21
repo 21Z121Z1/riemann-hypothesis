@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlagCh2EqOfAdjacent
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TraceAdjugateMulEqSumPermRing

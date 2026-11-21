@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCurveGermComponents
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLocalDimDomain

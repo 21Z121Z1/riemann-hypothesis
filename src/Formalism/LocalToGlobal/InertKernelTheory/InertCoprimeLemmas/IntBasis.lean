@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.DefsBasis
 import Formalism.LocalToGlobal.GlobalTheory.GL3.IsometryLinkageTrivialLevel

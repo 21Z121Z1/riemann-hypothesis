@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.PullInjOfIso
 import Mathlib.CategoryTheory.Limits.Types.Pushouts

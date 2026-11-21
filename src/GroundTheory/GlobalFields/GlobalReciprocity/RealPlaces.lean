@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.GlobalReciprocity.NormSquare
 import GroundTheory.GlobalFields.GlobalReciprocity.RealPlacesQuadratic

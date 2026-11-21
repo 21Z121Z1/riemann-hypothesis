@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CompletionAtPlace.Integers
 import GroundTheory.GlobalFields.SemilocalAlgebras.NormTrace

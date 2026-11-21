@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.GroupCohomology.MemZpowersQuot
 import ReciprocityTheory.GroupCohomology.FiniteLevel

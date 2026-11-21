@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.RealizationBasicForm
 import Formalism.WachLatticeTwists.RealClassMaps.RealClassMapProofs.InRowRealOf

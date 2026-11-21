@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterGood
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreCoordGoodProj

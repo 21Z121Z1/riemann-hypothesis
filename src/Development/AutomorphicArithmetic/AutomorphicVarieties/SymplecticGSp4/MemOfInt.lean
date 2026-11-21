@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.FlagL
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.EptInt

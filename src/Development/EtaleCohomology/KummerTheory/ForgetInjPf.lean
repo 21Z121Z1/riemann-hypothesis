@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.KummerTheory.InjSlicePf
 import Mathlib.CategoryTheory.Preadditive.Injective.Preserves

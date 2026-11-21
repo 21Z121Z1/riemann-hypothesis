@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ShapiroDefs
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChangeModules

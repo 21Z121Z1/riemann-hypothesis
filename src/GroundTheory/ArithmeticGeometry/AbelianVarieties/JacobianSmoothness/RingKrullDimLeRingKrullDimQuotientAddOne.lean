@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.ToricVarieties.Dimension
 import Mathlib.Algebra.MvPolynomial.NoZeroDivisors

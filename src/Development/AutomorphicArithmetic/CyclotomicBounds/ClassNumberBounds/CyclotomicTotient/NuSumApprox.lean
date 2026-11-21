@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuInf
 import Mathlib.NumberTheory.Multiplicity
 import Mathlib.Order.CompletePartialOrder

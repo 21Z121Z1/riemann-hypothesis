@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.SimplicialPieceRelations
 import Mathlib.Algebra.Homology.Embedding.ExtendHomotopy

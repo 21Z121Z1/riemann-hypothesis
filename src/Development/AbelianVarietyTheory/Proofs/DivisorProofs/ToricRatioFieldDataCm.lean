@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.TieTest
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NuHTwisted

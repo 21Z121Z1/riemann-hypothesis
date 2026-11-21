@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 
 noncomputable section

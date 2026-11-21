@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.PAdicHodge.FWCyclotomicNorm
 import GroundTheory.PAdicHodge.FontaineWintenberger
 set_option maxSynthPendingDepth 1

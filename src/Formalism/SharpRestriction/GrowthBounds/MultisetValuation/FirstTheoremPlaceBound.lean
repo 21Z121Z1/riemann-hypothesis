@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.EaApplyDScale
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NmRestNormOfPlace

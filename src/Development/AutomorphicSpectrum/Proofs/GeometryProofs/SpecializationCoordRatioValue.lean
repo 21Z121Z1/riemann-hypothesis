@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SpecializesOfUnits
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier

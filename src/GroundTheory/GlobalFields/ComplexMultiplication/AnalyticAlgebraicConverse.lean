@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicIsogeny
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualWeil

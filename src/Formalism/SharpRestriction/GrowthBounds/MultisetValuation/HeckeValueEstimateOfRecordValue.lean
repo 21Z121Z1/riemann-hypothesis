@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.TminusLinApply
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.TheoremOfAlternateForm

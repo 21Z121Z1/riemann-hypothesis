@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.PsJetEqToJetOfNonempty
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LieAlgebraMaps

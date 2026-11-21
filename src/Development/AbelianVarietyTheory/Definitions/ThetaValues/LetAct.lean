@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataCoeff
 import Formalism.LocalToGlobal.ProjectiveLattices.IsThRule

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.TensorIrr
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis
 import Mathlib.RingTheory.Algebraic.LinearIndependent

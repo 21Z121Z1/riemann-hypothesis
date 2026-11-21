@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurDir
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf

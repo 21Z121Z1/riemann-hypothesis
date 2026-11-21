@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCharacter
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp

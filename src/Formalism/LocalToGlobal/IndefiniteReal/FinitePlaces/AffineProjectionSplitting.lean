@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.PlaceAt
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GrowthNorm

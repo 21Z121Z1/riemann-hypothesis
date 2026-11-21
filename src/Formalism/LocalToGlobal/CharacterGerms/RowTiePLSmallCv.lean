@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.Main
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.BoundedSums

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RosLevel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsLimitUnit

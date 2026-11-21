@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.ReducedBasisBounds.LengthBaseChangeLocal
 import Formalism.FilteredPoleLength.LocalDescentLevels.MemSpanBasisFun

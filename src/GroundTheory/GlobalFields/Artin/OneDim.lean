@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ClassFieldConsequences.ConductorLocal
 import GroundTheory.GlobalFields.Artin.InflationTower

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.ContinuousCjIT
 import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.CardRed
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.TensCard

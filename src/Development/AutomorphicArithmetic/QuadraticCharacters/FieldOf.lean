@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.QuadraticCharacters.MemRealCyclotomicSubgroup
 import Mathlib.NumberTheory.NumberField.Cyclotomic.Galois

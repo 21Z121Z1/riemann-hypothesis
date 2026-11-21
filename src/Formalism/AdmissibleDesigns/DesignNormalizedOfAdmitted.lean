@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.GlobalIndexTheoremPlacesOfRNAdm
 import Formalism.AdmissibleDesigns.DesignOfAdmittedObjects

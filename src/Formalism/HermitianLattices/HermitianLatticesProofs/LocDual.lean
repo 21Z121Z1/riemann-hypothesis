@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
 import Mathlib.RingTheory.WittVector.IsPoly
 import Mathlib.Tactic.Polynomial.Basic

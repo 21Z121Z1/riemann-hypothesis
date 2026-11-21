@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DEqFinrankHHX
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FEqAndRdEq

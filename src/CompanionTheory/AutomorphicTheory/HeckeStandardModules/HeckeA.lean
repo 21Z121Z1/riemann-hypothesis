@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvalFg

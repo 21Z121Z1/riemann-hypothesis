@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsImEqLattice

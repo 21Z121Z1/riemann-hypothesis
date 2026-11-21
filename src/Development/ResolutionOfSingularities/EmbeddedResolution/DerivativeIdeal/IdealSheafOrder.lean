@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.IdealOrder
 import Development.ResolutionOfSingularities.Foundations.Schemes.AffineOpens

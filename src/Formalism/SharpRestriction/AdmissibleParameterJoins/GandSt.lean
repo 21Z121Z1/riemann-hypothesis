@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemWOfNorm
 import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSp

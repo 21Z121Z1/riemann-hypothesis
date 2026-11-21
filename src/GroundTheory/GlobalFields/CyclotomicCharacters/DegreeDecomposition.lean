@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CyclotomicCharacters.Degree
 import GroundTheory.GlobalFields.CyclotomicCharacters.ClosedSubgroups

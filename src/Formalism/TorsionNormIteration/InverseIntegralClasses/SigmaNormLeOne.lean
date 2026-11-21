@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.TorsionNormIteration.InvIntegralOfClass
 import Mathlib.Analysis.Normed.Ring.Ultra

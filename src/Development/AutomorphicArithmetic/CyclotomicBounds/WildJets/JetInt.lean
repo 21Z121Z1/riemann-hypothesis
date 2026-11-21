@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.BvvInt
 import Formalism.LocalToGlobal.KernelLattices.ThDistC

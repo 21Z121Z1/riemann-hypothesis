@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.FormalGroups.Truncation
 import Mathlib.RingTheory.FormalGroup.Basic

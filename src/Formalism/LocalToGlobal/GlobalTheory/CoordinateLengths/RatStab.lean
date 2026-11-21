@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.IntSpanLeRat
 import Formalism.LocalToGlobal.GroupLattices.FockModels.SwRowGenMonomial

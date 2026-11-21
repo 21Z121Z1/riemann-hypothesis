@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LiftingTheory
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TransferCocycleFormula

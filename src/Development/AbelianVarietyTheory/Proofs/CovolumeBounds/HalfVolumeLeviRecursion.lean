@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelLiftBasics.LevelGroupUnitaryHermitian
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ParabolicLineStabilizerLeviStatement

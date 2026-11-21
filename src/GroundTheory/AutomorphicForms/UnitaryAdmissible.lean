@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.UnitaryAdmissible.FiltrationCocycleLiftCriterion
 import GroundTheory.AutomorphicForms.UnitaryAdmissible.Scalar

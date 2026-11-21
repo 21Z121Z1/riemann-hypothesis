@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.DeterminantCokernelCount.JetMomTA
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsTraceNorm

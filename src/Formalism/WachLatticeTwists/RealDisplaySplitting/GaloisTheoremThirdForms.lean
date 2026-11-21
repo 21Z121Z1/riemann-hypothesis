@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.TheoremFiveArbitraryGroup
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.GaloisThirdWithGenerator
 

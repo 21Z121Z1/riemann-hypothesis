@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.Pull1
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.CovLog

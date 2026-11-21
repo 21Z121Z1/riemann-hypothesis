@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Jets.ColValMonomial
 import Development.AbelianVarietyTheory.Proofs.FormalGroupCharts.RosIdSt

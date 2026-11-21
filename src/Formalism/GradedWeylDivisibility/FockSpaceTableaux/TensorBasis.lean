@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementD
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis

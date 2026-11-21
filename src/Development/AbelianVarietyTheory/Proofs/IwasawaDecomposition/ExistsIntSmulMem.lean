@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataMink
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ImportsTer

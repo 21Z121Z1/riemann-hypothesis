@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.ThickAverageLoss.Statement
 import Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality

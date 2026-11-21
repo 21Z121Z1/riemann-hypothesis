@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.Mac
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.HlEval

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.ActAllCancelInv
 import Formalism.LocalToGlobal.GlobalTheory.GramNDetNe

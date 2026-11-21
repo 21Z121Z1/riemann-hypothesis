@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCRadSpSmooth
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeVLem

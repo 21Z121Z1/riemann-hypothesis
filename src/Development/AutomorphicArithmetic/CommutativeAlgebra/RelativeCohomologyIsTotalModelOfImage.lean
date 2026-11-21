@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.SupportDoubleComplexTotalRepresentsVanishingCoch
 import Development.AutomorphicArithmetic.CommutativeAlgebra.DoubleMappingCylinderCochainExtension

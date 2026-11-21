@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.WChordSeries
 import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point

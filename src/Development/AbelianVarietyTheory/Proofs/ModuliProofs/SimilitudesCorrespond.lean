@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.RelativeGroupHatForm
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabCancel

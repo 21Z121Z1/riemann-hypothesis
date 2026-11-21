@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableUnipotentRankOne
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableSliceAppendSingle

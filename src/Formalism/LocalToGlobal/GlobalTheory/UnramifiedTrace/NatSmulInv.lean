@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.MulLatSupSpan
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.TripMem

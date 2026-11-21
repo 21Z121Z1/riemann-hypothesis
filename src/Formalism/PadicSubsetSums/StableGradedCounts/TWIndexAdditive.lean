@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.CentralIdempotentIntegral
 import Mathlib.Algebra.Module.Lattice

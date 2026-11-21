@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.RingTheory.GradedAlgebra.Radical
 import Mathlib.RingTheory.RegularLocalRing.Defs

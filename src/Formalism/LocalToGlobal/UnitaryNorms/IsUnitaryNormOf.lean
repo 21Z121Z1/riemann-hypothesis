@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.HCFFromRecipB
 import Mathlib.Analysis.CStarAlgebra.Classes

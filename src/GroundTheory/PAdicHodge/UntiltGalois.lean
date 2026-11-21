@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.PAdicHodge.UntiltPerfectoid
 set_option maxSynthPendingDepth 1
 

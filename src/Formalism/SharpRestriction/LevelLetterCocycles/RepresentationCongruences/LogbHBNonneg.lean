@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ArcPropositionAlternative
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ArcSetupTheorem

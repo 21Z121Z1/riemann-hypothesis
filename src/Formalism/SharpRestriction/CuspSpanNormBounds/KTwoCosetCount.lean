@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.KTwoMinorIntegrality
 import Formalism.SharpRestriction.CuspSpanNormBounds.KappaEndpoints

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ProjTopology
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SectionL2NormSq

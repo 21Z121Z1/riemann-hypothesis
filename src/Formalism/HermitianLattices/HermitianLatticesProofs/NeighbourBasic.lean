@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.RegularLocalRing.Defs

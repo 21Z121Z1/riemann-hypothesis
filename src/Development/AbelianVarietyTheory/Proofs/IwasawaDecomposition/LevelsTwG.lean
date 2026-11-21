@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.TwistedLevelAgreement.StepInTwK
 import Formalism.SharpRestriction.GrowthBounds.BaseLevels.LevelsGEmpty

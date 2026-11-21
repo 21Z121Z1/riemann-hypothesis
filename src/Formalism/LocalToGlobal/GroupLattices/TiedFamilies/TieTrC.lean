@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.RecursiveTieLevelZeroEq
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.SelfDualAtColLevel

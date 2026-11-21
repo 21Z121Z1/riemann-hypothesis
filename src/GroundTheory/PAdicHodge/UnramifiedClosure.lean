@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.PowerSubgroups.CountableNeighbourhoods.UnramifiedClosureCountableNeighbourhoods
 import Mathlib.Algebra.Order.Ring.Star

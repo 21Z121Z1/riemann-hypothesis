@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.BranchMap
 import Development.AbelianVarietyTheory.Definitions.Foundations.TracePowApply

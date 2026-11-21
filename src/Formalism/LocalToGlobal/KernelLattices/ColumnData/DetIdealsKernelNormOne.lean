@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.LinkThIndep
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.LinkThU

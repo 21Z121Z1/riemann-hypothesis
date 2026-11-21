@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDualPullback
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits Filter

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PProjBundleArith
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagArith

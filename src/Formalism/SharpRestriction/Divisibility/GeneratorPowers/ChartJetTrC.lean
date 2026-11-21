@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrB
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ChartJetTrA

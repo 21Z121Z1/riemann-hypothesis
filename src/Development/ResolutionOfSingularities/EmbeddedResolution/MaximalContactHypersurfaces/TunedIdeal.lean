@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.DerivativeIdeal
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

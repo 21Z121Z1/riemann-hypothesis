@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.TwoNeZeroClosure
 import Development.AbelianVarietyTheory.Definitions.Divisors.RedSurjective

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.KIface
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec

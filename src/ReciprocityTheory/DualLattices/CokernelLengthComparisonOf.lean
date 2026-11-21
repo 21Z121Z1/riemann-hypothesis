@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.CokernelLengthComparisonStatement
 import Mathlib.Algebra.Order.Star.Real

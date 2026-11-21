@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.DiscreteGroups.GlobalIrreducibility.DotjUpdate
 import Development.DiscreteGroups.GlobalIrreducibility.ExistsAvgNotMem

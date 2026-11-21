@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.P2PowMemSpanCUniformizerPowP1PowMulXPow
 import Mathlib.RingTheory.PowerSeries.Substitution

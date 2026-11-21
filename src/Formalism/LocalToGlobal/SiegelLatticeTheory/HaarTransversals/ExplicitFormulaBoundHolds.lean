@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.FinalTr
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.FoldBound

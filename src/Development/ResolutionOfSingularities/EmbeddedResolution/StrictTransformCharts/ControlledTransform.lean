@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.Foundations.Blowup.BlowupBasic
 import Development.ResolutionOfSingularities.Foundations.Blowup.StrictTransform

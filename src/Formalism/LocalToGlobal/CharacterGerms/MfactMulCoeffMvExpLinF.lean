@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.IncomingBounds.StatementThmP
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

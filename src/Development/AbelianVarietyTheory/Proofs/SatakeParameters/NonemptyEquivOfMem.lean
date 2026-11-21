@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.AbelianHostFieldConditions
 open NumberField IsDedekindDomain GlobalTheory.Formalism.L2.Col

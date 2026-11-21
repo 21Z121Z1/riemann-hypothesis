@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InfOfNodupAlg
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SubrepTopToSubmodule

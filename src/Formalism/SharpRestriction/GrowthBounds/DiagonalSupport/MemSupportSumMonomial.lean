@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ValLamOfSubset
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDefs

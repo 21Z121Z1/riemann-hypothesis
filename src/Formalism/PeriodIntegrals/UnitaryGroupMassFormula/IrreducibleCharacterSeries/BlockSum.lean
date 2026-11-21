@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IrreducibleCharacterSeries.ClassFnOfIsIrrChar
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SectionNormSquares.ExistsFormOfMemChartRingZ
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPowerBlock

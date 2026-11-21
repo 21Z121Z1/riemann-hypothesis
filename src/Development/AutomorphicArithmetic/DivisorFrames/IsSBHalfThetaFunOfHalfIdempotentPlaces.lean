@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ThetaOperatorIntertwinesHeisenberg
 import Development.AutomorphicArithmetic.DivisorFrames.PtOSgnMemLatAtVIffMemLatO

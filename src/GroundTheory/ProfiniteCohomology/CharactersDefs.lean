@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.ProfiniteCohomology.TorsionDualDefs
 set_option maxSynthPendingDepth 1
 

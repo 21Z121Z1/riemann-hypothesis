@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.PrimeDiscriminants.SlopeTestRemainingChoices
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace

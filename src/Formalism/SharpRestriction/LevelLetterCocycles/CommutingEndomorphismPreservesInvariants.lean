@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.IntegralHeckeForms
 import Formalism.PadicSubsetSums.StableGradedCounts.TWCutOperator

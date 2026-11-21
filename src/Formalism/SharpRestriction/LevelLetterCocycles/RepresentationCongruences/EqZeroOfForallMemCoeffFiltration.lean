@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Algebra.Order.Field.Basic
 import Mathlib.RingTheory.AdicCompletion.Basic

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.ProjectiveValuations.OpenImmersionCompStructureEqGeneric
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TendstoPowMulExp

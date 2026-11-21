@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ThetaSummability.TailSumEstimates.ConeDefs
 import Mathlib.RingTheory.WittVector.IsPoly

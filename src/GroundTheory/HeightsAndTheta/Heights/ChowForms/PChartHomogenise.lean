@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsChartMax
 set_option maxSynthPendingDepth 1

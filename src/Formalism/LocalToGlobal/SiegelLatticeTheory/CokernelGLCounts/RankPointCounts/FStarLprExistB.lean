@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ScalRelRepFree
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ScalEquivGen

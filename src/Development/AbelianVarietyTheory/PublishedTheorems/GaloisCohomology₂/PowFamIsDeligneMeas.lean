@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.DeligneLocalConstants
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLocalLanglands

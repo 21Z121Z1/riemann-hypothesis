@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.DivSheafA
 import Mathlib.Tactic.Polynomial.Basic

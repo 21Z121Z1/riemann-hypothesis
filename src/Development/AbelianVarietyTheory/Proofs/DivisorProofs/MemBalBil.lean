@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Std.Tactic.BVDecide.Normalize.Prop
 

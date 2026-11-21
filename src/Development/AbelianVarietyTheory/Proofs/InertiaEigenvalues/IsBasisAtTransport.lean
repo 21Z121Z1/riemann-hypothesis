@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SpanImageLeOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorValuedLiftFieldChange

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.DivisorCycles.CycleCount
 import Mathlib.RingTheory.Artinian.Algebra

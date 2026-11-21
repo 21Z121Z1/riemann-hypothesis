@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.AlgebraicGeometry.Sites.Representability
 import Mathlib.CategoryTheory.EffectiveEpi.Comp

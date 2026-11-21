@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.OmegaDataLevelForms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LCBijPf
 import Mathlib.RingTheory.RegularLocalRing.Defs

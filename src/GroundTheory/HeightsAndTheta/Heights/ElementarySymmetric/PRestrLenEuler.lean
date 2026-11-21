@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StRestrLenEuler
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperHyperplane

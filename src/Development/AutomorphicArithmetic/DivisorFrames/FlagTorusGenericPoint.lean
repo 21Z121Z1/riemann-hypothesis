@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing

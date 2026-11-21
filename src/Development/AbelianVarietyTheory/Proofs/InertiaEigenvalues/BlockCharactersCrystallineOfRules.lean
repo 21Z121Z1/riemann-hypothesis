@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.BlockCharactersCrystalline
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.PrimeTypeRows

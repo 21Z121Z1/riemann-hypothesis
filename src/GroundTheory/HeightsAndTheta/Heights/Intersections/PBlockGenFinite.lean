@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsBlockRatioAlg
 import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.PairingSsNu
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.MonomialNorms

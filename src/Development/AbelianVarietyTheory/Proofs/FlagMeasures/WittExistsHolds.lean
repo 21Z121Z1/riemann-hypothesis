@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.LevelMatchIff
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.WittExtensionTheorem

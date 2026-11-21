@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.GramEqOfInst
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StarEqHostConj

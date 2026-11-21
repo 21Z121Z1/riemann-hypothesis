@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.LatticeInclusionRealSettingAlt
 import Formalism.LocalToGlobal.Divisibility.RowLat

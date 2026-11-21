@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.PlacesInfinite
 import GroundTheory.GlobalFields.Artin.Places

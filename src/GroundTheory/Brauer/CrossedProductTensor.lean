@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.Brauer.CrossedProductRegular
 import GroundTheory.Brauer.CrossedProductInj

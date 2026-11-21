@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.UniversalCharts.SpanXLeKerAevalZero
 import Lemmata.FirstBlockLemmaK.Imports
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.PartialDifferential.EllipticLocal
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

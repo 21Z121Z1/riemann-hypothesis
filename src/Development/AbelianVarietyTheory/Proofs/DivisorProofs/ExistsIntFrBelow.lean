@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.CongModRefl
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LiftBaseChange

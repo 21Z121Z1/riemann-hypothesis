@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.HopfLaurent
 import Development.AbelianVarietyTheory.Definitions.Divisors.Pullback1MemHodgeFiltration

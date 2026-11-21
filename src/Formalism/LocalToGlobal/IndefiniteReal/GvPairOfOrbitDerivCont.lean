@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.DKerHasCompactSupport
 import Mathlib.Analysis.Calculus.Deriv.Star

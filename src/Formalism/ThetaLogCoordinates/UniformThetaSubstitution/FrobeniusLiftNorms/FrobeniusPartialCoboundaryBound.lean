@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.ThmSUniform
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS

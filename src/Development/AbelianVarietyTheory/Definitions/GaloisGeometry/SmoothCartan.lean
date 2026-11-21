@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GKModules.RightRegular
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BasicForm

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZLevJ
 import Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.ExampleFunctionModuleEqSpan

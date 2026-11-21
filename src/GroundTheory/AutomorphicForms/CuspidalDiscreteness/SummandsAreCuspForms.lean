@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsContinuous
 import GroundTheory.AutomorphicForms.GKModules.KernelCalculus

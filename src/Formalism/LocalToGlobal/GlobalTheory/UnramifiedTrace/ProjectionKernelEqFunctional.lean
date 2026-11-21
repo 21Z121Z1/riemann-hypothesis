@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.DUPt0FOfVals
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.NatSmulInv

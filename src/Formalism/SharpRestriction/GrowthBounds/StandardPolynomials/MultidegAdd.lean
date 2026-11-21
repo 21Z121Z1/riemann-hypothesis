@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.RestRawTail1Of
 import Mathlib.RingTheory.LocalProperties.Reduced

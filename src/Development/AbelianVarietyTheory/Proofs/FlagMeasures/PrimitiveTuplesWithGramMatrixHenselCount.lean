@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PrimOfIsUnitDet
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HenselStepCardComap

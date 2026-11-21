@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsVeryAmpleZFinite
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PAmpleAffineGen
 set_option maxSynthPendingDepth 1

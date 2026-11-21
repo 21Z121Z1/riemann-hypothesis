@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.InvariantDefs
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.BrauerInflation

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.EtaleCompletion.QcohPresheaf
 import Mathlib.Tactic.Monotonicity.Lemmas

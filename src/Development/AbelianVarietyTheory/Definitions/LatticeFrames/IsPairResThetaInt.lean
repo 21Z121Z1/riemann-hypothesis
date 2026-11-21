@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FirstTermWeak
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ConclusionZero

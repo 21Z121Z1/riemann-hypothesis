@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.GaussJetProofs.SubstitutionWeightBound
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV

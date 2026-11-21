@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.HookFormulaTorsion.LengthQuotientBoundGeneral
 import Formalism.HermitianLattices.HermitianLatticesProofs.AutFinite

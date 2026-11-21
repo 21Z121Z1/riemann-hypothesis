@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapRow0OfRowsSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth

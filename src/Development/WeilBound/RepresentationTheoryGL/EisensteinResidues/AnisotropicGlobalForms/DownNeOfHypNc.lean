@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSum

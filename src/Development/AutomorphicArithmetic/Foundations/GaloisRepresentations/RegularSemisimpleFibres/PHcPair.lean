@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.SuppBCOfMix
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ExistsIrrCharAddStatement

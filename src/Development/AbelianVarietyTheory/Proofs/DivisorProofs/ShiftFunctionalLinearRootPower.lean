@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.DegreeFormula.PointDegree.PowSum
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChart
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemOfLift

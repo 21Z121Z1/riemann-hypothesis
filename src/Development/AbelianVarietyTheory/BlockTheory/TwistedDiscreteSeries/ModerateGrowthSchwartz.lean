@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.UnitBracket
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceAdeleRing

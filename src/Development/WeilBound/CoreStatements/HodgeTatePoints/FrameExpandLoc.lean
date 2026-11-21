@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CoefMemDual
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GaGram

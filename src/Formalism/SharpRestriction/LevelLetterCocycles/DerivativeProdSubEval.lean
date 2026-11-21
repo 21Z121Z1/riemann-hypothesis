@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInvariantPreimageAverage
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsMemMapEqSmul

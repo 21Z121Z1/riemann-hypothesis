@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RamifiedBlockRings.Statement
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm

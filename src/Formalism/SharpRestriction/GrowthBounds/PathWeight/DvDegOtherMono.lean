@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.PathWeight.GeneratorImageIsSymbol
 import Mathlib.Algebra.Order.Sub.Prod

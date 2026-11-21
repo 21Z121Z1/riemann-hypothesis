@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.ZeroEquiv
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.Zt2

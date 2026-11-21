@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.IsDualPair
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ZhatFin
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.RootEquality

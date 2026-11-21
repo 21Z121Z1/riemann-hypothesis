@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.StatementB
 import Mathlib.LinearAlgebra.Eigenspace.Basic

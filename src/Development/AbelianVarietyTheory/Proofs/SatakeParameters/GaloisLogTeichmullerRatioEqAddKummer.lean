@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LMulBeta
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KummerNotCoboundary

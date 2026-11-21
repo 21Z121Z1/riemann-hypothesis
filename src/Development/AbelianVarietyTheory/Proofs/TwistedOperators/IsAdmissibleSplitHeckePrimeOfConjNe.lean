@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsDerivAt0CompLinearIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HermFormEqOfImSpan

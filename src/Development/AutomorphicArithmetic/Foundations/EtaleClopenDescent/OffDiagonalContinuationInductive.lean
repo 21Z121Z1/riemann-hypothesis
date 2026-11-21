@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafOffContPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafHsContPfFive

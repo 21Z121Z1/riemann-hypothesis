@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.SatakeDualWeyl.StatementF
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 

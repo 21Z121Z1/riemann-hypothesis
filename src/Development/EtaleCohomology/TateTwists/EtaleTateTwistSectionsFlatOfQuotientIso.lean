@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleTateTwistSheafFlat
 import Mathlib.Data.Finsupp.Pointwise

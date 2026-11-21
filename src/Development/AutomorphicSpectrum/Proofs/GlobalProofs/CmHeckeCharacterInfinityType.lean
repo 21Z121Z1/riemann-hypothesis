@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ContinuousIdeleCircle
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsArch

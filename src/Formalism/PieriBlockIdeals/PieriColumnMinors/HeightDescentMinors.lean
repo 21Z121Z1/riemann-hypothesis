@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.CapelliCentralEnveloping
 import Mathlib.Data.Fin.Tuple.Sort

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AutomorphicArithmetic.WeightCongruences.ProdNegOneZpow
 
 namespace UpperTheory.MUQ

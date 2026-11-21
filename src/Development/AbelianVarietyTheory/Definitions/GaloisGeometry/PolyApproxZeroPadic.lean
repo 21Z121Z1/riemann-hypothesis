@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Example
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormAevalSubLe
 import Mathlib.Algebra.Order.Star.Real

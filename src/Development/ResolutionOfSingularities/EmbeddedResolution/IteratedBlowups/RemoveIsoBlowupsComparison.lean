@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.RemoveIsoBlowups
 import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.StrictTransform

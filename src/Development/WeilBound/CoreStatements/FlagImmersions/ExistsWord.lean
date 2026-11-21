@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.LowerBoundOfBaseSetting
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PHFlProdLinear

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.EqZeroOfCompAt
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerInfMemLocSpan
 import Development.AbelianVarietyTheory.Definitions.Divisors.KerInfIntegrableOfMemRspan

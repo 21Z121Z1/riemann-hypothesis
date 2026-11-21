@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.CharSingle
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.JNoEig

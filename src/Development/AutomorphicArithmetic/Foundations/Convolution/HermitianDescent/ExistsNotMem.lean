@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.GalBase
 
 namespace UpperTheory.ConvolutionTheory.D

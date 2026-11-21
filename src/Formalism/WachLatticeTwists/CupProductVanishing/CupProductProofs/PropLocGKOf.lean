@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.CupProductVanishing.Statement
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.PropLocContBK

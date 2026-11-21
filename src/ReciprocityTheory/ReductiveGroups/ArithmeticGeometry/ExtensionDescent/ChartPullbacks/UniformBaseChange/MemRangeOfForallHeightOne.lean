@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Mathlib.RingTheory.Ideal.KrullsHeightTheorem
 import Mathlib.RingTheory.Ideal.AssociatedPrime.Basic
 import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed

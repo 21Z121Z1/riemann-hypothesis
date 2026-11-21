@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Sequence
 import GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLatLie
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkChainPeriodicRelation

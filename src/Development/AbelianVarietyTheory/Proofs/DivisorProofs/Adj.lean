@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdjacentRefl
 
 set_option autoImplicit false

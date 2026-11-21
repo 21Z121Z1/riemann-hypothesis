@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.AevalDopMap
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.CoefStep

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts

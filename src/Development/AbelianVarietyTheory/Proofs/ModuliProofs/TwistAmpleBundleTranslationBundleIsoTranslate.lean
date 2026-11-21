@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.SectionDivision
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsRigidifiedTwist

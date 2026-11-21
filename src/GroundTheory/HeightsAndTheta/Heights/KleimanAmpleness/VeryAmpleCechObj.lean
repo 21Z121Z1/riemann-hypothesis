@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsSerrePoly
 set_option maxSynthPendingDepth 1
 

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.ChordEquation
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalC

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Algebra.BrauerGroup.Defs
 import Mathlib.Algebra.Central.TensorProduct

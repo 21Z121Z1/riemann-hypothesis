@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.TateCohomology.HerbrandAbstract
 import Mathlib.RepresentationTheory.Coinduced
 set_option maxSynthPendingDepth 1

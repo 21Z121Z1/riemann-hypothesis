@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.LocalToGlobal.InertKernelTheory.IntegralInertOfWeakApprox
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMIsom
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMConj

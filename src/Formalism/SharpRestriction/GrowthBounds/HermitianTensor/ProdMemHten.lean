@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.LamPolySmulRight
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.OneMemDualWeyl

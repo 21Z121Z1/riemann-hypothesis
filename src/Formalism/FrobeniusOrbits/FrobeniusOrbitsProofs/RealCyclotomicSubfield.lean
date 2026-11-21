@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.Statement
 import Mathlib.Algebra.Order.Ring.Star

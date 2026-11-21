@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsChowNorm
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Statements

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.CxToPkgFamIn
 import Formalism.LocalToGlobal.IndefiniteReal.MemRangeAdjointOfKerStable

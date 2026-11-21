@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.StarLoweringConstant
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.TieRad

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.LetAct
 import Formalism.LocalToGlobal.Divisibility.CoefMod

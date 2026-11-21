@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockParOpp
 
 noncomputable section

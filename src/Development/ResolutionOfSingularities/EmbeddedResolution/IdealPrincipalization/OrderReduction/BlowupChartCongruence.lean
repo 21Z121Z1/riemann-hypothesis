@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupChartPreimages
 import Mathlib.AlgebraicGeometry.QuasiAffine

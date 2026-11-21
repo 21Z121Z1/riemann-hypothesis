@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.ThetaDilations.IsOpenCoset
 import Mathlib.Algebra.Order.Star.Real

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdMinorsMemInv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColumnInclusionRenaming

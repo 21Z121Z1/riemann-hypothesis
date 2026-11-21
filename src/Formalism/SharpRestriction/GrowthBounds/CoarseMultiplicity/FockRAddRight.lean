@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PolynomialDimension.MultinomialDepth.FockGaussComparisonHolds
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.LaTwTranspose

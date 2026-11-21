@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgHonA
 import Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe

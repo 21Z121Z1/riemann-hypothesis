@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.InfRange
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.LocalTransition

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsPrimitiveRootEOmLevel
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HtPresNu7MonoLoss

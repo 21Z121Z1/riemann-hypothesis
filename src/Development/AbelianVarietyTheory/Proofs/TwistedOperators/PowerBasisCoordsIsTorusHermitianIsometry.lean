@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CoordEquivApply
 open MeasureTheory Set Filter Polynomial NumberField IsDedekindDomain

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsGPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussFieldIsEtPlace

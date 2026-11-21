@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJMatrixFinite
 import GroundTheory.AutomorphicForms.GL2.GJMatrixCoord

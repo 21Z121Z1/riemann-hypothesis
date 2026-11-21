@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.HcParamGapGeIndex
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelTau

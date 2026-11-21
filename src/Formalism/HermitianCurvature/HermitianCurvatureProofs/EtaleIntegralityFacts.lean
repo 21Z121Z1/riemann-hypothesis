@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.StandardCharacterExists
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WeakApproximationGL

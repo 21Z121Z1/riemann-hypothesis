@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Columns
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DerivationCoordinateChange

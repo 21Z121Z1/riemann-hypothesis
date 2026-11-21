@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsTorusEmbedding
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PHermAtPlace

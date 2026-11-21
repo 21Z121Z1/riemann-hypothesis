@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.TateLow
 import Mathlib.CategoryTheory.EffectiveEpi.Comp

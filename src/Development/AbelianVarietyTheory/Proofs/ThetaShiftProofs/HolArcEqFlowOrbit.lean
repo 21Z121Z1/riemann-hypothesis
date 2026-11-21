@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.EqZeroOfTraceLattice
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.HolArcNilpotent

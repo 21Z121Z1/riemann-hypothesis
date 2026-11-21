@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.PlacesOverU
 import Mathlib.Analysis.CStarAlgebra.Classes

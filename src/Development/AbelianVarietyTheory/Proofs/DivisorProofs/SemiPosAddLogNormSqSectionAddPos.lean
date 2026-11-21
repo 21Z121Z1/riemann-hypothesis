@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.DensConst
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.AApproxC

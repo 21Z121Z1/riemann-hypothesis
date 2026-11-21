@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.StalkMatrixLeftInverse
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsDivisorFrameGeneric

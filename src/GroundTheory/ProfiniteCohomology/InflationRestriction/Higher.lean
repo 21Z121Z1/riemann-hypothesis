@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.InflationRestriction.Coinduced
 import GroundTheory.ProfiniteCohomology.InflationRestriction.DegreeOne

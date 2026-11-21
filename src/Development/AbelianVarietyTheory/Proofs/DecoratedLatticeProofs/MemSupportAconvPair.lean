@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.IsContAutRTrans
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsOneComb

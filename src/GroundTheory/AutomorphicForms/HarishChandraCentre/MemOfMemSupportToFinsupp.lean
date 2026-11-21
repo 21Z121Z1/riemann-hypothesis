@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import GroundTheory.AutomorphicForms.HarishChandraCentre.MemCenterOfCommuteE
 
 namespace GroundTheory.Automorphic.HarishChandra

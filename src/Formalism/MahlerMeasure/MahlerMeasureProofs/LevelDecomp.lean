@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.LevelSum
 import Mathlib.RingTheory.SimpleRing.Principal

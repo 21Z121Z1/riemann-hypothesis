@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelMembershipPackage
 import Formalism.SharpRestriction.LevelLetterCocycles.CoboundaryMemInvariantCocycles

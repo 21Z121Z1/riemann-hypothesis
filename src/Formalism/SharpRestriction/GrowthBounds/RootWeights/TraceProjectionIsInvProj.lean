@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ExistsHighestCoordinateFunctional
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ExistsIntegralWeightProjections

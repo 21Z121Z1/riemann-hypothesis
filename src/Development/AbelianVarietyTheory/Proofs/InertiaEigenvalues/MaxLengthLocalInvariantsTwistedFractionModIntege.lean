@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.EndomorphismIndexBound
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CycZBridge

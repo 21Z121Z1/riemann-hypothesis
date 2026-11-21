@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.UnitarizeD
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.Closure

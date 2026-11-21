@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PolAVNonzeroLocusCoverAffine
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsSecOfLocal

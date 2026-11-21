@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.Ucoord
 import Mathlib.NumberTheory.NumberField.ClassNumber

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.HeightBoundExactNorms
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean

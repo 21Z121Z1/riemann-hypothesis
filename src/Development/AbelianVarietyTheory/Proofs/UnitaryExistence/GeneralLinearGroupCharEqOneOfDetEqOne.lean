@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Mathlib.Algebra.Group.Pi.Units
 import Mathlib.Algebra.Order.Floor.Extended

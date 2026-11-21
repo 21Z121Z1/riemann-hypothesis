@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.SiegelSetsSL2Adelic
 import GroundTheory.AutomorphicForms.ReductionSplitting

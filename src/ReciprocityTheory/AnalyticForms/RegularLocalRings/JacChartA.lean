@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactLeftMore.Imports
 import Mathlib.RingTheory.SimpleRing.Principal

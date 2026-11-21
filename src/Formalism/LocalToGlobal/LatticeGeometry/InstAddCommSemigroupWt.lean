@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
 import Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef

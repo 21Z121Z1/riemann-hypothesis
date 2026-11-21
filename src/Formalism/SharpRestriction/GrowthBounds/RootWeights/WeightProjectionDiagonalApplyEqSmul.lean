@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.WeightSpaceEqBotOutsideSupport
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.OperatorsKillInvariantProjection

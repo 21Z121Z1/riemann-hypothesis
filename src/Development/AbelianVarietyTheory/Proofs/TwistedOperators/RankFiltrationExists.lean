@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.OpenClosedSequences
 import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField

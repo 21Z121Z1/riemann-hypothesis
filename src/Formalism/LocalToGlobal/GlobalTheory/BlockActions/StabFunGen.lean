@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.FormsOfLatticeExtension
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.CTExtUnitary

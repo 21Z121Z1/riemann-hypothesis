@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionDescent.GraphAlgebra
 import Mathlib.RingTheory.Smooth.StandardSmooth
 import Mathlib.Tactic.Polynomial.Basic

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormPowDivFactorialLe

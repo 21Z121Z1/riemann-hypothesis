@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutTrace
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutReal

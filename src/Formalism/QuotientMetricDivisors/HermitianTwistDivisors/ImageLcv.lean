@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.ProdFormula
 import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic

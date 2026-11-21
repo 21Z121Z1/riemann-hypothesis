@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsOpenKer
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ThetaUnipotentConjugationStatement

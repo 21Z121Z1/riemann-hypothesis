@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRatA
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

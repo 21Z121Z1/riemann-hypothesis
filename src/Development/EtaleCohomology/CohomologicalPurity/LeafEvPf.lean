@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafDictPf
 import Development.EtaleCohomology.KummerTheory.FlasquePf

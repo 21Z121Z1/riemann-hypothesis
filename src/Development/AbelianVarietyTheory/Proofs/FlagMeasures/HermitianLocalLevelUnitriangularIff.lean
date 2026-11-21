@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SplitPlaceLatticeComponents
 import Formalism.LocalToGlobal.HermitianForms.PsiZeroNontrivialCharacter

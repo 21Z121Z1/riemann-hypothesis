@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.AbstractLocalReciprocity.FunctorialityNorm
 import GroundTheory.LocalFields.AbstractLocalReciprocity.Functoriality

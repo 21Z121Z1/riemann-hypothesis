@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.IsExtensionOfIsPushout
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

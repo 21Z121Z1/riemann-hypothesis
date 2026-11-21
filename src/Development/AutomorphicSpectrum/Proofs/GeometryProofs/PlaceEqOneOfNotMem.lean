@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.StatementLat
 import Mathlib.Algebra.AffineMonoid.Basic

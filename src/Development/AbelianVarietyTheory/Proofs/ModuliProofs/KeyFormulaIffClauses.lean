@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.CubicWedgeNormPeriods
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsBaseChangeIffKeyPB

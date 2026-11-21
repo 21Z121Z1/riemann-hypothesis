@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import Formalism.PeriodIntegrals.HeisDefs
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.PiTensorProduct

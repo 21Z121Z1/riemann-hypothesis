@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand.Product
 import GroundTheory.GlobalFields.IdeleGroups.LocalHerbrandInfinite

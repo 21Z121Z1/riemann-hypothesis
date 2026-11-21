@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LeafObjects.FunObj
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention

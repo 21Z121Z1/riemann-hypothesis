@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.FramesTr
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CastGLSymmApply

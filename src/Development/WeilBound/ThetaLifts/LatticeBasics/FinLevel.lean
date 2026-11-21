@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.ThetaBox
 import Development.WeilBound.ThetaLifts.LatticeBasics.SecondFromFirstStatement

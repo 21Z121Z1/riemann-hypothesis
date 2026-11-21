@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.Leaves
 import Development.WeilBound.ThetaLifts.SmallCones.GenSmallOf

@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagDomainCellCoordinatesStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AnalyticSystemRegularityPropertiesStatement

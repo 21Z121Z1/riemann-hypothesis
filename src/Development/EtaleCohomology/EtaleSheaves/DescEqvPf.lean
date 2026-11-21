@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.ClsBiprodEqZero
 import Development.EtaleCohomology.EtaleSheaves.LeafCover2Of

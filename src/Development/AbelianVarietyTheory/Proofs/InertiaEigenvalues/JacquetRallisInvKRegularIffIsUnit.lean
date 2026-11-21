@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsTestRep
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.UniNilp

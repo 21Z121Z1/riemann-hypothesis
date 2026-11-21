@@ -1,3 +1,4 @@
+import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ColumnsProofs.ChainCounts
 import Formalism.LocalToGlobal.Columns.Adelic
