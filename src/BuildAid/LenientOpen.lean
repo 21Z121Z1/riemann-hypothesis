@@ -28,9 +28,6 @@ namespace BuildAid.LenientOpen
 
 open Lean Elab
 
-/-- Exceptions that must not be swallowed. -/
-def mustRethrow (ex : Exception) : Bool := ex.isInterrupt || ex.isRuntime
-
 -- The instances `elabOpenDecl` needs (`Lean/Elab/Open.lean`), plus `MonadFinally` and
 -- `MonadQuotation` for the splitting.
 variable {m : Type → Type} [Monad m] [STWorld IO.RealWorld m] [MonadEnv m]
@@ -48,8 +45,7 @@ def elabOpenDeclLenient (withOpenDecls : List OpenDecl → m (List OpenDecl) →
       m (Option (List OpenDecl)) := do
     try
       return some (← withOpenDecls acc (elabOpenDecl piece))
-    catch ex =>
-      if mustRethrow ex then throw ex
+    catch _ =>
       return none
   let mut acc ← getOpenDecls
   match decl with
@@ -123,8 +119,8 @@ def elabOpenPrivate : CommandElab
       let piece ← `(open private $id $[in $tgts*]? $[from $mods*]?)
       try
         Lean.Elab.Command.elabOpenPrivate piece
-      catch ex =>
-        if mustRethrow ex then throw ex
+      catch _ =>
+        pure ()
   | _ => throwUnsupportedSyntax
 
 end BuildAid.LenientOpen
