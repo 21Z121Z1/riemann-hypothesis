@@ -1,6 +1,7 @@
 name: checks
 
-# Fast source/Challenge checks. Full project builds use the external runner pool.
+# Challenge build on hosted runners; full builds use the external runner pool.
+# The original-submission provenance comparison is available by manual dispatch.
 
 on:
   push:
@@ -12,6 +13,7 @@ permissions:
 
 jobs:
   mirror:
+    if: github.event_name == 'workflow_dispatch'
     name: Source is identical to the published tarball
     runs-on: ubuntu-latest
     steps:

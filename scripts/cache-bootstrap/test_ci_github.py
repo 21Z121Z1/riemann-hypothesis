@@ -116,6 +116,31 @@ class Validation(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "main"):
             ci.validated_request(self.event, self.request)
 
+    def test_moved_manual_head_binds_original_hosted_resolve_log(self):
+        self.run.update(event="workflow_dispatch", head_branch="main", display_title="Build PR #7 manual")
+        self.pr["head"]["sha"] = "8" * 40
+        hosted = dict(id=456, name="resolve", status="completed", conclusion="success",
+                      runner_group_id=0, runner_group_name="GitHub Actions", labels=["ubuntu-latest"])
+        self.jobs = dict(total_count=1, jobs=[hosted])
+        expected = {"candidate": self.identity["candidate_head"], "pr_head": self.request["pr_head"],
+                    "fingerprint": self.identity["input_fingerprint"], "reuse_from": ""}
+        def output(record):
+            def gh(command, **kwargs):
+                self.assertEqual(command, ["gh", "run", "view", "123", "--repo", ci.REPOSITORY, "--job", "456", "--log"])
+                kwargs["stdout"].write(b"resolve\tResolve immutable candidate using trusted code\t2026-11-21T12:00:00Z " + ci.pub.canonical(record) + b"\n")
+            return gh
+        with patch.object(ci.subprocess, "run", side_effect=output(expected)):
+            ci.validated_request(self.event, self.request)
+        for key in ("candidate", "pr_head", "fingerprint", "reuse_from"):
+            wrong = {**expected, key: "9" * 40}
+            with self.subTest(key=key), patch.object(ci.subprocess, "run", side_effect=output(wrong)):
+                with self.assertRaisesRegex(ValueError, "hosted resolve log"):
+                    ci.validated_request(self.event, self.request)
+        hosted.update(runner_group_id=5, runner_group_name="RiemannHypothesisBuild", labels=["rh-build"])
+        with patch.object(ci.subprocess, "run", side_effect=AssertionError("Never read logs from a non-hosted resolver")):
+            with self.assertRaisesRegex(ValueError, "GitHub-hosted"):
+                ci.validated_request(self.event, self.request)
+
     def test_failed_build_metadata_and_cache_hit_need_no_candidate_execution(self):
         self.run["conclusion"] = "failure"
         ci.validate_input(self.input())

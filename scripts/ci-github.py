@@ -160,6 +160,41 @@ def inspect(args):
     outputs(ready="ci-input" in selected, has_build={"ci-request", "ci-cache"} <= selected.keys(), run_id=run["id"])
 
 
+def bind_manual_resolve_log(run, request, identity):
+    """Preserve old-head work only when the immutable hosted resolve log binds it."""
+    jobs = prep.api(f"actions/runs/{run['id']}/attempts/{run['run_attempt']}/jobs?per_page=100")
+    rows = jobs.get("jobs", [])
+    selected = [job for job in rows if job.get("name") == "resolve"]
+    if jobs.get("total_count") != len(rows) or len(selected) != 1:
+        raise ValueError("Cannot identify the original hosted resolve job")
+    job = selected[0]
+    if (job.get("status") != "completed" or job.get("conclusion") != "success"
+            or job.get("runner_group_id") != 0 or job.get("runner_group_name") != "GitHub Actions"
+            or "self-hosted" in job.get("labels", []) or type(job.get("id")) is not int or job["id"] <= 0):
+        raise ValueError("Original resolve job was not a successful GitHub-hosted job")
+    with tempfile.TemporaryDirectory(prefix="rh-ci-resolve-log-") as name:
+        path = Path(name) / "resolve.log"
+        with path.open("wb") as output:
+            subprocess.run(["gh", "run", "view", str(run["id"]), "--repo", REPOSITORY,
+                            "--job", str(job["id"]), "--log"], check=True, stdout=output, stderr=subprocess.PIPE, timeout=120)
+        log = pub.regular_bytes(path, 2 * 1024 * 1024).decode("utf-8")
+    records = []
+    for line in log.splitlines():
+        start = line.find("{")
+        if start < 0:
+            continue
+        try:
+            record = pub.decode_json(line[start:].encode())
+        except (ValueError, UnicodeError):
+            continue
+        if isinstance(record, dict) and set(record) == {"candidate", "pr_head", "fingerprint", "reuse_from"}:
+            records.append(record)
+    expected = {"candidate": identity["candidate_head"], "pr_head": request["pr_head"],
+                "fingerprint": identity["input_fingerprint"], "reuse_from": request.get("reuse_from", "")}
+    if records != [expected]:
+        raise ValueError("Manual request does not match its original hosted resolve log")
+
+
 def validated_request(event, request, *, allow_implementation=False):
     run, number, title_head = live_run(event, allow_implementation=allow_implementation)
     allowed = {"repository", "run_id", "pr_number", "pr_head", "expected", "reuse_from"}
@@ -175,8 +210,6 @@ def validated_request(event, request, *, allow_implementation=False):
     if (pr.get("number") != number or pr.get("base", {}).get("repo", {}).get("full_name") != REPOSITORY
             or pr.get("base", {}).get("ref") != "main"):
         raise ValueError("PR does not target this repository's main branch")
-    if title_head == "manual" and request["pr_head"] != pr.get("head", {}).get("sha"):
-        raise ValueError("Manually requested PR head moved before publication")
     identity = pub.expected_metadata(request.get("expected"), promotion=True)
     actual = prep.identity(identity["candidate_head"])
     if pub.canonical(identity) != pub.canonical(pub.expected_metadata(actual, promotion=True)):
@@ -187,6 +220,8 @@ def validated_request(event, request, *, allow_implementation=False):
     reuse = request.get("reuse_from", "")
     if not isinstance(reuse, str) or reuse and not SHA.fullmatch(reuse):
         raise ValueError("Invalid successful-cache source revision")
+    if title_head == "manual" and request["pr_head"] != pr.get("head", {}).get("sha"):
+        bind_manual_resolve_log(run, request, identity)
     return request, identity, run
 
 

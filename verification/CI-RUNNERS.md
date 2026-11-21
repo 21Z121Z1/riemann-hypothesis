@@ -4,7 +4,8 @@ The `RiemannHypothesisBuild` GitHub runner group and `rh-build` label form one
 pool for ordinary cached `lake build` jobs. Start with **one runner per host**;
 the official runner accepts one job at a time. AWS and volunteer machines use
 the same enrollment and workflow. These jobs do not export declarations or run
-Comparator.
+Comparator. The original tarball comparison remains available through manual
+dispatch of `checks`; it does not reject source-changing PRs automatically.
 
 ## Trust boundary
 
