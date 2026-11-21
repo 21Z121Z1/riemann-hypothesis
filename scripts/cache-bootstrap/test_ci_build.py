@@ -240,6 +240,7 @@ roots = ["Base", "Stable", "Main"]
             return output, receipt
 
         changed, receipt = build("changed")
+        assert "artifact cache is not enabled" in (changed / "build.log").read_text(), "CI must use stock readable, non-writing cache mode"
         mapping = ci.load_map(changed / "outputs.jsonl")
         stable_hash, stable_archive = module_hashes["Stable"]
         assert mapping[stable_hash] == stable_archive
@@ -254,6 +255,7 @@ roots = ["Base", "Stable", "Main"]
         reused, _ = build("reused", ["--cache-map", str(changed / "outputs.jsonl")])
         assert ci.load_map(reused / "outputs.jsonl") == mapping
         assert "Built Base" not in (reused / "build.log").read_text()
+        assert "Unpacked Base" in (reused / "build.log").read_text(), "read-only cache mode must still reuse prior PR artifacts"
         # Changed options must not retain old input hashes, even with warm archives available.
         (root / "lakefile.toml").write_text(config + "\n[leanOptions]\npp.unicode.fun = true\n")
         commit()

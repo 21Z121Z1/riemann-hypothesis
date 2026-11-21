@@ -390,7 +390,9 @@ def sandbox(toolchain, project, packages, cache, result, control, jobs, dependen
             command += ["--ro-bind", "/dev/null", "/work/project/.lake/packages/" + package.name + "/.git"]
     environment = {"HOME": "/home/build", "PATH": "/opt/lean/bin:/run/current-system/sw/bin:/usr/bin:/bin",
                    "LEAN_SYSROOT": "/opt/lean", "LAKE_HOME": "/opt/lean", "LAKE_CACHE_DIR": "/work/cache",
-                   "LAKE_ARTIFACT_CACHE": "true", "LAKE_RESTORE_ARTIFACTS": "true",
+                   # Unset LAKE_ARTIFACT_CACHE: stock defaults allow cache reads
+                   # without copying every raw OLean/ILean/C into the cache.
+                   "LAKE_RESTORE_ARTIFACTS": "true",
                    "LEAN_NUM_THREADS": str(jobs), "RUST_MIN_STACK": "8388608"}
     for name, value in environment.items():
         command += ["--setenv", name, value]
@@ -466,6 +468,24 @@ def recover_completed_map(project, cache, toolchain, work, destination, known_ha
     destination.write_text(json.dumps(SCHEMA) + "\n" +
                            "".join(json.dumps(row) + "\n" for row in sorted(mapping.items())))
     print(f"Recovered {len(mapping)} completed module mappings after interrupted build", flush=True)
+
+
+def collect_mapped_ltars(project, cache, mapping):
+    """Stock -o confirms completed packs; readonly cache leaves new LTARs local."""
+    missing = {filename for filename in mapping.values()
+               if not (cache / "artifacts" / filename).exists()}
+    if not missing:
+        return
+    found = set()
+    for _, module, dep_hash in module_traces(project):
+        filename = mapping.get(dep_hash)
+        if filename not in missing:
+            continue
+        archive = safe_file(project / ".lake/build/ir", str(module.parent / (module.name + ".ltar")))
+        shutil.copyfile(archive, cache / "artifacts" / filename)
+        found.add(filename)
+    if found != missing:
+        raise ValueError("completed output map references a missing module LTAR")
 
 
 def main():
@@ -550,6 +570,7 @@ def main():
             recover_completed_map(project, cache, toolchain, work, mapping_file, base_hashes)
         mapping_file = safe_file(result, "outputs.jsonl")
         mapping = load_map(mapping_file)
+        collect_mapped_ltars(project, cache, mapping)
         artifacts = []
         paths = [safe_file(cache, "artifacts/" + name) for name in sorted(set(mapping.values()))]
         new_paths = [path for path in paths if path.name not in base_hashes]
