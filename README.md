@@ -87,6 +87,9 @@ What to know before running it:
   where none of that code has been compiled. CI does step 1 on every push and publishes the
   result as the `challenge-export` artifact. Its sha256 is
   `bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9`.
+- **Not `lake exe cache get`.** In this repository that command also downloads prebuilt files
+  for the submission itself, and `lake build Main` then compiles nothing. Steps 1 and 2 use
+  `lake exe mathlib/cache get`, which fetches Mathlib only.
 - **Cost.** Hours on a large machine, about 100 GB of disk, and a lot of memory for step 4.
 
 The [notes](verification/NOTES.md) have the details: where the source came from, the Lean

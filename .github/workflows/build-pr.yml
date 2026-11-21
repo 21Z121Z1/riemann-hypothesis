@@ -15,10 +15,11 @@ permissions:
   contents: read
   pull-requests: read
 
-# Finish and cache a running build before starting its successor. GitHub coalesces
-# intermediate pending updates; cancelling active builds would discard useful work.
+# Preserve running builds and their partial caches when a PR advances. Distinct
+# heads may use separate available runners; repeat events for one head coalesce.
+# Manual dispatches serialize separately because they resolve the head at runtime.
 concurrency:
-  group: rh-build-pr-${{ github.event.pull_request.number || inputs.pr_number }}
+  group: rh-build-pr-${{ github.event.pull_request.number || inputs.pr_number }}-${{ github.event.pull_request.head.sha || 'manual' }}
   cancel-in-progress: false
 
 jobs:
