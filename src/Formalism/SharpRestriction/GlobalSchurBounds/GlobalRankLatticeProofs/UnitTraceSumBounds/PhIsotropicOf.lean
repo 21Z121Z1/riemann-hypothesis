@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.CubeOfTwoIdentities
 import Formalism.SharpRestriction.GlobalSchurBounds.StatementTranslationInvariantSeventh
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartNakayamaGen
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartNakayamaGenLocal
 set_option maxSynthPendingDepth 1

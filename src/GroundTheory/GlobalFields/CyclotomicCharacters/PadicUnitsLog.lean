@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CyclotomicCharacters.ProfinitePadic
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.NumberTheory.Padics.ProperSpace

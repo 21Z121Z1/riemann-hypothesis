@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
 import Development.WeilBound.CoreStatements.VolumeEquality.PrimeIdealOfFromSpec
 import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeetsPoint

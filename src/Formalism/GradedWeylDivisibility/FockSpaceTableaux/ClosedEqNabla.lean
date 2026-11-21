@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementB
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Mathlib.Algebra.Order.Ring.Star

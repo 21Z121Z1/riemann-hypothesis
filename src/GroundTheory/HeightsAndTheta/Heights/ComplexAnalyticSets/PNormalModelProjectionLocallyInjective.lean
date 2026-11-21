@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalModelProjectionLocallyInjective
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.NormalModelGraph
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PNormalModelProper

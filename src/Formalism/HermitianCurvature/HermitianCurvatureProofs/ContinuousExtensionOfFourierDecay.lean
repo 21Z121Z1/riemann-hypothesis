@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothBoundedOfFourierDecay
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothDecayOfWeighted
 

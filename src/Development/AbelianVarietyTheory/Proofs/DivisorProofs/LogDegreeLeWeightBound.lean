@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BinomialFlagDimensionDegreeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogFinrankCuspFormsLeStatement
 open CategoryTheory AlgebraicGeometry NumberField

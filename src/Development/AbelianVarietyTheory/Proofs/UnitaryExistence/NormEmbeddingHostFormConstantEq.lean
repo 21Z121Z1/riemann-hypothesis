@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspMulOf
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CuspFormsDominantWeightFiniteDimensional
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IntAll

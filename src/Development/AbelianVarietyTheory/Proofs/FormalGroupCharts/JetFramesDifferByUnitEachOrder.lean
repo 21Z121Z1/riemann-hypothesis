@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.TwoChartAtlas.AdditionLawSecondIdentity
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GaugeUniqA
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GaugeUniqB

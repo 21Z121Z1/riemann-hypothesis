@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 import Formalism.SharpRestriction.Divisibility.PrimeDegreeVariant
 import Development.AbelianVarietyTheory.Definitions.Divisors.SplitDoublingNBlock

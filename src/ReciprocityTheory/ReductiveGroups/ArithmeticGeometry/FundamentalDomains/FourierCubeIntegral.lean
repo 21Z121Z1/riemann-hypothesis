@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.FourierCubeVolume
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Dynamics.Ergodic.Action.Regular

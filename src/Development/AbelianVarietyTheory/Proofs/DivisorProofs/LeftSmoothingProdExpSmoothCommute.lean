@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GKModules.ParametricIntegral
 import GroundTheory.AutomorphicForms.DixmierMalliavinHaarCoord
 import GroundTheory.AutomorphicForms.GKModules.RightRegular

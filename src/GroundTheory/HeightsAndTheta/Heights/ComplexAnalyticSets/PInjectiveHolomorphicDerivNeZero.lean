@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StInjectiveHolomorphicDerivNeZero
 import Mathlib.Analysis.Complex.OpenMapping
 import Mathlib.Analysis.SpecialFunctions.Complex.Analytic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.EllReg
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferSmoothOfRegularity
 

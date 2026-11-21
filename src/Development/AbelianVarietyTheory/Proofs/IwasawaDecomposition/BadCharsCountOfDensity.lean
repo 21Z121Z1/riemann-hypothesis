@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.AutomorphicForms₂.Jutila
 import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
 import Mathlib.Tactic.Monotonicity.Lemmas

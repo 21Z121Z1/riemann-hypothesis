@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.KerInclOn
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SumNormSqOrthonormalLeHilbertSchmidt
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DiagSOfSDiagAt

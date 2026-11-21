@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LetterConditionGlobal
 import Formalism.SharpRestriction.LevelLetterCocycles.RingHypothesesOfCrystalline
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachOperatorProductShiftMemLatticeStatement

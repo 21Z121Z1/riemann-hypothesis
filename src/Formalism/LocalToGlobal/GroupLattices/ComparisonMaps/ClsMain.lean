@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ClsOrb
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PtGComp
 

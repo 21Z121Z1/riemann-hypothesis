@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCompletionNormalDescent
 import Mathlib.RingTheory.AdicCompletion.Noetherian
 import Mathlib.RingTheory.PicardGroup

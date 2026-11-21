@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicChartHolomorphicEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraicChartAnalyticRegularFunctionsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleClosedAffinePrimeIdealStatement

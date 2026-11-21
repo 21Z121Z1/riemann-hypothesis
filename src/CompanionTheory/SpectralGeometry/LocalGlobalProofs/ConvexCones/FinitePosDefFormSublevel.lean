@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.ConvexCones.RatFormPosOfIntPos
 import Mathlib.Data.Pi.Interval
 import Mathlib.Tactic.Monotonicity.Lemmas

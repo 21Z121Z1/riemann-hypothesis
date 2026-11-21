@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsEqActStdLat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLatticeStdLatAndAct
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLatticeChainLatAndComap

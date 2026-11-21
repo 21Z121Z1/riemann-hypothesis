@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.LemmaCFull
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LinExtEqZeroOfMemExt
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.LevelsModConstIffOfNoDown

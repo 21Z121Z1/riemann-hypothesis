@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
 import Formalism.MeanHeightDescent.MuMaxMinkowski
 import Formalism.MeanHeightDescent.StatementA

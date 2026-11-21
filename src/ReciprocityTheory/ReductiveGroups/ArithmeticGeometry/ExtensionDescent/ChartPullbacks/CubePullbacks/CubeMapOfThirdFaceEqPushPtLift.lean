@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.CubicalStructures.CubicalPullBaseChangeSt
 import Std.Tactic.BVDecide.Normalize.BitVec

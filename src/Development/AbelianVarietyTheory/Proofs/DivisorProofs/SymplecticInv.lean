@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FundamentalDomainSymplecticPreimageStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiberConjugationStripInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodDatumCurvatureIntegralChangeStatement

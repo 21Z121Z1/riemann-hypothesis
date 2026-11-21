@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.LatticeDualFibres.FibreDualStable
 import Formalism.WachLatticeTwists.CharacterSplitJumps.Statement
 import ReciprocityTheory.Hypotheses.GalCohDefs

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleTateTwistCupPairingOfTensorAndResolutionPro
 import Development.EtaleCohomology.TateTwists.EtaleTensorTripleProductLeibnizOfSeparated
 import Development.EtaleCohomology.TateTwists.TensorLocallyBijectiveHolds

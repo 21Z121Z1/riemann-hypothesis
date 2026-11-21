@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.IdxCalc
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.RegularLocalRing.Defs

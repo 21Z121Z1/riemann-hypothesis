@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsNormBoundThreeFamilies
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsometryOfBounded
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IntegrableWeightNormSq

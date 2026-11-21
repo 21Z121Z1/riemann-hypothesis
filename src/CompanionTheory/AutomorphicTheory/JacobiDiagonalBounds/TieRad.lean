@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHat
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.TieAlg
 import Formalism.HermitianCurvature.StatementTop

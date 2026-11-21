@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnLogNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalisationGenericSmoothCover
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogNormRationalSectionArchIntegrableStatement

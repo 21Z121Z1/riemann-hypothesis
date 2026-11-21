@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Analysis.Normed.Unbundled.RingSeminorm
 import Mathlib.LinearAlgebra.Matrix.AbsoluteValue
 import Mathlib.Tactic.Monotonicity.Lemmas

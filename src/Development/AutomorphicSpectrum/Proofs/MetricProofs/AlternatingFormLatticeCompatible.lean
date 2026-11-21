@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects
 import Mathlib.GroupTheory.FiniteAbelian.Basic
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HarderNarasimhan.StatementPl
 
 open Module NumberField IsDedekindDomain

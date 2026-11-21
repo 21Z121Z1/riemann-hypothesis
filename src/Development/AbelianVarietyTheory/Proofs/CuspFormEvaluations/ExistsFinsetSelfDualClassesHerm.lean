@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SemiAll
 import ReciprocityTheory.SemistableReduction.LatTest
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.CmApproximationTransference

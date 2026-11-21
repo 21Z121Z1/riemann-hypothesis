@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.IncomingBounds.DefsThmP
 import Formalism.IncomingBounds.FlowDegreeBounds.ProdRangeEqFactorialMulProdIco
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

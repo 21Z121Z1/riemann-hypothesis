@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HarderNarasimhan.StatementPl
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar
 import Lemmata.GeneralBFactSecondTail.Imports

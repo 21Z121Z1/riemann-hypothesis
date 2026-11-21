@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Algebra.Order.Floor.Extended

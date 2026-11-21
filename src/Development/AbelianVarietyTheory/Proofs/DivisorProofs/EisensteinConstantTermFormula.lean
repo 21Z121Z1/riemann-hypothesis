@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRationalPointSwappingFirstColumnsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightInvariantUnderStabilizerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BruhatCellRationalDecompositionStatement

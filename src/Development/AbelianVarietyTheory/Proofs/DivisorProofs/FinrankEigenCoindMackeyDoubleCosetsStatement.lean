@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankEigenCoindMackeyDoubleCosets
 open GlobalTheory.FinGL Formalism.L2.DIV Module
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.BCoreT
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.StatementA
 import Mathlib.Algebra.Module.StablyFree.Basic

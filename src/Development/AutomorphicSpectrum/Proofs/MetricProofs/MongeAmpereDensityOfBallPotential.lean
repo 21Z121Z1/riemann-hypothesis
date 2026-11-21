@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ComplexHessianTransposeIsHermitian
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
 import Mathlib.Analysis.Matrix.Normed

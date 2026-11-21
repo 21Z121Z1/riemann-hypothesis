@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SideNormalisedGap
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.KFinDecayOfDecInf
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SigmaFiniteOfPosLintegralNeTop

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.BadStmt
 import Development.WeilBound.ThetaLifts.LatticeBasics.ContinuousFlat
 import Development.WeilBound.ThetaLifts.TowerModels.PlaneHerm

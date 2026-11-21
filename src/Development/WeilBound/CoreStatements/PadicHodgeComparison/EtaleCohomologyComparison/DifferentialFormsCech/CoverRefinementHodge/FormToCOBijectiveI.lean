@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.DifferentialFormsCech.CoverRefinementHodge.BridgeLApply
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CechFormsAddSmulStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormsToCechBijectiveStatement

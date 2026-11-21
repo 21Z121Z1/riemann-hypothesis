@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.DivisorCycles.CycleCount
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PowEig
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable

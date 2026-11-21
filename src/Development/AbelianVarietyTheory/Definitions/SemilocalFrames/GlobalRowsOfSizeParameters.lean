@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ToGlob0
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.CosetExpUnique
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowGat

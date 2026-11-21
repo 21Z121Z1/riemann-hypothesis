@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExactRanksAlongTiedFamily
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TFrameOfRanksRowThree

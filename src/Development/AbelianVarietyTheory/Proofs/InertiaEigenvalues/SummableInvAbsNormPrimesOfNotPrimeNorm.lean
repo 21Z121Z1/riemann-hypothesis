@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InfinitelyManyPrimesInRayClass
 import Mathlib.NumberTheory.RamificationInertia.Basic
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

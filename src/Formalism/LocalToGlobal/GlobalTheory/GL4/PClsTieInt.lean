@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PClsTieLoc
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale
 import Formalism.LocalToGlobal.HermitianColumns.ColsHerm

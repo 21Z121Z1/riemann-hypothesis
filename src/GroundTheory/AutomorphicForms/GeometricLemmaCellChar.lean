@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GeometricLemmaJacquetCell
 import GroundTheory.LocalFields.LocalFourierHaar
 import GroundTheory.AutomorphicForms.CuspidalAdmissible

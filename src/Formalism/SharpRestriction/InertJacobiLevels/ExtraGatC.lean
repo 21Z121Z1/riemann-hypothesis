@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.GatAdd
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraGat
 

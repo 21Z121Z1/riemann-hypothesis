@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.Hilbert90FiniteIdelesCongruenceStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsXiOKNotTwistCond
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGeneratingCharacters

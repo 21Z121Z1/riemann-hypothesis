@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRiemannExtensionPolynomial
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.OsgoodSeparate
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PolynomialFrame

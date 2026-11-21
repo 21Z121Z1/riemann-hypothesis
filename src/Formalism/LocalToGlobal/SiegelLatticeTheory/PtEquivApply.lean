@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.Point
 import Formalism.LocalRingCardinality.Params
 import Mathlib.Tactic.ENatToNat

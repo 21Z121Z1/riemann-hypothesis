@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.SobolevIteration.ArvOSobPfKer
 import Formalism.LocalToGlobal.IndefiniteReal.SobolevIteration.ArvOSobPfChart
 import Formalism.LocalToGlobal.IndefiniteReal.SobolevIteration.ArvOSobPfKFin

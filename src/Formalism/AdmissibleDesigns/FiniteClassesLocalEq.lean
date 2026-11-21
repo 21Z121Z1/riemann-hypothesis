@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
 import Formalism.AdmissibleDesigns.SelfGood
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.LiftingConditionOfWindows

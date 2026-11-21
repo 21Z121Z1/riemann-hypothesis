@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistHomModuleIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PushforwardHomAdjunctionIsoStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits Filter

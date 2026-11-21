@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PublishedTheorems.JacquetShalikaRigidity.ColumnConjugationMeasure
 import GroundTheory.GlobalFields.TateThesis.AdeleScaling
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CountingPairs

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsZonalReduction
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.StatementsZonalPairing
 set_option maxSynthPendingDepth 1

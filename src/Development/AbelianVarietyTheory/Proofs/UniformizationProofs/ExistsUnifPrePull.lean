@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPullbackPullbackMap
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGrpPullbackThick
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.GtCoordCompatOfPull

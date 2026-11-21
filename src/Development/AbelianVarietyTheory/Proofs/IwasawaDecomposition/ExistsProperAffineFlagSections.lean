@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsProperFlagOverAffineStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagDetDivisorTrivialStableStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFlagSectionsStableStatement

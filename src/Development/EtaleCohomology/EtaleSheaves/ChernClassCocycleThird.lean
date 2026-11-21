@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.ChernClassEvaluation
 import Development.EtaleCohomology.EtaleSheaves.ChernClassRootLocalization
 import Mathlib.Algebra.Order.Ring.Star

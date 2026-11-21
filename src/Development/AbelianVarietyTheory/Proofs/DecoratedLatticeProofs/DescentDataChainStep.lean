@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ThetaAtSeesawProductDatumEqVacuumCombinationsStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DescentDataStepLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.DescentDataStepVectorStatement

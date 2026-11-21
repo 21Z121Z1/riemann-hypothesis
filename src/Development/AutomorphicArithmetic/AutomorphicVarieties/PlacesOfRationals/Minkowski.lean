@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.ExistsCen
 import GroundTheory.GlobalFields.ExistenceTheorem.ExistsIsAbelianGaloisRangeIdeleClassNormEqOfFini
 import Mathlib.NumberTheory.NumberField.ExistsRamified

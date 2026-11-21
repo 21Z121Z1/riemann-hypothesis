@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.PrimOfIsUnitDet
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HenselStepCardComap
 import Mathlib.Order.CompletePartialOrder

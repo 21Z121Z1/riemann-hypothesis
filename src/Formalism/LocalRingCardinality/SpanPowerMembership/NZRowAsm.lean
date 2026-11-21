@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowZ
 import Formalism.LocalRingCardinality.SpanPowerMembership.ThetaFamilyAdmissibleThree
 import Formalism.SharpRestriction.InertJacobiLevels.GaugeExists

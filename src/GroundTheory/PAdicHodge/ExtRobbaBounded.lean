@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.ExtRobbaTeich
 import GroundTheory.PAdicHodge.RobbaSeries
 import Mathlib.Algebra.Order.Star.Real

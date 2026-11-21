@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WordHolomorphicAndUniform
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinResidueHolomorphicRegion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableOfIsSm

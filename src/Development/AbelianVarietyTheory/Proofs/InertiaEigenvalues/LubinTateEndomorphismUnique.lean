@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfInAMul
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LtSeries
 import GroundTheory.LocalFields.FormalGroups.LubinTateGroup

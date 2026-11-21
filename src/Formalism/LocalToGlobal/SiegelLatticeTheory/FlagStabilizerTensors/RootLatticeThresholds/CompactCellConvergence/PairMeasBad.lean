@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.CompactCellConvergence.MsetOfClosed
 import Formalism.SharpRestriction.CuspSpanNormBounds.SpanMemOfImage
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSB

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorHolomorphicExtOfValues
 open Filter Topology TopologicalSpace GlobalTheory.AnPer TensorProduct
 set_option maxHeartbeats 1000000 in

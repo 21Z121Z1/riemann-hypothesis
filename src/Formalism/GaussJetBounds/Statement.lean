@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.IncomingBounds.IncomingBound
 import Mathlib.RingTheory.PowerSeries.Exp
 

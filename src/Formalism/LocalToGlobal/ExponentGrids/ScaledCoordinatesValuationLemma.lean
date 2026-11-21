@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.PassageScaleFree
 import Formalism.QuotientMetricDivisors.Complement2Normaliser
 import Formalism.PairingDivisors.StatementX

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.ChartExistence
 open CompanionTheory.Bmu
 set_option maxHeartbeats 1000000 in

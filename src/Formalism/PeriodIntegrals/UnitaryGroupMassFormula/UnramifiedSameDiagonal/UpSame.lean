@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnramifiedSameDiagonal.UpFSame
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedDiagonal.DiaConj
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedDiagonal.DiaSame

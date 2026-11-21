@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.JacChart
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.Combinatorics.Quiver.ReflQuiver

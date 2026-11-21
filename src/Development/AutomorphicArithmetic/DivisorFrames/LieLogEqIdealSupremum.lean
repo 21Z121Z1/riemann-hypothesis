@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.DualNumberTangentCoordinates
 import Development.AutomorphicArithmetic.DivisorFrames.PadicCoordinateInfimum
 import Development.AutomorphicArithmetic.DivisorFrames.LieLatticeGenerator

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsKurFrobTauEmbPosPl
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntBasis
 import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSp

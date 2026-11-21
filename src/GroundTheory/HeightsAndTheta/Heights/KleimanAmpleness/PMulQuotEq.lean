@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.MulQuotEqSt
 import Mathlib.RingTheory.PiTensorProduct
 set_option maxSynthPendingDepth 1

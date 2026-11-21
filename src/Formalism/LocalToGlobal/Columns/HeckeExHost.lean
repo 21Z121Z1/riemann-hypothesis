@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.HeckeEx
 import Formalism.LocalToGlobal.Columns.CyclotomicIsCyclotomicExtension
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HostPrimeSplitting.DSplit

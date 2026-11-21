@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementD
 import Formalism.SubspaceCounting.GoodOrbitIntervalTileCondition
 import Mathlib.RingTheory.PiTensorProduct

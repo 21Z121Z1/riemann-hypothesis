@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoheightLeOneOfFlat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussAtCompAlg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FnOfPreimageMemSpanBy

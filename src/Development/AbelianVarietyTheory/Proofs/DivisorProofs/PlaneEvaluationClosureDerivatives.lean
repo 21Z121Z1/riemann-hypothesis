@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxCoordinatesInsertZero
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 open scoped TensorProduct Matrix

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafKill1Of
 import Development.EtaleCohomology.EtaleSheaves.SecondDegreeKilling.LeafKill2Of
 

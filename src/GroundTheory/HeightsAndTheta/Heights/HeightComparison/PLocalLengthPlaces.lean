@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightLocalLengthPlaces
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightLocalQuotCard
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightCentredPlacesFinite

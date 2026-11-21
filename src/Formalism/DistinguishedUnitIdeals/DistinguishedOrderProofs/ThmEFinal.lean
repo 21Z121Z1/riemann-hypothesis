@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.FinalArcProps
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.PolynomialEvaluationValuation
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Rounding

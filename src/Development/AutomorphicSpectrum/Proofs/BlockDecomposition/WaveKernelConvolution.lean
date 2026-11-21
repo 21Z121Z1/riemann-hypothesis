@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveKernelCompositionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ActEqSumOfKernel
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralConvApplyEq

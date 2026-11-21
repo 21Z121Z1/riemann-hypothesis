@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.Topology.Sheaves.Presheaf
 open GlobalTheory.BCT PositivityTheory.Rg.BcB.G8.Fin

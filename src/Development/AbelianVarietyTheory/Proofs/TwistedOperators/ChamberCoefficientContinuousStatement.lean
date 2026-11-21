@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChamberCoefficientContinuous
 open MeasureTheory GlobalTheory.Chamber
 set_option maxHeartbeats 1000000 in

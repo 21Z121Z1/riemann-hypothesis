@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HermitianWitt
 import Mathlib.Algebra.Module.StablyFree.Basic
 

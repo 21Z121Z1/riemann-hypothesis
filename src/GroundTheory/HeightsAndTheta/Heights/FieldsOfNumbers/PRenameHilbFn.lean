@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsRename
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.IntNumRelabel
 set_option maxSynthPendingDepth 1

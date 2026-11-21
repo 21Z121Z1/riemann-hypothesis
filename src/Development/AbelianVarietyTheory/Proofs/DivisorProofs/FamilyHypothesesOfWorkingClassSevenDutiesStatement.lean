@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FamilyHypothesesOfWorkingClassSevenDuties
 open Formalism.BasicNotions Formalism.MainNotions GlobalTheory.EX
 set_option maxHeartbeats 1000000 in

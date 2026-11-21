@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsTotallyImaginaryPadicSqrt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IsLocallyAlgebraicTransferOfPlaceIso
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.LaHecke

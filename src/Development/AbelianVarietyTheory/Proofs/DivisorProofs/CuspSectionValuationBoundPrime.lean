@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionIntegralReductionDvrStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinitePlaceNormBoundIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivativeBoundAllPointsStatement

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.GelfA
 import Formalism.RealPlaceAnalysis.StatementB
 import Formalism.GradedWeylDivisibility.StatementA

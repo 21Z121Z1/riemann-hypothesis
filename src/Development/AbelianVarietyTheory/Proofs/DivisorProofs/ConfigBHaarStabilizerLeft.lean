@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawEvaluationHaarNormalizedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawEvaluationHaarGlobalFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawEvaluationHaarVolume

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwist
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic

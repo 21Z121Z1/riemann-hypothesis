@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvalMod
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.AinfMapSurjective
 noncomputable section

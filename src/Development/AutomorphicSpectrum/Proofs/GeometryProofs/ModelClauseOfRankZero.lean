@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PartIHolds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ModuliSchemesExist
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexUniformisationHolds

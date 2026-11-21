@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentComposition.StepOne
 import Std.Tactic.BVDecide.Normalize.Prop
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.AcrisNAlgebraMapAinf
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Embedding
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamMap

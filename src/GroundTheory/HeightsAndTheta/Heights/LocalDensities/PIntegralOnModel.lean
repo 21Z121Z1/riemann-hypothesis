@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.ToricVarieties.KrullDomain
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.Statements
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.StatementsIntegralPoint

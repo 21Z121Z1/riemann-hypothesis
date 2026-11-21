@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.KumSExact
 import Development.AutomorphicArithmetic.CommutativeAlgebra.PicUnit
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EqOfUnitGlobalSectionEq

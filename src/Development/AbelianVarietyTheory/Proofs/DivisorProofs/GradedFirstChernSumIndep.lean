@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoGradedDeterminantIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernTensorAddStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernIsometricEqStatement

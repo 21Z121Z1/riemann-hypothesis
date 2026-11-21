@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianAdjointExistsUniqueOfPosDef
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable
 import Mathlib.Tactic.ENatToNat

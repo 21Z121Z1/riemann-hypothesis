@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsGenericCount
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StGoodChartModel
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StComponentsGenericCount

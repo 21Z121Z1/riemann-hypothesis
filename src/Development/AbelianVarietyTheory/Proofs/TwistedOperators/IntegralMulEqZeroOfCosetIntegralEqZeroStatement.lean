@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegralMulEqZeroOfCosetIntegralEqZero
 open MeasureTheory GlobalTheory.AutomorphicL2Unitary
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsSubquotientParIndProductsFlattened
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MultiProdCompCongr
 open GlobalTheory.PRep GlobalTheory.SmGL GlobalTheory.LocGL

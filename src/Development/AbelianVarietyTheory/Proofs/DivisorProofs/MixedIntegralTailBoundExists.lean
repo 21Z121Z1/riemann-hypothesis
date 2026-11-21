@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedIntegralCutoffLogDecayStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TailLogIntegralBoundOfDistributionStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeIntA

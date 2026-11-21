@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStepLevelConjBaseLatticeUnitaryStatement
 import Formalism.LocalToGlobal.Columns.TwQExact
 import Formalism.LocalToGlobal.Columns.TwQLev

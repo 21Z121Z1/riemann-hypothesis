@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WordAppendSingle
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormToLMulLe
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRapidInf

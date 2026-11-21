@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemDualSetOfMemSpan
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DualOfDualFrames
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StepLevelTLat

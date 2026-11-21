@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetsOfParOf
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPow
 open AlgebraicGeometry CategoryTheory Limits NumberField IsDedekindDomain

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ImportsMore
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ImportsTer
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ImportsBis

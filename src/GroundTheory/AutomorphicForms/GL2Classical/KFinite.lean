@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2Classical.IsWeightLevelAdelicLift
 
 open NumberField IsDedekindDomain Matrix Set Filter Topology

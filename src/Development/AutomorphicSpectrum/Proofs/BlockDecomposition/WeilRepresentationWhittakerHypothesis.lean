@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitRepresentationHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilGaussSumExistenceHypothesisStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilGaussConstantHypothesisStatement

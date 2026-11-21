@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SmallPointsCoordRatioBoundStatement
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MatchStatement
 import Mathlib.RingTheory.Valuation.LocalSubring

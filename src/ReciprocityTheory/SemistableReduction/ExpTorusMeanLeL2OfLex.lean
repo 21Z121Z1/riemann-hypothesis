@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

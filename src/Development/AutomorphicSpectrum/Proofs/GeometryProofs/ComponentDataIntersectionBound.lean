@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GramMatrixChangeFrameStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PTopNPoly

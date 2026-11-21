@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.OrbitalIntegrals.BrMain
 import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.NearDown
 

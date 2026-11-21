@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.SesquilinearFractions.SpMapMonoOfFraction
 import Development.WeilBound.CoreStatements.SesquilinearFractions.GModel
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SquareSystemPolarVanishingStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SquarePolarIntegralIdentityStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PolarIdentityFromSymmetricFormsStatement

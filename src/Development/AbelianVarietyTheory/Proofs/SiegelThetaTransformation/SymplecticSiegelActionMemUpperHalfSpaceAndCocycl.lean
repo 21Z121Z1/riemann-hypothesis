@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 import Mathlib.Analysis.Matrix.Hermitian
 import Mathlib.LinearAlgebra.SymplecticGroup

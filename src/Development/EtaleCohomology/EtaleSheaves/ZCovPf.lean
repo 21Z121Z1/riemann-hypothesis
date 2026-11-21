@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LineHighPf
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 import Mathlib.RingTheory.MvPolynomial.Ideal

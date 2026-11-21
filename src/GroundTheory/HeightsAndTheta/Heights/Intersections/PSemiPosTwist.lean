@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NoCommonComponentCoordinatesPlane
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StTorusInvLevi
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithModel

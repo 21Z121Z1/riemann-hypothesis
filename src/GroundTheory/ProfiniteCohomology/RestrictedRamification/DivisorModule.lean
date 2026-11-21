@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality.QuotientToInvariantsFunctorPreservesZeroMorphism
 import GroundTheory.ProfiniteCohomology.TorsionDualDefs
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TofTorMkCIsQuotientMap
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Dynamics.Ergodic.Action.Regular

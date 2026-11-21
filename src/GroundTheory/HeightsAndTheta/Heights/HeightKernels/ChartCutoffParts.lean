@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.HessCRestrictThm
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartCutoffEnergy
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartEnergyCocycle

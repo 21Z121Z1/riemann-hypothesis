@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IteratedFDerivSubApply
 import Mathlib.Analysis.LocallyConvex.HahnBanach
 import Mathlib.Analysis.Normed.Operator.BanachSteinhaus

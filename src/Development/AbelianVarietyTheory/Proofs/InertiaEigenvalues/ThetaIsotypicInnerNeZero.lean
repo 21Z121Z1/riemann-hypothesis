@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SplitPairThetaLowestStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalComponentsUnitarisableStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsIrreducibleTwist

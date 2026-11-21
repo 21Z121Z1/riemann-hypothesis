@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.DesignExistsOfChoices
 import Formalism.SharpRestriction.GlobalSchurBounds.AlgebraicJets
 import Formalism.SharpRestriction.Divisibility.PrinLevClass

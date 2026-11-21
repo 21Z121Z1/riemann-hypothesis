@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsPolyDegPrW
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.OmgMulLeft
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HpkConjTranspose

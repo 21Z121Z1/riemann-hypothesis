@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlatMapColonIdealStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlatPrincipalHeightOneStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalConeFormRegularStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.MeanSquareBounds.meanSqK
 import Development.AutomorphicArithmetic.MeanSquareBounds.BadShare
 import Development.AutomorphicArithmetic.MeanSquareBounds.BoxOfS

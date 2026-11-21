@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.DualLStable
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.LatSOfMem
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.WeilIsOfDouble
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DetCondOfEigenbasis
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueSumSingle

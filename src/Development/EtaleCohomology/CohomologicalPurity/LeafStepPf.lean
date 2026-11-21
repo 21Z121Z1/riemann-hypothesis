@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafFlqPf
 import Development.EtaleCohomology.KummerTheory.GluePf
 import Development.EtaleCohomology.KummerTheory.FlasquePf

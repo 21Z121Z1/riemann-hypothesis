@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebraHeight.BcChiTmul
 import Mathlib.RingTheory.TwoSidedIdeal.Instances
 import Std.Tactic.BVDecide.Normalize.Prop

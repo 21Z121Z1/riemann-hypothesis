@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.ThirdArithmeticHolds
 open Matrix UpperTheory.V.Weyl
 

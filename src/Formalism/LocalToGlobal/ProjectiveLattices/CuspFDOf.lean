@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
 
 set_option synthInstance.maxHeartbeats 400000

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.AlgebraMapMemOv
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.IsCompactOhat
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MassComputations.LatHat

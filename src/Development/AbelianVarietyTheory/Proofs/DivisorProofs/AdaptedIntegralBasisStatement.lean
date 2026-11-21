@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedIntegralBasis
 open PowerSeries
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusSemilinearCompatible
 open GlobalTheory.RingChain
 open scoped TensorProduct Pointwise ChangeOfRings

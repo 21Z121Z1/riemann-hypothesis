@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.PetEqRelIndexMulPetProd
 import Mathlib.Analysis.CStarAlgebra.Classes
 open UpperHalfPlane ModularForm CongruenceSubgroup MeasureTheory

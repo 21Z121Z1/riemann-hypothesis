@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.IncomingBounds.IndexLastStep
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndexSigned
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet

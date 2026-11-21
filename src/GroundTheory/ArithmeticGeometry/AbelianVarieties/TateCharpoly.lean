@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualQuadratic
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.WeilPairingTate
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.TateDeterminant

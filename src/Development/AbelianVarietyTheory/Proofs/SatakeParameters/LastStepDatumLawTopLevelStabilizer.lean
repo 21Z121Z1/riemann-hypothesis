@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.LastRowColLevSym
 import Formalism.LocalToGlobal.Columns.ChainLawPhiTop
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmulCompSmul

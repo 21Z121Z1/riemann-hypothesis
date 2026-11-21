@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DoubleCosetMeasures.Statement
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.GLRealOpen
 import Mathlib.RingTheory.PiTensorProduct

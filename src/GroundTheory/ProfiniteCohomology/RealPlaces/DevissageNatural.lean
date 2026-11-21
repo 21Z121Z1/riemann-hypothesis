@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RealPlaces.DevissageDefs
 import GroundTheory.ProfiniteCohomology.RealPlaces.CupSequence
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RaChar
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RaTlog
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight

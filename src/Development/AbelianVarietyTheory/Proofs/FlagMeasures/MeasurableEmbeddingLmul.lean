@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapExistsFunctional
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GapCoefficientDerivativeBound
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CapParamOfIsHCTypeW

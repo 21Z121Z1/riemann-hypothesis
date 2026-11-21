@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HasDerivAtTMul
 import Mathlib.Analysis.Calculus.ParametricIntervalIntegral
 import Mathlib.Order.CompletePartialOrder

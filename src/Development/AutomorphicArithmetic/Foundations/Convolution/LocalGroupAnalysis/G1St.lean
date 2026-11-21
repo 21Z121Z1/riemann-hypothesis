@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.LintegralOfRealToReal
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.ClosedSubgroupCutoffExists
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.OrbitalIntegralAbsoluteConvergence

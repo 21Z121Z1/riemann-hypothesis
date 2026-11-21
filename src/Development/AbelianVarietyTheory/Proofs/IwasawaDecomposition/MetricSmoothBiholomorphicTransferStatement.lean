@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetricSmoothBiholomorphicTransfer
 open Filter Topology Matrix
 open scoped ContDiff

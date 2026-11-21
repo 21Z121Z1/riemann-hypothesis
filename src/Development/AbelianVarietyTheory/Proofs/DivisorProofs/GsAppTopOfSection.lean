@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SharpBundleFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValMemOfCorrPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueScalar

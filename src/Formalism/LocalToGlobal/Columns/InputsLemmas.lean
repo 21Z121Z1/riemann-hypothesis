@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.Inputs
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.Minkowski
 

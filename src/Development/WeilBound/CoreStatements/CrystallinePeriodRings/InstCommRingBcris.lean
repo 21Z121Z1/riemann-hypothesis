@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.ACrisBdRGalois
 import GroundTheory.PAdicHodge.BdRTGalois
 import GroundTheory.PAdicHodge.BdRField

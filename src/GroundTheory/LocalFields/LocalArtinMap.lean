@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.MaximalAbelianExtension
 import GroundTheory.LocalFields.LocalReciprocityUniversal
 import GroundTheory.LocalFields.Existence

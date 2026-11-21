@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.LevelA
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.MeasFr
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.MeasUpq

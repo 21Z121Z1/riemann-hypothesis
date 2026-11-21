@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.InvariantSectionsRingChange
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.RingIndep
 

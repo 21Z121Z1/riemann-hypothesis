@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StAreaMultiplicity
 import Mathlib.Analysis.InnerProductSpace.NormDet
 import Mathlib.Order.CompletePartialOrder

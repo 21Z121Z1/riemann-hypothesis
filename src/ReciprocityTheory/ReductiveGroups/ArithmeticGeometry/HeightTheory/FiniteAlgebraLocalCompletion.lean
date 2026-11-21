@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsPrecompleteFiniteModule
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.AdicCompletion.Noetherian

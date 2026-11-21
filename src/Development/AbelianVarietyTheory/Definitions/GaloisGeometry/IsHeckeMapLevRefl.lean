@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDivPlace
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IsFullSetCompEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtModelForgetFiniteEtale

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.AutCFixed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyScaledInverse
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs

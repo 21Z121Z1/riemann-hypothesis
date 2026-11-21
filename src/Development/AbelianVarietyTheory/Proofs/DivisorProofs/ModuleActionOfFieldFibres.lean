@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuleActionFractionFieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalGeneratorsResidueBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyFreeOfMaximalIdealGeneratorStatement

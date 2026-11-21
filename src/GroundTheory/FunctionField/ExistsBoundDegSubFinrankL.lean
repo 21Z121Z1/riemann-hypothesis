@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.FunctionField.DivisorDegree
 import GroundTheory.FunctionField.Repartition
 set_option maxSynthPendingDepth 1

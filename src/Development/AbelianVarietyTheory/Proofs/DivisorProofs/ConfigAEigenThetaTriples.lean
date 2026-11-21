@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalUnipotentCosetParametrizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingEigenIntertwinerTripleSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingIntegralCosetRepresentativesStatement

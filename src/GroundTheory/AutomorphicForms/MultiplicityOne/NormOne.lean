@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.MultiplicityOne.Injective
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.ExistsSplitTorusPointsMulEquiv
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.TensorProduct.IncludeLeftSubRight

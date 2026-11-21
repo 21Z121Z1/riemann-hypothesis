@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelativeDimZeroFibreDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineFiniteCoverRelDimZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineFiniteCoverRefineStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.CutIdentityRightSideCongrOfSubMem
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Statements
 set_option maxSynthPendingDepth 1

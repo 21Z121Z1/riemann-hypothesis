@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RootVectorActionCutoff
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ResGContDiffAt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialRaisingTopOfParts

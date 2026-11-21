@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PTenFrames
 import Formalism.LocalToGlobal.Divisibility.CoefMod
 import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsKodairaSection
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartDenominator
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionSupBound

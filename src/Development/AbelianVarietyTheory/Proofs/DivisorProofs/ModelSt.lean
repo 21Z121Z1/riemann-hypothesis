@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRunModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadingOfRunModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitsCompletelyTypePrime

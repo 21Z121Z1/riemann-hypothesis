@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DirichletDensity.Statement
 import Formalism.CMTypeGalois.HalfTypesFromGeneral
 import Mathlib.NumberTheory.NumberField.Discriminant.Different

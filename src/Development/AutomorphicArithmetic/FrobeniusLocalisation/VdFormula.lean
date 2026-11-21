@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.RhoArt
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.LogPrimeIndep
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.LogRdSum

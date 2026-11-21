@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.EmbeddingBaseFieldCondition
 import Formalism.LocalRingCardinality.DataIdx
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraVal

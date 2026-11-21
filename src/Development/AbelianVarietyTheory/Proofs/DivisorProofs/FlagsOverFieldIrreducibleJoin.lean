@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellColumnsFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackFrameEndomorphismMatrixStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameMatrixUnitsIrreducibleStatement

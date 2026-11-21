@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsLevel
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PinsCardIndexRanks
 

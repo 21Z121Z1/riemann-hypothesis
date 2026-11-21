@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.HeckeRatioInvariant
 import Mathlib.Data.Int.Star
 import Mathlib.Tactic.ENatToNat

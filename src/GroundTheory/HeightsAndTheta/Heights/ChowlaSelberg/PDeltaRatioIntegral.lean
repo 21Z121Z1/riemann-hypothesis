@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.SuperlatticeRatio
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.HeckeRatioInvariant
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.HeckeRatioExpansion

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.StExtInv
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Ideal.Norm.RelNorm

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TraceDualLocal.IsIntegralOfTmulMem
 import Mathlib.NumberTheory.Padics.RingHoms
 import Mathlib.RingTheory.SimpleRing.Principal

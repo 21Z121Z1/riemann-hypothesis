@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinPartEqOneOfLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModFMulPosPrincipal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdNormSq

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.ExistsStrictHenselianAbsolutelyClosedLocalRing
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CongrFacts
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.PartOrd

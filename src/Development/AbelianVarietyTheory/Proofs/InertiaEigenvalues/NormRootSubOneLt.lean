@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicTowerTraceAlmostSurjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumTranslateEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ImportsLast

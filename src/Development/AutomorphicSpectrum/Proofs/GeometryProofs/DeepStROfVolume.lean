@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsIntIffOfNatural
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FieldOfDatumAbelian
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianCmCompLawsBoundStatement

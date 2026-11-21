@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.ContinuousAtOfClosedRel
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.GMonomial
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement

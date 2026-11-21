@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 import Formalism.GaloisCohomology.GaloisCohomologyProofs.LdataNonempty
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators

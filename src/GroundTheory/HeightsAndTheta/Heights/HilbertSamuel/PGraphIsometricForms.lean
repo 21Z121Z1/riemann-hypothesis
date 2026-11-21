@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocRing
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGraphIsometric
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGraphChangeOfModel

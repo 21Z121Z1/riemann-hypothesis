@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TemperedBoundGL2
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableOnLaplaceIntegralRightHalfStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableModulusPowOnBoundedUnitsStatement

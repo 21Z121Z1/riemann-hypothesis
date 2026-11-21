@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.XiHypOfThHyp
 import Formalism.LocalToGlobal.Columns.FixEColLevSym
 import Formalism.LocalToGlobal.Columns.KernelEquivTrivialTuple

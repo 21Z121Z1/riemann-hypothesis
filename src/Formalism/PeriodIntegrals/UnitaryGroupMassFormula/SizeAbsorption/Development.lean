@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataErr
 import Formalism.SharpRestriction.ElevenLe
 

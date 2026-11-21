@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearSection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjFrameMemUH
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LamLowNumericalEnd

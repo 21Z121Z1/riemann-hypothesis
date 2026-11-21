@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviTorusElementCmStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIdeleCharacterValueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsElementAngleNontrivialStatement

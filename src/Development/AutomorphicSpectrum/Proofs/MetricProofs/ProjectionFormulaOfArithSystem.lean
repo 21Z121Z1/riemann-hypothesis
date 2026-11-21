@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.GenericDegreeOfArithSystemStatement
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PfAtZero
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PPFStep

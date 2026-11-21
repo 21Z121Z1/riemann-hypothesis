@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.SatakeDualWeyl.StatementF
 import Mathlib.Data.Int.Star

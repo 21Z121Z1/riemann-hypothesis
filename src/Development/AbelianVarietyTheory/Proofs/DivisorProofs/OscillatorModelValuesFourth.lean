@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralEqClassSumOfLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisationNonarchimedeanCompatStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmPureTensorOOfFinite

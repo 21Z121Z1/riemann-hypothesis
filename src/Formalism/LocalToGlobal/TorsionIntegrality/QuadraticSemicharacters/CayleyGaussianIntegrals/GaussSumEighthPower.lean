@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.UnitaryConstant
 import Mathlib.NumberTheory.SumFourSquares
 import Mathlib.RingTheory.SimpleRing.Principal

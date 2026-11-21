@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeEisensteinConstantTermPartDifferentiableOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleXSqAddOne
 open NumberField Complex Polynomial

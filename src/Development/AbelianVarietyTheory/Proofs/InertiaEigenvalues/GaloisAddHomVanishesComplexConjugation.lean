@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.NeutralLocalFields.HilbertClassField
 import Formalism.ConjugateSelfDual.Statement
 import Mathlib.RingTheory.WittVector.IsPoly

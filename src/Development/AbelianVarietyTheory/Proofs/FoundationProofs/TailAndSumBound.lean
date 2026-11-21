@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KroneckerReal
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Gl2L2IntegralityStatement
 

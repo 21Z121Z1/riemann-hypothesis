@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SkewSpaceLineOneParamFockDerivativeStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealDictionaryPrintHypothesesStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThOInjective

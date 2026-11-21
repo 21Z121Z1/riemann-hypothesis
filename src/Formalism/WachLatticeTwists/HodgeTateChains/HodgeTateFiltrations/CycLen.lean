@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.HodgeTateChains.XiAdicFiltrationData
 import Formalism.WachLatticeTwists.TorsionLengthCounts.SubmoduleLengthBoundStatement
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitConjSum
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PHeightRecR
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitDegree

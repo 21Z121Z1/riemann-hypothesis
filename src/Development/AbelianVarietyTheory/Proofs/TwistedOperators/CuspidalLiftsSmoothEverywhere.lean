@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelFirstStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelThirdStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.NegativeThetaLevelFourthStatement

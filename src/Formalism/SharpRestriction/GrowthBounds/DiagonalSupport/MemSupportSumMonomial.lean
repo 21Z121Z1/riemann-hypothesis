@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.ValLamOfSubset
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.MembDefs
 import Mathlib.Tactic.ENatToNat

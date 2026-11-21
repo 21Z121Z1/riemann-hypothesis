@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.RepNmSucc
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.ExistsNotMem
 import Mathlib.RingTheory.Polynomial.Resultant.Basic

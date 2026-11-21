@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeries
 import Mathlib.NumberTheory.ModularForms.Discriminant
 set_option maxSynthPendingDepth 1

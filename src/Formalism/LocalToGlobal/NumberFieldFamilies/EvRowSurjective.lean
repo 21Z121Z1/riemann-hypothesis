@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.InvariantSubspaceCoordsX
 import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 import Formalism.LocalToGlobal.GroupLattices.JointServices.LevelOperatorFixesImage

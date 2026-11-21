@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StGeneralProjection
 import Mathlib.Algebra.MvPolynomial.Funext
 import Mathlib.Analysis.CStarAlgebra.Classes

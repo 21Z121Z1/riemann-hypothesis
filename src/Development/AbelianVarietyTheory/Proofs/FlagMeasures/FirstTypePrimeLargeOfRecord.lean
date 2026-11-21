@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExactRanksOfRecord
 open Formalism.BasicNotions Formalism.MainNotions

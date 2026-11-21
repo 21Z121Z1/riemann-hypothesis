@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.EKSymmCont
 import Formalism.AdmissibleDesigns.YtTarget
 

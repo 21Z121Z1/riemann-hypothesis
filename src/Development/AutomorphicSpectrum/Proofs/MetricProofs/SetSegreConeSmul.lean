@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PGoodChartDim
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PConeVanishingHomog
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PConeSliceIdeal

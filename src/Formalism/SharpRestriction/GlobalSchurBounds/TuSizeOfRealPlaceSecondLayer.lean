@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.RamifiedLevelZeroHolds
 import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeFamilyOfGappedMultiplicity
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.SecondBranchAllMembers

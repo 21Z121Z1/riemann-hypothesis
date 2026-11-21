@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MeasurePreservingGlue
 import Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup
 import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls

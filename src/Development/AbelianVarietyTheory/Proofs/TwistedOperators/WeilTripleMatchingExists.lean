@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilRepresentationsForTripleStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameBaseExistsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleFrameCompatibilityStatement

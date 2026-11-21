@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.VacuumTranslatesConjHalfSqNormEqCard
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.BaseIntSet
 open NumberField Matrix Complex IsDedekindDomain

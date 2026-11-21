@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.RefWOfSizeOfFlatDegOfRefTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReferenceCoreOfSumPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReferenceThetaOfCoreStatement

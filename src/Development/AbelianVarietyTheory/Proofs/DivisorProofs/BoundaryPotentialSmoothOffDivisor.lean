@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ModelDdcForms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialSmoothInChartStatement
 import Mathlib.Analysis.InnerProductSpace.Calculus

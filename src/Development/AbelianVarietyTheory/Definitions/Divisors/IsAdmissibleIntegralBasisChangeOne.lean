@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.FunctionField.PlaceSum
 import Mathlib.FieldTheory.RatFunc.Valuation
 import Mathlib.RingTheory.Artinian.Instances

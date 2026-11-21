@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.NFModel
 
 namespace Formalism.FourierDecayAlt.P.NormalFormRelations

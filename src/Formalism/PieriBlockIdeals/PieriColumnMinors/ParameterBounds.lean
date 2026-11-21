@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.MertensReciprocalElementary
 import Formalism.PieriBlockIdeals.PieriColumnMinors.SharperSizeNeedsMleKFalse
 import Formalism.PieriBlockIdeals.PieriColumnMinors.LocalComponentGL

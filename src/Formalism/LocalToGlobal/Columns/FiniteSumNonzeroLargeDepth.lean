@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ScaledRamifiedLattice
 import Formalism.LocalToGlobal.Columns.RowFormsSym
 import Formalism.LocalToGlobal.Columns.CoefModB

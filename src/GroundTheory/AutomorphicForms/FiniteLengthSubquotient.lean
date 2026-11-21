@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.FiniteLengthLattice
 import GroundTheory.AutomorphicForms.JacquetAdmissible
 set_option maxSynthPendingDepth 1

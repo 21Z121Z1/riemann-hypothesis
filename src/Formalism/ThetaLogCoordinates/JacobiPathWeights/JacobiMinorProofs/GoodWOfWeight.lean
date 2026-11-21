@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.JacobiMinorProofs.GenSpace
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.IndexWeightsDominance
 

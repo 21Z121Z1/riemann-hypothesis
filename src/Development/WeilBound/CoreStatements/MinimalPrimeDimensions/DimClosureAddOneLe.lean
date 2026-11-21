@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.RangeOfMemSupportPush
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.FinrankEqOfDimZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TopologicalKrullDimLeZeroOfSubset

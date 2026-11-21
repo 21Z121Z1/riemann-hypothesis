@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGauss
 import Mathlib.Analysis.Real.Pi.Bounds
 set_option maxSynthPendingDepth 1

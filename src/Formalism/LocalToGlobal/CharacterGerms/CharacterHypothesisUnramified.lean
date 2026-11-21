@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrRP
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrEF
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrPlB

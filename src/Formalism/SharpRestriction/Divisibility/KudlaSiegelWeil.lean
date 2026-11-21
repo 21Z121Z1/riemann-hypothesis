@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.ParConsts
 import Lemmata.GeneralBFactRightVariant.Imports
 import Mathlib.NumberTheory.NumberField.Cyclotomic.Galois

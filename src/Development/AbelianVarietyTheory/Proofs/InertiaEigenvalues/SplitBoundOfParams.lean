@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.JointConditionsRangeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AmbientTypeConjugatePlaceAtSplitPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LocalGlobalAssembly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehom
 

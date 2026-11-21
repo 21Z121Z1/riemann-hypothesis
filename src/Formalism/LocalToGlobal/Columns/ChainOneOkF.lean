@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ChainOneOk
 import Formalism.LocalToGlobal.Columns.OneCosetSymmetricAndNonvanishing
 import Formalism.LocalToGlobal.Columns.BlockTriangularMulVecMemPartialFlag

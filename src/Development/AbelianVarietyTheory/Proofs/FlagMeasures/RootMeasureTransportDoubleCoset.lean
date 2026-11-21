@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale
 import Formalism.FormalDegreeBessel.FinalG
 

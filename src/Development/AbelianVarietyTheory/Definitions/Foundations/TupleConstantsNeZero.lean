@@ -1,6 +1,6 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PairingDivisors.StatementH
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic
 import Mathlib.RingTheory.Henselian

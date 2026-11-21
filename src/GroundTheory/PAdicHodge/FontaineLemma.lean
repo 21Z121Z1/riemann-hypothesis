@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.FontaineLemmaPhi
 import GroundTheory.PAdicHodge.FontaineLemmaPeriod
 import GroundTheory.PAdicHodge.ACrisBdRGalois

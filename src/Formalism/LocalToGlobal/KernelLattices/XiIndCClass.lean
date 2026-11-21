@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.ProductThetaMem
 import Formalism.LocalToGlobal.PairingIndexBounds.ModelLatticeMoves.GoodLat
 import Formalism.LocalToGlobal.Columns.FiniteSumNonzeroLargeDepth

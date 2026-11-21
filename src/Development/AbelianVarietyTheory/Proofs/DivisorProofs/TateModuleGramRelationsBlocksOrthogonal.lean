@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPushEquivPolPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGoodPointDimOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilEqOneComplex

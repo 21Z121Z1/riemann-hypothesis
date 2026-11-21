@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsUniqueNormalizedCyclotomicTrace
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsFixGamSub
 open scoped MatrixGroups

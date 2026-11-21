@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryQuotientCompactness.UnitaryWeylCompact
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.EqSmulOfTwoSided
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt

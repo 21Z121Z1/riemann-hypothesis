@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.InseparableFrobeniusFactor
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyRamification
 import GroundTheory.GlobalFields.ComplexMultiplication.VariableChangePoints

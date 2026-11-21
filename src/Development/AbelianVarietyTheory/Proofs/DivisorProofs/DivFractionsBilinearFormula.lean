@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HPolyAddTwo
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.Complex

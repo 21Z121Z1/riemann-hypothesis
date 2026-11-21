@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactThirdExtra.Imports
 
 noncomputable section

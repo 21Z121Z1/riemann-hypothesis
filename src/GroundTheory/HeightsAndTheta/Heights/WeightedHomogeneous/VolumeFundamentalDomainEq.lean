@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Statements
 import Mathlib.Analysis.InnerProductSpace.GramMatrix
 import Mathlib.Dynamics.Ergodic.Action.Regular

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.Bridge
 import Formalism.LocalToGlobal.Divisibility.HeckeRI
 import Formalism.LocalToGlobal.Divisibility.DefGroup

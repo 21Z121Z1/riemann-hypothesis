@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LogCondLeThree
 import Formalism.LocalRingCardinality.HostCls
 import Development.AutomorphicArithmetic.ThickFrames.topsBase

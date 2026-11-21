@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsGlue
 import Mathlib.CategoryTheory.Limits.Preserves.Shapes.Multiequalizer
 set_option maxSynthPendingDepth 1

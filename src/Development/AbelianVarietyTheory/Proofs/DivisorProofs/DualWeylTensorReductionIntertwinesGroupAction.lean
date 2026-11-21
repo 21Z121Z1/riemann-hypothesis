@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockSub
 import Formalism.PieriBlockIdeals.PieriColumnMinors.RealLocalDeltaNabla
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasBlockOfOccurs

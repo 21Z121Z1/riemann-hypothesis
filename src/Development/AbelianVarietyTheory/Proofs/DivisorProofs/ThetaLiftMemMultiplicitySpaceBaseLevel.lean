@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelCharacterConjugate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftOfMemLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlacesApart

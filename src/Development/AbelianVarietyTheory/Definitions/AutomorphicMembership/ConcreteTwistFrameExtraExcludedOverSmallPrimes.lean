@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoeffZeroNeOfMonicIrr
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TwDefs
 import Formalism.SharpRestriction.LevelLetterCocycles.TwGood

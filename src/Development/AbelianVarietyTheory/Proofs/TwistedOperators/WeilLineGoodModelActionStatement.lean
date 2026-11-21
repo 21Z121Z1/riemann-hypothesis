@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelAction
 
 open Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes NumberField

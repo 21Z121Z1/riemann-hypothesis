@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRingRChain
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InjectiveOfCompEqSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfThetaPhiInv

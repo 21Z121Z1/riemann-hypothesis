@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.NonemptyThetaLOfTied
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.FilQuot
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InvRestrictScalarsMem

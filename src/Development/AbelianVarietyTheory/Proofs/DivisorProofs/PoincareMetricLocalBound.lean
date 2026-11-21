@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormAtContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositivePotentialFormPosStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadraticFormTwoSidedBoundStatement

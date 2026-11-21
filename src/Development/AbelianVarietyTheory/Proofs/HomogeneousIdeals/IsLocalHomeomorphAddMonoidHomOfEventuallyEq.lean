@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.TendstoUniformlyOnDoublingLogOfContraction
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff

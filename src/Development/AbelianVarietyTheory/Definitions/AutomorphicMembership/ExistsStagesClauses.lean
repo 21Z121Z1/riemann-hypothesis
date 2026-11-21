@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsMuIsRamified
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.NotMtStableOfFree

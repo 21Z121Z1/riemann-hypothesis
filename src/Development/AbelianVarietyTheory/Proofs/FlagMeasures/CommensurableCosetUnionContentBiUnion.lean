@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CommensurableCosetUnionContentIndependentNonnegStatement
 import Mathlib.Data.Set.Card.Arithmetic
 import Mathlib.Order.CompletePartialOrder

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Columns
 import Formalism.SharpRestriction.Divisibility.OrbitPlaces

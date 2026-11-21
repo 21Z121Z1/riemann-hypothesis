@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.Interface
 import Formalism.FrobeniusBaseCase.Statement
 import Formalism.LocalToGlobal.CharacterGerms.BiadditiveInSingleVariables

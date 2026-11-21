@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Jets.SideFam
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovDet
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QnCovLin

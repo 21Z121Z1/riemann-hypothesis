@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherRest
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PBlockRatioAlg
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingPow

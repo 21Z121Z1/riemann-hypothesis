@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.FamilyBoundAtTwoThreeOfLocalBounds
 import Development.AutomorphicArithmetic.ResidueCharacters.RowTwo
 import Development.AutomorphicArithmetic.ResidueCharacters.RowThree

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HopfOrderLatticeBaseStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HasFinColengthOfHasLen
 import ReciprocityTheory.DualLattices.HasLenCokerDet

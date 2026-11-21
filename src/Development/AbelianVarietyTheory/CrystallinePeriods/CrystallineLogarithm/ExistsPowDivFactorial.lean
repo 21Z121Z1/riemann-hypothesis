@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.UniformContinuousConstSMulOfIsIsometricSMul
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Period
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Kernel

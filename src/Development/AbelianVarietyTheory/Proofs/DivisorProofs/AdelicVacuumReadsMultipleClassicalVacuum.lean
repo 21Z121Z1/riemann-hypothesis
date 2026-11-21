@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.CmHostUnitAddConjEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenMapTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjAGphiEqSum

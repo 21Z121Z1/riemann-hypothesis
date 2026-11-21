@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousThetaLiftTransferStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsNotIsConstTerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealMultLiftDividedPowersStatement

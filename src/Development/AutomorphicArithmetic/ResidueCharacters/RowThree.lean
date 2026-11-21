@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.RowThreeC
 import Development.AutomorphicArithmetic.ResidueCharacters.ThreeHost
 import Development.AutomorphicArithmetic.ResidueCharacters.ConclusionSplitOfHub

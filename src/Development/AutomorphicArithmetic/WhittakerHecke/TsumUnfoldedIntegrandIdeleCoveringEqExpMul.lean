@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.WhittakerHecke.WhittakerScalarMulEqCentralCharSqMul
 import Development.AutomorphicArithmetic.WhittakerHecke.HasSumWhittakerDiagTorusRatEqUnipotentConstantTe
 import Development.AutomorphicArithmetic.WhittakerHecke.RealIdeleMulAbsContinuousAndUnitAbsEqOne

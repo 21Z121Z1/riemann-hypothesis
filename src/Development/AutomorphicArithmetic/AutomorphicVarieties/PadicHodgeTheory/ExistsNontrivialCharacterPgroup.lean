@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.IqBasic
 import Mathlib.GroupTheory.Abelianization.Finite
 import Mathlib.GroupTheory.Nilpotent

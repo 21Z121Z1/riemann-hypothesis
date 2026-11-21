@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperHyperplane
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperDevissage
 import Mathlib.RingTheory.PiTensorProduct

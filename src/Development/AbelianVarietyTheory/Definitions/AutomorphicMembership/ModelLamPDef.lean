@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RowsRestWordColumnUnitBaseTuple
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsMemberFormsNonempty
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange

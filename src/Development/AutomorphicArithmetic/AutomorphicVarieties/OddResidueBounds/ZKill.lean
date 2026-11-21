@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ResKill
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.TotKill
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.NearLevel

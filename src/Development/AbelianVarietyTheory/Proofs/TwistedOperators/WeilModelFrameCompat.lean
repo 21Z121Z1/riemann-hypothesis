@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTransformDarbouxModelLinearInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelHermitianScalingStatement

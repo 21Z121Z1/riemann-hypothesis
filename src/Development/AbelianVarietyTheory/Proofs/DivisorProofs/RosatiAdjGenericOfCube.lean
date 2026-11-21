@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusEndOfPadd
 import Development.AbelianVarietyTheory.Definitions.Divisors.LinEndOfOLinear
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne

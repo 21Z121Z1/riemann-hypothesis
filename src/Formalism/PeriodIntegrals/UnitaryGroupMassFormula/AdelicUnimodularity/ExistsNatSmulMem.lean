@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnimodularity.SmulEqAlgebraMapMul
 import Lemmata.GeneralBFactThirdMore.Key
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut

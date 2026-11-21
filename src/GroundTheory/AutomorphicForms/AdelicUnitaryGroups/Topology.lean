@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.UnitaryGroupEquations
 
 set_option linter.unusedSectionVars false

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.Imports
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.OfMoriwakiHS
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.ImportsBis

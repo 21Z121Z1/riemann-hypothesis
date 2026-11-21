@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataIdx
 import Formalism.LocalRingCardinality.SpanPowerMembership.DivXExample
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowB

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ExistsIsMapToFn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetricConjugationInvariant
 open CategoryTheory AlgebraicGeometry NumberField IsDedekindDomain Matrix

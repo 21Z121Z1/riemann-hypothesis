@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairBaseIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieGenericEigenMetricSetup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFramePartitionFormula

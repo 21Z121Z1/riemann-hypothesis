@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsBaseChange
 import Mathlib.RingTheory.Nullstellensatz
 import Std.Tactic.BVDecide.Normalize.Prop

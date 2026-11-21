@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFrameRight
 open GlobalTheory.WholeFlag GlobalTheory.WholeFlag.Glue
 open scoped Matrix

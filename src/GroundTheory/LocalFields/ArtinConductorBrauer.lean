@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.ArtinConductorIrreducible
 import GroundTheory.LocalFields.ArtinConductorDiscriminant
 import GroundTheory.LocalFields.BrauerInduction

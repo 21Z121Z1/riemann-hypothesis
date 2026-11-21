@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalCenterEqCircleIntegralShiftedOrder
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CircleIntegralZpowMulHoloMulEqSum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousCircleIntegralFamily

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCutOffTube
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeFormCompare
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTubeEuclMass

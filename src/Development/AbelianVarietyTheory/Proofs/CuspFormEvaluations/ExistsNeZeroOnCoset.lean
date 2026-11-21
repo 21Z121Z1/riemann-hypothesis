@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SquareIntegrability.TBNFinal
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ExistsNeZeroPair
 import Mathlib.Data.Int.Star

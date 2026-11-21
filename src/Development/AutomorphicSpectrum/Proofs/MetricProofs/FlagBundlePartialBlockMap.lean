@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LogResolutionFromOrbitCharts
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.HoloMapOfLocalProductCharts
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FrameDataLocalResolutionRegular

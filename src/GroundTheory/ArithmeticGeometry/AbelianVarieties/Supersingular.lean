@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyFrobenius
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenySeparable
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.MCoordIdealLeOfHomog
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverTransferIdealEq
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PullbackPullback

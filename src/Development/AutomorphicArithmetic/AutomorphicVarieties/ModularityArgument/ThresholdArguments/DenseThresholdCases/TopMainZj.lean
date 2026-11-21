@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianDualCrystalOfHyp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodComparisonHolds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsSideExtra

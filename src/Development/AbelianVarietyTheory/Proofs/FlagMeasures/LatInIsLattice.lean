@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsShortVectorIntegralHermitianLatticeRankOneStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardShortVectorsLeStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ImportsRest

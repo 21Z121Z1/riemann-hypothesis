@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorTorusActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorFockVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaVectorNeZeroStatement

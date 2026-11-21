@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpUniqChart
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpChartOf
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpActOf

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.InertJacobiLevels.HostFam
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsThinPrimeSetStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsTwoLargeNormOnePrimesStatement

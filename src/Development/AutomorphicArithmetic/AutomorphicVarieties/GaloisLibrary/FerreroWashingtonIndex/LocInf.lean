@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.LocalNorms
 import GroundTheory.GlobalFields.InfiniteNormIndex.LocalSymbol
 import Mathlib.NumberTheory.NumberField.CMField

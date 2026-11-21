@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsConstantCoeffOne
 import Formalism.LocalRingCardinality.HostCls
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepDict

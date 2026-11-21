@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.SectionOfLineBundleOne
 
 namespace Formalism.L2.Pj.QAt

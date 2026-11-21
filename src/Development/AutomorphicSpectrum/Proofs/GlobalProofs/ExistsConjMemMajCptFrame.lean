@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockEmbeddingArchimedeanComponents
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MemUnipOfArchFrame
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.StabOfFrame

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 import Mathlib.Topology.Algebra.Nonarchimedean.Completion
 import Mathlib.Topology.Connected.Separation

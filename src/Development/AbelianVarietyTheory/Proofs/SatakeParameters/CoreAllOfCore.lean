@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContinuousTwOfContinuous
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExAllOfGood
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HoldsSDRAllOfGood

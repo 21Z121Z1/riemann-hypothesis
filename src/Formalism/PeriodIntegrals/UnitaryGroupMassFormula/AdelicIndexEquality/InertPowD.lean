@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicIndexEquality.InertPowDefs
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA
 import Mathlib.Order.CompletePartialOrder

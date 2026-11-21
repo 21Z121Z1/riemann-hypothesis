@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Data.Finset.Functor
 import ReciprocityTheory.GaloisValuations.Global
 

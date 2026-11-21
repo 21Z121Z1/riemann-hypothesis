@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.SpOfRwRange
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InnerTwOfSmul
 

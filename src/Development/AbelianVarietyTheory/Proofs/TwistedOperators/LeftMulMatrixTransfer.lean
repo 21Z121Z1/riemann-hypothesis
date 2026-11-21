@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.PlusPolynomialInclusion
 import Mathlib.Algebra.Module.PID
 import Mathlib.FieldTheory.IsAlgClosed.Spectrum

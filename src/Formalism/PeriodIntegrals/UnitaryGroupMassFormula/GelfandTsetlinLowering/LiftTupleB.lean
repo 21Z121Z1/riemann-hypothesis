@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinLowering.LiftTupleM
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Topology.Sheaves.Presheaf

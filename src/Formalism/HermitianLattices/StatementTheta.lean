@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AlphaUniqueness.Statement
 import Formalism.LatticeTheta.Statement
 import Formalism.HermitianLattices.StatementLat

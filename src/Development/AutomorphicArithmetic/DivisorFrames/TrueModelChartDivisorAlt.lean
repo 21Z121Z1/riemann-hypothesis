@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsAdaptedFlagCharts
 import Development.AutomorphicArithmetic.DivisorFrames.ChartFrameDivisor
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelOfLocMax

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtCoord
 import Mathlib.RingTheory.Smooth.Field
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits

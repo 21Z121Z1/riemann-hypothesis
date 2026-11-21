@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicFormFrameExpansionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedSectionInSpanOfGapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicExpansionInDictionaryStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzValuedIntegralLinearStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleSchwartzSeminormBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAGoodModelEvaluationFirstStatement

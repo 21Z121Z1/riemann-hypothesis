@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsLimHom
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulSubEqZeroOfSum
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ThetaSystemBaseSectionValueChart
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BasisOriginValuesRegularAndUnit
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.BasisValueAtOrigin

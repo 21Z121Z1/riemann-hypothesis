@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3
 import Formalism.SharpRestriction.GlobalSchurBounds.KernelEntryData
 import Formalism.SharpRestriction.GlobalSchurBounds.QuadraticLogDerivCongr

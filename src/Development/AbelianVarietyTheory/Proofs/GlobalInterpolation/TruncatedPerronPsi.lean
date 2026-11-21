@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TruncatedPerronKernel
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.NumberTheory.Harmonic.Bounds

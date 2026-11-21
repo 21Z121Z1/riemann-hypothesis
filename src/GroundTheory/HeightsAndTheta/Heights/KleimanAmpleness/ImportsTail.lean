@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsFurtherRest
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PChartSecGen
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.AssemblyBase

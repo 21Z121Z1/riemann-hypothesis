@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 import Formalism.LocalRingCardinality.Lemmas
 import Formalism.LogVandermondeBounds.HookGammaAmgmMultinomialBounds

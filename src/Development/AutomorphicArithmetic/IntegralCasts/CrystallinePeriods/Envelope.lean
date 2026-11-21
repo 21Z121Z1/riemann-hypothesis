@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.SpanNatCastLeComap
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

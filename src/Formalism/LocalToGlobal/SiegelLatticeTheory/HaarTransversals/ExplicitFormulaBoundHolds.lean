@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.FinalTr
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.FoldBound
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirReductionTheory.GgExistsAddCharNeOne

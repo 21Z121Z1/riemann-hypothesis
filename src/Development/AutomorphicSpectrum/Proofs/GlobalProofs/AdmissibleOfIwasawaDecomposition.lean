@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviSubmoduleDense
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ExistsIsotypicSum
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SpecialLinearMulApplyZeroZero

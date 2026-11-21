@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntertwiningMapIntoInducedRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedRepresentationIrreducible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedCharIntertwiningUnif

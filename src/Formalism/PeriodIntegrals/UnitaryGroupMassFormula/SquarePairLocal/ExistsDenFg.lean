@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SquarePairLocal.SqPairLocalOfSteps
 import Lemmata.GeneralBFactLeftBis.Imports
 import Mathlib.Algebra.AffineMonoid.Basic

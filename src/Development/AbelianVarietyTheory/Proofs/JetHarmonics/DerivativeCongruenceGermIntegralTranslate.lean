@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CoeffDofSubMem
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.SurjectiveAppTop
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CharacterEqWeilPairing

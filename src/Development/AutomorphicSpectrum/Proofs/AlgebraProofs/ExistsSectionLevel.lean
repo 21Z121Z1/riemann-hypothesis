@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.ProIsoAt
 
 open NumberField TensorProduct GlobalTheory.CompanionTheory.Ar

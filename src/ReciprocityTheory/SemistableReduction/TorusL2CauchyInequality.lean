@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SJCore
 import ReciprocityTheory.SemistableReduction.SjHolds
 import ReciprocityTheory.SemistableReduction.LagrangeIdealLiftsFact

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.WdVal
 import Development.AbelianVarietyTheory.Definitions.Foundations.FrobLiftWittClosure
 

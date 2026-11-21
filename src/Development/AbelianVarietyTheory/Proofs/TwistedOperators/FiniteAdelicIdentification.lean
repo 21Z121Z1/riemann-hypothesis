@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsUnitaryPart
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OpFullImp
 

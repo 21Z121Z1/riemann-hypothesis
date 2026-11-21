@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.PerfectoidField
 import GroundTheory.PAdicHodge.WittLift
 import Mathlib.RingTheory.PiTensorProduct

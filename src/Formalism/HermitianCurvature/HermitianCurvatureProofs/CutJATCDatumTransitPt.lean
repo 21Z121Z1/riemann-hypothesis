@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJATCDatumTransitFam
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJASSnRepDatumUnit
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ParametersUPrimeForULower

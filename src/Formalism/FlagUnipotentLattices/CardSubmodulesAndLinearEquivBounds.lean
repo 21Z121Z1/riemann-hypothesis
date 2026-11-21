@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HyperbolicPlaceProducts.Statement
 import Formalism.HyperbolicPlaceProducts.DetIndexProductHyperbolicInequality
 import Mathlib.NumberTheory.NumberField.ClassNumber

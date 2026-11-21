@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.OfListTailLog
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ConvergenceStatementHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MixedMeasureConvergenceSncStatement

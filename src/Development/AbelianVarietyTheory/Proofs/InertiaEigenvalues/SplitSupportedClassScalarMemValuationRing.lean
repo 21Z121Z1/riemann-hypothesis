@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValRingLocRing
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SqrtPowOdd
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ValMulSqrtUnit

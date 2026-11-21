@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.CosetGroupMembership
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.ClassesDoubleCosets

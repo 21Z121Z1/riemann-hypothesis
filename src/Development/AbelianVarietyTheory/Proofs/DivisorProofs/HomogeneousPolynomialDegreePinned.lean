@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.GlobalHeightBoundIffAtGoodPrimes
 import Development.AutomorphicArithmetic.LocalEmbeddings.GeoAll
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatSFiniteSpan
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AdicSumExists
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TchNeMulOfPowEq

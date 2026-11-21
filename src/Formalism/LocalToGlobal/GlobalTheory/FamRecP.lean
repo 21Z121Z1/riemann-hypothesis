@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.FamRec
 import Formalism.LocalRingCardinality.Lemmas
 import Mathlib.Order.Interval.Finset.Box

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Jets.JetsOnCopiesCompatibleFrames
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsThetaFrame
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PsiWeightZeroProduct

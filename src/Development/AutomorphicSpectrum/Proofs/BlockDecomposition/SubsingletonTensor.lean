@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.CechPairings.MemBoundariesZeroIff
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BalancedLiftTmul
 import Mathlib.Algebra.Ring.BooleanRing

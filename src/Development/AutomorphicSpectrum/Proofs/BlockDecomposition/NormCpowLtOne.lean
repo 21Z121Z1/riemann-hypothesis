@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchurInverseEqReversedNegStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShintaniFormulaGL3DiagStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ShintaniFormulaGL3LongWeylDualStatement

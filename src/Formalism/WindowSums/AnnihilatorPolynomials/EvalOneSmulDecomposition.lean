@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WindowSums.Statement
 
 namespace Formalism.WindowSums

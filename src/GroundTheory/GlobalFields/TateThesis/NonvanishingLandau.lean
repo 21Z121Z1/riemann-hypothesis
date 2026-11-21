@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.NonvanishingPrimes
 import GroundTheory.GlobalFields.TateThesis.NonvanishingDivisorSum
 import GroundTheory.GlobalFields.TateThesis.DedekindZetaContinuation

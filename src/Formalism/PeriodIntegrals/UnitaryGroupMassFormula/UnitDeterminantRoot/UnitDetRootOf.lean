@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitDeterminantRoot.GlobalLUnit
 import Mathlib.Analysis.Normed.Field.Instances
 import Mathlib.RingTheory.Henselian

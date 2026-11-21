@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SubspaceCounting.GoodOrbitIntervalTileCondition
 import Formalism.SubspaceCounting.SubspaceCountingProofs.TopsChoicePartA
 import Mathlib.RingTheory.PiTensorProduct

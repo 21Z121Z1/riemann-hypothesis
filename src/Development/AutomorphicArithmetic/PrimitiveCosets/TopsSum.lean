@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DedekindLFunctions.SplitInertia
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts

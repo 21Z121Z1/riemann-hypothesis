@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FockCompTranslate
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VecIsThetaFunOAlt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairVEqOfProdFunEq

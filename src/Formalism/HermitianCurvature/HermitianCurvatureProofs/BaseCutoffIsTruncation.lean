@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementTop
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.VanishingAtRelevantPoints
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OrbitalIntegralIdentities

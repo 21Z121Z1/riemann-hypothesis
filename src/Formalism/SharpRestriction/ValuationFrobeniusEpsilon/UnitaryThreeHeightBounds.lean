@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.ValuationFrobeniusEpsilon.UnitaryThreeIrreduciblePoints
 import Formalism.SharpRestriction.ValuationFrobeniusEpsilon.GradedPowerSeriesLemmas
 import Mathlib.Algebra.DualNumber

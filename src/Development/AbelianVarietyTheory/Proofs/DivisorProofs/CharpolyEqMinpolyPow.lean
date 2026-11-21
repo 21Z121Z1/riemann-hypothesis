@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DegAevalEqProdAroots
 import Formalism.LocalToGlobal.Divisibility.ConjugationAtDistinguishedPlace
 

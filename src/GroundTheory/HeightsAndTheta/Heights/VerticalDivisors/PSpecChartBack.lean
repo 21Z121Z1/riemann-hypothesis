@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecChartIso
 import Mathlib.RingTheory.RingHom.Flat
 set_option maxSynthPendingDepth 1

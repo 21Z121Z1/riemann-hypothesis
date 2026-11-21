@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SymplecticGenerators.SymplecticCharacters.InversionStatement
 import ReciprocityTheory.ThetaQuasiPeriods.Change
 import ReciprocityTheory.ThetaQuasiPeriods.Transl

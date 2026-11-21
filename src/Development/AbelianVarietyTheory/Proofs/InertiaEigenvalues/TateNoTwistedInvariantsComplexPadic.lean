@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EqZeroOfTateTwistInvariantFiniteExtension
 import Formalism.SharpRestriction.LevelLetterCocycles.NormOfVOne
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied

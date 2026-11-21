@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram
 import Formalism.LatticeSlopes.LatticeSlopesProofs.GramDetLe
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.LenOfCard
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.UnrInj
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.UnrSel

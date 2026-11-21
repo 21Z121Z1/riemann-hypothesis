@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ExistsIntegralWeightProjections
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.IrreducibleStableContainsEqTop
 import Formalism.SharpRestriction.GrowthBounds.StatementOfDegreeAndBound

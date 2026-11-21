@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFormIntSlice
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceFormMass
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarIntChartChange

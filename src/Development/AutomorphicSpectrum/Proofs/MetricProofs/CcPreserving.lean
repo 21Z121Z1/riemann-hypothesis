@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagDomainCellCoordinatesStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AnalyticSystemRegularityPropertiesStatement
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.LUStatementPf

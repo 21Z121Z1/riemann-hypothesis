@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockLuDecompositionExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchubertCellPointImmersionStatement
 

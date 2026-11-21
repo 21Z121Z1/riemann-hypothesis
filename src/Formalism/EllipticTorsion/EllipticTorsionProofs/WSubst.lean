@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.WChordSeries
 import Mathlib.RingTheory.LocalProperties.Reduced
 import Mathlib.RingTheory.WittVector.IsPoly

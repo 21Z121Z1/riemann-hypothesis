@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeEqFormDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VandermondeLaplacianVanishesStatement
 import Mathlib.RingTheory.MvPolynomial.EulerIdentity

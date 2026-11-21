@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HasseOrderBound.Development
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TayInvPow
 

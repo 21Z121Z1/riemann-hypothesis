@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.L2ConvolutionLocallyCompactMem
 open MeasureTheory GlobalTheory.AutomorphicL2Unitary GlobalTheory.OpTrace
 set_option maxHeartbeats 1000000 in

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Statements
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ChowFormHomog
 set_option maxSynthPendingDepth 1

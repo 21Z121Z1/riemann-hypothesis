@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.HomFInjective
 import ReciprocityTheory.GroupCohomology.Shapiro
 import Mathlib.GroupTheory.IndexNormal

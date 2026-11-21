@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteGaloisInertiaLiftsAbsoluteInertiaRat
 open Formalism.ConjugateSelfDual ReciprocityTheory.Gal NumberField
 set_option maxHeartbeats 1000000 in

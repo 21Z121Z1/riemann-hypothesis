@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.IsResidueClassZero
 import Formalism.LocalRingCardinality.SpanPowerMembership.GatTies
 

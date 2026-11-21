@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhiBoundPartsOfRadicalParametrisation
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SmoothnessOnGoodSet

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.MatsushimaLattice
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsUnitaryRepR
 import Mathlib.Combinatorics.Quiver.ReflQuiver

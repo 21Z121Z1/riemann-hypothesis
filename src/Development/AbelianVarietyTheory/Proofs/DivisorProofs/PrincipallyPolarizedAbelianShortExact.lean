@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocOfBijectiveLiftSemi
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamHodgeShortExactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamHodgeFiltrationExistsStatement

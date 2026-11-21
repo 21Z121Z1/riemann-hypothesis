@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.RestBlockForm
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.DegSplit
 

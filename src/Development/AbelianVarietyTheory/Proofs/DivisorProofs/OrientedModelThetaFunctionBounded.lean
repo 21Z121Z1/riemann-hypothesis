@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.CocompactTensor
 import Formalism.LocalToGlobal.IndefiniteReal.DatumF
 open scoped TensorProduct Matrix BoundedContinuousFunction ContDiff

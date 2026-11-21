@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdelicPointLatticeFgOfFull
 open NumberField IsDedekindDomain Formalism.L2.PairingIndexBounds.F
 open scoped TensorProduct

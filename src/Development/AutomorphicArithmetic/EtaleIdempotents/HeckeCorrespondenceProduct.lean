@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.VecZero
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsKill
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.WeightedSumIntegralFormula
 import Formalism.ZetaNonvanishing.ZetaRealNonvanish
 import Mathlib.Topology.Separation.CompletelyRegular

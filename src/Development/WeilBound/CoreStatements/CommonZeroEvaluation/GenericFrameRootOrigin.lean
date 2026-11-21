@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginRootIndexBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TriangularSpanCoeffRatio
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AbelianMapLieModelLatticeStatement

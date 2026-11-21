@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataArith
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

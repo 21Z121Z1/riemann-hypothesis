@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PSpecMax
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PChartDomain
 import Mathlib.Order.CompletePartialOrder

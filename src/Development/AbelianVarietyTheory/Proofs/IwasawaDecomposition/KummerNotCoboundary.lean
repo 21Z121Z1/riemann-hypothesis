@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffEqMkRootT
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigenAdd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyIntegral

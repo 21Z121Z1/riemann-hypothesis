@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StArchCovolumeBound
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StCoordEmbedBasis
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StIntegralFormCovolume

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.NonvanishingLandau
 
 open NumberField IsDedekindDomain Complex Topology Filter Asymptotics

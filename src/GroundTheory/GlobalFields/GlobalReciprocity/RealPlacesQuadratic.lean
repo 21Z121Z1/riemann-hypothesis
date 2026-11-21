@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.GlobalReciprocity.InfKerDegreeLeOfLeSupZhatField
 import GroundTheory.GlobalFields.NormResidueSymbol.Cyclotomic
 import Mathlib.GroupTheory.Abelianization.Finite

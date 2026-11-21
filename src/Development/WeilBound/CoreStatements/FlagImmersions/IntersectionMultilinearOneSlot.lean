@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterNamed
 import Development.WeilBound.CoreStatements.FlagImmersions.CombLineSmoothConjInvariant
 import Std.Tactic.BVDecide.Normalize.Prop

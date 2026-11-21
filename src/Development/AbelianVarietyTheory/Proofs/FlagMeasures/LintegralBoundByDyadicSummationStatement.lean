@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LintegralBoundByDyadicSummation
 open MeasureTheory
 open scoped ENNReal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.HermitianLatticesProofs.UnimodUnramUnique
 import Mathlib.Dynamics.Newton
 import Mathlib.NumberTheory.Padics.RingHoms

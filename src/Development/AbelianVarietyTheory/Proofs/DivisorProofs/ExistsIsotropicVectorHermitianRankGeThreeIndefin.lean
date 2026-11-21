@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.GlobalTheta.HermitianHassePrincipleHolds
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 import ReciprocityTheory.SemistableReduction.TorusMeanA
 import Mathlib.Topology.Algebra.MvPolynomial

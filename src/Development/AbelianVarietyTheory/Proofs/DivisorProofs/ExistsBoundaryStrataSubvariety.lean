@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosedIrreducibleAnalyticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartOffClosedSubsetStatement
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsCompatChartRestrOpen

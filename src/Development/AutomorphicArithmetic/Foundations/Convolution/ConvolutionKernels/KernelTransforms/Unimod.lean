@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.TraceFormulaWeil
 import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteAdelicHaar
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchHaar

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnimodGenus
 import Formalism.LocalToGlobal.GenusGluing.GenusApproximation.FinalW
 

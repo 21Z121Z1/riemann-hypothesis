@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoverChartsHeightStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalHeightPrimeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalHeightPrimeComparisonStatement

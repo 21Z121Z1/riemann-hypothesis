@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.EvalW
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XFibMdisc
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

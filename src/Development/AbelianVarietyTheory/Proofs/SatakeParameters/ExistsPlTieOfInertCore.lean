@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FractionRingFrobeniusAlgebraMap
 import Formalism.LocalToGlobal.Columns.DecoFin
 import Mathlib.RingTheory.Smooth.Fiber

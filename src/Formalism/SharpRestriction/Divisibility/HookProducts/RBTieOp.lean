@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.HookProducts.RBTieFrame
 import Formalism.HarderNarasimhan.QuotRealize
 import Mathlib.Tactic.Monotonicity.Lemmas

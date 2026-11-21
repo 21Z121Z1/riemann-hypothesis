@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CBaseYPDef
 import Formalism.LocalToGlobal.ProjectiveLattices.ReadProofs
 import Formalism.LocalToGlobal.ProjectiveLattices.AllTest

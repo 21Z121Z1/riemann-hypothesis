@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.StatementColKer
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerSmulLe
 import Mathlib.Algebra.Order.PUnit

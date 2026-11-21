@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnitaryApproxFin
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.IntWeak
 

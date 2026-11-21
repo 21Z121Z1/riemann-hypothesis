@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbRegCountOfRanks
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitSeparationRegularDeterminantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeepsCuspLatticeNorm

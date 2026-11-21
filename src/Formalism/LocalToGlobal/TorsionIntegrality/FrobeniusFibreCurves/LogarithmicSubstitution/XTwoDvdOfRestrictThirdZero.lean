@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementD
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 import Mathlib.RingTheory.SimpleRing.Principal

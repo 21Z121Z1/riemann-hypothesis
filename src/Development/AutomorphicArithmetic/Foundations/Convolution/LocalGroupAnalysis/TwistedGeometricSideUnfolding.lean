@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.SelmerRankBounds.EllipticityFromProductFormula
 import GroundTheory.AutomorphicForms.TraceFormulaGeometric
 open PositivityTheory.Rg.Tf.Geo

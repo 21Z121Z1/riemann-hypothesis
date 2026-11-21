@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.HalfNorm
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.TwistCoverDesign
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT

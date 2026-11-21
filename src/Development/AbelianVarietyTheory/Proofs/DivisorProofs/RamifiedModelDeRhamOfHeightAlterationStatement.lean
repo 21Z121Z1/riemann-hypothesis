@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RamifiedModelDeRhamOfHeightAlteration
 open NumberField MvPolynomial CategoryTheory AlgebraicGeometry Formalism.BasicNotions Formalism.DegreeFormula GlobalTheory.FlagPoly GlobalTheory.Mean4O GlobalTheory.ShFam GlobalTheory.ShFam.Pad GlobalTheory.CovTestDR GlobalTheory.EigWhole
 set_option maxHeartbeats 1000000 in

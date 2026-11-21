@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasIsFormDel
 open Set Matrix MeasureTheory
 open GlobalTheory.HermFrame

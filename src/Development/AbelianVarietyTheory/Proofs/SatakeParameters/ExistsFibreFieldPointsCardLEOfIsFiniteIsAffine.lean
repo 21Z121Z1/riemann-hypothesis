@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FibrePointsLEId
 import Mathlib.AlgebraicGeometry.Morphisms.Finite
 import Mathlib.RingTheory.Henselian

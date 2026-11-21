@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.GoodTwistGoodTwist
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LevelLawsFrameDictionaryStatement
 open NumberField IsDedekindDomain MeasureTheory Filter Topology

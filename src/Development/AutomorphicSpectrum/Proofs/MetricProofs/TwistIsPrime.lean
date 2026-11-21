@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsHorizontalTwist
 import Mathlib.Algebra.Polynomial.SpecificDegree
 import Mathlib.RingTheory.LocalProperties.Reduced

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HermitianFormPolynomialInStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalHermitianClassFirstStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalHermitianClassSecondStatement

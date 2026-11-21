@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFsPotLaplacian
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls

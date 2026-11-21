@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.RadBounds
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.NormDiffEK
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.RdLower

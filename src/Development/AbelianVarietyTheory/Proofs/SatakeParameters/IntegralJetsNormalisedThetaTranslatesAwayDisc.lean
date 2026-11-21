@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodModelTwoScaleOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormLeOneOfDisc
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormTwelveCubedEqOneOfFiveLePrime

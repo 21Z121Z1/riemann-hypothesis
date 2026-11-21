@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ResultantValuation.WindowValuation
 import Mathlib.NumberTheory.Multiplicity
 import Mathlib.RingTheory.WittVector.IsPoly

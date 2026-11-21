@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanRangeMulVecLe
 import Mathlib.Algebra.Homology.TotalComplex
 import Std.Tactic.BVDecide.Normalize.Prop

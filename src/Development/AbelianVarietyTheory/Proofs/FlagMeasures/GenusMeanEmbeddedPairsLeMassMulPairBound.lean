@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscNResNeZero
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsCMFieldOfStar
 import Formalism.SharpRestriction.CuspSpanNormBounds.KappaEndpoints

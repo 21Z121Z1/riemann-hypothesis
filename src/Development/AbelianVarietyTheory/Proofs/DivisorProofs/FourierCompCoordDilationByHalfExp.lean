@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussZero
 import Mathlib.Analysis.Fourier.FourierTransform
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

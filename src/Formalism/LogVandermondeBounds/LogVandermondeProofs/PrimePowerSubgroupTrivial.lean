@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LogVandermondeBounds.LogVandermondeVariationUnbounded
 import Mathlib.LinearAlgebra.Charpoly.Basic
 import Mathlib.RingTheory.Henselian

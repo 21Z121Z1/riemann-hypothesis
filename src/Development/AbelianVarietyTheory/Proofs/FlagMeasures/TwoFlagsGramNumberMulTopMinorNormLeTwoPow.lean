@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.FinalG
 import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.UpperOff

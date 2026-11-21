@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.IsGaugeAll
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange
 

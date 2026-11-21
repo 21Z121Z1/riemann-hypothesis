@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.NrmTieDef
 import Formalism.LocalToGlobal.ProjectiveLattices.CompSplitPfB
 

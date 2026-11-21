@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeCountingBound.IndexDefs
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Data.Int.Star

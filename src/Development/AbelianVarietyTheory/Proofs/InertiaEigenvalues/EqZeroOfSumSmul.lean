@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.GradedSeries
 import Mathlib.Order.Interval.Finset.Box
 import Mathlib.RingTheory.HahnSeries.PowerSeries

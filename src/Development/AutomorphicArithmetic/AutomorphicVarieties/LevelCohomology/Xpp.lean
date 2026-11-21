@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.DirGPowOne
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcVanOf
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcUnrOf

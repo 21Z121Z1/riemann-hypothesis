@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylCellStabilizerMeasureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusConjugationWeylCell
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocCompactSecondCountable

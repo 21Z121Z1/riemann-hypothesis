@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.DualFamilyCounting.SameGenusFix
 import Formalism.SharpRestriction.CuspSpanNormBounds.BlockEnds

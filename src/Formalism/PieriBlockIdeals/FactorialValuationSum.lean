@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.Statement
 import Formalism.PieriBlockIdeals.BranchingBoundLastGradedOneRow
 import Mathlib.Algebra.Homology.ShortComplex.ShortExact

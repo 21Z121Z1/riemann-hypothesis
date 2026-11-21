@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.SpecialisationNumberFieldAndCountableValues
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowCardLeNormProd
 import Mathlib.Analysis.Polynomial.CauchyBound

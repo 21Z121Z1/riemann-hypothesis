@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.PoincareDuality.Induced
 import GroundTheory.ProfiniteCohomology.PoincareDuality.CupPairingEvalPairingCohomologyMap
 import GroundTheory.ProfiniteCohomology.PoincareDuality.DeltaPairing

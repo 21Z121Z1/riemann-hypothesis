@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BetaFinsetSumSmulOfXiExists
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CccoefMono
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OpApplyContinuousOn

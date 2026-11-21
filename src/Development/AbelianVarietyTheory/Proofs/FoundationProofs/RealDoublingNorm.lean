@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCartanDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoshProductDetStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SignFrameInUnitaryStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.OntoAlong
 import Formalism.LocalToGlobal.NumberFieldFamilies.RamifiedPrimesTrivialTuple
 

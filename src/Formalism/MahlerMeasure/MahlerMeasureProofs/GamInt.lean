@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.GamInt
 import Mathlib.Algebra.Group.ForwardDiff
 import Mathlib.Algebra.Order.Ring.Star

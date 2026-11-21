@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.TupUsed
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
 import Formalism.LocalToGlobal.IndefiniteReal.RealRec

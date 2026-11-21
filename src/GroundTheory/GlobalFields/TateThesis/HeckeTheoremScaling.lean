@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.TateMainUnique
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsFourier
 

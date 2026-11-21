@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IdealPowerSubobjectSections
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubobjectPullbackSections
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesSheafBase

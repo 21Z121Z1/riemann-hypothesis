@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsBasisAtTransport
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsSameData
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports

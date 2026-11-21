@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.HodgeTateChains.StatWChain
 import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.CancelRight
 

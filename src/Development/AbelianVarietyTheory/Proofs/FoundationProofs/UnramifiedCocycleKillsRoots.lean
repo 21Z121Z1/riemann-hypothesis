@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.FinalTheorems
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemIneSmulIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormSmulLeSelf

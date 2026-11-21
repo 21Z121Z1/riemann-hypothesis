@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Jets.SupWOfSup
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdFinEqProdIcc
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsGridFiveApartOnCut

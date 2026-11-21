@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SingSt
 import Development.WeilBound.CoreStatements.FlagImmersions.SumFundOnRoot
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemAbLocusIff

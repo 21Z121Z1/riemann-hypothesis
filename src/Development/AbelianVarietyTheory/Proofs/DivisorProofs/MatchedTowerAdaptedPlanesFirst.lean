@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTowerDescentAdaptedPlane
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousGlReindex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewChain

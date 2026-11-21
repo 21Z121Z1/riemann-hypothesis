@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.JetSumTable
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StandardKernelAtTorus
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemDivsOfMem

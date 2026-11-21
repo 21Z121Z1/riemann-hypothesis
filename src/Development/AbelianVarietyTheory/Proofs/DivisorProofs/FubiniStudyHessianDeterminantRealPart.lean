@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexHessianLogOneAddNormSqStatement
 import Mathlib.Tactic.Polynomial.Basic
 open CategoryTheory AlgebraicGeometry TopologicalSpace Set Filter Topology MeasureTheory

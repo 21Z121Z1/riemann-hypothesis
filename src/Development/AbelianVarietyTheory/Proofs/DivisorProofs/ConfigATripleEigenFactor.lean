@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementSkewCmStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonzeroThetaPureTensorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTripleSeesawConfigurationStatement

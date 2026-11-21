@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjPotMassPos
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsProjPotDens
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PCurveDegreeVert

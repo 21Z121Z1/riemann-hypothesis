@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.BihomogeneousPairs.LetterChainEmbeddings.PairStep
 import Formalism.MahlerMeasure.MahlerMeasureProofs.PhiInt
 import Formalism.MahlerMeasure.MahlerMeasureProofs.RemoveS

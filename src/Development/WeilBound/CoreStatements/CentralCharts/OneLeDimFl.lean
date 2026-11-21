@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.CentralCharts.PshAt0LogNorm
 import Development.WeilBound.CoreStatements.CentralCharts.CommonMembers
 import Development.WeilBound.CoreStatements.CentralCharts.IsPosPotBlock

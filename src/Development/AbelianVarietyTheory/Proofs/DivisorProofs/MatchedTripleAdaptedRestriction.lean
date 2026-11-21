@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WStableSSup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleLiftEqualityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleThetaEqualityStatement

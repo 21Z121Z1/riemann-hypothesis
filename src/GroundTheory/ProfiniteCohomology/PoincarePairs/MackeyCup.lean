@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.PoincarePairs.ConeProduct
 import GroundTheory.ProfiniteCohomology.PoincarePairs.ConjHomotopyFunCupCochainZeroRight
 import GroundTheory.ProfiniteCohomology.PoincarePairs.IsDiscreteRepResHomCoindRes

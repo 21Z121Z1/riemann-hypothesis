@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BaseRepCapelliEigenDual
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BigCellExpansionSmulStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BigCellExpansionOfBesselFunctionZeroStatement

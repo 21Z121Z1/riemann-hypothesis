@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.IsInfUnitary
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.UniqueA
 import Mathlib.RingTheory.PicardGroup

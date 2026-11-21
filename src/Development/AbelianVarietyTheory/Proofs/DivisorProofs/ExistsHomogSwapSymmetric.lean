@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SwapIdentityFromRegularBaseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomogeneousSwapRegularStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericDegreePullbackFormulaStatement

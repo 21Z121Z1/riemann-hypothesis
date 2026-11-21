@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteEtaleSurjectiveProj
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.Et.TrivTors
 

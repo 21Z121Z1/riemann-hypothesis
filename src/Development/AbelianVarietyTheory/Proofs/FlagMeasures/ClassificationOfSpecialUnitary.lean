@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SmulOneMem
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HarishChandraParameterDescentStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LowestTypeParameterAscentStatement

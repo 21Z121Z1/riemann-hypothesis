@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockHarmonicSplitting.FockInnerSelfReNonneg
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.Data.Finsupp.Interval

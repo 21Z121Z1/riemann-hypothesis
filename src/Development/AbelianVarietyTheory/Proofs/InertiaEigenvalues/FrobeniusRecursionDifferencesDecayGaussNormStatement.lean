@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobeniusRecursionDifferencesDecayGaussNorm
 open PowerSeries GlobalTheory.BK Filter Topology
 set_option maxHeartbeats 1000000 in

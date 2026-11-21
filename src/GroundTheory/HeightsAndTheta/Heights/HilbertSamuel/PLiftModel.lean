@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLiftSpread
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLiftAtPrime
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLiftModelNef

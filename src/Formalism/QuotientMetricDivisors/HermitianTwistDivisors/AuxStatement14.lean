@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.ClassSumDualLe
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.RatHerm
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.DimClosureAddOneLe
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartResidueDegreeAlgClosedClosed
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PChowDegreeSection

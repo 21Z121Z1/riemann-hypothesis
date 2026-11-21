@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.FunctionFieldEssFiniteTypeInt
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsComplexEmbeddingExtension
 import Development.AutomorphicArithmetic.DivisorFrames.EqGenericPointOfIntegralDim

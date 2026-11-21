@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialPullbackStatement
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PicardGroup

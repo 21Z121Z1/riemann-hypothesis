@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ChainFrmOk
 import Formalism.LocalToGlobal.Columns.ThetaOpenTwLevQ
 import Formalism.LocalToGlobal.Columns.ChainTwTop

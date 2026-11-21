@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
 import Mathlib.NumberTheory.NumberField.Units.DirichletTheorem
 import Mathlib.Tactic.Monotonicity.Lemmas

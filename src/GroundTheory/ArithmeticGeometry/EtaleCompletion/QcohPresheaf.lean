@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.EtaleCompletion.ModulesPullback
 import Mathlib.AlgebraicGeometry.Morphisms.Etale
 set_option maxSynthPendingDepth 1

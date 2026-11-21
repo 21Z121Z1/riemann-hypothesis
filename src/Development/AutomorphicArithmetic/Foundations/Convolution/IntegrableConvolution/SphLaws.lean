@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SplitLoc
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.SphIso
 import GroundTheory.AutomorphicForms.CompactFormulaCountable

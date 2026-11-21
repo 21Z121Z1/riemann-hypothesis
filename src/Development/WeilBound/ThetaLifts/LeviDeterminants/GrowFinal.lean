@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowInt
 import Development.AbelianVarietyTheory.Definitions.Divisors.CTSmallCone
 

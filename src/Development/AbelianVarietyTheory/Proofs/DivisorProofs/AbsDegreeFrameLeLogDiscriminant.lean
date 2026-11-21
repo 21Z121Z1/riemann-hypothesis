@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundOfValue
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatDegreeFromPrismaticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsClosedOfIsAlgPt

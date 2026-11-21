@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.EigenbasisOfDistinctRoots
 import Formalism.PadicSubsetSums.StableGradedCounts.IRRCentralIdempotent
 import Mathlib.Analysis.CStarAlgebra.Classes

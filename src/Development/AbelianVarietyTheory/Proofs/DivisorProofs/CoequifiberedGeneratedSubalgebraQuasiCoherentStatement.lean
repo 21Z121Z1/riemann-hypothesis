@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoequifiberedGeneratedSubalgebraQuasiCoherent
 open AlgebraicGeometry CategoryTheory Limits Opposite GlobalTheory.QcSub
 set_option maxHeartbeats 1000000 in

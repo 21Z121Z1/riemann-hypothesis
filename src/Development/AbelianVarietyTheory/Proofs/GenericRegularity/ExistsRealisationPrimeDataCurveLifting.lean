@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.FiniteDimensionalOfModel
 
 set_option synthInstance.maxHeartbeats 400000

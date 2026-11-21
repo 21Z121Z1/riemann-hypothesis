@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataTheta
 import Formalism.LocalRingCardinality.DataIdx
 import Formalism.LocalRingCardinality.DataKap

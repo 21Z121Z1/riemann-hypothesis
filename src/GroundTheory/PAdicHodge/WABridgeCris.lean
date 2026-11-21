@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WAEval
 import GroundTheory.PAdicHodge.BCrisNewtonNorm
 set_option maxSynthPendingDepth 1

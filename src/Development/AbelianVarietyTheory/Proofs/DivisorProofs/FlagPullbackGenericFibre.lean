@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleExistsArithmeticVarietyAltAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalOfGenericFibrePullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalDegreePullbackFinite

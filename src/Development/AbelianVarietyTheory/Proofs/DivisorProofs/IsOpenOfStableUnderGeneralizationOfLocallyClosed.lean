@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenOfStableUnderGeneralizationOfConstructible
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.Order.CompletePartialOrder

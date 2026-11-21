@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.EqZeroOfForallLTensorEqZero
 import Mathlib.AlgebraicGeometry.Group.Smooth
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp

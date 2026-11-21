@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand
 import GroundTheory.GlobalFields.HerbrandQuotients.SUnits
 import GroundTheory.GlobalFields.IdeleGroups.LocalNormsEverywhere

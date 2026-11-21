@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ContDiffAtFrameEntry
 import Mathlib.RingTheory.Complex
 import Mathlib.RingTheory.SimpleRing.Principal

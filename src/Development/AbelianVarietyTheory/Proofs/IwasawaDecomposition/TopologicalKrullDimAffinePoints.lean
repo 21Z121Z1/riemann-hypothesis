@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UniMatBlockTriangular
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.KrullDimension.Polynomial

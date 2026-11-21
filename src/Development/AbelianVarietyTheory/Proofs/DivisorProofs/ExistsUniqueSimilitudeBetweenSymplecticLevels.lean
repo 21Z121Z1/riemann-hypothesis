@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ZetaAwayPowSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelOnFibreUniqueTwist
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCycAwayHomComplex

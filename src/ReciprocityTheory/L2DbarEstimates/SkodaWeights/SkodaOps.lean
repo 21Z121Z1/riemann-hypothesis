@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.SkodaWeights.IntegrableSliceProdFin
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import ReciprocityTheory.L2DbarEstimates.SkodaWeights.WeightedIntegralEqLintegral

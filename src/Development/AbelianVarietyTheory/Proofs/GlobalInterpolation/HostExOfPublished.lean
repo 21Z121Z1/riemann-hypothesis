@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.HostExistenceOfChoicesStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormPrimesAndLevelPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.QdChoiceOfHyp

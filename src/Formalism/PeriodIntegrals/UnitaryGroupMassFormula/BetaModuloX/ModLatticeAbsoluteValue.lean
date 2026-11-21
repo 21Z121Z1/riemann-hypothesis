@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaModuloX.MinkFix
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaModuloX.MapEqOfIff
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaModuloX.Skeleton

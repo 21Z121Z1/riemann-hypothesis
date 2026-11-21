@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousComponents
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompMemOfIsStab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvIOneSubEInf

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.JacobianInterpolationStatement
 import Mathlib.MeasureTheory.Function.L2Space
 import Mathlib.Topology.Connected.Separation

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WPlPos
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExcessMemIcc

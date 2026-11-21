@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EdgeCupProps
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.KummerGeneratorOfChar

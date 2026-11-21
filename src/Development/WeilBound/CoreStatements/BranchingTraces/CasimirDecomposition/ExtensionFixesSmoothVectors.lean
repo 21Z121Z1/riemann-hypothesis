@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.BranchingTraces.HeBranching
 import CompanionTheory.AutomorphicTheory.ZuckermanCommutation.ZuckermanFunctors.IsSimpleFam
 import Development.AbelianVarietyTheory.PublishedTheorems.DiscreteSeries₂.Poulsen

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.HerbrandA
 import Mathlib.RepresentationTheory.Invariants
 import Mathlib.Tactic.ENatToNat

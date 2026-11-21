@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.MemInvariantSectionsIffIntegral
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CcDualWtAnti
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CloudIso

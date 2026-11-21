@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LevelS
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.InflKer
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.TameEq

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AwayAgree
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootLetterInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedMetricArithmeticFunctionShiftStatement

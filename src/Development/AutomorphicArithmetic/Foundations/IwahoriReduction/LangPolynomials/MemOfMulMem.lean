@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.NormOfDvd
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.ToBasis
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.ContOf

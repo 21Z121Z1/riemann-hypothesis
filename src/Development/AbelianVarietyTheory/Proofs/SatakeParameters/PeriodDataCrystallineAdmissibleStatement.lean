@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PeriodDataCrystallineAdmissible
 open Formalism Formalism.WeaklyAdmissibleFiltrations Formalism.MainNotions.N Module
 set_option maxHeartbeats 1000000 in

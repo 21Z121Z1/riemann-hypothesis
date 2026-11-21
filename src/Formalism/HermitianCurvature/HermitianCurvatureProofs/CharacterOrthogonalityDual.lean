@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.BlockKernelPropertiesOfSteps
 import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.LowUniMulVecELast
 import Mathlib.Analysis.CStarAlgebra.Classes

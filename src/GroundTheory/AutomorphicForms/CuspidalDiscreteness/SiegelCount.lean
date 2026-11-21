@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Counting
 import GroundTheory.AutomorphicForms.NormDetDiagUnitsPosRealToUnits
 import GroundTheory.AutomorphicForms.ReductionMahler

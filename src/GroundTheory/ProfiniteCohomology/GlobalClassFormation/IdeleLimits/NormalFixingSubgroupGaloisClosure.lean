@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.Invariants
 import GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality

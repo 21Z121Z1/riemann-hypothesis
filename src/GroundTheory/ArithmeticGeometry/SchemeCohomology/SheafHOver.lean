@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.SheafH
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.OverShriek
 import Mathlib.Algebra.Category.Grp.AB

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcIntegrationByParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylLemmaMollifiedHarmonicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DensityStandardVolumeFormProductStatement

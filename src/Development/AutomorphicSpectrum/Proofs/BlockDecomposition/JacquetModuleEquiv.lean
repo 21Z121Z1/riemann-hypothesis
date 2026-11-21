@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import GroundTheory.AutomorphicForms.InductionParabolic
 set_option maxSynthPendingDepth 1

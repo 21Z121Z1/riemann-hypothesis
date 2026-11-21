@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NFRadRedL
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LeftDerivativeCurves
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff

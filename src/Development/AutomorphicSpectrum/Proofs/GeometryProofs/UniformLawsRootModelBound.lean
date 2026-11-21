@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormOffSpecializationRingStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginFrameHeightStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginGenericFrameBoundStatement

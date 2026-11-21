@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeparableCentralizerCommutative
 open Matrix GlobalTheory.LKRes
 open scoped TensorProduct Classical

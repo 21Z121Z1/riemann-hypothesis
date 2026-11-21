@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CellPosExact
 import Mathlib.Algebra.Order.Ring.Star
 set_option maxSynthPendingDepth 1

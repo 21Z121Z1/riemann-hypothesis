@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaSecond
 import Formalism.QuotientMetricDivisors.RatHermLcvTwist
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

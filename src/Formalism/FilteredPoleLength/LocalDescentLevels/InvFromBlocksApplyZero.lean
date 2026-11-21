@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.ReducedBasisBounds.FilteredPoleLength
 import Formalism.GelfandTransference.HadamardGelfand.Hadamard
 import Mathlib.Topology.Sheaves.Presheaf

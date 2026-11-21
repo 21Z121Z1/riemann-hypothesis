@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsCuspFunOfApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HorizontalThetaLevelSecondStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftHorizontalAlgebraicCoeffsStatement

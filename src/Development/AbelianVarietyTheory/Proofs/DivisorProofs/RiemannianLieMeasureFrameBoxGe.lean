@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.EmbGLMemRealSU
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbittAlg

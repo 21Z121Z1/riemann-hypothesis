@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsTheta
 import Mathlib.MeasureTheory.Integral.Pi
 import Mathlib.Tactic.ENatToNat

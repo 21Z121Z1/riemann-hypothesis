@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSupercuspidalOfIsCuspidal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralTranslateDetOneCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalUnipotentVanishing

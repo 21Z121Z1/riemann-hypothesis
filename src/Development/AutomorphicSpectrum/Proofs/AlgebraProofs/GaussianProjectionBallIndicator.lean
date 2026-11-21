@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeFiniteFibreDim
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeJacMeasurable
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeKrullDimLe

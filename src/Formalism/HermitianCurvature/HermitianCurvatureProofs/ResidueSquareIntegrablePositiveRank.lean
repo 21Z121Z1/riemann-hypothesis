@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SendsToAlgMulAlg
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelSquareIntegrableOfTransport
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialTransformSquareIntegrable

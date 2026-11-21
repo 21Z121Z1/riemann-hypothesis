@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalGroupLog.Statement
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.TrDual
 

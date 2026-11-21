@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ZRYRCover
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsKHwMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueJointTop

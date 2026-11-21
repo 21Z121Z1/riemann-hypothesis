@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.CommutingEndomorphismPreservesInvariants
 import Formalism.SharpRestriction.Divisibility.ChainOperators.ProjectorStatementOfIntegrality
 import Formalism.SharpRestriction.Divisibility.RankTruncation.LocalAdditiveCharacterExpansion

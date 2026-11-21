@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaEigenCompatibilitySeventhStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatakeMultisetAtInertPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodPlaceSplitConditionStatement

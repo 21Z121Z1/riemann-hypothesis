@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.KummerTheory.BockCut
 import Development.EtaleCohomology.TateTwists.EtaleLocalPropertyBasicClosure
 import Development.EtaleCohomology.TateTwists.EtaleSheafMonoEpiSectionCriteria

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseChart
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseHeight
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.DenseLift

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlternatingCoefficientFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeVandermondeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HookFunctionalPowerSumStatement

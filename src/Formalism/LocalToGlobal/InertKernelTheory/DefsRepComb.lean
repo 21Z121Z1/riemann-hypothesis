@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.DefsInt
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.KerTh
 import Formalism.LocalToGlobal.KernelLattices.FirstKernelLawReading

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocKLeLocU
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalMatrixPreservesLatticeMultipleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeUnitQuotientFiniteRepsStatement

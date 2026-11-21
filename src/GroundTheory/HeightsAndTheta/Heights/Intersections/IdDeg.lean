@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsFieldIntersectionNoBlockFam
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsPrimeSpanXb
 set_option maxSynthPendingDepth 1

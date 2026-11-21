@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateFreeTrivialFlagMod
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TrivFlagModOfDvd
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.TrivflagNefFibre

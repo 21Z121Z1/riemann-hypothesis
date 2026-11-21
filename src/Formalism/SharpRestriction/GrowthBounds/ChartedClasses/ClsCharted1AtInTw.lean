@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ValIntN
 import Formalism.SharpRestriction.GrowthBounds.TwistedLevelAgreement.StepInTwK
 

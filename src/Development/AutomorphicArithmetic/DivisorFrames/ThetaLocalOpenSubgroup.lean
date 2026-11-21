@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBumpB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCoefficientTendstoZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerLocallyConstant

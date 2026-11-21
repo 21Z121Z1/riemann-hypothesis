@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HermitianSpaces
 import GroundTheory.HeightsAndTheta.Theta.CMDatum
 import GroundTheory.HeightsAndTheta.Theta.Inertia

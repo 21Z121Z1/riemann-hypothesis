@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CompletionAtPlace
 import GroundTheory.LocalFields.Interface
 import Mathlib.Algebra.Order.Ring.Star

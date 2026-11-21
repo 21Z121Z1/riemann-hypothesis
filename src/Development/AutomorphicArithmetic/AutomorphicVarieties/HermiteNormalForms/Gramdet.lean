@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.SmulNeZeroLat
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Blockdet
 import Mathlib.NumberTheory.NumberField.Discriminant.Basic

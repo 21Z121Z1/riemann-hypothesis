@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CovGlue
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CupH0NormalCoboundary
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OmMapEqMOm

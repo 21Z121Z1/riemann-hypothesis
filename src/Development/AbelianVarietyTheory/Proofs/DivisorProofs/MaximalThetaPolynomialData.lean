@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StableComplementInSocleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxThetaVanishingLocalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaxThetaVanishingGlobalStatement

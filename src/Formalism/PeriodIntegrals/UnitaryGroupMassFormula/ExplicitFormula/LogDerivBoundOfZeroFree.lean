@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.DiscIn
 import Mathlib.Analysis.Complex.BorelCaratheodory
 import Mathlib.Order.CompletePartialOrder

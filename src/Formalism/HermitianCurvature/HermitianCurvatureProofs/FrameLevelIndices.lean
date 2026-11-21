@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PointwiseStabiliserParametrisationBijective
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ReductionSurjective
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MemIntegralGlOfMiddleBlock

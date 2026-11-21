@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.OddDualWeylJacobian.JacRev
 import Mathlib.Order.Interval.Finset.Box
 import Mathlib.RingTheory.WittVector.IsPoly

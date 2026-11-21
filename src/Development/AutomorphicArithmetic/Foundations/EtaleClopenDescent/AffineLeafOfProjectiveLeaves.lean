@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EquivOfConstantSection
 import Development.AutomorphicArithmetic.CommutativeAlgebra.RepresentedAffineBijective
 import Development.AutomorphicArithmetic.CommutativeAlgebra.InclusionConnectedTwist

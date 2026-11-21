@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.RealIwasawaUnipotentHaar
 import GroundTheory.AutomorphicForms.RealGroups
 

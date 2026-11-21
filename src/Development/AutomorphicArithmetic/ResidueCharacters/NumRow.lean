@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.RowDef
 import Development.AutomorphicArithmetic.ResidueCharacters.CyclotomicWeightExponentLe
 import Development.AutomorphicArithmetic.ResidueCharacters.NumSplit

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.LetterShift
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
 import Formalism.GaussJetBounds.GaussJetProofs.Transfer

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.JacobianTransvectionSplitting.FactorOneOfDiscrete
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.MeasureTheory.Measure.Haar.MulEquivHaarChar

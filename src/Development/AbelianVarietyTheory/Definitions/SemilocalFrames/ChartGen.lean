@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.CardSubmodulesAndLinearEquivBounds
 import Formalism.HermitianLattices.StatementLat
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionEval
 import GroundTheory.GlobalFields.ComplexMultiplication.RespectsAddUniversal
 import GroundTheory.GlobalFields.ComplexMultiplication.BaseChange

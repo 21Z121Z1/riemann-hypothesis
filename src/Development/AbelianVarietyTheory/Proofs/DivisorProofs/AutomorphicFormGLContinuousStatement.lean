@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFormGLContinuous
 open NumberField IsDedekindDomain GlobalTheory.CuspRep
 set_option maxHeartbeats 1000000 in

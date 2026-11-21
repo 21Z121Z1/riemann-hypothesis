@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.TriFrDefs
 import Development.AutomorphicArithmetic.DivisorFrames.ExtendToInvertibleMatrix
 import Development.AutomorphicArithmetic.DivisorFrames.SplitActionCoordinateSpan

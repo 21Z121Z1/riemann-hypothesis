@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HenselPolynomialRefinement
 open TensorProduct CrystallineSemistableComparison.D
 open scoped LaurentPolynomial

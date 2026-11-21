@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.FamilyMomentBoundOfHypotheses
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.MomInt2
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiscreteSeriesWeylDimension

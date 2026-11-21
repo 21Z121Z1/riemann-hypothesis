@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Measure
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Objects
 set_option maxSynthPendingDepth 1

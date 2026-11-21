@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.QuotRepMk
 import Mathlib.Analysis.Complex.UpperHalfPlane.Measure
 import Mathlib.NumberTheory.ModularForms.Petersson

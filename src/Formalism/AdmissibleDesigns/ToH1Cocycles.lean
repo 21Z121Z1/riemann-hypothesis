@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.BkLocCol
 import Formalism.AdmissibleDesigns.InvariantsMapEquivariant
 import Formalism.AdmissibleDesigns.CoboundaryMemFiniteClasses

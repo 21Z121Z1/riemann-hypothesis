@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LbIsoPolPull
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EventuallyAmple
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsKaehlerFormCongr

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BumpConvolutionSupportStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoshTransformConvolutionStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CoshTransformCasimirRealStatement

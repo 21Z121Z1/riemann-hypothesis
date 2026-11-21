@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepDict
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.MMRead
 import Formalism.LocalToGlobal.InertKernelTheory.DefsSigma

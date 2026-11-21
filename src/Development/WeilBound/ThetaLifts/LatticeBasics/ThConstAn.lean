@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.PairsStable
 import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNatMulIntegralOfIsCompact

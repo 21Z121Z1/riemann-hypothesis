@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ProjLineRankTwoPushforwardHypotheses
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PProjBundleMultiHomogGrad
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Objects

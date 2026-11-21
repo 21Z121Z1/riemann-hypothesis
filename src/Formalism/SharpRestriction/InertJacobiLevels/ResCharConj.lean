@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraVal
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraNch
 import Formalism.SharpRestriction.InertJacobiLevels.VVEqEmptyOfNotIsResidueClassZero

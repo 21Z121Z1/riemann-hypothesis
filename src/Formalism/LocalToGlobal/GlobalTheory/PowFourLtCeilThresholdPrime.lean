@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.SuppSat
 import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSaa
 import Formalism.SharpRestriction.AdmissibleParameterJoins.GandSk

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.CharZeroWittQuadratic
 
 noncomputable section

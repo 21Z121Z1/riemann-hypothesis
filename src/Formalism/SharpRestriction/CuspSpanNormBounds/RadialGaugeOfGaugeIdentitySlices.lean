@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.OscillatoryIntegralBounds
 import Formalism.HermitianCurvature.StatementWd
 import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra

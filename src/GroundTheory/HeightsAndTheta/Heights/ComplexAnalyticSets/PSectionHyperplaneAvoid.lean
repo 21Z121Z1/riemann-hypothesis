@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSectionHyperplaneAvoid
 import Mathlib.GroupTheory.CosetCover
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

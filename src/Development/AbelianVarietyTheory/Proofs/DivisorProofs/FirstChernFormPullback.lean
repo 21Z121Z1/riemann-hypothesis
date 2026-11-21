@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPartCombinationPower
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackChartMetricBlockForm
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory

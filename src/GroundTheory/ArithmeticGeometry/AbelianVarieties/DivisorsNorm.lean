@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.Divisors
 import Mathlib.RingTheory.Ideal.Norm.RelNorm
 import Mathlib.RingTheory.Polynomial.IsIntegral

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockDiagonalMinorVanishing
 import Mathlib.Data.Fin.Tuple.Sort
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation

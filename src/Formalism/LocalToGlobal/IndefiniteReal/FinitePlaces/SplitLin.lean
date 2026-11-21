@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.SplitLem
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.AffineProjectionSplitting
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.InvForm

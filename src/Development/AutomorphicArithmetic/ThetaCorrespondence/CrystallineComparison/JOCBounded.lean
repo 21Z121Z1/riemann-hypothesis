@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.LeafDefs
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.IotaBounded
 

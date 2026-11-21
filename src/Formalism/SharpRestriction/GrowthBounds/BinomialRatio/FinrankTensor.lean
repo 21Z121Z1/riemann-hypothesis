@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.RankDefs
 import Formalism.GradedWeylDivisibility.FinalD
 import Mathlib.Order.Interval.Finset.Box

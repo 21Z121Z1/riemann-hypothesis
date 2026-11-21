@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithDegree
 import GroundTheory.HeightsAndTheta.Heights.HermitianSum
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StdCoordMapInjective

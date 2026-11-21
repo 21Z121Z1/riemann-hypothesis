@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataParams
 
 open GlobalTheory.HTW Formalism.BasicNotions Formalism.FrobeniusOrbits

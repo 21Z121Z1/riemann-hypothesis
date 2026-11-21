@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
 import Development.AbelianVarietyTheory.Definitions.Foundations.RayPrimes
 import Mathlib.NumberTheory.Harmonic.ZetaAsymp

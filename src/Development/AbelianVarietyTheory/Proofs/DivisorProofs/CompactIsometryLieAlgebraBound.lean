@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLieAlgebraVectorDecomposition
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformBoundedRightInverse
 import Mathlib.Analysis.Matrix.Normed

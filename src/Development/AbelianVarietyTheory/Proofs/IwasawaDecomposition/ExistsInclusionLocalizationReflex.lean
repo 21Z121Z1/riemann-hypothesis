@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsGlobalModelOfLocalModels
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Models
 

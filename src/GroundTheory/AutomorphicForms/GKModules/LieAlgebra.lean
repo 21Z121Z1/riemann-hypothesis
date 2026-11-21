@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.RealGroupsLie
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

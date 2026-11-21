@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.HasDerivAtCompLog
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.Density
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.MultOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalIdeal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesSheaf
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.KFinArch
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.PureEqPureA
 

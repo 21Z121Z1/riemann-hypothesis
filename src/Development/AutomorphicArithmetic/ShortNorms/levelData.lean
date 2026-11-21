@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ShortNorms.typePrimesN
 import Development.AutomorphicArithmetic.ShortNorms.ExistsThreePrimesOneModLeRpow
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExplicitRanksBasicBoundsLargeScale

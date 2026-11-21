@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.DensExact
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SplitDensity.FiberCard
 import Mathlib.Algebra.Order.Ring.Star

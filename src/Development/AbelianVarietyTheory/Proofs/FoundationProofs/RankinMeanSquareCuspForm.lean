@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasSumParsevalQExpansionHorizontalLineStatement
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Algebra.Order.Ring.Star

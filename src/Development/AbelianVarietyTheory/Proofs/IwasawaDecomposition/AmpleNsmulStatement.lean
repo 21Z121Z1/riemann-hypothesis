@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AmpleNsmul
 open GlobalTheory GlobalTheory.ProjVar
 set_option maxHeartbeats 1000000 in

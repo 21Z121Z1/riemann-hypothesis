@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.OrdinaryJacquetModules.CoreOrdAlt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalArtinCompNormCompat
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RestrictsExists

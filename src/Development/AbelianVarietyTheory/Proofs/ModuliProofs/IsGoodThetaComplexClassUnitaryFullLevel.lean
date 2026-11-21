@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.GoodThetaClassOfLatticeFamiliesStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ImAdjointOfSpan
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FiniteMarkedDataInGenus

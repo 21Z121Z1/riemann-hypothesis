@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanRepMatrixEqTopOfAbsIrreducible
 import Mathlib.RingTheory.Etale.Weakly
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N

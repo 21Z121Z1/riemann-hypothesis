@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.GaXiSplit
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormFactor
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.Block3MulBlocks

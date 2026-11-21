@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TwNormLat
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.TwChrOne
 import Formalism.LocalToGlobal.Columns.ChainTwAll

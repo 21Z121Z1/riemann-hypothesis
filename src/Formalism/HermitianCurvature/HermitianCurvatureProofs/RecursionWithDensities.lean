@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementTC
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OneLevelInequality
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OneLevelInequalitySplitBySize

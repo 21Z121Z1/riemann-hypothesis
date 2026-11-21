@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ColMinorMulTriangular
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsRowsAttainingMinorValues
 import Development.AutomorphicArithmetic.DivisorFrames.ValuationRegularFunctionAtPoint

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.IdeleActionQuotient
 import GroundTheory.GlobalFields.ComplexMultiplication.HilbertClassFieldArtin
 import GroundTheory.GlobalFields.WeilGroups.SignSymbol

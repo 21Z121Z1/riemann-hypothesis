@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.KerDatTuple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelUnitValues
 import Development.AbelianVarietyTheory.Definitions.Divisors.RealisedChainTorusEq

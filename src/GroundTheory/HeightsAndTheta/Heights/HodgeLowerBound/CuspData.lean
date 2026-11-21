@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.EqZeroOfIsIsoSub
 import Mathlib.Algebra.Module.Torsion.Prod
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.PassageScaleFree
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DualMu
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.TheoremDivIneq

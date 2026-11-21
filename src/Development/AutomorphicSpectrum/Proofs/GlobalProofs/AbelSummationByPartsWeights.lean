@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PartialSum
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.RingTheory.WittVector.IsPoly

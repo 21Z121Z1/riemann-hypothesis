@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NormPowLeNormFactorial
 import Mathlib.NumberTheory.Padics.ProperSpace
 import Mathlib.RingTheory.Henselian

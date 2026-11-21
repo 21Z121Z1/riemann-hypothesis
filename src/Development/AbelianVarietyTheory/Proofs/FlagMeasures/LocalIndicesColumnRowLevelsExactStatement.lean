@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LocalIndicesColumnRowLevelsExact
 open Formalism.BasicNotions Formalism.MainNotions NumberField IsDedekindDomain
 set_option maxHeartbeats 1000000 in

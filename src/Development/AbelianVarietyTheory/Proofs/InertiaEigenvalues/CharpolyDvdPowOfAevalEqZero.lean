@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.UniNilp
 import Mathlib.LinearAlgebra.Charpoly.ToMatrix

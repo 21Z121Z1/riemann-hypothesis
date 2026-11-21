@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHolomorphicFibreInfinite
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PImplicitCurve
 import Mathlib.Analysis.Calculus.ImplicitContDiff

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CMTypeGalois.StatementField
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterPartTensorSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FockActionHomogeneousEigenvectorStatement
 

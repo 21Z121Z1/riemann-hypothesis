@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.FlagVectorMemLocalization
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.WAniso
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.CMNorm

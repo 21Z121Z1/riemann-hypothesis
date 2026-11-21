@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCplMap
 import Mathlib.RingTheory.AdicCompletion.RingHom
 import Mathlib.RingTheory.WittVector.IsPoly

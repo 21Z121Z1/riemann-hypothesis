@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.CmpOfMemX
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeMembershipPolynomialGamma
 

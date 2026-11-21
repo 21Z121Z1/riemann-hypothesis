@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FormMapRBijective
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EmbFColFormMemMram
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ColStep0MemLat

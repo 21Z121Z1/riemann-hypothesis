@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LatticeTheta.Statement
 
 open MeasureTheory Filter Asymptotics Complex

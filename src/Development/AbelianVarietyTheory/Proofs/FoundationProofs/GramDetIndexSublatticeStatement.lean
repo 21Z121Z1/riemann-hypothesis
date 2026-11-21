@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GramDetIndexSublattice
 open scoped Matrix
 open NumberField IsDedekindDomain

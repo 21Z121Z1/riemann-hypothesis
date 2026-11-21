@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinpolyOfRegAfOfFixL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalTermIntegralExpression
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrbitalTermRealTrivialisation

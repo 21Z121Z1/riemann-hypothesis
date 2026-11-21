@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GaloisValuations.Global
 
 set_option linter.style.haveILetI false

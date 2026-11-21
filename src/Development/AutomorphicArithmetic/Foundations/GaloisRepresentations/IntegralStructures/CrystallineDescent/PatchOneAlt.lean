@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.IntegralStructures.CrystallineDescent.LimOddOfLimWU3
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.X0OfStarCondition
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcDefs

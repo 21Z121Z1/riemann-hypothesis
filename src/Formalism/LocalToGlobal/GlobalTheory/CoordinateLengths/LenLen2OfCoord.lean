@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.PairingAdjointness
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.PairingContinuityBound
 

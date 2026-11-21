@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DistAddTwoLeOfSameVec
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.ProdFromSelfEqOne
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.TypOfTypical

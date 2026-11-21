@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.LiftBlockSections
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AevalMulMemChartRingZ
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionLatticeFinite

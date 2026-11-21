@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.DualTransport
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.GaussAbs
 import Mathlib.Algebra.Order.Ring.Star

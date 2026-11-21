@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIntegralCartierDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CartierDualIntegralCounitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentDimsLeHeightStatement

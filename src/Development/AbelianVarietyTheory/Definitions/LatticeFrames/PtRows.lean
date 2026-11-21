@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ThetaSourceAction
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ColumnCompatibleSelection
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.CxTiesOf

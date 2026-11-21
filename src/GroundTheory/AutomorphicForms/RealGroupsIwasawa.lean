@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.RealGroupsPolar
 import Mathlib.Analysis.Matrix.LDL
 import Mathlib.RingTheory.Henselian

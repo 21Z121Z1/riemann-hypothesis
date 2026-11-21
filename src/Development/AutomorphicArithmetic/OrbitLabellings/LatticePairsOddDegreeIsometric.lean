@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SubstUnitaryLogarithmicCoordinatesStatement
 import Development.AutomorphicArithmetic.OrbitLabellings.ExistsUnitQuotientOfNormOneUnramifiedUltrametric
 import Development.AutomorphicArithmetic.OrbitLabellings.IntegralMvExpSumLogSOfOddPeriod

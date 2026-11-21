@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.LocGram
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsBasisCols
 open scoped TensorProduct Matrix

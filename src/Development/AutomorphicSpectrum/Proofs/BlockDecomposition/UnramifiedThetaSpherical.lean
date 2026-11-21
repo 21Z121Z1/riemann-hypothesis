@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ModulusEntryLeMRow
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableIntIndMul
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SphericalSplitOfPointwise

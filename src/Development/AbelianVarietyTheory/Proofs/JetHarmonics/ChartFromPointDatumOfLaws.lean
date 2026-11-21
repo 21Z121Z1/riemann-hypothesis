@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Development.AbelianVarietyTheory.Definitions.Jets.SurjectiveAppTopSqCube
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ValCongr

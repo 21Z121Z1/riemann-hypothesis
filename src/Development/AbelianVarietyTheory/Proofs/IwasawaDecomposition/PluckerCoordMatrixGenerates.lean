@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsCoordNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PluckerCoordChangeStableStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PluckerRegularImpliesGenerationStatement

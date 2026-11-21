@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EqZeroOfTheta
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MCSpan
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.RealSt

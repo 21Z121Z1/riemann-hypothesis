@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.FiniteLengthSubquotient
 import GroundTheory.LocalFields.PadicLogSeries
 set_option maxSynthPendingDepth 1

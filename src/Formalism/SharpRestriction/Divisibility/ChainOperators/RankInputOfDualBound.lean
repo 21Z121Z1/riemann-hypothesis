@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.RankTruncation.RkLemmaBridge
 
 namespace Formalism.MainNotions.DIV.CutRk

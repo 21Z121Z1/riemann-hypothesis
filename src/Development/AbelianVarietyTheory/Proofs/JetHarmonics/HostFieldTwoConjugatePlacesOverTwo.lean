@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CMTraceForms.SplitPlacesDiscriminantDepthOfSplitAt
 import Development.AutomorphicArithmetic.CMTraceForms.CmDatumDiscriminantDepthBounds
 import Formalism.LocalRingCardinality.HostCls

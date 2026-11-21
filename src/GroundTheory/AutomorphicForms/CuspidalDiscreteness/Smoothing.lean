@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.Uniform
 import GroundTheory.AutomorphicForms.Reduction
 import Mathlib.Topology.ContinuousMap.CompactlySupported

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.SelmerInjColumnPlace
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.CoprimeLiftProofs.Imports
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.SymmetricPowerTransfer.GlobalUnitaryForms.HodgeTateFromSandwich
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsIntConj
 import Mathlib.RingTheory.Henselian

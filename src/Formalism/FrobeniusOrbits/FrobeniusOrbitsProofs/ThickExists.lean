@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.HostThickExists
 import Lemmata.GeneralBFactSecondLast.Imports
 import Mathlib.Algebra.Order.Star.Real

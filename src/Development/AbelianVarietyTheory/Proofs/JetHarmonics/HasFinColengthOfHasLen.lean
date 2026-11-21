@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PlaceDivisors.StChartF
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.LieMatrixCoordinates
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DiscriminantGramUnit

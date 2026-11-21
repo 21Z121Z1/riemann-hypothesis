@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.OnePlaceEstimates
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.CapelliEigenGapCoefStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsLocalSectionBoundsStatement

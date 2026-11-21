@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.AdjoinCycZeta
 import Formalism.LocalToGlobal.UnitaryNorms.IotaABijective
 import Formalism.QuotientMetricDivisors.RatHermLcvTwist

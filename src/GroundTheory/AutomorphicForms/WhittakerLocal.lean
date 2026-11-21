@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.WhittakerDistribution
 import GroundTheory.AutomorphicForms.WhittakerCriterion
 import GroundTheory.AutomorphicForms.MeasuresGL

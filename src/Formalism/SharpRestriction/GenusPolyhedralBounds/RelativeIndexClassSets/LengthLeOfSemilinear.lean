@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.LocalDescentLevels.LocalStepDescent
 import Formalism.FilteredPoleLength.LocalDescentLevels.LeadingTermLength
 import Formalism.FilteredPoleLength.LocalDescentLevels.LevelsChainOfAddOneLe

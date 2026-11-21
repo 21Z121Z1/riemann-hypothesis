@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.HtXfer
 import Formalism.LocalToGlobal.ProjectiveLattices.AxHInst
 import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg

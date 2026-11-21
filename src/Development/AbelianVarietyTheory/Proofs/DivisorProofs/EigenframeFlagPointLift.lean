@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedPointRelationFieldExt
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 open AlgebraicGeometry CategoryTheory NumberField IsDedekindDomain

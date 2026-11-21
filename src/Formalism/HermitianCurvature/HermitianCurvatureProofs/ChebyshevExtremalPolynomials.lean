@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.LevelRecursionCondNeeded
 import Formalism.LatticeRigidity.HeightMinimum.ChebyshevLeadingCoeffHolds
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

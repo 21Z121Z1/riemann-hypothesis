@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.LocalFaithfullyFlat
 import Formalism.PieriBlockIdeals.PieriColumnMinors.SL2BinomialLattices
 import Formalism.RankGapBounds.RankGapProofs.FormsTensorLocalization

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.FiniteTypeHarishChandra.SupportExistsAll
 
 open CategoryTheory ReciprocityTheory.Ty.Fin

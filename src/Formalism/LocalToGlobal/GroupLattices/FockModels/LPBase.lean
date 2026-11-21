@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.NablaLTwEqMap
 import Formalism.LocalToGlobal.GroupLattices.FockModels.MkP
 

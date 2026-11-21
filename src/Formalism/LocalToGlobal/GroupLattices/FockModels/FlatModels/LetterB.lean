@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.Letter
 import Formalism.GradedWeylDivisibility.FinalD
 import Formalism.SharpRestriction.GrowthBounds.ObjSeg

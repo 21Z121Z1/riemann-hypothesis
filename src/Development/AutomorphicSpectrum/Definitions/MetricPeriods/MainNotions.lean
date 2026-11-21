@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MonomialMeanResidues.FilteredDegree
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GoodOver
 

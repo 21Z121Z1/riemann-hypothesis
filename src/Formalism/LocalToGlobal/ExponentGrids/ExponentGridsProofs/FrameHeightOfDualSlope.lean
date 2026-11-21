@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.TruncatedLatticeHolds
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.KappaNormalise
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.SecondComplementParameterBounds

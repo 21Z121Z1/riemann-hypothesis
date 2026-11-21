@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DifferentiableAtDet
 import Mathlib.RingTheory.WittVector.IsPoly
 

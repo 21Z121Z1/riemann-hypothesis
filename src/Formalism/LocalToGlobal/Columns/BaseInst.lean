@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.BaseLemmas
 import Formalism.LocalToGlobal.Divisibility.CoeffLemmas
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleWeightMiddleEntries

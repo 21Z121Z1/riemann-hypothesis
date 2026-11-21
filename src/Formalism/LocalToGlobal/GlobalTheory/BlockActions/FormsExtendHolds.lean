@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.StabFunGen
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.InJSymRestrict
 

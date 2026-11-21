@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.TwistedPlaces
 import Formalism.SharpRestriction.GlobalTheoremInputs
 

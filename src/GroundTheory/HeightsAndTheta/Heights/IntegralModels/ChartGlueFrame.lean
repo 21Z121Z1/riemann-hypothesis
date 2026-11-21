@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueLat
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.ChartGlueSat
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJGlobalHaar
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.HasModerateGrowthZero
 import GroundTheory.AutomorphicForms.GL2.GJGlobalDefs

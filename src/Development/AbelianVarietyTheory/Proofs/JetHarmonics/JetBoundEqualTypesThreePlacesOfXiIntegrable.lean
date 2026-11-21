@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutBPEqShift
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormaliserAcrossPlaces
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BigCellJetBoundShiftedTypePlace

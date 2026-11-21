@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SchurAdmissible
 import Formalism.LocalRingCardinality.DataHost
 open MeasureTheory Set Filter NumberField IsDedekindDomain

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.SkewTwo
 import Development.WeilBound.ThetaLifts.LatticeBasics.HgtFin
 import Development.WeilBound.ThetaLifts.LocalTheory.ConeShifts.MemIntLocOfIdem

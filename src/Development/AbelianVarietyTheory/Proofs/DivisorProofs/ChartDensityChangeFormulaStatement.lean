@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartDensityChangeFormula
 open MeasureTheory Topology
 open scoped ENNReal

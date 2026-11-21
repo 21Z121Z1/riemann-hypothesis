@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrrParIffCuspidalProduct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalOfIrr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HasLabelTransportEquiv

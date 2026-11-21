@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EtaNat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ClsCongr
 import Mathlib.RingTheory.PiTensorProduct

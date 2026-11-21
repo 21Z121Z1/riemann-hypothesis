@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsotypicFactorOfIsIrreduciblePiFiniteGroups
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsLevelOverIntegers
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsSiegPre
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsPrincipalLift

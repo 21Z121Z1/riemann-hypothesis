@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsEventuallyNormRiemannThetaTermLe
 import Mathlib.Topology.Compactness.DeltaGeneratedSpace
 import Mathlib.Topology.Sheaves.Presheaf

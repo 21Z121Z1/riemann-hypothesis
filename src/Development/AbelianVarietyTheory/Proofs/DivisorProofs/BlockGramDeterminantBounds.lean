@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeFrameGram
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedSqInverseTransposeRevStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedGramReEqSqStatement

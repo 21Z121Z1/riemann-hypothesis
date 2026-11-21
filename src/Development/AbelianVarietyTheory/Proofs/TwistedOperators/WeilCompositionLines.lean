@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineCmModelActionStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineCmModelSumStatement

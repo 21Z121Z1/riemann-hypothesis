@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KernelsMatrix
 import ReciprocityTheory.ThetaQuasiPeriods.NormInvSmulMemSphere
 import Mathlib.Dynamics.Ergodic.Action.Regular

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafDescendVCut
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.RingTheory.RegularLocalRing.Defs

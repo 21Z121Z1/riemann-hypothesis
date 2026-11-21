@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.HerbrandCyclic
 import GroundTheory.LocalFields.UnitsGalois
 import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeRangeNormUnits

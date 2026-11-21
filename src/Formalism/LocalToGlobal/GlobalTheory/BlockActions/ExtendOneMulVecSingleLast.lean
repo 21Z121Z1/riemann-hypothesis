@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 
 noncomputable section

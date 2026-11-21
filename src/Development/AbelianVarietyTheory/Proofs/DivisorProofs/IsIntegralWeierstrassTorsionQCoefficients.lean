@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootOfUnityExpZModAdditiveCharacterProperties
 import Mathlib.Tactic.ENatToNat
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate

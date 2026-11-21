@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.IsAbsIrrCharCompIff
 import Formalism.LocalToGlobal.IndefiniteReal.ConjSubConjSub
 import Mathlib.LinearAlgebra.LinearIndependent.BaseChange

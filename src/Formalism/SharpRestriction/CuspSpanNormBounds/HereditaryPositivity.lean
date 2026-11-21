@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.FamilyBlockLiftEstimate
 
 open Matrix MeasureTheory Filter Topology Polynomial

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PublishedTheorems.CuspidalMultiplicityOne.CuspidalMultiplicityOneLit
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OfUnitary
 

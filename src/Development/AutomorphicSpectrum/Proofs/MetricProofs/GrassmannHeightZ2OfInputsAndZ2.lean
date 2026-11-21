@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.HFl
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PFSGeomDegPos
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase

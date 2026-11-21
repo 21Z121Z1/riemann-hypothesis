@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.SiegelSpaceAlgebraHolds
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.IndCount
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.LeadMCoeffEqZero

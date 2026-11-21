@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.RowWtSpan
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.RowLetter
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.OnePos

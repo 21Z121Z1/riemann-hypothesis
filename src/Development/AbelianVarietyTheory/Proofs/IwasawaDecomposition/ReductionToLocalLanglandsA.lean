@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TypesTrueOfRayClassStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RayPrimeHostIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowDepthOfPrimitiveStatement

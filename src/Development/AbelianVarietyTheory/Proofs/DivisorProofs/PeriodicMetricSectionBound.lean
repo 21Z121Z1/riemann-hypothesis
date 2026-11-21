@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodTorusFlatCoordsInverse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFundamentalDomainOfIsLat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SetIntegralFderivApplyEqZeroOfPeriodic

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.CutIdentityRightSideCongrOfSubMem
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Statements
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PublishedTheorems.GelfandKazhdanReal

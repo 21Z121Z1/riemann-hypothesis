@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.UnivPart
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.RingTheory.PowerSeries.Ideal

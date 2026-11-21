@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.Cartan
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechToDerived
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.SheafH

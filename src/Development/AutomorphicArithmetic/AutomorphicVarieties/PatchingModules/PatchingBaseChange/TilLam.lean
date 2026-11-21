@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.PatchingBaseChange.AlgebraMapEq
 import Mathlib.RingTheory.MvPowerSeries.Equiv
 import Std.Tactic.BVDecide.Normalize.Prop

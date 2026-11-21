@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Lattice
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RamificationRankSum.Points
 import Formalism.PeriodIntegrals.EfRankSum

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ShiftOf
 import GroundTheory.AutomorphicForms.GL2.InnerProductParamHolo
 import Mathlib.Topology.UniformSpace.Uniformizable

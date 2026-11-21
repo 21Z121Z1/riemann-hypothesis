@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.SemipositiveLeviOfLogMetricStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.UniformLeviPositivityOnChartsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.VerticalFactorSmoothHermitianMetricStatement

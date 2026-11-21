@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.CovLog
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLogLogCut
 import Mathlib.Analysis.Analytic.Polynomial

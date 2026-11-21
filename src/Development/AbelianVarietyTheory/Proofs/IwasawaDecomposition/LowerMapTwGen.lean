@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FixedVectorEqOfStandardData
 import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LastAllTranspose

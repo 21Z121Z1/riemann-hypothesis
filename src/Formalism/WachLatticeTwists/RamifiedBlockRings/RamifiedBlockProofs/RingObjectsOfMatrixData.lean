@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.FinrankRangeEq
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.IsUnitDetOfConst
 import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.BridgeDet

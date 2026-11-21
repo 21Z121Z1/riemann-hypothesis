@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodTorusFlatCoordsInverseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormSmoothOnCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatFormClosedOnCoverStatement

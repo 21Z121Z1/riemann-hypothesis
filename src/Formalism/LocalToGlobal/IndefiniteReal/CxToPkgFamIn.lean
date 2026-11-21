@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.CxLemmas
 import Formalism.LocalToGlobal.Divisibility.DivisionHeightBoundStatement
 

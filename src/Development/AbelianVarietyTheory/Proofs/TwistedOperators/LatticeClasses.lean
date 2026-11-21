@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeBounds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsValuationEqZpow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FlatNeZeroOfMemR

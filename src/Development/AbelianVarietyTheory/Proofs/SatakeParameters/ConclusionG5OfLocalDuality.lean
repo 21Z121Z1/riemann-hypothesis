@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EigenPeriodOfLocalGlobalStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.H1H2LocalDualityStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalGlobalCompatibilityStatement

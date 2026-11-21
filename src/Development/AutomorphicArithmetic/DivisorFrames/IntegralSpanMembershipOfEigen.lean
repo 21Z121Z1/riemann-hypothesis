@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.TraceDuality.Casimir
 import Development.AutomorphicArithmetic.CyclotomicBounds.TraceDuality.LocalGen
 import Development.AutomorphicArithmetic.CyclotomicBounds.TraceDuality.NormGen

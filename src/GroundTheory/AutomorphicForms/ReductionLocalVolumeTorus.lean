@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.RealIwasawaSubgroups
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.MeasureTheory.Integral.Pi

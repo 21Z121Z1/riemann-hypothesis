@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FinitePartTypes
 import Formalism.LocalToGlobal.IndefiniteReal.MultLemmas
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FromSpecResidueFieldAppTopIso
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehomA
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper

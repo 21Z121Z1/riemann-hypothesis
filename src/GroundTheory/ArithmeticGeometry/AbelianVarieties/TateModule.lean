@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.TorsionGalois
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.Torsion
 import Mathlib.NumberTheory.Padics.RingHoms

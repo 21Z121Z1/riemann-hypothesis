@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FinrankKerLeHilbertSchmidtNormSqSubIdStatement
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.UnfoldingConstantsPos
 open Formalism.BasicNotions Formalism.MainNotions.S GlobalTheory.Core.Rk

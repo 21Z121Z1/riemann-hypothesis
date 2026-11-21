@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.RealDisplayAllK
 import Formalism.WachLatticeTwists.RamifiedBlockRings.LocalToDisplayFree
 import Formalism.WachLatticeTwists.RealClassMaps.RealClassMapProofs.TheoremNFiveRealAllLiftThird

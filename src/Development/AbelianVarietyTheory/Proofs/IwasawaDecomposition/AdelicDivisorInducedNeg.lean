@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ImaginaryRootNeZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPow
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelNeg

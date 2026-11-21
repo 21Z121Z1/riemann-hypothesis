@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AdelicMatrixCongruenceBadPrimeIffCompletionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLevelElt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsStarNe

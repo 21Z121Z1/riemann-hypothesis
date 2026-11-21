@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelUnitInTowerAnEqSiegelUnitOnComplexStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SiegelFunctionNeZero
 import Mathlib.Order.CompletePartialOrder

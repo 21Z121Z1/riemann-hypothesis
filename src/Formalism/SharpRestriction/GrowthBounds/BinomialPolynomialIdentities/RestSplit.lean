@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.RestPathFrom
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.TwistSubEqMatrixSubst
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.CorA3primeB

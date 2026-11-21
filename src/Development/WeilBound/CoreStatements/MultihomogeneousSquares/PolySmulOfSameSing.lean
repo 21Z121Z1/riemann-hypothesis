@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MultihomogeneousSquares.AntisymmetryFibreSquares
 import Development.WeilBound.CoreStatements.FlagImmersions.AevalEqZeroOfMem
 import Development.WeilBound.CoreStatements.VolumeEquality.DegPushPullB

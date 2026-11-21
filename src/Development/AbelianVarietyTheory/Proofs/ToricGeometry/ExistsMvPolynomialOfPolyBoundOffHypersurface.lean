@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.EntireApplyEqOfPeriodicOfSpanReal
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.Complex.RemovableSingularity

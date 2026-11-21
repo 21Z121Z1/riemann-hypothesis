@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BijectiveGsLocalInvRootsOfPlaces
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseCores
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BasePairing

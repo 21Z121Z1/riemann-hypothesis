@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields
 import Mathlib.Algebra.Polynomial.SpecificDegree
 import Mathlib.Data.Rat.Star

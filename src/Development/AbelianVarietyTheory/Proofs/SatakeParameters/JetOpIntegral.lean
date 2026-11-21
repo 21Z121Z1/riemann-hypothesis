@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.FourierColumnIndicator
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SourceLatticeInvariance
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.CharacterValuation

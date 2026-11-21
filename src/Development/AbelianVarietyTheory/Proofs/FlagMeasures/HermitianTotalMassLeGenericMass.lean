@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Equality
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TotalLeGeneric
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumOrbitNormaliser

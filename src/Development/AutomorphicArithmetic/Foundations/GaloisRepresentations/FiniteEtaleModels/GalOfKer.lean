@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTranslA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenModelEqGenericFibre
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsGHeckeMapForget

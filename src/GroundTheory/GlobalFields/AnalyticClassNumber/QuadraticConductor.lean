@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.AnalyticClassNumber.QuadraticLegendre
 import GroundTheory.GlobalFields.AnalyticClassNumber.QuadraticDirichletConductor
 import GroundTheory.GlobalFields.AnalyticClassNumber.QuadraticHurwitzZero

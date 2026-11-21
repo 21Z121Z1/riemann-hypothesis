@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ReductionSiegel
 open NumberField MeasureTheory Matrix
 open scoped NumberField.AdeleRing Pointwise

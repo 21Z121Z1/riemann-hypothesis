@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisedGroupHomCharacterMapConstant
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsTangentOfIsLieImage
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.AdmBoundsBOfAdm
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Order.Interval.Finset.Box

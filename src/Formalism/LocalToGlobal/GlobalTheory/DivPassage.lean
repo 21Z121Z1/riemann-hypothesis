@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.RowLat
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 import Formalism.BranchSandwichDivisors.StatementL

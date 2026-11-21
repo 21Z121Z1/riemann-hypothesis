@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsPPowerLevelFromPrimesAboveP
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal
 open NumberField IsDedekindDomain Filter Topology

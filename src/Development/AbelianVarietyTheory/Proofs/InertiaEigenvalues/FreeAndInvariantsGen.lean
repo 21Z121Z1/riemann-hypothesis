@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WachDeltaInvariantCoboundaries
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUniqueSum
 

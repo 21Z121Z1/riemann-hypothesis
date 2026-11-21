@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Jets.WigMap
 
 open Matrix Formalism.QuantumDeterminants Formalism.FourierDecayAlt.Q

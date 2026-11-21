@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.StatementC
 import Formalism.FormalDegreeBessel.StatementDS
 import Mathlib.Analysis.InnerProductSpace.Adjoint

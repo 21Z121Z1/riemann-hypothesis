@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.BotReading
 import Development.AutomorphicArithmetic.LocalEmbeddings.BotPair
 import Development.AutomorphicArithmetic.LocalEmbeddings.BotLocal

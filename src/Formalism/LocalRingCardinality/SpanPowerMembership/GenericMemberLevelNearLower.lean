@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.InertJacobiLevels.HostFam
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleClassGroupCardPos
 

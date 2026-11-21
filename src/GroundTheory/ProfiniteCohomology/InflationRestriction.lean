@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.InflationRestriction.Higher
 import GroundTheory.ProfiniteCohomology.InflationRestriction.FiveTerm
 set_option maxSynthPendingDepth 1

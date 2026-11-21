@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.GaussIndepOfLeTrdeg
 import Mathlib.Data.Int.Star
 import Mathlib.Topology.Sheaves.Presheaf

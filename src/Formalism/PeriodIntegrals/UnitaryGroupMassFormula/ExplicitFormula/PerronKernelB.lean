@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.PerronKernelA
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.RectInv
 import Mathlib.Analysis.Real.Pi.Bounds

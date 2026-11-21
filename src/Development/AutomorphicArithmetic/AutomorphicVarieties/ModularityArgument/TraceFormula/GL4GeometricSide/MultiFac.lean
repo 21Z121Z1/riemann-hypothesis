@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL4GeometricSide.InnerEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemOfIrred
 import Mathlib.Algebra.Azumaya.Basic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.ClassSumDualGeF
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.AuxStatement14
 

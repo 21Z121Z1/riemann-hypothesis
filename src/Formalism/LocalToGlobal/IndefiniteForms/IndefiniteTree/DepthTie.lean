@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.DepRun
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONLeaves
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthCondPf

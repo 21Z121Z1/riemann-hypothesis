@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataTies
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HaarEqSmul
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale

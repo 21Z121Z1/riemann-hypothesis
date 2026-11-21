@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.CuspPairB
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.PiClosT
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.IntegrableOfBd

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSplitting
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPointExtensionSplit
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ScaleZeroComp

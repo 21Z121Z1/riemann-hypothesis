@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSERDOpFF
 
 open Formalism.REAL Formalism.QuantumDeterminants Formalism.FourierDecayAlt

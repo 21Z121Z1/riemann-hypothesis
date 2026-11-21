@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Analysis.InnerProductSpace.Trace
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.TraceEqTraceRestrictOfRangeLe
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.TsubValInjective

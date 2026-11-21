@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ColumnOperationTripleForm
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CharacterOrthogonalityDual
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.KernelQuotientFinite

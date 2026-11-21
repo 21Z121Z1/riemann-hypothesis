@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.MeasuresChart
 import GroundTheory.AutomorphicForms.RealGroupsHaar
 import GroundTheory.AutomorphicForms.Cartan

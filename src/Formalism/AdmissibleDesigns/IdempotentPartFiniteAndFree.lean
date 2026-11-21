@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.RowTopOf
 import Formalism.AdmissibleDesigns.ExistsWildInertiaCyclotomicGenerator
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.FirstSummandRepresentation

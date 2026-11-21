@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.StatementR
 import Formalism.GaussJetBounds.OneLetterRadius
 

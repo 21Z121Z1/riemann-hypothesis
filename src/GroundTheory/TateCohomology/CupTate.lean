@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.CupTateShift
 import GroundTheory.TateCohomology.TateLow
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CharacterIdempotents.Development
 import Mathlib.Algebra.Category.ModuleCat.Algebra
 import Mathlib.Analysis.CStarAlgebra.Classes

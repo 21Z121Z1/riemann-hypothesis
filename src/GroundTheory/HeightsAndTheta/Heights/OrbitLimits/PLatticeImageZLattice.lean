@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsLatticeImageZLattice
 import Mathlib.Algebra.Module.Torsion.Prod
 import Mathlib.RingTheory.Etale.Weakly

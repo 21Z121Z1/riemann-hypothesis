@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ReductionMahler
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.AdBasic
 

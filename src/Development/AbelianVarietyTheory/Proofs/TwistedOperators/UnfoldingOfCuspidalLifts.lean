@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IterationAndLinearityCuspidalStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsExpansionZero
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealLine

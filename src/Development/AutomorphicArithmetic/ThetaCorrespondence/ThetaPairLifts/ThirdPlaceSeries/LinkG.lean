@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ClassOfRecordOfChoice
 import Formalism.LocalToGlobal.GroupLattices.LinkGConcreteNoKer
 import Formalism.SharpRestriction.SmoothDesignExistence.AdmissibleTopsMertens

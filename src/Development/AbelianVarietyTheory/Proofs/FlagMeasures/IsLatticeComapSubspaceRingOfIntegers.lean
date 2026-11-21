@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Imports
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsLatticeComapSubtype
 import Formalism.LocalRingCardinality.DataHost

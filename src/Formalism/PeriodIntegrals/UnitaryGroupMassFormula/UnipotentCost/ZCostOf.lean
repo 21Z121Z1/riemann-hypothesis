@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.ZIterC
 
 open Formalism.FourierDecayAlt Formalism.FourierDecayAlt.U

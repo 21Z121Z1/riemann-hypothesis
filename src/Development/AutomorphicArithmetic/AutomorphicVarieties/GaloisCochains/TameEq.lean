@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.IsClosedOfClosedFiniteIndex
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.DecZhat
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.LocEuler

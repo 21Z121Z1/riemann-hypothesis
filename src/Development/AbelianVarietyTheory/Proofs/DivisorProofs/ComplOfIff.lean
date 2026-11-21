@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamSubbundleAffineSectionCriterionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamFiltrationIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianShortExact

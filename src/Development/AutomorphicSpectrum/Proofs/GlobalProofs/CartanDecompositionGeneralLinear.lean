@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InstBorelGL
 import GroundTheory.AutomorphicForms.Cartan
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL

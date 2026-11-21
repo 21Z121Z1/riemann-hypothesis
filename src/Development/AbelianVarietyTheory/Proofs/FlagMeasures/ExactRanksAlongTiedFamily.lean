@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ThresholdSelection
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ClassNumberAll
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FirstTypePrimeLargeOfRecord

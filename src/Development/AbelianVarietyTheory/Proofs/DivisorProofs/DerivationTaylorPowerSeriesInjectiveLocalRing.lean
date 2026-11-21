@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TaylorIsRingHomStatement
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.MvPowerSeries.Order

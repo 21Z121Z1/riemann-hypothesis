@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.Interface
 import GroundTheory.LocalFields.UnitsBasic
 import Mathlib.FieldTheory.Galois.NormalBasis

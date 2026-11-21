@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ModuleFormPositivity
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SumPairLevStarMul
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PairOperatorCommute

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.GaussJetProofs.LogarithmWeightComparison
 import Formalism.TorsionNormIteration.InverseIntegralClasses.NormNatCastOfNotDvd
 

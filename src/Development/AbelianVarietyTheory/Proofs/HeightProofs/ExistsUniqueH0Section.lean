@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.LieIdentityArcWitnessIffStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ArcWitnessThetaPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsPullQkIffFractionMapStatement

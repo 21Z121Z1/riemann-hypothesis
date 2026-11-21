@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GroupCohomology.IsTowerLim
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Basic
 import ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem

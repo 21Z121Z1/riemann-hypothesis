@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLFlatten
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLJoinMany
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLNormExists

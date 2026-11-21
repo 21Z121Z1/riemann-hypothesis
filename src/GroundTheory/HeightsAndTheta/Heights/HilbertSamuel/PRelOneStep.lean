@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsRelOneStep
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsRelTorsionBound
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsRelChartPoly

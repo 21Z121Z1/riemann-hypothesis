@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaSupremumBounds.GaussianShiftBounds.GlobalBoundRefinements
 
 open Finset

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EulerOperatorInjectiveEigenvectorStatement
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 open scoped InnerProductSpace BigOperators

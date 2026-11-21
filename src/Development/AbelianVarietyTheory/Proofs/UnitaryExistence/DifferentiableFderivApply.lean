@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsImEqLattice
 import Mathlib.Analysis.Complex.LocallyUniformLimit

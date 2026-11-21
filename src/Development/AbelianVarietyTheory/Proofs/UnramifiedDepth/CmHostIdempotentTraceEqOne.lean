@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.HostTraceIdentity
 import Mathlib.Algebra.Order.Star.Real
 

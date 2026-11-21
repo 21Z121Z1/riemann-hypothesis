@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetGNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumNormRowSubProdMinors
 open Classical MvPolynomial

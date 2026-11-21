@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.ChartPullbacks.WeightedChartPullback.WeightIndep
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PGAppEqZeroIff
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpandsAtSub

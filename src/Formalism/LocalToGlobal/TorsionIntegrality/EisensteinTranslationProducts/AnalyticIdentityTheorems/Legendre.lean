@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Legendre
 import Mathlib.Data.Int.Star
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.E2.Transform

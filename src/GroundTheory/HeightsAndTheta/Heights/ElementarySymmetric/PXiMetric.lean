@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.XiPluckerCover
 import Mathlib.Analysis.Matrix.Order
 set_option maxSynthPendingDepth 1

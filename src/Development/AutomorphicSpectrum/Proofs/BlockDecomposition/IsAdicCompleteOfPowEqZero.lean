@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.EtaleCohomologyComparison.WittExactSequences.IsCompl
 import Mathlib.RingTheory.Perfectoid.FontaineTheta
 import Mathlib.Tactic.ReduceModChar

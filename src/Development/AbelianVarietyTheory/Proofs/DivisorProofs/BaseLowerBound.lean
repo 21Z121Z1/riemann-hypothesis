@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadInjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeSmallGenerationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KernelRationalityAtPlaceStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange
 
 open Module IsDedekindDomain Formalism.HermitianLatticesTheory Formalism.DivisionValues

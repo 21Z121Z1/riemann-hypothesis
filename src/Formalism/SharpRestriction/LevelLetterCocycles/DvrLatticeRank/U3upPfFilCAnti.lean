@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.UpPositionHypothesis
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.NinLamPf
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.GamPiPf

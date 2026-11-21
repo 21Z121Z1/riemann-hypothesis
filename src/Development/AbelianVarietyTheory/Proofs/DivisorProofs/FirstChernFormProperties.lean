@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernRealClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernDualNegStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagOmegaFormRealStatement

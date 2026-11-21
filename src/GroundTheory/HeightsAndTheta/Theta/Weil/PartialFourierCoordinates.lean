@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Theta.Weil.PartialFourierTheta
 
 namespace GroundTheory.Heights₂.Theta

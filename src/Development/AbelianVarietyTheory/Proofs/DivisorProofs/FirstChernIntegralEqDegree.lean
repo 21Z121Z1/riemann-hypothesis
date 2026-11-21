@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMapEqOfMemPtsIn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFiniteExceptional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalFibreProjectiveCurveStatement

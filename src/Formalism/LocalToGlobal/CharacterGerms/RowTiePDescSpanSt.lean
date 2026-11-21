@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePDescJet
 import Formalism.LocalToGlobal.CharacterGerms.RowTieDesc
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.EulerCharDefs
 import GroundTheory.ProfiniteCohomology.Shapiro
 import Mathlib.Tactic.ENatToNat

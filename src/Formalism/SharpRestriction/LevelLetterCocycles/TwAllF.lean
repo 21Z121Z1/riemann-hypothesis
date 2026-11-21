@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsGoodPlacesEveryConjugate
 import Formalism.SharpRestriction.SmoothDesignExistence.EvSplit
 import Formalism.SharpRestriction.LevelLetterCocycles.TwQDist

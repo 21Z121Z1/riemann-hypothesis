@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTriangularFramesGoodPrimes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularFramesOnSmoothCurvesStatement
 open CategoryTheory AlgebraicGeometry Limits NumberField

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.TwistTerms
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Data.Pi.Interval

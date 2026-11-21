@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiJMulApply
 import Mathlib.RingTheory.PiTensorProduct
 open Formalism.UG GlobalTheory.SatakeWeyl

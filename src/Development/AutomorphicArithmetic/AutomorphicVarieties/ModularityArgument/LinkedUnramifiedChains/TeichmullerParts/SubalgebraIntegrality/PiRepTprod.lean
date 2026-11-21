@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.TeichmullerParts.UnramifiedTrivialInertialType
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IrrIff
 open UpperTheory.V.Z.J.D

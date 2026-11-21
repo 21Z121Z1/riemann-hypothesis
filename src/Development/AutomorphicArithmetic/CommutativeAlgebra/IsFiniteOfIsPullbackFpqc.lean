@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.IsAffineHomOfFlatQuotientOfAffineKernel
 import Mathlib.AlgebraicGeometry.Morphisms.LocalFlatDescent
 open AlgebraicGeometry CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory

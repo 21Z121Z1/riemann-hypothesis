@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.PullQkSurjective
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import Mathlib.RingTheory.AdicCompletion.Completeness

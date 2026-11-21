@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DeterminantCauchySchwarz
 import Mathlib.Data.Matrix.ColumnRowPartitioned

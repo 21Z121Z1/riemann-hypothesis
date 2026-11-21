@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.TrCMemZ1D
 import Formalism.AdmissibleDesigns.FiniteClassesContinuousLattice
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.FirstSummandRepresentation

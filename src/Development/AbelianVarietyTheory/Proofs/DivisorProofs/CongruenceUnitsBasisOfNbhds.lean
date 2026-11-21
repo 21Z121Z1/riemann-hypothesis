@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FiniteAdeleVectorAnnihilatorsCompactOpenBasis
 open NumberField IsDedekindDomain Formalism.L2.DIV Formalism.UG Topology Filter
 open scoped TensorProduct

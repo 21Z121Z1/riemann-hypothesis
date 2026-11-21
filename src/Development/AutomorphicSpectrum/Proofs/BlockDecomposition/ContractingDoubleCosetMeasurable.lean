@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CasselmanCriterion.Zj
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsSideSide
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.IsTemperedCoeff

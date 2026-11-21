@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementFr
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

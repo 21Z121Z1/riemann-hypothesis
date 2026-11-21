@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.FiniteKernelPowClassesOfPrimitiveRoot
 import GroundTheory.FunctionField.PlaceAbove
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

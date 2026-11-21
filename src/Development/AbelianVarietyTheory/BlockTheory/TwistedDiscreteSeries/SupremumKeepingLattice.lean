@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Formalism.LocalToGlobal.ProjectiveLattices.HeckeJ
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RealPoints

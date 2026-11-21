@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataTheta
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsUnitaryOfOrder
 import Formalism.LocalRingCardinality.DataNChoice

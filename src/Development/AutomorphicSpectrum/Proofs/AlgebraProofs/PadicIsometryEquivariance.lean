@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwLift
 open NumberField TensorProduct GlobalTheory.CompanionTheory.Ar
 

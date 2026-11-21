@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.DataRank
 import Formalism.SharpRestriction.GrowthBounds.TensorLatticeBounds.DataLP
 

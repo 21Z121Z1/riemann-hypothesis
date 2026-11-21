@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBumpB
 import Development.AutomorphicArithmetic.DivisorFrames.HaarIntegralUnitsScaling
 open scoped TensorProduct NNReal Matrix

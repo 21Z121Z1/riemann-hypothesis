@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.RowDROfWpIso
 import Formalism.AdmissibleDesigns.RhoContOf
 import Formalism.AdmissibleDesigns.RowTopOf

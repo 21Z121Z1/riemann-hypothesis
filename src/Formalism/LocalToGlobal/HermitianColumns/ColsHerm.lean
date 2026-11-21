@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianColumns.CompletionIntegersIff
 import Formalism.LocalToGlobal.HermitianColumns.ClsNonempty
 import Formalism.LocalToGlobal.HermitianColumns.ZeroPointScaledByCharacter

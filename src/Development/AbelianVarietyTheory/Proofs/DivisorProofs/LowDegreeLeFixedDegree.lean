@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowPartLeFixedPartImageStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FixedFockDegreeSpanStatement
 open scoped TensorProduct NNReal Matrix

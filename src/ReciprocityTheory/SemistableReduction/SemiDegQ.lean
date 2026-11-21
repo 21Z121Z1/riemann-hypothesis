@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SemiDegM
 import ReciprocityTheory.SemistableReduction.SemiDegR
 import Std.Tactic.BVDecide.Normalize.Prop

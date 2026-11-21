@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJFELeviMulti
 import Mathlib.Topology.Connected.Separation
 import Mathlib.Topology.Separation.Lemmas

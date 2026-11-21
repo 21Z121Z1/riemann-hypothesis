@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StBranchInCurveComponent
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StBranchInComponent
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLocalDimDomain

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdempotentMatrixLocalSplitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SandwichDatumScalarActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixSandwichTraceEqStatement

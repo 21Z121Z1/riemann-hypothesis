@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SecScalBoxSecGProd
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SecScalOfPointwise
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.PreboxExpansionWeight

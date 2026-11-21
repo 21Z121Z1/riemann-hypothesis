@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.LevPackPSameCar
 import Formalism.LocalToGlobal.Columns.LastVectorMemSpan
 import Formalism.LocalToGlobal.Columns.TiedXpU

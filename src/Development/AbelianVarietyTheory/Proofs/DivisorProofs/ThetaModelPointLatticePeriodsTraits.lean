@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EssFiniteTypeIntStalk
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatEnd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDiagOfMatRel

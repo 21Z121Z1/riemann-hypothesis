@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange

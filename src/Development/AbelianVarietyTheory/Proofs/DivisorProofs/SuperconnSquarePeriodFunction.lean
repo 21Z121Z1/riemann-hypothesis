@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothDifferencePeriodDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnBaseSmulLeibnizStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnWedgeAnticommStatement

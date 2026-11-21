@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PNoetherIntegralClosure
 import GroundTheory.FunctionField.PlaceDefs
 import Mathlib.RingTheory.OrderOfVanishing.Noetherian

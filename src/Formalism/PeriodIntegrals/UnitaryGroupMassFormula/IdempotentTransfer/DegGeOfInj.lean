@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HarderNarasimhan.Statement
 import Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax
 

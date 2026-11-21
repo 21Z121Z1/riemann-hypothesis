@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.Dchart
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 

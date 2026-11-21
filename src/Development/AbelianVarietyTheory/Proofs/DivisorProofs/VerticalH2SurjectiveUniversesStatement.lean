@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VerticalH2SurjectiveUniverses
 open CategoryTheory GlobalTheory.CxCoh
 set_option maxHeartbeats 1000000 in

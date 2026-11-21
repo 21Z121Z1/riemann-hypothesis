@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsElem
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Elementary
 import Mathlib.Data.Rat.Star

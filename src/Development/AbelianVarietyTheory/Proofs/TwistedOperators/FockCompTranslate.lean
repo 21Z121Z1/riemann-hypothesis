@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfLintegralEqZero
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.KerDiag
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

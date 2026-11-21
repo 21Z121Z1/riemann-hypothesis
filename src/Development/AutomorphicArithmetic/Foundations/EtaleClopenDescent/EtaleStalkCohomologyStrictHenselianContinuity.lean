@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeSeqExact
 import Development.EtaleCohomology.EtaleSheaves.GlueRelPfNat
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsClosedFiberColimitPresentation

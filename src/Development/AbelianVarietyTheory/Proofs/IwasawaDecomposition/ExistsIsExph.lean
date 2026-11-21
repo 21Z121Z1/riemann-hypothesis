@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsExphOn
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsExphOnUnion
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsIsExphOfIsExphOnUniv

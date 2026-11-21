@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.PairingCommutesLiftOperators
 import Formalism.LocalToGlobal.IndefiniteReal.NormalDecomposition.Decomp
 import Formalism.LocalToGlobal.IndefiniteReal.RationalAdjoints.RangeAdjointRat

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.AdelRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyMemKGL
 import GroundTheory.GlobalFields.LocalFieldAtPlace

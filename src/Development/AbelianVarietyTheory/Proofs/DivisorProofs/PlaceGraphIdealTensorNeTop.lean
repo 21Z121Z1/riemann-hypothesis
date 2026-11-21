@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToQMemMaximalIdealIff
 import Mathlib.RingTheory.TensorProduct.Nontrivial
 open CategoryTheory AlgebraicGeometry TopologicalSpace

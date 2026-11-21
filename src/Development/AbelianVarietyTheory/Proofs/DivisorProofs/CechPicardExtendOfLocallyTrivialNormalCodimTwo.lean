@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsUniqueLbIsoPullEqOfCoheightLeOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlueLineBundles
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ClsLinCombSingle

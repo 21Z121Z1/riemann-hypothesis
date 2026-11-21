@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.TwistedTraces.TracePairingSeparatesEndomorphisms
 import Development.AutomorphicArithmetic.TwistedTraces.TrOnRestrictAndEqOfMapsInto
 import Development.AutomorphicArithmetic.TwistedTraces.InfFixedLeSpanFixOfDenseSpanAll

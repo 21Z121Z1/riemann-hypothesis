@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LandauZeroFreeBounds.LogDerivRegionChiOf
 import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.Perron
 import Mathlib.NumberTheory.LSeries.Linearity

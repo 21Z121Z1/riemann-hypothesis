@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussValuationBounds.GaussUnit
 import Formalism.GaussValuationBounds.Statement
 import Mathlib.Algebra.Order.Ring.Star

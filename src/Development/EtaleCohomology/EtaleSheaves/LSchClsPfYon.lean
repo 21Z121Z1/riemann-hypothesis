@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafKumSpecPfEv
 import Development.EtaleCohomology.EtaleSheaves.LeafKumSpecPf
 

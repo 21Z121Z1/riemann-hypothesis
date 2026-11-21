@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RatField
 import Development.AbelianVarietyTheory.Definitions.Divisors.NonemptyCuspFrame
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

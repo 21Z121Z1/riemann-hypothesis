@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UpqRep
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.HarishChandraParameters
 import Mathlib.RingTheory.SimpleRing.Principal

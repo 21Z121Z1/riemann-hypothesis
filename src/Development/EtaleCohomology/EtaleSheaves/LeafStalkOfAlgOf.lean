@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafSpreadSmooth1Of
 import Mathlib.RingTheory.TotallySplit
 

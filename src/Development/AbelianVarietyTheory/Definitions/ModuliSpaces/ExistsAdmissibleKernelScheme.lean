@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.KerScheme
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.HeckeKerZero
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsIsHeckeIsog

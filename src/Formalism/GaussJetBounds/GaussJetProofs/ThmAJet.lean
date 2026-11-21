@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.GaussJetProofs.PureCrossTermWeight
 import Formalism.GaussJetBounds.StatementA
 import Mathlib.Tactic.ENatToNat

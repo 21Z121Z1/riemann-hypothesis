@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.MollifiedIntegrability.ClsBoundA
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Std.Tactic.BVDecide.Normalize.Prop

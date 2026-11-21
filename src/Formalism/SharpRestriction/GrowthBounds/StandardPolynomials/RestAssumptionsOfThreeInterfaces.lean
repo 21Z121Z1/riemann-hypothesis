@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.LatticeLeSpanPsiImage
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ZeroOfMultideg
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.PreDef

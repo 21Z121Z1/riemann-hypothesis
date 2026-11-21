@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.Statement
 import Formalism.HarderNarasimhan.QuotRealize
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions

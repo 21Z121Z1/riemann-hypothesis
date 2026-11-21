@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PDivisorGeneralPointBranches
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PDivisorBranches
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PDivisorOneComponent

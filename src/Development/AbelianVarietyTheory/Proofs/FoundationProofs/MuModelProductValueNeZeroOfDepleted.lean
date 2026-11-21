@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EisensteinProductSeriesEqDepletedEisensteinProduStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AtkinLehnerEisStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ZsEqMulDepEis

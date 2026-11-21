@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.IntegralityOfRationalityLocal
 import Formalism.LocalToGlobal.GlobalTheory.GL6.SecondBranchInclLengthOfLengths
 

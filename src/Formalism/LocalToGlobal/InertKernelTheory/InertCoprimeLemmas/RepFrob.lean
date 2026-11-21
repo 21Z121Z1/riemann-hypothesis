@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.FrameInt
 import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.FinalFree
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.ExistsCoprimePowEqOne

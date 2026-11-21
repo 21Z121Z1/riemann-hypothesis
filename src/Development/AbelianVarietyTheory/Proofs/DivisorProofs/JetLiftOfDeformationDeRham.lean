@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetGroupMorphismBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetMorphismAdmissibleConnectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetMorphismDeterminantGeneratorStatement

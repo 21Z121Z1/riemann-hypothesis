@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannFormPeriodDeterminant
 open Set Filter Topology
 set_option maxHeartbeats 1000000 in

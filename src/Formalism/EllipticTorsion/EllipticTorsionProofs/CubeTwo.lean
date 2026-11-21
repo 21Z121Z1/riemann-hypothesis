@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.CoeffRing
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WSeries
 import Formalism.EllipticTorsion.EllipticTorsionProofs.FormalGroupPointsHomDef

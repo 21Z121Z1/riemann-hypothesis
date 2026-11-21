@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.OrderCyclic
 import GroundTheory.TateCohomology.InfRes
 import GroundTheory.LocalFields.RamificationStructure

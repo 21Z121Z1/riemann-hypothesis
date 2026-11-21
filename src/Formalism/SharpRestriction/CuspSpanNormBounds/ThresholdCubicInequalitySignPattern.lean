@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.RadialChainStatements
 import Formalism.SharpRestriction.CuspSpanNormBounds.ThinScalesBound
 import Formalism.SharpRestriction.CuspSpanNormBounds.ChainLength

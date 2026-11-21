@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenIsCompactStab
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.EisensteinMaximalParabolicIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMajorantFrameCompactSubgroupLe

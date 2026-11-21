@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic
 import Formalism.AlgebraicWeights.IsAlgWeight
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA

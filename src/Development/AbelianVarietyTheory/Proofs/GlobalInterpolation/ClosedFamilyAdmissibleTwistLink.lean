@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.ServiceOfTiedSelection
 import Formalism.LocalToGlobal.GroupLattices.AdmissibleAtGeneratorPlaces
 import Formalism.SharpRestriction.GlobalSchurBounds.PlugDgt

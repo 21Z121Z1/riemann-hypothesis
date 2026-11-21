@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RamifiedBlockRings.RamifiedBlockProofs.RingDataObjects
 import Formalism.TruncatedSeriesCounting.TruncatedSeriesProofs.LemmaDetPoly
 import Formalism.WachLatticeTwists.RamifiedBlockRings.Statement

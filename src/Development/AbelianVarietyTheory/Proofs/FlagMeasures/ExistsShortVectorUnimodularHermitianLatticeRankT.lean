@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountSt
 import ReciprocityTheory.SemistableReduction.SemiDegC
 import Formalism.HermitianLattices.StatementMass

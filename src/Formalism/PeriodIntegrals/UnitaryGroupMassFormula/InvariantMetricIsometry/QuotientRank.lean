@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.InvariantMetricIsometry.ColChoiceFintype
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.RingTheory.PicardGroup

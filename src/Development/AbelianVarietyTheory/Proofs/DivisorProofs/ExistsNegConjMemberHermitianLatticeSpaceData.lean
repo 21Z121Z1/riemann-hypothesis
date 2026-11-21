@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation
 import Formalism.LocalToGlobal.Columns.BrpStarLatLattice
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsGivenStageEqOne

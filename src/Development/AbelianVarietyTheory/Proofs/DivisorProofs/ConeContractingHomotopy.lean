@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatHermUnitSectionAvoid
 open CategoryTheory Limits Opposite AlgebraicTopology GlobalTheory.EZ
 universe u v

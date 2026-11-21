@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 open Formalism.Per GlobalTheory.PSer
 open scoped Formalism.Per

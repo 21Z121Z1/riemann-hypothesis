@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.CoordHomMapTrace
 import Formalism.DistinguishedUnitIdeals.FrobeniusCoboundedArc
 import Mathlib.RingTheory.AdicCompletion.Noetherian

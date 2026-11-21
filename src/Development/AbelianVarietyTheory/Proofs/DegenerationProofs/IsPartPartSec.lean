@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Degenerations.PullChartIsLB
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.RingTheory.PiTensorProduct

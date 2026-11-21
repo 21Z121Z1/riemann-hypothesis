@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.NeutralLocalFields.Reciprocity
 
 set_option linter.style.haveILetI false

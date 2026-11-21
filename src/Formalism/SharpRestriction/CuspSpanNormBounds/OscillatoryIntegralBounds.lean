@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.RadialChainStatements
 import Formalism.SharpRestriction.CuspSpanNormBounds.BlockEstimateTheorem
 import Formalism.SharpRestriction.CuspSpanNormBounds.HereditaryPositivity

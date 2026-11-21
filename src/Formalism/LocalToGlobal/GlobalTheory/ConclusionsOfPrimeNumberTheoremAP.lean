@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.Losses5OfLossHypD
 import Formalism.SizeWindowBrackets.FixedEpsilonConcreteGrowthBound
 import Formalism.LocalToGlobal.GlobalTheory.AnalyticConclusionOfProp25

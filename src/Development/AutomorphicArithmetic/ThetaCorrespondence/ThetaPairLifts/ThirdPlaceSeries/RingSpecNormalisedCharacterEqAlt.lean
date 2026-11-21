@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.NGalLinkChar
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LiftToGlobalDescentData
 import Formalism.LocalToGlobal.LocalInduction.BridgeInd

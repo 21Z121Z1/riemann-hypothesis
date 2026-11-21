@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IrreducibleSubrepIsoSummandOfIsInternal
 open Formalism.MainNotions Formalism.MainNotions.N GlobalTheory.SplitField
 set_option maxHeartbeats 1000000 in

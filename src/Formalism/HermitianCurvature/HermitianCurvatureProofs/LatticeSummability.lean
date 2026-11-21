@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.LatticeHerglotzBound
 import Mathlib.MeasureTheory.Integral.Pi
 import Mathlib.RingTheory.WittVector.IsPoly

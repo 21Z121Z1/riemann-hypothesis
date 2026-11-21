@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.KumExistsPf
 import Development.EtaleCohomology.TateTwists.KumNatPf
 import Development.EtaleCohomology.TateTwists.KumUniqPf

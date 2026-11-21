@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecPairA
 import ReciprocityTheory.GroupCohomology.CupCor
 import ReciprocityTheory.GroupCohomology.ContractNthCastAddCastSucc

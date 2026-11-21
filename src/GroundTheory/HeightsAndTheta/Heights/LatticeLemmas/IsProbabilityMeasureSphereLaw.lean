@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LogGaussNormSupportFinite
 import GroundTheory.HeightsAndTheta.Heights.HermitianDual
 import GroundTheory.HeightsAndTheta.Heights.ArithDegree

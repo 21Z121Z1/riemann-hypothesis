@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightVectorMemLowSpanSupVerma
 open GroundTheory.Automorphic.HarishChandra GlobalTheory.CompanionTheory.PresRho
 set_option maxHeartbeats 1000000 in

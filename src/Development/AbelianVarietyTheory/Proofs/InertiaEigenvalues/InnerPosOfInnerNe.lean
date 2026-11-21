@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DownwardLiftAdjointEqUpwardThetaIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockVacOmFin
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RealLow

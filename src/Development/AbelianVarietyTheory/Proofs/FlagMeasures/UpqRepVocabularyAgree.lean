@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementB
 import Formalism.PeriodIntegrals.UpqRep
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms

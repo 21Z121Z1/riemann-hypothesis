@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel
 import Formalism.SatakeDualWeyl.DefsCS
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow

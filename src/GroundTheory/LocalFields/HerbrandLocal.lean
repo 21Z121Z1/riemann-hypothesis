@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.HerbrandLocalBase
 import GroundTheory.LocalFields.CompleteTrivialLocal
 import GroundTheory.LocalFields.HilbertCyclic

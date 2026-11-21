@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Scalars
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CoprimeRegular
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.CoprimeTwist

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.SphericalIntegral
 import GroundTheory.AutomorphicForms.SatakeSymmetric
 import GroundTheory.LocalFields.LocalFourierHaar

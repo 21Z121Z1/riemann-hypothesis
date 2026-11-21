@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecialUnitaryAdelicSplittingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanCmTypeHomeomorphStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanSpecialUnitaryIsoStatement

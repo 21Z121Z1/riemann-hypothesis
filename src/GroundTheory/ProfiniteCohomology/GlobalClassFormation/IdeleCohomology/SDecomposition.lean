@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Decomposition
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Infinite
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleCohomology.Integral

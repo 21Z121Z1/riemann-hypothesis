@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CocycleProductThree
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.JetSubstPSTrunc
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsIntegralMatrixRelatingIntegralVectorZBases
 open NumberField Matrix Formalism.MainNotions.S GlobalTheory.CuspGeo
 set_option maxHeartbeats 1000000 in

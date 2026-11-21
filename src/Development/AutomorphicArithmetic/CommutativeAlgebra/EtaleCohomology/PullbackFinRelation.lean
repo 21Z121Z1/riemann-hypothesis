@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.FontaineLemmaInvariants
 import GroundTheory.PAdicHodge.UnramifiedFrob
 import GroundTheory.PAdicHodge.BCrisEigenWitt

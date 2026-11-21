@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsSectionOrder
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChowFormSection
 import Mathlib.Combinatorics.Nullstellensatz

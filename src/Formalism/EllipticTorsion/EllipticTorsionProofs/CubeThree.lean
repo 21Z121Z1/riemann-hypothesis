@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.CoeffRing
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WChord
 import Formalism.EllipticTorsion.EllipticTorsionProofs.ExistsUnitFactor

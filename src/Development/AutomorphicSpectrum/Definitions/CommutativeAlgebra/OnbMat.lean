@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TheoremA
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.Harmonic.Defs

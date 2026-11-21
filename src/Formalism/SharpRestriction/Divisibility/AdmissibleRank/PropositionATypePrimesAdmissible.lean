@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.BoundaryLocalData
 import Formalism.SharpRestriction.Divisibility.AdmissibleRank.NoBoundaryComponentOfAbelianAtGenericPoints
 import Formalism.SharpRestriction.Divisibility.ChainOperators.CutDivD

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelFamilyNormalCompactifyStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelFamilyProperExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelFamilySemiabelianExtendsStatement

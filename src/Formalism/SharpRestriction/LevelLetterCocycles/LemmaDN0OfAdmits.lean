@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.XDvdLevCQ
 import Formalism.SharpRestriction.LevelLetterCocycles.ConvEqSum
 import Formalism.SharpRestriction.LevelLetterCocycles.EqZeroOfMemSum

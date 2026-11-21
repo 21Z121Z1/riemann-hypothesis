@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DuStarPos
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AssembleLattice

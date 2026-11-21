@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFnFieldTrdeg
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Assembly
 set_option maxSynthPendingDepth 1

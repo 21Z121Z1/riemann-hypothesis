@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.AbelSummationByPartsWeights
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SummationOperatorsBoundedGood
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.SummationOperatorsPreserveOtherIndex

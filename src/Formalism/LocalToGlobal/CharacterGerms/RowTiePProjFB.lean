@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.EndomorphismLimitIntegral
 import Mathlib.Algebra.Order.Star.Real
 

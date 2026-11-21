@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExpUpper
 import Mathlib.Analysis.Complex.Convex
 import Mathlib.Analysis.Meromorphic.Order

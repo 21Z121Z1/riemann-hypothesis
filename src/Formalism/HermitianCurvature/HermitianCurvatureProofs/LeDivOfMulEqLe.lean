@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.EntryMinorBounds
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UpperMinorIdentity
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DetSubmatrixUnitriangularEqOne

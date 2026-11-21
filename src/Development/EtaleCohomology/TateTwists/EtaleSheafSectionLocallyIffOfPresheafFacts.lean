@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleLocalIffAffineEtaleCoverPointwise
 
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

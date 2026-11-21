@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GaloisModules.Discrete
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Unramified
 import Mathlib.Algebra.Lie.OfAssociative

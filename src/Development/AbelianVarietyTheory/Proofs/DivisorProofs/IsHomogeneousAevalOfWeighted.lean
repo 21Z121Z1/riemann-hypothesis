@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPowerEmbeddingStatement
 import Formalism.SharpRestriction.Divisibility.LatticeTransfer

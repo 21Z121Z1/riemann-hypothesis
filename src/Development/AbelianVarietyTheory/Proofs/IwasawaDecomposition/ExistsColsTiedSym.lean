@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.Joint0
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FormsRe
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermRe

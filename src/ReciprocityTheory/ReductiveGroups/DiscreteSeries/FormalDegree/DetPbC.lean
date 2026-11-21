@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.DetPbA
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.DetPbB
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

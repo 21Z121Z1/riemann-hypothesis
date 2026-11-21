@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairExtensionEigenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairThetaIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewAdaptedPairLocalFactorStatement

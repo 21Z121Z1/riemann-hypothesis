@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftBoundedNormStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftOpenLevelBoundStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaLiftCuspLevelBoundStatement

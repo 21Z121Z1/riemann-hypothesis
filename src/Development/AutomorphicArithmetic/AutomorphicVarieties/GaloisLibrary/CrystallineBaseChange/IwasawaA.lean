@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.HfStmt
 import GroundTheory.AutomorphicForms.ReductionIwasawa
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.KLevTop

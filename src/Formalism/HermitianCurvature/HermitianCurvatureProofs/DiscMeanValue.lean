@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousOnG2SymmetricInterval
 import Formalism.HermitianCurvature.BigCellVanishingOfCommute
 import Mathlib.Analysis.Complex.Isometry

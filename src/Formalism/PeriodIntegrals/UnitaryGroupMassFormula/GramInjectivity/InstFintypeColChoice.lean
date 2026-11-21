@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.WwInjective
 import Formalism.PeriodIntegrals.WwCauchyBinet
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramInjectivity.GramVanish

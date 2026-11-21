@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseReverse
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseFormal
 set_option maxSynthPendingDepth 1

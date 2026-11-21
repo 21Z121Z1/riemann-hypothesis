@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.HomotheticLatticeIntegralS2
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.StatementS
 import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.StatementA

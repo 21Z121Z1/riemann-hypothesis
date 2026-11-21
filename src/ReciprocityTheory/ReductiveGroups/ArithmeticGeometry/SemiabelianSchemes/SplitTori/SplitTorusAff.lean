@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Mathlib.AlgebraicGeometry.Group.Affine
 import Mathlib.RingTheory.HopfAlgebra.MonoidAlgebra
 import Mathlib.CategoryTheory.Limits.Constructions.Over.Basic

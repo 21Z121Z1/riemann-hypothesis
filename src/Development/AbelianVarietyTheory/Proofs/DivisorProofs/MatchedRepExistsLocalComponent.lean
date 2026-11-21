@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedLocalInducedSpaceIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedRepExistsRightTranslationStatement
 open scoped TensorProduct NNReal Matrix

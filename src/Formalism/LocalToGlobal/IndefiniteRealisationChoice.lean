@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice
 import Formalism.LocalToGlobal.IndefiniteReal.RealTP
 import Formalism.LocalToGlobal.SelSideN

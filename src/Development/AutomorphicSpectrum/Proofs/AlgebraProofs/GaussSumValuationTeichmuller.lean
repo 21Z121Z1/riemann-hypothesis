@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.SumInvMulTrace
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CardLe
 import Mathlib.Algebra.Order.Star.Real

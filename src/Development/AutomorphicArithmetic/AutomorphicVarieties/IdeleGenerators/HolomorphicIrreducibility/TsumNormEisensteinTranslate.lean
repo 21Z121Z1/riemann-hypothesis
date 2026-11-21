@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.HolomorphicIrreducibility.EisSlash
 import Mathlib.NumberTheory.Modular
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.IsBoundedAtImInfty

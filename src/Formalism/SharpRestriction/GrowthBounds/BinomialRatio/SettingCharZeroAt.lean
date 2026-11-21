@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TestSideDef
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FockR
 import Formalism.SharpRestriction.GrowthBounds.ObjSeg

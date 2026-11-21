@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairTAdjTLeft
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenFinrankOfCokernel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdaptedBasis

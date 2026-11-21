@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.GaloisConditionFiveExtraOf
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 import Mathlib.Topology.Connected.Separation

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.StatementLD
 import Mathlib.Order.CompletePartialOrder
 

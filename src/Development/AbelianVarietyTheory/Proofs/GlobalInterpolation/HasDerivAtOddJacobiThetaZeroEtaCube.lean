@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DifferentiableOddTheta
 import Mathlib.NumberTheory.ModularForms.DedekindEta
 import Mathlib.RingTheory.WittVector.IsPoly

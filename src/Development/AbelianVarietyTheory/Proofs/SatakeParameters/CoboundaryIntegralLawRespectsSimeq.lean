@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.DefsBeCob
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
 

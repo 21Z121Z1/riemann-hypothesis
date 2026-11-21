@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.HermFormDiagonalEq
 import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain

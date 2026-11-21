@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.UnimodularGram.Orthonormal
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.KurComplete
 import Mathlib.FieldTheory.KummerExtension

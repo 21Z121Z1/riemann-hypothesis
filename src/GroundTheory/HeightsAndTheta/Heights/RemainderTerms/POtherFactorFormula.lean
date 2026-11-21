@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PSameFactorFormula
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PowerSums
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.JacobiTrudi

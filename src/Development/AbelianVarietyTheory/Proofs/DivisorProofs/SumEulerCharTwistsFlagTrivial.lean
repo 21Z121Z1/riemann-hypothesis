@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsAtOfNorms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StepModuleZeroOfUnitDetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StepSequenceShortExactStatement

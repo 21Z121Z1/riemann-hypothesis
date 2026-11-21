@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.SqZero
 import Development.AutomorphicArithmetic.AutomorphicVarieties.QuadraticExtensions.InvTwo
 import Mathlib.GroupTheory.IndexNormal

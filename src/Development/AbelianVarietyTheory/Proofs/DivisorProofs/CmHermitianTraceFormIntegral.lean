@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsHolFormConst
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.PolarisationModuleIndex
 open NumberField GlobalTheory.CMVal GlobalTheory.RealMult

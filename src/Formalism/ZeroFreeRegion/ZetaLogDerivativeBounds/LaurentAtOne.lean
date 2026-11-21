@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ZeroFreeRegion.SmallHeightLogDeriv
 import Mathlib.NumberTheory.Harmonic.ZetaAsymp
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterPC
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExtCContract

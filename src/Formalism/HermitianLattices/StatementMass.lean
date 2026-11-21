@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLiftIndependence.Statement
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs
 

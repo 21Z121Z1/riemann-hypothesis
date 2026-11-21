@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IsClosedOfCoheight
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.DescEval
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.SumNormSqUnitary

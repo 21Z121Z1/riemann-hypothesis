@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassLinesProj
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PGrassArithVar
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar

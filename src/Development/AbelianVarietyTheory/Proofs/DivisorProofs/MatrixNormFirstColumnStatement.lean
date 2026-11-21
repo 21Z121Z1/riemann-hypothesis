@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatrixNormFirstColumn
 open GlobalTheory.TriFrame
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwoBlockChainSum
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwoBlockTop
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChangeOfLattice

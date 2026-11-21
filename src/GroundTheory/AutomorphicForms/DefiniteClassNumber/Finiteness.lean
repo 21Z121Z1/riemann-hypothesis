@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.DefiniteClassNumber.Reconstruction
 import GroundTheory.AutomorphicForms.DefiniteClassNumber.GramReduction
 import Mathlib.Data.Rat.Star

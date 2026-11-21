@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisZero
 import GroundTheory.GlobalFields.Adele.Discrete
 open scoped TensorProduct NNReal Matrix

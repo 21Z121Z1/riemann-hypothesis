@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.T2SpaceTensorProductFiniteExtension
 import GroundTheory.GlobalFields.TateThesis.AdeleScaling
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels

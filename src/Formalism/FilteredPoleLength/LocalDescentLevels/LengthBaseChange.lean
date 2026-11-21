@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.ReducedBasisBounds.LengthBaseChangeLocal
 import Formalism.FilteredPoleLength.LocalDescentLevels.MemSpanBasisFun
 import Mathlib.RingTheory.OrderOfVanishing.Noetherian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
 
 open Formalism.BasicNotions ReciprocityTheory.Aut Formalism.AUTREP

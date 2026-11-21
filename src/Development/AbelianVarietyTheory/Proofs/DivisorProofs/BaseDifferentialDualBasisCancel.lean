@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DBaseApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorialFormPullbackSplit
 import Mathlib.Order.CompletePartialOrder

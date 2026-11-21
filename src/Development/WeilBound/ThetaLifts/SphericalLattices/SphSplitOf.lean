@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalLattices.SplitLoc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLatticeIndicatorFourier
 import Development.WeilBound.CoreStatements.CompactAveragingSplitting.EigenvectorLifting.PfDict

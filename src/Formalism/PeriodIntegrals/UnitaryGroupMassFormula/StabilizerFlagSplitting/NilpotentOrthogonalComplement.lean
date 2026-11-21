@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerFlagSplitting.SubFlag
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GroupFactorizationHolds

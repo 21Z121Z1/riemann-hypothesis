@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GrowthSums.StatementA
 import Formalism.GaussJetBounds.StatementI
 import Mathlib.Combinatorics.Young.YoungDiagram

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.KerPins
 import Formalism.LocalToGlobal.KernelLattices.KerMemPin
 

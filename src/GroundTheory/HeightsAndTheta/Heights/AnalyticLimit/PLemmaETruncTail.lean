@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaETruncTail
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaEScale
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaEEnergy

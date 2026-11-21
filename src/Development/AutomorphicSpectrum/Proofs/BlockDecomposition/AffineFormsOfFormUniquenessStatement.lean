@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AffineFormsOfFormUniqueness
 open CrystallineSemistableComparison CrystallineSemistableComparison.Onto
 set_option maxHeartbeats 1000000 in

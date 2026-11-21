@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismPoints
 import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphismLift
 import GroundTheory.GlobalFields.ComplexMultiplication.MainTheoremPointHom

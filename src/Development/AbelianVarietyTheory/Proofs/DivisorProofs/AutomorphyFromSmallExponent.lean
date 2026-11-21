@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallPlaceBlockDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallPlaceFiniteSetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallPlaceBlockBoundStatement

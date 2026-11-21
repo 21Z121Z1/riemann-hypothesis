@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.WildInertia
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality
 import GroundTheory.ProfiniteCohomology.ProcyclicDefs

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataCD
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Upqcpt
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

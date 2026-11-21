@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.HookFormulaTorsion.GlobalBoundRefinements
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ZerosDisc
 import Mathlib.NumberTheory.DirichletCharacter.Orthogonality

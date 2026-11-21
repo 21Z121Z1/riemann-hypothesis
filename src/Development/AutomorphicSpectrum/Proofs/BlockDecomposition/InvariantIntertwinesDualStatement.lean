@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantIntertwinesDual
 open Matrix Finset
 open scoped InnerProductSpace

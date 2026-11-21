@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.RealLocalIntegrals.RealGammaLimits.UnipotentTateFunctionalEquation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwoByTwoMajorantIntegrable
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountStA

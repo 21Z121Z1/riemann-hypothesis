@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RembApply
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.NumberTheory.NumberField.CanonicalEmbedding.Basic

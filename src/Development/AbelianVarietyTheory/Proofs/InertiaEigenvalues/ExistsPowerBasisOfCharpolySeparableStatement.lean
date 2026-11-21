@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPowerBasisOfCharpolySeparable
 open GlobalTheory.UnitLemma Matrix MeasureTheory
 set_option maxHeartbeats 1000000 in

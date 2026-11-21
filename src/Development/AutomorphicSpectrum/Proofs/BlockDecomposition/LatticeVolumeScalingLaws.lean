@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsClopenCoset
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormIntDilatedConst
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SetIntegralInvMulVec

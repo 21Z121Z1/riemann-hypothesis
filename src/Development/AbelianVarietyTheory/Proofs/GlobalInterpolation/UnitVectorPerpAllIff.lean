@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.UnitVectorOrthogonal
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeComplements
 

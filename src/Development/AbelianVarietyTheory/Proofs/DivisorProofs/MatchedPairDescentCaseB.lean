@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigurationBLocalZetaIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedHarmonicPolynomialDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedHarmonicPolynomialVanishingStatement

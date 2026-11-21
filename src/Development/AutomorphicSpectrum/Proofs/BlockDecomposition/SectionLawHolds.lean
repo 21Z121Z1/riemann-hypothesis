@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinContinuation.StripEntire
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Iwa
 import Mathlib.RingTheory.WittVector.IsPoly

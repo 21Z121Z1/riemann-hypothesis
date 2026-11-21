@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemKerPD
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLineGoodModelStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaCorrespondenceModuleMapStatement

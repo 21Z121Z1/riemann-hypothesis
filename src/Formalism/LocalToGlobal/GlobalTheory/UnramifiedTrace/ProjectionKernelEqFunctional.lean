@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.DUPt0FOfVals
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.NatSmulInv
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedDiagonal.DiaFun

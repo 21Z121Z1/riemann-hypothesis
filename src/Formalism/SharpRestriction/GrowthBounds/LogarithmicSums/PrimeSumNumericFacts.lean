@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.SecondConstantNonneg
 import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.NumData
 import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.NinthBoundArithB

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.ArtSch
 import GroundTheory.PAdicHodge.PerfectoidField
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.AugBij
 import Mathlib.AlgebraicGeometry.Sites.ConstantSheaf
 import Mathlib.Topology.Instances.ZMod

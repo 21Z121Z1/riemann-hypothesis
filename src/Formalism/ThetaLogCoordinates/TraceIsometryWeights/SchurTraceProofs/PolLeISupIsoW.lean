@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.SchurTraceProofs.LatData
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementB
 import Formalism.PolynomialDimension.MultinomialDepth.MonoCount

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.BesselNonvanishingReduction
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeLemma3
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SettingExistence

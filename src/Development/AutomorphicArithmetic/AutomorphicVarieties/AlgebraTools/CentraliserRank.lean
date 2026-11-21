@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LagCoi
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LagNeZero
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CoiConjSingle

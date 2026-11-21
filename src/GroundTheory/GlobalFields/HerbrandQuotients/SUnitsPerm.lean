@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.HerbrandQuotients.Permutation
 import GroundTheory.GlobalFields.HerbrandQuotients.LatticeBridge
 import GroundTheory.GlobalFields.SemilocalAlgebras.Galois

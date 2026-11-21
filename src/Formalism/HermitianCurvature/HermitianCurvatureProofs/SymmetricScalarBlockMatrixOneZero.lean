@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FubiniHeadLastPart
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.StabilizerBlockPoint
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousInvUpper

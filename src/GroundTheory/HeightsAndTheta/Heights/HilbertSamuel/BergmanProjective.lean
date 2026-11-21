@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanObjects
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyTransition
 import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens

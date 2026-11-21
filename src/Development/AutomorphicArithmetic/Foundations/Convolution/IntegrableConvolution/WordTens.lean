@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.ThickFrames
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LactTens
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LactCv

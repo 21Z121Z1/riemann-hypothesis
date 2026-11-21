@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.PolyFn
 import Formalism.GradedWeylDivisibility.FinalB
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataCoeff
 import Mathlib.LinearAlgebra.Matrix.PosDef
 import Mathlib.RingTheory.PiTensorProduct

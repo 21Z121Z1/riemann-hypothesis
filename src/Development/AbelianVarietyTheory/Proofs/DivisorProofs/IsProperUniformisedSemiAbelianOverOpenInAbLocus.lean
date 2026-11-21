@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ProperOfAbelianEverywhere
 import Development.AbelianVarietyTheory.Definitions.Uniformization.IsEllipticCurveTwoAdic
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne

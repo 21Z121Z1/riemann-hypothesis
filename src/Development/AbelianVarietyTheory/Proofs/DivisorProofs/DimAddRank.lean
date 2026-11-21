@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsThetaCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSharpGen
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsProperOfSubsingleton

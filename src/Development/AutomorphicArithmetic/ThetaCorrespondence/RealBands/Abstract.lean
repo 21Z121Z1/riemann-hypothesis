@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.KillsOfIdem
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.BandKill
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Unfold

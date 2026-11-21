@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.SmulSZeroSplit
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.PtTransRec
 import Formalism.SharpRestriction.LevelLetterCocycles.IsFracOL

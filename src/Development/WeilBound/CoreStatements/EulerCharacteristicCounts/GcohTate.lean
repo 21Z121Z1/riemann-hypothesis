@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTateB
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.MainDefs
 

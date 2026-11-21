@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.TameInertiaTowers.StatementField
 import Lemmata.FirstBlockLemmaE.Imports
 import Lemmata.GeneralBFactRightTerForm.Imports

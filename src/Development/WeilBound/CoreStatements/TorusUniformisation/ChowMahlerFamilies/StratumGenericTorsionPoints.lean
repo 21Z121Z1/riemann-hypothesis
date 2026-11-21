@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsTorusExtensionFinite
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsAbPartBaseChange
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CardTorsionMulCardToricTorsion

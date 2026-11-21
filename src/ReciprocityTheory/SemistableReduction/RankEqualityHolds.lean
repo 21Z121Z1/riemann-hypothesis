@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.ComapInclusionIsLocalHom
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Tactic.ENatToNat

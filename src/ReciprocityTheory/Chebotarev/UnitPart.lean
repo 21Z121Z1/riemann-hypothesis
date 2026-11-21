@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.Ucoord
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Topology.Separation.CompletelyRegular

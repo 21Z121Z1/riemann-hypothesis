@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialModelIsometry.IsPolyMon
 import Formalism.GradedWeylDivisibility.FinalC
 import Mathlib.RingTheory.SimpleRing.Principal

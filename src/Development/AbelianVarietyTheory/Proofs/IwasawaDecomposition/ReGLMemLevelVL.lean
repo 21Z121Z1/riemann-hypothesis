@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice
 import Mathlib.Algebra.Group.Action.Sigma

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.StableGradedCounts.CrossFactorCount
 import Mathlib.Algebra.Order.Field.GeomSum
 

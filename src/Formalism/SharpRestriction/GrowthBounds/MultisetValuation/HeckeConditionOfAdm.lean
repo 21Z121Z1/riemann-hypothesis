@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.HkEsymmSmul
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.PrimeCastNeZero
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.CoupledSumOfEntries

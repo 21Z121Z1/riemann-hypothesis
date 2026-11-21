@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.MovedPointExistence.ExistsMoved
 import Mathlib.Analysis.Matrix.Normed
 import Mathlib.RingTheory.SimpleRing.Principal

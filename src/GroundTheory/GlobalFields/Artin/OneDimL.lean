@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.OneDim
 import GroundTheory.GlobalFields.Artin.SeriesEuler
 set_option maxSynthPendingDepth 1

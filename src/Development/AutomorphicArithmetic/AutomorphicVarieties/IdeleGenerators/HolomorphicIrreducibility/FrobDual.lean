@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyScaledInverse
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.BcDefs

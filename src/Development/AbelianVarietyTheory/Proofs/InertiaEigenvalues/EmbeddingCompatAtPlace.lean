@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistConjugateTuplesSameRealisationExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixBaseOfFixingField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PureTensorOSmul

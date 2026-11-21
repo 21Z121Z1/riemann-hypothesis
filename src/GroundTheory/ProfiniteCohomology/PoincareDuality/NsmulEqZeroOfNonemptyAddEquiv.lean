@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.ClassFormations.CorestrictionDefs
 import GroundTheory.ProfiniteCohomology.CartierDualDefs
 set_option maxSynthPendingDepth 1

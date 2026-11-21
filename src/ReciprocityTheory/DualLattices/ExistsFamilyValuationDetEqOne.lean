@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.ValuationDetLeOneOfEntriesIntegral
 import Std.Tactic.BVDecide.Normalize.Prop
 

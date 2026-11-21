@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.SandwichModelDomains.StatementW
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FockR
 

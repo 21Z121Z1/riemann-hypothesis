@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernClassPullbackFibreDegreeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusLiftPullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KillingElementPullbackStatement

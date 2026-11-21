@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PNormLength
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PVertTermEq
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PPrimitiveUnit

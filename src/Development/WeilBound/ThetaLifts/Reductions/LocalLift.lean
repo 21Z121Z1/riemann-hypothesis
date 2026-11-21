@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.NormExpSubLe
 import Development.WeilBound.ThetaLifts.Reductions.MetaDef
 import Mathlib.Analysis.Calculus.Deriv.Abs

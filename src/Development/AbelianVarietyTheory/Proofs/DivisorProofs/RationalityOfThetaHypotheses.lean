@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InjKOfSeparatesLinB
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LocalMatchingAssembly
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AtDatRowTestOfExField

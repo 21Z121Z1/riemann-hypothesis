@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.DenseTopActions.StatementC
 import Formalism.WachLatticeTwists.CharacterSplitJumps.WachTwistSplitTheoremFromTorsionBound
 import Formalism.WachLatticeTwists.SandwichH1Classes.InvariantsOfTwistedModule

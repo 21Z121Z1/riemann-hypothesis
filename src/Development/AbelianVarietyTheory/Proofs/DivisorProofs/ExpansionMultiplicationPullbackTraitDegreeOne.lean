@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulSecK
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentEq
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.EqZeroOfSval

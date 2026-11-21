@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSupportQuotientIff
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeRightExact
 import Mathlib.Tactic.Polynomial.Basic

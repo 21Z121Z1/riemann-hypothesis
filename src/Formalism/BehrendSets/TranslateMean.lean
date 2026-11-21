@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BehrendSets.BehrendVariance.Select
 
 namespace Formalism.BehrendSets.Final

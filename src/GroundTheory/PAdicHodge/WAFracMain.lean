@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WAFracFinal
 import GroundTheory.PAdicHodge.ExistsFactorAnn
 set_option maxSynthPendingDepth 1

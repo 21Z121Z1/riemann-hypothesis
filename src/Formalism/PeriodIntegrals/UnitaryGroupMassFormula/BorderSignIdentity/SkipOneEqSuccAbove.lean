@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.QmBorderES
 import Formalism.PeriodIntegrals.QmColExp
 import Formalism.PeriodIntegrals.QmRowExp

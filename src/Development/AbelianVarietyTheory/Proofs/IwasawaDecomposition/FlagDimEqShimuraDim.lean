@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagSpaceDimensionEqSumChoose
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwoMulCardPsi
 open AlgebraicGeometry CategoryTheory Limits NumberField

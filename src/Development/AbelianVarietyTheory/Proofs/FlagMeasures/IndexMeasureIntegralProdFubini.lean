@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.CintTranslate
 import Mathlib.Analysis.CStarAlgebra.Classes
 

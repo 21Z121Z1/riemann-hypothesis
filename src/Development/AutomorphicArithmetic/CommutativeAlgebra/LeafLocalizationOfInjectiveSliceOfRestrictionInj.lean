@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafConsPf
 import Development.AutomorphicArithmetic.CommutativeAlgebra.HomAcyclicFreePullbackYonedaOfInjectiveRestricti
 import Development.AutomorphicArithmetic.CommutativeAlgebra.NonemptyIsoRelativeEtaleFamilyBaseChange

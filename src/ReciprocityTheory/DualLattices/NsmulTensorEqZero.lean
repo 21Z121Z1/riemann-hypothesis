@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.InstAddCommMonoidFibreFst
 import ReciprocityTheory.DualLattices.NilSurjOfSqZero
 

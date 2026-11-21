@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PClassMean
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PClassEpstein
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PZetaFactor

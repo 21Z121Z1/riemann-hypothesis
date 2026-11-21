@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataDIVDefs
 import Formalism.LocalRingCardinality.DataForced
 import Formalism.LocalRingCardinality.DataLevelD

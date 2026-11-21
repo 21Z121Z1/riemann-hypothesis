@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.IteratedFDerivEqZeroOfIsBigO
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.ZeroDimA
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff

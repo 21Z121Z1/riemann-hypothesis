@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.SmoothDesignExistence.DesignExistsDes
 import Development.AutomorphicArithmetic.CharacterBoxes.DivinNOfHypV
 import Formalism.SharpRestriction.MuTuOfTuSize

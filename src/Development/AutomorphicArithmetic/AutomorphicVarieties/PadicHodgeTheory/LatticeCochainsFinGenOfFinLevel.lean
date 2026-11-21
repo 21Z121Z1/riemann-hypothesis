@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.TateDefs
 import Mathlib.Topology.Separation.Lemmas
 import ReciprocityTheory.GroupCohomology.FinGen

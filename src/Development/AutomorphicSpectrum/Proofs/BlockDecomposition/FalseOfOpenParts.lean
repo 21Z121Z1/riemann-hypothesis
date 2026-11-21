@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.InvariantPairingTwistedModulusStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalMirabolicInvariantPairingScalarStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SchwartzFunctionsEmbedCuspidalDerivativeStatement

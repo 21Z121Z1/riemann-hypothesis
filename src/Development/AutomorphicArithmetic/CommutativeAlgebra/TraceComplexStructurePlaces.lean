@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankJointEigenspaceAddConjEqMul
 import Development.AutomorphicArithmetic.RealSpanData.RealData
 import Development.AutomorphicArithmetic.CommutativeAlgebra.TraceActionEqSumPlaces

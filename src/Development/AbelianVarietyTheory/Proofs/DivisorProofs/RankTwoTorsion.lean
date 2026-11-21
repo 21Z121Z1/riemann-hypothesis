@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionLiftNumberFieldModuleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionCountLogConcavePrimePowersStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionCountMultiplicativePrimePowersStatement

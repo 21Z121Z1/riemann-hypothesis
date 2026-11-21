@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.CartanIdeles.SpacesExOf
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Galois
 open scoped nonZeroDivisors Matrix

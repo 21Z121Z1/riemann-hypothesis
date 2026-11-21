@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftGoodProjectorIntertwinesMatchedHecke
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsThetaPForms
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjFormsSpherical

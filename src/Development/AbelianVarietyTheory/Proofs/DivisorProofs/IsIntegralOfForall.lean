@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TateUnramifiedOfTorsionUnramified
 import Mathlib.FieldTheory.Galois.Profinite
 import Mathlib.RingTheory.Invariant.Profinite

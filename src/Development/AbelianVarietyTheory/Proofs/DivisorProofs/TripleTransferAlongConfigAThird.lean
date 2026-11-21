@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedTensorSchwartzFunctionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRestrictedTensorRepresentativeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleTransferAlongConfigAStatement

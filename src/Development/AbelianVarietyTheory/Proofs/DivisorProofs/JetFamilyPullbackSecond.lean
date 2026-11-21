@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetMorphismIsBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieFiltrationSpannedCorrespondenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieImageCorrespondenceStatement

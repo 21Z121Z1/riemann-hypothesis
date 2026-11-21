@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.Statement
 import Mathlib.NumberTheory.NumberField.Completion.InfinitePlace
 import Mathlib.RingTheory.Henselian

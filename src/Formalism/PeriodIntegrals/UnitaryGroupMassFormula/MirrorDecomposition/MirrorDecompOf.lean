@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirrorDecomposition.HpkRowEsI
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.MirrorDecomposition.IsMonomialConjTranspose
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerPairs.Forward

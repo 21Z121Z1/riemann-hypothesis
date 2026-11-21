@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.EventuallyLevelPointMemOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableCsmul
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PolyLiftOfSmoothComm

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.CartanFactorisation.Kills0Of
 import Development.WeilBound.ThetaLifts.CartanFactorisation.KillInf
 import Development.WeilBound.ThetaLifts.Reductions.JoinDef

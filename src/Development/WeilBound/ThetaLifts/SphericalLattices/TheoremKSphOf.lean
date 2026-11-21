@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalLattices.SphericalClosure.CloseSph
 import Development.WeilBound.ThetaLifts.Reductions.FiniteClosure.RamifiedMultiplicityOne
 import Development.WeilBound.ThetaLifts.SphericalLattices.ExistsFixedSum

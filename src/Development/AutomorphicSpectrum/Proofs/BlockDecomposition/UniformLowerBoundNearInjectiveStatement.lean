@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformLowerBoundNearInjective
 open MeasureTheory
 open scoped ENNReal NNReal Topology

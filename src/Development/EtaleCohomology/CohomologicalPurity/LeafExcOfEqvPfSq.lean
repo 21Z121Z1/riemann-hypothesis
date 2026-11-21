@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafExcOfEqvPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafChPushPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafExcIdentPf

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsRealCoord
 
 open NumberField Matrix Formalism.MainNotions.S GlobalTheory.CuspGeo

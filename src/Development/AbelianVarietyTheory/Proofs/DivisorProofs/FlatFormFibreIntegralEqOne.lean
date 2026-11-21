@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodMapFlatDerivativeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WedgePowerEqFactorialDetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VolumePeriodTorusEqDetImaginaryStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.MahlerMeasureProofs.SSDirect
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.StatementU
 import Formalism.ZetaNonvanishing.OfRealNeOfRealOfLt
 import Formalism.ZetaNonvanishing.LandauEq

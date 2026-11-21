@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RecTExistsIff
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Nontrivial
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CGTrueT

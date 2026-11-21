@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeometricParameterUniformStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AutomorphyOfPublishedInputsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Lv3StageMovesSpectralStatement

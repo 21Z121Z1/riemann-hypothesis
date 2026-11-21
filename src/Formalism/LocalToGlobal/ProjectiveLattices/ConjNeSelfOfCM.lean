@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeOrd
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeDiv
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeMin

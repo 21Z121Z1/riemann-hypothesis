@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.GammaCongruentArcFromStart
 import Formalism.DistinguishedUnitIdeals.PhiFreeOfBasis
 

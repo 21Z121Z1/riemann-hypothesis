@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfSqNormEqExpGap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorRelationIntegralScaling
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPotentialOfMetricExists

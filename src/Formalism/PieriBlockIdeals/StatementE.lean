@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MirabolicMackeyTheory.StatementT
 import Formalism.PieriBlockIdeals.TailInequalityEventually
 import Formalism.QuotientMetricDivisors.ClassSumDualLe

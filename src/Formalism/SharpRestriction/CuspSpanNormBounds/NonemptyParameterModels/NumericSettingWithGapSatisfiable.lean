@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
 

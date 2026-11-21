@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.BlockTwistedCyclotomic
 import Formalism.AdmissibleDesigns.SmulEval
 import Formalism.AdmissibleDesigns.HigherColumnInvariantsBound

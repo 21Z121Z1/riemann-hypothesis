@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaloisCohomology.StatementLoc
 import Mathlib.Tactic.Polynomial.Basic
 open ReciprocityTheory.Gal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.StatementJets
 import Formalism.LocalToGlobal.GlobalTheory.GL3.NormNatCoprime
 import Formalism.LocalToGlobal.GlobalTheory.GL3.ThirdClauseIntegralCombination

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.HostOrbitsPlaces
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois
 

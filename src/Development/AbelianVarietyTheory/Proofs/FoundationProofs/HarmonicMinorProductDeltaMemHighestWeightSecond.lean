@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.HeckeCharacterParameters
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DerivationProdPow
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PderivEqZeroOfColOp

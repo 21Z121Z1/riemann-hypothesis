@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.ExistsGADet
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.OmSplitHalves
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsNeZeroAtZero

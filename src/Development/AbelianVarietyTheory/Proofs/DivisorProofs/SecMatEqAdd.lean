@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentLowerRowsLeviSetClosedSubgroupStatement
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 open MeasureTheory GlobalTheory.JSW

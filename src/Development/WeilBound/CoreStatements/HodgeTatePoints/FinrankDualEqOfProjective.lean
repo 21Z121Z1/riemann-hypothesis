@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateNormComparison
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GdChartFin
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GcChart

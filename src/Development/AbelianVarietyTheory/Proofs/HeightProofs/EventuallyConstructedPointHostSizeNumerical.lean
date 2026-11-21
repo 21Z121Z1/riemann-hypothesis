@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.XLeZBaseOfPowLeN
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HostSzOfSizes
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowNumAt

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.TemperedLocalComponents.PRepNew
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpoEqZeroOfPow
 import Development.AbelianVarietyTheory.Statements.CuspidalUnitaryTwists.TwNewQ

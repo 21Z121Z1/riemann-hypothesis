@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.KummerBasic
 import Mathlib.GroupTheory.FiniteAbelian.Duality
 import Mathlib.Order.CompletePartialOrder

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LayerLevel
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.AbLevel
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LevGal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocVanishOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulVecMemUniRad
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.RationalFiniteIdeleFactorization
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.Irreducible
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsStdStatement

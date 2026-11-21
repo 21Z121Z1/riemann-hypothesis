@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SubClosed
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PermRepSingle
 import Mathlib.RingTheory.WittVector.IsPoly

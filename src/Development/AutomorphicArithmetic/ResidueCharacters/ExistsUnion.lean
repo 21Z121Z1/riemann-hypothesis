@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.InvariantsKilledOverCyclotomicAlt
 import Development.AutomorphicArithmetic.CyclotomicBounds.FiniteDimensionalRoots
 import Formalism.SharpRestriction.LevelLetterCocycles.DecompositionData

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowNotMemMaximalIdealPowSucc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormalFibreIsReducedOfField
 import Development.AbelianVarietyTheory.Definitions.Divisors.SharpOverIff

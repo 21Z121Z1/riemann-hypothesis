@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.UnFree
 import Mathlib.NumberTheory.NumberField.InfiniteAdeleRing
 import Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing

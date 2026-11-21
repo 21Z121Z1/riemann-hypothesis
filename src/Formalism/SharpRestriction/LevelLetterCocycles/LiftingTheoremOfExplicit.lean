@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator
 import Formalism.PadicSubsetSums.StableGradedCounts.ARCReuse
 import Mathlib.RingTheory.OrderOfVanishing.Basic

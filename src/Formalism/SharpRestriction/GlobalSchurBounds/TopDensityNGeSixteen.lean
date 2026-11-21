@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.QuadraticLogDerivCongr
 import Formalism.LocalRingCardinality.Lemmas
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.OneLeThresholdMulPowers

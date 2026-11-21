@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullHeckeRealDatMovedReadings
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FactTypePrime
 open NumberField IsDedekindDomain

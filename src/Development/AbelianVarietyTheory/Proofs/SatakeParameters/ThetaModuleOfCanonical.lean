@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaFunctionsSpannedHeckeTwistedStandardFrameStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftLinearFormStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaLiftEquivarianceStatement

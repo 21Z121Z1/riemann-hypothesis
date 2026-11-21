@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.Objects
 import Mathlib.Algebra.Module.StablyFree.Basic

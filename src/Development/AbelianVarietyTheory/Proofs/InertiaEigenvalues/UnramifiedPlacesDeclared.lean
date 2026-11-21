@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmG5SetupStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftColumnRowSetupStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmH0SetupStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.EllipticRegularity.KernDecay
 import Formalism.UnipotentAdelicQuotients.EllipticRegularity.KernGr
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CoeffComposedPartialDerivListOfNodup
 open MvPolynomial ReciprocityTheory.PGsh GlobalTheory.CayleyBlock
 set_option maxHeartbeats 1000000 in

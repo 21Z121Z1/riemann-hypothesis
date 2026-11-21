@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteEtaleFunctionFieldIntegralClosureDifferentStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SmoothSectionsInFunctionField
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsSeparatedOfProj

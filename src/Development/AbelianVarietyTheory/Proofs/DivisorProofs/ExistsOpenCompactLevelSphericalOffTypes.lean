@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
 
 open MeasureTheory Set Filter NumberField IsDedekindDomain

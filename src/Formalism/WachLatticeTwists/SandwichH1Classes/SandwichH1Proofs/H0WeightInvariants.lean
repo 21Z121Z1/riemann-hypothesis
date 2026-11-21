@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.SandwichH1Classes.InvariantsOfTwistedModule
 import Formalism.WachLatticeTwists.SandwichH1Classes.SandwichH1Proofs.CyclotomicInvariantsZeroStatement
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTriSelf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientBundleFrameExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniREqUni

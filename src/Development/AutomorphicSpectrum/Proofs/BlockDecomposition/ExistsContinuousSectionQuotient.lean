@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.LocallyProfinite
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Topology.Algebra.ProperAction.Basic

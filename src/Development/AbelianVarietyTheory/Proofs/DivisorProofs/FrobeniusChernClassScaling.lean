@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkPresentationInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDividedDifference
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOneCokernelKilledStatement

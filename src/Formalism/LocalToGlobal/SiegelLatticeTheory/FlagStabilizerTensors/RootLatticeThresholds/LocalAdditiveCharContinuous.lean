@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.EFSymmCont
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsMoreMore
 import Mathlib.RingTheory.Valuation.Extension

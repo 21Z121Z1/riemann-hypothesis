@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuleFiniteFrameLatticeForms
 open GlobalTheory.ExpFrame Formalism.CohomologicalDescent.DepthNonnegative
 set_option maxHeartbeats 1000000 in

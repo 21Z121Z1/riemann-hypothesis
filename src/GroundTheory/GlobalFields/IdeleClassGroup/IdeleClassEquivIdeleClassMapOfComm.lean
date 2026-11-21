@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassMapIdeleClassMap
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles
 import GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsOpenSubgroupMemFixedModule

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.CycMatchRec
 import Formalism.SharpRestriction.LevelLetterCocycles.IsobaricMultiplicityOne
 

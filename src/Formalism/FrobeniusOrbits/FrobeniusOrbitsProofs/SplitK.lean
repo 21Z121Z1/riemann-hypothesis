@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.Statement
 import Formalism.TameInertiaTowers.CentralOrderTwo.OddEqOneOfSubOneMem
 import Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex

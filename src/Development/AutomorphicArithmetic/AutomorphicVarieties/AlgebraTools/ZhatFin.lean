@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ContinuousContractNth
 import Mathlib.Tactic.Polynomial.Basic
 import Mathlib.Topology.Connected.Separation

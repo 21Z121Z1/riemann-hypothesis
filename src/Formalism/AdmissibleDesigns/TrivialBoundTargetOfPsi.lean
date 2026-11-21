@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.URepApply
 import Formalism.AdmissibleDesigns.TrivialBoundGeneral
 import Formalism.AdmissibleDesigns.CycMatchRec

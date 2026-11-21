@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
 import Formalism.ConjugateSelfDual.Statement
 open NumberField IsDedekindDomain Formalism.ConjugateSelfDual ValuativeRel

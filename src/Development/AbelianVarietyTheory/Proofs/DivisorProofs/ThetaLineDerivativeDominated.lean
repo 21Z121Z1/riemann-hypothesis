@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilConvergenceOfKernelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineDerivativePreservesPolynomialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDerivativeAlongLineStatement

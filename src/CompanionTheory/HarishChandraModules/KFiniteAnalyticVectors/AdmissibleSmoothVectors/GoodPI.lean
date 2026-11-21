@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AdmissibleSmoothVectors.MapStdPoly
 import Mathlib.LinearAlgebra.Matrix.DotProduct
 import Mathlib.RingTheory.PicardGroup

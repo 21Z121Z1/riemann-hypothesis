@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QLev
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LevOfMem
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LiftLaws

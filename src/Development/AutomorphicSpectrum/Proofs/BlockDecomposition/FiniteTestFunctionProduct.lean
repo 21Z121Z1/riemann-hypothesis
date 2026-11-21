@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousPairProjection
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ImportsBisExtra
 open NumberField IsDedekindDomain Matrix MeasureTheory Filter

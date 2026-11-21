@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.NonemptyCohomologyRestrictScalarsLinearEquiv
 import ReciprocityTheory.GroupCohomology.IsLowExists
 import ReciprocityTheory.GroupCohomology.Localise

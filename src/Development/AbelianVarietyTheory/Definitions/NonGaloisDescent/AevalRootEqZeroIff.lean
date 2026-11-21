@@ -1,6 +1,6 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.Statement
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.UnitLemmaGroup
 import Mathlib.RingTheory.PiTensorProduct

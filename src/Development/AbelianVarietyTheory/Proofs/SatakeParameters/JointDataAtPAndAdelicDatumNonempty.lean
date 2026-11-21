@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GidxFacts
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCEmbCLam
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFinsetRepsOfCls

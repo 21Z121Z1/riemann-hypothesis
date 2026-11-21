@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusRealMultAppellHumbertStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductTorusFactorAppellHumbertStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslatedUniformizationPullbackStatement

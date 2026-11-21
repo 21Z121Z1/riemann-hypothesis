@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExtensionOrderEqSpan
 open GlobalTheory.CompanionTheory.Ar.BT TensorProduct
 set_option maxHeartbeats 1000000 in

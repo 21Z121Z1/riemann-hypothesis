@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartMass
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLineDegreeDual
 set_option maxSynthPendingDepth 1

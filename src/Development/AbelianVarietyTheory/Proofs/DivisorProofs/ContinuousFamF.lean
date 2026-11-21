@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StR
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousDen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjDiagReNonneg

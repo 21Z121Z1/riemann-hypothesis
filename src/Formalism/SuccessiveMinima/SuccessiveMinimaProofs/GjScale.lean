@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SuccessiveMinima.DefsMink
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Dynamics.Ergodic.Action.Regular

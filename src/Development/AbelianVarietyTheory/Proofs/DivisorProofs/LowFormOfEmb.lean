@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFullLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTieCoordBase
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.PhaseBreaksTargetParts

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.DualPairInh
 import ReciprocityTheory.DualLattices.LinPairStatement
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

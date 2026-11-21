@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIntegerAddStarEqOneOfIsCMUnram
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.HalfData
 open scoped Matrix NNReal ComplexConjugate TensorProduct ContDiff

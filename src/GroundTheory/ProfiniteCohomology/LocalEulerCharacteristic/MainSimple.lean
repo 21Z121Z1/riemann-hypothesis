@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainGalois
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainCount
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.MainCoind

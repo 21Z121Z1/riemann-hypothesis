@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RealisedChainTorusEq
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowGat
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowW

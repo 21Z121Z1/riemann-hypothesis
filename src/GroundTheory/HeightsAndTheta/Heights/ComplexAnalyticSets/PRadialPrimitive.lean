@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRadialPrimitive
 import Mathlib.Algebra.Ring.IsFormallyReal
 set_option maxSynthPendingDepth 1

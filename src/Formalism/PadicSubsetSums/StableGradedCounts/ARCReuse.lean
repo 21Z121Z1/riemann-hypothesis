@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.WindowSums
 import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.ToolsB
 import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.LagrangeIdealSgProof

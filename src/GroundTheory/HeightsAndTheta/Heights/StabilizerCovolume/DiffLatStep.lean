@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.DiffLatFree
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.RecordEigen
 set_option maxSynthPendingDepth 1

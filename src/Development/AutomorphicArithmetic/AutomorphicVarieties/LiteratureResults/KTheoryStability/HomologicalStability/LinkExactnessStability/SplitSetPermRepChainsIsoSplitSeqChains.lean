@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.MemSplitSeqIff
 import Mathlib.Data.Finsupp.Pointwise
 

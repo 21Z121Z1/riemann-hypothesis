@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CoboundaryTransfers.StatementEx
 import Mathlib.RingTheory.LocalProperties.Reduced
 import Mathlib.RingTheory.PicardGroup

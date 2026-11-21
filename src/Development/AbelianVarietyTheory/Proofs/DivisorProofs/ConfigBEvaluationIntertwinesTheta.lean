@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodModelEigenContinuous
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLinearBarModelTripleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenRelationContinuousStatement

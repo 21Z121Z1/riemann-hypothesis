@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.MirabolicMackeyTheory.LocalConditionsWeighted
 import Formalism.MirabolicMackeyTheory.MirabolicIsMackey
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.LocalConditionsGlobalForm

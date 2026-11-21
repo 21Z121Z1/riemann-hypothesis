@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeComparisonOnPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightLogSumAndPrimeBound
 open NumberField IsDedekindDomain Filter Topology

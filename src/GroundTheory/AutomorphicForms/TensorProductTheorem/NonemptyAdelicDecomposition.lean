@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.TensorProductTheorem.GKMain
 import GroundTheory.AutomorphicForms.TensorProductTheorem.GeneralLinearIntegers
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StrongApproximation.LocSmall
 import Lemmata.Cancellation.EnnrealVolumeRatioStepCancel
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.OpenModelSections
 import Mathlib.AlgebraicGeometry.Normalization
 import Mathlib.Tactic.PNatToNat

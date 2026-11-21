@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.CommuteRowOpRightMixedOp
 import Formalism.LocalRingCardinality.DataTheta
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsCusp
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.Period
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CyclotomicCharacters.DegreeDecomposition
 import GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois
 import Mathlib.RingTheory.Ideal.NatInt

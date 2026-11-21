@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerRegularizedPotentialBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFormIsClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OffBoundaryComplementVolumeZeroStatement

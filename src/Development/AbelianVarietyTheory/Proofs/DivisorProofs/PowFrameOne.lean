@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMulOfValLe
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsRootStalk
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPrimGenerator

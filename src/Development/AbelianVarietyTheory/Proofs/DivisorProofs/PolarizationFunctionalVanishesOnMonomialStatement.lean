@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationFunctionalVanishesOnMonomial
 open MvPolynomial GlobalTheory.ArInt
 set_option maxHeartbeats 1000000 in

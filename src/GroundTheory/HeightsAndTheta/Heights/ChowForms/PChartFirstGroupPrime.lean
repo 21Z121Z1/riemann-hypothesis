@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsChartFirstGroup
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChowFormSection
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsSectionOrder

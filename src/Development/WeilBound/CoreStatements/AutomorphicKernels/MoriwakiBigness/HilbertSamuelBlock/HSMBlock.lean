@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyConditional
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PResolutionDegree
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenDegGeomDeg

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgAnLat
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgAnTwo
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.KapUnit

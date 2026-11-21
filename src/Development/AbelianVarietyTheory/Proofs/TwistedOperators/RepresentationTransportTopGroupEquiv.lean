@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.IwahoriDoubleCosets
 import Formalism.LocalRingCardinality.DataHost
 open MeasureTheory Set Filter NumberField IsDedekindDomain

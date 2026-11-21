@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StInterNumEventual
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PRestrLenEuler
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PSnapperSection

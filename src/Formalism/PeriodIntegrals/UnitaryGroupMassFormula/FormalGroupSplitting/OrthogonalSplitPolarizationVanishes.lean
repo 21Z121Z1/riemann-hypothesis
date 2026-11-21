@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalGroupSplitting.Development
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Henselian

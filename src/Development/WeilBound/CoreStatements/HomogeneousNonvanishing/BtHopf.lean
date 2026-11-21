@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHens
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatBcPull
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.BtExistsBc

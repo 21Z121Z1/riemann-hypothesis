@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatHomOfGAdSymm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAHaarUnfoldingMeasure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentRadicalClosedBis

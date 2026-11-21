@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.AdelicGLn
 import GroundTheory.AutomorphicForms.Satake
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Existence

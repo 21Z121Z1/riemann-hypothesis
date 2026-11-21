@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositiveEigenvectorOfSimilitudeUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHaarMeasureScaling
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardAdelicCharacter

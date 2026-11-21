@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.FormalDegreeUpperC
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ConjScalarAtOf
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.PhaseBreaksTargetParts

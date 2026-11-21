@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.SeparableClosure
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.Normed.Ring.Ultra

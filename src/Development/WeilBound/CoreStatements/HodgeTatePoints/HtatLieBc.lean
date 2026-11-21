@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLie
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree
 

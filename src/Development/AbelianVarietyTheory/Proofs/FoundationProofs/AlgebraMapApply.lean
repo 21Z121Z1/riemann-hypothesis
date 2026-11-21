@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAuxiliaryPlaceNotMemFinset
 
 open MeasureTheory Set Filter GlobalTheory.AdelicU GlobalTheory.SplitWeil NumberField GlobalTheory.Orb Formalism.MainNotions.GlobalTheoryTheory.GenusMassVolumes

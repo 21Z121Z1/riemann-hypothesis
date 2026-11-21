@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.RowsPtAt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.OneLeSizeZ
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EquivIntegral

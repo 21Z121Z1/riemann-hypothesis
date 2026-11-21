@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MkMemAdmissibleAtIffCocycle
 import Formalism.PieriBlockIdeals.LemmaWFromLattice
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharAbove

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RankOneLocalComponentDet
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AdmissibleOfRankOneUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormEqOfSamePlace

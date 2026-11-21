@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SlopeTestRemainingChoices
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFormOfFunctional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinFormPowEqSumMonomial

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.PullbackExtension
 import GroundTheory.TateCohomology.AugTrivial
 import GroundTheory.TateCohomology.DeltaMap

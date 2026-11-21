@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.Statements
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMoll
 import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls

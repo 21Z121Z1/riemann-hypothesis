@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.LocalFiniteness.FieldNumbersSemilocalMaxIdeals
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRegMassNearSmall
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PRegFormCompare

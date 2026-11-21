@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RowSubstDualWeylExpressibleMatrixMulClosed
 open MvPolynomial Formalism.GradedWeylDivisibility GlobalTheory.GenCoef
 set_option maxHeartbeats 1000000 in

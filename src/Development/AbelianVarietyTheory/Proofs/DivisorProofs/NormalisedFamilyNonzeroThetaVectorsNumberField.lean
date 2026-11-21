@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsThetaVectorFamilyOfCurveDatum
 import Formalism.LocalToGlobal.GlobalTheory.GL3.ProvisionExtensionLink
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AlgTAll

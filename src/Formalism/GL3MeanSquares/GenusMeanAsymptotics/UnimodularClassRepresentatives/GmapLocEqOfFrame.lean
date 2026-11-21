@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.UnimodularClassRepresentatives.ExistsIsomFrame
 import Formalism.HermitianLattices.HermitianLatticesProofs.TraceReal
 import Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct

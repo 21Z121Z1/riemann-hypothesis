@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ProofRowTieValsDef
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePProjLieSelf
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePKeyEig2

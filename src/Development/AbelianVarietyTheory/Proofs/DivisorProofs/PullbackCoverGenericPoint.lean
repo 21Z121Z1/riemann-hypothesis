@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpecTensorPreimmersionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFieldOfUniquePrimeStalkStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericPointPullbackResidueFieldStatement

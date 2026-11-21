@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLineDegree
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormConstantDivisorLocalHeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagRootUnitSectionAtPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralCurveFiniteFieldPlaceStatement

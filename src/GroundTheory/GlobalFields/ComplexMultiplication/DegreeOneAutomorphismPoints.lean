@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.DegreeOneAutomorphism
 import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionIso
 import GroundTheory.GlobalFields.ComplexMultiplication.WeberFunctionAutomorphisms

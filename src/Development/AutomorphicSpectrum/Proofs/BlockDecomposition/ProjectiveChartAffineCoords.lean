@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartRestrictPullBijective
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThickeningFiltrationIsFil
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RepresentativeRestrict

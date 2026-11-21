@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDedFracLocalizationAway
 open NumberField ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Models
 set_option maxHeartbeats 1000000 in

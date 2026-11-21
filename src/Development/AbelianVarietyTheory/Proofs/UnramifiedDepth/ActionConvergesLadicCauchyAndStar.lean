@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ConstantCoeffEv
 import Formalism.LocalToGlobal.CharacterGerms.RowTieFB
 import Mathlib.Order.CompletePartialOrder

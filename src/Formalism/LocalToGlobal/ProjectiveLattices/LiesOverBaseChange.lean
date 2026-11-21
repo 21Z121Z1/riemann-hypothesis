@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 import Formalism.LocalToGlobal.ProjectiveLattices.TowerOfAt

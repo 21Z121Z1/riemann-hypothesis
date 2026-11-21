@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.PoitouTate.RealDefs
 import GroundTheory.ProfiniteCohomology.PoitouTate.Abstract
 import GroundTheory.ProfiniteCohomology.RealPlaces.DevissageNatural

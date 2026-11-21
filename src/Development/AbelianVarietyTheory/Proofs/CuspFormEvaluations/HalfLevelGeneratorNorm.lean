@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.DepthTie
 import Formalism.LocalToGlobal.ProjectiveLattices.HasDataCondition
 

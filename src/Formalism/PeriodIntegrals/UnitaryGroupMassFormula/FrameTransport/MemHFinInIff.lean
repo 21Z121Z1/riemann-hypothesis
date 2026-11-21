@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FrameTransport.StepTransl
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 

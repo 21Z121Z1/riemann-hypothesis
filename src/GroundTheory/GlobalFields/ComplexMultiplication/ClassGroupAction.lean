@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionLattice
 import GroundTheory.GlobalFields.ComplexMultiplication.JInvariantHomothety
 import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupActionIso

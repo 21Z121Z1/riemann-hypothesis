@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SndSectionValueTranslateProdFirstOrderLinearStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TranslateTangentCombinationEqProdStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

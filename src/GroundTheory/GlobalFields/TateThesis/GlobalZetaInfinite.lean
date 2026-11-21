@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasure
 import GroundTheory.GlobalFields.Adele.IntegersLattice
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic

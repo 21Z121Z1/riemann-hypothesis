@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.GenLogInverse
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.WtGeProd
 import Mathlib.RingTheory.PiTensorProduct

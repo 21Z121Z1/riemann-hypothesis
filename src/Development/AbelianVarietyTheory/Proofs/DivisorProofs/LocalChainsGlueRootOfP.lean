@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoordinatesMatrixActionFreeModuleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorThroughMonoLocalLiftsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientMatrixActionCoordinatesStatement

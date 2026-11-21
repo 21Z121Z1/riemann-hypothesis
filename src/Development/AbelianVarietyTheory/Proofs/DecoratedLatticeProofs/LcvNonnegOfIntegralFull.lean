@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NegLogLeLcvOfIntegralForm
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.RatHerm
 open Module NumberField IsDedekindDomain Formalism.BasicNotions Formalism.DivisionValues

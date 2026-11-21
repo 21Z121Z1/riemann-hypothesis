@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.NotTrivialAndTwist
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
 

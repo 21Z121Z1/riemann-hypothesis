@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.GradedModulesLength.FgHolds
 import Mathlib.RingTheory.MvPowerSeries.Order
 import Mathlib.Tactic.Monotonicity.Lemmas

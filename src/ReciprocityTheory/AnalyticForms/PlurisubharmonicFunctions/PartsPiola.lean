@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsCalc
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 

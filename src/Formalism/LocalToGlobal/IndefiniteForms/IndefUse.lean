@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 import Formalism.DivisorInequality.StatementObj
 import Formalism.QuotientMetricDivisors.DivIntoDualShift

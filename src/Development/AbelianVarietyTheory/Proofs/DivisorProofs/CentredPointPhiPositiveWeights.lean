@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PhiAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspValueLePhiComplementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralFrameStalkCompatibilityStatement

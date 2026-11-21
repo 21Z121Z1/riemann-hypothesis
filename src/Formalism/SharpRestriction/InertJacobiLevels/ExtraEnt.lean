@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraKer
 import Formalism.SharpRestriction.InertJacobiLevels.ResCharConj
 import Formalism.LocalRingCardinality.DataKerI

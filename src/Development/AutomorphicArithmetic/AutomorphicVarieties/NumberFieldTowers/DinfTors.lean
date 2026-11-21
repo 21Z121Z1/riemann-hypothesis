@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.XTwApplyApply
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

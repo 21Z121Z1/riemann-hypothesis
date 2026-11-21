@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting.HeisenbergCocycleMemCentre
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting.NCHeisC
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting.NCIface

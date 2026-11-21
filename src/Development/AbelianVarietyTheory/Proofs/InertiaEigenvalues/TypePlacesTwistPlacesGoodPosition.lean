@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.OffSmall
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.CondSq
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention

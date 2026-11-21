@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.PublishedTheorems.PublishedGlobalResults.PrimesInProgressionsRelative
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.PrimesInProgressionsRelativeOfTzRat
 import Mathlib.Analysis.Complex.ExponentialBounds

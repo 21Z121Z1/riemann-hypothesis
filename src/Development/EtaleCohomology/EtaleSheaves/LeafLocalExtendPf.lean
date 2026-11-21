@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafExtendCut
 import Mathlib.AlgebraicGeometry.ValuativeCriterion
 

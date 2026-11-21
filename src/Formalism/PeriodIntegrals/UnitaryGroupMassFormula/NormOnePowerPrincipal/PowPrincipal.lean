@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.NormOnePow
 import Mathlib.NumberTheory.NumberField.ClassNumber
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RealPlaces.OrderTwo
 import GroundTheory.ProfiniteCohomology.RealPlaces.InvolutionDuality
 import GroundTheory.ProfiniteCohomology.RealPlaces.LocalDualityDefs

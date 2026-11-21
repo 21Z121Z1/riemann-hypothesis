@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OrdEqZeroOfModulusEqOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableMulIntInd
 open NumberField IsDedekindDomain MeasureTheory Matrix Filter Topology

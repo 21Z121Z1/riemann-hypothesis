@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolEval
 import Mathlib.LinearAlgebra.PiTensorProduct.Basis
 open scoped TensorProduct Matrix Classical

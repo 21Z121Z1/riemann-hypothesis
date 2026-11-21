@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CoboundaryOfGenerator
 import ReciprocityTheory.Hypotheses.GalCohDefs
 

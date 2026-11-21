@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LatticeDataThicknessBound
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AbsNormMemOfUnderEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyLocalIntegralPointsMemOpenSubgroupDefi

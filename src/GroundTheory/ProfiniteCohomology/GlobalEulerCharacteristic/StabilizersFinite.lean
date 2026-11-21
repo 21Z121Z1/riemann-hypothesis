@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.StabilizersDefs
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.OrbitInvariants
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.SplitEA
 
 open NumberField Filter Topology

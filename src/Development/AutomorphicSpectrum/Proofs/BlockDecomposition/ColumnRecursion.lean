@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PatternGroupStatementStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerSymmetryStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RootExchangeStatement

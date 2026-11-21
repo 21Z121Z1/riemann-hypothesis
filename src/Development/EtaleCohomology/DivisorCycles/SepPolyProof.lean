@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.DivisorCycles.OpenCoset
 import Mathlib.LinearAlgebra.Matrix.Charpoly.Univ
 import Mathlib.RingTheory.Henselian

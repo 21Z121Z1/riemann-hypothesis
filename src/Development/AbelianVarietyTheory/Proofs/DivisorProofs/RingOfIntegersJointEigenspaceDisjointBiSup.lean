@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemEigSp
 import Mathlib.LinearAlgebra.Eigenspace.Pi
 import Mathlib.Order.CompletePartialOrder

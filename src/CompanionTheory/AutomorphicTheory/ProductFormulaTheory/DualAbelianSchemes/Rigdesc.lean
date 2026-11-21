@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.RigDescent
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.AppTopCompApply
 

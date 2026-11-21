@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.S
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HasPeriods
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsUnitDetEmbMat
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinrankDdRFinsum

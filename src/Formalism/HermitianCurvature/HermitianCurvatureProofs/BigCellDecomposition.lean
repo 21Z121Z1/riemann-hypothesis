@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LongWeylElement
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellZetaMinors
 

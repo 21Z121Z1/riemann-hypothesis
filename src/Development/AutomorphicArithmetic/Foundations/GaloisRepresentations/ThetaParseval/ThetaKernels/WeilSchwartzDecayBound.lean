@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SchwartzDecayUniform
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowFin
 import Development.WeilBound.ThetaLifts.LeviDeterminants.GrowHt

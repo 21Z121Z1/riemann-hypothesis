@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.IndexWeightsDominance
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

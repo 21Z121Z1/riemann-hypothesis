@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferMatrixFactorization
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagScalarCommuteOfEntries
 import Mathlib.RingTheory.Henselian

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.IsSaturatedFirstCoordinateLine
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.Height
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.CurveIsOrbit

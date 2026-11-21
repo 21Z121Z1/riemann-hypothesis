@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DieudonneModulesFreeFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPullbackBasisStatement
 

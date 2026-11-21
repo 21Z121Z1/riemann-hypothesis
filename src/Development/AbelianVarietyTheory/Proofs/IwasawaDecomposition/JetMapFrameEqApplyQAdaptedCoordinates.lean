@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.FactDelDualNabla
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTieAlg
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.LatAtLattice

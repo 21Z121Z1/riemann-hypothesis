@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.PrimeZetaPole
 import GroundTheory.GlobalFields.KummerTheory.Splitting
 import Mathlib.Order.CompletePartialOrder

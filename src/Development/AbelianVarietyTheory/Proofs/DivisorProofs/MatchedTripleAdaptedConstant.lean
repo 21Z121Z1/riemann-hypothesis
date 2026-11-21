@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMaxNotMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleBaseCharacterConditionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleBaseAdditiveCharacterStatement

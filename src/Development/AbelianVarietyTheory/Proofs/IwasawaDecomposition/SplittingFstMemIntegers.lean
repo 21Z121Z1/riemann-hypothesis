@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataLevel
 import Mathlib.RingTheory.Valuation.Integral
 open NumberField IsDedekindDomain

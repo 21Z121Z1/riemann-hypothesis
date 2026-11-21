@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.UnitaryDualProof.CompactOrbits.NilpotentOrbits.OrbitIntegrals.CentralizerRepresentatives.CbExistsChainOfGen
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsChainsOfRange
 import Mathlib.Tactic.ENatToNat

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.MemNonzeroLocusOfUnit
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsKeyPBOn
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.LieBaseChange

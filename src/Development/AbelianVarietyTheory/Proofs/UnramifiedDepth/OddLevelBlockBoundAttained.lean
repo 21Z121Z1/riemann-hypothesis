@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.ContentLargeFromSupplies
 import Formalism.LocalToGlobal.CharacterGerms.ContentZeroAt
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.BlockOfNormalForm

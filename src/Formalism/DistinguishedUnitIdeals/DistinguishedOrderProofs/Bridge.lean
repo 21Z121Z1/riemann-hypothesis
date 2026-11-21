@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.BridgeLevelOf
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.Partners
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.UnivPart

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricRatioConjugatesOfTransport
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HeckeIntegralityStatements
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesRationalIntegral

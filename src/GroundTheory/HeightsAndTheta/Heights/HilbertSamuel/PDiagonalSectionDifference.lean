@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsDiagonalSectionDifference
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionsDimZero
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSerreGraded

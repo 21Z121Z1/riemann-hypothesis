@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSmoothBumpInChartStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExponentialControlUniformDeltaStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExponentialControlGlueLeftStatement

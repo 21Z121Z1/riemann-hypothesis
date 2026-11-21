@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CosetRefinement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDeterminingLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogClassNumberAtLe

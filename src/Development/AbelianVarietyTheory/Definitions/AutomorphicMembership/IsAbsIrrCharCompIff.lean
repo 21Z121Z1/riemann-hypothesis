@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.HeckeCSDICommTrRep
 import Formalism.LocalToGlobal.Columns.GoodXgE
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs

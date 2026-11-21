@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsXTranslate
 
 open MeasureTheory NumberField IsDedekindDomain Filter Topology

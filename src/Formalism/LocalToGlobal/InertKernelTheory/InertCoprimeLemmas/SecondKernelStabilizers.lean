@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.InertKernelTheory.InertCoprimeLemmas.KernelStabilizer
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison
 

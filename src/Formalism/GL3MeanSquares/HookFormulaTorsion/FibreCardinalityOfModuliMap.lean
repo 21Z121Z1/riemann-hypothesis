@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.IntegralMultipleNormLowerBound
 import Formalism.GL3MeanSquares.HookFormulaTorsion.SeparatedSetPackingBound
 import Mathlib.RingTheory.Henselian

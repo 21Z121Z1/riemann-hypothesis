@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Smooth
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Window
 

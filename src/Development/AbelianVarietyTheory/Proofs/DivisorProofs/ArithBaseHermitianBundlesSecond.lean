@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericRootTransitionFactorsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleGenericSetupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleGenericFibreDataStatement

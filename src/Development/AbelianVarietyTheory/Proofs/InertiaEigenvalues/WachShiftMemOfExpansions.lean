@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ExpRules
 import Formalism.SharpRestriction.LevelLetterCocycles.RToolModDStab
 import Formalism.SharpRestriction.LevelLetterCocycles.SemisimpleLetterIffForallMem

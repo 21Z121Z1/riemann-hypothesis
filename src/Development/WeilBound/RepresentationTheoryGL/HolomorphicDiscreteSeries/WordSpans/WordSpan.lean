@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.CapelliDeterminantBlockProduct
 import Development.WeilBound.CoreStatements.BranchingTraces.HeBranching
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliAbstractCharacter

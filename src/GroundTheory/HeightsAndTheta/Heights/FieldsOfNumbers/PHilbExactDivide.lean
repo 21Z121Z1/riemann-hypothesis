@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PGradedFinite
 import Mathlib.Algebra.Order.Sub.Prod
 import Mathlib.RingTheory.Henselian

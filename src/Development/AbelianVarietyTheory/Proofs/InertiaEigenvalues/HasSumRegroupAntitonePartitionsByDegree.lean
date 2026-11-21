@@ -1,4 +1,4 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SchurEqJtDet
 
 noncomputable section

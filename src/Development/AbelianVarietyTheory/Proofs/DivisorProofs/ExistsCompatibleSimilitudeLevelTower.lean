@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotCompactOfMEqOne
 import Mathlib.CategoryTheory.CofilteredSystem
 import Mathlib.CategoryTheory.Functor.OfSequence

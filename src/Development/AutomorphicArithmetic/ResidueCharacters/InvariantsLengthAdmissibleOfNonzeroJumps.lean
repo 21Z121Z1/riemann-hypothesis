@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.ExistsUnion
 import Formalism.SharpRestriction.LevelLetterCocycles.JumpAndLengthOfAdmitted
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE

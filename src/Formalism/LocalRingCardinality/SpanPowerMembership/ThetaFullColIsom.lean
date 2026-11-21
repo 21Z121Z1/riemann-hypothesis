@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraTheta
 import Mathlib.Analysis.InnerProductSpace.l2Space
 

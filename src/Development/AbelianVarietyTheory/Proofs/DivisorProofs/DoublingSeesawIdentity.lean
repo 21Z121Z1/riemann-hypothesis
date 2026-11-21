@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlocksOfDiagCols
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointGenericFibreRangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PreconnectedInUnionAnalyticStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.InePolOfUnr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ConjGenTransportExists
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyDualTamePart

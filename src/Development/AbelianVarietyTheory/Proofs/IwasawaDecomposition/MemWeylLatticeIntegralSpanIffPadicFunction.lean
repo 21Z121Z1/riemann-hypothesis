@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.WeylLatDual
 import Formalism.LocalToGlobal.Columns.TiedValLatG
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PZBasis

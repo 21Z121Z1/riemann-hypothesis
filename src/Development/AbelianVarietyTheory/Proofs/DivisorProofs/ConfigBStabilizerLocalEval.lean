@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleNormIntegralFractionalIdealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeBStabilizerEvaluationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeBStabilizerSecondStatement

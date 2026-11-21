@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.OrbitLabellings.RowDefs
 import Formalism.DropLevelBounds.ThBounds
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthCond

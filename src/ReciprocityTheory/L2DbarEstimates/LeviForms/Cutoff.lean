@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.LeviForms.BergmanExistsStatement
 import Mathlib.Analysis.SpecialFunctions.SmoothTransition
 import Mathlib.Tactic.ENatToNat

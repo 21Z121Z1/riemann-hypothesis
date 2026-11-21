@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsProjFrameGenPtRel
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PProjFrameFibrePt
 set_option maxSynthPendingDepth 1

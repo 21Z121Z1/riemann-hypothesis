@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.StatementI
 import Mathlib.Analysis.Normed.Field.Instances
 import Mathlib.NumberTheory.Padics.Complex

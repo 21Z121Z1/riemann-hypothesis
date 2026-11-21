@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.L2LocalComponents.Analytic
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchPolar
 import GroundTheory.AutomorphicForms.L2LocalComponents.CuspSmooth

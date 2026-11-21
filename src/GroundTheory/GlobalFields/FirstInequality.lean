@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.FirstInequality.HerbrandClass
 import GroundTheory.GlobalFields.FirstInequalityStatement
 

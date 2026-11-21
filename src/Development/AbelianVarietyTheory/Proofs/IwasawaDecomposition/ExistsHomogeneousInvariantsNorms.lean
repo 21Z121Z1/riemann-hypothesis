@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd
 import Mathlib.Analysis.Normed.Unbundled.RingSeminorm
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

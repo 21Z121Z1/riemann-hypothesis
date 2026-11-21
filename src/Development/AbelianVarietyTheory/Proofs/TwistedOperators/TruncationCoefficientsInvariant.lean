@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChamberCoefficientTranslationStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChamberCoefficientContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChamberCoefficientProductFormulaStatement

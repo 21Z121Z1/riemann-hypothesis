@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
 import Formalism.SharpRestriction.CuspSpanNormBounds.PSDKOnOfPSDK
 import Formalism.SharpRestriction.CuspSpanNormBounds.LeSCSCl

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentVectorsChartIndependence
 open NumberField GlobalTheory.ShFam.Pad AlgebraicGeometry CategoryTheory
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HarishChandraCentre.Projection
 import GroundTheory.AutomorphicForms.HarishChandraCentre.Capelli
 import Mathlib.Tactic.Monotonicity.Lemmas

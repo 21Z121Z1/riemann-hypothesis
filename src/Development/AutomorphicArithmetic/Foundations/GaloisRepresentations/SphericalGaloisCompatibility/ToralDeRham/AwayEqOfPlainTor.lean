@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.SphericalGaloisCompatibility.ToralDeRham.RcUnlinkedChars
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorExistsChars
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SphericalContragredientMonomial

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.StepsNonvacuous
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieImageCorrespondence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetGroupMorphismBaseChange

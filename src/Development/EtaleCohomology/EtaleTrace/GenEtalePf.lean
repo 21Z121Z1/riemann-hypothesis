@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.FibrePf
 
 namespace LateralTheory.EtaleTrace.GenEtaleRing

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.TensorProductTheorem.Operators
 import Mathlib.RepresentationTheory.Irreducible
 import Mathlib.Tactic.ReduceModChar

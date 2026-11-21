@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.StFSSmallCountBound
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PScaledFSTopPos
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ZcombIsConjInvariantH

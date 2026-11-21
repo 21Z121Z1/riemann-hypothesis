@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.OnePlaceKF
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GapCoefficientDerivativeBound
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapExistsFunctional

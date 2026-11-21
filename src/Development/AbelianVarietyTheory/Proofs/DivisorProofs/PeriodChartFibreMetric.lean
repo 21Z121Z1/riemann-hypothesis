@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodChartSectionTrivialisationStatement
 
 open CategoryTheory AlgebraicGeometry Set Matrix MeasureTheory MonObj

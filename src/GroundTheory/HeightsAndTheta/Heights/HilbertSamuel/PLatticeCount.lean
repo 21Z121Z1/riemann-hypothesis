@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.CovolumeCount
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLattice
 import Mathlib.Dynamics.Ergodic.Action.Regular

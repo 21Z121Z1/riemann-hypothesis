@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsLocalRingOfIntegers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToLinTransposeDot
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumTransport

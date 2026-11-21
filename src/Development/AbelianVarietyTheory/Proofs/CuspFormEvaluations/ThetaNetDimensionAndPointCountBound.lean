@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.GrowthConstantBoundGcR
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.NetDataExists
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.DeepSubMulRecAll

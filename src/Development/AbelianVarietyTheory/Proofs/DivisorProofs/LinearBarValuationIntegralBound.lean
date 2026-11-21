@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumValueNeZeroOfLinearFunctionalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCharacterLocalFunctionalEquivariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalVacuumFixedByMaximalCompactStatement

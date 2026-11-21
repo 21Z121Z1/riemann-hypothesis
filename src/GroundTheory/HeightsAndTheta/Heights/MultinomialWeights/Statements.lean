@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.FlagBasic
 import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleSuccessiveProjectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleIntegralBaseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleDimPlusOneStatement

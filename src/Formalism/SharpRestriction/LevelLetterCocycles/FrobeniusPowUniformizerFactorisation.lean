@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.LagrangeExtensionCocycles.DualWByLettersExtended
 import Formalism.GaussValuationBounds.GaussValueContraction.ScaledPowMemSpanCeil
 import Formalism.WeaklyAdmissibleFiltrations.PhtGalois

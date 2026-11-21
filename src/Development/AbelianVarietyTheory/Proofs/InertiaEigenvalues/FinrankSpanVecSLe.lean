@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanLStable
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSummandTw
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ThetaChr
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TiedSKOfStd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsDetLiftLocal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
 import Formalism.HermitianLattices.StatementMass
 import Formalism.LogVandermondeBounds.LogRatioLowerBound

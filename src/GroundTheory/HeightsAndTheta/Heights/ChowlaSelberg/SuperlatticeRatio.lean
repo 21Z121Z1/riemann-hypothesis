@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.HeckeRatios
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Statements
 set_option maxSynthPendingDepth 1

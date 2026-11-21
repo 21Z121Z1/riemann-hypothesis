@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsTheta
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.ThetaGauss
 import Mathlib.RingTheory.PiTensorProduct

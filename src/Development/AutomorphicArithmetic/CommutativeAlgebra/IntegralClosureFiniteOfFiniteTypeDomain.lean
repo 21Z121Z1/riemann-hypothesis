@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafIntClosureAlgPf
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.NoetherReduction
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.NoetherCharP

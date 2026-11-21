@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IntersectionVerticalPerturbationBoundStatement
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.XSqDiag
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula

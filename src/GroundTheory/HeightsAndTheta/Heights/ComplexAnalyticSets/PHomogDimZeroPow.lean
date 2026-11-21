@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHomogDimZeroPow
 import Mathlib.RingTheory.GradedAlgebra.Radical
 set_option maxSynthPendingDepth 1

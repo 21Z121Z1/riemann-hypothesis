@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.SmoothRep
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFlagOfTriangularFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularFrameGradedPieceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleClassOfTriangularFrameStatement

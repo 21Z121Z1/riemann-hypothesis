@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsImmersionOfForallAffineSurjectiveAppLE
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorusPt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSecBGenerating

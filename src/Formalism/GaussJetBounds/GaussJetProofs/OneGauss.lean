@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.StatementU
 import Formalism.GaussJetBounds.GaussJetProofs.GField
 import Formalism.GaussJetBounds.GaussJetProofs.Transfer

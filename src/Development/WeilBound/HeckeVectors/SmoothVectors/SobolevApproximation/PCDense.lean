@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.OrbitDerivatives.EtaleClosedPointLiftsSimpleRootsMonic
 import Development.WeilBound.HeckeVectors.SmoothVectors.SobolevApproximation.SobApproxHolds
 import Formalism.LocalToGlobal.IndefiniteReal.SmExpSmulContDiff

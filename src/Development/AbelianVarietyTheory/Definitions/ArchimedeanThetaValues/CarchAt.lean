@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.ModelsAt
 import Formalism.LocalToGlobal.ProjectiveLattices.XcLat
 import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementC

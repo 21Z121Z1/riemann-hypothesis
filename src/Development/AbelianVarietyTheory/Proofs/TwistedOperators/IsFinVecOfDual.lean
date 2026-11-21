@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.OppositeColumnLifts
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ChainStepsAreGridArrows
 

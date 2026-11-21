@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RaSmith
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RaCoord
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CompMemAddFun

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.MahlerMeasureProofs.MeanGam
 import Formalism.MahlerMeasure.MahlerMeasureProofs.PhiInt
 import Formalism.MahlerMeasure.TieVars

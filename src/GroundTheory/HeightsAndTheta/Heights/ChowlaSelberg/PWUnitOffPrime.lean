@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Statements
 import GroundTheory.GlobalFields.ComplexMultiplication.ClassGroupAction
 set_option maxSynthPendingDepth 1

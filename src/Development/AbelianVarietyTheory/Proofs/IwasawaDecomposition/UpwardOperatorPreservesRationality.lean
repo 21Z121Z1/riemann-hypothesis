@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.PolyFnLemmas
 import Formalism.LocalToGlobal.GlobalTheory.GL6.BwAValIntegralNonneg
 import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero

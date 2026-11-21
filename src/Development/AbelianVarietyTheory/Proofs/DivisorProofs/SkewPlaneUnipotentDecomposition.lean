@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardParabolicUnipotentMono
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewPlaneEisensteinConstantTermStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewPlaneUnipotentIntegralStatement

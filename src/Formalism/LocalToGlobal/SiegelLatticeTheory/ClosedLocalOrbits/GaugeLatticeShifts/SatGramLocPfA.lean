@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.SatGramLoc
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

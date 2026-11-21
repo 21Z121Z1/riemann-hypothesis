@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsMaxHeight
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.IntegralClosure.GoingDown

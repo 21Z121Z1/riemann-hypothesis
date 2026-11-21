@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SharpSurjectiveKerSpanStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SharpMapCongruencePropertiesStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompatibleRootsLiftToTiltStatement

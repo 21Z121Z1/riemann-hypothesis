@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
 import Mathlib.Tactic.Polynomial.Basic

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementJ
 
 open Finset NumberField Formalism.FourierDecayAlt Formalism.FourierDecayAlt.J

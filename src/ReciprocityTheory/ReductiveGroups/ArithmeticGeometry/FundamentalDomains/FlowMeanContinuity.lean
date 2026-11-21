@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FundamentalDomains.RealEmbeddingCharacters
 import Mathlib.Dynamics.Ergodic.Action.Regular
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.GROWCountStatement

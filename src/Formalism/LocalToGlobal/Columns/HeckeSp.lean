@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAlg
 import Formalism.LocalToGlobal.Columns.RhoEqOfSmulEq
 import Formalism.LocalToGlobal.Columns.DecoFin

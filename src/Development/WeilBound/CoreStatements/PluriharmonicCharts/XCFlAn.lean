@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelAnalyticDataExists
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.NotMemTop
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.MinorIJOneSelf

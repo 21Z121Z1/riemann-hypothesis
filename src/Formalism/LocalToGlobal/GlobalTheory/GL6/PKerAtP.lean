@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.UnramT
 import Formalism.LocalToGlobal.GlobalTheory.BaseLatticeSelfDual
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PRLocV

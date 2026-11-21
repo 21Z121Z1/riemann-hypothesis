@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FactorMemCocyclesPowQuot
 import Mathlib.RingTheory.LocalProperties.Reduced
 import Mathlib.Tactic.Polynomial.Basic

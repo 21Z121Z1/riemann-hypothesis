@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.WStmtxx
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialOfIsSubquotient
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlainTorExistsChars

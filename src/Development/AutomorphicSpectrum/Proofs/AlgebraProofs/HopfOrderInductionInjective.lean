@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.TranslateMemIndOrder
 import Mathlib.Tactic.ReduceModChar
 open GlobalTheory.CompanionTheory.Ar.BT TensorProduct

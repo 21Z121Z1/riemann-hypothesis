@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FormsPin
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiEntryStab
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XiCpl1Stab

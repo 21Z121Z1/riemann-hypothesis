@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameOrthogonalDimensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedHermitianNondegenerateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictedWittFrameStatement

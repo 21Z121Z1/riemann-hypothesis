@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExistsIsRepOfTw
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsSameData
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NoFormsOff

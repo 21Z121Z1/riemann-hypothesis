@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GaussTubeOfTubeGood
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.Fourier.Inversion

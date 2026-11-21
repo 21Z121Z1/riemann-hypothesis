@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolomorphicLogOnConvexStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeCocycleCoboundaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFactorHolomorphicSolutionStatement

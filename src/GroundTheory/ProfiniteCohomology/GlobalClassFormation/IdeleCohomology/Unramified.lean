@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.LocalHerbrand
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.Unramified
 import GroundTheory.ProfiniteCohomology.ContinuousCochains.Functoriality

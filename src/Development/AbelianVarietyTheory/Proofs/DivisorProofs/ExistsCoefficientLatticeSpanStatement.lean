@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoefficientLatticeSpan
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SeriesRatSOf
 open GlobalTheory.BigTop GlobalTheory.BigOn GlobalTheory.BigOn.Exp

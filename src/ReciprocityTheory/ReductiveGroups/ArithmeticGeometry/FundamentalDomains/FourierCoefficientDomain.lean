@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactBisForm.Imports
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PicardGroup

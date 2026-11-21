@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.QuotientEigenDifference
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.Etale.Weakly

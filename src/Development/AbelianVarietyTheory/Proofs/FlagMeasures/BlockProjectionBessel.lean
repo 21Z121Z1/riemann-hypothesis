@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.KfinCoefMulSplit
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CellDataSupportStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HaarEqSmul

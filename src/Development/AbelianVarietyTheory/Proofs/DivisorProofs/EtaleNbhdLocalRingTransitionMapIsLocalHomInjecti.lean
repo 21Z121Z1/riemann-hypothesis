@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InstPreorder
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.RingHom.FaithfullyFlat

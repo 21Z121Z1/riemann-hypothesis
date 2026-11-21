@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ChartGen
 import Formalism.HermitianLattices.StatementMass
 import Mathlib.RingTheory.Henselian

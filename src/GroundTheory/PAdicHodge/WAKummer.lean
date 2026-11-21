@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WAKummerBCris
 import GroundTheory.PAdicHodge.ExistsNormLeOfNormLtOneFinite
 set_option maxSynthPendingDepth 1

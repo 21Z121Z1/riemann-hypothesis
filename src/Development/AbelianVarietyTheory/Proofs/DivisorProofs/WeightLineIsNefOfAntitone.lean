@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemipositiveOfIsometricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemipositiveNonnegCombinationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticHeightTensorAdditiveOnCurvesStatement

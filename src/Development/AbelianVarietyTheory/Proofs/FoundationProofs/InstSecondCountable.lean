@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.BlockOrderedSquareIntegrable
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Matrix MeasureTheory

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.SameDegreeZeroFormsSelf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsGlobalSettingStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RowDictGoodOpNonempty

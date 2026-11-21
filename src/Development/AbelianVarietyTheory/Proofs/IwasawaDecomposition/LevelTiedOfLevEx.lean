@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.LeastSplitAuxiliaryPrimeThetaChainSpec
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HostPins
 open Formalism.BasicNotions GlobalTheory.Mem.HD

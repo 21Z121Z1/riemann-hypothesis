@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsLinearIndependentSumElimOfFinrankEq
 import Formalism.LocalToGlobal.CharacterGerms.Interface
 import Mathlib.RingTheory.PicardGroup

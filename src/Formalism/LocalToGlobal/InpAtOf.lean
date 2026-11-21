@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.PtKOfReal
 import Formalism.LocalToGlobal.Divisibility.SumLeEtaSumNum
 import Formalism.LocalToGlobal.Divisibility.ConstantGeTwentyEightAlt

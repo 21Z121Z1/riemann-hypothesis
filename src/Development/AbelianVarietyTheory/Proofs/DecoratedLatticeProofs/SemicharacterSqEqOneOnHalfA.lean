@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergOperatorFinitePartLatticeVacuumSign
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjPEqCP
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EmbHInjective

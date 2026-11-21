@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHilbRep
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComapEqKerIff
 

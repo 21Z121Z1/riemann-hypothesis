@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullRegCoverIsCInf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsModifFlag
 open CategoryTheory AlgebraicGeometry TopologicalSpace

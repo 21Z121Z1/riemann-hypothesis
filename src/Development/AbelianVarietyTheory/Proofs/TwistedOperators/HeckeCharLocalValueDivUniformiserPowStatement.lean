@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeckeCharLocalValueDivUniformiserPow
 open NumberField IsDedekindDomain Formalism.L2.Host
 set_option maxHeartbeats 1000000 in

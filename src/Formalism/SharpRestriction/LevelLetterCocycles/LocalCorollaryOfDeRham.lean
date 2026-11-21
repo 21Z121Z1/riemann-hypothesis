@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalTheoremOfUnramifiedLifting
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 import Formalism.SharpRestriction.LevelLetterCocycles.BoundedNumeratorPowerSummability

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsIsoAppTopOfIsPullbackOfSurjective
 import Mathlib.AlgebraicGeometry.Morphisms.FlatDescent
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp

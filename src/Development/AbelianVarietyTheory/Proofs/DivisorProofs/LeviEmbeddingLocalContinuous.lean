@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalStabilizerLocallyCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingLocalMeasurableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemidirectHaarMeasureProductStatement

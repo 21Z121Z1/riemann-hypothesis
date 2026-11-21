@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIndefiniteUnitaryBoostHilbertSchmidt
 open Matrix Finset Formalism.MainNotions.S Formalism.REAL GlobalTheory.SepReal
 set_option maxHeartbeats 1000000 in

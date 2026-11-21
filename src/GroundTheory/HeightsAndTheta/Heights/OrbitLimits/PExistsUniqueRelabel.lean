@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.SwapLoc
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsExistsUniqueRelabel
 import Mathlib.RingTheory.PiTensorProduct

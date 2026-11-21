@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.NormResidueSymbol.RationalContinuous
 import GroundTheory.GlobalFields.TateThesis.HeckeChar
 import Mathlib.NumberTheory.DirichletCharacter.Bounds

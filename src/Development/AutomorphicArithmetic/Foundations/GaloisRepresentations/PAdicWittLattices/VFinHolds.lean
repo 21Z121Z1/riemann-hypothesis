@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.SplitsSelfOfIso
 import Development.EtaleCohomology.WeilConjectures.FinQCut
 import Development.EtaleCohomology.WeilConjectures.AdicKerPf

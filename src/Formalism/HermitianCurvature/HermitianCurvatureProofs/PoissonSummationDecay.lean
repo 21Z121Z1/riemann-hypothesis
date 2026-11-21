@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.LevelRecursionCondNeeded
 import Formalism.LatticeTheta.LatticeThetaProofs.LatticeFourierSeries
 import Formalism.LatticeTheta.LatticeThetaProofs.UnfoldCoeff

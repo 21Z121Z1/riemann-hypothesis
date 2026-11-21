@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.FlatSat
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsSmulMemOfEig
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsAction

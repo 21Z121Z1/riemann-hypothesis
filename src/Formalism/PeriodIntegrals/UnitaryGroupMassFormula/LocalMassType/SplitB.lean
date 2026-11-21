@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.SplitA
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalMassType.SatSplit

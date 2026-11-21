@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.GaloisIrreducibility
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.LinearAlgebra.Eigenspace.Semisimple

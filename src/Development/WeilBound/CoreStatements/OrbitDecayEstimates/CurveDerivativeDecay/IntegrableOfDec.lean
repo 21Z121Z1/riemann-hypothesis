@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.OrbitDecayEstimates.CurveDerivativeDecay.OneLeHsG
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.CoefDec

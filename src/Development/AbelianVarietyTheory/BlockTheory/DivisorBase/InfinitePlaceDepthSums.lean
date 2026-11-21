@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteForms.IndefSide
 import Formalism.PairingDivisors.StatementH
 import Mathlib.NumberTheory.NumberField.CMField

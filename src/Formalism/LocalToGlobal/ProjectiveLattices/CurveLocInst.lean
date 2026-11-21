@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveAsm
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveCountB
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveOpen

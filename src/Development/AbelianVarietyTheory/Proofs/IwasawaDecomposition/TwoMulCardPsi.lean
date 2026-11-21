@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.FormsOver
 import Formalism.LocalToGlobal.LatticeGeometry.CmTypeMeetsConjugatePair
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RcProj
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HasLenOfEquiv
 import ReciprocityTheory.DualLattices.EigenLengthProductStatementHolds

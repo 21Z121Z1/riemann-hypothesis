@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.HTIntLeft
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.CommonMult
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.WeightPositive

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RembApply
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

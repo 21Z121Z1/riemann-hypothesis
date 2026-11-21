@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.SingleMemDualLatticeStandard
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualPtsOnPlane
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PropertyOfCodimOneLocalUnitsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelMapUniquenessStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelMapCompatibilityStatement

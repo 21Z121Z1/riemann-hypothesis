@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureFundDomLtTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapHaarEqOfLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarInvEqOfLattice

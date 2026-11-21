@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormLeNormCatRight
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableCatPhase
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OfMulBlk

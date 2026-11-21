@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrPApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRealAdEqZero
 open scoped TensorProduct Matrix

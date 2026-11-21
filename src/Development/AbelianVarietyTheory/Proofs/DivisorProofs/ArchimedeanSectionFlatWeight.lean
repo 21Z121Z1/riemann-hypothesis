@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTateKernelAtPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PropZStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverStatementHoldsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FormResFormPullFormPull
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackUnit
 

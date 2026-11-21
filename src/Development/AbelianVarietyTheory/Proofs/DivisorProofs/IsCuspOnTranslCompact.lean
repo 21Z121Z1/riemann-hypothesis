@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicConjMaxCompact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFiniteTranslate
 open scoped TensorProduct NNReal Matrix ComplexConjugate

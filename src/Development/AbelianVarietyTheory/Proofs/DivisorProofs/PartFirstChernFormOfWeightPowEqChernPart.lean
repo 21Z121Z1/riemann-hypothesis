@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsMetricFrOfIsMetricOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopPowerHermitianFormDensity
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory Filter Topology

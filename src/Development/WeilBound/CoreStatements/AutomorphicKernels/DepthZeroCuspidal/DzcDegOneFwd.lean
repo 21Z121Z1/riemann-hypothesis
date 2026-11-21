@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.AutomorphicKernels.DepthZeroCuspidal.DegOneOfChar
 import Development.WeilBound.CoreStatements.AutomorphicKernels.DepthZeroCuspidal.FixedOfCharNeBotIff
 import Development.WeilBound.CoreStatements.AutomorphicKernels.DepthZeroCuspidal.TameLpOfCharIff

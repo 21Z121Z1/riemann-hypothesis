@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimesIsogeny
 import GroundTheory.GlobalFields.ComplexMultiplication.FrobeniusAtPrimesLocal
 import GroundTheory.GlobalFields.ComplexMultiplication.BadPrimesFinite

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.ZetaProductPairs
 import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card
 

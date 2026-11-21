@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableUnipotentNormRpowNeg
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FormSubRight
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsPolyDegStar

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.LatticeFinrank
 import Formalism.SharpRestriction.LevelLetterCocycles.DdRFull
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.FinrankMapMkQ

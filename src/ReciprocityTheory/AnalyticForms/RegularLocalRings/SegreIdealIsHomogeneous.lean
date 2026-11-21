@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.MemConePtsIffChartIdeal
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 import Mathlib.RingTheory.MvPolynomial.Ideal

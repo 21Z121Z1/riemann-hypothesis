@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PhiDivisorArcBlowupStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationBlowupCombinedStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeConditionsProductStatement

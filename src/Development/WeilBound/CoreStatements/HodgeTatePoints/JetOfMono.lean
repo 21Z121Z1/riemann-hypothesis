@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsPowEqFractionRingOfPderivEqZero
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.IsLocalRingOfAug
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TjEqZeroIff

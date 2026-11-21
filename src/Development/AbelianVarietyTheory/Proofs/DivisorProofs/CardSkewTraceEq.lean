@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewTangentReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryLieAlgebraFiniteCardStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodFormResidueFieldDataStatement

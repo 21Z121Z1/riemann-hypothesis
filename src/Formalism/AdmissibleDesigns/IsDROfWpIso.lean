@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.MultVZeroOfSubsingleton
 import Formalism.AdmissibleDesigns.LocCont
 import Formalism.AdmissibleDesigns.MsContW

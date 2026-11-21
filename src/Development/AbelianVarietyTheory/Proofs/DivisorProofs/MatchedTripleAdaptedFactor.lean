@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProperThetaSubmoduleInKernelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaVanishingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPairThetaNonvanishingStatement

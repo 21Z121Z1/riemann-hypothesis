@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeBoundsUniformLargeGapFamilies
 open Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.S
 set_option maxHeartbeats 1000000 in

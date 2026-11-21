@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.ColengthCotangentBoundStatementOfClaim
 import ReciprocityTheory.DualLattices.PrimeHopfOrderOfAddEquiv
 import ReciprocityTheory.DualLattices.MemDualLat

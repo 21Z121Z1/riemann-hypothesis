@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.DivisionCompatibleToSub2Indef2
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
 

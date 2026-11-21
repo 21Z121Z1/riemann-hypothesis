@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelTransport
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermMulVecMulVec
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsPlaceWithVectors

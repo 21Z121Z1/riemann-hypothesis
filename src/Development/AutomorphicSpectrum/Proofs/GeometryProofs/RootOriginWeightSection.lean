@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginPointCompare
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RootOriginWeightComparison
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementU
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.BesselJUnitaryEquivariant
 import Mathlib.Tactic.Monotonicity.Lemmas

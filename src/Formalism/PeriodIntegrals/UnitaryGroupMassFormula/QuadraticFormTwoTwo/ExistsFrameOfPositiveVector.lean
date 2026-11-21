@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuadraticFormTwoTwo.GANormSqStar
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.Etale.Weakly

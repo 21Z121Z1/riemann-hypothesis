@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.FormMonomialUnitVector
 import ReciprocityTheory.DualLattices.FrobEqOfLe
 import ReciprocityTheory.DualLattices.IsLocalOfIntegers

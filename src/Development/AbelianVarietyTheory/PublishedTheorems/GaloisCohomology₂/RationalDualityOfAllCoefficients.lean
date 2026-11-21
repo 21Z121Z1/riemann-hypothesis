@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LocCoh
 import Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied
 import Mathlib.RingTheory.TotallySplit

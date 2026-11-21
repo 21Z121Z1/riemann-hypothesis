@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.SecondBound
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Window1
 

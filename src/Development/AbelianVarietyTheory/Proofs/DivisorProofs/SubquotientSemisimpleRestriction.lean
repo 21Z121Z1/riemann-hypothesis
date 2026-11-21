@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsUnitarisableOfCharIff
 import Mathlib.RepresentationTheory.Semisimple
 import Mathlib.Topology.Sheaves.Presheaf

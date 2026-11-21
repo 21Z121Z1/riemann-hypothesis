@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StNbarSmooth
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StAPrimeChartMargin
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StNbarLeviChart

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.ScaledBoundInequalityHypothesesOne
 import Mathlib.Analysis.Complex.Schwarz
 import Mathlib.RingTheory.WittVector.IsPoly

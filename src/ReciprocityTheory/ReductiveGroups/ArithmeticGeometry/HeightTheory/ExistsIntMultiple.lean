@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.GaussAbsMulSupportFinite
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.Qdist
 import ReciprocityTheory.SemistableReduction.LatSemiSt

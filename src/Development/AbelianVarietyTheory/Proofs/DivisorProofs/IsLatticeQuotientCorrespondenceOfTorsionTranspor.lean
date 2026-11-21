@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIdeleTranslateIntegralAdditiveTotalPropertiesStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport
 open scoped UpperHalfPlane MatrixGroups Matrix ModularForm ComplexConjugate

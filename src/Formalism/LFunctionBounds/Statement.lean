@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.ZetaNonvanishingChebyshevWeights
 import Mathlib.NumberTheory.MulChar.Duality
 import Mathlib.RingTheory.SimpleRing.Principal

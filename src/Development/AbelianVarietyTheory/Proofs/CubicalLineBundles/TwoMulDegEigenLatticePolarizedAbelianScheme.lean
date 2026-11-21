@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.PrincipalLattices.ConclusionsAtIdentity
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DegEigLatEqOfIso
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ExistsPatOfPolAV

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.BuildCut
 import Mathlib.Algebra.Group.Pi.Units
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant

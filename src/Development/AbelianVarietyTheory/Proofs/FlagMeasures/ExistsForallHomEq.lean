@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataSpaces
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Order.CompletePartialOrder

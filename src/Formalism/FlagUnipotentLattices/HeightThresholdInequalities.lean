@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.HalfDifferenceL1Bound
 
 open Finset MeasureTheory NumberField Matrix

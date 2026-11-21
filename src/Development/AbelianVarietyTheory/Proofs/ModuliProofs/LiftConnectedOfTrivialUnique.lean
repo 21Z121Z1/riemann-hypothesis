@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.LocalTrivialization.ConnectedSpaceTorus
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.WeightBundle
 import Development.AbelianVarietyTheory.Definitions.Uniformization.NotExistsEvenTwistSymOne

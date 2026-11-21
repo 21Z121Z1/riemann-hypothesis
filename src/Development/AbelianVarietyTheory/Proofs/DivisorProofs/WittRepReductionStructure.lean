@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniformizerSeparableReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReductionUniformizerNilpotentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CyclicGeneratorsInvariantTopStatement

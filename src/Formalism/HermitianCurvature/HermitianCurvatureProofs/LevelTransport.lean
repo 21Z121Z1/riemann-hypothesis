@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SiteTransport
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousZetaL
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevTransportHer

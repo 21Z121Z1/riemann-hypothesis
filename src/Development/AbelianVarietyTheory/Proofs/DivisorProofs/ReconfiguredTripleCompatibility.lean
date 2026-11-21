@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DisjointLineMid
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsShear
 open scoped TensorProduct NNReal Matrix

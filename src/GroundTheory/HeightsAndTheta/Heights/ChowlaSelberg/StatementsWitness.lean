@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.Statements
 import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityGalois
 import GroundTheory.GlobalFields.ComplexMultiplication.AlgebraicityDescent

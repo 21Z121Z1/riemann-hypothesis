@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ExistsIsMapToFn
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsChartTransition
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsFlagOfTriangularCharts

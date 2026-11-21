@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.PositiveSignKForm
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsUniqueHalfChar
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.FamilyUnifExpUnique

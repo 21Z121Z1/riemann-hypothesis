@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WeightUpdateAtPlace
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.TminusLinApply
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NatCastInvMemRp

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.RecLevelSym
 import Formalism.LocalToGlobal.Columns.XtSumSingle
 

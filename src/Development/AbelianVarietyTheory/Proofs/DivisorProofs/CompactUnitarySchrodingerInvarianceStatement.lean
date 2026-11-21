@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactUnitarySchrodingerInvariance
 
 open scoped TensorProduct NNReal Matrix

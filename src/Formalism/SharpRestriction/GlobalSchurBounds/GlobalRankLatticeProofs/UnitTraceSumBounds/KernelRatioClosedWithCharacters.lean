@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.SmoothDesignExistence.WithSmOfWithCh
 import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 

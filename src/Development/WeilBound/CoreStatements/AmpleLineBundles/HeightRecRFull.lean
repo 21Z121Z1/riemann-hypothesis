@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightAssemblyFull
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PCentredPlacesFinite
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PCentredRingNormal

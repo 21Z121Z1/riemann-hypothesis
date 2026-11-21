@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.RealGroupsIwasawa
 import GroundTheory.AutomorphicForms.RealGroupsHaar
 import Mathlib.CategoryTheory.Countable

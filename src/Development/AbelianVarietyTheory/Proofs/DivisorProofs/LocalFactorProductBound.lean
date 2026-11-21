@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.ExistsPrimeAbsNormOfHasDirichletDensity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFactorLowerBoundStatement
 import Mathlib.Algebra.Ring.IsFormallyReal

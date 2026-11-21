@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.Statement
 import Formalism.GradedWeylDivisibility.FinalD
 import ReciprocityTheory.ReductiveGroups.SymplecticTraces.WeylCharacters.SqCharA

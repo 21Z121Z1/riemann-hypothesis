@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsWeightOfPointwise
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCuspNe
 

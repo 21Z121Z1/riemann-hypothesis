@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionTwistedLineBundleNonzeroClosedFibre
 open CategoryTheory AlgebraicGeometry ReciprocityTheory.ChartRestriction.G.Out
 set_option maxHeartbeats 1000000 in

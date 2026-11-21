@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.StandardDeltaIntegralCoeffs
 import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.PDescentCutA
 import Formalism.LocalToGlobal.Columns.SummandSlopeOfThreeLemmas

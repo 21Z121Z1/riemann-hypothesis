@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.AlternatingMapSumSmulEqDetSmul
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.OrderOfVanishing.Noetherian

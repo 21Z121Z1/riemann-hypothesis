@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.PartitionSolutions.SplitFacts
 open UpperTheory.V.Cj.A
 open Matrix NumberField GlobalTheory.CuspRep UpperTheory.V.Lit.Dr

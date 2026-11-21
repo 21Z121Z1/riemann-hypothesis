@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResolutionInterpIntegral
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResolutionPotentials
 import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.LogDetSt

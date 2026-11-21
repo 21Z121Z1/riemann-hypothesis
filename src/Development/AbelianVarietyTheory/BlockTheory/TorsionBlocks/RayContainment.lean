@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.ThGerm
 import Formalism.LocalToGlobal.ProjectiveLattices.PetersonNormSubspace
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocMaxIdeals
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StFibreOverFinite
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocIntegral

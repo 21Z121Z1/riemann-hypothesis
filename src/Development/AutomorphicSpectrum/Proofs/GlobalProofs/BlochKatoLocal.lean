@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.RationalDualityOfAllCoefficients
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.TmulOneMemDcris
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.BkMain

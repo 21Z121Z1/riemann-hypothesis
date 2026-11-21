@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.FieldDisc
 import Mathlib.NumberTheory.NumberField.Discriminant.Different
 import Mathlib.RingTheory.TotallySplit

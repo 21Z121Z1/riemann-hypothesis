@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CharpolyReductionGoodPrimeStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ReductionTrivialOnWildInertiaStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsFrobeniusConjInertiaPowModWildStatement

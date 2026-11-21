@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.MapEvalPsPi
 import Mathlib.Data.Nat.Cast.SetInterval
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

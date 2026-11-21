@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsTopWTopWOfExists
 import Mathlib.FieldTheory.Galois.Profinite
 import Std.Tactic.BVDecide.Normalize.Prop

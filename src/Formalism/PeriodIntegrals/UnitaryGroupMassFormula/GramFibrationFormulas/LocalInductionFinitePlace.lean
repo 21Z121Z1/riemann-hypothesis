@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramFibrationFormulas.WeilUnimodularityCriterion
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramFibrationFormulas.GlobalDensityProductFormula
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramFibrationFormulas.FundamentalDomainPigeonhole

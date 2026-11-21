@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleFormBundlePowerOfPosDef
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PushHomBijective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.RelAmpleOfFibres

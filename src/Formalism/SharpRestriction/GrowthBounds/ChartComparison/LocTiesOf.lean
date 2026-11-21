@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocCore
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.LocMore
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.WtTieOf

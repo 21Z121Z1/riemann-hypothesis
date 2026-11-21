@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusUnitaryCharUniqueStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedOrbitalIntegralAsymptoticBoundStatement
 

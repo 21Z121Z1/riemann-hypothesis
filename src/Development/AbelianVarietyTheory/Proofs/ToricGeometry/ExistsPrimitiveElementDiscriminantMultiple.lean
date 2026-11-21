@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.Imports
 import Mathlib.RingTheory.Henselian

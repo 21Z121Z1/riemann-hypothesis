@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.DensConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernMatLinearCombination
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisationDetStatement

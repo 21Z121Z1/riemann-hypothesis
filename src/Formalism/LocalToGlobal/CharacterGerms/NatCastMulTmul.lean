@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrPl
 import Mathlib.NumberTheory.Padics.RingHoms
 import Mathlib.RingTheory.WittVector.IsPoly

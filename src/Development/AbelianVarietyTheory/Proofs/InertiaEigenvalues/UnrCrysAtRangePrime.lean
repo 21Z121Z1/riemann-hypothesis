@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.HostCompletionLeMaxUnramifiedPadicStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChiOneAwayFromTypeStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineLocalCoefficientsStatement

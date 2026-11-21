@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StarMemIntegralLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExponentIntegralValuedStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AuxiliaryPlacesSplitStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StWWRatioBasis
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StMobiusAlgIndep
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsAlgebraicMapAdjoin

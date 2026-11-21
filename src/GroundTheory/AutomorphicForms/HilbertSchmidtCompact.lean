@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HilbertSchmidt
 import Mathlib.Analysis.Normed.Operator.Compact.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

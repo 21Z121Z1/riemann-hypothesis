@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.CocChart
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.SubstCoeRename
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhTwoValHolds

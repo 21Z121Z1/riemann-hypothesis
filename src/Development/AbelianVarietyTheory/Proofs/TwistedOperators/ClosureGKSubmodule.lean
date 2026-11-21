@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdmissibleUnitaryKFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KFiniteOrthogonalComplement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmoothIntertwinerExtension

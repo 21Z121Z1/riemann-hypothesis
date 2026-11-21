@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Statements
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.RingTheory.TotallySplit

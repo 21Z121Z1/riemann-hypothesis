@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PlacesIdempotentMulAbsorbStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SpecialUnitarySupportProductStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactSpecialUnitarySupportStatement

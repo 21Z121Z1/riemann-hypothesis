@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.FmZeroHLatEmpty
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsColumnChainNonempty
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitTwoMulRhoSubTr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatActApply
 import Mathlib.RingTheory.PiTensorProduct

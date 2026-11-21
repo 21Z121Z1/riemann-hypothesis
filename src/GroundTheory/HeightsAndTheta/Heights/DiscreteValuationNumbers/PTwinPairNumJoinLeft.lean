@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsMoreBis
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsTerLast
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.InhabitLine

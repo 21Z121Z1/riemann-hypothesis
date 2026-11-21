@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ParahoricIndexCount.ThetaInjective
 import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.RelIndexMulMeasure
 

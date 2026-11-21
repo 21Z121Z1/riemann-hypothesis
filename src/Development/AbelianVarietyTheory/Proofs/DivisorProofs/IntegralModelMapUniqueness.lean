@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelMapExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelOpenNoetherianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelMapFlatExtensionStatement

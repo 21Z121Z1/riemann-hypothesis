@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.ProjectiveLineNormalFrame
 
 open Matrix GlobalTheory.CompanionTheory.Ar.PB

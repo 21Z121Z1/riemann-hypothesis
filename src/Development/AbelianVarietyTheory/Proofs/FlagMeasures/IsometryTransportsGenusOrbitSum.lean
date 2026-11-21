@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatsDiscStable
 import Formalism.LocalRingCardinality.DataHost
 open scoped Classical ENNReal Pointwise

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocPartMul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemInterConjIff
 open MeasureTheory Matrix

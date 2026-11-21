@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.AbelianOpenPart.OEOsInjective
 import Formalism.DropLevelBounds.ThBounds
 import Formalism.LocalToGlobal.Divisibility.Numbers

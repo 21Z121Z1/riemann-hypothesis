@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.PrimeClassLossHypothesesSatisfiable
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.OneLeThresholdMulPowers
 

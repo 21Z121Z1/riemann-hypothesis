@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SumExpSt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterHypothesisAllPointsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterHeightLtGenusStatement

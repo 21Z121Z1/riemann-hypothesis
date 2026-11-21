@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.AdelicChar
 import Std.Tactic.BVDecide.Normalize.Prop
 

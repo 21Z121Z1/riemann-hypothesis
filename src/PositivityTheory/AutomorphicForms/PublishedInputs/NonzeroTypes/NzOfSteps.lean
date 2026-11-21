@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.FiniteDimensionalTranslationCoordinates
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NzOfTypeData
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.TensorProductVectors

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.NormalFrame0
 import Formalism.LocalToGlobal.IndefiniteReal.ZeroPartEigenvalueConvention
 

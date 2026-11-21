@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.FinalG
 import Formalism.SharpRestriction.CuspSpanNormBounds.HereditaryPositivity
 import Formalism.SharpRestriction.CuspSpanNormBounds.SBridge

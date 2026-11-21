@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
 import Formalism.HermitianLattices.StatementMass
 import Mathlib.Algebra.Module.StablyFree.Basic

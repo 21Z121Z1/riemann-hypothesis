@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilLatticeVacuumEqProdSplitPlaceFactorsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VecOfEqIntertwiner
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationLeOneOfMem

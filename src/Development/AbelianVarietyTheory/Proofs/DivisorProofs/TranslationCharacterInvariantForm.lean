@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzIntegralSuperpositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFamilyPhaseBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzFourierRepresentationStatement

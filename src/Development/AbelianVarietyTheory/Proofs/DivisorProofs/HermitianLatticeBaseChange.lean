@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFamilyBaseChangeExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeFrameBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameLatticeIndexBaseChangePowStatement

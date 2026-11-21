@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.PStarTie
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.CfgTie
 

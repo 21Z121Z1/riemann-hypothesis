@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsHodgeFlagRatioFieldEq
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PBirationalRatioClosure
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFnFieldTrdeg

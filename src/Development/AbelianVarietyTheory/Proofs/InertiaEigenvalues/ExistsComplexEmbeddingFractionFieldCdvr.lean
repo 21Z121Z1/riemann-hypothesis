@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

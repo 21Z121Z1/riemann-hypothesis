@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.LinearCoeffSubstChainRule
 import Formalism.LocalToGlobal.CharacterGerms.RowTieValCr
 

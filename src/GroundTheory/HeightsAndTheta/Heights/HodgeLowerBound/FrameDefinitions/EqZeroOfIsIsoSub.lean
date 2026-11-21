@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.Example
 import Mathlib.Data.Int.Star
 import Mathlib.NumberTheory.Zsqrtd.GaussianInt

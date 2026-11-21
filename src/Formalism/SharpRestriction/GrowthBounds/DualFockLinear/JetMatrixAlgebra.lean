@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.BaseMatrixAlgebra
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.FormCoreSKXOf
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TestSide

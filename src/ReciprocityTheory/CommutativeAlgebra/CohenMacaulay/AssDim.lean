@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ModDepthGE
 import Lemmata.GeneralBFactRest.Imports
 import Mathlib.RingTheory.WittVector.IsPoly

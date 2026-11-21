@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.GenFin
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.VccSpan
 import Std.Tactic.BVDecide.Normalize.Prop

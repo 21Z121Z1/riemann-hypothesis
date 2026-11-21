@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.Imports
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolynomialRouteSubmodule
 import Development.AbelianVarietyTheory.Definitions.Divisors.RegConst

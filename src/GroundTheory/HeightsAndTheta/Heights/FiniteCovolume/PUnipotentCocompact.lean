@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StUnipotentHorizontal
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StUnipotentCentral
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PWittPartner

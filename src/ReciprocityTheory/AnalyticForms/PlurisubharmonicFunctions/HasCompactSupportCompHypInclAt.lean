@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.ContDiffOfContDiffOnZeroOff
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.GreenCoord
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood

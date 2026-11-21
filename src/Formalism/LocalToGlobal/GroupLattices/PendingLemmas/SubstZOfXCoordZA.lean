@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.FormalGroupSystem
 
 open Formalism.MainNotions.G Formalism.MainNotions.FormalGroupSystem Finset

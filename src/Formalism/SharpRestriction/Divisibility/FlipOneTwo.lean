@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.HeightShare
 import Formalism.SharpRestriction.Divisibility.ProductFirstParts
 import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne

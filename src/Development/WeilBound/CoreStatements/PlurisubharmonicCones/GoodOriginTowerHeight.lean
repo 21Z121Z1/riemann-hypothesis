@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.LvExtCancel
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.MhChange
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.PullDegSum

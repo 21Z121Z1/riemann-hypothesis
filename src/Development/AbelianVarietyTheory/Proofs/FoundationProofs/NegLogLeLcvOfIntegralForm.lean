@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.LocBasis
 import Formalism.PairingDivisors.PairingDivisorProofs.SumValuationNat
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst

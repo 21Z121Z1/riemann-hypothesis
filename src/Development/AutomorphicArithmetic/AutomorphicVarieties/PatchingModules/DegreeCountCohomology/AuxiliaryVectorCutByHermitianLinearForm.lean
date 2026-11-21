@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DegreeCountCohomology.FinAm
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.FrobFormTrunc
 import Mathlib.NumberTheory.Padics.RingHoms

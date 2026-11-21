@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.AmpleLineBundles.SquareZeroDeformationAdditivity
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsCocharLieLieModel
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.DetNeZeroOfIsWittBasis
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HypsSatisfiable
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DarbouxBasisAdaptedCoordinatesStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.TwoIrr
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.PtLift
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.PtActInternal

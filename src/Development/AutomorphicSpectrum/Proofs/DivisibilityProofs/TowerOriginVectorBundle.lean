@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HodgeTieGaloisStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTiesDistinctGenericStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RootModelOriginCompatibilityStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.AverageDerivativeL1Bound
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousOnFderivApply
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FderivZeroApply

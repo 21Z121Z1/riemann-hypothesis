@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc
 import Mathlib.FieldTheory.Galois.Profinite
 import Mathlib.RingTheory.Frobenius

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimeMulBernoulliMem
 
 open Finset GlobalTheory.KummerEisensteinGalois GlobalTheory.EisCong

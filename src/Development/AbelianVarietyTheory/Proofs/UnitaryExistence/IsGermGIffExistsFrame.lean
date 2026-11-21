@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.PrimitiveGermFrames
 import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDJet

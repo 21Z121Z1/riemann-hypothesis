@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.Inputs
 import Formalism.LocalToGlobal.ExponentGrids.SecondComplementClosedValuation
 

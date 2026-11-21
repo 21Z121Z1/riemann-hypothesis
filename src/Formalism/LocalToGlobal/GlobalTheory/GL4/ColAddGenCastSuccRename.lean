@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.StatementW
 import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 

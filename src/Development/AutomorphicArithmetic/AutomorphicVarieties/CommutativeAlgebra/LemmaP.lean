@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedUniv
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedGrading
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.FramedTangent

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PairingDivisors.PairingDivisorProofs.Height
 
 open Module NumberField IsDedekindDomain Finset

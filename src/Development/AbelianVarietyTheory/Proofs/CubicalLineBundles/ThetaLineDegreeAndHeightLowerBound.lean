@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.KeyFormulaPowAndDegree
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ThetaLineDualDegreeOfKeyFormulaPowerFormStatement
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.ThetaPolynomialLowerBoundOfThetaLineDegreeStatement

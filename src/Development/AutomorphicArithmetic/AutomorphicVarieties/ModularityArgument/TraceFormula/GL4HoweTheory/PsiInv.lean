@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.TraceFormula.GL4HoweTheory.GalIsom
 import Development.DiscreteGroups.GlobalIrreducibility.ExistsUniformizerValuation
 import Mathlib.Data.Int.Star

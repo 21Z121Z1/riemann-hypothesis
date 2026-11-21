@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.DedekindDomain.Different

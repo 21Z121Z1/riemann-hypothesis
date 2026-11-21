@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.InstCMHostS
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply
 

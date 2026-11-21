@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ReductionIdele
 import Development.AbelianVarietyTheory.Definitions.Foundations.AbsCharNotUnitary
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsCompleteIsAlgClosedAddValuation
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeVal
 import Formalism.LocalToGlobal.CharacterGerms.HostTraceIdentity

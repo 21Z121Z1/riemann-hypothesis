@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.VacuumValueAlgebraicCongruenceStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilActionSplitSupportStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaExpansionRationalPointsStatement

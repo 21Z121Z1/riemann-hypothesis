@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullConeNullModP
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPullConeNull
 import Mathlib.RingTheory.PicardGroup

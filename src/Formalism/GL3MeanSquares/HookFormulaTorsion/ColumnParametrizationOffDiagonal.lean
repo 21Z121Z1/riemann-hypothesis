@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.IntegralMultipleNormLowerBound
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.WittVector.IsPoly

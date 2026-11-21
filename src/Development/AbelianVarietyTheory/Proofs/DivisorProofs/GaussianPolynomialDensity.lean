@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTendstoOfPointwiseUniformBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTaylorSeriesConvergesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzTaylorPartialSumDerivBoundStatement

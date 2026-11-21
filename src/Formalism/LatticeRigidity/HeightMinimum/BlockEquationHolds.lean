@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LatticeRigidity.StatementA
 
 namespace Formalism.SA.P

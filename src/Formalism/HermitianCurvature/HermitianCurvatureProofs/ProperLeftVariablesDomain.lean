@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceIntegralJacobianFactor
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PbWords
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AsmCastMCastM

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.ClosedEmb
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.StabClosed
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.EmbMMul

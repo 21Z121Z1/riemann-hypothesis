@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.StatementA
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.ABridge
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.HostConj
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.InvMemRl
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.Rigid0
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.TanDet
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.NormCob

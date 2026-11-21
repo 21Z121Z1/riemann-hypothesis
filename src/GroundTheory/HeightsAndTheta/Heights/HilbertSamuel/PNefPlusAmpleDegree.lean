@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNefPlusAmpleDegree
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenDegAmple
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PShiftDegreePolynomial

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PIntDomainDim
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PEvalKerKrullDim
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PFibreMultiHomog

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.NMjT
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeFamilyAdoptionFirstStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeFamilyAdoptionSecondStatement

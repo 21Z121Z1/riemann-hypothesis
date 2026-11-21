@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IwasawaMeasureExistence.RiemHaarOfSteps
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.TestFnConstTermVanishX
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricExpansionOfParts
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceInputsImplyCuspidalTrace

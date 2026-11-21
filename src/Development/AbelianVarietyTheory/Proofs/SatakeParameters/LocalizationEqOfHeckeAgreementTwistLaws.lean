@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.CommutingEndomorphismCondition
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedHecke
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary

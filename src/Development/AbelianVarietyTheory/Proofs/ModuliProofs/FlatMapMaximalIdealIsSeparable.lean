@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLocalUnramifiedOfIsIndEtale
 import Mathlib.Algebra.Category.Ring.FinitePresentation
 import Mathlib.RingTheory.Etale.Weakly

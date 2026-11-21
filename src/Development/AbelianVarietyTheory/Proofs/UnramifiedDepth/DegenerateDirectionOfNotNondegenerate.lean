@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CubWeilOfInjective
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.FBMapPf
 set_option autoImplicit false

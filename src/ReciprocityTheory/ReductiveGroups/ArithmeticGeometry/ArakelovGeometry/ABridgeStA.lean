@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.IsBergDensity
 import Mathlib.Topology.Algebra.MvPolynomial
 import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.BergmanDefs

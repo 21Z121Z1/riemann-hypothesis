@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.UnitsLiftSpec
 import Formalism.LocalToGlobal.NumberFieldFamilies.JMtInjective
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd

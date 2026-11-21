@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeometricSideEstimates.SumDer
 import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
 open UpperTheory.V.Lit.Geo

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.PKaPSplit
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.PKaPInert
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.PKaPBound

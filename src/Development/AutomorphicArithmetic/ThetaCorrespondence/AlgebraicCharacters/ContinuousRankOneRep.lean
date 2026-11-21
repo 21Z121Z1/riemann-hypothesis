@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.ChBasic
 import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.ChCoef
 import Development.AutomorphicArithmetic.ThetaCorrespondence.AlgebraicCharacters.EmbOrbitAlt

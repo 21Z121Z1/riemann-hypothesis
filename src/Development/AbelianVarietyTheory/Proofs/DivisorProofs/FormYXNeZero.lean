@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsCuspW
 import Mathlib.RingTheory.Finiteness.ModuleFinitePresentation
 open scoped TensorProduct NNReal Matrix

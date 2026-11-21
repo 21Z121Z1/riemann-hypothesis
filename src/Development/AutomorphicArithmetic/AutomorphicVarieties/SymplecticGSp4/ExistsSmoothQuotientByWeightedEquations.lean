@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ChartCut
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ChartKer
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.ChartGr

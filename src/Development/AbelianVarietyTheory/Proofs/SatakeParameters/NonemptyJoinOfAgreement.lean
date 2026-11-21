@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FormAtEachLocationStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsCanonicalModuleSuccessorStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ThetaModuleOfCanonicalStatement

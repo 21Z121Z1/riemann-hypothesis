@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishingEverywhereOfRegularAlteration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyArithDimension
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackCoverGenericPoint

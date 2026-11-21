@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsSmulMemSupLattice
 
 open NumberField IsDedekindDomain Formalism.IndefR.Arith

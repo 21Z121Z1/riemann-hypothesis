@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroup
 import GroundTheory.LocalFields.FormalGroups.Basics
 import Mathlib.Algebra.AffineMonoid.Basic

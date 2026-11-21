@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ScalarCommuteTransposedRMatrixEntry
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelCoordinatesCommute
 import Formalism.HermitianCurvature.CompositeFormulaLevelZero

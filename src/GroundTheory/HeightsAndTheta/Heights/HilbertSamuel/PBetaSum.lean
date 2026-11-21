@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsLattice
 import Mathlib.Analysis.SpecialFunctions.Gamma.Beta
 set_option maxSynthPendingDepth 1

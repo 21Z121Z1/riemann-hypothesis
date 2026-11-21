@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.ExistsClmOfI
 import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
 

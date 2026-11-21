@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormFsvSubOnePow
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveDifferenceForm
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpSActPS
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.BqOriginSt
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhOneValSt

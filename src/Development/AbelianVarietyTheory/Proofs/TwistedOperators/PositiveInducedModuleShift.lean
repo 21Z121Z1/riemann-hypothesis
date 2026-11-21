@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.LanglandsClassification
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsometryIntertwinesEnvelopingStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RefineIsotropicFlagStatement

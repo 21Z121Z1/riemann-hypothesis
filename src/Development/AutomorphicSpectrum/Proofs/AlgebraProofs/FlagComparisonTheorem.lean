@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.InvolutionPermApplyZero
 import Development.AbelianVarietyTheory.Counterexamples.UpperHalfSurvey.HasColenNotUniqueWithoutGuard
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.PolarisedFlagStatement

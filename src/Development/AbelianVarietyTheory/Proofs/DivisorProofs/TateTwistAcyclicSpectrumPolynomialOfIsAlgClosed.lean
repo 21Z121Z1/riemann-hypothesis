@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothAffineCurveEtaleCohomologicalDimensionLeOnStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KummerVanishingStatement
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

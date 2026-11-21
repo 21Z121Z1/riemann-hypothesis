@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.FilteredHomology
 import Mathlib.RepresentationTheory.Coinduced
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Functoriality

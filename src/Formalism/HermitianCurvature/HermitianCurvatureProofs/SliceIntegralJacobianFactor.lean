@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LeftFubiniNormalizedTower
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NegMulCCancel
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GeometryOfNumbers.PluriharmonicAnalysis.DiscSt
 import Mathlib.Topology.Separation.CompletelyRegular
 

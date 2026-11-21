@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HilbertEisensteinFourierCoeffRingEquivConj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaFactorPowTwoMul
 open NumberField UpperHalfPlane GlobalTheory.HilbFam GlobalTheory.QFam

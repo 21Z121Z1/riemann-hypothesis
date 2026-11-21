@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementG
 import Formalism.ThetaLogCoordinates.TraceIsometryWeights.StatementF
 

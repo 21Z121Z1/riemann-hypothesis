@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualTopSimpleStacked
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedGraph
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassFibreDegree

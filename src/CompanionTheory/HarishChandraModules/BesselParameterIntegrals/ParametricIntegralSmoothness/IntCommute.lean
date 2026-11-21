@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.BesselNonvanishingReduction
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SigmaFiniteQuotients.Exists
 import CompanionTheory.HarishChandraModules.BesselParameterIntegrals.SmoothCyclicVectors.SmoothCyc

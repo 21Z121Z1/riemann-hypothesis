@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassGenusRestrictedProduct
 open GlobalTheory.HL
 open scoped ENNReal Classical

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFunctionalTwoSidedStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselFolnerOverlapAverageTendstoFormStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HsNormSqIintLeLiminfStatement

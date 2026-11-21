@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimContinuousNormLeOnIccOfDetermined
 open NumberField MeasureTheory GlobalTheory.CuspRep GlobalTheory.HCF Topology
 set_option maxHeartbeats 1000000 in

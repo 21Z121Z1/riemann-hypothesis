@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.PTwistedDualGensExist
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ChartBundleBaseExtension
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemSpanOfTwistedDualGens

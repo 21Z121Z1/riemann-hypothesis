@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.Imports
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.RelStable
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.RadSph

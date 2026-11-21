@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionPoints
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionGauss
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.ReductionTorsion

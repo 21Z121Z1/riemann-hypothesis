@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.VanishingGramTermsBoundParams
 open Formalism.BasicNotions Formalism.MainNotions.S GlobalTheory.Core.Rk
 

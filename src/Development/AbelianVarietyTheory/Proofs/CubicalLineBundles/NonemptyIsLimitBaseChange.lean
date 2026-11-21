@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.BCTools
 import Mathlib.AlgebraicGeometry.AffineTransitionLimit
 import Mathlib.CategoryTheory.EffectiveEpi.Comp

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.UniversalGeneratorsOfUnits
 import Formalism.SharpRestriction.LevelLetterCocycles.UniversalGeneralOfInverseLevels
 

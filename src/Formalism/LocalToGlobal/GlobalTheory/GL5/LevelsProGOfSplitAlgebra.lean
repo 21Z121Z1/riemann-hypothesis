@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.TrivialTransfer.SmallOrderPrimeLogSumBound
 import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
 import Mathlib.Topology.Connected.Separation

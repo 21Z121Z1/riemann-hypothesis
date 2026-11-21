@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermitianIdempotentEqIsometryMulConjTranspose
 import Formalism.RealPlaceAnalysis.Complexify
 import Mathlib.RingTheory.PiTensorProduct

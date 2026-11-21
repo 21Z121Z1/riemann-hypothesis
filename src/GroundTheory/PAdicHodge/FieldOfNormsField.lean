@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.FieldOfNormsRing
 import Mathlib.Data.Int.Star
 set_option maxSynthPendingDepth 1

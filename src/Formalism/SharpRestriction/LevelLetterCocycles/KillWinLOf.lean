@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsGammaPi0EqPi0Mul
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalInputsFromLiterature
 

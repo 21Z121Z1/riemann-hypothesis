@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsGrpPullback
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Functor
 import Mathlib.RingTheory.WittVector.IsPoly

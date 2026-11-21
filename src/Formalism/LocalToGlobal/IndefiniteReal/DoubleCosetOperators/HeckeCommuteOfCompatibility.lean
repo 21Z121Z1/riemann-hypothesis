@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.KpqSubgroupCompact
 import Formalism.SharpRestriction.LevelLetterCocycles.LatticeVariant
 import Formalism.LocalToGlobal.IndefiniteReal.SubgroupCharExtensionOneApply

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.RamifiedCoefficientChains
 import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.LagrangeIdealSgProof
 import Formalism.TruncatedSeriesCounting.EtaDeterminantPolynomialIdentities

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RealPlaces.HomologyMapProdFstProdLeftHomology
 import GroundTheory.ProfiniteCohomology.PoincareDuality.DeltaPairing
 import GroundTheory.ProfiniteCohomology.RealPlaces.ConeMap

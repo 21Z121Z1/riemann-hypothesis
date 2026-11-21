@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ZeroFreeRegion.LogDerivRegion
 
 open Complex Filter Topology

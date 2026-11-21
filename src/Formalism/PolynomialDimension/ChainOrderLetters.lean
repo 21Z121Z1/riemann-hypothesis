@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.StatementTM
 import Formalism.PolynomialDimension.DigitSumValuationBound
 

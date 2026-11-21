@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.WindowSettingSatisfiable
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.AdmissibleSchurLemma
 import Mathlib.Analysis.SpecialFunctions.Log.Monotone

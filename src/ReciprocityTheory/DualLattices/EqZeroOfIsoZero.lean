@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.AvgFZero
 import ReciprocityTheory.DualLattices.EigenLiftsFrobeniusStatement
 import ReciprocityTheory.DualLattices.EmbeddingSeparatingGroupStatement

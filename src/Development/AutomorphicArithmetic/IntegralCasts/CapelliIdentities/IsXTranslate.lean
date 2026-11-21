@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.InductionEstimates.IwahoriBlocks.IwahoriCentralBorel.LevLaws
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MeanValueUniqueness
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsOpenRightInvariance

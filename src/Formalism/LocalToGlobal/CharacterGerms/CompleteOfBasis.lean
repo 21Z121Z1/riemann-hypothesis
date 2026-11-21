@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.MiscLemmasH.Imports
 import Mathlib.Tactic.Polynomial.Basic
 

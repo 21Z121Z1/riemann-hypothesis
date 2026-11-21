@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsIsoMorphismRestrictOfIsHomId
 open AlgebraicGeometry CategoryTheory Limits GlobalTheory.ZH
 set_option maxHeartbeats 1000000 in

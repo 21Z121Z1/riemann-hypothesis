@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CyclotomicCharacters.Character
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ContinuousToZModPow
 import Mathlib.Algebra.Group.Pi.Units

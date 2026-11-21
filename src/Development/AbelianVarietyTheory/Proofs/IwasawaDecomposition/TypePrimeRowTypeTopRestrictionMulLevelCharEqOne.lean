@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftsInvOne
 import Formalism.LocalToGlobal.Columns.ChainLawTw
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemZmuOfPowPred

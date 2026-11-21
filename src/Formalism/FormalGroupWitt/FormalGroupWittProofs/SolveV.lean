@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalGroupWitt.SubstInjectiveV
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.ReduceModChar

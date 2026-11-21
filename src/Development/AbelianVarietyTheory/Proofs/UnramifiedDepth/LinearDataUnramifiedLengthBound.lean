@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.LengthDegreeAbelianVariety
 import ReciprocityTheory.DualLattices.FrobeniusOfGroupDivisorsRank
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.HasLenExistsMonoFp

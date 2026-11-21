@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AdelicQuotients.NormGaloisSmulAdeleComponentAtSmulPlace
 import GroundTheory.AutomorphicForms.AffineBruhat
 open NumberField IsDedekindDomain Polynomial

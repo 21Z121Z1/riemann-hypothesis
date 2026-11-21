@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.FactorOverLocalSubalgebraMonic
 import Formalism.PadicSubsetSums.StableGradedCounts.ZReuse
 import Formalism.PadicSubsetSums.StableGradedCounts.ZCircleCharExtends

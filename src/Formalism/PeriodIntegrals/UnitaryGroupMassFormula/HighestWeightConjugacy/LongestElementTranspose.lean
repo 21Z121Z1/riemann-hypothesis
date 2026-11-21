@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Data.Matrix.PEquiv
 import ReciprocityTheory.Automorphisms.Unitary
 

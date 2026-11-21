@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Analysis.Matrix.Order
 import ReciprocityTheory.L2DbarEstimates.JacobianInterpolationStatement
 

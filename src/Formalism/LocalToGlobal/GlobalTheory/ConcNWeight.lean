@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.IrreducibleOfCountSizes
 import Formalism.PadicSubsetSums.StableGradedCounts.PropertyWOfEstimates
 import Formalism.SharpRestriction.LevelLetterCocycles.PlaceLabelTeichmuller

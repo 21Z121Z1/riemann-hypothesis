@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HarishChandraCentre.RepBase
 import GroundTheory.AutomorphicForms.HarishChandraCentre.FischerForm
 import Mathlib.Algebra.Order.Ring.Star

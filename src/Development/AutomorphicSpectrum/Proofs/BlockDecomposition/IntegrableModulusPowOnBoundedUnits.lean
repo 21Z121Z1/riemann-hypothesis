@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.GeometricSumBelowThreshold
 import GroundTheory.LocalFields.LocalFourierMult
 import GroundTheory.LocalFields.LocalZetaShell

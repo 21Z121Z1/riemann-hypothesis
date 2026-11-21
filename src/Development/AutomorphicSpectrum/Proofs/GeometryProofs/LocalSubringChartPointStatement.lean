@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LocalSubringChartPoint
 open AlgebraicGeometry CategoryTheory Limits GlobalTheory.CompanionTheory.Ar
 set_option maxHeartbeats 1000000 in

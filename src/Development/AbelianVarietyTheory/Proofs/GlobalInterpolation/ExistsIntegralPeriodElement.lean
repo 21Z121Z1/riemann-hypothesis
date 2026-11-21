@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.EquidistributedConjugates
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PeriodLatticeAgreement
 import Formalism.GL3MeanSquares.HookFormulaTorsion.FourFoldOrthogonalSum

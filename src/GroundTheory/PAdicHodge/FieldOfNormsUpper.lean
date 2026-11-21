@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.ConductorTransport
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.FieldTheory.Galois.Profinite

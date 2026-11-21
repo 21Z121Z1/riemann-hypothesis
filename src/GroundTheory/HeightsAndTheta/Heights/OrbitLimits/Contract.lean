@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.MixedDiscEqZeroOfMulVec
 import GroundTheory.HeightsAndTheta.Heights.Intersections.EqZeroOfEventuallyEval
 import GroundTheory.HeightsAndTheta.Heights.Intersections.LeviOfRealSmulRight

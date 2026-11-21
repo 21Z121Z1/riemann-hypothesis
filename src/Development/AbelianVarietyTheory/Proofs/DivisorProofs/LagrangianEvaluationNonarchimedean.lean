@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.ExistsCrystalPairing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticCurveGoodReductionModelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentPullbackEllipticModelStatement

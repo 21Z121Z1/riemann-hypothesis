@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.RootInCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankIInfKerSemilinear
 import Development.AbelianVarietyTheory.Definitions.Foundations.CanonicalExponents

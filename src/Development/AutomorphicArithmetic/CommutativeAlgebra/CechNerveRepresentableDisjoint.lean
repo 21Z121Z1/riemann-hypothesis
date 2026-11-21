@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalMapMul
 import Mathlib.CategoryTheory.Limits.Indization.LocallySmall
 import Mathlib.Order.CompletePartialOrder

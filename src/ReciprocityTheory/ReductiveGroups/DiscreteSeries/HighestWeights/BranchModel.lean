@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PolyCoef
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.UnitaryDense
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HwIrred

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedPrincipalSeriesNonzeroAtOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalSeriesCoordinateLocallyConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedPrincipalSeriesNoInvariantStatement

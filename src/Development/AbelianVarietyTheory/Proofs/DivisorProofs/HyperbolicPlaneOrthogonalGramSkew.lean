@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneOrthogonalGramRestriction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsConstAlong
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatIsLevi

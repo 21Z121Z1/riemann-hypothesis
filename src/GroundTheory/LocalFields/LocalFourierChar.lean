@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.LocalFourierHaar
 import GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality

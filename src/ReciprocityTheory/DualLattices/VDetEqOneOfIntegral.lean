@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.NearIdentityColengthStatement
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Order.CompletePartialOrder

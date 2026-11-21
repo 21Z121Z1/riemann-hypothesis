@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SigmaFiniteAndIsInvInvariantOfContinuousIntegrab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralIdeleMajorantFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAHaarMeasureUnfoldStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HenselianLocalRingOfIsAlgClosed
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyClosedAnalyticNonemptyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDoubledDarbouxCoordinatesStatement

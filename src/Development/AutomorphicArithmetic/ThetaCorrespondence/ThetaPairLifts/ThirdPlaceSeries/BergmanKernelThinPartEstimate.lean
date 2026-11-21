@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CardMulSuccLeTwoMulNcolCopy
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.CuspFormBoundedOnFrames
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameExponentialVolumeLarge

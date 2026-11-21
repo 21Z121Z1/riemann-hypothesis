@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.HeckeCharacterChoice.LtHalfPredOfLog
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.Cyclotomic.Gal

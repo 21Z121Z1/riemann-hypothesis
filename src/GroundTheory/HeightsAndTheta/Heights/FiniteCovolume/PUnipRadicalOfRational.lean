@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StUnipRadicalOfRational
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PScalingLaw
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PHermAtPlace

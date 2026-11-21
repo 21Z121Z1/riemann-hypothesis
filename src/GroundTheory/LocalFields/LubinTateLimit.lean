@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.LubinTateLimitGalois
 import GroundTheory.LocalFields.LubinTateUnramified
 import GroundTheory.LocalFields.MaximalUnramified

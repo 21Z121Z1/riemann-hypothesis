@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.IdxCalc
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IndexCalculation.SmulMemSpanSmul
 import Mathlib.RingTheory.RegularLocalRing.Defs

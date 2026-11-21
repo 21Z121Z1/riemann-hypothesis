@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasFDerivAtOfContinuousPartials
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

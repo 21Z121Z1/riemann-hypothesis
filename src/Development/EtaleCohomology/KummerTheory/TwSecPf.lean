@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.KummerTheory.TwSecPfGamma
 import Development.EtaleCohomology.KummerTheory.InjSlice
 

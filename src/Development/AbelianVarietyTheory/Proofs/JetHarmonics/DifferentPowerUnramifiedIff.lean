@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SplitUnramifiedPlaces
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.RegularLocalRing.Defs

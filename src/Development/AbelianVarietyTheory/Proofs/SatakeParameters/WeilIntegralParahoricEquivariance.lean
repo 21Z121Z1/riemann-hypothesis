@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.XMemOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsAffCoverSpec
 

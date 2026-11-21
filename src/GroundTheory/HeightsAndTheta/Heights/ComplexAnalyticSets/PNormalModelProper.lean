@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalModelProper
 import Mathlib.Analysis.Polynomial.CauchyBound
 import Mathlib.Tactic.Monotonicity.Lemmas

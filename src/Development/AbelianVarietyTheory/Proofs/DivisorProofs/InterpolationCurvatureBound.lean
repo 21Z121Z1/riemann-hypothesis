@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InterpolatedMetricCurvatureBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogMetricGradientFormBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CutWeightContDiffOnMemIcc

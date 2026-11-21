@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.InflationRestriction
 import GroundTheory.ProfiniteCohomology.Factor
 import GroundTheory.ProfiniteCohomology.CupProducts.Cocycles

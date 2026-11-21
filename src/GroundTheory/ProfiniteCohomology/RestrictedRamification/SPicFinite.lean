@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicDefs
 import GroundTheory.GlobalFields.SUnits
 import Mathlib.Algebra.Order.Ring.Star

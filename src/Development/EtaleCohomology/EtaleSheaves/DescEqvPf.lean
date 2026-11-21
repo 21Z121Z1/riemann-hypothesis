@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.ClsBiprodEqZero
 import Development.EtaleCohomology.EtaleSheaves.LeafCover2Of
 import Development.EtaleCohomology.EtaleSheaves.LeafKunEmptyPf

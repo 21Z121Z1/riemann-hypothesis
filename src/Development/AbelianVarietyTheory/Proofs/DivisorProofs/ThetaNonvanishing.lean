@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BigConstantTermConeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallConstantTermConeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticNonvanishingStatement

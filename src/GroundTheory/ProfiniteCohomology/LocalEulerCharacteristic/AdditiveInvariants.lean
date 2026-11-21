@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.AdditiveDefs
 import Mathlib.RepresentationTheory.Invariants
 import Mathlib.RingTheory.SimpleRing.Principal

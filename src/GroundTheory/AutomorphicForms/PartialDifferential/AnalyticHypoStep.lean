@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.PartialDifferential.SqrtSumPdTMulSubLe
 import Mathlib.Topology.UniformSpace.Uniformizable
 

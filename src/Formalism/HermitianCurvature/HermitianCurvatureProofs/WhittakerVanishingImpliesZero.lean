@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RemainderNormLeStrictUpper
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic.ENatToNat

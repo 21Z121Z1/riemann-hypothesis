@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.PHeisFCA
 import Formalism.LocalToGlobal.IndefiniteReal.IsWeilDatum
 

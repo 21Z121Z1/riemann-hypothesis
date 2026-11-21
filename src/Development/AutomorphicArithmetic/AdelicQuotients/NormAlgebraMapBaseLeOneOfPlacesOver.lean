@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.SemilocalAlgebras.ContinuousCompletionMap
 import Mathlib.Algebra.AffineMonoid.Basic
 open NumberField IsDedekindDomain Polynomial

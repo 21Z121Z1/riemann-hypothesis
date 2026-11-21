@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecondCountableTopologyOfIsProjOver
 import Development.AbelianVarietyTheory.Definitions.Divisors.QuasiRegularAlongOfEtale
 import Development.AbelianVarietyTheory.Definitions.Divisors.LinearIndependentBasisCoords

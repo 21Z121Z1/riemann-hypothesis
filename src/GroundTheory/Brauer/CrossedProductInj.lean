@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.Brauer.CrossedProductMaps
 import GroundTheory.Brauer.SkolemNoether
 import GroundTheory.Brauer.IsBrauerEquivalentIffNonemptyAlgEquiv

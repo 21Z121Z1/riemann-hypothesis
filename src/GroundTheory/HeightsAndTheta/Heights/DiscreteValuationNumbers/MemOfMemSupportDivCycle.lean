@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.MultihomogeneousIdeals.IsFieldIntersection
 import Mathlib.RingTheory.KrullDimension.Polynomial
 import Std.Tactic.BVDecide.Normalize.Prop

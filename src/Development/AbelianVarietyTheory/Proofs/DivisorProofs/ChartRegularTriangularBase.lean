@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartRegularMinorNormsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MinorBoundsOnChartOpenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TriangularChartMinorComparisonStatement

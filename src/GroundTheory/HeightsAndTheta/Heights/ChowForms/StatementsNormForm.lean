@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.MvPolynomial.Division
 import Mathlib.Algebra.Order.Floor.Extended

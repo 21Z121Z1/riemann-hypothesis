@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.PartialDifferential.AnalyticHypoCutoff
 import Mathlib.Analysis.Real.Pi.Bounds
 

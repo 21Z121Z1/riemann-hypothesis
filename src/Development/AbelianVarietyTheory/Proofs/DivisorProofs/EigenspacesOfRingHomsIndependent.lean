@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SandwichMaps
 import Mathlib.LinearAlgebra.Eigenspace.Pi
 import Mathlib.RingTheory.Etale.Weakly

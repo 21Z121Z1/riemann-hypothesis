@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
 import Mathlib.AlgebraicGeometry.Geometrically.Integral
 import Mathlib.FieldTheory.PurelyInseparable.Exponent

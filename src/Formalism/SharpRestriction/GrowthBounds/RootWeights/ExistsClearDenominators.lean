@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactLeftAltForm.MQ
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.OperatorsKillInvariantProjection
 import Mathlib.Algebra.Module.Lattice

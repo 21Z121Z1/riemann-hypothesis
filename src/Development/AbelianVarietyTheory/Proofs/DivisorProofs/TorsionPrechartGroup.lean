@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAlgHomCompEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionChartRangeInjectiveEmbeddingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInjectiveEmbeddingMinimalPrimeStatement

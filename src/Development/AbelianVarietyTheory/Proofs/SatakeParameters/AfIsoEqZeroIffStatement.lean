@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.AfIsoEqZeroIff
 open NumberField IsDedekindDomain Formalism.L2.DIV
 open scoped TensorProduct

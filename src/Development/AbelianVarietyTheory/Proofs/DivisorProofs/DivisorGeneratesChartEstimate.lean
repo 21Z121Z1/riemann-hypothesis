@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorGeneratorRootExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormBoundedByPositivePotential
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TruncatedPotentialSmooth

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.SmulMemTrpSet
 
 open NumberField IsDedekindDomain Module

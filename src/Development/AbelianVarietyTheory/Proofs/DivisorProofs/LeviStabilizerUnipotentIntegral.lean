@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfSig
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineStabilizerOrthogonalActionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineStabilizerOrthogonalUniqueStatement

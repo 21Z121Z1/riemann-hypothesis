@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsItWOfGlobIt
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RealPlaceStdParamIsParam
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AbsSubOfDisjoint

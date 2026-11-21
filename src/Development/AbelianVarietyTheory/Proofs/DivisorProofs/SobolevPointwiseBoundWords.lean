@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousSlice
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LintegralCompactLe
 import Mathlib.Data.Set.Finite.List

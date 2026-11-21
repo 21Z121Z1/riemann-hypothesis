@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Statements.AlgebraStatements.HodgeTateNormComparison
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HodgeTateChartDualPairingStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HodgeTateChartTestPointStatement

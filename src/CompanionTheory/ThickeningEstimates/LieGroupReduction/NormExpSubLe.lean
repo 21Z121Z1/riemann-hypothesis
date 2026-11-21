@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.IsoOfIntegral
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.HasDerivAtSchwartzToL2
 

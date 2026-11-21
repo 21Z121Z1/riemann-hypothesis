@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.FrameTraceRatioFinEquiv
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 

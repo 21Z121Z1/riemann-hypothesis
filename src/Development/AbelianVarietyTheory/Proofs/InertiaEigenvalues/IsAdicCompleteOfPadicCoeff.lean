@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.TraceFormulas.LatDefs
 import Mathlib.RingTheory.AdicCompletion.Noetherian
 open ReciprocityTheory.ChartRestriction.T2

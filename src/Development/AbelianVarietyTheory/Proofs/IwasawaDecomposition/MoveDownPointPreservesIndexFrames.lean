@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.TiedUpDnLoc
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.PredMemGamRanks
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormPowLeOfEigenvaluesLt
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactKm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeckeOperatorExists

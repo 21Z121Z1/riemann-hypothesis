@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RealPlaces.OrderTwoTate
 import GroundTheory.ProfiniteCohomology.PoincareDuality.Torsion
 set_option maxSynthPendingDepth 1

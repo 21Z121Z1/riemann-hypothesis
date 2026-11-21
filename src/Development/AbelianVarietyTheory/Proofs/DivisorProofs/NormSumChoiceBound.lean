@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.Imports
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.ImportsTer
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.ImportsBis

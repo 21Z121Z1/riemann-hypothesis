@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TieTwRecOf
 import Formalism.LocalToGlobal.BaseRankEqOfRealisation
 import Formalism.LocalToGlobal.Wire4F

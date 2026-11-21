@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneLeDimAtStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExactRatioOfFundamentalDomainStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogMeasureRatioLeStatement

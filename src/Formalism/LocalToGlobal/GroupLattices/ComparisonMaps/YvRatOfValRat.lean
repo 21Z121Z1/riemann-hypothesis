@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.OperatorsPreserveLattices
 import Mathlib.Algebra.Module.StablyFree.Basic
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NatCastMemPlaceAt
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsIsScalar
 

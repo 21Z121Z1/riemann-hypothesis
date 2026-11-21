@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusPowerEmbedding
 open Formalism.BasicNotions Formalism.BasicNotions.DV Formalism.DegreeFormula
 set_option maxHeartbeats 1000000 in

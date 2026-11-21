@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricPullbackDualFramesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelHeightComparisonStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalModelHodgeHeightStatement

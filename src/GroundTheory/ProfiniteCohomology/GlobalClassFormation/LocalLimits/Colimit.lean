@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.ApplyCompletionEmbeddingOfLocalDecompHomEqOne
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.IdeleLimits.LocalTransition
 import GroundTheory.ProfiniteCohomology.Factor

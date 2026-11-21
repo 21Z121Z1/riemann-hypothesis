@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.LocDensPos
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.LBSubm
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.ToricVarieties.Affine
 set_option maxSynthPendingDepth 1
 

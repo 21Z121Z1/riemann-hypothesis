@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.HLatOpsP
 import Formalism.QuotientMetricDivisors.Statement
 open Module NumberField IsDedekindDomain Formalism.BasicNotions Formalism.DivisionValues

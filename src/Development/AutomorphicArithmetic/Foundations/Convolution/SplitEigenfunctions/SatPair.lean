@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.SplitEig
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RDualC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAveragingProjection

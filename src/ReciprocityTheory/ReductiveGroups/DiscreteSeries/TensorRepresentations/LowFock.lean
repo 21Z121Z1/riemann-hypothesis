@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.LowFockC
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.LowFockD
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.LowFockE

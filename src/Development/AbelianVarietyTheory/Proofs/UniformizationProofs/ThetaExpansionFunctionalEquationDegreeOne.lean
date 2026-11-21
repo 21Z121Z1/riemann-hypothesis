@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsUniquePullB
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FamFEOneOfPsiRel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpFOneDimStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactRightBisForm.Imports
 import Formalism.GradedWeylDivisibility.StatementA
 import Mathlib.RingTheory.WittVector.IsPoly

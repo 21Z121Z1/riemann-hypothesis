@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaSupremumBounds.StatementCB
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DescendedNorm
 import Formalism.ThetaSupremumBounds.LiftOperatorBoundOfFockJet

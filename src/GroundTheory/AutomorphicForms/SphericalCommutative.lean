@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.Cartan
 import GroundTheory.AutomorphicForms.HeckeAlgebraLevel
 import GroundTheory.AutomorphicForms.MeasuresModulus

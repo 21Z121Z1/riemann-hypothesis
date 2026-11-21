@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.PropsKfin
 import Development.AbelianVarietyTheory.Definitions.Divisors.TCoefMInMMul
 import Mathlib.Topology.Algebra.MvPolynomial

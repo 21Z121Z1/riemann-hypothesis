@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Formalism.RealPlaceAnalysis.FinalF
 import Formalism.FormalDegreeBessel.FinalG

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.CartanFactorisation.FockSecondActionMatrixUnitEq
 import Development.WeilBound.ThetaLifts.Reductions.LocalPoly
 import Development.WeilBound.ThetaLifts.Reductions.TensJoin

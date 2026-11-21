@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsClosedPointConeCoord
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.KrullDimension.NonZeroDivisors

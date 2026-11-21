@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.TransferMemBlochKatoCocycles
 import Development.AutomorphicArithmetic.ResidueCharacters.TbTop
 import Development.AutomorphicArithmetic.ResidueCharacters.TwistDef

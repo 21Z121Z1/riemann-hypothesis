@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeEmbedSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeDecompSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.KHFreeIndepSt

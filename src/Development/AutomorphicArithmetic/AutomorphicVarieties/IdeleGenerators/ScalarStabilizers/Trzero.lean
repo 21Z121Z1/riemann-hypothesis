@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsUniqueIdeleOfLinearEquivQuotientLocal
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RChar2
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RealCusp

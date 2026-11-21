@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.ComplexLatticeClosure.IsLatClosure
 import Formalism.LocalToGlobal.TorsionIntegrality.ComplexLatticeClosure.ExistsInitialThetaValue
 import Formalism.LocalToGlobal.GlobalTheory.GL3.CubicFields.PeriodRelations.BrLamConjEq

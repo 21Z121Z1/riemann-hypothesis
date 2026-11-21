@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CuspidalSectionBoundedNonzeroMultiple
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BddGoodOfBddAll
 import Formalism.LocalToGlobal.ProjectiveLattices.ModelAt

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.PublishedTheorems.Geometry₂.NefRR
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspClausesOfNineGeoU
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal

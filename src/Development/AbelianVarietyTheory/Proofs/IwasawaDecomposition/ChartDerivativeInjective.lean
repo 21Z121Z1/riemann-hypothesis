@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvaluationHolomorphicOnFramesStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MatrixFamilyCriticalRowsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PeriodTransformationUnitaryStatement

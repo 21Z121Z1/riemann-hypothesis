@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.SkodaWeights.Matrix
 import ReciprocityTheory.L2DbarEstimates.LeviForms.OfRealNormSqSumMul
 import Mathlib.Analysis.InnerProductSpace.Calculus

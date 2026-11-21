@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalLattices.LatDefs
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 import Mathlib.NumberTheory.LocalField.Basic

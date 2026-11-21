@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsSeriesOfTorsionCharacters
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsTateOfCharacter
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsWeilChar

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.CoordinateIdeals.MemMCoordIdealOfAevalEqZero
 import GroundTheory.HeightsAndTheta.Heights.Intersections.Statements
 import Mathlib.Algebra.Ring.IsFormallyReal

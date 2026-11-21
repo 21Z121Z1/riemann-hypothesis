@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BasisBOfBcOn
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CapOAffine
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LiftPOfBounds

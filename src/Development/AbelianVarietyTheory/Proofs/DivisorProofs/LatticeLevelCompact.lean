@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLatLevel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalLatticeIsClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePreservingAdelicMatrixBoundedStatement

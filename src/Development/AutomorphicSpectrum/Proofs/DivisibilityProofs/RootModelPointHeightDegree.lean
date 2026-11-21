@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.ArithIntersectionMultilinearSlotStatement
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PZhangLowerX
 

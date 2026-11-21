@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelCoordinatesCommute
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.GammaFamilyCommuteGenerators
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TransferRtt

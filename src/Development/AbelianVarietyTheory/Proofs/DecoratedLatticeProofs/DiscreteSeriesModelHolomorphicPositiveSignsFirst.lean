@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HolomorphicLowestType
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSLowK
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TwistedLevelValues

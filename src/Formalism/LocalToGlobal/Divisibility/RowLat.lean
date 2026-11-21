@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.GoodPartHermitianSpec
 import Formalism.LocalToGlobal.Divisibility.Frames
 import Formalism.LocalToGlobal.Columns.HeckeSp

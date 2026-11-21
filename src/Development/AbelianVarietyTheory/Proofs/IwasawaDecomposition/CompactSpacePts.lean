@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.MemRangeCompIffOfIsClosedImmersion
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.Order.Filter.FilterProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.LeviForms.ConvExpandStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.MaMeasureEqOfConst
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsCompactRWSublevel

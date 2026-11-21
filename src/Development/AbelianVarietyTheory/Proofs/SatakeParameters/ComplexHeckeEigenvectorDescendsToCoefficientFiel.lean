@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoeffMonicPolySum
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverThm
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverPoly

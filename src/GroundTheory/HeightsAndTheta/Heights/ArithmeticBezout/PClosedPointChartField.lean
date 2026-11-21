@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsClosedPointChartField
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PChartZeroTrdeg
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PAffineChartTrdeg

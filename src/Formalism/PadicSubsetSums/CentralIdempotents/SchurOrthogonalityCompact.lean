@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.FactorOverLocalSubalgebraMonic
 import Mathlib.Analysis.Meromorphic.Order
 import Mathlib.Data.Matrix.ColumnRowPartitioned

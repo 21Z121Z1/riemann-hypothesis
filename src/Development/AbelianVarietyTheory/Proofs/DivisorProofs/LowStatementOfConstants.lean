@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightGreenVanishesOffBoundaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightGreenContinuousOffBoundaryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KaehlerExponentialChartLimitStatement

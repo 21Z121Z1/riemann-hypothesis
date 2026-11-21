@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.DualRef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsUnitRescaling
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsPullbackAlongCover

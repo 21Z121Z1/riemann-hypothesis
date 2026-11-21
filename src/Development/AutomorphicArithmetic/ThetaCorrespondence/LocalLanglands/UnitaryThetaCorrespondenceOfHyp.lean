@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceEqXOfGeomExpansionX
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllTraceOfMiddleX
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasDSComp

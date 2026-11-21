@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FourfoldProductExt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsSabExtension
 import Development.WeilBound.CoreStatements.AbelianHeightsDuality.ZarhinTrick.FibLamD

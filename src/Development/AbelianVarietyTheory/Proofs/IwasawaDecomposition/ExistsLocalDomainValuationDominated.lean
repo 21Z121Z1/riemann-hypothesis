@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFiniteTypeValuationCenterStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormalFiniteTypeOverStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalDomainValuationCenterStatement

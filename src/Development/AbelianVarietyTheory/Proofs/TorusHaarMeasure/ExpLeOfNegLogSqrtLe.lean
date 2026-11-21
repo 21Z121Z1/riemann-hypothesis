@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.SupNDataOfNonneg
 import Development.AbelianVarietyTheory.Definitions.UpperBounds.PhRec
 

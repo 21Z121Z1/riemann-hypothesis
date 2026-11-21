@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.AltPullApply
 import Mathlib.AlgebraicTopology.SingularHomology.Basic
 import Mathlib.Analysis.Convex.Contractible

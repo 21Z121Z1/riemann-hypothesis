@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeEqDiscriminantMultiple
 open MvPolynomial Formalism.DegreeFormula GlobalTheory.FlagPoly
 set_option maxHeartbeats 1000000 in

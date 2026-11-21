@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairAdaptedModelTransferStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicHaarCoordinatesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianSpanFinrankStatement

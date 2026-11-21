@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GelfandTransference.EnergyIdentity
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.LinearAlgebra.Matrix.PosDef

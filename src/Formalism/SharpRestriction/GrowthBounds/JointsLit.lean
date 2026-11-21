@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities.IndexOffRange
 import Formalism.ThetaLogCoordinates.JacobiPathWeights.FinalP
 import Formalism.SharpRestriction.GrowthBounds.LatticeSystems

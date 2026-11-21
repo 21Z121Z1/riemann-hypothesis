@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolMulPosLeConj
 import Std.Tactic.BVDecide.Normalize.Prop
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory

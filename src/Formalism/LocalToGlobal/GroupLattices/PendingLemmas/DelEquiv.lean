@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.SubstZOfXCoordZA
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DetYtMatNeZero
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DetOfColSpanEq

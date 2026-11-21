@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense
 import GroundTheory.GlobalFields.ClassFieldConsequences.RayClass
 import Mathlib.GroupTheory.DoubleCoset

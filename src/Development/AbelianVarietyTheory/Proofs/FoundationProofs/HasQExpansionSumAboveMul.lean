@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemRingOfInR
 import Mathlib.Topology.Separation.CompletelyRegular
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators

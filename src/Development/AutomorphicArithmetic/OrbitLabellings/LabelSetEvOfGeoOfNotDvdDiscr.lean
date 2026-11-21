@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrFin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestBis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsRestTer

@@ -1,4 +1,4 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Development.AbelianVarietyTheory.Definitions.Foundations.CoPtMu
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.RegularLocalRing.Defs

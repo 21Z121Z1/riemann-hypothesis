@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedDiffsInvariantSubspace
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairHypPlaneSplitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftHypPlaneSplitStatement

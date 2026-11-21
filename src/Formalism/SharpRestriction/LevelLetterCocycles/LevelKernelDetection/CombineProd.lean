@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.CyclotomicPowerSeries.PsCoprimeDvdSub
 import Formalism.SharpRestriction.LevelLetterCocycles.RingConditionOfDeltaInvariants
 

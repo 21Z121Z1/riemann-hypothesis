@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.DefiniteClassNumber.Places
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.LatticeCompact
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense

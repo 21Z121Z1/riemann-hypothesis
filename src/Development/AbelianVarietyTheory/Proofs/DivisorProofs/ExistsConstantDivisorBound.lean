@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 import Formalism.DegreeFormula.PointDegree.PowSum
 import Development.AbelianVarietyTheory.Definitions.Foundations.AltCoeffRho

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CMDeterminantIdeals.StatementG
 import Mathlib.Combinatorics.Nullstellensatz
 import Mathlib.RingTheory.Henselian

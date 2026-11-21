@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.BlockIdealBound5Derived
 import Formalism.PieriBlockIdeals.MultiplicityZeroThickEmbedding
 import Formalism.PieriBlockIdeals.ExponentBoundCounterexample

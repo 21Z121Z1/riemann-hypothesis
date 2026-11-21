@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.L2LocalComponents.Summand
 import GroundTheory.AutomorphicForms.SupercuspidalCoefficients
 

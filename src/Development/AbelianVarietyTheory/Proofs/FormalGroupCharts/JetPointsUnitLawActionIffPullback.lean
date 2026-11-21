@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.SabPull
 import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
 import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot

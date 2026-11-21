@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.SplitClassesAll.HZeroFromWFull
 import Formalism.WachLatticeTwists.SandwichH1Classes.SandwichH1Proofs.H0WeightInvariants
 import Formalism.WachLatticeTwists.SandwichH1Classes.SandwichH1Proofs.LevelOneComputationZero

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HeightLowerBoundChartNorm
 import Development.WeilBound.CoreStatements.AmpleLineBundles.PtsIntegralMap
 import Development.WeilBound.CoreStatements.AmpleLineBundles.HeightRecRFull

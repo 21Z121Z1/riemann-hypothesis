@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataParamsS
 import Formalism.LocalRingCardinality.DataRRMetric
 import Formalism.SharpRestriction.GlobalSchurBounds.ZetaZeroFreeRegion

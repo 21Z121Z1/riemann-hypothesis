@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.PrismaticDieudonneAt
 import ReciprocityTheory.DualLattices.ExistsPrimitiveRoot
 import Mathlib.Analysis.Normed.Field.Instances

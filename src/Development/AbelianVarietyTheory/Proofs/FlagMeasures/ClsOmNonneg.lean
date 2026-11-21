@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FrEqvEquivalence
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolPos
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.RowsMeanC

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalMorphismUniquenessStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsoOfThickeningsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormalMorphismExistenceStatement

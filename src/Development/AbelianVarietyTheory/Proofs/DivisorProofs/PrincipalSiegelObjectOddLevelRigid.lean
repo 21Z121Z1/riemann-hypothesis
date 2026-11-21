@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SRelOneOneIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleRigidConstant
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AmpleRigidCube

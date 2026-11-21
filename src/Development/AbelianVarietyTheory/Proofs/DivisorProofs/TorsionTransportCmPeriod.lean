@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisConjugateCmPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalFunctionRatioDeterminedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisActionRootsOfUnityStatement

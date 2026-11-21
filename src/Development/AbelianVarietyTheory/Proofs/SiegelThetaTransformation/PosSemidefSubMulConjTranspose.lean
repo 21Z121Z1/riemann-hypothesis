@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.NormDetDenomLeRankOne
 import Mathlib.Combinatorics.SimpleGraph.LapMatrix
 import Mathlib.RingTheory.Etale.Weakly

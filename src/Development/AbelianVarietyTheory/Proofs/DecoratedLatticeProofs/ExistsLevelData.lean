@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.SymRead
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsLocComb
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr

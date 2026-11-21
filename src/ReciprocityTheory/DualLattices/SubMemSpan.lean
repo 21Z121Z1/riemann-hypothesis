@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.LinPairStatement
 import ReciprocityTheory.DualLattices.IsPairingValueAddRight
 import ReciprocityTheory.DualLattices.IsFibreSq

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedBessel
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.BesselDatum
 import Mathlib.RingTheory.Etale.Weakly

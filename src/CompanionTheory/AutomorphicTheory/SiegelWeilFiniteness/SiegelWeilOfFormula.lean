@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.SiegelWeilFiniteness.AdelicCovolumeFinite
 import CompanionTheory.AutomorphicTheory.SiegelWeilFiniteness.Bridge
 

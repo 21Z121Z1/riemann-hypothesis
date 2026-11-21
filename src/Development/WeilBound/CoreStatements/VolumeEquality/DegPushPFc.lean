@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.VolumeEquality.DegPushPFb
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Assembly
 import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDefs

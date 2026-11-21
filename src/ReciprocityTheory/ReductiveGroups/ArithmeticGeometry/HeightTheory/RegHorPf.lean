@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegAVpt
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

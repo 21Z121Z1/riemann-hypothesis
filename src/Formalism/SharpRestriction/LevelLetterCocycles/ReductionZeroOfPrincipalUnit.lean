@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.IsUnitOfMk
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.LevBasicsD
 import Mathlib.NumberTheory.Padics.Hensel

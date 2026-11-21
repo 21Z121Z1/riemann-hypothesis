@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CommonEigenvectors
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HighestWeightPolynomials
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliAbstractCharacter

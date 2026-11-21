@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSheet
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StPtsAddFirst

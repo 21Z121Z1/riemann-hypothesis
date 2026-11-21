@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.DatumOfRecordSignature
 import Formalism.LocalToGlobal.ProjectiveLattices.SumEmbeddingsEq
 import Formalism.LocalToGlobal.ProjectiveLattices.DatMat

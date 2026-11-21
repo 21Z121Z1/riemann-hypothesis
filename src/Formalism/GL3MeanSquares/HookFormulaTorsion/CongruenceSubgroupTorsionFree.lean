@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.CongruenceTorsion
 import Formalism.GL3MeanSquares.HookFormulaTorsion.DifferenceStableUnderAction
 import Formalism.GL3MeanSquares.HookFormulaTorsion.DifferentIdealConditions

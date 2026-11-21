@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.RestrictedHopfOrderApproximationStatement
 import ReciprocityTheory.DualLattices.MemAugIdeal
 import ReciprocityTheory.DualLattices.ExistsMatOfEquiv

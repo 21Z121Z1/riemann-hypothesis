@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalTheoremInputs
 import Formalism.SharpRestriction.GrowthBounds.BinomialPolynomialIdentities
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments

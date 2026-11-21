@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.PathWeight.GeOldest
 import Formalism.SharpRestriction.GrowthBounds.PathWeight.LeadingDepthOneMemClosure
 

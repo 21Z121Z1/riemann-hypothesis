@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormUniformizerConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestPointGenericFibreStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartsNormalProjectiveStatement

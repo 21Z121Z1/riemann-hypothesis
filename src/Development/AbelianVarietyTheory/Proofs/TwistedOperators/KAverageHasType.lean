@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasCtpId
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgSeriesClosure
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AveragePreservesKFiniteness

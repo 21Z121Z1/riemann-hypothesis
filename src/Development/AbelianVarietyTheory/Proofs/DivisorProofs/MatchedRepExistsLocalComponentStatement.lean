@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedRepExistsLocalComponent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocFieldFv
 open scoped TensorProduct NNReal Matrix

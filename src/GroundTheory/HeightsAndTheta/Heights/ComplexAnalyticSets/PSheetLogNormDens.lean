@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFormIntPos
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PTorusInvLevi
 import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCIsHermitian

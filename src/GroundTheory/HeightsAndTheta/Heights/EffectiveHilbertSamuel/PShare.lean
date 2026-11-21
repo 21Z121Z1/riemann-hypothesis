@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.StatementsShareBound
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.PShareCore
 import Mathlib.Algebra.Order.Star.Real

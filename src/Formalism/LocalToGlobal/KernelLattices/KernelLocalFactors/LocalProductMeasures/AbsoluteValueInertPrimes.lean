@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.MuProd
 import Formalism.LocalToGlobal.Columns.RecLevelHost
 

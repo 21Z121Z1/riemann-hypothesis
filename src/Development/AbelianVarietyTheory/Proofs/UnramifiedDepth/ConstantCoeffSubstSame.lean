@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.IncomingBounds.StatementThmP
 import Formalism.LocalToGlobal.CharacterGerms.GeNatCast
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeUNuInv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBetaInvHeckeU
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHeckeUAlphaH

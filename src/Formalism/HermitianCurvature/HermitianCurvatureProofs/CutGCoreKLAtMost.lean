@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTKLineCut
 import Lemmata.GeneralBFactSecondAltForm.Imports
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction

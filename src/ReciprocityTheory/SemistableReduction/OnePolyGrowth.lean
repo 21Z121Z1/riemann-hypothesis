@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
 import Lemmata.IterateZero.IterZero
 import Mathlib.Analysis.Complex.RemovableSingularity

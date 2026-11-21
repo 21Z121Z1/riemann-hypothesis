@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.EllRegCut
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConvSqLe
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.ReducedBasisBounds.ReductionQuotient
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.IdxDet
 import Mathlib.Data.Int.Star

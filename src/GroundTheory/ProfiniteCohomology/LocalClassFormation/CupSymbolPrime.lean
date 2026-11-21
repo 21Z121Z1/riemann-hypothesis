@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolUnramified
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.CupSymbolNorm
 import GroundTheory.LocalFields.LocalArtinBaseChange

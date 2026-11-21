@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalSplitting.SphSplitGeo
 import Development.WeilBound.ThetaLifts.SphericalLattices.HoweDuality
 import Development.WeilBound.ThetaLifts.SphericalLattices.FunTop

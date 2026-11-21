@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.HerrComplexInjectivity.StatementA
 import Formalism.WachLatticeTwists.WachProductBases.WachConsequencesFurther
 import Formalism.WachLatticeTwists.WachProductBases.WachProductProofs.ConsequenceFourLocal

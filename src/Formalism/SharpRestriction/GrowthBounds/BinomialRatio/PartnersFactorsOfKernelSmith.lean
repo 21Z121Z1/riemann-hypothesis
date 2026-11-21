@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.FactorsOfPerturb
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.TotalDegreeEplus
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ExponentFactorialAddSingleOne

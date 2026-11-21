@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LinkedTowerPowerSumStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PropFTopHoldsStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CoefficientsStatement

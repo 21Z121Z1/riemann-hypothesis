@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKMOne
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Henselian

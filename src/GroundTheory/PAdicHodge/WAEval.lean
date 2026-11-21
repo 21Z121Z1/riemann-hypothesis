@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WACommon
 import GroundTheory.PAdicHodge.ExtRobbaRoot
 import GroundTheory.PAdicHodge.BStPeriod

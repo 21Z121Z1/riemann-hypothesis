@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsGrassHeightE
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.Assembly
 set_option maxSynthPendingDepth 1

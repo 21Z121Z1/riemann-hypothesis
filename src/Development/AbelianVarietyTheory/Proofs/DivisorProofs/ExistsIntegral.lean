@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PhiBoundPartsOfRadicalParametrisation
 import Mathlib.LinearAlgebra.Multilinear.FiniteDimensional
 import Mathlib.MeasureTheory.SpecificCodomains.Pi

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AdelicQuotients.RieszRepresentationSesquilinear
 import Development.AutomorphicArithmetic.AdelicQuotients.MeasurableOfSeparatingFunctionals
 import Development.AutomorphicArithmetic.AdelicQuotients.InnerProductIntegralFundamentalDomainOfCompact

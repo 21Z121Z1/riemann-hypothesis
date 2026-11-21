@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.CharGal
 import Formalism.LocalToGlobal.HermitianForms.TiedTwAll
 import Formalism.LocalToGlobal.JointCharacters.SameChr

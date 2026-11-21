@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealValuations.LocDefY
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MemOfAdjoinTop
 import Mathlib.Algebra.AffineMonoid.Basic

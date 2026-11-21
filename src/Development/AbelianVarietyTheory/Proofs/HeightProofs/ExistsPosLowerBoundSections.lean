@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CompFin
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FullTranscendenceDegree
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CompSplitAndGenValInj

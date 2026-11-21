@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntEmbCoe
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.FiniteDegreeMorphisms
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeAndEigenDegrees

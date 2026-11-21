@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdStd
 import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdProj
 import Formalism.LocalToGlobal.NumberFieldFamilies.HeckeLift0

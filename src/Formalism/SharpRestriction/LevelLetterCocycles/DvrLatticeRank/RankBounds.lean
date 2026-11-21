@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.SecondPropositionRingAll
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.RankInverseBounds
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.RankLinkProof

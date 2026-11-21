@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SemiContractB
 import ReciprocityTheory.SemistableReduction.SemiContractC
 import Mathlib.Topology.Sheaves.Presheaf

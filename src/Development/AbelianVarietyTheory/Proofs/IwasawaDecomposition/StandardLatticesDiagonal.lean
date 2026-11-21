@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas
 import Formalism.LocalToGlobal.IndefiniteReal.IsFDiagIffDiagonal
 import Formalism.LocalToGlobal.IndefiniteReal.FrameExistence.NormalFrameClauses

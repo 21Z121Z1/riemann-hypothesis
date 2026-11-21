@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.MemIffOfLocBasisG
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardIntegralLatticeExists
 import Formalism.SharpRestriction.GlobalSchurBounds.LinkGLOBAL7Tied4

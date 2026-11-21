@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.KerPNonzero
 import Mathlib.Dynamics.Ergodic.Action.Regular
 import Mathlib.Order.CompletePartialOrder

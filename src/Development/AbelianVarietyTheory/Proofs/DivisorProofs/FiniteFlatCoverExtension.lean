@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SupportPullbackEqPreimageStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModuleLengthDisjointSupportStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteFlatQuasicoherentLocalStatement

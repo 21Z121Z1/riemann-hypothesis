@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.MeanSquareBounds.pairEx
 import Development.AutomorphicArithmetic.CharacterBoxes.PairHyp
 import Development.AutomorphicArithmetic.ShortNorms.typePrimesN

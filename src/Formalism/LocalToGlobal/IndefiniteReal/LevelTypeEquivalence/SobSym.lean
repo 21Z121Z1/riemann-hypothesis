@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IterSymmR
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 import Mathlib.Tactic.ENatToNat

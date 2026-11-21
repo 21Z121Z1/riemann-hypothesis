@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.GenDual
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.DinfTors
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreProduct
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagPull
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagR

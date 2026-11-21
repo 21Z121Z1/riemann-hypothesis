@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
 import Formalism.LocalToGlobal.ProjectiveLattices.MulCMemSec
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.RegLaw

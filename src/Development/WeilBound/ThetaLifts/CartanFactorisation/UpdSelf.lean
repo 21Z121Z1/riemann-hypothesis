@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.CartanFactorisation.ExistsBeta
 import Development.WeilBound.CoreStatements.LocalThetaKernels.Locrep
 import Development.WeilBound.ThetaLifts.CartanFactorisation.AdmDef

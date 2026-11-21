@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedLocalLatticeThetaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentThetaPeriodStatement
 open scoped TensorProduct NNReal Matrix

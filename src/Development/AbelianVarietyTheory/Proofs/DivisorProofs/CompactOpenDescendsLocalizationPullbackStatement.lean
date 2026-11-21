@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactOpenDescendsLocalizationPullback
 open CategoryTheory Limits AlgebraicGeometry
 open scoped TensorProduct

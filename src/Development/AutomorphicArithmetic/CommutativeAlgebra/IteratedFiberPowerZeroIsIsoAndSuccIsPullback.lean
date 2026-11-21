@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.HxiTZeroComb
 
 open CategoryTheory Limits AlgebraicGeometry GlobalTheory.EtC UpperTheory.Et

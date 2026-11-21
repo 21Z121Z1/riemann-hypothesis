@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaleLocalPropertyCalculusRulesStatement
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.TensorProduct.DirectLimitFG

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsSplitting
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

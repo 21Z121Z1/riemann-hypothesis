@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTieMemCFin
 import Formalism.SharpRestriction.GrowthBounds.ExponentialPartialDerivatives
 import Formalism.LocalToGlobal.CharacterGerms.RowTieMain

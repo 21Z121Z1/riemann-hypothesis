@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.ReadAlg
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspFDOf
 import Formalism.LocalToGlobal.ProjectiveLattices.NormLaws

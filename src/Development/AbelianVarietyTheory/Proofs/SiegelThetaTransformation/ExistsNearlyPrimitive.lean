@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsBoundedMultipleNearInteger
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IMemSiegel
 import Mathlib.NumberTheory.NumberField.CMField

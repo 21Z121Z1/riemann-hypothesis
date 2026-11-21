@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarRight
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarInv
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.PolarHaarA

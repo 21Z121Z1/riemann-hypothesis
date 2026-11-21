@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.Examples
 import GroundTheory.PAdicHodge.PerfectoidField
 import Mathlib.Algebra.Lie.OfAssociative

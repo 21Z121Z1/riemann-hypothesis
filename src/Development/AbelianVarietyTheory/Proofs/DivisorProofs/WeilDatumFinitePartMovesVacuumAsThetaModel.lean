@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedThetaFunctionsReadOfMovedVacuumReadsStatement
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsPairMass
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MovedVacuumReads

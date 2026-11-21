@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.LocalCountingBounds
 import Formalism.LocalToGlobal.BesselHermitianTheta.MinfDensity
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel

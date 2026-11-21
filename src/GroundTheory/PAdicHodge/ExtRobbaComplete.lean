@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.ExtRobbaBounded
 import GroundTheory.PAdicHodge.RobbaNewton
 import Mathlib.Analysis.Normed.Unbundled.RingSeminorm

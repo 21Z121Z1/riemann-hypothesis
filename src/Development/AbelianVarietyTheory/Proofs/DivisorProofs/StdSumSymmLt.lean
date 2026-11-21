@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCuspSpaceBot
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 open ValuativeRel Matrix MeasureTheory

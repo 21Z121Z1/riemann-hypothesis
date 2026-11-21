@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.QuotientRowsExteriorDetEqConstMulTopBlockDet
 open Matrix Formalism.IndefR.Datum GlobalTheory.ExportSeries
 set_option maxHeartbeats 1000000 in

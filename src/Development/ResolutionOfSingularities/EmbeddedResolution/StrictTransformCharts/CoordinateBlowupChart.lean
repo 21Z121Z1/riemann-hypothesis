@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupUniversalLift
 import Development.ResolutionOfSingularities.Foundations.Blowup.AffineBlowupChartPreimages
 open CategoryTheory AlgebraicGeometry

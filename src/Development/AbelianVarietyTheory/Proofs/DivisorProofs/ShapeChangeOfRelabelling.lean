@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SlopeTestRemainingChoices
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqualCoeffsOfSymmetric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeRenameInvariant

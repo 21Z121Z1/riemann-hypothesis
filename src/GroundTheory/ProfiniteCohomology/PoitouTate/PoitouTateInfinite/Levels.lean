@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.PoitouTate.PoitouTateInfinite.Restrict
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerFrob
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.ClassFieldGSUnram

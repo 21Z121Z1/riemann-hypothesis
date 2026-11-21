@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.ReverseCauchySchwarzHolds
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 import Mathlib.Analysis.Matrix.Spectrum

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PolynomialDimension.MultinomialDepth.PartnerM
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.ShiftLastLetterThresholds
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaSupremumBounds.GaussianShiftBounds.BlockIntegralOf
 import Formalism.ThetaSupremumBounds.GaussianShiftBounds.HeightsoundOf
 import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral

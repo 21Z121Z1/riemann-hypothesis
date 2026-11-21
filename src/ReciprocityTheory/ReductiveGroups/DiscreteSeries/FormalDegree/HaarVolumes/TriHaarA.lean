@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.HaarVolumes.TriDens
 import Mathlib.LinearAlgebra.Eigenspace.Zero
 import Mathlib.RingTheory.SimpleRing.Principal

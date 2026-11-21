@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalLattices.HoweInert
 import Development.WeilBound.ThetaLifts.SphericalLattices.ExistsVBallSubset
 import Development.WeilBound.ThetaLifts.SphericalLattices.ExistsIsUnitAddMul

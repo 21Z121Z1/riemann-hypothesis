@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CardDvdCardGL
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsSmallPrimeOff
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsLevChOfLevelPrime

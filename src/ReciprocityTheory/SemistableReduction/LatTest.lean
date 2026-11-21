@@ -1,6 +1,6 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.LatSemiSt
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.NumberField.CMField

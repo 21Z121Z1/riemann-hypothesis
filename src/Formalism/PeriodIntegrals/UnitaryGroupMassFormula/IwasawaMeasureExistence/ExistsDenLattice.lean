@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IwasawaMeasureExistence.T2SpaceFiniteAdeleRing
 import Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut
 import Mathlib.RingTheory.PiTensorProduct

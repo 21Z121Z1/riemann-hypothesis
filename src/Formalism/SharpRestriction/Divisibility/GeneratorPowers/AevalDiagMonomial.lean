@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PairEvaluation
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

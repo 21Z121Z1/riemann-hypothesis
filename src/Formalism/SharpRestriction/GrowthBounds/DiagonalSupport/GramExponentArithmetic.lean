@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.PickCore
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.BinomCombFOnFinset
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.VBBMonomialOne

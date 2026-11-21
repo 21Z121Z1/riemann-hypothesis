@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsWellDefined
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ThmIExistsFamily
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PChoice

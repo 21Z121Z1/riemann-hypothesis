@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotDvdCardStabFrm
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChainWideTwistTransport
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LastTwoStepsGuarded

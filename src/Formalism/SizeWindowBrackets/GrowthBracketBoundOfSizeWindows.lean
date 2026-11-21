@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.GaloisToProductIsIso
 import Formalism.SizeWindowBrackets.SlopeExcessBoundExponentZero
 import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse

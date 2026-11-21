@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CyclotomicNorms.StatementI
 import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.PowerPCycle
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsReductionActionChosenPlaces
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.VolRatioProd
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsChoiceOfIdem

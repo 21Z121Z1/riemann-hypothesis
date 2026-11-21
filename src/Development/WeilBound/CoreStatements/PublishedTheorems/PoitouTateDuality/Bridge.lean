@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtConclOfIsoOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsInvFamNormalised
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsSubfieldModel

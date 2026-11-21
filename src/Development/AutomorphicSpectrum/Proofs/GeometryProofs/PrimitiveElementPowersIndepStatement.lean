@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PrimitiveElementPowersIndep
 open scoped TensorProduct
 set_option maxHeartbeats 1000000 in

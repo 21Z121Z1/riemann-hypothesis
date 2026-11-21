@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DiscPowerTimesMonomial
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.CardFinRange
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DplusLeBeS

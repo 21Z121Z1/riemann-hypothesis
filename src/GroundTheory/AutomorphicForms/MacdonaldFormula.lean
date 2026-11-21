@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.MacdonaldSpherical
 import GroundTheory.AutomorphicForms.MacdonaldNormalization
 

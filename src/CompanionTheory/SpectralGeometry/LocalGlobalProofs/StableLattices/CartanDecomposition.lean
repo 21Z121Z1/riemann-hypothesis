@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.BesselOrbitBounds.BesselMapUniqueness.BesselMapUniqGap
 import Mathlib.LinearAlgebra.Matrix.DotProduct
 import Std.Tactic.BVDecide.Normalize.Prop

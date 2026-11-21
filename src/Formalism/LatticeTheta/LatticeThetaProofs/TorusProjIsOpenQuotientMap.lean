@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LatticeTheta.LatticeThetaProofs.InnerDualVecBasis
 import Formalism.LatticeTheta.LatticeThetaProofs.FundamentalDomainEqPreimage
 import Mathlib.Analysis.Fourier.AddCircleMulti

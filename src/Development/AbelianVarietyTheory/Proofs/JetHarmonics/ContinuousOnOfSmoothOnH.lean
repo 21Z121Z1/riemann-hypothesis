@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SmoothDecompositionForms
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ContinuousMulMt

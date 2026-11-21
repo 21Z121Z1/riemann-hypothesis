@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiplicityOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasFormNegOfPairBoundsStatement

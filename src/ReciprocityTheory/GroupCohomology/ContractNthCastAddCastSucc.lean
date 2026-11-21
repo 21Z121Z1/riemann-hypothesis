@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.LinearAlgebra.Quotient.Bilinear
 import ReciprocityTheory.GroupCohomology.ContinuousContractNth
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.CartanFactorisation.SpanOrbitStab
 import Mathlib.Analysis.InnerProductSpace.Dual
 import Mathlib.LinearAlgebra.Eigenspace.Triangularizable

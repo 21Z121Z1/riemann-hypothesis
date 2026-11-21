@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HolAtlasPullbackEqChartExpressionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatCubicalStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PointsMapHolomorphic

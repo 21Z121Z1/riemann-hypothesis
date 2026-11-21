@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalisationModelLocalization
 import Mathlib.RingTheory.LocalProperties.Reduced
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

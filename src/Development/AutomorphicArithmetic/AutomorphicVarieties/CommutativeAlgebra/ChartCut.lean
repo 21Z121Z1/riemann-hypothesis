@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.OrbitVanishingLocal
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
 import Mathlib.LinearAlgebra.Matrix.Rank

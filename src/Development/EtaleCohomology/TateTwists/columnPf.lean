@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.acycPf
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

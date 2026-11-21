@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.TorsionNormIteration.InverseIntegralClasses.InvInt
 import Formalism.TorsionNormIteration.InverseIntegralClasses.MemSpanOfNormLe
 import Formalism.TorsionNormIteration.Statement

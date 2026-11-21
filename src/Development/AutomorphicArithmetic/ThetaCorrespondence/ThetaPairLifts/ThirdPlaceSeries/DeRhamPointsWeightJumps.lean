@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.ConstituentConditionAtDistinguishedPrime
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.TypeConditions.CompatR
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DepthZeroOfHyp

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.IndefRRealT
 import Formalism.LocalToGlobal.IndefiniteReal.BridgeSeed
 import Formalism.LocalToGlobal.IndefiniteReal.IsFDiagIffDiagonal

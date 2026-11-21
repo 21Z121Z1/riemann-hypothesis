@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.RelayGeneralCaseOfAdmissible
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelClauseOfOpenTool
 import Formalism.SharpRestriction.LevelLetterCocycles.CompleteOfPow

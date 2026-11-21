@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChosenTwistViaEmbeddingGoodConjugate
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActOfMemGfC
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAlgebraicOfRoot

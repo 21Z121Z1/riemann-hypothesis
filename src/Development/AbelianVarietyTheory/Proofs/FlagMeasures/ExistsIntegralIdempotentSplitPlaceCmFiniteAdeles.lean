@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsIntegerUnitSplitPlaceConjugatePrime
 import Formalism.LocalRingCardinality.SpanPowerMembership.LocAtA
 open NumberField IsDedekindDomain ReciprocityTheory.Aut

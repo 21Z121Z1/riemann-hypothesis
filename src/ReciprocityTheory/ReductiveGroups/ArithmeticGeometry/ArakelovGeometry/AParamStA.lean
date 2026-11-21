@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.JacChart
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.BaseChangeC
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRat

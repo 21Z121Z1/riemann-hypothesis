@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToNatLengthEqRangeAddRange
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.ExistsRetractTensorTriple
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsClosedImmersionGenericPoint

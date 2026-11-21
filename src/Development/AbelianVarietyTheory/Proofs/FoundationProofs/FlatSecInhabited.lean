@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdemAtEqOneIff
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsOpenImmersionOfSection
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SubmatrixMulVec

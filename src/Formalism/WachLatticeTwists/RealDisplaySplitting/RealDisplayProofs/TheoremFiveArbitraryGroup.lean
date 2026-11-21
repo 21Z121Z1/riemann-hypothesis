@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RealDisplaySplitting.SplittingTheoremArbitraryGroup
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.SplitF
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.IdempotentRankOneAtPoint

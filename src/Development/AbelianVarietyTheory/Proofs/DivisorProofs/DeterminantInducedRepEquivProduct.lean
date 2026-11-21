@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorTorusCharacter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedCharIntertwiningUnif
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairInducedEquivProd

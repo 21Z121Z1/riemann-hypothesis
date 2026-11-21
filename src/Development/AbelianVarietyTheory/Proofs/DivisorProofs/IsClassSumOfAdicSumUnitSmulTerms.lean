@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsUnitTermZero
 
 open IsLocalRing GlobalTheory.Poinc GlobalTheory.UT

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.PiInfUnitNe
 import Development.WeilBound.ThetaLifts.LocalTheory.ToralCohomology.ParZero
 

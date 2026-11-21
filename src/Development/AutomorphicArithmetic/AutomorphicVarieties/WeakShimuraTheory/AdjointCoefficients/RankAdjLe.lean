@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeakShimuraTheory.AdjointMemSp4
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.Etale.Weakly

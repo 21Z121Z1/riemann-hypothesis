@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.PrimitiveRootFifteenSubOneUnit
 import Lemmata.GeneralBFactSecondVersion.Imports
 import Mathlib.LinearAlgebra.Eigenspace.Zero

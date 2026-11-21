@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.MemOfTestIdeal
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.PowSpanLocFreeBaseChange
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LatticeSecondGoodness

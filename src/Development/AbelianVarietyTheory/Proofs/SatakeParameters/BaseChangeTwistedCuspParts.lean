@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsInertiaCharpolyFactorOfTameType
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RowModelOfPointModels
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TieAutAndSplit

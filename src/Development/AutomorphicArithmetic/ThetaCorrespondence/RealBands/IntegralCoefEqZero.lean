@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Abstract
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvCoef
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ContinuousAverage

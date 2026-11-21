@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.HoweDuality.FactorApply
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RelInfAlt
 import Development.WeilBound.ThetaLifts.SphericalLattices.HoweInert

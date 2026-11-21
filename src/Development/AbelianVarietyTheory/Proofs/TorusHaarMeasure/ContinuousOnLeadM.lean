@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.NmatZeroMemBor
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.NormLeOfDet
 

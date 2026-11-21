@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.InstBorelGL
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Topology.UniformSpace.Uniformizable

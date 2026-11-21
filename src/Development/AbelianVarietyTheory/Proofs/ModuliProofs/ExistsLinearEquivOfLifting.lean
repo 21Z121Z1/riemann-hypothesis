@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.CompactSpacePointsPolAV
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ContinuousOnValue
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsEtaleCoordsVanishing

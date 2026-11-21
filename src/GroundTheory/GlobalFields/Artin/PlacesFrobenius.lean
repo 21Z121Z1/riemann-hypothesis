@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.Places
 import GroundTheory.GlobalFields.Artin.MackeyFrobenius
 import Mathlib.Algebra.AffineMonoid.Basic

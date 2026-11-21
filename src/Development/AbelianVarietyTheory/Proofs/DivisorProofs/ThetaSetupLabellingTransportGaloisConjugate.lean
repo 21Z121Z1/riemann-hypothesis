@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GalLab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCommonFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLab

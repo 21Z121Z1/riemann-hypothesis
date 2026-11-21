@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbittAlg
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

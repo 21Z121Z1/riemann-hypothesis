@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.PullbackDegreeOfLineBundles
 import Development.AutomorphicArithmetic.DivisorFrames.PullbackDegreeGenericResidue
 import Development.AutomorphicArithmetic.DivisorFrames.ComparisonOfLineBundleSections

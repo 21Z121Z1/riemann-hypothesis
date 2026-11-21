@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLines
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.DetIneq
 import Mathlib.Tactic.Monotonicity.Lemmas

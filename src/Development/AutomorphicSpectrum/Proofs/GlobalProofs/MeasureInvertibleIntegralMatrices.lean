@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.MeasureUniformizerMultipleMatricesStatement
 import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card
 open MeasureTheory Matrix GlobalTheory.CompanionTheory.QL

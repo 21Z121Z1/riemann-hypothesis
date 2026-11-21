@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.UnitaryGroupScheme
 import GroundTheory.AutomorphicForms.HermitianDisc
 import GroundTheory.AutomorphicForms.HermitianNormLocal

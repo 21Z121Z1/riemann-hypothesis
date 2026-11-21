@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.CrystallineFiltrationAntitone
 import Formalism.SharpRestriction.LevelLetterCocycles.StageStep
 

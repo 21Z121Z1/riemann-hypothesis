@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.PrimitiveCosets.WindowInequalityOfArtinInputs
 import Formalism.SharpRestriction.GlobalSchurBounds.TieGlobal
 

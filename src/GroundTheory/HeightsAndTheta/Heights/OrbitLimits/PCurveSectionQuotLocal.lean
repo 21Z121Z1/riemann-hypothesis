@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveVertPointLengthSteps
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLiftBirationalAmple
 set_option maxSynthPendingDepth 1

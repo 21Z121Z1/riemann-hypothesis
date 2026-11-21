@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PartialDerivativeMinors.PMinorAff
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MsMul
 import Mathlib.RingTheory.Derivation.Lie

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.SiegelUnitTheory.UnitsAinf
 import CompanionTheory.AutomorphicTheory.SiegelUnitTheory.ClassNumberMass
 

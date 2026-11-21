@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.CharpolyFromTrace.UnlinkedOfType
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalArtinCompNormCompat
 

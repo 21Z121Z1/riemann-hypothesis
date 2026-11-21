@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.IsAdicCompleteOfLe
 import Formalism.SharpRestriction.LevelLetterCocycles.EvaluationAtUniformizerPower
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsPointOverLetter

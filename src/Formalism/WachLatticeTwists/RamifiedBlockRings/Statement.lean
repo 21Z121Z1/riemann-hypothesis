@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.TruncatedSeriesCounting.LemmaDetPoly
 import Mathlib.LinearAlgebra.Matrix.Rank
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.DictIsUnifOfMarkingRuleDictionary
 import Development.AbelianVarietyTheory.Definitions.Foundations.ClassMassEqSumOfBijective
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinCongMemLevEnv

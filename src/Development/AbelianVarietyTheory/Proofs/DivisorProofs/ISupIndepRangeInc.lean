@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InnerRealizeEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasGramComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockDiagonalMulVecApply

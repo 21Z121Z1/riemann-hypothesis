@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DvdMulOfIdem
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality

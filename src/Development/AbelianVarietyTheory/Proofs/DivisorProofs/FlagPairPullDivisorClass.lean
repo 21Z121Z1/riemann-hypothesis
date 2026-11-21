@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelTrivializingBlowup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairPullback
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

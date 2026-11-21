@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.SlopeHypothesesRounded
 import Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse
 import Formalism.LogVandermondeBounds.LogRatioUpperBound

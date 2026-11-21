@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjTransposeEqOfPosDef
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.SpecDet
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ProdFormula

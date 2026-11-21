@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GaloisValuations.ArithOfA
 import ReciprocityTheory.Hypotheses.GalCohDefs
 

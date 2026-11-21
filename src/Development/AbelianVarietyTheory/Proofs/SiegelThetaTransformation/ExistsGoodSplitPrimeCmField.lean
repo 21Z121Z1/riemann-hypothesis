@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.FirstCoordinateAdmissible
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.LinearAlgebra.Charpoly.Basic

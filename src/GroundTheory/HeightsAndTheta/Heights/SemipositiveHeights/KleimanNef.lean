@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.GeoNum
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNefAmpleFibre
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSemiampleNef

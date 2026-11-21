@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaRootStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrimeNonzeroInFunctionField
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField

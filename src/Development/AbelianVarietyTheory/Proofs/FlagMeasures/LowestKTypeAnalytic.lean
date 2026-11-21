@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeightLeOfMemWtSpan
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NotCdomAdd
 

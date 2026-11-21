@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.EtArchPf
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.EtaleProductPrimes
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ParOfTraceOne

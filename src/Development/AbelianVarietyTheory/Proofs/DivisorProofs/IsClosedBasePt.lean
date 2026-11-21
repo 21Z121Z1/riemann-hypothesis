@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicMetricFinitelyManyPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootMetricFinitelyManyPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightDecompositionClosedPointStatement

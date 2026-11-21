@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopDlNonneg
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.ImportsAlt
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.LossOne

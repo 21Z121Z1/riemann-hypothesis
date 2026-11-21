@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BoundaryPolynomialFunctions
 import Mathlib.MeasureTheory.Order.Group.Lattice
 import Mathlib.Topology.Separation.CompletelyRegular

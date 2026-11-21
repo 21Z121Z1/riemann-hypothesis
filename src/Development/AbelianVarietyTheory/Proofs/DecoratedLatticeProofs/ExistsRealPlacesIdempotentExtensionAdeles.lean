@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyNormFinLeOne
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
 open scoped Matrix NNReal ComplexConjugate TensorProduct ContDiff

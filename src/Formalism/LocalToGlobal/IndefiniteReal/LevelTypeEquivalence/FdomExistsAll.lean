@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.MiscLemmasB.Imports
 
 open MeasureTheory Topology

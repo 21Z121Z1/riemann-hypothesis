@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IndexMeasureIntegralEqOfFineSubgroupStatement
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Tactic.Monotonicity.Lemmas

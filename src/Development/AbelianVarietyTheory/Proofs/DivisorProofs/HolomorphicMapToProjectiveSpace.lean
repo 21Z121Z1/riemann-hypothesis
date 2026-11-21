@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EllipticMapTangentDifferential
 import GroundTheory.GlobalFields.ComplexMultiplication.EllipticRational
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyNhdsNEInChart

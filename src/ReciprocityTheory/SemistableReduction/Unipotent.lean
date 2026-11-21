@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.UnipotentA
 import ReciprocityTheory.SemistableReduction.UnipotentB
 import Mathlib.NumberTheory.NumberField.House

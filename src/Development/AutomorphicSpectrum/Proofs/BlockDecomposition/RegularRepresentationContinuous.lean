@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RwAppend
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarChartIntegralComparison
 import Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving

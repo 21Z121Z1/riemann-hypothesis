@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.IsChainFirst
 
 namespace GlobalTheory.CompanionTheory.Ar.Top.FlDeg

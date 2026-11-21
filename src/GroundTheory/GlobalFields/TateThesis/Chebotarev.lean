@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.ChebotarevCount
 import GroundTheory.GlobalFields.TateThesis.ChebotarevAbelian
 import Mathlib.Algebra.Group.ConjFinite

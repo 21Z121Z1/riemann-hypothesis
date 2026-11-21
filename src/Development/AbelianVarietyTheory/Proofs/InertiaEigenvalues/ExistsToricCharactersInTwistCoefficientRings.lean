@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTwLFullTeich
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SideBKeep
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValSqNonsplit

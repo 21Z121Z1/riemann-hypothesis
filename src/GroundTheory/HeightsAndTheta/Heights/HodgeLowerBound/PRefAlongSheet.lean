@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsRefAlongSheet
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Mathlib.Analysis.SpecialFunctions.Complex.Analytic

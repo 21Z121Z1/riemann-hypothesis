@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshLap
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMean
 import Mathlib.Analysis.Complex.MeanValue

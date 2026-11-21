@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsMeasurableCosetSection
 open MeasureTheory
 set_option maxHeartbeats 1000000 in

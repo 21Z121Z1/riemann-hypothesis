@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacquetHomLeviTgtBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacquetHomEquivTransferStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiltrationCentralCharDistinctStatement

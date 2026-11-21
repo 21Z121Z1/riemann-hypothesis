@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.WachProductBases.OneAddPowSubOne
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.RingTheory.PowerSeries.Basic

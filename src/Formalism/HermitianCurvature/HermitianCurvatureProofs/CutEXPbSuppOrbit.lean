@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEX2
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CornerMatrixBlockThreeMul
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RdVZeroOfVanish

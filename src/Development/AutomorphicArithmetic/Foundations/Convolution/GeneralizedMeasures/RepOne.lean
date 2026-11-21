@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.ConvSpec
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.HeckeFin
 import Development.AutomorphicArithmetic.Foundations.Convolution.GeneralizedMeasures.UiwFin

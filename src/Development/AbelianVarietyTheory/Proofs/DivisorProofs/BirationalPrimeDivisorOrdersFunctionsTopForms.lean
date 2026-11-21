@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrdFunctionFieldPullbackPrimeDivisorOver
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormOrderBirationalPullback
 open CategoryTheory AlgebraicGeometry TopologicalSpace

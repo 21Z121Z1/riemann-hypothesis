@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CMTraceForms.CmDatumSmallPrimesLogBoundsOfParams
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ONPage
 import Development.AbelianVarietyTheory.Definitions.Jets.NotRunTiesZeroSteps

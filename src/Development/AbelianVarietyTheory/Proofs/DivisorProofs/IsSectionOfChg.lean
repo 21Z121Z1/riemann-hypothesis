@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HermitianCompactForm
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FlatSectionAndDegree
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DeterminantSectionRule

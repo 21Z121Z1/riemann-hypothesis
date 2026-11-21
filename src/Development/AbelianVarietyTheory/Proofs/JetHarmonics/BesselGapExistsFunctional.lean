@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapDimensionFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapNormIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PositiveRankOneProportionalStatement

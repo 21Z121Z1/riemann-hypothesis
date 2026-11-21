@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LtSeries
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPlaceEmb
 import GroundTheory.LocalFields.KroneckerWeber

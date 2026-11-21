@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootsOfUnityAndPValuation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ColengthDvdOfNeZero
 open NumberField IsDedekindDomain UniqueFactorizationMonoid

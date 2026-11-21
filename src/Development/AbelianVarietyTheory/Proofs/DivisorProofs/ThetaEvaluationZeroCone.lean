@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEigenIntertwinerModelsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdaptedModelSkewPlaneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAdaptedModelTwoPlanesStatement

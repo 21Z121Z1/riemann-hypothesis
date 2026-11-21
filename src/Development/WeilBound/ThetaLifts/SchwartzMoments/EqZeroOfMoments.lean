@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SchwartzMoments.MulLPowApply
 import Development.WeilBound.ThetaLifts.SchwartzMoments.JetApply
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.DictIrr

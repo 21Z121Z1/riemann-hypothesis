@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjectiveLineMultihomogClassify
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Mathlib.Topology.UniformSpace.Uniformizable

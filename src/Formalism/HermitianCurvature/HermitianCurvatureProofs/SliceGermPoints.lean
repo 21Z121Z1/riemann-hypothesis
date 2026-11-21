@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.YGSlice
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableBlockIntegrand
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceOrbitalBlock

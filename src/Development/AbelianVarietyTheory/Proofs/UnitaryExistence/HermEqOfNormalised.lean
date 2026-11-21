@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsHolPeriods
 import Mathlib.Tactic.Polynomial.Basic
 import ReciprocityTheory.ThetaQuasiPeriods.PeriodLattice

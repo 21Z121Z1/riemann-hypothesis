@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LiftGens
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.H0Nu

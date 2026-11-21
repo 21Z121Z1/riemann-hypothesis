@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSheet
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsSumMeasurable
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PtsSumMeasurableA

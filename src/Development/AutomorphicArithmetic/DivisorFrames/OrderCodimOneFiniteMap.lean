@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ValuationRingOfFiniteDominating
 import Development.AutomorphicArithmetic.DivisorFrames.OrderEqValuationCodimOne
 import Development.AutomorphicArithmetic.DivisorFrames.ResidueDegreeEqValuationDegree

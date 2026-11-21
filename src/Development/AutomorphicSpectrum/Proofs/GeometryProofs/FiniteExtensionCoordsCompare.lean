@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.VolumeEquality.RegularFunctionChartAdjoin
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsNormalisationStatement
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar

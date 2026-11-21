@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.VdTameWild
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.MemRam
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.CupLeibniz
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology.ConeSymmetry
 import GroundTheory.ProfiniteCohomology.CompactSupportCohomology

@@ -1,4 +1,4 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Development.WeilBound.CoreStatements.AutomorphicKernels.BernsteinUnitaryProducts.BernsteinTheoremA.FiberLocalization.EqZeroOfFiberEquivariant
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 

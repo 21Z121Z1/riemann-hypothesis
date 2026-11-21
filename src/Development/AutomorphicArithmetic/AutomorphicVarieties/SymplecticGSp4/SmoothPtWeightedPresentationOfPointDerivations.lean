@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.ExDefs
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.TactVanish
 

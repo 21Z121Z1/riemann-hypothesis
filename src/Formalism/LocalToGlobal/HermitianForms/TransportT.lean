@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianForms.PrkSmul
 import Formalism.LocalToGlobal.HermitianForms.Transport
 import Formalism.LocalToGlobal.HermitianForms.FramesLemmas

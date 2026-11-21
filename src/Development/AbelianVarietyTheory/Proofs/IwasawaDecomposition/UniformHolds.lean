@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMapHolds
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsPhiDivNsmul
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ImportsSide

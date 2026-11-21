@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PRecQOfRecursion
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PRecursion
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PBaseChangeAvoid

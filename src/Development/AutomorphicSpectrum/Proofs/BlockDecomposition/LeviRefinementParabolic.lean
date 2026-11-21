@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.ExistsCellOfIsSubquotient
 import GroundTheory.AutomorphicForms.InductionParabolicGroups
 set_option maxSynthPendingDepth 1

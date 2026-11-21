@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.HookFormulaTorsion.LengthQuotientBoundGeneral
 import Formalism.HermitianLattices.HermitianLatticesProofs.AutFinite
 import Formalism.LocalToGlobal.Columns.StdLatUnimodular

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.ExtRobbaDMRankOne
 import GroundTheory.PAdicHodge.SemilinearResidue
 import Mathlib.RingTheory.PicardGroup

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Counterexamples.UpperHalfSurvey.ValOfKindIndep
 import Formalism.LocalToGlobal.CharacterGerms.RowTie
 

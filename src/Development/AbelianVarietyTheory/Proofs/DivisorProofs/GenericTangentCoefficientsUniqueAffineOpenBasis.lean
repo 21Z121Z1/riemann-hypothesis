@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.IsSchemeTheoreticallyDominantSpecOfInjective
 import Formalism.LocalToGlobal.ProjectiveLattices.SatLeaves
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.DenseInterior

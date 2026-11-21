@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramePointVectorsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameBorelChangeVectorsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatModelTorusRingStatement

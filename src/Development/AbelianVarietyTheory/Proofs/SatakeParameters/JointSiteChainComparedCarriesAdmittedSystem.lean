@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ModelsOK
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.StdAtServed
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PlaceExtendsToIso

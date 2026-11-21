@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsTensorProductStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsDualBundleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormsTensorPowerStatement

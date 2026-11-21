@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PhiTopAgree
 import Development.AbelianVarietyTheory.BlockTheory.SiegelEisenstein.LocalOrderMatrix
 import Formalism.LocalToGlobal.Columns.AdelicLemmas

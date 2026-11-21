@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLJoinExists
 import Development.WeilBound.CoreStatements.HodgeTatePoints.MbLJoinIso
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField

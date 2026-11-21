@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.IncomingBounds.StatementThmP
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

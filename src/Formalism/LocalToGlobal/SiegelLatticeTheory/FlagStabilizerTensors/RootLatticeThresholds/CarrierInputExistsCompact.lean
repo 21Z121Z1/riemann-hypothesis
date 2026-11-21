@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RootLatticeThresholds.CarrierPOfRepairedModel
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RealInputsClosedCompactSupportOf
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositiveDensityCompactSupport

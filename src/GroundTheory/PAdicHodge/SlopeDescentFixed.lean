@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.SlopeDescentBounded
 import GroundTheory.PAdicHodge.ExtRobbaFixedBridge
 import GroundTheory.PAdicHodge.ExtRobbaFixedUnif

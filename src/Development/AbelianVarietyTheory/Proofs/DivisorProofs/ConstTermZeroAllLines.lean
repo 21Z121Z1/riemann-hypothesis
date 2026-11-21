@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedTripleIsotropicTowerStepTen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormYXNeZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousToGAd

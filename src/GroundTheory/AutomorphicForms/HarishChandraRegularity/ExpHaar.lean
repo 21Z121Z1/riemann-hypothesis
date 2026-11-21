@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HarishChandraRegularity.ContDiffCompCoordEquiv
 import GroundTheory.AutomorphicForms.DixmierMalliavinHaar
 import Mathlib.Analysis.Calculus.Deriv.Abs

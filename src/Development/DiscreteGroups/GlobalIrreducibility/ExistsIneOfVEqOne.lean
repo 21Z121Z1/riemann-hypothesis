@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.PrincipalUnitsModule
 import GroundTheory.LocalFields.LocalFourierHaar
 import Development.DiscreteGroups.GlobalIrreducibility.ExistsOfMemKOne

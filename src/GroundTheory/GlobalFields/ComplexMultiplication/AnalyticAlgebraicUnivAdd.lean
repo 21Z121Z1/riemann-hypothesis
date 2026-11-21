@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.RespectsAddUniversal
 
 open Polynomial WeierstrassCurve.Affine GroundTheory.Arith.Abelian

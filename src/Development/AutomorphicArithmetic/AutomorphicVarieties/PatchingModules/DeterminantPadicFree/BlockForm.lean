@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DeterminantPadicFree.SpanDesc
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IrredIffSpan
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.DensityProd

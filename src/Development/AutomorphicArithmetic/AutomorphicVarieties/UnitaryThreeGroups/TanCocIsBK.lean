@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeGroups.KatoUse
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.RtDual
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.BkAbove

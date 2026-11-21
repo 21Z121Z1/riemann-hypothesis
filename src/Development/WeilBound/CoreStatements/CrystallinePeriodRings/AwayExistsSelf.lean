@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.BCrisRegularFinal
 import GroundTheory.PAdicHodge.FundamentalSeqBCris
 import Development.WeilBound.CoreStatements.CrystallinePeriodRings.InvRestrictScalarsMem

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyStep
 import ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyMax
 import Mathlib.RingTheory.WittVector.IsPoly

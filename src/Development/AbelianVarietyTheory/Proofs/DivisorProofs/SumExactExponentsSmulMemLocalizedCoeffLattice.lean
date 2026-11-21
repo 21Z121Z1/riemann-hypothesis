@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.PieriColumnMinors.ProdInitialMinorsMemDetSpan
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemClosureIff

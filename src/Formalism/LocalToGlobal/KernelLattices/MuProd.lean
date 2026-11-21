@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.ComplSmulMapE
 import Formalism.LocalToGlobal.KernelLattices.ThDistC
 

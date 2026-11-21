@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.NormalFam
 import Formalism.LocalToGlobal.IndefiniteReal.RhoGeo
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MulVecMemOfFrame

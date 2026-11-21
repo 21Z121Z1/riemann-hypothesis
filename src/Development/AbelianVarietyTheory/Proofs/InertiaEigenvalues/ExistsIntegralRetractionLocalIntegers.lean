@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LiftQMk
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocE
 import Mathlib.Algebra.Module.StablyFree.Basic

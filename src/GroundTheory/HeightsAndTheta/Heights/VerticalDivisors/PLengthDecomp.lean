@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Statements
 import Mathlib.Algebra.Module.LocalizedModule.Exact
 import Mathlib.RingTheory.PiTensorProduct

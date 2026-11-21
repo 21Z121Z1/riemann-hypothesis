@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RegularSemisimpleFlagStabilizer
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SplitInclMemExtSubIff
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CommuteOfWittFrameWeights

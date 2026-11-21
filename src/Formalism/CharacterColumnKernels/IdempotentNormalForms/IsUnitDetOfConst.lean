@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.StatementN
 import Mathlib.Data.Finsupp.Interval
 import Mathlib.RingTheory.PowerSeries.Inverse

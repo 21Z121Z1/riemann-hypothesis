@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.CompInv
 import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.StatementF
 

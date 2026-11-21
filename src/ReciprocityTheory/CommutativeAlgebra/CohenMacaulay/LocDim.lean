@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ExistsIsRegularOfLeHeight
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Regular.Flat

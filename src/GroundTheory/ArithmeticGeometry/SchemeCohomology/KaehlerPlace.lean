@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.FunctionField.PlaceDefs
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.FieldTheory.SeparablyGenerated

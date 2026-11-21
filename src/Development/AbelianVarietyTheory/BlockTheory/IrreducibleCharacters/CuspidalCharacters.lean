@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CharacterTheory.ImportsAlt
 import Mathlib.RepresentationTheory.Character
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.StatementsPointHeight
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.FieldChange
 set_option maxSynthPendingDepth 1

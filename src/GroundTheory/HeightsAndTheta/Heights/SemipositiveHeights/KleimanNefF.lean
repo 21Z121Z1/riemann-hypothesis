@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PKleimanNefF
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PModelGenericPoint
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsTailRest

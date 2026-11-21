@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LawLoc
 import Development.AbelianVarietyTheory.Definitions.Foundations.SecondCountableAndT2LocalField
 

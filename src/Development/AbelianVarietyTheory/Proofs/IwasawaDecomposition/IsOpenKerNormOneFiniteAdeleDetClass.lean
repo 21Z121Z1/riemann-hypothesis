@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneFiniteAdeleDetClassOfIsDetLift
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ValDetSubOneLt
 import Formalism.LocalToGlobal.Columns.RecLevelTop

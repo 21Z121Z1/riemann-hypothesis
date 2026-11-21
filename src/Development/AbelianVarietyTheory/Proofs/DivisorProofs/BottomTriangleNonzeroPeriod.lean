@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTripleThetaKernelMinorsEqConstConjJetStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomTriangleArchimedeanConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasInfOfChars

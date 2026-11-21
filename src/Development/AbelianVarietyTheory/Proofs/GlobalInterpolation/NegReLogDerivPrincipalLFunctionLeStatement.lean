@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NegReLogDerivPrincipalLFunctionLe
 open Complex DirichletCharacter ArithmeticFunction MeasureTheory
 set_option maxHeartbeats 1000000 in

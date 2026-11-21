@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GammaIntegralAlternatingSum
 open MeasureTheory Finset GlobalTheory.Chamber
 open scoped InnerProductSpace

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaIntegralRationalFrameExpansionSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericGlLocalComponentExponentLeOneStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacquetShalikaExcludesRatioGapStatement

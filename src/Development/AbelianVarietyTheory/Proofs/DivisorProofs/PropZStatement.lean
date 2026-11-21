@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationConstantOfPowerEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatSecUnitGenericFibreStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSchemeSpecialFibreNonemptyStatement

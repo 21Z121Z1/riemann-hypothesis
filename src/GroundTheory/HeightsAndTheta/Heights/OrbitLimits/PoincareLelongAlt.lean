@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PoincareLelongRegularised
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PoincareLelongLimit
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LastMapNorm
 import Formalism.LocalToGlobal.Divisibility.BrJoint
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdLowerA
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdScale
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdDefs

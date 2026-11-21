@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MemOfAevalEqZero
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GfForms
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.HasMultiplier

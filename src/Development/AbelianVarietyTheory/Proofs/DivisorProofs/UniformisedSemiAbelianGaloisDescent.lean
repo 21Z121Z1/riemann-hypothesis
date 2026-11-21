@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiAbelianDescendsOfDescendsNearClosedFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasOfGalAct
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNearGaloisQuotient

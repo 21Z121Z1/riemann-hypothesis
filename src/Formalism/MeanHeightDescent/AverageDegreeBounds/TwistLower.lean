@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MeanHeightDescent.AverageDegreeBounds.DescentSlope
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.AuxiliaryPrimeMemAvoidedPrimes
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.TensorOfPairLift
 import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.MeanNum

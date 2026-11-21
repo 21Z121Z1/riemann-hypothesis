@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GrowthNorm
 import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.BesPerSt
 import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.FrameMatEqGlobal

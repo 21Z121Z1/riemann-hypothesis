@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.CountLoc
 import Formalism.SharpRestriction.GrowthBounds.LatticeSystems
 

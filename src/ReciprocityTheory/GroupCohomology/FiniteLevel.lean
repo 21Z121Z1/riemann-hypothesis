@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GroupCohomology.ResNormalHolds
 import ReciprocityTheory.GroupCohomology.InfRes
 import Mathlib.Order.CompletePartialOrder

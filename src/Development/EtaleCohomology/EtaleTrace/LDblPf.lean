@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.LCycleCut
 import Mathlib.CategoryTheory.Limits.Types.Pushouts
 

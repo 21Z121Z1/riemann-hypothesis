@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ArchimedeanOrbitMeasures.Upq
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.NumberTheory.NumberField.AdeleRing

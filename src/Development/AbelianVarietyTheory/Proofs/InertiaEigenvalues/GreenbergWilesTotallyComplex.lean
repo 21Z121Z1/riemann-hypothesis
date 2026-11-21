@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistedDualEvalBidualApply
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardKerMulCardEq
 

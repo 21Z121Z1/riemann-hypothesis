@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterSt
 import Mathlib.Analysis.SpecialFunctions.SmoothTransition
 set_option maxSynthPendingDepth 1

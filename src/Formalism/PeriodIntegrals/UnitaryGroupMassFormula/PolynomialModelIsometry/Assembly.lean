@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialModelIsometry.IsPolyMon
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Formalism.PeriodIntegrals.HwIrred

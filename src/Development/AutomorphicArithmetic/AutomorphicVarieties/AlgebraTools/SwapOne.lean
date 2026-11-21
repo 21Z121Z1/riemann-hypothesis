@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkBern
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SwapOneAlt
 import Mathlib.RingTheory.Henselian

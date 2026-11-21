@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.StatementsEnd
 import Mathlib.Data.Rat.Star
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ModuliSpaces.IsGaloisCover
 import Mathlib.RingTheory.PicardGroup
 open scoped TensorProduct

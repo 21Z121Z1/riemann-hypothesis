@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.ConclusionSplitOfHub
 import Development.AutomorphicArithmetic.ResidueCharacters.PlaceTypeConj
 import Development.AutomorphicArithmetic.ResidueCharacters.LenUnitInvariantsLe

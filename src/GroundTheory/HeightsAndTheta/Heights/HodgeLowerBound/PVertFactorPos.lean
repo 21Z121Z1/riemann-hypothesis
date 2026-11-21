@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsVertFactorPos
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenFibreHomog
 import Mathlib.Algebra.AffineMonoid.UniqueSums

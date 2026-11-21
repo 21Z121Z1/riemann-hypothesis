@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.X0OfStarCondition
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.WeakRepIso
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ClauseAtOfRepIso

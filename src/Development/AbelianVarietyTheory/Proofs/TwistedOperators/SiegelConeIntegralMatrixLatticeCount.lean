@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.IsSmoothModerateOfIsAutFunSm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TsumPiProdEnnreal
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNewformFunction

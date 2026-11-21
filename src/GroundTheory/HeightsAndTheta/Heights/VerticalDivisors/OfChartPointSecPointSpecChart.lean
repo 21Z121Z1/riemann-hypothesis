@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.Assembly
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PGenSecSeparable
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.PFibreClosedComponent

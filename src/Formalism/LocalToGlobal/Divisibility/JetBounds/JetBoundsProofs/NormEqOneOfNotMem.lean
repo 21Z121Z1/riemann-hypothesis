@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.JetBounds.EmbExists
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.VwEqZeroOfNotMem
 import Formalism.GaussJetBounds.GaussJetProofs.TheoremAMatrixEntries

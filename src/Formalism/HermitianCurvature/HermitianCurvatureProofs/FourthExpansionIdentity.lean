@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ScalarInverseSimplification
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SecondExpansionIdentity
 

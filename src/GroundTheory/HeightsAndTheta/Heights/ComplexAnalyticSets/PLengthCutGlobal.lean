@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLengthCutGlobal
 import Mathlib.Algebra.Module.LocalizedModule.Exact
 import Mathlib.RingTheory.WittVector.IsPoly

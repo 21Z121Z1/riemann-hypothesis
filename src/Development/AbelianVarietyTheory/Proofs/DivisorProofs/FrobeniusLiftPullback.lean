@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OfHomPull
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFrobCokernelSmulHomPow
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdealSubschemeCounitIsoStatement

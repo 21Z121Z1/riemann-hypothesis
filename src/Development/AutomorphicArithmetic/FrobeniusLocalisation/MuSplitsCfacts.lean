@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.MuNotdvdmuWofunramified
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.MuIsRteqoneofsubmem
 import Development.AutomorphicArithmetic.FrobeniusLocalisation.splitComplete

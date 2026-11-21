@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.AlgebraicGeometry.Noetherian
 import Mathlib.RingTheory.KrullDimension.Field
 import Mathlib.Tactic.Monotonicity.Lemmas

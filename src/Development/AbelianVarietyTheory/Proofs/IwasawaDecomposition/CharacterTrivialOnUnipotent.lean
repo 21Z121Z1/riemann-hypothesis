@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SkewEqSumRankOneIsotropicStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SumRankOneIntegralRescalingStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharacterTrivialOnIntegralTransvectionsStatement

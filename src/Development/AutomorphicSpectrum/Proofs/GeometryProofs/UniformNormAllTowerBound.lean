@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.WeightZeroSectionMembership
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormTowerBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformAllTowerBoundStatement

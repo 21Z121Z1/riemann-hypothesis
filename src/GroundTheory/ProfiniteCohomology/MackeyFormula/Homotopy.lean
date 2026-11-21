@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.MackeyFormula.Cohomology
 import GroundTheory.ProfiniteCohomology.MackeyFormula.ConjHomotopy
 set_option maxSynthPendingDepth 1

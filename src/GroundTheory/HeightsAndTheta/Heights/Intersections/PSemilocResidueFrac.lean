@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocResidueFrac
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NotIsUnitOfNumMem
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PSemilocRankFrac

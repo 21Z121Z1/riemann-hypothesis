@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOfFinOrderOfIsOfFinOrderMapRingHomStatement
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.GroupTheory.FiniteAbelian.Basic

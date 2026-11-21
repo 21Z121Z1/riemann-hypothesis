@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.SdNormHolds
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.ExpProductSquareInv
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalJacobianType.CentreVolume

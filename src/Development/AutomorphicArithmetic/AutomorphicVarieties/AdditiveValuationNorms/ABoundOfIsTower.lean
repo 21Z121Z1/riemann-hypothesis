@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.GenLevel
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Descends
 

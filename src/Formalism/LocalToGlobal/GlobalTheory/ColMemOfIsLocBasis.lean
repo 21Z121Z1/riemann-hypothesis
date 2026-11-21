@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocInd
 import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.DedekindZetaSeries.HeightGeSecondCubicBound
 import GroundTheory.HeightsAndTheta.Theta.Signature
 import GroundTheory.HeightsAndTheta.Theta.Parabolic

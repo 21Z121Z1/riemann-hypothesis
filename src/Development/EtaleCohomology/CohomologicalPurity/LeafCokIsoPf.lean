@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafExcSpPf
 import Mathlib.CategoryTheory.ExtremalEpi
 

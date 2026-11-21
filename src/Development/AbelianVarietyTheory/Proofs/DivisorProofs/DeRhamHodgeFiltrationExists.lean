@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSubOfAffine
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamHodgeSubbundleExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplOfIff

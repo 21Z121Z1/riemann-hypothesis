@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodPlaceAvoidsBadSetsStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GoodPlaceHeckeEigenMatchStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PointsEqualEigenMatchStatement

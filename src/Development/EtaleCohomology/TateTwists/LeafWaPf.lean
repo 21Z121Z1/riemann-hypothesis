@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtalePrismAlexanderWhitneyHomotopyOfRelations
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Data.Finsupp.Pointwise

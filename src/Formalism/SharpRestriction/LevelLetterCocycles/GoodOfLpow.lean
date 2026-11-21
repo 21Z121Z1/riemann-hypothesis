@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsSmulPowEqSumOfInFNc
 import Formalism.SharpRestriction.LevelLetterCocycles.DvOZeroHigh
 import Formalism.SharpRestriction.LevelLetterCocycles.FrameInvPoly

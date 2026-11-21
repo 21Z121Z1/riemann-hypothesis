@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.Counterexample.StatementsMuMetric
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PPtsIntegralPoints
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitDegree

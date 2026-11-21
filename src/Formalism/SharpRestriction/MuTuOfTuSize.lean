@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SumLogPrimeFactorsLe
 import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
 import Formalism.SharpRestriction.ParamsHeightRankConstant

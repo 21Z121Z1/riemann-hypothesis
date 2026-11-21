@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AdelicHermitianForms.SqSubLeNormSub
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.GroupTheory.FiniteAbelian.Basic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTieUpFBrSf
 import Formalism.LocalToGlobal.CharacterGerms.CharacterHypothesisUnramified
 

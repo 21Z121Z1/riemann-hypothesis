@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsChartSup
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPolydiscSubmean
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartTaylorCover

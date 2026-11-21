@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedExtensionEtaleSteinSqIntegrableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HoloLimitIncreasingWeightsStatement
 import ReciprocityTheory.L2DbarEstimates.NormFibrations.LseSmoothRIffReal

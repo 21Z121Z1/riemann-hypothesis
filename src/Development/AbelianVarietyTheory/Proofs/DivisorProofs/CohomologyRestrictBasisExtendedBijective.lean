@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.PrimitiveStructureSheafDegTwoVanish
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsUnitMpTenExtIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepOfFactoringCover

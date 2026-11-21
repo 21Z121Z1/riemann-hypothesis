@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.DivIntoDual
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.VwEqZeroOfNotMem
 import Mathlib.Tactic.ENatToNat

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryLocalChartExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartPotentialContinuousOnStatement

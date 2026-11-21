@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.ZetaGrowth
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.GroupStructureDefs
 import GroundTheory.LocalFields.RamificationStructure
 import GroundTheory.LocalFields.UnramifiedRootsOfUnity

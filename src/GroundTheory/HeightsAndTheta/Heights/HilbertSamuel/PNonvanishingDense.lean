@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNonvanishingDense
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsRatPrimeDense
 import Mathlib.Order.CompletePartialOrder

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsSemilocIntegral
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StCentreOverW
 import Mathlib.RingTheory.Valuation.LocalSubring

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreKLLieGrpGeo
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGCoreGTKLineCut
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DifferentialOperatorBracket

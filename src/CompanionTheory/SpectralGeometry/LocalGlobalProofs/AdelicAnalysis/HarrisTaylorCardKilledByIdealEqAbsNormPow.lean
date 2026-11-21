@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.MeasureTheory.Integral.Pi

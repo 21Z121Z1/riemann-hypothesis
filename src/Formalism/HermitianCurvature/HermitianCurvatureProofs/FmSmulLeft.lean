@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementTB
 import Mathlib.Analysis.InnerProductSpace.Completion
 import Mathlib.RingTheory.WittVector.IsPoly

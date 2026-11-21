@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HolomorphicFamilyOfHomsStatement
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsDomainAway
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.CoordsAt

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AzumayaBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsOneTmulEq
 import Mathlib.Algebra.Azumaya.Basic

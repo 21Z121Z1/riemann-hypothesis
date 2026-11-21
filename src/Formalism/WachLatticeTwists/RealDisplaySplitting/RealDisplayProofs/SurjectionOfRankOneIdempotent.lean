@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RealDisplaySplitting.SurjectionRankOneIdempotent
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.Order.CompletePartialOrder

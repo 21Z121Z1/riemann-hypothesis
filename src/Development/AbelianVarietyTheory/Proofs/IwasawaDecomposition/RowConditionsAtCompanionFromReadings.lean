@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DivisionPairOfAdelicFormsFaceColumnsData
 import Formalism.LocalToGlobal.Divisibility.TupUsed
 open Formalism.BasicNotions Formalism.MainNotions NumberField IsDedekindDomain

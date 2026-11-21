@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Entire
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvOneSubBound
 import GroundTheory.GlobalFields.AnalyticClassNumber.DirichletHecke

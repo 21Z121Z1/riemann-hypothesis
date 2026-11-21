@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBCStmt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MajorantIntegrals
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LatticeSummability

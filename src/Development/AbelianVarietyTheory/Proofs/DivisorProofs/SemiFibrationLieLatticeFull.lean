@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsLeastHermLength
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiFibLieLatticeFullStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianFamilyConjInvariantStatement

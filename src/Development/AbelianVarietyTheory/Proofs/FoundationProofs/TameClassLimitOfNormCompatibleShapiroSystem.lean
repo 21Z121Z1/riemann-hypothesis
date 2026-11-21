@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AlgebraMapPadicIntQbarContinuous
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SpecCauchy
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormIntCastLeOfDvd

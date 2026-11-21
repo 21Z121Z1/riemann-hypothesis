@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafSpreadVCut
 import Mathlib.AlgebraicGeometry.Morphisms.QuasiFinite
 

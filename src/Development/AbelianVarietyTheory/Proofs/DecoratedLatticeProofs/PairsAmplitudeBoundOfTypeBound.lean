@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.TermSumBoundOfPairsAmplitude
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SumLabelsOneRecord
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PgCLeTwoAtRecord

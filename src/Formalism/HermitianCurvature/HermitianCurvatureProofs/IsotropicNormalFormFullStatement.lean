@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianPerturbedVectorOrthogonal
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RightDerivativeRulePsi
 import Mathlib.RingTheory.Etale.Weakly

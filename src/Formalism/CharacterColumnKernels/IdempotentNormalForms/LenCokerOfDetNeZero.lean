@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.StatementX
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.SingleEqSmul
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.LengthKerOfDetEqZero

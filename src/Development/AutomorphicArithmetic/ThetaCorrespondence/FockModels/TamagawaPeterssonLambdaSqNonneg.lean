@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.ConstantSupremum.SupremumConstantLogBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntitoneWeightLogBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeMaxSquaredBound

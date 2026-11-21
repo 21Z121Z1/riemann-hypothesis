@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinLowering.LiftDefs
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal
 import Mathlib.RingTheory.SimpleRing.Principal

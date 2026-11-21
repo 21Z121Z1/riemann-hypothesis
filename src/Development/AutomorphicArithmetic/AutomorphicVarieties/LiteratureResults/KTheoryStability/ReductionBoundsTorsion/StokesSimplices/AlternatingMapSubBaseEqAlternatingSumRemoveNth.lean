@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.KTheoryStability.ReductionBoundsTorsion.StokesSimplices.SubSlice
 import Mathlib.LinearAlgebra.Alternating.Uncurry.Fin
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsStokesLimitTTop
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsTopNMixed
 set_option maxSynthPendingDepth 1

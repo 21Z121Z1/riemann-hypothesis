@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CMDeterminantIdeals.CoeffMemOfLoc
 import Formalism.SharpRestriction.Divisibility.WeightFamilies
 

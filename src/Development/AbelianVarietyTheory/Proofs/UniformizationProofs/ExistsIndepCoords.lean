@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CombEqZeroIffExpansionCombEqZero
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpandsGTransport
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.BoxProductLinearIndependent

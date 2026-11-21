@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MultiplicationOpHom
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelNablaStarRelations
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.InterlaceSignTwo

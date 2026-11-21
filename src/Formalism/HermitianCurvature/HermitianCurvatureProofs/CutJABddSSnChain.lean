@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementB
 
 namespace Formalism.FourierDecayAlt.P.CutMP.JA.SSn

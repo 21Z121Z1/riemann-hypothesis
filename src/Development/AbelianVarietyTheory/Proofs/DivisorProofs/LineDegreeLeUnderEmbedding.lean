@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.PosSemidefOfForallCombination
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsTerTer
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorusExt

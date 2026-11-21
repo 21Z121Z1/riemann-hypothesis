@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.Statement
 import Mathlib.RingTheory.PowerSeries.Basic
 

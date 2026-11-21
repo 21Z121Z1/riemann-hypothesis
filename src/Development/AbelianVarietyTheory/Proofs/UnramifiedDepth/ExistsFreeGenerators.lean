@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.PadicUnitQuotientPrincipalBasisStatement
 import Mathlib.RingTheory.PicardGroup
 import Mathlib.RingTheory.TotallySplit

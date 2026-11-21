@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ExistsSpecializationOfEvalNeZero
 import Development.AutomorphicArithmetic.CommutativeAlgebra.TensorDedekindLocalUniformizer
 import GroundTheory.FunctionField.PlaceBridge

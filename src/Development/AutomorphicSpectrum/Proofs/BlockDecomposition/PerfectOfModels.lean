@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfAllOfModels
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectBaseChangeStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectOfGenericIsoStatement

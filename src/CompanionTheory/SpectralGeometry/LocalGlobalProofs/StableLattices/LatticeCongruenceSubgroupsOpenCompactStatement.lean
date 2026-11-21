@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.StableLattices.LatticeCongruenceSubgroupsOpenCompact
 open CompanionTheory.Rg.FlB CompanionTheory.Rg.Fl
 set_option maxHeartbeats 1000000 in

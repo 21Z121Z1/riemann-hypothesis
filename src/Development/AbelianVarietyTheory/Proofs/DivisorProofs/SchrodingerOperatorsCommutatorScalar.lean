@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinHasTemperateGrowth
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric
 open scoped TensorProduct NNReal Matrix ENNReal

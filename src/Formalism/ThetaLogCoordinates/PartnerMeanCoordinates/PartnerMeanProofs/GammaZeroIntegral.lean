@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.TheoremMXB
 import Formalism.PolynomialDimension.MultinomialDepth.TieOps
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.TheoremMCB

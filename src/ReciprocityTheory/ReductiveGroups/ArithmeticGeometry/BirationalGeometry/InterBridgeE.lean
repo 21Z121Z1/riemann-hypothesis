@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeD
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Topology.Separation.CompletelyRegular

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.ChiExCM
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CharExtend
 import Mathlib.Analysis.CStarAlgebra.Classes

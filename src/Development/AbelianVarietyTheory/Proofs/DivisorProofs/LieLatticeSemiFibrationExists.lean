@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieLatticeNumberFieldExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieLatticeFieldUniformBaseStatement
 

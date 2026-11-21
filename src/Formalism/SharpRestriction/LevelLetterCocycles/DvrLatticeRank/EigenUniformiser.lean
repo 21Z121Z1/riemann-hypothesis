@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.DvdOfCoeffSubstXPowNeZero
 import Mathlib.RingTheory.PowerSeries.Inverse
 import Mathlib.Tactic.Monotonicity.Lemmas

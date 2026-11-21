@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq

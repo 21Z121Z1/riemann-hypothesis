@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ThHEqThSDictionary
 open Matrix Complex NumberField GlobalTheory.SW
 open ReciprocityTheory.ChartRestriction.G.FD (cc herm)

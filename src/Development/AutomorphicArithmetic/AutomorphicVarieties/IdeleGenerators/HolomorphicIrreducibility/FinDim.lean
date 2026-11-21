@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ConstSmall
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.CategoryTheory.Shift.Basic

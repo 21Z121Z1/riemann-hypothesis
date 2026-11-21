@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSabDescentOfFieldExtension
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SysExOfPol
 open AlgebraicGeometry CategoryTheory Limits NumberField

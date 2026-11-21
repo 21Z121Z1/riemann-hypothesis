@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.TiedRec
 import Formalism.LocalToGlobal.HermitianColumns.CocycleZeroMemInvariants
 import Formalism.LocalToGlobal.HermitianColumns.CoordinateLatticeSelfDual

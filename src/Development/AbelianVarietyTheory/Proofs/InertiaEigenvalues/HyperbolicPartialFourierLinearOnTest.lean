@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.WHyp
 import Mathlib.Analysis.CStarAlgebra.Classes
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology

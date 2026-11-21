@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.KummerTheory.InjSlice
 import Development.EtaleCohomology.TateTwists.PrimitiveRootsOfUnityBasicIdentities
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass

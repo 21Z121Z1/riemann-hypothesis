@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HaarCosets
 import GroundTheory.AutomorphicForms.SmoothRep
 import Mathlib.Algebra.Module.StablyFree.Basic

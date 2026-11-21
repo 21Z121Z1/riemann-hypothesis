@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopCore
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.VecVNonloc
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSumLeOfGram

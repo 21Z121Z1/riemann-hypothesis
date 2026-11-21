@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PClsTieIdx
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PClsTieInt
 

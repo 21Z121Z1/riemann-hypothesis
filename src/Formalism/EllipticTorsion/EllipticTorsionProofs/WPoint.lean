@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.WSeriesUnique
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.LocalProperties.Reduced

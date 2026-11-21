@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.CrystallineComparison.CFDefs
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Comparison
 import Development.WeilBound.CoreStatements.PeriodRingComparison.CrystallinePeriodRings.Assembly

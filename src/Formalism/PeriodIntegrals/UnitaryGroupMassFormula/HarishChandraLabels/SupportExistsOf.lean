@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
 
 open Formalism.IrreducibleCountingLemmas.TYPES CategoryTheory Polynomial

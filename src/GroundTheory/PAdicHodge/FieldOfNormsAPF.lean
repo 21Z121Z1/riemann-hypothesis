@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.FieldOfNormsRam
 import GroundTheory.LocalFields.ExamplesCharZero
 import GroundTheory.LocalFields.RamificationStructure

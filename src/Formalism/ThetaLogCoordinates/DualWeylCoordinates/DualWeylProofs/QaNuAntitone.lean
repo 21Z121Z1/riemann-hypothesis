@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.QaRowStrictMono
 import Formalism.GradedWeylDivisibility.StatementD
 import Mathlib.Order.Interval.Finset.Box

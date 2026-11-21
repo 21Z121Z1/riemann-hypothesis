@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FinAlgOfFinite
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DerivAt0CompMem

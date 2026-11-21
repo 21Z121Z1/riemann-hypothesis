@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.IsAdmOnOfFiniteDimensional
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.Normed.Module.Connected

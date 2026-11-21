@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GridFirstColumnStepIsSchwartzBruhatHalf
 import Development.AbelianVarietyTheory.Definitions.Divisors.MoveArgsOneTranspose
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TensorGiven

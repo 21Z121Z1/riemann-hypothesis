@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.EllipticTorsionWeights
 import Formalism.EllipticTorsion.EllipticTorsionProofs.CompExp
 import Formalism.FormalGroupLog.LogDeterminesLaw

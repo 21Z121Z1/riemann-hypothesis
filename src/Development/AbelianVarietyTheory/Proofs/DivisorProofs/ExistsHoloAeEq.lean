@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.RegBall
 import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.ExtWeak
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GroupCohomology.MemZpowersQuot
 import ReciprocityTheory.GroupCohomology.FiniteLevel
 import Mathlib.Topology.Connected.Separation

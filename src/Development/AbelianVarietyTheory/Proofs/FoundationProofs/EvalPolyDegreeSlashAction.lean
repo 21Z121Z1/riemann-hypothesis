@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsDCReps
 import Mathlib.Analysis.CStarAlgebra.Classes
 open GlobalTheory.HeckeFamilyMatrices Polynomial UpperHalfPlane

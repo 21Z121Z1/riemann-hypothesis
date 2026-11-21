@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.FamilyPacketOfEquivalentStatement
 import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice

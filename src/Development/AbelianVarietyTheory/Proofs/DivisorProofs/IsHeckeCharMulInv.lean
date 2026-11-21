@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasChr
 import Formalism.LocalToGlobal.IndefiniteReal.LinksChar
 

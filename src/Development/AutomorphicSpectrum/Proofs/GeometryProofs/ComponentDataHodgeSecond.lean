@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SegreChartBundleStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FrameDomainInSegreChartStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.PairLatticeSumComapStatement

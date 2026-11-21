@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WittFrameOrthogonalComplementBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualLatticeIntegralProjectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfDualLatticeProjectionCriterionStatement

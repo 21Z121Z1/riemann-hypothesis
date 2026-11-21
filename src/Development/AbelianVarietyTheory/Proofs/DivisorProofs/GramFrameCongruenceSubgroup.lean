@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RiemannianHaarIndependentOfOrthonormalFrame
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbittAlg

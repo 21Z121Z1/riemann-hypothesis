@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.GlobalIrreducibility.DzStickValMain
 import Mathlib.Analysis.Complex.Circle
 import Std.Tactic.BVDecide.Normalize.Prop

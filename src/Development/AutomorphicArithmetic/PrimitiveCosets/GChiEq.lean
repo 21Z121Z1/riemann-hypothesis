@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic
 import Mathlib.Tactic.Polynomial.Basic

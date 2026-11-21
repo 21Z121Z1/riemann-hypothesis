@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsNormVEqNormVUnderPow
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LtOneOfContinuous
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RamificationTowerCompatible

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementPN
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LocalVolumePositivity
 import Mathlib.Data.Int.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ReadingEqZero
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EquivAllEnl
 import Development.AutomorphicArithmetic.UnitTensorPairings.GeometricActionOverCoefficientExtension

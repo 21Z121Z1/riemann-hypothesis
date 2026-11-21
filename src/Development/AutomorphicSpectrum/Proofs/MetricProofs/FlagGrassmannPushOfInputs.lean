@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagGrassPush
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFsInvPow
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagImageGrass

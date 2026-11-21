@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsRec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubOrthProjPerpMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodLiftOntoOfBase

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.UnrAe
 import Mathlib.Algebra.AffineMonoid.Basic
 

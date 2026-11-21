@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ZlWCbInjective
 import Formalism.SharpRestriction.LevelLetterCocycles.NormLtOneIffToZMod
 import Mathlib.Topology.Connected.Separation

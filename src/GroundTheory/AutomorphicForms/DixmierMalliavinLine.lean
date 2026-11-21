@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.DixmierMalliavinLineBounds
 import GroundTheory.AutomorphicForms.DixmierMalliavinLineLimit
 import Mathlib.Analysis.Normed.Group.Tannery

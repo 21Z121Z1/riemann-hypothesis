@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.SiegelReframe
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Mathlib.RingTheory.PicardGroup

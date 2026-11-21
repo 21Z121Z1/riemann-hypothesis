@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutSH2
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelPointCoordinates
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevTransportHer

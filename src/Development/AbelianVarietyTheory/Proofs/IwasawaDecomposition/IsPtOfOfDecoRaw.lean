@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.MemPrinCongOfSm
 import Formalism.LocalToGlobal.Columns.RecLevelLoc
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc

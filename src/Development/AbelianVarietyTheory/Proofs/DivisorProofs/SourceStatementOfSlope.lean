@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSetupCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BudgetOfSizeAndWeight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeFormula

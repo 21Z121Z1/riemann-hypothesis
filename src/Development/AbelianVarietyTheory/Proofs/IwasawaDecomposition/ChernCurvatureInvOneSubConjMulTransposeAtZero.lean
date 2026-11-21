@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExtFormAdjEqNegSecondForm
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
 open scoped Matrix

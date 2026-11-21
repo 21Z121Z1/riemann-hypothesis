@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingIntegralTwistPrimeEqDeepFiniteSumStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EntriesWellDefined
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LatticeClasses

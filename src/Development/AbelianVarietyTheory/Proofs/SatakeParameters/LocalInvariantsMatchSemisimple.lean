@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SSAscent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ContMapRepIotaOQ

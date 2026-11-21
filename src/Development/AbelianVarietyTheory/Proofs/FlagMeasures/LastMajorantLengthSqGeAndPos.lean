@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LenEqOfUnitriangular
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.IsFRepOnePlusDet
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TwoByOneBlock

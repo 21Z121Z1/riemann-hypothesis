@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.BilinearVacuumNonzeroCuspForm
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.WeilRepresentationContinuous
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IntegrableOnMulRight

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AddCharConductorAndHaarIntegersExist
 import Development.AutomorphicSpectrum.Definitions.MembershipCriteria.GoodChar
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.MaIntEmpty
 import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
 import Mathlib.Order.CompletePartialOrder

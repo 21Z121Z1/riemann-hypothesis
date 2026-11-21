@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteFactor
 import GroundTheory.AutomorphicForms.SmoothRep
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 open GlobalTheory.FinGL Formalism.L2.DIV Module
 

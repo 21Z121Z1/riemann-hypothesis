@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MomAllP
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantLengthTailBoundOfMomentsStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MajorantLengthTwoSidedMomentsLargeGapStatement

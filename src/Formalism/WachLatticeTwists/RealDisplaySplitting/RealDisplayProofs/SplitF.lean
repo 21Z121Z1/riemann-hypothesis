@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.RealizationAllFormsHolds
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.HZeroInvariantsKilled
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.TheoremNFiveTopSplitTb

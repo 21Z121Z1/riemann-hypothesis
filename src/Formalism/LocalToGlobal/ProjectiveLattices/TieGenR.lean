@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.TieGen
 import Formalism.LocalToGlobal.ProjectiveLattices.TieUpA
 

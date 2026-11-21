@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.MultilinearVanishLattice
 

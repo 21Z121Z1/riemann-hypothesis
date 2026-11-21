@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.InvariantSeriesBidegreeOneOne
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

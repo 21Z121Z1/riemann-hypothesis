@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaCompOfIsGrpPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EtaEqOfMkEq
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

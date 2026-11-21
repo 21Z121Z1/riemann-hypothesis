@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.IsLocFrac
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.LocalProperties.Reduced

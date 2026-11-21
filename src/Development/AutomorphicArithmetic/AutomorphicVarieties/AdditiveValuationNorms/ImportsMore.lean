@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.LenComp
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.ImportsTer
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.CokLen

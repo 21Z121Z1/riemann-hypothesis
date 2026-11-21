@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducibleStatement
 import Mathlib.RepresentationTheory.Maschke
 import Std.Tactic.BVDecide.Normalize.Prop

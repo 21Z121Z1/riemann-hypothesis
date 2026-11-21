@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HomExtNormalSt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MorphismExtensionFromGenericPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpecMorphismEqOfLocalInjectiveStatement

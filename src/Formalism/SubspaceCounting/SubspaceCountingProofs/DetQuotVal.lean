@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SubspaceCounting.DetQuotVal
 import Formalism.SubspaceCounting.SubspaceCountingProofs.DetVal
 import Mathlib.Algebra.AffineMonoid.UniqueSums

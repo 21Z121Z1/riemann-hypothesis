@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.ExistsPerfectCharacterQuotientStatement
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.CardH0TwistedDual
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.BkPair

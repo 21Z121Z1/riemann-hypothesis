@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.IdealCountLeW
 import Formalism.HyperbolicPlaceProducts.SecondLevelArithmeticNorm
 import Lemmata.GeneralBFactSecondMore.Imports

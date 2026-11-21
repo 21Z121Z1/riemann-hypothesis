@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.TypeDeformPer
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CrystallineAndJumps
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.KummerNotFrac

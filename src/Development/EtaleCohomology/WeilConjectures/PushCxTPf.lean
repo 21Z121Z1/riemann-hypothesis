@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.WeilConjectures.PushPf
 import Development.EtaleCohomology.KummerTheory.InjSlice
 

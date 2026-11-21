@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafTwPairExistsPf
 import Development.EtaleCohomology.TateTwists.EtaleTensorPairTwistResolutionMul
 

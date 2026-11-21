@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.PrimeCountAsymptoticInProgressions
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Psi0ZeroFreeRegionBoundStatement
 import Mathlib.Analysis.Normed.Group.Tannery

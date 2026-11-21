@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetSNeZero
 import ReciprocityTheory.SemistableReduction.AlgebraicIndependentOfDerivations
 import Mathlib.RingTheory.Derivation.Lie

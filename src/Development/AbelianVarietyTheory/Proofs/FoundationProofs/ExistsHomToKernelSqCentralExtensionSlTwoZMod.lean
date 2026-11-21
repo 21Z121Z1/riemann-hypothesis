@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Sl2CentralExtensionCommutatorSqStatement
 import Mathlib.GroupTheory.NoncommCoprod
 import Mathlib.LinearAlgebra.Matrix.FixedDetMatrices

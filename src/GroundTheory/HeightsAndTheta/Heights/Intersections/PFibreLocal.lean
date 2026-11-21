@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaB
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.Assembly
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsFibreLocal

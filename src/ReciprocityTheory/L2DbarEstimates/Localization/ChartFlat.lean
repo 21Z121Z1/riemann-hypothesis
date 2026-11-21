@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.Localization.ChartB
 
 namespace ReciprocityTheory.L2DbarEstimates.F

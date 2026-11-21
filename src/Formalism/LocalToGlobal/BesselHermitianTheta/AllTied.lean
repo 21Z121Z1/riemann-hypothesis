@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedType
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeilUnr
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedKfin

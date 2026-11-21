@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.JacquetLanglands.RealArchimedeanBounds.ATrans
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.KLevTop
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense

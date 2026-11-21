@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.BFTrueDeg
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.LogLeOfLeSq
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.NormalWeightCovectorZero

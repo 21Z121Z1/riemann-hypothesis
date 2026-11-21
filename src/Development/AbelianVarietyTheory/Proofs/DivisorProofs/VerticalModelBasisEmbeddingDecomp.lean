@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EAComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFrameLocal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeUniquenessOfCovering

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeightMajorantBound
 open Ad3.LR Ad3.LR.DTr GlobalTheory.CompanionTheory.DInt2
 set_option maxHeartbeats 1000000 in

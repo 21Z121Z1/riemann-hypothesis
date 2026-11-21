@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumVonMangoldtDivSqIocLe
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumVonMangoldtDivSqTail
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.SumDivSubLeTwoLogOfPartialSums

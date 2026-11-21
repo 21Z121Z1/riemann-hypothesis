@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergmanDensIntegrable
 import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
 import Mathlib.Topology.Sheaves.Presheaf

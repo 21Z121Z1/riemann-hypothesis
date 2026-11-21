@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodsInCoordinatesFromBasePullDeg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToUnitTKLeft
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsLastFurther

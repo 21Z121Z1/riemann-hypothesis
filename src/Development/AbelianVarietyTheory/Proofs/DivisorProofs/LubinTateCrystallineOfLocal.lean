@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.LtChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FKEqResDeg

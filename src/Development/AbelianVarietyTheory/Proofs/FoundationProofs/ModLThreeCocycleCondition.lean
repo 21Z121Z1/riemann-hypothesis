@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.NumberTheory.Padics.RingHoms
 import Mathlib.Tactic.ENatToNat

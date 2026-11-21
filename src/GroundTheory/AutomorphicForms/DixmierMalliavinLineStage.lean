@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.DixmierMalliavinLineKernel
 import Mathlib.Analysis.Calculus.ContDiff.Convolution
 import Mathlib.Order.CompletePartialOrder

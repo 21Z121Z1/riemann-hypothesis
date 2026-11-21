@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAnisoAt
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsWeilFormulas
 

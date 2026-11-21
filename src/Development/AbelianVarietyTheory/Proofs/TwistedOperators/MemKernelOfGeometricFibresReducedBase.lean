@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsIsCan
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.HomExtOfGeometricPoints
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.GenBridge

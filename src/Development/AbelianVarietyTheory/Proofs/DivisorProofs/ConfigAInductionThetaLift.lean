@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaUnramifiedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaGlobalFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaVanishingStatement

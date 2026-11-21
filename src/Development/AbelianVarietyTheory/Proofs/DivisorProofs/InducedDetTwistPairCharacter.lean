@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusThreeBlockApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedFullRankIrreducible
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviBlockSizesSum

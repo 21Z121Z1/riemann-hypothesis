@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.UniformContinuousConstSMulOfIsIsometricSMul
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

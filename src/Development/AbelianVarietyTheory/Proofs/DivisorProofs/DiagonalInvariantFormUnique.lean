@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharacterInvariantAdelicFormEqMulEvalZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchimedeanPartialFourierSurjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFinitePartialFourierBijectiveStatement

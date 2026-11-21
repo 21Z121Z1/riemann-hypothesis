@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.ConductorOneDim
 import GroundTheory.LocalFields.LocalZeta
 import GroundTheory.AutomorphicForms.GL2.GodementSectionFactor

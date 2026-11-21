@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.LocalNorms
 import GroundTheory.GlobalFields.KummerTheory.Splitting
 import GroundTheory.LocalFields.UnramifiedNormSurj

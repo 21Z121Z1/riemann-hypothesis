@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Adele.Approximation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormSqEmbeddingImagQuadraticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormCoprimeIdeleApproximationStatement

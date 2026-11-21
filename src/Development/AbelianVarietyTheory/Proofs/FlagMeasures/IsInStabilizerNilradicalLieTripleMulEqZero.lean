@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoveringRadiiIff
 
 open GlobalTheory.Count Formalism.MainNotions.S Formalism.REAL Matrix NumberField Finset

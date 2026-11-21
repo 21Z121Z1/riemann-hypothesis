@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ScPsiExists
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ScGapBig
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ScMuExists

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SmoothQuot
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsBisLast
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable

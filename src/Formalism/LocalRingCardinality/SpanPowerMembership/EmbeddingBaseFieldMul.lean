@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZTypeI
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZTypeL
 import Formalism.LocalRingCardinality.SpanPowerMembership.EmbeddingBaseFieldCondition

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Category.Ring.FinitePresentation
 import Development.EtaleCohomology.EtaleSheaves.EtaleSpreading.EtSpreadsOf
 

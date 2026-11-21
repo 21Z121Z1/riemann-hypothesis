@@ -1,4 +1,4 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DepthZeroSupport
 
 namespace GlobalTheory.Fc.S0

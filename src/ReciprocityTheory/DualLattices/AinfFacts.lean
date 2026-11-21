@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.DvdOfCoeffZero
 import ReciprocityTheory.DualLattices.ExistsPrimitiveRoot
 import ReciprocityTheory.DualLattices.ValUntiltESubOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsPFIntZero
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExMapAlt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.LeviOfRealSmulRight

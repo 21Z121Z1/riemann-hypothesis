@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeMulNFiniteFlatSurjective
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsMonHomLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftLeftFst

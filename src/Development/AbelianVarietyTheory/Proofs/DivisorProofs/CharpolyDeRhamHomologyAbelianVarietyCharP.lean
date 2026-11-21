@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharpolyMapEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinrankTheoryMu
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeRhamVectorExtension

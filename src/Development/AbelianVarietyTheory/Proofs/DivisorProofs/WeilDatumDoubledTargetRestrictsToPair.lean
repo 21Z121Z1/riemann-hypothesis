@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaFunctionDoublingThetaTensorCMStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeisenbergOpDoubledGramDoublingThetaTensorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumDoubleSpaceActsUnitScalarSeesawCM

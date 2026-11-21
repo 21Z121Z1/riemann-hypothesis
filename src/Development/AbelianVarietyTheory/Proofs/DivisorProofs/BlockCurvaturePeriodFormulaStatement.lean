@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockCurvaturePeriodFormula
 open Matrix Filter Topology GlobalTheory.HermFrame
 open scoped ComplexOrder

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.StatementRho
 import Mathlib.NumberTheory.Padics.PadicIntegers
 

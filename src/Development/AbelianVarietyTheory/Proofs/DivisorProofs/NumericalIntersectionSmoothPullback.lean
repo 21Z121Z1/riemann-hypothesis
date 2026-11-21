@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NontrivialIsomClassInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizationSymmetricFormIdentityStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.ChernOn

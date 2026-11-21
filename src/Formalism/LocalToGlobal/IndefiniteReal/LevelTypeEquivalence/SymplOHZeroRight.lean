@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.ContReal
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.SobPhase
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.Sobolev2

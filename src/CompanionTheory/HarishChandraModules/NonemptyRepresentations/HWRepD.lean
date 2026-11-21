@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.HarishChandraModules.NonemptyRepresentations.NonemptyOfAntitone
 import Mathlib.Tactic.ENatToNat
 

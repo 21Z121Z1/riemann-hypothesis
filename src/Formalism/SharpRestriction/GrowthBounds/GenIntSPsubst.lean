@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.PowerSeriesFrobeniusCongruence
 import Formalism.LocalToGlobal.CharacterGerms.SubstSubst
 import Formalism.LocalToGlobal.CharacterGerms.MaximalOfValuationGeOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.HermitianDescent.NormAlmostAll
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGFree
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DvdOfAeval

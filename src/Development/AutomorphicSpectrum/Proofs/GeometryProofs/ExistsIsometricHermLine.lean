@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MultihomogIdealEquivalenceStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RelevantPrimeOverMultihomogStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.MultihomogComponentQuotientStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RhoAntitoneOfInterlacing
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ResidueForm
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.L0ConstantPartCommute

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.SelfDualOfDiff
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SelfDualDifferent.Imports
 import Mathlib.RingTheory.Henselian

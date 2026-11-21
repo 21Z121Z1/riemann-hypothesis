@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.ConcavityEquidistribution
 import Formalism.LogVandermondeBounds.LogVandermondeProofs.GammaIntegralPolynomialBound
 import Mathlib.Analysis.Real.Pi.Bounds

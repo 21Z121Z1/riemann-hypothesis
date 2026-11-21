@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DensityLemma.PGsWitt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CompactGroupHaarExists
 

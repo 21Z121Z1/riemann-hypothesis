@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GelfandTsetlinLowering.LiftDefs
 import Formalism.GradedWeylDivisibility.StatementE
 import Formalism.PeriodIntegrals.HwIrred

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.CasimirPowerSurjectiveSymmetric
 import ReciprocityTheory.Chebotarev.EulerSum
 import ReciprocityTheory.Chebotarev.EulerLim

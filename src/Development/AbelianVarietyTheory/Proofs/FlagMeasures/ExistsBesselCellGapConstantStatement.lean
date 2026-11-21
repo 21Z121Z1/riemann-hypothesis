@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsBesselCellGapConstant
 open MeasureTheory Matrix
 open scoped InnerProductSpace ENNReal

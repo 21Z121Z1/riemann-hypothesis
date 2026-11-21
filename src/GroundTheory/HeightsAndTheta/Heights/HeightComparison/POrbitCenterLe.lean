@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitCenterLe
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.FinitePlaceSumLe
 import Mathlib.Tactic.Monotonicity.Lemmas

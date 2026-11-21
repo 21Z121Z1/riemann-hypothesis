@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HahnSeriesCoeffRingHomMapCoeff
 import Mathlib.RingTheory.Valuation.LocalSubring
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousToGAd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsParDec
 open scoped TensorProduct NNReal Matrix ComplexConjugate

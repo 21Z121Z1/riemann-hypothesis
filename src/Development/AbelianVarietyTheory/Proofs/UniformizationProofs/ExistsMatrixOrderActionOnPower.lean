@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsMatrixRingAct
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RosatiAdjMul
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.RosatiAdjointOfBoxProjectionsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSquareTransferIdentityHolds
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNormDegGBetaInfAbs
 import Development.WeilBound.CoreStatements.BetaInfinityCoefficients.BetaInfinityCoefficient

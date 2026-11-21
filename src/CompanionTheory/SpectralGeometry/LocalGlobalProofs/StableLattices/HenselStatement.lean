@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.StSandwich
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Tactic.ReduceModChar

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComplexMinimalPrimesContract
 import Mathlib.RingTheory.Ideal.GoingDown
 set_option maxSynthPendingDepth 1

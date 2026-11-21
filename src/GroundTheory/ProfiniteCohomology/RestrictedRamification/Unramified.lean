@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GaloisModules.FixedField
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.MaxUnramifiedOutside
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Ramification

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SmoothTranslationMeasure.SmoothTranslate
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleySignature
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap

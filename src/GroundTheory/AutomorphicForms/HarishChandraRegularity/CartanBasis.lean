@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GKModules.SmoothVectors
 import Mathlib.LinearAlgebra.QuadraticForm.Basic
 import Mathlib.Order.CompletePartialOrder

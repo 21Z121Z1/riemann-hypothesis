@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedKfin
 import Formalism.SharpRestriction.Divisibility.KudlaSiegelWeil
 

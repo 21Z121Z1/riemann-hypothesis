@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardLatticeDoubleCosetClassesStabilisers
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatLevel
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LatSDa

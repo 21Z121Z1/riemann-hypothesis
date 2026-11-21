@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.StNmSmallIntoFS
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PConductor
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSecEq

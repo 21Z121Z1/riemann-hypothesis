@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsArch
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 import GroundTheory.GlobalFields.TateThesis.TraceFourier

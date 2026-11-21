@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.IsFractionRingOfIntegers
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FinrankWAddConj
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GeneratesDiffMap

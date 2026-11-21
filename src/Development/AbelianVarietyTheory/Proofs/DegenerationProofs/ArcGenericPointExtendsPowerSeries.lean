@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AdicCompleteness.IsAdicCompleteComapConstantCoeff
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenericSectionExtendsNormal
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsGenOfFrames

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUnitAnalyticFunction
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.EFam
 import Development.AutomorphicArithmetic.Foundations.EtaleClopenDescent.IsIntegralRBIff

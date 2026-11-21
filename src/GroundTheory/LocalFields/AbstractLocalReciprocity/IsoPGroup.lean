@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.AbstractLocalReciprocity.IsoCyclic
 import GroundTheory.LocalFields.AbstractLocalReciprocity.FunctorialityTransfer
 import Mathlib.GroupTheory.IndexNormal

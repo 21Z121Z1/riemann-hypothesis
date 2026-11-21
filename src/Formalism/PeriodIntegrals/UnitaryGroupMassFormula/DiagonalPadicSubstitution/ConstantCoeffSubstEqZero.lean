@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.DiagonalPadicSubstitution.SubstOps
 import Mathlib.NumberTheory.Padics.RingHoms
 import Mathlib.Order.CompletePartialOrder

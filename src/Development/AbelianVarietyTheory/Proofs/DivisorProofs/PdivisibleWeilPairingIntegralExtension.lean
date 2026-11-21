@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasLatticesComplete
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaInjectiveSaturationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VectorExtensionSurjectiveFieldStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.ValuationChoiceHypothesis
 import Formalism.LocalRingCardinality.DataForced
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.CyclicSolvable

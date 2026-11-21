@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PairPtsEqSum
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ActOMemLatOOfHat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenComapProdLev

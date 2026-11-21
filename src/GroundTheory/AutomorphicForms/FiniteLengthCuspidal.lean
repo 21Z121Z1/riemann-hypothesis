@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.FiniteLengthJacquet
 import GroundTheory.AutomorphicForms.FiniteLengthPieces
 import GroundTheory.AutomorphicForms.FiniteLengthLevi

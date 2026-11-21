@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExpandsAtSecIsMul
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.SumMatch
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IntegralOfPullAl

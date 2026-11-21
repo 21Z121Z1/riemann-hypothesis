@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.TameInertiaTowers.StatementField
 import Formalism.TameInertiaTowers.InvLength
 import Formalism.TameInertiaTowers.CentralOrderTwo.NormalOrderTwoCentral

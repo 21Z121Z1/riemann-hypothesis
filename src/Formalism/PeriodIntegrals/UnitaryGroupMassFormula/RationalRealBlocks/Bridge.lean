@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.BlockRatReal
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylLeDual
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.SumIcoTsubTelescope

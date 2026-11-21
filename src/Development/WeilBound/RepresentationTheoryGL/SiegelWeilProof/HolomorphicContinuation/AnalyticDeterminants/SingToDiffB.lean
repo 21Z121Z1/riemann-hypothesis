@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.AnalyticDeterminants.SingToDiffA
 import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
 import Mathlib.Order.CompletePartialOrder

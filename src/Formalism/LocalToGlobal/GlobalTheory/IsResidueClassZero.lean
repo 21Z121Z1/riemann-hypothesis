@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.Numbers
 import Formalism.LocalRingCardinality.DataErr
 import Formalism.LocalRingCardinality.DataMink

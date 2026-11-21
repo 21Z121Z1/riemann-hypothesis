@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.FdOfCharts
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.DelEquiv
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittFractionAlgebraCp

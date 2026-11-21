@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LmuNumNonneg
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ConjugateEigenSubDegreeEqStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.LieSubDegreeBoundByDualStatement

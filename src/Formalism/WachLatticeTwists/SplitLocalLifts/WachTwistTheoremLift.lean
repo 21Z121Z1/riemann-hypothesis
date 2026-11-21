@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.SplitLocalLifts.StatCompColk
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PowLeSpanPowSup
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ImportsBis
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.Target

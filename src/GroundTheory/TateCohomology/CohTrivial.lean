@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.CohTrivialPGroup
 import GroundTheory.TateCohomology.TateGroupIso
 import GroundTheory.TateCohomology.CoresRes

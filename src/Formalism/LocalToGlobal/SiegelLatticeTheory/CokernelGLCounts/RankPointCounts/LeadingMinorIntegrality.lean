@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.FamilySeparationBound
 import Formalism.SharpRestriction.CuspSpanNormBounds.OscillatoryIntegralBounds
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleLayerExistsGenerators

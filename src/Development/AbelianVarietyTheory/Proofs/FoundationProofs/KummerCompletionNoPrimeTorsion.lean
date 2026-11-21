@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.TowerUnitClassModPrimePowProperties
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 open scoped MatrixGroups TensorProduct

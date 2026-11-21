@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.NormalizedTrace
 import GroundTheory.PAdicHodge.CyclotomicField
 import GroundTheory.PAdicHodge.GaloisOnCp

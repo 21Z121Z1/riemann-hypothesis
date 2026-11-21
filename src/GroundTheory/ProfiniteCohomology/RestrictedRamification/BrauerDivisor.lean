@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.DivisorModule
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerDivisorKummer
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerDivisorPlaces

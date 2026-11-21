@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EsymmEqSumFilterPermStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurMulDetEqDetStatement
 import Mathlib.Algebra.AffineMonoid.UniqueSums

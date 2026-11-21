@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.CoveringAndSmoothness
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.CoveringAbelianLocusSmooth
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFiniteTorusExtensionOfModel

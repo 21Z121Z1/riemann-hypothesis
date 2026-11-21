@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.TestBoundOfRhoAndNormSets
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.SegDefs
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.DigitPartMonomial

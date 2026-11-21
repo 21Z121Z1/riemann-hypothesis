@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulVecMemLatGHat
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.IsWeakOfDatum
 

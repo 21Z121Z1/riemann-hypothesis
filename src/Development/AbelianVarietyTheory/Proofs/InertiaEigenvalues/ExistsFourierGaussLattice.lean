@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdelicUnitriangularMulMemUnipotentTimesIntegral
 import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz

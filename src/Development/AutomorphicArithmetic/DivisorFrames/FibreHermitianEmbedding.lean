@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.LieLatticeGenerator
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsExponentialUniformization
 import Development.AutomorphicArithmetic.DivisorFrames.HodgeGramEqPiMulHermFormOfExponential

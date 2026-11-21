@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.FlagLineMetricExpBound
 import Development.AutomorphicArithmetic.DivisorFrames.GrSqTransposeInverse
 import Development.AutomorphicArithmetic.DivisorFrames.TrueModelChartDivisor

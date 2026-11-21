@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.RecTie
 import Formalism.LocalToGlobal.IndefiniteReal.LinksW
 import Formalism.LocalRingCardinality.DataRRMetric

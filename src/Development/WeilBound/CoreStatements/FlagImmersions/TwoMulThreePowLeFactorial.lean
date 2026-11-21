@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PrimeWeightEqZeroOfLt
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PRestInnerTsumBound
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.LieTermFlagBoundStatement

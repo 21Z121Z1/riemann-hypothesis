@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 open Filter Topology Set Metric MeasureTheory ReciprocityTheory.AnForm
 open scoped ContDiff

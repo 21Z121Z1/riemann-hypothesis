@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.PsiWeilOfAbsNorm
 import Formalism.LocalToGlobal.Divisibility.NumericScaleExponentEqExtended
 import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth

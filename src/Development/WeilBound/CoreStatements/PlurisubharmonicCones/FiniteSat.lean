@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.UniLatA
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.Data.Int.Star

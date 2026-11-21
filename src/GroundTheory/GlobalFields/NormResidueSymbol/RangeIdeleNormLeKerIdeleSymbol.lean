@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.NormResidueSymbol.Infinite
 import GroundTheory.GlobalFields.NormResidueSymbol.AbstractUnique
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResVolume
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSupBoundCount
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSmallPacking

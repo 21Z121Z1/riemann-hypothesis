@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.DetCharacterMemPrincipalCongruenceFixedVectors
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll
 open GlobalTheory.GLq GlobalTheory.GLp GlobalTheory.SerSys

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CoshProductDet
 open scoped Matrix
 open GlobalTheory.IndefiniteRowSideFullHecke.RealRankSubgroupMembership

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.Imports
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.FTDefs
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.LevOfSymVar

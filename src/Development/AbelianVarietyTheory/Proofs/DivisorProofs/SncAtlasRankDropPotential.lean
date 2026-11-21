@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsSNCAtlasOfIsEmpty
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Pullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticLogResolution

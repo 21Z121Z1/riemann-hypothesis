@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SubspaceCounting.ChoiceOfTopsRefined
 import Formalism.GradedWeylDivisibility.FinalD
 import Formalism.SharpRestriction.GrowthBounds.SelectionLemmas

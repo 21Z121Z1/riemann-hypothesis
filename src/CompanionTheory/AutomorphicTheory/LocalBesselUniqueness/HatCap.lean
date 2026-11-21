@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.HatProd
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatBdd
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatJDACapTodaV

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NonemptyDefiniteRationalPointDataComponentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComponentPointLastIndexStatement
 set_option synthInstance.maxHeartbeats 400000

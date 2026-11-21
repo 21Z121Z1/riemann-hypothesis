@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.OverPair
 import Development.AbelianVarietyTheory.Definitions.Divisors.FlagM3PadicGlobal
 

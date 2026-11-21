@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StRatChartChangeVar
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StRatSheetSumMeasurable
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StRatSheetNoChartNull

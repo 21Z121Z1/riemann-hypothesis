@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCyclotomicExtensionQI
 import GroundTheory.GlobalFields.LocalAtPlace
 import Mathlib.Topology.Connected.Separation

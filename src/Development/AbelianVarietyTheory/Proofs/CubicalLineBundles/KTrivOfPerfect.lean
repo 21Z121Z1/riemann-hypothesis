@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.KTrivOfUnimodular
 import Development.AbelianVarietyTheory.Definitions.CMLattices.IsDiffOf
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.BaseLevels.LevelsGEmpty
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.LevelWithoutExtraPlaces
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ValIntN

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Degenerations.AdmissiblePadicIntMaximalIdeal
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.LocalFramePowerSections
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ValuationExtension

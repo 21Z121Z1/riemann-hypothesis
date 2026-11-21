@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.M2ModelOfCurveBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.M2CurveEstablishedStatement
 open AlgebraicGeometry CategoryTheory NumberField

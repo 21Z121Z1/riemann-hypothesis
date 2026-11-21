@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LabCompat
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AtMOfParamRec
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.RingAFacts
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.NormRingALe
 import Mathlib.Algebra.Order.Ring.Star

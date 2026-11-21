@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.AtypicalPathSmallWeight
 import Formalism.ThetaLogCoordinates.ResidueClassEstimates.StatementT
 import Mathlib.Algebra.Order.Star.Real

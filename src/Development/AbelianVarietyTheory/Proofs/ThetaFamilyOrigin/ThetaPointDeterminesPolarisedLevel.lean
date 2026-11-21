@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.VanishingIdealConePrimeHomogeneous
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsHomogenisation
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.HilbEqFinrankQuotPiece

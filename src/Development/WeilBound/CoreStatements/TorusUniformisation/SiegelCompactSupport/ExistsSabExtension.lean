@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.TorusUniformisation.SiegelCompactSupport.SiegProperSt
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CubicalStructureAndSymmetricOfCubeGenStatement
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsPullCubicalId

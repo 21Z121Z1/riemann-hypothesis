@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CurveDVRSpecialization.FlipTwoThree
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.KrullDimension.NonZeroDivisors

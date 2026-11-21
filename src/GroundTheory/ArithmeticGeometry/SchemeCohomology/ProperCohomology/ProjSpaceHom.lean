@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ProjHom
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveSpaceChart
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.StarNum
 import Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.StarNumB
 

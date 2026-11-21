@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.GlobalIrreducibility.NarrowBigHolds
 import Development.AutomorphicArithmetic.ThetaCorrespondence.FockModels.MultiIrr
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ChevalleyUnitsStatement

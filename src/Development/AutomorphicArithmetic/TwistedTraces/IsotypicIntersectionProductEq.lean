@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.TwistedTraces.IsotypicComponentProductOfSmoothReps
 import Development.AutomorphicArithmetic.TwistedTraces.IsotypicSubmoduleProductDecomposition
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsScalarOfTwistedIntertwinerCommutingAlgebra

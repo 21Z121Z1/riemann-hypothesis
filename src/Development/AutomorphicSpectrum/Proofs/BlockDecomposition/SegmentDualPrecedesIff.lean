@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassCuspidalStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassInvolutiveStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DualClassTwistNegStatement

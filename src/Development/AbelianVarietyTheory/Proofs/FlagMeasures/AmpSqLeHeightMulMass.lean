@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BasicInequality
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmpSqLeCardMulSum
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassDefectOrderLeStatement

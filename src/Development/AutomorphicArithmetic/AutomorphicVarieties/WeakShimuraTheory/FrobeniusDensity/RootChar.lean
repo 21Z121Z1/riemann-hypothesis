@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.PrincZl
 import Mathlib.NumberTheory.Padics.AddChar
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ReducedCoefficients

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.DiagUnitMemAndNormalizesKOne
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetTwist
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlockExtMemTwistedK1Statement

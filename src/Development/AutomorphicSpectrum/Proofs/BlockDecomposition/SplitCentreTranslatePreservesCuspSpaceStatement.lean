@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitCentreTranslatePreservesCuspSpace
 open NumberField GlobalTheory.CuspRep MeasureTheory PositivityTheory.Affgl
 set_option maxHeartbeats 1000000 in

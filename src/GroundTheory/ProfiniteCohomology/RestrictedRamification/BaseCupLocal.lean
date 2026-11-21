@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseKummerDefs
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.Bockstein
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.CutPassage
 import Formalism.LocalToGlobal.Divisibility.RowLatLemmas
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.MdiscSt
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.Calculus.ContDiff.CPolynomial

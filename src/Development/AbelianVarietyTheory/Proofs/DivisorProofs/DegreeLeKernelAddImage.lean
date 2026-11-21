@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFrameMapOfAppendStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexAppendLeMulStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogDetGramAppendLeStatement

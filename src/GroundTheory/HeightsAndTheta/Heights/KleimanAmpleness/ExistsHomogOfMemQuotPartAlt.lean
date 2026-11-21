@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.CellMeets
 import Mathlib.RingTheory.Henselian
 import Mathlib.Tactic.Polynomial.Basic

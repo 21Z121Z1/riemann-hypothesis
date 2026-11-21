@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.RealPlaceTaylor.CompactExponentialSurjective
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsBlockOrd
 import Mathlib.Analysis.ODE.ExistUnique

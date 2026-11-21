@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspCorrespondenceBound
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsEmbLabel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LabelEmbCompInjective

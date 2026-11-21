@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VLtOneOfOrdLEqOne
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DiagTMemIwGL
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.DoubleCosetSeparation

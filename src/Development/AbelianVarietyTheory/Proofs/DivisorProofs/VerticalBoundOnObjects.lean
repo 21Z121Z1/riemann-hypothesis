@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLogDivPredLeReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FRSubEqTopSub
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TruncatedPotentialSmooth

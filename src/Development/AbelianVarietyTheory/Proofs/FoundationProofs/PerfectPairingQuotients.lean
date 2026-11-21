@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsHeisTrivial
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
 open Classical GlobalTheory.FinWeil

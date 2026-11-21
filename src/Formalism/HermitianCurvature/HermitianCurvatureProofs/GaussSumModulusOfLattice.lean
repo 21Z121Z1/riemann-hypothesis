@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralLatticeRefinementIdentity
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.MvPolynomial.Ideal

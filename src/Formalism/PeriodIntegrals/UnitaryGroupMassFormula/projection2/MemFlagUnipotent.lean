@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OneCosetSharp
 import Mathlib.RingTheory.PicardGroup
 

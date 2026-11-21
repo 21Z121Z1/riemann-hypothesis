@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TwArgs
 import Formalism.LocalToGlobal.IndefiniteReal.HeckeNonvanishing.Imports
 open Formalism.BasicNotions Formalism.MainNotions NumberField IsDedekindDomain

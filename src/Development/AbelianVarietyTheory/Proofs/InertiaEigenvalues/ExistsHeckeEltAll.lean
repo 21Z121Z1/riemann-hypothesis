@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.HeckeSupportLattices
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.OffRange
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.HeckeSplitOne

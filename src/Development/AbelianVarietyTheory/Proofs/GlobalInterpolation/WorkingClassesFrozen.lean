@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ValidForConstructedPointClassesEventuallyWorking
 import Formalism.SharpRestriction.DesignExistsOfChoices
 import Formalism.SharpRestriction.SmoothDesignExistence.DesignExistsDes

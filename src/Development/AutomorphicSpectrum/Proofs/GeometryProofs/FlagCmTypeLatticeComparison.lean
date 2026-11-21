@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsPullWedge
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ImaginaryRootConj
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.DivMemLineLat

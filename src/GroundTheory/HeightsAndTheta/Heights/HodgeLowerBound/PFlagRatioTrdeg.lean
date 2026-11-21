@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StatementsFlagRatioTrdeg
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagPivotAlgIndep
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PFlagPivotIdentity

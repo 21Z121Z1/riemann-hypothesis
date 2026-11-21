@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.DiscreteModules
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RepresentationTheory.Continuous.TopRep

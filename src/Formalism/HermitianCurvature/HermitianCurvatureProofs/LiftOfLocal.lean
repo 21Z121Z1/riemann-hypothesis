@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SizeAtNonneg
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdmissibleOfPlaces
 

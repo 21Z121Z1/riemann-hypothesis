@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilPairingRootsUnity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieModelIsBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilIsLevelChange

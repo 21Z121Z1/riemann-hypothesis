@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GelfandTraceConjInvertibleScalarMatrixStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ElementaryTracePowerCyclicWordsStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FreeAlgebraLiftMonoidSumStatement

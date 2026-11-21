@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.HasOrder
 import Formalism.MahlerMeasure.MahlerMeasureProofs.LevelAct
 import Mathlib.RingTheory.Henselian

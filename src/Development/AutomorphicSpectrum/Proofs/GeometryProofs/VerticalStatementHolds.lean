@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences
 
 namespace GlobalTheory.CompanionTheory.Ar.Flat

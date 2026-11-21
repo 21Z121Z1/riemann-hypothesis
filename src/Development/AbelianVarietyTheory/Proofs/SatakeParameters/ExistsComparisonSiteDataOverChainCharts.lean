@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.JointCmpEmbeddingYAlt
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ChiFinOfGlevH
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUnifPow

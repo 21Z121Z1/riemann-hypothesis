@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicInvariantSplitPlacesConstStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedThetaIntegralRationalInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DefiniteAdaptedPlaneThetaReductionStatement

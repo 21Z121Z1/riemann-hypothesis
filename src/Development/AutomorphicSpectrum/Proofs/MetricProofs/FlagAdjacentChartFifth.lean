@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockLUFactorizationStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.LUTwistRefactorizationStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartTenthStatement

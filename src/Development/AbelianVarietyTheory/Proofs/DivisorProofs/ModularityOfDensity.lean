@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsModelWithRatio
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBlowupNormalizationCartierStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestPointLiftProperStatement

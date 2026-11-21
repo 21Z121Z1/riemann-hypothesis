@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LogVandermondeBounds.LogRatioUpperBound
 import Formalism.HermitianLattices.StatementMass
 

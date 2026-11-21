@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.ExistsSecNonzeroLocusEqOfLbIso
 import Mathlib.Algebra.Module.Submodule.Union
 import Mathlib.AlgebraicGeometry.Geometrically.Integral

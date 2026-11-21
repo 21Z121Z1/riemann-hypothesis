@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Group.ForwardDiff
 import Mathlib.Algebra.Module.ZLattice.Covolume
 import Mathlib.Algebra.Module.ZLattice.Summable

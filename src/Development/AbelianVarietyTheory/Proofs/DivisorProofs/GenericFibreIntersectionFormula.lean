@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreClosedSubvarietyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreDimensionLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericFibreProjectiveStatement

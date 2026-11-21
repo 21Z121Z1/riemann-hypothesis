@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.LeviForms.LogNormSq
 import Mathlib.Analysis.Calculus.FDeriv.Star
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.ArchimedeanUniformConstantsCompactSupport
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopRatio
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LimitOfModuleForms

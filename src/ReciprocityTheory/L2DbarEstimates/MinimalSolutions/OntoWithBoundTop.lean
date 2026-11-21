@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.MinimalSolutions.MinimalSolution
 import Mathlib.Tactic.Monotonicity.Lemmas
 

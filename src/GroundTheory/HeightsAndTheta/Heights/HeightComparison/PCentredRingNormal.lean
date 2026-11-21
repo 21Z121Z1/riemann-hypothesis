@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightCentredRingNormal
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PSubringPrimeMaximal
 import Mathlib.Algebra.AffineMonoid.Basic

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsMoriwakiBigCurve
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveCountLower
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSmallPacking

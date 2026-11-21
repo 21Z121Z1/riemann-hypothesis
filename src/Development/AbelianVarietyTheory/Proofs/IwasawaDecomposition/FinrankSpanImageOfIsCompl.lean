@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExistsExtendResidue
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.DetCondTensorDefinite
 

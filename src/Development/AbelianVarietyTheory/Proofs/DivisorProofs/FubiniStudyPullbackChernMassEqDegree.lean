@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericDegreePullbackFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntPullFubiniStudyEqZeroOfNotDominantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernFormFubiniStudyTotalStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RootSubgroupBasics.TriShear
 import Mathlib.Analysis.Complex.Isometry
 import Mathlib.CategoryTheory.Countable

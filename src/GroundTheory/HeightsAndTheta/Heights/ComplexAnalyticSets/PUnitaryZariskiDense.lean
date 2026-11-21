@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StUnitaryZariskiDense
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Matrix.Spectrum

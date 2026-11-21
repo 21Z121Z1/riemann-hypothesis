@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSheetOnlyNull
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPosPartLocal
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StPosPartSplit

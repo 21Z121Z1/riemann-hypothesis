@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.QuadraticBoxVolumeBound
 open MeasureTheory Topology GlobalTheory.CompanionTheory.WeilSiegel.Inf0
 open scoped ENNReal NNReal Matrix

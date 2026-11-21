@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PMUcSmooth
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.BRegWeightLevi
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.RegWeightLimits

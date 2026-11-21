@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnfoldingIntegralCountableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviMapContinuousStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalLeviClosureMemStatement

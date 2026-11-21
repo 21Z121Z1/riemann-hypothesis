@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsGenericSections
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 set_option maxSynthPendingDepth 1

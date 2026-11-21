@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.TiedTilB
 import Formalism.LocalToGlobal.Columns.TiedXpU
 

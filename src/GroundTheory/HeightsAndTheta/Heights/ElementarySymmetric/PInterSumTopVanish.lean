@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StMixedTwistShift
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PInterNumAdditive
 set_option maxSynthPendingDepth 1

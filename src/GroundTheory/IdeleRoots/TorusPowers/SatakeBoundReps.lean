@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.ThmBInSatake
 import GroundTheory.IdeleRoots.TorusPowers.SatakeBoundGroup
 set_option maxSynthPendingDepth 1

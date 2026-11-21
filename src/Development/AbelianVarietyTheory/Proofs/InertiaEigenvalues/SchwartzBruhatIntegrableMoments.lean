@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MeasurePreservingToMixedPiSymm
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddPowLe
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StNbarChartSemiposFam
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.StNbarLeviChart
 set_option maxSynthPendingDepth 1

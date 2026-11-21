@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.MatrixTwoByTwoCongr
 import Formalism.LocalToGlobal.ProjectiveLattices.LieFreePf
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.LieCombBaseChange

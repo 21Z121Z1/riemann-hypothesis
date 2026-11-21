@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.AuxiliaryFrameNormalizedSpaces
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHcParamCodeWord
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HostCmData

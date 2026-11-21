@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CoreProofs
 import Formalism.LocalToGlobal.ProjectiveLattices.IntAllFree
 import Formalism.LocalToGlobal.ProjectiveLattices.ExistsOfValILeOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
 import Formalism.DirichletDensity.HostDensityArith

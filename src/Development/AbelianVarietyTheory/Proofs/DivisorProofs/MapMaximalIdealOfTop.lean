@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyValueUnique
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimClosureOfCoheightField
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FlatLength

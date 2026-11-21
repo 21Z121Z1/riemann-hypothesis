@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.CutFailsForRSubmodule
 import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
 import Mathlib.RingTheory.Henselian

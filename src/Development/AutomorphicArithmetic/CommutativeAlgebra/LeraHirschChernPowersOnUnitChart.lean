@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.IsIsoStackProductPairOfBijective
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ProjBundleFormulaIffPglForm
 import Development.AutomorphicArithmetic.CommutativeAlgebra.ProjectiveBundleFormulaRankTwo

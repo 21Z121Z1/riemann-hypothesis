@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.GradedClassDecomposition
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.DetectPt
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.HfracOf

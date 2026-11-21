@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharpolyEqOfIsRowPar
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ContinuousOfIota
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PairsOfTransport

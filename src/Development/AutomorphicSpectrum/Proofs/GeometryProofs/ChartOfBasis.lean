@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ToFirst
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.WitnessIsFormalParam
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBPf

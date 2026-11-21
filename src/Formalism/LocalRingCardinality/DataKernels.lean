@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.Params
 import Formalism.ThetaLiftIndependence.Statement
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StRefChartDisc
 import ReciprocityTheory.AnalyticForms.PotentialTheory.ContDiffMulOfTsupport
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StProjChartHolo

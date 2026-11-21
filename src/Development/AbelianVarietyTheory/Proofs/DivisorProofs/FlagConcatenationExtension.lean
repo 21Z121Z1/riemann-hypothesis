@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactVectorBundlesRankAdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactCokernelComposeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactOfPullbackCokernelStatement

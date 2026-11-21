@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComapMapPullbackFstLocalization
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComapMapEqOfLocallyGenerated
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsIntegralAppOfUniversallyClosed

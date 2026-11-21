@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.PrimeSumBounded
 import GroundTheory.GlobalFields.TateThesis.DegreeOneDensity
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality

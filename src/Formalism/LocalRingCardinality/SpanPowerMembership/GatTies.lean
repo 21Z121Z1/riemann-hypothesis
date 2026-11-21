@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataGatTies
 import Formalism.LocalRingCardinality.HostCls
 import Formalism.LocalRingCardinality.SpanPowerMembership.GatSetting

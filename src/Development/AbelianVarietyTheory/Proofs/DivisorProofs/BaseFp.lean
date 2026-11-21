@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeComapFiniteProjectiveSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationDescends
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPresentationBaseChange

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCoord
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 

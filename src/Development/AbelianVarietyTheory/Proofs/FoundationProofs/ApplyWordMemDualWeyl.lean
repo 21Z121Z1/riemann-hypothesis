@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementE
 import Formalism.GradedWeylDivisibility.FinalD
 import Mathlib.Algebra.Module.Lattice

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockDiagUnitaryHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChiDetProps
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHtLeTwoMulQht

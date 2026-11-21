@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagModelBaseProjectionPoints
 import Mathlib.Topology.Algebra.MvPolynomial
 import Mathlib.Topology.Compactness.Paracompact

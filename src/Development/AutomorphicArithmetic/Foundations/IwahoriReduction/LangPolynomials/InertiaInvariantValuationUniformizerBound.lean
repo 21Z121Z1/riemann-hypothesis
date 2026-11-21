@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.IwahoriReduction.LangPolynomials.FixedIntegersIsUnitOfNotMemPrimeSpan
 import CompanionTheory.AutomorphicTheory.PlaceSeparation.ArtinA
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Ramification

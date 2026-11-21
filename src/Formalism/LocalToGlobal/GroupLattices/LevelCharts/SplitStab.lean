@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.LevelCharts.JoinForms
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
 

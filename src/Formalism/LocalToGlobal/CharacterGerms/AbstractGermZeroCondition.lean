@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.WipDworkInvG
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
 import Formalism.LocalToGlobal.CharacterGerms.IntSubst

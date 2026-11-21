@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.UnipPow
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.Imports
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.PowIn

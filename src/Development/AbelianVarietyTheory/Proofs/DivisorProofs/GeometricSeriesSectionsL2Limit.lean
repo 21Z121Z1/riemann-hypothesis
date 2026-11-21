@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Mathlib.Algebra.Order.Ring.Star
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.AApproxL

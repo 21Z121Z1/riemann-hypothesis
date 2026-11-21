@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelDetIdealSelfDualNormOne
 open NumberField Formalism.BasicNotions Formalism.MainNotions Formalism.L2.Ker
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.LineBundleSectionsTorusTorsionWeightSpacesStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsBasisTwistField
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ProportionalRaw

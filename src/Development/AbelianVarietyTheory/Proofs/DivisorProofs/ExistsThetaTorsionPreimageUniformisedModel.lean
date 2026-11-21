@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UTorsClosed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.MulEqOneOfComb
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsOperators

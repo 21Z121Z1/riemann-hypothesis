@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.ExampleSatisfiesConditionsAtFive
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IndexUBound
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.MirabIndex

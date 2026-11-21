@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.PolynomialProperness.TauDefs
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 import Mathlib.Tactic.ENatToNat

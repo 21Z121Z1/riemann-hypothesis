@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsGreenReg
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PConeLogBound
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.PFsLogSmul

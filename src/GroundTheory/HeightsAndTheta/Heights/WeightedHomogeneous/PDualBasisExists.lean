@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Statements
 import Mathlib.Algebra.AffineMonoid.Basic
 set_option maxSynthPendingDepth 1

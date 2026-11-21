@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.PflagZ
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.GenNumProductExpansion
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.HasExpansionOfMemSpan

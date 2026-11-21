@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.StatementM
 import Formalism.GaussJetBounds.GaussJetProofs.FrameA
 

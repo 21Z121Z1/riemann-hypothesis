@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AppendVMemFamAtlasTarget
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DdcEqOfLocalEq
 

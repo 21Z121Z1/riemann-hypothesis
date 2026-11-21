@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MeasurePreservingProdPermThree
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlkUUMapMuPRn
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SigmaFiniteOfHaar

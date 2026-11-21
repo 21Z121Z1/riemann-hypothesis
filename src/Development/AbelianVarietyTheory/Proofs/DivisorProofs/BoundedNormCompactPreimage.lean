@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCompactAdele
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianRapidDecay
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels

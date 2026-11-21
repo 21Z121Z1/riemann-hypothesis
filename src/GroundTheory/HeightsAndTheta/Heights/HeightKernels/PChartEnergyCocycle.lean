@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergyCocycle
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartEnergySymm
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartEnergyIntegrable

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.TopEntryWaveEquation
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopTwistDensOfWaveQQ
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HasFDerivAtFsvSelf

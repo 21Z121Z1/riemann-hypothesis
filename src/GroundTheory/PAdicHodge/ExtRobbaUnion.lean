@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.ExtRobbaComplete
 import GroundTheory.PAdicHodge.ExtRobbaFrob
 import Mathlib.Algebra.Colimit.Ring

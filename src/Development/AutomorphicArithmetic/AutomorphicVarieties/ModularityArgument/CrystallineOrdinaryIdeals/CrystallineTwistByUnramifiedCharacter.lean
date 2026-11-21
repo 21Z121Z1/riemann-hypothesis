@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ContinuousUnitsInvOfContinuousCoeFiniteQpAlgebra
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.AdmProd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.AdmSub

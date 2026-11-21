@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SimpleIffIrreducible
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RepresentationTheory.Maschke

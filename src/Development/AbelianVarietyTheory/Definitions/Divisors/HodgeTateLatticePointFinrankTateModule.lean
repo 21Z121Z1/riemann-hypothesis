@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueIsWeilChar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateFreeOfCard
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectivePairTOfLev

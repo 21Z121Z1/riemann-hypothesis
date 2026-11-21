@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StRegSectionParts
 import Mathlib.Topology.Baire.LocallyCompactRegular
 set_option maxSynthPendingDepth 1

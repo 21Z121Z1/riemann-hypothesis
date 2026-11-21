@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviDoubleCosetIntersection
 set_option maxSynthPendingDepth 1
 open GlobalTheory.SmGL

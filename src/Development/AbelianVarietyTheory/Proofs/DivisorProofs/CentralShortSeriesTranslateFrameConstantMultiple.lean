@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortCentralMove
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortAtFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovAtBaseRoot

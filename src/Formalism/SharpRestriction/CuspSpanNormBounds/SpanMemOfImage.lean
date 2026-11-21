@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.DMiMulVecApply
 import Formalism.SharpRestriction.CuspSpanNormBounds.TrD
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NormalisingFactor
 
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor GlobalTheory.Ex

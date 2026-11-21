@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CoprimeRanks.SecondSetNoRelation
 import Development.AutomorphicArithmetic.CharacterBoxes.OrdAny
 import Development.AutomorphicArithmetic.CharacterBoxes.KerChiAny

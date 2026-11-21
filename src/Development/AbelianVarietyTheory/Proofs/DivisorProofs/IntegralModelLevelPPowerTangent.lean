@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointFrameMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointCompleteFieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelPAdicOverInclusionStatement

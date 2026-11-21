@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.VeryAmpleDimSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PAmpleAffineGen
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PDimTie

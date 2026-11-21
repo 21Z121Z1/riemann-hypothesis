@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsUnitOfSum
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ComponentDataHeightIdentity
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionSystemHodgeDegree

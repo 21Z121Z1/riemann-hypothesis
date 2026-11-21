@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterGood
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreCoordGoodProj
 set_option maxSynthPendingDepth 1

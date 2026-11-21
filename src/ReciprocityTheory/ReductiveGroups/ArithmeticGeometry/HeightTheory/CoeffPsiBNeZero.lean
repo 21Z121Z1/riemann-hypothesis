@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.Algebra.MvPolynomial.Division

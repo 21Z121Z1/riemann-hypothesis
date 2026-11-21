@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsBlowUpOverLocFiniteCut
 import Mathlib.Combinatorics.Pigeonhole
 import Mathlib.Tactic.Monotonicity.Lemmas

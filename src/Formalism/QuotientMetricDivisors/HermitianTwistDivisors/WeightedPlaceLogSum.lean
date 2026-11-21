@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.ScalarLiftLowerBoundRows
 import Formalism.LogFactorialBounds.LogFactorialProofs.PrimeSum
 

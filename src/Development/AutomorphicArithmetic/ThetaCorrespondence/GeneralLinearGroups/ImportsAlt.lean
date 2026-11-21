@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.IsComplementaryProductOfIsCuspidal
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.MNolow
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.MCellone

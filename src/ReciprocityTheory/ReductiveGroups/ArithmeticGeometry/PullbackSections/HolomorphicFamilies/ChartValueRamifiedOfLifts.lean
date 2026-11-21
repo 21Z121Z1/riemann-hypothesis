@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.ChartValJ
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal
 import Mathlib.Data.Int.Star

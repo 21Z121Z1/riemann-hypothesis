@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.OverLaUnique
 import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
 open NumberField IsDedekindDomain MeasureTheory Filter Topology

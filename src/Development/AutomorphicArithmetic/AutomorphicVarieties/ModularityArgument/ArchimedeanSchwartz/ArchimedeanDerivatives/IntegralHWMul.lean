@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ArchimedeanSchwartz.ShiftOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetDIsTestAndIntegralParts
 

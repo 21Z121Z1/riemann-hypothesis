@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice
 import Formalism.QuotientMetricDivisors.Statement
 import Formalism.SatakeDualWeyl.Statement

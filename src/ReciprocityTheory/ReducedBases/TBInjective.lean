@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReducedBases.GsInnerBOfLt
 import ReciprocityTheory.ReducedBases.LatDefs
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

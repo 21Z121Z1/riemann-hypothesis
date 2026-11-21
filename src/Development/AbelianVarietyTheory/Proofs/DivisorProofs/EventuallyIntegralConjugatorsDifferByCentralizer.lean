@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrderLatticeBasisIntegrality
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FractionalIdealIntegralLattice
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdicIntegralTensorBasisRingEventuallyStatement

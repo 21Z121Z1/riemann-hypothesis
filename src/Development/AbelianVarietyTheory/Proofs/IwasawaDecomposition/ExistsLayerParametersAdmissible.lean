@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RationalRootsDef
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemSpanOfSemilinear
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SizesEqCount

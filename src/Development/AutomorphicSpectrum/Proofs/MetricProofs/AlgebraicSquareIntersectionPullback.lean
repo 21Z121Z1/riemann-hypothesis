@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.QuotientMapImageZInjective
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.RelabelTransport
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GeometricAbelianConnected

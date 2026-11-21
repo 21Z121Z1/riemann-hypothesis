@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FiniteOrderHeckeCharGalois
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NormCharacterGaloisCofinite
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FrobDenseOffFinite

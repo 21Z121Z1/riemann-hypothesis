@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveMultiplicativeGroupSectionsUnits
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

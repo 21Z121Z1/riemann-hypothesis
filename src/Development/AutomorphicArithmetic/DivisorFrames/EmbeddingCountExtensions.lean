@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ValCount
 import Development.AutomorphicArithmetic.DivisorFrames.FiniteOfFiniteExtensions
 open IsLocalRing NumberField IsDedekindDomain GlobalTheory.ValCount

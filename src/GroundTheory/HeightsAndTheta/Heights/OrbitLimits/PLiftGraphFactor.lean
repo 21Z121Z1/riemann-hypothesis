@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PLiftGraphMetric
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PPowerBlockMetric
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NonemptyLinearEquivOfCharpolyEq
 import Mathlib.LinearAlgebra.Charpoly.ToMatrix
 import Mathlib.Tactic.Polynomial.Basic

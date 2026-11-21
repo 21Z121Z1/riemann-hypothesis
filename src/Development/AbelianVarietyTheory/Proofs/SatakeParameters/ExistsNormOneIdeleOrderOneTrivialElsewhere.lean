@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SameOffRefl
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.EqOneOfPh
 

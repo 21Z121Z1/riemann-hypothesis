@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBasisLatTQuotPure
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasSigFramesPatPoint
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsPointGaussian

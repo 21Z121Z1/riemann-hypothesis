@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.ProjDefs
 import Mathlib.Algebra.Order.Antidiag.FinsuppEquiv
 import Mathlib.Order.CompletePartialOrder

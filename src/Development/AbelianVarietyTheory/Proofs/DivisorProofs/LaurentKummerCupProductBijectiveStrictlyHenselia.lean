@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassZeroOfGeometricPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentCohomologyInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DescentEqualizerDegreeZero

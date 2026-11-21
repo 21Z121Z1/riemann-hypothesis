@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ThetaQuasiPeriods.ThetaQuasiPeriodStatement
 
 open Complex Matrix Filter Topology ReciprocityTheory.PTheta

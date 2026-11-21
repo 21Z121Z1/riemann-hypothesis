@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.OrthogonalProjectorMulVecSmul
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Analysis.InnerProductSpace.GramMatrix

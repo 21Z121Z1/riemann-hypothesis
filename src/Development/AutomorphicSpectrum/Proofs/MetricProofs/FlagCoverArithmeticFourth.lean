@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsPeriodOn
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiHomogProdInt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExistsNormalise

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Adele.BaseChange.FiniteTensor
 import GroundTheory.GlobalFields.SemilocalAlgebras.InfiniteAdeleTopology
 import Mathlib.NumberTheory.NumberField.AdeleRing

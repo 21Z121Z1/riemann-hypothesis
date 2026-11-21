@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChartEqsOfParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermSumRight
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.StabilizerFixesTailCoords

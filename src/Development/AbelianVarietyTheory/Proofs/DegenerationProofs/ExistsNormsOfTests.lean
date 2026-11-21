@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.NonemptyThetaExtensionTest
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsIsRigNorm
 

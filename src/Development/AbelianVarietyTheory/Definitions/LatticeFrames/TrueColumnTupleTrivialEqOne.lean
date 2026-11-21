@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianForms.ExtraSym
 import Formalism.LocalToGlobal.HermitianForms.TiedBr
 import Formalism.LocalToGlobal.GroupLattices.StdSubAtOfRing

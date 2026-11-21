@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.ProductIdealMonotone.ParamDefs
 import Formalism.SubspaceCounting.StatementC
 

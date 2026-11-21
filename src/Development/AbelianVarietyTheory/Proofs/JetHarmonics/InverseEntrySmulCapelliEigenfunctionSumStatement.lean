@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.InverseEntrySmulCapelliEigenfunctionSum
 open Formalism.FourierDecayAlt Formalism.REAL Formalism.QuantumDeterminants Finset
 set_option maxHeartbeats 1000000 in

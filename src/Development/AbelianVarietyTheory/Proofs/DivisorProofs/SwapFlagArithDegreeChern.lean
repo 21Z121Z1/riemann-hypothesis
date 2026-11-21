@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.RegularAlteration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicLineBundleInducedArithStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GeometricFunctionFlagDegree

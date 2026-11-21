@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SuccessiveMinima.DefsMink
 import Mathlib.Analysis.Convex.Measure
 import Mathlib.RingTheory.WittVector.IsPoly

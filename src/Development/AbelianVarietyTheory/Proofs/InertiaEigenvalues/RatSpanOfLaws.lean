@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsOpOfTranslates
 import Formalism.LocalToGlobal.IndefiniteReal.LinksStage

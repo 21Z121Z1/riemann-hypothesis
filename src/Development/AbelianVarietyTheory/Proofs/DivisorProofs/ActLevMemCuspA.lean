@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevelActionMemCuspForms
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LevActMemMlat

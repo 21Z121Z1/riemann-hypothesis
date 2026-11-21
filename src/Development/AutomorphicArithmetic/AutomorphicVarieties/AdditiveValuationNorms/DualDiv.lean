@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AdditiveValuationNorms.QzInj
 
 open UpperTheory.V UpperTheory.V.PropA Formalism.GaloisCohomology

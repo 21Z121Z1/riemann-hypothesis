@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.FunEqAll
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.RingTheory.MvPowerSeries.Expand

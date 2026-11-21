@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesFourth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OmegaLevelVPCore
 

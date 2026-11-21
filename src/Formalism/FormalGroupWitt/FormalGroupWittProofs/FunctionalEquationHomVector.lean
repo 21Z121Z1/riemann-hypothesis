@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.SolveV
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.CoeffExpandEqZero
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.InvIntV

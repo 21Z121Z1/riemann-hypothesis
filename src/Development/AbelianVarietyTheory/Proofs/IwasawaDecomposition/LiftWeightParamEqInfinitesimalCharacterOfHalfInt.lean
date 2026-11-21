@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataCoeff
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsAut
 import Formalism.LocalToGlobal.GaloisLevelStructure.DefsLevel

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
 import Mathlib.LinearAlgebra.Matrix.PosDef
 import Mathlib.Topology.Covering.Basic

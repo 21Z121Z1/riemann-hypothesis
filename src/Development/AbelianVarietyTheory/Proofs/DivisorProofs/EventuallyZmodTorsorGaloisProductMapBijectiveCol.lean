@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BijectiveBaseChangeDescendsFilteredColimitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsorsTrivialIff
 import Mathlib.RingTheory.PicardGroup

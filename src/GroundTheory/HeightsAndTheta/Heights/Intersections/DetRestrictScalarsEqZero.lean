@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeE
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsFurtherMore
 import Mathlib.RingTheory.TotallySplit

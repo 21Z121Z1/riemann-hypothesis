@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LogDerivLFunctionStrip
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ImportsMore
 import Mathlib.NumberTheory.LSeries.Nonvanishing

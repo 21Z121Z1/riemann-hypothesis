@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.ElemMatch
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DefBridge
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.UnrQ

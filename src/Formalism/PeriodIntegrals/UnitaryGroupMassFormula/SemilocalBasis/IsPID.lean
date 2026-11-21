@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.LocBasisSemi
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemilocalBasis.SmulMemOfMemSpan
 import Mathlib.Algebra.AffineMonoid.Basic

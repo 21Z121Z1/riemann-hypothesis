@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.ConductorLubinTate
 import GroundTheory.LocalFields.ConductorTransport
 import GroundTheory.LocalFields.LocalArtinMap

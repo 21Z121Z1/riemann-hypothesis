@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.StalkGerm
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

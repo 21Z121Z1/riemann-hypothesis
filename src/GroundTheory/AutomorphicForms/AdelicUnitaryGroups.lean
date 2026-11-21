@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Restricted
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.LatticeCompact
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Anisotropic

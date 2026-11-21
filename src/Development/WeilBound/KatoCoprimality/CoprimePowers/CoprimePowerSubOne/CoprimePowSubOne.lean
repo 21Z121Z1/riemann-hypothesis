@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.GaloisOnCp
 import Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 import Mathlib.Order.CompletePartialOrder

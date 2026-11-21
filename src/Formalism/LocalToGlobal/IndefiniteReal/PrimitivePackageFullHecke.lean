@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.BaseLiftsPackageOfPrimitiveLinks
 import Formalism.LocalToGlobal.IndefiniteReal.NearConstantMultiplicities
 import Formalism.LocalToGlobal.IndefiniteReal.PrimitiveStatementsBaseLevel

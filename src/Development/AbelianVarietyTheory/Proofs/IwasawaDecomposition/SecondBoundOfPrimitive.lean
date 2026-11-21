@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GridStaircaseLatticeFirstColumnTransportStages
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SpanRangeEquiv
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNewTwistLamFullStatement

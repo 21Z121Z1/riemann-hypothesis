@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.HomFracDegZeroEqFunField
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.AddBlockVarEquivFst
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsRename

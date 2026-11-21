@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolarizationWeilPairingEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionIsoOfGroupPullbackGenericStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureTorsionPointsBijectiveStatement

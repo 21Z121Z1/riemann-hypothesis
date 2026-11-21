@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointTraceDual
 open NumberField GlobalTheory.HTLat GlobalTheory.EigenSplit Classical
 open scoped TensorProduct NNReal

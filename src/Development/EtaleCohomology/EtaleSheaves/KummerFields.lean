@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.KummerSequence.ResMapNsmulHomotopy
 import Development.EtaleCohomology.EtaleSheaves.KummerFields.H0Naturality
 import Development.EtaleCohomology.EtaleSheaves.KummerFields.GmSecSurj

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.XiNorm
 import Formalism.GradedWeylDivisibility.DualWeylDominanceOf
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

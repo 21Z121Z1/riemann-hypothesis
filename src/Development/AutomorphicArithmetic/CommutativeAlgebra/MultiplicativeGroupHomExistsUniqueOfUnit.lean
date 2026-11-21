@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CupPullbacks.ConstCompSingle
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.LocalQuotientHomExt
 import Mathlib.CategoryTheory.ExtremalEpi

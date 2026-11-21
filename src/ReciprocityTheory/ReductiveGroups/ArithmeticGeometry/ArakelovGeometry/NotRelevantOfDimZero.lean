@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.KrullDimension.NonZeroDivisors
 import Mathlib.Tactic.Monotonicity.Lemmas

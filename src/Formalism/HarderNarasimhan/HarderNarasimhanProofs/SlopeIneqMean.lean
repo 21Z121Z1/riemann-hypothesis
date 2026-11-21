@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneq
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.TwistFinrankEq
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.RescaleCovol

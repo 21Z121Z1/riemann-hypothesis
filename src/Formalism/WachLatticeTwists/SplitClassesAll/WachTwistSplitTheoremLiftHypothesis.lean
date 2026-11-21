@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.SplitClassesAll.HZeroFromWInputsStatement
 import Formalism.WachLatticeTwists.SplitClassesAll.SourceTwoCasesOrSubfield
 import Formalism.WachLatticeTwists.SplitClassesAll.Statement

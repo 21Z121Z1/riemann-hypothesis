@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualEqSmulOfForallDvdStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueIsLieStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DualLieExistsAdditiveEvalModPrimePowStatement

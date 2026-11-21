@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfCountAtOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCoefficientBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TypePartBase

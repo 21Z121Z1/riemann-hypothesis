@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsAutomorphismOrthogonalPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagComponentFramePointRelationStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPnHodgeLwEq

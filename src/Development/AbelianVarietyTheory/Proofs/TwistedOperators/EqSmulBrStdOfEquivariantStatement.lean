@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqSmulBrStdOfEquivariant
 open Formalism.BasicNotions Formalism.L2.DIV
 set_option maxHeartbeats 1000000 in

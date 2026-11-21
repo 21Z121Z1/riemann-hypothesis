@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FinsumLogISupInt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaussAbsEqISup
 

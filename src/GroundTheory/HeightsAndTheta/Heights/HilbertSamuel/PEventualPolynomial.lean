@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEventualPolynomial
 import Mathlib.Algebra.Group.ForwardDiff
 import Mathlib.Tactic.Monotonicity.Lemmas

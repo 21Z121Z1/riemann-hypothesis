@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemClosureUnitary
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLocAdele
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureDivMem

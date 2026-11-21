@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TxFrameTranslate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QkToAkULevelField
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsActIffIsDiagEnd

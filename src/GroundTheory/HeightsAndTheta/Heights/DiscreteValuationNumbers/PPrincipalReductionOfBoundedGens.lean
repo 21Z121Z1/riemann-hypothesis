@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsPowReductionCut
 import Mathlib.Algebra.Module.SpanRankOperations
 import Mathlib.RingTheory.PiTensorProduct

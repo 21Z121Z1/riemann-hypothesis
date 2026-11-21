@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianMetricDerivativeBound
 open GlobalTheory.MatDeriv GlobalTheory.GradedNorm Matrix
 open scoped ComplexOrder

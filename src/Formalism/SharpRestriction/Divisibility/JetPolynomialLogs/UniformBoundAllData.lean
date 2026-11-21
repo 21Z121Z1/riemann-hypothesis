@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.JetPolynomialLogs.OneLetterJetKernel
 import Formalism.SharpRestriction.Divisibility.JetPolynomialLogs.LetterLogIntegrality
 

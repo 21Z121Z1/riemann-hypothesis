@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.InclEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishesToOneOfStalkMap
 open CategoryTheory AlgebraicGeometry NumberField

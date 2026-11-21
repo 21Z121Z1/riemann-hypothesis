@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.FiltrationCocycleLiftCriterion
 import GroundTheory.AutomorphicForms.GKModules.Garding
 import Mathlib.Analysis.Fourier.AddCircle

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.DivisibilityProofs.NumbersP
 import Formalism.LocalToGlobal.GroupLattices.JointServices.VAddEqVw
 

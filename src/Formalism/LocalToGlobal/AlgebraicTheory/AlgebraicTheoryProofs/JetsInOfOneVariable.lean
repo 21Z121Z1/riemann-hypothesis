@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.AlgebraicTheory.StatementA
 import Formalism.LocalToGlobal.TorsionIntegrality.RamifiedCurveKernels.FinalA
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothSurjectiveCechDescentCohomology
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NeZeroOfDvd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchClsCocycleSec

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.StatementsDivPushForward
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PExistsForm
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PCutRational

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableCsmul
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OpApplyZeroNear
 

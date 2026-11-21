@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothExtensionOfPhaseFunction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfSmooth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSectionDivDetUnit

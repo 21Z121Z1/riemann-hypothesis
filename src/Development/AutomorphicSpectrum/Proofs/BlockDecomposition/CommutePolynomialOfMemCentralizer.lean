@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MulEqOfRangeLe
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableSdot
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OnlyStableSubspaces

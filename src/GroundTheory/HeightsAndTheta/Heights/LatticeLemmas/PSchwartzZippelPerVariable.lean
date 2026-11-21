@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.IsProbabilityMeasureSphereLaw
 import Mathlib.Algebra.MvPolynomial.SchwartzZippel
 import Mathlib.Data.Rat.Star

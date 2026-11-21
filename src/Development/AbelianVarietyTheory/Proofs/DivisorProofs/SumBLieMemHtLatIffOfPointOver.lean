@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsHomExtOfGrpPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionMap
 

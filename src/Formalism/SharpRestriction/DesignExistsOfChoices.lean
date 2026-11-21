@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.MainIn
 import Formalism.SharpRestriction.LevelLetterCocycles.AlignN
 import Formalism.LocalRingCardinality.MinkMEqMinkowskiNumber

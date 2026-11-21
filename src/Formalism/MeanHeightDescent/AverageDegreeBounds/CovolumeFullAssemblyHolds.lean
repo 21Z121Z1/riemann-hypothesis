@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MeanHeightDescent.StatementF
 import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeAssemblyHolds
 import Formalism.MeanHeightDescent.AverageDegreeBounds.SumComponents

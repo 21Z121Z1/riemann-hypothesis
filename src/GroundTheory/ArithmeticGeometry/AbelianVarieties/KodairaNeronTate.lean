@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.KodairaNeronSplitVal
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.KodairaNeronReduction
 set_option maxSynthPendingDepth 1

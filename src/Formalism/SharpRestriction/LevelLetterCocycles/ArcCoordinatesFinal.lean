@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ArcCoordinatesOfFrobeniusLevels
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelSeriesFirstFactorOrderOne
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.JumpsLetExists

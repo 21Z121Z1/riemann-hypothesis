@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMapOfExt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMeasY
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ModelsWith

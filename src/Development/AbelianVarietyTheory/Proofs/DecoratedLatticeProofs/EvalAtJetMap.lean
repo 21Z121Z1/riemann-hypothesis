@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EvalAtOneExtremalMul
 open GlobalTheory.KJInf Formalism.L2.Forms Formalism.BasicNotions MvPolynomial
 

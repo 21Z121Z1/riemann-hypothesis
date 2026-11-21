@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.QNotPthPowInClosureAlgebraicPadicIntStatement
 import Mathlib.FieldTheory.Galois.Profinite
 import Mathlib.FieldTheory.KummerExtension

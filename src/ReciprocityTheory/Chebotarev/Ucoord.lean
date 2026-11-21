@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.AbsProdSubProdLeSumAbsSub
 import ReciprocityTheory.Chebotarev.NZIdeal
 import Mathlib.NumberTheory.NumberField.CanonicalEmbedding.FundamentalCone

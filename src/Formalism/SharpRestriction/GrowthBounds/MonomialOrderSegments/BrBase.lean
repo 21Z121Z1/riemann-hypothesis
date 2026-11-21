@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.Lemma5aAt
 import Formalism.SharpRestriction.GrowthBounds.MonomialOrderSegments.FockMonomialRight
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ValuationNonnegIffIntegral

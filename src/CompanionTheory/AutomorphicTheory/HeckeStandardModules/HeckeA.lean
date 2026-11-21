@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.EvalFg
 import Mathlib.Order.CompletePartialOrder

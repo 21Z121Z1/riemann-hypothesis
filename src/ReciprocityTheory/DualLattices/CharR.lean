@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.ExistsLimTensor
 import ReciprocityTheory.DualLattices.IsHeightUnique
 import ReciprocityTheory.DualLattices.NsmulKerZero

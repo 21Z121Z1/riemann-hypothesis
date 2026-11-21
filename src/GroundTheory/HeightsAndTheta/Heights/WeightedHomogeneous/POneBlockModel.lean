@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.POneBlockModelB
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Statements

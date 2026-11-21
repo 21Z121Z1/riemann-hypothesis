@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFramesGiveFlagStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RootSymbolLocalFrames
 

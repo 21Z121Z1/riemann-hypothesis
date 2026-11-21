@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.RecBridge
 import Formalism.SharpRestriction.Divisibility.HookProducts.NormAtEqSqrtMajAt
 import Formalism.SharpRestriction.Divisibility.HookProducts.LambdaZeroLeFourB

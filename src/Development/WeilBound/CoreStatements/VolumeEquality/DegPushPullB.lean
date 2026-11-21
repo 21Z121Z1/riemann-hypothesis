@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.VolumeEquality.DegPushDim
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.NumericalSegre
 

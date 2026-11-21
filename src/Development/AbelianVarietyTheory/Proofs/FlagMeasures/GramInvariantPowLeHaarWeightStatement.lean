@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GramInvariantPowLeHaarWeight
 open NumberField Formalism.FourierDecayAlt Formalism.L2.SG.RowsConc
 set_option maxHeartbeats 1000000 in

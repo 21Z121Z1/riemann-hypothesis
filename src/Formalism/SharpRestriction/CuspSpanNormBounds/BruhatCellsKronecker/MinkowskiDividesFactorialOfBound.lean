@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.LatticeGluingRadicals
 import Formalism.SharpRestriction.CuspSpanNormBounds.MassAndBranchingHypotheses
 import Formalism.SharpRestriction.CuspSpanNormBounds.AmplitudeAndVolumeBounds

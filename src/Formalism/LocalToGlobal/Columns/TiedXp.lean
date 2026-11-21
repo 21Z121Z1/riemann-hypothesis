@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.TiedCls
 import Formalism.LocalToGlobal.Columns.RowFormsAdelic
 

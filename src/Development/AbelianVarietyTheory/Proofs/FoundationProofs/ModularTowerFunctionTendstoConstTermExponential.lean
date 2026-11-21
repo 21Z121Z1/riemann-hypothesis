@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.SiegelNeZeroIff
 import Mathlib.Analysis.Real.Pi.Bounds
 open scoped MatrixGroups

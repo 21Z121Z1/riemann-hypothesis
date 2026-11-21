@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.ContinuousPair
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 

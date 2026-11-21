@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClosureFiniteEtale
 import Mathlib.Tactic.Polynomial.Basic
 open IsLocalRing Polynomial

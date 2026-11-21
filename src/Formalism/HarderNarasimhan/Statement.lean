@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LatticeSlopes.Statement
 import Mathlib.Order.CompletePartialOrder
 

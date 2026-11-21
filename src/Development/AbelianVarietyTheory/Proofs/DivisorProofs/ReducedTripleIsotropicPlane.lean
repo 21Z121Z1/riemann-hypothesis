@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NeOfReNe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitExistenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReconfiguredTriplePlaneIntegralStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanObjects
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SectionL2NormSq
 set_option maxSynthPendingDepth 1

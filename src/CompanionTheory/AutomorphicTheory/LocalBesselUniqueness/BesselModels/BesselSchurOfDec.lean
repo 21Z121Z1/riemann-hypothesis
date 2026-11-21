@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.Inputs
 import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.MomSchurD
 import CompanionTheory.AutomorphicTheory.LocalBesselUniqueness.BesselModels.BesselSplitLargeGapOfBesselBranching

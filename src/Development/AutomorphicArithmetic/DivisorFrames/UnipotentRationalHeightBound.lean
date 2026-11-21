@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.CompactAdeleNormBounded
 import Development.AutomorphicArithmetic.DivisorFrames.SkewUnitaryReductionTheory
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RationalLeviClosureMem

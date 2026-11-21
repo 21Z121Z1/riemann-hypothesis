@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Analysis.Calculus.ImplicitContDiff

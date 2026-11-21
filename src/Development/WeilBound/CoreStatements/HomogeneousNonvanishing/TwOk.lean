@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwMb
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwSub
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwTate

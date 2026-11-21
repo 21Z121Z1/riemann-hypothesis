@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.OrthonormalEigenbasisOfBasic
 import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.U0Commute
 import Development.WeilBound.CoreStatements.PublishedTheorems.CasselmanWallach.CasimirPowerCommute

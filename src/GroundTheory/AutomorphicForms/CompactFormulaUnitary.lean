@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.CompactFormulaCountable
 import GroundTheory.AutomorphicForms.Anisotropic
 import GroundTheory.AutomorphicForms.TraceFormulaWeil

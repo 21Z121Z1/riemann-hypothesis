@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.LocDens
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsComplexTaylor
 import Mathlib.Tactic.Monotonicity.Lemmas

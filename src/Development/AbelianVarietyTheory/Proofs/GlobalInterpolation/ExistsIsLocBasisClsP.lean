@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianForms.TiedSym
 import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypLat
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLocGen

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.CasValK

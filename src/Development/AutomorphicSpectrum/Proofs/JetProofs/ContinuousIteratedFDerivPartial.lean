@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GKModules.ParametricIntegral
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.ReduceModChar

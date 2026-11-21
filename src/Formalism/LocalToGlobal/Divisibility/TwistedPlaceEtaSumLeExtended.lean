@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.LinkDIVL2R3Rec
 import Formalism.LocalToGlobal.Divisibility.LinkDef
 

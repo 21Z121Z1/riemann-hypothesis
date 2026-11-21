@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Topology.Covering.Basic
 import ReciprocityTheory.L2DbarEstimates.IsLocalHomeomorph
 import Std.Tactic.BVDecide.Normalize.Prop

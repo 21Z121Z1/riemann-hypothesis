@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerLatticeSumIntegrable
 
 open scoped TensorProduct NNReal Matrix

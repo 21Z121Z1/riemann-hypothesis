@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlueOfDenseOpenImmersion
 open AlgebraicGeometry CategoryTheory TopologicalSpace
 set_option maxHeartbeats 1000000 in

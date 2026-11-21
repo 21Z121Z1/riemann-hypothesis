@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
 import Mathlib.Analysis.Complex.Schwarz
 import Mathlib.RingTheory.WittVector.IsPoly

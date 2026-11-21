@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.IsPullbackWhisker
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.AlphaKernelDerivativeVanishesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormalGermJetLiftStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfInd
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatDesc
 import Mathlib.RingTheory.PicardGroup

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.TraceIntegralEstimates.HaarSubSF
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.NMeasInv
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.QuotNuSigma

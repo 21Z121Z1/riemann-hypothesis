@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LevelTower
 import GroundTheory.TateCohomology.TateResEqZeroOfNsmulEqZero
 import GroundTheory.TateCohomology.ResCoresPos

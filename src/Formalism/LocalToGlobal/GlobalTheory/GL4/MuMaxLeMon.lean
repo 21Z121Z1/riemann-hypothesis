@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.OrthSum
 import Formalism.LocalToGlobal.Columns.CoefficientMapHeightBound
 import Formalism.LocalToGlobal.Columns.MaxSlopeOrthogonalNegLog

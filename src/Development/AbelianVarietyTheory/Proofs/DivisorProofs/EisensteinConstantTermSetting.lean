@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTransversalForIsotropicColumnStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipotentInvariantFunctionExpansionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinConstantTermRationalUnipotentStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.PieriRules.ThetaBesselIsometries.FrechetContinuousContinuousOnOrbitHasDerivAtStatement
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DstInvContinuousOn

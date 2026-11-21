@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.ConstantGeTwentyEight
 import Formalism.LocalToGlobal.Divisibility.TrivialExtensionSideWellFormed
 import Formalism.LocalToGlobal.IndefiniteReal.FaceOf3

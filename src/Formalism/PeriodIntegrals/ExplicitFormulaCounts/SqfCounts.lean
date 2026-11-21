@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.StmtLocFOfCountsAll
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SqfRootsInj
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SqfRootShift

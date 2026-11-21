@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.QuantumDeterminantCommute.Development
 import Formalism.FormalDegreeBessel.FinalG
 import Mathlib.RingTheory.SimpleRing.Principal

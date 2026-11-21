@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.RankZeroOfLevelThree
 import Formalism.LocalToGlobal.BaseRankEqOfRealisation
 import Formalism.LocalToGlobal.TieTwRecOf

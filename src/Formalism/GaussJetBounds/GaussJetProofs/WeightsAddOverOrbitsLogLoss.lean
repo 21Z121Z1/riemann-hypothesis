@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.StatementO
 import Formalism.GaussJetBounds.GaussJetProofs.LemmaRA
 import Formalism.GaussJetBounds.GaussJetProofs.WeightsAddOverOrbits

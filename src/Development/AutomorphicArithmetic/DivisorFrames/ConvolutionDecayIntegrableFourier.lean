@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConeBDefs
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Topology.Separation.CompletelyRegular

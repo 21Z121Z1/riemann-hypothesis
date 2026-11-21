@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Gam0
 import Formalism.SatakeDualWeyl.StatementF
 import Mathlib.Tactic.Monotonicity.Lemmas

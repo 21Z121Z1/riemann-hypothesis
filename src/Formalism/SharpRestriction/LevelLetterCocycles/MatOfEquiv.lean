@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.BaseChangeMapMemLattice
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.CoefExt
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BaseCoefJump

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DivisorInequality.StatementObj
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ConjugateWeightLatticeOfGeneral
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.PlaceSumSquares

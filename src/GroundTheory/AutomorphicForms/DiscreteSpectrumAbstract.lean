@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.UnitaryRepresentations
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.SetTheory.ZFC.PSet

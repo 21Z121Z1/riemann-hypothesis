@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.PlaneCoefficients.NoOpStep
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.PosTLSurj
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.FrMemLetters

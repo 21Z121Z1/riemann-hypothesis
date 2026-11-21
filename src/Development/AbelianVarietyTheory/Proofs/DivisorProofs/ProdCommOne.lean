@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalZeroLocalLawOfPrintsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalZeroInfiniteLawOfPrintsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeLawSecondOfPrintsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.TotallySplit

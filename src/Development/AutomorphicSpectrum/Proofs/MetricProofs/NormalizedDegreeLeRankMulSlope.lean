@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Slopes
 import Mathlib.RingTheory.RegularLocalRing.Defs
 import Mathlib.Tactic.Monotonicity.Lemmas

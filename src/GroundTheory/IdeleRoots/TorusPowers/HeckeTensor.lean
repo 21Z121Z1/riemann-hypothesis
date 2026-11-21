@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.ThmBInHecke
 import GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange
 import GroundTheory.GlobalFields.Adele.Approximation

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ExplicitFormula.PerronSum
 import Mathlib.NumberTheory.Harmonic.Bounds
 import Mathlib.Topology.Sheaves.Presheaf

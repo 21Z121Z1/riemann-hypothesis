@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KTypeClassAddMemStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormsOfVertexTypeZeroMemAndSmulMemStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.KTypeClassTranslateStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AbsNormCmPrimeInertPrimeSignStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsPrimeDvdMem
 

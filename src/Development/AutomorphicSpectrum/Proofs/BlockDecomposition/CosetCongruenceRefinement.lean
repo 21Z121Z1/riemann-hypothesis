@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetOff
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.RegularLocalRing.Defs

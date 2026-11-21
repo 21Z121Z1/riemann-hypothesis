@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.DetMemSubring
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.YvEqSumMinorsGMat
 open AlgebraicGeometry CategoryTheory NumberField Matrix

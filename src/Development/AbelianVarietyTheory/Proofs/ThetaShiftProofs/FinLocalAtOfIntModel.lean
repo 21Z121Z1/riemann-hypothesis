@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsFinSiteNormEqZpowSiteAlg
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsLiftOpen
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.LcoeffPolyConstMul

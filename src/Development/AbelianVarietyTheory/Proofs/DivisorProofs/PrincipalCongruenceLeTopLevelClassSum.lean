@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowTestSupportFamiliesStaircaseCosets
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevRowSuccInfUA
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.StabOfMemCongLev

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ExpoConjOfIsCsd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockEmbNormalises
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardParabolicUnipotentMono

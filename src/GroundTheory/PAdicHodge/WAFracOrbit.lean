@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WAPeriodT
 import GroundTheory.PAdicHodge.WABridgeGerm
 import GroundTheory.PAdicHodge.ExtRobbaTrivialUnits

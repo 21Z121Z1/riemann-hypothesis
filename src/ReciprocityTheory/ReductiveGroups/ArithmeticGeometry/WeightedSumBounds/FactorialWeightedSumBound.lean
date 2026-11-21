@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.VEqZeroOfPowEqOne
 
 namespace ReciprocityTheory.ChartRestriction.G.Sh

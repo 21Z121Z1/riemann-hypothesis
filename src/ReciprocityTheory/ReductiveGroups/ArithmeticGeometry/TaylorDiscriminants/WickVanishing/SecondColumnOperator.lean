@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.SecondColumnDegree
 import Mathlib.RingTheory.Nilpotent.Exp
 import Mathlib.Topology.Sheaves.Presheaf

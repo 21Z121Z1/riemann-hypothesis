@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotTwistSumZeroFamily
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedAdicSumTermsOfFractionFieldSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMemberExistsTermsTorusTranslateStatement

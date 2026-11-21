@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovariantSecondFundamentalForm
 import Mathlib.Topology.Sheaves.Presheaf
 open Matrix Complex ComplexConjugate Filter Topology

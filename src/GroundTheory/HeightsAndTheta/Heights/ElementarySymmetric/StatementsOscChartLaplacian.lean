@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.OscMuLineObjects
 import Mathlib.Analysis.InnerProductSpace.Laplacian
 set_option maxSynthPendingDepth 1

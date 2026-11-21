@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TateTwistSectionsLocallyGeneratedStatement
 import Development.AutomorphicArithmetic.CommutativeAlgebra.CohomologyPuncturedAffineLine
 import Development.AutomorphicArithmetic.CommutativeAlgebra.DescentOfIntegralDescentTruncation

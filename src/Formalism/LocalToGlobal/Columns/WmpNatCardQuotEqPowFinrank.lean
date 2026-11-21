@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.IdealCountLeWAsm
 import Lemmata.GeneralBFactRightMore.Imports
 import Formalism.LocalToGlobal.Columns.GenericUnipotentCharacter

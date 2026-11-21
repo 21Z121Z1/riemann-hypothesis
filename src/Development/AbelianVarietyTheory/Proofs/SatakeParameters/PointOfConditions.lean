@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ThetaLiftHasPointAtLocalisationSamePlaceStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HeckeStandardTwistStatement
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.BlockSplitAll

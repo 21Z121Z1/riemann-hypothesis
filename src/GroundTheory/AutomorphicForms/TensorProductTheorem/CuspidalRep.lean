@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.TensorProductTheorem.CentralCuspSplit
 import GroundTheory.AutomorphicForms.UnitaryAdmissible
 import GroundTheory.AutomorphicForms.GL2Classical.Irreducible

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFrameDetNeZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineParabolicUnipotentBlocksStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFrameLocalDeterminantStatement

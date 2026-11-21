@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RowShiftEq
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSplit
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemOrth

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.KroneckerSplitStatement
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PowerIntegralStatement
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.ShiftedSumIntegralStatement

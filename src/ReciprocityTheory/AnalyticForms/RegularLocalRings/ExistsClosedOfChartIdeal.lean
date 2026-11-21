@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.LiftChartIdeal
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsBasicOpenCover
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CloudIsoDef
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.LatRetract
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.TensorKP

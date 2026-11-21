@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SurjectiveOfUnramified
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SubMemSpanOfEtale
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UZeroApplySelf

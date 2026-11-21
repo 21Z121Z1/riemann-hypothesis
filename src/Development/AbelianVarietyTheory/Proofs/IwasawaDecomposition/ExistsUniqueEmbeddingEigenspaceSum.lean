@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.EmbKCoe
 import Mathlib.LinearAlgebra.Lagrange
 import Mathlib.RingTheory.Henselian

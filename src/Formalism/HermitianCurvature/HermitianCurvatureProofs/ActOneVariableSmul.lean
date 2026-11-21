@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BasePointMemDomain
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HeadJ
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HeadPictureEmptyWord

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.BernoulliNumbers.Charbij
 import Mathlib.NumberTheory.MulChar.Duality
 import Mathlib.Tactic.ENatToNat

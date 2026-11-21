@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColsS
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColXCnt
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColXSeg

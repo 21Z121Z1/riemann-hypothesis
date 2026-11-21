@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NzOfSteps
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.NeedCProps
 import PositivityTheory.AutomorphicForms.PublishedInputs.NonzeroTypes.GMain

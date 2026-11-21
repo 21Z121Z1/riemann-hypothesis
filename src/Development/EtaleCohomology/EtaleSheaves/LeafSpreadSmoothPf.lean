@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.PropertyDescent.LeafPropsDescendOf
 import Development.EtaleCohomology.EtaleSheaves.PropertyDescent.BaseChange
 import Mathlib.AlgebraicGeometry.QuasiAffine

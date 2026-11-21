@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.Uniformization
 import Mathlib.NumberTheory.ModularForms.LevelOne.GradedRing
 

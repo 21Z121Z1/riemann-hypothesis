@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.AlgebraicGeometry.Morphisms.FlatRank
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp
 

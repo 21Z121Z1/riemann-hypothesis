@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.PrimeHopfOrderStatement
 import ReciprocityTheory.DualLattices.ImportsAlt
 import ReciprocityTheory.DualLattices.VdetLeOfSpanLe

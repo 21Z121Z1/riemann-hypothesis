@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.YReadArchC
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormOffSpecializationRingStatement

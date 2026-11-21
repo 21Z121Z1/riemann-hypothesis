@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis
 import Mathlib.FieldTheory.Galois.Profinite
 import Mathlib.Tactic.Monotonicity.Lemmas

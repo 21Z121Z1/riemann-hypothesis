@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.InvSerSub
 import Mathlib.RingTheory.PowerSeries.Inverse
 import Mathlib.RingTheory.WittVector.IsPoly

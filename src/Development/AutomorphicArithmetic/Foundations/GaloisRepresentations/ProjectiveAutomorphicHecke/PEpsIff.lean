@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ProjectiveAutomorphicHecke.CharConj
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.AgreeOfAdjoin
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ConjEqNegOfSq

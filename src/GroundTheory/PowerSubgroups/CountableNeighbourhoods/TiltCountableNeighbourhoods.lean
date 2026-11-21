@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.PerfectoidField
 
 namespace GroundTheory.Variant₂.N1

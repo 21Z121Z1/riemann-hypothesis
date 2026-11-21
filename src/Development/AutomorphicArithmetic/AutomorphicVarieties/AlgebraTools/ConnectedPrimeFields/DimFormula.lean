@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.LocDim

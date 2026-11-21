@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPhaseSmoothUnitBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealPhaseSmoothUnitSumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithSelfIntersectionBaseChangeStatement

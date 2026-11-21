@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CompFintype
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CmpCMemFunMod
 import Formalism.LocalToGlobal.GroupLattices.FockModels.Sandwich

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.StatementW
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementB
 

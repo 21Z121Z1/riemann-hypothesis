@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LagrangeIdealLifts.LiftLagrangeIdealInt
 import Formalism.CoboundaryTransfers.StatementBridge
 import Formalism.CoboundaryTransfers.StatementTransfer

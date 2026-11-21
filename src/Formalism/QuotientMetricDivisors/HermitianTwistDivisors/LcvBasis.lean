@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.ProdFormula
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram
 import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic

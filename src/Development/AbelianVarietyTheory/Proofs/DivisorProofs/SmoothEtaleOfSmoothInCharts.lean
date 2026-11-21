@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.HoloSmooth

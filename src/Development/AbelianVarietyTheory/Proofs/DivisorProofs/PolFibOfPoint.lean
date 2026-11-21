@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AbelianSchemeLawProofs.AbelianSchemeLawsWithoutCohomology
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HasBasisOfBasis
 import Development.AbelianVarietyTheory.Definitions.Divisors.SymTupOne

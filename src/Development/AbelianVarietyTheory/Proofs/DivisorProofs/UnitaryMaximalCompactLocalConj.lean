@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalWittBasisStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModulusCharacterAtSlotElementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LanglandsLemmaUnitaryLocalStatement

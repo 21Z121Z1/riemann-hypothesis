@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BXiAsm
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliUnderIntegral
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadJFExists

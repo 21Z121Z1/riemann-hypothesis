@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SetUnipotentTranslate
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NormOnePrimeElements
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ModEqOneOfNorm

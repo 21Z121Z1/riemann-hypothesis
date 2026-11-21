@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 import Formalism.LocalToGlobal.HermitianColumns.ColsHerm
 import Formalism.LocalToGlobal.HermitianForms.FormsTied

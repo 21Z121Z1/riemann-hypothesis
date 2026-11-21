@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.L2LocalComponents.NonEmptyOps
 import GroundTheory.AutomorphicForms.MultiplicityOne.ArchTypeExists
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchBump

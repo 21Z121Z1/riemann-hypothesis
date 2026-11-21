@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.InducedNorm
 import GroundTheory.TateCohomology.DimensionShift
 import GroundTheory.TateCohomology.TateConnecting

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.SmExpSmulContDiff
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SchurClosable

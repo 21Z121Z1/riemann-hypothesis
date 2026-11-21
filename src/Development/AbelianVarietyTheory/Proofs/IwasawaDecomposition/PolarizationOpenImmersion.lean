@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsChartOfOpenImmersionImageStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsChartOfOpenImmersionPreimageStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationPullIsLineBundleStatement

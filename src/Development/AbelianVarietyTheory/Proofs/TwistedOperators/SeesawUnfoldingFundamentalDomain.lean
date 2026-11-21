@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingAbsoluteStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingConstantStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingExchangeStatement

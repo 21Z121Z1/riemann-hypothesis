@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalLattices.LatDefs
 import Mathlib.NumberTheory.LocalField.Basic
 import Mathlib.RingTheory.Etale.Weakly

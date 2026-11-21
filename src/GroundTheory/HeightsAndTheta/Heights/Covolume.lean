@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HermitianEuclidean
 import Mathlib.Algebra.Module.ZLattice.Covolume
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs

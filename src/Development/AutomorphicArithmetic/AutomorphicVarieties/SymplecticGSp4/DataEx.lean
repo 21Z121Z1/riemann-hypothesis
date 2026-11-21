@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicCases.SymplecticGSp4
 import Development.AutomorphicArithmetic.AutomorphicVarieties.SymplecticGSp4.ReFrob
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcXvan

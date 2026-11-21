@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.MemNablaLTwLetter
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.MatQTwDet
 import Formalism.LocalToGlobal.GroupLattices.FockModels.ElementaryDivisorBasis

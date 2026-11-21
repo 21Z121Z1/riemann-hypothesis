@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.IntegralFundamentalDomainEqSumDoubleCoset
 import Formalism.LocalToGlobal.Columns.LevGCount
 import Formalism.LocalToGlobal.Divisibility.DefGroup

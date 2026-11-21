@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramBoundedByHodgeStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConjugatePointGramStatement
 

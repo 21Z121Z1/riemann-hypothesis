@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementG
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementF
 import Formalism.GaussJetBounds.OneLetterGaussJets.OneLetterGaussProofs.CapLeOddShiftBound

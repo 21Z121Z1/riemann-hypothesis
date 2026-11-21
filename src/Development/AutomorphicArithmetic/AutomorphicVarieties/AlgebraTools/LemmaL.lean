@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SepChars
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.OrdExt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.LagTriangular

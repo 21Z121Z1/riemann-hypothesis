@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.WeilConjectures.AcycPf
 import Mathlib.Order.CompletePartialOrder
 

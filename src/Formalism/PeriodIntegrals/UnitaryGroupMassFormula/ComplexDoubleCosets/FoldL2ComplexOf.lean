@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ComplexDoubleCosets.CplxDC
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FoldDCUnfold
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FoldMult

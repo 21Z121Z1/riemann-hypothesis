@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MemRootsBarXSubC
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsCharLab
 import Mathlib.Data.Finsupp.Pointwise

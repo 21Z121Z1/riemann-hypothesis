@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqualVolumeOnObjectsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LimitFamilyRelabelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VerticalBoundOnObjectsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.MemSEOfFin
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaCmType
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.EtaDef

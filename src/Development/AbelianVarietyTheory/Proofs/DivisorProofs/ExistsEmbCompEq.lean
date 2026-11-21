@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsPlTieOfInertCore
 import Formalism.LocalRingCardinality.DataDIV
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

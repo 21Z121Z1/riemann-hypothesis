@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.NonemptyTorusExtensionOfIsPowGrp
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.LbIsoCubePow
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.LbIsoLinComb

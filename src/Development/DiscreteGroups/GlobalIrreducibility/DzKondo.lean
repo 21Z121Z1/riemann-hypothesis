@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.GlobalIrreducibility.DzKLink
 import Development.DiscreteGroups.GlobalIrreducibility.DzKName
 import Development.DiscreteGroups.GlobalIrreducibility.OrbitOfAgree

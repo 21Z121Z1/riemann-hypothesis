@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.IdentityCellAdmissibleOfNormalisation
 import Formalism.FlagUnipotentLattices.AutBoundOfMinkowskiBound
 import Formalism.FlagUnipotentLattices.LiftFixesBaseVector

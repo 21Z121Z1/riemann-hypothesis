@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigFirstMatchedRepsCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaLiftCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAThetaLiftVanishingStatement

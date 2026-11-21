@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHopfFlat
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHopfDesc
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatHopfTop

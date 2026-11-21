@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlipBoundOfHyp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DataBoundOfHalfFlipStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoefficientBoundOfPublishedInputsStatement

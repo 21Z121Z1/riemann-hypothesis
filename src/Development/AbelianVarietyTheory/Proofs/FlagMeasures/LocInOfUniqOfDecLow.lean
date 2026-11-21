@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.BesselNonvanishingReduction
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.OpnFrobCompare
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.MatrixOfBesselTwoSidedAction

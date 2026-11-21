@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFinSubRange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LePreimageOfCompEq
 open AlgebraicGeometry CategoryTheory Limits

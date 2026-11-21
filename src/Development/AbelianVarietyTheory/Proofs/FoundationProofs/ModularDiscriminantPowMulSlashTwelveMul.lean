@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModBasic
 
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators

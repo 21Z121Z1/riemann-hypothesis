@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.HodgeTateFromSandwich
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaKernelGeneralIdentity
 import Development.WeilBound.ThetaLifts.LocalTheory.SplitInv2

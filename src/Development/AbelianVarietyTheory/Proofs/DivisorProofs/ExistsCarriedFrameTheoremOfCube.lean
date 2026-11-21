@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameCarriedAlong
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenFarSet
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecCarried

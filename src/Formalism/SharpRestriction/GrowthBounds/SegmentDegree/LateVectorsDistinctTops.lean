@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DiscriminantNonzeroOfInjectiveTops
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.CoarseLabelFactorisation
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.OldestLetterInSegment

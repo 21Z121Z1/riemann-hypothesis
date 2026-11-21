@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.MoriwakiHS
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PNefCountLower
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PNefCountUpper

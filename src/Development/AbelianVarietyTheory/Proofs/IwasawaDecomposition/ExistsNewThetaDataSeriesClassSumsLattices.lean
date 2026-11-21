@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSetupPinnedCh
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsReadingRealSide
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsTieWithSeries

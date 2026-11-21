@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.GL1.CompactFixesLattice.ExistsDenOfIsCompactAdele
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IntAdCpctOpen
 import Mathlib.Algebra.Order.Star.Real

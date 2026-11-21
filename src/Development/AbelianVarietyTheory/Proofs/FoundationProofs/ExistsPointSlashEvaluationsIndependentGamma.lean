@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIndexOfGammaLe
 import Mathlib.Analysis.Complex.UpperHalfPlane.Metric
 import Mathlib.RingTheory.SimpleRing.Principal

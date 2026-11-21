@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DegreeSingleAdd
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProdXEqMonomial
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UgMemSpanListProd

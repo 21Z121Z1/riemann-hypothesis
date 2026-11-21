@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.LatticeDualFibres.StatDualFibreLattice
 import Mathlib.Algebra.Module.Lattice
 import Mathlib.RingTheory.Etale.Weakly

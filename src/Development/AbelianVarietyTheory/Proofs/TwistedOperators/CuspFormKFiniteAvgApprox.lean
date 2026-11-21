@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsKFiniteIteratedCompactAverageApprox
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.CuspFormAvgIsCuspStatement
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GEqBase

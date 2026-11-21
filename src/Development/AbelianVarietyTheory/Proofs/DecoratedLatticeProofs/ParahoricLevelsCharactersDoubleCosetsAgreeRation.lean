@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.EntryAgree
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ConjSymmEntry
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MemStabLIff

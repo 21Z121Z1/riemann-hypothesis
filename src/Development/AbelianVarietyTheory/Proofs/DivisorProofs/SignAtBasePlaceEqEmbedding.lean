@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.ConcretePkgSpec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitDetOfSplitDetermines
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemNotMem

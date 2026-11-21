@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.LiftLambdaBound
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DepthBoundOfTwoSteps
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HalfPrincipalAndSplit

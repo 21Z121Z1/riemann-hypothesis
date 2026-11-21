@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TopRankPowers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulBoundAtOfNotIsReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulBoundAtBaseChange

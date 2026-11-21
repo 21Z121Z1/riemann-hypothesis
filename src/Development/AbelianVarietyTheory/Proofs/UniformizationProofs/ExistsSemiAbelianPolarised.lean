@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TopLePtHomPreimageSmoothOpenIff
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPointEquivSmoothLocus
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.NonemptyTorusExtensionSplitTorus

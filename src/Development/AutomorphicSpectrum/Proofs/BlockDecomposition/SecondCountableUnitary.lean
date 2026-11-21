@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.ArchimedeanGelfandKernels.LeftEquivariantFunctions.ComplexMatrixCalculus.SwapLaws
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HeightBoundFacts
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousCoeffRowAct

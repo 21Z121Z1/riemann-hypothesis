@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ExponentGrids.ScaledCoordinatesValuationLemma
 import Mathlib.RingTheory.Ideal.Int
 import Mathlib.RingTheory.TotallySplit

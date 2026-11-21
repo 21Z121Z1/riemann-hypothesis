@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.CxToPkgFamIn
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.RationalTransitionKernel
 

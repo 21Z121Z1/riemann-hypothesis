@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UnramifiedExtensionIntegralBasis
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.Order.CompletePartialOrder

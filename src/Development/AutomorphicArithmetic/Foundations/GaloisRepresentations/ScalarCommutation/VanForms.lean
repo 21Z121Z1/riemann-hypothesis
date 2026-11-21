@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ScalarCommutation.OrbZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BaseChangeCentralizerComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AlgebraMapQrOneBijective

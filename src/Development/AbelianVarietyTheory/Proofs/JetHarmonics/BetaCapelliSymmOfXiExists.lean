@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.XiExistsOfBesselXiIntegrable
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutERCapAdjAsm
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutERCapAdjS

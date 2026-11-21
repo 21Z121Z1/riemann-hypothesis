@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.StandardChartsLineZero
 import Development.EtaleCohomology.EtaleSheaves.LZProperCut
 import Mathlib.RingTheory.PiTensorProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsDefs
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.PtfsAddTransfer
 

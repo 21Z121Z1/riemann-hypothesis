@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.IsIntegralVecCoordsOfMemAdelicLatticeOne
 import GroundTheory.AutomorphicForms.HermitianOrthogonal
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsAdelicSplit

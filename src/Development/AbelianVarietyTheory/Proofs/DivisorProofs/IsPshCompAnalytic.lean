@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMoll
 import ReciprocityTheory.AnalyticForms.PotentialTheory.PshShiftA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PshLimitIsPshStatement

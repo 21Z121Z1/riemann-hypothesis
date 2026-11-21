@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.HodgeTateChains.Statement
 import Formalism.WindowSums.AnnihilatorPolynomials.ValProd
 import Formalism.WindowSums.AnnihilatorPolynomials.ZpowVal

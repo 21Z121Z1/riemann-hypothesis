@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleTateTwistSectionsLocallyGenerated
 import Development.EtaleCohomology.TateTwists.EtaleTorsionCohomologyLocalizationBasic
 import Development.EtaleCohomology.TateTwists.EtaleSheafLocalizationPropertiesOfComponents

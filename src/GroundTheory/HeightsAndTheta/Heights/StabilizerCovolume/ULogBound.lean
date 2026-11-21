@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ThreeLeLevel
 import Mathlib.NumberTheory.NumberField.Discriminant.Defs
 import Mathlib.Tactic.Monotonicity.Lemmas

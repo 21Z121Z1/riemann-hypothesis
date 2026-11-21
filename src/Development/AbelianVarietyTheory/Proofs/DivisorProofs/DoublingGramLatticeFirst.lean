@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingStabilizerCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoublingEmbeddingStabilizersStatement
 open scoped TensorProduct NNReal Matrix

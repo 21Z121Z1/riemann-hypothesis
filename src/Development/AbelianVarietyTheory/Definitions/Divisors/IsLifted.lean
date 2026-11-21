@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsFlatLift
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEulerContraction
 

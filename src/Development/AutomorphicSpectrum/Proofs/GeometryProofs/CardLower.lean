@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFinsetOfMemNhds
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsHodgeLine
 import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone

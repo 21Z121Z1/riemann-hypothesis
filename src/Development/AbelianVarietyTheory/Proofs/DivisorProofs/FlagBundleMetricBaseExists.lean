@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimEqDimGrAdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLieBase
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagInducesOfLieBase

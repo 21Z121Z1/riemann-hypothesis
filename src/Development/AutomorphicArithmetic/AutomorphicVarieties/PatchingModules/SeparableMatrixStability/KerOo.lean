@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.FiniteHomOfTopFG
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SubgroupQuot
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.QuotProf

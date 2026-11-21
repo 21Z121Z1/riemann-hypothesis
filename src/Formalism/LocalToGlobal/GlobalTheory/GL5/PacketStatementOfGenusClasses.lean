@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.ConcTop
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PNamed
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassItems

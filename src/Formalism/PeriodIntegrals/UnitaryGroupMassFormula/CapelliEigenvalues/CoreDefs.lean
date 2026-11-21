@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.StatementIO
 import Formalism.PeriodIntegrals.DSInfCharCap
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HermitianOrthogonal
 import GroundTheory.AutomorphicForms.StableConjCyclic
 

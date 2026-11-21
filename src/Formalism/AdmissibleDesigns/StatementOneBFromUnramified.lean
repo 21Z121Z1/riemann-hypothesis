@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.StatementOneBChangedOfOpen
 import Formalism.AdmissibleDesigns.HRhoFull
 import Formalism.AdmissibleDesigns.FirstCharacterIndexNeZero

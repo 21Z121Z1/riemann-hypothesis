@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.InfinitesimalCharacterLimits.AllLeaves
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UpdateLeUpdate
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformBoundConstantTermStatement

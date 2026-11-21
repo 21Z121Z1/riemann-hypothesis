@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackTwistedSectionIsoStatement
 import Development.AbelianVarietyTheory.Definitions.AbelianSchemeLaws.NotExistsOfSubsingleton
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsEffAddNsmulDiv

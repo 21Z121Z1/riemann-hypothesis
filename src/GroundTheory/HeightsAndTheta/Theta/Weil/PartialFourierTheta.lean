@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.WeilPolarization.StdFormOneNondegenerate
 import Mathlib.LinearAlgebra.BilinearForm.Orthogonal
 

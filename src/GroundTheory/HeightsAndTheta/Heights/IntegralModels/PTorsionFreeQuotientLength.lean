@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsKrullAkizuki
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.OrderOfVanishing.Basic

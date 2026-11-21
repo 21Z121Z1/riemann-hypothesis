@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.GenusMeanAsymptotics.JacobiCharacterSums.MSqDiagA
 import Mathlib.Analysis.SpecialFunctions.Log.Monotone
 import Mathlib.Tactic.ENatToNat

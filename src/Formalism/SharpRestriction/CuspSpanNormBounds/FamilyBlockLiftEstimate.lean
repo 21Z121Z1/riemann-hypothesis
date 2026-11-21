@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
 import Formalism.SharpRestriction.CuspSpanNormBounds.DiagonalEntryIdentity
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsGramNorm

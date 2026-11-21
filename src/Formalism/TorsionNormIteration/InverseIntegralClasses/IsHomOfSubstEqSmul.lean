@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalGroupLog.LogDeterminesLaw
 import Mathlib.NumberTheory.Padics.RingHoms
 

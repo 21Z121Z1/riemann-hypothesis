@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PNbarLeviChartReg
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.PRefChartDisc
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StMUcLeviChart

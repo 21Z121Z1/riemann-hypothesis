@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 
 set_option synthInstance.maxHeartbeats 400000

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ArcLengthThreeBuildFirstLift
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ArcLengthThreeGammaFirstLift
 import Formalism.SharpRestriction.LevelLetterCocycles.RepresentationCongruences.ArcLengthThreeCongruenceLift

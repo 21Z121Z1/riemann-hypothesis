@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.FlagImmersions.SpecMapFactorisation
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CptFlatInputsOfPropZ
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsFlatHermHodgeCptConst

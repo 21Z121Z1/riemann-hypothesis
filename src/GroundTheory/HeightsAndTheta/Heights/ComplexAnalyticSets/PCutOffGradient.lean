@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCutOffGradient
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLogLogCutHess
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PFibreBound

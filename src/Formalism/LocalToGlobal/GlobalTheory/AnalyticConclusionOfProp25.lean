@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.AnalyticFirstToLatticeDiscriminant
 import Formalism.GL3MeanSquares.HookFormulaTorsion.NoExceptionalOfNoRealZero
 import Formalism.GL3MeanSquares.HookFormulaTorsion.PrimePairOfBoxAndWeakMeanSquareHypotheses

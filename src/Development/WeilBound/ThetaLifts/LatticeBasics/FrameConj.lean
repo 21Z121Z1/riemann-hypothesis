@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.FrameB
 import Development.WeilBound.ThetaLifts.LatticeBasics.HypothesesE
 

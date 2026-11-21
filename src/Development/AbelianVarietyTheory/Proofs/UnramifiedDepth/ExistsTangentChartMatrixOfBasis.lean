@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.NEvalSqZero
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.EtaDualPairing
 

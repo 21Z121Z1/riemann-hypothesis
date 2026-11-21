@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsInvertibleIndexMulSteps
 import Mathlib.Algebra.CharP.Subring
 import Mathlib.GroupTheory.FiniteAbelian.Basic

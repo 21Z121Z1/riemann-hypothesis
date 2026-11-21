@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.JUnique
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LactGen
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.LactLaws

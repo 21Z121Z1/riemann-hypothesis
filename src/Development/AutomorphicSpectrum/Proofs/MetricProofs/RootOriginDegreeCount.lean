@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexPointsIffCentres
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginCoordField
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.AlgebraicElementHomogRelation

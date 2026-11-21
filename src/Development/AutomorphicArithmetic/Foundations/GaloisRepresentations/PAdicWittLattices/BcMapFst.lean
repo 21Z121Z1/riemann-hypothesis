@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.OmegaPullId
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.HodgePullHodgePull
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCorrOpOfAvg

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Batteries.Data.Nat.Gcd
 import Formalism.LocalRingCardinality.DataHost
 

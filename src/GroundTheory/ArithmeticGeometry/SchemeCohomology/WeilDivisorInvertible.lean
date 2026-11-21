@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.InvertibleSheaf
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorLocal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorSheaf

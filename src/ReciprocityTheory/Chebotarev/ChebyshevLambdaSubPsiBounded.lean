@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.PrimeSum
 import ReciprocityTheory.Chebotarev.PrimeCont
 import ReciprocityTheory.Chebotarev.PrimeAsymp

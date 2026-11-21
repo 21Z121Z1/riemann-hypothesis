@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubOfScaledSectionValuesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulOfScaledSectionValuesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VerticalSymbolZeroOfBracketPreservingStatement

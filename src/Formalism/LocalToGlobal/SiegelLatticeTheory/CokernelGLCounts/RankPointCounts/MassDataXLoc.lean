@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CokernelGLCounts.RankPointCounts.FinJacAsm
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocMassTyp
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.LocJacOrd

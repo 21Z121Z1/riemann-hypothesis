@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToEndDApply
 import Mathlib.LinearAlgebra.Matrix.DotProduct
 import Mathlib.Tactic.Polynomial.Basic

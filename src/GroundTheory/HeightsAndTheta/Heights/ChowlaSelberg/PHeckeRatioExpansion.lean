@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.HeckeRatioExpansion
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeriesRing
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.IntSeriesInv

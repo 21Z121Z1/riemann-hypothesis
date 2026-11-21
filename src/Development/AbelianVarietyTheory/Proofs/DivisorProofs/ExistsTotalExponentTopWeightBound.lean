@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.PieriColumnMinors.RecursionInclusionExceptional
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylLatticeExactExponentBlockCut
 import Development.AbelianVarietyTheory.Statements.HeckeThetaIntegrals.FormulaAt

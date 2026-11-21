@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.RamBasic
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.PiTensorProduct

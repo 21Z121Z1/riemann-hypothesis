@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.TwistDefs
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Descent
 set_option maxSynthPendingDepth 1

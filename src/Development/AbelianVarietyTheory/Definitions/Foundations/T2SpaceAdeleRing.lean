@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsAHEqOfMemRatPts
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsGLSubmatrix
 import Development.AbelianVarietyTheory.Definitions.Foundations.NormEulerPolySubOneLe

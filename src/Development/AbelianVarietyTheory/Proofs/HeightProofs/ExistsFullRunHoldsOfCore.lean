@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsTopOfCore
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsThresholdRunHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ParametersOkOfLawsStatement

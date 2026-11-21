@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.StableGradedCounts.LocalEstimateIVOfTypeSetWeight
 import Formalism.PadicSubsetSums.StableGradedCounts.ProdPowFactorizationLe
 import Formalism.PadicSubsetSums.StableGradedCounts.FourMulSumLeProduct

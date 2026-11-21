@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.KFinAn
 import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
 import Development.WeilBound.ThetaLifts.TowerModels.LeviAd

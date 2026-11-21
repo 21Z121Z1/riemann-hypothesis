@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.TorsionTranslationPowers.Th0FromPhPrime
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalI
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementJ

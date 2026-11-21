@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LatticeDeterminedByInvariants
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLatticesGL3

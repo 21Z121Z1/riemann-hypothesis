@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ZeroFreeRegion.SmallHeightLogDeriv
 import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.NormLogDerivLeLamF
 import Mathlib.NumberTheory.Harmonic.ZetaAsymp

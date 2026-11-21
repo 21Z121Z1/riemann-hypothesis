@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.PartDiagCut
 import Mathlib.Algebra.Group.Pi.Units
 import Mathlib.RingTheory.PiTensorProduct

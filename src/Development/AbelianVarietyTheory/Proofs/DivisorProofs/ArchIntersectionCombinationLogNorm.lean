@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithVarComplexPointsCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPartCombinationPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeightedIntegralChernCombinationStatement

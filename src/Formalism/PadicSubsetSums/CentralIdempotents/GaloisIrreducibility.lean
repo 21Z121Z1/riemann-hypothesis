@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaloisIrreducibility.Statement
 import Mathlib.LinearAlgebra.Matrix.PosDef
 import Mathlib.NumberTheory.Padics.RingHoms

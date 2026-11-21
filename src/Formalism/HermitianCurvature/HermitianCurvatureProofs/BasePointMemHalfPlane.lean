@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FderivDecomp
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HasFDerivAtPrim
 import Mathlib.Algebra.Order.Star.Real

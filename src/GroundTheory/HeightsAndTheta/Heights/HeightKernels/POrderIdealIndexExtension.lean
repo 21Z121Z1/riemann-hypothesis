@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PInvertibleIdealIndex
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteTypeCycAway
 
 open CategoryTheory AlgebraicGeometry Limits NumberField

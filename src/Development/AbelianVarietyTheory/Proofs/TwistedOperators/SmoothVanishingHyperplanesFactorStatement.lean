@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SmoothVanishingHyperplanesFactor
 open GlobalTheory.Chamber
 open scoped InnerProductSpace ContDiff Classical

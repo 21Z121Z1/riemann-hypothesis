@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.ThetaFullColIsom
 import Formalism.SharpRestriction.Divisibility.InnerProductFormulaField
 

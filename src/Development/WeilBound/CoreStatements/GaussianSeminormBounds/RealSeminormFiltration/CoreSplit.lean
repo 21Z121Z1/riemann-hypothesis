@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.GaussianSeminormBounds.RealSeminormFiltration.CoreHarm
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockHarmSplit
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.FockWtDeg

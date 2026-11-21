@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CmFieldAdeleSplitPlaceSupportIntegral
 import Formalism.AlgebraicWeights.IsAlgWeight
 import Mathlib.Algebra.AffineMonoid.Basic

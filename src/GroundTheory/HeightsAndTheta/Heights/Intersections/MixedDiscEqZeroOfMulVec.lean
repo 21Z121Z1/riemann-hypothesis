@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExMapAlt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExMap
 import GroundTheory.HeightsAndTheta.Heights.Intersections.TableDegreeThreeBase

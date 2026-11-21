@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.RestrLenPrimeOfEqFinrank
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PRestrLenRestrict
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PIdealTwistFamily

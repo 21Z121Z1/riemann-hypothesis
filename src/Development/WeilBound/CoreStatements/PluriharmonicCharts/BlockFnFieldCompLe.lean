@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticNinth
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagCoverArithmeticEighth
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.LocalAnalyticSectionCoords

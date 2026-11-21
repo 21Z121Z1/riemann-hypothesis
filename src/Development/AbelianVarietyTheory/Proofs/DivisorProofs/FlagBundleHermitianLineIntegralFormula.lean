@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreCosinePushforwardUniformStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleLineBundleChernRelationStatement
 open CategoryTheory AlgebraicGeometry MvPolynomial MeasureTheory

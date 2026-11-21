@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentCoordinatesMeasurePreserving
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.Admissible
 import Formalism.SharpRestriction.CuspSpanNormBounds.RootMeasBig

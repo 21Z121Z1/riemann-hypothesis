@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdeleJoinZero
 import Formalism.LocalRingCardinality.DataHost
 import Mathlib.Analysis.Distribution.SchwartzSpace.Deriv

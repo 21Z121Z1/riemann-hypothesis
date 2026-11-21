@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsChartFirstGroupDvd
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChartNormAlgClosed
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChartNormSep

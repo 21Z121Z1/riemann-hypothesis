@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Topology.Connected.Separation
 import Mathlib.Topology.Separation.Lemmas
 import ReciprocityTheory.Hypotheses.GalCohDefs

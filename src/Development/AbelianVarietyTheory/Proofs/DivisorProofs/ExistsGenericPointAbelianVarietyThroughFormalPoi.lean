@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IrreducibleSpaceOfSmoothOfGeometricallyConnected
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ValRConstHom
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasDefect

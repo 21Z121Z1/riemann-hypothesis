@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsMahler
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.SphereMeanVol
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ValidForConstructedPointClassesEventuallyWorking
 import Formalism.LocalToGlobal.GroupLattices.AdmissibleAtGeneratorPlaces
 import Formalism.SharpRestriction.GlobalSchurBounds.LinkTied

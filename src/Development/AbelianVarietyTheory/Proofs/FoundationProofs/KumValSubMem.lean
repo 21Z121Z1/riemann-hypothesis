@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.HTPresNuOfPolys
 import Development.AbelianVarietyTheory.Definitions.Foundations.HtCoLOfEq
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UniqTrue

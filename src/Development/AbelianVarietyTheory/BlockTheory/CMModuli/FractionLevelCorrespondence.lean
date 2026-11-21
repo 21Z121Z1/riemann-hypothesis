@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.UniformTorsionIsomorphism
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.TateUniformizationInput
 import Mathlib.RingTheory.AdicCompletion.Topology

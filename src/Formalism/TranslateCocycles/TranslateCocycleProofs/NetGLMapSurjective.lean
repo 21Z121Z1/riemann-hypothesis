@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.TranslateCocycles.StatementNet
 import Formalism.TranslateCocycles.TranslateCocycleProofs.TranslateScale
 import Mathlib.Algebra.Order.Ring.Star

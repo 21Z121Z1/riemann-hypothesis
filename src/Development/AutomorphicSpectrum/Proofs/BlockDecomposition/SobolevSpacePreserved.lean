@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ApproximateIdentityExistsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationDifferentiableStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MollificationRightTranslateStatement

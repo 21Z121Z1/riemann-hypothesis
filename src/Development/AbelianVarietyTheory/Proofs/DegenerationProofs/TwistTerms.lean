@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Degenerations.NotAllMatchRankZero
 import Mathlib.Algebra.Ring.IsFormallyReal
 

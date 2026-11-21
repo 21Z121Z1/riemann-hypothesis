@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Additive
 import GroundTheory.GlobalFields.HerbrandQuotients.SUnitsPerm
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.PermLatticeDefs

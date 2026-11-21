@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.InclIntegral
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
 

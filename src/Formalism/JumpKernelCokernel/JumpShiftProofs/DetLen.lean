@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.JumpKernelCokernel.Statement
 import Mathlib.RingTheory.OrderOfVanishing.Basic
 import Mathlib.RingTheory.WittVector.IsPoly

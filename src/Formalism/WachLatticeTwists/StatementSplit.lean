@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.Statement
 import Formalism.CharacterColumnKernels.CharacterColumnKernelEqualityForm
 

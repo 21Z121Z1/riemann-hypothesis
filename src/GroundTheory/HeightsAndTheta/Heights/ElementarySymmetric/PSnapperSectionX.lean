@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTwistTilde
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeShift
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTildeFiniteE

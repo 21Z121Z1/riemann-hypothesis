@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ContinuousHermNormGroup
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.MahlerMul
 set_option maxSynthPendingDepth 1

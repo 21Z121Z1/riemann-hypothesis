@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittFractionToCpAlgebraMap
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.WittEmbeddingsCompatible
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.SubstZOfXCoordZA

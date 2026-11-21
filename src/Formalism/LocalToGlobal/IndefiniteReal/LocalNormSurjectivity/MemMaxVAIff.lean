@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LocalNormSurjectivity.FinNormSurj
 import Formalism.SatakeDualWeyl.StatementF
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.GlobalZetaFinite
 import Mathlib.Data.Int.Star
 

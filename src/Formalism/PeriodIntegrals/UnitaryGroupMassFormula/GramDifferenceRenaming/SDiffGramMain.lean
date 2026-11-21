@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.SDiffGram
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.GramDifferenceRenaming.RenGramRhs
 

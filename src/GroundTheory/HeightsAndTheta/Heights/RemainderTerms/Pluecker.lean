@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Statements
 import Mathlib.Analysis.Matrix.PosDef
 set_option maxSynthPendingDepth 1

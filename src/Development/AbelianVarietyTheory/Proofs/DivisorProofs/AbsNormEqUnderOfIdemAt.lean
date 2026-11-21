@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSplit
 import Development.AbelianVarietyTheory.Definitions.Divisors.FinitePrimesUnder
 

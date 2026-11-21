@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.PartialDifferential.SobolevInterpolation
 import GroundTheory.AutomorphicForms.HilbertSchmidtKernel
 import GroundTheory.AutomorphicForms.HilbertSchmidtCompact

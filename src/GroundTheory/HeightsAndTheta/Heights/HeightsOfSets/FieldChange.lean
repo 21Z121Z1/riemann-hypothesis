@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CardEmbeddingsRestrict
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Statements
 import Mathlib.Algebra.AffineMonoid.Basic

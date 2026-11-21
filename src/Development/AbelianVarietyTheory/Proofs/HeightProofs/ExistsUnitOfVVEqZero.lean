@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.NumericalH1Condition
 import Formalism.LocalToGlobal.ProjectiveLattices.HeightF1OfData
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.NotOverAndTriv

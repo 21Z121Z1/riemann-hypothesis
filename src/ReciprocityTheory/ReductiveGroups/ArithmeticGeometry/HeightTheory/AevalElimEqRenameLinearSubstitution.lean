@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.LaTIsPrime
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 import Std.Tactic.BVDecide.Normalize.Prop

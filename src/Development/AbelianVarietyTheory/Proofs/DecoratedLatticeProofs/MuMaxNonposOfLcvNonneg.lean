@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.HLatOps
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 open Module NumberField IsDedekindDomain Formalism.BasicNotions Formalism.DivisionValues

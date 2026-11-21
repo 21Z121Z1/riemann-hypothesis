@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.StretchedExponentialDominance
 import Formalism.LocalToGlobal.GlobalTheory.FamCol
 import Formalism.PadicSubsetSums.CentralIdempotents.EigenbasisOfDistinctRoots

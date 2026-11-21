@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.IwSys2
 import Development.AbelianVarietyTheory.Definitions.Foundations.KumValUnique
 

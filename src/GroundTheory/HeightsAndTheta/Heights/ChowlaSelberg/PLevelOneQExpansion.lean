@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.LevelOneQExpansion
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.JQExpansion
 import GroundTheory.GlobalFields.ComplexMultiplication.JInvariantSurjective

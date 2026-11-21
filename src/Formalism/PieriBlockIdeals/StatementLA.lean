@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementA
 import Formalism.RankGapBounds.TheoremALocOfLemmaA
 import Formalism.PieriBlockIdeals.StatementJ

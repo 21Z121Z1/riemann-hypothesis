@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.EvHtStatement
 import ReciprocityTheory.DualLattices.CharR
 import ReciprocityTheory.DualLattices.DualPairInh

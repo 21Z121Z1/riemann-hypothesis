@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.DiscreteSeriesBesselGapStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassBoundLowTypesSumStatement
 import Formalism.SharpRestriction.CuspSpanNormBounds.NormalizedLocalScale

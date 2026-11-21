@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.Statements
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.Analysis.Real.Pi.Bounds

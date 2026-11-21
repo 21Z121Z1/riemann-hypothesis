@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.OfNatRelIndexSupAntitone
 import GroundTheory.ProfiniteCohomology.IsProPGroupSubgroupIffIsPGroupMap
 import Mathlib.CategoryTheory.CofilteredSystem

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.WachProductBases.Statement
 import Formalism.LagrangeIdealLifts.CocyclePolynomialDivision.CompsOfMemMap
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GeometricLemmaCompact
 import GroundTheory.AutomorphicForms.GeometricLemmaAverage
 set_option maxSynthPendingDepth 1

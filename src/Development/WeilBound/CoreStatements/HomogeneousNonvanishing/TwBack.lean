@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.TwistedModuleFiniteProjectiveRankStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsSectionLevel
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SabMapIdStatement

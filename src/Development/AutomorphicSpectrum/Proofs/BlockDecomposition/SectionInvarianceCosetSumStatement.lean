@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SectionInvarianceCosetSum
 open Filter Topology
 set_option maxHeartbeats 1000000 in

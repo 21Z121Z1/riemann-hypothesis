@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafWCovPf
 import Mathlib.Algebra.Category.ModuleCat.Biproducts
 import Mathlib.CategoryTheory.Limits.FunctorCategory.BinaryBiproducts

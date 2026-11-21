@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GaloisFamilyConductorBoundStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GaloisFamilyResidualImageStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GaloisFamilyPlacesOverRealStatement

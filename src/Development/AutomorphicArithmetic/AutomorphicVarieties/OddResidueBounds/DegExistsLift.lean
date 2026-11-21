@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PrimeSetBoundDataOfPrimitiveChar
 import Mathlib.NumberTheory.Cyclotomic.Gal
 import Mathlib.RingTheory.PicardGroup

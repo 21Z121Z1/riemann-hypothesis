@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.IsCompletedStrictHens
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth

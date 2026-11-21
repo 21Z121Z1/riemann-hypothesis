@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PbRadHeadOf
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ModuleFormEqRadialFormOne
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadicalUnipotentFirstBasisEqOne

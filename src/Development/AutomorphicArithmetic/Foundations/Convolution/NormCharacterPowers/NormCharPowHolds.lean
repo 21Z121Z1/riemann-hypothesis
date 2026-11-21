@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.ZeroExp
 import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.AbsCount2
 import Development.AutomorphicArithmetic.Foundations.Convolution.NormCharacterPowers.LogAsym

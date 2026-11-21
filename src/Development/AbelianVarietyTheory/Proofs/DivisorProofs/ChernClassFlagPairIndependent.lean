@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Adj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairSameStepsPointEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairTwoStepExchangeStatement

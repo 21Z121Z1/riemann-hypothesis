@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.LocalNonemptiness.WeightFamilies
 import Formalism.LocalToGlobal.NumberFieldFamilies.GamCSpec
 import Mathlib.RingTheory.Etale.Weakly

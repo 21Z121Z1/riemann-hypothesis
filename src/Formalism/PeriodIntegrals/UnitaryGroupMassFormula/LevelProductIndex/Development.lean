@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.LevelProdIdx
 
 open Matrix NumberField IsDedekindDomain

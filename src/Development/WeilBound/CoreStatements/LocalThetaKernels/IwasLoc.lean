@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaE
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.BigCellLocal
 

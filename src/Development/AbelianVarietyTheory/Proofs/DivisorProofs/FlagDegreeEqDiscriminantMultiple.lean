@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeFormulaStatement
 open MvPolynomial Formalism.DegreeFormula GlobalTheory.FlagPoly

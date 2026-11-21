@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MirabolicMackeyTheory.StatementL
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.IdxChange
 

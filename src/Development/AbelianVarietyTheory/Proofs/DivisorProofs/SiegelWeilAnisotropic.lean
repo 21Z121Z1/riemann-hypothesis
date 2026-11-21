@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.InnerProductFormulaField
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.FlatZetaIntegral
 

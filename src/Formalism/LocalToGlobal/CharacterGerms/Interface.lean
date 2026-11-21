@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.ScaledSecondIntegral
 import Formalism.IncomingBounds.StatementThmP
 import Mathlib.RingTheory.MvPowerSeries.Substitution

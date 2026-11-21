@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsIndex
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Statements
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

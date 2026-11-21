@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneZeroInsertionLinearApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSchwartzNe
 

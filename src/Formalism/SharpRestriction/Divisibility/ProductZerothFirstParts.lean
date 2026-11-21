@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Mathlib.Combinatorics.Young.YoungDiagram
 import Mathlib.RingTheory.PowerSeries.Exp

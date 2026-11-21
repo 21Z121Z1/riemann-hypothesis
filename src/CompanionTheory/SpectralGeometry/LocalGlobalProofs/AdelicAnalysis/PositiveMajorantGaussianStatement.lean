@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.PositiveMajorantGaussian
 open NumberField IsDedekindDomain MeasureTheory Matrix
 open scoped ENNReal NNReal

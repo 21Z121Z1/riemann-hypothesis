@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.ClassFormations.IsIsoCohomologyMapAlongResSubgroupOfHom
 import GroundTheory.ProfiniteCohomology.ClassFormations.Quotient
 import GroundTheory.ProfiniteCohomology.ClassFormations.Finite

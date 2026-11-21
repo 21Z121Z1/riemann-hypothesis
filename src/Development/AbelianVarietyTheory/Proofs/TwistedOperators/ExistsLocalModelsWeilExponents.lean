@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelRationalStructureStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelFrameCompatStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.WeilModelCharacterMatchStatement

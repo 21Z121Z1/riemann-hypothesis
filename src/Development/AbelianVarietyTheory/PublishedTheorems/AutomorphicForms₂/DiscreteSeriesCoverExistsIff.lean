@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 
 open Formalism.BasicNotions Formalism.BasicNotions.TH Formalism.L2.Theta

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafGlueProperPf
 import Mathlib.AlgebraicGeometry.ValuativeCriterion
 import Mathlib.AlgebraicGeometry.QuasiAffine

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.ThetaIsometryFactsHold
 import Formalism.LocalRingCardinality.FactDelDualNabla
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ConstantCoeffJetLSubR

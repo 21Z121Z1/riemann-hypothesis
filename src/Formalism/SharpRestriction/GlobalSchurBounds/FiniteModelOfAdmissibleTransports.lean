@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.OrthSum
 import Formalism.LocalRingCardinality.Lemmas
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Pc

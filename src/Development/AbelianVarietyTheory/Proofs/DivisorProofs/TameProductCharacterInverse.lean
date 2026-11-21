@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FactorResIEqResS
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LevelLiftConditions
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TameInvariantLevelAction

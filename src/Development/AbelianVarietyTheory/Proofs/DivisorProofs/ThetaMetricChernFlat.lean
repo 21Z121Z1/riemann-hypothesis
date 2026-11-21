@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFactorNormInvarianceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodQuadraticFormsSmoothStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuadraticFormFderivComplexStatement

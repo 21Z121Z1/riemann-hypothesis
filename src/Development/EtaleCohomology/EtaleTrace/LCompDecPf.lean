@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.LadicH0LocallyConstant
 import Mathlib.AlgebraicGeometry.QuasiAffine
 import Mathlib.Order.CompletePartialOrder

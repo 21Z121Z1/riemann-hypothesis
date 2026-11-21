@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ReflectionTransposeEntriesMem
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SignedCoordinateEqSignSmul
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DiagonalTransferAction

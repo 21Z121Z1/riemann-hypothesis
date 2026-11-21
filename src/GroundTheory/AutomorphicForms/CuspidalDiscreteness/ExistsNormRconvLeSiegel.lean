@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.RconvDiff
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelConj
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SiegelCount

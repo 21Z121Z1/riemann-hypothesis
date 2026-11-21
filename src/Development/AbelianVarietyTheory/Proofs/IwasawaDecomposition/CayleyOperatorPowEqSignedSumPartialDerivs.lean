@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.BlockGraph
 import ReciprocityTheory.DualLattices.FischerAdjointStatement
 open MvPolynomial ReciprocityTheory.PGsh GlobalTheory.CayleyBlock

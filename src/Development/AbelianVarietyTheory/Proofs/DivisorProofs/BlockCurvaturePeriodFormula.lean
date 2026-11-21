@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockModelPosFrameBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChTwoInvOfIsSymm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChTwoBlockDiagonalSumStatement

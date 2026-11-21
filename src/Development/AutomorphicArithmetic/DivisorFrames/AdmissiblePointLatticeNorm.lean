@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.AdmissiblePointDiscreteValuation
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsLevelAbelianMaps
 import Development.AutomorphicArithmetic.DivisorFrames.LevelFlagCompactTangent

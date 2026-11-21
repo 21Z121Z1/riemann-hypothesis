@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.BlockValue
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsCoinv
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsTop

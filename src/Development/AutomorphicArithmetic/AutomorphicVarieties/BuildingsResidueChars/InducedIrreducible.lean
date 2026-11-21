@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MixInvariantPlaneDecomposition
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.MixSignTwist
 import Development.AutomorphicArithmetic.AutomorphicVarieties.BuildingsResidueChars.ResidualCharactersPsiNe

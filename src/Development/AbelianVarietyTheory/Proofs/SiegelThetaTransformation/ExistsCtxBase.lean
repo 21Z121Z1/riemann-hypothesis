@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.MemMulAAOfTrace
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.SelfDualCLatP
 

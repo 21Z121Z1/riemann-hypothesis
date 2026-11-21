@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.FormalIdeal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjTwistLeray
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Support

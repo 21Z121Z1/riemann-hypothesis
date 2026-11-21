@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LogSumExpBounds.StatementC
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.ReduceModChar

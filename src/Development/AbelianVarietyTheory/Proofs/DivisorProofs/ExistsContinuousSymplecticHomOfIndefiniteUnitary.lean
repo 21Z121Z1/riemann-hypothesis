@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.RealMetaplecticRepresentation
 import Formalism.LocalRingCardinality.DataTheta
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Upqcpt

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaEqZeroOfReal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermCColMulVec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HxOfIsONFr

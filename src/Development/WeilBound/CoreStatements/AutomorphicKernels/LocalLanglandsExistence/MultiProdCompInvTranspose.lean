@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiProdCompInvTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIrreducibleComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SegDualExistsTerms

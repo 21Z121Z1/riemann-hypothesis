@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsIsLiftOfMemKO
 import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsContinuousPadic

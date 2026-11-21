@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataAmbForm
 import Formalism.LocalRingCardinality.DataDIV
 import Formalism.LocalRingCardinality.DataParams₂

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsSpreadGlue
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsIsoGlueTwo
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.PVectorBundleLocal

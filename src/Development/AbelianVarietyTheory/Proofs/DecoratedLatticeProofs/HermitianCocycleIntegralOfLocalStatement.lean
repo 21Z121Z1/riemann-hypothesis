@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianCocycleIntegralOfLocal
 open NumberField IsDedekindDomain Formalism.L2.Ker
 set_option maxHeartbeats 1000000 in

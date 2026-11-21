@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.TCoefMInMMul
 import Mathlib.RingTheory.Derivation.Lie
 import Mathlib.RingTheory.WittVector.IsPoly

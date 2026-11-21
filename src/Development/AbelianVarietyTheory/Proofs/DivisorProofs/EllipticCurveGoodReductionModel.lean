@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TateUnramifiedOfTorsionUnramified
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JInvariantIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeierstrassModelGoodReductionStatement

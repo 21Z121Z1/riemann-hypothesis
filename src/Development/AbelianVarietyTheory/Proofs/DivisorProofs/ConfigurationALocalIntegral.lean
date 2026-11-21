@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IncMMapPiInfEmb
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StandardEvaluationModelIntegral
 open scoped TensorProduct NNReal Matrix ENNReal

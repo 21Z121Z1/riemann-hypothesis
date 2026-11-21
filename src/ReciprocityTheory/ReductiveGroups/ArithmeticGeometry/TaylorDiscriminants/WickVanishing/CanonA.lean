@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.TaylorDiscriminants.WickVanishing.LogInv
 import Mathlib.RingTheory.Unramified.Pi
 import Mathlib.RingTheory.LocalProperties.Reduced

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.SumSingleEmbeddingExtendLe
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.HalfPrincipalAndSplit
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DepthBoundOfTwoSteps

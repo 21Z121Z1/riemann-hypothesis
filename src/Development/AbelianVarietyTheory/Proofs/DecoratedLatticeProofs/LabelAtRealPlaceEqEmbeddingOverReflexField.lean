@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.ConjLemmas
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.TwistedLevelValues
 import Formalism.LocalRingCardinality.ConjSqrtMinusD

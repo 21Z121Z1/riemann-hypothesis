@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.IntegrablePair
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.CyclicAndLine
 import Development.AutomorphicSpectrum.Proofs.MembershipProofs.ExistsInvariantForm

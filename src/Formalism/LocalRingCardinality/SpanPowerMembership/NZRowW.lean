@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowU
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowV
 import Formalism.LocalRingCardinality.SpanPowerMembership.EntPlNonempty

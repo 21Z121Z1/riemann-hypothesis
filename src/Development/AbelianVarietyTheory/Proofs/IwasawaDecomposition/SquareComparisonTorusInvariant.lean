@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.CocycleIdentityIso
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ComparisonTorusInvariant
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GmSqPullG

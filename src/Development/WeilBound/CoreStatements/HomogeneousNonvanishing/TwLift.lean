@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.ProIsoAt
 import Mathlib.LinearAlgebra.BilinearForm.TensorProduct
 import Mathlib.NumberTheory.Padics.RingHoms

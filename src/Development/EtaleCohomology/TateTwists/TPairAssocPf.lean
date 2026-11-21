@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleTwistedCupAssocOfTwistedPairingExistsAssoc
 import Development.EtaleCohomology.TateTwists.EtaleTensorPairTwistResolutionMul
 import Development.EtaleCohomology.TateTwists.EtaleTensorPairProductAssociative

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroCuspSectionLargeEvenScalarWeight
 open NumberField Formalism.L2.Pj ReciprocityTheory.ChartRestriction.G.FD
 set_option maxHeartbeats 1000000 in

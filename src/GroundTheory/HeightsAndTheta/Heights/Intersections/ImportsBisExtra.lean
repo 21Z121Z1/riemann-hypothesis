@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsMoreBis
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsMoreMore
 import GroundTheory.HeightsAndTheta.Heights.Intersections.LocQuotCard

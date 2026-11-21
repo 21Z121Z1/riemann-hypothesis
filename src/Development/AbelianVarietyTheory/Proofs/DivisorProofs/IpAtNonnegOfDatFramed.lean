@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerChainMatricesWithNormBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInvFrameOfPosDef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FamFramedOfPos

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StFlatDimFormula
 import Mathlib.RingTheory.Ideal.KrullsHeightTheorem
 set_option maxSynthPendingDepth 1

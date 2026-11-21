@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCorrectionU1.PolyBA
 import Formalism.HermitianCurvature.StatementU
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointNagata
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PVertPointResidue
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsVertPointLengthSteps

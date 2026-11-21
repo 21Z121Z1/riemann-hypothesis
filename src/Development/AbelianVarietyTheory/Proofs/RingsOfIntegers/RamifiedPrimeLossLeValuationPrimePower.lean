@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CMTraceForms.CmDatumDiscriminantDepthBounds
 import Development.AbelianVarietyTheory.Statements.ShortVectorBound.ScaledLatticesInSupLattices
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeVal

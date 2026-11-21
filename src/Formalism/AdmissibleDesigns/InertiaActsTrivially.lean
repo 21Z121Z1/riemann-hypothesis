@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.NonemptyPl
 import Formalism.SharpRestriction.LevelLetterCocycles.RingDataOfIdempotents
 import Formalism.WachLatticeTwists.RealClassMaps.RealClassMapSecondPlace

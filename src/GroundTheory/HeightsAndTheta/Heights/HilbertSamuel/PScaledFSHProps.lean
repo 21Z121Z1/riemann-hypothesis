@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsScaledFSHProps
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PTorusInvLevi
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsAntisym

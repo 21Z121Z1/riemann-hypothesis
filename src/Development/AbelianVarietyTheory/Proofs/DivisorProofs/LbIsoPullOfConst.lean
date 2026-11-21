@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasRigidChart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LbIsoOfSymmetric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvCompOfIsGrpPullback

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.LaTIsPrime
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteGenOfWeakAxioms
 import Mathlib.LinearAlgebra.Charpoly.Basic

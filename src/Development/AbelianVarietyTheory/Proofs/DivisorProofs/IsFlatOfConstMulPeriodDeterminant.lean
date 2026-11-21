@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFramedChartSnc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsDerivAt0CompLinear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigFrameMatch

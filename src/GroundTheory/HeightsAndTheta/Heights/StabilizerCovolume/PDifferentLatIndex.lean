@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PTorusIndex
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.DiffLatStep
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PDifferentExtNorm

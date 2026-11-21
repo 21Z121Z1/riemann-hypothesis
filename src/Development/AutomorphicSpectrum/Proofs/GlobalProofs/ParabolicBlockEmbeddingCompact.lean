@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.SiegelPar
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StdParEqFlag
 

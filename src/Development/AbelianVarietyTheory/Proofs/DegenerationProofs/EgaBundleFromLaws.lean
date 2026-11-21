@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Degenerations.MorAlgSt
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.CompatibleLineBundlesFormalThickeningStatement
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsUniqueHomOfThickeningsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.HolomorphicFamilies.SupGenTies
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.GCauchyHolds
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.SemicharUnitFrame

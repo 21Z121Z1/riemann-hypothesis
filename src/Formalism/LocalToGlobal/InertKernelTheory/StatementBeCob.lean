@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.CoeffOneLNe
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementE
 

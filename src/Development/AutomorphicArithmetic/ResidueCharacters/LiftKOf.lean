@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.LiftingConditionOfCrystallineLift
 import Development.AutomorphicArithmetic.ResidueCharacters.LocNum
 import Development.AutomorphicArithmetic.ResidueCharacters.LocRes

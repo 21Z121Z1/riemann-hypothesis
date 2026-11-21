@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelAddStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelNegStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FromModelZeroLogConstantStatement

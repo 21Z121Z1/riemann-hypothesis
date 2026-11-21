@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TwGXi
 import Mathlib.NumberTheory.Padics.PadicIntegers
 open NumberField TensorProduct

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FunJetApply
 import Mathlib.Analysis.CStarAlgebra.Matrix
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric

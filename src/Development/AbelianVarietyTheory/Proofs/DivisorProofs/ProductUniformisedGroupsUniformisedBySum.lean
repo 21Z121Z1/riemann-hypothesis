@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformisationProductOfUniformisedGroupsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CubeClsPullHom
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GAdjSndOfIsProdUnif

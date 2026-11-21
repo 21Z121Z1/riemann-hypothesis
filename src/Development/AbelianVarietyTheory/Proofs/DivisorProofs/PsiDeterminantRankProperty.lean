@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaTensorExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTiltAutomorphismTransportStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.XiMuAssociatedOfPrimitiveRootsStatement

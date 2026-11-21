@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.TransferIndices.PerS
 import Mathlib.LinearAlgebra.Matrix.AbsoluteValue
 

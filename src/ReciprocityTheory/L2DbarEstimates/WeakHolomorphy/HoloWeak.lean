@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.MiscLemmasF.Imports
 import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
 import Mathlib.Tactic.ENatToNat

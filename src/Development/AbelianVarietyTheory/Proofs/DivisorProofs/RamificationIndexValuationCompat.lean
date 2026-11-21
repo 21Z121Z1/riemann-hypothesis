@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsFiniteSeparableCompositum
 import Mathlib.Data.Int.Star
 import Mathlib.RingTheory.Valuation.AlgebraInstances

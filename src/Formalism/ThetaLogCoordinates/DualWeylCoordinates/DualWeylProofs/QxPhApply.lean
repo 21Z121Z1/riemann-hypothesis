@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.StripDataTensorColumnFamilies
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DualWeylProofs.BCoreT
 

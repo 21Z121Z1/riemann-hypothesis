@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.PtCellUniq
 import Formalism.HermitianCurvature.StatementC
 import Formalism.SharpRestriction.CuspSpanNormBounds.LeadMinorK

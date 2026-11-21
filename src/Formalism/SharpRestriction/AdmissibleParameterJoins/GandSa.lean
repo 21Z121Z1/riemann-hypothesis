@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SmallOrderPrimes
 import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
 import Formalism.SharpRestriction.GlobalSchurBounds.Chosen

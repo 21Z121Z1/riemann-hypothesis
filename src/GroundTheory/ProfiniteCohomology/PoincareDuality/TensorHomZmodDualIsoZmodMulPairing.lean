@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.PoincareDuality.NsmulEqZeroOfNonemptyAddEquiv
 import GroundTheory.ProfiniteCohomology.PoincareDuality.Torsion
 import GroundTheory.ProfiniteCohomology.CartierDual

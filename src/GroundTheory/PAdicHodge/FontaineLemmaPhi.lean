@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.FontaineLemmaAInf
 import GroundTheory.PAdicHodge.ACrisFrobFixed
 import GroundTheory.PowerSubgroups.CountableNeighbourhoods.FontainePhiPowerSubgroups

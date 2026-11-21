@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CoordinatesFlagVector
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetNeZeroOfSignature
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalGroupInFamilyNontrivial

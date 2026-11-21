@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ActOOneOne
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Formalism.DoubleCosetMeasures.StatementZ

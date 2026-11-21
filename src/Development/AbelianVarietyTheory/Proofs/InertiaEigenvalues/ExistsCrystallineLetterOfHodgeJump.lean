@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DeRhamComponentWachLetterBasisFiltration
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ISupIndepDdRE
 set_option synthInstance.maxHeartbeats 400000

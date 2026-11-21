@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.ReducedBasisBounds.TransvectionIsometry
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls

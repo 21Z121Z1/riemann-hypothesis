@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeHsNormLeDegreeBoundRealPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplitudeArithmetic
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.InvVolPos

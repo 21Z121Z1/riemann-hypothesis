@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormRatioRealizationSameDualStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoordOfIndep

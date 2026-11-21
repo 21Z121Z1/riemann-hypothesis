@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UnipotentSums
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianXiVector
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LinearChangeOfVariablesBis

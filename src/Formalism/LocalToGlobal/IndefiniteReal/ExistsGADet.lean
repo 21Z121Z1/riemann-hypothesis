@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.WeilDatumUniqueOfDeterminants
 import Formalism.LocalToGlobal.IndefiniteReal.DeterminantProjection
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil

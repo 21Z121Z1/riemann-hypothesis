@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsFlipDet
 import Formalism.LocalToGlobal.BesselHermitianTheta.TiedWeil
 open NumberField Matrix Complex IsDedekindDomain

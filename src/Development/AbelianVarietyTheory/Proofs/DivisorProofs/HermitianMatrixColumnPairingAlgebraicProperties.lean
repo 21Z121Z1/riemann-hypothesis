@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnipVal
 import Mathlib.Algebra.Module.StablyFree.Basic
 open MeasureTheory Matrix GlobalTheory.KSp GlobalTheory.SplitUnitary

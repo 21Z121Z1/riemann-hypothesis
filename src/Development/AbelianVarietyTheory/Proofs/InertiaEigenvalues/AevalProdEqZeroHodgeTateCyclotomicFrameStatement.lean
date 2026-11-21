@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AevalProdEqZeroHodgeTateCyclotomicFrame
 open Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.Cyc
 set_option maxHeartbeats 1000000 in

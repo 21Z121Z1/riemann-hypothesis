@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.Chain2aCoreNoAnalytic
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.PChain
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.SlopeInequalityOfLattices

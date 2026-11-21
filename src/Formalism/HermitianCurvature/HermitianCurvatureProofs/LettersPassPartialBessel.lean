@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.VanishKr
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutoffExists
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IsOpenDminNe

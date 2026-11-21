@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.FixedByAutomorphismsMemFieldStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FramedPointDescendsStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatGenFrameIndependentStatement

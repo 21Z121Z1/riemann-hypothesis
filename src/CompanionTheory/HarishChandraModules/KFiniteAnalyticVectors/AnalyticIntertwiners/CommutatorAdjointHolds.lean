@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.HarishChandraModules.KFiniteAnalyticVectors.AnalyticIntertwiners.NilpotentOfPowerTraces
 import Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.AnalyticVectors.NcBound

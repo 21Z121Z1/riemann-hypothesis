@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernPotentialPositiveOnComponentsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PositivePotentialMinusSmallMultiplePshStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPotentialOfMetricExistsStatement

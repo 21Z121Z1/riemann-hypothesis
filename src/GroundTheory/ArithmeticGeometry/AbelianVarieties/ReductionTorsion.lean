@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroupReduction
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.FormalGroupTorsion
 

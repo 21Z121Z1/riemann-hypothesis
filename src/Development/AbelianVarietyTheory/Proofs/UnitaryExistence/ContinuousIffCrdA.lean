@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspidalL2Subspace
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge
 import Formalism.LocalToGlobal.HermitianColumns.InLocalDiscriminantKernel

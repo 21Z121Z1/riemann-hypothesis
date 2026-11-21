@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsUniqueDetGen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionTransportCmPeriodsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodTransportGaloisConjugateStatement

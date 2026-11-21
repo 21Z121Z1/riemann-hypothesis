@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedExtensionProductDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerBoundedValuationKernelStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundedSubgroupFiniteCosetsStatement

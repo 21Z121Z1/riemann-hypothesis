@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.CloudNonneg
 import Formalism.LogVandermondeBounds.LogVandermondeProofs.VandNSuccRight
 import Formalism.LocalToGlobal.Columns.BrwLastNeZero

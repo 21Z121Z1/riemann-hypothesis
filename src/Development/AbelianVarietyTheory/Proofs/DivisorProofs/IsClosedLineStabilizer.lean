@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLineStab
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinSeriesMeasurable
 open scoped TensorProduct NNReal Matrix

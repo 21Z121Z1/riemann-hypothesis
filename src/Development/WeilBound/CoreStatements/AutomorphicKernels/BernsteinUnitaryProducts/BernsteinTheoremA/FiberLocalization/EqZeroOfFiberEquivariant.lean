@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.WhittakerLSpace
 import GroundTheory.AutomorphicForms.WhittakerCriterion
 import Mathlib.Topology.Separation.Connected

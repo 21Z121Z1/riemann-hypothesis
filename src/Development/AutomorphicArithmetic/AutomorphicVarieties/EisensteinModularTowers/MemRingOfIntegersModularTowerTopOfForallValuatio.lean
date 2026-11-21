@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsPrimitiveRootTopZeta
 import Mathlib.RingTheory.Valuation.LocalSubring
 import Development.AbelianVarietyTheory.Definitions.Foundations.Letter

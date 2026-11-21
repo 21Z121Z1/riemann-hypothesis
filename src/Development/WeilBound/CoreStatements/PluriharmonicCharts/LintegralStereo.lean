@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FlagBundles.PSphereLongitudeCoordinates
 
 namespace PositivityTheory.Xgp.fib_stereo

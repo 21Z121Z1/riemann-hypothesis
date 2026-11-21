@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.GapParts
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ProdDetMemHaO
 import Formalism.LocalToGlobal.CharacterGerms.BlockMembershipSelfConjugate

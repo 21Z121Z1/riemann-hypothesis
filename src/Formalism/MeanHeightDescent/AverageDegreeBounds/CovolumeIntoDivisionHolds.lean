@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MeanHeightDescent.StatementA
 import Formalism.MeanHeightDescent.BadRowsNumeric
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TorusAverageIdentity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ThetaCentralCharacterAtZeroStatement
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

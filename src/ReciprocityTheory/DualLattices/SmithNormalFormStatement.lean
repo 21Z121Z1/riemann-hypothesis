@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.EigenQuotientSmithStatement
 import ReciprocityTheory.DualLattices.StdJForm4
 import ReciprocityTheory.DualLattices.ExistsMatOfEquiv

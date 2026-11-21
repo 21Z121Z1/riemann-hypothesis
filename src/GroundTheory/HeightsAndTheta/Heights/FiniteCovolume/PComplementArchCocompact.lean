@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StComplementArchCocompact
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StArchCovolumeBound
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PComplementExtension

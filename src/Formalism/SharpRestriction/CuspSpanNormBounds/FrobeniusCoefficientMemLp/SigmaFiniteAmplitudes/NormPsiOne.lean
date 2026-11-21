@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.FrobeniusCoefficientMemLp.SigmaFiniteAmplitudes.BesselIntg
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MeasSgsPow
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PsiMajNonneg

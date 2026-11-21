@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHypersurfacePresentation
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PGenericPrimitive
 import Mathlib.Algebra.MvPolynomial.Division

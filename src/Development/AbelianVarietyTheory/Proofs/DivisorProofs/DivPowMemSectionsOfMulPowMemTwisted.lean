@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivMemOfMulPowDivMemOfRegularPair
 import Development.AbelianVarietyTheory.Definitions.Divisors.CharZeroFunctionField
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ReferenceMetricMulDualEqOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NonemptyPolarizationDataStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBoundaryOfTorusDataStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.Brauer.TensorSimple
 import Mathlib.Algebra.Azumaya.Basic
 import Mathlib.Algebra.Central.Matrix

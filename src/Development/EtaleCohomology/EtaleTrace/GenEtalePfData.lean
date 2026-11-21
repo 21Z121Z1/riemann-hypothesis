@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.GenEtalePfCut
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.StatementDS
 import Formalism.FormalDegreeBessel.StatementG
 import Mathlib.Algebra.AffineMonoid.Basic

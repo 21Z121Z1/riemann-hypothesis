@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.StatementOC
 import Formalism.ZetaRealNonvanish
 import Mathlib.NumberTheory.LSeries.Nonvanishing

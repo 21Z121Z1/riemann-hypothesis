@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsInvertibleIndexMulSteps
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLocallyPrincipalCoprime
 set_option maxSynthPendingDepth 1

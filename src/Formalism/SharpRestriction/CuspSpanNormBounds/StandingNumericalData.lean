@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.SArith
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalDataRealPlace
 import Formalism.LocalRingCardinality.DataParams₂

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FreeActionExpansion
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WordMonicExtraction
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RealWeightedForms

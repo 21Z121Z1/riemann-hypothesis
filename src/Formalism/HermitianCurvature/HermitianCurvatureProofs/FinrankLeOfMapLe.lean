@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.PrimeToDifferent
 import Mathlib.GroupTheory.IndexNSmul
 import Mathlib.RingTheory.Henselian

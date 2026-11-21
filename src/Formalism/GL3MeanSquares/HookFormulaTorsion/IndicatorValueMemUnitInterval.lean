@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.UnitaryConjugateDiagonalMoments
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.Harmonic.Bounds

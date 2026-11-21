@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ReducedTensors.StatementsInj
 import GroundTheory.HeightsAndTheta.Heights.ReducedTensors.Imports
 import Mathlib.FieldTheory.PurelyInseparable.Exponent

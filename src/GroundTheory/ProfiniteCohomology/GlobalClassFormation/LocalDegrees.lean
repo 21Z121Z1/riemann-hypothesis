@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalDegrees.Layers
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalDegrees.Decomposition
 set_option maxSynthPendingDepth 1

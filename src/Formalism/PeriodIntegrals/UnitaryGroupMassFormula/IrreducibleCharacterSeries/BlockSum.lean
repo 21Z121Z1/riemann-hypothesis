@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IrreducibleCharacterSeries.ClassFnOfIsIrrChar
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.TypesDefs
 import Formalism.PadicSubsetSums.CentralIdempotents.IsConstituent

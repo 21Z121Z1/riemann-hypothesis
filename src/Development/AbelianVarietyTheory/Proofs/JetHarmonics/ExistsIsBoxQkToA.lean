@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.TwistBCPf
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBoxMaps
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPhiRelSmul

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.KernelQuotientFinite
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AddedBlockKernelSupport
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalModelPeriodLattices

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.HoweInj
 import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.HoweEx
 import Development.AutomorphicArithmetic.Foundations.Convolution.TwistedLocalOrbits.WhitOne

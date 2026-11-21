@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.Statement
 import Lemmata.SecondBlockLemmaA.Imports
 import Lemmata.AddValuationProducts.AddValProd

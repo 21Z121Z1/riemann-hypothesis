@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.MatEquivApply
 import Formalism.LocalToGlobal.CharacterGerms.ExistsStrictMonoMinor
 

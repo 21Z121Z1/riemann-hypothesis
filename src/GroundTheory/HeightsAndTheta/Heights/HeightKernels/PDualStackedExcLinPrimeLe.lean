@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcResidue
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualCotangentKer
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcGeoFirst

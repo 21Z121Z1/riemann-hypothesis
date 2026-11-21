@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRatDetNeZeroOfSymplectic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelActionPreservesFlatForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsThetaOfPolAV

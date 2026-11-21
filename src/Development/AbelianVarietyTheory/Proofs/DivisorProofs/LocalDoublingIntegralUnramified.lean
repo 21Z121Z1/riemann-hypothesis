@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyConstantCharactersSeparateStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HeisenbergOperatorIsotropicTranslationCharSplitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalFlipMatchSurjectiveStatement

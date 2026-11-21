@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.FiniteIntertwining
 import Formalism.BranchSandwichDivisors.DivFromPassageAndNorm
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GenericDetPowMulHw

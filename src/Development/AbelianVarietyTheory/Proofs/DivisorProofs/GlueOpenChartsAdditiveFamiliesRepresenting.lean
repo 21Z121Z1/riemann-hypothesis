@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullLiftOneEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullUnitEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentableOver

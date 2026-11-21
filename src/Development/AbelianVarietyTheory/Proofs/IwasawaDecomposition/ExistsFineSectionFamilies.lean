@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUniqueCoeffsStableBasisStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StableBasisNonvanishingClosedPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MultiplierPowerUnitConstantStatement

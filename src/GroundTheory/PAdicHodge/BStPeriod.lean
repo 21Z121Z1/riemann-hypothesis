@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.LogMul
 import GroundTheory.PAdicHodge.BdRAlgCl
 import GroundTheory.PAdicHodge.UntiltFrobeniusEquivSymmEpsilonNeOne

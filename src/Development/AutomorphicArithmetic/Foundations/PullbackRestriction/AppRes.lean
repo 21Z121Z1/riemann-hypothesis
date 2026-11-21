@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.SortSign
 
 open CategoryTheory TopologicalSpace Opposite GlobalTheory GlobalTheory.PD

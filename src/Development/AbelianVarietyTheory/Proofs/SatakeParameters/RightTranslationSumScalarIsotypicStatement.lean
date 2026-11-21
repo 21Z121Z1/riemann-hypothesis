@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RightTranslationSumScalarIsotypic
 open NumberField IsDedekindDomain ReciprocityTheory.Aut
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFundamentalDomainRationalBlockUnipotentGL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalConstTerm
 

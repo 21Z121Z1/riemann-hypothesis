@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.FormsPin
 import Formalism.LocalToGlobal.KernelLattices.AdaptedEnt
 import Formalism.LocalToGlobal.KernelLattices.KerMtPin

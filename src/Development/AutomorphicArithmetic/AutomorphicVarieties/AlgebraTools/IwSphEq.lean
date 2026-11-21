@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwPermMul
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwHkTrace
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwBruhatKO

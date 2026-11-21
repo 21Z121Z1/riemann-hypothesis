@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.NumberFieldModels.TransferGaugeGeneratorZbarInv
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.TieRad
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopFirstOfParts

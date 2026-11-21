@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfFrameCols
 import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactUnipFlag
 open scoped TensorProduct NNReal ENNReal Matrix

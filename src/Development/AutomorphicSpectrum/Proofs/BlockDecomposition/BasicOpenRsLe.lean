@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FormSumRepresentativeLift
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CupListRepresentativeOfForms
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGradedClassRepresentative

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHyperplaneRegularSection
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PShiftSectionBound
 set_option maxSynthPendingDepth 1

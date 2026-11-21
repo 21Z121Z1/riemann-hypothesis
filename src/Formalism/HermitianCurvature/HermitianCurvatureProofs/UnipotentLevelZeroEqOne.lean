@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HeadCorrespondenceOfParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SupportPhiZeroSubset
 

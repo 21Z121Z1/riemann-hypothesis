@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CellFunctorScalarDiagonal
 open GlobalTheory.PRep GlobalTheory.SmGL
 open scoped TensorProduct

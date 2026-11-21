@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CovolumeOfHeightPrintsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Ch2ConstantExistsStatement
 open GlobalTheory.CovTop GlobalTheory.BigTop

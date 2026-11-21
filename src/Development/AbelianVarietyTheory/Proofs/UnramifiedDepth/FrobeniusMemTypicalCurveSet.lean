@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.GaugedFormalGroupCurveLogarithmsAddSubgroupRescaStatement
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.MemCvOfSubstXPow
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

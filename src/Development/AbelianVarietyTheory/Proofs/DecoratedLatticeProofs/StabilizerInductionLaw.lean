@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.ContinuesConst
 import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactUnipFlag
 open scoped NNReal Matrix TensorProduct Topology

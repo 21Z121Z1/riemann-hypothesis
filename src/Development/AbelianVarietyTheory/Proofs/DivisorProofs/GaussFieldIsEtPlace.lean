@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToRepFam
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsEtLevZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDatumAOne

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.TheoremDivIneqRowsShift
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.YoungDiagramHook
 

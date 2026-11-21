@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationFlagFiltrationExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericMapExtendsAfterScaling
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairDivisorClassSumStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsUnfoldingTorus
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsTorusIntegral
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PArchLatticeDiscrete

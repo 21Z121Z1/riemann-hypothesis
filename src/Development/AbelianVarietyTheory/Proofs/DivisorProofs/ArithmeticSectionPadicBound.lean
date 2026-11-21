@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagComponentsBijectModuliComponents
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EigenframeCoordinateGradedNormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagCompactificationSectionWeightStatement

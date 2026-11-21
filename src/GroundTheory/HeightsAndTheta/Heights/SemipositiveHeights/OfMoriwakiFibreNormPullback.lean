@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.IsConjInvariantHZcomb
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMonomialShift
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.AssemblyBase

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePsi
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.ChiMemSubfield
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.ExtWRec

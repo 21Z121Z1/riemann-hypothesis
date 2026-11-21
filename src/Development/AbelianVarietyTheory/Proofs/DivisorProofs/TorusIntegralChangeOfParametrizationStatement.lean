@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusIntegralChangeOfParametrization
 open MeasureTheory Set
 open scoped ContDiff

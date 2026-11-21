@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.UnitaryThreeDeformations.IsCharZeroPt
 import Mathlib.GroupTheory.SchurZassenhaus
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

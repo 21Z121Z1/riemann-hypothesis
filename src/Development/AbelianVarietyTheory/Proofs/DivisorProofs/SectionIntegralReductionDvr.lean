@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PadicEmbeddingOfDvrStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticSectionPadicBoundStatement
 open NumberField IsDedekindDomain Filter Topology

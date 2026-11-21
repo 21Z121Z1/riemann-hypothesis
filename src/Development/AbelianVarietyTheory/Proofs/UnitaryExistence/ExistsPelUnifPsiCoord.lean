@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.BetaAtSymm
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsPullFOfGenRel
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.UniformisationTripleLinearTorsionIso

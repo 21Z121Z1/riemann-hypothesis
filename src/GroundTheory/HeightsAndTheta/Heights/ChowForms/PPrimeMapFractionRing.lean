@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.StatementsNormForm
 import Mathlib.Algebra.MvPolynomial.NoZeroDivisors
 import Mathlib.Order.CompletePartialOrder

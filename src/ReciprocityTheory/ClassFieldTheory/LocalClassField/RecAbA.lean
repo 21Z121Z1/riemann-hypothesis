@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.QZDefs
 import Mathlib.GroupTheory.FiniteAbelian.Duality
 import Mathlib.Tactic.Monotonicity.Lemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Pullback
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StatementsPullback
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PChartLeviThGe

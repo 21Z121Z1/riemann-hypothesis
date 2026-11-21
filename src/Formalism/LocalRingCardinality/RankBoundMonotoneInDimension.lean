@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataParams₂
 import Formalism.ThetaLiftIndependence.FinalThetaLiftAMFKIndep
 import Formalism.FrobeniusOrbits.HostCorollaries

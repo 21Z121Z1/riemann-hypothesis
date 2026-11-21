@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.QuotientMeasureFibration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactTorusQuotientIntegrationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactTorusQuotientInvarianceStatement

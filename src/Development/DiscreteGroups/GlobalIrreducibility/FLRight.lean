@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.GlobalIrreducibility.DzRedF
 import Development.DiscreteGroups.GlobalIrreducibility.DzIsoKO
 import Development.DiscreteGroups.GlobalIrreducibility.DzRedMat

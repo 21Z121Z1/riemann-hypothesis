@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IsRawChartBaseChangeJetPoints
 import Formalism.LocalToGlobal.ProjectiveLattices.IsChartIff
 import Formalism.LocalToGlobal.ProjectiveLattices.OneLtAbsNormReal

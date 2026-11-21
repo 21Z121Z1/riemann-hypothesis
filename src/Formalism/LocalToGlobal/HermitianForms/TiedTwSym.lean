@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianForms.TiedTwSame
 import Formalism.LocalToGlobal.HermitianColumns.TiedCh
 import Formalism.LocalToGlobal.HermitianForms.TiedSym

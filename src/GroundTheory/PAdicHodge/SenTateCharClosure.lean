@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.SenTateCharUnits
 import GroundTheory.PAdicHodge.NormalizedTraceClosure
 import GroundTheory.PAdicHodge.NormalizedTrace

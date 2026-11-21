@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.SmoothPartStable
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EqOneOfPowClose
 import Mathlib.Algebra.Group.MinimalAxioms

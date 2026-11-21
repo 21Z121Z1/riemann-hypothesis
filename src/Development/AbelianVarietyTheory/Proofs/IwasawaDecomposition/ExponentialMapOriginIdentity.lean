@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsContinuousOnFrameDirectionsInverse
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DualGramInterpGram
 open AlgebraicGeometry CategoryTheory Limits NumberField Matrix

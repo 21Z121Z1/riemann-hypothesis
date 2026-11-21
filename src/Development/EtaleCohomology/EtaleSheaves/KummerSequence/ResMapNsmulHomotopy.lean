@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafKumDeltaPf
 import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuMapPf
 import Development.EtaleCohomology.EtaleSheaves.KummerSequence.LeafKumMuInjPfGlue

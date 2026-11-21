@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.FinalD
 import Formalism.ThetaLogCoordinates.ResidueClassEstimates.FinalT
 import Formalism.SharpRestriction.GrowthBounds.TableLineDegreeFive

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsTheta
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqTorusOfClassify
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.FlatTorsionIff

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HarmonicPoissonPuncturedDisc
 open Filter Topology Set Metric MeasureTheory ReciprocityTheory.AnForm
 open scoped ContDiff

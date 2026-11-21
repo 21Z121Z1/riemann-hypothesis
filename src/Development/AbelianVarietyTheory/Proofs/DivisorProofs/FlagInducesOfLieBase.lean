@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagInduces
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithBaseHermitianVectorBundlesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithBaseHermitianBundlesSecondStatement

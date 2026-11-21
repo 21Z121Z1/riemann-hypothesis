@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HeckeTOperatorExplicitModularFormStatement
 import Std.Tactic.BVDecide.Normalize.Prop
 open GlobalTheory.HeckeFamilyMatrices Polynomial UpperHalfPlane Filter Topology

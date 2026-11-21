@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.AbelianSchemeQuotients.QSurjective
 import Mathlib.Algebra.DualNumber
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed

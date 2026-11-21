@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.NonemptyEquivMultiProdOne
 import GroundTheory.AutomorphicForms.SmoothRep
 import GroundTheory.AutomorphicForms.WhittakerGroups

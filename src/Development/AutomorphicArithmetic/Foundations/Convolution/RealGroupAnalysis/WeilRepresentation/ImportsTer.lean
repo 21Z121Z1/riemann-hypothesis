@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.UnitaryActions.HomCommTrivial
 import Development.AutomorphicArithmetic.Foundations.Convolution.RealGroupAnalysis.Smooth
 

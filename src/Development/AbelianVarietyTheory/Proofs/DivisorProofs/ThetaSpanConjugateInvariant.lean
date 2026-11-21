@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiffsLeSup
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAutLinTransl
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPolDataImaginaryStatement

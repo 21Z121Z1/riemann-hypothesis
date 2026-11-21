@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOfMemSchA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LintegralBoundLtTop

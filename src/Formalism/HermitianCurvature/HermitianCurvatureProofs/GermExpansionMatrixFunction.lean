@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstKernelProperties
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SecondVanishingOffRing
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PartialMeansOrthogonal

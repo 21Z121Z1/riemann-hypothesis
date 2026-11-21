@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.SignatureSplitting.NonarchFiniteAdeleRing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeckeCharacterOfIdeleClass
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValHalfInf

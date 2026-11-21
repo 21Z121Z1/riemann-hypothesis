@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.DensDefs
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 

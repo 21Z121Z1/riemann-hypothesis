@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.RowGen1POfSteps
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.StepLoc1OfFam
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.AmpQNotEqAmpG

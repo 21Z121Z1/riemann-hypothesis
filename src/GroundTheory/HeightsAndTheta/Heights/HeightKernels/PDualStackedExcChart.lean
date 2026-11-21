@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedExcChartParts
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualStackedExcCycle
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.Trivial
 import GroundTheory.ProfiniteCohomology.LocalClassFormation.FiniteVanishing.FormationThree
 import GroundTheory.ProfiniteCohomology.CohomologicalDimension.Subgroup

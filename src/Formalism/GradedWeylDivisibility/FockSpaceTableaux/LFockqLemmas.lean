@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementB
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

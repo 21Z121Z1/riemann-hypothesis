@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjSpace
 import GroundTheory.HeightsAndTheta.Heights.ProjTopology
 import Mathlib.RingTheory.Etale.Weakly

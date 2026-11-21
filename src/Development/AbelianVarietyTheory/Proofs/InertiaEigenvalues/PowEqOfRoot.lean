@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsGaloisPrescribedUnramifiedKummer
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.DvrComplete
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocF

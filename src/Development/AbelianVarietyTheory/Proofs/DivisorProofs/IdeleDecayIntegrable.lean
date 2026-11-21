@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleDecayMeasurableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleStabilizerIsOpenStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdeleStabilizerAbsFiniteEqOneStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsAdmissibleEquivariantFormsRep
 import Development.AutomorphicArithmetic.DivisorFrames.SpanHighestWeightRepUnitaryGroupRealPointsImageE
 import Development.AutomorphicArithmetic.DivisorFrames.HasWeightAtOfNeZeroIntertwining

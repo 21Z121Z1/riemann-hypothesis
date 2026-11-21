@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.EigenspaceCyclicDensity.LowKMultOneP
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RepresentationTheory.AlgebraRepresentation.Basic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CochainFrameLinearIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianMapKillsCochainFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianMapKernelSpannedStatement

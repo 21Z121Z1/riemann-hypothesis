@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.LipschitzWeightAndMinimum
 import Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ChBalance
 

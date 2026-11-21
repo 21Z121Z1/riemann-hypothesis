@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsExphOnEmpty
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormIteratedFDerivScaleSnd
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetContDiffOnAndHomogeneous

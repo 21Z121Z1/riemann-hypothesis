@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral
 import Mathlib.RingTheory.GradedAlgebra.Radical
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.CrystallineBaseChange.RnStmt
 import Mathlib.Analysis.Complex.Conformal
 import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.OneNonUnit

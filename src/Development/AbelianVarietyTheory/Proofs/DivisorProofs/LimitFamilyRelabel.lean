@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RenameLinRootPerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticDegreeMetsRootStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticDegreeDifferenceTendsZeroStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafPairRelPf
 import Development.EtaleCohomology.EtaleSheaves.LeafDescendMapPf
 import Mathlib.AlgebraicGeometry.AffineTransitionLimit

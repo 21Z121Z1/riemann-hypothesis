@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.AbelianSchemeLaw.TrivialBiextension
 import Mathlib.AlgebraicGeometry.Properties
 import Mathlib.Tactic.ENatToNat

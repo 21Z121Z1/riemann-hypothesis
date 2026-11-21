@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorWeightedBesselGapStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsRegularRepBesselBigCellVectorEqBesselStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.FamilyFunctionalSpanDualStatement

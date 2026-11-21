@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.SlopeFrobenius
 import GroundTheory.PAdicHodge.SlopePhiSub
 import GroundTheory.PAdicHodge.SlopeCauchyBinet

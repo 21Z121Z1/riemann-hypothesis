@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.SelFSOfNormAt
 import Formalism.AdmissibleDesigns.RankFfNormAt
 import Formalism.AdmissibleDesigns.GlobalIndexTheoremPlacesOfRNAdm

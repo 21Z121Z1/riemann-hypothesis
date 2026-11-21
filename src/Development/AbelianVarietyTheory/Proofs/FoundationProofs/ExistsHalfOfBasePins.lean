@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapT
 import Formalism.LocalToGlobal.ProjectiveLattices.LevelPb
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit

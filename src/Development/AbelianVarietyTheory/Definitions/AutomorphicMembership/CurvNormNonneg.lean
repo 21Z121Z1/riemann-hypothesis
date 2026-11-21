@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.LatticeGeometry.DegFlLApply
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.HPInvEqForm
 

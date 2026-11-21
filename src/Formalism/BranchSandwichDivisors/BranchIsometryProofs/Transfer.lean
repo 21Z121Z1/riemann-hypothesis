@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.StatementL
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.TransferMean
 import Formalism.MeanHeightDescent.AverageDegreeBounds.GoodBadCut

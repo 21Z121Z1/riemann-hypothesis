@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.KummerTheory.PlaceStepPf
 import Mathlib.FieldTheory.PurelyInseparable.Exponent
 

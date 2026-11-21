@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HhPowerSumEqBoundaryForm
 open MvPolynomial GlobalTheory.FlagPoly GlobalTheory.FlagForm GlobalTheory.Published Formalism.DegreeFormula
 set_option maxHeartbeats 1000000 in

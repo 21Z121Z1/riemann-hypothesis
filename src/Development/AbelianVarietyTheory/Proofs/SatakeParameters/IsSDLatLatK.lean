@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.ExistsUnitaryOneDetEq
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AdmissibleAtOfAdmissibleList
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LoeZeroOfPsd
 

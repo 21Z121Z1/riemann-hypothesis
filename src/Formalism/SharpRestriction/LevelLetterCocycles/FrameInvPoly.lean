@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.IndepStep
 import Formalism.SharpRestriction.LevelLetterCocycles.HorTrExists
 import Formalism.SharpRestriction.LevelLetterCocycles.HorTrUnique

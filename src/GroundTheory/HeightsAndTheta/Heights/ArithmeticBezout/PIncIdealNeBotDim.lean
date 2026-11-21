@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsIncIdealNeBotDim
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChowFormExists
 set_option maxSynthPendingDepth 1

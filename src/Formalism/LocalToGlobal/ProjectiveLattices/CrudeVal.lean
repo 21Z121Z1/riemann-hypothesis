@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.PlaceBelow
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedModelsEigenExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousLinearHeightFormStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedModelsEigenLiftStatement

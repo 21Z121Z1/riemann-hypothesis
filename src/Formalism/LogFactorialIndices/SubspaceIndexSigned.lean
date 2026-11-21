@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LogFactorialIndices.StatementSize
 import Formalism.LogFactorialIndices.StatementIdx
 

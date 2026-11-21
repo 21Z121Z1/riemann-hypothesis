@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverFP
 import CompanionTheory.AutomorphicTheory.HeckeStandardModules.HeckeStdStatement
 

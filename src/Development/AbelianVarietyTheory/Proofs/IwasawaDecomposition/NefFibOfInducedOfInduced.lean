@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RationalIsometryIsometric
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPullback
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InducedMetricPow

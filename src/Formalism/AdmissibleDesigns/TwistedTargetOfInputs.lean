@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.YtTargetOf
 import Mathlib.Algebra.NoZeroSMulDivisors.Pi
 

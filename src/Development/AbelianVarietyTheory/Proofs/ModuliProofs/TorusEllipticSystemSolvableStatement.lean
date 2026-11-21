@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.TorusEllipticSystemSolvable
 open Complex Matrix
 open scoped ContDiff BigOperators Real

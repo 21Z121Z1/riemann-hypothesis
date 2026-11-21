@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.MatrixExponentialEntries
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ProjExists
 

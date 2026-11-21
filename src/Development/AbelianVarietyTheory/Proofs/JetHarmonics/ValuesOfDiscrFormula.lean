@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.RelativeDifferentValues
 
 open NumberField IsDedekindDomain UniqueFactorizationMonoid IntermediateField

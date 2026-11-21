@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.HasOrder
 import Formalism.MahlerMeasure.FinalM
 import Formalism.MahlerMeasure.MahlerMeasureProofs.FreezeBij

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.FinalG
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.BesselUnipotentEquivHolds
 import Development.AbelianVarietyTheory.Definitions.Jets.SumIoPrAlt

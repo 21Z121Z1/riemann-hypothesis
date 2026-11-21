@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.ThetaKernels.SiegelWeilAeisBase
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousDerivFamily
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesContinuation

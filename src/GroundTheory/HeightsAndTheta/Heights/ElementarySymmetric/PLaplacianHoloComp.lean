@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.StatementsLaplacianHoloComp
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.Analysis.Calculus.FDeriv.Symmetric

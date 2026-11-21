@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.FinGroup
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.Transport
 

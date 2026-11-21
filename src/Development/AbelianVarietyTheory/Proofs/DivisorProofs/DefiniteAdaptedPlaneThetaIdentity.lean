@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThLiftDef
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedAdaptedPlaneVanishing
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatchedPolDataAlmostAllPlaces

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.SemiabelianSchemes.GenericFiberGluing.SemistableCompleteSplit
 import Mathlib.RingTheory.AdicCompletion.Noetherian
 import Mathlib.Algebra.Polynomial.Eval.Irreducible

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FormalDegreeSquareIntegrable.FormalDegreeFromOrthogonality
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.MeasureTheory.Function.L2Space

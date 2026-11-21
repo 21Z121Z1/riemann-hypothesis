@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.UnramifiedTrace.HeckeRamifiedZeroAll
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.SecondBranchAllMembers

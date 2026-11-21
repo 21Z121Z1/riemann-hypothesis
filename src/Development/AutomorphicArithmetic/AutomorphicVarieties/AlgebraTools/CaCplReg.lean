@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsRegularLocalRingAdicCompletion
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCplUniq
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaCplEx

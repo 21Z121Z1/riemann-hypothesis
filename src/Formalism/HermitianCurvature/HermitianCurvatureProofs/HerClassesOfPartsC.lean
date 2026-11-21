@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HerClassesOfParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopDensNonnegOfKappa
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SignedCoordinateEqSignSmul

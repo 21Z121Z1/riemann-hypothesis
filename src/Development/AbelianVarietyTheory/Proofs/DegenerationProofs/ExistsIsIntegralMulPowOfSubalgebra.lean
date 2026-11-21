@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FiniteIntegralClosureOfEssFiniteTypeField
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.Valuation.LocalSubring

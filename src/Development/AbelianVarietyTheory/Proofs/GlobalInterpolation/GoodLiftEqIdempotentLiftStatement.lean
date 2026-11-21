@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.GoodLiftEqIdempotentLift
 open GlobalTheory.MomN Formalism.L2.Ker.JMB
 open scoped ComplexConjugate

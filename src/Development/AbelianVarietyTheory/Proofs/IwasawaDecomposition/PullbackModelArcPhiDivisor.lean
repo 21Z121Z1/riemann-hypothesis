@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcPeriod
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PullbackModelArcPolarization
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GeneratorExtendsPower

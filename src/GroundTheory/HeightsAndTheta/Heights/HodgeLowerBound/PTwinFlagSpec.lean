@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.HypLineFurther
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.HypLineMore
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.HypLineBis

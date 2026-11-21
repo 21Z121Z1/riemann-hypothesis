@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.GlobalIrreducibility.DzPinB
 import Development.DiscreteGroups.GlobalIrreducibility.DzDigDef
 import Development.DiscreteGroups.GlobalIrreducibility.DzMatchCut

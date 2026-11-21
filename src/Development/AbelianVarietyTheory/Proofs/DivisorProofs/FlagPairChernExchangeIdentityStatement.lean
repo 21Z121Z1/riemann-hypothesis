@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairChernExchangeIdentity
 open MvPolynomial Formalism.BasicNotions Formalism.BasicNotions.DV
 set_option maxHeartbeats 1000000 in

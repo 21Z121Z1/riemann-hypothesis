@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsPrimitiveRootEOmLevel
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HtPresNu7MonoLoss
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PsumGaloisUnitPiece

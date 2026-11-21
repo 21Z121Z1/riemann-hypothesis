@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.DegreeOneDensity
 import GroundTheory.GlobalFields.SplittingFromInequality.Galois
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.WeilTensorModels

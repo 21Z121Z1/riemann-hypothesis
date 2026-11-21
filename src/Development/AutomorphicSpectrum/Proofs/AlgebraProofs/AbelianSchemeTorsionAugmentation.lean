@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.QuotientByFiniteFlatStatement
 import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.ZarhinStatement
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.ExistsAddEquiv

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.CuspTrInt
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.IntEst
 import Development.AutomorphicArithmetic.Foundations.Convolution.ConvolutionKernels.KerId

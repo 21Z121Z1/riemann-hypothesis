@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsSpreadHom
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsGenericSections
 import GroundTheory.HeightsAndTheta.Heights.IntegralModels.StatementsPullbackFaithful

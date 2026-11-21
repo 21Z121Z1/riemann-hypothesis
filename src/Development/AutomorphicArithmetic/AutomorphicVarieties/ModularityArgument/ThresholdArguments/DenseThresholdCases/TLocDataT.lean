@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.ThresholdArguments.DenseThresholdCases.LocDataT
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SatWDCharPolChars
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IwJqEmbed

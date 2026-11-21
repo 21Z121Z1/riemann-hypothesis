@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.GreenMassStep
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PGreenMassStepA
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.PGreenMassStepB

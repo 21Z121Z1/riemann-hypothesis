@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapDegreeFinitePullbackStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairConnectedNormalStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernRootFlagPullbackStatement

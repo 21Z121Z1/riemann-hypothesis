@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.Localization.UnweightBackStatement
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

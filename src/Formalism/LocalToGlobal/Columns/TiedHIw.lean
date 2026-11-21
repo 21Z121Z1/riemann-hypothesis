@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.LocalLevelIsKOneEverywhere
 import Formalism.LocalToGlobal.Columns.TiedGlCore
 import Formalism.LocalToGlobal.Columns.TiedGlLev

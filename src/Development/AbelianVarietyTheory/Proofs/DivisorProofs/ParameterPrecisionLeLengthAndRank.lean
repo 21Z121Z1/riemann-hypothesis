@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.LogQdLeRd
 import Formalism.LocalRingCardinality.DataKap
 import Formalism.LocalRingCardinality.DataParamsT

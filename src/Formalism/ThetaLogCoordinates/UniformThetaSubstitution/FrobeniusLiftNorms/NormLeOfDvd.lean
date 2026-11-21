@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementE
 import Formalism.GaussJetBounds.GaussJetProofs.ThmAOp
 import Formalism.GaussJetBounds.StatementJ

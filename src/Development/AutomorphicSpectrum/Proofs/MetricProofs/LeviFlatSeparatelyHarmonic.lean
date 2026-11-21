@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Analysis.InnerProductSpace.Harmonic.Basic
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Topology.Sheaves.Presheaf

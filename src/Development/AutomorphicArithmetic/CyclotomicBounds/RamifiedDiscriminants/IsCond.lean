@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalToGlobal.UnitaryNorms.RealCyclotomicTwoPower
 import Development.AutomorphicArithmetic.PrimeDiscriminants.CycImage

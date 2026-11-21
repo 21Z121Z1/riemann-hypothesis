@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.DeterminantProjection
 import Development.WeilBound.ThetaLifts.LatticeBasics.PairsStable
 import Development.WeilBound.ThetaLifts.LatticeBasics.ConstIdele

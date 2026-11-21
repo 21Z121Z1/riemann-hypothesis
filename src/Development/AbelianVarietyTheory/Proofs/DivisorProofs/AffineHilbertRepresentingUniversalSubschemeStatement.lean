@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AffineHilbertRepresentingUniversalSubscheme
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits Opposite
 set_option maxHeartbeats 1000000 in

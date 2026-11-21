@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.TwistingSheaf
 import Mathlib.AlgebraicGeometry.Noetherian
 import Mathlib.Tactic.Monotonicity.Lemmas

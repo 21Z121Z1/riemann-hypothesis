@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Hilbert90TensorPadicUnramifiedExtension
 open Matrix GlobalTheory.LKRes GlobalTheory.LKMid
 open scoped TensorProduct

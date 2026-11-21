@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohTateA
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohDefs
 import GroundTheory.ProfiniteCohomology.CyclicCupProf

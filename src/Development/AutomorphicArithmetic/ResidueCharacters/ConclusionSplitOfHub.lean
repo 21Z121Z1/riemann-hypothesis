@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ResidueCharacters.LiftExponentAdmissibleColsRowsOfCrystalline
 import Development.AutomorphicArithmetic.ResidueCharacters.BlockConditionAtPlacesOfJumpWindow
 import Development.AutomorphicArithmetic.ResidueCharacters.InvariantsLengthAdmissibleOfNonzeroJumps

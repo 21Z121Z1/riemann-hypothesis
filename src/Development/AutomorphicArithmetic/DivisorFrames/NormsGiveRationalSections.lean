@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.CovCmp
 import Development.AutomorphicArithmetic.DivisorFrames.ArithmeticFunctionInducedBound
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField IsDedekindDomain

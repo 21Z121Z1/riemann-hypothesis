@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.HormanderEstimate.ExistsLintegralCompactLe
 import Mathlib.Algebra.Order.Ring.Star
 import ReciprocityTheory.L2DbarEstimates.HormanderEstimate.ClosedSt

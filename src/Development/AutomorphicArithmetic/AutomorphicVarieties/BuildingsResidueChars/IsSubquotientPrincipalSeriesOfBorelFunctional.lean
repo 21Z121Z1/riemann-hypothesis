@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeckeAlgebras.Distinct
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.IsCondAt
 import Formalism.GaloisIrreducibility.GaloisIrreducibilityProofs.OneNonUnit

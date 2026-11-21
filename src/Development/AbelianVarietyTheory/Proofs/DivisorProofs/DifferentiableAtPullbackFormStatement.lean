@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableAtPullbackForm
 open Set Filter Topology
 open ReciprocityTheory.L2DbarEstimates (V)

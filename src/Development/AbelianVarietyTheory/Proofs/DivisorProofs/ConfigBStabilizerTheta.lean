@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalSchwartzSpaceUnitaryStableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEvaluationIntertwinesThetaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBEvaluationThetaEquivariantStatement

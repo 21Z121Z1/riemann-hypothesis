@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnipParLeUnipFlag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousToGAd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsInd

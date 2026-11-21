@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitValueZeroDiagonalNormStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FieldValueZeroDiagonalNormStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RealWeilActionDiagonalStatement

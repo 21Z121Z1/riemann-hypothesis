@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EventuallyResidueDegreeOnePrimeMovedByGalois
 open NumberField IsDedekindDomain HeckeValGen GlobalTheory.HeckeSplit
 set_option maxHeartbeats 1000000 in

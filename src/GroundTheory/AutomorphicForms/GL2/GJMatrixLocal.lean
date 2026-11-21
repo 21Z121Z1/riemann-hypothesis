@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJMatrixFinite
 import GroundTheory.AutomorphicForms.GL2.GJMatrixCoord
 import GroundTheory.AutomorphicForms.GL2.GJZetaDefs

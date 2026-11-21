@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.PolMatchOnto
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchOfPolMatch
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EqSmulOfStableGraph

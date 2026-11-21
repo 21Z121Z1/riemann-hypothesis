@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataExtra
 import Formalism.LocalRingCardinality.DataParams
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize

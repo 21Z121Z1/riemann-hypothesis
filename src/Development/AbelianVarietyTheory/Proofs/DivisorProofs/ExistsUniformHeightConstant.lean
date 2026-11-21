@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardLeOfDetEqZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatConstantAbsLeNineExplicitStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KeepsCuspLatticeNorm

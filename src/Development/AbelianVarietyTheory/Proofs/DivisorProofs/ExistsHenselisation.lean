@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HenselianLocalRingHensStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalIdealPointedEtaleNeighbourhoodEqMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatHensStatement

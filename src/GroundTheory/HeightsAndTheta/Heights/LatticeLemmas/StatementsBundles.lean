@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithDegreeIdeal
 import GroundTheory.HeightsAndTheta.Heights.HermitianDual
 set_option maxSynthPendingDepth 1

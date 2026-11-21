@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.RevNum
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.ConjRep
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ZuckermanTensor.SquareIntegrableConj

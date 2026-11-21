@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.Smoothing
 import Mathlib.Topology.Algebra.ClopenNhdofOne
 

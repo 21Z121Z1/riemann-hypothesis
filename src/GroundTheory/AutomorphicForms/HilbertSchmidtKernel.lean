@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HilbertSchmidt
 import Mathlib.MeasureTheory.Function.L2Space
 import Mathlib.RingTheory.PiTensorProduct

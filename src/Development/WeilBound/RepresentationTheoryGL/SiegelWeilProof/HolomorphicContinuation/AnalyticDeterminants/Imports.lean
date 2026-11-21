@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.IsSingTest
 import Mathlib.Analysis.Matrix.Normed
 import Mathlib.RingTheory.WittVector.IsPoly

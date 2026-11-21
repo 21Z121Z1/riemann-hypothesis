@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGrpObjIsGrpPullbackOfIsPullback
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftCommutesTranslation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHorizOfComm

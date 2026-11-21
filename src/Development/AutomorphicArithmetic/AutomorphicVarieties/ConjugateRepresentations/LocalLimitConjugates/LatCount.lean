@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ConjugateRepresentations.LocalLimitConjugates.CasimirResolventProjection
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CardLatticeGLConjLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstantTermModerateGrowth

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.NormGenericRatioSpec
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.SubstRowZeroFixOfDegreeZero
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.X4v4RatioSpec

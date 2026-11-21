@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.StandardLattice
 
 open Formalism.BasicNotions Formalism.MainNotions NumberField IsDedekindDomain

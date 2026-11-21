@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.DeepAbs
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.ThMatch
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalHeckeOperators.SigInv

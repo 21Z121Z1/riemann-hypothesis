@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActEx
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ActConj
 import Development.AutomorphicArithmetic.AutomorphicVarieties.OddResidueBounds.ZKill

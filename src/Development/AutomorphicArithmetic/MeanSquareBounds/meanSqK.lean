@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.MeanSquareBounds.twistK
 import Development.AutomorphicArithmetic.MeanSquareBounds.SPsqLe
 import Development.AutomorphicArithmetic.MeanSquareBounds.RRLe

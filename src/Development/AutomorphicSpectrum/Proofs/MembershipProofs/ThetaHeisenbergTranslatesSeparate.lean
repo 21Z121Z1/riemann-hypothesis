@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.AdeleScaling
 import GroundTheory.AutomorphicForms.ReductionMeasure
 open Matrix NumberField IsDedekindDomain GlobalTheory.WeilM MeasureTheory

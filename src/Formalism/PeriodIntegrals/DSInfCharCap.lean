@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UpqRep
 import Formalism.PeriodIntegrals.PhMeasCore
 import Formalism.FormalDegreeBessel.StatementDS

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageMetrics
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ArithModel
 import Mathlib.Order.CompletePartialOrder

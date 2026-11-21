@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.HerbrandQuotients.SUnitsExact
 import GroundTheory.GlobalFields.HerbrandQuotients.SUnitsRep
 import Mathlib.NumberTheory.NumberField.Units.DirichletTheorem

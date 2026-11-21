@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SeparableMatrixStability.MapEta
 import Mathlib.LinearAlgebra.Matrix.CharP
 import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients

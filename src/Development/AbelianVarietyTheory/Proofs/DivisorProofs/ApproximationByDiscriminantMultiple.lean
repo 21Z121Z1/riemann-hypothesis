@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagDegreeEqDiscriminantMultipleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntisymmetricDiscriminantInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmallOnWallsNearDiscriminantStatement

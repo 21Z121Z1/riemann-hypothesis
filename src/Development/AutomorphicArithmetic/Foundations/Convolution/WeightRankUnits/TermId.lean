@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.EllCsr
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.DeltaProd
 import Development.AutomorphicArithmetic.Foundations.Convolution.WeightRankUnits.LpolTwist

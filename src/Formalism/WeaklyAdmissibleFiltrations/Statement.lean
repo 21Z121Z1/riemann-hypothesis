@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CoboundaryTransfers.Statement
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RepresentationTheory.Basic

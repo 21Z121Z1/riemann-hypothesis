@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.FrobeniusLiftLemmasOfAdmitted
 open Formalism Formalism.BasicNotions Formalism.MainNotions Formalism.MainNotions.N
 

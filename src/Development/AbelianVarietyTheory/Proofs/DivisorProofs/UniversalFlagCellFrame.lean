@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenImmersionCellFlAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagStalkColumnSpan
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFlagStalkSpan

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InnerOfNormEq
 import Mathlib.Algebra.Order.Ring.Star
 open Filter

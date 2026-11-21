@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.XSmulMemWeightedHomogeneousSubmodule
 import Mathlib.Analysis.Polynomial.Basic
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

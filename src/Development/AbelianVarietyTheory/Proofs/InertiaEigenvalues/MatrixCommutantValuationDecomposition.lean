@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CommOfBezout
 import Mathlib.RingTheory.TotallySplit
 import Mathlib.Tactic.Monotonicity.Lemmas

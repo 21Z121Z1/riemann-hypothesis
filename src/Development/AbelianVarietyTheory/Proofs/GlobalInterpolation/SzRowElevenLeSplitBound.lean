@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowRankSizesStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowSizeKRelStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SzRowCondQdPdeStatement

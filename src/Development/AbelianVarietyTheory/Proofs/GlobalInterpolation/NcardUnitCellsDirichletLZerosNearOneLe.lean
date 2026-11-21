@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CardSpacedDetectedLe
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ZetaZeroDetect
 import Mathlib.NumberTheory.LSeries.Nonvanishing

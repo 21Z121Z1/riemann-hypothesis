@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionSpanStep
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSpanStepHomog
 import Mathlib.RingTheory.Henselian

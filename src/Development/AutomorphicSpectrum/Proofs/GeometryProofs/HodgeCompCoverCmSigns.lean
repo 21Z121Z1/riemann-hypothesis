@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GenOfUnit
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.DetLatticeFlagTensor
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.NefDegreeScaleInvariant

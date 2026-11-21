@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsSympl
 import Mathlib.Data.Int.Star
 import Mathlib.Tactic.ENatToNat

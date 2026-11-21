@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ReductionHeight
 import GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex
 import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact

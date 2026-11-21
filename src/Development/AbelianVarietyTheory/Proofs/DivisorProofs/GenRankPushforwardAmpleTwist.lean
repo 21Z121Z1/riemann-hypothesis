@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericPointPreimageGenericStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericRankPushforwardStatement
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PBaseChange
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PReducedCutLength
 import Mathlib.Data.ENat.BigOperators

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsAmple
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.StatementsAmpleAffine
 import Mathlib.RingTheory.PiTensorProduct

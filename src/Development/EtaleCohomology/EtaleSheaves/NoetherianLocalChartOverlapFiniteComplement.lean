@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LZIdemSumApprox
 import Mathlib.Tactic.Monotonicity.Lemmas
 

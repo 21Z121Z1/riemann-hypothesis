@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.StableGradedCounts.CoeffZeroNeZeroOfIrreducible
 import Formalism.PadicSubsetSums.StableGradedCounts.IRRPrimeToPartEqIff
 

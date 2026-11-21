@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.GenRelNeZero
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.BeTransSymmOfWitData
 import Development.AbelianVarietyTheory.Proofs.ThetaShiftProofs.ExistsWitDataLevelAgree

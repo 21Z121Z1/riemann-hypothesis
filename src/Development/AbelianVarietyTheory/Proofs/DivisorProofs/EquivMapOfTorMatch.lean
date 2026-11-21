@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorMatchComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEqAddNsmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLiftValuationSubring

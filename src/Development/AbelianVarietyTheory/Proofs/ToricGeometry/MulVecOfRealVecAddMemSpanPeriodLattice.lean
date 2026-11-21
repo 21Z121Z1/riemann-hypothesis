@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Tactic.Polynomial.Basic
 import ReciprocityTheory.ThetaQuasiPeriods.PeriodLattice
 import Std.Tactic.BVDecide.Normalize.Prop

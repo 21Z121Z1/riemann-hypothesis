@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticSelfIntersectionFormula
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChgEqChgWith
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GreenPotentialSmoothPullback

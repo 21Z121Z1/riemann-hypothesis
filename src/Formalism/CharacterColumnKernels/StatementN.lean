@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.StatementG
 import Formalism.CharacterColumnKernels.StatementX
 import Mathlib.Order.CompletePartialOrder

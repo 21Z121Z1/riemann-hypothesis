@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.NatCardEqPowLength
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsPointVertRSteps
 set_option maxSynthPendingDepth 1

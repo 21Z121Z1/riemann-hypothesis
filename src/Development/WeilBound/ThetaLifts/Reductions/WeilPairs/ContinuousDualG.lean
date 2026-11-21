@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaDistributionAutomorphySourceGroup
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.LatH
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTransportF

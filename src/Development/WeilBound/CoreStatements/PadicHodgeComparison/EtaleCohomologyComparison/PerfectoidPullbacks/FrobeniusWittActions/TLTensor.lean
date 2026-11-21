@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingSmulLeftStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingSmulDualStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TracePairingGaloisEquivariantStatement

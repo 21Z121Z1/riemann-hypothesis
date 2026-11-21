@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianForms.DefsSym
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.PhiTopTargetSym
 open Formalism.L2.Col

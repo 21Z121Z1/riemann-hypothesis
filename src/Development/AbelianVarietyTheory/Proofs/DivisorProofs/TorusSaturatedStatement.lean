@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusLieAlgebraCoordinateLinearEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusClosedImmersionGenericFromSpecialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorusLieAlgebraRetractionExistsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.CmCharacterConjugateInverse
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEvaluationConfigBTripleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBLeviTriplePairStatement

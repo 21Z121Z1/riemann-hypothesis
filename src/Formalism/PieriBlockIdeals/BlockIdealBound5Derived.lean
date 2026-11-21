@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.FactorialValuationSum
 import Formalism.PieriBlockIdeals.StatementLA
 import Formalism.PieriBlockIdeals.LemmaWAssembled

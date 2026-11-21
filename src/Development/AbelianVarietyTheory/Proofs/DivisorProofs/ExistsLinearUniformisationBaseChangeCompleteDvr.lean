@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MonomialFormOnChartRing
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PsiUnitOnOfNeUniv
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsToricRankOne

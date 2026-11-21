@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.ZeroSheafMaps.EtaleSheafMapZeroOfLocallyZeroOnFreeSheafGenerat
 import Mathlib.CategoryTheory.ExtremalEpi
 import Mathlib.CategoryTheory.Sites.EpiMono

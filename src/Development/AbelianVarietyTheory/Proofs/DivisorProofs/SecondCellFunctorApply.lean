@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubSmulMemOfEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JacquetCharacteristicPolynomialRight
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix

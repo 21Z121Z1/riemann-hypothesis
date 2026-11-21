@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HoweDualityFiniteOfUnitary
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsGlobalSumStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MatchedMapsLocalSumStatement

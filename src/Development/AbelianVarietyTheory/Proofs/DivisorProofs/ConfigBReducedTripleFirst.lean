@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsShear
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementAdapted
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementSkewGood

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormBoundedByPositivePotentialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PotentialSmoothInChartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormSectionSqSmoothStatement

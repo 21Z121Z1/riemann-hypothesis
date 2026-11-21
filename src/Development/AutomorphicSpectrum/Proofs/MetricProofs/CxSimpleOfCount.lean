@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.CxSimple
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PComponentsGenericCount
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PSheetLift

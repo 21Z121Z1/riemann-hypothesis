@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenCastIsGen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecTw
 

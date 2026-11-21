@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsSimplePiecesStatement
 import Mathlib.RepresentationTheory.Irreducible
 import Mathlib.RingTheory.SimpleModule.Rank

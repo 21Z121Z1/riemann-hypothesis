@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.EqOneOfPh
 import Formalism.LocalToGlobal.HermitianForms.RankEqFirstLevel
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.NatActRVtupR

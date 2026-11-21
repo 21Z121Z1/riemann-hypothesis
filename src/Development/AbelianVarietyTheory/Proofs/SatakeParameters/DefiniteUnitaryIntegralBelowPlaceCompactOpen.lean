@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.EqOfNotApartOfNotSplit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsFixedIff
 import GroundTheory.LocalFields.PadicLogSeries

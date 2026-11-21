@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteForms.IndefExample
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.KappaNormalise
 

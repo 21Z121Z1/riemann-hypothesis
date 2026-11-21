@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EpsMulOfCondExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnramifiedCharacterAtUniformizer
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPowSubOneMemPow

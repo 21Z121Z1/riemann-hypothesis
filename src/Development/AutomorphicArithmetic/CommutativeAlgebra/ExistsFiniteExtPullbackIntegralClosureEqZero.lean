@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.H0TwistOverClosedField
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.RegularLocalRing.Defs

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.ExistsReductionOfCoordinateCombination
 import Mathlib.Topology.Sheaves.Presheaf
 import ReciprocityTheory.DualLattices.UnramifiedCokernelLengthStatement

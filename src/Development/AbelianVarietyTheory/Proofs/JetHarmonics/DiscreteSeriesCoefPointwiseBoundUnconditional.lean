@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.PointwiseBoundDiscreteSeriesCoefficientsStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselXiIntegrableHolds
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.ActualClassesCompactSupport

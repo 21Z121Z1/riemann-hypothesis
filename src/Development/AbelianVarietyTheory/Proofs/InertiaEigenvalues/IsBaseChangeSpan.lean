@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsBasisMul
 import Formalism.SharpRestriction.LevelLetterCocycles.DeltaInvariantLattices
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree

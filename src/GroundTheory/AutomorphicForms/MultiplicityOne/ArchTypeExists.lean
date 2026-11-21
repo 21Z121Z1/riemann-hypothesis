@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.MultiplicityOne.FiniteFactor
 
 open MeasureTheory Set Filter Topology Function

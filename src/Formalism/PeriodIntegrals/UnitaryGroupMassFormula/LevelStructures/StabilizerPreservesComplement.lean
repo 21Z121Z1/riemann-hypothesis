@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.LeviInt
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.CMInst
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelStructures.LatAdapted

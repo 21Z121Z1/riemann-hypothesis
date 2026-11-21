@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeValueIntegralityRamifiedOfExpansion
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.LatVal
 set_option maxHeartbeats 1000000 in

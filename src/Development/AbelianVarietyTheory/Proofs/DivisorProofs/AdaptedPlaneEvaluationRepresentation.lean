@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedEvaluationGoodModelStatement
 import Mathlib.Analysis.CStarAlgebra.lpSpace
 

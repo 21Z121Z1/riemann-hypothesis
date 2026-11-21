@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.LGenflagLU
 import Mathlib.RingTheory.PicardGroup
 open GlobalTheory.CompanionTheory.Ar Matrix

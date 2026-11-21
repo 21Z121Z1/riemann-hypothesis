@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataKerI
 open Formalism.MainNotions Formalism.BasicNotions Formalism.MainNotions.G Classical
 

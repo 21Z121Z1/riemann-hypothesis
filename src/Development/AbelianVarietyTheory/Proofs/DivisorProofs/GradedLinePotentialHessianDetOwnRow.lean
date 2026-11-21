@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviFormLogAffForm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetSchurBilinearEntry
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPosDefGrD

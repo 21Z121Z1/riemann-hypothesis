@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPdPoly
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FilIsSubDPIdeal
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotientSubDPIdeal

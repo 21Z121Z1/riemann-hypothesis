@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoDuality
 import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.LocDualOrth
 import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.QuotLen

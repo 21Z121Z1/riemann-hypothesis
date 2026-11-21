@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Data.Finsupp.PWO
 import Mathlib.Data.Finsupp.WellFounded
 import Mathlib.Algebra.Order.Floor.Extended

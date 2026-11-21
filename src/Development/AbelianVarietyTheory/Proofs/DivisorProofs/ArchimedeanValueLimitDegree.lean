@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RegularCoverDegreeOmega
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsCh2Deg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagValueSecondChernDegreeStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPageRunRecordSubFour
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.FieldSmallIffOpo
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsThresholdRunHolds

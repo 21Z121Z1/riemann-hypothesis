@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CoordEquivSymmApply
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.FrameLats
 open scoped Classical ENNReal

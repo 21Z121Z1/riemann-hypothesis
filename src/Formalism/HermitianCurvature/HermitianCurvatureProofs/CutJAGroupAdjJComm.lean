@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAGroupAdjCut
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJALocToolsAgree
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJALocToolsTheta

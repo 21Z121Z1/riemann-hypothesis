@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.CubicWedgeNormPeriods
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.IsBaseChangeIffKeyPB
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ThetaUniformisationComplexAbelianVarieties

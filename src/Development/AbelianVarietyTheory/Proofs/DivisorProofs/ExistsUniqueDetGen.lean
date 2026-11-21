@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackSquareDiagonalSectionsGeneratedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackSquareActionBundleIsoStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PullbackSquareDiagonalRelAmpleStatement

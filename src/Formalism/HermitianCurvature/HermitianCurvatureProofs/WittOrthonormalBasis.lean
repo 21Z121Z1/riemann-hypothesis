@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FlagGramRestriction
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FixedFrameProperty
 import Mathlib.Analysis.Matrix.PosDef

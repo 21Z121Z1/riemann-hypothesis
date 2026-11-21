@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.BlockOneMulMulBlockOne
 import ReciprocityTheory.DualLattices.ProdDvdOfIso
 import ReciprocityTheory.DualLattices.ExistsSmulMemOfMemSpan

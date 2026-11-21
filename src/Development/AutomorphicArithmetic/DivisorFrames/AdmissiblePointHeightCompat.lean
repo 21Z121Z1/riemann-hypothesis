@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsUnitTriAndDiagCoeffMulEqOfCarries
 import Development.AutomorphicArithmetic.DivisorFrames.MetricLetterHeight
 import Development.AutomorphicArithmetic.DivisorFrames.GenericStalkSectionUnit

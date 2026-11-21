@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsParamDefinite
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExtensionVectorThetaCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsSplitPlaceGoodStatement

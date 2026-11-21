@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleFrameAssignmentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleHeightLimit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleRankComparisonStatement

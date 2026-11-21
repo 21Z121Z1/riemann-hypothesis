@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.ContinuousIdeleCircle
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsArch
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ContinuousInfIdele

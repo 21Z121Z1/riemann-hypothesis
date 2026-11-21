@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.Entire
 import GroundTheory.AutomorphicForms.GL2.GJGlobalLattice
 open NumberField IsDedekindDomain MeasureTheory Matrix Topology Filter

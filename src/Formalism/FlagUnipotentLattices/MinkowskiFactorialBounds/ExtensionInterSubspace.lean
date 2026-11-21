@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.CoefficientLeOperatorNorm
 import Formalism.LogSumExpBounds.IsoTransfer
 import Formalism.GelfandTransference.HadamardGelfand.Transference

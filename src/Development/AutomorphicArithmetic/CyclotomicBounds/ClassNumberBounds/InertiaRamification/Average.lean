@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.ConductorLocalPartDvdIff
 import Mathlib.Data.Nat.GCD.Prime
 import Std.Tactic.BVDecide.Normalize.Prop

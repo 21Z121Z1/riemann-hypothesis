@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PairingDivisors.StatementN
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.NumberTheory.Multiplicity

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.MahlerMeasureProofs.GamInt
 import Formalism.ThetaLogCoordinates.PartnerMeanCoordinates.TheoremMCB
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.UnifOfSpaceEq
 import Development.WeilBound.RepresentationTheoryGL.TubeMeasures.DisjointTubes.MassLev2
 

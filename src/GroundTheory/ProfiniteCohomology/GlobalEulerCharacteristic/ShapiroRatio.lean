@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.CardCohomologyZeroMackeyRepOfNeTop
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ShapiroReal
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTied
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodVOfGoodL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubOrthProjPerpMem

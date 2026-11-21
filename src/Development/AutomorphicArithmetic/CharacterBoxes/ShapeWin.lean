@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.TopShape
 import Development.AutomorphicArithmetic.CharacterBoxes.DesWin
 import Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG

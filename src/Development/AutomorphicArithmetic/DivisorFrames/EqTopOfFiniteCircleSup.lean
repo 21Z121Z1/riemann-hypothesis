@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ClosedSubgroupEqTopOfDense
 import Development.AutomorphicArithmetic.DivisorFrames.EqTopOfCircleSup
 import Mathlib.Order.CompletePartialOrder

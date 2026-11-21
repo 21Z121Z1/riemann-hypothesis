@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.BrpAevalScaleMonomial
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ImageLcv
 import Formalism.LocalToGlobal.Columns.BrpStarLatLattice

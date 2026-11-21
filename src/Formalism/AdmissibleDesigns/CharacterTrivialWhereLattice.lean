@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.InertiaActsTrivially
 import Formalism.SharpRestriction.LevelLetterCocycles.SecondPropositionEveryLocalisation
 

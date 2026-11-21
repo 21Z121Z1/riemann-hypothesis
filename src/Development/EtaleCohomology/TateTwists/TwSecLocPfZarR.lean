@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.TwSecLocPfR
 import Mathlib.Order.CompletePartialOrder
 

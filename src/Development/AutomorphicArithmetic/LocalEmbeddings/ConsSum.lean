@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.IntersectionNumbersAgreeModel
 import Development.AutomorphicArithmetic.DivisorFrames.DegreeMatchingFamilies
 import Development.AutomorphicArithmetic.DivisorFrames.IntersectionNumberBaseChange

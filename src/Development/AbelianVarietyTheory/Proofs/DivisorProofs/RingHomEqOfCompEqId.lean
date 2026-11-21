@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.RingTheory.DualNumber
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

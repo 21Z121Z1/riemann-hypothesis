@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.BetaSt
 import Mathlib.Algebra.Module.ZLattice.Basic
 import Mathlib.Algebra.Order.Star.Real

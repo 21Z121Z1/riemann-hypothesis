@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand.Product
 import GroundTheory.GlobalFields.IdeleGroups.LocalHerbrandInfinite
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.InfinitePlaces

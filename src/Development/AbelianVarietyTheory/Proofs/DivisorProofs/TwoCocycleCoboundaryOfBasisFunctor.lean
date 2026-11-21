@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqZeroOfUpwardFamilyStandardCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoCocycleCoboundaryOnUnitLocusPieceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwoCocycleCommaCoboundaryOfStandardCoverStatement

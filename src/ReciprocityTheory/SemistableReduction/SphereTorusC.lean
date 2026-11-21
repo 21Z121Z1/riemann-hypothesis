@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 import Mathlib.Analysis.Complex.Isometry
 import Mathlib.MeasureTheory.Measure.RegularityCompacts

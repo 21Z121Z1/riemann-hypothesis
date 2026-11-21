@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.PolynomialCoefficientBounds.Degree
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.AbsDAtTop
 import Development.AutomorphicArithmetic.Foundations.Convolution.BlockEvaluation.SideEst

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceWedgeSelfEqZero
 open Matrix Complex ComplexConjugate Filter Topology
 open scoped ComplexOrder ContDiff

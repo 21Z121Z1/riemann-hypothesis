@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkRootMultiplicationScalingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkFrobeniusScalingStatement
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

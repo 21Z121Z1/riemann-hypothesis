@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HilbertRowConditions.ColumnsFunctionAtSubspaces
 import Formalism.LocalToGlobal.IndefiniteReal.SpOfRwRange
 import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.SignsG

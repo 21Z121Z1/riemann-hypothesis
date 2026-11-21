@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.ConstantTerm
 
 open NumberField IsDedekindDomain Topology Filter Set MeasureTheory

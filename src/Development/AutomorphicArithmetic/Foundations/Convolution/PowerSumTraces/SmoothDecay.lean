@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.DecayTraceClassAlt
 import Development.AutomorphicArithmetic.TwistedTraces.CuspDecayFinsetSum
 import Development.AutomorphicArithmetic.TwistedTraces.CuspDecayOfRankZero

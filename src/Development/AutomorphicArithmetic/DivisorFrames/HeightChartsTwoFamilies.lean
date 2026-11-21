@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.TangentCombinationTransitivity
 import Development.AutomorphicArithmetic.DivisorFrames.CutLatticeTwoEmbeddingsBound
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IoOfLeOneIff

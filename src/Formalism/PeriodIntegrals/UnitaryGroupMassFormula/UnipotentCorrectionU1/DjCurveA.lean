@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumEqSumCompEmbedding
 import Lemmata.B110.ExistsMoved
 import Mathlib.Analysis.Matrix.Normed

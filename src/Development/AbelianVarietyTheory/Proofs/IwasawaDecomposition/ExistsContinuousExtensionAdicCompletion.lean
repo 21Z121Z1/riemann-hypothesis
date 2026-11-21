@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ConjugateSelfDual.Statement
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.CuspFrame
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.FarTermSum
 import Development.AbelianVarietyTheory.Statements.CuspFrameWeights.SameKindIsometric

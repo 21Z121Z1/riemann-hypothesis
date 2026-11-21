@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SepAtBIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarisedAbelianPartModelOverSubfieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionPointsDefinedOverSubfieldAbelianModelStatement

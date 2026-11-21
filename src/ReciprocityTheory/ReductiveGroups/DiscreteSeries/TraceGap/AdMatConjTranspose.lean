@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TraceGap.IsPhysSet
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DefsRep
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.TensorRepresentations.FockWeights

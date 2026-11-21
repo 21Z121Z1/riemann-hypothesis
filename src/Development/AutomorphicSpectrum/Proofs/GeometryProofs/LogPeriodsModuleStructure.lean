@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PosSemidefOfIntQuadNonneg
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.ClopenCondOnto
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

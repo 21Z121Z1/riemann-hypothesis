@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ToHLatLemmas
 import Development.AbelianVarietyTheory.Definitions.Divisors.FactorBounds
 

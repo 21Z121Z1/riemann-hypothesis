@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsCommonMultiple
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsSecValEqIff
 import Mathlib.AlgebraicGeometry.Morphisms.FlatRank

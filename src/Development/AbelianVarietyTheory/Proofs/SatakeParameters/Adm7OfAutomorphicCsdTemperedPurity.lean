@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisGeometry₂.RegularAlgebraicPurity
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RankOneLocalComponentDet
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.TemperedRepTemperedParameterStatement

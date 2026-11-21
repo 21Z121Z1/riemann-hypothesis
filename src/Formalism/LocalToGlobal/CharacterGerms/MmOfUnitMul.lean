@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.FirstVanishingAt
 import Formalism.LocalToGlobal.CharacterGerms.MaximalOfValuationGeOne
 import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroDoubleMultiplicationPair

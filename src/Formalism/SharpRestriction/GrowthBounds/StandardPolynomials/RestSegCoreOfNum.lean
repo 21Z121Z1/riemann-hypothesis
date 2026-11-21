@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.BlockYZeroLeOfBound
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.YcondCongr
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.TCNumDef

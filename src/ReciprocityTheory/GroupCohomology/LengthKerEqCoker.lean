@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GroupCohomology.LowHolds
 import ReciprocityTheory.GroupCohomology.KilledHolds
 import ReciprocityTheory.GroupCohomology.MemCoboundariesOfCocycleProcyclic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.FiniteGroupActionPreservesPrincipalFlagMultiplic
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EvalInjective
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapEq

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.DegOneIffSurjective
 import Mathlib.Tactic.ENatToNat
 open NumberField IsDedekindDomain HeckeValGen GlobalTheory.HeckeSplit

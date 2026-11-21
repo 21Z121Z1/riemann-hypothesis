@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MoebiusJetDuality.StatementU
 import Mathlib.Algebra.Module.ZLattice.Covolume
 import Mathlib.Order.CompletePartialOrder

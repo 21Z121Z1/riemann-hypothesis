@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.RealGroups.UnitaryAdmissibility.ArchimedeanUnitaryDual.InhabitedFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BurnsideSurjOfIrred
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.CupCompareDegreeOneOne
 import Development.WeilBound.CoreStatements.EulerCharacteristicCounts.GcohCmp
 import GroundTheory.ProfiniteCohomology.CupProducts.Graded

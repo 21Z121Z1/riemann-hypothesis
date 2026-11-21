@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.SimpleSum
 import Mathlib.Algebra.Module.Lattice
 import Mathlib.Analysis.CStarAlgebra.Classes

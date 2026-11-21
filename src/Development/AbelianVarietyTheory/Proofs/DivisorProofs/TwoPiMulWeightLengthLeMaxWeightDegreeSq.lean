@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ThreeLeScaleOfPowBound
 import Development.AbelianVarietyTheory.Counterexamples.JetSurvey.OrientationExclusive
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsPageRunRecord

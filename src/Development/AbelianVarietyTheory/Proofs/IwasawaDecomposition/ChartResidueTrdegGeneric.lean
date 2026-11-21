@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DetUniEqOne
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LowEquivSigma
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsValuationIndependentMaximalStatement

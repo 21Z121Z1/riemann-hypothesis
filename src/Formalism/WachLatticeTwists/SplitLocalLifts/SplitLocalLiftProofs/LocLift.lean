@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.SplitLocalLifts.Cocycles1MapOfEquivariant
 import Formalism.WachLatticeTwists.TorsionLengthCounts.RowCol
 

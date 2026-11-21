@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsNormalVerticalModel
 import Development.AutomorphicArithmetic.DivisorFrames.VerticalModelMatchCompat
 import Development.AutomorphicArithmetic.DivisorFrames.UnitAtPowDivFnMapOfReadsOfGReads

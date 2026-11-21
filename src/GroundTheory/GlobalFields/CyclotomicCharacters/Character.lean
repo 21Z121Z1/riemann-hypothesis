@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.AbstractLocalReciprocity.ProfiniteInteger
 import GroundTheory.GlobalFields.CyclotomicCharacters.Frobenius
 import Mathlib.FieldTheory.Galois.Profinite

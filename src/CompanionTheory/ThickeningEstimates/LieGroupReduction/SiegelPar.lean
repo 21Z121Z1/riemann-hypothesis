@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.ThickeningEstimates.LieGroupReduction.SiegelAbs
 
 set_option linter.unusedSectionVars false

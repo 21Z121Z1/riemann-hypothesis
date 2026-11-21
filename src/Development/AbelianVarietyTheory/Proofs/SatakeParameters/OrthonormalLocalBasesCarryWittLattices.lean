@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ThetaSeriesDataHypothesesBelowMaximalLevel
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocBasisMaps
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.StdHNatsmulRight

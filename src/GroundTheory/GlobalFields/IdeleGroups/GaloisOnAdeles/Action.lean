@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Hilbert90
 

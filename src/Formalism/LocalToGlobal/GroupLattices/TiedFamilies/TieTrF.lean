@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieTrH
 import Formalism.LocalToGlobal.GroupLattices.DownNaturalLevelZero
 

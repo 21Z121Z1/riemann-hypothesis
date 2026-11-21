@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaC
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCI
 import Formalism.LocalToGlobal.JointCharacters.TauEEqEmbTau

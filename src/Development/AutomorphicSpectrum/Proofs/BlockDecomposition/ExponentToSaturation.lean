@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.ArchimedeanBaseChange.ArchimedeanBaseChangeProof.SatakeExponents.UniformizerValuations.FrameReading.ExpToSat
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardBlocksExponent
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExpSat

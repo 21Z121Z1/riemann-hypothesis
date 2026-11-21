@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsStratHom
 import Mathlib.Algebra.AffineMonoid.UniqueSums
 import Mathlib.Algebra.Ring.MinimalAxioms

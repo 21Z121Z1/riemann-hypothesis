@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaBasicPropertiesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzSiegelDomainDecayStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSiegelDomainReductionStatement

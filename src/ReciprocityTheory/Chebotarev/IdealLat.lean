@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.UnitPart
 import ReciprocityTheory.Chebotarev.DiscreteTopologyLatOf
 import Mathlib.Topology.Sheaves.Presheaf

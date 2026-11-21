@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.IntermediateField
 import GroundTheory.LocalFields.UnramifiedDefs
 import GroundTheory.LocalFields.UnitsPowers

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.EigBand
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Fourier
 import Mathlib.Topology.Sheaves.Presheaf

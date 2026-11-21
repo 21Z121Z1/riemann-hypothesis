@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.DetGramEqProdGramSchmidt
 import ReciprocityTheory.SemistableReduction.ExpTorusMeanLeL2OfLex
 import Mathlib.Topology.Sheaves.Presheaf

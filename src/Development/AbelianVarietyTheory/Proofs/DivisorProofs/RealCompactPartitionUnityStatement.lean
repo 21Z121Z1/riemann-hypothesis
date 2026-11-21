@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealCompactPartitionUnity
 open MeasureTheory Filter Topology
 open scoped SchwartzMap

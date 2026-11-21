@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResolutionMetricObjects
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsDefectMetricChange
 set_option maxSynthPendingDepth 1

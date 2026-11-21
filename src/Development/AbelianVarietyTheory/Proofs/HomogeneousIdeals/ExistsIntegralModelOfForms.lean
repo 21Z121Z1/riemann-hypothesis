@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.HasRationalTorsionIffMemRange
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.AlgebraicGeometry.EllipticCurve.Reduction

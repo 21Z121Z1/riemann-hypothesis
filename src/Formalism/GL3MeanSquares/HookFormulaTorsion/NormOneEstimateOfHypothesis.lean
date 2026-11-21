@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.SecondEstimateOfIntervalHypothesis
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.NormTrace

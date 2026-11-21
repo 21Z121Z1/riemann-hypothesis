@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VanIdealHomog
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ProjectiveCharts
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Saturation

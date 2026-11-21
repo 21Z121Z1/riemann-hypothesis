@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.ComparisonZeroEmbedding
 import Formalism.LocalRingCardinality.FactDelDualNabla
 import Formalism.SharpRestriction.Divisibility.OrbitPlaces

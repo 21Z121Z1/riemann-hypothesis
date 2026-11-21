@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianForms.TiedTwGen
 import Formalism.LocalToGlobal.Columns.RecLevelTop
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ToLEInvApply

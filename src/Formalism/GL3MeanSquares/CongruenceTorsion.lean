@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.HostDiffSupport
 import Formalism.SatakeDualWeyl.StatementC
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EnlargedBaseLb2DescentStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EnlargedBaseLb2Rows
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.Lb1OfRestagingBoundStatement

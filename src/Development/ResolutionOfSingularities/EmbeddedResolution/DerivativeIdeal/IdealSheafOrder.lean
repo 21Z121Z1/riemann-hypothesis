@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.EmbeddedResolution.DerivativeIdeal.IdealOrder
 import Development.ResolutionOfSingularities.Foundations.Schemes.AffineOpens
 import Mathlib.AlgebraicGeometry.Modules.Sheaf

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DomainIntegrallyClosedOfCompletionStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CompletionNormalOfUnramifiedStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TensorLocalizationNoetherianStatement

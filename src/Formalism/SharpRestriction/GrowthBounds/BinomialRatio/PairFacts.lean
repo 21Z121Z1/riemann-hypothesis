@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CoarseDegreeRatioConsecutive
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.PairCount
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.UpperCountOfTopRows

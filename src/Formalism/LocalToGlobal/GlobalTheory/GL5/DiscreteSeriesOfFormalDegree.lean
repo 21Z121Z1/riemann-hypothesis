@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.TheoremThreeUnderScaleOfGeneral
 import Formalism.LocalToGlobal.GlobalTheory.GL5.PClassDecomp
 import Formalism.GL3MeanSquares.HookFormulaTorsion.MassUpperBoundClosed

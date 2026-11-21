@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingNumericalData
 import Std.Tactic.BVDecide.Normalize.BitVec
 

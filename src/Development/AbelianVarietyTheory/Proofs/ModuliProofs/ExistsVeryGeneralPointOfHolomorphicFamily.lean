@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Osgood
 import Mathlib.Analysis.Normed.Module.Connected
 import Mathlib.Data.Finsupp.Encodable

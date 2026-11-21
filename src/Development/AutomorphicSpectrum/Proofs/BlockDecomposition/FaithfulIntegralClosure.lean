@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsGoodPoly
 import Mathlib.RingTheory.DedekindDomain.PID
 import Mathlib.RingTheory.Henselian

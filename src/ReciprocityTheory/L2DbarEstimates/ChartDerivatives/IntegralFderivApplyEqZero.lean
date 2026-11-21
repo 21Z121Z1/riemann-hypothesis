@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.MeasurableSetImageOfIsLocalHomeomorph
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ExistsChartPartition
 import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts

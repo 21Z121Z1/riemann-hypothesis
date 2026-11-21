@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementJ
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.Data.Int.Star

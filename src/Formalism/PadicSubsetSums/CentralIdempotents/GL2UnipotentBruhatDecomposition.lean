@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.WindowSums
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.NumberTheory.Padics.MahlerBasis

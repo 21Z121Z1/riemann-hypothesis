@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.AuxiliaryNormPrimes
 import Formalism.SharpRestriction.CuspSpanNormBounds.BranchingAndRankConstants
 import Formalism.SharpRestriction.CuspSpanNormBounds.PExtra

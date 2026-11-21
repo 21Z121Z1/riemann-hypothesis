@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.FrameEstimates.TowerRallisLemma
 import Development.WeilBound.ThetaLifts.FrameEstimates.LinDerA
 import Development.AutomorphicSpectrum.Proofs.TwistedProofs.EqZeroOfPiInf

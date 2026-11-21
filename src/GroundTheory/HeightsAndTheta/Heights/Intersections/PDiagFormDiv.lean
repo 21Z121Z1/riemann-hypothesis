@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagFormDiv
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsChartFormsRational
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PMobiusAlgIndep

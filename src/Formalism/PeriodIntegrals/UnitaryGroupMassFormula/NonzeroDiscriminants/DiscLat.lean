@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.LatDefs
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.Defs
 import Mathlib.RingTheory.SimpleRing.Principal

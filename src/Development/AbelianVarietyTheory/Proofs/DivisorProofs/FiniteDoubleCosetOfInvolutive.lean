@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdFMapAlgebraMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CongruenceUnitsBasisOfNbhdsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralUnitsFiniteCosetsStatement

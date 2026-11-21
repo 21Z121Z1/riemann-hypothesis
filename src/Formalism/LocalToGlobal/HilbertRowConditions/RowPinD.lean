@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ClassSK
 import Formalism.SharpRestriction.Divisibility.StatementFT.PeriodPointConditions
 import Formalism.SharpRestriction.Divisibility.HookProducts.AdmPtTw

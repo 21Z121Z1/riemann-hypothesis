@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CyclotomicCharacters.Degree
 import GroundTheory.GlobalFields.CyclotomicCharacters.ClosedSubgroups
 import Mathlib.RingTheory.Invariant.Profinite

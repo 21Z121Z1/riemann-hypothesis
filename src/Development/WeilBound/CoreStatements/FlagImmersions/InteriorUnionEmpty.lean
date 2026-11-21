@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.IsMultiHomogIdealMap
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Degree
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.LinkSGap
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ResidEvFree
 

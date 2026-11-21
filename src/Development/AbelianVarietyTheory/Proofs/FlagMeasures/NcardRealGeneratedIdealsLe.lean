@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NcardAbsNormLePowPred
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsPositiveAdd
 import Formalism.HermitianLattices.StatementMass

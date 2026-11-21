@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.KilEmpty
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilObjectsInhabited
 import Development.WeilBound.ThetaLifts.LocalTheory.DixmierCommutants.SlopeTestRemainingChoices

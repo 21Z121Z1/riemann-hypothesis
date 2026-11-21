@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsStalkPointLift
 import Development.AutomorphicArithmetic.DivisorFrames.TransitionLocalFrame
 import Development.AutomorphicArithmetic.DivisorFrames.FrameModelsCompat

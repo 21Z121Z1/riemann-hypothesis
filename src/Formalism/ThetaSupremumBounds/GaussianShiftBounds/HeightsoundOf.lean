@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaSupremumBounds.StatementA
 import Mathlib.Tactic.Monotonicity.Lemmas
 

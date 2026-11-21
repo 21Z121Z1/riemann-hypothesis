@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StCentreOverW
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiHomogOfPullWeight
 set_option maxSynthPendingDepth 1

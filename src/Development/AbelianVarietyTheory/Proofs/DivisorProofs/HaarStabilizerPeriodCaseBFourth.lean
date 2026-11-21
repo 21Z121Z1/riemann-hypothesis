@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConeMidsetIsotropicVectorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicVectorReductionTripleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBReducedTripleFirstStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ClassMapInjectiveBijectiveNorms
 import Formalism.SharpRestriction.LevelLetterCocycles.HerrCohomologyExtensions
 import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator

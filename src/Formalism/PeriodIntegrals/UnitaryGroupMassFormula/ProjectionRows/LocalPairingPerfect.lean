@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.Pairing
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.AsmDual
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.LocFree

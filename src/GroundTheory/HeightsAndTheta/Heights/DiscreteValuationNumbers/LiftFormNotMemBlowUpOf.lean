@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.ImportsBisAlt
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.Cartier
 set_option maxSynthPendingDepth 1

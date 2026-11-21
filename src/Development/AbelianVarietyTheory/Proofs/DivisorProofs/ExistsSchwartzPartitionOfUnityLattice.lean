@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSmoothPeriodicPartitionOfUnity
 import Mathlib.Analysis.Distribution.SchwartzSpace.Basic
 open scoped ContDiff Topology

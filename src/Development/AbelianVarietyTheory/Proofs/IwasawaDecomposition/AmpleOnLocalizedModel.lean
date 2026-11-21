@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GenericEmbeddingLocalizedModelStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AmplePointsLocalizedModelStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocalSectionFlatPreimmersionStatement

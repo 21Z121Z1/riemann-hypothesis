@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NegTwoLeGapKap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CnormMapConjMulVec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSemilinearL2CuspForm

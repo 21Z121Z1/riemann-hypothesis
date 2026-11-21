@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.CovolumeGram
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSublatticeDegreeSteps
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSublatticeDegree

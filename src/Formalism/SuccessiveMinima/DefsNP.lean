@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SuccessiveMinima.StatementNP
 
 open Filter Topology

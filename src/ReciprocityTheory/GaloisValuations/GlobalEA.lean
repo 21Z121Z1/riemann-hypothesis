@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Hypotheses.Descent
 import Mathlib.FieldTheory.Galois.Profinite
 

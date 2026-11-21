@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTopFormFrameBaseCoordinatesAddVariablesEtale
 import Mathlib.RingTheory.TensorProduct.IsBaseChangeFree
 open GlobalTheory GlobalTheory.TopForm

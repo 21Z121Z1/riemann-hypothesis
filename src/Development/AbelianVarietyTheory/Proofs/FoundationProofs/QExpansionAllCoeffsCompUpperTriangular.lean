@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemRingOfInR
 import Std.Tactic.BVDecide.Normalize.Prop
 open scoped UpperHalfPlane MatrixGroups ModularForm Manifold BigOperators

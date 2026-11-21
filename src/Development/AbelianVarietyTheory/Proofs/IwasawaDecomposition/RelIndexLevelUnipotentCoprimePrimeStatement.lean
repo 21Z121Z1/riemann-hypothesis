@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RelIndexLevelUnipotentCoprimePrime
 open NumberField IsDedekindDomain ReciprocityTheory.Aut Formalism.L2
 open Formalism.AUTREP (GAf)

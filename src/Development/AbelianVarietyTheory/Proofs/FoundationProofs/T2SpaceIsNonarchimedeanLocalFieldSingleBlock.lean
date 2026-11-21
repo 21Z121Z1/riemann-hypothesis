@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FromBlocksMulInv
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.HasCompactSupportPhiU
 import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.IsClosedLowUni

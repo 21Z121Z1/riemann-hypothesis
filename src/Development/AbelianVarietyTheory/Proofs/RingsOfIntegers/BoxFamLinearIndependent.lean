@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.BoxProductLinearIndependent
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBoxSec
 import Mathlib.Algebra.Module.StablyFree.Basic

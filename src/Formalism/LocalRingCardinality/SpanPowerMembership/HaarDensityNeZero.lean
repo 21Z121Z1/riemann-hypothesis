@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExistsDensity
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExistsOmegaLeb
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential

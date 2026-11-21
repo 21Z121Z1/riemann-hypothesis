@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsPowAct
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.RosatiAdjPow
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.TauBalPow

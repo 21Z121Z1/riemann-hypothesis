@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.TorsionNonvanishStatement
 import ReciprocityTheory.SemistableReduction.BWPolyA
 import Mathlib.Algebra.Order.Star.Real

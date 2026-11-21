@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.SegmentRepresentations.JacquetShalikaBounds.CMMul
 import GroundTheory.AutomorphicForms.MacdonaldWhittaker
 

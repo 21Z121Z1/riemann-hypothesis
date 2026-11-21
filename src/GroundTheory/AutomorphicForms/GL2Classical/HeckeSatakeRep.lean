@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2Classical.HeckeSatake
 
 open NumberField IsDedekindDomain Matrix MeasureTheory CongruenceSubgroup

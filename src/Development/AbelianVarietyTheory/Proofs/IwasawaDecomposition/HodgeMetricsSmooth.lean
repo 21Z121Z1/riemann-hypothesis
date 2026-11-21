@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramSmoothOfHolomorphicFramesStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetricPullbackGramAndInvarianceStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FrameDomainCoordinatesHolomorphicStatement

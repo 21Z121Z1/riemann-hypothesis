@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.VtUniq
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.PowEqOneOfPush
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ValueAtOrigin

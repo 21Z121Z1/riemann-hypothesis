@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverMapGenericPointSpecializesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverMorphismGenericPointSpecializesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FramesModPGenericOpenStatement

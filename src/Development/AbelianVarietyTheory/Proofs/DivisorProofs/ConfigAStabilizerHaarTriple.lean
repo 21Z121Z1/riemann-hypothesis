@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompactTorusGroupMeasureDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviEmbeddingLocalClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalStabilizerHaarRightInvariantStatement

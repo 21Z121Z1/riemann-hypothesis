@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPullLam
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.EqOneOfGroupLike
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.BiTrivTransport

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DblHandEqBiLift
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TopOrthAtEmb
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.UnfoldingsOfChain

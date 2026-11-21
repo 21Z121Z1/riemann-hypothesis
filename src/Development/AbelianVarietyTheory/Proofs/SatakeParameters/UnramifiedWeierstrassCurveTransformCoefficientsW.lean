@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.WeierstrassTwoTorsion.ChordEquation
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.FinalC
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.MemClosureRootsOfUnity

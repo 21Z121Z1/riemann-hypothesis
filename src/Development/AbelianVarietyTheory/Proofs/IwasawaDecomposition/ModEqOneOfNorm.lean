@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DuStarPos
 
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem

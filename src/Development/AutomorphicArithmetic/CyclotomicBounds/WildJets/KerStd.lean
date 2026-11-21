@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.DictAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VwNatCastNonneg
 import Development.AutomorphicArithmetic.CyclotomicBounds.WildJets.TabBd

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStageConstantTriangleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageTriangleFactorStepSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StageTriangleFactorStepFirstStatement

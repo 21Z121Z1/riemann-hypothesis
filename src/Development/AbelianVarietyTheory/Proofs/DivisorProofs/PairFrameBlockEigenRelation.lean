@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairEvaluationSelfLinearStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairFrameBlocksEvaluationStatement
 

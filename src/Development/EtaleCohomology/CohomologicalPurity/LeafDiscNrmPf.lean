@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CohomologicalPurity.LeafDiscPf
 import Development.EtaleCohomology.TateTwists.EtaleChainCochainExistsOfEvalData
 import Development.EtaleCohomology.KummerTheory.CupAWCutEv

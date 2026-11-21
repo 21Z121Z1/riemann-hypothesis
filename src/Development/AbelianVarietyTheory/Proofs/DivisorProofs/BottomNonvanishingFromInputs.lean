@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareBottomHalfRankSumLeHalfRank
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.PolarizationScalarImPos
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BottomConstantOfTheta

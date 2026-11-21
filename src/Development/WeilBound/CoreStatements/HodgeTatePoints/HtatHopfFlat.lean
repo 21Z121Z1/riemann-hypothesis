@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.BaseChangePointsCompatStatement
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwhopfSec
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatDesc

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SemiDegZ
 import Lemmata.GeneralBFactSecondAlt.Imports
 import Mathlib.Algebra.Order.Star.Real

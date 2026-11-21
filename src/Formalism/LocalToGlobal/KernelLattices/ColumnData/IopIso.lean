@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.LinkThU
 import Formalism.GL3MeanSquares.SignsFromTrianglesSquares
 

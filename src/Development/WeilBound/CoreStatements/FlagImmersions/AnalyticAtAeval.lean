@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.FlagImmersions.NeZeroOfHasVal
 import Development.WeilBound.CoreStatements.FlagImmersions.ExistsInverse
 import Development.WeilBound.CoreStatements.VolumeEquality.Pieces

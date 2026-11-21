@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNeZeroSmulMemSpan
 import Formalism.HarderNarasimhan.StatementPl
 import Formalism.LocalToGlobal.IndefiniteReal.GramCEqTranspose

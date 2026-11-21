@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.CechLevelsGeneration.CechLevelIso
 import Development.EtaleCohomology.EtaleSheaves.CechLevelIsomorphism.BaseChangeLimit
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTieValU
 import Formalism.LocalToGlobal.CharacterGerms.TripleSubstSecondCoordinate
 

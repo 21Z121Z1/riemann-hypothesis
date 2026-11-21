@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VanishAt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreSBEventuallySliceEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MapEqZeroOfFiberIntegral

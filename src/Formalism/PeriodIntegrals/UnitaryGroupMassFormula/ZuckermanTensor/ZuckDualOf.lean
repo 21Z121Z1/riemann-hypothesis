@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.ZuckTensor
 import Formalism.PeriodIntegrals.DSExist
 import Std.Tactic.BVDecide.Normalize.Prop

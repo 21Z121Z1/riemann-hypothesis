@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.TowerZeroSurjective
 import Std.Tactic.BVDecide.Normalize.Prop
 

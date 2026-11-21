@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsChartCutoffEnergy
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PChartHessCompare
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PHermFormCompare

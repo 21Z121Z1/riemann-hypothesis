@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexProjective
 import Mathlib.Geometry.Manifold.IsManifold.Basic
 set_option maxSynthPendingDepth 1

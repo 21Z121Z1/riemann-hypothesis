@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.QuotientKernel
 import GroundTheory.AutomorphicForms.KernelTraceComp
 import GroundTheory.AutomorphicForms.LocallyConstantCompact

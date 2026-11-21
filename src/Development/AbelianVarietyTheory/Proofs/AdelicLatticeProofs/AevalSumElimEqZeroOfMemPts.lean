@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.RatComponentMemRatPolysVanishingOnMatrixSetStatement
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.EqZeroOfContractions
 import Mathlib.Algebra.Module.StablyFree.Basic

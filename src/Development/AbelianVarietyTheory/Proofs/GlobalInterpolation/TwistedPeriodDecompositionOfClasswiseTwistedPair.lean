@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LowerTieTwAt
 import Formalism.LocalToGlobal.HermitianForms.TiedBrRep
 import Formalism.SharpRestriction.Divisibility.StatementFT.PeriodPointConditions

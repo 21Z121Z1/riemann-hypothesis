@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GroupCohomology.FiveTerm
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.KbarRepContAction
 import Mathlib.FieldTheory.Galois.Profinite

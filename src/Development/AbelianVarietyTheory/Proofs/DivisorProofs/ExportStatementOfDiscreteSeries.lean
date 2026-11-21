@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalExistenceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CanonicalProjectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PsiAtCompStatement

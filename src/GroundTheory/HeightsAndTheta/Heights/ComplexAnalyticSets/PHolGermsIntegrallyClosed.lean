@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHolGermsIntegrallyClosed
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StHolGermsUFD
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PHolGermsDomain

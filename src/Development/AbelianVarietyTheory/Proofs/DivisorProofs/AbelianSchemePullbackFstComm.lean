@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeIntoDeRhamInjectiveImports
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TanEvBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAbelianSchemeOnAff

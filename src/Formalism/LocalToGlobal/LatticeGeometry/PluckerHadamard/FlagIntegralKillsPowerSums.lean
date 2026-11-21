@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WeightedDeltaMeans.LowerBoundLinearPower
 import Formalism.LocalToGlobal.LatticeGeometry.PluckerHadamard.StThmB
 import Formalism.LocalRingCardinality.HeightBoundGeFourthPowerRank

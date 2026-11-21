@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LandauZeroFreeBounds.NoZeroComplexOf
 import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.ZetaInvBound
 import Formalism.ZeroFreeRegion.ZetaLogDerivativeBounds.LogDerivRight

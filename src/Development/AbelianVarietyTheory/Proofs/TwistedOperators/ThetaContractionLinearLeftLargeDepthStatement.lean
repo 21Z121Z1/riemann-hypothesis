@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaContractionLinearLeftLargeDepth
 open GlobalTheory.RowClaim GlobalTheory.ConnectionLinear
 set_option maxHeartbeats 1000000 in

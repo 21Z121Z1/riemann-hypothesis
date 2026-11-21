@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GelfandTransference.EnergyIdentity
 import Formalism.NormUnitaryBounds.NormUnitary
 import Formalism.LatticeTheta.ThetaShiftInversion

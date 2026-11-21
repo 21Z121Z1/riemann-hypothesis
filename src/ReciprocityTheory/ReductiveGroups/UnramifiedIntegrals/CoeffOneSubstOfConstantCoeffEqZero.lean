@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.FgDefs
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PowerSeries.Inverse

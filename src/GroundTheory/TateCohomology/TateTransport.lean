@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.TateGroupIso
 import GroundTheory.TateCohomology.TateZeroClass
 set_option maxSynthPendingDepth 1

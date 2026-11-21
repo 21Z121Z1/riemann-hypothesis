@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CardTorsionOverZero
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.IsZeroOfRed
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.TorsionPointsIntegral

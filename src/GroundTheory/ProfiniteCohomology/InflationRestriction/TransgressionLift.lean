@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.InflationRestriction.CohomologyResMemCohomologyConjInvariants
 import GroundTheory.ProfiniteCohomology.Bridge
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianCongrOfPositiveIndexEq
 import Mathlib.Analysis.Matrix.PosDef
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

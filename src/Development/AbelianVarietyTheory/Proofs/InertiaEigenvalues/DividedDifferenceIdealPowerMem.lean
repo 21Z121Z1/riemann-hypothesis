@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EqZeroOfEvalNatCastAdd
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.Tactic.Polynomial.Basic

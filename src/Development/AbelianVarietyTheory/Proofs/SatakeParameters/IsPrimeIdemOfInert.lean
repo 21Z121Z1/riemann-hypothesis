@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.HeckeIntertwinersInert
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.InertLocalIndices
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.LocSplitProdRight

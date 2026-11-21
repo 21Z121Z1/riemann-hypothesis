@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.PrincipalSeriesSupport.HasSupportOfIsSubquotientProdIrr
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.MemChainVecsDet

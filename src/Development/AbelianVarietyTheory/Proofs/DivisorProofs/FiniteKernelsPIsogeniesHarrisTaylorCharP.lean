@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvcPowRight
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerEqOfPointsOfGerm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionExtOfApplyEq

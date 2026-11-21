@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.LocalTypeDictionary.ExistsRowLiftMatching
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsAutFunOfMemCusp
 

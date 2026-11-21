@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AdelicQuotients.UnitaryLatticeExistsFrame
 import Development.AutomorphicArithmetic.AdelicQuotients.LatticeOrderExistsInverseOneAddUniformizerSmul
 import Development.AutomorphicArithmetic.AdelicQuotients.MemNhdsOneOfCongruenceLatticeOrder

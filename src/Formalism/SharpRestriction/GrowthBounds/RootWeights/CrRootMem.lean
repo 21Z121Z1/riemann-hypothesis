@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.V2repExistsHwv
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Std.Tactic.BVDecide.Normalize.Prop

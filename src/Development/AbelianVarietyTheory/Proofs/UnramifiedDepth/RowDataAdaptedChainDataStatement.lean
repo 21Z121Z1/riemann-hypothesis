@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.RowDataAdaptedChainData
 open Formalism.L2.FormalSeriesBounds
 set_option maxHeartbeats 1000000 in

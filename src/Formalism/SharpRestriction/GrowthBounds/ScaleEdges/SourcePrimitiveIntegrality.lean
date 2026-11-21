@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.RestCloudXOfY
 import Formalism.LocalToGlobal.GroupLattices.FockModels.FlatModels.LetterWtAnti
 

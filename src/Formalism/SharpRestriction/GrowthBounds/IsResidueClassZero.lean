@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataParams₂
 import Formalism.LocalRingCardinality.DataGatTies
 import Formalism.SharpRestriction.GrowthBounds.DataGChain

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.Lemmas
 import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsTwoBlockStepBound
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChangeOfLatticeNested
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsHilbert

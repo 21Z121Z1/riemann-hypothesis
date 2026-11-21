@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelPeriodMapSimplyConnected
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PeriodMapRigidity
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetricTranslationPullbackFlat

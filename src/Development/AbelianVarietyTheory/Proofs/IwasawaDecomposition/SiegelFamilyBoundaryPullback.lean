@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsCyclotomicMapLocalizationStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelFamilyBaseChangeModelStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsNormalModelFiniteStatement

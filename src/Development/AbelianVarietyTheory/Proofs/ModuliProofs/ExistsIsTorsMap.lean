@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsTorsionPairRepresentativeStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsTorsionHomImageStatement
 

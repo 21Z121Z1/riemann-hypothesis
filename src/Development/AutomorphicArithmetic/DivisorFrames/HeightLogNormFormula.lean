@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ProductFormulaHeight
 import Development.AutomorphicArithmetic.DivisorFrames.AlgebraicPointsDegreeSum
 import Development.AutomorphicArithmetic.DivisorFrames.PointFieldExtensionLift

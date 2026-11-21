@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.DividedPowersValuationsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClearsIdempotentConductorIffStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClearsIdempotentOfExponentBoundStatement

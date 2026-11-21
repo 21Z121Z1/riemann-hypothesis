@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneAutomorphicFunctionTwistStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteDimensionalTranslatesDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AutomorphicFunctionMaximalCompactTwistStatement

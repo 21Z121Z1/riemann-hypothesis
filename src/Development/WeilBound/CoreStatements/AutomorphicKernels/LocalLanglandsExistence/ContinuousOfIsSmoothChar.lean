@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.LocalZetaGauss
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExistsOfLocalLanglands
 

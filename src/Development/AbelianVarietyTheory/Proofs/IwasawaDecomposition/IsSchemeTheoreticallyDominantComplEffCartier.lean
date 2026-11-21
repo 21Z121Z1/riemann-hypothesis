@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant
 import Mathlib.Tactic.ENatToNat
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems

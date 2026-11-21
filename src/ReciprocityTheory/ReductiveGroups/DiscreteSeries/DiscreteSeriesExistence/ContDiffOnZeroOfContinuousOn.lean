@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.CayleyChartDomainIsOpen
 import Mathlib.Analysis.Calculus.Deriv.Star
 import Mathlib.Tactic.Monotonicity.Lemmas

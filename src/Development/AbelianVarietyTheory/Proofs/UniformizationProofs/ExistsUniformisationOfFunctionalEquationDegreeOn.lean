@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExpBijOfMatchStatement
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsExpFOfFam
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FiniteExponentBaseChangeFieldStatement

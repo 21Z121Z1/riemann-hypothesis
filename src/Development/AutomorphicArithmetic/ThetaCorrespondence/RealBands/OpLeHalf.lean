@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.IsBand
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.Transl
 import Mathlib.RingTheory.WittVector.IsPoly

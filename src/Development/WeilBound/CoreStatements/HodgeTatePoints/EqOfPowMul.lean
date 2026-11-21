@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ReProd
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CntCoord
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HasLenOfEquiv

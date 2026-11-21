@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemidirectQuotientMeasureConjugationInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugationMeasurePreservingSemidirectStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemidirectMeasureRestrictionNormalPartStatement

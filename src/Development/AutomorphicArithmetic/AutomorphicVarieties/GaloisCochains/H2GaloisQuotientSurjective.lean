@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.H2GaloisQuotientEq
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisCochains.H2RightExactModL
 

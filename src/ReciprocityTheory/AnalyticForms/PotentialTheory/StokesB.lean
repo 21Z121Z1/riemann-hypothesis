@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.AnalyticCharts.Partition
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsPotentialOfFun
 

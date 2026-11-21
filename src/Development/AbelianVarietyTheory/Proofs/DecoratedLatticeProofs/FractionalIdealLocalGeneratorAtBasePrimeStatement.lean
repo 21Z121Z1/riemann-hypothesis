@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.FractionalIdealLocalGeneratorAtBasePrime
 open Formalism.BasicNotions IsDedekindDomain NumberField
 set_option maxHeartbeats 1000000 in

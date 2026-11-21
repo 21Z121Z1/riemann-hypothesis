@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZetaActRefl
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.E2.Summable
 import Mathlib.Tactic.ENatToNat

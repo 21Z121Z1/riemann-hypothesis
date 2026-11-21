@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementHeads
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OperatorPreservesFusionForms
 

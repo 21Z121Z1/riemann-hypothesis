@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LiftFOf
 import Formalism.SharpRestriction.LevelLetterCocycles.ExponentWindowSubsetShort
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ThmEFinal

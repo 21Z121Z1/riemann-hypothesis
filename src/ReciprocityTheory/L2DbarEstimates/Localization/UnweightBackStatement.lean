@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.BasicIdentity.BasicIdentityStatement
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 

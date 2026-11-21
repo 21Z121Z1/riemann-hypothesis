@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.GoodPointBranchSlice
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.NormalModelFibreNear
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsCurrent

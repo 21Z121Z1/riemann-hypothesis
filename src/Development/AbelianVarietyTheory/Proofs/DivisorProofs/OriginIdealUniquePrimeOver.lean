@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartBundleIntersectionSymmetry
 open IsLocalRing Polynomial
 open scoped TensorProduct

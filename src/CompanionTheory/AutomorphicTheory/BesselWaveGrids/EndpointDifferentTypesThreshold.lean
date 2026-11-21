@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.CompactTopologicalForms.NormalFormTopDomination
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.AsmDiff
 

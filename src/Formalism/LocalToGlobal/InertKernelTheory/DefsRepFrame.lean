@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.PendingLemmas.InvarianceIffAdditiveMapsExist
 import Formalism.LocalToGlobal.InertKernelTheory.FirstKernelGeneratorOfOrthogonal
 

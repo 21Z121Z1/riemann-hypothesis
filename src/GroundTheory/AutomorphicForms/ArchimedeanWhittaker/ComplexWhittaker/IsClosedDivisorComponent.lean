@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.ComplexWhittaker.InstMeasurableSpaceU2
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.MeasureTheory.Function.L2Space

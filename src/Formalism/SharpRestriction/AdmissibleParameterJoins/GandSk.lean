@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CornerGLContinuity
 import Formalism.LocalRingCardinality.HostCls
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

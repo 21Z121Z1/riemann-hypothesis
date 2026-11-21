@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.ExistsUniqueVec
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTwistPlacesAboveK
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SplitExEveryDatum

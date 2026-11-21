@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.TwistSeries
 import Mathlib.NumberTheory.RamificationInertia.Valuation
 open NumberField IsDedekindDomain

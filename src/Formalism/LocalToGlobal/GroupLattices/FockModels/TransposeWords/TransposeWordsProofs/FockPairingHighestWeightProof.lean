@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FockPairingHighestWeight
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LEhwLemmas
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylDominanceOf

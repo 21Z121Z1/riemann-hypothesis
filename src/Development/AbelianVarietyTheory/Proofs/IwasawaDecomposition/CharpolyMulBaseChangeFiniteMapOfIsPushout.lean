@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AlgebraMapNormCoeff
 import Mathlib.LinearAlgebra.Charpoly.BaseChange
 import Mathlib.RingTheory.WittVector.IsPoly

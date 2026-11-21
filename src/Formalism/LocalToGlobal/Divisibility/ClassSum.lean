@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.RatHermLcvTwist
 import Formalism.QuotientMetricDivisors.ClassSumDualGeF
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StandardSlopeBound.NablaBasis
 import Formalism.GradedWeylDivisibility.FinalB
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

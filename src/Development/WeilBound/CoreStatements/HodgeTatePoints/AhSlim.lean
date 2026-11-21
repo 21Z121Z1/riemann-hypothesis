@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.DivisibilityProofs.DeepStROfHyp
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ArithIntersectionSystemOfPoincareLelong
 import Development.AutomorphicSpectrum.Proofs.AlgebraProofs.HodgeTateOfFarguesExact

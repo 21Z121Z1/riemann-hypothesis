@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SignedLogMeans
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.EquidistributedConjugates
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.PeriodLatticeAgreement

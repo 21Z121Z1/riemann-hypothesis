@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.TyExOf
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitLev
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStableAlt

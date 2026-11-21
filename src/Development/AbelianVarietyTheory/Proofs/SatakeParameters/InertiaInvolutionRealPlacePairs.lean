@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.FixedIod
 import Formalism.LocalRingCardinality.FactDelDualNabla
 import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.Statement

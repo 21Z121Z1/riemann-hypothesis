@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LevelHyperspecialTrivialCharacterSplitsOffPlaces
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsKMOne
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FinCongMemLevEnv

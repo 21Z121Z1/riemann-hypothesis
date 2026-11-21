@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.BCrisNewtonLift
 import GroundTheory.PAdicHodge.PhiGammaBase
 import GroundTheory.PAdicHodge.SlopeDescentFixed

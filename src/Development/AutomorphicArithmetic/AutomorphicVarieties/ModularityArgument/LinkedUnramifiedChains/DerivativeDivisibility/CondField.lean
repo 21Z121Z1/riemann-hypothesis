@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.ModularityArgument.LinkedUnramifiedChains.DerivativeDivisibility.CmpPrime
 import Mathlib.RingTheory.DedekindDomain.Different
 import Mathlib.RingTheory.SimpleRing.Principal

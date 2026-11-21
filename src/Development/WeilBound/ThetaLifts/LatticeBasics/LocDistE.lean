@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocDistB
 import Development.WeilBound.ThetaLifts.LatticeBasics.LocDistD
 import Mathlib.RingTheory.PicardGroup

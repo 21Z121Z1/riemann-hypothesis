@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IsCompactStandardMaximalStatement
 import Development.WeilBound.ThetaLifts.LatticeBasics.UnfoldB
 open scoped TensorProduct NNReal Matrix

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsLineDegreeDual
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 import Mathlib.Topology.Sheaves.Presheaf

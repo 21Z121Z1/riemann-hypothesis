@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.RowsExhaust
 import Formalism.LocalToGlobal.GaloisLevelStructure.Checks
 import Formalism.SharpRestriction.LevelLetterCocycles.SumRepresentations

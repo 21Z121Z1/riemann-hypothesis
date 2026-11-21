@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.GeneratedTwistSysZero
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PHilbertPoint
 set_option maxSynthPendingDepth 1

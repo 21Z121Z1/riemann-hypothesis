@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.GlobSt
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.RingTheory.FractionalIdeal.Norm

@@ -1,4 +1,4 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Formalism.PieriBlockIdeals.StatementTop
 import Formalism.PieriBlockIdeals.PieriColumnMinors.CorollaryOfParamsSevenLinkage
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PrimeCount

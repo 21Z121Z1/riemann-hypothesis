@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteH1UnramifiedOutsideStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.FiniteH2UnramifiedOutside
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.CohomologicalDimensionTwoUnramified

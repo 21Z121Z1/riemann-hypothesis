@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.AlgebraicGeometry.Morphisms.Separated
 import Mathlib.Combinatorics.Quiver.ReflQuiver
 import Mathlib.RingTheory.TotallySplit

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegralOfMemAdjoinInv
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.UniformisationCompleteDVR
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.EgaHolds

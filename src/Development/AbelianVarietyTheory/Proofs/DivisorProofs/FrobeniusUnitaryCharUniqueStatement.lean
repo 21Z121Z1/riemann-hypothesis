@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrobeniusUnitaryCharUnique
 open GlobalTheory.WeilM GlobalTheory.SplitFlip
 open scoped Matrix

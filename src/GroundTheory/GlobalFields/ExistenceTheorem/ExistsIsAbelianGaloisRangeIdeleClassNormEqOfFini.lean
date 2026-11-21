@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ExistenceTheorem.Kummer
 import GroundTheory.GlobalFields.ExistenceTheorem.NormLimitation
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IndexCalculation.IsLocalizedModuleToSpan
 import Formalism.PeriodIntegrals.DivisionRowsRationalLattice
 import Mathlib.RingTheory.WittVector.IsPoly

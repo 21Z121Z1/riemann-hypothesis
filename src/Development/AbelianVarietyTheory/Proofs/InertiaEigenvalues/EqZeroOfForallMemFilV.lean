@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WeaklyAdmissibleFiltrations.Statement
 import Mathlib.RepresentationTheory.Rep.Basic
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

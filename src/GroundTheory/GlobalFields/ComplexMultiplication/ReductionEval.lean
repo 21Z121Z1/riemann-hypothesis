@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionMap
 import GroundTheory.GlobalFields.ComplexMultiplication.ReductionLift
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogeny

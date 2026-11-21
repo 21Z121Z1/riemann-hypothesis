@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEuclideanSections
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLatticeCount
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallBallVolume

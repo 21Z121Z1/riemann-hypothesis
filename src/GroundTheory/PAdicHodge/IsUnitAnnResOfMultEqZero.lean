@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WAFracAnnCris
 import GroundTheory.PAdicHodge.WAFracAnnPt
 import GroundTheory.PAdicHodge.CauchySeqOfIncrements

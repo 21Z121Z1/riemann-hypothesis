@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasTypeVec
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralTensorOfIntegrable
 open MeasureTheory Set Filter NumberField IsDedekindDomain

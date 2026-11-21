@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.ShapeRowIsomorphisms.StatBKInIso
 
 variable [hT2Core : Fact ReciprocityTheory.ChartRestriction.T2.Core]

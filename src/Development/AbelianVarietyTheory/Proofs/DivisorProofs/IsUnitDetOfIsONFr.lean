@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.PerCEmb
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain

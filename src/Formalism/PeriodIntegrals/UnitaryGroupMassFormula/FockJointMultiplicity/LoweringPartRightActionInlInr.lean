@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.JointMultOfSteps
 import Mathlib.RingTheory.Derivation.Lie
 import Mathlib.RingTheory.PiTensorProduct

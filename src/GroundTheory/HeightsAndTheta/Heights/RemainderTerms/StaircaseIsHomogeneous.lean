@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.FlagIntegralRealEqMulDdConst
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PCoinvAtTop
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PCoinvPolynomialReduction

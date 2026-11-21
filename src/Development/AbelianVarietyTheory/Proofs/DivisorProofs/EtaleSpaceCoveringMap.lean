@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenGraph
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Topology.Covering.Basic

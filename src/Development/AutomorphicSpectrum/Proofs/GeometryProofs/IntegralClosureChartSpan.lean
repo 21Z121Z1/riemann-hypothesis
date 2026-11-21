@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GlueApplyOfNotInFibre
 import Mathlib.Algebra.Order.Ring.Star
 open AlgebraicGeometry CategoryTheory GlobalTheory.CompanionTheory.Ar NumberField

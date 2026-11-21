@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AdelicEisensteinSeries.GodementSumW
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinSeriesContinuation
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EisensteinVerticalBound

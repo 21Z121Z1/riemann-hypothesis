@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TwistAllPowersOfGaloisCohomologyClassField
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmbientBaseHeq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.AdmT4OfRationalRowsStatement

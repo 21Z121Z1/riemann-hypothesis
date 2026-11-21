@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SupportPhiZeroSubset
 
 namespace Formalism.FourierDecayAlt.P.PBI

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.VeluIntegralModel
 import Formalism.EllipticTorsion.EllipticTorsionProofs.WPoint
 import Formalism.EllipticTorsion.EllipticTorsionProofs.FormalGroupPointsParamDef

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PCoordQ
 import Formalism.LocalToGlobal.GlobalTheory.GL4.CTEqConjTranspose
 

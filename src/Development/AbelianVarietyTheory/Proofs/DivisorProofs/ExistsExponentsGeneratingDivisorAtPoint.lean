@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelHodgeGramHodgeFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockGramDeterminantBoundsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivisorGeneratesLocalPeriodMatrixStatement

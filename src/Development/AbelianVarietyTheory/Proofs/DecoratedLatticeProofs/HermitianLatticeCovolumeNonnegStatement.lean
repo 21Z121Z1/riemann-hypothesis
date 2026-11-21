@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.HermitianLatticeCovolumeNonneg
 open Module NumberField IsDedekindDomain Formalism.BasicNotions Formalism.DivisionValues
 open scoped Matrix ComplexOrder

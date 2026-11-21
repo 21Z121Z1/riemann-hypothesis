@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsResChiIndex
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResSymGram
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ResChiIndexLattice

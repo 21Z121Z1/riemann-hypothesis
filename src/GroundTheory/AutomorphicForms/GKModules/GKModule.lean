@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GKModules.SmoothVectors
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RepresentationTheory.Irreducible

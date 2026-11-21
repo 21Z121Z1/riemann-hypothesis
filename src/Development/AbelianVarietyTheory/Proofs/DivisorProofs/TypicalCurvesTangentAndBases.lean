@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsPTypicalTangent
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TypicalCurvesOfTypeOfTypicalTangents
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.TypicalBasisCoordinates

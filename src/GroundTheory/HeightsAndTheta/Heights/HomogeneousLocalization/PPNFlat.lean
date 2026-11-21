@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveSpaceChart
 import GroundTheory.HeightsAndTheta.Heights.HomogeneousLocalization
 import Mathlib.AlgebraicGeometry.Morphisms.WeaklyEtale

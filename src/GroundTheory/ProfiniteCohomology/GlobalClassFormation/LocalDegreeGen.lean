@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.SplittingFromInequality.Decomposition
 import GroundTheory.GlobalFields.FirstInequality
 import GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois

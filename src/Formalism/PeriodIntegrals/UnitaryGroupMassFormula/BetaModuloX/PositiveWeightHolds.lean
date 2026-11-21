@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaModuloX.Skeleton
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.BetaUniqueness.WAniso
 

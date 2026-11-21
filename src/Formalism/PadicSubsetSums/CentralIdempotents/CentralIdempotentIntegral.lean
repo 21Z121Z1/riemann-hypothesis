@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ResultantValuation.KoszulSecondDifferential
 import Formalism.ResultantValuation.BoundedCubic
 import Formalism.CyclotomicNorms.StatementA

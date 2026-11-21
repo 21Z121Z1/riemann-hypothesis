@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementAB
 import Formalism.GrowthSums.FactorialBaseGrowth.PathBasisOfCount
 import Formalism.GrowthSums.FactorialBaseGrowth.QuadraticExponentIdentity

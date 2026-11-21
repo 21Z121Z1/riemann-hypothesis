@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ThmELiftAtOf
 import Formalism.SharpRestriction.LevelLetterCocycles.RingConditionOfDeltaInvariants
 import Formalism.SharpRestriction.LevelLetterCocycles.FinrankEqOneOfBijective

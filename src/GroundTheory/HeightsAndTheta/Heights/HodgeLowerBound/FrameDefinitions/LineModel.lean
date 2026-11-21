@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.FrameDefinitions.LineMu
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.ProjectiveLine
 set_option maxSynthPendingDepth 1

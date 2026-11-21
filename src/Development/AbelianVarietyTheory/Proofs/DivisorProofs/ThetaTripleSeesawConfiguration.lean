@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Euler
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LemmaU
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IdA

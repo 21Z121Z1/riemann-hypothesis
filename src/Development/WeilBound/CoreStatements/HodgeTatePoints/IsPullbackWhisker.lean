@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.Comp1PointPowerExpand
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatLieBc
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsLieModelStatement

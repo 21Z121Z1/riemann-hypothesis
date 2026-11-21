@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ZChartLocalSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ZChartSmulSt
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PAmpleAffineGen

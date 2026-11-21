@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasureNormOne
 import GroundTheory.GlobalFields.IdeleGroups.NormOneCompact
 

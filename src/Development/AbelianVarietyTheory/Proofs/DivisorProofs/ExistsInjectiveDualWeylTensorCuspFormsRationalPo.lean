@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
 import Formalism.LocalToGlobal.ProjectiveLattices.FnDefE
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IdemAtEqOneIff

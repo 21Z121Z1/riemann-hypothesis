@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.Closed
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.ScaleZeroIff
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.LogSizeBoundLe

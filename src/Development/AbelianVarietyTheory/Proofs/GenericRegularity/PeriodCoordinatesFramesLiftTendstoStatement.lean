@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.PeriodCoordinatesFramesLiftTendsto
 open NumberField Topology Filter ReciprocityTheory.ChartRestriction.G.FD
 open scoped Matrix

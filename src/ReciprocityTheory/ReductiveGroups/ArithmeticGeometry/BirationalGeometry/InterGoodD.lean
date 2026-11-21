@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactMore.Imports
 import Lemmata.FirstBlockLemmaA.Imports
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsGeneratorsMemCompletedLatticeIffStatement
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SplittingProjection
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlobApprox

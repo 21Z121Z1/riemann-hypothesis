@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.Examples
 import Mathlib.NumberTheory.Padics.WithVal
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsDatumLinear
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.TripleGeometryHermitianFormStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeesawUnfoldingEvaluationStatement

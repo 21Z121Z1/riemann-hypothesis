@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GaloisValuations.ArithOfA
 import ReciprocityTheory.NeutralLocalFields.LocalFieldComparison.HilbertClassFieldA
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.InertiaElementEqOneOrLiesAboveFinitePlace

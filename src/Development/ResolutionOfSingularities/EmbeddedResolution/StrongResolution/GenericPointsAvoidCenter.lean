@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.EmbeddedResolution.AlgebraicPreliminaries.GenericPointImage
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrongResolution.DetachedLocus
 universe u

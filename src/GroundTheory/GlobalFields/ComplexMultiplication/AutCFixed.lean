@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.ExistsRingEquivExtendOfIsTranscendenceBasis
 import Mathlib.FieldTheory.Minpoly.IsConjRoot
 import Mathlib.Order.CompletePartialOrder

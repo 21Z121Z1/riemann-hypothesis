@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.SphericalFunctionIntegrableOfLocal
 import Formalism.FlagUnipotentLattices.KappaAssemblyOf
 import Formalism.FlagUnipotentLattices.CuspThresholdBound

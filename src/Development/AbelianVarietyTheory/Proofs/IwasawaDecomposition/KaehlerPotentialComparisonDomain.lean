@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothPullbackToFrameDomainStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SecondDerivComp
 open AlgebraicGeometry CategoryTheory NumberField Matrix

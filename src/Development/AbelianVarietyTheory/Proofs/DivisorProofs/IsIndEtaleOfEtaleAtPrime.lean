@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleFactorOfIndEtAtPrime
 import Mathlib.Order.CompletePartialOrder
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

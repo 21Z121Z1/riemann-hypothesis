@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.GermCompatId
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LocalMaximality.MonoM
 

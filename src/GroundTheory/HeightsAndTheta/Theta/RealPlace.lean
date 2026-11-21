@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HermitianLocalForms
 import GroundTheory.AutomorphicForms.AdelicUnitaryGroups.Topology
 import GroundTheory.AutomorphicForms.HermitianBinaryValues

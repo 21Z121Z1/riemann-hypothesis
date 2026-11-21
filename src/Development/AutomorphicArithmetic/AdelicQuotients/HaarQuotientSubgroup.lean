@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.SelmerRankBoundLaurent
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.NormEx
 import Development.AutomorphicArithmetic.Foundations.Convolution.LocalGroupAnalysis.QuotEq

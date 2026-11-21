@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.TwistedTraceFormula.GeometricLemmaFiltration
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorTwoBlockEquivStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CellFunctorScalarUniformizerStatement

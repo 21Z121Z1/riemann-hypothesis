@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ChartSymmEventuallyEq
 import ReciprocityTheory.L2DbarEstimates.LeviForms.LogNormSq
 import Mathlib.Topology.Algebra.MvPolynomial

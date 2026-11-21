@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.C1FiniteExtensionLang
 open GlobalTheory.NeedB Polynomial
 set_option maxHeartbeats 1000000 in

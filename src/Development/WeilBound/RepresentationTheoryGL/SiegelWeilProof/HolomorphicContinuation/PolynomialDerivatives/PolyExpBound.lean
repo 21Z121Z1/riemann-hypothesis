@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.HolomorphicContinuation.PolynomialDerivatives.HasFDerivAtEvX
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SquareNormBound
 import Mathlib.Algebra.Order.Star.Real

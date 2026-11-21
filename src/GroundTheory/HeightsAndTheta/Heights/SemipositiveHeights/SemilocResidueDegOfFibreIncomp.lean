@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.Assembly
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ProjDeg
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PFnDegRelDeg

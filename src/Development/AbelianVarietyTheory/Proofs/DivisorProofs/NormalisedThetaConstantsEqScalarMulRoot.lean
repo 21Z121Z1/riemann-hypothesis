@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTorsionFrameIsValueAtThetaConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsionFrameSqOfTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaGeneratorTorsionFrameValueEqScalarMulRootStatement

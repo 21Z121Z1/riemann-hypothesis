@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InfinitelyManyPrimesInRayClass
 import Formalism.LocalRingCardinality.ConjSqrtMinusD
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK

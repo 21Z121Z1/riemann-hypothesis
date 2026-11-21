@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.DiscriminantNeZeroOfResidueNeZero
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.StrictMonoIntExists
 import Mathlib.Data.Finsupp.Pointwise

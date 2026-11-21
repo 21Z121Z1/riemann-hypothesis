@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.TriDiag
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsTorusLiftToNilpotentThickening
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsUnipotentFromTorusCoords

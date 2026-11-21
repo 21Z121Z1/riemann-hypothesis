@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.TransposeWordsProofs.FockPairingRowAction
 import Formalism.SharpRestriction.GrowthBounds.DualFockLinear.OneSidedLemma4Realisable
 

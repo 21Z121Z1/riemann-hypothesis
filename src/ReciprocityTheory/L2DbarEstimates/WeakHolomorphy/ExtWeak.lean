@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.ExtCut
 import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.HoloWeak
 import ReciprocityTheory.L2DbarEstimates.WeakHolomorphy.MollifyEqConvolution

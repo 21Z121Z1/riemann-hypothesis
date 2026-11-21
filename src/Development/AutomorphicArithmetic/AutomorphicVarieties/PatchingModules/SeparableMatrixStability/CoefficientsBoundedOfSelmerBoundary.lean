@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.SeparableMatrixStability.MapEta
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ComapPowLe
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ProfDefs

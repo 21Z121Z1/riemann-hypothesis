@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagConcatenationExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ShortExactPairChernRelationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairMorphismCompatibilityStatement

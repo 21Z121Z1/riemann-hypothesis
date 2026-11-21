@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GLColumnsIsFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniversalFlagCellFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CokernelSubbundleIsVBStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArithmeticIntersection.KappaSt
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.LintegralStereo
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.InFlagDomainOne

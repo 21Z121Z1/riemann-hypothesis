@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.StableGradedCounts.IRRCentralIdemOrthogonal
 import Formalism.PadicSubsetSums.CentralIdempotents.GaloisConjCentralIdempotent
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd

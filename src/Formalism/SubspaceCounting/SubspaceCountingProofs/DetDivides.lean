@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SubspaceCounting.StatementW
 import Mathlib.LinearAlgebra.Matrix.Permutation
 import Mathlib.RingTheory.Henselian

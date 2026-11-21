@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.CbcSph
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.NormRam
 import Development.AutomorphicArithmetic.Foundations.Convolution.Cbcc

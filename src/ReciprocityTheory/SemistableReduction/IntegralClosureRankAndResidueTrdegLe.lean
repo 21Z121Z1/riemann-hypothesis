@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.ComapInclusionIsLocalHom
 import Mathlib.NumberTheory.RamificationInertia.Basic
 import Mathlib.Tactic.Monotonicity.Lemmas

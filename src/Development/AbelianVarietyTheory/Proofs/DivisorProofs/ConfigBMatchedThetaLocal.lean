@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OffPartLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JmConjTranspose
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedRealFrameExistsStatement

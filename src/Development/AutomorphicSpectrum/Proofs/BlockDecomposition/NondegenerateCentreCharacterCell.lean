@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NondegenerateCharacterCellFactorization
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RowD
 noncomputable section

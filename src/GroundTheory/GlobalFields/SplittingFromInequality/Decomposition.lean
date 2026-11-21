@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.SplittingFromInequality.Galois
 import GroundTheory.GlobalFields.CompletionAtPlace.Inertia
 import GroundTheory.LocalFields.UnramifiedGalois

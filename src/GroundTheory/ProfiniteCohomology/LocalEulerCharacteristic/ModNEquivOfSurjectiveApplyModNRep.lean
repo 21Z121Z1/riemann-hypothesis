@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.UnitsLattice
 import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.Additive

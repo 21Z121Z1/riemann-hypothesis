@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProperMapBumpFunctionExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchrodingerPartialFourierIntertwineStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawTypeATripleFourthStatement

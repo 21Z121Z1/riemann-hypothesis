@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LiftCharactersAgreeOverEnlargedBase
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LawsJEnl
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChiROfEnlarged

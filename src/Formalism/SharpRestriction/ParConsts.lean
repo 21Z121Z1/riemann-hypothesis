@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.FamCore
 import Formalism.SharpRestriction.ElevenLe
 import Formalism.LocalRingCardinality.DataTies

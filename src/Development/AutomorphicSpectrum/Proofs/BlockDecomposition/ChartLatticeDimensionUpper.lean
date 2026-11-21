@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalChartLattice
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FinrankChartLatQMono
 import Development.WeilBound.CoreStatements.HodgeTatePoints.KleimanInputUniverseZero

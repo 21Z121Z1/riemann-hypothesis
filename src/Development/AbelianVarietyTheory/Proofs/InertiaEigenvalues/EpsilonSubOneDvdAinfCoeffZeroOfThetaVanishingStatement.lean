@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EpsilonSubOneDvdAinfCoeffZeroOfThetaVanishing
 open Formalism Formalism.BasicNotions Formalism.BasicNotions.Loc GlobalTheory.BKGal
 open scoped Formalism.Per

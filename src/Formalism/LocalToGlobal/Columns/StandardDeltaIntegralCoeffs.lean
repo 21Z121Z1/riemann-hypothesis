@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.CoefModLemmas
 
 open NumberField IsDedekindDomain Module MvPolynomial

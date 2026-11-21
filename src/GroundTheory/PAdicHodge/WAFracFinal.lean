@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.WAFracLemmaO
 import GroundTheory.PAdicHodge.WAFracHelp
 import GroundTheory.PAdicHodge.WAFracAlg

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StPtsAbsIntegrable
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StPtsAbsMeasurable
 import GroundTheory.HeightsAndTheta.Heights.Intersections.RegLine

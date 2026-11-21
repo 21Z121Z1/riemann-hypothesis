@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.ExistenceTori.AdmissibleHarmonicLattice
 import Mathlib.NumberTheory.NumberField.ClassNumber
 import Mathlib.RingTheory.Henselian

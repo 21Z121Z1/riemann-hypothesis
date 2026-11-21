@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLq
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLt
 

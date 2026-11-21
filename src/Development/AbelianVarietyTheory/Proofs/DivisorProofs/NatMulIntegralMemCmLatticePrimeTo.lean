@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDenominatorPrimeToLFiniteAdele
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DifferentiableZterm
 import Development.AbelianVarietyTheory.Definitions.Divisors.TorsTransport

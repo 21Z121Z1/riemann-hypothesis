@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ReductionCore
 
 open NumberField IsDedekindDomain Topology Filter Set Matrix

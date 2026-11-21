@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.CyclotomicTower
 import GroundTheory.PAdicHodge.TiltValuation
 import Mathlib.Data.Int.Star

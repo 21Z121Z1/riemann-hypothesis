@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.IsMapOfCancel
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CdAffine
 import Development.WeilBound.CoreStatements.HodgeTatePoints.CocpMain

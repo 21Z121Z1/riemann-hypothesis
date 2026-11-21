@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AinfElementThetaCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrEmbeddingRingHomPropertyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KerMapSubsetImMap

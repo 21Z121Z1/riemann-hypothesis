@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsSemiAbelianExponentialAlongDisc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffAtGramOfImFormConst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEquivOfExp

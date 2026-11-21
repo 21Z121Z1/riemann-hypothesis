@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.TransferCocycles.TransferCocycle
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 

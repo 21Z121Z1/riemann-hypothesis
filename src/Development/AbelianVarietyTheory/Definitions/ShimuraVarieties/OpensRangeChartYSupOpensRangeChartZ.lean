@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ShimuraVarieties.AwayLiftCompFromZeroRingHom
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point

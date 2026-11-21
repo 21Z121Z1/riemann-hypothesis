@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SvalEqZeroOfWeightSum
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SvalSecComb
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsIndepCoords

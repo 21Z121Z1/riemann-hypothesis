@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.PlaceShiftStatements.MarkWeightedFixedPointEqDefinitePairOdd
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClassSummandEqTermOfAOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CentralizerOrbitSumConjugate

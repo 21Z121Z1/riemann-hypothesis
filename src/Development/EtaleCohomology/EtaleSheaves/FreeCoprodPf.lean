@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.CoprodPf
 import Mathlib.CategoryTheory.Sites.Adjunction
 import Mathlib.Order.CompletePartialOrder

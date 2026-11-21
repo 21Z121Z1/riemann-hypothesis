@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGlueDataStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GlueWitStatement

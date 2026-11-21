@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.TransportedFrame
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.IpTheta
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.NormIterFderivApplyLe

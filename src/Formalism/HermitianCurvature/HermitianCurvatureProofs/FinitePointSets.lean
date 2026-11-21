@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementTB
 import Mathlib.Analysis.InnerProductSpace.GramMatrix
 import Mathlib.Data.Finset.Functor

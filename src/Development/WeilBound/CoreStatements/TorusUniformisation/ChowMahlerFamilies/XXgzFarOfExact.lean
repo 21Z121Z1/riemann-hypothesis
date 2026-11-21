@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.FarguesExact
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateCokernelSharp
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsHomogeneousCompIdeal

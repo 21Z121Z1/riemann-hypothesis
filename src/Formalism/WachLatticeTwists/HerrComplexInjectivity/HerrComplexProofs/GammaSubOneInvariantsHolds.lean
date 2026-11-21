@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.HerrComplexInjectivity.GammaSubOneStatedForm
 import Formalism.WachLatticeTwists.WachProductBases.WachProductProofs.InvariantBasisAverage
 import Formalism.WachLatticeTwists.WachProductBases.WachProductProofs.SaturationIntersectionHolds

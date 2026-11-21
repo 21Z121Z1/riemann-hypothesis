@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvEig
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ConvAssoc
 import Development.AutomorphicArithmetic.ThetaCorrespondence.RealBands.ExistsCompactTail

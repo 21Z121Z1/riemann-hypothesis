@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CharacterBoxes.HalfPlane
 import Mathlib.NumberTheory.LSeries.Nonvanishing
 import Mathlib.RingTheory.WittVector.IsPoly

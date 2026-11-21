@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.AdjKltOfLtDisc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FormOrdDFormNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DvrPlaceTopFormOrdersApi

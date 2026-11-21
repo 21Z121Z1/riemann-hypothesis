@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LowerCoordinateProd
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MulVecBvecApply
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellDiagonalMap

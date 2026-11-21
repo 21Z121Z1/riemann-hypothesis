@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TorsionBlocks.FlatZetaIntegral
 import Mathlib.Analysis.Calculus.ParametricIntegral
 import Mathlib.Tactic.Monotonicity.Lemmas

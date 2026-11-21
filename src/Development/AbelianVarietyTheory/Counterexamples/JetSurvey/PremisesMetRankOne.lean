@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.DiagonalPowerBalanced
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BoxTauBalOfLinear
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LocZeroTranslDiffComp

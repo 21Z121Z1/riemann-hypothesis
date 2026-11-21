@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.LcvBaseChange
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 import Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic

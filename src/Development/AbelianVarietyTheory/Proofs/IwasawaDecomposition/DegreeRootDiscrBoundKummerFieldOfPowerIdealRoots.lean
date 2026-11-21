@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.FieldSizeSupAdd
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.FieldSizeMonotone
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SzAdjoinRootOfUnity

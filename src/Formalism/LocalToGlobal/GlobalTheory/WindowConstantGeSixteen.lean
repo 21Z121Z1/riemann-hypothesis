@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.VandNHcSeqEq
 import Formalism.GL3MeanSquares.HookFormulaTorsion.IndicatorValueMemUnitInterval
 import Formalism.LocalToGlobal.Columns.InputsWeyl

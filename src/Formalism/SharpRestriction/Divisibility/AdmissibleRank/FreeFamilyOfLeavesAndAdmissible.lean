@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.ParahoricIdxZ
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DatumConjInv
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.DatumBlockEigen

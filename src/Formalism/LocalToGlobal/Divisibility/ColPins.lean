@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.RecBridgeSel
 import Formalism.LocalToGlobal.KernelLattices.JetFieldLeKR
 import Formalism.LocalToGlobal.Columns.GoodXgE

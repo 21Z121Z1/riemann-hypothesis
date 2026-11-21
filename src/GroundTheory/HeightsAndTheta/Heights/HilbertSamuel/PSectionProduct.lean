@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSectionProduct
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSectionBoundedMul
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DoubleCosetMeasures.StatementZ
 import Formalism.HermitianCurvature.StatementTop
 

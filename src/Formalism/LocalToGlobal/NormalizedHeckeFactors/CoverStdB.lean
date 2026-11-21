@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverStd
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverAct
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverPoly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
 import ReciprocityTheory.DualLattices.MemDualLat
 import ReciprocityTheory.DualLattices.MemSupOfRestrictToSubgroupMemSq

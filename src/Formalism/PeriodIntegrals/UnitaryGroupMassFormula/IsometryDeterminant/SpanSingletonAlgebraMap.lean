@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IsometryDeterminant.AlgebraMapMemCI
 import Mathlib.Order.Interval.Finset.Box
 import Mathlib.RingTheory.SimpleRing.Principal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulRightMemSB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzLocallyConstantSupportStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralMatrixLeftFactorStatement

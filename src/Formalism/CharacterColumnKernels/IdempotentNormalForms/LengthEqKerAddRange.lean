@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CharacterColumnKernels.StatementRho
 import Formalism.CharacterColumnKernels.IdempotentNormalForms.RightMulEpsAlgebraMap
 import Mathlib.Tactic.Monotonicity.Lemmas

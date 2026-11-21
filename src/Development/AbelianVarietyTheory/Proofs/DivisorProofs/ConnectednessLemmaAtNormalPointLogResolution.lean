@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogResolutionMultLtOfConnectednessStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLogResolutionLocalVanishingStatement
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter

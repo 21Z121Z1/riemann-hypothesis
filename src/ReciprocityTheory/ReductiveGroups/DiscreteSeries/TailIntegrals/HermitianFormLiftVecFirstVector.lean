@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.WeylElementCommutesLevelOne
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

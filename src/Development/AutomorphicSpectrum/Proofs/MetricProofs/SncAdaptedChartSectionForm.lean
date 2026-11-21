@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Tactic.Monotonicity.Lemmas
 import ReciprocityTheory.AnalyticForms.LeviForms.IsRegFamilyInhabitStatement

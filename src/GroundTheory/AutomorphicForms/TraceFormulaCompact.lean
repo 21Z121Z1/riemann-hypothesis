@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.DiscreteDecomposition
 import GroundTheory.AutomorphicForms.TraceFormulaMultiplicity
 import GroundTheory.AutomorphicForms.TraceFormulaWeil

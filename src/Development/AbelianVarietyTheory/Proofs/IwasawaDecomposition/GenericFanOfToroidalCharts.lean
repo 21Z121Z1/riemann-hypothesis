@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeAtOfToricChartStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ConeAtInteriorPointStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ToricChartsGlobalConditionsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveVertIndexSteps
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PLogCardLength
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCurveDivVertical

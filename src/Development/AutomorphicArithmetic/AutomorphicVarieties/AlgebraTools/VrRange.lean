@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.UnitsBasic
 
 open Polynomial Matrix IsLocalRing TensorProduct UpperTheory.V.AlgebraTools

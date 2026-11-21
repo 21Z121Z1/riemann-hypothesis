@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TwistedJacquetExactSmooth
 open GlobalTheory.PRep GlobalTheory.BZMir
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PIntegralOfBergman
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PMetricChange
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.HasDerivAtDet

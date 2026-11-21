@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.DegreeFormula.Statement
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.Data.Matrix.ColumnRowPartitioned

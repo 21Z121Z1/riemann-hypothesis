@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAut
 import Mathlib.RingTheory.PicardGroup
 open MeasureTheory Filter Topology

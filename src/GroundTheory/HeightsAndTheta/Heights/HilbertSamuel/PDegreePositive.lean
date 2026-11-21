@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsDegreePositive
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PHilbertDimZero
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.OfSteps

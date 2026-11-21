@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.FlipTwoThree
 import Formalism.SharpRestriction.ParamsHeightRankConstant
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

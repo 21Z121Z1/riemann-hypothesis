@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.PNBasicPf
 import Std.Tactic.BVDecide.Normalize.Prop
 

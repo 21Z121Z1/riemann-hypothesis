@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.SerreP
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.Immersion
 set_option maxSynthPendingDepth 1

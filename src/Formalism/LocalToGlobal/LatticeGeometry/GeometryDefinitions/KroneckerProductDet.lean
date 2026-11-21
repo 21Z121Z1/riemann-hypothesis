@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.DefsNN
 
 open NumberField IsDedekindDomain MvPolynomial Formalism.BasicNotions

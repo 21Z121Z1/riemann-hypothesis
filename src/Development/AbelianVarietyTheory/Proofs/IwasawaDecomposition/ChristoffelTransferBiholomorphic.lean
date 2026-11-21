@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HolSprayApply
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
 open Filter Topology Matrix

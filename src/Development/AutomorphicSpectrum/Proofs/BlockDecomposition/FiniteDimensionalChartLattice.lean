@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChartLatQCech
 import Development.WeilBound.CoreStatements.HodgeTatePoints.A12
 

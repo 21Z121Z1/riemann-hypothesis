@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.IntSProd
 import Formalism.DropLevelBounds.ConstantCoeffVanishing.UbintConstantCoeffEqZero
 import Formalism.LocalToGlobal.CharacterGerms.ConstantCoeffSinglePointZero

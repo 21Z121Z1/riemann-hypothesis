@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BlockKWaveC
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ModuleFormPosCompactSupport
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.VectorIsomorphismCompactSupport

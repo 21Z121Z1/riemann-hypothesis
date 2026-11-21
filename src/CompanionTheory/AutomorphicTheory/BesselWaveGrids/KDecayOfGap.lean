@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.AsmDiff
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.GridsText
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.LimBdSh

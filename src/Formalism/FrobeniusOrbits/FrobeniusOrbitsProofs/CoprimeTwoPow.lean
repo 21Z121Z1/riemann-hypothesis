@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.Statement
 import Formalism.TameInertiaTowers.CentralOrderTwo.Galois
 import Mathlib.Data.Int.Star

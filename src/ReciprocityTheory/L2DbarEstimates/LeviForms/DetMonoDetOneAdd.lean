@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.DetMonotoneStarMulSelf.OneLeReDetOneAdd
 
 namespace ReciprocityTheory.L2DbarEstimates.I

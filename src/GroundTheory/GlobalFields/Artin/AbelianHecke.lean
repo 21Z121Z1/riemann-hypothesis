@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.Brauer
 import GroundTheory.GlobalFields.Artin.OneDimExistence
 import GroundTheory.GlobalFields.TateThesis.FiniteOrderParams

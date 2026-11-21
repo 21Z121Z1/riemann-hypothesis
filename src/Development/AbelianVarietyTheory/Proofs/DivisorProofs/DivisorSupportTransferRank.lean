@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalIsometry
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabIffLoc
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DivGOfLocalIsometry

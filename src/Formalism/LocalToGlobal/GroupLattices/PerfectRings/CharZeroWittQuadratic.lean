@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.IsLocalRingOfComplete
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.StdSubPlacesConst
 import Formalism.LocalToGlobal.GroupLattices.PerfectRings.JOInjective

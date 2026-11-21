@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ExistsNormOneWithResiduesAtSplitPlaces
 open Matrix Formalism.UG Formalism.L2.DIV GlobalTheory.LevNorm
 set_option maxHeartbeats 1000000 in

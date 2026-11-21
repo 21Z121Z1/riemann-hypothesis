@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsFundSet
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.Objects
 

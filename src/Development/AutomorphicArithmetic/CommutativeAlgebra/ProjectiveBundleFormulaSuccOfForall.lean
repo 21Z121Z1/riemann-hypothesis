@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.LeraHirschChernPowersOnUnitChart
 import Development.AutomorphicArithmetic.CommutativeAlgebra.LeraHirschUnitOnBlowupChart
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EqvTwistUnimodularUnitLocus

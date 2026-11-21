@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WirtConst
 import Mathlib.LinearAlgebra.Matrix.Hermitian
 open Matrix GlobalTheory.MatDeriv

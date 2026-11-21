@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsContinuous
 import GroundTheory.AutomorphicForms.GKModules.KernelCalculus
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.CuspFormsDecay

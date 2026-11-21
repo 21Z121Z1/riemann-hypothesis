@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.XiIndCClass
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntegralDensEqZero
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.MapEvalPsPi
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.CvZeroTerm
 

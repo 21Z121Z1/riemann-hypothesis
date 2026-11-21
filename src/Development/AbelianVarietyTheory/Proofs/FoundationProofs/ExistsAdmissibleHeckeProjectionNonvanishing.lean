@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsZetaTW
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsLamFR2
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ApplyPolyOfStable

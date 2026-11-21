@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FirstDeriv
 import Formalism.TorsionNormIteration.LubinTateExample
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.FrobSqV

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.UnitsHerbrandA
 
 namespace ReciprocityTheory.DiscreteGroups.LocalClassField.UnitsFilt

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.EmbeddedResolution.IteratedBlowups.Saturation
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SaturationByPowers
 universe u

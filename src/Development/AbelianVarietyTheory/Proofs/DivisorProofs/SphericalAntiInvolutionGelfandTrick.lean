@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInertPrimeNonsplitPlaceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSelfDualScaledHermitianInertStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalUnitaryIsoStabilizerStatement

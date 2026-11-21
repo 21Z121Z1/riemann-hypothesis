@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ExistsIdealDenominator
 import Formalism.SharpRestriction.Divisibility.CartierLocalBounds
 import Formalism.SharpRestriction.Divisibility.LiftErrorLocal

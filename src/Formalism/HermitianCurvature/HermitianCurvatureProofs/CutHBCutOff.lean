@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ExistsCompactCutoffCoefficient
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceInductionLevel
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.VLetZeroNear

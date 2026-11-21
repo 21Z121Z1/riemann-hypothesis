@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ChartFramesMulAdeleAtBadPrime
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsNearAt
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.SeamGLInjective

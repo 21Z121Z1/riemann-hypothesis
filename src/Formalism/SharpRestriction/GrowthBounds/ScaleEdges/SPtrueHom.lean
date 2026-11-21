@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.SymbolRealisableBound
 import Formalism.SharpRestriction.GrowthBounds.PathWeight.DvDegOtherMono
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CovariantHatPairReindex.SumSgnLProdCol
 import Formalism.PeriodIntegrals.ContractionsCovariantIff
 import Formalism.FormalDegreeBessel.FinalIO

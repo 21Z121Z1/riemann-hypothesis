@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StZIntPoint
 import GroundTheory.HeightsAndTheta.Heights.Intersections.CompsDim
 import GroundTheory.HeightsAndTheta.Heights.Intersections.FourierIntegralBound

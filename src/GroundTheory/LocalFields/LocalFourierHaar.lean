@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.PadicLogSeries
 import GroundTheory.LocalFields.SeparableClosureValuation
 import Mathlib.MeasureTheory.Measure.Haar.DistribChar

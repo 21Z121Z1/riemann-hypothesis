@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.SameFormAllLevels
 import Mathlib.Algebra.Azumaya.Basic
 import Mathlib.RingTheory.Henselian

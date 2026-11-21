@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLv
 import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactUnipFlag
 open scoped TensorProduct NNReal ENNReal Matrix

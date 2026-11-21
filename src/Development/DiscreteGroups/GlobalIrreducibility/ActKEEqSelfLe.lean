@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NeZeroOfMemRoots
 import Development.DiscreteGroups.GlobalIrreducibility.LocTypeOfSerParamLe
 open Polynomial GlobalTheory.GLq GlobalTheory.GLp GlobalTheory.SerSys

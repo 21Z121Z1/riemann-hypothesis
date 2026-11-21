@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbittAlg
 import Lemmata.ScalarExtension.Scal
 import Mathlib.Algebra.Module.StablyFree.Basic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryDensity.EvalBindTorusSubst
 import Formalism.PeriodIntegrals.UnitaryDense
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryDensity.GramStep

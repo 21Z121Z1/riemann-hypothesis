@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.PrvFOfFamilyTheoremTiesEventualIncidenceTransport
 import Formalism.SharpRestriction.GlobalSchurBounds.WeightVectorSmallSharesSeven
 import Formalism.LocalToGlobal.GlobalTheory.PlacesP

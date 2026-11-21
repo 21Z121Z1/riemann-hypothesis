@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LagrangianCombinedIsotropic
 open ValuativeRel
 open scoped Matrix Topology

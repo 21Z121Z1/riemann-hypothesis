@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.RowLatticeFiniteFree
 import Formalism.AdmissibleDesigns.UnramifiedInputOfAdmitted
 

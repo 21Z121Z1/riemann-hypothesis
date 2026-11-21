@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRk
 import Mathlib.Topology.UniformSpace.Uniformizable
 open scoped Matrix

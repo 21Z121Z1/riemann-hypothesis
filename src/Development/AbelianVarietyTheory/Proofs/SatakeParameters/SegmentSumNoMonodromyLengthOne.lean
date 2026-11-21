@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NoMonodromyOfMemWeilDeligneListSum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.NotMono0LpCharLpSp
 import Development.AutomorphicArithmetic.Foundations.LocalLanglands.IsRecTOfIsRec

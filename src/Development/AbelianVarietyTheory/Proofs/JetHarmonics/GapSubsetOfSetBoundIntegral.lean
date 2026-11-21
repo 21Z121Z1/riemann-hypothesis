@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.UnipotentStabiliserCharacterisation
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.DSFdeg
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.DegreeProportionalWords

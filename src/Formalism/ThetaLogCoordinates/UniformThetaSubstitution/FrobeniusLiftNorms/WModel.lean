@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementW
 import Formalism.FormalGroupWitt.FormalGroupWittProofs.WittTeichmullerRoot
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.ThmSUniform

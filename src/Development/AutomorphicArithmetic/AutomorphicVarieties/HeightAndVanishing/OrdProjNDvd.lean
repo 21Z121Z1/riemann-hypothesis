@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.HostComp
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.PartOrd
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.CompCond

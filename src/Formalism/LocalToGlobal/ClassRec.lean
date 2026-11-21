@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ClassSLinks
 import Formalism.LocalToGlobal.HilbertRowConditions.RowPinMin
 import Formalism.LocalToGlobal.RatioJoints.CharacterProductEqOne

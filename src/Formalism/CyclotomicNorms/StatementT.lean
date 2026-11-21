@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CyclotomicNorms.StatementI
 import Mathlib.RingTheory.SimpleRing.Principal
 

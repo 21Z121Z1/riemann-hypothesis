@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.ShareSt
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.Analysis.Matrix.Order

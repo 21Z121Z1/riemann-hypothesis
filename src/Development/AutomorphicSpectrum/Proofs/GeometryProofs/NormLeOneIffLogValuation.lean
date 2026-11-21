@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.VAtVNeBot
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsEigFrameOfFrPt
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsConstMul

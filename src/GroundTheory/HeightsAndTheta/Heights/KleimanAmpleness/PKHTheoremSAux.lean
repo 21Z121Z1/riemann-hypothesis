@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.CechHcSubsingletonOfBij
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGradedSubquot
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PGenSESStep

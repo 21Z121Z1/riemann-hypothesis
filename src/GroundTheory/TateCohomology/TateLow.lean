@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.ModuleHomologyData
 import Mathlib.RepresentationTheory.Coinduced
 import Mathlib.RepresentationTheory.Homological.TateCohomology.Basic

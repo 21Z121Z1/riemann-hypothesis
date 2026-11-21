@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ApxGap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MbarSectionsCuspidal
 open NumberField IsDedekindDomain Filter Topology

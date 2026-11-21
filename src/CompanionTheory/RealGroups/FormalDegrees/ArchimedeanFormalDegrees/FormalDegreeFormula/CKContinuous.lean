@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.HlamStable
 import CompanionTheory.RealGroups.FormalDegrees.ArchimedeanFormalDegrees.MomB
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.KSchur

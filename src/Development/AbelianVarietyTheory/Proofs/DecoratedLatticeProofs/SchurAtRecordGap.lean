@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ElementarySizeBoundsOfSizeHypothesesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SchurAlongFamily
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HypOfUniqGap

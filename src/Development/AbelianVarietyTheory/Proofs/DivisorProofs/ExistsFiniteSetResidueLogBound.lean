@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.DegFrame
 
 open NumberField IsDedekindDomain GlobalTheory.ShFam.Pad

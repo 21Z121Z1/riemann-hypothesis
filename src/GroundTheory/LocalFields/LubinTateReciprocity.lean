@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.LubinTateReciprocity.Descent
 import GroundTheory.LocalFields.LocalAxiom
 import GroundTheory.LocalFields.AbstractLocalReciprocity.ReciprocityMap

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.InterpStatementPfK
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.NormLeOfDet
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.HolomorphicBoundOfWeightedL2Statement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.TuSizeOfRealPlaceSecondLayer
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HermRepUnram
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice

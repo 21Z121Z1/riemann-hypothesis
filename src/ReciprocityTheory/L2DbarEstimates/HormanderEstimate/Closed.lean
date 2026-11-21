@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.HormanderEstimate.ClosedCoreOfRegM
 import ReciprocityTheory.L2DbarEstimates.HormanderEstimate.ClosedEval
 import ReciprocityTheory.L2DbarEstimates.LeviForms.HoloClosedNeed

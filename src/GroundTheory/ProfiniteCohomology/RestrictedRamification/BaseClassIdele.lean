@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseClass
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.ClassFieldGSPresentation
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.SPicFinite

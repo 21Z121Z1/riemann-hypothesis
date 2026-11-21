@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HalfFlag
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeChartMinorValuationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeChartNormComparisonStatement

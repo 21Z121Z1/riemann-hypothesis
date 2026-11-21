@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.Statements
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Std.Tactic.BVDecide.Normalize.Prop

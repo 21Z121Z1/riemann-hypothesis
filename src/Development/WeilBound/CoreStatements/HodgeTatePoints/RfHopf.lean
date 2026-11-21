@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsCounitEqOneMulEqZeroOfIsNilpotent
 import Mathlib.Algebra.Module.StablyFree.Basic
 import ReciprocityTheory.DualLattices.TensorSpan

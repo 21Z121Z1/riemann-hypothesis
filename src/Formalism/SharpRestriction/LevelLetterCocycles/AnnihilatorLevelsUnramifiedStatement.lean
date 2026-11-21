@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.AnnihilatorLevelsOfGrading
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelClauseOfOpenTool
 import Mathlib.NumberTheory.Padics.MahlerBasis

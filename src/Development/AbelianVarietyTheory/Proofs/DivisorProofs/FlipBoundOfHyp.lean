@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaceSzNonneg
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteCoefficientBound
 import Development.AutomorphicArithmetic.LocalEmbeddings.ArchFlip

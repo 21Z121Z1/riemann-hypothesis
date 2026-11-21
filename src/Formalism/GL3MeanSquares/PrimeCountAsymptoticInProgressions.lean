@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.SmoothedRemainderRealIntegralFormula
 
 open Finset Filter Topology ArithmeticFunction

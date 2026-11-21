@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLevelStructureHopfStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureDivisibilityMapStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureDivisibilityCompatStatement

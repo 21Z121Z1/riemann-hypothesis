@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.RankOneTori.MatGroupOf
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CellConv
 open MeasureTheory Matrix

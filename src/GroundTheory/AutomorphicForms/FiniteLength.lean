@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.FiniteLengthCuspidal
 import GroundTheory.AutomorphicForms.FiniteLengthLeviJacquet
 import GroundTheory.AutomorphicForms.FiniteLengthSeries

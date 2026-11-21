@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.ProdIccOneEqProdRange
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.TypicalPathOrdersSmall
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.WindowSmall

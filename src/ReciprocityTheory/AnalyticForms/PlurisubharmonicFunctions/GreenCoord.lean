@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LeviOneEqLaplacianThm
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.LogInt
 import Mathlib.Algebra.Order.Star.Real

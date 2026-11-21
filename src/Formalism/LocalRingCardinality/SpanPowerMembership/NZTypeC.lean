@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZTypeB
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZTypeA
 import Mathlib.RingTheory.Artinian.Instances

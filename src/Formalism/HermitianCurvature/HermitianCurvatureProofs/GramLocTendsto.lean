@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementKB
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Analysis.Fourier.Inversion

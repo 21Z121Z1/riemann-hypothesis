@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalModelTrivializingBlowupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkFlagPairIndependentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormalCommonRefinementModelsStatement

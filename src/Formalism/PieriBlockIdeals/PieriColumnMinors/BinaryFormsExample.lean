@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.LemmaDSkeletonUnit
 import Formalism.PieriBlockIdeals.PieriColumnMinors.Symmetrization
 import Formalism.PieriBlockIdeals.PieriColumnMinors.DividedPowerZeroZeroVector

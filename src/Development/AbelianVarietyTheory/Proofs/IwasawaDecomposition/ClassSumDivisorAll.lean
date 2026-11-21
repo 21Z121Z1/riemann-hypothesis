@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ClassSumDivisibilityBundleStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExponentReadingBundleStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.HasExpOfLayer

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockDeltaBasePolynomialStatement
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FockActionBasePolynomialStatement
 open NumberField Matrix Complex IsDedekindDomain

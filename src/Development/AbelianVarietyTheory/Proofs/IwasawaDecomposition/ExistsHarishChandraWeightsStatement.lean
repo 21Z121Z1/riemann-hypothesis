@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsHarishChandraWeights
 open Formalism.BasicNotions NumberField IsDedekindDomain GlobalTheory.Mem
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UJClassMass
 
 open NumberField Formalism.HermitianLatticesTheory Formalism.ThetaLiftIndependence

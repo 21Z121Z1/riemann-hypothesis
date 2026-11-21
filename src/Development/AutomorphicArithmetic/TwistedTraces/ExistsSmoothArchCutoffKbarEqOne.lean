@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.L2LocalComponents.ArchBump
 import Development.WeilBound.RepresentationTheoryGL.TwistedFactors.CuspDecayHeights.HeightLe
 import GroundTheory.AutomorphicForms.CuspidalDiscreteness.SummandsMeasure

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HermitianSpaces
 import Mathlib.Algebra.QuadraticAlgebra.Basic
 import Mathlib.Data.Rat.Star

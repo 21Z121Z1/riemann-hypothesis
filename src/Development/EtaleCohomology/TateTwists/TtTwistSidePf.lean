@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleTensorTwistedResolutionOfExistenceBoundAndS
 import Development.EtaleCohomology.TateTwists.EtaleTensorHomDescendsAlongTensorPairing
 

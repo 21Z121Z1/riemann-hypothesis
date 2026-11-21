@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.CastGLApply
 import Formalism.LocalToGlobal.HermitianColumns.CompletionIntegersIff
 

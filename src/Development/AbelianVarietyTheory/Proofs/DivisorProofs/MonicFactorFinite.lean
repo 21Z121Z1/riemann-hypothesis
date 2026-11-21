@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BlockMatrixMulVecBasis
 import Mathlib.RingTheory.Polynomial.IsIntegral
 open scoped TensorProduct NNReal Matrix

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ToLocEqMapToMatrix
 
 open NumberField IsDedekindDomain Matrix Formalism.L2.Col GlobalTheory.SymBridge

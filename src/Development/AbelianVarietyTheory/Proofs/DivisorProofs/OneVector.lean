@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeatKernelFundamentalDomainPullStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeatKernelTraceIntegrableStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StrPullOperatorEqStatement

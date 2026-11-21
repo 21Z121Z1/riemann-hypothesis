@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.XcNotMemOfIsRelevant
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsTerFurther
 import GroundTheory.HeightsAndTheta.Heights.Intersections.TwoMemFunFieldSpecZ

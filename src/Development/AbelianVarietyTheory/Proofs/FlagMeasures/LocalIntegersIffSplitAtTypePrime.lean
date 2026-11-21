@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.SelfDualAt
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.SplitIntLoc
 import Formalism.LocalToGlobal.HermitianForms.PsiZeroNontrivialCharacter

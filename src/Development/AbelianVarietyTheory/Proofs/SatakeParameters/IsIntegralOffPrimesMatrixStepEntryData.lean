@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntegralAwayFromMovedLocalDatumStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.UnipotentLevelNilpotent
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.IntOfHomAt

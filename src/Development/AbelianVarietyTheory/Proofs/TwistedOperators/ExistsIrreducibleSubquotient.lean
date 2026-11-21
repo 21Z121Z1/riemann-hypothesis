@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.InductionContragredient
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LowerEquivUpperSwap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ParIndJacPlacing

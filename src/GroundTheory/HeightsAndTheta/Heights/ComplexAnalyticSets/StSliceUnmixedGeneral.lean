@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceObjects
 import Mathlib.RingTheory.Ideal.AssociatedPrime.Basic

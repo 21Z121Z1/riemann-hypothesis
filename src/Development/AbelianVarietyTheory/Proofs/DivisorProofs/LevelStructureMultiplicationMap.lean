@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LevelStructureLocalPointsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SemiabelianLocalPointDivisibleStatement
 set_option autoImplicit false

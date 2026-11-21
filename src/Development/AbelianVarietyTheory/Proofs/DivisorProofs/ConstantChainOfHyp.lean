@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsHomogeneousAevalOfWeighted
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernModelRootConsistent
 

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.MapRingEquivTransApply
 import Formalism.LocalToGlobal.ProjectiveLattices.LevelPb
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsProperToroidalModelStructureMap

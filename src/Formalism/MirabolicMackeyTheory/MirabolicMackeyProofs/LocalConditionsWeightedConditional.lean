@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MirabolicMackeyTheory.StatementLoc
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.GlobalBoundRefinements
 

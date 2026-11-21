@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StNormalMaximumPrinciple
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLocalTrace
 import Mathlib.Algebra.Order.Star.Real

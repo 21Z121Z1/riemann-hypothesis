@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.AxHLAM
 import Development.AbelianVarietyTheory.BlockTheory.HeightDefect.FrameNormRestrictedDensity
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ConjCmHostRootNeSelf

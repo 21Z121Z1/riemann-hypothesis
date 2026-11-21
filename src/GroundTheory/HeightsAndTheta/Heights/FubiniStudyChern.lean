@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyMetric
 import Mathlib.LinearAlgebra.Matrix.PosDef
 set_option maxSynthPendingDepth 1

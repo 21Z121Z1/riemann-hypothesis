@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.LocalLimits.IsScalarTowerFiniteSubfieldAlgebraicClosure
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BaseChangeDefs
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.SUnits

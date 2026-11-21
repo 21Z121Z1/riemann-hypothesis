@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PluriharmonicIsRealPartHolomorphicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SimplyConnectedCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMetricTranslationInvariantStatement

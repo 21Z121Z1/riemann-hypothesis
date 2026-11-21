@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJGlobalDefs
 import GroundTheory.GlobalFields.TateThesis.GlobalZetaFinite
 import GroundTheory.AutomorphicForms.GL2.GJMatrixSchwartz

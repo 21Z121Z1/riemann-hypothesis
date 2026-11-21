@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.ExistsPeriodMatrix
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.ExistsContraction
 

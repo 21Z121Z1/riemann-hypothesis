@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.TransvectionIdentitiesUnitary
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.DetNormOneGen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.UnitaryConjugation

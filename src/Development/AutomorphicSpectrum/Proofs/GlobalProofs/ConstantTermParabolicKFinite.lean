@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.RationalUnipotentLeParabolic
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConstAlongCocompactUniqueStages
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsBoundUnitary

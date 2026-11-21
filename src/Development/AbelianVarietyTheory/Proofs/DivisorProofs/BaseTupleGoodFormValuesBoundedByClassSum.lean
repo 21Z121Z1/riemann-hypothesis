@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.FrameSignSimple
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FiniteInfinitePsiBounds
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoefAtOfPosDef

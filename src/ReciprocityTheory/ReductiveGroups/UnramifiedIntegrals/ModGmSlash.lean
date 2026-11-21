@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModPerm
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModFacSlash
 import Mathlib.Topology.Sheaves.Presheaf

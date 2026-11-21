@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DvdPowZeroIff
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.SimpleRing.Principal

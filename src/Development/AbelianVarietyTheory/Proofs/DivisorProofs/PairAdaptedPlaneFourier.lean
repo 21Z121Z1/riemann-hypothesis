@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdelicThetaSumNormLePolynomialScaleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlanePairRestrictionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlanePairInductionStatement

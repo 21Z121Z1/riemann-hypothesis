@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.RightInvariantOfCovolume
 import Mathlib.Topology.Compactness.Paracompact
 import Mathlib.Topology.Sheaves.Presheaf

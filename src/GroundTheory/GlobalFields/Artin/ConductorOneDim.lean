@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.ConductorInflation
 import GroundTheory.GlobalFields.Artin.OneDim
 

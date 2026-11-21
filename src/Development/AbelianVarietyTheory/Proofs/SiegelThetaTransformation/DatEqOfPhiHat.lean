@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.DatEqZero
 import Formalism.LocalToGlobal.ProjectiveLattices.ThClass
 

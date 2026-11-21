@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.PolynomialLevels.LowestWeightNonposOffSet
 import Formalism.SharpRestriction.GrowthBounds.PolynomialLevels.LevNMonomial
 import Formalism.SharpRestriction.GrowthBounds.PolynomialLevels.MemSpanList

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient
 import ReciprocityTheory.GroupCohomology.ContinuousContractNth
 

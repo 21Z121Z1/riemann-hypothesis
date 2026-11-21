@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.NatCardAlgHomEqFinrankOfIsReducedOfIsFractionRin
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.LinearAlgebra.Charpoly.ToMatrix

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubWeilOneLeft
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.CubNRatioTwist
 import Development.AbelianVarietyTheory.Definitions.Uniformization.IsCPPullback

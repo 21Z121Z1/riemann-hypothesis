@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.FrameEstimates.DomWeil
 import Development.WeilBound.ThetaLifts.FrameEstimates.SoSemi
 import Development.WeilBound.ThetaLifts.FrameEstimates.IContOf

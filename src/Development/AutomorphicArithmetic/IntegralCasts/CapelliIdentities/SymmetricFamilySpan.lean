@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.RestBlockForm
 
 private theorem UpperTheory.Reformulated.B.SymmetricFamilySpan.prod_span_mem {R A ι : Type*} [CommSemiring R] [CommSemiring A] [Algebra R A]

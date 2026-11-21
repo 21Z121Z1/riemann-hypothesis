@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WindowSums.Statement
 import Mathlib.NumberTheory.Multiplicity
 import Mathlib.Order.CompletePartialOrder

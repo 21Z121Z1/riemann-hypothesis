@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.PointRingCommRing
 import Development.AbelianVarietyTheory.BlockTheory.NonGaloisCusps.LocalRingStructure
 

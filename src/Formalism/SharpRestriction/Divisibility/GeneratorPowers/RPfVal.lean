@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.RStatement
 import Formalism.LocalToGlobal.ProjectiveLattices.CrudeVal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.HasBaseDegreeSettingStrict
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PStokesLimit
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PStokesTelescope

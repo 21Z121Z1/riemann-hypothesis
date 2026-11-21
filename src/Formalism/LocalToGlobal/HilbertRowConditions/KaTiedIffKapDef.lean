@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HilbertRowConditions.IsHilbertCF
 import Formalism.LocalRingCardinality.DataKap
 import Formalism.LocalToGlobal.Divisibility.LiftLat

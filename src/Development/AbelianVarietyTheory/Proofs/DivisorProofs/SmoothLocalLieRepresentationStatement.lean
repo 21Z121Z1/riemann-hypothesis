@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothLocalLieRepresentation
 open Matrix GlobalTheory.TorFin
 open scoped ContDiff

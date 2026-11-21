@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.UnitaryHyperplaneVolumeRatioSiegelWeilStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.RanksFramesClosedStatement
 open Formalism.BasicNotions Formalism.MainNotions

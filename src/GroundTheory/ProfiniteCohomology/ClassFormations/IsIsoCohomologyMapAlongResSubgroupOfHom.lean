@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.ClassFormationDefs
 import Mathlib.Tactic.ENatToNat
 set_option maxSynthPendingDepth 1

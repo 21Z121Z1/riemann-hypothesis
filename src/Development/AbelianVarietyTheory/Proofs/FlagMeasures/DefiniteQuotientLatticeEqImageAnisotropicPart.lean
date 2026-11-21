@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HbApply
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatsDiscStable
 open scoped Classical ENNReal Pointwise

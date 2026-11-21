@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitaryGroupSecondKindCoordinatesNearOne
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.CStarAlgebra.Classes

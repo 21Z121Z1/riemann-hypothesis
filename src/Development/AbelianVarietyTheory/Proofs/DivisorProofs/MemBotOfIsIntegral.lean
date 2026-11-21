@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.PlacesOverU
 import Development.AbelianVarietyTheory.PublishedTheorems.AdelicLattices₂.ThreeNeSqAddSq
 import Mathlib.Algebra.Azumaya.Basic

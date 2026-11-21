@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.AdmissibleNewformZetaData
 import Development.AbelianVarietyTheory.Definitions.Foundations.LiftSLMapMulInvMem
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.VanishOrdOfKatoUse

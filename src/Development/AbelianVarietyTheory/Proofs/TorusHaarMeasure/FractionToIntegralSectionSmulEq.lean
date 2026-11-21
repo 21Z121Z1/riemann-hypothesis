@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.TieUpC
 import Formalism.LocalToGlobal.ProjectiveLattices.CurveSec
 import Development.AbelianVarietyTheory.Proofs.GenericRegularity.CompSplitRecord

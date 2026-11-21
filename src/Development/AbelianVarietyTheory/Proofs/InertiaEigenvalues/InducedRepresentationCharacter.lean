@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology₂.BrauerDegreeZero
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.RealInducedCharacters.Induced
 open GlobalTheory.Published

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwpdivHopf
 import Development.WeilBound.CoreStatements.HodgeTatePoints.TwpdivTate
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.PairingExtends

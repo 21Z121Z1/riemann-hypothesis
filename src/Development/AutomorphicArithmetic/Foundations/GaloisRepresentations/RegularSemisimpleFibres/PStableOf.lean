@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RegularSemisimpleFibres.ResEmbCompat
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.WeakStableAlt
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.CoreDesc

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CardRootsClosedBallBoundsUltrametricStatement
 import Mathlib.Analysis.Normed.Field.Instances
 import Mathlib.NumberTheory.Padics.Complex

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsPowSubMemSpanOfIsUnitModOfIsAlgClosed
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNonvanishingDense
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PRatPrimeDense

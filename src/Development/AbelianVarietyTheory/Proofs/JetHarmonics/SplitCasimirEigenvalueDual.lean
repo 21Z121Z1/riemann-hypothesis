@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.LastComatrixRowInvertsDual
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorDualStandardRel
 import Mathlib.RingTheory.SimpleRing.Principal

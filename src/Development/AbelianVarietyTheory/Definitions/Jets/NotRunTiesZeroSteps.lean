@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Jets.CmQuadraticFormEqAlternatingForm
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GaugeUniqC
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.DepthCond

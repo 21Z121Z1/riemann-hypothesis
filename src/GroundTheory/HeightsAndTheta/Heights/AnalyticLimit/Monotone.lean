@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.Assembly
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PPolyMaxLowerBound
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PTruncPsh

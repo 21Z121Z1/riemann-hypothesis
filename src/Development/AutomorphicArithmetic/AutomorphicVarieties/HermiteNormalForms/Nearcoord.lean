@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.DetPull
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Cramer
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HermiteNormalForms.Scinv

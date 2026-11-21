@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.JacobianInterpolationStatement
 import ReciprocityTheory.SemistableReduction.BWPolyB
 import ReciprocityTheory.SemistableReduction.BWPolyC

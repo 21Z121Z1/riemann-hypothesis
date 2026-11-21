@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnitaryQuotientCompactness.SsetGroup
 import Mathlib.MeasureTheory.Group.ModularCharacter
 import Mathlib.RingTheory.WittVector.IsPoly

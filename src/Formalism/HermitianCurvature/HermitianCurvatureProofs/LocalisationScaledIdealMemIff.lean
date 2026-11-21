@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.PrimeToDifferent
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DualIdealInclusion
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FirstEmbeddingOne

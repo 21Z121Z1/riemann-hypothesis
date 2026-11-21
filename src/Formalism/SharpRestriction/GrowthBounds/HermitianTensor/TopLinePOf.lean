@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.DPsiMonomialIwh
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.QaNuNextAdd
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.MemInvariantSectionsIffIntegral

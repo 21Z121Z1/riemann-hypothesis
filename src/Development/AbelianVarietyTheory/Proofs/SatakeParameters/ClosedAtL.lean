@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.EllipticCurveLevels.ClosedAtLConclusionOfMem
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ClosedOfCover
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CoverExists

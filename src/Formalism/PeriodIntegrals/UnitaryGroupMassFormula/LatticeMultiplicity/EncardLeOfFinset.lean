@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.LatCountG
 import Mathlib.Analysis.Normed.Algebra.MatrixExponential
 

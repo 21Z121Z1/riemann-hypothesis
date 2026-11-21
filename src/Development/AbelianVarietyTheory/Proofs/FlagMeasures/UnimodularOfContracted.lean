@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.HermitianFormUnitaryOneOne
 import Mathlib.MeasureTheory.Group.ModularCharacter
 import Mathlib.Topology.Separation.CompletelyRegular

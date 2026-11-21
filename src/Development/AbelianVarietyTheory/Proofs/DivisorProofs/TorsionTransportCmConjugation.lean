@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsAppellHumbertUniformization
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmPointHodgePeriodFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionTransportCmPeriodStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.Artin.MemInvariantsCompSubtypeIff
 import GroundTheory.GlobalFields.TateThesis.ChebotarevAbelian
 import GroundTheory.LocalFields.ArtinConductorBrauer

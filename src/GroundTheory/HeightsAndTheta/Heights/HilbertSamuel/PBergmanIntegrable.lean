@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBergmanIntegrable
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.BergmanSectionPairing
 import Mathlib.Algebra.Ring.IsFormallyReal

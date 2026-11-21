@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MahlerMeasure.LevelSum
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.Order.CompletePartialOrder

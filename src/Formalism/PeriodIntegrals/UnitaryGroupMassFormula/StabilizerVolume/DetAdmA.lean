@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerVolume.TopoAF
 import Mathlib.SetTheory.ZFC.PSet
 import ReciprocityTheory.GeneralLinearIntegers.AlgebraMapIntMemOint

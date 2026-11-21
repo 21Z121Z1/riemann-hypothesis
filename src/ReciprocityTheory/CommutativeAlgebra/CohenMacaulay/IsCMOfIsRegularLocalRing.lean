@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.RegGens
 import ReciprocityTheory.CommutativeAlgebra.ChainConnInDim
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.PowMemCarrier
 import ReciprocityTheory.DualLattices.HasLenCokerDet
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight

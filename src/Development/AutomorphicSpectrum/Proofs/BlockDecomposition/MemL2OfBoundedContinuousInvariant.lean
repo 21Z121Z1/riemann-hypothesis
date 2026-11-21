@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.AffineGLForms.CuspInvariantsFinite.CuspInvFin
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CuspidalConvolutionCompact
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteDimensionalKerSubId

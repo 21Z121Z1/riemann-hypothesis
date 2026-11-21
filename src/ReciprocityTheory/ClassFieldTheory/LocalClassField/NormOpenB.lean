@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.Normed.Algebra.Basic
 import Mathlib.Data.Int.Star

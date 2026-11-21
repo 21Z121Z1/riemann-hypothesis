@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ProdNeg
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ValueAtUnitSection
 import Development.AbelianVarietyTheory.Definitions.Uniformization.TXFrame

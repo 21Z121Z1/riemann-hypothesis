@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PsiGeOn
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.PerIntOnAmb
 import Formalism.LocalRingCardinality.DataErr

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.UnipotentAdelicQuotients.CuspidalCharExists
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LabelDatum
 import Mathlib.FieldTheory.Finite.Extension

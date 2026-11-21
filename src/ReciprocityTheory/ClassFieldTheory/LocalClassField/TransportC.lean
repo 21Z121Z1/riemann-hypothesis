@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportA
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.TransportB
 import ReciprocityTheory.ClassFieldTheory.LocalClassField.RecArtin

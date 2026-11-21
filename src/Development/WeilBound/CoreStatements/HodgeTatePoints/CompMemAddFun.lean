@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.PrimeHopfOrderOfAddEquiv
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.IsTight
 import Mathlib.RingTheory.SimpleRing.Principal

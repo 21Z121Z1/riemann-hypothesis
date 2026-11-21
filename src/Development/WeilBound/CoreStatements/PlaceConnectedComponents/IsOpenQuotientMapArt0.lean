@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.GlobalArtinMap.Kernel
 import GroundTheory.GlobalFields.ClassFieldConsequences.RayClassFieldLocal
 import Development.WeilBound.CoreStatements.PlaceConnectedComponents.ArtinA

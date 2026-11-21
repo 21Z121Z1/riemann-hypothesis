@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedGenericExtensionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegrallyClosedPointLevelExtendsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointLatticeEvaluationStatement

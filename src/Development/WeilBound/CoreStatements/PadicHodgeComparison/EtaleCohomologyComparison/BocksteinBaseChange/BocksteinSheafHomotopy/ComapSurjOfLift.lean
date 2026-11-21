@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass
 import Mathlib.CategoryTheory.ExtremalEpi
 import Mathlib.RingTheory.Etale.StandardEtale

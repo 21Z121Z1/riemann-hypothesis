@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MbIsModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InducedModelDominantCurveRestrictionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NefInducedBundleRestrictionToCurvesStatement

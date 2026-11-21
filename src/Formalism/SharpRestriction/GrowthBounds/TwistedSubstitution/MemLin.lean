@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ValuationBoundDetPowerFactor
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.DerivativeValuationBounds
 import Formalism.SharpRestriction.GrowthBounds.TwistedSubstitution.PlaneCoeff

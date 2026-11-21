@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimE
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LevelFormsJointContinuity
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralBoundOfParts

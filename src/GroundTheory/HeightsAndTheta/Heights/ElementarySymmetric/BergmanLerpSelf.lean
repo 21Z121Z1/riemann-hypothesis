@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ImportsBis
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PLocalBergmanBound
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PUniformBergmanBound

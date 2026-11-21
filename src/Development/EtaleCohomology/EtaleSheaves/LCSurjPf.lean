@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LCBijPf
 import Development.EtaleCohomology.EtaleSheaves.LSecGluePf
 import Development.AbelianVarietyTheory.Definitions.Divisors.SecClass

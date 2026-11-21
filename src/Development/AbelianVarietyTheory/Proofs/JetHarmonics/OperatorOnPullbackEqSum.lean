@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.StalkMapInjectiveOfFlat
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormalisation
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsShiftedNormalisation

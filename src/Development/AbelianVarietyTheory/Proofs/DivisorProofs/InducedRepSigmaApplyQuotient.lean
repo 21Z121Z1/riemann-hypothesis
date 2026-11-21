@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemRelParabColEq
 open GlobalTheory.PRep GlobalTheory.SmGL Matrix GlobalTheory.CellDetFirst
 open scoped TensorProduct

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.EntireEqOfHalfPlane
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.NumberTheory.EulerProduct.DirichletLSeries

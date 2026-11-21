@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EmbOverSumInjective
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanRangeEmbeddingEqTop
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsCyclotomicExtensionQI

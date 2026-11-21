@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJDHatOpA
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliWordSumExpansion
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HomogeneityNaturalDegree

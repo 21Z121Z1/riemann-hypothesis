@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.StatementE
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.RingTheory.WittVector.IsPoly

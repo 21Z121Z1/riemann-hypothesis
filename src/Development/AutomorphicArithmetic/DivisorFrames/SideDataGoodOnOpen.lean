@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.CramerMatrixBlockTriangularFactor
 import Development.AutomorphicArithmetic.DivisorFrames.ColMinorMulTriangular
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodReductionExtendsRegularStatement

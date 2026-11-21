@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LogFactorialIndices.StatementIdx
 import Lemmata.DiscreteValuationQuotients.LenQuotSpan
 import Lemmata.GeneralBFactSecondExtra.Key

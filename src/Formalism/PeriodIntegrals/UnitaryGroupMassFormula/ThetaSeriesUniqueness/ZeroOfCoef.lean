@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ThetaSeriesUniqueness.Complete
 import Formalism.PeriodIntegrals.AreaLat
 import Formalism.PeriodIntegrals.SigmaStarUniq

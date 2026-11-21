@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CmIdempotentAddStarEqOne
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsRationalPair
 open AlgebraicGeometry CategoryTheory Limits NumberField IsLocalRing TopologicalSpace

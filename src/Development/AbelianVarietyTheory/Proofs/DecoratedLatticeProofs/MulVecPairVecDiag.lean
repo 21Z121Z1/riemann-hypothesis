@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.MemSiegelOfIffRightAct
 import Formalism.LocalToGlobal.BesselHermitianTheta.IsAutFunDef
 open scoped ComplexConjugate Matrix NNReal

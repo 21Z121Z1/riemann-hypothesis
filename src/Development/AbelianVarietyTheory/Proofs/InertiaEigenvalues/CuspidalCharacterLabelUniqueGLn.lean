@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardLeCardMulCardSupport
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CardProperSubfieldElementsLt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsIrreducibleCharpolyMemRootsBar

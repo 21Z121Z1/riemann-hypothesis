@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.MkMemAdmissibleAtIffCocycle
 import Formalism.SharpRestriction.LevelLetterCocycles.TableLineDegreeTwo
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

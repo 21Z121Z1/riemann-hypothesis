@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.ContinuousTo
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MetaplecticUnipotentBlockSecondDiag
 import Development.WeilBound.ThetaLifts.Reductions.MetaplecticDerivatives.MapOfRealMul

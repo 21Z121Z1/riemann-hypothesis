@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.OrbitPlaces
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.TrDual
 import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.Statement

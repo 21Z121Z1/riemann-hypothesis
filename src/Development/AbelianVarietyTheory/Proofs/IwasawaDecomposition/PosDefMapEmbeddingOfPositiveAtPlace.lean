@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HilbertRowConditions.CenterIdempotentAction
 import Formalism.LocalRingCardinality.Lemmas
 open NumberField Formalism.L2.DIV Formalism.L2.Rows GlobalTheory.AmbCrd

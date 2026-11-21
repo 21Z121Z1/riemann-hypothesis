@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.CupCochains
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.Functoriality
 import Mathlib.Tactic.ENatToNat

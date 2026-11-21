@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.NormalWeightCovectorZero
 import Formalism.SharpRestriction.GrowthBounds.WittFrameLocaliserOrders
 

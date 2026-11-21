@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SpecializesGenericImage
 import Formalism.LocalToGlobal.ProjectiveLattices.KapTrdegPf
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsMonoFamNontrivial

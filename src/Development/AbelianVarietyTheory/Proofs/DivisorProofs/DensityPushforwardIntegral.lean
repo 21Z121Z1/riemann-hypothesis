@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MeasureLeOfLocalLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DensityNullOffChartsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreDensityNullOffChartsStatement

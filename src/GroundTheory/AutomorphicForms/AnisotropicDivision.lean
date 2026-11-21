@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.AnisotropicRestrict
 import GroundTheory.AutomorphicForms.AnisotropicHeight
 import GroundTheory.AutomorphicForms.AnisotropicOrbit

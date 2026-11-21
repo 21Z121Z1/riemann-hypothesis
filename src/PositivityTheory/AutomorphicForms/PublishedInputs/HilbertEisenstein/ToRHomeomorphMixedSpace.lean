@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.HilbertEisenstein.Imports
 import GroundTheory.GlobalFields.TateThesis.GaussianSchwartz
 import GroundTheory.AutomorphicForms.GL2.SummableNormIffAndTsumEqCoset2

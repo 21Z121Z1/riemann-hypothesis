@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.AllPartsTransfer
 import Lemmata.RankOneOrbitForms.RankOneForm
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

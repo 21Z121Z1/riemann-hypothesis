@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitNormGramDetPlaneReductionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLocalUnitNormVectorIsotropicHermitianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnitNormGramDetRationalApproximationStatement

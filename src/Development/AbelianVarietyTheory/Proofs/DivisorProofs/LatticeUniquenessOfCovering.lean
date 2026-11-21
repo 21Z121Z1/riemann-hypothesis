@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTransport
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChartOfMaximal
 import Development.AbelianVarietyTheory.Definitions.Divisors.ToKnownTheoremsOf

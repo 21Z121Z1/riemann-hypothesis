@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemSubPtsIffOfToBaseEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NefBigBaseChange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ComplexifyStatement

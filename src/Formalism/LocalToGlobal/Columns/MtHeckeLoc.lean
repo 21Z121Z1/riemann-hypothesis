@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.HeckeSpCount
 import Formalism.LocalToGlobal.Columns.TiedUpDnA
 import Formalism.LocalToGlobal.Columns.MtHeckeKv

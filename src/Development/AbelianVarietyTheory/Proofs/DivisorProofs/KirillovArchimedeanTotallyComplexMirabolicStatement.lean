@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.KirillovArchimedeanTotallyComplexMirabolic
 open NumberField GlobalTheory.CuspRep MeasureTheory
 open scoped FourierTransform ContDiff

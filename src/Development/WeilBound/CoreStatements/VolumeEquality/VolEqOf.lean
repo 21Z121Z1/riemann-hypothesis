@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.VolumeEquality.PiecesOf
 import Development.WeilBound.CoreStatements.VolumeEquality.BaseUnifEx2
 import Development.WeilBound.CoreStatements.VolumeEquality.SheetPiecesComponent

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StAPrimeMarginCharts
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StAPrimeLeviCharts
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StChartVelLiftCharts

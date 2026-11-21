@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lean.Elab.Command
 import Std.Do.Triple.SpecLemmas
 

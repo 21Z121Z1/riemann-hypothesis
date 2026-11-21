@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCoordCurveAlgebraic
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.CoordCurveDegree
 set_option maxSynthPendingDepth 1

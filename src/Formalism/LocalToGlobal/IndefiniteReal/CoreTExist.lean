@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CoreAt
 import Formalism.LocalToGlobal.ProjectiveLattices.CoreJExistsAt
 import Formalism.LocalToGlobal.ProjectiveLattices.SpMapAlgHomId

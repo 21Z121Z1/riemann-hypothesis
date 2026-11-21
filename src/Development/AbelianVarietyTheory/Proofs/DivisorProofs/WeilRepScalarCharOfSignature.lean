@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalVacuumEigenLatticeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumEigenAtAllPlacesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzAdelicSliceSmoothStatement

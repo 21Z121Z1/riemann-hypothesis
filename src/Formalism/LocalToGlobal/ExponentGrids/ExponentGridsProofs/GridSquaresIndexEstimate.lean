@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ExponentGrids.ExplicitSizeInequalityIndexed
 import Formalism.LocalToGlobal.ExponentGrids.ExponentGridsProofs.FrameHeightOfDualSlope
 import Formalism.TowerValuationBounds.TowerValuationProofs.ValuationRatioIndex

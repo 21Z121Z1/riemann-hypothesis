@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterRedF
 import Development.WeilBound.CoreStatements.FlagImmersions.PointsIntegralSectionSnoc
 import Development.WeilBound.CoreStatements.HodgeTatePoints.GfForms

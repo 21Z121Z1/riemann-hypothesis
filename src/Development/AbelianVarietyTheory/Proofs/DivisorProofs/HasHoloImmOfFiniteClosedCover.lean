@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedOfIsAnalyticSubset
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnalyticLogResolution
 import Mathlib.RingTheory.Etale.Weakly

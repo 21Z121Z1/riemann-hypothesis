@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.FourierMatch
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMulRightInvariantOfModular
 open GlobalTheory.JR Matrix MeasureTheory Filter Topology

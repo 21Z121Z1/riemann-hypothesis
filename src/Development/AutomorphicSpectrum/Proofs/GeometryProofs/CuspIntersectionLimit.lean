@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.ExistsPhiNormSq
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspIntersectionPositiveStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.RiemannFormLowerBoundNearCuspStatement

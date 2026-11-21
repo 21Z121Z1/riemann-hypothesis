@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RunsHoldOfTies
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeavesSupSpanData
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasIndexBoundOfRuns

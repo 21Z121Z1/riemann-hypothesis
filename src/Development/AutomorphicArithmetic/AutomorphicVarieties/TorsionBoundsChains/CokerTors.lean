@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.MaxIndep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.FullEnum
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.IndexLe

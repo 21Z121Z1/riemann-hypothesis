@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.BaseEmbeddingInclusion
 import Formalism.LocalToGlobal.ProjectiveLattices.KsCore
 import Formalism.LocalToGlobal.IndefiniteReal.ScalarOnPartsFull

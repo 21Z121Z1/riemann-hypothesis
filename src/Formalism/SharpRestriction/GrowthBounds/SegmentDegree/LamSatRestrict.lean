@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.RestLamOfRests
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.SelIsComplRestrictSupport
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.FiniteRestrictSupport

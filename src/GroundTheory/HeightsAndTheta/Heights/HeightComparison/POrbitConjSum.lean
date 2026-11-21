@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.POrbitConjSumLemmas
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitConjSum
 set_option maxSynthPendingDepth 1

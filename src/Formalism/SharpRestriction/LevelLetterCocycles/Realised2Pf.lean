@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfAssemble
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfArcChoices
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelKernelDetection.PfTeichOnto

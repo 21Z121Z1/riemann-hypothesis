@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.CycStatement
 import ReciprocityTheory.Chebotarev.CrossGal
 import ReciprocityTheory.Chebotarev.CrossLift

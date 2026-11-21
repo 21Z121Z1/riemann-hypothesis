@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CombinatorialTangentPointCondition
 
 open CategoryTheory Limits AlgebraicGeometry NumberField IsDedekindDomain

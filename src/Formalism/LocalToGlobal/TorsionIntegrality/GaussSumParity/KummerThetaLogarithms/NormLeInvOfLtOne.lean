@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussSumParity.StatementC
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.FinalS
 import Mathlib.Topology.MetricSpace.Ultra.TotallySeparated

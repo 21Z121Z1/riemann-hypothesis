@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.ImportsMore
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.PIsotropicRank
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.Statements
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Extension
 set_option maxSynthPendingDepth 1

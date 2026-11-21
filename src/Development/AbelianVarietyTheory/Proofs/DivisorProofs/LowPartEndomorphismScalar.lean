@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowPartInvariantSubmoduleDenseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LowPartPreservedByEquivariantStatement
 open scoped TensorProduct NNReal Matrix

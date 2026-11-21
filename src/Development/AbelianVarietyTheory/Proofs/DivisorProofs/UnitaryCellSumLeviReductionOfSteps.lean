@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntiJMulApply
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem
 open Formalism.UG GlobalTheory.SatakeWeyl

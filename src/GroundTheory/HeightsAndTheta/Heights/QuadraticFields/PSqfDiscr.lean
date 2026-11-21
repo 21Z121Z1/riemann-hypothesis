@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.QuadraticFields.SqfDiscr
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.MirabolicInduction.EqOneOrNegOneOfMemTorsion
 set_option maxSynthPendingDepth 1

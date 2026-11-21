@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CommutativeAlgebra.EtaleCohomology.SplitRules
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant

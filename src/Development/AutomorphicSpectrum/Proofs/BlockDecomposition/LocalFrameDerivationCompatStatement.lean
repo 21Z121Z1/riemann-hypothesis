@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalFrameDerivationCompat
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false

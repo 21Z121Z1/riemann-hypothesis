@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.IdScal
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.IdUnit
 import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.IdRoot

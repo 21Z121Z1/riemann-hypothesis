@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.LatSemiSt
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.WittVector.IsPoly

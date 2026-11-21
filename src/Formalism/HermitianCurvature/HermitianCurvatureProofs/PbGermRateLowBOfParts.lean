@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PtSizePtG
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PtSizeToStd
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormSumLeOfForm

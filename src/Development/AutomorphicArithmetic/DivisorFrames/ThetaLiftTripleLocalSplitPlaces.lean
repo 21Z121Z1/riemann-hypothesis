@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.ExistsIsSBHalfThetaOfSelfDualLattices
 import Development.AutomorphicArithmetic.DivisorFrames.IdempotentSumFixesIffHalfEl
 import Development.AutomorphicArithmetic.DivisorFrames.StdSectionFirstEqProdLocal

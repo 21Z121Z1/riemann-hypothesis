@@ -1,4 +1,4 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEuclideanSections
 import Mathlib.Analysis.InnerProductSpace.GramMatrix
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.DerivB
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.UnipotentCost.DerivA
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.SlopesFromSizeAndCount
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.ChainLatticeSizesModelEventually
 

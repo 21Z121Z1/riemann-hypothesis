@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLowerBaseOfTraitAbelianPartStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRootsOfPeriods
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DimAddRank

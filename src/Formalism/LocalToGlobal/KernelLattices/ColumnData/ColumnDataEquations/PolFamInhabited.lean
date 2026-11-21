@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.SqFinal
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.MuFinal
 

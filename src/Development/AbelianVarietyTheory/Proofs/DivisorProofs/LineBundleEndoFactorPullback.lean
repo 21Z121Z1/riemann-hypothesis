@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizedAbelianIsogenyExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsogenyTorsionGeneratorPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionGeneratorCharTrivialStatement

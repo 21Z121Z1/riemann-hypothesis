@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPositiveHermitianFormDomainStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KaehlerPotentialComparisonDomainStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HodgeMetricsSmoothStatement

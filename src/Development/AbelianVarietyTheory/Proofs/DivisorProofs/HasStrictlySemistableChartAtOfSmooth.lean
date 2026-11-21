@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsStrictlySemistableIff
 import Mathlib.AlgebraicGeometry.Morphisms.Smooth
 import Mathlib.Order.CompletePartialOrder

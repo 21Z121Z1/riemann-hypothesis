@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.UnitsPower
 import GroundTheory.LocalFields.UnitsGalois
 import GroundTheory.ProfiniteCohomology.LocalEulerCharacteristic.AdditiveSnake

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.RegModelC
 import Development.AbelianVarietyTheory.Definitions.RegularCharts.SCharts
 import Formalism.LocalToGlobal.ProjectiveLattices.RegQFree

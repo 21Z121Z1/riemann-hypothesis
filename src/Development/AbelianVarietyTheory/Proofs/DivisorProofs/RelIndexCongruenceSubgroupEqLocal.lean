@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalHomMapsCongruenceSubgroupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalCongruenceHomSurjectiveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemNextCongruenceOfLocalStatement

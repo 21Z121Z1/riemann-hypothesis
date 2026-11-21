@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.Objects
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Statements
 import Mathlib.Algebra.Ring.IsFormallyReal

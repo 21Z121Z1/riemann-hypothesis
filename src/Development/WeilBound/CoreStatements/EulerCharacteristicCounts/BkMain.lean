@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TateH2OfFiniteDuality
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.ActQIsLocallyConstant
 import Development.AutomorphicSpectrum.Proofs.NonGaloisProofs.ExistsTorRange

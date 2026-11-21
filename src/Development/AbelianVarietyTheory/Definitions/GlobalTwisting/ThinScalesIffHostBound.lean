@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.DisjointExceptional
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic

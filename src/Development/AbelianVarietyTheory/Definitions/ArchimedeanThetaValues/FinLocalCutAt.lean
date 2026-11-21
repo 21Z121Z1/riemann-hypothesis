@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ArchimedeanThetaValues.IsFramedPointChangedByLetters
 import Formalism.LocalToGlobal.ProjectiveLattices.PtFree
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.Rationality.QuotSt

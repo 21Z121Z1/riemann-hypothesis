@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.BranchMap
 import Development.AbelianVarietyTheory.Definitions.Foundations.TracePowApply
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ZetaPhiBranchOperator

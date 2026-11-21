@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.Statement
 import ReciprocityTheory.Automorphisms.SplitCoeAlgebraMap
 import Formalism.ConjugateSelfDual.StatementRest

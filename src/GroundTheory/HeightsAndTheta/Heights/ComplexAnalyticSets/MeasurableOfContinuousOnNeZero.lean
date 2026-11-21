@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.Assembly
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PAffineChartTrdeg
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartDehomog

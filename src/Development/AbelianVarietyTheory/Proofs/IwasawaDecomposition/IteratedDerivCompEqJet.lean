@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetricSmoothBiholomorphicTransferStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JetSmoothOfInvertibleMetricStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MetricJetTransferBiholomorphicStatement

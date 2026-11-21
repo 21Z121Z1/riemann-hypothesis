@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.StatementL
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap

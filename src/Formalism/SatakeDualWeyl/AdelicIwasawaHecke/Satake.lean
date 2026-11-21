@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeMat
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeRes
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem

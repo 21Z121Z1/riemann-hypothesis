@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.LocalBridge
 import GroundTheory.LocalFields.Unramified
 import GroundTheory.LocalFields.PrincipalUnitsRank

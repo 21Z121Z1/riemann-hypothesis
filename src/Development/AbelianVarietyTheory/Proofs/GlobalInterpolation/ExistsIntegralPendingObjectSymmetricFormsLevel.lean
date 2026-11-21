@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HilbertRowConditions.RowPin
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.NfAllSmulReB
 import Formalism.LocalToGlobal.GlobalTheory.BlockActions.MulLatMulLat

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.HasLenCokerDet
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Over

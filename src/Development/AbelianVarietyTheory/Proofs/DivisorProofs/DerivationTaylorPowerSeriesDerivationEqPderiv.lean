@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntDerApply
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

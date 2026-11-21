@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.IsOpenHoloPreimage
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.RSnc
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.REnlarge

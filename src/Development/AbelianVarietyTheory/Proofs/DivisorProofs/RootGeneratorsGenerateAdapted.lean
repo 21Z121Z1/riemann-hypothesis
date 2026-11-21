@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagRootDivisorRelation
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GradedGramDualReverseStatement
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.HodgeFrameGram

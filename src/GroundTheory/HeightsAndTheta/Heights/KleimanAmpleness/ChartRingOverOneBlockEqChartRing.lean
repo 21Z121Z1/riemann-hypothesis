@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsMoreTer
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.PTwinEqAmple
 set_option maxSynthPendingDepth 1

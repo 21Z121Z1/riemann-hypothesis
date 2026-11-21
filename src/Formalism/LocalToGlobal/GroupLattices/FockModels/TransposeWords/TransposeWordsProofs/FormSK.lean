@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.FormSK
 import Formalism.LocalToGlobal.GroupLattices.FockModels.TransposeWords.DualWeylIn
 import Mathlib.RingTheory.Henselian

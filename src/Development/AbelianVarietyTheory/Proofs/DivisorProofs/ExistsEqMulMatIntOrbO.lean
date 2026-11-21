@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MatIntIndicatorNeZero
 import Mathlib.LinearAlgebra.Matrix.Swap
 

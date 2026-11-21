@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ArtinDefs
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.ArtinCount
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.PermLattice

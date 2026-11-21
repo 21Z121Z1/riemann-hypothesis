@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.CloudFilling.WLeWjOne
 import Formalism.LocalToGlobal.GroupLattices.CloudFilling.InstRecFillG
 import Formalism.LocalRingCardinality.SpanPowerMembership.GatTies

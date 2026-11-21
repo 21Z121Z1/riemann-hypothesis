@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurveCohomology
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.CechFunctor
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.SheafHFlasque

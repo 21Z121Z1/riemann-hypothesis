@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.NewformCoefficients.CuspCritAlt
 
 open NumberField Formalism.L2.Host UpperTheory.V UpperTheory.V.Af GlobalTheory.HeckeGal.Model GlobalTheory.Mem.Chr.CharModel

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FWExist
 import Formalism.LocalToGlobal.ProjectiveLattices.CuspMulOf
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FgLatOfOfLowerBound

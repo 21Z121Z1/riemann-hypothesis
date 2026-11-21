@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThetaLocalEquivalence.ThEquivPAmbOfTiesD
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkConj
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.RkThindEq

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GrBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SplitTorusCyclotomicPoint
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectiveModuleRankGenericSpread

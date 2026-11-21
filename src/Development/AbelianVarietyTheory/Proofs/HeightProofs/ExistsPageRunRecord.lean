@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.HeightFunctions.ConclOfInputs4
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.N0LeNs
 import Development.AbelianVarietyTheory.Counterexamples.HeightSurvey.NusOffLevel

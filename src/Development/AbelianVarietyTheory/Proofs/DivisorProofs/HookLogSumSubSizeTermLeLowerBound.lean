@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.RecBridgeNum
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HookProductPosLogEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToNatFloorLe

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsComplementForm
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsVecFixGroup
 

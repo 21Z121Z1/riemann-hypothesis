@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenySeparable
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyFrobeniusSep
 import Mathlib.Algebra.Ring.IsFormallyReal

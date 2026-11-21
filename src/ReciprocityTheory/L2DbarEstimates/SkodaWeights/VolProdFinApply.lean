@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.SkodaWeights.NeedBergmanClosed
 import ReciprocityTheory.L2DbarEstimates.SkodaWeights.SkodaOps
 import ReciprocityTheory.L2DbarEstimates.SkodaWeights.NearContinuousOfSmoothR

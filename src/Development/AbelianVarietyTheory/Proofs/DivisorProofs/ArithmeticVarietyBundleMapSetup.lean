@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelBaseChangeNumberFieldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelChangeOfFieldPointsA
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelChangeOfFieldPointsBStatement

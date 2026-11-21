@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.HermitianForms.TiedBrCl
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.LowerTieChain
 

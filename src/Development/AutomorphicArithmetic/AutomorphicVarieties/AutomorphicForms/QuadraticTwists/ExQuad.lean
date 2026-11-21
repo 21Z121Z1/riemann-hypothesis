@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.SplittingFieldIsoQuadratic
 import Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.KstarRam
 import Mathlib.NumberTheory.Padics.Hensel

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.ClassNumImQ
 import Mathlib.Algebra.Polynomial.SpecificDegree
 import Mathlib.Data.Rat.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ParabolicQuotientMeasure
 open MeasureTheory Topology
 open scoped ENNReal NNReal Matrix Pointwise

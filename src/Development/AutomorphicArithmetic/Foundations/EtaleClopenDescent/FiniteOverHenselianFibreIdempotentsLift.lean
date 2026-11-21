@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.FibreIdem
 import Development.EtaleCohomology.EtaleSheaves.LZProperCut
 import Std.Tactic.BVDecide.Normalize.Prop

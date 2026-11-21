@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AmpleOfLocalAffineCover
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlueEffectiveCartier
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IsAffineOpenGUInf

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsStandardChartsFormalTowerOfVeryAmpleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThickeningTowerCechH1UniformStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThickeningTowerLiftSectionsOneLevelStatement

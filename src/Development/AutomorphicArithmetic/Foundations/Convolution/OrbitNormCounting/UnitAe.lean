@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.IntUniq
 import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.CptInt
 import Development.AutomorphicArithmetic.Foundations.Convolution.OrbitNormCounting.OrbUnit

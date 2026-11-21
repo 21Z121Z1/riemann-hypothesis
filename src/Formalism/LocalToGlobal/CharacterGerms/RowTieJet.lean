@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.MemVarsProdAll
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.MvPowerSeries.Rename

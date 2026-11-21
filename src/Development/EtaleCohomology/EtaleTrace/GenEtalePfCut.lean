@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.GenEtalePfBasic
 
 open CategoryTheory Limits AlgebraicGeometry

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ExtensionDescent.NonzeroLocus
 import Mathlib.AlgebraicGeometry.Morphisms.Etale
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected

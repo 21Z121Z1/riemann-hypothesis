@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PartsSt
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.Statements
 set_option maxSynthPendingDepth 1

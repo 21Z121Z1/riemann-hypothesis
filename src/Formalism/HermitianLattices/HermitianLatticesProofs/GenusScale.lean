@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.DefsCS
 import Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic
 import Mathlib.Data.Int.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.DegreeIntB
 import GroundTheory.HeightsAndTheta.Heights.LocalDensities.StatementsChartPartition
 import Mathlib.Geometry.Manifold.PartitionOfUnity

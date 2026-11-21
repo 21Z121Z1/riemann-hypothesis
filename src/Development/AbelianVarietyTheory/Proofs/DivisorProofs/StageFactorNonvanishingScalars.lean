@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopGridStagePolynomialExists
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SquareTowerStageFiniteFactorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMatchedFlipThetaIntegral

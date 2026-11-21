@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.GenIdeal
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.TotalDegreeLinSubstLe
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.FormHeightGen

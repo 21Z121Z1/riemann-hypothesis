@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.FirstBlockColumnCondition
 import Formalism.AdmissibleDesigns.MemIntegralSpanIffImage
 import Formalism.AdmissibleDesigns.ToH1Cocycles

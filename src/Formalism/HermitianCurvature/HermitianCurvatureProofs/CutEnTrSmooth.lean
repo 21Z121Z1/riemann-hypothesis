@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEnFibMem
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellOpenDomain
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

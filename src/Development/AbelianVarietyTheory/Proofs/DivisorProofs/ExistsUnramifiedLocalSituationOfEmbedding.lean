@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankOfMulEqOne
 import Development.AbelianVarietyTheory.Definitions.Divisors.HeightTrivialParameterEqZero
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne

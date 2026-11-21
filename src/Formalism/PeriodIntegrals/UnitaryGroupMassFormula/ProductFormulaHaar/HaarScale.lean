@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.HaarBox
 import Mathlib.MeasureTheory.Measure.Haar.DistribChar
 import Mathlib.RingTheory.Henselian

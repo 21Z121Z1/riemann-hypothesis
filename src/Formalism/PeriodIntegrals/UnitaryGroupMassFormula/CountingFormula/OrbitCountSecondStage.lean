@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.DsumCancel
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.IsIntIntCast
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.EichLApply

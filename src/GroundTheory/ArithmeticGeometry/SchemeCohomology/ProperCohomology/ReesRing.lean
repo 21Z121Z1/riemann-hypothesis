@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.ReesScheme
 import Mathlib.Tactic.Polynomial.Basic
 set_option maxSynthPendingDepth 1

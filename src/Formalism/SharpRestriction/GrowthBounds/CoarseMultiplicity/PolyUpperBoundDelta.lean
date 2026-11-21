@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.CoarseMultiplicity.CoarseMultiplicityAtIdentity
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.TopDegreeLeTwoB
 import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.CoarseDegreeAlternative

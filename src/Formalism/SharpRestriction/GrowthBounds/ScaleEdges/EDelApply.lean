@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.EvensBeforePairwise
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.SPtrueHom
 

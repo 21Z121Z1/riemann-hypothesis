@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupDecomposition
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.CupLocal
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.ResLocal

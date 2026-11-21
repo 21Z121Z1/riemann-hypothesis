@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticePrincMulUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HomothetyLatSum
 open NumberField IsDedekindDomain GlobalTheory.CMVal GlobalTheory.LatVal

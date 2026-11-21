@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceCutDecay
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StMaDensChain
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceLevelSet

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.ConstSmall
 import Mathlib.Analysis.Normed.Group.Tannery
 import Mathlib.NumberTheory.ModularForms.EisensteinSeries.QExpansion

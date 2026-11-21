@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ChernOn
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RestrictChernPart
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FirstChernClassPotential

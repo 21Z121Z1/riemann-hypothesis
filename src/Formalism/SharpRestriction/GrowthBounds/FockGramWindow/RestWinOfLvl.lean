@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.FockGramWindow.LvlDef
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.FockKSmulRight
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.BejjSmulLeft

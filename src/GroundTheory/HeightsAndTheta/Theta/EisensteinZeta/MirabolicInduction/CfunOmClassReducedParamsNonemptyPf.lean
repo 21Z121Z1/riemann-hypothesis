@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Theta.EisensteinZeta.MirabolicInduction.CfunOmStatements
 import Mathlib.NumberTheory.NumberField.FractionalIdeal
 import Mathlib.RingTheory.PiTensorProduct

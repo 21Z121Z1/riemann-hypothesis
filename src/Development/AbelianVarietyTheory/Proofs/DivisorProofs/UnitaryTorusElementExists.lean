@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ImportsMoreRest
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DiagKey
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorusUOne

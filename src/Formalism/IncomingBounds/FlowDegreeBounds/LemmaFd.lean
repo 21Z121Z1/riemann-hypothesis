@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.IncomingBounds.IncomingBound
 import Mathlib.Algebra.Order.Field.GeomSum
 import Mathlib.Algebra.Order.Ring.Star

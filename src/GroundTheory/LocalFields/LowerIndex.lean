@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.Ramification
 import GroundTheory.LocalFields.Unramified
 import GroundTheory.LocalFields.Eisenstein

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.NormDetDiagUnitsPosRealToUnits
 import GroundTheory.AutomorphicForms.ReductionSplitting
 import GroundTheory.AutomorphicForms.ReductionMeasure

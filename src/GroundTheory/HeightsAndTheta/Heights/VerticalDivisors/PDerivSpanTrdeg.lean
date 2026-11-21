@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.VerticalDivisors.StatementsDerivSpanTrdeg
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.FieldTheory.SeparablyGenerated

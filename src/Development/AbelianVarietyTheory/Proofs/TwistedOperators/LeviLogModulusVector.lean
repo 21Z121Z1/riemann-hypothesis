@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AbsAUnit
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.LeviMonotoneInParabolic
 open MeasureTheory Set Filter NumberField IsDedekindDomain

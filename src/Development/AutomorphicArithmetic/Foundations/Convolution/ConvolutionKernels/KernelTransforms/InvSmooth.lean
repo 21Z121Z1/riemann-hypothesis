@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.AutomorphicFormSpaces.ArchSliceUAction
 import GroundTheory.AutomorphicForms.GKModules.Garding
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.TowerFin
 import Mathlib.RingTheory.AdicCompletion.LocalRing
 import Mathlib.Tactic.Polynomial.Basic

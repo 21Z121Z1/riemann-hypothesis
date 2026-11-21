@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StereographicMeasureChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MobiusChangeOfVariablesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreCosineExplicitFormulaStatement

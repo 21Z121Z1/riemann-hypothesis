@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReducedBases.LatDefs
 import Mathlib.LinearAlgebra.Matrix.PosDef
 

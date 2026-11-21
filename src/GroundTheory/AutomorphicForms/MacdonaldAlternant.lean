@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.MacdonaldRecursion
 import Mathlib.LinearAlgebra.Matrix.Permutation
 

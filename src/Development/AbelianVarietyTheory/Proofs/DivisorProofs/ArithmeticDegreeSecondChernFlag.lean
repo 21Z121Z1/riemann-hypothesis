@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetMetricShortExactIsometric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralEqOfExactRealFormCurveStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralBottChernShortExactStatement

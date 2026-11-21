@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.StableGradedCounts.LocalEstimateIVOfTypeSetWeight
 import Lemmata.TwistedIdempotents.TwistedIdem
 import Mathlib.RingTheory.Etale.Weakly

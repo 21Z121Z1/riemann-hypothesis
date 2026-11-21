@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.ExplicitFormulaCounts.WeylForK
 import Formalism.SharpRestriction.CuspSpanNormBounds.LocalBesselAndTopKernel
 

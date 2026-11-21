@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.CapelliDeterminantAndBranching
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuantumMinorExpansion
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuantumMinorCommutation

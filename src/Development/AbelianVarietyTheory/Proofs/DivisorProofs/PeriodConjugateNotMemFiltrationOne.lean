@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdDvdNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjugatePeriodMemFiltrationZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProdDegreeOfNotMemFilTwo

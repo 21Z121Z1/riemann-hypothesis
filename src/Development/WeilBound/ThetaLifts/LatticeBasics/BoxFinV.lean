@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.BoxFinB
 import Development.WeilBound.ThetaLifts.LatticeBasics.BoxFinA
 

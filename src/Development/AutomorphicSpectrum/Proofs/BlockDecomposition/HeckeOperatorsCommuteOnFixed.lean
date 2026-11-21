@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.SquareIntegrableTempered.CentredSegments.IrreducibleUnif
 import GroundTheory.AutomorphicForms.SmoothRep
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsUpperLower

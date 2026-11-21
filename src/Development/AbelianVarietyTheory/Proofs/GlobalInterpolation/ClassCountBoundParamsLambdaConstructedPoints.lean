@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ClassCountBoundAtConstructedPoints
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ScaleOneLeA
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ClassNumberClosed

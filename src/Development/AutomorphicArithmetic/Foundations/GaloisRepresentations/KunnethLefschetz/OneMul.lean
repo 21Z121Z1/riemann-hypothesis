@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.LadicH0LocallyConstant
 import Development.EtaleCohomology.CohomologicalPurity.LeafIndExc
 import Development.EtaleCohomology.KummerTheory.InjSlice

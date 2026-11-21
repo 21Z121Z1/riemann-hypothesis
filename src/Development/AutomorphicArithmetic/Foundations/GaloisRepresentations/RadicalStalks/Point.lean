@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.ExistsStalkFactor
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.FrobNSucc
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.RadicalStalks.RankV

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FibreSizeAndRangeBoundStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothPotentialTruncationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedIntegralTailBoundExistsStatement

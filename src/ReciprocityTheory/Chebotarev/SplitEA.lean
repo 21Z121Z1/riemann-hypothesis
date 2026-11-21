@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.SplitA
 import ReciprocityTheory.Chebotarev.SplitD
 import Mathlib.NumberTheory.Cyclotomic.Gal

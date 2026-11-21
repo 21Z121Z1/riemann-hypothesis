@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DirichletLogDerivReflectionFormulaStatement
 import Development.AutomorphicSpectrum.Proofs.GlobalProofs.DigammaLogBoundLeftRegionStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.CompletedLFunctionNeZeroOfReNonpos

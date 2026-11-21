@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MultihomogeneousSquares.ChooseTwoAdd
 import Development.WeilBound.CoreStatements.MultihomogeneousSquares.SqOf
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.AntisymmetryStatement

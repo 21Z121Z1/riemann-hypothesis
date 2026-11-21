@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.DivCalc
 import Development.AbelianVarietyTheory.BlockTheory.UniformisationCharts.CanonicalRigidImages
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsMemCommonChart

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CountingFormula.JordanExists
 
 open NumberField Module IsDedekindDomain Formalism.HermitianLattices.Ext.L3

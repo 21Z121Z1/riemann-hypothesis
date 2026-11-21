@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.EdgeLatticeAdaptedBasis
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.RankMulConductorDivLeOne
 

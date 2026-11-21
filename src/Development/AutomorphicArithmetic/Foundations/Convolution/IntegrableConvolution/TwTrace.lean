@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.DiagOnly
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.JointTrace
 

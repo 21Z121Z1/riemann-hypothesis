@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.Foundations.Blowup.StrictTransform
 import Development.ResolutionOfSingularities.EmbeddedResolution.ResolutionOfSingularities
 import Std.Tactic.BVDecide.Normalize.Prop

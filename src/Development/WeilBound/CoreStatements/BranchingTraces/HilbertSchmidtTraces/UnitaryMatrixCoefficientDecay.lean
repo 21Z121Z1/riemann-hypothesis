@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.BranchingTraces.ExistsIntertwiner
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsNormEmbId
 

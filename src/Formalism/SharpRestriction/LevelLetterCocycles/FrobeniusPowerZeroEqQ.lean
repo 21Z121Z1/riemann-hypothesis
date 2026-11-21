@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.VanishOfXU
 import Formalism.SharpRestriction.LevelLetterCocycles.CoeffAlgMul
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelOneUniformizerCoeffVanish

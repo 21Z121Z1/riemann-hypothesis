@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.ConstantZeroDoubleMultiplicationPair
 import Formalism.LocalToGlobal.CharacterGerms.RowTiePGmExLem
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.UnimodularSymplecticCoordinatesAndLatticeRank
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsSiegelForm
 import Mathlib.RingTheory.Etale.Weakly

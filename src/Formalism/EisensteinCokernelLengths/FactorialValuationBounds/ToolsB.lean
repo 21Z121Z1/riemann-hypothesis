@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EisensteinCokernelLengths.CokernelLengthBoundOfLifts
 import Formalism.FrobeniusContraction.FrobeniusContractionProofs.LenBound
 import Mathlib.Topology.Sheaves.Presheaf

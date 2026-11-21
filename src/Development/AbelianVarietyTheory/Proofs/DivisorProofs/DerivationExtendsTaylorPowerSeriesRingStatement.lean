@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DerivationExtendsTaylorPowerSeriesRing
 open IsLocalRing GlobalTheory.FormalOrigin
 set_option maxHeartbeats 1000000 in

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PresentationMapMono
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsZeroPresZeroMod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoFlagLiftExists

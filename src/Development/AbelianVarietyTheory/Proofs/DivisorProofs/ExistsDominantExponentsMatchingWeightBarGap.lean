@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.BarCompSubsetClosure
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsFlatSecRankZero
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

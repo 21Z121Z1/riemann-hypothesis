@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FaithfulIntegralClosure
 import Mathlib.Algebra.MvPolynomial.NoZeroDivisors
 set_option backward.isDefEq.respectTransparency false

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CmPackTorsionPoints
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsogenyProductDecompositionStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IsogenyDecompositionProduct

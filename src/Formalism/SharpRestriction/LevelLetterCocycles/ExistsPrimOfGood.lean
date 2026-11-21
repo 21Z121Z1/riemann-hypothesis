@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.StrictSesLetter
 import Formalism.SharpRestriction.LevelLetterCocycles.LevelZeroMembershipOfHorizontal
 

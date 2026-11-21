@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.StatementB
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.Order.CompletePartialOrder

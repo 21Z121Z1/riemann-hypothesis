@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.AdelicCompletionFractionalIdealDivisibleEqZero
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsFramePeriods
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsInverseUnitTower

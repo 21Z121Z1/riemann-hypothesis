@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.MeasurePreservingRmulQuotMeas
 open MeasureTheory Matrix GlobalTheory.Orb
 open Formalism.REAL (UJ KG toM toMK muK expG inG Jm Kset)

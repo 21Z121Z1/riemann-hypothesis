@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FockGram.StatementHerm
 import Mathlib.Algebra.Module.Lattice
 

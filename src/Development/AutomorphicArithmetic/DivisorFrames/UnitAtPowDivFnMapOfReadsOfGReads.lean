@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.DivisorFrames.RegularAtPointExtension
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing NumberField IsDedekindDomain

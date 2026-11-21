@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.ComplexWhittaker.ExpEqOfHasDerivAt
 import GroundTheory.AutomorphicForms.RealGroupsIwasawa
 import Mathlib.Topology.UniformSpace.Uniformizable

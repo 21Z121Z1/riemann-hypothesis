@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.TorsStep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.ImageRep
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TorsionBoundsChains.PermCard

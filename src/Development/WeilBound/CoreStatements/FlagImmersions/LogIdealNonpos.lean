@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.FlagImmersions.FibSandwich
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NearRecordOfValue
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.NormEqOneOfValuationEqOne

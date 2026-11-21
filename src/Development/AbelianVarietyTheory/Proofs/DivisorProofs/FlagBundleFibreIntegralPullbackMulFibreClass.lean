@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullFlagGradedLineChernFormsSmoothDbarClosedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UnivEqOfLocalPreimageEq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousOnDens

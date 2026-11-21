@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.NumericScaleExponentEqExtended
 import Formalism.LocalToGlobal.Divisibility.ConstantGeTwentyEightAlt
 import Formalism.LocalToGlobal.Divisibility.SmallTies

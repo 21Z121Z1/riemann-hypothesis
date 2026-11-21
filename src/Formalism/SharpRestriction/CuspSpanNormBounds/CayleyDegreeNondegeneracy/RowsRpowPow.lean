@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.CardSubmodulesAndLinearEquivBounds
 import Mathlib.Tactic.Monotonicity.Lemmas
 

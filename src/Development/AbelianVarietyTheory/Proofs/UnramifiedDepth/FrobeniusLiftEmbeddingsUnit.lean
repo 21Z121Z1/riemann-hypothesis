@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.EqOfMapEqOfPowEqOne
 import Formalism.LocalToGlobal.CharacterGerms.Interface
 import Mathlib.Algebra.Order.Ring.Star

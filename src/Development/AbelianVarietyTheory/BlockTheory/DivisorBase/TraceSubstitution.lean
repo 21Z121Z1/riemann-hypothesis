@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.CoefMod
 import Mathlib.Analysis.InnerProductSpace.SingularValues
 import Mathlib.RingTheory.PicardGroup

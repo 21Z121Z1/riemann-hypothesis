@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.HodgeTateChains.H2KilledByTateDuality
 import Formalism.WachLatticeTwists.CoprimeLiftBounds.StatBridgeChiOne
 import Formalism.WachLatticeTwists.LatticeDualFibres.Statement

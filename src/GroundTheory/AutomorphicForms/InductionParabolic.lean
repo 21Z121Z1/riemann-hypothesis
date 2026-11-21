@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.Induction
 import GroundTheory.AutomorphicForms.InductionJacquet
 import GroundTheory.AutomorphicForms.InductionParabolicLocal

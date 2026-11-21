@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SatakeDualWeyl.StatementC
 import Formalism.SatakeDualWeyl.StatementB
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf

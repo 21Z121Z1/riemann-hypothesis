@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.EigenvalueEndgame.OrthogonalDecomposition.Imports
 import Development.WeilBound.ThetaLifts.LatticeBasics.SchToPol
 import Development.WeilBound.ThetaLifts.CartanFactorisation.IntegrableOnRight

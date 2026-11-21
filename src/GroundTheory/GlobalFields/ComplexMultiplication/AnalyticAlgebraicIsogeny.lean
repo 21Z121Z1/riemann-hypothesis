@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicIndependent
 import GroundTheory.GlobalFields.ComplexMultiplication.AnalyticAlgebraicUnivAdd
 import GroundTheory.GlobalFields.ComplexMultiplication.DifferentialConstant

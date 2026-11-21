@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProductFormulaHaar.TrBase
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.RingTheory.SimpleRing.Principal

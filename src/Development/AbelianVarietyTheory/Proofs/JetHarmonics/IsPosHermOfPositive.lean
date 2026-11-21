@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.ExistsRosatiGen
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SpansOverField
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.BalancedHermitianSpace

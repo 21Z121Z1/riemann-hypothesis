@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ExistsBLieEqSmul
 import Development.AutomorphicSpectrum.Definitions.DivisibilityTowers.GoodOrigin
 

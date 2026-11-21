@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.DivIntoDualShift
 import Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.DivIntoDual

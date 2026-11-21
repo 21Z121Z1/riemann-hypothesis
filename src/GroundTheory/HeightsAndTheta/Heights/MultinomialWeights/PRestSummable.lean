@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.MultinomialWeights.StatementsEnd
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.PSeries

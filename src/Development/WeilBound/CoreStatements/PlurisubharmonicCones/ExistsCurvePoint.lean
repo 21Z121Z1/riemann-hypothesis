@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.AevalZeroOfMem
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PFunctionFieldFinite
 import GroundTheory.HeightsAndTheta.Heights.FieldsOfNumbers.PMChartTrdeg

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutTrace
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutReal
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.AutEta

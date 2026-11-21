@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EqZeroOfExpDecayOfFourierEqZeroOnHalfLine
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IntegralNonnegOfSums
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CauchySchwarz

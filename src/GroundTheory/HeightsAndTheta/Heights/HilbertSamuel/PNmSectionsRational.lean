@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsNmSectionsRational
 import Mathlib.RingTheory.Henselian
 import Mathlib.RingTheory.PicardGroup

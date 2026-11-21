@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.LatticeGeometry.GeometryDefinitions.ClsSum
 import Formalism.SharpRestriction.Divisibility.PlaceRankTwoOne
 import Formalism.QuotientMetricDivisors.Statement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GaloisValuations.GlobalEA
 import Mathlib.Algebra.AffineMonoid.Basic
 import ReciprocityTheory.GaloisValuations.Global

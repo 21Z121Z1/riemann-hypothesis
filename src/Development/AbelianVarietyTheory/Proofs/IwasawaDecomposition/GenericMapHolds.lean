@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.InjectiveOfFlat
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GlueSt
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GenericPointOfFlatLocalStatement

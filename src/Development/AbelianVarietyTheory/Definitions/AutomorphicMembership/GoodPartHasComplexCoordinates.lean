@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LinksDefs
 import Formalism.LocalToGlobal.Divisibility.RowSideTie
 import Formalism.LocalToGlobal.IndefiniteReal.IsometricPeriodsOfHypotheses

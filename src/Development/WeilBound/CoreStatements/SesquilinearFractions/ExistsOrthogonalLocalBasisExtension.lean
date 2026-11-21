@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.SesquilinearFractions.AlgebraMapIntegralCoeffsRaw
 import Development.WeilBound.CoreStatements.SesquilinearFractions.DOkBasis
 import Development.WeilBound.CoreStatements.SesquilinearFractions.ExistsCommonDenominatorCoeffs

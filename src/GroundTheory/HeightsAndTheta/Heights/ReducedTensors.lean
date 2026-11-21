@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
 import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.Statements
 import GroundTheory.HeightsAndTheta.Heights.ComplexPointsBase

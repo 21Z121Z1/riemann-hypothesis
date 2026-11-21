@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.LatticeCosetUniformizer
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.RingTheory.Etale.Weakly

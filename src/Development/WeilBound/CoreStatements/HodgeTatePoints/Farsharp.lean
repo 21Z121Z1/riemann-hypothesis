@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.HodgeTateCokerSharp
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FarsharpA
 import Development.WeilBound.CoreStatements.HodgeTatePoints.FarsharpB

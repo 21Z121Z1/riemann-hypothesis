@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.FirstBlockLemmaH.Imports
 import Lemmata.GeneralBFactThirdVariant.Imports
 import Mathlib.Analysis.CStarAlgebra.Classes

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CkUniqueCharacterizationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoShortExactCompatibleStatement
 open CategoryTheory Limits AlgebraicGeometry IsLocalRing MvPolynomial

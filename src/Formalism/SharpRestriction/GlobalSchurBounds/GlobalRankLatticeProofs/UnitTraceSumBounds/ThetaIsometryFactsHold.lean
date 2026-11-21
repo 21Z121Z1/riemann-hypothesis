@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Columns
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IsoDualPair
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.IsoFunV

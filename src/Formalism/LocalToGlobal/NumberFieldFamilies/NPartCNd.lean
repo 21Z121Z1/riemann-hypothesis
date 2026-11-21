@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaloisCohomology.GaloisCohomologyProofs.LdataNonempty
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExistsTameGen
 import Formalism.LocalRingCardinality.SpanPowerMembership.Places

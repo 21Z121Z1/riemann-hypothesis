@@ -1,6 +1,6 @@
-import BuildAid.LenientExample
+import BuildAid.Leniency.Example
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.TranslateCocycles.StatementHC
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

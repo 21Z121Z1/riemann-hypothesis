@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformNormTowerBound
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.GeoRead
 open NumberField IsDedekindDomain Filter Topology

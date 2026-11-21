@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharpolyDvdPowFinrankOfAevalEqZero
 open CategoryTheory Polynomial GlobalTheory.NormalDescent
 set_option maxHeartbeats 1000000 in

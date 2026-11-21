@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.TracePiReal
 import Development.WeilBound.ThetaLifts.LocalTheory.ArchimedeanBumps.DictIrr
 import Development.WeilBound.ThetaLifts.CartanFactorisation.TensOfEval

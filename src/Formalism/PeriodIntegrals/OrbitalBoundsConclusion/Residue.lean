@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.ResidueBoundOf
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.HeckeLowerOf
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ResidueLatticeCount.BClass

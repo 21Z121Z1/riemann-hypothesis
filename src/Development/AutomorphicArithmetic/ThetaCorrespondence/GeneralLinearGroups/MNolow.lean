@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.MFront
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.MBound
 import Development.AutomorphicArithmetic.ThetaCorrespondence.GeneralLinearGroups.Imports

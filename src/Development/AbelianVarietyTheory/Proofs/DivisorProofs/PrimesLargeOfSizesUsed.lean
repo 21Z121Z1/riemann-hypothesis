@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.LatticeAutomorphismLcm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DGamCoprime
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PrimeLeSuccOfDvdMinkM

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.TowerModels.TwistedSums.LatAtVAtStable
 import Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.AddCharTrivialIntegralFiniteAdeleMul
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TraceMixedEmbedding

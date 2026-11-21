@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GaloisValuations.SymplecticRankFourModularity
 import Mathlib.NumberTheory.NumberField.CMField
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.EquivFunOM
 import Formalism.LocalToGlobal.IndefiniteReal.PrimitiveStatementsWithPassage
 import Formalism.LocalToGlobal.Divisibility.InertPartitionLePartF

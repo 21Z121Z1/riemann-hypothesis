@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsRootInvolutionParabolicStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ProjectionEraseRootFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GramRootDeterminantEraseStatement

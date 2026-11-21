@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerIntegralUnfoldStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerIntegralFiniteStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerIntegralConvergesStatement

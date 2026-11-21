@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.LevelCriteria.IsLevOneIff
 
 set_option autoImplicit false

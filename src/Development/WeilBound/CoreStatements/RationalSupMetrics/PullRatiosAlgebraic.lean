@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallPacking
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNmSectionsRankBound
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PNmSectionsFinite

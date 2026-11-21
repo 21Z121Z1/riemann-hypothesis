@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullConeDegree
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PBlockImageHilb
 set_option maxSynthPendingDepth 1

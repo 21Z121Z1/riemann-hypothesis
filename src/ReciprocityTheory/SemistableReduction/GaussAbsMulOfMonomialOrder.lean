@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.SphereLogIntegrableStatement
 import Lemmata.GeneralBFactLeftExtra.Imports
 import Mathlib.Data.Finsupp.MonomialOrder

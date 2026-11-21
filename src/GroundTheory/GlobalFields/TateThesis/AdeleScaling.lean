@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.FiniteAdeleScaling
 import Mathlib.Algebra.Order.Positive.Field
 import Mathlib.RingTheory.Complex

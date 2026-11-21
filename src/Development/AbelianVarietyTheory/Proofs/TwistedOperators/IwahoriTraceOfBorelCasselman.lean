@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.IwahoriDoubleCosets
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BorelCasselmanHolds
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.BlockTriangularOneAddMat

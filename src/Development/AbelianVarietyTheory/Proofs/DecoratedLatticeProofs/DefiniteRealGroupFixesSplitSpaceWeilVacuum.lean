@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeilDatumRealPlacesFockVacuumCharacter
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumExponentSum
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IntegrandSZero

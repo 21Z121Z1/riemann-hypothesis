@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsStdFr
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FamCol
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.QLev

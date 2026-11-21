@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.CuspIso
 
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

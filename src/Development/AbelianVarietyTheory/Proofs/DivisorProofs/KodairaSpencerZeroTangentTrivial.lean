@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGroupLiftKodairaSpencerZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupLiftTangentCompatibilityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GroupLiftTangentUniquenessStatement

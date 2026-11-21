@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KernelsRest
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Inhabitants
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.RestCutBasic

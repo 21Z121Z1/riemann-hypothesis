@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.OneMemNbh
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.FormalDegree.FdCons
 

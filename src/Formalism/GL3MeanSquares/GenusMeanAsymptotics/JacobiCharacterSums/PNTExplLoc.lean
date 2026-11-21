@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ZeroFreeRegion.FinalZFR
 import Std.Tactic.BVDecide.Normalize.Prop
 

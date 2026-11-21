@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.Places
 import GroundTheory.GlobalFields.KummerTheory.Unramified
 import GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups

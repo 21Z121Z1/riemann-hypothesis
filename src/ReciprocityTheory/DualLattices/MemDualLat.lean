@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.SubgroupQuotientStatement
 import ReciprocityTheory.DualLattices.MapTensorSpan
 import Mathlib.RingTheory.Henselian

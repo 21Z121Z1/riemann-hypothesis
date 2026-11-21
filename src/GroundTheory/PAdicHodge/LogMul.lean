@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.BdRSeries
 import Mathlib.RingTheory.Nilpotent.Exp
 set_option maxSynthPendingDepth 1

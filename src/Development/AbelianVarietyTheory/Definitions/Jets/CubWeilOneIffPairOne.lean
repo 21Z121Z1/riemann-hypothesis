@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.LocalTrivialization.MulSelfEqOneOfWeilIsInv
 import Development.AbelianVarietyTheory.BlockTheory.JetGauges.SemiAbelianAxisTangent
 

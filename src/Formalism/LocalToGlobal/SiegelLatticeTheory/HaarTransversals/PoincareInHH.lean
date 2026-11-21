@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.HidaSetting
 import Formalism.LocalToGlobal.SiegelLatticeTheory.HaarTransversals.RowsDef
 import Formalism.LocalToGlobal.SiegelLatticeTheory.SiegelMassRatios.ColsDim

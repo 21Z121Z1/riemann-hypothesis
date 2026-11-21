@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.UntwistedChoice
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.LogProductFormula
 import Mathlib.Analysis.Complex.ExponentialBounds

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsModelOf
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.FinSmallGen
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.MemOfForallValuationSubring

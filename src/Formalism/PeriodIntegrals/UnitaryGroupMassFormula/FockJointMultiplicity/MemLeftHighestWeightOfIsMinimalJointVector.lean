@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.FockJointMultiplicity.CauchyHW
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Data.Int.Star

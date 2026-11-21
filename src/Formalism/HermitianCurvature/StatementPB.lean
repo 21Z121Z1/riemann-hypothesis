@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementTC
 import Formalism.FlagUnipotentLattices.CardSubmodulesAndLinearEquivBounds
 import Mathlib.Order.CompletePartialOrder

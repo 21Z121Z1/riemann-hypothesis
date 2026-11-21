@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LeadMinorGramMatrixConstDoubleCoset
 open Formalism.BasicNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

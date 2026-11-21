@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.SchurInvariantProjectionTrace
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.LatticeTheoremOfTraceFormula
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.BinomialPreservesDiagonalStable

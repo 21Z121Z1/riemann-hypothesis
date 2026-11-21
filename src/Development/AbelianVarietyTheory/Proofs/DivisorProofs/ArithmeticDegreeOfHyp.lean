@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsCompModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsArithmeticVarietyCoverStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInducedMetricApproximationStatement

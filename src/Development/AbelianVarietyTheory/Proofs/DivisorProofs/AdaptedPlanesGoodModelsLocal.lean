@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MemLagrangianSetArchimedean
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviMapPreservesRationalPoints
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLeviElementSkewCm

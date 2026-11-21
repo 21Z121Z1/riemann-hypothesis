@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrass
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.RingTheory.WittVector.IsPoly

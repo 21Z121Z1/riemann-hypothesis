@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.DixmierMalliavinLineStage
 import Mathlib.Analysis.Fourier.Convolution
 

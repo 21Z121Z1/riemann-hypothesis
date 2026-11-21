@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsLogKodairaSpencerGenericEigenFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsBaseFrame
 open CategoryTheory AlgebraicGeometry TopologicalSpace Limits NumberField

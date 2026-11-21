@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsSpanBundleTrdegLe
 import Mathlib.Algebra.Lie.OfAssociative
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis

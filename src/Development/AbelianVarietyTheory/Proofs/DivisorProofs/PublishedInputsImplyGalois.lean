@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SeriesRationalIntegral
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OntoXOfTwistSharesExp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExportFromReciprocityTheoremsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StabilizerCompletions
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.StabilizerLattices
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.RankOneUnitary
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.DirectSumCancelRightStatement
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LpCharCompatibilitiesStatement

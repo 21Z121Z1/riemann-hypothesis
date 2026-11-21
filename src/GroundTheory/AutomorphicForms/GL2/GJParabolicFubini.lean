@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJZetaDefs
 import GroundTheory.AutomorphicForms.CuspidalAdmissible
 import Mathlib.CategoryTheory.Countable

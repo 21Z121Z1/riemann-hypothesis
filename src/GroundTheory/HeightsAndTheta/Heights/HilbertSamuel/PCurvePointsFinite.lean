@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsCurvePointsFinite
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.PCoordCurveDegree
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PCoordConeArithVar

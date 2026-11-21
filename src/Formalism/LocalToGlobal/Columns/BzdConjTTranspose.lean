@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.CoefModB
 import Formalism.LocalToGlobal.Columns.SummandSlopeAtDecoratedLattice
 import Formalism.LocalToGlobal.GlobalTheory.HLatOpsP

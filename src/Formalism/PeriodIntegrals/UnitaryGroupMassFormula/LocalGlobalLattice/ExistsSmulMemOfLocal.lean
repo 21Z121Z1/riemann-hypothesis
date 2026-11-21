@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.LatLocGlob
 import Lemmata.GeneralBFactThirdBisAlt.Imports
 import Mathlib.RingTheory.RegularLocalRing.Defs

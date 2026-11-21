@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.FirstCohomology.LevelFrameOfLaws
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBasisOfEq
 import Mathlib.Algebra.Module.StablyFree.Basic

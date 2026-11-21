@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MirabolicMackeyTheory.ErrSumGoodExact
 import Formalism.MirabolicMackeyTheory.MirabolicMackeyProofs.LocalConditionsComposeGeneral
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.PrimeLogOverP

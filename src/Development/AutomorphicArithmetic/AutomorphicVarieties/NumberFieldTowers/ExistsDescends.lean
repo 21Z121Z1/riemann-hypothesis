@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.LayerUniq
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.Imports
 import Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.ShaDGen

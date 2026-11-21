@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.LatticeCountBoundFramesStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GluingCountStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.EncardGluingHomKernelsLeStatement

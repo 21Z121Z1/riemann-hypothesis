@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingMackeyPlaces
 import GroundTheory.ProfiniteCohomology.RealPlaces.VanishingUnitsTwo
 set_option maxSynthPendingDepth 1

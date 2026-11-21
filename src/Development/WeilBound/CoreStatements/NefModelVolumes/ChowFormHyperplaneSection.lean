@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.NefModelVolumes.ChowFormOfIntegralVersion
 import Development.WeilBound.CoreStatements.NefModelVolumes.HyperplaneSectionDivCycle
 import Development.WeilBound.CoreStatements.NefModelVolumes.ChowFormUniqueUpToConstant

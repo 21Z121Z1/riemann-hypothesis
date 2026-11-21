@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.LeviForms.RegChartC
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PMollifierLowerBound
 import Mathlib.Analysis.Convex.Continuous

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXMTB
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutEXMkTopCut
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormRankZeroApply

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchurLemmaHeisenbergCommutingThetaOperator
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReindexDblIncM
 open scoped TensorProduct Matrix

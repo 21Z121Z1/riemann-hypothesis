@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ExistsNeOfSurjOn
 import Development.WeilBound.ThetaLifts.LeviDeterminants.EvalZeroMemAdelicSchwartzAdmittedForms
 import Development.WeilBound.ThetaLifts.LeviDeterminants.ChiIndep

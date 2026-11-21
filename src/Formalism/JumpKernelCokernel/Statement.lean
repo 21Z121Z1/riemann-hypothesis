@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.TruncatedSeriesCounting.RamifiedValuationInequality
 import Mathlib.LinearAlgebra.Charpoly.Basic
 

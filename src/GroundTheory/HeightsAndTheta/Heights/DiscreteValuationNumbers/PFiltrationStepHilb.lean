@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsCN
 import Mathlib.Algebra.Order.Sub.Prod
 import Mathlib.Topology.Sheaves.Presheaf

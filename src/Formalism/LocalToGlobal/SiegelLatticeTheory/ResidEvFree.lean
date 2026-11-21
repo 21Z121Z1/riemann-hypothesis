@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.StandingHypothesesHoldFamily
 import Formalism.LocalToGlobal.GlobalTheory.GL2.ModEqOfNormOneMod
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLt

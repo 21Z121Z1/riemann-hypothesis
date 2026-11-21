@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.DualTensorBesselMomentStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.TensorMomentEstimateStatement
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.AbsCoordLeOfLOneNormLe

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnimodularOrthogonalQ2
 import Mathlib.NumberTheory.Padics.PadicIntegers
 

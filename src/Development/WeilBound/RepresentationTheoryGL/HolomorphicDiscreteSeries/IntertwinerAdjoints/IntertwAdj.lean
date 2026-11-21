@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.HolomorphicDiscreteSeries.WeightOccurrence.OccSome
 import Development.WeilBound.CoreStatements.BranchingTraces.BranchingComatrices.OneLeDiff
 import Development.WeilBound.CoreStatements.BranchingTraces.HilbertSchmidtTraces.ColSq

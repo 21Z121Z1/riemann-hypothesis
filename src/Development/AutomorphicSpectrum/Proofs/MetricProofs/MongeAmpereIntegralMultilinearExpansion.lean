@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsTwiceDifferentiableAt
 import ReciprocityTheory.AnalyticForms.PotentialTheory.StokesA
 import ReciprocityTheory.AnalyticForms.PotentialTheory.Partition

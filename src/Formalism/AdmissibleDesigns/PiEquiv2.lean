@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.RankReductionIdempotentOne
 import Formalism.AdmissibleDesigns.FgTopContinuousLinearMap
 import Formalism.AdmissibleDesigns.KernelLengthHigherColumns

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.Statements
 import Mathlib.MeasureTheory.Measure.Hausdorff
 import Mathlib.Topology.Separation.CompletelyRegular

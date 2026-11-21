@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarSquaredEqZeroStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.D10ProductRuleSymmetricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MixedDbarPartialCommutationStatement

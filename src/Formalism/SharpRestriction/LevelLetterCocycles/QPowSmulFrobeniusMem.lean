@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LemmaGsOfLemGAB
 import Formalism.SharpRestriction.LevelLetterCocycles.QuotientImageDivisibility.IsExpSmulA
 import Formalism.SharpRestriction.LevelLetterCocycles.UniversalGeneralOfRestriction

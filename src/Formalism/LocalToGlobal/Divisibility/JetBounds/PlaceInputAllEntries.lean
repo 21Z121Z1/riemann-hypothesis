@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.JetBounds.Statement
 import Formalism.LocalToGlobal.Divisibility.JetBounds.MinorProductsLattice
 import Formalism.GaussJetBounds.StatementN

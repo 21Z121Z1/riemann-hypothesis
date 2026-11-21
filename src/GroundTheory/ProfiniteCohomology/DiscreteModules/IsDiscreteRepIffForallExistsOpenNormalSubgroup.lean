@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.DiscreteModules
 import Mathlib.CategoryTheory.Abelian.Subcategory
 import Mathlib.CategoryTheory.Limits.Shapes.Countable

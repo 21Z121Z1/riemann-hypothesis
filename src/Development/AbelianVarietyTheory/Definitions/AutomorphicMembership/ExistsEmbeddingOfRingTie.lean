@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.TieEmbeddingCastLevelTie
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieAll
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TiePsiC

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ValuationCoeEqNorm
 import ReciprocityTheory.DualLattices.DvdOfCoeffZero
 import ReciprocityTheory.DualLattices.ValUntiltESubOne

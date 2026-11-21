@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.SenTateCharLevels
 import GroundTheory.PAdicHodge.SenTateCharStep
 import GroundTheory.PAdicHodge.SenTateCharClosure

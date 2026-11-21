@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StatementsStabilizerLevi
 
 namespace GroundTheory.Heights₂.Heights.FiniteCovolume

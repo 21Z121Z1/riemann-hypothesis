@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.MassEqConstMulContent
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsFiniteClasses
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsConjInt

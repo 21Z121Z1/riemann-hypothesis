@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UBoundOffTop
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VAddNonnegOfIsIntegral

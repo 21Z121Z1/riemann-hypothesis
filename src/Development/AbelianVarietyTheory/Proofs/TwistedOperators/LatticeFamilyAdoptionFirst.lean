@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.RealTB
 import Formalism.LocalToGlobal.IndefiniteReal.RealPins
 import Formalism.LocalToGlobal.IndefiniteReal.RealRec

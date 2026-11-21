@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PlacesOfRationals.Minkowski
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PlacesOfRationals.PlacesQ
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.ExistsPthRootOfDerivationZeroStatement
 import Mathlib.RingTheory.MvPowerSeries.Derivative
 import Mathlib.RingTheory.MvPowerSeries.Expand

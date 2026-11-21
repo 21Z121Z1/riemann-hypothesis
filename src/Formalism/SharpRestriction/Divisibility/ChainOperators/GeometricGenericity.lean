@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.ThetaNormsAndLinks
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.UCardChoose
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.GeoProdPow

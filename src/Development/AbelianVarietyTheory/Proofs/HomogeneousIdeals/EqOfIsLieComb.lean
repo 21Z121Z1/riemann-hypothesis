@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.QuadraticAlgebra.Defs
 import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
 import Mathlib.NumberTheory.Zsqrtd.Basic

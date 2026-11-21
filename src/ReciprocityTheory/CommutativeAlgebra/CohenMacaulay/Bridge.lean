@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ModDepthGE
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PicardGroup

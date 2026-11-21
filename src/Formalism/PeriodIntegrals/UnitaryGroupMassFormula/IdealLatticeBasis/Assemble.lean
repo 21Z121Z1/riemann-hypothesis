@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.IdealLatticeBasis.IdealBasisAlt
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AreaLat
 import Mathlib.Algebra.AffineMonoid.Basic

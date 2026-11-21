@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StYYRatioBasis
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StMobiusAlgIndep
 import Mathlib.RingTheory.Henselian

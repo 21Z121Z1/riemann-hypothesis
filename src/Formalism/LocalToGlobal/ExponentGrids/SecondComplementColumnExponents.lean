@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.Complement2Normaliser
 import Formalism.TranslateCocycles.Statement
 import Formalism.TranslateCocycles.StatementHC

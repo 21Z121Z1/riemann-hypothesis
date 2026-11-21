@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FactorialBounds.Statements
 import Mathlib.Data.Int.Star
 import Mathlib.Order.Interval.Finset.Box

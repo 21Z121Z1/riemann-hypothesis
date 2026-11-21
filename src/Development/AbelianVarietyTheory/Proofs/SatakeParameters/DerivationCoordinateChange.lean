@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.ThetaLiftGeometry.PolynomialIntegralityJets
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.ExpTieAlg
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne

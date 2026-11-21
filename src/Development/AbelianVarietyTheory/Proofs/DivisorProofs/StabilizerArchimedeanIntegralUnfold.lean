@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IwasawaHaarIntegralFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarUnitaryRightInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParabolicLineStabilizerDecompositionStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.SoKill
 import Development.WeilBound.ThetaLifts.SmallCones.ExpAlg
 

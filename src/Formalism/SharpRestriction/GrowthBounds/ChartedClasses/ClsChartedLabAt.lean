@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.ExistsIsCGBases
 import Formalism.SharpRestriction.GrowthBounds.ChartedClasses.InTwSt
 import Formalism.SharpRestriction.GrowthBounds.ChartComparison.YbOfEqOfCls

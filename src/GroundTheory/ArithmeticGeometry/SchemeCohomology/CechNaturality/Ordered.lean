@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechLeray
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CechNaturality.Chains
 set_option maxSynthPendingDepth 1

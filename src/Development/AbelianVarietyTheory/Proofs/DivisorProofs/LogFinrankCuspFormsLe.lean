@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AntitoneWeightLogBound
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodWeightAntitoneGap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SizeBoundsForFamily

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeometricallyIntegralIffGeometricallyConnectedOf
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricallyIntegralFibre
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConnectedSpaceOfIsFieldGlobalFunctions

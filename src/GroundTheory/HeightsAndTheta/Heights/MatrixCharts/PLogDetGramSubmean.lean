@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.StatementsPsh
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.DetIneq
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.PshCore

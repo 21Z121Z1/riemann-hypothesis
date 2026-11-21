@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.PieriColumnMinors.LrbPiSingleCast
 import Formalism.PieriBlockIdeals.PieriColumnMinors.LrcFockZeroRight
 import Formalism.PieriBlockIdeals.StatementLR

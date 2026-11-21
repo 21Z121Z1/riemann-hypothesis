@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.IsLowUnitH
 import Formalism.PeriodIntegrals.DSInfCharCap
 import GroundTheory.AutomorphicForms.HarishChandraCentre.MemCenterOfCommuteE

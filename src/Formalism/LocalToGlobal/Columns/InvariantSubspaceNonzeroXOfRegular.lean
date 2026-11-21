@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.RowFormsNZ
 import Formalism.LocalToGlobal.GlobalTheory.GL4.PDetAll
 import Formalism.LocalToGlobal.Divisibility.ProjLemmas

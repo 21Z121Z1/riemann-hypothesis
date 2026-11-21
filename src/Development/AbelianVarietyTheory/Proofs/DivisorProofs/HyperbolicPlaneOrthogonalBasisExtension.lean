@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HyperbolicPlaneWittDecompositionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StoneWeierstrassFiniteRepStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeparatePointsSmoothFiniteSpanStatement

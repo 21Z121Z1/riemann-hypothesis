@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.CurveCl
 import Mathlib.Algebra.MvPolynomial.Coeff
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

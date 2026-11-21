@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsMoreTer
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsMoreAlt
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsBisAlt

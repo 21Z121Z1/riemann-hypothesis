@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspHeightUpperStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CuspVolumeSumStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.IntersectionDegreeLowerStatement

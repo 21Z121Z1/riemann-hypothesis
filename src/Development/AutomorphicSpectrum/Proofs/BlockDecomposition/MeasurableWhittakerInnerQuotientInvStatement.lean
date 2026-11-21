@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableWhittakerInnerQuotientInv
 open MeasureTheory Matrix
 set_option maxHeartbeats 1000000 in

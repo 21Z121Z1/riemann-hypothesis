@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalCorollaryOfDeRham
 import Formalism.SharpRestriction.LevelLetterCocycles.Realised2Pf
 import Development.AutomorphicArithmetic.BlochKatoExtensions.BkExtHolds

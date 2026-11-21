@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneEvaluationIntertwinesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneEvaluationEquivariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneEvaluationCharacterTwistStatement

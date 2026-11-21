@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.RamifiedDiscriminants.HalfNorm
 import Formalism.LocalToGlobal.ProjectiveLattices.HostSize
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra

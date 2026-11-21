@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN
 
 open Formalism.HC Formalism.FrobeniusOrbits UpperTheory.Top

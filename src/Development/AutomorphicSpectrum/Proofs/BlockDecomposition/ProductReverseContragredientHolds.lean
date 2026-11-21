@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.GenericUnitaryGL.UnlinkedIrreducibility.ProdIotaRev
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MultiProdCompInvTranspose
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.EquivContra

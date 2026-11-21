@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.PackageFromPrimitiveStatements
 import Formalism.LocalToGlobal.IndefiniteReal.CutPassage3
 

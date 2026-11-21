@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LengthContinuousProperSublevel
 open MeasureTheory Matrix Finset
 open scoped ContDiff

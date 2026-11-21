@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.TheoremIOfIntermediateBounds
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.MidMeanOf
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.ThrLPOf

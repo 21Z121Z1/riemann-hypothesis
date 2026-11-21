@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.PolynomialLevels.FrRevInj
 import Formalism.SharpRestriction.GrowthBounds.PolynomialLevels.PlMonPsiExpPAdd
 import Formalism.SharpRestriction.GrowthBounds.DiagonalSupport.SlackBoundJoint

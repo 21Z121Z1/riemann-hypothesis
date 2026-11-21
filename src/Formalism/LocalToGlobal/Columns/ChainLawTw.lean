@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ChainLawPsi
 import Formalism.LocalToGlobal.Columns.ChainTopLawB
 import Formalism.LocalToGlobal.Columns.ChainLawLev

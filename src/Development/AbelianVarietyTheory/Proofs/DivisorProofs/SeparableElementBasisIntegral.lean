@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MulMat
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceMulEqZeroImp
 import Mathlib.RingTheory.Artinian.Instances

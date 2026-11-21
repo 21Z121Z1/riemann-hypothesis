@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.HarishChandraModules.NonemptyRepresentations.ExpEntry
 import Formalism.HermitianCurvature.StatementB
 import Mathlib.Tactic.ENatToNat

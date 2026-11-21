@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisTorsionCharsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TangentBasisChangeTorsionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantPerturbationBoundStatement

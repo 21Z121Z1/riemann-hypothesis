@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.FrobeniusCoboundedArc
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.GoodOf
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ThmEFull

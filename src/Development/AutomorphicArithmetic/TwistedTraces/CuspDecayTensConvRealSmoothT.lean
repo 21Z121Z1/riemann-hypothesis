@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.TwistedTraces.CuspDecayArchConvFinAvg
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsContDiffArchMatrixExtensionOfSmooth
 import Development.AutomorphicArithmetic.TwistedTraces.TensConvEqArchConv

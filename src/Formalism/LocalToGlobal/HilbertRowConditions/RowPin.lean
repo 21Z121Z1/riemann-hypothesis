@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ClassSK
 import Formalism.LocalToGlobal.HermitianForms.TiedBr
 import Formalism.LocalToGlobal.HilbertRowConditions.CenterIdempotentAction

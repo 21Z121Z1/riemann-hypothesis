@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.UnitsPowers
 import GroundTheory.LocalFields.NormalLattice
 set_option maxSynthPendingDepth 1

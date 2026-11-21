@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ChainTwCst
 import Formalism.LocalToGlobal.Columns.ColumnsProofs.SymLevEnt
 import Formalism.LocalToGlobal.Columns.FrameEntryAuxiliarySuperdiagonal

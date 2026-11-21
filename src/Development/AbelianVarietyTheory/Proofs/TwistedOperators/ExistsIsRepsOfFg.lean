@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.ExponentTerms
 import Mathlib.RingTheory.Ideal.Quotient.Index
 import Mathlib.RingTheory.SimpleRing.Principal

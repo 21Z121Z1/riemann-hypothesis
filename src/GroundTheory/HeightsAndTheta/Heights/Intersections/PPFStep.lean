@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsPFSecRed
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsPFVert
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsPFIntZero

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsEqZpowMulUnit
 import Mathlib.Order.Interval.Finset.Box
 import Mathlib.RingTheory.OrderOfVanishing.Basic

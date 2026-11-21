@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
 import Mathlib.RingTheory.RegularLocalRing.Defs

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsInclusionCyclotomicAwayRingFiniteEtale
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Data
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsGeomPtSpecializes

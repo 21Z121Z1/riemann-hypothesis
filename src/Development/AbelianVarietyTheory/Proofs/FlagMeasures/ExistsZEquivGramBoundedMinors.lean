@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.CovolumeIntegralUnipotentStabilizerOfTerm
 open NumberField Module Matrix Formalism.MainNotions.S Formalism.MainNotions.S.Lat
 open scoped Classical

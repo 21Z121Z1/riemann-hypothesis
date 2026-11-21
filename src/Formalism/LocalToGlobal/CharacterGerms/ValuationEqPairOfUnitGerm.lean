@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.PullbackLogCoordsEvalZero
 import Formalism.LocalToGlobal.CharacterGerms.ValuationEqPairOfLogUnitGerm
 

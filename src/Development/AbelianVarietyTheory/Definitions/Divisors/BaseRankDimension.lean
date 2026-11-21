@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ColumnCompatibleSelection
 import Formalism.LocalToGlobal.IndefiniteReal.RealRecPins
 import Formalism.LocalToGlobal.IndefiniteReal.DoubleCosetOperators.NMjT

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Chebotarev.Ucoord
 import Mathlib.NumberTheory.NumberField.ClassNumber
 import Mathlib.Tactic.ENatToNat

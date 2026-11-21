@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCoverWithInducedNormsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightBoundedByBadPrimesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VerticalNumberSumOverPlacesStatement

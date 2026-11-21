@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PositiveOrbitOpen
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BigCellOrbitSet
 

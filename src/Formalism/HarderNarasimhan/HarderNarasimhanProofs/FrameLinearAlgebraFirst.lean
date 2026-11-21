@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HarderNarasimhan.StatementFrameF
 import Formalism.CorankShare.CorankShareProofs.SumNormSqLeHilbertSchmidt
 import Mathlib.Analysis.InnerProductSpace.Trace

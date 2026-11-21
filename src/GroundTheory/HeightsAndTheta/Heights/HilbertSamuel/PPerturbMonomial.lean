@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPerturbMonomial
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGenDegAmple
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PSmallGenTwist

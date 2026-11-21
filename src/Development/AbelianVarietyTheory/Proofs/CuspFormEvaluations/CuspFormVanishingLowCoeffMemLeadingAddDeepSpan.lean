@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.LocalUnfoldBStatementHolds
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.LeMulPowOfExpDecay
 import Development.AbelianVarietyTheory.Proofs.TorusHaarMeasure.SumMultiLtSucc

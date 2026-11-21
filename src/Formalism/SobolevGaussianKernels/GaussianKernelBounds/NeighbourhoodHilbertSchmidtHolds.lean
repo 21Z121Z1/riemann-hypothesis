@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SobolevGaussianKernels.StatementFU
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 import Mathlib.RingTheory.SimpleRing.Principal

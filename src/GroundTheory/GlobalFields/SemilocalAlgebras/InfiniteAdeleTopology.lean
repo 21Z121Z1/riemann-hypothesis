@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.SemilocalAlgebras.InfiniteAdele
 import Mathlib.Tactic.Polynomial.Basic
 

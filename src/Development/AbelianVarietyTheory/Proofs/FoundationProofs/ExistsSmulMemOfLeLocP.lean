@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsUnitaryMulTriangular
 
 open GlobalTheory.DualWeyl MvPolynomial NumberField IsDedekindDomain

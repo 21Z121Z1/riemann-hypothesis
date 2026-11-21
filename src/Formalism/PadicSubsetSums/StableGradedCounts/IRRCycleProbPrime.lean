@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.GaloisIrreducibility
 import Mathlib.GroupTheory.Perm.Centralizer
 import Std.Tactic.BVDecide.Normalize.Prop

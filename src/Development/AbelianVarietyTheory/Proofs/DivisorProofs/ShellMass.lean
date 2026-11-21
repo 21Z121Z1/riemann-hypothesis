@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovVolumes.UpperBounds.DivStatementPfLA
 import Mathlib.Analysis.Calculus.ContDiff.WithLp
 import Mathlib.Topology.Sheaves.Presheaf

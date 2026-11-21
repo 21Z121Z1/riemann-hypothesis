@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.NondegenerateCharts
 import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
 import Development.AbelianVarietyTheory.Definitions.TeichmullerDepth.HasTeich

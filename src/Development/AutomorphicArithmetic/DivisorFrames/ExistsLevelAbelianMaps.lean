@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.LocalEmbeddings.ConsMatch
 import Development.AbelianVarietyTheory.Counterexamples.ModuliSurvey.DominatesLiftUnique
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SimilitudesCorrespond

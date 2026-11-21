@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.JointTheoremALoc
 import Formalism.SatakeDualWeyl.DualWeylRepApply
 import Formalism.PieriBlockIdeals.StatementLA

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.EigenDecomposition
 import Mathlib.LinearAlgebra.Matrix.IsDiag
 import Mathlib.RingTheory.PicardGroup

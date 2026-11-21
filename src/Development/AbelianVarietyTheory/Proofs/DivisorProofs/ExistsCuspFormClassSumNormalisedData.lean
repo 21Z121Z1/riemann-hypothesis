@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OscillatorModelValuesSixth
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ModelsAtRecordCore
 open NumberField Matrix Complex MeasureTheory IsDedekindDomain

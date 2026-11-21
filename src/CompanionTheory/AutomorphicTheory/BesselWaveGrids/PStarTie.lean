@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalDegreeBessel.StatementDS
 import CompanionTheory.AutomorphicTheory.BesselWaveGrids.NqMovedExample
 import Mathlib.Analysis.Complex.ExponentialBounds

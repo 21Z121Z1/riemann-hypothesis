@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.EllipticFunctions
 import GroundTheory.GlobalFields.ComplexMultiplication.ResidueTheorem
 import Mathlib.Algebra.Order.Star.Real

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DivisorDecompositionFlagStepsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsProperAffineFlagSectionsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeightedProjectiveEmbeddingSepStatement

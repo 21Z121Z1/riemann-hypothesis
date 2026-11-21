@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ContinuousAevalMvPolynomial
 import Mathlib.Analysis.Analytic.Polynomial
 import Mathlib.RingTheory.PiTensorProduct

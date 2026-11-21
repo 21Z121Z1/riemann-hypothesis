@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericPointPreimageGeneric
 open CategoryTheory AlgebraicGeometry TopologicalSpace Opposite Limits
 open GlobalTheory.IndefiniteRowSideFullHecke.GenericFiniteMaps

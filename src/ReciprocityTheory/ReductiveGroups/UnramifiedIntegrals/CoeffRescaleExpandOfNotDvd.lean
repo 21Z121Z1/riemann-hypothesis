@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
 import Mathlib.RingTheory.PowerSeries.Expand
 import Mathlib.RingTheory.WittVector.IsPoly

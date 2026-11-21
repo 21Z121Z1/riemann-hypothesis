@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MeanHeightDescent.AverageDegreeBounds.CovolumeIntoDivisionHolds
 import Formalism.MeanHeightDescent.MuMaxMinkowski
 import Mathlib.RingTheory.WittVector.IsPoly

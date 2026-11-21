@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsAdaptedFrame
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InfiniteCompactLeviLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianVectorEigenDecompositionStatement

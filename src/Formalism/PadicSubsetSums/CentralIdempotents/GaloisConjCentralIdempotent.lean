@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.IsConstituent
 import Mathlib.Data.Finsupp.Pointwise
 import Mathlib.LinearAlgebra.PiTensorProduct.Finite

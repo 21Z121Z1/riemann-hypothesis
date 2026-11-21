@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TransferenceCoverHolds
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Module.LinearMap.Rat

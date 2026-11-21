@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.JacobiDiagonalBounds.NFModel
 import CompanionTheory.AutomorphicTheory.NumberFieldModels.ModelPt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MatrixUnitZeroZeroEqInsert

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.WeightAlgebra
 import Formalism.SharpRestriction.LevelLetterCocycles.TwGood
 import Formalism.SharpRestriction.LevelLetterCocycles.LocsCoverTw

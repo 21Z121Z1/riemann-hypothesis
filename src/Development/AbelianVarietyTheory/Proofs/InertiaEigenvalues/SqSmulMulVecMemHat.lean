@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ExistenceOfLattices.Hat1
 import Formalism.LocalToGlobal.BesselHermitianTheta.DefsReal
 import Formalism.LocalToGlobal.ProjectiveLattices.ThShort

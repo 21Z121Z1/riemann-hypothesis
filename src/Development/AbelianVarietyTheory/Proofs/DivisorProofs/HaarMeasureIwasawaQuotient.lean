@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HaarSK
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.PSemidirectHaar
 import Mathlib.MeasureTheory.Group.ModularCharacter

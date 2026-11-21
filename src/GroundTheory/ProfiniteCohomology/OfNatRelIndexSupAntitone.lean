@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.OpenNormal
 import GroundTheory.ProfiniteCohomology.Supernatural
 import Mathlib.Topology.Sheaves.Presheaf

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDivisorGoodPointBranches
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.GoodPointBranchExists
 set_option maxSynthPendingDepth 1

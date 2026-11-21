@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoeffProdPowFirstAddSecondThreeGroups
 open MvPowerSeries GlobalTheory GlobalTheory.Katz GlobalTheory.QLog
 set_option maxHeartbeats 1000000 in

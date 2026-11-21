@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModDefs
 import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.Statement
 import Mathlib.RingTheory.SimpleRing.Principal

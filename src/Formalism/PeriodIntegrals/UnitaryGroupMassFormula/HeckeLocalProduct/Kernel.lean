@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.IsUnitaryNormOf
 import Lemmata.MiscLemmasM.Imports
 import Mathlib.Topology.Algebra.Group.Units

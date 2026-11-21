@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth
 
 namespace Formalism.FourierDecayAlt.P.StabilizerDisintegration.MM

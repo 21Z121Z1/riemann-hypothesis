@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualTopSimpleStacked
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PChartRankAdjoin
 set_option maxSynthPendingDepth 1

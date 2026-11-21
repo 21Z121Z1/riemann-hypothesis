@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.ShortVectorEveryPlace
 import Formalism.HermitianLattices.FinalNeighbourConstruct
 import Mathlib.Analysis.Real.Pi.Bounds

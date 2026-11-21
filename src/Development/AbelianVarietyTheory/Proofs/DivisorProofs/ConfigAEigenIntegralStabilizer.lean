@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsIsotropicVectorTranslationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsNonzeroIsotropicIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFundamentalDomainClosureStatement

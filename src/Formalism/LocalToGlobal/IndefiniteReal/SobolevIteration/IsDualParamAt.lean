@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.SobolevIteration.IsLowPairZero
 import Formalism.LocalToGlobal.IndefiniteReal.FockTheta.UnitBracket
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.JetBounds.Statement
 import Formalism.GaussJetBounds.GaussJetProofs.TheoremAMatrixEntries
 import Formalism.MirabolicMackeyTheory.MirabolicIsMackey

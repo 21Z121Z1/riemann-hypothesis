@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ParameterSizeConditionsNumericBounds
 import Development.AbelianVarietyTheory.Definitions.Divisors.KernelNormConstantSpec
 import Formalism.LocalToGlobal.IndefiniteReal.LinksLemmas

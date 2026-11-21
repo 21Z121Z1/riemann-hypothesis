@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsEuclideanSectionsPower
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ImportsBisAlt
 set_option maxSynthPendingDepth 1

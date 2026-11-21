@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OrderHopfComultiplicationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionOrderComultiplicationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TorsionOrderHopfIsoStatement

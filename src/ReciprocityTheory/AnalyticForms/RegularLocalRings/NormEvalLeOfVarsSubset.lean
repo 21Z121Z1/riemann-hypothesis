@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ExistsClosedOfChartIdeal
 
 namespace ReciprocityTheory.AnForm.R

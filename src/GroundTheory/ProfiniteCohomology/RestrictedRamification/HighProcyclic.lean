@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.Procyclic
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer
 set_option maxSynthPendingDepth 1

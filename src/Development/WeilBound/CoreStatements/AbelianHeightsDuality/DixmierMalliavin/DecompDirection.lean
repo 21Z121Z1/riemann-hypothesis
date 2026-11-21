@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.DixmierMalliavinHaar
 import GroundTheory.AutomorphicForms.DixmierMalliavinLine
 import GroundTheory.AutomorphicForms.DixmierMalliavinProducts

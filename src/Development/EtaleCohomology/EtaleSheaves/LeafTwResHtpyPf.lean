@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafTwPairHtpyPf
 import Mathlib.Algebra.Homology.HomotopyCategory.KInjective
 

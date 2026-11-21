@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ExponentGrids.IntegerShiftClosedExponent
 import Formalism.LocalToGlobal.Divisibility.JetBounds.IsExpansion
 

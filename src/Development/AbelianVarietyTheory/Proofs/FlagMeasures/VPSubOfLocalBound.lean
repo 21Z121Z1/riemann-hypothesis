@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.HasDerivAtOrbitTens
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.StepSpacePropsOfDiff
 

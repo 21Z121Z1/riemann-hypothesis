@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GKModules.Garding
 import GroundTheory.AutomorphicForms.GKModules.RightRegular
 open MeasureTheory GroundTheory.Automorphic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HarishChandraRegularity
 import GroundTheory.AutomorphicForms.ArchimedeanWhittaker.Density
 import Mathlib.RingTheory.Coalgebra.CoassocSimps

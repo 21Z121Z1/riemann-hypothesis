@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.EllipticRational
 import GroundTheory.GlobalFields.ComplexMultiplication.EllipticResidues
 import Mathlib.Order.CompletePartialOrder

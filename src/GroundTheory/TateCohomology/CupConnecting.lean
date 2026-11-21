@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.CupProduct
 import Mathlib.RepresentationTheory.Homological.GroupCohomology.LongExactSequence
 set_option maxSynthPendingDepth 1

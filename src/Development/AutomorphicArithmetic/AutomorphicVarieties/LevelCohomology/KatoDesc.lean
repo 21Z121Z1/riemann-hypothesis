@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.KatoBkMap
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.KatoFinExt
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.KatoBasis

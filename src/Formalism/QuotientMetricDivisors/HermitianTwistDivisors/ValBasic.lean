@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.QuotientMetricDivisors.ProdFormula
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Tactic.ReduceModChar

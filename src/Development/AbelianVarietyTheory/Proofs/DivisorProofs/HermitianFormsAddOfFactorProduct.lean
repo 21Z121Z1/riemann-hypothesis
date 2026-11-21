@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaNonvanishingBundleGenerated
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProductAbelianUniformization
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LbIsoOfSameFactor

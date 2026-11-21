@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PublishedInputsImplyTraceFormulaStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CuspidalTraceMultiplicityGivenStatement
 open MeasureTheory Set Filter NumberField IsDedekindDomain

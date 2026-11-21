@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.RootOfUnityEightQMemCoeffGaloisSubfield
 import Formalism.LocalToGlobal.GaloisLevelStructure.TiedLevel
 import Formalism.LocalToGlobal.UnitaryNorms.CharTied

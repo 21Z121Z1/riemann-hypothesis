@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondConfigurationTripleCompatibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondConfigurationUnramifiedIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SecondConfigurationArchimedeanIdentityStatement

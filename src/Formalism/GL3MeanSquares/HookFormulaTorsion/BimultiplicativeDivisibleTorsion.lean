@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.InvariantSeriesBidegreeOneOne
 import Formalism.LogVandermondeBounds.LogVandermondeProofs.TaylorLogMetric
 import Mathlib.Analysis.CStarAlgebra.Classes

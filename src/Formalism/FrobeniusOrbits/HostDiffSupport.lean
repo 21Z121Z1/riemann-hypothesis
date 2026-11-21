@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.Statement
 import Mathlib.RingTheory.DedekindDomain.Different
 

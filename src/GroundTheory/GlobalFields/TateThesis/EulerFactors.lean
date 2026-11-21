@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsInfinite
 import GroundTheory.GlobalFields.TateThesis.EulerFactorsFinite
 import GroundTheory.GlobalFields.TateThesis.GlobalZeta

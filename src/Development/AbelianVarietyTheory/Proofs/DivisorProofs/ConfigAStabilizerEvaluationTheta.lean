@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SobolevBoundFiniteFamilyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerThetaRealStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAStabilizerThetaFiniteStatement

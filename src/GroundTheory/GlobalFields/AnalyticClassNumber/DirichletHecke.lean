@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.AnalyticClassNumber.DirichletHeckeLocal
 import GroundTheory.GlobalFields.AnalyticClassNumber.HeckeContinued
 import Mathlib.NumberTheory.LSeries.DirichletContinuation

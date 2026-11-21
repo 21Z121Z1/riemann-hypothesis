@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.TensorProductTheorem.CentralCusp
 import GroundTheory.AutomorphicForms.TensorProductTheorem.PeterssonComplement
 import GroundTheory.AutomorphicForms.UnitaryAdmissible.CuspCentral

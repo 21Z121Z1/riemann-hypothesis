@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.LiftLatInst
 import Formalism.LocalToGlobal.Columns.RowFormsRat
 import Formalism.LocalToGlobal.Columns.WmLemmas

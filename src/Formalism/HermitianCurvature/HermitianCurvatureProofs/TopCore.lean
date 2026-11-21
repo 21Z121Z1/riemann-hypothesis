@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WeightProductGermIndep
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OneSubPowLe
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IsCompactRoots

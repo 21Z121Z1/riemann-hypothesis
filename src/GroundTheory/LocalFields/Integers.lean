@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.Interface
 import GroundTheory.LocalFields.FiniteExtension
 import Mathlib.RingTheory.Valuation.Integral

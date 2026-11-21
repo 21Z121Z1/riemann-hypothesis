@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorInvertible
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.Picard
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.WeilDivisorTensor

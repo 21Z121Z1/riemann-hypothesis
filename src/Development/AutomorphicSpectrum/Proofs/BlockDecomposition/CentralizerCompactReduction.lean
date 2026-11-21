@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.AnisotropicOrbit
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeasurableSdot
 

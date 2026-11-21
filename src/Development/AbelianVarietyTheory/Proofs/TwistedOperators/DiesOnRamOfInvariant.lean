@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.MemSmulOfMemFlagSubOne
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsLatticeChainLatAndComap
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.UnipotentRadicalBasic

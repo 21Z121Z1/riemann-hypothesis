@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.SchurLimitBounds.ZuckermanDuality.ZuckDualTOfZuckDual
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimBdPf
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimBdPfKFin

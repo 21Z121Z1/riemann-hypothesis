@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.RealSeparation.ParabSt
 import Formalism.LocalToGlobal.IndefiniteReal.SobolevIteration.CtFullSt
 

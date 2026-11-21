@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLengthTransverseSlice
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.PLocalDimDomain
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCMLengthParameters

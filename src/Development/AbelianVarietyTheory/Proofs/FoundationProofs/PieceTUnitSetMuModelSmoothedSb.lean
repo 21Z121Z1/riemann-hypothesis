@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.SumMulCoPtSbEqSumInv
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PieceTUnitSetEqFourPieceTRaw
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.UnitPieceMuEq

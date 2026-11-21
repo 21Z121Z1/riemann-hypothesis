@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinK
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCMinD
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PhiCSpan

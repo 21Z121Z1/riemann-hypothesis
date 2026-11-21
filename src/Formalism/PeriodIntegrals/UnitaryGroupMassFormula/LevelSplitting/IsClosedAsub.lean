@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LevelSplitting.LeviInfUnipotentEqOne
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.SemidirectVolume.ModTop
 

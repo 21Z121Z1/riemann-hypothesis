@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ActSingleNeZero
 import Formalism.RealPlaceAnalysis.FinalF
 import Formalism.RealPlaceAnalysis.QuotientSettingHolds

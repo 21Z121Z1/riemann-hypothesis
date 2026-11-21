@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalLattices.LocModSt
 import Development.WeilBound.CoreStatements.LocalThetaKernels.IwasLoc
 import Mathlib.Data.Matrix.ColumnRowPartitioned

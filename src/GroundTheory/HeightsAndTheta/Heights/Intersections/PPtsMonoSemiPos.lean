@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterBridgeA
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StPtsMonoSemiPos
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StSheetHessPSD

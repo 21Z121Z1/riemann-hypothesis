@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.CommutativeAlgebra.StepOrderRes
 import ReciprocityTheory.DualLattices.PowMemCarrier
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RiEasy

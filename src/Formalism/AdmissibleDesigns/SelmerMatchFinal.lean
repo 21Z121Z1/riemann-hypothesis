@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.H1MapMemLcH1
 import Formalism.AdmissibleDesigns.CocZeroOfUnr
 

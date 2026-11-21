@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.ExistsEtaleKummerChernClassCochainOfDegreeValues
 import Development.EtaleCohomology.TateTwists.EtalePrimitiveRootsExistLocally
 import Development.EtaleCohomology.TateTwists.EtaleKummerTriangleExists

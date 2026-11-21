@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.NormFibrations.MvBlowup
 
 namespace ReciprocityTheory.ChartRestriction.G.AR.Up.HE

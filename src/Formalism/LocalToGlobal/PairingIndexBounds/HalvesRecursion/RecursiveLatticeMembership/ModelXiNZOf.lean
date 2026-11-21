@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.PairingIndexBounds.HalvesRecursion.RecursiveLatticeMembership.Bridge
 import Formalism.LocalToGlobal.PairingIndexBounds.ModelLatticeMoves.MovesComposeU
 

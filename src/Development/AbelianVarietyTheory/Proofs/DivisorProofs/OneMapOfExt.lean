@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ConjTupRefl
 import Formalism.LocalToGlobal.IndefiniteReal.LinksComap
 import Formalism.LocalToGlobal.IndefiniteReal.FWTie

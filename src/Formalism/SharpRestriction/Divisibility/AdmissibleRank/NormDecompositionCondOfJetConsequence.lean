@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.ChainOperators.CutKapD
 import Formalism.SharpRestriction.Divisibility.WeightDegreeSizes
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ValBasic

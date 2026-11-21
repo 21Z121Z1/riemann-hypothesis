@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactLeftLast.Pz
 import Mathlib.LinearAlgebra.Eigenspace.Pi
 import Mathlib.Order.CompletePartialOrder

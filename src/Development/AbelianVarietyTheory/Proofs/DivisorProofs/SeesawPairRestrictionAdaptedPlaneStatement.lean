@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairRestrictionAdaptedPlane
 
 open scoped TensorProduct NNReal Matrix

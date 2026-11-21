@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPullByCompAlt
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConductorOrderFiniteIntegersStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmUniformizationAlgebraicModelStatement

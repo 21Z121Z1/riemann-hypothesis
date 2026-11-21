@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CompactModNearOfFiltration
 import Development.AbelianVarietyTheory.Definitions.Divisors.LocallyCompactUnipFlag
 

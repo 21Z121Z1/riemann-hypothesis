@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.SideOf
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.SmallFrameAtColumnStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.WPtFrame

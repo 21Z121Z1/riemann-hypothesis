@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRegMassNearSmall
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRegFormCompare
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRegBallMass

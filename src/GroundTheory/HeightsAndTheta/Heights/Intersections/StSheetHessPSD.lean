@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.NoCommonComponentCoordinatesPlane
 import Mathlib.LinearAlgebra.Matrix.PosDef
 set_option maxSynthPendingDepth 1

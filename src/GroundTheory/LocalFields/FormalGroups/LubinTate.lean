@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.FormalGroups.Basics
 import Mathlib.RingTheory.MvPowerSeries.Expand
 

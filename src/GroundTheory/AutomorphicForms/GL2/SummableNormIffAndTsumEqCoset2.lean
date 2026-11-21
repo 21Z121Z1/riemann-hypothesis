@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.LatticePoisson
 import GroundTheory.GlobalFields.TateThesis.TraceDualLattice
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoLocTors
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.SoCobPlace
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.CobDown

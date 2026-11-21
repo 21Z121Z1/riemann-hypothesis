@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PChangeOfModel
 import GroundTheory.HeightsAndTheta.Heights.Intersections.QuotientMapImageZInjective
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ExistsUnique

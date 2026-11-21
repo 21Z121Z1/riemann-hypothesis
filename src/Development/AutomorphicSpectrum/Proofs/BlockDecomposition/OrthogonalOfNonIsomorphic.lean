@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HaarRightInvariantStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegralEqL2InnerStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RightTranslateIsometryStatement

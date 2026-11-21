@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumThreeComm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HTensVmvLeft
 open scoped TensorProduct Matrix

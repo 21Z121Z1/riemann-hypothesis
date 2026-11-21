@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.AdjFormula
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsDeltaPsi
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IndexTransferAlongProjection

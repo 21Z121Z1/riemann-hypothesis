@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.LaplaceOperators.KTypeLemma.IsKRelationCompactWordAction
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.KUnitB
 import Mathlib.Algebra.Ring.IsFormallyReal

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousFrameEquivSymm
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BlockDeterminantLaw
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeviDecompOfBlockDet

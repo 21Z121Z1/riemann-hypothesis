@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EvalPol
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RowDivRowWeight
 import Formalism.PieriBlockIdeals.PieriColumnMinors.RealLocalDeltaNabla

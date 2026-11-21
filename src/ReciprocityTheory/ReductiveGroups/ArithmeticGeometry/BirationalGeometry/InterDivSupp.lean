@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSuppA
 import Lemmata.GeneralBFactTerForm.Imports
 import Mathlib.RingTheory.GradedAlgebra.Radical

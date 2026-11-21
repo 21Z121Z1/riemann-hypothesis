@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.CompanionOfBaseTied
 import Formalism.LocalToGlobal.GroupLattices.TiedFamilies.TieTrC
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.CmpCMemMIff

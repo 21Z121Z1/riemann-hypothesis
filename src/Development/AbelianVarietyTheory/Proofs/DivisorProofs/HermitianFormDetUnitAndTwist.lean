@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsAevalEqOfSeparable
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PhiMulSelf
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.PhiMulTranspose

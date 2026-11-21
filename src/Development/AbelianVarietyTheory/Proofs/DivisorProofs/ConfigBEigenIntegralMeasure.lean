@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinThetaPairingStabilizerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinHaarStabilizerUnfoldingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBStabilizerIntegralFactorStatement

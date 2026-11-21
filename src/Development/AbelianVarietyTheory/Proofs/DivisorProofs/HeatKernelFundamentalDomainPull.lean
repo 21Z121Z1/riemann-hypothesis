@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvatureSumOfSectionsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CurvaturePullbackOneVectorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SumLambdaPullRhoIdentityStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.ExistsCoprimeSmulCohomologyTwoGsKernel
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation
 set_option maxSynthPendingDepth 1

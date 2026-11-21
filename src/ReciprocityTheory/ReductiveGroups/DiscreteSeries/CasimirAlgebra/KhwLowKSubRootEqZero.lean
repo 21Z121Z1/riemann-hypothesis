@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.CasimirAlgebra.RhoEqRhoCAddRhoN
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.BochnerInequality.NumRho
 

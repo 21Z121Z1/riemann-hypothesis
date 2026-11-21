@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.EigLatLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FreeOrbitProjectorEigen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ISupIndepRangeInc

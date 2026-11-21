@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.EntryAOneParity
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.AtPiEqRescale
 

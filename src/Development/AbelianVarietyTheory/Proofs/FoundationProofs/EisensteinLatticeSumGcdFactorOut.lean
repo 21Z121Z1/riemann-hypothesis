@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.RegularizedEisensteinLatticeSumEqTsumOfKillsStatement
 import Mathlib.NumberTheory.LSeries.Dirichlet
 import Mathlib.Tactic.ENatToNat

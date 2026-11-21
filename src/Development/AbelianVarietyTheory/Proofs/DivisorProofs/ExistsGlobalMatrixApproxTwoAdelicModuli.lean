@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CompletedStandardAdelicLatticeProperties
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsNormMulMemHatId
 open scoped Pointwise

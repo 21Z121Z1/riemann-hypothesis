@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.CAFInvol
 import Development.WeilBound.ThetaLifts.Reductions.WeilPairs.ExistsForm
 open scoped TensorProduct Matrix

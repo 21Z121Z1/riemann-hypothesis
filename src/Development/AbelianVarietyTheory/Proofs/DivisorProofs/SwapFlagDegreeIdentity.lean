@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometricCombEquiv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagVarietyGradedLinesIsometricStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericDegreeEqFlagDegreeStatement

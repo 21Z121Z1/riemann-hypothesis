@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OneAddXMulDerivativeBinomial
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TeichPow
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SpanRangeMap

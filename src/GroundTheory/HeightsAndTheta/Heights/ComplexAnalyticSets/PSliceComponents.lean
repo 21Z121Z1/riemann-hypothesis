@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StSliceComponents
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartHomogenise
 import GroundTheory.HeightsAndTheta.Heights.ChowForms.PChartDehomog

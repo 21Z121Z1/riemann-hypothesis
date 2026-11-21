@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.GTLower
 import Formalism.LocalRingCardinality.FactDelDualNabla
 import Formalism.SharpRestriction.AdmissibleParameterJoins.SfromGLd

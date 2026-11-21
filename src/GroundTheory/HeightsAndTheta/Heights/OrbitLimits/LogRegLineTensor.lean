@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PPtsAddFirst
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PDeLeSemiPos
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula

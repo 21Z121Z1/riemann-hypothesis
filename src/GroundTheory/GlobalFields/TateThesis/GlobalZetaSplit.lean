@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.GlobalZeta
 import GroundTheory.GlobalFields.TateThesis.IdeleMeasureQuotient
 

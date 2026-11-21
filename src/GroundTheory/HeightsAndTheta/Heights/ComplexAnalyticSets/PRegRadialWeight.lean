@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StStokesOnChart
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StRadialPrimitive
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StMaDensLogPow

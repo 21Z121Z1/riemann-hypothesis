@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StConeAvoidsExists
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLeadIdealDim
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StLinearFormCut

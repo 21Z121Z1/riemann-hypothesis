@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AeSS
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OoConvOf
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.QuadAOf

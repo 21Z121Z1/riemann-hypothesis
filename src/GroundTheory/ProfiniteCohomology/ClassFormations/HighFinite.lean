@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.TateCup
 import GroundTheory.TateCohomology.CupTateNatural
 import GroundTheory.TateCohomology.CupFunctorial

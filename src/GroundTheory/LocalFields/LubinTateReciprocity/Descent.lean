@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.LubinTateReciprocity.TwistedPoint
 import GroundTheory.LocalFields.CompletedUnramified
 import GroundTheory.PowerSubgroups.CountableNeighbourhoods.DescentPowerSubgroups

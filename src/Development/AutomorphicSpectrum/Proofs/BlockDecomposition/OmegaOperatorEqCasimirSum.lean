@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.OmegaOpCommLiB
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.ContinuousConjFin
 set_option maxSynthPendingDepth 1

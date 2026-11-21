@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CapDegreeSymmetric
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairChernExchangeIdentityStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagPairCapDegDifferenceZero

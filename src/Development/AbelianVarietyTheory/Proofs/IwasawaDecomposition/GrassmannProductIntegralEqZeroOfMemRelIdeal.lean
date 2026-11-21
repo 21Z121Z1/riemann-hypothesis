@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RootToFlag
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FlagMapChernRootsX
 import Formalism.DegreeFormula.PointDegree.PowSum

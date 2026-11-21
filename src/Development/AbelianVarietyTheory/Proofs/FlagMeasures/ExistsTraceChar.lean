@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsPrincipalIdealRingOfHenselian
 import Mathlib.Algebra.GroupWithZero.Submonoid.CancelMulZero
 open ValuativeRel Formalism.MainNotions.S.Loc GlobalTheory.HL MeasureTheory

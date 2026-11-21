@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.EmbEquivSymmApply
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.CommGroupMulMulEqMulInvMulMulMul
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsRestRest

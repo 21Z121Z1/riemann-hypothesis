@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.BaseSt
 import Formalism.LocalToGlobal.UnitaryNorms.RealPl
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.InfEmbUnique

@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.CompositeFormulaOfDensities
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HsInnerAddSmulRight
 import Mathlib.CategoryTheory.Countable

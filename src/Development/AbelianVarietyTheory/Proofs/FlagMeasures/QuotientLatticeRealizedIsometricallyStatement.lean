@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.QuotientLatticeRealizedIsometrically
 open Formalism.HN Formalism.HermitianLatticesTheory Matrix NumberField Finset
 set_option maxHeartbeats 1000000 in

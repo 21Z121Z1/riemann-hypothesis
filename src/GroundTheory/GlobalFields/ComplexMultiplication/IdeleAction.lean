@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

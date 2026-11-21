@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.HuaDeterminantIntegrableOfLt
 open MeasureTheory
 open GlobalTheory.CompanionTheory.SiegelND.Integ.Arch

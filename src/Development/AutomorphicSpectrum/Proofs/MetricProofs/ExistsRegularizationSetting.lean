@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.PBoundedChartComparison
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsSmoothConjInvariantMetric
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.ExistsConjInvariantMollifier

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.RootsOfUnity.NuRecord
 
 open NumberField Formalism.BasicNotions

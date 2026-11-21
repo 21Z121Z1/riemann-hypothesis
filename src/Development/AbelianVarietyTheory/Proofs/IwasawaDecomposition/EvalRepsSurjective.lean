@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.DataG
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.RingTheory.Henselian

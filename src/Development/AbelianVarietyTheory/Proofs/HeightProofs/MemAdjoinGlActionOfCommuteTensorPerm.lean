@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.IsLieDataCircle
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric
 import Mathlib.Tactic.ENatToNat

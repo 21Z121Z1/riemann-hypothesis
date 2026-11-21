@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HypercohomologyPullbackBijectiveOfQuasiIso
 import Mathlib.Algebra.Homology.HomotopyCategory.Plus
 import Mathlib.CategoryTheory.Abelian.Injective.Ext

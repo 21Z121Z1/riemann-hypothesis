@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsNefCountUpper
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsNefSmallApprox
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsNefCountUpperCurve

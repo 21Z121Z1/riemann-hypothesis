@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsReductionToProjectiveBlock
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockMetricChange
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockImageTop

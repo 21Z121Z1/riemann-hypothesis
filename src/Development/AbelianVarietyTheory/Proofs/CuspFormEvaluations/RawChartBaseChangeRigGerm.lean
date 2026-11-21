@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.PullbackSections.JetSubstPCompJetBC
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.LBPull
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermDVal

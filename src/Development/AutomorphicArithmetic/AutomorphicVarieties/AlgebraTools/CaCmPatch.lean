@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaDepthCat
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaDimFin
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.CaEquidim

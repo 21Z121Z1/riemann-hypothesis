@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BuiltBoundsCompactOfParts
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.GramLocSetCApp
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SizeAtMinusW

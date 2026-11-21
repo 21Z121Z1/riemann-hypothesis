@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.Interface
 import Formalism.LocalToGlobal.CharacterGerms.ExistsStrictMonoMinor
 import Mathlib.RingTheory.Henselian

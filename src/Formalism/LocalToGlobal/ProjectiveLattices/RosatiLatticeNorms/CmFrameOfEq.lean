@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LamPtClauses
 import Formalism.LocalToGlobal.ProjectiveLattices.RosatiLatticeNorms.LinkNum
 import Formalism.LocalToGlobal.CMDeterminantIdeals.LambdaLowerBound

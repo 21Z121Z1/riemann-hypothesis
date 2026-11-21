@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.VolumeEquality.RootBranches
 import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeetsAlg
 import Development.WeilBound.CoreStatements.VolumeEquality.ChartMeetsPoint

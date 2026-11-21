@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EisensteinCokernelLengths.FactorialValuationBounds.GaussRam
 import Formalism.GaussValuationBounds.GaussValueContraction.GaussBasic
 import Formalism.GaussValuationBounds.GaussValueContraction.GaussMul

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealMultLiftDividedPowers
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaLiftAlongRealLineBound
 

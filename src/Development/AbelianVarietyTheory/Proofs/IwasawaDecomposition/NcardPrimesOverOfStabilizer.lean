@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN

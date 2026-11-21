@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleSheaves.LeafOneLocPf
 import Mathlib.RingTheory.Etale.StandardEtale
 

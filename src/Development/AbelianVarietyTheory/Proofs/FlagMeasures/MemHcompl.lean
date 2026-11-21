@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.StatementMass
 
 open NumberField Matrix GlobalTheory.Mass Formalism.HermitianLatticesTheory

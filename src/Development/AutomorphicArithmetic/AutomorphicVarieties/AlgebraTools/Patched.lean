@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.ULimTrans
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.TowerCompl
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.QRegLim

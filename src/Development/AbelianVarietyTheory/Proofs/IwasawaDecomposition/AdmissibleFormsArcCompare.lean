@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CoefSetNonemptyOfNonneg
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.IsPullCubicalId
 open AlgebraicGeometry CategoryTheory Limits NumberField

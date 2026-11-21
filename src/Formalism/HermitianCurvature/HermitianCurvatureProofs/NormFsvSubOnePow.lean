@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegralNormLeDecay
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FormWaveMDiff
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LimitOfModuleForms

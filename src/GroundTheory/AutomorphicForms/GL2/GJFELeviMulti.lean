@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJFELeviPeel
 import GroundTheory.AutomorphicForms.GL2.GJFEBlock
 import GroundTheory.AutomorphicForms.GL2.GJFELeviConv

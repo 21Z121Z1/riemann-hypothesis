@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeComponents
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsConeChart
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.LocalMultRadical

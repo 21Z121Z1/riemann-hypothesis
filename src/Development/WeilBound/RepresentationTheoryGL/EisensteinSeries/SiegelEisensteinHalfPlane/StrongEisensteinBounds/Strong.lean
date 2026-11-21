@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.RepresentationTheoryGL.EisensteinSeries.SiegelEisensteinHalfPlane.SchwartzBruhatMajorants.SiegelMultOf
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.StandardSectionExistsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ChartSectionExistsStatement

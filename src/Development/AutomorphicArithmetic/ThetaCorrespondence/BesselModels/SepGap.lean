@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.BesselModels.BurGapOfHyp
 import Development.AutomorphicArithmetic.ThetaCorrespondence.BesselModels.GapArith
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.SeparationLineOfBessel

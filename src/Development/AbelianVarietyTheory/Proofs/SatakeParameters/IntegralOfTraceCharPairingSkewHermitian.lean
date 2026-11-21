@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.Gam0
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.LocalThetaPairExistence
 open Matrix

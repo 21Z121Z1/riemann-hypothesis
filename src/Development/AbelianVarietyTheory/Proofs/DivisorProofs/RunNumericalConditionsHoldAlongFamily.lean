@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IndexBoundParameterRequirementsEventuallyFamilyStatement
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.RowsOfPageFix
 import Formalism.LocalRingCardinality.NFLeTwoMulTSq

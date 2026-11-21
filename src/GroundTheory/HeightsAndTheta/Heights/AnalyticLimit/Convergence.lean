@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.HessCEqZeroOfEventuallyEqZero
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.ConvergenceStatements
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.Telescoping

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsFlagBundleIff
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FieldFlagsConjugateByAutomorphism
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagsOverFieldIrreducibleJoinStatement

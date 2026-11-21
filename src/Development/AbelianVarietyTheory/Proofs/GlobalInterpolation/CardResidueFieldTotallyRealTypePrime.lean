@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GSplit
 import Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets
 import Formalism.LocalToGlobal.HermitianForms.PsiZeroNontrivialCharacter

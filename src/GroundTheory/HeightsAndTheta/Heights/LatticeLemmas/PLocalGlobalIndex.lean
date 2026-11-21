@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.StatementsLocalGlobalIndex
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PLatticeOfLocalisations
 import GroundTheory.HeightsAndTheta.Heights.LatticeLemmas.PLocalChange

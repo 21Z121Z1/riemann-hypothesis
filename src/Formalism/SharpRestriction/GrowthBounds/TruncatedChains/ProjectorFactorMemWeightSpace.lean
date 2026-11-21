@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.ProjectorCoeffSuccIndex
 import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.CommPow
 import Formalism.SharpRestriction.GrowthBounds.TruncatedChains.PfTrunc

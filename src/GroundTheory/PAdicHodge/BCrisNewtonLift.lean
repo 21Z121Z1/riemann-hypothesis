@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.TiltField
 import GroundTheory.PAdicHodge.ExtRobbaBounded
 import GroundTheory.PAdicHodge.KerFontaineThetaCompFrobeniusEquivSymmPow

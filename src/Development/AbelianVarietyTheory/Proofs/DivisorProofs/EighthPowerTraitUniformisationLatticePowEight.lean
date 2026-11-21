@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.LabRange
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LiftCompSquare
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.UniformizationEighthPowerExists

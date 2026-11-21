@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.CyclotomicDiscriminants.SZcTPf
 import Development.EtaleCohomology.CyclotomicDiscriminants.SChainPf
 import Mathlib.Algebra.AffineMonoid.Basic

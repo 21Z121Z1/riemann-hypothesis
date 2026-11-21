@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.ShareBallB
 import Mathlib.Analysis.Matrix.PosDef
 

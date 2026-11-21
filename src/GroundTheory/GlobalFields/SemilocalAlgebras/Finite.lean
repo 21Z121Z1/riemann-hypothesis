@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.SemilocalAlgebras.Approximation
 import GroundTheory.GlobalFields.SemilocalAlgebras.LocalDegree
 import Mathlib.Topology.Connected.Separation

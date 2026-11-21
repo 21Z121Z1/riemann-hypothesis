@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.NDLocC
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CovariantDegrees
 

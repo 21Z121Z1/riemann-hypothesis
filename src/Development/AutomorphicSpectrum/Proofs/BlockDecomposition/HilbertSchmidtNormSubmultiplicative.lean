@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.Complexify
 import Mathlib.Algebra.Order.Star.Real
 open Finset Matrix PositivityTheory.RgHe.Frame

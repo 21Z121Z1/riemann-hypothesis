@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.EisensteinLatticeFunctionIsModularFormCoeffSeqStatement
 import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
 import Mathlib.RingTheory.SimpleRing.Principal

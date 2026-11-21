@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Dets
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

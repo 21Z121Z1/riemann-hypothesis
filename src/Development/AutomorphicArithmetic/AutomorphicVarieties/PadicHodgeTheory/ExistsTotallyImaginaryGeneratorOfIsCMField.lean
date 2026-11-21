@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PadicHodgeTheory.ExistsRealSplitPrimitiveElementPadicFiniteExt
 import Mathlib.NumberTheory.Padics.Hensel
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsCMOfConj

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.TailLogBoundLocalIntegrable
 open MeasureTheory Filter Topology ReciprocityTheory.AnForm.M
 set_option maxHeartbeats 1000000 in

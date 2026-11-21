@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.ExceptionalGroupG2.RigidityG2.MultOne
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.RigidityTheorems.IrredA
 

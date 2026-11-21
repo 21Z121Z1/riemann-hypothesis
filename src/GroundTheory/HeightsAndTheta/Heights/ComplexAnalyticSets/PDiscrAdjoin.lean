@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StDiscrAdjoin
 import Mathlib.RingTheory.DedekindDomain.Different
 import Mathlib.RingTheory.Henselian

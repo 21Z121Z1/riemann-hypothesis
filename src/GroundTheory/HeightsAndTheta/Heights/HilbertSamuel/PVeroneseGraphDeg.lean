@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsVeroneseGraph
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PVeroneseArith
 import GroundTheory.HeightsAndTheta.Heights.Intersections.AvoidRing

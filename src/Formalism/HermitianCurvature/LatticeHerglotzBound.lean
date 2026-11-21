@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementTB
 import Mathlib.Algebra.Module.ZLattice.Covolume
 import Mathlib.RingTheory.SimpleRing.Principal

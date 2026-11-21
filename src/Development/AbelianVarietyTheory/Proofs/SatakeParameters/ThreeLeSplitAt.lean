@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CapLeWidth
 open Formalism.MainNotions Formalism.BasicNotions Formalism.MainNotions.G Classical
 

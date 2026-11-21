@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.PseudoCharacterApplyIdempotentNatLe
 open Formalism.MainNotions.N GlobalTheory.PsChar
 set_option maxHeartbeats 1000000 in

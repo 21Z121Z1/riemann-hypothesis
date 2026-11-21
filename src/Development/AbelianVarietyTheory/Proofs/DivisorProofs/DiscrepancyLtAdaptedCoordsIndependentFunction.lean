@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameFormsResidueIndependence
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncChartKltCriterion
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter

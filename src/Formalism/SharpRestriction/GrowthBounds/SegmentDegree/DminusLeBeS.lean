@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.TauDegreeOnPathBound
 import Formalism.ThetaLogCoordinates.ResidueClassEstimates.VandermondeRankEstimates.LDigits
 import Formalism.SharpRestriction.GrowthBounds.SegmentDegree.NegDminusLeMu

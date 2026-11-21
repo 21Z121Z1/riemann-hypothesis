@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ExistsUniqueLeftBasisCoordsAdicCompletion
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeCptMultihomogForm
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.LatticePatchAtPrimesStatement

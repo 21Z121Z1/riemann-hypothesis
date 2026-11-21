@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsIsLogMult
 import Mathlib.SetTheory.ZFC.PSet
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter

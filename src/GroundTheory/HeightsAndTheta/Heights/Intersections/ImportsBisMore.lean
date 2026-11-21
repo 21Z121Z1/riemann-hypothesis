@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ExistsIntValuationLtOne
 import GroundTheory.HeightsAndTheta.Heights.Intersections.ImportsMoreExtra
 import GroundTheory.HeightsAndTheta.Heights.Intersections.FunFieldLeLocRing

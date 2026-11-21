@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncComponentHolomorphicAtlasStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SncAtlasRankDropPotentialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.BoundaryPotentialSectionAtlasStatement

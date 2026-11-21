@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataSpaces
 import Formalism.LocalToGlobal.Divisibility.TuplesLemmas
 import Mathlib.RingTheory.Henselian

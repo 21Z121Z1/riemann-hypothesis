@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneRestrictionPairThird
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContinuousGlueComp
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DoubledSpaceDarbouxCharacterStatement

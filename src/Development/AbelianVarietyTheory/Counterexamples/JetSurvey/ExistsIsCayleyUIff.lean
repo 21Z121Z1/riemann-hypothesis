@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UpqRep
 import Formalism.FormalDegreeBessel.FormalDegreeRatio.GBasic
 import Mathlib.Analysis.Matrix.Spectrum

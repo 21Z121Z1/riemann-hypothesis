@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.QuasicoherentCohomology.IsIsoCechComplexMapPresheafCubeRes
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.AlgebraicGeometry.Modules.Sheaf

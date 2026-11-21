@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.LiftFactorization.StrongOf
 import Development.AutomorphicArithmetic.Foundations.Convolution.SphericalIdeles.QuadLift
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GelfandKazhdanDualOfHyps

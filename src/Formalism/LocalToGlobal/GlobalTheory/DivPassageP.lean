@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.DivPassage
 import Formalism.LocalToGlobal.GlobalTheory.HLatOpsP
 import Formalism.BranchSandwichDivisors.BranchIsometryProofs.Transfer

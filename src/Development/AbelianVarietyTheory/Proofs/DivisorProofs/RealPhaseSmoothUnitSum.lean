@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticHeightZeroSelfIntersectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticHeightScalesMultipleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothFunctionHeightWeightEstimateStatement

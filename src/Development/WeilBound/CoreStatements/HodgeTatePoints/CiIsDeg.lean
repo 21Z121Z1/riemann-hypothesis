@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.OfMem
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.IsFFCurve
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.LocalComponentsSurjective

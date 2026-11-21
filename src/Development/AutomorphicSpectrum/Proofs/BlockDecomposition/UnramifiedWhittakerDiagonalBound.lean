@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SplitWhittakerBoundHypothesis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WhittakerContinuity
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WeilModulusHypothesis

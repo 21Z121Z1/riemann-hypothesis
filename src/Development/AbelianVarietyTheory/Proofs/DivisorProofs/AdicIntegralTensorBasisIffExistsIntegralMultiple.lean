@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EventuallyAdicIntegralSpanClosedMulStar
 import Mathlib.Algebra.AffineMonoid.Basic
 open Matrix NumberField IsDedekindDomain GlobalTheory.AdicSpan

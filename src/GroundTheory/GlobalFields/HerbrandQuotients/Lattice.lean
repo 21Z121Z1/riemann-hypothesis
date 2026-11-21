@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.HerbrandQuotients.Cyclic
 import GroundTheory.GlobalFields.HerbrandQuotients.RationalForm
 import Mathlib.Algebra.Ring.IsFormallyReal

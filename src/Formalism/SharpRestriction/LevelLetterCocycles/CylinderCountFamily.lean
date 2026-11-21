@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.FamilyStatementsLocal
 import Formalism.PeriodIntegrals.ExplicitFormulaCounts.SqfCounts
 import Formalism.SharpRestriction.LevelLetterCocycles.PrimesEffectiveChebotarev

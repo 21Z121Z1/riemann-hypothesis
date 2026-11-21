@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.SlopeExcess.ConstRankBaseLePolyFourth
 import Formalism.SharpRestriction.GrowthBounds.TopChoiceBounds
 import Formalism.SharpRestriction.GrowthBounds.JointsLit

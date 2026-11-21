@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StLemmaEEnergy
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.EnergyStep
 set_option maxSynthPendingDepth 1

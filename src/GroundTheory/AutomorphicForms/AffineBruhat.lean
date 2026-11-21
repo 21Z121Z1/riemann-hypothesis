@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GLnLattice
 import GroundTheory.AutomorphicForms.FiniteBruhat
 import Mathlib.GroupTheory.SemidirectProduct

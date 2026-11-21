@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.HighestWeightUniqueness.UnitaryOfBlockWMem
 import Formalism.HermitianCurvature.StatementQ
 import Formalism.SharpRestriction.CuspSpanNormBounds.RelevantZeroGramTerms

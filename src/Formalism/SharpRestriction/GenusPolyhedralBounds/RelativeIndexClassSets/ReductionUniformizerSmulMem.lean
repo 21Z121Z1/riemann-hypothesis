@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GenusPolyhedralBounds.RelativeIndexClassSets.ZeroGeneratorsLeThetaSpan
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HasseOrdBd
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.HassePresH

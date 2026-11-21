@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe
 import GroundTheory.LocalFields.ExamplesCharZero
 import Mathlib.Analysis.SpecialFunctions.RegularizedHypergeometric

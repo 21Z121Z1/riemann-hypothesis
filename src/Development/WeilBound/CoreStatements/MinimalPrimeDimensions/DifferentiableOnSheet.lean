@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.IntegralBallPow
 import Development.WeilBound.CoreStatements.MinimalPrimeDimensions.EvaluationGenEqZero
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.ConeBall

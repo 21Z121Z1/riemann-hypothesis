@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.TameExtension
 import GroundTheory.LocalFields.LocalArtinTransport
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerOrd

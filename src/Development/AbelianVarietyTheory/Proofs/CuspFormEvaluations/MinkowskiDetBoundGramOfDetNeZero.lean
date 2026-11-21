@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.TransferenceA
 import Mathlib.Analysis.Matrix.Order
 import Mathlib.RingTheory.Etale.Weakly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.Brauer.CrossedProductRegular
 import GroundTheory.Brauer.CrossedProductInj
 import GroundTheory.Brauer.BaseChange

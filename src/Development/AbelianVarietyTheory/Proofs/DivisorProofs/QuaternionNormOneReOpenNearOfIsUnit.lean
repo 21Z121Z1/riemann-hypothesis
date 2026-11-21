@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOpen
 open NumberField IsDedekindDomain GlobalTheory.QSA
 open scoped Quaternion Topology

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.TrivAtOfCfEqOne
 import Mathlib.Topology.UniformSpace.Uniformizable
 open scoped InnerProductSpace BigOperators

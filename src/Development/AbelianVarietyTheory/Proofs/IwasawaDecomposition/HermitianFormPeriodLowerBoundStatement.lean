@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HermitianFormPeriodLowerBound
 open ReciprocityTheory.ChartRestriction.G.Geo.Tor
 open scoped Matrix

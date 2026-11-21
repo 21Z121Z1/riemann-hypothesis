@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PlanePropOfAllStrongApproxStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CmExtensionImaginaryGeneratorStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PlaneApproxOfQuaternionApproxStatement

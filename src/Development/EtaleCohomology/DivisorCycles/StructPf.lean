@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.DivisorCycles.CycleCount
 
 open Matrix PositivityTheory.AutomorphicGaloisHodgeTate.Div

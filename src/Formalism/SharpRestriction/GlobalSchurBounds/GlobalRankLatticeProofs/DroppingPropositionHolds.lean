@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ThickExists
 import Formalism.SharpRestriction.GlobalSchurBounds.CMFieldLemmas
 

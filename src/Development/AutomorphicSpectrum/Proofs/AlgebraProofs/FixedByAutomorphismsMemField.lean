@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Data.Rat.Star
 import ReciprocityTheory.ReductiveGroups.LatticeEmbeddings.IotaPlaceB

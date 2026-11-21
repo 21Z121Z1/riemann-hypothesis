@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.StatementW
 import Formalism.PieriBlockIdeals.StatementLA
 import Mathlib.Algebra.Order.Ring.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.EisensteinS2LimitFormula
 import Mathlib.FieldTheory.IsAlgClosed.Classification
 import Mathlib.LinearAlgebra.SymmetricAlgebra.Basis

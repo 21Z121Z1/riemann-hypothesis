@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.NGalTiedRowLoc
 import Formalism.LocalToGlobal.Columns.MtRowFrame
 import Formalism.LocalToGlobal.IndefiniteReal.ConjSubConjSub

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.NmPinvOfPlace
 import Formalism.SharpRestriction.GrowthBounds.MultisetValuation.EaGeCOfNorm
 

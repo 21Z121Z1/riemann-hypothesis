@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.PrimUniqPf
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermFunPf
 

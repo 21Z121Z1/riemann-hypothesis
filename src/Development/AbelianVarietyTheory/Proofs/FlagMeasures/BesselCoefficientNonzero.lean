@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.JEqOrbInt
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.AmplifierOfHypotheses
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.BesselGapDimensionFormula

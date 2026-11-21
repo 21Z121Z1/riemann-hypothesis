@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.PadicCyclotomicFields.GcohTateB
 import GroundTheory.ProfiniteCohomology.LocalTateDuality.MainDefs
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GaloisLevelStructure.Checks
 import Development.AbelianVarietyTheory.Definitions.GaloisGeometry.HeckeSplitOne
 

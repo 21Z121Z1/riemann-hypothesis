@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsBlockMeasureChange
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.SupBoundCountLattice
 import GroundTheory.HeightsAndTheta.Heights.MatrixCharts.DetIneq

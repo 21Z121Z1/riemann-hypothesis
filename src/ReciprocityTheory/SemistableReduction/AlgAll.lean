@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.RankEqualityHolds
 import ReciprocityTheory.SemistableReduction.GenericImageFinite
 import ReciprocityTheory.SemistableReduction.IntegralClosureRankAndResidueTrdegLe

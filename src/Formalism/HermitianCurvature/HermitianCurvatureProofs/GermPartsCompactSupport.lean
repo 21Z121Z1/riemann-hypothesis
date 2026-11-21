@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FmSmulLeft
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.WaveLocBOf
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PsiNegBetaL

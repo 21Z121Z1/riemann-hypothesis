@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.WhitGenLowOf
 
 open NumberField InfinitePlace IsDedekindDomain HeckeCharacterZeroLocus.SiegelWeilU

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResidueFieldMapCompCongr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TopologicalKrullDimGen
 open CategoryTheory Limits AlgebraicGeometry

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsTangentLiftCoefficientsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelEmbeddingSecondStatement
 

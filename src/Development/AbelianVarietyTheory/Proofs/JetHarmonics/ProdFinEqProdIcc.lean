@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementM
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.Interlace
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.Imports

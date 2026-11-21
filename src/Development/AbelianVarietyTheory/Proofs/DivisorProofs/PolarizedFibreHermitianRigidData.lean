@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IsProjOverIffIsProperAndExistsIsAmpleLB
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaFunctionSectionPowerStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PolarizedFibreUniformizationModelStatement

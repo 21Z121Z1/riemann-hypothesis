@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HarderNarasimhan.DefsPl
 import Mathlib.Algebra.AffineMonoid.Basic
 import Mathlib.Algebra.Order.Archimedean.Real.Hom

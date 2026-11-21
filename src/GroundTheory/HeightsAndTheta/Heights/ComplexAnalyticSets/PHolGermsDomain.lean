@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StZariskiAnalyticNormality
 import Std.Tactic.BVDecide.Normalize.Prop
 set_option maxSynthPendingDepth 1

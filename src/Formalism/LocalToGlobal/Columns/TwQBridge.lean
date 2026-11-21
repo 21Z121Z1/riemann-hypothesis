@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.TwQDense
 import Formalism.LocalToGlobal.Columns.TwQDefs
 import Formalism.LocalToGlobal.Columns.TwQSpP

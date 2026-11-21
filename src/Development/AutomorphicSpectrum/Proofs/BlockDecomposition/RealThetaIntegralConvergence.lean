@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BndIUnits
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ContinuousRealWhittakerStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormRealWhittakerTorusLeStatement

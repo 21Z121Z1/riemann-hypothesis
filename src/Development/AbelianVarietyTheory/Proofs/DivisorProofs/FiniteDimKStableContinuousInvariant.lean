@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CmDataFromUnramifiedInvolutionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianFormIntegralLatticeExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianRealPlaceSignatureNormalStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.UniformLiftingOfSectionsStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.RelativelyAmpleConsecutiveVeryAmpleStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.VeryAmpleTensorPowerSectionsStatement

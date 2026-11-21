@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.FrobeniusDifferenceIdentity
 import Formalism.SharpRestriction.LevelLetterCocycles.IsTruncIff
 

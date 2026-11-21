@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.ClosedOfCoefficientFunction
 import Formalism.SharpRestriction.GrowthBounds.MonomialFactorials.RestLjjFinProved
 

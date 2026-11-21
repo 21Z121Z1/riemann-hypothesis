@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJStandardLTensor
 import GroundTheory.AutomorphicForms.RestrictedAddHaarProduct
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalPlace

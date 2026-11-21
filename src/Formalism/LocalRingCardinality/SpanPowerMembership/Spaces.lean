@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataSpaces
 import Formalism.LocalRingCardinality.SpanPowerMembership.ExampleRanksRankComplement
 import Formalism.FockGram.SymGramPosSemidef

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshMoll
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshExtB
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.StPshLocal

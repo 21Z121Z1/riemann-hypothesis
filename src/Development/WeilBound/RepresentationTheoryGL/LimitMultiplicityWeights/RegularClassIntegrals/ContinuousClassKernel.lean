@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.TemperedRepresentationTheory.RegularClassTraces.RegClassFin
 import Development.WeilBound.ThetaLifts.Reductions.SiegelOfCore
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableDescendOfCover

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LinearBarFunctionalGoodPlace
 import Development.AutomorphicArithmetic.LocalEmbeddings.SplitLin
 open scoped TensorProduct NNReal Matrix

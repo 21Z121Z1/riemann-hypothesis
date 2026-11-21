@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.TheoremsMuLinked.CyclicReductionCohomology.FixCnt
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.OmegaConstruction
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsCyclic

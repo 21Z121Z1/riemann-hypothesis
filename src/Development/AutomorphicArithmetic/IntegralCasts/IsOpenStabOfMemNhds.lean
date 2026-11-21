@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.TransposeInverse.TransposeInv
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsOpenStabilizer
 import Mathlib.RingTheory.PiTensorProduct

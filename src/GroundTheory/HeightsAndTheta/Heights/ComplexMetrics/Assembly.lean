@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexPointsBase
 import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.PProjPointContinuous
 import GroundTheory.HeightsAndTheta.Heights.ComplexMetrics.PFractionContinuous

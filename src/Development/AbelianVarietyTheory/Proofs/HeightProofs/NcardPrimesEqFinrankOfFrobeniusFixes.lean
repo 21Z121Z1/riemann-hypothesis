@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.SmulCommClassGalIntegers
 import Mathlib.FieldTheory.Finite.Extension
 open NumberField IsDedekindDomain Polynomial GlobalTheory.FieldSize

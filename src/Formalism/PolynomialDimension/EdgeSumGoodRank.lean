@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PolynomialDimension.StatementNum
 import Formalism.PolynomialDimension.FrameSum
 import Formalism.SubspaceCounting.Statement

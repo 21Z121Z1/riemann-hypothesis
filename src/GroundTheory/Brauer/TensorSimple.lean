@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.BrauerGroup.Defs
 import Mathlib.Algebra.Central.TensorProduct
 import Mathlib.Algebra.Order.Floor.Extended

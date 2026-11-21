@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsHomOfThickenings
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.HomEqOfProportional
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsRankOneBundle

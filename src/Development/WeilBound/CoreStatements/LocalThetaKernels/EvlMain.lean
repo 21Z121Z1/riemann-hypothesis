@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.LocalThetaKernels.EvlLoc
 import Development.WeilBound.CoreStatements.LocalThetaKernels.EvlDual
 import Development.WeilBound.CoreStatements.LocalThetaKernels.EvlBridge

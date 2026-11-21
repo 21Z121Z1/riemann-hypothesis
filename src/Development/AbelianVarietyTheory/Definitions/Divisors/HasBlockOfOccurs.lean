@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.LatticeInclusionRealSettingAlt
 import Formalism.LocalToGlobal.Divisibility.RowLat
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CharAbove

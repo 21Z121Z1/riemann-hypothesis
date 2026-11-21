@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NumberFieldFamilies.HeckeStd0Of
 import Formalism.LocalToGlobal.NumberFieldFamilies.JMtInjective
 import Formalism.LocalToGlobal.NumberFieldFamilies.NPartCNdStd

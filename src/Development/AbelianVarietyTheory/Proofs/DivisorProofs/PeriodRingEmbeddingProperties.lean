@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LubinTateDcrisFrobeniusEigen
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsUnramifiedWittElementEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JMemFilPOfApprox

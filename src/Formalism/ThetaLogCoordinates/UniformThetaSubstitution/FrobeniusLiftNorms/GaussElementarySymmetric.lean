@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.UniformThetaSubstitution.StatementC
 import Formalism.SubspaceCounting.SubspaceCountingProofs.QVandermonde
 import Formalism.ArtinHasse.ArtinHasseProofs.SymmSeries

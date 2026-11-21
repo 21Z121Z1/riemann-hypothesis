@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.GramInvIntV
 import Formalism.SharpRestriction.GrowthBounds.IntegralWeylLatticeSpan.RestGramW
 import Formalism.LocalToGlobal.GlobalTheory.GL6.PBwLcInt

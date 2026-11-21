@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.RecordEigen
 import Mathlib.NumberTheory.NumberField.Discriminant.Different
 set_option maxSynthPendingDepth 1

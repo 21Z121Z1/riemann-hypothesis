@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.UniversalGeneralOfRestriction
 import Formalism.SharpRestriction.LevelLetterCocycles.EvaluationAtUniformizerPower
 import Formalism.SharpRestriction.LevelLetterCocycles.DualLemmaOfDeterminant

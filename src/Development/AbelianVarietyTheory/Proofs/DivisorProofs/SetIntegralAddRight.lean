@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnCompPeriodTranslationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperconnSquarePeriodFunctionStatement
 import Development.AbelianVarietyTheory.PublishedTheorems.Divisors₂.TranslationInv

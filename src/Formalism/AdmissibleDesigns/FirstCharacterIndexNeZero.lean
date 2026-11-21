@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.CoefChangeRec
 import Formalism.AdmissibleDesigns.CharacterTrivialWhereLattice
 import Formalism.AdmissibleDesigns.SelmerInequalityOfInputs

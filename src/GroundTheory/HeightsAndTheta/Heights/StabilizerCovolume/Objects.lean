@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.GaussCM
 import GroundTheory.HeightsAndTheta.Heights.StabilizerCovolume.TwistVecLinearIndependent
 set_option maxSynthPendingDepth 1

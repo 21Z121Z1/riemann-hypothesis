@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.LamIdealOfNotPrimePow
 import Mathlib.NumberTheory.LSeries.SumCoeff
 import Mathlib.RingTheory.SimpleRing.Principal

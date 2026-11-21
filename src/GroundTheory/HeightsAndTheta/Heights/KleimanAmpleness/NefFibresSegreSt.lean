@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.IsFieldSubalgebraSelf
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.NefGenericDVRSt
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.SpanSchwartzBruhatProductEqTop
 open GlobalTheory.SplitWeil GlobalTheory.LocFlat.CFac
 set_option maxHeartbeats 1000000 in

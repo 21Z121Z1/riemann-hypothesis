@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PlaneTransformRestriction
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TwistedRingEmbeddingRows
 open scoped TensorProduct Matrix

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.HasLevelStd
 
 open NumberField UpperHalfPlane GlobalTheory.HilbFam GlobalTheory.QFam

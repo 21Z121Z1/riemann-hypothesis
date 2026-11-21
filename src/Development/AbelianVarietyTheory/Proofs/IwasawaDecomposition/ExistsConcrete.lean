@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsLocIdOfCompletions
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AddCharIsIntegral
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.CharZeroOfSetting

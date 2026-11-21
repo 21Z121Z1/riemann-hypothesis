@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ClassFieldConsequences.RayClassField
 import GroundTheory.GlobalFields.Artin.OneDim
 import CompanionTheory.AutomorphicTheory.PlaceSeparation.ArtinA

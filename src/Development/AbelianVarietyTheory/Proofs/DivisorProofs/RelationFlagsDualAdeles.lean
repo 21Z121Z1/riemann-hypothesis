@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.NatCastNeZeroG
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChartRegularTriangularBaseStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ValuationPowerBoundsStatement

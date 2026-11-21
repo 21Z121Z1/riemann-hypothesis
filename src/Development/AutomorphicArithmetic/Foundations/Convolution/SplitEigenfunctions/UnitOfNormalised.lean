@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.RevTop
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.NormCentral
 import Development.AutomorphicArithmetic.Foundations.Convolution.SplitEigenfunctions.SpanLevel

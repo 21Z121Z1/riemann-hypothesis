@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairPlaneDescentSecondStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairPlaneDescentThird
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawPairPlaneDescentFifthStatement

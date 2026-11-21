@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.OneLetterRadius
 import Formalism.GaussJetBounds.StatementG
 import Formalism.GaussJetBounds.GaussJetProofs.PureCrossTermWeight

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.SimilitudeFactorFormGroupBoundedOfTestSupport
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.AffineChartParamCoverProjectiveLine
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.GramSignatureTwoOneEntryZeroZero

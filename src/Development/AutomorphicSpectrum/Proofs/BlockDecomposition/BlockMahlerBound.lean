@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MahlerBoundOfDegree
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DegreeBoundedOfBasis
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DegreeRationalSubspace

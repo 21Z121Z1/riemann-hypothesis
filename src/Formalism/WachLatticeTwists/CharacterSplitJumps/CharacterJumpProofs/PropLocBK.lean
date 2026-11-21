@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.CharacterSplitJumps.CharacterJumpProofs.MemAnnih
 import Formalism.WachLatticeTwists.CharacterSplitJumps.Statement
 import Formalism.WachLatticeTwists.LatticeDualFibres.LatticeDualProofs.PropLoc

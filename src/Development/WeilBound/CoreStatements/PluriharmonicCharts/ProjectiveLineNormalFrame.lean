@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PluriharmonicCharts.TripleDeriv
 import Mathlib.Algebra.Order.Archimedean.Real.Hom
 import Mathlib.Analysis.Matrix.Order

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.ReferenceTupleOffPrimesEmpty
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.LatEqOfCarries
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.PsiAtTransport

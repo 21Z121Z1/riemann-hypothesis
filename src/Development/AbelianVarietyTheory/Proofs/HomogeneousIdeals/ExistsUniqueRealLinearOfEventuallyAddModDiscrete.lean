@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.TendstoUniformlyOnDoublingLogOfContraction
 import Mathlib.LinearAlgebra.FreeModule.ModN
 import Mathlib.RingTheory.SimpleRing.Principal

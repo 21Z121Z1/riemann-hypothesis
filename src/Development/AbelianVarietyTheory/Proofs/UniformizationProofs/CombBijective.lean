@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.IsAffineHomOfIsPullbackSpecMap
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsPullSecSval
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.SvalSecComb

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PadicSubsetSums.CentralIdempotents.ArchimedeanComponents
 import Mathlib.RingTheory.SimpleRing.Principal
 

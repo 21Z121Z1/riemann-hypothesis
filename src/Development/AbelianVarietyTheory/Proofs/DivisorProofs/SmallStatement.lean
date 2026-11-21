@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.LiftFrameEmbeddingBase
 import Formalism.SharpRestriction.GlobalSchurBounds.MainSup
 import Development.AutomorphicArithmetic.PrimeDiscriminants.ExcSet

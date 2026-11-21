@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.Side0PosOf
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PointLevelZeroEqEmbedding
 

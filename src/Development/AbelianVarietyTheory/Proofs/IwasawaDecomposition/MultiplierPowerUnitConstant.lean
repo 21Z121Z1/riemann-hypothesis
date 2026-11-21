@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IntegralCharts
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGenT
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.ExistsGoodIntegral

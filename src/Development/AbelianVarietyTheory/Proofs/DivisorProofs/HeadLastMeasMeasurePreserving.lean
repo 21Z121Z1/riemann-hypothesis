@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeadLApply
 open Set MeasureTheory
 open ReciprocityTheory.L2DbarEstimates (V)

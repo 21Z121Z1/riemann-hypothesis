@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Order.Ring.Star
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.CommFderivApply
 import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ExistsChartPartition

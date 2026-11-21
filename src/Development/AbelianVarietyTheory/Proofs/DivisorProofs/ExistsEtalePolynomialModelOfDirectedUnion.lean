@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleModelOfDirectedUnion
 import Mathlib.RingTheory.RingHom.Etale
 import Mathlib.Tactic.Polynomial.Basic

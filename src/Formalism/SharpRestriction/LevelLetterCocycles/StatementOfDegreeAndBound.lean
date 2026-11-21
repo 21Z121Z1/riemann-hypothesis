@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.EmbeddingTypeJumps
 import Formalism.PadicSubsetSums.StableGradedCounts.FrobeniusDifferenceDividedPower
 import Development.AutomorphicArithmetic.PrimeDiscriminants.InertGen

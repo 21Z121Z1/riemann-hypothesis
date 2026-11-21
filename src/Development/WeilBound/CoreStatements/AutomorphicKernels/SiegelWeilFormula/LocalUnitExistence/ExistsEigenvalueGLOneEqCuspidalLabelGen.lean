@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LatticeBasics.StdExOf
 import Development.WeilBound.ThetaLifts.LatticeBasics.FrameConj
 import Development.WeilBound.ThetaLifts.LatticeBasics.HgtInt

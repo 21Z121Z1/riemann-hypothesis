@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SphericalLattices.LocCommSt
 import Mathlib.RingTheory.Ideal.Quotient.Index
 

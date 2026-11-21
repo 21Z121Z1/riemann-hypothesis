@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ColumnSpanDensity.RhoLowerBoundOfEdgeCount
 import Formalism.GradedWeylDivisibility.FinalD
 import Formalism.PolynomialDimension.DigitClassSize

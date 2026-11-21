@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.InertJacobiLevels.TrivialDatumMultiplicitySpaceSubsingleton
 import Formalism.LocalRingCardinality.SpanPowerMembership.TiesGen
 import Formalism.SharpRestriction.InertJacobiLevels.ExtraH

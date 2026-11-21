@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.AlgebraicTheory.StatementStep
 import Formalism.LocalToGlobal.Divisibility.JetBounds.JetBoundsProofs.ValuationOfEntryBounds
 import Formalism.LocalToGlobal.Divisibility.JetBounds.JetBoundsProofs.NormEqOneOfNotMem

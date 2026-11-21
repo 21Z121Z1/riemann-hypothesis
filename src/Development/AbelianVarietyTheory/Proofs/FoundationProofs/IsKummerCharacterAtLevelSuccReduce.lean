@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsRootOne
 import Mathlib.Tactic.Polynomial.Basic
 open GlobalTheory.KZ GlobalTheory.KZ.H3 Matrix

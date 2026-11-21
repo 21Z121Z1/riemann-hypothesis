@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.MulIterateRootEqZero
 import Mathlib.Tactic.ENatToNat
 import Mathlib.Tactic.Polynomial.Basic

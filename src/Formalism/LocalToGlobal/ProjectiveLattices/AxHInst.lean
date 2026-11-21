@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HtMain
 import Formalism.LocalToGlobal.ProjectiveLattices.RegularityR1ValuedPoints
 import Formalism.LocalToGlobal.ProjectiveLattices.HeightF1OfData

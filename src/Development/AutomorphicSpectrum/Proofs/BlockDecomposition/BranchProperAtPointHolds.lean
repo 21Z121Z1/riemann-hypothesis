@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.NormalRiemannExtensionLocal
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeetOverHypersurfaceOfGermStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DominantComponentsOfGermStatement

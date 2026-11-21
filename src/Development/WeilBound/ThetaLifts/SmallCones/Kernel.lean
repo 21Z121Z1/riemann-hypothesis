@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.ConstantTermRationalUnipotentInvariant
 import Development.WeilBound.ThetaLifts.SmallCones.ContinuousEvI
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaKernelGeneralIdentity

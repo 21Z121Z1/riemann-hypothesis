@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.IndexExponentDegree
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.OrdDetConjFinite
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SplitOfConjPNe

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EigAdOfRowEig
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.RowEigMemFixedField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.StableHeckeLevelCharacterStatement

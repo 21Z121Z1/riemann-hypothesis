@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtMapCompStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtMapOneStatement
 import Mathlib.Topology.Sheaves.Presheaf

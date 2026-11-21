@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RankTwoTorsion
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ClsDiagNatCastSmul
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSmallCoprimeNorm

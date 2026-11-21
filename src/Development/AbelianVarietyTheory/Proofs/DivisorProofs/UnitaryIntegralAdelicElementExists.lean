@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ResSConjGen
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OToSAlgebraMap
 import Mathlib.Data.Matrix.PEquiv

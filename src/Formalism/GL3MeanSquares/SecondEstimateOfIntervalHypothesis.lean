@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LandauZeroFreeBounds.SiegelWalfiszAP
 import Mathlib.Algebra.QuadraticAlgebra.Basic
 

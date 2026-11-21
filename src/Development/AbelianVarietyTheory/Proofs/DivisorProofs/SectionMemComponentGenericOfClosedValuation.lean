@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsOpenConnectedComponentOfIsLocallyNoetherianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothGenericFibreClosurePartitionStatement
 import Mathlib.AlgebraicGeometry.Fiber

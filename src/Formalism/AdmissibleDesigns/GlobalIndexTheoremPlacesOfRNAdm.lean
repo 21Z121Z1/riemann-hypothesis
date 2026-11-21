@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.AdmissibleDesigns.InvariantsEqBotIff
 import Formalism.SharpRestriction.LevelLetterCocycles.GoodCongruenceDataOf
 import Formalism.SharpRestriction.LevelLetterCocycles.LargeLevelLemmas

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.ExistsBoxMaps
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsPowGrpBaseChange
 import Development.AbelianVarietyTheory.Proofs.RingsOfIntegers.IsMonHomOfComm

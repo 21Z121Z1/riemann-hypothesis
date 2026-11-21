@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalUnitaryOrbits.TraceEqAdd
 import Formalism.LocalToGlobal.NumberFieldFamilies.ThetaCJ
 import Formalism.UnipotentAdelicQuotients.SWXSDefs

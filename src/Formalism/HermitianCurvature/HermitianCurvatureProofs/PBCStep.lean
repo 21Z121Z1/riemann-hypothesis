@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PBCHerg
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MeanBoundsLimits
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PairingTriangular

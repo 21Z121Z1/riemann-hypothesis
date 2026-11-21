@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FullRankBilinearInvariantScalingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalValueFirstClopenPartitionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PrincipalValueSecondClopenPartitionStatement

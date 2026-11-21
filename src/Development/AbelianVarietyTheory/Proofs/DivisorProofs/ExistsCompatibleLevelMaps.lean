@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CompatibleSystemOfLatticeMapsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceFormDivisibilityCriterionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeBasisModNStatement

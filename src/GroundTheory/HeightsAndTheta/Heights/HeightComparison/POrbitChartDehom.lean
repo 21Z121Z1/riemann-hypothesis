@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitChartDehom
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitChartMax
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.HeightOrbitChartQuot

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois
 import GroundTheory.GlobalFields.NormResidueSymbol.Functorial
 import GroundTheory.GlobalFields.NormResidueSymbol.Surjective

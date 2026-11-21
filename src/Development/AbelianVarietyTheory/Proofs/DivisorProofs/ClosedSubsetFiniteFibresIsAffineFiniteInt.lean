@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsRatioOfWeight
 import Mathlib.AlgebraicGeometry.ZariskisMainTheorem
 open CategoryTheory AlgebraicGeometry TopologicalSpace Filter Topology MeasureTheory

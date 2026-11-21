@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.UnitaryExistence.CmHostRootComplexEqPmSqrt
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MultiplierIffExistsHom
 

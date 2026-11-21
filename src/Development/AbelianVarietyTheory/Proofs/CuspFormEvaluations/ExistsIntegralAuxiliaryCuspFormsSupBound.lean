@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageTwoLeLAndSigns
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PageRowsOfLe
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.WeightsBelow

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismOnExtensionPointwiseStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismExtensionUniformStatement
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.FrobeniusPowerBasisIndependentStatement

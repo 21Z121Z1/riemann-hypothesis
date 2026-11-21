@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import PositivityTheory.AutomorphicForms.PublishedInputs.CuspidalContinuity.ArchimedeanCuspidal.StripEstimates.FaceMapCompSuccAboveCastSucc
 import GroundTheory.GlobalFields.AnalyticClassNumber.DirichletHeckeCorrespondence
 import GroundTheory.GlobalFields.TateThesis.RootNumberLocalPlace

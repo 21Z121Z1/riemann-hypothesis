@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.RhsWLim
 import Mathlib.Topology.Separation.CompletelyRegular
 

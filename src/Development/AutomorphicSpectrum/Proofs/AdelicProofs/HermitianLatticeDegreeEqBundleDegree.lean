@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KernelsLattice
 import Development.AutomorphicSpectrum.Proofs.AdelicProofs.GramMat
 import GroundTheory.HeightsAndTheta.Heights.HeightsOfSets.Slopes

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ValuationAddPowSubLe
 open GlobalTheory.AlmostEt
 open scoped NNReal

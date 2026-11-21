@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Degenerations.SepticCharacterInjective
 import Mathlib.Analysis.Normed.Field.Instances
 import Mathlib.Data.Int.Star

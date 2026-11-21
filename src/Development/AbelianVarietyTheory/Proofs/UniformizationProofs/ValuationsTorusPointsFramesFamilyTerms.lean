@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.PeriodicValuation
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.ExistsGenV
 import Development.AbelianVarietyTheory.Proofs.UniformizationProofs.FiniteSublevel

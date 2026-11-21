@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.ThDistC
 import Formalism.LocalToGlobal.KernelLattices.KernelLocalFactors.BlockShape
 import Mathlib.Analysis.Analytic.IteratedFDeriv

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.NEqRZeroMulXPow
 import Development.AutomorphicArithmetic.CyclotomicBounds.SmallSum
 import Formalism.SharpRestriction.LevelLetterCocycles.StatementFamilies.ExportFamilies

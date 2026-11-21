@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.GaloisOnCp
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Topology.Algebra.Nonarchimedean.Completion

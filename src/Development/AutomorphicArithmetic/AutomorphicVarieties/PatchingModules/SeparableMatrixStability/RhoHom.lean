@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.PatchingModules.DeterminantPadicFree.SubMulAddEpM
 import Mathlib.RingTheory.PowerSeries.Inverse
 import Std.Tactic.BVDecide.Normalize.Prop

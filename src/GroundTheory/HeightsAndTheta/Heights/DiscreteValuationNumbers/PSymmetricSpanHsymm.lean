@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.DiscreteValuationNumbers.StatementsFlagIndependence
 import GroundTheory.HeightsAndTheta.Theta.Capelli.CompleteHomogeneous
 import Mathlib.RingTheory.MvPolynomial.Symmetric.FundamentalTheorem

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CoverRefinementGenericDegree
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagBundleFamilyStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToroidalFlagBundleFamilyDualStatement

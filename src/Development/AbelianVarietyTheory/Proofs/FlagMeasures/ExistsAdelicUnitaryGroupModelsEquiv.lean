@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsContinuousMulEquivCongruenceTopologyAdelicStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.GaussianRapidDecay
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.CdScaleIsTrueScale

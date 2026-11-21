@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HtatLinkOf
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HTChartExistsHolds
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.HodgeTateChartIntegral

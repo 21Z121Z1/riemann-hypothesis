@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HermitianDisc
 import GroundTheory.LocalFields.HerbrandLocal
 import GroundTheory.LocalFields.UnramifiedHensel

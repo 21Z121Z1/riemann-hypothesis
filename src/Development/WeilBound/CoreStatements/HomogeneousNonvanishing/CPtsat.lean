@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ComplexConjugationHermCompatStatement
 import Development.WeilBound.CoreStatements.HomogeneousNonvanishing.CMadens
 import Mathlib.Analysis.Calculus.FDeriv.Star

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.TupleConstantsNeZero
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.ReductionLemmaFirst
 

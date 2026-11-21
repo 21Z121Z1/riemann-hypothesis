@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.ComponentMean
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SlopeMeanOfSlopesMean
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SelfIntersectionLimitAtZeroStatement

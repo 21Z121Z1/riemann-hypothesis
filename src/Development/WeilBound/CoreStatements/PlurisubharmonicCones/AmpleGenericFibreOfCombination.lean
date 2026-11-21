@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PStokesStep
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PSheetHessPSD
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsAntisym

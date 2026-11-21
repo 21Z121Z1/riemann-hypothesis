@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TwoMulCardPsi
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPadicPackageStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothOfAlgClosedUnifStatement

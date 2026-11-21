@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SmoothRelativeDimOfTrdegStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartResidueTrdegGenericStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartResidueTrdegEqStatement

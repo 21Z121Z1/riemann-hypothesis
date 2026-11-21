@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.AdelicUnitaryOrbits.StLamOf
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Std.Tactic.BVDecide.Normalize.Prop

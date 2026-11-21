@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.OrbitPointsDistinct
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Principal

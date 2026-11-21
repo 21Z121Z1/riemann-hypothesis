@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockProductIsomorphism
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BlockEmbeddingFactors
 import Mathlib.RepresentationTheory.Maschke

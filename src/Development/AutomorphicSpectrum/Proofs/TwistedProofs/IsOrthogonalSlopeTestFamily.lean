@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.ParallelStatements.FiniteSums.BesselPeriodFreeData
 
 noncomputable section

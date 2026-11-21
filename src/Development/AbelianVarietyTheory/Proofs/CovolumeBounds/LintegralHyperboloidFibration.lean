@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.ThetaMetrics.IsKMeas
 import Mathlib.Analysis.SpecialFunctions.PolarCoord
 import Mathlib.RingTheory.PiTensorProduct

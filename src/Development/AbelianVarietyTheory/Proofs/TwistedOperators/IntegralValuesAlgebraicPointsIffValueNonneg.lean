@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.BddGoodOfBddAll
 import Formalism.LocalToGlobal.ProjectiveLattices.NonnegIffOfLiesTotal
 open NumberField Matrix Complex IsDedekindDomain

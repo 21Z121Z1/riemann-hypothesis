@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsLocalRingSecondVariable
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsFactorOfRangeSubset
 open CategoryTheory Limits MonoidalCategory CartesianMonoidalCategory MonObj AlgebraicGeometry

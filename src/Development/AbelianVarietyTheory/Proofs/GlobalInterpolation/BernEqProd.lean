@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ChoiceOfTopsStatement
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ParameterInequalitiesGoodStatement
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ThickFrames

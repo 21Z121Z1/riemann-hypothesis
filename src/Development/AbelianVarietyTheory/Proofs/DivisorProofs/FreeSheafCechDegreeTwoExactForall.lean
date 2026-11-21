@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Pr13Snd
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FreeOnCechNerveExactAt
 import Std.Tactic.BVDecide.Normalize.Prop

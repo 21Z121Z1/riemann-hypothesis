@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.KillWinFromCut
 
 namespace Formalism.MainNotions.UnusedSlot80.RatAlg

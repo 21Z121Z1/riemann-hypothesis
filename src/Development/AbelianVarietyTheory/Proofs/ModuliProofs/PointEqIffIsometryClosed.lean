@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.LambdaBundleIsoOfPrimeToPWeilPairingsStatement
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PointEqIffIsometry
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ObjPull

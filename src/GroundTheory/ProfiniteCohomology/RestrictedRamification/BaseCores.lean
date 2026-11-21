@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.PoincarePairs.Devissage
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.Dimension
 set_option maxSynthPendingDepth 1

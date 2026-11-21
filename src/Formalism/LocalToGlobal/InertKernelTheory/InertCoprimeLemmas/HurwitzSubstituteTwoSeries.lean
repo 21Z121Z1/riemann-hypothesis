@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FormalGroupLog.FormalGroupLogProofs.ChainRule
 import Formalism.LocalToGlobal.InertKernelTheory.StatementZ
 import Formalism.LocalToGlobal.InertKernelTheory.Adm11OfBeProp

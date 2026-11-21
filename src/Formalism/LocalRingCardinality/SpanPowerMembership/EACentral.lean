@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.EmbeddingBaseFieldMul
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZRowD
 import Formalism.LocalRingCardinality.SpanPowerMembership.TrivialSubgroupEigenspaceTop

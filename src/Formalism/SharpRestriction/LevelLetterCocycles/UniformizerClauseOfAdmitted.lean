@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.TruncationClauseOfLatticeHypotheses
 import Formalism.SharpRestriction.LevelLetterCocycles.DlOfQp
 import Formalism.SharpRestriction.LevelLetterCocycles.RingHypothesesOfCrystalline

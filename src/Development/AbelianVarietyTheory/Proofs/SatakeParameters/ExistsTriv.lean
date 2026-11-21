@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.HalfOneAddSqrtNegIsIntegral
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ProjectiveOfFg
 import Formalism.LocalToGlobal.ProjectiveLattices.PartitionExtendByZeroAntitone

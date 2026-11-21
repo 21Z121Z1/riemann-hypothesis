@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsPullGradedAlgebraic
 import Mathlib.Data.Finsupp.Interval
 import Mathlib.RingTheory.Etale.Weakly

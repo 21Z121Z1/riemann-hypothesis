@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.Adj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsomorphismPullbackCompStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericIsoFlagPairSubbundleCompatStatement

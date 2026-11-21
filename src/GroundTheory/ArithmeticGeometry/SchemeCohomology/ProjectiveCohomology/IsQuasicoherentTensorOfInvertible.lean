@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProjectiveCohomology.QcohLocal
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.InvertibleDual
 import Mathlib.CategoryTheory.Sites.LocalSite

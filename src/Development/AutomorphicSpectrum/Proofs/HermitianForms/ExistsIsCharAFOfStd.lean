@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.ExplicitFormulaCounts.BridgeStdAddChar
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 open NumberField IsDedekindDomain MeasureTheory HeckeCharacterZeroLocus.SiegelWeilU

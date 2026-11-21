@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import CompanionTheory.AutomorphicTheory.NumberFieldModels.NFTieProv
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeGTrChain
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGaugeGVTr

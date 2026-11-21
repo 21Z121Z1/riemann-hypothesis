@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.AdjointApplyOfEigen
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ConjIdealEqOfConjPl
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.GoodVOfGoodL

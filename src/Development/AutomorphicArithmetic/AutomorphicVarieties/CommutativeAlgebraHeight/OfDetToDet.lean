@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.WeilGroupCharacters.RepAlg
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.UnopSMul
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

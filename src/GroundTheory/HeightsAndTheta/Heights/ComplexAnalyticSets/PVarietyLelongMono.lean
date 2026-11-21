@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarietyLelongMono
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarWirtinger
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StVarLelongMono

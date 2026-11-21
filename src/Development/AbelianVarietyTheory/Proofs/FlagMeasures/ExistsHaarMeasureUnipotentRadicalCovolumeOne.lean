@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeightedMeasureSplitting.T2SpaceGeneralLinearGroup
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.NsubCocompact
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.FundamentalDomainCovol

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.RayClassDensity
 import GroundTheory.GlobalFields.GlobalReciprocity.General
 import GroundTheory.GlobalFields.GlobalReciprocity.Frobenius

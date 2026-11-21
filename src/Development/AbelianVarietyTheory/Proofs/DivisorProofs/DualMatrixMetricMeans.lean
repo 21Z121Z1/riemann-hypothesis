@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteForms.IndefiniteTree.FunctionalLowerBoundOfConditionsNumeric
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.InfinitePlaceDepthSums
 import Development.AbelianVarietyTheory.Counterexamples.RotationExamples.FreeLiftMetric

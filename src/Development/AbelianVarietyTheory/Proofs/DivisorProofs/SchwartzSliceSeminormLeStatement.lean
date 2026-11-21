@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SchwartzSliceSeminormLe
 open scoped SchwartzMap ContDiff
 open GlobalTheory.SchwartzFstOp

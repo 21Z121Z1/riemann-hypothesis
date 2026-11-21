@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.CardRed
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.TensCard
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.ChiTriv

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsClosedImmersionGenericComplexFibre
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightEqOfMemMinimalPrimesMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HeightMaximalLePrimeAddDim

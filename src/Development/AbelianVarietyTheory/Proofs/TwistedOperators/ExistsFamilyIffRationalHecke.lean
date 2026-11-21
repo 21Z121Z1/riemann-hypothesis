@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.TwistedDiscreteSeries.RationalHeckeScalars
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsMemNotMem
 import Formalism.LocalRingCardinality.RankBoundMonotoneInDimension

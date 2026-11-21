@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2.GJStandardLEuler
 import GroundTheory.AutomorphicForms.GL2.GJGlobal
 import GroundTheory.AutomorphicForms.GL2.GJStandardLUnramified

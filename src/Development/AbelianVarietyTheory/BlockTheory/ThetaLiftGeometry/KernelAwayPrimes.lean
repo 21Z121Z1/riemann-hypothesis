@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.LiftErrorLocal
 import Formalism.SharpRestriction.GlobalSchurBounds.GL3Theta
 import Formalism.LocalRingCardinality.DataKerI

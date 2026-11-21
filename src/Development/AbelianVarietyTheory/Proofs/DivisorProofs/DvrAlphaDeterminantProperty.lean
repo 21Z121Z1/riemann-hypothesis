@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DeterminantFrameComparisonStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsThetaProjectionStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaProjectionIntertwiningStatement

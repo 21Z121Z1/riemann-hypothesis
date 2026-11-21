@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.TorsionNormIteration.InvIntegralOfClass
 import Formalism.FormalGroupLog.LogDeterminesLaw
 import Mathlib.RingTheory.PowerSeries.Expand

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.BumpConvolutionSupport
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CenterOperatorPreservesWave
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.WaveTimeAverageIsWave

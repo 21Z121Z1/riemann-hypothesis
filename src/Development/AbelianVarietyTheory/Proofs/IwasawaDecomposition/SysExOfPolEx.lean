@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialMapHoldsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialStableOfMapStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolynomialTransitionOfMapStatement

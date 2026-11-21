@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LandauZeroFreeBounds.SameCharacterLFunctionOne
 import Formalism.LandauZeroFreeBounds.ExceptionalZeroBounds.TrivReal
 import Mathlib.NumberTheory.LSeries.Injectivity

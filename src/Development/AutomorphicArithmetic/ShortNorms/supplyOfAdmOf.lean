@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound
 import Development.AutomorphicArithmetic.CharacterBoxes.Imports
 import Development.AutomorphicArithmetic.CharacterBoxes.WinPairs

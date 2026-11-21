@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CapelliCoordinates
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.AnisotropicColumnSums
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.FrameEntries

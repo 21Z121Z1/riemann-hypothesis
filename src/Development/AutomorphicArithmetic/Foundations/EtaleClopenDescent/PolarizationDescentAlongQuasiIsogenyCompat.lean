@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsQuasiInv
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PowCompMonHomOverSchemeGrpObj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdditiveOfTrivAxes

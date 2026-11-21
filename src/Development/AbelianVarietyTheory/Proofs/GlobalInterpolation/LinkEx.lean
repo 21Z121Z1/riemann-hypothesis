@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GlobalSchurBounds.GlobalRankLatticeProofs.UnitTraceSumBounds.ClosedRankTiesFC2S
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.MinkowskiQ
 import Formalism.LocalToGlobal.ClassOfRecordOfChoice

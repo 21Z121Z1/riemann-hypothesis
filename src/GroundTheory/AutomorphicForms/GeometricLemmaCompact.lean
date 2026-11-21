@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GeometricLemmaFiltration
 import GroundTheory.AutomorphicForms.GeometricLemmaOrbit
 import GroundTheory.AutomorphicForms.AdmissibleInduction

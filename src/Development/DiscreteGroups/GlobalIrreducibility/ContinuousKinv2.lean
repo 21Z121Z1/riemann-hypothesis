@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.GlobalIrreducibility.KmatMulKinv
 import Mathlib.NumberTheory.LocalField.Basic
 import Mathlib.RingTheory.Henselian

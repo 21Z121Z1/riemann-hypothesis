@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.SplittingModule
 import GroundTheory.TateCohomology.CohTrivial
 set_option maxSynthPendingDepth 1

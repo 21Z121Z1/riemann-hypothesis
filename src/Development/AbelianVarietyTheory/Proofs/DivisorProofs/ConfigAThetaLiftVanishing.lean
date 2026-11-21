@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LieCommutatorActionInvariantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigAMatchedIntegralStatement
 open scoped TensorProduct NNReal Matrix

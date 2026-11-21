@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CyclotomicCharacters.Degree
 import GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicCompositum
 set_option maxSynthPendingDepth 1

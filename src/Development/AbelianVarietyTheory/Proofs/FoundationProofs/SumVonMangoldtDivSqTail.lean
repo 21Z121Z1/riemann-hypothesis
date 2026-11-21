@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimePowerVonMangoldtSumBound
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GeomIccOneLeTwoMulSub
 import Mathlib.Tactic.ENatToNat

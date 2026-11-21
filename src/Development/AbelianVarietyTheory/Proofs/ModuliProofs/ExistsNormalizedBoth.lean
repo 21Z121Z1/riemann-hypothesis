@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.DiscreteValuationRings.LBCorr
 import Development.AbelianVarietyTheory.BlockTheory.CMModuli.PrimitiveExponentPullback
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.SplitOfFactorisation

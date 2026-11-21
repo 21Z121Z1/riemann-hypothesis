@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Statements.WeilDeligneCrystalline.LTCrys
 import Development.AbelianVarietyTheory.Statements.WeilDeligneCrystalline.ConradLocalTied
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLubinTateChar

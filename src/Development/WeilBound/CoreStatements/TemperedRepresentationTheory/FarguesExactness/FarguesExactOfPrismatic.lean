@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.PublishedTheorems.Algebra₂.FarguesExact
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HodgeTatePairingSandwich
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsIntegrallyClosedInOfIntegers

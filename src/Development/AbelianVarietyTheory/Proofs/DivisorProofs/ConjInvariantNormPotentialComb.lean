@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetWeightIsCInfOfPotentialStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MetWeightIsConjOfConjNormsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReadFnCInfAtOfSmoothStatement

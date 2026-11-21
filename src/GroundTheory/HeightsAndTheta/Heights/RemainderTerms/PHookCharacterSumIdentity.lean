@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.StatementsTop
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PowerSums
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.Expand

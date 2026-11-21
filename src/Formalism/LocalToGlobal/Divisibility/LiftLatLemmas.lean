@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.LiftLat
 import Formalism.LocalToGlobal.Divisibility.RowLatLemmas
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.CommutingTwist

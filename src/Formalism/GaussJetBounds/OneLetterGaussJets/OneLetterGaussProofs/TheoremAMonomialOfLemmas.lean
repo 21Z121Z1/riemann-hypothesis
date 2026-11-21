@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementA
 import Formalism.GaussJetBounds.OneLetterGaussJets.StatementJ
 import Formalism.GaussJetBounds.GaussJetProofs.FrameCoeffMulLin

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SzPeriodsOfTangent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.VacuumUnramifiedAlmostAllStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IteratedMultiplicationSubmoduleStableStatement

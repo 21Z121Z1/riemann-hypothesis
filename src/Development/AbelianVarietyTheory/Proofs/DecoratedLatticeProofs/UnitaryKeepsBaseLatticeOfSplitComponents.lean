@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.TwistedInnerProducts.ExistsGlOfEquiv
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.SatakeDualWeyl.StatementC

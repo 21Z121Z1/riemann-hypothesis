@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.AlgebraMapMemMaximalIdealPowIff
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.ExistsNsmulMem
 import Formalism.SizeWindowBrackets.SBrDiv

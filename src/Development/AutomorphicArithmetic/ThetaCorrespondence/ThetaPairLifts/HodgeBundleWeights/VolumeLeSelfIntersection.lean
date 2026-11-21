@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.HodgeBundleWeights.ToKnownTheoremsOf
 import CompanionTheory.AutomorphicTheory.KrullDimension.TopologicalKrullDimModel
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsImageHeightUnique

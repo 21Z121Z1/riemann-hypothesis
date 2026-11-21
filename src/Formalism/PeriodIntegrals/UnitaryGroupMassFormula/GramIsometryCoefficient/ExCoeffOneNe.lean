@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.FglGram
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.Henselian

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairVacuumStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlanePairEquivarianceStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralAdelicGLMulVecHaarEqModulusDetStatement

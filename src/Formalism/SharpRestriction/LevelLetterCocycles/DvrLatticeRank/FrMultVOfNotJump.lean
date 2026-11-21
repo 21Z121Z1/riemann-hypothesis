@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WeaklyAdmissibleFiltrations.Statement
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Int.Star

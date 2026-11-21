@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PLinChange
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PRadial
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyInvariance.PAmbChart

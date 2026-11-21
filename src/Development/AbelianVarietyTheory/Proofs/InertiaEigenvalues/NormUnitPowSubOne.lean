@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation
 import Mathlib.Analysis.Normed.Group.Tannery
 import Mathlib.Topology.Connected.Separation

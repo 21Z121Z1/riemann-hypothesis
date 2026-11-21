@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.JfJqSmoothOfNnMaj
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LastLevelSliceOfScalar
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.NormBallVolumes

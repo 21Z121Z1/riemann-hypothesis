@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiablePartialZetaIntegralStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.DifferentiableBoundaryZetaTermStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.IntegrableOnLowerZetaIntegrandStatement

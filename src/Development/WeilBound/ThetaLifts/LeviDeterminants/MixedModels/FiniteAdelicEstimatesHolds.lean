@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LeviDeterminants.MixedModels.PureSt
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.CompFinLiftE
 import Development.WeilBound.CoreStatements.LocallyConstantCoinvariants.PfActs

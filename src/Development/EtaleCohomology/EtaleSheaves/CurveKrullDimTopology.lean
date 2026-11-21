@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Topology.KrullDimension
 import Mathlib.Topology.NoetherianSpace
 

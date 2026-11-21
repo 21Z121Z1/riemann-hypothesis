@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.IsotropicSplitTorusIwasawaUnitaryGroup
 import Mathlib.Data.Matrix.ColumnRowPartitioned
 import Mathlib.RingTheory.TotallySplit

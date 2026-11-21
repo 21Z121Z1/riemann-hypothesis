@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCMParameterQuotient
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StCMRegularElement
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.CMDepthAssoc

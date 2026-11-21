@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.SiegelLimitImagBound
 open Filter Topology Matrix
 set_option maxHeartbeats 1000000 in

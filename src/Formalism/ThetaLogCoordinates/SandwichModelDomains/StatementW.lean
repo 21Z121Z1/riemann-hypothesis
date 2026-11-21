@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementA
 import Mathlib.NumberTheory.Padics.PadicIntegers
 

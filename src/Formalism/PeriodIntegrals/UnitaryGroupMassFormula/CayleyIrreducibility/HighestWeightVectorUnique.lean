@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.CayleyIrreducibility.DivClosedOf
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWLine
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylLeDual

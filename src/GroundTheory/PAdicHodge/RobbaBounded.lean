@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.HighIndexSingleZeroOne
 import GroundTheory.PAdicHodge.PerfectoidField
 set_option maxSynthPendingDepth 1

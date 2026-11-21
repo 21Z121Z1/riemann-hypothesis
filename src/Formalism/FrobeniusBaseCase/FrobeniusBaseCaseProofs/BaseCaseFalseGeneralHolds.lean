@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FrobeniusBaseCase.CoeffOfFirstMultiplier
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.BaseCaseKOneHolds
 import Formalism.FrobeniusBaseCase.FrobeniusBaseCaseProofs.ChainI

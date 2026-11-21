@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.DivisorSupportCondition
 import Mathlib.AlgebraicGeometry.Morphisms.UniversallyInjective
 import Mathlib.Order.CompletePartialOrder

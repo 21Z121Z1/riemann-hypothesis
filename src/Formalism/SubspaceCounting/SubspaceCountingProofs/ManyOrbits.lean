@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SubspaceCounting.StatementC
 import Formalism.SubspaceCounting.SubspaceCountingProofs.LengthLayers
 import Formalism.SubspaceCounting.SubspaceCountingProofs.WalkSharp

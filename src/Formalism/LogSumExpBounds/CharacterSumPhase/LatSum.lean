@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LogSumExpBounds.StatementZ
 import Mathlib.Analysis.PSeries
 import Mathlib.RingTheory.WittVector.IsPoly

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.MatchSplit
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.RegOkPi
 import Development.AutomorphicArithmetic.Foundations.Convolution.IntegrableConvolution.PushTens

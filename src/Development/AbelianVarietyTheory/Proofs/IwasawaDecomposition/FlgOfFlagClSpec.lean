@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.AllStepsHoldOfHasDRStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.HasDROfAllStepsHoldStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsFlagClosureStatement

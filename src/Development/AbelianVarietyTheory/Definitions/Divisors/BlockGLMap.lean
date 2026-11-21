@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.GalMapMul
 import Mathlib.RepresentationTheory.Homological.GroupHomology.Basic
 import Mathlib.Tactic.Polynomial.Basic

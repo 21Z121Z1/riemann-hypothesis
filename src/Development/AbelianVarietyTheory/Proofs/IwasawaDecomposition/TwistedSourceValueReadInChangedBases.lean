@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.DiagramFitsSourceRank
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.EvalTwSubK
 import Formalism.LocalToGlobal.GroupLattices.ComparisonMaps.TiedRec

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexEqOfSurj
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexUpLatEqSq
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RelIndexUpLatEqProd

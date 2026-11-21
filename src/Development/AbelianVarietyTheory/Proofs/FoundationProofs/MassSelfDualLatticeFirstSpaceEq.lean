@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SelfDualLatticeIndex
 import Development.AbelianVarietyTheory.BlockTheory.GlobalSignature.SplittingProjection
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DoubleCosetCount

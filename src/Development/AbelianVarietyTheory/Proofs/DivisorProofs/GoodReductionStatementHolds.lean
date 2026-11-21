@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientCurvatureStatementStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaZeroOneSkewConjStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaZeroOneLowerVanishStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.FieldOfNormsCyclBase
 import GroundTheory.PAdicHodge.NormalizedTrace
 import GroundTheory.LocalFields.LocalAxiomDictionary

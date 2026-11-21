@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.OrbitalIntegralDiagonalSlice
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.ChangeOfVariablesXy
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DensityLemmaOfReductions

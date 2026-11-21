@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.DataN
 import Mathlib.NumberTheory.DirichletCharacter.Basic
 import Mathlib.NumberTheory.ModularForms.QExpansion

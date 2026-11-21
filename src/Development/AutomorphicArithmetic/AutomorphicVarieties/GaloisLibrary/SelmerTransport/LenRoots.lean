@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.LenComp
 import Mathlib.FieldTheory.KummerExtension
 import Mathlib.RingTheory.WittVector.IsPoly

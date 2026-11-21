@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SiegelSetSmoothModerateGrowthStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SkewHermitianTwistToHermitianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AnisotropicThetaLiftTwistIdentityStatement

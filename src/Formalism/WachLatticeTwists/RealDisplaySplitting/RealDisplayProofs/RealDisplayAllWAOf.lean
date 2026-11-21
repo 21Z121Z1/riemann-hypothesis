@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.RealDisplaySplitting.Statement
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.TopAllF
 import Formalism.WachLatticeTwists.RealDisplaySplitting.RealDisplayProofs.TopWAF

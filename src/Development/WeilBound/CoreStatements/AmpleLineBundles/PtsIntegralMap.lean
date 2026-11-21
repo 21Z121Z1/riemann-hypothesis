@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.PNefOnFibresRelabel
 import GroundTheory.HeightsAndTheta.Heights.HeightComparison.PPtsIntegralPoints
 

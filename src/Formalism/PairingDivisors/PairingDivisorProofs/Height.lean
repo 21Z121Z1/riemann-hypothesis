@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PairingDivisors.PairingDivisorProofs.SumValuationNat
 import Mathlib.Tactic.Monotonicity.Lemmas
 

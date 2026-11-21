@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.PartsGive
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.IsComp
 import Formalism.SharpRestriction.CuspSpanNormBounds.BesselShellMomentBounds

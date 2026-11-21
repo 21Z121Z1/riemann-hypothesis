@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DropLevelBounds.ThBounds
 import Development.AutomorphicArithmetic.OrbitLabellings.AttainsBlockListOfWeightsAlongOrbits
 import Development.AbelianVarietyTheory.Proofs.UnramifiedDepth.DropLevelsBasic

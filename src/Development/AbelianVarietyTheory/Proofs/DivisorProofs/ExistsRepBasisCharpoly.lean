@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CharmatrixBlockDiagonal
 import Mathlib.NumberTheory.Padics.PadicIntegers
 import Mathlib.RingTheory.PicardGroup

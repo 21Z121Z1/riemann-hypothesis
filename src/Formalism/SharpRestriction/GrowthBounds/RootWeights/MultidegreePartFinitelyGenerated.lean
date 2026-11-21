@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.IntegralPolyLinearMapClosed
 import Mathlib.Data.Finsupp.Interval
 import Mathlib.RingTheory.LocalProperties.Reduced

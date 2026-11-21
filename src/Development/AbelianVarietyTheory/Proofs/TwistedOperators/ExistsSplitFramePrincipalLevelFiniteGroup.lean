@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ExistsPointCarryingFrameLat
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.IsConjPlOfUnderEqOfNe
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.RedFnConjLocFinEqOne

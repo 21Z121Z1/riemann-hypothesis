@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.GramFlagFamilyOfPositive
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.InertPrimesSquareNormOfGeneral
 import Formalism.SharpRestriction.CuspSpanNormBounds.GramProductBounds

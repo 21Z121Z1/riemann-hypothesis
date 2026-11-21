@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SemilocalFrames.ComplementReferenceCompactSubgroup
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.Algebra.Order.Ring.Star

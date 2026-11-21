@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StSemilocRankFrac
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StChartScalingIndep
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PAdjoinIndepRelfinrank

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.NumbersLemmas
 import Formalism.QuotientMetricDivisors.HermitianTwistDivisors.PlaceSumSquares
 

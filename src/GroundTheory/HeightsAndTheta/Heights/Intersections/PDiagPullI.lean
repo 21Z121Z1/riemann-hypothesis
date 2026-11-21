@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StatementsDiagPull
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SizeWindowBrackets.GrowthBoundGivesRiemannHypothesis
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.RiemannHypothesisOfPowerBound
 import Formalism.SizeWindowBrackets.ChainSlopeWindows.StronglyIrreducible

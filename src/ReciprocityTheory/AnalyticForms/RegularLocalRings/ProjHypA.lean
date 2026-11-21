@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjDehom
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinTypeQE
 

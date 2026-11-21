@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CGTrueT
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NotNonemptyZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LawsT

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FderivIntegralMulKernelApply
 open MeasureTheory Filter Topology Metric
 open scoped ContDiff

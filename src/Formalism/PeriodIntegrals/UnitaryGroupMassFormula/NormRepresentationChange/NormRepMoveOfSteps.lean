@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.NormRepChange
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.IsLoUniConjTranspose
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.NormRepresentationChange.Development

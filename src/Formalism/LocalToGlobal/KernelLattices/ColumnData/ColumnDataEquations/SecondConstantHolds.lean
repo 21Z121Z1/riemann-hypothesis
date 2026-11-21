@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.PairingIndexBounds.SplitPairEquations.IntegralSquareRoots.HenselQuad
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.ColumnDataEquations.JFinal
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StarSqrtNeg

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsKleimanScheme
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ImportsLast
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.ImportsSide

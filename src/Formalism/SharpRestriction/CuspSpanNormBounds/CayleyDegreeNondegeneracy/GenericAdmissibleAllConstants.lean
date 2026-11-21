@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.CuspSpanNormBounds.CayleyDegreeNondegeneracy.GenericCountAllConstants
 import Formalism.FlagUnipotentLattices.CardSubgroupsOfIndexLe
 import Formalism.SharpRestriction.CuspSpanNormBounds.AutLzFiniteOfLoop

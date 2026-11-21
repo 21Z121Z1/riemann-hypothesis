@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.PowerSeriesOneAddConstMulXMulInv
 import Mathlib.NumberTheory.Padics.MahlerBasis
 import Mathlib.RingTheory.PowerSeries.Binomial

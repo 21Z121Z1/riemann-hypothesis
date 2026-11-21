@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsChgFromBlocksEqOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExtTraceSubmatrixSumMap
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.QuotStages

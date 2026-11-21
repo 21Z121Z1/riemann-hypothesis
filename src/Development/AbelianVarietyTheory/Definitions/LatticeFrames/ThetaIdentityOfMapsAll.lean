@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.FlagStabilizerTensors.RowsJoinPinned
 import Formalism.LocalToGlobal.IndefiniteReal.EvalTieTOne
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.IsThetaFam

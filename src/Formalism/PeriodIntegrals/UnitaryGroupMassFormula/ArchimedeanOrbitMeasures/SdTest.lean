@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactThirdFurther.Imports
 import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
 

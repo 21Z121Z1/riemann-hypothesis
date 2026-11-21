@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.DefGroup
 open NumberField IsDedekindDomain Formalism.L2 Formalism.L2.DIV
 open scoped TensorProduct Matrix

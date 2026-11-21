@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.ModGDefs
 import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.Statement
 import Mathlib.NumberTheory.Niven

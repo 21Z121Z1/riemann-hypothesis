@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CoordsAtSmul
 import Mathlib.AlgebraicGeometry.Modules.Sheaf
 import Mathlib.Analysis.CStarAlgebra.Classes

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.ExistsOneTmulOfForallFixed
 import Development.AbelianVarietyTheory.Proofs.HomogeneousIdeals.RestrictScalarsMapEqSpan
 import Mathlib.RingTheory.GradedAlgebra.Homogeneous.Maps

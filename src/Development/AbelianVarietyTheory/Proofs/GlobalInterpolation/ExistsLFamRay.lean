@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.FiniteIdealsIn
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.RayCountThetaFibreCount
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.SumLamIdealLe

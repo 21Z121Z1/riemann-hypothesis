@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.CenUsedOfCenReal
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ScalarP
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsTauFamily

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.JumpKernelCokernel.Statement
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.PowerSeries.Trunc

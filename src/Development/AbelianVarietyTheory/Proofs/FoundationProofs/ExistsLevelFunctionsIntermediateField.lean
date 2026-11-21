@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModularTowerMemAdjoinJOfSlTwoIntInvariant
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.GammaLeKer
 import Mathlib.Order.CompletePartialOrder

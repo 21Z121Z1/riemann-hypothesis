@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.CupProducts
 import GroundTheory.ProfiniteCohomology.CohomologyFunctoriality
 import GroundTheory.ProfiniteCohomology.ContinuousCochains.Functoriality

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsTorsionFormCongrOfEventuallyEqStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatDatumUniquenessOnSimplyConnectedStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DatumTwistByCharacterStatement

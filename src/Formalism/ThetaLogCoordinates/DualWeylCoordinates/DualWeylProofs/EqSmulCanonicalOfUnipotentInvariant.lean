@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.FinalB
 import Formalism.ThetaLogCoordinates.DualWeylCoordinates.DefsMod
 

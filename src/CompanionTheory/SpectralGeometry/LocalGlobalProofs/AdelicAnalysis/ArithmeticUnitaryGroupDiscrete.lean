@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.HeightProofs.ExistsNhdsZeroPrincipalEqZero
 import Formalism.UnipotentAdelicQuotients.SWXSDefs
 import Mathlib.RingTheory.Henselian

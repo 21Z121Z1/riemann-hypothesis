@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.AnalyticLimit.StRegSectionParts
 import ReciprocityTheory.AnalyticForms.PotentialTheory.AtlasIndep
 import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas

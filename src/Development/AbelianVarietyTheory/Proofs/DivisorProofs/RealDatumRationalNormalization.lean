@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExpConjOfOne
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealDatumNormalizedRationalBaseStatement
 

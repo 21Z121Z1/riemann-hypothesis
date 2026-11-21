@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleTwistResolutionUniversalExtension
 import Mathlib.CategoryTheory.Abelian.Injective.Ext
 import Mathlib.CategoryTheory.ExtremalEpi

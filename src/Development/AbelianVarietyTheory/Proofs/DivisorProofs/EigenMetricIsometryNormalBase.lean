@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqGenericPointOfFinite
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArithmeticBundleRankComparison
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagCompactificationFunctionFieldStatement

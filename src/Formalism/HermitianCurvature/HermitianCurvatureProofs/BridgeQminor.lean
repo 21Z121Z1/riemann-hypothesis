@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RepIntCastMul
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.DetRowsZero
 import Mathlib.Algebra.Order.Ring.Star

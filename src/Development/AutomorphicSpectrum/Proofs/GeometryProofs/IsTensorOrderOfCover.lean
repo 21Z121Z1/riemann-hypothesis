@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Statements.GeometryStatements.NonemptyEquivOfCardHom
 import Development.AutomorphicSpectrum.ParallelStatements.ParallelGeometry.TensorOrderReduction
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CharacterSectionMultiplicative

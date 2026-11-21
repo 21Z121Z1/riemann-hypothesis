@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.InertiaRamification.IsImagQuad
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.NumberTheory.DirichletCharacter.Orthogonality

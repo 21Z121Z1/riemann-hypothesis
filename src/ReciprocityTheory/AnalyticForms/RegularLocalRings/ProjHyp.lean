@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypStalk
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypB
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjHypC

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GlobalTheory.CoordinateLengths.CrdLBwLe
 import Formalism.SharpRestriction.GlobalSchurBounds.LinkTied
 

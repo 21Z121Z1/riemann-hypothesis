@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.HtatBuild
 
 open GlobalTheory.CompanionTheory.Ar.HT NumberField TensorProduct

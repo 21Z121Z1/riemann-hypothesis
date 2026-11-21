@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LocalGradedVanishingStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PolynomialTransferStatement
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.SheafFiltrationProperty

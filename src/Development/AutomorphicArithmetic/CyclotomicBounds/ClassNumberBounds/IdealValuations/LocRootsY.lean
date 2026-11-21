@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IdealValuations.LocDefY
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsRootCongruence
 import Mathlib.RingTheory.Henselian

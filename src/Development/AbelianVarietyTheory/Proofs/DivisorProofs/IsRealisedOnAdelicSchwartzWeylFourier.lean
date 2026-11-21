@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RealisedOne
 import GroundTheory.AutomorphicForms.GL2.GJMatrixAdelic
 import GroundTheory.AutomorphicForms.StrongApproximationSLDense

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralModelPAdicComparison
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointPairingCompatibleStatement
 

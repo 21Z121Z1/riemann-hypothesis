@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.ValuationFourierLeOne
 import ReciprocityTheory.DualLattices.CharTableIsUnit
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.CompletionAtPlace.Galois
 import GroundTheory.GlobalFields.IdeleGroups.LocalNormsEverywhere
 import GroundTheory.LocalFields.LocalReciprocityUniversal

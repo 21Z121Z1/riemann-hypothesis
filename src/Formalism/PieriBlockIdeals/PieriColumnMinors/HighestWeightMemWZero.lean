@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PieriBlockIdeals.StatementLR
 import Formalism.PieriBlockIdeals.PieriColumnMinors.BinaryFormsExample
 

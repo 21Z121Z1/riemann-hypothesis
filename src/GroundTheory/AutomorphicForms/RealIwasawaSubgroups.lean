@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.StrictlyUpperRank
 import GroundTheory.AutomorphicForms.RealGroupsIwasawaHaar
 import Mathlib.Algebra.Algebra.Field

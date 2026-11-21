@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.FourierTransformKernelSurjective
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.Combinatorics.Young.SemistandardTableau

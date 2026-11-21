@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GradedWeylDivisibility.StatementA
 import Mathlib.Combinatorics.Young.YoungDiagram
 import Mathlib.RingTheory.WittVector.IsPoly

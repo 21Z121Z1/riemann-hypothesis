@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CoherentCohomologyProofs.ExistsFiniteProjectiveComplexQuasiIso
 import Mathlib.CategoryTheory.Monoidal.Mon
 import Mathlib.RingTheory.Etale.Weakly

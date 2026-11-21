@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsEtaleChartSmoothAlgebraLocalPointStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsSectionLiftingResidueValuesStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPolyVanishingOfFibreStatement

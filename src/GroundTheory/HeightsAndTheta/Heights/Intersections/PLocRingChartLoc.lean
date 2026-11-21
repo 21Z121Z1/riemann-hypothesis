@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.StLocRingChartLoc
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PLocRingFrac
 import Mathlib.RingTheory.SimpleRing.Principal

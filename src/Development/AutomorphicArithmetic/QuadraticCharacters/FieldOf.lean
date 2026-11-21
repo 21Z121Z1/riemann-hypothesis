@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.QuadraticCharacters.MemRealCyclotomicSubgroup
 import Mathlib.NumberTheory.NumberField.Cyclotomic.Galois
 

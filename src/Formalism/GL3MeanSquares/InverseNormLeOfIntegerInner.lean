@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.ConcavityEquidistribution
 import Mathlib.Analysis.CStarAlgebra.Module.Constructions
 import Mathlib.LinearAlgebra.Matrix.PosDef

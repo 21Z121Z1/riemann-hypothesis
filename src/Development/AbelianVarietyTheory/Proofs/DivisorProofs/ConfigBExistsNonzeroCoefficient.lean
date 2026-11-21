@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedPlaneEvaluationConstantStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConfigBTripleConstantTermStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsotropicVectorRationalOrbitStatement

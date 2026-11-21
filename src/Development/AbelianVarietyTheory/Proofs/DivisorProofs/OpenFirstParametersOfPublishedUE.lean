@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.RhoMemOfMkEq
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumRangeEqRoots
 import Development.AbelianVarietyTheory.Proofs.DecoratedLatticeProofs.MainTheoremPublishedInputsThirdStatement

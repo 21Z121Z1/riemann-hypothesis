@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.MIntSumCont
 
 namespace ReciprocityTheory.AnForm.M.PLAux

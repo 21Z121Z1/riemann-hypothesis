@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsExpLieAlgebraComplexUnits
 import GroundTheory.AutomorphicForms.DixmierMalliavinBasic
 import Mathlib.LinearAlgebra.Basis.MulOpposite

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalClassFormation.SymbolBridgeSum
 import GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicCompositum
 import GroundTheory.GlobalFields.NormResidueSymbol.RationalDiagonal

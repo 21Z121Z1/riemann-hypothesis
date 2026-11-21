@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChartA
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ConeChartB
 

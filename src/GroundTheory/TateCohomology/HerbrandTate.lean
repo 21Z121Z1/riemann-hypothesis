@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.HerbrandRep
 import GroundTheory.TateCohomology.TateLow
 import Mathlib.RepresentationTheory.Homological.FiniteCyclic

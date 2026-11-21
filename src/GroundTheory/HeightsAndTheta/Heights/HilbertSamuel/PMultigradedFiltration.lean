@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.LengthLocalizedQuotientEqZero
 import Mathlib.RingTheory.GradedAlgebra.Radical
 import Mathlib.RingTheory.SimpleRing.Principal

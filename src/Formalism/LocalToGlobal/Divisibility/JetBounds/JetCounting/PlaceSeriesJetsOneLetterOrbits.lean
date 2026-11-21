@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.JetBounds.JetCounting.CurveAt
 import Formalism.LocalToGlobal.Divisibility.JetBounds.PlaceInputAllEntries
 import Formalism.LocalToGlobal.TorsionIntegrality.GaussianEigenFrames.StatementC

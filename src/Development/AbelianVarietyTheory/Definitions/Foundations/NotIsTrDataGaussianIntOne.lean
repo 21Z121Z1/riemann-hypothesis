@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.NotCoboundaryConstantOne
 import Mathlib.NumberTheory.Zsqrtd.GaussianInt
 import Mathlib.Order.CompletePartialOrder

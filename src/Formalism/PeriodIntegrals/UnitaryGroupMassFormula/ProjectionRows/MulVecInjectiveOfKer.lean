@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.ProjectionRows.Pieces
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.Data.Matrix.ColumnRowPartitioned

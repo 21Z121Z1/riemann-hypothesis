@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ExpansionLowCoeffsIntegral
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.PiNSOfPi
 import Formalism.SharpRestriction.LevelLetterCocycles.DvrLatticeRank.ModelFPfB

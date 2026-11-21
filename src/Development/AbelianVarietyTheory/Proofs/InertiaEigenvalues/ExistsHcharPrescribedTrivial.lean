@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsKummerField
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsUnitaryCharOfOpenSubgroupAndHom

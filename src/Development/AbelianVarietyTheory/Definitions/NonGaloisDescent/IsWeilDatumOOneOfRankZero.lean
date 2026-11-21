@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LengthPosOfPosDef
 import Formalism.LocalToGlobal.IndefiniteReal.AutomorphicFormsHyp
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.LiftsCart

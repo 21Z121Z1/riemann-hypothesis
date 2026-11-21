@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AlgebraMapGFEqGval
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.SubMemDifferentIdeal
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.ExistsNormSubEqOne

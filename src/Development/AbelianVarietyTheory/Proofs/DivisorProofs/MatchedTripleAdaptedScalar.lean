@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalPolynomialSubmoduleMatchingStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.MaximalThetaFactorizationStatement
 

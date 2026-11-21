@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutLimENFMain
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutGermDone
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutNFTopFormDone

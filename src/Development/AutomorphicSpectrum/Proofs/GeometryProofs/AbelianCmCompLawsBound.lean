@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.CostTwoLogBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.UniformAllNormHeightBoundStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FullIntersectionGoodLevelStatement

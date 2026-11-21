@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.ReductionMeasure
 import Mathlib.Dynamics.Ergodic.Action.Regular
 

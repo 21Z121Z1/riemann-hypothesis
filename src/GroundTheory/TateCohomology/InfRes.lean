@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.TateCohomology.DeltaMap
 import GroundTheory.TateCohomology.CoindOne
 import Mathlib.CategoryTheory.EffectiveEpi.Comp

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ToricGeometry.TopLePreimageOfValAtNeZero
 import ReciprocityTheory.ThetaQuasiPeriods.PeriodLattice
 import Std.Tactic.BVDecide.Normalize.Prop

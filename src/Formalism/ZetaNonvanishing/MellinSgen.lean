@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DefsOC
 import Formalism.ZetaNonvanishing.MellinSAux
 import Mathlib.MeasureTheory.Order.Group.Lattice

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PadicHodgeComparison.GoodCoverEigenspaces.MemRangeOfSol
 import Mathlib.LinearAlgebra.Eigenspace.Basic
 import Mathlib.RingTheory.Etale.Weakly

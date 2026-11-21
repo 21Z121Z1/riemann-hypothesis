@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothSectionCutoffMulHolomorphicStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DbarEnergyCutoffMulSectionLeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SmoothBumpChartBallHalfOneStatement

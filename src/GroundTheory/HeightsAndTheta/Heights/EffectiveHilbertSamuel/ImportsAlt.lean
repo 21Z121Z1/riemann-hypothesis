@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.SymbolExtensionProperty
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.HolLineBundleToAltTransition
 import GroundTheory.HeightsAndTheta.Heights.EffectiveHilbertSamuel.Objects

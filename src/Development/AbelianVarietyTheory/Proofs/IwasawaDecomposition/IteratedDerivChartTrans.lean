@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IteratedDerivCompEqJet
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartMatrixSmoothInvertibleStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ChartMatrixChangeOfCoordinatesStatement

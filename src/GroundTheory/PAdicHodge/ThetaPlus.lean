@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.KerTheta
 import Mathlib.RingTheory.AdicCompletion.LocalRing
 import Mathlib.RingTheory.Perfectoid.BDeRham

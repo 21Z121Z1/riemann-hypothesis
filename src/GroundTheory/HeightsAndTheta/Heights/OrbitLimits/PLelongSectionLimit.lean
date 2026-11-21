@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.PSegrePartition
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.LogRegLineTensor
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.LelongChartLimit

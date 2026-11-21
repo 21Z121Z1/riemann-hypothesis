@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveRatSectionSum
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StatementsCurveFormNonvanishing
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula

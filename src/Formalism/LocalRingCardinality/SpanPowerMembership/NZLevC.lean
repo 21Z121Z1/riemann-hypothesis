@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.SpanPowerMembership.NZLevB
 import Formalism.LocalToGlobal.GroupLattices.FockModels.Cartan
 import Formalism.PeriodIntegrals.AdmissibleModel.WeylDim

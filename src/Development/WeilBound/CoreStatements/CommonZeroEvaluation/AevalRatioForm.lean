@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FormOffSpecializationRing
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootOriginGenericFrameBound
 open NumberField IsDedekindDomain

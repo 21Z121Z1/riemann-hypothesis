@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LiteratureResults.LieGeometryGrowth.ThStmt
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeTransference.Poisson
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HodgeLowerBound.PFlagArithVar
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.ImageCoord
 import GroundTheory.HeightsAndTheta.Heights.Antisymmetric.Statements

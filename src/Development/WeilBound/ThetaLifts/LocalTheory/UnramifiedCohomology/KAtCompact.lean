@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.LocalTheory.UnramifiedCohomology.Lint
 import Development.WeilBound.ThetaLifts.SmallCones.FcCols
 import Development.WeilBound.ThetaLifts.SmallCones.ThetaUniq

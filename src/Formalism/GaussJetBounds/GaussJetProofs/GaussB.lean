@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GaussJetBounds.StatementY
 import Formalism.GaussJetBounds.GaussJetProofs.FirstRowMinorDegreeLeOne
 import Formalism.GaussJetBounds.GaussJetProofs.GField

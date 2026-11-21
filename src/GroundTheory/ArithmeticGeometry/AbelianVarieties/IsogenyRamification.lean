@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.IsogenyValuation
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogenyExists
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.WeilPairing

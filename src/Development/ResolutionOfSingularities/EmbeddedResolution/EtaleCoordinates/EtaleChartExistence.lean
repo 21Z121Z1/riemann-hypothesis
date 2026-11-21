@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.EmbeddedResolution.EtaleCoordinates.StrictNormalCrossings
 import Development.ResolutionOfSingularities.Foundations.Schemes.AffineOpens
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

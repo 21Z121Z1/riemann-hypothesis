@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.RegularUFDSerre
 import Mathlib.Algebra.Module.StablyFree.Basic
 import Mathlib.RingTheory.KrullDimension.Regular

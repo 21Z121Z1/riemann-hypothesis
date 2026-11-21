@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhGroup
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CommutativeAlgebra.HhSmall
 open IsLocalRing MvPowerSeries UpperTheory.V.Alg

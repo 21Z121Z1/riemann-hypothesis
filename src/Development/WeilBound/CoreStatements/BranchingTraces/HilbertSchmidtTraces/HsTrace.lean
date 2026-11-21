@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.MetricPeriods.IsNormEmbId
 import Formalism.SharpRestriction.CuspSpanNormBounds.BridgeCSchur
 import Mathlib.Data.Matrix.ColumnRowPartitioned

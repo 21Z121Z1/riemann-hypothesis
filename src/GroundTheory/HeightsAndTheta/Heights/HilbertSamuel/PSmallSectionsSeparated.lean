@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsSmallSectionsSeparated
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsGridSeparation
 import GroundTheory.HeightsAndTheta.Heights.WeightedHomogeneous.PConeTrdeg

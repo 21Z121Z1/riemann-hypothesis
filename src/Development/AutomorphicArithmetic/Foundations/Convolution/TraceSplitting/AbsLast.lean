@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.Foundations.Convolution.TraceSplitting.SplitStable
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.PowIndep
 import Development.AutomorphicArithmetic.Foundations.Convolution.PowerSumTraces.CharIndep

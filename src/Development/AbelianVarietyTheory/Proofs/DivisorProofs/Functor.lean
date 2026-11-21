@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.SubRedMem
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TensorComp
 

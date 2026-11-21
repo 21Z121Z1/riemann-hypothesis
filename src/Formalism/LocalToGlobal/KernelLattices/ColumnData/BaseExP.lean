@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.KernelLattices.ColumnData.IsAdmissibleFlagPairOfUnitriangularLeftAutomorph
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.KerPerPair
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.KernelLatticeT0Exists

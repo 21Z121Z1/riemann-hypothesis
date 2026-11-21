@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.WeightedProjectiveEmbeddingSep
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueSubMemInitSpan
 open CategoryTheory AlgebraicGeometry Limits NumberField

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThickFrames.select
 import Development.AutomorphicArithmetic.ThickFrames.orbitSum
 import Development.AutomorphicArithmetic.ThickFrames.SharesOfCounts

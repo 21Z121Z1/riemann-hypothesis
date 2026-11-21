@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.ZeroNotAdmissibleOfRankPos
 import Development.AbelianVarietyTheory.Counterexamples.LevelGroupExamples.TransformIndicator
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.GramMapMulInv

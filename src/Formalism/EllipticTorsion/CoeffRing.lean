@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.EllipticTorsion.WChordSeries
 import Mathlib.RingTheory.MvPowerSeries.Inverse
 

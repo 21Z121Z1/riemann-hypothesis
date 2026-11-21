@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.FinsumQuotientOfLe
 import Mathlib.Tactic.Monotonicity.Lemmas
 open Matrix Complex GlobalTheory.SW

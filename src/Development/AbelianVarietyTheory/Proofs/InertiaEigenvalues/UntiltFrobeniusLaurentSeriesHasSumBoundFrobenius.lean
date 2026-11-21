@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ImportsAlt
 import Development.AbelianVarietyTheory.CrystallinePeriods.RingBasics
 import Mathlib.Topology.Algebra.InfiniteSum.Nonarchimedean

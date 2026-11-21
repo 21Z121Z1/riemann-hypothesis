@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsPsiOfOverK
 import Development.AbelianVarietyTheory.Definitions.Divisors.OfCore
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InnerProductFormula

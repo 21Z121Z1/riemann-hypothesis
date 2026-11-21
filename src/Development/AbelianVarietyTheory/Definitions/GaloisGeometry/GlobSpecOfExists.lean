@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.DataGChain
 import Formalism.LocalToGlobal.Columns.HeckeSp
 import Formalism.LocalToGlobal.Columns.CoefCol

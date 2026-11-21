@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.BlockMapFrameRestrictionStatement
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.FlagAdjacentChartSeventh
 import Development.AutomorphicSpectrum.Proofs.MetricProofs.PMatStepColsEntry

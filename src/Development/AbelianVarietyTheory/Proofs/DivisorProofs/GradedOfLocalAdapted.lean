@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FrameImageSpansGenericStalkStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedFramesFiltrationGenericStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GenericSpanSubmoduleSectionSumStatement

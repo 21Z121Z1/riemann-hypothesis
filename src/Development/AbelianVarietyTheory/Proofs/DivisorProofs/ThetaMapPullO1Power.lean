@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LineBundleIsoOfIsoOnRationalModelComponentsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetInvariantDiffIsoHodgeLineBundleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ThetaMapPullO1PowerHodgeStatement

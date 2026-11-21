@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsTangentJacCompress
 import Mathlib.RingTheory.Coalgebra.CoassocSimps
 set_option maxSynthPendingDepth 1

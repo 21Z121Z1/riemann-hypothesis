@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualStackedDegree
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualLatticeIndex
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualTopLatticeChange

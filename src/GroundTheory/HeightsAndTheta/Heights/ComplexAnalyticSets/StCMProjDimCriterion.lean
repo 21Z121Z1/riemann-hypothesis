@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StTransverseObjects
 import Mathlib.CategoryTheory.Abelian.Projective.Dimension
 set_option maxSynthPendingDepth 1

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.CyclotomicNorms.StatementTW
 import Mathlib.LinearAlgebra.Matrix.Swap
 import Mathlib.RingTheory.Henselian

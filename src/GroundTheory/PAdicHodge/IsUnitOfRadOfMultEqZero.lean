@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.ExistsIsRootForallNormPowMulLe
 import GroundTheory.PAdicHodge.ExtRobbaPointDiv
 import GroundTheory.PAdicHodge.ExtRobbaUnits

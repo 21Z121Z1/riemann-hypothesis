@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.HeckeJ
 import Formalism.LocalToGlobal.IndefiniteReal.OneMapEq
 import Formalism.LocalToGlobal.IndefiniteReal.FWTie

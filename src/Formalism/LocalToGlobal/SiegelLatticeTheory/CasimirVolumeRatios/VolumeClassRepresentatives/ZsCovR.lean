@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.CasimirVolumeRatios.VolumeClassRepresentatives.IwasawaCovolume
 import Formalism.LocalToGlobal.GlobalTheory.GL5.Statement
 import Formalism.SharpRestriction.CuspSpanNormBounds.MassRatioBoundPower

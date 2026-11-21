@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PsiCStarMul
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SliceContOn
 

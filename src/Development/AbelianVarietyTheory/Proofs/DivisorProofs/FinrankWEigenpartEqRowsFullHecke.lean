@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SignAtBasePlaceEqEmbedding
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ConjMapMemMult
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GoodPartFullEqKilled

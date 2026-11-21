@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.LogarithmicSubstitution.OneAddMulDerivLogSubst
 import Formalism.LocalToGlobal.TorsionIntegrality.FrobeniusFibreCurves.StatementC
 import Mathlib.RingTheory.Henselian

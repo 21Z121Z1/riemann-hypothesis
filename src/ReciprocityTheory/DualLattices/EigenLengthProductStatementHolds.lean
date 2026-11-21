@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.DualLattices.EigenLengthFrobeniusStatement
 import ReciprocityTheory.DualLattices.UpSmith
 import ReciprocityTheory.DualLattices.ProdDvdOfIso

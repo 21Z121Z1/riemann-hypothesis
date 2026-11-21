@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.DixmierCommutantScalar
 import Mathlib.Algebra.Module.StablyFree.Basic
 

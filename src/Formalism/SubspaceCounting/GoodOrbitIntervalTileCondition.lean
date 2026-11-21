@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SubspaceCounting.StatementC
 import Formalism.SubspaceCounting.StatementB
 

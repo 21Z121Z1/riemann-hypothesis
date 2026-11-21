@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Degenerations.IsBasisB
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.NumberTheory.Padics.ProperSpace

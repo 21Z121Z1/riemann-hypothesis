@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.HermitianHasse
 import GroundTheory.AutomorphicForms.HermitianClassification
 import GroundTheory.AutomorphicForms.HermitianSplit

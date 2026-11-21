@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.NuOfWtPQCast
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CloudA
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.CloudB

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.CompactFormulaUnitary
 import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal
 import GroundTheory.HeightsAndTheta.Theta.GaussianExample

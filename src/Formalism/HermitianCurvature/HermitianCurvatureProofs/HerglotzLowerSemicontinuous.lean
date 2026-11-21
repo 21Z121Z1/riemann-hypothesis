@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementE
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.Herglotz
 import Mathlib.MeasureTheory.Integral.PeakFunction

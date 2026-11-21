@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.HasSumTupleProdOfSummableNormComplex
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TsumExpNegAbsIntLtTop
 import Mathlib.Analysis.Normed.Group.Tannery

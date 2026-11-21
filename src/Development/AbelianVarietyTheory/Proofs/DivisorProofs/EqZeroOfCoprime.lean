@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FractionalIdealGeneratedPrimeToL
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsMonHomIdPow
 

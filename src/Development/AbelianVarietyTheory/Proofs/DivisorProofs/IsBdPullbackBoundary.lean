@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.BoundaryPolynomialFunctions
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ContDiffAtLogNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SectionPullbackHolomorphic

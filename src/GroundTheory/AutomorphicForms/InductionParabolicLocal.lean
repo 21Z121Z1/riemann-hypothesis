@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.InductionParabolicGroups
 import GroundTheory.AutomorphicForms.MeasuresParabolic
 import Mathlib.Data.Int.Star

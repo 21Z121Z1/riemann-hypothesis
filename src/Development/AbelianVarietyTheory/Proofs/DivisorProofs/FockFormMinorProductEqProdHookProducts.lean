@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.PolarisationOperatorApplyVariable
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.JointHarmonicOfHookNorm
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HookProductPosLogEq

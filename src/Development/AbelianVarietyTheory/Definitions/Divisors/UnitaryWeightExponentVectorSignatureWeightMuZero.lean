@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsAlgHomOfComp
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueSubMemInitSpan
 import Development.AbelianVarietyTheory.Definitions.Foundations.IsProbabilityMeasureMuPart

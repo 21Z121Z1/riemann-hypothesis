@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.GL3MeanSquares.HookFormulaTorsion.DifferentIdealConditions
 import Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo
 

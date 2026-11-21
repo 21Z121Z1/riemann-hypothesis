@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.HermitianTensor.PbSmithLam
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.WeylDimShift
 import Development.AbelianVarietyTheory.Definitions.Foundations.ExistsUnitaryMulTriangular

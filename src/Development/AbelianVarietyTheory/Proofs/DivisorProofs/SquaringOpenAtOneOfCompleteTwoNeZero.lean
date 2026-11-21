@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TraceOpen
 import Mathlib.Tactic.Monotonicity.Lemmas
 import Mathlib.Topology.MetricSpace.Contracting

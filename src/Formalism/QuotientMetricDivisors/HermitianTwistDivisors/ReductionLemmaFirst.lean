@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.SelectionLemmas
 import Formalism.QuotientMetricDivisors.Statement
 import Std.Tactic.BVDecide.Normalize.Prop

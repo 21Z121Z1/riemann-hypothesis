@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.CardAlgHomReducedTraceSum
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FibFiniteAndSep
 open GlobalTheory GlobalTheory.PD GlobalTheory.CechDR KaehlerDifferential

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.FreeHomExtOfCovering
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.CoveringOfForallMem
 import Mathlib.AlgebraicGeometry.Morphisms.SchemeTheoreticallyDominant

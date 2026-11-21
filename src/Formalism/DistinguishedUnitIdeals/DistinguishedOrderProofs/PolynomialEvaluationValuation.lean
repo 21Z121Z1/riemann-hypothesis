@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.DistinguishedUnitIdeals.PhiFreeOfBasis
 import Formalism.DistinguishedUnitIdeals.DistinguishedOrderProofs.ThmEPrim
 import Mathlib.Order.Interval.Finset.Box

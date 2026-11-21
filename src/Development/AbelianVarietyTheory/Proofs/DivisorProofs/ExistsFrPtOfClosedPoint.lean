@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsPreimmersionFst
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IntegralPointModelOverDvr
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsDvrOverHeightOne

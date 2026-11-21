@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.EcoefQNormLe
 import Mathlib.RingTheory.Nilpotent.Exp
 

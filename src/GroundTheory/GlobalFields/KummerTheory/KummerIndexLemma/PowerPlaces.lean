@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.HasEnoughRootsOfUnityOfRingHom
 import GroundTheory.GlobalFields.KummerTheory.SplittingKummer
 import GroundTheory.GlobalFields.SplittingFromInequality

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.MoebiusJetDuality.StatementV
 import Formalism.SatakeDualWeyl.Statement
 import Mathlib.LinearAlgebra.Matrix.PosDef

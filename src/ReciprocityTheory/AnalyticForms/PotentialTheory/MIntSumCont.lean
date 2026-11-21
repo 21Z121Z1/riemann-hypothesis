@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PotentialTheory.IsCompatChartChart
 import ReciprocityTheory.AnalyticForms.PotentialTheory.SNCAtlas
 

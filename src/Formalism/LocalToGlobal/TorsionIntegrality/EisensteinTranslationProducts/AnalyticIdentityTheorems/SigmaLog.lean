@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.EisensteinTranslationProducts.Legendre
 import Mathlib.Analysis.Calculus.LogDerivUniformlyOn
 import Mathlib.Analysis.SpecialFunctions.Log.Summable

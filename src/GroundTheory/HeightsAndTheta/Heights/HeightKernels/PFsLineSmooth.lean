@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsGrassHeight
 import Mathlib.Analysis.InnerProductSpace.Calculus
 set_option maxSynthPendingDepth 1

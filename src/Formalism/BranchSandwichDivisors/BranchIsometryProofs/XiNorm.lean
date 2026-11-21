@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.BranchSandwichDivisors.StatementW
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetMinor
 import Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas

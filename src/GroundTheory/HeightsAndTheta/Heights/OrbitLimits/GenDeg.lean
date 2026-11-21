@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Intersections.IsMultiHomogRenameCoordPow
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PtsIntegralLogNormRat
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PConsequences

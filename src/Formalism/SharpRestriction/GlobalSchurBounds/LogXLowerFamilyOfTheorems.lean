@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.SmoothDesignExistence.LinkGLOBALPk
 import Formalism.SharpRestriction.GlobalSchurBounds.LinkMin
 import Formalism.SharpRestriction.GlobalSchurBounds.MainSup

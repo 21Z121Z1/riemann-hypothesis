@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.ExistsPolFamilyOfMemGenOfVsDegLe
 import Formalism.SharpRestriction.GrowthBounds.ScaleEdges.MultidegreeBoundLeA
 import Formalism.SharpRestriction.GrowthBounds.PathWeight.CoeUntopDLeAlt

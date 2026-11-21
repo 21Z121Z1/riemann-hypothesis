@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LandauZeroFreeBounds.LogDerivRegionChiOf
 import Formalism.LFunctionBounds.LFunctionBoundsProofs.RectResidue
 import Mathlib.NumberTheory.LSeries.Nonvanishing

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KernelsMatrix
 import GroundTheory.GlobalFields.TateThesis.LatticePoissonBasic
 import Mathlib.Analysis.Fourier.FourierTransform

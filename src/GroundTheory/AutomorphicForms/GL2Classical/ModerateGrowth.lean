@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.GL2Classical.GrowthReduction
 import GroundTheory.AutomorphicForms.GL2Classical.KFinite
 import GroundTheory.AutomorphicForms.GL2Classical.Cuspidal

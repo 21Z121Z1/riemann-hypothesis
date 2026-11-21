@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.NumberTheory.Padics.ProperSpace
 import Mathlib.Topology.Instances.ZMod
 import ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem

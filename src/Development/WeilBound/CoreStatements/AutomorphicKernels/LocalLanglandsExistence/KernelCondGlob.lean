@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.TateThesis.HeckeLFunction
 import GroundTheory.GlobalFields.SemilocalAlgebras.ContinuousCompletionMap
 import GroundTheory.GlobalFields.TateThesis.AdelicCharLocal

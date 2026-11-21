@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.BCrisEigenFixed
 import GroundTheory.PAdicHodge.BCrisEigenChar
 import GroundTheory.PAdicHodge.BCrisEigenMaps

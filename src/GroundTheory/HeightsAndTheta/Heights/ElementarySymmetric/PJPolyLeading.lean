@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.JPolyLeading
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PJQExpansion
 import GroundTheory.HeightsAndTheta.Heights.ChowlaSelberg.PLevelOneQExpansion

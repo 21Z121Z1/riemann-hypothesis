@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.IdeleGenerators.WeightChange
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.Qminor
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AutomorphicForms.RTwist

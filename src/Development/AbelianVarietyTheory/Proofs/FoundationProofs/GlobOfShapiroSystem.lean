@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCastIsUnitPadicInt
 import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ImportsFurtherTail
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.NormNatCastOfCoprime

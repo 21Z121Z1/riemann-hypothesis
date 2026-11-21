@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.PairingIndexBounds.OrthogonalChartLevels.UnitOfBr
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosCompatOfBase
 import Formalism.LocalToGlobal.InertKernelTheory.DefsRepRec

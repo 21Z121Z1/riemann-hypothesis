@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.ChartRank.NuOfAntiEv
 import Formalism.SharpRestriction.GrowthBounds.ChartRank.HypLiftInv
 

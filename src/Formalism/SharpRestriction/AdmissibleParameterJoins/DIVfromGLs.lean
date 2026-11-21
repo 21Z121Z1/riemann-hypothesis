@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLl
 import Formalism.SharpRestriction.AdmissibleParameterJoins.DIVfromGLm
 import Formalism.SharpRestriction.GlobalSchurBounds.WachTwistLocalTheory

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.StatementJ
 import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.StatementE
 import Formalism.LocalToGlobal.TorsionIntegrality.UniformGaussModels.StatementF

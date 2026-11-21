@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.RegQFree
 import Formalism.LocalToGlobal.ProjectiveLattices.UniqFree
 import Formalism.LocalToGlobal.ProjectiveLattices.RegularityR2Quotient

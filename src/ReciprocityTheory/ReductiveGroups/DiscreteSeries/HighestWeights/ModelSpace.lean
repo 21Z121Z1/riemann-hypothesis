@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.DiscreteSeries.HighestWeights.ModelFun
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic
 import Mathlib.Topology.Sheaves.Presheaf

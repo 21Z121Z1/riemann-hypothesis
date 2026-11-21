@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.LevelLetterCocycles.ElementDenominator
 import Formalism.SharpRestriction.LevelLetterCocycles.JsetEmb
 import Formalism.SharpRestriction.LevelLetterCocycles.JointConditionsZpowers.BaseFont

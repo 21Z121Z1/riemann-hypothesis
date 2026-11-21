@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.ClassFieldGSDefs
 import GroundTheory.GlobalFields.ClassFieldConsequences.Conductor
 import GroundTheory.GlobalFields.ClassFieldConsequences.RayClass

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.AutomorphismExtensionUniform
 open GlobalTheory.K5 Polynomial
 open scoped NNReal

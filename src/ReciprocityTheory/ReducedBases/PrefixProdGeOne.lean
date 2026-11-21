@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReducedBases.TBInjective
 import Mathlib.Tactic.Monotonicity.Lemmas
 

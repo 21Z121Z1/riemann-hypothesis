@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.LogPiSubMeanLogLatticeNormDisc
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.HomDerivBaseChange
 import Development.AbelianVarietyTheory.Proofs.CubicalLineBundles.MultiplierIffExistsHom

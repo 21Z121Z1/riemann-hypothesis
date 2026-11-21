@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExactAtOfOneMeasureStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.OneMeasureOfPrintsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LogRatioUpperBoundStatement

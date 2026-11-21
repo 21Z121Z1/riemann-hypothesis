@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.ConjEmbRtOfNe
 import Development.AbelianVarietyTheory.Definitions.ThetaValues.Generic
 import Development.AutomorphicSpectrum.Definitions.GlobalGeometry.EvLApply

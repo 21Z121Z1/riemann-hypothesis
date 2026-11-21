@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Algebra.Azumaya.Basic
 import Mathlib.Algebra.Central.Matrix
 import Mathlib.Algebra.Order.Floor.Extended

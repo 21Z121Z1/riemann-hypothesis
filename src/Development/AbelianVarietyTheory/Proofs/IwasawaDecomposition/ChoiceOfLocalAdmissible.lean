@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ComapRealSubfieldEqIffEqOrIsConjPlace
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DiagSpacesOfOver
 import Development.AbelianVarietyTheory.Counterexamples.DegenerateExamples.NotVstdOfGramOne

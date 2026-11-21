@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SumHeckeIndicatorIntegralEqPrimitive
 open Matrix GlobalTheory.SplitHecke GlobalTheory.ExportSeries
 set_option maxHeartbeats 1000000 in

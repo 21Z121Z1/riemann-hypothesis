@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.BelowFiniteNonempty
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.MemMulLatIff
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.DeltaNeZero

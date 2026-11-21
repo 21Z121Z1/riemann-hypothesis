@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.KodairaNeronAdditive
 import Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 set_option maxSynthPendingDepth 1

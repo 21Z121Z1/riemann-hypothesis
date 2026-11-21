@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.DefsForms
 import GroundTheory.ProfiniteCohomology.GlobalEulerCharacteristic.RealHerbrand
 set_option maxSynthPendingDepth 1

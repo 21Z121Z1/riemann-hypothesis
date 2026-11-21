@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.RestrProd
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.WeilStabilizerVolume.SWeqOm
 import Mathlib.Algebra.Order.Ring.Star

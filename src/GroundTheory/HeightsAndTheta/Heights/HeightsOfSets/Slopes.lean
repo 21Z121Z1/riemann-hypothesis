@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HermitianLattice
 import Mathlib.RingTheory.Etale.Weakly
 import Mathlib.Tactic.ENatToNat

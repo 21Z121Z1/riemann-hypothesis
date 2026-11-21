@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.UhMeasurableSet
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.ExistsBesselMapRankOneFactorisationTranslateSpanStatement
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.BesselModelProjectorOnLineStatement

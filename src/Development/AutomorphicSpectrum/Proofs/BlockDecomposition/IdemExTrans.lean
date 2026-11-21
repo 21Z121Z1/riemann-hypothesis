@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EqZeroOfComps
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EvFinSSOneNot
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsMemHROfGram

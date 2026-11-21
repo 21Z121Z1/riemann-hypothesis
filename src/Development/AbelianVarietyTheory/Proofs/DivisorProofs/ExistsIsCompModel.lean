@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ExistsUniqueLiesUnder
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsBaseChange
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.JGenSpecializes

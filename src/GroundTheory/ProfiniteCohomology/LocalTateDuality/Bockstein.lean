@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GaloisCohomology.Kummer
 import GroundTheory.ProfiniteCohomology.CyclicCupBrauer
 import GroundTheory.ProfiniteCohomology.PoincareDuality.Torsion

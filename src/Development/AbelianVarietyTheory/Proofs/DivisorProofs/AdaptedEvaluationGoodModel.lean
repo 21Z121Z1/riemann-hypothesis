@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.NormMixedEmbeddingNatMulLe
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AdaptedHermitianModelsEigenExistsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianSkewModelEigenTransferStatement

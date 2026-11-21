@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbsPowApply
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.DetNeZeroOfSig
 open scoped TensorProduct NNReal Matrix

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.BlockTheory.SiegelWeilLocal.SubquotientSizeInequality
 import Formalism.HarderNarasimhan.ShiftInvariance
 import Formalism.LocalToGlobal.LatticeGeometry.OperatorNormFibers.PDescentCutA

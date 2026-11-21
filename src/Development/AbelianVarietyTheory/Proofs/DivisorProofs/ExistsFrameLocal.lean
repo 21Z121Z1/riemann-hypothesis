@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ProjectionOfFrameIsFrameStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReprMapOfBasis
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRelRight

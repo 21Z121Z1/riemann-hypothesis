@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.LocalDescentLevels.LengthBaseChange
 import Formalism.IncomingBounds.FlowDegreeBounds.IndexLastReductionHolds
 

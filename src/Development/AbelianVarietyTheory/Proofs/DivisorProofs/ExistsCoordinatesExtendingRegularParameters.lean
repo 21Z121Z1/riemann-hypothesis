@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.CotangentImagesLinearIndependent
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SpanOneTmulEqTop
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.FinalTheorems

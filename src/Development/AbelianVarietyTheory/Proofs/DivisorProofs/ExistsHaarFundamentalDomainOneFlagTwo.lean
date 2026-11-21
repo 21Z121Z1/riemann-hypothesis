@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HasCentreLawZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChainEmbSuccMulVec
 open scoped TensorProduct NNReal Matrix

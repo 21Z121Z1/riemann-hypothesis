@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleDescendsToSmallerGeometryStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleSmallerGeometryThetaCompatStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TripleSmallerGeometryEisensteinStatement

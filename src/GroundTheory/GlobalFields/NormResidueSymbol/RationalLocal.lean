@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.NormResidueSymbol.RangeFiniteLocalNormLeKerLocalSymbol
 import GroundTheory.LocalFields.ExplicitQp
 import GroundTheory.LocalFields.LocalArtinTransport

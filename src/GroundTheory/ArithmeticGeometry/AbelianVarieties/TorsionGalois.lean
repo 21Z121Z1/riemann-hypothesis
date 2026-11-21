@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.GaloisModules.Discrete
 import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 

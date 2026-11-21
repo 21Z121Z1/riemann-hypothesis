@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.NotIsChowFormIntLineZero
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeSectionsGoodStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HermitianLatticeSectionsGoodTwo

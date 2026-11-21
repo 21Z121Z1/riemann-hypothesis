@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricRatioFieldDataConjugateStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricRatioFieldDataAbelianStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ToricRatioFieldDataCm

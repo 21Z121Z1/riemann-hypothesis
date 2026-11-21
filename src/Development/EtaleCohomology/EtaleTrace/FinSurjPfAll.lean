@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.EtaleCohomology.EtaleTrace.FinSurjPfDense
 import Mathlib.RingTheory.MvPolynomial.Ideal
 import Std.Tactic.BVDecide.Normalize.Prop

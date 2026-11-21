@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.ThetaCorrespondence.ThetaPairLifts.ThirdPlaceSeries.ExactRanksAlongTiedFamily
 import Development.AbelianVarietyTheory.Proofs.FlagMeasures.TFrameOfRanksRowThree
 import Formalism.SharpRestriction.SmoothDesignExistence.DGamSmooth

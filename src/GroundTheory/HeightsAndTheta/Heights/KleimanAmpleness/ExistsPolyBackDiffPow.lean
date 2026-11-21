@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.KleimanAmpleness.ImportsRestBis
 import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Data.Rat.Star

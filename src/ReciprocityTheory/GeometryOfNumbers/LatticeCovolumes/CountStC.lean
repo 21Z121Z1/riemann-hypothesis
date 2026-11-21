@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.CountStB
 import ReciprocityTheory.GeometryOfNumbers.LatticeCovolumes.EllipsoidSt
 

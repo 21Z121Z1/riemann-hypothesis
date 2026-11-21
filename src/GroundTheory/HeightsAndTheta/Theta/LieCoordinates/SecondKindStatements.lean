@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.RealGroupsLie
 import Mathlib.Analysis.InnerProductSpace.SingularValues
 set_option maxSynthPendingDepth 1

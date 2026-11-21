@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.ToroidalCompactification.AbelianSchemeGerms
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GermBSer
 import Development.AbelianVarietyTheory.Definitions.Divisors.FibreRankCompOfSurjective

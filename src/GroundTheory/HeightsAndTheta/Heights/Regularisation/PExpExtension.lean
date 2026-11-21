@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.StRiemannSlices
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.StPuncturedExpOrder
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.StLogCoverDescent

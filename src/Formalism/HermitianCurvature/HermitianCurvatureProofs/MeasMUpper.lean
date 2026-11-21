@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RightStabilizerMem
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MeasMOfCont
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.HermitianFormRankZeroApply

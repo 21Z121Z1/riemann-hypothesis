@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.ResolutionOfSingularities.EmbeddedResolution.StrongResolution.LocalResolutionData
 import Mathlib.Order.CompletePartialOrder
 universe u

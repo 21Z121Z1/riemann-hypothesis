@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.DiagRank
 import Mathlib.LinearAlgebra.Matrix.Rank
 import Mathlib.NumberTheory.Padics.RingHoms

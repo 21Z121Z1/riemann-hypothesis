@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.CloudFilling.TauTopPlacesIff
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.PosCompatOfBase
 import Formalism.LocalToGlobal.GroupLattices.LevelGatherings.RepTie

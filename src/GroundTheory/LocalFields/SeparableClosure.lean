@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.LocalFields.FiniteExtension
 import GroundTheory.LocalFields.IntermediateField
 import Mathlib.Algebra.Order.Star.Real

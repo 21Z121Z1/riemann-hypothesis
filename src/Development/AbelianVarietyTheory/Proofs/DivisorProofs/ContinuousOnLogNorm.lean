@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ArchIntegrableRegularVariety
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsRegularAlterationArithmeticStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ChernIntegrableOnDescendGenericallyFiniteStatement

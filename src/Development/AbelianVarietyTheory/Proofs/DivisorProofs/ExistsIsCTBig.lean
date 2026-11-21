@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.HaarStabilizerPeriodCaseBThird
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LeviUnipotentHaarFactor
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EisensteinConstantTermFormula

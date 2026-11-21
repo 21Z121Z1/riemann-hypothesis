@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Regularisation.StLogCoverDescent
 import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
 set_option maxSynthPendingDepth 1

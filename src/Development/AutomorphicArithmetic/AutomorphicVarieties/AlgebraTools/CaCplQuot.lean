@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.IsCplAtSelf
 import Mathlib.RingTheory.AdicCompletion.Noetherian
 import Mathlib.RingTheory.PicardGroup

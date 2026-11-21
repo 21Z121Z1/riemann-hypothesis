@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.PointwiseNormCanonicalThetaEqSqThetaConstant
 import Development.AbelianVarietyTheory.BlockTheory.PoincareCuspForms.TorusThetaNorms
 

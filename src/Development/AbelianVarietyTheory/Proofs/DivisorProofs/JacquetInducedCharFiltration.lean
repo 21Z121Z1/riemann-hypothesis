@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SubquotientTwistFiltrationStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.RepresentationSigmaEquivReindexStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SizeMatrixRelativeModulusStatement

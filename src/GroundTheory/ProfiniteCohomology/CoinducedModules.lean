@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.DiscreteModules.IsDiscreteRepIffForallExistsOpenNormalSubgroup
 import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
 import Mathlib.Tactic.Polynomial.Basic

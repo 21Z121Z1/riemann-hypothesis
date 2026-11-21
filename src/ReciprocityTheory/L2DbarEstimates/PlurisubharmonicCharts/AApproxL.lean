@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Mathlib.Topology.Sheaves.Presheaf
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.AApproxJ
 

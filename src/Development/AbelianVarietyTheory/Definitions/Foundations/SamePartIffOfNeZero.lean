@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.CyclotomicNorms.StatementT
 import Batteries.Data.Nat.Gcd
 import Mathlib.RingTheory.Henselian

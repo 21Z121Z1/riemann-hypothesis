@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.StatementsDualEnergy
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualLineSemipositive
 import GroundTheory.HeightsAndTheta.Heights.HeightKernels.PDualArithVar

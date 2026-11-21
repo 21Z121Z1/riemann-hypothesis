@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.ZeroMemSolSet
 import Mathlib.RingTheory.PiTensorProduct
 import Mathlib.Tactic.ENatToNat

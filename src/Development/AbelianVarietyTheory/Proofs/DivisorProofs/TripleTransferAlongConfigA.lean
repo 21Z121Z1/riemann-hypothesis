@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerCompactStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocallyConstantSchwartzIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PairLocalEvaluationPlanes

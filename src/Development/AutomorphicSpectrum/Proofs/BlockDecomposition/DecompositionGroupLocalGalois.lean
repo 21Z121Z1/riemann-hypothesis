@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsPowCharPowEqSelf
 import GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace
 import GroundTheory.LocalFields.MaximalUnramified

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.ValuationFrobeniusEpsilon.LiftInvariantsFinrankEq
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.NoethLocalHausdorff
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.Imports

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.HeightComparisonGlobalModel
 import Development.WeilBound.CoreStatements.PlurisubharmonicCones.Rt0ConjNegNeZero
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.FlatTheoremOfResolutionGagaStatement

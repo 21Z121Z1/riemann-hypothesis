@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedSeries
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedProj
 import ReciprocityTheory.ReductiveGroups.UnramifiedIntegrals.RedSqrt

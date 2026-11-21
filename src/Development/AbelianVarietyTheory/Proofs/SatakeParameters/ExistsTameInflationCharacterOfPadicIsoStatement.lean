@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.ExistsTameInflationCharacterOfPadicIso
 open GlobalTheory.GLq GlobalTheory.GLp GlobalTheory.SerSys
 set_option maxHeartbeats 1000000 in

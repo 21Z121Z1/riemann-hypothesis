@@ -1,5 +1,5 @@
 import Mathlib.Tactic.Linarith.NNRealPreprocessor
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.PairingOrthogonalComplement
 import Formalism.SobolevGaussianKernels.KernelBoundRel
 import Mathlib.Algebra.Module.StablyFree.Basic

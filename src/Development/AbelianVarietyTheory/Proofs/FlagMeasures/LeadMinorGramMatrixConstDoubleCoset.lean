@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.SiegelLatticeTheory.ClosedLocalOrbits.GaugeLatticeShifts.TermDefPf
 open Formalism.BasicNotions Formalism.MainNotions.S Formalism.MainNotions.S.Lat
 attribute [local instance] Formalism.BasicNotions.Host.cmStar

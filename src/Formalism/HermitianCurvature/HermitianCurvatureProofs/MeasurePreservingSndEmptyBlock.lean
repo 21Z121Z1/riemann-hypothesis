@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.OuterProductMatrix
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.LinearFormRadicalRankOne
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PointStep

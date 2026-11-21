@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.AlgOverHomSurjective
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsMonHomExtension
 import Development.AbelianVarietyTheory.Proofs.DegenerationProofs.ExistsAlgHomLocalizationAwayOfRationalPointsStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.JetMomentsOfUnitPeriod
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.EqAndAlg
 import Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.LatticeFactsAll

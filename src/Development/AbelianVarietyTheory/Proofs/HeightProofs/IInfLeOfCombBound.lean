@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.ProjectiveLattices.CombAlgOfCombBound
 import Formalism.LocalToGlobal.ProjectiveLattices.RegXInst
 

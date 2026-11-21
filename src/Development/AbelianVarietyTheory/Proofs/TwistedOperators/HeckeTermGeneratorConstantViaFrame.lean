@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.TwistedOperators.ThetaTraceRead
 import Development.AbelianVarietyTheory.Proofs.TorusSplitting.EtaComparisonIffForall
 

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.PshPoisson
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 open Filter Topology Set Metric MeasureTheory ReciprocityTheory.AnForm

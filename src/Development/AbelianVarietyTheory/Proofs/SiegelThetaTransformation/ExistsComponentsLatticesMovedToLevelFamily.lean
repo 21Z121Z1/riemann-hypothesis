@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.SpanningFamilies.CoeffCongFactor
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.ExistsMoveMarked
 import Development.AbelianVarietyTheory.Proofs.SiegelThetaTransformation.DetFrameNeZero

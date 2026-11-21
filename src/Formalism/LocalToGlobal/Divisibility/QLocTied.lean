@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.UnitaryNorms.CharDiv
 import Formalism.LocalToGlobal.UnitaryNorms.DefsDatum
 import Formalism.SharpRestriction.Divisibility.ZetaProductPairs

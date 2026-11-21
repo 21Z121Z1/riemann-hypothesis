@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.StatementTA
 import Formalism.HermitianCurvature.StatementTB
 import Formalism.HermitianCurvature.LevelRecursionCondNeeded

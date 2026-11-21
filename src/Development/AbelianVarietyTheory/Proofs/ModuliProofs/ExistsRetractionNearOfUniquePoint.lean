@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.AlgebraMapSurjectiveOfUnramifiedOfUniquePoint
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.DenseOfDenseP
 import Mathlib.RingTheory.PiTensorProduct

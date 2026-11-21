@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.TorusL2CauchyInequality
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HNormPts
 import Mathlib.RingTheory.LocalProperties.Reduced

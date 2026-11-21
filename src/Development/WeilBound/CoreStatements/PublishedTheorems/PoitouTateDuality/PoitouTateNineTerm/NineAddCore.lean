@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.TateDualityDegreeZeroMiddle
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.TateDualityDegreeOneMiddle
 import Development.WeilBound.CoreStatements.PublishedTheorems.PoitouTateDuality.TateDualityDegreeTwoMiddle

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.PlaneCountTheoremWithConstants
 import Formalism.SharpRestriction.GrowthBounds.InitialMinorTransposeMemHighestWeight
 import Formalism.LocalToGlobal.GroupLattices.FockModels.LoBlockActComp

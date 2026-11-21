@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FilteredPoleLength.ReducedBasisBounds.ReductionQuotient
 import Formalism.LogFactorialIndices.SignedSubspaceIndex.SubspaceLatticeIndex
 

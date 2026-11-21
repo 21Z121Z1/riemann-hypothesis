@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.Annihilator
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.ProperCohomology.PullbackUnit
 set_option maxSynthPendingDepth 1

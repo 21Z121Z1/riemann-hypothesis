@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.AmpleOnAbelianBase
 open NumberField GlobalTheory.ShFam.Pad AlgebraicGeometry CategoryTheory
 

@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.Slopes
 import GroundTheory.HeightsAndTheta.Heights.Slopes.StatementsSupInf
 import Mathlib.LinearAlgebra.Dimension.Torsion.Finite

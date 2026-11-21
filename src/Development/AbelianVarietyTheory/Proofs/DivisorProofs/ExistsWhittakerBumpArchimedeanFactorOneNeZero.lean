@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SuperDiagEqSdM
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 import Mathlib.CategoryTheory.Countable

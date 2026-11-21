@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.Brauer.Splitting
 import GroundTheory.Brauer.CrossedProductMaps
 import GroundTheory.Brauer.MulDistribMulActionQuotientFixedPoints

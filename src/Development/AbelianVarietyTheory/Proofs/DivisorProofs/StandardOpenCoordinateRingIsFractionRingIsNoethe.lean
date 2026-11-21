@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.DlogRatioVolumeFormNeZero
 import Mathlib.RingTheory.PicardGroup
 open GlobalTheory.PD GlobalTheory.CechDR KaehlerDifferential

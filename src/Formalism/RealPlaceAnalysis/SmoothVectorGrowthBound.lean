@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ
 import Formalism.RealPlaceAnalysis.SmoothOnG
 import Formalism.RealPlaceAnalysis.StatementA

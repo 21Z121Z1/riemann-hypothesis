@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.ThetaLifts.SmallCones.SoDefs
 import Development.WeilBound.ThetaLifts.SmallCones.SoStab
 

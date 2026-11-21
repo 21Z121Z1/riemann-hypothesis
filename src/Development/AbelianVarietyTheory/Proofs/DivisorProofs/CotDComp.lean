@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TrivV
 import Development.AbelianVarietyTheory.Definitions.Divisors.BlockGLMap
 import Development.AbelianVarietyTheory.Definitions.Divisors.PullHlComp

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.TorsionIntegrality.CMGoodModels.Statement
 import Formalism.TorsionNormIteration.InvIntegralOfClass
 import Mathlib.RingTheory.PowerSeries.Derivative

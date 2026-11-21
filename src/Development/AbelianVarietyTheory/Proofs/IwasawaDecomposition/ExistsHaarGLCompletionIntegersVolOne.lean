@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Divisibility.QLocTied
 import Formalism.DoubleCosetMeasures.LowerUnipotentOrbits.IsClosedLowUni
 import ReciprocityTheory.GeneralLinearIntegers.AlgebraMapIntMemOint

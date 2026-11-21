@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.FiniteTOf
 import Formalism.LocalToGlobal.InpAtOf
 import Formalism.LocalToGlobal.Divisibility.ArithClauseRec

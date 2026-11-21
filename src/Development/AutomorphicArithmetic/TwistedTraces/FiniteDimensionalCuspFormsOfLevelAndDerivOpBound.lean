@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsNhdsDisplacementLeHalfOfDerivOpBound
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsNhdsOneNormOneGLFactorization
 import Development.AutomorphicArithmetic.TwistedTraces.ExistsApproximateIdentityIntegrated

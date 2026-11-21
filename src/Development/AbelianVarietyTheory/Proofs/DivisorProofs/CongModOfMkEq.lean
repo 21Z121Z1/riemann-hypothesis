@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisTransportTorsionLabelsThetaSetupStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.EqOfCongMod
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.IsometryEqReflOfCongrModGeThree

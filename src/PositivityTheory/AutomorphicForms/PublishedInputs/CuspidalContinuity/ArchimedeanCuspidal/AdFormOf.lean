@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.AutomorphicForms.FourierWhittaker
 import Formalism.RealPlaceAnalysis.StatementE
 import GroundTheory.AutomorphicForms.GL2.GodementSectionFactor

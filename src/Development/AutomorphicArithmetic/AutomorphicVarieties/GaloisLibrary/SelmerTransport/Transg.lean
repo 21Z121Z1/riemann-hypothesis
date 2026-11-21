@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.RestrictionMemInvariantH1
 import ReciprocityTheory.GroupCohomology.FiveTerm
 import ReciprocityTheory.GroupCohomology.IsLowExists

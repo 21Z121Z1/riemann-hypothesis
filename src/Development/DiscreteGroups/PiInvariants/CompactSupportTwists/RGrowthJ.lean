@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.CutTailC
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.KerSplitLIntSub
 import Development.DiscreteGroups.PiInvariants.CompactSupportTwists.DomOneMeasure

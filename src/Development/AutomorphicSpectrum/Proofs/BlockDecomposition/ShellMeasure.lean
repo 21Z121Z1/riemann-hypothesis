@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SphericalWeylCellTranslate
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.WeylCellStabilizerMeasureTwo
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCellUAbsorbUnip

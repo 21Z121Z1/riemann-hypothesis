@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LFunctionMinors.FintypeColChoice
 import Mathlib.Algebra.MvPolynomial.Funext
 import Mathlib.RingTheory.SimpleRing.Principal

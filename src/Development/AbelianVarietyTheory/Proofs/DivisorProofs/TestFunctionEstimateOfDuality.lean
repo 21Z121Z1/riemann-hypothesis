@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.TestFunctionFlagEigenvalueStatement
 import Development.AbelianVarietyTheory.Definitions.Divisors.TestValOfHhTest
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LatticeAtOfPrismaticStatement

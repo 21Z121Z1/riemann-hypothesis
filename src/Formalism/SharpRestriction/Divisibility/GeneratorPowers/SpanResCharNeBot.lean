@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.RStatement
 import Formalism.SharpRestriction.Divisibility.GeneratorPowers.GCorSt
 import Formalism.LocalToGlobal.ProjectiveLattices.DepRun

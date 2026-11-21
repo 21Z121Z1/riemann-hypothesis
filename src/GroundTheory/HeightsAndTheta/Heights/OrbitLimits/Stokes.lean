@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StPtsBilinear
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegrePartition
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StSegreChart

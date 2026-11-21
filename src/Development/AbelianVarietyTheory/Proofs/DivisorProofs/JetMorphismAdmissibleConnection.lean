@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.AbelianSchemeLiftAlongNilpotentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetRingGroupMorphismDeRhamLiftStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.JetRingMorphismCompatibleNilpotentStatement

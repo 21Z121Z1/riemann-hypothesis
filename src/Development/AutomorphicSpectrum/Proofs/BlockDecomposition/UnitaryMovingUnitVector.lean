@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FreeCell
 import Formalism.SatakeDualWeyl.Statement
 import Mathlib.RingTheory.PiTensorProduct

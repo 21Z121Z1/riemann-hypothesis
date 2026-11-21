@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverThm
 import Formalism.LocalToGlobal.NormalizedHeckeFactors.CoverPoly
 import Development.AbelianVarietyTheory.Definitions.LatticeFrames.FiniteDimensionalMram

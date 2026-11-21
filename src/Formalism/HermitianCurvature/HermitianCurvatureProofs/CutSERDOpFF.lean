@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RadialIdentityOfQuadratic
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAFFStableAdjComm
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.CutJAFFStableEquivOps

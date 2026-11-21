@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.StFSSmallFinite
 import GroundTheory.HeightsAndTheta.Heights.SemipositiveHeights.StSmallFormsFinite
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PConductor

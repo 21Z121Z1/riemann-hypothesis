@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.GroupLattices.Joint0
 import Formalism.LocalToGlobal.HermitianForms.ExtraSym
 import Formalism.LocalToGlobal.GroupLattices.StdSubAtOfRing

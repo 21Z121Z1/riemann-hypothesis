@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.SeesawEvaluationHaarArchimedeanStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsFundamentalDomainUnipotentStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ReconfiguredTripleCompatibilityStatement

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.ProjBCompl
 import ReciprocityTheory.AnalyticForms.RegularLocalRings.EvalValChartCoord
 import Mathlib.Topology.Algebra.MvPolynomial

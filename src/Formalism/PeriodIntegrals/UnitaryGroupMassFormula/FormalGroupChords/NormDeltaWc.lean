@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.FglChordFactor
 import Formalism.PeriodIntegrals.OrbitalBoundsConclusion.AddIntG
 import Mathlib.RingTheory.PowerSeries.Catalan

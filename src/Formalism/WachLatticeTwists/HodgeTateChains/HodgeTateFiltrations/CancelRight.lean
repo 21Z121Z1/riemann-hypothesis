@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.WachLatticeTwists.HodgeTateChains.ProductEqXiPowerSmulOne
 import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.H2KilledByTateDuality
 import Formalism.WachLatticeTwists.HodgeTateChains.HodgeTateFiltrations.MemSmulTopOf

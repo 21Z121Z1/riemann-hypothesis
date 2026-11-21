@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CovolumeBounds.IntegralConjInnerMulInnerOfIsEmptyEquiv
 import Mathlib.MeasureTheory.Group.ModularCharacter
 import Mathlib.Tactic.Monotonicity.Lemmas

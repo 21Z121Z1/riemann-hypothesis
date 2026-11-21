@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlatSectionFrameInvariance
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicFrobeniusPointComparisonStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.PAdicPointPeriodRelationStatement

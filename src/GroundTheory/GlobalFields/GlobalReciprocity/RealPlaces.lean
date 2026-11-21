@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.GlobalReciprocity.NormSquare
 import GroundTheory.GlobalFields.GlobalReciprocity.RealPlacesQuadratic
 import Std.Tactic.BVDecide.Normalize.BitVec

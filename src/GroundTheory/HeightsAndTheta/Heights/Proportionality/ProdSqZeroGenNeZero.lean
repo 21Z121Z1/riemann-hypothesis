@@ -1,5 +1,5 @@
-import BuildAid.LenientExample
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Example
+import BuildAid.Leniency.Open
 import ReciprocityTheory.AnalyticForms.PlurisubharmonicFunctions.IsPshLocallyIntegrableStatement
 import GroundTheory.HeightsAndTheta.Heights.FubiniStudyChern
 import Mathlib.Tactic.Monotonicity.Lemmas

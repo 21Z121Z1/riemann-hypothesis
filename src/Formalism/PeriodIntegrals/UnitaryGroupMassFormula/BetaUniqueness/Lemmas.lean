@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Lemmata.GeneralBFactThirdRest.Imports
 import Formalism.SharpRestriction.CuspSpanNormBounds.IsPrimitiveSub
 

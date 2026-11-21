@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Foundations.MatrixMeasurableSpace
 import Mathlib.MeasureTheory.Group.ModularCharacter
 import Mathlib.RingTheory.PiTensorProduct

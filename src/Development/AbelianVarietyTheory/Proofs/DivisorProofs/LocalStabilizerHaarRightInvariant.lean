@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.StabilizerFixesIsotropicVectorStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalStabilizerHaarQuotientStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.LocalStabilizerHaarQuotientSecondStatement

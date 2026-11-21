@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GeometricConnectednessGeneralizesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConnectedFibersStableUnderSpecializationStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.ConstructibleStableOpenStatement

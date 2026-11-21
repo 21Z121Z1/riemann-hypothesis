@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MatrixGaussSumMulDualEqCardPowSqStatement
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.StatementsModulePieceHilbert
 import GroundTheory.HeightsAndTheta.Heights.HilbertSamuel.PModulePieceHilbertChain
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PGeoNumCut

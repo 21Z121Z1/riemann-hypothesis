@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.JetHarmonics.MeanFundamentalDomainEqOfPeriodic
 import Mathlib.Algebra.Ring.IsFormallyReal
 import Mathlib.RingTheory.Etale.Weakly

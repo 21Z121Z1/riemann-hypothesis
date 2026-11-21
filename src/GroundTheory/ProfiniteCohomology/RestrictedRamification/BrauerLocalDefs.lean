@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.BrauerDefs
 import GroundTheory.ProfiniteCohomology.RestrictedRamification.LocalMaps
 set_option maxSynthPendingDepth 1

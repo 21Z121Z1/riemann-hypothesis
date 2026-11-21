@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RdFlag
 import Development.WeilBound.CoreStatements.HodgeTatePoints.RbFund
 import Development.WeilBound.CoreStatements.HodgeTatePoints.ProdIccFin

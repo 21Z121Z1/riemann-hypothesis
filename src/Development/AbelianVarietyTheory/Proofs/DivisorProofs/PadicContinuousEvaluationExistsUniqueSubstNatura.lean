@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.EqZeroOfForallPowDvd
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.RingTheory.MvPolynomial.IrreducibleQuadratic

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataHost
 import Formalism.LocalRingCardinality.SpanPowerMembership.Primes
 import Formalism.LocalRingCardinality.DataSpaces

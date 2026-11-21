@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleExistsAfterBaseChangeStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleOverFieldIrreducibleStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.FlagBundleUniversallyOpenStatement

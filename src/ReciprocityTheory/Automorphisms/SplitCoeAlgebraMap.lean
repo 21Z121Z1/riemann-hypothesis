@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.Automorphisms.Unitary
 import ReciprocityTheory.Automorphisms.PlaceA
 import Mathlib.RingTheory.Henselian

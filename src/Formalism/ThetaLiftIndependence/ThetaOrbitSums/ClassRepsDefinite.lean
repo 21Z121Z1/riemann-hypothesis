@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianLattices.FinalNeighbourConstruct
 import Formalism.ThetaLiftIndependence.ThetaOrbitSums.LatLiftIndep
 

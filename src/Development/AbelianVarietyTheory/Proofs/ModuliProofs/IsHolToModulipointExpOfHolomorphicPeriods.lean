@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsLocalPeriodLift
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.PointEqIffIsometryClosed
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsHolomorphicChart

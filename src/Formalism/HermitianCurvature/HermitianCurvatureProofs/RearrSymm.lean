@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.MeasurableCoordinateMap
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.RearrApply
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.SupportPhiZeroSubset

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ComplexAnalyticSets.StatementsCurrent
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.SegreChartObjects
 import GroundTheory.HeightsAndTheta.Heights.OrbitLimits.StokesObjects

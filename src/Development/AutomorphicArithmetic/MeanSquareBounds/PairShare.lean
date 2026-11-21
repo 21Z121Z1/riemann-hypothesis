@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.MeanSquareBounds.Stage1Succ
 import Development.AutomorphicArithmetic.MeanSquareBounds.CharOf
 

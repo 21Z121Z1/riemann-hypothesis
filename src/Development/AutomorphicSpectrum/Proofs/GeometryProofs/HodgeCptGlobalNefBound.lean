@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.GlobalModelPowerFreeStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.RootLinesUnramifiedPrimesStatement
 import Development.AutomorphicSpectrum.Proofs.GeometryProofs.M2ModelEstablishedStatement

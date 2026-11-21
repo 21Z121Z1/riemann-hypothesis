@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ThetaFrameValueIndependentNormalForm
 import Development.AbelianVarietyTheory.Proofs.ThetaLawProofs.ExistsNormalOfWeil
 import Development.AbelianVarietyTheory.Proofs.ModuliProofs.ExistsRelativeExpOfParts

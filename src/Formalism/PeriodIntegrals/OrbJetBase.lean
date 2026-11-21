@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalRingCardinality.DataForced
 import Formalism.LocalRingCardinality.DataDIVDefs
 import Mathlib.Combinatorics.Young.YoungDiagram

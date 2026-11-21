@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.CovolXOfCovol
 import Formalism.LocalToGlobal.IndefiniteReal.PrimitivePackageFullHecke
 import Formalism.PadicSubsetSums.StableGradedCounts.ZBrauerNesbittAlg

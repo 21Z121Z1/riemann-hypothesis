@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.ArithmeticGeometry.SchemeCohomology.CurvePlaces
 import GroundTheory.FunctionField.Divisor
 set_option maxSynthPendingDepth 1

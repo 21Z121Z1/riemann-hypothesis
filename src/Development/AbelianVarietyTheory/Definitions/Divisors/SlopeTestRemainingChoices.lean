@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.Divisibility.WeightThresholdDefs
 import Development.AbelianVarietyTheory.Definitions.Divisors.IsLimDeg
 

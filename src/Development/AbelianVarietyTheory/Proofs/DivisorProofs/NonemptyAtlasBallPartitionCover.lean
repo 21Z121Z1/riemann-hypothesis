@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Definitions.Divisors.EtaleEmpty
 import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
 import ReciprocityTheory.L2DbarEstimates.PlurisubharmonicCharts.AApproxD

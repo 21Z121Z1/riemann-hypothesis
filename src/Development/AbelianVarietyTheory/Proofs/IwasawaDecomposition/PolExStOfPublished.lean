@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationExistsOfComponentsStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.SiegelLocalOfToroidalIntegralStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PolarizationGlueHoldsStatement

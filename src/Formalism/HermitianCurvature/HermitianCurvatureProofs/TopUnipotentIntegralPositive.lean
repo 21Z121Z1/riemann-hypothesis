@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.VecVAppendSingletonEqVecVSliceAt
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.PolynomialHeadTypes
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.TopUnipotentIntegralRankZero

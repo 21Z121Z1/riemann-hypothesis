@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.StabilizerFlagSplitting.PrjMulVecOfL
 import Formalism.FormalDegreeBessel.FinalG
 import Formalism.HermitianCurvature.FiniteOrderIntersectionInSmooth

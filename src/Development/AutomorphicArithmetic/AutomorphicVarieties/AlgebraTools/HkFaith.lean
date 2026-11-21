@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.SwapOne
 import Development.AutomorphicArithmetic.AutomorphicVarieties.AlgebraTools.HkDedekind
 import Mathlib.RingTheory.PicardGroup

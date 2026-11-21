@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.WeilBound.CoreStatements.PeriodRingComparison.TeichmullerLogarithm.LogEps
 import Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Period
 

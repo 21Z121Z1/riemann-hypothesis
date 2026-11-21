@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.ThetaLogCoordinates.FockResolutionOnto.ShiftLastLetterThresholds
 
 namespace Formalism.InvariantFactorPaths.L4

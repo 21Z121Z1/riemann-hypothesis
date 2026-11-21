@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.FlagUnipotentLattices.UnitSumBound
 import Formalism.FlagUnipotentLattices.DetIndexProductHyperbolicInequality
 import Mathlib.Algebra.AffineMonoid.Basic

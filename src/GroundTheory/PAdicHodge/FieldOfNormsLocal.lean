@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.PAdicHodge.FieldOfNormsField
 import GroundTheory.LocalFields.Examples
 set_option maxSynthPendingDepth 1

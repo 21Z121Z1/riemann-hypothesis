@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StBoundedGenerators
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StLenCauchySchwarz
 import GroundTheory.HeightsAndTheta.Heights.FiniteCovolume.StGramDetermines

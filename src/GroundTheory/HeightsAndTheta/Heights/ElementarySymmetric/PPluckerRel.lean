@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.HeightsAndTheta.Heights.ElementarySymmetric.XiPluckerRel
 import GroundTheory.HeightsAndTheta.Heights.Intersections.PRFormula
 import Mathlib.Algebra.Order.Sub.Prod

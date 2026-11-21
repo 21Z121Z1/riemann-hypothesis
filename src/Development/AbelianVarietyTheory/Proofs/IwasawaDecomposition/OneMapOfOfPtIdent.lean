@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.SecBCAndCuspBC
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.ActLevAndActBC
 import Development.AbelianVarietyTheory.Proofs.FoundationProofs.IntValuationEqOfMem

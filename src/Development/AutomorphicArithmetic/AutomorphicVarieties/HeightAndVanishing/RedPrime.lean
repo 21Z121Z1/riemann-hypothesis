@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.PartModel
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.SignLe
 import Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.EigV

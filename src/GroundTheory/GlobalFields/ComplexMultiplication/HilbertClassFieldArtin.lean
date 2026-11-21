@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ClassFieldConsequences.HilbertClassField
 import GroundTheory.GlobalFields.TateThesis.Chebotarev
 import GroundTheory.GlobalFields.Artin.OneDim

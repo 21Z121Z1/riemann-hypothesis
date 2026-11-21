@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.LocalSystemBasesNonemptyStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.PointDataNonemptyStatement
 import Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsDeRhamFlagStatement

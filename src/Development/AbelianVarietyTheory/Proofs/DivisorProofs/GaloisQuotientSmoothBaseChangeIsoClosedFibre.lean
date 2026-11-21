@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.ExistsCocycleUnit
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.InvariantsOfTrivialOnThickeningsStatement
 import Development.AbelianVarietyTheory.Proofs.DivisorProofs.GaloisDescentOpenInvariantSubschemeStatement

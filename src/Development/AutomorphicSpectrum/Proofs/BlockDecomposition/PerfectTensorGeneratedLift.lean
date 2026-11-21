@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ExistsPQ
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PqLift
 import Development.AutomorphicSpectrum.Proofs.BlockDecomposition.PerfectTensorProductStatement

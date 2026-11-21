@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import GroundTheory.GlobalFields.ComplexMultiplication.BaseChange
 import GroundTheory.ArithmeticGeometry.AbelianVarieties.DualIsogenyExists
 import GroundTheory.GlobalFields.ComplexMultiplication.DifferentialConstantField

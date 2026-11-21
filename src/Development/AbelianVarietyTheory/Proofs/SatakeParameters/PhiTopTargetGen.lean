@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AbelianVarietyTheory.Proofs.SatakeParameters.BlkDetEqDB
 import Development.AbelianVarietyTheory.Definitions.GlobalTwisting.RedPDivOfUnit
 import Formalism.LocalToGlobal.Columns.RowFormsLemmas

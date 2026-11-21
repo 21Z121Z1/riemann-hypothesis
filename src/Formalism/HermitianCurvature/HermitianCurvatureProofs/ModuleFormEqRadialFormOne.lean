@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.IntegrableOfDecay4
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.StandardPairingDecay
 

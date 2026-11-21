@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.ArakelovGeometry.FibreStA
 import Mathlib.Analysis.Calculus.ImplicitContDiff
 import Mathlib.RingTheory.PiTensorProduct

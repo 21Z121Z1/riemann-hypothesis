@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.Columns.ReferenceActionRationalLevels
 import Formalism.LocalToGlobal.GlobalTheory.FamRec
 import Formalism.SizeWindowBrackets.SlopesFromSizeAndCount

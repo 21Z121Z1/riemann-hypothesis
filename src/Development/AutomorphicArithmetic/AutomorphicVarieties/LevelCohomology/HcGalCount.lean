@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.FiniteCompactlySupportedH1
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcFrameOb
 import Development.AutomorphicArithmetic.AutomorphicVarieties.LevelCohomology.HcGlobEuler

@@ -1,4 +1,4 @@
-import BuildAid.LenientOpen
+import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ExistsHighestCoordinateFunctional
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.ExistsIntegralWeightProjections
 import Mathlib.Algebra.Lie.OfAssociative
