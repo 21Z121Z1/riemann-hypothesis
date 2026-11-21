@@ -1,3 +1,4 @@
+import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuInf
 
 namespace KStar.Tree

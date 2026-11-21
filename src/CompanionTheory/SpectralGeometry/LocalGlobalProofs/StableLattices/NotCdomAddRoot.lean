@@ -1,3 +1,4 @@
+import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import BuildAid.LenientOpen
 import CompanionTheory.HarishChandraModules.LowKTypeMultiplicity.DiscreteSeriesCharacters.CapelliDeterminantBlockProduct
 import Mathlib.Tactic.ENatToNat

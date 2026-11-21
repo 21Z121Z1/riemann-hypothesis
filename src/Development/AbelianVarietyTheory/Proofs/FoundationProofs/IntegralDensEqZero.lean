@@ -1,3 +1,4 @@
+import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import BuildAid.LenientOpen
 import Formalism.LocalToGlobal.TorsionIntegrality.QuadraticSemicharacters.IsSemiChar
 import Development.AbelianVarietyTheory.Proofs.CuspFormEvaluations.IntegrableOnFundamentalDomainOfContinuous

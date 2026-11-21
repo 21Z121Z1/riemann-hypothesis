@@ -1,3 +1,4 @@
+import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import BuildAid.LenientOpen
 import GroundTheory.GlobalFields.IdeleGroups.StandardOpenEquiv
 import GroundTheory.GlobalFields.IdeleGroups.ClassGroup

@@ -1,3 +1,4 @@
+import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import BuildAid.LenientOpen
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.AdelicScalarMultiplier
 import Development.AbelianVarietyTheory.BlockTheory.DivisorBase.IdeleNormTraceForm

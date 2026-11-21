@@ -1,3 +1,4 @@
+import Mathlib.Tactic.Linarith.NNRealPreprocessor
 import BuildAid.LenientOpen
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.LaurentCoefficientsMemProperty
 import Formalism.SharpRestriction.GrowthBounds.RootWeights.SubstitutionPreservesOfGenerators
