@@ -250,7 +250,7 @@ def validate_packages(project, packages):
 
 
 def package_overrides(project, control):
-    """Use the already-validated, read-only checkouts without exposing Git data."""
+    """Use validated private dependency views without exposing Git data."""
     overrides = []
     for package in json.loads((project / "lake-manifest.json").read_text()).get("packages", []):
         entry = {key: value for key, value in package.items()
@@ -263,23 +263,25 @@ def package_overrides(project, control):
 
 
 def private_package_builds(project, packages, destination):
-    """Lake writes artifact hashes/chmods even for up-to-date dependencies."""
+    """Private dependency view: custom targets also write beside source files."""
     destination.mkdir()
     for package in json.loads((project / "lake-manifest.json").read_text()).get("packages", []):
-        source = packages / package["name"] / ".lake"
+        source = packages / package["name"]
         if source.is_symlink():
-            raise ValueError("dependency build cache must not be a symlink")
-        # Tool-only packages may have no build cache yet. The empty ignored
-        # mountpoint is created by this trusted controller, never candidate code.
-        source.mkdir(exist_ok=True)
-        if not source.is_dir():
-            raise ValueError("dependency build cache must be a directory")
+            raise ValueError("dependency directory must not be a symlink")
         target = destination / package["name"]
         target.mkdir()
         # Reflinks are private; ordinary copies are the safe fallback on ext4.
         # Hard links would let candidate code corrupt the trusted shared cache.
-        subprocess.run(["cp", "-a", "--reflink=auto", "--no-preserve=ownership", str(source) + "/.", str(target)],
-                       env=trusted_env(), check=True)
+        # Never copy .git: it can contain credential-bearing config or hooks.
+        for entry in source.iterdir():
+            if entry.name == ".git":
+                continue
+            subprocess.run(["cp", "-a", "--reflink=auto", "--no-preserve=ownership", str(entry), str(target / entry.name)],
+                           env=trusted_env(), check=True)
+        if (target / ".lake").is_symlink():
+            raise ValueError("dependency build cache must not be a symlink")
+        (target / ".lake").mkdir(exist_ok=True)
     return destination
 
 
@@ -377,8 +379,10 @@ def sandbox(toolchain, project, packages, cache, result, control, jobs, dependen
                 "--ro-bind", str(control), "/control"]
     if dependency_builds is not None:
         for directory in dependency_builds.iterdir():
-            command += ["--bind", str(directory), "/work/project/.lake/packages/" + directory.name + "/.lake"]
+            command += ["--bind", str(directory), "/work/project/.lake/packages/" + directory.name]
     for package in packages.iterdir():
+        if dependency_builds is not None:
+            continue  # Private package views exclude all Git metadata.
         metadata = package / ".git"
         if metadata.is_dir():
             command += ["--tmpfs", "/work/project/.lake/packages/" + package.name + "/.git"]
