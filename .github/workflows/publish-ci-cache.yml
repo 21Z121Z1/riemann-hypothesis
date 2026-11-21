@@ -6,6 +6,12 @@ on:
   workflow_run:
     workflows: [Build PR]
     types: [completed]
+  workflow_dispatch:
+    inputs:
+      build_run_id:
+        description: Completed Build PR run whose retained cache artifacts should be published again
+        type: string
+        required: true
   push:
     branches: [main]
 
@@ -14,15 +20,16 @@ permissions:
   actions: read
 
 concurrency:
-  group: ci-cache-${{ github.event_name }}-${{ github.event.workflow_run.id || github.sha }}
+  group: ci-cache-${{ github.event_name }}-${{ github.event.workflow_run.id || inputs.build_run_id || github.sha }}
   cancel-in-progress: false
 
 jobs:
   publish:
     if: >-
-      github.event_name == 'workflow_run' &&
       github.repository == 'leanprover-community/riemann-hypothesis' &&
-      contains(fromJSON('["success","failure"]'), github.event.workflow_run.conclusion)
+      ((github.event_name == 'workflow_run' &&
+      contains(fromJSON('["success","failure"]'), github.event.workflow_run.conclusion)) ||
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'))
     runs-on: ubuntu-latest
     timeout-minutes: 60
     environment: ci-cache-publish
@@ -34,6 +41,12 @@ jobs:
           persist-credentials: false
           sparse-checkout: /scripts/
           sparse-checkout-cone-mode: false
+      - name: Prepare completed build event, including manual publication retries
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/ci-github.py prepare-event --event-file "$GITHUB_EVENT_PATH" \
+            --output "$RUNNER_TEMP/build-event.json"
       - name: Validate workflow identity and available artifacts
         id: inspect
         env:
@@ -44,14 +57,14 @@ jobs:
           if [[ "$ALLOW_IMPLEMENTATION" == true ]]; then
             extra+=(--allow-implementation-branch)
           fi
-          python3 scripts/ci-github.py inspect-run --event-file "$GITHUB_EVENT_PATH" "${extra[@]}"
+          python3 scripts/ci-github.py inspect-run --event-file "$RUNNER_TEMP/build-event.json" "${extra[@]}"
       - name: Download independently recorded CI input
         if: steps.inspect.outputs.ready == 'true'
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
         with:
           name: ci-input
           path: ${{ runner.temp }}/ci-input
-          run-id: ${{ github.event.workflow_run.id }}
+          run-id: ${{ steps.inspect.outputs.run_id }}
           repository: leanprover-community/riemann-hypothesis
           github-token: ${{ github.token }}
       - name: Bind CI input to GitHub source and PR identity
@@ -65,7 +78,7 @@ jobs:
           if [[ "$ALLOW_IMPLEMENTATION" == true ]]; then
             extra+=(--allow-implementation-branch)
           fi
-          python3 scripts/ci-github.py validate-input --event-file "$GITHUB_EVENT_PATH" \
+          python3 scripts/ci-github.py validate-input --event-file "$RUNNER_TEMP/build-event.json" \
             --input-dir "$RUNNER_TEMP/ci-input" --output "$RUNNER_TEMP/ci-validated" "${extra[@]}"
       - name: Download completed build identity
         if: steps.input.outputs.mode == 'build' && steps.inspect.outputs.has_build == 'true'
@@ -73,7 +86,7 @@ jobs:
         with:
           name: ci-request
           path: ${{ runner.temp }}/ci-request
-          run-id: ${{ github.event.workflow_run.id }}
+          run-id: ${{ steps.inspect.outputs.run_id }}
           repository: leanprover-community/riemann-hypothesis
           github-token: ${{ github.token }}
       - name: Validate completed build outcome
@@ -104,7 +117,7 @@ jobs:
         with:
           name: ci-cache
           path: ${{ runner.temp }}/ci-cache
-          run-id: ${{ github.event.workflow_run.id }}
+          run-id: ${{ steps.inspect.outputs.run_id }}
           repository: leanprover-community/riemann-hypothesis
           github-token: ${{ github.token }}
       - name: Publish delta or promote an existing equivalent build

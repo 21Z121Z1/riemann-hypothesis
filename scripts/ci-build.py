@@ -249,6 +249,40 @@ def validate_packages(project, packages):
                        env=trusted_env(), check=True)
 
 
+def package_overrides(project, control):
+    """Use the already-validated, read-only checkouts without exposing Git data."""
+    overrides = []
+    for package in json.loads((project / "lake-manifest.json").read_text()).get("packages", []):
+        entry = {key: value for key, value in package.items()
+                 if key not in ("url", "rev", "inputRev", "subDir")}
+        entry.update(type="path", dir="/work/project/.lake/packages/" + package["name"])
+        overrides.append(entry)
+    path = control / "packages.json"
+    path.write_text(json.dumps({"version": "1.2.0", "packages": overrides}))
+    return "/control/packages.json"
+
+
+def private_package_builds(project, packages, destination):
+    """Lake writes artifact hashes/chmods even for up-to-date dependencies."""
+    destination.mkdir()
+    for package in json.loads((project / "lake-manifest.json").read_text()).get("packages", []):
+        source = packages / package["name"] / ".lake"
+        if source.is_symlink():
+            raise ValueError("dependency build cache must not be a symlink")
+        # Tool-only packages may have no build cache yet. The empty ignored
+        # mountpoint is created by this trusted controller, never candidate code.
+        source.mkdir(exist_ok=True)
+        if not source.is_dir():
+            raise ValueError("dependency build cache must be a directory")
+        target = destination / package["name"]
+        target.mkdir()
+        # Reflinks are private; ordinary copies are the safe fallback on ext4.
+        # Hard links would let candidate code corrupt the trusted shared cache.
+        subprocess.run(["cp", "-a", "--reflink=auto", "--no-preserve=ownership", str(source) + "/.", str(target)],
+                       env=trusted_env(), check=True)
+    return destination
+
+
 def baseline(args, project, cache):
     if args.baseline_manifest is None:
         return {}, [], None
@@ -300,7 +334,7 @@ def baseline(args, project, cache):
     return hashes, jobs, map_sha
 
 
-def prepare_cache_maps(args, baseline_mapping, cache, control, toolchain, work):
+def prepare_cache_maps(args, baseline_mapping, cache, control, toolchain, work, known_hashes):
     paths, expected, archive_paths = [], {}, []
     if args.cache_map and not args.baseline_cache:
         raise ValueError("--cache-map needs --baseline-cache containing its completed LTARs")
@@ -314,6 +348,10 @@ def prepare_cache_maps(args, baseline_mapping, cache, control, toolchain, work):
             destination = cache / "artifacts" / filename
             if not destination.exists():
                 shutil.copyfile(original, destination)
+            if filename in known_hashes:
+                if sha256(destination) != known_hashes[filename]:
+                    raise ValueError("baseline archive changed before cache reuse")
+                continue
             expected[filename] = filename[:-5]
             archive_paths.append(destination)
         path = control / f"cache-map-{index:03}.jsonl"
@@ -326,7 +364,7 @@ def prepare_cache_maps(args, baseline_mapping, cache, control, toolchain, work):
     return paths
 
 
-def sandbox(toolchain, project, packages, cache, result, control, jobs):
+def sandbox(toolchain, project, packages, cache, result, control, jobs, dependency_builds=None):
     command = ["bwrap", "--die-with-parent", "--new-session", "--unshare-all", "--clearenv"]
     for path in ("/usr", "/bin", "/lib", "/lib64", "/nix/store", "/run/current-system/sw"):
         if Path(path).exists():
@@ -337,6 +375,9 @@ def sandbox(toolchain, project, packages, cache, result, control, jobs):
                 "--ro-bind", str(packages), "/work/project/.lake/packages",
                 "--bind", str(cache), "/work/cache", "--bind", str(result), "/work/result",
                 "--ro-bind", str(control), "/control"]
+    if dependency_builds is not None:
+        for directory in dependency_builds.iterdir():
+            command += ["--bind", str(directory), "/work/project/.lake/packages/" + directory.name + "/.lake"]
     for package in packages.iterdir():
         metadata = package / ".git"
         if metadata.is_dir():
@@ -391,25 +432,29 @@ def module_traces(project, incomplete=False):
         yield name, module, dep_hash
 
 
-def recover_completed_map(project, cache, toolchain, work, destination):
+def recover_completed_map(project, cache, toolchain, work, destination, known_hashes=None):
     """Recover only already-saved LTARs after Lake dies before flushing -o."""
-    candidates = []
+    known_by_digest = {digest: name for name, digest in (known_hashes or {}).items()}
+    candidates, unknown = [], []
     for name, module, dep_hash in module_traces(project, incomplete=True):
         try:
             archive = safe_file(project / ".lake/build/ir", str(module.parent / (module.name + ".ltar")))
         except FileNotFoundError:
             continue
-        candidates.append((dep_hash, archive))
-    hashes = native_hashes(toolchain, [archive for _, archive in candidates], work, basenames=False)
+        digest = sha256(archive)
+        known = known_by_digest.get(digest)
+        candidates.append((dep_hash, archive, digest, known))
+        if known is None:
+            unknown.append(archive)
+    hashes = native_hashes(toolchain, unknown, work, basenames=False) if unknown else {}
     mapping = {}
-    for dep_hash, archive in candidates:
-        content_hash = hashes[str(archive)]
-        filename = content_hash + ".ltar"
+    for dep_hash, archive, digest, known in candidates:
+        filename = known or (hashes[str(archive)] + ".ltar")
         try:
             completed = safe_file(cache, "artifacts/" + filename)
         except FileNotFoundError:
             continue  # leantar may have been killed before cache.saveArtifact.
-        if not os.path.samefile(archive, completed) and sha256(archive) != sha256(completed):
+        if not os.path.samefile(archive, completed) and digest != sha256(completed):
             continue
         if dep_hash in mapping and mapping[dep_hash] != filename:
             raise ValueError("conflicting completed module input hash")
@@ -476,43 +521,46 @@ def main():
         if packages.is_relative_to(args.candidate.resolve()):
             raise ValueError("dependencies must come from a trusted cache outside the candidate checkout")
         validate_packages(project, packages)
+        overrides = package_overrides(project, control)
+        dependency_builds = private_package_builds(project, packages, work / "dependency-builds")
         provenance.update(lakefile_sha256=config_sha, manifest_sha256=sha256(project / "lake-manifest.json"))
         # validate_inputs has checked layout/toolchain/dependencies. Stock
         # --rehash checks semantic options and clears stale module LTARs.
         base_hashes, warm_jobs, base_map_sha = baseline(args, project, cache)
         base_mapping = load_map(args.baseline_map) if args.baseline_map else {}
-        extra_maps = prepare_cache_maps(args, base_mapping, cache, control, toolchain, work)
+        extra_maps = prepare_cache_maps(args, base_mapping, cache, control, toolchain, work, base_hashes)
         (project / ".lake/packages").mkdir(parents=True, exist_ok=True)
-        command = sandbox(toolchain, project, packages, cache, result, control, args.jobs)
+        command = sandbox(toolchain, project, packages, cache, result, control, args.jobs, dependency_builds)
         if warm_jobs:
             subprocess.run(command + ["/opt/lean/bin/leantar", "--jobs", str(args.jobs), "-f", "-x", "-j", "-"],
                            input=json.dumps(warm_jobs), text=True, env=trusted_env(), check=True)
         for cache_map in extra_maps:
-            subprocess.run(command + ["/opt/lean/bin/lake", "cache", "add", cache_map],
+            subprocess.run(command + ["/opt/lean/bin/lake", "--packages", overrides, "cache", "add", cache_map],
                            env=trusted_env(), check=True)
         with (output / "build.log").open("wb") as log:
             build_exit_code = supervised_build(
-                resource_prefix + command + ["/opt/lean/bin/lake", "--rehash", "build", "-o", "/work/result/outputs.jsonl"],
+                resource_prefix + command + ["/opt/lean/bin/lake", "--packages", overrides, "--rehash", "build", "-o", "/work/result/outputs.jsonl"],
                 build_environment, log, (work, output), args.reserve_disk_gib)
         mapping_file = result / "outputs.jsonl"
         if build_exit_code and not mapping_file.exists() and not mapping_file.is_symlink():
-            recover_completed_map(project, cache, toolchain, work, mapping_file)
+            recover_completed_map(project, cache, toolchain, work, mapping_file, base_hashes)
         mapping_file = safe_file(result, "outputs.jsonl")
         mapping = load_map(mapping_file)
         artifacts = []
         paths = [safe_file(cache, "artifacts/" + name) for name in sorted(set(mapping.values()))]
-        actual_hashes = native_hashes(toolchain, paths, work)
+        new_paths = [path for path in paths if path.name not in base_hashes]
+        actual_hashes = native_hashes(toolchain, new_paths, work) if new_paths else {}
         (output / "artifacts").mkdir()
         digests = {}
         for path in paths:
             digest = sha256(path)
             digests[path.name] = digest
-            if actual_hashes.get(path.name) != path.stem:
-                raise ValueError(f"artifact does not match its Lake hash: {path.name}")
             if path.name in base_hashes:
                 if digest != base_hashes[path.name]:
                     raise ValueError("baseline content hash collision")
                 continue
+            if actual_hashes.get(path.name) != path.stem:
+                raise ValueError(f"artifact does not match its Lake hash: {path.name}")
             destination = output / "artifacts" / path.name
             shutil.copyfile(path, destination)
             artifacts.append({"file": path.name, "size": destination.stat().st_size, "sha256": digest})

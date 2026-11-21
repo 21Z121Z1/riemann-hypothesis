@@ -52,6 +52,16 @@ def resource_tests(ci):
             assert "root" in str(error)
         else:
             raise AssertionError("host controller followed a symlink above its file root")
+    with tempfile.TemporaryDirectory(prefix="rh-ci-tool-cache-") as directory:
+        directory = Path(directory)
+        project, packages = directory / "project", directory / "packages"
+        project.mkdir()
+        (packages / "tool").mkdir(parents=True)
+        (project / "lake-manifest.json").write_text(json.dumps({"packages": [{"name": "tool"}]}))
+        private = ci.private_package_builds(project, packages, directory / "private")
+        assert (packages / "tool/.lake").is_dir()
+        (private / "tool/private-only").write_text("candidate cache writes stay private")
+        assert not (packages / "tool/.lake/private-only").exists()
     oversized = Mock()
     oversized.stat.return_value.st_size = 65 * 1024**2
     try:
@@ -114,7 +124,11 @@ def recovery_tests(ci):
         (project / "src/Broken.lean").write_text("-- killed while writing its trace\n")
         (library / "Broken.trace").write_text("{")
         destination = work / "outputs.jsonl"
-        ci.recover_completed_map(project, cache, toolchain, work, destination)
+        known_name = hashes["Complete.ltar"] + ".ltar"
+        known = {known_name: ci.sha256(aliases[0])}
+        with patch.object(ci, "native_hashes", wraps=ci.native_hashes) as hasher:
+            ci.recover_completed_map(project, cache, toolchain, work, destination, known)
+            assert hasher.call_args.args[1] == [aliases[1]]
         assert ci.load_map(destination) == {"1" * 16: hashes["Complete.ltar"] + ".ltar"}
     print("PASS missing-map recovery: completed cached LTAR retained; partial cache/trace discarded")
 
@@ -139,18 +153,40 @@ def main():
         root, packages, cache = temporary / "candidate", temporary / "packages", temporary / "cache"
         for directory in (root / "src", packages, cache):
             directory.mkdir(parents=True)
+        origin = temporary / "dependency-origin"
+        origin.mkdir()
+        (origin / "lakefile.toml").write_text('name = "external"\n[[lean_lib]]\nname = "External"\n')
+        (origin / "lean-toolchain").write_text(ci.TOOLCHAIN + "\n")
+        (origin / "External.lean").write_text("def externalValue : Nat := 3\n")
+        (origin / "lake-manifest.json").write_text(json.dumps({"version": "1.2.0", "packagesDir": ".lake/packages", "packages": []}))
+        run(["git", "init", "-q"], origin)
+        run(["git", "add", "."], origin)
+        run(["git", "-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid", "commit", "-qm", "dependency"], origin)
+        revision = run(["git", "rev-parse", "HEAD"], origin).stdout.strip()
+        run(["git", "clone", "-q", str(origin), str(packages / "external")], temporary)
+        run(["git", "config", "http.extraHeader", "Authorization: fixture-private-git-header"], packages / "external")
         config = '''name = "ciFixture"
 srcDir = "src"
 defaultTargets = ["Main"]
+[[require]]
+name = "external"
+git = "https://example.invalid/external.git"
+rev = "REVISION"
 [[lean_lib]]
 name = "Main"
 roots = ["Base", "Stable", "Main"]
-'''
+'''.replace("REVISION", revision)
         (root / "lakefile.toml").write_text(config)
         (root / "lean-toolchain").write_text(ci.TOOLCHAIN + "\n")
         (root / "src/Base.lean").write_text("def value : Nat := 7\n")
-        (root / "src/Stable.lean").write_text("theorem stable : True := True.intro\n")
+        (root / "src/Stable.lean").write_text("import External\ntheorem stable : True := True.intro\n")
         (root / "src/Main.lean").write_text("import Base\nimport Stable\ndef answer : Nat := value + 1\n")
+        (root / "lake-manifest.json").write_text(json.dumps({"version": "1.2.0", "packagesDir": ".lake/packages", "packages": [{
+            "name": "external", "type": "git", "url": "https://example.invalid/external.git", "rev": revision,
+            "inputRev": revision, "subDir": None, "inherited": False, "scope": "", "configFile": "lakefile.toml",
+            "manifestFile": "lake-manifest.json"}]}))
+        (root / ".lake").mkdir()
+        (root / ".lake/packages").symlink_to(packages, target_is_directory=True)
         env = {**os.environ, "LAKE_CACHE_DIR": str(cache), "LAKE_ARTIFACT_CACHE": "true", "LAKE_RESTORE_ARTIFACTS": "true"}
         for name in list(env):
             if name.startswith("LAKE_") and name not in {"LAKE_CACHE_DIR", "LAKE_ARTIFACT_CACHE", "LAKE_RESTORE_ARTIFACTS"}:
@@ -180,7 +216,7 @@ roots = ["Base", "Stable", "Main"]
         commit()
         host_secret = temporary / "personal-secret"
         host_secret.write_text("must not be readable by candidate")
-        python_probe = "import os,socket; assert 'CI_HOST_SECRET' not in os.environ; assert 'AWS_SECRET_ACCESS_KEY' not in os.environ; assert not os.path.exists(" + repr(str(host_secret)) + "); s=socket.socket(); s.settimeout(1); assert s.connect_ex(('1.1.1.1',443)) != 0\ntry:\n open('/work/project/src/Base.lean','ab').write(b'changed during build')\nexcept OSError:\n pass\nelse:\n raise AssertionError('attested source is writable')"
+        python_probe = "import os,socket; assert 'CI_HOST_SECRET' not in os.environ; assert 'AWS_SECRET_ACCESS_KEY' not in os.environ; assert not os.path.exists(" + repr(str(host_secret)) + "); assert not os.path.exists('/work/project/.lake/packages/external/.git/config'); open('/work/project/.lake/packages/external/.lake/private-marker','w').write('private'); s=socket.socket(); s.settimeout(1); assert s.connect_ex(('1.1.1.1',443)) != 0\ntry:\n open('/work/project/src/Base.lean','ab').write(b'changed during build')\nexcept OSError:\n pass\nelse:\n raise AssertionError('attested source is writable')"
         probe = 'import Lean\nrun_elab do\n  let result ← IO.Process.output {cmd := "python3", args := #[' + json.dumps("-c") + ", " + json.dumps(python_probe) + ']}\n  unless result.exitCode == 0 do throwError "sandbox probe failed: {result.stderr}"\n'
         (root / "src/Base.lean").write_text(probe + "def value : Nat := 9\n")
         commit()
@@ -209,6 +245,7 @@ roots = ["Base", "Stable", "Main"]
         assert stable_archive not in {item["file"] for item in receipt["artifacts"]}
         assert module_hashes["Base"][0] not in mapping
         assert len(receipt["artifacts"]) == 2
+        assert not (packages / "external/.lake/private-marker").exists()
         # A later PR uses previous successful PR outputs without rebuilding them.
         for archive in (changed / "artifacts").iterdir():
             shutil.copyfile(archive, cache / "artifacts" / archive.name)

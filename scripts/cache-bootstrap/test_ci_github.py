@@ -20,10 +20,11 @@ class Validation(unittest.TestCase):
                              source_tree="c" * 40, build_roots={}, lakefile_sha256="d" * 64,
                              manifest_sha256="e" * 64, toolchain=ci.pub.transport.TOOLCHAIN)
         self.identity["input_fingerprint"] = ci.pub.fingerprint(self.identity)
-        self.run = dict(id=123, run_attempt=1, repository={"full_name": ci.REPOSITORY}, name="Build PR", path=ci.WORKFLOW,
+        self.run = dict(id=123, run_attempt=1, workflow_id=425741221, repository={"full_name": ci.REPOSITORY}, name="Build PR #7 " + "f" * 40, path=ci.WORKFLOW,
                         event="pull_request_target", head_branch="contributor/source-branch", status="completed",
                         conclusion="success", display_title="Build PR #7 " + "f" * 40)
-        self.event = dict(repository={"full_name": ci.REPOSITORY}, workflow_run={"id": 123, "run_attempt": 1, "path": ci.WORKFLOW})
+        self.workflow = dict(id=425741221, name="Build PR", path=ci.WORKFLOW)
+        self.event = dict(repository={"full_name": ci.REPOSITORY}, workflow_run={"id": 123, "run_attempt": 1, "workflow_id": 425741221, "path": ci.WORKFLOW})
         self.jobs = dict(total_count=2, jobs=[dict(status="completed", conclusion="success")] * 2)
         self.pr = dict(number=7, base={"repo": {"full_name": ci.REPOSITORY}, "ref": "main"}, head={"sha": "f" * 40})
         self.request = dict(repository=ci.REPOSITORY, run_id=123, pr_number=7, pr_head="f" * 40, expected=self.identity)
@@ -37,6 +38,7 @@ class Validation(unittest.TestCase):
 
     def api(self, path):
         values = {"actions/runs/123": self.run, "actions/runs/123/attempts/1/jobs?per_page=100": self.jobs,
+                  "actions/workflows/425741221": self.workflow,
                   "pulls/7": self.pr, "git/commits/" + "a" * 40: {"parents": [{"sha": "f" * 40}]}}
         if path not in values:
             raise AssertionError("Unexpected API request: " + path)
@@ -50,19 +52,53 @@ class Validation(unittest.TestCase):
         return SimpleNamespace(input_dir=str(directory), event_file=str(self.root / "event.json"), output=str(self.root / "validated"), allow_implementation_branch=False)
 
     def test_trusted_envelope_and_manual_branch_policy(self):
-        self.assertEqual(ci.envelope(self.event, self.run, self.jobs), (7, "f" * 40))
+        self.assertEqual(ci.envelope(self.event, self.run, self.jobs, self.workflow), (7, "f" * 40))
         # REST PR head_branch is intentionally not confused with workflow source.
         for key, value in [("path", ".github/workflows/other.yml"), ("event", "pull_request"),
                            ("display_title", "Build PR #8 arbitrary"), ("run_attempt", 2), ("conclusion", "cancelled")]:
             bad = {**self.run, key: value}
             with self.assertRaises(ValueError):
-                ci.envelope(self.event, bad, self.jobs)
+                ci.envelope(self.event, bad, self.jobs, self.workflow)
         manual = {**self.run, "event": "workflow_dispatch", "head_branch": ci.IMPLEMENTATION_BRANCH}
         with self.assertRaisesRegex(ValueError, "workflow branch"):
-            ci.envelope(self.event, manual, self.jobs)
-        ci.envelope(self.event, manual, self.jobs, allow_implementation=True)
+            ci.envelope(self.event, manual, self.jobs, self.workflow)
+        ci.envelope(self.event, manual, self.jobs, self.workflow, allow_implementation=True)
         with self.assertRaises(ValueError):
-            ci.envelope(self.event, self.run, {"total_count": 2, "jobs": [{"status": "completed", "conclusion": "cancelled"}]})
+            ci.envelope(self.event, self.run, {"total_count": 2, "jobs": [{"status": "completed", "conclusion": "cancelled"}]}, self.workflow)
+
+    def test_real_manual_run_name_uses_authoritative_workflow_definition(self):
+        # Shape observed from REST run44876103270: name contains run-name.
+        run = {**self.run, "name": "Build PR #13 manual", "display_title": "Build PR #13 manual",
+               "event": "workflow_dispatch", "head_branch": "main"}
+        event = copy.deepcopy(self.event)
+        event["workflow_run"].pop("path")
+        event["workflow"] = dict(self.workflow)
+        self.assertEqual(ci.envelope(event, run, self.jobs, self.workflow), (13, "manual"))
+        for key, value in (("id", 123456), ("name", "Another workflow"), ("path", ".github/workflows/untrusted.yml")):
+            wrong = {**self.workflow, key: value}
+            with self.assertRaisesRegex(ValueError, "trusted Build PR"):
+                ci.envelope(event, run, self.jobs, wrong)
+        event["workflow_run"]["workflow_id"] = 123456
+        with self.assertRaisesRegex(ValueError, "trusted Build PR"):
+            ci.envelope(event, run, self.jobs, self.workflow)
+
+    def test_manual_publisher_retry_prepares_fresh_event_only_on_main(self):
+        path = self.root / "dispatch.json"
+        target = self.root / "build-event.json"
+        ci.write_json(path, {"repository": {"full_name": ci.REPOSITORY}, "inputs": {"build_run_id": "123"}})
+        args = SimpleNamespace(event_file=str(path), output=str(target))
+        env = {"GITHUB_REPOSITORY": ci.REPOSITORY, "GITHUB_EVENT_NAME": "workflow_dispatch", "GITHUB_REF": "refs/heads/main"}
+        with patch.dict(os.environ, env):
+            ci.prepare_event(args)
+            event = ci.read_json(target)
+            self.assertEqual(event["workflow_run"], self.run)
+            self.assertEqual(ci.live_run(event)[1:], (7, "f" * 40))
+            with patch.dict(os.environ, {"GITHUB_REF": "refs/heads/untrusted"}):
+                with self.assertRaisesRegex(ValueError, "trusted main"):
+                    ci.prepare_event(args)
+            ci.write_json(path, {"repository": {"full_name": ci.REPOSITORY}, "inputs": {"build_run_id": "123/another-run"}})
+            with self.assertRaisesRegex(ValueError, "positive numeric"):
+                ci.prepare_event(args)
 
     def test_request_bound_to_fresh_identity_and_candidate_parent(self):
         ci.validated_request(self.event, self.request)

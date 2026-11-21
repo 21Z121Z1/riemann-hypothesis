@@ -55,7 +55,7 @@ def outputs(**values):
     print(json.dumps(values, sort_keys=True))
 
 
-def envelope(event: dict, run: dict, jobs: dict, *, allow_implementation=False) -> tuple[int, str]:
+def envelope(event: dict, run: dict, jobs: dict, workflow: dict, *, allow_implementation=False) -> tuple[int, str]:
     embedded = event.get("workflow_run", {})
     if (event.get("repository", {}).get("full_name") != REPOSITORY
             or run.get("repository", {}).get("full_name") != REPOSITORY):
@@ -64,9 +64,21 @@ def envelope(event: dict, run: dict, jobs: dict, *, allow_implementation=False) 
             or type(run.get("run_attempt")) is not int or run["run_attempt"] < 1
             or embedded.get("run_attempt") != run["run_attempt"]):
         raise ValueError("Workflow run identity/attempt changed")
-    if (run.get("name") != "Build PR" or run.get("path") != WORKFLOW
-            or embedded.get("path") != WORKFLOW or run.get("event") not in ("pull_request_target", "workflow_dispatch")):
+    # REST run.name can be the dynamic run-name, rather than the definition's
+    # name. Bind the independent workflow resource by numeric ID and path.
+    workflow_id = run.get("workflow_id")
+    if (type(workflow_id) is not int or workflow_id <= 0
+            or embedded.get("workflow_id") != workflow_id or workflow.get("id") != workflow_id
+            or workflow.get("name") != "Build PR" or workflow.get("path") != WORKFLOW
+            or run.get("path") != WORKFLOW
+            or ("path" in embedded and embedded["path"] != WORKFLOW)
+            or run.get("event") not in ("pull_request_target", "workflow_dispatch")):
         raise ValueError("Only the trusted Build PR workflow can publish")
+    reported_workflow = event.get("workflow")
+    if reported_workflow is not None and (
+            not isinstance(reported_workflow, dict)
+            or any(reported_workflow.get(key) != workflow[key] for key in ("id", "name", "path"))):
+        raise ValueError("Webhook workflow definition differs from the authoritative API identity")
     if run.get("status") != "completed" or run.get("conclusion") not in ("success", "failure"):
         raise ValueError("Cancelled, incomplete or otherwise interrupted runs do not publish")
     if run["event"] == "workflow_dispatch":
@@ -96,9 +108,35 @@ def live_run(event, *, allow_implementation=False):
     attempt = run.get("run_attempt")
     if type(attempt) is not int or attempt <= 0:
         raise ValueError("Invalid workflow run attempt")
+    workflow_id = run.get("workflow_id")
+    if type(workflow_id) is not int or workflow_id <= 0:
+        raise ValueError("Invalid workflow definition ID")
+    workflow = prep.api(f"actions/workflows/{workflow_id}")
     jobs = prep.api(f"actions/runs/{run_id}/attempts/{attempt}/jobs?per_page=100")
-    number, head = envelope(event, run, jobs, allow_implementation=allow_implementation)
+    number, head = envelope(event, run, jobs, workflow, allow_implementation=allow_implementation)
     return run, number, head
+
+
+def prepare_event(args):
+    event = read_json(args.event_file)
+    if (os.environ.get("GITHUB_REPOSITORY") != REPOSITORY
+            or event.get("repository", {}).get("full_name") != REPOSITORY):
+        raise ValueError("Publishing event belongs to a different repository")
+    kind = os.environ.get("GITHUB_EVENT_NAME")
+    if kind == "workflow_dispatch":
+        if os.environ.get("GITHUB_REF") != "refs/heads/main":
+            raise ValueError("Manual publication retries must use the trusted main workflow")
+        value = event.get("inputs", {}).get("build_run_id", "")
+        if not isinstance(value, str) or not re.fullmatch(r"[1-9][0-9]{0,19}", value):
+            raise ValueError("build_run_id must be a positive numeric GitHub run ID")
+        run = prep.api(f"actions/runs/{int(value)}")
+        if run.get("id") != int(value):
+            raise ValueError("GitHub returned a different build run")
+        event = {"repository": {"full_name": REPOSITORY}, "workflow_run": run}
+    elif kind != "workflow_run":
+        raise ValueError("Expected a completed build event or a manual publication retry")
+    # Both paths subsequently pass the identical live workflow/run/jobs checks.
+    write_json(args.output, event)
 
 
 def inspect(args):
@@ -119,7 +157,7 @@ def inspect(args):
         if not 0 < row["size_in_bytes"] <= limit:
             raise ValueError("CI artifact exceeds its expected bound")
         selected[name] = row
-    outputs(ready="ci-input" in selected, has_build={"ci-request", "ci-cache"} <= selected.keys())
+    outputs(ready="ci-input" in selected, has_build={"ci-request", "ci-cache"} <= selected.keys(), run_id=run["id"])
 
 
 def validated_request(event, request, *, allow_implementation=False):
@@ -312,6 +350,10 @@ def promote_main(args):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
+    command = commands.add_parser("prepare-event")
+    command.add_argument("--event-file", required=True)
+    command.add_argument("--output", required=True)
+    command.set_defaults(function=prepare_event)
     command = commands.add_parser("inspect-run")
     command.add_argument("--event-file", required=True)
     command.add_argument("--allow-implementation-branch", action="store_true")
