@@ -21,6 +21,7 @@ import Development.EtaleCohomology.CohomologicalPurity.LeafFreeCovPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafNerveSplitPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafUnitsRepPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafRepPtPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafTauUPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafTauTopPf
 import Development.EtaleCohomology.CohomologicalPurity.LeafTauOf
 import Development.EtaleCohomology.CohomologicalPurity.LeafTauNatPf

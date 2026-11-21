@@ -1,7 +1,7 @@
 import BuildAid.Leniency.Open
 import ReciprocityTheory.SemistableReduction.ComapInclusionIsLocalHom
+import Lemmata.GeneralBFactLast.Imports
 import Lemmata.GeneralBFactTail.Imports
-import Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CapelliComplements.GeneralBFactAlt
 import Mathlib.RingTheory.OrderOfVanishing.Noetherian
 import Mathlib.Tactic.ENatToNat
 

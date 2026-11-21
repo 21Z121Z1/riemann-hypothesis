@@ -1,6 +1,5 @@
 import BuildAid.Leniency.Open
 import Development.EtaleCohomology.TateTwists.EtaleShortComplexExactIffLocallySurjectiveOnKern
-import Development.EtaleCohomology.TateTwists.EtaleSheafTensorComplexExists
 import Mathlib.CategoryTheory.Sites.EpiMono
 
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

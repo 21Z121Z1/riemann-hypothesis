@@ -1,6 +1,7 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
-import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.HHINDE
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.ComponentFormProperties
+import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FsumEqSum
 
 namespace ReciprocityTheory.ChartRestriction.G.T0
 

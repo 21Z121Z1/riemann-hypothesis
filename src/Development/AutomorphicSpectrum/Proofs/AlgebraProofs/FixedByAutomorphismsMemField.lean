@@ -1,7 +1,8 @@
 import BuildAid.Leniency.Open
+import ReciprocityTheory.ReductiveGroups.ExtensionEmbeddings.ExtEmb
+import Mathlib.Algebra.Order.Ring.Star
 import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Data.Rat.Star
-import ReciprocityTheory.ReductiveGroups.LatticeEmbeddings.IotaPlaceB
 
 open NumberField IsDedekindDomain
 open scoped Cardinal Polynomial IntermediateField

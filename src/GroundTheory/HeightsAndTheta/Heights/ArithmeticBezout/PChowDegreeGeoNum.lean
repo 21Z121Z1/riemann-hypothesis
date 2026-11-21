@@ -6,6 +6,7 @@ import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsSectionCy
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsPointLengthModP
 import ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.BirationalGeometry.InterDivSupp
 import GroundTheory.HeightsAndTheta.Heights.ArithmeticBezout.StatementsChowDegreeGeoNum
+import Mathlib.RingTheory.PiTensorProduct
 set_option maxSynthPendingDepth 1
 
 noncomputable section

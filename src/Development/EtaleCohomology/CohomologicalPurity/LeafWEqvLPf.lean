@@ -1,5 +1,5 @@
 import BuildAid.Leniency.Open
-import Development.EtaleCohomology.CohomologicalPurity.LeafWEqvRPf
+import Development.EtaleCohomology.CohomologicalPurity.LeafChartFactPf
 
 noncomputable section
 open CategoryTheory Limits AlgebraicGeometry Opposite GlobalTheory.EtC

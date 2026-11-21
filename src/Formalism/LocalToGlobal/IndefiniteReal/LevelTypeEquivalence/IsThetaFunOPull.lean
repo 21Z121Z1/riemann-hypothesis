@@ -1,8 +1,7 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.DatumLemmas
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.GrowthNorm
-import Formalism.LocalToGlobal.IndefiniteReal.LevelTypeEquivalence.TransportedFrame
+import Formalism.LocalToGlobal.IndefiniteReal.PHeisFC
 
 noncomputable section
 

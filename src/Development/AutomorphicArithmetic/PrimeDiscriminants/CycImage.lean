@@ -1,7 +1,7 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
+import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts
 import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.InertiaGaloisSymmetry.CycGrp
-import Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostRam
 
 open NumberField IntermediateField
 

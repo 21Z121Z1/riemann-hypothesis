@@ -1,3 +1,4 @@
+import Development.DiscreteGroups.GlobalIrreducibility.LConvGlue
 import Development.DiscreteGroups.GlobalIrreducibility.LConvUnitOf
 import Development.DiscreteGroups.GlobalIrreducibility.LConvDens
 import Development.DiscreteGroups.GlobalIrreducibility.LConv

@@ -1,6 +1,6 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
-import Formalism.HermitianCurvature.HermitianCurvatureProofs.HasFDerivAtFsvSelf
+import Formalism.HermitianCurvature.CompositeFormulaLevelZero
 
 open Matrix MeasureTheory Filter Topology
 open scoped InnerProductSpace ComplexConjugate ComplexOrder ContDiff

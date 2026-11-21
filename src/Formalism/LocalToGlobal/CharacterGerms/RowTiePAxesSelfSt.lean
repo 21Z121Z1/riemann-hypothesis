@@ -1,7 +1,7 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.CharacterGerms.RowTieSelf
-import Formalism.LocalToGlobal.CharacterGerms.RowTiePHStab
+import Formalism.LocalToGlobal.CharacterGerms.RowTieAxes
 
 noncomputable section
 

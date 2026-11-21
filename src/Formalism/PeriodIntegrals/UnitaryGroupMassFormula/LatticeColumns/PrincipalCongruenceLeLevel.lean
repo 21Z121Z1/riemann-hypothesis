@@ -2,9 +2,9 @@ import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LevelComponentsSurjective
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.LocRed
+import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.IdxGroup
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalVolumeIndices.LocKMem
 import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LocalVolumeIndices.CstNatCastApply
-import Formalism.PeriodIntegrals.UnitaryGroupMassFormula.LatticeColumns.Transfer
 
 noncomputable section
 

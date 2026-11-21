@@ -1,7 +1,9 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.DecBoundJ
 import Mathlib.Analysis.InnerProductSpace.Calculus
-import ReciprocityTheory.ReductiveGroups.DiscreteSeries.InfinitesimalDecay.SumFlatMapMap
+import ReciprocityTheory.ReductiveGroups.DiscreteSeries.DiscreteSeriesExistence.SmoothDS
+import Std.Tactic.BVDecide.Normalize.Prop
 
 set_option autoImplicit false
 

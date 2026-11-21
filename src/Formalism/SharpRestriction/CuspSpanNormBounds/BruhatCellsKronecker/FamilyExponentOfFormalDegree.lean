@@ -1,7 +1,8 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
+import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.CfgTopFalseIff
 import Formalism.HermitianCurvature.HermitianCurvatureProofs.BetaBoundOnBoundary
-import Formalism.SharpRestriction.CuspSpanNormBounds.BruhatCellsKronecker.FamilyCriticalLevelLowerBound
+import Formalism.SharpRestriction.CuspSpanNormBounds.LocalBesselAndTopKernel
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 import BuildAid.Leniency.Open
 import ReciprocityTheory.L2DbarEstimates.Localization.UnweightBackStatement
 import Mathlib.Topology.Sheaves.Presheaf
-import ReciprocityTheory.L2DbarEstimates.LeviForms.EventuallyDifferentiableAtOfContDiffAt
+import ReciprocityTheory.L2DbarEstimates.ChartDerivatives.ChartSymmEventuallyEq
 
 namespace ReciprocityTheory.L2DbarEstimates.F
 

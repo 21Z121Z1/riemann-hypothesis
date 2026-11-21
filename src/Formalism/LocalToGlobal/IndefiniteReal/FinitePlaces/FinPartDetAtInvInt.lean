@@ -2,6 +2,7 @@ import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.TameAtOne
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemUniq
+import Formalism.LocalToGlobal.Divisibility.DefGroupLemmas
 import Mathlib.NumberTheory.NumberField.ClassNumber
 import Formalism.LocalToGlobal.BesselHermitianTheta.LemmasWeil
 import Mathlib.Data.Finsupp.Pointwise

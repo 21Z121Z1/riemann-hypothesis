@@ -1,7 +1,6 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.SharpRestriction.GrowthBounds.StandardPolynomials.ColGen
-import Formalism.SharpRestriction.GrowthBounds.BinomialRatio.BlockRank
 
 noncomputable section
 

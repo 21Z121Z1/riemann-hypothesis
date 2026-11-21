@@ -1,7 +1,6 @@
 import BuildAid.Leniency.Variable
 import BuildAid.Leniency.Open
 import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.IdemSum
-import Formalism.LocalToGlobal.IndefiniteReal.FinitePlaces.CharStd
 
 noncomputable section
 

@@ -1,3 +1,4 @@
+import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PCharacterAtIdentity
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PCharacterBound
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PCoinvAboveTop
 import GroundTheory.HeightsAndTheta.Heights.RemainderTerms.PCoinvariantTopDegree
